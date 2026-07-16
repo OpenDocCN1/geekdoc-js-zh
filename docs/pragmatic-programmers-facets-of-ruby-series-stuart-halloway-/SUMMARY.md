@@ -1,0 +1,2 @@
++   [务实程序员系列：Ruby 的多个面； Stuart Halloway Justin Gehtland；Java 开发者的 Rails 指南；务实程序员 2007](README.md)
++   [务实程序员系列：Ruby 的多个面； Stuart Halloway Justin Gehtland；Java 开发者的 Rails 指南；务实程序员 2007](pragmatic-programmers-facets-of-ruby-series-stuart-halloway-_0.md)

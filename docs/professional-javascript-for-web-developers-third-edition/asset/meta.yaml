@@ -1,0 +1,504 @@
+name: Professional JavaScript for Web developers, third edition
+name_cn: Web 开发人员 JavaScript 高级指南，第三版
+slug: professional-javascript-for-web-developers-third-edition
+toc:
+- - '#'
+  - Web 开发人员 JavaScript 高级指南，第三版
+- - '##'
+  - XMLHttpRequest 对象
+- - '###'
+  - XMLHttpRequest 2 级
+- - '###'
+  - 进度事件
+- - '###'
+  - 防抖对象
+- - '###'
+  - 对象
+- - '#'
+  - 变量 (VARIABLES)
+- - '#'
+  - 数据类型 (DATA TYPES)
+- - '##'
+  - '## typeof 运算符 (typeof Operator)'
+- - '##'
+  - 未定义类型 (Undefined Type)
+- - '###'
+  - UndefinedExample01.htm
+- - '###'
+  - UndefinedExample02.htm
+- - '###'
+  - UndefinedExample03.htm
+- - '###'
+  - UndefinedExample04.htm
+- - '##'
+  - 空类型 (Null Type)
+- - '###'
+  - NullExample01.htm
+- - '###'
+  - NullExample02.htm
+- - '##'
+  - 布尔类型 (Boolean Type)
+- - '###'
+  - BooleanExample01.htm
+- - '###'
+  - BooleanExample02.htm
+- - '###'
+  - 浮点数值
+- - '###'
+  - 数值范围
+- - '###'
+  - NaN
+- - '##'
+  - 数字转换
+- - '#'
+  - 字符串类型 (String Type)
+- - '###'
+  - 字符字面量 (Character Literals)
+- - '#'
+  - 字符串的本质 (The Nature of Strings)
+- - '###'
+  - 转换为字符串 (Converting to a String)
+- - '#'
+  - 对象类型 (The Object Type)
+- - '#'
+  - 运算符
+- - '##'
+  - 一元运算符
+- - '###'
+  - 递增/递减
+- - '##'
+  - 一元加和减
+- - '###'
+  - UnaryPlusMinusExample01.htm
+- - '###'
+  - UnaryPlusMinusExample02.htm
+- - '###'
+  - 位运算符
+- - '##'
+  - 位异或
+- - '##'
+  - 左移
+- - '##'
+  - 有符号右移
+- - '##'
+  - 无符号右移
+- - '#'
+  - 逻辑与 (AND)
+- - '#'
+  - 逻辑或 (OR)
+- - '#'
+  - 乘法运算符
+- - '##'
+  - 乘法 (Multiply)
+- - '###'
+  - 除法 (Divide)
+- - '###'
+  - 取模 (Modulus)
+- - '#'
+  - 加法运算符
+- - '##'
+  - 加
+- - '##'
+  - 减
+- - '#'
+  - 比较运算符
+- - '##'
+  - 等于运算符
+- - '###'
+  - 相等和不相等
+- - '###'
+  - 全等和全等不相等
+- - '##'
+  - 条件运算符
+- - '##'
+  - 赋值运算符
+- - '##'
+  - 逗号运算符
+- - '##'
+  - 语句
+- - '##'
+  - if 语句
+- - '##'
+  - do-while 语句
+- - '##'
+  - while 语句
+- - '##'
+  - for 语句
+- - '##'
+  - for-in 语句
+- - '##'
+  - 标签语句 (Labeled Statements)
+- - '##'
+  - break, continue 语句
+- - '##'
+  - with 语句
+- - '##'
+  - switch 语句
+- - '###'
+  - SwitchStatementExample03.htm
+- - '###'
+  - SwitchStatementExample04.htm
+- - '#'
+  - 函数
+- - '###'
+  - FunctionExample01.htm
+- - '###'
+  - FunctionExample02.htm
+- - '###'
+  - FunctionExample03.htm
+- - '###'
+  - FunctionExample04.htm
+- - '#'
+  - 参数
+- - '##'
+  - 无函数重载
+- - '##'
+  - 总结
+- - '#'
+  - 第 4 章：变量、作用域与内存
+- - '###'
+  - 本章内容
+- - '###'
+  - 原始值与引用值
+- - '###'
+  - 动态属性
+- - '###'
+  - 值的复制
+- - '###'
+  - 参数传递
+- - '##'
+  - 执行上下文与作用域
+- - '##'
+  - 作用域链的增强
+- - '##'
+  - 无块作用域
+- - '##'
+  - 变量声明
+- - '##'
+  - 标识符查找
+- - '###'
+  - 标记-清除法 (Mark-and-Sweep)
+- - '###'
+  - 引用计数 (Reference Counting)
+- - '###'
+  - 性能
+- - '##'
+  - 内存管理
+- - '##'
+  - 总结
+- - '#'
+  - 第 5 章：引用类型
+- - '###'
+  - 本章内容概览
+- - '##'
+  - 对象类型
+- - '##'
+  - 数组类型
+- - '###'
+  - ArrayTypeExample02.htm
+- - '###'
+  - ArrayFilterExample03.htm
+- - '###'
+  - ArrayFilterExample04.htm
+- - '###'
+  - ArrayFilterExample05.htm
+- - '###'
+  - ArrayFilterExample6.htm
+- - '###'
+  - 检测数组
+- - '###'
+  - 转换方法
+- - '#'
+  - 栈方法
+- - '#'
+  - 队列方法
+- - '##'
+  - 排序方法
+- - '##'
+  - 操作方法
+- - '###'
+  - 替换
+- - '###'
+  - 定位方法
+- - '###'
+  - 迭代方法
+- - '###'
+  - 还原方法
+- - '##'
+  - DATE 类型（日期）
+- - '###'
+  - Internet Explorer 8
+- - '###'
+  - Firefox 3.5
+- - '###'
+  - Safari 4
+- - '###'
+  - Chrome 4
+- - '###'
+  - Opera 10
+- - '###'
+  - 日期格式化方法
+- - '###'
+  - 日期/时间组件方法
+- - '##'
+  - REGEXP 类型
+- - '##'
+  - RegExp 实例属性
+- - '##'
+  - RegExp 实例方法
+- - '###'
+  - RegExpExecExample01.htm
+- - '###'
+  - RegExpExecExample02.htm
+- - '###'
+  - RegExpToStringExample01.htm
+- - '###'
+  - RegExp Constructor Properties
+- - '###'
+  - RegExpConstructorProperties01.htm
+- - '###'
+  - RegExpConstructorPropertiesExample02.htm
+- - '##'
+  - 模式限制
+- - '##'
+  - 函数类型
+- - '##'
+  - 不支持重载（回顾）
+- - '##'
+  - 函数声明与函数表达式
+- - '##'
+  - 作为值的函数
+- - '##'
+  - 函数内部
+- - '##'
+  - 函数属性和方法
+- - '###'
+  - FunctionTypeLengthPropertyExample01.htm
+- - '###'
+  - FunctionTypeApplyMethodExample01.htm
+- - '###'
+  - FunctionTypeCallMethodExample01.htm
+- - '###'
+  - FunctionTypeCallExample01.htm
+- - '###'
+  - FunctionTypeBindMethodExample01.htm
+- - '##'
+  - 原始包装类型 (PRIMITIVE WRAPPER TYPES)
+- - '##'
+  - 布尔 类型
+- - '##'
+  - 数字 类型
+- - '##'
+  - String 类型
+- - '###'
+  - 字符方法
+- - '###'
+  - 字符串操作方法
+- - '#'
+  - 字符串定位方法
+- - '##'
+  - trim() 方法
+- - '##'
+  - 字符串大小方法
+- - '##'
+  - 字符串模式匹配方法
+- - '###'
+  - 兼容性
+- - '###'
+  - localeCompare() 方法
+- - '##'
+  - fromCharCode() 方法
+- - '##'
+  - HTML 方法
+- - '##'
+  - 单例内置对象
+- - '###'
+  - Global 对象
+- - '###'
+  - URI 编码方法
+- - '###'
+  - eval() 方法
+- - '##'
+  - 全局对象属性
+- - '##'
+  - Window 对象
+- - '##'
+  - Math 对象
+- - '###'
+  - Math 对象属性
+- - '###'
+  - min() 和 max() 方法
+- - '###'
+  - 取整方法
+- - '###'
+  - random() 方法
+- - '###'
+  - 其他方法
+- - '###'
+  - 总结
+- - '#'
+  - 第 6 章：面向对象编程
+- - '###'
+  - 本章内容概览
+- - '###'
+  - 理解对象
+- - '###'
+  - 属性类型
+- - '###'
+  - 数据属性
+- - '###'
+  - 存取属性
+- - '###'
+  - 定义多个属性
+- - '###'
+  - 读取属性
+- - '###'
+  - 对象创建
+- - '###'
+  - 工厂模式
+- - '###'
+  - 构造函数模式
+- - '###'
+  - 作为函数的构造函数
+- - '###'
+  - 构造函数的问题
+- - '###'
+  - 原型模式
+- - '###'
+  - 原型是如何工作的
+- - '###'
+  - 原型和 in 运算符
+- - '###'
+  - 替代原型语法
+- - '##'
+  - 原型的动态性质
+- - '##'
+  - 原生对象原型
+- - '##'
+  - 原型的问题
+- - '###'
+  - 构造函数/原型模式组合
+- - '###'
+  - 动态原型模式
+- - '###'
+  - 寄生构造函数模式
+- - '###'
+  - 持久构造函数模式
+- - '#'
+  - 继承
+- - '##'
+  - 原型链
+- - '###'
+  - 默认原型
+- - '##'
+  - 原型与实例的关系
+- - '##'
+  - 与方法操作
+- - '##'
+  - 原型链的问题
+- - '##'
+  - 构造函数窃取 (Constructor Stealing)
+- - '###'
+  - 传递参数
+- - '##'
+  - 组合继承 (Combination Inheritance)
+- - '##'
+  - 原型继承
+- - '##'
+  - 寄生继承
+- - '##'
+  - 寄生组合继承
+- - '##'
+  - 总结
+- - '#'
+  - 第 7 章
+- - '##'
+  - 函数表达式
+- - '###'
+  - 本章内容
+- - '##'
+  - 递归 (RECURSION)
+- - '##'
+  - 闭包 (CLOSURES)
+- - '###'
+  - 闭包与变量
+- - '###'
+  - this 对象
+- - '##'
+  - 内存泄漏
+- - '##'
+  - 模拟块级作用域
+- - '##'
+  - 模块模式
+- - '##'
+  - 模块增强模式
+- - '##'
+  - 总结
+- - '#'
+  - 第 8 章：浏览器对象模型 (BOM)
+- - '##'
+  - 本章内容
+- - '##'
+  - window 对象
+- - '###'
+  - 全局作用域
+- - '##'
+  - Window 关系与框架
+- - '##'
+  - 窗口位置
+- - '##'
+  - 窗口大小
+- - '##'
+  - 导航和打开窗口
+- - '##'
+  - 弹出窗口
+- - '##'
+  - 安全限制
+- - '##'
+  - 弹窗拦截器
+- - '##'
+  - 定时器与超时
+- - '##'
+  - 系统对话框
+- - '###'
+  - alert()
+- - '###'
+  - confirm()
+- - '###'
+  - prompt()
+- - '##'
+  - location 对象
+- - '##'
+  - 操作 Location
+- - '###'
+  - 插件对象 (Plugin Objects)
+- - '###'
+  - Internet Explorer 检测
+- - '###'
+  - PluginExample02.htm
+- - '##'
+  - 注册处理器 (Register Handlers)
+- - '###'
+  - PluginExample03.htm
+- - '##'
+  - screen 对象 (The Object)
+- - '##'
+  - 总结
+- - '#'
+  - 第 9 章：客户端检测
+- - '###'
+  - 本章内容
+- - '###'
+  - 能力检测
+- - '###'
+  - 功能检测
+- - '##'
+  - User-Agent
+- - '##'
+  - 历史
+- - '##'
+  - 早期浏览器
+- - '##'
+  - 'Netscape Navigator 3 和 Internet '
+- - '##'
+  - ' '

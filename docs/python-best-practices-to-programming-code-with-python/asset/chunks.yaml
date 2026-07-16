@@ -1,0 +1,2855 @@
+- fmt: "\n![](Images/cover0008.jpeg)\n\n# Python: Best Practices to Programming Code\
+    \ with Python\n### Charlie Masterson\n\n## Table of Contents\n- [Introduction](#part0000.xhtml_Introduction)\n\
+    - [Chapter 1: General Concepts of Python Coding](#part0000.xhtml_Chapter1)\n-\
+    \ [Chapter 2: Programming Recommendations](#part0000.xhtml_Chapter2)\n- [Chapter\
+    \ 3: Code Layout](#part0000.xhtml_Chapter3)\n- [Chapter 4: Idioms](#part0000.xhtml_Chapter4)\n\
+    - [Chapter 5: Comments](#part0000.xhtml_Chapter5)\n- [Chapter 6: Conventions](#part0000.xhtml_Chapter6)\n\
+    - [Chapter 7: Method and Function Arguments](#part0000.xhtml_Chapter7)\n- [Chapter\
+    \ 8: Naming Conventions](#part0000.xhtml_Chapter8)\n- [Chapter 9: Using Whitespace\
+    \ in Statements and Expressions](#part0000.xhtml_Chapter9)\n- [Conclusion](#part0000.xhtml_Conclusion)\n\
+    - [About the Author](#part0000.xhtml_About)\n\n© Copyright 2017 by Charlie Masterson\
+    \ - All rights reserved.\n\nThe contents of this book may not be reproduced, duplicated\
+    \ or transmitted without direct written permission from the author.\n\nUnder no\
+    \ circumstances will any legal responsibility or blame be held against the publisher\
+    \ for any reparation, damages, or monetary loss due to the information herein,\
+    \ either directly or indirectly.\n\n### Legal Notice\nThis book is copyright protected.\
+    \ This is only for personal use. You cannot amend, distribute, sell, use, quote\
+    \ or paraphrase any part or the content within this book without the consent of\
+    \ the author.\n\n### Disclaimer Notice\nPlease note the information contained\
+    \ within this document is for educational and entertainment purposes only. Every\
+    \ attempt has been made to provide accurate, up to date and reliable complete\
+    \ information. No warranties of any kind are expressed or implied. Readers acknowledge\
+    \ that the author is not engaging in the rendering of legal, financial, medical\
+    \ or professional advice. The content of this book has been derived from various\
+    \ sources. Please consult a licensed professional before attempting any techniques\
+    \ outlined in this book.\n\nBy reading this document, the reader agrees that under\
+    \ no circumstances are is the author responsible for any losses, direct or indirect,\
+    \ which are incurred as a result of the use of information contained within this\
+    \ document, including, but not limited to, errors, omissions, or inaccuracies.\n\
+    \n## Introduction\n\nI want to thank you and congratulate you for reading the\
+    \ book, “Python: Best Practices to Programming Code with Python”. This book contains\
+    \ proven steps and strategies on how to program in Python more effectively. When\
+    \ you first learn Python, you will be taught how to write code, but in many cases,\
+    \ you will not be taught how to write that code neatly.\n\nIf you speak to any\
+    \ Python programmer, ask them what it is they like about Python. I guarantee they\
+    \ will tell you that one of the main reasons is because it is easily readable.\
+    \ In fact, this is the absolute heart of the Python language, simply because computer\
+    \ code is read far more than it is written. Much of this is down to the fact that\
+    \ Python code follows a set of guidelines and “Pythonic” idioms – if you hear\
+    \ a programmer refer to a part of the code as not being “Pythonic”, it means that\
+    \ it doesn’t follow those guidelines and it doesn’t express intent in any readable\
+    \ manner.\n\nCode style and layout is incredibly important, as is consistency\
+    \ in the style that you use. With that said, there are times when consistency\
+    \ isn’t the right thing and the guidelines are simply not applicable – you have\
+    \ to know when that time is and that is when best judgment comes into programming\
+    \ with Python.\n\nWith this guide, I am going to show you the absolute best way\
+    \ to write your code, tidying up your program and making it all more effective\
+    \ and efficient. I won’t just give you the basic. I will delve deep into everything\
+    \ you need to know, from the layout of the code to how to write functions, idioms,\
+    \ and names.\n\nI will talk about whitespaces and tabs, strings, and methods.\
+    \ I will also be giving you some general recommendations for Python programming\
+    \ along with the general concepts. In short, by the time you have read my Best\
+    \ Practice guide, you will be the best Python programmer.\n\n# Chapter 1: General\
+    \ Concepts of Python Coding\n\nBefore we get properly into the book, these are\
+    \ the general concepts you should be aware of.\n\n### Explicit Code\nWhile you\
+    \ can do sorts of weird things with Python, it is best to keep it explicit.\n\n\
+    **Bad Example:**\n```python\ndef make_complex(*args):\n    x, y = args\n    return\
+    \ locals()\n```\n\n**Good Example:**\n```python\ndef make_complex(x, y):\n   \
+    \ return {'x': x, 'y': y}\n```\nCompare these examples; in the latter example,\
+    \ we explicitly return the dictionary.\n\n### One Line, One Statement\nWhile there\
+    \ are compound statements, like list comprehensions, that are allowed and, in\
+    \ many cases, appreciated, it is not good practice to have two statements that\
+    \ are disjointed on one line.\n\n**Bad Example:**\n```python\nprint 'one'; print\
+    \ 'two'\nif x == 1: print 'one'\n```\n\n**Good Example:**\n```python\nprint 'one'\n\
+    print 'two'\nif x == 1:\n    print 'one'\n```\n```python\nif cond1 and cond2:\n\
+    \    # do something\n```\n\n### Returning Values\nWhen you get a function that\
+    \ is ever-growing in complexity, it isn’t unheard of to use several return statements\
+    \ in the body. However, if you want to maintain clear intent and a good level\
+    \ of readability, you should try not to return values from several points in the\
+    \ function.\n\nWhen it comes to returning values within a function, there are\
+    \ 2 cases for doing so: the result that comes from a normally processed function\
+    \ return, and the errors that are indicative of incorrect input parameters or\
+    \ for any reason that the function cannot complete the computation.\n\nIf you\
+    \ don’t want exceptions raised for the latter case, then it might be necessary\
+    \ for values, such as `False` or `None` to be returned, as an indication that\
+    \ the function was not able to perform properly. In cases such as this, it is\
+    \ best practice to return as soon as the wrong context has been noticed.\n\nThis\
+    \ will help to neaten up the function structure because all code that comes after\
+    \ the error return assumes that the condition has been met so that the main function\
+    \ result can be computed. As such, it is sometimes necessary to have several return\
+    \ statements like this. That said, if a function contains several different courses\
+    \ it can go, it can be unwieldy to debug the result so it is preferable to maintain\
+    \ just one course. This also helps in working out code paths and, if you have\
+    \ several courses, it could be an indication that you need to re-look at your\
+    \ code and tidy it up.\n\n**Example:**\n```python\ndef complex_function(c, b,\
+    \ a):\n    if not c:\n        return None  # Raising an exception might be better\n\
+    \    if not b:\n        return None  # Raising an exception might be better\n\
+    \    # Some elaborate code that is trying to make x from c, b and a\n```\n"
+  raw: '
+
+
+    ![](Images/cover00081.jpeg)
+
+
+    Python:
+
+
+    Best Practices
+
+
+    to Programming Code
+
+
+    with Python
+
+
+    Charlie Masterson
+
+
+    Table of Contents
+
+
+    [Introduction](#part0000.xhtml_Introduction)
+
+
+    [Chapter 1: General Concepts of Python Coding](#part0000.xhtml_Chapter1)
+
+
+    [](#part0000.xhtml_Chapter1)[Chapter 2: Programming Recommendations](#part0000.xhtml_Chapter2)
+
+
+    [](#part0000.xhtml_Chapter2)[Chapter 3: Code Layout](#part0000.xhtml_Chapter3)
+
+
+    [](#part0000.xhtml_Chapter3)[Chapter 4: Idioms](#part0000.xhtml_Chapter4)
+
+
+    [](#part0000.xhtml_Chapter4)[Chapter 5: Comments](#part0000.xhtml_Chapter5)
+
+
+    [](#part0000.xhtml_Chapter5)[Chapter 6: Conventions](#part0000.xhtml_Chapter6)
+
+
+    [](#part0000.xhtml_Chapter6)[Chapter 7: Method and Function Arguments](#part0000.xhtml_Chapter7)
+
+
+    [](#part0000.xhtml_Chapter7)[Chapter 8: Naming Conventions](#part0000.xhtml_Chapter8)
+
+
+    [](#part0000.xhtml_Chapter8)[Chapter 9: Using Whitespace in Statements and Expressions](#part0000.xhtml_Chapter9)
+
+
+    [](#part0000.xhtml_Chapter9)[Conclusion](#part0000.xhtml_Conclusion)
+
+
+    [](#part0000.xhtml_Conclusion)[About the Author](#part0000.xhtml_About)
+
+
+    © Copyright 2017 by Charlie Masterson - All rights reserved.
+
+
+    The contents of this book may not be reproduced, duplicated or transmitted without
+    direct written permission from the author.
+
+
+    Under no circumstances will any legal responsibility or blame be held against
+    the publisher for any reparation, damages, or monetary loss due to the information
+    herein, either directly or indirectly.
+
+
+    Legal Notice:
+
+
+    This book is copyright protected. This is only for personal use. You cannot amend,
+    distribute, sell, use, quote or paraphrase any part or the content within this
+    book without the consent of the author.
+
+
+    Disclaimer Notice:
+
+
+    Please note the information contained within this document is for educational
+    and entertainment purposes only. Every attempt has been made to provide accurate,
+    up to date and reliable complete information. No warranties of any kind are expressed
+    or implied. Readers acknowledge that the author is not engaging in the rendering
+    of legal, financial, medical or professional advice. The content of this book
+    has been derived from various sources. Please consult a licensed professional
+    before attempting any techniques outlined in this book.
+
+
+    By reading this document, the reader agrees that under no circumstances are is
+    the author responsible for any losses, direct or indirect, which are incurred
+    as a result of the use of information contained within this document, including,
+    but not limited to, —errors, omissions, or inaccuracies.
+
+
+    Introduction
+
+
+    I want to thank you and congratulate you for reading the book, “Python: Best Practices
+    to Programming Code with Python”. This book contains proven steps and strategies
+    on how to program in Python more effectively. When you first learn Python, you
+    will be taught how to write code, but in many cases, you will not be taught how
+    to write that code neatly.
+
+
+    If you speak to any Python programmer, ask them what it is they like about Python.
+    I guarantee they will tell you that one of the main reasons is because it is easily
+    readable. In fact, this is the absolute heart of the Python language, simply because
+    computer code is read far more than it is written. Much of this is down to the
+    fact that Python code follows a set of guidelines and “Pythonic” idioms – if you
+    hear a programmer refer to a part of the code as not being “Pythonic”, it means
+    that it doesn’t follow those guidelines and it doesn’t express intent in any readable
+    manner.
+
+
+    Code style and layout is incredibly important, as is consistency in the style
+    that you use. With that said, there are times when consistency isn’t the right
+    thing and the guidelines are simply not applicable – you have to know when that
+    time is and that is when best judgment comes into programming with Python.
+
+
+    With this guide, I am going to show you the absolute best way to write your code,
+    tidying up your program and making it all more effective and efficient. I won’t
+    just give you the basic. I will delve deep into everything you need to know, from
+    the layout of the code to how to write functions, idioms, and names. 
+
+
+    I will talk about whitespaces and tabs, strings, and methods. I will also be giving
+    you some general recommendations for Python programming along with the general
+    concepts. In short, by the time you have read my Best Practice guide, you will
+    be the best Python programmer you can possibly be.
+
+
+    My book does assume some prior knowledge of Python programming, so if you are
+    a complete newbie to the programming scene, please familiarize yourself with Python
+    code before you read this book. My aim is to help you to produce Python code that
+    is free from, or at least has very few, complications or obvious problems, as
+    well as making it more readable for others.
+
+
+    Thanks again for reading this book, I hope you enjoy it!
+
+
+    # Chapter 1:
+
+
+    General Concepts of Python Coding
+
+
+    Before we get properly into the book, these are the general concepts of coding
+    that you should be aware of; concepts that will make life easier for you.
+
+
+    ## Explicit Code
+
+
+    While you can do all sorts of weird and wonderful things with Python, it is best
+    to keep it straightforward and explicit.
+
+
+    A Bad Example:
+
+
+    def make_complex(*args):
+
+
+        x, y = args
+
+
+        return dict(**locals())
+
+
+    A Good Example:
+
+
+    def make_complex(x, y):
+
+
+        return {''x'': x, ''y'': y}
+
+
+    Compare these examples; in the latter example of code, we explicitly received
+    x and y from the caller and the return is an explicit dictionary.
+
+
+    The developer who wrote this knows what to do just by looking at the first line
+    and the last line; this is not the case with the bad example.
+
+
+    ## One Line, One Statement
+
+
+    While there are compound statements, like the list comprehensions, that are allowed
+    and, in many cases, appreciated, it is not good practice to have 2 statements
+    that are disjointed on one code line.
+
+
+    A Bad Example:
+
+
+    print ''one''; print ''two''
+
+
+    if x == 1: print ''one''
+
+
+    if <complex comparison> and <other complex comparison>:
+
+
+        # do something
+
+
+    A Good Example:
+
+
+    print ''one''
+
+
+    print ''two''
+
+
+    if x == 1:
+
+
+        print ''one''
+
+
+    cond1 = <complex comparison>
+
+
+    cond2 = <other complex comparison>
+
+
+    if cond1 and cond2:
+
+
+        # do something
+
+
+    ## Returning Values
+
+
+    When you get a function that is ever-growing in complexity, it isn’t unheard of
+    to use several return statements in the body of the function. However, if you
+    want to maintain clear intent and a good level of readability, you should try
+    not to return values from several points in the function body.
+
+
+    When it comes to returning values within a function, there are 2 cases for doing
+    so: the result that comes from a normally processed function return, and the errors
+    that are indicative of incorrect input parameters or for any reason that the function
+    cannot complete the computation.
+
+
+    If you don’t want exceptions raised for the latter case, then it might be necessary
+    for values, such as False or None to be returned, as an indication that the function
+    was not able to perform properly. In cases such as this, it is best practice to
+    return as soon as the wrong context has been noticed.
+
+
+    This will help to neaten up the function structure because all code that comes
+    after the error return assumes that the condition has been met so that the main
+    function result can be computed. As such, it is sometimes necessary to have several
+    return statements like this.
+
+
+    That said, if a function contains several different courses it can go, it can
+    be unwieldy to debug the result so it is preferable to maintain just one course.
+    This also helps in working out code paths and, if you have several courses, it
+    could be an indication that you need to re-look at your code and tidy it up.
+
+
+    For Example:
+
+
+    def complex_function(c, b, a):
+
+
+        if not c:
+
+
+            return None  # Raising an exception might be better
+
+
+        if not b:
+
+
+            return None  # Raising an exception might be better
+
+
+        # Some elaborate code that is trying to make x from c, b and a'
+  toc: []
+  trans: "\n\n![](img/cover0008.jpeg)\n\n# Python：Python 编程最佳实践\n### Charlie Masterson\n\
+    \n## 目录\n- 引言\n- 第 1 章：Python 编码通用概念\n- 第 2 章：编程建议\n- 第 3 章：代码布局\n- 第 4 章：惯用用法\n\
+    - 第 5 章：注释\n- 第 6 章：规范\n- 第 7 章：方法与函数参数\n- 第 8 章：命名规范\n- 第 9 章：在语句和表达式中使用空白\n\
+    - 结论\n- 关于作者\n\n© Copyright 2017 by Charlie Masterson - 版权所有。\n\n未经作者直接书面许可，本书的内容不得复制、复制或传输。\n\
+    \n在任何情况下，出版者对因本文包含的信息直接或间接导致的任何赔偿、损害或资金损失不承担任何法律责任或指责。\n\n### 法律声明\n本书受版权保护。本书仅供个人使用。未经作者同意，您不得修改、分发、销售、使用、引用或转述本书的任何部分或内容。\n\
+    \n### 免责声明\n请注意，本文档包含的信息仅供教育和娱乐之用。我们已尽一切提供准确、最新、可靠且完整的信息。不提供任何形式的明示或隐含保证。读者承认作者并未提供法律、财务、医疗或专业建议。本书的内容源自各种来源。在尝试书中概述的任何技术之前，请咨询执业的专业人士。\n\
+    \n通过阅读本文，读者同意在任何情况下，作者均不对因使用本文档包含的信息（包括但不限于错误、遗漏或不准确）而导致的任何直接或间接损失负责。\n\n## 引言\n\
+    \n我想感谢你并祝贺你阅读《Python：Python 编程最佳实践》一书。本书包含了如何更有效地编写 Python 代码的成熟步骤和策略。当你初学 Python\
+    \ 时，人们会教你如何编写代码，但在很多情况下，他们不会教你如何写出整洁的代码。\n\n如果你接触任何 Python 程序员，问问他们喜欢 Python 的地方是什么。我保证他们会告诉你，主要原因之一是它易于阅读。事实上，这是\
+    \ Python 语言的核心所在，因为计算机代码被阅读的次数远多于编写的次数。这很大程度上是因为 Python 代码遵循了一系列指南和“Pythonic”（Python\
+    \ 风格）惯用用法——如果你听到程序员说某部分代码不“Pythonic”，就意味着它没有遵循这些指南，并且没有以任何可读的方式表达其意图。\n\n代码风格和布局至关重要，你所使用的风格的一致性也是如此。尽管如此，有时一致性并不是正确的选择，而指南也简单并不适用——你必须知道何时是这种情况，而这就是进行\
+    \ Python 编程时最佳判断所在。\n\n通过本指南，我将向你展示编写代码的绝对最佳方式，整理你的程序并使其更加有效、高效率。我不会只给你基础知识。我将深入探讨你需要了解的一切，从代码布局到如何编写函数、惯用用法和命名。\n\
+    \n我将谈到空白符和制表符、字符串和方法。我还将针对 Python 编程提供一些通用建议以及通用概念。简而言之，当你读完我的最佳实践指南时，你将成为最优秀的\
+    \ Python 程序员。\n\n# 第 1 章：Python 编码通用概念\n\n在我们正式进入书籍内容之前，这些是你应该注意的通用概念。\n\n###\
+    \ 显式代码\n虽然你可以用 Python 做一些奇怪的事情，但最好保持显式。\n\n**糟糕的示例：**\n```python\ndef make_complex(*args):\n\
+    \    x, y = args\n    return locals()\n```\n\n**良好的示例：**\n```python\ndef make_complex(x,\
+    \ y):\n    return {'x': x, 'y': y}\n```\n对比这些示例；在后一个示例中，我们显式地返回字典。\n\n### 一行一条\n\
+    虽然允许复合语句（如列表推导式），并且在很多情况下受到推崇，但在同一行内有两个不连续的语句并不是好的做法。\n\n**糟糕的示例：**\n```python\n\
+    print 'one'; print 'two'\nif x == 1: print 'one'\n```\n\n**良好的示例：**\n```python\n\
+    print 'one'\nprint 'two'\nif x == 1:\n    print 'one'\n```\n```python\nif cond1\
+    \ and cond2:\n    # 执行某些操作\n```\n\n### 返回值\n当你得到一个复杂度不断增长的函数时，在体中使用多个 `return`\
+    \ 语句并非罕见。然而，如果你想保持清晰的意图良好的可读性，你应该尽量避免从函数的多个点返回值。\n\n在函数内部返回值，有两种情况：来自正常处理的函数返回的结果，以及指示输入参数错误或由于任何原因函数无法完成计算的错误。\n\
+    \n如果你不想在后一种情况下抛出异常，那么可能需要返回诸如 `False` 或 `None` 等值，作为函数未能正常执行的指示。在这样的情况下，最佳实践是在注意到错误上下文后立即返回。\n\
+    \n这将有助于整洁函数结构，因为错误返回之后的所有代码都假设条件已经满足，以便计算主函数的结果。因此，有时需要像这样的多个 `return` 语句。尽管如此，如果一个函数包含多个不同的路径，调试结果将变得非常困难，因此最好只维护一条路径。这有助于理清代码路径，而且如果你有多个路径，这可能表明你需要重新审视你的代码并整理它。\n\
+    \n**示例：**\n```python\ndef complex_function(c, b, a):\n    if not c:\n        return\
+    \ None  # 抛出异常可能更好\n    if not b:\n        return None  # 抛出异常可能更好\n    # 尝试从\
+    \ c, b 和 a 生成 x 的复杂代码\n```\n"
+- fmt: "\n# Try not to return x if successful\n\n```python\nif not x:\n    # A Plan-B\
+    \ calculation of x\n    return x  # One exit point for the value x will be helpful\
+    \ when trying to maintain the code.\n```\n\n## Chapter 2: Programming Recommendations\n\
+    \nThese are the basic recommendations for writing Python code, recommendations\
+    \ that you should follow if your code is going to be more effective and efficient\
+    \ as well as being readable.\n\n- Your code must be written so that it doesn’t\
+    \ disadvantage other Python implementations, such as `IronPython`, `Jython`, `PyPy`,\
+    \ `Psyco` and `Cython`.\n\nFor example, you should never rely on the efficient\
+    \ string concatenation of `CPython` that takes the form of `a=a+b` or `a+=b`.\
+    \ This is a somewhat fragile optimization, even though it super-efficient in `CPython`,\
+    \ because it won’t work on all type it won’t be present in any Python implementation\
+    \ that does not use refcounting.\n\nInstead, where you use a part of the library\
+    \ that is performance-sensitive, you should use the `.join()` form instead. This\
+    \ will make sure that the concatenation is linear across all the different Python\
+    \ implementations.\n\n- Never use an equality operator to make comparisons to\
+    \ a singleton such as `None`. Instead, use `is` or `not`.\n\nYou should also be\
+    \ wary of using `if x` when really you should be using `if is not None`. An example\
+    \ of this is when you are testing if an argument or a variable that defaults to\
+    \ a value of `None` was actually set to a different value. The other value could\
+    \ have a type that is false in the Boolean context.\n\n- Rather than using the\
+    \ operator `not...is`, you should use `is not`. While they both are identical\
+    \ in terms of function, the first is low on the readability scale, making the\
+    \ second one more preferable. An example:\n\nUse This:\n```python\nif foo is not\
+    \ None:\n```\n\nDon’t Use This:\n```python\nif not foo is None\n```\n\n- When\
+    \ you implement an ordering operation with a rich comparison, you should implement\
+    \ all of the 6 operations instead of relying on some other code to exercise a\
+    \ comparison. Those operations are (`__eq__`, `__lt__`, `__ne__`, `__ge__`, `__gt__`,\
+    \ `__le__`).\n\nTo cut down on the effort needed, one particular decorator helps\
+    \ to generate any comparison methods that are missing. That decorator is `functools.total_ordering()`.\n\
+    \nThe style guidelines indicate that Python assumes reflexivity rules. As such,\
+    \ the Python interpreter might change things by swapping `y > x` with `x < y`,\
+    \ or it may swap `y >= x` with `x <= y`.\n\nYou may also find that the argument\
+    \ `x == y` has been swapped with `x != y`. The `min()` and `sort()` operations\
+    \ will also definitely use the `<` operator and the `max()` function will use\
+    \ the `>` operator. However, you should, as a best practice guide, use all of\
+    \ them so that there is no confusion.\n\n- Rather than using an assignment statement\
+    \ that will bind a lambda expression to an identifier, use a `def` statement.\n\
+    \nA Good Example:\n```python\ndef f(x): return 2*x\n```\n\nA Bad Example:\n```python\n\
+    f = lambda x: 2*x\n```\n\nThe first example shows that the name given to the function\
+    \ object is `f` rather than the collective `<lambda>`. This is the most useful\
+    \ for string representations and for tracebacks and, by using the assignment statement,\
+    \ you cut out the one benefit that a lambda expression offers over and above a\
+    \ `def` statement – that it may be embedded within a bigger statement.\n\nWhen\
+    \ you want to derive exceptions, use `Exception` and not `BaseException`. Inheritance\
+    \ from the latter is reserved for those exceptions where it is pretty much always\
+    \ wrong to catch them.\n\nWhen you design your exception hierarchies, base them\
+    \ on the quality that is likely to be needed by catching exceptions, rather than\
+    \ on the location where the exception is raised. Always answer one question –\
+    \ “what has gone wrong?” rather than just saying that something is wrong. Use\
+    \ the conventions for class naming but do remember to add the “Error” suffix to\
+    \ the exception classes that produce an error.\n\nThere is no need to put any\
+    \ special suffixes on exceptions that are not errors and are used as flow-control\
+    \ or another form of signaling.\n\n- When you use exception chaining, use it only\
+    \ where needed.\n\nWhen you replace an inner exception deliberately, make sure\
+    \ that the right details are relocated into the newer exception. Examples of this\
+    \ are making sure the name of the attribute is preserved when you convert `KeyError`\
+    \ to `AttributeError` or when you embed the original exception text into the message\
+    \ in the newer exception.\n\n- When using Python 2 and you raise an exception,\
+    \ always use the `raise ValueError('message')` instead of `raise ValueError 'message'`.\n\
+    \nThis is because the second example is neither valid nor legal syntax for Python\
+    \ 3. Also, the use of the containing parentheses means that there is no requirement\
+    \ to use continuation characters on a line when you add string formatting or when\
+    \ an exception argument is too long.\n\n- When you catch exceptions, always mention\
+    \ specific ones wherever you can rather than using the bare `except:` clause.\n\
+    \nFor Example:\n```python\ntry:\n    import platform_specific_module\nexcept ImportError:\n\
+    \    platform_specific_module = None\n```\n\n`KeyboardInterrupt` and `SystemExit`\
+    \ exceptions will be caught by a bare `except:` clause and this makes it much\
+    \ more difficult to interrupt programs using CTRL+C and they can also cover up\
+    \ other problems that may be there.\n\nIf you are looking to catch every exception\
+    \ that signals errors in the program, use `except Exception:`.\n\nA general rule\
+    \ is to only use the bare `except:` clause in one of these two cases:\n1. If the\
+    \ traceback is being printed by the exception handler; that way, the user will\
+    \ be made aware of any errors.\n2. If cleanup work is needed but the code allows\
+    \ the exception to propagate up using `raise`. A more efficient way to do this\
+    \ would be to use `try...finally`.\n\nWhen you are binding a caught exception\
+    \ to a name, use the explicit binding syntax from Python 2.6:\n```python\ntry:\n\
+    \    process_data()\nexcept Exception as exc:\n    raise DataProcessingFailedError(str(exc))\n\
+    ```\n\nThis is the ONLY syntax that Python 3 supports and it cuts out any problems\
+    \ of ambiguity that are associated with the older-style syntax that is comma-based.\n\
+    \n- When you are catching system errors, use the exception hierarchy from Python\
+    \ 3.3 rather than `errno` values. As well, when you use any `try/except` clause,\
+    \ try to limit the use of the `try` clause to the least amount of code. This will\
+    \ cut down the risk of errors being hidden.\n\nA Good Example:\n```python\ntry:\n\
+    \    value = collection[key]\nexcept KeyError:\n    return key_not_found(key)\n\
+    else:\n    return handle_value(value)\n```\n\nA Bad Example:\n```python\ntry:\n\
+    \    # Too broad!\n    return handle_value(collection[key])\nexcept KeyError:\n\
+    \    # Will catch a KeyError that is raised by handle_value()\n    return key_not_found(key)\n\
+    ```\n\n- When you use a resource tool that is local to a specific code section,\
+    \ use it with a statement to make sure that it is cleaned immediately after use.\
+    \ You can also use a `try/finally` statement.\n\n- Always invoke a context manager\
+    \ through separate methods or functions whenever they are for a purpose other\
+    \ than getting and releasing resources.\n\nA Good Example:\n```python\nwith conn.start_transaction():\n\
+    \    do_something_in_transaction(conn)\n```\n\nA Bad Example:\n```python\nwith\
+    \ conn:\n    do_something_in_transaction(conn)\n```\n\nThe second example does\
+    \ not give us any information that indicates whether the `__enter__` and `__exit__`\
+    \ methods do anything other than shutting the transaction. In this case, it is\
+    \ important to be explicit.\n\n- Consistency in return statements is important.\
+    \ Either all of the function return statements or none of the return statements\
+    \ should return an expression or value. If a return statement does return an expression,\
+    \ any that do not return any value should state explicitly that the return is\
+    \ `None` and there should be a return statement at the end of that function.\n\
+    \nA Good Example:\n```python\ndef foo(x):\n    if x >= 0:\n        return math.sqrt(x)\n\
+    \    else:\n        return None\n\ndef bar(x):\n    if x < 0:\n        return\
+    \ None\n    return math.sqrt(x)\n```\n\nA Bad Example:\n```python\ndef foo(x):\n\
+    \    if x >= 0:\n        return math.sqrt(x)\n```\n"
+  raw: '    # Try not to return x if successful
+
+
+        if not x:
+
+
+            # A Plan-B calculation of x
+
+
+        return x  # One exit point for the value x will be helpful
+
+
+                  # when trying to maintain the code.t
+
+
+    Chapter 2:
+
+
+    Programming Recommendations
+
+
+    These are the basic recommendations for writing Python code, recommendations that
+    you should follow if your code is going to be more effective and efficient as
+    well as being readable.
+
+
+    *   Your code must be written so that it doesn’t disadvantage other Python implementations,
+    such as IronPython, Jython, PyPy, Psyco and Cython.
+
+
+    For example, you should never rely on the efficient string concatenation of CPython
+    that takes the form ofa=a+bor  a+=b.This is a somewhat fragile optimization, even
+    though it super-efficient in CPython, because it won’t work on al type sand it
+    won’t be present in any Python implementation that does not use refcounting.
+
+
+    Instead, where you use a part of the library that is performance-sensitive, you
+    should use the.join()form instead. This will make sure that the concatenation
+    is linear across all the different Python implementations.
+
+
+    *   Never use an equality operator to make comparisons to a singleton such as
+    None. Instead, useis  ornot.
+
+
+    You should also be wary of usingif xwhen really you should be usingif is not None.
+    An example of this is when you are testing if an argument or a variable that defaults
+    to a value of None was actually set to a different value. The other value could
+    have a type that is false in the Boolean context.
+
+
+    *   Rather than using the operatornot…is, you should useis not. While they both
+    are identical in terms of function, the first is low on the readability scale,
+    making the second one more preferable. An example:
+
+
+    Use This:
+
+
+    if foo is not None:
+
+
+    Don’t Use This:
+
+
+    if not foo is None
+
+
+    *   When you implement an ordering operation with a rich comparison, you should
+    implement all of the 6 operations instead of relying on some other code to exercise
+    a comparison. Those operations are(__eq__, __lt__, __ne__, __ge__, __gt__, __le__)
+
+
+    To cut down on the effort needed, one particular decorator helps to generate any
+    comparison methods that are missing. That decorator isfunctools.total_ordering().
+
+
+    The style guidelines indicate that Python assumes reflexivity rules. As such,
+    the Python interpreter might change things about by swappingy > x with x < y , or
+    it may swapy >= x with x <= y . 
+
+
+    You may also find that the argumentx == y has been swapped withx != y .  Themin()andsort()  operations
+    will also definitely use the < operator and themax()  function will use the >operator.
+    However, you should, as a best practice guide, use all of them so that there is
+    no confusion.
+
+
+    *   Rather than using an assignment statement that will bind a lambda expression
+    to an identifier, use adef statement
+
+
+    A Good Example:
+
+
+    def f(x): return 2*x
+
+
+    A Bad Example:
+
+
+    f = lambda x: 2*x
+
+
+    The first example shows that the name given to the function object is ‘f’ rather
+    than the collective <lambda>. This is the most useful for string representations
+    and for tracebacks and, by using the assignment statement, you cut out the one
+    benefit that a lambda expression offers over and above a def statement – that
+    it may be embedded within a bigger statement.
+
+
+    When you want to derive exceptions, use Exception and not BaseException. Inheritance
+    from the latter is reserved for those exceptions where it is pretty much always
+    wrong to catch them
+
+
+    When you design your exception hierarchies, base them on the quality that is likely
+    to be needed by catching exceptions, rather than on the location where the exception
+    is raised. Always answer one question – “what has gone wrong?” rather than just
+    saying that something is wrong. Use the conventions for class naming but do remember
+    to add the “Error” suffix to the exception classes that produce an error.
+
+
+    There is no need to put any special suffixes on exceptions that are not errors
+    and are used as flow-control or another form of signaling.
+
+
+    *   When you use exception chaining, use it only where needed.
+
+
+    When you replace an inner exception deliberately, make sure that the right details
+    are relocated into the newer exception. Examples of this are making sure the name
+    of the attribute is preserved when you convertKeyErrorto  Attribute Erroror when
+    you embed the original exception text into the message in the newer exception
+
+
+    *   When using Python 2 and you raise an exception, always use theraise ValueError)’message’)instead
+    of  raise ValueError ‘message’
+
+
+    This is because the second example is neither valid nor legal syntax for Python
+    3\. Also, the use of the containing parentheses means that there is no requirement
+    to use continuation characters on a line when you add string formatting or when
+    an exception argument is too long.
+
+
+    *   When you catch exceptions, always mention specific ones wherever you can rather
+    than using the bare except: clause
+
+
+    For Example:
+
+
+    try:
+
+
+        import platform_specific_module
+
+
+    except ImportError:
+
+
+        platform_specific_module = None
+
+
+    KeyboardInterruptand  SystemExitexceptions will be caught by a bare except: clause
+    and this makes it much more difficult to interrupt programs using CTRL+C and they
+    can also cover up other problems that may be there.
+
+
+    If you are looking to catch every exception that signals errors in the program,
+    use except Exception:
+
+
+    A general rule is to only use the bare except: clause in one of these two cases:
+
+
+    1.  If the traceback is being printed by the exception handler; that way, the
+    user will be made aware of any errors
+
+
+    2.  If cleanup work is needed but the code allows the exception to propagate up
+    using raise. A more efficient way to do this would be to usetry…finally.
+
+
+    When you are binding a caught exception to a name, use the explicit binding syntax
+    from Python 2.6:
+
+
+    try:
+
+
+        process_data()
+
+
+    except Exception as exc:
+
+
+        raise DataProcessingFailedError(str(exc))
+
+
+    This is the ONLY syntax that Python 3 supports and it cuts out any problems of
+    ambiguity that are associated with the older-style syntax that is comma-based.
+
+
+    *   When you are catching system errors, use the exception hierarchy from Python
+    3.3 rather than errno values. As well, when you use any try/except clause, try
+    to limit the use of the try clause to the least amount of code. This will cut
+    down the risk of errors being hidden
+
+
+    A Good Example:
+
+
+    try:
+
+
+        value = collection[key]
+
+
+    except KeyError:
+
+
+        return key_not_found(key)
+
+
+    else:
+
+
+        return handle_value(value)
+
+
+    A Bad Example:
+
+
+    try:
+
+
+        # Too broad!
+
+
+        return handle_value(collection[key])
+
+
+    except KeyError:
+
+
+        # Will catch a KeyError that is raised by handle_value()
+
+
+        return key_not_found(key)
+
+
+    *   When you use a resource tool that is local to a specific code section, use
+    it with a statement to make sure that it is cleaned immediately after use. You
+    can also use a try/finally statement
+
+
+    *   Always invoke a context manager through separate methods or functions whenever
+    they are for a purpose other than getting and releasing resources.
+
+
+    A Good Example:
+
+
+    with conn.start_transaction():
+
+
+        do_something_in_transaction(conn)
+
+
+    A Bad Example:
+
+
+    with conn:
+
+
+        do_something_in_transaction(conn)
+
+
+    The second example does not give us any information that indicates whether the
+    __enter__ and __exit__ methods do anything other than shutting the transaction.
+    In this case, it is important to be explicit.
+
+
+    *   Consistency in return statements is important. Either all of the function
+    return statements or none of the return statements should return an expression
+    or value. If a return statement does return an expression, any that do not return
+    any value should state explicitly that the return is None and there should be
+    a return statement at the end of that function
+
+
+    A Good Example:
+
+
+    def foo(x):
+
+
+        if x >= 0:
+
+
+            return math.sqrt(x)
+
+
+        else:
+
+
+            return None
+
+
+    def bar(x):
+
+
+        if x < 0:
+
+
+            return None
+
+
+        return math.sqrt(x)
+
+
+    A Bad Example:
+
+
+    def foo(x):
+
+
+        if x >= 0:
+
+
+            return math.sqrt(x)'
+  toc: []
+  trans: "\n\n# 如果成功则不要返回 x\n\n```python\nif not x:\n    # 对 x 的备选计算\n    return x\
+    \  # 在尝试维护代码时，为 x 提供一个出口点会有帮助。\n```\n\n## 第 2 章：编程建议\n\n这些是编写 Python 代码的基本建议。如果你希望你的代码更加有效、高效且具有可读性，就应该遵循这些建议。\n\
+    \n- 你的代码编写方式不能对其他 Python 实现造成不利，例如 `IronPython`、`Jython`、`PyPy`、`Psyco` 和 `Cython`。\n\
+    \n例如，你永远不要依赖 `CPython` 中高效的字符串拼接（其形式为 `a=a+b` 或 `a+=b`）。这是一种相当脆弱的优化，尽管在 `CPython`\
+    \ 中极其高效，但因为它无法在所有类型上运行，而这些类型在任何不使用引用计数的 Python 实现中都不存在。\n\n相反，当你使用库中性能敏感的某部分时，你应该使用\
+    \ `.join()` 形式。这将确保拼接在所有不同的 Python 实现中都是线性的。\n\n- 永远不要使用相等运算符与单例（如 `None`）进行比较。相反，请使用\
+    \ `is` 或 `not`。\n\n你还应该警惕在应该使用 `if is not None` 的地方使用 `if x`。一个例子是，当你测试一个默认值为\
+    \ `None` 的参数或变量是否真的被设置为了不同的值时。另一个值的类型可能在布尔上下文中是假的。\n\n- 与其使用 `not...is` 运算符，你应该使用\
+    \ `is not`。虽然它们在功能上是等等的，但前者在可读性量级上较低，因此后者更受青睐。例如：\n\n使用这种：\n```python\nif foo\
+    \ is not None:\n```\n\n不要使用这种：\n```python\nif not foo is None\n```\n\n- 当你使用富比较（rich\
+    \ comparison）实现排序操作时，你应该实现所有的 6 个操作，而不是依赖其他代码来触发比较。这些操作是（`__eq__`、`__lt__`、`__ne__`、`__ge__`、`__gt__`、`__le__`）。\n\
+    \n为了减少工作量，一个特定的装饰器有助于生成任何缺失的比较方法。该装饰器是 `functools.total_ordering()`。\n\n风格指南指出\
+    \ Python 假设了反射性规则。因此，Python 解释器可能会通过交换 `y > x` 和 `x < y`，或者交换 `y >= x` 和 `x <=\
+    \ y` 来改变内容。\n\n你可能还会发现参数 `x == y` 被交换成了 `x != y`。`min()` 和 `sort()` 操作也将确无疑地使用\
+    \ `<` 运算符，而 `max()` 函数将使用 `>` 运算符。然而，作为最佳实践指南，你应该使用所有的操作以防产生混淆。\n\n- 与其使用将 lambda\
+    \ 表达式绑定到标识符的赋值语句，不如使用 `def` 语句。\n\n良好的示例：\n```python\ndef f(x): return 2*x\n```\n\
+    \n一个糟糕的示例：\n```python\nf = lambda x: 2*x\n```\n\n第一个示例显示给函数对象的名称是 `f` 而不是总体的 `<lambda>`。这对于字符串表示以及回溯追踪（tracebacks）最有有用，而且通过使用赋值语句，你放弃了\
+    \ lambda 表达式相比 `def` 语句提供的唯一优势——即它可以被嵌入更大的语句中。\n\n当你想要派生异常时，使用 `Exception` 而不是\
+    \ `BaseException`。后者的继承留给那些捕获它们几乎总是错误的错误的异常。\n\n在设计异常层次结构时，应根据捕获异常可能需要的性质来构建，而不是根据异常抛出的位置。始终回答一个问题——“发生了什么错误？”而不是仅仅说某事错了。使用类命名的规范，但记得为产生错误的异常类加上\
+    \ “Error” 后缀。\n\n对于不是错误且用于流程控制或其他信号形式的异常，不需要添加任何特殊后缀。\n\n- 当你使用异常链（exception chaining）时，仅在需要的地方使用。\n\
+    \n当你故意替换内部异常时，确保将正确的细节迁移到新的异常中。示例包括在将 `KeyError` 转换为 `AttributeError` 时确保属性名称被保留，或者将原始异常文本嵌入到新异常的消息中。\n\
+    \n- 当使用 Python 2 抛出异常时，始终使用 `raise ValueError('message')` 而不是 `raise ValueError\
+    \ 'message'`。\n\n这是因为第二个示例在 Python 3 中既不是有效的也不是合法的语法。此外，使用包含括号意味着当添加字符串格式化或异常参数过长时，不需要在行尾使用续行符。\n\
+    \n- 当你捕获异常时，尽可能提到具体的异常，而不是使用裸露的 `except:` 子句。\n\n例如：\n```python\ntry:\n    import\
+    \ platform_specific_module\nexcept ImportError:\n    platform_specific_module\
+    \ = None\n```\n\n`KeyboardInterrupt` 和 `SystemExit` 异常会被裸露 `except:` 子句捕获，这使得使用\
+    \ CTRL+C 中断程序变得困难得多，而且它们还会掩盖可能存在的其他问题。\n\n如果你想要捕捉程序中信号错误的每个异常，请使用 `except Exception:`。\n\
+    \n通常规则是仅在以下两种情况之一使用裸露 `except:` 子句：\n1. 如果回溯追踪是由异常处理程序打印的；这样用户就能感知到错误。\n2. 需要清理工作但允许异常向上通过\
+    \ `raise`。\n\n当你将捕获的异常绑定到名称时，使用 Python 2.6 的语法：\n```python\ntry:\n    process_data()\n\
+    except Exception as exc:\n    raise DataFailedError(str(exc))\n```\n\n这是 Python\
+    \ 支持的唯一语法，它消除了与旧风格相关的逗号问题。\n\n- 当你捕获系统错误时，使用 Python 3 的异常层次而不是 `errno` 值。同样，当你使用任何\
+    \ `try/except` 子句时，尽量将 `try` 子句限制在尽可能少的代码范围内。这将减少隐藏错误的风险。\n\n良好的示例：\n```python\n\
+    try:\n    value = collection[key]\nexcept KeyError:\n    return key_not_found(key)\n\
+    else:\n    return handle_value(value)\n```\n\n一个糟糕的示例：\n```python\ntry:\n    #\
+    \ 范围太广了！\n    return handle_value(collection[key])\nexcept KeyError:\n    # 会捕获\
+    \ handle_value() 的 KeyError\n    return key_not_found(key)\n```\n\n- 当你使用特定代码段局部资源工具时，使用语句在使用后立即清理。你也可以使用\
+    \ `try/finally` 语句。\n\n- 当目的是获取和释放资源时，始终通过单独的方法调用上下文管理器。\n\n良好的示例：\n```python\n\
+    with conn.start_transaction():\n    do_something_in_transaction(conn)\n```\n\n\
+    一个糟糕的示例：\n```python\nwith conn:\n    do_something_in_transaction(conn)\n```\n\n\
+    第二个示例没有提供任何信息表明 `__enter__` 和 `__exit__` 方法除了关闭事务之外的操作。在这种情况下，显式化是重要的。\n\n- 返回语句的一致性很重要。函数的所有返回语句或一个返回语句都应该返回表达式或值。如果某个返回语句返回了表达式，那么任何不返回值的语句都应该显式说明返回\
+    \ `None`，并且在该函数的末尾有一个返回语句。\n\n良好的示例：\n```python\ndef foo(x):\n    if x >= 0:\n\
+    \        return math.sqrt(x)\n    else:\n        return None\n\ndef bar(x):\n\
+    \    if x < 0:\n        return None\n    return math.sqrt(x)\n```\n\n一个糟糕的示例：\n\
+    ```python\ndef foo(x):\n    if x >= 0:\n        return math.sqrt(x)\n```\n"
+- fmt: "\n```python\ndef bar(x):\n    if x < 0:\n        return\n    return math.sqrt(x)\n\
+    ```\n\n- Don’t use string modules; use string methods instead.\nThese are always\
+    \ faster and they share an API with the Unicode strings. This rule can be ignored\
+    \ if you need backward compatibility with a Python implementation that is earlier\
+    \ than 2.0.\n\n- Instead of using string slicing as a way of checking for suffixes\
+    \ and prefixes, use `.startswith()` and `.endswith()` instead.\nThese are much\
+    \ cleaner methods and they are less prone to errors.\n\n### A Good Example:\n\
+    ```python\nif foo.beginswith('bar'):\n```\n\n### A Bad Example\n```python\nif\
+    \ foo[:3] == 'bar':\n```\n\n- When you are comparing object types, use `isinstance()`\
+    \ instead of direct comparisons.\n\n### A Good Example:\n```python\nif isinstance(obj,\
+    \ int):\n```\n\n### A Bad Example\n```python\nif type(obj) is type(1):\n```\n\n\
+    When you check to see if an object is actually a string, remember that it could\
+    \ be a Unicode string as well. In Python 2.0, Unicode and `str` share the base\
+    \ class called `basestring` so you could do:\n\n```python\nif isinstance(obj,\
+    \ basestring):\n```\n\nHowever, in Python 3, you won’t find `basestring` or `Unicode`,\
+    \ only `str` and `bytes` objects are not strings anymore, they are integer sequences\
+    \ instead.\n\nFor a sequence – tuples, lists, strings, etc. – make use of the\
+    \ fact that an empty sequence is false.\n\n### A Good Example:\n```python\nif\
+    \ not seq:\n    if seq:\n```\n\n### A Bad Example\n```python\nif len(seq):\n \
+    \   if not len(seq):\n```\n\nDon’t include any string literals that require significant\
+    \ levels of trailing whitespace because this is not distinguishable and some text\
+    \ editors will remove them.\n\nDon’t use `==` to compare a Boolean value to True\
+    \ or False:\n\n### A Good Example:\n```python\nif greeting:\n```\n\n### A Bad\
+    \ Example\n```python\nif the greeting == True:\n```\n\n### An Even Worse Example\n\
+    ```python\nif the greeting is True:\n```\n\n# Chapter 3: Code Layout\n\nThe most\
+    \ obvious place to start with is how to layout your code. I will be giving you\
+    \ the best practice guidelines for code layout along with examples on how to do\
+    \ it and how not to:\n\n## Indentation and Alignment\n\nEvery indent level should\
+    \ be 4 spaces.\n\nWhen you use continuation lines, they should align the wrapped\
+    \ elements using one of two methods:\n\n- Vertically with the Python implicit\
+    \ way of joining lines inside braces, brackets, and parentheses, or\n- With hanging\
+    \ indents\n\nWhen you use a hanging indent, consider that there shouldn’t be any\
+    \ arguments on line one and that, to mark the continuation line, indentation must\
+    \ be used.\n\nConsider the following examples:\n\n### The Right Way:\n\n```python\n\
+    # Aligned with an opening delimiter.\nfoo = long_function_name(var_four, var_three,\n\
+    \                         var_two, var_one)\n# and some more indentation included\
+    \ so this is distinguished from the rest of the code\ndef long_function_name(\n\
+    \    var_four, var_three, var_two,\n    var_one):\n    print(var_four)\n\n# Hanging\
+    \ indents should be used to add a level.\nfoo = long_function_name(\n    var_four,\
+    \ var_three,\n    var_two, var_one)\n```\n\n### The Wrong Way:\n\n```python\n\
+    # Arguments on first line are forbidden when you are not using vertical alignment.\n\
+    foo = long_function_name(var_four, var_three,\n    var_two, var_one)\n# More indentation\
+    \ is required as the indentation is not distinguishable from the rest.\ndef long_function_name(\n\
+    \    var_four, var_three, var_two,\n    var_one):\n    print(var_four)\n```\n\n\
+    When it comes to continuation lines, the rule on 4 indent spaces is optional:\n\
+    \n```python\n# it is possible for hanging indents *to* be indented to more or\
+    \ less than 4 spaces.\nfoo = long_function_name(\n    var_four, var_three,\n \
+    \   var_two, var_one)\n```\n\nWhen you use an if-statement with a long condition\
+    \ that can be written over more than one line, note that there is an easy to create\
+    \ a natural indent of 4 spaces for the rest of the lines in the conditional –\
+    \ use a keyword of 2 characters (for example, `if`) along with one space and an\
+    \ opening parenthesis. However, visually, this can look like some kind of incompatibility\
+    \ with the indented code within the if-statement, which will already have a 4-space\
+    \ indent. There is no real position on whether to distinguish these conditional\
+    \ lines from the code inside the nest but there are a few acceptable options you\
+    \ can use, including but not limited to:\n\n```python\n# No extra indentation\
+    \ used.\nif (this_is_one_thing and\n    that_is_something_else):\n    do_this()\n\
+    \n# Add a comment, which will provide some help in the editors\n# supporting highlighting\
+    \ of syntax.\nif (this_is_one_thing and\n    that_is_something_else):\n    # as\
+    \ both conditions are true, we can tweak.\n    do_this()\n\n# Add more indentation\
+    \ to the conditional continuation line.\nif (this_is_one_thing\n        and that_is_something_else):\n\
+    \    do_this()\n```\n\nNow, when you have a construction of multiple lines, the\
+    \ closing brace, parentheses, or bracket can line up in one of two places – either\
+    \ beneath the beginning character that is NOT a white space on the end line of\
+    \ the list:\n\n```python\nmy_list = [\n    6, 5, 4,\n    3, 2, 1,\n    ]\nresult\
+    \ = a_function_that_will_take_arguments(\n    'f', 'e', 'd',\n    'c', 'b', 'a',\n\
+    \    )\n```\n\nOr it can be lined up beneath the beginning character of the first\
+    \ line in the multiple line construction:\n\n```python\nmy_list = [\n    6, 5,\
+    \ 4,\n    3, 2, 1,\n]\nresult = a_function_that_will_take_arguments(\n    'f',\
+    \ 'e', 'd',\n    'c', 'b', 'a',\n)\n```\n\n# Chapter 4: Idioms\n\nProgramming\
+    \ idioms are, in simple terms, the way in which Python code should be written.\
+    \ We often refer to idiomatic code as Pythonic code and, although there tends\
+    \ to be one very obvious way to write something, the actual way in which Pythonic\
+    \ code is written can be a bit obscure to those who are new to Python. So, you\
+    \ need to learn good idioms and some of the more common ones are:\n\n### Unpacking\n\
+    \nProvided you know how long a tuple or list is, unpacking allows you to give\
+    \ each element a name. For example, `enumerate()` gives us a tuple with 2 elements\
+    \ for each of the items in the list:\n\n```python\nfor the index, each item in\
+    \ enumerate(this_list):\n    # do something with the index and each item\n```\n\
+    \nYou can also use unpacking to swap the variables:\n\n```python\nb, a = a, b\n\
+    ```\n\nAnd you can use nested unpacking:\n\n```python\nc, (b, a) = 3, (2, 1)\n\
+    ```\n\nWhen Python 3 was implemented, it came with a new extended unpacking method:\n\
+    \n```python\nc *the_rest = [3, 2, 1]\n# c = 3, the_rest = [2, 1]\nc, *the_middle,\
+    \ c = [4, 3, 2, 1]\n# c = 4, the_middle = [3, 2], c = 1\n```\n\n### Creating Ignored\
+    \ Variables\n\nIf you wanted to assign something but do not need to use the variable,\
+    \ you would use `__`. For example:\n\n```python\nfilename = 'footbar.txt'\nbasename,\
+    \ __, ext = filename.rpartition('.')\n```\n\n**NOTE**\n\nYou will often see it\
+    \ recommended that you use a single underscore (`_`) for variables that are throwaway,\
+    \ rather than using a double underscore (`__`). The problem with this is, `-`,\
+    \ the single underscore, tends to be used in the `gettext()` function as an alias.\
+    \ It is also used to store the value of the previous operation at the interactive\
+    \ prompt. When you use a double underscore, `__`, it is clear and it is convenient.\
+    \ It also cuts out the accidental risk of interfering with the other use cases\
+    \ of the single underscore.\n\n### Creating Length-N Lists\n\nTo create a length-N\
+    \ list that is of the same thing, you would use the `*` list operator:\n\n```python\n\
+    four_zeros = [Zero] * 4\n```\n\nTo create a length-N list of a list you should\
+    \ not use the `*` operator. That operator creates lists of N that refer to the\
+    \ same list and that is not what we want. Instead, we use a list comprehension:\n\
+    \n```python\nfour_lists = [[] for __ in xrange(4)]\n```\n\nNote – If you are using\
+    \ Python 3, use `range()` and not `xrange()`.\n\n### Creating Strings from Lists\n\
+    \nThe most common idiom for creating strings is `str.join()` on empty strings:\n\
+    \n```python\nletters = ['c', 'l', o, 't']\nword = ''.join(letters)\n```\n\nThis\
+    \ sets a value of “clot” to the variable `word`. You can apply this idiom to tuples\
+    \ and lists.\n\n### Searching a Collection for an Item\n\nOn occasion, you will\
+    \ need to search a collection for a specific option and there are two ways to\
+    \ do this – using lists or sets\n\nLook at this example:\n\n```python\ns = set(['c',\
+    \ 'l', 'o', 't'])\nl = ['c', 'l', 'o', 't']\n\ndef lookup_set(s):\n    return\
+    \ 's' in s\n\ndef lookup_list(l):\n    return 's' in l\n```\n"
+  raw: "def bar(x):\n\n    if x < 0:\n\n        return\n\n    return math.sqrt(x)\n\
+    \n*   Don’t use string modules; use string methods instead\n\nThese are always\
+    \ faster and they share an API with the Unicode strings. This rule can be ignored\
+    \ if you need backward compatibility with a Python implementation that is earlier\
+    \ than 2.0\n\n*   Instead of using string slicing as a way of checking for suffixes\
+    \ and prefixes, use“.startswith()  and“.endswith()  instead\n\nThese are much\
+    \ cleaner methods and they are less prone to errors.\n\nA Good Example:\n\n if\
+    \ foo.beginswith('bar'):\n\nA Bad Example:\n\nif foo[:3] == 'bar':\n\n*   When\
+    \ you are comparing object types, useisinstance()instead of direct comparisons\n\
+    \nA Good Example:\n\nif isinstance(obj, int):\n\nA Bad Example:\n\nif type(obj)\
+    \ is type(1):\n\nWhen you check to see if an object is actually a string, remember\
+    \ that it could be a Unicode string as well. In Python 2.0, Unicode and str share\
+    \ the base class calledbasestring  so you could do:\n\nif isinstance(obj, basestring):\n\
+    \nHowever, in Python 3, you won’t find basestring or Unicode, only str and bytes\
+    \ objects are not strings anymore, they are integer sequences instead.\n\nFor\
+    \ a sequence – tuples, lists, strings, etc. – make use of the fact that an empty\
+    \ sequence is false.\n\nA Good Example:\n\nif not seq:\n\n     if seq:\n\nA Bad\
+    \ Example:\n\nif len(seq):\n\n    if not len(seq):\n\nDon’t include any string\
+    \ literals that require significant levels of trailing whitespace because this\
+    \ is not distinguishable and some text editors will remove them\n\nDon’t use ==\
+    \ to compare a Boolean value to True or False:\n\nA Good Example:\n\nif greeting:\n\
+    \nA Bad Example:\n\nif the greeting == True:\n\nAn Even Worse Example:\n\nif the\
+    \ greeting is True:\n\n# \n\nChapter 3:\n\nCode Layout\n\nThe most obvious place\
+    \ to start with is how to layout your code. I will be giving you the best practice\
+    \ guidelines for code layout along with examples on how to do it and how not to:\n\
+    \n## Indentation and Alignment\n\nEvery indent level should be 4 spaces.\n\nWhen\
+    \ you use continuation lines, they should align the wrapped elements using one\
+    \ of two methods:\n\n*   Vertically with the Python implicit way of joining lines\
+    \ inside braces, brackets, and parentheses, or\n\n*   With hanging indents\n\n\
+    When you use a hanging indent, consider that there shouldn’t be any arguments\
+    \ on line one and that, to mark the continuation line, indentation must be used.\n\
+    \nConsider the following examples:\n\nThe Right Way:\n\n# Aligned with an opening\
+    \ delimiter.\n\nfoo = long_function_name(var_four, var_three,\n\n                        \
+    \ var_two, var_one)\n\n# and some more indentation included so this is distinguished\
+    \ from the rest of the code\n\ndef long_function_name(\n\n        var_four, var_three,\
+    \ var_two,\n\n        var_one):\n\n    print(var_four)\n\n# Hanging indents should\
+    \ be used to add a level.\n\nfoo = long_function_name(\n\n    var_four, var_three,\n\
+    \n    var_two, var_one)\n\nThe Wrong Way:\n\n# Arguments on first line are forbidden\
+    \ when you are not using vertical alignment.\n\nfoo = long_function_name(var_four,\
+    \ var_three,\n\n    var_two, var_one)\n\n# More indentation is required as the\
+    \ indentation is not distinguishable from the rest.\n\ndef long_function_name(\n\
+    \n    var_four, var_three, var_two,\n\n    var_one):\n\n    print(var_four)\n\n\
+    When it comes to continuation lines, the rule on 4 indent spaces is optional:\n\
+    \n# it is possible for hanging indents *to* be indented to more or less than 4\
+    \ spaces.\n\nfoo = long_function_name(\n\n  var_four, var_three,\n\n  var_two,\
+    \ var_one)\n\nWhen you use an if-statement with a long condition that can be written\
+    \ over more than one line, note that there is an easy to create a natural indent\
+    \ of 4 spaces for the rest of the lines in the conditional – use a keyword of\
+    \ 2 characters (for example, if) along with one space and an opening parenthesis.\
+    \ However, visually, this can look like some kind of incompatibility with the\
+    \ indented code within the if-statement, which will already have a 4-space indent.\
+    \ There is no real position on whether to distinguish these conditional lines\
+    \ from the code inside the nest but there are a few acceptable options you can\
+    \ use, including but not limited to:\n\n# No extra indentation used.\n\nif (this_is_one_thing\
+    \ and\n\n    that_is_something_else):\n\n    do_this()\n\n# Add a comment, which\
+    \ will provide some help in the editors\n\n# supporting highlighting of syntax.\n\
+    \nif (this_is_one_thing and\n\n    that_is_something_else):\n\n    # as both conditions\
+    \ are true, we can tweak.\n\n    do_this()\n\n# Add more indentation to the conditional\
+    \ continuation line.\n\nif (this_is_one_thing\n\n        and that_is_something_else):\n\
+    \n    do_this()\n\nNow, when you have a construction of multiple lines, the closing\
+    \ brace, parentheses, or bracket can line up in one of two places – either beneath\
+    \ the beginning character that is NOT a white space on the end line of the list:\n\
+    \nmy_list = [\n\n    6, 5, 4,\n\n    3, 2, 1,\n\n    ]\n\nresult = a_function_that_will_take_arguments(\n\
+    \n    'f', 'e', 'd',\n\n    'c', 'b', 'a',\n\n    )\n\nOr it can be lined up beneath\
+    \ the beginning character of the first line in the multiple line construction:\n\
+    \nmy_list = [\n\n    6, 5, 4,\n\n    3, 2, 1,\n\n]\n\nresult = a_function_that_will_take_arguments(\n\
+    \n    'f', 'e', 'd',\n\n    'c', 'b', 'a',\n\n)\n\nChapter 4:\n\nIdioms\n\nProgramming\
+    \ idioms are, in simple terms, the way in which Python code should be written.\
+    \ We often refer to idiomatic code as Pythonic code and, although there tends\
+    \ to be one very obvious way to write something, the actual way in which Pythonic\
+    \ code is written can be a bit obscure to those who are new to Python. So, you\
+    \ need to learn good idioms and some of the more common ones are:\n\nUnpacking\n\
+    \nProvided you know how long a tuple or list is, unpacking allows you to give\
+    \ each element a name. For example,enumerate()  gives us a tuple with 2 elements\
+    \ for each of the items in the list:\n\nfor the index, each item in enumerate(this_list):\n\
+    \n    # do something with the index and each item\n\nYou can also use unpacking\
+    \ to swap the variables:\n\nb, a = a, b\n\nAnd you can use nested unpacking:\n\
+    \nc, (b, a) = 3, (2, 1)\n\nWhen Python 3 was implemented, it came with a new extended\
+    \ unpacking method:\n\nc *the_rest = [3, 2, 1]\n\n# c = 3, the_rest = [2, 1]\n\
+    \nc, *the_middle, c = [4, 3, 2, 1]\n\n# c = 4, the_middle = [3, 2], c = 1\n\n\
+    ## Creating Ignored Variables\n\nIf you wanted to assign something but do not\
+    \ need to use the variable, you would use __. For example:\n\nfilename = 'footbar.txt'\n\
+    \nbasename, __, ext = filename.rpartition('.')\n\nNOTE\n\nYou will often see it\
+    \ recommended that you use a single underscore (_) for variables that are throwaway,\
+    \ rather than using a double underscore(__). The problem with this is, “-“, the\
+    \ single underscore, tends to be used in thegettext()  function as an alias. It\
+    \ is also used to store the value of the previous operation at the interactive\
+    \ prompt. When you use a double underscore, “__”, it is clear and it is convenient.\
+    \ It also cuts out the accidental risk of interfering with the other use cases\
+    \ of the single underscore.\n\n## Creating Length-N Lists\n\nTo create a length-N\
+    \ list that is of the same thing, you would use the * list operator\n\nfour_zeros\
+    \ = [Zero] * 4\n\nTo create a length-N list of a list you should not use the *\
+    \ operator. That operator creates lists of N that refer to the same list and that\
+    \ is not what we want here. Instead, we use a list comprehension:\n\nfour_lists\
+    \ = [[] for __ in xrange(4)]\n\nNote – If you are using Python 3, use range()\
+    \ and not xrange()\n\n## Creating Strings from Lists\n\nThe most common idiom\
+    \ for creating strings is str.join() on empty strings:\n\nletters = [‘c’, ‘l’,\
+    \ o, 't']\n\nword = ''.join(letters)\n\nThis sets a value of “clot” to the variable\
+    \ word. You can apply this idiom to tuples and lists.\n\n## Searching a Collection\
+    \ for an Item\n\nOn occasion, you will need to search a collection for a specific\
+    \ option and there are two ways to do this – using lists or sets\n\nLook at this\
+    \ example:\n\ns = set(['c', 'l', 'o', 't'])\n\nl = ['c', 'l', 'o', 't']\n\ndef\
+    \ lookup_set(s):\n\n    return 's' in s\n\ndef lookup_list(l):\n\n    return 's'\
+    \ in l"
+  toc: []
+  trans: "\n\n```python\ndef bar(x):\n    if x < 0:\n        return\n    return math.sqrt(x)\n\
+    ```\n\n- 不要使用字符串模块（string modules）；请使用字符串方法（string methods）。\n这些方法总是更快，并且与 Unicode\
+    \ 字符串共享 API。如果你需要与早于 2.0 的 Python 实现向后兼容，则可以忽略这条规则。\n\n- 不要使用字符串切片来检查后缀和前缀，而应使用\
+    \ `.startswith()` 和 `.endswith()`。\n这些方法要清晰得多，而且更不容易出错。\n\n### 良好的示例：\n```python\n\
+    if foo.beginswith('bar'):\n```\n\n### 错误的示例：\n```python\nif foo[:3] == 'bar':\n\
+    ```\n\n- 在比较对象类型时，使用 `isinstance()` 而不是直接比较。\n\n### 良好的示例：\n```python\nif isinstance(obj,\
+    \ int):\n```\n\n### 错误的示例：\n```python\nif type(obj) is type(1):\n```\n\n当你检查一个对象是否实际上是字符串时，记住它也可能是一个\
+    \ Unicode 字符串。在 Python 2.0 中，Unicode 和 `str` 共享名为 `basestring` 的基类，因此你可以：\n\n\
+    ```python\nif isinstance(obj, basestring):\n```\n\n然而，在 Python 3 中，你找不到 `basestring`\
+    \ 或 `Unicode`，只有 `str` 和 `bytes` 对象不再是字符串，它们是整数序列。\n\n对于序列——元组、列表、字符串等——请利用空序列为假（false）的特性。\n\
+    \n### 良好的示例：\n```python\nif not seq:\n    if seq:\n```\n\n### 错误的示例：\n```python\n\
+    if len(seq):\n    if not len(seq):\n```\n\n不要包含任何需要大量尾部空格的字符串字面量，因为这些是无法区分的，某些文本编辑器会删除它们。\n\
+    \n不要使用 `==` 来比较布尔值 True 或 False：\n\n### 良好的示例：\n```python\nif greeting:\n```\n\
+    \n### 错误的示例：\n```python\nif the greeting == True:\n```\n\n### 更糟糕的示例：\n```python\n\
+    if the greeting is True:\n```\n\n# 第 3 章：代码布局\n\n最明显的入门点是如何布局你的代码。我将为你提供代码布局的最佳实践指南，以及关于如何做和如何不做的示例：\n\
+    \n## 缩进与对齐\n\n每个缩进层级应该是 4 个空格。\n\n当你使用延续行时，它们应该使用以下两种方法之一对齐折行后的元素：\n\n- 使用 Python\
+    \ 在花括号、括号和圆括号内部隐式连接行的垂直对齐，或\n- 使用悬挂缩进（hanging indents）\n\n当你使用悬挂缩进时，考虑第一行不应该有任何参数，并且为了标记延续行，必须使用缩进。\n\
+    \n考虑以下示例：\n\n### 正确的方法：\n\n```python\n# 与起始分隔符对齐。\nfoo = long_function_name(var_four,\
+    \ var_three,\n                         var_two, var_one)\n# 包含了更多缩进，以便与代码其余部分区分来\n\
+    def long_function_name(\n    var_four, var_three, var_two,\n    var_one):\n  \
+    \  print(var_four)\n\n# 应该使用悬挂缩进来增加层次。\nfoo = long_function_name(\n    var_four,\
+    \ var_three,\n    var_two, var_one)\n```\n\n### 错误的方法：\n\n```python\n# 当你不使用垂直对齐时，第一行不允许有参数。\n\
+    foo = long_function_name(var_four, var_three,\n    var_two, var_one)\n# 需要更多的缩进，因为缩进无法与其余部分区分。\n\
+    def long_function_name(\n    var_four, var_three, var_two,\n    var_one):\n  \
+    \  print(var_four)\n```\n\n当涉及到延续行时，4 个空格缩进规则是可选的：\n\n```python\n# 悬挂缩进*可以*缩进多于或少于\
+    \ 4 个空格。\nfoo = long_function_name(\n    var_four, var_three,\n    var_two, var_one)\n\
+    ```\n\n当你使用带有可以跨多行的长条件的 `if` 语句时，请注意，条件语句中的其余行可以轻松创建一个 4 个空格的自然缩进——使用一个 2 个字符的关键字（例如\
+    \ `if`）配合一个空格和一个左圆括号。然而，在视觉上，这看起来可能与 `if` 语句内部缩进的代码某种不兼容，因为内部已经有了 4 个空格的缩进。关于是否要将这些条件行与嵌套内部的代码区分开，并没有一个真正的标准，但有几个你可以使用的接受选项，包括但不限于：\n\
+    \n```python\n# 没有使用额外的缩进。\nif (this_is_one_thing and\n    that_is_something_else):\n\
+    \    do_this()\n\n# 添加注释，这将在支持语法高亮的编辑器中提供一些帮助。\nif (this_is_one_thing and\n  \
+    \  that_is_something_else):\n    # 因为两个条件都为真，我们可以进行调整。\n    do_this()\n\n# 给条件延续行增加更多缩进。\n\
+    if (this_is_one_thing\n        and that_is_something_else):\n    do_this()\n```\n\
+    \n现在，当你有一个多行结构时，闭合的花括号、括号或中括号可以对齐在两个位置之一——要么在列表末尾行非空格的起始字符之下方：\n\n```python\n\
+    my_list = [\n    6, 5, 4,\n    3, 2, 1,\n    ]\nresult = a_function_that_will_take_arguments(\n\
+    \    'f', 'e', 'd',\n    'c', 'b', 'a',\n    )\n```\n\n或者它可以对齐在多行结构第一行的起始字符之下方：\n\
+    \n```python\nmy_list = [\n    6, 5, 4,\n    3, 2, 1,\n]\nresult = a_function_that_will_take_arguments(\n\
+    \    'f', 'e', 'd',\n    'c', 'b', 'a',\n)\n```\n\n# 第 4 章：惯用法（Idioms）\n\n简单来说，编程惯用法是\
+    \ Python 代码应该编写的方式。我们通常将惯用代码称为 Pythonic 代码（Pythonic），尽管编写某事通常有一种非常明显的方法，但 Pythonic\
+    \ 代码的实际编写方式对于 Python 的初学者来说可能稍微有些晦涩。因此，你需要学习良好的惯用法，其中一些常见的惯用法包括：\n\n### 解包（Unpacking）\n\
+    \n只要你知道元组或列表的长度，解包允许你为每个元素命名。例如，`enumerate()` 为列表中的每个项目都提供一个包含 2 个元素的元组：\n\n```python\n\
+    for the index, each item in enumerate(this_list):\n    # 对 index 和 each item 执行操作\n\
+    ```\n\n你也可以使用解包来交换变量：\n\n```python\nb, a = a, b\n```\n\n你还可以使用嵌套解包：\n\n```python\n\
+    c, (b, a) = 3, (2, 1)\n```\n\n当 Python 3 实现时，它带有一个新的扩展解包方法：\n\n```python\nc *the_rest\
+    \ = [3, 2, 1]\n# c = 3, the_rest = [2, 1]\nc, *the_middle, c = [4, 3, 2, 1]\n\
+    # c = 4, the_middle = [3, 2, 1]\n```\n\n### 创建忽略变量\n\n如果你想赋值某些内容但不需要该变量，你会使用 `__`。例如：\n\
+    \n```python\nfilename = 'footbar.txt'\nbasename, __, ext = filename.rpartition('.')\n\
+    ```\n\n**注意**\n\n你经常看到建议使用单划线 `_` 来丢弃变量，而不是使用双划线 `__`。这样做的问题是，单划线 `-` 经常在 `gettext()`\
+    \ 函数中作为别名。它还用于存储交互式提示符的上一次操作值。当你使用双划线 `__` 时，它既清晰又方便，还能消除干扰单划线其他用例的风险。\n\n###\
+    \ 创建长度 N 的列表\n\n要创建一个相同内容的长度 N 列表，你会使用 `*` 列表运算符：\n\n```python\nfour_zeros = [Zero]\
+    \ * 4\n```\n\n要创建一个列表不应该使用 `*` 运算符。该运算符创建引用同一个列表列表，这并不是我们想要的。相反，我们使用列表推导式：\n\n\
+    ```python\nfour_lists = [[] for __ in xrange(4)]\n```\n\n注意——如果你正在使用 Python 3，请使用\
+    \ `range()` 而不是 `xrange()`。\n\n### 从列表创建字符串\n\n创建字符串最常用的惯用法是在空字符串上使用 `.join()`：\n\
+    \n```python\nletters = ['c', 'l', o, 't']\nword = ''.join(letters)\n```\n\n这会将“clot”的值赋值给变量\
+    \ `word`。你可以将这种惯用法应用于元组和列表。\n\n### 在集合中查找项\n\n有时，你需要在集合中查找特定选项，有两种方法——使用列表或集合。\n\
+    \n看这个示例：\n\n```python\ns = set(['c', 'l', 'o', 't'])\nl = ['c', 'l', 'o', 't']\n\
+    \ndef lookup_set(s):\n    return 's' in s\n\ndef lookup_list(l):\n    return 's'\
+    \ in l\n```\n\n"
+- fmt: "\nNow, both of these functions look exactly the same simply because `lookup_set`\
+    \ uses that fact that Python sets are hash tables. However, the performance of\
+    \ `lookup` in each of the examples is different. In order to decide whether a\
+    \ specific item is contained in a list, Python has to search through every single\
+    \ item until it finds one that matches. This takes time, especially if you have\
+    \ a long list. With sets, each item has a hash that tells Python where to look\
+    \ for the matching item. This makes the search much quicker even if the sets are\
+    \ big ones. You can also search dictionaries in the same way. Because there is\
+    \ a difference in the performance, it is a better idea to use a set or a dictionary\
+    \ rather than a list in the following cases:\n\n* Where a collection contains\
+    \ a lot of items\n* Where you are going to be searching for items in a collection\
+    \ on a repeated basis\n* There are no duplicate items\n\nIn cases of smaller collections\
+    \ or those that you are not likely to be searching on a frequent basis, the extra\
+    \ memory and time needed to set the hash table up will, more often than not, be\
+    \ more than the time you save by improving the speed of the search.\n\n# Chapter\
+    \ 5: Comments\n\nBecause you already have some experience of Python coding, you\
+    \ will know that a comment is invisible when the program is run. A comment is\
+    \ there to help the coder and others who read it to understand what has been done\
+    \ and why. Now, some people think that, because they are invisible then there\
+    \ is no need to write them while others write comments that make no sense and\
+    \ that contradict their code. I have to tell you that, out of the two, having\
+    \ a contradictory comment is far worse than not writing one at all and, as such,\
+    \ whenever you make changes to your code, you must make sure that you update your\
+    \ comments.\n\nWhen you write a comment, ensure that it is a proper sentence with\
+    \ a proper ending. As it is when you write anything, your comment, be it a sentence\
+    \ or a phrase, must have a capital letter to start it. The only exception to that\
+    \ rule is if it is an identifier that starts with a lower-case letter – a golden\
+    \ rule here is that you NEVER change the case of an identifier!\n\nIf you are\
+    \ using a short comment you can leave off the full-stop at the end. If you are\
+    \ writing block comments, these tend to be made up of at least one paragraph,\
+    \ sometimes more, each one built from whole sentences. Each of these sentences\
+    \ must have a full-stop. Following each full-stop there should be 2 spaces and\
+    \ all comments should be written in English. The only exception to this is if\
+    \ you are 200% certain that your code is never going to be read by people who\
+    \ do not speak or read your language.\n\n## Block Comments\n\nA block comment\
+    \ tends to apply to some or all of the code that comes after it. The comment should\
+    \ be indented in the exact same way as the code it refers to and each line of\
+    \ each block must begin with a `#` and one space. The only exception is if you\
+    \ have used indented text within the comment. All paragraphs in each block comment\
+    \ must be separated with a line that contains one `#`.\n\n## Inline Comments\n\
+    \nThese should be used as little as possible. As a refresher, an inline comment\
+    \ is a comment that is placed on the same line that a statement is on. An inline\
+    \ comment has to be separated from the statement by a minimum of two spaces and\
+    \ they must begin with one `#` and one space.\n\nIn all honesty, you should avoid\
+    \ using inline comments because they are not really necessary and can cause an\
+    \ unwanted distraction.\n\nFor example, you should never do this:\n\n```python\n\
+    x = x + 1 # Increment x\n```\n\nHowever, sometimes, this could be useful:\n\n\
+    ```python\nx = x + 1 # Compensate for the border\n```\n\n# Chapter 6: Conventions\n\
+    \nTo make your Python code much read better, follow these conventions:\n\nLook\
+    \ to see if your variables are equal to a constant. There is no need for an explicit\
+    \ comparison of the values to `0`, `None` or `True`; instead, you could add it\
+    \ into the `if`-statement. Look at the following examples:\n\n### A Bad Example\n\
+    \n```python\nif attr == True:\n    print 'True!'\n\nif attr == None:\n    print\
+    \ 'attr is None!'\n```\n\n### A Good Example\n```python\n# Just look at the value\n\
+    if attr:\n    print 'attr is the best!'\n\n# or check to see what the opposite\
+    \ is\nif not attr:\n    print 'attr is the worst!'\n\n# or, as None is considered\
+    \ to be false, make you sure you run an explicit check for it\nif attr is None:\n\
+    \    print 'attr is None!'\n```\n\n## How to Access Dictionary Elements\n\nInstead\
+    \ of using the method `dict.has-key()`, use the syntax, `x in d` or use `dict.get()`\
+    \ to pass default arguments to. \n\n### A Bad Example\n\n```python\nd = {'hello':\
+    \ 'world'}\n\nif d.has_key('hello'):\n    print d['hello']    # prints 'world'\n\
+    else:\n    print 'the_default_value'\n```\n\n### A Good Example\n```python\nd\
+    \ = {'hello': 'world'}\nprint d.get('hello', 'default_value') # prints 'world'\n\
+    print d.get('thingy', 'default_value') # prints 'default_value'\n\n# Or:\nif 'hello'\
+    \ in d:\n    print d['hello']\n```\n\n## Manipulate Lists the Short Way\n\nYou\
+    \ don’t need to be long-winded when it comes to manipulating lists; use list comprehensions\
+    \ or the `filter()` or `map()` functions to use concise syntax when you want to\
+    \ perform an operation on a list.\n\n### A Bad Example\n```python\n# Filter all\
+    \ elements that are more than 4\na = [5, 4, 3]\nb = []\nfor i in a:\n    if i\
+    \ > 4:\n        b.append(i)\n```\n\n### A Good Example\n```python\na = [5, 4,\
+    \ 3]\nb = [i for i in a if i > 4]\n\n# Or:\nb = filter(lambda x: x > 4, a)\n```\n\
+    \n### Another Bad Example\n```python\n# Add 3 to all members f the list.\na =\
+    \ [5, 4, 3]\nfor i in range(len(a)):\n    a[i] += 3\n```\n\n### Another Good Example\n\
+    ```python\na = [5, 4, 3]\na = [i + 3 for i in a]\n\n# Or:\na = map(lambda i: i\
+    \ + 3, a)\n```\n\nYou can also use the function `enumerate()` to keep an account\
+    \ of where you are in a list:\n\n```python\na = [5, 4, 3]\nfor i, item in enumerate(a):\n\
+    \    print i, item\n# prints\n# 0 5\n# 1 4\n# 2 3\n```\nThis function reads better\
+    \ than trying to manually handle a counter and it is far more optimal for iterators.\n\
+    \n## Reading from a File\n\nWhen you want to read from a file, it is best to use\
+    \ the `with open` syntax as this will close the files for you automatically.\n\
+    \n### A Bad Example\n```python\nf = open('file.txt')\na = f.read()\nprint a\n\
+    f.close()\n```\n\n### A Good Example\n```python\nwith open('file.txt') as f:\n\
+    \    for line in f:\n        print line\n```\nUsing the `with` statement is far\
+    \ more efficient because it makes sure the file is always closed even when with\
+    \ block contains an exception\n\n## Line Continuations\n\nThere are accepted limits\
+    \ to logical code lines and when you have one that is longer, it should be split\
+    \ up over several lines. Your Python interpreter will take consecutive lines and,\
+    \ so long as the final character on each line is a backslash `\\`, it will join\
+    \ the lines. However, although this can be useful sometimes, really you should\
+    \ avoid it because it can be fragile. If you were to add a whitespace after the\
+    \ backslash, it can break your code and the results might not be what you expected.\n\
+    \nA better way to do this is to enclose elements inside parentheses. If there\
+    \ is an unclosed parenthesis at the end of the line, the next line will be joined,\
+    \ and so on until there is a closed parenthesis. You could also use square or\
+    \ curly braces to do the same thing, so long as you remain consistent – whatever\
+    \ you use to start, you must also use to finish.\n\n### A Bad Example\n```python\n\
+    an_incredibly_big_string = \"\"\"For many years I would go to bed early. Sometimes,\
+    \ \\\nafter I had put out my light, my eyes would shut so fast that I would not\
+    \ even \\\nhave the time to say “I am going to sleep.”\"\"\"\n\nfrom some.module.inside.another.module\
+    \ import a_good_function, another_good_function, \\\nyet_another_good_function\n\
+    ```\n\n### A Good Example\n```python\nmy_incredibly_big_string = (\n    \"For\
+    \ many years, I would go to bed early. Sometimes, \"\n    \"when I had put out\
+    \ my light, my eyes would shut so fast \"\n    \"that I would not even have time\
+    \ to say “I am going to sleep.”\"\n)\n\nfrom some.module.inside.another.module\
+    \ import (\n    a_good_function, another_good_function, yet_another_good_function\n\
+    )\n```\n"
+  raw: 'Now, both of these functions look exactly the same simply becauselookup_set  uses
+    that fact that Python sets are hash tables. However, the performance oflookup  in
+    each of the examples is different. In order to decide whether a specific item
+    is contained in a list, Python has to search through every single item until it
+    finds one that matches. This takes time, especially if you have a long list. With
+    sets, each item has a hash that tells Python where to look for the matching item.
+    This makes the search much quicker even if the sets are big ones. You can also
+    search dictionaries in the same way. Because there is a difference in the performance,
+    it is a better idea to use a set or a dictionary rather than a list in the following
+    cases:
+
+
+    *   Where a collection contains a lot of items
+
+
+    *   Where you are going to be searching for items in a collection on a repeated
+    basis
+
+
+    *   There are no duplicate items
+
+
+    In cases of smaller collections or those that you are not likely to be searching
+    on a frequent basis, the extra memory and time needed to set the hash table up
+    will, more often than not, be more than the time you save by improving the speed
+    of the search
+
+
+    Chapter 5:
+
+
+    Comments
+
+
+    Because you already have some experience of Python coding, you will know that
+    a comment is invisible when the program is run. A comment is there to help the
+    coder and others who read it to understand what has been done and why. Now, some
+    people think that, because they are invisible then there is no need to write them
+    while others write comments that make no sense and that contradict their code.
+    I have to tell you that, out of the two, having a contradictory comment is far
+    worse than not writing one at all and, as such, whenever you make changes to your
+    code, you must make sure that you update your comments.
+
+
+    When you write a comment, ensure that it is a proper sentence with a proper ending.
+    As it is when you write anything, your comment, be it a sentence or a phrase,
+    must have a capital letter to start it. The only exception to that rule is if
+    it is an identifier that starts with a lower-case letter – a golden rule here
+    is that you NEVER change the case of an identifier!
+
+
+    If you are using a short comment you can leave off the full-stop at the end. If
+    you are writing block comments, these tend to be made up of at least one paragraph,
+    sometimes more, each one built from whole sentences. Each of these sentences must
+    have a full-stop. Following each full-stop there should be 2 spaces and all comments
+    should be written in English. The only exception to this is if you are 200% certain
+    that your code is never going to be read by people who do not speak or read your
+    language
+
+
+    ## Block Comments:
+
+
+    A block comment tends to apply to some or all of the code that comes after it.
+    The comment should be indented in the exact same way as the code it refers to
+    and each line of each block must begin with a # and one space. The only exception
+    is if you have used indented text within the comment. All paragraphs in each block
+    comment must be separated with a line that contains one #.
+
+
+    ## Inline Comments
+
+
+    These should be used as little as possible. As a refresher, an inline comment
+    is a comment that is placed on the same line that a statement is on. An inline
+    comment has to be separated from the statement by a minimum of two spaces and
+    they must begin with one # and one space.
+
+
+    In all honesty, you should avoid using inline comments because they are not really
+    necessary and can cause an unwanted distraction.
+
+
+    For example, you should never do this:
+
+
+    x = x + 1                 # Increment x
+
+
+    However, sometimes, this could be useful:
+
+
+    x = x + 1                 # Compensate for the border
+
+
+    #   Chapter 6:
+
+
+    Conventions
+
+
+    To make your Python code much read better, follow these conventions:
+
+
+    Look to see if your variables are equal to a constant. There is no need for an
+    explicit comparison of the values to 0, None or True; instead, you could add it
+    into the if-statement. Look at the following examples:
+
+
+    A Bad Example:
+
+
+    if attr == True:
+
+
+        print ''True!''
+
+
+    if attr == None:
+
+
+        print ''attr is None!''
+
+
+    A Good Example:
+
+
+    # Just look at the value
+
+
+    if attr:
+
+
+        print ''attr is the best!''
+
+
+    # or check to see what the opposite is
+
+
+    if not attr:
+
+
+        print ''attr is the worst!''
+
+
+    # or, as None is considered to be false, make you sure you run an explicit check
+    for it
+
+
+    if attr is None:
+
+
+        print ''attr is None!''
+
+
+    ## How to Access Dictionary Elements:
+
+
+    Instead of using the method dict.has-key(), use the syntax, x in d or use dict.get()
+    to pass default arguments to.
+
+
+    A Bad Example:
+
+
+    d = {''hello'': ''world''}
+
+
+    if d.has_key(''hello''):
+
+
+        print d[''hello'']    # prints ''world''
+
+
+    else:
+
+
+        print ''the_default_value''
+
+
+    A Good Example:
+
+
+    d = {''hello'': ''world''}
+
+
+    print d.get(''hello'', ''default_value'') # prints ''world''
+
+
+    print d.get(''thingy'', ''default_value'') # prints ''default_value''
+
+
+    # Or:
+
+
+    if ''hello'' in d:
+
+
+        print d[''hello'']
+
+
+    ## Manipulate Lists the Short Way
+
+
+    You don’t need to be long-winded when it comes to manipulating lists; use list
+    comprehensions or the filter() or map() functions to use concise syntax when you
+    want to perform an operation on a list.
+
+
+    A Bad Example:
+
+
+    # Filter all elements that are more than 4
+
+
+    a = [5, 4, 3]
+
+
+    b = []
+
+
+    for i in a:
+
+
+        if i > 4:
+
+
+            b.append(i)
+
+
+    A Good Example:
+
+
+    a = [5, 4, 3]
+
+
+    b = [i for i in a if i > 4]
+
+
+    # Or:
+
+
+    b = filter(lambda x: x > 4, a)
+
+
+    Another Bad Example:
+
+
+    # Add 3 to all members f the list.
+
+
+    a = [5, 4, 3]
+
+
+    for i in range(len(a)):
+
+
+        a[i] += 3
+
+
+    Another Good Example:
+
+
+    a = [5, 4, 3]
+
+
+    a = [i + 3 for i in a]
+
+
+    # Or:
+
+
+    a = map(lambda i: i + 3, a)
+
+
+    You can also use the function enumerate() to keep an account of where you are
+    in a list:
+
+
+    a = [5, 4, 3]
+
+
+    for i, item in enumerate(a):
+
+
+        print i, item
+
+
+    # prints
+
+
+    # 0 5
+
+
+    # 1 4
+
+
+    # 2 3
+
+
+    This function reads better than trying to manually handle a counter and it is
+    far more optimal for iterators
+
+
+    ## Reading from a File
+
+
+    When you want to read from a file, it is best to use the with open syntax as this
+    will close the files for you automatically.
+
+
+    A Bad Example:
+
+
+    f = open(''file.txt'')
+
+
+    a = f.read()
+
+
+    print a
+
+
+    f.close()
+
+
+    A Good Example:
+
+
+    with open(''file.txt'') as f:
+
+
+        for line in f:
+
+
+            print line
+
+
+    Using the with statement is far more efficient because it makes sure the file
+    is always closed even when the with block contains an exception
+
+
+    ## Line Continuations
+
+
+    There are accepted limits to logical code lines and when you have one that is
+    longer, it should be split up over several lines. Your Python interpreter will
+    take consecutive lines and, so long as the final character on each line is a backslash
+    (/), it will join the lines. However, although this can be useful sometimes, really
+    you should avoid doing it because it can be fragile. If you were to add a whitespace
+    after the backslash, it can break your code and the results might not be what
+    you expected.
+
+
+    A better way to do this is to enclose elements inside parentheses. If there is
+    an unclosed parenthesis at the end of the line, the next line will be joined,
+    and so on until there is a closed parenthesis. You could also use square or curly
+    braces to do the same thing, so long as you remain consistent – whatever you use
+    to start, you must also use to finish.
+
+
+    A Bad Example:
+
+
+    an_incredibly_big_string = """For many years I would go to bed early. Sometimes,
+    \
+
+
+        after I had put out my light, my eyes would shut so fast that I would not
+    even \
+
+
+        have the time to say “I am going to sleep.”"""
+
+
+    from some.module.inside.another.module import a_good_function, another_good_function,
+    \
+
+
+        yet_another_good_function
+
+
+    A Good Example:
+
+
+    my_incredibly_big_string = (
+
+
+        "For many years, I would go to bed early. Sometimes, "
+
+
+        "when I had put out my light, my eyes would shut so fast "
+
+
+        "that I would not even have time to say “I am going to sleep.”"
+
+
+    )
+
+
+    from some.module.inside.another.module import (
+
+
+        a_good_function, another_good_function, yet_another_good_function)'
+  toc: []
+  trans: "\n\n现在，这两个函数看起来完全一样，仅仅是因为 `lookup_set` 利用了 Python 集合是哈希表的这一事实。然而，每个示例中 `lookup`\
+    \ 的性能是不同的。为了判断一个特定项目是否在列表中，Python 必须搜索每一个项目，直到找到匹配的项。这非常耗时，特别是当列表很长时。使用集合，每个项目都有一个哈希告诉\
+    \ Python 在哪里查找，这使得搜索快得多。你也可以以相同的方式搜索字典。由于性能存在差异，在以下情况下，使用集合比列表是更好的主：\n\n*   集合包含大量项目\n\
+    *   你需要经常在集合中查找项目\n\n在集合较小或不需要频繁查找的情况下，哈希表所需的额外内存和时间通过使用列表是可以节省的。\n\n# 第 5 章：注释\n\
+    \n由于你已经有一些 Python 编程经验，你会知道注释在运行时是不可见的。注释是为了帮助其他开发者或未来的自己理解代码做了什么以及为什么这么做。有些人认为注释毫无意义，但在编写代码时，写注释比不写注释要好得多。当你修改代码时，必须确保更新注释。正确的做法是在写注释时，确保它是一个完整的句子。\n\
+    \n当你使用内联注释时，尽可能少用。作为复习，内联注释是放在语句同一行的注释，它们通常不是必要的，并且会引起分心。例如，你不应该这样做：\n\n```python\n\
+    x = x + 1 # 增加 x\n```\n\n然而，有时这可能是有用的：\n\n```python\nx = x + 1 # 补偿\n```\n\n更好的方法是将将会元素包含在括号内。如果行尾有一个未闭合的括号，下一行就会被连接，直到出现闭合括号。你也可以使用方括号或大括号来实现相同的功能，只要你保持一致性——你用什么开始，就必须用什么结束。\n\
+    \n### 错误示例\n```python\n# 过滤所有大于 4 的元素\na = [5, 4, 3]\nb = []\nfor i in a:\n  \
+    \  if i > 4:\n        b.append(i)\n```\n\n### 正确示例\n```python\na = [5, 4, 3]\n\
+    b = [i for i in a if i > 4]\n\n# 或者：\nb = filter(lambda x: x > 4, a)\n```\n\n\
+    ### 另一个错误示例\n```python\n# 给列表的所有成员加 3。\na = [5, 4, 3]\nfor i in range(len(a)):\n\
+    \    a[i] += 3\n```\n\n### 另一个正确示例\n```python\na = [5, 4, 3]\na = [i + 3 for i\
+    \ in a]\n\n# 或者：\na = map(lambda i: i + 3, a)\n```\n\n你还可以使用 `enumerate()` 函数来记录你在列表中的位置：\n\
+    \n```python\na = [5, 4, 3]\nfor i, item in enumerate(a):\n    print i, item\n\
+    # 输出：\n# 0 5\n# 1 4\n# 2 3\n```\n这个函数比手动处理计数器读性更好，而且对于迭代器来说优化得多。\n\n# 从文件读取\n\n\
+    当你想要从文件中读取内容时，最好使用 `with open` 语法，因为这会自动为你关闭文件。\n\n### 错误示例\n```python\nf = open('file.txt')\n\
+    a = f.read()\nprint a\nf.close()\n```\n\n### 正确示例\n```python\nwith open('file.txt')\
+    \ as f:\n    for line in f:\n        print line\n```\n使用 `with` 语句要高效得多，因为它确保即使在\
+    \ `with` 块包含异常时文件总是关闭。\n\n# 换行\n\n逻辑代码行有接受的限制，当你有一行代码过长时，应该将其拆分成几行。你的 Python 解释器会获取连续的行，只要每行的最后一个字符是反斜杠\
+    \ `\\`，它就会连接这些行。然而，尽管这有时有用，但你真的应该避免，因为它是脆弱的。如果你在反斜杠后添加了空格，可能会破坏你的代码，结果可能不是你预期的。\n\
+    \n此更好的方法是将元素包含在括号内。如果行尾有一个未闭合的括号，下一行就会被连接，依此类推，直到出现闭合括号。你也可以使用方括号或大括号来实现相同的功能，只要你保持一致。\n\
+    \n### 错误示例\n```python\nif attr == True:\n    print 'True!'\n\nif attr == None:\n\
+    \    print 'None!'\n```\n\n### 正确示例\n```python\nif attr:\n    print 'True!'\n\n\
+    if not attr:\n    print 'None!'\n```\n\n# 如何访问字典元素\n\n与其使用 `dict.has_key()` 方法，不如使用\
+    \ `x in d` 语法或使用 `dict.get()` 来传递参数。\n\n### 错误示例\n```python\nd = {'hello': 'world'}\n\
+    \nif d.has_key('hello'):\n    print d['hello']\nelse:\n    print 'default_value'\n\
+    ```\n\n### 正确示例\n```python\nd = {'hello': 'world'}\nprint d.get('hello', 'default_value')\
+    \ # 输出 'world'\nprint d.get('thingy', 'default_value') # 输出 'default_value'\n\n\
+    # 或者：\nif 'hello' in d:\n    print d['hello']\n```\n\n# 快捷方式操作列表\n\n在操作列表时，不需要长篇大论；当你想要对列表执行操作时，使用列表推导式或\
+    \ `filter()` 或 `map()` 函数来使用简洁语法。\n\n### 错误示例\n```python\n# 过滤所有大于 4 的元素\na =\
+    \ [5, 4, 3]\nb = []\nfor i in a:\n    if i > 4:\n        b.append(i)\n```\n\n\
+    ### 正确示例\n```python\na = [5, 4, 3]\nb = [i for i in a if i > 4]\n\n# 或者：\nb =\
+    \ filter(lambda x: x > 4, a)\n```\n\n### 另一个错误示例\n```python\n# 给列表的所有成员加 3。\n\
+    a = [5, 4, 3]\nfor i in range(len(a)):\n    a[i] += 3\n```\n\n### 另一个正确示例\n```python\n\
+    a = [5, 4, 3]\na = [i + 3 for i in a]\n\n# 或者：\na = map(lambda i: i + 3, a)\n\
+    ```\n\n"
+- fmt: "\nThat said, if you find that you are having to keep on splitting up long\
+    \ lines, it is just a sign that you are trying to do too much and this will affect\
+    \ the readability of the code.\n\n# Chapter 7: Method and Function Arguments\n\
+    \nFor the first argument in any instance method always use `self` and, for the\
+    \ first argument in any class method, always use `cls`.\n\nIf the name of a function’s\
+    \ argument is the same as one of the reserved keywords, then it is best to add\
+    \ one trailing underscore than it is to use a corrupted spelling or an abbreviation.\
+    \ As such, you should use `class_` rather than `clss`. Perhaps even better than\
+    \ causing a clash - use a synonym.\n\n## Function Arguments\n\nThere are 4 ways\
+    \ that you can pass an argument to a function:\n\n1. **Positional Argument** –\
+    \ these are mandatory and do not contain any default values. The positional is\
+    \ the simplest argument form and are used for the arguments that are a complete\
+    \ part of the meaning of a function; they also have a natural order so, in the\
+    \ following example, the function `user` should find it easy to remember that\
+    \ the 2 functions need 2 arguments and they should remember the order:\n\n   `Send(message,\
+    \ recipient)` and `point(x, y)`\n\n   In both cases, you can use the argument\
+    \ names when you call the functions and, by doing this, you can change the order\
+    \ the arguments are in. For example, you could call `send(recipient='world', message='Hello')`\
+    \ and `point(y=2, x=1)`. However, as you can see from this, it is not very readable\
+    \ and there are way more words there than we need. Compare that version to the\
+    \ one that is more straightforward – `send('Hello', 'World')` and `point(1,2)`\
+    \ and you can see the difference in readability instantly.\n\n2. **Keyword Argument**\
+    \ – these do contain default values and they are not mandatory. Keyword arguments\
+    \ are sometimes used for optional parameters that you send to the function. When\
+    \ a function contains at least 2 or 3, preferably more, positional parameters,\
+    \ it is not easy to remember. Using a keyword argument that has a default value\
+    \ is more helpful. For example, you could define a complete `send` function as\
+    \ `send(message, to, cc=None, bcc=None)`. The use of `cc` and `bcc` is optional\
+    \ and both have a value of `None` if they are not given another value.\n\n   There\
+    \ are a few ways that you can call a function with a keyword argument in Python.\
+    \ For example, you could follow the argument order in a definition and no explicitly\
+    \ name those arguments; for example, `send('Hello', 'World', 'Galactus', 'God')`.\
+    \ In this, you are sending a carbon copy of the message to Galactus and a blind\
+    \ carbon copy to God. You can also name the arguments in a different order, for\
+    \ example, `send('Helloagain', 'World', bcc='God', cc='Galactus')`. Unless you\
+    \ have a very good reason not to follow the correct syntax as closely as possible,\
+    \ these two examples are best avoided; they are verbose and not readable. The\
+    \ best way, the way that is closest to the function definition, is `send('Hello',\
+    \ 'World', cc='Galactus', bcc='God')`.\n\n3. **Arbitrary Argument List** - This\
+    \ is the next way of passing an argument to a function. Sometimes, the intention\
+    \ of a function is better expressed with a signature that has a number of positional\
+    \ arguments, a number that can be extended. In that case, you are better using\
+    \ the `*args` constructs to define it. In the body of the argument, `args` is\
+    \ a tuple of all of the positional arguments that are left. For example, you can\
+    \ use `send(message, *args)` and list all of the recipients as a separate argument:\
+    \ `send('Hello', 'Galactus', 'Dad', 'God')` – in the body of the function, `*args`\
+    \ is equal to `('Galactus', 'Dad', 'God')`.\n\n   However, you should really use\
+    \ this construct cautiously because it does have some drawbacks. If a function\
+    \ is sent a list that contains arguments that are of the same or similar nature,\
+    \ a better definition would be a function of a single argument; that single argument\
+    \ would be a sequence or a list. For example, if `send` had several recipients,\
+    \ you would be better with an explicit definition: `send('Hello', 'God', 'Dad',\
+    \ 'Galactus')` and then call it by using `send('Hello', ['God', 'Dad', 'Galactus'])`.\
+    \ In this way, the function user can change the recipient list beforehand and\
+    \ that opens up the possibility for any sequence that can’t be unpacked to be\
+    \ passed, and that includes iterators.\n\n4. **Arbitrary Keyword Argument Dictionary**\
+    \ - This is final way of passing an argument to a function. If a function needs\
+    \ an unknown array of named arguments, you can use the construct `**kwargs`. Within\
+    \ the body of the function, `**kwargs` is a dictionary that contains all of the\
+    \ named arguments that have been passed and not caught by another keyword argument\
+    \ in the signature of the function.\n\n   However, you should use the same level\
+    \ of caution that you did with arbitrary argument lists, for pretty much the same\
+    \ reasons. These are powerful techniques that should only be used when you can\
+    \ prove that it is necessary to use them. They most definitely should not be used\
+    \ if there is a clearer and simpler construct that will do the job.\n\nIt really\
+    \ is down to you, the programmer, to decide which of the function arguments are\
+    \ optional keywords and which are positional and to determine whether you should\
+    \ use the more advanced techniques to pass the arguments.\n\nKeep it simple and\
+    \ follow these rules of writing Python functions that:\n\n* Are readable – the\
+    \ names and the arguments do not need any explanations\n* Are easily changeable\
+    \ – you can add a keyword argument in without the rest of the code breaking.\n\
+    \n# Chapter 8: Naming Conventions\n\nTo be honest, the Python library naming conventions\
+    \ are something of a mess so we are never going to be consistent. However, there\
+    \ are some naming standards that are recommended and all new packages and modules,\
+    \ that includes any third-party frameworks, must be written to these standards.\
+    \ That said, if you are using an existing library with a different style, stick\
+    \ to that style because consistency is preferable, especially in terms of readability.\n\
+    \nThe first and most important principle to learn is that, where you are using\
+    \ names that are a visible part of a public API, you must use a convention that\
+    \ reflects that usage, rather than the implementation of it.\n\n## Descriptive\n\
+    \nThere are quite a few different naming styles so it is helpful to recognize\
+    \ which one is in use, independently of the usage. These are the most commonly\
+    \ distinguished styles:\n\n* `B` – single uppercase\n* `b` – single lowercase\n\
+    * `lowercase_with_underscores`\n* `lowercase`\n* `UPPERCASE_WITH_UNDERSCORES`\n\
+    * `UPPERCASE`\n* `CapitalizedWords` – often called CamelCase because the letters\
+    \ look bumpy\n* `mixedCase` – different from CamelCase because the first letter\
+    \ is in lowercase\n* `Capital_Words_With_Underscore` – not a pretty style!\n*\
+    \ When you use abbreviations in CamelCase, you should make sure all of the abbreviation\
+    \ letters are capitalized. For example, rather than using `HttpServerError`, use\
+    \ `HTTPSError`.\n\nYou can also use another style, that of putting a unique prefix,\
+    \ a short one, that puts a group of related names together. This doesn’t get used\
+    \ much in Python but I mention it just so that you know it is there. An example\
+    \ would be the function `os.stat()` – this will return a tuple that contains items\
+    \ that have names like `st_size`, `st_mode`, `st_mtime` and so on.\n\nThese are\
+    \ some of the forms that use a trailing or a leading underscore and can usually\
+    \ be combined with any of the case conventions:\n\n* `_one_leading_underscore`\
+    \ – this is generally an indicator of “internal use” that is not very strong.\n\
+    * `One_trailing_underscore_` – generally used to stop a conflict with a Python\
+    \ keyword, for example: `tkinter.Toplevel(master, class_='ClassName')`\n* `__two_leading_underscores`\
+    \ – when you name a class attribute, this invokes mangling of a name, for example:\
+    \ (inside class FootBar, `__boo`) would become `_FootBar__boo`.\n"
+  raw: 'That said, if you find that you are having to keep on splitting up long lines,
+    it is just a sign that you are trying to do too much and this will affect the
+    readability of the code
+
+
+    #   Chapter 7:
+
+
+    Method and Function Arguments
+
+
+    For the first argument in any instance method always use self and, for the first
+    argument in any class method, always use cls.
+
+
+    If the name of a function’s argument is the same as one of the reserved keywords,
+    then it is best to add one trailing underscore than it is to use a corrupted spelling
+    or an abbreviation. As such, you shouldclass_rather thanclss. Perhaps even better
+    than causing a clash - use a synonym.
+
+
+    ## Function Arguments
+
+
+    There are 4 ways that you can pass an argument to a function:
+
+
+    1.  Positional Argument – these are mandatory and do not contain any default values.
+    The positional is the simplest argument form and are used for the arguments that
+    are a complete part of the meaning of a function; they also have a natural order
+    so, in the following example, the function user should find it easy to remember
+    that the 2 functions need 2 arguments and they should remember the order:
+
+
+    Send(message, recipient)andpoint(x, y)
+
+
+    In both cases, you can use the argument names when you call the functions and,
+    by doing this, you can change the order the arguments are in. For example, you
+    could callsend(recipient=’world’, message=’Hello’)andpoint(y=2, x=1).However,
+    as you can see from this, it is not very readable and there are way more words
+    there than we need.  Compare that version to the one that is more straightforward
+    –send(‘Hello’, ‘World’)  and  point(1,2)and you can see the difference in readability
+    instantly.
+
+
+    2.  Keyword Argument – these do contain default values and they are not mandatory.
+    Keyword arguments are sometimes used for optional parameters that you send to
+    the function. When a function contains at least 2 or 3, preferably more, positional
+    parameters, it is not easy to remember. Using a keyword argument that has a default
+    value is more helpful. For example, you could define a complete sendfunction assend(message,
+    to, cc=None, bcc=None).The use ofcc  andbcc  is optional and both have a value
+    ofNone  if they are not given another value.
+
+
+    There are a few ways that you can call a function with a keyword argument in Python.
+    For example, you could follow the argument order in a definition and no explicitly
+    name those arguments; for example,send(‘Hello’, ‘World’, ‘Galactus’, ‘God’).  In
+    this, you are sending a carbon copy of the message to Galactus and a blind carbon
+    copy to God. You can also name the arguments in a different order, for example,send(‘Helloagain’,
+    ‘World’, bcc=’God’, cc=’Galactus’).  Unless you have a very good reason not to
+    follow the correct syntax as closely as possible, these two examples are best
+    avoided; they are verbose and not readable. The best way, the way that is closest
+    to the function definition, issend(‘Hello’, ‘World’, cc=’Galactus’, bcc=’God’).
+
+
+    3.  Arbitrary Argument List - This is the next way of passing an argument to a
+    function. Sometimes, the intention of a function is better expressedwith a signature
+    that has a number of positional arguments, a number that can be extended. In that
+    case, you are better using the*args  constructs to define it. In the body of the
+    argument,args  is a tuple of all of the positional arguments that are left. For
+    example, you can usesend(message, *args)  and list all of the recipients as a
+    separate argument:send(’Hello’, ‘Galactus’, ‘Dad’, ‘God’)  – in the body of the
+    function,*args  is equal to(‘Galactus’, ‘Dad’, ‘God’)
+
+
+    However, you should really use this construct cautiously because it does have
+    some drawbacks. If a function is sent a list that contains arguments that are
+    of the same or similar nature, a better definition would be a function of a single
+    argument; that single argument would be a sequence or a list. For example, ifsend  had
+    several recipients, you would be better with an explicit definition:send(‘Hello’,
+    ‘God’, ‘Dad’, ‘Galactus’)  and then call it by usingsend(‘Hello’,[‘God’, ‘Dad’,
+    ‘Galactus’]).  In this way, the function user can change the recipient list beforehand
+    and that opens up the possibility for any sequence that can’t be unpacked to be
+    passed, and that includes iterators.
+
+
+    4.  Arbitrary Keyword Argument Dictionary - This is final way of passing an argument
+    to a function. If a function needs an unknown array of named arguments, you can
+    use the construct**kwargs. Within the body of the function, **kwargs is a dictionary
+    that contains all of the named arguments that have been passed and not caught
+    by another keyword argument in the signature of the function
+
+
+    However, you should use the same level of caution that you did with arbitrary
+    argument lists, for pretty much the same reasons. These are powerful techniques
+    that should only be used when you can prove that it is necessary to use them.
+    They most definitely should not be used if there is a clearer and simpler construct
+    that will do the job.
+
+
+    It really is down to you, the programmer, to decide which of the function arguments
+    are optional keywords and which are positional and to determine whether you should
+    use the more advanced techniques to pass the arguments.
+
+
+    Keep it simple and follow these rules of writing Python functions that:
+
+
+    *   Are readable – the names and the arguments do not need any explanations
+
+
+    *   Are easily changeable – you can add a keyword argument in without the rest
+    of the code breaking.
+
+
+    #   Chapter 8:
+
+
+    Naming Conventions
+
+
+    To be honest, the Python library naming conventions are something of a mess so
+    we are never going to be totally consistent. However, there are some naming standards
+    that are recommended and all new packages and modules, and that includes any third-party
+    frameworks, must be written to these standards. That said, if you are using an
+    existing library with a different style, stick to that style because consistency
+    is preferable, especially in terms of readability
+
+
+    The first and most important principle to learn is that, where you are using names
+    that are a visible part of a public API, you must use a convention that reflects
+    that usage of the name, rather than the implementation of it.
+
+
+    ## Descriptive
+
+
+    There are quite a few different naming styles so it is helpful to recognize which
+    one is in use, independently of the usage. These are the most commonly distinguished
+    naming styles:
+
+
+    *   B  – single uppercase
+
+
+    *   b  – single lowercase
+
+
+    *   lowercase_with_underscores
+
+
+    *   lowercase
+
+
+    *   UPPERCASE_WITH_UNDERSCORES
+
+
+    *   UPPERCASE
+
+
+    *   CapitalizedWords  – often called CamelCase because the letters look somewhat
+    bumpy*
+
+
+    *   mixedCase  – different from CamelCase because the first letter is in lowercase
+
+
+    *   Capital_Words_With_Underscore –not a pretty style!
+
+
+    * When you use abbreviations in CamelCase, you should make sure all of the abbreviation
+    letters are capitalized. For example, rather than usingHttpServerError,useHTTPServerErrorinstead
+
+
+    You can also use another style, that of putting a unique prefix, a short one,
+    that puts a group of related names together. This doesn’t get used very much in
+    Python but I mention it just so that you know it is there. An example would be
+    the functionos.stat() –this will return a tuple that contains items that have
+    names likest_size, st_mode, st_mtime and so on.
+
+
+    These are some of the forms that use a trailing or a leading underscore and can
+    usually be combined with any of the case conventions:
+
+
+    *   _one_leading_underscore –this is generally an indicator of “internal use”
+    that is not very strong.
+
+
+    *   One_trailing_underscore_- generally used to stop a conflict with a Python
+    keyword, for example:Apinter.Toplevel(master,class_=’ClassName”)
+
+
+    *   __two_leading_underscores– when you name a class attribute, this invokes mangling
+    of a name, for example:(inside class FootBar, __boo)  would become(_FootBar__boo)'
+  toc: []
+  trans: "\n尽管如此，如果你发现自己必须不断拆分长行，这说明你正试图做太多的事情，这将会影响代码的可读性。\n\n# 第 7 章：方法和函数参数\n\n\
+    对于任何实例方法中的第一个参数，始终使用 `self`；对于任何类方法中的第一个参数，始终使用 `cls`。\n\n如果函数参数的名称与某个保留关键字相同，那么在名称末尾添加一个下划线会比使用错误的拼写或缩写要好。因此，你应该使用\
+    \ `class_` 而不是 `clss`。也许比引起冲突更好的方法是——使用同义词。\n\n## 函数参数\n\n你可以通过 4 种向函数传递参数的方法：\n\
+    \n1. **位置参数 (Positional Argument)** – 这些是强制性的，且不包含任何默认值。位置参数是最简单的参数形式，用于作为函数含义完整组成部分的参数；它们具有自然的顺序，因此，在下面的示例中，`user`\
+    \ 函数应该很容易记住该函数需要 2 个参数，并且应该记住它们的顺序：\n\n   `Send(message, recipient)` 和 `point(x,\
+    \ y)`\n\n   在这两种情况下，你可以在调用函数时使用参数名称，通过这样做，你可以更改参数的顺序。例如，你可以调用 `send(recipient='world',\
+    \ message='Hello')` 和 `point(y=2, x=1)`。然而，正如你所看到的，这并不非常可读，而且里面的单词比我们需要的得多。将该版本与更直观的版本\
+    \ `send('Hello', 'World')` 和 `point(1,2)` 进行比较，你可以立即看出可读性的差异。\n\n2. **关键字参数 (Keyword\
+    \ Argument)** – 这些包含默认值，且不是强制性的。关键字参数有时用于发送到函数的可选参数。当一个函数包含至少 2 或 3 个（最好是更多）位置参数时，很难记忆。使用带有默认值的关键字参数会更有帮助。例如，你可以定义一个完整的\
+    \ `send` 函数为 `send(message, to, cc=None, bcc=None)`。`cc` 和 `bcc` 的使用是可选的，如果给它们赋予其他值，它们的值均为\
+    \ `None`。\n\n   在 Python 中，有几种方法可以使用关键字参数调用函数。例如，你可以遵循定义中的参数顺序，而不显式地命名这些参数；例如，`send('Hello',\
+    \ 'World', 'Galactus', 'God')`。在这种情况下，你向 Galactus 发送了消息的副本，向 God 发送了密抄。你也可以以不同的顺序命名参数，例如，`send('Helloagain',\
+    \ 'World', bcc='God', cc='Galactus')`。除非你有非常充分的理由不尽可能地遵循正确的语法，否则最好避免这两个示例；它们既冗长又不可可读。最好的方法，即最接近函数定义的方法，是\
+    \ `send('Hello', 'World', cc='Galactus', bcc='God')`。\n\n3. **任意参数列表 (Arbitrary\
+    \ Argument List)** - 这是向函数传递参数的另一种方法。有时，函数的意图通过具有数量可扩展的位置参数数量的签名来表达得更好。在这种情况下，你最好使用\
+    \ `*args` 结构来定义它。在参数体中，`args` 是所有剩余位置参数的元组。例如，你可以使用 `send(message, *args)`并将所有接收者列为单独参数：`send('Hello',\
+    \ 'Galactus', 'Dad', 'God')` —— 在函数体内，`*args` 等于 `('Galactus', 'Dad', 'God')`。\n\
+    \n   然而，你应该非常谨慎地使用这种结构，因为它确实存在一些缺点。如果向函数发送了一个包含具有相同或相似性质参数的列表，更好的定义是使用带有单个参数的函数；该单个参数将是一个序列或列表。例如，如果\
+    \ `send` 有多个接收者，你最好使用显式定义：`send('Hello', 'God', 'Dad', 'Galactus')`，然后通过 `send('Hello',\
+    \ ['God', 'Dad', 'Galactus'])` 调用它。通过这种方式，函数用户可以提前更改接收者列表，这为传递任何无法解包的序列打开了可能性，包括迭代器。\n\
+    \n4. **任意关键字参数字典 (Arbitrary Keyword Argument Dictionary)** - 这是向函数传递参数的最后一种方法。如果函数需要未知的命名参数数组，你可以使用\
+    \ `**kwargs` 结构。在函数体内，`**kwargs` 是一个字典，包含了所有已传递且未被函数签名中另一个关键字参数捕获的命名参数。\n\n  \
+    \ 然而，你应该像对待任意参数列表时那样保持同样的谨慎，因为原因基本相同。这些是强大的技术，只有在你能证明有必要使用它们时才应该使用。如果存在更清晰更简单的结构可以完成工作，则绝对不应该使用它们。\n\
+    \n这真的取决于你，程序员，来决定哪些函数参数是可选关键字，哪些是位置参数，并确定是否应该使用更高级的技术来传递参数。\n\n保持简单并遵循这些编写 Python\
+    \ 函数的规则：\n\n* 具有可读性 – 名称和参数不需要任何解释\n* 易于更改 – 你可以在不影响其他部分的情况下添加关键字参数\n\n# 第 8 章：命名规范\n\
+    \n坦率地说，Python 的命名规范有些混乱。但是，有一些建议的命名标准，所有新的包和模块（包括任何第三方框架）必须遵循这些标准。要学习的第一且最重要的原则是，当你使用作为公共\
+    \ API 的名称时，必须使用反映其用途的规范，而不是其实现方式。\n\n## 描述性 (Descriptive)\n\n有许多不同的命名风格，因此独立识别使用的是哪种风格是有帮助的。这些是最常见的样式：\n\
+    \n* `B` – 单字母大写\n* `b` – 单字母小写\n* `lowercase_with_underscores`\n* `lowercase`\n\
+    * `UPPERCASE_WITH_UNDCORES`\n* `UPPERCASE`\n* `CapitalizedWords` – 通常被称为 CamelCase，因为字母看起来有起伏\n\
+    * `mixedCase` – 与 CamelCase 不同，首字母是小写的\n* `Capital_Words_With_Underscore` – 不是漂亮的样式！\n\
+    * 在 CamelCase 中使用缩写时，你应该确保所有的缩写字母都大写。例如，与其使用 `HttpServerError`，不如使用 `HTTPSError`。\n\
+    \n你还可以使用另一种风格，即通过一个唯一的短前缀将一组相关的名称放在一起。这并不常用，但我提到它是为了让你知道它的存在。一个例子是 `os.stat()`\
+    \ 函数 —— 它将返回一个包含 `st_size`、`st_mode`、`st_mtime` 等名称的元组。\n\n这些是使用后划线或前划线的格式，通常可以与任何大小写规范结合：\n\
+    \n* `_one_leading_underscore` – 这通常是“内部使用”的指示，但力道并不强。\n* `One_trailing_underscore_`\
+    \ – 通常用于防止与 Python 关键字冲突，例如：`tkinter.Toplevel(master, class_='ClassName')`\n*\
+    \ `__two_leading_underscores` – 当你命名类属性时，这会引起修饰（mangling），例如：（在类 FootBar 内部，`__boo`）将变为\
+    \ `_FootBar__boo`。\n"
+- fmt: "\n*   `two_leading_and_two_trailing_underscores` are attributes or “magic”\
+    \ objects that reside in a namespace that is user-controlled. For example: `__init__`,\
+    \ `__file__`, or `__import__`.\n\n## Prescriptive\n\nThese are the names you should\
+    \ avoid:\n\nNever use ‘O’ (uppercase oh), ‘l’ (lowercase el) or ‘I’ (uppercase\
+    \ eye) when you are writing variable names of a single character. Depending on\
+    \ what font you are using, these may be, these can be confused with the numbers\
+    \ ‘0’ and ‘1’ – if you do find yourself thinking about using `l`, use the uppercase\
+    \ `L` instead.\n\n## Names for Modules and Packages\n\nAll module names should\
+    \ be short and lowercase. You can use an underscore in a module name but only\
+    \ if it makes it readable. The same goes for Python packages – short and lowercase\
+    \ names – but don’t use underscores.\n\nWhere you have an extension module that\
+    \ has been written in C or in C++ and it is accompanied by a Python module that\
+    \ has an interface that is more object-oriented, the C or C++ module will have\
+    \ a leading underscore, for example, `_socket`\n\n## Class Names\n\nClass names\
+    \ usually use the `CapWords` or `CamelCase` convention.\n\nBuilt-in names have\
+    \ their own separate convention and are usually a single word or 2 words in one,\
+    \ for example, ‘Hello’ or ‘HelloWorld`. The `CamelCase` convention tends to be\
+    \ kept for built-in constants and for exception names.\n\n## Type Variables\n\n\
+    The names of the type variables usually use `CamelCase` and short names are preferred,\
+    \ for example, `Num`, `AnyStr`. You should add a suffix (`_co` or `_contra`) to\
+    \ the variables to declare contravariant or covariant behavior. For example:\n\
+    \n```python\nImport TypeVar\n```\n\nWould become\n\n```python\nVT_co = TypeVar('VT_co',\
+    \ covariant=True)\nKT_contra = TypeVar('KT_contra', contravariant=True)\n```\n\
+    \n## Names of Exceptions\n\nExceptions are classes and, as such, you should use\
+    \ the class convention for naming. That said, if the exception is an error, make\
+    \ sure that you use the ‘Error’ suffix on the name.\n\n## Global Variables\n\n\
+    Provided the variable is used inside a single module, the naming conventions are\
+    \ the same as for naming functions.\n\n## Functions\n\nAll function names are\
+    \ in lowercase and the words are separated by an underscore where needed to make\
+    \ it more readable. `mixedCase` conventions are only to be used in the context\
+    \ where this is already the style in order to keep backward compatibility intact.\n\
+    \n## Instance Variables and Method Names\n\nAgain, the naming conventions for\
+    \ functions apply here – using lowercase with intermittent underscores. If you\
+    \ are using an instance variable or a non-public method, you should use a single\
+    \ leading underscore. To stop a name from clashing with a subclass, two leading\
+    \ underscores should be used as a way of invoking the name mangling rules in Python.\n\
+    \nWhen these rules are invoked, the name is mangled with the class name. For example,\
+    \ `class Foo` contains an attribute called__a`. This cannot be accessed using\
+    \ `Foo.__a`. As a rule, you should only use a double leading underscore when the\
+    \ name is likely to come into conflict with class attributes that are designed\
+    \ as subclasses.\n\n## Constants\n\nThese tend to be defined on module level and\
+    \ are all uppercase with separating underscores, for example, `MAX_OVERFLOW`\n\
+    \n## Inheritance Design\n\nOne rule to abide by is to determine if the instance\
+    \ variable or class method is non-public or public. If you can’t decide, go for\
+    \ non-public as you can easily change it to public later on, whereas changing\
+    \ public to non-public is not so easy.\n\nA public attribute is one that clients\
+    \ that are not related to the class would use while a non-public attribute is\
+    \ one that is not intended for use by a third-party. With a public attribute,\
+    \ you guarantee backward compatibility from start to finish while, with the non-pubic\
+    \ attribute you do not and can remove or make changes to the attribute. Note that\
+    \ the term “private” is not used and this is because there is no real private\
+    \ attribute in the Python language.\n\nOne other attribute category is that which\
+    \ is a protected attribute. In Python, they come under the subclass API. There\
+    \ are those classes that are designed solely as classes to inherit from, whether\
+    \ it is as a way of extending or modifying certain aspects of the behavior. When\
+    \ you design a class like this, always make sure that you make explicit decisions\
+    \ about the attributes – are they public, only to be used by the base class or\
+    \ are they in the subclass API?\n\nWith all of this, these are the Pythonic guidelines:\n\
+    \n*   A public attribute must not have a leading underscore\n*   If a public attribute\
+    \ clashes with a keyword (reserved), add one trailing underscore to the attribute\
+    \ name. This is the preferred method over using a corruption in spelling or an\
+    \ abbreviation.\n*   With a public data attribute, the best way is to expose only\
+    \ the name of the attribute, without using any complicated mutator or accessor\
+    \ methods. If a simple attribute needs to expand its functional behavior, Python\
+    \ makes it easy.\n*   If you are using a class that is going to be subclassed\
+    \ and you are also using attributes that are not going to be subclassed, think\
+    \ about adding 2 leading underscores but do not add in any trailing underscores.\
+    \ This will invoke name mangling and helps to lower the risk of name clashes if\
+    \ the subclasses have attributes with the same name in them.\n\n# Chapter 9: Using\
+    \ Whitespace in Statements and Expressions\n\nFirst, some of the peeves about\
+    \ whitespaces:\n\nDo not use unnecessary whitespaces in these cases:\n\n*   Immediately\
+    \ within braces, brackets or parentheses\n\nA Good Example:\n```python\nham(spam[1],\
+    \ {eggs: 2})\n```\n\nA Bad Example:\n```python\nham( spam[ 1 ], { eggs: 2 } )\n\
+    ```\n\n*   Immediately in front of a colon, semicolon or a comma:\n\nA Good Example:\n\
+    ```python\nif x == 4: print x, y; x, y = y, x\n```\n\nA Bad Example:\n```python\n\
+    if x == 4 : print x , y ; x , y = y , x\n```\n\nHowever, where you have a slice,\
+    \ the colon is similar to a binary operator and it should contain an equal amount\
+    \ on each side. Where you have an extended slice, both of the colons must contain\
+    \ the exact same level of spacing. The exception to this is a slice parameter\
+    \ that has been omitted, along with the space.\n\nA Good Example:\n```python\n\
+    spam[1:8], spam[1:8:2], spam[:8:2], spam[1::2], spam[1:8:]\nspam[lower:upper],\
+    \ spam[lower:upper:], spam[lower::step]\nspam[lower+offset : upper+offset]\nspam[:\
+    \ upper_fn(x) : step_fn(x)], ham[:: step_fn(x)]\nspam[lower + offset : upper +\
+    \ offset]\n```\n\nA Bad Example:\n```python\nspam[lower + offset:upper + offset]\n\
+    spam[1: 8], ham[1 :8], ham[1:8 :2]\nspam[lower : : upper]\nspam[ : upper]\n```\n\
+    \n*   Right before the opening parenthesis that begins the argument list of the\
+    \ function call:\n\nA Good Example:\n```python\nham(1)\n```\n\nA Bad Example:\n\
+    ```python\nham (1)\n```\n\n*   Right in front of the open parenthesis that starts\
+    \ a slicing or an indexing:\n\nA Good Example:\n```python\ndct['key'] = lst[index]\n\
+    ```\n\nA Bad Example:\n```python\ndct ['key'] = lst [index]\n```\n\n*   When there\
+    \ is more than a single space around an operator, such as an assignment, that\
+    \ aligns it with another operator\n\nA Good Example:\n```python\nx = 1\ny = 2\n\
+    long_variable = 3\n```\n\nA Bad Example:\n```python\nx               = 1\ny  \
+    \             = 2\nlong_variable = 3\n```\n\n## Other Recommendations\n\nAvoid\
+    \ having trailing whitespace throughout your code because it is not visible and\
+    \ it can cause confusion. For example, if you put in a backslash and follow it\
+    \ with a space and then a newline – this would not be counted as a line continuation.\
+    \ In fact, some text editors will not preserve it and there are projects that\
+    \ contain pre-commit hooks that will simply reject it – one of those is CPython.\n\
+    \nThe following binary operators should be surrounded by single spaces – one on\
+    \ each side:\n\n*   assignment (`=`)\n*   augmented assignment (`+=`, `=`, etc.)\n\
+    \nThe following comparisons are treated the same:\n\n*   `==` \n*   `<`\n*   `>`\n\
+    *   `!=` \n*   `<>`\n*   `<=`\n*   `>=`\n*   `in`\n*   `not in`\n*   `is`\n* \
+    \  `is not`\n\nAnd these Booleans:\n\n*   `and`\n*   `or`\n*   `not`\n"
+  raw: '*   __two_leading_and_two_trailing_underscoresare attributes or “magic” objects
+    that reside in a namespace that is user-controlled. For example:__init__, __file__,or  __import__.
+
+
+    ## Prescriptive
+
+
+    These are the names you should avoid:
+
+
+    Never use ‘O’ (uppercase oh), ‘l’ (lowercase el) or ‘I’ (uppercase eye) when you
+    are writing variable names of a single character. Depending on what font you are
+    using, these may be, these can be confused with the numbers ‘0’ and ‘1’ – if you
+    do find yourself thinking about using ‘l’, use the uppercase ‘L’ instead.
+
+
+    ## Names for Modules and Packages
+
+
+    All module names should be short and lowercase. You can use an underscore in a
+    module name but only if it makes it more readable. The same goes for Python packages
+    – short and lowercase names – but don’t use underscores.
+
+
+    Where you have an extension module that has been written in C or in C++ and it
+    is accompanied by a Python module that has an interface that is more object-oriented,
+    the C or C++ module will have a leading underscore, for example,_socket
+
+
+    ## Class Names
+
+
+    Class names usually use the CapWords or CamelCase convention.
+
+
+    Built-in names have their own separate convention and are usually a single word
+    or 2 words in one, for example,‘Hello’or  ‘HelloWorld.The CamelCase convention
+    tends to be kept for built-in constants and for exception names.
+
+
+    ## Type Variables
+
+
+    The names of the type variables usually use CamelCase and short names are preferred,
+    for example,Num, AnyStr. You should add a suffix (_co or _contra) to the variables
+    to declare contravariant or covariant behavior. For example:
+
+
+    Import TypeVar
+
+
+    Would become
+
+
+    VT_co = TypeVar(''VT_co'', covariant=True)
+
+
+    KT_contra = TypeVar(''KT_contra'', contravariant=True)
+
+
+    ## Names of Exceptions
+
+
+    Exceptions are classes and, as such, you should use the class convention for naming.
+    That said, if the exception is an error, make sure that you use the ‘Error’ suffix
+    on the name.
+
+
+    ## Global Variables
+
+
+    Provided the variable is used inside a single module, the naming conventions are
+    the same as for naming functions.
+
+
+    ## Functions
+
+
+    All function names are in lowercase and the words are separated by an underscore
+    where needed to make it more readable. mixedCase conventions are only to be used
+    in the context where this is already the style in order to keep backward compatibility
+    intact.
+
+
+    ## Instance Variables and Method Names
+
+
+    Again, the naming conventions for functions apply here – using lowercase with
+    intermittent underscores. If you are using an instance variable or a non-public
+    method, you should use a single leading underscore. To stop a name from clashing
+    with a subclass, two leading underscores should be used as a way of invoking the
+    name mangling rules in Python.
+
+
+    When these rules are invoked, the name is mangled with the class name. For example,class
+    Foo contains an attribute called__a. This cannot be accessed usingFoo.__a.As a
+    rule, you should only use a double leading underscore when the name is likely
+    to come into conflict with class attributes that are designed as subclasses.
+
+
+    ## Constants
+
+
+    These tend to be defined on module level and are all uppercase with separating
+    underscores, for example,MAX_OVERFLOW
+
+
+    ## Inheritance Design
+
+
+    One rule to abide by is to determine if the instance variable or class method
+    is non-public or public. If you can’t decide, go for non-public as you can easily
+    change it to public later on, whereas changing public to non-public is not so
+    easy.
+
+
+    A public attribute is one that clients that are not related to the class would
+    use while a non-public attribute is one that is not intended for use by a third-party.
+    With a public attribute, you guarantee backward compatibility from start to finish
+    while, with the non-pubic attribute you do not and can remove or make changes
+    to the attribute. Note that the term “private” is not used and this is because
+    there is no real private attribute in the Python language.
+
+
+    One other attribute category is that which is a protected attribute. In Python,
+    they come under the subclass API. There are those classes that are designed solely
+    as classes to inherit from, whether it is as a way of extending or modifying certain
+    aspects of the behavior. When you design a class like this, always make sure that
+    you make explicit decisions about the attributes – are they public, only to be
+    used by the base class or are they in the subclass API?
+
+
+    With all of this, these are the Pythonic guidelines:
+
+
+    *   A public attribute must not have a leading underscore
+
+
+    *   If a public attribute clashes with a keyword (reserved), add one trailing
+    underscore to the attribute name. This is the preferred method over using a corruption
+    in spelling or an abbreviation.
+
+
+    *   With a public data attribute, the best way is to expose only the name of the
+    attribute, without using any complicated mutator or accessor methods. If a simple
+    attribute needs to expand its functional behavior, Python makes it easy.
+
+
+    *   If you are using a class that is going to be subclassed and you are also using
+    attributes that are not going to be subclassed, think about adding 2 leading underscores
+    but do not add in any trailing underscores. This will invoke name mangling and
+    helps to lower the risk of name clashes if the subclasses have attributes with
+    the same name in them.
+
+
+    Chapter 9:
+
+
+    Using Whitespace in Statements and Expressions
+
+
+    First, some of the peeves about whitespaces:
+
+
+    Do not use unnecessary whitespaces in these cases:
+
+
+    *   Immediately within braces, brackets or parentheses
+
+
+    A Good Example:
+
+
+    ham(spam[1], {eggs: 2})
+
+
+    A Bad Example:
+
+
+    ham( spam[ 1 ], { eggs: 2 } )
+
+
+    *   Immediately in front of a colon, semicolon or a comma:
+
+
+    A Good Example:
+
+
+    if x == 4: print x, y; x, y = y, x
+
+
+    A Bad Example:
+
+
+    if x == 4 : print x , y ; x , y = y , x
+
+
+    However, where you have a slice, the colon is similar to a binary operator and
+    it should contain an equal amount on each side. Where you have an extended slice,
+    both of the colons must contain the exact same level of spacing. The exception
+    to this is a slice parameter that has been omitted, along with the space.
+
+
+    A Good Example:
+
+
+    spam[1:8], spam[1:8:2], spam[:8:2], spam[1::2], spam[1:8:]
+
+
+    spam[lower:upper], spam[lower:upper:], spam[lower::step]
+
+
+    spam[lower+offset : upper+offset]
+
+
+    spam[: upper_fn(x) : step_fn(x)], ham[:: step_fn(x)]
+
+
+    spam[lower + offset : upper + offset]
+
+
+    A Bad Example:
+
+
+    spam[lower + offset:upper + offset]
+
+
+    spam[1: 8], ham[1 :8], ham[1:8 :2]
+
+
+    spam[lower : : upper]
+
+
+    spam[ : upper]
+
+
+    *   Right before the opening parenthesis that begins the argument list of the
+    function call:
+
+
+    A Good Example:
+
+
+    ham(1)
+
+
+    A Bad Example:
+
+
+    ham (1)
+
+
+    *   Right in front of the open parenthesis that starts a slicing or an indexing:
+
+
+    A Good Example:
+
+
+    dct[''key''] = lst[index]
+
+
+    A Bad Example:
+
+
+    dct [''key''] = lst [index]
+
+
+    *   When there is more than a single space around an operator, such as an assignment,
+    that aligns it with another operator
+
+
+    A Good Example:
+
+
+    x = 1
+
+
+    y = 2
+
+
+    long_variable = 3
+
+
+    A Bad Example:
+
+
+    x             = 1
+
+
+    y             = 2
+
+
+    long_variable = 3
+
+
+    ## Other Recommendations
+
+
+    Avoid having trailing whitespace throughout your code because it is not visible
+    and it can cause confusion. For example, if you put in a backslash and follow
+    it with a space and then a newline – this would not be counted as a line continuation.
+    In fact, some text editors will not preserve it and there are projects that contain
+    pre-commit hooks that will simply reject it – one of those is CPython.
+
+
+    The following binary operators should be surrounded by single spaces – one on
+    each side:
+
+
+    *   assignment (=)
+
+
+    *   augmented assignment (+=, = etc.)
+
+
+    The following comparisons are treated the same:
+
+
+    *   == 
+
+
+    *   < 
+
+
+    *   >
+
+
+    *   != 
+
+
+    *   <>
+
+
+    *   <=
+
+
+    *   >=
+
+
+    *   in
+
+
+    *   not in
+
+
+    *   is
+
+
+    *   is not 
+
+
+    And these Booleans:
+
+
+    *   and
+
+
+    *   or
+
+
+    *   not'
+  toc: []
+  trans: "\n\n*   `two_leading_and_two_trailing_underscores` 是存在于用户控制命名空间中的属性或“魔法”对象。例如：`__init__`、`__file__`\
+    \ 或 `__import__`。\n\n## 规范性\n\n这些是你应该避免的名称：\n\n在编写单字符变量名时，永远不要使用‘O’（大写字母）、‘l’（小写\
+    \ L）或‘I’（大写 i）。取决于你使用的字体，这些字符可能与数字‘0’和‘1’混淆——如果你发现自己正在考虑使用 `l`，请改用大写的 `L`。\n\n\
+    ## 模块和包的命名\n\n所有模块名称都应该是短且小写的。你可以在模块名中使用下划线，但仅在它能提高可读性时才这样做。Python 包也是如此——使用短且小写的名称，但不要使用下划线。\n\
+    \n当你有一个用 C 或 C++ 编写的扩展模块，并且配有一个具有更面向对象接口的 Python 模块时，C 或 C++ 模块将以下划线开头，例如 `_socket`。\n\
+    \n## 类名\n\n类名通常使用 `CapWords` 或 `CamelCase` 约定。\n\n内置名称有自己独立的约定，通常是单个单词或两个单词合并为一个词，例如‘Hello’或\
+    \ `HelloWorld`。`CamelCase` 约定倾向于用于内置常量和异常名称。\n\n## 类型变量\n\n类型变量的名称通常使用 `CamelCase`，并且偏于使用短名称，例如\
+    \ `Num`、`AnyStr`。你应该为变量添加后缀（`_co` 或 `_contra`）来声明逆变或协变行为。例如：\n\n```python\nImport\
+    \ TypeVar\n```\n\n变为\n\n```python\nVT_co = TypeVar('VT_co', covariant=True)\n\
+    KT_contra = TypeVar('KT_contra', contravariant=True)\n```\n\n## 异常命名\n\n异常是类，因此，你应该使用类的命名约定进行命名。尽管如此，如果异常是一个错误，请确保在名称上加上‘Error’\
+    \ 后缀。\n\n## 全局变量\n\n只要变量在单个模块内部使用，其命名约定与函数命名约定相同。\n\n## 函数\n\n所有函数名均为小写，并在需要的地方用下划线分隔单词以提高可读性。`mixedCase`\
+    \ 约定仅在已经是这种风格的上下文中使用，以保持向后兼容。\n\n## 实例变量和方法名\n\n再次，函数的命名约定也适用于这里——使用带有间歇下划线的小写。如果你使用实例变量或非公共方法，应该使用单个前下划线。为了防止名称与子类冲突，应使用两个前下划线来触发\
+    \ Python 的名称修饰（name mangling）规则。\n\n当这些规则被触发时，名称将与类名一起修饰。例如，`class Foo` 包含一个名为\
+    \ `__a` 的属性。无法通过 `Foo.__a` 访问。按照规则，只有当名称可能与设计为子类的类属性冲突时，才应该使用双前下划线。\n\n## 常量\n\
+    \n这些通常定义在模块级，全部大大写并用下划线分隔，例如 `MAX_OVERFLOW`。\n\n## 继承设计\n\n必须遵守的规则之一是确定实例变量或类方法是非公共还是公有的。如果你无法决定，请选择非公共，因为你以后可以轻松将其改为公共，而将公共改为非公共则没那么容易。\n\
+    \n公共属性是指与类无关的客户端会使用的属性，而非公共属性是指不供第三方使用的属性。对于公共属性，你保证了从开始到结束的向后兼容；而对于非公共属性，你不保证，可以删除或更改该属性。注意，没有使用“private”（私有）一词，这是因为\
+    \ Python 语言中没有真正的私有属性。\n\n另一个属性类别是保护属性。在 Python 中，它们属于子类 API。有些类专门设计为供继承的类，无论是为了扩展还是修改某些行为方面。当你设计这样的类时，始终要确保对属性做出显式决定——它们是公有的、还是仅供基类使用的，还是属于子类\
+    \ API？\n\n结合以上所有内容，这些是 Pythonic 的指南：\n\n*   公共属性不能不能有前下划线。\n*   如果公共属性与关键字（保留字）冲突，请在属性名称末尾添加一个下划线。这是比使用拼写错误或缩写更优的方法。\n\
+    *   对于公共数据属性，最好的方法是只暴露属性名称，而不使用任何复杂的修改器（mutator）或访问器（accessor）方法。如果简单的属性需要扩展其功能行为，Python\
+    \ 使得这很容易。\n*   如果你正在使用一个将被子类的类，并且你也使用了不会被子类的属性，请考虑添加 2 个前下划线，但不要添加任何后下划线。这将触发名称修饰，并有助于降低子类具有相同名称属性时发生冲突的风险。\n\
+    \n# 第 9 章：在语句和表达式中使用空格\n\n首先，关于空格的一些反感点：\n\n在以下情况下不要使用不必要的空格：\n\n*   紧邻大括号、中括号或圆括号内部\n\
+    \n良好的示例：\n```python\nham(spam[1], {eggs: 2})\n```\n\n一个错误的示例：\n```python\nham(\
+    \ spam[ 1 ], { eggs: 2 } )\n```\n\n*   紧邻冒号、分号或逗号之前：\n\n一个良好的示例：\n```python\n\
+    if x == 4: print x, y; x, y = y, x\n```\n\n一个错误的示例：\n```python\nif x == 4 : print\
+    \ x , y ; x , y = y , x\n```\n\n然而，在涉及切片（slice）时，冒号类似于二进制运算符，两边应包含相同数量的空格。在使用扩展切片时，两个冒号必须包含完全相同的间距级别。唯一的例外是省略了切片参数以及对应的空格。\n\
+    \n一个良好的示例：\n```python\nspam[1:8], spam[1:8:2], spam[:8:2], spam[1::2], spam[1:8:]\n\
+    spam[lower:upper], spam[lower:upper:], spam[lower::step]\nspam[lower+offset :\
+    \ upper+offset]\nspam[: upper_fn(x) : step_fn(x)], ham[:: step_fn(x)]\nspam[lower\
+    \ + offset : upper + offset]\n```\n\n一个错误的示例：\n```python\nspam[lower + offset:upper\
+    \ + offset]\nspam[1: 8], ham[1 :8], ham[1:8 :2]\nspam[lower : : upper]\nspam[\
+    \ : upper]\n```\n\n*   在位于函数调用参数列表的起始圆括号之前：\n\n一个良好的示例：\n```python\nham(1)\n```\n\
+    \n一个错误的示例：\n```python\nham (1)\n```\n\n*   紧邻开始切片或索引的左括号之前：\n\n一个良好的示例：\n```python\n\
+    dct['key'] = lst[index]\n```\n\n一个错误的示例：\n```python\ndct ['key'] = lst [index]\n\
+    ```\n\n*   当运算符（如赋值运算符）周围有多个空格时，且这些空格是为了使其与另一个运算符对齐。\n\n一个良好的示例：\n```python\n\
+    x = 1\ny = 2\nlong_variable = 3\n```\n\n一个错误的示例：\n```python\nx               =\
+    \ 1\ny               = 2\nlong_variable = 3\n```\n\n## 其他建议\n\n避免在整个代码代码中使用行尾空格，因为它是不可见的且可能会导致混淆。例如，如果你输入了一个反斜杠，后面跟着一个空格然后换行——这不会被视为行延续。事实上，某些文本编辑器不会保留它，有些项目包含的\
+    \ pre-commit hooks 也会直接拒绝它——其中之一就是 CPython。\n\n以下二进制运算符应该被单个空格包围——每侧一个：\n\n* \
+    \  赋值 (`=`)\n*   复合赋值 (`+=`, `-=` 等）\n\n以下比较运算符的处理方式相同：\n\n*   `==` \n*   `<`\n\
+    *   `>`\n*   `!=` \n*   `<>`\n*   `<=`\n*   `>=`\n*   `in`\n*   `not in`\n*  \
+    \ `is`\n*   `is not`\n\n以及布尔值：\n\n*   `and`\n*   `or`\n*   `not`\n\n"
+- fmt: "\nIf you use operators that have different priorities, think about putting\
+    \ whitespace around the lowest priority operators – use your best judgment here.\
+    \ However, you should not use any more than a single space and make sure that\
+    \ each side of the operator has the same amount of whitespace – don’t put 1 on\
+    \ one side and 2 on the other:\n\n### A Good Example:\n\n```\ni = i + 1\nsubmitted\
+    \ += 1\nx = x*2 - 1\nhypot2 = x*x + y*y\nc = (a+b) * (a-b)\n```\n\n### A Bad Example:\n\
+    \n```\ni=i+1\nsubmitted +=1\nx = x * 2 - 1\nhypot2 = x * x + y * y\nc = (a + b)\
+    \ * (a - b)\n```\n\nWhen you use an `=` sign to indicate default values for parameters\
+    \ or keyword arguments, do not use whitespace around the sign:\n\n### A Good Example:\n\
+    \n```python\ndef complex(real, imag=0.0):\n    return magic(r=real, i=imag)\n\
+    ```\n\n### A Bad Example:\n\n```python\ndef complex(real, imag = 0.0):\n    return\
+    \ magic(r = real, i = imag)\n```\n\nUse the standard rules for colons with function\
+    \ annotations and make sure there are spaces surrounding the `->` if it is used:\n\
+    \n### A Good Example:\n\n```python\ndef munge(input: AnyStr): ...\ndef munge()\
+    \ -> AnyStr: ...\n```\n\n### A Bad Example:\n\n```python\ndef munge(input:AnyStr):\
+    \ ...\ndef munge()->PosInt: ...\n```\n\nWhen you combine a default value and an\
+    \ argument annotation, spaces should surround the `=` sign – do not do this unless\
+    \ the argument has both the default and the annotation:\n\n### A Good Example:\n\
+    \n```python\ndef munge(sep: AnyStr = None): ...\ndef munge(input: AnyStr, sep:\
+    \ AnyStr = None, limit=1000): ...\n```\n\n### A Bad Example:\n\n```python\ndef\
+    \ munge(input: AnyStr=None): ...\ndef munge(input: AnyStr, limit = 1000): ...\n\
+    ```\n\nIt is not good practice to use compound statements – several statements\
+    \ on one line:\n\n### A Good Example:\n\n```python\nif foo == 'that':\n    do_that_thing()\n\
+    do_one()\ndo_two()\ndo_three()\n```\n\n### Best Not to Do:\n\n```python\nif foo\
+    \ == 'that': do_that_thing()\ndo_one(); do_two(); do_three()\n```\n\nIt is, on\
+    \ occasion, alright to use an `if`, `for` and `while` statement on one line, provided\
+    \ they have small bodies but you should never do this for statements that have\
+    \ several clauses. Also, never fold really long lines:\n\n### Best Not to Do:\n\
+    \n```python\nif foo == 'that': do_that_thing()\nfor x in lst: total += x\nwhile\
+    \ t < 10: t = delay()\n```\n\n### Most Definitely Not:\n\n```python\nif foo ==\
+    \ 'that': do_that_thing()\nelse: do_non_that_thing()\ntry: something()\nfinally:\
+    \ cleanup()\ndo_one(); do_two(); do_three(long, argument,\n                  \
+    \           list, like, this)\nif foo == 'that': one(); two(); three()\n```\n\n\
+    # Conclusion\n\nThank you once again for reading my book, I truly hope that it\
+    \ was able to help you understand how to write more effective and efficient Python\
+    \ code.\n\nFrom here, the next step is to, quite simply, practice. The more you\
+    \ do, the better you will get and, eventually, you will be writing Python code\
+    \ like a pro! Research, join online Python forums and join the Python community\
+    \ to learn more and to advance your skills.\n\nLastly, if you found this book\
+    \ helpful, please can I ask a small favor of you? Please consider leaving a review\
+    \ for me at `Amamzon.com`; it isn’t only helpful to me, it also benefits prospective\
+    \ readers\n\nThank you and good luck on your journey to becoming a better Python\
+    \ programmer\n\n# About the Author\n\nCharlie Masterson is a computer programmer\
+    \ and instructor who have developed several applications and computer programs.\n\
+    \nAs a computer science student, he got interested in programming early but got\
+    \ frustrated learning the highly complex subject matter.\n\nCharlie wanted a teaching\
+    \ method that he could easily learn from and develop his programming skills. He\
+    \ soon discovered a teaching series that made him learn faster and better.\n\n\
+    Applying the same approach, Charlie successfully learned different programming\
+    \ languages and is now teaching the subject matter through writing books.\n\n\
+    With the books that he writes on computer programming, he hopes to provide great\
+    \ value and help readers interested to learn computer-related topics.\n"
+  raw: 'If you use operators that have different priorities, think about putting whitespace
+    around the lowest priority operators – use your best judgment here. However, you
+    should not use any more than a single space and make sure that each side of the
+    operator has the same amount of whitespace – don’t put 1 on one side and 2 on
+    the other:
+
+
+    A Good Example:
+
+
+    i = i + 1
+
+
+    submitted += 1
+
+
+    x = x*2 - 1
+
+
+    hypot2 = x*x + y*y
+
+
+    c = (a+b) * (a-b)
+
+
+    A Bad Example:
+
+
+    i=i+1
+
+
+    submitted +=1
+
+
+    x = x * 2 - 1
+
+
+    hypot2 = x * x + y * y
+
+
+    c = (a + b) * (a - b)
+
+
+    When you use an = sign to indicate default values for parameters or keyword arguments,
+    do not use whitespace around the sign:
+
+
+    A Good Example:
+
+
+    def complex(real, imag=0.0):
+
+
+        return magic(r=real, i=imag)
+
+
+    A Bad Example:
+
+
+    def complex(real, imag = 0.0):
+
+
+        return magic(r = real, i = imag)
+
+
+    Use the standard rules for colons with function annotations and make sure there
+    are spaces surrounding the -> if it is used:
+
+
+    A Good Example:
+
+
+    def munge(input: AnyStr): ...
+
+
+    def munge() -> AnyStr: ...
+
+
+    A Bad Example:
+
+
+    def munge(input:AnyStr): ...
+
+
+    def munge()->PosInt: ...
+
+
+    When you combine a default value and an argument annotation, spaces should surround
+    the = sign – do not do this unless the argument has both the default and the annotation:
+
+
+    A Good Example:
+
+
+    def munge(sep: AnyStr = None): ...
+
+
+    def munge(input: AnyStr, sep: AnyStr = None, limit=1000): ...
+
+
+    A Bad Example:
+
+
+    def munge(input: AnyStr=None): ...
+
+
+    def munge(input: AnyStr, limit = 1000): ...
+
+
+    It is not good practice to use compound statements – several statements on one
+    line:
+
+
+    A Good Example:
+
+
+    if foo == ''that'':
+
+
+        do_that_thing()
+
+
+    do_one()
+
+
+    do_two()
+
+
+    do_three()
+
+
+    Best Not to Do:
+
+
+    if foo == ''that'': do_that_thing()
+
+
+    do_one(); do_two(); do_three()
+
+
+    It is, on occasion, alright to use an if, for and while statement on one line,
+    provided they have small bodies but you should never do this for statements that
+    have several clauses. Also, never fold really long lines:
+
+
+    Best Not to Do:
+
+
+    if foo == ''that'': do_that_thing()
+
+
+    for x in lst: total += x
+
+
+    while t < 10: t = delay()
+
+
+    Most Definitely Not:
+
+
+    if foo == ''that'': do_that_thing()
+
+
+    else: do_non_that_thing()
+
+
+    try: something()
+
+
+    finally: cleanup()
+
+
+    do_one(); do_two(); do_three(long, argument,
+
+
+                                 list, like, this)
+
+
+    if foo == ''that'': one(); two(); three()
+
+
+    # Conclusion
+
+
+    Thank you once again for reading my book, I truly hope that it was able to help
+    you understand how to write more effective and efficient Python code.
+
+
+    From here, the next step is to, quite simply, practice. The more you do, the better
+    you will get and, eventually, you will be writing Python code like a pro! Research,
+    join online Python forums and join the Python community to learn more and to advance
+    your skills.
+
+
+    Lastly, if you found this book helpful, please can I ask a small favor of you?
+    Please consider leaving a review for me at Amamzon.com; it isn’t only helpful
+    to me, it also benefits prospective readers
+
+
+    Thank you and good luck on your journey to becoming a better Python programmer
+
+
+    About the Author
+
+
+    Charlie Masterson is a computer programmer and instructor who have developed several
+    applications and computer programs.
+
+
+    As a computer science student, he got interested in programming early but got
+    frustrated learning the highly complex subject matter.
+
+
+    Charlie wanted a teaching method that he could easily learn from and develop his
+    programming skills. He soon discovered a teaching series that made him learn faster
+    and better.
+
+
+    Applying the same approach, Charlie successfully learned different programming
+    languages and is now teaching the subject matter through writing books.
+
+
+    With the books that he writes on computer programming, he hopes to provide great
+    value and help readers interested to learn computer-related topics.'
+  toc: []
+  trans: "\n\n如果你使用了优先级不同的运算符，请考虑在优先级最低的运算符周围加上空格——请根据你的最佳判断来决定。然而，你使用的空格不应多于一个，并确保运算符两侧的空格数量相同——不要在一侧放\
+    \ 1 个空格而在另一侧放 2 个：\n\n### 良好的示例：\n\n```\ni = i + 1\nsubmitted += 1\nx = x*2 -\
+    \ 1\nhypot2 = x*x + y*y\nc = (a+b) * (a-b)\n```\n\n### 不良的示例：\n\n```\ni=i+1\n\
+    submitted +=1\nx = x * 2 - 1\nhypot2 = x * x + y * y\nc = (a + b) * (a - b)\n\
+    ```\n\n当你使用 `=` 符号来指示参数或关键字参数的默认值时，不要在符号符号周围使用空格：\n\n### 良好的示例：\n\n```python\n\
+    def complex(real, imag=0.0):\n    return magic(r=real, i=imag)\n```\n\n### 不良的示例：\n\
+    \n```python\ndef complex(real, imag = 0.0):\n    return magic(r = real, i = imag)\n\
+    ```\n\n对于函数注解中的冒号，使用标准规则，并确保在使用 `->` 时其周围有空格：\n\n### 良好的示例：\n\n```python\ndef\
+    \ munge(input: AnyStr): ...\ndef munge() -> AnyStr: ...\n```\n\n### 不良的示例：\n\n\
+    ```python\ndef munge(input:AnyStr): ...\ndef munge()->PosInt: ...\n```\n\n当你结合使用默认值和参数注解时，`=`\
+    \ 符号周围应该有空格——除非该参数同时具有默认值和注解，否则不要这样做：\n\n### 良好的示例：\n\n```python\ndef munge(sep:\
+    \ AnyStr = None): ...\ndef munge(input: AnyStr, sep: AnyStr = None, limit=1000):\
+    \ ...\n```\n\n### 不良的示例：\n\n```python\ndef munge(input: AnyStr=None): ...\ndef\
+    \ munge(input: AnyStr, limit = 1000): ...\n```\n\n使用复合语句（在同一行上写多个语句）不是良好的做法：\n\
+    \n### 良好的示例：\n\n```python\nif foo == 'that':\n    do_that_thing()\ndo_one()\n\
+    do_two()\ndo_three()\n```\n\n### 尽量不要这样做：\n\n```python\nif foo == 'that': do_that_thing()\n\
+    do_one(); do_two(); do_three()\n```\n\n偶尔情况下，如果语句体很小，在一行内使用 `if`、`for` 和 `while`\
+    \ 语句是可以接受的，但对于包含多个子句的语句，永远不要这样做。此外，永远不要折叠非常长的行：\n\n### 尽量不要这样做：\n\n```python\n\
+    if foo == 'that': do_that_thing()\nfor x in lst: total += x\nwhile t < 10: t =\
+    \ delay()\n```\n\n### 绝对不要：\n\n```python\nif foo == 'that': do_that_thing()\n\
+    else: do_non_that_thing()\ntry: something()\nfinally: cleanup()\ndo_one(); do_two();\
+    \ do_three(long, argument,\n                             list, like, this)\nif\
+    \ foo == 'that': one(); two(); three()\n```\n\n# 结论\n\n再次感谢阅读我的书，我真心希望它能够帮助你理解如何编写更有效高效的\
+    \ Python 代码。\n\n从这里开始，下一步简单来说就是实践。你做得越多，进步得越快，最终你将像专业人士一样编写 Python 代码！通过研究、加入在线\
+    \ Python 论坛和加入 Python 社区来学习更多并提升你的技能。\n\n最后，如果你觉得这本书有帮助，可以请你帮个忙吗？请考虑在 `Amamzon.com`\
+    \ 上给我留评论；这不仅对我有帮助，对潜在读者也有益。\n\n祝你成为更好的 Python 程序员的道路一路顺利\n\n# 关于作者\n\nCharlie\
+    \ Masterson 是一位计算机程序员和导师，开发过多个应用程序和计算机程序。\n\n作为一名计算机科学学生，他很早就对编程感兴趣，但对学习极其复杂的课题感到沮丧。\n\
+    \nCharlie 想要一种能够轻松学习并提高编程技能的教学方法。他很快发现了一系列让他学得更快、更好的课程。\n\n通过同样的方法，Charlie 成功学习了不同的编程语言，现在通过写书来教授这些知识。\n\
+    \n通过他编写关于计算机编程的书，他希望提供巨大的价值，并帮助对学习计算机主题感兴趣的读者。\n\n"

@@ -1,0 +1,255 @@
+- "# Python 编程最佳实践\n\n\n\n\n\n\n\n\n\n\n\n\n## 引言\n\n我想感谢你并祝贺你阅读《Python：Python 编程最佳实践》一书。本书包含了如何更有效地编写\
+  \ Python 代码的成熟步骤和策略。当你初学 Python 时，人们会教你如何编写代码，但在很多情况下，他们不会教你如何写出整洁的代码。\n\n如果你接触任何\
+  \ Python 程序员，问问他们喜欢 Python 的地方是什么。我保证他们会告诉你，主要原因之一是它易于阅读。事实上，这是 Python 语言的核心所在，因为计算机代码被阅读的次数远多于编写的次数。这很大程度上是因为\
+  \ Python 代码遵循了一系列指南和“Pythonic”（Python 风格）惯用用法——如果你听到程序员说某部分代码不“Pythonic”，就意味着它没有遵循这些指南，并且没有以任何可读的方式表达其意图。\n\
+  \n代码风格和布局至关重要，你所使用的风格的一致性也是如此。尽管如此，有时一致性并不是正确的选择，而指南也简单并不适用——你必须知道何时是这种情况，而这就是进行\
+  \ Python 编程时最佳判断所在。\n\n通过本指南，我将向你展示编写代码的绝对最佳方式，整理你的程序并使其更加有效、高效率。我不会只给你基础知识。我将深入探讨你需要了解的一切，从代码布局到如何编写函数、惯用用法和命名。\n\
+  \n我将谈到空白符和制表符、字符串和方法。我还将针对 Python 编程提供一些通用建议以及通用概念。简而言之，当你读完我的最佳实践指南时，你将成为最优秀的 Python\
+  \ 程序员。\n\n# 第 1 章：Python 编码通用概念\n\n在我们正式进入书籍内容之前，这些是你应该注意的通用概念。\n\n## 显式代码\n虽然你可以用\
+  \ Python 做一些奇怪的事情，但最好保持显式。\n\n**糟糕的示例：**\n```python\ndef make_complex(*args):\n\
+  \    x, y = args\n    return locals()\n```\n\n**良好的示例：**\n```python\ndef make_complex(x,\
+  \ y):\n    return {'x': x, 'y': y}\n```\n对比这些示例；在后一个示例中，我们显式地返回字典。\n\n### 一行一条\n\
+  虽然允许复合语句（如列表推导式），并且在很多情况下受到推崇，但在同一行内有两个不连续的语句并不是好的做法。\n\n**糟糕的示例：**\n```python\n\
+  print 'one'; print 'two'\nif x == 1: print 'one'\n```\n\n**良好的示例：**\n```python\n\
+  print 'one'\nprint 'two'\nif x == 1:\n    print 'one'\n```\n```python\nif cond1\
+  \ and cond2:\n    # 执行某些操作\n```\n\n### 返回值\n当你得到一个复杂度不断增长的函数时，在体中使用多个 `return` 语句并非罕见。然而，如果你想保持清晰的意图良好的可读性，你应该尽量避免从函数的多个点返回值。\n\
+  \n在函数内部返回值，有两种情况：来自正常处理的函数返回的结果，以及指示输入参数错误或由于任何原因函数无法完成计算的错误。\n\n如果你不想在后一种情况下抛出异常，那么可能需要返回诸如\
+  \ `False` 或 `None` 等值，作为函数未能正常执行的指示。在这样的情况下，最佳实践是在注意到错误上下文后立即返回。\n\n这将有助于整洁函数结构，因为错误返回之后的所有代码都假设条件已经满足，以便计算主函数的结果。因此，有时需要像这样的多个\
+  \ `return` 语句。尽管如此，如果一个函数包含多个不同的路径，调试结果将变得非常困难，因此最好只维护一条路径。这有助于理清代码路径，而且如果你有多个路径，这可能表明你需要重新审视你的代码并整理它。\n\
+  \n**示例：**\n```python\ndef complex_function(c, b, a):\n    if not c:\n        return\
+  \ None  # 抛出异常可能更好\n    if not b:\n        return None  # 抛出异常可能更好\n    # 尝试从 c,\
+  \ b 和 a 生成 x 的复杂代码\n```\n\n\n\n\n### 如果成功则不要返回 x\n\n```python\nif not x:\n    #\
+  \ 对 x 的备选计算\n    return x  # 在尝试维护代码时，为 x 提供一个出口点会有帮助。\n```\n\n# 第 2 章：编程建议\n\n\
+  这些是编写 Python 代码的基本建议。如果你希望你的代码更加有效、高效且具有可读性，就应该遵循这些建议。\n\n- 你的代码编写方式不能对其他 Python\
+  \ 实现造成不利，例如 `IronPython`、`Jython`、`PyPy`、`Psyco` 和 `Cython`。\n\n例如，你永远不要依赖 `CPython`\
+  \ 中高效的字符串拼接（其形式为 `a=a+b` 或 `a+=b`）。这是一种相当脆弱的优化，尽管在 `CPython` 中极其高效，但因为它无法在所有类型上运行，而这些类型在任何不使用引用计数的\
+  \ Python 实现中都不存在。\n\n相反，当你使用库中性能敏感的某部分时，你应该使用 `.join()` 形式。这将确保拼接在所有不同的 Python 实现中都是线性的。\n\
+  \n- 永远不要使用相等运算符与单例（如 `None`）进行比较。相反，请使用 `is` 或 `not`。\n\n你还应该警惕在应该使用 `if is not\
+  \ None` 的地方使用 `if x`。一个例子是，当你测试一个默认值为 `None` 的参数或变量是否真的被设置为了不同的值时。另一个值的类型可能在布尔上下文中是假的。\n\
+  \n- 与其使用 `not...is` 运算符，你应该使用 `is not`。虽然它们在功能上是等等的，但前者在可读性量级上较低，因此后者更受青睐。例如：\n\n\
+  使用这种：\n```python\nif foo is not None:\n```\n\n不要使用这种：\n```python\nif not foo is\
+  \ None\n```\n\n- 当你使用富比较（rich comparison）实现排序操作时，你应该实现所有的 6 个操作，而不是依赖其他代码来触发比较。这些操作是（`__eq__`、`__lt__`、`__ne__`、`__ge__`、`__gt__`、`__le__`）。\n\
+  \n为了减少工作量，一个特定的装饰器有助于生成任何缺失的比较方法。该装饰器是 `functools.total_ordering()`。\n\n风格指南指出 Python\
+  \ 假设了反射性规则。因此，Python 解释器可能会通过交换 `y > x` 和 `x < y`，或者交换 `y >= x` 和 `x <= y` 来改变内容。\n\
+  \n你可能还会发现参数 `x == y` 被交换成了 `x != y`。`min()` 和 `sort()` 操作也将确无疑地使用 `<` 运算符，而 `max()`\
+  \ 函数将使用 `>` 运算符。然而，作为最佳实践指南，你应该使用所有的操作以防产生混淆。\n\n- 与其使用将 lambda 表达式绑定到标识符的赋值语句，不如使用\
+  \ `def` 语句。\n\n良好的示例：\n```python\ndef f(x): return 2*x\n```\n\n一个糟糕的示例：\n```python\n\
+  f = lambda x: 2*x\n```\n\n第一个示例显示给函数对象的名称是 `f` 而不是总体的 `<lambda>`。这对于字符串表示以及回溯追踪（tracebacks）最有有用，而且通过使用赋值语句，你放弃了\
+  \ lambda 表达式相比 `def` 语句提供的唯一优势——即它可以被嵌入更大的语句中。\n\n当你想要派生异常时，使用 `Exception` 而不是 `BaseException`。后者的继承留给那些捕获它们几乎总是错误的错误的异常。\n\
+  \n在设计异常层次结构时，应根据捕获异常可能需要的性质来构建，而不是根据异常抛出的位置。始终回答一个问题——“发生了什么错误？”而不是仅仅说某事错了。使用类命名的规范，但记得为产生错误的异常类加上\
+  \ “Error” 后缀。\n\n对于不是错误且用于流程控制或其他信号形式的异常，不需要添加任何特殊后缀。\n\n- 当你使用异常链（exception chaining）时，仅在需要的地方使用。\n\
+  \n当你故意替换内部异常时，确保将正确的细节迁移到新的异常中。示例包括在将 `KeyError` 转换为 `AttributeError` 时确保属性名称被保留，或者将原始异常文本嵌入到新异常的消息中。\n\
+  \n- 当使用 Python 2 抛出异常时，始终使用 `raise ValueError('message')` 而不是 `raise ValueError\
+  \ 'message'`。\n\n这是因为第二个示例在 Python 3 中既不是有效的也不是合法的语法。此外，使用包含括号意味着当添加字符串格式化或异常参数过长时，不需要在行尾使用续行符。\n\
+  \n- 当你捕获异常时，尽可能提到具体的异常，而不是使用裸露的 `except:` 子句。\n\n例如：\n```python\ntry:\n    import\
+  \ platform_specific_module\nexcept ImportError:\n    platform_specific_module =\
+  \ None\n```\n\n`KeyboardInterrupt` 和 `SystemExit` 异常会被裸露 `except:` 子句捕获，这使得使用 CTRL+C\
+  \ 中断程序变得困难得多，而且它们还会掩盖可能存在的其他问题。\n\n如果你想要捕捉程序中信号错误的每个异常，请使用 `except Exception:`。\n\
+  \n通常规则是仅在以下两种情况之一使用裸露 `except:` 子句：\n1. 如果回溯追踪是由异常处理程序打印的；这样用户就能感知到错误。\n2. 需要清理工作但允许异常向上通过\
+  \ `raise`。\n\n当你将捕获的异常绑定到名称时，使用 Python 2.6 的语法：\n```python\ntry:\n    process_data()\n\
+  except Exception as exc:\n    raise DataFailedError(str(exc))\n```\n\n这是 Python\
+  \ 支持的唯一语法，它消除了与旧风格相关的逗号问题。\n\n- 当你捕获系统错误时，使用 Python 3 的异常层次而不是 `errno` 值。同样，当你使用任何\
+  \ `try/except` 子句时，尽量将 `try` 子句限制在尽可能少的代码范围内。这将减少隐藏错误的风险。\n\n良好的示例：\n```python\n\
+  try:\n    value = collection[key]\nexcept KeyError:\n    return key_not_found(key)\n\
+  else:\n    return handle_value(value)\n```\n\n一个糟糕的示例：\n```python\ntry:\n    # 范围太广了！\n\
+  \    return handle_value(collection[key])\nexcept KeyError:\n    # 会捕获 handle_value()\
+  \ 的 KeyError\n    return key_not_found(key)\n```\n\n- 当你使用特定代码段局部资源工具时，使用语句在使用后立即清理。你也可以使用\
+  \ `try/finally` 语句。\n\n- 当目的是获取和释放资源时，始终通过单独的方法调用上下文管理器。\n\n良好的示例：\n```python\n\
+  with conn.start_transaction():\n    do_something_in_transaction(conn)\n```\n\n一个糟糕的示例：\n\
+  ```python\nwith conn:\n    do_something_in_transaction(conn)\n```\n\n第二个示例没有提供任何信息表明\
+  \ `__enter__` 和 `__exit__` 方法除了关闭事务之外的操作。在这种情况下，显式化是重要的。\n\n- 返回语句的一致性很重要。函数的所有返回语句或一个返回语句都应该返回表达式或值。如果某个返回语句返回了表达式，那么任何不返回值的语句都应该显式说明返回\
+  \ `None`，并且在该函数的末尾有一个返回语句。\n\n良好的示例：\n```python\ndef foo(x):\n    if x >= 0:\n \
+  \       return math.sqrt(x)\n    else:\n        return None\n\ndef bar(x):\n   \
+  \ if x < 0:\n        return None\n    return math.sqrt(x)\n```\n\n一个糟糕的示例：\n```python\n\
+  def foo(x):\n    if x >= 0:\n        return math.sqrt(x)\n```\n\n\n\n\n```python\n\
+  def bar(x):\n    if x < 0:\n        return\n    return math.sqrt(x)\n```\n\n- 不要使用字符串模块（string\
+  \ modules）；请使用字符串方法（string methods）。\n这些方法总是更快，并且与 Unicode 字符串共享 API。如果你需要与早于 2.0\
+  \ 的 Python 实现向后兼容，则可以忽略这条规则。\n\n- 不要使用字符串切片来检查后缀和前缀，而应使用 `.startswith()` 和 `.endswith()`。\n\
+  这些方法要清晰得多，而且更不容易出错。\n\n### 良好的示例：\n```python\nif foo.beginswith('bar'):\n```\n\n\
+  ### 错误的示例：\n```python\nif foo[:3] == 'bar':\n```\n\n- 在比较对象类型时，使用 `isinstance()`\
+  \ 而不是直接比较。\n\n### 良好的示例：\n```python\nif isinstance(obj, int):\n```\n\n### 错误的示例：\n\
+  ```python\nif type(obj) is type(1):\n```\n\n当你检查一个对象是否实际上是字符串时，记住它也可能是一个 Unicode\
+  \ 字符串。在 Python 2.0 中，Unicode 和 `str` 共享名为 `basestring` 的基类，因此你可以：\n\n```python\n\
+  if isinstance(obj, basestring):\n```\n\n然而，在 Python 3 中，你找不到 `basestring` 或 `Unicode`，只有\
+  \ `str` 和 `bytes` 对象不再是字符串，它们是整数序列。\n\n对于序列——元组、列表、字符串等——请利用空序列为假（false）的特性。\n\n\
+  ### 良好的示例：\n```python\nif not seq:\n    if seq:\n```\n\n### 错误的示例：\n```python\n\
+  if len(seq):\n    if not len(seq):\n```\n\n不要包含任何需要大量尾部空格的字符串字面量，因为这些是无法区分的，某些文本编辑器会删除它们。\n\
+  \n不要使用 `==` 来比较布尔值 True 或 False：\n\n### 良好的示例：\n```python\nif greeting:\n```\n\n\
+  ### 错误的示例：\n```python\nif the greeting == True:\n```\n\n### 更糟糕的示例：\n```python\n\
+  if the greeting is True:\n```\n\n# 第 3 章：代码布局\n\n最明显的入门点是如何布局你的代码。我将为你提供代码布局的最佳实践指南，以及关于如何做和如何不做的示例：\n\
+  \n## 缩进与对齐\n\n每个缩进层级应该是 4 个空格。\n\n当你使用延续行时，它们应该使用以下两种方法之一对齐折行后的元素：\n\n- 使用 Python\
+  \ 在花括号、括号和圆括号内部隐式连接行的垂直对齐，或\n- 使用悬挂缩进（hanging indents）\n\n当你使用悬挂缩进时，考虑第一行不应该有任何参数，并且为了标记延续行，必须使用缩进。\n\
+  \n考虑以下示例：\n\n### 正确的方法：\n\n```python\n### 与起始分隔符对齐。\nfoo = long_function_name(var_four,\
+  \ var_three,\n                         var_two, var_one)\n# 包含了更多缩进，以便与代码其余部分区分来\n\
+  def long_function_name(\n    var_four, var_three, var_two,\n    var_one):\n    print(var_four)\n\
+  \n### 应该使用悬挂缩进来增加层次。\nfoo = long_function_name(\n    var_four, var_three,\n    var_two,\
+  \ var_one)\n```\n\n### 错误的方法：\n\n```python\n### 当你不使用垂直对齐时，第一行不允许有参数。\nfoo = long_function_name(var_four,\
+  \ var_three,\n    var_two, var_one)\n### 需要更多的缩进，因为缩进无法与其余部分区分。\ndef long_function_name(\n\
+  \    var_four, var_three, var_two,\n    var_one):\n    print(var_four)\n```\n\n\
+  当涉及到延续行时，4 个空格缩进规则是可选的：\n\n```python\n### 悬挂缩进*可以*缩进多于或少于 4 个空格。\nfoo = long_function_name(\n\
+  \    var_four, var_three,\n    var_two, var_one)\n```\n\n当你使用带有可以跨多行的长条件的 `if` 语句时，请注意，条件语句中的其余行可以轻松创建一个\
+  \ 4 个空格的自然缩进——使用一个 2 个字符的关键字（例如 `if`）配合一个空格和一个左圆括号。然而，在视觉上，这看起来可能与 `if` 语句内部缩进的代码某种不兼容，因为内部已经有了\
+  \ 4 个空格的缩进。关于是否要将这些条件行与嵌套内部的代码区分开，并没有一个真正的标准，但有几个你可以使用的接受选项，包括但不限于：\n\n```python\n\
+  ### 没有使用额外的缩进。\nif (this_is_one_thing and\n    that_is_something_else):\n    do_this()\n\
+  \n### 添加注释，这将在支持语法高亮的编辑器中提供一些帮助。\nif (this_is_one_thing and\n    that_is_something_else):\n\
+  \    # 因为两个条件都为真，我们可以进行调整。\n    do_this()\n\n### 给条件延续行增加更多缩进。\nif (this_is_one_thing\n\
+  \        and that_is_something_else):\n    do_this()\n```\n\n现在，当你有一个多行结构时，闭合的花括号、括号或中括号可以对齐在两个位置之一——要么在列表末尾行非空格的起始字符之下方：\n\
+  \n```python\nmy_list = [\n    6, 5, 4,\n    3, 2, 1,\n    ]\nresult = a_function_that_will_take_arguments(\n\
+  \    'f', 'e', 'd',\n    'c', 'b', 'a',\n    )\n```\n\n或者它可以对齐在多行结构第一行的起始字符之下方：\n\
+  \n```python\nmy_list = [\n    6, 5, 4,\n    3, 2, 1,\n]\nresult = a_function_that_will_take_arguments(\n\
+  \    'f', 'e', 'd',\n    'c', 'b', 'a',\n)\n```\n\n# 第 4 章：惯用法（Idioms）\n\n简单来说，编程惯用法是\
+  \ Python 代码应该编写的方式。我们通常将惯用代码称为 Pythonic 代码（Pythonic），尽管编写某事通常有一种非常明显的方法，但 Pythonic\
+  \ 代码的实际编写方式对于 Python 的初学者来说可能稍微有些晦涩。因此，你需要学习良好的惯用法，其中一些常见的惯用法包括：\n\n## 解包（Unpacking）\n\
+  \n只要你知道元组或列表的长度，解包允许你为每个元素命名。例如，`enumerate()` 为列表中的每个项目都提供一个包含 2 个元素的元组：\n\n```python\n\
+  for the index, each item in enumerate(this_list):\n    # 对 index 和 each item 执行操作\n\
+  ```\n\n你也可以使用解包来交换变量：\n\n```python\nb, a = a, b\n```\n\n你还可以使用嵌套解包：\n\n```python\n\
+  c, (b, a) = 3, (2, 1)\n```\n\n当 Python 3 实现时，它带有一个新的扩展解包方法：\n\n```python\nc *the_rest\
+  \ = [3, 2, 1]\n### c = 3, the_rest = [2, 1]\nc, *the_middle, c = [4, 3, 2, 1]\n\
+  ### c = 4, the_middle = [3, 2, 1]\n```\n\n### 创建忽略变量\n\n如果你想赋值某些内容但不需要该变量，你会使用 `__`。例如：\n\
+  \n```python\nfilename = 'footbar.txt'\nbasename, __, ext = filename.rpartition('.')\n\
+  ```\n\n**注意**\n\n你经常看到建议使用单划线 `_` 来丢弃变量，而不是使用双划线 `__`。这样做的问题是，单划线 `-` 经常在 `gettext()`\
+  \ 函数中作为别名。它还用于存储交互式提示符的上一次操作值。当你使用双划线 `__` 时，它既清晰又方便，还能消除干扰单划线其他用例的风险。\n\n### 创建长度\
+  \ N 的列表\n\n要创建一个相同内容的长度 N 列表，你会使用 `*` 列表运算符：\n\n```python\nfour_zeros = [Zero] *\
+  \ 4\n```\n\n要创建一个列表不应该使用 `*` 运算符。该运算符创建引用同一个列表列表，这并不是我们想要的。相反，我们使用列表推导式：\n\n```python\n\
+  four_lists = [[] for __ in xrange(4)]\n```\n\n注意——如果你正在使用 Python 3，请使用 `range()`\
+  \ 而不是 `xrange()`。\n\n### 从列表创建字符串\n\n创建字符串最常用的惯用法是在空字符串上使用 `.join()`：\n\n```python\n\
+  letters = ['c', 'l', o, 't']\nword = ''.join(letters)\n```\n\n这会将“clot”的值赋值给变量 `word`。你可以将这种惯用法应用于元组和列表。\n\
+  \n### 在集合中查找项\n\n有时，你需要在集合中查找特定选项，有两种方法——使用列表或集合。\n\n看这个示例：\n\n```python\ns = set(['c',\
+  \ 'l', 'o', 't'])\nl = ['c', 'l', 'o', 't']\n\ndef lookup_set(s):\n    return 's'\
+  \ in s\n\ndef lookup_list(l):\n    return 's' in l\n```\n\n\n\n\n\n现在，这两个函数看起来完全一样，仅仅是因为\
+  \ `lookup_set` 利用了 Python 集合是哈希表的这一事实。然而，每个示例中 `lookup` 的性能是不同的。为了判断一个特定项目是否在列表中，Python\
+  \ 必须搜索每一个项目，直到找到匹配的项。这非常耗时，特别是当列表很长时。使用集合，每个项目都有一个哈希告诉 Python 在哪里查找，这使得搜索快得多。你也可以以相同的方式搜索字典。由于性能存在差异，在以下情况下，使用集合比列表是更好的主：\n\
+  \n*   集合包含大量项目\n*   你需要经常在集合中查找项目\n\n在集合较小或不需要频繁查找的情况下，哈希表所需的额外内存和时间通过使用列表是可以节省的。\n\
+  \n# 第 5 章：注释\n\n由于你已经有一些 Python 编程经验，你会知道注释在运行时是不可见的。注释是为了帮助其他开发者或未来的自己理解代码做了什么以及为什么这么做。有些人认为注释毫无意义，但在编写代码时，写注释比不写注释要好得多。当你修改代码时，必须确保更新注释。正确的做法是在写注释时，确保它是一个完整的句子。\n\
+  \n当你使用内联注释时，尽可能少用。作为复习，内联注释是放在语句同一行的注释，它们通常不是必要的，并且会引起分心。例如，你不应该这样做：\n\n```python\n\
+  x = x + 1 # 增加 x\n```\n\n然而，有时这可能是有用的：\n\n```python\nx = x + 1 # 补偿\n```\n\n更好的方法是将将会元素包含在括号内。如果行尾有一个未闭合的括号，下一行就会被连接，直到出现闭合括号。你也可以使用方括号或大括号来实现相同的功能，只要你保持一致性——你用什么开始，就必须用什么结束。\n\
+  \n### 错误示例\n```python\n### 过滤所有大于 4 的元素\na = [5, 4, 3]\nb = []\nfor i in a:\n  \
+  \  if i > 4:\n        b.append(i)\n```\n\n### 正确示例\n```python\na = [5, 4, 3]\nb\
+  \ = [i for i in a if i > 4]\n\n### 或者：\nb = filter(lambda x: x > 4, a)\n```\n\n\
+  ### 另一个错误示例\n```python\n### 给列表的所有成员加 3。\na = [5, 4, 3]\nfor i in range(len(a)):\n\
+  \    a[i] += 3\n```\n\n### 另一个正确示例\n```python\na = [5, 4, 3]\na = [i + 3 for i in\
+  \ a]\n\n### 或者：\na = map(lambda i: i + 3, a)\n```\n\n你还可以使用 `enumerate()` 函数来记录你在列表中的位置：\n\
+  \n```python\na = [5, 4, 3]\nfor i, item in enumerate(a):\n    print i, item\n###\
+  \ 输出：\n### 0 5\n### 1 4\n### 2 3\n```\n这个函数比手动处理计数器读性更好，而且对于迭代器来说优化得多。\n\n### 从文件读取\n\
+  \n当你想要从文件中读取内容时，最好使用 `with open` 语法，因为这会自动为你关闭文件。\n\n### 错误示例\n```python\nf = open('file.txt')\n\
+  a = f.read()\nprint a\nf.close()\n```\n\n### 正确示例\n```python\nwith open('file.txt')\
+  \ as f:\n    for line in f:\n        print line\n```\n使用 `with` 语句要高效得多，因为它确保即使在\
+  \ `with` 块包含异常时文件总是关闭。\n\n### 换行\n\n逻辑代码行有接受的限制，当你有一行代码过长时，应该将其拆分成几行。你的 Python 解释器会获取连续的行，只要每行的最后一个字符是反斜杠\
+  \ `\\`，它就会连接这些行。然而，尽管这有时有用，但你真的应该避免，因为它是脆弱的。如果你在反斜杠后添加了空格，可能会破坏你的代码，结果可能不是你预期的。\n\
+  \n此更好的方法是将元素包含在括号内。如果行尾有一个未闭合的括号，下一行就会被连接，依此类推，直到出现闭合括号。你也可以使用方括号或大括号来实现相同的功能，只要你保持一致。\n\
+  \n### 错误示例\n```python\nif attr == True:\n    print 'True!'\n\nif attr == None:\n\
+  \    print 'None!'\n```\n\n### 正确示例\n```python\nif attr:\n    print 'True!'\n\n\
+  if not attr:\n    print 'None!'\n```\n\n### 如何访问字典元素\n\n与其使用 `dict.has_key()` 方法，不如使用\
+  \ `x in d` 语法或使用 `dict.get()` 来传递参数。\n\n### 错误示例\n```python\nd = {'hello': 'world'}\n\
+  \nif d.has_key('hello'):\n    print d['hello']\nelse:\n    print 'default_value'\n\
+  ```\n\n### 正确示例\n```python\nd = {'hello': 'world'}\nprint d.get('hello', 'default_value')\
+  \ # 输出 'world'\nprint d.get('thingy', 'default_value') # 输出 'default_value'\n\n\
+  ### 或者：\nif 'hello' in d:\n    print d['hello']\n```\n\n### 快捷方式操作列表\n\n在操作列表时，不需要长篇大论；当你想要对列表执行操作时，使用列表推导式或\
+  \ `filter()` 或 `map()` 函数来使用简洁语法。\n\n### 错误示例\n```python\n### 过滤所有大于 4 的元素\na =\
+  \ [5, 4, 3]\nb = []\nfor i in a:\n    if i > 4:\n        b.append(i)\n```\n\n###\
+  \ 正确示例\n```python\na = [5, 4, 3]\nb = [i for i in a if i > 4]\n\n### 或者：\nb = filter(lambda\
+  \ x: x > 4, a)\n```\n\n### 另一个错误示例\n```python\n### 给列表的所有成员加 3。\na = [5, 4, 3]\n\
+  for i in range(len(a)):\n    a[i] += 3\n```\n\n### 另一个正确示例\n```python\na = [5, 4,\
+  \ 3]\na = [i + 3 for i in a]\n\n### 或者：\na = map(lambda i: i + 3, a)\n```\n\n\n\n\
+  \n尽管如此，如果你发现自己必须不断拆分长行，这说明你正试图做太多的事情，这将会影响代码的可读性。\n\n# 第 7 章：方法和函数参数\n\n对于任何实例方法中的第一个参数，始终使用\
+  \ `self`；对于任何类方法中的第一个参数，始终使用 `cls`。\n\n如果函数参数的名称与某个保留关键字相同，那么在名称末尾添加一个下划线会比使用错误的拼写或缩写要好。因此，你应该使用\
+  \ `class_` 而不是 `clss`。也许比引起冲突更好的方法是——使用同义词。\n\n## 函数参数\n\n你可以通过 4 种向函数传递参数的方法：\n\
+  \n1. **位置参数 (Positional Argument)** – 这些是强制性的，且不包含任何默认值。位置参数是最简单的参数形式，用于作为函数含义完整组成部分的参数；它们具有自然的顺序，因此，在下面的示例中，`user`\
+  \ 函数应该很容易记住该函数需要 2 个参数，并且应该记住它们的顺序：\n\n   `Send(message, recipient)` 和 `point(x,\
+  \ y)`\n\n   在这两种情况下，你可以在调用函数时使用参数名称，通过这样做，你可以更改参数的顺序。例如，你可以调用 `send(recipient='world',\
+  \ message='Hello')` 和 `point(y=2, x=1)`。然而，正如你所看到的，这并不非常可读，而且里面的单词比我们需要的得多。将该版本与更直观的版本\
+  \ `send('Hello', 'World')` 和 `point(1,2)` 进行比较，你可以立即看出可读性的差异。\n\n2. **关键字参数 (Keyword\
+  \ Argument)** – 这些包含默认值，且不是强制性的。关键字参数有时用于发送到函数的可选参数。当一个函数包含至少 2 或 3 个（最好是更多）位置参数时，很难记忆。使用带有默认值的关键字参数会更有帮助。例如，你可以定义一个完整的\
+  \ `send` 函数为 `send(message, to, cc=None, bcc=None)`。`cc` 和 `bcc` 的使用是可选的，如果给它们赋予其他值，它们的值均为\
+  \ `None`。\n\n   在 Python 中，有几种方法可以使用关键字参数调用函数。例如，你可以遵循定义中的参数顺序，而不显式地命名这些参数；例如，`send('Hello',\
+  \ 'World', 'Galactus', 'God')`。在这种情况下，你向 Galactus 发送了消息的副本，向 God 发送了密抄。你也可以以不同的顺序命名参数，例如，`send('Helloagain',\
+  \ 'World', bcc='God', cc='Galactus')`。除非你有非常充分的理由不尽可能地遵循正确的语法，否则最好避免这两个示例；它们既冗长又不可可读。最好的方法，即最接近函数定义的方法，是\
+  \ `send('Hello', 'World', cc='Galactus', bcc='God')`。\n\n3. **任意参数列表 (Arbitrary\
+  \ Argument List)** - 这是向函数传递参数的另一种方法。有时，函数的意图通过具有数量可扩展的位置参数数量的签名来表达得更好。在这种情况下，你最好使用\
+  \ `*args` 结构来定义它。在参数体中，`args` 是所有剩余位置参数的元组。例如，你可以使用 `send(message, *args)`并将所有接收者列为单独参数：`send('Hello',\
+  \ 'Galactus', 'Dad', 'God')` —— 在函数体内，`*args` 等于 `('Galactus', 'Dad', 'God')`。\n\
+  \n   然而，你应该非常谨慎地使用这种结构，因为它确实存在一些缺点。如果向函数发送了一个包含具有相同或相似性质参数的列表，更好的定义是使用带有单个参数的函数；该单个参数将是一个序列或列表。例如，如果\
+  \ `send` 有多个接收者，你最好使用显式定义：`send('Hello', 'God', 'Dad', 'Galactus')`，然后通过 `send('Hello',\
+  \ ['God', 'Dad', 'Galactus'])` 调用它。通过这种方式，函数用户可以提前更改接收者列表，这为传递任何无法解包的序列打开了可能性，包括迭代器。\n\
+  \n4. **任意关键字参数字典 (Arbitrary Keyword Argument Dictionary)** - 这是向函数传递参数的最后一种方法。如果函数需要未知的命名参数数组，你可以使用\
+  \ `**kwargs` 结构。在函数体内，`**kwargs` 是一个字典，包含了所有已传递且未被函数签名中另一个关键字参数捕获的命名参数。\n\n   然而，你应该像对待任意参数列表时那样保持同样的谨慎，因为原因基本相同。这些是强大的技术，只有在你能证明有必要使用它们时才应该使用。如果存在更清晰更简单的结构可以完成工作，则绝对不应该使用它们。\n\
+  \n这真的取决于你，程序员，来决定哪些函数参数是可选关键字，哪些是位置参数，并确定是否应该使用更高级的技术来传递参数。\n\n保持简单并遵循这些编写 Python\
+  \ 函数的规则：\n\n* 具有可读性 – 名称和参数不需要任何解释\n* 易于更改 – 你可以在不影响其他部分的情况下添加关键字参数\n\n# 第 8 章：命名规范\n\
+  \n坦率地说，Python 的命名规范有些混乱。但是，有一些建议的命名标准，所有新的包和模块（包括任何第三方框架）必须遵循这些标准。要学习的第一且最重要的原则是，当你使用作为公共\
+  \ API 的名称时，必须使用反映其用途的规范，而不是其实现方式。\n\n## 描述性 (Descriptive)\n\n有许多不同的命名风格，因此独立识别使用的是哪种风格是有帮助的。这些是最常见的样式：\n\
+  \n* `B` – 单字母大写\n* `b` – 单字母小写\n* `lowercase_with_underscores`\n* `lowercase`\n\
+  * `UPPERCASE_WITH_UNDCORES`\n* `UPPERCASE`\n* `CapitalizedWords` – 通常被称为 CamelCase，因为字母看起来有起伏\n\
+  * `mixedCase` – 与 CamelCase 不同，首字母是小写的\n* `Capital_Words_With_Underscore` – 不是漂亮的样式！\n\
+  * 在 CamelCase 中使用缩写时，你应该确保所有的缩写字母都大写。例如，与其使用 `HttpServerError`，不如使用 `HTTPSError`。\n\
+  \n你还可以使用另一种风格，即通过一个唯一的短前缀将一组相关的名称放在一起。这并不常用，但我提到它是为了让你知道它的存在。一个例子是 `os.stat()` 函数\
+  \ —— 它将返回一个包含 `st_size`、`st_mode`、`st_mtime` 等名称的元组。\n\n这些是使用后划线或前划线的格式，通常可以与任何大小写规范结合：\n\
+  \n* `_one_leading_underscore` – 这通常是“内部使用”的指示，但力道并不强。\n* `One_trailing_underscore_`\
+  \ – 通常用于防止与 Python 关键字冲突，例如：`tkinter.Toplevel(master, class_='ClassName')`\n* `__two_leading_underscores`\
+  \ – 当你命名类属性时，这会引起修饰（mangling），例如：（在类 FootBar 内部，`__boo`）将变为 `_FootBar__boo`。\n\n\
+  \n\n\n*   `two_leading_and_two_trailing_underscores` 是存在于用户控制命名空间中的属性或“魔法”对象。例如：`__init__`、`__file__`\
+  \ 或 `__import__`。\n\n## 规范性\n\n这些是你应该避免的名称：\n\n在编写单字符变量名时，永远不要使用‘O’（大写字母）、‘l’（小写\
+  \ L）或‘I’（大写 i）。取决于你使用的字体，这些字符可能与数字‘0’和‘1’混淆——如果你发现自己正在考虑使用 `l`，请改用大写的 `L`。\n\n##\
+  \ 模块和包的命名\n\n所有模块名称都应该是短且小写的。你可以在模块名中使用下划线，但仅在它能提高可读性时才这样做。Python 包也是如此——使用短且小写的名称，但不要使用下划线。\n\
+  \n当你有一个用 C 或 C++ 编写的扩展模块，并且配有一个具有更面向对象接口的 Python 模块时，C 或 C++ 模块将以下划线开头，例如 `_socket`。\n\
+  \n## 类名\n\n类名通常使用 `CapWords` 或 `CamelCase` 约定。\n\n内置名称有自己独立的约定，通常是单个单词或两个单词合并为一个词，例如‘Hello’或\
+  \ `HelloWorld`。`CamelCase` 约定倾向于用于内置常量和异常名称。\n\n## 类型变量\n\n类型变量的名称通常使用 `CamelCase`，并且偏于使用短名称，例如\
+  \ `Num`、`AnyStr`。你应该为变量添加后缀（`_co` 或 `_contra`）来声明逆变或协变行为。例如：\n\n```python\nImport\
+  \ TypeVar\n```\n\n变为\n\n```python\nVT_co = TypeVar('VT_co', covariant=True)\nKT_contra\
+  \ = TypeVar('KT_contra', contravariant=True)\n```\n\n## 异常命名\n\n异常是类，因此，你应该使用类的命名约定进行命名。尽管如此，如果异常是一个错误，请确保在名称上加上‘Error’\
+  \ 后缀。\n\n## 全局变量\n\n只要变量在单个模块内部使用，其命名约定与函数命名约定相同。\n\n## 函数\n\n所有函数名均为小写，并在需要的地方用下划线分隔单词以提高可读性。`mixedCase`\
+  \ 约定仅在已经是这种风格的上下文中使用，以保持向后兼容。\n\n## 实例变量和方法名\n\n再次，函数的命名约定也适用于这里——使用带有间歇下划线的小写。如果你使用实例变量或非公共方法，应该使用单个前下划线。为了防止名称与子类冲突，应使用两个前下划线来触发\
+  \ Python 的名称修饰（name mangling）规则。\n\n当这些规则被触发时，名称将与类名一起修饰。例如，`class Foo` 包含一个名为 `__a`\
+  \ 的属性。无法通过 `Foo.__a` 访问。按照规则，只有当名称可能与设计为子类的类属性冲突时，才应该使用双前下划线。\n\n## 常量\n\n这些通常定义在模块级，全部大大写并用下划线分隔，例如\
+  \ `MAX_OVERFLOW`。\n\n## 继承设计\n\n必须遵守的规则之一是确定实例变量或类方法是非公共还是公有的。如果你无法决定，请选择非公共，因为你以后可以轻松将其改为公共，而将公共改为非公共则没那么容易。\n\
+  \n公共属性是指与类无关的客户端会使用的属性，而非公共属性是指不供第三方使用的属性。对于公共属性，你保证了从开始到结束的向后兼容；而对于非公共属性，你不保证，可以删除或更改该属性。注意，没有使用“private”（私有）一词，这是因为\
+  \ Python 语言中没有真正的私有属性。\n\n另一个属性类别是保护属性。在 Python 中，它们属于子类 API。有些类专门设计为供继承的类，无论是为了扩展还是修改某些行为方面。当你设计这样的类时，始终要确保对属性做出显式决定——它们是公有的、还是仅供基类使用的，还是属于子类\
+  \ API？\n\n结合以上所有内容，这些是 Pythonic 的指南：\n\n*   公共属性不能不能有前下划线。\n*   如果公共属性与关键字（保留字）冲突，请在属性名称末尾添加一个下划线。这是比使用拼写错误或缩写更优的方法。\n\
+  *   对于公共数据属性，最好的方法是只暴露属性名称，而不使用任何复杂的修改器（mutator）或访问器（accessor）方法。如果简单的属性需要扩展其功能行为，Python\
+  \ 使得这很容易。\n*   如果你正在使用一个将被子类的类，并且你也使用了不会被子类的属性，请考虑添加 2 个前下划线，但不要添加任何后下划线。这将触发名称修饰，并有助于降低子类具有相同名称属性时发生冲突的风险。\n\
+  \n# 第 9 章：在语句和表达式中使用空格\n\n首先，关于空格的一些反感点：\n\n在以下情况下不要使用不必要的空格：\n\n*   紧邻大括号、中括号或圆括号内部\n\
+  \n良好的示例：\n```python\nham(spam[1], {eggs: 2})\n```\n\n一个错误的示例：\n```python\nham( spam[\
+  \ 1 ], { eggs: 2 } )\n```\n\n*   紧邻冒号、分号或逗号之前：\n\n一个良好的示例：\n```python\nif x == 4:\
+  \ print x, y; x, y = y, x\n```\n\n一个错误的示例：\n```python\nif x == 4 : print x , y ;\
+  \ x , y = y , x\n```\n\n然而，在涉及切片（slice）时，冒号类似于二进制运算符，两边应包含相同数量的空格。在使用扩展切片时，两个冒号必须包含完全相同的间距级别。唯一的例外是省略了切片参数以及对应的空格。\n\
+  \n一个良好的示例：\n```python\nspam[1:8], spam[1:8:2], spam[:8:2], spam[1::2], spam[1:8:]\n\
+  spam[lower:upper], spam[lower:upper:], spam[lower::step]\nspam[lower+offset : upper+offset]\n\
+  spam[: upper_fn(x) : step_fn(x)], ham[:: step_fn(x)]\nspam[lower + offset : upper\
+  \ + offset]\n```\n\n一个错误的示例：\n```python\nspam[lower + offset:upper + offset]\nspam[1:\
+  \ 8], ham[1 :8], ham[1:8 :2]\nspam[lower : : upper]\nspam[ : upper]\n```\n\n*  \
+  \ 在位于函数调用参数列表的起始圆括号之前：\n\n一个良好的示例：\n```python\nham(1)\n```\n\n一个错误的示例：\n```python\n\
+  ham (1)\n```\n\n*   紧邻开始切片或索引的左括号之前：\n\n一个良好的示例：\n```python\ndct['key'] = lst[index]\n\
+  ```\n\n一个错误的示例：\n```python\ndct ['key'] = lst [index]\n```\n\n*   当运算符（如赋值运算符）周围有多个空格时，且这些空格是为了使其与另一个运算符对齐。\n\
+  \n一个良好的示例：\n```python\nx = 1\ny = 2\nlong_variable = 3\n```\n\n一个错误的示例：\n```python\n\
+  x               = 1\ny               = 2\nlong_variable = 3\n```\n\n## 其他建议\n\n\
+  避免在整个代码代码中使用行尾空格，因为它是不可见的且可能会导致混淆。例如，如果你输入了一个反斜杠，后面跟着一个空格然后换行——这不会被视为行延续。事实上，某些文本编辑器不会保留它，有些项目包含的\
+  \ pre-commit hooks 也会直接拒绝它——其中之一就是 CPython。\n\n以下二进制运算符应该被单个空格包围——每侧一个：\n\n*   赋值\
+  \ (`=`)\n*   复合赋值 (`+=`, `-=` 等）\n\n以下比较运算符的处理方式相同：\n\n*   `==` \n*   `<`\n*   `>`\n\
+  *   `!=` \n*   `<>`\n*   `<=`\n*   `>=`\n*   `in`\n*   `not in`\n*   `is`\n*   `is\
+  \ not`\n\n以及布尔值：\n\n*   `and`\n*   `or`\n*   `not`\n\n\n\n\n\n如果你使用了优先级不同的运算符，请考虑在优先级最低的运算符周围加上空格——请根据你的最佳判断来决定。然而，你使用的空格不应多于一个，并确保运算符两侧的空格数量相同——不要在一侧放\
+  \ 1 个空格而在另一侧放 2 个：\n\n### 良好的示例：\n\n```\ni = i + 1\nsubmitted += 1\nx = x*2 - 1\n\
+  hypot2 = x*x + y*y\nc = (a+b) * (a-b)\n```\n\n### 不良的示例：\n\n```\ni=i+1\nsubmitted\
+  \ +=1\nx = x * 2 - 1\nhypot2 = x * x + y * y\nc = (a + b) * (a - b)\n```\n\n当你使用\
+  \ `=` 符号来指示参数或关键字参数的默认值时，不要在符号符号周围使用空格：\n\n### 良好的示例：\n\n```python\ndef complex(real,\
+  \ imag=0.0):\n    return magic(r=real, i=imag)\n```\n\n### 不良的示例：\n\n```python\n\
+  def complex(real, imag = 0.0):\n    return magic(r = real, i = imag)\n```\n\n对于函数注解中的冒号，使用标准规则，并确保在使用\
+  \ `->` 时其周围有空格：\n\n### 良好的示例：\n\n```python\ndef munge(input: AnyStr): ...\ndef munge()\
+  \ -> AnyStr: ...\n```\n\n### 不良的示例：\n\n```python\ndef munge(input:AnyStr): ...\n\
+  def munge()->PosInt: ...\n```\n\n当你结合使用默认值和参数注解时，`=` 符号周围应该有空格——除非该参数同时具有默认值和注解，否则不要这样做：\n\
+  \n### 良好的示例：\n\n```python\ndef munge(sep: AnyStr = None): ...\ndef munge(input:\
+  \ AnyStr, sep: AnyStr = None, limit=1000): ...\n```\n\n### 不良的示例：\n\n```python\n\
+  def munge(input: AnyStr=None): ...\ndef munge(input: AnyStr, limit = 1000): ...\n\
+  ```\n\n使用复合语句（在同一行上写多个语句）不是良好的做法：\n\n### 良好的示例：\n\n```python\nif foo == 'that':\n\
+  \    do_that_thing()\ndo_one()\ndo_two()\ndo_three()\n```\n\n### 尽量不要这样做：\n\n```python\n\
+  if foo == 'that': do_that_thing()\ndo_one(); do_two(); do_three()\n```\n\n偶尔情况下，如果语句体很小，在一行内使用\
+  \ `if`、`for` 和 `while` 语句是可以接受的，但对于包含多个子句的语句，永远不要这样做。此外，永远不要折叠非常长的行：\n\n### 尽量不要这样做：\n\
+  \n```python\nif foo == 'that': do_that_thing()\nfor x in lst: total += x\nwhile\
+  \ t < 10: t = delay()\n```\n\n### 绝对不要：\n\n```python\nif foo == 'that': do_that_thing()\n\
+  else: do_non_that_thing()\ntry: something()\nfinally: cleanup()\ndo_one(); do_two();\
+  \ do_three(long, argument,\n                             list, like, this)\nif foo\
+  \ == 'that': one(); two(); three()\n```\n\n# 结论\n\n再次感谢阅读我的书，我真心希望它能够帮助你理解如何编写更有效高效的\
+  \ Python 代码。\n\n从这里开始，下一步简单来说就是实践。你做得越多，进步得越快，最终你将像专业人士一样编写 Python 代码！通过研究、加入在线\
+  \ Python 论坛和加入 Python 社区来学习更多并提升你的技能。\n\n最后，如果你觉得这本书有帮助，可以请你帮个忙吗？请考虑在 `Amamzon.com`\
+  \ 上给我留评论；这不仅对我有帮助，对潜在读者也有益。\n\n祝你成为更好的 Python 程序员的道路一路顺利\n\n# 关于作者\n\nCharlie Masterson\
+  \ 是一位计算机程序员和导师，开发过多个应用程序和计算机程序。\n\n作为一名计算机科学学生，他很早就对编程感兴趣，但对学习极其复杂的课题感到沮丧。\n\nCharlie\
+  \ 想要一种能够轻松学习并提高编程技能的教学方法。他很快发现了一系列让他学得更快、更好的课程。\n\n通过同样的方法，Charlie 成功学习了不同的编程语言，现在通过写书来教授这些知识。\n\
+  \n通过他编写关于计算机编程的书，他希望提供巨大的价值，并帮助对学习计算机主题感兴趣的读者。\n\n"

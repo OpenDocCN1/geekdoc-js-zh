@@ -1,0 +1,406 @@
+- "# Python 和 JavaScript 编码基础\n\n\n\n![](img/cover00185.jpeg)\n\n\n## Python 简介\n\n\
+  ### Python 的显著特性\n它是一种通用编程语言，既可用于科学编程也可用于非科学编程。\n\n对于初来说，它是非常优秀的语言，因为它是解释型的，可以产生立即结果。\n\
+  \n它比同时期的其他语言更好地融合了异常处理和动态绑定原则。\n\n用 `Python` 编写的程序易读且易懂。\n\n它是一种独立平台的编程语言。\n\n对于自定义应用程序，它适用于扩展语言。\n\
+  \n学习和使用它非常简单。\n\n### 主要应用\nGoogle 搜索引擎、Twitter 等。\n\n使用 `Python` 了 BitTorrent 点对点文件共享程序。\n\
+  \nIntel、Cisco、HP、IBM 等公司使用 `Python` 进行硬件测试。\n\nMaya 提供了 `Python` 脚本 API。\n\n工业机器人的制造使用了\
+  \ `Python`。\n\nNASA 等机构使用 `Python` 进行科学编程活动。\n\n### 安装 Python 解释器\n为了编写和运行 `Python`\
+  \ 程序，我们需要在计算机上安装一个 `Python` 解释器。\n\n标准且最常用的 `Python` 开发环境是 `IDLE`（集成 GUI）。\n\n`IDLE`\
+  \ 指的是集成开发环境（Integrated Development）。\n\n这允许通过单一 GUI 修改、运行、搜索和调试 `Python` 程序。这种环境使得编写程序变得简单。\n\
+  \n注意：在这些教程中，我们将使用 3.6 版本的 `Python` `IDLE` 来开发和运行 `Python` 代码。你可以在 www.python.org\
+  \ 免费获取。\n\n启动 `IDLE`\n\n![](img/image00157.jpeg)\n\n## Python 的特性\n* 面向对象\n* 强异常处理\n\
+  * 自动内存管理\n* 动态性\n* 强数据类型\n* 语法简单\n* 基于缩进\n* 本质具有容错性\n\n在 Python 中打印 \"Hello World\"\
+  \n\n![](img/image00158.jpeg)\n\n## 安装 pip\n`Pip` 是一个能够安装和管理 Python 包的平台。\n\n###\
+  \ Python：安装 pip\n要安装新版本的 `pip`，请在 MacOS 中运行命令\n\n### $ sudo easy_install pip\n```bash\n\
+  sudo easy_install pip\n```\n\n### $ sudo pip install --upgrade pip\n```bash\nsudo\
+  \ pip install --upgrade pip\n```\n\n在 Ubuntu 中安装 pip\n\n### $ sudo apt-get update\n\
+  ```bash\nsudo apt-get update\n```\n\n### $ sudo apt-get install python-pip\n```bash\n\
+  sudo apt-get install python-pip\n```\n\n### $ sudo pip install --upgrade pip\n```bash\n\
+  sudo pip install --upgrade pip\n```\n\nCentos 中的 pip\n\n### $ sudo yum update\n\
+  ```bash\nsudo yum update\n```\n\n### $ sudo yum install epel-release\n```bash\n\
+  sudo yum install epel-release\n```\n\n### $ sudo yum install python-pip\n```bash\n\
+  sudo yum install python-pip\n```\n\n### # version>= Centos7\n### $ sudo pip install\
+  \ --upgrade pip\n```bash\nsudo pip install --upgrade pip\n```\n\n## 执行第一个程序\n我们将在设备上启动\
+  \ `Python` 使其在交互模式下运行工作。\n\n在提示符（`> > >`）之后，我们输入 `Python` 表达式/语句。\n\n### 第一个程序\n\
+  我们在交互模式下输入代码。\n\n```python\n> > print(\"Hello World!\")\nHello World\n```\n\n让我们从输入一些表达式开始：\n\
+  \n```python\n> > 5 + 7\n12\n> > 4 * 10\n40\n> > 9 % 2\n1\n> > 6 // 6\n1\n```\n\n\
+  ### 其他操作\n```python\n> > x=1\n> > y=5\n> > z=x+y\n> > print(z)\n6\n```\n\n### 模式\n\
+  我们在交互模式下输入代码。它对于测试小段代码很有用。我们应该将代码保存在文件中，以便多次重复使用。\n\n我们将使用 `IDLE` 来构建和运行代码。\n\n\
+  ```python\n1. 新文件\n2. 写代码\n3..\n4. 执行 执行\n\n```python\n> > x=1\n> > y=5\n> > z=x+y\n\
+  > > print(z)\n6\n```\n\n## 关键字\n关键字是 Python 语言的保留字字（类似于 C++、Java 等），其定义无法被修改。\n\n\
+  ### Python 列表\nPython 编程语言中有内置 Python 关键字，用于为不同的目的执行不同的任务。\n\n关键字对大小写敏感。\n\n| `False`\
+  \ | `None` | `True` | `and` | `as` |\n| :--- | :--- | :--- | :--- | :--- |\n| `assert`\
+  \ | `async` | `await` | `break` | `class` |\n| `continue` | `def` | `del` | `elif`\
+  \ | `else` |\n| `except` | `finally` | `for` | `from` | `global` |\n| `if` | `import`\
+  \ | `in` | `is` | `lambda` |\n| `nonlocal` | `not` | `or` | `pass` | `raise` |\n\
+  | `return` | `try` | `while` | `with` | `yield`\n\n## Python 内置关键字\nPython 编程语言中有内置\
+  \ Python 关键字，用于为不同的目的执行不同的任务。\n\n### 所有 Python 关键字 – 列表\n![](img/image00165.jpeg)\n\
+  ![](img/image00166.jpeg)\n![](img/image00167.jpeg)\n\n## Python 中的注释\nPython 中的注释用于提高代码的可读性。\n\
+  \n对于读者来说，为了更好地理解他们解决给定问题所使用的代码和逻辑，这是程序员在源代码中提供的非常有价值的信息。\n\n在编译期间，注释不会被执行，也不会显示在输出中。\n\
+  \n### Python 注释类型\n1.  单行注释 (#)\n2.  多行字符串作为注释 ('')\n\n### 1) 单行注释\n单行注释用于 Python\
+  \ 中的单行语句，例如对各种变量、函数、表达式等的解释。\n\n\n\n\n\n哈希符号（`#`）用于渲染单行注释。当注释换到下一行时，它们必须在下一行的开头与前行的哈希标记（`#`）对齐。\n\
+  \n让我们来看一个实例，并尝试理解如何在软件中应用单行注释。\n\n#### 示例\n\n##### 单行注释示例\n\n```python\n## 一个打印给定字符串和加法的程序。\n\
+  print('Welcome @ Learnpython')\na=2\nb=5\nprint(a+b)\n## 使用加号(+) 对两个两个数字进行相加。\n\
+  ```\n\n### 2) 多行字符串注释\n\n正如我们在上面的示例所示，对于多行注释，我们必须在每一行放置一个哈希符号（`#`）。\n\n在 Python\
+  \ 中，多行字符串注释使用分隔符提供。当内容无法用单行表示时，这很有帮助。\n\n对于多行字符串注释，我们必须在两端使用分隔符包裹字符串。\n\n#### 示例\n\
+  \n```python\n'''\n    在这里我们将使用 Python 的多行注释\n    检查给定的数字 n 是偶数还是奇数。\n'''\nn=6768\n\
+  if n%2==0:\n    print(\"Even number.\")\nelse:\n    print(\"Odd number.\")\n```\n\
+  \n## Python 中的块注释\n\n### 注释\n\n注释是计算机程序中的一段文本，旨在解释或标注。\n\n它对源代码作者是可读的，并且会被编译器/解释器忽略。\n\
+  \n### Python 注释的类型\n\n`块注释（Block Comments）`和`内联注释（Inline Comments）`，\n\n### 1) 块注释\n\
+  \n对于后续的代码段适用于块注释。它可以指代代码的一部分或整个代码。\n\n它们与该代码具有相同的缩进程度。\n\n每行注释都以 `#` 开头。\n\n####\
+  \ 示例\n\n```python\n## Python 程序，打印\n## Hello World\nprint(\"Hello World\")\n```\n\
+  输出：\n`Hello World`\n\n也可以使用 `''' '''` 制作块注释。写在这些引号中的内容被称为注释。\n\n#### 示例\n\n```python\n\
+  '''\nPython 程序，打印\nHello World\n'''\nprint(\"Hello World\")\n```\n\n### 示例 2\n\n\
+  ```python\ndef hello():\n    '''\n    在这里，这是文档字符串（docstring）\n    因为它是写在\n    函数定义之后的。\n\
+  \    下面的 print 语句将打印\n    Hello World\n    '''\n    print(\"Hello World\")\nif __name__\
+  \ == \"__main__\":\n  # 调用 hello 函数\n  hello()\n```\n\n### 2) 内联注释\n\n与声明在同一行上的注释是内联注释。\n\
+  \n内联备注与参数之间应至少有两个空格。\n\n它们应该以 `#` 和一个空格开始。\n\n#### 示例\n\n```python\nprint(\"Hello\
+  \ World\")  # 这是一个内联注释\n```\n输出：\n`Hello World`\n\n## 创建多行注释\n\n当我们需要对几行/语句进行注释时，有两种方法可以实现这一点，要么对每行进行注释，要么构建多行注释（或块注释）。\n\
+  \n第一方法是对每个部分进行注释，\n\n这在 Python 中可以被视为单行注释——在每一行被注释的行开头，我们使用哈希字符（`#`）。\n\n```python\n\
+  ### 这是第 1 行\n### 这是第 2 行\n### 这是第 3 行\n```\n\n而第二种方法是对段落进行注释，\n\n这在 Python 中可以被视为多行注释——我们在被注释段落的开头使用三单引号（`'''`），并在结尾使用三单引号（`'''`）。\n\
+  \n```python\n'''\n这是第 1 行\n这是第 2 行\n这是第 3 行\n'''\n```\n\n#### 示例\n\n```python\n\
+  '''\n函数名: print_text\n参数: 无\n返回类型: 无\n描述: 此函数将在屏幕上打印\n一些文本\n'''\ndef print_text():\n\
+  \  print(\"Hello, world! How are you?\")\nif __name__ == \"__main__\":\n  # 在这里，我们将调用\
+  \ print_text 函数\n  # 它将在屏幕上打印一些文本\n  print_text()\n```\n\n## Python 数字类型\n\n数据类型是编程中的一个重要概念。\n\
+  \n根据我们希望变量执行的角色，可以将不同类型的数据存储在变量中。\n\n在 Python 中，内置类型有：\n\n* `文本类型（Text Type）`\n\
+  * `数值类型（Numeric Type）`\n* `映射类型（Mapping Type）`\n* `序列类型（Sequence Type）`\n* `集合类型（Set\
+  \ Type）`\n* `布尔类型（Boolean Type）`\n* `二进制类型（Binary Type）`\n\nPython 中的 3 种数值类型：\n\
+  \n1. `int`\n2. `float`\n3. `comple`\n\n### 1) int\n\n整数数值形式不带小数点，用于存储带符号的整数，例如 -5,\
+  \ 2, 78 等。\n\n#### 示例\n\n```python\n### 给变量赋值整数值\nx = 8\ny = -9\n### 操作 x 的值\nx\
+  \ = x + y\n### 打印更新后的 x 值\nprint(\"x= \", x)\n### 打印 x 的类型\nprint(\"Data type of\
+  \ x: \", type(x))\n```\n输出：\n`x= -1`\n`Data type of x: <class 'int'>`\n\n### 2)\
+  \ float\n\nfloat 的数值形式用于存储浮点值，例如 6.66, 58.9, 3.14 等。\n\n浮点数也可以用科学计数法表示，用 `E` 或 `e`\
+  \ 表示 10 的幂次方（`3.6e3 = 3.6x 103 = 3600`）。\n\n#### 示例\n\n```python\n### 给变量赋值浮点值\n\
+  x = 8.9\ny = -9.1\n### 操作 x 的值\nx = x - y\n### 打印更新后的 x 值\nprint(\"x= \", x)\n###\
+  \ 打印 x 的类型\nprint(\"Data type of x: \", type(x))\n```\n输出：\n`x= 18.0`\n`Data type\
+  \ of x: <class 'float'>`\n\n### 3) complex\n\n复数的数值形式用于存储浮点值，如 6.66, 58.9, 3.14\
+  \ 等。\n\n浮点数也可以用科学计数法表示，用 `E` 或 `e` 表示 10 的幂次方（`3.6e3 = 3.6x 103 = 3600`）。\n\n复数类型用于存储浮点数，如\
+  \ 3.14j。\n\n格式：实部 + 虚部\n\n注意：在 Python 中，必须使用 `j` 来表示虚部。\n\n#### 示例\n\n```python\n\
+  ### 给变量赋值复数值\nx = 8.5j\ny = 9j\n### 操作 x 的值\nx = x + y\n### 打印更新后的 x 值\nprint(\"\
+  x= \", x)\n### 打印 x 的类型\nprint(\"Data type of x: \", type(x))\n```\n输出：\n`x= (8.5+17.5j)`\n\
+  `Data type of x: <class 'complex'>`\n\n## 变量数据类型\n\n### 1\\. 数字\n\n数字类型存储数值值。这种数据类型是永久的。\n\
+  \n它们有三种不同的类型：\n\n* `整数与长整数（Integer & Long）`\n* `浮点数（Float）`\n* `复数（Complex）`\n\n\
+  i) 整数：\n\n整数是不带小数点的整数字，如 100000, -99。当想要长整数时附加 `L`。Python 将这些值视为长整数。\n\n```python\n\
+  >>> a = 10\n>>> b = 5192L # 为变量提供值的示例\n>>> c=429814\n>>> type(c) # 使用 ( ) 检查值的类型\n\
+  ```\n\nii) 浮点数：\n\n浮点数是带有小数点的数字。\n\n浮点数由符号（+,-）、数字序列和一个点组成，如 0.0, -21.9, 0.98333328,\
+  \ 15.2963。\n\n（注：原文中缺少浮点数的示例代码，但保留了结构。）\n\niii) 复数：\n\nPython 复数由两个浮点值组成，每个一个实部和虚部。我们将使用\
+  \ `x.real` 和 `x.image` 来访问向量（对象）`x` 的各个部分。\n\n数字的虚部用 `j` 代替 `I`，因此 `1 + 0j` 表示零。\n\
+  \n```python\n>>> x = 1+0j\n>>> print (x.real,x.imag)\n1.0 0.0\n```\n\n\n\n\n\n它们只是告诉机器字符串常量的起始位置和结束位置。\n\
+  \n```python\n>>> type ('Good Morning')\n<class 'str'>\n\n>>> type ('3.2')\n<class\
+  \ 'str'>\n```\n\n### 3.2) 列表 (Lists)\n列表也是某种重要类型的序列。\n列表中的值被称为 `elements`（元素）/ `objects`（对象）。它们的特点是可变的且索引的/\
+  \ `ordered`（有序）。\n列表包含在方括号中。\n\n### 3.3) 元组 (Tuples)\n元组是值的集合，通过某种整数进行索引。它们是不可变的。\n\
+  \n### 4 集合 (Sets)\n集合是一个无序的值数组，没有重复条目。集合是无时的。\n\n#### 示例\n```python\n>>>s = set\
+  \ ([1,2,3,4])\n>>>print(s)\n{1, 2, 3, 4 }\n```\n\n## 判断 Python 变量类型\n\n### 1) type()\
+  \ 方法\n如果向 `type()` 传递单个参数，它返回给定对象的类型。\n\n#### 示例\n```python\n>>> test_string = \"\
+  yes\"\n>>> test_number = 1\n>>> print(type(test_string))\n<class 'str'>\n>>> print(type(test_number))\n\
+  <class 'int'>\n```\n\n### 2) isinstance() 方法\n`isinstance()` 函数测试对象（第一个参数）是否为 `classinfo`\
+  \ 类的实例或子类（第二个参数）。\n\n#### 示例\n```python\n>>> class Example:\n...     name = 'include_help'\n\
+  ...\n>>> ExampleInstance = Example()\n>>> print(isinstance(ExampleInstance, Example))\n\
+  True\n>>> print(isinstance(ExampleInstance, (list, set)))\nFalse\n>>> print(isinstance(ExampleInstance,\
+  \ (list, set, Example)))\nTrue\n```\n\n### type() 和 isinstance() 比较\n![](img/image00168.jpeg)\n\
+  \n## Python 算术运算符\n算术运算符用于执行不同的算术/数学操作，它们是二运算符，意味着计算需要两个操作数。\n\n![](img/image00169.jpeg)\n\
+  \n语法：\n- `exp1 + exp2`\n- `exp1 - exp2`\n- `exp1 * exp2`\n- `exp1 ** exp2`\n- `exp1\
+  \ / exp2`\n- `exp1 // exp2`\n- `exp1 % exp2`\n\n#### 程序\n```python\n## 演示算术运算符\n\
+  ### 示例的 Python 程序\na = 10\nb = 3\n### 打印值\nprint(\"a:\", a)\nprint(\"b:\", b)\n\
+  ### 操作\nprint(\"a + b :\", a + b)\nprint(\"a - b :\", a - b)\nprint(\"a * b :\"\
+  , a * b)\nprint(\"a ** b:\", a ** b)\nprint(\"a / b :\", a / b)\nprint(\"a // b:\"\
+  , a // b)\nprint(\"a % b :\", a % b)\n```\n输出：\n```text\na: 10\nb: 3\na + b : 13\n\
+  a - b : 7\na * b : 30\na ** b: 1000\na / b : 3.3333333333333335\na // b: 3\na %\
+  \ b : 1\n```\n\n### 示例 2\n```python\n## 演示算术运算符\n### 示例的 Python 程序\na = 10.10\n\
+  b = -2.5\n### 打印值\nprint(\"a:\", a)\nprint(\"b:\", b)\n### 操作\nprint(\"a + b :\"\
+  , a + b)\nprint(\"a - b :\", a - b)\nprint(\"a * b :\", a * b)\nprint(\"a ** b:\"\
+  , a ** b)\nprint(\"a / b :\", a / b)\n### // 运算符将结果\n### 向下取整到最近的整数\nprint(\"a //\
+  \ b:\", a // b)\nprint(\"a % b :\", a % b)\n```\n输出：\n```text\na: 10.1\nb: -2.5\n\
+  a + b : 7.6\na - b : 12.6\na * b : -25.25\na ** b: 0.0030845837443758094\na / b\
+  \ : -4.04\na // b: -5.0\na % b : -2.4000000000000004\n```\n\n### 示例 3\n```python\n\
+  ## 演示算术运算符\n### 示例的 Python 程序\n### 列表、字符串等上的操作\nx = \"Hello\"\ny = \"World\"\n###\
+  \ 字符串的 '+', '*'\nprint(\"x + y:\", x + y)\nprint(\"x + y + x:\", x + y + x)\nprint(\"\
+  x * 2:\", x * 2)\nprint(\"x * 10:\", x * 10)\nprint()\n### 列表的 '+', '*'\nx = [10,\
+  \ 20, 30, 40]\ny = [40, 30, 20, 10]\nprint(\"x + y:\", x + y)\nprint(\"x + y + x:\"\
+  , x + y + x)\nprint(\"x * 2:\", x * 2)\nprint(\"x * 3:\", x * 3)\nprint()\n```\n\
+  输出：\n```text\nx + y: HelloWorld\nx + y + x: HelloWorldHello\nx * 2: HelloHello\n\
+  x * 10: HelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHello\nx + y: [10, 20,\
+  \ 30, 40, 40, 30, 20, 10]\nx + y + x: [10, 20, 30, 40, 40, 30, 20, 10, 10, 20, 30,\
+  \ 40]\nx * 2: [10, 20, 30, 40, 10, 20, 30, 40]\nx * 3: [10, 20, 30, 40, 10, 20,\
+  \ 30, 40, 10, 20, 30, 40]\n```\n\n## Python 标识运算符\n标识运算符用于执行对象比较操作，即这些运算符检查两个操作数是否应用于同一个对象（具有相同的内存位置）。\n\
+  \n标识运算符如下：\n\n![](img/image00170.jpeg)\n\n语法：\n- `operand1 is operand2`\n- `operand1\
+  \ is not operand2`\n\n### 'is' 运算符示例\n```python\n## 演示标识运算符\n### 示例的 Python 程序\n\
+  x = [10, 20, 30]\ny = [10, 20, 30]\nz = x\n### 使用 == 运算符比较值\nprint(\"x == y: \"\
+  , x == y)\nprint(\"y == z: \", y == z)\n### 比较对象\nprint(\"x is y: \", x is y)\n\
+  print(\"y is z: \", y is z)\n```\n输出：\n```text\nx == y:  True\ny == z:  True\nx\
+  \ is y:  False\ny is z:  False\n```\n\n## 成员运算符\n成员运算符用于检查值（如字符串、列表、元组或字典）是否存在于序列中。\n\
+  \n### \"in\" 和 \"not in\"\n![](img/image00171.jpeg)\n\n#### 示例\n```python\n## Python\
+  \ \"in\" 和 \"not in\" 运算符示例\n### 声明一个列表和一个字符串\nstr1 = \"Hello world\"\nlist1 = [10,\
+  \ 20, 30, 40, 50]\n\n### 检查 'w' 是否存在 str1 中\nif 'w' in str1:\n    print(\"Yes! w\
+  \ found in \", str1)\nelse:\n    print(\"No! w not in \", str1)\n\n### 检查 'X'（大写）是否存在于\
+  \ str1 中\nif 'X' in str1:\n    print(\"Yes! X found in \", str1)\nelse:\n    print(\"\
+  No! X not in \", str1)\n\n### 检查 30 是否存在 list1 中\nif 30 in list1:\n    print(\"\
+  Yes! 30 found in \", list1)\nelse:\n    print(\"No! 30 not in \", list1)\n\n###\
+  \ 检查 90 是否存在 list1 中\nif 90 in list1:\n    print(\"Yes! 90 found in \", list1)\n\
+  else:\n    print(\"No! 90 not in \", list1)\n```\n输出：\n```text\nYes! w found in\
+  \  Hello world\nNo! X not in  Hello world\nYes! 30 found in  [10, 20, 30, 40, 50]\n\
+  No! 90 not in  [10, 20, 30, 40, 50]\n```\n\n## Python 中自增运算符的行为\n## Python 中自减运算符的行为\n\
+  Python 以一致且易读的语言著称。与 Java 不同，自增 (+ +) 和自减 (—)运算符不支持 Python，无论是优先级还是返回值。\n\n例如，`x++`\
+  \ 和 `+ + x`，或者 `x—` 和 —x 在 Python 中都是无效的。\n\n```python\nx=1\nx++\n```\n输出：\n```text\n\
+  File \"main.py\", line 2\n    x++\n^\nSyntaxError: invalid syntax\n```\n\n#### 示例\n\
+  ```python\nx=1\nprint(--x)\n# 1\nprint(++x)\n# 1\nprint(x--)\n'''\n```\n输出：\n```text\n\
+  File \"main.py\", line 8\n    print(x--)\n             ^\nSyntaxError: invalid syntax\n\
+  ```\n\n\n\n\n其原因是 Python 整数是不可变的，因此不能被修改。所以，为了增加数值，我们需要执行以下操作。\n\n```python\nx =\
+  \ 1\nx=x+1\nprint(x)\nx=x-1\nprint(x)\nx +=2\nprint(x)\nx -= 1\nprint(x)\n```\n\
+  Output\n2\n1\n3\n2\n\n## 逻辑与位取反运算符\n\n## Python 中的布尔值操作\n\n`not` 用于 Python 中的逻辑非运算符，而\
+  \ `~` 用于位取反运算符。在这里，我们将在 Python 中查看它们的用法和执行情况。\n\n要反转结果，逻辑非 (`not`) 运算符如果结果为 \"True\"\
+  ，则返回 \"False\"；否则返回 \"True\"。\n\n位取反运算符 (`~`) 用于反转所有比特（位），即它返回数字的补码。\n\n### 逻辑非\
+  \ (not) 运算符\n\n#### 程序\n```python\n### 逻辑非 (not) 运算符\nx = True\ny = False\n### 打印值\n\
+  print(\"x: \", x)\nprint(\"y: \", y)\n### 'not' 操作\nprint(\"not x: \", not x)\n\
+  print(\"not y: \", not y)\n```\nOutput:\nx:  True\ny:  False\nnot x:  False\nnot\
+  \ y:  True\n\n### 位取反 (~) 运算符\n\n#### 程序\n```python\n### 位取反 (~) 运算符\nx = True\n\
+  y = False\n### 打印值\nprint(\"x: \", x)\nprint(\"y: \", y)\n### '~' 操作\nprint(\"~\
+  \ x: \", ~ x)\nprint(\"~ y: \", ~ y)\n### 赋值数字\nx = 123\ny = 128\n### 打印值\nprint(\"\
+  x: \", x)\nprint(\"y: \", y)\n### '~' 操作\nprint(\"~ x: \", ~ x)\nprint(\"~ y: \"\
+  , ~ y)\n```\nOutput:\nx:  True\ny:  False\n~ x:  -2\n~ y:  -1\nx:  123\ny:  128\n\
+  ~ x:  -124\n~ y:  -129\n\n## 字符串逻辑运算符\n\n## 逻辑运算符\n\n* 逻辑与 (`and`)\n* 逻辑或 (`or`)\n\
+  * 逻辑非 (`not`)\n\n### 结合字符串\n\n空字符串作为布尔值表示 False，而非空字符串作为布尔值表示 True。\n\n对于 \"and\"\
+  \ 运算符：如果第一个操作数为真，则检查第二个操作数并返回第二个操作数。\n\n对于 \"or\" 运算符：如果第一个操作数为假，则检查第二个操作数并返回第二个操作数。\n\
+  \n对于 \"and\" 运算符：如果操作数为空字符串，则返回 True；否则返回 False。\n\n### 示例 1\n```python\n## Python\
+  \ 中的字符串逻辑运算符\nstring1 = \"Hello\"\nstring2 = \"World\"\n### 字符串上的 and 运算符\nprint(\"\
+  string1 and string2: \", string1 and string2)\nprint(\"string2 and string1: \",\
+  \ string2 and string1)\nprint()\n### 字符串上的 or 运算符\nprint(\"string1 or string2: \"\
+  , string1 or string2)\nprint(\"string2 or string1: \", string2 or string1)\nprint()\n\
+  ### 字符串上的 not 运算符\nprint(\"not string1: \", not string1)\nprint(\"not string2: \"\
+  , not string2)\nprint()\n```\nOutput:\nstring1 and string2:  World\nstring2 and\
+  \ string1:  Hello\nstring1 or string2:  Hello\nstring2 or string1:  World\nnot string1:\
+  \  False\nnot string2:  False\n\n### 示例 2\n```python\n## Python 中的字符串逻辑运算符\nstring1\
+  \ = \"\" # 空字符串\nstring2 = \"World\" # 非空字符串\n### 注意：'repr()' 函数会打印带单引号的字符串\n###\
+  \ 字符串上的 and 运算符\nprint(\"string1 and string2: \", repr(string1 and string2))\nprint(\"\
+  string2 and string1: \", repr(string2 and string1))\nprint()\n### 字符串上的 or 运算符\n\
+  print(\"string1 or string2: \", repr(string1 or string2))\nprint(\"string2 or string1:\
+  \ \", repr(string2 or string1))\nprint()\n### 字符串上的 not 运算符\nprint(\"not string1:\
+  \ \", not string1)\nprint(\"not string2: \", not string2)\nprint()\n```\nOutput:\n\
+  string1 and string2:  ''\nstring2 and string1:  ''\nstring1 or string2:  'World'\n\
+  string2 or string1:  'World'\nnot string1:  True\nnot string2:  False\n\n### if\
+  \ else 条件运算符\n\nPython 同样包含了使用条件运算符测试条件语句的功能，就像与其他编程语言一样。\n\n如果使用了其他条件运算符，将根据给定的布尔表达式的结果来评估/获取某个值/语句（从给定的两个值/语句中）。\n\
+  \n语法：\n`value1 if expression else value2`\n\n* `Value1`：代表如果表达式有效时的条件表达式值。\n* `Expression`：代表要评估的布尔条件（即我们可以假设这是一个条件）。\n\
+  * `Value2`：代表如果表达式为假时的条件表达式值。\n\n### 示例 1\n```python\n### 寻找最大值\nx = 20\ny = 10\n\
+  ### if else 条件运算符\nlargest = x if x>y else y\n### 打印值\nprint(\"x: \", x)\nprint(\"\
+  y: \", y)\nprint(\"largest: \", largest)\nprint()\n\nx = 10\ny = 20\n### if else\
+  \ 条件运算符\nlargest = x if x>y else y\n### 打印值\nprint(\"x: \", x)\nprint(\"y: \", y)\n\
+  print(\"largest: \", largest)\nprint()\n\nx = 10\ny = 10\n### if else 条件运算符\nlargest\
+  \ = x if x>y else y\n### 打印值\nprint(\"x: \", x)\nprint(\"y: \", y)\nprint(\"largest:\
+  \ \", largest)\nprint()\n```\nOutput:\nx:  20\ny:  10\nlargest: 20\nx:  10\ny: \
+  \ 20\nlargest: 20\nx:  10\ny:  10\nlargest: 10\n\n### 示例 2\n```python\n### 寻找最大值\n\
+  x = 10\ny = 20\nz = 30\n### if else 条件运算符\nlargest = x if (x>y and x>z) else (y\
+  \ if(y>x and x>z) else z)\n### 打印值\nprint(\"x: \", x)\nprint(\"y: \", y)\nprint(\"\
+  z: \", z)\nprint(\"largest: \", largest)\nprint()\n\nx = 10\ny = 30\nz = 20\n###\
+  \ if else 条件运算符\nlargest = x if (x>y and x>z) else (y if(y>x and y>z) else z)\n\
+  ### 打印值\nprint(\"x: \", x)\nprint(\"y: \", y)\nprint(\"z: \", z)\nprint(\"largest:\
+  \ \", largest)\nprint()\n```\n\n## TAM SEL 编写的零学者 JavaScript 基础\n\n## JAVCRIPT\n\
+  \n本 JavaScript 教程让初学者和专家都能轻松学习 JavaScript。\n学习 JavaScript 只需要对计算机有基础的了解。\n\n## JAVCRIPT\
+  \ 示例\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n  <h2>欢迎来到 JavaScript</h2>\n \
+  \ <script>\n    document.write(\"Hello Friends\");\n  </script>\n</body>\n</html>\n\
+  ```\nJavaScript 可以通过在代码中添加 JavaScript 语句来实现。\n\n`<script>...</script>`\n\n```html\n\
+  <!DOCTYPE html>\n<html>\n<body>\n  <script type=\"text/javascript\">\n    alert(\"\
+  Hello world\");\n  </script>\n</body>\n</html>\n```\n\n### JavaScript 代码可以在 HTML\
+  \ 中的三个位置编写\n\n1.  HTML 的 `<body>`……`</body>` 标签之间。\n2.  HTML 的 `<head>`……`</head>`\
+  \ 标签之间。\n3.  在 `.jsfile`(外部 JavaScript)。\n\n### 示例（body 标签之间的代码）\n\n在下面的示例中，body\
+  \ 标签包含了 JavaScript 代码。\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n  <script type=\"\
+  text/javascript\">\n    alert(\"Hello world\");\n  </script>\n</body>\n</html>\n\
+  ```\n\n\n\n\n### 示例 2（head 标签之间的代码）\n\n我们将在下面的示例中创建 `msg()` 函数。在 JavaScript 中，你必须在函数名后编写函数体来构造函数。要调用方法，我们必须先创建一个实例。在此例中，我们正在使用点击事件来调用\
+  \ `msg()` 函数。\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<script type=\"text/javascript\"\
+  >\nfunction msg(){\n  alert(\"Hello world\");\n}\n</script>\n</head>\n<body>\n<p>Welcome\
+  \ to Javascript</p>\n<form>\n  <input type=\"button\" value=\"click\" onclick=\"\
+  msg()\"/>\n</form>\n</body>\n</html>\n```\n\n## 外部 JavaScript 文件\n\n我们可以构建一个可以在\
+  \ HTML 文件中使用的 JavaScript 文件。\n\n由于单个 JavaScript 文件可以用于多个 HTML 页面，因此它允许代码复用。这提高了了网页页的执行效率。\n\
+  \n该文件必须具有 `.js` 扩展名。\n\n#### 示例\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<script\
+  \ type=\"text/javascript\" src=\"message.js\"></script>\n</head>\n<body>\n<p>Hello\
+  \ world</p>\n<form>\n  <input type=\"button\" value=\"click\" onclick=\"msg()\"\
+  />\n</form>\n</body>\n</html>\n```\n\n## JavaScript 注释\n\nJavaScript 中的注释用于描述代码。它被用于添加代码相关的内容，例如警告或建议，以便终端用户能够理解。\n\
+  \n### JavaScript 注释的类型\n\nJavaScript 注释共有两种类型：\n\n1. 单行注释\n2. 多行注释\n\n### 单行注释\n\
+  \n双正斜杠（`//`）用于单行注释。在程序运行时，双正斜杠（`//`）与行尾之间的任何文本都会被忽略。\n\n例如。在语句之前添加注释。\n\n```html\n\
+  <!DOCTYPE html>\n<html>\n<body>\n<script>\n// single-line comment //\n  document.write(\"\
+  hello world\");\n</script>\n</body>\n</html>\n```\n\n例如。在语句之后添加注释。\n\n```html\n\
+  <!DOCTYPE html>\n<html>\n<body>\n<script>\n  var a=10;\n  var b=20;\n  var c=a+b;\
+  \ //It add values of a and b variable\n  document.write(c); //print sum of 10 and\
+  \ 20\n</script>\n</body>\n</html>\n```\n\n#### 输出\n30\n\n## 多行注释\n\n单行和多行注释也可以用于多行注释。跨越多行的注释以\
+  \ `/*` 开始并以 `*/` 结束。JavaScript 将忽略它们之间的文本。\n\n### /* 在此处编写注释 */\n\n#### 示例\n\n```html\n\
+  <!DOCTYPE html>\n<html>\n<body>\n<script>\n/* It is multi-line comment.\nIt will\
+  \ not be displayed */\ndocument.write (\"Example of JavaScript multi line comment\"\
+  );\n</script>\n</body>\n</html>\n```\n\n## JavaScript 变量\n\n值（`name=\"Ram\"`）和表达式（`Sum=x+y`）存储在变量中。我们必须在使用变量之前先对其进行声明。要声明变量，我们按照如下方式使用关键字\
+  \ `var`：\n\n```javascript\nvar name;\n```\n\n变量有两种类型：\n\n1. 局部变量\n2. 全局变量\n\n局部变量——它在函数或块内部声明。\n\
+  \n#### 示例\n\n```javascript\n<script>\nfunctionabc(){\n  var x=10; //local variable\n\
+  </script>\n```\n\n全局变量——它具有全局作用域，这意味着它可以在 JavaScript 代码的任何地方指定。在函数外部声明了一个变量。\n\n\
+  #### 示例\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\n  var data =200;\
+  \ //global variable\n  function a(){\n    document.writeln(data);\n  }\n  function\
+  \ b(){\n    document.writeln(data);\n  }\n  a();//calling javascript function\n\
+  \  b();\n</script>\n</body>\n</html>\n```\n\n### 在函数内部声明 JavaScript 全局变量\n\n我们需要使用\
+  \ `window` 对象在函数内部声明 JavaScript 全局变量。\n\n#### 示例\n```javascript\nwindow.value=90;\n\
+  ```\n\n#### 现在可以在任何函数内部声明并从任何函数内部访问它。\n\n#### 示例\n\n```html\n<!DOCTYPE html>\n<html>\n\
+  <body>\n<script>\n  function a(){\n    window.value=50; //declare global variable\
+  \ by use of window object\n  }\n  function b(){\n    alert(window.value);//access\
+  \ global variable from other function\n  }\n  a();\n  b();\n</script>\n</body>\n\
+  </html>\n```\n\n## JavaScript 数据类型\n\n它有多种数据类型来存储各种类型的值。在 JavaScript 中，有两种数据类型：\n\
+  \n1. 基本数据类型。\n2. 非基本数据类型。\n\n### 由于 JavaScript 是一种动态类型语言，我们不需要定义变量的类型，因为 JavaScript\
+  \ 引擎动态地使用它。在这种情况下，使用 `var` 定义数据类型。它可以存储任何值，包括数字、字符串和对象。\n\n#### 示例\n```javascript\n\
+  var a=Ram; //String\nvar b=20; //Number\nvar x={FirstName:'Ram',lastName:'Doe'};\
+  \ //Object\n```\n\n### 基本数据类型\n有 5 种。\n\n### 非基本数据类型\n有 3 种。\n\n运算符用于对操作数执行操作。如下：\n\
+  \n1. 算术\n2. 比较（关系）\n3. 位\n4. 逻辑\n5. 赋值\n6. 特殊\n\n## 算术运算符\n对操作数使用算术运算。\n\n## 比较运算符\n\
+  在比较中，比较操作数 A 和 B。\n\n## 赋值运算符\nJavaScript 支持以下内容。\n\n### 位运算符\nJavaScript 提供了以下位运算符：\n\
+  \n## 逻辑运算符\n布尔值常用于逻辑运算符。如下：\n\n## JavaScript If Else\n\nJavaScript 中的条件语句用于根据条件执行任务。在\
+  \ JavaScript 中，有三种类型的语句：\n\n1. if 语句。\n2. if else 语句。\n3. if else if 语句。\n\n## if\
+  \ 语句\n\n如果条件为真或假，JavaScript 中的 if 语句用于执行代码。\n\n```html\n<!DOCTYPE html>\n<html>\n\
+  <body>\n<script>\n  var x=50;\n  if(x>30){\n    document.write(\"value of x is greater\
+  \ than 30\");\n  }\n</script>\n</body>\n</html>\n```\n\n#### 输出\nValue of x is greater\
+  \ than 30\n\n## if else 语句\n\n如果其中一个条件为真或假，则使用 if else 语句。\n\n#### 语法\n```javascript\n\
+  if(condition)\n{\n  // set of statements\n}\nelse\n{\n  // set of statements\n}\n\
+  ```\n\n#### 示例\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\n  var x=20;\n\
+  \  if(x%2==0){\n    document.write(\"x is even number\");\n  }\n  else{\n    document.write(\"\
+  a is odd number\")\n  }\n</script>\n</body>\n</html>\n```\n\n#### 输出\nX is even\
+  \ number\n\n## if else if\n\n\n\n\n[content]\n它只是查看材料以通过多个表达式判断表达式是否有效。`else if`\
+  \ 是 `if else` 语句的高级版本。\n\n#### 语法\n\n```\nIf (condition1) \n{\n  如果 condition 1\
+  \ 为真，则执行语句(s)\n}\nelse if (condition 2) \n{\n  如果 condition 2 为真，则执行语句(s)\n}\nelse\
+  \ if (condition 3) \n{\n  如果 condition 3 为真，则执行语句(s)\n}\nelse \n{\n  如果没有条件为真，则执行语句(s)\n\
+  }\n```\n\n#### 示例\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\nvar x=50;\n\
+  if (x==10){\ndocument.write(\"x is equal to 10\");\n}\nelse if(x==50){\ndocument.write(\"\
+  x is equal to 50\");\n}\nelse if(x==30){\ndocument.write(\"x is equal to 30\");\n\
+  }\nelse{\ndocument.write(\"a is not equal to 10, 50 or 30\");\n}\n</script>\n</body>\n\
+  </html>\n```\n\n#### 输出\nx is equal to 50\n\n## JavaScript Switch 语句\n\n在 JavaScript\
+  \ 中，`switch` 语句用于在不同条件下执行单个代码。它与 `else if` 语句相同。\n\n![](img/image00181.jpeg)\n\n\
+  #### 语法\n\n```\nswitch (expression)\n{\n  case 1: 语句(s)\n  break;\n  case 2: 语句(s)\n\
+  \  break;\n  ...\n  case n: 语句(s)\n  break;\n  default: 语句(s)\n}\n```\n\n#### 示例\n\
+  \n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\nvar grade='B';\nvar result;\n\
+  switch(grade){\ncase 'A':\nresult=\"A Grade\";\nbreak;\ncase 'B':\nresult=\"B Grade\"\
+  ;\nbreak;\ncase 'C':\nresult=\"C Grade\";\nbreak;\ndefault:\nresult=\"No Grade\"\
+  ;\n}\ndocument.write(result);\n</script>\n</body>\n</html>\n```\n\n#### 输出\nB Grade\n\
+  \n## JavaScript 函数\n\n## 在 `<script>.....</script>` 标签内部构建新函数的能力是 JavaScript 的一项特性。`function`\
+  \ 关键字用于在 JavaScript 中声明函数。\n\n## 为了复用文件，我们多次调用 JavaScript 函数。\n\n## 优点 - JavaScript\
+  \ 函数\n\n1. 代码复用性：我们多次使用相同的特性来节省时间和代码量。\n2. 减少代码量：结果是，我们的软件被压缩了。当我们执行例行任务时，不需要编写大量的代码。\n\
+  \n#### 语法\n\n```\nfunction functionName(参数或为空)\n{\n  语句\n}\n```\n\n#### 示例\n\n```html\n\
+  <!DOCTYPE html>\n<html>\n<body>\n<script>\nfunction msg()\n{\nalert(\"Hello! world\"\
+  );\n}\n</script>\n<input type=\"button\" onclick=\"msg()\" value=\"click here\"\
+  />\n</body>\n</html>\n```\n\n#### 输出\nHello world!\n\n## 带参数的函数\n\n### 通过传递参数调用函数。\n\
+  \n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\nfunction getcube(number)\n\
+  {alert(number*number*number);\n}\n</script>\n<form>\n<input type=\"button\" value=\"\
+  click\" onclick=\"getcube(3)\"/>\n</form>\n</body>\n</html>\n```\n\n#### 输出\n27\n\
+  \n#### 示例\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\nfunction getname()\n\
+  {\nname=prompt(\"Enter the Name\");\nalert(\"Welcome Mr/Mrs \" + name);\n}\n</script>\n\
+  </body>\n<form>\n<input type=\"button\" value=\"Click\" onclick=\"getname()\"/>\n\
+  </form>\n</html>\n```\n\n## 带返回值的函数\n\n#### 调用返回值的函数并在程序中使用它。\n\n```html\n<!DOCTYPE\
+  \ html>\n<html>\n<body>\n<script>\nfunction getInfo()\n{\nreturn \"Hello Raj! How\
+  \ are you?\";\n}\n</script>\n<script>\ndocument.write(getInfo());\n</script>\n</body>\n\
+  </html>\n```\n#### 输出\nHello Raj! How are you?\n\n## Function() 构造函数\n\n`function`\
+  \ 语句不仅用于定义函数，还可以使用 `Function()` 构造函数动态定义函数。\n\n#### 语法\n\n```\nvar varName = Function(Arg1,\
+  \ Arg2..., \"Body\");\n```\n\n#### 示例\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+  <script>\nvar func = Function(\"a\", \"b\", \"return a+b;\");\nfunction secondFunction(){\n\
+  var result;\nresult = func(5,0);\ndocument.write(result);\n}\n</script>\n</head>\n\
+  <body>\n<p>点击按钮调用函数</p>\n<form>\n<input type=\"button\" onclick=\"secondFunction()\"\
+  \ value=\"Function\">\n</form>\n<p>使用不同的参数并尝试...</p>\n</body>\n</html>\n```\n\n\
+  ## 函数字面量 (Function Literals)\n\nJavaScript 引入了函数字面量的定义，这是描述函数的另一种方式。它是一个没有名字的表达式。函数字面量的语法与语句相似，但它是作为表达式而不是语句，并且不需要函数名。\n\
+  \n#### 语法\n\n```\nvar varName = function(参数){\n  正体\n};\n```\n\n#### 示例\n\n```html\n\
+  <!DOCTYPE html>\n<html>\n<head>\n<script>\nvar func = function(a,b){\n  return a+b;\n\
+  };\nfunction secondFunction(){\nvar result;\nresult = func(10,20);\ndocument.write(result);\n\
+  }\n</script>\n</head>\n<body>\n<p>点击按钮调用函数</p>\n<form>\n<input type=\"button\" onclick=\"\
+  secondFunction()\" value=\"Function\">\n</form>\n<p>使用不同的参数并尝试...</p>\n</body>\n\
+  </html>\n```\n\n## JavaScript 对象\n\n对象是一个状态和行为的实体。JavaScript 是一种关注对象的脚本语言。虽然 JavaScript\
+  \ 是基于模板而非基于类的，但它允许我们构建对象。\n\n#### 语法\n\n```\n对象名.对象属性 = 属性值;\n```\n\n为了写入一些内容，我们使用\
+  \ `document` 上的 `write()` 方法。\n`document.write(\"Hello\")`\n\n#### 示例\n\n```html\n\
+  <!DOCTYPE html>\n<html>\n<head>\n<title>用户定义对象</title>\n<script type=\"text/javascript\"\
+  >\nvar book = new Object(); // 创建对象\nbook.subject = \"5 points someone\"; // 属性赋值给对象\n\
+  book.author = \"Chetagat\";\n</script>\n</head>\n<body>\n<script type=\"text/javascript\"\
+  >\ndocument.write(\"Book Name is : \" + book.subject + \"<br>\");\ndocument.write(\"\
+  Book Author is : \" + book.author + \"<br>\");\n</script>\n</</body>\n</html>\n\
+  ```\n\n#### 输出\nBook Name is: 5 points someone\nBook Author is: Chetanagat\n\n###\
+  \ 对象的方法\n\n#### 示例\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<title>用户定义对象</title>\n\
+  <script type=\"text/javascript\">\n// 定义一个将作为方法的函数\nfunction addPrice(amount){\n\
+  \  this.price = amount;\n}\nfunction book(title,author){\n  this.itle = title;\n\
+  \  this.author = author;\n  this.addPrice = addPrice; // 将该方法赋值为属性。\n}\n</script>\n\
+  </head>\n<body>\n</body>\n</html>\n```\n[/content]\n[/content] (抱歉，此处由于重复输入了 [content]\
+  \ 标签，以上已按要求完成翻译)\n\n**修正说明：** 由于您提供的原始文本中包含了多个 `[content]` 标签，我已按照要求将翻译后的内容包裹在对应的\
+  \ `[content]...\n\n\n\n```html\n<script type=\"text/javascript\">\n  var varmyBook\
+  \ = new book(\"5 Points Someone\", \"ChetanBhagat\");\n  myBook.addPrice(150);\n\
+  \  document.write(\"Book Title is : \" + myBook.title + \"<br>\");\n  document.write(\"\
+  Book Author is : \" + myBook.author + \"<br>\");\n  document.write(\"Book Price\
+  \ is : \" + myBook.price + \"<br>\");\n</script>\n</body\n</html>\n```\n\n**OUTPUT**\n\
+  Book Title is: 5 Points Someone\nBook Author is :ChetanBhagat\nBook Price is : 150\n\
+  \n# Javascript 数组\n\n数组用于在单个单元或内存位置描述一组元素。\n\n任何进入数组的元素都将以从零开始的唯一索引存储在数组中。我们可以借助索引存储数据。\n\
+  \n在 JavaScript 中，我们必须使用 `new` 关键字来声明数组。我们使用 `new Array` 来生成一个数组 (`n`）。\n\n序列中的槽位数量由\
+  \ `n` 表示。\n\n#### 语法\n\n```javascript\nmyarray = new array(n);\n```\n\n注意：如果我们在\
+  \ JavaScript 中生成数组时不指定大小，则数组对象的大小为零。\n\n#### 示例\n\n```html\n<!DOCTYPE html>\n<html>\n\
+  <body>\n<script>\n  var i;\n  var emp = new Array();\n  emp[0] = \"Ajay\";\n  emp[1]\
+  \ = \"Abhay\";\n  emp[2] = \"Arun\";\n  emp[3] = \"Shipra\";\n  for (i=0; i<emp.length;\
+  \ i++) {\n    document.write(emp[i] + \"<br>\");\n  }\n</script>\n</body>\n</html>\n\
+  ```\n\n**OUTPUT**\nAjay\nAbhay\nArun\nShipra\n\n### 示例 2\n\n```html\n<!DOCTYPE html>\n\
+  <html>\n<head>\n  <script type=\"text/javascript\">\n    function array() {\n  \
+  \    num = new Array(5);\n      num[0] = 10;\n      num[1] = 20;\n      num[2] =\
+  \ 30;\n      num[3] = 40;\n      num[4] = 50;\n      sum = 0;\n      for (i=0; i<num.length;\
+  \ i++) {\n        sumsum = sum + num[i];\n      }\n      alert(sum)\n    }\n  </script>\n\
+  </head>\n<body>\n  <input type=\"button\" onclick=\"array()\" value=\"点击这里\">\n\
+  </body>\n</html>\n```\n\n### 数组中的函数\n\n![](img/image00182.jpeg)\n\n# Javascript\
+  \ 字符串\n\n`String` 对象用于与字符字符串进行交互。它是存储和处理文本的工具。\n\n在 JavaScript 中，有两种方法创建字符串：\n\n\
+  1. 字符串字面量。\n2. 使用 `new` 关键字。\n\n字符串字面量通过双引号形成。\n\n#### 语法\n\n```javascript\nvar\
+  \ stringname=\"string value\";\n```\n\n#### 示例\n\n```html\n<!DOCTYPE html>\n<html>\n\
+  <body>\n<script>\n  var str=\"Hello String Literal\";\n  document.write(str);\n\
+  </script>\n</body>\n</html>\n```\n\n**OUTPUT**\nHello String Literal\n\n## 使用 new\
+  \ 关键字\n\n#### 语法\n\n```javascript\nvar stringname=new String(\"new keyword\")\n\
+  ```\n\n**OUTPUT**\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\n  var stringname=new\
+  \ String(\"Hello String\");\n  document.write(stringname);\n</script>\n</body>\n\
+  </html>\n```\n\n**OUTPUT**\nHello String\n\n## 字符串属性\n\n有一个字符串对象属性列表及其描述。\n\n1.\
+  \ `constructor`。\n2. `length`。\n3. `prototype`。\n\n**Constructor (构造函数)** – 此方法返回对象字符串函数的引用。\n\
+  \n#### 语法\n\n```javascript\nstring.constructor\n```\n\n**Length (长度)** - 返回字符串中的字符数。\n\
+  \n#### 语法\n\n```javascript\nstring.length\n```\n\n**Prototype (原型)** - 它允许任何对象拥有属性和方法（数字、布尔、字符串和数据等）。\n\
+  \n#### 语法\n\n```javascript\nobject.prototype.name = value\n```\n\n## 方法\n\n![](img/image00183.jpeg)\n\
+  \n## charAt()\n\n这是一个从索引获取字符的方法。\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\n\
+  \  var str = new String(\"Hello\");\n  document.writeln(\"str.charAt(0) is: \" +\
+  \ str.charAt(0));\n  document.writeln(\"<br />str.charAt(1) is: \" + str.charAt(1));\n\
+  \  document.writeln(\"<br />str.charAt(2) is: \" + str.charAt(2));\n  document.writeln(\"\
+  <br />str.charAt(3) is: \" + str.charAt(3));\n  document.writeln(\"<br />str.charAt(4)\
+  \ is: \" + str.charAt(4));\n</script>\n</body>\n</html>\n```\n\n## concat(str)\n\
+  \n此方法在添加两个更多字符串后返回新字符串。\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\n\
+  \  var x=\"Hello\";\n  var y=\"World\";\n  var z=x+y;\n  document.write(z);\n</script>\n\
+  </body>\n</html>\n```\n\n## indexOf(str)\n\n`indexOf` 方法返回给定字符串的索引。\n\n```html\n\
+  <!DOCTYPE html>\n<html>\n<body>\n<script>\n  var x=\"Tutorial provideby\";\n  var\
+  \ y=x.indexOf(\"by\");\n  document.write(y);\n</script>\n</body>\n</html>\n```\n\
+  \n## lastIndexOf(str)\n\n`lastIndexOf` 方法返回字符串的最后一个索引。\n\n```html\n<!DOCTYPE html>\n\
+  <html>\n<body>\n<script>\n  var x=\"Tutorial provideby\";\n  var y=x.lastIndexOf(\"\
+  by\");\n  document.write(y);\n</script>\n</body>\n</html>\n```\n\n## match(re)\n\
+  \n`match` 方法返回匹配项数组。\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\n  var\
+  \ str=\"To detail Chapter5.4\";\n  var re=/\\d+/g;\n  var find=str.match(re);\n\
+  \  document.write(find);\n</script>\n</body>\n</html>\n```\n\n## toLowerCase()\n\
+  \n它返回给定字符串的小写版本。\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\n  var x=\"\
+  HELLO\";\n  var y=x.toLowerCase();\n  document.write(y);\n</script>\n</body>\n</html>\n\
+  ```\n\n## toUpperCase()\n\n它返回提供的字符串的大写形式。\n\n```html\n<!DOCTYPE html>\n<html>\n\
+  <body>\n<script>\n  var x=\"hello\";\n  var y=x.toUpperCase();\n  document.write(y);\n\
+  </script>\n</body>\n</html>\n```\n\n## valueOf()\n\n它返回字符串对象的原始值。\n\n```html\n<!DOCTYPE\
+  \ html>\n<html>\n<body>\n<script>\n  var str=new String(\"Hello\");\n  document.write(str.valueOf());\n\
+  </script>\n</body>\n</html>\n```\n\n# Javascript Date\n\nDate 对象是语言中内置的一种数据类型。`new\
+  \ Date()` 对象用于构建数据对象。时间中的单个时刻由 JavaScript 情况表示。创建 JavaScript 日期的唯一方法是使用构造函数。\n\n\
+  #### 语法\n\n`Date()` 构造函数可以使用以下语法生成 Date 对象：\n\n```javascript\nnew Date();\nnew Date(value);\n\
+  new Date(dateString);\nnew Date(year, month, day, hours, minutes, milliseconds);\n\
+  ```\n\n#### 注意：括号内的参数始终是可选的。\n\n### \n\n### year (年份)\n年份由整数表示。对于 2000 年到 2099 年，值的范围映射为\
+  \ 0 到 99。\n\n### Month (月份)\n从 0 表示一月开始，到 11 表示十二月结束，此整数值代表月份。\n\n### Date (日期)\n\
+  这是一个选项。月份的天数由整数值表示。\n\n### Hours (小时)\n这是一个选项。一天的小时由整数值表示。\n\n### Minutes (分钟)\n\
+  这是一个选项。时间的分钟部分由整数值表示。\n\n### Seconds (秒)\n这是一个选项。秒时间段由整数值表示。\n\n### Milliseconds\
+  \ (毫秒)\n这是一个选项。毫秒时间段由整数值表示。\n\n### Date 示例\n\n```html\n<!DOCTYPE html>\n<html>\n\
+  <body>\n<script>\n  var date=new Date();\n  var day=date.getDate();\n  var month=date.getMonth()+1;\n\
+  </script>\n</body>\n</html>\n```\n\n\n\n\n\n```javascript\nvar year=date.getFullYear();\n\
+  document.write(\"<br>Date: \"+day+\"/\"+month+\"/\"+year);\n</script>\n</</body>\n\
+  </</html>\n```\n\n### 当前时间 - 示例\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n当前时间:\
+  \ <span id=\"txt\"></span>\n<script>\nvar today=new Date();\nvar h=today.getHours();\n\
+  var m=today.getMinutes();\nvar s=today.getSeconds();\ndocument.getElementById('txt').innerHTML=h+\"\
+  :\"+m+\":\"+s;\n</script>\n</body>\n</html>\n```\n\n## JavaScript 数学对象\n\n`Math`\
+  \ 是一个内置对象，包含了用于数学函数和常数的属性和方法。它允许你对数字进行数学运算。\n\n#### 语法\n\n1. `varpi_val = Math.PI;`\n\
+  2. `varsin_val = Math.sin(30);`\n\n#### 示例\n\n### Math.pow()\n`Math.pow(x,y)` 返回\
+  \ `x` 的 `y` 次幂值：\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<h2>JavaScript Math.pow()</h2>\n\
+  <p>Math.pow(x,y) 返回 x 的 y 次幂：</p>\n<p id=\"demo\"></p>\n<script>\ndocument.getElementById(\"\
+  demo\").innerHTML = Math.pow(6,2);\n</script>\n</body>\n</html>\n```\n\n### Math.sqrt()\n\
+  #### `Math.sqrt(x)` 返回 `x` 的平方根：\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<h2>JavaScript\
+  \ Math.sqrt()</h2>\n<p>Math.sqrt(x) 返回 x 的平方根：</p>\n<p id=\"demo\"></p>\n<script>\n\
+  document.getElementById(\"demo\").innerHTML = Math.sqrt(81);\n</script>\n</body>\n\
+  </html>\n```\n\n#### Math.ceil()\n#### `Math.ceil(x)` 返回 `x` 向上舍五入到最近的整数：\n\n```html\n\
+  <!DOCTYPE html>\n<html>\n<body>\n<h2>JavaScript Math.ceil()</h2>\n<p>Math.ceil()\
+  \ 将数字向上取整到最近的整数：</p>\n<p id=\"demo\"></p>\n<script>\ndocument.getElementById(\"\
+  demo\").innerHTML = Math.ceil(6.8);\n</script>\n</body>\n</html>\n```\n\n## JavaScript\
+  \ 数字\n\n`Number` 对象是一个包装对象，允许你操纵数值。`Number()` 构造函数用于创建数字对象。它可以是整数或浮点数。\n\n#### 语法\n\
+  \n```javascript\nvar n=new Number(value);\n```\n\n#### 示例\n\n```html\n<!DOCTYPE\
+  \ html>\n<html>\n<body>\n<script>\nvar x=100;//整数值\nvar y=100.7;//浮点数值\nvar z=12e5;//指数值，输出：1200000\n\
+  var n=new Number(20);//通过数字对象创建整数值\ndocument.write(x+\" \"+y+\" \"+z+\" \"+n);\n\
+  </script>\n</body>\n</html>\n```\n\n#### 输出\n100 100.7 1200000 20\n\n#### 描述\n\n\
+  数字对象最用于以下用途：\n\n1. 如果无法将参数转换为数字，则返回 `NaN`（不是数字）。\n2. `Number` 可用于非构造上下文中执行类型转换（即不使用\
+  \ `new` 运算符）。\n\n### JavaScript 数字常量\n\n![](img/image00184.jpeg)\n\n"

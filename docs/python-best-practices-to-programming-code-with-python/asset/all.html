@@ -1,0 +1,2892 @@
+<p><img src="Images/cover00081.jpeg" /></p>
+<p><span id="part0000.xhtml"></span></p>
+<div>
+<p><span style=" font-size:3.0rem; font-weight:bold; "> </span></p>
+<p><span style=" font-size:3.0rem; font-weight:bold; "> </span></p>
+<p><span
+style=" font-size:3.0rem; font-weight:bold; ">Python:</span></p>
+<p><span style=" font-size:1.0rem; "> </span></p>
+<p><span style=" font-size:2.0rem; font-style:italic; ">Best Practices
+</span><br />
+<span style=" font-size:2.0rem; font-style:italic; ">to Programming Code
+</span><br />
+<span style=" font-size:2.0rem; font-style:italic; ">with Python
+</span><br />
+<br />
+<br />
+<br />
+<br />
+<span style=" font-size:1.7rem; font-weight:bold; ">Charlie
+Masterson</span></p>
+<div style="page-break-after:always">
+
+</div>
+<br />
+
+</p>
+<p><span style=" font-size:1.3rem; font-weight:bold">Table of
+Contents</span></p>
+<p><span
+style=" font-size:1.0rem; font-weight:bold; color:#0000cc"> </span></p>
+<p><br />
+<a href="#part0000.xhtml_Introduction" style="color:#0563c1"><span
+style=" font-size:1.0rem; font-weight:bold; text-decoration:underline; color:#0563c1">Introduction</span></a></p>
+<p><a href="#part0000.xhtml_Chapter1" style="color:#0563c1"><span
+style=" font-size:1.0rem; font-weight:bold; text-decoration:underline; color:#0563c1">Chapter
+1: General Concepts of Python Coding</span></a></p>
+<p><a href="#part0000.xhtml_Chapter1" style="color:#0563c1"></a><a
+href="#part0000.xhtml_Chapter2" style="color:#0563c1"><span
+style=" font-size:1.0rem; font-weight:bold; text-decoration:underline; color:#0563c1">Chapter
+2: Programming Recommendations</span></a></p>
+<p><a href="#part0000.xhtml_Chapter2" style="color:#0563c1"></a><a
+href="#part0000.xhtml_Chapter3" style="color:#0563c1"><span
+style=" font-size:1.0rem; font-weight:bold; text-decoration:underline; color:#0563c1">Chapter
+3: Code Layout</span></a></p>
+<p><a href="#part0000.xhtml_Chapter3" style="color:#0563c1"></a><a
+href="#part0000.xhtml_Chapter4" style="color:#0563c1"><span
+style=" font-size:1.0rem; font-weight:bold; text-decoration:underline; color:#0563c1">Chapter
+4: Idioms</span></a></p>
+<p><a href="#part0000.xhtml_Chapter4" style="color:#0563c1"></a><a
+href="#part0000.xhtml_Chapter5" style="color:#0563c1"><span
+style=" font-size:1.0rem; font-weight:bold; text-decoration:underline; color:#0563c1">Chapter
+5: Comments</span></a></p>
+<p><a href="#part0000.xhtml_Chapter5" style="color:#0563c1"></a><a
+href="#part0000.xhtml_Chapter6" style="color:#0563c1"><span
+style=" font-size:1.0rem; font-weight:bold; text-decoration:underline; color:#0563c1">Chapter
+6: Conventions</span></a></p>
+<p><a href="#part0000.xhtml_Chapter6" style="color:#0563c1"></a><a
+href="#part0000.xhtml_Chapter7" style="color:#0563c1"><span
+style=" font-size:1.0rem; font-weight:bold; text-decoration:underline; color:#0563c1">Chapter
+7: Method and Function Arguments</span></a></p>
+<p><a href="#part0000.xhtml_Chapter7" style="color:#0563c1"></a><a
+href="#part0000.xhtml_Chapter8" style="color:#0563c1"><span
+style=" font-size:1.0rem; font-weight:bold; text-decoration:underline; color:#0563c1">Chapter
+8: Naming Conventions</span></a></p>
+<p><a href="#part0000.xhtml_Chapter8" style="color:#0563c1"></a><a
+href="#part0000.xhtml_Chapter9" style="color:#0563c1"><span
+style=" font-size:1.0rem; font-weight:bold; text-decoration:underline; color:#0563c1">Chapter
+9: Using Whitespace in Statements and Expressions</span></a></p>
+<p><a href="#part0000.xhtml_Chapter9" style="color:#0563c1"></a><a
+href="#part0000.xhtml_Conclusion" style="color:#0563c1"><span
+style=" font-size:1.0rem; font-weight:bold; text-decoration:underline; color:#0563c1">Conclusion</span></a></p>
+<p><a href="#part0000.xhtml_Conclusion" style="color:#0563c1"></a><a
+href="#part0000.xhtml_About" style="color:#0563c1"><span
+style=" font-size:1.0rem; font-weight:bold; text-decoration:underline; color:#0563c1">About
+the Author</span></a></p>
+<p><span
+style=" font-size:1.0rem; font-weight:bold; color:#0000cc"> </span></p>
+<p><span
+style=" font-size:1.0rem; font-weight:bold; color:#0000cc"> </span></p>
+<p><span
+style=" font-size:1.0rem; font-weight:bold; color:#0000cc"> </span></p>
+<p><span
+style=" font-size:1.0rem; font-weight:bold; color:#0000cc"> </span></p>
+<p><span
+style=" font-size:1.0rem; font-weight:bold; color:#0000cc"> </span></p>
+<p><span
+style=" font-size:1.0rem; font-weight:bold; color:#0000cc"> </span></p>
+<p><span
+style=" font-size:1.0rem; font-weight:bold; color:#0000cc"> </span></p>
+<p><span
+style=" font-size:1.0rem; font-weight:bold; color:#0000cc"> </span></p>
+<p><span
+style=" font-size:1.0rem; font-weight:bold; color:#0000cc"> </span></p>
+<p><span
+style=" font-size:1.0rem; font-weight:bold; color:#0000cc"> </span></p>
+<p><span
+style=" font-size:1.0rem; font-weight:bold; color:#0000cc"> </span></p>
+<p><span
+style=" font-size:1.0rem; font-weight:bold; color:#0000cc"> </span></p>
+<p><span
+style=" font-size:1.0rem; font-weight:bold; color:#0000cc"> </span></p>
+<p><span
+style=" font-size:1.0rem; font-weight:bold; color:#0000cc"> </span></p>
+<p><span
+style=" font-size:1.0rem; font-weight:bold; color:#0000cc"> </span></p>
+<p><span
+style=" font-size:1.0rem; font-weight:bold; color:#0000cc"> </span></p>
+<p><span
+style=" font-size:1.0rem; font-weight:bold; color:#0000cc"> </span></p>
+<p><span
+style=" font-size:1.0rem; font-weight:bold; color:#0000cc"> </span></p>
+<p><span
+style=" font-size:1.0rem; font-weight:bold; color:#0000cc"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">© Copyright 2017 by
+Charlie Masterson - All rights reserved.</span></p>
+<p><span style=" font-size:1.0rem">The contents of this book may not be
+reproduced, duplicated or transmitted without direct written permission
+from the author.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">Under no circumstances will any legal
+responsibility or blame be held against the publisher for any
+reparation, damages, or monetary loss due to the information herein,
+either directly or indirectly. </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span
+style=" font-size:1.0rem; font-weight:bold; text-decoration:underline">Legal
+Notice:</span></p>
+<p><span style=" font-size:1.0rem">This book is copyright protected.
+This is only for personal use. You cannot amend, distribute, sell, use,
+quote or paraphrase any part or the content within this book without the
+consent of the author. </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span
+style=" font-size:1.0rem; font-weight:bold; text-decoration:underline">Disclaimer
+Notice:</span></p>
+<p><span style=" font-size:1.0rem">Please note the information contained
+within this document is for educational and entertainment purposes only.
+Every attempt has been made to provide accurate, up to date and reliable
+complete information. No warranties of any kind are expressed or
+implied. Readers acknowledge that the author is not engaging in the
+rendering of legal, financial, medical or professional advice. The
+content of this book has been derived from various sources. Please
+consult a licensed professional before attempting any techniques
+outlined in this book.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">By reading this document, the reader
+agrees that under no circumstances are is the author responsible for any
+losses, direct or indirect, which are incurred as a result of the use of
+information contained within this document, including, but not limited
+to, —errors, omissions, or inaccuracies.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<div style="page-break-after:always">
+
+</div>
+<br />
+
+</p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span id="part0000.xhtml__Toc470673549"></span><span
+id="part0000.xhtml__Toc470811344"></span><span
+id="part0000.xhtml_Introduction"><span
+style=" font-size:2.3rem; font-weight:bold">Introduction</span><span
+style="-aw-bookmark-end:_Toc470673549"></span><span
+style="-aw-bookmark-end:_Toc470811344"></span></span></p>
+<p><span style=" font-size:0.92rem"> </span></p>
+<p><span style=" font-size:1.0rem">I want to thank you and congratulate
+you for reading the book, “Python: Best Practices to Programming Code
+with Python”. This book contains proven steps and strategies on how to
+program in Python more effectively. When you first learn Python, you
+will be taught how to write code, but in many cases, you will not be
+taught how to write that code neatly. </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">If you speak to any Python
+programmer, ask them what it is they like about Python. I guarantee they
+will tell you that one of the main reasons is because it is easily
+readable. In fact, this is the absolute heart of the Python language,
+simply because computer code is read far more than it is written. Much
+of this is down to the fact that Python code follows a set of guidelines
+and “Pythonic” idioms – if you hear a programmer refer to a part of the
+code as not being “Pythonic”, it means that it doesn’t follow those
+guidelines and it doesn’t express intent in any readable manner.
+</span></p>
+<p><br />
+<span style=" font-size:1.0rem">Code style and layout is incredibly
+important, as is consistency in the style that you use. With that said,
+there are times when consistency isn’t the right thing and the
+guidelines are simply not applicable – you have to know when that time
+is and that is when best judgment comes into programming with Python.
+</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">With this guide, I am going to show
+you the absolute best way to write your code, tidying up your program
+and making it all more effective and efficient. I won’t just give you
+the basic. I will delve deep into everything you need to know, from the
+layout of the code to how to write functions, idioms, and names. 
+</span><br />
+<br />
+<span style=" font-size:1.0rem">I will talk about whitespaces and tabs,
+strings, and methods. I will also be giving you some general
+recommendations for Python programming along with the general concepts.
+In short, by the time you have read my Best Practice guide, you will be
+the best Python programmer you can possibly be.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">My book does assume some prior
+knowledge of Python programming, so if you are a complete newbie to the
+programming scene, please familiarize yourself with Python code before
+you read this book. My aim is to help you to produce Python code that is
+free from, or at least has very few, complications or obvious problems,
+as well as making it more readable for others.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">Thanks again for reading this book, I
+hope you enjoy it!</span></p>
+<div style="page-break-after:always">
+
+</div>
+<br />
+
+</p>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+id="part0000.xhtml__Toc470673550"></span><span
+id="part0000.xhtml__Toc470811345"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:center; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:2.3rem"><span
+style=" font-size:2.3rem; font-weight:bold; "> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:center; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:2.3rem"><span
+id="part0000.xhtml_Chapter1"><span
+style=" font-size:2.3rem; font-weight:bold; ">Chapter 1: </span><br />
+<span style=" font-size:2.3rem; font-weight:bold; ">General Concepts of
+Python Coding</span></span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style="-aw-bookmark-end:Chapter1"></span><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<p><span style="-aw-bookmark-end:_Toc470673550"></span><span
+style="-aw-bookmark-end:_Toc470811345"></span><span
+style=" font-size:1.3rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">Before we get properly into the book,
+these are the general concepts of coding that you should be aware of;
+concepts that will make life easier for you.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Explicit Code</span></h2>
+<p><br />
+<span style=" font-size:1.0rem">While you can do all sorts of weird and
+wonderful things with Python, it is best to keep it straightforward and
+explicit.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem">def make_complex(*args):</span></p>
+<p><span style=" font-size:0.83rem">    x, y = args</span></p>
+<p><span style=" font-size:0.83rem">    return
+dict(**locals())</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><br />
+<span style=" font-size:1.0rem; font-weight:bold">A Good
+Example:</span></p>
+<p><span style=" font-size:0.83rem">def make_complex(x, y):</span></p>
+<p><span style=" font-size:0.83rem">    return {'x': x, 'y':
+y}</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">Compare these examples; in the latter
+example of code, we explicitly received </span><span
+style=" font-size:1.0rem; font-weight:bold">x</span><span
+style=" font-size:1.0rem"> and </span><span
+style=" font-size:1.0rem; font-weight:bold">y</span><span
+style=" font-size:1.0rem"> from the caller and the return is an explicit
+dictionary. </span></p>
+<p><br />
+<span style=" font-size:1.0rem">The developer who wrote this knows what
+to do just by looking at the first line and the last line; this is not
+the case with the bad example.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">One Line, One
+Statement</span></h2>
+<p><br />
+<span style=" font-size:1.0rem">While there are compound statements,
+like the list comprehensions, that are allowed and, in many cases,
+appreciated, it is not good practice to have 2 statements that are
+disjointed on one code line.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem">print 'one'; print 'two'</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem">if x == 1: print 'one'</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem">if &lt;complex comparison&gt; and
+&lt;other complex comparison&gt;:</span></p>
+<p><span style=" font-size:0.83rem">    # do something</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><br />
+<span style=" font-size:1.0rem; font-weight:bold">A Good
+Example:</span></p>
+<p><span style=" font-size:0.83rem">print 'one'</span></p>
+<p><span style=" font-size:0.83rem">print 'two'</span></p>
+<p><br />
+<span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem">if x == 1:</span></p>
+<p><span style=" font-size:0.83rem">    print 'one'</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem">cond1 = &lt;complex
+comparison&gt;</span></p>
+<p><span style=" font-size:0.83rem">cond2 = &lt;other complex
+comparison&gt;</span></p>
+<p><span style=" font-size:0.83rem">if cond1 and cond2:</span></p>
+<p><span style=" font-size:0.83rem">    # do something</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Returning Values</span></h2>
+<p><br />
+<span style=" font-size:1.0rem">When you get a function that is
+ever-growing in complexity, it isn’t unheard of to use several return
+statements in the body of the function. However, if you want to maintain
+clear intent and a good level of readability, you should try not to
+return values from several points in the function body. </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">When it comes to returning values
+within a function, there are 2 cases for doing so: the result that comes
+from a normally processed function return, and the errors that are
+indicative of incorrect input parameters or for any reason that the
+function cannot complete the computation.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">If you don’t want exceptions raised
+for the latter case, then it might be necessary for values, such as
+False or None to be returned, as an indication that the function was not
+able to perform properly. In cases such as this, it is best practice to
+return as soon as the wrong context has been noticed. </span></p>
+<p><br />
+<span style=" font-size:1.0rem">This will help to neaten up the function
+structure because all code that comes after the error return assumes
+that the condition has been met so that the main function result can be
+computed. As such, it is sometimes necessary to have several return
+statements like this.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">That said, if a function contains
+several different courses it can go, it can be unwieldy to debug the
+result so it is preferable to maintain just one course. This also helps
+in working out code paths and, if you have several courses, it could be
+an indication that you need to re-look at your code and tidy it
+up.</span></p>
+<p><br />
+<span style=" font-size:1.2rem; font-weight:bold">For
+Example:</span><br />
+<span style=" font-size:1.2rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:0.83rem">def complex_function(c, b,
+a):</span></p>
+<p><span style=" font-size:0.83rem">    if not c:</span></p>
+<p><span style=" font-size:0.83rem">        return None  # Raising an
+exception might be better</span></p>
+<p><span style=" font-size:0.83rem">    if not b:</span></p>
+<p><span style=" font-size:0.83rem">        return None  # Raising an
+exception might be better</span></p>
+<p><span style=" font-size:0.83rem">    # Some elaborate code that is
+trying to make x from c, b and a</span></p>
+<p><span style=" font-size:0.83rem">    # Try not to return x if
+successful</span></p>
+<p><span style=" font-size:0.83rem">    if not x:</span></p>
+<p><span style=" font-size:0.83rem">        # A Plan-B calculation of
+x</span></p>
+<p><span style=" font-size:0.83rem">    return x  # One exit point for
+the value x will be helpful</span></p>
+<p><span style=" font-size:0.83rem">              # when trying to
+maintain the code.t</span></p>
+<div style="page-break-after:always">
+
+</div>
+<br />
+
+</p>
+<p><span style=" font-size:0.92rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:0.92rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:0.92rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:0.92rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:0.92rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:0.92rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:0.92rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:0.92rem; font-weight:bold"> </span></p>
+<p><span id="part0000.xhtml_Chapter2"><span
+style=" font-size:2.3rem; font-weight:bold; ">Chapter 2: </span><br />
+<span style=" font-size:2.3rem; font-weight:bold; ">Programming
+Recommendations</span></span></p>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+id="part0000.xhtml__Toc470673551"></span><span
+id="part0000.xhtml__Toc470811346"><span
+style="-aw-bookmark-end:Chapter2"></span><span
+style=" font-size:1.3rem; font-weight:bold"> </span></span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<p><span style="-aw-bookmark-end:_Toc470673551"></span><span
+style="-aw-bookmark-end:_Toc470811346"></span><span
+style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">These are the basic recommendations
+for writing Python code, recommendations that you should follow if your
+code is going to be more effective and efficient as well as being
+readable. </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">Your code must be written so that it
+doesn’t disadvantage other Python implementations, such as </span><span
+style=" font-size:1.0rem; font-weight:bold">IronPython, Jython, PyPy,
+Psyco and Cython.</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">For example, you should never rely on
+the efficient string concatenation of CPython that takes the form
+o</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">f</span><span
+style=" font-size:0.83rem">a=a+</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">b</span><span
+style=" font-size:1.0rem">o</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">r</span><span
+style=" font-size:1.0rem"> </span><span
+style=" font-size:0.83rem">a+=b</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">.</span><span
+style=" font-size:1.0rem">This is a somewhat fragile optimization, even
+though it super-efficient in CPython, because it won’t work on al type
+sand it won’t be present in any Python implementation that does not use
+refcounting. </span><br />
+<br />
+<span style=" font-size:1.0rem">Instead, where you use a part of the
+library that is performance-sensitive, you should use th</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">e</span><span
+style=" font-size:0.83rem">.join(</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">)</span><span
+style=" font-size:1.0rem">form instead. This will make sure that the
+concatenation is linear across all the different Python
+implementations.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">Never use an equality operator to
+make comparisons to a singleton such as None. Instead, us</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">e</span><span
+style=" font-size:0.83rem">i</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">s</span><span
+style=" font-size:0.83rem"> </span><span
+style=" font-size:1.0rem">o</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">r</span><span
+style=" font-size:0.83rem">not.</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">You should also be wary of
+usin</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">g</span><span
+style=" font-size:0.83rem; font-weight:bold">if </span><span
+style=" font-size:0.83rem; font-weight:bold ;letter-spacing:0.21rem">x</span><span
+style=" font-size:1.0rem">when really you should be usin</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">g</span><span
+style=" font-size:0.83rem; font-weight:bold">if is not Non</span><span
+style=" font-size:0.83rem; font-weight:bold ;letter-spacing:0.21rem">e</span><span
+style=" font-size:1.0rem">. An example of this is when you are testing
+if an argument or a variable that defaults to a value of None was
+actually set to a different value. The other value could have a type
+that is false in the Boolean context.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">Rather than using the
+operato</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">r</span><span
+style=" font-size:0.83rem; font-weight:bold">not…i</span><span
+style=" font-size:0.83rem; font-weight:bold ;letter-spacing:0.21rem">s</span><span
+style=" font-size:1.0rem">, you should us</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">e</span><span
+style=" font-size:0.83rem; font-weight:bold">is no</span><span
+style=" font-size:0.83rem; font-weight:bold ;letter-spacing:0.21rem">t</span><span
+style=" font-size:1.0rem; font-weight:bold">.</span><span
+style=" font-size:1.0rem"> While they both are identical in terms of
+function, the first is low on the readability scale, making the second
+one more preferable. An example:</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">Use
+This:</span></p>
+<p><span style=" font-size:0.83rem">if foo is not None:</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">Don’t Use
+This:</span></p>
+<p><span style=" font-size:0.83rem; font-weight:bold">if not foo is
+None</span></p>
+<p><span style=" font-size:0.83rem; font-weight:bold"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">When you implement an ordering
+operation with a rich comparison, you should implement all of the 6
+operations instead of relying on some other code to exercise a
+comparison. Those operations ar</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">e</span><span
+style=" font-size:0.83rem">(__eq__, __lt__, __ne__, __ge__, __gt__,
+__le__)</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">To cut down on the effort needed, one
+particular decorator helps to generate any comparison methods that are
+missing. That decorator i</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">s</span><span
+style=" font-size:0.83rem">functools.total_ordering().</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem">The style guidelines indicate that
+Python assumes reflexivity rules. As such, the Python interpreter might
+change things about by swappin</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">g</span><span
+style=" font-size:0.83rem">y &gt; </span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">x</span><span
+style=" font-size:0.83rem"> </span><span
+style=" font-size:1.0rem">with</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem"> </span><span
+style=" font-size:0.83rem">x &lt; y </span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">,</span><span
+style=" font-size:1.0rem"> or it may swa</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">p</span><span
+style=" font-size:0.83rem">y &gt;= </span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">x</span><span
+style=" font-size:1.0rem"> with</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem"> </span><span
+style=" font-size:0.83rem">x &lt;= y</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem"> </span><span
+style=" font-size:1.0rem">.  </span></p>
+<p><br />
+<span style=" font-size:1.0rem">You may also find that the
+argumen</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">t</span><span
+style=" font-size:0.83rem">x == </span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">y</span><span
+style=" font-size:0.83rem"> </span><span style=" font-size:1.0rem">has
+been swapped wit</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">h</span><span
+style=" font-size:0.83rem">x != </span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">y</span><span
+style=" font-size:1.0rem"> .  Th</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">e</span><span
+style=" font-size:0.83rem">min(</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">)</span><span
+style=" font-size:1.0rem">an</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">d</span><span
+style=" font-size:0.83rem">sort(</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">)</span><span
+style=" font-size:0.83rem"> </span><span
+style=" font-size:1.0rem">operations will also definitely use the &lt;
+operator and th</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">e</span><span
+style=" font-size:0.83rem">max(</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">)</span><span
+style=" font-size:0.83rem"> </span><span
+style=" font-size:1.0rem">function will use the &gt;operator. However,
+you should, as a best practice guide, use all of them so that there is
+no confusion.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">Rather than using an assignment
+statement that will bind a lambda expression to an identifier, use
+</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">a</span><span
+style=" font-size:0.83rem">de</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">f</span><span
+style=" font-size:1.0rem"> statement</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Good Example:
+</span></p>
+<p><span style=" font-size:0.83rem">def f(x): return 2*x</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem">f = lambda x: 2*x</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem">The first example shows that the name
+given to the function object is ‘f’ rather than the collective
+&lt;lambda&gt;. This is the most useful for string representations and
+for tracebacks and, by using the assignment statement, you cut out the
+one benefit that a lambda expression offers over and above a def
+statement – that it may be embedded within a bigger
+statement.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">When you want to derive exceptions,
+use Exception and not BaseException. Inheritance from the latter is
+reserved for those exceptions where it is pretty much always wrong to
+catch them</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">When you design your exception
+hierarchies, base them on the quality that is likely to be needed by
+catching exceptions, rather than on the location where the exception is
+raised. Always answer one question – “what has gone wrong?” rather than
+just saying that something is wrong. Use the conventions for class
+naming but do remember to add the “Error” suffix to the exception
+classes that produce an error. </span></p>
+<p><br />
+<span style=" font-size:1.0rem">There is no need to put any special
+suffixes on exceptions that are not errors and are used as flow-control
+or another form of signaling.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">When you use exception chaining, use
+it only where needed.</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">When you replace an inner exception
+deliberately, make sure that the right details are relocated into the
+newer exception. Examples of this are making sure the name of the
+attribute is preserved when you conver</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">t</span><span
+style=" font-size:0.83rem">KeyErro</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">r</span><span
+style=" font-size:1.0rem">t</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">o</span><span
+style=" font-size:1.0rem"> </span><span
+style=" font-size:0.83rem">Attribute Erro</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">r</span><span
+style=" font-size:1.0rem">or when you embed the original exception text
+into the message in the newer exception</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">When using Python 2 and you raise an
+exception, always use th</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">e</span><span
+style=" font-size:0.83rem">raise ValueError)’message’</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">)</span><span
+style=" font-size:1.0rem">instead o</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">f</span><span
+style=" font-size:1.0rem"> </span><span style=" font-size:0.83rem">raise
+ValueError ‘message’</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">This is because the second example is
+neither valid nor legal syntax for Python 3. Also, the use of the
+containing parentheses means that there is no requirement to use
+continuation characters on a line when you add string formatting or when
+an exception argument is too long.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">When you catch exceptions, always
+mention specific ones wherever you can rather than using the bare
+except: clause</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">For
+Example:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:0.83rem">try:</span></p>
+<p><span style=" font-size:0.83rem">    import
+platform_specific_module</span></p>
+<p><span style=" font-size:0.83rem">except ImportError:</span></p>
+<p><span style=" font-size:0.83rem">    platform_specific_module =
+None</span></p>
+<p><span style=" font-size:0.83rem">KeyboardInterrup</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">t</span><span
+style=" font-size:1.0rem">an</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">d</span><span
+style=" font-size:1.0rem"> </span><span
+style=" font-size:0.83rem">SystemExi</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">t</span><span
+style=" font-size:1.0rem">exceptions will be caught by a bare except:
+clause and this makes it much more difficult to interrupt programs using
+CTRL+C and they can also cover up other problems that may be there.
+</span><br />
+<br />
+<span style=" font-size:1.0rem">If you are looking to catch every
+exception that signals errors in the program, use except
+Exception:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">A general rule is to only use the
+bare except: clause in one of these two cases:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ol type="1">
+<li><span style=" font-size:1.0rem">If the traceback is being printed by
+the exception handler; that way, the user will be made aware of any
+errors</span></li>
+</ol>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ol start="2" type="1">
+<li><span style=" font-size:1.0rem">If cleanup work is needed but the
+code allows the exception to propagate up using raise. A more efficient
+way to do this would be to us</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">e</span><span
+style=" font-size:0.83rem">try…finally.</span></li>
+</ol>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">When you are binding a caught
+exception to a name, use the explicit binding syntax from Python
+2.6:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:0.83rem">try:</span></p>
+<p><span style=" font-size:0.83rem">    process_data()</span></p>
+<p><span style=" font-size:0.83rem">except Exception as exc:</span></p>
+<p><span style=" font-size:0.83rem">    raise
+DataProcessingFailedError(str(exc))</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">This is the ONLY syntax that Python 3
+supports and it cuts out any problems of ambiguity that are associated
+with the older-style syntax that is comma-based.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">When you are catching system errors,
+use the exception hierarchy from Python 3.3 rather than errno values. As
+well, when you use any try/except clause, try to limit the use of the
+try clause to the least amount of code. This will cut down the risk of
+errors being hidden</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Good
+Example:</span></p>
+<p><span style=" font-size:0.83rem">try:</span></p>
+<p><span style=" font-size:0.83rem">    value =
+collection[key]</span></p>
+<p><span style=" font-size:0.83rem">except KeyError:</span></p>
+<p><span style=" font-size:0.83rem">    return
+key_not_found(key)</span></p>
+<p><span style=" font-size:0.83rem">else:</span></p>
+<p><span style=" font-size:0.83rem">    return
+handle_value(value)</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem">try:</span></p>
+<p><span style=" font-size:0.83rem">    # Too broad!</span></p>
+<p><span style=" font-size:0.83rem">    return
+handle_value(collection[key])</span></p>
+<p><span style=" font-size:0.83rem">except KeyError:</span></p>
+<p><span style=" font-size:0.83rem">    # Will catch a KeyError that is
+raised by handle_value()</span></p>
+<p><span style=" font-size:0.83rem">    return
+key_not_found(key)</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">When you use a resource tool that is
+local to a specific code section, use it with a statement to make sure
+that it is cleaned immediately after use. You can also use a try/finally
+statement</span></li>
+</ul>
+<p><span style=" font-size:0.83rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">Always invoke a context manager
+through separate methods or functions whenever they are for a purpose
+other than getting and releasing resources.</span></li>
+</ul>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Good
+Example:</span></p>
+<p><span style=" font-size:0.83rem">with
+conn.start_transaction():</span></p>
+<p><span style=" font-size:0.83rem">   
+do_something_in_transaction(conn)</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem">with conn:</span></p>
+<p><span style=" font-size:0.83rem">   
+do_something_in_transaction(conn)</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">The second example does not give us
+any information that indicates whether the __enter__ and __exit__
+methods do anything other than shutting the transaction. In this case,
+it is important to be explicit.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">Consistency in return statements is
+important. Either all of the function return statements or none of the
+return statements should return an expression or value. If a return
+statement does return an expression, any that do not return any value
+should state explicitly that the return is None and there should be a
+return statement at the end of that function</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Good
+Example:</span></p>
+<p><span style=" font-size:0.83rem">def foo(x):</span></p>
+<p><span style=" font-size:0.83rem">    if x &gt;= 0:</span></p>
+<p><span style=" font-size:0.83rem">        return
+math.sqrt(x)</span></p>
+<p><span style=" font-size:0.83rem">    else:</span></p>
+<p><span style=" font-size:0.83rem">        return None</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem">def bar(x):</span></p>
+<p><span style=" font-size:0.83rem">    if x &lt; 0:</span></p>
+<p><span style=" font-size:0.83rem">        return None</span></p>
+<p><span style=" font-size:0.83rem">    return math.sqrt(x)</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem">def foo(x):</span></p>
+<p><span style=" font-size:0.83rem">    if x &gt;= 0:</span></p>
+<p><span style=" font-size:0.83rem">        return
+math.sqrt(x)</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem">def bar(x):</span></p>
+<p><span style=" font-size:0.83rem">    if x &lt; 0:</span></p>
+<p><span style=" font-size:0.83rem">        return</span></p>
+<p><span style=" font-size:0.83rem">    return math.sqrt(x)</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">Don’t use string modules; use string
+methods instead</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">These are always faster and they
+share an API with the Unicode strings. This rule can be ignored if you
+need backward compatibility with a Python implementation that is earlier
+than 2.0</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">Instead of using string slicing as a
+way of checking for suffixes and prefixes, us</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">e</span><span
+style=" font-size:0.83rem">“.startswith(</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">)</span><span
+style=" font-size:0.83rem"> </span><span
+style=" font-size:1.0rem">an</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">d</span><span
+style=" font-size:0.83rem">“.endswith(</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">)</span><span
+style=" font-size:0.83rem"> </span><span
+style=" font-size:1.0rem">instead</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">These are much cleaner methods and
+they are less prone to errors. </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Good
+Example:</span></p>
+<p><span
+style=" font-size:0.92rem ;letter-spacing:0.23rem"> </span><span
+style=" font-size:0.83rem">if foo.beginswith('bar'):</span></p>
+<p><span style=" font-size:0.92rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem"> if foo[:3] == 'bar':</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">When you are comparing object types,
+us</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">e</span><span
+style=" font-size:0.83rem">isinstance(</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">)</span><span
+style=" font-size:1.0rem">instead of direct comparisons</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Good
+Example:</span></p>
+<p><span style=" font-size:0.83rem">if isinstance(obj, int):</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem">if type(obj) is type(1):</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">When you check to see if an object is
+actually a string, remember that it could be a Unicode string as well.
+In Python 2.0, Unicode and str share the base class calle</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">d</span><span
+style=" font-size:0.83rem">basestrin</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">g</span><span
+style=" font-size:0.83rem"> </span><span style=" font-size:1.0rem">so
+you could do:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:0.83rem">if isinstance(obj,
+basestring):</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">However, in Python 3, you won’t find
+basestring or Unicode, only str and bytes objects are not strings
+anymore, they are integer sequences instead.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">For a sequence – tuples, lists,
+strings, etc. – make use of the fact that an empty sequence is
+false.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Good
+Example:</span></p>
+<p><span style=" font-size:0.83rem">if not seq:</span></p>
+<p><span style=" font-size:0.83rem">     if seq:</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem">if len(seq):</span></p>
+<p><span style=" font-size:0.83rem">    if not len(seq):</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">Don’t include any string literals
+that require significant levels of trailing whitespace because this is
+not distinguishable and some text editors will remove them</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">Don’t use == to compare a Boolean
+value to True or False:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Good
+Example:</span></p>
+<p><span style=" font-size:0.83rem">if greeting:</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem">if the greeting == True:</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">An Even Worse
+Example:</span></p>
+<p><span style=" font-size:0.83rem">if the greeting is True:</span></p>
+<div style="page-break-after:always">
+
+</div>
+<br />
+
+</p>
+<h1
+style="margin:0.00% 0.00%; text-align:center; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:2.3rem"><span
+id="part0000.xhtml__Toc470673552"></span><span
+id="part0000.xhtml__Toc470811347"><span
+style=" font-size:2.3rem; font-weight:bold; "> </span></span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:center; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:2.3rem"><br />
+<span id="part0000.xhtml_Chapter3"><span
+style=" font-size:2.3rem; font-weight:bold; ">Chapter 3: </span><br />
+<span style=" font-size:2.3rem; font-weight:bold; ">Code
+Layout</span></span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:center; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<p><span style="-aw-bookmark-end:_Toc470673552"></span><span
+style="-aw-bookmark-end:_Toc470811347"></span><span
+style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">The most obvious place to start with
+is how to layout your code. I will be giving you the best practice
+guidelines for code layout along with examples on how to do it and how
+not to:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Indentation and
+Alignment</span></h2>
+<p><span style=" font-size:1.0rem">Every indent level should be 4
+spaces.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">When you use continuation lines, they
+should align the wrapped elements using one of two methods:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">Vertically with the Python implicit
+way of joining lines inside braces, brackets, and parentheses,
+or</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">With hanging indents</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">When you use a hanging indent,
+consider that there shouldn’t be any arguments on line one and that, to
+mark the continuation line, indentation must be used.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">Consider the following
+examples:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">The Right
+Way:</span></p>
+<p><span style=" font-size:0.83rem"># Aligned with an opening
+delimiter.</span></p>
+<p><span style=" font-size:0.83rem">foo = long_function_name(var_four,
+var_three,</span></p>
+<p><span style=" font-size:0.83rem">                         var_two,
+var_one)</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem"># and some more indentation included
+so this is distinguished from the rest of the code</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem">def long_function_name(</span></p>
+<p><span style=" font-size:0.83rem">        var_four, var_three,
+var_two,</span></p>
+<p><span style=" font-size:0.83rem">        var_one):</span></p>
+<p><span style=" font-size:0.83rem">    print(var_four)</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem"># Hanging indents should be used to
+add a level.</span></p>
+<p><span style=" font-size:0.83rem">foo = long_function_name(</span></p>
+<p><span style=" font-size:0.83rem">    var_four, var_three,</span></p>
+<p><span style=" font-size:0.83rem">    var_two, var_one)</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">The Wrong
+Way:</span></p>
+<p><span style=" font-size:0.83rem"># Arguments on first line are
+forbidden when you are not using vertical alignment.</span></p>
+<p><span style=" font-size:0.83rem">foo = long_function_name(var_four,
+var_three,</span></p>
+<p><span style=" font-size:0.83rem">    var_two, var_one)</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem"># More indentation is required as
+the indentation is not distinguishable from the rest.</span></p>
+<p><span style=" font-size:0.83rem">def long_function_name(</span></p>
+<p><span style=" font-size:0.83rem">    var_four, var_three,
+var_two,</span></p>
+<p><span style=" font-size:0.83rem">    var_one):</span></p>
+<p><span style=" font-size:0.83rem">    print(var_four)</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">When it comes to continuation lines,
+the rule on 4 indent spaces is optional:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:0.83rem"># it is possible for hanging indents
+*to* be indented to more or less than 4 spaces.</span></p>
+<p><span style=" font-size:0.83rem">foo = long_function_name(</span></p>
+<p><span style=" font-size:0.83rem">  var_four, var_three,</span></p>
+<p><span style=" font-size:0.83rem">  var_two, var_one)</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">When you use an if-statement with a
+long condition that can be written over more than one line, note that
+there is an easy to create a natural indent of 4 spaces for the rest of
+the lines in the conditional – use a keyword of 2 characters (for
+example, if) along with one space and an opening parenthesis. However,
+visually, this can look like some kind of incompatibility with the
+indented code within the if-statement, which will already have a 4-space
+indent. There is no real position on whether to distinguish these
+conditional lines from the code inside the nest but there are a few
+acceptable options you can use, including but not limited to:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:0.83rem"># No extra indentation
+used.</span></p>
+<p><span style=" font-size:0.83rem">if (this_is_one_thing and</span></p>
+<p><span style=" font-size:0.83rem">   
+that_is_something_else):</span></p>
+<p><span style=" font-size:0.83rem">    do_this()</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem"># Add a comment, which will provide
+some help in the editors</span></p>
+<p><span style=" font-size:0.83rem"># supporting highlighting of
+syntax.</span></p>
+<p><span style=" font-size:0.83rem">if (this_is_one_thing and</span></p>
+<p><span style=" font-size:0.83rem">   
+that_is_something_else):</span></p>
+<p><span style=" font-size:0.83rem">    # as both conditions are true,
+we can tweak.</span></p>
+<p><span style=" font-size:0.83rem">    do_this()</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem"># Add more indentation to the
+conditional continuation line.</span></p>
+<p><span style=" font-size:0.83rem">if (this_is_one_thing</span></p>
+<p><span style=" font-size:0.83rem">        and
+that_is_something_else):</span></p>
+<p><span style=" font-size:0.83rem">    do_this()</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">Now, when you have a construction of
+multiple lines, the closing brace, parentheses, or bracket can line up
+in one of two places – either beneath the beginning character that is
+NOT a white space on the end line of the list:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:0.83rem">my_list = [</span></p>
+<p><span style=" font-size:0.83rem">    6, 5, 4,</span></p>
+<p><span style=" font-size:0.83rem">    3, 2, 1,</span></p>
+<p><span style=" font-size:0.83rem">    ]</span></p>
+<p><span style=" font-size:0.83rem">result =
+a_function_that_will_take_arguments(</span></p>
+<p><span style=" font-size:0.83rem">    'f', 'e', 'd',</span></p>
+<p><span style=" font-size:0.83rem">    'c', 'b', 'a',</span></p>
+<p><span style=" font-size:0.83rem">    )</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">Or it can be lined up beneath the
+beginning character of the first line in the multiple line
+construction:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:0.83rem">my_list = [</span></p>
+<p><span style=" font-size:0.83rem">    6, 5, 4,</span></p>
+<p><span style=" font-size:0.83rem">    3, 2, 1,</span></p>
+<p><span style=" font-size:0.83rem">]</span></p>
+<p><span style=" font-size:0.83rem">result =
+a_function_that_will_take_arguments(</span></p>
+<p><span style=" font-size:0.83rem">    'f', 'e', 'd',</span></p>
+<p><span style=" font-size:0.83rem">    'c', 'b', 'a',</span></p>
+<p><span style=" font-size:0.83rem">)</span></p>
+<div style="page-break-after:always">
+
+</div>
+<br />
+
+</p>
+<p><span style=" font-size:1.3rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:1.3rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:1.3rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:1.3rem; font-weight:bold"> </span></p>
+<p><span id="part0000.xhtml_Chapter4"><span
+style=" font-size:2.3rem; font-weight:bold; ">Chapter 4: </span><br />
+<span
+style=" font-size:2.3rem; font-weight:bold; ">Idioms</span></span></p>
+<p><span style=" font-size:0.92rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">Programming idioms are, in simple
+terms, the way in which Python code should be written. We often refer to
+idiomatic code as Pythonic code and, although there tends to be one very
+obvious way to write something, the actual way in which Pythonic code is
+written can be a bit obscure to those who are new to Python. So, you
+need to learn good idioms and some of the more common ones
+are:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span
+style=" font-size:1.2rem; font-weight:bold">Unpacking</span></p>
+<p><span style=" font-size:1.0rem">Provided you know how long a tuple or
+list is, unpacking allows you to give each element a name. For
+example</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">,</span><span
+style=" font-size:0.83rem; font-weight:bold">enumerate(</span><span
+style=" font-size:0.83rem; font-weight:bold ;letter-spacing:0.21rem">)</span><span
+style=" font-size:0.83rem"> </span><span style=" font-size:1.0rem">gives
+us a tuple with 2 elements for each of the items in the list:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:0.83rem; font-weight:bold">for the index,
+each item in enumerate(this_list):</span></p>
+<p><span style=" font-size:0.83rem; font-weight:bold">    # do something
+with the index and each item</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">You can also use unpacking to swap
+the variables:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:0.83rem; font-weight:bold">b, a = a,
+b</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">And you can use nested
+unpacking:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:0.83rem; font-weight:bold">c, (b, a) = 3, (2,
+1)</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">When Python 3 was implemented, it
+came with a new extended unpacking method:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:0.83rem; font-weight:bold">c *the_rest = [3,
+2, 1]</span></p>
+<p><span style=" font-size:0.83rem; font-weight:bold"># c = 3, the_rest
+= [2, 1]</span></p>
+<p><span style=" font-size:0.83rem; font-weight:bold">c, *the_middle, c
+= [4, 3, 2, 1]</span></p>
+<p><span style=" font-size:0.83rem; font-weight:bold"># c = 4,
+the_middle = [3, 2], c = 1</span></p>
+<p><span style=" font-size:0.83rem; font-weight:bold"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Creating Ignored
+Variables</span></h2>
+<p><span style=" font-size:1.0rem">If you wanted to assign something but
+do not need to use the variable, you would use __. For
+example:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:0.83rem">filename = 'footbar.txt'</span></p>
+<p><span style=" font-size:0.83rem">basename, __, ext =
+filename.rpartition('.')</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">NOTE</span></p>
+<p><span style=" font-size:1.0rem">You will often see it recommended
+that you use a single underscore (_) for variables that are throwaway,
+rather than using a double underscore(__). The problem with this is,
+“-“, the single underscore, tends to be used in th</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">e</span><span
+style=" font-size:0.83rem; font-weight:bold">gettext(</span><span
+style=" font-size:0.83rem; font-weight:bold ;letter-spacing:0.21rem">)</span><span
+style=" font-size:0.83rem"> </span><span
+style=" font-size:1.0rem">function as an alias. It is also used to store
+the value of the previous operation at the interactive prompt. When you
+use a double underscore, “__”, it is clear and it is convenient. It also
+cuts out the accidental risk of interfering with the other use cases of
+the single underscore.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Creating Length-N
+Lists</span></h2>
+<p><span style=" font-size:1.0rem">To create a length-N list that is of
+the same thing, you would use the * list operator</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:0.83rem; font-weight:bold">four_zeros =
+[Zero] * 4</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">To create a length-N list of a list
+you should not use the * operator. That operator creates lists of N that
+refer to the same list and that is not what we want here. Instead, we
+use a list comprehension:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:0.83rem">four_lists = [[] for __ in
+xrange(4)]</span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">Note – </span><span
+style=" font-size:1.0rem; font-weight:normal">If you are using Python 3,
+use </span><span
+style=" font-size:1.0rem; font-weight:bold">range()</span><span
+style=" font-size:1.0rem; font-weight:normal"> and not </span><span
+style=" font-size:1.0rem; font-weight:bold">xrange()</span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Creating Strings from
+Lists</span></h2>
+<p><span style=" font-size:1.0rem">The most common idiom for creating
+strings is </span><span
+style=" font-size:1.0rem; font-weight:bold">str.join()</span><span
+style=" font-size:1.0rem"> on empty strings:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:0.83rem; font-weight:bold">letters = [‘c’,
+‘l’, o, 't']</span></p>
+<p><span style=" font-size:0.83rem; font-weight:bold">word =
+''.join(letters)</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">This sets a value of “clot” to the
+variable </span><span
+style=" font-size:1.0rem; font-style:italic">word</span><span
+style=" font-size:1.0rem; font-weight:bold; font-style:italic">.
+</span><span style=" font-size:1.0rem">You can apply this idiom to
+tuples and lists.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Searching a Collection for
+an Item</span></h2>
+<p><span style=" font-size:1.0rem">On occasion, you will need to search
+a collection for a specific option and there are two ways to do this –
+using lists or sets</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">Look at this example:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:0.83rem; font-weight:bold">s = set(['c', 'l',
+'o', 't'])</span></p>
+<p><span style=" font-size:0.83rem; font-weight:bold">l = ['c', 'l',
+'o', 't']</span></p>
+<p><span style=" font-size:0.83rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:0.83rem; font-weight:bold">def
+lookup_set(s):</span></p>
+<p><span style=" font-size:0.83rem; font-weight:bold">    return 's' in
+s</span></p>
+<p><span style=" font-size:0.83rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:0.83rem; font-weight:bold">def
+lookup_list(l):</span></p>
+<p><span style=" font-size:0.83rem; font-weight:bold">    return 's' in
+l</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">Now, both of these functions look
+exactly the same simply becaus</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">e</span><span
+style=" font-size:0.83rem; font-weight:bold">lookup_se</span><span
+style=" font-size:0.83rem; font-weight:bold ;letter-spacing:0.21rem">t</span><span
+style=" font-size:0.83rem"> </span><span style=" font-size:1.0rem">uses
+that fact that Python sets are hash tables. However, the performance
+o</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">f</span><span
+style=" font-size:0.83rem; font-weight:bold">looku</span><span
+style=" font-size:0.83rem; font-weight:bold ;letter-spacing:0.21rem">p</span><span
+style=" font-size:0.83rem"> </span><span style=" font-size:1.0rem">in
+each of the examples is different. In order to decide whether a specific
+item is contained in a list, Python has to search through every single
+item until it finds one that matches. This takes time, especially if you
+have a long list. With sets, each item has a hash that tells Python
+where to look for the matching item. This makes the search much quicker
+even if the sets are big ones. You can also search dictionaries in the
+same way. Because there is a difference in the performance, it is a
+better idea to use a set or a dictionary rather than a list in the
+following cases:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">Where a collection contains a lot of
+items</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">Where you are going to be searching
+for items in a collection on a repeated basis</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">There are no duplicate
+items</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">In cases of smaller collections or
+those that you are not likely to be searching on a frequent basis, the
+extra memory and time needed to set the hash table up will, more often
+than not, be more than the time you save by improving the speed of the
+search</span></p>
+<div style="page-break-after:always">
+
+</div>
+<br />
+
+</p>
+<p><span style=" font-size:0.92rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:0.92rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:0.92rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:0.92rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:0.92rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:0.92rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:0.92rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:0.92rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:0.92rem; font-weight:bold"> </span></p>
+<p><span id="part0000.xhtml_Chapter5"><span
+style=" font-size:2.3rem; font-weight:bold; ">Chapter 5: </span><br />
+<span
+style=" font-size:2.3rem; font-weight:bold; ">Comments</span></span></p>
+<p><span style="-aw-bookmark-end:Chapter5"></span><span
+style=" font-size:0.92rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">Because you already have some
+experience of Python coding, you will know that a comment is invisible
+when the program is run. A comment is there to help the coder and others
+who read it to understand what has been done and why. Now, some people
+think that, because they are invisible then there is no need to write
+them while others write comments that make no sense and that contradict
+their code. I have to tell you that, out of the two, having a
+contradictory comment is far worse than not writing one at all and, as
+such, whenever you make changes to your code, you must make sure that
+you update your comments. </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">When you write a comment, ensure that
+it is a proper sentence with a proper ending. As it is when you write
+anything, your comment, be it a sentence or a phrase, must have a
+capital letter to start it. The only exception to that rule is if it is
+an identifier that starts with a lower-case letter – a golden rule here
+is that you NEVER change the case of an identifier!</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">If you are using a short comment you
+can leave off the full-stop at the end. If you are writing block
+comments, these tend to be made up of at least one paragraph, sometimes
+more, each one built from whole sentences. Each of these sentences must
+have a full-stop. Following each full-stop there should be 2 spaces and
+all comments should be written in English. The only exception to this is
+if you are 200% certain that your code is never going to be read by
+people who do not speak or read your language</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Block Comments:</span></h2>
+<p><span style=" font-size:1.0rem">A block comment tends to apply to
+some or all of the code that comes after it. The comment should be
+indented in the exact same way as the code it refers to and each line of
+each block must begin with a # and one space. The only exception is if
+you have used indented text within the comment. All paragraphs in each
+block comment must be separated with a line that contains one
+#.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Inline Comments</span></h2>
+<p><span style=" font-size:1.0rem">These should be used as little as
+possible. As a refresher, an inline comment is a comment that is placed
+on the same line that a statement is on. An inline comment has to be
+separated from the statement by a minimum of two spaces and they must
+begin with one # and one space.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">In all honesty, you should avoid
+using inline comments because they are not really necessary and can
+cause an unwanted distraction. </span></p>
+<p><br />
+<span style=" font-size:1.0rem">For example, you should never do
+this:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:0.83rem">x = x + 1                 #
+Increment x</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">However, sometimes, this could be
+useful:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:0.83rem">x = x + 1                 #
+Compensate for the border</span></p>
+<div style="page-break-after:always">
+
+</div>
+<br />
+
+</p>
+<h1
+style="margin:0.00% 0.00%; text-align:center; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:2.3rem"><span
+id="part0000.xhtml__Toc470673555"></span><span
+id="part0000.xhtml__Toc470811350"><br />
+<br />
+</span><span id="part0000.xhtml_Chapter6"><span
+style=" font-size:2.3rem; font-weight:bold; ">Chapter 6: </span><br />
+<span
+style=" font-size:2.3rem; font-weight:bold; ">Conventions</span></span><br />
+<br />
+<span style="-aw-bookmark-end:_Toc470673555"></span><span
+style="-aw-bookmark-end:_Toc470811350"></span><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<p><span style=" font-size:0.92rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">To make your Python code much read
+better, follow these conventions:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">Look to see if your variables are
+equal to a constant. There is no need for an explicit comparison of the
+values to 0, None or True; instead, you could add it into the
+if-statement. Look at the following examples:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem">if attr == True:</span></p>
+<p><span style=" font-size:0.83rem">    print 'True!'</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem">if attr == None:</span></p>
+<p><span style=" font-size:0.83rem">    print 'attr is None!'</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Good
+Example:</span></p>
+<p><span style=" font-size:0.83rem"># Just look at the value</span></p>
+<p><span style=" font-size:0.83rem">if attr:</span></p>
+<p><span style=" font-size:0.83rem">    print 'attr is the
+best!'</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem"># or check to see what the opposite
+is</span></p>
+<p><span style=" font-size:0.83rem">if not attr:</span></p>
+<p><span style=" font-size:0.83rem">    print 'attr is the
+worst!'</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem"># or, as None is considered to be
+false, make you sure you run an explicit check for it</span></p>
+<p><span style=" font-size:0.83rem">if attr is None:</span></p>
+<p><span style=" font-size:0.83rem">    print 'attr is
+None!'</span><span
+style="width:3.45pt; text-indent:0.0em; display:none; -aw-tabstop-align:left; -aw-tabstop-pos:118.5pt"
+data-amznremoved-m8="true" data-amznremoved="mobi7"></span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">How to Access Dictionary
+Elements:</span></h2>
+<p><span style=" font-size:1.0rem">Instead of using the method
+</span><span style=" font-size:1.0rem; font-weight:bold">dict.has-key(),
+</span><span style=" font-size:1.0rem">use the syntax, </span><span
+style=" font-size:1.0rem; font-weight:bold">x in d</span><span
+style=" font-size:1.0rem"> or use </span><span
+style=" font-size:1.0rem; font-weight:bold">dict.get()</span><span
+style=" font-size:1.0rem"> to pass default arguments to.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem">d = {'hello': 'world'}</span></p>
+<p><span style=" font-size:0.83rem">if d.has_key('hello'):</span></p>
+<p><span style=" font-size:0.83rem">    print d['hello']    # prints
+'world'</span></p>
+<p><span style=" font-size:0.83rem">else:</span></p>
+<p><span style=" font-size:0.83rem">    print
+'the_default_value'</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Good
+Example</span><span style=" font-size:1.0rem">:</span></p>
+<p><span style=" font-size:0.83rem">d = {'hello': 'world'}</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem">print d.get('hello',
+'default_value') # prints 'world'</span></p>
+<p><span style=" font-size:0.83rem">print d.get('thingy',
+'default_value') # prints 'default_value'</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem"># Or:</span></p>
+<p><span style=" font-size:0.83rem">if 'hello' in d:</span></p>
+<p><span style=" font-size:0.83rem">    print d['hello']</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Manipulate Lists the Short
+Way</span></h2>
+<p><span style=" font-size:1.0rem">You don’t need to be long-winded when
+it comes to manipulating lists; use list comprehensions or the
+</span><span
+style=" font-size:1.0rem; font-weight:bold">filter()</span><span
+style=" font-size:1.0rem"> or </span><span
+style=" font-size:1.0rem; font-weight:bold">map()</span><span
+style=" font-size:1.0rem"> functions to use concise syntax when you want
+to perform an operation on a list.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem"># Filter all elements that are more
+than 4</span></p>
+<p><span style=" font-size:0.83rem">a = [5, 4, 3]</span></p>
+<p><span style=" font-size:0.83rem">b = []</span></p>
+<p><span style=" font-size:0.83rem">for i in a:</span></p>
+<p><span style=" font-size:0.83rem">    if i &gt; 4:</span></p>
+<p><span style=" font-size:0.83rem">        b.append(i)</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Good
+Example:</span></p>
+<p><span style=" font-size:0.83rem">a = [5, 4, 3]</span></p>
+<p><span style=" font-size:0.83rem">b = [i for i in a if i &gt;
+4]</span></p>
+<p><span style=" font-size:0.83rem"># Or:</span></p>
+<p><span style=" font-size:0.83rem">b = filter(lambda x: x &gt; 4,
+a)</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">Another Bad
+Example</span><span style=" font-size:1.0rem">:</span></p>
+<p><span style=" font-size:0.83rem"># Add 3 to all members f the
+list.</span></p>
+<p><span style=" font-size:0.83rem">a = [5, 4, 3]</span></p>
+<p><span style=" font-size:0.83rem">for i in range(len(a)):</span></p>
+<p><span style=" font-size:0.83rem">    a[i] += 3</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">Another Good
+Example</span><span style=" font-size:1.0rem">:</span></p>
+<p><span style=" font-size:0.83rem">a = [5, 4, 3]</span></p>
+<p><span style=" font-size:0.83rem">a = [i + 3 for i in a]</span></p>
+<p><span style=" font-size:0.83rem"># Or:</span></p>
+<p><span style=" font-size:0.83rem">a = map(lambda i: i + 3,
+a)</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">You can also use the function
+</span><span
+style=" font-size:1.0rem; font-weight:bold">enumerate()</span><span
+style=" font-size:1.0rem"> to keep an account of where you are in a
+list:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:0.83rem">a = [5, 4, 3]</span></p>
+<p><span style=" font-size:0.83rem">for i, item in
+enumerate(a):</span></p>
+<p><span style=" font-size:0.83rem">    print i, item</span></p>
+<p><span style=" font-size:0.83rem"># prints</span></p>
+<p><span style=" font-size:0.83rem"># 0 5</span></p>
+<p><span style=" font-size:0.83rem"># 1 4</span></p>
+<p><span style=" font-size:0.83rem"># 2 3</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">This function reads better than
+trying to manually handle a counter and it is far more optimal for
+iterators</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Reading from a
+File</span></h2>
+<p><span style=" font-size:1.0rem">When you want to read from a file, it
+is best to use the </span><span
+style=" font-size:1.0rem; font-weight:bold">with open</span><span
+style=" font-size:1.0rem"> syntax as this will close the files for you
+automatically.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem">f = open('file.txt')</span></p>
+<p><span style=" font-size:0.83rem">a = f.read()</span></p>
+<p><span style=" font-size:0.83rem">print a</span></p>
+<p><span style=" font-size:0.83rem">f.close()</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Good
+Example</span><span style=" font-size:1.0rem">:</span></p>
+<p><span style=" font-size:0.83rem">with open('file.txt') as
+f:</span></p>
+<p><span style=" font-size:0.83rem">    for line in f:</span></p>
+<p><span style=" font-size:0.83rem">        print line</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">Using the </span><span
+style=" font-size:1.0rem; font-weight:bold">with</span><span
+style=" font-size:1.0rem"> statement is far more efficient because it
+makes sure the file is always closed even when the </span><span
+style=" font-size:1.0rem; font-weight:bold">with</span><span
+style=" font-size:1.0rem"> block contains an exception</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Line
+Continuations</span></h2>
+<p><span style=" font-size:1.0rem">There are accepted limits to logical
+code lines and when you have one that is longer, it should be split up
+over several lines. Your Python interpreter will take consecutive lines
+and, so long as the final character on each line is a backslash (/), it
+will join the lines. However, although this can be useful sometimes,
+really you should avoid doing it because it can be fragile. If you were
+to add a whitespace after the backslash, it can break your code and the
+results might not be what you expected. </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">A better way to do this is to enclose
+elements inside parentheses. If there is an unclosed parenthesis at the
+end of the line, the next line will be joined, and so on until there is
+a closed parenthesis. You could also use square or curly braces to do
+the same thing, so long as you remain consistent – whatever you use to
+start, you must also use to finish.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem">an_incredibly_big_string = """For
+many years I would go to bed early. Sometimes, \</span></p>
+<p><span style=" font-size:0.83rem">    after I had put out my light, my
+eyes would shut so fast that I would not even \</span></p>
+<p><span style=" font-size:0.83rem">    have the time to say “I am going
+to sleep.”"""</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem">from
+some.module.inside.another.module import a_good_function,
+another_good_function, \</span></p>
+<p><span style=" font-size:0.83rem">   
+yet_another_good_function</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Good
+Example</span><span style=" font-size:1.0rem">:</span></p>
+<p><span style=" font-size:0.83rem">my_incredibly_big_string =
+(</span></p>
+<p><span style=" font-size:0.83rem">    "For many years, I would go to
+bed early. Sometimes, "</span></p>
+<p><span style=" font-size:0.83rem">    "when I had put out my light, my
+eyes would shut so fast "</span></p>
+<p><span style=" font-size:0.83rem">    "that I would not even have time
+to say “I am going to sleep.”"</span></p>
+<p><span style=" font-size:0.83rem">)</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem">from
+some.module.inside.another.module import (</span></p>
+<p><span style=" font-size:0.83rem">    a_good_function,
+another_good_function, yet_another_good_function)</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">That said, if you find that you are
+having to keep on splitting up long lines, it is just a sign that you
+are trying to do too much and this will affect the readability of the
+code</span></p>
+<div style="page-break-after:always">
+
+</div>
+<br />
+
+</p>
+<h1
+style="margin:0.00% 0.00%; text-align:center; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:2.3rem"><span
+id="part0000.xhtml__Toc470673556"></span><span
+id="part0000.xhtml__Toc470811351"><br />
+<br />
+</span><span id="part0000.xhtml_Chapter7"><span
+style=" font-size:2.3rem; font-weight:bold; ">Chapter 7: </span><br />
+<span style=" font-size:2.3rem; font-weight:bold; ">Method and Function
+Arguments</span></span></h1>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><br />
+<span style="-aw-bookmark-end:_Toc470673556"></span><span
+style="-aw-bookmark-end:_Toc470811351"></span><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<p><span style=" font-size:0.92rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">For the first argument in any
+instance method always use self and, for the first argument in any class
+method, always use cls. </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">If the name of a function’s argument
+is the same as one of the reserved keywords, then it is best to add one
+trailing underscore than it is to use a corrupted spelling or an
+abbreviation. As such, you shoul</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">d</span><span
+style=" font-size:0.83rem">class</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">_</span><span
+style=" font-size:1.0rem">rather tha</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">n</span><span
+style=" font-size:0.83rem">clss.</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem"> </span><span
+style=" font-size:1.0rem">Perhaps even better than causing a clash - use
+a synonym.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Function
+Arguments</span></h2>
+<p><span style=" font-size:1.0rem">There are 4 ways that you can pass an
+argument to a function:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ol type="1">
+<li><span style=" font-size:1.0rem; font-weight:bold">Positional
+Argument</span><span style=" font-size:1.0rem"> – these are mandatory
+and do not contain any default values. The positional is the simplest
+argument form and are used for the arguments that are a complete part of
+the meaning of a function; they also have a natural order so, in the
+following example, the function user should find it easy to remember
+that the 2 functions need 2 arguments and they should remember the
+order:</span></li>
+</ol>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:0.83rem; font-weight:bold">Send(message,
+recipient</span><span
+style=" font-size:0.83rem; font-weight:bold ;letter-spacing:0.21rem">)</span><span
+style=" font-size:1.0rem; font-weight:normal">an</span><span
+style=" font-size:1.0rem; font-weight:normal ;letter-spacing:0.25rem">d</span><span
+style=" font-size:0.83rem; font-weight:bold">point(x, y)</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem">In both cases, you can use the
+argument names when you call the functions and, by doing this, you can
+change the order the arguments are in. For example, you could
+cal</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">l</span><span
+style=" font-size:0.83rem; font-weight:bold">send(recipient=’world’,
+message=’Hello’</span><span
+style=" font-size:0.83rem; font-weight:bold ;letter-spacing:0.21rem">)</span><span
+style=" font-size:1.0rem">an</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">d</span><span
+style=" font-size:0.83rem; font-weight:bold">point(y=2, x=1)</span><span
+style=" font-size:0.83rem; font-weight:bold ;letter-spacing:0.21rem">.</span><span
+style=" font-size:1.0rem">However, as you can see from this, it is not
+very readable and there are way more words there than we need.  Compare
+that version to the one that is more straightforward </span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">–</span><span
+style=" font-size:0.83rem; font-weight:bold">send(‘Hello’,
+‘World’)</span><span style=" font-size:0.83rem"> </span><span
+style=" font-size:1.0rem">an</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">d</span><span
+style=" font-size:1.0rem"> </span><span
+style=" font-size:0.83rem; font-weight:bold">point(1,2</span><span
+style=" font-size:0.83rem; font-weight:bold ;letter-spacing:0.21rem">)</span><span
+style=" font-size:1.0rem">and you can see the difference in readability
+instantly.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ol start="2" type="1">
+<li><span style=" font-size:1.0rem; font-weight:bold">Keyword Argument –
+</span><span style=" font-size:1.0rem; font-weight:normal">these do
+contain default values and they are not mandatory. Keyword arguments are
+sometimes used for optional parameters that you send to the function.
+When a function contains at least 2 or 3, preferably more, positional
+parameters, it is not easy to remember. Using a keyword argument that
+has a default value is more helpful. For example, you could define a
+complete </span><span
+style=" font-size:1.0rem; font-weight:bold">send</span><span
+style=" font-size:1.0rem; font-weight:normal">function a</span><span
+style=" font-size:1.0rem; font-weight:normal ;letter-spacing:0.25rem">s</span><span
+style=" font-size:0.83rem; font-weight:bold">send(message, to, cc=None,
+bcc=None)</span><span
+style=" font-size:0.83rem; font-weight:bold ;letter-spacing:0.21rem">.</span><span
+style=" font-size:1.0rem; font-weight:normal">The use o</span><span
+style=" font-size:1.0rem; font-weight:normal ;letter-spacing:0.25rem">f</span><span
+style=" font-size:0.83rem; font-weight:normal">c</span><span
+style=" font-size:0.83rem; font-weight:normal ;letter-spacing:0.21rem">c</span><span
+style=" font-size:0.83rem; font-weight:normal"> </span><span
+style=" font-size:1.0rem; font-weight:normal">an</span><span
+style=" font-size:1.0rem; font-weight:normal ;letter-spacing:0.25rem">d</span><span
+style=" font-size:0.83rem; font-weight:normal">bc</span><span
+style=" font-size:0.83rem; font-weight:normal ;letter-spacing:0.21rem">c</span><span
+style=" font-size:0.83rem; font-weight:normal"> </span><span
+style=" font-size:1.0rem; font-weight:normal">is optional and both have
+a value o</span><span
+style=" font-size:1.0rem; font-weight:normal ;letter-spacing:0.25rem">f</span><span
+style=" font-size:0.83rem; font-weight:normal">Non</span><span
+style=" font-size:0.83rem; font-weight:normal ;letter-spacing:0.21rem">e</span><span
+style=" font-size:0.83rem; font-weight:normal"> </span><span
+style=" font-size:1.0rem; font-weight:normal">if they are not given
+another value.</span></li>
+</ol>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:normal">There are a few
+ways that you can call a function with a keyword argument in Python. For
+example, you could follow the argument order in a definition and no
+explicitly name those arguments; for example</span><span
+style=" font-size:1.0rem; font-weight:normal ;letter-spacing:0.25rem">,</span><span
+style=" font-size:0.83rem; font-weight:bold">send(‘Hello’, ‘World’,
+‘Galactus’, ‘God’)</span><span
+style=" font-size:0.83rem; font-weight:bold ;letter-spacing:0.21rem">.</span><span
+style=" font-size:0.83rem; font-weight:bold"> </span><span
+style=" font-size:1.0rem; font-weight:normal">In this, you are sending a
+carbon copy of the message to Galactus and a blind carbon copy to God.
+You can also name the arguments in a different order, for
+example</span><span
+style=" font-size:1.0rem; font-weight:normal ;letter-spacing:0.25rem">,</span><span
+style=" font-size:0.83rem; font-weight:bold">send(‘Helloagain’, ‘World’,
+bcc=’God’, cc=’Galactus’)</span><span
+style=" font-size:0.83rem; font-weight:bold ;letter-spacing:0.21rem">.</span><span
+style=" font-size:0.83rem; font-weight:bold"> </span><span
+style=" font-size:1.0rem; font-weight:normal">Unless you have a very
+good reason not to follow the correct syntax as closely as possible,
+these two examples are best avoided; they are verbose and not readable.
+The best way, the way that is closest to the function definition,
+i</span><span
+style=" font-size:1.0rem; font-weight:normal ;letter-spacing:0.25rem">s</span><span
+style=" font-size:0.83rem; font-weight:bold">send(‘Hello’, ‘World’,
+cc=’Galactus’, bcc=’God’).</span></p>
+<p><span style=" font-size:0.83rem; font-weight:bold"> </span></p>
+<ol start="3" type="1">
+<li><span style=" font-size:1.0rem; font-weight:bold">Arbitrary Argument
+List - T</span><span style=" font-size:1.0rem">his is the next way of
+passing an argument to a function. Sometimes, the intention of a
+function is better expressedwith a signature that has a number of
+positional arguments, a number that can be extended. In that case, you
+are better using th</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">e</span><span
+style=" font-size:0.83rem; font-weight:bold">*arg</span><span
+style=" font-size:0.83rem; font-weight:bold ;letter-spacing:0.21rem">s</span><span
+style=" font-size:0.83rem"> </span><span
+style=" font-size:1.0rem">constructs to define it. In the body of the
+argument</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">,</span><span
+style=" font-size:0.83rem; font-weight:bold">arg</span><span
+style=" font-size:0.83rem; font-weight:bold ;letter-spacing:0.21rem">s</span><span
+style=" font-size:0.83rem"> </span><span style=" font-size:1.0rem">is a
+tuple of all of the positional arguments that are left. For example, you
+can us</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">e</span><span
+style=" font-size:0.83rem; font-weight:bold">send(message,
+*args</span><span
+style=" font-size:0.83rem; font-weight:bold ;letter-spacing:0.21rem">)</span><span
+style=" font-size:0.83rem"> </span><span style=" font-size:1.0rem">and
+list all of the recipients as a separate argument</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">:</span><span
+style=" font-size:0.83rem; font-weight:bold">send(’Hello’, ‘Galactus’,
+‘Dad’, ‘God’</span><span
+style=" font-size:0.83rem; font-weight:bold ;letter-spacing:0.21rem">)</span><span
+style=" font-size:0.83rem; font-weight:bold"> </span><span
+style=" font-size:1.0rem; font-weight:bold">– </span><span
+style=" font-size:1.0rem">in the body of the function</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">,</span><span
+style=" font-size:0.83rem; font-weight:bold">*arg</span><span
+style=" font-size:0.83rem; font-weight:bold ;letter-spacing:0.21rem">s</span><span
+style=" font-size:0.83rem"> </span><span style=" font-size:1.0rem">is
+equal t</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">o</span><span
+style=" font-size:0.83rem; font-weight:bold">(‘Galactus’, ‘Dad’,
+‘God’)</span></li>
+</ol>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">However, you should really use this
+construct cautiously because it does have some drawbacks. If a function
+is sent a list that contains arguments that are of the same or similar
+nature, a better definition would be a function of a single argument;
+that single argument would be a sequence or a list. For example,
+i</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">f</span><span
+style=" font-size:0.83rem; font-weight:bold">sen</span><span
+style=" font-size:0.83rem; font-weight:bold ;letter-spacing:0.21rem">d</span><span
+style=" font-size:0.83rem"> </span><span style=" font-size:1.0rem">had
+several recipients, you would be better with an explicit
+definition</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">:</span><span
+style=" font-size:0.83rem; font-weight:bold">send(‘Hello’, ‘God’, ‘Dad’,
+‘Galactus’</span><span
+style=" font-size:0.83rem; font-weight:bold ;letter-spacing:0.21rem">)</span><span
+style=" font-size:0.83rem"> </span><span style=" font-size:1.0rem">and
+then call it by usin</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">g</span><span
+style=" font-size:0.83rem; font-weight:bold">send(‘Hello’,[‘God’, ‘Dad’,
+‘Galactus’])</span><span
+style=" font-size:0.83rem; font-weight:bold ;letter-spacing:0.21rem">.</span><span
+style=" font-size:0.67rem; font-weight:bold"> </span><span
+style=" font-size:1.0rem">In this way, the function user can change the
+recipient list beforehand and that opens up the possibility for any
+sequence that can’t be unpacked to be passed, and that includes
+iterators.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ol start="4" type="1">
+<li><span style=" font-size:1.0rem; font-weight:bold">Arbitrary Keyword
+Argument Dictionary - </span><span style=" font-size:1.0rem">This is
+final way of passing an argument to a function. If a function needs an
+unknown array of named arguments, you can use the construc</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">t</span><span
+style=" font-size:0.83rem; font-weight:bold">**kwarg</span><span
+style=" font-size:0.83rem; font-weight:bold ;letter-spacing:0.21rem">s</span><span
+style=" font-size:1.0rem">. Within the body of the function,
+</span><span
+style=" font-size:1.0rem; font-weight:bold">**kwargs</span><span
+style=" font-size:1.0rem"> is a dictionary that contains all of the
+named arguments that have been passed and not caught by another keyword
+argument in the signature of the function</span></li>
+</ol>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">However, you should use the same
+level of caution that you did with arbitrary argument lists, for pretty
+much the same reasons. These are powerful techniques that should only be
+used when you can prove that it is necessary to use them. They most
+definitely should not be used if there is a clearer and simpler
+construct that will do the job.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">It really is down to you, the
+programmer, to decide which of the function arguments are optional
+keywords and which are positional and to determine whether you should
+use the more advanced techniques to pass the arguments. </span><br />
+<br />
+<span style=" font-size:1.0rem">Keep it simple and follow these rules of
+writing Python functions that:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">Are readable – the names and the
+arguments do not need any explanations</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">Are easily changeable – you can add
+a keyword argument in without the rest of the code breaking.</span></li>
+</ul>
+<div style="page-break-after:always">
+
+</div>
+<br />
+
+</p>
+<h1
+style="margin:0.00% 0.00%; text-align:center; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:2.3rem"><span
+id="part0000.xhtml__Toc470673557"></span><span
+id="part0000.xhtml__Toc470811352"><br />
+<br />
+</span><span id="part0000.xhtml_Chapter8"><span
+style=" font-size:2.3rem; font-weight:bold; ">Chapter 8: </span><br />
+<span style=" font-size:2.3rem; font-weight:bold; ">Naming
+Conventions</span></span><br />
+<br />
+<span style="-aw-bookmark-end:_Toc470673557"></span><span
+style="-aw-bookmark-end:_Toc470811352"></span><span
+style=" font-size:1.3rem; font-weight:bold"> </span></h1>
+<p><span style=" font-size:0.92rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">To be honest, the Python library
+naming conventions are something of a mess so we are never going to be
+totally consistent. However, there are some naming standards that are
+recommended and all new packages and modules, and that includes any
+third-party frameworks, must be written to these standards. That said,
+if you are using an existing library with a different style, stick to
+that style because consistency is preferable, especially in terms of
+readability</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">The first and most important
+principle to learn is that, where you are using names that are a visible
+part of a public API, you must use a convention that reflects that usage
+of the name, rather than the implementation of it.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Descriptive</span></h2>
+<p><span style=" font-size:1.0rem">There are quite a few different
+naming styles so it is helpful to recognize which one is in use,
+independently of the usage. These are the most commonly distinguished
+naming styles:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">B</span><span
+style=" font-size:0.83rem"> </span><span style=" font-size:1.0rem">–
+single uppercase</span></li>
+<li><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">b</span><span
+style=" font-size:0.83rem"> </span><span style=" font-size:1.0rem">–
+single lowercase</span></li>
+<li><span
+style=" font-size:0.83rem">lowercase_with_underscores</span></li>
+<li><span style=" font-size:0.83rem">lowercase</span></li>
+<li><span
+style=" font-size:0.83rem">UPPERCASE_WITH_UNDERSCORES</span></li>
+<li><span style=" font-size:0.83rem">UPPERCASE</span></li>
+<li><span style=" font-size:0.83rem">CapitalizedWord</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">s</span><span
+style=" font-size:0.83rem"> </span><span style=" font-size:1.0rem">–
+often called CamelCase because the letters look somewhat
+bumpy*</span></li>
+<li><span style=" font-size:0.83rem">mixedCas</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">e</span><span
+style=" font-size:0.83rem"> </span><span style=" font-size:1.0rem">–
+different from CamelCase because the first letter is in
+lowercase</span></li>
+<li><span style=" font-size:0.83rem">Capital_Words_With_Underscore
+</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">–</span><span
+style=" font-size:1.0rem">not a pretty style!</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">* When you use abbreviations in
+CamelCase, you should make sure all of the abbreviation letters are
+capitalized. For example, rather than usin</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">g</span><span
+style=" font-size:0.83rem">HttpServerError</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">,</span><span
+style=" font-size:1.0rem">us</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">e</span><span
+style=" font-size:0.83rem">HTTPServerErro</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">r</span><span
+style=" font-size:1.0rem">instead</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">You can also use another style, that
+of putting a unique prefix, a short one, that puts a group of related
+names together. This doesn’t get used very much in Python but I mention
+it just so that you know it is there. An example would be the
+functio</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">n</span><span
+style=" font-size:0.83rem">os.stat() </span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">–</span><span
+style=" font-size:1.0rem">this will return a tuple that contains items
+that have names lik</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">e</span><span
+style=" font-size:0.83rem">st_size, st_mode, st_mtim</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">e</span><span
+style=" font-size:1.0rem"> and so on.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">These are some of the forms that use
+a trailing or a leading underscore and can usually be combined with any
+of the case conventions:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:0.83rem">_one_leading_underscore
+</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">–</span><span
+style=" font-size:1.0rem">this is generally an indicator of “internal
+use” that is not very strong. </span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:0.83rem">One_trailing_underscore</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">_</span><span
+style=" font-size:1.0rem">- generally used to stop a conflict with a
+Python keyword, for example</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">:</span><span
+style=" font-size:0.83rem">Apinter.Toplevel(master,class_=’ClassName”)</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span
+style=" font-size:0.83rem">__two_leading_underscore</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">s</span><span
+style=" font-size:1.0rem">– when you name a class attribute, this
+invokes mangling of a name, for example</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">:</span><span
+style=" font-size:0.83rem">(inside class FootBar, __boo)</span><span
+style=" font-size:0.83rem; font-weight:bold"> </span><span
+style=" font-size:1.0rem">would becom</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">e</span><span
+style=" font-size:0.83rem">(_FootBar__boo)</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span
+style=" font-size:0.83rem">__two_leading_and_two_trailing_underscore</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">s</span><span
+style=" font-size:1.0rem">are attributes or “magic” objects that reside
+in a namespace that is user-controlled. For example</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">:</span><span
+style=" font-size:0.83rem">__init__, __file__</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">,</span><span
+style=" font-size:1.0rem">o</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">r</span><span
+style=" font-size:1.0rem"> </span><span
+style=" font-size:0.83rem">__import__.</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Prescriptive</span></h2>
+<p><span style=" font-size:1.0rem">These are the names you should
+avoid:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">Never use ‘O’ (uppercase oh), ‘l’
+(lowercase el) or ‘I’ (uppercase eye) when you are writing variable
+names of a single character. Depending on what font you are using, these
+may be, these can be confused with the numbers ‘0’ and ‘1’ – if you do
+find yourself thinking about using ‘l’, use the uppercase ‘L’
+instead.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Names for Modules and
+Packages</span></h2>
+<p><span style=" font-size:1.0rem">All module names should be short and
+lowercase. You can use an underscore in a module name but only if it
+makes it more readable. The same goes for Python packages – short and
+lowercase names – but don’t use underscores.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">Where you have an extension module
+that has been written in C or in C++ and it is accompanied by a Python
+module that has an interface that is more object-oriented, the C or C++
+module will have a leading underscore, for example</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">,</span><span
+style=" font-size:0.83rem">_socket</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Class Names</span></h2>
+<p><span style=" font-size:1.0rem">Class names usually use the CapWords
+or CamelCase convention. </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">Built-in names have their own
+separate convention and are usually a single word or 2 words in one, for
+example</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">,</span><span
+style=" font-size:0.83rem">‘Hello</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">’</span><span
+style=" font-size:1.0rem">o</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">r</span><span
+style=" font-size:1.0rem"> </span><span
+style=" font-size:0.83rem">‘HelloWorld</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">.</span><span
+style=" font-size:1.0rem">The CamelCase convention tends to be kept for
+built-in constants and for exception names.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Type Variables</span></h2>
+<p><span style=" font-size:1.0rem">The names of the type variables
+usually use CamelCase and short names are preferred, for
+example</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">,</span><span
+style=" font-size:0.83rem">Num, AnyStr.</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem"> </span><span
+style=" font-size:1.0rem">You should add a suffix (_co or _contra) to
+the variables to declare contravariant or covariant behavior. For
+example:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:0.83rem">Import TypeVar</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">Would become</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:0.83rem">VT_co = TypeVar('VT_co',
+covariant=True)</span></p>
+<p><span style=" font-size:0.83rem">KT_contra = TypeVar('KT_contra',
+contravariant=True)</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Names of
+Exceptions</span></h2>
+<p><span style=" font-size:1.0rem">Exceptions are classes and, as such,
+you should use the class convention for naming. That said, if the
+exception is an error, make sure that you use the ‘Error’ suffix on the
+name.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Global Variables</span></h2>
+<p><span style=" font-size:1.0rem">Provided the variable is used inside
+a single module, the naming conventions are the same as for naming
+functions. </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Functions</span></h2>
+<p><span style=" font-size:1.0rem">All function names are in lowercase
+and the words are separated by an underscore where needed to make it
+more readable. mixedCase conventions are only to be used in the context
+where this is already the style in order to keep backward compatibility
+intact.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Instance Variables and
+Method Names</span></h2>
+<p><span style=" font-size:1.0rem">Again, the naming conventions for
+functions apply here – using lowercase with intermittent underscores. If
+you are using an instance variable or a non-public method, you should
+use a single leading underscore. To stop a name from clashing with a
+subclass, two leading underscores should be used as a way of invoking
+the name mangling rules in Python.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">When these rules are invoked, the
+name is mangled with the class name. For example,class Foo contains an
+attribute calle</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">d</span><span
+style=" font-size:0.83rem">__</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">a</span><span
+style=" font-size:1.0rem">. This cannot be accessed usin</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">g</span><span
+style=" font-size:0.83rem">Foo.__a</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">.</span><span
+style=" font-size:1.0rem">As a rule, you should only use a double
+leading underscore when the name is likely to come into conflict with
+class attributes that are designed as subclasses.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold"> </span></h2>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold"> </span></h2>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Constants</span></h2>
+<p><span style=" font-size:1.0rem">These tend to be defined on module
+level and are all uppercase with separating underscores, for
+example</span><span
+style=" font-size:1.0rem ;letter-spacing:0.25rem">,</span><span
+style=" font-size:0.83rem">MAX_OVERFLOW</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Inheritance
+Design</span></h2>
+<p><span style=" font-size:1.0rem">One rule to abide by is to determine
+if the instance variable or class method is non-public or public. If you
+can’t decide, go for non-public as you can easily change it to public
+later on, whereas changing public to non-public is not so
+easy.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">A public attribute is one that
+clients that are not related to the class would use while a non-public
+attribute is one that is not intended for use by a third-party. With a
+public attribute, you guarantee backward compatibility from start to
+finish while, with the non-pubic attribute you do not and can remove or
+make changes to the attribute. Note that the term “private” is not used
+and this is because there is no real private attribute in the Python
+language.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">One other attribute category is that
+which is a protected attribute. In Python, they come under the subclass
+API. There are those classes that are designed solely as classes to
+inherit from, whether it is as a way of extending or modifying certain
+aspects of the behavior. When you design a class like this, always make
+sure that you make explicit decisions about the attributes – are they
+public, only to be used by the base class or are they in the subclass
+API?</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">With all of this, these are the
+Pythonic guidelines:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">A public attribute must not have a
+leading underscore</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">If a public attribute clashes with a
+keyword (reserved), add one trailing underscore to the attribute name.
+This is the preferred method over using a corruption in spelling or an
+abbreviation. </span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">With a public data attribute, the
+best way is to expose only the name of the attribute, without using any
+complicated mutator or accessor methods. If a simple attribute needs to
+expand its functional behavior, Python makes it easy.</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">If you are using a class that is
+going to be subclassed and you are also using attributes that are not
+going to be subclassed, think about adding 2 leading underscores but do
+not add in any trailing underscores. This will invoke name mangling and
+helps to lower the risk of name clashes if the subclasses have
+attributes with the same name in them.</span></li>
+</ul>
+<div style="page-break-after:always">
+
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<span id="part0000.xhtml_Chapter9"><span
+style=" font-size:2.3rem; font-weight:bold; ">Chapter 9: </span><br />
+<span style=" font-size:2.3rem; font-weight:bold; ">Using Whitespace in
+Statements and Expressions</span></span>
+</p>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:1.3rem"><span
+id="part0000.xhtml__Toc470673558"></span><span
+id="part0000.xhtml__Toc470811353"><span
+style=" font-size:1.3rem; font-weight:bold"> </span></span></h1>
+<p><span style="-aw-bookmark-end:_Toc470673558"></span><span
+style="-aw-bookmark-end:_Toc470811353"></span><span
+style=" font-size:0.92rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">First, some of the peeves about
+whitespaces:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">Do not use unnecessary whitespaces in
+these cases:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">Immediately within braces, brackets
+or parentheses</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Good
+Example:</span></p>
+<p><span style=" font-size:0.83rem">ham(spam[1], {eggs: 2})</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem">ham( spam[ 1 ], { eggs: 2 }
+)</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">Immediately in front of a colon,
+semicolon or a comma:</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Good
+Example:</span></p>
+<p><span style=" font-size:0.83rem">if x == 4: print x, y; x, y = y,
+x</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem">if x == 4 : print x , y ; x , y = y
+, x</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">However, where you have a slice, the
+colon is similar to a binary operator and it should contain an equal
+amount on each side. Where you have an extended slice, both of the
+colons must contain the exact same level of spacing. The exception to
+this is a slice parameter that has been omitted, along with the
+space.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Good
+Example:</span></p>
+<p><span style=" font-size:0.83rem">spam[1:8], spam[1:8:2], spam[:8:2],
+spam[1::2], spam[1:8:]</span></p>
+<p><span style=" font-size:0.83rem">spam[lower:upper],
+spam[lower:upper:], spam[lower::step]</span></p>
+<p><span style=" font-size:0.83rem">spam[lower+offset :
+upper+offset]</span></p>
+<p><span style=" font-size:0.83rem">spam[: upper_fn(x) : step_fn(x)],
+ham[:: step_fn(x)]</span></p>
+<p><span style=" font-size:0.83rem">spam[lower + offset : upper +
+offset]</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem">spam[lower + offset:upper +
+offset]</span></p>
+<p><span style=" font-size:0.83rem">spam[1: 8], ham[1 :8], ham[1:8
+:2]</span></p>
+<p><span style=" font-size:0.83rem">spam[lower : : upper]</span></p>
+<p><span style=" font-size:0.83rem">spam[ : upper]</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">Right before the opening parenthesis
+that begins the argument list of the function call:</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Good
+Example:</span></p>
+<p><span style=" font-size:0.83rem">ham(</span><span
+style=" font-size:0.83rem ;letter-spacing:0.21rem">1</span><span
+style=" font-size:0.92rem">)</span></p>
+<p><span style=" font-size:0.92rem"> </span></p>
+<p><span style=" font-size:0.92rem"> </span></p>
+<p><span style=" font-size:0.92rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem">ham (1)</span></p>
+<ul>
+<li><span style=" font-size:1.0rem">Right in front of the open
+parenthesis that starts a slicing or an indexing:</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Good
+Example:</span></p>
+<p><span style=" font-size:0.83rem">dct['key'] = lst[index]</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem">dct ['key'] = lst [index]</span></p>
+<ul>
+<li><span style=" font-size:1.0rem">When there is more than a single
+space around an operator, such as an assignment, that aligns it with
+another operator</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Good
+Example:</span></p>
+<p><span style=" font-size:0.83rem">x = 1</span></p>
+<p><span style=" font-size:0.83rem">y = 2</span></p>
+<p><span style=" font-size:0.83rem">long_variable = 3</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem">x             = 1</span></p>
+<p><span style=" font-size:0.83rem">y             = 2</span></p>
+<p><span style=" font-size:0.83rem">long_variable = 3</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<h2
+style="margin:0.00% 0.00%; text-align:justify; line-height:115%; font-size:1.2rem"><span
+style=" font-size:1.2rem; font-weight:bold">Other
+Recommendations</span></h2>
+<p><span style=" font-size:1.0rem">Avoid having trailing whitespace
+throughout your code because it is not visible and it can cause
+confusion. For example, if you put in a backslash and follow it with a
+space and then a newline – this would not be counted as a line
+continuation. In fact, some text editors will not preserve it and there
+are projects that contain pre-commit hooks that will simply reject it –
+one of those is CPython.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">The following binary operators should
+be surrounded by single spaces – one on each side:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">assignment (=)</span></li>
+<li><span style=" font-size:1.0rem">augmented assignment (+=, =
+etc.)</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">The following comparisons are treated
+the same:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">== </span></li>
+<li><span style=" font-size:1.0rem">&lt; </span></li>
+<li><span style=" font-size:1.0rem">&gt;</span></li>
+<li><span style=" font-size:1.0rem">!= </span></li>
+<li><span style=" font-size:1.0rem">&lt;&gt;</span></li>
+<li><span style=" font-size:1.0rem">&lt;=</span></li>
+<li><span style=" font-size:1.0rem">&gt;=</span></li>
+<li><span style=" font-size:1.0rem">in</span></li>
+<li><span style=" font-size:1.0rem">not in</span></li>
+<li><span style=" font-size:1.0rem">is</span></li>
+<li><span style=" font-size:1.0rem">is not </span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">And these Booleans:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">and</span></li>
+<li><span style=" font-size:1.0rem">or</span></li>
+<li><span style=" font-size:1.0rem">not</span></li>
+</ul>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">If you use operators that have
+different priorities, think about putting whitespace around the lowest
+priority operators – use your best judgment here. However, you should
+not use any more than a single space and make sure that each side of the
+operator has the same amount of whitespace – don’t put 1 on one side and
+2 on the other:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Good
+Example:</span></p>
+<p><span style=" font-size:0.83rem">i = i + 1</span></p>
+<p><span style=" font-size:0.83rem">submitted += 1</span></p>
+<p><span style=" font-size:0.83rem">x = x*2 - 1</span></p>
+<p><span style=" font-size:0.83rem">hypot2 = x*x + y*y</span></p>
+<p><span style=" font-size:0.83rem">c = (a+b) * (a-b)</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem">i=i+1</span></p>
+<p><span style=" font-size:0.83rem">submitted +=1</span></p>
+<p><span style=" font-size:0.83rem">x = x * 2 - 1</span></p>
+<p><span style=" font-size:0.83rem">hypot2 = x * x + y * y</span></p>
+<p><span style=" font-size:0.83rem">c = (a + b) * (a - b)</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">When you use an = sign to indicate
+default values for parameters or keyword arguments, do not use
+whitespace around the sign:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Good
+Example:</span></p>
+<p><span style=" font-size:0.83rem">def complex(real,
+imag=0.0):</span></p>
+<p><span style=" font-size:0.83rem">    return magic(r=real,
+i=imag)</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem">def complex(real, imag =
+0.0):</span></p>
+<p><span style=" font-size:0.83rem">    return magic(r = real, i =
+imag)</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">Use the standard rules for colons
+with function annotations and make sure there are spaces surrounding the
+-&gt; if it is used:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Good
+Example:</span></p>
+<p><span style=" font-size:0.83rem">def munge(input: AnyStr):
+...</span></p>
+<p><span style=" font-size:0.83rem">def munge() -&gt; AnyStr:
+...</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem">def munge(input:AnyStr):
+...</span></p>
+<p><span style=" font-size:0.83rem">def munge()-&gt;PosInt:
+...</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">When you combine a default value and
+an argument annotation, spaces should surround the = sign – do not do
+this unless the argument has both the default and the
+annotation:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Good
+Example:</span></p>
+<p><span style=" font-size:0.83rem">def munge(sep: AnyStr = None):
+...</span></p>
+<p><span style=" font-size:0.83rem">def munge(input: AnyStr, sep: AnyStr
+= None, limit=1000): ...</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Bad
+Example:</span></p>
+<p><span style=" font-size:0.83rem">def munge(input: AnyStr=None):
+...</span></p>
+<p><span style=" font-size:0.83rem">def munge(input: AnyStr, limit =
+1000): ...</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem">It is not good practice to use
+compound statements – several statements on one line:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">A Good
+Example:</span></p>
+<p><span style=" font-size:0.83rem">if foo == 'that':</span></p>
+<p><span style=" font-size:0.83rem">    do_that_thing()</span></p>
+<p><span style=" font-size:0.83rem">do_one()</span></p>
+<p><span style=" font-size:0.83rem">do_two()</span></p>
+<p><span style=" font-size:0.83rem">do_three()</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">Best Not to
+Do:</span></p>
+<p><span style=" font-size:0.83rem">if foo == 'that':
+do_that_thing()</span></p>
+<p><span style=" font-size:0.83rem">do_one(); do_two();
+do_three()</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">It is, on occasion, alright to use an
+if, for and while statement on one line, provided they have small bodies
+but you should never do this for statements that have several clauses.
+Also, never fold really long lines:</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">Best Not to
+Do:</span></p>
+<p><span style=" font-size:0.83rem">if foo == 'that':
+do_that_thing()</span></p>
+<p><span style=" font-size:0.83rem">for x in lst: total += x</span></p>
+<p><span style=" font-size:0.83rem">while t &lt; 10: t =
+delay()</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">Most Definitely
+Not:</span></p>
+<p><span style=" font-size:0.83rem">if foo == 'that':
+do_that_thing()</span></p>
+<p><span style=" font-size:0.83rem">else: do_non_that_thing()</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem">try: something()</span></p>
+<p><span style=" font-size:0.83rem">finally: cleanup()</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem">do_one(); do_two(); do_three(long,
+argument,</span></p>
+<p><span style=" font-size:0.83rem">                             list,
+like, this)</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem">if foo == 'that': one(); two();
+three()</span></p>
+<div style="page-break-after:always">
+
+</div>
+<br />
+
+</p>
+<h1
+style="margin:0.00% 0.00%; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:2.3rem"><span
+id="part0000.xhtml__Toc470673559"></span><span
+id="part0000.xhtml__Toc470811354"></span><span
+id="part0000.xhtml_Conclusion"><span
+style=" font-size:2.3rem; font-weight:bold">Conclusion</span><span
+style="-aw-bookmark-end:_Toc470673559"></span><span
+style="-aw-bookmark-end:_Toc470811354"></span></span></h1>
+<p><span style="-aw-bookmark-end:Conclusion"></span><span
+style=" font-size:0.92rem"> </span></p>
+<p><span style=" font-size:1.0rem">Thank you once again for reading my
+book, I truly hope that it was able to help you understand how to write
+more effective and efficient Python code.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">From here, the next step is to, quite
+simply, practice. The more you do, the better you will get and,
+eventually, you will be writing Python code like a pro! Research, join
+online Python forums and join the Python community to learn more and to
+advance your skills.</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">Lastly, if you found this book
+helpful, please can I ask a small favor of you? Please consider leaving
+a review for me at Amamzon.com; it isn’t only helpful to me, it also
+benefits prospective readers</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">Thank you and good luck on your
+journey to becoming a better Python programmer</span></p>
+<div style="page-break-after:always">
+
+</div>
+<br />
+
+</p>
+<p><span id="part0000.xhtml_About"><span
+style=" font-size:2.3rem; font-weight:bold; ">About the
+Author</span></span></p>
+<p><span style="-aw-bookmark-end:About"></span><span
+style=" font-size:1.0rem; "> </span></p>
+<p><span style=" font-size:1.0rem; ">Charlie Masterson is a computer
+programmer and instructor who have developed several applications and
+computer programs.</span></p>
+<p><br />
+<span style=" font-size:1.0rem; ">As a computer science student, he got
+interested in programming early but got frustrated learning the highly
+complex subject matter.</span></p>
+<p><span style=" font-size:1.0rem; ">Charlie wanted a teaching method
+that he could easily learn from and develop his programming skills. He
+soon discovered a teaching series that made him learn faster and
+better.</span></p>
+<p><br />
+<span style=" font-size:1.0rem; ">Applying the same approach, Charlie
+successfully learned different programming languages and is now teaching
+the subject matter through writing books.</span></p>
+<p><span style=" font-size:1.0rem; ">With the books that he writes on
+computer programming, he hopes to provide great value and help readers
+interested to learn computer-related topics. </span></p>
+<p><span style=" font-size:1.0rem; "> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold"> </span></p>
+</div>
