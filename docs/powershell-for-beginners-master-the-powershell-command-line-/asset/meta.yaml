@@ -1,0 +1,13 @@
+name: PowerShell： For Beginners! Master The PowerShell Command Line In 24 Hours (Python
+  Programming, Javascript, Computer Programming, C++, SQL, Computer Hacking, Programming)
+name_cn: PowerShell：初学者指南！24 小时精通 PowerShell 命令行（Python 编程、Javascript、计算机编程、C++、SQL、计算机黑客、编程）
+slug: powershell-for-beginners-master-the-powershell-command-line-
+toc:
+- - '##'
+  - 第 1 章：搭建你的 PowerShell 游乐场
+- - '##'
+  - 1. “x64” 操作系统
+- - '##'
+  - 5. 命令：指 cmdlet（谓词命令）、函数、工作流和应用程序。
+- - '#'
+  - 结语

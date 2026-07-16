@@ -1,0 +1,2 @@
++   [PowerShell：初学者指南！24 小时精通 PowerShell 命令行（Python 编程、Javascript、计算机编程、C++、SQL、计算机黑客、编程）](README.md)
++   [PowerShell：初学者指南！24 小时精通 PowerShell 命令行（Python 编程、Javascript、计算机编程、C++、SQL、计算机黑客、编程）](powershell-for-beginners-master-the-powershell-command-line-_0.md)

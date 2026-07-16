@@ -1,0 +1,79 @@
+name: Powershell： Become A Master In Powerhell (Windows Powershell 5, Powershell Scripting,
+  Command Line, Javascript, C++, SQL)
+name_cn: Powerhell：精通 PowerShell (Windows Powershell 5, PowerShell 脚本编写、命令行、Javascript、C++,
+  SQL)
+slug: powershell-become-a-master-in-powerhell-windows-powershell-5
+toc:
+- - '#'
+  - Powerhell：精通 PowerShell (Windows Powershell 5, PowerShell 脚本编写、命令行、Javascript、C++,
+    SQL)
+- - '##'
+  - 目录
+- - '#'
+  - 引言
+- - '#'
+  - 第 1 章
+- - '##'
+  - 什么是 PowerShell？
+- - '#'
+  - 第 2 章
+- - '##'
+  - PowerShell 命令
+- - '###'
+  - '`Copy-Item`'
+- - '###'
+  - '`Move-Item`'
+- - '###'
+  - '`Remove-Item`'
+- - '###'
+  - '`Rename-Item`'
+- - '###'
+  - '`Get-Location`'
+- - '###'
+  - '`Push-Location`'
+- - '###'
+  - '`Pop-Location`'
+- - '###'
+  - '`Set-Location`'
+- - '###'
+  - '`Tee-Object`'
+- - '###'
+  - '`Write-Output`'
+- - '###'
+  - '`Get-Process`'
+- - '###'
+  - '`Stop-Process`'
+- - '###'
+  - '`Select-String`'
+- - '###'
+  - '`Set-Variable`'
+- - '###'
+  - '`Get-Member`'
+- - '###'
+  - '`Invoke-WebRequest`'
+- - '#'
+  - 第 3 章：PowerShell 背后的编程逻辑
+- - '#'
+  - 第 4 章：脚本
+- - '##'
+  - PowerShell 基础
+- - '###'
+  - 值与变量
+- - '###'
+  - 数学运算符
+- - '###'
+  - 控制流
+- - '#'
+  - 第 5 章：进阶 - 过滤与格式化
+- - '##'
+  - 过滤集合
+- - '##'
+  - 管道 (Pipeline)
+- - '##'
+  - 实际过滤
+- - '#'
+  - 第 6 章
+- - '##'
+  - PowerShell 术语
+- - '#'
+  - 结语
