@@ -860,6 +860,7 @@
 +   [Selenium Webdriver 与 JavaScript 编程简化：编程初学者指南 - 2 合 1](docs/selenium-webdriver-and-javascript-coding-made-simple-a-begin/README.md)
 +   [JavaScript 简化指南](docs/simplifying-javascript/README.md)
 +   [Simply Electron：使用 JavaScript 精通桌面软件开发](docs/simply-electron-mastering-desktop-software-development-with-/README.md)
++   [SitePoint：现代 JavaScript 工具与技能](docs/sitepoint-modern-javascript-tools-skills/README.md)
 +   [开源平台智能计算](docs/smart-computing-with-open-source-platforms/README.md)
 +   [移动 Web 开发：使用 HTML5、CSS3 和 Javascript 开启移动开发](docs/smashing-mobile-web-development-going-mobile-with-html5-css3/README.md)
 +   [Smashing Node.js：无处不在 JavaScript](docs/smashing-nodejs-javascript-everywhere/README.md)
