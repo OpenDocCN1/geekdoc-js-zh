@@ -558,6 +558,7 @@
 +   [JavaScript 与 DOM 技巧、妙招及技术（卷 4）](docs/javascript-dom-tips-tricks-and-techniques-volume-4/README.md)
 +   [JavaScript：从零开始的高级 JavaScript 编程](docs/javascript-elite-javascript-coding-from-the-ground-up/README.md)
 +   [JavaScript 核心 (Smashing eBook 系列, #21)](docs/javascript-essentials-smashing-ebook-series-21/README.md)
++   [JavaScript 示例](docs/javascript-example-code/README.md)
 +   [考试与面试Javascript练习：初学者代码示例](docs/javascript-exercises-for-exams-and-interviews-coding-example/README.md)
 +   [Javascript：从底层开始详细解释 Javascript 语言本身](docs/javascript-explaining-the-javascript-language-itself-in-deta/README.md)
 +   [ABAP® 开发者的 JavaScript](docs/javascript-for-abap-developers/README.md)

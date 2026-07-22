@@ -1,0 +1,2137 @@
+groups:
+- md: "# Just the basics of JavaScript\n\n![](img/c4712982624c6b0b4d50250b90aebac6_1_0.png)\n\
+    \nTom Henricksen\n\n# Tom Henricksen\n\nJust the basics of JavaScript\n\nCopyright\
+    \ © 2024 by Tom Henricksen\n\nAll rights reserved. No part of this publication\
+    \ may be reproduced, stored or transmitted in any form or by any means, electronic,\
+    \ mechanical, photocopying, recording, scanning, or otherwise without written\
+    \ permission from the publisher. It is illegal to copy this book, post it to a\
+    \ website, or distribute it by any other means without permission.\n\n# First\
+    \ edition\n\nThis book was professionally typeset on Reedsy\nFind out more at\
+    \ reedsy.com\n\n# Contents\n\n- Preface\n- 1. JavaScript A Useful Tool For Tired\
+    \ Minds\n- 2. Look I found these astounding benefits of JavaScript variables and\
+    \ values\n- 3. First easy JavaScript function basics that are the most fascinating\n\
+    - 4. Avoid painful mistakes with these Simplistic JavaScript Conditionals\n- 5.\
+    \ JavaScript has sizable loops that will explode your mind\n- 6. Surprisingly\
+    \ Improved JavaScript Variable Scope You Need\n- 7. Exploit JavaScript Closures\
+    \ More and Don't Panic\n- About the Author\n\n# Preface\n\nIf you are just starting\
+    \ to code with JavaScript or need a refresher this is the book for you. We cover\
+    \ some of the basics so you can understand it. Then we will also do some basic\
+    \ coding.\n\nThere was a time in my coding career when I would read thick books\
+    \ before beginning. I learned that was a form of procrastinating. The best way\
+    \ to learn anything is by practice.\n\nIn this book, we don’t overwhelm you with\
+    \ a lot of information. As they say in “Just the facts ma’am”. After reading a\
+    \ chapter or two you should be ready to start. Then come back for a few more tidbits.\n\
+    \nHappy Coding!\n\n# JavaScript A Useful Tool For Tired Minds\n\n![](img/c4712982624c6b0b4d50250b90aebac6_7_0.png)\n\
+    \nI have a confession. JavaScript and I started badly. My first foray was for\
+    \ form validation. I would cuss about its existence.\n\nAs luck would have after\
+    \ being reintroduced to it I began to respect it. Over the years it has grown\
+    \ into a powerful language.\n\nJavaScript\n\nWith its humble beginnings, JavaScript\
+    \ has evolved into a modern programming language. From the browser to the server\
+    \ it can handle almost everything. Node.js gives it a powerful framework on the\
+    \ server side.\n\nMozilla created it and here is how they define it. “JavaScript\
+    \ is a lightweight interpreted programming language with first-class functions.”\
+    \ That is a mouthful!\n\n# Code\n\nLet’s look at some basic code. It is an HTML\
+    \ file displaying some JavaScript. Save this code to your local machine.\n\n```html\n\
+    <html>\n```\n\n# Test 1\n\n# Test 2\n\nRegular text\n\nWhen we run this we will\
+    \ see this.\n\n![](img/c4712982624c6b0b4d50250b90aebac6_10_0.png)\n\nJavaScript\
+    \ alert message\n\nOnce you click ok you will see this.\n\n# Test 1\n\n# Test\
+    \ 2\n\nRegular text\n\nHTML Screen-shot\n\nStatement\n\nThe statement is the basic\
+    \ instruction for JavaScript. We can create some variables and then assign them\
+    \ values.\n\n```javascript\nlet a, b, c; // Statement creating three variables\n\
+    a = 2; // Statement assign the value of 2 to variable a\nb = 3; // Statement assign\
+    \ the value of 3 to variable b\nc = a + b; // Statement assign a plus b to c\n\
+    ```\n\nThe semicolon is at the end of the statement. Although we could put multiple\
+    \ statements together.\n\n```javascript\na = 2; b = 3;\n```\n\nThis isn’t readable\
+    \ so most programmers prefer not to. So just because you can do something doesn’t\
+    \ mean you should.\n\n# Functions\n\nWhen we want to perform a task we can create\
+    \ a function. If we need to sum two numbers we could do this in code or create\
+    \ a function.\n\n```javascript\n// Add two numbers\nnum3 = num1 + num2;\n```\n\
+    \n```javascript\n// Function to sum two numbers\nfunction sumTwoNumbers(num1,\
+    \ num2) {\n  return num1 + num2;\n}\n```\n\nWhen we want to perform a task we\
+    \ can create a function. If we need to sum two numbers we could do this in code\
+    \ or create a function.\n\n```javascript\n// Add two numbers\nnum3 = num1 + num2;\n\
+    ```\n\n```javascript\n// Function to sum two numbers\nfunction sumTwoNumbers(num1,\
+    \ num2) {\n  return num1 + num2;\n}\n```\n\nWhen we want to perform a task we\
+    \ can create a function. If we need to sum two numbers we could do this in code\
+    \ or create a function.\n\n```javascript\n// Add two numbers\nnum3 = num1 + num2;\n\
+    ```\n\n```javascript\n// Function to sum two numbers\nfunction sumTwoNumbers(num1,\
+    \ num2) {\n  return num1 + num2;\n}\n\nWhen we want to perform a task we can create\
+    \ a function. If we need to sum two numbers we could do this in code or create\
+    \ a function.\n\n```javascript\n// Add two numbers\nnum3 = num1 + num2;\n```\n\
+    \n```javascript\n// Function to sum two numbers\nfunction sumTwoNumbers(num1,\
+    \ num2) {\n  return num1 + num2;\n}\n\nWhen we want to perform a task we can create\
+    \ a function. If we need to sum two numbers we could do this in code or create\
+    \ a function.\n\n```javascript\n// Add two numbers\nnum3 = num1 + num2;\n```\n\
+    \n```javascript\n// Function to sum two numbers\nfunction sumTwoNumbers(num1,\
+    \ num2) {\n  return num1 + num2;\n}\n\nWhen we want to perform a task we can create\
+    \ a function. If we need to sum two numbers we could do this in code or create\
+    \ a function.\n\n```javascript\n// Add two numbers\nnum3 = num1 + num2;\n```\n\
+    \n```javascript\n// Function to sum two numbers\nfunction sumTwoNumbers(num1,\
+    \ num2) {\n  return num1 + num2;\n}\n\nWhen we want to perform a task we can create\
+    \ a function. If we need to sum two numbers we could do this in code or create\
+    \ a function.\n\nVariables and values\n\n- Preface:\n- 1. JavaScript A Useful\
+    \ Tool For Tired Minds\n- 2. Look I found these astounding benefits of JavaScript\
+    \ variables and values\n- 3. First easy JavaScript function basics that are the\
+    \ most fascinating\n- 4. Avoid painful mistakes with these Simplistic JavaScript\
+    \ Conditionals\n- 5. JavaScript has sizable loops that will explode your mind\n\
+    - 6. Surprisingly Improved JavaScript Variable Scope You Need\n- 7. Look I found\
+    \ these astounding benefits of JavaScript variables and values\n- About the Author\n\
+    \nPreface\n\nIf you are just starting to code with JavaScript or need a refresher\
+    \ this is the book for you. We cover some of the basics so you can understand\
+    \ it. Then we will also do some basic coding.\n\nThere was a time in my coding\
+    \ career when I would read thick books before beginning. I learned that was a\
+    \ form of procrastinating. The best way to learn anything is by practice.\n\n\
+    In this book, we don’t overwhelm you with a lot of information. As they say in\
+    \ “Just the facts ma’am”. After reading a chapter or two you should be ready to\
+    \ start. Then come back for a few more tidbits.\n\nHappy Coding!\n\n# JavaScript\
+    \ A Useful Tool For Tired Minds\n\nI have a confession. JavaScript and I started\
+    \ badly. My first foray was for form validation. I would cuss about its existence.\n\
+    \nAs luck would have after being reintroduced to it I began to respect it. Over\
+    \ the years it has grown into a powerful language.\n\nJavaScript\n\nWith its humble\
+    \ beginnings, JavaScript has evolved into a modern programming language. From\
+    \ the browser to the server it can handle almost everything. Node.js gives it\
+    \ a powerful framework on the server side.\n\nMozilla created it and here is how\
+    \ they define it. “JavaScript is a lightweight interpreted programming language\
+    \ with first-class functions.” That is a mouthful!\n\n# Code\n\nLet’s look at\
+    \ some basic code. It is an HTML file displaying some JavaScript. Save this code\
+    \ to your local machine.\n\n```html\n<html>\n```\n\n# Test 1\n\n# Test 2\n\nRegular\
+    \ text\n\nWhen we run this we will see this.\n\n![](img/c4712982624c6b0b4d50250b90aebac6_10_0.png)\n\
+    \nJavaScript alert message\n\nOnce you click ok you will see this.\n\n# Test 1\n\
+    \n# Test 2\n\nRegular text\n\nHTML Screen-shot\n\nStatement\n\nThe statement is\
+    \ the basic instruction for JavaScript. We can create some variables and then\
+    \ assign them values.\n\n```javascript\nlet a, b, c; // Statement creating three\
+    \ variables\na = 2; // Statement assign the value of 2 to variable a\nb = 3; //\
+    \ Statement assign the value of 3 to variable b\nc = a + b; // Statement assign\
+    \ a plus b to c\n```\n\nThe semicolon is at the end of the statement. Although\
+    \ we could put multiple statements together.\n\n```javascript\na = 2; b = 3;\n\
+    ```\n\nThis isn’t readable so most programmers prefer not to. So just because\
+    \ you can do something doesn’t mean you should.\n\n# Functions\n\nWhen we want\
+    \ to perform a task we can create a function. If we need to sum two numbers we\
+    \ could do this in code or create a function.\n\n```javascript\n// Add two numbers\n\
+    num3 = num1 + num2;\n```\n\n```javascript\n// Function to sum two numbers\nfunction\
+    \ sumTwoNumbers(num1, num2) {\n  return num1 + num2;\n}\n```\n\nWhen we want to\
+    \ perform a task we can create a function. If we need to sum two numbers we could\
+    \ do this in code or create a function.\n\n```javascript\n// Add two numbers\n\
+    num3 = num1 + num2;\n```\n\n```javascript\n// Function to sum two numbers\nfunction\
+    \ sumTwoNumbers(num1, num2) {\n  return num1 + num2;\n}\n\nWhen we want to perform\
+    \ a task we can create a function. If we need to sum two numbers we could do this\
+    \ in code or create a function.\n\n```javascript\n// Add two numbers\nnum3 = num1\
+    \ + num2;\n```\n\n```javascript\n// Function to sum two numbers\nfunction sumTwoNumbers(num1,\
+    \ num2) {\n  return num1 + num2;\n}\n\nWhen we want to perform a task we can create\
+    \ a function. If we need to sum two numbers we could do this in code or create\
+    \ a function.\n\n```javascript\n// Add two numbers\nnum3 = num1 + num2;\n```\n\
+    \n"
+  mdcn: "\n# JavaScript 基础\n\n![](img/c4712982624c6b0b4d50250b90aebac6_1_0.png)\n\n\
+    Tom Henricksen\n\n# Tom Henricksen\n\nJavaScript 基础\n\nCopyright © 2024 Tom Henricksen\n\
+    \n保留所有权利。未经出版者书面许可，不得以任何形式或通过任何手段（电子、机械、复印、录音、扫描或其他）对本书的任何部分进行复制、存储或传输。未经许可复制此书、将其发布到网站或通过任何其他方式进行分发都是非法的。\n\
+    \n# 第一版\n\n本书已在 Reedsy 完成了专业排版\n访问 reedsy.com 了解更多信息\n\n# 目录\n\n- 序言\n- 1. JavaScript：疲惫大脑的有用工具\n\
+    - 2. 看，我发现了 JavaScript 变量和值的这些惊人益处\n- 3. 最着人的第一个简单 JavaScript 函数基础知识\n- 4. 使用这些简单的\
+    \ JavaScript 条件语句避免痛苦的错误\n- 5. JavaScript 拥有巨大的循环，将让你大脑爆炸\n- 6. 你需要的意想不到的 JavaScript\
+    \ 变量作用域\n- 7. 充分利用 JavaScript 闭包，不要恐慌\n- 关于作者\n\n# 序言\n\n如果你刚刚开始学习 JavaScript\
+    \ 编程，或者需要复习，这本书正适合你。我们涵盖了一些基础知识以便你理解它。然后我们还将进行一些基础编码。\n\n在我的编程生涯中，有一段时间我会在开始之前读厚厚的书。我发现那是一种拖延。学习任何知识最好的方法就是实践。\n\
+    \n在本书中，我们不会用大量信息让你 overwhelming不堪。正如人们所说，“只要陈述，女士”。读一两章后，你就应该准备好开始了。然后再回来获取更多小技巧。\n\
+    \n祝编程愉快！\n\n# JavaScript：疲惫大脑的有用工具\n\n![](img/c4712982624c6b0b4d50250b90aebac6_7_0.png)\n\
+    \n我有一个坦白。JavaScript 和我的开始很糟糕。我的第一次尝试是为了表单验证。我曾对它的存在大骂。\n\n幸运的是，在重新接触它后，我开始尊重它。多年来，它已经成长为一种强大的语言。\n\
+    \nJavaScript\n\n尽管起点卑微，JavaScript 已经演变成一种现代编程语言。从浏览器到服务器，它几乎可以处理一切。Node.js 在服务器端为它提供了强大的框架。\n\
+    \nMozilla 创建了它，以下是他们对其定义。“JavaScript 是一种具有一等函数的轻量级解释型编程语言。”这听起来真绕口！\n\n# 代码\n\n\
+    让我们来看基础代码。这是一个显示某些 JavaScript 的 HTML 文件。将此代码保存到你的本地机器。\n\n```html\n<html>\n```\n\
+    \n# 测试 1\n\n# 测试 2\n\n普通文本\n\n当我们运行它时，我们将看到这个\n\n![](img/c4712982624c6b0b4d50250b90aebac6_10_0.png)\n\
+    \nJavaScript 警告消息\n\n一旦点击 ok，你将看到这个。\n\n# 测试 1\n\n# 测试 2\n\n普通文本\n\nHTML 截图\n\n\
+    语句\n\n语句是 JavaScript 的基本指令。我们可以创建一些变量并为它们赋值。\n\n```javascript\nlet a, b, c; //\
+    \ 创建三个变量的语句\na = 2; // 将值 2 赋值给变量 a 的语句\nb = 3; // 将值 3 赋值给变量 b 的语句\nc = a + b;\
+    \ // 将 a 加 b 赋值给 c 的语句\n```\n\n分号位于语句末。虽然我们可以多个语句放在一起。\n\n```javascript\na = 2;\
+    \ b = 3;\n```\n\n这不可读，所以大多数程序员倾向于这样做。仅仅因为你可以做某事，并不意味着你应该这样做。\n\n# 函数\n\n当我们想要执行某个任务时，可以创建一个函数。如果我们需要两个数字之和，我们可以在代码中这样做，也可以创建一个函数。\n\
+    \n```javascript\n// 加两个数字\nnum3 = num1 + num2;\n```\n\n```javascript\n// 两个数字之和的函数\n\
+    function sumTwoNumbers(num1, num2) {\n  return num1 + num2;\n}\n```\n\n当我们想要执行某个任务时，可以创建一个函数。如果我们需要两个数字之和，我们可以在代码中这样做，也可以创建一个函数。\n\
+    \n```javascript\n// 加两个数字\nnum3 = num1 + num2;\n```\n\n```javascript\n// 两个数字之和的函数\n\
+    function sumTwoNumbers(num1, num2) {\n  return num1 + num2;\n}\n```\n\n当我们想要执行某个任务时，可以创建一个函数。如果我们需要两个数字之和，我们可以在代码中这样做，也可以创建一个函数。\n\
+    \n```javascript\n// 加两个数字\nnum3 = num1 + num2;\n```\n\n```javascript\n// 两个数字之和的函数\n\
+    function sumTwoNumbers(num1, num2) {\n  return num1 + num2;\n}\n\n当我们想要执行某个任务时，可以创建一个函数。如果我们需要两个数字之和，我们可以在代码中这样做，也可以创建一个函数。\n\
+    \n```javascript\n// 加两个数字\nnum3 = num1 + num2;\n```\n\n```javascript\n// 两个数字之和的函数\n\
+    function sumTwoNumbers(num1, num2) {\n  return num1 + num2;\n}\n\n当我们想要执行某个任务时，可以创建一个函数。如果我们需要两个数字之和，我们可以在代码中这样做，也可以创建一个函数。\n\
+    \n```javascript\n// 加两个数字\nnum3 = num1 + num2;\n```\n\n```javascript\n// 两个数字之和的函数\n\
+    function sumTwoNumbers(num1, num2) {\n  return num1 + num2;\n```\n"
+  merge: -1
+  raw:
+  - '[PAGE 0]
+
+
+    <!-- no content -->'
+  - '[PAGE 1]
+
+
+    # Just the basics of JavaScript
+
+
+    ![](img/c4712982624c6b0b4d50250b90aebac6_1_0.png)
+
+
+    Tom Henricksen'
+  - '[PAGE 2]
+
+
+    <!-- no content -->'
+  - '[PAGE 3]
+
+
+    # Tom Henricksen
+
+
+    Just the basics of JavaScript'
+  - '[PAGE 4]
+
+
+    Copyright © 2024 by Tom Henricksen
+
+
+    All rights reserved. No part of this publication may be reproduced, stored or
+    transmitted in any form or by any means, electronic, mechanical, photocopying,
+    recording, scanning, or otherwise without written permission from the publisher.
+    It is illegal to copy this book, post it to a website, or distribute it by any
+    other means without permission.
+
+
+    # First edition
+
+
+    This book was professionally typeset on Reedsy
+
+    Find out more at reedsy.com'
+  - '[PAGE 5]
+
+
+    # Contents
+
+
+    +   Preface
+
+
+    +   1. JavaScript A Useful Tool For Tired Minds
+
+
+    +   2. Look I found these astounding benefits of JavaScript variables and values
+
+
+    +   3. First easy JavaScript function basics that are the most fascinating
+
+
+    +   4. Avoid painful mistakes with these SimplisticJavaScript Conditionals
+
+
+    +   5. JavaScript has Sizible loops that will explode your mind
+
+
+    +   6. Surprisingly Improved JavaScript Variable Scope You Need Need
+
+
+    +   7. Exploit JavaScript Closures More and Don''t Panic
+
+
+    +   About the Author'
+  - '[PAGE 6]
+
+
+    # Preface
+
+
+    If you are just starting to code with JavaScript or need a refresher this is the
+    book for you. We cover some of the basics so you can understand it. Then we will
+    also do some basic coding.
+
+
+    There was a time in my coding career when I would read thick books before beginning.
+    I learned that was a form of procrastinating. The best way to learn anything is
+    by practice.
+
+
+    In this book, we don’t overwhelm you with a lot of information. As they say in
+    “Just the facts ma’am”. After reading a chapter or two you should be ready to
+    start. Then come back for a few more tidbits.
+
+
+    Happy Coding!'
+  - '[PAGE 7]
+
+
+    # JavaScript A Useful Tool For Tired Minds
+
+
+    ![](img/c4712982624c6b0b4d50250b90aebac6_7_0.png)
+
+
+    I have a confession. JavaScript and I started badly. My first foray was for form
+    validation. I would cuss about its existence.
+
+
+    As luck would have after being reintroduced to it I began to respect it. Over
+    the years it has grown into a powerful language.
+
+
+    JavaScript
+
+
+    With its humble beginnings, JavaScript has evolved into a modern programming language.
+    From the browser to the server it can handle almost everything. Node.js gives
+    it a powerful framework on the server side.'
+  - '[PAGE 8]
+
+
+    Mozilla created it and here is how they define it. “JavaScript is a lightweight
+    interpreted programming language with first-class functions.” That is a mouthful!
+
+
+    # Code
+
+
+    Let’s look at some basic code. It is an HTML file displaying some JavaScript.
+    Save this code to your local machine.
+
+
+    ```
+
+    html>
+
+    ```'
+  - '[PAGE 9]
+
+
+    # # Test 1'
+  - '[PAGE 10]
+
+
+    # Test 2
+
+
+    Regular text
+
+
+    When we run this we will see this.
+
+
+    ![](img/c4712982624c6b0b4d50250b90aebac6_10_0.png)
+
+
+    JavaScript alert message
+
+
+    Once you click ok you will see this.
+
+
+    # Test 1
+
+
+    # Test 2
+
+
+    Regular text
+
+
+    HTML Screen-shot
+
+
+    Statement'
+  - "[PAGE 11]\n\nThe statement is the basic instruction for JavaScript. We can create\
+    \ some variables and then assign them values.\n\n```\nlet a, b, c; // Statement\
+    \ creating three variables\na = 2; // Statement assign the value of 2 to variable\
+    \ a\nb = 3; // Statement assign the value of 3 to variable b\nc = a + b; // Statement\
+    \ assign a plus b to c\n```\n\nThe semicolon is at the end of the statement. Although\
+    \ we could put multiple statements together.\n\n```\na = 2; b = 3;\n```\n\nThis\
+    \ isn’t readable so most programmers prefer not to. So just because you can do\
+    \ something doesn’t mean you should.\n\n# Functions\n\nWhen we want to perform\
+    \ a task we can create a function. If we need to sum two numbers we could do this\
+    \ in code or create a function.\n\n```\n// Add two numbers\nnum3 = num1 + num2;\n\
+    ```\n\n```\n// Function to sum two numbers\nfunction sumTwoNumbers(num1, num2)\
+    \ {\n  return num1 + num2;\n}\n```"
+  - "[PAGE 12]\n\nIn this example, we perform the same code one in a function one\
+    \ not. Using a function has value. We can call it repeatedly. Also, we could easily\
+    \ add some error checking too.\n\n```\n// Function to sum two numbers\nfunction\
+    \ sumTwoNumbers(num1, num2) {\n  return num1 + num2;\n}\n```\n\nlet sum = sumTwoNumbers(6,4);\n\
+    \nIf you want to call the function we can do it like this example. Here we pass\
+    \ in two numbers. These numbers could be replaced with variables as well.\n\n\
+    In closing, we have touched on why we would use JavaScript. Then we started to\
+    \ code. Using statements and functions we started to see what is under the hood.\
+    \ Try it out for yourself! You won't regret it."
+  - '[PAGE 13]
+
+
+    Look I found these astounding benefits of JavaScript variables and values'
+  - '[PAGE 14]
+
+
+    ![](img/c4712982624c6b0b4d50250b90aebac6_14_0.png)'
+  - "[PAGE 15]\n\nPhoto by Khashayar Kouchpeydeh on Unsplash\n\nSome people find differences\
+    \ easily. Their eye can see the one thing out of place. Others look for commonalities.\n\
+    \ find myself in the latter camp. Especially, as I look at programming languages.\
+    \ JavaScript is quite similar to other languages. Let’s focus on values and variables.\n\
+    \n# Values\n\nThe data we keep track of is our value. That could be some words\
+    \ or numbers. Perhaps even some special characters for the computer to process.\n\
+    \n# Variables\n\nWe give the data name or a handle if you will. This allows us\
+    \ to reference it elsewhere.\n\n```\nlet tomsJavaScriptVariable = \"stuff\";\n\
+    ```\n\nThis code example has a value, “stuff”, and a variable name, A lot happened\
+    \ here so let me explain it.\n\n# Declare\n\nFirst thing we must declare a variable.\
+    \ This can be done by the following."
+  - '[PAGE 16]
+
+
+    ```
+
+    let declareVariable; // just declaring
+
+    ```
+
+
+    The let keyword followed by the name declares the variable. Note our previous
+    example set the value. This one does not.
+
+
+    # Initialize
+
+
+    When we give it a value we are initializing the variable. So we can use our declareVariable
+    here and initialize it too.
+
+
+    ```
+
+    declareVariable = 123; // initialize variable
+
+    ```
+
+
+    As you look through the examples you see that my first example did all at once.
+    So you can declare and initialize on separate lines or all at once. This can be
+    personal preference. It can aid in the readability of separating them.
+
+
+    # Naming
+
+
+    As you name your variables you have a few rules to learn in JavaScript. The length
+    can be as short as one character. The first character is limited to letters, underscore(_),
+    and dollar sign($). Numbers are not allowed for the first character.
+
+
+    ```
+
+    let a; // letter
+
+    let arelongnameforvariablethatyouwontwanttread; // long but
+
+    let _var; // underscore first
+
+    let $sal; // dollar sign first
+
+    ```'
+  - '[PAGE 17]
+
+
+    let 4num; // illegal - won''t work!
+
+
+    The other characters in the name can be letters, numbers, and
+
+    characters. Also, the case can be mixed too.
+
+
+    let aMixtureUpperCaseAndLowerCase;
+
+    let a123$;
+
+
+    let _jsfgiu$234432;
+
+
+    JavaScript gives you a lot of options to name your variables. Your
+
+    fellow developers would appreciate meaningful names. I like to make
+
+    wisecacks, but your code is not a good place to try this.
+
+
+    Const
+
+
+    If you have a variable you don''t want to change you can use the const
+
+    keyword to declare it. This is in place of the let keyword.
+
+
+    ```
+
+    const pi = 3.14; // not able to change
+
+    let exangeRate = 3.4; // able to change
+
+    ```
+
+
+    Just make sure you think this through. Use the const keyword wisely. If
+
+    you get crazy with it you will have issues.
+
+
+    let vs var
+
+
+    Variables can be declared with the var keyword too. Using the var
+
+    keyword declares the variable in the whole function. While let is only for
+
+    the block it is defined.'
+  - "[PAGE 18]\n\n```\nfunction varScoping() {\n  var x = 1;\n\nif (true) {\n  var\
+    \ x = 2;\n  console.log(x); // will print 2\n}\n\nconsole.log(x); // will print\
+    \ 2\n}\n```\n\n```\nfunction letScoping() {\n  let x = 1;\n\nif (true) {\n  let\
+    \ x = 2;\n  console.log(x); // will print 2\n}\n\nconsole.log(x); // will print\
+    \ 1\n}\n```\n\nThis article shares more about these two options. It can be confusing\
+    \ to a newbie. Overall use let unless you need var. The global nature of var can\
+    \ cause some side effects.\n\nThese are the foundations of understanding JavaScript.\
+    \ Variables and values give us something to work with as we progress on our journey.\
+    \ We learned how to declare and initialize the variables. Plus we covered naming\
+    \ and different keywords to use."
+- md: "## First easy JavaScript function basics that are the most fascinating\n\n\
+    ![](img/c4712982624c6b0b4d50250b90aebac6_19_0.png)\n\nPhoto by Stanley Dai on\
+    \ Unsplash\n\nFunctions are the powerhouse in JavaScript. This is where the work\
+    \ happens. Do we need to calculate the space of a floor? This calls for a function.\n\
+    \n```javascript\nfunction calculateFlooring(length, width) {\n  return length\
+    \ * width;\n}\n```\n\nThis function will calculate the flooring we need if we\
+    \ remodel the kitchen. So why do we need functions?\n\n## Benefits\n\nThink of\
+    \ a function as a container for your code. Similar to a code block but, we can\
+    \ call this function repeatedly. This will facilitate reusable code. In our prior\
+    \ example, you could copy the statement. Of course, if we wanted to change that\
+    \ we needed to search for that code and change all the occurrences.\n\n## Example\n\
+    \nIn our first function example, we calculated the flooring. Let’s step back and\
+    \ make it even easier. We can print something on the screen.\n\n```javascript\n\
+    function greetTom() {\nalert(\"Hello Tom!\");\n}\n```\n\nOf course, you can put\
+    \ your name in place of mine. If you want to keep the tradition, you can replace\
+    \ it with “Hello World”. Have you wondered why that is the tradition, look...\n\
+    \n## Calling\n\nThe code may look nice but nothing happens if you don’t call it.\
+    \ How do you do that? I am glad you asked. Here is an example.\n\n```javascript\n\
+    function greetTom() {\nalert(\"Hello Tom!\");\n}\n```\n\n```javascript\ngreetTom();\n\
+    // do other things...\n```\n\nThat call is easy as it takes no arguments. In our\
+    \ first function, we had two arguments we needed. Let’s try that next.\n\n## Passing\
+    \ arguments\n\nIn our first example, we started with a function to calculate flooring.\
+    \ It took two arguments.\n\n```javascript\nfunction calculateFlooring(length,\
+    \ width) {\n  return length * width;\n}\n\ncalculateFlooring(12,10);\n```\n\n\
+    We can pass in the two numbers to get the flooring needed. In this example, we\
+    \ hard-code the value. You won’t do that often or ever.\n\n```javascript\nfunction\
+    \ calculateFlooring(length, width) {\n  return length * width;\n}\n\ncalculateFlooring(length,width);\n\
+    ```\n\nAs you see here, we have the two arguments as variables. The names are\
+    \ the same as the function but don’t have to be.\n\n## Returning data\n\nIt is\
+    \ helpful when we return the calculation. If we don't the function is not as useful\
+    \ as it could be. We just need to use the return. We did this in our calculate\
+    \ flooring function. Although we need to assign this or print it out.\n\n```javascript\n\
+    function calculateFlooring(length, width) {\n  return length * width;\n}\n\nlet\
+    \ totalFlooring = 0;\ntotalFlooring = calculateFlooring(length,width);\n```\n\n\
+    Now we can use this value later in the application. The prior examples didn't\
+    \ use the value returned. This is always an option if you don't need it later\
+    \ on.\n\nFunctions can do a lot for us. They provide us with a container for our\
+    \ code. Then we can call them and pass parameters. Along with that, they can return\
+    \ the data. If you need more information here is some further...\n\n## Avoid painful\
+    \ mistakes with these Simplistic JavaScript Conditionals\n\n![](img/c4712982624c6b0b4d50250b90aebac6_23_0.png)\n\
+    \nPhoto by Artur Aldyrkhanov on Unsplash\n\nApplications help us make decisions.\
+    \ A basic decision is an if condition. For example, if the pizza delivery driver\
+    \ arrives open the door. JavaScript like other languages has many conditionals\
+    \ like:\n\n```javascript\nif\n```\n\nAn if statement starts with a condition.\
+    \ If it is true the statement following will happen.\n\n```javascript\nif(pizzaArrives)\
+    \ {\n  openDoor();\n}\n```\n\nSo if pizzaArrives is true we call the function\
+    \ openTheDoor. I added the braces after the if statement. This is optional but\
+    \ helps readability. Omitting the braces can cause you to miss bugs. So please\
+    \ include them!\n\n### if/else\n\nThere are times when you have two different\
+    \ courses of action. We can add the else statement along with the if. Say you\
+    \ are cooking some hamburgers.\n\n```javascript\nif(sideCooked) {\n  flipBurger();\n\
+    } else {\n  keepCooking();\n}\n```\n\nThis check can run the cooking robot at\
+    \ your favorite house of burgers. It might need some code though. If you need\
+    \ to check two conditions you can have if else:\n\n```javascript\nif(sideCooked)\
+    \ {\n  flipBurger();\n} else if(otherCooked) {\n  removeFromGrill();\n} else {\n\
+    \  keepCooking();\n}\n```\n\nThis gives us to check additional values. If you\
+    \ need more checks switch statement may work better. More on that later.\n\n##\
+    \ Conditional Operators\n\nThe operators we use for if statements must resolve\
+    \ to true or false. There are quite a few options for you to use. Speaking from\
+    \ experience you need to test out the right one.\n\n```javascript\nif(9>5) { alert(\"\
+    Greater than\"); } // greater than\nif(5<8) { alert(\"Less than\"); } // less\
+    \ than\nif(9>=6) { alert(\"Greater equal to\"); } // greater equal to\nif(4<=6)\
+    \ { alert(\"Less equal to\"); } // less equal to\nif(4!=6) { alert(\"Not equal\
+    \ to\"); } // not equal to\n```\n\nThere are also logical operators. The Logical\
+    \ And (&&) and Logical Or (||). They are used a lot but don’t be intimidated.\n\
+    \n```javascript\nconst value1 = 4;\nconst value2 = -3;\n\nconsole.log(value1 >\
+    \ 0 && value2 > 0); // Expected output: false\nconsole.log(value1 > 0 || value2\
+    \ > 0); // Expected output: true\n```\n\nThe Logical And must have both values\
+    \ to resolve as true. The Logical Or needs one to be true.\n\n## switch\n\nSwitch\
+    \ statements evaluate the expression to determine which statement to execute.\
+    \ Then it runs until reaching a break statement. Here is an example that tells\
+    \ us the price you want:\n\n```javascript\nconst shoes = 'Reebok';\nswitch (shoes)\
+    \ {\n  case 'Nike':\n    console.log('Nike shoes are.');\n    break;\n  case 'Adidas':\n\
+    \  case 'Reebok':\n    console.log('Adidas and Reebok.');\n    break;\n  default:\n\
+    \    console.log(`Sorry, we don't carry ${shoes}.`);\n}\n```\n\nIn this example,\
+    \ we removed the break from the Nike statement. Do you know what happens here?\
+    \ It will print ‘Nike shoes are.’ and then ‘Adidas and Reebok are.’ This type\
+    \ of bug is common for beginner programmers. Don’t feel bad. You are now part\
+    \ of the club!\n\nConditionals are fundamental to JavaScript. Similar to other\
+    \ languages it allows us to provide solutions quickly. The if/else and switch\
+    \ are easy to use.\n\n## JavaScript has sizable loops that will explode your mind\n\
+    \n![](img/c4712982624c6b0b4d50250b90aebac6_28_0.png)\n\nAs a kid, we planted a\
+    \ windbreak on our farm. A line of trees that needed watering a few times a week.\
+    \ Turn on the hose water the first tree and count to ten. Move to the second tree\
+    \ and repeat. Similar to life our computer programs must repeat things. That’s\
+    \ where loops come in handy. For loops are quite common so let’s start there.\n\
+    \n### for\n\nIf we have an array of books and we would like to print them out.\
+    \ We could use the following loop.\n\n```javascript\nfor (let i = 0; i < books.length;\
+    \ i++) {\n  text += books[i] + \"\";\n}\n```\n\nThe for loop has three basic parts.\
+    \ Start, Condition, and Step.\n\n**start**\nThis is the part where we set up the\
+    \ loop variable. In our example that is Usually, we initialize to zero. Although,\
+    \ you can set it to say 10 and then count down too.\n\n**condition**\nNext is\
+    \ the condition where check to see if we need to run this loop again. Our example\
+    \ checks if we still have more books to loop through. If we are done stop.\n\n\
+    **step**\nThe last part is the step. This tells us what happens after each iteration.\
+    \ Our example uses the increment operator(++). This is the normal step but we\
+    \ can do other things for cases.\n\n### while\n\nIf my dog Baxter wants to eat\
+    \ I want to create a loop that feeds him while he is hungry. The while loop can\
+    \ do this. Here is an example.\n\n```javascript\nlet baxterHungry = true;\n\n\
+    while (baxterHungry) {\n  console.log(feedBaxter);\n  checBaxter();\n}\n```\n\n\
+    We set the variable to true. Then we feed the dog until it becomes false. The\
+    \ while loop evaluates the condition we give it. It needs to resolve to be true\
+    \ or false.\n\nIf it is true the code inside the loop executes. We evaluate the\
+    \ condition again. Once the condition becomes false the loop stops.\n\n### do-while\n\
+    \nThe for and while loops check the condition then run the code statements. The\
+    \ do-while is different in that it runs the code and then checks your condition.\
+    \ It is less common but useful in special situations.\n\n```javascript\nlet donutsEaten\
+    \ = 0;\ndo {\n  console.log(\"Donuts eaten \" + donutsEaten);\n  donutsEaten++;\n\
+    } while (donutsEaten < 5)\nconsole.log(\"I'm full of Donuts!\");\n```"
+  mdcn: "\n## 最迷人的入门简单 JavaScript 函数基础\n\n![](img/c4712982624c6b0b4d50250b90aebac6_19_0.png)\n\
+    \n图片由 Stanley Dai 提供自 Unsplash\n\n函数是 JavaScript 的动力源。这是工作发生的地方。我们需要计算地板的面积吗？这就需要一个函数。\n\
+    \n```javascript\nfunction calculateFlooring(length, width) {\n  return length\
+    \ * width;\n}\n```\n\n如果我们重新装修厨房，这个函数将计算出所需的地板面积。那么，为什么我们需要函数呢？\n\n## 益处\n\n将函数想象成你代码的容器。它类似于代码块，但我们可以重复调用这个函数。这将有助于代码的复用。在我们先先的示例中，你可以复制该语句。当然，如果我们想修改它，我们需要搜索那段代码并修改所有的出现处。\n\
+    \n## 示例\n\n在第一个函数示例中，我们计算了地板面积。让我们退一步，让它变得更简单。我们可以在屏幕上打印一些内容。\n\n```javascript\n\
+    function greetTom() {\nalert(\"Hello Tom!\");\n}\n```\n\n当然，你可以把我的名字换成你的。如果你想遵循这个传统，可以将其替换为“Hello\
+    \ World”。你是否好奇过为什么这是传统，看……\n\n## 调用\n\n代码看起来很不错，但如果你不调用它，什么都不会发生。该怎么做呢？我很高兴你问。这里有一个示例。\n\
+    \n```javascript\nfunction greetTom() {\nalert(\"Hello Tom!\");\n}\n```\n\n```javascript\n\
+    greetTom();\n// do other things...\n```\n\n那个调用非常简单，因为它不需要参数。在我们第一个函数中，我们两个两个参数。让我们下一个试试。\n\
+    \n## 传递参数\n\n在我们的第一个示例中，我们从一个计算地板的函数开始。它接收两个参数。\n\n```javascript\nfunction calculateFlooring(length,\
+    \ width) {\n  return length * width;\n}\n\ncalculateFlooring(12,10);\n```\n\n\
+    我们可以传入这两个数字来获取所需的地板。在这个示例中，我们硬编码了值。你通常不会这样做，或者永远不会这样做。\n\n```javascript\nfunction\
+    \ calculateFlooring(length, width) {\n  return length * width;\n}\n\ncalculateFlooring(length,width);\n\
+    ```\n\n如你在此看到的，我们将两个参数作为变量。名字与函数相同，但并不一定相同。\n\n## 返回数据\n\n当我们返回计算结果时是有帮助的。如果不这样做，函数就没有它本可以那么用。我们只需要使用\
+    \ `return`。我们在计算地板函数中已经这样做了。尽管我们需要将其赋值或打印出来。\n\n```javascript\nfunction calculateFlooring(length,\
+    \ width) {\n  return length * width;\n}\n\nlet totalFlooring = 0;\ntotalFlooring\
+    \ = calculateFlooring(length,width);\n```\n\n现在我们可以在应用程序稍中使用这个值。之前的示例没有使用返回的值。如果你以后不需要它，这始终是一个选项。\n\
+    \n函数可以为我们做很多事情。它们为我们的代码提供了一个容器。然后我们可以调用它们并传递参数。此外，它们还可以返回数据。如果你需要更多信息，这里有一些进一步的……\n\
+    \n## 使用这些简单的 JavaScript 条件判断避免痛苦的错误\n\n![](img/c4712982624c6b0b4d50250b90aebac6_23_0.png)\n\
+    \n图片由 Artur Aldyrkhanov 提供自 Unsplash\n\n应用程序帮助我们做决定。一个基础决定是一个 `if` 条件。例如，如果披萨送卖员到了就开门。JavaScript\
+    \ 其他语言一样有很多条件判断，如：\n\n```javascript\nif\n```\n\n`if` 语句以一个条件开始。如果它为真，后面的语句将会执行。\n\
+    \n```javascript\nif(pizzaArrives) {\n  openDoor();\n}\n```\n\n所以，如果 `pizzaArrives`\
+    \ 为真，我们就调用函数 `openTheDoor`。我在 `if` 语句之后添加了大括号。这是可选的，但有助于可读性。省略大括号可能会导致你漏掉错误。所以请包含它们！\n\
+    \n### if/else\n\n有时你有两种不同的行动方案。我们可以在 `if` 的同时添加 `else` 语句。假设你正在做一些汉堡。\n\n```javascript\n\
+    if(sideCooked) {\n  flipBurger();\n} else {\n  keepCooking();\n}\n```\n\n这个检查可以运行你最喜欢的汉堡店的烹饪机器人。它可能需要一些代码。如果你需要检查两个条件，你可以使用\
+    \ `if else`：\n\n```javascript\nif(sideCooked) {\n  flipBurger();\n} else if(otherCooked)\
+    \ {\n  removeFromGrill();\n} else {\n  keepCooking();\n}\n```\n\n这让我们能够检查额外的值。如果你需要更多检查，`switch`\
+    \ 语句可能会更好。关于这一点稍后会介绍。\n\n## 条件运算符\n\n我们用于 `if` 语句的运算符必须解析为真或假。你有很多选项供你使用。根据经验，你需要测试出正确的那个。\n\
+    \n```javascript\nif(9>5) { alert(\"Greater than\"); } // 大于\nif(5<8) { alert(\"\
+    Less than\"); } // 小于\nif(9>=6) { alert(\"Greater equal to\"); } // 大于\nif(4<=6)\
+    \ { alert(\"Less equal to\"); } // 小于\nif(4!=6) { alert(\"Not equal to\"); } //\
+    \ 不等于\n```\n\n还有逻辑运算符。逻辑与 (`&&`) 和逻辑或 (`||`)。 它们被频繁使用，但不要被它们吓到。\n\n```javascript\n\
+    const value1 = 4;\nconst value2 = -3;\n\nconsole.log(value1 > 0 && value2 > 0);\
+    \ // 预期输出: false\nconsole.log(value1 > 0 || value2 > 0); // 预期输出: true\n```\n\n\
+    逻辑与必须两个值都解析为真。逻辑或需要其中一个为真。\n\n## switch\n\n`switch` 语句评估表达式以确定执行哪个语句。然后它一直运行直到遇到\
+    \ `break` 语句。这里有一个示例告诉我们你想要的价格：\n\n```javascript\nconst shoes = 'Reebok';\nswitch\
+    \ (shoes) {\n  case 'Nike':\n    console.log('Nike shoes are.');\n    break;\n\
+    \  case 'Adidas':\n  case 'Reebok':\n    console.log('Adidas and Reebok.');\n\
+    \    break;\n  default:\n    console.log(`Sorry, we don't carry ${shoes}.`);\n\
+    }\n```\n\n在这个示例中，我们从 `Nike` 语句中删除了 `break`。你知道会发生什么吗？条件判断是 JavaScript 的基础。`if/else`\
+    \ 和 `switch` 很容易用。\n\n## JavaScript 有循环会让你大脑爆炸\n\n![](img/c4712982624c6b0b4d50250b90aebac6_28_0.png)\n\
+    \n正如一个孩子，我们在农场种了树需要浇水。就像生活一样，计算机程序必须重复。这就是循环有用的地方。`for` 循环非常常见，所以让我们从那里开始。\n\n\
+    ### for\n\n如果我们有一个书籍数组并想打印它们。可以使用以下循环。\n\n```javascript\nfor (let i = 0; i < books.length;\
+    \ i++) {\n  text += books[i] + \"\";\n}\n```\n\n`for` 循环有三个部分。开始、条件和步骤。\n\n**start**\n\
+    这是我们设置循环变量的部分。在我们示例中，通常初始化为 0。尽管你也可以将其设置为 10 然后递减。\n\n**condition**\n下一步是条件，检查是否需要再次运行此循环。我们的示例检查是否还有更多书籍需要遍历。如果我们完成了就停止。\n\
+    \n**step**\n最后一部分是步骤。它告诉我们每次迭代后发生了什么。我们的示例使用了增量运算符(`++`)。这是正常的步骤，但我们也可以做其他事情。\n\
+    \n### while\n\n如果我的狗 Baxter 想吃，我想创建一个在他饥饿时喂给他的循环。`while` 循环可以做到这一点。这里有一个示例。\n\n\
+    ```javascript\nlet baxterHungry = true;\n\nwhile (baxterHungry) {\n  console.log(feedBaxter);\n\
+    \  checBaxter();\n}\n```\n\n我们将变量设置为真。然后我们喂狗直到它变为假。`while` 循环评估我们给它的条件。它需要解析为真或假。\n\
+    \n如果是真，循环内部的代码将执行。我们再次评估条件。一旦条件变为假，循环停止。\n\n### do-while\n\n`for` 和 `while` 循环检查条件后运行代码语句。`do-while`\
+    \ 不同之处在于它先运行代码然后检查你的条件。它不常见，但在特殊情况下有用。\n\n```javascript\nlet donutsEaten = 0;\n\
+    do {\n  console.log(\"Donuts eaten \" + donutsEaten);\n  donutsEaten++;\n} while\
+    \ (donutsEaten < 5)\nconsole.log(\"I'm full of Donuts!\");\n```\n"
+  merge: 0
+  raw:
+  - "[PAGE 19]\n\n# First easy JavaScript function basics that are the most fascinating\n\
+    \n![](img/c4712982624c6b0b4d50250b90aebac6_19_0.png)\n\nPhoto by Stanley Dai on\
+    \ Unsplash\n\nFunctions are the powerhouse in This is where the work happens.\
+    \ Do we need to calculate the space of a floor? This calls for a function.\n\n\
+    ```\nfunction calculateFlooring(length, width) {\n  return length * width;\n}\n\
+    ```\n\nThis function will calculate the flooring we need if we remodel the kitchen.\
+    \ So why do we need functions?"
+  - '[PAGE 20]
+
+
+    # Benefits
+
+
+    Think of a function as a container for your code. Similar to a code block but,
+    we can call this function repeatedly. This will facilitate reusable code. In our
+    prior example, you could copy the statement. Of course, if we wanted to change
+    that we needed to search for that code and change all the occurrences.
+
+
+    # Example
+
+
+    In our first function example, we calculated the flooring. Let’s step back and
+    make it even easier. We can print something on the screen.
+
+
+    ```
+
+    function greetTom() {
+
+    alert("Hello Tom!");
+
+    }
+
+    ```
+
+
+    Of course, you can put your name in place of mine. If you want to keep the tradition,
+    you can replace it with “Hello World”. Have you wondered why that is the tradition,
+    look
+
+
+    # Calling
+
+
+    The code may look nice but nothing happens if you don’t call it. How do you do
+    that? I am glad you asked. Here is an example.
+
+
+    ```
+
+    function greetTom() {
+
+    alert("Hello Tom!");
+
+    }
+
+    ```'
+  - "[PAGE 21]\n\n```\ngreetTom();\n// do other things...\n```\n\nThat call is easy\
+    \ as it takes no arguments. In our first function, we had two arguments we needed.\
+    \ Let’s try that next.\n\n# Passing arguments\n\nIn our first example, we started\
+    \ with a function to calculate flooring. It took two arguments.\n\n```\nfunction\
+    \ calculateFlooring(length, width) {\n  return length * width;\n}\n\ncalculateFlooring(12,10);\n\
+    ```\n\nWe can pass in the two numbers to get the flooring needed. In this example,\
+    \ we hard-code the value. You won’t do that often or ever.\n\n```\nfunction calculateFlooring(length,\
+    \ width) {\n  return length * width;\n}\n\ncalculateFlooring(length,width);\n\
+    ```\n\nAs you see here, we have the two arguments as variables. The names are\
+    \ the same as the function but don’t have to be."
+  - "[PAGE 22]\n\n# Returning data\n\nIt is helpful when we return the calculation.\
+    \ If we don't the function is not as useful as it could be. We just need to use\
+    \ the return. We did this in our calculate flooring function. Although we need\
+    \ to assign this or print it out.\n\n```\nfunction calculateFlooring(length, width)\
+    \ {\n  return length * width;\n}\n```\n\nlet totalFlooring = 0;\ntotalFlooring\
+    \ = calculateFlooring(length,width);\n\nNow we can use this value later in the\
+    \ application. The prior examples didn't use the value returned. This is always\
+    \ an option if you don't need it later on.\n\nFunctions can do a lot for us. They\
+    \ provide us with a container for our code. Then we can call them and pass parameters.\
+    \ Along with that, they can return the data. If you need more information here\
+    \ is some further"
+  - '[PAGE 23]
+
+
+    # Avoid painful mistakes with these Simplistic JavaScript Conditionals
+
+
+    ![](img/c4712982624c6b0b4d50250b90aebac6_23_0.png)
+
+
+    Photo by Artur Aldyrkhanov on Unsplash
+
+
+    Applications help us make decisions. A basic decision is an if condition. For
+    example, if the pizza delivery driver arrives open the door. JavaScript like other
+    languages has many conditionals like
+
+
+    ```
+
+    if
+
+    ```'
+  - "[PAGE 24]\n\nAn if statement starts with a condition. If it is true the statement\
+    \ following will happen.\n\n```\nif(pizzaArrives) {\n  openDoor();\n}\n```\n\n\
+    So if pizzaArrives is true we call the function openTheDoor. I added the braces\
+    \ after the if statement. This is optional but helps readability. Omitting the\
+    \ braces can cause you to miss bugs. So please include them!\n\nif/else\n\nThere\
+    \ are times when you have two different courses of action. We can add the else\
+    \ statement along with the if. Say you are cooking some hamburgers.\n\n```\nif(sideCooked)\
+    \ {\n  flipBurger();\n} else {\n  keepCooking();\n}\n```\n\nThis check can run\
+    \ the cooking robot at your favorite house of burgers. It might need some more\
+    \ code though.\nIf you need to check two conditions you can have an if else if\
+    \ too.\n\n```\nif(sideCooked) {\n  flipBurger();\n} else if(otherSideCooked) {\n\
+    ```"
+  - '[PAGE 25]
+
+
+    ```
+
+    removeFromGrill();
+
+    } else {
+
+    keepCooking();
+
+    }
+
+
+    ```
+
+
+    This gives us the to check additional values. If you need more checks a switch
+    statement may work better. More on that later.
+
+
+    # Conditional Operators
+
+
+    The operators we use for if statements must resolve to true or false. There are
+    quite a few options for you to use here. Speaking from experience you need to
+    test things out get the right one.
+
+
+    ```
+
+    if(9>5) { alert("Greater than"); } // greater than
+
+    if(5<8) { alert("Less than"); } // less than
+
+    if(9>=6) { alert("Greater than equal to"); } // greater equal to
+
+    if(4<=6) { alert("Less than equal to"); } // less equal to
+
+    if(4!=6) { alert("Not equal to"); } // not equal to
+
+    ```
+
+
+    There are also two logical operators. The Logical And(&&&) and the Logical Or(||).
+    They are used a lot but don’t be intimidated.
+
+
+    ```
+
+    const value1 = 4;
+
+    const value2= -3;
+
+
+    console.log(value1 > 0 && value2 > 0); // Expected output: false
+
+
+    console.log(value1 > 0 || value2 > 0); // Expected output: true
+
+    ```'
+  - "[PAGE 26]\n\nThe Logical And must have both values true to resolve as true. The\
+    \ Logical Or needs one to be true.\n\n# switch\n\nSwitch statements evaluate the\
+    \ expression to determine which statement to to execute. Then it runs the code\
+    \ until reaching a break statement. Here is an example that tells us the price\
+    \ of the shoes you want.\n\n```\nconst shoes = 'Reebok';\nswitch (shoes) {\n \
+    \ case 'Nike':\n    console.log('Nike shoes are $200.');\n    break;\n  case 'Adidas':\n\
+    \  case 'Reebok':\n    console.log('Adidas and Reebok are $100 a pair.');\n  \
+    \  // Expected output: \"Adidas and Reebok are $100 a pair.\"\n    break;\n  default:\n\
+    \    console.log(`Sorry, we don't carry ${shoes}.`);\nn\n```\n\nThis code should\
+    \ print \"Adidas and Reebok are $100 a pair.\" to the console. Switch statements\
+    \ can be tricky if you don't add the break statement.\n\n```\nconst shoes = 'Nike';\n\
+    switch (shoes) {\n  case 'Nike':\n    console.log('Nike shoes are $200.');\n \
+    \ case 'Adidas':n\n```"
+  - "[PAGE 27]\n\n```\ncase 'Reebok':\n  console.log('Adidas and Reebok are $100 a\
+    \ pair.');\n  break;\n  default:\n    console.log(`Sorry, we don't carry ${shoes}.`);\n\
+    }\n```\n\nIn this example, we removed the break from the Nike statement. Do you\
+    \ know what happens here? It will print ‘Nike shoes are $200.’ and then ‘Adidas\
+    \ and Reebok are $100 a pair.’ This type of bug is common for beginner programmers.\
+    \ Don’t feel bad. You are now part of the club!\n\nConditionals are fundamental\
+    \ to JavaScript. Similar to other languages it allows us to provide solutions\
+    \ quickly. The if/else and switch are easy to use."
+  - '[PAGE 28]
+
+
+    JavaScript has Sizable loops that will explode your mind
+
+
+    ![](img/c4712982624c6b0b4d50250b90aebac6_28_0.png)
+
+
+    As a kid, we planted a windbreak on our farm. A line of trees that needed watering
+    a few times a week. Turn on the hose water the first tree and count to ten. Move
+    to the second tree and repeat.
+
+
+    Similar to life our computer programs must repeat things. That’s where loops come
+    in handy. For loops are quite common so let’s start there.
+
+
+    for'
+  - "[PAGE 29]\n\nIf we have an array of books and we would like to print them out.\
+    \ We could use the following loop.\n\n```\nfor (let i = 0; i < books.length; i++)\
+    \ {\n  text += books[i] + \"\";\n}\n```\n\nThe for loop has three basic parts.\
+    \ Start, Condition, and Step.\n\nstart\n\nThis is the part where we set up the\
+    \ loop variable. In our example that is Usually, we initialize to zero. Although,\
+    \ you can set it to say 10 and then count down too.\n\ncondition\n\nNext is the\
+    \ condition where check to see if we need to run this loop again. Our example\
+    \ checks if we still have more books to loop through. If we are done stop.\n\n\
+    step\n\nThe last part is the step. This tells us what happens after each iteration.\
+    \ Our example uses the increment operator(++). This is the normal step but we\
+    \ can do other things for special cases.\n\nwhile"
+  - "[PAGE 30]\n\nIf my dog Baxter wants to eat I want to create a loop that feeds\
+    \ him while he is hungry. The while loop can do this. Here is an example.\n\n\
+    let baxterHungry = true;\n\n```\nwhile (baxterHungry) {\n  console.log(feedBaxter);\n\
+    \n  checBaxter();\n}\n```\n\nWe set the variable to true. Then we feed the dog\
+    \ until it becomes false. The while loop evaluates the condition we give it. It\
+    \ needs to resolve to be true or false.\n\nIf it is true the code inside the loop\
+    \ executes. We evaluate the condition again. Once the condition becomes false\
+    \ the loop stops.\n\ndo-while\n\nThe for and while loops check the condition then\
+    \ run the code statements. The do-while is different in that it runs the code\
+    \ and then checks your condition. It is less common but useful in special situations.\n\
+    \n```\nlet donutsEaten = 0;\ndo {\n  console.log(\"Donuts eaten \" + donutsEaten);\n\
+    \  donutsEaten++;\n} while (donutsEaten < 5)\nconsole.log(\"I'm full of Donuts!\"\
+    );\n```"
+- md: "do-while runs until the condition is false—Opposite of the two other types\
+    \ of loops we have discussed. The output would look like this.\n\n```\nDonuts\
+    \ eaten 0\nDonuts eaten 1\n\nDonuts eaten 2\nDonuts eaten 3\nDonuts eaten 4\n\
+    I'm full of Donuts!\n```\n\nWhen you need to loop through code, JavaScript has\
+    \ a few options for you.\nLike other programming languages, it has the for, while,\
+    \ and do-while loops.\nJust make sure it fits your needs.\n\n# Surprisingly Improved\
+    \ JavaScript Variable Scope You Need\n\n![](img/c4712982624c6b0b4d50250b90aebac6_32_0.png)\n\
+    \nPhoto by Markus Spiske on Unsplash\n\nMy wife changes topics quickly. I joke\
+    \ with her that she needs turn signals. That Way I can keep up with the shifting\
+    \ focus. She is talking about dinner, and then we shift to our next vacation.\n\
+    \n## Scope\n\nOur code has a similar concept with scope. Variables can come in\
+    \ and out of scope quickly. As developers, we must keep this concept front and\
+    \ center.\n\nIn JavaScript, they have a few different types of scope. We can use\
+    \ them accordingly. If you have done other coding, you have encountered similar\
+    \ concepts.\n\n## Global\n\nGlobal scope items are visible everywhere. In our\
+    \ example, we create a visible variable in the function and outside.\n\n```\n\
+    let myGlobalVariable = \"TheBigGlobalVariable\";\n\nfunction logGlobalVariable()\
+    \ {\n  console.log(myGlobalVariable);\n}\n\nlogGlobalVariable();\n```\n\nI bet\
+    \ you are wondering, what if I add a variable in the function? This leads us to\
+    \ the local scope example.\n\n## Local\n\nLocal variables are visible only in\
+    \ the function. Here is an example to try this out.\n\n```\nlet myGlobalVariable\
+    \ = \"TheBigGlobalVariable\";\n\nfunction logGlobalVariable() {\n  console.log(myGlobalVariable);\n\
+    \  let localVariable = \"TheLocalOne\"\n  console.log(localVariable);\n}\n\n```\n\
+    \nlogGlobalVariable();\n\nconsole.log(localVariable);\n```\n\nIf we run this we\
+    \ will get an error on the last line.\n\n```\nconsole.log(localVariable);\n^\n\
+    ReferenceError: localVariable is not defined\n```\n\nSo you can see what happens\
+    \ when you mistakenly place a variable in the wrong spot.\n\n## Block\n\nWhere\
+    \ local scope is within the function, block scope is within the braces. Sometimes\
+    \ you create braces to identify some code. Let's take a look to show you what\
+    \ I mean.\n\n```\nconsole.log(\"here\");\n{\n  let blockScopeVariable = 0;\n \
+    \ console.log(blockScopeVariable);\n}\n// we can't reference blockScopeVariable\
+    \ here\nconsole.log(blockScopeVariable); // won't work\n```\n\nAs you can see\
+    \ create a block scope variable within the braces. Then outside of that, it won't\
+    \ be able to be referenced.\n\n## Gotchas\n\nThe scope can be confusing and lead\
+    \ to some errors. As you get more experience with JavaScript, you can spot them\
+    \ early on. For instance, if we look at this code snippet:\n\n```\nconst colors\
+    \ = ['red', 'blue', 'white'];\n\nfor (let i = 0, l = colors.length; i < l; i++)\
+    \ {\n    console.log(colors[i]); // 'red', 'blue', 'white'\n}\nconsole.log(l);\
+    \ // ???\nconsole.log(i); // ???\n```\n\nThe variables i and l will get reference\
+    \ errors. They are out of scope similar to our previous examples. Dmitri Pavlutin\
+    \ explains this more in-depth. He also covers a few common mistakes we may make\
+    \ in coding.\nJavaScript scope has a few basic principles you need to remember.\
+    \ Global scope is visible everywhere. Local and Block scope are more focused.\n\
+    Overall you should use the latter and avoid the former. Keep on coding!\n\n# Exploit\
+    \ JavaScript Closures More and Don’t Panic\n\n![](img/c4712982624c6b0b4d50250b90aebac6_36_0.png)\n\
+    \nPhoto by Cristina Gottardi on Unsplash\n\nHaving dipped into JavaScript occasionally\
+    \ over my development career, Closures have been something I didn’t encounter\
+    \ much. They have some great value.\n\n## Closures\n\nHow can we define closures?\
+    \ Well, this article defines it like this. “Closure in JavaScript is a form of\
+    \ lexical scoping used to preserve variables from the outer scope of a function\
+    \ in the inner scope of a function.”\n\n```\nfunction outerFunction() {\n  var\
+    \ x = 10;\n\n  function innerFunction() {\n    return x;\n  }\n  return innerFunction;\n\
+    }\n\nvar inner = outerFunction();\nconsole.log(inner);\n```\n\nHere is an example\
+    \ of a closure. The outer function outerFunction() creates a variable x and a\
+    \ function innerFunction(). The inner function innerFunction() returns the value\
+    \ of the variable x. The outer function then returns the inner function innerFunction().\n\
+    \nNext inner function innerFunction() is then assigned to the variable inner.\
+    \ When the variable inner is called, it returns the value of the variable x, even\
+    \ though the outer function outerFunction() has already returned.\n\nIn a moment\
+    \ we can cover lexical scoping. First, let's understand why we need them. Plus\
+    \ some disadvantages too.\n\n## Pros and Cons\n\nClosures can help hide the encapsulation\
+    \ details. Like Java’s private variables and functions, this allows us to control\
+    \ access. The downside of this is closures take up more memory. These items can\
+    \ not be garbage collected. Lastly, it can slow down execution. Deepak Mankotia\
+    \ explores this more in-depth.\n\n## Lexical Scoping\n\nThe term lexical scoping\
+    \ refers to where the variable is defined. Along with that where it can be referenced\
+    \ or not.\n\n```\nlet x = 10\nlet myFunc = function () {\n  let y = 20;\n  console.log(\"\
+    x and y is accessible (outer):\", x, y);\n  let insideFunc= function () {\n  \
+    \  let z = 30;\n    console.log(\"x and y and z is accessible (inner):\", x, y,\
+    \ z);\n  }\n  insideFunc();\n  return;\n}\nmyFunc();\nconsole.log(\"only x is\
+    \ accessible (global):\", x);\n```\n\nIn this example, insideFunc is defined within\
+    \ the myFunc. In this case, myFunc is its parent. That of the parent function\
+    \ lexically binds the child function. JavaScript Closures are a form of Lexical\
+    \ Scoping.\n\nJavaScript Clos are powerful tools. They have some distinct values.\
+    \ It allows you to encapsulate details, but it can slow down your execution. Consider\
+    \ whether the risks and rewards work for your application.\n\nFor more information\
+    \ here is a deep dive on\n\n![](img/c4712982624c6b0b4d50250b90aebac6_39_0.png)\n\
+    \n# About the Author\n\nTom Henricksen is a problem-solving technology professional.\
+    \ He is a speaker and writer at Code is Easy. Starting from a developer he has\
+    \ worked as a Project Manager, Technical Lead, Scrum Master, and Manager of Software\
+    \ Development.\n\nTom has helped organizations with agile transformations. He\
+    \ has also coached and trained teams and individuals.\n\nTom has been an entrepreneur\
+    \ as well. Tom was the founder of the Agile Online Summit and DevOps Online Summit.\
+    \ Where he led a strong online community of over 5,000 people.\n\nTom has learned\
+    \ how to solve challenging issues in technology and lead technical teams. He can\
+    \ help you develop those skills too!\n\nYou can connect with me on:\n\n+   - http://codeiseasy.co\n\
+    - https://twitter.com/TomHenricksen\n- https://www.linkedin.com/in/tomhenricksen\n\
+    \nSubscribe to my newsletter:\nhttps://t.co/NkolrQgXHM"
+  mdcn: "\ndo-while 一直运行到条件为假为止——与我们讨论过的其他两种循环类型相反。输出看起来如下所示。\n\n```\nDonuts eaten\
+    \ 0\nDonuts eaten 1\n\nDonuts eaten 2\nDonuts eaten 3\nDonuts eaten 4\nI'm full\
+    \ of Donuts!\n```\n\n当你需要循环执行代码时，JavaScript 为你提供了几个选项。\n与其他编程语言一样，它有 `for`、`while`\
+    \ 和 `do-while` 循环。\n只需确保它符合你的需求。\n\n# 你需要的意外改进 JavaScript 变量作用域\n\n![](img/c4712982624c6b0b4d50250b90aebac6_32_0.png)\n\
+    \n照片由 Markus Spiske 发布于 Unsplash\n\n我妻子切换话题非常快。我开玩笑说她需要转向灯，这样我才能跟上她转移的焦点。她正在聊晚餐，然后我们就转向了下一次度假。\n\
+    \n## 作用域 (Scope)\n\n我们的代码也有类似的作用域概念。变量可以快速进入和离开作用域。作为开发者，我们必须将这一概念置于核心。\n\n在 JavaScript\
+    \ 中，有几种不同类型的作用域。我们可以根据情况使用它们。如果你做过其他编程，就会遇到过类似的概念。\n\n## 全局作用域 (Global)\n\n全局作用域项在处处可见。在我们的示例中，我们在函数内部和外部创建了一个可见变量。\n\
+    \n```\nlet myGlobalVariable = \"TheBigGlobalVariable\";\n\nfunction logGlobalVariable()\
+    \ {\n  console.log(myGlobalVariable);\n}\n\nlogGlobalVariable();\n```\n\n我猜你在想，如果我在函数内部添加一个变量怎么办？这引出了局部作用域的示例。\n\
+    \n## 局部作用域 (Local)\n\n局部变量只在函数内部可见。这里有一个示例可以尝试。\n\n```\nlet myGlobalVariable =\
+    \ \"TheBigGlobalVariable\";\n\nfunction logGlobalVariable() {\n  console.log(myGlobalVariable);\n\
+    \  let localVariable = \"TheLocalOne\"\n  console.log(localVariable);\n}\n\nlogGlobalVariable();\n\
+    \nconsole.log(localVariable);\n```\n\n如果我们运行这段代码，将在最后一行得到一个错误。\n\n```\nconsole.log(localVariable);\n\
+    ^\nReferenceError: localVariable is not defined\n```\n\n所以你可以看到当你错误地将变量放在错误位置时会发生什么。\n\
+    \n## 块作用域 (Block)\n\n如果局部作用域是在函数内部，那么块作用域就是在大括号内部。有时你会创建大括号来标识某些代码。让我们来看看我想表达什么。\n\
+    \n```\nconsole.log(\"here\");\n{\n  let blockScopeVariable = 0;\n  console.log(blockScopeVariable);\n\
+    }\n// 我们在在这里无法引用 blockScopeVariable\nconsole.log(blockScopeVariable); // 将无法工作\n\
+    ```\n\n如你所示，在大括号内创建了一个块作用域变量。但在外部，它将无法被引用。\n\n## 注意事项 (Gotchas)\n\n作用域可能会令人困惑并导致一些错误。随着你对\
+    \ JavaScript 经验的增加，你可以尽早发现它们。例如，如果我们看这段代码片段：\n\n```\nconst colors = ['red', 'blue',\
+    \ 'white'];\n\nfor (let i = 0, l = colors.length; i < l; i++) {\n    console.log(colors[i]);\
+    \ // 'red', 'blue', 'white'\n}\nconsole.log(l); // ???\nconsole.log(i); // ???\n\
+    ```\n\n变量 `i` 和 `l` 将会导致引用错误。它们与我们之前的示例类似，超出了作用域。Dmitri Pavlutin 深入解释了这一点。他还涵盖了我们在编码中可能犯的一些常见错误。\n\
+    JavaScript 作用域有你需要记忆的基本原则。全局作用域随处可见。局部和块作用域更集中。\n总而言，你应该使用后者并避免前者。继续编码吧！\n\n#\
+    \ 多利用 JavaScript 闭包，不要恐慌\n\n![](img/c4712982624c6b0b4d50250b90aebac6_36_0.png)\n\
+    \n照片由 Cristina Gottardi 发布于 Unsplash\n\n在我开发生涯中偶尔接触 JavaScript，闭包（Closures）是我并不经常遇到的东西。它们具有巨大的价值。\n\
+    \n## 闭包 (Closures)\n\n我们如何定义闭包？嗯，这篇文章是这样定义的：“JavaScript 中的闭包是词法作用域的一种形式，用于在函数的内部作用域中保留函数外部作用域的变量。”\n\
+    \n```\nfunction outerFunction() {\n  var x = 10;\n\n  function innerFunction()\
+    \ {\n    return x;\n  }\n  return innerFunction;\n}\n\nvar inner = outerFunction();\n\
+    console.log(inner);\n```\n\n这是一个闭包的示例。外部函数 `outerFunction()` 创建了一个变量 `x` 和一个函数\
+    \ `innerFunction()`。内部函数 `innerFunction()` 返回变量 `x` 的值。然后外部函数返回了内部函数 `innerFunction()`。\n\
+    \n接着，内部函数 `innerFunction()` 被赋值给变量 `inner`。当调用变量 `inner` 时，它会返回变量 `x` 的值，即使外部函数\
+    \ `outerFunction()` 已经返回。\n\n稍后我们将涵盖词法作用域。首先，让我们理解为什么需要它们。此外还有一些缺点。\n\n## 优缺点\
+    \ (Pros and Cons)\n\n闭包可以帮助隐藏封装细节。类似于 Java 的私有变量和函数，这允许我们控制访问。此的缺点是闭包会占用更多内存。这些项无法被垃圾回收。最后，它可能会减慢执行速度。Deepak\
+    \ Mankotia 深入探讨了这一点。\n\n## 词法作用域 (Lexical Scoping)\n\n词法作用域术语指的是变量定义的地方。以及它是否可以被引用的。\n\
+    \n```\nlet x = 10\nlet myFunc = function () {\n  let y = 20;\n  console.log(\"\
+    x and y is accessible (outer):\", x, y);\n  let insideFunc = function () {\n \
+    \   let z = 30;\n    console.log(\"x and y and z is accessible (inner):\", x,\
+    \ y, z);\n  }\n  insideFunc();\n  return;\n}\nmyFunc();\nconsole.log(\"only x\
+    \ is accessible (global):\", x);\n```\n\n在这个示例中，`insideFunc` 定义在 `myFunc` 内部。在这种情况下，`myFunc`\
+    \ 是它的父级。父函数词法上绑定了子函数。JavaScript 闭包是词法作用域的形式。\n\nJavaScript 闭包是强大的工具。它们具有独特的价值。它允许你封装细节，但可能会降低执行速度。考虑风险和回报是否适用于你的应用程序。\n\
+    \n更多信息请参这里：\n\n![](img/c4712982624c6b0b4d50250b90aebac6_39_0.png)\n\n# 关于作者\n\n\
+    Tom Henricksen 是一位解决问题型技术专家。他是 Code is Easy 的演讲者和作家。从开发者开始，他曾担任项目经理、技术主管、Scrum\
+    \ Master 和软件开发经理。\n\nTom 曾帮助组织进行敏捷转型。他还指导和培训了团队和个人。\n\nTom 也是一名创业者。Tom 是 Agile\
+    \ Online Summit 和 DevOps Online Summit 的创始人。在那里领导了一个超过 5000 人的强大在线社区。\n\nTom 学习了如何解决技术领域的挑战性问题并领导技术团队。也可以帮助你培养这些技能！\n\
+    \n你可以以下方式与我联系：\n\n+   - http://codeiseasy.co\n- https://twitter.com/TomHenricksen\n\
+    - https://www.linkedin.com/in/tomhenricksen\n\n订阅我的时事：\nhttps://t.co/NkolrQgXHM\n"
+  merge: 0
+  raw:
+  - '[PAGE 31]
+
+
+    The do while runs until the condition is false—Opposite of the two other types
+    of loops we have discussed. The output would look like this.
+
+
+    ```
+
+    Donuts eaten 0
+
+    Donuts eaten 1
+
+
+    Donuts eaten 2
+
+    Donuts eaten 3
+
+    Donuts eaten 4
+
+    I''m full of Donuts!
+
+    ```
+
+
+    When you need to loop through code JavaScript has a few options for you.
+
+    Like other programming languages, it has the for, while, and do-while loops.
+
+    Just make sure it fits your needs.'
+  - '[PAGE 32]
+
+
+    # Surprisingly Improved JavaScript Variable Scope You Need
+
+
+    ![](img/c4712982624c6b0b4d50250b90aebac6_32_0.png)
+
+
+    Photo by Markus Spiske on Unsplash
+
+
+    My wife changes topics quickly. I joke with her that she needs turn signals. That
+    Way I can keep up with the shifting focus. She is talking about dinner, and then
+    we shift to our next vacation.
+
+
+    Scope
+
+
+    Our code has a similar concept with scope. Variables can come in and out of scope
+    quickly. As developers, we must keep this concept front and center.'
+  - "[PAGE 33]\n\nIn they have a few different types of scope. We can use them accordingly.\
+    \ If you have done other coding you you have encountered similar concepts.\n\n\
+    # Global\n\nGlobal scope items are visible everywhere. In our example, we create\
+    \ a visible variable in the function and outside.\n\n```\nlet myGlobalVariable\
+    \ = \"TheBigGlobalVariable\";\n\nfunction logGlobalVariable() {\n  console.log(myGlobalVariable);\n\
+    }\n```\n\nlogGlobalVariable();\n\nI bet you are wondering, what if I add a variable\
+    \ in the function? This leads us to the local scope example.\n\n# Local\n\nLocal\
+    \ variables are visible only in the function. Here is an example to try this out.\n\
+    \n```\nlet myGlobalVariable = \"TheBigGlobalVariable\";\n\nfunction logGlobalVariable()\
+    \ {\n  console.log(myGlobalVariable);\n  let localVariable = \"TheLocalOne\"\n\
+    \  console.log(localVariable);\n}\n```"
+  - "[PAGE 34]\n\n```\nlogOutGlobalVariable();\n\nconsole.log(localVariable);\n```\n\
+    \nIf we run this we will get an error on the last line.\n\n```\nconsole.log(localVariable);\n\
+    ^\nReferenceError: localVariable is not defined\n```\n\nSo you can see what happens\
+    \ when you mistakenly place a variable in the wrong spot.\n\n# Block\n\nWhere\
+    \ local scope is within the function, block scope is within the braces. Sometimes\
+    \ you create braces to identify some code. Let's take a look to show you what\
+    \ I mean.\n\n```\nconsole.log(\"here\");\n{\n  let blockScopeVariable = 0;\n \
+    \ console.log(blockScopeVariable);\n}\n// we can't reference blockScopeVariable\
+    \ here\nconsole.log(blockScopeVariable); // won't work\n```"
+  - "[PAGE 35]\n\nAs you can see create a block scope variable within the braces.\
+    \ Then outside of that, it won't be able to be referenced.\n\nGotchas\n\nThe scope\
+    \ can be confusing and lead to some errors. As you get more experience with JavaScript,\
+    \ you can spot them early on. For instance, if we look at this code snippet:\n\
+    \n```\nconst colors = ['red', 'blue', 'white'];\n\nfor (let i = 0, l = colors.length;\
+    \ i < l; i++) {\n    console.log(colors[i]); // 'red', 'blue', 'white'\n}\nconsole.log(l);\
+    \ // ???\nconsole.log(i); // ???\n```\n\nThe variables i and l will get reference\
+    \ errors. They are out of scope similar to our previous examples. Dmitri Pavlutin\
+    \ explains this more in-depth He also covers a few common mistakes we may make\
+    \ in coding.\nJavaScript scope has a few basic principles you need to remember.\
+    \ Global scope is visible everywhere. Local and Block scope are more focused.\n\
+    Overall you should use the latter and avoid the former. Keep on coding!"
+  - '[PAGE 36]
+
+
+    # Exploit JavaScript Closures More and Don’t Panic
+
+
+    ![](img/c4712982624c6b0b4d50250b90aebac6_36_0.png)
+
+
+    Photo by Cristina Gottardi on Unsplash
+
+
+    Having dipped into JavaScript occasionally over my development career Closures
+    have been something I didn’t encounter much. They have some great value.
+
+
+    Closures
+
+
+    How can we define closures? Well, this article defines it like this. “Closure
+    in JavaScript is a form of lexical scoping used to preserve variables from the
+    outer scope of a function in the inner scope of a function.”'
+  - "[PAGE 37]\n\n```\nfunction outerFunction() {\n  var x = 10;\n\n  function innerFunction()\
+    \ {\n    return x;\n  }\n  return innerFunction;\n}\n\nvar inner = outerFunction();\n\
+    console.log(inner);\n```\n\nHere is an example of a closure. The outer function\
+    \ outerFunction() creates a variable x and a function innerFunction(). The inner\
+    \ function innerFunction() returns the value of the variable x. The outer function\
+    \ then returns the inner function innerFunction().\n\nNext inner function innerFunction()\
+    \ is then assigned to the variable inner. When the variable inner is called, it\
+    \ returns the value of the variable x, even though the outer function outerFunction()\
+    \ has already returned.\n\nIn a moment we can cover lexical scoping. First, let's\
+    \ understand why we need them. Plus some disadvantages too.\n\n# Pros and Cons\n\
+    \nClosures can help hide the encapsulation details. Like Java’s private variables\
+    \ and functions, this allows us to control access. The downside of this is closures\
+    \ take up more memory. These items can not be garbage collected. Lastly, it can\
+    \ slow down execution. Deepak Mankotia explores this more in-depth.\n\n# Lexical\
+    \ Scoping"
+  - '[PAGE 38]
+
+
+    The term lexical scoping refers to where the variable is defined. Along with that
+    where it can be referenced or not.
+
+
+    ```
+
+    let x = 10
+
+    let myFunc = function () {
+
+    let y = 20;
+
+    console.log("x and y is accessible (outer):", x, y);
+
+    let insideFunc= function () {
+
+    let z = 30;
+
+    console.log("x and y and z is accessible (inner):", x, y, z);
+
+    }
+
+    insideFunc();
+
+    return;
+
+    }
+
+    myFunc();
+
+    console.log("only x is accessible (global):", a);
+
+    ```
+
+
+    In this example, insideFunc is defined within the myFunc. In this case, myFunc
+    is its parent. That of the parent function lexically binds the child function.
+    JavaScript Closures are a form of Lexical Scoping.
+
+
+    JavaScript Closures are powerful tools. They have some distinct values. It allows
+    you to encapsulate details, but it can slow down your execution time. Consider
+    whether the risks and rewards work for your application.
+
+
+    For more information here is a deep dive on'
+  - '[PAGE 39]
+
+
+    ![](img/c4712982624c6b0b4d50250b90aebac6_39_0.png)
+
+
+    # About the Author
+
+
+    Tom Henricksen is a problem-solving technology professional. He is a speaker and
+    writer at Code is Easy. Starting from a developer he has worked as a Project Manager,
+    Technical Lead, Scrum Master, and Manager of Software Development.'
+  - '[PAGE 40]
+
+
+    Tom has helped organizations with agile transformations. He has also coached and
+    trained teams and individuals.
+
+
+    Tom has been an entrepreneur as well. He speaks and writes with a focus on technology
+    roles. Tom was the founder of the Agile Online Summit and DevOps Online Summit.
+    Where he led a strong online community of over 5,000 people.
+
+
+    Tom has learned how to solve challenging issues in technology and lead technical
+    teams. He can help you develop those skills too!
+
+
+    You can connect with me on:
+
+
+    +   - http://codeiseasy.co
+
+    - https://twitter.com/TomHenricksen
+
+    - https://www.linkedin.com/in/tomhenricksen
+
+
+    Subscribe to my newsletter:
+
+    https://t.co/NkolrQgXHM'
+pages:
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: '# Just the basics of JavaScript
+
+
+    ![](img/c4712982624c6b0b4d50250b90aebac6_1_0.png)
+
+
+    Tom Henricksen'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: '# Tom Henricksen
+
+
+    Just the basics of JavaScript'
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: 'Copyright © 2024 by Tom Henricksen
+
+
+    All rights reserved. No part of this publication may be reproduced, stored or
+    transmitted in any form or by any means, electronic, mechanical, photocopying,
+    recording, scanning, or otherwise without written permission from the publisher.
+    It is illegal to copy this book, post it to a website, or distribute it by any
+    other means without permission.
+
+
+    # First edition
+
+
+    This book was professionally typeset on Reedsy
+
+    Find out more at reedsy.com'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: '# Contents
+
+
+    +   Preface
+
+
+    +   1. JavaScript A Useful Tool For Tired Minds
+
+
+    +   2. Look I found these astounding benefits of JavaScript variables and values
+
+
+    +   3. First easy JavaScript function basics that are the most fascinating
+
+
+    +   4. Avoid painful mistakes with these SimplisticJavaScript Conditionals
+
+
+    +   5. JavaScript has Sizible loops that will explode your mind
+
+
+    +   6. Surprisingly Improved JavaScript Variable Scope You Need Need
+
+
+    +   7. Exploit JavaScript Closures More and Don''t Panic
+
+
+    +   About the Author'
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: '# Preface
+
+
+    If you are just starting to code with JavaScript or need a refresher this is the
+    book for you. We cover some of the basics so you can understand it. Then we will
+    also do some basic coding.
+
+
+    There was a time in my coding career when I would read thick books before beginning.
+    I learned that was a form of procrastinating. The best way to learn anything is
+    by practice.
+
+
+    In this book, we don’t overwhelm you with a lot of information. As they say in
+    “Just the facts ma’am”. After reading a chapter or two you should be ready to
+    start. Then come back for a few more tidbits.
+
+
+    Happy Coding!'
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: '# JavaScript A Useful Tool For Tired Minds
+
+
+    ![](img/c4712982624c6b0b4d50250b90aebac6_7_0.png)
+
+
+    I have a confession. JavaScript and I started badly. My first foray was for form
+    validation. I would cuss about its existence.
+
+
+    As luck would have after being reintroduced to it I began to respect it. Over
+    the years it has grown into a powerful language.
+
+
+    JavaScript
+
+
+    With its humble beginnings, JavaScript has evolved into a modern programming language.
+    From the browser to the server it can handle almost everything. Node.js gives
+    it a powerful framework on the server side.'
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: 'Mozilla created it and here is how they define it. “JavaScript is a lightweight
+    interpreted programming language with first-class functions.” That is a mouthful!
+
+
+    # Code
+
+
+    Let’s look at some basic code. It is an HTML file displaying some JavaScript.
+    Save this code to your local machine.
+
+
+    ```
+
+    html>
+
+    ```'
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: '# # Test 1'
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: '# Test 2
+
+
+    Regular text
+
+
+    When we run this we will see this.
+
+
+    ![](img/c4712982624c6b0b4d50250b90aebac6_10_0.png)
+
+
+    JavaScript alert message
+
+
+    Once you click ok you will see this.
+
+
+    # Test 1
+
+
+    # Test 2
+
+
+    Regular text
+
+
+    HTML Screen-shot
+
+
+    Statement'
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: "The statement is the basic instruction for JavaScript. We can create some variables\
+    \ and then assign them values.\n\n```\nlet a, b, c; // Statement creating three\
+    \ variables\na = 2; // Statement assign the value of 2 to variable a\nb = 3; //\
+    \ Statement assign the value of 3 to variable b\nc = a + b; // Statement assign\
+    \ a plus b to c\n```\n\nThe semicolon is at the end of the statement. Although\
+    \ we could put multiple statements together.\n\n```\na = 2; b = 3;\n```\n\nThis\
+    \ isn’t readable so most programmers prefer not to. So just because you can do\
+    \ something doesn’t mean you should.\n\n# Functions\n\nWhen we want to perform\
+    \ a task we can create a function. If we need to sum two numbers we could do this\
+    \ in code or create a function.\n\n```\n// Add two numbers\nnum3 = num1 + num2;\n\
+    ```\n\n```\n// Function to sum two numbers\nfunction sumTwoNumbers(num1, num2)\
+    \ {\n  return num1 + num2;\n}\n```"
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: "In this example, we perform the same code one in a function one not. Using\
+    \ a function has value. We can call it repeatedly. Also, we could easily add some\
+    \ error checking too.\n\n```\n// Function to sum two numbers\nfunction sumTwoNumbers(num1,\
+    \ num2) {\n  return num1 + num2;\n}\n```\n\nlet sum = sumTwoNumbers(6,4);\n\n\
+    If you want to call the function we can do it like this example. Here we pass\
+    \ in two numbers. These numbers could be replaced with variables as well.\n\n\
+    In closing, we have touched on why we would use JavaScript. Then we started to\
+    \ code. Using statements and functions we started to see what is under the hood.\
+    \ Try it out for yourself! You won't regret it."
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: Look I found these astounding benefits of JavaScript variables and values
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: '![](img/c4712982624c6b0b4d50250b90aebac6_14_0.png)'
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: "Photo by Khashayar Kouchpeydeh on Unsplash\n\nSome people find differences\
+    \ easily. Their eye can see the one thing out of place. Others look for commonalities.\n\
+    \ find myself in the latter camp. Especially, as I look at programming languages.\
+    \ JavaScript is quite similar to other languages. Let’s focus on values and variables.\n\
+    \n# Values\n\nThe data we keep track of is our value. That could be some words\
+    \ or numbers. Perhaps even some special characters for the computer to process.\n\
+    \n# Variables\n\nWe give the data name or a handle if you will. This allows us\
+    \ to reference it elsewhere.\n\n```\nlet tomsJavaScriptVariable = \"stuff\";\n\
+    ```\n\nThis code example has a value, “stuff”, and a variable name, A lot happened\
+    \ here so let me explain it.\n\n# Declare\n\nFirst thing we must declare a variable.\
+    \ This can be done by the following."
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: '```
+
+    let declareVariable; // just declaring
+
+    ```
+
+
+    The let keyword followed by the name declares the variable. Note our previous
+    example set the value. This one does not.
+
+
+    # Initialize
+
+
+    When we give it a value we are initializing the variable. So we can use our declareVariable
+    here and initialize it too.
+
+
+    ```
+
+    declareVariable = 123; // initialize variable
+
+    ```
+
+
+    As you look through the examples you see that my first example did all at once.
+    So you can declare and initialize on separate lines or all at once. This can be
+    personal preference. It can aid in the readability of separating them.
+
+
+    # Naming
+
+
+    As you name your variables you have a few rules to learn in JavaScript. The length
+    can be as short as one character. The first character is limited to letters, underscore(_),
+    and dollar sign($). Numbers are not allowed for the first character.
+
+
+    ```
+
+    let a; // letter
+
+    let arelongnameforvariablethatyouwontwanttread; // long but
+
+    let _var; // underscore first
+
+    let $sal; // dollar sign first
+
+    ```'
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: 'let 4num; // illegal - won''t work!
+
+
+    The other characters in the name can be letters, numbers, and
+
+    characters. Also, the case can be mixed too.
+
+
+    let aMixtureUpperCaseAndLowerCase;
+
+    let a123$;
+
+
+    let _jsfgiu$234432;
+
+
+    JavaScript gives you a lot of options to name your variables. Your
+
+    fellow developers would appreciate meaningful names. I like to make
+
+    wisecacks, but your code is not a good place to try this.
+
+
+    Const
+
+
+    If you have a variable you don''t want to change you can use the const
+
+    keyword to declare it. This is in place of the let keyword.
+
+
+    ```
+
+    const pi = 3.14; // not able to change
+
+    let exangeRate = 3.4; // able to change
+
+    ```
+
+
+    Just make sure you think this through. Use the const keyword wisely. If
+
+    you get crazy with it you will have issues.
+
+
+    let vs var
+
+
+    Variables can be declared with the var keyword too. Using the var
+
+    keyword declares the variable in the whole function. While let is only for
+
+    the block it is defined.'
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: "```\nfunction varScoping() {\n  var x = 1;\n\nif (true) {\n  var x = 2;\n \
+    \ console.log(x); // will print 2\n}\n\nconsole.log(x); // will print 2\n}\n```\n\
+    \n```\nfunction letScoping() {\n  let x = 1;\n\nif (true) {\n  let x = 2;\n  console.log(x);\
+    \ // will print 2\n}\n\nconsole.log(x); // will print 1\n}\n```\n\nThis article\
+    \ shares more about these two options. It can be confusing to a newbie. Overall\
+    \ use let unless you need var. The global nature of var can cause some side effects.\n\
+    \nThese are the foundations of understanding JavaScript. Variables and values\
+    \ give us something to work with as we progress on our journey. We learned how\
+    \ to declare and initialize the variables. Plus we covered naming and different\
+    \ keywords to use."
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: "# First easy JavaScript function basics that are the most fascinating\n\n![](img/c4712982624c6b0b4d50250b90aebac6_19_0.png)\n\
+    \nPhoto by Stanley Dai on Unsplash\n\nFunctions are the powerhouse in This is\
+    \ where the work happens. Do we need to calculate the space of a floor? This calls\
+    \ for a function.\n\n```\nfunction calculateFlooring(length, width) {\n  return\
+    \ length * width;\n}\n```\n\nThis function will calculate the flooring we need\
+    \ if we remodel the kitchen. So why do we need functions?"
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: '# Benefits
+
+
+    Think of a function as a container for your code. Similar to a code block but,
+    we can call this function repeatedly. This will facilitate reusable code. In our
+    prior example, you could copy the statement. Of course, if we wanted to change
+    that we needed to search for that code and change all the occurrences.
+
+
+    # Example
+
+
+    In our first function example, we calculated the flooring. Let’s step back and
+    make it even easier. We can print something on the screen.
+
+
+    ```
+
+    function greetTom() {
+
+    alert("Hello Tom!");
+
+    }
+
+    ```
+
+
+    Of course, you can put your name in place of mine. If you want to keep the tradition,
+    you can replace it with “Hello World”. Have you wondered why that is the tradition,
+    look
+
+
+    # Calling
+
+
+    The code may look nice but nothing happens if you don’t call it. How do you do
+    that? I am glad you asked. Here is an example.
+
+
+    ```
+
+    function greetTom() {
+
+    alert("Hello Tom!");
+
+    }
+
+    ```'
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: "```\ngreetTom();\n// do other things...\n```\n\nThat call is easy as it takes\
+    \ no arguments. In our first function, we had two arguments we needed. Let’s try\
+    \ that next.\n\n# Passing arguments\n\nIn our first example, we started with a\
+    \ function to calculate flooring. It took two arguments.\n\n```\nfunction calculateFlooring(length,\
+    \ width) {\n  return length * width;\n}\n\ncalculateFlooring(12,10);\n```\n\n\
+    We can pass in the two numbers to get the flooring needed. In this example, we\
+    \ hard-code the value. You won’t do that often or ever.\n\n```\nfunction calculateFlooring(length,\
+    \ width) {\n  return length * width;\n}\n\ncalculateFlooring(length,width);\n\
+    ```\n\nAs you see here, we have the two arguments as variables. The names are\
+    \ the same as the function but don’t have to be."
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: "# Returning data\n\nIt is helpful when we return the calculation. If we don't\
+    \ the function is not as useful as it could be. We just need to use the return.\
+    \ We did this in our calculate flooring function. Although we need to assign this\
+    \ or print it out.\n\n```\nfunction calculateFlooring(length, width) {\n  return\
+    \ length * width;\n}\n```\n\nlet totalFlooring = 0;\ntotalFlooring = calculateFlooring(length,width);\n\
+    \nNow we can use this value later in the application. The prior examples didn't\
+    \ use the value returned. This is always an option if you don't need it later\
+    \ on.\n\nFunctions can do a lot for us. They provide us with a container for our\
+    \ code. Then we can call them and pass parameters. Along with that, they can return\
+    \ the data. If you need more information here is some further"
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: '# Avoid painful mistakes with these Simplistic JavaScript Conditionals
+
+
+    ![](img/c4712982624c6b0b4d50250b90aebac6_23_0.png)
+
+
+    Photo by Artur Aldyrkhanov on Unsplash
+
+
+    Applications help us make decisions. A basic decision is an if condition. For
+    example, if the pizza delivery driver arrives open the door. JavaScript like other
+    languages has many conditionals like
+
+
+    ```
+
+    if
+
+    ```'
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: "An if statement starts with a condition. If it is true the statement following\
+    \ will happen.\n\n```\nif(pizzaArrives) {\n  openDoor();\n}\n```\n\nSo if pizzaArrives\
+    \ is true we call the function openTheDoor. I added the braces after the if statement.\
+    \ This is optional but helps readability. Omitting the braces can cause you to\
+    \ miss bugs. So please include them!\n\nif/else\n\nThere are times when you have\
+    \ two different courses of action. We can add the else statement along with the\
+    \ if. Say you are cooking some hamburgers.\n\n```\nif(sideCooked) {\n  flipBurger();\n\
+    } else {\n  keepCooking();\n}\n```\n\nThis check can run the cooking robot at\
+    \ your favorite house of burgers. It might need some more code though.\nIf you\
+    \ need to check two conditions you can have an if else if too.\n\n```\nif(sideCooked)\
+    \ {\n  flipBurger();\n} else if(otherSideCooked) {\n```"
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: '```
+
+    removeFromGrill();
+
+    } else {
+
+    keepCooking();
+
+    }
+
+
+    ```
+
+
+    This gives us the to check additional values. If you need more checks a switch
+    statement may work better. More on that later.
+
+
+    # Conditional Operators
+
+
+    The operators we use for if statements must resolve to true or false. There are
+    quite a few options for you to use here. Speaking from experience you need to
+    test things out get the right one.
+
+
+    ```
+
+    if(9>5) { alert("Greater than"); } // greater than
+
+    if(5<8) { alert("Less than"); } // less than
+
+    if(9>=6) { alert("Greater than equal to"); } // greater equal to
+
+    if(4<=6) { alert("Less than equal to"); } // less equal to
+
+    if(4!=6) { alert("Not equal to"); } // not equal to
+
+    ```
+
+
+    There are also two logical operators. The Logical And(&&&) and the Logical Or(||).
+    They are used a lot but don’t be intimidated.
+
+
+    ```
+
+    const value1 = 4;
+
+    const value2= -3;
+
+
+    console.log(value1 > 0 && value2 > 0); // Expected output: false
+
+
+    console.log(value1 > 0 || value2 > 0); // Expected output: true
+
+    ```'
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: "The Logical And must have both values true to resolve as true. The Logical\
+    \ Or needs one to be true.\n\n# switch\n\nSwitch statements evaluate the expression\
+    \ to determine which statement to to execute. Then it runs the code until reaching\
+    \ a break statement. Here is an example that tells us the price of the shoes you\
+    \ want.\n\n```\nconst shoes = 'Reebok';\nswitch (shoes) {\n  case 'Nike':\n  \
+    \  console.log('Nike shoes are $200.');\n    break;\n  case 'Adidas':\n  case\
+    \ 'Reebok':\n    console.log('Adidas and Reebok are $100 a pair.');\n    // Expected\
+    \ output: \"Adidas and Reebok are $100 a pair.\"\n    break;\n  default:\n   \
+    \ console.log(`Sorry, we don't carry ${shoes}.`);\nn\n```\n\nThis code should\
+    \ print \"Adidas and Reebok are $100 a pair.\" to the console. Switch statements\
+    \ can be tricky if you don't add the break statement.\n\n```\nconst shoes = 'Nike';\n\
+    switch (shoes) {\n  case 'Nike':\n    console.log('Nike shoes are $200.');\n \
+    \ case 'Adidas':n\n```"
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: "```\ncase 'Reebok':\n  console.log('Adidas and Reebok are $100 a pair.');\n\
+    \  break;\n  default:\n    console.log(`Sorry, we don't carry ${shoes}.`);\n}\n\
+    ```\n\nIn this example, we removed the break from the Nike statement. Do you know\
+    \ what happens here? It will print ‘Nike shoes are $200.’ and then ‘Adidas and\
+    \ Reebok are $100 a pair.’ This type of bug is common for beginner programmers.\
+    \ Don’t feel bad. You are now part of the club!\n\nConditionals are fundamental\
+    \ to JavaScript. Similar to other languages it allows us to provide solutions\
+    \ quickly. The if/else and switch are easy to use."
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: 'JavaScript has Sizable loops that will explode your mind
+
+
+    ![](img/c4712982624c6b0b4d50250b90aebac6_28_0.png)
+
+
+    As a kid, we planted a windbreak on our farm. A line of trees that needed watering
+    a few times a week. Turn on the hose water the first tree and count to ten. Move
+    to the second tree and repeat.
+
+
+    Similar to life our computer programs must repeat things. That’s where loops come
+    in handy. For loops are quite common so let’s start there.
+
+
+    for'
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: "If we have an array of books and we would like to print them out. We could\
+    \ use the following loop.\n\n```\nfor (let i = 0; i < books.length; i++) {\n \
+    \ text += books[i] + \"\";\n}\n```\n\nThe for loop has three basic parts. Start,\
+    \ Condition, and Step.\n\nstart\n\nThis is the part where we set up the loop variable.\
+    \ In our example that is Usually, we initialize to zero. Although, you can set\
+    \ it to say 10 and then count down too.\n\ncondition\n\nNext is the condition\
+    \ where check to see if we need to run this loop again. Our example checks if\
+    \ we still have more books to loop through. If we are done stop.\n\nstep\n\nThe\
+    \ last part is the step. This tells us what happens after each iteration. Our\
+    \ example uses the increment operator(++). This is the normal step but we can\
+    \ do other things for special cases.\n\nwhile"
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: "If my dog Baxter wants to eat I want to create a loop that feeds him while\
+    \ he is hungry. The while loop can do this. Here is an example.\n\nlet baxterHungry\
+    \ = true;\n\n```\nwhile (baxterHungry) {\n  console.log(feedBaxter);\n\n  checBaxter();\n\
+    }\n```\n\nWe set the variable to true. Then we feed the dog until it becomes false.\
+    \ The while loop evaluates the condition we give it. It needs to resolve to be\
+    \ true or false.\n\nIf it is true the code inside the loop executes. We evaluate\
+    \ the condition again. Once the condition becomes false the loop stops.\n\ndo-while\n\
+    \nThe for and while loops check the condition then run the code statements. The\
+    \ do-while is different in that it runs the code and then checks your condition.\
+    \ It is less common but useful in special situations.\n\n```\nlet donutsEaten\
+    \ = 0;\ndo {\n  console.log(\"Donuts eaten \" + donutsEaten);\n  donutsEaten++;\n\
+    } while (donutsEaten < 5)\nconsole.log(\"I'm full of Donuts!\");\n```"
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: 'The do while runs until the condition is false—Opposite of the two other types
+    of loops we have discussed. The output would look like this.
+
+
+    ```
+
+    Donuts eaten 0
+
+    Donuts eaten 1
+
+
+    Donuts eaten 2
+
+    Donuts eaten 3
+
+    Donuts eaten 4
+
+    I''m full of Donuts!
+
+    ```
+
+
+    When you need to loop through code JavaScript has a few options for you.
+
+    Like other programming languages, it has the for, while, and do-while loops.
+
+    Just make sure it fits your needs.'
+  merge: -1
+  pgno: 31
+- img_proc: true
+  md: '# Surprisingly Improved JavaScript Variable Scope You Need
+
+
+    ![](img/c4712982624c6b0b4d50250b90aebac6_32_0.png)
+
+
+    Photo by Markus Spiske on Unsplash
+
+
+    My wife changes topics quickly. I joke with her that she needs turn signals. That
+    Way I can keep up with the shifting focus. She is talking about dinner, and then
+    we shift to our next vacation.
+
+
+    Scope
+
+
+    Our code has a similar concept with scope. Variables can come in and out of scope
+    quickly. As developers, we must keep this concept front and center.'
+  merge: -1
+  pgno: 32
+- img_proc: true
+  md: "In they have a few different types of scope. We can use them accordingly. If\
+    \ you have done other coding you you have encountered similar concepts.\n\n# Global\n\
+    \nGlobal scope items are visible everywhere. In our example, we create a visible\
+    \ variable in the function and outside.\n\n```\nlet myGlobalVariable = \"TheBigGlobalVariable\"\
+    ;\n\nfunction logGlobalVariable() {\n  console.log(myGlobalVariable);\n}\n```\n\
+    \nlogGlobalVariable();\n\nI bet you are wondering, what if I add a variable in\
+    \ the function? This leads us to the local scope example.\n\n# Local\n\nLocal\
+    \ variables are visible only in the function. Here is an example to try this out.\n\
+    \n```\nlet myGlobalVariable = \"TheBigGlobalVariable\";\n\nfunction logGlobalVariable()\
+    \ {\n  console.log(myGlobalVariable);\n  let localVariable = \"TheLocalOne\"\n\
+    \  console.log(localVariable);\n}\n```"
+  merge: -1
+  pgno: 33
+- img_proc: true
+  md: "```\nlogOutGlobalVariable();\n\nconsole.log(localVariable);\n```\n\nIf we run\
+    \ this we will get an error on the last line.\n\n```\nconsole.log(localVariable);\n\
+    ^\nReferenceError: localVariable is not defined\n```\n\nSo you can see what happens\
+    \ when you mistakenly place a variable in the wrong spot.\n\n# Block\n\nWhere\
+    \ local scope is within the function, block scope is within the braces. Sometimes\
+    \ you create braces to identify some code. Let's take a look to show you what\
+    \ I mean.\n\n```\nconsole.log(\"here\");\n{\n  let blockScopeVariable = 0;\n \
+    \ console.log(blockScopeVariable);\n}\n// we can't reference blockScopeVariable\
+    \ here\nconsole.log(blockScopeVariable); // won't work\n```"
+  merge: -1
+  pgno: 34
+- img_proc: true
+  md: "As you can see create a block scope variable within the braces. Then outside\
+    \ of that, it won't be able to be referenced.\n\nGotchas\n\nThe scope can be confusing\
+    \ and lead to some errors. As you get more experience with JavaScript, you can\
+    \ spot them early on. For instance, if we look at this code snippet:\n\n```\n\
+    const colors = ['red', 'blue', 'white'];\n\nfor (let i = 0, l = colors.length;\
+    \ i < l; i++) {\n    console.log(colors[i]); // 'red', 'blue', 'white'\n}\nconsole.log(l);\
+    \ // ???\nconsole.log(i); // ???\n```\n\nThe variables i and l will get reference\
+    \ errors. They are out of scope similar to our previous examples. Dmitri Pavlutin\
+    \ explains this more in-depth He also covers a few common mistakes we may make\
+    \ in coding.\nJavaScript scope has a few basic principles you need to remember.\
+    \ Global scope is visible everywhere. Local and Block scope are more focused.\n\
+    Overall you should use the latter and avoid the former. Keep on coding!"
+  merge: -1
+  pgno: 35
+- img_proc: true
+  md: '# Exploit JavaScript Closures More and Don’t Panic
+
+
+    ![](img/c4712982624c6b0b4d50250b90aebac6_36_0.png)
+
+
+    Photo by Cristina Gottardi on Unsplash
+
+
+    Having dipped into JavaScript occasionally over my development career Closures
+    have been something I didn’t encounter much. They have some great value.
+
+
+    Closures
+
+
+    How can we define closures? Well, this article defines it like this. “Closure
+    in JavaScript is a form of lexical scoping used to preserve variables from the
+    outer scope of a function in the inner scope of a function.”'
+  merge: -1
+  pgno: 36
+- img_proc: true
+  md: "```\nfunction outerFunction() {\n  var x = 10;\n\n  function innerFunction()\
+    \ {\n    return x;\n  }\n  return innerFunction;\n}\n\nvar inner = outerFunction();\n\
+    console.log(inner);\n```\n\nHere is an example of a closure. The outer function\
+    \ outerFunction() creates a variable x and a function innerFunction(). The inner\
+    \ function innerFunction() returns the value of the variable x. The outer function\
+    \ then returns the inner function innerFunction().\n\nNext inner function innerFunction()\
+    \ is then assigned to the variable inner. When the variable inner is called, it\
+    \ returns the value of the variable x, even though the outer function outerFunction()\
+    \ has already returned.\n\nIn a moment we can cover lexical scoping. First, let's\
+    \ understand why we need them. Plus some disadvantages too.\n\n# Pros and Cons\n\
+    \nClosures can help hide the encapsulation details. Like Java’s private variables\
+    \ and functions, this allows us to control access. The downside of this is closures\
+    \ take up more memory. These items can not be garbage collected. Lastly, it can\
+    \ slow down execution. Deepak Mankotia explores this more in-depth.\n\n# Lexical\
+    \ Scoping"
+  merge: -1
+  pgno: 37
+- img_proc: true
+  md: 'The term lexical scoping refers to where the variable is defined. Along with
+    that where it can be referenced or not.
+
+
+    ```
+
+    let x = 10
+
+    let myFunc = function () {
+
+    let y = 20;
+
+    console.log("x and y is accessible (outer):", x, y);
+
+    let insideFunc= function () {
+
+    let z = 30;
+
+    console.log("x and y and z is accessible (inner):", x, y, z);
+
+    }
+
+    insideFunc();
+
+    return;
+
+    }
+
+    myFunc();
+
+    console.log("only x is accessible (global):", a);
+
+    ```
+
+
+    In this example, insideFunc is defined within the myFunc. In this case, myFunc
+    is its parent. That of the parent function lexically binds the child function.
+    JavaScript Closures are a form of Lexical Scoping.
+
+
+    JavaScript Closures are powerful tools. They have some distinct values. It allows
+    you to encapsulate details, but it can slow down your execution time. Consider
+    whether the risks and rewards work for your application.
+
+
+    For more information here is a deep dive on'
+  merge: -1
+  pgno: 38
+- img_proc: true
+  md: '![](img/c4712982624c6b0b4d50250b90aebac6_39_0.png)
+
+
+    # About the Author
+
+
+    Tom Henricksen is a problem-solving technology professional. He is a speaker and
+    writer at Code is Easy. Starting from a developer he has worked as a Project Manager,
+    Technical Lead, Scrum Master, and Manager of Software Development.'
+  merge: -1
+  pgno: 39
+- img_proc: true
+  md: 'Tom has helped organizations with agile transformations. He has also coached
+    and trained teams and individuals.
+
+
+    Tom has been an entrepreneur as well. He speaks and writes with a focus on technology
+    roles. Tom was the founder of the Agile Online Summit and DevOps Online Summit.
+    Where he led a strong online community of over 5,000 people.
+
+
+    Tom has learned how to solve challenging issues in technology and lead technical
+    teams. He can help you develop those skills too!
+
+
+    You can connect with me on:
+
+
+    +   - http://codeiseasy.co
+
+    - https://twitter.com/TomHenricksen
+
+    - https://www.linkedin.com/in/tomhenricksen
+
+
+    Subscribe to my newsletter:
+
+    https://t.co/NkolrQgXHM'
+  merge: -1
+  pgno: 40
+toc:
+- - '#'
+  - JavaScript 示例
+- - '#'
+  - 序言
+- - '#'
+  - JavaScript：疲惫大脑的有用工具
+- - '#'
+  - 代码
+- - '##'
+  - 测试 1
+- - '##'
+  - 测试 2
+- - '##'
+  - 测试 1
+- - '##'
+  - 测试 2
+- - '##'
+  - 函数
+- - '###'
+  - 最迷人的入门简单 JavaScript 函数基础
+- - '###'
+  - 益处
+- - '###'
+  - 示例
+- - '###'
+  - 调用
+- - '###'
+  - 传递参数
+- - '###'
+  - 返回数据
+- - '###'
+  - 使用这些简单的 JavaScript 条件判断避免痛苦的错误
+- - '####'
+  - if/else
+- - '####'
+  - 条件运算符
+- - '####'
+  - switch
+- - '###'
+  - JavaScript 有循环会让你大脑爆炸
+- - '####'
+  - for
+- - '####'
+  - while
+- - '####'
+  - do-while
+- - '#'
+  - 你需要的意外改进：JavaScript 变量作用域
+- - '##'
+  - 作用域 (Scope)
+- - '###'
+  - 全局作用域 (Global)
+- - '###'
+  - 局部作用域 (Local)
+- - '###'
+  - 块作用域 (Block)
+- - '###'
+  - 注意事项 (Gotchas)
+- - '#'
+  - 多利用 JavaScript 闭包，不要恐慌
+- - '##'
+  - 闭包 (Closures)
+- - '##'
+  - 优缺点 (Pros and Cons)
+- - '##'
+  - 词法作用域 (Lexical Scoping)
+- - '#'
+  - 关于作者
