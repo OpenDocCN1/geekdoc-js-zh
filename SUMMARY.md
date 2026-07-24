@@ -571,6 +571,7 @@
 +   [JavaScript 核心 (Smashing eBook 系列, #21)](docs/javascript-essentials-smashing-ebook-series-21/README.md)
 +   [JavaScript 示例](docs/javascript-example-code/README.md)
 +   [JavaScript 示例大全](docs/javascript-examples-bible/README.md)
++   [JavaScript 示例圣经：JavaScript Bible 必备指南](docs/javascript-examples-bible-the-essential-companion-to-javascr/README.md)
 +   [考试与面试Javascript练习：初学者代码示例](docs/javascript-exercises-for-exams-and-interviews-coding-example/README.md)
 +   [Javascript：从底层开始详细解释 Javascript 语言本身](docs/javascript-explaining-the-javascript-language-itself-in-deta/README.md)
 +   [ABAP® 开发者的 JavaScript](docs/javascript-for-abap-developers/README.md)
