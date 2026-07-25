@@ -1,0 +1,1660 @@
+groups:
+- md: "\n# Metaprogramming JavaScript\n\nDan Webb (dan@danwebb.net)\n\n# What?\n\n\
+    > the writing of computer programs that write or manipulate other programs (or\
+    \ themselves) as their data”\n\n# With JavaScript?!\n\n- Small and feisty but\
+    \ widely misunderstood\n- Relies on few but powerful constructs\n- You can work\
+    \ with functions, arguments, built-ins types and mechanisms like inheritance at\
+    \ runtime\n- Techniques underpin many JS libraries\n\n# JavaScript Exposed: Objects\
+    \ Out Of Control!\n\n# Play along!\n\n```javascript\n>>> var add = function(a,\
+    \ b) { return a + b }\n>>> add(2,3)\n5\n>>> typeof add\n\"function\"\n>>> function\
+    \ adder(a) { return function(b) { return add(a, b) } }\n>>> addS = adder(5)\n\
+    function()\n>>> addS(10)\n15\n>>> typeof addS\n\"function\"\n```\n\n# 4 building\
+    \ blocks\n\n# (Nearly) everything is a hash\n\nnumber\nstring\nboolean\nundefined\n\
+    \n# everything else is an Object\n\n```javascript\nvar myObj = new Object;\nmyObj['myProperty']\
+    \ = 454;\nmyObj[45435] = true;\nmyObj[true] = 'hello';\n```\n\n# This works with\
+    \ any object\n\n```javascript\nvar now = new Date;\nnow[5] = 'hello!';\n\nconsole.log(now[5]);\
+    \ //=> 'hello!'\n```\n\n# Accessors: a special case\n\n```javascript\nlocation['thing']\
+    \ = 'a';\n// is the same as...\nlocation.thing = 'a';\n\nconsole.log(location['thing']);\n\
+    console.log(location.thing);\n// => 'a'\n```\n\n```javascript\n// bad!\neval(\"\
+    window.forms.\" + form + \".reset()\");\n\n// good!\nwindow.forms[form].reset();\n\
+    ```\n\n```javascript\nvar tags = ['a', 'div', 'span', 'p'];\n\nfor (var i, l =\
+    \ tags.length; i < l; i++)\n    find[tags[i] + 'Elements'] = createFinder(tags[i]);\n\
+    \nfind.aElements();\nfind.pElements();\n// and so on...\n```\n\n# Inspecting objects\n\
+    \n```javascript\nvar person = {\n  name: 'Bob',\n  email: 'bob@bob.com',\n  tel:\
+    \ '0258305964'\n};\n\nfor (var key in person) {\n  console.log(key);\n} //=> 'name',\
+    \ 'email', 'tel'\n```\n\n```javascript\n// using the person object\n// from the\
+    \ previous example...\nif (\"tel\" in person) {\n  alert(person.tel);\n}\n```\n\
+    \n# Inspecting types\n\n```javascript\nvar a = 5;\ntypeof a //=> 'number'\nvar\
+    \ name = 'Sam';\ntypeof name //=> 'string'\ntypeof doesntExist //=> 'undefined'\n\
+    ```\n\n```javascript\nfunction doSomething() {\n  console.log('yay!');\n}\n\n\
+    typeof doSomething //=> 'function'\n```\n\n```javascript\nvar anObject = {};\n\
+    typeof anObject //=> 'object'\nvar anArray = [1,2,3,4,5,6];\ntypeof anArray //=>\
+    \ 'object'\n```\n\n# Wha?!\n\n```javascript\nanArray instanceof Array //=> true\n\
+    an0 instanceof Array //=> false\n```\n\n# First typeof\nthen instanceof\n\n# Functions\
+    \ are Objects\n\n```javascript\nvar sum = function(n1, n2) {\n  return n1 + n2;\n\
+    }\n\nvar a = {};\na.sum = sum;\n\na.sum(1, 2); // => 3\n```\n\n# 'Methods' are\
+    \ just functions that are assigned to a property of an object\n\n```javascript\n\
+    var a = { counter : 5 };\nvar b = { counter : 10 };\n\na.increment = function(amount)\
+    \ {\n  this.counter += amount;\n};\n\na.increment(1)\na.counter; // => 6\n```\n\
+    \n```javascript\nb.increment = a.increment;\nb.increment(1);\nconsole.log(b.counter);\
+    \ // => 11\n```\n\n```javascript\nfunction (amount) {\n  this.counter += amount;\n\
+    }\n\na.increment(5); // => 10\n```\n\n```javascript\nfunction (amount) {\n  this.counter\
+    \ += amount;\n}\n\nb.increment(5); // => 15\n```\n\n```javascript\nvar slideshow\
+    \ = {\n  init: function() {\n    this.start();\n  },\n  start: function() {\n\
+    \  }\n}\n\nwindow.onload = slideshow.init;\n```\n\n```javascript\nwindow.onload();\n\
+    ```\n\n```javascript\nwindow.onload = function() {\n  start();\n}\n```\n\n```javascript\n\
+    a.increment.call(b, 1); // => 6\na.increment.apply(b, [1]); // => 7\n```\n\n#\
+    \ arguments\n\n```javascript\n// add all the arguments sent to\n// function matter\
+    \ how many there are\nfunction sum() {\n  var total = 0;\n  for (var i = 0, l\
+    \ = arguments.length; i < l; i++) {\n    total += arguments[i];\n  }\n  return\
+    \ total;\n}\n\nconsole.log(sum(2, 5)); //=> 7\nconsole.log(sum(10, 20, 30)); //=>\
+    \ 60\n```\n\n```javascript\nvalidate('name');\nvalidate('email', { min: 4, max:\
+    \ 10 });\n```\n\n```javascript\nfunction validate() {\n  var options = {};\n \
+    \ // steal from Array.prototype\n  var slice = Array.prototype.slice;\n\n  if\
+    \ (typeof arguments === 'object') {\n    options = slice.call(arguments, 1);\n\
+    \  }\n  // code to execute here...\n}\n```\n\n# Functions can return other functions\n\
+    \n```javascript\nfunction add(a, b) { return a + b }\n\nfunction adder(a) {\n\
+    \  return function(b) {\n    return add(a, b);\n  }\n}\n\nadd(5, 5); //=> 10\n\
+    \nvar add5 = adder(5);\nadd5(10); //=> 15\n```\n\n```javascript\nfunction add(a,\
+    \ b) { return a + b }\n\nfunction adder(a) {\n  return function(b) {\n    return\
+    \ add(a, b);\n  }\n}\n\nadd(5, 5); //=> 10\n\nvar add5 = adder(5);\nadd5(10);\
+    \ //=> 15\n```\n\n# Closure\n\n# Back to wikipedia...\n\nA closure occurs when\
+    \ a function is defined within another function, and the inner function refers\
+    \ to local variables of the outer function.\n\n```javascript\nfunction attachHelpEvents()\
+    \ {\n  var windowRef = null;\n  var openLink = document.getElementById('open_help');\n\
+    \  var closeLink = document.getElementById('close_help');\n\n  var openWindow\
+    \ = function() {\n    windowRef = this.href;\n  };\n\n  var closeWindow = function()\
+    \ {\n    if (windowRef) windowRef.close();\n  };\n\n  openLink.onclick = openWindow;\n\
+    \  closeLink.onclick = closeWindow;\n}\n\nwindow.onload = attachHelpEvents;\n\
+    ```\n\n```javascript\nfunction attachHelpEvents() {\n  var windowRef = null;\n\
+    \  var openLink = document.getElementById('open_help');\n  var closeLink = document.getElementById('close_help');\n\
+    \n  var openWindow = function() {\n    windowRef = this.href;\n  };\n\n  var onClose\
+    \ = function() {\n    if (windowRef) windowRef.close();\n  };\n\n  openLink.onclick\
+    \ = openWindow;\n  closeLink.onclick = onClose;\n}\n\nwindow.onload = attachHelpEvents;\n\
+    ```\n\n# Why is that useful?\n\n```javascript\nvar slideshow = {\n  init: function()\
+    \ {\n    this.start();\n  },\n  start: function() {\n  }\n}\n\nwindow.onload =\
+    \ slideshow.init;\n```\n\n```javascript\nfunction bind(func, context) {\n  return\
+    \ function() {\n    return func.apply(context, arguments);\n  }\n}\n```\n\n```javascript\n\
+    var slideshow = {\n  init: function() {\n    this.start();\n  },\n  start: function()\
+    \ {\n  }\n}\n\nwindow.onload = bind(slideshow.init, slideshow);\n```\n\n# Functions\
+    \ can be used to make objects\n\n```javascript\nfunction Coord(x, y) {\n  this.x\
+    \ = x;\n  this.y = y;\n}\nvar home = new Coord(132, 223);\nconsole.log(home.x);\
+    \ //=> 132\nconsole.log(home.y); //=> 223\nconsole.log(home.constructor); //=>\
+    \ Coord\n```\n\n# Constructor functions are just functions\n\n# The magic is in\
+    \ the new operator\n\n```javascript\nvar london = new Coord(32, 13);\n```\n\n\
+    ```javascript\nvar london = {};\nCoord.call(london, 32, 13);\n```\n\n```javascript\n\
+    var london = {};\n\nCoord.call(london, 32, 13);\nlondon.__proto__ = Coord.prototype;\n\
+    ```\n\n# inheritance\n\n```javascript\nCoord.prototype = {\n  toString: function()\
+    \ {\n    return [this.x, this.y].join(', ');\n  }\n};\n\nhome.toString(); // 132,\
+    \ 223\n```\n\n```javascript\nhome.toString? // no...keep looking\nhome.__proto__.toString?\
+    \ // got it!\n```\n\n```javascript\nhome.__proto__ == Coord\n```\n\n```javascript\n\
+    function Marker(name, x, y) {\n  this.name = name;\n  this.x = x;\n  this.y =\
+    \ y;\n}\n\nMarker.prototype = new Coord;\n\nvar pub = new Marker('Party!', 12,\
+    \ 54);\npub.toString(); //=> 12, 54\n```\n\n```javascript\npub.toString //=> no...\n\
+    pub.__proto__.toString //=> no...\npub.__proto____proto__.toString //=> found!\n\
+    ```\n\n```javascript\npub.__proto__ == Marker.prototype\npub.__proto__.__proto__\
+    \ == Coord\n```\n\n# The point is:\nits all just functions,\nobjects and properties\n\
+    \n# We can hack it all.\n\n# So what can you do with this stuff?\n\n# Patch holes\
+    \ in bad implementations\n\n```javascript\n// Patch Array#push for IE 5\nif (!Array.prototype.push)\
+    \ {\n  Array.prototype.push = function(item) {\n    return this[this.length] =\
+    \ item;\n  }\n}\n```\n\n```javascript\n// add 1.6 style Array#forEach to older\
+    \ browsers\nif (!Array.prototype.forEach) {\n  Array.prototype.forEach = function(func,\
+    \ scope) {\n    scope = scope || this;\n    for (var i = 0, l = this.length; i\
+    \ < l; i++) {\n      func.call(scope, this[i], i, this);\n    }\n  }\n}\n```\n"
+  mdcn: "\n\n# JavaScript 元编程\n\nDan Webb (dan@danwebb.net)\n\n# 这是什么？\n\n> “编写那些编写或操纵其他程序（或自身）作为其数据的计算机程序”\n\
+    \n# 用 JavaScript 实现？！\n\n- 体小而精悍但被广泛误解\n- 依赖于少数但强大的构造结构\n- 你可以在运行时与函数、参数、内置类型以及继承等机制进行操作\n\
+    - 这些技术支撑了许多 JS 库\n\n# 揭秘 JavaScript：失控的对象！\n\n# 一来尝试吧！\n\n```javascript\n>>> var\
+    \ add = function(a, b) { return a + b }\n>>> add(2,3)\n5\n>>> typeof add\n\"function\"\
+    \n>>> function adder(a) { return function(b) { return add(a, b) } }\n>>> addS\
+    \ = adder(5)\nfunction()\n>>> addS(10)\n15\n>>> typeof addS\n\"function\"\n```\n\
+    \n# 4 个构建块\n\n# （几乎）一切都是哈希表 (hash)\n\n数字 (number)\n字符串 (string)\n布尔值 (boolean)\n\
+    未定义 (undefined)\n\n# 其他所有都是对象 (Object)\n\n```javascript\nvar myObj = new Object;\n\
+    myObj['myProperty'] = 454;\nmyObj[45435] = true;\nmyObj[true] = 'hello';\n```\n\
+    \n# 这对任何对象有效\n\n```javascript\nvar now = new Date;\nnow[5] = 'hello!';\n\nconsole.log(now[5]);\
+    \ //=> 'hello!'\n```\n\n# 访问器 (Accessors)：一种特殊情况\n\n```javascript\nlocation['thing']\
+    \ = 'a';\n// 等同于...\nlocation.thing = 'a';\n\nconsole.log(location['thing']);\n\
+    console.log(location.thing);\n// => 'a'\n```\n\n```javascript\n// 坏做法！\neval(\"\
+    window.forms.\" + form + \".reset()\");\n\n// 好做法！\nwindow.forms[form].reset();\n\
+    ```\n\n```javascript\nvar tags = ['a', 'div', 'span', 'p'];\n\nfor (var i, l =\
+    \ tags.length; i < l; i++)\n    find[tags[i] + 'Elements'] = createFinder(tags[i]);\n\
+    \nfind.aElements();\nfind.pElements();\n// 等此类推...\n```\n\n# 检查对象\n\n```javascript\n\
+    var person = {\n  name: 'Bob',\n  email: 'bob@bob.com',\n  tel: '0258305964'\n\
+    };\n\nfor (var key in person) {\n  console.log(key);\n} //=> 'name', 'email',\
+    \ 'tel'\n```\n\n```javascript\n// 使用上一个示例中的 \n// person 对象...\nif (\"tel\" in\
+    \ person) {\n  alert(person.tel);\n}\n```\n\n# 检查类型\n\n```javascript\nvar a =\
+    \ 5;\ntypeof a //=> 'number'\nvar name = 'Sam';\ntypeof name //=> 'string'\ntypeof\
+    \ doesntExist //=> 'undefined'\n```\n\n```javascript\nfunction doSomething() {\n\
+    \  console.log('yay!');\n}\n\ntypeof doSomething //=> 'function'\n```\n\n```javascript\n\
+    var anObject = {};\ntypeof anObject //=> 'object'\nvar anArray = [1,2,3,4,5,6];\n\
+    typeof anArray //=> 'object'\n```\n\n# 啥？！\n\n```javascript\nanArray instanceof\
+    \ Array //=> true\nan0 instanceof Array //=> false\n```\n\n# 第一个 typeof\n然后 instanceof\n\
+    \n# 函数也是对象\n\n```javascript\nvar sum = function(n1, n2) {\n  return n1 + n2;\n\
+    }\n\nvar a = {};\na.sum = sum;\n\na.sum(1, 2); // => 3\n```\n\n# ‘方法’只是赋值给对象属性的函数\n\
+    \n```javascript\nvar a = { counter : 5 };\nvar b = { counter : 10 };\n\na.increment\
+    \ = function(amount) {\n  this.counter += amount;\n};\n\na.increment(1)\na.counter;\
+    \ // => 6\n```\n\n```javascript\nb.increment = a.increment;\nb.increment(1);\n\
+    console.log(b.counter); // => 11\n```\n\n```javascript\nfunction (amount) {\n\
+    \  this.counter += amount;\n}\n\na.increment(5); // => 10\n```\n\n```javascript\n\
+    function (amount) {\n  this.counter += amount;\n}\n\nb.increment(5); // => 15\n\
+    ```\n\n```javascript\nvar slideshow = {\n  init: function() {\n    this.start();\n\
+    \  },\n  start: function() {\n  }\n}\n\nwindow.onload = slideshow.init;\n```\n\
+    \n```javascript\nwindow.onload();\n```\n\n```javascript\nwindow.onload = function()\
+    \ {\n  start();\n}\n```\n\n```javascript\na.increment.call(b, 1); // => 6\na.increment.apply(b,\
+    \ [1]); // => 7\n```\n\n# arguments (参数)\n\n```javascript\n// 所有发送到函数的\n// 参数，无论有多少个\n\
+    function sum() {\n  var total = 0;\n  for (var i = 0, l = arguments.length; i\
+    \ < l; i++) {\n    total += arguments[i];\n  }\n  return total;\n}\n\nconsole.log(sum(2,\
+    \ 5)); //=> 7\nconsole.log(sum(10, 20, 30)); //=> 60\n```\n\n```javascript\nvalidate('name');\n\
+    validate('email', { min: 4, max: 10 });\n```\n\n```javascript\nfunction validate()\
+    \ {\n  var options = {};\n  // 从 Array.prototype 窃取\n  var slice = Array.prototype.slice;\n\
+    \n  if (typeof arguments === 'object') {\n    options = slice.call(arguments,\
+    \ 1);\n  }\n  // 此处代码\n```\n\n# 函数可以返回其他函数\n\n```javascript\nfunction add(a, b)\
+    \ { return a + b }\n\nfunction adder(a) {\n  return function(b) {\n    return\
+    \ add(a, b);\n  }\n}\n\nadd(5, 5); //=> 10\n\nvar add5 = adder(5);\nadd5(10);\
+    \ //=> 15\n```\n\n```javascript\nfunction add(a, b) { return a + b }\n\nfunction\
+    \ adder(a) {\n  return function(b) {\n    return add(a, b);\n  }\n}\n\nadd(5,\
+    \ 5); //=> 10\n\nvar add5 = adder(5);\nadd5(10); //=> 15\n```\n\n# 闭包 (Closure)\n\
+    \n# 回到 Wikipedia...\n\n当一个函数定义在另一个函数内部，且内部函数引用了外部函数的局部变量时，发生了闭包。\n\n```javascript\n\
+    function attachHelpEvents() {\n  var windowRef = null;\n  var openLink = document.getElementById('open_help');\n\
+    \  var closeLink = document.getElementById('close_help');\n\n  var openWindow\
+    \ = function() {\n    windowRef = this.href;\n  };\n\n  var onClose = function()\
+    \ {\n    if (windowRef) windowRef.close();\n  };\n\n  openLink.onclick = openWindow;\n\
+    \  closeLink.onclick = onClose;\n}\n\nwindow.onload = attachHelpEvents;\n```\n\
+    \n```javascript\nfunction attachHelpEvents() {\n  var windowRef = null;\n  var\
+    \ openLink = document.getElementById('open_help');\n  var closeLink = document.getElementById('close_help');\n\
+    \n  var openWindow = function() {\n    windowRef = this.href;\n  };\n\n  var onClose\
+    \ = function() {\n    if (windowRef) windowRef.close();\n  };\n\n  openLink.onclick\
+    \ = openWindow;\n  closeLink.onclick = onClose;\n}\n\nwindow.onload = attachHelpEvents;\n\
+    ```\n\n# 这为什么很有用？\n\n```javascript\nvar slideshow = {\n  init: function() {\n\
+    \    this.start();\n  },\n  start: function() {\n  }\n}\n\nwindow.onload = slideshow.init;\n\
+    ```\n\n```javascript\nfunction bind(func, context) {\n  return function() {\n\
+    \    return func.apply(context, arguments);\n  }\n}\n```\n\n```javascript\nvar\
+    \ slideshow = {\n  init: function() {\n    this.start();\n  },\n  start: function()\
+    \ {\n  }\n}\n\nwindow.onload = bind(slideshow.init, slideshow);\n```\n\n# 函数可以用来创建对象\n\
+    \n```javascript\nfunction Coord(x, y) {\n  this.x = x;\n  this.y = y;\n}\nvar\
+    \ home = new Coord(132, 223);\nconsole.log(home.x); //=> 132\nconsole.log(home.y);\
+    \ //=> 223\nconsole.log(home.constructor); //=> Coord\n```\n\n# 构造函数只是函数\n\n#\
+    \ 魔法在于 new 运算符\n\n```javascript\nvar london = new Coord(32, 13);\n```\n\n```javascript\n\
+    var london = {};\nCoord.call(london, 32, 13);\n```\n\n```javascript\nvar london\
+    \ = {};\n\nCoord.call(london, 32, 13);\nlondon.__proto__ = Coord.prototype;\n\
+    ```\n\n# 继承 (inheritance)\n\n```javascript\nCoord.prototype = {\n  toString: function()\
+    \ {\n    return [this.x, this.y].join(', ');\n  }\n};\n\nhome.toString(); // 132,\
+    \ 223\n```\n\n```javascript\nhome.toString? // 没有...继续寻找\nhome.__proto__.toString?\
+    \ // 找到了！\n```\n\n```javascript\nhome.__proto__ == Coord\n```\n\n```javascript\n\
+    function Marker(name, x, y) {\n  this.name = name;\n  this.x = x;\n  this.y =\
+    \ y;\n}\n\nMarker.prototype = new Coord;\n\nvar pub = new Marker('Party!', 12,\
+    \ 54);\npub.toString(); //=> 12, 54\n```\n\n```javascript\npub.toString // 没有...\n\
+    pub.__proto__.toString // 没有...\npub.__proto__.__proto__.toString // 找到了！\n```\n\
+    \n```javascript\npub.__proto__ == Marker.prototype\npub.__proto__.__proto__ ==\
+    \ Coord\n```\n\n# 重点在于：\n它们都只是函数、\n对象和属性\n\n# 我们可以对它们进行任何操作。\n\n# 所以用这些东西能做什么？\n\
+    \n# 修复糟糕实现中的漏洞\n\n```javascript\n// 为 IE 5 修复 Array#push\nif (!Array.prototype.push)\
+    \ {\n  Array.prototype.push = function(item) {\n    return this[this.length] =\
+    \ item;\n  }\n}\n```\n\n```javascript\n// 为旧浏览器添加 1.6 风格的 Array#forEach\nif (!Array.prototype.forEach)\
+    \ {\n  Array.prototype.forEach = function(func, scope) {\n    scope = scope ||\
+    \ this;\n    for (var i = 0, l = this.length; i < l; i++) {\n      func.call(scope,\
+    \ this[i], i, this);\n    }\n  }\n}\n```\n"
+  merge: -1
+  raw:
+  - '[PAGE 0]
+
+
+    # # Metaprogramming JavaScript
+
+
+    Dan Webb (dan@danwebb.net)'
+  - '[PAGE 1]
+
+
+    # What?
+
+
+    > the writing of computer programs that write or manipulate other programs (or
+    themselves) as their data”'
+  - '[PAGE 2]
+
+
+    # With JavaScript?!
+
+
+    +   - Small and fiesty but widely misunderstood
+
+    - Relies on few but powerful constructs
+
+    - You can work with functions, arguments, built-ins types and mechanisms like
+    inheritance at runtime
+
+    - Techniques underpin many JS libraries'
+  - '[PAGE 3]
+
+
+    # JavaScript Exposed:
+
+    Objects Out Of Control!'
+  - '[PAGE 4]
+
+
+    # Play along!
+
+
+    ```
+
+    >>> var add = function(a, b) { return a + b }
+
+    >>> add(2,3)
+
+    5
+
+    >>> typeof add
+
+    "function"
+
+    >>> function adder(a) { return function(b) { return add(a, b) } }
+
+    >>> addS = adder(5)
+
+    function()
+
+    >>> addS(10)
+
+    15
+
+    >>> typeof addS
+
+    "function"
+
+    ```'
+  - '[PAGE 5]
+
+
+    # 4 building blocks'
+  - '[PAGE 6]
+
+
+    # (Nearly) everything is a hash'
+  - '[PAGE 7]
+
+
+    # number
+
+    string
+
+    boolean
+
+    undefined'
+  - '[PAGE 8]
+
+
+    # everything else is an Object'
+  - '[PAGE 9]
+
+
+    ```
+
+    var myObj = new Object;
+
+    myObj[''myProperty''] = 454;
+
+    myObj[45435] = true;
+
+    myObj[true] = ''hello'';
+
+    ```'
+  - '[PAGE 10]
+
+
+    # This works with any object'
+  - '[PAGE 11]
+
+
+    ```
+
+    var now = new Date;
+
+    now[5] = ''hello!'';
+
+
+    console.log(now[5]); //=> ''hello!''
+
+    ```'
+  - '[PAGE 12]
+
+
+    # Expandos: a special case'
+  - '[PAGE 13]
+
+
+    ```
+
+    location[''thing''] = ''a'';
+
+    // is the same as...
+
+    location.thing = ''a'';
+
+
+    console.log(location[''thing'']);
+
+    console.log(location.thing);
+
+    // => ''a''
+
+    ```'
+  - '[PAGE 14]
+
+
+    ```
+
+    // bad!
+
+    eval("window.forms." + form + ".reset()");
+
+
+    // good!
+
+    window.forms[form].reset();
+
+    ```'
+  - "[PAGE 15]\n\n```\nvar tags = ['a', 'div', 'span', 'p'];\n\nfor (var i, l = tags.length;\
+    \ i < l; i++)\n    find[tag[i] + 'Elements'] = createFinder(tag[i]);\n\nfind.aElements();\n\
+    find.pElements();\n// and so on...\n```"
+  - '[PAGE 16]
+
+
+    # # Inspecting objects'
+  - "[PAGE 17]\n\n```\nvar person = {\n  name: 'Bob',\n  email: 'bob@bob.com',\n \
+    \ tel: '0258305964'\n};\n\nfor (var key in person) {\n  console.log(key);\n} //=>\
+    \ 'name', 'email', 'tel'\n```"
+  - "[PAGE 18]\n\n```\n// using the person object\n// from the previous example...\n\
+    if (\"tel\" in person) {\n  alert(person.tel);\n}\n```"
+  - '[PAGE 19]
+
+
+    # Inspecting types'
+  - '[PAGE 20]
+
+
+    ```
+
+    var a = 5;
+
+    typeof a //=> ''number''
+
+    var name = ''Sam'';ntypeof name //=> ''string''
+
+    typeof doesntExist //=> ''undefined''
+
+    ```'
+  - "[PAGE 21]\n\n```\nfunction doSomething() {\n  console.log('yay!');\n}\n\ntypeof\
+    \ doSomething //=> 'function'\n```"
+  - '[PAGE 22]
+
+
+    ```
+
+    var anObject = {};
+
+    typeof anObject //=> ''object''
+
+    var Array = [1,2,3,4,5,6];
+
+    typeof anArray //=> ''object''
+
+    ```'
+  - '[PAGE 23]
+
+
+    # Wha?!'
+  - '[PAGE 24]
+
+
+    ```
+
+    anArray instanceof Array //=> true
+
+    an0b instanceof Array //=> false
+
+    ```'
+  - '[PAGE 25]
+
+
+    # First typeof
+
+    then instanceof'
+  - '[PAGE 26]
+
+
+    # Functions are Objects'
+  - "[PAGE 27]\n\n```\nvar sum = function(n1, n2) {\n  return n1 + n2;\n}\n\nvar a\
+    \ = {};\na.sum = sum;\n\na.sum(1, 2); // => 3\n```"
+  - '[PAGE 28]
+
+
+    # ''Methods'' are just functions that are assigned to a property of an object'
+  - "[PAGE 29]\n\n```\nvar a = { counter : 5 };\nvar b = { counter : 10 };\n\na.increment\
+    \ = function(amount) {\n  this.counter += amount;\n};\n\na.increment(1)\na.counter;\
+    \ // => 6\n```"
+  - '[PAGE 30]
+
+
+    ```
+
+    b.increment = a.increment;
+
+    b.increment(1);
+
+    console.log(b.counter); // => 11
+
+    ```'
+  - "[PAGE 31]\n\n```\nfunction (amount) {\n  this.counter += amount;\n}\n\na.increment(5);\
+    \ // => 10\n```"
+  - "[PAGE 32]\n\n```\nfunction (amount) {\n  this.counter += amount;\n}\n\nb.increment(5);\
+    \ // => 15\n```"
+  - "[PAGE 33]\n\n```\nvar slideshow = {\n  init: function() {\n    this.start();\n\
+    \  },\n  start: function() {\n  }\n}\n\nwindow.onload = slideshow.init;\n```"
+  - '[PAGE 34]
+
+
+    ```
+
+    window.onload();
+
+    ```'
+  - "[PAGE 35]\n\n```\nwindow.onload();\nfunction() {\n  this.start();\n}\n```"
+  - '[PAGE 36]
+
+
+    ```
+
+    a.increment.call(b, 1); // => 11
+
+    na.increment.apply(b, [1]); // => 11
+
+    ```'
+  - '[PAGE 37]
+
+
+    # arguments'
+  - "[PAGE 38]\n\n```\n// add up all the arguments sent to the\n// function no matter\
+    \ how many there are\nfunction sum() {\n  var total = 0;\n  for (var i = 0, l\
+    \ = arguments.length; i < l; i++) {\n    total += arguments[i];\n  }\n  return\
+    \ total;\n}\n\nconsole.log(sum(2,5,90)); //=> 97\nconsole.log(sum(100,200,50,18));\
+    \ //=> 368\n```"
+  - '[PAGE 39]
+
+
+    ```
+
+    validate(''name'');
+
+    validate(''name'', ''email'');
+
+    validate(''name'', ''email'', { min: 4, max: 10 });
+
+    ```'
+  - "[PAGE 40]\n\n```\nfunction validate() {\n  var options = {};\n  var fields =\
+    \ arguments;\n\n  // steal slice from Array.prototype\n  var slice = Array.prototype.slice;\n\
+    \n  if (typeof fields[fields.length-1] == 'object') {\n    options = fields[fields.length-1];\n\
+    \    fields = slice.call(fields, 1);\n  }\n\n  // code to execute here...\n}\n\
+    ```"
+  - '[PAGE 41]
+
+
+    # Functions can return other functions'
+  - "[PAGE 42]\n\n```\nfunction add(a, b) { return a + b }\n\nfunction adder(a) {\n\
+    \  return function(b) {\n    return add(a, b);\n  }\n}\n\nadd(5, 5); //=> 10\n\
+    \nvar add5 = adder(5);\nadd5(10); //=> 15\n```"
+  - "[PAGE 43]\n\n```\nfunction add(a, b) { return a + b }\n\nfunction adder(a) {\n\
+    \  return function(b) {\n    return add(a, b);\n  }\n}\n\nadd(5, 5); //=> 10\n\
+    \nvar add5 = adder(5);\nadd5(10); //=> 15\n```"
+  - '[PAGE 44]
+
+
+    # Closure'
+  - '[PAGE 45]
+
+
+    # Back to wikipedia...
+
+
+    > A closure occurs when a function is defined within another function, and the
+    inner function refers to local variables of the outer function.'
+  - "[PAGE 46]\n\n```\nfunction attachHelpEvents() {\n  var windowRef = null;\n  var\
+    \ openLink = document.getElementById('open_help');\n  var closeLink = document.getElementById('close_help');\n\
+    \n  var openWindow = function() {\n    windowRef = open(this.href, 'mywin');\n\
+    \  };\n\n  var closeWindow = function() {\n    if (windowRef) windowRef.close();\n\
+    \  };\n\n  openLink.onclick = openWindow;\n  closeLink.onclick = closeWindow;\n\
+    }\n\nwindow.onload = attachHelpEvents;\n```"
+  - "[PAGE 47]\n\n```\nfunction attachHelpEvents() {\n  var windowRef = null;\n  var\
+    \ openLink = document.getElementById('open_help');\n  var closeLink = document.getElementById('close_help');\n\
+    \n  var openWindow = function() {\n    windowRef = open(this.href, 'mywin');\n\
+    \  };\n\n  var onClose = function() {\n    if (windowRef) windowRef.close();\n\
+    \  };\n\n  openLink.onclick = openWindow;\n  closeLink.onclick = onClose;\n}\n\
+    \nwindow.onload = attachHelpEvents;\n```"
+  - '[PAGE 48]
+
+
+    # Why is that useful?'
+  - "[PAGE 49]\n\n```\nvar slideshow = {\n  init: function() {\n    this.start();\n\
+    \  },\n  start: function() {\n  }\n}\n\nwindow.onload = slideshow.init;\n```"
+  - "[PAGE 50]\n\n```\nfunction bind(func, context) {\n  return function() {\n   \
+    \ return func.apply(context, arguments);\n  }\n}\n```"
+  - "[PAGE 51]\n\n```\nvar slideshow = {\n  init: function() {\n    this.start();\n\
+    \  },\n  start: function() {\n  }\n}\n\nwindow.onload = bind(slideshow.init, slideshow);\n\
+    ```"
+  - '[PAGE 52]
+
+
+    # Functions can be used to make objects'
+  - "[PAGE 53]\n\n```\nfunction Coord(x, y) {\n  this.x = x;\n  this.y = y;\n}\nvar\
+    \ home = new Coord(132, 223);\nconsole.log(home.x); //=> 132\nconsole.log(home.y);\
+    \ //=> 223\nconsole.log(home.constructor); //=> Coord\n```"
+  - '[PAGE 54]
+
+
+    # Constructor functions
+
+    are just functions'
+  - '[PAGE 55]
+
+
+    # The magic is in the new operator'
+  - '[PAGE 56]
+
+
+    ```
+
+    var london = new Coord(32, 13);
+
+    ```'
+  - '[PAGE 57]
+
+
+    ```
+
+    var london = {};
+
+    Coord.call(london, 32, 13);
+
+    ```'
+  - '[PAGE 58]
+
+
+    ```
+
+    var london = {};
+
+
+    Coord.call(london, 32, 13);
+
+    london.__proto__ = Coord.prototype;
+
+    ```'
+  - '[PAGE 59]
+
+
+    # inheritance'
+  - "[PAGE 60]\n\n```\nCoord.prototype = {\n  toString: function() {\n    return [this.x,\
+    \ this.y].join(', ');\n  }\n};\n\nhome.toString(); // => 132, 223\n```"
+  - '[PAGE 61]
+
+
+    ```
+
+    home.toString? // => no...keep looking
+
+    nhome.__proto__.toString? // => got it!
+
+    ```'
+  - '[PAGE 62]
+
+
+    ```
+
+    home.__proto__ == Coord.prototype
+
+    ```'
+  - "[PAGE 63]\n\n```\nfunction Marker(name, x, y) {\n  this.name = name;\n  this.x\
+    \ = x;\n  this.y = y;\n}\n```\n\nMarker.prototype = new Coord;\n\nvar pub = new\
+    \ Marker('Party!', 12, 54);\npub.toString(); //=> 12, 54"
+  - '[PAGE 64]
+
+
+    ```
+
+    pub.toString //=> no...
+
+    pub.__proto__.toString //=> no...
+
+    pub.__proto____proto__.toString //=> found!
+
+    ```'
+  - '[PAGE 65]
+
+
+    ```
+
+    pub.__proto__ == Marker.prototype
+
+    pub.__proto__..__proto__ == Coord.prototype
+
+    ```'
+  - '[PAGE 66]
+
+
+    # The point is:
+
+    its all just functions,
+
+    objects and properties'
+  - '[PAGE 67]
+
+
+    # We can hack it all.'
+  - '[PAGE 68]
+
+
+    # So what can you do with this stuff?'
+  - '[PAGE 69]
+
+
+    # Patch holes in bad implementations'
+  - "[PAGE 70]\n\n```\n// Patch Array#push for IE 5\nif (!Array.prototype.push) {\n\
+    \  Array.prototype.push = function(item) {\n    return this[this.length] = item;\n\
+    \  }\n}\n```"
+  - "[PAGE 71]\n\n```\n// add 1.6 style Array#forEach to older browsers\nif (!Array.prototype.forEach)\
+    \ {\n  Array.prototype.forEach = function(func, scope) {\n    scope = scope ||\
+    \ this;\n    for (var i = 0, l = this.length; i < l; i++) {\n      func.call(scope,\
+    \ this[i], i, this);\n    }\n  }\n}\n```"
+- md: "\n# Self optimising code\n\n```\nfunction addEvent(element, type, func) {\n\
+    \  if (document.addEventListener)\n    element.addEventListener(type, func);\n\
+    \  else\n    element.attachEvent(type, func);\n}\n```\n\n```javascript\nfunction\
+    \ addEvent(element, type, func) {\n  if (document.addEventListener) {\n    addEvent\
+    \ = function(element, type, func) {\n      element.addEventListener(type, func);\n\
+    \    };\n  } else {\n    addEvent = function(element, type, func) {\n      element.attachEvent(type,\
+    \ func);\n    };\n  }\n  addEvent(element, type, func);\n}\n```\n\n# Pretty APIs\n\
+    \n```\nEvent.observe(window, 'load', function() {\n  Event.observe($('country'),\
+    \ 'change', function() {\n    if ($F('country') == 'United States') {\n      return\
+    \ $('state').show();\n    }\n    $('state').hide()\n  });\n});\n```\n\n```javascript\n\
+    // see: http://www.adamlogic.com/\n\nshow('state').when('country').is('United\
+    \ States');\n```\n\n# Domain Specific Languages\n\n### DOMBuilder\n\nhttp://danwebbb.net/lowpro\n\
+    \n```javascript\nvar ul = document.createElement('ul');\nul.setAttribute('id',\
+    \ 'my_list');\nvar li = document.createElement('li');\nvar text = document.createTextNodeNode('Some\
+    \ text');\nli.appendChild(text);\nul.appendChild(li);\n```\n\n```javascript\n\
+    var ul = DOMBuilder.create('ul', { id : 'my_list' }, [\n  DOMBuilder.create('li',\
+    \ null, 'Some text')\n]);\n```\n\n```javascript\nvar ul = $ul({ id : 'my_list'\
+    \ },\n  $li('Some text')\n);\n```\n\n# DIY language features\n\n### John Resig's\
+    \ method-overloading\n\nhttp://ejohn.org/blog/javascript-method-overloading/\n\
+    \n```javascript\nvar users = new Users();\nusers.find(); // Finds all\nusers.find(\"\
+    John\"); // Finds by name\nusers.find(\"John\", \"Resig\"); // Finds by first\
+    \ and last name\n```\n\n```javascript\nfunction Users() {\n\n  addMethod(Users.prototype,\
+    \ \"find\", function(){\n    // Find all users...\n  });\n\n  addMethod(Users.prototype,\
+    \ \"find\", function(name){\n    // Find a user by name\n  });\n\n  addMethod(Users.prototype,\
+    \ \"find\", function(first, last){\n    // Find a user by first and last name\n\
+    \  });\n}\n\n```javascript\nfunction addMethod(object, name, fn){\n  var old =\
+    \ object[ name ];\n  object[ name ] = function(){\n    if ( fn.length == arguments.length\
+    \ ) {\n      return fn.apply( this, arguments );\n    } else if ( typeof old ==\
+    \ 'function' ) {\n      return old.apply( this, arguments );\n    }\n  };\n}\n\
+    ```\n\n# Prototype 1.6 Classes\n\nhttp://prototypejs.org/learn/class-inheritance\n\
+    \n```javascript\nvar Person = Class.create({\n  initialize: function(name) {\n\
+    \    this.name = name;\n  },\n  say: function(message) {\n    return this.name\
+    \ + ': ' + message;\n  }\n});\n```\n\n```javascript\nvar Pirate = Class.create(Person,\
+    \ {\n  // redefine the speak method\n  say: function($super, message) {\n    return\
+    \ $super(message) + ' , yarr!';\n  }\n});\n\nvar john = new Pirate('Long John');\n\
+    john.say('ahoy matey');\n// => \"Long John: ahoy matey, yarr!\"\n```\n\n# and\
+    \ a lot more...\n\n# Looking back...\n\n- JavaScript is small but totally flexible\n\
+    - A handful of techniques provide everything you need\n- It's all about objects,\
+    \ properties and functions\n- Don't worry if its not all sunk in. Have a play\
+    \ around. Slides will be available.\n\n# Coming Soon...\n"
+  mdcn: "\n\n# 自优化代码\n\n```\nfunction addEvent(element, type, func) {\n  if (document.addEventListener)\n\
+    \    element.addEventListener(type, func);\n  else\n    element.attachEvent(type,\
+    \ func);\n}\n```\n\n```javascript\nfunction addEvent(element, type, func) {\n\
+    \  if (document.addEventListener) {\n    addEvent = function(element, type, func)\
+    \ {\n      element.addEventListener(type, func);\n    };\n  } else {\n    addEvent\
+    \ = function(element, type, func) {\n      element.attachEvent(type, func);\n\
+    \    };\n  }\n  addEvent(element, type, func);\n}\n```\n\n# 美优的 APIs\n\n```\n\
+    Event.observe(window, 'load', function() {\n  Event.observe($('country'), 'change',\
+    \ function() {\n    if ($F('country') == 'United States') {\n      return $('state').show();\n\
+    \    }\n    $('state').hide()\n  });\n});\n```\n\n```javascript\n// see: http://www.adamlogic.com/\n\
+    \nshow('state').when('country').is('United States');\n```\n\n#领域特定语言\n\n### DOMBuilder\n\
+    \nhttp://danwebbb.net/lowpro\n\n```javascript\nvar ul = document.createElement('ul');\n\
+    ul.setAttribute('id', 'my_list');\nvar li = document.createElement('li');\nvar\
+    \ text = document.createTextNodeNode('Some text');\nli.appendChild(text);\nul.appendChild(li);\n\
+    ```\n\n```javascript\nvar ul = DOMBuilder.create('ul', { id : 'my_list' }, [\n\
+    \  DOMBuilder.create('li', null, 'Some text')\n]);\n```\n\n```javascript\nvar\
+    \ ul = $ul({ id : 'my_list' },\n  $li('Some text')\n);\n```\n\n# DIY 语言特性\n\n\
+    ### John Resig 的方法重载\n\nhttp://ejohn.org/blog/javascript-method-overloading/\n\
+    \n```javascript\nvar users = new Users();\nusers.find(); // 查找所有\nusers.find(\"\
+    John\"); // 按名字查找\nusers.find(\"John\", \"Resig\"); // 按姓和名查找\n```\n\n```javascript\n\
+    function Users() {\n\n  addMethod(Users.prototype, \"find\", function(){\n   \
+    \ // 查找所有用户...\n  });\n\n  addMethod(Users.prototype, \"find\", function(name){\n\
+    \    // 按名字查找用户\n  });\n\n  addMethod(Users.prototype, \"find\", function(first,\
+    \ last){\n    // 按姓和名查找用户\n  });\n}\n\n```\n\n```javascript\nfunction addMethod(object,\
+    \ name, fn){\n  var old = object[ name ];\n  object[ name ] = function(){\n  \
+    \  if ( fn.length == arguments.length ) {\n      return fn.apply( this, arguments\
+    \ );\n    } else if ( typeof old == 'function' ) {\n      return old.apply( this,\
+    \ arguments );\n    }\n  };\n}\n```\n\n# Prototype 1.6 类\n\nhttp://prototypejs.org/learn/class-inheritance\n\
+    \n```javascript\nvar Person = Class.create({\n  initialize: function(name) {\n\
+    \    this.name = name;\n  },\n  say: function(message) {\n    return this.name\
+    \ + ': ' + message;\n  }\n});\n```\n\n```javascript\nvar Pirate = Class.create(Person,\
+    \ {\n  // 重定义 speak 方法\n  say: function($super, message) {\n    return $super(message)\
+    \ + ' , yarr!';\n  }\n});\n\nvar john = new Pirate('Long John');\njohn.say('ahoy\
+    \ matey');\n// => \"Long John: ahoy matey, yarr!\"\n```\n\n# 还有更多...\n\n# 回顾...\n\
+    \n- JavaScript 虽然很小，但完全灵活\n- 掌握少数技巧就能提供你所需的一切\n- 核心在于对象、属性和函数\n- 如果还没有完全理解，不要担心。试着玩一下。稍后提供幻灯片。\n\
+    \n# 敬请期待...\n\n"
+  merge: 0
+  raw:
+  - '[PAGE 72]
+
+
+    # Self optimising code'
+  - "[PAGE 73]\n\n```\nfunction addEvent(element, type, func) {\n  if (document.addEventListener)\n\
+    \    element.addEventListener(type, func);\n  else\n    element.attachEvent(type,\
+    \ func);\n}\n```"
+  - "[PAGE 74]\n\n```\nfunction addEvent(element, type, func) {\n  if (document.addEventListener)\
+    \ {\n    addEvent = function(element, type, func) {\n      element.addEventListener(type,\
+    \ func);\n    };\n  } else {\n    addEvent = function(element, type, func) {\n\
+    \      element.attachEvent(type, func);\n    };\n  }\n  addEvent(element, type,\
+    \ func);\n}\n```"
+  - '[PAGE 75]
+
+
+    # Pretty APIs'
+  - "[PAGE 76]\n\n```\nEvent.observe(window, 'load', function() {\n  Event.observe($('country'),\
+    \ 'change', function() {\n    if ($F('country') == 'United States') {\n      return\
+    \ $('state').show();\n    }\n    $('state').hide()\n  });\n});\n```"
+  - '[PAGE 77]
+
+
+    ```
+
+    // see: http://www.adamlogic.com/
+
+
+    show(''state'').when(''country'').is(''United States'');
+
+    ```'
+  - '[PAGE 78]
+
+
+    # # Domain Specific Languages'
+  - '[PAGE 79]
+
+
+    # DOMBuilder
+
+
+    http://danwebbb.net/lowpro'
+  - '[PAGE 80]
+
+
+    ```
+
+    var ul = document.createElement(''ul'');
+
+    ul.setAttribute(''id'', ''my_list'');
+
+    var li = document.createElement(''li'');
+
+    var text = document.createTextNodeNode(''Some text'');
+
+    li.appendChild(text);
+
+    ul.appendChild(li);
+
+    ```'
+  - "[PAGE 81]\n\n```\nvar ul = DOMBuilder.create('ul', { id : 'my_list' }, [\n  DOMBuilder.create('li',\
+    \ null, 'Some text')\n]);\n```"
+  - "[PAGE 82]\n\n```\nvar ul = $ul({ id : 'my_list' },\n  $li('Some text')\n);\n\
+    ```"
+  - '[PAGE 83]
+
+
+    # DIY language features'
+  - '[PAGE 84]
+
+
+    # John Resig''s method
+
+    overloading
+
+
+    http://ejohn.org/blog/javascript-method-overloading/'
+  - '[PAGE 85]
+
+
+    ```
+
+    var users = new Users();
+
+    users.find(); // Finds all
+
+    users.find("John"); // Finds by name
+
+    users.find("John", "Resig"); // Finds by first and last name
+
+    ```'
+  - "[PAGE 86]\n\n```\nfunction Users() {\n\naddMethod(Users.prototype, \"find\",\
+    \ function(){\n  // Find all users...\n});\n\naddMethod(Users.prototype, \"find\"\
+    , function(name){\n  // Find a user by name\n});\n\naddMethod(Users.prototype,\
+    \ \"find\", function(first, last){\n  // Find a user by first and last name\n\
+    });\n```"
+  - "[PAGE 87]\n\n```\nfunction addMethod(object, name, fn){\n  var old = object[\
+    \ name ];\n  object[ name ] = function(){\n    if ( fn.length == arguments.length\
+    \ ) {\n      return fn.apply( this, arguments );\n    } else if ( typeof old ==\
+    \ 'function' ) {\n      return old.apply( this, arguments );\n    }\n  };\n}\n\
+    ```"
+  - '[PAGE 88]
+
+
+    # # Prototype 1.6 Classes
+
+
+    http://prototypejs.org/learn/class-inheritance'
+  - "[PAGE 89]\n\n```\nvar Person = Class.create({\n  initialize: function(name) {\n\
+    \    this.name = name;\n  },\n  say: function(message) {\n    return this.name\
+    \ + ': ' + message;\n  }\n});\n```"
+  - "[PAGE 90]\n\n```\nvar Pirate = Class.create(Person, {\n  // redefine the speak\
+    \ method\n  say: function($super, message) {\n    return $super(message) + ' ,\
+    \ yarr!';\n  }\n});\n\nvar john = new Pirate('Long John');\njohn.say('ahoy matey');\n\
+    // => \"Long John: ahoy matey, yarr!\"\n```"
+  - '[PAGE 91]
+
+
+    # and a lot more...'
+  - '[PAGE 92]
+
+
+    # Looking back...
+
+
+    +   - JavaScript is small but totally flexible
+
+    - A handful of techniques provide everything you need
+
+    - It''s all about objects, properties and functions
+
+    - Don''t worry if its not all sunk in. Have a play around. Slides will be available.'
+  - '[PAGE 93]
+
+
+    ![](img/3b9b4bb4dfabc6edac1efc6b38b9f460_93_0.png)
+
+
+    # Coming Soon...'
+pages:
+- img_proc: true
+  md: '# # Metaprogramming JavaScript
+
+
+    Dan Webb (dan@danwebb.net)'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: '# What?
+
+
+    > the writing of computer programs that write or manipulate other programs (or
+    themselves) as their data”'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: '# With JavaScript?!
+
+
+    +   - Small and fiesty but widely misunderstood
+
+    - Relies on few but powerful constructs
+
+    - You can work with functions, arguments, built-ins types and mechanisms like
+    inheritance at runtime
+
+    - Techniques underpin many JS libraries'
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: '# JavaScript Exposed:
+
+    Objects Out Of Control!'
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: '# Play along!
+
+
+    ```
+
+    >>> var add = function(a, b) { return a + b }
+
+    >>> add(2,3)
+
+    5
+
+    >>> typeof add
+
+    "function"
+
+    >>> function adder(a) { return function(b) { return add(a, b) } }
+
+    >>> addS = adder(5)
+
+    function()
+
+    >>> addS(10)
+
+    15
+
+    >>> typeof addS
+
+    "function"
+
+    ```'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: '# 4 building blocks'
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: '# (Nearly) everything is a hash'
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: '# number
+
+    string
+
+    boolean
+
+    undefined'
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: '# everything else is an Object'
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: '```
+
+    var myObj = new Object;
+
+    myObj[''myProperty''] = 454;
+
+    myObj[45435] = true;
+
+    myObj[true] = ''hello'';
+
+    ```'
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: '# This works with any object'
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: '```
+
+    var now = new Date;
+
+    now[5] = ''hello!'';
+
+
+    console.log(now[5]); //=> ''hello!''
+
+    ```'
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: '# Expandos: a special case'
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: '```
+
+    location[''thing''] = ''a'';
+
+    // is the same as...
+
+    location.thing = ''a'';
+
+
+    console.log(location[''thing'']);
+
+    console.log(location.thing);
+
+    // => ''a''
+
+    ```'
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: '```
+
+    // bad!
+
+    eval("window.forms." + form + ".reset()");
+
+
+    // good!
+
+    window.forms[form].reset();
+
+    ```'
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: "```\nvar tags = ['a', 'div', 'span', 'p'];\n\nfor (var i, l = tags.length;\
+    \ i < l; i++)\n    find[tag[i] + 'Elements'] = createFinder(tag[i]);\n\nfind.aElements();\n\
+    find.pElements();\n// and so on...\n```"
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: '# # Inspecting objects'
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: "```\nvar person = {\n  name: 'Bob',\n  email: 'bob@bob.com',\n  tel: '0258305964'\n\
+    };\n\nfor (var key in person) {\n  console.log(key);\n} //=> 'name', 'email',\
+    \ 'tel'\n```"
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: "```\n// using the person object\n// from the previous example...\nif (\"tel\"\
+    \ in person) {\n  alert(person.tel);\n}\n```"
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: '# Inspecting types'
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: '```
+
+    var a = 5;
+
+    typeof a //=> ''number''
+
+    var name = ''Sam'';ntypeof name //=> ''string''
+
+    typeof doesntExist //=> ''undefined''
+
+    ```'
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: "```\nfunction doSomething() {\n  console.log('yay!');\n}\n\ntypeof doSomething\
+    \ //=> 'function'\n```"
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: '```
+
+    var anObject = {};
+
+    typeof anObject //=> ''object''
+
+    var Array = [1,2,3,4,5,6];
+
+    typeof anArray //=> ''object''
+
+    ```'
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: '# Wha?!'
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: '```
+
+    anArray instanceof Array //=> true
+
+    an0b instanceof Array //=> false
+
+    ```'
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: '# First typeof
+
+    then instanceof'
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: '# Functions are Objects'
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: "```\nvar sum = function(n1, n2) {\n  return n1 + n2;\n}\n\nvar a = {};\na.sum\
+    \ = sum;\n\na.sum(1, 2); // => 3\n```"
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: '# ''Methods'' are just functions that are assigned to a property of an object'
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: "```\nvar a = { counter : 5 };\nvar b = { counter : 10 };\n\na.increment = function(amount)\
+    \ {\n  this.counter += amount;\n};\n\na.increment(1)\na.counter; // => 6\n```"
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: '```
+
+    b.increment = a.increment;
+
+    b.increment(1);
+
+    console.log(b.counter); // => 11
+
+    ```'
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: "```\nfunction (amount) {\n  this.counter += amount;\n}\n\na.increment(5); //\
+    \ => 10\n```"
+  merge: -1
+  pgno: 31
+- img_proc: true
+  md: "```\nfunction (amount) {\n  this.counter += amount;\n}\n\nb.increment(5); //\
+    \ => 15\n```"
+  merge: -1
+  pgno: 32
+- img_proc: true
+  md: "```\nvar slideshow = {\n  init: function() {\n    this.start();\n  },\n  start:\
+    \ function() {\n  }\n}\n\nwindow.onload = slideshow.init;\n```"
+  merge: -1
+  pgno: 33
+- img_proc: true
+  md: '```
+
+    window.onload();
+
+    ```'
+  merge: -1
+  pgno: 34
+- img_proc: true
+  md: "```\nwindow.onload();\nfunction() {\n  this.start();\n}\n```"
+  merge: -1
+  pgno: 35
+- img_proc: true
+  md: '```
+
+    a.increment.call(b, 1); // => 11
+
+    na.increment.apply(b, [1]); // => 11
+
+    ```'
+  merge: -1
+  pgno: 36
+- img_proc: true
+  md: '# arguments'
+  merge: -1
+  pgno: 37
+- img_proc: true
+  md: "```\n// add up all the arguments sent to the\n// function no matter how many\
+    \ there are\nfunction sum() {\n  var total = 0;\n  for (var i = 0, l = arguments.length;\
+    \ i < l; i++) {\n    total += arguments[i];\n  }\n  return total;\n}\n\nconsole.log(sum(2,5,90));\
+    \ //=> 97\nconsole.log(sum(100,200,50,18)); //=> 368\n```"
+  merge: -1
+  pgno: 38
+- img_proc: true
+  md: '```
+
+    validate(''name'');
+
+    validate(''name'', ''email'');
+
+    validate(''name'', ''email'', { min: 4, max: 10 });
+
+    ```'
+  merge: -1
+  pgno: 39
+- img_proc: true
+  md: "```\nfunction validate() {\n  var options = {};\n  var fields = arguments;\n\
+    \n  // steal slice from Array.prototype\n  var slice = Array.prototype.slice;\n\
+    \n  if (typeof fields[fields.length-1] == 'object') {\n    options = fields[fields.length-1];\n\
+    \    fields = slice.call(fields, 1);\n  }\n\n  // code to execute here...\n}\n\
+    ```"
+  merge: -1
+  pgno: 40
+- img_proc: true
+  md: '# Functions can return other functions'
+  merge: -1
+  pgno: 41
+- img_proc: true
+  md: "```\nfunction add(a, b) { return a + b }\n\nfunction adder(a) {\n  return function(b)\
+    \ {\n    return add(a, b);\n  }\n}\n\nadd(5, 5); //=> 10\n\nvar add5 = adder(5);\n\
+    add5(10); //=> 15\n```"
+  merge: -1
+  pgno: 42
+- img_proc: true
+  md: "```\nfunction add(a, b) { return a + b }\n\nfunction adder(a) {\n  return function(b)\
+    \ {\n    return add(a, b);\n  }\n}\n\nadd(5, 5); //=> 10\n\nvar add5 = adder(5);\n\
+    add5(10); //=> 15\n```"
+  merge: -1
+  pgno: 43
+- img_proc: true
+  md: '# Closure'
+  merge: -1
+  pgno: 44
+- img_proc: true
+  md: '# Back to wikipedia...
+
+
+    > A closure occurs when a function is defined within another function, and the
+    inner function refers to local variables of the outer function.'
+  merge: -1
+  pgno: 45
+- img_proc: true
+  md: "```\nfunction attachHelpEvents() {\n  var windowRef = null;\n  var openLink\
+    \ = document.getElementById('open_help');\n  var closeLink = document.getElementById('close_help');\n\
+    \n  var openWindow = function() {\n    windowRef = open(this.href, 'mywin');\n\
+    \  };\n\n  var closeWindow = function() {\n    if (windowRef) windowRef.close();\n\
+    \  };\n\n  openLink.onclick = openWindow;\n  closeLink.onclick = closeWindow;\n\
+    }\n\nwindow.onload = attachHelpEvents;\n```"
+  merge: -1
+  pgno: 46
+- img_proc: true
+  md: "```\nfunction attachHelpEvents() {\n  var windowRef = null;\n  var openLink\
+    \ = document.getElementById('open_help');\n  var closeLink = document.getElementById('close_help');\n\
+    \n  var openWindow = function() {\n    windowRef = open(this.href, 'mywin');\n\
+    \  };\n\n  var onClose = function() {\n    if (windowRef) windowRef.close();\n\
+    \  };\n\n  openLink.onclick = openWindow;\n  closeLink.onclick = onClose;\n}\n\
+    \nwindow.onload = attachHelpEvents;\n```"
+  merge: -1
+  pgno: 47
+- img_proc: true
+  md: '# Why is that useful?'
+  merge: -1
+  pgno: 48
+- img_proc: true
+  md: "```\nvar slideshow = {\n  init: function() {\n    this.start();\n  },\n  start:\
+    \ function() {\n  }\n}\n\nwindow.onload = slideshow.init;\n```"
+  merge: -1
+  pgno: 49
+- img_proc: true
+  md: "```\nfunction bind(func, context) {\n  return function() {\n    return func.apply(context,\
+    \ arguments);\n  }\n}\n```"
+  merge: -1
+  pgno: 50
+- img_proc: true
+  md: "```\nvar slideshow = {\n  init: function() {\n    this.start();\n  },\n  start:\
+    \ function() {\n  }\n}\n\nwindow.onload = bind(slideshow.init, slideshow);\n```"
+  merge: -1
+  pgno: 51
+- img_proc: true
+  md: '# Functions can be used to make objects'
+  merge: -1
+  pgno: 52
+- img_proc: true
+  md: "```\nfunction Coord(x, y) {\n  this.x = x;\n  this.y = y;\n}\nvar home = new\
+    \ Coord(132, 223);\nconsole.log(home.x); //=> 132\nconsole.log(home.y); //=> 223\n\
+    console.log(home.constructor); //=> Coord\n```"
+  merge: -1
+  pgno: 53
+- img_proc: true
+  md: '# Constructor functions
+
+    are just functions'
+  merge: -1
+  pgno: 54
+- img_proc: true
+  md: '# The magic is in the new operator'
+  merge: -1
+  pgno: 55
+- img_proc: true
+  md: '```
+
+    var london = new Coord(32, 13);
+
+    ```'
+  merge: -1
+  pgno: 56
+- img_proc: true
+  md: '```
+
+    var london = {};
+
+    Coord.call(london, 32, 13);
+
+    ```'
+  merge: -1
+  pgno: 57
+- img_proc: true
+  md: '```
+
+    var london = {};
+
+
+    Coord.call(london, 32, 13);
+
+    london.__proto__ = Coord.prototype;
+
+    ```'
+  merge: -1
+  pgno: 58
+- img_proc: true
+  md: '# inheritance'
+  merge: -1
+  pgno: 59
+- img_proc: true
+  md: "```\nCoord.prototype = {\n  toString: function() {\n    return [this.x, this.y].join(',\
+    \ ');\n  }\n};\n\nhome.toString(); // => 132, 223\n```"
+  merge: -1
+  pgno: 60
+- img_proc: true
+  md: '```
+
+    home.toString? // => no...keep looking
+
+    nhome.__proto__.toString? // => got it!
+
+    ```'
+  merge: -1
+  pgno: 61
+- img_proc: true
+  md: '```
+
+    home.__proto__ == Coord.prototype
+
+    ```'
+  merge: -1
+  pgno: 62
+- img_proc: true
+  md: "```\nfunction Marker(name, x, y) {\n  this.name = name;\n  this.x = x;\n  this.y\
+    \ = y;\n}\n```\n\nMarker.prototype = new Coord;\n\nvar pub = new Marker('Party!',\
+    \ 12, 54);\npub.toString(); //=> 12, 54"
+  merge: -1
+  pgno: 63
+- img_proc: true
+  md: '```
+
+    pub.toString //=> no...
+
+    pub.__proto__.toString //=> no...
+
+    pub.__proto____proto__.toString //=> found!
+
+    ```'
+  merge: -1
+  pgno: 64
+- img_proc: true
+  md: '```
+
+    pub.__proto__ == Marker.prototype
+
+    pub.__proto__..__proto__ == Coord.prototype
+
+    ```'
+  merge: -1
+  pgno: 65
+- img_proc: true
+  md: '# The point is:
+
+    its all just functions,
+
+    objects and properties'
+  merge: -1
+  pgno: 66
+- img_proc: true
+  md: '# We can hack it all.'
+  merge: -1
+  pgno: 67
+- img_proc: true
+  md: '# So what can you do with this stuff?'
+  merge: -1
+  pgno: 68
+- img_proc: true
+  md: '# Patch holes in bad implementations'
+  merge: -1
+  pgno: 69
+- img_proc: true
+  md: "```\n// Patch Array#push for IE 5\nif (!Array.prototype.push) {\n  Array.prototype.push\
+    \ = function(item) {\n    return this[this.length] = item;\n  }\n}\n```"
+  merge: -1
+  pgno: 70
+- img_proc: true
+  md: "```\n// add 1.6 style Array#forEach to older browsers\nif (!Array.prototype.forEach)\
+    \ {\n  Array.prototype.forEach = function(func, scope) {\n    scope = scope ||\
+    \ this;\n    for (var i = 0, l = this.length; i < l; i++) {\n      func.call(scope,\
+    \ this[i], i, this);\n    }\n  }\n}\n```"
+  merge: -1
+  pgno: 71
+- img_proc: true
+  md: '# Self optimising code'
+  merge: -1
+  pgno: 72
+- img_proc: true
+  md: "```\nfunction addEvent(element, type, func) {\n  if (document.addEventListener)\n\
+    \    element.addEventListener(type, func);\n  else\n    element.attachEvent(type,\
+    \ func);\n}\n```"
+  merge: -1
+  pgno: 73
+- img_proc: true
+  md: "```\nfunction addEvent(element, type, func) {\n  if (document.addEventListener)\
+    \ {\n    addEvent = function(element, type, func) {\n      element.addEventListener(type,\
+    \ func);\n    };\n  } else {\n    addEvent = function(element, type, func) {\n\
+    \      element.attachEvent(type, func);\n    };\n  }\n  addEvent(element, type,\
+    \ func);\n}\n```"
+  merge: -1
+  pgno: 74
+- img_proc: true
+  md: '# Pretty APIs'
+  merge: -1
+  pgno: 75
+- img_proc: true
+  md: "```\nEvent.observe(window, 'load', function() {\n  Event.observe($('country'),\
+    \ 'change', function() {\n    if ($F('country') == 'United States') {\n      return\
+    \ $('state').show();\n    }\n    $('state').hide()\n  });\n});\n```"
+  merge: -1
+  pgno: 76
+- img_proc: true
+  md: '```
+
+    // see: http://www.adamlogic.com/
+
+
+    show(''state'').when(''country'').is(''United States'');
+
+    ```'
+  merge: -1
+  pgno: 77
+- img_proc: true
+  md: '# # Domain Specific Languages'
+  merge: -1
+  pgno: 78
+- img_proc: true
+  md: '# DOMBuilder
+
+
+    http://danwebbb.net/lowpro'
+  merge: -1
+  pgno: 79
+- img_proc: true
+  md: '```
+
+    var ul = document.createElement(''ul'');
+
+    ul.setAttribute(''id'', ''my_list'');
+
+    var li = document.createElement(''li'');
+
+    var text = document.createTextNodeNode(''Some text'');
+
+    li.appendChild(text);
+
+    ul.appendChild(li);
+
+    ```'
+  merge: -1
+  pgno: 80
+- img_proc: true
+  md: "```\nvar ul = DOMBuilder.create('ul', { id : 'my_list' }, [\n  DOMBuilder.create('li',\
+    \ null, 'Some text')\n]);\n```"
+  merge: -1
+  pgno: 81
+- img_proc: true
+  md: "```\nvar ul = $ul({ id : 'my_list' },\n  $li('Some text')\n);\n```"
+  merge: -1
+  pgno: 82
+- img_proc: true
+  md: '# DIY language features'
+  merge: -1
+  pgno: 83
+- img_proc: true
+  md: '# John Resig''s method
+
+    overloading
+
+
+    http://ejohn.org/blog/javascript-method-overloading/'
+  merge: -1
+  pgno: 84
+- img_proc: true
+  md: '```
+
+    var users = new Users();
+
+    users.find(); // Finds all
+
+    users.find("John"); // Finds by name
+
+    users.find("John", "Resig"); // Finds by first and last name
+
+    ```'
+  merge: -1
+  pgno: 85
+- img_proc: true
+  md: "```\nfunction Users() {\n\naddMethod(Users.prototype, \"find\", function(){\n\
+    \  // Find all users...\n});\n\naddMethod(Users.prototype, \"find\", function(name){\n\
+    \  // Find a user by name\n});\n\naddMethod(Users.prototype, \"find\", function(first,\
+    \ last){\n  // Find a user by first and last name\n});\n```"
+  merge: -1
+  pgno: 86
+- img_proc: true
+  md: "```\nfunction addMethod(object, name, fn){\n  var old = object[ name ];\n \
+    \ object[ name ] = function(){\n    if ( fn.length == arguments.length ) {\n \
+    \     return fn.apply( this, arguments );\n    } else if ( typeof old == 'function'\
+    \ ) {\n      return old.apply( this, arguments );\n    }\n  };\n}\n```"
+  merge: -1
+  pgno: 87
+- img_proc: true
+  md: '# # Prototype 1.6 Classes
+
+
+    http://prototypejs.org/learn/class-inheritance'
+  merge: -1
+  pgno: 88
+- img_proc: true
+  md: "```\nvar Person = Class.create({\n  initialize: function(name) {\n    this.name\
+    \ = name;\n  },\n  say: function(message) {\n    return this.name + ': ' + message;\n\
+    \  }\n});\n```"
+  merge: -1
+  pgno: 89
+- img_proc: true
+  md: "```\nvar Pirate = Class.create(Person, {\n  // redefine the speak method\n\
+    \  say: function($super, message) {\n    return $super(message) + ' , yarr!';\n\
+    \  }\n});\n\nvar john = new Pirate('Long John');\njohn.say('ahoy matey');\n//\
+    \ => \"Long John: ahoy matey, yarr!\"\n```"
+  merge: -1
+  pgno: 90
+- img_proc: true
+  md: '# and a lot more...'
+  merge: -1
+  pgno: 91
+- img_proc: true
+  md: '# Looking back...
+
+
+    +   - JavaScript is small but totally flexible
+
+    - A handful of techniques provide everything you need
+
+    - It''s all about objects, properties and functions
+
+    - Don''t worry if its not all sunk in. Have a play around. Slides will be available.'
+  merge: -1
+  pgno: 92
+- img_proc: true
+  md: '![](img/3b9b4bb4dfabc6edac1efc6b38b9f460_93_0.png)
+
+
+    # Coming Soon...'
+  merge: -1
+  pgno: 93
+toc:
+- - '#'
+  - Javascript 元编程
+- - '##'
+  - 这是什么？
+- - '##'
+  - 用 JavaScript 实现？！
+- - '##'
+  - 揭秘 JavaScript：失控的对象！
+- - '##'
+  - 一来尝试吧！
+- - '##'
+  - 4 个构建块
+- - '###'
+  - （几乎）一切都是哈希表 (hash)
+- - '###'
+  - 其他所有都是对象 (Object)
+- - '###'
+  - 这对对任何对象有效
+- - '###'
+  - 访问器 (Accessors)：一种特殊情况
+- - '###'
+  - 检查对象
+- - '###'
+  - 检查类型
+- - '###'
+  - 啥？！
+- - '###'
+  - 第一个 typeof
+- - '###'
+  - 函数也是对象
+- - '###'
+  - ‘方法’只是赋值给对象属性的函数
+- - '###'
+  - arguments (参数)
+- - '###'
+  - 函数可以返回其他函数
+- - '###'
+  - 闭包 (Closure)
+- - '###'
+  - 回到 Wikipedia...
+- - '###'
+  - 这为什么很有用？
+- - '###'
+  - 函数可以用来创建对象
+- - '###'
+  - 构造函数只是函数
+- - '###'
+  - 魔法在于 new 运算符
+- - '###'
+  - 继承 (inheritance)
+- - '###'
+  - 重点在于：
+- - '###'
+  - 我们可以对它们进行任何操作。
+- - '###'
+  - 所以用这些东西能做什么？
+- - '###'
+  - 修复糟糕实现中的漏洞
+- - '###'
+  - 自优化代码
+- - '###'
+  - 美优的 APIs
+- - '###'
+  - DOMBuilder
+- - '##'
+  - DIY 语言特性
+- - '###'
+  - John Resig 的方法重载
+- - '##'
+  - Prototype 1.6 类
+- - '##'
+  - 还有更多...
+- - '##'
+  - 回顾...
+- - '##'
+  - 敬请期待...
