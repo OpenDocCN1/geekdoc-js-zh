@@ -654,6 +654,7 @@
 +   [JavaScript 精通：动态 Web 开发高级技术：解锁现代 JavaScript 编程、DOM 操作与 Web 开发最佳实践密码 (TechTales Chronicles)](docs/javascript-mastery-advanced-techniques-for-dynamic-web-devel/README.md)
 +   [100 天精通 JavaScript](docs/javascript-mastery-in-100-days/README.md)
 +   [Javascript 元编程](docs/javascript-metaprogramming/README.md)
++   [JavaScript Native Interface：构建具有原生性能的跨平台应用](docs/javascript-native-interface-build-cross-platform-apps-with-n/README.md)
 +   [JavaScript Node.js React MongoDB VS Code：初学者需要的 200 知识](docs/javascript-nodejs-react-mongodb-vs-code-200-things-beginners/README.md)
 +   [JavaScript 面向对象编程示例](docs/javascript-object-oriented-programming-by-examples/README.md)
 +   [JavaScript 对象、函数与数组详解](docs/javascript-objects-functions-and-arrays-explained/README.md)
