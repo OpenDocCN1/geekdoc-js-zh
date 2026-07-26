@@ -696,6 +696,7 @@
 +   [JavaScript RegExp 示例指南](docs/javascript-regexp-an-example-based-guide/README.md)
 +   [Javascript：概念、库、框架与工具入门指南](docs/javascript-simple-guide-for-concepts-libraries-frameworks-to/README.md)
 +   [JavaScript 逐步入门指南](docs/javascript-step-by-step/README.md)
++   [JavaScript 入门指南](docs/javascript-succinctly/README.md)
 +   [JavaScript 语法与实践](docs/javascript-syntax-and-practices/README.md)
 +   [JavaScript 语法与实践指南](docs/javascript-syntax-and-practices-1/README.md)
 +   [JavaScript Jasmine 测试](docs/javascript-testing-with-jasmine/README.md)
