@@ -1,0 +1,2 @@
++   [轻松快速学习 JavaScript：每页均包含实时代码示例，帮助你简化 JavaScript 学习过程并提升到新水平。](README.md)
++   [轻松快速学习 JavaScript：每页均包含实时代码示例，帮助你简化 JavaScript 学习过程并提升到新水平。](javascript-learn-easily-and-quickly-each-page-contains-live-.md)
