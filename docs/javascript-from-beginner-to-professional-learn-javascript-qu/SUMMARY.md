@@ -1,0 +1,2 @@
++   [JavaScript 从初学者到专家：通过构建有趣的、交互式的及动态 Web 应用、游戏和页面快速学习 JavaScript](README.md)
++   [JavaScript 从初学者到专家：通过构建有趣的、交互式的及动态 Web 应用、游戏和页面快速学习 JavaScript](javascript-from-beginner-to-professional-learn-javascript-qu.md)
