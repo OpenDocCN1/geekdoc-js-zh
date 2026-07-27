@@ -1,0 +1,2 @@
++   [JavaScript 训练营：在 2 周内学习 JavaScript 编程基础（免费书籍、Angularjs、jQuery、JavaScript 可视化）](README.md)
++   [JavaScript 训练营：在 2 周内学习 JavaScript 编程基础（免费书籍、Angularjs、jQuery、JavaScript 可视化）](javascript-bootcamp---learn-the-basics-of-javascript-program.md)

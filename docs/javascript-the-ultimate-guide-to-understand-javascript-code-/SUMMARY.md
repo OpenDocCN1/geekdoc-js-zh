@@ -1,0 +1,2 @@
++   [JavaScript：理解 JavaScript 代码及其基础终极指南。探索字面量与控制流。学习变量、函数、对象以及最佳 jQuery。](README.md)
++   [JavaScript：理解 JavaScript 代码及其基础终极指南。探索字面量与控制流。学习变量、函数、对象以及最佳 jQuery。](javascript-the-ultimate-guide-to-understand-javascript-code-.md)

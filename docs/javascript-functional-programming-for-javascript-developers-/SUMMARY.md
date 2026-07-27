@@ -1,0 +1,2 @@
++   [JavaScript：JavaScript 开发者的函数式编程：解锁 JavaScript 隐藏的函数式编程力量，构建更智能、更整洁、更可靠的 Web 应用](README.md)
++   [JavaScript：JavaScript 开发者的函数式编程：解锁 JavaScript 隐藏的函数式编程力量，构建更智能、更整洁、更可靠的 Web 应用](javascript-functional-programming-for-javascript-developers-.md)
