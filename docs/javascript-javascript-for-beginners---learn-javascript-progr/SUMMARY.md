@@ -1,0 +1,2 @@
++   [JavaScript 入学者指南 - 用半倍的时间轻松学习 JavaScript 编程 - 你需要的所有关于语言、编码、编程和网页的知识](README.md)
++   [JavaScript 入学者指南 - 用半倍的时间轻松学习 JavaScript 编程 - 你需要的所有关于语言、编码、编程和网页的知识](javascript-javascript-for-beginners---learn-javascript-progr.md)

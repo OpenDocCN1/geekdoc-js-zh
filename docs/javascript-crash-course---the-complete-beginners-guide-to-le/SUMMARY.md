@@ -1,0 +1,2 @@
++   [Javascript 快速上手 - 快速学习 JavaScript 编程完整初学者指南！（Angularjs, jQuery, JavaScript 可视化）](README.md)
++   [Javascript 快速上手 - 快速学习 JavaScript 编程完整初学者指南！（Angularjs, jQuery, JavaScript 可视化）](javascript-crash-course---the-complete-beginners-guide-to-le.md)

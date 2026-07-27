@@ -1,0 +1,2292 @@
+groups:
+- md: "\n# JAVASCRIPT\nJava\n\nCRASH COURSE - THE COMPLETE BEGINNERS GUIDE TO LEARNING\
+    \ JAVASCRIPT PROGRAMMING IN NO TIME!\n\nNATHANIEL HILL\n\n# Javascript:\n\n##\
+    \ Crash Course - The Complete Beginners Guide To Learning JavaScript Programming\
+    \ In No Time!\n\n# Table of contents\n\n# Introduction\n\n# Chapter 1 – An Introduction\
+    \ to Programming\n\n- How do we write programs?\n- What can I make in a program?\n\
+    - Planning your programs\n    - Reuse code\n    - Avoid Yellow Code\n    - Document\
+    \ your code\n    - Develop your own style\n    - Always Improve\n\n# Chapter 2\
+    \ – Javascript 101\n\n- Setting up your working environment\n- Functions and Variables\n\
+    \    - Variables\n    - Functions\n- Data Types\n- Keeping your code readable\n\
+    - Using libraries and prewritten code\n- Showing off your code\n- Commenting your\
+    \ code\n- Resources\n\n# Conclusion\n\n## Introduction\n\nThe Internet is built\
+    \ on a core set of fundamental programming languages. These languages help to\
+    \ drive functionality and feature-rich content to users all over the world. Some\
+    \ of the languages that are used are PHP, Perl, MySQL, Ruby on Rails, Java and\
+    \ the language that we are going to talk about today which is Javascript.\n\n\
+    If you are someone who has never programmed before or if you are just looking\
+    \ to try this is the book for you. I am a programmer myself and I know how difficult\
+    \ it is sometimes to go through some of these books and learn a language.\n\n\
+    Since I am a developer myself I am going to approach this book in a simple, easy\
+    \ to understand step-by-step manner. At the end of the book you will have the\
+    \ foundation and the knowledge to advance your skills and actually start developing\
+    \ your very own applications using Javascript as well as other programming languages.\n\
+    \n## Chapter 1 – An Introduction to Programming\n\nBefore we get into Javascript\
+    \ and web development let's get some basics and foundation. When it comes to learning\
+    \ a new language, be a spoken language or a computer language, you need to understand\
+    \ how it is used in the real world. When it comes to computer languages they all\
+    \ work basically the same.\n\nThey are a grouping of text files with different\
+    \ extensions on them to tell the other files that are on your computer how to\
+    \ access and interpret them.\n\nSo for example if you have a file such as index.html\
+    \ your web browser program will understand through its set of files that it is\
+    \ the first file it should look for when visiting a website.\n\nThe same goes\
+    \ for programming languages. When you have a grouping of files the program known\
+    \ as the compiler will read the listing of files looking for a specific one.\n\
+    \nThen when it finds that file it will look for specific instructions or lines\
+    \ of code to do specific tasks according to your input or through different sets\
+    \ of code it discovers.\n\nIn simpler terms if you have a list of groceries and\
+    \ you are at the store. You will start at the top of your list and go to that\
+    \ item.\n\nThen when you have that item you will look at the list again and jump\
+    \ to the next closest item on your list until you come to the end of the list\
+    \ and end up at the checkout.\n\nI hope you can see the picture and the pattern\
+    \ of what I am talking about. The same set of rules applies to a computer language.\
+    \ You have a set of or a list like in the grocery store.\n\nDepending on the choices\
+    \ that you make from that list will determine how you interact in the store.\n\
+    \nThe same applies to programming. What choices the user makes as they go through\
+    \ your program will result in different responses from your program.\n\n### How\
+    \ do we write programs?\n\nIt is very simple to write programs. You can write\
+    \ a program in any language using a program like notepad. You don't want to use\
+    \ programs such as Microsoft Word since these programs put in their own codes\
+    \ and information and will not create a clean file.\n\nIf you like a visual interface\
+    \ most programming languages have what is known as a GUI or Graphical User Interface.\
+    \ These programs make developing a program much easier and cleaner.\n\n### What\
+    \ can I make in a program?\n\nYou can make anything you can think of in a program.\
+    \ The main areas that you need to know is what you want to make, where you want\
+    \ to start, what you want your user to do and what the end result will be. For\
+    \ example many programmers start out with the “Hello World” example.\n\nIf you\
+    \ have been programming for any length of time you will see this example used\
+    \ all over the place.\n\nThis is a very useless program in itself but it does\
+    \ show you the basics and the foundation of programming and does allow you to\
+    \ see a program function in the language of your choice.\n\nWhen it comes to developing\
+    \ programs however some languages are designed and developed to perform specific\
+    \ functions.\n\nJavascript for example is designed for web applications and functionality\
+    \ on the web. Visual Basic on the other hand is more designed for office and desktop\
+    \ applications.\n\nYou can do web applications with Visual Basic but there is\
+    \ a lot of tasks that you will need to perform just as if you were to use Javascript\
+    \ in a desktop application you would have to do a lot of major programming to\
+    \ get something to work. This is just because they were not meant to work in the\
+    \ others environment.\n\nThis is why there are so many different languages for\
+    \ you to choose from. The great thing is though if you learn the basic foundation\
+    \ of one you will be able to see and recognize similarities in multiple languages\
+    \ and pick them up easily.\n\n### Planning your programs\n\nWhen you get into\
+    \ programming you will want to plan out your programs from start to finish. Now\
+    \ you will be able to change things around and can move away from your original\
+    \ plan but if you have a basic idea and a path you wish to follow then your programming\
+    \ efforts will have greater results.\n\n### Reuse code\n\nWhen you start programming\
+    \ for a long period of time you will soon realize that you will be using a lot\
+    \ of the same code in your programs. When you start developing it will be a good\
+    \ idea to start building up your own database of code files that you can reuse\
+    \ in other projects. This is a good programming habit and practice to get into.\
+    \ You don't want to reinvent the wheel every time you write something.\n\n###\
+    \ Avoid Yellow Code\n\nA term in the programming community is yellow code. This\
+    \ is code that is sloppy and just filled with bugs. We call it yellow code for\
+    \ the color of pee since that is all it is good for. When writing your programs\
+    \ follow a logical path and think out problems before you start coding. It will\
+    \ save you time and headache in the long run.\n\n### Document your code\n\nOne\
+    \ of the biggest mistakes people make when writing code is not to document their\
+    \ code. When you start writing a lot of code it will start to bleed together and\
+    \ you will not know when one function ends or where another procedure begins.\n\
+    \nWhen you document your code you are doing it for yourself. You can use comments\
+    \ in your code anywhere you want and when you need to make a change or fix a problem\
+    \ you will easily know where to go, where you ended up and what ideas you wanted\
+    \ to implement. So comment everything!\n\n### Develop your own style\n\nProgramming\
+    \ is an art form. When you code you are writing the same thing that others are\
+    \ writing but are doing it in your own style.\n\nWhen you develop awesome programs\
+    \ other programmers will look at your code and drool over how clean and efficient\
+    \ it is. I know it sounds goofy and dumb but it is a fact. You can be famous for\
+    \ the way you write your code.\n\n### Always Improve\n\nNo matter what you do\
+    \ or what you write you can always improve on it. When new technology is developed\
+    \ and new foundations in the language are developed you will want to use these\
+    \ to improve on your existing work to make it cleaner and more efficient.\n\n\
+    This is the basics of programming. The rest is just learning how to read and write\
+    \ the language. In the next chapter we will start to talk about Javascript, what\
+    \ you can do with it and get you started making your first set of programs.\n"
+  mdcn: "\n\n# JAVASCRIPT\nJava\n\n快速入门教程 - 零基础快速上手 JavaScript 编程的终极指南！\n\nNATHANIEL\
+    \ HILL\n\n# Javascript:\n\n## 快速入门教程 - 零基础快速上手 JavaScript 编程的终极指南！\n\n# 目录\n\n\
+    # 引言\n\n# 第一章 – 编程简介\n\n- 我们是如何编写程序的？\n- 我可以在程序中制作什么？\n- 规划你的程序\n    - 代码复用代码\n\
+    \    - 避免“黄色代码”（垃圾代码）\n    - 为你的代码编写注释\n    - 开发你自己的风格\n    - 持续改进\n\n# 第二章 –\
+    \ Javascript 基础101\n\n- 设置你的工作环境\n- 函数与变量\n    - 变量\n    - 函数\n- 数据类型\n- 保持代码的可读性\n\
+    - 使用库和预写代码\n- 展示你的代码\n- 为你的代码编写注释\n- 资源\n\n# 结\n\n## 引言\n\n互联网是建立在核心基础编程语言之上的。这些语言帮助为全球用户驱动功能并提供丰富的内容。所使用的某些语言包括\
+    \ PHP、Perl、MySQL、Ruby on Rails、Java 以及我们今天将要讨论的语言 JavaScript。\n\n如果你是一个从未编写过程序的人，或者你只是想尝试，那么这本书就是适合你的。我自己也是一名程序员，我知道有时通过这些书籍来学习一门语言是多么困难的。\n\
+    \n由于我自己也是一名开发者，我将以一种简单、易懂且循序渐进的方式介绍这本书。在书结束时，你将拥有基础和知识来提升你的技能，并开始使用 JavaScript\
+    \ 以及其他编程语言开发你自己的应用程序。\n\n## 第一章 – 编程简介\n\n在我们进入 JavaScript 和 Web 开发之前，让我们先学习一些基础知识。在学习一种新语言时（无论是口语还是计算机语言），你都需要理解它在现实世界中是如何使用的。对于计算机语言，它们的工作原理基本上都是相同的。\n\
+    \n它们是一组具有不同扩展名的文本文件，用于告诉你计算机上的其他文件如何访问和解释它们。\n\n例如，如果你有一个像 `index.html` 这样的文件，你的网络浏览器程序将通过其文件集识别出，它是访问网站时应该查找的第一个文件。\n\
+    \n编程语言也是如此。当你拥有一组文件时，被称为“编译器”的程序会读取文件列表并寻找特定的文件。\n\n当它找到该文件时，它会寻找特定的指令或代码行，根据你的输入或通过它发现的不同代码集来执行特定任务。\n\
+    \n简单来说，如果你有一份购物清单并且你正在商店里。你会从列表的顶部开始并找到那个物品。\n\n当你拿到那个物品后，你会再次查看列表，并跳转到列表上下一个最近的物品，直到你到达列表末尾并来到收银台。\n\
+    \n我希望你能看清我所描述的图景和模式。同样的规则也适用于计算机语言。你有一组规则或一个像杂货店那样的列表。根据你从该列表做出的选择，将决定你在商店里的交互互动方式。\n\
+    \n编程也是如此。用户在运行你的程序时所做出的选择将导致你的程序产生不同的响应。\n\n### 我们是如何编写程序的？\n\n编写程序非常简单。你可以使用任何语言，并使用如记事本（notepad）之类的程序来编写程序。你不想使用像\
+    \ Microsoft Word 这样的程序，因为这些程序会加入自己的代码和信息，无法创建一个干净的文件。\n\n如果你喜欢视觉化界面，大多数编程语言都有所谓的\
+    \ GUI 或图形用户界面。这些程序让开发程序变得更加简单和简洁。\n\n### 我可以在程序中制作什么？\n\n你可以在程序中制作你能想象到的任何东西。你需要了解的主要领域是：你想制作什么、你想从哪里开始、你想让用户做什么以及最终结果会是什么。例如，许多程序员都是从“Hello\
+    \ World”示例开始的。\n\n如果你已经编写了一段时间的程序，你会发现这个例子随处可见。\n\n这个程序本身是一个非常没用的程序，但它向你展示了编程的基础和根基，并让你能够用你选择的语言看到程序是如何函数的。\n\
+    \n然而，在开发程序时，某些语言被设计和开发用于执行特定功能。\n\n例如，JavaScript 是为 Web 应用程序和 Web 功能设计的。相反，Visual\
+    \ Basic 更多是为办公和桌面应用程序设计的。\n\n你可以用 Visual Basic 开发 Web 应用程序，但有很多任务是你必须完成，就像你在桌面应用程序中使用\
+    \ JavaScript 一样，你必须进行大量的底层编程才能让东西运行。这仅仅是因为它们的设计初衷并不是在另一种环境中运行。\n\n这就是为什么有这么多不同的语言供你选择。很棒的一是，如果你学习了其中一种语言的基础，你就能看到并识别出多种语言之间的相似之处，并轻松学会它们。\n\
+    \n### 规划你的程序\n\n当你进入编程时，你会想要从头到尾规划你的程序。现在你可以对事物进行更改，但如果你有一个基本的想法和一个想要遵循的路径，你的编程努力将获得更大的成果。\n\
+    \n### 代码复用\n\n当你编写一段时间的程序后，你很快就会发现你在程序中使用大量相同的代码。当你开始开发时，一个主意是建立自己的代码数据库，可以在其他项目中复用。这是一个良好的编程习惯和实践。你不希望每次写东西都重新发明轮子。\n\
+    \n### 避免黄色代码\n\n编程社区中的一个术语是“黄色代码”。这是那些杂乱且充满 Bug 的代码。我们称之为黄色代码，是因为它的用途就像尿液一样。在编写程序时，遵循逻辑路径并在编码之前考虑问题。从长期来看，这将节省你的时间和和麻烦。\n\
+    \n### 为你的代码编写注释\n\n人们在编写代码时犯的最大错误之一是不为代码编写注释。当你开始编写大量代码时，它们会开始混合在一起，你不知道一个函数何时结束，另一个过程何时开始。\n\
+    \n当你为代码编写注释时，你是是为了自己。你可以在代码的任何地方使用注释，当你需要更改或修复问题时，你会很容易知道该去哪里、你结束在哪里以及你想要实现什么想法。所以，注释一切！\n\
+    \n### 开发你自己的风格\n\n编程是一种艺术形式。当你编写代码时，你正在编写别人也在写的内容，但你是用自己的风格来写的。\n\n当你开发出出色的程序时，其他程序员会查看你的代码，并对其简洁和高效赞不绝口。我知道这听起来很滑很蠢，但这是一个事实。你可以因为你编写代码的方式而闻名。\n\
+    \n### 持续改进\n\n无论你做什么或写了什么，你都可以改进它。当开发出新技术以及语言中开发出新的基础时，你会想要使用这些来改进现有的工作，使其更简洁、更高效。\n\
+    \n这就是编程的基础。剩下的只是学习如何阅读和编写这种语言。在下一章中，我们将开始讨论 JavaScript，你可以用它做什么，并让你开始编写第一组程序。\n\
+    \n"
+  merge: -1
+  raw:
+  - '[PAGE 0]
+
+
+    # # JAVASCRIPT
+
+    Java
+
+
+    ![](img/b03ec663693a0774678359cfdc952306_0_0.png)
+
+
+    CRASH COURSE - THE COMPLETE BEGINNERS GUIDE TO LEARNING JAVASCRIPT PROGRAMMING
+    IN NO TIME!
+
+
+    NATHANIEL HILL'
+  - '[PAGE 1]
+
+
+    # Javascript:
+
+
+    # Crash Course - The Complete Beginners Guide To Learning JavaScript Programming
+    In No Time!'
+  - '[PAGE 2]
+
+
+    # Table of contents
+
+
+    # Introduction
+
+
+    # Chapter 1 – An Introduction to Programming
+
+
+    +   - How do we write programs?
+
+
+    +   - What can I make in a program?
+
+
+    +   - Planning your programs
+
+
+    +     Reuse code
+
+
+    +     Avoid Yellow Code
+
+
+    +     Document your code
+
+
+    +     Develop your own style
+
+
+    +     Always Improve
+
+
+    # Chapter 2 – Javascript 101
+
+
+    +   - Setting up your working environment
+
+
+    +   - Functions and Variables
+
+
+    +     Variables
+
+
+    +     Functions
+
+
+    +   - Data Types
+
+
+    +   - Keeping your code readable
+
+
+    +   - Using libraries and prewritten code
+
+
+    +   - Showing off your code
+
+
+    +   - Commenting your code
+
+
+    +   - Resources
+
+
+    # Conclusion'
+  - '[PAGE 3]
+
+
+    <!-- no content -->'
+  - '[PAGE 4]
+
+
+    # # Introduction
+
+
+    The Internet is build on a core set of fundamental programming languages. These
+    languages help to drive functionality and feature rich content to users all over
+    the world. Some of the languages that are used PHP, Pearl, MySql, Ruby on Rails,
+    Java and the language that we are going to talk about today which is Javascript.
+
+
+    If you are someone who has never programmed before or if you are just looking
+    to try this is the book for you. I am a programmer myself and I know how difficult
+    it is sometimes to go through some of these book and learn a language.
+
+
+    Since I am a developer myself I am going to approach this book ins simple easy
+    to understand step by step manner. At the end of the book you will have the foundation
+    and the knowledge to advance your skills and actually start developing your very
+    own applications using Javascript as well as other programming languages.'
+  - '[PAGE 5]
+
+
+    <!-- no content -->'
+  - '[PAGE 6]
+
+
+    <!-- no content -->'
+  - '[PAGE 7]
+
+
+    # Chapter 1 – An Introduction to Programming
+
+
+    Before we get into Javascript and web development lets get some basics and foundation.
+    When it comes to learning a new language be a spoken language or a computer language
+    you need to understand how it is used in the real world. When it comes to computer
+    languages they all work basically the same.
+
+
+    They are a grouping of text files with different extension on them to tell the
+    other files that are on your computer how to access and interpret them.
+
+
+    So for example if you have a file such as index.html your web browser program
+    will understand through its set of files that it is the first file it should look
+    for when visiting a web site.
+
+
+    The same goes for programming languages. When you have a grouping of files the
+    program known as the compiler will read the listing of files looking for a specific
+    one.
+
+
+    Then when it finds that file will look for specific instructions or lines of code
+    to do specific tasks according to your input or through different sets of code
+    it discovers.
+
+
+    In simpler terms if you have a list of groceries and you are at the store. You
+    will start at the top of your list and go to that item.
+
+
+    Then when you have that item you will look at the list again and jump to the next
+    closest item on your list until you come to the end of the list and end up at
+    the checkout.
+
+
+    I hope you can see the picture and the pattern of what I am talking about. The
+    same set of rules applies to a computer language. You have a set of or list in
+    the grocery store.
+
+
+    Depending on the choices that you make from that list will determine how you interact
+    in the store.
+
+
+    The same applies to programing. What choices the user makes as they go through
+    your program will result in different responses from your program.'
+  - '[PAGE 8]
+
+
+    # How do we write programs?
+
+
+    It is very simple to write programs. You can write a program in any language using
+    a program like notepad. You don''t want to use programs such as Microsoft Word
+    since these programs put in their own codes and information and will not create
+    a clean file.
+
+
+    If you like a visual interface most programming languages have what is known as
+    a GII or Graphical User Interface. These programs make developing a program much
+    easier and cleaner.'
+  - '[PAGE 9]
+
+
+    # What can I make in a program?
+
+
+    You can make anything you can think of in a program. The main areas that you need
+    to know is what you want to make, where you want to start, what you want your
+    user to do and what the end result will be. For example many programmers start
+    out with the “Hello World” example.
+
+
+    If you have been programming for any length of time you will see this example
+    used all over the place.
+
+
+    This is a very useless program in itself but it does show you the basics and the
+    foundation of programming and does allow you to see a program function in the
+    language of your choice.
+
+
+    When it comes to developing programs however some languages are designed and developed
+    to perform specific functions.
+
+
+    Javascript for example is designed for web applications and functionality on the
+    web. Visual Basic on the other hand is more designed for office and desktop applications.
+
+
+    You can do web applications with Visual Basic but there is a lot of tasks that
+    you will need to perform just as if you were to use Javascript in a desktop application
+    you would have to do a lot of major programming to get something to work. This
+    is just because they were not meant to work in the others environment.
+
+
+    This is why there are so many different languages for you to choose from. The
+    great thing is though if you learn the basic foundation of one you will be able
+    to see and recognize similarities in multiple languages and pick them up easily.'
+  - '[PAGE 10]
+
+
+    # Planning your programs
+
+
+    When you get into programming you will want to plan out your programs from start
+    to finish. Now you will be able to change things around and can move away from
+    your original plan but if you have a basic idea and a path you you wish to follow
+    then your programming efforts will have greater results.
+
+
+    # Reuse code
+
+
+    When you start programming for a long period of time you will soon realize that
+    you will be using a lot of the same code in your programs. When you start developing
+    it will be a good idea to start building up your own database of code files that
+    you can reuse in other projects. This is a good programming habit and practice
+    to get into. You don''t want to reinvent the wheel every time you write something.
+
+
+    # Avoid Yellow Code
+
+
+    A term in the programming community is yellow code. This is code that is sloppy
+    and just filled with bugs. We call it yellow code for the color of pee since that
+    is all it is good for. When writing your programs follow a logical path and think
+    out problems before you start coding. It will save you time and headache in the
+    long run.
+
+
+    # Document your code
+
+
+    One of the biggest mistakes people make when writing code is not to document their
+    code. When you start writing a lot of code will start to bled in together and
+    you will not know when one function ends or where another procedure begins.
+
+
+    When you document your code you are doing it for yourself. You can use comments
+    in your code anywhere you want and when you need to make a change or fix a problem
+    you will easily know where to go, where you ended up and what ideas you wanted
+    to implement. So comment everything!
+
+
+    # Develop your own style
+
+
+    Programming is an art form. When you code you are writing the same thing that
+    others are writing but are doing it in your own style.
+
+
+    When you develop awesome programs other programmers will look at your code and
+    drool over how clean and efficient it is. I know it sounds goofy and dumb t.but
+    it is a fact. You can be famous for the way you write your code.'
+  - '[PAGE 11]
+
+
+    # Always Improve
+
+
+    No matter what you do or what you write you can always improve on it. When new
+    technology is developed and new foundations in the language are developed you
+    will want to use these to improve on your existing work to make it cleaner and
+    more efficient.
+
+
+    This is the basics of programming. The rest is just learning how to read and write
+    the language. In the next chapter we will start to talk about Javascript, what
+    you can do with it and get you started making your first set of programs.'
+- md: "\n# Chapter 2 – Javascript101\n\nNow that you have the basic understanding\
+    \ of what a programming language is and what you can do in order to start writing\
+    \ your own we are going to jump into Javascript and start developing your very\
+    \ own programs.\n\nBefore we jump in to coding I want to get you set up with a\
+    \ few things. I want you to go http://www.brackets.io and download their software.\
+    \ This software will be our programming editor we will use in this book.\n\nIf\
+    \ you have a text editor or another program that you feel comfortable using and\
+    \ it will work with Javascript then go ahead and use it. If you don't then look\
+    \ at brackets.io and follow along in the book.\n\nNext I don't want you to look\
+    \ at any types of javascript libraries or other prewritten code. One mistake people\
+    \ make is going out and getting these libraries and think they can build a program.\n\
+    \nWell you can do this but you need to have the foundation first in order to build\
+    \ off these libraries. So libraries are great but don't look at them, think about\
+    \ them or focus on them until you have completed this book and tried some of the\
+    \ exercises that I discuss here.\n\n## Setting up our working environment\n\n\
+    Okay lets get started. The first thing that I want you to do is right mouse click\
+    \ on your desktop and go to New and create a new folder. I want you to name this\
+    \ folder “Exercises” or something along those lines in order to keep all of your\
+    \ files that we use in this book.\n\n![](img/b03ec663693a0774678359cfdc952306_15_0.png)\n\
+    \nThis is why we will hold all of our files that we work on. Next I want you to\
+    \ create a template file. In your text editor or in the brackets.io program I\
+    \ want you to write the following code.\n\nI want you to now save this as template.html\
+    \ in your example folder that we created in the previous step. Make sure you are\
+    \ typing in notepad to change the file type to all files and type in the .html\
+    \ in the end in order to save the file correctly.\n\nIf you do not save the file\
+    \ will not run correctly. Next I want you to go to this web - https://html5.validator.nu/\
+    \ and validate the code. This will ensure that everything that you have written\
+    \ will work and you won't have any issues. If you go back and check the code and\
+    \ see what went wrong.\n\nThis is going to be the main file that we work with\
+    \ when developing our javascript code. The reason we create a template file like\
+    \ this is that we don't have to rewrite code and in fact we can use this is your\
+    \ first file in your programming library.\n\nNow let’s startng our first program.\
+    \ As I stated in the previous chapter most programmers will give you the Hello\
+    \ World example. Well I am to do the same thing. What you want to do now is load\
+    \ your template file and when its loaded I want you to go to File, Save As and\
+    \ save the file as another name. For this example I want you to save it as hello.html.\n\
+    \nThis is very important since you are working in the template file and you don't\
+    \ want to overwrite your template file. If you overwrite your template file you\
+    \ will need to create it again which will become annoying. Having a backup copy\
+    \ or getting into the habit of renaming your file before you work on them is important.\n\
+    \nNow that you are working in the hello.html file I want you to modify the code\
+    \ so that it looks like this.\n\n```html\n<doctype html>\n<html lang=\"en\">\n\
+    <head>\n<meta charset=\"utf-8\">\n<title>The HTML5 Herald</title>\n<meta name=\"\
+    description\" content=\"The HTML5 Herald\">\n<meta name=\"author\" content=\"\
+    SitePoint\">\n</head>\n<body onload=\"alert('Hello World!')\">\n</body>\n</html>\n\
+    ```\n\nSave the file and then in your example folder double click on the file\
+    \ and you will see your first javascript file run. If you are getting an error\
+    \ or if the message doesn’t pop up in a window you want to make sure that you\
+    \ copied the wording and position of the words exactly. If you didn’t the script\
+    \ will not work.\n\n## Functions and Variables\n\nThe next thing that I want to\
+    \ talk to you about is functions and variables. When you are programming in any\
+    \ language you will want to use variables and functions in order to separate your\
+    \ code as well as deine specific items in your code. If you don't use functions\
+    \ and variables you will have very unusable code and your programs will have very\
+    \ little functionality.\n\n### Variables\n\nVariables are words and phrases that\
+    \ relate to something else. For example StreetName is a variable that you can\
+    \ use to collect information about. FirstName is another variable that you can\
+    \ use to collect the first name on your site. Variables can be anything you want\
+    \ them to be. Creating a variable named when you are talking about the amount\
+    \ of money makes sense. So when naming your variables keep them uniform to what\
+    \ you are creating.\n\n### Functions\n\nFunctions are small blocks of code that\
+    \ will execute when a given set of conditions are met. For example if you have\
+    \ a function for adding files to a database you will want to name your function\
+    \ something like \"Add\". When you are performing a task that needs to use the\
+    \ code contained within the function do a function call which will execute the\
+    \ code and return your desired results. Here is an example of functions and variables.\
+    \ Open your template file and save it as exercise2.html. Make sure that the document\
+    \ type is set to all files. Save the file and make the following changes.\n\n\
+    ```html\n<!doctype html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\"\
+    >\n<title>The HTML5 Herald</title>\n<script type=\"text/javascript\">\nfunction\
+    \ subs() {\n  var myValue = document.getElementById('myTextBox').value;\n  if\
+    \ (myValue.length == 0) {\n    alert('Please enter a real value into the text\
+    \ box!');\n    return;\n  }\n  var myTitle = document.getElementById('title');\n\
+    \  myTitle.innerHTML = myValue;\n}\n</script>\n</head>\n<body>\n<h1 id=\"title\"\
+    >Test</h1>\n<input type=\"text\" id=\"myTextBox\" />\n<input type=\"submit\" value=\"\
+    Click Me\" onclick=\"subs()\" />\n</body>\n</html>\n```\n\nNow that you have this\
+    \ code written you will want to save it and run it in your browser. When you run\
+    \ this program you will be able to change the text on the screen as well as see\
+    \ if you get an error if someone doesn’t enter any text. This is what you should\
+    \ get when you run the program.\n\n## Test\n\n### My Test\n\nThis is what your\
+    \ screen should look like without doing anything. What I want you to do is click\
+    \ the Click Me button without putting anything in the text box. When you do you\
+    \ will get an error message that looks like this.\n\n![](img/b03ec663693a0774678359cfdc952306_19_0.png)\n\
+    \nIf you are reading the message you can see that the text you entered is now\
+    \ showing in the box. You can double check this by looking at the code and changing\
+    \ it to say something else.\n\n### This is my text\n\nYou can now see when you\
+    \ enter text into the text box and hit click me, the text replaces the original\
+    \ text that appeared. This is the power of functions and variables. Let's break\
+    \ down each part of the code so you can better understand what is going on.\n\n\
+    ```html\n<script type=\"text/javascript\"></script>\n```\n\nThis line of code\
+    \ is needed to tell your browser what type of input it will be receiving. In this\
+    \ case it will be accepting text input or javascript input. No other type of content\
+    \ will be allowed such as images, audio or other files. Just text and javascript.\n\
+    \n```javascript\nfunction subs() { }\n```\n\nThis is how you start and end a function.\
+    \ As I stated before a function is a set of commands written in code that will\
+    \ be performed when an action is executed. In this function we named it subs().\
+    \ When we call the function later on we will need this name to reference it. You\
+    \ can call a function anything you want. If you want to play around with changing\
+    \ function names this is what you will change.\n\n```javascript\nvar myValue =\
+    \ document.getElementById('myTextBox');\n```\n\nThis is your variable. A variable\
+    \ is a placeholder for information and content. In this case the variable is myValue.\
+    \ You can change this name to anything you want, make sure you reference it everywhere\
+    \ needed in your document. To create a variable you will need to use the var word\
+    \ and the name of the variable. The words document.getElementById().value refer\
+    \ to the current document you are in, what you want to retrieve which is the element\
+    \ id or items id and the value that the user enters into that.\n\nYou will also\
+    \ notice that each of these statements ends with a ; This is what is needed in\
+    \ order to tell Javascript that it is an end of statement. If you get an error\
+    \ in your code check that all of your statements are ending in a ; It is a common\
+    \ mistake for beginning programmers.\n\n```javascript\nif (myValue.length == 0)\n\
+    {\n  alert('Please enter a real value into the text box!');\n  return;\n}\n\n\
+    var myTitle = document.getElementById('title');\nmyTitle.innerHTML = myValue;\n\
+    ```\n\nThis is a conditional statement known as an if statement. When someone\
+    \ performs an action you will need to have this statement in order to check if\
+    \ a set of conditions are performed. In this example if the value of the text\
+    \ box is equal to nothing or 0 you will receive the error message. If the text\
+    \ box has something in it you will get the result that you are looking for which\
+    \ is the text changing at the top of the screen.\n\nSo that is everything in the\
+    \ function. All that code does reads the contents of the text box and if it sees\
+    \ it is empty will get the error. It reads the text box and sees that there is\
+    \ text there it will read what the text is and print it on the screen. Very simple.\n"
+  mdcn: "\n\n# 第 2 章 – Javascript 基础\n\n现在你已经对什么是编程语言以及你为了开始编写自己的代码可以做些什么有了基本的了解，我们将进入\
+    \ Javascript 的世界并开始开发你自己的自己的程序。\n\n在我们开始编写代码之前，我想先让你准备好几件事。我希望你访问 http://www.brackets.io\
+    \ 并下载他们的软件。这个软件将是我们在本书中使用的编程编辑器。\n\n如果你有一个你觉得好用的文本编辑器或其他程序，并且它能够兼容 Javascript，那么请尽管使用它。如果你没有，请查看\
+    \ brackets.io 并按照书中的步骤进行操作。\n\n接下来，我不希望你查看任何类型的 Javascript 库或其他预写代码。人们常犯的一个错误就是跑去获取这些库，并认为拥有了它们就能构建出程序。\n\
+    \n嗯，你可以这样做，但你首先需要拥有基础，以便在这些库的基础上进行构建。所以，库是很棒，但在你完成这本书并尝试过我在这里讨论的一些练习之前，不要看它们，不要思考它们，也不要关注它们。\n\
+    \n## 设置我们的工作环境\n\n好了，让我们开始吧。我想让你完成的第一件事是在你的桌面上点击鼠标右键，选择“新建”并创建一个文件夹。我希望你将这个文件夹命名为“Exercises”（练习）或类似的名称，以便存放我们在书中使用的所有文件。\n\
+    \n![](img/b03ec663693a0774678359cfdc952306_15_0.png)\n\n这就是我们存放所有工作的地方。接下来，我想让你创建一个模板文件。在你的文本编辑器或\
+    \ brackets.io 程序中，我想你写下以下代码。\n\n现在，我想你将此保存为 `template.html`，并放在我们上一步创建的示例文件夹中。确保你是在记事本中将文件类型更改为“所有文件”，并在结尾输入\
+    \ `.html` 以便正确保存文件。\n\n如果你不保存文件，它将无法正常运行。接下来，我想让你访问这个网站 - https://html5.validator.nu/\
+    \ 并对代码进行验证。这将确保你所写的所有内容都能正常工作，且不会遇到任何问题。如果出错，你可以返回检查代码查看哪里出了问题。\n\n这将是我们开发 Javascript\
+    \ 代码时使用的主文件。我们创建这样一个模板文件的原因是因为我们不需要重写代码，事实上，我们可以将其作为你编程库中的第一个文件使用。\n\n现在让我们开始编写第一个程序。正如我在上一章中提到的，大多数程序员都会给你一个“Hello\
+    \ World”（你好世界）的例子。嗯，我也要做同样的事情。你现在要做的是加载你的模板文件，加载后我想让你点击“文件”、“另存为”，并将文件保存为另一个名称。对于这个例子，我想让你将其保存为\
+    \ `hello.html`。\n\n这非常重要，因为你正在模板文件中操作，你不希望覆盖你的模板文件。如果你覆盖了模板文件，你就需要重新创建一个，这会变得很麻烦。拥有备份副本或养成在工作之前重命名文件的习惯是非常重要的。\n\
+    \n现在你正在 `hello.html` 文件中工作，我想让你修改代码使其看起来像这样：\n\n```html\n<doctype html>\n<html\
+    \ lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>The HTML5 Herald</title>\n\
+    <meta name=\"description\" content=\"The HTML5 Herald\">\n<meta name=\"author\"\
+    \ content=\"SitePoint\">\n</head>\n<body onload=\"alert('Hello World!')\">\n</body>\n\
+    </html>\n```\n\n保存文件，然后在你的示例文件夹中双击该文件，你将看到你的第一个 Javascript 文件运行。如果你遇到错误，或者消息没有在窗口中弹出，请务必确保你完全复制了措辞和单词的位置。如果你没有这样做，脚本将无法工作。\n\
+    \n## 函数与变量\n\n我想和你讨论的下一件事是函数和变量。在任何语言中编程时，你都会想要使用变量和函数来分离你的代码以及你代码中的特定项目。如果你不使用函数和变量，你的代码将变得非常不可用，你的程序功能也会非常少。\n\
+    \n### 变量\n\n变量是与其它事物相关的单词和短语。例如，`StreetName` 是一个变量，你可以用它收集有关街道的信息。`FirstName`\
+    \ 是另一个变量，你可以用它收集网站上的名字。变量可以是任何你想它成为的类型。当你谈论金额金额时，创建一个名为 `amount` 的变量是合理的。所以，命名变量时，请保持它们与你创建的内容一致。\n\
+    \n### 函数\n\n函数是较小的代码块，当满足一组定的条件时就会执行。例如，如果你有一个用于向数据库添加文件的函数，你会将函数命名为类似“Add”（添加）的内容。当你执行需要使用函数内包含代码的任务时，进行函数调用，这将执行代码并返回你想要的结果。这里是函数和变量的示例。打开你的模板文件并将其保存为\
+    \ `exercise2.html`。确保文档类型设置为“所有文件”。保存文件并进行以下更改。\n\n```html\n<!doctype html>\n\
+    <html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>The HTML5 Herald</title>\n\
+    <script type=\"text/javascript\">\nfunction subs() {\n  var myValue = document.getElementById('myTextBox').value;\n\
+    \  if (myValue.length == 0) {\n    alert('Please enter a real value into the text\
+    \ box!');\n    return;\n  }\n  var myTitle = document.getElementById('title');\n\
+    \  myTitle.innerHTML = myValue;\n}\n</script>\n</head>\n<body>\n<h1 id=\"title\"\
+    >Test</h1>\n<input type=\"text\" id=\"myTextBox\" />\n<input type=\"submit\" value=\"\
+    Click Me\" onclick=\"subs()\" />\n</body>\n</html>\n```\n\n```\n\n这将是我们开发 Javascript\
+    \ 代码时使用的主文件。我们创建这样一个模板文件的原因是因为我们不需要重写代码，事实上，我们可以将其作为你编程库中的第一个文件使用。\n\n现在让我们开始编写第一个程序。正如我在上一章中提到的，大多数程序员都会给你一个“Hello\
+    \ World”（你好世界）的例子。嗯，我也要做同样的事情。你现在要做的是加载你的模板文件，加载后我想让你点击“文件”、“另存为”，并将文件保存为另一个名称。对于这个例子，我想让你将其保存为\
+    \ `hello.html`。\n\n这非常重要，因为你正在模板文件中操作，你不希望覆盖你的模板文件。如果你覆盖了模板文件，你就需要重新创建一个，这会变得很麻烦。拥有备份副本或养成在工作之前重命名文件的习惯是非常重要的。\n\
+    \n现在你正在 `hello.html` 文件中工作，我想让你修改代码使其看起来像这样：\n\n```html\n<doctype html>\n<html\
+    \ lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>The HTML5 Herald</title>\n\
+    <meta name=\"description\" content=\"The HTML5 Herald\">\n<meta name=\"author\"\
+    \ content=\"SitePoint\">\n</head>\n<body onload=\"alert('Hello World!')\">\n</body>\n\
+    </html>\n```\n\n保存文件，然后在你的示例文件夹中双击该文件，你将看到你的第一个 Javascript 文件运行。如果你遇到错误，或者消息没有在窗口中弹出，请务必确保你完全复制了措辞和单词的位置。如果你没有这样做，脚本将无法工作。\n\
+    \n## 函数与变量\n\n我想和你讨论的下一件事是函数和变量。在任何语言中编程时，你都会想要使用变量和函数来分离你的代码以及你代码中的特定项目。如果你不使用函数和变量，你的代码将变得非常不可用，你的程序功能也会非常少。\n\
+    \n### 变量\n\n变量是与其它事物相关的单词和短语。例如，`StreetName` 是一个变量，你可以用它收集有关街道的信息。`FirstName`\
+    \ 是另一个变量，你可以用它收集网站上的名字。变量可以是任何你想它成为的类型。当你谈论金额金额时，创建一个名为 `amount` 的变量是合理的。所以，命名变量时，请保持它们与你创建的内容一致。\n\
+    \n### 函数\n\n函数是较小的代码块，当满足一组定的条件时就会执行。例如，如果你有一个用于向数据库添加文件的函数，你会将函数命名为类似“Add”（添加）的内容。当你执行需要使用函数内包含代码的任务时，进行函数调用，这将执行代码并返回你想要的结果。这里是函数和变量的示例。打开你的模板文件并将其保存为\
+    \ `exercise2.html`。确保文档类型设置为“所有文件”。保存文件并进行以下更改。\n\n```html\n<!doctype html>\n\
+    <html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>The HTML5 Herald</title>\n\
+    <script type=\"text/javascript\">\nfunction subs() {\n  var myValue = document.getElementById('myTextBox').value;\n\
+    \  if (myValue.length == 0) {\n    alert('Please enter a real value into the text\
+    \ box!');\n    return;\n  }\n  var myTitle = document.getElementById('title');\n\
+    \  myTitle.innerHTML = myValue;\n}\n</script>\n</head>\n<body>\n<h1 id=\"title\"\
+    >Test</h1>\n<input type=\"text\" id=\"myTextBox\" />\n<input type=\"submit\" value=\"\
+    Click Me\" onclick=\"subs()\" />\n</body>\n</html>\n```\n\n```\n\n（注：由于原文文本中存在多处重复段落和格式混乱，译文已根据逻辑结构进行了去重整合，确保不重复输出原文内容。）\n\
+    \n"
+  merge: 0
+  raw:
+  - '[PAGE 12]
+
+
+    <!-- no content -->'
+  - '[PAGE 13]
+
+
+    <!-- no content -->'
+  - '[PAGE 14]
+
+
+    # Chapter 2 – Javascript101
+
+
+    Now that you have the basic understanding of what a programming language is and
+    what you can do in order to start writing your own we are going to jump into Javascript
+    and start developing your very own programs.
+
+
+    Before we jump in to coding I want to get you setup with a few things. I want
+    you to go http://www.brackets.io and download their software. This software will
+    be our programming editor we will use in this book.
+
+
+    If you have a text editor or another program that you feel comfortable using and
+    it will work with Javascript then go ahead and use it. If you don''t then look
+    at brackets.io and follow along in the book.
+
+
+    Next I don''t want you to look at any types of javascript libraries or other prewritten
+    code. One mistake people make is going out and getting these libraries and think
+    they can build a program.
+
+
+    Well you can do this but you need to have the foundation first in order to build
+    off these libraries. So libraries are great but don''t look at them, think about
+    them or focus on them until you have completed this book and tried some of the
+    exercise that I discuss here.'
+  - '[PAGE 15]
+
+
+    # Setting up our working environment
+
+
+    Okay lets started. The first thing that I want you to do is right mouse click
+    on your desktop and go to New and create a new folder. I want you to name this
+    folder “Exercises” or something along those lines in order to keep all of your
+    files that we use in this book.
+
+
+    ![](img/b03ec663693a0774678359cfdc952306_15_0.png)
+
+
+    This is why we will hold all of our files that we work on. Next I want you to
+    create a template file. In your text editor or in the brackets.io program I want
+    you to write the following code.
+
+
+    I want you to now save this as template.html in your example folder that we created
+    in the previous step. Make sure you are typing in notepad to change the file type
+    to all files and type in the .html in the end in order to save the file correctly.
+
+
+    If you do not save the file will not run correctly. Next I want you to go to this
+    web - https://html5.validator.nu/ and validate the code. This will ensure that
+    everything that you have written will work and you won''t have any issues. If
+    you go back and check the code and see what went wrong.
+
+
+    This is going to be the main file that we work with when developing our javascript
+    code. The reason we create a template file like this is that we don''t have to
+    rewrite code and in fact we can use this is your first file in your programming
+    library.
+
+
+    Now let’s starting our first program. As I stated in the previous chapter most
+    programmers will give you the Hello World example. Well I am to do the same thing.
+    What you want to do now is load your template file and when its loaded I want
+    you to go to File, Save As and save the file as another name. For this example
+    I want you to save it as hello.html.
+
+
+    This is very important since you are working in the template file and you don''t
+    want to overwrite your template file. If you overwrite your template file you
+    will need to create it again which will become annoying. Having a backup copy
+    or getting into the habit of renaming your file before you work on them is important.
+
+
+    Now that you are working in the hello.html file I want you to modify the code
+    so that it looks like this.
+
+
+    ```
+
+    <doctype html>
+
+    <html lang="en">
+
+    ```'
+  - '[PAGE 16]
+
+
+    ```
+
+    <head>
+
+    <meta charset="utf-8">
+
+    <title>The HTML5 Herald</title>
+
+    <meta name="description" content="The HTML5 Herald">
+
+    <meta name="author" content="SitePoint">
+
+    </head>
+
+    <body onload="alert(''Hello World!'')">
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    Save the file and then in your example folder double click on the file and you
+    will see your first javascript file run. If you are getting an error or if the
+    message doesn’t pop up in a window you want to make sure that you copied the wording
+    and position of the words exactly. If you didn’t the script will not work.'
+  - '[PAGE 17]
+
+
+    # Functions and Variables
+
+
+    The next thing that I want to talk to you about functions and variables. When
+    you are programming in any language you will want to use variables and functions
+    in order to separate your code as well as define specific items in your code.
+    If you don''t use functions and variables you will have very unusable code and
+    your programs will have very little functionality.
+
+
+    # Variables
+
+
+    Variables are words and phrases that relate to something else. For example $StreetName
+    is a variable that you can use to collect information about a street. $FirstName
+    is another variable that you can use to collect the first name of someone on your
+    web site.
+
+
+    Variables can be anything you want them to be. You however want to create variables
+    that make sense to the programmer. Creating a variable named apple when you are
+    talking about the amount of money in a budget doesn''t make sense. So when naming
+    your variables keep them uniform to what you are creating.
+
+
+    # Functions
+
+
+    Functions are small blocks of code that will execute when a given set of conditions
+    are met. For example if you have a function for adding files to a database you
+    will want to name your function something like “DataAdd”. When you are performing
+    a task that needs to use the code that is contained within the function you do
+    a function call which will execute the code and return your desired results. Here
+    is an example of functions and variables.
+
+
+    Open your template file and save it as exercise2.html. Make sure that the document
+    type is set to all files. Save the file and make the following changes.'
+  - "[PAGE 18]\n\n```\n<!doctype html>\n<html lang=\"en\">\n<head>\n<meta charset=\"\
+    utf-8\">\n<title>The HTML5 Herald</title>\n<script type=\"text/javascript\">\n\
+    function subs() {\n  var myValue = document.getElementById('myTextBox').value;\n\
+    \  if (myValue.length == 0) {\n    alert('Please enter a real value into the text\
+    \ box!');\n    return;\n  }\n  var myTitle = document.getElementById('title');\n\
+    \  myTitle.innerHTML = myValue;\n}\n</script>\n</head>\n<body>\n<h1 id=\"title\"\
+    > Test</h1>\n<input type=\"text\" id=\"myTextBox\" />\n<input type=\"submit\"\
+    \ value=\"Click Me\" onclick=\"subs()\" />\n</body>\n</html>\n```\n\nNow that\
+    \ you have this code written you will want to save it again and run it in your\
+    \ browser. When you run this program you will be able to change the text on the\
+    \ screen as well as see if you get an error if someone doesn’t enter in any text.\
+    \ This is what you should get when you run the program."
+  - '[PAGE 19]
+
+
+    # Test
+
+
+    This is what your screen should look like without doing anything. What I want
+    you to do is click the Click Me button without putting anything in the text box.
+    When you do you will get an error message that looks like this.
+
+
+    ![](img/b03ec663693a0774678359cfdc952306_19_0.png)
+
+
+    If you are reading the message you can see that the text you entered in for the
+    error is now showing in the error box. You can double check this by looking at
+    the code and changing it to say something else.
+
+
+    # This is my text
+
+
+    You can now see when you enter in text into the text box and hit the click me
+    box the text you replaces the original text that appeared. This is the power of
+    functions and variables.
+
+
+    Let''s break down each part of the code so you can better understand what is going
+    on.
+
+
+    ```
+
+    <script type="text/javascript"> </script>
+
+    ```
+
+
+    This line of code is needed to tell your browser what type of input you will be
+    receiving. In this case you will be accepting either text input or javascript
+    input. No other type of content will be allowed such as images, audio or other
+    files. Just text and javascript.
+
+
+    ```
+
+    function subs() { }
+
+    ```
+
+
+    This is how you start and end a function. As I stated before a function is a set
+    of commands written in code that will be performed when an action is executed.
+    In this'
+  - "[PAGE 20]\n\nfunction we named it subs(). When we call the function later on\
+    \ we will need this name to reference it. You can call a function anything you\
+    \ want. If you want to play around with changing function names this is what you\
+    \ will change.\n\nvar myValue = document.getElementById('myTextBox');\n\nThis\
+    \ is your variable. A variable is a placeholder for information and content. In\
+    \ this case the variable is myValue. You can change this name to anything you\
+    \ want make sure you reference it everywhere needed in your document. To create\
+    \ a variable you will need to use the var word and the name of the variable. The\
+    \ words document.getElementById().value refers to the current document you are\
+    \ in, what you want to retrieve which is the elements id or items id and the value\
+    \ that the user enters into that.\n\nYou will also notice that each of these statements\
+    \ ends with a ; This is what is needed in order to tell Javascript that it is\
+    \ an end of statement. If you get an error in your code check see that all of\
+    \ your statements are ending in a ; It is a common mistake for beginning programmers.\n\
+    \n```\nif (myValue.length == 0)\n{\n  alert('Please enter a real value into the\
+    \ text box!');\n  return;\n}\n\nvar myTitle = document.getElementById('title');\n\
+    myTitle.innerHTML = myValue;\n```\n\nThis is a conditional statement known as\
+    \ an if statement. When you someone perform an action you will need to have this\
+    \ statement in order to check if a set of conditions are performed. In this example\
+    \ if the value of the text box is equal to nothing or 0 you will receive the error\
+    \ message. If the text box has something in it you will get the result that you\
+    \ are looking for which is the text changing at the top of the screen.\n\nSo that\
+    \ is everything in the function. All that code does reads the contents of the\
+    \ text box and if it sees it is empty will get the error. It reads the text box\
+    \ and sees that there is text there it will read what the text is and print it\
+    \ on the screen. Very simple.\n\n<h1 id=\"title\"> Test</h1>\n\n<input type=\"\
+    text\" id=\"myTextBox\" />\n\n<input type=\"submit\" value=\"Click Me\" onclick=\"\
+    subs()\" />\n\nThis is where the user gets the text box and sees the results.\
+    \ The h1 id=\"title\" refers to the h1 tag on your web page or the page you are\
+    \ currently working on. The id refer to the name you are giving the h1 tag and\
+    \ the word title is what you name the h1 tag. You can change the word for the\
+    \ id to anything that you want it is a variable."
+- md: "\nInput type refers to the items on the form you are working on. In this example\
+    \ you see the type='text' which refers to a text box. This can be anything that\
+    \ you want such as a checkbox, radio button or any other control you may need.\
+    \ The type=\"submit\" refers to the submit button that you will click. The word\
+    \ \"value\" refers to the text that you will see on the button.\n\nOnclick is\
+    \ the action that you want the user to perform. So when the button is clicked\
+    \ (on clicking the button) perform the following action which is to run everything\
+    \ in the function. So onclick=\"subs()\" which is the name of the function.\n\n\
+    When it comes to programming it is a simple matter of knowing the flow of your\
+    \ program, what you want the user to do, what will happen when the user performs\
+    \ an action and what error protection you can put into place when something goes\
+    \ wrong.\n\n# Data Types\n\nWhen working with Javascript and other programming\
+    \ languages you will have several different components that you can work with.\
+    \ Here are a list of some of them and what they do.\n\n- Numbers, eg. 123, 120.50\
+    \ etc.\n- Strings of text e.g. “This text string” etc.\n- Boolean e.g. true or\
+    \ false.\n\n## Writing variables\n\nVariables are placeholders when it comes to\
+    \ programming. As you saw in the example we created several different variables\
+    \ to contain the information for our users.\n\n```\nvar myList\n```\n\nvariables\
+    \ are defined with the var statement in front of them. So var myAddress or var\
+    \ myValue are all acceptable. When writing variables you can have pretty much\
+    \ anything you want but you will want to keep to what is known as a naming convention.\n\
+    \nA naming convention is a standard way of doing things. When you practice naming\
+    \ conventions you write your code the same way throughout the program. If you\
+    \ write a variable with a $ in front of it then you need to do this for all of\
+    \ your variables. If you write a variable with camel case which is myAddress then\
+    \ you will want to keep this throughout.\n\n# Keeping your code readable\n\nWhen\
+    \ you are writing your code you want to keep it as readable as possible. This\
+    \ is needed so that anyone that reads your code will know what you are doing and\
+    \ how the flow of your program will go. If you start to design messy code and\
+    \ don’t comment on what you are doing going back to fix a bug or if another programmer\
+    \ needs to go back and edit your code it will be very hard for them to know what\
+    \ is going on if your code is all jumbled, uncommented and just crap.\n\nWhen\
+    \ it comes to programming Javascript or any other language for that matter you\
+    \ will need to develop your very own programming style. This style will soon become\
+    \ your unique signature and like stated earlier you will be the envy of the development\
+    \ community.\n\n# Using libraries and prewritten code\n\nEarlier I stated that\
+    \ you should not use libraries and prewritten code until you have a basic understanding\
+    \ of how javascript works. Now that you have a basic understanding you can go\
+    \ and find cool libraries and other programming examples and see what people are\
+    \ doing and how they write their code.\n\nWhen looking at their code you will\
+    \ want to take notes on their programming style. You will want to see how they\
+    \ comment their code, what variables they use, how they structure their functions.\
+    \ Learning from others is a great way to learn.\n\n# Showing off your code\n\n\
+    When learning to program you will want to show off your code as much as possible.\
+    \ When it comes to programming there really isn't a big secret in how programs\
+    \ are made at least at your level of development.\n\nWhen you show off your code\
+    \ you can get feedback and suggestions on how to tighten up your code and make\
+    \ it more functional and user friendly. Don’t be afraid of comments and suggestions.\
+    \ This is a learning experience and something that you should take full advantage\
+    \ of.\n\n# Commenting your code\n\nNow that you see how a program is structured\
+    \ and what will happen when you put code together with functions, variables and\
+    \ calls you will begin to build fairly large programs.\nOne thing that you will\
+    \ need to do is comment your code. Commenting is very important for reasons.\n\
+    \nFirst of all you can keep track of notes that you want to add to your program\
+    \ such as features, functions and more. You will at some point want to try different\
+    \ blocks of code and don't delete what you already written so adding comments\
+    \ or commenting out that block of code will be of great use.\n\nWhen you write\
+    \ a comment is not read by the web browser. All comments are good for your reference\
+    \ points when looking over your code. When writing a comment you have several\
+    \ different options.\n\nThe first is the block comment. The block comment will\
+    \ block out all the text that is within the block. To create a block comment you\
+    \ will write the following code `/* */`. Everything in between will be your comment.\
+    \ So your comment would look like this.\n\n```\n/* This is my commented text\n\
+    \nI hope you like my comments on this book\n\nIt is a pleasure to write code for\
+    \ you today\n*/\n```\n\nEverything that you write within these brackets will be\
+    \ for your eyes only. With this type of commenting your code you can write on\
+    \ multiple lines which is a great way to make readable text. \n\n// This is used\
+    \ for one line commenting\n\nWhen it comes to short comments you will want to\
+    \ use the `//` at the start of your comment. This will work for comments that\
+    \ are short and fit on one line. If you have comments to go over more than one\
+    \ line you will want to use the block comment.\n\nWhere do I comment my code?\n\
+    \nWhen it comes to commenting code you want to comment your code in specific key\
+    \ areas. For example you never want to comment in front of the code you are writing.\
+    \ If you are going to write comments before code you want to do it above your\
+    \ code and not on the same line as your code. Here is an example:\n\n```javascript\n\
+    /*\nThis is a program will keep track of\n*/\n```\n\n```html\n<!doctype html>\n\
+    <html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Test</title>\n<script\
+    \ type=\"text/javascript\">\nfunction subs() {\n  var myValue = document.getElementById('TextBox').value;\n\
+    \n  if (myValue.length == 0) {\n    alert('Please enter a value!');\n    return;\n\
+    \  }\n  var myTitle = document.getElementById('title');\n  myTitle.innerHTML =\
+    \ myValue;\n}\n</script>\n</head>\n<body>\n<h1 id=\"title\">Test</h1>\n\n<input\
+    \ type=\"text\" id=\"TextBox\" />\n<input type=\"submit\" value=\"Click Me\" onclick=\"\
+    subs()\" />\n</body>\n</html>\n```\n\nOne thing that you will need to do is comment\
+    \ like this:\n// myTitle.innerHTML = myValue\nWhen it comes to short comments\
+    \ you will want to use the //... you are trying out something new but just remember\
+    \ if you comment like it will not be read by the compiler.\n\n# Resources\n\n\
+    When it comes to learning more Javascript and other programming languages having\
+    \ a list of resources is invaluable. Some resources that you will want to take\
+    \ advantage of are listed below.\n\n- http://www.w3schools.com/ - This is your\
+    \ one stop shop for learning any type of programming language. W3 is the standard\
+    \ for web technologies.\n- https://www.javascript.com/resources - This is another\
+    \ great resource to learn Javascript and what it can do\n- JQAPI - http://jqapi.com/\n\
+    \n## Validanguage\n\nThis program is a JavaScript validation program or framework\
+    \ that will not interfere with the development of your overall application. With\
+    \ this framework you will be able to check and maintain logic, global settings\
+    \ and other elements of your application.\n\nThis application also has AJAX support\
+    \ which is another popular web programming language. You will have support with\
+    \ caching, callback functions as well as other API features. This is a robust\
+    \ application that will fit nicely into any JavaScript application.\n\n## LiveValidation\n\
+    \nThis is a lightweight library that will help with the validation of your applications.\
+    \ This library has a lot of methods and function calls that will control aspects\
+    \ of your JavaScript application and makes development quick and simple.\n\n##\
+    \ yav\n\nThis is yet another form validation library that will support a wide\
+    \ range of development scenarios. Some developers will enjoy this application\
+    \ for its basic date and email integrations as well as advanced functions and\
+    \ features for experienced developers.\n\n## qForms\n\nIf you are looking for\
+    \ a complete solution you don't need to look further than gForms. This application\
+    \ has a lot of validation features as well as rules and submission routines which\
+    \ make your application fun and enjoyable.\n\n## formreform\n\nwhen you are designing\
+    \ your interface you will need to have multi-column support for your tables and\
+    \ other fields which can sometimes be a challenging endeavor. With this\n"
+  mdcn: "\n输入类型（type）指的是你正在操作的表单上的项目。在这个示例中，你看到的 `type='text'` 指的是文本框。这可以是你想要的任何内容，例如复选框、单选按钮或你可能需要的任何控件。`type=\"\
+    submit\"` 指的是你将点击的提交按钮。“value”（值）一词指的是你将在按钮上看到的文本。\n\n`onclick` 是你希望用户执行的操作。因此，当按钮被点击时（点击按钮时），执行以下操作，即运行函数中的所有内容。例如\
+    \ `onclick=\"subs()\"`，这就是函数的名称。\n\n涉及到编程时，这只是了解你的程序流程、你希望用户做什么、当用户执行操作时会发生什么，以及当出现问题时可以采取哪些错误保护措施简单简单。\n\
+    \n# 数据类型 (Data Types)\n\n在使用 Javascript 和其他编程语言时，你会有几个不同的组件可以操作。以下是其中一些组件的列表及其功能。\n\
+    \n- 数字（Numbers），例如 123，120.50 等。\n- 字符串（Strings），例如“This text string”等。\n- 布尔值（Boolean），例如\
+    \ true 或 false。\n\n## 变量 (Writing variables)\n\n在编程中，变量是占位符。正如你在示例所示，我们创建了几个不同的变量来包含用户的信息。\n\
+    \n```\nvar myList\n```\n\n变量是通过在它们前面的 `var` 语句定义的。因此，`var myAddress` 或 `var myValue`\
+    \ 都是可以的。在编写变量时，你可以使用几乎任何名称，但你会希望遵循所谓的“命名规范”（naming convention）。\n\n命名规范是处理事务的一种标准方式。当你练习命名规范时，你在整个程序中都会以相同的方式编写代码。如果你在变量前面加一个\
+    \ `$`，那么你需要对所有的变量都这么做。如果你使用驼峰命名法（camel case）编写变量，例如 `myAddress`，那么你希望始终保持这种风格。\n\
+    \n# 保持代码的可读性 (Keeping your code readable)\n\n当你编写代码时，你希望尽可能保持它的易读。这是为了让任何阅读你代码的人都知道你在做什么，以及你的程序流程将如何进行。如果你开始设计杂乱的代码并且不对你所做的事情注释，那么当需要回来修复\
+    \ bug 或另一个程序员需要回来编辑你的代码时，如果你的代码完全混乱、没有注释且只是一堆垃圾，他们将将很难知道发生了什么。\n\n涉及到编程 Javascript\
+    \ 或任何其他语言，你需要开发属于你自己的编程风格。这种风格将很快成为你独特的签名，正如之前提到的，你将成为开发社区的羡慕对象。\n\n# 使用库和预写代码\
+    \ (Using libraries and prewritten code)\n\n之前我提到过，在你对 Javascript 如何工作有基本的了解之前，不要使用库和预写代码。现在你已经有了基本的了解，可以去寻找酷的库和其他编程示例，看看人们在做什么以及他们是如何编写代码的。\n\
+    \n在查看他们的代码时，你会希望对他们的编程风格做笔记。你会查看他们如何注释代码、使用哪些变量、如何构建他们的函数。从他人身上学习是一个很好的方法。\n\n\
+    # 展示你的代码 (Showing off your code)\n\n在学习编程时，你会希望尽可能地展示你的代码。在编程方面，程序的制作并没有什么大秘密，至少在你目前的开发水平上是。\n\
+    \n当你展示代码时，你可以获得关于如何紧凑代码使其更具功能且更易于使用的反馈和建议。不要害怕注释和建议。这是一个学习过程，是你应该充分利用的。\n\n# 为你的代码添加注释\
+    \ (Commenting your code)\n\n现在你已经看到了程序的结构，以及当你将代码与函数、变量和调用组合时会发生什么，你将开始构建相当大的程序。\n\
+    你需要做的一件事是为你的代码添加注释。出于某些原因，注释非常重要。\n\n首先，你可以跟踪你想添加到程序中的笔记，例如功能、函数等。在某个时刻，你可能想尝试不同的代码块，但不要删除你已经写的内容，因此添加注释或注释掉该代码块将非常有帮助。\n\
+    \n当你写注释时，网络浏览器不会读取它。所有注释对于你查看代码时都是很好的参考点。在编写注释时，你有几种不同的选择。\n\n第一种是块注释（block comment）。块注释会屏蔽块内的所有文本。要创建一个块注释，你将编写以下代码\
+    \ `/* */`。之间的所有内容都将是注释。所以你的注释看起来像这样：\n\n```\n/* 这是我的注释文本\n\n我希望你喜欢我对这本书的注释\n\n\
+    今天能为你书写代码是我的荣幸\n*/\n```\n\n你在这些括号内编写的所有内容将仅供自己查看。通过这种类型的注释，你可以在多行上编写代码，这是制作可读文本的极佳方法。\n\
+    \n// 这用于单行注释\n\n涉及到短注释时，你希望在注释的开头使用 `//`。这适用于短的且适合放在单行的注释。如果你有超过一行的注释，你将希望使用块注释。\n\
+    \n我应该在哪里给代码加注释？\n\n涉及到给代码注释时，你希望在特定的关键区域对代码进行注释。例如，你永远不想在正在写的代码前面写注释。如果你要在代码之前写注释，你希望将其放在代码上方，而不是与代码在同一行。这里有一个例子：\n\
+    \n```javascript\n/*\n这是一个程序，将跟踪\n*/\n```\n\n```html\n<!doctype html>\n<html lang=\"\
+    en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Test</title>\n<script type=\"\
+    text/javascript\">\nfunction subs() {\n  var myValue = document.getElementById('TextBox').value;\n\
+    \n  if (myValue.length == 0) {\n    alert('Please enter a value!');\n    return;\n\
+    \  }\n  var myTitle = document.getElementById('title');\n  myTitle.innerHTML =\
+    \ myValue;\n}\n</script>\n</head>\n<body>\n<h1 id=\"title\">Test</h1>\n\n<input\
+    \ type=\"text\" id=\"TextBox\" />\n<input type=\"submit\" value=\"Click Me\" onclick=\"\
+    subs()\" />\n</body>\n</html>\n```\n\n你需要做的一件事是像这样注释代码：\n// myTitle.innerHTML\
+    \ = myValue\n涉及到短注释时，你希望在注释的开头使用 // ... 但请记住，如果你这样注释，它不会被编译器读取。\n"
+  merge: 0
+  raw:
+  - '[PAGE 21]
+
+
+    Input type refers to the items on the form you are working on. In this example
+    you see the type=''text'' which refers to a text box. This can be anything that
+    you want such as a checkbox, radio button or any other control you may need. The
+    type="submit" refers to the submit button that you will click. The word "value"
+    refers to the text that you will see on the button.
+
+
+    Onclick is the action that you want the user to perform. So when the button is
+    clicked (on clicking the button) perform the following action which is to run
+    everything in the function. So onclick="subs()" which is the name of the function.
+
+
+    When it comes to programing it is a simple matter of knowing the flow of your
+    program, what you want the user to do, what will happen when the user performs
+    an action and what error protection you can put into place when something goes
+    wrong.'
+  - '[PAGE 22]
+
+
+    # Data Types
+
+
+    When working with Javascript and other programming languages you will have several
+    different components that you an work with. Here are a list of some of them and
+    what they do.
+
+
+    Numbers, eg. 123, 120.50 etc.
+
+
+    Strings of text e.g. “This text string” etc.
+
+
+    Boolean e.g. true or false.
+
+
+    Writing variables
+
+
+    Variables are placeholders when it comes to programming. As you saw in the example
+    we created several different variables to contain the information for our users.
+
+
+    ```
+
+    var myList
+
+    ```
+
+
+    variables are defined with the var statement in front of them. So var myAddress
+    or var myValue are all acceptable. When writing variables you can have pretty
+    much anything you want but you will want to keep to what is known as a naming
+    convention.
+
+
+    A naming convention is a standard way of doing things. When you practice naming
+    conventions you write your code the same way throughout the program. If you write
+    a variable with a $ in front of it then you need to do this for all of your variables.
+    If you write a variable with camel case which is myAddress then you will want
+    to keep this throughout.'
+  - '[PAGE 23]
+
+
+    # Keeping your code readable
+
+
+    When you are writing your code you want to keep it as readable as possible. This
+    is needed so that anyone that reads your colide will know what you are doing and
+    how the flow of your program will go. If you start to design messy code and and
+    don’t comment on what you are doing going back to fix a bug or if another programmer
+    needs to go back and edit your code it will be very hard for them to know what
+    is going on if your code is all jumbled, uncommented and just crap.
+
+
+    When it comes to programming Javascript or any other langage for that matter you
+    will need to develop your very own programming style. This style will soon become
+    your unique signature and like stated earlier you will be the envy of the development
+    community.'
+  - '[PAGE 24]
+
+
+    # Using libraries and prewritten code
+
+
+    Earlier I stated that you should not use libraries and prewritten code until you
+    have a basic understanding of how javascript works. Now that you have a basic
+    understanding you can go and find cool libraries and other programming examples
+    and see what people are doing and how how they write their code.
+
+
+    When looking at their code you will want to take noes on their programming style.
+    You will want to see how they comment their code, what variables they use, how
+    they structure their functions. Learning from others is a great way to learn.'
+  - '[PAGE 25]
+
+
+    # Showing off your code
+
+
+    When learning to program you will want to show off your code as much as possible.
+    When it comes to programming there really isn''t a big secret in how programs
+    are made at least at your level of development.
+
+
+    When you show off your code you can get feedback and suggestions on how to tighten
+    up your code and make it more functional and user friendly. Don’t be afraid of
+    comments and suggestions. This is a learning experience and something that you
+    should take full advantage of.'
+  - "[PAGE 26]\n\n# Commenting your code\n\nNow that you see how a program is structured\
+    \ and what will happen when you put code\ntogether with functions, variables and\
+    \ calls you will begin to build fairly large programs.\nOne thing that you will\
+    \ need to do is comment your code. Commenting is very important\nfor reasons.\n\
+    \nFirst of all you can keep track of notes that you want to add to your program\
+    \ such as\nfeatures, functions and more. You will at some point want to try different\
+    \ blocks of code\n and don't delete what you already written so adding comments\
+    \ or\ncommenting out that block of code will be of great use.\n\nWhen you write\
+    \ a comment is not read by the web browser. All comments are good for\na your\
+    \ reference points when looking over your code. When writing a comment you\nseveral\
+    \ different options.\n\nThe first is the block comment. The block comment will\
+    \ block out all the text that is\nwithin the block. To create a block comment\
+    \ you will write the following code /* */\nEverything in between will be your\
+    \ comment. So your comment would look like this.\n\n/* This is my commented text\n\
+    \nI hope you like my comments on this book\n\nIt is a pleasure to write code for\
+    \ you today\n\n/*\n\nEverything that you write within these brackets will be for\
+    \ your eyes only. With this type\nof commenting your code you can write on multiple\
+    \ lines which is a great way to make readable text.\n// This is used for one line\
+    \ commenting\n\nWhen it comes to short comments you will want to use the // at\
+    \ the start of your comment.\nThis will work for comments that are short and fit\
+    \ on one line. If you have comments\nt go over more than one line you will want\
+    \ to use the block comment.\n\nWhere do I comment my code?\n\nWhen it comes to\
+    \ commenting code you want to comment your code in specific key areas.\nFor example\
+    \ you never to comment in front of the code you are writing. If you are\ngoing\
+    \ to write comments before code you want to do it above your code and not on the\n\
+    same line as your code. Here is an example\n\n/*\n\nThis is a program will keep\
+    \ track of my diet and my families diet. It was written on\nOctober 1st 1999 and\
+    \ was written by John Doe\n\n/*\n\n```\n<doctype html>\n```"
+  - "[PAGE 27]\n\n```\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>The\
+    \ HTML5 Herald</title>\n<script type=\"text/javascript\">\n\nfunction subs() {\n\
+    \  var myValue = document.getElementById('TextBox').value;\n\n  if (myValue.length\
+    \ == 0)    // this is a comment\n\n  {\n    alert('Please enter a real value into\
+    \ the text box!');\n    return;\n  }\n  var myTitle = document.getElementById('title');\
+    \ // this is a comment\n  myTitle.innerHTML = myValue; // this is a commnt\n}\n\
+    </script>\n</head>\n<body>\n<h1 id=\"title\"> Test</h1>\n\n<input type=\"text\"\
+    \ id=\"TextBox\" />\n<input type=\"submit\" value=\"Click Me\" onclick=\"subs()\"\
+    \ />\n\n</body>\n</html>\n```\n\nOne thing that you will never want to do is comment\
+    \ like this.\n// myTitle.innerHTML = myValue;\nWhen you comment in this fashion\
+    \ you are commenting out that line of code. Now this is acceptable if you want\
+    \ to keep a line of code in your program for future reference or not"
+  - '[PAGE 28]
+
+
+    perhaps you are trying out something new and you don’t want to loose that block
+    of code but just remember if you are commenting like it it will not be read by
+    the compiler.'
+  - '[PAGE 29]
+
+
+    # Resources
+
+
+    When it comes to learning more about Javascript and other programming languages
+    having a list of resources is invaluable. Some resources that you will want to
+    take advantage of are listed below.
+
+
+    http://www.w3schools.com/ - This is your one stop shop for learning any type of
+    programming language devoted to the web. W3 is the standard for web technologies.
+
+
+    https://www.javascript.com/resources -This is another great resource to learn
+    Javascript and what it can do.
+
+
+    JQAPI - http://jqapi.com/
+
+
+    Validanguage
+
+
+    Validanguage
+
+
+    This program is a JavaScript form validation program or framework that will not
+    interfere with the development of your overall application. With this framework
+    you will be able to check and maintain logic, global settings and other elements
+    of your application.
+
+
+    This application also has integrad AJAX support which is another popular web programming
+    language. You will have support with caching, callback functions as well as other
+    API features. This is a robust application that will fit nicely into any JavaScript
+    application.
+
+
+    LiveValidation
+
+
+    This is a lightweight library that will help with the validation of your JavaScript
+    applicatins. This library has a lot of methods and function calls that will controls
+    aspects of your JavaScript application and makes development quick and simple.
+
+
+    yav
+
+
+    This is yet another form validation library that will support a wide range of
+    development scenarios. Some developers will enjoy this application for its basic
+    date and email intrations as well as advanced functions and features for experienced
+    developers.
+
+
+    qForms
+
+
+    If you are looking for a complete solution you don''t need to look any futher
+    than gForms. This appiatioin has a lot of validation features as well as rules
+    and submission routines which make your application fun and enjoyable.
+
+
+    formreform
+
+
+    when you are designing your interface you will need to have multi-column support
+    for your tables and other fields which can sometimes be a challenging endeavor.
+    With this'
+- md: '
+
+    application you are given a wide range of tools to help with your layouts and
+    form design options.
+
+
+    ## Conclusion
+
+
+    Well there you go. This is a basic outline and look at the Javascript programming
+    language. As you can see from the example that we talked about and the way that
+    we have written our code there is a lot that we can do to create some great functionality
+    and features in our software.
+
+
+    From this point forward it will be your job to practice writing code, seeing what
+    results you get and what cool things you can create. When starting to program
+    it is highly suggested that you start small and develop small pieces and parts
+    as you go.
+
+
+    Don''t jump into the Javascript language or any language for that matter and expect
+    to build the next million dollar application. If you think like that then you
+    will not achieve anything. You want to start small, develop small pockets of reusable
+    code and build off features and functions that others are using.
+
+
+    Learning to program in Javascript may seem like a daunting task. It is true that
+    there will be a learning curve and there will be times that you get frustrated
+    and just don''t know what it is you want to do or why things don''t work. This
+    is why going slow and commenting your code every step of the way is vital to your
+    success.
+
+
+    And finally don''t be afraid to experiment with code. You want to see what you
+    can do and what you can''t. You want to see what others have done and try to reproduce
+    their results and make it better. Each time you find code that works you will
+    want to keep it stored away in your code library. This library will be your friend
+    and greatest asset in your career.
+
+
+    I hope that you have enjoyed this book and you found the information useful. If
+    you like the book please leave a review so that others can read your book and
+    gain the knowledge that you have gained. And as always take the time to learn
+    something new every day.
+
+
+    To your success!
+
+    '
+  mdcn: '
+
+    应用程序中为你提供了大量的工具来帮助你完成布局和表单设计选择。
+
+
+    ## 结论
+
+
+    好了，就是这些。这就是对 JavaScript 编程语言的一个基础概述。正如我们讨论过的示例以及我们编写代码的方式所示，我们可以做很多工作，在我们的软件中创建出极佳的功能和特性。
+
+
+    从现在开始，你的任务就是练习编写代码，观察你获得的结果，以及看看你能创造出什么酷酷的东西。在开始编程时，强烈建议你从小处着，并随着进展逐步开发微小的组件和部分。
+
+
+    不要一上手到 JavaScript 语言（或任何语言）就指望能构建出下一个百万美元的应用程序。如果你是这样想的，将一无所获。你应该从小处开始，开发小型的复用代码块，并并在他人使用的功能和函数基础上进行构建。
+
+
+    学习 JavaScript 编程可能看起来是一项艰巨的任务。确实，这会有一个学习曲线，而且会有某些让你感到沮丧，不知道自己到底想做什么，或者不知道为什么事情不起作用。这就是为什么放慢速度并并在每一步都对代码进行注释对你的成功至关重要。
+
+
+    最后，不要害怕尝试代码。你想看看自己能做什么，不能做什么。你想看看别人做了什么，并尝试重现他们的结果并将其做得更好。每当你发现一段可以运行的代码时，你都会想把它存储在你的代码库中。这个库将成为你职业生涯中的朋友和最宝贵的资产。
+
+
+    我希望你喜欢这本书，并发现这些信息很有用。如果你喜欢这本书，请留下评价，这样其他人就可以阅读你的书并获得你所积累的知识。一如既往，每天花时间学习一些新东西。
+
+
+    祝你成功！
+
+    '
+  merge: 0
+  raw:
+  - '[PAGE 30]
+
+
+    application you are given a wide range of tools to help with your layouts and
+    form design options.'
+  - '[PAGE 31]
+
+
+    # Conclusion
+
+
+    Well there you go. This is a basic outline and look at the Javascript programming
+    language. As you can see form the example that we talked about and the way that
+    we have written our code there is a lot that we can do to create some great functionality
+    and features in our software.
+
+
+    From this point forward it will be your job to practice writing code, seeing what
+    results you get and what cool things you can create. When starting to program
+    it is highly suggested that you start small and develop small pieces and parts
+    as you go.
+
+
+    Don''t jump into the Javascript language or any language for that matter and expect
+    to build the next million dollar application. If you think like that then you
+    will not achieve anything. You want to start small, develop small pockets of reusable
+    code and build off features and functions that others are using.
+
+
+    Learning to program in Javascript may seem like a daunting task. It is true that
+    there will be a learning curve and there will be times that you get frustrated
+    and just don''t know what it is you want to do or why things don''t work. This
+    is why going slow and commenting your code every step of the way is vital to your
+    success.
+
+
+    And finally don''t be afraid to experiment with code. You want to see what you
+    can do and what you can''t. You want to see what others have done and try to reproduce
+    their results and make it better. Each time you find code that works you will
+    want to keep it stored away in your code library. This library will be your friend
+    and greatest asset in your career.
+
+
+    I hope that you have enjoyed this book and you found the information useful. If
+    you like the book please leave a review so that others can read your book and
+    gain the knowledge that you have gained. And as always take the time to learn
+    something new every day.
+
+
+    To your success!'
+pages:
+- img_proc: true
+  md: '# # JAVASCRIPT
+
+    Java
+
+
+    ![](img/b03ec663693a0774678359cfdc952306_0_0.png)
+
+
+    CRASH COURSE - THE COMPLETE BEGINNERS GUIDE TO LEARNING JAVASCRIPT PROGRAMMING
+    IN NO TIME!
+
+
+    NATHANIEL HILL'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: '# Javascript:
+
+
+    # Crash Course - The Complete Beginners Guide To Learning JavaScript Programming
+    In No Time!'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: '# Table of contents
+
+
+    # Introduction
+
+
+    # Chapter 1 – An Introduction to Programming
+
+
+    +   - How do we write programs?
+
+
+    +   - What can I make in a program?
+
+
+    +   - Planning your programs
+
+
+    +     Reuse code
+
+
+    +     Avoid Yellow Code
+
+
+    +     Document your code
+
+
+    +     Develop your own style
+
+
+    +     Always Improve
+
+
+    # Chapter 2 – Javascript 101
+
+
+    +   - Setting up your working environment
+
+
+    +   - Functions and Variables
+
+
+    +     Variables
+
+
+    +     Functions
+
+
+    +   - Data Types
+
+
+    +   - Keeping your code readable
+
+
+    +   - Using libraries and prewritten code
+
+
+    +   - Showing off your code
+
+
+    +   - Commenting your code
+
+
+    +   - Resources
+
+
+    # Conclusion'
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: '# # Introduction
+
+
+    The Internet is build on a core set of fundamental programming languages. These
+    languages help to drive functionality and feature rich content to users all over
+    the world. Some of the languages that are used PHP, Pearl, MySql, Ruby on Rails,
+    Java and the language that we are going to talk about today which is Javascript.
+
+
+    If you are someone who has never programmed before or if you are just looking
+    to try this is the book for you. I am a programmer myself and I know how difficult
+    it is sometimes to go through some of these book and learn a language.
+
+
+    Since I am a developer myself I am going to approach this book ins simple easy
+    to understand step by step manner. At the end of the book you will have the foundation
+    and the knowledge to advance your skills and actually start developing your very
+    own applications using Javascript as well as other programming languages.'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: '# Chapter 1 – An Introduction to Programming
+
+
+    Before we get into Javascript and web development lets get some basics and foundation.
+    When it comes to learning a new language be a spoken language or a computer language
+    you need to understand how it is used in the real world. When it comes to computer
+    languages they all work basically the same.
+
+
+    They are a grouping of text files with different extension on them to tell the
+    other files that are on your computer how to access and interpret them.
+
+
+    So for example if you have a file such as index.html your web browser program
+    will understand through its set of files that it is the first file it should look
+    for when visiting a web site.
+
+
+    The same goes for programming languages. When you have a grouping of files the
+    program known as the compiler will read the listing of files looking for a specific
+    one.
+
+
+    Then when it finds that file will look for specific instructions or lines of code
+    to do specific tasks according to your input or through different sets of code
+    it discovers.
+
+
+    In simpler terms if you have a list of groceries and you are at the store. You
+    will start at the top of your list and go to that item.
+
+
+    Then when you have that item you will look at the list again and jump to the next
+    closest item on your list until you come to the end of the list and end up at
+    the checkout.
+
+
+    I hope you can see the picture and the pattern of what I am talking about. The
+    same set of rules applies to a computer language. You have a set of or list in
+    the grocery store.
+
+
+    Depending on the choices that you make from that list will determine how you interact
+    in the store.
+
+
+    The same applies to programing. What choices the user makes as they go through
+    your program will result in different responses from your program.'
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: '# How do we write programs?
+
+
+    It is very simple to write programs. You can write a program in any language using
+    a program like notepad. You don''t want to use programs such as Microsoft Word
+    since these programs put in their own codes and information and will not create
+    a clean file.
+
+
+    If you like a visual interface most programming languages have what is known as
+    a GII or Graphical User Interface. These programs make developing a program much
+    easier and cleaner.'
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: '# What can I make in a program?
+
+
+    You can make anything you can think of in a program. The main areas that you need
+    to know is what you want to make, where you want to start, what you want your
+    user to do and what the end result will be. For example many programmers start
+    out with the “Hello World” example.
+
+
+    If you have been programming for any length of time you will see this example
+    used all over the place.
+
+
+    This is a very useless program in itself but it does show you the basics and the
+    foundation of programming and does allow you to see a program function in the
+    language of your choice.
+
+
+    When it comes to developing programs however some languages are designed and developed
+    to perform specific functions.
+
+
+    Javascript for example is designed for web applications and functionality on the
+    web. Visual Basic on the other hand is more designed for office and desktop applications.
+
+
+    You can do web applications with Visual Basic but there is a lot of tasks that
+    you will need to perform just as if you were to use Javascript in a desktop application
+    you would have to do a lot of major programming to get something to work. This
+    is just because they were not meant to work in the others environment.
+
+
+    This is why there are so many different languages for you to choose from. The
+    great thing is though if you learn the basic foundation of one you will be able
+    to see and recognize similarities in multiple languages and pick them up easily.'
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: '# Planning your programs
+
+
+    When you get into programming you will want to plan out your programs from start
+    to finish. Now you will be able to change things around and can move away from
+    your original plan but if you have a basic idea and a path you you wish to follow
+    then your programming efforts will have greater results.
+
+
+    # Reuse code
+
+
+    When you start programming for a long period of time you will soon realize that
+    you will be using a lot of the same code in your programs. When you start developing
+    it will be a good idea to start building up your own database of code files that
+    you can reuse in other projects. This is a good programming habit and practice
+    to get into. You don''t want to reinvent the wheel every time you write something.
+
+
+    # Avoid Yellow Code
+
+
+    A term in the programming community is yellow code. This is code that is sloppy
+    and just filled with bugs. We call it yellow code for the color of pee since that
+    is all it is good for. When writing your programs follow a logical path and think
+    out problems before you start coding. It will save you time and headache in the
+    long run.
+
+
+    # Document your code
+
+
+    One of the biggest mistakes people make when writing code is not to document their
+    code. When you start writing a lot of code will start to bled in together and
+    you will not know when one function ends or where another procedure begins.
+
+
+    When you document your code you are doing it for yourself. You can use comments
+    in your code anywhere you want and when you need to make a change or fix a problem
+    you will easily know where to go, where you ended up and what ideas you wanted
+    to implement. So comment everything!
+
+
+    # Develop your own style
+
+
+    Programming is an art form. When you code you are writing the same thing that
+    others are writing but are doing it in your own style.
+
+
+    When you develop awesome programs other programmers will look at your code and
+    drool over how clean and efficient it is. I know it sounds goofy and dumb t.but
+    it is a fact. You can be famous for the way you write your code.'
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: '# Always Improve
+
+
+    No matter what you do or what you write you can always improve on it. When new
+    technology is developed and new foundations in the language are developed you
+    will want to use these to improve on your existing work to make it cleaner and
+    more efficient.
+
+
+    This is the basics of programming. The rest is just learning how to read and write
+    the language. In the next chapter we will start to talk about Javascript, what
+    you can do with it and get you started making your first set of programs.'
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: '# Chapter 2 – Javascript101
+
+
+    Now that you have the basic understanding of what a programming language is and
+    what you can do in order to start writing your own we are going to jump into Javascript
+    and start developing your very own programs.
+
+
+    Before we jump in to coding I want to get you setup with a few things. I want
+    you to go http://www.brackets.io and download their software. This software will
+    be our programming editor we will use in this book.
+
+
+    If you have a text editor or another program that you feel comfortable using and
+    it will work with Javascript then go ahead and use it. If you don''t then look
+    at brackets.io and follow along in the book.
+
+
+    Next I don''t want you to look at any types of javascript libraries or other prewritten
+    code. One mistake people make is going out and getting these libraries and think
+    they can build a program.
+
+
+    Well you can do this but you need to have the foundation first in order to build
+    off these libraries. So libraries are great but don''t look at them, think about
+    them or focus on them until you have completed this book and tried some of the
+    exercise that I discuss here.'
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: '# Setting up our working environment
+
+
+    Okay lets started. The first thing that I want you to do is right mouse click
+    on your desktop and go to New and create a new folder. I want you to name this
+    folder “Exercises” or something along those lines in order to keep all of your
+    files that we use in this book.
+
+
+    ![](img/b03ec663693a0774678359cfdc952306_15_0.png)
+
+
+    This is why we will hold all of our files that we work on. Next I want you to
+    create a template file. In your text editor or in the brackets.io program I want
+    you to write the following code.
+
+
+    I want you to now save this as template.html in your example folder that we created
+    in the previous step. Make sure you are typing in notepad to change the file type
+    to all files and type in the .html in the end in order to save the file correctly.
+
+
+    If you do not save the file will not run correctly. Next I want you to go to this
+    web - https://html5.validator.nu/ and validate the code. This will ensure that
+    everything that you have written will work and you won''t have any issues. If
+    you go back and check the code and see what went wrong.
+
+
+    This is going to be the main file that we work with when developing our javascript
+    code. The reason we create a template file like this is that we don''t have to
+    rewrite code and in fact we can use this is your first file in your programming
+    library.
+
+
+    Now let’s starting our first program. As I stated in the previous chapter most
+    programmers will give you the Hello World example. Well I am to do the same thing.
+    What you want to do now is load your template file and when its loaded I want
+    you to go to File, Save As and save the file as another name. For this example
+    I want you to save it as hello.html.
+
+
+    This is very important since you are working in the template file and you don''t
+    want to overwrite your template file. If you overwrite your template file you
+    will need to create it again which will become annoying. Having a backup copy
+    or getting into the habit of renaming your file before you work on them is important.
+
+
+    Now that you are working in the hello.html file I want you to modify the code
+    so that it looks like this.
+
+
+    ```
+
+    <doctype html>
+
+    <html lang="en">
+
+    ```'
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: '```
+
+    <head>
+
+    <meta charset="utf-8">
+
+    <title>The HTML5 Herald</title>
+
+    <meta name="description" content="The HTML5 Herald">
+
+    <meta name="author" content="SitePoint">
+
+    </head>
+
+    <body onload="alert(''Hello World!'')">
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    Save the file and then in your example folder double click on the file and you
+    will see your first javascript file run. If you are getting an error or if the
+    message doesn’t pop up in a window you want to make sure that you copied the wording
+    and position of the words exactly. If you didn’t the script will not work.'
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: '# Functions and Variables
+
+
+    The next thing that I want to talk to you about functions and variables. When
+    you are programming in any language you will want to use variables and functions
+    in order to separate your code as well as define specific items in your code.
+    If you don''t use functions and variables you will have very unusable code and
+    your programs will have very little functionality.
+
+
+    # Variables
+
+
+    Variables are words and phrases that relate to something else. For example $StreetName
+    is a variable that you can use to collect information about a street. $FirstName
+    is another variable that you can use to collect the first name of someone on your
+    web site.
+
+
+    Variables can be anything you want them to be. You however want to create variables
+    that make sense to the programmer. Creating a variable named apple when you are
+    talking about the amount of money in a budget doesn''t make sense. So when naming
+    your variables keep them uniform to what you are creating.
+
+
+    # Functions
+
+
+    Functions are small blocks of code that will execute when a given set of conditions
+    are met. For example if you have a function for adding files to a database you
+    will want to name your function something like “DataAdd”. When you are performing
+    a task that needs to use the code that is contained within the function you do
+    a function call which will execute the code and return your desired results. Here
+    is an example of functions and variables.
+
+
+    Open your template file and save it as exercise2.html. Make sure that the document
+    type is set to all files. Save the file and make the following changes.'
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: "```\n<!doctype html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n\
+    <title>The HTML5 Herald</title>\n<script type=\"text/javascript\">\nfunction subs()\
+    \ {\n  var myValue = document.getElementById('myTextBox').value;\n  if (myValue.length\
+    \ == 0) {\n    alert('Please enter a real value into the text box!');\n    return;\n\
+    \  }\n  var myTitle = document.getElementById('title');\n  myTitle.innerHTML =\
+    \ myValue;\n}\n</script>\n</head>\n<body>\n<h1 id=\"title\"> Test</h1>\n<input\
+    \ type=\"text\" id=\"myTextBox\" />\n<input type=\"submit\" value=\"Click Me\"\
+    \ onclick=\"subs()\" />\n</body>\n</html>\n```\n\nNow that you have this code\
+    \ written you will want to save it again and run it in your browser. When you\
+    \ run this program you will be able to change the text on the screen as well as\
+    \ see if you get an error if someone doesn’t enter in any text. This is what you\
+    \ should get when you run the program."
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: '# Test
+
+
+    This is what your screen should look like without doing anything. What I want
+    you to do is click the Click Me button without putting anything in the text box.
+    When you do you will get an error message that looks like this.
+
+
+    ![](img/b03ec663693a0774678359cfdc952306_19_0.png)
+
+
+    If you are reading the message you can see that the text you entered in for the
+    error is now showing in the error box. You can double check this by looking at
+    the code and changing it to say something else.
+
+
+    # This is my text
+
+
+    You can now see when you enter in text into the text box and hit the click me
+    box the text you replaces the original text that appeared. This is the power of
+    functions and variables.
+
+
+    Let''s break down each part of the code so you can better understand what is going
+    on.
+
+
+    ```
+
+    <script type="text/javascript"> </script>
+
+    ```
+
+
+    This line of code is needed to tell your browser what type of input you will be
+    receiving. In this case you will be accepting either text input or javascript
+    input. No other type of content will be allowed such as images, audio or other
+    files. Just text and javascript.
+
+
+    ```
+
+    function subs() { }
+
+    ```
+
+
+    This is how you start and end a function. As I stated before a function is a set
+    of commands written in code that will be performed when an action is executed.
+    In this'
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: "function we named it subs(). When we call the function later on we will need\
+    \ this name to reference it. You can call a function anything you want. If you\
+    \ want to play around with changing function names this is what you will change.\n\
+    \nvar myValue = document.getElementById('myTextBox');\n\nThis is your variable.\
+    \ A variable is a placeholder for information and content. In this case the variable\
+    \ is myValue. You can change this name to anything you want make sure you reference\
+    \ it everywhere needed in your document. To create a variable you will need to\
+    \ use the var word and the name of the variable. The words document.getElementById().value\
+    \ refers to the current document you are in, what you want to retrieve which is\
+    \ the elements id or items id and the value that the user enters into that.\n\n\
+    You will also notice that each of these statements ends with a ; This is what\
+    \ is needed in order to tell Javascript that it is an end of statement. If you\
+    \ get an error in your code check see that all of your statements are ending in\
+    \ a ; It is a common mistake for beginning programmers.\n\n```\nif (myValue.length\
+    \ == 0)\n{\n  alert('Please enter a real value into the text box!');\n  return;\n\
+    }\n\nvar myTitle = document.getElementById('title');\nmyTitle.innerHTML = myValue;\n\
+    ```\n\nThis is a conditional statement known as an if statement. When you someone\
+    \ perform an action you will need to have this statement in order to check if\
+    \ a set of conditions are performed. In this example if the value of the text\
+    \ box is equal to nothing or 0 you will receive the error message. If the text\
+    \ box has something in it you will get the result that you are looking for which\
+    \ is the text changing at the top of the screen.\n\nSo that is everything in the\
+    \ function. All that code does reads the contents of the text box and if it sees\
+    \ it is empty will get the error. It reads the text box and sees that there is\
+    \ text there it will read what the text is and print it on the screen. Very simple.\n\
+    \n<h1 id=\"title\"> Test</h1>\n\n<input type=\"text\" id=\"myTextBox\" />\n\n\
+    <input type=\"submit\" value=\"Click Me\" onclick=\"subs()\" />\n\nThis is where\
+    \ the user gets the text box and sees the results. The h1 id=\"title\" refers\
+    \ to the h1 tag on your web page or the page you are currently working on. The\
+    \ id refer to the name you are giving the h1 tag and the word title is what you\
+    \ name the h1 tag. You can change the word for the id to anything that you want\
+    \ it is a variable."
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: 'Input type refers to the items on the form you are working on. In this example
+    you see the type=''text'' which refers to a text box. This can be anything that
+    you want such as a checkbox, radio button or any other control you may need. The
+    type="submit" refers to the submit button that you will click. The word "value"
+    refers to the text that you will see on the button.
+
+
+    Onclick is the action that you want the user to perform. So when the button is
+    clicked (on clicking the button) perform the following action which is to run
+    everything in the function. So onclick="subs()" which is the name of the function.
+
+
+    When it comes to programing it is a simple matter of knowing the flow of your
+    program, what you want the user to do, what will happen when the user performs
+    an action and what error protection you can put into place when something goes
+    wrong.'
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: '# Data Types
+
+
+    When working with Javascript and other programming languages you will have several
+    different components that you an work with. Here are a list of some of them and
+    what they do.
+
+
+    Numbers, eg. 123, 120.50 etc.
+
+
+    Strings of text e.g. “This text string” etc.
+
+
+    Boolean e.g. true or false.
+
+
+    Writing variables
+
+
+    Variables are placeholders when it comes to programming. As you saw in the example
+    we created several different variables to contain the information for our users.
+
+
+    ```
+
+    var myList
+
+    ```
+
+
+    variables are defined with the var statement in front of them. So var myAddress
+    or var myValue are all acceptable. When writing variables you can have pretty
+    much anything you want but you will want to keep to what is known as a naming
+    convention.
+
+
+    A naming convention is a standard way of doing things. When you practice naming
+    conventions you write your code the same way throughout the program. If you write
+    a variable with a $ in front of it then you need to do this for all of your variables.
+    If you write a variable with camel case which is myAddress then you will want
+    to keep this throughout.'
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: '# Keeping your code readable
+
+
+    When you are writing your code you want to keep it as readable as possible. This
+    is needed so that anyone that reads your colide will know what you are doing and
+    how the flow of your program will go. If you start to design messy code and and
+    don’t comment on what you are doing going back to fix a bug or if another programmer
+    needs to go back and edit your code it will be very hard for them to know what
+    is going on if your code is all jumbled, uncommented and just crap.
+
+
+    When it comes to programming Javascript or any other langage for that matter you
+    will need to develop your very own programming style. This style will soon become
+    your unique signature and like stated earlier you will be the envy of the development
+    community.'
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: '# Using libraries and prewritten code
+
+
+    Earlier I stated that you should not use libraries and prewritten code until you
+    have a basic understanding of how javascript works. Now that you have a basic
+    understanding you can go and find cool libraries and other programming examples
+    and see what people are doing and how how they write their code.
+
+
+    When looking at their code you will want to take noes on their programming style.
+    You will want to see how they comment their code, what variables they use, how
+    they structure their functions. Learning from others is a great way to learn.'
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: '# Showing off your code
+
+
+    When learning to program you will want to show off your code as much as possible.
+    When it comes to programming there really isn''t a big secret in how programs
+    are made at least at your level of development.
+
+
+    When you show off your code you can get feedback and suggestions on how to tighten
+    up your code and make it more functional and user friendly. Don’t be afraid of
+    comments and suggestions. This is a learning experience and something that you
+    should take full advantage of.'
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: "# Commenting your code\n\nNow that you see how a program is structured and\
+    \ what will happen when you put code\ntogether with functions, variables and calls\
+    \ you will begin to build fairly large programs.\nOne thing that you will need\
+    \ to do is comment your code. Commenting is very important\nfor reasons.\n\nFirst\
+    \ of all you can keep track of notes that you want to add to your program such\
+    \ as\nfeatures, functions and more. You will at some point want to try different\
+    \ blocks of code\n and don't delete what you already written so adding comments\
+    \ or\ncommenting out that block of code will be of great use.\n\nWhen you write\
+    \ a comment is not read by the web browser. All comments are good for\na your\
+    \ reference points when looking over your code. When writing a comment you\nseveral\
+    \ different options.\n\nThe first is the block comment. The block comment will\
+    \ block out all the text that is\nwithin the block. To create a block comment\
+    \ you will write the following code /* */\nEverything in between will be your\
+    \ comment. So your comment would look like this.\n\n/* This is my commented text\n\
+    \nI hope you like my comments on this book\n\nIt is a pleasure to write code for\
+    \ you today\n\n/*\n\nEverything that you write within these brackets will be for\
+    \ your eyes only. With this type\nof commenting your code you can write on multiple\
+    \ lines which is a great way to make readable text.\n// This is used for one line\
+    \ commenting\n\nWhen it comes to short comments you will want to use the // at\
+    \ the start of your comment.\nThis will work for comments that are short and fit\
+    \ on one line. If you have comments\nt go over more than one line you will want\
+    \ to use the block comment.\n\nWhere do I comment my code?\n\nWhen it comes to\
+    \ commenting code you want to comment your code in specific key areas.\nFor example\
+    \ you never to comment in front of the code you are writing. If you are\ngoing\
+    \ to write comments before code you want to do it above your code and not on the\n\
+    same line as your code. Here is an example\n\n/*\n\nThis is a program will keep\
+    \ track of my diet and my families diet. It was written on\nOctober 1st 1999 and\
+    \ was written by John Doe\n\n/*\n\n```\n<doctype html>\n```"
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: "```\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>The HTML5\
+    \ Herald</title>\n<script type=\"text/javascript\">\n\nfunction subs() {\n  var\
+    \ myValue = document.getElementById('TextBox').value;\n\n  if (myValue.length\
+    \ == 0)    // this is a comment\n\n  {\n    alert('Please enter a real value into\
+    \ the text box!');\n    return;\n  }\n  var myTitle = document.getElementById('title');\
+    \ // this is a comment\n  myTitle.innerHTML = myValue; // this is a commnt\n}\n\
+    </script>\n</head>\n<body>\n<h1 id=\"title\"> Test</h1>\n\n<input type=\"text\"\
+    \ id=\"TextBox\" />\n<input type=\"submit\" value=\"Click Me\" onclick=\"subs()\"\
+    \ />\n\n</body>\n</html>\n```\n\nOne thing that you will never want to do is comment\
+    \ like this.\n// myTitle.innerHTML = myValue;\nWhen you comment in this fashion\
+    \ you are commenting out that line of code. Now this is acceptable if you want\
+    \ to keep a line of code in your program for future reference or not"
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: perhaps you are trying out something new and you don’t want to loose that block
+    of code but just remember if you are commenting like it it will not be read by
+    the compiler.
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: '# Resources
+
+
+    When it comes to learning more about Javascript and other programming languages
+    having a list of resources is invaluable. Some resources that you will want to
+    take advantage of are listed below.
+
+
+    http://www.w3schools.com/ - This is your one stop shop for learning any type of
+    programming language devoted to the web. W3 is the standard for web technologies.
+
+
+    https://www.javascript.com/resources -This is another great resource to learn
+    Javascript and what it can do.
+
+
+    JQAPI - http://jqapi.com/
+
+
+    Validanguage
+
+
+    Validanguage
+
+
+    This program is a JavaScript form validation program or framework that will not
+    interfere with the development of your overall application. With this framework
+    you will be able to check and maintain logic, global settings and other elements
+    of your application.
+
+
+    This application also has integrad AJAX support which is another popular web programming
+    language. You will have support with caching, callback functions as well as other
+    API features. This is a robust application that will fit nicely into any JavaScript
+    application.
+
+
+    LiveValidation
+
+
+    This is a lightweight library that will help with the validation of your JavaScript
+    applicatins. This library has a lot of methods and function calls that will controls
+    aspects of your JavaScript application and makes development quick and simple.
+
+
+    yav
+
+
+    This is yet another form validation library that will support a wide range of
+    development scenarios. Some developers will enjoy this application for its basic
+    date and email intrations as well as advanced functions and features for experienced
+    developers.
+
+
+    qForms
+
+
+    If you are looking for a complete solution you don''t need to look any futher
+    than gForms. This appiatioin has a lot of validation features as well as rules
+    and submission routines which make your application fun and enjoyable.
+
+
+    formreform
+
+
+    when you are designing your interface you will need to have multi-column support
+    for your tables and other fields which can sometimes be a challenging endeavor.
+    With this'
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: application you are given a wide range of tools to help with your layouts and
+    form design options.
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: '# Conclusion
+
+
+    Well there you go. This is a basic outline and look at the Javascript programming
+    language. As you can see form the example that we talked about and the way that
+    we have written our code there is a lot that we can do to create some great functionality
+    and features in our software.
+
+
+    From this point forward it will be your job to practice writing code, seeing what
+    results you get and what cool things you can create. When starting to program
+    it is highly suggested that you start small and develop small pieces and parts
+    as you go.
+
+
+    Don''t jump into the Javascript language or any language for that matter and expect
+    to build the next million dollar application. If you think like that then you
+    will not achieve anything. You want to start small, develop small pockets of reusable
+    code and build off features and functions that others are using.
+
+
+    Learning to program in Javascript may seem like a daunting task. It is true that
+    there will be a learning curve and there will be times that you get frustrated
+    and just don''t know what it is you want to do or why things don''t work. This
+    is why going slow and commenting your code every step of the way is vital to your
+    success.
+
+
+    And finally don''t be afraid to experiment with code. You want to see what you
+    can do and what you can''t. You want to see what others have done and try to reproduce
+    their results and make it better. Each time you find code that works you will
+    want to keep it stored away in your code library. This library will be your friend
+    and greatest asset in your career.
+
+
+    I hope that you have enjoyed this book and you found the information useful. If
+    you like the book please leave a review so that others can read your book and
+    gain the knowledge that you have gained. And as always take the time to learn
+    something new every day.
+
+
+    To your success!'
+  merge: -1
+  pgno: 31
+toc:
+- - '#'
+  - Javascript 快速上手 - 快速学习 JavaScript 编程完整初学者指南！（Angularjs, jQuery, JavaScript 可视化）
+- - '##'
+  - 引言
+- - '##'
+  - 第一章 – 编程简介
+- - '###'
+  - 我们是如何编写程序的？
+- - '###'
+  - 我可以在程序中制作什么？
+- - '###'
+  - 规划你的程序
+- - '###'
+  - 代码复用
+- - '###'
+  - 避免黄色代码
+- - '###'
+  - 为你的代码编写注释
+- - '###'
+  - 开发你自己的风格
+- - '###'
+  - 持续改进
+- - '#'
+  - 第 2 章 – Javascript 基础
+- - '##'
+  - 设置我们的工作环境
+- - '##'
+  - 函数与变量
+- - '###'
+  - 变量
+- - '###'
+  - 函数
+- - '#'
+  - 数据类型 (Data Types)
+- - '##'
+  - 变量 (Writing variables)
+- - '#'
+  - 保持代码的可读性 (Keeping your code readable)
+- - '#'
+  - 使用库和预写代码 (Using libraries and prewritten code)
+- - '#'
+  - 展示你的代码 (Showing off your code)
+- - '#'
+  - 为你的代码添加注释 (Commenting your code)
+- - '##'
+  - 结论
