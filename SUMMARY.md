@@ -635,6 +635,7 @@
 +   [PHP 开发者 JavaScript 指南](docs/javascript-for-php-developers/README.md)
 +   [JavaScript 程序员高级指南：Deitel 开发者系列](docs/javascript-for-programmers-deitel-developer-series/README.md)
 +   [R 的 Javascript 指南](docs/javascript-for-r-chapman-hallcrc-the-r-series/README.md)
++   [面向声音艺术家的 JavaScript：使用 Web Audio API 学习编程](docs/javascript-for-sound-artists-learn-to-code-with-the-web-audi/README.md)
 +   [声音艺术家的 JavaScript：使用 Web Audio API 学习编程](docs/javascript-for-sound-artistslearn-to-code-with-the-web-audio/README.md)
 +   [面向业务开发者的 JavaScript (业务开发人员系列)](docs/javascript-for-the-business-developer-business-developers-se/README.md)
 +   [Web 开发 JavaScript 入门指南，第五版（视觉快速启动指南）](docs/javascript-for-the-world-wide-web-fifth-edition-visual-quick/README.md)
