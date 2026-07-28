@@ -739,6 +739,7 @@
 +   [JavaScript 入门指南：让 JavaScript 变得有趣](docs/javascript-simplified-javascript-simplified-and-turned-to-fu/README.md)
 +   [JavaScript 高级指南](docs/javascript-spessore/README.md)
 +   [JavaScript 逐步入门指南](docs/javascript-step-by-step/README.md)
++   [JavaScript 逐步入门指南 第二版](docs/javascript-step-by-step-2nd-edition/README.md)
 +   [JavaScript 入门指南](docs/javascript-succinctly/README.md)
 +   [JavaScript 语法与实践](docs/javascript-syntax-and-practices/README.md)
 +   [JavaScript 语法与实践指南](docs/javascript-syntax-and-practices-1/README.md)
