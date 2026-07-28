@@ -379,6 +379,7 @@
 +   [HTML 4 入门指南](docs/html-4-for-dummies-5th-edition/README.md)
 +   [HTML 5 与 JavaScript 项目实战](docs/html-5-and-javascript-projects/README.md)
 +   [HTML 5 黑皮书：涵盖 CSS 3、JavaScript、XML、XHTML、Ajax、PHP 和 jQuery，第2版](docs/html-5-black-book-covers-css-3-javascript-xml-xhtml-ajax-php/README.md)
++   [HTML 5 黑宝：涵盖 CSS3、JavaScript、XML、XHTML、AJAX、PHP 和 jQuery](docs/html-5-black-book-covers-css3-javasvript-xml-xhtml-ajax-php-/README.md)
 +   [HTML 5：HTML 5 网页创建指南](docs/html-5-discover-how-to-create-html-5-web-pages-with-ease-dis/README.md)
 +   [Web 开发者的 HTML 5 指南](docs/html-5-guidelines-for-web-developmers/README.md)
 +   [HTML 和 JavaScript 基础](docs/html-and-javascript-basics/README.md)
