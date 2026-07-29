@@ -697,6 +697,7 @@
 +   [JavaScript Native Interface：构建具有原生性能的跨平台应用](docs/javascript-native-interface-build-cross-platform-apps-with-n/README.md)
 +   [JavaScript Node.js React MongoDB VS Code：初学者需要的 200 知识](docs/javascript-nodejs-react-mongodb-vs-code-200-things-beginners/README.md)
 +   [Javascript 专业人员指南](docs/javascript-notes-for-professionals/README.md)
++   [Javascript：从新手到忍者](docs/javascript-novice-to-ninja/README.md)
 +   [JavaScript：从入门到忍者（第二版）](docs/javascript-novice-to-ninja-2nd-edition/README.md)
 +   [JavaScript：从新手到忍者：JavaScript 终极初学者指南](docs/javascript-novice-to-ninja-the-ultimate-beginners-guide-to-j/README.md)
 +   [JavaScript 面向对象编程示例](docs/javascript-object-oriented-programming-by-examples/README.md)
