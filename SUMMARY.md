@@ -493,6 +493,7 @@
 +   [JavaScript Web开发实战指南](docs/javascript---the-web-warrior-series/README.md)
 +   [Javascript 1.5 示例](docs/javascript-15-by-example/README.md)
 +   [JavaScript 1.5 示例](docs/javascript-15-by-example-by-example/README.md)
++   [Javascript：2本合1：初学者指南 + Javascript 编程代码技巧 (javascript, Java, Python, 代码, 编程语言, 编程, 计算机编程) (第 1 卷)](docs/javascript-2-books-in-1-beginners-guide-tips-and-tricks-to-p/README.md)
 +   [JavaScript：二合一合集：初学者指南 + JavaScript 编程技巧](docs/javascript-2-in-1-bundle-beginners-guide-tips-and-tricks-to-/README.md)
 +   [JavaScript：成功 Web 开发的 20 课](docs/javascript-20-lessons-to-successful-web-development/README.md)
 +   [JavaScript 2.0 权威参考指南](docs/javascript-20-the-complete-reference/README.md)
