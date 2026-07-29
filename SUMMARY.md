@@ -508,6 +508,7 @@
 +   [JavaScript 初学者入门指南](docs/javascript-a-booklet-for-novices-javascript/README.md)
 +   [Javascript：循序渐进掌握 JavaScript 编程初学者指南 1](docs/javascript-a-comprehensive-beginners-guide-to-mastering-java/README.md)
 +   [JavaScript：创建动态响应式网站与应用的全面手册](docs/javascript-a-comprehensive-manual-for-creating-dynamic-respo/README.md)
++   [JAVASCRIPT：开发者全面手册](docs/javascript-a-comprehensive-manual-for-developers/README.md)
 +   [Javascript：初学者掌握 Javascript 编程分步指南](docs/javascript-a-step-by-step-guide-for-beginners-to-master-java/README.md)
 +   [JavaScript 入门指南](docs/javascript-absolute-beginners-guide/README.md)
 +   [JavaScript 入门指南 [2020]](docs/javascript-absolute-beginners-guide-2020/README.md)
