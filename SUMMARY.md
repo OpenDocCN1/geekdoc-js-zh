@@ -503,6 +503,7 @@
 +   [JavaScript 入门指南](docs/javascript-a-beginners-guide/README.md)
 +   [JavaScript 初学者指南 4/E](docs/javascript-a-beginners-guide-4e/README.md)
 +   [JavaScript 入学者指南 第五版](docs/javascript-a-beginners-guide-fifth-edition-5th-edition/README.md)
++   [JavaScript 入门指南，第三版](docs/javascript-a-beginners-guide-third-edition/README.md)
 +   [JavaScript：初学者指南：从零开始通过实战之旅精通 JavaScript](docs/javascript-a-beginners-handbook-learn-fluent-javascript-from/README.md)
 +   [JavaScript 初学者入门指南](docs/javascript-a-booklet-for-novices-javascript/README.md)
 +   [Javascript：循序渐进掌握 JavaScript 编程初学者指南 1](docs/javascript-a-comprehensive-beginners-guide-to-mastering-java/README.md)
