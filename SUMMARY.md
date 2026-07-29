@@ -775,6 +775,7 @@
 +   [JavaScript 周末速成指南](docs/javascript-weekend-crash-course/README.md)
 +   [JavaScript Promises](docs/javascript-with-promises/README.md)
 +   [JavaScript：构建动态网页的可视化蓝图（视觉读少学多）](docs/javascript-your-visual-blueprint-for-building-dynamic-web-pa/README.md)
++   [Javascript.info Ebook 第 2 部分 浏览器：文档、事件、接口](docs/javascriptinfo-ebook-part-2-browser-document-events-interfac/README.md)
 +   [JavaScript 1.5 示例](docs/javascriptвў-15-by-example/README.md)
 +   [Java™ 全合一桌边参考指南](docs/javatm-all-in-one-desk-reference-for-dummies/README.md)
 +   [JBuilder 7.0 EJB 编程（Wordware Jbuilder 文库）](docs/jbuilder-70-ejb-programming-wordware-jbuilder-library/README.md)
