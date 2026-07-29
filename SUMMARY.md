@@ -766,6 +766,7 @@
 +   [JavaScript 核心原理：编写编译器（Babel 插件），V8 内部机制](docs/javascript-under-the-hood-writing-compilers-babel-plugins-v8/README.md)
 +   [JavaScript 实战 (第4版)](docs/javascript-unleashed-4th-edition/README.md)
 +   [JavaScript Unleashed：释放 Web 脚本的力量](docs/javascript-unleashed-harnessing-the-power-of-web-scripting/README.md)
++   [JavaScript 快速启动指南](docs/javascript-visual-quickstart-guide/README.md)
 +   [JavaScript 快速启动指南，第8版](docs/javascript-visual-quickstart-guide-8th-edition-8th-nd/README.md)
 +   [JavaScript Web Applications：jQuery 开发者迁移状态至客户端指南](docs/javascript-web-applications-jquery-developers-guide-to-movin/README.md)
 +   [JavaScript 周末速成指南](docs/javascript-weekend-crash-course/README.md)
