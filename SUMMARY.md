@@ -769,6 +769,7 @@
 +   [JavaScript 教程 - Herong 的教程示例](docs/javascript-tutorials---herongs-tutorial-examples/README.md)
 +   [Javascript：初学者指南](docs/javascript-ultimate-beginners-guide/README.md)
 +   [JavaScript 核心原理：编写编译器（Babel 插件），V8 内部机制](docs/javascript-under-the-hood-writing-compilers-babel-plugins-v8/README.md)
++   [JavaScript 解锁指南](docs/javascript-unleashed/README.md)
 +   [JavaScript 实战 (第4版)](docs/javascript-unleashed-4th-edition/README.md)
 +   [JavaScript Unleashed：释放 Web 脚本的力量](docs/javascript-unleashed-harnessing-the-power-of-web-scripting/README.md)
 +   [JavaScript 快速启动指南](docs/javascript-visual-quickstart-guide/README.md)
