@@ -759,6 +759,7 @@
 +   [Javascript：Javascript 编程终极指南（Javascript 初学者指南、如何编程、软件开发、基础 Javascript、浏览器... 编码、CSS、Java、PHP）（第 7 卷）](docs/javascript-the-ultimate-guide-for-javascript-programming-jav/README.md)
 +   [Javascript：Javascript 编程与计算机黑客终极指南（初学者指南、如何编程、黑客揭、黑客、如何...（C 语言编程、HTML、编码、CSS、Java、PHP））](docs/javascript-the-ultimate-guide-to-javascript-programming-and-/README.md)
 +   [JavaScript：理解 JavaScript 代码及其基础终极指南。探索字面量与控制流。学习变量、函数、对象以及最佳 jQuery。](docs/javascript-the-ultimate-guide-to-understand-javascript-code-/README.md)
++   [JavaScript 第三版](docs/javascript-third-edition/README.md)
 +   [JavaScript：快速高效学习 JavaScript 编程的技巧与窍门](docs/javascript-tips-and-tricks-to-learn-javascript-programming-q/README.md)
 +   [JavaScript 编程技巧与技巧指南](docs/javascript-tips-and-tricks-to-programming-code-with-javascri/README.md)
 +   [JavaScript 工具指南](docs/javascript-tools-guide/README.md)
