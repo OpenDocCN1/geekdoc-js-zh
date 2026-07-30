@@ -559,6 +559,7 @@
 +   [JavaScript 圣经 第四版 [电子资源]](docs/javascript-bible-fourth-edition-electronic-resource/README.md)
 +   [JavaScript圣经，金版](docs/javascript-bible-gold-edition/README.md)
 +   [JavaScript 圣经](docs/javascript-bible-includes-index/README.md)
++   [JavaScript 圣经（第七版）](docs/javascript-bible-seventh-edition/README.md)
 +   [JavaScript 训练营：在 2 周内学习 JavaScript 编程基础（免费书籍、Angularjs、jQuery、JavaScript 可视化）](docs/javascript-bootcamp---learn-the-basics-of-javascript-program/README.md)
 +   [JavaScript 头脑体操：锻炼你的思维](docs/javascript-brain-teasers-exercise-your-mind/README.md)
 +   [JavaScript 示例：100 多个实战编码挑战助你精通 JS](docs/javascript-by-doing-over-100-hands-on-coding-challenges-for-/README.md)
