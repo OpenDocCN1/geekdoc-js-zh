@@ -536,6 +536,7 @@
 +   [JavaScript 与 Java 编码简单化：编程初学者指南 - 2 本合一](docs/javascript-and-java-coding-made-simple-a-beginners-guide-to-/README.md)
 +   [JavaScript 与 JQuery](docs/javascript-and-jquery/README.md)
 +   [JavaScript 和 JQuery 数据分析与可视化](docs/javascript-and-jquery-for-data-analysis-and-visualization/README.md)
++   [JavaScript 和 JQuery 数据分析与可视化](docs/javascript-and-jquery-for-data-analysis-and-visualization版本-/README.md)
 +   [JavaScript 与 JQuery：交互式前端Web开发指南](docs/javascript-and-jquery-interactive-front-end-web-development-/README.md)
 +   [JavaScript 和 Node 基础指南](docs/javascript-and-node-fundamentals/README.md)
 +   [JavaScript 与开放数据 (计算机工程)](docs/javascript-and-open-data-computer-engineering/README.md)
