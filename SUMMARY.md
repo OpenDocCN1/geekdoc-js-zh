@@ -477,6 +477,8 @@
 +   [Windows 系统管理员十大入门脚本（系统管理员优势系列）](docs/it-administrators-top-ten-introductory-scripts-for-windows-a/README.md)
 +   [JavaScript 周末速成课](docs/j097vascript-weekend-crash-course/README.md)
 +   [JAVA：第2版！初学者快速课程 - Javascript 初学者指南：程序 Java、jQuery 及 Java 编程（初学者 Java、学习 Java... 编程语言，编码书籍 1）](docs/java-2nd-edition-beginners-crash-course---javascript-for-beg/README.md)
++   [Java 入门指南，第七版](docs/java-a-beginners-guide-seventh-edition/README.md)
++   [Java 入门指南，第三版（初学者指南）](docs/java-a-beginners-guide-third-edition-beginners-guide/README.md)
 +   [Java 傻瓜书全能宝典](docs/java-all-in-one-desk-reference-for-dummies-9-books-in-1-java/README.md)
 +   [Java 编程入门指南](docs/java-beginners-guide-to-programming-code-with-java-java-java/README.md)
 +   [JAVA：JAVA 初学者指南 - 快速简单地学习 JAVA - JAVA 编程语言](docs/java-java-for-beginners---the-quick-and-simple-way-to-learn-/README.md)
