@@ -783,6 +783,7 @@
 +   [JavaScript 快速启动指南](docs/javascript-visual-quickstart-guide/README.md)
 +   [JavaScript 快速启动指南，第8版](docs/javascript-visual-quickstart-guide-8th-edition-8th-nd/README.md)
 +   [JavaScript Web Applications：jQuery 开发者迁移状态至客户端指南](docs/javascript-web-applications-jquery-developers-guide-to-movin/README.md)
++   [JavaScript Web 战士系列](docs/javascript-web-warrior-series/README.md)
 +   [JavaScript 周末速成指南](docs/javascript-weekend-crash-course/README.md)
 +   [JavaScript Promises](docs/javascript-with-promises/README.md)
 +   [JavaScript：构建动态网页的可视化蓝图（视觉读少学多）](docs/javascript-your-visual-blueprint-for-building-dynamic-web-pa/README.md)
