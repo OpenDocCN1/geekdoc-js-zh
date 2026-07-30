@@ -3767,7 +3767,9 @@ Angular 支持双向数据绑定，允许 UI 和模型之间的数据同步。�
 ```html
 <input [(ngModel)]="name">
 <p>Hello, {{ name }}</p>
-```## 6.5 Vue.js：渐进式框架
+```
+
+## 6.5 Vue.js：渐进式框架
 
 [Vue.js](https://vuejs.org/) 是一个用于构建界面的渐进式 JavaScript 框架。它因简单、灵活和于集成到现有项目中深受赞誉。Vue.js 适用于单页应用和大型项目。
 
@@ -3847,7 +3849,9 @@ const router = new Router({
 Vue.use(router);
 
 new Vue({$router});
-```### Vue CLI
+```
+
+### Vue CLI
 
 [Vue CLI](https://cli.vuejs.org/) 是一个命令行工具，简化了项目生成、开发、构建和部署。
 
@@ -3860,7 +3864,9 @@ vue serve
 
 # 构建项目
 vue build
-```# 第 15 章：国际化和本地化
+```
+
+# 第 15 章：国际化和本地化
 
 ## 15.1 节：国际化的重要性
 
@@ -3913,7 +3919,9 @@ const collator = new Intl.Collator('de');
 const fruits = ['äpfel', 'banane', 'cherry'];
 fruits.sort(collator.compare);
 console.log(fruits); // ["äpfel", "banane", "cherry"]
-```## 15.3 节：语言和区域检测
+```
+
+## 15.3 节：语言和区域检测
 
 语言和区域检测是国际化的关键部分。它涉及识别用户的偏好语言和设置以提供适当的内容。
 
@@ -3923,13 +3931,17 @@ console.log(fruits); // ["äpfel", "banane", "cherry"]
 
 ```javascript
 console.log(navigator.language); // "en-US"
-```### Intl.getCanonicalLocales()
+``
+
+### Intl.getCanonicalLocales()
 
 `Intl.getCanonicalLocales()` 方法将语言标签数组解析为规范形式。
 
 ```javascript
 const canonicalLocales = Intl.getCanonicalLocales(['en-US']);
 console.log(canonicalLocales); // ["en-US"]
+```
+
 ### Intl.supportedLocales()
 
 `Intl.supportedLocales()` 方法检查浏览器支持的语言标签。
@@ -3937,6 +3949,7 @@ console.log(canonicalLocales); // ["en-US"]
 ```javascript
 const supported = Intl.supportedLocales(['en-US', 'fr-FR']);
 console.log(supported); // ["en-US", "fr-FR"]## 15.4 节：本地化技术
+```
 
 本地化是将你的应用程序适配特定的语言和文化。这不仅仅是翻译，还包括文化细差别。
 
@@ -3958,6 +3971,7 @@ const resources = {
 
 const lang = 'fr';
 console.log(resources[lang].greeting); // "Bonjour, le Monde!"### 处理语言更改
+```
 
 当用户切换语言时，应用程序应该动态更新内容。在 React 等框架中，你可以使用状态和上下文来传播选择的语言。
 
@@ -3982,3 +3996,4 @@ function App() {
 }
 
 export default App;
+```
