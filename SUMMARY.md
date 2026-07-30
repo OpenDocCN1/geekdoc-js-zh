@@ -901,6 +901,7 @@
 +   [学习 Python, Java, JavaScript, C, C++, C#, CSS, HTML, jQuery, MySQL, SQL, LINUX, Perl, PHP 或 XML：快速获取 300+ 种免费教材、100+ 份查表、100+ vi 脚本的链接](docs/learning-python-java-javascript-c-c-c-css-html-jquery-mysql-/README.md)
 +   [学习 React：使用 React JavaScript 库构建可维护、高性能 Web 应用程序界面的实用指南](docs/learning-react-a-hands-on-guide-to-building-maintainable-hig/README.md)
 +   [Learning TypeScript 5：超越 JavaScript，为大型项目构建更具维护性和健壮性的 Web](docs/learning-typescript-5-go-beyond-javascript-to-build-more-mai/README.md)
++   [进阶 JavaScript：TypeScript 实用指南](docs/level-up-your-javascript-a-practical-guide-to-typescript/README.md)
 +   [Javascript 学习手册](docs/lrn-js/README.md)
 +   [Rust 学习手册 🚧](docs/lrn-rust/README.md)
 +   [编程逻辑：使用 Javascript 和 HTML 创建你的第一个程序](docs/lógica-de-programação-crie-seus-primeiros-programas-usando-j/README.md)
