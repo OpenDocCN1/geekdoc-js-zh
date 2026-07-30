@@ -553,6 +553,7 @@
 +   [JavaScript 编程最佳实践](docs/javascript-best-practices-to-programming-code-with-javascrip/README.md)
 +   [JavaScript：超越基础——掌握奇特性：解锁作用域、闭包、原型、this 以及更多力量](docs/javascript-beyond-the-basics-master-the-quirks-unlock-the-po/README.md)
 +   [JavaScript 圣经](docs/javascript-bible/README.md)
++   [JavaScript圣经（第5版）](docs/javascript-bible-5th-edition/README.md)
 +   [JavaScript圣经（第6版）](docs/javascript-bible-6th-edition/README.md)
 +   [JavaScript 经（第7版）](docs/javascript-bible-7th-edition/README.md)
 +   [JavaScript 圣经 第四版 [电子资源]](docs/javascript-bible-fourth-edition-electronic-resource/README.md)
