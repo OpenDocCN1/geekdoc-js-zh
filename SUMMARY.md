@@ -503,6 +503,7 @@
 +   [JavaScript 三合一教程](docs/javascript-3-books-in-1/README.md)
 +   [Javascript：3合1：Javascript 初学者指南 + Javascript 前端编程 + Javascript 后端编程](docs/javascript-3-books-in-1-javascript-basics-for-beginners-java/README.md)
 +   [Javascript：4本合1](docs/javascript-4-books-in-1-beginners-guide-to-programming-code-/README.md)
++   [JavaScript 第5版（Web技术系列）](docs/javascript-5th-edition-the-web-technologies-series/README.md)
 +   [JavaScript 入门指南](docs/javascript-a-beginners-guide/README.md)
 +   [JavaScript 初学者指南 4/E](docs/javascript-a-beginners-guide-4e/README.md)
 +   [JavaScript 入学者指南 第五版](docs/javascript-a-beginners-guide-fifth-edition-5th-edition/README.md)
