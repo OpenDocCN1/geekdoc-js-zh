@@ -736,6 +736,7 @@
 +   [Javascript 高级项目指南](docs/javascript-professional-projects/README.md)
 +   [JavaScript 程序员参考手册](docs/javascript-programmer39s-reference/README.md)
 +   [JavaScript 程序员参考指南](docs/javascript-programmers-reference/README.md)
++   [Javascript 程序员参考指南；包含电子书和 HTML 格式的完整参考](docs/javascript-programmers-reference-contains-complete-reference/README.md)
 +   [JavaScript 编程：初学者指南，掌握 JavaScript 编程语言并成为专家](docs/javascript-programming-a-complete-guide-for-beginners-to-mas/README.md)
 +   [JavaScript 编程入门指南](docs/javascript-programming-basics/README.md)
 +   [JavaScript：绝对初学者编程基础指南（循步渐进 JavaScript 第 1 册）](docs/javascript-programming-basics-for-absolute-beginners-step-by/README.md)
