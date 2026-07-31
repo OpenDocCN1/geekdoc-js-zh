@@ -639,6 +639,7 @@
 +   [适合急躁程序员的 JavaScript](docs/javascript-for-impatient-programmers/README.md)
 +   [急躁程序员的 JavaScript 指南 (ECMAScript, 2021 版)](docs/javascript-for-impatient-programmers-ecmascript-2021-edition/README.md)
 +   [给急躁程序员准备的 JavaScript (ES2020 版)](docs/javascript-for-impatient-programmers-es2020-edition/README.md)
++   [给急躁程序员的 JavaScript (ES2021版)](docs/javascript-for-impatient-programmers-es2021-edition/README.md)
 +   [急躁程序员的 JavaScript (免费演示版)](docs/javascript-for-impatient-programmers-free-demo-version/README.md)
 +   [少的 JavaScript：趣味编程入门指南](docs/javascript-for-kids-a-playful-introduction-to-programming/README.md)
 +   [儿童的 JavaScript：编程趣味入门指南](docs/javascript-for-kids-a-playful-introduction-to-programming-a-/README.md)
