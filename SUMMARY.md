@@ -508,6 +508,7 @@
 +   [JavaScript 初学者指南 4/E](docs/javascript-a-beginners-guide-4e/README.md)
 +   [JavaScript 入门指南，第五版](docs/javascript-a-beginners-guide-fifth-edition/README.md)
 +   [JavaScript 入学者指南 第五版](docs/javascript-a-beginners-guide-fifth-edition-5th-edition/README.md)
++   [JavaScript 入门指南，第四版](docs/javascript-a-beginners-guide-fourth-edition/README.md)
 +   [JavaScript 入门指南，第四版](docs/javascript-a-beginners-guide-fourth-edition-inkling-ch/README.md)
 +   [JavaScript 入门指南，第三版](docs/javascript-a-beginners-guide-third-edition/README.md)
 +   [JavaScript 入门指南，第三版](docs/javascript-a-beginners-guide-third-edition-beginners-guide-o/README.md)
