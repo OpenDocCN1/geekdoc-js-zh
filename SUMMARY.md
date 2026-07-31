@@ -584,6 +584,7 @@
 +   [JAVASCRIPT 编码实践练习：初学者编码指南](docs/javascript-coding-practice-exercises-coding-for-beginners/README.md)
 +   [JavaScript：完整概念与技术，第二版（Shelly Cashman 系列）](docs/javascript-complete-concepts-and-techniques-second-edition-s/README.md)
 +   [Javascript：完整概念与技术 (Shelly Cashman 系列)](docs/javascript-complete-concepts-and-techniques-shelly-cashman-s/README.md)
++   [JavaScript 综合指南](docs/javascript-comprehensive-none/README.md)
 +   [JavaScript 秘籍（第二版）](docs/javascript-cookbook-2nd-edition/README.md)
 +   [JavaScript 快速上手指南](docs/javascript-crash-course/README.md)
 +   [Javascript 快速上手 - 快速学习 JavaScript 编程完整初学者指南！（Angularjs, jQuery, JavaScript 可视化）](docs/javascript-crash-course---the-complete-beginners-guide-to-le/README.md)
