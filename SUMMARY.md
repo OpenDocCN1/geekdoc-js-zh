@@ -770,6 +770,7 @@
 +   [JavaScript 语法与实践指南](docs/javascript-syntax-and-practices-1/README.md)
 +   [JavaScript Jasmine 测试](docs/javascript-testing-with-jasmine/README.md)
 +   [JavaScript 完全参考（第3版）](docs/javascript-the-complete-reference-3rd-edition/README.md)
++   [JavaScript：完全参考；详解如何使用 JavaScript 开发强大且动态的 页面；深度解析 W3C 文档对象模型标准](docs/javascript-the-complete-reference-explains-how-to-develop-po/README.md)
 +   [JavaScript：专业 JavaScript 编程学习全面指南](docs/javascript-the-comprehensive-guide-to-learning-professional-/README.md)
 +   [JavaScript：最初 20 年](docs/javascript-the-first-20-years/README.md)
 +   [JavaScript：精粹部分](docs/javascript-the-good-parts/README.md)
