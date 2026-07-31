@@ -506,6 +506,7 @@
 +   [JavaScript 第5版（Web技术系列）](docs/javascript-5th-edition-the-web-technologies-series/README.md)
 +   [JavaScript 入门指南](docs/javascript-a-beginners-guide/README.md)
 +   [JavaScript 初学者指南 4/E](docs/javascript-a-beginners-guide-4e/README.md)
++   [JavaScript 入门指南，第五版](docs/javascript-a-beginners-guide-fifth-edition/README.md)
 +   [JavaScript 入学者指南 第五版](docs/javascript-a-beginners-guide-fifth-edition-5th-edition/README.md)
 +   [JavaScript 入门指南，第三版](docs/javascript-a-beginners-guide-third-edition/README.md)
 +   [JavaScript 入门指南，第三版](docs/javascript-a-beginners-guide-third-edition-beginners-guide-o/README.md)
