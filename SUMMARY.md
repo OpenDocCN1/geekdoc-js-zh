@@ -485,6 +485,7 @@
 +   [Java：初学者 Java 编程 - Java 编程简单入门（软件工程师编写）（Java，Java 编程，Java 8, Javascript ... Java ee，初学者 Java 书第 1 卷）](docs/java-java-programming-for-beginners---a-simple-start-to-java/README.md)
 +   [Java：初学者 Java 编程零基础到大师速成课程 (Java、Java 编程语言、Java 编码、Java... 初学者 Java 编程、JavaScript)](docs/java-learn-java-programming-with-ultimate-zero-to-hero-progr/README.md)
 +   [初学者 Java 编程：通过学习面向对象编程提高软件工程技能。学习虚拟机、Javascript 和机器码 (2022)](docs/java-programming-for-beginners-improve-your-software-enginee/README.md)
++   [Java：完全参考，第十版（完全参考系列）](docs/java-the-complete-reference-tenth-edition-complete-reference/README.md)
 +   [Java：快速学习 Java 编程入门指南（编程、数据库、Java 学者指南、编程书籍、Java 编程）（HTML、Javascript、编程、开发者、编码、CSS、PHP 书籍 2）](docs/java-the-simple-guide-to-learn-java-programming-in-no-time-p/README.md)
 +   [Java：学习 Java 编程与计算机黑客技术的终极指南（Java 初学者、Java 教程、Java 应用、黑客技术）（HTML, Javascript, 编程、开发者、编码、CSS, PHP 书籍 2）](docs/java-the-ultimate-guide-to-learn-java-programming-and-comput/README.md)
 +   [Java 编程技巧与窍门](docs/java-tips-and-tricks-to-programming-code-with-java/README.md)
