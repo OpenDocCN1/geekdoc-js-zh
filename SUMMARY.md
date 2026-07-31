@@ -916,6 +916,7 @@
 +   [DHTMLX Suite UI 学习指南：使用多个 DHTMLX 组件和 HTML5 技术创建你的首个单页 JavaScript 应用](docs/learning-dhtmlx-suite-ui-create-your-first-single-page-javas/README.md)
 +   [学习 ECMAScript 6：掌握所有 ES6 新特性，成为最杰出的 JavaScript 开发者之一，能够按照最新标准编写高效的 JS 程序](docs/learning-ecmascript-6-learn-all-the-new-es6-features-and-be-/README.md)
 +   [学习 HTML5 游戏编程实用指南：使用 Canvas、SVG 和 WebGL 构建在线游戏](docs/learning-html5-game-programming-a-hands-on-guide-to-building/README.md)
++   [学习 JavaScript：现代 JavaScript 基础实用指南](docs/learning-javascript-a-hands-on-guide-to-the-fundamentals-of-/README.md)
 +   [JavaScript 数据结构与算法学习 - 第二版](docs/learning-javascript-data-structures-and-algorithms---second-/README.md)
 +   [JavaScript 机器人入门指南](docs/learning-javascript-robotics/README.md)
 +   [学习 Python, Java, JavaScript, C, C++, C#, CSS, HTML, jQuery, MySQL, SQL, LINUX, Perl, PHP 或 XML：快速获取 300+ 种免费教材、100+ 份查表、100+ vi 脚本的链接](docs/learning-python-java-javascript-c-c-c-css-html-jquery-mysql-/README.md)
