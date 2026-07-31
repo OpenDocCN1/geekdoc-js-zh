@@ -668,6 +668,7 @@
 +   [JavaScript 基础：循步指南](docs/javascript-fundamental-a-step-by-step-guide/README.md)
 +   [JavaScript 入门指南](docs/javascript-fundamentals/README.md)
 +   [JavaScript 基础与入门指南](docs/javascript-fundamentals-and-basics/README.md)
++   [Javascript 基础入门指南 CIW 应用开发者系列](docs/javascript-fundamentals-ciw-application-developer-series/README.md)
 +   [JavaScript 术语手册](docs/javascript-glossary-on-demand/README.md)
 +   [JavaScript 精进技巧 (第2版)](docs/javascript-goodies-2nd-edition/README.md)
 +   [Javascript 语法入门：学会使用 JavaScript](docs/javascript-grammar-learn-to-speak-javascript/README.md)
