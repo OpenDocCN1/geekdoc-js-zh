@@ -557,6 +557,7 @@
 +   [JavaScript圣经（第5版）](docs/javascript-bible-5th-edition/README.md)
 +   [JavaScript圣经（第6版）](docs/javascript-bible-6th-edition/README.md)
 +   [JavaScript 经（第7版）](docs/javascript-bible-7th-edition/README.md)
++   [JavaScript 圣经 第 7 版 (2010)](docs/javascript-bible-7th-edition-2010/README.md)
 +   [JavaScript 圣经（第五版）](docs/javascript-bible-fifth-edition/README.md)
 +   [JavaScript 圣经 第四版 [电子资源]](docs/javascript-bible-fourth-edition-electronic-resource/README.md)
 +   [JavaScript圣经，金版](docs/javascript-bible-gold-edition/README.md)
