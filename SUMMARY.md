@@ -652,6 +652,7 @@
 +   [声音艺术家的 JavaScript：使用 Web Audio API 学习编程](docs/javascript-for-sound-artistslearn-to-code-with-the-web-audio/README.md)
 +   [面向业务开发者的 JavaScript (业务开发人员系列)](docs/javascript-for-the-business-developer-business-developers-se/README.md)
 +   [Web 开发 JavaScript 入门指南，第五版（视觉快速启动指南）](docs/javascript-for-the-world-wide-web-fifth-edition-visual-quick/README.md)
++   [Web 设计师的 JavaScript](docs/javascript-for-web-designers/README.md)
 +   [Web 开发的 Javascript](docs/javascript-for-web-development/README.md)
 +   [Web 战士的 JavaScript](docs/javascript-for-web-warriors-mindtap-course-list/README.md)
 +   [Javascript 框架：从初学者到高级的顶级编程课程。快速高效精通 (2024)](docs/javascript-framework-the-1-coding-course-from-beginner-to-ad/README.md)
