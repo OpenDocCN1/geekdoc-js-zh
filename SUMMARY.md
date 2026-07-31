@@ -658,6 +658,7 @@
 +   [Javascript 框架：从初学者到高级的顶级编程课程。快速高效精通 (2024)](docs/javascript-framework-the-1-coding-course-from-beginner-to-ad/README.md)
 +   [JavaScript：一周内从初学者到精通](docs/javascript-from-beginner-to-expert-in-less-than-a-week/README.md)
 +   [JavaScript 从初学者到专家：通过构建有趣的、交互式的及动态 Web 应用、游戏和页面快速学习 JavaScript](docs/javascript-from-beginner-to-professional-learn-javascript-qu/README.md)
++   [JavaScript 从前端到后端 (2022)](docs/javascript-from-frontend-to-backend-2022/README.md)
 +   [JavaScript 从零到大师：史上最全指南，即使是编程新手也能掌握现代 JavaScript](docs/javascript-from-zero-to-hero-the-most-complete-guide-ever-ma/README.md)
 +   [JavaScript：JavaScript 开发者的函数式编程：解锁 JavaScript 隐藏的函数式编程力量，构建更智能、更整洁、更可靠的 Web 应用](docs/javascript-functional-programming-for-javascript-developers-/README.md)
 +   [JavaScript 函数、闭包与原型：学习 JavaScript 函数、闭包和原型的基础知识](docs/javascript-functions-closures-and-prototypes-learn-the-funda/README.md)
