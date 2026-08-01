@@ -975,6 +975,7 @@
 +   [精通 React：初学者指南 (计算机科学大师)](docs/mastering-react-a-beginners-guide-mastering-computer-science/README.md)
 +   [精通 React JS 与 JavaScript 精通：全面指南：SEO 秘籍构建动态 Web 应用的中级学习者指南 - 2 本合 1](docs/mastering-react-js-and-javascript-mastery-a-comprehensive-gu/README.md)
 +   [精通 React Native：初学者指南 (计算机科学大师系列)](docs/mastering-react-native-a-beginners-guide-mastering-computer-/README.md)
++   [精通互联网、XHTML 和 JavaScript（第2版）](docs/mastering-the-internet-xhtml-and-javascript-2nd-edition/README.md)
 +   [掌握 Internet、Xhtml 和 Javascript（中德克萨斯州版）](docs/mastering-the-internet-xhtml-and-javascript-central-texas-ed/README.md)
 +   [精通 TypeScript：现代 JavaScript 开发全面指南](docs/mastering-typescript-a-comprehensive-guide-to-modern-javascr/README.md)
 +   [精通 TypeScript：使用 TypeScript 和主流 JavaScript 框架构建企业级、工业级 Web 应用第 2 版](docs/mastering-typescript-build-enterprise-ready-industrial-stren/README.md)
