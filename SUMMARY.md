@@ -981,6 +981,7 @@
 +   [McGraw Hill - JavaScript 初学者指南，第三版](docs/mcgraw-hill---javascript-a-beginners-guide-third-edition/README.md)
 +   [MCQ 精通：JavaScript 面试题](docs/mcq-mastery-javascript-interview-question/README.md)
 +   [MEAN Machine：JavaScript 栈初学者实践指南](docs/mean-machine-a-beginners-practical-guide-to-the-javascript-s/README.md)
++   [Microsoft ASP.Net 逐步指南](docs/microsoft-aspnet-step-by-step-step-by-step-microsoft/README.md)
 +   [Microsoft® JavaScript 入门指南](docs/microsoft-start-heretm-learn-javascript/README.md)
 +   [Microsoft VBScript 专业项目指南](docs/microsoft-vbscript-professional-projects/README.md)
 +   [Microsoft Word 入门指南](docs/microsoft-word---cdoc/README.md)
