@@ -929,6 +929,7 @@
 +   [学习 React：使用 React 和 Redux 构建 Web 应用实用指南](docs/learning-react-a-hands-on-guide-to-building-web-applications/README.md)
 +   [学习 React Native：使用 JavaScript 构建原生移动应用指南第 2 版](docs/learning-react-native-building-native-mobile-apps-with-javas/README.md)
 +   [正则表达式入门指南](docs/learning-regular-expressions/README.md)
++   [单页 Web 应用开发指南：使用 Node.js、MongoDB、AngularJS 和 Express 框架全栈 JavaScript 环境构建强大且可扩展的单页 Web 应用](docs/learning-single-page-web-application-development-build-power/README.md)
 +   [Learning TypeScript 5：超越 JavaScript，为大型项目构建更具维护性和健壮性的 Web](docs/learning-typescript-5-go-beyond-javascript-to-build-more-mai/README.md)
 +   [进阶 JavaScript：TypeScript 实用指南](docs/level-up-your-javascript-a-practical-guide-to-typescript/README.md)
 +   [Javascript 学习手册](docs/lrn-js/README.md)
