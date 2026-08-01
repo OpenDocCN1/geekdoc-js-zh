@@ -959,6 +959,7 @@
 +   [JavaScript 高级指南](docs/mastering-javascript/README.md)
 +   [精通 JavaScript：完整编程指南，包含 jQuery、AJAX、Web 设计、脚本编写和移动应用开发](docs/mastering-javascript-a-complete-programming-guide-including-/README.md)
 +   [精通 JavaScript：全球最流行编程语言全面指南](docs/mastering-javascript-a-comprehensive-guide-to-the-worlds-mos/README.md)
++   [精通 JavaScript：探索并掌握现代 JavaScript 技术以构建大规模 Web 应用](docs/mastering-javascript-explore-and-master-modern-javascript-te/README.md)
 +   [JavaScript游戏开发精通：打造独特体验](docs/mastering-javascript-for-game-development-crafting-unique-ex/README.md)
 +   [精通 JavaScript 框架：现代 Web 开发全面指南](docs/mastering-javascript-frameworks-a-comprehensive-guide-to-mod/README.md)
 +   [Javascript 高级指南 版](docs/mastering-javascript-premium-edition/README.md)
