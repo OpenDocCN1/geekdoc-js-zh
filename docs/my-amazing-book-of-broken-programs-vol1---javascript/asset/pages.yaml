@@ -1,0 +1,1563 @@
+- img_proc: true
+  md: '# # My AMAZING Book of BROKEN Programs
+
+    by kiki Prottsma n vol. 1 JavaScript
+
+
+    A well-rounded guide for helping children learn to solve problems on their own
+    using JavaScript.
+
+
+    Illustrated by Maha Younus
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_0_0.png)'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: '![](img/7ba224f9964b228593c5b512598a5256_1_0.png)'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: '# # My AMAZING Book of
+
+    # BROKEN Programs
+
+
+    by Kiki Protsman vol. 1
+
+    Illustrated by Maha Younus JavaScript'
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: '# About the author:
+
+
+    Kiki Protsman is an award-winning educational designer with a master’s degree
+    in computer science and more than 200 full-service elementary school lessons beneath
+    her.
+
+
+    As the former Executive Director of Thinkersmith, Kiki made her name creating
+    activities that introduce students to the concepts behind programming. After joining
+    Code.org in 2013, Kiki began to develop online lessons for young programmers as
+    well.
+
+
+    Having oversight to dozens of exercises included in the annual Hour of Code® event,
+    it is estimated that Kiki’s activities have reached more than 200 million learners
+    across the globe. If you are ready to try programming for the first time, you
+    really should use a guide with her name on it.
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_3_0.png)
+
+
+    # Contents
+
+
+    Written by Kiki Protsman
+
+    Edited by Nicole Reit-Larsen
+
+    Illustrated by Maha Younus
+
+
+    Special thanks tonJames & Jackson Davis
+
+    Terri, Parker, & Keagan Savage
+
+
+    and major supporters
+
+    Heather King, Bryan Adams, and
+
+    Michael Barrow in support of Girl Power!
+
+
+    First Edition, 2020
+
+    Copyright©2020 Kiki Protsman
+
+    All rights reserved.
+
+    This book or any portion thereof may not be reproduced or used in any manner whatsoever
+    without the written permission of the publisher except for the use of brief quotations
+    in a book review.
+
+
+    www.KIKIlv.com
+
+
+    +   4 Getting started
+
+
+    +   6 Hello, World!
+
+
+    +   8 Click me
+
+
+    +   10 It doesn’t work!
+
+
+    +   13 Who are you?
+
+
+    +   14 You are who?
+
+
+    +   16 Variable soup
+
+
+    +   18 Making the connection
+
+
+    +   22 Who’s got the button?
+
+
+    +   23 Click it
+
+
+    +   26 Follow the ball
+
+
+    +   27 Bring it all in
+
+
+    +   28 Accounting for differences
+
+
+    +   29 Let’s have some fun
+
+
+    +   30 Collect the coins
+
+
+    +   31 May I comment
+
+
+    +   32 Unlimited piggies
+
+
+    +   33 Now for something different
+
+
+    +   34 Mystic phrases
+
+
+    +   35 Use your imagination
+
+
+    +   36 Answers
+
+
+    +   38 Glossary
+
+
+    +   39 Index'
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: '# Dear Parents,
+
+
+    Congratulations for making the choice to introduce your kiddosos to a subject
+    that''s creative, fun, and useful!
+
+
+    Programming can be very difficult, but this book has been thoughtfully written
+    to introduce a specific language and important concepts in a way that is simple
+    and easy to follow. If at any time your child gets stuck, please encourage them
+    to explain what they know and have them try to describe the problem that they
+    are having. This is the first step in helping your child to debug problems on
+    their own!
+
+
+    In the event that your child gets to a place where their struggle is no longer
+    productive, I have provided QR codes to scan for helpful resources.
+
+
+    Though tempting, please try your hardest not to swoop in and take over the mouse,
+    keyboard, or navigation for your child. Frustration plays a crucial role in learning
+    and this book expertly balances opportunities for frustration with opportunities
+    for success. Neither is as meaningful without the other.
+
+
+    Happy coding!
+
+    Kifi'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: '# # Getting started
+
+
+    # ## Your new playground)
+
+
+    There are lots of ways to write JavaScript.
+
+    In this book, we recommend https://repl.it. It allows you to create an account
+    (with your parent''s permission) so you can save and share your code online!
+
+
+    Scan to read more about JavaScript environments
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_5_0.png)
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_5_1.png)
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_5_2.png)
+
+
+    ```
+
+    ```javascript
+
+    console.log("Hello, World!");
+
+    ```
+
+    ```
+
+
+    In the rest of this book, we''ll play with programs that have already been started.
+    Click on the correct file in the file window, then edit the code in the program
+    window.
+
+
+    > Technology Changes Fast! Nothing lasts forever and websites are no exception!
+    If the recommended site doesn''t work anymore, visit bit.ly/editJSOnline for other
+    options!'
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: '# Now is a great time to figure out what the icons and buttons in your programming
+    environment do. Can you figure out how you will run your code? Is there a way
+    to share it? Download it? Are there any other settings to play with?
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_6_0.png)
+
+
+    Scan this with a QR Code reader to watch Kiki explain repl.it
+
+
+    # Your turn!
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_6_1.png)
+
+
+    When you play with programs, you should know that you are in complete control
+    of the computer! You don''t always have to write exactly what this book tells
+    you!
+
+
+    Sometimes when you change something the program will stop working. No need to
+    worry. Just put it back and try changing something else instead. Pretty soon,
+    you''ll figure out what everything does. It''s a great way to learn on your own.
+
+
+    Make sure you keep track of the edits you make along the way (in case you want
+    to undo something.)
+
+
+    5'
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: '# # Hello, World!
+
+    (My first program)
+
+
+    It’s a tradition with coders to test out a new programming language by getting
+    the computer to say “Hello, World!” It’s not the most exciting sentence, but you
+    can change it to something else later if you want to.
+
+
+    > Capitalization matters! Make sure to pay attention to the letter case.
+
+
+    https://repl.it/@KIKlvsIT/vol1Intro
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_7_0.png)
+
+
+    > Let’s work in the script.js file.
+
+
+    > You’ll see starter code here
+
+
+    > Make it different!
+
+    Using console.log in a program will write something to the console. What happens
+    when you replace console.log with the word alert?
+
+
+    Visit the purple URL above to get to the starter code for this program.
+
+
+    +   1) What do you think this does?
+
+    2) What will appear in your console?'
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: 'What can you change in this program? Try the "banana" test! Replace words from
+    the program with the word banana (one at a time) and see which changes keep your
+    program running, and which make your program break. Make sure to change the program
+    back between tries!
+
+
+    Can you guess what will work and what won’t?
+
+
+    Scan this to see some fun changes that you can make to the "Hello, World!"
+
+
+    # Let’s break it down...
+
+
+    # What did you try?
+
+
+    ```
+
+    console.log
+
+    ```
+
+
+    This writes a message to the console.
+
+
+    ( )
+
+
+    The parentheses hold the message that belongs to console.log.
+
+
+    " "
+
+
+    The quotes surround a string of text to tell the computer that it should use your
+    words exactly as you entered them.
+
+
+    ;
+
+
+    The semicolon tells the computer that you are finished with that line of instruction.'
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: '# # Click me
+
+    (Connecting JavaScript to HTML)
+
+
+    In this book, we''ll divide our code into three parts:
+
+
+    +   1) **The HTML file** - This will contain the code that tells the webpage what
+    to load when you click "run".
+
+    2) **The JavaScript file** - This is where we''ll spend most of our time.
+
+    3) **The CSS file** - This is where the style rules are written.
+
+
+    This is the main page of code. It calls the other two files. We''ll look in here
+    a little, but only when we need to.
+
+
+    The JavaScript code is kept in this file, so we''ll write most of our code here
+    and only visit other files when we need to change something about the webpage
+    itself.
+
+
+    The CSS file holds the code that makes the webpage look nice. For most of our
+    programs, this part will already be done for us.
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_9_0.png)'
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: 'Visit https://repl.it/@KIKlvsIT/clickMe to see the code for the next program.
+    When you click run, it should work. But what will it do?
+
+
+    https://repl.it/@KIKlvsIT/clickMe
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_10_0.png)
+
+
+    # Let’s break it down...
+
+
+    # function
+
+
+    # runProgram()
+
+
+    This word tells the computer that we''re giving the following code name.
+
+
+    This is the name of the chunk of code between the curly braces.
+
+
+    { }
+
+
+    # alert()
+
+
+    These are called curly braces, They''re like bookends that start and end chunks
+    of code.
+
+
+    This tells the computer to pop up an alert box with a message.
+
+
+    Do you remember what these are for? ( " " )'
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: '# # It doesn’t work!
+
+    (Finding bugs in the code)
+
+
+    This program is broken. It has a bug (which means it has an error).
+
+    Can you compare it to the other programs and figure out why it''s not working?
+    What happens when you click the blue button?
+
+
+    https://repl.it/@KIKIVsIT/oopsie
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_11_0.png)
+
+
+    Remember that you need to click
+
+
+    before the website will load, then
+
+    you need to click
+
+
+    before the function will run.
+
+
+    > Spot the difference!
+
+    What do the other programs have that this one doesn''t?
+
+    What happens when you add the missing stuff back?'
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: '# Reading the console
+
+
+    SyntaxError: Unexpected string
+
+
+    > This lets us know that something is written in the wrong way, and that thing
+    is a string that the computer does not expect to see yet.
+
+
+    at /script.js:2:9
+
+
+    > This tells us that the place where the computer gets confused is in the "script.js"
+    on line 2, at position 9. (That''s where it expects to see something else.)
+
+
+    ReferenceError: myProgram is not defined at HTMLButtonElement.onclick (:12:37)
+
+
+    > Because there''s an error inside the myProgram function, the file not recognize
+    the definition! Fix the bug and this will go away.
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_12_0.png)'
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: '# What did you try?
+
+
+    # What happened?
+
+
+    You might notice that it''s not just one thing that''s missing, it''s a set of
+    things! Did you figure that out? Did the console help?
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_13_0.png)
+
+
+    Sometimes you get an idea, but lose it before you can get to the computer to try
+    it.
+
+
+    It can be helpful to have paper handy when you''re working through problems.
+
+
+    (Also, you can take notes here.)'
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: '# # Who are you?
+
+    (Getting input)
+
+
+    Getting input from a user is really easy with JavaScript. We just need to use
+    the prompt command. Clicking the button in this program will pop up an input box
+    that asks the user''s name.
+
+
+    https://repl.it/@KIKlvsIT/whoDIs
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_14_0.png)
+
+
+    > ### Let''s break it down...
+
+    #### askProgram()
+
+
+    This is the name of the chunk of code that runs when the button is clicked.
+
+
+    #### prompt()
+
+    Tells the computer to pop up an input box for the user.
+
+
+    Do you remember what the other things do?
+
+
+    Here’s what a prompt box looks like in repl.it.
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_14_1.png)
+
+
+    Add your name and click then the box will disappear.'
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: '# # You are who?
+
+
+    (Saving input in variables)
+
+
+    To benefit from the input in the prompt box, we either need to use it right away
+    or we need to save it to a **variable** to use later.
+
+
+    https://repl.it/@KIKIVsIT/uWho
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_15_0.png)
+
+
+    # Let''s break it down...
+
+
+    function theProgram() {
+
+
+    > This line tells the computer that we''ve named our function theProgram() and
+    we''re about to start defining it.
+
+
+    var userName = prompt("What''s your name?");
+
+
+    > This creates a storage container called userName where we put the value entered
+    by the user when we ask their name.
+
+
+    alert("Hi " + userName);
+
+
+    > This pops up an alert box that says "Hi" and repeats the user''s name.
+
+
+    }
+
+
+    > Lets the computer know that the definition is done.'
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: "![](img/7ba224f9964b228593c5b512598a5256_16_0.png)\n\nVariables are SUPER helpful!\
+    \ They're like little jars that can hold whatever information you need...even\
+    \ when you don't know what that is.\n\nYou might not know what name a user will\
+    \ enter, but you need to be able to use that name later in your program. Variables\
+    \ (like userName) let you hold a place in your code for those values once you\
+    \ get them.\n\n```\nfunction theProgram() {\n  var userName = prompt(\"What's\
+    \ your name?\");\n  alert(\"Hi \" + userName);\n}\n```\n\n> Name it yourself!\n\
+    You can name your variables anything that you want to.\nJust make sure that you\
+    \ use that name everywhere you want your variable to be.\n\n# # Cha...cha...cha...changes!\n\
+    \nWhat if we wanted to know someone's favorite animal instead of their name?\n\
+    \nWhat would you change the variable name to? How else would you change the program?\n\
+    \nMake some edits and run your new program to see if it makes sense. You might\
+    \ have to play with it more than once (maybe more than five times) to get it to\
+    \ work the way you want.\n\n15"
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: '# # Variable soup
+
+    (There''s a bug in my variable!)
+
+
+    Variables make programs interesting, but they also introduce a lot of places for
+    bugs to hide.
+
+
+    Your variable needs to be spelled exactly the same way everywhere you use it.
+    It can''t have any spaces and it can''t start with a number.
+
+    Also, capitalization matters!
+
+
+    https://repl.it/@KiKlvsT/bugSoup
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_17_0.png)
+
+
+    This program doesn''t work right.
+
+    Can you figure out what it should do?
+
+
+    > This program should:
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_17_1.png)'
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: "Look at the code carefully to figure out what’s wrong.\nIt’s like a mystery\
+    \ that you need to hunt for clues to solve.\n\n```\nfunction bugProgram() {\n\
+    \  var bugName = prompt(\"Give this\nbug a name:\");\n  alert(\"This bug is now\
+    \ \" + bugName)\n\n}\n```\n\n![](img/7ba224f9964b228593c5b512598a5256_18_0.png)\n\
+    \nThis might LOOK like two lines but it’s\nreally just one line that got too long\
+    \ so it\nwrapped itself down below. The\ncomputer still thinks of it all as line\
+    \ 2.\n\nWhat is the console\ntrying to tell you?\n\nUse this as scratch paper\
+    \ to\nkeep track of ideas."
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: '# # Making the connection
+
+    (How HTML and JavaScript connect)
+
+
+    So far, our programs have all started when we click something. It is possible
+    to make other interesting things happen but sometimes we''ll need to change both
+    in the JavaScript file and the HTML file.
+
+
+    This next program will show you how the two files connect.
+
+
+    https://repl.it/@KIKlvsIT/theCurtain
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_19_0.png)
+
+
+    The HTML files that we''ll be playing with have two main parts:
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_19_1.png)
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_19_2.png)'
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: '# Let''s take a closer look:
+
+
+    ```
+
+    <head><!--These groups of words inside angled brackets are called "tags". HTML
+    uses them to section off the code.
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width">
+
+    <!--These details are helpful to the computer, but not to us in this book. You
+    don''t need to mess with these.>
+
+    <title>Click Me</title><!--Between the <title> tag is the title of the webpage.
+    You can change what''s in here, if you want.
+
+    <link href="style.css" rel="stylesheet" type="text/css" />><!--This is the name
+    of the file where the computer looks for the code to make the page look a certain
+    way.>
+
+    <script src="script.js"></script><!--This is how the page tells the computer where
+    to find the JS code.>
+
+    </head><!--This tag closes the head section
+
+    ```
+
+
+    ```
+
+    <body><!--This tag starts the section of the code that creates the page that users
+    can see.
+
+    <div id="theDoc"><!--This is the name of the main container that holds the page.
+
+    Click the cat <--Text you can edit!
+
+    <br/><br/><--The tag <br/> adds a blank line (like pressing return.)
+
+    <button onclick="catProgram()"></button><!--This is calls the JS function when
+    you click the button.
+
+    </div><!--Ends the main page container
+
+    </body><!--Ends the body of the document.
+
+    ```
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_20_0.png)
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_20_1.png)
+
+
+    Okay to mess with Advanced users only'
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: '# Some <body> to play with:
+
+
+    Let''s play around with the code inside the <body> section of this page. A few
+    small changes can make the page your own.
+
+
+    # Let''s break it down...
+
+
+    Click the Cat
+
+
+    ```
+
+    This line shows up on the webpage exactly how you write it. Go ahead and change
+    it to something else. Does it matter what you change it to?
+
+    ```
+
+
+    ```
+
+    <br/><br/>
+
+    ```
+
+
+    Each <br/> tag adds another blank line below the words you wrote. Try adding more
+    <br/> tags, or taking one away and see how the page changes.
+
+
+    ```
+
+    <button onclick="catProgram()"> </button>
+
+    ```
+
+
+    There''s a lot going on with this line! Let''s try looking at each piece.
+
+    <button> </button>
+
+    This is a button tag set. The look of the button is controlled by the style.css
+    file, but the button action is controlled by the onclick line.
+
+
+    onclick:
+
+    This part tells the button what to do when it''s clicked.
+
+
+    "catProgram()"
+
+    This chunk calls our catProgram() function inside the script.js file. Do you think
+    the program will work if you change that piece?
+
+
+    Here''s one more thing to try. What happens when you use a different word between
+    the button tags? Try changing it to:
+
+    <button onclick="catProgram()"> CAT </button>'
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: '# Putting it all together
+
+
+    Now that you understand what''s happening in the HTML, let''s look at the JavaScript
+    for this page to see how it all connects.
+
+
+    https://repl.it/@KiKIlvsIT/theCurtain
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_22_0.png)
+
+
+    Now, we''re looking at the JS file.
+
+
+    Do you recognize this function name? Make sure that it matches the function called
+    in the button tag of the HTML file.
+
+
+    Try it! What does the program do? Can you change the name of the function in this
+    file, then figure out how to make the HTML call it again?
+
+
+    Use this as scratch paper to keep track of ideas.'
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: '# # Who’s got the button?
+
+
+    (Connect the button to the JavaScript)
+
+
+    One last step before we start getting fancy.
+
+
+    This program doesn’t work! Can you look at the JavaScript and the HTML to see
+    if you can figure out how to fix it?
+
+
+    https://repl.it/@KIKivsit/bzzt
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_23_0.png)
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_23_1.png)'
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: "# # Click it\n(Using images instead of buttons)\n\nKiki goes into detail\n\
+    about tags and attributes\n\nFor the next set of programs, we're still going to\
+    \ be clicking on pictures instead of `<button>` we'll use the `<img>` tag. This\
+    \ will make it a little easier to get creative.\n\nhttps://repl.it/@KIKlivsIT/clickit\n\
+    \n```\nHTML\nFiles: index.html\n1 <!DOCTYPE TYPE>\n2 <html>\n3 <head>-\n13 </head>\n\
+    14 <body>\n15 <div id=\"theDoc\">\n16   Click to buckle\n17   <br/>\n18   <img\
+    \ src=\"http://www.kikivsit.com/images/seat\n       beltUnbuckled.png\" id=\"\
+    myImage\"\n       onclick=\"buckleProgram()\">\n19 </div>\n</html>\n```\n\n![](img/7ba224f9964b228593c5b512598a5256_24_0.png)\n\
+    \nThis looks like four lines, that's only because the computer reads it all as\
+    \ a single line.\n\n# Let's break it down...\n\n```\n<img src=\"http://www.kikivsit.com/images/seatbeltUnbuckled.png\"\
+    \ id=\"myImage\" onclick=\"buckleProgram()\">\n```\n\n**img** - Tells the computer\
+    \ that the tag describes an image.\n**src** - Gives the URL of the picture you\
+    \ need on the internet.\n**id** - Assigns this exact image a special name that\
+    \ can be used to find this item if we want to use it later (we named it \"myImage\"\
+    )\n**onclick** - This is our instruction to the computer of what it should do\
+    \ when someone clicks on the image. We used this with the `<button>` too. Here,\
+    \ we are telling it to call our `buckleProgram()` function."
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: 'This JavaScript file is a lot like our last few, because it only contains a
+    single function.
+
+
+    If you look closely, though, you''ll notice that there''s something new and unfamiliar
+    inside.
+
+
+    https://repl.it/@KIKivsIT/clickit
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_25_0.png)
+
+
+    # Let''s break it down...
+
+
+    document.getElementById("myImage").src = "http://www.kikivsit.com/images/seatbeltBuckled.png";
+
+
+    > document
+
+    This part tells the computer that we''re about to do something to the document
+    that called this function (the HTML page).
+
+
+    > getElementById("myImage")
+
+    We want to change the element that we named "myImage".
+
+
+    > src
+
+    We''re changing the source URL for the image.
+
+
+    > "http://www.kikivsit.com/images/seatbeltBuckled.png"
+
+    This is the new URL for the picture that we''re changing to.'
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: "# HTML\n\n```\n<!DOCTYPE html>\n<html>\n<head>-\n</head>\n<body>\n<div id=\"\
+    theDoc\">\n  Click to buckle\n  <br/>\n  <img src=\"http://www.kikivit.com/images/seatbeltUnbuckled.png\"\
+    \ id=\"myImage\" onclick=\"buckle()\"/>\n</div>\n</body>\n</html>\n```\n\n![](img/7ba224f9964b228593c5b512598a5256_26_0.png)\n\
+    \nReplace this with your first URL.\n\n![](img/7ba224f9964b228593c5b512598a5256_26_1.png)\n\
+    \nRemember to stick to royalty-free and unlicensed images when looking for content\
+    \ for webpages.\n\nReplace this with your second URL.\n\n# JavaScript\n\n```\n\
+    function buckleProgram() {\n  document.getElementById(\"myImage\").src = \n  \
+    \  \"http://www.kikivit.com/\n    com/images/seatbeltBuckled.png\";\n}\n```\n\n\
+    ![](img/7ba224f9964b228593c5b512598a5256_26_2.png)"
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: "# # Follow the ball\n(Where does it go wrong?)\n\nThis page builds on what\
+    \ you just learned but takes it to the extreme!\nToo bad it doesn't work. Can\
+    \ you play with the webpage and look at the files see you can figure out where\
+    \ it goes wrong?\n\nhttps://repl.it/@KiKIvsit/ball\n\n![](img/7ba224f9964b228593c5b512598a5256_27_0.png)\n\
+    \n![](img/7ba224f9964b228593c5b512598a5256_27_1.png)\n\nYou'll need to play with\
+    \ the page a little to figure out what's actually wrong and what's just new.\n\
+    Where's the mistake?\n\n```\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\n</head>\n\
+    <body>\n<div id=\"theBall\">\nFind the Ball\n<img src=\"http://www.kikvsit.com/images/cup.png\"\
+    \ id=\"cup1\"\nonclick=\"cupProgram(1)\"/>\n\n<img src=\"http://www.kikvsit.com/images/cup.png\"\
+    \ id=\"cup2\"\nonclick=\"cupProgram(2)\"/>\n\n<img src=\"http://www.kikvsit.com/images/cup.png\"\
+    \ id=\"cup3\"\nonclick=\"cupProgram(3)\"/>\n\n</div>\n</body>\n</html>\n```\n\
+    ```\n\n```\n```javascript\nfunction cupProgram(1) {\n  document.getElementById(\"\
+    cup1\").src =\n  \"http://www.kikvsit.com/images/empty.png\";\n}\n\nfunction cupProgram(2)\
+    \ {\n  document.getElementById(\"cup2\").src =\n  \"http://www.kikvsit.com/images/empty.png\"\
+    ;\n}\n\nfunction cupProgram(3) {\n  document.getElementById(\"cup3\").src =\n\
+    \  \"http://www.kikvsit.com/images/empty.png\";\n}\n```\n```\n\n![](img/7ba224f9964b228593c5b512598a5256_27_2.png)"
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: '# # Bring it all in
+
+    (We don''t need all those functions!)
+
+
+    What if I told you that we don''t need all three functions to make this program
+    work? Let''s take advantage of something called a parameter to fit all three cups
+    into one function!
+
+
+    https://repl.it/@KIKivsit/ball-1
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_28_0.png)
+
+
+    > If you want to give your function an extra piece of information, you can pass
+    it in using a parameter.
+
+    Then, the function can use that information from a different file.
+
+
+    Whatever you pass through the parentheses in the HTML file will become the value
+    of the cupName variable in the JavaScript.
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_28_1.png)'
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: "# # Accounting for differences\n(Using conditionals)\n\nDid you notice that\
+    \ the ball went away when we combined three functions into one? That's because\
+    \ the function didn't treat any of the images differently from the others. We\
+    \ should fix that.\n\nWithout changing anything in the HTML file, we can modify\
+    \ our JavaScript to look at the parameter and see if it says “cup3”. If so, we'll\
+    \ set the image to the ball. Otherwise (else) we'll set the image to empty. That's\
+    \ that simple!\n\nhttps://repl.it/@KIKivsIT/ball-2\n\n```\nfunction cupProgram(cupName)\
+    \ {\n  if (cupName == \"cup3\") {\n    document.getElementById(cupName).src =\
+    \ \n      \"http://www.kikivsit.com/images/ball.png\";\n  } else {\n    document.getElementById(cupName).src\
+    \ = \n      \"http://www.kikivsit.com/images/empty.png\";\n  }\n}\n```\n\n![](img/7ba224f9964b228593c5b512598a5256_29_0.png)\n\
+    \n![](img/7ba224f9964b228593c5b512598a5256_29_1.png)\n\n![](img/7ba224f9964b228593c5b512598a5256_29_2.png)"
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: "# # Let's have some fun!\n\n(Make it unpredictable)\n\nThat program was fun\
+    \ the first time, but once you know where the ball is going to be, it's just not\
+    \ fun anymore. To keep it spicy, let's add a random element. By randomly choosing\
+    \ what cup will have the ball, we can play this over and over again.\n\nhttps://repl.it/~KiKivsIT/ball-3\n\
+    \n![](img/7ba224f9964b228593c5b512598a5256_30_0.png)\n\nThis gives us a random\
+    \ number between 1 & 3.\n\n```\njavascript\nvar randomNumber = Math.ceil(Math.random()\
+    \ * 3);\n\nfunction cupProgram(cupName) {\n  if(cupName == \"cup\" + randomNumber)\
+    \ {\n    document.getElementById(cupName).src = \n      \"http://kikivksit/images/ball.png\"\
+    ;\n  } else {\n    document.getElementById(cupName).src = \n      \"http://kikivksit/images/empty.png\"\
+    ;\n  }\n}\n```\n\n# ## Let's break it down...\n\nvar randomNumber =\n\nWe're creating\
+    \ a variable and naming randomNumber.\n\nBecause the random number will be either\
+    \ 1,2, or 3 and the cupName can be \"cup1\", \"cup2\", or \"cup3\", we can add\
+    \ our random number onto the end of the word \"cup\" and make only that image\
+    \ change to a ball.\n\nMath.ceil(Math.random() * 3);\n\nMath.ceil()\nWe want the\
+    \ final number rounded up so that the lowest we see is a 1.\nMath.random()\nChooses\
+    \ a random decimal between 0 & 1, not including 1.\n\n+   * 3 Multiplies the random\
+    \ decimal by 3 to scale it up for our needs."
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: "# # Collect the coins\n(Avoid the gum)\n\nThis program is a fun game that uses\
+    \ the skills we've just learned.\nThe only problem is that it doesn't work! Can\
+    \ you figure out why?\nhttps://repl.it/@KiKIlivT/noGum\n\n![](img/7ba224f9964b228593c5b512598a5256_31_0.png)\n\
+    \n```\nvar randNumber = Math.ceil(Math.random()) * 3;\nvar coinScore = 0;\nfunction\
+    \ pigProgram() {\n  if(pigName == \"pig\") {\n    document.getElementById(pigName).src\
+    \ = \"http://www.kikivit.com/images/pig.png\";\n    if (coinScore >= 2) {\n  \
+    \    alert(\"You did it!\");\n    } else {\n      alert(\"Oh, no. Gum!\");\n \
+    \   }\n  } else {\n    coinScore = coinScore + 1;\n  }\n  document.getElementById(pigName).src\
+    \ = \"http://www.kikivit.com/images/piggy.png\";\n}\n```\n\n![](img/7ba224f9964b228593c5b512598a5256_31_1.png)\n\
+    \nDon't forget to check the HTML file to see if the HTML function-call matches\
+    \ the JS function.\n\nThis program adds a bunch of code, but did any of it add\
+    \ bugs?\n\n![](img/7ba224f9964b228593c5b512598a5256_31_2.png)\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n</head>\n<body>\n<div id=\"doc\">\nCollect all the coins\
+    \ before you hit the gum!\n<img src=\"http://www.kikivit.com/images/piggy.png\"\
+    \ id=\"pig1\" onclick=\"pigProgram('pig1')\">\n<img src=\"http://www.kikivit.com/images/piggy.png\"\
+    \ id=\"pig2\" onclick=\"pigProgram('pig2')\">\n<img src=\"http://www.kikivit.com/images/piggy.png\"\
+    \ id=\"pig3\" onclick=\"pigProgram('pig3')\">\n</div>\n</body>\n</html>\n```\n\
+    \n![](img/7ba224f9964b228593c5b512598a5256_31_3.png)\n\nCollect all the coins\
+    \ before you hit the gum!\n\n![](img/7ba224f9964b228593c5b512598a5256_31_4.png)"
+  merge: -1
+  pgno: 31
+- img_proc: true
+  md: "# # May I comment?\n(Leaving notes in your code)\n\nThis program adds even\
+    \ more pigs and also a score tracker! With all of that code, reading the program\
+    \ starts to get confusing, we've added some secret notes that the computer can't\
+    \ read but we can! Those notes are commented comments and they won't change the\
+    \ way of your program works.\n\nhttps://repl.it/@KIKivsiT/whack\n\n![](img/7ba224f9964b228593c5b512598a5256_32_0.png)\n\
+    \n```\n```html\n<head>\n<body>\n<div id=\"theDoc\">\n<div id=\"Score\">Score =\
+    \ 0</div>\n<br>\n<img src=\"http://www.kikivsit.com/images/pig.png\" id=\"pig1\"\
+    \ onclick=\"pigProgram('pig1')\">\n```\n```\n\n> Comments in HTML start with <!--\
+    \ and end with --> and can span multiple lines.\n\nCollect all the coins before\
+    \ you hit the gum!\n\n> This type of comment in JS starts with // and needs no\
+    \ end symbol because it stops automatically after one line in the program.\n\n\
+    ```\n```javascript\nvar randomNumber = Math.floor(Math.random() * 6);\nvar coinScore\
+    \ = 0;\nfunction pigProgram(pigName) {\n  if(pigName == \"pig\" + randomNumber){\n\
+    \    document.getElementById(pigName).src = \"http://www.kikivsit.com/images/gun.png\"\
+    ;\n    coinScore = 0; // Reset the score to 0\n    document.getElementById(\"\
+    theScore\").innerHTML = Score;\n  }\n}\n```\n```\n\nCollect all the coins before\
+    \ you hit the gum!"
+  merge: -1
+  pgno: 32
+- img_proc: true
+  md: '# # Unlimited piggies
+
+    (Refreshing clicked pigs)
+
+
+    We''ve added another function that gets called when your mouse leaves the last
+    place you clicked. It''s supposed to replace the piggy but the program isn''t
+    working. Can you figure out why?
+
+
+    https://repl.it/@KIKivsit/resets
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_33_0.png)
+
+
+    > We''ve added mouseout to this program, which calls our new function whenever
+    the mouse leaves the graphic.
+
+
+    > Now look at the new function in the JavaScript file to see what happens mouseout.'
+  merge: -1
+  pgno: 33
+- img_proc: true
+  md: '# Now for something different
+
+    (Fill in the blanks)
+
+
+    This is completely different from the last program and there is a lot of JS code
+    missing. Can you read the comments, then use what you''ve learned to finish this
+    game?
+
+
+    https://repl.it/@KIKlivst/think
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_34_0.png)
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_34_1.png)
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_34_2.png)
+
+
+    +   - Finish the else if for "b5"
+
+    - Add 5 to the variable sumTotal
+
+    - Reset sumTotal to zero
+
+    - Update the total on the page
+
+    - Create a page alert
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_34_3.png)'
+  merge: -1
+  pgno: 34
+- img_proc: true
+  md: "# Mystic phrases\n(Our final broken program)\n\nHere's another twist on the\
+    \ click-a-button formula. This time, when you click the crystal ball, you're supposed\
+    \ to get a mystic phrase. So, why doesn't it work?\n\nhttps://repl.it/@KIKvsIt/mystic\n\
+    \n![](img/7ba224f9964b228593c5b512598a5256_35_0.png)\n\n```\nJavaScript\n// Make\
+    \ a list of phrases to\nvar myList = [\n  \"Choose happiness\",\n  \"Shoot for\
+    \ the moon\",\n  \"Be kind to others\",\n  \"Let the sun shine in your your heart!\"\
+    \n];\n\n// Get a random number\nvar randomNumber = Math.floor(Math.random() *\
+    \ myList.length);\n\nfunction getRandom() {\n  return myList[randomNumber];\n\
+    }\n```\n\n![](img/7ba224f9964b228593c5b512598a5256_35_1.png)\n\nClick the crystal\
+    \ ball for a message.\n\nSince we want our random number to start at 0 instead\
+    \ of I, we're now rounding down.\n\n![](img/7ba224f9964b228593c5b512598a5256_35_2.png)\n\
+    \n> We've added a list of sayings called myList. To call one, you need to tell\
+    \ the computer which one you want to use. The first one is myList[0], and the\
+    \ last one is myList[3]. Can you figure out which one is myList[2]?\n\nInstead\
+    \ of using an actual number, we're using this to get the exact length of the list\
+    \ so we can add or remove many sayings as we want!\n\nCode I don't understand\
+    \ yet:\n\nWhat's new?\nAre any other lines of code that you don't recognize? A\
+    \ search engine can be your best friend! Just type the code into the search bar\
+    \ and see what pops up. You should quickly get an explanation of the purpose of\
+    \ the code.\n\n![](img/7ba224f9964b228593c5b512598a5256_35_3.png)"
+  merge: -1
+  pgno: 35
+- img_proc: true
+  md: '# # Use your imagination
+
+    (Make a program of your own)
+
+
+    It can be a lot of fun to change someone else''s code but it is really satisfying
+    to make your own program from scratch! Take what you''ve learned here and mix
+    it up into a program from your imagination. You can plan your program in advance
+    or just start coding and see what happens. It''s up to you!
+
+
+    Watch Kiki go through the process of starting a program
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_36_0.png)
+
+
+    Don''t limit yourself to the things that you have learned here. If you want to
+    do something new and different, there are tutorials all over the internet that
+    will show you how. Just do a quick online search and nothing will be out of reach.
+
+
+    # I can do anything!
+
+
+    # Some ideas you can try:
+
+
+    +   - An answer to your questions
+
+    Like the mystic phrases, but each phrase is just a form of "yes" or "no"
+
+
+    +   - Guess my number
+
+    Have the computer "think" of a random number that you guess by pressing one of
+    three buttons.
+
+
+    +   - Bird counter
+
+    Look outside and check for birds. Click a button each time you see one and have
+    the computer add to your variable. Can you add a reset?
+
+
+    +   - 50/50 chance
+
+    Put two buttons on the screen. Have one be a winner and one be a loser randomly
+    each time.
+
+
+    There are so many ways to make this happen. Would you have add/subtract buttons
+    to change your guess? A submit button to share your guess? Or would you have a
+    text box to enter your guess? You can use the internet to figure out how to add
+    a text box to your page and to use the number inside later in your code?
+
+
+    35'
+  merge: -1
+  pgno: 36
+- img_proc: true
+  md: "# # Answers\n(Where’s the bug?)\n\nIt doesn't work (Page 10) - \nLine 2 of\
+    \ the myProgram() function is supposed to be\nalert(\"clicked\");\nbut the parentheses\
+    \ are missing!\n\nVariable soup (Page 16) - \nLine 3 of the bugProgram() function\
+    \ tries to use the variable BugName, but the\nvariable is supposed to be bugName,\
+    \ with a lowercase 'b'.\n\nWho’s got the button? (Page 22) - \nLine 18 of the\
+    \ HTML file doesn't call any function! Instead of <button onclick=\"()\"\nit should\
+    \ say <button onclick=\"buttonProgram()\">.\n\n\nFollow the ball (Page 26) - \n\
+    Line 10 of the JS file doesn’t give the right information. There is no element\
+    \ called\n“cup”. Instead, the line should read:\ndocument.getElementById(\"cup3\"\
+    ).src =\n\nCollect the coins (Page 30) - \nNotice that the debugging console says\
+    \ that pigName is not defined. That’s\nbecause the pigProgram() function isn’t\
+    \ asking for a parameterent in the JS file. If you\nchange line 5 of the JS file\
+    \ from\nfunction pigProgram() {\nt\nfunction pigProgram(pigName) {\nthen you should\
+    \ be good to go!"
+  merge: -1
+  pgno: 37
+- img_proc: true
+  md: '# Unlimited piggies (Page 32) -
+
+
+    The console gives you the biggest clue when it says “Function statements require
+    a function name.” That’s because the name has been left off our second function
+    in the JS file. Line 35 should read:
+
+
+    ```
+
+    function moveGum(pigName) {
+
+    ```
+
+
+    # Something different (Page 33) -
+
+
+    This program is a hide-and-seek of missing code. Altogether, there are six lines
+    of code that need to be edited or added. You can figure out where they are by
+    looking for the triple asterisks (***).
+
+
+    +   1) Line 21 should be: } else if (newName == "b5") {
+
+
+    +   2) Line 23 should be: sumTotal = sumTotal + 5;
+
+
+    +   3) Line 25 should be: document.getElementById("theSum").innerHTML = "Total
+    " + sumTotal;
+
+
+    +   4) Line 29 should be: sumTotal = 0;
+
+
+    +   5) Line 31 should be: document.getElementById("theSum").innerHTML = "Total
+    " + sumTotal;
+
+
+    +   6) Line 37 should be something like: alert("Sorry, you lose.");
+
+
+    # Mystic phrases (Page 34) -
+
+
+    This one is tough the bug doesn’t cause an error for the browser, only in the
+    way the program runs. If you look carefully, you’ll see that the line that’s supposed
+    to update the phrase on the screen is incomplete. Line 17 should be:
+
+
+    ```
+
+    document.getElementById("theThought").innerHTML = myList[randomNumber];
+
+    ```
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_38_0.png)'
+  merge: -1
+  pgno: 38
+- img_proc: true
+  md: '# Glossary
+
+    (Words and their meanings)
+
+
+    +   **bugs**
+
+    Problems in the code or in the running of the program
+
+
+    +   **JavaScript**
+
+    A type of file that allows a webpage to change information without reloading
+
+
+    +   **code**
+
+    The instructions that tell the computer what to do
+
+
+    +   **online**
+
+    On the internet
+
+
+    +   **comment**
+
+    Messages that a human can read but a computer can''t
+
+
+    +   **parameter**
+
+    A piece of information that you pass between elements of a program
+
+
+    +   **console**
+
+    The screen that shows feedback from the computer
+
+
+    +   **program**
+
+    A full set of code
+
+
+    +   **CSS (Cascading Style Sheets)**
+
+    A file written in a special language to tell the computer how elements should
+    look
+
+
+    +   **programming**
+
+    Writing programs
+
+
+    +   **random**
+
+    Picked without a noticeable pattern
+
+
+    +   **royalty-free**
+
+    Something you can use without having to pay a creator for each use
+
+
+    +   **debugging**
+
+    Finding and fixing bugs
+
+
+    +   **string**
+
+    A group of characters that you want the computer to display in exactly the same
+    way you wrote it
+
+
+    +   **function**
+
+    A chunk of code that can be called from other places in the program
+
+
+    +   **HTML (Hypertext Markup Language)**
+
+    A language used to create webpages
+
+
+    +   **tag**
+
+    A piece of code that defines an element on a webpage
+
+
+    +   **input**
+
+    Information that the user gives the computer
+
+
+    +   **variable**
+
+    A word or phrase that is used to symbolize a piece of information
+
+
+    +   **internet**
+
+    The connected system of wires and computers that carry information across the
+    world
+
+
+    +   **webpage**
+
+    A page on the internet'
+  merge: -1
+  pgno: 39
+- img_proc: true
+  md: '# # Index
+
+
+    (Where did we talk about it?)
+
+
+    +   - alert() - 9
+
+    - body - 18, 19, 20
+
+    - bugs - 10
+
+    - button - 20
+
+    - console - 4, 11
+
+    - console.log - 6, 7
+
+    - CSS - 8
+
+    - file window - 4
+
+    - function - 9
+
+    - getElementById() - 24
+
+    - head - 18, 19
+
+    - Hello, World! - 6
+
+    - HTML - 8, 18
+
+    - if/else - 28
+
+
+    +   - img - 23
+
+    - input box - 13
+
+    - JavaScript - 8, 18, 21
+
+    - lists - 34
+
+    - parameter - 27, 28
+
+    - program window - 4
+
+    - prompt() - 13
+
+    - random - 29
+
+    - repl.it - 4
+
+    - runProgram() - 9
+
+    - starter code - 6
+
+    - string - 11
+
+    - variable - 14, 15, 16
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_40_0.png)'
+  merge: -1
+  pgno: 40
+- img_proc: true
+  md: '# Notes
+
+
+    (What are you thinking?)'
+  merge: -1
+  pgno: 41
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 42
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 43
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 44
+- img_proc: true
+  md: 'Made in the USA
+
+    Middletown, DE
+
+    02 October 2020
+
+
+    20965638R00024'
+  merge: -1
+  pgno: 45
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 46
+- img_proc: true
+  md: '# My Amazing Book of Broken Programs: Vol 1 - JavaScript was written to give
+    young coders a simple way to start playing with the most common languages on the
+    web. Readers will get experience with both JavaScript and HTML while learning
+    how to be persistent in the face of coding issues.
+
+
+    "This is a fun and inviting introduction to JavaScript – I can''t wait to share
+    it with the aspiring young programmers I know!"
+
+
+    -Jake Baskin, Executive Director of Computer Science Teachers Association
+
+
+    "Kiki Sedgwick engages and encourages them to apply their learning by thinking
+    about how to explain what they''ve created in their own words. This is a must-read
+    for those who are looking to deepen their journey with JavaScript."
+
+
+    -Angle Kalthoff, Curriculum and Instruction Product Manager at Capstone
+
+
+    "Kiki Pottsman has provided a unique way to get kids started with a new programming
+    language. Because many of the starter programs are intentionally broken, kids
+    also get comfortable with bugs and learn to use error messages to get hints on
+    how to fix the problems."
+
+
+    -Vicky Sedgwick, Computer Science Teacher
+
+
+    "This book takes such a smart approach to learning to code. Too often we expect
+    beginners to start coding without guidance. When you think about how we teach
+    students to read we don''t start by asking them to write paragraphs, we start
+    by telling them stories. And who better than Kiki Pottsman to be our programming
+    storyteller?"
+
+
+    -Rebecca Dov, Director of Education for CodeVA
+
+
+    # Bugs can be annoying, but Kiki will teach you how to find and fix problems in
+    code.
+
+
+    ![](img/7ba224f9964b228593c5b512598a5256_47_0.png)'
+  merge: -1
+  pgno: 47
