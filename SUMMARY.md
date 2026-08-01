@@ -926,6 +926,7 @@
 +   [渐进式 Web 应用学习指南：使用 Service Workers 构建现代 Web 应用](docs/learning-progressive-web-apps-building-modern-web-apps-using/README.md)
 +   [学习 Python, Java, JavaScript, C, C++, C#, CSS, HTML, jQuery, MySQL, SQL, LINUX, Perl, PHP 或 XML：快速获取 300+ 种免费教材、100+ 份查表、100+ vi 脚本的链接](docs/learning-python-java-javascript-c-c-c-css-html-jquery-mysql-/README.md)
 +   [学习 React：使用 React JavaScript 库构建可维护、高性能 Web 应用程序界面的实用指南](docs/learning-react-a-hands-on-guide-to-building-maintainable-hig/README.md)
++   [学习 React：使用 React 和 Redux 构建 Web 应用实用指南](docs/learning-react-a-hands-on-guide-to-building-web-applications/README.md)
 +   [学习 React Native：使用 JavaScript 构建原生移动应用指南第 2 版](docs/learning-react-native-building-native-mobile-apps-with-javas/README.md)
 +   [Learning TypeScript 5：超越 JavaScript，为大型项目构建更具维护性和健壮性的 Web](docs/learning-typescript-5-go-beyond-javascript-to-build-more-mai/README.md)
 +   [进阶 JavaScript：TypeScript 实用指南](docs/level-up-your-javascript-a-practical-guide-to-typescript/README.md)
