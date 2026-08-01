@@ -3967,7 +3967,7 @@ NSArray *illinoisData = [NSArray arrayWithObjects:@"Illinois", "Springfield",
 NSDictionary *illinois = [NSDictionary dictionaryWithObjects:illinoisData
                                                               keys:stateKeys];
 
-```
+
 NSMutableDictionary *mutableIllinois =
 [NSMutableDictionary dictionaryWithCapacity:4];
 ```
