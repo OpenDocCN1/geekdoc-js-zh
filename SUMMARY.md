@@ -942,6 +942,7 @@
 +   [Lua 和 JavaScript 精通：全面指南：中级专家技能揭秘 - 2：二合一](docs/lua-and-javascript-mastery-a-comprehensive-guide-intermediat/README.md)
 +   [编程逻辑：使用 Javascript 和 HTML 创建你的第一个程序](docs/lógica-de-programação-crie-seus-primeiros-programas-usando-j/README.md)
 +   [Macromedia - Macromedia Flash MX 2004, Flash JavaScript 字典](docs/macromedia---macromedia-flash-mx-2004-flash-javascript-dicti/README.md)
++   [可维护的 JavaScript](docs/maintainable-javascript/README.md)
 +   [制作大型多人在线游戏：适用于任何 Phaser JavaScript 游戏框架的开发指南](docs/making-massive-multiplayer-online-games-a-game-development-w/README.md)
 +   [Javascript 高级指南](docs/master-javascript/README.md)
 +   [一日精通 JavaScript：初学者综合指南](docs/master-javascript-in-a-day-a-comprehensive-guide-for-beginne/README.md)
