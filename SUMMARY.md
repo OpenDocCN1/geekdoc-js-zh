@@ -983,6 +983,7 @@
 +   [MCQ 精通：JavaScript 面试题](docs/mcq-mastery-javascript-interview-question/README.md)
 +   [MEAN Machine：JavaScript 栈初学者实践指南](docs/mean-machine-a-beginners-practical-guide-to-the-javascript-s/README.md)
 +   [Microsoft ASP.Net 逐步指南](docs/microsoft-aspnet-step-by-step-step-by-step-microsoft/README.md)
++   [Microsoft Expression Web 4 深度解析含索引](docs/microsoft-expression-web-4-in-depth-includes-index/README.md)
 +   [Visual FoxPro 开发者 Microsoft .NET 指南](docs/microsoft-net-for-visual-foxpro-developers/README.md)
 +   [Microsoft® JavaScript 入门指南](docs/microsoft-start-heretm-learn-javascript/README.md)
 +   [Microsoft VBScript 专业项目指南](docs/microsoft-vbscript-professional-projects/README.md)
