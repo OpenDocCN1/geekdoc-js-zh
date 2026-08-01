@@ -964,6 +964,7 @@
 +   [精通 JavaScript 框架：现代 Web 开发全面指南](docs/mastering-javascript-frameworks-a-comprehensive-guide-to-mod/README.md)
 +   [JavaScript 函数式编程精通指南](docs/mastering-javascript-functional-programming/README.md)
 +   [精通 JavaScript 函数式编程：使用函数式 JavaScript 和 TypeScript 编写整洁、健壮且易维护的 Web 和服务器代码](docs/mastering-javascript-functional-programming-write-clean-robu/README.md)
++   [Javascript 高性能高级指南](docs/mastering-javascript-high-performance/README.md)
 +   [Javascript 面向对象编程精通指南](docs/mastering-javascript-object-oriented-programming/README.md)
 +   [Javascript 高级指南 版](docs/mastering-javascript-premium-edition/README.md)
 +   [掌握 JavaScript 安全 Web 开发+解锁专家级技能秘籍](docs/mastering-javascript-secure-web-developmentunlock-the-secret/README.md)
