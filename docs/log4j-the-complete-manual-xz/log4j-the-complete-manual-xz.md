@@ -729,7 +729,7 @@ logger.debug(orange);
 ### 1. 层次结构阈值检查
 
 每个日志器都有创建它的存储库的引用。如果请求级别（在本例中为 INFO）未针对请求启用，日志器将通过立即退出打印方法来丢弃请求。层次结构阈值在本章早些时候讨论过。此测试的代价仅仅是方法调用和整数比较——也就是说，成本极低。
-```
+
 
 
 
@@ -3179,7 +3179,7 @@ public class Mylayout extends Layout {
 
 执行命令
 
-``````
+```
 java chapter5.Sample chapter5/mylayout1.xml
 ```
 
