@@ -1,0 +1,6165 @@
+- img_proc: true
+  md: '# # ONE-DAY COURSE
+
+
+    # # Mastering JavaScript Part 1
+
+
+    INCLUDES DATA DISK
+
+
+    DDC Publishing
+
+    http://www.ddcpub.com'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: '# BEHREND COLLEGE
+
+    COMPUTER CENTER'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: '# Mastering JavaScript: Part 1
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_2_0.png)
+
+
+    > "I''ll put him back in bed in a minute, Carol. I just need Billy to debug my
+    JavaScript code ..."
+
+
+    # # Mastering JavaScript: Part 1
+
+
+    Web Scripting Beyond HTML 4.0
+
+
+    # BEHREND COLLEGE
+
+    COMPUTER CENTER
+
+
+    DDC Publishing • www.ddcpub.com'
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: '> "And in the unglorous but vital processes that all coders face—application
+    analysis, program design, testing, debugging—the distinctions between scripter
+    and programmer all disappear. Scripting, schmipting—fundamentally, its all programming."
+
+
+    Danny Goodman, author, "Developing a Scripting Style"'
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: '# # Mastering JavaScript: Part 1
+
+
+    ## Web Scripting Beyond HTML 4.0
+
+
+    | DDC Publishing, Inc. | Author | Allan Liska |
+
+    |---|---|---|
+
+    | 275 Madison Ave. | Contributing Author | David Wall |
+
+    | New York, NY 10016-1161 | Content & Technical | Curt Robbins |
+
+    | techsupp@ddcpub.com | Editor | |
+
+    | www.ddcpub.com | Proofreader | Holly Nichols |
+
+
+    # Legal Notice
+
+
+    # Copyrights
+
+
+    Published under license from Quessing Courseware Corp. Copyright © 1997-1999,
+    Quessing Courseware Corp. All rights reserved. Printed in the United States of
+    America. Except as permitted under the Copyright Act of 1976, no part of this
+    publication may be reproduced, distributed or displayed in any form or by means,
+    or stored in a database, retrieval system or other media without the prior written
+    permission of DDC Publishing, Inc. or Quessing Courseware Corp. Cartoon artwork
+    © 1997-1999, Doug Adams. March 1999.
+
+
+    # Trademarks
+
+
+    The product/service names mentioned herein are manufacturer trademarks and are
+    used only for purposes of identification. Java™ and Write Once, Run Anywhere™
+    are trademarks of Sun Microsystems, Inc. Microsoft®, Microsoft Windows 95, Microsoft
+    Windows® 98, Microsoft Windows NT, and Microsoft Windows are registered trademarks
+    of Microsoft Corporation. Netscape®, Navigator®, and the Netscape logo® are registered
+    trademarks of Netscape Communications Corporation in the United States and other
+    countries.
+
+
+    All other brand and product names are trademarks of their respective companies
+    as mentioned herein.
+
+
+    # Disclaimers
+
+
+    The author(s), publisher, and others participating in the development, production,
+    marketing, sales, and distribution of this work take no responsibility for whatsoever
+    others use for them or for decisions based on its use. DDC Publishing, Inc. and
+    Quessing Courseware Corp make no representation or warranty expressed or implied,
+    with respect to this product, its merchantability, or fitness for any particular
+    purpose. The contents of this work are subject to change without notice.
+
+
+    DDC Publishing, Inc. and Quessing Courseware Corp. are not responsible for content
+    featured available via hyperlinks or navigational means via these Websites or
+    other information. All statistics, surveys, and data used with express permission
+    of the author(s) are included in the text or in appropriate footnotes.
+
+
+    NetQuotes are the respective opinions of the individuals quoted and do not necessarily
+    reflect the opinions, policy, or sentiment of DDC Publishing, Inc. or Quessing
+    Courseware Corp., their employees, or their business partners.
+
+
+    DDC Publishing • www.ddcpub.com'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: 'Mastering JavaScript Part 1
+
+
+    # About the Authors
+
+
+    Allan Liska is a Webmaster and a Certified Microsoft Engineer. He currently holds
+    the position of Electronic Commerce and Web Hosting Engineer for UUNET Technologies,
+    Inc.
+
+
+    Mr. Liska graduated from the University of Maryland with a degree in sociology,
+    after which he was a programmer and LAN administrator for the University of Maryland
+    Survey Research Center. Following this, he worked at Genie Online Services, prior
+    to leaving for UUNET. Mr. Liska has also written Mastering JavaScript: Part 2.
+
+
+    David Wall is a computer and Internet writer. He graduated with honors from the
+    University of Virginia and currently resides in Leesburg, Virginia.
+
+
+    Mr. Wall wrote Using the World Wide Web, 2nd Edition and co-authored The 10 Secrets
+    for Web Success with Dr. Bryan Pfäffenfelder. Mr. Wall has also written Netscape
+    Plug-In Power, 101 Freeze-Dried Java Applets, JavaScript on Demand, and Building
+    an Extranet.
+
+
+    # Internet Courses from DDC Publishing
+
+
+    +   * Intro to the Internet & Online Services
+
+    * Internet Fundamentals
+
+    * Navigating the Web
+
+    * Exploring the Web
+
+
+    +   * Conducting Internet Research
+
+    * Advanced Internet Research
+
+
+    +   * Using the Internet in Business
+
+    * Promoting Your Web Site
+
+
+    +   * HTML 4.0 Fundamentals
+
+    * HTML 4.0 Intermediate
+
+    * Converting Files for the Web
+
+
+    +   * Mastering JavaScript: Part 1
+
+    * Mastering JavaScript: Part 2
+
+
+    +   * Mastering Java (5-day course)
+
+    * Mastering Java Threads (2-day course)
+
+    * Transitioning C++ to Java (3-day course)
+
+
+    # Industry-Specific Internet Courses
+
+
+    +   * Accounting Internet Skills
+
+    * Human Resources Internet Skills
+
+    * Legal Community Internet Skills
+
+    * Pharmacy Internet Skills (2-day course)
+
+    * Real Estate Internet Skills
+
+    * Travel Industry Internet Skills'
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: '# # Table of Contents
+
+
+    +   Course Description .....................................................................................................................................................................
+    iv
+
+    Course Conventions ................................................................................................................................................................
+    v
+
+
+    # ## Lesson 1 What is JavaScript? ................................................................................................................
+    1
+
+
+    +   - JavaScript Defined .....................................................................................................................................................
+    2
+
+    - Tight HTML Integration ................................................................................................................................................
+    2
+
+    - Most Popular Scripting Language ................................................................................................................
+    2
+
+    - Server Side JavaScript ...............................................................................................................................................
+    3
+
+    - Advantages of Server-Side JavaScript ...................................................................................................
+    3
+
+    - JavaScript vs. Java. ............................................................................................................................................
+    4
+
+    - Embedding JavaScript in HTML ............................................................................................................................
+    6
+
+    - The <SCRIPT> Tag ................................................................................................................................................
+    6
+
+    - Document.write() ................................................................................................................................................
+    6
+
+    - Exercise 1-1: Inserting JavaScript Tags ................................................................................................
+    7
+
+    - Hiding JavaScript Code from Older Browsers ......................................................................................
+    9
+
+    - Exercise 1-2: Hiding Code .................................................................................................................................
+    9
+
+    - Comments ...................................................................................................................................................................
+    11
+
+    - Exercise 1-3: Inserting a Single-line Comment ...................................................................................
+    11
+
+    - Exercise 1-4: Inserting a Multiple-line Comment ............................................................................
+    13
+
+    - Lesson Summary ........................................................................................................................................................
+    15
+
+
+    # ## Lesson 2 Variables, Data Types, & Loose Typing ...................................................................
+    17
+
+
+    +   - Variables .....................................................................................................................................................................
+    18
+
+    - Exercise 2-1: Declaring Variables ................................................................................................................
+    18
+
+    - Assigning Values to Variables ................................................................................................................
+    20
+
+    - Exercise 2-2: Initializing Variables ................................................................................................................
+    20
+
+    - Understanding Data Types ...................................................................................................................................
+    22
+
+    - Data Types & Dynamic Typing ................................................................................................................
+    22
+
+    - Exercise 2-3: Assigning Data to a Variable ................................................................................
+    24
+
+    - The typeof (Operator) ............................................................................................................................
+    25
+
+    - Exercise 2-4: Determining Data Types ................................................................................
+    26
+
+    - Lesson Summary ........................................................................................................................................................
+    28
+
+
+    # ## Lesson 3 JavaScript Operators ..........................................................................................
+    30
+
+
+    +   - Mathematical Operators ...................................................................................................................................
+    31
+
+    - Five Mathematical Operators Supported. ................................................................................
+    31
+
+    - Exercise 3-1: Using Mathematical Operators ............................................................................
+    32
+
+    - Assignment Operators ...................................................................................................................................
+    34
+
+    - Exercise 3-2: Using Assignment Operators ................................................................................
+    35
+
+    - Comparison Operators ................................................................................................................................
+    37
+
+    - Six Comparison Operators Supported. ................................................................................
+    37
+
+    - Exercise 3-3: Using Comparison Operators ................................................................
+    38
+
+    - Logic Operators ...................................................................................................................................................
+    40
+
+    - How to Use Logical Operators ................................................................................................
+    40
+
+    - Exercise 3-4: Using Logical Operators ................................................................................
+    41
+
+    - Lesson Summary ........................................................................................................................................................
+    43
+
+
+    # ## Lesson 4 JavaScript Functions ...................................................................................
+    46'
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: "# Mastering JavaScript: Part 1\n\n+   Functions ............................................................................................................\
+    \ 47\n  What is a Function? ...................................................................................................\
+    \ 47\n  Creating Functions ................................................................................................\
+    \ 48\n  Exercise 4-1: Using Functions .......................................................................\
+    \ 48\n  Using Functions .......................................................................................................\
+    \ 50\n  Exercise 4-2: Calling Functions ................................................................\
+    \ 50\n  Passing Parameters to Functions ................................................................\
+    \ 51\n  Exercise 4-3: Passing Parameters ...............................................................\
+    \ 52\n  Predefined Functions ............................................................................................\
+    \ 54\n  Lesson Summary ......................................................................................................\
+    \ 55\n\n# Lesson 5 Conditional Statements & Loops...............................................\
+    \ 58\n\n+   If & If...Else Statements ........................................................................\
+    \ 59\n  Syntax ...................................................................................................................\
+    \ 60\n  Exercise 5-1: Using the if Statement ........................................................\
+    \ 61\n  Exercise 5-2: Using the if...else Statement ...............................................\
+    \ 63\n  For Loops ...................................................................................................................\
+    \ 65\n  Syntax ...................................................................................................................\
+    \ 65\n  Exercise 5-3: Using a for Statement ........................................................\
+    \ 67\n  While Loops ............................................................................................................\
+    \ 69\n  Syntax ...................................................................................................................\
+    \ 69\n  Exercise 5-4: Using while Loops ............................................................\
+    \ 70\n  Switch Statements ................................................................................................\
+    \ 72\n  Syntax ...................................................................................................................\
+    \ 72\n  Exercise 5-5: Using switch Statements ................................................\
+    \ 73\n  Lesson Summary ......................................................................................................\
+    \ 76\n\n# Lesson 6 Date and Time .................................................\
+    \ 78\n\n+   Page Updates ......................................................................................................\
+    \ 79\n  Exercise 6-1: Page Last Updated..................................................................\
+    \ 79\n  Inserting the Date and Time .......................................................................\
+    \ 81\n  Exercise 6-2: Listing the Current Date and Time ...............................\
+    \ 83\n  Clocks & Countdowns ...................................................................................\
+    \ 87\n  Exercise 6-3: Setting Up a Real-Time Clock ...................................\
+    \ 87\n  Exercise 6-4: Counting Down to the Year 2000 ................................\
+    \ 89\n  Calendars ................................................................................................................\
+    \ 91\n  Exercise 6-5: Building a Calendar ........................................................\
+    \ 91\n  Lesson Summary ......................................................................................................\
+    \ 93\n\n# Lesson 7 Form Contents ...................................................\
+    \ 96\n\n+   Referring to Form Elements ...................................................................\
+    \ 97\n  The Name Method ...................................................................................................\
+    \ 97\n  Exercise 7-1: Referring to Form Elements by Name ................................\
+    \ 98\n  The Array Method ................................................................................................\
+    \ 100\n  Exercise 7-2: Referring to Form Elements by Array Position .................\
+    \ 100"
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: '# Table of Contents
+
+
+    Special Form-Referencing Procedures .....................................................................
+    103
+
+    References to Radio Button Groups ................................................................................
+    103
+
+    Exercise 7-3: Referring to Radio Button Groups .................................................................
+    103
+
+    References to Selection Lists and Drop-Down List Boxes ................................................
+    107
+
+    Exercise 7-4: Identifying the Selected Option from a Selection List ...............................
+    107
+
+    Lesson Summary ............................................................................................................
+    110
+
+
+    # Lesson 8 Event Handlers .................................................................................
+    112
+
+
+    Event Handlers & Basic Form Elements ................................................................
+    113
+
+    Event Handlers ................................................................................................................
+    113
+
+    Exercise 8-1: Attaching Event Handlers to Form Buttons ............................................
+    114
+
+    Exercise 8-2: Attaching Event Handlers to Radio Buttons & Check Boxes ...............
+    117
+
+    Event Handlers & More Complex Elements ................................................................
+    120
+
+    Attaching Event Handler to Text Fields and Text Areas ................................................
+    120
+
+    Exercise 8-3: Event Handlers in Action .................................................................
+    121
+
+    Selection Lists & Drop-Down List Boxes ......................................................................
+    124
+
+    Exercise 8-4: Attaching an Event Handler to a Selection Box ...................................
+    124
+
+    Lesson Summary ............................................................................................................
+    127
+
+
+    # Lesson 9 Window Control ..........................................................................
+    130
+
+
+    Alerts! .......................................................................................................
+    131
+
+    The alert() Tag ............................................................................................................
+    131
+
+    Exercise 9-1: Creating an Alert Window ................................................................
+    131
+
+    Exercise 9-2: Writing an E-mail Checker ................................................................
+    133
+
+    Opening and Closing Windows ................................................................................
+    135
+
+    Exercise 9-3: Opening a JavaScript Window ........................................................
+    135
+
+    Exercise 9-4: Closing a JavaScript Window ........................................................
+    137
+
+    Frames .......................................................................................................................
+    138
+
+    Exercise 9-5: Using JavaScript to Control Frames ........................................
+    139
+
+    Lesson Summary ............................................................................................................
+    141
+
+
+    # Appendices ......................................................................................
+    144
+
+
+    Appendix A: JavaScript Client-side Objects ..................................................
+    145
+
+    Appendix B: JavaScript Glossary ............................................................................
+    146
+
+
+    # Index ...................................................................................................
+    150'
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: '# Course Description
+
+
+    Welcome to DDC Publishing''s Mastering JavaScript: Part 1. This course introduces
+    you to JavaScript, a powerful scripting language that you can use to add functionality
+    and interactivity to Web pages. This course is intended for students who are experienced
+    and proficient with HTML. Programming experience is not required for this course.
+    This course is designed as a prerequisite for Mastering JavaScript: Part 2.
+
+
+    # Prerequisites
+
+
+    +   - DDC Publishing''s HTML 4.0 Fundamentals
+
+    - DDC Publishing''s HTML 4.0 Intermediate
+
+
+    # Course Objectives
+
+
+    +   - How JavaScript compares to Java.
+
+    - What objects are and how they work in JavaScript.
+
+    - How JavaScript stores values in variables.
+
+    - Proper use of JavaScript data types.
+
+    - How to declare variables.
+
+    - Using loose typing.
+
+    - How to use the typeof() operator.
+
+
+    # Software Required For This Course
+
+
+    To get the most out of the interactive features of this book, you will need two
+    software applications:
+
+
+    +   - A text editor: you will write JavaScript code, like HTML code, in a text
+    editor. All computers running Microsoft Windows have a text-editing application
+    called Notepad. If you prefer another application for editing HTML, you can use
+    it to edit JavaScript also.
+
+    - A JavaScript-aware Web browser: to run your JavaScript code, you will need a
+    Web browser that can interpret JavaScript 1.2, such as Netscape Navigator 4.0
+    or later or Microsoft Internet Explorer 4.0 or later. All code presented in this
+    course was tested using Netscape Navigator 4.0.'
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: '# Course Conventions
+
+
+    # General Conventions
+
+
+    | File and directory names | All caps:
+
+    | Save the file and name it JAVCRIPT.HTML |
+
+    | Text to be typed by student | Courier New font:
+
+    | <SCRIPT LANGUAGE="JavaScript"> |
+
+    | JavaScript code and HTML tags in lecture text and non-exercise examples | Courier
+    New font:
+
+    | while(index < 9) |
+
+    | Web page hyperlinks | Bold and underlined:
+
+    | Click [here](#) to link to a different Web page. |
+
+    | New terms, text to be emphasized, Web page titles | Italic:
+
+    | Assignment operators are those that give... |
+
+    | Icons, buttons, text fields, keyboard functions, dialog boxes, pulldown menus
+    & menu items | Bold:
+
+    | On the toolbar, click the Back button. |
+
+
+    # Internet Addresses
+
+
+    | Uniform Resource Locators | Courier font:
+
+    | www.sun.com |
+
+    | E-mail addresses | Courier font:
+
+    | techsupp@ddcpub.com |
+
+
+    # Web Browser Configuration
+
+
+    | Web browser and version | MSIE 4.0x or Netscape Navigator 4.0x |
+
+    | Options, Auto Load Images | ✓ Selected |
+
+    | Options, Show Toolbar | ✓ Selected |
+
+    | Options, Show Location | ✓ Selected |
+
+    | Directory Buttons (Navigator) | 轮 Turned off |
+
+    | Links Toolbar (IE) | 轮 Turned off |
+
+    | Other browser settings | Browser defaults |'
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: '# Legend
+
+
+    +   * **Analysis** An examination of JavaScript code in hands-on exercises, lecture
+    text, and examples.
+
+
+    +   * **Example** An illustration of the subject matter being reviewed.
+
+
+    +   * **NetQuote** Quote by a famous or significant individual regarding the history
+    or any other characteristic of the Internet. NetQuotes are sometimes enlightening
+    or entertaining, but always provide perspective to the subject matter being reviewed.
+
+
+    +   * **NetResult** In exercises, the result of specific actions taken. Most exercises
+    have multiple NetResults.
+
+
+    +   * **Note** Supplemental, but important, information regarding the subject
+    matter being reviewed.
+
+
+    +   * **Scenario** Typically preceding an exercise. Scenarios are examples that
+    "set the stage" or provide a real-world context in which to analyze the subject
+    matter reviewed.
+
+
+    +   * **TechTip** Technical supplement to the core course. TechTips are intended
+    to expand your knowledge beyond the primary goals of this course.
+
+
+    +   * **TriviaTip** Trivial information regarding the Internet. Similar to NetQuotes,
+    TriviaTips lend substance, perspective, and background.
+
+
+    +   * **Warning** Important—sometimes critical—information: unlike TriviaTips
+    or NetQuotes, Warnings are not supplemental, but pertain directly to the subject
+    matter being reviewed.'
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: "# # Lesson 1\n What is JavaScript?\n\nLesson Topics\n\n+   * JavaScript Defined\n\
+    * Server Side JavaScript\n* JavaScript vs. Java\n* Embedding JavaScript in HTML\n\
+    * Using Comments\n* Lesson Summary"
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: '# JavaScript Defined
+
+
+    JavaScript is one of many tools used by a skilled Web/site developer. With JavaScript,
+    you can make Web pages more attractive and more interactive. JavaScript, because
+    it is a scripting language, is much simpler than a programming language (such
+    as Java or C++). With some diligent study, you can master JavaScript, even if
+    you have no computer experience.
+
+
+    JavaScript performs tasks—relatively simple ones, compared to what can be done
+    with Java applets or ActiveX Controls—in HTML documents that are loaded into Web
+    browsers.
+
+
+    JavaScript excels at the following tasks:
+
+
+    +   - performing data-lookup in small databases
+
+    - validating data before it is sent to a server
+
+    - reacting intelligently to a user''s actions
+
+    - manipulating the contents of multiple browser windows
+
+    - manipulating the contents of multiple Web page frames
+
+
+    # Tight HTML Integration
+
+
+    JavaScript is tightly integrated with HTML. Think of JavaScript as HTML on steroids.
+    In fact, you will see that JavaScript code is actually embedded within HTML documents.
+    Because you already have a solid familiarity with HTML, documents that contain
+    JavaScript will appear familiar to you.
+
+
+    # Most Popular Scripting Language
+
+
+    JavaScript''s tight integration with HTML has caused it to quickly become the
+    most popular scripting language (other than HTML) on the Web. One source estimates
+    that there are in excess of four million Web pages that utilize JavaScript, making
+    it more common than VB and even the venerable Internet workhorse, Perl.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_15_0.png)
+
+
+    A technical advantage of JavaScript is that it executes all programming instructions
+    on the client computer—that is, in the Web browser—not on the server. JavaScript
+    programs do not refer to a server after the Web page containing them is downloaded,
+    and therefore do not put additional demands on the server or create a bandwidth
+    burden for the user.'
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: '# Server Side JavaScript
+
+
+    JavaScript has traditionally been used as a client-side scripting language. This
+    has many advantages, such as not having to be concerned about server load or the
+    use of available server bandwidth. This makes JavaScript code less taxing on servers
+    and quicker to execute within a client computer (for a user).
+
+
+    Unfortunately, these JavaScript characteristics also limit the types of scripts
+    that can be executed. Anything that relies heavily on the server to execute, such
+    as e-mail delivery or database queries, cannot be executed via client-side scripting.
+
+
+    # Advantages of Server-Side JavaScript
+
+
+    Netscape, in an attempt to overcome the limitations of JavaScript''s client-side
+    scripting, has released Server-Side JavaScript (SSJS). SSJS incorporates all of
+    the elements of core (clientside) JavaScript, but adds the advantages of a server-side
+    scripting language. SSJS introduces additional objects to the JavaScript code
+    that allow you to:
+
+
+    +   - send e-mail through a server
+
+    - query a database
+
+    - provide other functionality that involves server interaction
+
+
+    Currently, SSJS is only available with Netscape Enterprise Server. Because Netscape
+    Enterprise Server is installed in only the minority of the Web server market,
+    this course does not cover SSJS. However, as SSJS is incorporated into more servers
+    and applications, you will hear more about it.
+
+
+    More details regarding SSJS will be integrated into future releases of and updates
+    to the Mastering JavaScript series as appropriate.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_16_0.png)'
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: '# Mastering JavaScript - Part 1
+
+
+    # JavaScript vs. Java
+
+
+    Those new to Web programming often make the mistake of confusing JavaScript with
+    Java. Despite the similarity in names, Java and JavaScript are very different
+    (and really should not share the same root name). Java is a complex object-oriented
+    programming language, similar to C++. Large, complex applets and applications
+    can be created with Java.
+
+
+    Figure 1-1 shows a Java applet (which, in turn, launches Java applications) at
+    the TalkCity web site.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_17_0.png)
+
+
+    Figure 1-1: Java applets are more complex than JavaScript programs'
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: 'JavaScript, on the other hand, is relatively weak compared to Java. The purpose
+    of JavaScript is to add interactivity and automation to HTML documents, not to
+    create robust, stand-alone programs that execute on a client computer (such as
+    Java). You could, for example, use Java to write a graphics-editing application,
+    word processor, or spreadsheet program. JavaScript does not possess the functionality
+    to create such complex software applications.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_18_0.png)
+
+
+    Why JavaScript and Java have similar names? The simple answer is "marketing."
+
+
+    Originally, what today is called JavaScript "LiveScript." It was developed by
+    Netscape Communications Corporation as a scripting language for its LiveWire server
+    software. Then, Sun Microsystems Java gained tremendous popularity and media attention.
+    To piggyback on the success of Java, Netscape renamed LiveScript to JavaScript.
+
+
+    The languages share some minor similarities—certain commands are the same—but
+    essentially, the only connection between the two is that they are both used to
+    enhance Web pages and they share the term "Java."
+
+
+    # JavaScript Strengths
+
+
+    JavaScript offers some tools and advantages that Java does not:
+
+
+    +   * While Java can be used to write applets (programs that are embedded in rectangular
+    spaces within Web pages), it cannot be used to control the appearance of a browser
+    window itself; JavaScript can.
+
+    * Java cannot be attached to HTML form elements; JavaScript can.
+
+    * Java is a complex programming language that takes much more time, effort, and
+    diligence to master JavaScript (which is not a programming language, but instead
+    a sophisticated scripting language).
+
+
+    Overall, both Java and JavaScript are powerful—but very different—Web publishing
+    tools. The use of JavaScript and Java is not an either/or issue. Both languages
+    can be (and often are) implemented in a single Web site or Web page. Thus, Java
+    and JavaScript complement each other in many ways.'
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: '# Embedding JavaScript in HTML
+
+
+    For the purposes of this course, a JavaScript program always exists as a subset
+    of an HTML document, embedded within the script of the HTML document. Just as
+    images are embedded in HTML documents with the <IMG> tag, JavaScript programs
+    are embedded using the <SCRIPT> tag.
+
+
+    # <SCRIPT> Tag
+
+
+    JavaScript code (also called a program, script, or instructions) appears between
+    two specific HTML tags—<SCRIPT> and </SCRIPT>. The opening tag—<SCRIPT>requires
+    a mandatory attribute, LANGUAGE. The LANGUAGE attribute identifies the language
+    of the program that follows. For the purposes of this course and your use of JavaScript,
+    the value is always LANGUAGE=JavaScript.
+
+
+    > The JavaScript interpreters built into all JavaScript-aware Web browsers are
+    case sensitive; thus, capitalization is significant. You must set LANGUAGE equal
+    to JavaScript, not JAVASCRIPT, javascript, or JavaScript.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_19_0.png)
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_19_1.png)
+
+
+    # document.write()
+
+
+    The document.write() statement takes what is contained in quotation marks within
+    the parentheses—a collection of characters called a string—and writes it into
+    the HTML document. The browser displays the string when the JavaScript code finishes
+    executing. Effectively, document.write() makes something appear within an HTML
+    page.
+
+
+    An example of a document.write() statement is shown in Figure 1-2.
+
+
+    | document.write("JavaScript was here!") |
+
+    | Statement | String |
+
+
+    Figure 1-2: Anatomy of a JavaScript statement'
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: '# Exercise 1-1: Inserting JavaScript Tags
+
+
+    +   1. Launch your text editor (Microsoft Notepad recommended).
+
+
+    +   2. Type the following script into your text editor.
+
+
+    ```
+
+    <HTML>
+
+    <HEAD>
+
+    <TITLE>Practice JavaScript HTML Document</TITLE>
+
+    </HEAD>
+
+    <BODY>
+
+    <H1>The following is the result of JavaScript code:</H1>
+
+    <SCRIPT LANGUAGE="JavaScript">
+
+    document.write("Hello World!")
+
+    </SCRIPT>
+
+    ```
+
+
+    +   3. Save the file as JAVASCRIPT.HTML (you may save the file anywhere on your
+    computer; however, remember where you saved it so you can open it in the next
+    step).
+
+
+    +   4. Launch your Web browser and open the file JAVASCRIPT.HTML. Your browser
+    content area should appear similar to Figure 1-3.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_20_0.png)
+
+
+    Figure 1-3: The result of a JavaScript program'
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: 'The <SCRIPT LANGUAGE=JavaScript> and </SCRIPT> tags surround a one-line JavaScript
+    program that writes the text “Hello World!” into the HTML document.
+
+
+    This program illustrates an important JavaScript concept. Note that the line that
+    actually writes to the browser screen appears as follows:
+
+
+    ```
+
+    document.write("Hello World!")
+
+    ```
+
+
+    Figure 1-4 illustrates the anatomy of the complete JavaScript program used in
+    the previous exercise.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_21_0.png)
+
+
+    document.write() statements appear frequently in JavaScript programs. These statements
+    function to write whatever is contained in the parentheses into the HTML document.
+    You can even write HTML tags with document.write() and they will be interpreted
+    properly by any JavaScript-aware browser.'
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: '# HidingScriptCode from Older Browsers
+
+
+    **Not all browsers can interpret JavaScript.** Browsers that do not contain a
+    JavaScript interpreter will not recognize JavaScript code. This results in writing
+    JavaScript code into an HTML document as if it was plain text, creating an illogical
+    and unsightly display of text and essentially destroying a Web page.
+
+
+    Because of this risk, a trick available to you to conceal JavaScript code from
+    browsers that are not JavaScript-aware (typically older versions of Netscape Navigator
+    and Internet Explorer). You will utilize this technique in the following hands-on
+    exercise.
+
+
+    # Exercise 1-2: Hiding Code
+
+
+    +   1. Type the following script into JAVASCRIPT.HTML below the script you entered
+    in the previous exercise:
+
+
+    ```
+
+    <H1>Browsers that can''t understand JavaScript won''t display what''s next.</H1>
+
+    <SCRIPT LANGUAGE="JavaScript">
+
+    <!-- Start hiding from old browsers -->
+
+    document.write("What''s next.")
+
+    // Stop hiding from old browsers. -->
+
+    </SCRIPT>
+
+    <H1>But all browsers will display this.</H1>
+
+    ```'
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: '2. Save the file. Switch applications to your Web browser (<ALT + TAB>) and
+    reload the file (<CTRL + R>) in Navigator and <F5> in Internet Explorer. Your
+    browser should appear similar to Figure 1-5.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_23_0.png)
+
+
+    Figure 1-5: Non-JavaScript cannot display the "What''s next" text
+
+
+    The trick here relies upon HTML comments, about which you learned in DDC Publishing''s
+    HTML 4.0 Fundamentals course. Recall that a Web browser will
+
+
+    +   - ignore any text or code between <-- -- and -->
+
+    - not interpret or act upon tags it does not recognize.
+
+
+    Thus, if you position a <-- -- directly following the <SCRIPT> tag, you can instruct
+    a browser that does not recognize the <SCRIPT> tag to begin ignoring text.
+
+
+    Then, to terminate the JavaScript program, you insert a -- > tag. This instructs
+    browsers that are not JavaScript-aware begin interpreting your HTML script again.
+
+
+    But what if JavaScript tries to interpret -- >? This scenario would cause an error
+    because the line containing -- > begins with // . This instructs the browser to
+    ignore the rest of the line.'
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: '# Using Comments
+
+
+    Good programmers describe what is happening in their programs so that other programmers—and
+    they themselves—can more easily edit or troubleshoot (debug) a program. JavaScript
+    allows you to hide plain-English comments from the critical eye of the JavaScript
+    interpreter.
+
+
+    Note that there are two methods of hiding comments:
+
+
+    +   - comments that fit on one line
+
+
+    +   - comments that span multiple lines
+
+
+    # ### Exercise 1-3: Inserting a Single-line Comment
+
+
+    You first saw the // sequence in the previous exercise, when it was used to help
+    hide JavaScript programs from browsers that lack JavaScript capabilities. In the
+    following exercise, you will see how a single-line comment can be used for other
+    purposes.
+
+
+    +   1. Type the following script into your HTML document below the script you
+    entered in the previous exercise:
+
+
+    ```
+
+    ```
+
+    <H1>There''s a one-line comment in the following program.</H1>
+
+    <SCRIPT LANGUAGE="JavaScript">
+
+    <!-- Start hiding from old browsers.
+
+    //The following line writes text into the HTML document.
+
+    document.write("Single-line comments are joy.")
+
+    // Stop hiding from old browsers. -->
+
+    </SCRIPT>
+
+    ```
+
+    ```'
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: 'Mastering JavaScript Part 1
+
+
+    +   2. Resave the file. Switch applications to your Web browser (<ALT + TAB>)
+    and reload the file (<CTRL + R>) in Navigator/Communicator and <F5> in Internet
+    Explorer. Your browser screen should appear similar to Figure 1-6.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_25_0.png)
+
+
+    Figure 1-6: This program contains a one-line comment (not visible)
+
+
+    The first line that starts with // and describes the function of the `document.write()
+    ` line does not cause an error (as it would without the //). It also will not
+    be displayed in the Web page—it is ignored by the JavaScript interpreter.
+
+
+    12 DDC Publishing • www.ddcpub.com'
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: '# Exercise 1-4: Inserting a Multiple-line Comment
+
+
+    Multiple line comments require a different notation than single-line comments.
+
+
+    +   1. Type the following script into your HTML document below the script you
+    entered in the previous exercise:
+
+
+    ```
+
+    <H1>There''s a multiple-line comment in the following program.</H1>
+
+    <SCRIPT LANGUAGE="JavaScript">
+
+    <!-- Start hiding from old browsers.
+
+    /*
+
+    This is a very simple program that writes some text
+
+    into the HTML document. It writes text with the
+
+    JavaScript document.write() method.
+
+    */
+
+    document.write("Multiple-line comments are handy things.")
+
+    // Stop hiding from old browsers. -->
+
+    </SCRIPT>
+
+    ```'
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: '# Mastering JavaScript - Part 1
+
+
+    2. Resave the file. Switch applications to your Web browser (<ALT + TAB>) and
+    reload the file (<CTRL + R>) in Navigator and <F5> in Internet Explorer. Your
+    browser screen should appear similar to Figure 1-7.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_27_0.png)
+
+
+    Figure 1-7: This program contains multiple-line comments (not visible)
+
+
+    In this program, everything between the /* sequence and the * / sequence is hidden
+    from the JavaScript interpreter, even though none of the lines begins with //.
+
+
+    Multiple-line comments come in handy when you are trying to locate problems in
+    your programs. By "commenting out" pieces of your programs they are not interpreted,
+    you can determine where problems are located.
+
+
+    14
+
+
+    DDC Publishing • www.ddcpub.com'
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: '# Lesson Summary
+
+
+    +   JavaScript is useful in applications such as data lookup, validating data,
+    and manipulating the contents of browser windows and frames.
+
+
+    +   JavaScript adds interactivity to a Web page, while Java and C++ are robust
+    languages used to write sophisticated applets and applications.
+
+
+    +   JavaScript programs are embedded in HTML documents using the <SCRIPT> tag.
+    The <SCRIPT> tag has one required attribute, LANGUAGE.
+
+
+    +   The JavaScript statement document.write() instructs the program to display
+    the contents of the parentheses into the HTML document after executing the program.
+
+
+    +   Web browsers that are not JavaScript enabled will not properly interpret the
+    program, causing errors in a Web page. These errors can be avoided by hiding the
+    code using the <!-- -- --> notations.
+
+
+    +   Comments may be inserted in a JavaScript program to remind programmers what
+    is happening “behind the scenes.”'
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: '# Lesson 2 Variables, Data Types, & Loose Typing
+
+
+    # Lesson Topics
+
+
+    +   - Variables
+
+    - Assigning Values to Variables
+
+    - Understanding Data Types
+
+    - Lesson Summary'
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: "# Variables\n\nRemember your first algebra class, when you learned about variables?\
+    \ You learned that a letter, such as x, could represent any numerical value. You\
+    \ might have thought of variables as containers that held some unknown or variable\
+    \ value.\n\nJavaScript, like algebra, involves variables. Think of JavaScript\
+    \ variables as named containers that hold values. JavaScript variables are not\
+    \ limited to holding numeric values, however.\n\nJavaScript variables can hold:\n\
+    \n+   - passages of text (or strings)\n- true/false values (Boolean values)\n\
+    - numbers\n\n# Exercise 2-1: Declaring Variables\n\n1. Type the script into your\
+    \ HTML document below the script you entered in the previous exercise:\n\n```\n\
+    <H1>This program adds some numbers after declaring variables.</H1>\n<SCRIPT LANGUAGE=\"\
+    JavaScript\">\n<!-- Start hiding from old browsers. \n// Declaring a variable\
+    \ with var.\nvar milk\nmilk = 5\n// Declaring a variable without var.\ncookies\
+    \ = 10\n//Declaring with var again.\nvar snack = milk + cookies\ndocument.write(snack)\n\
+    // Stop hiding from old browsers. -->\n</SCRIPT>\n<H1>That's variable declaration.</H1>\n\
+    ```"
+  merge: -1
+  pgno: 31
+- img_proc: true
+  md: "Resave the file. Switch applications to your Web browser and reload the file.\
+    \ Your browser screen should appear similar to Figure 2-1.\n\n![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_32_0.png)\n\
+    \nFigure 2-1: JavaScript program illustrating variable declaration\n\nThe var\
+    \ milk declares a new variable named milk. But, as in the example, it is not critical.\
+    \ You can do any of the following:\n\n+   - Declare a variable with var and set\
+    \ the variable equal to a value:\n  Milk\n  milk = 5\n\n+   - Use only a variable's\
+    \ name, without var, and set it equal to a value:\n  cookies = 10\n\n+   - Simultaneously\
+    \ declare a variable with var and set the variable equal to a value:\n  var snack\
+    \ = milk + cookies\n\nWhich is best? Your code will be easiest to understand if\
+    \ you declare a variable with var on one line, then set it equal to something\
+    \ on a separate line.\n\n```\ndocument.write(snack) results in 15 because snack\
+    \ was a value of milk + cookies (milk = 5 and cookies = 10). If this line had\
+    \ read document.write(\"snack\"), the word snack would appear in the HTML document.\n\
+    ```\n\nThus, the inclusion or exclusion of the quotation marks is very significant\
+    \ and determines the different outcomes."
+  merge: -1
+  pgno: 32
+- img_proc: true
+  md: '# # Assigning Values to Variables
+
+
+    > > After you declare a variable
+
+
+    # ## Exercise 2-2: Initializing Variables
+
+
+    +   1. Type the following script into your HTML document below the script you
+    entered in the previous exercise:
+
+
+    ```html
+
+    <H1>This program just shows how to initialize variables.</H1>
+
+    <SCRIPT LANGUAGE="JavaScript">\<!-- Start hiding from old browsers.
+
+    // Declaring, then initializing.
+
+    var cats
+
+    var dogs
+
+    var fish
+
+    cats = 3
+
+    dogs = "Man''s best friend."
+
+    fish = true
+
+    // Declaring and initializing simultaneously.
+
+    var trains = "Choo!"
+
+    var cars = "Beep!"
+
+    <!-- Stop hiding from old browsers. -->
+
+    </SCRIPT>
+
+    <H1>That''s initialization.</H1>
+
+    ```
+
+
+    +   2. Save the file. Switch applications to your Web browser and reload the file.
+    Your browser screen should appear similar to Figure 2-2.'
+  merge: -1
+  pgno: 33
+- img_proc: true
+  md: '# Lesson 2: Variables, Data Types, & Loose Typing
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_34_0.png)
+
+
+    Figure 2-2: This program illustrates variable initialization.
+
+
+    This program illustrates, for additional clarity, the two acceptable ways to create
+    and initialize variables.
+
+
+    The first method is to create the variables with `var` and, on separate lines,
+    assign them values, as shown in Figure 2-3.
+
+
+    The second method—less clear, but sometimes necessary—is to create the variables
+    with `var` and assign them values on the same line, as shown in Figure 2-4.
+
+
+    | | |
+
+    |---||
+
+    | Variables declared | var cats
+
+    var dogs
+
+    var fish |
+
+    | Variables initialized | cats = 3
+
+    dogs = "Man''s best friend.
+
+    fish = true |
+
+
+    Figure 2-3: One method of creating and initializing a variable
+
+
+    ```
+
+    var trains = "Choo!"
+
+    Variable declared    Variable initialized
+
+    ```
+
+
+    Figure 2-4: A second method of creating and initializing a variable
+
+
+    DDC Publishing • www.ddcpub.com'
+  merge: -1
+  pgno: 34
+- img_proc: true
+  md: '# Understanding Data Types
+
+
+    There are several types of data you can assign to variables. The types of variable
+    JavaScript can interpret:
+
+
+    +   - **number**: Numbers are values, such as 5, 12,908, or -12.345.
+
+    - **string**: Strings are sequences of characters, such as "I consider myself
+    the luckiest man on the face of earth." Strings must be enclosed in quotation
+    marks to be properly recognized by JavaScript.
+
+    - **Boolean**: Boolean values are true/false statements.
+
+
+    # Data Types & Dynamic Typing
+
+
+    Many programming languages force you to determine the type of data of a variable
+    will contain when you declare the variable, then restrict you to that type. In
+    inflexible languages, if you configure a variable to contain numbers and then
+    to assign a string to it, you receive an error.
+
+
+    Fortunately, JavaScript is more accommodating. After you declare a variable, you
+    can assign any type of data to it. This is called dynamic typing (also known as
+    flexible typing).
+
+
+    # String Concatenation
+
+
+    String concatenation is the method used to assemble short strings into a longer
+    string, using the + operator. Imagine we have two strings, one containing "Romeo"
+    and another containing "Juliet". To join these two strings into a bigger string:
+
+
+    +   - "Romeo" + "and Juliet" = "Romeo Juliet"
+
+
+    Note that there is an extra space following Romeo—without the additional space,
+    the strings run together, as follows:
+
+
+    +   - "Romeo" + "and Juliet" = "Romeo Juliet"
+
+
+    You can do the same with the contents of variables:
+
+
+    ```
+
+    var eightBall = "Romeo "
+
+    tenBall = "and Juliet"
+
+    cueBall = eightBall + tenBall
+
+    ```
+
+
+    At the end of that sequence, cueBall contains:
+
+
+    +   - "Romeo and Juliet"'
+  merge: -1
+  pgno: 35
+- img_proc: true
+  md: '# Exercise 2-3: Assigning Data to a Variable
+
+
+    1. Type the following script into your HTML document below the script you entered
+    in the previous exercise:
+
+
+    ```
+
+    <H1>This program demonstrates loose typing.</H1>
+
+    <SCRIPT LANGUAGE="JavaScript">
+
+    <!-- Start hiding from old browsers.
+
+    // Declaring a single variable, then assign different kinds of data to it.
+
+    var chameleon
+
+    chameleon = 5
+
+    document.write("<P>Chameleon now contains " + chameleon + ".")
+
+    chameleon = 24.78
+
+    document.write("<P>Chameleon now contains " + chameleon + ".")
+
+    chameleon = "a fly."
+
+    document.write("<P>Chameleon now contains " + chameleon + ".")
+
+    chameleon = true
+
+    document.write("<P>Chameleon now contains " + chameleon + ".")
+
+    // Stop hiding from old browsers. -->
+
+    </SCRIPT>
+
+    <H1>Loose as a goose.</H1>
+
+    ```'
+  merge: -1
+  pgno: 36
+- img_proc: true
+  md: '# Mastering JavaScript Part 1
+
+
+    2. Save the file. Switch applications to your Web browser and reload the file.
+    Your browser screen should appear similar to Figure 2-5.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_37_0.png)
+
+
+    Figure 2-5: Chameleon can contain different kinds of data thanks to loose typing
+
+
+    During the course of this JavaScript program, Chameleon gets four different values
+    assigned to it. They are three of three different data types—1) number, 2) string,
+    and 3) Boolean. This is an example of the flexibility of JavaScript with regard
+    to data types.
+
+
+    # The typeof () Operator
+
+
+    How do you determine the type of data that is held in a variable? JavaScript provides
+    the typeof() operator, which determines the data type of the variable that is
+    contained in the parentheses.'
+  merge: -1
+  pgno: 37
+- img_proc: true
+  md: '# Exercise 2-4: Determining Data Types
+
+
+    1. Type the following script into your HTML document below the script you entered
+    in the previous exercise:
+
+
+    ```
+
+    <h1>Here''s a demonstration of the typeof operator.</h1>
+
+    <SCRIPT LANGUAGE="JavaScript">
+
+    <!-- Start hiding from old browsers.\n// Declaring a single variable, then assign
+    different kinds of data to it.
+
+    var chameleon
+
+    chameleon = 5
+
+    document.write("<P>Chameleon now contains " + chameleon + ".")
+
+    ndocument.write("<P>The type of data in Chameleon is " +
+
+    typeof(chameleon) + ".")
+
+    chameleon = 24.78
+
+    document.write("<P>Chameleon now contains " + chameleon + ".")
+
+    document.write("<P>The type of data in Chameleon is " +
+
+    typeof(chameleon) + ".")
+
+    ch = "a fly"
+
+    document.write("<P>Chameleon now contains " + chameleon + ".")
+
+    document.write("<P>The type of data in Chameleon is " +
+
+    typeof(chameleon) + ".")
+
+    chameleon = true
+
+    document.write("<P>Chameleon now contains " + chameleon + ".")
+
+    document.write("<P>The type of data in Chameleon is " +
+
+    typeof(chameleon) + ".")
+
+    // Stop hiding from old browsers. -->
+
+    </SCRIPT>
+
+    <h1>All those data types, already!</h1>",
+
+    ```'
+  merge: -1
+  pgno: 38
+- img_proc: true
+  md: '# Mastering JavaScript: Part 1
+
+
+    2. Resave the file. Switch applications to your Web browser and reload the file.
+    Your browser screen should appear similar to Figure 2-6.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_39_0.png)
+
+
+    Figure 2-6: The typeof () operator identifies the data type of a variable''s contents
+
+
+    Every instance of typeof(chameleon) generates the data type of the piece of data
+    that is stored in chameleon. Note that chameleon has all of these different data
+    types assigned to it.
+
+
+    26  DDC Publishing • www.ddcpub.com'
+  merge: -1
+  pgno: 39
+- img_proc: true
+  md: '# Lesson Summary
+
+
+    +   - JavaScript variables are named containers that hold numeric, string, or
+    Boolean values.
+
+
+    +   - Declaring a variable involves only giving it a name. Using the notation
+    var helps identify the variables in your script.
+
+
+    +   - To initialize a variable, simply assign a value to it, using the equal (=)
+    sign.
+
+
+    +   - JavaScript understands data in the form of numbers, strings and Boolean
+    values. A JavaScript variable may be any of these types of data. This concept
+    is known as dynamic typing (also called flexible typing).
+
+
+    +   - String concatenation allows you to form one large string from multiple small
+    strings, using the plus (+) sign.
+
+
+    +   - The typeof() operator contains a variable name inside the parentheses. When
+    invoked in a program, JavaScript can identify the type of data that variable is
+    holding.'
+  merge: -1
+  pgno: 40
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 41
+- img_proc: true
+  md: '# # Lesson 3
+
+    JavaScript Operators
+
+
+    # ## Lesson Topics
+
+
+    +   * Mathematical Operators
+
+    * Assignment Operators
+
+    * Comparison Operators
+
+    * Logic Operators
+
+    * Lesson Summary'
+  merge: -1
+  pgno: 42
+- img_proc: true
+  md: '# Mathematical Operators
+
+
+    You learned about mathematical operators in elementary school when you were taught
+    that 1 + 1 = 2. In a nutshell, operators are special characters, such as + or
+    x, that apply a particular function to the values to which they are assigned.
+
+
+    JavaScript has many mathematical operators, most of which are already familiar
+    to you. The + operator in JavaScript, for example, combines two values, just as
+    it does in other contexts.
+
+
+    # Five Mathematical Operators Supported
+
+
+    Mathematical operators are those that perform a mathematical operation on two
+    numbers. JavaScript supports five mathematical operators, as shown in Table 3-1.
+
+
+    | Operation | Traditional Operator | JavaScript Operator |
+
+    | --- | --- | --- |
+
+    | Addition | + | + |
+
+    | Subtraction | - | - |
+
+    | Multiplication | x | * |
+
+    | Division | ÷ | / |
+
+    | Modulo | None | % |
+
+
+    Table 3-1: JavaScript mathematical operators
+
+
+    > What is modulo? It is an arithmetic operation that is rarely used outside of
+    computer programming.
+
+
+    > Modulo is simple to understand: the result of a modulo operation (called a modulus)
+    is the remainder left when you divide one number into another. For example, 5
+    modulo 11 = 1, because 5 divides into 11 twice, leaving a remainder of 1.
+
+
+    Similarly, 11 modulo 24 = 2 and 20 modulo 100 = 0.
+
+
+    > You can dictate the sequence in which several operations are performed with
+    parentheses. If you enter (4*5)+3, the 4*5 is calculated first and then 3 is added,
+    resulting in 23. On the other hand, 4*(5+3) results in 32, because 5 is added
+    to 3, the result of which is then multiplied by 4.'
+  merge: -1
+  pgno: 43
+- img_proc: true
+  md: "# Exercise 3-1: Using Mathematical Operators\n\n+   1. Type the following script\
+    \ into your HTML document below the script you entered in the previous exercise:\n\
+    \n```\n<SCRIPT LANGUAGE=\"JavaScript\">\n<!-- Start hiding from old browsers\n\
+    \nfunction a_plus_b(form) {\n  a=eval(form.a.value)\n  b=eval(form.b.value)\n\
+    \  c=a+b\n  form.ans.value = c\n}\nfunction a_minus_b(form) {\n  a=eval(form.a.value)\n\
+    \  b=eval(form.b.value)\n  c=a-b\n  form.ans.value=c\n}\nfunction a_times_b(form)\
+    \ {\n  a=eval(form.a.value)\n  b=eval(form.b.value)\n  c=a*b\n  form.ans.value=c\n\
+    }\nfunction a_div_b(form) {\n  a=eval(form.a.value)\n  b=eval(form.b.value)\n\
+    \  c=a/b\n  form.ans.value = c\n}\n\n// Stop Hiding From Old Browsers --\n</SCRIPT>\n\
+    \n<BODY>\n<CENTER>\n<FORM name=\"form\"><input type=text size=4 value=\"\" name=\"\
+    a\">\n<input type=\"number\" size=4 value=\"\" name=\"b\">\n<input type=\"button\"\
+    \ value=\"+\" \nonclick=\"a_plus_b(this.form)\">\n<input type=\"button\" value=\"\
+    -\" \nonclick=\"a_minus_b(this.form)\">\n<input type=\"button\" value=\"x\" \n\
+    onclick=\"a_times_b(this.form)\">\n<input type=\"button\" value=\"/\" \nonclick=\"\
+    a_div_b(this.form)\">\n<input type=\"number\" value=0 name=\"ans\" size=9>\n</FORM>\n\
+    </CENTER>\n```"
+  merge: -1
+  pgno: 44
+- img_proc: true
+  md: '2. Resave the file, Switch applications to your Web browser and reload the
+    file. Your browser screen should appear similar to Figure 3-1.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_45_0.png)
+
+
+    You will learn more about forms and JavaScript in Lesson 7. In this case, the
+    focus is on the use of variables and mathematical operators. Basically, the script
+    takes variable “a” from the first box and variable “b” from the second box and
+    performs whatever mathematical equation you request, placing the output in the
+    third box.
+
+
+    To get a better idea of the potential of this type of calculator, examine the
+    script FULLCALCULATOR.HTML in the JAVCRIPT-1 folder on your desktop.'
+  merge: -1
+  pgno: 45
+- img_proc: true
+  md: '# # Assignment Operators
+
+
+    Assignment operators are operators that give specified values to variables. You
+    already know about the most common assignment operator, the equal sign (=). When
+    you write Force = (Mass * Acceleration), you are assigning the product of Mass
+    and Acceleration to the variable Force.
+
+
+    JavaScript supports the equal sign—you have used it several times in this course
+    already—as well as five "shortcut assignment operators", as shown in Table 3-2.
+
+
+    | Operation | JavaScript Operator |
+
+    |---|---|
+
+    | Assign value | |= |
+
+    | Plus-assignment | += |
+
+    | Minus-assignment | -= |
+
+    | Multiplication-assignment | *= |
+
+    | Division-assignment | /= |
+
+    | Modulo-assignment | %= |
+
+
+    Table 3-2: The assignment operators
+
+
+    The shortcut assignment operators work by performing the shortcut operation on
+    the variable to the left of the operator and the variable or value to the right
+    of the operator, assigning the result of that operation to the variable on the
+    left.
+
+
+    ```
+
+    milk = 5
+
+    cookies = 10
+
+    milk += cookies
+
+    nResult: milk is 15
+
+    ```
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_46_0.png)'
+  merge: -1
+  pgno: 46
+- img_proc: true
+  md: '# Exercise 3-2: Using Assignment Operators
+
+
+    1. Type the following script into your HTML document below the script you entered
+    in the previous exercise:
+
+
+    ```
+
+    <h1>This program illustrates the use of JavaScript assignment operators.</h1>
+
+    <SCRIPT LANGUAGE="JavaScript">
+
+    <!-- Start hiding from old browsers. -->
+
+    var Number
+
+    Number = 5
+
+    document.write("<H2>The = Operator</H2>")
+
+    ndocument.write("After performing the operation Number = 5, Number''s value is
+    " + Number + ".")
+
+    Number += 5
+
+    document.write("<H2>The += Operator</H2>")
+
+    document.write("After performing the operation Number += 5, Number''s value is
+    " + Number + ".")
+
+    Number -= 5
+
+    document.write("<H2>The -= Operator</H2>")
+
+    document.write("After performing the operation Number -= 5, Number''s value is
+    " + Number + ".")
+
+    Number *= 5
+
+    document.write("<H2>The *= Operator</H2>")
+
+    document.write("After performing the operation Number *= 5, Number''s value is
+    " + Number + ".")
+
+    Number /= 5
+
+    document.write("<H2>The /= Operator</H2>")
+
+    ndocument.write("After performing the operation Number /= 5, Number''s value is
+    " + Number + ".")")
+
+    ```'
+  merge: -1
+  pgno: 47
+- img_proc: true
+  md: 'Number %= 5
+
+
+    document.write("<H2>The %= Operator</H2>")
+
+
+    document.write("After performing the operation Number % = 5, Number''s value is
+    " + Number + ".")")
+
+
+    // Stop hiding from old browsers. -->
+
+
+    </SCRIPT>
+
+
+    +   2. Resave the file. Switch applications to your Web browser and reload the
+    file. Browser screen should appear similar to Figure 3-2.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_48_0.png)
+
+
+    Figure 3-2: The assignment operators assign values to variables
+
+
+    This program illustrates how assignment operators work by applying them to Number
+    one at a time.'
+  merge: -1
+  pgno: 48
+- img_proc: true
+  md: 'Mastering JavaScript Part 1
+
+
+    # # Comparison Operators
+
+
+    You may be familiar with or have worked with the operators you will learn about
+    in this section. JavaScript''s comparison operators help you determine the relationship
+    between two values.
+
+
+    # ## Six Comparison Operators Supported
+
+
+    When you apply any of JavaScript''s six comparison operators to two values, either
+    true or false is produced as a result. If the comparison statement (such as, "is
+    greater than") is true, the comparison returns true. Otherwise, the comparison
+    returns false. For example, 6 == 7 would return false, because six is not equal
+    to seven.
+
+
+    The six JavaScript comparison operators are outlined in Table 3-3.
+
+
+    | Operation | JavaScript Operator |
+
+    | --- | --- |
+
+    | Is equal to | == |
+
+    | Is not equal to | != |
+
+    | Is greater than | > |
+
+    | Is less than | < |
+
+    | Is greater than or equal to | >= |
+
+    | Is less than or equal to | <= |
+
+
+    Table 3-3: JavaScript comparison operators
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_49_0.png)
+
+
+    Comparison operators are very important to conditional statements and loops, as
+    you will learn in Lesson 5: Conditional Statements & Loops.
+
+
+    36
+
+
+    DDC Publishing • www.ddcpub.com'
+  merge: -1
+  pgno: 49
+- img_proc: true
+  md: '# Exercise 3-3: Using Comparison Operators
+
+
+    +   1. In your JAVCRIPT-1 folder, open the file called GUESSING.HTML in Notepad.
+
+
+    +   2. This is a Guessing Game that makes use of comparison operators. Double
+    click the file to open it in your browser. Your screen should appear similar to
+    Figure 3-3.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_50_0.png)
+
+
+    Figure 3-3: Comparison operators simply compare values
+
+
+    Examine the code in GUESSING.HTML. Specifically, note the following lines:
+
+
+    ```
+
+    response = num
+
+    if (num < myNumber) response = alert(response + " + was too low");
+
+    if (num > myNumber) response = alert(response + " + was too high");
+
+    if (num == myNumber)
+
+    {
+
+    response = response + alert("Correct!" + " Guess Again!");
+
+    nGesses = 0
+
+    myNumber = random(9)+1
+
+    }
+
+    ```'
+  merge: -1
+  pgno: 50
+- img_proc: true
+  md: 'This script takes the input from the form (the variable "guess") and compares
+    it to the random number (the variable "randomNumber") chosen by the script. The
+    script then does three comparisons: is the inputted number greater than, less
+    than or equal to the random number chosen by the script. You can easily accomplish
+    this with a series of if...else statements (you will learn more about these in
+    Lesson 5). Because one number can only be greater than, less than or equal to
+    another number, you only need to perform three comparison operations.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_51_0.png)
+
+
+    As you can see, if the if_else statement matches the correct comparison of the
+    two variables, an alert box is called that informs you that your guess was 1)
+    too high, 2) too low, or 3) you win and you should start over.'
+  merge: -1
+  pgno: 51
+- img_proc: true
+  md: '# Logic Operators
+
+
+    Logic operators become useful when you need to determine which of several conditions
+    are true. By joining several conditions with AND or OR operators, you can determine
+    what is happening with a given set of variables.
+
+
+    There are three logic operators, shown in Table 3–4.
+
+
+    | Operator | JavaScript Operator |
+
+    | --- | --- |
+
+    | AND | && |
+
+    | OR | \| |
+
+    | NOT | ! |
+
+
+    **Table 3-4:** JavaScript logical operators
+
+
+    How do you type the | character? It is the SHIFT function of the key just above
+    the <ENTER> key on most keyboards.
+
+
+    # How to Use Logical Operators
+
+
+    Logical operators are used to join two statements that result in one of two Boolean
+    values (true or false). The values returned by the logical operators depend upon
+    how many values surrounding them are true.
+
+
+    +   - A && statement will return true only if both the values surrounding it are
+    true.
+
+    - A || ! statement will return true if either of the values surrounding it is
+    true.
+
+    - The ! operator is a type of negation for Boolean values—it turns true values
+    into false values and vice-versa.'
+  merge: -1
+  pgno: 52
+- img_proc: true
+  md: '# Exercise 3-4: Using Logical Operators
+
+
+    1. Type the following script into your HTML document below the script you entered
+    in the previous exercise:
+
+
+    ```
+
+    <h1>This program illustrates the use of JavaScript logical operators.</h1>
+
+    <SCRIPT LANGUAGE="JavaScript">
+
+    <!-- Start hiding from old browsers. -->
+
+    var Number1
+
+    Number1 = 100
+
+    var Number2
+
+    Number2 = 5
+
+    document.write("Number1 equals " + Number1 + " and Number2 equals " + Number2
+    + ".")
+
+    document.write("<H2>The && Operator</H2>")
+
+    document.write("Number1 is greater than 50 and Number2 is less than 10?<P>")
+
+    document.write((Number1 > 50) && (Number2 < 10))
+
+    document.write("<H2>The || Operator</H2>")
+
+    document.write("Number1 is equal to 10 or Number2 is less than 5?<P>")
+
+    document.write((Number1 == 50) || (Number2 < 5))
+
+    document.write("<H2>The ! Operator</H2>")
+
+    document.write("Number1 is not greater than or equal to Number2?<P>")
+
+    document.write((Number1 >= Number2))
+
+    // Stop hiding from old browsers. ---->
+
+    </SCRIPT>
+
+    ```'
+  merge: -1
+  pgno: 53
+- img_proc: true
+  md: '2. Resave the file. Switch applications to your Web browser and reload the
+    file. Your browser screen should appear similar to Figure 3-4.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_54_0.png)
+
+
+    Figure 3-4: Logical operators determine which of several conditions are true
+
+
+    This exercise relies upon conditional operators as well as logical operators.
+    In the line
+
+
+    ```
+
+    document.write(Number1 == 50) || (Number2 < 5)
+
+    ```
+
+
+    the statement (Number1 == 50) is evaluated first (it is false) and then the statement
+    (Number2 < 5) is evaluated (it, too, is false). Because both values surrounding
+    the || operator are false, it must return false as well.'
+  merge: -1
+  pgno: 54
+- img_proc: true
+  md: '# Lesson Summary
+
+
+    +   Mathematical operators are used in JavaScript much the same as they are in
+    math: +, -, *, /. Modulo is an operator specific to computer programming. Represented
+    by the percent symbol (%), modulo displays the remainder following a division
+    calculation.
+
+
+    +   The equal symbol (=) is the most common assignment operator used in JavaScript.
+    The equal symbol, combined with mathematical operators, creates shortcut assignment
+    operators. The mathematical operation is performed and the result of the operation
+    is assigned to the variable on the left.
+
+
+    +   Comparing values in JavaScript is done with the familiar comparison operators
+    (>, <, >=, etc.). JavaScript evaluates the statement and returns a value of true
+    or false.
+
+
+    +   The logic operators AND, OR, and NOT join two statements and return true or
+    false. Logic operators are also known as Boolean operators.'
+  merge: -1
+  pgno: 55
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 56
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 57
+- img_proc: true
+  md: '# # Lesson 4
+
+    JavaScript Functions
+
+
+    # ## Lesson Topics
+
+
+    +   * Functions
+
+    * Using Functions
+
+    * Predefined Functions
+
+    * Lesson Summary'
+  merge: -1
+  pgno: 58
+- img_proc: true
+  md: '# Functions
+
+
+    Assume you are writing a JavaScript program that must repeatedly perform action,
+    such as multiplying a variable by a ratio and then adding a constant to the result.
+    You can either repeatedly write lines of script that perform this task, or you
+    can write a function that does the job. Whenever you need to perform this particular
+    task, you can simply refer to the function you created.
+
+
+    Functions are not a difficult concept to comprehend, but do not let fact fool
+    you into underestimating their value. Functions are an integral part of most JavaScript
+    programs. In addition to their obvious utility, functions make scripts easier
+    to debug because they reduce the number of points of failure.
+
+
+    # What is a Function?
+
+
+    A function is a JavaScript command for which you define a purpose. After you create
+    a function, you can invoke it by name; then the actions you have associated with
+    that function will be performed. Thus, a function can be thought of as a more
+    powerful and complex macro (such as those used in word processing and spreadsheet
+    applications).
+
+
+    Functions serve two primary purposes:
+
+
+    +   - save time (similar to a macro in a word processing or spreadsheet application)
+
+
+    +   - make your programs easier to edit and read
+
+
+    When should you use a function? The best answer: anytime you plan to perform a
+    multi-step action repeatedly within a program. Functions allow you to define a
+    multi-step action just once and then invoke, or call, as many times as needed.
+
+
+    Functions are also useful for Web sites that contain server-side HTML. You can
+    place a function within a header document and call it repeatedly throughout the
+    site, without having to replicate the code.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_59_0.png)
+
+
+    > Server-side HTML, also known as server parsed HTML, allows you to call another
+    HTML document within your current HTML document. These HTML documents generally
+    display the file name extension (suffix) “.html” and are often used by designers
+    who want to use consistent headers and footers throughout a Web site.
+
+
+    Establishing a separate header document that is called into your other sites allows
+    you to update a logo, or perhaps a toolbar, by only updating one document (the
+    rest of your site is instantly updated).'
+  merge: -1
+  pgno: 59
+- img_proc: true
+  md: '# Creating Functions
+
+
+    To create a function:
+
+
+    +   1. create a <SCRIPT>...</SCRIPT> block in the <HEAD> section of an HTML document
+
+    2. use the keyword function, followed by the name of the function
+
+    3. insert an opening brace
+
+    4. define the function instructions
+
+    5. insert a closing brace
+
+
+    # Exercise 4-1: Using Functions
+
+
+    Type the following script into your HTML document below the script you entered
+    in the previous exercise:
+
+
+    ```
+
+    <SCRIPT LANGUAGE="JavaScript">
+
+    function writeText()
+
+    {
+
+    document.write(\(\<B>This text was written by a function.</B>")
+
+    }
+
+    </SCRIPT>
+
+    </HEAD>
+
+    <BODY>
+
+    <h1>This HTML document has a JavaScript function in it...</h1>
+
+    <h1>But it isn''t called, so it doesn''t do anything.</h1>
+
+    ```'
+  merge: -1
+  pgno: 60
+- img_proc: true
+  md: "# Mastering JavaScript - Part 1\n\n2. Resave the file. Switch applications\
+    \ to your Web browser and reload the file. Your browser screen should appear similar\
+    \ to Figure 4-1.\n\n![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_61_0.png)\n\nFigure\
+    \ 4-1: A function is created in the background\n\nThe complete declaration of\
+    \ the function writeText() is shown in Figure 4-2.\n\n![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_61_1.png)\n\
+    \n```\n<SCRIPT LANGUAGE=\"JavaScript\">\nfunction writeText() {\n  document.write(\"\
+    <B>This text was written by a function.</B>\");\n}\n</SCRIPT>\n```\n\nFigure 4-2:\
+    \ Anatomy of a function\n\nThe above code creates a function called writeText()\
+    \ that writes the line, This text was written by a function. into the HTML document.\
+    \ Note however, that writeText() is never called; there is no line of code in\
+    \ the document's <BODY> to invoke IT.\n\n48 DDC Publishing • www.ddcpub.com"
+  merge: -1
+  pgno: 61
+- img_proc: true
+  md: "# # Using Functions\n\nYou now understand why you would want to create a function\
+    \ and how to do it. How, then, do you put your newly created function to work?\
+    \ Invoking a function you defined involves simply calling the function name in\
+    \ a JavaScript program.\n\n# ## Exercise 4-2: Calling Functions\n\n+   1. Type\
+    \ the following script into your HTML document below the script you entered in\
+    \ the previous exercise:\n\n```\n<SCRIPT LANGUAGE=\"JavaScript\">\nfunction writeText()\
+    \ {\n  document.write(\"<B>This text was written by a function.</B>\");\n}\n</SCRIPT>\n\
+    <HEAD>\n<BODY>\n<h1>This HTML document has a JavaScript function in it...</H1>\n\
+    <h1>And it will write the next line of text.</H1>\n<SCRIPT LANGUAGE=\"JavaScript\"\
+    >\n<!-- Start hiding from old browsers. -->\nwriteText()\n// Stop hiding from\
+    \ old browsers. --\n</SCRIPT>\n<h1>How about that!</H1>\n\n```"
+  merge: -1
+  pgno: 62
+- img_proc: true
+  md: '# Mastering JavaScript Part 1
+
+
+    2. Resave the file. Switch applications to your Web browser and reload the file.
+    browser screen should appear similar to Figure 4-3.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_63_0.png)
+
+
+    Figure 4-3: Certain text in this document was written by a function
+
+
+    There are two pieces of JavaScript code in this program. The first is the same
+    as as in the previous exercise—`writeText()`. The second passage of JavaScript
+    code contains only one line (aside from the `<SCRIPT></SCRIPT>` tags and the lines
+    to hide the code from old browsers).
+
+
+    That one line of code, `writeText()`, invokes the `writeText()` function. When
+    the program runs, the line of code contained in `writeText()` is displayed where
+    the function is called, not where it was created.
+
+
+    # Passing Parameters to Functions
+
+
+    Often, you will want to send data to a function so the function can perform actions
+    with data. This is called passing parameters.
+
+
+    50 * DDC Publishing • www.ddcpub.com'
+  merge: -1
+  pgno: 63
+- img_proc: true
+  md: "# Exercise 4-3: Passing Parameters\n\n1. Type the following script into your\
+    \ HTML document below the script you entered in the previous exercise:\n\n```\n\
+    <SCRIPT LANGUAGE=\"JavaScript\">\nfunction addNumbers(oneNumber,anotherNumber)\n\
+    {\nvar sum\n = (oneNumber + anotherNumber)\ndocument.write(\"The sum of \" + oneNumber\
+    \ + \" and \" + anotherNumber + \" is \" + sum + \".\")\n}\n</SCRIPT>\n</HEAD>\n\
+    <BODY>\n<H1>The function writes text that's sent to it as a parameter:</H1>\n\
+    <SCRIPT LANGUAGE=\"JavaScript\">\n<!-- Start hiding from old browsers.\naddNumbers(5,3)\n\
+    // Stop hiding from old browsers. -->\n</SCRIPT>\n<H1>How about that!</H1>\n```"
+  merge: -1
+  pgno: 64
+- img_proc: true
+  md: "2. Save the file. Switch applications to your Web browser and reload the file.\
+    \ Your browser screen should appear similar to Figure 4–4.\n\n![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_65_0.png)\n\
+    \nFigure 4-4: The function in this program had a parameter passed to it\n\nIn\
+    \ this program, the function addNumbers() is declared with the following line:\n\
+    \n```\nfunction addNumbers(oneNumber, anotherNumber) \n```\n\nThis function declaration\
+    \ allows the function addNumbers() to accept two pieces of data when it is called.\
+    \ The function definition goes on to declare a new variable, Sum, add oneNumber\
+    \ and anotherNumber, and set Sum equal to the result. It prints out a sentence\
+    \ that describes the operation performed and the result.\n\nWhen addNumbers()\
+    \ is called, the parameters (5 and 3) are introduced:\n\n```\naddNumbers(5,3)\n\
+    ```\n\nThe parameters 5 and 3 are then sent to the function addNumbers(). The\
+    \ parameters become oneNumber and anotherNumber, respectively."
+  merge: -1
+  pgno: 65
+- img_proc: true
+  md: '# # Predefined Functions
+
+
+    To make tasks easier for JavaScript programmers, several predefined functions
+    have been specified within the scripting language.
+
+
+    These predefined, or "top-level," functions include eval, isNaN, Number, String,
+    parseInt parseFloat, escape, unEscape, taint, and untaint. These functions can
+    be executed within any script, without having to define their actions. They perform
+    the same actions every time.
+
+
+    Table 4-1 describes the purpose of each JavaScript''s predefined functions.
+
+
+    | Top Level Function | Syntax | Purpose |
+
+    |---|---||
+
+    | eval | eval(string) | Used to evaluate a string of JavaScript code without referencing
+    a particular object. If the string is JavaScript coding it executes it. |
+
+    | isNaN | isNaN(value) | Used to determine if the value is not a number (NaN).
+    If the value is a number, it returns a false. |
+
+    | Number | Number(object) | Converts an object to a number. Especially useful
+    if you want to perform quick calculations on a complex variable. |
+
+    | String | String(object) | Similar to the Number Function, except it converts
+    an object to a string. |
+
+    | parseFloat and parseInt | parseFloat(string) parseInt(string, [base]) | Both
+    attempt to return a numeric value from their accompanying strings. parseFloat
+    parses the numbers, while parseInt parses them, converts them to whatever base
+    is referenced. |
+
+    | escape and unescape | escape(string) unescape(string) | Encodes and decodes
+    whatever string information is provided. |
+
+    | taint and untaint | taint untaint | Used for adding and removing data tainting.
+    This prevents other scripts from passing secure information. |
+
+
+    Table 4-1: JavaScript predefined functions'
+  merge: -1
+  pgno: 66
+- img_proc: true
+  md: '# Lesson Summary
+
+
+    +   - Functions in JavaScript work similarly to macros in word processing or spreadsheet
+    applications. Like macros, functions are useful for multi-step actions or actions
+    that must be performed repeatedly. Once defined, a function can be invoked as
+    many times as necessary.
+
+
+    +   - Functions are created with the term function, and the name of the function.
+    The instructions for the function are enclosed in braces ({}) following the name.
+
+
+    +   - Functions can be shared among JavaScript programs using copy and paste.
+
+
+    +   - To use a function in a program, the function''s name need only be referenced.
+    Invoking a function in a JavaScript program is know as calling a function.
+
+
+    +   - Some functions require additional data in order to be performed. These data
+    are known as parameters.
+
+
+    +   - JavaScript has several top-level or pre-defined functions programmed into
+    it. These can be called at any time.'
+  merge: -1
+  pgno: 67
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 68
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 69
+- img_proc: true
+  md: '# # Lesson 5
+
+    Conditional Statements & Loops
+
+
+    # ## Lesson Topics
+
+
+    +   - If & If...Else Statements
+
+    - For Loops
+
+    - While Loops
+
+    - Switch Statements
+
+    - Lesson Summary'
+  merge: -1
+  pgno: 70
+- img_proc: true
+  md: '# If & If...Else Statements
+
+
+    Imagine you are a spectator at a baseball game. It is hot and you are thirsty.
+    You look around to see the vendor of your favorite beverage is nearby. If he is,
+    you will signal to him that you wish to make a purchase. If a vendor is not nearby,
+    you will resign yourself to thirst and wait until one passes your seat.
+
+
+    This is an example of an if statement. If the vendor is nearby, you will try to
+    get your attention. Otherwise, you will do nothing.
+
+
+    Now, assume you are a baseball player. You are coming up to bat. As you walk up
+    to the field, you evaluate the situation on the field. If there is a runner on
+    second base (and if there are fewer than two outs, and if you have trouble hitting
+    against the current pitcher, and if the base coach signals you to do so...and
+    so forth), you will bunt to help the runner advance to third. Otherwise, you will
+    swing and attempt to get a base hit.
+
+
+    This is an example of if...else statement. If the conditions are right for a bunt,
+    you will attempt to bunt. If the conditions are not right for a bunt, you will
+    swing and try to get a hit.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_71_0.png)
+
+
+    Is the first example an if...else statement, too? Not really, because the action
+    you would take if the vendor was not nearby is nothing at all. An if statement
+    becomes an if...else statement only if you want to take some kind of positive
+    action in the event that the “if” conditions are not true. After all, the batter
+    would not just stand there if the conditions were right for a bunt—he would swing.
+
+
+    JavaScript supports both if and if...else statements; you will find them useful
+    in the future when you write your own JavaScript programs.'
+  merge: -1
+  pgno: 71
+- img_proc: true
+  md: "# Syntax\n\nJavaScript if and if...else statements have a logical syntax.\n\
+    \n# Example of an if Statement\n\n```\nif (condition)\n{\n    code to execute\
+    \ only if condition is true\n}\n```\n\nIn the previous example, the code between\
+    \ the braces executes only when the condition in the parentheses is true. In the\
+    \ event that the condition is false, the interpreter skips the contents of the\
+    \ braces and picks up with the first line of script after them.\n\nAn if...else\
+    \ statement is different in that it specifies a task for the interpreter if the\
+    \ condition is false.\n\n# Example of an if...else Statement\n\n```\nif (condition)\n\
+    {\n    code to execute only if condition is true\n}\nelse\n{\n    code to execute\
+    \ only if condition is false\n}\n```\n\nThe first part of an if...else statement\
+    \ is identical to an if statement—the code in the braces after the if statement\
+    \ executes only in the event that the condition specified in the parentheses is\
+    \ true. However, in an if...else statement, the code contained in the braces that\
+    \ follow the else line execute if (and only if) the condition is false."
+  merge: -1
+  pgno: 72
+- img_proc: true
+  md: "# Exercise 5-1: Using the if Statement\n\n+   1. Type the following script\
+    \ into your HTML document below the script you entered in the previous exercise:\n\
+    \n```\n<H1>This program shows how the <code>if</code> statement works.</H1>\n\
+    <SCRIPT LANGUAGE=\"JavaScript\">\n<!-- Start hiding from old browsers. -->\nvar\
+    \ Capricious\nCapricious = 5\ndocument.write(\"<P>As we begin, the variable Capricious\
+    \ is equal to \" + Capricious + \".\")\n\nif (Capricious==5)\n{\n  document.write(\"\
+    <P>Because Capricious is equal to 5, this line gets written into the HTML document.\"\
+    )\n}\n\nif (Capricious==17)\n{\n  document.write(\"<P>Similarly, because Capricious\
+    \ is not equal to 17, this line doesn't get written.\")\n}\n\n// Stop hiding from\
+    \ old browsers. --\n</SCRIPT>\n```"
+  merge: -1
+  pgno: 73
+- img_proc: true
+  md: 'Resave the file. Switch applications to your Web browser and reload the file.
+    Your browser screen should appear similar to Figure 5-1.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_74_0.png)
+
+
+    Figure 5-1: The result of an if statement
+
+
+    The variable Capricious controls what goes on in this program. Because Capricious
+    is equal to 5, the following line is interpreted, and the result of the first
+    if statement is true. Text is therefore written written into the HTML document:
+
+
+    ```
+
+    document.write("<P>Because Capricious is equal to 5, this line gets written into
+    the HTML document.'')
+
+    ```
+
+
+    Then, there is a second if statement—one whose code would execute only if Capricious
+    were equal to 17. Because Capricious is not equal to 17, the following code is
+    **not executed**:
+
+
+    ```
+
+    document.write("<P>Similarly, because Capricious is not equal to 17, this line
+    does not get written.")
+
+    ```'
+  merge: -1
+  pgno: 74
+- img_proc: true
+  md: '# Exercise 5-2: Using the if...else Statement
+
+
+    1. Type the following script into your HTML document below the script you entered
+    in the previous exercise:
+
+
+    ```
+
+    <h1>This program shows how the <code>if...else</code> statement works.</h1>
+
+    <SCRIPT LANGUAGE="JavaScript">
+
+    <!-- Start hiding from old browsers. -->
+
+    var Capricious
+
+    Capricious = 5
+
+    document.write("<P>Now, let''s move on to the <code>if...else</code> control structure.")
+
+
+    if (Capricious==2)
+
+    {
+
+    document.write("<P>...This line would be written only if Capricious equaled 2.")
+
+    }
+
+    else
+
+    {
+
+    document.write("<P>This line gets triggered as a result of the <code>else</code>
+    part of the statement.")
+
+    }
+
+
+    // Stop hiding from old browsers. -->
+
+    </SCRIPT>
+
+    ```'
+  merge: -1
+  pgno: 75
+- img_proc: true
+  md: '2. Resave the file. Switch applications to your Web browser and reload the
+    file. Your browser screen should appear similar to Figure 5-2.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_76_0.png)
+
+
+    Figure 5-2: The text in this program is the result of if and if...else statements
+
+
+    Finally, there is an if...else statement. If Capricious equaled 2, the following
+    line would have run:
+
+
+    ```
+
+    document.write("<P>This line would be written only if Capricious equaled 2.")
+
+    ```
+
+
+    But Capricious does not equal 2, it equals 5. Therefore, the code that follows
+    the else portion of the if...else statement is run instead:
+
+
+    ```
+
+    document.write("<P>This line gets triggered as a result of the <CODE>else</CODE>
+    part of the statement.")
+
+    ```
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_76_1.png)'
+  merge: -1
+  pgno: 76
+- img_proc: true
+  md: '# For Loops
+
+
+    Computers excel at efficiently performing repetitious actions. It would be inefficient
+    to manually calculate the results of plugging 1,000 different values into a function,
+    but you can write a JavaScript program that does the job for you in a fraction
+    of the time a pencil and hand calculation would require.
+
+
+    Writing such a program is especially easy if the 1,000 values represent a type
+    of definable series, as the numbers between 1 and 1,000 or the whole numbers between
+    5 and 5,000 that are evenly divisible by 2.5.
+
+
+    JavaScript''s mechanism for performing such repetitive tasks is the for loop.
+    In this section, you will learn how to create for loops and get an idea of how
+    for loops can be used in real-life JavaScript programs.
+
+
+    # Syntax
+
+
+    In a for loop, you must specify several elements:
+
+
+    +   * an index variable;
+
+    * the condition of the index variable at the start of the loop''s execution;
+
+    * the condition of the index variable at the end of the loop''s execution;
+
+    * the way the index variable is changed at the start of each iteration of the
+    loop;
+
+    * the code that executes during each iteration of the loop.
+
+
+    The JavaScript syntax for declaring a loop appears as follows:
+
+
+    ```
+
+    for(initial condition ; test ; increment)
+
+    {
+
+    code that is executed during each iteration of the loop
+
+    }
+
+    ```'
+  merge: -1
+  pgno: 77
+- img_proc: true
+  md: 'The initial condition is the value of the index variable (usually named i,
+    Index, index or n) at the start of the loop—the statement actually sets the value
+    of the variable. It is typically something like n=0 or i=1.
+
+
+    The test is a logical statement that is evaluated at the beginning of each iteration
+    of the loop. If the test evaluates to true, the loop executes again. If the test
+    evaluates to false, the loop stops executing. Usually, the test involves the index
+    variable. The test is often something like (n<=100) or ((n>0) && (m<=100)).
+
+
+    The increment statement defines how the index variable changes at the start of
+    each iteration of the loop. Typically, the increment adds to or subtracts from
+    the index variable. The statements i++ and (n=n+100) are common increment statements.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_78_0.png)
+
+
+    The script contained in the braces is executed each time the loop iterates. executing
+    the script quickly and efficiently multiple times is the purpose of a loop.'
+  merge: -1
+  pgno: 78
+- img_proc: true
+  md: '# Exercise 5-3: Using a for Statement
+
+
+    1. Type the following script into your HTML document below the script you entered
+    in the previous exercise:
+
+
+    ```
+
+    <<h1>>This program shows how <CODE>for</CODE> loops work.</</h1>
+
+    <SCRIPT LANGUAGE="JavaScript">
+
+    <!-- Start hiding from old browsers -->
+
+    document.write("<P>What''s an easy way to count from 99 to 0 in JavaScript?")
+
+    document.write("<P>Right---the <CODE>for</CODE> loop!")
+
+    document.write("<HR>")
+
+    var i
+
+    for(i = 99; i > 0; i--) {
+
+    document.write("<BR>" + i + " bottles of beer on the wall!")
+
+    document.write("<BR>" + i + " bottles of beer!")
+
+    document.write("<BR>Take one down, pass it around!")
+
+    document.write("<BR>" + (i-1) + " bottles of beer on the wall!")
+
+    document.write("<P>")
+
+    }
+
+    // Stop hiding from old browsers. --
+
+    </SCRIPT>
+
+
+    <h3></h3>I''m going to go sit down now. My monitor is spinning.</h3>
+
+    ```'
+  merge: -1
+  pgno: 79
+- img_proc: true
+  md: '2. Resave the file. Switch applications to your Web browser and reload the
+    file. Your browser screen should appear similar to Figure 5-3.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_80_0.png)
+
+
+    Figure 5-3: A for loop makes the beers-on-the-wall song faster, if also less fun
+
+
+    The heart of this program rests in a single loop, as follows:
+
+
+    ```
+
+    for(i = 99; i > 0 ; (i--))
+
+    {
+
+    ...statements that write text...
+
+    }
+
+    ```
+
+
+    The index variable, i, starts with a value of 99. For each iteration of the loop,
+    i is decremented by 1 with i--. As long as i is greater than 0—that is, for iterations
+    99 through —the loop continues to execute. The loop executes 99 times, writing
+    a verse of the song into the HTML document each time.'
+  merge: -1
+  pgno: 80
+- img_proc: true
+  md: "# While Loops\n\nJavaScript supports another kind of loop—the while loop. A\
+    \ while loop repeatedly executes a block of code as long as—”while”—a certain\
+    \ condition is true.\n\nThe risk you take with while loops is that it is easier\
+    \ to throw the interpreter into what is called an infinite loop—a that never ends\
+    \ and eventually crashes the browser (and possibly the operating system). When\
+    \ programming while loops, ensure that the condition that ends the while loop\
+    \ does occur under all possible starting conditions.\n\n# Syntax\n\nYou learned\
+    \ about the requirements of a loop—an index variable, an incrementing mechanism,\
+    \ and so on—when you studied the for loop. Each of these key elements also appear\
+    \ in while loops, but in a different manner.\n\nJavaScript while loops appear\
+    \ as follows:\n\n```\nwhile (condition)\n{\n  ...code that’s executed with each\
+    \ iteration of the loop, including\n  code that eventually alters the variable(s)\
+    \ in the condition...\n}\n```\n\nWhy would you want to use a while loop instead\
+    \ of a for loop? While loops allow you more flexibility. You are not limited to\
+    \ a loop that executes a fixed number of times.\n\nUnlike for loops, while loops\
+    \ let you vary the manner in which the variable(s) in the condition are changed\
+    \ in each iteration of the loop."
+  merge: -1
+  pgno: 81
+- img_proc: true
+  md: "# Exercise 5-4: Using while Loops\n\nIn this exercise, you will use a while\
+    \ loop.\n\n+   1. Type the following script into your HTML document below the\
+    \ script you entered in the previous exercise:\n\n```\n<H1>A <code>while</CODE>\
+    \ loop is similar to, but not identical to, a\n<CODE>for</CODE> loop.</H1>\n\n\
+    <SCRIPT LANGUAGE=\"JavaScript\">\n\n<!-- Start hiding from old browsers. -->\n\
+    document.write(\"Here's a demonstration of the <CODE>while</CODE> loop.\");\n\n\
+    var index\nindex = 1\nwhile (index < 9)\n{\n    document.write(\"<P>I'm Henry\
+    \ the \" + index + \" I am, I am.\")\n    index ++\n}\n// Stop hiding from old\
+    \ browsers. -->\n</SCRIPT>\n```"
+  merge: -1
+  pgno: 82
+- img_proc: true
+  md: "Resave the file. Switch applications to your Web browser and reload the file.\
+    \ Your browser screen appears similar to Figure 5-4.\n\n![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_83_0.png)\n\
+    \nFigure 5-4: With the help of a while loop, you create a rendition of an insipid\
+    \ song\n\nThe following script shows the while loop that writes the words of the\
+    \ song into the HTML document, in full:\n\n```\nwhile (index < 9)\n{\n  document.write(\"\
+    <P>I'm Henry the \" + index + \" I am, I am.\")\\n  index++;\n}\n```\n\nNote that\
+    \ the variable index, which is initialized to 1 in the line that precedes the\
+    \ while loop. Inside the loop, index is incremented by 1 and eventually, after\
+    \ the eighth iteration, is no longer less than 9. At this point, the code contained\
+    \ in the braces no longer executes, and the browser moves on to the code following\
+    \ the loop."
+  merge: -1
+  pgno: 83
+- img_proc: true
+  md: "# Switch Statements\n\nJavaScript 1.2 (interpreted properly by Netscape Navigator\
+    \ 4.0x and more recent and Microsoft Internet Explorer 4.0x and more recent) adds\
+    \ more control structure to JavaScript. The switch statement is an example of\
+    \ a control structure element new to JavaScript 1.2. Structures like the switch\
+    \ statement serve the same purpose as if...else statements, only in a more compact\
+    \ syntax.\n\nThe switch statement is understood only by Netscape Navigator 4.0\
+    \ and Microsoft Internet Explorer 4.0 and more recent. Therefore, any Web user\
+    \ with an older browser who downloads a JavaScript-enhanced page that uses switch\
+    \ will get an error.\n\n![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_84_0.png)\n\n\
+    # Syntax\n\nAt first glance, switch statements look very complex. With some practice,\
+    \ they are not difficult to use. The syntax of the switch statement is as follows:\n\
+    \n```\nswitch (variable to be evaluated)\n{\n    case x :\n        code to be\
+    \ executed if the variable to be evaluated equals x\n    case y :\n        code\
+    \ to be executed if the variable to be evaluated equals y\n    default:\n    \
+    \    code to be executed if the variable be evaluated equals anything other than\
+    \ x or y\n}\n```\n\nYou can have as many case lines in a switch statement as you\
+    \ wish."
+  merge: -1
+  pgno: 84
+- img_proc: true
+  md: "# Exercise 5-5: Using switch Statements\n\nIn this exercise, you will create\
+    \ a script that demonstrates the switch statement control structure.\n\n+   1.\
+    \ Type the following script into your HTML document between the closing </TITLE>\
+    \ tag and the closing </HEAD> tag:\n\n```\n<SCRIPT LANGUAGE=\"JavaScript1.2\"\
+    >\n<!-- Start hiding from old browsers. -->\nfunction Switcher(InputNumber)\n\
+    {\n  var Message\n  Message = \"test\"\n  switch (InputNumber)\n  {\n    case\
+    \ 1 :\n      Message=\"<BR>One is the loneliest number.\"\n      break\n    case\
+    \ 2 :\n      Message=\"<BR>Two is much better than one.\"\n      break\n    default\
+    \ :\n      Message=\"<BR>Say what?\"\n      break\n  }\n  return Message\n}\n\
+    // Stop hiding from old browsers. -->\n</SCRIPT>\n```"
+  merge: -1
+  pgno: 85
+- img_proc: true
+  md: '2. Type the following script at the end of your HTML document:
+
+
+    ```
+
+    <H1>A <code>switch</code> statement takes the place of many
+
+    <CODE>if</CODE> statements.</H1>
+
+    <SCRIPT LANGUAGE="JavaScript1.2">
+
+    <!-- Start hiding from old browsers.\ndocument.write("<P>Let''s see what happens
+    when we send 1 to the
+
+    function.")
+
+    document.write(Switcher(1))
+
+    document.write("<P>How about 2?")
+
+    document.write(Switcher(2))
+
+    document.write("<P>But what about 15?")
+
+    document.write(Switcher(15))
+
+
+    // Stop hiding from old browsers. --
+
+    </SCRIPT>
+
+    ```
+
+
+    3. Resave the file. Switch applications to your Web browser and reload the file.
+    Your browser screen should appear similar to Figure 5-5.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_86_0.png)
+
+
+    DDC Publishing • ddcpub.com'
+  merge: -1
+  pgno: 86
+- img_proc: true
+  md: "# Mastering JavaScript: Part 1\n\nThe switch structure in the function Switcher\
+    \ prints one thing if 1 is sent to the function, another thing if 2 is sent to\
+    \ the function, and a third thing if neither 1 nor 2 is sent to the function.\n\
+    \n![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_87_0.png)\n\nWhat about the lines that\
+    \ just say break? They are tricks that make this program execute faster. When\
+    \ the browser encounters a break statement, it knows to jump completely out of\
+    \ the switch structure and continue execution there. This prevents it from comparing\
+    \ the variable to be evaluated with many other case values.\n\nThe functionality\
+    \ of the switch statement is duplicated by this complex series of nested if...else\
+    \ statements:\n\n```\nif (InputNum==1)\n    Message=\"<BR>One is the loneliest\
+    \ number.\"\nelse\n    if (InputNum==2)\n        Message=\"<BR>Two is much better\
+    \ than one.\"\n    else\n        Message=\"<BR>Say what?\"\n```"
+  merge: -1
+  pgno: 87
+- img_proc: true
+  md: '# Lesson Summary
+
+
+    +   JavaScript is capable of logical functions, allowing a program to follow certain
+    instructions under particular conditions. A scripter, then, can insert control
+    structures to cause a JavaScript program to behave in any number of ways.
+
+
+    +   If statements prompt a section of a JavaScript program to execute when certain
+    conditions are met. When those conditions are not met, the program will continue
+    its course, ignoring the if statement and corresponding code.
+
+
+    +   If...else statements prompt a section of a JavaScript program to execute when
+    certain conditions are met (or true). When those conditions are not met (or false),
+    a different set of instructions are performed before continuing.
+
+
+    +   Repetitive tasks can be performed easily in a JavaScript program using a for
+    loop. The for loop requires information as an index variable''s condition, and
+    the code that will be executed during each iteration of the loop.
+
+
+    +   While loops work similarly to for loops, but offer greater flexibility. A
+    while loop allows for variation in the way the variables in the condition are
+    changed in each iteration of the loop.
+
+
+    +   Multiple if statements can be accomplished more easily by using the switch
+    statement control structure. The switch structure can perform one action in one
+    condition, another action under a different condition, and a third action if neither
+    the first nor the second condition exists.'
+  merge: -1
+  pgno: 88
+- img_proc: true
+  md: (This page intentionally left blank)
+  merge: -1
+  pgno: 89
+- img_proc: true
+  md: '# # Lesson 6
+
+    Date and Time
+
+
+    +   - Page Updates
+
+    - Inserting the Date and Time
+
+    - Clocks & Countdowns
+
+    - Calendars
+
+    - Lesson Summary'
+  merge: -1
+  pgno: 90
+- img_proc: true
+  md: '# Page Updates
+
+
+    **JavaScript is often used to add date and time features to Web pages.** There
+    are many properties programmed in JavaScript specifically for this purpose. This
+    Lesson teaches you how to take advantage of some of the most common date and time
+    functions offered by JavaScript.
+
+
+    If you are responsible for maintaining a large Web site, you are probably concerned
+    about the currentness of the information on your site. You can use JavaScript
+    to tell you when a page was last updated.
+
+
+    # Exercise 6-1: Page Last Updated
+
+
+    +   1. Type the following script into your HTML document below the script you
+    entered in the previous exercise:
+
+
+    ```
+
+    <HTML>
+
+    <BODY>
+
+    <TITLE>Last Updated</TITLE>
+
+    <CENTER>
+
+    <SCRIPT LANGUAGE="JavaScript">
+
+    <!-- Start hiding from old browsers
+
+    lastModDate = new Date(document.lastModified);
+
+    document.write("<B>ILast Updated:</B></I> " + lastModDate);
+
+    // Stop hiding from old browsers --
+
+    </SCRIPT>
+
+    </CENTER>
+
+    </BODY>
+
+    </HTML>
+
+    ```
+
+
+    +   2. After you have saved the file, retype one of the lines (this will create
+    the first "update").
+
+
+    +   3. Resave the file. Switch applications to your Web browser and reload the
+    file. Your browser screen should appear similar to Figure 6-1 on the following
+    page.'
+  merge: -1
+  pgno: 91
+- img_proc: true
+  md: '![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_92_0.png)
+
+
+    The property lastModified specifies the date and time of the most recent changes
+    to a document. Most, but not all, Web servers supply this information, so this
+    will not work on every site. The script has been tested on the three most common
+    servers:
+
+
+    +   - Apache
+
+    - Microsoft Internet Information Server
+
+    - Netscape Enterprise Server'
+  merge: -1
+  pgno: 92
+- img_proc: true
+  md: '# # Inserting the Date and Time
+
+
+    Many Web developers desire to display the current time and/or date on their Web
+    site. Some sites go as far as include a live clock. Doing this helps promote the
+    impression that your site is fresh and its content current (although this is often
+    not the case).
+
+
+    JavaScript uses the Date object to specify the date and time within an HTML page.
+    Date returns a string, which includes the local date and time. The Date object
+    is a similar format to the Java and the C programming language Date data type.
+
+
+    The Date object has the following characteristics:
+
+
+    +   - Dates are stored as number of milliseconds since January 1, 1970: 00:00:00
+
+    - The range of dates supported by JavaScript is from 100,000,000 days before January
+    1, 1970 to 100,000,000 after.
+
+    - JavaScript formats the date as Month Date, Year Hours:Minutes:Seconds. If hours,
+    minutes or seconds are left blank JavaScript assumes 0 and bypasses that the server.
+    So, the time always appears local to the user.
+
+    - The JavaScript date object retrieves its information from the local computer,
+    not from the server. So, the time always appears local to the user.
+
+
+    The two most common methods used to call the Date object are get and set. get
+    is used to retrieve the date or time from a Date object, set is used to tell a
+    date object what the date or time is. You cannot use get or set to change the
+    time on a user''s computer; you can only use these methods to manipulate the date
+    or time within a script.'
+  merge: -1
+  pgno: 93
+- img_proc: true
+  md: "Table 6-1 demonstrates the forms that the get and set methods of the Date object\
+    \ can use.\n\n| Method | Values |\n| --- | --- |\n| getSeconds | 0-59 |\n| setSeconds\
+    \ | |\n| getMinutes | 0-59 |\n| setMinutes | |\n| getHours | 0-23 |\n| setHours\
+    \ | |\n| getDay | 0-6 (Sunday through Saturday) \n There is no setDay, because\
+    \ this method is derived automatically from the date method. |\n| getDate | 1-31\
+    \ Day of the Month |\n| setDate | |\n| getMonths | 0-11(January through December)\
+    \ |\n| setMonths | |\n| getFullYear | Two digit year before 2000, four digit year\
+    \ for 2000 after. |\n| setFullYear | |\n\nTable 6-1: Methods and values of the\
+    \ Date object"
+  merge: -1
+  pgno: 94
+- img_proc: true
+  md: '# Exercise 6-2: Listing the Current Date and Time
+
+
+    1. Type the following script into your HTML document below the script you entered
+    in the previous exercise:
+
+
+    ```
+
+    <HTML>
+
+    <body>
+
+    <TITLE>Current Date and Time</TITLE>
+
+    <CENTER>
+
+    <SCRIPT LANGUAGE="JavaScript">
+
+    <!-- Start hiding from old browsers -->
+
+    document.write(Date()+"."")
+
+
+    //-- hiding from old browsers -->
+
+    </SCRIPT>
+
+    </CENTER>
+
+    </body>
+
+    </HTML>
+
+    ```
+
+
+    2. Save the file. Switch applications to your Web browser and reload the file.
+    Your browser screen should appear similar to Figure 6-2 on the following page.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_95_0.png)
+
+
+    The Date() command displays the local date and time. “Local” is defined as the
+    date and time on the page visitor''s computer, not the date and time of the server
+    on which the Web page resides.'
+  merge: -1
+  pgno: 95
+- img_proc: true
+  md: '# Lesson 6: Date and Time
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_96_0.png)
+
+
+    **Figure 6-2:** This Script demonstrates the Date Object
+
+
+    This is really a one-line script. The line document.write(Date())+".") does all
+    the work. While this is very functional, it is not very pretty. For something
+    that looks more professional, try the following.
+
+
+    +   3. Type the following script into your HTML document below the script you
+    entered in the previous exercise:
+
+
+    ```
+
+    <HTML>
+
+    <TITLE>Current Date and Time</TITLE>
+
+    <CENTER>
+
+    <HEAD>
+
+    <SCRIPT LANGUAGE="JavaScript">
+
+    <!-- Start hiding from old browsers
+
+
+    var day="";
+
+    var month="";
+
+    var ampm="";
+
+    var amphour="";
+
+    var weekday="";
+
+    var year="";
+
+    mydate = new Date();
+
+    myday = mydate.getDate();
+
+    month = mydate.getMonth();
+
+    weekday = mydate.getDay();
+
+    year = mydate.getFullYear();
+
+    myhours = mydate.getHours();
+
+    amphour = (myhours > 12) ? myhours - 12 : myhours;
+
+    ampm = (myhours > 12) ? '' PM'' : '' AM'';
+
+    tymime = mydate.getMinutes();
+
+    tyminutes = ((minutes < 10) ? '':0'' : '':'') + minutes;
+
+    ```'
+  merge: -1
+  pgno: 96
+- img_proc: true
+  md: '```
+
+    if (myday == 0) {
+
+    day = "Sunday",
+
+    else if (myday == 1) {
+
+    day = "Monday",
+
+    else if (myday == 2) {
+
+    day = "Tuesday",
+
+    else if (myday == 3) {
+
+    day = "Wednesday",
+
+    else if (myday == 4) {
+
+    day = "Thursday",
+
+    else if (myday == 5) {
+
+    day = "Friday",
+
+    else if (myday == 6) {
+
+    day = "Saturday",
+
+    if (mymon == 0) {
+
+    month = "January",
+
+    else if (mymon == 1) {
+
+    month = "February",
+
+    else if (mymon == 2) {
+
+    month = "March",
+
+    else if (mymon == 3) {
+
+    month = "April",
+
+    else if (mymon == 4) {
+
+    month = "May",
+
+    else if (mymon == 5) {
+
+    month = "June",
+
+    else if (mymon == 6) {
+
+    month = "July",
+
+    else if (mymon == 7) {
+
+    month = "August",
+
+    else if (mymon == 8) {
+
+    month = "September",
+
+    else if (mymon == 9) {
+
+    month = "October",
+
+    else if (mymon == 10) {
+
+    month = "November",
+
+    else if (mymon == 11) {
+
+    month = "December";
+
+
+    // Stop hiding from old browsers -->
+
+    </SCRIPT>
+
+    </HEAD>
+
+
+    <CENTER>
+
+    <SCRIPT>
+
+    <!-- Start hiding from old browsers -->
+
+    document.write("<b>" + ampm + " " + minutes + " + ampm");
+
+    document.write(" on " + day + ", " + month);
+
+    document.write(" (weekday " + ", " " + year + "</b>");");
+
+    <!-- Stop hiding from old browsers -->
+
+    </SCRIPT>
+
+    </CENTER>
+
+    </html>
+
+    ```'
+  merge: -1
+  pgno: 97
+- img_proc: true
+  md: '4. Save the file. Switch applications to your Web browser and reload the file.
+    Your browser screen should appear similar to Figure 6-3.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_98_0.png)
+
+
+    **Figure 6-3:** This script demonstrates a more refined use of the Date Object
+
+
+    Rather than relying on the format of the day and month returned by the local computer,
+    this script goes further and assigns the full name to the variable. Because JavaScript
+    only recognizes the day and the month as numbers, it relies on the local machine
+    to translate them into an easily understood format. Most machines return the abbreviated
+    day or month by default.
+
+
+    In this script, the JavaScript numbers are converted into the full day and month,
+    and the variables are assigned by the number of the day that the month returns.
+    JavaScript does not know what these should be. Instead of days of the week, you
+    could have replaced the variable "myday" with characters from the Flintstones,
+    instead of printing 10:46 AM on Tuesday, the script would print out 10:46 AM on
+    Bam-Bam. This makes syntax important; if you forget that Sunday is 0–and instead
+    list it as day 1–this will throw your days off and JavaScript will never generate
+    an error.
+
+
+    There is obviously much more to this script than the first one. However, because
+    the bulk of the work is done within the <HEAD> tags, it is easier to position
+    the finished product anywhere within the document.
+
+
+    Note in the above script that the tag "getFullYear()" is used. There is also a
+    getYear tag, the getYear tag is not Year 2000 compliant. If you use the getYear
+    instead of the getFullYear tag, this may result in scripts that display the date
+    as 1900 on January 1, 2000.'
+  merge: -1
+  pgno: 98
+- img_proc: true
+  md: '# Clocks & Countdowns
+
+
+    You can use JavaScript to create a real-time clock for your site. Real-time clocks
+    are a good introduction to how JavaScript interacts with HTML forms.
+
+
+    JavaScript clocks are actually three separate parts. Similar to the design of
+    the last script, the time is actually grabbed in the <HEAD> of the document. The
+    <BODY> region is where you instruct JavaScript to load the document (during page
+    loading). Finally, the time is posted in a form within the body of the document.
+
+
+    # Exercise 6-3: Setting Up a Real-Time Clock
+
+
+    +   1. Type the following script into your HTML document over the script entered
+    in the previous exercise:
+
+
+    ```
+
+    <HEAD>
+
+    <SCRIPT LANGUAGE="JavaScript">
+
+    <!-- Start hiding from old browsers
+
+    var timerID = null;
+
+    var timerRunning = false;
+
+    function stopclock() {
+
+    if(timerRunning) {
+
+    clearTimeout(timerID);
+
+    timerRunning = false;
+
+    }
+
+
+    function showtime() {
+
+    var now = new Date();
+
+    var hours = now.getHours();
+
+    var minutes = now.getMinutes();
+
+    var seconds = now.getSeconds();
+
+    var timeValue = "" + (hours > 12) ? hours-12 : hours + ":" + minutes
+
+    timeValue += (seconds < 10) ? "0" : "" + ":" + seconds
+
+    timeValue += (hours >= 12) ? " PM" : " AM"
+
+    document.clock.value = timeValue;
+
+    timerID = setTimeout("showtime()",1000);
+
+    timerRunning = true;
+
+    }
+
+
+    function startclock() {
+
+    stopclock();
+
+    showtime();
+
+    }
+
+
+    // Stop hiding from old browsers --
+
+    </SCRIPT>
+
+    </HEAD>
+
+    ```
+
+
+    ```
+
+    <!-- Enter this into the Body Tag of your Document --
+
+    <BODY onload="startclock()">
+
+    ```'
+  merge: -1
+  pgno: 99
+- img_proc: true
+  md: '```
+
+    <-- Finally, this is your form set up -->
+
+    <CENTER>
+
+    <FORM name="clock">
+
+    <input type="text" name="clock" size=10 value="">
+
+    </FORM>
+
+    </CENTER>
+
+    ```
+
+
+    +   2. Save the file. Switch applications to your Web browser and reload the file.
+    Your browser screen should appear similar to Figure 6-4.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_100_0.png)
+
+
+    Figure 6-4: This script produces a real-time clock in your browser
+
+
+    +   3. Save this file as CLOCK.HTML, so it can be used for the next exercise.
+
+
+    This script is a clock that continuously updates itself. Using the function startclock
+    (which activates on document load), the script loads the timer, stops the timer,
+    and then restarts the timer. It is constantly updating itself from the system
+    clock, so it gives the illusion of a running clock. Think of it as animation,
+    it is a series of still clocks, played every second.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_100_1.png)
+
+
+    By combining this and the previous exercise, you can expand to include the date
+    and the time.
+
+
+    A very similar use of JavaScript is a countdown tool. If you want to countdown
+    to a particular date, you can count up from a certain date, you can do it with
+    JavaScript.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_100_2.png)'
+  merge: -1
+  pgno: 100
+- img_proc: true
+  md: '# Exercise 6-4: Counting Down to the Year 2000
+
+
+    +   1. In the file CLOCK.HTML, make the following code changes:
+
+
+    After the line "var seconds = now.getSeconds()" add the following three lines:
+
+
+    ```
+
+    var month = now.getMonth();
+
+    var date = now.getDate();
+
+    var year = now.getFullYear();
+
+    ```
+
+
+    Skip a line, to give some white space, then add the following:
+
+
+    ```
+
+    now = null;
+
+    Hourleft = 23 - hours
+
+    Minuteleft = 59 - minutes
+
+    Secondleft = 59 - seconds
+
+    Yearleft = 99 - year
+
+    var Monthleft = 11 - month
+
+    var Dateleft = 31 - date
+
+    if (Yearleft!=1) {var ys="s"} else {var ys=""}
+
+    if (Monthleft!=1) {var mos="s"} else {var mos=""}
+
+    if (Dateleft!=1) {var ds="s"} else {var ds=""}
+
+    if (Hourleft!=1) {var hs="s"} else {var hs=""}
+
+    if (Secondleft!=1) {var mis="s"} else {var mis=""}
+
+    Temp3=Yearleft+'' year''+ys,''+Dateleft+'' day''+ds,''+Monthleft+'' month''+mos,''+Hourleft+''
+    hour''+hs,''+Minuteleft+'' minute''+mis,''+Secondleft+'' second''+ss+'' left until
+    2000; ''
+
+    ```
+
+
+    Next, replace the line that reads:
+
+
+    ```
+
+    Document.clock.clock.value = time Value;
+
+    ```
+
+
+    With:
+
+
+    ```
+
+    Document.clock.clock.value = timeValue;
+
+    ```
+
+
+    Finally, replace the line within the form that begins "<input type="textarea"
+    ..." with:
+
+
+    ```
+
+    <input type="textarea" name="clock" size=75 value="">
+
+    ```
+
+
+    +   2. Save the file. Switch applications to your Web browser and reload the file.
+    Your screen should appear similar to Figure 6-5, on the following page.'
+  merge: -1
+  pgno: 101
+- img_proc: true
+  md: '![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_102_0.png)
+
+
+    Figure 6-5: Counting down to the Year 2000
+
+
+    This script is a good example of why there is a Year 2000 problem. Note that there
+    is no provision for actually reaching the Year 2000. Thus, this counting mechanism
+    will start over again; on January 1, 2000 it will inform you that there are 99
+    years left until 2000.
+
+
+    Again, you can manipulate the script to count up from or down to any date you
+    would desire. This type of script is also used by Web sites to track the amount
+    of time a visitor spends on a site.'
+  merge: -1
+  pgno: 102
+- img_proc: true
+  md: '# Calendars
+
+
+    Calendars are especially useful scripts on Intranet sites. They can be used to
+    track time off, important meetings, or company events. By setting up a calendar
+    on an Intranet site, anyone within a company or department can update it.
+
+
+    Setting up a complicated calendar—similar to the ones described above—is beyond
+    the scope of this course. However, understanding how a simple calendar functions
+    can give you a head start toward developing more complicated scripts using JavaScript.
+
+
+    # Exercise 6-5: Building a Calendar
+
+
+    +   1. With your text editor, open the file CALENDAR.HTML (this is a relatively
+    long script, so the coding has been done for you).
+
+
+    +   2. Examine the script. When you are finished, close out of the file.
+
+
+    +   3. Open CALENDAR.HTML in your Web browser. It should appear similar to Figure
+    6-6.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_103_0.png)
+
+
+    +   4. In your text editor, re-open the document CALENDAR.HTML and examine the
+    code to define a collection. Note that this script makes heavy use of Arrays.
+    JavaScript uses arrays to define a collection of data values, similar to the snippet
+    in Figure 6-7 on the following page.'
+  merge: -1
+  pgno: 103
+- img_proc: true
+  md: '```
+
+    monthdays = new Array(12);
+
+    monthdays[0]=31;
+
+    monthdays[1]=28;
+
+    monthdays[2]=31;
+
+    monthdays[3]=30;
+
+    monthdays[4]=31;
+
+    monthdays[5]=30;
+
+    monthdays[6]=31;
+
+    monthdays[7]=31;
+
+    monthdays[8]=30;
+
+    monthdays[9]=31;
+
+    monthdays[10]=30;
+
+    monthdays[11]=31;
+
+    ```
+
+
+    **Figure 6-7:** Example of a JavaScript array
+
+
+    In an array, each value has a number, or an index. In the code snippet above,
+    the variable `monthdays` is indexed by the number enclosed within the `[ ]`. This
+    informs JavaScript that if it is month 0 (JavaScript starts at 0, instead of 1,
+    when indexing an array), there are 31 days, if `monthdays` is month 1, there are
+    28 days, and so forth.
+
+
+    The script then takes the information from the array and uses it to build a customized
+    table “on the fly,” rather than having to code 12 different tables to represent
+    each month. You will read more about arrays in the following lesson.'
+  merge: -1
+  pgno: 104
+- img_proc: true
+  md: '# Lesson Summary
+
+
+    +   - JavaScript programs are commonly used to help keep track of date and time
+    on a Web site.
+
+
+    +   - The property lastModified can retrieve the date and time a document was
+    last modified from some, but not all web servers.
+
+
+    +   - JavaScript handles date and times as objects, so they can be manipulated
+    the same way any other object can.
+
+
+    +   - The date method getYear is year 2000 compliant, it can handles years after
+    2000 as 4 digit years.
+
+
+    +   - In addition to the date and time, you can build calendars in JavaScript
+    by making use of arrays.'
+  merge: -1
+  pgno: 105
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 106
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 107
+- img_proc: true
+  md: "# # Lesson 7\n Form Contents\n\n+   * Referring to Form Elements\n* Special\
+    \ Form-Referencing Procedures\n* Lesson Summary"
+  merge: -1
+  pgno: 108
+- img_proc: true
+  md: '# ## Referring to Form Elements
+
+
+    You can use JavaScript to interact with form elements from within a document.
+    The syntax you will use to refer to form elements is closely associated with JavaScript''s
+    object-oriented learning. Learning how to refer to data in HTML forms will help
+    you script more complex JavaScript programs in the future.
+
+
+    The contents of most form elements are not difficult to access from a JavaScript
+    program. You simply refer to the HTML document in which the element appears, the
+    specific form in which it appears, and the element itself. Note that this sequence
+    is simply a hierarchy.
+
+
+    There are two ways to refer to forms and their elements: (which is easy for a
+    human programmer to determine)
+
+
+    +   * by name (which is easy for a human programmer to determine)
+
+    * by array position (which is easy to incorporate into an automated routine)
+
+
+    This following section explains both of these methods.
+
+
+    # ### The Name Method
+
+
+    Recall that when creating HTML form elements, all elements have a NAME attribute.
+    Every form element is in a form, and every form is in an HTML document. You can
+    note this relationship as follows:
+
+
+    +   * document.formname.elementname
+
+
+    If you want to refer to a button whose NAME attribute is set to Button1 and which
+    appears in a form whose NAME attribute is set to RegistrationForm, you would specify
+    the elements as shown in Figure 7-1.
+
+
+    | document.RegistrationForm.Button1 |
+
+    | HTML document | Form within the HTML document | Individual element within form
+    in HTML document |
+
+
+    Figure 7-1: Referring to elements in a form'
+  merge: -1
+  pgno: 109
+- img_proc: true
+  md: '# Exercise 7-1: Referring to Form Elements by Name
+
+
+    +   1. Open a new document in your text editor.
+
+
+    +   2. Type the following script into the new HTML document:
+
+
+    ```
+
+    <HTML>
+
+    <HEAD>
+
+    <TITLE>Referring to Form Elements by Name</TITLE>
+
+    <SCRIPT LANGUAGE="JavaScript">
+
+    <!-- Start hiding from old browsers
+
+    function Copy()
+
+    {
+
+    ndocument.DemoForm.Output.value = document.DemoForm.Input.value
+
+    }
+
+    // Stop hiding from old browsers. -->
+
+    </SCRIPT>
+
+    </HEAD>
+
+    <body>
+
+    <h1>You can refer to form elements by name.</h1>
+
+    <FORM NAME="DemoForm">
+
+    <P>Type something here...</P>
+
+    <BR><INPUT TYPE="TEXT" NAME="Input" Value="Yes, here." SIZE=30>
+
+    <P>Then click the button and watch it appear below!\P>
+
+    <INPUT TYPE="BUTTON" NAME="TransferButton" Value="Click me!" onclick="Copy()">
+
+    <P><INPUT TYPE="TEXT" NAME="Output" Value="" SIZE=30></P>
+
+    </FORM>
+
+    </body>
+
+    </HTML>
+
+    ```'
+  merge: -1
+  pgno: 110
+- img_proc: true
+  md: '# Mastering JavaScript - Part 1
+
+
+    3. Save the file as ELEMENTS_BYNAME.HTML. Switch applications to your Web browser
+    and open ELEMENTS_BYNAME.HTML.
+
+
+    4. Click the **Click me!** Your screen should appear similar to Figure 7-2.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_111_0.png)
+
+
+    **Figure 7-2:** The elements of this form are referred to by name in a JavaScript
+    program
+
+
+    In this program, a form (named DemoForm) is created and populated with two text
+    fields and a button. Whenever the button is clicked, the `Copy()` function executes.
+    In that function, there is only one line of code, as follows:
+
+
+    ```
+
+    document.DemoForm.Output.value =
+
+    document.DemoForm.Input.value
+
+    ```
+
+
+    The above line refer to the two text fields, **Input** and **Output**, by name.
+    They are both in the form named DemoForm. But what is the value of each reference
+    here? This is called a *property*—a characteristic of the object to which you
+    have referred (in this case, the two text fields). The value property is whatever
+    appears in the text field.
+
+
+    This line of code sets the **value** property of the text field named **Input**
+    equal to the **value** property of the text field named **Output**. In effect,
+    it copies the contents of the **Input** field into the **Output** field.
+
+
+    The `onclick="Copy()"` in the button''s `<INPUT>` tag is an event handler—a piece
+    of code that defines what to do if a specific event occurs. In this case, it specifies
+    that the Copy() function should run if the button is clicked. Lesson 8: Event
+    Handlers covers this subject in greater detail.
+
+
+    98
+
+
+    DDC Publishing • www.ddcpub.com'
+  merge: -1
+  pgno: 111
+- img_proc: true
+  md: '# The Array Method
+
+
+    There is another way to refer to forms in an HTML document and the elements that
+    populate any form(s) within a document. It is called the array method. Although
+    it is less intuitive the name method, it is helpful when you need to write a routine
+    that refers to the elements in a form automatically.
+
+
+    A Web browser''s JavaScript interpreter keeps track of the forms in a document
+    within a list. The list is called an array. The first form in a document takes
+    the first position in the array and is indexed as 0 (arrays start counting from
+    0). The second form in a document is entered into the array as number 1, and so
+    forth. The array in which the forms in a document is listed forms.
+
+
+    The same numbering scheme applies to elements within a form. The first element
+    is entered into the array (called elements) as number 0, the second as number
+    1, and so forth.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_112_0.png)
+
+
+    The forms and form elements appear in their arrays in the order they appear in
+    the HTML code: top to bottom and left to right, in that order.
+
+
+    # Exercise 7-2: Referring to Form Elements by Array Position
+
+
+    +   1. Open a new document in your text editor.
+
+
+    +   2. Type the following script into the new HTML HTML document:
+
+
+    ```
+
+    <HTML>
+
+    <HEAD>
+
+    <TITLE>Referring to Form Elements by Array Position</TITLE>
+
+    <SCRIPT LANGUAGE="JavaScript">
+
+    <!-- Start hiding from old browsers. -->
+
+    function Copy()
+
+    {
+
+    ndocument.forms[0].elements[2].value =
+
+    document.forms[0].elements[0].value
+
+    }
+
+    // Stop hiding from old browsers. -->
+
+    </SCRIPT>
+
+    ```'
+  merge: -1
+  pgno: 112
+- img_proc: true
+  md: '```
+
+    </HEAD>
+
+    <BODY>
+
+    <H1>You can refer to form elements by array position.</H1>
+
+    <FORM NAME="DemoForm">
+
+    <P>Type something here...</P>
+
+    <BR><INPUT TYPE="TEXT" NAME="Input" Value="Yes, here." SIZE=30>
+
+    <P>Then click the button and watch it appear below!</P>
+
+    <INPUT TYPE="BUTTON" NAME="TransferButton" Value="Click me!" onclick="Copy()">
+
+    <P><INPUT TYPE="TEXT" NAME="Output" Value="" SIZE=30></P>
+
+    </FORM>
+
+    </BODY>
+
+    </html>
+
+    ```
+
+
+    +   3. Save the file as ELEMENTS_BYARRAY.HTML. Switch applications to your Web
+    browser and open ELEMENTS_BYARRAY.HTML.
+
+    4. Click the **Click me!** button. Your screen should appear similar to Figure
+    7-3.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_113_0.png)'
+  merge: -1
+  pgno: 113
+- img_proc: true
+  md: 'This program is functionally identical to the first one in this lesson, which
+    used names to refer to forms and elements. Here, the statement that assigns the
+    contents of the Input box to the Output box appears as follows:
+
+
+    ```
+
+    document.forms[0].elements[2].value =
+
+    document.forms[0].elements[0].value
+
+    ```
+
+
+    | Elements[0]-|-<INPUT TYPE="TEXT" NAME="Input" Value=Yes, here. SIZE=30>
+
+    |<P>Then click the button and watch it appear below!</P>|
+
+    | Elements[1]-|-<INPUT TYPE="TEXT" NAME="TransferButton" Value="Click me!" onclick="Copy()">|
+
+    | Elements[2]-|-<INPUT TYPE="TEXT" NAME="Output" Value="" SIZE=30>
+
+
+    Figure 7-4: JavaScript code for identifying array positions
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_114_0.png)
+
+
+    Figure 7-5: JavaScript for identifying array positions as interpreted by a browser
+
+
+    The form identified by forms[0] is the one DemoForm—the two references are interchangeable.
+    Within that form, elements[0] is the text field named Input (the first element
+    in the form) and elements[2] is the text field named Output (the third element
+    in the form).'
+  merge: -1
+  pgno: 114
+- img_proc: true
+  md: '# Special Form-Referencing Procedures
+
+
+    Some HTML form elements require special procedures to identify the value that
+    a user has selected. Selection lists and groups of radio buttons require special
+    attention.
+
+
+    # References to Radio Button Groups
+
+
+    Groups of radio buttons exist—from the perspective of a Web browser—as arrays.
+    To determine which radio button in a group a user has selected, you need to use
+    a for loop that examines the contents of the array (the individual radio buttons)
+    one at a time.
+
+
+    # Exercise 7-3: Referring to Radio Button Groups
+
+
+    +   1. Open a new document in your text editor.
+
+    2. Type the following script into the new HTML document:
+
+
+    ```
+
+    <HTML>
+
+    <HEAD>
+
+    <TITLE>Referring to Radio Button Groups</TITLE>
+
+    <SCRIPT LANGUAGE="JavaScript">
+
+    <!-- Start hiding from old browsers.
+
+    function Identify()
+
+    {
+
+    var SelectedValue
+
+    var i
+
+    var GroupSize
+
+    GroupSize = document.DemoForm.RadioGroup.length
+
+    for (i=0; i<=GroupSize; i++)
+
+    {
+
+    if (document.DemoForm.RadioGroup[i].checked)
+
+    {
+
+    SelectedValue = document.DemoForm.RadioGroup[i].value
+
+    break
+
+    }
+
+    }
+
+    }\}
+
+    ```'
+  merge: -1
+  pgno: 115
+- img_proc: true
+  md: '# Lesson 7: Form Contents
+
+
+    ```
+
+    )
+
+    document.DemoForm.Output.value = SelectedValue
+
+    )
+
+    -- Stop hiding from old browsers. --
+
+    </SCRIPT>
+
+    <HEAD>
+
+    <BODY>
+
+    <h1>It''s a little tricky to identify the selected option in a cluster of radio
+    buttons, but not too difficult.</h1>
+
+    <FORM NAME="DemoForm">
+
+    <P>Which language is best for creating Web animations?</P>
+
+    <INPUT TYPE="RADIO" NAME="RadioGroup" Value="Java"> Java<BR>
+
+    <INPUT TYPE="RADIO" NAME="RadioGroup" Value="JavaScript"> JavaScript<BR>
+
+    <INPUT TYPE="RADIO" NAME="RadioGroup" Value="Perl"> Perl<BR>
+
+    <INPUT TYPE="RADIO" NAME="RadioGroup" Value="COBOL"> COBOL<BR>
+
+    <INPUT TYPE="RADIO" NAME="RadioGroup" Value="VBScript"> VBScript<P>
+
+    <INPUT TYPE="BUTTON" NAME="ClickButton" Value="Which radio button is selected?"
+    onclick="Identify()"><P>
+
+    <INPUT TYPE="TEXT" NAME="Output" Value="" SIZE=30>
+
+    </FORM>
+
+    </BODY>
+
+    </HTML>
+
+    ```
+
+
+    +   3. Save the file as RADIOBUTTON_GROUPS.HTML. Switch applications to your Web
+    browser and open RADIOBUTTON_GROUPS.HTML.
+
+
+    +   4. Select one of the radio buttons and click the **Which radio button is selected?**
+    button. Your screen should appear similar to Figure 7-6 on the following page.'
+  merge: -1
+  pgno: 116
+- img_proc: true
+  md: "![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_117_0.png)\n\n# It's a little tricky\
+    \ to identify the selected option in a cluster of radio buttons, but not too difficult.\n\
+    \nWhich language is best for creating Web animations?\n\n+   - Java\n- JavaScript\n\
+    - Peri\n- COBOL\n- VBScript\n\nWhich radio button is selected?\n\nJavaScript\n\
+    \nFigure 7-6: Referring to radio button groups in JavaScript\n\nThe key to identifying\
+    \ the selected radio button in a group is this for loop:\n\n```\n```\nfor (i=0;\
+    \ i<=GroupSize; i++)\n{\n  if (document.DemoForm.RadioGroup[i].checked)\n{\n \
+    \   SelectedValue = document.DemoForm.RadioGroup[i].value\n    break\n  }\n```\n\
+    ```"
+  merge: -1
+  pgno: 117
+- img_proc: true
+  md: 'The variable GroupSize, the value at which the loop stops iterating, is set
+    equal to document.DemoForm.RadioGroup.length. Length is a property of the RadioGroup
+    array that contains the index number of the last item in the array (in this case,
+    4, because there are 5 radio button objects in the array and the first is indexed
+    as number 0).
+
+
+    Each time the for loop iterates, an if statement is processed:
+
+
+    +   - if (document.DemoForm.RadioGroup[i].checked)
+
+
+    # Checked, SelectedValue, break, and if
+
+
+    Checked is a property of radio button objects that contains true if the radio
+    button is checked and false if it is not. This statement determines whether the
+    checked property of the current radio button (RadioGroup[i]) is true.
+
+
+    If the radio button is checked, more messages are processed. The variable SelectedValue
+    is set equal to the value of the current radio button (which is defined in HTML
+    with the VALUE attribute). The break statement then instructs the browser to stop
+    the loop (because the selected radio button has been found) and move on to the
+    line of code after the loop''s closing brace.
+
+
+    The if statement assigns the value of the selected radio button to a variable
+    SelectedValue.
+
+
+    > The procedure for identifying the selected option is the same for selection
+    lists and drop-down list boxes. As far as JavaScript is concerned, they are both
+    SELECT objects.'
+  merge: -1
+  pgno: 118
+- img_proc: true
+  md: '# References to Selection Lists and Drop-Down Boxes
+
+
+    Using JavaScript in conjunction with selection lists and drop-down list boxes
+    is relatively trivial compared to what you scripted in the previous exercise.
+    You simply inspect a couple of properties and you are able to identify the value
+    of the selected entry.
+
+
+    # Exercise 7-4: Identifying the Selected Option from a Selection List
+
+
+    +   1. Open a new document in your text editor.
+
+
+    +   2. Type the following script into the new HTML document:
+
+
+    ```
+
+    <HTML>
+
+    <HEAD>
+
+    <TITLE>Referring to Selection Lists and Drop-Down List Boxes</TITLE>
+
+    <SCRIPT LANGUAGE="JavaScript">
+
+    <!-- Start hiding from old browsers. -->
+
+    function Identify()
+
+    {
+
+    var SelectedChoice
+
+    SelectedChoice = document.DemoForm.GrantList.selectedIndex
+
+    document.DemoForm.value = document.DemoForm.GrantList.options[SelectedChoice].value
+
+    }
+
+    // Stop hiding from old browsers. --
+
+    </SCRIPT>
+
+    </HEAD>
+
+    <body>
+
+    <h1>Here''s how to identify the selected option in a selection list or a drop-down
+    list box.</h1>
+
+    <FORM NAME="DemoForm"><P>
+
+    Who is buried in Grant''s tomb?<P>
+
+    <SELECT NAME="GrantList" SIZE=1>
+
+    <OPTION SELECTED VALUE="Grant"> Grant
+
+    ```'
+  merge: -1
+  pgno: 119
+- img_proc: true
+  md: '```
+
+    <OPTION VALUE="Grant and Mrs. Grant"> Grant and Mrs. Grant
+
+    <OPTION VALUE="Lee"> Lee
+
+    <OPTION VALUE="Lincoln"> Lincoln
+
+    <OPTION VALUE="Nobody"> Nobody
+
+    </SELECT><p>
+
+    <INPUT TYPE="BUTTON" NAME="ClickButton" Value="Which answer is selected?" onclick="Identify()"></p>
+
+    <INPUT TYPE="TEXT" NAME="Output" Value="" SIZE=30>
+
+    </FORM>
+
+    ```
+
+
+    +   3. Save the file as SELECTION_LIST.HTML. Switch applications to your Web browser
+    and open SELECTION_LIST.HTML.
+
+
+    +   4. Select one of the items from the selection list and click the Which answer
+    is selected? button. Your screen should appear similar to Figure 7-77.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_120_0.png)'
+  merge: -1
+  pgno: 120
+- img_proc: true
+  md: '# Mastering JavaScript: Part 1
+
+
+    The key to this program lies in the following script:
+
+
+    ```
+
+    SelectedChoice =
+
+    ndocument.DemoForm.GrantList.selectedIndex
+
+    ```
+
+
+    ```
+
+    document.DemoForm.Output.value =
+
+    document.DemoForm.GrantList.options[SelectedChoice].value
+
+    ```
+
+
+    In the first line, the variable SelectedChoice is set to the selection list''s
+
+    selectedIndex property. The selectedIndex property is the index number of the
+
+    option (contained in the options array) that, as shown in Figure 7-8.
+
+
+    | <SELECT NAME="GrantList" size=1> |
+
+    |---||
+
+    | Index # 0 | <OPTION SELECTED VALUE="Grant"> Grant |
+
+    | 1 | <OPTION VALUE="Grant and Mrs. Grant"> Grant and Mrs. |
+
+    | 2 | <OPTION VALUE="Lee"> Lee |
+
+    | 3 | <OPTION VALUE="Lincoln"> Lincoln |
+
+    | 4 | <OPTION VALUE="Nobody"> Nope |
+
+    | </SELECT> |
+
+
+    Figure 7-8: An options array in an HTML Form
+
+
+    In the second line, the Output text field is set to the value of
+
+    options[SelectedChoice]—the value of the selected entry in the selection list.
+
+
+    > You might wonder why you should not structure the assignment as
+
+    follows:
+
+
+    ```
+
+    document.DemoForm.Output.value =
+
+    document.DemoForm.GrantList.options
+
+    [document.DemoForm.GrantList.selectedIndex]
+
+    value
+
+    ```
+
+
+    Technically, you are supposed to be able to do this, and doing so would save
+
+    t confusion of an extra variable. However, some Web browsers trip over
+
+    large, nested object references. In addition, the script is long and costly
+
+    to be confusing to a human editor. The added clarity and assured functionality
+
+    gained from the additional variable is worth the effort.'
+  merge: -1
+  pgno: 121
+- img_proc: true
+  md: '# Lesson Summary
+
+
+    +   - Elements in JavaScript form a hierarchy. You can refer to the elements in
+    the hierarchy according to either 1) their names or 2) their array position.
+
+
+    +   - To use the name method for referring to elements, each element is listed
+    in descending order, separated by periods, as in document.formname.elementname.
+
+
+    +   - The array method for referring to elements is convenient in routines that
+    refer to them automatically. Forms and their elements are arranged in the array
+    by the order in which they appear in the HTML code (left to right, top to bottom,
+    in that order).
+
+
+    +   - The choices in a group of radio buttons in an HTML form are referred according
+    to their array position.
+
+
+    +   - Selection lists and drop-down list boxes are mere SELECT objects to the
+    JavaScript interpreter, and their contents are referred according to array position.'
+  merge: -1
+  pgno: 122
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 123
+- img_proc: true
+  md: '# # Lesson 8
+
+    Event Handlers
+
+
+    +   - Event Handlers & Basic Form Elements
+
+    - Event Handlers & More Complex Form Elements
+
+    - Lesson Summary'
+  merge: -1
+  pgno: 124
+- img_proc: true
+  md: 'Mastering JavaScript: Part 1
+
+
+    # # Event Handlers & Basic Form Elements
+
+
+    Computer programs that operate from a command line (such as DOS) need react only
+    to the text users type. Graphical programs are significantly more complex because
+    the user has so many action options using both a keyboard and a pointing device
+    (mouse, trackball, etc.).
+
+
+    In a single form, a user might click any of a dozen buttons, select something
+    from a selection list, or click any of several radio buttons or check boxes. Anticipating
+    and programming for such a multitude of possible events is a daunting task.
+
+
+    # ## Event Handlers
+
+
+    JavaScript makes the task of creating graphical programs easier with event handlers.
+    Event handlers are pieces of code that you attach to graphical elements—typically
+    form elements. An event handler watches for a certain event, such as a mouse click.
+
+
+    When the event occurs, the event handler “trips” and calls a JavaScript function
+    that performs a particular function. You had a glimpse of event handlers in the
+    previous Lesson; you will be exposed to them in depth in this Lesson.
+
+
+    # ## Focus
+
+
+    Before working with events, you need to understand the concept of focus as it
+    applies to graphical user interfaces (GUIs). Focus is the state of a form element
+    that has been selected, often by a user moving the cursor by pressing the <TAB>
+    key or clicking the mouse. Only one screen element may have focus at a given time.
+
+
+    > Only one screen element may have focus at a given time.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_125_0.png)
+
+
+    Windows displays a dotted line (called a marquee) around the element that currently
+    has focus. Elements that do not have focus are said to be blurred.
+
+
+    Buttons—general purpose as well as special purpose—can take three event handlers:
+
+
+    +   * onClick: trips when a user clicks a button.
+
+    * onFocus: trips when a user gives a button focus.
+
+    * onBlur: trips when a button loses focus.
+
+
+    112
+
+
+    DDC Publishing • www.ddcpub.com'
+  merge: -1
+  pgno: 125
+- img_proc: true
+  md: "# Exercise 8-1: Attaching Event Handlers to Form Buttons\n\n+   1. Open a new\
+    \ document in your text editor.\n\n+   2. Type the following script into the new\
+    \ HTML document:\n\n```\n<HTML>\n<HEAD>\n<TITLE>Attaching Event Handlers to Form\
+    \ Buttons</TITLE>\n<SCRIPT LANGUAGE=\"JavaScript\">\n<!-- Start hiding from old\
+    \ browsers -->\nfunction ClickDisplay(ButtonNumber)\n{\n  document.DemoForm.ClickOutput.value=(\"\
+    You clicked button number \" + ButtonNumber + \".\")\n}\nnfunction FocusDisplay(ButtonNumber)\n\
+    {\n  document.DemoForm.FocusOutput.value=(\"You gave focus to button number \"\
+    \ + ButtonNumber + \".\")\n}\nnfunction BlurDisplay(ButtonNumber)\n{\n  document.DemoForm.BlurOutput.value=(\"\
+    You blurred button number \" + ButtonNumber + \".\")\n}\n// // Stop hiding from\
+    \ old browsers. -->\n</SCRIPT>\n</HEAD>\n```"
+  merge: -1
+  pgno: 126
+- img_proc: true
+  md: '# Mastering JavaScript Part 1
+
+
+    ```
+
+    <BODY>
+
+    <H1>This program demonstrates button event handlers.</H1>
+
+    <FORM NAME="DemoForm"><P>
+
+    Click information:<BR>
+
+    <INPUT TYPE="TEXT" NAME="ClickOutput" Value="" SIZE=35><P>
+
+    Focus information:<BR>
+
+    <INPUT TYPE="TEXT" NAME="FocusOutput" Value="" SIZE=35><P>
+
+    Blur information:<BR>
+
+    <INPUT TYPE="TEXT" NAME="BlurOutput" Value="" SIZE=35><P>
+
+    <HR>
+
+    <INPUT TYPE="BUTTON" NAME="Button1" Value="One"
+
+    ="ClickDisplay(1)" onFocus="FocusDisplay(1)" onBlur="BlurDisplay(1)">
+
+    <INPUT TYPE="BUTTON" NAME="Button2" Value="Two"
+
+    ="ClickDisplay(2)" onFocus="FocusDisplay(2)" onBlur="BlurDisplay(2)">
+
+    <INPUT TYPE="BUTTON" NAME="Button3" Value="Three"
+
+    ="ClickDisplay(3)" onFocus="FocusDisplay(3)" onBlur="BlurDisplay(3)">
+
+    </FORM>
+
+    </BODY>
+
+    </html>
+
+    ```
+
+
+    +   3. Save the file as EVENTHANDLERS_BUTTONS.HTML. Switch applications to your
+
+    Web browser and open EVENTHANDLERS_BUTTONS.HTML.
+
+    4. Click the **One** button and note the change in the form fields.
+
+    5. Click the **Two** button and note the change in the form fields.
+
+    6. Click the **Three** button and note the change in the fields, as shown in Figure
+    8-1 on the
+
+    following page.'
+  merge: -1
+  pgno: 127
+- img_proc: true
+  md: '# Lesson 8: Event Handlers
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_128_0.png)
+
+
+    Figure 8-1: Buttons have three event handlers
+
+
+    Event handlers appear in the HTML declarations of each of the buttons. The declaration
+    for Button Two is typical:
+
+
+    ```
+
+    <INPUT TYPE="BUTTON" NAME="Button2" Value="Two"
+
+    OnClick="ClickDisplay(2)"
+
+    onFocus="FocusDisplay(2)"
+
+    onBlur="BlurDisplay(2)">
+
+    ```
+
+
+    The above declaration states: when the onClick event handler is tripped, the function
+    ClickDisplay() is called with parameter 2. It also specifies functions to call
+    when the onFocus and onBlur event handlers are tripped. To see this program function,
+    click various buttons and watch the corresponding results in each of the text
+    fields.
+
+
+    A button is given focus when a user clicks it.
+
+
+    Like buttons, radio buttons and check boxes each support three event handlers.
+    They are:
+
+
+    +   - onClick: Trips when a user clicks the check box or radio button.
+
+    - onFocus: Trips when a user gives focus to the check box or radio button.
+
+    - onBlur: Trips when a check box or radio button loses focus.'
+  merge: -1
+  pgno: 128
+- img_proc: true
+  md: "# Exercise 8-2: Attaching Event Handlers to Radio Buttons & Check Boxes\n\n\
+    +   1. Open a new document in your text editor.\n\n+   2. Type the following script\
+    \ into the new HTML document:\n\n```\n<HTML>\n<HEAD>\n<TITLE>Attaching Event Handlers\
+    \ to Radio Buttons & Check Boxes</TITLE>\n<SCRIPT LANGUAGE=\"JavaScript\">\n<!--\
+    \ Start hiding from old browsers.\\nfunction ClickDisplay(SentValue)\n{\n  document.DemoForm.ClickOutput.value=\"\
+    You clicked \" + SentValue + \" \")\";\n}\nfunction FocusDisplay(SentValue)\n\
+    {\n  document.DemoForm.FocusOutput.value=\"You gave focus to \" + SentValue +\
+    \ \" \")\";\n}\nfunction BlurDisplay(SentValue)\n{\n  document.DemoForm.BlurOutput.value=\"\
+    You blurred \" + SentValue + \" \")\";\n}\n// Stop hiding from old browsers. -->\n\
+    </SCRIPT>\n</HEAD>\n```\n\n<h1>This program demonstrates radio button and check\
+    \ box event handlers.</h1>\n\n<FORM NAME=\"DemoForm\"><P>"
+  merge: -1
+  pgno: 129
+- img_proc: true
+  md: 'Click information:<BR>
+
+
+    ```
+
+    <INPUT TYPE="TEXT" NAME="ClickOutput" Value="" SIZE=52><P>
+
+    ```
+
+
+    Focus information:<BR>
+
+
+    ```
+
+    <INPUT TYPE="TEXT" NAME="FocusOutput" Value="" SIZE=52><P>
+
+    ```
+
+
+    Blur information:<BR>
+
+
+    ```
+
+    <INPUT TYPE="TEXT" NAME="BlurOutput" Value="" SIZE=52>
+
+    ```
+
+
+    ```
+
+    <HR><P>
+
+    ```
+
+
+    Choose your trendy beverage:<BR>
+
+
+    ```
+
+    <INPUT TYPE="RADIO" NAME="RadioGroup" Value="Java"
+
+    onclick="ClickDisplay(''Java'')" onFocus="FocusDisplay(''Java'')"
+
+    onBlur="BlurDisplay(''Java'')"> Java
+
+    ```
+
+
+    ```
+
+    <INPUT TYPE="RADIO" NAME="RadioGroup" Value="Cafe au Lait"
+
+    onclick="ClickDisplay(''Cafe au Lait'')" onFocus="FocusDisplay(''Cafe au Lait'')"
+
+    onBlur="BlurDisplay(''Cafe au Lait'')"> Cafe au Lait
+
+    ```
+
+
+    ```
+
+    <INPUT TYPE="RADIO" NAME="RadioGroup" Value="Mocha"
+
+    onclick="ClickDisplay(''Mocha'')" onFocus="FocusDisplay(''Mocha'')"
+
+    onBlur="BlurDisplay(''Mocha'')"> Mocha
+
+    ```
+
+
+    ```
+
+    <INPUT TYPE="RADIO" NAME="RadioGroup" Value="Half-Caf"
+
+    onclick="ClickDisplay(''Half-Caf'')" onFocus="FocusDisplay(''Half-Caf'')"
+
+    onBlur="BlurDisplay(''Half-Caf'')"> Half-Caf
+
+    ```
+
+
+    Now, choose your beverage-topping condiments:<BR>
+
+
+    ```
+
+    <INPUT TYPE="CHECKBOX" NAME="CinnamonCheckbox" Value="Cinnamon"
+
+    onclickClickDisplay(''Cinnamon'')" onFocus="FocusDisplay(''Cinnamon'')"
+
+    onBlur="BlurDisplay(''Cinnamon'')"> Cinnamon
+
+    ```
+
+
+    ```
+
+    <INPUT TYPE="CHECKBOX" NAME="ChocolateCheckbox" Value="Chocolate"
+
+    onclick="ClickDisplay(''Chocolate'')" onFocus="FocusDisplay(''Chocolate'')"
+
+    onBlur="BlurDisplay(''Chocolate'')"> Chocolate
+
+    ```
+
+
+    ```
+
+    <INPUT TYPE="CHECKBOX" NAME="NutmegCheckbox" Value="Nutmeg"
+
+    checked onclick="ClickDisplay(''Nutmeg'')" onFocus="FocusDisplay(''Nutmeg'')"
+
+    onBlur="BlurDisplay(''Nutmeg'')"> Nutmeg
+
+    ```
+
+
+    ```
+
+    </FORM>
+
+    </body>
+
+    </html>
+
+    ```'
+  merge: -1
+  pgno: 130
+- img_proc: true
+  md: '3. Save the file as EVENTHANDLERS_2.HTML Switch applications to your Web browser
+    and open EVENTHANDLERS_2.HTML.
+
+
+    4. Click each of the radio buttons and note the change in the form fields.
+
+
+    5. Select and deselect the check boxes and note the change in the form fields.
+    Experiment with different combinations of radio buttons and check boxes, as shown
+    in Figure 8-2.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_131_0.png)
+
+
+    Figure 8-2: Check boxes and radio buttons with event handlers
+
+
+    This program, like the one you worked with in Exercise 8-1, by assigning three
+    event handlers to each of several form elements. Below is the declaration of a
+    radio button:
+
+
+    ```
+
+    <BR><INPUT TYPE="RADIO" NAME="RadioGroup" Value="Mocha" onclick="ClickDisplay(''Mocha'')"
+    onFocus="FocusDisplay(''Mocha'')" onBlur="BlurDisplay(''Mocha'')"> Mocha
+
+    ```
+
+
+    The event handlers call functions that contain the contents of the text fields
+    that contain click, focus and blur information.'
+  merge: -1
+  pgno: 131
+- img_proc: true
+  md: '# Event Handlers & More Complex Form Elements
+
+
+    Like buttons, radio buttons, and check boxes, other form elements also have event
+    handlers. In this section, you will learn about the event handlers supported by
+    text fields, text areas, and selection lists.
+
+
+    Forms themselves also have event handlers. You can place onSubmit and on event
+    handlers in the <FORM> tag. They will trigger when the form is submitted (uploaded)
+    to a server with a SUBMIT button or cleared with a RESET button.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_132_0.png)
+
+
+    # Attaching Event Handlers to Fields and Text Areas
+
+
+    Text fields support three event handlers:
+
+
+    +   - onChange: Trips when a user changes the text in a text field or text area.
+    Under some operating systems (notably, all versions of Microsoft Windows) the
+    user must take focus away from the text handler before change is recognized and
+    the event handler trips.
+
+    - onFocus: Trips when a user gives focus to the text field or text area.
+
+    - onBlur: Trips when the text field or text area loses focus.'
+  merge: -1
+  pgno: 132
+- img_proc: true
+  md: "# Exercise 8-3: Event Handlers in text\n\n1. Open a new document in your text\
+    \ editor.\n\n2. Type the following script into the new HTML document:\n\n```\n\
+    <HTML>\n<TITLE>Attaching Event Handlers to Text Fields & Text Areas</TITLE>\n\
+    <SCRIPT LANGUAGE=\"JavaScript\">\n<!-- Start hiding from old browsers -->\nfunction\
+    \ FocusDisplay(SentValue)\n{\n  document.DemoForm.FocusOutput.value=(\"You gave\
+    \ focus to \" + SentValue + \".\n```"
+  merge: -1
+  pgno: 133
+- img_proc: true
+  md: 'Blur information:<BR>
+
+
+    <INPUT TYPE="TEXT" NAME="BlurOutput" Value="" SIZE=52><P>
+
+
+    Change information:<BR>
+
+
+    <INPUT TYPE="TEXT" NAME="ChangeOutput" Value="" SIZE=52<P>
+
+
+    <HR><BR>
+
+
+    Text Field One:<BR>
+
+
+    <INPUT TYPE="TEXT" NAME="TextFieldOne" Value="Change this text." SIZE=20
+
+    onChange="ChangeDisplay(''One'')" onfocus="FocusDisplay(''One'')"
+
+    onBlur="BlurDisplay(''One'')\P>
+
+
+    Text Area Two:<BR>
+
+
+    <TEXTAREA NAME="TextAreaTwo" ROWS=20 COLS=50
+
+    onChange="ChangeDisplay(''Two'')" onfocus="FocusDisplay(''Two'')"
+
+    onBlur="BlurDisplay(''Two'')>
+
+
+    Then, change this text and see what happens.
+
+    </TEXTAREA>
+
+
+    </FORM>
+
+
+    </BODY>
+
+    </HTML>
+
+
+    +   3. Save the file as EVENTHANDLERS_3.HTML. Switch applications to your Web
+    browser and open EVENTHANDLERS_3.HTML.
+
+
+    +   4. Replace the text in Text Field One with any text string of your choice.
+    Press <TAB> to advance to Text Area Two and replace the text with any text string
+    of your choice.
+
+
+    +   5. Note the changes to the Focus, Blur, and Change fields above the text fields,
+    as shown in Figure 8-3 on the following page.'
+  merge: -1
+  pgno: 134
+- img_proc: true
+  md: '# Mastering JavaScript Part 1
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_135_0.png)
+
+
+    In this program, the three event handlers attached to each of the elements in
+    the lower half of the document detect changes in focus and in the contents of
+    the text handlers, and call functions that report those changes in the text fields
+    that appear at the top of the document.
+
+
+    122 DDC Publishing • www.ddcpub.com'
+  merge: -1
+  pgno: 135
+- img_proc: true
+  md: "# Selection Lists & Drop-Down Boxes\n\nSelection lists and drop-down list boxes\
+    \ (they are the same in the eyes of the Web browser have three event handlers:\n\
+    \n+   - onChange: Trips when a user changes the selected element in a selection\
+    \ list or drop-down list box.\n\n+   - onFocus: Trips when a user gives focus\
+    \ to the selection list or drop-down list box.\n\n+   - onBlur: Trips when a selection\
+    \ list or drop-down list box loses focus.\n\n# Exercise 8-4: Attaching an Event\
+    \ Handler to a Selection Box\n\n+   1. Open a new document in your text editor.\n\
+    \n+   2. Type the following script into the new HTML document:\n\n```\n<HTML>\n\
+    <HEAD>\n<TITLE>Attaching an Event Handler to a Selection Box</TITLE>\n<SCRIPT\
+    \ LANGUAGE=\"JavaScript\">\n<!-- Start hiding from old browsers.\nfunction FocusDisplay(SentValue)\n\
+    {\n  document.DemoForm.FocusOutput.value=(\"You gave focus to \" + SentValue +\
+    \ \")\n```"
+  merge: -1
+  pgno: 136
+- img_proc: true
+  md: '```
+
+    document.DemoForm.ChangeOutput.value="(You changed " + SentValue
+
+    + ")"
+
+    // Stop hiding from old browsers. --
+
+    <SCRIPT>
+
+    </HEAD>
+
+    <body>
+
+    <H1>This program demonstrates selection box event handlers.</h1>
+
+    <FORM NAME="DemoForm"><P>
+
+    Focus information:<BR>
+
+    <INPUT TYPE="TEXT" NAME="FocusOutput" Value="" SIZE=52><P>
+
+    Blur information:<BR>
+
+    <INPUT TYPE="TEXT" NAME="BlurOutput" Value="" SIZE=52><P>
+
+    Change information:<BR>
+
+    <INPUT TYPE="TEXT" NAME="ChangeOutput" Value="" SIZE=52><P>
+
+    <HR><P>
+
+    <SELECT SIZE=4 NAME="Select" onChange="ChangeDisplay(''Power
+
+    Tools'')" onFocus="FocusDisplay(''Power Tools'')"
+
+    Blur="BlurDisplay(''Power Tools'')")
+
+    <OPTION VALUE="Drill Press"> Drill Press
+
+    <OPTION VALUE="Table Saw"> Table Saw
+
+    <OPTION VALUE="Jointer"> Jointer
+
+    <OPTION VALUE="Mill"> Mill
+
+    </SELECT>
+
+    <SELECT SIZE=4 NAME="HandSelect" onChange="ChangeDisplay(''Hand Tools''
+
+    onFocus="FocusDisplay(''Hand Tools'')" onBlur="BlurDisplay(''Hand Tools'')"
+
+    <OPTION VALUE="Hammer"> Hammer
+
+    <OPTION VALUE="Screwdriver"> Screwdriver
+
+    <OPTION VALUE="C-Clamp"> C-Clamp
+
+    <OPTION VALUE="Tape Measure"> Tape Measure
+
+    ```'
+  merge: -1
+  pgno: 137
+- img_proc: true
+  md: '```
+
+    </SELECT>
+
+    </FORM>
+
+
+    <body>
+
+    </html>
+
+    ```
+
+
+    +   3. Save the file as EVENTHANDLERS.4.HTML. Switch applications to your Web
+    browser and open EVENTHANDLERS_4.HTML.
+
+
+    +   4. Click any list item in the left selection box and note the change to the
+    Focus, Blur, and Change fields above.
+
+
+    +   5. Click any list item in the right selection box and note the change to the
+    Focus, Blur, and Change fields above.
+
+
+    +   6. Experiment with different selection configurations in the selection boxes,
+    noting the changes in the Focus, Blur, and Change fields, as shown in Figure 8-4.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_138_0.png)
+
+
+    > Figure 8-4: Selection lists also have event handlers
+
+
+    Embedded in the <SELECT> tags each of these selection lists are three event handlers.
+    When triggered, each event handler calls a function that displays information
+    regarding the form element that has been given focus, what has been blurred, and
+    what has been changed.'
+  merge: -1
+  pgno: 138
+- img_proc: true
+  md: '# Lesson Summary
+
+
+    +   - Event handlers are bits of code that are attached to graphical elements.
+    The event handler is a "middle man"; it waits for a certain event and then trips
+    a JavaScript function to react to that event.
+
+
+    +   - Focus is the term used to describe the state of a form element that has
+    been selected (with the <TAB> key or a mouse click), but not necessarily clicked.
+
+
+    +   - There are three event handlers that can be assigned to buttons: onClick,
+    onFocus, and onBlur. onClick trips when the button is clicked; onFocus trips when
+    the button is selected (not clicked); and onBlur trips when the button loses focus.
+
+
+    +   - Similar to buttons, radio buttons and check boxes support onClick, onFocus,
+    and onBlur.
+
+
+    +   - Text handlers in a form also support event handlers. OnChange trips when
+    the text in a text field or area changes and focus is taken away. Text handlers
+    share onFocus and onBlur lists with other form elements.
+
+
+    +   - Selection lists and drop-down list boxes, like text handlers, support the
+    onChange event handler, which trips when a user changes the selected element.
+    It, too, supports the onFocus and onBlur event handlers.'
+  merge: -1
+  pgno: 139
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 140
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 141
+- img_proc: true
+  md: '# # Lesson 9
+
+    Window Control
+
+
+    # ## Lesson Topics
+
+
+    +   * Alerts!
+
+    * Opening and Closing Windows
+
+    * Frames
+
+    * Lesson Summary'
+  merge: -1
+  pgno: 142
+- img_proc: true
+  md: "# Alerts!\n\nJavaScript is often used to control browser windows. It is a very\
+    \ common form of JavaScript because, unlike plain HTML, JavaScript allows you\
+    \ to control aspects of the browser size and characteristics that you open. Many\
+    \ programmers use JavaScript-generated browser windows to add emphasis and a dynamic\
+    \ element to their site. JavaScript allows you to manipulate frames in ways HTML\
+    \ simply does not.\n\n# The alert() Tag\n\nAn alert is a quick message sent by\
+    \ a Web browser to the user that informs the user that 1) something is wrong or\
+    \ 2) provides information regarding the size to the user. You can create your\
+    \ own alerts within a page by using the alert() method. The alert() method prints\
+    \ (displays to the user) in the form of an alert window whatever you type in the\
+    \ parentheses section of the alert.\n\nAn example of such an alert window is shown\
+    \ in Figure 9-1 on the following page. This is a relatively simple thing, but\
+    \ an excellent introduction to some of the more complicated window controlling\
+    \ power of JavaScript.\n\n# Exercise 9-1: Creating an Alert Window\n\n+   1. Type\
+    \ the following script into an HTML document:\n\n```\n<HEAD>\n<SCRIPT LANGUAGE=\"\
+    JavaScript\">\n<!--Start hiding from old browsers\nfunction hello() {\n  alert\
+    \ (\"Welcome to my Page!\");\n}\n// Stop hiding from old browsers -->\n</SCRIPT>\n\
+    <BODY onload=\"hello\">\n<h1>Glad to see you</h1>\n</body>\n</html>\n```\n\n+\
+    \   2. Save the file. Switch applications to your Web browser and reload the file.\
+    \ Your browser screen should appear similar to Figure 9-1 on the following page."
+  merge: -1
+  pgno: 143
+- img_proc: true
+  md: "# Lesson 9: Window Control\n\n![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_144_0.png)\n\
+    \nFigure 9-1: Example of JavaScript alert\n\nThe event handler `onload` is used\
+    \ in the `<body>` tag of this document to display the alert window after the document\
+    \ finishes loading. You can also use the event handler `onunload` to execute a\
+    \ function as the viewer exits a page.\n\nAs discussed in the first Lesson of\
+    \ this class, JavaScript is case sensitive. This is especially important when\
+    \ dealing with event handlers. `Onload` (as used in the previous script) and `onload`\
+    \ have very different meanings. Both are used as event handlers: `Onload` is used\
+    \ to define the handler, `onload` is used to reference the handler. For example,\
+    \ examine the code in Figure 9-2.\n\n```\n<SCRIPT LANGUAGE=\"JavaScript\">\nfunction\
+    \ fn() {\n  // some function\n}\n</SCRIPT>\n\n<BODY onload=\"fn()\">\n<SCRIPT>\n\
+    document.onload=fn\n</SCRIPT>\n```\n\nFigure 9-2: Distinguishing between onload\
+    \ and onload\n\nThe handler `fn` is positioned within the function statement and\
+    \ is defined by the `onload` statement in the `<body>` tag. In other words, the\
+    \ function is turned into an action because the `<body>` tag instructs the browser\
+    \ to execute it when the page finishes loading. Finally, it is referenced within\
+    \ the HTML document using the `onload` command.\n\nAlert boxes are useful for\
+    \ sending messages to users, but they are not the visually appealing way of communicating\
+    \ with a user. Typically, alerts are used to warn a user of missed or important\
+    \ information. An example of this is provided in the next exercise."
+  merge: -1
+  pgno: 144
+- img_proc: true
+  md: "# Exercise 9-2: Writing an E-mail Checker\n\n1. Type the following script into\
+    \ an HTML document:\n\n```\n<HTML>\n<HEAD>\n\n<SCRIPT LANGUAGE=\"JavaScript\"\
+    >\n<!-- Hiding from old browsers\nfunction emailCheck() {\n  mailcheck=document.eform.email.value;\n\
+    \  if (mailcheck.indexOf(\"@\")<3){\n    alert(\\Please make sure you have typed\
+    \ your e-mail address\ncorrectly. Please\n    check the prefix and '@' sign.\"\
+    );\n  }\n  if (mailcheck.indexOf(\".com\")<5 && (mailcheck.indexOf(\".org\")<5\n\
+    \  && (mailcheck.indexOf(\".gov\")<5 && (mailcheck.indexOf(\".net\")<5\n  && (mailcheck.indexOf(\"\
+    .mil\")<5 && (mailcheck.indexOf(\".edu\")<5\n  && (mailcheck.indexOf(\".us\")<5)){\n\
+    \    alert(\\Please make sure you have typed your e-mail address\ncorrectly. Please\n\
+    \    check the suffix for accuracy. (It should include a \"\n+.com, .edu, .net,\
+    \ .org, .gov or mil or .us\");\n  }\n\n// Stopping from old browsers -->\n</SCRIPT>\n\
+    </HEAD>\n<BODY TEXT=\"000000\">\n<CENTER>\n<P>\n<H3>Please Enter Your E-mail Address\
+    \ Below:</H3>\n<BR>\n<FORM NAME=\"eform\"><INPUT TYPE=\"text\" NAME=\"email\"\
+    \ SIZE=40\nVALUE=\"\"><BR>\n<INPUT TYPE=\"button\" NAME=\"mail\" VALUE=\"Submit\n\
+    OnClick=\"emailCheck()\"\n</FORM></CENTER>\n</BODY>\n</HTML>\n```\n\n2. Save the\
+    \ file as EMAILCHECK.HTML. Double click the file to open it in your browser. \n\
+    \n3. Enter in an invalid e-mail address, you should see an alert window pop up,\
+    \ similar to Figure 9-3 on the following page."
+  merge: -1
+  pgno: 145
+- img_proc: true
+  md: '# Lesson 9: Window Control
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_146_0.png)
+
+
+    Figure 9-3: JavaScript e-mail checker
+
+
+    This script performs two checks on the e-mail address listed in the form. The
+    first if statement checks to make sure that the string presented contains an "@"
+    symbol and is not less than 3 characters up to that point (many mail-servers will
+    reject e-mail addresses that are only 1 character in length, this script is assuring
+    that standard).
+
+
+    The second if statement iterates through the different TLD (top-level domain)
+    suffixes (that are acceptable for this script) and tries to match up with one
+    of them. It also makes sure the domain name contains at least five characters:
+    the TLD plus "." and the domain (which can be as short as 1 character (such as
+    "a.com"). Together, the script requires at least two prefix, the "@" symbol and
+    at least a 5 character suffix.
+
+
+    > One problem with this code is that it is very United States centric. Other countries
+    obviously have their own domain name system, and—because the Internet is worldwide—this
+    would preclude someone with a domain name ending in .UK or .AU, for example, from
+    submitting the form.
+
+
+    There are two possible ways around this:
+
+
+    +   - create an array with every possible Top Level Domain listed in it (this
+    would create bulky code, however)
+
+    - modify the code to search for a suffix that is two or three characters in length
+    (this would be less accurate, but efficient enough for most applications)
+
+
+    DDC Publishing • www.ddcpub.com 133'
+  merge: -1
+  pgno: 146
+- img_proc: true
+  md: "# Opening and Closing Windows\n\nJavaScript includes event handlers for opening\
+    \ and closing windows. Similar to the <TARGET> tag available in HTML, you can\
+    \ direct links to open in new windows. You can also set the parameters of the\
+    \ windows that open (such as size, characteristics, title) to give a more customized\
+    \ feel to your site.\n\n![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_147_0.png)\n\n\
+    There is a tendency among novice JavaScript programmers to go overboard with some\
+    \ of the new tricks they have learned. Just as with all Web page design issues,\
+    \ it is always best to ask yourself if you are using JavaScript to perform something\
+    \ necessary or to show off your programming skills.\n\nPop-up windows are good,\
+    \ but they can also be annoying; and they preclude people with older browsers\
+    \ from viewing parts of your site.\n\n# Exercise 9-3: Opening a JavaScript Window\n\
+    \n+   1. Type the following script into an HTML document:\n\n<SCRIPT LANGUAGE=\"\
+    JavaScript\">\n<!-- Start hiding from old browsers -->\n\nfunction PopWin\n{\n\
+    \  popup =\n  window.open(\",\"popDialog\", \"height=160,width=300,scrollbars=no\"\
+    )\n  popup.document.write('<html><BODY BGCOLOR=#FFFFFF TEXT=#000000>');\n  popup.document.write('<BR><BR>');\n\
+    \  popup.document.write('<CENTER><H3>Thanks for visiting our\npage!</H3></CENTER>');\n\
+    \  popup.document.write('</body></html>');\n  popup.document.close();\n}\n\n//\
+    \ -- Stop hiding from old browsers --\n</SCRIPT>\n</HEAD>\n\n<BODY bgcolor=\"\
+    ffffff\" onload=\"PopWin\">\n<CENTER>\n<H3>By the time you see this, the Pop-Up\
+    \ Window will have\nloadedc</H3>\n</CENTER>\n</BODY>"
+  merge: -1
+  pgno: 147
+- img_proc: true
+  md: '2. Save the file as POPUP.HTML. Double click the file to open it in your browser.
+    Your screen should appear similar to Figure 9-4.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_148_0.png)
+
+
+    Figure 9-4: Example of JavaScript pop up windows
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_148_1.png)
+
+
+    Note that the code for the pop-up windows resides entirely within the POPUP.HTML
+    document. This is convenient if you want to call the same pop-up window several
+    times within a single document. For example, if you have a catalog site, and you
+    want the same page to pop up, with a different picture each time, you can call
+    the pop-up function multiple times, using the `onClick` event handler.
+
+
+    This code is simple enough, but suppose you also want to provide viewers of your
+    page with the option of closing the window that is being opened. This can be done
+    easily using the `self.close` command.'
+  merge: -1
+  pgno: 148
+- img_proc: true
+  md: '# Exercise 9-4: Closing a JavaScript Window
+
+
+    +   1. Re-open the file POPUP.HTML in Notepad. Add the following line:
+
+
+    ```
+
+    popup.document.write(''<BR><BR><FORM><INPUT TYPE="BUTTON
+
+    VALUE="Close" onclick="self.close() "></FORM>'');
+
+    ```
+
+
+    Between these lines:
+
+
+    ```
+
+    popup.document.write(''<CENTER><H3>Thanks for visiting my
+
+    page!</H3></CENTER>'');
+
+    popup.document.write(''</body></html>'');
+
+    ```
+
+
+    +   2. Resave the file. Double click the file to open it in your browser. A screen
+    should appear
+
+    that is similar to Figure 9-5.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_149_0.png)
+
+
+    Close is a window event handler. It can only be used to open a
+
+    window that was created by a JavaScript. If you try to close a window
+
+    not opened by JavaScript, an alert window will appear asking the user
+
+    if they want to close the window. By default, close refers to the
+
+    current window; however, you can tell it to close other windows. For
+
+    instance, if you created two pop-up windows, WindowA and
+
+    WindowB, using the same function, you could close WindowA from
+
+    WindowB, without generating a prompt.'
+  merge: -1
+  pgno: 149
+- img_proc: true
+  md: '# Frames
+
+
+    In DDC Publishing''s HTML 4.0 Intermediate, you learned about frame construction
+    and layout. JavaScript allows you to further enhance your framed pages. You can
+    use JavaScript to establish properties for the windows within a frame, or to call
+    them through an array.
+
+
+    Assume you have a four-windowed frameset. You could script code similar to that
+    displayed in Figure 9-6.
+
+
+    ```
+
+    <FRAMESET COLS="25%,25%,25%,25%">
+
+    <FRAME SRC="frame1.html" NAME="frameone">
+
+    <FRAME SRC="frame2.html" NAME="frametwo">
+
+    <FRAME SRC="frame3.html" NAME="framethree">
+
+    <FRAME SRC="frame4.html" NAME="framefour">
+
+    </FRAMESET>
+
+    ```
+
+
+    Figure 9-6: Four-way frameset
+
+
+    Within JavaScript, you can refer to the windows through an array, such as that
+    shown below:
+
+
+    +   Frameone is top.frames[0]
+
+    Frametwo is top.frames[1]
+
+    Framethree is top.frames[2]
+
+    Framefour is top.frames[3]
+
+
+    You can now refer to the various windows by invoking their name with a <LOCATION>
+    tag.'
+  merge: -1
+  pgno: 150
+- img_proc: true
+  md: '# Exercise 9-5: Using JavaScript to Control Frames
+
+
+    +   1. Open the FRAMES folder located within your JAVCRIPT-1 folder and double
+    click the file FRAMES.HTML.
+
+
+    +   2. Your browser should open with an image similar to Figure 9-7.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_151_0.png)
+
+
+    +   3. The code for this script is relatively simple. Open the file FRAME1.HTML
+    in Notepad and examine the code, as shown in Figure 9-8.
+
+
+    ```
+
+    <INPUT TYPE="button" VALUE="Frame 2" onclick="top.frames[1].location=''frame1.html''>
+
+    <INPUT TYPE="button" VALUE="Frame 3" onclick="top.frames[2].location=''frame1.html''>
+
+    <INPUT TYPE="button" VALUE="Frame 4" onclick="top.frames[3].location=''frame1.html''>
+
+    <INPUT TYPE="button" VALUE="Clear it" onclick="top.frames.location=''frames.html''>
+
+    ```
+
+
+    Figure 9-8: Code for FRAME1.HTML'
+  merge: -1
+  pgno: 151
+- img_proc: true
+  md: '![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_152_0.png)
+
+
+    Using the event handler `onClick` and four different buttons, this file controls
+    the location of the new windows when opening. This code can also be used to simultaneously
+    update multiple frames.
+
+
+    You can also use this type of frame to control other aspects of the frame layout.
+    For instance, you can change the first line to read: `onclick=top.frames[1].bgColor="teal"`.
+    This will change the background color of the second frame to teal.
+
+
+    You can learn more about JavaScript and its interaction with frames in DDC Publishing’s
+    *Mastering JavaScript: Part 2* course.'
+  merge: -1
+  pgno: 152
+- img_proc: true
+  md: '# Lesson Summary
+
+
+    +   - JavaScript can be used to control windows, and features of windows, more
+    thoroughly than HTML.
+
+
+    +   - An alert window is a small window that “pops up” to warn browser users of
+    a problem. You can program JavaScript to launch alert windows.
+
+
+    +   - Using event handlers, such as onClick and onLoad, you can program new windows
+    to open in JavaScript.
+
+
+    +   - Framesets can also be manipulated through JavaScript. From one window you
+    can change the characteristics of multiple windows.'
+  merge: -1
+  pgno: 153
+- img_proc: true
+  md: '# # Notes'
+  merge: -1
+  pgno: 154
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 155
+- img_proc: true
+  md: '# Appendices
+
+
+    +   - Appendix A: JavaScript Client-side Objects
+
+    - Appendix B: JavaScript Glossary'
+  merge: -1
+  pgno: 156
+- img_proc: true
+  md: '# Appendix A: JavaScript Client-side Objects
+
+
+    There are many objects relevant to working with JavaScript in a client-side environment
+    (in a Web browser).
+
+
+    Many of these objects are related to one another as property values. Reference
+    Figure A-1 displays the client-side object containment hierarchy for JavaScript
+    1.2.
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_157_0.png)
+
+
+    Reference Figure A-1: Containment relationships among client-side objects in JavaScript
+    1.2'
+  merge: -1
+  pgno: 157
+- img_proc: true
+  md: "# Appendix B: JavaScript Glossary\n\nArithmetic operator\nAny of the following\
+    \ symbols: *, +, -, / (divide), % (modulus), ++ (increment), --\n(decrement),\
+    \ or - (negation). Arithmetic operators are used with variables or numeric values\
+    \ in an\nexpression to yield a mathematical result.\n\nArray\nAn object with a\
+    \ list of properties. In an array, the properties are named in numerical sequence,\
+    \ as in:\narrayname[0], arrayname[1], and so on.\n\nAssign\nRefers to a value\
+    \ to a variable name.\n\nAssignment\nThe act of referring a value to a variable\
+    \ name; for example, purchases = 10.\n\nAssignment operator\nOne of the following\
+    \ symbols: =, +=, -=, *= /, or %. All but = will the indicated arithmetic\noperation\
+    \ to the current variable value and its assigned value.\n\nAssignment statement\n\
+    A complete syntical construction of assignment: purchases+=(ugs*orders);\n\nBug\n\
+    \ error in a computer program. See debug.\n\nCall\nThe act of instructing JavaScript\
+    \ to execute a particular function.\n\nCase-insensitive\nIn a case-insensitive\
+    \ language or operating system, the computer makes no distinction between lower-\n\
+    and uppercase letters, considering them equivalent. Thus, \"cat\" is interpreted\
+    \ as the same as \"Cat\" or\n\"CAT\".\n\nCase-sensitive\nIn a case-sensitive language\
+    \ or operating system, the computer distinguishes between lower-\nand uppercase\
+    \ letters, considering them different characters. Thus, \"input\" is a different\
+    \ term from \"Input\"\nor \"INPUT.\".\n\nClause\nA portion of a JavaScript statement.\
+    \ For, within the if...else statement, either just the\nif or just the else portion\
+    \ is a clause.\n\nCommand\nAny term or phrase that is part of an operating system,\
+    \ programming language, scripting language, or\nor standardized set of commands\
+    \ that instructs a computer to perform a specific task or operation.\n\nComment-out\n\
+    to insert comment symbols into code or script. In the case of JavaScript, script\
+    \ that is commented-out\nis not executed by a Web browser."
+  merge: -1
+  pgno: 158
+- img_proc: true
+  md: '# Mastering JavaScript Part 1
+
+
+    # Comments
+
+
+    Author-entered descriptions in program code or script intended for human programmers
+    to read, JavaScript interpretation by a Web browser.
+
+
+    # Comparison operator
+
+
+    One of the following symbols: ==, <, >=, != or !=!; Returns a value of true if
+    the comparison is valid; otherwise, it returns a value of false.
+
+
+    # Concatenate
+
+
+    The combination of multiple script or code strings into a single longer string.
+    For example, "I" + "downloaded" + "the" + "file", when concatenated, yields "I
+    downloaded the file".
+
+
+    # Conditional statement
+
+
+    A JavaScript statement that directs program flow based on the validity or invalidity
+    of a comparison. Examples include if...else and while.
+
+
+    # Constant
+
+
+    A variable that is assigned a value that is never intended to change.
+
+
+    # Debug
+
+
+    The act of attempting to track down errors or design flaws in a program.
+
+
+    # Define
+
+
+    In JavaScript, to describe the name, parameters, and statements of a function.
+
+
+    # Definition
+
+
+    In JavaScript, the name, parameters, and statements that make up a function.
+
+
+    # Document object
+
+
+    The JavaScript object that contains properties and methods relevant to the HTML
+    document. It includes colors, anchors, links, and form elements.
+
+
+    # Element
+
+
+    A screen element is any widget on the computer screen. A form element is one portion
+    of an HTML form, such as a text box, a checkbox, a radio button, a submit button,
+    or a selection box.
+
+
+    # Embed
+
+
+    To insert into a text file. JavaScript programs are embedded into HTML files.
+
+
+    # Empty string
+
+
+    A variable that contains no value. Empty strings can be created with the assignment
+    stringname="
+
+
+    # Error
+
+
+    An illegal or incorrect statement in a JavaScript program that a Web browser cannot
+    interpret.
+
+
+    # Event
+
+
+    When a user performs some action that JavaScript recognizes, such as a mouse click
+    on a particular screen element.
+
+
+    # Event handler
+
+
+    A JavaScript structure that responds to (handles) a particular event or response
+    by the user of the browser. Event handlers are identified by special HTML attributes.'
+  merge: -1
+  pgno: 159
+- img_proc: true
+  md: '# Appendix B: JavaScript Glossary
+
+
+    False
+
+
+    The value returned by a Boolean comparison operation if the comparison is invalid.
+
+
+    Focus
+
+
+    When a user clicks a form element and it becomes "active" for interaction.
+
+
+    Function
+
+
+    A collection of JavaScript statements that perform a particular operation. Also
+    called a *method*.
+
+
+    Function call
+
+
+    When JavaScript is instructed to execute a named and defined function. Occurs
+    in the form **functionname (parameters)**.
+
+
+    Increment
+
+
+    To increase the value of a variable, typically by 1.
+
+
+    Initialize
+
+
+    To assign a starting value to a variable, typically 0.
+
+
+    Iteration
+
+
+    One sweep through a program loop.
+
+
+    Java
+
+
+    A programming language that extends the Web to handle the distribution of interactive
+    content: video, audio, multimedia, and so on. Java programs are called *applets*
+    and run from within a Java-enabled browser.
+
+
+    JavaScript
+
+
+    An English-like scripting language devised by Netscape Communications Corp. and
+    Sun Microsystems, Inc. that supports much of Java''s capabilities but does not
+    require extended programming knowledge.
+
+
+    Keyword
+
+
+    Any word that JavaScript recognizes as having meaning, such as **if**, **then**,
+    **var**, **new**, **etc.**
+
+
+    LiveScript
+
+
+    The scripting language developed by Netscape Communications Corp. that was the
+    predecessor to JavaScript.
+
+
+    Logical operator
+
+
+    Any of the following: **&&** (AND), **||** (OR), **!** (NOT). Used in conditional
+    expressions; returns a value of true or false. Also known as *Boolean operators*.
+
+
+    Loop
+
+
+    A section of program code that is executed in repetition until some condition
+    changes.
+
+
+    Method
+
+
+    A function that is a property of a JavaScript object.
+
+
+    Modulo
+
+
+    The % operator.
+
+
+    Modulus
+
+
+    The result of the modulo (%) operator, which returns the remainder of a division
+    operation. Thus, **10%3 = 1**.'
+  merge: -1
+  pgno: 160
+- img_proc: true
+  md: '# Mastering JavaScript Part 1
+
+
+    # Nested
+
+
+    When a statement is used as part of another statement. For example, were the if
+    else clause of a statement another if...else statement, these would be nested.
+    Also, when bookending symbols, such as brackets {} or parentheses (), are used
+    within one another.
+
+
+    # Operand
+
+
+    A variable or value used in an operator expression. For example, in the expression
+    orders*10, both orders and 10 are operands.
+
+
+    # Parameter
+
+
+    Additional information that is passed to a Java applet or a JavaScript function.
+    Parameters supply applets and functions information they need to complete their
+    task.
+
+
+    # Return
+
+
+    A keyword that is used to return a value at the conclusion of a JavaScript function.
+    This value is assigned to a variable if the function was called in an assignment;
+    for example, result=functionname();
+
+
+    # Script
+
+
+    A series of program statements that instruct a computer how to accomplish a task.
+
+
+    # Scripting language
+
+
+    The set of rules and keywords that comprise a functional script. Same as a programming
+    language, except that scripting languages are traditionally less strict and simpler
+    to learn.
+
+
+    # Statement
+
+
+    A JavaScript construction that typically affects program flow. Loops and conditionals,
+    such as for and if...else, are statements.
+
+
+    # String
+
+
+    A value that consists of a series of alphanumeric characters, enclosed in quotation
+    marks.
+
+
+    # Syntax
+
+
+    The grammatical and logical rules of a programming or scripting language.
+
+
+    # True
+
+
+    The value returned from a Boolean comparison operation if the comparison is valid.
+
+
+    # Unary
+
+
+    An operator that takes only a single operand; for example ++ (increment), -- (decrement),
+    and - (negate).
+
+
+    # Value
+
+
+    Some form of data. A numeric value is a number. A string value is a string. Either
+    can be assigned to a variable. A literal value is a specific number of string
+    explicitly stated, not assigned to a variable.'
+  merge: -1
+  pgno: 161
+- img_proc: true
+  md: '# Index
+
+
+    # A
+
+
+    # M
+
+
+    ActiveX, 2
+
+    Array, 99
+
+    method, 99
+
+
+    Microsoft Corporation
+
+    Internet Explorer, 10
+
+    Microsoft Corporation, 119
+
+    Internet Explorer, 71
+
+    Modulo, 30
+
+
+    # B
+
+
+    # N
+
+
+    Blur, 112
+
+    Boolean value, 18, 22, 39
+
+
+    Netscape Communications Corporation, 5
+
+    Navigator, 10, 71
+
+    Number, 22
+
+
+    # C
+
+
+    # O
+
+
+    C++, 4
+
+    Check box, 115
+
+    Comments, 11
+
+
+    Operators
+
+    assignment, 33
+
+    comparison, 36
+
+    logic, 39
+
+    mathematical, 37
+
+    shortcut, 33
+
+
+    # D
+
+
+    Data type, 22
+
+    Document.write( ), 6
+
+    Dynamic typing, 22
+
+
+    # E
+
+
+    # P
+
+
+    Event handler, 112
+
+
+    Parameters, 50
+
+    Property, 98
+
+
+    # F
+
+
+    # R
+
+
+    Flexible typing, 22
+
+    Focus, 112
+
+    For loop, 64
+
+    Function
+
+    calling, 46, 49
+
+    passing parameters, 50
+
+
+    Radio button, 115
+
+
+    # S
+
+
+    Script, 6
+
+    String, 6, 18, 22
+
+    concatenation, 22
+
+    Sun Microsystems, 5
+
+    Switch statement, 71
+
+
+    # I
+
+
+    If statement, 58
+
+    If...else statement, 58
+
+    Increment, 65, 68
+
+    Index variable, 64, 65, 68
+
+    Initialize, 20
+
+
+    # T
+
+
+    Typeof( ), 24
+
+
+    # J
+
+
+    # V
+
+
+    Java, 2
+
+
+    Variables
+
+    declaring, 18
+
+    initializing, 20
+
+
+    # L
+
+
+    # W
+
+
+    Language, 6
+
+    programming, 4
+
+    scripting, 2
+
+
+    While loop, 68
+
+
+    ![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_162_0.png)
+
+
+    DDC Publishing • wwwdcpub.com 149'
+  merge: -1
+  pgno: 162
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 163
+- img_proc: true
+  md: '![](img/0a664f15c7c82f09f80eb4cf9a63fe6a_164_0.png)
+
+
+    BEHREND COLLEGE
+
+    COMPUTER CENTER'
+  merge: -1
+  pgno: 164
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 165
