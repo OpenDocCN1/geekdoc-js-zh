@@ -989,6 +989,7 @@
 +   [Microsoft® JavaScript 入门指南](docs/microsoft-start-heretm-learn-javascript/README.md)
 +   [Microsoft VBScript 专业项目指南](docs/microsoft-vbscript-professional-projects/README.md)
 +   [Microsoft VBScript 步进指南](docs/microsoft-vbscript-step-by-step-step-by-step-microsoft/README.md)
++   [Microsoft Windows 脚本编程初学者指南](docs/microsoft-windows-shell-scripting-programming-for-the-absolu/README.md)
 +   [Microsoft Word 入门指南](docs/microsoft-word---cdoc/README.md)
 +   [Microsoft Word 目录.doc](docs/microsoft-word---table-of-contentsdoc/README.md)
 +   [JavaScript 任务 (Mission： Code (Alternator Books ))](docs/mission-javascript-mission-code-alternator-books/README.md)
