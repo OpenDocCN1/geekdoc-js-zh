@@ -970,6 +970,7 @@
 +   [JavaScript 单页应用开发精通指南](docs/mastering-javascript-single-page-application-development/README.md)
 +   [精通 JavaScript：JavaScript 精通完全指南](docs/mastering-javascript-the-complete-guide-to-javascript-master/README.md)
 +   [NativeScript 精通：初学者指南 (计算机科学大师)](docs/mastering-nativescript-a-beginners-guide-mastering-computer-/README.md)
++   [精通 React：初学者指南 (计算机科学大师)](docs/mastering-react-a-beginners-guide-mastering-computer-science/README.md)
 +   [精通 React JS 与 JavaScript 精通：全面指南：SEO 秘籍构建动态 Web 应用的中级学习者指南 - 2 本合 1](docs/mastering-react-js-and-javascript-mastery-a-comprehensive-gu/README.md)
 +   [精通 React Native：初学者指南 (计算机科学大师系列)](docs/mastering-react-native-a-beginners-guide-mastering-computer-/README.md)
 +   [精通 TypeScript：现代 JavaScript 开发全面指南](docs/mastering-typescript-a-comprehensive-guide-to-modern-javascr/README.md)
