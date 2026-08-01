@@ -3009,6 +3009,7 @@ const styles = StyleSheet.create({
 });
 
 export default styles;
+```
 
 ## 总结
 
@@ -6124,7 +6125,6 @@ const mapStateToProps = state => {
     )
   };
 };
-```
 
 export default connect(mapStateToProps, mapDispatchToProps)(DecksScreen);
 ```
