@@ -1012,6 +1012,7 @@
 +   [oodle JavaScript 秘籍](docs/moodle-javascript-cookbook/README.md)
 +   [优秀 HTML 与 JavaScript 入门指南（附学生 CD-ROM）](docs/more-excellent-html-with-an-introduction-to-javascript-with-/README.md)
 +   [Murach JavaScript 与 jQuery 教程](docs/murach-javascript-and-jquery/README.md)
++   [Murach's MySQL 第二版](docs/murachs-mysql-2nd-edition/README.md)
 +   [MySQL 入门指南（编程语言 - JavaScript, Java, MySQL, PHP 及使用 Python 自动化）](docs/mysql-guide-for-beginner-programming-languages---javascript-/README.md)
 +   [Java 开发者的 .NET 指南：迁移至 C#](docs/net-for-java-developers-migrating-to-c-hash/README.md)
 +   [Node.js 入门指南：中级开发者解锁服务器端 JavaScript 力量终极指南](docs/node-js-for-beginner-the-ultimade-guide-for-intermediate-dev/README.md)
