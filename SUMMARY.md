@@ -936,6 +936,7 @@
 +   [让我们问问 ChatGPT：45 分钟学会学习 HTML、CSS 和 JavaScript (ChatGPT 书籍写作与 AI 工具 1)](docs/lets-ask-chatgpt-how-to-learn-html-css-and-javascript-in-45-/README.md)
 +   [进阶 JavaScript：TypeScript 实用指南](docs/level-up-your-javascript-a-practical-guide-to-typescript/README.md)
 +   [Linux 调试与性能调优：技巧与技术 (Prentice Hall 开源软件开发系列)](docs/linuxr-debugging-and-performance-tuning-tips-and-techniques-/README.md)
++   [Log4j 完整手册](docs/log4j-the-complete-manual-xz/README.md)
 +   [Javascript 学习手册](docs/lrn-js/README.md)
 +   [Rust 学习手册 🚧](docs/lrn-rust/README.md)
 +   [编程逻辑：使用 Javascript 和 HTML 创建你的第一个程序](docs/lógica-de-programação-crie-seus-primeiros-programas-usando-j/README.md)

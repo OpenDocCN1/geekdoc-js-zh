@@ -1,0 +1,320 @@
+- - '#'
+  - Log4j 完整手册
+- - '#'
+  - 前言
+- - '#'
+  - 本书内容
+- - '#'
+  - 本书使用的惯例
+- - '#'
+  - 意见与问题
+- - '#'
+  - 致谢
+- - '##'
+  - 安装
+- - '##'
+  - 运行示例
+- - '###'
+  - 第一步
+- - '##'
+  - 使用 log4j 的配方
+- - '##'
+  - 第 2 章：LOG4J 架构
+- - '##'
+  - Logger 层次结构
+- - '##'
+  - 命名层级规则
+- - '##'
+  - Logger 的创建与检索
+- - '##'
+  - 级别（Levels）
+- - '###'
+  - 日志器的有效级别
+- - '###'
+  - 日志级过滤器
+- - '###'
+  - 层次级过滤器（Hierarchy-wide Filter）
+- - '###'
+  - 层次级阈值过滤器
+- - '##'
+  - 渲染器 (Appenders)
+- - '##'
+  - Appender Additivity (Appender Additivity)
+- - '##'
+  - Appender 累加规则 (Append Additivity Rule)
+- - '##'
+  - 布局 (Layouts)
+- - '##'
+  - 对象渲染 (Object Rendering)
+- - '##'
+  - 深入内部 (A Peek under the Hood)
+- - '###'
+  - 1. 层次结构阈值检查
+- - '###'
+  - 2. 应用日志器级别过滤器 (Logger-Level filter)
+- - '###'
+  - 3. 创建 LoggingEvent 对象
+- - '###'
+  - 4. 调用 Appender (输出器)
+- - '###'
+  - 5. 格式化 LoggingEvent
+- - '###'
+  - 6. 发送 LoggingEvent
+- - '##'
+  - LoggingEvent 类
+- - '##'
+  - 性能
+- - '##'
+  - 第 3 章：配置脚本
+- - '###'
+  - 2. 开启日志时决定是否记录的性能。
+- - '###'
+  - 3. 实际记录（格式化并写入输出设备）。
+- - '##'
+  - 使用 BasicConfigurator 的简单方法
+- - '##'
+  - 使用 PropertyConfigurator 实现相同功能
+- - '##'
+  - 将根 logger 级别设置为 DEBUG 并添加一个 appender
+- - '###'
+  - Appender 被设置为一个 ConsoleAppender
+- - '###'
+  - Appender 使用 PatternLayout
+- - '##'
+  - Properties 格式配置文件的语法
+- - '##'
+  - 设置全局范围阈值
+- - '##'
+  - Appender 配置
+- - '##'
+  - 配置日志器 (Loggers)
+- - '##'
+  - 对象渲染器 (ObjectRenderers)
+- - '##'
+  - 变量替换
+- - '##'
+  - 设置全层级阈值
+- - '##'
+  - 无论级别如何，只记录 WARN
+- - '##'
+  - 设置日志器的级别
+- - '###'
+  - 仅在 "chapter3" 包中打印优先级为 WARN 或以上的消息
+- - '###'
+  - 设置日志器级别
+- - '###'
+  - 允许 "chapter3" 包中 WARN 或以上级别的请求，但 "chapter3.Foo" 除外，那里允许 DEBUG 或以上。
+- - '##'
+  - 我们将根日志器的级别设置为 OFF。
+- - '##'
+  - 将 chapter3 日志器的级别设置为 DEBUG。
+- - '##'
+  - 设置渲染器（Appender）的阈值
+- - '###'
+  - 设置渲染器的阈值为 INFO
+- - '##'
+  - 多个渲染器（Appenders）
+- - '##'
+  - 用于输出调用者文件名和行号的模式
+- - '##'
+  - 保留备份文件
+- - '###'
+  - Console appender 也被附加到 "chapter3" logger 上。
+- - '###'
+  - 下面的指令通过留空级别值来不设置 "chapter3" logger 的级别。
+- - '##'
+  - XML 格式的配置文件
+- - '##'
+  - 设置 Appender 的阈值 (XML)
+- - '##'
+  - 多个 Appender (XML)
+- - '##'
+  - 重新加载配置文件
+- - '##'
+  - 重载配置文件
+- - '##'
+  - 使用 log4j 的嵌入库
+- - '##'
+  - 默认初始化
+- - '##'
+  - 默认 log4j 初始化程序
+- - '##'
+  - Web 容器中的 Log4j 初始化
+- - '##'
+  - Tomcat 下的默认初始化
+- - '##'
+  - 相对路径配置文件 (PropertyConfigurator)
+- - '##'
+  - 相对路径配置文件 (DOMConfigurator)
+- - '##'
+  - 绝对路径配置文件
+- - '##'
+  - 初始化 servlet
+- - '###'
+  - IBM Websphere
+- - '###'
+  - Appenders
+- - '###'
+  - AppenderSkeleton
+- - '##'
+  - 第 4 章：APPENDERS
+- - '##'
+  - WriterAppender
+- - '##'
+  - ImmediateFlush 布尔值
+- - '##'
+  - Threshold 阈值级别
+- - '##'
+  - ConsoleAppender
+- - '##'
+  - FileAppender
+- - '##'
+  - RollingAppender
+- - '##'
+  - ROLLINGFileAppender
+- - '##'
+  - DailyRollingFileender
+- - '##'
+  - SocketAppender
+- - '##'
+  - JMSAppender
+- - '##'
+  - 使用 JBoss 设置 JMSAppender（已在 3.0.1 版本通过测试）
+- - '##'
+  - 关于 JMSAppender 的说明
+- - '##'
+  - AsyncAppender
+- - '##'
+  - 错误处理
+- - '##'
+  - 编写你自己的 Appender
+- - '##'
+  - 布局 (Layout)
+- - '##'
+  - 编写你自己的 Layout
+- - '##'
+  - PatternLayout
+- - '##'
+  - 第 5 章：布局 (LAYOUT)
+- - '##'
+  - XMLLayout
+- - '##'
+  - HTMLLayout
+- - '##'
+  - 自定义过滤器
+- - '##'
+  - 第 6 章：自定义过滤器
+- - '##'
+  - 编写你的过滤器
+- - '##'
+  - 第 7 章：诊断上下文 (Diagnostic Contexts)
+- - '##'
+  - 映射诊断上下文 (Mapped Diagnostic Contexts)
+- - '##'
+  - 映射的诊断上下文
+- - '##'
+  - 扩展 log4j
+- - '##'
+  - 编写你自己的级别
+- - '##'
+  - 第 8 章：扩展 log4j
+- - '##'
+  - 编写你自己的 Logger 类
+- - '##'
+  - 封装 Logger 类
+- - '##'
+  - 包装 LOGGER 类
+- - '##'
+  - 关于 Jakarta commons-logging 包的注释
+- - '##'
+  - 更广泛的背景
+- - '###'
+  - “日志分离”问题
+- - '###'
+  - 第一种解决方案
+- - '###'
+  - 第二种解决方案
+- - '###'
+  - 第三种种解决方案
+- - '##'
+  - 变更
+- - '##'
+  - 在 log4j 版本 1.1.x 和 1.2
+- - '##'
+  - Logger 替换 Category
+- - '##'
+  - 与 Category 子类的兼容性问题
+- - '##'
+  - Level 替换 Priority
+- - '##'
+  - LogManager、RepositorySelector 和 LoggerRepository 类
+- - '##'
+  - Hierarchy 级别的启用/禁用
+- - '##'
+  - 级别取代了优先级
+- - '##'
+  - Q 10. log4j 与 JDK 1.4 引入的 java.util.logging API 有何不同？
+- - '##'
+  - Q 10.6 java.util.logging API 是否威胁 log4j 的未来？
+- - '##'
+  - Q 10.7 为什么将 Category 类重命名为 Logger，将 Priority 类重命名为 Level？
+- - '##'
+  - Q 10.8 如何按级别记录不同的文件？
+- - '##'
+  - Q 10.9 log4j 不同版本之间的二进制兼容性有什么保证（如果有的话）？
+- - '##'
+  - Q 10.10 WombatAppender 有哪些配置选项？
+- - '##'
+  - Q 10.11 经常提到强烈建议不要子类 Logger 类。这是为什么？
+- - '##'
+  - Q 10.12 log4j 的正确大小写格式是什么？
+- - '##'
+  - Q 10.13 到底为什么封面上会有一只鸟？
+- - '##'
+  - 第 11 章：故障排除指南
+- - '###'
+  - T 11-1 log4j 提示我要正确初始化。
+- - '###'
+  - T 11-2 日志输出中的重复。
+- - '###'
+  - T 11-3 在应用程序中引入日志语句后发生死锁。
+- - '###'
+  - T 11-4 调用者位置信息被打印为字符 "%q"。
+- - '###'
+  - T 11-5 log4j:ERROR 对象 "XYZAppender" 无法赋值给 "org.apache.log4j.Appender"
+- - '###'
+  - T 11-6 实例化时的 ClassException。
+- - '###'
+  - T 11-7 log4j:WARN 无此类属性
+- - '###'
+  - 'T 11-8 Exception: connection refused'
+- - '##'
+  - 术语表
+- - '##'
+  - 自定义级别
+- - '##'
+  - 位置信息
+- - '##'
+  - Logger 打印方法
+- - '##'
+  - java.util.logging API (JSR47)
+- - '##'
+  - Java 系统属性
+- - '##'
+  - 索引
+- - '###'
+  - A
+- - '###'
+  - N
+- - '###'
+  - O
+- - '###'
+  - E
+- - '###'
+  - H
+- - '###'
+  - R
+- - '###'
+  - L
+- - '###'
+  - X
