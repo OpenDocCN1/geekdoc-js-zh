@@ -15705,7 +15705,7 @@ export class Mediator {
   private _sideNavState = new MainPanelWithSideNav();
   private _loginState = new LoginPanel();
 ```
-```
+
 
 在这里，我们创建了一个名为 `_loginState` 的新私有成员变量来存放 `LoginPanel` 状态类的实例，正如我们处理其他状态所做的那样。
 
