@@ -950,6 +950,7 @@
 +   [Marijn Haverbeke - Eloquent JavaScript：现代编程入门指南，第3版](docs/marijn-haverbeke---eloquent-javascript-a-modern-introduction/README.md)
 +   [Javascript 高级指南](docs/master-javascript/README.md)
 +   [一日精通 JavaScript：初学者综合指南](docs/master-javascript-in-a-day-a-comprehensive-guide-for-beginne/README.md)
++   [快速掌握现代 JavaScript：最完整的初学者指南：深度解析奇特性（即使你是编程新手，这本书也将引导你一步步攻克 JavaScript！）](docs/master-modern-javascript-fast-the-most-complete-beginners-gu/README.md)
 +   [Ajax、JavaScript 和 PHP 一通精通指南](docs/mastering-ajax-javascript-and-php-all-in-one/README.md)
 +   [JavaScript 高级指南](docs/mastering-javascript/README.md)
 +   [精通 JavaScript：完整编程指南，包含 jQuery、AJAX、Web 设计、脚本编写和移动应用开发](docs/mastering-javascript-a-complete-programming-guide-including-/README.md)

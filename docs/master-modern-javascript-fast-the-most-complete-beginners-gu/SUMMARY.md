@@ -1,0 +1,2 @@
++   [快速掌握现代 JavaScript：最完整的初学者指南：深度解析奇特性（即使你是编程新手，这本书也将引导你一步步攻克 JavaScript！）](README.md)
++   [快速掌握现代 JavaScript：最完整的初学者指南：深度解析奇特性（即使你是编程新手，这本书也将引导你一步步攻克 JavaScript！）](master-modern-javascript-fast-the-most-complete-beginners-gu.md)
