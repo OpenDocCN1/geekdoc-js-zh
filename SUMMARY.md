@@ -952,6 +952,7 @@
 +   [一日精通 JavaScript：初学者综合指南](docs/master-javascript-in-a-day-a-comprehensive-guide-for-beginne/README.md)
 +   [快速掌握现代 JavaScript：最完整的初学者指南：深度解析奇特性（即使你是编程新手，这本书也将引导你一步步攻克 JavaScript！）](docs/master-modern-javascript-fast-the-most-complete-beginners-gu/README.md)
 +   [使用 HTML、CSS、JavaScript 和 jQuery 精通 Web 设计：创建惊艳的交互式网站](docs/master-web-design-with-html-css-javascript-and-jquery-create/README.md)
++   [JavaScript 3D 游戏开发高级指南](docs/mastering-3d-game-development-with-javascript/README.md)
 +   [Ajax、JavaScript 和 PHP 一通精通指南](docs/mastering-ajax-javascript-and-php-all-in-one/README.md)
 +   [JavaScript 高级指南](docs/mastering-javascript/README.md)
 +   [精通 JavaScript：完整编程指南，包含 jQuery、AJAX、Web 设计、脚本编写和移动应用开发](docs/mastering-javascript-a-complete-programming-guide-including-/README.md)
