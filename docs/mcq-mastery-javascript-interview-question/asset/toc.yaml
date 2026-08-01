@@ -1,0 +1,316 @@
+- - '#'
+  - MCQ 精通：JavaScript 面试题
+- - '##'
+  - 1. 在 JavaScript 中声明变量的正确方法是什么？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 2. 你如何在 JavaScript 中书写注释？
+- - '##'
+  - 3. JavaScript 中 addEventListener 方法的目的是什么？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 4. 你如何在 JavaScript 中检查变量的类型？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 5. JavaScript 中的术语“hoisting”（变量提升）指的是什么？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 6. 你如何使用 JavaScript 防止表单提交？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 7. JavaScript 中 querySelector 方法的目的是什么？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 8. JavaScript 中使用哪个运算符进行严格相等比较？
+- - '##'
+  - 9. JavaScript 中 setTimeout 函数的目的是什么？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 10. 你如何在 JavaScript 中检查一个变量是否为数组？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 11. JavaScript 中的 this 关键字指代什么？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 12. 你如何在 JavaScript 中将字符串转换为小写？
+- - '##'
+  - 13. JavaScript 中 JSON.parse 方法的目的是什么？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 14. 你如何在 JavaScript 中从数组中删除元素？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 15. JavaScript 中 localStorage 对象的目的是什么？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 16. 你如何在 JavaScript 中检查对象是否存在某个属性？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 17. JavaScript 中 map 函数的目的是什么？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 18. 你如何在 JavaScript 中处理错误？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 19. JavaScript 中 fetch 函数的目的是什么？
+- - '###'
+  - 正确答案：
+- - '###'
+  - 20. 正确答案：
+- - '##'
+  - 21. JavaScript 中 addEventListener 方法的目的是什么？
+- - '##'
+  - 22. 在 JavaScript 中如何声明一个函数？
+- - '##'
+  - 23. JavaScript 中 splice 方法的目的是什么？
+- - '###'
+  - 正确答案：
+- - '###'
+  - 正确答案：
+- - '##'
+  - 26. 在 JavaScript 中如何写一个 for 循环？
+- - '##'
+  - 27. JavaScript 中 innerHTML 属性的目的是什么？
+- - '##'
+  - 28. 在 JavaScript 中如何通过从现有数组提取元素子集创建一个新数组？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 29. JavaScript 中的术语“closure”（闭包）指的是什么？
+- - '##'
+  - 31. JavaScript 中 Object.keys 方法的目的是什么？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 32. 在 JavaScript 中如何将字符串转换为数字？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 33. JavaScript 中 filter 方法的目的是什么？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 34. 在 JavaScript 中如何检查一个数字是否为整数？
+- - '##'
+  - 35. JavaScript 中 bind 方法的目的是什么？
+- - '##'
+  - 36. JavaScript 中 async 和 await 关键字的目的是什么？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 37. 在 JavaScript 中如何向数组末尾添加一个元素？
+- - '##'
+  - 38. JavaScript 中 split 方法的目的是什么？
+- - '##'
+  - 39. 在 JavaScript 中将日期转换为特定格式的字符串？
+- - '##'
+  - 40. JavaScript 中 `Object.create` 方法的目的是？
+- - '##'
+  - 41. 在 JavaScript 中删除数组的最后一个元素？
+- - '##'
+  - 42. JavaScript 中 `localStorage` `sessionStorage` 的目的是？
+- - '##'
+  - 43. 在 JavaScript 中如何检查对象是否具有特定属性？
+- - '##'
+  - 44. JavaScript 中 `reduce` 方法的目的是？
+- - '##'
+  - 45. 在 JavaScript 中如何比较两个对象的等相等性？
+- - '##'
+  - 46. JavaScript 中 `Date` 对象的目的是？
+- - '##'
+  - 47. 在 JavaScript 中如何检查一个值是否为 NaN？
+- - '##'
+  - 48. JavaScript 中 `fetch` 函数的目的是？
+- - '##'
+  - 49. 在 JavaScript 中如何将数字转换为字符串？
+- - '##'
+  - 50. JavaScript 中 `Promise` 对象的目的是？
+- - '##'
+  - 51. JavaScript 中 `addEventListener` 方法的目的是？
+- - '##'
+  - 52. 在 JavaScript 中如何声明一个类？
+- - '##'
+  - 53. JavaScript 中的“严格模式”（strict mode）是什么意思？
+- - '##'
+  - 58. 如何在 JavaScript 中移除数组中的所有元素？
+- - '##'
+  - 59. JavaScript 中 Array.isArray 方法的作用是什么？
+- - '##'
+  - 60. 如何在 JavaScript 中将字符串转换为字符数组？
+- - '##'
+  - 61. JavaScript 中 arguments 对象的作用是什么？
+- - '##'
+  - 62. 如何在 JavaScript 中检查字符串是否包含特定的子字符串？
+- - '##'
+  - 63. JavaScript 中 localStorage 和 sessionStorage 的作用是什么？
+- - '##'
+  - 64. 如何在 JavaScript 中遍历对象的属性？
+- - '##'
+  - 65. JavaScript 中 JSON.stringify 方法的作用是什么？
+- - '##'
+  - 66. 如何在 JavaScript 中将数字保留到特定的小数位数？
+- - '##'
+  - 67. JavaScript 中 isNaN 函数的作用是什么？
+- - '##'
+  - 68. 如何在 JavaScript 中将字符串转换为大写？
+- - '##'
+  - 69. JavaScript 中 forEach 方法的作用是什么？
+- - '##'
+  - 70. 如何在 JavaScript 中移除数组的第一个元素？
+- - '##'
+  - 71. JavaScript 中 setTimeout 函数的作用是什么？
+- - '##'
+  - 72. 如何在 JavaScript 中检查一个变量是否为函数？
+- - '##'
+  - 73. JavaScript 中 splice 方法的作用是什么？
+- - '##'
+  - 74. 如何在 JavaScript 中声明变量？
+- - '##'
+  - 75. JavaScript 中 map 函数的作用是什么？
+- - '##'
+  - 76. 如何在 JavaScript 中将数字转换为字符串？
+- - '##'
+  - 77. JavaScript 中 filter 方法的作用是什么？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 78. 在 JavaScript 中如何检查一个值是否为数组？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 79. JavaScript 中 Object.keys 方法的作用是什么？
+- - '##'
+  - 80. 在 JavaScript 中如何声明常量变量？
+- - '##'
+  - 81. JavaScript 中 addEventListener 方法的作用是什么？
+- - '##'
+  - 82. 在 JavaScript 中如何声明一个函数？
+- - '##'
+  - 83. JavaScript 中 splice 方法的作用是什么？
+- - '##'
+  - 84. 如何在 JavaScript 中处理错误？
+- - '##'
+  - 85. JavaScript 中 fetch 函数的作用是什么？
+- - '##'
+  - 86. 如何在 JavaScript 中将数字四舍五入到最近的整数？
+- - '##'
+  - 87. JavaScript 中 addEventListener 方法的作用是什么？
+- - '##'
+  - 88. 在 JavaScript 中如何声明一个函数？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 89. JavaScript 中 splice 方法的作用是什么？
+- - '##'
+  - 90. 如何在 JavaScript 中处理错误？
+- - '##'
+  - 91. JavaScript 中 localStorage 和 sessionStorage 的作用是什么？
+- - '##'
+  - 92. 在 JavaScript 中如何检查对象是否具有特定属性？
+- - '##'
+  - 93. JavaScript 中 reduce 方法的作用是什么？
+- - '##'
+  - 95. JavaScript 中 bind 方法的作用是什么？
+- - '##'
+  - 96. JavaScript 中 async 和 await 关键字的作用是什么？
+- - '##'
+  - 97. 在 JavaScript 中如何向数组末尾添加元素？
+- - '##'
+  - 98. JavaScript 中 split 方法的作用是什么？
+- - '##'
+  - 99. 如何在 JavaScript 中将日期转换为特定格式的字符串？
+- - '##'
+  - 100. JavaScript 中 Object.create 方法的作用是什么？
+- - '##'
+  - 101. 如何在 JavaScript 中删除数组的最后一个元素？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 102. JavaScript 中 localStorage 和 sessionStorage 的作用是什么？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 103. 如何在 JavaScript 中检查对象是否具有特定属性？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 104. JavaScript 中 reduce 方法的作用是什么？
+- - '##'
+  - 105. 在 JavaScript 中将日期转换为特定格式的字符串？
+- - '##'
+  - 106. JavaScript 中 Object.create 方法的作用是什么？
+- - '##'
+  - 107. 在 JavaScript 中删除数组的最后一个元素？
+- - '##'
+  - 108. JavaScript 中 localStorage 和 sessionStorage 的作用是什么？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 109. 在 JavaScript 中如何检查对象是否具有特定属性？
+- - '##'
+  - 110. JavaScript 中 reduce 方法的作用是什么？
+- - '##'
+  - 111. JavaScript 中 split 方法的作用是什么？
+- - '##'
+  - 112. 如何在 JavaScript 中检查一个变量是否为函数？
+- - '##'
+  - 113. JavaScript 中 setTimeout的作用是什么？
+- - '##'
+  - 114. JavaScript 中 fetch 函数的作用是什么？
+- - '##'
+  - 115. JavaScript 中 map 函数的作用是什么？
+- - '##'
+  - 116. 如何在 JavaScript 中检查字符串是否包含特定的子字符串？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 117. JavaScript 中 filter 方法的作用是什么？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 118. 如何在 JavaScript 中处理错误？
+- - '##'
+  - 119. 在 JavaScript 中将数字转换为字符串？
+- - '##'
+  - 120. 在 JavaScript 中如何声明变量？
+- - '##'
+  - 121. JavaScript 中 addEventListener 方法的作用是什么？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 122. 在 JavaScript 中如何声明一个函数？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 123. JavaScript 中 map 方法的作用什么？
+- - '###'
+  - 正确答案：
+- - '##'
+  - 124. 如何在 JavaScript 中处理错误？
+- - '##'
+  - 125. JavaScript 中 async 关键字的作用是什么？
+- - '##'
+  - 126. 在 JavaScript 中如何向数组末尾添加元素？
+- - '##'
+  - 127. JavaScript 中 split 方法的作用是什么？
+- - '##'
+  - 128. 如何在 JavaScript 中将字符串转换为字符数组？
+- - '##'
+  - 129. JavaScript 中 Object.keys 方法的作用是什么？
+- - '##'
+  - 130. 在 JavaScript 中如何将数字转换为字符串？

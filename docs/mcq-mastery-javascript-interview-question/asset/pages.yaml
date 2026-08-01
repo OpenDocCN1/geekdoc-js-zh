@@ -1,0 +1,5509 @@
+- img_proc: true
+  md: '![](img/e1cfd6d2532add9a9f2317a3aec0d300_0_0.png)'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: '# # JavaScript MCQ Questions
+
+
+    ![](img/e1cfd6d2532add9a9f2317a3aec0d300_1_0.png)
+
+
+    Master JavaScript with Engaging MCQs at TutorialNexa.in! �
+
+
+    Unlock the secrets of JavaScript with our comprehensive set of Multiple Choice
+    Questions (MCQs) at [www.tutorialnexa.in](http://www.tutorialnexa.in) � Whether
+    you''re a beginner or an experienced developer, our meticulously crafted questions
+    cover a wide range of JavaScript concepts, helping you test and enhance your knowledge.
+
+
+    � Explore key topics like variable declarations, array manipulation, asynchronous
+    programming, and more! Our MCQs are designed to cater to all skill levels, making
+    learning JavaScript both fun and effective.'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: 'Gain a competitive edge in your programming journey by practicing with our
+    JavaScript MCQs. Elevate your skills, boost your confidence, and stay ahead in
+    the ever-evolving world of web development.
+
+
+    Join TutorialNexa.in today and immerse yourself in a world of JavaScript mastery.
+    Let''s code, learn, and succeed together!
+
+
+    #JavaScriptMCQs #TutorialNexa #JavaScriptQuiz #Web-Development #ProgrammingQuiz
+    #LearnJavaScript #CodingSkills #JavaScriptBasics #OnlineLearning #TechEducation
+
+
+    # 1. What is the correct way to declare a variable in JavaScript?
+
+
+    a. var x = 5;
+
+
+    b. let x = 5;
+
+
+    c. const x = 5;
+
+
+    d. all of the above
+
+
+    # Correct Answer:'
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: 'b. let x = 5;
+
+
+    **Explanation:** Variables can be declared using var, let, or const in JavaScript,
+    but the recommended way is to use let for variable declarations due to its block
+    scope.
+
+
+    # 2. How do you write a comment in JavaScript?
+
+
+    ```
+
+    php
+
+    ```
+
+
+    +   a. //This is a comment
+
+
+    +   b. <!--This is a comment-->-
+
+
+    +   c. /*This is a comment*/
+
+
+    +   d. #This is a comment
+
+
+    **Correct Answer:**
+
+
+    +   a. //This is a comment
+
+
+    **Explanation:** In JavaScript, single-line comments are written with // , and
+    multi-line comments are written with /* */.
+
+
+    # 3. What is the purpose of the addEventListener method in JavaScript?'
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: '+   a. To create a new element
+
+
+    +   b. To append an element to the DOM
+
+
+    +   c. To handle events like clicks or keypresses
+
+
+    +   d. To define a function
+
+
+    # Correct Answer:
+
+
+    +   c. To handle events like clicks or keypresses
+
+
+    **Explanation:** addEventListener is used to listen for specific events on HTML
+    elements and execute a function when that event occurs.
+
+
+    +   4. How can you check the type of a variable in JavaScript?
+
+
+    +   a. typeOf x;
+
+
+    +   b. typeof(x);
+
+
+    +   c. x.typeof();
+
+
+    +   d. typeof x;
+
+
+    # Correct Answer:
+
+
+    +   d. typeof x;'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: 'Explanation: The typeof operator is used to get the data type of a variable
+    in JavaScript.
+
+
+    5. What does the term "hoisting" refer to in JavaScript?
+
+
+    +   a. Elevating a variable declaration to the top of its scope
+
+
+    +   b. Creating a loop
+
+
+    +   c. Moving an element on the web page
+
+
+    +   d. Declaring a function
+
+
+    # Correct Answer:
+
+
+    +   a. Elevating a variable declaration to the top of its scope
+
+
+    Explanation: Hoisting in JavaScript means that variable and function declarations
+    are moved to the top of their containing scope during the compilation phase.
+
+
+    6. How can you prevent a form from submitting using JavaScript?'
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: 'a. event.preventDefault();
+
+
+    b. event.stopDefault();
+
+
+    c. event.preventDefault();
+
+
+    d. form.preventSubmission();
+
+
+    # Correct Answer:
+
+
+    c. event.preventDefault();
+
+
+    > **Explanation:** The preventDefault method is used to prevent the default action
+    of an event, such as form submission.
+
+
+    7. What is the purpose of the querySelector method in JavaScript?
+
+
+    a. To select the first element that matches a specified selector
+
+
+    b. To change the document title
+
+
+    c. To create a new HTML element
+
+
+    d. To define a function'
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: 'Correct Answer:
+
+
+    a. To select the first element that matches a specified selector querySelector
+    is used to select the first
+
+
+    Explanation: querySelector is used to select the first HTML element that matches
+    a specified selector.
+
+
+    8. Which operator is used for strict equality in JavaScript?
+
+
+    a. ==
+
+
+    b. ===
+
+
+    c. =
+
+
+    d. !==
+
+
+    Correct Answer:
+
+
+    b. ===
+
+
+    Explanation: The === operator checks both value and type for equality in JavaScript.
+
+
+    ![](img/e1cfd6d2532add9a9f2317a3aec0d300_7_0.png)'
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: '# 9. What is the purpose of the setTimeout function in JavaScript?
+
+
+    +   a. To create a timer that executes a function after a specified time
+
+
+    +   b. To set the style of an HTML element
+
+
+    +   c. To add a delay to a loop
+
+
+    +   d. To define a recursive function
+
+
+    Correct Answer:
+
+
+    +   a. To create a timer that executes a function after a specified time
+
+
+    **Explanation:** setTimeout is used to schedule the execution of a function after
+    a specified delay.
+
+
+    # 10. How do you check if a variable is an array in JavaScript?
+
+
+    s
+
+
+    +   a. isArray(x);
+
+
+    +   b. x.isArray();'
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: 'c. ArrayCheck(x);
+
+
+    d. typeof Array(x);
+
+
+    # Correct Answer:
+
+
+    a. isArray(x);
+
+
+    Explanation: The isArray method is used to check if a variable is an array in
+    JavaScript.
+
+
+    # 11. What does the this keyword refer to in JavaScript?
+
+
+    a. The current date and time
+
+
+    b. The global object
+
+
+    c. The current function''s scope
+
+
+    d. The calling object
+
+
+    # Correct Answer:
+
+
+    d. The calling object
+
+
+    Explanation: In JavaScript, the this keyword refers to the object that is calling
+    the function.'
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: '# 12. How do you convert a string to lowercase innJavascript?
+
+
+    python
+
+
+    +   a. str.toLowerCase();
+
+
+    +   b. str.toLowerCase();
+
+
+    +   c. str.toLowerCase();
+
+
+    +   d. str.convertLowerCase();
+
+
+    Correct Answer:
+
+
+    +   c. str.toLowerCase();
+
+
+    Explanation: The toLowerCase method is used to convert a string to lowercase in
+    JavaScript.
+
+
+    # 13. What is the purpose of the JSON.parse method in JavaScript?
+
+
+    +   a. To parse HTML documents
+
+
+    +   b. To convert a JSON string to a JavaScript object
+
+
+    +   c. To create a JSON string'
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: 'd. To validate JSON syntax
+
+
+    # Correct Answer:
+
+
+    b. To convert a JSON string to a JavaScript object
+
+
+    Explanation: JSON.parse is used to parse a JSON string and convert it into a JavaScript
+    object.
+
+
+    # 14. How do you remove an element from an array in JavaScript?
+
+
+    c
+
+
+    a. array.remove(index);
+
+
+    b. array.splice(index, 1);
+
+
+    c. array.delete(index);
+
+
+    d. array.pop(index);
+
+
+    # Correct Answer:
+
+
+    b. array.splice(index, 1);
+
+
+    Explanation: The splice method is used to remove elements from an array in JavaScript.
+
+
+    # 15. What is the purpose of the localStorage object in JavaScript?'
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: '+   a. To store session-specific data
+
+
+    b. To store data with no expiration time
+
+
+    c. To store temporary data in a session
+
+
+    d. To store data on the server
+
+
+    **Correct Answer:**
+
+    b. To store data with no expiration time
+
+
+    **Explanation:** The localStorage object is used to store key/value pairs with
+    no expiration time in web browsers.
+
+
+    # 16. How can you check if a property exists in an object in JavaScript?
+
+
+    +   a. object.propertyExists(prop);
+
+
+    b. object.checkProperty(prop);
+
+
+    c. prop in object;'
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: '```
+
+    d. object.propertyCheck(prop);
+
+    ```
+
+
+    **Correct Answer:**
+
+
+    c. prop in object;
+
+
+    **Explanation:** The in operator is used to check if a property exists in an object
+    in JavaScript.
+
+
+    # **17. What is the purpose of the map function in JavaScript?
+
+
+    a. To create a new array with the results of calling a provided function on every
+    element
+
+
+    b. To rearrange elements in an array
+
+
+    c. To check if every element in an array meets a specified condition
+
+
+    d. To concatenate two arrays
+
+
+    **Correct Answer:**
+
+
+    a. To create a new array with the results of calling a provided function on every
+    element'
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: 'Explanation: The map function is used to apply a function to every element
+    in an array and create a new array with the results.
+
+
+    # 18. How do you handle errors in JavaScript?
+
+
+    +   a. try/throw/catch
+
+
+    +   b. catch/throw/finally
+
+
+    +   c. try/catch/finally
+
+
+    +   d. throw/try/try/catch
+
+
+    # Correct Answer:
+
+
+    +   c. try/catch/finally
+
+
+    Explanation: Error handling in JavaScript is typically done using the try, catch,
+    and finally blocks.
+
+
+    # 19. What is the purpose of the fetch function in JavaScript?
+
+
+    +   a. To fetch data from a local file
+
+
+    +   b. To fetch data from a server using AJAX'
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: 'c. To fetch data from a database
+
+
+    d. To fetch data from the DOM
+
+
+    # Correct Answer:
+
+
+    b. To fetch data from a server using AJAX
+
+
+    Explanation: The fetch function is used to make network requests and retrieve
+    data from a server in JavaScript.
+
+
+    20. How can you round a number to the nearest integer in JavaScript?
+
+
+    s
+
+
+    a. round(x);
+
+
+    b. Math.round(x);
+
+
+    c. floor(x);
+
+
+    d. ceil(x);
+
+
+    # Correct Answer:
+
+
+    b. Math.round(x);'
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: 'Explanation: The Math.round method is used to round a number to the nearest
+    integer in JavaScript.
+
+
+    Feel free to ask if you have more questions or if there''s anything else I can
+    assist you with!
+
+
+    # 21. What is the purpose of the addEventListener method in JavaScript?
+
+
+    +   a. To attach an event handler to an element
+
+
+    +   b. To create a new HTML element
+
+
+    +   c. To change the styling of an element
+
+
+    +   d. To define a function
+
+
+    Correct Answer:
+
+
+    +   a. To attach an event handler to an element
+
+
+    Explanation: The addEventListener method is used to attach an event handler function
+    to an HTML element.'
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: '# 22. How do you declare a function in JavaScript?
+
+
+    javascript
+
+
+    +   a. function myFunction() {}
+
+
+    +   b. var myFunction = function() {}
+
+
+    +   c. def myFunction() {}
+
+
+    +   d. myFunction: function() {}
+
+
+    Correct Answer:
+
+
+    +   a. function myFunction() {}
+
+
+    Explanation: The function keyword is used to declare a function in JavaScript.
+
+
+    # 23. What is the purpose of the splice method in JavaScript?
+
+
+    +   a. To join two arrays
+
+
+    +   b. To add elements to the end of an array
+
+
+    +   c. To remove elements from an array
+
+
+    +   d. To reverse the order of elements in an array'
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: '# Correct Answer:
+
+
+    c. To remove elements from an array
+
+
+    **Explanation:** The splice method in JavaScript is used to change the contents
+    of an array by removing or replacing existing elements.
+
+
+    24. How do you declare a constant variable in JavaScript?
+
+
+    java
+
+
+    +   a. const x = 10;
+
+
+    +   b. let x = 10;
+
+
+    +   c. var x = 10;
+
+
+    +   d. constant x = 10;
+
+
+    # Correct Answer:
+
+
+    +   a. const x = 10;
+
+
+    **Explanation:** The const keyword is used to declare a constant variable in JavaScript.
+
+
+    25. What is the purpose of the queryquerySelectorAll method in JavaScript?'
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: '+   a. To select the first element that matches a selector
+
+
+    +   b. To select all elements that match a selector
+
+
+    +   c. To query the DOM for all elements
+
+
+    +   d. To retrieve elements by their tag name
+
+
+    **Correct Answer:**
+
+
+    +   b. To select all elements that match a selector
+
+
+    **Explanation:** The queryquerySelectorAll method is used to select all elements
+    that match a specified selector.
+
+
+    # 26. How do you write a for loop in JavaScript?
+
+
+    +   a. for (i = 0; i < 5; i++))
+
+
+    +   b. loop (i = 0; i < 5; i++))
+
+
+    +   c. for (i < 5) {}",
+
+
+    +   d. repeat (i = 0; i < 5; i++))
+
+
+    **Correct Answer:**'
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: '```
+
+    a. for (i = 0; i < 5; i++) {
+
+    ```
+
+
+    Explanation: The for loop in JavaScript has three parts: initialization, condition,
+    and iteration expression.
+
+
+    # 27. What is the purpose of the innerHTML property in JavaScript?
+
+
+    +   a. To change the HTML content of an element
+
+    b. To retrieve the value of an input field
+
+    c. To check if an element has a specific class
+
+    d. To add a new HTML element to the page
+
+
+    Correct Answer:
+
+    a. To change the HTML content of an element",
+
+
+    Explanation: The innerHTML property is used to set or get the HTML content of
+    an element.
+
+
+    # 28. How can you create a new array by extracting a subset of elements from an
+    existing array in JavaScript?'
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: 'a. array.slice(start, end);
+
+
+    b. array.subset(start, end);
+
+
+    c. array.extract(start, end);
+
+
+    d. array.createSubset(start, end);
+
+
+    # Correct Answer:
+
+
+    a. array.slice(start, end);
+
+
+    Explanation: The slice method is used to extract a subset of elements from an
+    existing array in JavaScript.
+
+
+    If you have more questions or if there''s anything else I can help you with, feel
+    free to ask!
+
+
+    ![](img/e1cfd6d2532add9a9f2317a3aec0d300_21_0.png)
+
+
+    # 29. What does the term "closure" refer to in JavaScript?
+
+
+    a. A way to close a web page
+
+
+    b. A function with access to its own scope, plus the outer function''s scope'
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: 'c. Closing a loop
+
+
+    d. Terminating a script execution
+
+
+    Correct Answer:
+
+
+    b. A function with access to its own scope, plus the outer function''s scope
+
+
+    Explanation: A closure in JavaScript is a function that has access to its own
+    scope, as well as the outer function''s scope, even after the outer function has
+    finished executing.
+
+
+    30. How do you check if a variable is undefined in JavaScript?
+
+
+    javascript
+
+
+    a. if (x === undefined)
+
+
+    b. if (isUndefined(x))
+
+
+    c. if (x == null)
+
+
+    d. if (typeof x === "undefined")
+
+
+    Correct Answer:
+
+
+    d. if (typeof x === "undefined")'
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: '**Explanation:** Checking the type using typeof is a common way to determine
+    if a variable is undefined in JavaScript.
+
+
+    # 31. What is the purpose of the Object.keys method in JavaScript?
+
+
+    +   a. To get an array of an object''s property names
+
+
+    +   b. To create a new object
+
+
+    +   c. To remove keys from an object
+
+
+    +   d. To check if an object has a specific key
+
+
+    # **Correct Answer:**
+
+
+    +   a. To get an array of an object''s property names
+
+
+    **Explanation:** Object.keys is used to return an array of an object''s own enumerable
+    property names.
+
+
+    # 32. How do you convert a string to a number in JavaScript?
+
+
+    s
+
+
+    +   a. Number(str);'
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: '```
+
+    b. str.toNumber();
+
+    ```
+
+
+    ```
+
+    c. parseInt(str);
+
+    ```
+
+
+    ```
+
+    d. str.convertToNumber();
+
+    ```
+
+
+    # Correct Answer:
+
+
+    +   a. Number(str);
+
+
+    **Explanation:** The Number function is commonly used to convert a string to a
+    number in JavaScript.
+
+
+    # 33. What is the purpose of the filter method in JavaScript?
+
+
+    +   a. To filter elements in an array based on a condition
+
+
+    +   b. To create a new array with the results of calling a function on every element
+
+
+    +   c. To reverse the order of elements in an array
+
+
+    +   d. To sort elements in an array
+
+
+    # Correct Answer:'
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: 'a. To filter elements in an array based on a condition
+
+
+    **Explanation:** The filter method is used to create a new array with elements
+    that pass a certain condition.
+
+
+    # 34. How do you check if a number is an integer in JavaScript?
+
+
+    s
+
+
+    a. Number.isInteger(x);
+
+
+    b. isInteger(x);
+
+
+    c. x.isInteger();
+
+
+    d. typeof x === "integer";
+
+
+    **Correct Answer:**
+
+
+    a. Number.isInteger(x);
+
+
+    **Explanation:** The Number.isInteger method is used to check if a given value
+    is an integer in JavaScript.'
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: '# 35. What is the purpose of the bind method in JavaScript?
+
+
+    +   a. To create a new array
+
+
+    +   b. To bind a function to a specific object
+
+
+    +   c. To add an event listener
+
+
+    +   d. To concatenate two strings
+
+
+    **Correct Answer:**
+
+    **b. To bind a function to a specific object
+
+
+    Explanation: The bind method is used to create a new function that, when called,
+    has its this value set to a specific object.
+
+
+    If you have more questions or if there''s anything else I can assist you with,
+    feel free to ask!
+
+
+    # 36. What is the purpose of the async and await keywords in JavaScript?'
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: '+   a. To declare a function as asynchronous and to pause execution until a
+    promise is resolved
+
+
+    +   b. To create an asynchronous loop
+
+
+    +   c. To handle exceptions in asynchronous code
+
+
+    +   d. To define a callback function
+
+
+    # Correct Answer:
+
+
+    +   a. To declare a function as asynchronous and to pause execution until a promise
+    is resolved
+
+
+    **Explanation:** The async keyword is used to declare a function as asynchronous,
+    and the await keyword is used to pause execution until a promise is resolved.
+
+
+    # 37. How do you add an element to the end of an array in JavaScript?
+
+
+    c
+
+
+    +   a. array.addToToEnd(element);
+
+
+    +   b. array.insertLast(element);
+
+
+    +   c. array.push(element);'
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: '```
+
+    d. array.append(element);
+
+    ```
+
+
+    Correct Answer:
+
+
+    c. array.push(element);
+
+
+    Explanation: The push method is used to add one or more elements to the end of
+    an array in JavaScript.
+
+
+    # 38. What is the purpose of the split method in JavaScript?
+
+
+    vbnet
+
+
+    +   a. To split a string into an array of substrings based on a specified separator
+
+
+    +   b. To split an array into multiple arrays
+
+
+    +   c. To split an object into its properties
+
+
+    +   d. To split a number into its digits
+
+
+    Correct Answer:
+
+
+    +   a. To split a string into an array of substrings based on a specified separator'
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: 'Explanation: The split method is used to divide a string into an array of substrings
+    based on a specified separator.
+
+
+    # 39. How can you convert a date to a string in a specific format in JavaScript?
+
+
+    lua
+
+
+    +   a. date.format("MM/DD/YYYY");
+
+
+    +   b. date.toLocaleString("MM/DD/YYYY");
+
+
+    +   c. date.toLocaleString("en-US", {format: "short"});
+
+
+    +   d. Intl.DateTimeFormat("en-US").format(date);
+
+
+    Correct Answer:
+
+
+    +   d. Intl.DateTimeFormat("en-US").format(date);
+
+
+    Explanation: Using Intl.DateTimeFormat with the format method allows you to convert
+    a date to a string in a specific format.
+
+
+    # 40. What is the purpose of the Object.create method in JavaScript?'
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: '+   a. To create a new object with the specified prototype object
+
+
+    +   b. To create a copy of an existing object
+
+
+    +   c. To merge two objects into one
+
+
+    +   d. To check if an object has a specific property
+
+
+    Correct Answer:
+
+
+    +   a. To create a new object with the specified prototype object
+
+
+    **Explanation:** The Object.create method is used to create a new object with
+    the specified prototype object and properties.
+
+
+    If you have more questions or if there''s anything else I can assist you with,
+    feel free to ask!
+
+
+    ![](img/e1cfd6d2532add9a9f2317a3aec0d300_30_0.png)
+
+
+    41. How do you remove the last element from an array in JavaScript?
+
+
+    c
+
+
+    +   a. array.removeLast();'
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: 'b. array.pop();
+
+
+    c. array.deleteLast();
+
+
+    d. array.splice(-1, 1);
+
+
+    # Correct Answer:
+
+
+    b. array.pop();
+
+
+    **Explanation:** The pop method is used to remove the last element from an array
+    in JavaScript.
+
+
+    # 42. What is the purpose of the localStorage sessionStorage in JavaScript?
+
+
+    +   a. To store data on the server
+
+
+    +   b. To store session-specific data
+
+
+    +   c. To store data with no expiration time
+
+
+    +   d. To create a temporary storage for the session
+
+
+    # Correct Answer:
+
+
+    c. To store data with no expiration time'
+  merge: -1
+  pgno: 31
+- img_proc: true
+  md: 'Explanation: Both localStorage and sessionStorage are used to store key/value
+    pairs with no expiration time, but localStorage persists even after the browser
+    is closed, while sessionStorage is limited to the session.
+
+
+    # 43. How can you check if an object has a specific property in JavaScript?
+
+
+    less
+
+
+    +   a. object.hasProperty("propertyName");
+
+
+    +   b. "propertyName" in object;
+
+
+    +   c. object.propertyExists("propertyName");
+
+
+    +   d. object.check("propertyName");
+
+
+    # Correct Answer:
+
+
+    +   b. "propertyName" in object;
+
+
+    Explanation: The in operator is used to check if an object has a specific property
+    in JavaScript.
+
+
+    # 44. What is the purpose of the reduce method in JavaScript?'
+  merge: -1
+  pgno: 32
+- img_proc: true
+  md: '+   a. To reduce the size of an array
+
+
+    +   b. To sum the elements of an array
+
+
+    +   c. To reverse the order of elements in an array
+
+
+    +   d. To filter elements based on a condition
+
+
+    # Correct Answer:
+
+
+    b. To sum the elements of an array
+
+
+    **Explanation:** The reduce method is used to apply a function against an accumulator
+    and each element in the array (from left to right) to reduce it to a single value.
+
+
+    # 45. How can you compare two objects for equality in JavaScript?
+
+
+    s
+
+
+    +   a. obj1.equals(obj2);
+
+
+    +   b. obj1 == obj2;
+
+
+    +   c. JSON.stringify(obj1) === JSON.stringify(obj2);
+
+
+    +   d. obj1.equals(obj2, deep=true);'
+  merge: -1
+  pgno: 33
+- img_proc: true
+  md: '# Correct Answer:
+
+
+    c. JSON.stringify(obj1) === JSON.stringify(obj2);
+
+
+    Explanation: To compare two objects for equality, you can stringify them using
+    JSON.stringify and then compare the resulting strings.
+
+
+    46. What is the purpose of the Date object in JavaScript?
+
+
+    a. To represent a specific date and time
+
+
+    b. To create a countdown timer
+
+
+    c. To calculate the difference between two dates
+
+
+    d. To format strings
+
+
+    # Correct Answer:
+
+
+    a. To represent a specific date and time in JavaScript
+
+
+    Explanation: The Date object in JavaScript is used to represent a specific date
+    and time.
+
+
+    47. How do you check if a value is NaN in JavaScript?'
+  merge: -1
+  pgno: 34
+- img_proc: true
+  md: 'less
+
+
+    a. if (value.isNaN())
+
+
+    b. if (isNaN(value))
+
+
+    c. if (value === NaN)
+
+
+    d. if (value.checkNaN())
+
+
+    # Correct Answer:
+
+
+    b. if (isNaN(value))
+
+
+    **Explanation:** The适当 function is used to check if a value is NaN in JavaScript.
+
+
+    # 48. What is the purpose of the fetch function in JavaScript?
+
+
+    +   a. To fetch data from a local file
+
+
+    +   b. To fetch data from a server using AJAX
+
+
+    +   c. To fetch data from the DOM
+
+
+    +   d. To fetch data from a database
+
+
+    # Correct Answer:'
+  merge: -1
+  pgno: 35
+- img_proc: true
+  md: 'b. To fetch data from a server using AJAX
+
+
+    **Explanation:** The fetch function is used to make network requests and retrieve
+    data from a server in JavaScript.
+
+
+    49. How do you convert a number to a string in JavaScript?
+
+
+    s
+
+
+    +   a. String(number);
+
+
+    +   b. number.toString();
+
+
+    +   c. str(number);
+
+
+    +   d. convertToString(number);
+
+
+    **Correct Answer:**
+
+
+    +   a. String(number);
+
+
+    **Explanation:** Using the String constructor or the toString method can convert
+    a number to a string in JavaScript.
+
+
+    50. What is the purpose of the Promise object in JavaScript?'
+  merge: -1
+  pgno: 36
+- img_proc: true
+  md: '+   a. To create asynchronous functions
+
+
+    +   b. To handle exceptions exceptions
+
+
+    +   c. To define event listeners event listeners
+
+
+    +   d. To represent a value that might be available now,
+
+    or or in the future, or never
+
+
+    Correct Answer:
+
+
+    +   **d. To represent a value that might be available
+
+    now, or in the future, or never**
+
+
+    **Explanation:** The Promise object is used for
+
+    asynchronous programming in JavaScript, repre-
+
+    senting a value that might be available now, or in
+
+    the future, or never.
+
+
+    Feel free to ask if you have more questions or if
+
+    there''s anything else I can assist you with!
+
+
+    ![](img/e1cfd6d2532add9a9f2317a3aec0d300_37_0.png)
+
+
+    # **51. What is the purpose of the addEventListener
+
+    method in JavaScript?**'
+  merge: -1
+  pgno: 37
+- img_proc: true
+  md: 'a. To create a new element
+
+
+    b. To append an element to the DOM
+
+
+    c. To handle events like clicks or keypresses
+
+
+    d. To define a function
+
+
+    Correct Answer:
+
+
+    c. To handle events like clicks or keypresses
+
+
+    **Explanation:** The add method is used to attach an event handler function to
+    an HTML element, enabling it to handle events like clicks or keypresses.
+
+
+    52. How do you declare a class in JavaScript?
+
+
+    vbnet
+
+
+    a. class MyClass {}
+
+
+    b. var MyClass = new class {}
+
+
+    c. function MyClass() {}",
+
+
+    d. MyClass: class {}
+
+
+    Correct Answer:'
+  merge: -1
+  pgno: 38
+- img_proc: true
+  md: 'a. class MyClass {}",
+
+
+    **Explanation:** The class keyword is used to declare a class in JavaScript.
+
+
+    # 53. What does the term "strict mode" mean in JavaScript?
+
+
+    +   a. A way to execute code more slowly for testing purposes
+
+
+    +   b. A mode that enforces a stricter set of rules in the language
+
+
+    +   c. A mode for creating secure connections to databases
+
+
+    +   d. A mode that allows for more lenient syntax checking
+
+
+    Correct Answer:
+
+
+    +   b. A mode that enforces a stricter set of rules in the language'
+  merge: -1
+  pgno: 39
+- img_proc: true
+  md: 'Explanation: Strict mode in JavaScript enables a stricter set of rules and
+    helps catch common coding errors.
+
+
+    # 54. How do you create a copy of an array in JavaScript?
+
+
+    ```
+
+    php
+
+    a. array.copy();
+
+    ```
+
+
+    +   b. array.clone();
+
+
+    +   c. array.slice();
+
+
+    +   d. array.copyArray();
+
+
+    Correct Answer:
+
+
+    +   c. array.slice();
+
+
+    Explanation: The slice method can be used to create a shallow copy of an array
+    in JavaScript.
+
+
+    # 55. What is the purpose of the bind method in JavaScript?
+
+
+    +   a. To bind a function to a specific object'
+  merge: -1
+  pgno: 40
+- img_proc: true
+  md: 'b. To create a new array
+
+
+    c. To add an event listener
+
+
+    d. To concatenate two strings
+
+
+    Correct Answer:
+
+
+    a. To bind a function to a specific object
+
+
+    Explanation: The bind method is used to create a new function that, when called,
+    has its this value set to a specific object.
+
+
+    56. How can you check if a variable is an object in JavaScript?
+
+
+    s
+
+
+    a. objectCheck(x);
+
+
+    b. x.isObject();
+
+
+    c. typeof x === "object";
+
+
+    d. isObject(x);
+
+
+    Correct Answer:
+
+
+    c. typeof x === "object";'
+  merge: -1
+  pgno: 41
+- img_proc: true
+  md: 'Explanation: Checking the type using typeof is a common way to determine if
+    a variable is an object in JavaScript.
+
+
+    # 57. What is the purpose of the Math.random function in JavaScript?
+
+
+    +   a. To generate a random number between 1 and 10
+
+    b. To round a number to the nearest integer
+
+    c. To generate a random floating-point number between 0 and 1
+
+    d. To calculate the square root of a number
+
+
+    Correct Answer:
+
+
+    c. To generate a random floating-point number between 0 and 1
+
+
+    Explanation: The Math.random function in JavaScript is used to generate a random
+    floating-point number between 0 (inclusive) and 1 (exclusive).'
+  merge: -1
+  pgno: 42
+- img_proc: true
+  md: '# 58. How do you remove all elements from an array in JavaScript?
+
+
+    c
+
+
+    +   a. array.clear();
+
+
+    +   b. array.removeAll();
+
+
+    +   c. array = [];
+
+
+    +   d. array.removeElements();
+
+
+    Correct Answer:
+
+
+    +   c. array = [];
+
+
+    Explanation: Assigning an empty array to the existing array is a simple way to
+    remove all elements from it in JavaScript.
+
+
+    # 59. What is the purpose of the Array.isArray method in JavaScript?
+
+
+    +   a. To check if a variable is an array
+
+
+    +   b. To create a new array
+
+
+    +   c. To filter elements in an array'
+  merge: -1
+  pgno: 43
+- img_proc: true
+  md: 'd. To reverse the order of elements in an array
+
+
+    Correct Answer:
+
+
+    a. To check if a variable is an array
+
+
+    **Explanation:** The Array.isArray method is used to check if a variable is an
+    array in JavaScript.
+
+
+    # 60. How do you convert a string to an array of characters in JavaScript?
+
+
+    python
+
+
+    ```
+
+    a. str.toArray();
+
+    ```
+
+
+    b. Array.from(str);
+
+
+    c. str.split("");
+
+
+    d. stringToCharArray(str);
+
+
+    Correct Answer:
+
+
+    c. str.split("");
+
+
+    **Explanation:** Using the split method with an empty string as the separator
+    can convert a string to an array of characters in JavaScript.'
+  merge: -1
+  pgno: 44
+- img_proc: true
+  md: 'If you have more questions or if there''s anything else I can assist you with,
+    feel free to ask!
+
+
+    # 61. What is the purpose of the arguments object in JavaScript?
+
+
+    +   a. To pass arguments to a function
+
+
+    +   b. To access all arguments passed to a function
+
+
+    +   c. To create a new object
+
+
+    +   d. To declare variables in a function
+
+
+    Correct Answer:
+
+
+    b. To access all arguments passed to a function
+
+
+    Explanation: The arguments object in JavaScript allows a function to access all
+    the arguments passed to it, even if they were not defined as parameters.
+
+
+    # 62. How do you check if a string contains a specific substring in JavaScript?'
+  merge: -1
+  pgno: 45
+- img_proc: true
+  md: 'python
+
+
+    +   a. str.substring(''sub'');
+
+
+    +   b. str.includes(''sub'');
+
+
+    +   c. str.contains(''sub'');
+
+
+    +   d. str.indexOf(''sub'') == -1;
+
+
+    # Correct Answer:
+
+
+    +   b. str.includes(''sub'');
+
+
+    **Explanation:** The includes method is used to check if a string contains a specific
+    substring in JavaScript.
+
+
+    # **63. What is the purpose of the localStorage and sessionStorage in JavaScript?**
+
+
+    +   a. To store data on the server
+
+
+    +   b. To store session-specific data
+
+
+    +   c. To store data with no expiration time
+
+
+    +   d. To create a temporary storage for the session'
+  merge: -1
+  pgno: 46
+- img_proc: true
+  md: 'Correct Answer:
+
+
+    c. To store data with no expiration time
+
+
+    **Explanation:** Both localStorage and sessionStorage are used to store key/value
+    pairs with no expiration time, but localStorage persists even after the browser
+    is closed, while sessionStorage is limited to the session.
+
+
+    64. How can you iterate over the properties of an object in JavaScript?
+
+
+    javascript
+
+
+    a. for (let key in obj) {}",
+
+
+    b. obj.forEach((key, value) => {})
+
+
+    c. for (let value of obj) {}",
+
+
+    d. obj.map((key, value) => {})
+
+
+    **Correct Answer:**
+
+
+    a. for (let key in obj) {}'
+  merge: -1
+  pgno: 47
+- img_proc: true
+  md: 'Explanation: The for...in loop is commonly used to iterate over the properties
+    of an object in JavaScript.
+
+
+    # 65. What is the purpose of the JSON.stringify method in JavaScript?
+
+
+    +   a. To parse a JSON string
+
+
+    +   b. To convert an object to a JSON string
+
+
+    +   c. To check if a string is valid JSON
+
+
+    +   d. To create a new JSON object
+
+
+    # Correct Answer:
+
+
+    +   b. To convert an object to a JSON string
+
+
+    Explanation: The JSON.stringify method is used to convert an object to a JSON-formatted
+    string in JavaScript.
+
+
+    # 66. How can you round a number to a specific number of decimal places in JavaScript?
+
+
+    s
+
+
+    +   a. Math.roundToDecimal(x, 2);'
+  merge: -1
+  pgno: 48
+- img_proc: true
+  md: '```
+
+    b. x.round(2);
+
+    ```
+
+
+    ```
+
+    c. x.toFixed(2);
+
+    ```
+
+
+    ```
+
+    d. round(x, 2);
+
+    ```
+
+
+    # Correct Answer:
+
+
+    c. x.toFixed(2);
+
+
+    **Explanation:** The toFixed method is used to round a number to a specific number
+    of decimal places in JavaScript.
+
+
+    # 67. What is the purpose of the isNaN function in JavaScript?
+
+
+    +   a. To check if a variable is not a number
+
+
+    +   b. To check if a variable is a number
+
+
+    +   c. To convert a string to a number
+
+
+    +   d. To round a number
+
+
+    # Correct Answer:
+
+
+    a. To check if a variable is not a number'
+  merge: -1
+  pgno: 49
+- img_proc: true
+  md: 'Explanation: The isNaN function is used to check if a variable is not a number
+    in JavaScript.
+
+
+    # 68. How do you convert a string to uppercase in JavaScript?
+
+
+    s
+
+
+    +   a. str.toUpperCase();
+
+
+    +   b. str.toUpperCase();
+
+
+    +   c. str.toUpperCase();
+
+
+    +   d. convertToUpper(str);
+
+
+    # Correct Answer:
+
+
+    +   c. str.toUpperCase();
+
+
+    Explanation: The toUpperCase method is used to convert a string to uppercase in
+    JavaScript.
+
+
+    # 69. What is the purpose of the forEach method in JavaScript?
+
+
+    +   a. To create a new array with the results of calling a function on every element'
+  merge: -1
+  pgno: 50
+- img_proc: true
+  md: 'b. To loop over the elements of an array and execute a function
+
+
+    c. To filter elements in an array based on a condition
+
+
+    d. To reverse the order of elements in an array
+
+
+    # **Correct Answer:**
+
+
+    **b. To loop over the elements of an array and execute a function**
+
+
+    **Explanation:** The foreach method is used to loop over the elements of an array
+    and execute a function for each element.
+
+
+    # **70. How do you remove the first element from an array in JavaScript?**
+
+
+    c
+
+
+    a. array.removeFirst();
+
+
+    b. array.shift();
+
+
+    c. array.deleteFirst();
+
+
+    d. array.splice(0, 1);'
+  merge: -1
+  pgno: 51
+- img_proc: true
+  md: 'Correct Answer:
+
+    b. array.shift();
+
+
+    **Explanation:** The shift method is used to remove the first element from an
+    array in JavaScript.
+
+    If you have more questions or if there''s anything else I can assist you with,
+    feel free to ask!
+
+
+    ![](img/e1cfd6d2532add9a9f2317a3aec0d300_52_0.png)
+
+
+    # 71. What is the purpose of the setTimeout function in JavaScript?
+
+
+    +   a. To create a timer that executes a function after a specified time
+
+
+    +   b. To set the style of an HTML element
+
+
+    +   c. To add a delay to a loop
+
+
+    +   d. To define a recursive function
+
+
+    Correct Answer:
+
+
+    +   a. To create a timer that executes a function after a specified time'
+  merge: -1
+  pgno: 52
+- img_proc: true
+  md: 'Explanation: The setTimeout function is used to schedule the execution of a
+    function after a specified delay.
+
+
+    # 72. How do you check if a variable is a function in JavaScript?
+
+
+    s
+
+
+    +   a. isFunction(x);
+
+
+    +   b. typeof x === "function";
+
+
+    +   c. x.isFunction();
+
+
+    +   d. functionCheck(x);
+
+
+    # Correct Answer:
+
+
+    +   b. typeof x === "function";
+
+
+    Explanation: Checking the type using typeof is a common way to determine if a
+    variable is a function in JavaScript.
+
+
+    # 73. What is the purpose of the splice method in JavaScript?
+
+
+    +   a. To join two arrays'
+  merge: -1
+  pgno: 53
+- img_proc: true
+  md: 'b. To add elements to the end of an array
+
+
+    c. To remove elements from an array
+
+
+    d. To reverse the order of elements in an array
+
+
+    Correct Answer:
+
+
+    c. To remove elements from an array
+
+
+    **Explanation:** The splice method in JavaScript is used to change the contents
+    of an array by removing or replacing existing elements.
+
+
+    74. How do you declare a variable in JavaScript?
+
+
+    a. let x = 10;
+
+
+    b. var x = 10;
+
+
+    c. const x = 10;
+
+
+    d. All of the above
+
+
+    Correct Answer:
+
+
+    d. All of the above'
+  merge: -1
+  pgno: 54
+- img_proc: true
+  md: 'Explanation: In JavaScript, you can declare a variable using let, var, or const.
+
+
+    # 75. What is the purpose of the map function in JavaScript?
+
+
+    +   a. To create a new array with the results of calling a provided function on
+    every element
+
+
+    +   b. To rearrange elements in an array
+
+
+    +   c. To check if every element in an array meets a specified condition
+
+
+    +   d. To concatenate two arrays
+
+
+    # Correct Answer:
+
+
+    +   a. To create a new array with the results of calling a provided function on
+    every element
+
+
+    Explanation: The map function is used to apply a function to every element in
+    an array and create a new array with the results.
+
+
+    # 76. How do you convert a number to a string in JavaScript?'
+  merge: -1
+  pgno: 55
+- img_proc: true
+  md: 's
+
+
+    a. number.toString();
+
+
+    b. String(number);
+
+
+    c. str(number);
+
+
+    d. convertToString(number);
+
+
+    # Correct Answer:
+
+
+    b. String(number);
+
+
+    **Explanation:** Using the String constructor or the toString method can convert
+    a number to a string in JavaScript.
+
+
+    # 77. What is the purpose of the filter method in JavaScript?
+
+
+    +   a. To create a new array with the results of calling a function on every element
+
+
+    +   b. To rearrange elements in an array
+
+
+    +   c. To filter elements in an array based on a condition'
+  merge: -1
+  pgno: 56
+- img_proc: true
+  md: 'd. To sort elements in an array
+
+
+    # Correct Answer:
+
+
+    c. To filter elements in an array based on a condition
+
+
+    Explanation: The filter method is used to create a new array with elements that
+    pass a certain condition.
+
+
+    # 78. How do you check if a value is an array in JavaScript?
+
+
+    s
+
+
+    a. isArray(x);
+
+
+    b. x.isArray();
+
+
+    c. ArrayCheck(x);
+
+
+    d. typeof Array(x);
+
+
+    # Correct Answer:
+
+
+    a. isArray(x);
+
+
+    Explanation: The isArray method is used to check if a value is an array in JavaScript.'
+  merge: -1
+  pgno: 57
+- img_proc: true
+  md: '# 79. What is the purpose of the Object.keys method in JavaScript?
+
+
+    +   a. To get an array of an object''s property names
+
+
+    +   b. To create a new object
+
+
+    +   c. To remove keys from an object
+
+
+    +   d. To check if an object has a specific key
+
+
+    **Correct Answer:**
+
+
+    **a. To get an array of an object''s property names**
+
+    **Explanation:** Object.keys is used to return an array of an object''s own enumerable
+    property names.
+
+
+    # 80. How do you declare a constant variable in JavaScript?
+
+
+    java
+
+
+    +   a. const x = 10;
+
+
+    +   b. let x = 10;
+
+
+    +   c. var x = 10;'
+  merge: -1
+  pgno: 58
+- img_proc: true
+  md: 'd. constant x = 10;
+
+
+    Correct Answer:
+
+
+    a. const x = 10;
+
+
+    Explanation: The const keyword is used to declare a constant variable in JavaScript.
+
+
+    If you have more questions or if there''s anything else I can assist you with,
+    feel free to ask!
+
+
+    ![](img/e1cfd6d2532add9a9f2317a3aec0d300_59_0.png)
+
+
+    # 81. What is the purpose of the addEventListener method in JavaScript?
+
+
+    +   a. To create a new element
+
+
+    +   b. To append an element to the DOM
+
+
+    +   c. To handle events like clicks or keypresses
+
+
+    +   d. To define a function
+
+
+    Correct Answer:
+
+
+    +   c. To handle events like clicks or keypresses'
+  merge: -1
+  pgno: 59
+- img_proc: true
+  md: 'Explanation: The addEventListener method is used to attach an event handler
+    function to an HTML element, enabling it to handle events like clicks or keypresses.
+
+
+    # 82. How do you declare a function in JavaScript?
+
+
+    ```
+
+    javascript
+
+    afunction myFunction() {}
+
+    ```
+
+
+    +   a. function myFunction() {}
+
+    b. var myFunction = function() {}
+
+    c. def myFunction() {}
+
+    d. myFunction: function() {}",
+
+
+    Correct Answer:
+
+
+    +   a. function myFunction() {}
+
+
+    Explanation: The function keyword is used to declare a function in JavaScript.
+
+
+    # 83. What is the purpose of the splice method in JavaScript?
+
+
+    +   a. To join two arrays'
+  merge: -1
+  pgno: 60
+- img_proc: true
+  md: '+   b. To add elements to the end of an array
+
+
+    +   c. To remove elements from an array
+
+
+    +   d. To reverse the order of elements in an array
+
+
+    Correct Answer:
+
+
+    +   c. To remove elements from an array
+
+
+    **Explanation:** The splice method in JavaScript is used to change the contents
+    of an array by removing or replacing existing elements.
+
+
+    # 84. How do you handle errors in JavaScript?
+
+
+    javascript
+
+
+    +   a. try/throw/catch
+
+
+    +   b. catch/throw/finally
+
+
+    +   c. try/catch/finally
+
+
+    +   d. throw/try/catch
+
+
+    Correct Answer:
+
+
+    +   c. try/catch/finally'
+  merge: -1
+  pgno: 61
+- img_proc: true
+  md: '**Explanation:** Error handling in JavaScript is typically done using the try,
+    catch, and finally blocks.
+
+
+    # 85. What is the purpose of the fetch function in JavaScript?
+
+
+    +   a. To fetch data from a local file
+
+
+    +   b. To fetch data from a server using AJAX
+
+
+    +   c. To fetch data from a database
+
+
+    +   d. To fetch data from the DOM
+
+
+    **Correct Answer:**
+
+
+    **b. To fetch data from a server using AJAX
+
+
+    **Explanation:** The fetch function is used to make network requests and retrieve
+    data from a server in JavaScript.
+
+
+    # 86. How can you round a number to the nearest integer in JavaScript?
+
+
+    s
+
+
+    +   a. round(x);'
+  merge: -1
+  pgno: 62
+- img_proc: true
+  md: '+   b. Math.round(x);
+
+
+    +   c. floor(x);
+
+
+    +   d. ceil(x);
+
+
+    Correct Answer:
+
+
+    +   b. Math.round(x);
+
+
+    Explanation: The Math.round method is used to round a number to the nearest integer
+    in JavaScript.
+
+
+    # 87. What is the purpose of the addEventListener method in JavaScript?
+
+
+    +   a. To attach an event handler to an element
+
+
+    +   b. To create a new HTML element
+
+
+    +   c. To change the styling of an element
+
+
+    +   d. To define a function
+
+
+    Correct Answer:
+
+
+    +   a. To attach an event handler to an element'
+  merge: -1
+  pgno: 63
+- img_proc: true
+  md: 'Explanation: The addEventListener method is used to attach an event handler
+    function to an HTML element.
+
+
+    # 88. How do you declare a function in JavaScript?
+
+
+    +   a. function myFunction() {}",
+
+
+    +   b. var myFunction = function() {}",
+
+
+    +   c. def myFunction() {}",
+
+
+    +   d. myFunction: function() {}",
+
+
+    # Correct Answer:
+
+
+    +   a. function myFunction() {}",
+
+
+    Explanation: The function keyword is used to declare a function in JavaScript.
+
+
+    # 89. What is the purpose of the splice method in JavaScript?
+
+
+    +   a. To join two arrays
+
+
+    +   b. To add elements to the end of an array'
+  merge: -1
+  pgno: 64
+- img_proc: true
+  md: '+   c. To remove elements from an array
+
+
+    +   d. To reverse the order of elements in an array
+
+
+    Correct Answer:
+
+
+    c. To remove elements from an array
+
+
+    Explanation: The splice method in JavaScript is used to change the contents of
+    an array by removing or replacing existing elements.
+
+
+    # 90. How do you handle errors in JavaScript?
+
+
+    javascript
+
+
+    +   a. try/throw/catch
+
+
+    +   b. catch/throw/finally
+
+
+    +   c. try/catch/finally
+
+
+    +   d. throw/try/catch
+
+
+    Correct Answer:
+
+
+    c. try/catch/finally'
+  merge: -1
+  pgno: 65
+- img_proc: true
+  md: 'Explanation: Error handling in JavaScript is typically done using the try,
+    catch, and finally blocks.
+
+
+    If you have more questions or if there''s anything else I can assist you with,
+    feel free to ask!
+
+
+    # 91. What is the purpose of the localStorage and sessionStorage in JavaScript?
+
+
+    +   a. To store data on the server
+
+    b. To store session-specific data
+
+    c. To store data with no expiration time
+
+    d. To create a temporary storage for the session
+
+
+    **Correct Answer:**
+
+
+    c. To store data with no expiration time
+
+
+    Explanation: Both localStorage and session-Storage are used to store key/value
+    pairs with no expiration time, but localStorage persists even'
+  merge: -1
+  pgno: 66
+- img_proc: true
+  md: 'after the browser is closed, while sessionStorage is limited to the session.
+
+
+    # 92. How do you check if an object has a specific property in JavaScript?
+
+
+    less
+
+
+    +   a. object.hasOwnProperty("propertyName");
+
+
+    +   b. "propertyName" in object;
+
+
+    +   c. object.propertyExists("propertyName");
+
+
+    +   d. object.check("propertyName");
+
+
+    Correct Answer:
+
+
+    b. "propertyName" in object;
+
+
+    Explanation: The in operator is used to check if an object has a specific property
+    in JavaScript.
+
+
+    # 93. What is the purpose of the reduce method in JavaScript?
+
+
+    +   a. To reduce the size of an array
+
+
+    +   b. To sum the elements of an array'
+  merge: -1
+  pgno: 67
+- img_proc: true
+  md: 'c. To reverse the order of elements in an array
+
+
+    d. To filter elements based on a condition
+
+
+    **Correct Answer:**
+
+
+    **b. To sum the elements of an array
+
+
+    *Explanation:* The reduce method is used to apply a function against an accumulator
+    and each element in the array (from left to right) to reduce it to a single value.
+
+
+    94. How do you check if a number is an integer in JavaScript?
+
+
+    s
+
+
+    a. Number.isInteger(x);
+
+
+    b. isInteger(x);
+
+
+    c. x.isInteger();
+
+
+    d. typeof x == "integer";
+
+
+    **Correct Answer:**
+
+
+    **a. Number.isInteger(x);'
+  merge: -1
+  pgno: 68
+- img_proc: true
+  md: 'Explanation: The Number.isInteger method is used to check if a given value
+    is an integer in JavaScript.
+
+
+    # 95. What is the purpose of the bind method in JavaScript?
+
+
+    +   a. To create a new array
+
+
+    +   b. To bind a function to a specific object
+
+
+    +   c. To add an event listener
+
+
+    +   d. To concatenate two strings
+
+
+    Correct Answer:
+
+
+    b. To bind a function to a specific object
+
+
+    Explanation: The bind method is used to create a new function that, when called,
+    has its this value set to a specific object.
+
+
+    # 96. What is the purpose of the async and await keywords in JavaScript?'
+  merge: -1
+  pgno: 69
+- img_proc: true
+  md: '+   a. To declare a function as asynchronous and to pause execution until a
+    promise is resolved
+
+
+    +   b. To create an asynchronous loop
+
+
+    +   c. To handle exceptions in asynchronous code
+
+
+    +   d. To define a callback function
+
+
+    Correct Answer:
+
+
+    +   a. To declare a function as asynchronous and to pause execution until a promise
+    is resolved
+
+
+    > **Explanation:** The async keyword is used to declare a function as asynchronous,
+    and the await keyword is used to pause execution until a promise is resolved.
+
+
+    # 97. How do you add an element to the end of an array in JavaScript?
+
+
+    c
+
+
+    +   a. array.addToToEnd(element);
+
+
+    +   b. array.insertLast(element);
+
+
+    +   c. array.push(element);'
+  merge: -1
+  pgno: 70
+- img_proc: true
+  md: '```
+
+    d. array.append(element);
+
+    ```
+
+
+    Correct Answer:
+
+
+    c. array.push(element);
+
+
+    Explanation: The push method is used to add one or more elements to the end of
+    an array in JavaScript.
+
+
+    # 98. What is the purpose of the split method in JavaScript?
+
+
+    vbnet
+
+
+    +   a. To split a string into an array of substrings based on a specified separator
+
+
+    +   b. To split an array into multiple arrays
+
+
+    +   c. To split an object into its properties
+
+
+    +   d. To split a number into its digits
+
+
+    Correct Answer:
+
+
+    +   a. To split a string into an array of substrings based on a specified separator'
+  merge: -1
+  pgno: 71
+- img_proc: true
+  md: 'Explanation: The split method is used to divide a string into an array of substrings
+    based on a specified separator.
+
+
+    # 99. How can you convert a date to a string in a specific format in JavaScript?
+
+
+    ```
+
+    lua
+
+    a. date.format("MM/DD/YYYY");
+
+    b. date.toFormat("MM/DD/YYYY");
+
+    c. date.toLocaleString("en-US", {format: "short"});
+
+    d. Intl.DateTimeFormat("en-US").format(date);
+
+    ```
+
+
+    Correct Answer:
+
+
+    d. Intl.DateTimeFormat("en-US").format(date);
+
+
+    Explanation: Using Intl.DateTimeFormat with the format method allows you to convert
+    a date to a string in a specific format.
+
+
+    # 100. What is the purpose of the Object.create method in JavaScript?'
+  merge: -1
+  pgno: 72
+- img_proc: true
+  md: 'a. To create a new object with the specified proto-type object
+
+
+    b. To create a copy of an existing object
+
+
+    c. To merge two objects into one
+
+
+    d. To check if an object has a specific property
+
+
+    Correct Answer:
+
+
+    a. To create a new object with the specified proto-type object
+
+
+    **Explanation:** The Object.create method is used to create a new object with
+    the specified prototype object and properties.
+
+
+    Feel free to ask if you have more questions or if there''s anything else I can
+    assist you with!
+
+
+    101. How do you remove the last element from an array in JavaScript?
+
+
+    c
+
+
+    a. array.removeLast();'
+  merge: -1
+  pgno: 73
+- img_proc: true
+  md: 'b. array.pop();
+
+
+    c. array.deleteLast();
+
+
+    d. array.splice(-1, 1);
+
+
+    # Correct Answer:
+
+
+    b. array.pop();
+
+
+    **Explanation:** The pop method is used to remove the last element from an array
+    in JavaScript.
+
+
+    # 102. What is the purpose of the localStorage and sessionStorage in JavaScript?
+
+
+    +   a. To store data on the server
+
+
+    +   b. To store session-specific data
+
+
+    +   c. To store data with no expiration time
+
+
+    +   d. To create a temporary storage for the session
+
+
+    # Correct Answer:
+
+
+    c. To store data with no expiration time'
+  merge: -1
+  pgno: 74
+- img_proc: true
+  md: 'Explanation: Both localStorage and sessionStorage are used to store key/value
+    pairs with no expiration time, but localStorage persists even after the browser
+    is closed, while sessionStorage is limited to the session.
+
+
+    # 103. How can you check if an object has a specific property in JavaScript?
+
+
+    less
+
+
+    +   a. object.hasOwnProperty("propertyName");
+
+    b. "propertyName" in object;
+
+    c. object.propertyExists("propertyName");
+
+    d. object.check("propertyName");
+
+
+    Correct Answer:
+
+
+    b. "propertyName" in object;
+
+
+    Explanation: The in operator is used to check if an object has a specific property
+    in JavaScript.
+
+
+    # 104. What is the purpose of the reduce method in JavaScript?'
+  merge: -1
+  pgno: 75
+- img_proc: true
+  md: '+   a. To reduce the size of an array
+
+    b. To sum the elements of an array
+
+    c. To reverse the order of elements in an array
+
+    d. To filter elements based on a condition
+
+
+    # **Correct Answer:**
+
+
+    **b. To sum the elements of an array
+
+
+    **Explanation:** The reduce method is used to apply a function against an accumulator
+    and each element in the array (from left to right) to reduce it to a single value.
+
+
+    **105. How do you convert a date to a string in a specific format in JavaScript?
+
+
+    ```
+
+    lua
+
+    a. date.format("MM/DD/YYYY");
+
+    b. date.toFormat("MM/DD/YYYY");
+
+    c. date.toLocaleString("en-US", {format: "short"});
+
+    d. Intl.DateTimeFormat("en-US").format(date);
+
+    ```'
+  merge: -1
+  pgno: 76
+- img_proc: true
+  md: 'Correct Answer:
+
+
+    d. Intl.DateTimeFormat("en-US").format(date);
+
+
+    **Explanation:** Using Intl.DateTimeFormat with the format method allows you to
+    convert a date to a string in a specific format.
+
+
+    # 106. What is the purpose of the Object.create method in JavaScript?
+
+
+    +   a. To create a new object with the specified prototype object
+
+
+    +   b. To create a copy of an existing object
+
+
+    +   c. To merge two objects into one
+
+
+    +   d. To check if an object has a specific property
+
+
+    Correct Answer:
+
+
+    +   a. To create a new object with the specified prototype object
+
+
+    **Explanation:** The Object.create method is used to create a new object with
+    the specified prototype object and properties.'
+  merge: -1
+  pgno: 77
+- img_proc: true
+  md: '# 107. How do you remove the first element from an array in JavaScript?
+
+
+    c
+
+
+    +   a. array.removeFirst();
+
+
+    +   b. array.shift();
+
+
+    +   c. array.deleteFirst();
+
+
+    +   d. array.splice(0, 1);
+
+
+    Correct Answer:
+
+
+    +   b. array.shift();
+
+
+    **Explanation:** The shift method is used to remove the first element from an
+    array in JavaScript.
+
+
+    # 108. What is the purpose of the localStorage and sessionStorage in JavaScript?
+
+
+    +   a. To store data on the server
+
+
+    +   b. To store session-specific data
+
+
+    +   c. To store data with no expiration time'
+  merge: -1
+  pgno: 78
+- img_proc: true
+  md: 'd. To create a temporary storage for the session
+
+
+    # Correct Answer:
+
+
+    c. To store data with no expiration time
+
+
+    **Explanation:** Both localStorage and sessionStorage are used to store key/value
+    pairs with no expiration time, but localStorage persists even after the browser
+    is closed, while sessionStorage is limited to the session.
+
+
+    109. How can you check if an object has a specific property in JavaScript?
+
+
+    less
+
+
+    a. object.hasOwnProperty("propertyName");
+
+
+    b. "propertyName" in object;
+
+
+    c. object.propertyName("propertyName");
+
+
+    d. object.check("propertyName");
+
+
+    # Correct Answer:
+
+
+    b. "propertyName" in object;'
+  merge: -1
+  pgno: 79
+- img_proc: true
+  md: 'Explanation: The in operator is used to check if an object has a specific property
+    in JavaScript.
+
+
+    # 110. What is the purpose of the reduce method in JavaScript?
+
+
+    +   a. To reduce the size of an array
+
+
+    +   b. To sum the elements of an array
+
+
+    +   c. To reverse the order of elements in an array
+
+
+    +   d. To filter elements based on a condition
+
+
+    Correct Answer:
+
+
+    b. To sum the elements of an array
+
+
+    Explanation: The reduce method is used to apply a function against an accumulator
+    and each element in the array (from left to right) to reduce it to a single value.
+
+
+    If you have more questions or if there''s anything else I can assist you with,
+    feel free to ask!
+
+
+    ![](img/e1cfd6d2532add9a9f2317a3aec0d300_80_0.png)'
+  merge: -1
+  pgno: 80
+- img_proc: true
+  md: '# 111. What is the purpose of the indexOf method in JavaScript?
+
+
+    +   a. To find the index of the first occurrence of a value in an array
+
+
+    +   b. To create a new array
+
+
+    +   c. To check if an element exists in an array
+
+
+    +   d. To concatenate two arrays
+
+
+    Correct Answer:
+
+
+    +   a. To find the index of the first occurrence of a value in an array
+
+
+    Explanation: The indexOf method is used to find the index of the first occurrence
+    of a specified value in an array.
+
+
+    # 112. How do you reverse the order of elements in an array in JavaScript?
+
+
+    +   c
+
+
+    +   a. array.reverse();'
+  merge: -1
+  pgno: 81
+- img_proc: true
+  md: 'b. array.flip();
+
+
+    c. array.rotate();
+
+
+    d. array.rearrange();
+
+
+    # Correct Answer:
+
+
+    a. array.reverse();
+
+
+    Explanation: The reverse method is used to reverse the order of elements in an
+    array in JavaScript.
+
+
+    # 113. What is the purpose of the parseFloat function in JavaScript?
+
+
+    +   a. To convert a string to a floating-point number
+
+
+    +   b. To round a number to the nearest integer
+
+
+    +   c. To check if a variable is a float
+
+
+    +   d. To create a new float object
+
+
+    # Correct Answer:
+
+
+    a. To convert a string to a floating-point number'
+  merge: -1
+  pgno: 82
+- img_proc: true
+  md: 'Explanation: The parseFloat function is used to convert a string to a floating-point
+    number in JavaScript.
+
+
+    114. How do you add a class to an HTML element using JavaScript?
+
+
+    ```
+
+    csharp
+
+    a. element.addClass("new-class");
+
+    ```
+
+
+    +   b. element.className = "new-class";
+
+
+    +   c. element.add("new-class");
+
+
+    +   d. element.appendClass("new-class");
+
+
+    Correct Answer:
+
+
+    +   b. element.className = "new-class";
+
+
+    Explanation: Assigning a new value to the className property is one way to add
+    a class to an HTML element using JavaScript.
+
+
+    115. What is the purpose of the includes method in JavaScript?'
+  merge: -1
+  pgno: 83
+- img_proc: true
+  md: 'a. To create a new array with the results of calling a function on every element
+
+
+    b. To check if a string contains a specific substring
+
+
+    c. To filter elements in an array based on a condition
+
+
+    d. To sum the elements of an array
+
+
+    # Correct Answer:
+
+
+    b. To check if a string contains a specific substring
+
+
+    > Explanation: The includes method is used to check if a string contains a specific
+    substring in JavaScript.
+
+
+    # 116. How can you check if a variable is undefined in JavaScript?
+
+
+    ```
+
+    javascript
+
+    ```
+
+
+    a. isUndefined(x);
+
+
+    b. x.isDefined();
+
+
+    c. x === undefined;'
+  merge: -1
+  pgno: 84
+- img_proc: true
+  md: 'd. typeof x === "undefined";
+
+
+    # Correct Answer:
+
+
+    c. x === undefined;
+
+
+    **Explanation:** Checking if a variable is equal to undefined is a common way
+    to verify if it is undefined in JavaScript.
+
+
+    # 117. What is the purpose of the textContent property in JavaScript?
+
+
+    +   a. To set the text content of an HTML element
+
+
+    +   b. To retrieve the HTML content of an element
+
+
+    +   c. To get or set the text content of an element
+
+
+    +   d. To append text to an element
+
+
+    # Correct Answer:
+
+
+    c. To get or set the text content of an element
+
+
+    **Explanation:** The textContent property is used to get or set the text content
+    of an HTML element in JavaScript.'
+  merge: -1
+  pgno: 85
+- img_proc: true
+  md: '# 118. How do you create a new element in the DOM using Javascript?
+
+
+    javascript
+
+
+    +   a. document.createElement("newElement");
+
+
+    +   b. document.add("newElement");
+
+
+    +   c. document.newElement("newElement");
+
+
+    +   d. document.create("newElement");
+
+
+    Correct Answer:
+
+
+    +   a. document.createElement("newElement");
+
+
+    **Explanation:** The createElement method is used to create a new HTML element
+    in the DOM using JavaScript.
+
+
+    # 119. What is the purpose of the splice method in Javascript?
+
+
+    +   a. To join two arrays
+
+
+    +   b. To add elements to the end of an array
+
+
+    +   c. To remove elements from an array'
+  merge: -1
+  pgno: 86
+- img_proc: true
+  md: 'd. To reverse the order of elements in an array
+
+
+    Correct Answer:
+
+
+    c. To remove elements from an array
+
+
+    **Explanation:** The splice method in JavaScript is used to change the contents
+    of an array by removing or replacing existing elements.
+
+
+    # 120. How do you declare a variable in JavaScript?
+
+
+    a. let x = 10;
+
+
+    b. var x = 10;
+
+
+    c. const x = 10;
+
+
+    d. All of the above
+
+
+    Correct Answer:
+
+
+    d. All of the above
+
+
+    **Explanation:** In JavaScript, you can declare a variable using let, var, or
+    const.
+
+
+    Feel free to ask if you have more questions or if there''s anything else I can
+    assist you with!'
+  merge: -1
+  pgno: 87
+- img_proc: true
+  md: '# 121. What is the purpose of the JSON.parse method in JavaScript?
+
+
+    +   a. To stringify an object
+
+
+    +   b. To convert a JSON string to an object
+
+
+    +   c. To create a new JSON object
+
+
+    +   d. To check if a string is valid JSON
+
+
+    **Correct Answer:
+
+
+    b. To convert a JSON string to an object
+
+
+    **Explanation:** The JSON.parse method is used to convert a JSON-formatted string
+    to a JavaScript object.
+
+
+    # 122. How do you remove an event listener in JavaScript?
+
+
+    less
+
+
+    +   a. element.removeEventListener("click", myFunction);'
+  merge: -1
+  pgno: 88
+- img_proc: true
+  md: 'b. element.removeEvent("click", myFunction);
+
+
+    c. element.off("click", myFunction);
+
+
+    d. element.detachEvent("click", myFunction);
+
+
+    # Correct Answer:
+
+
+    +   a. element.removeEventListener("click", my-Function);
+
+
+    **Explanation:** The removeEventListener method is used to remove an event listener
+    in JavaScript.
+
+
+    # 123. What is the purpose of the toFixed method in JavaScript?
+
+
+    +   a. To round a number to the nearest integer
+
+
+    +   b. To round a number to a specific number of decimal-places
+
+
+    +   c. To convert a number to a string
+
+
+    +   d. To check if a number is an integer
+
+
+    # Correct Answer:'
+  merge: -1
+  pgno: 89
+- img_proc: true
+  md: 'b. To round a number to a specific number of decimal places
+
+
+    **Explanation:** The toFixed method is used to round a number to a specific number
+    of decimal places in JavaScript.
+
+
+    # 124. How do you convert a string to lowercase in JavaScript?
+
+
+    s
+
+
+    +   a. str.lower();
+
+
+    +   b. str.toLowerCase();
+
+
+    +   c. str.toLowerCase();
+
+
+    +   d. convertToLower(str);
+
+
+    **Correct Answer:**
+
+
+    +   c. str.toLowerCase();
+
+
+    **Explanation:** The toLowerCase method is used to convert a string to lowercase
+    in JavaScript.
+
+
+    # 125. What is the purpose of the push method in JavaScript?'
+  merge: -1
+  pgno: 90
+- img_proc: true
+  md: '+   a. To add an element to the beginning of an array
+
+    b. To add an element to the end of an array
+
+    c. To remove the last element from an array
+
+    d. To check if an array is empty
+
+
+    **Correct Answer:**
+
+    **b. To add an element to the end of an array**
+
+
+    > **Explanation:** The push method is used to add one or more elements to the
+    end of an array in JavaScript.
+
+
+    126. How do you declare a constant variable in JavaScript?
+
+
+    ```
+
+    java
+
+    a. const x = 10;
+
+    ```
+
+
+    +   b. let x = 10;
+
+    c. var x = 10;
+
+    d. constant x = 10;
+
+
+    **Correct Answer:**'
+  merge: -1
+  pgno: 91
+- img_proc: true
+  md: '```
+
+    a. const x = 10;
+
+    ```
+
+
+    **Explanation:** The const keyword is used to declare a constant variable in JavaScript.
+
+
+    # 127. What is the purpose of the Math.random function in JavaScript?
+
+
+    +   a. To generate a random integer
+
+
+    +   b. To round a number to the nearest integer
+
+
+    +   c. To generate a random floating-point number
+
+
+    +   d. To check if a number is NaN
+
+
+    **Correct Answer:**
+
+
+    +   c. To generate a random floating-point number
+
+
+    **Explanation:** The Math.random function is used to generate a random floating-point
+    number between 0 (inclusive) and 1 (exclusive) in JavaScript.
+
+
+    # 128. How do you concatenate two arrays in JavaScript?
+
+
+    +   c
+
+
+    +   a. array.concat(array2);'
+  merge: -1
+  pgno: 92
+- img_proc: true
+  md: 'b. array + array2;
+
+
+    c. array.join(array2);
+
+
+    d. array.combine(array2);
+
+
+    Correct Answer:
+
+
+    a. array.concat(array2);
+
+
+    **Explanation:** The concat method is used to concatenate two arrays in JavaScript.
+
+
+    # 129. What is the purpose of the slice method in JavaScript?
+
+
+    +   a. To divide an array into two separate arrays
+
+
+    +   b. To remove elements from an array
+
+
+    +   c. To create a shallow copy of an array
+
+
+    +   d. To reverse the order of elements in an array
+
+
+    Correct Answer:
+
+
+    +   c. To create a shallow copy of an array'
+  merge: -1
+  pgno: 93
+- img_proc: true
+  md: 'Explanation: The slice method is used to create a shallow copy of an array
+    in JavaScript.
+
+
+    # 130. How do you convert a number to a string in JavaScript?
+
+
+    s
+
+
+    +   a. number.toString();
+
+
+    +   b. String(number);
+
+
+    +   c. str(number);
+
+
+    +   d. convertToString(number);
+
+
+    # Correct Answer:
+
+
+    +   b. String(number);
+
+
+    Explanation: Using the String constructor or the toString method can convert a
+    number to a string in JavaScript.
+
+
+    If you have more questions or if there''s anything else I can assist you with,
+    feel free to ask!
+
+
+    ![](img/e1cfd6d2532add9a9f2317a3aec0d300_94_0.png)'
+  merge: -1
+  pgno: 94
+- img_proc: true
+  md: '# 131. What is the purpose of the filter method in JavaScript?
+
+
+    +   a. To create a new array with the results of calling a function on every element
+
+
+    +   b. To rearrange elements in an array
+
+
+    +   c. To filter elements in an array based on a condition
+
+
+    +   d. To sort elements in an array
+
+
+    Correct Answer:
+
+
+    c. To filter elements in an array based on a condition
+
+
+    Explanation: The filter method is used to create a new array with elements that
+    pass a certain condition.
+
+
+    # 132. How do you declare a function in JavaScript?
+
+
+    javascript
+
+
+    +   a. function myFunction() {}",'
+  merge: -1
+  pgno: 95
+- img_proc: true
+  md: 'b. var myFunction = function() {
+
+
+    c. def myFunction() {
+
+
+    d. myFunction: function() {
+
+
+    # Correct Answer:
+
+
+    a. function myFunction() {
+
+
+    **Explanation:** The function keyword is used to declare a function in JavaScript.
+
+
+    # 133. What is the purpose of the splice method in JavaScript?
+
+
+    +   a. To join two arrays
+
+
+    +   b. To add elements to the end of an array
+
+
+    +   c. To remove elements from an array
+
+
+    +   d. To reverse the order of elements in an array
+
+
+    # Correct Answer:
+
+
+    c. To remove elements from an array'
+  merge: -1
+  pgno: 96
+- img_proc: true
+  md: 'Explanation: The splice method in JavaScript is used to change the contents
+    of an array by removing or replacing existing elements.
+
+
+    # 134. How do you handle errors in JavaScript?
+
+
+    javascript
+
+
+    +   a. try/throw/catch
+
+    b. catch/throw/finally
+
+    c. try/catch/finally
+
+    d. throw/try/catch
+
+
+    # Correct Answer:
+
+
+    c. try/catch/finally
+
+
+    Explanation: Error handling in JavaScript is typically done using the try, catch,
+    and finally blocks.
+
+
+    # 135. What is the purpose of the fetch function in JavaScript?
+
+
+    +   a. To fetch data from a local file'
+  merge: -1
+  pgno: 97
+- img_proc: true
+  md: '+   b. To fetch data from a server using AJAX
+
+
+    +   c. To fetch data from a database
+
+
+    +   d. To fetch data from the DOM
+
+
+    Correct Answer:
+
+
+    b. To fetch data from a server using AJAX
+
+
+    **Explanation:** The fetch function is used to make network requests and retrieve
+    data from a server in JavaScript.
+
+
+    # 136. How can you round a number to the nearest integer in JavaScript?
+
+
+    +   s
+
+
+    +   a. round(x);
+
+
+    +   b. Math.round(x);
+
+
+    +   c. floor(x);
+
+
+    +   d. ceil(x);
+
+
+    Correct Answer:
+
+
+    b. Math.round(x);'
+  merge: -1
+  pgno: 98
+- img_proc: true
+  md: 'Explanation: The Math.round method is used to round a number to the nearest
+    integer in JavaScript.
+
+
+    # 137. What is the purpose of the addEventListener method in JavaScript?
+
+
+    +   a. To create a new element
+
+
+    +   b. To append an element to the DOM
+
+
+    +   c. To handle events like clicks or keypresses
+
+
+    +   d. To define a function
+
+
+    # Correct Answer:
+
+
+    +   c. To handle events like clicks or keypresses
+
+
+    Explanation: The addEventListener method is used to attach an event handler function
+    to an HTML element, enabling it to handle events like clicks or keypresses.
+
+
+    # 138. How do you check if a variable is undefined in JavaScript?
+
+
+    ```
+
+    javascript
+
+    ```'
+  merge: -1
+  pgno: 99
+- img_proc: true
+  md: '+   a. isUndefined(x);
+
+
+    +   b. x.isDefined();
+
+
+    +   c. x === undefined;
+
+
+    +   d. typeof x === "undefined";
+
+
+    # Correct Answer:
+
+
+    +   c. x === undefined;
+
+
+    Explanation: Checking if a variable is equal to undefined is a common way to verify
+    if it is undefined in JavaScript.
+
+
+    # 139. What is the purpose of the JSON.stringify method in JavaScript?
+
+
+    +   a. To parse a JSON string
+
+
+    +   b. To convert an object to a JSON string
+
+
+    +   c. To create a new JSON object
+
+
+    +   d. To check if a string is valid JSON
+
+
+    # Correct Answer:'
+  merge: -1
+  pgno: 100
+- img_proc: true
+  md: '# b. To convert an object to a JSON string
+
+
+    **Explanation:** The JSON.stringify method is used to convert an object to a JSON-formatted
+    string in JavaScript.
+
+
+    # 140. How do you remove the first element from an array in JavaScript?
+
+
+    c
+
+
+    +   a. array.removeFirst();
+
+
+    +   b. array.shift();
+
+
+    +   c. array.deleteFirst();
+
+
+    +   d. array.splice(0, 1);
+
+
+    **Correct Answer:**
+
+
+    **b. array.shift();
+
+
+    **Explanation:** The shift method is used to remove the first element from an
+    array in JavaScript. If you have more questions or if there''s anything else I
+    can assist you with, feel free to ask!
+
+
+    ![](img/e1cfd6d2532add9a9f2317a3aec0d300_101_0.png)'
+  merge: -1
+  pgno: 101
+- img_proc: true
+  md: '# 141. What is the purpose of the localStorage and sessionStorage in JavaScript?
+
+
+    +   a. To store data on the server
+
+
+    +   b. To store session-specific data
+
+
+    +   c. To store data with no expiration time
+
+
+    +   d. To create a temporary storage for the session
+
+
+    **Correct Answer:**
+
+
+    c. To store data with no expiration time
+
+
+    **Explanation:** Both localStorage and sessionStorage are used to store key/value
+    pairs with no expiration time, but localStorage persists even after the browser
+    is closed, while sessionStorage is limited to the session.
+
+
+    # 142. How do you check if an object has a specific property in JavaScript?
+
+
+    less
+
+
+    +   a. object.hasOwnProperty("propertyName");'
+  merge: -1
+  pgno: 102
+- img_proc: true
+  md: 'b. "propertyName" in object;
+
+
+    c. object.propertyExists("propertyName");
+
+
+    d. object.check("propertyName");
+
+
+    # Correct Answer:
+
+
+    b. "propertyName" in object;
+
+
+    **Explanation:** The in operator is used to check if an object has a specific
+    property in JavaScript.
+
+
+    # 143. What is the purpose of the reduce method in JavaScript?
+
+
+    +   a. To reduce the size of an array
+
+
+    +   b. To sum the elements of an array
+
+
+    +   c. To reverse the order of elements in an array
+
+
+    +   d. To filter elements based on a condition
+
+
+    # Correct Answer:
+
+
+    b. To sum the elements of an array'
+  merge: -1
+  pgno: 103
+- img_proc: true
+  md: 'Explanation: The reduce method is used to apply a function against an accumulator
+    and each element in the array (from left to right) to reduce it to a single value.
+
+
+    # 144. How do you check if a number is an integer in JavaScript?
+
+
+    s
+
+
+    +   a. Number.isInteger(x);
+
+
+    +   b. isInteger(x);
+
+
+    +   c. x.isInteger();
+
+
+    +   d. typeof x === "integer";
+
+
+    Correct Answer:
+
+
+    +   a. Number.isInteger(x);
+
+
+    Explanation: The Number.isInteger method is used to check if a given value is
+    an integer in JavaScript.
+
+
+    # 145. What is the purpose of the bind method in JavaScript?'
+  merge: -1
+  pgno: 104
+- img_proc: true
+  md: '+   a. To create a new array
+
+    b. To bind a function to a specific object
+
+    c. To add an event listener
+
+    d. To concatenate two strings
+
+
+    Correct Answer:
+
+
+    b. To bind a function to a specific object
+
+
+    **Explanation:** The bind method is used to create a new function that, when called,
+    has its this value set to a specific object.
+
+
+    # 146. What is the purpose of the async and await keywords in JavaScript?
+
+
+    +   a. To declare a function as asynchronous and pause execution until a promise
+    is resolved
+
+    b. To create an asynchronous loop
+
+    c. To handle exceptions in asynchronous code
+
+    d. To define a callback function'
+  merge: -1
+  pgno: 105
+- img_proc: true
+  md: '# Correct Answer:
+
+
+    a. To declare a function as asynchronous and to pause execution until a promise
+    is resolved
+
+
+    **Explanation:** The async keyword is used to declare a function as asynchronous,
+    and the await keyword is used to pause execution until a promise is resolved.
+
+
+    # 147. How do you add an element to the end of an array in JavaScript?
+
+
+    c
+
+
+    a. array.addToEnd(element);
+
+
+    b. array.insertLast(element);
+
+
+    c. array.push(element);
+
+
+    d. array.append(element);
+
+
+    # Correct Answer:
+
+
+    c. array.push(element);'
+  merge: -1
+  pgno: 106
+- img_proc: true
+  md: 'Explanation: The push method is used to add one or more elements to the end
+    of an array in JavaScript.
+
+
+    # 148. What is the purpose of the split method in JavaScript?
+
+
+    vbnet
+
+
+    +   a. To split a string into an array of substrings based on a specified separator
+
+
+    +   b. To split an array into multiple arrays
+
+
+    +   c. To split an object into its properties
+
+
+    +   d. To split a number into its digits
+
+
+    Correct Answer:
+
+
+    +   a. To split a string into an array of substrings based on a specified separator
+
+
+    Explanation: The split method is used to divide a string into an array of substrings
+    based on a specified separator.
+
+
+    # 149. How can you convert a date to a string in a specific format in JavaScript?'
+  merge: -1
+  pgno: 107
+- img_proc: true
+  md: '```
+
+    lua
+
+    a date.format("MM/DD/YYYY");
+
+    ```
+
+
+    a. date.format("MM/DD/YYYY");
+
+
+    b. date.toFormat("MM/DD/YYYY");
+
+
+    c. date.toLocaleString("en-US", {format: "short"});
+
+
+    d. Intl.DateTimeFormat("en-US").format(date);
+
+
+    # Correct Answer:
+
+
+    d. Intl.DateTimeFormat("en-US").format(date);
+
+
+    Explanation: Using Intl.DateTimeFormat with the format method allows you to convert
+    a date to a string in a specific format.
+
+
+    150. What is the purpose of the Object.create method in JavaScript?
+
+
+    a. To create a new object with the specified proto-type object
+
+
+    b. To create a copy of an existing object
+
+
+    c. To merge two objects into one
+
+
+    d. To check if an object has a specific property'
+  merge: -1
+  pgno: 108
+- img_proc: true
+  md: '# Correct Answer:
+
+
+    a. To create a new object with the specified prototype object
+
+
+    **Explanation:** The Object.create method is used to create a new object with
+    the specified prototype object and properties.
+
+
+    Feel free to ask if you have more questions or if there''s anything else I can
+    assist you with!
+
+
+    ![](img/e1cfd6d2532add9a9f2317a3aec0d300_109_0.png)
+
+
+    # 151. How do you remove the last element from an array in JavaScript?
+
+
+    c
+
+
+    a. array.removeLast();
+
+
+    b. array.pop();
+
+
+    c. array.deleteLast();
+
+
+    d. array.splice(-1, 1);
+
+
+    # Correct Answer:
+
+
+    b. array.pop();'
+  merge: -1
+  pgno: 109
+- img_proc: true
+  md: 'Explanation: The pop method is used to remove the last element from an array
+    in JavaScript.
+
+
+    # 152. What is the purpose of the localStorage and
+
+
+    ![](img/e1cfd6d2532add9a9f2317a3aec0d300_110_0.png)
+
+
+    sessionStorage in JavaScript?
+
+
+    +   a. To store data on the server
+
+
+    +   b. To store session-specific data
+
+
+    +   c. To store data with no expiration time
+
+
+    +   d. To create a temporary storage for the session
+
+
+    Correct Answer:
+
+
+    +   c. To store data with no expiration time
+
+
+    Explanation: Both localStorage and sessionStorage are used to store key/value
+    pairs with no expiration time, but localStorage persists even after the browser
+    is closed, while sessionStorage is limited to the session.'
+  merge: -1
+  pgno: 110
+- img_proc: true
+  md: '# 153. How can you check if an object has a specific property in JavaScript?
+
+
+    less
+
+
+    +   a. object.hasOwnProperty("propertyName");
+
+
+    +   b. "propertyName" in object;
+
+
+    +   c. object.propertyExists("propertyName");
+
+
+    +   d. object.check("propertyName");
+
+
+    # Correct Answer:
+
+
+    +   b. "propertyName" in object;
+
+
+    Explanation: The in operator is used to check if an object has a specific property
+    in JavaScript.
+
+
+    # 154. What is the purpose of the reduce method in JavaScript?
+
+
+    +   a. To reduce the size of an array
+
+
+    +   b. To sum the elements of an array
+
+
+    +   c. To reverse the order of elements in an array'
+  merge: -1
+  pgno: 111
+- img_proc: true
+  md: 'd. To filter elements based on a condition
+
+
+    # Correct Answer:
+
+
+    b. To sum the elements of an array
+
+
+    Explanation: The reduce method is used to apply a function against an accumulator
+    and each element in the array (from left to right) to reduce it to a single value.
+
+
+    155. How do you check if a number is an integer in JavaScript?
+
+
+    s
+
+
+    a. Number.isInteger(x);
+
+
+    b. isInteger(x);
+
+
+    c. x.isInteger();
+
+
+    d. typeof x === "integer";
+
+
+    # Correct Answer:
+
+
+    a. Number.isInteger(x);'
+  merge: -1
+  pgno: 112
+- img_proc: true
+  md: '**Explanation:** The Number.isInteger method is used to check if a given value
+    is an integer in JavaScript.
+
+
+    # 156. What is the purpose of the bind method in JavaScript?
+
+
+    +   a. To create a new array
+
+
+    +   b. To bind a function to a specific object
+
+
+    +   c. To add an event listener
+
+
+    +   d. To concatenate two strings
+
+
+    **Correct Answer:**
+
+
+    b. To bind a function to a specific object
+
+
+    **Explanation:** The bind method is used to create a new function that, when called,
+    has its this value set to a specific object.
+
+
+    # 157. What is the purpose of the async and await keywords in JavaScript?'
+  merge: -1
+  pgno: 113
+- img_proc: true
+  md: '+   a. To declare a function as asynchronous and to pause execution until a
+    promise is resolved
+
+
+    +   b. To create an asynchronous loop
+
+
+    +   c. To handle exceptions in asynchronous code
+
+
+    +   d. To define a callback function
+
+
+    Correct Answer:
+
+
+    +   a. To declare a function as asynchronous and to pause execution until a promise
+    is resolved
+
+
+    **Explanation:** The async keyword is used to declare a function as asynchronous,
+    and the await keyword is used to pause execution until a promise is resolved.
+
+
+    # 158. How do you add an element to the end of an array in JavaScript?
+
+
+    +   c
+
+
+    +   a. array.addToToEnd(element);
+
+
+    +   b. array.insertLast(element);
+
+
+    +   c. array.push(element);'
+  merge: -1
+  pgno: 114
+- img_proc: true
+  md: '```
+
+    d. array.append(element);
+
+    ```
+
+
+    Correct Answer:
+
+
+    c. array.push(element);
+
+
+    Explanation: The push method is used to add one or more elements to the end of
+    an array in JavaScript.
+
+
+    # 159. What is the purpose of the split method in JavaScript?
+
+
+    vbnet
+
+
+    +   a. To split a string into an array of substrings based on a specified separator
+
+
+    +   b. To split an array into multiple arrays
+
+
+    +   c. To split an object into its properties
+
+
+    +   d. To split a number into its digits
+
+
+    Correct Answer:
+
+
+    +   a. To split a string into an array of substrings based on a specified separator'
+  merge: -1
+  pgno: 115
+- img_proc: true
+  md: '**Explanation:** The split method is used to divide a string into an array
+    of substrings based on a specified separator.
+
+
+    160. How can you convert a date to a string in a specific format in JavaScript?
+
+
+    +   a. date.format("MM/DD/YYYY");
+
+
+    +   b. date.toLocaleFormat("MM/DD/YYYY");
+
+
+    +   c. date.toLocaleString("en-US", {format: "short"});
+
+
+    +   d. Intl.DateTimeFormat("en-US").format(date);
+
+
+    **Correct Answer:**
+
+
+    d. Intl.DateTimeFormat("en-US").format(date);
+
+
+    **Explanation:** Using Intl.DateTimeFormat with the format method allows you to
+    convert a date to a string in a specific format.
+
+
+    161. What is the purpose of the Object.create method in JavaScript?'
+  merge: -1
+  pgno: 116
+- img_proc: true
+  md: '+   a. To create a new object with the specified prototype object
+
+
+    +   b. To create a copy of an existing object
+
+
+    +   c. To merge two objects into one
+
+
+    +   d. To check if an object has a specific property
+
+
+    Correct Answer:
+
+
+    +   a. To create a new object with the specified prototype object
+
+
+    **Explanation:** The Object.create method is used to create a new object with
+    the specified prototype object and properties.
+
+
+    If you have more questions or if there''s anything else I can assist you with,
+    feel free to ask!
+
+
+    ![](img/e1cfd6d2532add9a9f2317a3aec0d300_117_0.png)
+
+
+    162. How do you remove the last element from an array in JavaScript?
+
+
+    c
+
+
+    +   a. array.removeLast();'
+  merge: -1
+  pgno: 117
+- img_proc: true
+  md: 'b. array.pop();
+
+
+    c. array.deleteLast();
+
+
+    d. array.splice(-1, 1);
+
+
+    Correct Answer:
+
+
+    b. array.pop();
+
+
+    **Explanation:** The pop method is used to remove the last element from an array
+    in JavaScript.
+
+
+    **163. What is the purpose of the localStorage and sessionStorage in JavaScript?
+
+
+    +   a. To store data on the server
+
+
+    +   b. To store session-specific data
+
+
+    +   c. To store data with no expiration time
+
+
+    +   d. To create a temporary storage for the session
+
+
+    Correct Answer:
+
+
+    c. To store data with no expiration time'
+  merge: -1
+  pgno: 118
+- img_proc: true
+  md: 'Explanation: Both localStorage and sessionStorage are used to store key/value
+    pairs with no expiration time, but localStorage persists even after the browser
+    is closed, while sessionStorage is limited to the session.
+
+
+    # 164. How can you check if an object has a specific property in JavaScript?
+
+
+    less
+
+
+    +   a. object.hasProperty("propertyName");
+
+
+    +   b. "propertyName" in object;
+
+
+    +   c. object.property("propertyName");
+
+
+    +   d. object.check("propertyName");
+
+
+    # Correct Answer:
+
+
+    +   b. "propertyName" in object;
+
+
+    Explanation: The in operator is used to check if an object has a specific property
+    in JavaScript.
+
+
+    # 165. What is the purpose of the reduce method in JavaScript?'
+  merge: -1
+  pgno: 119
+- img_proc: true
+  md: '+   a. To reduce the size of an array
+
+
+    +   b. To sum the elements of an array
+
+
+    +   c. To reverse the order of elements in an array
+
+
+    +   d. To filter elements based on a condition
+
+
+    # Correct Answer:
+
+
+    b. To sum the elements of an array
+
+
+    **Explanation:** The reduce method is used to apply a function against an accumulator
+    and each element in the array (from left to right) to reduce it to a single value.
+
+
+    # 166. How do you check if a number is an integer in JavaScript?
+
+
+    s
+
+
+    +   a. Number.isInteger(x);
+
+
+    +   b. isInteger(x);
+
+
+    +   c. x.isInteger();
+
+
+    +   d. typeof x == "integer";'
+  merge: -1
+  pgno: 120
+- img_proc: true
+  md: 'Correct Answer:
+
+
+    a. Number.isInteger(x);
+
+
+    **Explanation:** The Number.isInteger method is used to check if a given value
+    is an integer in JavaScript.
+
+
+    # 167. What is the purpose of the bind method in JavaScript?
+
+
+    +   a. To create a new array
+
+
+    +   b. To bind a function to a specific object
+
+
+    +   c. To add an event listener
+
+
+    +   d. To concatenate two strings
+
+
+    Correct Answer:
+
+
+    b. To bind a function to a specific object
+
+
+    **Explanation:** The bind method is used to create a new function that, when called,
+    has its this value set to a specific object.'
+  merge: -1
+  pgno: 121
+- img_proc: true
+  md: '168. What is the purpose of the async and await keywords in JavaScript?
+
+
+    +   a. To declare a function as asynchronous and to pause execution until a promise
+    is resolved
+
+    b. To create an asynchronous loop
+
+    c. To handle exceptions in asynchronous code
+
+    d. To define a callback function
+
+
+    Correct Answer:
+
+
+    +   a. To declare a function as asynchronous and to pause execution until a promise
+    is resolved
+
+
+    **Explanation:** The async keyword is used to declare a function as asynchronous,
+    and the await keyword is used to pause execution until a promise is resolved.
+
+
+    169. How do you add an element to the end of an array in JavaScript?
+
+
+    +   c
+
+    a. array.add(element);'
+  merge: -1
+  pgno: 122
+- img_proc: true
+  md: 'b. array.insertLast(element);
+
+
+    c. array.push(element);
+
+
+    d. array.append(element);
+
+
+    Correct Answer:
+
+
+    c. array.push(element);
+
+
+    **Explanation:** The push method is used to add one or more elements to the end
+    of an array in JavaScript.
+
+
+    # 170. What is the purpose of the split method in JavaScript?
+
+
+    vbnet
+
+
+    +   a. To split a string into an array of substrings based on a specified separator
+
+
+    +   b. To split an array into multiple arrays
+
+
+    +   c. To split an object into its properties
+
+
+    +   d. To split a number into its digits
+
+
+    Correct Answer:'
+  merge: -1
+  pgno: 123
+- img_proc: true
+  md: 'a. To split a string into an array of substrings based on a specified separator
+
+
+    **Explanation:** The split method is used to divide a string into an array of
+    substrings based on a specified separator.
+
+
+    # 171. How can you convert a date to a string in a specific format in JavaScript?
+
+
+    ```
+
+    lua
+
+    a. date.format("MM/DD/YYYY");
+
+    b. date.format("MM/DD/YYYY");
+
+    c. date.toLocaleString("en-US", {format: "short"});
+
+    d. Intl.DateTimeFormat("en-US").format(date);
+
+    ```
+
+
+    **Correct Answer:**
+
+
+    d. Intl.DateTimeFormat("en-US").format(date);
+
+
+    **Explanation:** Using Intl.DateTimeFormat with the format method allows you to
+    convert a date to a string in a specific format.'
+  merge: -1
+  pgno: 124
+- img_proc: true
+  md: '# 172. What is the purpose of the Object.create method in JavaScript?
+
+
+    +   a. To create a new object with the specified prototype object
+
+
+    +   b. To create a copy of an existing object
+
+
+    +   c. To merge two objects into one
+
+
+    +   d. To check if an object has a specific property
+
+
+    Correct Answer:
+
+
+    +   a. To create a new object with the specified prototype object
+
+
+    **Explanation:** The Object.create method is used to create a new object with
+    the specified prototype object and properties.
+
+
+    If you have more questions or if there''s anything else I can assist you with,
+    feel free to ask!
+
+
+    ![](img/e1cfd6d2532add9a9f2317a3aec0d300_125_0.png)'
+  merge: -1
+  pgno: 125
+- img_proc: true
+  md: '# 173. How do you remove the last element from an array in JavaScript?
+
+
+    c
+
+
+    +   a. array.removeLast();
+
+
+    +   b. array.pop();
+
+
+    +   c. array.deleteLast();
+
+
+    +   d. array.splice(-1, 1);
+
+
+    # Correct Answer:
+
+
+    +   b. array.pop();
+
+
+    **Explanation:** The pop method is used to remove the last element from an array
+    in JavaScript.
+
+
+    # 174. What is the purpose of the localStorage and sessionStorage in JavaScript?
+
+
+    +   a. To store data on the server
+
+
+    +   b. To store session-specific data
+
+
+    +   c. To store data with no expiration time'
+  merge: -1
+  pgno: 126
+- img_proc: true
+  md: 'd. To create a temporary storage for the session
+
+
+    # Correct Answer:
+
+
+    c. To store data with no expiration time
+
+
+    Explanation: Both localStorage and session-Storage are used to store key/value
+    pairs with no expiration time, but localStorage persists even after the browser
+    is closed, while sessionStorage is limited to the session.
+
+
+    175. How can you check if an object has a specific property in JavaScript?
+
+
+    less
+
+
+    +   a. object.hasOwnProperty("propertyName");
+
+
+    +   b. "propertyName" in object;
+
+
+    +   c. object.propertyExists("propertyName");
+
+
+    +   d. object.check("propertyName");
+
+
+    # Correct Answer:
+
+
+    +   b. "propertyName" in object;'
+  merge: -1
+  pgno: 127
+- img_proc: true
+  md: 'Explanation: The in operator is used to check if an object has a specific property
+    in JavaScript.
+
+
+    # 176. What is the purpose of the reduce method in JavaScript?
+
+
+    +   a. To reduce the size of an array
+
+
+    +   b. To sum the elements of an array
+
+
+    +   c. To reverse the order of elements in an array
+
+
+    +   d. To filter elements based on a condition
+
+
+    Correct Answer:
+
+
+    b. To sum the elements of an array
+
+
+    Explanation: The reduce method is used to apply a function against an accumulator
+    and each element in the array (from left to right) to reduce it to a single value.
+
+
+    # 177. How do you check if a number is an integer in JavaScript?
+
+
+    s
+
+
+    +   a. Number.isInteger(x);'
+  merge: -1
+  pgno: 128
+- img_proc: true
+  md: '```
+
+    b. isInteger(x);
+
+    c. x.isInteger();
+
+    d. typeof x === "integer";
+
+    ```
+
+
+    Correct Answer:
+
+
+    +   a. Number.isInteger(x);
+
+
+    **Explanation:** The Number.isInteger method is used to check if a given value
+    is an integer in JavaScript.
+
+
+    # 178. What is the purpose of the bind method in JavaScript?
+
+
+    +   a. To create a new array
+
+
+    +   b. To bind a function to a specific object
+
+
+    +   c. To add an event listener
+
+
+    +   d. To concatenate two strings
+
+
+    Correct Answer:
+
+
+    +   b. To bind a function to a specific object'
+  merge: -1
+  pgno: 129
+- img_proc: true
+  md: 'Explanation: The bind method is used to create a new function that, when called,
+    has its this value set to a specific object.
+
+
+    # 179. What is the purpose of the async and await keywords in JavaScript?
+
+
+    +   a. To declare a function as asynchronous and to pause execution until a promise
+    is resolved
+
+
+    +   b. To create an asynchronous loop
+
+
+    +   c. To handle exceptions in asynchronous code
+
+
+    +   d. To define a callback function
+
+
+    # Correct Answer:
+
+
+    +   a. To declare a function as asynchronous and to pause execution until a promise
+    is resolved
+
+
+    Explanation: The async keyword is used to declare a function as asynchronous,
+    and the await keyword is used to pause execution until a promise is resolved.'
+  merge: -1
+  pgno: 130
+- img_proc: true
+  md: '# 180. How do you add an element to the end of an array in JavaScript?
+
+
+    c
+
+
+    +   a. array.addToToEnd(element);
+
+
+    +   b. array.insertLast(element);
+
+
+    +   c. array.push(element);
+
+
+    +   d. array.append(element);
+
+
+    Correct Answer:
+
+
+    +   c. array.push(element);
+
+
+    **Explanation:** The push method is used to add one or more elements to the end
+    of an array in JavaScript.
+
+
+    # 181. What is the purpose of the split method in JavaScript?
+
+
+    vbnet
+
+
+    +   a. To split a string into an array of substrings based on a specified separator
+
+
+    +   b. To split an array into multiple arrays'
+  merge: -1
+  pgno: 131
+- img_proc: true
+  md: '+   c. To split an object into its properties
+
+    d. To split a number into its digits
+
+
+    # Correct Answer:
+
+
+    +   a. To split a string into an array of substrings based on a specified separator
+
+
+    **Explanation:** The split method is used to divide a string into an array of
+    substrings based on a specified separator.
+
+
+    182. How can you convert a date to a string in a specific format in JavaScript?
+
+
+    lua
+
+
+    +   a. date.format("MM/DD/YYYY");
+
+
+    +   b. date.toFormat("MM/DD/YYYY");
+
+
+    +   c. date.toLocaleString("en-US", {format: "short"});",
+
+
+    +   d. Intl.DateTimeFormat("en-US").format(date);
+
+
+    # Correct Answer:
+
+
+    +   d. Intl.DateTimeFormat("en-US").format(date);'
+  merge: -1
+  pgno: 132
+- img_proc: true
+  md: 'Explanation: Using Intl.DateTimeFormat with the format method allows you to
+    convert a date to a string in a specific format.
+
+
+    # 183. What is the purpose of the Object.create method in JavaScript?
+
+
+    +   a. To create a new object with the specified prototype object
+
+
+    +   b. To create a copy of an existing object
+
+
+    +   c. To merge two objects into one
+
+
+    +   d. To check if an object has a specific property
+
+
+    Correct Answer:
+
+
+    +   a. To create a new object with the specified prototype object
+
+
+    Explanation: The Object.create method is used to create a new object with the
+    specified prototype object and properties.
+
+
+    If you have more questions or if there''s anything else I can assist you with,
+    feel free to ask!'
+  merge: -1
+  pgno: 133
+- img_proc: true
+  md: '# 184. What is the purpose of the Array.isArray method in JavaScript?
+
+
+    +   a. To check if a variable is an array
+
+
+    +   b. To create a new array
+
+
+    +   c. To remove elements from an array
+
+
+    +   d. To concatenate two arrays
+
+
+    Correct Answer:
+
+
+    a. To check if a variable is an array
+
+
+    Explanation: The Array.isArray method is used to check if a variable is an array
+    in JavaScript.
+
+
+    # 185. How do you compare two values for equality without type coercion in JavaScript?
+
+
+    +   a. x == y;
+
+
+    +   b. x === y;
+
+
+    +   c. x.equal(y);'
+  merge: -1
+  pgno: 134
+- img_proc: true
+  md: '```
+
+    d. x.isEqual(y);
+
+    ```
+
+
+    Correct Answer:
+
+
+    b. x === y;
+
+
+    Explanation: The strict equality operator (===) in JavaScript compares two values
+    for equality without type coercion.
+
+
+    # 186. What is the purpose of the map method in JavaScript?
+
+
+    +   a. To create a new array with the results of calling a function on every element
+
+
+    +   b. To reverse the order of elements in an array
+
+
+    +   c. To filter elements in an array based on a condition
+
+
+    +   d. To sum the elements of an array
+
+
+    Correct Answer:
+
+
+    +   a. To create a new array with the results of calling a function on every element'
+  merge: -1
+  pgno: 135
+- img_proc: true
+  md: 'Explanation: The map method is used to create a new array with the results
+    of calling a provided function on every element in the array.
+
+
+    # 187. How can you convert a string to a number in JavaScript?
+
+
+    s
+
+
+    +   a. parseInt(string);
+
+
+    +   b. number(string);
+
+
+    +   c. toNumber(string);
+
+
+    +   d. string.toNumber();
+
+
+    Correct Answer:
+
+
+    +   a. parseInt(string);
+
+
+    Explanation: The parseInt function is commonly used to convert a string to a number
+    in JavaScript.
+
+
+    # 188. What is the purpose of the Promise object in JavaScript?'
+  merge: -1
+  pgno: 136
+- img_proc: true
+  md: 'a. To handle asynchronous operations and represent a value that might be available
+    now, or in the future, or never
+
+
+    b. To create a new object
+
+
+    c. To check if a value is a promise
+
+
+    d. To define a callback function
+
+
+    # Correct Answer:
+
+
+    a. To handle asynchronous operations and represent a value that might be available
+    now, or in the future, or never
+
+
+    Explanation: The Promise object is used to handle asynchronous operations and
+    represents a value that might be available now, or in the future, or never.
+
+
+    189. How do you access the first element of an array in JavaScript?
+
+
+    c
+
+
+    a. array.first();'
+  merge: -1
+  pgno: 137
+- img_proc: true
+  md: 'b. array[0];
+
+
+    c. array.getElement(1);
+
+
+    d. array.head();
+
+
+    # Correct Answer:
+
+
+    b. array[0];
+
+
+    Explanation: In JavaScript, array elements are zero-indexed, so you can access
+    the first element using array[0].
+
+
+    # 190. What is the purpose of the typeof operator in JavaScript?
+
+
+    +   a. To create a new object
+
+
+    +   b. To check the type of a variable
+
+
+    +   c. To concatenate two strings
+
+
+    +   d. To remove the last element from an array
+
+
+    # Correct Answer:
+
+
+    b. To check the type of a variable'
+  merge: -1
+  pgno: 138
+- img_proc: true
+  md: 'Explanation: The typeof operator is used to check the data type of a variable
+    in JavaScript.
+
+
+    # 191. How do you declare a global variable in JavaScript?
+
+
+    csharp
+
+
+    +   a. var x = 10;
+
+
+    +   b. let x = 10;
+
+
+    +   c. const x = 10;
+
+
+    +   d. global x = 10;
+
+
+    Correct Answer:
+
+
+    +   a. var x = 10;
+
+
+    Explanation: In JavaScript, using the var word at the top level outside any function
+    creates a global variable.
+
+
+    # 192. What is the purpose of the Math.floor method in JavaScript?
+
+
+    +   a. To round a number to the nearest integer'
+  merge: -1
+  pgno: 139
+- img_proc: true
+  md: '+   b. To round a number to a specific number of decimal places
+
+
+    +   c. To generate a random floating-point number
+
+
+    +   d. To check if a number is an integer
+
+
+    Correct Answer:
+
+
+    +   a. To round a number to the nearest integer
+
+
+    **Explanation:** The Math.floor method is used to round a number down to the nearest
+    integer in JavaScript.
+
+
+    # 193. How do you remove all elements from an array in JavaScript?
+
+
+    +   c
+
+
+    +   a. array.removeElements();
+
+
+    +   b. array.clear();
+
+
+    +   c. array.removeAll();
+
+
+    +   d. array.length = 0;
+
+
+    Correct Answer:'
+  merge: -1
+  pgno: 140
+- img_proc: true
+  md: '```
+
+    d.array.length = 0;
+
+    ```
+
+
+    **Explanation:** Setting the length property of an array to 0 effectively removes
+    all elements from the array in JavaScript.
+
+
+    # 194. What is the purpose of the typeof operator in JavaScript?
+
+
+    +   a. To create a new object
+
+    b. To check the type of a variable
+
+    c. To concatenate two strings
+
+    d. To remove the last element from an array
+
+
+    **Correct Answer:**
+
+
+    b. To check the type of a variable
+
+
+    **Explanation:** The typeof operator is used to check the data type of a variable
+    in JavaScript.
+
+
+    # 195. How do you declare a global variable in JavaScript?
+
+
+    ```
+
+    csharp
+
+    ```
+
+
+    +   a. var x = 10;'
+  merge: -1
+  pgno: 141
+- img_proc: true
+  md: '+   b. let x = 10;
+
+
+    +   c. const x = 10;
+
+
+    +   d. global x = 10;
+
+
+    # Correct Answer:
+
+
+    +   a. var x = 10;
+
+
+    **Explanation:** In JavaScript, using the var keyword at the top level outside
+    any function creates a global variable.'
+  merge: -1
+  pgno: 142

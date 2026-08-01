@@ -975,6 +975,7 @@
 +   [精通 React Native：初学者指南 (计算机科学大师系列)](docs/mastering-react-native-a-beginners-guide-mastering-computer-/README.md)
 +   [精通 TypeScript：现代 JavaScript 开发全面指南](docs/mastering-typescript-a-comprehensive-guide-to-modern-javascr/README.md)
 +   [掌握 Vue.js：初学者指南 (计算机科学大师)](docs/mastering-vuejs-a-beginners-guide-mastering-computer-science/README.md)
++   [MCQ 精通：JavaScript 面试题](docs/mcq-mastery-javascript-interview-question/README.md)
 +   [MEAN Machine：JavaScript 栈初学者实践指南](docs/mean-machine-a-beginners-practical-guide-to-the-javascript-s/README.md)
 +   [Microsoft® JavaScript 入门指南](docs/microsoft-start-heretm-learn-javascript/README.md)
 +   [Microsoft VBScript 专业项目指南](docs/microsoft-vbscript-professional-projects/README.md)
