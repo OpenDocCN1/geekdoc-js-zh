@@ -1,0 +1,334 @@
+- - '#'
+  - NativeScript 精通：初学者指南 (计算机科学大师)
+- - '#'
+  - 第1章：基础
+- - '##'
+  - 本章内容
+- - '###'
+  - 基础
+- - '###'
+  - JavaScript 框架概述
+- - '###'
+  - NativeScript 概述
+- - '##'
+  - 4. 掌握 NativeScript：入门指南
+- - '##'
+  - NativeScript 应用是如何创建的？
+- - '##'
+  - 在移动开发背景下，NativeScript 意味着什么
+- - '###'
+  - 各种类型的移动应用
+- - '##'
+  - 为什么 NativeScript 很重要？
+- - '###'
+  - 进入市场
+- - '###'
+  - 使用 NativeScript 可以创建哪些类型的应用？
+- - '###'
+  - 图形游戏
+- - '###'
+  - 商业与消费应用
+- - '###'
+  - NativeScript 的优势
+- - '###'
+  - 使用 NativeScript
+- - '##'
+  - 基础
+- - '###'
+  - NativeScript 的组件
+- - '###'
+  - 深入探讨
+- - '##'
+  - NativeScript 的安装
+- - '###'
+  - 前提条件
+- - '###'
+  - CLI 设置
+- - '###'
+  - 安装 NativeScript Playground 应用
+- - '###'
+  - Android 和 iOS 的配置
+- - '##'
+  - NativeScript 架构
+- - '###'
+  - NativeScript 框架高层概述
+- - '###'
+  - 根模块 (Root Modules)
+- - '###'
+  - 页面模块 (Page Modules)
+- - '##'
+  - 基础知识
+- - '###'
+  - Node 模块
+- - '###'
+  - Android 源代码
+- - '###'
+  - iOS 源代码
+- - '###'
+  - 源代码
+- - '###'
+  - 运行应用
+- - '###'
+  - 在我们的设备上运行我们的应用
+- - '##'
+  - NativeScript 模板
+- - '###'
+  - 使用模板
+- - '###'
+  - 导航模板
+- - '###'
+  - 标签导航模板
+- - '###'
+  - 主/详情模板 (Master-Detail)
+- - '###'
+  - 自定义模板
+- - '###'
+  - 结构
+- - '##'
+  - NativeScript 中的小组件 (WIDGETS)
+- - '###'
+  - 按钮 (Button)
+- - '###'
+  - 进度 (Progress)
+- - '###'
+  - 活动指示器 (ActivityIndicator)
+- - '###'
+  - 图片 (Image)
+- - '###'
+  - 网页视图 (WebView)
+- - '###'
+  - 日期选择器 (DatePicker)
+- - '##'
+  - 时间选择器 (TimePicker)
+- - '##'
+  - NativeScript 中的布局容器
+- - '###'
+  - 绝对布局 (AbsoluteLayout)
+- - '###'
+  - 停靠布局 (DockLayout)
+- - '###'
+  - 网格布局 (GridLayout)
+- - '###'
+  - 堆叠布局 (StackLayout)
+- - '###'
+  - 换行布局 (WrapLayout)
+- - '###'
+  - 弹性布局 (FlexboxLayout)
+- - '#'
+  - 第2章 构建你的应用程序
+- - '##'
+  - 构建你的应用结构
+- - '##'
+  - JavaScript 代码
+- - '###'
+  - 初始化
+- - '###'
+  - pageLoaded() 函数
+- - '###'
+  - '*newNote() 函数*'
+- - '###'
+  - '*btnLoaded() 函数*'
+- - '###'
+  - '*openCamera() 函数*'
+- - '###'
+  - '*saveNote() 函数*'
+- - '##'
+  - NativeScript 中的布局 (LAYOUTS)
+- - '###'
+  - GridLayout (网格布局)
+- - '###'
+  - StackLayout (堆叠布局)
+- - '###'
+  - ScrollView (滚动视图)
+- - '##'
+  - UI 布局容器
+- - '###'
+  - AbsoluteLayout
+- - '###'
+  - AbsoluteLayout 子元素属性
+- - '###'
+  - DockLayout
+- - '###'
+  - DockLayout 子元素属性
+- - '###'
+  - GridLayout
+- - '##'
+  - 结构化您的应用程序
+- - '##'
+  - StackLayout
+- - '###'
+  - StackLayout 属性
+- - '##'
+  - WrapLayout
+- - '###'
+  - WrapLayout 属性
+- - '###'
+  - FlexboxLayout
+- - '###'
+  - FlexboxLayout 属性
+- - '###'
+  - FlexboxLayout 子属性
+- - '##'
+  - 将我们的 NativeScript 应用发布到应用商店的 8 个步骤
+- - '###'
+  - 步骤 1：设计我们的应用图标
+- - '###'
+  - 步骤 2：创建我们的启动页
+- - '###'
+  - 步骤 3：设置我们的元数据
+- - '#'
+  - 第3章 完善你的应用
+- - '##'
+  - 在 NativeScript 中，处理数据
+- - '##'
+  - 准备发布我们的应用
+- - '##'
+  - 在 Windows 上
+- - '##'
+  - 保护我们的移动应用
+- - '#'
+  - 第4章 Angular 和 NativeScript
+- - '##'
+  - 使用 Angular 创建 NativeScript 应用
+- - '##'
+  - 导航
+- - '##'
+  - 数据绑定
+- - '##'
+  - 使用插件
+- - '#'
+  - 第5章 深入探索
+- - '##'
+  - webpack 配置
+- - '##'
+  - iOS 应用扩展
+- - '#'
+  - NativeScript 核心概念
+- - '##'
+  - NativeScript 中的事件处理
+- - '###'
+  - Observable 类
+- - '###'
+  - 事件监听器
+- - '###'
+  - 修改 BlankApp
+- - '##'
+  - NativeScript 中的数据绑定
+- - '###'
+  - 单向数据绑定
+- - '###'
+  - 双向数据绑定
+- - '##'
+  - NativeScript 基础
+- - '###'
+  - Application
+- - '###'
+  - Console
+- - '###'
+  - Application-settings
+- - '###'
+  - http
+- - '##'
+  - 掌握 NativeScript 基础
+- - '###'
+  - Image-source
+- - '###'
+  - 构建你的应用结构
+- - '###'
+  - Timer
+- - '###'
+  - Trace
+- - '###'
+  - ui/image-cache
+- - '###'
+  - Connectivity
+- - '###'
+  - 功能模块
+- - '###'
+  - UI 模块单元
+- - '##'
+  - NativeScript 插件
+- - '###'
+  - 添加插件
+- - '###'
+  - 导入插件
+- - '###'
+  - 更新插件
+- - '###'
+  - 移除插件
+- - '###'
+  - 构建插件
+- - '###'
+  - 创建插件
+- - '##'
+  - JavaScript 使用原生 API
+- - '###'
+  - 封送 (Marshaling)
+- - '###'
+  - 数值
+- - '###'
+  - Android 环境
+- - '##'
+  - 字符串 (Strings)
+- - '###'
+  - '*Android*'
+- - '###'
+  - iOS 环境
+- - '##'
+  - 数组 (Arrays)
+- - '###'
+  - '*数组的声明*'
+- - '###'
+  - '*Android 中的数组声明*'
+- - '##'
+  - 类与对象 (Classes and Objects)
+- - '###'
+  - '*Android 环境*'
+- - '###'
+  - '*iOS 环境*'
+- - '#'
+  - NativeScript – ANDROID 应用开发
+- - '##'
+  - NativeScript 的 Sidekick
+- - '###'
+  - 将我们的 Sidekick 应用发布到 Google Play 控制台
+- - '###'
+  - 发布我们的应用到 Google Play
+- - '###'
+  - 发布的应用的程序
+- - '#'
+  - 我们的第一个应用
+- - '##'
+  - 制作我们的第一个 NativeScript 应用：
+- - '###'
+  - 设置 NativeScript
+- - '###'
+  - 创建 APP
+- - '###'
+  - 入口文件
+- - '###'
+  - UI 标记
+- - '##'
+  - NativeScript 中的导航
+- - '###'
+  - 正向导航
+- - '###'
+  - 反向导航
+- - '###'
+  - 侧向导航
+- - '###'
+  - 底部和标签导航
+- - '###'
+  - 基于 Angular 的导航
+- - '###'
+  - 构建您的应用
+- - '###'
+  - Page-Router-Outlet
+- - '###'
+  - 路由链接 (nsRouterLink)
+- - '###'
+  - 路由扩展 (Router Extension)
+- - '###'
+  - 自定义路由复用策略
+- - '###'
+  - 路由 (Routes)
