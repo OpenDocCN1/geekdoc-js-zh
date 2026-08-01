@@ -939,6 +939,7 @@
 +   [Log4j 完整手册](docs/log4j-the-complete-manual-xz/README.md)
 +   [Javascript 学习手册](docs/lrn-js/README.md)
 +   [Rust 学习手册 🚧](docs/lrn-rust/README.md)
++   [Lua 和 JavaScript 精通：全面指南：中级专家技能揭秘 - 2：二合一](docs/lua-and-javascript-mastery-a-comprehensive-guide-intermediat/README.md)
 +   [编程逻辑：使用 Javascript 和 HTML 创建你的第一个程序](docs/lógica-de-programação-crie-seus-primeiros-programas-usando-j/README.md)
 +   [制作大型多人在线游戏：适用于任何 Phaser JavaScript 游戏框架的开发指南](docs/making-massive-multiplayer-online-games-a-game-development-w/README.md)
 +   [Javascript 高级指南](docs/master-javascript/README.md)
