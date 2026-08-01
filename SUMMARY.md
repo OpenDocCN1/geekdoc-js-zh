@@ -962,6 +962,7 @@
 +   [精通 JavaScript：探索并掌握现代 JavaScript 技术以构建大规模 Web 应用](docs/mastering-javascript-explore-and-master-modern-javascript-te/README.md)
 +   [JavaScript游戏开发精通：打造独特体验](docs/mastering-javascript-for-game-development-crafting-unique-ex/README.md)
 +   [精通 JavaScript 框架：现代 Web 开发全面指南](docs/mastering-javascript-frameworks-a-comprehensive-guide-to-mod/README.md)
++   [Javascript 面向对象编程精通指南](docs/mastering-javascript-object-oriented-programming/README.md)
 +   [Javascript 高级指南 版](docs/mastering-javascript-premium-edition/README.md)
 +   [掌握 JavaScript 安全 Web 开发+解锁专家级技能秘籍](docs/mastering-javascript-secure-web-developmentunlock-the-secret/README.md)
 +   [精通 JavaScript：JavaScript 精通完全指南](docs/mastering-javascript-the-complete-guide-to-javascript-master/README.md)
