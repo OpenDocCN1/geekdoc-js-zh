@@ -4371,11 +4371,9 @@ decimalEdit = QLineEdit(format)
 decimalLabel.setBuddy(decimalEdit)
 decimalEdit.setMaxLength(1)
 decimalEdit.setValidator(QExpValidator(punctuationRe, self))
-```
-decimalEdit.setInputMask("X")
-```
 
-```python
+decimalEdit.setInputMask("X")
+
 decimalPlacesLabel = QLabel("Decimal places")
 decimalPlacesSpinBox = QSpinBox()
 decimalPlacesLabel.setBuddy(decimalPlacesSpinBox)
