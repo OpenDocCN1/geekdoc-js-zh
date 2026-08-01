@@ -1,0 +1,806 @@
+- - '#'
+  - 通过培训与外展充分利用数字藏品：创新型图书管理员指南
+- - '#'
+  - 致谢
+- - '#'
+  - 关于作者
+- - '#'
+  - 关于技术编辑
+- - '#'
+  - 谢谢
+- - '#'
+  - 第 9 章：确保单例模式的正确实现
+- - '#'
+  - 引言
+- - '##'
+  - JavaScript 作为一等语言的兴起
+- - '##'
+  - 在 JavaScript 中编写真正糟糕的代码是多么容易
+- - '##'
+  - 在 JavaScript 中无意中破坏代码是多么容易
+- - '##'
+  - 本书的目标读者
+- - '##'
+  - 从其他语言转向 JavaScript 的开发者
+- - '##'
+  - 负责为新项目选择编程语言的开发者
+- - '##'
+  - 本书的结构
+- - '##'
+  - 使用本书需要
+- - '##'
+  - 运行示例需要：
+- - '##'
+  - 约定
+- - '##'
+  - 注意事项
+- - '##'
+  - 源代码
+- - '##'
+  - GitHub 所有的源代码可以在 GitHub 上找到：
+- - '##'
+  - 压缩
+- - '#'
+  - 第一部分
+- - '#'
+  - 1 实践熟练的软件工程
+- - '##'
+  - 本章内容概览
+- - '##'
+  - 本章 WROX.COM 代码下载
+- - '#'
+  - 第 1 章 实践熟练的软件工程
+- - '##'
+  - 编写从一开始就正确的代码
+- - '##'
+  - 掌握 JavaScript 的特性
+- - '##'
+  - 案例研究：D3.js
+- - '###'
+  - 列表 1-1：创建一个 SVG 绘制段的函数（代码文件名：rj3.js）
+- - '###'
+  - 列表 1-1（续）
+- - '###'
+  - 列表 1-2：对 rj3.svg.line() 的示例调用（代码文件名：rj3.pathFromArrays.js）
+- - '#'
+  - 第 1 章 练习熟练的软件工程
+- - '##'
+  - 避免大型系统中的 JavaScript 陷阱
+- - '##'
+  - 脚本不是模块
+- - '##'
+  - 嵌套函数控制作用
+- - '##'
+  - 契约式编程
+- - '##'
+  - 应用软件工程原则
+- - '##'
+  - SOLID 原则
+- - '##'
+  - 单一责任原则
+- - '##'
+  - 开闭原则
+- - '##'
+  - 里氏替换原则
+- - '##'
+  - 接口隔离原则
+- - '##'
+  - 依赖反转原则
+- - '##'
+  - DRY 原则
+- - '#'
+  - 第 1 章 实践熟练的软件工程
+- - '##'
+  - 编写你的代码使其易于测试
+- - '##'
+  - 总结
+- - '#'
+  - 第 2 章 工具准备
+- - '##'
+  - 工具准备
+- - '##'
+  - 使用测试框架
+- - '###'
+  - 列表 2-1：不使用 TDD 的 createReservation 实现（代码文件名：Test Frameworks\TestFrameworks_01.js）
+- - '###'
+  - 列表 2-2：在测试对象完成后编写的 createReservation 单元测试（代码文件名：Test Frameworks\TestFrameworks_01_tests.js）
+- - '##'
+  - 运行 JASMINE 单元测试
+- - '##'
+  - 识别错误代码
+- - '###'
+  - 列表 2-3：createReservation 的第一个 TDD 单元测试（代码文件名：Test Frameworks\Frameworks_02_tests.js）
+- - '###'
+  - 列表 2-3 (续）
+- - '###'
+  - 列表 2-4：createReservation 的初始 TDD 实现（文件名：Test Frameworks/TestFrameworks_02.js）
+- - '###'
+  - 图 2-2
+- - '##'
+  - 使用测试框架
+- - '##'
+  - 为可测试性设计
+- - '##'
+  - D.O.H.
+- - '##'
+  - 介绍 Jasmine
+- - '##'
+  - 套件（Suites）与规格（Specs）
+- - '##'
+  - 期望与匹配器
+- - '##'
+  - 间谍（Spies）
+- - '###'
+  - '列表 2-7：引入 ReservationSaver 的测试（文件名: Test Frameworks_04_tests.js）'
+- - '###'
+  - '列表 2-8：使用 ReservationSaver 实现 createReservation（文件名: TestFrameworks_04.js）'
+- - '##'
+  - 使用依赖注入框架
+- - '##'
+  - 什么是依赖注入？
+- - '###'
+  - '列表 2-9：基础 Attendee（文件名: DI\Attendee_01.js）'
+- - '###'
+  - '列表 2-10：带有简单依赖注入的 Attendee 对象（文件名: DI\Attendee_02.js）'
+- - '##'
+  - 使用依赖注入让你的代码更可靠
+- - '##'
+  - 精通依赖注入
+- - '##'
+  - 案例研究：编写一个轻量级依赖注入框架
+- - '#'
+  - 第 2 章 准备工作
+- - '###'
+  - '列表 2-15: 最小 DiContainer.get 函数 (code filename: DI\DiContainer_02.js)'
+- - '###'
+  - '列表 2-16: DiContainer.get 的正向测试 (code filename: DI\DiContainer_03.js）'
+- - '###'
+  - '列表 2-17: DiContainer.get 可以获取已注册的函数 (code filename: DI\DiContainer_03.js）'
+- - '###'
+  - 图 2-6
+- - '###'
+  - '列表 2-20: 支持依赖项 (code filename: DI\DiContainer.js)'
+- - '##'
+  - 使用依赖注入框架
+- - '##'
+  - AngularJS
+- - '##'
+  - 使用 ASPECTKIT
+- - '##'
+  - 案例研究：有 AOP 和无 AOP 的缓存
+- - '###'
+  - 不使用 AOP 实现缓存
+- - '##'
+  - 使用 AOP 让你的代码更可靠
+- - '###'
+  - 构建 Aop.js 模块
+- - '###'
+  - 列表 2-26：空的 Aop.around 函数（代码文件名：Aop\Aop_00.js）
+- - '###'
+  - 列表 2-27：测试 Aop.around 导致 advice 执行（代码文件名：Aop\Aop_01_tests.js）
+- - '###'
+  - 列表 2-28：Aop.around 现在执行 advice（代码文件名：Aop\Aop_01.js）
+- - '###'
+  - 列表 2-29：测试将目标信息传递给切面（代码文件名：AOP\Aop_02_tests.js）
+- - '###'
+  - 列表 2-31（续）
+- - '###'
+  - 列表 2-32：测试参数是否可以传递给目标（代码文件名：AOP:Aop_03_tests.js）
+- - '###'
+  - 列表 2-34：测试返回值（代码文件名：AOP/Aop_04_tests.js）
+- - '###'
+  - 列表 2-35：切面从其目标返回值（代码文件名：AOP\Aop_04.js）
+- - '###'
+  - 列表 2-36：在正确的上下文中测试目标（代码文件名：Aop_05_tests.js）
+- - '##'
+  - 其他 AOP 库
+- - '##'
+  - AspectJS
+- - '##'
+  - AopJS jQuery 插件
+- - '##'
+  - YUI 的 Do 类
+- - '##'
+  - 结论
+- - '###'
+  - 列表 2-40：calculateUpgradeMilages 的单元测试（代码文件名：Linting\Linting_01_tests.js）
+- - '###'
+  - 列表 2-41：calculateUpgradeMilages 的实现（代码文件名：Linting\Linting_01.js）
+- - '##'
+  - 介绍 JSHint
+- - '##'
+  - 使用 JSHint
+- - '##'
+  - 使用代码检查工具
+- - '##'
+  - 严格模式
+- - '##'
+  - 总结
+- - '#'
+  - 第 3 章 构建可靠的对象
+- - '##'
+  - 使用原始类型
+- - '##'
+  - 使用对象字面量
+- - '###'
+  - 表 3-2：对象字面量的 SOLID 和 DRY 总结
+- - '##'
+  - 使用模块模式
+- - '##'
+  - 随心创建模块
+- - '###'
+  - 列表 3-1：随心创建模式的示例
+- - '##'
+  - 创建立即执行模块
+- - '###'
+  - 列表 3-2：一个单例模块
+- - '###'
+  - 列表 3-2（续）
+- - '##'
+  - 创建可靠的模块
+- - '###'
+  - 表 3-3：模块的 SOLID 和 DRY 总结
+- - '##'
+  - 使用原型和原型继承
+- - '##'
+  - 默认对象原型
+- - '##'
+  - 原型继承
+- - '##'
+  - 原型链
+- - '##'
+  - 使用 NEW 创建对象
+- - '##'
+  - 新对象创建模式
+- - '###'
+  - 列表 3-3（续）
+- - '##'
+  - 可能发生糟糕的情况
+- - '##'
+  - 强制使用 new
+- - '###'
+  - 列表 3-4：使用 instanceof 强制使用 new（文件名：NewPattern\newpattern.02.js）
+- - '##'
+  - instanceof 如何工作
+- - '##'
+  - 使用 New 创建对象
+- - '###'
+  - 列表 3-7：向构造函数的原型上添加函数（代码文件名：NewPatternpattern.05.js）
+- - '##'
+  - 使用经典继承
+- - '##'
+  - 模拟经典继承
+- - '###'
+  - 列表 3-8（续）
+- - '##'
+  - 重复杀死袋鼠
+- - '###'
+  - 表 3-5：经典继承模拟的 SOLID 和 DRY 总结
+- - '###'
+  - 表 3-5（续）
+- - '##'
+  - 使用函数式继承
+- - '##'
+  - 猴子补丁 (MONKEY-PATCHING)
+- - '###'
+  - 列表 3-10：猴子补丁
+- - '###'
+  - 表格 3-7：猴子补丁的 SOLID 和 DRY 总结
+- - '##'
+  - 列表 3-10：猴子补丁
+- - '###'
+  - 表格 3-7：猴子补丁的 SOLID 和 DRY 总结
+- - '##'
+  - 总结
+- - '##'
+  - 使用丰富的词汇编写优雅的代码
+- - '###'
+  - 表 4-1：比较 for 和 ForEach
+- - '##'
+  - 通过单元测试模式
+- - '##'
+  - 编写和测试回调函数
+- - '##'
+  - 总结
+- - '###'
+  - 列表 5-2（续）
+- - '###'
+  - 列表 5-3：attendeeCollection 模块的完整实现（代码文件名：Callbacks/attendeeCollection.js）
+- - '##'
+  - 编写和测试回调函数
+- - '###'
+  - 列表 5-4：checkService.checkIn(attendee) 的测试（代码文件名：Callbacks/checkService_tests.js）
+- - '###'
+  - 列表 5-5：checkService.checkIn(attendee) 函数的实现（代码文件名：Callbacks/checkService.js）
+- - '##'
+  - 避免问题
+- - '##'
+  - 平坦化箭头
+- - '###'
+  - 列表 5-6（续）
+- - '###'
+  - 列表 5-7：平坦化箭头
+- - '##'
+  - 注意点
+- - '###'
+  - 列表 5-8：checkedCounter 的单元测试
+- - '###'
+  - 列表 5-9：checkedCounter 的实现
+- - '##'
+  - 避免问题
+- - '##'
+  - 确保承诺模式（Promise Pattern）
+- - '##'
+  - 本章内容概览
+- - '##'
+  - 本章 WROX.com 代码下载
+- - '##'
+  - 通过单元测试
+- - '###'
+  - 列表 6-2：checkService.checkIn 的原始测试（代码文件名：Promises.checkInService_01_tests.js）
+- - '###'
+  - 列表 6-2（续）
+- - '###'
+  - 列表 6-6：带 HTTP 的 checkInRecorder 实现（代码文件名：Promises/checkIn_01.js）
+- - '###'
+  - 列表 6-7：带 HTTP 的 checkInRecorder 实现（代码文件名：Promises/checkInRecorder.js）
+- - '##'
+  - Promise 链式调用
+- - '##'
+  - 使用 Promise 包装器
+- - '#'
+  - 第 7 章 确保正确使用偏函数应用
+- - '##'
+  - 偏函数应用
+- - '##'
+  - 进行单元测试
+- - '###'
+  - 列表 7-1：第三方 API（代码文件名：PFA/ThirdPartyApi.js）
+- - '###'
+  - 列表 7-2：ThirdPartyApi 的测试（代码文件名：PFA/ThirdPartyApi_tests.js）
+- - '##'
+  - 偏函数创建一个切面
+- - '##'
+  - 偏函数创建一个切面
+- - '#'
+  - 第 8 章 确保正确使用记忆化模式
+- - '##'
+  - 本章内容
+- - '##'
+  - 通过单元测试模式
+- - '###'
+  - 列表 8-1（续）
+- - '###'
+  - 列表 8-2：memoizedApi 的实现（代码文件名：Memoryization/memoizedApi.js）
+- - '##'
+  - 使用 AOP 添加记忆化
+- - '##'
+  - 创建记忆化切面
+- - '###'
+  - 列表 8-4：returnValueCache 的实现（代码文件名：Memoryization/returnValueCache.js）
+- - '##'
+  - 应用：装饰Cache 切面
+- - '###'
+  - 列表 8-5（继续）
+- - '#'
+  - 第 9 章 确保方法借用的正确实现
+- - '##'
+  - 单例模式的正确实现
+- - '##'
+  - 通过单元测试模式
+- - '##'
+  - 使用对象面量实现共享缓存
+- - '###'
+  - 列表 9-1：returnValueCache 的测试（代码文件名：Singleton/returnValueCache_01.js）
+- - '###'
+  - 列表 9-2：使用对象面量实现共享（代码文件名：Singleton/returnValueCache_01.js）
+- - '###'
+  - 列表 9-3（续）
+- - '##'
+  - 使用模块实现共享缓存
+- - '###'
+  - 列表 9-4：simpleCache 模块（代码文件名：Singleton/simpleCache.js）
+- - '###'
+  - 列表 9-5：simpleCache 的单元测试（代码文件名：Singleton/simpleCache_02_tests.js）
+- - '#'
+  - 第 10 章 确保工厂模式的正确实现
+- - '##'
+  - 本章内容
+- - '##'
+  - 为单元测试
+- - '###'
+  - 列表 10-1：类型（代码文件名：Factory/Presentation.js）
+- - '###'
+  - 列表 10-2：供应商（代码文件名：Factory/Presentation.js）
+- - '###'
+  - 列表 10-3：presentationFactory 的测试（代码文件名：Factory/presentationFactory_tests.js）
+- - '###'
+  - 列表 10-4：presentationFactory 中的检查（代码文件名：Factory/presentationFactory.js）
+- - '###'
+  - 列表 10-6：使用工厂创建Presentation 的单元测试（代码文件名：Factory/presentationFactory_tests.js）
+- - '###'
+  - 列表 10-6（续）
+- - '###'
+  - 列表 10-6：使用工厂创建Presentation 的单元测试
+- - '#'
+  - 第 11 章 确保沙盒模式的正确实现与使用
+- - '##'
+  - 通过单元测试
+- - '##'
+  - 创建沙盒
+- - '##'
+  - 实例化沙盒
+- - '###'
+  - 列表 11-3：带有工具规格的 WidgetSandbox构造函数（代码文件名：Sandbox/WidgetSandbox_02_tests.js）
+- - '###'
+  - 列表 11-4：使用最后一个参数作为组件函数的 WidgetSandbox（代码文件名：Sandbox/WidgetSandbox_02.js）
+- - '###'
+  - 列表 11-6：通过工具数组指定工具的 WidgetSandbox构造函数（代码文件名：Sandbox/WidgetSandbox_03.js）
+- - '###'
+  - 列表 11-9（续）
+- - '#'
+  - 第 12 章 确保装饰器模式的正确实现
+- - '##'
+  - 以测试驱动的方式装饰器
+- - '##'
+  - 被被的对象开发伪造对象
+- - '##'
+  - 为错误编写测试
+- - '##'
+  - 写一个无操作装饰器
+- - '###'
+  - 列表 12-3：一个无操作装饰器
+- - '###'
+  - 列表 12-4：Initial attendeeWebApiDecorator（代码文件名：attendeeDecorator_01.js）
+- - '###'
+  - 列表 12-5：检测错误（代码文件名：attendeeDecorator_02.js）
+- - '###'
+  - 列表 12-7（续）
+- - '###'
+  - 列表 12-8（续）
+- - '###'
+  - 列表 12-9：getAll() 添加待处理记录（代码文件名：DecoratorattendeeDecorator_04.js）
+- - '###'
+  - 列表 12-10（续）
+- - '###'
+  - 列表 12-11：填充 attendeeIds 的装饰器 post 函数（代码文件名：Decorator_attendeeWebApi_05.js）
+- - '###'
+  - 列表 12-12（续）
+- - '###'
+  - 列表 12-13：attendeeDecorator.post 的最终版本（代码文件名：Decorator.attendeeWebApi.js [片段]）
+- - '##'
+  - 通用装饰器
+- - '#'
+  - 第 13 章 确保策略模式的正确实现
+- - '##'
+  - 通过单元测试模式
+- - '##'
+  - 不使用策略模式实现 transportScheduler
+- - '##'
+  - 使用策略模式实现 transportScheduler
+- - '##'
+  - 使用测试驱动开发创建 transportScheduler
+- - '###'
+  - 列表 13-2（续）
+- - '###'
+  - 列表 13-3（续）
+- - '###'
+  - 列表 13-4：transportScheduler 的测试套件（代码文件名：Strategy\transportScheduler_02_tests.js）
+- - '##'
+  - 为 transportScheduler 创建策略
+- - '###'
+  - 列表 13-6（续）
+- - '###'
+  - 列表 13-7：redicabTransportCompany 的实现（代码文件名：Strategy/redicabTransportCompany.js）
+- - '#'
+  - 第 14 章 确保代理模式的正确实现
+- - '##'
+  - 以测试驱动的方式开发代理
+- - '##'
+  - 列表 14-2：一个空代理（代码文件名：attendeeProxy_01.js）
+- - '###'
+  - 列表 14-3：测试正数的 fetchLimit（代码文件名：attendeeProxy_01_tests.js）
+- - '###'
+  - 列表 14-4：强制“无所有”的测试（代码文件名：attendeeProxy_01_b.js）
+- - '###'
+  - 列表 14-5：测试过大的 fetchLimit（代码文件名：attendeeProxy_02_tests.js）
+- - '###'
+  - 列表 14-6：处理过小的 fetchLimit（代码文件名：attendeeProxy_03_tests.js）
+- - '###'
+  - 列表 14-7：确定热门配置（代码文件名：attendeeProxy_04_tests.js）
+- - '###'
+  - 列表 14-10：测试预取配置的返回（代码文件名：attendeeProxy_04.js）
+- - '###'
+  - 列表 14-12（续）
+- - '###'
+  - 列表 14-13：完成的 attendeeProxy（代码文件名：AttendeeProxy.js）
+- - '#'
+  - 第 15 章 确保链式方法的正确实现
+- - '##'
+  - 本章内容
+- - '##'
+  - 通过单元测试模式
+- - '###'
+  - 列表 15-2（续）
+- - '###'
+  - 列表 15-3：带有链式的Presenter 函数（代码文件名：Chaining/presentEvaluation_02.js）
+- - '###'
+  - 列表 15-4
+- - '###'
+  - 列表 15-5：使setPresentation 可链式的实现（代码文件名：Chaining/presentEvaluation_04.js）
+- - '#'
+  - 第 16 章 确保接口的优势
+- - '##'
+  - 理解接口分离
+- - '##'
+  - 使用测试驱动开发创建注册
+- - '##'
+  - 定义合约
+- - '###'
+  - 列表 16-6（续）
+- - '###'
+  - 列表 16-7：`fulfills` 方法的首次测试（代码文件名：contractRegistry_02_tests.js）
+- - '###'
+  - 列表 16-10：完成方法（代码文件名：contractRegistry_03.js）
+- - '##'
+  - 在接口中遵循
+- - '##'
+  - 断言契约
+- - '###'
+  - 列表 16-12：`assert` 方法（代码文件名：contractRegistry_04.js）
+- - '###'
+  - 列表 16-13：对 attendee 定义并断言契约（代码文件名：ee01.js）
+- - '###'
+  - 列表 16-14：使用 attendee 断言契约（代码文件名：eeContracts.js）
+- - '###'
+  - 列表 16-15：返回值的测试（代码文件名：registry_tests.js）
+- - '#'
+  - 第 17 章 确保参数类型
+- - '##'
+  - 确保正确的类型
+- - '##'
+  - 理解 JavaScript 无类型
+- - '###'
+  - 列表 17-3：为字符串的测试
+- - '###'
+  - 列表 17-7：针对单元素数组的（代码文件名：ContractRegistry_08_tests.js）
+- - '###'
+  - 列表 17-8：为单元素数组实现（代码文件名：ContractRegistry_10.js）
+- - '##'
+  - 验证集合中的变量都符合
+- - '##'
+  - 总结
+- - '###'
+  - 列表 17-15（继续）
+- - '###'
+  - 列表 17-16：测试`attachValidator` 可链式的（代码文件名：ContractRegistry_14_tests.js）
+- - '###'
+  - 列表 17-17：`attachValidator` 的实现（代码文件名：ContractRegistry_14.js）
+- - '#'
+  - 第 18 章 确保正确使用 CALL, APPLY, BIND
+- - '##'
+  - 创建并测试使用 call, apply 和 bind 代码
+- - '##'
+  - 默认绑定
+- - '###'
+  - 列表 18-2：带有函数引用的默认绑定（代码文件名：CallApplyBind.defaultBinding_02.js）
+- - '##'
+  - 默认绑定
+- - '###'
+  - 列表 18-5：带有全局函数定义的隐式绑定（代码文件名：CallApplyBind.implicitBinding_02.js）
+- - '##'
+  - 新绑定 (new Binding)
+- - '##'
+  - 显式绑定 (Explicit Binding)
+- - '##'
+  - 创建并测试使用 CALL, APPLY 和 BIND 的代码
+- - '##'
+  - 使用 call 和 apply
+- - '###'
+  - 列表 18-9：attendeeCollection模块（代码文件名：CallApplyBind.attendeeCollection.js）
+- - '##'
+  - 使用 Polyfill 测试驱动创建 Array.prototype.forEach
+- - '###'
+  - 列表 18-10：Array.prototype.forEach 补丁的单元测试（代码文件名：CallApplyBindForEach_01_tests.js）
+- - '###'
+  - 列表 18-11：callbackFn不是函数（代码文件名：CallApplyBind/forEach_01.js）
+- - '###'
+  - 列表 18-12：测试在未提供this时 callbackFn 是否执行（代码文件名：CallApplyBindForEach_02_tests.js）
+- - '###'
+  - 列表 18-14：测试当提供this时，callbackFn 的上下文被设置为this（代码文件名：CallApply/forEach_03_tests.js）
+- - '###'
+  - 列表 18-15：使用 call 为 callbackFn 提供正确的上下文（代码文件名：CallApply_ForEach_03.js）
+- - '###'
+  - 列表 18-16：确保callbackFn用正确参数执行的测试（文件名：CallApplyBindForEach_04_tests.js）
+- - '##'
+  - 使用 bind
+- - '###'
+  - 列表 18-18：测试当提供包含的对象作为其上下文时，handleOnClick记录点击事件（代码文件名：CallApplyBindoutgoingClickHandler_tests_01.js）
+- - '#'
+  - 第 19 章：确保方法借用的正确使用
+- - '##'
+  - 确保借用对象是合格的
+- - '##'
+  - 让被借用的函数校验借用者
+- - '##'
+  - 在借用对象上附加切面
+- - '##'
+  - 使用 borrow 方法
+- - '##'
+  - 为 ContractRegistry 添加验证器
+- - '###'
+  - 列表 19-11：trackedForEachKey(OrderedObject_02.js)
+- - '###'
+  - 列表 19-12：trackedForEachKey 的普通调用测试（代码文件名：OrderedObject/OrderedObject_02_tests.js）
+- - '###'
+  - 列表 19-13：借用 trackedForEachKey 的测试（代码文件名：OrderedObject/OrderedObject_03_tests.js）
+- - '##'
+  - 预期捐者对象的副作用
+- - '#'
+  - 第 20 章 确保正确使用混入
+- - '##'
+  - 创建和使用混入
+- - '##'
+  - 使用测试驱动创建 extend 函数
+- - '##'
+  - 创建和使用 Mixins
+- - '###'
+  - 列表 20-12：UpdateMixin 返回包含属性的对象（代码文件名：Mixin_01.js）
+- - '###'
+  - 列表 20-14：idMixin 的完整实现（代码文件名：idMixin_02.js）
+- - '#'
+  - 第 20 章 确保正确使用 Mixins
+- - '##'
+  - 创建和使用 Mixins
+- - '###'
+  - 列表 20-17：确保addId抛出错误覆盖现有属性的测试（代码文件名：Mixin_addId_01_tests.js）
+- - '###'
+  - 列表 20-18（继续）
+- - '###'
+  - 列表 20-19：验证addId为适当功能的测试（代码文件名：Mixin_addId_02_tests.js）
+- - '#'
+  - 第 21 章 确保可靠地使用观察者
+- - '##'
+  - 检查观察者模式
+- - '##'
+  - 魔法棒技术 (The Magic Wand Technique)
+- - '##'
+  - 不要使用调用栈栈技术 (Do Not Use the Call Stack Technique)
+- - '##'
+  - 其他技术 (Other Techniques)
+- - '##'
+  - 其他架构 (Other Architectures)
+- - '##'
+  - 总结 (SUMMARY)
+- - '##'
+  - 第五部分 (PART V)
+- - '##'
+  - 总结 (Summary)
+- - '##'
+  - 24 测试驱动开发的总结 (Summary of the Principles of Test-Driven Development)
+- - '##'
+  - 本章包含什么？ (WHAT'S IN CHAPTER?)
+- - '##'
+  - 回顾为什么测试开发是的 (RECALLING WHY TEST-DRIVEN DEVELOPMENT IS WORTHILE)
+- - '##'
+  - 实践测试驱动开发 (PRACTICING TEST-DRIVEN DEVELOPMENT)
+- - '##'
+  - 编写可测试的代码
+- - '##'
+  - 在代码之前测试
+- - '##'
+  - 保持测试的 DRY
+- - '##'
+  - 先测试错误条件
+- - '##'
+  - 先测试简单的后复杂的
+- - '##'
+  - 具体化
+- - '##'
+  - 第 24 章 测试开发原则总结
+- - '##'
+  - 只测试一件事
+- - '##'
+  - 你的数据与测试一样重要
+- - '##'
+  - 有效使用 Jasmine
+- - '##'
+  - 测试中的模式
+- - '##'
+  - 测试面向切面的编程
+- - '##'
+  - 测试对象构造
+- - '##'
+  - 测试回调
+- - '##'
+  - 测试基于 Promise的
+- - '##'
+  - 测试部分应用
+- - '##'
+  - 记忆化（Memoization）
+- - '##'
+  - 单例模式（Singleton）
+- - '##'
+  - 测试工厂方法（Factory Method）
+- - '##'
+  - 测试沙箱模式（Sandbox）
+- - '##'
+  - 测试装饰器模式（Decorator Pattern）
+- - '##'
+  - 测试策略模式（Strategy Pattern）
+- - '##'
+  - 测试代理模式（Proxy Pattern）
+- - '##'
+  - 测试链式方法（Chainable Methods）
+- - '##'
+  - 第 24 章测试开发原则总结
+- - '##'
+  - 测试接口遵循（Conformance to an Interface）
+- - '##'
+  - 测试call 和 apply 的使用
+- - '##'
+  - 测试方法借用模式（Method-Borrowing Pattern）
+- - '##'
+  - 测试混合入（Mixins）
+- - '##'
+  - 测试中介者和观察者
+- - '##'
+  - 测试 DOM访问
+- - '##'
+  - 测试架构划分的测试
+- - '##'
+  - 总结
+- - '#'
+  - 本书中 JavaScript惯用法的总结
+- - '##'
+  - 复习对象
+- - '##'
+  - 对象属性可以添加和移除
+- - '##'
+  - 对象可以像字典一样使用
+- - '##'
+  - 复习变量
+- - '##'
+  - 变量声明提升
+- - '##'
+  - 变量具有函数作用域
+- - '##'
+  - 变量
+- - '#'
+  - 第 25 章 本书中 JavaScript惯用法的总结
+- - '##'
+  - 审视函数
+- - '##'
+  - 函数是对象
+- - '##'
+  - 函数声明会被提升
+- - '##'
+  - 函数没有返回类型
+- - '##'
+  - 函数可以是匿名的
+- - '##'
+  - 函数可以是嵌套的
+- - '##'
+  - 第 25 章 本书中 JavaScript惯用法的总结
+- - '##'
+  - 函数可以用任意数量的参数进行调用
+- - '##'
+  - 函数可以立即调用
+- - '##'
+  - 复习布尔操作
+- - '##'
+  - 在测试相等性时，类型可能会被强制转换
+- - '##'
+  - 值可以是真值（truthy）或假值（falsy）
+- - '##'
+  - 总结
+- - '##'
+  - 索引
+- - '##'
+  - 缓存–D.O.H.测试框架
+- - '##'
+  - D3（数据驱动文档）
+- - '##'
+  - DOM–函数
+- - '##'
+  - getID–LRU
