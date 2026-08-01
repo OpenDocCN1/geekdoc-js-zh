@@ -932,6 +932,7 @@
 +   [单页 Web 应用开发指南：使用 Node.js、MongoDB、AngularJS 和 Express 框架全栈 JavaScript 环境构建强大且可扩展的单页 Web 应用](docs/learning-single-page-web-application-development-build-power/README.md)
 +   [学习 iOS 4：JavaScript 程序员 SDK 指南](docs/learning-the-ios-4-sdk-for-javascript-programmers/README.md)
 +   [Learning TypeScript 5：超越 JavaScript，为大型项目构建更具维护性和健壮性的 Web](docs/learning-typescript-5-go-beyond-javascript-to-build-more-mai/README.md)
++   [Web 设计学习：使用 Html、Css、Javascript 和 Web 图形创建互动网站的实用指南](docs/learning-web-design-website-a-practical-guide-to-creating-en/README.md)
 +   [进阶 JavaScript：TypeScript 实用指南](docs/level-up-your-javascript-a-practical-guide-to-typescript/README.md)
 +   [Javascript 学习手册](docs/lrn-js/README.md)
 +   [Rust 学习手册 🚧](docs/lrn-rust/README.md)
