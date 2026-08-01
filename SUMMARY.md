@@ -1015,6 +1015,7 @@
 +   [Murach JavaScript 和 jQuery 指南](docs/murach-javascript-and-jquerypdc/README.md)
 +   [Murach's HTML5 和 CSS3：训练与参考指南](docs/murachs-html5-and-css3-training-reference/README.md)
 +   [Murach's Javascript 和 DOM 脚本编程](docs/murachs-javascript-and-dom-scripting/README.md)
++   [Murach’s javascript 和 jQuery](docs/murachs-javascript-and-jquery/README.md)
 +   [Murach's JavaScript 和 jQuery：从初学者到高级指南](docs/murachs-javascript-and-jquery-beginner-to-pro/README.md)
 +   [Murach's JavaScript 和 jQuery：训练与参考指南](docs/murachs-javascript-and-jquery-training-et-reference/README.md)
 +   [Murach's JavaScript：训练与参考指南](docs/murachs-javascript-training-reference/README.md)
