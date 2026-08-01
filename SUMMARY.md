@@ -1000,6 +1000,7 @@
 +   [现代 JavaScript 打包：Rollup 开发者与工程师权威指南](docs/modern-javascript-bundling-with-rollupdefinitive-reference-f/README.md)
 +   [适合急躁者的现代 JavaScript](docs/modern-javascript-for-the-impatient/README.md)
 +   [现代 JavaScript 工具与技能](docs/modern-javascript-tools-skills/README.md)
++   [现代 Perl 编程指南](docs/modern-perl-programming-none/README.md)
 +   [Next.js 现代 Web 应用：学习构建和部署现代、可扩展且生产级 React 应用的高级技术](docs/modern-web-applications-with-next-js-learn-advanced-techniqu/README.md)
 +   [Next.JS 现代 Web 应用：学习 Next.JS 构建并部署现代、可扩展且生产级 React 应用的高级技术](docs/modern-web-applications-with-nextjs-learn-advanced-technique/README.md)
 +   [Deno 现代 Web 开发：使用 Svelte、React 和 GraphQL 现代现代 JavaScript 和 TypeScript 代码](docs/modern-web-development-with-deno-develop-modern-javascript-a/README.md)
