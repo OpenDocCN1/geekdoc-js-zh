@@ -956,6 +956,7 @@
 +   [高级 JavaScript 设计模式与实践大师：解锁专家级技能秘籍](docs/mastering-advanced-javascript-design-patterns-and-practicesu/README.md)
 +   [Ajax、JavaScript 和 PHP 一通精通指南](docs/mastering-ajax-javascript-and-php-all-in-one/README.md)
 +   [Angular 响应式表单精通：通过真实案例使用 Angular 12 表单控件、表单组、表单数组、验证器及测试等构建坚实的响应式表单专业知识](docs/mastering-angular-reactive-forms-build-solid-expertise-in-re/README.md)
++   [精通 HTML 4：完全更新的 HTML 资源，包含 CSS 和 JavaScript 新信息；配套网站包含 HTML 代码以及图形工具和 HTML 编写软件的链接](docs/mastering-html-4-the-essential-completely-updated-html-resou/README.md)
 +   [JavaScript 高级指南](docs/mastering-javascript/README.md)
 +   [精通 JavaScript：完整编程指南，包含 jQuery、AJAX、Web 设计、脚本编写和移动应用开发](docs/mastering-javascript-a-complete-programming-guide-including-/README.md)
 +   [精通 JavaScript：全球最流行编程语言全面指南](docs/mastering-javascript-a-comprehensive-guide-to-the-worlds-mos/README.md)
