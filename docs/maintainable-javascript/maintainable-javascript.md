@@ -1595,6 +1595,8 @@ function doSomething() {
 这种方法之所以奏效，是因为 JavaScript 引擎解释代码的方式就像如下所示：
 
 - 错误
+
+```
 function doSomething() {
   alert("Hello world!");
 }
@@ -2690,7 +2692,7 @@ MaintainableJS.Book = function(title) {
 MaintainableJS.Book.prototype.turnPage = function(direction) {
   this.page += direction;
 }
-```
+
 
 MaintainableJS.Chapter1 = new MaintainableJS.Book("Introduction to Style Guidelines");
 MaintainableJS.Chapter2 = new MaintainableJS.Book("Basic Formatting");
