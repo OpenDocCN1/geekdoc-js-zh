@@ -4762,7 +4762,7 @@ app.post('/api/books', (req, res) => {
 
 单元测试专注于孤立地验证应用程序中最小单元（例如函数或方法）。开发者编写单元测试以确保单个单元的行为符合预期。
 
-```
+
 ```javascript
 // Example 1: Unit Test with Jest (JavaScript Testing Framework)
 
@@ -4777,7 +4777,6 @@ test('adds two numbers correctly', () => {
   expect(add(2, 3)).toBe(5);
 });
 ```
-```
 
 在上面的示例中，我们使用 Jest（一个流行的 JavaScript 测试框架）为一个简单的 `add` 函数编写了单元测试。
 
@@ -4785,19 +4784,18 @@ test('adds two numbers correctly', () => {
 
 集成测试验证了应用程序中不同单元之间如何协同工作。它侧重于测试各个组件之间的交互，以识别由于这些组件集成而可能出现的问题。
 
-```
+
 ```javascript
 // Example 2: Integration Test with Supertest (JavaScript Testing Library)
 
 const request = require('supertest');
 
 const app = require('./app'); // The Express application
-```
-```
+
+
 
 // API 终点的集成测试
 
-```javascript
 // Integration Test for an API endpoint
 
 test('GET /api/users should return a list of users', async () => {
@@ -4821,7 +4819,6 @@ const response = await request(app).get('/api/users');
 
 功能测试从终端用户的角度评估应用程序的功能。它测试整个应用程序，确保其行为运行正确并满足特定需求。
 
-```
 ```javascript
 // Example 3: Functional Test with Cypress (End-to-End Testing Framework)
 // Test the login functionality
@@ -4836,7 +4833,6 @@ describe('Login', () => {
   });
 });
 ```
-```
 
 在上面的示例中，我们使用 Cypress（一个端到端测试框架）为 Web 应用程序的登录功能编写功能测试。
 
@@ -4844,7 +4840,6 @@ describe('Login', () => {
 
 性能测试评估应用程序在不同条件（如高负载或高流量）下的响应能力、稳定性和可扩展性。
 
-```
 ```javascript
 // Example 4: Performance Test with Artillery (Load Testing Tool)
 
@@ -4855,7 +4850,6 @@ phases:
   arrivalRate: 10
 scenarios:
 ```
-```
 
 ```
 - flow:
@@ -4865,7 +4859,6 @@ scenarios:
       json: '$.length'
   - think: 5
 engine: 'http'
-```
 ```
 
 在上面的示例中，我们使用 Artillery（一个负载测试工具）为 API 终点定义了性能测试场景。
