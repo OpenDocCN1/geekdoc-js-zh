@@ -995,6 +995,7 @@
 +   [Microsoft Word 目录.doc](docs/microsoft-word---table-of-contentsdoc/README.md)
 +   [JavaScript 任务 (Mission： Code (Alternator Books ))](docs/mission-javascript-mission-code-alternator-books/README.md)
 +   [Perl 开发者秘籍](docs/mod-perl-developers-cookbook/README.md)
++   [Perl 开发者秘籍 (Developer's Library)](docs/mod-perl-developers-cookbook-developers-library/README.md)
 +   [现代异步 JavaScript 入门指南](docs/modern-asynchronous-javascript/README.md)
 +   [Modern JavaScript 入门指南](docs/modern-javascript/README.md)
 +   [现代 JavaScript 应用](docs/modern-javascript-applications/README.md)
