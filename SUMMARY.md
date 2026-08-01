@@ -1016,6 +1016,7 @@
 +   [Murach's Javascript 和 DOM 脚本编程](docs/murachs-javascript-and-dom-scripting/README.md)
 +   [Murach's JavaScript 和 jQuery：从初学者到高级指南](docs/murachs-javascript-and-jquery-beginner-to-pro/README.md)
 +   [Murach's JavaScript 和 jQuery：训练与参考指南](docs/murachs-javascript-and-jquery-training-et-reference/README.md)
++   [Murach's JavaScript：训练与参考指南](docs/murachs-javascript-training-reference/README.md)
 +   [Murach's MySQL 第二版](docs/murachs-mysql-2nd-edition/README.md)
 +   [我的神奇故障程序妙集：卷1 - JavaScript](docs/my-amazing-book-of-broken-programs-vol1---javascript/README.md)
 +   [MySQL 入门指南（编程语言 - JavaScript, Java, MySQL, PHP 及使用 Python 自动化）](docs/mysql-guide-for-beginner-programming-languages---javascript-/README.md)
