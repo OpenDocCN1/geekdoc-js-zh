@@ -1,0 +1,971 @@
+groups: []
+pages:
+- img_proc: false
+  md: '# # Let''s Ask ChatGPT:
+
+
+    # ## How to Learn HTML, CSS, and JavaScript in 45 minutes
+
+
+    ![](bbox=[0.147, 0.603, 0.852, 0.758])
+
+
+    Israel Joshua Chukwubueze'
+  merge: -1
+  pgno: 0
+- img_proc: false
+  md: '# LET’S ASK CHATGPT:
+
+
+    # How to Learn HTML, CSS, and JavaScript in 45 minutes
+
+
+    Copyright @ 2024 by Israel Joshua Chukwubueze
+
+
+    All rights reserved, no portion of this book may be reproduced, stored in a retrieval
+    system, or transmitted in any form or by any means – electronic, mechanical, photocopy,
+    recording, scanning, or other except for brief quotations in critical reviews
+    or articles, without the prior written permission of the publisher.
+
+
+    This book may be purchased in bulk for educational, business, fundraising, or
+    sales promotional use.
+
+
+    ISBN:
+
+
+    Published by: Ekesy In-Outdoor Company
+
+
+    10B, Mufutau Opeifa Street, Oke-Odo, Ile-Epo B/Stop, Alimosho, Lagos, Nigeria'
+  merge: -1
+  pgno: 1
+- img_proc: false
+  md: 'Email: care@israeljoshua.com.ng
+
+
+    Tel: +234 803 815 4459, +234 813 2228 534
+
+
+    Printed by: Demrok Prints
+
+
+    # For information, please contact us @
+
+
+    care@israeljoshua.com.ng
+
+
+    israeljoshua.com.ng
+
+
+    Call: +234 803 815 4459
+
+
+    Watsapp: +234 803 813 2228 534'
+  merge: -1
+  pgno: 2
+- img_proc: false
+  md: '# TABLE OF CONTENT
+
+
+    +   Dedication
+
+    Preface
+
+    Chapter 1: Introduction to HTML
+
+    Chapter 2: HTML Tags and Elements
+
+    Chapter 3: HTML Formatting
+
+    Chapter 4: Introduction to CSS
+
+    Chapter 5: CSS Selectors
+
+    Chapter 6: CSS Box Model
+
+    Chapter 7: CSS Layouts
+
+    Chapter 8: Introduction to JavaScript
+
+    Chapter 9: JavaScript Functions
+
+    Chapter 10: JavaScript Conditionals
+
+    Chapter 11: JavaScript Loops
+
+    Chapter 12: JavaScript Arrays
+
+    Chapter 13: JavaScript Objects
+
+    Chapter 14: JavaScript DOM Manipulation
+
+    Chapter 15: HTML and CSS Integration
+
+    Chapter 16: HTML, CSS, and JavaScript Mini Project 1: Calculator
+
+    Chapter 17: HTML, CSS, and JavaScript Mini Project 2: Signup Form
+
+    Chapter 18: HTML, CSS, and JavaScript Mini Project 3: Puzzle Table Game
+
+    Chapter 19: HTML, CSS, and JavaScript Mini Project 4: To-Do List
+
+    Chapter 20: HTML and CSS Mini Coding Examples (Part 1)
+
+    Chapter 21: HTML and CSS Mini Coding Examples (Part 2)'
+  merge: -1
+  pgno: 3
+- img_proc: false
+  md: '# Chapter 22: HTML, CSS, and JavaScript Mini Coding Examples (Part 1)
+
+
+    # Chapter 23: HTML, CSS, and JavaScript Mini Coding Examples (Part 2)
+
+
+    # Chapter 24: Advanced HTML Techniques
+
+
+    # Chapter 25: Advanced CSS Techniques
+
+
+    # Chapter 26: Advanced JavaScript Concepts
+
+
+    # Chapter 27: Conclusion and Next Steps'
+  merge: -1
+  pgno: 4
+- img_proc: false
+  md: '# DEDICATION:
+
+
+    I dedicate this book, "Let''s Ask ChatGPT: How to Learn HTML, CSS, and JavaScript
+    in 45 minutes" to the following:
+
+
+    To the Almighty God, who has bestowed upon me the ability to learn, create, and
+    share knowledge. Thank you for guiding me throughout this journey and inspiring
+    me to explore the fascinating world of web development.
+
+
+    To my children, who constantly remind me of the importance of curiosity, perseverance,
+    and continuous learning. Your innocence and eagerness to discover new things inspire
+    me every day. This book is dedicated to you, my little ones. May it serve as a
+    reminder that with determination, there are no limits to what you can achieve.
+
+
+    To my dear mother, whose unwavering support and belief in my abilities have fueled
+    my ambition and nurtured my dreams. Thank you for instilling me in a love for
+    knowledge and the courage to pursue my passions. Your guidance and encouragement
+    are deeply appreciated.
+
+
+    And finally, to my readers, who have entrusted me with the opportunity to share
+    my knowledge and insights. This book is dedicated to you, the curious minds, the
+    aspiring web developers, and those embarking on their learning journey. May this
+    book be a valuable resource that empowers you to dive into the fascinating world
+    of HTML, CSS, and JavaScript. Your enthusiasm and dedication to learning inspire
+    me to continue sharing knowledge and making a difference.'
+  merge: -1
+  pgno: 5
+- img_proc: false
+  md: 'May this dedication serve as a reminder of the love,
+
+    support, and gratitude that underpin this book. Together, let
+
+    us embark on a journey of learning, growth, and
+
+    transformation in the realm of web development.
+
+    Thank you, and happy coding!'
+  merge: -1
+  pgno: 6
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 7
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 8
+- img_proc: false
+  md: 'I would like to express my deepest gratitude to the team at OpenAI for their
+    incredible work in developing ChatGPT, which has revolutionized the way we interact
+    with artificial intelligence. Their dedication to advancing the field of natural
+    language processing has made it possible to create a book that integrates the
+    capabilities of AI to enhance the learning experience.
+
+
+    I would also like to thank my family and loved ones for their unwavering support
+    and encouragement. Their belief in me and my passion for writing has been a constant
+    source of motivation. To my readers, thank you for embarking on this journey with
+    me. It is my sincere hope that this book will not only equip you with the necessary
+    skills to excel in web development but also ignite a lifelong love for learning
+    and exploring new technologies.
+
+
+    So, without further ado, let us dive into the captivating world of HTML, CSS,
+    and JavaScript. Together, let us embark on an educational adventure that will
+    empower you to create stunning websites, craft exceptional user experiences, and
+    unlock the endless possibilities of web development.
+
+
+    Happy coding!
+
+
+    # Israel Joshua Chukwubueze
+
+
+    (formerly known as Christopher Okade)'
+  merge: -1
+  pgno: 9
+- img_proc: false
+  md: '# # ABOUT THE AUTHOR:
+
+
+    # ## Israel Joshua Chukwubueze
+
+
+    You can find out more about the Author’s Books on Amazon Click here to [Learn
+    more...](https://www.amazon.com/stores/Israel-Joshua-Chukwubueze/author/B0BHF5T1V7)
+
+
+    **The Author’s Official Website**\Learn more about the Official Passion, Talents
+    and Skills
+
+
+    Click here to [Learn more...](https://israeloshua.com.ng)
+
+
+    I know you will Enjoy this Book and don’t forget to leave a review for this book.
+
+    **Click Here to Leave a Review!**'
+  merge: -1
+  pgno: 10
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 11
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 12
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 13
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 14
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 15
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 16
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 17
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 18
+- img_proc: false
+  md: of webpages.
+  merge: -1
+  pgno: 19
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 20
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 21
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 22
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 23
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 24
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 25
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 26
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 27
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 28
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 29
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 30
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 31
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 32
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 33
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 34
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 35
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 36
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 37
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 38
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 39
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 40
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 41
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 42
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 43
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 44
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 45
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 46
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 47
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 48
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 49
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 50
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 51
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 52
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 53
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 54
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 55
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 56
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 57
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 58
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 59
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 60
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 61
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 62
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 63
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 64
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 65
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 66
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 67
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 68
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 69
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 70
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 71
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 72
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 73
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 74
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 75
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 76
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 77
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 78
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 79
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 80
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 81
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 82
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 83
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 84
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 85
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 86
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 87
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 88
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 89
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 90
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 91
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 92
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 93
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 94
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 95
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 96
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 97
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 98
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 99
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 100
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 101
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 102
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 103
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 104
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 105
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 106
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 107
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 108
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 109
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 110
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 111
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 112
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 113
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 114
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 115
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 116
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 117
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 118
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 119
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 120
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 121
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 122
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 123
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 124
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 125
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 126
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 127
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 128
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 129
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 130
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 131
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 132
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 133
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 134
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 135
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 136
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 137
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 138
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 139
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 140
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 141
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 142
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 143
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 144
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 145
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 146
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 147
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 148
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 149
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 150
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 151
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 152
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 153
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 154
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 155
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 156
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 157
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 158
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 159
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 160
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 161
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 162
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 163
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 164
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 165
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 166
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 167
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 168
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 169
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 170
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 171
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 172
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 173
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 174
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 175
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 176
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 177
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 178
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 179
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 180
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 181
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 182
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 183
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 184
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 185
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 186
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 187
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 188
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 189
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 190
+- img_proc: false
+  md: ''
+  merge: -1
+  pgno: 191
+toc: []

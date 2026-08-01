@@ -933,6 +933,7 @@
 +   [学习 iOS 4：JavaScript 程序员 SDK 指南](docs/learning-the-ios-4-sdk-for-javascript-programmers/README.md)
 +   [Learning TypeScript 5：超越 JavaScript，为大型项目构建更具维护性和健壮性的 Web](docs/learning-typescript-5-go-beyond-javascript-to-build-more-mai/README.md)
 +   [Web 设计学习：使用 Html、Css、Javascript 和 Web 图形创建互动网站的实用指南](docs/learning-web-design-website-a-practical-guide-to-creating-en/README.md)
++   [让我们问问 ChatGPT：45 分钟学会学习 HTML、CSS 和 JavaScript (ChatGPT 书籍写作与 AI 工具 1)](docs/lets-ask-chatgpt-how-to-learn-html-css-and-javascript-in-45-/README.md)
 +   [进阶 JavaScript：TypeScript 实用指南](docs/level-up-your-javascript-a-practical-guide-to-typescript/README.md)
 +   [Javascript 学习手册](docs/lrn-js/README.md)
 +   [Rust 学习手册 🚧](docs/lrn-rust/README.md)
