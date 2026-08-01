@@ -14240,7 +14240,7 @@ def parent(self, index):
 ```
 class MainForm(QDialog):
     def __init__(self, parent=None):
-```
+
 
 super(MainForm, self).__init__(parent)
 self.model = BarGraphModel()
