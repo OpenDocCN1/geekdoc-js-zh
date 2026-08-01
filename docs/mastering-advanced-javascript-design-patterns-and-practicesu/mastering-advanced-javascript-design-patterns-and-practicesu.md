@@ -7933,6 +7933,7 @@ const config = { port: 8080 };
 freezeProperty(config, 'port');
 config.port = 3000; // 在非严格模式下此赋值将静默失败
 config.port 保持为 8080。
+```
 
 反射还涵盖了与底层原型的交互。`Reflect.getPrototypeOf` 和 `Reflect.setPrototypeOf` 方法提供了对对象原型链的受控访问，这在设计继承体系或在动态语境下模拟经典继承模式时是必不可少的。对于高级用户，谨慎使用这些方法允许在运行时动态重新配置原型，从而实现如调试期间方法实现的热切换或根据执行上下文进行运行时适应等模式。
 
