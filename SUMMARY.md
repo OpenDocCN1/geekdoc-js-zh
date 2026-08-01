@@ -947,6 +947,7 @@
 +   [使用 HTML5、CSS3 和 Javascript 制作等轴视角社交实时游戏](docs/making-isometric-social-real-time-games-with-html5-css3-and-/README.md)
 +   [制作大型多人在线游戏：适用于任何 Phaser JavaScript 游戏框架的开发指南](docs/making-massive-multiplayer-online-games-a-game-development-w/README.md)
 +   [通过培训与外展充分利用数字藏品：创新型图书管理员指南](docs/making-the-most-of-digital-collections-through-training-and-/README.md)
++   [Marijn Haverbeke - Eloquent JavaScript：现代编程入门指南，第3版](docs/marijn-haverbeke---eloquent-javascript-a-modern-introduction/README.md)
 +   [Javascript 高级指南](docs/master-javascript/README.md)
 +   [一日精通 JavaScript：初学者综合指南](docs/master-javascript-in-a-day-a-comprehensive-guide-for-beginne/README.md)
 +   [Ajax、JavaScript 和 PHP 一通精通指南](docs/mastering-ajax-javascript-and-php-all-in-one/README.md)
