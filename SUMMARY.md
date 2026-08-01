@@ -1009,6 +1009,7 @@
 +   [Deno 现代 Web 开发：使用 Svelte、React 和 GraphQL 现代现代 JavaScript 和 TypeScript 代码](docs/modern-web-development-with-deno-develop-modern-javascript-a/README.md)
 +   [JavaScript 模块化编程：通过模块化 JavaScript 代码提升可读性、可维护性和可测试性](docs/modular-programming-with-javascript-modularize-your-javascri/README.md)
 +   [oodle JavaScript 秘籍](docs/moodle-javascript-cookbook/README.md)
++   [Murach JavaScript 与 jQuery 教程](docs/murach-javascript-and-jquery/README.md)
 +   [MySQL 入门指南（编程语言 - JavaScript, Java, MySQL, PHP 及使用 Python 自动化）](docs/mysql-guide-for-beginner-programming-languages---javascript-/README.md)
 +   [Java 开发者的 .NET 指南：迁移至 C#](docs/net-for-java-developers-migrating-to-c-hash/README.md)
 +   [Node.js 入门指南：中级开发者解锁服务器端 JavaScript 力量终极指南](docs/node-js-for-beginner-the-ultimade-guide-for-intermediate-dev/README.md)
