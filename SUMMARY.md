@@ -993,6 +993,7 @@
 +   [JavaScript 任务 (Mission： Code (Alternator Books ))](docs/mission-javascript-mission-code-alternator-books/README.md)
 +   [现代异步 JavaScript 入门指南](docs/modern-asynchronous-javascript/README.md)
 +   [Modern JavaScript 入门指南](docs/modern-javascript/README.md)
++   [现代 JavaScript 打包：Rollup 开发者与工程师权威指南](docs/modern-javascript-bundling-with-rollupdefinitive-reference-f/README.md)
 +   [适合急躁者的现代 JavaScript](docs/modern-javascript-for-the-impatient/README.md)
 +   [现代 JavaScript 工具与技能](docs/modern-javascript-tools-skills/README.md)
 +   [Next.js 现代 Web 应用：学习构建和部署现代、可扩展且生产级 React 应用的高级技术](docs/modern-web-applications-with-next-js-learn-advanced-techniqu/README.md)
