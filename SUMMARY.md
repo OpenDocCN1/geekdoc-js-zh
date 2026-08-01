@@ -944,6 +944,7 @@
 +   [Macromedia - Macromedia Flash MX 2004, Flash JavaScript 字典](docs/macromedia---macromedia-flash-mx-2004-flash-javascript-dicti/README.md)
 +   [可维护的 JavaScript](docs/maintainable-javascript/README.md)
 +   [使用 Replit 和 Kaboom  Javascript 游戏](docs/make-javascript-games-with-replit-and-kaboom/README.md)
++   [使用 HTML5、CSS3 和 Javascript 制作等轴视角社交实时游戏](docs/making-isometric-social-real-time-games-with-html5-css3-and-/README.md)
 +   [制作大型多人在线游戏：适用于任何 Phaser JavaScript 游戏框架的开发指南](docs/making-massive-multiplayer-online-games-a-game-development-w/README.md)
 +   [Javascript 高级指南](docs/master-javascript/README.md)
 +   [一日精通 JavaScript：初学者综合指南](docs/master-javascript-in-a-day-a-comprehensive-guide-for-beginne/README.md)
