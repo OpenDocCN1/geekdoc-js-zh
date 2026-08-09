@@ -1063,6 +1063,7 @@
 +   [Acrobat 和 LiveCycle Designer PDF 表单秘籍](docs/pdf-forms-using-acrobat-and-livecycle-designer-bible/README.md)
 +   [Acrobat 和 LiveCycle Designer PDF 表单圣经：[为业务构建实用表单；在 Windows 或 Mac 上工作；使用 JavaScript 和 FormCalc 创建脚本]](docs/pdf-forms-using-acrobat-and-livecycle-designer-bible-build-p/README.md)
 +   [Perl 5 程序员笔记本](docs/perl-5-programmers-notebook/README.md)
++   [Perl 入门指南](docs/perl-a-beginners-guide/README.md)
 +   [Perl 黑宝书](docs/perl-black-book/README.md)
 +   [Perl 示例 (第4版)](docs/perl-by-example-4th-edition-by-example/README.md)
 +   [Perl 示例 (第5版)](docs/perl-by-example-5th-edition/README.md)
