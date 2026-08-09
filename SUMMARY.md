@@ -1044,6 +1044,7 @@
 +   [Node.js, MongoDB 和 AngularJS Web 开发：从服务器到前端的 JavaScript Web 应用构建权威指南 (开发者库)](docs/nodejs-mongodb-and-angularjs-web-development-the-definitive-/README.md)
 +   [Node.js：从入门到精通](docs/nodejs-novice-to-ninja/README.md)
 +   [Node.js 相关工具与技能](docs/nodejs-related-tools-skill/README.md)
++   [Node.js 正确之道：可扩展的服务器端 JavaScript 实践](docs/nodejs-the-right-way-practical-server-side-javascript-that-s/README.md)
 +   [Node.js：工具与技能](docs/nodejs-tools-and-skills/README.md)
 +   [面向对象的 JavaScript](docs/object-oriented-javascript/README.md)
 +   [面向对象 JavaScript 第2版](docs/object-oriented-javascript-2nd-edition/README.md)
