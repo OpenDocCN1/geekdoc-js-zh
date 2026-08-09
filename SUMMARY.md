@@ -1079,6 +1079,7 @@
 +   [Perl 编程 (5天)](docs/perl-programming-5-days/README.md)
 +   [IT 安全 Perl 脚本指南](docs/perl-scripting-for-it-security-syngress-2007/README.md)
 +   [Windows 安全 Perl 脚本：实时响应、取证分析与监控](docs/perl-scripting-for-windows-security-live-response-forensic-a/README.md)
++   [Perl 周末速成指南](docs/perl-weekend-crash-course-with-cd-rom/README.md)
 +   [PHP 和 MySQL 初学者指南](docs/php-and-mysql-for-beginners/README.md)
 +   [PHP 快速简单的 Web 开发，第 2 版（快速简单的 Web 开发）](docs/php-fast-easy-web-development-2nd-edition-fast-easy-web-deve/README.md)
 +   [PHP 快速简单的 Web 开发，第 2 版](docs/php-fast-easy-web-development-2nd-editionteam-lib/README.md)
