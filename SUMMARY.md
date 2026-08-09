@@ -1059,6 +1059,7 @@
 +   [论 Perl：学生与专业人士的 Perl](docs/on-perl-perl-for-students-and-professionals/README.md)
 +   [使用 Webpack 和 Babel 优化 性能：通过高级模块打包和代码转译减少 JavaScript 应用的加载时间并提高代码效率](docs/optimizing-web-performance-with-webpack-and-babel-reducing-l/README.md)
 +   [Javascript (2010)](docs/oreilly---javascript-2010-attica/README.md)
++   [适应 Web 标准的大纲与要点：大型网站的 CSS 和 Ajax](docs/outlines-highlights-for-adapting-to-web-standards-css-and-aj/README.md)
 +   [Acrobat 和 LiveCycle Designer PDF 表单圣经：[为业务构建实用表单；在 Windows 或 Mac 上工作；使用 JavaScript 和 FormCalc 创建脚本]](docs/pdf-forms-using-acrobat-and-livecycle-designer-bible-build-p/README.md)
 +   [Perl 数据库编程圣经](docs/perl-database-programming-bible/README.md)
 +   [Perl 快速 Web Web 开发](docs/perl-fast-easy-web-development-fast-easy-web-development/README.md)
