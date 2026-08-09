@@ -1035,6 +1035,7 @@
 +   [Node.js 入门指南：中级开发者解锁服务器端 JavaScript 力量终极指南](docs/node-js-for-beginner-the-ultimade-guide-for-intermediate-dev/README.md)
 +   [Node.js：基于 JavaScript 的框架快速上手指南](docs/node-js-javascript-based-framework-easy-guide-book/README.md)
 +   [Node JS：从基础到实践精通 JavaScript 平台](docs/node-js-master-the-in-demand-javascript-platform-from-basics/README.md)
++   [Node.js：从新手到忍者](docs/node-js-novice-to-ninja/README.md)
 +   [Node.js 与 Javascript 编程简明：编程初学者指南 - 2 合 1](docs/nodejs-and-javascript-programming-made-simple-a-beginners-gu/README.md)
 +   [.NET 开发者的 Node.js (开发者参考)](docs/nodejs-for-net-developers-developer-reference/README.md)
 +   [Node.js 精通：服务器端 JavaScript 综合指南](docs/nodejs-mastery-a-comprehensive-guide-to-server-side-javascri/README.md)
