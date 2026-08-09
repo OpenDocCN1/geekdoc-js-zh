@@ -1021,6 +1021,7 @@
 +   [Murach's JavaScript：训练与参考指南](docs/murachs-javascript-training-reference/README.md)
 +   [Murach's MySQL 第二版](docs/murachs-mysql-2nd-edition/README.md)
 +   [我的神奇故障程序妙集：卷1 - JavaScript](docs/my-amazing-book-of-broken-programs-vol1---javascript/README.md)
++   [Web 开发的 MySQL 和 Perl](docs/mysql-and-perl-for-the-web-landmark/README.md)
 +   [MySQL 入门指南（编程语言 - JavaScript, Java, MySQL, PHP 及使用 Python 自动化）](docs/mysql-guide-for-beginner-programming-languages---javascript-/README.md)
 +   [Java 开发者的 .NET 指南：迁移至 C#](docs/net-for-java-developers-migrating-to-c-hash/README.md)
 +   [HTML5, CSS3 和 JavaScript 的新视角](docs/new-perspectives-on-html5-css3-and-javascript/README.md)
