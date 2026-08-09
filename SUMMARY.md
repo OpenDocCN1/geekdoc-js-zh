@@ -1071,6 +1071,7 @@
 +   [Perl 数据库编程圣经](docs/perl-database-programming-bible/README.md)
 +   [Perl 调试实战](docs/perl-debugged/README.md)
 +   [Perl 开发者字典 (Developer's Library)](docs/perl-developers-dictionary-developers-library/README.md)
++   [Perl：快速简易 Web 开发](docs/perl-fast-easy-web-development/README.md)
 +   [Perl 快速 Web Web 开发](docs/perl-fast-easy-web-development-fast-easy-web-development/README.md)
 +   [面向 C 语言程序员的 Perl](docs/perl-for-c-programmers/README.md)
 +   [Perl 探索 DNA 入门指南](docs/perl-for-exploring-dna/README.md)
