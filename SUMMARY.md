@@ -1041,6 +1041,7 @@
 +   [Node.js 与 Javascript 编程简明：编程初学者指南 - 2 合 1](docs/nodejs-and-javascript-programming-made-simple-a-beginners-gu/README.md)
 +   [.NET 开发者的 Node.js (开发者参考)](docs/nodejs-for-net-developers-developer-reference/README.md)
 +   [Node.js 精通：服务器端 JavaScript 综合指南](docs/nodejs-mastery-a-comprehensive-guide-to-server-side-javascri/README.md)
++   [Node.js、MongoDB 和 Angular Web 开发：使用 MEAN 栈构建 Web 应用的权威指南（第 2 版）（开发者库）](docs/nodejs-mongodb-and-angular-web-development-the-definitive-gu/README.md)
 +   [Node.js, MongoDB 和 AngularJS Web 开发：从服务器到前端的 JavaScript Web 应用构建权威指南 (开发者库)](docs/nodejs-mongodb-and-angularjs-web-development-the-definitive-/README.md)
 +   [Node.js：从入门到精通](docs/nodejs-novice-to-ninja/README.md)
 +   [Node.js 相关工具与技能](docs/nodejs-related-tools-skill/README.md)

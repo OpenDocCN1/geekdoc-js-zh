@@ -1,0 +1,2 @@
++   [Node.js、MongoDB 和 Angular Web 开发：使用 MEAN 栈构建 Web 应用的权威指南（第 2 版）（开发者库）](README.md)
++   [Node.js、MongoDB 和 Angular Web 开发：使用 MEAN 栈构建 Web 应用的权威指南（第 2 版）（开发者库）](nodejs-mongodb-and-angular-web-development-the-definitive-gu.md)
