@@ -1070,6 +1070,7 @@
 +   [Perl 开发者字典 (Developer's Library)](docs/perl-developers-dictionary-developers-library/README.md)
 +   [Perl 快速 Web Web 开发](docs/perl-fast-easy-web-development-fast-easy-web-development/README.md)
 +   [探索 DNA 的 Perl 入门指南](docs/perl-for-exploring-dna-university-press-scholarship-online/README.md)
++   [Perl 秘籍 [电子资源]：遗留代码转型](docs/perl-medic-electronic-resource-transforming-legacy-code/README.md)
 +   [Perl 药急：遗留代码转型指南](docs/perl-medic-transforming-legacy-code/README.md)
 +   [Perl 编程 (5天)](docs/perl-programming-5-days/README.md)
 +   [IT 安全 Perl 脚本指南](docs/perl-scripting-for-it-security-syngress-2007/README.md)
