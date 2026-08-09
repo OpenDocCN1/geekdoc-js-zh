@@ -1080,6 +1080,7 @@
 +   [Perl 编程 (5天)](docs/perl-programming-5-days/README.md)
 +   [IT 安全 Perl 脚本指南](docs/perl-scripting-for-it-security-syngress-2007/README.md)
 +   [Windows 安全 Perl 脚本：实时响应、取证分析与监控](docs/perl-scripting-for-windows-security-live-response-forensic-a/README.md)
++   [Perl：完全参考](docs/perl-the-complete-reference/README.md)
 +   [Perl Web Sight 工作坊指南](docs/perl-web-sight-workshop/README.md)
 +   [Perl 网站构建指南](docs/perl-web-site-workshop/README.md)
 +   [Perl 周末速成指南](docs/perl-weekend-crash-course-with-cd-rom/README.md)
