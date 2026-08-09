@@ -1031,6 +1031,7 @@
 +   [JavaScript 的新视角 (New Perspectives 系列)](docs/new-perspectives-on-javascript-new-perspectives-series/README.md)
 +   [新程序员入门：JavaScript 编程入门指南](docs/new-programmers-start-here-an-introduction-to-computer-progr/README.md)
 +   [ng-book - AngularJS 完整指南](docs/ng-book---the-complete-book-on-angularjs/README.md)
++   [Node.js API：通过从零构建自己的 Node.js 服务器学习服务器端 JavaScript](docs/node-js-api-learn-server-side-javascript-by-building-your-ow/README.md)
 +   [Node.js 入门指南：中级开发者解锁服务器端 JavaScript 力量终极指南](docs/node-js-for-beginner-the-ultimade-guide-for-intermediate-dev/README.md)
 +   [Node.js：基于 JavaScript 的框架快速上手指南](docs/node-js-javascript-based-framework-easy-guide-book/README.md)
 +   [Node JS：从基础到实践精通 JavaScript 平台](docs/node-js-master-the-in-demand-javascript-platform-from-basics/README.md)
