@@ -1023,6 +1023,7 @@
 +   [我的神奇故障程序妙集：卷1 - JavaScript](docs/my-amazing-book-of-broken-programs-vol1---javascript/README.md)
 +   [MySQL 入门指南（编程语言 - JavaScript, Java, MySQL, PHP 及使用 Python 自动化）](docs/mysql-guide-for-beginner-programming-languages---javascript-/README.md)
 +   [Java 开发者的 .NET 指南：迁移至 C#](docs/net-for-java-developers-migrating-to-c-hash/README.md)
++   [新程序员入门：JavaScript 编程入门指南](docs/new-programmers-start-here-an-introduction-to-computer-progr/README.md)
 +   [Node.js 入门指南：中级开发者解锁服务器端 JavaScript 力量终极指南](docs/node-js-for-beginner-the-ultimade-guide-for-intermediate-dev/README.md)
 +   [Node.js：基于 JavaScript 的框架快速上手指南](docs/node-js-javascript-based-framework-easy-guide-book/README.md)
 +   [Node JS：从基础到实践精通 JavaScript 平台](docs/node-js-master-the-in-demand-javascript-platform-from-basics/README.md)
