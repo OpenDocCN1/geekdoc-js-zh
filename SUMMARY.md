@@ -1047,6 +1047,8 @@
 +   [Node.js 相关工具与技能](docs/nodejs-related-tools-skill/README.md)
 +   [Node.js 正确之道：可扩展的服务器端 JavaScript 实践](docs/nodejs-the-right-way-practical-server-side-javascript-that-s/README.md)
 +   [Node.js：工具与技能](docs/nodejs-tools-and-skills/README.md)
++   [养老院：家庭的旅程](docs/nursing-homes-the-familys-journey/README.md)
++   [面向对象构建手册：基于工具与材料方法的面向应用软件开发](docs/object-oriented-construction-handbook-developing-application/README.md)
 +   [面向对象的 JavaScript](docs/object-oriented-javascript/README.md)
 +   [面向对象 JavaScript 第2版](docs/object-oriented-javascript-2nd-edition/README.md)
 +   [面向对象 JavaScript 第3版](docs/object-oriented-javascript-3rd-edition/README.md)
