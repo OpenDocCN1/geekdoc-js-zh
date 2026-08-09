@@ -1068,6 +1068,7 @@
 +   [Perl 数据库编程圣经](docs/perl-database-programming-bible/README.md)
 +   [Perl 调试实战](docs/perl-debugged/README.md)
 +   [Perl 快速 Web Web 开发](docs/perl-fast-easy-web-development-fast-easy-web-development/README.md)
++   [探索 DNA 的 Perl 入门指南](docs/perl-for-exploring-dna-university-press-scholarship-online/README.md)
 +   [Perl 药急：遗留代码转型指南](docs/perl-medic-transforming-legacy-code/README.md)
 +   [IT 安全 Perl 脚本指南](docs/perl-scripting-for-it-security-syngress-2007/README.md)
 +   [PHP 和 MySQL 初学者指南](docs/php-and-mysql-for-beginners/README.md)
