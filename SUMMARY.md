@@ -1067,6 +1067,7 @@
 +   [Perl 黑宝书](docs/perl-black-book/README.md)
 +   [Perl 示例 (第4版)](docs/perl-by-example-4th-edition-by-example/README.md)
 +   [Perl 示例 (第5版)](docs/perl-by-example-5th-edition/README.md)
++   [Perl, CGI 和 JavaScript 完全指南（第 2 版）](docs/perl-cgi-and-javascript-complete-2nd-edition/README.md)
 +   [Perl 数据库编程圣经](docs/perl-database-programming-bible/README.md)
 +   [Perl 调试实战](docs/perl-debugged/README.md)
 +   [Perl 开发者字典 (Developer's Library)](docs/perl-developers-dictionary-developers-library/README.md)
