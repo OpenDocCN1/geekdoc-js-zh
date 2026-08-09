@@ -1072,6 +1072,7 @@
 +   [探索 DNA 的 Perl 入门指南](docs/perl-for-exploring-dna-university-press-scholarship-online/README.md)
 +   [Perl 药急：遗留代码转型指南](docs/perl-medic-transforming-legacy-code/README.md)
 +   [IT 安全 Perl 脚本指南](docs/perl-scripting-for-it-security-syngress-2007/README.md)
++   [Windows 安全 Perl 脚本：实时响应、取证分析与监控](docs/perl-scripting-for-windows-security-live-response-forensic-a/README.md)
 +   [PHP 和 MySQL 初学者指南](docs/php-and-mysql-for-beginners/README.md)
 +   [PHP 快速简单的 Web 开发，第 2 版（快速简单的 Web 开发）](docs/php-fast-easy-web-development-2nd-edition-fast-easy-web-deve/README.md)
 +   [PHP 快速简单的 Web 开发，第 2 版](docs/php-fast-easy-web-development-2nd-editionteam-lib/README.md)
