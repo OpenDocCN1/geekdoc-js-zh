@@ -1052,6 +1052,8 @@
 +   [面向对象的 JavaScript](docs/object-oriented-javascript/README.md)
 +   [面向对象 JavaScript 第2版](docs/object-oriented-javascript-2nd-edition/README.md)
 +   [面向对象 JavaScript 第3版](docs/object-oriented-javascript-3rd-edition/README.md)
++   [面向对象的 PHP 概念、技术与代码 - 索引](docs/object-oriented-php-concepts-techniques-and-code---includes-/README.md)
++   [Official BBC Micro：bit 用户指南](docs/official-bbc-micro-bit-user-guide/README.md)
 +   [使用 Webpack 和 Babel 优化 性能：通过高级模块打包和代码转译减少 JavaScript 应用的加载时间并提高代码效率](docs/optimizing-web-performance-with-webpack-and-babel-reducing-l/README.md)
 +   [Acrobat 和 LiveCycle Designer PDF 表单圣经：[为业务构建实用表单；在 Windows 或 Mac 上工作；使用 JavaScript 和 FormCalc 创建脚本]](docs/pdf-forms-using-acrobat-and-livecycle-designer-bible-build-p/README.md)
 +   [Perl 数据库编程圣经](docs/perl-database-programming-bible/README.md)
