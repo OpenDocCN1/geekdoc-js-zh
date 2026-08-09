@@ -1064,6 +1064,7 @@
 +   [Acrobat 和 LiveCycle Designer PDF 表单圣经：[为业务构建实用表单；在 Windows 或 Mac 上工作；使用 JavaScript 和 FormCalc 创建脚本]](docs/pdf-forms-using-acrobat-and-livecycle-designer-bible-build-p/README.md)
 +   [Perl 5 程序员笔记本](docs/perl-5-programmers-notebook/README.md)
 +   [Perl 黑宝书](docs/perl-black-book/README.md)
++   [Perl 示例 (第4版)](docs/perl-by-example-4th-edition-by-example/README.md)
 +   [Perl 数据库编程圣经](docs/perl-database-programming-bible/README.md)
 +   [Perl 调试实战](docs/perl-debugged/README.md)
 +   [Perl 快速 Web Web 开发](docs/perl-fast-easy-web-development-fast-easy-web-development/README.md)
