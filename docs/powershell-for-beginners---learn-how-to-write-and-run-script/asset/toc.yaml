@@ -1,0 +1,58 @@
+- - '#'
+  - PowerShell 初学者指南：学习如何在 PowerShell 命令行编写并运行脚本（Python 编程、Javascript、计算机编程）
+- - '##'
+  - 给您的额外赠品！
+- - '##'
+  - 引言
+- - '##'
+  - 第 1 章 – PowerShell 的功能
+- - '##'
+  - 第 2 章 – 开始使用您的 PowerShell
+- - '###'
+  - 操作系统要求
+- - '###'
+  - 微软 .NET 框架要求
+- - '###'
+  - WS-Management
+- - '###'
+  - 3.0 实例化
+- - '###'
+  - 图形用户界面要求
+- - '###'
+  - Windows PowerShell 引擎要求
+- - '###'
+  - Windows 预安装环境
+- - '##'
+  - 第 3 章 – 安装 Windows PowerShell
+- - '###'
+  - 在您的 Windows 7 和 R2 Windows Server 上安装 PowerShell
+- - '###'
+  - 在 Windows Server Core 上安装 PowerShell
+- - '##'
+  - 在 Windows Server 2008 上安装 Windows PowerShell
+- - '##'
+  - Windows PowerShell 使用技巧
+- - '##'
+  - 安装帮助文件
+- - '##'
+  - 运行脚本
+- - '##'
+  - 激活远程化
+- - '##'
+  - 第 4 章 – 如何从 PowerShell 命令行编写和运行脚本
+- - '###'
+  - 创建脚本文件
+- - '###'
+  - 打开现有脚本
+- - '##'
+  - 第 5 章 脚本的命令与过程
+- - '###'
+  - 01 阶段：变量
+- - '###'
+  - 02 阶段：Do-White, If/Then 和 forEach
+- - '####'
+  - If/Then
+- - '####'
+  - Do While 示例
+- - '##'
+  - 结论

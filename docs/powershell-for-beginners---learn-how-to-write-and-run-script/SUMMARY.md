@@ -1,0 +1,2 @@
++   [PowerShell 初学者指南：学习如何在 PowerShell 命令行编写并运行脚本（Python 编程、Javascript、计算机编程）](README.md)
++   [PowerShell 初学者指南：学习如何在 PowerShell 命令行编写并运行脚本（Python 编程、Javascript、计算机编程）](powershell-for-beginners---learn-how-to-write-and-run-script.md)

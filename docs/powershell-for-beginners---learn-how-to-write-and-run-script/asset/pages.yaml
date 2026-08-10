@@ -1,0 +1,1168 @@
+- img_proc: true
+  md: '# POWER SHELL
+
+
+    For Beginners - Learn How To Write And Run Scripts From The PowerShell Command
+    Line
+
+
+    ![](img/dcd30329fa29a8abe29fc8f78488dd81_0_0.png)
+
+
+    DAVID LARSON'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: '# PowerShell:
+
+    For Beginners! - Learn How To Write And Run Scripts From The PowerShell Command
+    Line'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: '# # Bonus Gift For You!
+
+
+    ![](img/dcd30329fa29a8abe29fc8f78488dd81_2_0.png)
+
+
+    Get **free** access to your complimentary book “Amazon Book Bundle: Complete User
+    Guides To 5 Amazon Products” by clicking the link below.
+
+
+    [>>>CLICK HERE TO DOWNLOAD<<<](https://freebookpromo.leadpages.co/amazon-book-bundle/)
+
+    (or go to: https://freebookpromo.leadpages.co/amazon-book-bundle/)'
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: '# # Table Of Contents
+
+
+    +   - Introduction
+
+
+    +   - Chapter 1 – Features of PowerShell
+
+
+    +   - Chapter 2 – Getting Started with Your PowerShell
+
+
+    +   - Chapter 3 – Installation of Windows PowerShell
+
+
+    +   - Chapter 4 – How to Write and Run Scripts from the PowerShell Command Line
+
+
+    +   - Chapter 5 – Commands and Procedures of Script
+
+
+    +   - Conclusion'
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: '# Copyright 2016 - All rights reserved.
+
+
+    This document is geared towards providing exact and reliable information in regards
+    to the topic and issue covered. The publication is sold with the idea that the
+    publisher is not required to render legal, financial, medical or any professional
+    services. If advice is necessary, legal or professional, a practised individual
+    in the profession should be ordered.
+
+
+    In no way is it legal to reproduce, duplicate, or transmit any part of this document
+    in either electronic means or in printed format. Recording of this publication
+    is strictly prohibited and any storage of this document is not allowed unless
+    with written permission from the publisher. All rights reserved.
+
+
+    The information provided herein is stated to be truthful and consistent, in that
+    any liability, in terms of inattention or otherwise, by any usage or abuse of
+    any policies, processes, or directions contained within is the solitary and utter
+    responsibility of the recipient reader. Under no circumstances will any legal
+    responsibility or blame be held against the publisher for any reparation, damages,
+    or monetary loss due to the information herein, either directly or indirectly.
+
+
+    The information herein is offered for informational purposes solely, and is universal
+    as so. The presentation of the information is without contract or any type of
+    guarantee assurance.
+
+
+    The trademarks that are used are without any consent, and the publication of the
+    trademark is without permission or backing by the trademark owner. All trademarks
+    and brands within the book are for clarifying purposes only and are owned by the
+    owners themselves, not affiliated with this document.'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: '# Introduction
+
+
+    PowerShell including PowerShell Core and Windows PowerShell is a configuration
+    management and task automation framework. It is offered from Microsoft and has
+    allied scripting language and one command-line shell built on .NET Framework.
+
+    It provides complete access to WMI and COM, permitting administrators to execute
+    administrative activities on both remote and local Windows system and CIM and
+    WS-Management enabling the excellent management of remote network devices and
+    Linux systems. Initially, one Windows component, the PowerShell was created cross-platform
+    and open-source on 18th August 2016.
+
+
+    In the PowerShell, the administrative chores are typically performed by command-lets
+    (cmdlets) and are particular .NET classes executing a specific operation. The
+    cmdlets sets can be united into scripts and executable that are standalone applications
+    and by instantiating steady .NET classes or COM/WMI objects.
+
+
+    They often work by retrieving data in various stores of data, such as registry
+    or file systems that are available to the runtime PowerShell through providers
+    of PowerShell. It provides one API hosting and the PowerShell runtime may be embedded
+    in various other applications.
+
+
+    These apps use the functionality of PowerShell to implement particular operations,
+    such exposed via graphic interface. This ability is used by the servers of Microsoft
+    to expose the functionality of management because cmdlets of PowerShell and providers
+    implement the tools of graphical management as the hosts of PowerShell. It may
+    invoke the essential cmdlets.'
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: '# Chapter 1 – Features of PowerShell
+
+
+    PowerShell has extensive console-based assistance and it is similar to the man
+    pages in the Unix shells via cmdlet of Get-Help. Local contents often retrieve
+    from internet through update-help cmdlet. It helps you from the web and you can
+    acquire it on a regular basis through the -online switch for Get-help.
+
+
+    Windows 10 is available with the PowerShell 5.0 and the Windows 8.1 is available
+    with PowerShell 4.0. This latest version hosts many new features and these are
+    designed to make language simple, easy to use, and avoid some common errors.
+
+
+    If you want to use early version of this PowerShell on the operating system Windows,
+    you can migrate to the required version of PowerShell to increase its benefits.
+    It helps the system administrators to easily manage and check every aspect of
+    Windows. It also offers particular control over Lync-backend servers, Exchange
+    and SQL.
+
+
+    You can find out the PowerShell version with the help of the following commands
+    and press Enter:
+
+
+    ![](img/dcd30329fa29a8abe29fc8f78488dd81_9_0.png)
+
+
+    +   - $psversiontable
+
+    - $host.version
+
+    - get-host|Select-Object version
+
+
+    # Features of PowerShell
+
+
+    The 3.0 PowerShell is introduced with new functions, such as:
+
+
+    +   - Workflows of Windows PowerShell
+
+    - Cmdlets over-objects (CDXML)
+
+    - CIM cmdlets
+
+    - Web Access of Windows PowerShell'
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: '+   - Automatic loading Module
+
+
+    +   - Disconnected and Robust sessions
+
+
+    +   - Scheduled jobs
+
+
+    +   - Updatable Help
+
+
+    The features of Windows 4.0 PowerShell are as follows:
+
+
+    +   - Web Access to the improvements of Windows PowerShell
+
+
+    +   - Desired-State-Configuration (DSC)
+
+
+    +   - Windows PowerShell New features Web Services
+
+
+    +   - Workflow enhancements
+
+
+    +   - Save-Help
+
+
+    Features of Windows 5.0 PowerShell have the given functionality, such as:
+
+
+    +   - DSC enhancements
+
+
+    +   - Classes are defined in the functionality
+
+
+    Major augmentations to repairing, such as the capability to repair the jobs of
+    Windows PowerShell
+
+
+    +   - Transcriptions are available in hosts
+
+
+    +   - Module of Network switch
+
+
+    +   - Manage software packages for OneGet
+
+
+    +   - Manage the PowerShell of Windows modules PowerShell via OneGet
+
+
+    +   - Enhance performance with the use of COM objects
+
+
+    Windows 5.0 PowerShell is included in the Windows 10 and introduced the given
+    functionality:
+
+
+    **PowerShell Workflow of Windows**: The capacity brings the actual power of the
+    workflow Foundation of Windows to the PowerShell of Windows. It is easy to write
+    workflows in the XAML or PowerShell Windows language and run these options similar
+    to the cmdlet.
+
+
+    # **Improvements in Current Cmdlets and the Providers**
+
+
+    The PowerShell 3.0 of Windows includes unique features for current cmdlets, including
+    the new parameters and the simple syntax for cmdlets, such as CSV cmdlets and
+    computer Get-Command, GetChildItem, Get-History, Get-Content, Securitycmdlets,
+    Measure-Object, Select-String, Tee-Object, Start-Processes, Test-Connection, .AddMember
+    and Tee-Object.
+
+
+    # **Discovery and Important of Remote Module**'
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: 'The PowerShell 3.0 of windows extends the module of importing discovery and
+    inherent capabilities on the remote computers.
+
+
+    # Cmdlets of the Module
+
+
+    The import modules has capability on the remote computers to your local computer
+    with the use of PowerShell of Windows.
+
+
+    # Session Support of CIM
+
+
+    It offers permission to utilize the WMI and CIM to manage the computers (non-Windows)
+    by importing different commands to your local computer that run indirectly on
+    remote computers.
+
+
+    # Auto-Complete Features
+
+
+    These features will help you save your time and reduce the chances of your typos.
+
+
+    # Intellisense PowerShell 3.0
+
+
+    It helps you to underline the errors that you will make in red and get suggested
+    corrections as you hover the pointer of mouse over a curly line.
+
+
+    # Update-Help Cmdlet
+
+
+    This will help you cure various small errors and annoy typos in the integrated
+    documentation.
+
+
+    # Improve the Solace Host Experience
+
+
+    With the help of underlying changes, the PowerShell console host applications
+    can activate in the PowerShell 3.0. The new "Run with the PowerShell" option in
+    the file explorer will help you to run the scripts in one unrestricted session
+    with right-click.
+
+
+    # Shared and RunAs Host Support
+
+
+    This RunAs feature is particularly designed for the PowerShell workflow of windows
+    and help users of one session confirmation to create different sessions. These
+    sessions will be run with the approval of one shared account user.
+
+
+    This SharedHost new feature helps various users of various computers to easily
+    connect to the workflow session synchronously and track the actual progress of
+    workflow.
+
+
+    # Particular Character Handling Enhancements
+
+
+    With one quick lap all the way around the PowerShell 3.0 Windows shows to expand
+    the ability of program to correctly handle and interpret particular characters,
+    LiteralPath parameter that handle particular characters in the paths is valid
+    on all cmdlets with one path parameter, such as Save-Help cmdlets and Update-Help.'
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: '# Chapter 2 – Getting Started with Your PowerShell
+
+
+    The PowerShell of Windows is one Windows command-line shell and it is designed
+    especially for the system administrators. The PowerShell has one interactive prompt
+    and one scripting environment that can be used in combination or independently.
+
+
+    Unlike other shells that return and accept text. The PowerShell of windows is
+    often built on the top of .Net Framework common language runtime (CLR) and .NET
+    Framework returns and accepts the objects of .Net Framework. This important change
+    in environment transports the whole set of new methods and tools to configure
+    and manage windows.
+
+
+    The PowerShell of Windows often introduces the actual concept of the cmdlet and
+    single function command-line tool in the shell. You can utilize every cmdlet separately
+    and their power can be realized as you use simple tools with complex tasks. The
+    PowerShell of Windows has more than 100 basic cmdlets and you may write your own
+    cmdlets and share these cmdlets with others.
+
+
+    Similar to various others, the PowerShell of Windows offer access to the file
+    system on your computer. The providers of Windows PowerShell enable you to get
+    to the data stores, such as certificate stores of digital signature are easy to
+    access with the file system.
+
+
+    This guide will help you to learn about Windows PowerShell and cmdlets language,
+    utilization of objects and the providers. You will find the requirements of system
+    there along with particular features, including CIM commands, integrated scripting
+    (ISE) environment and the workflows.
+
+
+    # Requirements for Operating System
+
+
+    The 4.0 PowerShell runs on the latest Windows version:
+
+
+    +   - The Windows 8.1, by default installation.
+
+    - 2012 of Windows Server R2, by default installation
+
+    - Windows 07 and its 01 service pack, you will install the 4.0 Framework of Windows
+    to run updated PowerShells.
+
+    - 2008 Windows Server and R2 with the 01 Service Pack, you have to install the
+    4.0 Management Framework of windows to get latest 4.0 PowerShell.
+
+
+    The 3.0 PowerShell versions are available for the given varieties of Windows:
+
+
+    +   - By default installation of Windows 8
+
+    - 2012 Windows installation
+
+
+    # Framework of Microsoft .NET Requirements'
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: '+   • If you want to use Windows 4.0 PowerShell, you should have a complete
+    installation of the 4.5 .NET Framework of the Microsoft. The windows 8.1 and the
+    2012 server R2 have 4.5 .NET Framework for Microsoft by default.
+
+
+    +   • The 3.0 PowerShell of windows requires complete installation of the .NET
+    Framework 0.4. The Server 2012 and Windows 8 have 4.5 .NET Framework of Windows
+    by default; it should fulfill all important requirements.
+
+
+    +   • If you want to install the 4.5 .NET Framework of Microsoft (dotNetFx45_Full_exe),
+    you can get this from the download center of Microsoft
+
+
+    +   • To install the full installation of Microsoft .NET Framework 4 (dotNetFx40_Full_exe),
+    you can get frame work from the download center of Microsoft.
+
+
+    # ## Ws-Management
+
+
+    The 3.0 and 4.0 PowerShell of Windows requires 3.0 WS-Management that supports
+    WSMan protocol and WinRM service. This program may be included in the 8.1 Windows
+    and server R2 2012, Server 2012 and Windows 8 and the 4.0 Framework of Windows
+    management and 3.0 Framework of Windows Management.
+
+
+    # ## Instrumentation 3.0
+
+
+    The 3.0 and 4.0 Windows PowerShell requires the proper management of WMI 3.0 instrumentation.
+    You can get this program in 2012 server of Windows and Windows 8.1 or advanced,
+    R2, Server 2012 and Windows 8, the 4.0 Management Framework. You may not be able
+    to access program on your computer, the features may require WMI and the CIM command
+    may not run.
+
+
+    The 3.0 and 4.0 PowerShell of Windows may be complied against the CLR 4.0 (common
+    linguistic runtime).
+
+
+    # ## Graphical User-Interface Requirements
+
+
+    The PowerShell of Windows is based on console applications that may not require
+    any graphical user-interface. It is suitable for the computers without monitors,
+    user interface and screens, as R2 server 2012 or Windows 2012 server. There are
+    some items that are required for the graphical user interface.
+
+
+    +   • Incorporated Scripting Environment of Windows PowerShell (ISE)
+
+
+    +   • Cmdlets
+
+
+    +   1. Out-GridView
+
+
+    +   2. Show-Command
+
+
+    +   3. Show-ControlPanel'
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: '+   4. Show-EventLog
+
+
+    Structures
+
+
+    +   1. Get-Help cmdlet ShowWindow stricture.
+
+
+    +   2. Register-PSSessionConfiguration, Set-PSSessionConfiguration cmdlets and
+    ShowSecurityDescriptorUI.
+
+
+    # Engine Requirements for Windows PowerShell
+
+
+    It is compatible with the PowerShell 3.0 along 2.0 versions. The cmdlets providers,
+    modules, scripts and snap-ins written for the 2.0 and 3.0 PowerShell may run without
+    any changes in the windows.
+
+
+    Any alteration in one runtime policy for activation in the Microsoft 04 .NET Framework,
+    the PowerShell Windows hosts programs for the 2.0 PowerShell and accumulated with
+    CLR (common language runtime). It is difficult to run without adjustment in the
+    3.0 PowerShell for its compatibility with 4.0 CLR.
+
+
+    2.0 contraception of windows PowerShell requires Microsoft .NET (2.0.50727) Framework
+    at minimum. The 1st Service pack and 3.5 .NET Framework of Microsoft has fulfilled
+    this requirement. Unfortunately, the .NET Framework 04 and later releases are
+    unable to fulfill this requirement.
+
+
+    # Preinstallation Environment of Windows
+
+
+    The 2.0 and 3.0 PowerShell and 4.0 PowerShell of Windows runs in the Preinstallation
+    Environment and the Windows PE. The following cmdlets may not be maintained:
+
+
+    +   * Circumstantial Intellectual Transfer Service Cmdlets
+
+
+    +   * Update-Help
+
+
+    +   * Save-Help
+
+
+    +   * WinRM service
+
+
+    +   * Get-WinEvent
+
+
+    +   * Get-EventLog
+
+
+    These services are not supported by the Windows PE. You can get the advantage
+    of these applications to create scripts and run them as per your needs. Some Windows
+    have by default PowerShell or you can download from a data center of Microsoft.'
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: '# Chapter 3 – Installation of Windows PowerShell
+
+
+    The Windows 8 and 2012 servers have 3.0 PowerShell and all important prerequisites.
+    This system may include the 2.0 PowerShell engine for retrograde compatibility
+    with the host programs that can''t utilize the 3.0 PowerShell of Windows. This
+    preinstalled PowerShell is ready to use and easily handle for everyone.
+
+
+    # Install PowerShell on your Windows 7 along with R2 Windows Server of 2008
+
+
+    These instructions will help you install 30 PowerShell on the computer with Windows
+    07 Service Pack 01 and R2 Windows Server (2008), service pack 01. Before installing
+    the Framework 3.0 of Windows management, you have to uninstall preceding versions
+    of Framework (the Windows-Management-3.0).
+
+
+    +   - Start with complete installation of .Net Framework 04 of Microsoft [dotNetFx40_Full_setup.exe]
+    from the Download Center of Microsoft at http://go.microsoft.com/fwlink/?LinkID=212547
+
+    - You have to install .Net Framework of Microsoft 4.5 (dotNetFx45_Full_setup.exe)
+    from the download center of Microsoft at http://go.microsoft.com/fwlink/?LinkID=242919.
+
+
+    # Install PowerShell on Windows Server Core
+
+
+    The given instructions will explain the installation of the PowerShell 3.0 on
+    Windows the computer running the installation decision of Server Core of 2008
+    R2 Windows Server along with 01 service pack.
+
+
+    The initial step in this procedure uses the DISM (the Deployment-Image-Servicing-and-Management)
+    command to accurately install the 2.0 .Net Framework of Microsoft for the PowerShell
+    2.0 and Server Core. All programs are important for the 3.0 Framework of Windows
+    Management that is installed in the subsequent step.
+
+
+    Before installing the management Framework (3.0) of Windows, you have to uninstall
+    the previous version of the windows 3.0 Framework. To install the 3.0 PowerShell
+    Windows:
+
+
+    You have to start with Cmd.exe
+
+    Now you have to run the DISM commands and these commands will help you to install
+    2.0 .Net Framework and 2.0 PowerShell of Windows.
+
+
+    ```
+
+    disp /online /enable-feature:NetFx2-ServerCore
+
+    dism /online /enable-feature:MicrosoftwindowsPowerShell
+
+    dism /online /enable-feature:NetFx2-ServerCore-WOW64
+
+    ```
+
+
+    You have to install the 4.0 .NET Framework for the Server Staple from the download'
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: 'center of Microsoft with the help of this link: http://go.microsoft.com/fwlink/?LinkId=248450
+
+
+    The 3.0 Framework of Windows Management will be installed from the download center
+    of Microsoft at the given link: http://go.microsoft.com/fwlink/?LinkId=240290.
+
+
+    # Install PowerShell of Windows on the Server 2008 of Windows
+
+
+    You have to install the PowerShell 3.0 of Windows on the computers running the
+    2008 Windows Server with the Service Pack 02. You have to follow the given procedure
+    to install the PowerShell 2.0 and 3.0 Engine:
+
+
+    Before installation of Windows Management 3.0 Framework, you have to uninstall
+    your previous versions of Framework 3.0 Windows Management.
+
+
+    You have to install the 3.5 .NET Framework of Microsoft along with the service
+    pack 01 from the download center of Microsoft: http://go.microsoft.com/fwlink/?LinkId=242910.
+
+
+    You can install the Management Framework of Windows from the download center of
+    windows: http://go.microsoft.com/fwlink/?LinkId=243035.
+
+
+    You have to install the 4 .NET Framework (dotnetFx40_Full_setup.exe) of Microsoft
+    along with the service pack 01 from the download center of Microsoft: http://go.microsoft.com/fwlink/?LinkId=212547
+    and http://go.microsoft.com/fwlink/?LinkId=242919.
+
+
+    To install protection authentication, you can visit http://go.microsoft.com/fwlink/?LinkId=186398.
+
+
+    To install 3.0 Framework of Windows Management from the download center: http://go.microsoft.com/fwlink/?LinkId=240290.
+
+
+    # Tips to Use PowerShell of Windows
+
+
+    After installation, you can start using PowerShell Windows and you can perform
+    various tasks at a time:
+
+
+    # Install Help Files
+
+
+    You have to start your work with help files, such as cmdlets are available in
+    the 3.0 PowerShell of windows with files. You can update-help cmdlet to install
+    and download help files on computer. After installing files, you can use this
+    Get-Help cmdlet to get them displayed at one command line.
+
+
+    # Run Scripts
+
+
+    The default implementation policy of the PowerShell of Windows is restricted to
+    keep your PowerShell secure. This policy proves helpful to easily run cmdlets
+    except scripts. If you want to run scripts, you can use Set-ExecutionPolicy[PSITPro5_Security]
+    cmdlet to'
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: 'modify the implementation policy to RemoteSigned and AllSigned. The members
+    of administrator’s group can run this specific cmdlet on computer.
+
+
+    # Activate Remoting
+
+
+    The system is quite easy to configure to run different remote commands on various
+    other computers. If you are using Windows 2012 server and 2012 R2 server, the
+    system can be configured to accept remove remove commands. It allows other computers
+    to easily run remote commands on local computers.
+
+
+    If you want to activate the running versions of windows to receive remote commands,
+    you have to run cmdlet (Enable-PSRemoting) on computers that you want to remotely
+    manage. The members of Administrators group on computer can easily easily run
+    cmdlet.
+
+
+    If the remoting is enabled on the computer that runs PowerShell 2.0 Windows, the
+    remoting is enabled, once you install the Framework 3.0 of Windows Management.
+    The 2008 Windows Server requires re-enable remoting, after the installation of
+    Windows Management Framework 3.0.'
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: '# Chapter 4 – How to Write and Run Scripts from the PowerShell Command Line
+
+
+    It is easy to open and modify the PowerShell of Windows in your Script Pane.this
+    particular file in windows are .ps1 (script files).sd1 (script-data files) and
+    .psm1 (module file of script. These types of files have syntax colored in the
+    pane editor of script. The other types of files are easy to open in the script
+    pane and configure XML, text and .ps1xml files.
+
+
+    # Create a Script File
+
+
+    If you want to create one script file, you should click on “New” on the tool bar
+    or the file menu and hit “New”. One created file will appeared in one file tab
+    under the existing tab of PowerShell. You should remember that the tabs of PowerShell
+    are visible only when they are in number than one. One type script file is created
+    by default and you can save it with new extension and name. Various script files
+    are often created in the similar PowerShell tab.
+
+
+    # Open One Existing Script
+
+
+    On your toolbar, you have to hit open or you can also check the file menu and
+    hit open and a dialog box will be there. It is easy to select the type of file
+    you want to open and it will be appeared in the new tab.
+
+
+    If you want to close any file, you can hit the (X) icon on your script tab.
+
+
+    On the tab of file, you can check the name of file and qualify the path of your
+    script files
+
+
+    You can run script by hitting its icon in the toolbar and click run after selecting
+    file.
+
+
+    If you want to run one portion of script, you can go to script pane and select
+    a particular portion of script. On the file menu, you can hit “Run selection”
+    on your tool bar and hit run.
+
+
+    On the tool bar, you will get an option to stop the operation or you also hit
+    CTRL+BREAK or hit stop operation on the file menu. You can press CTRL+C and it
+    works well on an already selected text. You can copy function of your selected
+    text easily.
+
+
+    # Enter Script in the Pane
+
+
+    If you want to enter your script in the Pane, you have to move your cursor to
+    the pane by hitting anywhere in the pane or go to your script pane to check menu.
+
+
+    It is easy to create one script and syntax coloring along the tab completion.
+    It will be a great experience because you can easily manage this text. If you
+    want to find something in your text, you can write CTRL+F on Edit Menu and hit
+    “find this in script.",'
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: 'You can press F3 as well as the edit menu to find subsequent in the script.
+    If you want to find any text before your cursor, you can hit SHIFT+F3 on your
+    Edit menu and hit search cut previous in your script.
+
+
+    # Search and Replace Text in Your Script Pane
+
+
+    If you want to search and replace any text, you can hit CTRL+H on your Edit menu
+    and replace in the script. You have to enter both of your text that you want to
+    find and with which you are interested to replace it. You can press Enter.
+
+
+    If you want to move on a specific line in the text of Script Pane, you can press
+    CTRL+G on your edit menu and hit "Go-to-line" and enter one line number.
+
+
+    It is easy to copy text in your script because of the script pane, you can select
+    text and hit CTRL+C on your toolbar. You have to hit the icon available for copy
+    or directly hit copy in the edit menu.
+
+
+    If you are interested to cut a particular part of script in the pane, you can
+    hit CTRL+X on your toolbar or hit the icon available to cut it or you can directly
+    select cut on your Edit menu.
+
+
+    You can paste this text in your script Pane by pressing CTRL+V or hit your paste
+    icon located on your toolbar. On your edit menu, you can hit paste as well.
+
+
+    To undo any kind of action in your Script Pane, you can simply hit CTRL+Z and
+    press undo icon or undo on your edit menu.
+
+
+    To redo any kind of action in your script Pane, you can simply hit CTRL+Y or press
+    redo icon or word redo on your edit menu.
+
+
+    # Tips to Save one Script
+
+
+    If you want to save any script, you can simply hit CTRL+S on your toolbar or press
+    the icon available to save or hit the word "Save" in the menu. The commands of
+    PowerShell scripts are almost similar to Windows.
+
+
+    # Save Script in Particular ASCII Encoding
+
+
+    The PowerShell can save new files of script by default as .ps1, .ps1 and .psml
+    as BigEndianUnicode. If you want to save your script in a separate encoding like
+    ANSI (ASCII), you can use Save As or Save method. There are a few commands that
+    will help you to save your .ps1 script along with ASCII encoding.
+
+
+    ```
+
+    $ips.CurrentFile.SaveAs("MyScript.ps1", [System.Text.Encoding]::ASCII)
+
+    ```
+
+
+    If you want to replace the current file of script with the similar name and ASCII
+    encoding, you can use the given command:'
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: '```
+
+    $psise.CurrentFile.Save([System.Text.Encoding]::ASCII)
+
+    ```
+
+
+    This command will help you to encode your current file.
+
+
+    ```
+
+    $psise.CurrentFile.encoding
+
+    ```
+
+
+    The PowerShell supports different encoding options, such as BigEndianUnicode,
+    ASCII, UTF32, Unicode, UTF7, Default and UTF8.'
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: '# Chapter 5 – Commands and Procedures of Script
+
+
+    The commands and procedures of script is the base of PowerShell. You can get the
+    advantage of framework to create scripts and add some conditionals to make it
+    logical. Scripts of PowerShell are text files with special extensions of ps1.
+    If you want to create one script, you have to enter one bunch of commands in one
+    particular sequence in the notepad file. You can save this as .ps1 and the name
+    should be one friendly description without any space. If you want run the PowerShell
+    script, you can enter the window of PowerShell.
+
+
+    You have to write the complete directory containing name of folder and file of
+    the particular script, such as:
+
+
+    ```
+
+    c:\powershell\myscript.ps1
+
+    ```
+
+
+    If the script is located in the present directory and the console may use one
+    period and backslash, such as: \myscript.ps1 .
+
+    There is no special thing to create one script in the PowerShell. You can add
+    commands as per your preferences. The script administrators often use login scripts
+    for many years to get environments and desktops configured as per users with every
+    log in. With the advancement in technology, it is possible to script anything,
+    from metal installation of your operating system on the server to workloads on
+    servers. It also includes server roles of file or installing exchange.
+
+
+    In order to write a script, it is essential to cover a few elements and there
+    are a few phases for your assistance:
+
+
+    # Phase 01: Variables
+
+
+    This phase is important to make scripts in a consistent way. This scripting will
+    make your work easy to do things repeatedly. You can do similar action with the
+    same command. Variables are known as holders and you can use them to put words,
+    numbers, values and anything with them. These will always have one dollar sign
+    in front of them. There are some variables for your assistance:
+
+
+    ```
+
+    $name = ''Jon''
+
+    $number = 12345
+
+    $location = ''Charlotte''
+
+    $listofnumbers = 6,7,8,9
+
+    $my_last_math_grade = ''D+''
+
+    ```
+
+
+    You should declare all variables with dollar sign and use any name for variable
+    without any space in the name. You have to give space followed by equal sign and
+    then give'
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: 'another space.
+
+
+    If you want to have text in the value of a variable, you should add one single
+    quote on both sides of your text. You have to declare one variable without writing
+    value and reserve the particular name. It proves helpful in the center of the
+    better than at other time.
+
+
+    You can add output of cmdlet and t is one code moniker to refer the simple bit
+    of your .net-based code and you can use to execute it to return the result. If
+    you want to list all procedures, you can use Get-Process command and the Get-PSSnapin
+    cmdlet display current PowerShell snap-in to activate new functionality. If you
+    want to calculate the actual number of cmdlets on your system, you can use:
+
+
+    ```
+
+    $(get-command).count
+
+    ```
+
+
+    You can declare one variable to store and it is known as:
+
+
+    ```
+
+    $numberofcmdlets
+
+    ```
+
+
+    You have to store the output in the variable of .count entry:
+
+
+    ```
+
+    $numberofcmdlets = (get-command).count
+
+    ```
+
+
+    PowerShell helps you find out the present value of a particular variable and write
+    its name in the prompt:
+
+
+    ![](img/dcd30329fa29a8abe29fc8f78488dd81_30_0.png)
+
+
+    This variable can be used as a part of anything else. For instance, look at the
+    cmdlet writehost to simply script the text to particular screen of hosting machine
+    in the PowerShell session. The Write-Host may have one of proficiencies, but in
+    simple manner, as:
+
+
+    ```
+
+    Write-Host "Whatever text I want, as long as it is inside double quotes."
+
+    ```
+
+
+    You can copy this line in the window of PowerShell and you want to see the results.
+    If you want the integration of variables with the Write-Host, you can write a
+    dollar sign, such as:
+
+
+    ```
+
+    Write-Host "There are $numberofcmdlets available for use on this system."
+
+    ```
+
+
+    You will get this from the PowerShell:
+
+
+    ![](img/dcd30329fa29a8abe29fc8f78488dd81_30_1.png)
+
+
+    # Phase 02: Do-White, If/Then and forEach'
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: "In the next phase, you will do some amazing magic, such as you have to store\
+    \ the value of variables.\n\n# If/Then\n\nThe simple form to make a decision in\
+    \ the PowerShell is the special if/then mechanism. It is called construct in the\
+    \ PowerShell lingo. It works in the particular way, such as:\n\nIf you want to\
+    \ do the comparison of something with something else, you can use this with command.\n\
+    \nYou can format it with the help of parenthesis and put one curly brace alone\
+    \ on one new line. It is easy to add cmdlets or perform actions and if this action\
+    \ is the true beginning, you can write one curly brace on the new line. You have\
+    \ to cover the following points, such as:\n\nThere should be a logical retort\
+    \ of False or True. It is important to think about without any question. If you\
+    \ have to do something without yes or no, you should make a new loop and cover\
+    \ it in one bit.\n\nIf you have a yes/no statement, the code should run in the\
+    \ curly braces. It will be good to practice these braces on the line. You can\
+    \ match them on the place where you want to write complicated scripts. If you\
+    \ are interested to compare 2 numbers, 5 & 10, the PowerShell should display that\
+    \ the 10 is greater than 5 and you can write this script in the following way:\n\
+    \n```\nIf (10 -gt 5)\n{\n  Write-Host \"Yes\"\n}\n```\n\nIf you want to run the\
+    \ prompt of PowerShell, you will get:\n\n![](img/dcd30329fa29a8abe29fc8f78488dd81_31_0.png)\n\
+    \nIf you want to make one functional construct with more nests, you can try this\
+    \ one:"
+  merge: -1
+  pgno: 31
+- img_proc: true
+  md: "```\nIf (10 -gt 11)\n{\n  Write-Host \"Yes\"\n} else (11 -gt 10)\n{\n  Write-Host\
+    \ \"This time, yes\"\n}\n```\n\nIt will be easy to follow for everyone and see\
+    \ the given results:\n\n```\nPS:\\Users\\Jonathan> If (10 -gt 11)\n>> {\n>> Write-Host\
+    \ \"Yes\"\n>> } else (11 -gt 10)\n>> {\n>> Write-Host \"This time, yes\"\n>> }\n\
+    >> This time, yes\nPS:\\Users\\Jonathan>\n```\n\nYou can get different output\
+    \ with different values and names. It will be an easy way to manage functional\
+    \ scripts.\n\nIf you want bunch of blocks in your script, you can establish different\
+    \ conditions. You can select different blocks, but there is an example to make\
+    \ your work easy:"
+  merge: -1
+  pgno: 32
+- img_proc: true
+  md: "```\nIf (10 -gt 11)\n{\n    Write-Host \"Yes\"\n}\nelse if (11 -lt 10)\n{\n\
+    \    Write-Host \"This time, yes\"\n}\nelse if (20 -gt 40)\n{\n    Write-Host\
+    \ \"Third time was a charm\"\n}\\else {\n    Write-Host \"You're really terrible\
+    \ at math, aren't you?\"\n}\n```\n\nYou can run this construct and get this result:\n\
+    \n![](img/dcd30329fa29a8abe29fc8f78488dd81_33_0.png)\n\n# Do While Examples\n\n\
+    ```\n$numbers = 1\n\nThen, let's set up a simple Do While construct that adds\
+    \ 1 to whatever\nis already in that variable, until the variable has the number\
+    \ 10 in it.\n\nDo {\n    $numbers = $numbers + 1\n    Write-Host \"The current\
+    \ value of the variable is $numbers\"\n} While ($numbers -lt 10)\n```\n\nRun this\
+    \ script and your resultant command will be:"
+  merge: -1
+  pgno: 33
+- img_proc: true
+  md: "```\nPS:\\Users\\Jonathan> $numbers = 1\nPS:\\Users\\Jonathan> Do {\n  $numbers\
+    \ += 1\n  Write-Host \"The current value of the variable is $numbers\"\n}\nWrite($numbers)\n\
+    The current value of the variable is 2\nThe current value of the variable is 3\n\
+    The current value of the variable is 4\nThe current value of the variable is 5\n\
+    The current value of the variable is 6\nThe current value of the variable is 7\n\
+    The current value of the variable is 8\nThe current value of the variable is 9\n\
+    The current value of the variable is 10\nPS:\\Users\\Jonathan>\n```\n\nYou can\
+    \ set up one do while you use your commands for execution:\n\nWhile ($numbers\
+    \ -lt 10) {\n\n$numbers = $numbers + 1\n\nWrite-Host \"The current value of the\
+    \ variable is $numbers\n\n}\n\nYou can notice different among image management\
+    \ in afore and after versions. All Windows PowerShell’s version enables images\
+    \ to carefully share the layers. For instance, you can grab one image to share\
+    \ similar layers of image as one image and it may be already pulled.\n\nThe daemon\
+    \ Windows PowerShell can recognize this and pulls the required layers out of their\
+    \ stored location. The second pull proves helpful to pull images with common features\
+    \ and layers.\n\nThis illustration can help you, just start with 15.04 Ubuntu\
+    \ image that you have recently pulled and make some changes into it to build a\
+    \ new image. You can use Windows PowerShell build or Windows PowerShell command\
+    \ to make your work easy.\n\nYou can optimize resources by sharing them and people\
+    \ often do this impulsively in their life. For instance, Joseph and Jane are twins\
+    \ calculating calculus at separate times from separate teachers. They can share\
+    \ their exercise book by passing it to each other. Jane has to complete the homework\
+    \ on the 11th page his book. Now, the original exercise book can be changed and\
+    \ only Jane can copy this page.\n\nCopy-on-write strategy is simple for copying\
+    \ and sharing. This strategy enables system (that requires similar data) processes\
+    \ the data instead of getting their own copy. At a particular point, if one procedure\
+    \ requires some modification to write data, only the procedure that should be\
+    \ written will copy the data. All other procedures will be continuing to the use\
+    \ of actual data.\n\nWindows PowerShell requires copy-on-write technology with\
+    \ containers and image. This strategy can optimize the performance of your container\
+    \ and disk space. In the next"
+  merge: -1
+  pgno: 34
+- img_proc: true
+  md: 'section, the system will work to leverage the copy with containers and images
+    via copying
+
+    and sharing.'
+  merge: -1
+  pgno: 35
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 36
+- img_proc: true
+  md: '# Conclusion
+
+
+    PowerShell was wide-ranging and console-based support and it is comparable to
+    the basic pages in the Unix shells via cmdlet “Get-Help”. The local contents are
+    easy to retrieve from your internet connection through update-help cmdlet. It
+    assists you to make the web and it is easy to acquire it on a steady basis through
+    the –online switch for Get-help.
+
+
+    If you want to get the advantage of new features, then you have to download updates
+    to Windows 10 for PowerShell. There is no need to take any tension about it because
+    the updates because these are easy to download and installed on your device, once
+    they are available.
+
+
+    You just need an internet connection to automatically download updates. If you
+    are on a metered connection, then the updates will not be downloaded without your
+    permission. After each installation, you have to restart your PC and you can prevent
+    these downloads with the help of the following settings:
+
+
+    Select the “ windows ” button and go to setting then update security followed
+    by windows update. Finally, you will select the advanced options. If you want
+    to increase the productivity of Windows, there are plenty of offers for you that
+    can help you to increase the productivity of your Windows 10.
+
+
+    The Cortana proves helpful to increase the efficiency of your windows 10. You
+    can personalize your operating system and increase the efficiency of your desktop.
+    This book has lots of tips and tricks to use PowerShell of Windows 10.'
+  merge: -1
+  pgno: 37
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 38
