@@ -1103,6 +1103,7 @@
 +   [Sams Teach Yourself PHP, MySQL and JavaScript 全合一](docs/php-mysql-and-javascript-all-in-one-sams-teach-yourself/README.md)
 +   [PHP, MySQL & JavaScript 一通通：Sams 自学指南](docs/php-mysql-javascript-all-in-one-sams-teach-yourself/README.md)
 +   [PHP, MySQL & JavaScript 一体通，Sams 自学指南（第6版）](docs/php-mysql-javascript-all-in-one-sams-teach-yourself-6th-edit/README.md)
++   [PHP, MySQL, JavaScript 和 HTML5 傻学者指南](docs/php-mysql-javascript-and-html5-all-in-one-for-dummies/README.md)
 +   [PHP, MySQL, JavaScript 和 HTML5 傻瓜指南](docs/php-mysql-javascript-et-html5-all-in-one-for-dummies/README.md)
 +   [PHP, MySQL, JavaScript & HTML5 傻瓜指南](docs/php-mysql-javascript-html5-all-in-one-for-dummies/README.md)
 +   [PHP3：使用 PHP 编程浏览器应用开发](docs/php3-programming-browser-based-applications-with-php/README.md)
