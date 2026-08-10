@@ -1089,6 +1089,7 @@
 +   [Perl 网站构建指南](docs/perl-web-site-workshop/README.md)
 +   [Perl 周末速成指南](docs/perl-weekend-crash-course-with-cd-rom/README.md)
 +   [PHP 5：快速简的 Web 开发](docs/php-5-fast-and-easy-web-development/README.md)
++   [PHP 5 快速简单的 Web 开发](docs/php-5-fast-and-easy-web-development-fast-and-easy-web-develo/README.md)
 +   [PHP 5 ／ MySQL 编程初学者指南](docs/php-5-mysql-programming-for-the-absolute-beginner-for-the-ab/README.md)
 +   [PHP 6 快速简单的 Web 开发](docs/php-6-fast-and-easy-web-development/README.md)
 +   [PHP 和 MySQL 初学者指南](docs/php-and-mysql-for-beginners/README.md)
