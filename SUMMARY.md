@@ -1109,6 +1109,7 @@
 +   [PHP, MySQL, JavaScript & HTML5 傻瓜指南](docs/php-mysql-javascript-html5-all-in-one-for-dummies/README.md)
 +   [PHP3：使用 PHP 编程浏览器应用开发](docs/php3-programming-browser-based-applications-with-php/README.md)
 +   [PHP/MySQL 编程初学者指南](docs/phpmysql-programming-for-the-absolute-beginner-for-the-absol/README.md)
++   [HTML 4, XML 和 Java 1.2 使用指南铂金版](docs/platinum-edition-using-html-4-xml-and-java-12/README.md)
 +   [Plug-In PHP：100 个强力解决方案：实用 PHP 问题的简单解决方案](docs/plug-in-php-100-power-solutions-simple-solutions-to-practica/README.md)
 +   [Powerhell：精通 PowerShell (Windows Powershell 5, PowerShell 脚本编写、命令行、Javascript、C++, SQL)](docs/powershell-become-a-master-in-powerhell-windows-powershell-5/README.md)
 +   [PowerShell 初学者指南：学习如何在 PowerShell 命令行编写并运行脚本（Python 编程、Javascript、计算机编程）](docs/powershell-for-beginners---learn-how-to-write-and-run-script/README.md)
