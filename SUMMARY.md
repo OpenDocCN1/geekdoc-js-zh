@@ -1099,6 +1099,7 @@
 +   [PHP 快速简单的 Web 开发，第 2 版（快速简单的 Web 开发）](docs/php-fast-easy-web-development-2nd-edition-fast-easy-web-deve/README.md)
 +   [PHP 快速简单的 Web 开发，第 2 版](docs/php-fast-easy-web-development-2nd-editionteam-lib/README.md)
 +   [青少年的 PHP](docs/php-for-teens/README.md)
++   [PHP 游戏编程](docs/php-game-programming/README.md)
 +   [Sams Teach Yourself PHP, MySQL and JavaScript 全合一](docs/php-mysql-and-javascript-all-in-one-sams-teach-yourself/README.md)
 +   [PHP, MySQL & JavaScript 一通通：Sams 自学指南](docs/php-mysql-javascript-all-in-one-sams-teach-yourself/README.md)
 +   [PHP, MySQL & JavaScript 一体通，Sams 自学指南（第6版）](docs/php-mysql-javascript-all-in-one-sams-teach-yourself-6th-edit/README.md)
