@@ -1,0 +1,1478 @@
+- md: "\n## Preparing for Your JavaScript Interview\nThe Basics: Technical Questions\
+    \ and Answers\nBy K.T. Lindemann\n\n## Introduction\n\nToday, you cannot be a\
+    \ web developer and not know JavaScript. What started out as a small client-side\
+    \ scripting language has evolved into countless frameworks and libraries that\
+    \ are part of every user's web experience. All modern web browsers implement the\
+    \ JavaScript language, thus making it the only one deployed on all personal computers\
+    \ and mobile devices around the world.\n\nAs it evolved, JavaScript has embraced\
+    \ advanced features as prototypal inheritance, modules, namespaces, anonymous\
+    \ (lambda) functions, promises, and even metaprogramming. Thanks to frameworks\
+    \ like Node.js, you can even use it server-side now.\n\nJavaScript's growth presents\
+    \ a challenge for new developers. On the one hand, the barrier to entry is low\
+    \ – anyone can open a developer tools window in the web browser and begin to write\
+    \ JavaScript. On the other hand, the level of complexity grows exponentially as\
+    \ you begin to explore the functionality available in the vast JavaScript ecosystem.\n\
+    \nIt's's now common for technical phone screens to include JavaScript questions.\
+    \ As a candidate, where should you begin to study?\n\nWhile other books tend to\
+    \ focus on the coding part of technical interviews, this book aims to run through\
+    \ some common, foundational JavaScript interview questions that candidates may\
+    \ be asked to explain or describe out loud. Focusing on vanilla JavaScript, this\
+    \ book covers the basics of JavaScript data structures, error handling, UI manipulation,\
+    \ and more! Being able to answer these questions concisely and confidently will\
+    \ go a long towards making you a better candidate.\n\nGood luck!\n\n## Table of\
+    \ Contents\n\n- INTRODUCTION\n- GENERAL PRACTICE\n- JAVASCRIPT AND UI ELEMENTS\n\
+    - COMPARE AND CONTRAST\n- BONUS QUESTIONS\n\n## General Practice\n\nThis section\
+    \ focuses on the basics of vanilla JavaScript.\n\n## Question: What is JavaScript?\n\
+    \nJavaScript, often abbreviated as \"JS\", is a high-level, dynamic, untyped,\
+    \ interpreted run-time language.\n\nJavaScript is a client-side as well as server-side\
+    \ scripting language that can be inserted into HTML pages and is understood by\
+    \ web browsers. JavaScript can also be an Object Oriented Programming language.\n\
+    \n## Question: What are the two basic groups of datatypes in JavaScript?\n\n-\
+    \ Primitive types: string, number, boolean, null, undefined\n- Complex types:\
+    \ object (including functions)\n\n## Question: What are the JavaScript types?\n\
+    \nThere are just **six** types in JavaScript: Object, Number, String, Boolean,\
+    \ Null, and Undefined.\n\nObjects include arrays, functions, and ordinary objects.\n\
+    \nNumbers may be integers or floating point or the special values NaN and Infinity.\n\
+    \nStrings include the empty string.\n\n## Question: Which company developed JavaScript?\n\
+    \nNetscape is the software company who developed JavaScript.\n\n## Question: What\
+    \ are undeclared and undefined variables?\n\nUndeclared variables are those that\
+    \ do not exist in a program and are not declared. If the program tries to read\
+    \ the value of an undeclared variable, then a runtime error is encountered.\n\n\
+    Undefined variables are those that are declared in the program but have not been\
+    \ given any value. If the program tries to read the value of an undefined variable,\
+    \ an undefined value is returned.\n\n## Question: What are global variables?\n\
+    \nGlobal variables are those that are available throughout the length of the code,\
+    \ that is, these have no scope. The `var` keyword is used to declare a local variable\
+    \ or object. If the `var` keyword is omitted, a global variable is declared.\n\
+    \nThe problems that are faced by using global variables are the clash of variable\
+    \ names of local and global scope. Also, it is difficult to debug and test the\
+    \ code that relies on global variables.\n\n## Question: What is ‘this’ keyword\
+    \ in JavaScript?\n\n‘This’ keyword refers to the object from where it was called.\n\
+    \n## Question: What is the use of NaN function?\n\n`isNaN` function returns true\
+    \ if the argument is not a number otherwise it is false.\n\n## Question: What\
+    \ is negative infinity?\n\nNegative Infinity is a number in JavaScript which can\
+    \ be derived by dividing negative number by zero.\n\n## Question: Which symbol\
+    \ is used for comments in Javascript?\n\n```javascript\n// for Single line comments\n\
+    \n/* MultiLine\nComment */\n```\n\n## Question: What is the === operator?\n\n\
+    `===` is called as strict equality operator which returns true when the two operands\
+    \ are having the same value without any type conversion.\n\n## Question: What\
+    \ is called typing in JavaScript?\n\nVariable typing is used to assign a number\
+    \ to a string.\n\n## Question: Does JavaScript support automatic conversion?\n\
+    \nYes, JavaScript does support automatic conversion. JavaScript is a \"loosely\
+    \ typed\" language, which means that whenever an operator or statement is expecting\
+    \ a particular type, JavaScript will convert the data.\n\nFor example, automatic\
+    \ conversion is often used for checking the existence of DOM elements:\n\n```javascript\n\
+    var element = document.getElementById(\"whatever\");\nif(element) {\n  //the element\
+    \ exists\n} else {\n  //the element doesn't exist\n}\n```\n\n## Question: What\
+    \ does NULL mean in JavaScript?\n\nThe NULL value is used to represent no value\
+    \ or no object. In APIs, null is often retrieved where an object is expected.\n\
+    \n## Question: What is undefined value in JavaScript?\n\n**Undefined** is one\
+    \ of JavaScript's primitive types. A variable that has not been assigned a value\
+    \ is type undefined. A method statement can also be undefined if it tries to use.\
+    \ Finally, a function returns undefined if a value was not returned.\n\n## Question:\
+    \ What are all the looping structures in JavaScript?\n\nAnswer: In JavaScript\
+    \ we have the following looping statements:\n\n| | Description |\n| :--- | :---\
+    \ |\n| while | loops through a block of code while a condition is true |\n| do...while\
+    \ | loops through a block of code once, and then repeats the loop while a condition\
+    \ is true |\n| for | run statements a specified number of times |\n\n## Question:\
+    \ What is the break statement?\n\nThe **break** statement exits from the current\
+    \ loop.\n\n## Question: What is the continue statement?\n\nThe **continue** statement\
+    \ continues with next statement of the loop.\n\n## Question: Explain how to detect\
+    \ the operating system on the client machine?\n\nThe `navigator.appVersion` string\
+    \ (property) can be used to detect the operating system of the client machine.\n\
+    \n## Question: What is void(0) used for?\n\nThe void operator evaluates the given\
+    \ expression and then returns undefined. Void(0) is used to prevent the page from\
+    \ refreshing. The parameter “zero” is passed while calling it.\n\n## Question:\
+    \ What are the escape characters?\n\nJavaScript uses the \\ (backslash) as an\
+    \ escape characters for:\n\n- \\' single quote\n- \\\" double quote\n- \\backslash\n\
+    - \\n new line\n- \\r carriage return\n- \\t tab\n- \\b backspace\n- \\f form\
+    \ feed\n- \\v vertical tab\n- \\0 null character\n\n## Question: Explain how timers\
+    \ work in JavaScript.\n\nA block of JavaScript code is generally executed synchronously.\
+    \ Timers allow us to delay the execution of arbitrary instructions:\n\n### setTimeout()\n\
+    The `setTimeout()` function is commonly used if you wish to have your function\
+    \ called **once** after the specified delay.\n\n### setInterval()\nThe `setInterval()`\
+    \ function is commonly used to set a delay for functions that are executed more\
+    \ than once.\n\n### setImmediate()\nThe `setImmediate()` function can be used\
+    \ instead of the `setTimeout(fn, 0)` method to execute heavy operations in IE.\n"
+  mdcn: "\n\n## 准备你的 JavaScript 面试\n基础：技术问题与解答\n作者：K.T. Lindemann\n\n## 引言\n\n在今天，你不可能成为一名\
+    \ Web 开发者却不知道 JavaScript。它最初是一个小小的客户端脚本语言，现在已演变成每个用户网络体验中无数框架和库的一部分。所有现代网络浏览器都实现了\
+    \ JavaScript 语言，使其成为唯一部署在所有个人电脑和移动设备上的语言。\n\n随着演进，JavaScript 拥抱了许多特性，如原型继承、模块、命名空间、匿名（lambda）函数、Promise\
+    \ 甚至甚至是元编程。得益于 Node.js 等框架，你现在甚至可以在服务器端使用它。\n\nJavaScript 的增长给新开发者带来了挑战。一方面，入门门槛很低——任何人可以在浏览器中打开开发者工具窗口并开始编写\
+    \ JavaScript。另一方面，当你开始探索庞大的 JavaScript 生态系统中可用的功能时，其复杂性会呈指数级增长。\n\n现在，技术初筛包含 JavaScript\
+    \ 问题已成为常态。作为一名候选人，你应该从哪里开始学习呢？\n\n其他书籍倾向于关注技术面试的编码部分，而本书旨在介绍候选人可能被要求口头解释或描述的一些常见基础性\
+    \ JavaScript 面试题。本书专注于原生 JavaScript（Vanilla JS），涵盖了 JavaScript 数据结构、错误处理、UI 操作等基础知识！能够简洁且自信地回答这些问题将有助于你成为一名更出色的候选人。\n\
+    \n祝你好运！\n\n## 目录\n\n- 引言\n- 通用练习\n- JavaScript 与 UI 元素\n- 比较与对比\n- 附加问题\n\n##\
+    \ 通用练习\n\n本节重点关注原生 JavaScript 的基础。\n\n## 问题：什么是 JavaScript？\n\nJavaScript 通常缩写为\
+    \ \"JS\"，是一种高级级、动态、无类型、解释型的运行时语言。\n\nJavaScript 既是客户端也是服务器端的脚本语言，可以插入 HTML 页面并被网络浏览器理解。JavaScript\
+    \ 也可以是一种面向对象的编程语言。\n\n## 问题：JavaScript 中的两种基本数据类型组是什么？\n\n- 原生类型：string（字符串）、number（数字）、boolean（布尔）、null、undefined\n\
+    - 复合类型：object（对象，包括函数）\n\n## 问题：JavaScript 有哪些类型？\n\nJavaScript 中只有**六** 种类型：Object（对象）、Number（数字）、String（字符串）、Boolean（布尔）、Null（空）和\
+    \ Undefined（未定义）。\n\n对象包括数组、函数和普通对象。\n\n数字可以是整数或浮点数，或者是特殊值 NaN 和 Infinity。\n\n\
+    字符串包括空字符串。\n\n## 问题：哪家公司开发了 JavaScript？\n\nNetscape（网景）是开发 JavaScript 的软件公司。\n\
+    \n## 问题：什么是未声明（undeclared）和未定义（undefined）变量？\n\n未声明变量是指那些在程序中不存在且未声明的变量。如果程序尝试读取未声明变量的值，就会遇到运行时错误。\n\
+    \n未定义变量是指在程序中已声明但未赋予任何值的变量。如果程序尝试读取未定义变量的值，将返回一个未定义值（undefined）。\n\n## 问题：什么是全局变量？\n\
+    \n全局变量是在代码范围内可用的变量，也就是说它们没有作用域。使用 `var` 关键字声明局部变量或对象。如果省略了 `var` 关键字，则声明一个全局变量。\n\
+    \n使用全局变量面临的问题是局部作用域和全局作用域变量名的冲突。此外，依赖全局变量的代码很难调试和测试。\n\n## 问题：JavaScript 中的 `this`\
+    \ 关键字是什么？\n\n`this` 关键字指向调用它的对象。\n\n## 问题：`isNaN` 函数有什么用？\n\n`isNaN` 函数在参数不是数字时返回\
+    \ true，否则返回 false。\n\n## 问题：什么是负无穷大（negative infinity）？\n\n负无穷大是 JavaScript 中的一个数字，可以通过负数除以零得到。\n\
+    \n## 问题：JavaScript 中用什么符号进行注释？\n\n```javascript\n// 用于单行注释\n\n/* 多行\n注释 */\n```\n\
+    \n## 问题：什么是 `===` 运算符？\n\n`===` 称为严格相等运算符，当两个操作数在不进行任何类型转换的情况下具有相同值时返回 true。\n\
+    \n## 问题：JavaScript 中的类型转换（typing）是指什么？\n\n变量类型转换用于给字符串赋值数字。\n\n## 问题：JavaScript\
+    \ 支持自动转换吗？\n\n是的，JavaScript 支持自动转换。JavaScript 是一种“弱类型”语言，这意味着每当运算符或语句期望特定类型时，JavaScript\
+    \ 都会转换数据。\n\n例如，自动转换经常用于检查 DOM 元素是否存在：\n\n```javascript\nvar element = document.getElementById(\"\
+    whatever\");\nif(element) {\n  // 元素存在\n} else {\n  // 元素不存在\n}\n```\n\n## 问题：JavaScript\
+    \ 中的 NULL 代表什么？\n\nNULL 值用于表示没有值或没有对象。在 API 中，当期望获得对象时通常会检索 null。\n\n## 问题：JavaScript\
+    \ 中的 `undefined` 值代表什么？\n\n**Undefined** 是 JavaScript 的原生类型之一。未赋值的变量类型为 undefined。如果一个方法语句尝试使用它，它也可能是\
+    \ undefined。最后，如果函数没有返回任何值，则返回 undefined。\n\n## 问题：JavaScript 中所有的循环结构有哪些？\n\n\
+    回答：在 JavaScript 中，我们有以下循环语句：\n\n| | 描述 |\n| :--- | :--- |\n| while | 只要条件为真就循环执行代码块\
+    \ |\n| do...while | 循环一次代码块，然后在条件为真时重复循环 |\n| for | 运行指定次数的语句 |\n\n## 问题：什么是 `break`\
+    \ 语句？\n\n**break** 语句用于退出当前循环。\n\n## 问题：什么是 `continue` 语句？\n\n**continue** 语句继续执行循环的下一次语句。\n\
+    \n## 问题：解释如何检测客户端机器的操作系统？\n\n可以使用 `navigator.appVersion` 字符串（属性）来检测客户端的操作系统。\n\
+    \n## 问题：`void(0)` 有什么用？\n\n`void` 运算符计算给定的表达式并返回 undefined。`void(0)` 用于防止页面刷新。调用它时传入了参数“zero”。\n\
+    \n## 问题：什么是转义字符？\n\nJavaScript 使用反斜杠 `\\` 作为转义字符，用于：\n\n- \\' 单引号\n- \\\" 双引号\n\
+    - \\ 反斜杠\n- \\n 换行\n- \\r 回车\n- \\t 制表符\n- \\b 退键\n- \\f 进页\n- \\v 垂直制表\n- \\\
+    0 空字符\n\n## 问题：解释 JavaScript 中的计时器是如何工作的。\n\nJavaScript 代码通常是同步执行的。计时器允许我们延迟任意指令的执行：\n\
+    \n### setTimeout()\n如果你希望在指定的延迟后调用**一次**函数，通常使用 `setTimeout()` 函数。\n\n### setInterval()\n\
+    `setInterval()` 函数通常用于为执行多次的函数设置延迟。\n\n### setImmediate()\n在 IE 中，可以使用 `setImmediate()`\
+    \ 函数代替 `setTimeout(fn, 0)` 方法来执行耗时操作。\n\n"
+  merge: -1
+  raw:
+  - '[PAGE 0]
+
+
+    # # PREPARING FOR YOUR JAVASCRIPT INTERVIEW
+
+
+    The Basics: Technical Questions and Answers
+
+
+    KT LINDEMANN'
+  - '[PAGE 1]
+
+
+    # # Preparing for Your JavaScript Interview
+
+
+    The Basics: Technical Questions and Answers
+
+
+    By K.T. Lindemann'
+  - '[PAGE 2]
+
+
+    # Introduction
+
+
+    Today, you cannot be a web developer and not know JavaScript. What started out
+    as a small client side scripting language has evolved into countless frameworks
+    and libraries that are part of every user''s web experience. All modern web browsers
+    implement the JavaScript language, thus making it the only one deployed on all
+    personal computers and mobile devices around the world.
+
+
+    As it evolved, JavaScript has embraced advanced features as prototypal inheritance,
+    modules, namespaces, anonymous (lambda) functions, promises, and even metaprogramming.
+    Thanks to frameworks like NodeJs, you can even use it server-side now.
+
+
+    JavaScript''s growth presents a challenge for new developers. On the one hand,
+    the barrier to entry is low – anyone can open a developer tools window in the
+    web browser and begin to write JavaScript. On the other hand, the level of complexity
+    grows exponentially as you begin to explore the functionality available in the
+    vast JavaScript ecosystem.
+
+
+    It''s now common for technical phone screens to include JavaScript questions.
+    As a candidate, where should you begin to study?
+
+
+    While other books tend to focus on the coding part of technical interviews, this
+    book aims to run through some common, foundational JavaScript interview questions
+    that candidates may be asked to explain or describe out loud. Focusing on vanilla
+    JavaScript, this book covers the basics of JavaScript data structures, error handling,
+    UI manipulation, and more! Being able to answer these questions concisely and
+    confidently will go a long towards making you a better candidate.
+
+
+    Good luck!'
+  - '[PAGE 3]
+
+
+    # Table of Contents
+
+
+    +   - INTRODUCTION
+
+    - GENERAL PRACTICE
+
+    - JAVASCRIPT AND UI ELEMENTS
+
+    - COMPARE AND CONTRAST
+
+    - BONUS QUESTIONS'
+  - '[PAGE 4]
+
+
+    # General Practice
+
+
+    This section focuses on the basics of vanilla JavaScript.'
+  - '[PAGE 5]
+
+
+    # Question: What is JavaScript?
+
+
+    JavaScript, often abbreviated as "JS", is a high-level, dynamic, untyped, interpreted
+    run-time language.
+
+
+    JavaScript is a client-side as well as server side scripting language that can
+    be inserted into HTML pages and is understood by web browsers. JavaScript can
+    also be an Object Oriented Programming language'
+  - '[PAGE 6]
+
+
+    # Question: What are the two basic groups of datatypes in JavaScript?
+
+
+    Primitive types: string, number, boolean, null, undefined
+
+    Complex types: object (including functions)'
+  - '[PAGE 7]
+
+
+    # Question: What are the JavaScript types?
+
+
+    There are just **six** types in JavaScript: Object, Number, String, Boolean, Null,
+
+    and Undefined.
+
+
+    Objects include arrays, functions, and ordinary objects.
+
+
+    Numbers may be integers or floating point or the special values NaN and
+
+    Infinity.
+
+
+    Strings include the empty string.'
+  - '[PAGE 8]
+
+
+    # Question: Which company developed JavaScript?
+
+
+    Netscape is the software company who developed JavaScript.'
+  - '[PAGE 9]
+
+
+    # Question: What are undeclared and undefined variables?
+
+
+    Undeclared variables are those that do not exist in a program and are not declared.
+    If the program tries to read the value of an undeclared variable, then a runtime
+    error is encountered.
+
+
+    Undefined variables are those that are declared in the program but have not been
+    given any value. If the program tries to read the value of an undefined variable,
+    an undefined value is returned.'
+  - '[PAGE 10]
+
+
+    # Question: What are global variables?
+
+
+    Global variables are those that are available throughout the length of the code,
+    that is, these have no scope. The var keyword is used to declare a local variable
+    or object. If the var keyword is omitted, a global variable is declared.
+
+
+    The problems that are faced by using global variables are the clash of variable
+    names of local and global scope. Also, it is difficult to debug and test the code
+    that relies on global variables.'
+  - '[PAGE 11]
+
+
+    # Question: What is ‘this’ keyword in JavaScript?
+
+
+    ‘This’ keyword refers to the object from where it was called.'
+  - '[PAGE 12]
+
+
+    # Question: What is the use of NaN function?
+
+
+    isNaN function returns true if the argument is not a number otherwise it is false.'
+  - '[PAGE 13]
+
+
+    # Question: What is negative infinity?
+
+
+    Negative Infinity is a number in JavaScript which can be derived by dividing negative
+    number by zero.'
+  - '[PAGE 14]
+
+
+    # Question: Which symbol is used for comments in Javascript?
+
+
+    ```
+
+    // for Single line comments
+
+
+    /* MultiLine
+
+    Comment */
+
+    ```'
+  - '[PAGE 15]
+
+
+    # Question: What is the === operator?
+
+
+    === is called as strict equality operator which returns true when the two operands
+    are having the same value without any type conversion.'
+  - '[PAGE 16]
+
+
+    # Question: What is called Variable typing in Javascript?
+
+
+    Variable typing is used to assign a number to a variable and the same variable
+    can be assigned to a string. This is called variable typing.'
+  - "[PAGE 17]\n\n# Question: Does JavaScript support automatic type conversion?\n\
+    \nYes, JavaScript does support automatic type conversion.\n\nJavaScript is a \"\
+    loosely typed\" language, which means that whenever an operator or statement is\
+    \ expecting a particular data-type, JavaScript will automatically convert the\
+    \ data to that type\n\nFor example, automatic type conversion is often used for\
+    \ checking the existence of DOM elements. Because an Object will automatically\
+    \ convert to a Boolean when used in a conditional statement, this code is possible:\n\
+    \n```\nvar element = document.getElementById(\"whatever\");\nnif(element) {\n\
+    \  //the element exists\n}\nelse {\n  //the element doesn't exist\n}\n```"
+  - '[PAGE 18]
+
+
+    # Question: What does NULL mean in Javascript?
+
+
+    The NULL value is used to representn no value or no object. A variable that is
+    null indicates that it points to nothing. In APIs, null is often retrieved in
+    a place where an object can be expected but no object is relevant.'
+  - '[PAGE 19]
+
+
+    # Question: What is an undefined value in JavaScript?
+
+
+    **Undefined** is one of JavaScript''s primitive types.
+
+
+    A variable that has not been assigned a value is of type undefined. A method statement
+    can also be undefined if it tries to use a variable that is undefined. Finally,
+    a function returns undefined if a value was not returned.'
+  - '[PAGE 20]
+
+
+    # Question: What are all the looping structures in JavaScript?
+
+
+    Answer:
+
+    In JavaScript we have the following looping statements:
+
+
+    | while | loops through a block of code while a condition is true |
+
+    | do...while | loops through a block of code once, and then repeats the loop while
+    a condition is true |
+
+    | for | run statements a specified number of times |'
+  - '[PAGE 21]
+
+
+    # Question: What is the break statement?
+
+
+    The **break** statement exits from the current loop.'
+  - '[PAGE 22]
+
+
+    # Question: What is the continue statement?
+
+
+    The **continue** statement continues with next statement of the loop.'
+  - '[PAGE 23]
+
+
+    # Question: Explain how to detect the operating system on the client machine?
+
+
+    The navigator.appVersion string (property) can be used to detect the operating
+    system of the client machine.'
+  - '[PAGE 24]
+
+
+    # Question: What is void(0) used for?
+
+
+    The void operator evaluates the given expression and then returns undefined.
+
+
+    Void(0) is used to prevent the page from refreshing. The parameter “zero” is passed
+    while calling it.'
+  - '[PAGE 25]
+
+
+    # Question: What are the escape characters?
+
+
+    JavaScript uses the \ (backslash) as an escape characters for:
+
+
+    +   \'' single quote
+
+    \" double quote
+
+    \backslash
+
+    \n new line
+
+    \r carriage return
+
+    \t tab
+
+    \b backspace
+
+    \f form feed
+
+    \v vertical tab
+
+    \0 null character ('
+  - '[PAGE 26]
+
+
+    # Question: Explain how timers work in JavaScript.
+
+
+    A block of JavaScript code is generally executed synchronously. Timers allow us
+    to delay the execution of arbitrary instructions:
+
+
+    setTimeout()
+
+    The setTimeout() function is commonly used if you wish to have your function called
+    **once** after the specified delay.
+
+
+    setInterval()
+
+    The setInterval() function is commonly used to set a delay for functions that
+    are executed more than once.
+
+
+    setImmediate()
+
+    The setImmediate() function can be used instead of the setTimeout(fn, 0) method
+    to execute heavy operations in IE.'
+- md: "\n## Question: What is the use of typeof operator?\n\n'typeof' is an operator\
+    \ which is used to return a string description of the type of a variable.\n\n\
+    | Type | Result |\n| --- | --- |\n| Undefined | 'undefined' |\n| Null | 'object'\
+    \ (see below) |\n| Boolean | 'boolean' |\n| Number | 'number' |\n| String | 'string'\
+    \ |\n| Symbol (new in ECMAScript 2015) | 'symbol' |\n| Host object (provided by\
+    \ the JS environment) | Implementation-dependent |\n| Function object (implements\
+    \ [[Call]] in ECMA-262 terms) | 'function' |\n| Any other object | 'object' |\n\
+    \n## Question: Which keywords are used to handle exceptions?\n\nThe try/catch/finally\
+    \ statement handles some or all of the errors that may occur in a block of code,\
+    \ while still running code.\n\nThe try statement allows you to define a block\
+    \ of code to be tested for errors while it is being executed.\n\nThe catch statement\
+    \ allows you to define a block of code to be executed, if an error occurs in the\
+    \ try block.\n\nThe finally statement lets you execute code, after try and catch,\
+    \ regardless of the result.\n\n```javascript\ntry {\n  // try to run this code\n\
+    }\ncatch(err) {\n  // catch errors here\n}\nfinally {\n  // run this code regardless\
+    \ of what happens\n}\n```\n\n## Question: How generic objects can be created?\n\
+    \nA generic object is essentially an empty blueprint for an object. You can define\
+    \ it anywhere in your Javascript code. An example is below:\n\n```javascript\n\
+    function Employee(first, last, ssn, salary) {\n  this.firstName = first;\n  this.lastName\
+    \ = last;\n  this.social = ssn;\n  this.pay = salary;\n}\n```\n\nThis creates\
+    \ a generic blueprint for an object known as Employee. To get an instance of Employee,\
+    \ you would call:\n\n```javascript\nvar john = new Employee(\"John\", \"Smith\"\
+    , \"050529994\", 72534);\n```\n\n## Question: What is the use of Push method in\
+    \ JavaScript?\n\nThe push method is used to add or append one or more elements\
+    \ to the end of an Array. Using this method, we can append multiple elements by\
+    \ passing multiple arguments.\n\n## Question: What is the shift() method in JavaScript?\n\
+    \nThe shift() method is like push(), except it acts on the beginning of the array.\n\
+    This method is used to prepend one or more elements to the beginning of the array.\n\
+    \n## Question: Explain the pop() method in JavaScript?\n\nThe pop() method is\
+    \ similar as the shift() method except that it acts on the last element of the\
+    \ array. Calling pop() on an array will return the last element.\n\n## Question:\
+    \ What are the different types of errors in JavaScript?\n\nAs of ECMAScript 2016,\
+    \ there are seven other core error constructors in JavaScript (in addition to\
+    \ the generic Error object):\n\n### EvalError\n\nAn error that occurs during the\
+    \ global function eval().\n\n### InternalError\n\nAn error that occurs when an\
+    \ internal error in the JavaScript engine is thrown, for example, \"too much recursion\"\
+    .\n\n### RangeError\n\nAn error that occurs when a numeric variable or parameter\
+    \ is outside of valid range.\n\n### ReferenceError\n\nAn error that occurs when\
+    \ de-referencing an invalid reference.\n\n### SyntaxError\n\nA syntax error that\
+    \ occurs while parsing code in eval().\n\n### TypeError\n\nAn error that occurs\
+    \ when a variable or parameter is not of a valid type.\n\n### URIError\n\nAn error\
+    \ that occurs when encodeURI() or decodeURI() are given invalid parameters.\n\n\
+    ## Question: What are JavaScript Cookies?\n\nCookies are the small text files\
+    \ stored in the computer. Cookies are created when the user visits the websites\
+    \ and are used to store user information that the website might need, such as\
+    \ shopping cart details.\n\nJavaScript can create, read, and delete cookies with\
+    \ the **document.cookie** property.\n\n## Question: What is the ‘Strict’ mode\
+    \ in JavaScript and how can it be enabled?\n\nAnswer:\nECMAScript 5's strict mode\
+    \ is a way to opt in to a restricted variant of JavaScript. Strict mode is intentionally\
+    \ different from normal JavaScript code.\n\nStrict mode makes several changes\
+    \ to normal JavaScript semantics. First, strict mode forces some JavaScript silent\
+    \ errors by changing them to throw errors. Second, strict mode enables JavaScript\
+    \ engines to perform certain optimizations that were previously not possible.\
+    \ Third, strict mode prohibits syntax likely to be defined in future versions\
+    \ of ECMAScript.\n\n## Question: Explain closures in JavaScript? When are they\
+    \ used?\n\nA closure is an inner function that has access to the enclosing function's\
+    \ variables. The closure has access to its own scope (variables defined between\
+    \ its curly brackets), access to the outer function's variables, and also it has\
+    \ access to the global variables.\n\nYou create a closure by adding a function\
+    \ inside another function. The inner function has access to both the outer functions\
+    \ variables and parameters.\n\n```javascript\nfunction sayHi(firstName, lastName)\
+    \ {\n  var greeting = \"Hello \";\n\n  // inner function has access to outer\n\
+    \  // function's parameters and variables!\n\n  function name() {\n    return\
+    \ greeting + firstName + \" \" + lastName;\n  }\n\n  return name();\n}\n```\n\n\
+    ## Question: How are object properties assigned?\n\nProperties are the values\
+    \ associated with a JavaScript object.\n\nAssuming an object already exists, you\
+    \ can simply add a new property like so:\nmyObject.myProperty = 'Property Value';\n\
+    \n## Question: How can a value be appended to an array?\n\nThis is a subtly tricky\
+    \ question because there is the basic answer and a better, more complete answer.\n\
+    \nAt first glance\n\nBut for a better answer, don't forget all of the array methods\
+    \ that are available!\n\n- 1. Using push() to add to the end of an array\n- 2.\
+    \ Using unshift() to add to the beginning of an array\n- 3. Using splice() to\
+    \ add elements within an array\n- 4. Using concat() to combine and create new,\
+    \ longer arrays\n\n## Question: Explain the for-in loop?\n\nThe for-in loop is\
+    \ used to loop through the properties of an object. The loop is continued till\
+    \ all the properties of the object are depleted.\n\n```javascript\nvar item;\n\
+    for (item in myObject) {\n  // do something\n}\n```\n\n## Question: Describe the\
+    \ properties of an anonymous function in JavaScript?\n\nA function that is declared\
+    \ without a name is known as an anonymous function.\n\nFunctions stored in variables\
+    \ do not need function names. They are instead called using the variable name.\n\
+    \n## Question: What logical operators can be used in JavaScript?\n\nThe “and”,\
+    \ “or” and “not” operators can be used in JavaScript.\n\nFor example, given x=2\
+    \ and y=6\n\n| Operator | Name | Example |\n| --- | --- | --- |\n| && | and |\
+    \ (x < 3 && y > 1) is true |\n| || | or | (x == 5 || y == 5) is false |\n| ! |\
+    \ not | !(x == y) is true |\n\n## JavaScript and UI Elements\n\nThese JavaScript\
+    \ questions focus on elements of the web and user interface.\n\n## Question: How\
+    \ can the class of an element be changed?\n\nUsing vanilla JavaScript:\n\n```javascript\n\
+    document.getElementById(\"MyElement\").classList.add('MyClass');\n```\n\n```javascript\n\
+    document.getElementById(\"MyElement\").classList.remove('MyClass');\n```\n\n##\
+    \ Question: How can the style of an element be changed?\n\nUsing vanilla JavaScript:\n\
+    \n```javascript\ndocument.getElementById(\"p2\").style.color = 'blue';\n```\n\n\
+    ## Question: Explain how can you submit a form using vanilla JavaScript?\n\nTo\
+    \ submit a form using JavaScript use:\n\n```javascript\ndocument.form[0].submit();\n\
+    ```\n\n## Question: What is the disadvantage of using innerHTML in JavaScript?\n\
+    \nImproper handling of the innerHTML property can enable script-injection attacks\
+    \ on Internet Explorer when the HTML string contains a script marked as deferred:\n\
+    <script defer>...</script>\n\nSetting innerHTML will destroy existing HTML elements\
+    \ that have event handlers attached to them, potentially creating a memory leak\
+    \ on some browsers.\n\nYou can't set the innerHTML property on all HTML elements\
+    \ on all browsers (for instance, Internet Explorer won't let you set the innerHTML\
+    \ property of a table row).\n\nFinally, innerHTML content is refreshed every time\
+    \ and thus is slower.\n\n## Question: What are all the types of Pop up boxes available\
+    \ in JavaScript?\n\nJavaScript has three kind of popup boxes: Alert box, Confirm\
+    \ box, and Prompt box.\n\n### Alert Box\n\nAn alert box is often used if you want\
+    \ to make sure information comes through the user.\nWhen an alert box pops up,\
+    \ the user will have to click \"OK\" to proceed.\n\n### Confirm Box\n\nA confirm\
+    \ box is often used if you want the user to verify or accept something.\nWhen\
+    \ a confirm box pops up, the user will have to click either \"OK\" or \"Cancel\"\
+    \ to proceed.\n\n### Prompt Box\n\nA prompt box is often used if you want the\
+    \ user to input a value before entering a page.\n\nWhen a prompt box pops up,\
+    \ the user will have to click either \"OK\" or \"Cancel\" to proceed after entering\
+    \ an input value.\n"
+  mdcn: "\n\n## 问题：typeof 运算符的用途是什么？\n\n'typeof' 是一个运算符，用于返回变量类型的字符串描述。\n\n| 类型 |\
+    \ 结果 |\n| --- | --- |\n| Undefined | 'undefined' |\n| Null | 'object'（见下文） |\n\
+    | Boolean | 'boolean' |\n| Number | 'number' |\n| String | 'string' |\n| Symbol\
+    \ (ECMAScript 2015 新增) | 'symbol' |\n| 主机对象（JS 环境提供） | 取决于实现 |\n| 函数对象（在 ECMA-262\
+    \ 术语中实现 [[Call]]） | 'function' |\n| 其他任何对象 | 'object' |\n\n## 问题：哪些关键字用于处理异常？\n\
+    \ntry/catch/finally 语句用于处理代码块中可能发生的部分或全部错误，同时继续执行代码。\n\n`try` 语句允许你定义一个代码块，在执行时对其进行错误测试。\n\
+    \n`catch` 语句允许你在 `try` 块发生错误时，定义一个要执行的代码块。\n\n`finally` 语句让你无论结果如何，在 `try` 和 `catch`\
+    \ 之后执行代码。\n\n```javascript\ntry {\n  // 尝试运行这段代码\n}\ncatch(err) {\n  // 在此处捕获错误\n\
+    }\nfinally {\n  // 无论发生什么都运行这段代码\n}\n```\n\n## 问题：如何创建通用对象？\n\n通用对象本质上是对象的空蓝图。你可以在\
+    \ JavaScript 代码的任何地方定义它。下例所示：\n\n```javascript\nfunction Employee(first, last,\
+    \ ssn, salary) {\n  this.firstName = first;\n  this.lastName = last;\n  this.social\
+    \ = ssn;\n  this.pay = salary;\n}\n```\n\n这创建了一个名为 Employee 的对象的通用蓝图。要获取 Employee\
+    \ 的实例，你需要调用：\n\n```javascript\nvar john = new Employee(\"John\", \"Smith\", \"\
+    050529994\", 72534);\n```\n\n## 问题：JavaScript 中 Push 方法的用途是什么？\n\n`push` 方法用于向数组的末尾添加或追加一个或多个元素。使用此方法，我们可以通过传递多个参数来追加多个元素。\n\
+    \n## 问题：JavaScript 中的 shift() 方法是什么？\n\n`shift()` 方法类似于 `push()`，但它作用于数组的开头。\n\
+    该方法用于在数组的开头前添加一个或多个元素。\n\n## 问题：解释 JavaScript 中的 pop() 方法？\n\n`pop()` 方法与 `shift()`\
+    \ 方法相似，不同之处在于它作用于数组的最后一个元素。在数组上调用 `pop()` 将返回最后一个元素。\n\n## 问题：JavaScript 中有哪些类型的错误？\n\
+    \n从 ECMAScript 2016 开始，JavaScript 中除了通用的 `Error` 对象外，还有七种核心错误构造函数：\n\n### EvalError\n\
+    \n在执行全局函数 `eval()` 期间发生的错误。\n\n### InternalError\n\n当 JavaScript 引擎抛出内部错误时发生的错误，例如“递归过多”。\n\
+    \n### RangeError\n\n当数值变量或参数超出有效范围时发生的错误。\n\n### ReferenceError\n\n当对无效引用进行解引用时发生的错误。\n\
+    \n### SyntaxError\n\n在 `eval()` 中解析代码时发生的语法错误。\n\n### TypeError\n\n当变量或参数不是有效类型时发生的错误。\n\
+    \n### URIError\n\n当 `encodeURI()` 或 `decodeURI()` 接收到无效参数时发生的错误。\n\n## 问题：什么是\
+    \ JavaScript Cookies？\n\nCookies 是存储在计算机中的小型文本文件。Cookies 在用户访问网站时创建，并用于存储网站可能需要的用户信息，例如购物车详情。\n\
+    \nJavaScript 可以通过 **document.cookie** 属性创建、读取和删除 cookie。\n\n## 问题：JavaScript 中的“严格（Strict）”模式是什么？如何启用？\n\
+    \n答案：\nECMAScript 5 的严格模式是一种选择使用受限 JavaScript 变体的方法。严格模式刻意与普通的 JavaScript 代码有所不同。\n\
+    \n严格模式对普通的 JavaScript 语义进行了几处更改。首先，严格模式通过将某些 JavaScript 静默错误改为强制抛出错误。其次，严格模式允许\
+    \ JavaScript 引擎执行以前无法实现的某些优化。第三，严格模式禁止了在未来 ECMAScript 版本中可能定义的语法。\n\n## 问题：解释\
+    \ JavaScript 中的闭包（closures）？它们何时使用？\n\n闭包是一个内部函数，它可以访问外层函数的变量。闭包不仅可以访问自己的作用域（定义在大括号之间的变量），可以访问外层函数的变量，还可以访问全局变量。\n\
+    \n你通过在另一个函数内部添加一个函数来创建闭包。内部函数可以访问外部函数的变量和参数。\n\n```javascript\nfunction sayHi(firstName,\
+    \ lastName) {\n  var greeting = \"Hello \";\n\n  // 内部函数可以访问外部\n  // 函数的参数和变量！\n\
+    \n  function name() {\n    return greeting + firstName + \" \" + lastName;\n \
+    \ }\n\n  return name();\n}\n```\n\n## 问题：对象属性是如何赋值的？\n\n属性是与 JavaScript 对象关联的值。\n\
+    \n假设一个对象已经存在，你可以像这样直接添加新属性：\nmyObject.myProperty = 'Property Value';\n\n## 问题：如何向数组追加一个值？\n\
+    \n这是一个微妙且棘手的问题，因为它既有一个基础答案，也有一个更好、更完整的答案。\n\n乍看之下\n\n但为了得到更好的答案，不要忘记所有可用的数组方法！\n\
+    \n- 1. 使用 `push()`\n- 2. 使用 `unshift()` 在数组开头添加\n- 3. 使用 `splice()` 在数组中插入\n-\
+    \ 4. 使用 `concat()` 合并\n\n## 问题：解释 for-in 循环？\n\n`for-in` 循环用于遍历对象的属性。它会在属性耗尽之前继续。\n\
+    \n```javascript\nvar item;\nfor (item in myObject) {\n  // 执行操作\n}\n```\n\n##\
+    \ 问题：描述 JavaScript 中的匿名函数（anonymous function）？\n\n没有命名的函数被称为匿名函数。\n\n存储在变量中的函数不需要使用函数名。\n\
+    \n## 问题：JavaScript 中可以使用哪些逻辑运算符？\n\n“与”、“或”和“非”运算符可以在 JavaScript 中使用。\n\n例如，给定\
+    \ x=2 和 y=6\n\n| 运算符 | 名称 | 示例 |\n| --- | --- | --- |\n| && | 与 | (x < 3 && y\
+    \ > 1) 为真 |\n| || | 或 | (x == 5 || y == 5) 为假 |\n| ! | 非 | !(x == y) 为真 |\n\n\
+    ## JavaScript 和元素\n\n这些 JavaScript 问题专注于元素。\n\n## 问题：如何更改元素的类（class）？\n\n使用原生\
+    \ JavaScript：\n\n```javascript\ndocument.getElementById(\"MyElement\").classList.add('MyClass');\n\
+    ```\n\n```javascript\ndocument.getElementById(\"MyElement\").classList.remove('MyClass');\n\
+    ```\n\n## 问题：如何更改元素的样式（style）？\n\n使用原生 JavaScript：\n\n```javascript\ndocument.getElementById(\"\
+    p2\").style.color = 'blue';\n```\n\n## 问题：解释如何使用 JavaScript 提交表单？\n\n使用 JavaScript\
+    \ 提交表单：\n\n```javascript\ndocument.form[0].submit();\n```\n\n## 问题：在 JavaScript\
+    \ 中使用 innerHTML 的缺点是什么？\n\n不当处理处理 `innerHTML` 属性可能会在包含标记为延迟执行的脚本时允许脚本注入：\n<script\
+    \ defer>...</script>\n\n设置 `innerHTML` 会破坏绑定了事件处理程序的现有 HTML 元素，在某些浏览器中可能会内存泄漏。\n\
+    \n你无法在所有浏览器的所有 HTML 元素上设置 `innerHTML` 属性（例如，Internet Explorer 不允许设置表格行的 `innerHTML`）。\n\
+    \n最后，innerHTML 内容每次都会刷新，因此速度较慢。\n\n## 问题：JavaScript 中可用的所有弹出框（Pop up boxes）类型有哪些？\n\
+    \nJavaScript 有三种弹出框：警告框（Alert）、确认框（Confirm）和提示框（Prompt）。\n\n### 警告框（Alert）\n\n\
+    警告框通常用于确保信息传递给用户。\n当警告框弹出时，用户必须点击“确定”才能继续。\n\n### 确认框（Confirm）\n\n确认框通常用于让用户验证或接受某些内容。\n\
+    当确认框弹出时，用户必须点击“确定”或“取消”才能继续。\n\n### 提示框（Prompt）\n\n提示框通常用于让用户在进入页面之前输入值。\n\n当提示框弹出时，用户在输入值后必须点击“确定”或“取消”才能继续。\n\
+    \n"
+  merge: 0
+  raw:
+  - '[PAGE 27]
+
+
+    # Question: What is the use of typeof operator?
+
+
+    ’Typeof’ is an operator which is used to return a string description of the type
+    of a variable.
+
+
+    | Type | Result |
+
+    | --- | --- |
+
+    | Undefined | ''undefined'' |
+
+    | Null | ''object'' (see below) |
+
+    | Boolean | ''boolean'' |
+
+    | Number | ''number'' |
+
+    | String | ''string'' |
+
+    | Symbol (new in ECMAScript 2015) | ''symbol'' |
+
+    | Host object (provided by the JS environment) | Implementation-dependent |
+
+    | Function object (implements [[Call]] in ECMA-262 terms) | ''function'' |
+
+    | Any other object | ''object'' |'
+  - "[PAGE 28]\n\n# Question: Which keywords are used to handle exceptions?\n\nThe\
+    \ try/catch/finally statement handles some or all of the errors that may occur\
+    \ in a block of code, while still running code.\n\nThe try statement allows you\
+    \ to define a block of code to be tested for errors while it is being executed.\n\
+    \nThe catch statement allows you to define a block of code to be executed, if\
+    \ an error occurs in the try block.\n\nThe finally statement lets you execute\
+    \ code, after try and catch, regardless of the result.\n\n```\ntry {\n  // try\
+    \ to run this code\n}\ncatch(err) {\n  // catch errors here\n}\nfinally {\n  //\
+    \ run this code regardless of what happens\n}\n```"
+  - "[PAGE 29]\n\n# Question: How generic objects can be created?\n\nA generic object\
+    \ is essentially an empty blueprint for an object. You can define it anywhere\
+    \ in your Javascript code. An example is below:\n\n```\nfunction Employee(first,\
+    \ last, ssn, salary) {\n  this.firstName = first;\n  this.lastName = last;\n \
+    \ this.social = ssn;\n  this.pay = salary;\n}\n```\n\nThis creates a generic blueprint\
+    \ for an object known as Employee. To get an instance of Employee, you would call:\n\
+    \n```\nvar john = new Employee(\"John\", \"Smith\", \"050529994\", 72534);\n```"
+  - '[PAGE 30]
+
+
+    # Question: What is the use of Push method in JavaScript?
+
+
+    The push method is used to add or append one or more elements to the end of an
+    Array. Using this method, we can append multiple elements by passing multiple
+    arguments.'
+  - '[PAGE 31]
+
+
+    # Question: What is the shift() method in JavaScript?
+
+
+    The shift() method is like push(), except it acts on the beginning of the array.
+
+    This method is used to prepend one or more elements to the beginning of the array.'
+  - '[PAGE 32]
+
+
+    # Question: Explain the pop()method in JavaScript?
+
+
+    The pop() method is similar as the shift() method except that it acts on the last
+    element of the array. Calling pop() on an array will return the last element.'
+  - '[PAGE 33]
+
+
+    # Question: What are the different types of errors in JavaScript?
+
+
+    As of ECMAScript 2016, there are seven other core error constructors in JavaScript
+    (in addition to the generic Error object):
+
+
+    # EvalError
+
+
+    An error that occurs during the global function eval().
+
+
+    # InternalError
+
+
+    An error that occurs when an internal error in the JavaScript engine is thrown,
+    for example, "too much recursion".
+
+
+    # RangeError
+
+
+    An error that occurs when a numeric variable or parameter is outside of valid
+    range.
+
+
+    # ReferenceError
+
+
+    An error that occurs when de-referencing an invalid reference.
+
+
+    # SyntaxError
+
+
+    A syntax error that occurs while parsing code in eval().
+
+
+    # TypeError
+
+
+    An error that occurs when a variable or parameter is not of a valid type.
+
+
+    # URIError
+
+
+    An error that occurs when encodeURI() or decodeURI() are given invalid parameters.'
+  - '[PAGE 34]
+
+
+    # Question: What are JavaScript Cookies?
+
+
+    Cookies are the small text files stored in the computer. Cookies are created when
+    the user visits the websites and are used to store user information that the website
+    might need, such as shopping cart details.
+
+
+    JavaScript can create, read, and delete cookies with the **document.cookie** property.'
+  - '[PAGE 35]
+
+
+    # Question: What is the ‘Strict’ mode in JavaScript and how can it be enabled?
+
+
+    Answer:
+
+    ECMAScript 5''s strict mode is a way to opt in to a restricted variant of JavaScript.
+    Strict mode is intentionally different from normal JavaScript code.
+
+
+    Strict mode makes several changes to normal JavaScript semantics. First, strict
+    mode forces some JavaScript silent errors by changing them to throw errors. Second,
+    strict mode enables JavaScript engines to perform certain optimizations that were
+    previously not possible. Third, strict mode prohibits syntax likely to be defined
+    in future versions of ECMAScript.'
+  - "[PAGE 36]\n\n# Question: Explain closures in JavaScript? When are they used?\n\
+    \nA closure is an inner function that has access to the enclosing function's variables.\
+    \ The closure has access to its own scope (variables defined between its curly\
+    \ brackets), access to the outer function's variables, and also it has access\
+    \ to the global variables.\n\nYou create a closure by adding a function inside\
+    \ another function. The inner function has access to both the outer functions\
+    \ variables and parameters.\n\n```\nfunction sayHi(firstName, lastName) {\n  var\
+    \ greeting = \"Hello \";\n\n// inner function has access to outer\n  // function's\
+    \ parameters and variables!\n\n  function name() {\n    return greeting + firstName\
+    \ + \" \" + lastName;\n  }\n\n  return name();\n}\n```"
+  - '[PAGE 37]
+
+
+    # Question: How are object properties assigned?
+
+
+    Properties are the values associated with a JavaScript object.
+
+
+    Assuming an object already exists, you can simply add a new property like so:
+
+    myObject.myProperty = ''Property Value'';'
+  - '[PAGE 38]
+
+
+    # Question: How can a value be appended to an array?
+
+
+    This is a subtly tricky question because there is the basic answer and a better,
+
+    more complete answer.
+
+
+    At first glance
+
+
+    But for a better answer, don''t forget all of the array methods that are available!
+
+
+    +   1. Using push() to add to the end of an array
+
+    2. Using unshift() to add to the beginning of an array
+
+    3. Using splice() to add elements within an array
+
+    4. Using concat() to combine and create new, longer arrays'
+  - "[PAGE 39]\n\n# Question: Explain the for-in loop?\n\nThe for-in loop is used\
+    \ to loop through the properties of an object. The loop is continued till all\
+    \ the properties of the object are depleted.\n\n```\nvar item;\nfor (item in myObject)\
+    \ {\n  // do something\n}\n```"
+  - '[PAGE 40]
+
+
+    # Question: Describe the properties of an anonymous function in JavaScript?
+
+
+    A function that is declared without a name is known as an anonymous function.
+
+
+    Functions stored in variables do not need function names. They are instead called
+    using the variable name.'
+  - '[PAGE 41]
+
+
+    # Question: What logical operators can be used in JavaScript?
+
+
+    The “and”, “or” and “not” operators can be used in JavaScript.
+
+
+    For example, given x=2 and y=6
+
+
+    | Operator | Name | Example |
+
+    | --- | --- | --- |
+
+    | && | and | (x < 3 && y > 1) is true |
+
+    | || | or | (x == 5 || y == 5) is false |
+
+    | ! | not | !(x == y) is true |'
+  - '[PAGE 42]
+
+
+    # JavaScript and UI Elements
+
+
+    These JavaScript questions focus on elements of the web and user interface.'
+  - '[PAGE 43]
+
+
+    # Question: How can the class of an element be changed?
+
+
+    Using vanilla JavaScript:
+
+
+    ```
+
+    document.getElementById("MyElement").classList.add(''MyClass'');
+
+    ```
+
+
+    ```
+
+    document.getElementById("MyElement").classList.remove(''MyClass'');
+
+    ```'
+  - '[PAGE 44]
+
+
+    # Question: How can the style of an element be changed?
+
+
+    Using vanilla JavaScript:
+
+
+    ```
+
+    document.getElementById("p2").style.color = ''blue'';
+
+    ```'
+  - '[PAGE 45]
+
+
+    # Question: Explain how can you submit a form using vanilla JavaScript?
+
+
+    To submit a form using JavaScript use:
+
+
+    ```
+
+    document.form[0].submit();
+
+    ```'
+  - '[PAGE 46]
+
+
+    # Question: What is the disadvantage of using innerHTML in JavaScript?
+
+
+    Improper handling of the innerHTML property can enable script-injection attacks
+    on Internet Explorer when the HTML string contains a script tag marked as deferred:
+
+    <script defer>...</script>
+
+
+    Setting innerHTML will destroy existing HTML elements that have event handlers
+    attached to them, potentially creating a memory leak on some browsers.
+
+
+    You can''t set the innerHTML property on all HTML elements on all browsers (for
+    instance, Internet Explorer won''t let you set the innerHTML property of a table
+    row element).
+
+
+    Finally, innerHTML content is refreshed every time and thus is slower.'
+  - '[PAGE 47]
+
+
+    # Question: What are all the types of Pop up boxes available in JavaScript?
+
+
+    JavaScript has three kind of popup boxes: Alert box, Confirm box, and Prompt box.
+
+
+    # Alert Box
+
+
+    An alert box is often used if you want to make sure information comes through
+    the user.
+
+    When an alert box pops up, the user will have to click "OK" to proceed.
+
+
+    # Confirm Box
+
+
+    A confirm box is often used if you want the user to verify or accept something.
+
+    When a confirm box pops up, the user will have to click either "OK" or "Cancel"
+    to proceed.
+
+
+    # Prompt Box
+
+
+    A prompt box is often used if you want the user to input a value before entering
+    a page.
+
+
+    When a prompt box pops up, the user will have to click either "OK" or "Cancel"
+    to proceed after entering an input value.'
+- md: '
+
+    ## Question: What is the use of blur function?
+
+
+    The blur function is used to remove the focus from the specified object.
+
+
+    ## Question: How do you get the status of a CheckBox?
+
+
+    Using the ID of your input field, you can check the value of:
+
+    document.getElementById(''my-checkbox'').checked
+
+
+    If it is True, the checkbox is checked.
+
+
+    ## Question: Define event bubbling?
+
+
+    When an event happens on an element, it first runs the handlers on it, then on
+    its parent, then all the way up on other ancestors. In other words, it “bubbles”
+    up.
+
+
+    This is because JavaScript allows DOM elements to be nested inside each other.
+    In such a case, if the handler of the child is clicked, the handler of parent
+    will also work as if it were clicked too.
+
+
+    ## Question: How are event handlers utilized in JavaScript?
+
+
+    Answer:
+
+    Events are the actions that result from activities, such as clicking a link or
+    filling a form, by the user. An event listener or handler is a procedure or function
+    in a computer program that waits for an event to occur, then performs actions
+    in response to that event.
+
+
+    ## Compare and Contrast
+
+
+    This section focuses on questions that ask you to explain the similarities and
+    differences between concepts and methodology.
+
+
+    ## Question: Enumerate the differences between Java and JavaScript?
+
+
+    Although the names are much alike, these two languages are not at all the same
+    and are designed for very different intents. JavaScript is primarily a scripting
+    language for use within HTML pages, while Java is a compiled, programming language
+    that is concurrent, class-based, and object-oriented.
+
+
+    Java was developed by Sun for use as a general-purpose computer programming language.
+
+
+    JavaScript was developed by Netscape, originally as a client side scripting language.
+
+
+    ## Question: Between JavaScript and an ASP script, which is faster?
+
+
+    JavaScript is faster. JavaScript is a client-side language and thus it does not
+    need the assistance of the web server to execute. On the other hand, ASP is a
+    server-side language and hence is always slower than JavaScript.
+
+
+    ## Question: What is the difference between ViewState and SessionState?
+
+
+    **ViewState** is specific to a page in a session.
+
+
+    **SessionState** is specific to user specific data that can be accessed across
+    all pages in the web application.
+
+
+    ## Question: Explain the difference between “==” and “===”
+
+
+    “==” checks only for equality in value.
+
+
+    “=== ” is a stricter equality test and returns false if either the value or the
+    type of the two variables are different.
+
+
+    ## Question: What is the difference between an alert box and a confirmation box?
+
+
+    An alert box displays only one button which is the OK button.
+
+    A confirmation box displays two buttons, the OK button and the cancel button.
+
+
+    ## Question: Explain window.onload versus onDocumentReady?
+
+
+    load is called when all assets are done loading, including images. At this point,
+    all of the objects in the document are in the DOM.
+
+
+    ready is fired when the DOM is ready for interaction and its elements can be manipulated
+    by your code. This means it will run a little faster than waiting for load.
+
+
+    ## Bonus Questions
+
+
+    These sneaky questions force you to know your JavaScript inside and out.
+
+    Watch out for tricks!
+
+
+    ## Question: Is it possible to break JavaScript code into several lines?
+
+
+    Breaking within a string statement can be done by the use of a backslash, ''\’,
+    at the end of the first line. If you change to a new line when not within a string
+    statement, then JavaScript ignores break in line.
+
+
+    ## Question: What would be the result of 3+2+"7"?
+
+
+    Since 3 and 2 are integers, they will be added numerically. And since 7 is a string,
+    its concatenation will be done. So the result would be 57.
+
+
+    ## Question: How can you convert the string of any base to integer in JavaScript?
+
+
+    The parseInt() function is used to convert numbers between different bases. parseInt()
+    takes the string to be converted as its first parameter, and the second parameter
+    is the base of the given string.
+
+
+    ## Question: Is JavaScript case sensitive? Give an example?
+
+
+    Yes, JavaScript is case sensitive. For example, a function parseInt() is not same
+    as the function ParseInt().
+
+
+    ## Question: What is the difference between .call() and .apply()?
+
+
+    The function .call() and .apply() are very similar in their usage except that
+    apply() lets you invoke the function with arguments as an array; .call() requires
+    the parameters be listed explicitly. In other words, you use apply() when you
+    don''t know the number of parameters.
+
+    '
+  mdcn: '
+
+
+    ## 问题：blur 函数有什么用处？
+
+
+    blur 函数用于移除指定对象的焦点。
+
+
+    ## 问题：如何获取 CheckBox 的状态？
+
+
+    使用你输入字段的 ID，可以检查以下内容的值：
+
+    document.getElementById(''my-checkbox'').checked
+
+
+    如果为 True，则复选框被勾选状态。
+
+
+    ## 问题：定义事件冒泡？
+
+
+    当事件在元素上发生事件时，它会首先运行该元素上的处理器，然后运行其父元素上的处理器，一直向上传播到其他祖先元素。换句话说，它会向上“冒泡”。
+
+
+    这是因为 JavaScript 允许 DOM 元素之间相互嵌套。在这种情况下，如果子元素的处理器被点击，父元素的处理器也会像被点击了一样同样起作用。
+
+
+    ## 问题：在 JavaScript 中是如何利用事件处理程序的？
+
+
+    答案：
+
+    事件是用户活动产生的动作，例如点击链接或填写表单。事件监听器或处理器是计算机程序中的一种过程或函数，它负责等待事件发生，然后对该事件执行相应的操作。
+
+
+    ## 比较与对比
+
+
+    本节侧重于要求你解释概念和方法之间相似之处与差异的问题。
+
+
+    ## 问题：列举 Java 和 JavaScript 之间的区别？
+
+
+    尽管名字非常相似，但这两种语言完全不同，且设计意图也非常不同。JavaScript 主要是一种用于 HTML 页面内部的脚本语言，而 Java 是一种编译型编程语言，它具有并发、基于类和面向对象的特性。
+
+
+    Java 由 Sun 开发，旨在作为一种通用计算机编程语言。
+
+
+    JavaScript 由 Netscape 开发，最初是作为客户端脚本语言。
+
+
+    ## 问题：JavaScript 和 ASP 脚本之间，哪一个更快？
+
+
+    JavaScript 更快。JavaScript 是一种客户端语言，因此不需要 Web 服务器的协助即可执行。相反，ASP 是一种服务端语言，因此总是比 JavaScript
+    慢。
+
+
+    ## 问题：ViewState 和 SessionState 有什么区别？
+
+
+    **ViewState** 特指会话中的某个页面。
+
+
+    **SessionState** 特指用户特定数据，数据可以在 Web 应用程序的所有页面中访问。
+
+
+    ## 问题：解释“==”和“===”之间的区别
+
+
+    “==” 仅检查值的相等性。
+
+
+    “=== ” 是更严格的相等性测试，如果两个变量的值或类型不同，则返回 false。
+
+
+    ## 问题：警报框（alert box）和确认框（confirmation box）有什么区别？
+
+
+    警报框只显示一个按钮，即 OK 按钮。
+
+    确认框显示两个按钮，即 OK 按钮和取消按钮。
+
+
+    ## 问题：解释 window.onload 与 onDocumentReady 的区别？
+
+
+    load 在所有资源（包括图像）加载完成时调用。此时，文档中的所有对象已在 DOM 中。
+
+
+    ready 在 DOM 准备好交互且其元素可以被你的代码进行操作时触发。这意味着它的运行速度会比等待 load 快一点。
+
+
+    ## Bonus题
+
+
+    这些狡猾的问题迫使你对 JavaScript 了如指掌。
+
+    注意陷阱！
+
+
+    ## 问题：可以将 JavaScript 代码拆分成几行吗？
+
+
+    在字符串语句内部进行换行可以通过第一行末尾使用反斜杠 `\` 来实现。如果你在不在字符串语句的情况下换到新行，那么 JavaScript 会忽略该换行符。
+
+
+    ## 问题：3+2+"7" 的结果是什么？
+
+
+    由于 3 和 2 是整数，它们将进行数值相加。由于 7 是一个字符串，它将进行字符串拼接。因此结果将是 57。
+
+
+    ## 问题：如何在 JavaScript 中将任何基数的字符串转换为整数？
+
+
+    parseInt() 函数用于在不同基数之间转换数字。parseInt() 接受要转换的字符串作为第一个参数，第二个参数是给定字符串的基数。
+
+
+    ## 问题：JavaScript区分大小写吗？举个例子？
+
+
+    是的，JavaScript 是区分大小写的。例如，函数 parseInt() 与函数 ParseInt() 不同。
+
+
+    ## 问题：.call() 和 .apply() 有什么区别？
+
+
+    .call() 和 .apply() 函数在用法非常相似，除了 apply() 允许你以数组的形式调用函数；.call() 要求显式列出参数。换句话说，当你不知道参数的数量时使用
+    apply()。
+
+
+    '
+  merge: 0
+  raw:
+  - '[PAGE 48]
+
+
+    # Question: What is the use of blur function?
+
+
+    The blur function is used to remove the focus from the specified object.'
+  - '[PAGE 49]
+
+
+    # Question: How do you get the status of a CheckBox?
+
+
+    Using the ID of your input field, you can check the value of:
+
+    document.getElementById(''my-checkbox'').checked
+
+
+    If it is True, the checkbox is checked.'
+  - '[PAGE 50]
+
+
+    # Question: Define event bubbling?
+
+
+    When an event happens on an element, it first runs the handlers on it, then on
+    its
+
+    parent, then all the way up on other ancestors. In other words, it “bubbles” up.
+
+
+    This is because JavaScript allows DOM elements to be nested inside each
+
+    other. In such a case, if the handler of the child is clicked, the handler of
+    parent
+
+    will also work as if it were clicked too.'
+  - '[PAGE 51]
+
+
+    # Question: How are event handlers utilized in JavaScript?
+
+
+    Answer:
+
+    Events are the actions that result from activities, such as clicking a link or
+    filling a form, by the user. An event listener or handler is a procedure or function
+    in a computer program that waits for an event to occur, then performs actions
+    in response to that event.'
+  - '[PAGE 52]
+
+
+    # Compare and Contrast
+
+
+    This section focuses on questions that ask you to explain the similarities and
+    differences between concepts and methodology.'
+  - '[PAGE 53]
+
+
+    # Question: Enumerate the differences between Java and JavaScript?
+
+
+    Although the names are much alike, these two languages are not at all the same
+    and are designed for very different intents. JavaScript is primarily a scripting
+    language for use within HTML pages, while Java is a compiled, programming language
+    that is concurrent, class-based, and object-oriented.
+
+
+    Java was developed by Sun for use as a general-purpose computer programming language.
+
+
+    JavaScript was developed by Netscape, originally as a client side scripting language.'
+  - '[PAGE 54]
+
+
+    # Question: Between JavaScript and an ASP script, which is faster?
+
+
+    JavaScript is faster. JavaScript is a client-side language and thus it does not
+    need the assistance of the web server to execute. On the other hand, ASP is a
+    server-side language and hence is always slower than JavaScript.'
+  - '[PAGE 55]
+
+
+    # Question: What is the difference between ViewState and SessionState?
+
+
+    **ViewState** is specific to a page in a session.
+
+
+    **SessionState** is specific to user specific data that can be accessed across
+    all pages in the web application.'
+  - '[PAGE 56]
+
+
+    # Question: Explain the difference between “==” and “===”
+
+
+    “==” checks only for equality in value.
+
+
+    “=== is a stricter equality test and returns false if either the value or the
+    type of the two variables are different.'
+  - '[PAGE 57]
+
+
+    # Question: What is the difference between an alert box and a confirmation box?
+
+
+    An alert box displays only one button which is the OK button.
+
+    A confirmation box displays two buttons, the OK button and the cancel button.'
+  - '[PAGE 58]
+
+
+    # Question: Explain window.onload versus onDocumentReady?
+
+
+    load is called when all assets are done loading, including images. At this point,
+    all of the objects in the document are in the DOM
+
+
+    ready is fired when the DOM is ready for interaction and its elements can be manipulated
+    by your code.This means it will run a little faster than waiting for load .'
+  - '[PAGE 59]
+
+
+    # Bonus Questions
+
+
+    These sneaky questions force you to know your JavaScript inside and out.
+
+    Watch out for tricks!'
+  - '[PAGE 60]
+
+
+    # Question: Is it possible to break JavaScript code into several lines?
+
+
+    Breaking within a string statement can be done by the use of a backslash, ''\\’,
+    at the end of the first line. If you change to a new line when not within a string
+    statement, then JavaScript ignores break in line.'
+  - '[PAGE 61]
+
+
+    # Question: What would be the result of 3+2+"7"?
+
+
+    Since 3 and 2 are integers, they will be added numerically. And since 7 is a string,
+    its concatenation will be done. So the result would be 57.'
+  - '[PAGE 62]
+
+
+    # Question: How can you convert the string of any base to integer in JavaScript?
+
+
+    The parseInt() function is used to convert numbers between different bases. parseInt()
+    takes the string to be converted as its first parameter, and the second parameter
+    is the base of the given string.'
+  - '[PAGE 63]
+
+
+    # Question: Is JavaScript case sensitive? Give an example?
+
+
+    Yes, JavaScript is case sensitive. For example, a function parseInt() is not same
+    as the function ParseInt().'
+  - '[PAGE 64]
+
+
+    # Question: What is the difference between .call() and .apply()?
+
+
+    The function .call() and .apply() are very similar in their usage except that
+    apply() lets you invoke the function with arguments as an array; .call() requires
+    the parameters be listed explicitly.In other words, you use apply() when you don''t
+    know the number of parameters.'

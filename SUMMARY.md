@@ -1120,6 +1120,7 @@
 +   [JavaScript 实用技巧](docs/practical-javascript-techniques-smashing-ebooks/README.md)
 +   [Javascript 实践指南：160 个习题加速你的学习](docs/practice-javascript-160-solved-exercises-to-accelerate-your-/README.md)
 +   [务实程序员系列：Ruby 的多个面； Stuart Halloway Justin Gehtland；Java 开发者的 Rails 指南；务实程序员 2007](docs/pragmatic-programmers-facets-of-ruby-series-stuart-halloway-/README.md)
++   [JavaScript 面试准备：基础知识：技术问题与答案 (你的技术面试)](docs/preparing-for-your-javascript-interview-the-basics-technical/README.md)
 +   [AngularJS 高级指南](docs/professional-angularjs/README.md)
 +   [JavaScript 高级指南：Web 开发人员 · 第 3 版](docs/professional-javascript-for-web-developers-3rd-edition/README.md)
 +   [Web 开发人员 JavaScript 高级指南，第 5 版](docs/professional-javascript-for-web-developers-5th-edition/README.md)
