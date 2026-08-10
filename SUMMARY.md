@@ -1119,6 +1119,7 @@
 +   [易用 Web JavaScript 实用指南](docs/practical-javascript-for-the-usable-web/README.md)
 +   [JavaScript 实用技巧](docs/practical-javascript-techniques-smashing-ebooks/README.md)
 +   [Javascript 实践指南：160 个习题加速你的学习](docs/practice-javascript-160-solved-exercises-to-accelerate-your-/README.md)
++   [实战 Ajax：Web 2.0 入门指南，实用主义书架](docs/pragmatic-ajax-a-web-20-primer-pragmatic-bookshelf/README.md)
 +   [JavaScript 实用指南](docs/pragmatic-guide-to-javascript-pragmatic-guides/README.md)
 +   [务实程序员系列：Ruby 的多个面； Stuart Halloway Justin Gehtland；Java 开发者的 Rails 指南；务实程序员 2007](docs/pragmatic-programmers-facets-of-ruby-series-stuart-halloway-/README.md)
 +   [JavaScript 面试准备：基础知识：技术问题与答案 (你的技术面试)](docs/preparing-for-your-javascript-interview-the-basics-technical/README.md)
