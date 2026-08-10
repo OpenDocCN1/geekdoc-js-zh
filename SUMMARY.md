@@ -1093,6 +1093,7 @@
 +   [PHP 5 ／ MySQL 编程初学者指南](docs/php-5-mysql-programming-for-the-absolute-beginner-for-the-ab/README.md)
 +   [PHP 6 快速简单的 Web 开发](docs/php-6-fast-and-easy-web-development/README.md)
 +   [PHP 和 MySQL 初学者指南](docs/php-and-mysql-for-beginners/README.md)
++   [PHP and MySQL Web 开发](docs/php-and-mysql-web-development/README.md)
 +   [PHP 和 MySQL Web 开发初学者指南；构建数据库驱动的 Web 应用程序；创建动态 Web 内容；回顾 HTML、CSS 和 JavaScript](docs/php-and-mysql-web-development-a-beginners-guide-build-databa/README.md)
 +   [PHP 快速简单的 Web 开发，第 2 版（快速简单的 Web 开发）](docs/php-fast-easy-web-development-2nd-edition-fast-easy-web-deve/README.md)
 +   [PHP 快速简单的 Web 开发，第 2 版](docs/php-fast-easy-web-development-2nd-editionteam-lib/README.md)
