@@ -1115,6 +1115,7 @@
 +   [PowerShell：初学者指南！24 小时精通 PowerShell 命令行（Python 编程、Javascript、计算机编程、C++、SQL、计算机黑客、编程）](docs/powershell-for-beginners-master-the-powershell-command-line-/README.md)
 +   [Practical CSS3：开发与设计](docs/practical-css3-develop-and-design/README.md)
 +   [JavaScript 实用技巧](docs/practical-javascript-techniques-smashing-ebooks/README.md)
++   [Javascript 实践指南：160 个习题加速你的学习](docs/practice-javascript-160-solved-exercises-to-accelerate-your-/README.md)
 +   [务实程序员系列：Ruby 的多个面； Stuart Halloway Justin Gehtland；Java 开发者的 Rails 指南；务实程序员 2007](docs/pragmatic-programmers-facets-of-ruby-series-stuart-halloway-/README.md)
 +   [AngularJS 高级指南](docs/professional-angularjs/README.md)
 +   [JavaScript 高级指南：Web 开发人员 · 第 3 版](docs/professional-javascript-for-web-developers-3rd-edition/README.md)

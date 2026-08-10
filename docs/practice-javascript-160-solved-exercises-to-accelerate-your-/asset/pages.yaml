@@ -1,0 +1,3982 @@
+- img_proc: true
+  md: '# JS
+
+
+    # PRACTICE
+
+
+    # JAVASCRIPT
+
+
+    # 160
+
+
+    solved
+
+
+    # EXERCISES
+
+
+    to accelerate your learning
+
+
+    RUHAN CONCEIÇÃO'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: '# # PRACTICE JAVASCRIPT
+
+
+    160 Solved Exercises to Accelerate your Learning
+
+
+    Ruhan Avila da Conceição'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: '# # Preface
+
+
+    Welcome to this book where solved and commented Javascript exercises are presented.
+    In this book, you will find a collection of 160 exercises designed to help you
+    improve your programming skills in this powerful language.
+
+
+    Learning to program involves not only understanding theoretical concepts but also
+    applying those concepts in real-life situations. That''s exactly what you will
+    find in this book: a wide variety of problems ranging from basic fundamentals
+    to more complex challenges.
+
+
+    As you progress through the exercises, you will be challenged with tasks involving
+    mathematical formula manipulation, strings, conditionals, loops, vector manipulation,
+    matrices, and much more.
+
+
+    The main goal of this book is to provide a practical and comprehensive resource
+    for programmers seeking improvement. Whether you are a beginner in Javascript
+    looking to solidify your knowledge or an experienced programmer wishing to deepen
+    your expertise, these exercises will serve as an excellent study guide and reference.
+    This book is also suitable for teachers who would like to have a rich collection
+    of solved Programming Logic exercises to create exercises and questions for their
+    students.
+
+
+    Enjoy this learning journey and dive into the solved and commented Javascript
+    exercises. Prepare yourself for stimulating challenges, creative solutions, and
+    a unique opportunity to enhance your programming skills.'
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: 'This book was written using artificial intelligence tools in content creation,
+    but all materials have been reviewed and edited by the author to deliver a final
+    high-quality product.
+
+
+    Happy reading, happy studying, and have fun exploring the fascinating world of
+    Javascript programming
+
+
+    Ruhan Avila da Conceição.'
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: '# # Summary
+
+
+    +   - Introduction
+
+    - Basic Exercises
+
+    - Mathematical Formulas
+
+    - Conditionals
+
+    - Repeat Loops
+
+    - Arrays
+
+    - Strings
+
+    - Matrices
+
+    - Recursive Functions
+
+    - Regular Expressions
+
+    - Sorting Algorithms
+
+    - Complete List of Exercises
+
+    - Additional Content
+
+    - About the Author'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: '# # Introduction
+
+
+    If you have acquired this book, you want to start programming and be logically
+    challenged as soon as possible, without wanting to read a sermon on the mount.
+    But it is important to highlight a few things before we begin.
+
+
+    Even though many exercises may be considered easy, if you are new to this programming
+    journey, it is important for you to first try to solve the problem on your own
+    before looking at the solution. There is more than one possible solution to the
+    same problem, and you need to think and develop your own solution. Then, you can
+    compare it with the proposed one in the book, identify the strengths of each,
+    and try to learn a little more.
+
+
+    If the exercise is too difficult and you can''t solve it, move on to the next
+    one and try again the next day. Don''t immediately jump to the answer, even if
+    you can''t solve it, and definitely don''t look at the answer without even attempting
+    to solve it.
+
+
+    Learning programming logic is not about getting the answer; it''s about the journey
+    you take to arrive at the answer.
+
+
+    With that being said, the remaining chapters of this book are divided according
+    to the programming topics covered in the proposed exercises.
+
+
+    From now on on, it''s all up to you!'
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: '# # Basic Exercises
+
+
+    Before starting the exercises, it''s important to carefully read this. When a
+    particular exercise requires user input, the **prompt** command will be used.
+    However, please note that the **prompt-sync** package needs to be installed beforehand.
+    To do this, initiate an npm project and install the package using the following
+    steps:
+
+
+    ```
+
+    npm init
+
+    ```
+
+
+    ```
+
+    npm install prompt-sync
+
+    ```
+
+
+    Additionally, you must add the following command in the first line in your code:
+
+
+    ```
+
+    prompt = require("prompt-sync")()
+
+    ```
+
+
+    +   1. Write a program that prints "Hello World!" on the screen.
+
+
+    ```
+
+    console.log("Hello World!");
+
+    ```
+
+
+    +   2. Write a program that prints "Hello" on one line and "World!" on the bottom
+    line, using two different commands.
+
+
+    ```
+
+    console.log("Hello");
+
+    ```
+
+
+    ```
+
+    console.log("World!");
+
+    ```'
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: '3. Write a program that prints "Hello" on one line and "World!" on the bottom
+    line, using only one command to print.
+
+
+    ```
+
+    console.log("Hello\nWorld!");
+
+    ```
+
+
+    4. Write a program that prints "Hello" on one line and "World!" on the bottom
+    line, leaving a blank line between the words.
+
+
+    ```
+
+    console.log("Hello");
+
+    console.log(""); // Blank line
+
+    console.log("World!");
+
+    ```
+
+
+    5. Write a program that prints "Hello World!" (in the same line) on the screen,
+    using one command to print "Hello" and another command to print "World!".
+
+
+    ```
+
+    process.stdout.write("Hello ");
+
+    process.stdout.write("World!");
+
+    console.log(); // Add a newline to move to the next line
+
+    ```
+
+
+    To do this, you must run this command before: npm i --save-dev @types/node'
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: '# 6. Write a program that prints "Hello World!" (in the same line) on the screen,
+    using one command to print "Hello", another command to print "World", and another
+    to print "!".
+
+
+    ```
+
+    process.stdout.write("Hello ");
+
+    process.stdout.write("World");
+
+    process.stdout.write("!");
+
+    console.log(); // Add a newline to move to the next line
+
+    ```
+
+
+    # 7. Make a program that asks for the user''s name, and prints the name on the
+    screen immediately after.
+
+
+    // This command below will be omitted in next exercises
+
+
+    ```
+
+    prompt = require("prompt-sync")()
+
+
+    const userName = prompt("Please enter your name:")
+
+    console.log("Hello, " + userName + "!");
+
+    ```
+
+
+    # 8. Make a program that reads the names of three people in sequence, followed
+    by their respective ages, and prints each name with their respective ages on the
+    screen.
+
+
+    // Read information for the first person
+
+
+    ```
+
+    const name1 = prompt("Enter the name of the first person:")
+
+    const age1 = prompt("Enter the age of the first person:")
+
+    ```'
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: '```
+
+    // Read information for the second person
+
+    const name2 = prompt("Enter the name of the second person:");
+
+    const age2 = prompt("Enter the age of the second person:");
+
+    ```
+
+
+    ```
+
+    // Read information for the third person
+
+    const name3 = prompt("Enter the name of the third person:");
+
+    const age3 = prompt("Enter the age of the third person:");
+
+    ```
+
+
+    ```
+
+    // Print each person''s name and age
+
+    console.log(name1 + " is " + age1 + " years old.");
+
+    console.log(name2 + " is " + age2 + " years old.");
+
+    console.log(name3 + " is " + age3 + " years old.");
+
+    ```
+
+
+    # 9. Make a program that reads the names of three people in sequence, followed
+    by their respective ages and heights, and prints the data in table format on the
+    screen.
+
+
+    ```
+
+    // Read information for the first person
+
+    const name1 = prompt("Enter the name of the first person:");
+
+    const age1 = prompt("Enter the age of the first person:");
+
+    const height1 = prompt("Enter the height of the first person (in cm):");
+
+    ```
+
+
+    ```
+
+    // Read information for the second person
+
+    const name2 = prompt("Enter the name of the second person:");
+
+    const age2 = prompt("Enter the age of the second person:");
+
+    const height2 = prompt("Enter the height of the second person (in cm):");
+
+    ```'
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: '```
+
+    // Read information for the third person
+
+    const name3 = prompt("Enter the name of the third person:");
+
+    const age3 = prompt("Enter the age of the third person:");
+
+    const height3 = prompt("Enter the height of the third person (in cm):");
+
+
+    // Print the data in table format
+
+    console.log("Name\t\Height(cm)");
+
+    console.log(name1 + "\t" + age1 + "\t" + height1);
+
+    console.log(name2 + "\t" + age2 + "\t" + height2);
+
+    console.log(name3 + "\t" + age3 + "\t" + height3);
+
+    ```
+
+
+    # 10. Make a program that reads the names of three people in sequence, followed
+    by reading their respective ages and heights, and prints the data on the screen
+    in table format, using dashes (-) to separate rows and pipes (|) to separate columns.
+
+
+    ```
+
+    // Read information for the first person
+
+    const name1 = prompt("Enter the name of the first person:");
+
+    const age1 = prompt("Enter the age of the first person:");
+
+    const height1 = prompt("Enter the height of the first person (in cm):");
+
+    ```
+
+
+    ```
+
+    // Read information for the second person
+
+    const name2 = prompt("Enter the name of the second person:");
+
+    const age2 = prompt("Enter the age of the second person:");
+
+    const height2 = prompt("Enter the height of the second person (in cm):");
+
+    ```'
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: '```
+
+    // Read information for the third person
+
+    const name3 = prompt("Enter the name of the third person:");
+
+    const age3 = prompt("Enter the age of the third person:");
+
+    const height3 = prompt("Enter the height of the third person (in cm):");
+
+
+    // Print the data in table format with dashes and pipes
+
+    console.log("Name\t Age\t Height (cm)");
+
+    console.log("----------------------------");
+
+    console.log(name1 + "\t" + age1 + "\t" + height1);
+
+    console.log(name2 + "\t" + age2 + "\t" + height2);
+
+    console.log(name3 + "\t" + age3 + "\t" + height3);
+
+    ```'
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: '# # Mathematical Formulas
+
+
+    11. Write a program that prompts the user for two numbers and displays the addition,
+    subtraction, multiplication, and division between them.
+
+
+    ```
+
+    // Prompt the user for the first number
+
+    const firstNumber = parseFloat(prompt("Enter the first number:"));
+
+    ```'
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: '# 12. Write a program that calculates the arithmetic mean of two numbers entered
+    by the user.
+
+
+    ```
+
+    // Prompt the user for the first number
+
+    const firstNumber = parseFloat(prompt("Enter the first number:"));
+
+
+    // Prompt the user for the second number
+
+    const secondNumber = parseFloat(prompt("Enter the second number:"));
+
+
+    // Calculate the arithmetic mean
+
+    const mean = (firstNumber + secondNumber) / 2;
+
+
+    // Display the result
+
+    console.log("The arithmetic mean of " + firstNumber + " and " + secondNumber +
+    " is: " + mean);
+
+    ```
+
+
+    # 13. Create a program that calculates and displays the arithmetic mean of three
+    numbers entered by the user.
+
+
+    ```
+
+    // Prompt the user for the first number
+
+    const firstNumber = parseFloat(prompt("Enter the first number:"));
+
+
+    // Prompt the user for the second number
+
+    const secondNumber = parseFloat(prompt("Enter the second number:"));
+
+
+    // Prompt the user for the third number
+
+    const thirdNumber = parseFloat(prompt("Enter the third number:"));
+
+    ```'
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: '```
+
+    // Calculate the arithmetic mean
+
+    const mean = (firstNumber + secondNumber + thirdNumber) / 3;
+
+
+    // Display the result
+
+    console.log(
+
+    "The arithmetic mean of " + +
+
+    firstNumber +
+
+    " " + +
+
+    secondNumber +
+
+    " and " + +
+
+    thirdNumber +
+
+    " is: " + +
+
+    mean
+
+    );
+
+    ```
+
+
+    # 14. Write a program that reads two numbers, the first being the base and the
+    second exponent, and then printing the first number raised to the second.
+
+
+    ```
+
+    // Prompt the user for the base number
+
+    const base = parseFloat(prompt("Enter the base number:"));
+
+
+    // Prompt the user for the exponent
+
+    const exponent = parseFloat(prompt("Enter the exponent:"));
+
+
+    // Calculate the result using the Math.pow() function
+
+    ```'
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: '```
+
+    const result = Math.pow(base, exponent);
+
+    ```
+
+
+    ```
+
+    // Display the result
+
+    console.log(base + " raised to the power of " + exponent + " is: " + result);
+
+    ```
+
+
+    # 15. Write a program that reads a number and prints the square root of the number
+    on the screen.
+
+
+    ```
+
+    // Prompt the user for a number
+
+    const userInput = parseFloat(prompt("Enter a number:\));
+
+    ```
+
+
+    ```
+
+    // Calculate the square root regardless of whether the input is valid
+
+    const squareRoot = Math.sqrt(userInput);
+
+    ```
+
+
+    ```
+
+    // Display the result
+
+    console.log("The square root of " + userInput + " is: " + squareRoot);
+
+    ```
+
+
+    # 16. Write a program that calculates the geometric mean of three numbers entered
+    by the user → GeoMean = ³√n1 × n2 × n3
+
+
+    ```
+
+    // Prompt the user for the first number
+
+    const number1 = parseFloat(prompt("Enter the first number:\));
+
+    ```
+
+
+    ```
+
+    // Prompt the user for the second number
+
+    const number2 = parseFloat(prompt("Enter the second number:\));
+
+    ```
+
+
+    ```
+
+    // Prompt the user for the third number
+
+    ```'
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: '```
+
+    const number3 = parseFloat(prompt("Enter the third number:"));
+
+
+    // Calculate the geometric mean regardless of the input values
+
+    const geometricMean = Math.pow(number1 * number2 * number3, 1 / 3);
+
+
+    // Display the result
+
+    console.log("The geometric mean of " + number1 + ", " + number2 + ", and " + number3
+    + " is: " + geometricMean);
+
+    ```
+
+
+    # 17. Write a program that calculates the BMI of an individual,
+
+    using the formula BMI = weight / height²
+
+
+    ```
+
+    // Prompt the user for their weight in kilograms
+
+    const weight = parseFloat(prompt("Enter your weight in kilograms:"));
+
+
+    // Prompt the user for their height in meters
+
+    const height = parseFloat(prompt("Enter your height in meters:"));
+
+
+    // Calculate the BMI
+
+    const bmi = weight / (height * height);
+
+
+    // Display the BMI
+
+    console.log("Your Body Mass Index (BMI) is: " + bmi.toFixed(2));
+
+    ```'
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: '# 18. Create a program that calculates and displays the perimeter of a circle,
+    prompting the user for the radius, using the formula P = 2πr
+
+
+    ```
+
+    // Prompt the user for the radius of the circle
+
+    const radius = parseFloat(prompt("Enter the radius of the circle:"));
+
+
+    // Calculate the perimeter (circumference) regardless of the input value
+
+    const perimeter = 2 * Math.PI * radius;
+
+
+    // Display the perimeter
+
+    console.log("The perimeter (circumference) of the circle is: " + perimeter.toFixed(2));
+
+    ```
+
+
+    # 19. Write a program that calculates the area of a circle from the radius, using
+    the formula A = πr²
+
+
+    ```
+
+    // Prompt the user for the radius of the circle
+
+    const radius = parseFloat(prompt("Enter the radius of the circle:"));
+
+
+    // Calculate the area of the circle
+
+    const area = Math.PI * Math.pow(radius, 2);
+
+
+    // Display the area
+
+    console.log("The area of the circle is: " + area.toFixed(2));
+
+    ```'
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: '# 20. Write a program that calculates the delta of a quadratic equation (Δ
+    = b^2 - 4ac).
+
+
+    ```
+
+    // Prompt the user for the coefficients a, b, and c of the quadratic equation
+
+    const a = parseFloat(prompt("Enter the coefficient a:"));
+
+    const b = parseFloat(prompt("Enter the coefficient b:"));
+
+    const c = parseFloat(prompt("Enter the coefficient c:"));
+
+
+    // Calculate the delta without using if statements
+
+    const delta = b*b - 4*a*c;
+
+
+    // Display the delta
+
+    console.log("The delta (Δ) of the quadratic equation is: " + delta);
+
+    ```
+
+
+    # 21. Write a program that calculates the perimeter and area of a rectangle, using
+    the formulas P = 2(w + l) and A = wl, where w is the width and l is the length
+
+
+    ```
+
+    // Prompt the user for the width and length of the rectangle
+
+    const width = parseFloat(prompt("Enter the width of the rectangle:"
+
+    ```'
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: '```
+
+    console.log("The perimeter of the rectangle is: " + perimeter);
+
+    console.log("The area of the rectangle is: " + area);
+
+    ```
+
+
+    # 22. Write a program P that calculates the perimeter and area of a triangle,
+    using the formulas P = a + b + c and A = (b*h) / 2, where a, b and c are the sides
+    of the triangle and h is the height relative to the side B.
+
+
+    ```
+
+    // Prompt the user for the lengths of the triangle''s three sides
+
+    const sideA = parseFloat(prompt("Enter the length of side A:"));
+
+    const sideB = parseFloat(prompt("Enter the length of side B:"));
+
+    const sideC = parseFloat(prompt("Enter the length of side C:"));
+
+    ```
+
+
+    ```
+
+    // Prompt the user for the height relative to side B
+
+    const heightToSideB = parseFloat(prompt("Enter the height relative to side B:"));
+
+    ```
+
+
+    ```
+
+    // Calculate the perimeter of the triangle
+
+    const perimeter = sideA + sideB + sideC;
+
+    ```
+
+
+    ```
+
+    // Calculate the area of the triangle
+
+    const area = (sideB * heightToSideB) / 2;
+
+    ```
+
+
+    ```
+
+    // Display the results
+
+    console.log("The perimeter of the triangle is: " + perimeter);
+
+    console.log("The area of the triangle is: " + area);
+
+    ```'
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: '# 23. Write a program that calculates the average velocity of an object, using
+    the formula v = Δs/Δt, where v is the average velocity, Δs is the space variation,
+    and Δt is the time variation
+
+
+    ```
+
+    // Prompt the user for the space variation (Δs) in meters
+
+    const spaceVariation = parseFloat(prompt("Enter the space variation (Δs) in meters:"));
+
+
+    // Prompt the user for the time variation (Δt) in seconds
+
+    const timeVariation = parseFloat(prompt("Enter the time variation (Δt) in seconds:"));
+
+
+    // Calculate the average velocity
+
+    const averageVelocity = spaceVariation / timeVariation;
+
+
+    // Display the result
+
+    console.log("The average velocity of the object is: " + averageVelocity.toFixed(2)
+    + " m/s");
+
+    ```
+
+
+    # 24. Write a program that calculates the kinetic energy of a moving object, using
+    the formula E = (mv²) / 2, where E is the kinetic energy, m is the mass of the
+    object, and v is the velocity.
+
+
+    ```
+
+    // Prompt the user for the mass of the object in kilograms
+
+    const mass = parseFloat(prompt("Enter the mass of the object (in kilograms):"));
+
+
+    // Prompt the user for the velocity of the object in meters per second
+
+    const velocity = parseFloat(prompt("Enter the velocity of the object (in meters
+    per second):"));
+
+
+    // Calculate the kinetic energy
+
+    ```'
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: '```
+
+    const kineticEnergy = (mass * Math.pow(velocity, 2)) / 2;
+
+
+    // Display the result
+
+    console.log("The kinetic energy of the object is: " + kineticEnergy.toFixed(2)
+    + " joules");");
+
+    ```
+
+
+    # 25. Write a program that calculates the work done by a force acting on an object,
+    using the formula W = F * d, where W is the work, F is the applied force, and
+    d is the distance traveled by the object.
+
+
+    ```
+
+    // Prompt the user for the applied force in newtons
+
+    const force = parseFloat(prompt("Enter the applied force (in newtons):"));
+
+
+    // Prompt the user for the distance traveled by the object in meters
+
+    const distance = parseFloat(prompt("Enter the distance traveled by the object
+    (in meters):"));
+
+
+    // Calculate the work done
+
+    const work = force * distance;
+
+
+    // Display the result
+
+    console.log("The work done by the force is: " + work.toFixed(2) + " joules");");
+
+    ```'
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: '# 26. Write a program that calculates the n-th term of an arithmetic progression
+    given the value of the first term, the common difference (ratio), and the value
+    of n read from the user $\rightarrow a_n = a_1 + (n-1) \times r$
+
+
+    ```
+
+    // Prompt the user for the first term
+
+    const firstTerm = parseFloat(prompt("Enter the first term (a) of the arithmetic
+    progression:"));
+
+
+    // Prompt the user for the common difference (d)
+
+    const commonDifference = parseFloat(prompt("Enter the common difference (d):"));
+
+
+    // Prompt the user for the value of n
+
+    const n = parseInt(prompt("Enter the value of n:"));
+
+
+    // Calculate the n-th term of the arithmetic progression
+
+    const nthTerm = firstTerm + (n - 1) * commonDifference;
+
+
+    // Display the result
+
+    console.log("The " + n + "-th term of the arithmetic progression is: " + nthTerm);
+
+    ```
+
+
+    # 27. Write a program that reads the x and y position of two points in the Cartesian
+    plane, and calculates the distance between them
+
+
+    ```
+
+    // Prompt the user for the x and y coordinates of the first point
+
+    const x1 = parseFloat(prompt("Enter the x-coordinate of the first point:"));
+
+    ```'
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: '```
+
+    const y1 = parseFloat(prompt("Enter the y-coordinate of the first point:"));
+
+
+    // Prompt the user for the x and y coordinates of the second point
+
+    const x2 = parseFloat(prompt("Enter the x-coordinate of the second point:"));
+
+    const y2 = parseFloat(prompt("Enter the y-coordinate of the second point:"));
+
+
+    // Calculate the distance between the two points
+
+    const distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+
+
+    // Display the result
+
+    console.log("The distance between the two points is: " + distance.toFixed(2));
+
+    ```
+
+
+    # 28. Create a program that prompts the user for the radius of a sphere and calculates
+    and displays its volume.
+
+
+    ```
+
+    // Prompt the user for the radius of the sphere
+
+    const radius = parseFloat(prompt("Enter the radius of the sphere:"));
+
+
+    // Calculate the volume of the sphere
+
+    const volume = (4/3) * Math.PI * Math.pow(radius, 3);
+
+
+    // Display the result
+
+    console.log("The volume of the sphere is: " + volume.toFixed(2));
+
+    ```'
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: '# 29. Make a program that reads the resistance of two resistors and displays
+    the resulting resistance value when connected in series, adding the values, and
+    in parallel using the formula (R1 * R2) / (R1 + R2)
+
+
+    ```
+
+    // Prompt the user for the resistance value of the first resistor (R1)
+
+    const resistance1 = parseFloat(prompt("Enter the resistance value of the first
+    resistor (R1):"));
+
+
+    // Prompt the user for the resistance value of the second resistor (R2)
+
+    const resistance2 = parseFloat(prompt("Enter the resistance value of the second
+    resistor (R2):"));
+
+
+    // Calculate the equivalent resistance in series
+
+    const seriesResistance = resistance1 + resistance2;
+
+
+    // Calculate the equivalent resistance in parallel
+
+    const parallelResistance = (resistance1 * resistance2) / (resistance1 + resistance2);
+
+
+    // Display the results
+
+    console.log("Equivalent resistance in series: " + seriesResistance.toFixed(2)
+    + " ohms");
+
+    console.log("Equivalent resistance in parallel: " + parallelResistance.toFixed(2)
+    + " ohms");
+
+    ```
+
+
+    # 30. Make a program that reads a value of a product and the tax (in percentage),
+    and calculates the final value of it.
+
+
+    ```
+
+    // Prompt the user for the initial value of the product
+
+    const initialValue = parseFloat(prompt("Enter the initial value of the product:"));
+
+    ```'
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: '```
+
+    // Prompt the user for the tax rate in percentage
+
+    const taxRate = parseFloat(prompt("Enter the tax rate (in percentage):"));
+
+
+    // Calculate the final value of the product including tax
+
+    const taxAmount = (initialValue * taxRate) / 100;
+
+    const finalValue = initialValue + taxAmount;
+
+
+    // Display the results
+
+    console.log("Tax Amount: $\$" + taxAmount.toFixed(2));
+
+    console.log("Final Value (including tax): $\$" + finalValue.toFixed(2));
+
+    ```'
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: "# Conditionals\n\n31. Make a program that asks for a person's age and displays\
+    \ whether they are of legal age or not (age >= 18).\n\n```\n// Prompt the user\
+    \ for their age\nconst age = parseInt(prompt('Please enter your age:'));\n\n//\
+    \ Check if the age is greater than or equal to 18\nconst isLegalAge = age >= 18;\n\
+    \n// Display the result\nif (isLegalAge) {\n  console.log(\"You are of legal age.\"\
+    );\n} else {\n  console.log(\"You are not of legal age.\");\n}\n```\n\n32. Write\
+    \ a program that reads a number and reports whether it is odd or even.\n\n```\n\
+    // Prompt the user for a number\nconst number = parseInt(prompt(\"Enter a number:\"\
+    ));\n```"
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: "```\n// Check if the number is odd or even\nif (number % 2 === 0) {\n  console.log(number\
+    \ + \" is an even number.\");\n} else {\n  console.log(number + \" is an odd number.\"\
+    );\n}\n```\n\n# 33. Write a program that reads a number and reports whether it\
+    \ is positive, negative or zero.\n\n```\n// Prompt the user for a number\nconst\
+    \ number = parseFloat(prompt(\"Enter a number:\"));\n\n// Check whether the number\
+    \ is positive, negative, or zero\nif (number > 0) {\n  console.log(number + \"\
+    \ is a positive number.\");\n} else if (number < 0) {\n  console.log(number +\
+    \ \" is a negative number.\");\n} else {\n  console.log(number + \" is zero.\"\
+    );\n}\n```"
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: "# 34. Create a program that reads three numbers and checks if their sum is\
+    \ positive, negative or equal to zero\n\n```\n// Prompt the user for three numbers\n\
+    const number1 = parseFloat(prompt(\"Enter the first number:\"));\nconst number2\
+    \ = parseFloat(prompt(\"Enter the second number:\"));\nconst number3 = parseFloat(prompt(\"\
+    Enter the third number:\"));\n\n// Calculate the sum of the three numbers\nconst\
+    \ sum = number1 + number2 + number3;\n\n// Check whether the sum is positive,\
+    \ negative, or zero\nif (sum > 0) {\n  console.log(\"The sum of the three numbers\
+    \ is positive.\");\n} else if (sum < 0) {\n  console.log(\"The sum of the three\
+    \ numbers is negative.\");\n} else {\n  console.log(\"The sum of the three numbers\
+    \ is zero.\");\n}\n```\n\n# 35. Write a program that reads two numbers and tells\
+    \ you which one is bigger.\n\n```\n// Prompt the user for the first number\nconst\
+    \ number1 = parseFloat(prompt(\"Enter the first number:\"));\n```"
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: "```\n// Prompt the user for the second number\nconst number2 = parseFloat(prompt(\"\
+    Enter the second number:\"));\n\n// Compare the two numbers and find the bigger\
+    \ one using an if statement\nif (number1 > number2) {\n  console.log(number1 +\
+    \ \" is bigger than \" + number2);\n} else if (number2 > number1) {\n  console.log(number2\
+    \ + \" is bigger than \" + number1);\n} else {\n  console.log(\"Both numbers are\
+    \ equal.\");\n}\n```\n\nWithout using if statement\n\n```\n// Prompt the user\
+    \ for the first number\nconst number1 = parseFloat(prompt(\"Enter the first number:\"\
+    ));\n\n// Prompt the user for the second number\nconst number2 = parseFloat(prompt(\"\
+    Enter the second number:\"));\n\n// Find the bigger number using the Math.max\
+    \ function\nconst biggerNumber = Math.max(number1, number2);\n\n// Display the\
+    \ result\nconsole.log(biggerNumber + \" is the bigger number.\");\n```"
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: '# 36. Write a program that asks the user for three numbers and displays the
+    largest one.
+
+
+    // Prompt the user for three numbers
+
+
+    ```
+
+    const number1 = parseFloat(prompt("Enter the first number:"));
+
+    const number2 = parseFloat(prompt("Enter the second number:"));
+
+    const number3 = parseFloat(prompt("Enter the third number:"));
+
+    ```
+
+
+    let largestNumber;
+
+
+    // Compare the numbers using if statements to find the largest one
+
+
+    ```
+
+    if (number1 >= number2 && number1 >= number3) {
+
+    largestNumber = number1;
+
+    } else if (number2 >= number1 && number2 >= number3) {
+
+    largestNumber = number2;
+
+    } else {
+
+    largestNumber = number3;
+
+    }
+
+    ```
+
+
+    // Display the largest number
+
+
+    ```
+
+    console.log("The largest number is:" + largestNumber);
+
+    ```
+
+
+    # 37. Make a program that reads three numbers, and informs if their sum is divisible
+    by 5 or not.
+
+
+    // Prompt the user for three numbers
+
+
+    ```
+
+    const number1 = parseInt(prompt("Enter the first number:"));
+
+    ```'
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: "```\nconst number2 = parseInt(prompt(\"Enter the second number:\"));\nconst\
+    \ number3 = parseInt(prompt(\"Enter the third number:\"));\n\n// Calculate the\
+    \ sum of the three numbers\nconst sum = number1 + number2 + number3;\n\n// Check\
+    \ if the sum is divisible by 5\nif (sum % 5 === 0) {\n  console.log(\"The sum\
+    \ of the three numbers \" + sum + \" is divisible by 5.\");\n} else {\n  console.log(\"\
+    The sum of the three numbers \" + sum + \" is not divisible by 5.\");\n}\n```\n\
+    \n# 38. Write a program that asks for an integer and checks if it is divisible\
+    \ by 3 and 5 at the same time.\n\n```\n// Prompt the user for an integer\nconst\
+    \ number = parseInt(prompt(\"Enter an integer:\"));\n\n// Check if the number\
+    \ is divisible by both 3 and 5\nif (number % 3 === 0 && number % 5 === 0) {\n\
+    \  console.log(number + \" is divisible by both 3 and 5 at the same time.\");\n\
+    } else {\n  console.log(number + \" is not divisible by both 3 and 5 at the same\
+    \ time.\");\n}\n```"
+  merge: -1
+  pgno: 31
+- img_proc: true
+  md: "# 39. Make a program that asks for two numbers and displays if the first is\
+    \ divisible by the second\n\n```\n// Prompt the user for two numbers\nconst number1\
+    \ = parseInt(prompt(\"Enter the first number:\"));\nconst number2 = parseInt(prompt(\"\
+    Enter the second number:\"));\n\n// Check if the first number is divisible by\
+    \ the second\nif (number2 != 0 && number1 % number2 == 0) {\n  console.log(number1\
+    \ + \" is divisible by \" + number2);\n} else {\n  console.log(number1 + \" is\
+    \ not divisible by \" + number2);\n}\n```\n\n# 40. Make a program that reads the\
+    \ scores of two tests and reports whether the student passed (score greater than\
+    \ or equal to 6) or failed (score less than 6) in each of the tests.\n\n```\n\
+    // Prompt the user for the scores of two tests\nconst test1Score = parseFloat(prompt(\"\
+    Enter the score for test 1:\"));\nconst test2Score = parseFloat(prompt(\"Enter\
+    \ the score for test 2:\"));\n\n// Check if the student passed or failed in each\
+    \ test\nif (test1Score >= 6) {\n  console.log(\"Student passed test 1.\");\n}\
+    \ else {\n```"
+  merge: -1
+  pgno: 32
+- img_proc: true
+  md: "```\nconsole.log(\"Student failed test 1.\");\n\nif (test2Score >= 6) {\n \
+    \ console.log(\"Student passed test 2.\");\n} else {\n  console.log(\"Student\
+    \ failed test 2.\");\n}\n```\n\n# 41. Make a program that reads the grades of\
+    \ two tests, calculates the simple arithmetic mean, and informs whether the student\
+    \ passed (average greater than or equal to 6) or failed (average less than 6).\n\
+    \n```\n// Prompt the user for the grades of two tests\nconst test1Grade = parseFloat(prompt(\"\
+    Enter the grade for test 1:\"));\nconst test2Grade = parseFloat(prompt(\"Enter\
+    \ the grade for test 2:\"));\n\n// Calculate the simple arithmetic mean\nconst\
+    \ average = (test1Grade + test2Grade) / 2;\n\n// Check if the student passed or\
+    \ failed based on the average\nif (average >= 6) {\n  console.log(\"Student passed.\
+    \ Average grade: \" + average.toFixed(2));\n} else {\n  console.log(\"Student\
+    \ failed. Average grade: \" + average.toFixed(2));\n}\n```"
+  merge: -1
+  pgno: 33
+- img_proc: true
+  md: "# 42. Make a program that reads the age of three people and how many of them\
+    \ are of legal age (age 18 or older).\n\n```\n// Prompt the user for the age of\
+    \ three people\nconst age1 = parseInt(prompt(\"Enter the age of person 1:\"));\n\
+    const age2 = parseInt(prompt(\"Enter the age of person 2:\"));\nconst age3 = parseInt(prompt(\"\
+    Enter the age of person 3:\"));\n\n// Count how many people are of legal age (18\
+    \ or older)\nlet legalAgeCount = 0;\n\nif (age1 >= 18) {\n  legalAgeCount++;\n\
+    }\n\nif (age2 >= 18) {\n  legalAgeCount++;\n}\n\nif (age3 >= 18) {\n  legalAgeCount++;\n\
+    }\n\n// Display the count of people who are of legal age\n```"
+  merge: -1
+  pgno: 34
+- img_proc: true
+  md: "```\nconsole.log(\"Number of people of legal age: \" + legalAgeCount);\n```\n\
+    \n# 43. Make a program that reads three numbers, and displays them on the screen\
+    \ in ascending order.\n\n```\n// Prompt the user for three numbers\nconst number1\
+    \ = parseFloat(prompt(\"Enter the first number:\"));\nconst number2 = parseFloat(prompt(\"\
+    Enter the second number:\"));\nconst number3 = parseFloat(prompt(\"Enter the third\
+    \ number:\"));\n```\n\n```\n// Find the smallest, middle, and largest numbers\n\
+    let smallest, middle, largest;\n\nif (number1 <= number2 && number1 <= number3)\
+    \ {\nsmallest = number1;\nif (number2 <= number3) {\nmiddle = number2;\nlarge\
+    \ = number3;\n} else {\nmiddle = number3;\nlarge = number2;\n}\n else if (number2\
+    \ <= number1 && number2 <= number3) {\nsmallest = number2;\nif (number1 <= number3)\
+    \ {\n```"
+  merge: -1
+  pgno: 35
+- img_proc: true
+  md: '```
+
+    middle = number1;
+
+    largest = number3;
+
+    } else {
+
+    middle = number3;
+
+    largest = number1;
+
+    } else {
+
+    smallest = number3;
+
+    if (number1 <= number2) {
+
+    middle = number1;
+
+    largest = number2;
+
+    } else {
+
+    middle = number2;
+
+    largest = number1;
+
+    }
+
+    }
+
+
+    // Display the numbers in ascending order
+
+    console.log("Numbers in ascending order: " + smallest + ", " + middle + ", " +
+    + largest);
+
+    ```
+
+
+    # 44. Write a program that reads three numbers and tells you if they can be the
+    sides of a triangle (the sum of two sides must always be greater than the third
+    side).
+
+
+    // Prompt the user for three numbers'
+  merge: -1
+  pgno: 36
+- img_proc: true
+  md: "```\nconst side1 = parseFloat(prompt(\"Enter the length of side 1:\"));\nconst\
+    \ side2 = parseFloat(prompt(\"Enter the length of side 2:\"));\nconst side3 =\
+    \ parseFloat(prompt(\"Enter the length of side 3:\"));\n\n// Check if the numbers\
+    \ can form a triangle\nconst canFormTriangle = (side1 + side2 + side3) && (side2\
+    \ + side3 > side1) && (side1 + side3 > side2);\n\n// Display the result\nif (canFormTriangle)\
+    \ {\n  console.log(\"These numbers can form the sides of a triangle.\");\n} else\
+    \ {\n  console.log(\"These numbers cannot form a triangle.\");\n}\n```\n\n# 45.\
+    \ Make a program that reads the year of birth of a person and informs if he is\
+    \ able to vote (age greater than or equal to 16 years old).\n\n```\n// Prompt\
+    \ the user for the year of birth\nconst yearOfBirth = parseInt(prompt(\"Enter\
+    \ the year of birth:\"));\n\n// Calculate the current year\nconst currentYear\
+    \ = new Date().getFullYear();\n\n// Calculate the age\nconst age = currentYear\
+    \ - yearOfBirth;\n```"
+  merge: -1
+  pgno: 37
+- img_proc: true
+  md: "```\n// Check if the person is eligible to vote (age greater than or equal\
+    \ to 16)\nif (age >= 16) {\n    console.log(\"You are eligible to vote.\");\n\
+    } else {\n    console.log(\"You are not eligible to vote yet.\");\n}\n```\n\n\
+    # 46. Create a program that asks for a person's age and displays whether they\
+    \ are a child (0-12 years old), teenager (13-17 years old), adult (18-59 years\
+    \ old), or elderly (60 years old or older), using nested conditionals, without\
+    \ using logical operators.\n\n```\n// Prompt the user for their age\nconst age\
+    \ = parseInt(prompt(\"Enter your age:\"));\n\n// Check the age range using nested\
+    \ if statements\nif (age >= 0) {\n    if (age <= 12) {\n        console.log(\"\
+    You are a child.\");\n    } else if (age <= 17) {\n        console.log(\"You are\
+    \ a teenager.\");\n    } else if (age <= 59) {\n        console.log(\"You are\
+    \ an adult.\");\n    } else {\n        console.log(\"You are elderly.\");\n  \
+    \  }\n}\n```"
+  merge: -1
+  pgno: 38
+- img_proc: true
+  md: "```\n}\n} else {\n  console.log(\"Invalid age entered.\");\n}\n```\n\n# 47.\
+    \ Create a program that asks for a person's age and displays whether they are\
+    \ a child (0-12 years old), teenager (13-17 years old), adult (18-59 years old),\
+    \ or elderly (60 years old or older), using logical operators, without using else,\
+    \ elif, etc.\n\n```\n// Prompt the user for their age\nconst age = parseInt(prompt(\"\
+    Enter your age:\"));\n\n// Check the age range using logical operators\nconst\
+    \ isChild = age >= 0 && age <= 12;\nconst isTeenager = age >= 13 && age <= 17;\n\
+    const isAdult = age >= 18 && age <= 59;\nconst isElderly = age >= 60;\n\n// Display\
+    \ the corresponding message based on the age category\nconsole.log(\n  isChild\
+    \ ? \"You are a child.\" :\n  isTeenager ? \"You are a teenager.\" :\n  isAdult\
+    \ ? \"You are an adult.\" :\n  isElderly ? \"You are elderly.\" :\n  \"Invalid\
+    \ age entered.\");\n```"
+  merge: -1
+  pgno: 39
+- img_proc: true
+  md: "# 48. Make a program that reads a person's age and informs if he is not able\
+    \ to vote (age less than 16 years old), if he is able to vote but is not obligated\
+    \ (16, 17 years old, or age equal to or greater than 70 years), or if it is obligatory\
+    \ (18 to 69 years old).\n\n```\n// Prompt the user for their age\nconst age =\
+    \ parseInt(prompt(\"Enter your age:\"));\n\n// Check the age range and voting\
+    \ status\nif (age < 16) {\n  console.log(\"You are not able to vote.\");\n} else\
+    \ if (age >= 16 && age <= 17 || age >= 70) {\n  console.log(\"You are able to\
+    \ vote but not obligated.\");\n} else if (age >= 18 && age <= 69) {\n  console.log(\"\
+    You are obligated to vote.\");\n} else {\n  console.log(\"Invalid age entered.\"\
+    );\n}\n```"
+  merge: -1
+  pgno: 40
+- img_proc: true
+  md: "# 49. Make a program that reads three grades from a student and reports whether\
+    \ he passed (final grade greater than or equal to 7), failed (final grade less\
+    \ than 4) or was in recovery (final grade between 4 and 7).\n\n```\n// Prompt\
+    \ the user for three grades\nconst grade1 = parseFloat(prompt(\"Enter the first\
+    \ grade:\"));\nconst grade2 = parseFloat(prompt(\"Enter the second grade:\"));\n\
+    const grade3 = parseFloat(prompt(\"Enter the third grade:\"));\n\n// Calculate\
+    \ the average grade\nconst averageGrade = (grade1 + grade2 + grade3) / 3;\n\n\
+    // Report the student's status based on the final grade\nif (averageGrade >= 7)\
+    \ {\n    console.log(\"Student passed.\");\n} else if (averageGrade < 4) {\n \
+    \   console.log(\"Student failed.\");\n} else {\n    console.log(\"Student is\
+    \ in recovery.\");\n}\n```"
+  merge: -1
+  pgno: 41
+- img_proc: true
+  md: "50. Write a program that asks for a person's height and weight and calculates\
+    \ their body mass index (BMI), displaying the corresponding category (underweight,\
+    \ normal weight, overweight, obese, severely obese).\n\n```\n// Prompt the user\
+    \ for their height in meters\nconst height = parseFloat(prompt(\"Enter your height\
+    \ in meters:\"));\n\n// Prompt the user for their weight in kilograms\nconst weight\
+    \ = parseFloat(prompt(\"Enter your weight in kilograms:\"));\n\n// Calculate the\
+    \ BMI\nconst bmi = weight / (height * height);\n\n// Determine the BMI category\n\
+    let category;\nif (bmi < 18.5) {\n  category = \"Underweight\";\n} else if (bmi\
+    \ < 24.9) {\n  category = \"Normal weight\";\n} else if (bmi < 29.9) {\n  category\
+    \ = \"Overweight\";\n} else if (bmi < 34.9) {\n  category = \"Obese\";\n} else\
+    \ {\n```"
+  merge: -1
+  pgno: 42
+- img_proc: true
+  md: '```
+
+    category = "Severely obese";
+
+    }
+
+    // Display the BMI and corresponding category
+
+    console.log(`Your BMI is: ${bmi.toFixed(2)} - ${category}\`);
+
+    ```
+
+
+    # 51. Write a program that asks the user to enter their grade (0-100) and prints
+    their letter grade (A for 90-100, B for 80-89, C for 70-79, D for 60-69, F for
+    under 60).
+
+
+    ```
+
+    // Prompt the user to enter their grade
+
+    const grade = parseInt(prompt("Enter your grade (0-100):"));
+
+
+    // Determine the letter grade based on the entered grade
+
+    let letterGrade;
+
+    if (grade >= 90 && grade <= 100) {
+
+    letterGrade = ''A'';
+
+    } else if (grade >= 80 && grade <= 89) {
+
+    letterGrade = ''B'';
+
+    } else if (grade >= 70 && grade <= 79) {
+
+    letterGrade = ''C'';
+
+    } else if (grade >= 60 && grade <= 69) {
+
+    letterGrade = ''D'';
+
+    } else {
+
+    letterGrade = ''F'';
+
+    }
+
+    ```'
+  merge: -1
+  pgno: 43
+- img_proc: true
+  md: "```\n// Display the corresponding letter grade\nconsole.log(`Your letter grade\
+    \ is: \\${letterGrade}\\`);\n```\n\n# 52. Write a program that reads the values\
+    \ a, b and c of a quadratic equation, and says if the roots of the function are\
+    \ real or imaginary.\n\n```\n// Prompt the user for coefficients of the quadratic\
+    \ equation\nconst a = parseFloat(prompt(\"Enter the coefficient a:\"));\nconst\
+    \ b = parseFloat(prompt(\"Enter the coefficient b:\"));\nconst c = parseFloat(prompt(\"\
+    Enter the coefficient c:\"));\n```\n\n```\n// Calculate the discriminant\nconst\
+    \ discriminant = b * b - 4 * a * c;\n\n// Determine if roots are real or imaginary\
+    \ based on the discriminant\nif (discriminant > 0) {\n  console.log(\"The roots\
+    \ of the quadratic equation are real.\");\n} else if (discriminant === 0) {\n\
+    \  console.log(\"The roots of the quadratic equation are real and equal.\");\n\
+    } else {\n  console.log(\"The roots of the quadratic equation are imaginary.\"\
+    );\n}\n```"
+  merge: -1
+  pgno: 44
+- img_proc: true
+  md: "# 53. Create a program that reads the price of a product. If the price is more\
+    \ than US $200, the tax is 5%, if it is more than US$500, the tax is 7.5%. Products\
+    \ up to US $200 do not pay taxes. Print the final price of the product on the\
+    \ screen.\n\n```\n// Prompt the user for the price of the product\nconst price\
+    \ = parseFloat(prompt(\"Enter the price of the product:\"));\n\nlet finalPrice;\n\
+    \n// Calculate the final price based on different tax rates\nif (price > 500)\
+    \ {\n  finalPrice = price * 1.075; // 7.5% tax\n} else if (price > 200) {\n  finalPrice\
+    \ = price * 1.05; // 5% tax\n} else {\n  finalPrice = price; // No tax for products\
+    \ up to $200\n}\n\n// Display the final price of the product\nconsole.log(`The\
+    \ final price of the product is: $${finalPrice.toFixed(2)}`);\n```"
+  merge: -1
+  pgno: 45
+- img_proc: true
+  md: "# 54. Write a program that reads a year (a four digit number) and checks whether\
+    \ it is a leap year or not.\n\n```\n// Prompt the user for a four-digit year\n\
+    const year = parseInt(prompt(\"Enter a four-digit year:\"));\n\nlet isLeapYear\
+    \ = false;\n\n// Check if the year is a leap year\nif ((year % 4 === 0 && year\
+    \ % 100 != 0) || year % 400 === 0) {\n  isLeapYear = true;\n}\n\n// Display the\
+    \ result\nif (isLeapYear) {\n  console.log(`${year} is a leap year.`);\n} else\
+    \ {\n  console.log(`${year} is not a leap year.`);\n}\n```\n\n# 55. Input three\
+    \ numbers representing the coefficients of a quadratic equation (a, b, c) and\
+    \ finds its roots, also mention if they are real or complex\n\n```\n// Prompt\
+    \ the user for coefficients of the quadratic equation\n```"
+  merge: -1
+  pgno: 46
+- img_proc: true
+  md: "```\nconst a = parseFloat(prompt(\"Enter the coefficient a:\"));\nconst b =\
+    \ parseFloat(prompt(\"Enter the coefficient b:\"));\nconst c = parseFloat(prompt(\"\
+    Enter the coefficient c:\"));\n```\n\n```\n// Calculate the discriminant\nconst\
+    \ discriminant = b * b - 4 * a * c;\n```\n\n```\nlet root1, root2;\nlet rootsType\
+    \ based on\n```\n\n```\n// Calculate roots based on the discriminant\n```\n\n\
+    ```\nif (discriminant > 0) {\n  rootsType = \"Real and distinct\";\nroot1 = (-b\
+    \ + Math.sqrt(discriminant)) / (2 * a);\nroot2 = (-b - Math.sqrt(discriminant))\
+    \ / (2 * a);\n```\n\n```\n} else if (discriminant === 0) {\n  rootsType = \"Real\
+    \ and equal\";\nroot1 = root2 = -b / (2 * a);\n```\n\n```\n} else {\n  rootsType\
+    \ = \"Complex\";\n  const realPart = -b / (2 * a);\n  const imaginaryPart = Math.sqrt(Math.abs(discriminant))\
+    \ / (2 * a);\nroot1 = ``${realPart.toFixed(2)} + ${imaginaryPart.toFixed(2)}i`;\n\
+    root2 = ``${realPart.toFixed(2)} - ${imaginaryPart.toFixed(2)}i`;\n}\n```"
+  merge: -1
+  pgno: 47
+- img_proc: true
+  md: '```
+
+    // Display the roots and their nature
+
+    console.log(`Roots of the quadratic equation are: ${root1} and ${root2}\`);
+
+    console.log(`Nature of roots: ${rootsType}\`);
+
+    ```'
+  merge: -1
+  pgno: 48
+- img_proc: true
+  md: "# Repeat Loops\n\n56. Write a program that displays the numbers 1 through 10\
+    \ using a while loop.\n\n```\nlet number = 1;\nwhile (number <= 10) {\n  console.log(number);\n\
+    \  number++;\n}\n```\n\n57. Write a program that displays the numbers 1 through\
+    \ 10 using a for loop.\n\n```\nfor (let number = 1; number <= 10; number++) {\n\
+    \  console.log(number);\n}\n```\n\n58. Write a program that displays all numbers\
+    \ from 1 to 100, using a while loop.\n\n```\nlet number = 1;\nwhile (number <=\
+    \ 100) {\n  console.log(number);\n}\n```"
+  merge: -1
+  pgno: 49
+- img_proc: true
+  md: "```\nnumber++;\n}\n```\n\n# 59. Write a program that displays all numbers from\
+    \ 1 to 100, using a for loop.\n\n```\nfor (let number = 1; number <= 100; number++)\
+    \ {\n  console.log(number);\n}\n```\n\n# 60. Write a program that displays all\
+    \ numbers from 1 to 100, using a do-while loop.\n\n```\nlet number = 1;\ndo {\n\
+    \  console.log(number);\n  number++;\n} while (number <= 100);\n```\n\n# 61. Write\
+    \ a program that prints all even numbers from 1 to 100 using a while loop and\
+    \ an if statement inside the loop to check if the number is even or not.\n\n```\n\
+    let number = 1;\nwhile (number <= 100) {\n  if (number % 2 === 0) {\n```"
+  merge: -1
+  pgno: 50
+- img_proc: true
+  md: '```
+
+    console.log(number);
+
+    }
+
+    number++;
+
+    }
+
+    ```
+
+
+    # 62. Write a program that prints all even numbers from 1 to 100 using a while
+    loop without using any if statement.
+
+
+    ```
+
+    let number = 2;
+
+    while (number <= 100) {
+
+    console.log(number);
+
+    number += 2;
+
+    }
+
+    ```
+
+
+    # 63. Write a program that displays even numbers 1 to 50 and odd numbers 51 to
+    100 using a repeating loop.
+
+
+    ```
+
+    for (let number = 1; number <= 100; number++) {
+
+    if (number <= 50) {
+
+    if (number % 2 === 0) {
+
+    console.log(`Even number: ${number}`);
+
+    }
+
+    } else {
+
+    ```'
+  merge: -1
+  pgno: 51
+- img_proc: true
+  md: "```\nif (number % 2 !== 0) {\n  console.log(`Odd number: ${number}\\`);\n}\n\
+    ```\n\n# 64. Create a program that prompts the user for a number and displays\
+    \ the table of that number using a loop.\n\n```\nconst number = parseInt(prompt(\"\
+    Enter a number:\"));\n\nconsole.log(`Multiplication table for ${number}\\`);\n\
+    for (let i = 1; i <= 10; i++) {\n  console.log(`${number} * ${i} = ${number *\
+    \ i}\\`);\n}\n```\n\n# 65. Create a program that displays the table of all numbers\
+    \ from 1 to 10.\n\n```\nfor (let number = 1; number <= 10; number++) {\n  console.log(`Multiplication\
+    \ table for ${number}\\`);\n  for (let i = 1; i <= 10; i++) {\n    console.log(`${number}\
+    \ * ${i} = ${number * i}\\`);\n  }\n}\nconsole.log(\\n\"); // Adding a new line\
+    \ for clarity between tables\n```"
+  merge: -1
+  pgno: 52
+- img_proc: true
+  md: '# 66. Write a program that calculates and displays the value of the power of
+    a number entered by the user raised to an exponent also entered by the user, using
+    repetition loops.
+
+
+    ```
+
+    // Prompt the user for the base number and the exponent
+
+    const baseNumber = parseFloat(prompt("Enter the base number:"));
+
+    const exponent = parseInt(prompt("Enter the exponent:"));
+
+
+    let result = 1;
+
+
+    // Loop to calculate the power
+
+    for (let i = 0; i < exponent; i++) {
+
+    nresult *= baseNumber; // Multiply the result by the base number ''exponent''
+    times
+
+    }
+
+
+    // Display the result
+
+    console.log(`Result: ${baseNumber}^${exponent} = ${result}\`);
+
+    ```
+
+
+    # 67. Create a program that displays the first N first perfect squares, where
+    N is informed by the user, using a loop.
+
+
+    ```
+
+    // Prompt the user for the number of perfect squares to display
+
+    const N = parseInt(prompt("Enter the number of perfect squares to display:"));
+
+
+    console.log(`The first ${N} perfect squares are: \`);
+
+    ```'
+  merge: -1
+  pgno: 53
+- img_proc: true
+  md: "```\n// Loop to find and display the first N perfect squares\nfor (let i =\
+    \ 1; i <= N; i++) {\n  const perfectSquare = i*i; // Calculate the perfect square\n\
+    \  console.log(perfectSquare);\n}\n```\n\n# 68. Write a program that asks the\
+    \ user for a number N and says whether it is prime or not.\n\n```\n// Prompt the\
+    \ user for a number\nconst N = parseInt(prompt(\"Enter a number:\"));\n\nlet isPrime\
+    \ = true;\n\n// Check if the number is prime\nif (N <= 1) {\n  isPrime = false;\n\
+    } else {\n  for (let i = 2; i <= Math.sqrt(N); i++) {\n    if (N % i === 0) {\n\
+    \      isPrime = false;\n      break;\n    }\n  }\n}\n\n```"
+  merge: -1
+  pgno: 54
+- img_proc: true
+  md: "```\n// Display the result\nif (isPrime) {\n  console.log(`${N} is a prime\
+    \ number.`);\n} else {\n  console.log(`${N} is not a prime number.`);\n}\n```\n\
+    \n# 69. Write a program that prompts the user for a number N and displays all\
+    \ prime numbers less than N.\n\n```\n// Prompt the user for a number\nconst N\
+    \ = parseInt(prompt(\"Enter a number:\"));\nconsole.log(`Prime numbers less than\
+    \ ${N}:`);\n\n// Loop to check and display prime numbers less than N\nfor (let\
+    \ number = 2; number < N; number++) {\nlet isPrime = true;\n\nif (number === 2)\
+    \ {\n  console.log(number);\n  continue;\n}\n\nfor (let i = 2; i <= Math.sqrt(number);\
+    \ i++) {\n```"
+  merge: -1
+  pgno: 55
+- img_proc: true
+  md: "```\nif (number % i === 0) {\n  isPrime = false;\n  break;\n}\n```\n\n```\n\
+    if (isPrime) {\n  console.log(number);\n}\n```\n\n# 70. Create a program that\
+    \ displays the first N prime numbers,\nwhere N is informed by the user, using\
+    \ a loop.\n\n```\n// Prompt the user for the number of prime numbers to display\n\
+    const N = parseInt(prompt(\"Enter the number of prime numbers to display:\\));\n\
+    console.log(`The first ${N} prime numbers are: \\`);\n\nlet count = 0;\nlet number\
+    \ = 2; // Start checking from 2\n\n// Loop to find and display the first N prime\
+    \ numbers\nwhile (count < N) {\n  let isPrime = true;\n```"
+  merge: -1
+  pgno: 56
+- img_proc: true
+  md: "```\nfor (let i = 2; i <= Math.sqrt(number); i++) {\n  if (number % i === 0)\
+    \ {\n    isPrime = false;\n    break;\n  }\n}\n\nif (isPrime) {\n  console.log(number);\n\
+    \  count++;\n}\n\nnumber++;\n}\n```\n\n# 71. Write a program that prompts the\
+    \ user for two numbers A and B and displays all numbers between A and B.\n\n```\n\
+    // Prompt the user for two numbers A and B\nconst A = parseInt(prompt(\"Enter\
+    \ number A:\"));\nconst B = parseInt(prompt(\"Enter number B:\"));\n\nconsole.log(`Numbers\
+    \ between ${A} and ${B}:`);\n\n// Display numbers between A and B\n```"
+  merge: -1
+  pgno: 57
+- img_proc: true
+  md: "```\nif (A < B) {\nfor (let i = A + 1; i < B; i++) {\n  console.log(i);\n}\n\
+    } else {\nfor (let i = B + 1; i < A; i++) {\n  console.log(i);\n}\n}\n```\n\n\
+    # 72. Write a program that reads numbers from the user until a negative number\
+    \ is entered, and prints the sum of the positive numbers.\n\n```\nlet sum = 0;\n\
+    let number = parseInt(prompt(\"Enter a number (enter a negative number to stop):\"\
+    ));\nwhile (number >= 0) {\n  sum += number;\n  number = parseInt(prompt(\"Enter\
+    \ a number (enter a negative number to stop):\"));\n}\nconsole.log(\\`The sum\
+    \ of the positive numbers entered is: ${sum}\\`);\n```"
+  merge: -1
+  pgno: 58
+- img_proc: true
+  md: "# 73. Write a program that asks the user for a number N and displays the sum\
+    \ of all numbers from 1 to N.\n\n```\n// Prompt the user for a number N\nconst\
+    \ N = parseInt(prompt(\"Enter a number:\"));\n\nlet sum = 0;\n\n// Calculate the\
+    \ sum of numbers from 1 to N\nfor (let i = 1; i <= N; i++) {\n  sum += i;\n}\n\
+    \nconsole.log(`The sum of numbers from 1 to ${N} is: \\${sum}\\`);\n```\n\n# 74.\
+    \ Write a program that calculates and displays the sum of even numbers from 1\
+    \ to 100 using a repeating loop.\n\n```\nlet sum = 0;\nlet number = 2; // Starting\
+    \ from 2 as the first even number\nwhile (number <= 100) {\n  sum += number; //\
+    \ Add the current even number to the sum\n  number += 2; // Move to the next even\
+    \ number\n}\n```"
+  merge: -1
+  pgno: 59
+- img_proc: true
+  md: "```\nconsole.log(`The sum of even numbers from 1 to 100 is: ${sum}\\`);\n```\n\
+    \n# 75. Write a program that prompts the user for a number and displays the Fibonacci\
+    \ sequence up to the given number using a repeating loop.\n\n```\nconst limit\
+    \ = parseInt(prompt(\"Enter a number to generate the Fibonacci sequence:\"));\n\
+    \nlet a = 0, b = 1;\nlet result = \"\";\n\nwhile (a <= limit) {\n  result += a\
+    \ + ' '';\n  const temp = a + b;\n  a = b;\n  b = temp;\n}\n\nconsole.log(`Fibonacci\
+    \ sequence up to ${limit}: ${result}\\`);\n```\n\n# 76. Write a program that reads\
+    \ numbers from the user until zero is entered, and displays the average of the\
+    \ numbers entered.\n\n```\nlet sum = 0;\nlet count = 0;\nlet number = parseInt(prompt(\"\
+    Enter a number (enter 0 to stop):\"));\n```"
+  merge: -1
+  pgno: 60
+- img_proc: true
+  md: "```\nwhile (number != == 0) {\nsum += number;\ncount++;\nnumber = parseInt(prompt(\"\
+    Enter a number (enter 0 to stop):\"));\n}\nif (count === 0) {\n  console.log(\"\
+    No numbers were entered.\");\n} else {\n  const average = sum / count;\n  console.log(`The\
+    \ average of the numbers entered is: ${average}\\`);\n}\n```\n\n# 77. Write a\
+    \ program that prompts the user for a list of numbers, until the user types the\
+    \ number zero, and displays the largest and smallest numbers in the list.\n\n\
+    ```\nlet largest = Number.MIN_VALUE;\nlet smallest = Number.MAX_VALUE;\nlet number\
+    \ = parseInt(prompt(\"Enter a number (enter 0 to stop):\"));\nwhile (number !=\
+    \ == 0) {\nif (number > largest) {\n  largest = number;\n}\n```"
+  merge: -1
+  pgno: 61
+- img_proc: true
+  md: "```\nif (number < smallest) {\n  smallest = number;\n}\nnumber = parseInt(prompt(\"\
+    Enter a number (enter 0 to stop):\"));\n}\n```\n\n```\nif (largest === Number.MIN_VALUE\
+    \ && smallest === Number.MAX_VALUE) {\n  console.log(\"No numbers were entered.\"\
+    );\n} else {\n  console.log(`The largest number entered is: ${largest}\\`);\n\
+    \  console.log(`The smallest number entered is: ${smallest}\\`);\n}\n```\n\n#\
+    \ 78. Write a program that prompts the user for a number and displays its divisors.\n\
+    \n```\nconst number = parseInt(prompt(\"Enter a number:\"));\n\nconsole.log(`The\
+    \ divisors of ${number} are: \\`);\n\nfor (let i = 1; i <= number; i++) {\n  if\
+    \ (number % i === 0) {\n    console.log(i);\n  }\n}\n```"
+  merge: -1
+  pgno: 62
+- img_proc: true
+  md: '# 79. Write a program that determines the greatest common divisor
+
+    (GCD) between two numbers entered by the user.
+
+
+    ```
+
+    const num1 = parseInt(prompt("Enter the first number:"));
+
+    const num2 = parseInt(prompt("Enter the second number:"));
+
+
+    let a = num1;
+
+    let b = num2;
+
+
+    while (b!== 0) {
+
+    const temp = b;
+
+    b = a % b;
+
+    a = temp;
+
+    }
+
+
+    const gcd = a;
+
+
+    console.log(`The greatest common divisor (GCD) of \${num1} and \${num2} is: \${gcd}\`);
+
+    ```
+
+
+    # 80. Write a program that determines the lowest common multiple
+
+    (LCM) between two numbers entered by the user.
+
+
+    ```
+
+    const num1 = parseInt(prompt("Enter the first number:"));
+
+    const num2 = parseInt(prompt("Enter the second number:"));
+
+    ```'
+  merge: -1
+  pgno: 63
+- img_proc: true
+  md: "```\nlet lcm;\nlet larger = (num1 > num2) ? num1 : num2;\n\nwhile (true) {\n\
+    \  if (larger % num1 === 0 && larger % num2 === 0) {\n    lcm = larger;\n    break;\n\
+    \  }\n  larger++;\n}\n```\n\n```\nconsole.log(`The lowest common multiple (LCM)\
+    \ of \\${num1} and \\${num2} is: \\${lcm}\\`);\n```\n\n# 81. Write a program that\
+    \ calculates the series below up to the tenth element:\n\n![](img/9b59729086d747ad179b3f4d056b4831_64_0.png)\n\
+    \n```\nconst x = parseFloat(\"Enter the value of x:\");\n\nlet result = 1;\nlet\
+    \ factorial = 1;\n\nfor (let i = 1; i<= 10; i++)\n```"
+  merge: -1
+  pgno: 64
+- img_proc: true
+  md: "```\nfactorial *= i;\nresult += Math.pow(x, i) / factorial;\n}\n```\n\n```\n\
+    console.log(`e^${x} up to the tenth element is approximately: ${result}\\`);\n\
+    ```\n\n# 82. Rewrite the previous exercise code until the difference between the\
+    \ terms is less than 0.001.\n\n```\nconst x = parseFloat(prompt(\"Enter the value\
+    \ of x:\\`));\n```\n\n```\nlet result = 1;\nlet term = 1;\nlet factorial = 1;\n\
+    let i = 1;\n```\n\n```\nwhile (Math.abs(term) >= 0.001) {\n  factorial *= i;\n\
+    \  term = Math.pow(x, i) / factorial;\n  result += term;\n  i++;\n}\n```\n\n```\n\
+    console.log(`e^${x} with difference less than 0.001 is approximately: ${result}\\\
+    `);\n```"
+  merge: -1
+  pgno: 65
+- img_proc: true
+  md: '# 83. Make a program that calculates the value of sine using the Taylor series
+    according to the equation below until the difference between the terms is less
+    than 0.001.
+
+
+    $$sen(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \dots$$
+
+
+    ```
+
+    const x = parseFloat(prompt("Enter the value of x in radians:"));
+
+    let result = 0;
+
+    let term = x;
+
+    let sign = -1;
+
+    let factorial = 1;
+
+    let i = 3;
+
+    while (Math.abs(term) >= 0.001) {
+
+    result += term;
+
+    sign *= -1;
+
+    actorial *= (i - 1) * i;
+
+    term = Math.pow(x, i) / factorial * sign;
+
+    i += 2;
+
+    }
+
+    console.log(`The sine of ${${x} is approximately: ${result}\`);
+
+    ```'
+  merge: -1
+  pgno: 66
+- img_proc: true
+  md: "# 84. Make a program that calculates the value of cosine using the Taylor series\
+    \ according to the equation below until the difference between the terms is less\
+    \ than 0.001.\n\n$$\\cos(x) = 1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} - \\frac{x^6}{6!}\
+    \ + \\frac{x^8}{8!} - \\frac{x^{10}}{10!} \\dots$$\n\n```\nconst x = parseFloat(prompt(\"\
+    Enter the value of x in radians:\"));\nlet result = 1;\nlet term = 1;\nlet sign\
+    \ = -1;\nlet factorial = 1;\nlet i = 2;\nwhile (Math.abs(term) >= 0.001) {\n \
+    \ factorial *= i * (i - 1);\n  term = Math.pow(x, i) / factorial * sign;\n  result\
+    \ += term;\n  sign *= -1;\n  i += 2;\n}\nconsole.log(`The cosine of ${x} is approximately:\
+    \ ${result}\\`);\n```"
+  merge: -1
+  pgno: 67
+- img_proc: true
+  md: '# 85. Write a program that displays the sine and cosine value of all numbers
+    from 0 to 6.3, with a step of 0.1, using Taylor series to calculate the respective
+    sines and cosines.
+
+
+    ```
+
+    const step = 0.1;
+
+    const limit = 6.3;
+
+    for (let x = 0; x <= limit; x += step) {
+
+    let sineResult = 0;
+
+    let sineTerm = x;
+
+    let sineSign = -1;
+
+    let sineFactorial = 1;
+
+    let sineI = 3;
+
+    while (Math.abs(sineTerm) >= 0.001) {
+
+    sineResult += sineTerm;
+
+    sineSign *= -1;
+
+    sineFactorial *= (sineI - 1) * sineI;
+
+    sineTerm = Math.pow(x, sineI) / sineFactorial * sineSign;
+
+    sineI += 2;
+
+    }
+
+    let cosResult = 1;
+
+    let cosTerm = 1;
+
+    let cosSign = -1;
+
+    let cosFactorial = 1;
+
+    ```'
+  merge: -1
+  pgno: 68
+- img_proc: true
+  md: '```
+
+    let cosI = 2;
+
+    while (Math.abs(cosTerm) >= 0.001) {
+
+    cosFactorial *= cosI * (cosI - 1);
+
+    cosTerm = Math.pow(x, cosI) / cosFactorial * cosSign;
+
+    cosResult += cosTerm;
+
+    cosSign *= -1;
+
+    cosI += 2;
+
+    }
+
+    console.log(\`x: \${x.toFixed(1)}, sin(x): \${sineResult.toFixed(4)}, cos(x):
+    \${cosResult.toFixed(4)}\`);
+
+    }
+
+    ```'
+  merge: -1
+  pgno: 69
+- img_proc: true
+  md: "# # Arrays\n\n86. Write a program that reads an array of integers and displays\
+    \ the elements in reverse order.\n\n```\n// Read the array of integers from the\
+    \ user\nconst input = prompt(\"Enter a list of integers separated by spaces:\"\
+    );\nconst integers = input.split(\" \").map(Number);\n\n// Display the elements\
+    \ in reverse order\nconsole.log(\"Elements in reverse order:\");\nfor (let i =\
+    \ integers.length - 1; i >= 0; i--) {\n  console.log(integers[i]);\n}\n```\n\n\
+    87. Create a program that reads an array of integers and displays the sum of all\
+    \ the elements.\n\n```\n// Read the array of integers from the user\nconst input\
+    \ = prompt(\"Enter a list of integers separated by spaces:\");\nconst integers\
+    \ = input.split(\" \").map(Number);\n\n// Calculate the sum of elements in the\
+    \ array\nlet sum = 0;\nfor (let i = 0; i < integers.length; i++) {\n```"
+  merge: -1
+  pgno: 70
+- img_proc: true
+  md: '```
+
+    sum += integers[i];
+
+    }
+
+    ```
+
+
+    ```
+
+    console.log(`The sum of all elements is: ${sum}\`);
+
+    ```
+
+
+    # 88. Write a program that reads an array of integers and displays the average
+    of the elements.
+
+
+    ```
+
+    // Read the array of integers from the user
+
+    const input = prompt("Enter a list of integers separated by spaces:");
+
+    const integers = input.split("").map(Number);
+
+    ```
+
+
+    ```
+
+    // Calculate the average of elements in the array
+
+    let sum = 0;
+
+    for (let i = 0; i < integers.length; i++) {
+
+    sum += integers[i];
+
+    }
+
+    ```
+
+
+    ```
+
+    const average = sum / integers.length;
+
+    console.log(`The average of all elements is: ${average}\`);
+
+    ```
+
+
+    # 89. Write a program that reads an array of integers and displays the largest
+    element in the array.
+
+
+    ```
+
+    // Read the array of integers from the user
+
+    const input = prompt("Enter a list of integers separated by spaces:");
+
+    const integers = input.split("").map(Number);
+
+    ```'
+  merge: -1
+  pgno: 71
+- img_proc: true
+  md: "```\n// Find the largest element in the array\nlet largest = integers[0];\n\
+    for (let i = 1; i < integers.length; i++) {\n  if (integers[i] > largest) {\n\
+    \    largest = integers[i];\n  }\n}\n\nconsole.log(`The largest element in the\
+    \ array is: ${largest}\\`);\n```\n\n# 90. Create a program that reads two vectors\
+    \ of integers of the same size and displays a new vector with the sum of the corresponding\
+    \ elements of the two vectors.\n\n```\n// Read the first vector of integers from\
+    \ the user\nconst input1 = prompt(\"Enter the first vector of integers separated\
+    \ by spaces:\"\");\nconst vector1 = input1.split(\" \").map(Number);\n```\n\n\
+    ```\n// Read the second vector of integers from the user\nconst input2 = prompt(\"\
+    Enter the second vector of integers separated by spaces:\"\");\nconst vector2\
+    \ = input2.split(\" \").map(Number);\n```\n\n```\n// Check if both vectors have\
+    \ the same length\nif (vector1.length !== vector2.length) {\n  console.log(\"\
+    Vectors should have the same size.\");\n} else {\n```"
+  merge: -1
+  pgno: 72
+- img_proc: true
+  md: "```\n// Create a new vector with the sum of corresponding elements\nconst sumVector\
+    \ = [];\nfor (let i = 0; i < vector1.length; i++) {\n  sumVector.push(vector1[i]\
+    \ + vector2[i]);\n}\n\nconsole.log(\"The new vector with the sum of corresponding\
+    \ elements:\");\nconsole.log(sumVector)\n```\n\n# 91. Write a program that reads\
+    \ two arrays of integers with the same size and displays a new array with the\
+    \ elements resulting from the multiplication of the corresponding elements of\
+    \ the two arrays.\n\n```\n// Read first array of integers from the user\nconst\
+    \ input1 = prompt(\"Enter the first array of integers separated by spaces:\");\n\
+    const array1 = input1.split(\" \").map(Number);\n\n// Read the second array of\
+    \ integers from the user\nconst input2 = prompt(\"Enter the second array of integers\
+    \ separated by spaces:\");\nconst array2 = input2.split(\" \").map(Number);\n\n\
+    // Check if both arrays have the same length\nif (array1.length != array2.length)\
+    \ {\n  console.log(\"Arrays should have the same size.\");\n```"
+  merge: -1
+  pgno: 73
+- img_proc: true
+  md: "```\nelse {\n  // Create a new array with the multiplication of corresponding\
+    \ elements\n  const productArray = [];\n  for (let i = 0; i < array1.length; i++)\
+    \ {\n    productArray.push(array1[i] * array2[i]);\n  }\n\n  console.log(\"The\
+    \ new array with the product of corresponding elements:\");\n  console.log(productArray);\n\
+    }\n```\n\n# 92. Write a program that reads an array of integers and displays how\
+    \ many times a specific number appears in the array.\n\n```\n// Read the array\
+    \ of integers from the user\nconst input = prompt(\"Enter a list of integers separated\
+    \ by spaces:\");\nconst integers = input.split(\" \").map(Number);\n\n// Read\
+    \ the specific number to count occurrences\nconst numberToFind = parseInt(prompt(\"\
+    Enter the number to find:\"));\n\n// Count occurrences of the specific number\
+    \ in the array\nlet count = 0;\nfor (let i = 0; i < integers.length; i++) {\n\
+    if (integers[i] === numberToFind) {\n```"
+  merge: -1
+  pgno: 74
+- img_proc: true
+  md: "```\ncount++;\n}\n\nconsole.log(`The number ${numberToFind} appears ${count}\
+    \ time(s) in the array.`);\n```\n\n# 93. Write a program that reads an array of\
+    \ integers and checks if they are in ascending order.\n\n```\n// Read the array\
+    \ of integers from the user\nconst input = prompt(\"Enter a list of integers separated\
+    \ by spaces:\");\nconst integers = input.split(\" \").map(Number);\n\n// Function\
+    \ to check if the array is in ascending order\nfunction isAscending(arr) {\n \
+    \ for (let i = 1; i < arr.length; i++) {\n    if (arr[i] < arr[i - 1]) {\n   \
+    \   return false;\n    }\n  }\n  return true;\n}\n\n// Check if the array is in\
+    \ ascending order and display the result\nif (isAscending(integers)) {\n  console.log(\"\
+    The array is in ascending order.\");\n} else {\n```"
+  merge: -1
+  pgno: 75
+- img_proc: true
+  md: "```\nconsole.log(\"The array is not in ascending order.\");\n}\n```\n\n# 94.\
+    \ Create a program that reads an array of integers and finds the second largest\
+    \ element in the array.\n\n```\n// Read the array of integers from the user\n\
+    const input = prompt(\"Enter a list of integers separated by spaces:\");\nconst\
+    \ integers = input.split(\" \").map(Number);\n\n// Find the second largest element\
+    \ in the array\nlet firstMax = -Infinity;\nlet secondMax = -Infinity;\n\nfor (let\
+    \ i = 0; i < integers.length; i++) {\n    if (integers[i] > firstMax) {\n    \
+    \    secondMax = firstMax;\n        firstMax = integers[i];\n    } else if (integers[i]\
+    \ > secondMax && integers[i] != firstMax) {\n        secondMax = integers[i];\n\
+    \    }\n}\n\n// Check if a second largest element exists\nif (secondMax != -Infinity)\
+    \ {\n```"
+  merge: -1
+  pgno: 76
+- img_proc: true
+  md: "```\nconsole.log(`The second largest element in the array is: ${secondMax}`);\n\
+    } else {\n  console.log(\"There is no second largest element in the array.\");\n\
+    }\n```\n\n# 95. Given an array, find the kth largest and smallest element in it.\n\
+    \n```\nconst input = prompt(\"Enter a list of integers separated by spaces:\"\
+    );\nconst integers = input.split(\" \").map(Number);\n\nconst k = parseInt(prompt(\"\
+    Enter the value of k:\"));\n\n// Sort the array in ascending order\nintegers.sort((a,\
+    \ b) => a - b);\n\n// Find the kth smallest and largest elements\nconst kthSmallest\
+    \ = integers[k - 1];\nconst kthLargest = integers[integers.length - k];\n\nconsole.log(`The\
+    \ ${k}th smallest element in the array is: ${kthSmallest}\\`);\nconsole.log(`The\
+    \ ${k}th largest element in the array is: ${kthLargest}\\`);\n```\n\n# Solution\
+    \ 2\n\n```\nconst input = prompt(\"Enter a list of integers separated by spaces:\"\
+    );\nconst integers = input.split(\" \").map(Number);\n```"
+  merge: -1
+  pgno: 77
+- img_proc: true
+  md: "```\nconst k = parseInt(prompt(\"Enter the value of k:\"));\n\n// Function\
+    \ to find kth smallest element using quickselect algorithm\nfunction kthSmallest(arr,\
+    \ k) {\n  const swap = (a, b) => {\n    const temp = arr[a];\n    arr[a] = arr[b];\n\
+    \    arr[b] = temp;\n  };\n\n  const partition = (left, right, pivotIndex) =>\
+    \ {\n    const pivot = arr[pivotIndex];\n    let i = left;\n\n    swap(pivotIndex,\
+    \ right);\n    for (let j = left; j < right; j++) {\n      if (arr[j] < pivot)\
+    \ {\n        swap(i, j);\n        i++;\n      }\n    }\n    swap(i, right);\n\
+    \    return i;\n  };\n  swap(i, right);\n  return i;\n};\n```"
+  merge: -1
+  pgno: 78
+- img_proc: true
+  md: "```\nconst quickSelect = (left, right, kth) => {\n  if (left === right) return\
+    \ arr[left];\n\n  const pivotIndex = Math.floor(Math.random() * (right - left\
+    \ + 1)) + left;\n  const partitionIndex = partition(left, right, pivotIndex);\n\
+    \n  if (kth === partitionIndex) {\n    return arr[kth];\n  } else if (kth < partitionIndex)\
+    \ {\n    return quickSelect(left, partitionIndex - 1, kth);\n  } else {\n    return\
+    \ quickSelect(partitionIndex + 1, right, kth);\n  }\n};\n\nreturn quickSelect(0,\
+    \ arr.length - 1, k - 1);\n}\n\n// Find kth smallest and largest elements\nconst\
+    \ kthSmallestElement = kthSmallest([...integers], k);\nconst kthLargestElement\
+    \ = kthSmallest([...integers], integers.length - k + 1);\nconsole.log(`The ${k}th\
+    \ smallest element in the array is: ${kthSmallestElement}\\`);\nconsole.log(`The\
+    \ ${k}th largest element in the array is: ${kthLargestElement}\\`);\n```"
+  merge: -1
+  pgno: 79
+- img_proc: true
+  md: "# 96. Write a program that checks if an array contains duplicate elements.\n\
+    \n```\nconst input = prompt(\"Enter a list of integers separated by spaces:\"\
+    );\nconst integers = input.split(\"\").map(Number);\n```\n\n```\nlet containsDuplicate\
+    \ = false;\n```\n\n```\n// Check for duplicate elements in the array\nfor (let\
+    \ i = 0; i < integers.length; i++) {\nfor (let j = i + 1; j < integers.length;\
+    \ j++) {\n  if (integers[i] == integers[j]) {\n    containsDuplicate = true;\n\
+    \    break;\n  }\n}\nif (containsDuplicate) {\n  break;\n}\n}\n```\n\n```\n//\
+    \ Display the result\nif (containsDuplicate) {\n  console.log(\"The array contains\
+    \ duplicate elements.\");\n} else {\n  console.log(\"The array does not contain\
+    \ duplicate elements.\");\n}\n```"
+  merge: -1
+  pgno: 80
+- img_proc: true
+  md: "}\n\n# 97. Given an array of size n, find an element that appears more than\
+    \ n/2 times. (This element is called the majority element.)\n\n```\nconst input\
+    \ = prompt(\"Enter a list of integers separated by spaces:\");\nconst integers\
+    \ = input.split(\" \").map(Number);\nlet candidate = null;\nlet count = 0;\n//\
+    \ Find a candidate for majority element\nfor (let i = 0; i < integers.length;\
+    \ i++) {\n  if (count === 0) {\n    candidate = integers[i];\n    count++;\n \
+    \ } else {\n    if (candidate === integers[i]) {\n      count++;\n    } else {\n\
+    \      count--;\n    }\n  }\n}\n```"
+  merge: -1
+  pgno: 81
+- img_proc: true
+  md: "```\n// Validate if the candidate is the majority element\ncount = 0;\nfor\
+    \ (let i = 0; i < integers.length; i++) {\n  if (integers[i] == candidate) {\n\
+    \    count++;\n  }\n}\n```\n\n```\n// Display the majority element if it exists\n\
+    if (count > integers.length / 2) {\n  console.log(`The majority element is: ${candidate}\\\
+    `);\n} else {\n  console.log(\"No majority element found.\");\n}\n```\n\n# 98.\
+    \ Create a program that reads an array of integers and checks if all elements\
+    \ are even.\n\n```\nconst input = prompt(\"Enter a list of integers separated\
+    \ by spaces:\");\nconst integers = input.split(\" \")).map(Number);\nlet allEven\
+    \ = true;\n\n// Check if all elements are even\nfor (let i = 0; i < integers.length;\
+    \ i++) {\n  if (integers[i] % 2 != 0) {\n```"
+  merge: -1
+  pgno: 82
+- img_proc: true
+  md: "```\nallEven = false;\nbreak;\n}\n\n// Display the result\nif (allEven) {\n\
+    \  console.log(\"All elements in the array are even.\");\n} else {\n  console.log(\"\
+    Not all elements in the array are even.\");\n}\n```\n\n# 99. Write a program that\
+    \ checks if an array contains triplicate elements.\n\n```\nconst input = prompt(\"\
+    Enter a list of integers separated by spaces:\");\nconst integers = input.split(\"\
+    \ \")).map(Number);\nlet containsTriplicate = false;\nconst frequency = {};\n\n\
+    // Count the frequency of each element in the array\nfor (let i = 0; i < integers.length;\
+    \ i++) {\n  if (frequency[integers[i]]) {\n    frequency[integers[i]]++;\n  }\
+    \ else {\n    frequency[integers[i]] = 1;\n```"
+  merge: -1
+  pgno: 83
+- img_proc: true
+  md: "```\n}\n}\n// Check if any element appears three times\nfor (const key in frequency)\
+    \ {\n  if (frequency[key] >= 3) {\n    containsTriplicate = true;\n    break;\n\
+    \  }\n}\n\n```\n\n```\n// Display the result\nif (containsTriplicate) {\n  console.log(\"\
+    The array contains triplicate elements.\");\n} else {\n  console.log(\"The array\
+    \ does not contain triplicate elements.\");\n}\n```\n\n# 100. Given an array of\
+    \ random numbers, push all the zero's of the array to the end without changing\
+    \ the order of non-zero elements.\n\n```\nconst input = prompt(\"Enter a list\
+    \ of integers separated by spaces:\");\nconst nums = input.split(\"\").map(Number);\n\
+    let nonZeroIndex = 0;\n```"
+  merge: -1
+  pgno: 84
+- img_proc: true
+  md: "```\n// Move non-zero elements to the front of the array\nfor (let i = 0; i\
+    \ < nums.length; i++) {\n  if (nums[i] != 0) {\n    nums[nonZeroIndex] = nums[i];\n\
+    \    nonZeroIndex++;\n  }\n}\n```\n\n```\n// Fill the remaining elements with\
+    \ zeros\nwhile (nonZeroIndex < nums.length) {\n  nums[nonZeroIndex] = 0;\n  nonZeroIndex++;\n\
+    }\n```\n\n```\n// Display the modified array\nconsole.log(\"Array after pushing\
+    \ zeros to the end:\", nums);\n```\n\n# 101. Given an unsorted array of integers,\
+    \ find the length of the longest consecutive elements sequence.\n\n```\nconst\
+    \ input = prompt(\"Enter a list of integers separated by spaces:\");\nconst nums\
+    \ = input.split(\" \").map(Number);\n```\n\n```\nif (nums.length === 0) {\n  console.log(\"\
+    Length of the longest consecutive sequence: 0\");\n```"
+  merge: -1
+  pgno: 85
+- img_proc: true
+  md: "```\n} else {\n  const numSet = new Set(nums);\n  let longestSequence = 0;\n\
+    \n  for (const num of numSet) {\n    if (!numSet.has(num - 1)) {\n      let currentNum\
+    \ = num;\n      let currentSequence = 1;\n\n      while (numSet.has(currentNum\
+    \ + 1)) {\n        currentNum++;\n        currentSequence++;\n      }\n\n    \
+    \  longestSequence = Math.max(longestSequence, currentSequence);\n    }\n  }\n\
+    \n  console.log(\"Length of the longest consecutive sequence:\", longestSequence);\n\
+    }\n```\n\n# 102. Given an array of integers, find all pairs in the array that\
+    \ sum up to a specified value.\n\n```\nconst input = prompt(\"Enter a list of\
+    \ integers separated by spaces:\");\nconst nums = input.split(\" \").map(Number);\n\
+    const targetSum = Number(prompt(\"Enter the target sum:\"));-\n```"
+  merge: -1
+  pgno: 86
+- img_proc: true
+  md: "```\nif (nums.length < 2) {\n  console.log(\"Array should have at least two\
+    \ elements.\");\n} else {\n  const pairs = [];\n\n  for (let i = 0; i < numss.length;\
+    \ i++) {\n    for (let j = i + 1; j < numss.length; j++) {\n      if (nums[i]\
+    \ + numss[j] === targetSum) {\n        pairs.push([nums[i], numss[j]]);\n    \
+    \  }\n    }\n  }\n\n  if (pairs.length === 0) {\n    console.log(\"No pairs found\
+    \ with the target sum.\");\n  } else {\n    console.log(`Pairs with the target\
+    \ sum ${targetSum}:\\`);\n    pairs.forEach(pair => console.log(pair));\n  }\n\
+    }\n```"
+  merge: -1
+  pgno: 87
+- img_proc: true
+  md: "# 103. Make an algorithm that reads an array of n positions, and then creates\
+    \ a new vector that calculates the difference of each element with the next element.\n\
+    \n```\nconst input = prompt(\"Enter a list of integers separated by spaces:\"\
+    );\n```\n\n```\nconst nums = input.split(\" \").map(Number);\n```\n\n```\nif (nums.length\
+    \ < 2) {\n  console.log(\"Array should have at least two elements.\");\n} else\
+    \ {\n  const differences = [];\n  for (let i = 0; i < nums.length - 1; i++) {\n\
+    \    differences.push(nums[i + 1] - nums[i]);\n  }\n  console.log(\"Differences\
+    \ between each element and the next:\");\n  console.log(differences);\n}\n```\n\
+    \n# 104. Given an array of integers, find the subarray of given length with the\
+    \ least average.\n\n```\nconst input = prompt(\"Enter a list of integers separated\
+    \ by spaces:\");\n```\n\n```\nconst nums = input.split(\" \").map(Number);\n```\n\
+    \n```\nconst subarrayLength = Number(prompt(\"Enter the length of the subarray:\"\
+    ));\n```"
+  merge: -1
+  pgno: 88
+- img_proc: true
+  md: "```\nif (nums.length < subarrayLength || subarrayLength <= 0) {\n  console.log(\"\
+    Invalid input.\");\n} else {\n  let minAvg = Infinity;\n  let minIndex = 0;\n\n\
+    \  // Calculate sum for the first subarray of length subarrayLength\n  let sum\
+    \ = 0;\n  for (let i = 0; i < subarrayLength; i++) {\n    sum += nums[i];\n  }\n\
+    \n  // Find the subarray with the least average\n  for (let i = subarrayLength;\
+    \ i < nums.length; i++) {\n    sum += nums[i] - nums[i - subarrayLength];\n  \
+    \  const avg = sum / subarrayLength;\n\n    if (avg < minAvg) {\n      minAvg\
+    \ = avg;\n      minIndex = i - subarrayLength + 1;\n    }\n  }\n\n  console.log(`Subarray\
+    \ with the least average (${minAvg});`);\n  console.log(nums.slice(minIndex, minIndex\
+    \ + subarrayLength));\n```"
+  merge: -1
+  pgno: 89
+- img_proc: true
+  md: "# 105. Given two sorted arrays, merge them into a single sorted array.\n\n\
+    ```\nconst input1 = prompt(\"Enter sorted array 1 (integers separated by spaces):\"\
+    );\nconst input2 = prompt(\"Enter sorted array 2 (integers separated by spaces):\"\
+    );\n\nconst arr1 = input1.split(\" \").map(Number);\nconst arr2 = input2.split(\"\
+    \ \").map(Number);\n\nlet i = 0,\n j = 0;\nconst mergedArray = [];\n\n// Merge\
+    \ the two sorted arrays\nwhile (i < arr1.length && j < arr2.length) {\n  if (arr1[i]\
+    \ < arr2[j]) {\n    mergedArray.push(arr1[i]);\n    i++;\n  } else {\n    mergedArray.push(arr2[j]);\n\
+    \    j++;\n  }\n}\n\n// Add remaining elements from the first array\n```"
+  merge: -1
+  pgno: 90
+- img_proc: true
+  md: "```\nwhile (i < arr1.length) {\n  mergedArray.push(arr1[i]);\n  i++;\n}\n\n\
+    // Add remaining elements from the second array\nwhile (j < arr2.length) {\n \
+    \ mergedArray.push(arr2[j]);\n  j++;\n}\n\nconsole.log(\"Merged sorted array:\"\
+    , mergedArray);\n```"
+  merge: -1
+  pgno: 91
+- img_proc: true
+  md: "# Strings\n\n106. Create a program that reads two words and concatenates them,\
+    \ displaying the resulting word.\n\n```\nconst word1 = prompt(\"Enter the first\
+    \ word:\");\nconst word2 = prompt(\"Enter the second word:\");\n\nconst concatenatedWord\
+    \ = word1 + word2;\n\nconsole.log(\"Concatenated word.\", concatenatedWord);\n\
+    ```\n\n107. Write a program that takes a word and displays each letter separately.\n\
+    \n```\nconst word = prompt(\"Enter a word:\");\nconst letters = word.split('');\n\
+    \nconsole.log(\"Letters separated:\");\nfor (const letter of letters) {\n  console.log(letter);\n\
+    }\n```"
+  merge: -1
+  pgno: 92
+- img_proc: true
+  md: "# 108. Create a program that takes a sentence and replaces all the letters\
+    \ \"a\" with \"e\".\n\n```\nconst sentence = prompt(\"Enter a sentence:\");\n\
+    let replacedSentence = \"\";\n\nfor (let i = 0;i < sentence.length;i++) {\n  if\
+    \ (sentence[i] === 'a') {\n    replacedSentence += 'e';\n  } else {\n    replacedSentence\
+    \ += sentence[i];\n  }\n}\n\nconsole.log(\"Modified sentence:\", replacedSentence);\n\
+    ```\n\n# 109. Create a program that takes a sentence and replaces all spaces with\
+    \ a new line.\",\n\n```\nconst sentence = prompt(\"Enter a sentence:\");\nconst\
+    \ replacedSentence = sentence.split(' ').join('\\n');\n\nconsole.log(\"Modified\
+    \ sentence:\");\nconsole.log(replacedSentence);\n```"
+  merge: -1
+  pgno: 93
+- img_proc: true
+  md: "# 110. Write a program that receives a name and checks that it starts with\
+    \ the letter \"A\".\n\n```\nconst name = prompt(\"Enter a name:\");\nif (name.charAt(0).toUpperCase()\
+    \ === 'A') {\n  console.log(`${name} starts with the letter A.`);\n} else {\n\
+    \  console.log(`${name} does not start with the letter A.`);\n}\n```\n\n# 111.\
+    \ Write a program that reads a word and checks if it is a palindrome (if it can\
+    \ be read backwards the same way).\n\n```\nconst word = prompt(\"Enter a word:\"\
+    );\nconst reversedWord = word.split(\"\").reverse().join(\"\");\nif (word ===\
+    \ reversedWord) {\n  console.log(`${word} is a palindrome.`);\n} else {\n  console.log(`${word}\
+    \ is not a palindrome.`);\n}\n```"
+  merge: -1
+  pgno: 94
+- img_proc: true
+  md: "# 112. Create a program that reads two words and checks if the second word\
+    \ is an anagram of the first.\n\n```\nconst word1 = prompt(\"Enter the first word:\"\
+    );\nconst word2 = prompt(\"Enter the second word:\");\n\nconst sortedWord1 = word1.toLowerCase().split(\"\
+    \").sort().join(\"\");\nconst sortedWord2 = word2.toLowerCase().split(\"\").sort().join(\"\
+    \");\n\nif (sortedWord1 === sortedWord2) {\n  console.log(`\\${word2} is an anagram\
+    \ of \\${word1}.\\`);\n} else {\n  console.log(`\\${word2} is not an anagram of\
+    \ \\${word1}.\\`);\n}\n```\n\n# 113. Write a program that takes a full name and\
+    \ displays only the first name.\n\n```\nconst fullName = prompt(\"Enter your full\
+    \ name:\");\nconst firstName = fullName.split(' ')[[0];\n\nconsole.log(\"First\
+    \ name:\", firstName);\n```"
+  merge: -1
+  pgno: 95
+- img_proc: true
+  md: "# 114. Make a program that receives a sentence and displays the amount of blank\
+    \ spaces present in it.\n\n```\nconst sentence = prompt(\"Enter a sentence:\"\
+    );\nlet spaceCount = 0;\n```\n\n```\nfor (let i = 0; i < sentence.length; i++)\
+    \ {\nif (sentence.charAt(i) === ' ') {\n    spaceCount++;\n}\n}\nconsole.log(\"\
+    Number of blank spaces:\", spaceCount);\n```\n\n# 115. Create a program that reads\
+    \ a word and displays the number of vowels present in it.\n\n```\nconst word =\
+    \ prompt(\"Enter a word:\");\nconst vowels = ['a', 'e', 'i', 'o', 'u'];\nlet vowelCount\
+    \ = 0;\n```\n\n```\nfor (let i = 0; i < word.length; i++) {\nif (vowels.includes(word.charAt(i).toLowerCase()))\
+    \ {\n    vowelCount++;\n}\n}\n```"
+  merge: -1
+  pgno: 96
+- img_proc: true
+  md: "# 116. Create a program that reads a word and displays the number of vowels\
+    \ and consonants present in it.\n\n```\nconst word = prompt(\"Enter a word:\"\
+    );\nconst vowels = ['a', 'e', 'i', 'o', 'u'];\nlet vowelCount = 0;\nlet consonantCount\
+    \ = 0;\n\nfor (let i = 0; i < word.length; i++) {\n  const currentChar = word.charAt(i).toLowerCase();\n\
+    \  if (vowels.includes(currentChar)) {\n    vowelCount++;\n  } else if (currentChar\
+    \ >= 'a' && currentChar <= 'z') {\n    consonantCount++;\n  }\n}\n\nconsole.log(\"\
+    Number of vowels:\", vowelCount);\nconsole.log(\"Number of consonants:\", consonantCount);\n\
+    ```"
+  merge: -1
+  pgno: 97
+- img_proc: true
+  md: "# 117. Write a program that takes a full name and displays the last name (last\
+    \ name) first.\n\n```\nconst fullName = prompt(\"Enter your full name:\");\nconst\
+    \ namesArray = fullName.split(' ');\nconst lastName = namesArray[namesArray.length\
+    \ - 1];\n\nconsole.log(\"Last name first.\", lastName);\n```\n\n# 118. Implement\
+    \ a method to perform basic string compression using the counts of repeated characters.\
+    \ For instance, the string aabcccccaaaa would become a2b1c5a3.\n\n```\nconst str\
+    \ = \"aabcccccaaaa\";\nlet compressedString = \"\";\nlet count = 1;\n\nfor (let\
+    \ i = 0; i < str.length; i++) {\n  if (str[i] === str[i + 1]) {\n    count++;\n\
+    \  } else {\n    compressedString += str[i] + count;\n    count = 1;\n  }\n}\n\
+    \nconsole.log(\"Compressed string:\", compressedString);\n```"
+  merge: -1
+  pgno: 98
+- img_proc: true
+  md: "# 119. Rawwords: Write an algorithm that checks whether a word is a \"rawword\"\
+    . A word is considered a \"prime word\" if the sum of the letter values (where\
+    \ 'a' = 1, 'b' = 2, etc.) is a prime number.\n\n```\nfunction isPrime(n) {\nif\
+    \ (n <= 1) {\n  return false;\n}\nfor (let i = 2; i <= Math.sqrt(n); i++) {\n\
+    \  if (n % i === 0) {\n    return false;\n  }\n}\nreturn true;\n}\n```\n\n```\n\
+    function calculateLetterValue(char) {\nreturn char.toLowerCase().charCodeAt(0)\
+    \ - 96; // 'a' = 1, 'b' = 2, ...\n}\n```\n\n```\nfunction isRawWord(word) {\n\
+    let sum = 0;\nfor (let i = 0; i < word.length; i++) {\nsum += calculateLetterValue(word[i]);\n\
+    }\n```"
+  merge: -1
+  pgno: 99
+- img_proc: true
+  md: "```\n}\nreturn isPrime(sum);\n}\n```\n\n```\nconst inputWord = prompt(\"Enter\
+    \ a word:\");\nif (isRawWord(inputWord)) {\n  console.log(`\\${inputWord} is a\
+    \ rawword.`);\n} else {\n  console.log(\\`\\${inputWord} is not a rawword.`);\n\
+    }\n```\n\n# 120. Given a list of strings, write a function to determine the longest\
+    \ common prefix.\n\n```\nfunction longestCommonPrefix(strs) {\n  if (strs.length\
+    \ === 0) {\n    return \"\";\n  }\n\n  let prefix = strs[0];\n  for (let i = 1;\
+    \ i < strs.length; i++) {\n    let j = 0;\n    while (j < prefix.length && j <\
+    \ strs[i].length && prefix.charAt(j) === strs[i].charAt(j)) {\n      j++;\n  \
+    \  }\n    prefix = prefix.slice(0, j);\n  }\n  return prefix;\n```"
+  merge: -1
+  pgno: 100
+- img_proc: true
+  md: "```\nif (prefix === \"\") {\n  return \"\";\n}\nreturn prefix;\n}\n```\n\n\
+    ```\n// Example usage:\nconst strings = [\"flower\", \"flow\", \"flight\\];\n\
+    const commonPrefix = longestCommonPrefix(strings);\nconsole.log(\"Longest common\
+    \ prefix:-\", commonPrefix);\n```"
+  merge: -1
+  pgno: 101
+- img_proc: true
+  md: "# Matrices\n\n121. Write a program that fills a 3x3 matrix with values entered\
+    \ by the user and displays the sum of the main diagonal values.\n\n```\nconst\
+    \ matrix = [];\nlet sum = 0;\n\n// Prompt user for matrix values\nfor (let i =\
+    \ 0; i < 3; i++) {\n  matrix[i] = [];\n  for (let j = 0; j < 3; j++) {\n    matrix[i][j]\
+    \ = parseInt(prompt(`Enter value for matrix[$${i}][${j}]:`));\n    if (i === j)\
+    \ sum += matrix[i][j];\n  }\n}\n\n// Display matrix and sum of main diagonal\n\
+    console.log(\"Matrix:\", matrix);\nconsole.log(\"Sum of main diagonal values:\"\
+    , sum);\n```"
+  merge: -1
+  pgno: 102
+- img_proc: true
+  md: "# 122. Write a program that fills a 4x4 matrix with random values and displays\
+    \ the transposed matrix.\n\n```\nconst matrix = [];\n```\n\n```\nconst transposedMatrix\
+    \ = [];\n```\n\n```\n// Fill matrix with random values\nfor (let i = 0; i < 4;\
+    \ i++) {\n  matrix[i] = [];\n  for (let j = 0; j < 4; j++) {\n    matrix[i][j]\
+    \ = Math.floor(Math.random() * 10); // Random values from 0 to 9\n  }\n}\n```\n\
+    \n```\n// Display original matrix\nconsole.log(\"Original Matrix:\");\nconsole.log(matrix);\n\
+    ```\n\n```\n// Transpose the matrix\nfor (let i = 0; i < 4; i++) {\n  transposedMatrix[i]\
+    \ = [];\n  for (let j = 0; j < 4; j++) {\n    transposedMatrix[i][j] = matrix[j][i];\n\
+    \  }\n}\n```"
+  merge: -1
+  pgno: 103
+- img_proc: true
+  md: '```
+
+    // Display transposed matrix
+
+    console.log("nTransposed Matrix:");
+
+    console.log(transposedMatrix);",
+
+    ```
+
+
+    # 123. Write a program that fills a 5x5 matrix with integers and displays the
+    largest value in the matrix and its position.
+
+
+    ```
+
+    const matrix = [];
+
+    let largestValue = -Infinity;
+
+    let largestValueRow = -1;
+
+    let largestValueCol = -1;
+
+
+    // Fill matrix with random integers
+
+    for (let i = 0; i < 5; i++) {
+
+    matrix[i] = [];
+
+    for (let j = 0; j < 5; j++) {
+
+    matrix[i][j] = Math.floor(Math.random() * 100); // Random integers between 0 and
+    99
+
+    if (matrix[i][j] > largestValue) {
+
+    largestValue = matrix[i][j];
+
+    largestValueRow = i;
+
+    largestValueCol = j;
+
+    }
+
+    }
+
+    }
+
+    ```'
+  merge: -1
+  pgno: 104
+- img_proc: true
+  md: "```\n// Display original matrix\nconsole.log(\"Matrix:\");\nconsole.log(matrix);\n\
+    ```\n\n```\n// Display largest value and its position\nconsole.log(`Largest value:\
+    \ ${largestValue} at position [${largestValueRow}][${largestValueCol}]`);\n```\n\
+    \n# 124. Count negative numbers in a matrix\n\n```\nconst matrix = [\n  [2, -3,\
+    \ 5, 0],\n  [-7, 8, -1, 4],\n  [6, 0, -9, 10],\n  [-12, -15, 17, 20]\n];\n```\n\
+    \n```\nlet negativeCount = 0;\n// Count negative numbers in the matrix\nfor (let\
+    \ i = 0; i < matrix.length; i++) {\n  for (let j = 0; j < matrix[i].length; j++)\
+    \ {\n    if (matrix[i][j] < 0) {\n      negativeCount++;\n    }\n  }\n}\n```"
+  merge: -1
+  pgno: 105
+- img_proc: true
+  md: "```\nconsole.log(\"Number of negative numbers in the matrix:\", negativeCount);\n\
+    ```\n\n# 125. Write a program that reads a 3x3 matrix and calculates the average\
+    \ of the values present in the even positions (sum of the even indices) of the\
+    \ matrix.\n\n```\nconst matrix = [];\nlet sum = 0;\nlet count = 0;\n\n// Fill\
+    \ matrix with user input\nfor (let i = 0; i < 3; i++) {\n  matrix[i] = [];\n \
+    \ for (let j = 0; j < 3; j++) {\n    matrix[i][j] = parseInt(prompt(`Enter value\
+    \ for matrix[${i}][${j}]:`));\n    if ((i + j) % 2 === 0) {\n      sum += matrix[i][j];\n\
+    \      count++;\n    }\n  }\n}\n\n// Calculate average of values at even positions\n\
+    const average = count != 0 ? sum / count : 0;\n```"
+  merge: -1
+  pgno: 106
+- img_proc: true
+  md: "```\nconsole.log(\"Matrix:\", matrix);\nconsole.log(\"Average of values at\
+    \ even positions:\", average);\n```\n\n# 126. Calculate the sum of boundary elements\
+    \ of a matrix.\n\n```\nconst matrix = [\n[1, 2, 3],\n[4, 5, 6],\n[7, 8, 9]\n];\n\
+    ```\n\n```\nlet sum = 0;\n\n// Calculate sum of boundary elements\nfor (let i\
+    \ = 0; i < matrix.length; i++) {\n  for (let j = 0; j < matrix[i].length; j++)\
+    \ {\n    if (i === 0 || i === matrix.length - 1 || j === matrix[i].length - 1)\
+    \ {\n      sum += matrix[i][j];\n    }\n  }\n}\n```\n\n```\nconsole.log(\"Matrix:\"\
+    , matrix);\nconsole.log(\"Sum of boundary elements:\", sum);\n```"
+  merge: -1
+  pgno: 107
+- img_proc: true
+  md: "127. Write a program that reads a 4x4 matrix and checks if it is a diagonal\
+    \ matrix, that is, if all elements outside the main diagonal are equal to zero.\n\
+    \n```\nconst matrix = [\n[5, 0, 0, 0],\n[0, 8, 0, 0],\n[0, 0, 3, 0],\n[0, 0, 0,\
+    \ 2]\n];\n\nlet isDiagonal = true;\n\n// Check if it's a diagonal matrix\nfor\
+    \ (let i = 0; i < matrix.length; i++) {\n  for (let j = 0; j < matrix[i].length;\
+    \ j++) {\n    if (i != j & matrix[i][j] != 0) {\n      isDiagonal = false;\n \
+    \     break;\n    }\n  }\n}\n\nconsole.log(\"Matrix:\", matrix);\nif (isDiagonal)\
+    \ {\n  console.log(\"It is a diagonal matrix.\");\n}\n```"
+  merge: -1
+  pgno: 108
+- img_proc: true
+  md: "```\n} else {\n    console.log(\"It is not a diagonal matrix.\");\n}\n```\n\
+    \n# 128. Write a program to determine whether a given matrix is symmetric.\n\n\
+    ```\nfunction isSymmetric(matrix) {\n  const rows = matrix.length;\n  const cols\
+    \ = matrix[0].length;\n\n  // Check if matrix is square\n  if (rows != cols) {\n\
+    \    return false;\n  }\n\n  // Check if it's symmetric\n  for (let i = 0; i <\
+    \ rows; i++) {\n    for (let j = 0; j < cols; j++) {\n      if (matrix[i][j] !=\
+    \ matrix[j][i]) {\n        return false;\n      }\n    }\n  }\n\n  return true;\n\
+    }\n```"
+  merge: -1
+  pgno: 109
+- img_proc: true
+  md: "```\n// Example matrix\nconst matrix = [\n  [1, 2, 3],\n  [2, 4, 5],\n  [3,\
+    \ 5, 6]\n];\n```\n\n```\nconsole.log(\"Matrix:\", matrix);\nif (isSymmetric(matrix))\
+    \ {\n  console.log(\"The matrix is symmetric.\");\n} else {\n  console.log(\"\
+    The matrix is not symmetric.\");\n}\n```\n\n# 129. Write a program that fills\
+    \ a 4x4 matrix with random numbers and displays the sum of the values present\
+    \ in each row and in each column.\n\n```\nfunction generateMatrix(rows, cols)\
+    \ {\n  const matrix = [];\n  for (let i = 0; i < rows; i++) {\n    matrix[i] =\
+    \ [];\n    for (let j = 0; j < cols; j++) {\n      matrix[i][j] = Math.floor(Math.random()\
+    \ * 10); // Random integers between 0 and 9\n    }\n  }\n```"
+  merge: -1
+  pgno: 110
+- img_proc: true
+  md: '```
+
+    }
+
+    return matrix;
+
+    }
+
+    function sumRows(matrix) {
+
+    return matrix.map(row => row.reduce((acc, val) => acc + val, 0));
+
+    }
+
+    function sumColumns(matrix) {
+
+    const cols = matrix[0].length;
+
+    const sums = Array(cols).fill(0);
+
+    for (let i = 0; i < cols; i++) {
+
+    for (let j = 0; j < matrix.length; j++) {
+
+    sums[i] += matrix[j][i];
+
+    }
+
+    }
+
+    return sums;
+
+    }
+
+    const matrix = generateMatrix(4, 4);
+
+    console.log("Matrix:", matrix);
+
+    const rowSums = sumRows(matrix);
+
+    console.log("Sum of values in each row.", rowSums);
+
+    const colSums = sumColumns(matrix);
+
+    ```'
+  merge: -1
+  pgno: 111
+- img_proc: true
+  md: "```\nconsole.log(\"Sum of values in each column:\", colSums);\n```\n\n# 130.\
+    \ Write a program that reads a 3x3 matrix and calculates the determinant of the\
+    \ matrix.\n\n```\nfunction determinant(matrix) {\n  const [ [a, b, c], [d, e,\
+    \ f], [g, h, i] ] = matrix;\n  return a*(e*i-f*h)-b*(d*i-f*g)+c*(d*h-e*g);\n}\n\
+    \n// Example 3x3 matrix\nconst matrix = [\n  [2, -3, 1],\n  [5, 4, 7],\n  [0,\
+    \ 8, -6]\n];\n\nconsole.log(\"Matrix:\", matrix);\nconsole.log(\"Determinant-\"\
+    , determinant(matrix));\n```\n\n# 131. Write a program that reads two 2x2 matrices\
+    \ and displays the sum of the two matrices.\n\n```\nfunction matrixSum(matrix1,\
+    \ matrix2) {\n  const result = [];\n  for (let i = 0; i < matrix1.length; i++)\
+    \ {\n    result[i] = [];\n```"
+  merge: -1
+  pgno: 112
+- img_proc: true
+  md: "```\nfor (let j = 0; j < matrix1[i].length; j++) {\n  result[i][j] = matrix1[i][j]\
+    \ + matrix2[i][j];\n}\n\nreturn result;\n```\n\n// Example matrices\n\n```\nconst\
+    \ matrix1 = [\n  [2, 3],\n  [4, 5]\n];\n```\n\n```\nconst matrix2 = [\n  [1, 2],\n\
+    \  [3, 4]\n];\n```\n\n```\nconsole.log(\"Matrix 1:\", matrix1);\nconsole.log(\"\
+    Matrix 2:\", matrix2);\n\nconst resultMatrix = matrixSum(matrix1, matrix2);\n\
+    console.log(\"Sum of the matrices:\", resultMatrix);\n```"
+  merge: -1
+  pgno: 113
+- img_proc: true
+  md: "132. Write a program that reads two matrices and returns the multiplication\
+    \ between them as an answer. The program should observe whether or not it is possible\
+    \ to perform the multiplication between the two matrices.\n\n```\nfunction matrixMultiplication(matrix1,\
+    \ matrix2) {\nconst rows1 = matrix1.length;\nconst cols1 = matrix1[0].length;\n\
+    const rows2 = matrix2.length;\nconst cols2 = matrix2[0].length;\n\nif (cols1!=\
+    \ rows2) {\n  return \"Matrix multiplication not possible: Invalid dimensions\"\
+    ;\n}\n\nconst result = [];\nfor (let i = 0; i < rows1; i++) {\n  result[i] = [];\n\
+    \  for (let j = 0; j < cols2; j++) {\n    let sum = 0;\n    for (let k = 0; k\
+    \ < cols1; k++) {\n      sum += matrix1[i][k] * matrix2[k][j];\n    }\n    result[i][j]\
+    \ = sum;\n  }\n}\n```"
+  merge: -1
+  pgno: 114
+- img_proc: true
+  md: "```\n}\nreturn result;\n}\nfunction createMatrix(rows, cols) {\n  const matrix\
+    \ = [];\n  for (let i = 0; i < rows; i++) {\n    matrix[i] = [];\n    for (let\
+    \ j = 0; j < cols; j++) {\n      const value = parseInt(prompt(`Enter value for\
+    \ matrix[$${i}][${j}]`));\n      matrix[i][j] = isNaN(value) ? 0 : value;\n  \
+    \  }\n  }\n  return matrix;\n}\nconst rows1 = parseInt(prompt(\"Enter the number\
+    \ of rows for matrix 1:\"));\\nconst cols1 = parseInt(prompt(\"Enter the number\
+    \ of columns for matrix 1:\"));\\nconst rows2 = parseInt(prompt(\"Enter the number\
+    \ of rows for matrix 2:\"));\\nconst cols2 = parseInt(prompt(\"Enter the number\
+    \ of columns for matrix 2:\"));\\nconst matrix1 = createMatrix(rows1, cols1);\\\
+    nconst matrix2 = createMatrix(rows2, cols2);\\nnconsole.log(\"Matrix 1:\", matrix1);\\\
+    nconsole.log(\"Matrix 2:\", matrix2);\n```"
+  merge: -1
+  pgno: 115
+- img_proc: true
+  md: "```\nconst resultMatrix = matrixMultiplication(matrix1, matrix2);\nif (typeof\
+    \ resultMatrix === 'string') {\n  console.log(resultMatrix);\n} else {\n  console.log(\"\
+    Result of matrix multiplication:\", resultMatrix);\n}\n```\n\n# 133. Print a matrix\
+    \ in spiral order.\n\n```\nfunction spiralOrder(matrix) {\nif (matrix.length ===\
+    \ 0) return [];\n\nconst result = [];\nlet rowStart = 0,\nrowEnd = matrix.length\
+    \ - 1;\nlet colStart = 0,\ncolEnd = matrix[0].length - 1;\n\nwhile (rowStart <=\
+    \ rowEnd && colStart <= colEnd) {\n// Print top row\nfor (let i = colStart; i\
+    \ <= colEnd; i++) {\n  result.push(matrix[rowStart][i]);\n}\nrowStart++;\n```"
+  merge: -1
+  pgno: 116
+- img_proc: true
+  md: "```\n// Print right column\nfor (let i = rowStart; i <= rowEnd; i++) {\n  result.push(matrix[i][colEnd]);\n\
+    }\ncolEnd--;\n```\n\n```\n// Print bottom row (if any)\nif (rowStart <= rowEnd)\
+    \ {\n  for (let i = colEnd; i >= colStart; i--) {\n    result.push(matrix[rowEnd][i]);\n\
+    \  }\n  rowEnd--;\n}\n```\n\n```\n// Print left column (if any)\nif (colStart\
+    \ <= colEnd) {\n  for (let i = rowEnd; i >= rowStart; i--) {\n    result.push(matrix[i][colStart]);\n\
+    \  }\n  colStart++;\n}\n```\n\n```\nreturn result;\n}\n```"
+  merge: -1
+  pgno: 117
+- img_proc: true
+  md: "```\n// Example matrix\nconst matrix = [\n  [1, 2, 3],\n  [4, 5, 6],\n  [7,\
+    \ 8, 9]\n];\n\nconsole.log(\"Spiral order:\", spiralOrder(matrix));\n```\n\n#\
+    \ 134. Write a program that reads a m x n matrix, indicating the location where\
+    \ there are mines in a Minesweeper game (being 0 for a neutral field, and 1 for\
+    \ locations where there would be mines), and the program should return a matrix\
+    \ indicating, for each position, the number of mines in neighboring houses.\n\n\
+    ```\nfunction minesweeper(matrix) {\n  const rows = matrix.length;\n  const cols\
+    \ = matrix[0].length;\n  const result = [];\n\n  for (let i = 0; i < rows; i++)\
+    \ {\n    result.push([])\n    for (let j = 0; j < cols; j++) {\n      let count\
+    \ = 0;\n```"
+  merge: -1
+  pgno: 118
+- img_proc: true
+  md: "```\nfor (let r=i-1; r<=i+1; r++) {\n  for (let c=j-1; c<=j+1; c++) {\n   \
+    \ if (r >= 0 && r < rows && c >= 0 && c < cols && !(r === i && c === j)) {\n \
+    \     count += matrix[r][c];\n    }\n  }\n  result[i][j] = count;\n}\n\nreturn\
+    \ result;\n```\n\n// Example matrix with mine locations\n\n```\nconst matrix =\
+    \ [\n  [0, 1, 0],\n  [1, 1, 1],\n  [0, 1, 0]\n];\n\nconsole.log(minesweeper(matrix));\n\
+    ```"
+  merge: -1
+  pgno: 119
+- img_proc: true
+  md: "# 135. Make a function that receives a 3x3 matrix representing the game of\
+    \ tic-tac-toe, and check if there is a winner, if there is a tie, or if the game\
+    \ is not over yet\n\n```\nfunction checkTicTacoe(matrix) {\n// Check rows, columns,\
+    \ and diagonals for a winner\nfor (let i = 0; i < 3; i++) {\nif (\n  matrix[i][0]\
+    \ != 0 &&\n  matrix[i][0] === matrix[i][1] &&\n  matrix[i][0] === matrix[i][2]\n\
+    ) {\n  return `Player ${matrix[i][0]} wins!`;\n}\nif (\n  matrix[0][i] != 0 &&\n\
+    \  matrix[0][i] === matrix[1][i] &&\n  matrix[0][i] === matrix[2][i]\n) {\n  return\
+    \ `Player ${matrix[0][i]} wins!`;\n}\n}\nif (\nmatrix[0][0] != 0 &&\n```"
+  merge: -1
+  pgno: 120
+- img_proc: true
+  md: "```\nmatrix[0][0] === matrix[1][1] &&\nmatrix[0][0] === matrix[2][2]\n{\n \
+    \ return `Player ${matrix[0][0]} wins!`;\n}\n```\n\n```\nif(\nmatrix[0][2] !=\
+    \ 0 &&\nmatrix[0][2] === matrix[1][1] &&\nmatrix[0][2] === matrix[2][0]\n{\n \
+    \ return `Player ${matrix[0][2]} wins!`;\n}\n```\n\n```\n// Check for a tie or\
+    \ game still in progress\nfor (let i = 0; i < 3; i++) {\n  for (let j = 0; j <\
+    \ 3; j++) {\n    if (matrix[i][j] === 0) {\n      return \"Game still in progress\"\
+    ;\n    }\n  }\n}\nreturn \"It's a tie!\";\n```\n\n```\n// Example 3x3 matrix representing\
+    \ tic-tac-toe game\n```"
+  merge: -1
+  pgno: 121
+- img_proc: true
+  md: '```
+
+    const game1 = [
+
+    [1, 0, 1],
+
+    [0, 1, 0],
+
+    [1, 0, 1]
+
+    ];
+
+
+    const game2 = [
+
+    [1, 0, 1],
+
+    [0, 1, 0],
+
+    [0, 1, 0]
+
+    ];
+
+
+    console.log(checkTicTacToe(game1)); // Player 1 wins!
+
+    console.log(checkTicTacToe(game2)); // It''s a tie!
+
+    ```'
+  merge: -1
+  pgno: 122
+- img_proc: true
+  md: "# Recursive Functions\n\n136. Write a recursive function to calculate the factorial\
+    \ of a number.\n\n```\nfunction factorial(n) {\nif (n === 0 || n === 1) {\n  return\
+    \ 1;\n} else {\n  return n * factorial(n - 1);\n}\n}\n```\n\n// Example usage\n\
+    \n```\nconst number = 5;\nconsole.log(`Factorial of ${number} is: `, factorial(number));\n\
+    ```\n\n137. Implement a recursive function to calculate the Fibonacci sequence\
+    \ up to a given number.\n\n```\nfunction fibonacci(n, sequence = [0, 1]) {\nif\
+    \ (n === 0) {\n  return [0];\n} else if (n === 1) {\n  return sequence;\n```"
+  merge: -1
+  pgno: 123
+- img_proc: true
+  md: "```\nelse {\nconst nextNumber = sequence[sequence.length - 1] + sequence[sequence.length\
+    \ - 2];\nif (nextNumber <= n) {\n  sequence.push(nextNumber);\n  return fibonacci(n,\
+    \ sequence);\n} else {\n  return sequence;\n}\n}\n}\n```\n\n// Example usage\n\
+    const number = 50;\nconsole.log(\"Fibonacci sequence up to\", number, \"is:\"\
+    , fibonacci(number));\n\n# 138. Create a recursive function to check if a number\
+    \ is prime.\n\n```\nfunction isPrime(num, divisor = 2) {\nif (num <= 2) {\n  return\
+    \ (num === 2);\n}\nif (num % divisor === 0) {\n  return (num === divisor);\n}\n\
+    if (divisor * divisor > num) {\n```"
+  merge: -1
+  pgno: 124
+- img_proc: true
+  md: "```\nreturn true;\n}\nreturn isPrime(num, divisor + 1);\n}\n```\n\n// Example\
+    \ usage\nconst number = 17;\nconsole.log(`Is ${number} prime?\\`, isPrime(number));\
+    \ // Expected output: true\n\n# 139. Develop a recursive function to calculate\
+    \ the sum of the digits of an integer.\n\n```\nfunction sumOfDigits(n) {\nif (n\
+    \ < 10) {\n  return n;\n} else {\n  return (n % 10) + sumOfDigits(Math.floor(n\
+    \ / 10));\n}\n}\n```\n\n// Example usage\nconst number = 12345;\nconsole.log(\"\
+    Sum of digits:\", sumOfDigits(number)); // Expected output: 15"
+  merge: -1
+  pgno: 125
+- img_proc: true
+  md: "# 140. Write a recursive function to calculate the power of an integer raised\
+    \ to an exponent.\n\n```\nfunction power(base, exponent) {\nif (exponent === 0)\
+    \ {\n    return 1;\n} else {\n    return base * power(base, exponent - 1);\n}\n\
+    }\n```\n\n```\n// Example usage\nconst base = 3;\nconst exp = 4;\nconsole.log(`${base}\
+    \ raised to the power \\${exp}\\`, power(base, exp)); // Expected output: 81\n\
+    ```\n\n# 141. Implement a recursive function to find the greatest common divisor\
+    \ (GCD) of two numbers.\n\n```\nfunction gcd(a, b) {\nif (b === 0) {\n    return\
+    \ a;\n} else {\n    return gcd(b, a % b);\n}\n```"
+  merge: -1
+  pgno: 126
+- img_proc: true
+  md: "```\n}\n\n// Example usage\nconst num1 = 48;\nconst num2 = 18;\nconsole.log(`GCD\
+    \ of ${num1} and ${num2} is:`, gcd(num1, num2)); // Expected output: 6\n```\n\n\
+    # 142. Create a recursive function to reverse a string\n\n```\nfunction reverseString(str)\
+    \ {\n  if (str === \"\") {\n    return \"\";\n  } else {\n    return reverseString(str.substr(1))\
+    \ + str.charAt(0);\n  }\n}\n```\n\n```\n// Example usage\nconst string = \"Hello,\
+    \ world!\";\nconsole.log(\"Reversed string:\", reverseString(string)); // Expected\
+    \ output: \"!dlrow ,olleH\"\n```\n\n# 143. Develop a recursive function to find\
+    \ the smallest value in an array.\n\n```\nfunction findMin(arr) {\n  if (arr.length\
+    \ === 1) {\n```"
+  merge: -1
+  pgno: 127
+- img_proc: true
+  md: "```\nreturn arr[0];\n} else {\n  const subMin = findMin(arr.slice(1));\n  return\
+    \ arr[0] < subMin ? arr[0] : subMin;\n}\n```\n\n```\n// Example usage\nconst array\
+    \ = [10, 5, 8, 3, 7, 2];\nconsole.log(\"The smallest value in the array is: \"\
+    , findMin(array)); // Expected output: 2\n```\n\n# 144. Write a recursive function\
+    \ to determine whether a word is a palindrome.\n\n```\nfunction isPalindrome(word)\
+    \ {\n  if (word.length <= 1) {\n    return true;\n  } else {\n    if (word[0]\
+    \ === word[word.length - 1]) {\n      return isPalindrome(word.substring(1, word.length\
+    \ - 1));\n    } else {\n      return false;\n    }\n  }\n}\n```"
+  merge: -1
+  pgno: 128
+- img_proc: true
+  md: "```\n// Example usage\nconst word1 = \"racecar\";\nconst word2 = \"hello\"\
+    ;\nconsole.log(`${word1} is a palindrome: \\`, isPalindrome(word1)); // Expected\
+    \ output: true\nconsole.log(`${word2} is a palindrome: \\`, isPalindrome(word2));\
+    \ // Expected output: false\n```\n\n# 145. Implement a recursive function to calculate\
+    \ the sum of elements of an array.\n\n```\nfunction arraySum(arr) {\nif (arr.length\
+    \ === 0) {\n    return 0;\n} else {\n    return arr[0] + arraySum(arr.slice(1));\n\
+    }\n}\n```\n\n```\n// Example usage\nconst array = [1, 2, 3, 4, 5];\nconsole.log(\"\
+    Sum of elements in the array:\", arraySum(array)); // Expected output: 15\n```"
+  merge: -1
+  pgno: 129
+- img_proc: true
+  md: '# Regular Expressions
+
+
+    146. Write a regex to validate email addresses, ensuring it contains @ and . symbols.
+
+
+    ```
+
+    const emailPattern = /^[^\s]+@[^\s]+\.[^\s]+$/;
+
+
+    // Example usage
+
+    const email1 = "example@example.com";
+
+    const email2 = "invalid.email";
+
+    console.log(\`${email1} is valid: \`, emailPattern.test(email1));
+
+    // Expected output: true
+
+
+    console.log(\`${email2} is valid: \`, emailPattern.test(email2));
+
+    // Expected output: false
+
+    ```
+
+
+    147. Extract all valid dates from a string in the format YYYY-MM-DD or DD/MM/YYYY.
+
+
+    ```
+
+    const dateString = "Some text with dates: 2023-11-21, 12/25/2024, 05/06/2022,
+    2021-13-45";
+
+
+    const datePattern = /\b\d{4}-\d{2}-\d{2}\|\b\d{2}\/\d{2}\/\d{4}\b/g;
+
+
+    const validDates = dateString.match(datePattern);
+
+
+    console.log("Valid dates found.", validDates);
+
+    ```'
+  merge: -1
+  pgno: 130
+- img_proc: true
+  md: '# 148. Check if a given string is a valid credit card number (typically 16
+    digits, sometimes separated by - or spaces).
+
+
+    ```
+
+    function isValidCreditCardNumber(str) {
+
+    // Remove dashes and spaces
+
+    const cleanStr = str.replace(/-\|\s/g, "");
+
+
+    // Check if the string is 16 digits and contains only numbers
+
+    const creditCardPattern = /^\d{16}$;
+
+
+    return creditCardPattern.test(cleanStr);
+
+    }
+
+    ```
+
+
+    // Example usage
+
+    const cardNumber1 = "1234-5678-9012-3456";
+
+    const cardNumber2 = "1234567890123456";
+
+    const cardNumber3 = "123456789012345"; // Invalid length
+
+
+    ```
+
+    console.log(`${cardNumber1} is a valid credit card number: `, isValidCreditCardNumber(cardNumber1));
+    //
+
+    Expected output: true
+
+    console.log(`${cardNumber2} is a valid credit card number: `, isValidCreditCardNumber(cardNumber2));
+    //
+
+    Expected output: true
+
+    console.log(`${cardNumber3} is a valid credit card number: `, isValidCreditCardNumber(cardNumber3));
+    //
+
+    Expected output: false
+
+    ```'
+  merge: -1
+  pgno: 131
+- img_proc: true
+  md: '# 149. Validate passwords to ensure they contain at least one uppercase character,
+    one lowercase character, one digit, one special character, and are at least 8
+    characters long.
+
+
+    ```
+
+    function validatePassword(password) {
+
+    const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*&*])[A-Za-z\d@$!%*&*]{8,}$/;
+
+    return passwordPattern.test(password);
+
+    }
+
+
+    // Example usage
+
+    const password1 = "Password!";
+
+    const password2 = "password"; // Doesn''t meet criteria
+
+
+    console.log(`${password1} is a valid password: ${validatePassword(password1)});
+    // Expected output: true
+
+    console.log(`${password2} is a valid password: ${validatePassword(password2)});
+    // Expected output: false`
+
+    ```
+
+
+    # 150. Replace multiple spaces in a text with a single space.
+
+
+    ```
+
+    const text = "This is a text with multiple spaces";
+
+    nconst newText = text.replace(/\s+/g, '' '');
+
+
+    console.log(newText);
+
+    ```'
+  merge: -1
+  pgno: 132
+- img_proc: true
+  md: '# 151. Validate and extract currency values from a text (e.g., $100.25).
+
+
+    ```
+
+    const text = "The total amount is $100.25 and $50.50 for other items.";
+
+    const currencyPattern = /$\d+(\.\d{1,2})?\/g;
+
+    const currencyValues = text.match(currencyPattern);
+
+    console.log(currencyValues);
+
+    ```
+
+
+    # 152. Write a regex to extract all URLs from a text.
+
+
+    ```
+
+    const text = "Visit our website at https://www.example.com or check out http://test.example.org/path/page.html";
+
+    const urlPattern = /https?:\\/\S+/g;
+
+    const extractedURLs = text.match(urlPattern);
+
+    console.log(extractedURLs);
+
+    ```
+
+
+    # 153. Extract all hex color codes from a text (e.g., #AABBCC or #ABC).
+
+
+    ```
+
+    const text = "The colors #AABBCC and #123 are commonly used in designs.";nconst
+    hexColorPattern = /#[0-9A-Fa-f]{3,6}\b/g;
+
+    const extractedColors = text.match(hexColorPattern);
+
+    console.log(extractedColors);
+
+    ```'
+  merge: -1
+  pgno: 133
+- img_proc: true
+  md: '# 154. Extract all valid IPv4 addresses from a text.
+
+
+    ```
+
+    const text = "The IP addresses are 192.168.0.1 and 10.0.0.1, but not 999.888.777.666
+    or 256.256.256.256";
+
+    ```
+
+
+    ```
+
+    const ipv4Pattern = /\b(?:\d{1,3}\.){3}\d{1,3}\b/g;
+
+    const extractedIPs = text.match(ipv4Pattern);
+
+    console.log(extractedIPs);
+
+    ```
+
+
+    # 155. Use capture groups to rearrange date formats (convert YYYY-MM-DD to DD-MM-YYYY).
+
+
+    ```
+
+    const dateString = "2023-11-21";
+
+    const rearrangedDate = dateString.replace(/(\d{4})-(\d{2})-(\d{2})/g, "$3-$2-$1");
+
+    console.log(rearrangedDate); // Output: 21-11-2023
+
+    ```'
+  merge: -1
+  pgno: 134
+- img_proc: true
+  md: "# Sorting Algorithms\n\n156. Implement the Bubble Sort algorithm\n\n```\nfunction\
+    \ bubblesSort(arr) {\n  const n = arr.length;\n\n  for (let i = 0; i < n - 1;\
+    \ i++) {\n    // Flag to optimize the sorting process\n    let swapped = false;\n\
+    \n    for (let j = 0; j < n - i - 1; j++) {\n      if (arr[j] > arr[j + 1]) {\n\
+    \        // Swap elements if they are in the wrong order\n        arr[j], arr[j\
+    \ + 1] = {arr[j + 1], arr[j]};\n        swapped = true;\n      }\n    }\n\n  \
+    \  // If no two elements were swapped in the inner loop, the array is already\
+    \ sorted\n    if (!swapped) break;\n  }\n\n  return arr;\n```"
+  merge: -1
+  pgno: 135
+- img_proc: true
+  md: "```\n// Example usage:\nconst unsortedArray = [64, 25, 12, 22, 11];\nconst\
+    \ sortedArray = bubbleSort(unsortedArray);\nconsole.log(sortedArray); // Output:\
+    \ [11, 12, 22, 25, 64]\n```\n\n# 157. Implement the Selection Sort algorithm\n\
+    \n```\nfunction bubbleSort(arr) {\n  const n = arr.length;\n  for (let i = 0;i\
+    \ < n - 1;i++) {\n    // Flag to optimize the sorting process\n    let swapped\
+    \ = false;\n    for (let j = 0;j < n - i - 1;j++) {\n      if (arr[j] > arr[j\
+    \ + 1]) {\n        // Swap elements if they are in the wrong order\n        [arr[j],\
+    \ arr[j + 1]] = [arr[j + 1], arr[j]];\n        swapped = true;\n      }\n    }\n\
+    \    // If no two elements were swapped in the inner loop, the array is already\
+    \ sorted\n    if (!swapped) break;\n  }\n}\n```"
+  merge: -1
+  pgno: 136
+- img_proc: true
+  md: "```\n}\nreturn arr;\n}\n// Example usage:\nconst unsortedArray = [64, 25, 12,\
+    \ 22, 11];\nconst sortedArray = bubbleSort(unsortedArray);\nconsole.log(sortedArray);\
+    \ // Output: [11, 12, 22, 25, 64]\n```\n\n# 158. Implement the Insertion Sort\
+    \ algorithm\n\n```\nfunction insertionsSort(arr) {\nconst n = arr.length;\n\n\
+    for (let i = 1; i < n; i++) {\nlet current = arr[i];\n j = i - 1;\n\n// Move elements\
+    \ of arr[0..i-1] that are greater than current to one position ahead of their\
+    \ current position\nwhile (j >= 0 && arr[j] > current) {\narr[j + 1] = arr[j];\n\
+    j--;\n}\narr[j + 1] = current;\n}\n```"
+  merge: -1
+  pgno: 137
+- img_proc: true
+  md: "```\nreturn arr;\n\n// Example usage:\nconst unsortedArray = [64, 25, 12, 22,\
+    \ 11];\nconst sortedArray = insertionSort(unsortedArray);\nconsole.log(sortedArray);\
+    \ // Output: [11, 12, 22, 25, 64]\n```\n\n# 159. Implement the Merge Sort algorithm\n\
+    \n```\nfunction mergeSort(arr) {\n  if (arr.length <= 1) {\n    return arr;\n\
+    \  }\n\n  const mid = Math.floor(arr.length / 2);\n  const left = arr.slice(0,\
+    \ mid);\n  const right = arr.slice(mid);\n\n  return merge(mergeSort(left), mergeSort(right));\n\
+    }\n\nfunction merge(left, right) {\n  let result = [];\n  let leftIndex = 0;\n\
+    ```"
+  merge: -1
+  pgno: 138
+- img_proc: true
+  md: "```\nlet rightIndex = 0;\nwhile (leftIndex < left.length && rightIndex < right.length)\
+    \ {\n  if (left[leftIndex] < right[rightIndex]) {\n    result.push(left[leftIndex]);\n\
+    \    leftIndex++;\n  } else {\n    result.push(right[rightIndex]);\n    rightIndex++;\n\
+    \  }\n}\n\nreturn result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));\n\
+    ```\n\n// Example usage:\nconst unsortedArray = [64, 25, 12, 22, 11];\nconst sortedArray\
+    \ = mergeSort(unsortedArray);\nconsole.log(sortedArray); // Output: [11, 12, 22,\
+    \ 25, 64]\n\n# 160. Implement the Quick Sort algorithm\n\n```\nfunction quickSort(arr,\
+    \ left = 0, right = arr.length - 1) {\n  if (left < right) {\n    const partitionIndex\
+    \ = partition(arr, left, right);\n    quickSort(arr, left, partitionIndex - 1);\n\
+    ```"
+  merge: -1
+  pgno: 139
+- img_proc: true
+  md: "```\nquickSort(arr, partitionIndex + 1, right);\n}\nreturn arr;\n}\n```\n\n\
+    ```\nfunction partition(arr, left, right) {\n  const pivot = arr[right];\n  let\
+    \ i = left - 1;\n\n  for (let j = left; j < right; j++) {\n    if (arr[j] < pivot)\
+    \ {\n      i++;\n      swap(arr, i, j);\n    }\n  }\n\n  swap(arr, i + 1, right);\n\
+    \  return i + 1;\n}\n```\n\n```\nfunction swap(arr, i, j) {\n  const temp = arr[i];\n\
+    \  arr[i] = arr[j];\n  arr[j] = temp;\n}\n```"
+  merge: -1
+  pgno: 140
+- img_proc: true
+  md: '```
+
+    // Example usage:
+
+    const unsortedArray = [64, 25, 12, 22, 11];
+
+    const sortedArray = quickSort(unsortedArray);
+
+    console.log(sortedArray); // Output: [11, 12, 22, 25, 64]
+
+    ```'
+  merge: -1
+  pgno: 141
+- img_proc: true
+  md: '# Complete List of Exercises
+
+
+    Basic Exercises
+
+
+    +   1. Write a program that prints "Hello World!" on the screen.
+
+
+    +   2. Write a program that prints "Hello" on one line and "World!" on the bottom
+    line, using two different commands.
+
+
+    +   3. Write a program that prints "Hello" on one line and "World!" on the bottom
+    line, using only one command to print.
+
+
+    +   4. Write a program that prints "Hello" on one line and "World!" on the bottom
+    line, leaving a blank line between the words.
+
+
+    +   5. Write a program that prints "Hello World!" (in the same line) on the screen,
+    using one command to print "Hello" and another command to print "World".
+
+
+    +   6. Write a program that prints "Hello World!" (in the same line) on the screen,
+    using one command to print "Hello", another command to print "World", and another
+    to print "!".
+
+
+    +   7. Make a program that asks for the user''s name, and prints the name on the
+    screen immediately after.
+
+
+    +   8. Make a program that reads the names of three people in sequence, followed
+    by their respective ages, and prints each name with their respective ages on the
+    screen.
+
+
+    +   9. Make a program that reads the names of three people in sequence, followed
+    by their respective ages and'
+  merge: -1
+  pgno: 142
+- img_proc: true
+  md: "heights, and prints the data in table format on the screen.\n\n+   10. Make\
+    \ a program that reads the names of three people in sequence, followed by reading\
+    \ their respective ages and heights, and prints the data on the screen in table\
+    \ format, using dashes (-) to separate rows and pipes (|) to separate columns.\n\
+    \n# Mathematical Formulas\n\n+   11. Write a program that prompts the user for\
+    \ two numbers and displays the addition, subtraction, multiplication, and division\
+    \ between them.\n\n+   12. Write a program that calculates the arithmetic mean\
+    \ of two numbers entered by the user.\n\n+   13. Create a program that calculates\
+    \ and displays the arithmetic mean of three numbers entered by the user.\n\n+\
+    \   14. Write a program that reads two numbers, the first being the base and the\
+    \ second the exponent, and then printing the first number raised to the second.\n\
+    \n+   15. Write a program that reads a number and prints the square root of the\
+    \ number on the screen.\n\n+   16. Write a program that calculates the geometric\
+    \ mean of three numbers entered by the user $\rightarrow GeoMean=3n1n2n3\n\n+\
+    \   17. Write a program that calculates the BMI of an individual, using the formula\
+    \ BMI = weight / height²\n\n+   18. Create a program that calculates and displays\
+    \ the perimeter of a circle, prompting the user for the radius, using the formula\
+    \ P = 2$\\pi r$\n\n+   19. Write a program that calculates the area of a circle\
+    \ from the radius, using the formula A = $\\pi r^2$\n\n+   20. Write a program\
+    \ that calculates the delta of a quadratic equation ($\\Delta = b^2 - 4ac$)."
+  merge: -1
+  pgno: 143
+- img_proc: true
+  md: '21. Write a program that calculates the perimeter and area of a rectangle,
+    using the formulas P = 2(w + l) and A = wl, where w is the width and l is the
+    length
+
+
+    22. Write a program that calculates the perimeter and area of a triangle, using
+    the formulas P = a + b + c and A = (b * h) / 2, where a, b and c are the sides
+    of the triangle and h is the height relative to the side B.
+
+
+    23. Write a program that calculates the average velocity of an object, using the
+    formula v = Δs/Δt, where v is the average velocity, Δs is the space variation,
+    and Δt is the time variation
+
+
+    24. Write a program that calculates the kinetic energy of a moving object, using
+    the formula E = (mv²) / 2, where E is the kinetic energy, m is the mass of the
+    object, and v is the velocity.
+
+
+    25. Write a program that calculates the work done by a force acting on an object,
+    using the formula W = F*d, where W is the work, F is the applied force, and d
+    is the distance traveled by the object.
+
+
+    26. Write a program that calculates the n-th term of an arithmetic progression
+    given the value of the first term, the common difference (ratio), and the value
+    of n read from the user → an=1+(n-1)r
+
+
+    27. Write a program that reads the x and y position of two points in the Cartesian
+    plane, and calculates and displays its distance between them
+
+
+    28. Create a program that prompts the user for the radius of a sphere and calculates
+    and displays its volume.
+
+
+    29. Make a program that reads the resistance of two resistors and displays the
+    resulting resistance value when connected in series, adding the values, and in
+    parallel using the formula (R1 * R2) / (R1 + R2)
+
+
+    30. Make a program that reads a value of a product and the tax (in percentage),
+    and calculates the final value of it.
+
+
+    Conditionals'
+  merge: -1
+  pgno: 144
+- img_proc: true
+  md: '31. Make a program that asks for a person''s age and displays whether they
+    are of legal age or not (age >= 18).
+
+
+    32. Write a program that reads a number and reports whether it is odd or even.
+
+
+    33. Write a program that reads a number and reports whether it is positive, negative
+    or zero.
+
+
+    34. Create a program that reads three numbers and checks if their sum is positive,
+    negative or equal to zero
+
+
+    35. Write a program that reads two numbers and tells you which one is bigger.
+
+
+    36. Write a program that asks the user for three numbers and displays the largest
+    one.
+
+
+    37. Make a program that reads three numbers, and informs if their sum is divisible
+    by 5 or not.
+
+
+    38. Make a program that asks for an integer and checks if it is divisible by 3
+    and 5 at the same time.
+
+
+    39. Make a program that asks for two numbers and displays if the first is divisible
+    by the second
+
+
+    40. Make a program that reads the scores of two tests and reports whether the
+    student passed (score greater than or equal to 6) or failed (score less than 6)
+    in each of the tests.
+
+
+    41. Make a program that reads the grades of two tests, calculates the simple arithmetic
+    mean, and informs whether the student passed (average greater than or equal to
+    6) or failed (average less than 6).
+
+
+    42. Make a program that reads the age of three people and how many of them are
+    of legal age (age 18 or older).
+
+
+    43. Make a program that reads three numbers, and displays them on the screen in
+    ascending order.
+
+
+    44. Write a program that reads three numbers and tells you if they can be the
+    sides of a triangle (the sum of two sides must always be greater than the third
+    side).
+
+
+    45. Make a program that reads the year of birth of a person and informs if he
+    is able to vote (age greater than'
+  merge: -1
+  pgno: 145
+- img_proc: true
+  md: 'equal to 16 years old.
+
+
+    +   46. Create a program that asks for a person''s age and displays whether they
+    are a child (0-12 years old), teenager (13-17 years old), adult (18-59 years old),
+    or elderly (60 years old or older), using nested conditionals, without using logical
+    operators.
+
+
+    +   47. Create a program that asks for a person''s age and displays whether they
+    are a child (0-12 years old), teenager (13-17 years old), adult (18-59 years old),
+    or elderly (60 years old or older), using logical operators, without using else,
+    elif,
+
+
+    +   48. Make a program that reads a person''s age and informs if he is not able
+    to vote (age less than 16 years old), if he is able to vote but is not obligated
+    (16, 17 years old, or age equal to or greater than 70 years), or if it is obligatory
+    (18 to 69 years old).
+
+
+    +   49. Make a program that reads three grades from a student and reports whether
+    he passed (final grade greater than or equal to 7), failed (final grade less than
+    4) or was in recovery (final grade between 4 and 7).
+
+
+    +   50. Write a program that asks for a person''s height and weight and calculates
+    their body mass index (BMI), displaying the corresponding category (underweight,
+    normal weight, overweight, obese, severely obese).
+
+
+    +   51. Write a program that asks the user to enter their grade (0-100) and prints
+    their letter grade (A for 90-100, B for 80-89, C for 70-79, D for 60-69, F for
+    under 60).
+
+
+    +   52. Write a program that reads the values a, b and c of a quadratic equation,
+    and says if the roots of the function are real or imaginary.
+
+
+    +   53. Create a program that reads the price of a product. If the price is more
+    than US$200, the tax is 5%, if it is more than US$500, the tax is 7.5%. Products
+    up to US$200 do not pay taxes. Print the final price of the'
+  merge: -1
+  pgno: 146
+- img_proc: true
+  md: 'product on the screen.
+
+
+    54. Write a program that reads a year (a four digit number) and checks whether
+    it is a leap year or not.
+
+
+    55. Input three numbers representing the coefficients of a quadratic equation
+    (a, b, c) and find its roots, also mention if they are real or complex
+
+
+    # Repeat Loops
+
+
+    56. Write a program that displays the numbers 1 through 10 using a while loop.
+
+
+    57. Write a program that displays the numbers 1 through 10 using a for loop.
+
+
+    58. Write a program that displays all numbers from 1 to 100, using a while loop.
+
+
+    59. Write a program that displays all numbers from 1 to 100, using a for loop.
+
+
+    60. Write a program that displays all numbers from 1 to 100, using a do-while
+    loop.
+
+
+    61. Write a program that prints all even numbers from 1 to 100 using a while loop
+    and an if statement inside the loop to check if the number is even or not.
+
+
+    62. Write a program that prints all even numbers from 1 to 100 using a while loop
+    without using any if statement.
+
+
+    63. Write a program that displays even numbers 1 to 50 and odd numbers 51 to 100
+    using a repeating loop.
+
+
+    64. Create a program that prompts the user for a number and displays the table
+    of that number using a loop.
+
+
+    65. Create a program that displays the table of all numbers from 1 to 10.
+
+
+    66. Write a program that calculates and displays the value of the power of a number
+    entered by the user raised to an exponent also entered by the user, using repetition
+    loops.'
+  merge: -1
+  pgno: 147
+- img_proc: true
+  md: '67. Create a program that displays the first N first perfect squares, where
+    N is informed by the user, using a loop.
+
+
+    68. Write a program that asks the user for a number N and says whether it is prime
+    or not.
+
+
+    69. Write a program that prompts the user for a number N and displays all prime
+    numbers less than N.
+
+
+    70. Create a program that displays the first N prime numbers, where N is informed
+    by the user, using a loop.
+
+
+    71. Write a program that prompts the user for two numbers A and B and displays
+    all numbers between A and B.
+
+
+    72. Write a program that reads numbers from the user until a negative number is
+    entered, and prints the sum of the positive numbers.
+
+
+    73. Write a program that asks the user for a number N and displays the sum of
+    all numbers from 1 to N.
+
+
+    74. Write a program that calculates and displays the sum of even numbers from
+    1 to 100 using a repeating loop.
+
+
+    75. Write a program that prompts the user for a number and displays the Fibonacci
+    sequence up to the given number using a repeating loop.
+
+
+    76. Write a program that reads numbers from the user until zero is entered, and
+    displays the average of the numbers entered.
+
+
+    77. Write a program that prompts the user for a list of numbers, until the user
+    types the number zero, and displays the largest and smallest numbers in the list.
+
+
+    78. Write a program that prompts the user for a number and displays its divisors.'
+  merge: -1
+  pgno: 148
+- img_proc: true
+  md: '79. Write a program that determines the greatest common divisor (GCD) between
+    two numbers entered by the user.
+
+
+    80. Write a program that determines the lowest common multiple (LCM) between two
+    numbers entered by the user.
+
+
+    81. Write a program that calculates the series below up to the tenth element:
+
+
+    82. Rewrite the previous exercise code until the difference between the terms
+    is less than 0.001.
+
+
+    83. Make a program that calculates the value of sine using the Taylor series according
+    to the equation below until the difference between the terms is less than 0.001.
+
+
+    84. Make a program that calculates the value of cosine using the Taylor series
+    according to the equation below until the difference between the terms is less
+    than 0.001.
+
+
+    85. Write a program that displays the sine and cosine value of all numbers from
+    0 to 6.3, with a step of 0.1, using Taylor series to calculate the respective
+    sines and cosines.
+
+
+    Arrays
+
+
+    86. Write a program that reads an array of integers and displays the elements
+    in reverse order.
+
+
+    87. Create a program that reads an array of integers and displays the sum of all
+    the elements.
+
+
+    88. Write a program that reads an array of integers and displays the average of
+    the elements.
+
+
+    89. Write a program that reads an array of integers and displays the largest element
+    in the array.
+
+
+    90. Create a program that reads two vectors of integers of the same size and displays
+    a new vector with the sum of the corresponding elements of the two vectors.'
+  merge: -1
+  pgno: 149
+- img_proc: true
+  md: '+   91. Write a program that reads two arrays of integers with the same size
+    and displays a new array with the elements resulting from the multiplication of
+    the corresponding elements of the two arrays.
+
+
+    +   92. Write a program that reads an array of integers and displays how many
+    times a specific number appears in the array.
+
+
+    +   93. Write a program that reads an array of integers and checks if they are
+    in ascending order.
+
+
+    +   94. Create a program that reads an array of integers and finds the second
+    largest element in the array.
+
+
+    +   95. Given an array, find the kth largest and smallest element in it.
+
+
+    +   96. Write a program that checks if an array contains duplicate elements.
+
+
+    +   97. Given an array of size n, find an element that appears more than n/2 times.
+    (This element is called the majority element.)
+
+
+    +   98. Create a program that reads an array of integers and checks if all elements
+    are even.
+
+
+    +   99. Write a program that checks if an array contains triplicate elements.
+
+
+    +   100. Given an array of random numbers, push all the zero''s of the array to
+    the end without changing the order of non-zero elements.
+
+
+    +   101. Given an unsorted array of integers, find the length of the longest consecutive
+    sequence.
+
+
+    +   102. Given an array of integers, find all pairs in the array that sum up to
+    a specified value.
+
+
+    +   103. Make an algorithm that reads an array of n positions, and then creates
+    a new vector that calculates the difference of each element with the next element.
+
+
+    +   104. Given an array of integers, find the subarray of given length with the
+    least average.'
+  merge: -1
+  pgno: 150
+- img_proc: true
+  md: '105. Given two sorted arrays, merge them into a single sorted array.
+
+
+    Strings
+
+
+    106. Create a program that reads two words and concatenates them, displaying the
+    resulting word.
+
+
+    107. Write a program that takes a word and displays each letter separately.
+
+
+    108. Create a program that takes a sentence and replaces all the letters "a" with
+    "e".
+
+
+    109. Create a program that takes a sentence and replaces all spaces with a new
+    line.
+
+
+    110. Write a program that receives a name and checks that it starts with the letter
+    "A".
+
+
+    111. Write a program that reads a word and checks if it is a palindrome (if it
+    can be read backwards the same way).
+
+
+    112. Create a program that reads two words and checks if the second word is an
+    anagram of the first.
+
+
+    113. Write a program that takes a full name and displays only the first name.
+
+
+    114. Make a program that receives a sentence and displays the amount of blank
+    spaces present in it.
+
+
+    115. Create a program that reads a word and displays the number of vowels present
+    in it.
+
+
+    116. Create a program that reads a word and displays the number of vowels and
+    consonants present in it.
+
+
+    117. Write a program that takes a full name and displays the last name (last name)
+    first.
+
+
+    118. Implement a method to perform basic string compression using the counts of
+    repeated characters. For instance, the string aabccccaaaa would become a2b1c5a3.
+
+
+    119. Rawwords: Write an algorithm that checks whether a word is a "rawword". A
+    word is considered a "prime word" if the sum of the letter values (where ''a''
+    = 1, ''b'' = 2, etc.) is a prime number.'
+  merge: -1
+  pgno: 151
+- img_proc: true
+  md: '+   120. Given a list of strings, write a function to determine the longest
+    common prefix.
+
+
+    +   121. Write a program that fills a 3x3 matrix with values entered by the user
+    and displays the sum of the main diagonal values.
+
+
+    +   122. Write a program that fills a 4x4 matrix with random values and displays
+    the transposed matrix.
+
+
+    +   123. Write a program that fills a 5x5 matrix with integers and displays the
+    largest value in the matrix and its position.
+
+
+    +   124. Count negative numbers in a matrix
+
+
+    +   125. Write a program that reads a 3x3 matrix and calculates the average of
+    the values present in the even positions (sum of the even indices) of the matrix.
+
+
+    +   126. Calculate the sum of boundary elements of a matrix.
+
+
+    +   127. Write a program that reads a 4x4 matrix and checks if it is a diagonal
+    matrix, that is, if all elements outside the main diagonal are equal to zero.
+
+
+    +   128. Write a program to determine whether a given matrix is symmetric.
+
+
+    +   129. Write a program that fills a 4x4 matrix with random numbers and displays
+    the sum of the values present in each row and in each column.
+
+
+    +   130. Write a program that reads a 3x3 matrix and calculates the determinant
+    of the matrix.
+
+
+    +   131. Write a program that reads two 2x2 matrices and displays the sum of the
+    two matrices.
+
+
+    +   132. Write a program that reads two matrices and returns the multiplication
+    between them as an answer.'
+  merge: -1
+  pgno: 152
+- img_proc: true
+  md: 'The program should observe whether or not it is possible to perform the multiplication
+    between the two matrices.
+
+
+    133. Print a matrix in spiral order.
+
+
+    134. Write a program that reads an m x n matrix, indicating the location where
+    there are mines in a Minesweeper game (being 0 for a neutral field, and 1 for
+    locations where there would be mines), and the program should return a matrix
+    indicating, for each position, the number of mines in neighboring houses.
+
+
+    135. Make a function that receives a 3x3 matrix representing the game of tic-tac-toe,
+    and check if there is a winner, if there is a tie, or if the game is not over
+    yet
+
+
+    # Recursive Functions
+
+
+    136. Write a recursive function to calculate the factorial of a number.
+
+
+    137. Implement a recursive function to calculate the Fibonacci sequence up to
+    a given number.
+
+
+    138. Create a recursive function to check if a number is prime.
+
+
+    139. Develop a recursive function to calculate the sum of the digits of an integer.
+
+
+    140. Write a recursive function to calculate the power of an integer raised to
+    an exponent.
+
+
+    141. Implement a recursive function to find the greatest common divisor (GCD)
+    of two numbers.
+
+
+    142. Create a recursive function to reverse a string.
+
+
+    143. Develop a recursive function to find the smallest value in an array.
+
+
+    144. Write a recursive function to determine whether a word is a palindrome.
+
+
+    145. Implement a recursive function to calculate the sum of elements of an array.'
+  merge: -1
+  pgno: 153
+- img_proc: true
+  md: '# Regular Expressions
+
+
+    +   146. Write a regex to validate email addresses, ensuring it contains @ and
+    . symbols.
+
+
+    +   147. Extract all valid dates from a string in the format YYYY-MM-DD or DD/MM/YYYY.
+
+
+    +   148. Check if a given string is a valid credit number (typically 16 digits,
+    sometimes separated by - or spaces).
+
+
+    +   149. Validate passwords to ensure they contain at least one uppercase character,
+    one lowercase character, one digit, one special character, and are at 8 characters
+    long.
+
+
+    +   150. Replace multiple spaces in a text with a single space.
+
+
+    +   151. Validate and extract currency values from a text (e.g., $100.25).
+
+
+    +   152. Write a regex to extract all URLs from a text.
+
+
+    +   153. Extract all hex color codes from a text (e.g., #AABBCC or #ABC).
+
+
+    +   154. Extract all valid IPv4 addresses from a text.
+
+
+    +   155. Use capture groups to rearrange date formats (convert YYYY-MM-DD to DD-MM-YYYY).
+
+
+    # Sorting Algorithms
+
+
+    +   156. Implement the Bubble Sort algorithm
+
+
+    +   157. Implement the Selection Sort algorithm
+
+
+    +   158. Implement the Insertion Sort algorithm
+
+
+    +   159. Implement the Merge Sort algorithm
+
+
+    +   160. Implement the Quick Sort algorithm'
+  merge: -1
+  pgno: 154
+- img_proc: true
+  md: '# # Additional Content
+
+
+    In case you want to access the code of all the exercises, you can get it from
+    the link below:
+
+
+    https://forms.gle/cY9kuJou8JkgG84NaA
+
+
+    Each file is named with the exercise number, with the extension .js'
+  merge: -1
+  pgno: 155
+- img_proc: true
+  md: '# About the Author
+
+
+    ![](img/9b59729086d747ad179b3f4d056b4831_156_0.png)
+
+
+    Ruhan Avila da Conceição (@ruhanconceicao, on social media) holds a degree in
+    Computer Engineering (2015) from the Federal University of Pelotas and a Master''s
+    in Computing (2016) also from the same university. Since 2018 he has been a professor
+    at the Federal Institute of Education, Science and Technology in the field of
+    Informatics, where he teaches, among others, the disciplines of Object Oriented
+    Programming, Visual Programming and Mobile Device Programming.
+
+
+    In 2014, even as an undergraduate student, Ruhan received the title of Researcher
+    from Rio Grande do Sul in the Young Innovator category due to his academic and
+    scientific career during his years at the university. His research topic has always
+    been related to the algorithmic development of efficient solutions for encoding
+    videos in real time. Still with regard to scientific research, Ruhan accumulates
+    dozens of works published'
+  merge: -1
+  pgno: 156
+- img_proc: true
+  md: 'in national and international congresses, as well as articles in scientific
+    journals of great relevance, and two computer programs registered at the National
+    Institute of Intellectual Property.
+
+
+    Initiated in programming in the C language, Ruhan Conceição has extensive knowledge
+    in JavaScript languages, as well as its libraries and frameworks ReactJS, React
+    Native, NextJS; and Java. In addition, the author has also developed projects
+    in Python, C#, Matlab, GoogleScript and C++.
+
+
+    # Mastering Python
+
+
+    ![](img/9b59729086d747ad179b3f4d056b4831_157_0.png)
+
+
+    Mastering Python: 100+ Solved and Commented Exercises to Accelerate Your Learning
+
+
+    https://a.co/d/bGRbAoE'
+  merge: -1
+  pgno: 157
+- img_proc: true
+  md: '# Mastering Java
+
+
+    ![](img/9b59729086d747ad179b3f4d056b4831_158_0.png)
+
+
+    Mastering Java: 100+ Solved and Commented Exercises to Accelerate Your Learning
+
+
+    https://a.co/d/0w0Hcs2'
+  merge: -1
+  pgno: 158
+- img_proc: true
+  md: '# Practice C++
+
+
+    ![](img/9b59729086d747ad179b3f4d056b4831_159_0.png)
+
+
+    Practice C++: 160 Solved Exercises to Accelerate Your Learning
+
+
+    https://a.co/d/9kraN51'
+  merge: -1
+  pgno: 159
