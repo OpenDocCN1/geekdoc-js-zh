@@ -1125,6 +1125,7 @@
 +   [务实程序员系列：Ruby 的多个面； Stuart Halloway Justin Gehtland；Java 开发者的 Rails 指南；务实程序员 2007](docs/pragmatic-programmers-facets-of-ruby-series-stuart-halloway-/README.md)
 +   [JavaScript 面试准备：基础知识：技术问题与答案 (你的技术面试)](docs/preparing-for-your-javascript-interview-the-basics-technical/README.md)
 +   [Android Web Apps 高级指南：使用 HTML5、CSS3 和 Javascript 开发 Android 应用](docs/pro-android-web-apps-develop-for-android-using-html5-css3-ja/README.md)
++   [JavaScript 高级指南](docs/pro-javascript-development/README.md)
 +   [JavaScript 性能高级指南](docs/pro-javascript-performance/README.md)
 +   [AngularJS 高级指南](docs/professional-angularjs/README.md)
 +   [JavaScript 高级指南：Web 开发人员 · 第 3 版](docs/professional-javascript-for-web-developers-3rd-edition/README.md)
