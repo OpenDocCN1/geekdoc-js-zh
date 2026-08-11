@@ -1128,6 +1128,7 @@
 +   [JavaScript 高级指南](docs/pro-javascript-development/README.md)
 +   [JavaScript 性能高级指南](docs/pro-javascript-performance/README.md)
 +   [Adobe Flex 3 高级指南（包含索引）- 程序员到程序员](docs/professional-adobe-flex-3-includes-index---wrox-programmer-t/README.md)
++   [Ajax 高级指南，第 2 版（程序员程序员程序员）](docs/professional-ajax-2nd-edition-programmer-to-programmer/README.md)
 +   [Ajax 高级指南](docs/professional-ajax-programmer-to-programmer/README.md)
 +   [AngularJS 高级指南](docs/professional-angularjs/README.md)
 +   [JavaScript 高级指南：Web 开发人员 · 第 3 版](docs/professional-javascript-for-web-developers-3rd-edition/README.md)
