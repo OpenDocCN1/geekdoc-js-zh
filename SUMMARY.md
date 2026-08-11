@@ -1125,6 +1125,7 @@
 +   [务实程序员系列：Ruby 的多个面； Stuart Halloway Justin Gehtland；Java 开发者的 Rails 指南；务实程序员 2007](docs/pragmatic-programmers-facets-of-ruby-series-stuart-halloway-/README.md)
 +   [JavaScript 面试准备：基础知识：技术问题与答案 (你的技术面试)](docs/preparing-for-your-javascript-interview-the-basics-technical/README.md)
 +   [Android Web Apps 高级指南：使用 HTML5、CSS3 和 Javascript 开发 Android 应用](docs/pro-android-web-apps-develop-for-android-using-html5-css3-ja/README.md)
++   [iOS Web 设计与开发高级指南：Safari 下的 HTML5、CSS3 和 JavaScript](docs/pro-ios-web-design-and-development-html5-css3-and-javascript/README.md)
 +   [JavaScript 高级指南](docs/pro-javascript-development/README.md)
 +   [JavaScript 性能高级指南](docs/pro-javascript-performance/README.md)
 +   [Adobe Flex 3 高级指南（包含索引）- 程序员到程序员](docs/professional-adobe-flex-3-includes-index---wrox-programmer-t/README.md)
