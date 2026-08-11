@@ -1132,6 +1132,7 @@
 +   [Ajax 高级指南，第 2 版（程序员程序员程序员）](docs/professional-ajax-2nd-edition-programmer-to-programmer/README.md)
 +   [Ajax 高级指南](docs/professional-ajax-programmer-to-programmer/README.md)
 +   [AngularJS 高级指南](docs/professional-angularjs/README.md)
++   [CSS 高级指南：Web 设计级级样式表](docs/professional-css-cascading-style-sheets-for-web-design/README.md)
 +   [JavaScript 高级指南：Web 开发人员 · 第 3 版](docs/professional-javascript-for-web-developers-3rd-edition/README.md)
 +   [Web 开发人员 JavaScript 高级指南，第 5 版](docs/professional-javascript-for-web-developers-5th-edition/README.md)
 +   [Web 开发人员 JavaScript 高级指南，第三版](docs/professional-javascript-for-web-developers-third-edition/README.md)
