@@ -1127,6 +1127,7 @@
 +   [Android Web Apps 高级指南：使用 HTML5、CSS3 和 Javascript 开发 Android 应用](docs/pro-android-web-apps-develop-for-android-using-html5-css3-ja/README.md)
 +   [JavaScript 高级指南](docs/pro-javascript-development/README.md)
 +   [JavaScript 性能高级指南](docs/pro-javascript-performance/README.md)
++   [Ajax 高级指南](docs/professional-ajax-programmer-to-programmer/README.md)
 +   [AngularJS 高级指南](docs/professional-angularjs/README.md)
 +   [JavaScript 高级指南：Web 开发人员 · 第 3 版](docs/professional-javascript-for-web-developers-3rd-edition/README.md)
 +   [Web 开发人员 JavaScript 高级指南，第 5 版](docs/professional-javascript-for-web-developers-5th-edition/README.md)
