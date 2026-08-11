@@ -1,0 +1,591 @@
+- img_proc: true
+  md: '# Prototype JavaScript Library 1.5.0
+
+
+    # Utility
+
+
+    # String
+
+
+    # Enumerable
+
+
+    # Ajax (singleton)
+
+
+    # Element
+
+
+    # Form
+
+
+    $($ {sel, ...)
+
+
+    interpret(value)
+
+
+    Handles enumeration
+
+
+    XMLHttpRequest Interface
+
+
+    Extends DOM nodes via $ and $() (if executed as Singleton, element is the first
+    argument)
+
+
+    Extends DOM nodes via $ and $() (if executed as Singleton, element is the first
+    argument)
+
+
+    each more element ID D and elements moves in elements
+
+
+    gsub(pattern, value)
+
+
+    each(Slice, n)
+
+
+    get()
+
+
+    reset(frm)
+
+
+    serializeElement(els)
+
+
+    $$$Selectors(s, s..)
+
+
+    sub(pattern, t, len)
+
+
+    active()
+
+
+    activeRequestCount
+
+
+    getElement()
+
+
+    getElementsBy()
+
+
+    find elements using CSS selectors
+
+
+    scar(pattern, value)
+
+
+    all()
+
+
+    visible()
+
+
+    toggle()
+
+
+    hide()
+
+
+    Array wrap with Array
+
+
+    length(str, len)
+
+
+    collect()
+
+
+    show()
+
+
+    update(html)
+
+
+    replace(html)
+
+
+    Array wrap with Hash
+
+
+    strip()
+
+
+    find()
+
+
+    remove()
+
+
+    focus()
+
+
+    val()
+
+
+    $($ {sel)
+
+
+    bandSize()
+
+
+    getPattern()
+
+
+    register()
+
+
+    updateName()
+
+
+    getInput(type s, name)
+
+
+    wrap()
+
+
+    extractScripts()
+
+
+    getPattern()
+
+
+    unregister()
+
+
+    empty()
+
+
+    findFirst()
+
+
+    Try { ... } catch
+
+
+    escapeHTML()
+
+
+    groupPattern()
+
+
+    dispatch(ev, request, transport, json)
+
+
+    normalizeCollection()
+
+
+    focus()
+
+
+    If fails after function
+
+
+    toQuery()
+
+
+    inject()
+
+
+    Ajax Request extends Base
+
+
+    ancestor()
+
+
+    disabled() can only be called from String
+
+
+    $($
+
+
+    separator(separator)
+
+
+    method(value)
+
+
+    Process an Ajax request
+
+
+    descendant()
+
+
+    serialize()
+
+
+    - Form Element
+
+
+    slice(start)
+
+
+    max()
+
+
+    initialize(list, options to)
+
+
+    immediateSiblingDescendants()
+
+
+    clear()
+
+
+    get(value)
+
+
+    camelCase
+
+
+    partition()
+
+
+    success()
+
+
+    previousSiblings
+
+
+    getValue()
+
+
+    getSelector
+
+
+    underscore
+
+
+    reject()
+
+
+    getHeader()
+
+
+    nextSibling()
+
+
+    get()
+
+
+    find elements using
+
+
+    desherize()
+
+
+    toArray()
+
+
+    expression()
+
+
+    up()
+
+
+    clear()
+
+
+    ScriptFragment
+
+
+    requestive()
+
+
+    property()
+
+
+    next(index)
+
+
+    parent()
+
+
+    val()
+
+
+    Class
+
+
+    inspect(value)
+
+
+    toJSON()
+
+
+    Ajax.Updater extends Base
+
+
+    index()
+
+
+    get()
+
+
+    enable object to initialize method
+
+
+    jQuery()
+
+
+    Update a page via ajax
+
+
+    getAttribute()
+
+
+    disabled()
+
+
+    Object
+
+
+    map()
+
+
+    initialize(list, options to)
+
+
+    className()
+
+
+    enable()
+
+
+    extend (dest, str or obj)
+
+
+    filter()
+
+
+    addClassName()
+
+
+    addClass()
+
+
+    disabled()
+
+
+    values()
+
+
+    clone()
+
+
+    remove()
+
+
+    getVal()
+
+
+    disable()
+
+
+    Function
+
+
+    bind()
+
+
+    stop()
+
+
+    toggle()
+
+
+    disabled()
+
+
+    bind
+
+
+    addEventListener()
+
+
+    Ajax.PeriodicUpdater Base
+
+
+    show()
+
+
+    disabled()
+
+
+    # Selector
+
+
+    find()
+
+
+    Repeatedly update elements via Ajax
+
+
+    find()
+
+
+    Select elements with CSS selectors
+
+
+    initialize(list, options to)
+
+
+    initialize(el, n)
+
+
+    inspect()
+
+
+    findElements(el, elements, expressions)
+
+
+    PeriodicUpdater
+
+
+    stop()
+
+
+    toEach()
+
+
+    matches(el, expressions)
+
+
+    # Event
+
+
+    find()
+
+
+    stop()
+
+
+    Reset default browser event handler
+
+
+    element(ev)
+
+
+    isLeftClick(ev)
+
+
+    pointer(ev)
+
+
+    Event
+
+
+    stop()
+
+
+    findElement(ev, target, args)
+
+
+    element(ev, target, f, usebubble)
+
+
+    stopObserver()
+
+
+    Form Element
+
+
+    Abstract.Observer
+
+
+    initialize(el, f)
+
+
+    Form.Element.Observer
+
+
+    Abstract.TimedObserver
+
+
+    initialize(el, f, n)
+
+
+    getValue()
+
+
+    # Legend
+
+
+    s = boolean
+
+
+    c = number
+
+
+    a = [optional]
+
+
+    n = element
+
+
+    r = pattern
+
+
+    f = function (callback)
+
+
+    Array extends Array
+
+
+    default Array object
+
+
+    # ElementClassNames
+
+
+    Handle class names
+
+
+    set(className, a)
+
+
+    addClass()
+
+
+    removeClass()
+
+
+    toggle()
+
+
+    toArray = clone
+
+
+    # Template
+
+
+    initialize(template, p)
+
+
+    evaluate(obj)
+
+
+    A numeric range
+
+
+    initialize(n, start, n, b) absolute(n)
+
+
+    range
+
+
+    # Object Range
+
+
+    Extends Object
+
+
+    * **'
+  merge: -1
+  pgno: 0

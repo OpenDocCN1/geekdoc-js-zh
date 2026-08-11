@@ -1138,6 +1138,7 @@
 +   [JavaScript 高级指南：Web 开发人员 · 第 3 版](docs/professional-javascript-for-web-developers-3rd-edition/README.md)
 +   [Web 开发人员 JavaScript 高级指南，第 5 版](docs/professional-javascript-for-web-developers-5th-edition/README.md)
 +   [Web 开发人员 JavaScript 高级指南，第三版](docs/professional-javascript-for-web-developers-third-edition/README.md)
++   [JavaScript 专业框架高级指南：Prototype、YUI、Ext JS、Dojo 和 MooTools](docs/professional-javascript-frameworks-prototype-yui-ext-js-dojo/README.md)
 +   [WebGL 高级编程指南](docs/professional-webgl-programming/README.md)
 +   [C++ 编程：初学者编程：编程语言指南：一天内学会！（C++, Javascript, PHP, Python, Sql, HTML, Swift）](docs/programming-c-programming-programming-language-for-beginners/README.md)
 +   [编程与编码：IoT 开发、Java、Java EE、Java Swing、JavaScript、jQuery、JSON、Julia 编程、Junit、内核、Kotlin、Laravel、Laravel 框架、LaTeX、LibGDX、LINQ 与 Linux](docs/programming-coding-iot-development-java-java-ee-java-swing-j/README.md)
