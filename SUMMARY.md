@@ -1143,6 +1143,7 @@
 +   [Web 开发人员 JavaScript 高级指南，第三版](docs/professional-javascript-for-web-developers-third-edition/README.md)
 +   [Web 开发人员 JavaScript 高级指南](docs/professional-javascript-for-web-developers-wrox-professional/README.md)
 +   [JavaScript 专业框架高级指南：Prototype、YUI、Ext JS、Dojo 和 MooTools](docs/professional-javascript-frameworks-prototype-yui-ext-js-dojo/README.md)
++   [jQuery 高级指南](docs/professional-jquery/README.md)
 +   [jQuery 高级指南](docs/professional-jquerytm/README.md)
 +   [WebGL 高级编程指南](docs/professional-webgl-programming/README.md)
 +   [C++ 编程：初学者编程：编程语言指南：一天内学会！（C++, Javascript, PHP, Python, Sql, HTML, Swift）](docs/programming-c-programming-programming-language-for-beginners/README.md)
