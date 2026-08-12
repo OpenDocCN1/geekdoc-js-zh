@@ -1158,6 +1158,7 @@
 +   [JavaScript 和 jQuery 专业 XMPP 编程指南 (Wrox 程序员到程序员)](docs/professional-xmpp-programming-with-javascript-and-jquerywrox/README.md)
 +   [Frisby教授的函数式编程入门指南](docs/professor-frisbys-mostly-adequate-guide-to-functional-progra/README.md)
 +   [程序员到程序员：Adobe Air 创建、修改与复用指南](docs/programmer-to-programmer-marc-leuchner-todd-anderson-matt-wr/README.md)
++   [Windows 8 编程：使用 HTML、CSS 和 JavaScript 开发应用](docs/programmiing-wwindows-8-apps-with-html-css-and-javascript/README.md)
 +   [Java 编程与问题解决指南](docs/programming-and-problem-solving-with-java/README.md)
 +   [C++ 编程：初学者编程：编程语言指南：一天内学会！（C++, Javascript, PHP, Python, Sql, HTML, Swift）](docs/programming-c-programming-programming-language-for-beginners/README.md)
 +   [编程与编码：IoT 开发、Java、Java EE、Java Swing、JavaScript、jQuery、JSON、Julia 编程、Junit、内核、Kotlin、Laravel、Laravel 框架、LaTeX、LibGDX、LINQ 与 Linux](docs/programming-coding-iot-development-java-java-ee-java-swing-j/README.md)
