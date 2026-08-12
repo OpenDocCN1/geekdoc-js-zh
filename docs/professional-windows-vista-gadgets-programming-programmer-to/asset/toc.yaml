@@ -1,0 +1,294 @@
+- - '#'
+  - Windows Vista Gadgets 高级编程指南 (程序员到程序员)
+- - '#'
+  - 关于作者
+- - '#'
+  - 制作人员
+- - '#'
+  - 致谢
+- - '#'
+  - 引言
+- - '##'
+  - 本书内容
+- - '##'
+  - 本书的结构
+- - '##'
+  - 使用本书所需的准备工作
+- - '##'
+  - 惯例
+- - '##'
+  - 源代码
+- - '##'
+  - 什么是 Windows 侧栏？
+- - '#'
+  - 第一章：Windows 侧栏简介
+- - '###'
+  - Windows 侧栏、Apple Dashboard 和 Yahoo! Konfabulator
+- - '##'
+  - 使用侧栏
+- - '##'
+  - 启动侧栏
+- - '##'
+  - 定制化侧栏
+- - '##'
+  - 隐藏侧栏
+- - '##'
+  - 侧栏小工具
+- - '###'
+  - 理解小工具
+- - '##'
+  - 多功能表(D) 1.24
+- - '##'
+  - 运行小组件的多个实例
+- - '##'
+  - 侧边栏小组件不是持久的
+- - '##'
+  - 总结
+- - '##'
+  - 侧边栏部件存储在哪里？
+- - '##'
+  - 你的第一个侧边栏小部件：微软虚拟地球
+- - '###'
+  - 使用虚拟地图控件
+- - '###'
+  - 创建小部件的主 UI
+- - '#'
+  - 第二章：编写 Windows 侧边栏小部件
+- - '###'
+  - 创建小部件的主 UI
+- - '#'
+  - 第一部分：侧边栏小部件
+- - '##'
+  - 增强小部件
+- - '##'
+  - 固定和取消固定侧边栏小部件
+- - '##'
+  - 小部件选项
+- - '#'
+  - 第二章：编程 Windows 边栏小部件
+- - '#'
+  - 浮层 (Flyout)
+- - '##'
+  - 旧金山通行证
+- - '###'
+  - 整理小部件
+- - '###'
+  - VirtualEarth.html
+- - '##'
+  - Settings.js
+- - '##'
+  - Settings.js (continued)
+- - '##'
+  - PushPin.js
+- - '#'
+  - 分发你的侧边栏部件
+- - '##'
+  - 总结
+- - '#'
+  - 探索侧边栏部件 API
+- - '##'
+  - Settings
+- - '##'
+  - Flyout
+- - '##'
+  - Events
+- - '##'
+  - Communication
+- - '##'
+  - 网络
+- - '##'
+  - 网络
+- - '##'
+  - System.Diagnostics.EventLog
+- - '##'
+  - 系统信息
+- - '##'
+  - System.Gadget.Settings.ClosingEvent
+- - '##'
+  - System.Gadget.Flyout
+- - '##'
+  - '列表 3-3: APIs-Gadout'
+- - '##'
+  - '列表 3-3: APIs-Flyout.html (续上)'
+- - '##'
+  - '列表 3-4: flyout.html'
+- - '##'
+  - System.Gadget.Settings
+- - '##'
+  - 邮件
+- - '##'
+  - System.MessageStore
+- - '##'
+  - System.MessageStoreFolder 和 System.MessageStoreMessage
+- - '##'
+  - 列表 3-6：APIs-Network.html
+- - '##'
+  - Shell
+- - '##'
+  - System.Shell.Item
+- - '##'
+  - System.Shell.Folder
+- - '##'
+  - System.Shell.RecycleBin
+- - '##'
+  - System.Time.TimeZone
+- - '##'
+  - 总结
+- - '#'
+  - 第三章：探索侧边栏部件 API
+- - '#'
+  - 第四章：增强侧边栏小组件
+- - '###'
+  - 使用 .NET Interop 与 .NET 代码交互
+- - '###'
+  - 创建 .NET 小部件适配器组件
+- - '##'
+  - 注册 Gadget Adapter
+- - '##'
+  - 列表 4-1：GadgetAdapter.cs
+- - '##'
+  - 列表 4-2：GadgetInterop.js
+- - '##'
+  - 列表 4-2：GadgetInterop（续）
+- - '##'
+  - 列表 4-2：GadgetInterop.js（续）
+- - '##'
+  - 创建你的 .NET 代码
+- - '##'
+  - 列表 4-3：Class1.cs (续)
+- - '##'
+  - 整合一切
+- - '##'
+  - 列表 4-4：gadget.xml
+- - '##'
+  - 列表 4-5：TestInterop.html
+- - '##'
+  - 列表 4-3：Class1.cs (续)
+- - '##'
+  - 列表 4-4：gadget.xml
+- - '##'
+  - 列表 4-5：TestInterop.html
+- - '##'
+  - 列表 4-4：gadget.xml
+- - '##'
+  - 列表 4-5：TestInterop.html
+- - '##'
+  - 列表 4-4：gadget.xml。
+- - '##'
+  - 列表 4-5：TestInterop.html
+- - '##'
+  - 列表 4-4：gadget.xml。
+- - '##'
+  - 列表 4-5：TestInterop.html
+- - '##'
+  - 发送图像
+- - '##'
+  - '列表 4-8: gadget.xml (zh-CN)'
+- - '##'
+  - '列表 4-9: SystemMonitor.html (zh-CN)'
+- - '##'
+  - 改进的本地化
+- - '##'
+  - 步骤 1：启动 Studio 2005命令行
+- - '##'
+  - 步骤2：创建 CAB 文件
+- - '##'
+  - 步骤 3：创建证书
+- - '##'
+  - 步骤 4：对 CAB 文件
+- - '##'
+  - 步骤 5：安装部件
+- - '##'
+  - 开发的技巧
+- - '##'
+  - 使用 Internet Explorer UI
+- - '##'
+  - 刷新你的小部件
+- - '##'
+  - 持久化设置
+- - '##'
+  - 地理追踪和标记小部件
+- - '##'
+  - 构建 GPS 追踪
+- - '##'
+  - 创建 .NET 组件
+- - '##'
+  - 修改 VirtualEarth 小部件
+- - '##'
+  - 添加弹出层（Flyout）
+- - '##'
+  - 列表 5-1：VirtualEarth.js
+- - '##'
+  - 列表 5-2：GeoTag.html
+- - '##'
+  - 列表 5-3：GeoTag.js
+- - '##'
+  - 列表 5-4：VirtualEarth.js
+- - '##'
+  - 列表 5-5：VirtualEarth.html
+- - '##'
+  - 列表 5-6：GeoTag.html
+- - '##'
+  - 列表 5-7：GeoTag.js
+- - '##'
+  - 列表 5-7：VirtualEarth.js
+- - '##'
+  - 列表 5-7：VirtualEarth.js（续）
+- - '#'
+  - 第六章：Windows SideShow 简介
+- - '##'
+  - 显示模块
+- - '##'
+  - 探索 SideShow 模拟器
+- - '##'
+  - SideShow 注册设置
+- - '##'
+  - SideShow 设备与用户交互
+- - '##'
+  - 离线和在线小部件
+- - '##'
+  - 需求
+- - '##'
+  - 编写 SideShow 小部件（gets）
+- - '##'
+  - 推送数据到 SideShow 设备
+- - '##'
+  - 聚合器
+- - '##'
+  - 显示图标
+- - '##'
+  - 下载 RSS
+- - '##'
+  - 在菜单中添加图像
+- - '##'
+  - 注册部件
+- - '##'
+  - 执行路径
+- - '##'
+  - 类型
+- - '#'
+  - 第十章：SideShow 项目
+- - '##'
+  - 监控 SideShow gadget
+- - '##'
+  - 创建摄像头服务器
+- - '##'
+  - 将视频保存为图像
+- - '##'
+  - 客户端与服务器之间的通信
+- - '##'
+  - 创建监控客户端
+- - '##'
+  - 测试客户端和服务器
+- - '##'
+  - 向 SideShow 设备发送通知
+- - '##'
+  - 表现良好的SideShow部件
+- - '##'
+  - 打包SideShow
+- - '##'
+  - 添加文件
+- - '##'
+  - 在程序菜单中创建快捷方式
+- - '##'
+  - 测试安装
