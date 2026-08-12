@@ -1152,6 +1152,7 @@
 +   [Web 2.0 编程高级指南 (Wrox 专业指南)](docs/professional-web-20-programming-wrox-professional-guides/README.md)
 +   [WebGL 高级编程指南](docs/professional-webgl-programming/README.md)
 +   [Windows Vista Gadgets 高级编程指南 (程序员到程序员)](docs/professional-windows-vista-gadgets-programming-programmer-to/README.md)
++   [JavaScript and jQuery 专业 XMPP 编程高级指南](docs/professional-xmpp-programming-with-javascript-and-jquery-wro/README.md)
 +   [C++ 编程：初学者编程：编程语言指南：一天内学会！（C++, Javascript, PHP, Python, Sql, HTML, Swift）](docs/programming-c-programming-programming-language-for-beginners/README.md)
 +   [编程与编码：IoT 开发、Java、Java EE、Java Swing、JavaScript、jQuery、JSON、Julia 编程、Junit、内核、Kotlin、Laravel、Laravel 框架、LaTeX、LibGDX、LINQ 与 Linux](docs/programming-coding-iot-development-java-java-ee-java-swing-j/README.md)
 +   [编程：初学者计算机编程指南：学习 HTML5、JavaScript 和 CSS 基础 - 第二版（编码、C 编程、Java 编程、网页设计、JavaScript、Python、HTML 和 CSS）](docs/programming-computer-programming-for-beginners-learn-the-bas/README.md)
