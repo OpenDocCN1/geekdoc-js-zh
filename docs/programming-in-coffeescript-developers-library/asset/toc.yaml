@@ -1,0 +1,486 @@
+- - '#'
+  - CoffeeScript 编程指南
+- - '#'
+  - 第一部分：CoffeeScript 核心
+- - '##'
+  - 致谢¹
+- - '##'
+  - 前言
+- - '##'
+  - 关于作者
+- - '##'
+  - 引言
+- - '#'
+  - 什么是 CoffeeScript？
+- - '#'
+  - 在 CoffeeScript 中编程
+- - '##'
+  - 前言
+- - '##'
+  - 这本书是给谁的？
+- - '##'
+  - 如何阅读这本书
+- - '##'
+  - 输出：(source:example.coffee)
+- - '##'
+  - '示例：(source: oops.coffee)'
+- - '##'
+  - '输出：(source: oops.coffee)'
+- - '##'
+  - 入门
+- - '##'
+  - CoffeeScript REPL
+- - '#'
+  - 第 1 章 入门
+- - '##'
+  - 执行 CoffeeScript 文件
+- - '##'
+  - 第二2 章 基础
+- - '##'
+  - 插值字符串
+- - '##'
+  - '示例：(source: string_interpolation_extra.coffee)'
+- - '##'
+  - '示例：(source: string_interpolation_extra.js)'
+- - '##'
+  - '输出：(source: string_interpolation_extra.coffee)'
+- - '##'
+  - 字面量字符串 (Literal Strings)
+- - '#'
+  - 第 2 章 基础
+- - '##'
+  - '示例：(source: literal_string_with_escapes.js)'
+- - '##'
+  - '输出：(source: literal_string_with_escapes.coffee)'
+- - '##'
+  - '示例：(source: literal_string_with_backslash.coffee)'
+- - '##'
+  - '示例：(source: literal_string_with_backslash.js)'
+- - '##'
+  - '输出：(source: literal_string_with_backslash.coffee)'
+- - '##'
+  - Heredocs (此处文档)
+- - '##'
+  - 结语
+- - '##'
+  - Note
+- - '#'
+  - '3'
+- - '#'
+  - 控制结构
+- - '##'
+  - 运算符与别名
+- - '##'
+  - 算术
+- - '##'
+  - 赋值
+- - '##'
+  - 运算符与别名
+- - '##'
+  - 比较
+- - '#'
+  - 第 3 章 控制结构
+- - '##'
+  - 字符串
+- - '##'
+  - 存在运算符
+- - '##'
+  - 运算符与别名
+- - '##'
+  - 别名
+- - '##'
+  - is 和 isnt 别名
+- - '##'
+  - not 别名 (The Alias)
+- - '##'
+  - and 和 or 别名 (The and and or Aliases)
+- - '##'
+  - 布尔值别名 (The Boolean Aliases)
+- - '##'
+  - '@ 别名 (The @ Alias)'
+- - '##'
+  - '示例：(source: at_alias.js)'
+- - '##'
+  - '输出：(source: at_alias.js)'
+- - '#'
+  - 第3章 控制结构
+- - '##'
+  - if/else 语句
+- - '##'
+  - unless 语句
+- - '##'
+  - 内联条件语句
+- - '##'
+  - Switch/Case 语句
+- - '##'
+  - 总结
+- - '##'
+  - Notes
+- - '##'
+  - 函数与参数
+- - '#'
+  - 第 4 章 函数与参数
+- - '##'
+  - 函数基础
+- - '##'
+  - 参数
+- - '##'
+  - 默认参数
+- - '##'
+  - '输出：(source: default_args.coffee)'
+- - '##'
+  - '示例：(source: default_args_referring.coffee)'
+- - '##'
+  - 剩余参数 (Splats)
+- - '##'
+  - 总结
+- - '##'
+  - 笔记
+- - '##'
+  - 集合与迭代
+- - '##'
+  - 数组
+- - '#'
+  - 第 5 章 集合与迭代
+- - '##'
+  - 交换赋值
+- - '##'
+  - 多重赋值作为解构赋值
+- - '##'
+  - '示例：(source: too_much_assignment.js)'
+- - '##'
+  - 范围
+- - '##'
+  - 切片数组
+- - '##'
+  - '示例：（source: slice_array1.coffee)'
+- - '##'
+  - '示例：（source: slice_array1.js)'
+- - '##'
+  - '输出：(source: slice_array1.coffee)'
+- - '##'
+  - '示例：（source: slice_array2.coffee)'
+- - '##'
+  - '示例：（source: slice_array2.js)'
+- - '##'
+  - 替换数组中的值
+- - '##'
+  - 注入值
+- - '##'
+  - 对象/哈希
+- - '##'
+  - 获取/设置属性
+- - '##'
+  - 解构赋值
+- - '##'
+  - '输出：(source: object_destructuring.coffee)'
+- - '##'
+  - 循环与迭代
+- - '##'
+  - 迭代数组
+- - '##'
+  - by 关键字
+- - '##'
+  - when 关键字
+- - '#'
+  - 第 5 章 集合迭代
+- - '##'
+  - 迭代对象
+- - '##'
+  - '输出：(source: Iterating_objects.coffee)'
+- - '##'
+  - by 关键字
+- - '##'
+  - when 关键字
+- - '##'
+  - own 关键字
+- - '##'
+  - while 循环
+- - '##'
+  - until 循环
+- - '##'
+  - 推导式 (Comprehensions)
+- - '##'
+  - do 关键字
+- - '##'
+  - 总结
+- - '#'
+  - 第 6 章 类
+- - '##'
+  - 构造函数
+- - '##'
+  - 类中的作用域
+- - '##'
+  - 类
+- - '##'
+  - 提示
+- - '##'
+  - 扩展类 141
+- - '##'
+  - '输出：（来源: manager2.coffee）'
+- - '##'
+  - '示例：（来源: manager3.coffee）'
+- - '##'
+  - 扩展类 143
+- - '##'
+  - 类级函数
+- - '##'
+  - 结语
+- - '#'
+  - Cake 与 Cakefiles
+- - '##'
+  - 入门
+- - '##'
+  - 创建 Cake 任务
+- - '##'
+  - 运行 Cake 任务
+- - '##'
+  - 使用选项 (Options)
+- - '###'
+  - 第 7 章 Cake 与 Cakefiles（等等，正继续）
+- - '##'
+  - 调用其他任务
+- - '##'
+  - 总结
+- - '##'
+  - 备注
+- - '#'
+  - 使用 Jasmine 进行测试
+- - '##'
+  - 安装 Jasmine
+- - '##'
+  - 设置 Jasmine
+- - '##'
+  - 设置 Jasmine 173
+- - '#'
+  - 第 8 章 使用 Jasmine 进行测试
+- - '##'
+  - Jasmine 简介
+- - '##'
+  - 单元测试 179
+- - '##'
+  - 之前
+- - '##'
+  - 之后
+- - '##'
+  - 之后
+- - '##'
+  - 自定义匹配器 (Custom Matchers)
+- - '#'
+  - Node.js 简介
+- - '##'
+  - 什么是 Node.js？
+- - '##'
+  - 安装 Node
+- - '##'
+  - 开始入门
+- - '#'
+  - 第 9 章 Node.js 简介
+- - '##'
+  - 构建一个 CoffeeScript 服务器
+- - '##'
+  - 构建 CoffeeScript 服务器（实现细节）
+- - '##'
+  - '示例：(source: server/server.coffee)'
+- - '##'
+  - 提示
+- - '##'
+  - 尝试服务器
+- - '##'
+  - 总结
+- - '##'
+  - 注意事项
+- - '##'
+  - 示例：待办列表（服务端）
+- - '##'
+  - 安装设置 Express
+- - '##'
+  - 'Setup Express.js:'
+- - '##'
+  - 为我们的首页路由：
+- - '##'
+  - 'Start server:'
+- - '##'
+  - 示例：待办列表（服务端）
+- - '##'
+  - 安装与设置 Express
+- - '##'
+  - 'Configure Express.js:'
+- - '##'
+  - 'Set up routing for our homepage:'
+- - '##'
+  - 示例：待办列表（服务端）
+- - '#'
+  - 第 10 章 使用 Mongoose 设置 MongoDB
+- - '##'
+  - 使用 Mongoose 设置 MongoDB (MongoDB)
+- - '##'
+  - 'Setup Express.js:'
+- - '##'
+  - 'Set up the Database:'
+- - '##'
+  - 'Set up routing for our homepage:'
+- - '##'
+  - 'Start server:'
+- - '##'
+  - 示例：待办列表部分 1（服务端）
+- - '##'
+  - 使用 Mongoose 进行查询
+- - '##'
+  - 查找所有待办事项
+- - '##'
+  - “控制器”将处理 Todo 资源的服务器
+- - '##'
+  - 获取待办列表：
+- - '##'
+  - 创建新的待办事项：
+- - '##'
+  - 获取待办事项：
+- - '##'
+  - 更新待办事项：
+- - '##'
+  - 删除待办事项：
+- - '##'
+  - '获取特定的 todo:'
+- - '##'
+  - '更新特定的 todo:'
+- - '##'
+  - '删除特定的 todo:'
+- - '##'
+  - 示例：Todo 列表部分 1（服务端）
+- - '##'
+  - 清理控制器
+- - '##'
+  - 示例：待办列表部分 1（服务端）
+- - '##'
+  - 总结
+- - '##'
+  - Note
+- - '##'
+  - '1'
+- - '##'
+  - Twitter Bootstrap 准备 HTML
+- - '##'
+  - 示例：待办列表部分 2（带 jQuery 的客户端）
+- - '##'
+  - 准备 HTML
+- - '##'
+  - 与 jQuery 交互
+- - '##'
+  - 将 jQuery 添加到我们的应用程序非常简单；我们只需要 index.ejs 文件引入它：
+- - '##'
+  - 接入新 Todo 表单
+- - '##'
+  - require_tree "jquery"
+- - '##'
+  - 处理新 Todo 表单中的按键：
+- - '##'
+  - 提示
+- - '##'
+  - 提示
+- - '##'
+  - 示例：Todo List 第二部分（使用 jQuery 客户端）
+- - '##'
+  - 挂载新的 Todo 表单
+- - '##'
+  - 示例：(source:app/4/assets/templates.coffee）
+- - '##'
+  - 更改 underscore.js 模板。
+- - '##'
+  - 现在的模式是 {{some_var}}而不是 <%= some_var %>
+- - '##'
+  - 示例：(source:app/4/jquery/todo_item.coffee）
+- - '##'
+  - 页面加载时初始化新的 Todo 表单：
+- - '##'
+  - 列出现 Todo
+- - '##'
+  - 更新 Todo
+- - '##'
+  - 监控 todo 的变化：
+- - '##'
+  - 如果在标题字段中按了“回车”：
+- - '##'
+  - 更新 todo：
+- - '##'
+  - 示例：待办列表 2（使用 jQuery 客户端实现）
+- - '##'
+  - 根据状态更新样式：
+- - '##'
+  - 更新待办事项：
+- - '##'
+  - 删除待办事项：
+- - '##'
+  - 示例：待办列表部分 3（使用 Backbone.js 的客户端）
+- - '##'
+  - 什么是 Backbone.js ？
+- - '##'
+  - 清理
+- - '##'
+  - require "templates"
+- - '##'
+  - 设置 Backbone.js
+- - '##'
+  - 编写我们的 Todo 模型和集合
+- - '##'
+  - 客户端的 Todo 模型
+- - '##'
+  - 命名空间位于 'todo' 查看 backbone_sync.js
+- - '##'
+  - 构建 url，如果存在则追加 _id：
+- - '##'
+  - Backbone 默认的 isNew 函数查找 'id'
+- - '##'
+  - Mongoose 返回的是 "_id"，因此我们需要相应地更新它：
+- - '##'
+  - 客户端的 Todos 集合
+- - '##'
+  - 示例：Todo列表 3（使用 Backbone.js 的客户端）
+- - '##'
+  - require "backbone_sync"
+- - '##'
+  - require "templates"
+- - '##'
+  - require_tree "models"
+- - '##'
+  - 使用 View 列出 Todos
+- - '##'
+  - 应用程序的 'main' Backbone
+- - '##'
+  - 示例：待办事项列表部分 3（使用 Backbone.js 的客户端实现）
+- - '##'
+  - require "backbone_sync"
+- - '##'
+  - require "templates"
+- - '##'
+  - require "models"
+- - '##'
+  - require "views"
+- - '##'
+  - '启动 Backbone.js 应用:'
+- - '##'
+  - 创建新的待办事项
+- - '##'
+  - '处理创建新待办事项的视图:'
+- - '##'
+  - 示例：待办列表 3（使用 Backbone.js 的客户端实现）
+- - '##'
+  - 每个 Todo 对应一个视图
+- - '##'
+  - 列表中每个 todo 的视图：
+- - '##'
+  - 应用类中的“主” Backbone 视图
+- - '##'
+  - 示例：待办列表部分 3（使用 Backbone.js 的客户端实现）
+- - '##'
+  - 从视图更新和验证模型
+- - '##'
+  - 列表中每个 todo 的视图：
+- - '##'
+  - 在保存之前验证模型：
+- - '##'
+  - 从视图中删除模型
+- - '##'
+  - 列表中每个 todo 的视图：
+- - '##'
+  - 示例：Todo 列表部分 3（使用 Backbone.js 的客户端）
