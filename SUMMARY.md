@@ -1176,6 +1176,7 @@
 +   [Perl 网络编程指南](docs/programming-the-network-with-perl/README.md)
 +   [项目开发指南：Vim 的 Congenial JavaScript：通过这份开发 Vim 编辑器 Congenial-JavaScript 插件的全面指南，构建你的作品集](docs/project-development-guide-congenial-javascript-for-vim-build/README.md)
 +   [Prototype and script.aculo.us：你从未发现 JavaScript 还能做这些！（实战派程序员系列）](docs/prototype-and-scriptaculous-you-never-knew-javascript-could-/README.md)
++   [PS-Scripting – Photoshop 脚本高级指南](docs/ps-scripting-professional-photoshop-scripting/README.md)
 +   [Pure React：精通 React 逐步步指南](docs/pure-react-a-step-by-step-guide-to-mastering-react/README.md)
 +   [Python 和 JavaScript 编码基础](docs/python-and-javascript-coding-basics/README.md)
 +   [Python 和 Javascript 编码：绝对初学者基础：快速学习编码的步进式指南](docs/python-and-javascript-coding-basics-for-absolute-beginners-s/README.md)

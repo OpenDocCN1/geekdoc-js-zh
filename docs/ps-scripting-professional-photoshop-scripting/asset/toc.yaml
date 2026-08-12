@@ -1,0 +1,386 @@
+- - '#'
+  - PS-Scripting – Photoshop 脚本高级指南
+- - '##'
+  - 致谢
+- - '##'
+  - 前言
+- - '##'
+  - 目录
+- - '##'
+  - 课程介绍
+- - '##'
+  - 读者群体与假设
+- - '##'
+  - 起手所需的准备
+- - '##'
+  - 规范
+- - '###'
+  - 1.0.0
+- - '###'
+  - 0.2 EAP
+- - '###'
+  - 0.1 EAP
+- - '##'
+  - 反馈
+- - '##'
+  - 盗版
+- - '#'
+  - 目录摘要
+- - '#'
+  - 1. Photoshop 脚本
+- - '##'
+  - Photoshop 脚本
+- - '###'
+  - 参数化曲线, Davide Barranca
+- - '###'
+  - 1. Photoshop 脚本
+- - '###'
+  - 1.1 Photoshop 扩展性概述
+- - '###'
+  - 动作 (Actions)
+- - '###'
+  - Photoshop 脚本 (Photoshop Scripting)
+- - '###'
+  - 脚本 (Scripting)
+- - '###'
+  - HTML 面板 (HTML Panels)
+- - '###'
+  - 插件 (Plug-ins / Photoshop SDK)
+- - '###'
+  - 1.2 脚本是如何工作的
+- - '#'
+  - Photoshop 脚本
+- - '##'
+  - Photoshop 脚本
+- - '##'
+  - Photoshop 脚本
+- - '##'
+  - Photoshop 脚本
+- - '##'
+  - 初学者 JavaScript入门
+- - '##'
+  - 2. 编写脚本
+- - '###'
+  - 2.1 文件、扩展名和文件夹
+- - '###'
+  - 2.2 Adobe ExtendScript Toolkit
+- - '###'
+  - 对象模型查看器
+- - '###'
+  - 2.4 运行脚本
+- - '##'
+  - 3. 通过示例学习 Hello World
+- - '###'
+  - 3.1 所有问候语的祖父
+- - '#'
+  - Hello World 示例
+- - '##'
+  - 3.2 An Average（平均值）
+- - '#'
+  - 示例 Hello World
+- - '##'
+  - 示例中的 Hello World
+- - '##'
+  - Hello World 示例
+- - '##'
+  - 类与实例
+- - '##'
+  - 我怎么知道它是这样运行的？我查看了对象模型查看器（Object Model Viewer）并发现
+- - '##'
+  - 变量命名
+- - '###'
+  - 3.3 图层清理
+- - '###'
+  - 3.4 ExtendScript 调试 (原ESTK)
+- - '##'
+  - 逐过 (Step Over)、进入 (Step Into)、跳出 (Step Out)
+- - '##'
+  - 仍然处理上述图层
+- - '###'
+  - 3.5 作业
+- - '##'
+  - 4. 攀爬 DOM
+- - '###'
+  - 4.1 脚本生命之树
+- - '###'
+  - 4.2 集合、类和实例
+- - '###'
+  - 4.3 算法艺术脚本实践
+- - '###'
+  - 4.4 图层与图组（LayerSets）：DOM 方法
+- - '#'
+  - 遍历 DOM
+- - '#'
+  - ExtendScript 域
+- - '###'
+  - 5.2 `$` 对象
+- - '###'
+  - 5.3 反射接口
+- - '###'
+  - 5.4 预处理器指令
+- - '#'
+  - ExtendScript Domain
+- - '##'
+  - Folders (文件夹)
+- - '##'
+  - Folder tokens (文件夹令牌)
+- - '##'
+  - ExtendScript 领域
+- - '###'
+  - 5.6 通知对话框
+- - '###'
+  - Alert 弹出窗口
+- - '###'
+  - Confirm 弹出窗口
+- - '###'
+  - 5.8 套接字 (Sockets)
+- - '###'
+  - 5.13 运算符重载、常量和 UnitValue
+- - '#'
+  - 动作管理器 (Action Manager)
+- - '##'
+  - 6.2 动作、事件与历史视角
+- - '##'
+  - 以下是需要翻译的文本
+- - '##'
+  - Action Manager
+- - '##'
+  - 6.4 charIDs 和 stringIDs
+- - '##'
+  - '6.5 ActionDescriptors 和 DialogModes: executeAction'
+- - '##'
+  - 6.6 构建 AM 函数
+- - '##'
+  - 6.7 使用 Action Manager 扩展 DOM
+- - '##'
+  - 6.8 嵌套描述符与动作列表 (Nested Descriptors and ActionLists)
+- - '##'
+  - 6.9 获取数据
+- - '###'
+  - 6.10 ActionReference
+- - '###'
+  - 6.11 检查描述符：executeActionGet
+- - '###'
+  - 应用程序
+- - '###'
+  - Action Manager
+- - '###'
+  - 描述符检查器 (Descriptor Inspectors)
+- - '#'
+  - Documents
+- - '#'
+  - Layers（图层）
+- - '#'
+  - Traversing Layers（遍历图层）
+- - '##'
+  - Action管理器 (Action Manager)
+- - '##'
+  - 通道 (Channels)
+- - '##'
+  - 路径 (Paths)
+- - '##'
+  - 历史 (History)
+- - '##'
+  - 动作组和动作 (ActionSets and Actions)
+- - '##'
+  - 6.12 获取流形式描述符 (Descriptors as Streams)
+- - '#'
+  - 7. 用户界面
+- - '##'
+  - 7.1 技术困境
+- - '##'
+  - 兼容性
+- - '##'
+  - 行为
+- - '##'
+  - 外观
+- - '##'
+  - 7.3 文档
+- - '##'
+  - 7.4 Window 对象
+- - '##'
+  - 7.6 布局
+- - '##'
+  - 方向 (Orientation)
+- - '##'
+  - 外边距与间距（Spacing）
+- - '##'
+  - 编码规范
+- - '###'
+  - 基于变量的样式 (Variables based style)
+- - '###'
+  - 基于对象的样式 (Object based style)
+- - '##'
+  - 混合样式 – 变量与资源字符串
+- - '##'
+  - 7.8 组件最小引用
+- - '##'
+  - 7.9 事件与事件处理器
+- - '##'
+  - 窗口与回调
+- - '#'
+  - 事件监听器
+- - '##'
+  - 事件传播
+- - '##'
+  - 事件传播的三阶段
+- - '###'
+  - 捕获阶段 (Capture Phase)
+- - '###'
+  - 目标阶段 (Target Phase)
+- - '###'
+  - 冒泡阶段 (Bubble Phase)
+- - '##'
+  - 7.10 样式
+- - '##'
+  - 自定义元素与 onDraw
+- - '##'
+  - 7.12 CEP 面板
+- - '#'
+  - 8. 处理元数据
+- - '##'
+  - 8.1 XMP
+- - '##'
+  - 某些架构及其命名空间
+- - '#'
+  - XMPFile, XMPMeta 和 XMPProperty
+- - '##'
+  - 编辑 XMP 元数据
+- - '##'
+  - 操作元数据
+- - '##'
+  - 自定义命名空间
+- - '##'
+  - 图层级元数据
+- - '##'
+  - 8.2 Generator 元数据
+- - '##'
+  - 8.3 Photoshop 注册表 (Registry)
+- - '#'
+  - 使用元数据
+- - '##'
+  - 8.4 外部文件
+- - '##'
+  - 保存状态
+- - '#'
+  - 事件
+- - '##'
+  - 参数 (Arguments)
+- - '##'
+  - 事件 (Events)
+- - '##'
+  - BridgeTalk SDK
+- - '##'
+  - Preferences
+- - '##'
+  - 10.1 Plug-In development
+- - '##'
+  - Getting Started
+- - '##'
+  - DevTools
+- - '##'
+  - LOCALHOST
+- - '##'
+  - 10.4 Generator 与 JSX 的通信
+- - '##'
+  - 外部文件
+- - '##'
+  - Pixmap 选项
+- - '##'
+  - getDocumentPixmap(documentid, [settings])
+- - '##'
+  - savePixmap(pixmap, path, settings)
+- - '##'
+  - 10. Metadata
+- - '##'
+  - 填充将透明（支持透明的格式）或白色。
+- - '##'
+  - Function
+- - '##'
+  - Parameters
+- - '##'
+  - 10.7 连接到外部服务
+- - '##'
+  - 人工智能：人脸检测
+- - '##'
+  - Generator 代码
+- - '##'
+  - ExtendScript 代码
+- - '##'
+  - 10.8 Socket.io 服务端/客户端
+- - '##'
+  - Sockets 101
+- - '##'
+  - 客户端：Photoshop 远程控制
+- - '##'
+  - 这个项目演示了什么
+- - '##'
+  - 实际上构建了什么
+- - '##'
+  - 更简单的练习
+- - '###'
+  - index.html 中的客户端代码
+- - '###'
+  - main.js 中的客户端代码
+- - '#'
+  - 11. 跨应用程序通信
+- - '##'
+  - 11.1 Cross-DOM API
+- - '##'
+  - 启动脚本（Startup Scripts）文件夹
+- - '##'
+  - 11.2 BridgeTalk 概念
+- - '##'
+  - 同步与异步行为
+- - '##'
+  - 11.3 事件处理
+- - '##'
+  - 接收消息
+- - '##'
+  - 中间响应
+- - '##'
+  - 11.4 总结
+- - '#'
+  - 12 附录
+- - '##'
+  - 12.1 部署脚本
+- - '###'
+  - 测试
+- - '#'
+  - 混淆
+- - '##'
+  - 压缩、优化、混淆？
+- - '##'
+  - 原始 JSXBIN 的解码版本
+- - '##'
+  - “盲点” JSXBIN 的解码版本
+- - '##'
+  - compile.jsxdemo
+- - '##'
+  - 安装
+- - '##'
+  - 12.2 资源
+- - '#'
+  - Adobe 官方
+- - '#'
+  - 第三方文档
+- - '#'
+  - 第三方论坛和小组
+- - '#'
+  - 软件开发者网站
+- - '#'
+  - ScriptUI
+- - '#'
+  - 文本编辑器插件
+- - '#'
+  - 库、框架和仓库
+- - '#'
+  - 书籍
+- - '#'
+  - 致谢
+- - '#'
+  - 简介
+- - '#'
+  - Davide Barranca – 作者
+- - '#'
+  - Sandra Voelker – 技术编辑
