@@ -1142,6 +1142,7 @@
 +   [Web 开发人员 JavaScript 高级指南](docs/professional-javascript-for-web-developers-team-ira/README.md)
 +   [Web 开发人员 JavaScript 高级指南，第三版](docs/professional-javascript-for-web-developers-third-edition/README.md)
 +   [Web 开发人员 JavaScript 高级指南](docs/professional-javascript-for-web-developers-wrox-professional/README.md)
++   [JavaScript 框架高级指南：Prototype, jQuery, YUI, ExtJS, Dojo 和 MooTools](docs/professional-javascript-frameworks-prototype-jquery-yui-extj/README.md)
 +   [JavaScript 专业框架高级指南：Prototype、YUI、Ext JS、Dojo 和 MooTools](docs/professional-javascript-frameworks-prototype-yui-ext-js-dojo/README.md)
 +   [专业 JavaScript 框架：Prototype, YUI, ExtJS, Dojo 和 MooTools (Wrox 程序员程序员程序员)](docs/professional-javascript-frameworks-prototypeyui-extjs-dojo-a/README.md)
 +   [jQuery 高级指南](docs/professional-jquery/README.md)
