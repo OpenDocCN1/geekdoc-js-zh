@@ -1161,6 +1161,7 @@
 +   [编程与编码：IoT 开发、Java、Java EE、Java Swing、JavaScript、jQuery、JSON、Julia 编程、Junit、内核、Kotlin、Laravel、Laravel 框架、LaTeX、LibGDX、LINQ 与 Linux](docs/programming-coding-iot-development-java-java-ee-java-swing-j/README.md)
 +   [编程：初学者计算机编程指南：学习 HTML5、JavaScript 和 CSS 基础 - 第二版（编码、C 编程、Java 编程、网页设计、JavaScript、Python、HTML 和 CSS）](docs/programming-computer-programming-for-beginners-learn-the-bas/README.md)
 +   [初学者编程指南：2本合1：Arduino 初学者指南，JavaScript 初学者指南](docs/programming-for-beginners-2-book-in-1-arduino-for-beginners-/README.md)
++   [Web编程：从入门到精通：使用 HTML5, CSS, JavaScript, Node.js, MongoDB 和 Open Layers 实现完整的 GIS Web 页面](docs/programming-for-the-web-from-soup-to-nuts-implementing-a-com/README.md)
 +   [Scala 编程指南（第四版）](docs/programming-in-scala-fourth-edition-1116/README.md)
 +   [Scala 编程，第三版](docs/programming-in-scala-third-edition/README.md)
 +   [Java 与 JavaScript 编程：初学者指南 – 一天学会 · 第2版](docs/programming-java-javascript-coding-for-beginners-learn-in-a-/README.md)
