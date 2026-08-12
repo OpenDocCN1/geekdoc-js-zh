@@ -1147,6 +1147,7 @@
 +   [专业 JavaScript 框架：Prototype, YUI, ExtJS, Dojo 和 MooTools (Wrox 程序员程序员程序员)](docs/professional-javascript-frameworks-prototypeyui-extjs-dojo-a/README.md)
 +   [jQuery 高级指南](docs/professional-jquery/README.md)
 +   [jQuery 高级指南](docs/professional-jquerytm/README.md)
++   [Web 2.0 编程高级指南 (Wrox 专业指南)](docs/professional-web-20-programming-wrox-professional-guides/README.md)
 +   [WebGL 高级编程指南](docs/professional-webgl-programming/README.md)
 +   [Windows Vista Gadgets 高级编程指南 (程序员到程序员)](docs/professional-windows-vista-gadgets-programming-programmer-to/README.md)
 +   [C++ 编程：初学者编程：编程语言指南：一天内学会！（C++, Javascript, PHP, Python, Sql, HTML, Swift）](docs/programming-c-programming-programming-language-for-beginners/README.md)
