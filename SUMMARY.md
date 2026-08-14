@@ -1236,6 +1236,7 @@
 +   [Ruby on Rails 教程：使用 Rails Learn Web 开发 (Addison-Wesley Professional Ruby 系列)](docs/ruby-on-rails-tutorial-learn-web-development-with-rails-addi/README.md)
 +   [Rxjs 5 终极指南](docs/rxjs5-ult/README.md)
 +   [SAC '21：第36届 ACM/SIGAPP 应用计算研讨会（韩国虚拟会议）论文集 ｜｜ SecureJS 编译器：JavaScript 中的可移植内存隔离](docs/sac-21-the-36th-acmsigapp-symposium-on-applied-computingvirt/README.md)
++   [10 分钟学会 AJAX](docs/sams-teach-yourself-ajax-in-10-minutes-sams-teach-yourself/README.md)
 +   [24 小时自学 CGI](docs/sams-teach-yourself-cgi-in-24-hours-teach-yourself----24-hou/README.md)
 +   [Sams 24 小时自学 HTML 和 CSS（包含新的 HTML 5 内容）](docs/sams-teach-yourself-html-and-css-in-24-hours-includes-new-ht/README.md)
 +   [Sams 自学 HTML, CSS 和 JavaScript 全案 (Gal Zentner 图书之)](docs/sams-teach-yourself-html-css-and-javascript-all-in-one-gal-z/README.md)
