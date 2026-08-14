@@ -1175,6 +1175,7 @@
 +   [CoffeeScript 编程指南](docs/programming-in-coffeescript-developers-library/README.md)
 +   [Scala 编程指南（第四版）](docs/programming-in-scala-fourth-edition-1116/README.md)
 +   [Scala 编程，第三版](docs/programming-in-scala-third-edition/README.md)
++   [编程：JAVA：Java 编程、JavaScript、编码：编程指南：一天学会！（JAVA, HTML, Python, SQL, App、iphone、网站设计、Word Press）](docs/programming-java-java-programming-javascript-coding-programm/README.md)
 +   [Java 与 JavaScript 编程：初学者指南 – 一天学会 · 第2版](docs/programming-java-javascript-coding-for-beginners-learn-in-a-/README.md)
 +   [Programming Phoenix LiveView：无需编写 JavaScript 的交互式 Elixir Web 编程](docs/programming-phoenix-liveview-interactive-elixir-web-programm/README.md)
 +   [编程快速启动合集 - HTML、Javascript 与 CSS（编程、HTML、Javascript、CSS、计算机编程）](docs/programming-programming-quickstart-box-set---html-javascript/README.md)
