@@ -1199,6 +1199,7 @@
 +   [Python、Java、SQL、JavaScript 与 C++：2025 完整初学者指南：掌握 5 大最热门编程语言，自信开启你的技术职业。](docs/python-java-sql-javascript-c-the-complete-2025-beginners-gui/README.md)
 +   [Python, Java, SQL & JavaScript：初学者指南，掌握 4 种最热门的编程语言，脱颖而出并寻找高薪工作的终极速成课](docs/python-java-sql-javascript-the-ultimate-crash-course-for-beg/README.md)
 +   [Python & JavaScript 精通指南：二合一——学习并精通两门强大的编程语言](docs/python-javascript-mastery-2-books-in-1--learn-and-master-two/README.md)
++   [Python 高级入门指南](docs/python-wise-head-junior/README.md)
 +   [Python、Java、SQL、JavaScript 编码：掌握最需求编程语言的初学者完整指南](docs/pythonjava-sql-javascript-coding-the-complete-course-for-beg/README.md)
 +   [3天快速学会 JavaScript：快速上手学习课程](docs/quick-javascript-learning-in-just-3-days-fast-track-learning/README.md)
 +   [JavaScript 快速编程](docs/quick-javascript-quick-programming/README.md)
