@@ -1,0 +1,2 @@
++   [Python, Java, SQL & JavaScript：初学者指南，掌握 4 种最热门的编程语言，脱颖而出并寻找高薪工作的终极速成课](README.md)
++   [Python, Java, SQL & JavaScript：初学者指南，掌握 4 种最热门的编程语言，脱颖而出并寻找高薪工作的终极速成课](python-java-sql-javascript-the-ultimate-crash-course-for-beg.md)
