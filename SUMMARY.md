@@ -1217,6 +1217,7 @@
 +   [React Native iOS 开发：利用 React 和 JavaScript 的力量构建精美的 iOS 应用](docs/react-native-for-ios-development-harness-the-power-of-react-/README.md)
 +   [ReactJS：Web 应用开发高级指南](docs/reactjs-become-a-professional-in-web-app-development/README.md)
 +   [React.js 籍：深入理解难懂的 JavaScript 编程库：想要学习 ReactJS 编程基础的 JavaScript 开发者指南](docs/reactjs-book---solid-understanding-of-a-hard-to-learn-javasc/README.md)
++   [React.js 书籍：从零开始学习 JavaScript 库 React](docs/reactjs-book-learning-react-javascript-library-from-scratch/README.md)
 +   [React.js 设计模式：轻松构建可扩展 React 应用（英文版）](docs/reactjs-design-patterns-learn-how-to-build-scalable-react-ap/README.md)
 +   [ReactJS：Web 应用开发：学习最流行的 Javascript 库之一](docs/reactjs-web-app-development-learn-one-of-the-most-popular-ja/README.md)
 +   [重新发现 JavaScript](docs/rediscovering-javascript/README.md)
