@@ -1190,6 +1190,7 @@
 +   [Pure React：精通 React 逐步步指南](docs/pure-react-a-step-by-step-guide-to-mastering-react/README.md)
 +   [Python 和 JavaScript 编码基础](docs/python-and-javascript-coding-basics/README.md)
 +   [Python 和 Javascript 编码：绝对初学者基础：快速学习编码的步进式指南](docs/python-and-javascript-coding-basics-for-absolute-beginners-s/README.md)
++   [Python 和 Javascript 编程基础：初学者分步指南](docs/python-and-javascript-programming-basics-step-by-step-guide-/README.md)
 +   [Python：Python 精通指南](docs/python-become-a-master-in-python-python-python-programming-c/README.md)
 +   [Python 编程最佳实践](docs/python-best-practices-to-programming-code-with-python/README.md)
 +   [Python、Java、SQL、JavaScript 与 C++：2025 完整初学者指南：掌握 5 大最热门编程语言，自信开启你的技术职业。](docs/python-java-sql-javascript-c-the-complete-2025-beginners-gui/README.md)

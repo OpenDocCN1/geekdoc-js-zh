@@ -1,0 +1,5328 @@
+- img_proc: true
+  md: '![](img/2bfe61f5593c3ea97ff290c1c0335a80_0_0.png)'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: '# PYTHON AND JAVASCRIPT PROGRAMMING BASICS
+
+
+    # STEP BY STEP GUIDE FOR BEGINNERS
+
+
+    # JAKE BOND'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: '# Python Introduction
+
+
+    Features of Python
+
+
+    Python Setup guide and installation
+
+
+    Python Keywords
+
+
+    Python Operators
+
+
+    Python Comments
+
+
+    Python if statement
+
+
+    Python elif
+
+
+    Python for loop
+
+
+    Python while loop
+
+
+    Python List
+
+
+    Python Tuple Methods
+
+
+    Python Dictionary
+
+
+    Python Function
+
+
+    Python File Handling
+
+
+    Javascript Introduction
+
+
+    Javascript Example
+
+
+    Javascript comment
+
+
+    Javascript Variable
+
+
+    Javascript Data Types
+
+
+    Javascript Operators
+
+
+    Logical Operators
+
+
+    Javascript If Else
+
+
+    Javascript Switch Statement
+
+
+    Javascript loop
+
+
+    do while loop
+
+
+    JavaScript Function
+
+
+    Function with arguments
+
+
+    Javascript Object
+
+
+    Javascript array
+
+
+    Javascript String'
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: '# # PYTHON PROGRAMMING
+
+    BASICS
+
+
+    # ## STEP BY STEP GUIDE FOR
+
+    BEGINNERS
+
+
+    JAKE BOND'
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: '# # Python Introduction
+
+
+    Python tutorial is a commonly used programming language that enables both beginners
+    and experts to quickly grasp the fundamentals of Python programming.
+
+
+    Python is a high-level, simple, interpreted, general-purpose, and dynamic programming
+    language. It encourages the use of object-oriented programming techniques. It''s
+    simple to pick up, and its elegant syntax enables programmers to express concepts
+    in fewer lines of code than other languages like C++, or Java.
+
+
+    It has an outstanding data structure, making it a one-of-a-kind language for scripting
+    and application creation across a wide range of platforms.
+
+
+    # ## A Brief History of Python
+
+
+    Guido van Rossum, a founder of the Netherlands’ National Research Institute of
+    Mathematics and Computer Science, began developing Python in the late 1980s. On
+    February 20, 1991, the first version was released.
+
+
+    The Python programming language borrows ideas from the ABC programming language.
+    ABC is a general-purpose programming language whose most notable accomplishment
+    was influencing the creation of Python.
+
+
+    The ABC programming language is the forerunner of the Python programming language.
+    ABC may handle exceptions and communicate with the Amoeba Operating System.
+
+
+    **Fact about choosing a name:** Guido van Rossum was a major fan of the ABC’s
+    iconic show ‘Monty Python’s Flying Circus,’ so the title was inspired by it. Python
+    was the name he came up with for his invention because he wanted something short,
+    interesting, and a little mysterious.'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: '• Python version 1.0 was released in 1994, and it included new features such
+    as map, filter, and reduce.
+
+
+    • In October of 2000, Python 2.0 was announced, with new features such as list
+    comprehension and a garbage collection system.
+
+
+    • On December 3, 2018, Python 3.0, also known as “Py3k,” was launched with new
+    features. In Python 2.x, for example, “print” is a sentence. “print()” is a function
+    in 3.x.
+
+
+    # Usage of Python
+
+
+    Python is a programming language that is used by many programmers in a variety
+    of fields. It usually used to execute any complex task in a much more straightforward
+    manner than other programming languages.
+
+
+    When Python is installed, it creates a number of powerful libraries that contain
+    a variety of functions.
+
+
+    There are several libraries available on the internet that make it easier to complete
+    complicated tasks.
+
+
+    It is a powerful programming language because of these standard libraries. Python
+    is used extensively in the following areas:
+
+
+    +   - Web development,
+
+    - Software development,
+
+    - Machine Learning,
+
+    - GUIs based applications,
+
+    - Network programming,
+
+    - Game development,
+
+    - Mathematics
+
+    - Artificial Intelligence
+
+    - Data Science
+
+
+    # Why Python?'
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: "Here are some of the reasons why Python is now the most common programming\
+    \ language:\n\n# Python provides rich libraries:\n\nPython has a large set of\
+    \ standard libraries that cover topics such as machine learning, algebra, web\
+    \ server software, operating system interfaces, and protocols.\n\n# Python is\
+    \ Open Source language:\n\nPython can be downloaded for free from its official\
+    \ website (www.python.org). Python can be downloaded from its official website\
+    \ for anyone.\n\nHere are some reasons why Python is the most popular language\
+    \ these days:\n\n# Easy to use:\n\nPython is a simple language to learn and use.\
+    \ It is an easy-to-understand language. In comparison to other languages, it only\
+    \ requires a few lines to express the code.\n\nFor instance, if you want to print\
+    \ “Hello world” in Java, the code will be as follows:\n\n```\npublic class HelloWorld\
+    \ {\npublic static void main(String[] args){\n    // Prints \"Hello, World\" to\
+    \ the terminal window.\n    System.out.println(\"Hello World\");\n}\n```\n\nIn\
+    \ Python, you can do it with just one sentence.\n\n```\nprint(\"Hello World\"\
+    )\n```\n\nBoth codes produce the same result, but Python only requires one line.\n\
+    \n# Frameworks and Libraries"
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: 'Python has a number of frameworks for different types of production. The following
+    are some common frameworks:
+
+
+    +   - Server-side web development: Django is the most common Python web development
+    platform. Flask, Pyramid, CherryPy, and other modeling tools are also included.
+
+
+    +   - Tk, PyGTK, PyQt, PyJs, and other GUI-based applications
+
+
+    +   - TensorFlow, PyTorch, Scikit-learn, Matplotlib, and other machine learning
+    frameworks
+
+
+    +   - Mathematics: Numpy, Pandas, etc.
+
+
+    # Object-Oriented Approach
+
+
+    The object-oriented programming approach is supported by Python. OOP principles
+    are focused on creating reusable code and solving programming problems by creating
+    objects in object-oriented programming. DRY (Don''t Repeat Yourself) is another
+    name for these ideas.
+
+
+    OOPs definitions in Python are as follows:
+
+
+    +   - Classes
+
+    - Objects
+
+    - Inheritance
+
+    - Polymorphism
+
+    - Encapsulation
+
+
+    These topics will be covered in the Python OOPs.
+
+
+    # Extensible
+
+
+    Python is extensible, allowing you to use C and C++ libraries, as well as combining
+    JAVA and.NET modules.
+
+
+    # Portability'
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: Python is a language that can be used everywhere. If we have a Python program
+    for Windows and want to run it on other platforms like Mac, Unix, or Linux, we
+    don’t have to modify the code; we can run it on any platform. We’ve covered a
+    basic introduction to Python in this tutorial. Python is a very common language,
+    and it is fair to say that it is the language of the future.
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: '# Features of Python
+
+
+    Python is a common programming language that is efficient and simple to learn.
+    Its data structures are effective, and elegant syntax makes it a user-friendly
+    language.
+
+
+    The following are some of Python’s most important features:
+
+
+    +   1. Python is Easy
+
+
+    a**) Easy to code**
+
+    When opposed to other programming languages such as Java and C++, Python makes
+    coding a breeze.
+
+    Python syntax does not take long to learn; anyone can learn in a few hours or
+    days, making it a programmer-friendly language.
+
+    If you have strong logical skills, you can learn this language easily even if
+    you don''t know how to code.
+
+    **b) Easy to read**
+
+    Python code is somewhat similar to English since it is a high-level programming
+    language. Curly braces are not used; instead, indentation is used to describe
+    the code block, and the code is simple to read.
+
+    **2. High-level Language**
+
+    Python is a programming language with a high degree of abstraction. It focuses
+    more on the programming logic than on critical hardware components like memory
+    addressing and register use.
+
+    Its code is self-contained and does not require any prior knowledge of the system
+    architecture. We also don’t have to worry about memory management.
+
+    **3. Interpreted**'
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: 'In programming languages such as C or C++, there are two steps to executing
+    code: first compile it, then run it, while Python does not require compiling.
+
+
+    Internally, the source code is translated to byte code, which means is a fast
+    format.
+
+
+    Python is an interpreted language, which means that it executes code by line and
+    in its entirety. As a result, debugging the code is much simpler.
+
+
+    It’s a little slower than JAVA because of the interpreter, it’s not a big deal
+    because it’s better than other languages.
+
+
+    Python has a greater degree of flexibility than compiled languages. It manages
+    memory for you automatically.
+
+
+    # 4. Object-Oriented
+
+
+    Python is an object-oriented programming language that supports concepts such
+    as objects, classes, encapsulation, inheritance, and so on.
+
+
+    It is object-oriented and integrates data and functions. Real-world entities are
+    defined in OOPs by objects, and classes are the object’s blueprint.
+
+
+    It also works with procedural languages.
+
+
+    Functions are central to procedural language programming, which makes code reusable.
+
+
+    The most natural and practical approach is object-oriented programming.
+
+
+    The principles of OOPs allow you to break down your program into smaller problems
+    that you can tackle one at a time.
+
+
+    # 5. Dynamically Typed
+
+
+    Python is a dynamically typed language, which means that when declaring variables,
+    the data type does not delegate.'
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: 'The type of value is determined at runtime rather than in advance.
+
+
+    When we declare a variable with a value, the value is saved in memory and attaches
+    the variable to the memory container.
+
+
+    For example, we may assign the string value x="Hello world” to a string variable.
+
+
+    The advantage of dynamic memory allocation is that it prevents memory waste.
+
+
+    Since all memory allocation cannot be used when we use static memory allocation,
+    a lot of memory is lost.
+
+
+    # 6. Large standard Library
+
+
+    When you install Python, you’ll be prompted to enter a password.
+
+
+    It came with a large library that you can use instead of writing to every variable
+    in your code.
+
+
+    There’s a library for regular expressions, threading, databases, image manipulation,
+    unit-testing web browsers, CGI, and more.
+
+
+    A Python library is a collection of functions and methods.
+
+
+    It helps you to perform a variety of tasks without having to write code.
+
+
+    # 7. Extensible
+
+
+    Python is extensible, which means you can write Python code in languages other
+    than Python, such as Java, C, and C++. Python is therefore an extensible language.
+
+
+    It doesn’t extend Python in any way (syntax, constructs, etc. ), but it allows
+    you to interact with libraries written in other languages. (Mainly C or C++, but
+    you can use C as a bridge to call all other languages with C interfaces).
+
+
+    # 8. Portable
+
+
+    Python is platform-agnostic, which means it can run on any device. Python code
+    can run on a variety of platforms,'
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: 'including Mac, Linux, and Windows.
+
+
+    Assume you wrote the code on a Windows computer.
+
+
+    You don’t need to make any improvements to it now if you want to run it on Linux.
+    It is not necessary to write different code for each platform.
+
+
+    # 9. Free and Open Source
+
+
+    Python is available for free on its official website (www.python.org).
+
+
+    It is available for download and installation by anyone.
+
+
+    You can also get a Python IDE (Integrated Development Environment) like Pycharm,
+    Jupiter, Visual Studio, and so on.
+
+
+    Python is an open-source language, which ensures that its code source is freely
+    accessible and unrestricted.
+
+
+    Anyone can download it, use it, and build new modules or functions with it, which
+    they can then share with the Python community.
+
+
+    # 10. GUI Programming
+
+
+    The acronym GUI stands for “Graphical User Interface.”
+
+
+    Using Python Tkinter or PyQt, we can build a simple desktop program.
+
+
+    # 11. Expressive
+
+
+    Python is a language that allows you to express yourself.
+
+
+    It means that single line of Python code can be more expressive than a line of
+    code written in another programming language.
+
+
+    The main benefit of using a more expressive language is that the fewer lines of
+    code you write, the easier you can finish the project.
+
+
+    It’s easier to debug and keep the code up to date.'
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: '# Python Setup guide and installation
+
+
+    Python is a high-level programming language that is commonly used. Python’s first
+    version was released in 1991. Python has grown in popularity since then. It''s
+    widely regarded as one of the most user-friendly and adaptable server-side programming
+    languages available.
+
+
+    The Python interpreter must be installed before you begin working with Python.
+    Unlike other Linux distributions, Windows does not have Python as a standard feature.
+    However, installing Python on a Windows server or a local machine is a simple
+    process. There are several popular methods for accomplishing this:
+
+
+    +   Python is available for free at www.python.org, which is run by the Python
+    Software Foundation. In most cases, this entails installing and running a suitable
+    installer for your operating system.
+
+
+    +   Installing Homebrew, a package manager for macOS, is the fastest to get Python
+    installed.
+
+
+    +   It comes with a package manager for Linux that can be used to install Python.
+
+
+    +   Applications that have a Python programming environment can be downloaded
+    for mobile operating systems such as Android and iOS.
+
+
+    +   A Python programming environment is available on a number of websites. These
+    websites allow you to practice coding without having to install Python.
+
+
+    # Python Installation on Windows
+
+
+    You must first select a Python version. Python 3.7 must be installed if you want
+    to learn the most recent version of'
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: 'Python. This version can be installed alongside 2.7, but it is no longer used
+    in industry.
+
+
+    Python on Windows can be installed in a few steps. The following are the steps
+    to take:
+
+
+    # Step-1
+
+
+    # Set Up for Download
+
+
+    +   1. Open a browser and go to www.python.org, the official Python website. It
+    will take you to the website’s home page.
+
+
+    ![](img/2bfe61f5593c3ea97ff290c1c0335a80_14_0.png)
+
+
+    +   • Go to the Downloads section and choose Windows from the drop-down menu.
+    Look for the Python version you like. Python 3 has been updated to version 3.7.4,
+    while Python 2 has been updated to version 2.7.16. Consider the following illustration:
+
+
+    ![](img/2bfe61f5593c3ea97ff290c1c0335a80_14_1.png)
+
+
+    # Step-2 Select Installer:'
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: 'To download Python for 64-bit OS, choose either the window x86-64executable
+    installer or the window x86 executable installer.
+
+
+    Note that you can install the 32-bit or 64-bit version of Windows. For the most
+    part, either installer can operate on a 64-bit machine. According to the operating
+    system, the 64-bit version works better for applications that require intensive
+    computation.
+
+
+    If you’re unsure about which version to choose, go with 64-bit. However, if you
+    make the “wrong” decision and choose to upgrade to a different version of Python,
+    you can easily uninstall Python and reinstall another installer.
+
+
+    # Step-3 Run the installer
+
+
+    Run the installer after you’ve downloaded it.
+
+
+    +   1. Check the Add Python 3.7 to Path checkbox and install the launcher for
+    all users. The Add Python to Path checkbox is not available in older versions
+    of Python.
+
+    2. Select the option to install now, which is the recommended installation method.
+
+
+    Note that such features may not be available in older versions of Python. However,
+    Pip and IDLE are recommended installation choices in all recent Python versions
+    (Integrated Development and Learning Environment).
+
+
+    ![](img/2bfe61f5593c3ea97ff290c1c0335a80_15_0.png)'
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: '+   • “Setup was successful,” says the next dialog box. You can allow Python
+    to use long path names by selecting “Disable path length limit.”
+
+
+    ![](img/2bfe61f5593c3ea97ff290c1c0335a80_16_0.png)
+
+
+    # Step-4 Check to see if Python is loaded.
+
+
+    +   1. Go to the directory where Python was installed on your computer. It’s C:UsersUsernameAppDataLocalProgramsPythonPythonPython37
+    in our framework. We’ve installed the most recent version of Python.
+
+    2. Double-click the “python.exe” (python executable file)
+
+    3. You can also use the command prompt to verify it by typing “python —version.”
+    It will show you the Python version. If Python is successfully enabled, the following
+    output will appear.
+
+
+    # Step-5 Check to see if Pip is installed.
+
+
+    Pip is a powerful package management system for Python software packages. If you
+    install an older version of Python, it is possible that Pip would not be pre-installed.'
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: 'a) For most Python packages, Pip is recommended, particularly when working
+    in virtual environments.
+
+
+    b) To see if Pip has been successfully installed
+
+
+    I) Type cmd into the Start menu.
+
+
+    ii) Launch the Command Prompt program.
+
+
+    iii) In the terminal, type pip --version. If Pip has been successfully mounted.
+    The following output will be shown.
+
+
+    However, if pip isn’t installed yet, you’ll get the following output:
+
+
+    “pip is not known as an internal or external order, or as a batch file that can
+    be executed.”
+
+
+    # Step-6 Setting Environment variable
+
+
+    If you did not select the Add Python to PATH checkbox, or if your Python installer
+    version does not include it, follow the steps below:
+
+
+    Using the Start menu, select +R.
+
+
+    +   1. Open a command prompt and type sysdm.cpl. The System Properties window
+    will appear.
+
+
+    +   2. Go to the Advanced tab and pick Environment Variable from the drop-down
+    menu.
+
+
+    If you did not select the Add Python to PATH checkbox, or if your Python installer
+    version does not include it, follow the steps below:
+
+
+    Using the Start menu, select +R.
+
+
+    +   1. Open a command prompt and type sysdm.cpl. The System Properties window
+    will appear.'
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: '+   2. Go to the Advanced tab and pick Environment Variable from the drop-down
+    menu.
+
+
+    +   • Find and pick the Path variable under System Variables, then press Edit.
+
+
+    +   • Go to the Variable value field and choose it. Add a semicolon before the
+    path to the python.exe file (;).'
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: '# Python Keywords
+
+
+    Keywords are words that are reserved for the compiler and have a specific meaning.
+    They aren’t allowed to be used as a variable. Keywords are parts of the syntax,
+    such as:
+
+
+    ```
+
+    return (a+b)
+
+    ```
+
+
+    The keyword return is used here, while the variables a and b are variables.
+
+    The following is a list of all Python keywords:
+
+
+    +   - and-else-lambda
+
+    - or-except-None
+
+    - assert-finally-nonlocal
+
+    - break-try-pass
+
+    - continue-raise-global
+
+    - class-from-return
+
+    - def-import-False
+
+    - del-in-True
+
+    - if-is-for
+
+    - elif-not-while
+
+    - with-yield-
+
+
+    # Description of Some Python keywords
+
+
+    if'
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: "The if statement in Python is the most basic conditional statement. It is used\
+    \ to determine whether or not a statement block will be executed.\n\n```\na =\
+    \ 20\nif (a>15):\n    print('I am bigger than 15’)\n```\n\n# Output\n\nI am bigger\
+    \ than 15\n\nelse\n\nIf there is an if statement, there is also an else statement.\
+    \ If the condition of the if statement is false, the else block is executed. The\
+    \ following example exemplifies this point:\n\n```\na = 20\nb = 30\nif (a > b):\n\
+    \    print('a is greater than b’\nelse:\n    print('’b is greater than a’)\n```\n\
+    \n# Output\n\nb is greater than a\n\n# elif\n\nElif is an acronym for else-if.\
+    \ It is used to validate multiple conditions, meaning that if the previous condition\
+    \ is incorrect, the next condition is checked. Consider the following scenario:\n\
+    \n```\na=10\nb=10\nif (a>b):\n    print('a is smaller than b’)\n```"
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: "```\nelif (a == b):\n    print(' a is equal to b')\nelse:\n    print('a is\
+    \ greater than b')\n```\n\n# Output\n\na is equal to b\n\n# True\n\nThe boolean\
+    \ true is defined by the true keyword. The interpreter returns true if the given\
+    \ statement is true. Consider the following scenario:\n\n```\nprint(1==1)\n```\n\
+    \n# OUTPUT\n\nTrue\n\n# False\n\nA boolean false is represented by the keyword\
+    \ False. The interpreter returns false if the given statement is false. for example:\n\
+    \n```\nprint(1>1)\n```\n\n# Output\n\nFalse\n\n# assert\n\nAs a debugging method,\
+    \ the assert keyword is used. It aids in the efficient flow of code. It makes\
+    \ it easier for us to locate bugs."
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: "Assertions are essentially assumptions that a programmer is aware of and often\
+    \ hopes to be right. As a result, they’re coded so that if the argument fails,\
+    \ the code won’t run any more.\n\n```\na = 10\nb = 0\nprint('a is dividing by\
+    \ Zero')\nasert b !=!=0\nprint(a / b)\n```\n\n# Output\n\na is dividing by Zero\n\
+    \nRuntime Exception:\n\nTraceback (most recent call last):\nFile “home/40545678b342ce3b70beb1224bed345f.py”,\
+    \ line\n4, in\nasert b !!== 0, “Divide by 0 error\"\nAssertionError: Divide by\
+    \ 0 error\n\n# and\n\nThe logical operators in Python are and, or, and not. If\
+    \ all operands are valid in and and operator, the condition will be true:\nFor\
+    \ example:\n\n```\na=100\nif (a>90) and (a<101):\n    print('Both conditions are\
+    \ true.a is ',a)\n```\n\n# Output\n\nBoth conditionsare true. a is 100"
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: '# # Python Operators
+
+
+    A symbol that acts on one or more operands is known as an operator. The operand
+    is a value or vector on which the operation is performed. Consider the example
+    6+9. The operands are 6 and 9, and the operator is +. Python has a number of operators,
+    which are listed below:
+
+
+    +   - Arithmetic Operators
+
+    - Assignment Operators
+
+    - Comparison Operators
+
+    - Logical Operators
+
+    - Membership Operators
+
+    - Bitwise Operators
+
+    - Identity Operators
+
+
+    # Arithmetic Operator
+
+
+    Basic mathematical operations are performed using the Python Arithmetic operators.
+    The following is a list of arithmetic operators. Assume x and y are two variables
+    with values of 30 and 10, respectively, and the following is the product of the
+    operation:
+
+
+    | Operators | Description | Example |
+
+    |---|---|---|n| + (Addition) | It is used to add two operands. | x + y =40 |
+
+    | - (Subtraction) | It is used to subtract two operands. It will give the negative
+    value if the first operand is less than the second operand. | x - y =20 or y -
+    x =20 |
+
+    | * (Multiplication) | It is used to multiply the value on either side of operators.
+    | x * y = 300 |'
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: "| / (Divide) | it divides the first operand by the second operand and returns\
+    \ the quotient. | x/y = 3.0 |\n| // (Floor Division) | it is used to divide and\
+    \ returns the integer value of the quotient. | x/y=3 or x=30 y=7 then x/y=4 |\n\
+    | % (Modulus) | it returns remainder after division. | x/y = 0 |\n| **(Exponent)\
+    \ | it is used to calculate the power of the first operand. | x = 5, y = 2 then\
+    \ x ** 2 = 25 |\n\n# # Assignment Operators:\n\nThe value of the right operand\
+    \ is assigned to the left operand using the assignment operator. The following\
+    \ is a list of assignment operators. If we give x = 20 and y = 10, we get the\
+    \ following results:\n\n| Operator | Description | Examples |\n| = | Assigns value\
+    \ of the right expression to the left operand. | x = 20 |\n| += | it is used to\
+    \ add the value on either side and assign expression on the left side. Result\
+    \ is assigned to the right operand. | x+=y is equal to x=x+y therefore x = 30\
+    \ |\n -= | it is used to subtract the value on either side and assign expression\
+    \ on the left side. Result is assigned to the right operand. | x-=y is equal to\
+    \ x=x-y therefore x = 10 |\n| *= | it multiplies the operands and modifies value\
+    \ assigned to right operand. | x*=y is equal to x = x*y therefore x = 200 |\n\
+    | /= | it divides the operands and modifies value assigned to right operand. |\
+    \ x/=y is equal to x = x/y therefore x = 2.0 |"
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: "| %= | it calculates the modulus of the values on either side. And assigns\
+    \ result to the expression on the left. | x%=y is equal to x = x%y\therefore x\
+    \ = 0 |\n| **= | it evaluates exponential (power) calculation on operators and\
+    \ assigns value to the left operand | x=20,y=2 **=2 is equal to x**=y therefore\n\
+    x=400 |\n| //= | it performs floor division on operators and assign value to the\
+    \ left operand | x//y is equal to x = x//y\ntherefore x = 2 |\n\n#  Comparison\
+    \ operators\n\nPython has a number of comparison operators that are often used\
+    \ to compare the values of two operands. When these values are compared, the result\
+    \ is a Boolean true or false. The operators are listed in the table below. x=10\
+    \ and y=15 have been allocated.\n\n| Operators | Description | Examples |\n| ==\
+    \ | It returns true if the values of the two operands are equal. | x==y is False\
+    \ |\n| != | It returns false if the values of the two operands are not equal.\
+    \ | x!=y is True |\n| <= | If the left operand is less than or equal to the right\
+    \ operand, then it will evaluate True | x<=y is True |\n| >= | If the left operand\
+    \ is greater than or equal to the right operand, then it evaluates True | x>=y\
+    \ is False |\n| <> | This operator is similar to !=(not equal) | x<>y is True\
+    \ |"
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: '| > | If the left operand is greater than the right operand, then it evaluates
+    True | x>y is False |
+
+    | < | If the right operand is greater than the left operand, then it evaluates
+    True | x<y is True |
+
+
+    # Logical Operators
+
+
+    In the conditional statement, three logical operators are used: and, or, and not.
+
+
+    | Operators | Description | Examples |
+
+    | and | The condition becomes true if both expressions are true. | True and False=
+    False |
+
+    | or | The condition becomes true if any expression is true. | True or False=
+    True |
+
+    | not | If an expression x is true then not(x) will be false or v versa. | not(True)=
+    False |
+
+
+    # Membership Operators
+
+
+    Membership operators are used to determine if a given element belongs to a sequence
+    such as a string, list, or tuple. In the table below, there are two membership
+    operators:
+
+
+    | Operator | Description | Examples |
+
+    | in | It is evaluated to be true if an element on left side is present in the
+    right side sequence | 3 in [1,3,4]=True |
+
+    | not in | It is evaluated to be false if an element on the left side is present
+    in the given right side sequence | 3 not in [1,3,5]=False |'
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: '# Bitwise Operators
+
+
+    Bitwise operators perform bit-by-bit binary operations on operands. Consider the
+    following scenario: The variable a is given a value of 5 and the variable b is
+    given a value of 6.
+
+
+    a = 5
+
+
+    b = 6
+
+
+    binary (a) = 0101
+
+
+    binary (b) = 0110
+
+
+    Hence a&b = 0100 is equivalent to 4
+
+
+    a|b=0111
+
+
+    | Operator | Description | Examples |
+
+    |---|---|--|
+
+    | ~(Complement) | This operator converts the number into a binary number and return
+    it''s one complement or flips the bits. "x" is equivalent to ~x-1. | a~5 is evaluated
+    -6 |
+
+    | &(Binary and) | if both bits are at the same place are 1 the result is 1 otherwise
+    result is 0 | a=0101, b=0110 a&b=0100 |
+
+    | (Binary or) | if both bits are at the same place are 0 the result is 1 otherwise
+    result is 0 | a=0101, b=0110 a|b |
+
+    | ^(Binary Xor) | if bits are different then the result will be 1 otherwise the
+    result will be 0 | =0111 a=0101, b=0110 a^b=0011 |
+
+    | <<(Binary Left Shift) | The left operand is shifted left by the number of bits
+    given in the right operand. | a<<2 = 001010 |
+
+    | >>(Binary Right Shift) | The left operand is shifted right by the number of
+    bits given in the right operand. | a>>2=0001 |
+
+
+    # Identity Operators'
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: '# The identity operators
+
+
+    | Operator | Description | Examples |
+
+    | --- | --- | --- |
+
+    | is | If the both operators are referred to same object then it evaluates true.
+    | a = 5, b=5 is b =True |
+
+    | is not | If the both operators are referred to same object then it evaluates
+    false. | a = [1,2,3], b =[1,2,3] a is not b=True |
+
+
+    # Operator precedence
+
+
+    It is important to know about the precedence of the operator.
+
+
+    | Operator Precedence (Decreasing Order) | Description |
+
+    | --- | --- |
+
+    | ** | The Exponential have the highest priority |
+
+    | ~ + - | Complement, unary plus and minus |
+
+    | * / % // | Multiply, divide, modulo and floor division |
+
+    | + | Addition and subtraction |
+
+    | >> << | Right and left bitwise shift |
+
+    | & | Bitwise ‘AND’ |'
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: '| ^ | | Bitwise OR'' and regular OR'' |
+
+    | <= < > >= | Comparison operators |
+
+    | <> == != | Equality operators |
+
+    | = %= /= //= -= += *= **= | Assignment operators |
+
+    | is is not | Identity operators |
+
+    | in not in | Logical operators |
+
+    | not or and | Logical operators |'
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: '# Python Comments
+
+
+    In any programming language, comments are needed.
+
+
+    It makes our program more readable, and the Python interpreter ignores the commented
+    code.
+
+
+    In Python code, there are two ways to use comments. It''s a good idea to practice
+    using comments in code to make it easier to understand.
+
+
+    Code can be perplexing without comments.
+
+
+    If we want to illustrate a code statement without executing it, we can do so by
+    commenting it.
+
+
+    While a comment is not part of the code, it improves readability.
+
+
+    # Single-line Comment
+
+
+    The # (hash) character is used at the beginning of the line to make a single-line
+    comment. At the end of the line, it is immediately terminated. For example:
+
+
+    # Example 1
+
+
+    ```
+
+    #This is a single-line comment in Python: print("Welcome to tutorialandexample")
+
+    ```
+
+
+    # Output
+
+
+    Welcome to tutorialandexample
+
+
+    # Multiline Comment
+
+
+    Inside the triple quotes, a multiline statement can be made. For Example:
+
+
+    ```
+
+    print("Welcome to tutorialandexample")
+
+    ```
+
+
+    ```
+
+    """This is the example of
+
+    multiline comment
+
+    ```'
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: 'using the triple quotes.
+
+    Use in your code”'
+  merge: -1
+  pgno: 31
+- img_proc: true
+  md: '# Python if statement
+
+
+    Any programming language must have the ability to make decisions. The power of
+    decision-making is condition testing. Many decision-making statements are available
+    in Python, including:
+
+
+    +   - If statement
+
+    - If-else statement
+
+    - elif statement
+
+
+    # if statement
+
+
+    The conditional statement is the most straightforward. It''s used to see if a
+    certain condition exists. A block of code (if statement block) will be executed
+    if the condition is valid.
+
+
+    # Syntax:
+
+
+    if expression:
+
+    nstatement
+
+
+    Flow chart of if statement: The flowchart of if statement is following
+
+
+    ![](img/2bfe61f5593c3ea97ff290c1c0335a80_32_0.png)'
+  merge: -1
+  pgno: 32
+- img_proc: true
+  md: "In the flowchart above, the condition is first checked to see if it is valid,\
+    \ and then conditional code (if statement) is executed. If the condition is incorrect,\
+    \ the first collection of code following the ‘if’ assertion will be run.\n\nAny\
+    \ non-zero and non-null value is assumed to be TRUE in the Python programming\
+    \ language. If it is zero, it is presumed that the values are FALSE.\n\n# Indentation\
+    \ in Python\n\nThe block of code is declared using indentation.\n\nAll of the\
+    \ statements in a block are supposed to be indented at the same stage.\n\nCurly\
+    \ braces and parentheses are not permitted in block-level Python code.\n\nPython’s\
+    \ indentation makes programming quick and straightforward.\n\nExample: Following\
+    \ is an example of an if statement.\n\n+   1. Write a program to check number\
+    \ is even\n\n```\nn = int(input(\"Enter the number:\"))\n\nif(n%2==0):\n\n   \
+    \ print(\"The number is even\")\n\nprint(\"The number is odd\")\n```\n\n# Output\n\
+    \nEnter the number: 10\nThe number is even\n\n+   2. Create a program to check\
+    \ the passenger’s baggage weight."
+  merge: -1
+  pgno: 33
+- img_proc: true
+  md: "```\nweight =float(input(\"How many Kilograms(kg) does your\nluggage?:\"))\n\
+    if weight <30:\n    print(\"You have charged ₹300 for heavy luggage.\")\nprint(\"\
+    Thank you for your business.\")\n```\n\n# Output\n\nHow many Kilograms does your\
+    \ suitcase weigh?: 35\nThere is a 250 charge for heavy luggage.\nThank you for\
+    \ your business\n\n+   3. Create a program that prints the highest of the three\n\
+    umbers.\n\n```\na = int(input(\"Enter the First number:\"))\nb = int(input(\"\
+    Enter the Second number:\"))\nc = int(input(\"Enter the Third number:\"))\nif(a>b)\
+    \ and (a>c):\n    print(a, 'is largest number')\n\nif(b>a) and (b>c):\n    print(b,\
+    \ 'is largest number')\n\nif(c>a) and (c>b):\n    print(c, \"c is largest\");\n\
+    ```\n\n# Output\n\nEnter the First number: 100\nEnter the Second number: 145"
+  merge: -1
+  pgno: 34
+- img_proc: true
+  md: "Enter the Third number: 200\n\n200 is largest\n\n# 4. Make a program to determine\
+    \ whether a given number is positive or negative.\n\nnum = 3\n\n```\nif num >0:\n\
+    \    print(num, \"is a positive number.\")\n    print(\"This is always printed.\"\
+    )\n```\n\nnum = -1\n\n```\nif num >0:\n    print(num, \"is a positive number.\"\
+    )\n    print(\"This is also always printed.\")\n```\n\n# Output\n\n3 is a positive\
+    \ number.\n\nThis is always printed.\n\nThis is also always printed."
+  merge: -1
+  pgno: 35
+- img_proc: true
+  md: "# Python elif\n\nPython elif\n\nThe elif statement is used to validate multiple\
+    \ conditions and execute a particular block of statements based on which one is\
+    \ valid.\n\nSyntax\n\n```\nif expression1:\n    statement\nelif expression2:\n\
+    \    statement\nelif expression3:\n    statement\nelse:\n    statement\n```\n\n\
+    Elif statements, such as else, may be optional. If the if expression evaluates\
+    \ true, the declaration of expression 1 is printed; otherwise, control moves to\
+    \ the elif expression; if the elif condition evaluates false, control moves to\
+    \ the next elif.\n\nIt will go through all of the elif expressions before it finds\
+    \ one that is real.\n\nPython, unlike other programming languages, does not have\
+    \ a switch or case statement."
+  merge: -1
+  pgno: 36
+- img_proc: true
+  md: '![](img/2bfe61f5593c3ea97ff290c1c0335a80_37_0.png)
+
+
+    Python tests each expression (i.e., the condition) one by one in
+
+    the flow diagram above, and if a true condition is found, the
+
+    statement block under that expression is executed.
+
+
+    If the false condition is found, the statement block will be
+
+    executed under the else condition.
+
+
+    We used if, a sequence of elifs, and else to determine the type
+
+    of a variable in the following example.
+
+
+    +   1. Create a program to check the student’s score.
+
+
+    ```
+
+    marks = int(input(“Enter the marks ”)
+
+    if marks >85 and marks <= 100:
+
+
+    print("Congrats ! you scored grade A ”)
+
+    elif marks >60 and marks <= 85:
+
+
+    print("You scored grade B + ”)
+
+    elif marks >40 and marks <= 60:
+
+
+    print("You scored grade B ”)
+
+    elif marks >30 and marks <= 40:
+
+
+    print("You scored grade C ”)
+
+    elelse:
+
+
+    print("You are fail ”)
+
+    ```'
+  merge: -1
+  pgno: 37
+- img_proc: true
+  md: "# Output\n\nEnter the marks 60\nYou scored grade B\n\n+   2. Write a program\
+    \ that determines whether it is morning, noon, or night.\n\n```\ntime=int(input(\"\
+    Enter the time\"))\nif time >= 6 and time <12:\n    print(\"Good Morning\")\n\
+    elif time == 12:\n    print(\"Good Noon\")\nelif time >12 and time <= 17:\n  \
+    \  print(\"Good Afternoon\")\nelif time >17 and time <= 20:\n    print(\"Good\
+    \ Evening\")\nelif (time>20 and time<=24) or (time >= 0 and time<=6):\n    print(\"\
+    Good Night\")\nelse:\n    print(\"Invalid time!\")\")\n```\n\n# Output\n\nEnter\
+    \ the time12\nGood Noon\n\n+   3. Create a basic calculator program.\n\n```\n\
+    a=int(input(\"Enter the first number\"))\n\nb=int(input(\"Enter the second number\"\
+    ))\n```"
+  merge: -1
+  pgno: 38
+- img_proc: true
+  md: '```
+
+    print("1. Add")
+
+    ```
+
+
+    ```
+
+    print("2. Sub")
+
+    ```
+
+
+    ```
+
+    print("3. Mul")
+
+    ```
+
+
+    ```
+
+    print("4. Div")
+
+    ```
+
+
+    ```
+
+    choice=input("Enter your choice")
+
+    ```
+
+
+    ```
+
+    if(choice==''1''):
+
+    ```
+
+
+    ```
+
+    print("The addition is:",a+b)
+
+    ```
+
+
+    ```
+
+    elif(choice==''2''):
+
+    ```
+
+
+    ```
+
+    print("The subtracion is:",a-b)
+
+    ```
+
+
+    ```
+
+    elif(choice==''3''):
+
+    ```
+
+
+    ```
+
+    print("The multiplication is:",a*b)
+
+    ```
+
+
+    ```
+
+    elif(choice==''4''):
+
+    ```
+
+
+    ```
+
+    print("The divide is:",a/b)
+
+    ```
+
+
+    ```
+
+    else:
+
+    ```'
+  merge: -1
+  pgno: 39
+- img_proc: true
+  md: '```
+
+    print("Enter the valid choice")
+
+    ```
+
+
+    # Output
+
+
+    Enter the first number:30
+
+
+    Enter the second number:20
+
+
+    +   1. Add
+
+    2. Sub
+
+    3. Mul
+
+    4. Div
+
+
+    Enter your choice:3
+
+    The multiplication is: 600
+
+
+    # 4. Create a program to determine the triangle type.
+
+
+    ```
+
+    a=int(input("Enter the first angle:"))
+
+
+    b=int(input("Enter the second angle:"))
+
+
+    c=int(input("Enter the third angle:"))
+
+
+    if a<b+c or b<a+c or c<a+b:
+
+
+    print("The triangle does not exist")
+
+
+    elif a==b and a==c:
+
+
+    #An equilateral triangle has three angles of 60°, and three equal sides.
+
+    ```'
+  merge: -1
+  pgno: 40
+- img_proc: true
+  md: '```
+
+    print("Equilateral triangle")
+
+    ```
+
+
+    ```
+
+    elif a==b or b==c or c==a:
+
+    ```
+
+
+    # An isosceles triangle has two angles that are equal, and two equal sides.
+
+
+    ```
+
+    print("Isosceles triangle")
+
+    ```
+
+
+    ```
+
+    else:
+
+    ```
+
+
+    # An obtuse triangle has one and only one obtuse angle.
+
+
+    ```
+
+    print("Obtuse triangle")
+
+    ```
+
+
+    # Output
+
+
+    Enter the first angle: 60
+
+
+    Enter the second angle:60
+
+
+    Enter the third angle:45
+
+
+    Isosceles triangle'
+  merge: -1
+  pgno: 41
+- img_proc: true
+  md: '# Python for loop
+
+
+    In Python, a for loop repeats a block of code based on a given sequence for a
+    specified number of times. Python’s for loop is unlike any other programming language,
+    such as C or Pascal. It traverses Python data structures such as lists, dictionaries,
+    and tuples.
+
+
+    # Syntax
+
+
+    for iterating_var in sequence:
+
+    nstatements
+
+
+    The expression list in a sequence is evaluated first. The iterating variable var
+    is then assigned to the first item in the sequence. After that, the statements
+    block is run.
+
+
+    The statement block is executed until the entire sequence is terminated; each
+    item in the list is allocated to iterating var.
+
+
+    ![](img/2bfe61f5593c3ea97ff290c1c0335a80_42_0.png)
+
+
+    # Flow- diagram
+
+
+    Iterate over the series in the above flow diagram for loop. It executes the statement
+    block using the first element of the chain. It continues on the next item in sequence
+    until no item left in the sequence.
+
+
+    # Examples of for loop'
+  merge: -1
+  pgno: 42
+- img_proc: true
+  md: "+   1. Create a program that prints the square of two numbers from a list of\
+    \ numbers.\n\n```\nlist = [1,2,3,4,5]\nfor e in list:\n    print(e**2)\n```\n\n\
+    # Output\n\n1\n4\n9\n16\n25\n\n+   2. Write a program to generate a character\
+    \ from a string.\n\n```\nstr = 'Python'\nfor e in str:\n    print(e[crayon-5e5a124aecfb8573956844\
+    \ inline=\"=\"true\"] ])\n```\n\n# Output\n\nP\ny\nt\nh\no\nnn\n\n+   3. Write\
+    \ a program to calculate the total number of items in a given list.\n\n```\nlist\
+    \ = [25,42,32,12,33]\nsum = 0\n```"
+  merge: -1
+  pgno: 43
+- img_proc: true
+  md: 'for e in list:
+
+    sum = sum+e
+
+    print("The sum is:",sum)
+
+
+    # Output
+
+
+    The sum is: 144
+
+
+    # Iterating by Sequence Index
+
+
+    We can iterate the series using the element’s index. Let’s start with a basic
+    understanding of the range function.
+
+
+    # The range () function:
+
+
+    To iterate over a given sequence of numbers, use the range function.
+
+
+    In most cases, three arguments are needed (stop and step are optional).
+
+
+    Python gives us the freedom to define a range function that meets our needs. Consider
+    the following scenario:
+
+
+    +   - range(n): Generate the numbers starting from start to n-1 range(5) will
+    generate 0,1,2,3,
+
+    - range(start,stop): Generate a set of numbers starting from start to stop-1 range(10)
+    will generate 0,1,2,3,4,5,6,7,8,9
+
+    - range(start,stop,step): We can generate numbers having difference of the given
+    step-size. range(3,20,3) will generate 3,6,9,12,15,18
+
+
+    # Example of for loop using range()
+
+
+    Write a program to calculate the sum of the first n natural numbers.
+
+
+    ```
+
+    n=int(input(''Enter the number’))\n# Define a variable to stored number for specific
+    range
+
+    sum=0
+
+    ```'
+  merge: -1
+  pgno: 44
+- img_proc: true
+  md: "```\nfor i in range(1,n+1):\n#As we know range(n) will generate n-1 that’s\
+    \ why we assign\nn+1\n#it will generate n-1-1 or n numbers\nsum=sum+i\n# Sum of\
+    \ numbers stored in sum variable\nprint(sum)\nWrite a program to determine whether\
+    \ or not a given\nnumber is prime.\n\nn = 12\n# If given number n is greater than\
+    \ 1\nif n>1:\n# Iterate from 2 to n // 2\n    for i in range(2, n // 2):\n   \
+    \     # If n is divisible by any number between 2 and n // 2, it is not\n    \
+    \    prime\n        if (n % i) == 0:\n            print(n,\"is not a prime number\"\
+    )\n            break\n        else:\n            print(n, “is a prime number\"\
+    )\nelse:\n    print(n, “is not a prime number\")\n```\n\n# Python Nested for loop\n\
+    \nThe term “nested loop” refers to a for loop that is nestled inside another for\
+    \ loop. In pattern programming, it’s best to"
+  merge: -1
+  pgno: 45
+- img_proc: true
+  md: "use nested for loops. For example:\n\n+   1. Create a program that prints triangle-shaped\
+    \ stars.\n\n```\nn = int(input(\"Enter the number of lines\"))\n# Take input for\
+    \ number of lines\nfor i in range(n):\n    #first for loop is using print number\
+    \ of lines\n    for j in range(i):\n        #second for loop is using for print\
+    \ star(*)\n        print('*\",end=\"\")\n    print()\n```\n\n+   2. Create a program\
+    \ that will find the prime number in a given range.\n\n```\nstart = int(input(\"\
+    Enter the start range\")\nstop = int(input(\"Enter the stop range\")\nfor n in\
+    \ range(start,stop+1):\n    # If given number n is greater than 1\n    if n>1:\n\
+    \        # Iterate from 2 to n // 2\n        for i in range(2,n//2):\n       \
+    \     # If n is divisible by any number between 2 and n // 2, it is not prime\n\
+    \            if(n%i==0):\n                break\n        else:\n            print(n)\n\
+    \    else:\n        print(\"the number is not greater than 1\")\n```"
+  merge: -1
+  pgno: 46
+- img_proc: true
+  md: "# Using else statement with for loop\n\nThe ‘else’ phrase is an optional part\
+    \ of the for loop in Python.\nOnly when the loop has completed all iterations\
+    \ does the ‘else’ statement run. Consider the following scenario:\n\n```\n[crayon-5e5a124aecfcd6080099145\
+    \ inline=\"true\"]for i in range(6):\n    print(i)\nelse:\n    print(\"Iteration\
+    \ is completed\")\n```"
+  merge: -1
+  pgno: 47
+- img_proc: true
+  md: '# Python while loop
+
+
+    Loops are crucial in Python and any other programming language because they allow
+    you to run a block of code repeatedly.
+
+
+    Often you''ll need to use a piece of code repeatedly, but you don''t want to write
+    the same line of code every time, so you''ll want to use Loop.
+
+
+    Looping statements are used to repeat the execution of several codes or statements
+    until the condition stated in the loops is falsely evaluated.
+
+
+    In Python, there are primarily two loop statements:
+
+
+    +   1. while loop
+
+    2. for loop
+
+
+    The while loop will be explained in this topic.
+
+
+    # while loop:
+
+
+    The while loop is used to continuously execute a statement until the loop''s condition
+    becomes false. It''s used when we don''t know how many iterations we''ll have
+    ahead of time.
+
+
+    # Syntax:
+
+
+    while expression:
+
+
+    statement
+
+
+    # Flow Diagram'
+  merge: -1
+  pgno: 48
+- img_proc: true
+  md: '![](img/2bfe61f5593c3ea97ff290c1c0335a80_49_0.png)
+
+
+    The provided condition is verified first in the above while loop diagram; if the
+    condition evaluates wrong, the loop is terminated, and control is transferred
+    to the next statement in the program after the loop.
+
+
+    If the condition is valid, the loop’s collection of statements will be executed,
+    and power will then be transferred to the beginning of the loop for the next iteration.
+
+
+    # Example of while loop:
+
+
+    The following are some examples of while loops:
+
+
+    We use an increment operation in the loop to raise the value of the given variable.
+
+
+    Since the while loop must have an increment or decrement operation, this is a
+    critical phase. Otherwise, the loop will continue to repeat itself forever.
+
+
+    +   1. Create a program that prints a table of a certain number.
+
+
+    ```
+
+    num=int(input("Enter the number\))
+
+    #define a variable for user input
+
+    i=0
+
+    while i<10:
+
+    #while loop will iterate as long as the value of i is less than
+
+    10
+
+    ```'
+  merge: -1
+  pgno: 49
+- img_proc: true
+  md: '```
+
+    i = i + 1
+
+    # Increment operation in i
+
+    c=num*i
+
+    # Multiply resultant stored in another variable c
+
+    print(num,''*'',i='','',c)
+
+    ```
+
+
+    # Output
+
+
+    Enter the number 12
+
+
+    +   - 12 * 1 = 12
+
+    - 12 * 2 = 24
+
+    - 12 * 3 = 36
+
+    - 12 * 4 = 48
+
+    - 12 * 5 = 60
+
+    - 12 * 6 = 72
+
+    - 12 * 7 = 84
+
+    - 12 * 8 = 96
+
+    - 12 * 9 = 108
+
+    - 12 * 10 = 120
+
+
+    +   2. Make a program that prints the phrase “hello world” several times.
+
+
+    num=1
+
+    #there is a variable num in which we store an integer 1.
+
+    while num<5:
+
+
+    ```
+
+    # we print the hello world fives times until condition evaluatesnfalse
+
+
+    print("Hello world")
+
+    num=num+1
+
+    ```'
+  merge: -1
+  pgno: 50
+- img_proc: true
+  md: "#we print out “Hello world” and increase the value of number with one.\n\n\
+    # Output\n\nHello world\n\nHello world\n\nHello world\n\nHello world\n\n+   3.\
+    \ Write a program to count how many even or odd numbers there are in the specified\
+    \ series.\n\n```\nnumber = 1\ncount_odd=0\ncount_even=0\nwhile number<10:\n  \
+    \  number=number+1\n    if number%2==0:\n        count_even=count_even+1\n   \
+    \ else:\n        count_odd=count_odd+1\n```\n\nprint('The count of even number:',count_even)\n\
+    print('The count of odd number:',count_odd)\n\n# Output\n\nThe count of even number:\
+    \ 5\nThe count of odd number: 4\n\n# Infinite while loop\n\nIf the given condition\
+    \ in the while loop never becomes false, the loop will become infinite and never\
+    \ end on its own. Any"
+  merge: -1
+  pgno: 51
+- img_proc: true
+  md: "non-zero value in a while loop often indicates a true state.\nConsider the\
+    \ following scenario:\n\n```\nnum=0\nwhile num<5:\n    print(\"hello\")\n```\n\
+    \n# else statement in a while loop\n\nWith the while loop, Python allows you to\
+    \ use the else expression.\nThe else assertion will be executed if the given condition\
+    \ becomes false. When using a while loop, the else statement is an option.\n\n\
+    For example:\n\n```\nnum = 1\nwhile num < 6:\n    print(num)\n    num = num+1\n\
+    else:\n    print(\"Loop is finished\")\n```\n\n# Output\n\n1\n2\n3\n4\n5\nLoop\
+    \ is finished"
+  merge: -1
+  pgno: 52
+- img_proc: true
+  md: '# # Python List
+
+
+    The list is one of Python’s most flexible and mutable data structures. It can
+    store a variety of data types and heterogeneous data.
+
+
+    Inside the square brackets, the list includes comma-separated values (item). In
+    Python, making a list is as easy as this:
+
+
+    ```
+
+    list1 = [''Abhay'',''Arjun'',''Himanshu'',''Anubhav'']
+
+    list2 = [1,2,3,4,5,6]
+
+    list3 = [''Himanshu'',20, 54.6,''Abhay'',''a'', ''b'']
+
+    ```
+
+
+    # ## Indexing and Slicing in List
+
+
+    # ### Indexing in List:
+
+
+    Indexing of list can be done by using [] operator.
+
+    list=[''P'', ''Y'', ''T'', ''H'', ''O'', ''N'']
+
+
+    ![](img/2bfe61f5593c3ea97ff290c1c0335a80_53_0.png)
+
+
+    The index location of the list can be used to view the list’s values. From 0 to
+    n-1, the index is used.
+
+
+    The 0th index is used to store the first element, and the first index is used
+    to store the second element, and so on.'
+  merge: -1
+  pgno: 53
+- img_proc: true
+  md: 'The rightmost index position is -1, the leftmost index position is -2, and
+    so on. For example:
+
+
+    +   list[0]=P list[-6]=P
+
+    list[1]=Y list[-5]=Y
+
+    list[2]=T list[-4]=T
+
+    list[3]=H list[-3]=H
+
+    list[4]=O list[-2]=O
+
+    list[5]=N list[-1]=N
+
+
+    # Slicing in List
+
+
+    Python has a feature that allows you to get a sub-list of a list. When we just
+    need a small amount of data from a list, slicing comes in handy.
+
+
+    The syntax is:
+
+
+    <em>list_variable</em>[start: end:step]
+
+
+    +   - <strong>start</strong> refers to the starting position of the list element.
+
+    - <strong>stop</strong> refers to the index of the element where we should <strong>stop</strong>
+    just before finishing of our slice.
+
+    - <strong>step</strong> allows you to take each nth-element within a <strong>start:stop</strong>
+    range.
+
+
+    Let''s look at this concept using below example:
+
+
+    Example-1:
+
+
+    ```
+
+    list = [10,20,30,40,50,60,70,80,90]
+
+    print(list[2:6])
+
+    ```
+
+
+    # Output
+
+
+    ```
+
+    [30, 40, 50, 60]
+
+    ```
+
+
+    Since the start is equal to 2, slicing begins at the second position in the example
+    above. Index 2 has a value of 30.'
+  merge: -1
+  pgno: 54
+- img_proc: true
+  md: 'The value of the stop indicates the list’s final part, which is 60. As a result,
+    it will come to a halt just before the stop index.
+
+
+    Each nth-element can be taken within a start:stop range using the steps.
+
+
+    | | list[2:6] | Stop |
+
+    |---|---|---|---|---|---|---||
+
+    | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+
+    | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 |
+
+    | -9 | -8 | -7 | -6 | -5 | -4 | -3 | -2 | -1 |
+
+
+    ![](img/2bfe61f5593c3ea97ff290c1c0335a80_55_0.png)
+
+
+    We can skip the start index and it will return to starting at 0. For example:
+
+
+    ```
+
+    list = [10,20,30,40,50,60,70,80,90]
+
+    print(list[:4])
+
+    ```
+
+
+    # Output
+
+
+    [10, 20, 30, 40]
+
+
+    So, list[:4] is the same as the list[0:4]. It’s a quick way to get the first nth
+    piece.
+
+
+    We may also skip the stop index. The last n elements of the specified list will
+    be returned. For example:
+
+
+    ```
+
+    list = [10,20,30,40,50,60,70,80,90]
+
+    print(list[4:])
+
+    ```
+
+
+    # Output
+
+
+    [50, 60, 70, 80, 90]
+
+
+    We skip the stop index in the above example, which means it takes elements elements
+    from the beginning to the end of the list.'
+  merge: -1
+  pgno: 55
+- img_proc: true
+  md: '# Example-2:
+
+
+    ```
+
+    list = [10,20,30,40,50,60,70,80,90]
+
+    print(list[::])
+
+    ```
+
+
+    <em>By default step-size
+
+    1. There is no need to specify it
+
+
+    ```
+
+    </em>print(list::2])
+
+    <em># Here step-size is two
+
+    </em>print(list[1::3])
+
+    print(list[2:7])
+
+    ```
+
+
+    # Output
+
+
+    [10, 20, 30, 40, 50, 60, 70, 80, 90]
+
+    [10, 30, 50, 70, 90]
+
+    [20, 50, 80]
+
+    [30, 50, 70]
+
+
+    We can omit the start and stop arguments in the above program and only use the
+    move argument. We can skip some elements by providing a move.
+
+
+    # Accessing elements of list using negative indexing
+
+
+    ```
+
+    list = [10,20,30,40,50,60,70,80,90]
+
+    print(list[-3::])
+
+    ```
+
+
+    <em># The index position is
+
+    count from backward. start is -3 and it will proceed to last index of list
+
+
+    ```
+
+    </em>print(list[1:-1])
+
+    print(list[-5:2])
+
+    <em># Here step-size is two
+
+    </em>print(list[-3::])
+
+    print(list[1:-3:2])
+
+    ```'
+  merge: -1
+  pgno: 56
+- img_proc: true
+  md: '```
+
+    print(list[:7:-2])
+
+    print(list[::-1])
+
+    <em># step-size is -1.it will
+
+    reverse entire list </em>
+
+    ```
+
+
+    # Output
+
+
+    [70, 80, 90]
+
+
+    [20, 30, 40, 50, 60, 70, 80]
+
+
+    [50, 60, 70]
+
+
+    [70, 80, 90]
+
+
+    [20, 40, 60]
+
+
+    [90]
+
+
+    [90, 80, 70, 60, 50, 40, 30, 20, 10]
+
+
+    # Modification (update) in List
+
+
+    Lists are mutable, which means we can use the slice and assignment operators to
+    change the elements of the list’s.
+
+
+    To add value to a list, use the list append() function.
+
+
+    ```
+
+    list = [10,21,30,45,50,60,63,78,80,90]
+
+    list[0]=1
+
+    print(list)
+
+    list[1:4]=[2,3,4]
+
+    print(list)
+
+    list[2]= <strong>Himanshu</strong>
+
+    print(list)
+
+    list[3:5]=<strong>''abc</strong>
+
+    print(list)
+
+    ```
+
+
+    # Output'
+  merge: -1
+  pgno: 57
+- img_proc: true
+  md: '[1,21, 30, 45, 50, 63, 78, 80, 90]
+
+
+    [1, 2, 3, 4, 50, 63, 78, 80, 90]
+
+
+    [1, 2, ‘Himanshu’, 4, 50, 63, 78, 80, 90]
+
+
+    [1, 2, ‘Himanshu’, ‘a’, ‘b’, ‘c’, 63, 78, 80, 90]
+
+
+    # Deletion in List
+
+
+    The del keyword is used to remove a list feature. When we know exactly which aspect
+    needs to be removed, we use it. The element may also be deleted using the remove
+    () or pop () methods.
+
+
+    For example:
+
+
+    ```
+
+    list = [10,21,30,45,50,63,78,80,90]
+
+    ```
+
+
+    ```
+
+    <strong>del </strong>list[0]
+
+    ```
+
+
+    ```
+
+    print(list)
+
+    ```
+
+
+    ```
+
+    <strong>del </strong>list[1:4]
+
+    ```
+
+
+    ```
+
+    print(list)
+
+    ```
+
+
+    ```
+
+    <strong>del </strong>list[::2]
+
+    ```
+
+
+    ```
+
+    print(list)
+
+    ```
+
+
+    # Output
+
+
+    [21,30, 45, 50, 63, 78, 80, 90]
+
+
+    [21, 63, 78, 80, 90]
+
+
+    [63, 80]
+
+
+    # Basic Operations in List
+
+
+    +   * The following is a list of different operations.
+
+
+    +   * Repetition
+
+
+    The repetition operator (*) is used to repeatedly repeat list elements.'
+  merge: -1
+  pgno: 58
+- img_proc: true
+  md: '```
+
+    list1=[1,2,3,4,5]
+
+    print(list1*2)
+
+    ```
+
+
+    # Output
+
+
+    [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+
+
+    +   - Concatenation
+
+    Concatenating two or more lists is done with the concatenation operator (+).
+
+    list1=[1,2,3,4,5]
+
+    list2=[6,7,8,9,10]
+
+    print(list1+list2)
+
+
+    # Output
+
+
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+    +   - Iteration
+
+    The list can be iterated using for loop
+
+    list1=[1,2,3,4]
+
+    <strong>for </strong><i>in</i> <strong>list1:
+
+    print(i)
+
+
+    # Output
+
+
+    1
+
+    2
+
+    3
+
+    4
+
+
+    +   - Membership
+
+    If an object exists in a list, it returns true; otherwise, it returns false.
+
+    list1=[1,2,3,4]'
+  merge: -1
+  pgno: 59
+- img_proc: true
+  md: '```
+
+    print(3 <strong>in </strong>list1)
+
+    ```
+
+
+    # # Output
+
+
+    True
+
+
+    # Built-in functions in List
+
+
+    | Sr. no. | Functions | Description |
+
+    | --- | --- | --- |
+
+    | 1. | len(list) | it is used to compute the length of list |
+
+    | 2. | cmp(list, list2) | it compares the elements of both the lists. |
+
+    | 3. | max(list) | it returns the maximum element of the list. |
+
+    | 4. | min(list) | it returns the minimum element of the list. |
+
+    | 5. | list(seq) | it changes any sequence to the list. |'
+  merge: -1
+  pgno: 60
+- img_proc: true
+  md: '# Python Tuple Methods
+
+
+    Tuples are handled by two built-in Python methods. The two methods are as follows:
+
+
+    | Method | Description |
+
+    | --- | --- |
+
+    | count() | The tuple.count() method in Python returns the number of times a specified
+    value appears in the tuple.
+
+    | index() | The tuple.index() method in Python returns the smallest index of the
+    specified element in the tuple. |
+
+
+    Example 1
+
+
+    ```
+
+    # Python program explaining
+
+    # the tuple method
+
+    # initializing the tuple values
+
+    tupleVal = (1, 2, 3,4,5, 7, 8, 7, 5, 5, 6, 4, 4)
+
+    print("Tuple:",tupleVal)
+
+    # counting the number or occurneces of 4 in the given tuple
+
+    occureneces = tupleVal.count(4)
+
+    # printing the returned value
+
+    print("The item ‘4’ occured ",occureneces,"times")
+
+    ```
+
+
+    Output
+
+
+    Tuple: (1, 2, 3, 4, 5, 7, 8, 7, 5, 5, 6, 4, 4)
+
+
+    The item ‘4’ occured 3 times
+
+
+    Example 2'
+  merge: -1
+  pgno: 61
+- img_proc: true
+  md: '```
+
+    # Python program explaining
+
+    # the tuple method
+
+    # initializing the tuple values
+
+    tupleVal = ("e","i","j","o","u","a","a")
+
+
+    print("Tuple:",tupleVal)
+
+    # the tuple.index() method
+
+    # finds the first occurrence of the specified value and returns
+
+    its index
+
+
+    Index = tupleVal.index("a")
+
+    # printing the returned value
+
+    print("The index value of ''a'' is ",Index)
+
+    ```
+
+
+    # Output
+
+
+    Tuple: (''e'', ''i'', ''j'', ''o'', ''u'', ''a'', ''a'')
+
+
+    The index value of ''a'' is 4'
+  merge: -1
+  pgno: 62
+- img_proc: true
+  md: '# Python Dictionary
+
+
+    A Python dictionary is a mutable list of data with key-value pairs that are not
+    in any particular order. It keeps track of both the key and the value, allowing
+    a key to access the value it represents.
+
+
+    A Python dictionary is a set of dictionary items that can be quickly retrieved
+    using their key.
+
+
+    Inside a dictionary, the keys must be unique. The meaning of the dictionary may
+    be any data type, but the keys must be immutable data types like numbers, strings,
+    or tuples.
+
+
+    # Creating a dictionary
+
+
+    Inside the curly bracket, a Python dictionary stores data in key-value pairs,
+    with key and value separated by a colon(:). For example:
+
+
+    ```
+
+    student=
+
+    {''name'':''Himanshu'',''age'':11,''class'':''Fifth'',''Roll_no'':17}<br>
+
+    print(type(student))<br>
+
+    print(student)
+
+    ```
+
+
+    # Output
+
+
+    ```
+
+    <class ''dict''>
+
+    {''name'': ''Himanshu'',''age'': 11,''class'': ''Fifth'',''Roll_no'':17}
+
+    ```
+
+
+    An empty dictionary is declared by empty curly {} braces.
+
+    student={}
+
+    print(type(student))
+
+
+    # Dictionary operations
+
+
+    # Accessing value from - dictionary'
+  merge: -1
+  pgno: 63
+- img_proc: true
+  md: 'The index operator [] is used to access the value from a dictionary, and the
+    key is used within the square brackets. The get() method in Python can also be
+    used to access the value. For example.
+
+
+    ```
+
+    student=
+
+    {''name'':''Himanshu'',''age'':11,''class'':''Fifth'',''Roll_no'':17}
+
+    #accessing element using key
+
+
+    print(student[''name''])
+
+
+    print(student[''age''])
+
+
+    print(student[''Roll_no''])
+
+
+    #accessing value using get()
+
+    print(student.get(''class''))
+
+    ```
+
+
+    # Output
+
+
+    Himanshu
+
+
+    11
+
+
+    17
+
+
+    Fifth
+
+
+    We get an error if we try to reach a value that does not exist in the specified
+    dictionary.
+
+
+    ```
+
+    student =
+
+    {''name'':''Himanshu'',''age'':11,''class'':''Fifth'',''Roll_no'':17}
+
+    print(student[''subject''])
+
+    ```
+
+
+    # Output
+
+
+    ```
+
+    line 2, in <module>
+
+
+    print(student[''subject''])
+
+    KeyError: ''subject''
+
+    ```
+
+
+    # Modification (update) in Dictionary'
+  merge: -1
+  pgno: 64
+- img_proc: true
+  md: "A dictionary can be updated by introducing new key-value pairs. Since the dictionary\
+    \ is a mutable data form, its contents can be modified or removed with the use\
+    \ of special keys.For example:\n\n```\nstudent = \n{'Name’:‘Himanshu’,‘Age’:11,'Class’:‘Fifth’,‘Roll_no’:17}\n\
+    student['Class']='Dps School ' #Adding New key with its\nvalue\n```\n\n```\nstudent['Age']\
+    \ = 12 #update existing value\n```\n\n```\nprint(student)\n```\n\n# Output\n\n\
+    ```\n‘Name’:‘Himanshu’,‘Age’:12,‘Class’:‘Fifth’,‘Roll_no’:17,‘School’:‘Dps School’}\n\
+    ```\n\n# Deletion in Dictionary\n\nBy using the keyword, you can remove a dictionary\
+    \ feature. We have the option of removing a single element or clearing the entire\
+    \ dictionary.\n\nstudent =\n\n```\n‘Name’:‘Himanshu’,‘Age’:11,'Class’:‘Fifth’,‘Roll_no’:17\n\
+    ```\n\n```\ndel student['Class'] #deleting the Class key\n```\n\n```\nprint(student)\n\
+    ```\n\n```\nprint(student['Class'])\n```\n\n# Output\n\n```\nline 9, in <module>\n\
+    ```\n\n```\n‘Name’:‘Himanshu’,‘Age’:11,‘Roll_no’:17\n```\n\n```\nprint(student['Class'])\n\
+    ```\n\n```\nKeyError: ‘Class’\n```\n\nTo clear all elements of a dictionary, Python\
+    \ provides the clear() process. It returns a dictionary that is empty."
+  merge: -1
+  pgno: 65
+- img_proc: true
+  md: 'student = =
+
+    {''Name'':''Himanshu'',''Age'':11,''Class'':''Fifth'',''Roll_no'':17}
+
+    student.clear() #deleting all the element of the dictionary
+
+    print("The empty string is:",student)
+
+
+    # Output
+
+
+    The empty string is: {}
+
+
+    # Properties of Dictionary Keys
+
+
+    There are a few things to keep in mind when using dictionary keys.
+
+
+    +   1. The duplicate key is not permitted in the dictionary, which means we can''t
+    use the same key with different values. If we declare the same key for multiple
+    values, the last assigned value will be stored. Consider the following illustration.
+
+
+    student =
+
+    {''Name'':''Himanshu'',''Age'':11,''Class'':''Fifth'',''Roll_no'':17}
+
+    {''Name'':''Dev''}
+
+    # We assign Name key with multiple time then it will consider the last assigned
+    value
+
+    print("Last assign name is:
+
+
+    # Output
+
+
+    Last assign name is: Dev
+
+
+    We may use numbers, strings, or tuples as dictionary keys since they must be immutable.
+    However, mutables such as [''key''] are not permitted.For example:
+
+
+    student = {[[''Name'']:Himanshu'',''Age'':11,''Class'':''Fifth''}
+
+    print(student)'
+  merge: -1
+  pgno: 66
+- img_proc: true
+  md: '# Output
+
+
+    line 2, in <module>
+
+    student = {[''Name'']:''Himanshu'',''Age'':11,''Class'':'':''Fifth''}
+
+    TypeError: unhashable type: ‘list’
+
+
+    # Built-in Dictionary functions
+
+
+    | Sr. no. | Functions | Description |
+
+    |--- | :--- | :--- |
+
+    | 1. | len(dict) | it is used to compute the length of dictionary |
+
+    | 2. | cmp(dict1, dict2) | it compares the elements of both the dictionary. |
+
+    | 3. | str(dict) | it converts the dictionary into printable string representation.
+    |
+
+    | 4. | type(variable) | it is used to print the type of the passed variable. |'
+  merge: -1
+  pgno: 67
+- img_proc: true
+  md: '# Python Function
+
+
+    A Python function is a reusable, well-organized code block that performs a specific
+    task. The functions are a good way to break down a large program into manageable
+    chunks. It also allows our program to be reused. The feature can be used to reuse
+    a code block
+
+
+    Python is more versatile than other programming languages since all functions
+    are viewed as objects.
+
+
+    There are two types of functions in Python:
+
+
+    +   * Built-in functions – The Python libraries and packages contain these features.
+
+
+    +   * User-defined functions – These functions are specified by the user according
+    to their needs. In this tutorial, we will learn about the user-defined feature.
+
+
+    # Creating a function
+
+
+    The basic steps for creating a user-defined feature are outlined below.
+
+
+    +   * To describe a function, use the def keyword followed by the function name.
+
+
+    +   * Arguments should be written within the function’s opening and closing parentheses,
+    and the statement should end with a colon.
+
+
+    +   * Inside the function body, write the program statements to be executed.
+
+
+    +   * The return statement is not needed. It must appear at the end of the feature.
+
+
+    The syntax is given below:
+
+
+    ```
+
+    def function_name(argument list):
+
+    ```'
+  merge: -1
+  pgno: 68
+- img_proc: true
+  md: "The function body\n\nThere can be zero or more arguments in the justification\
+    \ list. Parameters are another name for claims. The body of the feature includes\
+    \ indented statements. When the function is called, the body of the function is\
+    \ executed. Arguments may be optional or necessary.\n\n# Calling a Function\n\n\
+    A function must be named after it has been declared by using the function name\
+    \ followed by parentheses and the relevant argument.\n\nNote: A function must\
+    \ be defined before it can be called; otherwise, an error may occur.\n\nThink\
+    \ of the following scenarios:-1\n\n# Example-1\n\n```\ndef hello():\n    print('Hello')\n\
+    hello()\n```\n\n# Output\n\nHello\n\n# Example-2\n\n```\ndef sum(a,b):\n    #\
+    \ define a function sum with two argument\n    c=a+b\n    return c\n#returning\
+    \ the value to calling function\n```"
+  merge: -1
+  pgno: 69
+- img_proc: true
+  md: "```\nz=sum(10,20)\nprint(\"The sum is:\",z)\n```\n\n# Output\n\nThe sum is\
+    \ 30\n\n# Parameter Passing\n\nPassing an argument to a function can be done in\
+    \ one of two ways.\n\n+   - Call by Value\n\nThis technique is used in C, C++,\
+    \ and Java, but not in Python.\nThe values of actual parameters are copied to\
+    \ the formal parameters of the function in call by value, and both types of parameters\
+    \ are stored in different memory locations.\nAs a result, any adjustments we make\
+    \ to formal parameters will not be reflected in the caller function's actual parameters.\n\
+    \n+   - Call by Reference\n\nIn Python, functions are named by reference, which\
+    \ means that any changes made within the function are reflected in a real parameter.\n\
+    Consider following examples:\n\n# Example 1:\n\n```\ndef mul(m,n):\n    c=m*n\n\
+    \    return c\na=int(input(\"Enter the number:\"))\nb=int(input(\"Enter the number:\"\
+    ))\n```"
+  merge: -1
+  pgno: 70
+- img_proc: true
+  md: "```\nz=mul(a,b)<br>\nprint(\"The multiply is:\",z)\n```\n\n# Output\n\nEnter\
+    \ the number: 60\n\nEnter the number: 50\n\nThe sum is: 110\n\nThe specified function\
+    \ in the above program is mul(m,n), with m and n being formal arguments, and the\
+    \ caller function is mul(a,b), with a and b being the actual arguments.\n\n# Example-2\n\
+    \nCreate a program that takes a list and returns a list with a distinct feature.\n\
+    \n```\ndef dup_list(list):\nlist1=[]\nfor i in list:\n    if i not in list:\n\
+    \        list1.append(i)\nreturn list1\n\nlist = [1,1,2,1,3,3,4,4,5,6,5,7]\nprint('The\
+    \ duplicate list is:',list)\nz=dup_list(list)\n```\n\n```\nprint('The unique list\
+    \ is:',z)\n```\n\n# Output\n\nThe duplicate list is:[1,1,2,1,3,3,4,4,5,6,5,7]\n\
+    \nThe unique list is: [1, 2, 3, 4, 5, 6, 7]"
+  merge: -1
+  pgno: 71
+- img_proc: true
+  md: "# Types of arguments\n\nThere are several different types of claims, as mentioned\
+    \ below.\n\n+   1. Required arguments\n2. Default arguments\n3. Keyword arguments\n\
+    4. Variable-length arguments\n\n* Required Arguments\nThe appropriate arguments\
+    \ are those that must be passed when calling a function and must fit their positions\
+    \ in the function description exactly. The Python interpreter will display an\
+    \ error if the argument is not given in the function call or if the arguments\
+    \ location has been changed.\n\n# Example 1\n\n```\ndef sqr_list(list):\n    emp_list=[]\n\
+    \    for i in list:\n        emp_list.append(i**2)\nprint(emp_list)\n```\n\nsqr_list([1,2,3,4,5,6,7,8,9,10])\n\
+    \n# Output\n\n[1, 4, 9, 16, 25, 36, 49, 81, 100]\n\n# Example-2\n\n```\ndefsum(a,b):\n\
+    \    c=a+b\n    return c\n```\n\nprint(sum(20))#There is only one argument is\
+    \ passed."
+  merge: -1
+  pgno: 72
+- img_proc: true
+  md: "# Output\n\nline 4, in <module>\nprint(sum(20))\n\nTypeError: sum() missing\
+    \ 1 required positional argument: ‘b'\n\n+   - Default argument\n\nDefault arguments\
+    \ are those that have a value assigned to them at the time of function description.\
+    \ If the argument isn’t defined at the time of the function call, it will be set\
+    \ to the value specified in the specification.\n\nFor example\n\n# Example 1\n\
+    \n```\ndef student(name,age=21):\n    print('My name is:',name)\n    print('My\
+    \ age is',age)\n```\n\nstudent('Dev') #Here argument is not passed default value\
+    \ is provided in definition<br><em>student('Himanshu',25) # The value of age is\
+    \ overwritten</em></em>\n\n# Output\n\nMy name is: Dev\n\nMy age is 21\n\nMy name\
+    \ is: Himanshu\n\nMy age is 25\n\n+   - Keyword arguments\n\nThe advantage of\
+    \ keyword arguments is that we can pass them in any order, so the order in which\
+    \ they are passed doesn’t matter. Any statement is viewed as though it were a\
+    \ keyword."
+  merge: -1
+  pgno: 73
+- img_proc: true
+  md: "It will fit the names of arguments in the function description\n call.\n\n\
+    # Example-1\n\n```\ndef employee(id,name,age):\n\nprint('Employee Id:',id,'\\\
+    nEmployee\nName:',name,'\\nEmployee\nAge:',age)\n\nemployee(age=30,id=1,name='Sushant')\n\
+    ```\n\n# Output\n\nEmployee Id: 1\nEmployee Name: Sushant\nEmployee Age: 30\n\n\
+    We passed the arguments in a different order in function calls\nin the above program.\
+    \ The name of the arguments must match\nname of the function definition; otherwise,\
+    \ an error will\nappear.\n\n+   * Both the keyword argument and the required argument\n\
+    can be passed together. For example:\ndef employee(name,amount,message):\n\n```\n\
+    print(message,name,'amount\ncreited',amount)\n\nemployee('Robert',message='Hello',amount=20000)\n\
+    ```\n\n# Output"
+  merge: -1
+  pgno: 74
+- img_proc: true
+  md: "Hello Robert amount credited 20000\n\nThe requisite argument comes first in\
+    \ the above program,\nfollowed by two keyword arguments.\n\nIt's important to\
+    \ note that the requisite argument must not\\come after the keyword argument;\
+    \ otherwise, an error will be\nshown.\n\n+   * Variable-length arguments\n\nWhere\
+    \ we are unsure about the number of arguments that can\nbe transferred to a function,\
+    \ variable-length arguments are\nused.\n\nIn a function, there are two types of\
+    \ variable-length arguments:\n\n+   *args (Non-Keyword argument)\n* *kwargs (Keyword\
+    \ argument)\n\n# Scope of Variable\n\nThe scope of variables is determined by\
+    \ the location where\they are declared. There are two types of scopes for variables.\n\
+    \n+   * Global Variable\n\nSince global variables are specified outside of the\
+    \ function,\nhey can be accessed anywhere in the software.\n\n+   * Local Variable\n\
+    \nSince local variables are specified within the function, they\ncan only be accessed\
+    \ within the function.\n\nConsider following example:\n\n# Example-1 Global Variable\n\
+    \n```\nsum = 0\n\n variable defined outside the function\n```"
+  merge: -1
+  pgno: 75
+- img_proc: true
+  md: "```\ndef add(a,b):\n    sum = a+b # the variable sum accessed inside the function\n\
+    \    print(sum)\nadd(54,65)\n```\n\n# Output\n\nThe sum is: 119\nThe value od\
+    \ od sum outside the function: 0\n\n# Example - 2 Local Variable\n\n```\ndef mul(a,b):\n\
+    \    c = a*b # The variable c is defined inside the function\n    print('The multiply\
+    \ is:',c)\n```\n\nmul(20,30)\nprint(c) # The variable c is a function-specific\
+    \ variable that cannot be accessed outside of the function.\n\n# Output\n\nThe\
+    \ multiply is: 600\nline 6, in <module>\nNameError: name 'c' is not defined"
+  merge: -1
+  pgno: 76
+- img_proc: true
+  md: '# # Python File Handling
+
+
+    # ## What is the file?
+
+
+    The file is a single unit that contains a set of data. It’s used to store data
+    in non-volatile memory, like a hard drive.
+
+
+    The RAM (Random Access Memory), which is a volatile memory, is where most computer
+    programs run. All data is lost when the program is terminated, so we must save
+    it to permanent storage or a local file.
+
+
+    As a result, in Python, file handling can be accomplished in the following order:
+
+
+    +   * Open a file
+
+    * Read or write (perform operation)
+
+    * Close the file
+
+
+    # ### Open a file
+
+
+    The built-in function open () in Python is used to open a file. A file object
+    will be returned by this function. To return a file object, the open () function
+    is combined with the two arguments. The file name is accepted in the first argument,
+    and the file mode is accepted in the second.
+
+
+    The syntax following:
+
+
+    ```
+
+    fs = open(filename, access mode)
+
+    ```
+
+
+    **filename**- The name of the file we want to open is included in this argument.
+
+
+    **access_mode** – This argument specifies the file’s open mode, such as read,
+    write, add, and so on. This argument is not required; if it is not given, the
+    file will open in **r** read mode by default.
+
+
+    Consider following example:'
+  merge: -1
+  pgno: 77
+- img_proc: true
+  md: '```
+
+    fs = open(''newfile.txt'',''w'')<br> if fs:<br> print(`file
+
+    opened successfully`)
+
+    ```
+
+
+    # Output
+
+
+    file opened successfully
+
+
+    # Closing a file
+
+
+    After completing a file process, we must properly close the file. To close a file,
+    Python provides the close () process.
+
+
+    The () function releases resources that were previously bound to the file. While
+    Python has a garbage collector, it is a good idea to use close () to properly
+    close the file.
+
+
+    ```
+
+    fs = open(''myfile.txt'',''w'')<br> #perform file operation<br>fs.close()
+
+    ```
+
+
+    # How to write into file
+
+
+    Write () is a Python function that allows you to write to a file. It must be opened
+    in write mode (w or a). Consider the following illustration:
+
+
+    # In write mode, open the file myfile.txt. If no such file exists, it creates
+    one.
+
+
+    ```
+
+    fs = open(''myfile.txt'',''w'')
+
+    #writing the content to the file
+
+    fs.write("We are writing this line into the file")
+
+    fs.write("Python is the most popular programming language")
+
+    #closing the opened file
+
+    fs.close()
+
+    ```
+
+
+    # myfile.txt'
+  merge: -1
+  pgno: 78
+- img_proc: true
+  md: 'We are writing this into the file. Python is the most popular programming language.
+
+
+    # How to read the file
+
+
+    Read () is a Python function that reads the contents of a file.
+
+    The read ( ) method takes a string from a file and returns it.
+
+    The following is the syntax:
+
+
+    # Fileobj.read(count)
+
+
+    The count statement takes a positive number and counts the characters in the string.For
+    example:
+
+
+    ```
+
+    fs = open(''myfile.txt'',''r'')
+
+    z=fs.read(10)
+
+    y = type(z)
+
+    print(z)
+
+    ```
+
+
+    The readline () function in Python reads the file line by line.
+
+    reads a file until the newline is reached.
+
+
+    ```
+
+    fs = open(''myfile.txt'',''r+'')
+
+    z = fs.readline()
+
+    print(z)
+
+    ```'
+  merge: -1
+  pgno: 79
+- img_proc: true
+  md: '# JAVASCRIPT
+
+
+    # PROGRAMMING BASICS
+
+
+    # STEP BY STEP GUIDE FOR
+
+
+    # BEGINNERS
+
+
+    # JAKE BOND'
+  merge: -1
+  pgno: 80
+- img_proc: true
+  md: "# Javascript Introduction\n\nThis JavaScript lesson makes it simple for both\
+    \ beginners and experts to learn JavaScript.\n\nWhat is JavaScript and how does\
+    \ it work?\n\nJavaScript is a dynamic programming language for computers. It is\
+    \ a lightweight and cross-platform object-based scripting language.\n\nWith the\
+    \ aid of JavaScript, we can make our website more vibrant and engaging.\n\nBrendan\
+    \ Eich, a Netscape employee, designed it in 1995.\n\nIt’s a programming language\
+    \ that’s used to make interactive websites. It’s most commonly used for:\n\n+\
+    \   * Validation on the client’s end.\n* Its drop-down menus are dynamic.\n* It\
+    \ shows the current date and time.\n* Before transferring data to a server, validate\
+    \ user input in an HTML form.\n* Create forms that respond to user input without\
+    \ requiring a connection to a server.\n* Install new windows or frames to close\
+    \ them.\n* Using popup windows and dialog boxes to display information.\n  (for\
+    \ example, an alert dialog box, a confirm dialog box, or a prompt dialog box)\n\
+    * Create client-side programs that are small but complete.\n* Clocks and other\
+    \ timepieces\n* Game and app development for mobile devices."
+  merge: -1
+  pgno: 81
+- img_proc: true
+  md: '# Features of Javascript
+
+
+    +   * JavaScript is a scripting language that is based on objects.
+
+    * The language is case sensitive.
+
+    * It''s light in weight.
+
+    * In JavaScript, every statement must be followed by a semicolon (;).
+
+
+    # Advantages of Javascript
+
+
+    +   * JavaScript is a scripting language that is interpreted. There is no need
+    for a compiler because there is no compilation process. JavaScript is interpreted
+    by the browser as HTML tags.
+
+    * JavaScript is a simple programming language. It is very simple to learn for
+    anyone. It''s used to create dynamic and appealing websites.
+
+    * Because JavaScript is run on the client side, it lowers the load on the website
+    server.
+
+    * It includes conditional checking, loops, and branching functionality that can
+    be used in web pages.
+
+    * For the end user, JavaScript is relatively quick. They don''t have to wait for
+    the page to reload to see if they missed something.
+
+    * Web pages now have more functionality. To provide our site visitors with more
+    functionality, we can use JavaScript to include drag-and-drop components and sliders.
+
+
+    # JavaScript Example
+
+
+    ```
+
+    <h2>Welcome to JavaScript</h2>
+
+    <script>
+
+    document.write("Hello JavaScript by TutorialandExample");
+
+    </script>
+
+    ```'
+  merge: -1
+  pgno: 82
+- img_proc: true
+  md: '# Output
+
+
+    Welcome to JavaScript
+
+
+    Hello JavaScript by TutorialandExample'
+  merge: -1
+  pgno: 83
+- img_proc: true
+  md: '# Javascript Example
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <h2>Welcome to JavaScript</h2>
+
+    <script>
+
+    document.write("Hello Friends");
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # Output
+
+
+    Welcome to JavaScript
+
+
+    Hello Friends
+
+    JavaScript can be implemented by including JavaScript statements in the code.
+
+    <script>...</script>.
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <script type="text/javascript">
+
+    document.write("Hello World");
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # Output'
+  merge: -1
+  pgno: 84
+- img_proc: true
+  md: 'Hello World
+
+
+    In JavaScript, code may be written in three places.
+
+
+    +   1. Between the <body>......</body> tag of HTML.
+
+    2. Between the <head>......</head> tag of HTML.
+
+    3. In .jsfile(external JavaScript).
+
+
+    As an illustration (code between the body tags)
+
+
+    In the example below, the body tag contains JavaScript code.
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <script type="text/javascript">
+
+    alert("Hello world");
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # Example2
+
+
+    (between the head tag, the code) (
+
+
+    We''ll create the function msg in the example below (). In JavaScript, you must
+    write function in function name to define a function. To invoke a function, we
+    must first create an event. We''re using the one-click event to call the msg()
+    function in this case.
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <script type="text/javascript">
+
+    function msg() {
+
+    ```'
+  merge: -1
+  pgno: 85
+- img_proc: true
+  md: '```
+
+    alert("Hello world");
+
+    }
+
+    </script>
+
+    </head>
+
+    <body>
+
+    <p>Welcome to Javascript</p>
+
+    <form>
+
+    <input type="button" value="click" onclick="msg()"/>
+
+    </form>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # External JavaScript file
+
+
+    We can create a JavaScript file that we can include in HTML files.
+
+
+    Because a single JavaScript file may be used in multiple HTML pages, it allows
+    for code reuse.
+
+
+    It improves the web page’s performance.
+
+
+    The file must have a .js extension.
+
+
+    # Example
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <script type="text/javascript" src="message.js"></script>
+
+    </head>
+
+    <body>
+
+    <p>Hello world</p>
+
+    ```'
+  merge: -1
+  pgno: 86
+- img_proc: true
+  md: '```
+
+    <form>
+
+    <input type="button" value="click" onclick="msg()"/>
+
+    </form>
+
+    </body>
+
+    </html>
+
+    ```'
+  merge: -1
+  pgno: 87
+- img_proc: true
+  md: '# Javascript comment
+
+
+    Comments in JavaScript are used to describe the code. It''s used to include code-related
+    information, such as warnings or suggestions, so that end users can understand
+    it.
+
+
+    # JavaScript comments Types
+
+
+    +   1. Single-line Comment
+
+    2. Multi-line Comment
+
+
+    Single-line Comment
+
+    Double forward slashes (//) are used to express single-line comments. While the
+    program is running, any text between the double forward slashes (//) and the end
+    of the line will be ignored.
+
+
+    eg. Comment added - before the statement.
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <script>
+
+    // single-line comment //
+
+    document.write("hello world");
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    eg. Comment added - after the statement.
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <script>
+
+    ```'
+  merge: -1
+  pgno: 88
+- img_proc: true
+  md: '```
+
+    var a=10;
+
+    var b=20;
+
+    var c=a+b; //It add values of a and b variable
+
+    document.write(c); // print sum of 10 and 20
+
+
+    </script>
+
+    <body>
+
+    </html>
+
+    ```
+
+
+    # Output
+
+
+    30
+
+
+    # Multi-line comment
+
+
+    Single and multi-line comments can both be made with multi-line comments. Comments
+    that span multiple lines begin with /* and conclude with */. JavaScript will ignore
+    the text in between them.
+
+
+    /* Write comment here */
+
+
+    # Example
+
+
+    ```
+
+    <DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <script>
+
+    /* It is multi-line comment.
+
+    It will not be displayed */
+
+    document.write (“Example of JavaScript multi line comment");
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```'
+  merge: -1
+  pgno: 89
+- img_proc: true
+  md: "# Javascript Variable\n\nValues (name=\"Ram\") and expressions (Sum=x+y) are\
+    \ stored in variables.\n\nWe must first declare a variable before utilizing it.\
+    \ To declare a variable, we use the term var as follows:\n\nvar name;\n\nThere\
+    \ are 2 types of variables:\n\n+   1. Local Variable\n2. Global Variable\n\nLocal\
+    \ Variable– It’s declared inside a function or a block.\n\nExample\n\n```\n<script>\n\
+    functionabc(){\n  var x=10; //local variable\n</script>\n```\n\nGlobal Variable-\
+    \ It has a global scope, meaning that it can be defined anywhere in JavaScript\
+    \ code.\n\nOutside of the function, a variable is declared.\n\nExample\n\n```\n\
+    <!DOCTYPE html>\n<html>\n<body>\n<script>\n  var data =200; //global variable\n\
+    \  function a(){\n```"
+  merge: -1
+  pgno: 90
+- img_proc: true
+  md: '```
+
+    document.writeln(data);
+
+    }
+
+    function b() {
+
+    document.writeln(data);
+
+    }
+
+    a();//calling javascript function
+
+    b();
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # In JavaScript, declaring a global variable within a function
+
+
+    To declare a JavaScript global variable inside a function, we must use the window
+    object.
+
+
+    # Example
+
+
+    window.value=90;
+
+
+    It can now be declared within any function and accessed from any function.
+
+
+    # Example
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <script>
+
+    function a() {
+
+    window.value=50; //declare global variable by use of window object
+
+    }
+
+    function b() {
+
+    ```'
+  merge: -1
+  pgno: 91
+- img_proc: true
+  md: '```
+
+    alert(window.value);//access global variable from other function
+
+    }
+
+    a();
+
+    b();
+
+    <script>
+
+    </body>
+
+    </html>
+
+    ```'
+  merge: -1
+  pgno: 92
+- img_proc: true
+  md: '# Javascript Data Types
+
+
+    It has a variety of data types to hold various types of values.
+
+
+    In Javascript, there are two sorts of data types.
+
+
+    +   1. Primitive data types.
+
+    2. Non-primitive data types.
+
+
+    Because JavaScript is a dynamic type language, we don''t need to define the type
+    of variable because the JavaScript engine uses it dynamically. The data type is
+    specified using var in this case. It may store any type of value, including numbers,
+    strings, and objects.
+
+
+    Example
+
+
+    ```
+
+    var a=Ram; //String
+
+    ```
+
+
+    ```
+
+    var b=20; //Number
+
+    ```
+
+
+    ```
+
+    var x={FirstName:"Ram", lastName:"Doe"}; //Object
+
+    ```
+
+
+    # JavaScript - primitive data types
+
+
+    In JavaScript, there are five different types of primitive data types.
+
+
+    | Data Type | Description |
+
+    |---|---|
+
+    | String | it represents sequence of characters e.g. "Hello" |
+
+    | Number | it represents numeric values e.g. 1,2,3,4,5,6. |
+
+    | Boolean | it represents Boolean value either Right or Wrong. |
+
+    | Undefined | it represents undefined values. |
+
+    | Null | it means no values at all. |'
+  merge: -1
+  pgno: 93
+- img_proc: true
+  md: '# JavaScript non-primitive data types
+
+
+    There is 3 non-primitive data types are as follows:
+
+
+    | Data type | Description |
+
+    |---|---|
+
+    | Object | It represents instance through which we can access members. |
+
+    | Array | It represents group of similar values. |
+
+    | RegExp | It represents regular expression. |'
+  merge: -1
+  pgno: 94
+- img_proc: true
+  md: '# Javascript Operators
+
+
+    Operators are symbols in JavaScript that are used to perform operations on operands.
+    3+2 equals 5 in simple terms. The operands are here 3 and 2, and the operator
+    is +.
+
+
+    The JavaScript operators are as follows:
+
+
+    +   1. Arithmetic Operators.
+
+    2. Comparison (relational) Operators.
+
+    3. Bitwise Operators.
+
+    4. Logical Operators.
+
+    5. Assignment Operators.
+
+    6. Special Operators.
+
+
+    # Arithmetic Operators
+
+
+    We employ arithmetic operations on the operands in arithmetic operators.
+
+
+    | Operators | Description |
+
+    |---|---|
+
+    | +(Addition) | Add two operands Example: A+B |
+
+    | -(subtraction) | Subtraction from one operands to another Example: A-B |
+
+    | *(Multiplication) | Multiply both the operands Example: A*B |
+
+    | /(Division) | Divide the numerator by the denominator Example: B/A |
+
+    | %(Modulus) | Remainder of an integer division is 0 Example: B%A will give 0
+    |
+
+    | ++(Increment) | Increase an integer value by one Example: if value A is 9, then
+    A++ will give 11 |
+
+    | -(Decrement) | decrease integer value by one Example: if value A is 11, then
+    A~ will give 7 |'
+  merge: -1
+  pgno: 95
+- img_proc: true
+  md: '# Comparison Operators
+
+
+    In the Comparison Operator, two operands A and B are compared.
+
+
+    | Operators | Description |
+
+    | --- | --- |
+
+    | =={Equal} | it checks the value of two operands is equal or not, if yes then
+    the condition becomes true. E.g.,A=1, B=2.(A=B) condition is not true |
+
+    | !={Not Equal} | it checks the value of two operands is equal or not, if the
+    values are not equal, then the condition becomes true. E.g.,A=1, B=2.(A!=B) is
+    true |
+
+    | >{Greater than} | it checks the value between two operands which one is greater,
+    if condition is right then, it display true. E.g.,(A>B) is not true |
+
+    | <{Less than} | it checks the value between two operands which one is less, if
+    condition is right then, it display true. E.g.,(A<B) is true |
+
+    | >={Greater than Equal to} | it checks the value of the first operand is greater
+    than or equal to the value of second operand, if condition is right then it displays
+    true. E.g.-(A>=B) not true. |
+
+
+    # Assignment operator
+
+
+    JavaScript support following - assign operators.'
+  merge: -1
+  pgno: 96
+- img_proc: true
+  md: '| Operator | Description |
+
+    | --- | --- |
+
+    | ={Simple Assignment} | It is used to assigns a value to a variable. E.g.- var
+    x = 10; |
+
+    | +=(Add and Assignment) | It is used to add the value of right operand to a variable
+    and assigns the result to the variable. E.g.- Operator: x+=y Meaning: x = x +
+    y |
+
+    | -=(Subtract and Assignment) | It is used to subtract the value of right operand
+    to a variable and assigns the result to the variable. E.g.- Operator: x -= y Meaning:
+    x = x - " |
+
+    | *= (Multiply and Assignment) | It is used to multiply the value of the right
+    operand and assigns the result to the variable. E.g.- Operator: x *= y Meaning:
+    x = x * y |
+
+    | /= (Divide and Assignment) | It is used to divide the variable by the value
+    of the right operand and assign the result to the variable. E.g.- Operator: x
+    /= y Meaning: x = x / y |
+
+
+    # Bitwise Operators
+
+
+    JavaScript supports following - bitwise operators:'
+  merge: -1
+  pgno: 97
+- img_proc: true
+  md: '| Operator | Description |
+
+    | --- | --- |
+
+    | & (Bitwise AND) | it performs the AND operation on each pair of bits. E.g.,
+    (A & B) is 2. |
+
+    | | (Bitwise OR) | it performs the OR operation on each pair of bits. E.g., (A
+    | B) is 3. |
+
+    | ^ (Bitwise XOR) | it performs the XOR operation on each pair of bits. E.g.,
+    (A ^ B) is 1. |
+
+    | ~ (Bitwise Not) | it performs NOT operation on each pair of bits. E.g., ~(B)
+    is -4. |
+
+    | << (Left Shift) | This operator shifts the first specified no of bits to the
+    left. E.g., (A << 1) is 4. |
+
+    | >> (Right Shift) | The left operand''s value is moved by the number of specified
+    by the right operand. E.g., (A >>> 1) is 1. |
+
+    | >>> (Right shift with zero) | This operator is just like the >> (Right operator),
+    except that the bits shifted in the left are always zero. E.g., (A >>> 1) is 1.
+    |
+
+
+    # # Logical Operators
+
+
+    Boolean values are commonly utilized with logical operators.
+
+
+    ### Following are the - logical operators-
+
+
+    | Operator | Description |
+
+    | --- | --- |
+
+    | &&(Logical AND) | if both the operands are non-zero, then condition is true.
+    E.g., (A && B) is true. |
+
+    | || (Logical OR) | if any of the two operands are non-zero, then the condition
+    is true. E.g., (A || B) is true. |
+
+    | ! (Logical NOT) | Reverses the logical state of its operand. If the condition
+    is true, then the Logical NOTOperator will make it false. E.g., !(A && B) is false.'
+  merge: -1
+  pgno: 98
+- img_proc: true
+  md: "# Javascript If Else\n\nA conditional statement in JavaScript is used to conduct\
+    \ different activities depending on the criteria.\n\nIn JavaScript, there are\
+    \ three types of statements.\n\n+   1. if Statement.\n2. if else Statement.\n\
+    3. if else if Statement.\n\n# if statement\n\nIf the condition is true or false,\
+    \ the if statement is used in JavaScript to run the function.\n\n```\nif (condition)\
+    \ {\n  //content to be evaluated\n}\n```\n\n![](img/2bfe61f5593c3ea97ff290c1c0335a80_99_0.png)\n\
+    \nExample:-"
+  merge: -1
+  pgno: 99
+- img_proc: true
+  md: '```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <script>
+
+    var x=50;
+
+    if(x>30) {
+
+    document.write("value of x is greater than 30");
+
+    }
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # output
+
+
+    Value of x is greater than 30
+
+
+    # if else statement
+
+
+    If either condition is true or false, the if else statement is used.
+
+
+    # Syntax
+
+
+    ```
+
+    if(condition)
+
+    {
+
+    // set of statements
+
+    }
+
+    else
+
+    {
+
+    ```'
+  merge: -1
+  pgno: 100
+- img_proc: true
+  md: "```\n// set of statements\n}\n```\n\n![](img/2bfe61f5593c3ea97ff290c1c0335a80_101_0.png)\n\
+    \n# Example\n\n```\n<!DOCTYPE html>\n<html>\n<body>\n<script>\n x=20;\nif(x%2==0)\
+    \ {\ndocument.write(\"x is even number\");\n}\nelse {\ndocument.write(\"a is odd\
+    \ number\");\n}\n</script>\n</body>\n</html>\n```"
+  merge: -1
+  pgno: 101
+- img_proc: true
+  md: '```
+
+    </html>
+
+    ```
+
+
+    # Output
+
+
+    X is even number
+
+
+    # If else if
+
+
+    It merely looks at the content to see if the expression is true across many expressions.
+    If otherwise if is a more complex version of the if else statement.
+
+
+    # Syntax
+
+
+    ```
+
+    If (condition1)
+
+    {
+
+    Statement(s) to be executed if condition 1 is true
+
+    }
+
+    else if (condition 2)
+
+    {
+
+    Statement(s) to be executed if condition 2 is true
+
+    }
+
+    elelse if (condition 3)
+
+    {
+
+    Statement(s) to be executed if condition 3 is true
+
+    }
+
+    elelse
+
+    {
+
+    Statement(s) to be executed if no condition is true
+
+    ```'
+  merge: -1
+  pgno: 102
+- img_proc: true
+  md: "```\n}\n```\n\n# Example\n\n```\n<!DOCTYPE html>\n<html>\n<body>\n<script>\n\
+    var x=50;\nif (x==10){\n  document.write(\"x is equal to 10\");\n}\nelelse if(x==50){\n\
+    \  document.write(\"x is equal to 50\");\n}\nelse if(x==30){\n  document.write(\"\
+    x is equal to 30\");\n}\nelelse{\n  document.write(\"a is not equal to 10, 50\
+    \ or 30\");\n}\n</script>\n</body>\n</html>\n```"
+  merge: -1
+  pgno: 103
+- img_proc: true
+  md: '# Output
+
+
+    x is equal to 50'
+  merge: -1
+  pgno: 104
+- img_proc: true
+  md: '# Javascript Switch Statement
+
+
+    In JavaScript, the switch statement is used to execute a single code under several
+    conditions. It''s the same as the else if statement, but it''s easier to remember
+    than the if..else..if statement.
+
+
+    ![](img/2bfe61f5593c3ea97ff290c1c0335a80_105_0.png)
+
+
+    # Syntax
+
+
+    switch (expression)
+
+    {
+
+    case 1: statement(s)
+
+    break;
+
+    case 2: statement(s)
+
+    break;'
+  merge: -1
+  pgno: 105
+- img_proc: true
+  md: '```
+
+    case n: statement(s)
+
+    break;
+
+    default: statements(s)
+
+    }
+
+    ```
+
+
+    **NOTE:** In switch-case statements, the break statement is very important.
+
+
+    # Example
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <script>
+
+    var grade=''B'';
+
+    var result;
+
+    switch(grade){
+
+    case ''A'':
+
+    result="A Grade";
+
+    break;
+
+    case ''B'':
+
+    result="B Grade";
+
+    break;
+
+    case ''C'':
+
+    ```'
+  merge: -1
+  pgno: 106
+- img_proc: true
+  md: '```
+
+    result="C Grade";
+
+    break;
+
+    default;
+
+    result="No Grade";
+
+    }
+
+    document.write(result);
+
+    <script>
+
+    <body>
+
+    </html>
+
+    ```
+
+
+    # Output
+
+
+    B Grade'
+  merge: -1
+  pgno: 107
+- img_proc: true
+  md: '# # Javascript loop
+
+
+    Because the method of repeating forms a circle, repetition statements are referred
+    to as loops. We use Loop statements to decrease the amount of lines in some cases.
+    It''s most commonly seen in Array.
+
+
+    In JavaScript, there are three different forms of loops.
+
+
+    +   1. while loop
+
+    2. for loop
+
+    3. do-while loop
+
+
+    # ## while loop
+
+
+    The code is performed in a while loop until the expression is true. If the number
+    of iterations is unknown, it should be utilized.
+
+
+    ![](img/2bfe61f5593c3ea97ff290c1c0335a80_108_0.png)
+
+
+    # ## Syntax
+
+
+    ```
+
+    while (condition) {
+
+    ```'
+  merge: -1
+  pgno: 108
+- img_proc: true
+  md: '```
+
+    statement(s) executed if expression is true
+
+    }
+
+    ```
+
+
+    # Example
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <body>
+
+    <script>
+
+    var i=1;
+
+    while (i<=10)
+
+    {
+
+    document.write(i+ "<br/>");
+
+    ++;
+
+    }
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # Output
+
+
+    +   1
+
+    2
+
+    3
+
+    4
+
+    5
+
+    6
+
+    7
+
+    8
+
+    9
+
+    10'
+  merge: -1
+  pgno: 109
+- img_proc: true
+  md: "# For loop\n\nIt initialized the variable, checked the condition, and then\
+    \ incremented or decremented the value in the for loop.\n\nIt runs for a fixed\
+    \ amount of time.\n\n![](img/2bfe61f5593c3ea97ff290c1c0335a80_110_0.png)\n\n#\
+    \ Syntax\n\n```\nfor (initialization; condition; increment)\n{\n  code to be executed\n\
+    }\n```\n\n# Example\n\n```\n<!DOCTYPE html>\n<html>\n<body>\n<script>\nfor (i=1;\
+    \ i<=12; i++)\n{\n```"
+  merge: -1
+  pgno: 110
+- img_proc: true
+  md: '```
+
+    document.write(i + "<br/>")
+
+    }
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # Output
+
+
+    +   1
+
+    2
+
+    3
+
+    4
+
+    5
+
+    6
+
+    7
+
+    8
+
+    9
+
+    10
+
+    11
+
+    12
+
+
+    # do while loop
+
+
+    While a while loop executes items indefinitely, a do while loop executes code
+    only once, regardless of whether the condition is true or false. We utilize do-while
+    when we need to repeat the statement block at least once.'
+  merge: -1
+  pgno: 111
+- img_proc: true
+  md: '![](img/2bfe61f5593c3ea97ff290c1c0335a80_112_0.png)
+
+
+    # Syntax
+
+
+    ```
+
+    do{
+
+    code to be executed
+
+    increment/decrement
+
+    }
+
+    while (condition);
+
+    ```
+
+
+    # Example
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <script>
+
+    ```'
+  merge: -1
+  pgno: 112
+- img_proc: true
+  md: "```\nvar i=11;\ndo{\n  document.write(i + \"<br/>\");\n  i++;\n}while (i<=15);\n\
+    </script>\n</body>\n</html>\n```\n\n# Output\n\n+   11\n12\n13\n14\n15"
+  merge: -1
+  pgno: 113
+- img_proc: true
+  md: "# JavaScript Function\n\nThe ability to define new functions within the Script>...</script>\
+    \ tag is an important feature of JavaScript. The function keyword is used to declare\
+    \ a function in JavaScript.\n\nTo reuse the code, we call the JavaScript method\
+    \ numerous times.\n\n# Advantages - JavaScript functions\n\n+   1. Code reusability:\
+    \ We use the same method several times to save time and code.\n\n+   2. Less coding:\
+    \ Our application is compressed as a result of this. When we conduct a routine\
+    \ task, we don't write a lot of code.\n\n# Syntax\n\n```\nfunction functionName(parameter\
+    \ or not)\n{\n  statements\n}\n```\n\n# Example\n\n```\n<!DOCTYPE html>\n\n<body>\n\
+    <script>\nfunction msg()\n```"
+  merge: -1
+  pgno: 114
+- img_proc: true
+  md: '```
+
+    {
+
+    alert("Hello! world!");
+
+    }
+
+    <script>
+
+    <input type="button" onclick="msg()" value="click here">\n</body>
+
+    </html>
+
+    ```
+
+
+    # Output
+
+
+    Hello world!
+
+
+    # Function with arguments
+
+
+    Call function by passing arguments.
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <script>
+
+    function getcube(number)
+
+    {
+
+    alert(number* number* number);
+
+    }
+
+    </script>
+
+    <form>
+
+    <input type="button" value="click" onclick="getcube(3)">
+
+    ```'
+  merge: -1
+  pgno: 115
+- img_proc: true
+  md: '```
+
+    </form>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # Output
+
+
+    27
+
+
+    # Example
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <body>
+
+    <script>
+
+    function getname() {
+
+    name=prompt("Enter the Name");
+
+    alert("Welcome Mr/Mrs " + name);
+
+    }
+
+    </script>
+
+    </body>
+
+    <form>
+
+    <input type="button" value="Click" onclick="classname()"/>
+
+    </form>
+
+    </html>
+
+    ```'
+  merge: -1
+  pgno: 116
+- img_proc: true
+  md: '# Function with return value
+
+
+    Call function that - return value and - use it in program.
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <script>
+
+    function getInfo()
+
+    {
+
+    return “Hello Raj! How are you?”;
+
+    }
+
+    </script>
+
+    <script>
+
+    document.write(getInfo());
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # Output
+
+
+    Hello Raj! How are you?
+
+
+    # The Function() Constructor
+
+
+    A function statement isn''t just for defining new functions; it may also be used
+    to define functions dynamically using the Function() constructor and the new operator.
+
+
+    # Syntax'
+  merge: -1
+  pgno: 117
+- img_proc: true
+  md: '```
+
+    <script>
+
+    var variablename = new Function(Arg1, Arg2...., "Function Body");
+
+    </script>
+
+    ```
+
+
+    # Example
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <script>
+
+    var func = new Function("a", "b", "return a+b;");
+
+    function secondFunction() {
+
+    var result;
+
+    result = func(50,50);
+
+    document.write ( result );
+
+    }
+
+    </script>
+
+    </head>
+
+    <body>
+
+    <p>Click button to call the function</p>
+
+    <form>
+
+    <input type="button" onclick="secondFunction()" value="Cal Function">
+
+    </form>
+
+    ```'
+  merge: -1
+  pgno: 118
+- img_proc: true
+  md: "```\n<p>Use different parameters inside the function and try yourself...</p>\n\
+    \n</body>\n\n</html>\n```\n\n# Function Literals\n\nThe concept of function literals,\
+    \ which is another way to construct functions, is introduced in JavaScript 1.2.\
+    \ It's an expression that defines a function that doesn't have a name.\nnThe syntax\
+    \ for a function literal is similar to that of a function statement, except that\
+    \ it is used as an expression rather than a function statement, and there is no\
+    \ need for a function name.\n\n# Syntax\n\n```\n<script>\nvar variablen = function\
+    \ (Argument List) {\n    Function Body\n};\n</script>\n```\n\n# Example\n\n```\n\
+    <!DOCTYPE html>\n<html>\n<head>\n<script>\nvar func = function(a,b){ return a+b\
+    \ };\n\nfunction secondFunction() {\n```"
+  merge: -1
+  pgno: 119
+- img_proc: true
+  md: '```
+
+    var result;
+
+
+    result = func(10,20);
+
+    document.write ( result );
+
+    }
+
+
+    </script>
+
+    </head>
+
+    <body>
+
+    ```
+
+
+    <p>Click the button to call the function</p>
+
+
+    ```
+
+    <form>
+
+    <input type="button" onclick="secondFunction()" value="Cal Function">
+
+    </form>
+
+    ```
+
+
+    <p>Use different parameters inside the function and try yourself...</p>
+
+
+    ```
+
+    </body>
+
+    </html>
+
+    ```'
+  merge: -1
+  pgno: 120
+- img_proc: true
+  md: '#  Javascript Object
+
+
+    An object is a state-and-behavioral entity. JavaScript is a scripting language
+    that focuses on objects. Although JavaScript is template-based than class-based,
+    it allows us to create objects directly.
+
+
+    # Syntax - to add property - to add object
+
+
+    ```
+
+    objectName.objectProperty = propertyValue;
+
+    ```
+
+
+    We use the write() method to document objects to write any content on the document.
+
+
+    ```
+
+    Document.write("Hello world")
+
+    ```
+
+
+    # Example
+
+
+    # The following example
+
+
+    shows how to - create an Object.
+
+
+    ```
+
+    <!DOCTYPE html>
+
+
+    <head>
+
+    <title>User-defined objects</title>
+
+    <script type="text/javascript">
+
+
+    var book = new Object(); // Object created
+
+    book.subject = "5 points someone"; // Properties assign to the
+
+    object
+
+    book.author = "ChetanBhagat";
+
+
+    </script>
+
+    ```'
+  merge: -1
+  pgno: 121
+- img_proc: true
+  md: "```\n</head>\n\n<body>\n<script type=\"text/javascript\">\ndocument.write(\"\
+    Book Name is : \" + book.subject + \"<br>\");\ndocument.write(\"Book Author is\
+    \ : \" + book.author + \"<br>\");\n</script>\n</body>\n</html>\n```\n\n# # Output\n\
+    \nBook Name is : 5 points someone\nBook Author is : ChetanBhagat\n\n# # Methods\
+    \ of an Object\n\n# # Example\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n<title>User-defined\
+    \ objects</title>\n<script type=\"text/javascript\">// Define a function which\
+    \ will work as a method\nfunction addPrice(amount) {\n  this.price = amount;\n\
+    }\nfunction book(title, author) {\n```"
+  merge: -1
+  pgno: 122
+- img_proc: true
+  md: '```
+
+    this.itle = title;
+
+    this.author = author;
+
+    this.addPrice = addPrice; // Assign method as property.
+
+    }
+
+    </script>
+
+    </head>
+
+    <body>
+
+    ```
+
+
+    ```
+
+    <script type="text/javascript">
+
+    varmyBook = new book("5 Points Someone", "ChetanBhagat");
+
+    myBook.addPrice(150);
+
+    document.write("Book Title is : " + myBook.title + "<br>");
+
+    document.write("Book Author is : " + myBook.author + "<br>");
+
+    document.write("Book Price is : " + myBook.price + "<br>");
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # Output
+
+
+    Book Title is: 5 Points Someone
+
+    Book Author is :ChetanBhagat
+
+    Book Price is : 150'
+  merge: -1
+  pgno: 123
+- img_proc: true
+  md: '# Javascript array
+
+
+    Arrays are used to represent a collection of elements in a single unit or memory
+    region.
+
+
+    Every element that enters the array will be stored in the array with a unique
+    index starting at zero. We can store data with the help of indexes.
+
+
+    In JavaScript, we must use the new keyword to declare an array. We use new Array
+    to construct array (n).
+
+
+    The number of slots in the array is denoted by n.
+
+
+    # Syntax
+
+
+    myarray = new array();
+
+
+    NOTE: We construct array objects with zero size whenever we build an array in
+    JavaScript without specifying the size.
+
+
+    # Example
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <script>
+
+    var i;
+
+    var emp = new Array();
+
+    emp[0] = "Ajay";
+
+    emp[1] = "Abhay";
+
+    emp[2] = "Arun";
+
+    ```'
+  merge: -1
+  pgno: 124
+- img_proc: true
+  md: '```
+
+    emp[3] = "Shipra";
+
+
+    for (i=0; i<emp.length; i++)
+
+    {
+
+    document.write(emp[i] + "<br>");
+
+    }
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # Output
+
+
+    Ajay
+
+    Abhay
+
+    Arun
+
+    Shipra
+
+
+    # Example
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <script type="text/javascript">
+
+    function array()
+
+    {
+
+    num = new Array(5)
+
+    num[0] = 10
+
+    num[1] = 20
+
+    num[2] = 30
+
+    ```'
+  merge: -1
+  pgno: 125
+- img_proc: true
+  md: '```
+
+    num[3] = 40
+
+    num[4] = 50
+
+    sum = 0;
+
+    for (i=0; i<num.length; i++)
+
+    {
+
+    umsum = sum + num[i];
+
+    }
+
+    alert(sum)
+
+    }
+
+    </script>
+
+    </head>
+
+    <body>
+
+    <input type="button" onclick="array()" value="click here">
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # Functions used in Array'
+  merge: -1
+  pgno: 126
+- img_proc: true
+  md: '| Functions | Description |
+
+    | --- | --- |
+
+    | concat() | To concat the element of one array at the end of another array and
+    returns array. |
+
+    | sort() | Sort all elements of an array. |
+
+    | reverse() | Reverse all the elements. |
+
+    | slice() | To extract specified number of elements starting from specified index
+    without deleting them from array. |
+
+    | splice() | To extract specified number of elements starting from specified index
+    and delete them from array. |
+
+    | push() | Push all the elements in array to top. |
+
+    | pop() | Pop the top elements from array. |'
+  merge: -1
+  pgno: 127
+- img_proc: true
+  md: '# # Javascript String
+
+
+    The String object is used to work with a string of characters.
+
+    It’s a tool for storing and manipulating text.
+
+    In JavaScript, there are two ways to make a string:
+
+
+    +   1. String literal.
+
+    2. Using new keyword.
+
+
+    # ## String literal
+
+
+    String literals are created by using double quotes.
+
+
+    # ## Syntax
+
+
+    var stringname="string value";
+
+
+    # ## Example
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <script>
+
+    var str="Hello String Literal";
+
+    document.write(str);
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # ## Output
+
+
+    Hello String Literal'
+  merge: -1
+  pgno: 128
+- img_proc: true
+  md: '# Using new keyword
+
+
+    # Syntax
+
+
+    var stringname=new String("new keyword")
+
+
+    # Example
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <script>
+
+    var stringname=new String("Hello String");
+
+    document.write(stringname);
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # Output
+
+
+    Hello String
+
+
+    # String properties
+
+
+    There is a list of string object properties as well as their descriptions.
+
+
+    +   1. constructor.
+
+    2. length.
+
+    3. prototype.
+
+
+    Constructor– It gives you a reference to the string function that made the object
+    in the first place.
+
+
+    # Syntax
+
+
+    string.constructor'
+  merge: -1
+  pgno: 129
+- img_proc: true
+  md: 'Length- The number of characters in a string is returned.
+
+
+    # Syntax
+
+
+    string.length
+
+
+    Prototype– It let any object to have properties and methods added to it.(Number,
+    Boolean, string, and data etc.).
+
+
+    This is a global property that most objects have access to.
+
+
+    # Syntax
+
+
+    object.prototype.name = value
+
+
+    Methods are also available in the JavaScript string:
+
+
+    | Methods | Description |
+
+    | --- | --- |
+
+    | charAt(index) | it returns the character at the given index. |
+
+    | concat(str) | it merges the text of two string and returns new string. |
+
+    | indexOf(str) | it returns the index position of the given string. |
+
+    | lastIndexOf(str) | it returns the last index position of the given string. |
+
+    | match() | It is used to match regular expression against a string. |
+
+    | tolowercase() | it is used to return given string value converted to lower case.
+    |
+
+    | touppercase() | it is used to return the given string value converted to uppercase.
+    |
+
+    | valueOf() | Returns the primitive value of the specified object. |
+
+
+    # charAt()
+
+
+    It’s a method for getting the character from a given index.
+
+
+    ```
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+    <body>
+
+    ```'
+  merge: -1
+  pgno: 130
+- img_proc: true
+  md: '```
+
+    <script>
+
+    var str = new String("Hello");
+
+    document.writeln("<br />+str.charAt(0) is: " " + str.charAt(0));
+
+    document.writeln("<br />+str.charAt(1) is: " " + str.charAt(1));
+
+    document.writeln("<br />+str.charAt(2) is: " " + str.charAt(2));
+
+    document.writeln("<br />+str.charAt(3) is: " " + str.charAt(3));
+
+    document.writeln("<br />+str.charAt(4) is: " " + str.charAt(4));
+
+    </script>
+
+    <body>
+
+    </html>
+
+    ```
+
+
+    # concat(str)
+
+
+    This method returns a new string after adding two or more strings.
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <script>
+
+    var x="Hello";
+
+    var y="World";
+
+    var z=x+y;
+
+    document.write(z);
+
+    </script>
+
+    </body>
+
+    ```'
+  merge: -1
+  pgno: 131
+- img_proc: true
+  md: '```
+
+    </html>
+
+    ```
+
+
+    # Here another
+
+
+    # example of most(str)
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <script>
+
+    var a = new String("Hello”);
+
+    var b = new String("Friends”);
+
+    var c = a.concat( b );
+
+    document.write("Concatenated String : " + c);
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # indexOf(str)
+
+
+    index of a string The index position of the given string is returned by the Of(str)
+    method.
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <script>
+
+    var x="Tutorial provide by tutorialandexample";
+
+    ```'
+  merge: -1
+  pgno: 132
+- img_proc: true
+  md: '```
+
+    var y=x.indexOf("by");
+
+    document.write(y);
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # indexOf(str)
+
+
+    The string indexOf(str) method returns the string’s last index point.
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <script>
+
+    var x="Tutorial provide by tutorialExamole";nvar y=x.indexOf("by");
+
+    document.write(n);
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # match()
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    ```'
+  merge: -1
+  pgno: 133
+- img_proc: true
+  md: '```
+
+    <script>
+
+    var str = "To more detail, see Chapter 2.5.4.1";
+
+    var re = /(chapter\d+(\.d)*)/i;
+
+    var find = str.match( re );
+
+    document.write(find );
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # toLowerCase()
+
+
+    The specified string is returned as lowercase letters.
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <script>
+
+    var x="HELLO WORLD";nvar y=x.toLowerCase();
+
+    document.write(y);
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # toUpperCase()
+
+
+    The specified string is returned in uppercase characters.'
+  merge: -1
+  pgno: 134
+- img_proc: true
+  md: "```\n<!DOCTYPE html>\n<html>\n<body>\n<script>\n var x=\"hello world\";nvar\
+    \ y=x.toUpperCase();\ndocument.write(y);\n</script>\n</body>\n</html>\n```\n\n\
+    # valueOf()\n\nIt returns the string object's primitive value.\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<body>\n<script>\n var str = new String(\"Hello world\");\ndocument.write(str.valueOf()\
+    \ );\n</script>\n</body>\n</html>\n```"
+  merge: -1
+  pgno: 135
