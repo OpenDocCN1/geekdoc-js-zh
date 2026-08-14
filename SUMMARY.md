@@ -1192,6 +1192,7 @@
 +   [Python 和 Javascript 编码：绝对初学者基础：快速学习编码的步进式指南](docs/python-and-javascript-coding-basics-for-absolute-beginners-s/README.md)
 +   [Python：Python 精通指南](docs/python-become-a-master-in-python-python-python-programming-c/README.md)
 +   [Python 编程最佳实践](docs/python-best-practices-to-programming-code-with-python/README.md)
++   [Python、Java、SQL、JavaScript 与 C++：2025 完整初学者指南：掌握 5 大最热门编程语言，自信开启你的技术职业。](docs/python-java-sql-javascript-c-the-complete-2025-beginners-gui/README.md)
 +   [Python、Java、SQL、JavaScript 编码：掌握最需求编程语言的初学者完整指南](docs/pythonjava-sql-javascript-coding-the-complete-course-for-beg/README.md)
 +   [3天快速学会 JavaScript：快速上手学习课程](docs/quick-javascript-learning-in-just-3-days-fast-track-learning/README.md)
 +   [JavaScript 快速编程](docs/quick-javascript-quick-programming/README.md)
