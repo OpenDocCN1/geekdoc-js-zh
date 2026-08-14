@@ -1246,6 +1246,7 @@
 +   [Sams 24 小时学会 HTML 和 CSS第 8 版（包含新的 HTML 5 内容）](docs/sams-teach-yourself-html-and-css-in-24-hours-8th-edition-inc/README.md)
 +   [Sams 24 小时自学 HTML 和 CSS（包含新的 HTML 5 内容）](docs/sams-teach-yourself-html-and-css-in-24-hours-includes-new-ht/README.md)
 +   [Sams 自学 HTML, CSS 和 JavaScript 全案 (Gal Zentner 图书之)](docs/sams-teach-yourself-html-css-and-javascript-all-in-one-gal-z/README.md)
++   [Sams自学HTML、CSS和JavaScript全合一教程](docs/sams-teach-yourself-html-css-and-javascript-all-in-one-paper/README.md)
 +   [10 分钟学会 HTML5（第5版）（Sams 自学系列 - 分钟系列）](docs/sams-teach-yourself-html5-in-10-minutes-5th-edition-sams-tea/README.md)
 +   [Sams 24 小时自学 HTML5 移动应用开发](docs/sams-teach-yourself-html5-mobile-application-development-in-/README.md)
 +   [Sams 24 小时自学 JavaScript（第4 版）](docs/sams-teach-yourself-javascript-in-24-hours-4th-edition-sams-/README.md)
