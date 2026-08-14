@@ -1206,6 +1206,7 @@
 +   [JavaScript 面试快速入门指南：学习常见问题](docs/quick-javascript-interview-questions-learn-frequently-asked-/README.md)
 +   [3天快速学会 JavaScript：快速上手学习课程](docs/quick-javascript-learning-in-just-3-days-fast-track-learning/README.md)
 +   [JavaScript 快速编程](docs/quick-javascript-quick-programming/README.md)
++   [使用 Cocos2d-JS 快速游戏开发：使用 Javascript 的 2D 游戏开发端到端指南](docs/rapid-game-development-using-cocos2d-js-an-end-to-end-guide-/README.md)
 +   [JS 快速原型设计：敏捷 JavaScript 开发](docs/rapid-prototyping-with-js-agile-javascript-development/README.md)
 +   [Java Raspberry Pi：物联网 (IoT) 编程 (Oracle Press)](docs/raspberry-pi-with-java-programming-the-internet-of-things-io/README.md)
 +   [React – 用于构建用户界面的 JavaScript ：为应用程序中的每种状态设计简单视图](docs/react-a-javascript-library-for-building-user-interfaces-desi/README.md)
