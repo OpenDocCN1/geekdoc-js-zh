@@ -1215,6 +1215,7 @@
 +   [React.js 书：用于构建用户界面的开源 JavaScript 库：想要学习 React 编程基础的 JavaScript 开发者指南](docs/react-js-book-an-open-source-javascript-library-for-building/README.md)
 +   [React.js 书籍：从零开始学习 React JavaScript 库](docs/react-js-book-learning-react-javascript-library-from-scratch/README.md)
 +   [React Native iOS 开发：利用 React 和 JavaScript 的力量构建精美的 iOS 应用](docs/react-native-for-ios-development-harness-the-power-of-react-/README.md)
++   [RxJS 响应式编程：理清你的异步 JavaScript 代码](docs/reactive-programming-with-rxjs-untangle-your-asynchronous-ja/README.md)
 +   [ReactJS：Web 应用开发高级指南](docs/reactjs-become-a-professional-in-web-app-development/README.md)
 +   [React.js 籍：深入理解难懂的 JavaScript 编程库：想要学习 ReactJS 编程基础的 JavaScript 开发者指南](docs/reactjs-book---solid-understanding-of-a-hard-to-learn-javasc/README.md)
 +   [React.js 书籍：从零开始学习 JavaScript 库 React](docs/reactjs-book-learning-react-javascript-library-from-scratch/README.md)
