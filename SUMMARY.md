@@ -1189,6 +1189,7 @@
 +   [PS-Scripting – Photoshop 脚本高级指南](docs/ps-scripting-professional-photoshop-scripting/README.md)
 +   [Pure JavaScript 入门指南](docs/pure-javascript/README.md)
 +   [原生 JavaScript 入门指南（第二版）](docs/pure-javascript-2nd-edition/README.md)
++   [原生 JavaScript [电子资源]](docs/pure-javascript-electronic-resource/README.md)
 +   [Pure JSP：Java Server Pages (Pure 系列)](docs/pure-jsp-java-server-pages-pure-series/README.md)
 +   [Pure React：精通 React 逐步步指南](docs/pure-react-a-step-by-step-guide-to-mastering-react/README.md)
 +   [Python：Python 编程代码高级指南](docs/python-advanced-guide-to-programming-code-with-python-python/README.md)
