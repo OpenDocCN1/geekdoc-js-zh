@@ -1201,6 +1201,7 @@
 +   [Python & JavaScript 精通指南：二合一——学习并精通两门强大的编程语言](docs/python-javascript-mastery-2-books-in-1--learn-and-master-two/README.md)
 +   [Python 高级入门指南](docs/python-wise-head-junior/README.md)
 +   [Python、Java、SQL、JavaScript 编码：掌握最需求编程语言的初学者完整指南](docs/pythonjava-sql-javascript-coding-the-complete-course-for-beg/README.md)
++   [JavaScript 入门指南](docs/quick-javascript/README.md)
 +   [3天快速学会 JavaScript：快速上手学习课程](docs/quick-javascript-learning-in-just-3-days-fast-track-learning/README.md)
 +   [JavaScript 快速编程](docs/quick-javascript-quick-programming/README.md)
 +   [JS 快速原型设计：敏捷 JavaScript 开发](docs/rapid-prototyping-with-js-agile-javascript-development/README.md)
