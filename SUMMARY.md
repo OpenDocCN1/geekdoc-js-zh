@@ -1241,6 +1241,7 @@
 +   [Sams Teach Yourself Ajax, JavaScript 和 PHP 一通指南](docs/sams-teach-yourself-ajax-javascript-and-php-all-in-one-sams-/README.md)
 +   [Sams 24 小时学 CGI（第 2 版）](docs/sams-teach-yourself-cgi-in-24-hours-2nd-edition-sams-teach-y/README.md)
 +   [24 小时自学 CGI](docs/sams-teach-yourself-cgi-in-24-hours-teach-yourself----24-hou/README.md)
++   [Sams 24 小时学会 Flash MX ActionScript：包含索引](docs/sams-teach-yourself-flash-mx-actionscript-in-24-hours-includ/README.md)
 +   [Sams 24 小时自学 HTML 和 CSS（包含新的 HTML 5 内容）](docs/sams-teach-yourself-html-and-css-in-24-hours-includes-new-ht/README.md)
 +   [Sams 自学 HTML, CSS 和 JavaScript 全案 (Gal Zentner 图书之)](docs/sams-teach-yourself-html-css-and-javascript-all-in-one-gal-z/README.md)
 +   [10 分钟学会 HTML5（第5版）（Sams 自学系列 - 分钟系列）](docs/sams-teach-yourself-html5-in-10-minutes-5th-edition-sams-tea/README.md)
