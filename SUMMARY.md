@@ -1222,6 +1222,7 @@
 +   [React.js 书籍：从零开始学习 JavaScript 库 React](docs/reactjs-book-learning-react-javascript-library-from-scratch/README.md)
 +   [React.js 设计模式：轻松构建可扩展 React 应用（英文版）](docs/reactjs-design-patterns-learn-how-to-build-scalable-react-ap/README.md)
 +   [ReactJS：Web 应用开发：学习最流行的 Javascript 库之一](docs/reactjs-web-app-development-learn-one-of-the-most-popular-ja/README.md)
++   [Angular.JS 秘籍](docs/recipes-with-angularjs/README.md)
 +   [重新发现 JavaScript](docs/rediscovering-javascript/README.md)
 +   [可靠的 JavaScript：在最危险语言中编写安全代码](docs/reliable-javascript-how-to-code-safely-in-the-worlds-most-da/README.md)
 +   [HTML5 绘图渲染（Web 可化）](docs/rendering-html5-illustration-visualizing-the-web/README.md)
