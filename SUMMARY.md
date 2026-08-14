@@ -1212,6 +1212,7 @@
 +   [JS 快速原型设计：敏捷 JavaScript 开发](docs/rapid-prototyping-with-js-agile-javascript-development/README.md)
 +   [Java Raspberry Pi：物联网 (IoT) 编程 (Oracle Press)](docs/raspberry-pi-with-java-programming-the-internet-of-things-io/README.md)
 +   [React – 用于构建用户界面的 JavaScript ：为应用程序中的每种状态设计简单视图](docs/react-a-javascript-library-for-building-user-interfaces-desi/README.md)
++   [React.js 书：用于构建用户界面的开源 JavaScript 库：想要学习 React 编程基础的 JavaScript 开发者指南](docs/react-js-book-an-open-source-javascript-library-for-building/README.md)
 +   [React Native iOS 开发：利用 React 和 JavaScript 的力量构建精美的 iOS 应用](docs/react-native-for-ios-development-harness-the-power-of-react-/README.md)
 +   [ReactJS：Web 应用开发高级指南](docs/reactjs-become-a-professional-in-web-app-development/README.md)
 +   [React.js 籍：深入理解难懂的 JavaScript 编程库：想要学习 ReactJS 编程基础的 JavaScript 开发者指南](docs/reactjs-book---solid-understanding-of-a-hard-to-learn-javasc/README.md)
