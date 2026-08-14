@@ -1027,6 +1027,7 @@
 +   [Java 开发者的 .NET 指南：迁移至 C#](docs/net-for-java-developers-migrating-to-c-hash/README.md)
 +   [JavaScript 神经网络入门指南](docs/neural-networks-with-javascript-succinctly/README.md)
 +   [HTML、CSS 和动态 HTML 的新视角：全面指南](docs/new-perspectives-on-html-css-and-dynamic-html-comprehensive/README.md)
++   [HTML, XHTML 和动态 HTML 的新视角（New Perspectives 系列：Web 设计）](docs/new-perspectives-on-html-xhtml-and-dynamic-html-new-perspect/README.md)
 +   [HTML5, CSS3 和 JavaScript 的新视角](docs/new-perspectives-on-html5-css3-and-javascript/README.md)
 +   [Javascript 和 AJAX 的新视角：全面 (HTML) 指南](docs/new-perspectives-on-javascript-and-ajax-comprehensive-html/README.md)
 +   [JavaScript 的新视角 (New Perspectives 系列)](docs/new-perspectives-on-javascript-new-perspectives-series/README.md)
