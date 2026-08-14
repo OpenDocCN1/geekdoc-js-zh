@@ -1180,6 +1180,7 @@
 +   [Programming Ruby 1.9 第 3 版：实战程序员指南](docs/programming-ruby-19-3rd-edition-the-pragmatic-programmers-gu/README.md)
 +   [Programming Ruby 1.9：实战程序员的指南 (Ruby 进阶)](docs/programming-ruby-19-the-pragmatic-programmers-guide-facets-o/README.md)
 +   [Perl 网络编程指南](docs/programming-the-network-with-perl/README.md)
++   [使用 HTML、CSS 和 JavaScript 编程 Windows Store 应用](docs/programming-windows-store-apps-with-html-css-and-javascript/README.md)
 +   [JavaScript 编程：桌面与移动浏览器的算法与应用](docs/programming-with-javascript-algorithms-and-applications-for-/README.md)
 +   [项目开发指南：Vim 的 Congenial JavaScript：通过这份开发 Vim 编辑器 Congenial-JavaScript 插件的全面指南，构建你的作品集](docs/project-development-guide-congenial-javascript-for-vim-build/README.md)
 +   [Prototype and script.aculo.us：你从未发现 JavaScript 还能做这些！（实战派程序员系列）](docs/prototype-and-scriptaculous-you-never-knew-javascript-could-/README.md)
