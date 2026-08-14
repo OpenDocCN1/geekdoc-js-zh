@@ -1239,6 +1239,7 @@
 +   [SAC '21：第36届 ACM/SIGAPP 应用计算研讨会（韩国虚拟会议）论文集 ｜｜ SecureJS 编译器：JavaScript 中的可移植内存隔离](docs/sac-21-the-36th-acmsigapp-symposium-on-applied-computingvirt/README.md)
 +   [10 分钟学会 AJAX](docs/sams-teach-yourself-ajax-in-10-minutes-sams-teach-yourself/README.md)
 +   [Sams Teach Yourself Ajax, JavaScript 和 PHP 一通指南](docs/sams-teach-yourself-ajax-javascript-and-php-all-in-one-sams-/README.md)
++   [24 小时学会 CGI](docs/sams-teach-yourself-cgi-in-24-hours/README.md)
 +   [Sams 24 小时学 CGI（第 2 版）](docs/sams-teach-yourself-cgi-in-24-hours-2nd-edition-sams-teach-y/README.md)
 +   [24 小时自学 CGI](docs/sams-teach-yourself-cgi-in-24-hours-teach-yourself----24-hou/README.md)
 +   [Sams 24 小时学会 Flash MX ActionScript：包含索引](docs/sams-teach-yourself-flash-mx-actionscript-in-24-hours-includ/README.md)
