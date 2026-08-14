@@ -1186,6 +1186,7 @@
 +   [项目开发指南：Vim 的 Congenial JavaScript：通过这份开发 Vim 编辑器 Congenial-JavaScript 插件的全面指南，构建你的作品集](docs/project-development-guide-congenial-javascript-for-vim-build/README.md)
 +   [Prototype and script.aculo.us：你从未发现 JavaScript 还能做这些！（实战派程序员系列）](docs/prototype-and-scriptaculous-you-never-knew-javascript-could-/README.md)
 +   [PS-Scripting – Photoshop 脚本高级指南](docs/ps-scripting-professional-photoshop-scripting/README.md)
++   [Pure JavaScript 入门指南](docs/pure-javascript/README.md)
 +   [原生 JavaScript 入门指南（第二版）](docs/pure-javascript-2nd-edition/README.md)
 +   [Pure JSP：Java Server Pages (Pure 系列)](docs/pure-jsp-java-server-pages-pure-series/README.md)
 +   [Pure React：精通 React 逐步步指南](docs/pure-react-a-step-by-step-guide-to-mastering-react/README.md)
