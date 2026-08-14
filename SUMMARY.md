@@ -1231,6 +1231,7 @@
 +   [HTML5 绘图渲染（Web 可化）](docs/rendering-html5-illustration-visualizing-the-web/README.md)
 +   [负责任的 JavaScript](docs/responsible-javascript/README.md)
 +   [React Native 培训手册](docs/rn-train/README.md)
++   [Ruby on Rails 教程：使用 Rails 学习 Web 开发（第3版）（Addison-Wesley 专业 Ruby）](docs/ruby-on-rails-tutorial-learn-web-development-with-rails-3rd-/README.md)
 +   [Ruby on Rails 教程：使用 Rails 学习 Web 开发，第 4 版](docs/ruby-on-rails-tutorial-learn-web-development-with-rails-4th-/README.md)
 +   [Ruby on Rails 教程：使用 Rails Learn Web 开发 (Addison-Wesley Professional Ruby 系列)](docs/ruby-on-rails-tutorial-learn-web-development-with-rails-addi/README.md)
 +   [Rxjs 5 终极指南](docs/rxjs5-ult/README.md)
