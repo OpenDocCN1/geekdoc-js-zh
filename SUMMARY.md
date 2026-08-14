@@ -1202,6 +1202,8 @@
 +   [Python 高级入门指南](docs/python-wise-head-junior/README.md)
 +   [Python、Java、SQL、JavaScript 编码：掌握最需求编程语言的初学者完整指南](docs/pythonjava-sql-javascript-coding-the-complete-course-for-beg/README.md)
 +   [JavaScript 入门指南](docs/quick-javascript/README.md)
++   [JavaScript 面试快速问：JavaScript 常见问题集](docs/quick-javascript-interview-questions-frequently-asked-questi/README.md)
++   [JavaScript 面试快速入门指南：学习常见问题](docs/quick-javascript-interview-questions-learn-frequently-asked-/README.md)
 +   [3天快速学会 JavaScript：快速上手学习课程](docs/quick-javascript-learning-in-just-3-days-fast-track-learning/README.md)
 +   [JavaScript 快速编程](docs/quick-javascript-quick-programming/README.md)
 +   [JS 快速原型设计：敏捷 JavaScript 开发](docs/rapid-prototyping-with-js-agile-javascript-development/README.md)

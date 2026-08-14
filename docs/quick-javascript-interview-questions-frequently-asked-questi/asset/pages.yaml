@@ -1,0 +1,3577 @@
+- img_proc: true
+  md: 'Learn Frequently asked Question
+
+
+    # Quick JavaScript Interview Questions
+
+
+    By Sandeep Kumar Patel'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: '# Quick JavaScript Interview Questions
+
+
+    Copyright Blurb
+
+    All rights reserved. No part of this book may be reproduced in any form or by
+    any electronic or mechanical means including information storage and retrieval
+    systems – except in the case of brief quotations in articles or reviews – without
+    the permission in writing from its publisher, Sandeep Kumar Patel.
+
+
+    All brand names and product names used in this book are trademarks, registered
+    trademarks, or trade names of their respective holders. I am not associated with
+    any product or vendor in this book.
+
+
+    Published By
+
+    Sandeep Kumar Patel.'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: '# Table of Contents
+
+
+    Quick JavaScript Interview Questions Table of Contents
+
+    Chapter 1 Inheritance
+
+    Chapter 2 Questions on Event
+
+    Chapter 3 Closure
+
+    Chapter 5 Questions on DOM
+
+    Chapter 6 Date Object
+
+    Chapter 7 Regular Expression
+
+    Chapter 8 Questions on Canvas API Chapter 9 Geo Location API
+
+    Chapter 10 Web Workers
+
+    Chapter 11 Local Storage
+
+    Chapter 12 File API
+
+    Chapter 13 Web RTC
+
+    Chapter 14 Drag & Drop API
+
+    Chapter 15 App Cache API
+
+    Chapter 16 Server Sent Events Chapter 17 Miscellaneous Questions About The
+
+    Author
+
+    One Last Thing...'
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: '# Chapter 1 Inheritance
+
+
+    Q. How to create a class?
+
+
+    ANSWER
+
+
+    JavaScript does not have a class definition. To mimic classes in JavaScript functions
+    can be used to declare a class.
+
+
+    Example :
+
+
+    Let''s create a student in JavaScript which takes two parameters name and roll
+    as property. The code will look like below,
+
+
+    ```
+
+    function Student(name,roll){ this.name = name;
+
+    this.roll = roll;
+
+    }
+
+    ```
+
+
+    Q. How to create an object?
+
+
+    ANSWER
+
+
+    An object in JavaScript can be created using two ways:
+
+
+    New Keyword:
+
+
+    To create a student object from the above student class we can call the Student
+    function using new keyword.
+
+
+    var student1 = new Student(''sandeep'',2)
+
+
+    Anonymous Object:
+
+
+    Anonymous objects can be created using pair of curly braces containing property
+    name and value pairs.
+
+
+    Var rose = {''color'': ''red''}
+
+
+    Q. How to declare a private and a public member?
+
+
+    Private members are declared using var keyword and constructor function.
+
+
+    ```
+
+    function Student(name,roll){ var id= ABCD123;
+
+    this.name = name;
+
+    this.roll = roll;
+
+    }
+
+    ```
+
+
+    When a Student object will be created the proprietied name and roll will be accessible
+    using dot operator but id will not be accessible as it behaves as a private member
+    and return undefined on call.'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: "```\nfunction Student(name,roll){\n  var id = \"ABCD123\";\n  this.name = name;\n\
+    \  this.roll = roll;\n}\n```\n\n```\nvar student1 = new Student('sandeep',25)\n\
+    undefined\n```\n\n```\nstudent1.name\n\"sandeep\"\n```\n\n```\nstudent1.id\nundefined\n\
+    ```\n\nThe above chrome console is showing a student1 object is created.name property\
+    \ is accessible as it is showing sand on student1.name call. So name is a public\
+    \ property for the student object. But id property is not accessible and returned\
+    \ undefined on student1.id call. This shows id is a private property in student1\
+    \ object.\n\n# Q. What is prototype property?\n\nBy Using Prototype we can add\
+    \ new members to an existing object. Every JavaScript object has this property\
+    \ internally. Initially it is an empty object.\n\nExample:\n\n```\nfunction Student(name,roll){\n\
+    this.name = name;\nthis.roll = roll;\n}\n```\n\nvar student1 = new Student('sangeeta',30);\
+    \ Student.prototype.mark = 100;\n\nCheckout the below chrome console for the use\
+    \ of prototype."
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: "```\nfunction Student(name,roll){\n  this.name = name;\n  this.roll = roll;\n\
+    }\nunefined\nvar student1 = new Student('sangeeta',30)\ndeefined\nstudent1\nStudent\
+    \ {name: \"sangeeta\", roll: 30}\nStudent.prototype.mark = 100\nstudent1\nStudent\
+    \ {name: \"sangeeta\", roll: 30, mark: 100}\n```\n\nInitially the student1 object\
+    \ has only two properties name and roll. By using a new property mark has been\
+    \ added to student object with a value of 100.Now the console shows that the mark\
+    \ property is also added to the existing student1 object.\n\n# Q. What is constructor\
+    \ property?\n\n# ANSWER\n\nConstructor property of an object maintains a reference\
+    \ to its creator function.\nExample:\n\nLet us checkout an example by creating\
+    \ a student object and calling the constructor property on it.\n\n```\nfunction\
+    \ Student(name, mark){\nthis.name=name;\nthis.mark =mark;\n}\nvar student1 = new\
+    \ Student('sandeep',123); console.log(student1.constructor);\n```\n\nCheckout\
+    \ the following screen shot for above code in chrome console. The console log\
+    \ is printing the referenced function by student1 object."
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: '```
+
+    function Student(name,mark){this.name=name; this.mark=mark}
+
+    undefined
+
+    ```
+
+
+    ```
+
+    var student1 = new Student(''sandeep'',123)
+
+    undefined
+
+    ```
+
+
+    ```
+
+    console.log(student1.constructor)
+
+    function Student(name,mark){this.name=name; this.mark=mark}
+
+    unefined
+
+    ```
+
+
+    ```
+
+    |
+
+    ```
+
+
+    # How to call other class methods?
+
+
+    ANSWER
+
+
+    Using call() and apply() method we can use methods from different context to the
+    current context. It is really helpful for reusability of code and context binding.
+
+
+    call(): It is used to calls a function with a given value and arguments provided
+    individually.
+
+    apply(): It is used to call a function with a given value and arguments provided
+    as an array.
+
+
+    Below has two function getTypeOfNumber() and getTypeOfAllNumber(). The details
+    pf these functions are below. getTypeOfNumber : This method takes single number
+    as
+
+
+    parameter and returns the type either Even or Odd.
+
+    getTypeOfAllNumber : This method takes array of numbers as parameter and returns
+    the types in an array with Even or Odd.
+
+
+    ```
+
+    var MyNumber = {
+
+    getTypeOfNumber : function(number){
+
+    var type = (number % 2 === 0) ? "Even" : "Odd"; return type;
+
+    },
+
+    typeOfAllNumber : function () {
+
+    var result = [],i=0;
+
+    for (i; i < arguments.length; i++){
+
+    var type =
+
+    MyNumber.getTypeOfNumber.call(null,arguments[i]);
+
+    result.push(type)
+
+    }
+
+    return result;
+
+    };
+
+    var getTypeOfNumber =
+
+    MyNumber.getTypeOfNumber.call(null,21) console.log(typeNumber)
+
+    var getTypeOfAllNumber =
+
+    MyNumber.getTypeOfAllNumber.apply(null,[2,4,5,7,8,21])
+
+    ```'
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: "```\nconsole.log(typeofAllNumber)\n```\n\nBelow screenshot shows output of\
+    \ the above code Firebug console.\n\n| Console HTML CSS Script DOM Net Cookies\
+    \ Page Speed Typography |\n| Clear Persist Profile All Errors Warnings Info Debug\
+    \ Info Cookies |\n| var myNumber = { typeofOfNumber : function(...ull, [2,4,5,78,21])\
+    \ \n| console.log(typeofAllNumber) |\n\n```\n[ \"Even\", \"Even\", \"Odd\", \"\
+    Even\", \"Odd\" ]\n```\n\n# Q. Explain method overriding with an Example?\n\n\
+    ANSWER\n\nWe can override any inbuilt method of JavaScript by declaring its definition\
+    \ again. The existing definition is accessible to override by the prototype property.\
+    \ Consider the below example, split(it) is a built-in method for a string object\
+    \ . Its default behaviour to break the specified string to an array and is a member\
+    \ of function String Class. We have overridden its definition using its prototype\
+    \ property.\n\nBelow screenshot shows the inbuilt definition of split(it) method.\
+    \ We have divided the string into an array of element.\n\n| Console HTML CSS Script\
+    \ DOM Net Cookies Page Speed Typography |\n| Clear Persist Profile All Errors\
+    \ Warnings Run Clear Copy Print History |\n| var output1 = 'elephant'.split('e')\
+    \ \n| console.log('before overriding : ', output1);\n\n```\nbefore overriding\
+    \ : { \"1\", \"1\", \"phant\" }\n```\n\nThe following screenshot shows the new\
+    \ overridden definition of split (it) method. It is now normally returns string\
+    \ \"I am overridden\".\n\n| Console HTML CSS Script DOM Net Cookies Page Speed\
+    \ Typography |\n| Clear Persist Profile All Errors Warnings Run Clear Copy Print\
+    \ History |\n| var output1 = 'elephant'.split('e') \n| console.log('before overriding\
+    \ : ', output1); |\n| String.prototype.split = function(param) { \n| return \"\
+    I am overridden\"; }\n| var output2 = \"elephant\".split(\"e\"); \n| console.log('after\
+    \ overriding : ', output2);\n\n```\nbefore overriding : { \"1\", \"1\", \"phant\"\
+    \ }\n```\n\n```\nString.prototype.split = function(param) { \n| console.log('after\
+    \ overriding : ', \n\n```\n\nafter overriding : I am overridden\n\n# Q. How to\
+    \ inherit from a class?\n\nANSWER\n\nInheritance can be achieved in JavaScript\
+    \ using prototype property."
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: '![](img/beb9e4e69c3f782541f09594e1aab75e_9_0.png)
+
+
+    We need to follow 2 steps to create an inheritance.
+
+
+    **Step1:**
+
+    Child class prototype should point to parent class object.
+
+    <ClassName>.prototype = new <ParentClass>();
+
+
+    **Step2:**
+
+    Reset the child class prototype constructor to point self.
+
+    <ClassName>.prototype.constructor=<ClassName>
+
+
+    **Example:**
+
+    Below example shows **ScienceStudent** class as a child class of **Student** class.
+    The method **showMyType()** is available for ScienceStudent object.
+
+
+    ```
+
+    function Student(name) {
+
+    this.name=name;
+
+    }
+
+    Student.prototype.sayMyType = function(){
+
+    console.log("I am student type");
+
+    }
+
+    function ScienceStudent(name) {
+
+    ScienceStudent.prototype = new Student();
+
+    ScienceStudent.prototype.constructor = ScienceStudent;
+
+    var student2 = new ScienceStudent(''sangeeta'');
+
+    console.log(student2.sayMyType());
+
+    ```
+
+
+    Check out the below screen shot for the output of the above code in the developer
+    console.'
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: "# Elements Resources Network Sources Timeline Profiles Audits\n\n```\nfunction\
+    \ Student(name){\n  this.name=name;\n  Student.prototype.sayType = function(){\n\
+    \    console.log(\"I am student type\");\n  }\n}\nfunction ScienceStudent(name){\n\
+    \  ScienceStudent.prototype = new Student();\n  ScienceStudent.prototype.constructor\
+    \ = ScienceStudent;\n  var student2 = new ScienceStudent('sangeeta');\n  console.log(student2.sayType());\n\
+    }\n```\n\nI am student tve\n\nTo test the type of an object belongs to a class\
+    \ or not instanceOf can be used. This returns a Boolean value for an object belongs\
+    \ to a class or else FALSE. Check the below screen for the test of student2 using\
+    \ instanceOf.\n\n![](img/beb9e4e69c3f782541f09594e1aab75e_10_0.png)\n\n+   - student2\
+    \ instanceof Student\n  true\n- student2 instanceof ScienceStudent\n  true\n-\
+    \ >\n\n# What is differential inheritance?\n\nANSWER\n\nDifferential Inheritance\
+    \ is a common prototype-oriented model that uses the concept that most objects\
+    \ are derived from other, more generic objects, and differ in a few small aspects.\
+    \ Each object maintains a reference to its prototype and a table of properties\
+    \ that are different.\n\n# Q. What is Object.create() method do?\n\nANSWER\n\n\
+    ECMAScript 5.1 has this method in its specification. This method can be used to\
+    \ create a new object with given prototype object and properties. The syntax of\
+    \ this method is listed below.\n\n```\nObject.create(proto, propertiesObject)\n\
+    ```\n\nExample:\n\nBelow has a Student class function with name property and the\
+    \ prototype object has a method getElementName() which return the name of the\
+    \ student. A new prototype object has been created using Object.create() method\
+    \ by passing the prototype object of Student with the value of the name is sandeep.\
+    \ Then the getElementName() method is called on student1 object"
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: 'and logged in the console.
+
+
+    ```
+
+    function Student(name) {
+
+    this.name = name;
+
+    }
+
+    Student.prototype = {
+
+    getStudentName: function() {
+
+    return "Name of Student is :" + this.name;
+
+    };
+
+    ```
+
+
+    ```
+
+    var student1 = Object.create(Student.prototype); student1.name = "Sandeep";
+
+    console.log(student1.getStudentName());
+
+    ```
+
+
+    The following screenshot shows the output of the above code in the developer console.
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_11_0.png)
+
+
+    Q. Write a polyfill for Object.create() method if it is not present in the browser?
+
+
+    ANSWER
+
+    ECMAScript 5.1 has this method in its specification. If the browser is old Object.create()
+    method is not present.To we need to write a polyfill. Below code shows the polyfill
+    for Object.create() method.
+
+
+    ```
+
+    // if create method is present inside Object if (typeof Object!=''function'')
+    {
+
+    //define the create method
+
+    Object.create = (function() {
+
+    var Object = function() {};
+
+    return function(prototype) {
+
+
+    if (arguments.length > 1) {
+
+    throw Error(''Second argument not supported'');
+
+    ```'
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: '```
+
+    }
+
+    if (typeof prototype != ''object'') {
+
+    throw TypeError(''Argument must be an object'');
+
+    }
+
+    Object.prototype = prototype;
+
+    var result = new Object();
+
+    Object.prototype = null;
+
+    return result;
+
+    }
+
+    )0();
+
+    ```
+
+
+    The above code checks if the create() method is already present inside the Object
+    using condition and comparing its type to function. If this condition is true
+    the create() method is not present. Then the polyfill code block executes and
+    assigns the empty object to Object.property.
+
+
+    # Q. What is the purpose of Object.defineProperty() method? ANSWER
+
+
+    ECMAScript 5.1 provides Object.defineProperty() method to create new properties
+    to a defined object. It provides many configuration options to initialize these
+    members. Below code shows use of this method.
+
+
+    ```
+
+    function Student(name) {
+
+    this.name = name;
+
+    }
+
+    var student1 = Object.create(Student.prototype);
+
+    properties={
+
+    "subject": {
+
+    value: "Computer",
+
+    writable: true,
+
+    enumerable:true
+
+    },
+
+    "marks": {
+
+    value: 0,
+
+    writable: false,
+
+    enumerable:true
+
+    }
+
+    }
+
+    Object.defineProperties(student1, properties);
+
+    student1.name = "Sandeep";
+
+    student1.subject="Mathematics";
+
+    student1.marks=75;
+
+    console.log(student1);
+
+    ```
+
+
+    In the above code student1 object created using Object.create() method. Then some
+    new properties like subject and marks are added to this. The enumerable option
+    decided whether the property can be enumerated as own property. Writable property
+    decides whether the property is modifiable or not. The value property takes the
+    default value of the property.'
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: "Below screenshot shows the output of the above code in the developer console.\n\
+    \n| Elements Network Sources Timeline Profiles Resources Audits |\n| Preserve\
+    \ log\n\n```\n<top frame>\nfunction Student(name) {\n  this.name = name;\n  var\
+    \ student1 = Object.create(Student.prototype);\nproperties={\n    \"subject\"\
+    : {\n      value: \"Computer\",\n      writable: true,\n      enumerable:true\n\
+    \    },\n    \"marks\": {\n      value: 0,\n      writable: false,\n      enumerable:true\n\
+    \    }\n}\nObject.defineProperties(student1, properties);\nstudent1.name = \"\
+    Sandeep\";nstudent1.subject = \"Mathematics\";nstudent1.marks=75;\nconsole.log(student1);\n\
+    Object {subject: \"Mathematics\", marks: 0, name: \"Sandeep\"}\n```\n\nQ. How\
+    \ can you distinguish scope and context in JavaScript? ANSWER\nScope pertains\
+    \ to the visibility of variables and context refers to the object to which a method\
+    \ belongs and can be changed by using call or apply.\n\nQ. What are two ways in\
+    \ which the variable can be assigned to an empty object?\nANSWER\nWhen creating\
+    \ a new empty object, you can instantiate the Object() constructor or simply create\
+    \ an empty object literal. In either case, you can then add properties to the\
+    \ object. The syntax of creating empty object is listed below.\n\n```\nvar aEmptyObject\
+    \ = new Object();\nvar aEmptyObject = {};\n```"
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: '# Chapter 2 Questions on Event
+
+
+    Q. How Event works?
+
+
+    ANSWER
+
+    Event propagation follows two phases capturing and bubbling phase.
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_15_0.png)
+
+
+    Capturing Phase:
+
+    in this phase, event first makes its way downwards from the DOCUMENT to the target
+    element by passing all inner elements.
+
+
+    Bubbling Phase:
+
+    in this phase makes its way back upwards from the target element to DOCUMENT by
+    passing all outer wrapped elements.
+
+
+    Q. How to attach event to an element?
+
+
+    ANSWER
+
+    According to DOM Level 2 Event Specification an event can be attached to an element
+    using addEventListener() method using three arguments.
+
+
+    Syntax:
+
+    <element>.addEventListener(<eventname>,<eventcallback>,<boolean usephase>
+
+
+    eventname:
+
+    Represents type of event as String parameter. For Example click, mouseover, mouseout
+
+
+    callback:
+
+    This represents the callback function to be called for the event to be handled.
+
+
+    booleanphase:
+
+    Represents the phase of the event where the listener is attached. A FALSE value
+    represents the bubbling phase and a TRUE value represents a capturing phase.
+
+
+    Example:
+
+    A click listener is added to the document which alerts a message when click occurs.document.addEventListener(''click'',
+    function () { alert("Insider Event Listener"); },false);
+
+
+    Q. How to attach event prior to IE9 browser version? ANSWER'
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: "In older bowser event can be attached to an element attachEvent() method.\n\
+    For bubbling phase a listener can be added.\n\nSyntax:\n<element>.attachEvent(<eventname>,\
+    \ <eventcallback>)\n\nExample:\nA click event listener is added to the document\
+    \ adding click event can occur.\nBelow screenshot shows adding a click event in\
+    \ IE 10 developer toolbar.\n\n![](img/beb9e4e69c3f782541f09594e1aab75e_16_0.png)\n\
+    \n```\ndocument.attachEvent('onclick',function () {\n  console.log(\"Insider Event\
+    \ Listener\");\n};\ntrue\nInsider Event Listener\n```\n\n```\ndocument.attachEvent('onclick',\
+    \ function () {\n  console.log(\"Insider Event Listener\");\n};\n```\n\nExcept\
+    \ IE, the other browser added by addEventListener() method. Below screenshot\\\
+    shows the demonstration this method in Firebug.\n\n![](img/beb9e4e69c3f782541f09594e1aab75e_16_1.png)\n\
+    \n# How to remove event listener?\n\nANSWER\nAccording to DOM Level 2 Event Specification\
+    \ an Event Listener can be removed\nremoveEventListener() method. For IE browsers\
+    \ detachEvent() method must be used.\nThe following screenshot shows attaching\
+    \ click event handler from document for IE\nbrowser."
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: "File Find Disable View Images Cache Tools Validate\n\nHTML CSS Console Script\
+    \ Profiler Network\n\n```\nvar handlerMethod = function () {\n  console.log(\"\
+    Inside Event Listener\");\n}\ndocument.detachEventHandler('click',handlerMethod);\n\
+    \nvar handlerMethod = function () {\n  console.log(\"Inside Event Listener\");\n\
+    ndocument.detachEventHandler('click',handlerMethod);\n```\n\nThe following screenshot\
+    \ shows removing event handler from document for Firefox browser.\n\n![](img/beb9e4e69c3f782541f09594e1aab75e_17_0.png)\n\
+    \nQ. How setTime() and clearTimeout function works? ANSWER\nThe setTimeout method\
+    \ calls a function or executes an expression once after a specified number of\
+    \ milliseconds. clearTimeout() method stops the execution of the function specified\
+    \ in the setTimeout method.\n\nSyntax:\nvar timeout = setTimeout(function,milliseconds,lang)\
+    \ clearTimeout(timeout)\nBelow code shows the demonstration of these time out\
+    \ methods.\n\n```\nvar timeoutHandler=function() {\nconsole.log(\"Time Now \"\
+    , new Date().getSeconds()); clearTimeout(timeout);\n}\nconsole.log(\"Time Now\
+    \ \", new Date().getSeconds()); var timeout=setTimeout(timeoutHandler,4000);\n\
+    ```\n\nBelow screenshot shows the execution of the timeOut() method after 4 seconds.\n\
+    \n![](img/beb9e4e69c3f782541f09594e1aab75e_17_1.png)\n\nQ. How setInterval() and\
+    \ clearInterval() function works? ANSWER"
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: 'The setInterval() method calls a function or evaluates an expression in specified
+    interval of milliseconds. **clearInterval()** method stop the execution of the
+    function specified in the setInterval() method.
+
+
+    # Syntax:
+
+
+    var timeInterval = setInterval(function, milliseconds) clearInterval(timeInterval)
+
+
+    Below code demonstrate these interval handlers.
+
+
+    ```
+
+    var counter = 0,
+
+    timeIntervalHandler = function(){
+
+    console.log("Inside Time Now ", new Date().getSeconds()); counter++;
+
+    console.log("Handler Called count",counter);
+
+    if(counter === 4) {
+
+    clearInterval(timeInterval);
+
+    console.log("Clearing the interval handler");
+
+    }
+
+    }
+
+    clearInterval(timeInterval);
+
+    console.log("Clearing the interval handler");
+
+    console.log("Time Now ", new Date().getSeconds()); var timeInterval = setInterval(timeIntervalHandler,2000);
+
+    ```
+
+
+    Below screenshot shows the handler called every 2 second for 4 times .After 4th
+    called **clearInterval()** remove the execution.
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_18_0.png)'
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: "# Chapter 3 Closure\n\nQ. What is Closure?\n\nANSWER\n\nA closure is an inner\
+    \ function that has access to the outer wrapped function’s variables. It has three\
+    \ different scope accesses:- Self-scope:\n\nIt has access to properties present\
+    \ in its own scope.\n\nWrapped function’s scope:\n\nIt has access to the properties\
+    \ present to its enclosing function.\n\nGlobal Scope:\n\nIt has access to the\
+    \ properties present in global scope that is window scope.\n\nExample:\n\nThe\
+    \ inner function still has the access to prop1 though prop1 belongs to outer function\
+    \ scope.\n\n```\nfunction myOuterFunction(){ var prop1 = 5;\n  return innerFunction(){\n\
+    \    return prop1;\n  }\n}\n\nvar res = myOuterFunction(); console.log(res.name);\n\
+    console.log(res(res));\n```\n\nBelow screenshot shows the output of the above\
+    \ code in the console.\n\n| Elements | Resources | Network | Sources | Timeline\
+    \ |\n| --- | --- | --- | --- | --- |\n| > function myOuterFunction(){ var prop1\
+    \ = 5; return innerFunction(){ return prop1; } var res = myOuterFunction(); console.log(res.name);\
+    \ console.log(res(res)); innerFunction 5 | | | | |\n\nQ. Give an example of practical\
+    \ implication of closure concept? ANSWER\n\nIn web development closures are more\
+    \ frequently used by the developers. A most common scenario is when we need some\
+    \ kind of factory which will return a function object with different value that\
+    \ can be used by application.\n\nExample:\n\nThe following code has a background\
+    \ color name backgroundColorFactory which returns a function with an input color.\
+    \ Using this factory we have created greenBackground and blueBackground function\
+    \ objects and bonded with the 2 buttons. Once user clicks the buttons background\
+    \ color of the body is changed to the targeted color."
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: "```\n<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<title>Practical\
+    \ Closure Example</title>\n</head>\n<body>\n<button id=\"greenButton\">Green Background</button>\
+    \ <button id=\"blueButton\">Blue Background</button> <script>\nvar backgroundColorFactory\
+    \ = function(color) { return function() {\n  document.body.style.background =\
+    \ color;\n};\nvar greenBackground = backgroundColorFactory('green'); var blueBackground\
+    \ = backgroundColorFactory('blue');\ndocument.getElementById('greenButton').onclick\
+    \ = greenBackground;\ndocument.getElementById('blueButton').onclick = blueBackground;\n\
+    </script>\n</body>\n</html>\n```\n\nThe output of the above code is listed in\
+    \ below screenshot.\n\n![](img/beb9e4e69c3f782541f09594e1aab75e_21_0.png)\n\n\
+    Q. Emulate the private data using closure?\n\nANSWER\nThe following code demonstrates\
+    \ the declaration of private variable _name. It means we can assign the _name\
+    \ value using Student constructor with a new keyword.\n\n```\nfunction Student(name)\
+    \ { var _name = name;\nthis.getName = function() { return _name;;\n}\n```\n\n\
+    ```\nvar student1 = new Student(\"Sandeep\"); student1._name = \"John\";\nconsole.log(student1.getName());\n\
+    ```\n\nThe details of the previous code are as follows:"
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: 'A Student object student1 is created with _name value Sandeep.
+
+    A new name value John is assigned to _name but the getName() method prints Sandeepnto
+    the console. It proves _name is private.
+
+    The following screenshot shows the Chrome console with the output of the previous
+    code.
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_22_0.png)'
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: "# Chapter 4 Questions on JSON\n\nQ. What is JSON ?\n\nANSWER\n\nThe JSON text\
+    \ format is syntactically identical to the code for creating JavaScript objects.\
+    \ JSON is only a subset of JS object literal notation, but apart from looking\
+    \ similar, they have nothing in common. JSON is used as data exchange format,\
+    \ like XML. JSON is built on two structures:\n\nA collection of name/value pairs.\
+    \ In various languages, this is realized as an object, record, dictionary, hash\
+    \ table, key list, or associative array. An ordered list of values. In most languages,\
+    \ this is realized as an array, vector, list, or sequence.\n\nQ. Why does Google\
+    \ prepend (1); to their JSON responses? \n\nIt prevents JSON hijacking. This is\
+    \ to ensure some other site can't nasty tries try to steal data. By replacing\
+    \ the array constructor, including this JSON URL via a <script> tag, a malicious\
+    \ thirdparty site could steal the data from the JSON response. By putting while(1);\
+    \ at the start, the script will crash. A same-site request using XHR and a separate\
+    \ JSON parser, on the other hand, can easily ignore the while(1); prefix.\n\n\
+    Q. What is JSON ?\n\nANSWER\n\nJSON stands for \"JSON with Padding\". It means\
+    \ JSON data wrapped in a function call. A callback (processing/padding) function\
+    \ already defined in the Web page at the time of requesting remote JSON data.\n\
+    \nExample\n\n```\nThe below JavaScript code shows a callback function paddingFunction()\
+    \ for a remote URL /abcdl.\nfunction paddingFunction(data){\nconsole.log(\"response\
+    \ data processing\")\n}\nvar script = document.createElement('script');\nscript.src\
+    \ = '/abcdl?callback=paddingFunction'\ndocument.getElementsByTagName('head')[0].appendChild(script);\n\
+    ```\n\nQ. Why use JSON over XML ?\n\nANSWER\n\nThe following points are in favor\
+    \ of JSON over XML format:\nJSON can contain Integer, String, List, Arrays. XML\
+    \ just nodes and elements that needs to be parsed into Integer, String and so\
+    \ before it is used by your application. JSON is smaller, faster and lightweight\
+    \ compared to XML. So for data delivery between servers and browsers, JSON is\
+    \ a better choice.\n\nJSON is best for use of data in web applications from web\
+    \ services supports of JavaScript The overhead of parsing JSON nodes is more compare\
+    \ to a quick look up in JSON.\n\nFor a newbie, JSON might look complex to read\
+    \ and understand because of its structure"
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: 'unless it is well written with all brackets and properly indented. JSON can
+    be mapped more easily into object oriented system.
+
+
+    JSON and XML both Use Unicode and support Internationalization.
+
+    JSON is a better data exchange format. XML is a better document exchange format.
+
+    JSON is less secure because of absence of JSON parser in browser.
+
+    If the data is in XML, you can write it and run it over the XML to output the
+    data into another format: HTML, SVG, plain text, comma-delimited, JSON.
+
+    When you have data in JSON, it pretty much stuck there. There''s no easy way to
+    change it into another data format. So here, XML scores over JSON.
+
+
+    # Q. What is MIME type for JSON?
+
+
+    ANSWER
+
+
+    The MIME type for JSON is application/json.
+
+
+    # Q. What data types are supported by JSON?
+
+
+    ANSWER
+
+
+    Different data types supported by JSON are Number, String, Boolean, Array, Object,
+    null.
+
+    The following code shows a JSON object containing different data types:
+
+
+    ```
+
+    { name":"Sandeep",
+
+    score:65,
+
+    isPassed: true,
+
+    subject: ["Computer", "Algebra"],
+
+    address: {city:"Bangalore", country:"India"}, email: null
+
+    }
+
+    ```
+
+
+    The following screenshot shows the above XSL template object in a chrome developer
+    console with all properties listed in key value pair.'
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: "# Elements Network >>\n\n<top frame> Object {name: \"Sandeep\", score: 65,\n\
+    isPassed: true, subject: Array[2],\naddress: Object...i}\n\n+   address: Object\n\
+    \  city: \"Bangalore\"\n  country: \"India\"\n  __proto : Object\n  email: null\n\
+    \  isPassed: true\n  name: \"Sandeep\"\n  score: 65\n  subject: Array[2]\n   \
+    \ 0: \"Computer\"\n    1: \"Algebra\"\n    length: 2\n    __proto : Array[0]\n\
+    \    proto : Object\n\nQ. What is the role of JSON.stringify() method?\n\nANSWER\
+    \ JSON.stringify() turns an object into a JSON text and stores that JSON text\
+    \ in a string. The following screenshot shows the use of stringify() method:\n\
+    \n# Elements Network Sources Timeline >>\n\n<top frame> Preserve log\n\n```\n\
+    var Student = function(name,score){\n  this.name = name;\n  this.score = score;\n\
+    };\n\nvar student1 = new Student(\"Sandeep\", 75);\nconsole.log(JSON.stringify(student1));\n\
+    \n{\"\n```\n\nQ. What is the role of JSON.parse() method?\n\nANSWER"
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: "JSON.parse() method parses a string JSON, optionally transforming the value\
+    \ produced by parsing. The following screenshot shows the use of JSON.parse()\
+    \ method to convert the string1 JSON string to a JSON object.\n\n```\nvar Student\
+    \ = function(name, score)\n{\n    this.name = name;\n    this.score = score;\n\
+    };\n    var student1 = new Student(\"Sandeep\", 75);\n    student1JSONString =\
+    \ JSON.stringify(student1);\n\nconsole.log(JSON.parse(student1JSONString));\n\
+    ```\n\nObject {name: \"Sandeep\", score: 75}\n\nQ. What is the syntax of JSON.parse()\
+    \ method? ANSWER\nThe complete syntax for JSON.parse() method is as follows:\n\
+    JSON.parse(text[, reviver])\n\nThe details of the above syntax are as follows:\n\
+    Text: It represents the string to parse as JSON.\nReviver: It represents a function,\
+    \ prescribes how the value originally produced by parsing transforms, before being\
+    \ returned.\n\nQ. How to convert date object to JSON?\nANSWER\nTheJSON() method\
+    \ can convert the date object to JSON. The following screenshot shows the use\
+    \ of toJSON() method for a date object in chrome console."
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: '```
+
+    new Date().toJSON();
+
+    "2015-02-21T18:39:01.516Z"
+
+    ```'
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: '# Chapter 5 Questions on DOM
+
+
+    Q. What is DOM ?
+
+
+    ANSWER
+
+    Document Object Model (DOM) is a programming API for HTML and XML element. JavaScript
+    is most widely used language to access these DOM API properties and methods.
+
+
+    Q. What are the different objects involved in DOM ? ANSWER
+
+    According to DOM Level 2 specification it has following main objects.
+
+
+    Attribute : Represents an element attribute. Attributes: Represents a collection
+    of attribute. CDATASection : Represents an XML CDATA section. Comment: Represents
+    an XML element. Document: Represents an XML element. Node: Represents a generic
+    node object in an XML document.
+
+
+    NodeList: Represents an ordered collection of node objects.
+
+    ProcessingInstruction: Represents an XML processing instruction.
+
+    Node: Represents an XML text node.
+
+
+    Q. What are the different properties involved in DOM ? ANSWER
+
+    According to DOM Level 2 specification it has following main properties
+
+
+    name : It has the name of the Attribute.
+
+    namespaceURI: It represents namespace URI of the node.
+
+
+    nextSibling: It contains the next sibling of the Node in document source order.
+
+    nodeName : This represents the name of the node. nodeType: It represents type
+    of the node.
+
+    odeValue: It has value of the node.
+
+
+    ownerDocument: It has reference to the Document object that contains the Node.
+
+    ownerElement : It has reference of the Element to which the Attribute belongs.
+
+    parentNode: It represents parent Node to which the belongs.
+
+    prefix: It represents namespace of the node.
+
+
+    previousSibling: It has the previous sibling of the Node in document source order.
+
+    text: It has contents of all the text nodes contained by the Node and any element
+    nodes that it contains.
+
+
+    value : It has value of the Attribute.
+
+    attributes: Represents collection of Attribute objects.
+
+
+    childNodes : Represents NodeList collection of node objects.
+
+    data: Represents text stored within a TextNode, CDATASection, or Comment
+
+    documentElement: It contains root element node of the document.
+
+    firstChild: This is first child of the Node in document source order.
+
+    lastChild: This is the last child of the Node object in document source order.
+
+
+    length: It represents number of elements in the collection.
+
+    localName: It has local name of the node..
+
+
+    Q. What is windows load event?'
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: '# ANSWER
+
+
+    Load event occurs generally fired after the object is completely loaded. Window
+    load event is event occurs when images, script files, CSS files and other dependencies
+    get loaded. Below screenshot use of load event.
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_31_0.png)
+
+
+    # Load Handler Fired
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_31_1.png)
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <body>
+
+    <h2 id="message">Load Handler Fired</h2>
+
+    <script>
+
+    var loadHandler = function() {
+
+    var element = document.querySelector("#message");
+
+    element.innerHTML="Load Handler Fired";
+
+    }
+
+    window.onload = loadHandler;
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # Q. What is DOM ready event?
+
+
+    # ANSWER
+
+
+    DOM ready event get fired when elements are loaded to browser. It does not wait
+    for images and other files loaded. We can listen to this event by attaching a
+    callback method. A method can be added to readyStateChange or DOMContentLoaded.The
+    below shows the use of these events.
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <title>Window Ready Event Example</title>
+
+    <script>
+
+    var readyHandler = function(){
+
+    var element = document.querySelector("#message1"); element.innerHTML = "Ready
+    Handler Fired : restatechange <span style=''color:blue''>+new Date()+"+</span>";
+
+    }
+
+    document.onstatechange = readyHandler; </script>
+
+    document.addEventListener(\DOMContentLoaded",
+
+    ```'
+  merge: -1
+  pgno: 31
+- img_proc: true
+  md: "```\nfunction(event) {\n  var element = document.querySelector(\"message2\"\
+    ); element.innerHTML = \"Ready\n  Handler Fired :\n  DOMContentLoaded <span style='color:red'>+new\n\
+    \  Date()\"+</span>\";\n};\n<script>\n</head>\n<body>\n<h2 id=\"message1\"></h2>\n\
+    <h2 id=\"message2\"></h2>\n</body>\n</html>\n```\n\nThe following screenshot shows\
+    \ the output of the above code.\n\n# Ready Handler Fired : restatechange Sun Jul\
+    \ 20 2014 20:14:40 GMT+0530 (India Standard Time)\n\n# Ready Handler Fired : DOMContentLoaded\
+    \ Sun Jul 20 2014 20:14:40 GMT+0530 (India Standard Time)\n\n![](img/beb9e4e69c3f782541f09594e1aab75e_32_0.png)\n\
+    \nQ. What is query selector in DOM?\n\nANSWER\n\nDOM provides querySelector()\
+    \ and querySelectorAll() methods for selecting DOM elements. querySelector() method\
+    \ return a single element which matches first in the DOM. querySelectorAll() method\
+    \ return a node list of matched elements. Below code demonstrates the use of these\
+    \ methods in selecting elements from DOM."
+  merge: -1
+  pgno: 32
+- img_proc: true
+  md: '```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <title>Document Query Selector Example</title>
+
+    </head>
+
+    <body>
+
+    <h5 class="name">Sandeep Kumar Patel</h5>h5
+
+    <h4 class="country">India</h4>h4
+
+    <h4 class="country">UK</h4>h4
+
+    <h5 class="name">Surabhi Patel</h5>h5
+
+    <h4 class="country">US</h4>h4
+
+    <h4 id="my-score">520</h4>h4
+
+    <script>
+
+    var element = document.querySelector("#my-score" ); element.style.color="red";
+
+    var elements = document.querySelectorAll("h4#my-score,
+
+    h5.name");
+
+    for (var item of elements) {
+
+    item.style.fontStyle = "Italic";
+
+    }
+
+
+    var aElement = document.querySelector("h4.country, h4#my-score ");
+
+    aElement.style.background = "orange";
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    The following screenshot shows the output of the above code in Browser.
+
+
+    # Sandeep Kumar Patel
+
+
+    # India
+
+
+    UK
+
+
+    Surabhi Patel
+
+
+    US
+
+
+    520
+
+
+    Q. What is primary Data Type of DOM?
+
+    ANSWER'
+  merge: -1
+  pgno: 33
+- img_proc: true
+  md: 'Node interface is the primary data type of DOM. It represents a single item
+    from DOM tree. Element, CharacterData, ProcessingInstruction, DocumentFragment,
+    DocumentType, Notation, Entity, EntityReference inherits from Node interface.
+
+
+    Q. What is document fragment in DOM?
+
+
+    ANSWER
+
+
+    DocumentFragment is a light weight version of DOM. It does not have any parent
+    class. It is generally used by the developer as a temporary storage of DOM elements.
+    Below code shows an Example of creating document fragment and adding HTML element
+    to it and finally placing it to the body of the DOM.
+
+
+    ```
+
+    <DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <title>DocumentFragment Example</title>
+
+    </head>
+
+    <body>
+
+    <script>
+
+    var aFragment = document.createDocumentFragment(), aHTMLElement = document.createElement("h2"),
+    aHTMLElement = document.createTextNodeNode("SANDEEP");
+
+    aHTMLElement.appendChild(aHTMLElement);
+
+    aFragment.appendChild(aHTMLElement);\ocument.body.appendChild(aFragment);
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    Below screenshot shows an h2 element with a child text node containing value SANDEEP
+    is place inside document fragment. Finally the document fragment is appended as
+    a child to the body element.
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_34_0.png)
+
+
+    # SANDEEP
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_34_1.png)'
+  merge: -1
+  pgno: 34
+- img_proc: true
+  md: '# Q. Which is basic DOM?
+
+
+    # ANSWER
+
+
+    Node is most basic object of DOM. It is the most common interface from which all
+    other DOM object are inherited. The following interfaces all inherit from Node
+    methods and properties: Document, Element, CharacterData, ProcessingInstruction,
+    DocumentFragment, DocumentType, Notification, Entity, EntityReference. These interfaces
+    may return null in particular cases where the methods and properties are not relevant.
+    They may throw an exception - for example when adding children to a node type
+    for which no node type can exist.
+
+
+    # Q. What are the common doctype declarations?
+
+
+    # ANSWER
+
+
+    There are 8 different type of doctype declaration and are listed below.
+
+
+    HTML 5: This document type is used in HTML5.
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    ```
+
+
+    HTML 4.01 Strict : This DTD contains all HTML elements and attributes, but does
+    NOT INCLUDE presentational or deprecated elements (like font). Frames are not
+    allowed.
+
+
+    ```
+
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+
+    "http://www.w3.org/TR/html4/strict.dtd">
+
+    ```
+
+
+    HTML 4.01 Transitional : This DTD contains all HTML elements and attributes, INCLUDING
+    presentational and deprecated elements (like font). Frames are not allowed.
+
+
+    ```
+
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+
+    "http://www.w3.org/TR/html4/loose.dtd">
+
+    ```
+
+
+    HTML 4.01 Frameset: This DTD is equal to HTML 4.01 Transitional, but allows the
+    use of frameset content.
+
+
+    ```
+
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+
+    "http://www.w3.org/TR/html4/frameset.dtd">
+
+    ```
+
+
+    XHTML 1.0 Strict: This DTD contains all HTML elements and attributes, but does
+    NOT INCLUDE presentational or deprecated elements (like font). Frames are not
+    allowed. The markup must also be written as well-formed XML.
+
+
+    ```
+
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+
+    strict.dtd">
+
+    ```
+
+
+    XHTML 1.0 Transitional: This DTD contains all HTML elements and attributes, INCLUDING
+    presentational and deprecated elements (like font). Frames are not allowed. The
+    markup must also be written as well-formed XML.
+
+
+    ```
+
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+
+    transitional.dtd">
+
+    ```
+
+
+    XHTML 1.0 Frameset: This DTD is equal to XHTML 1.0 Transitional, but allows the
+    use of frameset content.'
+  merge: -1
+  pgno: 35
+- img_proc: true
+  md: '```
+
+    <!DOCTYPE html PUBLIC "- // W3C / / DTD XHTML 1.0 Frameset / / EN" Frameset //
+    EN" frameset.dtd">
+
+    ```'
+  merge: -1
+  pgno: 36
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 37
+- img_proc: true
+  md: '# Chapter 6 Date Object
+
+
+    Q. What is a JavaScript Date Object?
+
+
+    ANSWER
+
+
+    JavaScript Date object returns time in that single moment. It contains the value
+    in milliseconds since 1 January, 1970 UTC.
+
+
+    Q. What are the different ways to create a Date object? Or what are the different
+    constructor forms of Date object?
+
+
+    ANSWER
+
+
+    JavaScript Date object has 4 overloaded constructors. These constructors are listed
+    below.
+
+
+    ```
+
+    new Date()
+
+    new Date(milliseconds)
+
+    new Date(dateString)
+
+    new Date(year, month, day, hours, minutes, seconds, milliseconds)
+
+    ```
+
+
+    Q. How to get 1st January 1970 in a date object, the date from where time gets
+    calculated?
+
+
+    ANSWER
+
+
+    1st January 1970 is the day from where the time is calculated as number of milliseconds
+    elapsed. It can be calculated by creating a new JS object with parameter 0.below
+    screenshot demonstrate the date object with parameter 0.
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_38_0.png)
+
+
+    Q. How JavaScript counts months?
+
+
+    ANSWER
+
+
+    JavaScript counts months from 0 to 11 for the twelve months a year. 0 represents
+    January and 11 represent December. Below screenshot shows the code for today''s
+    date that is July 23 and year 2014 and getMonth() returns 6.'
+  merge: -1
+  pgno: 38
+- img_proc: true
+  md: '```
+
+    var date = new Date();
+
+    console.log(date);
+
+    console.log(date.getMonth());
+
+    Date = Wed 23 Jul 2014 22:37:56
+
+    GMT+0530 (India Standard Time) }
+
+    ```
+
+
+    # Q. When RangeError invalid date exception occurs?
+
+
+    # ANSWER
+
+
+    When a date object is created with invalid date string and toISOString() method
+    is applied to this invalid date then this RangeError occurs. Below screenshot
+    shows ‘2014-13-13’ string which is representing YYYY-MM-DD format where month
+    is out of range produces the RangeError exception.
+
+
+    ```
+
+    var date = new Date(''2014-13-13'');
+
+    console.log(date.toISOString());
+
+    RangeError: invalid date
+
+    var date = new Date(''2014-13-13'');
+
+    console.log(date.toISOString());
+
+    ```'
+  merge: -1
+  pgno: 39
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 40
+- img_proc: true
+  md: '# Chapter 7 Regular Expression
+
+
+    Q. What is Regular Expression in JavaScript?
+
+    ANSWER Regular expressions are used for pattern matching in a string. A regular
+    expression in JavaScript can be declared in two ways. Syntax for these two approaches
+    is listed below.
+
+    var AREExpression = new RegExp(pattern,modifiers); var aRegExpression = /pattern/modifiers;
+
+    The details of these syntaxes are as follows:
+
+    pattern : it represents the search string.
+
+    modifiers : it represents the conditional switches that will be applied to the
+    pattern
+
+    matching
+
+
+    Q. What are the methods of regular expression?
+
+    ANSWER There are 3 different methods for regular expressions are listed below.
+
+    exec() : scans for a matching and returns the first matched string
+
+    test() : scans for a matching string and returns boolean value true or false.
+
+    tString() : This method returns the string value of a regular expression.
+
+
+    Q. What is the switch \w?
+
+    ANSWER \w represents an alphanumeric character. The following code demonstrate
+    the use of \w switch.
+
+    var regExp = /\w/; out1 = regExp.exec("sandeep Ku Patel"), out2 = regExp.test("sandeep
+    Ku Patel");
+
+    console.log(out1);
+
+    console.log(out2);
+
+
+    Below screenshot shows the output of the above code which pattern any substring
+    having alphanumeric character with 2nd character as u.
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_41_0.png)
+
+
+    ```
+
+    var regExp = /\w/; var out1 = regExp = /\w/;
+
+    regExp.exec("sandeep Ku Patel");
+
+    out2 = regExp.test("sandeep Ku Patel");
+
+    console.log(out1);
+
+    console.log(out2);
+
+    ```
+
+
+    Q. Write a Regular expression to reverse the first and last name? For example
+    Sandeep Patel comes Patel Sandeep.\ANSWER'
+  merge: -1
+  pgno: 41
+- img_proc: true
+  md: 'To reverse first and last name we have to use replace() function on input string
+    with regular expression. The following code shows the method to reverse first
+    and last name.
+
+
+    ```
+
+    var reverseFirstLastName = function(nameString){
+
+    var regex = /(\w+)\s(\w+)/;
+
+    resultString = nameString.replace(regex, ''$2 $1'');
+
+    return resultString;
+
+    }
+
+    ```
+
+
+    var inputName = "Sandeep Patel"
+
+    output = reverseFirstLastName(inputName);
+
+    console.log(output);
+
+    The following screenshot shows the chrome console executing code and is printed
+    on console.
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_42_0.png)
+
+
+    ```
+
+    var reverseFirstLastName = function(nameString){
+
+    var regex = /(\w+)\s(\w+)/;
+
+    resultString = nameString.replace(regex, ''$2 $1'');
+
+    return resultString;
+
+    }
+
+    ```
+
+
+    ```
+
+    var inputName = "Sandeep Patel"
+
+    output = reverseFirstLastName(inputName);
+
+    console.log(output);
+
+    Patel Sandeep
+
+    ```
+
+
+    # Q. Write a Regular expression to validate email address? ANSWER
+
+
+    To validate email we have to use test() method on input string which returns true
+    or false on execution. The following code shows the method to validate email string.
+
+
+    ```
+
+    function validateEmail(email)
+
+    var re = /^((((<>O|\,;\,;\s@"\[\+\]+\|<>O|\,;\,;\s@"\[\+\]+\)*)|(".+"))@((((<>O|\,;\,;\s@"\[\+\]+\|<>O|\,;\,;\s@"\[\+\]+\)*)|(".+")))*)*\.[a-zA-Z]{2,2})$$/
+
+    ```
+
+
+    ```
+
+    var email1 = "sandeeppateltech@gmail.com"
+
+    email2 = "sandeep@gmail.com"
+
+    result1 = validateEmail(email1)
+
+    result2 = validateEmail(email2);
+
+    console.log(result1);
+
+    ```
+
+
+    The following screenshot shows the output of the email validation code in a chrome
+    developer console.'
+  merge: -1
+  pgno: 42
+- img_proc: true
+  md: "```\nfunction validateEmail(email) {\n    var re = /^((?:[<>]()|\\,:\\s@+\\\
+    .[<>]()|\\,\"[^\"]+\")*))@((?:[0-9]{1,3}\\.){3}[0-9]{1,3}|(?:[a-zA-Z\\-][a-zA-Z\\\
+    -0-9]*)*)$//\n    return re.test(email);\n}\n```\n\n```\nvar email1 = \"sandeeppateltech@gmail.com\"\
+    \nemail2 = \"sandeep@gmail.com\"\nresult1 = validateEmail(email1)\nresult2 = validateEmail(email2);\n\
+    ```\n\n```\nconsole.log(result1);\nconsole.log(result2);\n```\n\n```\ntrue   \
+    \                            VM444:12\nfalse                              VM444:13\n\
+    ```\n\n# Q. Write a Regular expression to validate a URL ?\n\n# ANSWER\n\nFor\
+    \ validating URL we have considered the protocol to be either http://ftp/https\
+    \ and it must start with WWW word .Considering these points the javascript code\
+    \ for validating a URL is as follows.\n\n```\nfunction validateURL(url) {\n  \
+    \  var regExURL = new RegExp(\"(http|https)?://\\/\\w-]+\\[+[\\w@=?%amp;&;/\\\
+    #-]*[\\w@=?%amp;&;/\\#-]+\");\\ return regExURL.test(url);\n    var url1 = \"\
+    http://www.google.com\"\n    url2 = \"http://www.google.com\"\n    result1 = validateURL(url1)\n\
+    \    result2 = validateURL(url2)\n    console.log(result2);\n}\n```\n\nThe following\
+    \ screenshot shows the chrome console with URL validation code in execution for\
+    \ a given URL."
+  merge: -1
+  pgno: 43
+- img_proc: true
+  md: "```\nfunction validateURL(url) {\n  var regExUrl = new RegExp(\"(http|ftp|https):\\\
+    /([\\w-]+\\.[\\w-]+\\+([\\w.,@?=\\%&amp;~+#-])+\\/([\\w@?=\\%&amp;~#-)?)\");\n\
+    \  return regExUrl.test(url);\n}\nvar url11 = \"http://www.google.com\",\nurl12\
+    \ = \"http://www.google.com\",\nresult1 = validateURL(url11),\nresult2 = validateURL(url12);\n\
+    \nconsole.log(result1);\nconsole.log(result2);\n```\n\ntrue\n\nfalse"
+  merge: -1
+  pgno: 44
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 45
+- img_proc: true
+  md: '# Chapter 8 Questions on Canvas API
+
+
+    Q. What is a canvas in HTML5?
+
+
+    ANSWER
+
+
+    Canvas is a new element in HTML5 for drawing graphics. A graphics can be drawn
+    on canvas by following below steps.
+
+
+    Define the canvas area.
+
+    Get the drawing context.
+
+    Using the context start the drawing.
+
+
+    Q. What is the difference between Canvas and SVG?
+
+
+    ANSWER
+
+
+    Difference between Canvas and SVG (Scalable Vector Graphics) are listed in below
+    table.
+
+    CANVAS SVG
+
+
+    +   i. A diagram can be drawn in ii. using a context in Canvas.
+
+
+    +   ii. A diagram drawn in ii. canvas is resolution dependent.
+
+
+    +   iii. A diagram drawn in iii. Canvas can be saved to PNG or JPG format.
+
+
+    +   iv. Diagram drawn in Canvas iv. is pixel based. No DOM elements are involved.
+
+
+    +   v. Rendering game v. graphics, as sprites and backgrounds can be created.
+    A diagram is drawn using XML like SVG element.
+
+
+    +   A diagram drawn in SVG is resolution independent.
+
+
+    +   SVG diagrams cannot be saved to PNG or JPG format.
+
+
+    +   Diagram drawn in SVG is DOM element based. No pixels are involved in the diagram.
+    Highly interactive animated user interfaces can be created.
+
+
+    +   vi. Poor text rendering vi.
+
+    capabilities
+
+
+    +   vii. Poor SEO and vii. Accessibility for everything pixel based and content
+    are not accessible.
+
+
+    +   viii. Modified through script viii. only.
+
+
+    +   ix. Performance is better ix. with smaller larger number of objects (>10k),
+    or both. Good text rendering capabilities'
+  merge: -1
+  pgno: 46
+- img_proc: true
+  md: 'Better SEO and
+
+    Accessibility as it DOM based rendering.
+
+    Modified through script CSS.
+
+
+    Performance is better with smaller number of objects (<10k), a larger surface,
+    or both.
+
+
+    # Q. What is canvas2d context and how is it created?
+
+    ANSWER''
+
+
+    Using getContext() method with parameter ‘2d’ a canvas context can be created.
+
+    This context method is a type of CanvasRenderingContext2D object. Below code shows
+
+    s simple 2d context creation and log the object’s constructor.
+
+
+    ```
+
+    <html>
+
+    <body>
+
+    <canvas id="myCanvas"></canvas>
+
+    <script>
+
+    var canvas = document.getElementById("myCanvas"), context =
+
+    canvas.getContext("2d");
+
+    console.log(context.constructor);
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    The following screenshot shows the constructor function of the context object
+    which is
+
+    CanvasRenderingContext2D native object.
+
+
+    | Console | HTML CSS Script DOM |
+
+    | | Clear Persist Profile All Errors Warnings |
+
+    | [object XrayWrapper canvas.html (line 7) function CanvasRenderingContext2D()
+    { [ native code ] ]
+
+
+    # Q. How to load an image in Canvas?
+
+    ANSWER
+
+
+    An image can be loaded using draw() method. This method takes several inputs for
+
+    drawing an image. These parameters are positioning and clipping type. We will
+    discuss
+
+    these parameters in separate question. Below code shows how to use the drawImage()
+
+    method to load a PNG image from a URL inside the canvas.
+
+
+    ```
+
+    <html>
+
+    <body>
+
+    <canvas id="myCanvas"></canvas>
+
+    <script>
+
+    var canvas = document.getElementById("myCanvas"), context =
+
+    ```'
+  merge: -1
+  pgno: 47
+- img_proc: true
+  md: '```
+
+    canvas.getContext("2d"),
+
+    img = new Image();
+
+    img.src = "http://www.gravatar.com/avatar/4205261332ff131e971b48db31dcb528.png";
+
+    img.onload = function() {
+
+    context.drawImage(img, 10, 10);
+
+    };
+
+    <script>
+
+    <body>
+
+    </html>
+
+    ```
+
+
+    Below screenshots the Gravatar image getting drawn inside the HTML5 canvas element.
+    This drawing is done using 2d context.
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_48_0.png)
+
+
+    Q. what are the different overloaded signature for drawImage() method?
+
+
+    ANSWER
+
+
+    The drawImage(img, x, y) has 3 different signature and listed below.
+
+
+    drawImage(img, x, y) : This method position the image on the canvas at <x, y>
+    coordinates.
+
+
+    drawImage(img, x, width, height) : This method position the image on the canvas
+    at <x, y> coordinates with a specified height.
+
+
+    drawImage(img, sx, sy, swidth, height, x, y, width, height) : This method clipped
+    the image with starting point <sx, sy> having height sheight and width swidth
+    and position at <x, y> coordinates with a specified height and width.'
+  merge: -1
+  pgno: 48
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 49
+- img_proc: true
+  md: "# # Chapter 9 Geo Location API\n\nQ. What is Geo Location API?\nANSWER\nGeo\
+    \ Location API publishes the location of the user to the web. It needs user's\
+    \ permission for privacy reason. The Geo location API is present inside **navigator.geolocation**\
+    \ object.\n\nQ. How to determine Geo Location API is supported in browser? ANSWER\n\
+    To determine Geo location API is supported in browser can be determined by the\
+    \ truth value of geolocation object inside the navigator object. Below code has\
+    \ the function returns true or false Boolean value based on the geolocation object\
+    \ present inside the navigator.\n\n```\nfunction isGeoLocationSupported() {\n\
+    var flag = navigator.geolocation ? true : false; return flag;\n}\nvar isSupported\
+    \ = isGeoLocationSupported(); if(isSupported) {\n  console.log(navigator.geolocation);\n\
+    } else {\n  console.log(\"Geo Location API not suppted\");\n}\n```\n\nThe following\
+    \ screenshot shows the output of the above code as the geolocation object is present\
+    \ inside the navigator API.\n\n![](img/beb9e4e69c3f782541f09594e1aab75e_50_0.png)"
+  merge: -1
+  pgno: 50
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 51
+- img_proc: true
+  md: '# Chapter 10 Web Workers
+
+
+    Q. What is a Web Worker?
+
+
+    ANSWER
+
+
+    Web Workers are new HTML5 feature to achieve concurrency in JavaScript execution
+    in web application. A web worker is JavaScript file which run in the background
+    of the browser without impacting the page performance. This helps in resolve the
+    age old problem "Un responsive script alert box". Generally these workers can
+    be used for extensive computation power.
+
+
+    Q. How to detect Web Worker is supported by browser? ANSWER
+
+
+    We can check the support of Web Worker in a browser by validating the Worker property
+    present in the window object. Code for checking Web Worker support is as follows:
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head lang="en">
+
+    <title>Web Worker</title>
+
+    </head>
+
+    <body>
+
+    <script>
+
+    var isWorkerSupported = window.Worker ? true : false; console.log("Is Web Worker
+    Supported:")
+
+    "+isWorkerSupported);\n</script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    In the previous code isWorkerSupported variable can contain TRUE or FALSE value
+    based on the existence of Worker property inside window object. The following
+    screenshot shows the output of above in chrome console.
+
+
+    | Q Elements Network Sources |
+
+    | | | < frame> |
+
+
+    Is Web worker Supported: true
+
+
+    Q. What is a dedicated worker?
+
+
+    ANSWER
+
+
+    A dedicated worker is only accessible by the calling script. A dedicated worker
+    object can be created using worker constructor. Syntax for creating a dedicated
+    worker is listed below.
+
+
+    ```
+
+    var aDedicatedWorker = new Worker("script.js")
+
+    ```
+
+
+    The parameter inside the Worker object is the JavaScript file which will run as
+    worker in the background of the browser.'
+  merge: -1
+  pgno: 52
+- img_proc: true
+  md: '# Q. What is a shared worker?
+
+
+    # ANSWER
+
+
+    A Shared Worker can be accessed by multiple scripts. A shared worker is accessible
+    by different window, iframes and other worker having same origin. Syntax for creating
+    a new dedicated worker is as follows.
+
+
+    ```
+
+    var aSharedWorker = new SharedWorker("script.js");
+
+    ```
+
+
+    The parameter inside the Worker object is the JavaScript file which will run as
+    shared worker in the background of the browser.
+
+
+    # Q. Develop a dedicated worker to display the time?
+
+
+    # ANSWER
+
+
+    Let''s create the time worker in date.js file and we can call this worker in dateWorkerDemo.html
+    file. The following code shows the content of dateWorker.js file which listens
+    to the messages and posts the current time in every second.
+
+
+    ```
+
+    self.addEventListener("message",function(){setInterval(function(){
+
+    var time = new Date();
+
+    self.postMessage({
+
+    hour:time.getHours(),
+
+    minute:time.getMinutes(),
+
+    second:time.getSeconds()
+
+    });
+
+    },1000)
+
+    });
+
+    });
+
+    ```
+
+
+    The following code shows the content of dateWorkerDemo.html containing creation
+    of instance and listening to worker response.
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html lang="en">
+
+    <head>
+
+    <meta charset="UTF-8">
+
+    <title>Time Web Worker Demo</title>
+
+    </head>
+
+    <body>
+
+    <h1 id="resultContainer"></h1>
+
+    <button id="time">Get Time</button>
+
+    <script>
+
+    var dateWorker = new Worker("dateWorker.js");
+
+    resultContainer = document.getElementById("resultContainer"), timeButton =\ocument.getElementById("timeButton\n
+
+    timeButton.addEventListener("click",function(){
+
+    dateWorker.postMessage(null);
+
+    });
+
+    dateWorker.addEventListener("message",function(workerEvent){ var responseData
+    = workerEvent.data,
+
+    hour = responseData.hour,
+
+    minute = responseData.minute,
+
+    second = responseData.second,
+
+    resultContainer.innerText = "HOUR: "+hour+
+
+    " MINUTE: " +minute+" SECOND: "+second;\n});
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```'
+  merge: -1
+  pgno: 53
+- img_proc: true
+  md: "The output of the preceding code show in following screenshot with hour, minute\
+    \ and Time is displayed from the worker message responses.\n\n![](img/beb9e4e69c3f782541f09594e1aab75e_54_0.png)\n\
+    \n# HOUR: 23\nMINUTE: 36\nSECOND: 50\n\nQ. Develop a dedicated worker to find\
+    \ square of a number? ANSWER\n\nThe definition of square worker is present in\
+    \ doSquareWorker.js file and listens to message and generate the number of square.\
+    \ The square worker is instantiated in squareWorkerDemo.html file which listens\
+    \ to the square worker and prints it in browser. The code content of doSquareWorker.js\
+    \ file are as follows.\n\n```\nself.addEventListener(\"message\",function(event){\n\
+    var inputData = event.data,\ninputNumber = parseInt(inputData.number,10);\nsquareResult\
+    \ = Math.pow(inputNumber,2);\nself.postMessage({result:squareResult});\n});\n\
+    ```\n\nThe squareWorkerDemo.html file has the following code.\n\n```\n<DOCTYPE\
+    \ html>\n<html>\n<head lang=\"en\">\n<meta charset=\"UTF-8\"><n<title>Square Container</title>\n\
+    <body>\n<h1 id=\"resultContainer\"></h1>\n\n<input type=\"number\" id=\"inputNumber\"\
+    \ placeholder=\"Enter a number\" value=\"5\">\n<button id=\"squareButton\"> SQUARE</button>\n\
+    <script>\nvar squareWorker = new Worker(\"squareWorker.js\"),resultContainer =\
+    \ \ndocument.getElementById(\"squareButton\"),squareButton = document.getElementById(\"\
+    squareButton\");\ninputNumberDocument=document.getElementById(\"inputNumber\"\
+    );\nnsquareButton.addEventListener(\"click\",function () {\nsquareWorker.postMessage({number:inputNumberDocument.value});});\n\
+    squareWorker.addEventListener(\"message\",function(workerEvent) { var responseData\
+    \ = workerEvent.data,\nsquareResult= responseData.result;\nresultContainer.innerText\
+    \ = squareResult;\n```"
+  merge: -1
+  pgno: 54
+- img_proc: true
+  md: '```
+
+    ));
+
+    <script>
+
+    <body>
+
+    </html>
+
+    ```
+
+
+    The output of the preceding code shown in following screenshot with square of
+    number is displayed by the worker response messages.
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_55_0.png)
+
+
+    # 25
+
+
+    5
+
+    QUARE
+
+
+    Q. How to define an inline web worker? Demonstrate an inline worker for multiplying
+    2 numbers?
+
+
+    ANSWER
+
+
+    An inline web worker can be defined inside a HTML markup using <script> with type
+    attribute having value `javascript/worker`. Syntax:
+
+
+    ```
+
+    <script type="javascript/worker">
+
+    //JavaScript Code for defining a worker
+
+    </script>
+
+    ```
+
+
+    Example:
+
+
+    The inlineWorkerDemo.html file contains the code for defining multiplication worker
+    which listens to the messages and calculates the multiplication and returns the
+    response. The listener to the multiply worker extracts the result and renders
+    in the browser. The following code shows the content of inlineWorkerDemo.html
+    file.
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <meta charset="UTF-8">
+
+    <title>Inline Web Worker Demo</title>
+
+    </head>
+
+    <body>
+
+    <h1 id="resultContainer"> </h1>
+
+    <input type="number" id="number1" value="8" placeholder="Enter first number">
+
+    <input type="number" id="number2" value="10" placeholder="Enter second number">
+
+    <button id="multiply">Multiply</button>
+
+    <script id="multiplyWorker" type="javascript/worker">
+
+    self.addEventListener("message",function(event) {
+
+    var requestData = event.data,
+
+    number1 = requestData.number1,
+
+    number2 = requestData.number2,
+
+    multiplyResult = number1 * number2;
+
+    self.postMessage({result:multiplyResult});
+
+    </script>
+
+    ```'
+  merge: -1
+  pgno: 55
+- img_proc: true
+  md: "```\n<script>\n  var textContent = document.querySelector('#multiplyWorker').textContent,workerBlob\
+    \ = new Blob([textContent],{type: 'application/javascript'}),workerURL = window.URL.createObjectURL(workerBlob),multiplyWorker\
+    \ = new Worker(workerURL);\n  resultContainer = document.getElementById('resultContainer'),multiplyButton\
+    \ = document.getElementById('multiplyButton'),number1 = document.getElementById('number1'),number2\
+    \ = document.getElementById('number2');\n  multiplyButton.addEventListener('click',\
+    \ function () {\n    multiplyWorker.postMessage({\n      number1:parseInt(number1.value,10),\n\
+    \      number2:parseInt(number2.value,10)\n    });\n  });\n  multiplyWorker.addEventListener('message',\
+    \ function (workerEvent) {\n    var responseData = workerEvent.data,result = responseData.result;resultContainer.innerText\
+    \ = \"Result: \" + result;\n  });\n</script>\n<body>\n</html>\n```\n\nUser input\
+    \ two numbers in the text box and press the multiply button. The multiply worker\
+    \ calculate and result is rendered in the browser. The outputs of the preceding\
+    \ code are rendered as following screenshot.\n\n![](img/beb9e4e69c3f782541f09594e1aab75e_56_0.png)\n\
+    \n# Result: 80\n\n| | |\n|---||\n| 8 | |\n| 10 | Multiply |\n\nQ. How to handle\
+    \ error in web worker?\nANSWER\nWe can throw error using throw keyword from the\
+    \ web worker. A callback method can be attached to the error event to handle the\
+    \ generated error. The **positiveSquareWorkerDemo.html** file contains a worker\
+    \ which takes only positive number as input. If a negative number is passed it\
+    \ throws an error. The code content of this file as follows.\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head lang=\"en\">\n  <meta charset=\"UTF-8\">\n  <title>Web\
+    \ Worker Error Handler Demo</title>\n</head>\n```"
+  merge: -1
+  pgno: 56
+- img_proc: true
+  md: "```\n<body>\n<h1 id=\"resultContainer\">#number</h1>\n<input type=\"number\"\
+    \ id=\"number\" value=\"-4\" placeholder=\"Enter a number\"> <button id=\"squareResult\"\
+    >Square</button>\n<script id=\"squareWorker\" type=\"javascript\">\nself.addEventListener(\"\
+    message\",function(event){\n  var requestData=event.data,\n  number1 = requestData.number1,\n\
+    \  squareResult = 0;\n  if(number1<0) {\n    squareResult = number1 * number1\n\
+    \    self.postMessage({result:squareResult});\n  }\n} //For negative number\n\
+    \ throw(\"It is a negative number.Please supply a positive number.\"); \n});\n\
+    </script>\n<script>\n<script>\n  var textContent = document.querySelector('#squareWorker').textContent,\n\
+    \  workerBlob = new Blob([textContent]),\n  workerURL = URL.createObjectURL(workerBlob),\n\
+    \  squareWorker = new Worker(workerURL),\n  resultContainer = document.getElementById('resultContainer'),\n\
+    \  squareResult = document.getElementById('squareResult'),\n  number1 = document.getElementById('number1'),\n\
+    \  number2 = document.getElementById('number2');\n  squareResult.addEventListener(\\\
+    click\", function () {\n  squareWorker.postMessage({\n  number1:parseInt(number1.value,10)\n\
+    \  });\n});\n//Success Handler for the worker\nsquareWorker.addEventListener(\"\
+    message\", function (var responseData = workerEvent.data,\n  result = responseData.result;\n\
+    resultContainer.innerText = \"Result: \" + result;\n});\n//Error Handler handler\n\
+    squareWorker.addEventListener(\"error\", function(workerError){resultContainer.innerText\
+    \ = \"Error: \" + \n  workerError.message; }, false);\n</script>\n</body>\n</html>\n\
+    ```\n\nThe output of the code is rendered as following screenshot rendering the\
+    \ error message in the browser.\n\n![](img/beb9e4e69c3f782541f09594e1aab75e_57_0.png)"
+  merge: -1
+  pgno: 57
+- img_proc: true
+  md: '# Q. How to import an external script in web worker? Demonstrate it with an
+    example?'
+  merge: -1
+  pgno: 58
+- img_proc: true
+  md: "```\naddButton.addEventListener(\"click\",function(){\nnumberWorker.postMessage({\n\
+    \  number1:parseInt(number1.value,10),\n  number2: parseInt(number2.value,10)\n\
+    });\n});\nnumberWorker.addEventListener(\"message\",function(workerEvent) { var\
+    \ responseData = workerEvent.data;\n  result.container.innerText = \"Greatest\
+    \ Number: \"+responseData.result;\n});\n</script>\n<body>\n</html>\n```\n\nThe\
+    \ output of this code is rendered as following screenshot containing the greatest\
+    \ number from the supplied numbers.\n\n![](img/beb9e4e69c3f782541f09594e1aab75e_59_0.png)\n\
+    \n# Greatest Number: 9\n\nQ. Create a shared worker to calculate the length of\
+    \ a string? ANSWER\nThe calculateLengthWorker.js contains the code for listening\
+    \ messages and calculates the length of input string. The shared worker listens\
+    \ to message in a port by listening to connect. The code for calculateLengthWorker.js\
+    \ file is as follows.\n\n```\nself.addEventListener(\"connect\", function(event)\
+    \ {\nvar port = event.port[0];\n  port.addEventListener(\"message\", function(event)\
+    \ {\n    var requestData = event.data;\n    inputString = requestData.string;\n\
+    \    stringLength = inputString.length;\n    port.postMessage({result:stringLength});\n\
+    \  }, false);\n  port.start();\n});\n```\n\nThe lengthWorkerDemo.html file contains\
+    \ the code for instantiating the shared worker and rendering the response in browser.\
+    \ The code content of lengthWorkerDemo.html file are listed as follows.\n\n```\n\
+    <!DOCTYPE html>\n<html>\n<head lang=\"en\">\n  <meta charset=\"UTF-8\">\n  <title>Shared\
+    \ Web Worker Demo</title></head>\n<body>\n```"
+  merge: -1
+  pgno: 59
+- img_proc: true
+  md: "```\n<h1 id=\"result\"></h1>\n<input type=\"text\" id=\"inputString\" placeholder=\"\
+    Enter a string\"> <button id=\"lengthButton\" class=\"lengthButton\">Get Length</button>\n\
+    <script>\nvar lengthWorker = new SharedWorker(\"calculateLengthWorker.js\", resultContainer\
+    \ = \ndocument.getElementById(\"resultContainer\"), lengthButton = document.getElementById(\"\
+    lengthButton\"), inputString = \ndocument.getElementById(\"inputString\");\n\n\
+    lengthButton.addEventListener(\"click\", function () {\nresultContainer.innerText\
+    \ = \"\";\nlengthWorker.port.postMessage({\n  string : inputString.value\n});\n\
+    });\n\n// start the worker\nlengthWorker.port.start();\n// Success Handler for\
+    \ the worker\nlengthWorker.port.addEventListener(\"message\", function (workerEvent)\
+    \ {\nvar responseData = workerEvent.data.data,\nresult = responseData.result;\n\
+    resultContainer.innerText = \"Result: \" + result;\n});\n</script>\n<body>\n</html>\n\
+    ```\n\nThe output of the preceding code is rendered as following screenshot displaying\
+    \ length of the input string.\n\n![](img/beb9e4e69c3f782541f09594e1aab75e_60_0.png)"
+  merge: -1
+  pgno: 60
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 61
+- img_proc: true
+  md: '# Chapter 11 Local Storage
+
+
+    Q. What is local storage?
+
+
+    ANSWER
+
+    HTML5 provides a feature to store data locally in end user’s browser. Data is
+    stored in the browser as key-value pair. Unlike cookie it has average space of
+    5 MB. This storage comes in 2 different type sessionStorage and localStorage.
+
+
+    localStorage : it stores data with no expiration date. sessionStorage : it stores
+    data with an expiration date.
+
+
+    Q. Which one is the main interface?
+
+
+    ANSWER
+
+    window.Storage() is the main interface from where the localStorage and sessionStorage
+    are implemented. This interface has the below definition.
+
+
+    ```
+
+    interface Storage {
+
+    readonly attribute unsigned long length;
+
+    DOMString? key(unsigned long index);
+
+    getter DOMString? getItem(DOMString key);
+
+    setter void setItem(DOMString key, DOMString value); deleter void removeItem(DOMString
+    key);
+
+    void clear();
+
+
+    ```
+
+
+    The details of the above code are as follows:
+
+    setItem(key,value) : This methods stored the value in storage using key-value
+    pair.
+
+    getItem(key) : This method retrieves the stored object using the key.
+
+    removeItem(key) : This method removes the stored item based on the key.
+
+    clear() : Deletes all the items from the storage. length : This property returns
+    the length of the storage, no of elements inside the storage.
+
+    key(position) : This method returns the key for the value in the numeric position.
+
+
+    Q. How to store and retrieve an object in local storage? ANSWER
+
+    Local storage provides setItem() and getItem() for storing and retrieving an object
+    from the storage. setItem(key, value) method takes 2 parameter to store the object.
+    The getItem(key) method retrieves the value using key as parameter. Below code
+    shows the storing “Sandeep Kumar” string in “myName” key and then retrieves this
+    string place it in a HTML element.
+
+
+    ```
+
+    <DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <div id="resultContainer">
+
+    </div>
+
+    <script>
+
+    var container =
+
+    document.getElementById("resultContainer");
+
+
+    ```'
+  merge: -1
+  pgno: 62
+- img_proc: true
+  md: "```\nlocalStorage.setItem(\"myName\", \"Sandeep Kumar\"); container.innerHTML\
+    \ = \nlocalStorage.getItem(\"myName\"); </script>\n</body>\n</html>\n```\n\nBelow\
+    \ screenshot shows the chrome developer storage preview which holds the above\\\
+    object as key and value pair.\n\n![](img/beb9e4e69c3f782541f09594e1aab75e_63_0.png)\n\
+    \n# # Sandeep Kumar\n\n+   * Elements Network Sources Timeline Profiles\n\n| |\
+    \ Key | Value |\n|---|---|---|\n| Frames | myName | Sandeep Kumar |\n| Web SQL\
+    \ | | |\n| IndexedDB | | |\n| Local Storage | | |\n| http://127.0.0.1:51792 |\
+    \ | |\n| Session Storage | | |\n| Cookies | | |\n| Application Cache | | |\n\n\
+    Q. How to attach an event to a local storage?\n\nANSWER\n\nWhen local storage\
+    \ objects get modify a storage event is fired. A callback method can be\nattached\
+    \ to window object using addEventListener() or attachEvent() method.\n\nNOTE:\n\
+    \nWhen the setItem(), removeItem(), and clear() methods are called on a Storage\
+    \ x\nthat is associated with a local storage area, if the methods did something,\
+    \ then in every\nDocument object whose Window's localStorage attribute's Storage\
+    \ object is\nassociated with the same storage area, other than x, a storage event\
+    \ must be fired.\n\nIn simple sentence, a storage event is fired on every\nwindow/tab\
+    \ except for the one that updated\nlocalStorage object caused the event. Below\
+    \ code has a callback method listening\nstorage event. When the button is clicked\
+    \ in one of the tab to update the local storage\nobject the storage event listener\
+    \ in the other tab got triggered and content is updated.\n\n```\n<!DOCTYPE html>\n\
+    ```"
+  merge: -1
+  pgno: 63
+- img_proc: true
+  md: "```\n<html>\n<body>\n<div id=\"resultContainer\"></div>\n<button onclick=\"\
+    update(update)\">Click Me</button> <script>\n\nvar container =\ndocument.getElementById(\"\
+    resultContainer\"), methodStorageEvent = function(event) {\ninnerHTML = \"Event\n\
+    Fired\"+localStorage.getItem(\"myName\"); \n},\ncounter = 1,\nupdate = function(){\n\
+    localStorage.setItem(\"myName\", ++counter); container.innerHTML =\nlocalStorage.getItem(\"\
+    myName\");\n};\nwindow.addEventListener(\"storage\",\nmethodStorageEvent,false)\n\
+    </script>\n</body>\n</html>\n```\n\nBelow screenshot demonstrates how the storage\
+    \ event is fired and the other tabs accessing the same page receives the storage\
+    \ event and update their content.\n\n![](img/beb9e4e69c3f782541f09594e1aab75e_64_0.png)\n\
+    \n# Event Fired2\n\nClick Me\n\nClick Me\n\n2"
+  merge: -1
+  pgno: 64
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 65
+- img_proc: true
+  md: '# Chapter 12 File API
+
+
+    Q. What is HTML5 File API?
+
+
+    ANSWER
+
+    HTML5 provides new API to work with files inside a browser. This API provides
+    File, FileList and Blob data to work with files. It Provide FileReader interface
+    to read files asynchronously.
+
+
+    Q. What are the methods provided by FileReader for asynchronous?
+
+
+    ANSWER
+
+    FileReader provides 4 different methods to work with loaded files. These asynchronous
+    methods are listed as follows.
+
+
+    +   **readAsBinaryStringBlob | File** : Reads the target file and save it to binary
+    string containing integer range 0-255.
+
+
+    +   **readAsText(Blob | File, opt_encoding)** : Reads the target file and save
+    it as UTF-8 text file.
+
+
+    +   **readAsDataURL(Blob | File)** : Reads the target file and returns a data
+    URL containing base64 ascii string, **readAsArrayBuffer(Blob | File)** : Reads
+    the target file and save it in an array buffer.
+
+
+    Q. What is Blob object in javascript?
+
+
+    ANSWER
+
+    A Blob object refers to a sequence of bytes representing data. The IDL(Interface
+    Definition Syntax) for Blob object is as follows:
+
+
+    ```
+
+    interface Blob {
+
+    readonly attribute unsigned long long size; readonly attribute DOMString type;
+    Blob slice(optional [Clamp]) long long start,
+
+    ```
+
+
+    ```
+
+    optional [Clamp] long long end, optional DOMString contentType); void close();
+
+    }
+
+    ```
+
+
+    The details of the method and properties are as follows: **slice method** : The
+    slice method returns a new Blob object
+
+
+    with bytes ranging from the optional start up to not including the optional end
+    parameter, and with a type attribute that is the value of the optional contentType
+    parameter
+
+
+    **close method** : The close method must permanently neut the original Blob object.
+    This is irreversible and nonresident operation; once a Blob has been neut, it
+    cannot be used again; dereferencing a Blob URL to a Blob object on which close
+    has been called results in a network error. A neut Blob must have a size of 0.
+
+
+    **size property** : It returns the size of the Blob object in bytes. **type property**
+    : It returns the type of the Blob object holds.
+
+
+    Q. How to create a Blob Object?
+
+
+    ANSWER
+
+    A Blob object can be created using new keyword with Blob constructor. A Blob'
+  merge: -1
+  pgno: 66
+- img_proc: true
+  md: 'constructor takes the following parameters:
+
+
+    **Blob sequence**: This can be either ArrayBuffer, ArrayBufferView, Blob
+
+    DOMString
+
+
+    **Blob property bag**: It takes one parameter representing type of the ASCII-encoded
+    string
+
+    lower case representing the media type of the Blob.
+
+
+    The following code shows an example of creating Blob using new keyword:
+
+
+    ```
+
+    var a = new Blob();
+
+    var b = new Blob(["foobarbazetcet" + "birdiebirdieoo"], {
+
+    t"text/plain;charset=UTF-8"\});
+
+    ```
+
+
+    # Q. What are readable states for a Blob object?
+
+
+    ANSWER
+
+
+    A Blob must have a readability state, which is one of OPENED or CLOSED.
+
+
+    A Blob that refers to a byte sequence, including one of 0 bytes, is said to be
+    in the
+
+    OPEN readability state.
+
+
+    A Blob is said to be closed if its close method has been called. A Blob that is
+    closed is said
+
+    to be in the CLOSED readability state.
+
+
+    # Q. What are different states of FileReader?
+
+
+    ANSWER
+
+
+    The FileReader object can be in one of 3 states. The readyState attribute, on
+    getting, must
+
+    return the current state, which is one of the following values:
+
+
+    **EMPTY** : The FileReader object has been constructed, and there are no pending
+    reads.
+
+    None of the read methods have been called. This is the default state of a newly
+    minted
+
+    FileReader object, until one of the read methods have been called on it.
+
+
+    **LOADING** : A File or Blob is being read. One of the read methods is being processed,
+
+    and no error has occurred during the read.
+
+
+    **DONE** : The entire File or Blob has been read into memory, OR a file error
+    occurred
+
+    during read, OR the read was aborted using abort(). The FileReader is no longer
+    reading a
+
+    File or Blob. If readyState is set to DONE it means at least one of the read methods
+    have
+
+    been called on this FileReader.'
+  merge: -1
+  pgno: 67
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 68
+- img_proc: true
+  md: '# Chapter 13 Web RTC
+
+
+    Q. What is Web RTC?
+
+
+    ANSWER
+
+
+    Web RTC provides the capability to browsers for real time communication without
+    any additional plugin installed. It involves audio, video and other type of data
+    streaming among the browser with their native capability.
+
+
+    Q. What is the API implemented by Web RTC?
+
+
+    ANSWER
+
+
+    Web RTC implements three different API. These interfaces are listed below.
+
+
+    MediaStream : This represents a synchronized media stream using camera and microphone.
+
+
+    RTCPeerConnection : This interface is responsible for stable connection between
+    peer browser during real time communication.
+
+
+    RTCDataChannel : This interface is responsible for other type of data communication
+    between peer browser. For example the remote desktop sharing using browser.
+
+
+    Q. What is MediaStream?
+
+
+    ANSWER
+
+
+    MediaStream basically represents the stream captured by Camera and microphone.
+    Each MediaStream has an input which captures the stream. This MediaStream can
+    be accessed navigator.getUserMediaMedia() method.
+
+
+    Q. What are the input parameters to getUserMedia()? ANSWER
+
+
+    The getUserMedia() method takes 3 parameters as input. These parameters are as
+    follows:
+
+
+    Constraint Object similar to a configuration object. Success Callback Method.
+    Error Callback Method.
+
+
+    Q. What are MediaStreamTracks?
+
+
+    ANSWER
+
+
+    The MediaStream returned by getUserMedia() has 2 methods getAudioTracks() and
+    getVideoTracks().Both of these methods returns an array of MediaStreamTracks.
+
+
+    Q. What are the protocols used by Web RTC for communication?
+
+
+    ANSWER
+
+
+    Web RTC uses 2 different protocols for communication. These 2 protocols are listed
+    as follows.
+
+
+    DTLS: Datagram Transport Layer Security.
+
+    SRTP: Secure Real-time Transport Protocol.
+
+
+    Q. How to view the statistics of an progress Web RTC session in Chrome browser?
+
+
+    ANSWER
+
+
+    We can view the details statistics and charts of an ongoing Web RTC session in
+    chrome browser using chrome://webrtc-internals/ in chrome browser.'
+  merge: -1
+  pgno: 69
+- img_proc: true
+  md: '# Q. What are the different event handlers for a channel? ANSWER
+
+
+    A channel has 4 different event handlers. These event handlers are as follows.
+
+
+    Onopen: Executed when the connection is established. Onerror: Executed if there
+    is an error creating the connection.
+
+
+    Onmessage: When you receive a message, this method will execute
+
+
+    Onclose: Executed if the other peer closes the connection.
+
+
+    # Q. What is a signal channel? ANSWER
+
+
+    WebRTC can''t create connections without some sort of server in the middle. We
+    call this the Signal Channel.
+
+
+    # Q. What is an ICE technique? ANSWER
+
+
+    Interactive Connectivity Establishment (ICE) is a technique used in computer networking
+    involving network address translators (NATs) in Internet applications of Voice
+    over Internet Protocol (VoIP), peer-to-peer communications, video, instant messaging
+    and other interactive media.
+
+
+    # Q. What is an ICE Candidate? ANSWER
+
+
+    While communication peers must exchange information about the network connection.
+    This is known as an ICE candidate.
+
+
+    # Q. What are the server side functionalities needed by the Web RTC? ANSWER
+
+
+    Web RTC requires following functionalities from server side to create a communication
+    between peers.
+
+
+    User discovery and communication.
+
+    Signaling.
+
+    NAT/firewall traversal.
+
+    Relay servers in case peer-to-peer communication fails.
+
+
+    # Q. What is STUN protocol? ANSWER
+
+
+    STUN (Session Traversal Utilities for NAT) is a standardized set of methods and
+    a network protocol to allow an end host to discover its public IP address if it
+    is located behind a NAT.'
+  merge: -1
+  pgno: 70
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 71
+- img_proc: true
+  md: '# Chapter 14 Drag & Drop API
+
+
+    Q. How to make content draggable inside the browser? ANSWER
+
+    HTML5 provides drag and drop feature. An element can be made draggable by setting
+    its draggable property to true. Check the below code having 2 buttons. One button
+    is draggable and other is just a normal button.
+
+
+    ```
+
+    <! html>
+
+    <html>
+
+    <head>
+
+    <title>Draggable Element</title>
+
+    </head>
+
+    <body>
+
+    <button draggable="true">Draggable Button</button> <button>Normal Button</button>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    Below screenshot shows both these buttons. The draggable button is movable while
+    the normal button is fixed in its position.
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_72_0.png)
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>...</head>
+
+    <body>
+
+    <button draggable="true">Draggable Button</button>
+
+    <button>Normal Button</button>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    Q. What happens when drag starts for an element?\ ANSWER
+
+    There are 3 important key points to note when a drag starts. These key points
+    are as follows.
+
+
+    **Drag Data**: It represent the type of data that will be transferred while dragging'
+  merge: -1
+  pgno: 72
+- img_proc: true
+  md: 'Drag Feedback: This image which appears beside the mouse pointer during the
+    drag operation. Drag Effect: This represents the type of drag happens to element.
+    It can be 3 types and listed below.
+
+
+    +   * Copy: This effect indicates that the data will be copied from its present
+    location to the drop location
+
+
+    +   * Move: This effect indicates that the data being dragged will be moved from
+    its original position to drop location.
+
+
+    +   * Link: This effect indicates that some form of relationship or connection
+    will be created between the source and drop locations.
+
+
+    # Q. What are the Drag and drop events?
+
+
+    ANSWER
+
+
+    There are 7 different drag and drop events that can be attached with a callback
+    method programmatically.
+
+    Dragstart: it is fired on an element when a drag is started Dragenter: it is fired
+    when the mouse enters an element while a drag is occurring.
+
+    Dragover: This event is fired as the mouse is moving over an element when a drag
+    is occurring.
+
+    Dragleave This event is fired when the mouse leaves an element while a drag is
+    occurring.
+
+    Drop: The drop event is fired on the element where the drop occurred at the end
+    of the drag operation.
+
+    Dragend: The source of the drag will receive a dragend event when the drag operation
+    complete, whether it was successful or not.
+
+
+    # Q. What is a dataTransfer property?
+
+
+    ANSWER
+
+
+    dataTransfer object holds the piece of data sent in a drag action. dataTransfer
+    is set in the dragstart event and read/handeled in the drop event. The syntax
+    for setting value in dataTransfer object is as follows.
+
+    event.dataTransfer.setData(format, data),
+
+
+    The above syntax will set the object''s content to the mime type and data payload
+    passed as arguments.
+
+
+    # Q. Develop an example to drag and drop an element from one place to another?
+
+
+    ANSWER
+
+
+    To demonstrate drag and drop we have created div element with rounded border and
+    background color red. We will drag this element and drop it in a container. The
+    following code shows the drag and drop example.
+
+
+    ```
+
+    <DOCTYPE html>
+
+    <html>
+
+    <head>
+
+
+    <style>
+
+    #ball(
+
+    ```'
+  merge: -1
+  pgno: 73
+- img_proc: true
+  md: '```
+
+    #dropZone {
+
+    width:200px;
+
+    height:100px;
+
+    padding:10px;
+
+    border:1px solid #aaaaaa;
+
+    }
+
+    <style>
+
+    <head>
+
+    <body>
+
+    <div id="dropZone"
+
+    ondrop="drop(event)"\ondragover="allowDrop(event)">
+
+    </div>
+
+    <br>
+
+    <div id="ball"
+
+    dragable="true"
+
+    ondragstart="drag(event)"></div>
+
+    <script>
+
+    function allowDrop(ev) {
+
+    ev.preventDefault();
+
+    }
+
+    function drag(ev) {
+
+    ev.dataTransfer.setData("text", ev.target.id);
+
+    }
+
+    function drop(ev) {
+
+    ev.preventDefault();
+
+    var data = ev.dataTransfer.getData("text");
+
+    ev.target.appendChild(document.getElementById(data));
+
+    }
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    The output of the code looks like following screenshot before dragging with both
+    the element are in there original position.'
+  merge: -1
+  pgno: 74
+- img_proc: true
+  md: '![](img/beb9e4e69c3f782541f09594e1aab75e_75_0.png)
+
+
+    The output of the code looks like following screenshot after dragging and dropping
+    the draggable element to the container.
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_75_1.png)'
+  merge: -1
+  pgno: 75
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 76
+- img_proc: true
+  md: '# Chapter 15 App Cache
+
+
+    Q. What is app cache? What are the benefits of using app cache API in a web application?
+
+    ANSWER
+
+
+    App cache API is the new feature provided by the HTML5.This API power up a web
+    application working without an internet connection. The most important benefits
+    by this API are listed below:
+
+
+    +   **Speed**: Like all other cache it increases the speed of the page content.
+
+    **Offline browsing**: It increases the usability of application as it can be accessed
+    without internet.
+
+    **Reduced load**: As the content and data is now cache in the browser the load
+    of the application is reduced form the server.
+
+
+    +   **Few network calls**: As most of reusable content is present in app cache
+    this reduces the no of network call to the server.
+
+
+    Q. How to enable application cache in an html file?
+
+    ANSWER
+
+
+    To enable application cache in a HTML file we need to have manifest attribute
+    in <HTML> element. The syntax of declaring application cache in HTML file is as
+    follows.
+
+
+    ```
+
+    <DOCTYPE HTML><html manifest="filename.appcache">
+
+    ```
+
+
+    Q. What is the media type of app cache?
+
+    ANSWER
+
+
+    A manifest file needs to have text/cache-manifest media type.
+
+
+    Q. What are the 3 different section of manifest file?
+
+    ANSWER
+
+
+    A manifest file has 3 sections. These 3 different sections are as follows.
+
+    **CACHE MANIFEST**: Files listed under this header will be cached after they are
+    downloaded for the first time. **NETWORK**: Files under this header require a
+    connection to the server, and will never be cached. **FALLBACK**: Files listed
+    under this header specifies fallback pages if a page is inaccessible.
+
+
+    Q. What is NETWORK section?
+
+    ANSWER
+
+
+    NETWORK is one of the sections in manifest file. The file name listed in the NETWORK
+    section is never cached locally. The following code shows a sample of NETWORK
+    section.
+
+    NETWORK:login.html
+
+
+    Q. What is FALLBACK section?
+
+    ANSWER
+
+
+    FALLBACK is one of the sections in manifest file. In this section we can mention
+    the **file** name which will be called when application is offline. The following'
+  merge: -1
+  pgno: 77
+- img_proc: true
+  md: 'code shows a sample of FALLBACK section.
+
+    FALLBACK:
+
+    /html/offline.html
+
+
+    # Q. What is CACHE MANIFEST section?
+
+
+    ANSWER
+
+    CACHE MANIFEST is one of the sections in manifest file. The file names mentioned
+    in this section is cached locally. The following code shows a sample of CACHE
+    MANIFEST section.
+
+
+    /style.css
+
+    /favicon.gif /app.js
+
+
+    # Q. How to view app cache detail in chrome browser?
+
+
+    ANSWER
+
+    We can view the app cache content like what it is caching, size and time etc.
+    using the following link in chrome browser.
+
+
+    chrome://appcache-internals/
+
+    The following screenshot shows the appcache internal for my browser.
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_78_0.png)
+
+
+    Manifest: https://www.google.co.in/_chrome/newtab/manifest?espv=2&ie=UTF-8
+
+    Remove View Entries
+
+
+    +   * Size: 232 KB
+
+    * Creation Time: Thursday, 16 October 2014 at 20:37:47
+
+    * Last Update Time: Sunday, 24 May 2015 at 21:07:19
+
+    * Last Access Time: Wednesday, 27 May 2015 at 20:19:40
+
+
+    # Q. How to detect the support of browser for appcache? ANSWER
+
+
+    We can detect the support of appcache by checking the existence of applicationCache
+    in window object. We can use javascript if statement which checks the truth value
+    of window.applicationCache object. The following screenshot shows the chrome console
+    detecting applicationCache object.'
+  merge: -1
+  pgno: 78
+- img_proc: true
+  md: "```\nConsole Search Emulation Rendering\n\U0001F6AB ▽ <top frame> ▼ Preserve\
+    \ log\n> window.applicationCache\n▼ ApplicationCache {status: 0, onchecking: null,\
+    \ onerror: null, onnupdate: null, onownloading:...}\n  oncached: null\n  onchecking:\
+    \ null\n  ondownloading: null\n  onerror: null\n  onnupdate: null\nonnobsolete:\
+    \ null\n  onprogress: null\n  ondateready: null\n  status: 0\n  ▶ __proto__: ApplicationCache\n\
+    ```\n\n# Q. How to update the appcache manually?\n\nANSWER\n\nWe can update the\
+    \ cache by doing hard reload to the browser. We can also call swapCache() method\
+    \ to programmatically update the cache."
+  merge: -1
+  pgno: 79
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 80
+- img_proc: true
+  md: "# Chapter 16 Server Sent Events\n\nQ. What is Server Side Events (SSE)?nANSWER\n\
+    HTML5 provides server side events feature by which a web page gets the update\
+    \ from the server automatically. A great example of this feature is Facebook notification\
+    \ or Google + updates.\n\nQ. What is the content type of the server response?\
+    \ ANSWER\nThe content type of the server response is \"text/event-stream\" for\
+    \ the \"Content-Type\" header.\n\nQ. How to create an event source for listening\
+    \ to server updates? ANSWER\nan event source can be created by instantiating the\
+    \ object of EventSource class with a server path. The syntax for creating an event\
+    \ source is listed below.\n\n```\nvar source = new EventSource(\"URL to Server\"\
+    );\n```\n\nQ. What are the event types fired by an EventSource? ANSWER\n EventSource\
+    \ fires 3 different events. Callback methods can be attached to the source for\
+    \ listening to these events. These event types are listed below.\n\n+   onopen\
+    \ : This event is fired when the server open the connection to the browser.\n\
+    onmessage: This event is fired when server produces the new output to the stream.\n\
+    onerrorwer: This event is fired when an error occurs by some means.\n\nQ. How\
+    \ to close an event stream?\nANSWERnThe event stream can be closed using close()\
+    \ method.\n\nQ. What is the format of event stream?\nANSWER\nThe event stream\
+    \ is a simple stream of text data, which must be encoded using UTF-8.\nEach message\
+    \ is separated by a pair of newline characters. A colon as the first character\
+    \ of a line is, in essence, a comment, and is ignored."
+  merge: -1
+  pgno: 81
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 82
+- img_proc: true
+  md: "# Chapter 17 Miscellaneous Questions\n\nQ. What is strict mode?\nANSWER\n\n\
+    Strict mode is a new directive in new ECMA 5 JavaScript specification. It is used\
+    \ for secure JavaScript coding. It eliminates JavaScript silent errors by changing\
+    \ them to throw errors.\n\nThe syntax of writing strict mode is below expression.\n\
+    “use strict\"\nBelow code shows the use of strict mode inside a function.\n\n\
+    ```\nfunction sayHello(){\n  \"use strict\";\n  myName = \"Sandeep\";\n}\nsayHello();\n\
+    ```\n\nThe following screenshots show the error produced by using an undeclared\
+    \ variable inside the sayHello() method.\n\n![](img/beb9e4e69c3f782541f09594e1aab75e_83_0.png)\n\
+    \nQ. List out some of the conditions that are not allowed in strict mode?\nANSWER\n\
+    \nFind the list of the conditions that are not allowed in ECMA5 strict mode in\
+    \ below:\n\nUsing a variable without declaring it is not allowed. Deleting a variable,\
+    \ a function, or an argument is not allowed.\n\nDefining a property more than\
+    \ once is not allowed. Duplicating a parameter name is not allowed.\n\nOctal numeric\
+    \ literals and escape characters are not allowed.\n\nWriting to a read-only property\
+    \ is not allowed. Deleting an undeletable property is not allowed."
+  merge: -1
+  pgno: 83
+- img_proc: true
+  md: 'The string "eval" cannot be used as a variable. The string "arguments" cannot
+    be used as a variable.
+
+
+    Future reserved keywords are not allowed.
+
+
+    Q. What is the output of 0.1+0.2 produces in the console and why? ANSWERnJavaScript
+    math library follows IEEE 754 standards for math. IEEE 754 standards use 64 bit
+    representation for a floating point number. This causes a problem while evaluating
+    the 0.1 + 0.2 expression. Below screenshot shows the Firebug console for this
+    expression.
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_84_0.png)
+
+
+    JavaScript internally converts the 0.1 to 16 precision which becomes 0.10000000000000001
+    and then 0.2 gets added and becomes 0.30000000000000004.
+
+    Below screenshot shows this
+
+    in JavaScript code.
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_84_1.png)
+
+
+    Q. How to resolve the issue 0.1+0.2 = 0.30000000000000004 and produce 03? ANSWER
+
+    This can be resolved by using toFixed(1) method to explain this. toFixed() method
+    converts a number to the specified decimal places. Below shows the use of toFixed()
+    to produce the correct output is 0.3.
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_84_2.png)
+
+
+    ```
+
+    var sum = 0.1+0.2;
+
+    console.log(sum);
+
+    console.log(sum.toFixed(1));
+
+    0.30000000000000004
+
+    0.3
+
+    ```
+
+
+    Q. What will be the output of the below code and why?'
+  merge: -1
+  pgno: 84
+- img_proc: true
+  md: '```
+
+    function(){
+
+    var a = b = 3;
+
+    }());
+
+    console.log(typeof a);
+
+    console.log(typeof b);
+
+    ```
+
+
+    ANSWER
+
+    The above code will print undefined and Number in the console. Below screenshot
+    shows the output of the above code in the Firebase console.
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_85_0.png)
+
+
+    JavaScript treats the code as below screenshot. From the below code it is clear
+    that variable a is in local scope of the function and be is treated as this.b
+    . The current reference represents the window object.
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_85_1.png)
+
+
+    Q. What will be the output of the below code and why? console.log(1+2+4);
+
+
+    ANSWER'
+  merge: -1
+  pgno: 85
+- img_proc: true
+  md: 'The output of the above code is 7 as the parameters are all numbers. Below
+    screenshot shows the output of the above code in a chrome console.
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_86_0.png)
+
+
+    # Q. Explain Hoisting in JavaScript?
+
+
+    ANSWER
+
+
+    Hoisting is JavaScript''s default behavior of moving declarations to the top.
+    In other words, a variable can be used before it has been declared. Let''s understand
+    hoisting using these following examples.
+
+
+    # Example 1:
+
+
+    The following code has a display() method which prints the value of a in the console.
+
+
+    ```
+
+    function display() { console.log(a); }\isplay();
+
+    ```
+
+
+    The output of the preceding code will be a reference error as we have not defined
+    the variable. The following screenshot shows the output of the preceding code.
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_86_1.png)
+
+
+    # Example 2:
+
+
+    The following code has a display() method which prints the value of a in the console.
+
+
+    ```
+
+    function display() { var a; }
+
+    ```'
+  merge: -1
+  pgno: 86
+- img_proc: true
+  md: '```
+
+    console.log("Output: +a);
+
+    }
+
+    display();
+
+    ```
+
+
+    The output of the preceding code will be undefined as we have defined the variable
+    not assigned any value. The following screenshot shows the output of the preceding
+    code.
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_87_0.png)
+
+
+    Example 3:
+
+    The following code has a display() method which prints the value of a in the console.
+
+
+    ```
+
+    function display(){
+
+    console.log("Output: +a);
+
+    var a;
+
+    }
+
+    display();
+
+    ```
+
+
+    The output of the preceding code will be undefined as we have defined the variable
+    not assigned any value. Example 2 and Example 3 has same output. It means the
+    variable declaration is moved to the top. The following screenshot shows the output
+    of the preceding code.
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_87_1.png)'
+  merge: -1
+  pgno: 87
+- img_proc: true
+  md: '# About The Author
+
+
+    ![](img/beb9e4e69c3f782541f09594e1aab75e_88_0.png)
+
+
+    Sandeep Kumar Patel is a senior web developer and founder of www.tutorialsavvy.com,
+    a widely- read programming blog since 2012. He has more than five years of experience
+    in object-oriented JavaScript and JSON-based web applications development. He
+    is GATE-2005 Information Technology (IT) qualified and has a Master''s degree
+    from VIT University, Vellore.
+
+
+    You can know more about him from his
+
+
+    +   -LinkedIn profile (http://www.linkedin.com/in/techblogger).
+
+    -He has received the Dzone Most Valuable Blogger (MVB) award for technical publications
+    related to web technologies. His article can be viewed at http://www.dzone.com/users/sandeepeptiet.
+
+
+    +   -He has also received the Java Code Geek (JCG) badge for a technical article
+    published in JCG. His article can be viewed at http://www.javacodgeeks.com/author/sandeep-kumar-patel.
+
+
+    +   -Author of “Instant GSON” for Packt publication, http://www.packopub.com/create-json-data-java-objectsimplement-with-gson-library/book",
+
+
+    Questions or comments? E-mail me at sandeeppatletech@gmail.com or find me on the
+    following social networks:
+
+    -Facebook Page: http://www.facebook.com/SandeepTechTutorials .
+
+    -Tutorial Blog: http://www.tutorialsavvy.com'
+  merge: -1
+  pgno: 88
+- img_proc: true
+  md: '# One Last Thing...
+
+
+    When you turn the page, Kindle will give you the opportunity to rate this book
+    and share your thoughts on Facebook and Twitter. If you believe the book is worth
+    sharing, please would you take a few seconds to let your friends know it? If it
+    turns out to make a difference in their professional lives, they’ll be forever
+    grateful to you, as will I.
+
+
+    All the best,
+
+
+    Sandeep Kumar Patel.'
+  merge: -1
+  pgno: 89

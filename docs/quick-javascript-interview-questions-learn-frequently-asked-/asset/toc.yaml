@@ -1,0 +1,160 @@
+- - '#'
+  - JavaScript 面试快速入门指南：学习常见问题
+- - '#'
+  - 第 1 章 继承
+- - '##'
+  - Q. 什么是构造函数（constructor）属性？
+- - '##'
+  - Q. 如何调用方法？
+- - '##'
+  - 元素资源 网络来源、时间线、个人资料、审计
+- - '##'
+  - 元素资源 网络时间线
+- - '##'
+  - 问. `Object.defineProperties()` 方法的目的是什么？答
+- - '#'
+  - 第 2 章 事件
+- - '##'
+  - 如何移除事件监听器？
+- - '##'
+  - 语法：
+- - '#'
+  - 第 3 章 闭包
+- - '#'
+  - 第 4 章 关于 JSON 的问题
+- - '##'
+  - Q. JSON 的 MIME 类型是什么？
+- - '##'
+  - ANSWER
+- - '##'
+  - Q. JSON 支持哪些数据类型？
+- - '##'
+  - ANSWER
+- - '##'
+  - Q. JSON.stringify() 方法的作用是什么？
+- - '##'
+  - Q. JSON.parse() 方法的作用是什么？
+- - '##'
+  - Q. JSON.parse() 方法的语法是什么？ ANSWER
+- - '##'
+  - Q. 如何将日期对象转换为 JSON？
+- - '#'
+  - 第 5 章 DOM
+- - '##'
+  - Q. 什么是 DOM？
+- - '##'
+  - Q. DOM 包含哪些对象？ ANSWER
+- - '##'
+  - Q. DOM 包含哪些属性？ ANSWER
+- - '##'
+  - Q. 什么是 load 事件？
+- - '##'
+  - Q. 什么是 readystate 事件？
+- - '##'
+  - Q. DOM 中的 selector 是什么？
+- - '##'
+  - 问题：什么是 DOM 中的文档片段（document fragment）？
+- - '##'
+  - 问题：哪一个是基础的 DOM？
+- - '##'
+  - 问题：常见的 doctype 声明（doctype declarations）有哪些？
+- - '#'
+  - 第 6 章 Date 对象（日期对象）
+- - '##'
+  - 问题：什么是 JavaScript Date 对象？
+- - '##'
+  - 问题：创建 Date 对象的不同方式有哪些？或者 Date 对象有哪些不同的构造函数形式？
+- - '##'
+  - 问题：如何在日期对象中获取 1970 年 1 月 1 日（即计算时间的起始日期）？
+- - '##'
+  - 问题：JavaScript 如何计算月份？
+- - '##'
+  - 问题：什么时候会发生 RangeError 无效日期异常？
+- - '##'
+  - Q. 编写一个正则表达式来验证 URL？
+- - '#'
+  - 第 8 章 Canvas API 问题
+- - '##'
+  - Q. 什么是 canvas 2d context？它是如何创建的？
+- - '##'
+  - Q. 如何在 Canvas 中加载图像？
+- - '#'
+  - 第 9 章 Web Worker
+- - '##'
+  - Q. 什么是 Shared Worker（共享 Worker）？
+- - '##'
+  - Q. 如何开发一个显示时间的专用 worker？
+- - '##'
+  - Q. 如何开发一个计算数字平方的 worker？
+- - '##'
+  - Q. 如何定义内联 web worker？演示一个用于数字相法的内联 worker？
+- - '##'
+  - Q. 如何在 web worker 中处理错误？
+- - '##'
+  - Q. 如何在 web worker 中导入外部脚本？请用示例演示。
+- - '##'
+  - Q. 创建一个 shared worker 来计算字符串的长度？答案
+- - '#'
+  - 第 10 章 Local Storage（本地存储）
+- - '##'
+  - Q. 什么是 local storage？
+- - '##'
+  - Q. 哪一个是主接口？
+- - '##'
+  - Q. 如何在 local storage 中存储和检索对象？
+- - '##'
+  - Q. 如何为 local storage 附加事件？
+- - '#'
+  - 第 11 章 事件触发
+- - '#'
+  - 第 12 章 File API
+- - '##'
+  - Q. 什么是 HTML5 File API？
+- - '##'
+  - Q. FileReader 为异步操作提供了哪些方法？
+- - '##'
+  - Q. JavaScript 中的 Blob 对象是什么？
+- - '##'
+  - Q. 如何创建 Blob 对象？
+- - '##'
+  - Q. Blob 对象的可读状态有哪些？
+- - '##'
+  - Q. FileReader 的不同状态有哪些？
+- - '#'
+  - 第 13 章 Web RTC
+- - '##'
+  - Q. 什么是 Web RTC？
+- - '##'
+  - Web RTC 实现了哪些 API？
+- - '##'
+  - Q. 什么是 MediaStream？
+- - '##'
+  - Q. getUserMedia() 的输入参数有哪些？
+- - '##'
+  - Q. 什么是 MediaStreamTracks？
+- - '##'
+  - Web RTC 通信使用了哪些协议？
+- - '##'
+  - Q. 如何在 Chrome 浏览器中查看 Web RTC 会话的统计信息？
+- - '##'
+  - Q. Channel 的不同事件处理器有哪些？
+- - '##'
+  - Q. 什么是信号通道（signal channel）？
+- - '##'
+  - Q. 什么是 ICE 技术？
+- - '##'
+  - Q. 什么是 ICE 候选（ICE Candidate）？
+- - '#'
+  - 第 14 章 拖放 API
+- - '##'
+  - Q. 什么是拖放事件？
+- - '##'
+  - Q. 什么是 dataTransfer 属性？
+- - '##'
+  - Q. 开发一个示例，将元素从一个地方拖放到另一个地方？
+- - '#'
+  - 第 15 章 应用缓存 (App Cache)
+- - '#'
+  - 第 16 章 服务器发送事件 (Server Sent Events)
+- - '#'
+  - 第 17 章 杂记问题
