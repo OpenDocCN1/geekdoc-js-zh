@@ -1,0 +1,1954 @@
+- img_proc: true
+  md: '# VISUALIZING
+
+    THE
+
+    WEB
+
+
+    # RENDERING
+
+    HTML5
+
+    ILLUSTRATION
+
+
+    Matthew
+
+    David
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_0_0.png)'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: '# # RENDERING HTML5 ILLUSTRATION
+
+
+    Matthew David
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_1_0.png)
+
+
+    AMSTERDAM • BOSTON • HEIDELBERG • LONDON • NEW YORK • OXFORD PARIS • SAN DIEGO
+    • SAN FRANCISCO • SINGAPORE • SYDNEY • TOKYO
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_1_1.png)
+
+
+    Focal Press is an imprint of Elsevier'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: "Focal Press is an imprint of Elsevier\n30 Corporate Drive, Suite 400, Burlington,\
+    \ MA 01803, USA\nLinacre House, Jordan Hill, Oxford OX2 8DP, UK\n\n© 2010 Elsevier,\
+    \ Inc. All rights reserved.\n\nNo part of this field may be reproduced or transmitted\
+    \ in any form or by any means, electronic\nor mechanical, including photocopying,\
+    \ recording, or any information storage and retrieval system, without\npermission\
+    \ in writing from the publisher. Details on how to seek permission, further information\
+    \ in evaluating and about the\nPublisher's permissions policies and our arrangements\
+    \ with organizations such as the Copyright Clearance Center\nand the Copyright\
+    \ Licensing Agency, can be found at our website: www.elsevier.com/permissions.\n\
+    \nThis book and the individual contributions contained in it are protected under\
+    \ copyright by the Publisher (other\nthan as may be noted herein).\n\n# Notices\n\
+    \nKnowledge and best practice in this field are constantly changing. As new research\
+    \ and knowledge in evaluating and broaden\nunderstanding, changes in research\
+    \ methods, professional practices, or medical treatment may become necessary.\n\
+    \nPractitioners and researchers must always rely on their own experience and knowledge\
+    \ in using any\ninformation, methods, compounds, or experiments described herein.\
+    \ In using such information or methods they\n be mindful of their own safety and\
+    \ the safety of others, including for whom they have a professional\nresponsibility.\n\
+    \nTo the extent of all law, neither the Publisher nor the authors, contributors,\
+    \ or editors, assume any liability\nfor any injury/or damage to persons or property\
+    \ as a matter of products liability, negligence or otherwise, or\nfrom any use\
+    \ or operation of methods, products, instructions, or ideas contained in the material\
+    \ herein.\n\nISBN: 978-0-240-81384-4\n\nFor information on all Focal Press publications\n\
+    visit our website at www.elsevierirect.com\n\n![](img/273fb5489df445536bf1c8159f903498_2_0.png)"
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: '# CONTENTS
+
+
+    +   The Tale of Web Image Formats ....................................................................................
+    1
+
+
+    +   Bitmap Images: Using JPEG, GIF, and PNG Images on the Web. .......................
+    1
+
+
+    +   Creating SVG Graphics ................................................................................................
+    3
+
+
+    +   The Fundamentals of Creating SVG Images and Adding them to Your Web Pages
+    ............................................................ 5
+
+
+    +   Leveraging SVG Drawing Tools. .......................................................................
+    23
+
+
+    +   Adding the CANVAS Element to Your Web Page. ................................................
+    23
+
+
+    +   What You Have Learned. ................................................................................
+    36'
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: '# # RENDERING HTML5 ILLUSTRATION
+
+
+    Tags are used in HTML5 to place and organize content at a level that is descriptive.
+    This does not mean that the page will look good. Presentation of content on the
+    page is controlled using Cascading Style Sheets Level 3, or CSS3, in HTML5.
+
+    There are times, however, when you need to present graphics, too. Typically, HTML
+    has only provided support for pixel-based images in JPEG and GIF image format.
+    With HTML5, you can now create mathematically generated images. The new formats
+    are scalable vector (SVG) and CANVAS. The difference between the two is that SVG
+    is an XML-based language that describes how an image should be displayed in two-dimensional
+    (2D) constructs. The CANVAS tag also describes 2D images, but it does using JavaScript.
+    The CANVAS tag also allows you to easily manage interactivity within it JavaScript.
+
+    In this article you will learn the following:
+
+
+    +   - The image formats available in HTML5.
+
+    - How to draw using SVG.
+
+    - How to draw with CANVAS.
+
+    - How to add interactivity to CANVAS using JavaScript.
+
+
+    The goal at the end of this article is that you will understand how you can use
+    the image formats in HTML5.
+
+
+    # ## Tale of Web Image Formats
+
+
+    The Web is not a friendly place for a designer. For many years you have been limited
+    to the number of file formats you can use. There are two predominant file formats
+    used on the Web for creating graphics: JPEG and GIF.
+
+
+    # ## Bitmap Images: Using JPEG, GIF, and PNG on the Web
+
+
+    Both JPEG and GIF image formats are raster images created from pixels of individual
+    color. Both have positives and negatives. JPEG images are open standard managed
+    by the Joint'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: '# 2
+
+
+    Photographers Expert Group. The JPEG file format allows you to create photorealistic
+    images (Figure 3.1). A great place to go to view millions of JPEG images is Yahoo’s
+    Flickr. A JPEG image is identified with the extension of either JPEG or JPG.
+
+
+    The second file format used widely on the Internet is GIF, graphics interface
+    format. Unlike JPEG, which support millions of colors, the GIF file format allows
+    you to create images that support a color palette of 256 colors (Figure 3.2).
+    On the face of it, the GIF format appears to be in the JPEG format. However, the
+    GIF format does have two features the JPEG format does not: setting transparency
+    as a color and sequencing a series of images together to play back as a simple
+    animation.
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_5_0.png)
+
+
+    **Figure 3.1** This is in JPEG format. The right side shows the pixel-by-pixel
+    construction of the image.
+
+
+    Both JPEG and GIF image formats, are now being superseded by a more sophisticated
+    image format: PNG. Portable network graphics (PNG) are a raster-based file format
+    that gives the best of JPEG and GIF and a little more (Figure 3.3). A PNG image
+    format will support 32-byte images for photorealistic presentation. Additionally,
+    like GIF images, backgrounds in PNG can be set to be transparent.
+
+
+    While PNG, GIF, and JPEG images are all great, it is difficult to programmatically
+    create the graphical display of images. For instance, you cannot create a chart
+    using JPEG images that as new data come in. HTML5 introduces two solutions to
+    address this problem: SVG and CANVAS.
+
+
+    The CANVAS HTML5 allows you to create images programmatically using JavaScript
+    as the designer. Through this technique, complex animations and interactive solutions
+    can be created. Google has established ChromeExperiments.com (http://www.chromebookexperiments.com/)
+    to demonstrate powerful CANVAS and JavaScript experiments (Figure 3.4).
+
+
+    The second technology, SVG (scalable vector graphics), is vector-based technology
+    that enables you to create images and animation using XML syntax similar to HTML.
+    SVG started
+
+
+    **Figure 3.2** The GIF image is using a Web-safe color palette of 256 colors.
+    You can see by the grainy texture that the image is not photorealistic.
+
+
+    **Figure 3.3** PNG graphics allow you to have the best of JPEG and GIF technologies
+    in a single format.
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_5_1.png)'
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: '# All Experiments
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_6_0.png)
+
+
+    Figure 3.4 ChromeExperiments.com showcases how far you can take technologies such
+    as SVG and CANVAS.
+
+
+    as an Open Standard in 1999. The support for SVG started out patchy, but with
+    the release of FireFox, that all changed. Firefox 1.5 introduced support for SVG,
+    with other competing browsers such as Chrome and Safari adopting the standard
+    through support of the WebKit Web Browser project. SVG as an alternative vector
+    graphics technology is widely adopted. As an example, Wikipedia.org has over 250,000
+    SVG images on its site.
+
+
+    # Creating SVG Graphics
+
+
+    If you are comfortable working with HTML code then you will feel comfortable working
+    with SVG. SVG is an XML-based drawing language that allows you to describe your
+    drawing using standard XML elements. For instance, the following code is describing
+    how to create a star shape. Figure 3.5 shows the resulting SVG drawing.
+
+
+    ```
+
+    <xml version="1.0" standalone="yes">
+
+    <svg version="1.1"
+
+    viewBox="0.0 0.0 720.0 540.0"
+
+    fill="none" stroke="none">
+
+    ```
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_6_1.png)
+
+
+    Figure 3.5 A star drawn using SVG XML syntax.'
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: '```
+
+    stroke-linecap="square"
+
+    stroke-miterlimit="10"
+
+    xmlns="http://www.w3.org/2000/svg"
+
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+
+    <path
+
+    d="M240 148L298 148L316 96L334 148L392 148L345
+
+    180L363 232L316 200L269 232L287 182"
+
+    fill="nonzero"
+
+    fill="#ff9900"
+
+    stroke="#ff0000"
+
+    stroke-width="2.0"
+
+    stroke-linejoin="round"
+
+    stroke-linecap="butt">
+
+    </path></svg>
+
+    ```
+
+
+    If you want to change the fill color inside the star, you only need to change
+    the value of the fill property to a new color. Say you would prefer a red star;
+    simply change the fill value to red, as follows:
+
+
+    fill=red
+
+
+    Figure 3.6 shows that the star is now red.
+
+    ing the browser to control the color, shape, and visual elements of the SVG image
+    allows you to write programs that dynamically control the SVG illustrations.
+
+    SVG comes with some fundamental benefits:
+
+
+    +   - Images scale easily.
+
+    - SVG is accessible.
+
+    - Search engines can easily read and understand SVG images.
+
+
+    These benefits make using SVG very compelling.
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_7_0.png)
+
+
+    Figure 3.6 Any element used to build an SVG drawing can be easily edited.'
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: '# The Fundamentals of Creating SVG Images and Adding Them to Your Web Pages
+
+
+    Unlike traditional drawing, SVG can be "drawnn" all in code. You can use your
+    favorite text editor to create any type of SVG illustration. The easiest way to
+    manage SVG drawings is to save each illustration to a text file with the extension
+    SVG. You can then treat your SVG drawings as they are image files like JPEG or
+    PNG files.
+
+
+    All SVG files will start with a line declaring the document is an XML file. The
+    following line should be placed at the start of all your SVG documents:
+
+
+    ```
+
+    <xml version="1.0" standalone="yes"?>
+
+    ```
+
+
+    Following the XML declaration is some information explaining the SVG document.
+    The first line specifies which version of SVG you are using. The most commonly
+    adopted version is 1.1:
+
+
+    ```
+
+    <svg version="1.1">
+
+    ```
+
+
+    The viewBox identifies the size of the canvas you are working with. The viewBox
+    is constructed of four properties that identify the X and Y coordinates of the
+    viewBox and width and height.
+
+
+    ```
+
+    viewBox="0.0 0.0 300.0 800.0"
+
+    ```
+
+
+    You can specify drawing attributes that should be used for all objects in the
+    opening SVG properties. Here all objects in the illustration will, by default,
+    have no fill or stroke, and a square line will be used to draw images with a stroke
+    miter of 5.
+
+
+    ```
+
+    fill="none"
+
+    stroke="none"
+
+    stroke-linecap="square"
+
+    stroke-miterlimit="5"
+
+    ```
+
+
+    The final two attributes provide links to the SVG namespace standard.
+
+    xmlns="http://www.w3.org/2000/svg"
+
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+
+    Drawing is managed through a number of elements, with PATH the main element is
+    is to draw out the specific coordinates of an image point by point. In the following
+    example, a single line is drawn.'
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: '# 6
+
+
+    ```
+
+    <path d="M8 16L776 0" fill-rule="nonzero"
+
+    stroke="blue" stroke-width="5" stroke-linejoin="round" stroke-linecap="butt">
+
+    </path>
+
+    </svg>
+
+    ```
+
+
+    A closing SVG element completes your code. Your drawing can be saved and added
+    to a web page.
+
+    When you have completed an SVG drawing there are several ways in which you can
+    add SVG images to your web page. Unlike JPEG, GIF, and PNG files, you cannot use
+    the IMG element to add an SVG drawing to your web page. You do, however, have
+    three alternative methods.
+
+    The first is to the OBJECT element:
+
+
+    ```
+
+    <object data="star.svg" width="300" height="800"/>
+
+    ```
+
+
+    The OBJECT tag has several attributes. The most important is the data attribute
+    that references the location of the SVG file. The width and height attributes
+    define the space used on the screen for the SVG drawing.
+
+    A second method you can use to add SVG images to your web page is through the
+    use of the IFRAME element. Typically, you use the IFRAME element to load an SVG
+    element, but you can also load an SVG directly into your web page. Here is an
+    example:
+
+
+    ```
+
+    <iframe src="star.svg" width="300" height="800\></iframe>
+
+    ```
+
+
+    These methods for embedding SVG images into your web page are relatively easy
+    to use and are not much complicated to use the IMG element.
+
+    The third method of adding SVG images to a web page is to insert the SVG XML directly
+    into the HTML code itself. The following code is HTML saved as a web page. There
+    is no need to use separate files in this example.
+
+
+    ```
+
+    <html>
+
+    <head>
+
+    <title>SVG embedded inline in XHTML</title>
+
+    </head>
+
+    <body>
+
+    <h1>SVG embedded inline in XHTML</h1>
+
+    <svg xmlns="http://www.w3.org/2000/svg"
+
+    width="300" height="800">
+
+    <path
+
+    d="M240 148L298 148L316 96L334 148L392 148L180 203L232 216 201269 232287 180Z"
+
+    fill-rule="nonzero"
+
+    ```'
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: '```
+
+    fill="#ff9900"
+
+    stroke="#ff0000"
+
+    stroke-width="2.0"
+
+    stroke-linejoin="round"
+
+    stroke-linecap="butt">
+
+    </path>
+
+    </svg>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    Adding the SVG coded to a web page only requires that you use SVG element tags
+    inside of your HTML.
+
+    at the end of day, it is really up to you how you want to add SVG images to your
+    web pages.
+
+
+    # Understanding the Basics of Creating Shapes
+
+
+    As with HTML, SVG is built of elements. The difference between SVG and HTML is
+    the elements in SVG used to construct images. The main elements you will use in
+    building your drawings are:
+
+
+    +   * LINE—for defining lines
+
+    * POLYLINE—for defining shapes constructed of lines
+
+    * RECT—for defining rectangles
+
+    * CIRCLE—for defining circles
+
+    * ELLIPSE—for defining ellipses
+
+    * POLYGON—for defining polygons
+
+    * PATH—for defining arbitrary paths
+
+
+    The most basic drawing for SVG is a line. To define a straight line you need to
+    declare where the line starts on the X and Y axes and where the line ends on the
+    X and Y axes. This is referred to as X1, Y1 and X2, Y2. Here is an example of
+    a straight line.
+
+
+    ```
+
+    <xml version="1.0" standalone="no"?>
+
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+    <svg width="100%" height="100%" version="1.1"
+
+    xmlns="http://www.w3.org/2000/svg">
+
+    <line x1="25" y1="150" x2="300" y2="150"
+
+    style="stroke:red;stroke-width:10"/>
+
+    ```
+
+
+    In this example the line starts 25 pixels from the left side of the browser window,
+    and the line is horizontal along the Y axis. Figure 3.7 is how it looks in your
+    web browser with additional CSS stroke to emphasize the line.
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_10_0.png)
+
+
+    Figure 3.7 A line is drawn in SVG using the LINE element.'
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: '# 8
+
+
+    You can easily modify the settings for the X and Y axes to change the position
+    of your line. In the following SVG code, the line is changed to run vertically.
+
+
+    ```
+
+    <?xml version="1.0" standalone="no"?>n<!DOCTYPE svg PUBLIC "//W3C//DTD SVG 1.1//EN"
+
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+    <svg width="100%" height="100%" version="1.1"
+
+    xmlns="http://www.w3.org/2000/svg">
+
+    <line x1="300" y1="310" x2="300" y2="10"
+
+    style="stroke:red;stroke-width:10"/>
+
+    </svg>
+
+    ```
+
+
+    Figure 3.8 shows and how the line is displayed. The POLYLINE element extends the
+    functionality of the LINE element enable you to build drawings created with lines.
+    The construction is created through valued pairs of X and Y coordinates using
+    POLYLINE''s point attribute. Here is an example of creating a square shape using
+    the POLYLINE element.
+
+
+    ```
+
+    <?xml version="1.0" standalone="no"?>
+
+    <!DOCTYPE svg PUBLIC "//W3C//DTD SVG 1.1//EN"
+
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+    <svg width="100%" height="100%" version="1.1"
+
+    xmlns="http://www.w3.org/2000/svg">
+
+    <polyline points="5,5 55,150 150,150 150,5"
+
+    style="fill:white;stroke:red;stroke-width:2"/>
+
+    </svg>
+
+    ```
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_11_0.png)
+
+
+    Figure 3.8 Changing the XML element values shows the display of the line.'
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: 'Figure 3.9 The POLYLINE element can be used to draw images with straight lines.
+    In the second case a square is drawn.
+
+
+    Figure 3.9 shows the final drawing.
+
+    You can create more complex shapes with the POLYLINE element. This example shows
+    a set of stairs is created. All you have to remember that the first value in the
+    value pair is the X axis and the second value is the Y axis. Figure 3.10 shows
+    the results.
+
+    <?xml version="1.0" standalone="no"?>
+
+    <!DOCTYPE svg PUBLIC "//W3C//DTD SVG 1.1//EN"
+
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg.dtd">
+
+    <svg width="100%" height="100%" xmlns="http://www.w.org/2000/svg">
+
+    <polyline points="5,0 5,40 40,40 40,80 80,80 80,120" style="fill:white;stroke:red;stroke-width:2"
+    />
+
+    </svg>
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_12_0.png)
+
+
+    Figure 3.10 A drawing of straight lines can be created using the POLYLINE element.
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_12_1.png)'
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: 'Rectangle shapes can be created in SVG using the RECT element. The RECT element
+    has two attributes, width and height. The following SVG adds a rectangle of width
+    400 pixels and height 400 pixels. Additional styling using CSS has been added
+    to the drawing so you can see it. The results are shown in Figure 3.11.
+
+
+    ```
+
+    <?xml version="1.0" standalone="no"?>
+
+    <!DOCTYPE svg PUBLIC "//W3C//DTD SVG 1.1//EN"
+
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+    <svg width="100%" height="100%" version="1.1"
+
+    xmlns="http://www.w3.org/2000/svg">
+
+    <rect width="400" height="400"
+
+    style="fill:red;stroke-width:5;
+
+    stroke:yellow"/>
+
+    </svg>
+
+    ```
+
+
+    Creating circles is similar to creating rectangles in SVG. At its most basic,
+    you use the CIRC element. The CIRC element only requires that you define the radius
+    of the circle using an R attribute. The following SVG code draws a circle with
+    a radius of 150 pixels.
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_13_0.png)
+
+
+    Figure 3.11 The RECT element allows you to easily create rectangle shapes such
+    as this square.'
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: '```
+
+    <xml version="1.0" standalone="no"?>
+
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN">
+
+    <http="http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+    <svg width="100%" height="100%" version="1.1"
+
+    xmlns="http://www.w3.org/2000/svg">
+
+    <circle r="150" stroke="yellow"
+
+    stroke-width="5" fill="red"/>
+
+    </svg>
+
+    ```
+
+
+    Figure 3.12 shows results of the CIRCLE element in more detail.
+
+    As you can see in the figure, defining the radius forces most of the circle to
+    drop off the top-left corner of the browser window. To correct this you can use
+    two additional, optional attributes, Cx and CY, to define the X and Y positions
+    of the circle on the screen.
+
+
+    ```
+
+    <xml version="1.0" standalone="no"?>
+
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN">
+
+    <http="http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+    <svg width="100%" height="100%" version="1.1"
+
+    xmlns="http://www.w3.org/2000/svg">
+
+    <circle cx="160" cy="160" r="150" stroke="yellow"
+
+    stroke-width="5" fill="red"/>
+
+    </svg>
+
+    ```
+
+
+    Figure 3.13 shows the use of these attributes.
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_14_0.png)
+
+
+    Figure 3.12 the CIRCLE element allows you to draw circles on the screen.'
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: '# 12
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_15_0.png)
+
+
+    The ELLIPSE element extends the functionality of the CIRCLE
+
+    element by allowing you to control radius along the X and Y axes
+
+    using the RX and RY attributes. You will see in the following code
+
+    that the ELLIPSE element also leverages the CIRCLE element''s
+
+    CX and CY attributes to position the ellipse in the web browser.
+
+    Figure 3.14 shows the results
+
+
+    ```
+
+    <?xml version="1.0" standalone="no"?
+
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+
+    n"http://www.w3.org/Graphics/SVG/1.1/DTD/svg1.dtd">
+
+    <svg width="100%" height="100%" version="1.1"
+
+    xmlns="http://www.w3.org/2000/svg">
+
+    <ellipse cx="300" cy="150" rx="250" ry="120">
+
+    ```
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_15_1.png)'
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: '# 13
+
+
+    style="fill:yellow;
+
+    stroke=red;stroke-width:5"
+
+    </svg>
+
+
+    A POLYGON is similar to the POLYLINE element. Using X and Y values you can draw
+    whole shapes. The following is an example of a triangle. Figure 3.15 shows the
+    results.
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_16_0.png)
+
+
+    Figure 3.15 A triangle is created by the POLYGON element.
+
+
+    ```
+
+    <?xml version="1.0" standalone="no"?>
+
+    <!DOCTYPE svg PUBLIC "//W3C//DTD SVG 1.1//EN"
+
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg1.dtd">
+
+    <svg width="100%" height="100%" version="1.1"
+
+    xmlns="http://www.w3.org/2000/svg">
+
+    <polygon points="220,100 290,220 150,220"
+
+    style="fill:yellow;
+
+    stroke=red;stroke-width:5"
+
+    </svg>
+
+    ```
+
+
+    The most complex element you will create using SVG is the PATH element. Each drawing
+    you create with the PATH element is built using a series of special codes that
+    explain where the line is supposed to move to on the screen. These codes are:
+
+
+    +   * M moves to
+
+    * L = line to
+
+    * H = horizontal line to
+
+    * V = vertical line to
+
+    * C = curve to
+
+    * S = smooth curve to
+
+    * Q = quadratic Bezier curve to
+
+    * T = smooth quadratic Bezier curve to
+
+    * A = elliptical arc to
+
+    * Z = close path to
+
+
+    The following code creates a smiley illustration using the drawing. Figure 3.16
+    shows the results from the code.
+
+
+    ```
+
+    <?xml version="1.0" standalone="yes"?>
+
+    <svg version="1.1" viewBox="0.0 0.0 1152.0 864.0"
+
+    fill="none" stroke="none" stroke-linecap="square"
+
+    stroke-miterlimit="10" xmlns="http://www.w3.org/2000/svg" xmlns:link="http://www.w3.org/1999/xlink">
+
+    <path d="M556 108L556 108C216 150 180 184 132 184C332 216 66 216 56 150 56 108Z"
+    fill-rule="nonzero"
+
+    fill="#ff00ff"/></path>
+
+    ```
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_16_1.png)
+
+
+    Figure 3.16 The POLYGON element allows you to create complex images such as this
+    smiley face.
+
+
+    *'
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: '# 14
+
+
+    ```
+
+    <path d="M102 85C102 81 106 77 110 77C115 77
+
+    119 81 119 85C119 90 115 93 93C106 93 102
+
+    90 102 85M153 85C153 81 157 77 162 77C166 76
+
+    170 81 170 85C170 90 166 93 162 93C157 93 153
+
+    90 153 85 fill-rule="nonzero" fill="#ccc00"
+
+    stroke stroke-width="2.0" stroke-
+
+    linejoin="round" stroke-linecap="butt"/></path>
+
+    <path d="M93 141Q136 169 179 141 184 56
+
+    fill-rule=
+
+    "nonzero" stroke="#ff0000" stroke-width="2.0"
+
+    stroke-linejoin="round" stroke-linecap=
+
+    "butt"/></path>
+
+    <path d="M56 108C156 108C56 66 92 32 136 32C180 32
+
+    216 66 216 108C2116 180 184 136 142C92 184 56
+
+    150 56 108 fill-rule="nonzero" stroke="#ff0000"
+
+    stroke-width="2.0" stroke-linejoin="round"
+
+    stroke-linecap="butt"/></path>
+
+    </svg>
+
+    ```
+
+
+    As you can see, it is quite complex to create PATH-defined illustrations. For
+    this reason, it is recommended that you use an SVG drawing tool to create PATH-based
+    illustrations (more on that later).
+
+
+    # Adding CSS-Based Color
+
+
+    SVG is a technology that allows you to create drawings. To add color to these
+    drawings, you leverage Cascading Style Sheets. There is no need to use a different
+    technology for applying-color, as CSS and SVG are partners in HTML5. Both have
+    strengths that can be enhanced with each other.
+
+
+    To provide an example, let us look at the ellipse drawing earlier (see Figure
+    3.14).
+
+
+    ```
+
+    <xml version="1.0" standalone="no"?>
+
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+
+    "http://www.w3.org/Graphics/SVG/1.1/svg1.1.dtd">
+
+    <svg width="100%" height="100%" version="1.1"
+
+    xmlns="http://www.w3.org/2000/svg">
+
+    <ellipse cx="300" cy="150" rx="250" ry="120"
+
+    style="fill:yellow;
+
+    stroke:red;stroke-width:5"/>
+
+    </svg>
+
+    ```
+
+
+    After the ellipse is drawn there is a style attribute. The style attribute in
+    SVG allows you to add a CSS style to the image. In HTML you have a style attribute
+    that behaves exactly the same.'
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: "Modifying the style attribute will visually change the presentation of the\
+    \ ellipse. The following example changes the fill to blue and the stroke color\
+    \ to gray. 3.17 shows the results.\n\n```\n<xml version=\"1.0\" standalone=\"\
+    no\"?>\n<!DOCTYPE svg PUBLIC \"//W3C//DTD SVG 1.1//EN\"\n\"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\"\
+    >\n<svg width=\"100%\" height=\"100%\" version=\"1.1\"\nxmlns=\"http://www.w3.org/2000/svg\"\
+    >\n  <ellipse cx=\"300\" cy=\"150\" rx=\"250\" ry=\"120\"\n  style=\"fill:blue;stroke:gray;stroke-width:5\"\
+    />\n</svg>\n```\n\n![](img/273fb5489df445536bf1c8159f903498_18_0.png)\n\nBoth\
+    \ the Fill and Stroke properties control the color of the inside of an image.\
+    \ In this example a CSS color name is used, but you can use any of the color formats\
+    \ to control CSS, including the following:\n\n+   - Color name—you can have names\
+    \ for colors as brown, red, or cyan.\n- Full hexadecimal—a hexadecimal value comprised\
+    \ of alpha-numeric values.\n- Short hexadecimal—a hexadecimal value comprised\
+    \ of three alpha-numeric values.\n- RGB—a combination of red, green, and blue\
+    \ values.\n- RGBA—a combination of red, green, and blue values with a transparency\
+    \ value (alpha).\n- HSL—a combination of hue, saturation, and lightness.\n- HSLA—a\
+    \ combination of hue, saturation, and lightness with a transparency value (alpha).\n\
+    \nIn addition to using CSS colors you can use any of the following measurements:\n\
+    \n+   - cm—centimeter\n- in—inch\n- mm—millimeter\n- pc—pica (1 pica = 12 points)\n\
+    - pt—point (1 point = 1/2 inch)\n- px—pixels\n\nThrough leveraging CSS you can\
+    \ change the stroke of the ellipse and the measurement in CM.\n\n```\n<xml version=\"\
+    1.0\" standalone=\"no\"?>\n<!DOCTYPE svg PUBLIC \"//W3C//DTD SVG 1.1//EN\"\n\"\
+    http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n<svg width=\"100%\" height=\"\
+    100%\" version=\"1.1\">\n```"
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: '# 16
+
+
+    ```
+
+    xmlns="http://www.w3.org/2000/svg">
+
+    <ellipse cx="300" cy="150" rx="250" ry="120"
+
+    style="fill:blue;
+
+    stroke="#999;stroke-width:1cm"/>
+
+    </svg>
+
+    ```
+
+
+    Figure 3.18 Standard CSS colors and measurements can be used to control the presentation
+    of a drawing.
+
+
+    Figure 3.18 shows how CSS colors and measurements can be used.
+
+
+    To add a linear gradient to an SVG drawing you need to use specific SVG gradient
+    elements.
+
+
+    # Applying Gradients to SVG Images
+
+
+    SVG employs a great technique that allows you to reuse a gradient definition over
+    one or more images in your SVG illustration. This is done using either the LINEARGRADIENT
+    or RADIALGRADIENT element types. Both gradients allow you to define the horizontal
+    and vertical colors and direction of the gradient.
+
+
+    Let''s look first at linear gradients. The LINEARGRADIENT element is constructed
+    by five different attributes that define over a linear direction how the gradient
+    will behave. The first attribute you provide for information is the ID attribute,
+    which allows you to give your gradient a name you can use to reference from your
+    drawing.
+
+
+    For a linear gradient you can draw your gradient moving over an X-Y axis. To determine
+    the direction of the gradient you have to specify the start and end X start and
+    end Y points. The following illustrates a left-right gradient:
+
+
+    ```
+
+    <linearGradient x1="0%" y1="0%" x2="100%" y2="0%">
+
+    ```
+
+
+    To create a vertical gradient you change the Y and X axes to:
+
+
+    ```
+
+    <linearGradient x1="0%" y1="100%" x2="0%" y2="0%">
+
+    ```
+
+
+    You can see the difference between the two numbers is unchanging the X or Y axes
+    to 100%. Figure 3.19.
+
+
+    Changing the X and Y percentages will change how the gradient is drawn. Adding
+    color to the gradient is the next step. To do this, you create a list of two or
+    more colors using the STOP element. For instance, to create a simple yellow-to-red
+    gradient color change you will add two STOP elements as shown in the following.
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_19_0.png)
+
+
+    Figure 3.19 Linear gradients can be applied in SVG images using the LINEARGRADIENT
+    element.
+
+
+    ```
+
+    <stop offset="0%" style="stop-color:yellow;opacity:1"/>
+
+    <stop offset="100%" style="stop-color:red;stop-opacity:1"/>
+
+    ```'
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: '# 17
+
+
+    The offset attribute dictates where in the gradient starts. The example above
+    draws a smooth gradient change over the space of the image. The style attribute
+    allows you to list any CSS-specific color. You can add the two colors to the LINEARGRADIENT
+    in the following example.
+
+
+    ```
+
+    <xml version="1.0" standalone="no"?>
+
+    <!DOCTYPE svg PUBLIC "//W3C//DTD SVG/1.1//EN"
+
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg.11.dtd">
+
+    <svg width="100%" height="100%" version="1.1"
+
+    xmlns="http://www.w3.org/2000/svg">
+
+    <defs>
+
+    <linearGradient id="yellow_red" x1="0%" y1="0%"
+
+    x2="0%" y2="0%">
+
+    <stop offset="0%" style="stop-color:yellow;opacity="1%"/>
+
+    <stop offset="100%" style="stop-color:red;opacity="1%"/>
+
+    </linearGradient>
+
+    </defs>
+
+    <rect width="400" height="400"
+
+    style="fill:url(#yellow_red);
+
+    stroke:yellow"/>
+
+    </svg>
+
+    ```
+
+
+    You can see that the rectangle image uses a URL string to find the style called
+    #yellow_red. The yellow_red color style is the name of the gradient. See Figure
+    3.20.
+
+
+    Radial gradients are similar to linear gradients. The difference is that you essentially
+    draw two circles—an outer and inner circle—with the radial gradient. As linear
+    gradients, the RADIALGRAD element requires a valid ID name to identify the gradient.
+    Following that, you have five attributes to define the inner circle and radius.
+    Following is an example where the CX and CY attributes are the outer circle, R
+    is the radius, and the FX and FY attributes are the inner circle.
+
+
+    ```
+
+    <radialGradient id="yellow_red" cx="50%" cy="50%"
+
+    r="50%"
+
+    fx="50%" fy="50%">
+
+    ```
+
+
+    The colors for the gradient are defined using a STOP list. The following code
+    shows the radial gradient applied to a rectangle.
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_20_0.png)
+
+
+    Figure 3.20 Linear gradients can be drawn horizontally.'
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: "```\n<?xml version=\"1.0\" standalone=\"no\"?>\n<!DOCTYPE svg PUBLIC \"//W3C//DTD\
+    \ SVG 1.1//EN\"\n\"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n<svg width=\"\
+    100%\" height=\"100%\" version=\"1.1\"\nxmlns=\"http://www.w3.org/2000/svg\">\n\
+    <defs>\n  <radialGradient id=\"yellow_red\" cx=\"50%\" cy=\"50%\"\n  r=\"50%\"\
+    \n    fx=\"50%\" fy=\"50%\">\n  <stop offset=\"0%\" style=\"stop-color:yellow;stop-opacity:1\"\
+    />\n  <stop offset=\"100%\" style=\"stop-color:red;stop-opacity:1\"/>\n  </radialGradient>\n\
+    </defs>\n<rect width=\"400\" height=\"400\"\nstyle=\"fill:url(#yellow_red);\n\
+    stroke:yellow\"/>\n</svg>\n```\n\nFigure 3.21 shows the results.\nBoth the linear\
+    \ and radial gradients can have more than two colors. The following code (see\
+    \ Figure 3.22) has four colors.\n\n```\n<stop offset=\"0%\" style=\"stop-color:yellow;stop-opacity:1\"\
+    />\n<stop offset=\"25%\" style=\"stop-color:red;stop-opacity:1\"/>\n<stop offset=\"\
+    50%\" style=\"stop-color:blue;stop-opacity:1\"/>\n<stop offset=\"100%\" style=\"\
+    stop-color:black;stop-opacity:1\"/>\n```\n\nIn addition, you can link multiple\
+    \ images to a single gradient.\nThe following SVG code links a circle and rectangle\
+    \ to the same gradient.\n\n```\n<?xml version=\"1.0\" standalone=\"no\"?>\n<!DOCTYPE\
+    \ svg PUBLIC \"//W3C//DTD SVG 1.1//EN\"\n\"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\"\
+    \n<svg width=\"100%\" height=\"100%\" version=\"1.1\"\nxmlns=\"http://www.w3.org/2000/svg\"\
+    >\n```\n\n![](img/273fb5489df445536bf1c8159f903498_21_0.png)\n\nFigure 3.21 A\
+    \ radial gradient applied to a rectangle shape.\n\n![](img/273fb5489df445536bf1c8159f903498_21_1.png)\n\
+    \nFigure 3.22 Multiple colors can be created to change the gradient."
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: "```\n<defs>\n<radialGradient id=\"yellow_red\" cx=\"50%\" cy=\"50%\" r=\"50%\"\
+    \ fx=\"50%\" fy=\"50%\">\n  <stop offset=\"0%\" style=\"stop-color:yellow;stop-opacity:1/\"\
+    \n  <stop offset=\"25%\" style=\"stop-color:red;stop-opacity:1/\"\n  <stop offset=\"\
+    50%\" style=\"stop-color:blue;stop-opacity:1/\"\n  <stop offset=\"100%\" style=\"\
+    stop-color:black;stop-opacity:1/\"\n</radialGradient>\n</defs>\n<rect width=\"\
+    500\" height=\"250\" style=\"fill:url(#yellow_red);\" stroke=\"yellow\"/>\n<circle\
+    \ cx=\"250\" cy=\"250\" r=\"180\" stroke-width=\"2\" fill=\"url(#yellow_red)\"\
+    \ />\n</svg>\n```\n\nThe results are shown in Figure 3.23.\n\n# # Adding Text\
+    \ to Your SVG Drawings\n\nText can be added to your SVG drawings using the TEXT\
+    \ element. At its most basic, all you need to do is to add the TEXT element to\
+    \ your SVG document, as shown in the following code and Figure 3.24.\n\n```\n\
+    <svg xmlns=\"http://www.w3.org/2000/svg\"\nxmlns:xlink=\"http://www.w3.org/1999/xlink\"\
+    >\n  <text x=\"100\" y=\"40\">It was the best of times</text>\n</svg>\n```\n\n\
+    The X and Y attributes specify where on the screen the text will appear. Formatting\
+    \ of the text is controlled by CSS in the style attribute. Text can have the following\
+    \ styles applied to it:\n\n# # It was the best of times\n\nFigure 3.24 Text can\
+    \ be easily inserted into an SVG drawing using the TEXT element.\n\n![](img/273fb5489df445536bf1c8159f903498_22_0.png)"
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: "• Font-family—the name of the font\n\n• Font-size—the size of the font\n\n\
+    • Kerning—the space between letters\n\n• Stroke—the outside color of a font\n\n\
+    • Fill—the inside color of a font\n\nFollowing is an example SVG code showing\
+    \ text formatting.\n\n```\n<svg xmlns=\"http://www.w3.org/2000/svg\"\n  xmlns:xlink=\"\
+    http://www.w3.org/1999/xlink\">\n  <text x=\"100\" y=\"40\"\n    style=\"font-family:\
+    \ Arial;\n      font-size : 24pt;\n      stroke : red;\n      fill : yellow;\n\
+    \      kerning : 3;\"\n  >It was the best of times</text>\n</svg>\n```\n\nFigure\
+    \ 3.25 shows the results of the code.\n\n# It was the best of times\n\nFigure\
+    \ 3.25 Formatted SVG text.\n\nText is treated as simply another image type in\
+    \ SVG. This allows you to add some additional visual effects. As an example, you\
+    \ can use a gradient the FILL style for your text. The following SVG code exaggerates\
+    \ the size of the text to show a gradient fill (see Figure 3.26).\n\n```\n<svg\
+    \ xmlns=\"http://www.w3.org/2000/svg\"\n  xmlns:xlink=\"http://www.w3.org/1999/xlink\"\
+    >\n  <radialGradient id=\"yellow_red\" cx=\"50%\" cy=\"50%\"\n    r=\"50%\" fx=\"\
+    50%\" fy=\"50%\">\n    <stop offset=\"0%\" style=\"stop-color:yellow;opacity:1'/>\n\
+    \    <stop offset=\"25%\" style=\"stop-color:red;opacity:1'/>\n    <stop offset=\"\
+    50%\" style=\"stop-color:blue;opacity:1'/>\n    <stop offset=\"100%\" style=\"\
+    stop-color:black;opacity:1'/>\n  </radialGradient>\n```\n\n# It was the best\n\
+    \nFigure 3.26 Both linear and radial gradients can be used to style text."
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: '```
+
+    <text x="100" y="140" style="font-family: Arial; font-size: 96pt; stroke: red;
+    fill: url(#yellow_red);"> >It was the best</text></svg>
+
+    ```
+
+
+    SVG supports a method where you can embed a font into the document. Embedding
+    a font in SVG is, however, tricky. The challenge is to embed a font you must specify
+    the exact shape of each font you use. A glyph is shape matched to a key on your
+    keyboard. 3.27 is a glyph of the letter "A".
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_24_0.png)
+
+
+    SVG''s glyph element draws the outline of the font and ties it to a character.
+    This can get very quickly. The following is what you will need to duplicate the
+    letter "a" as a reusable glyph in SVG.
+
+
+    ```
+
+    <glyph unicode="a" glyph-name="a" horiz-adv-x="577" d="M595-324H-324H38V915-324ZM117Q271
+    25 13 25T204 29Q154 15 59T166 86Q169 96 107 132T103 113Q185 108 165 202T97Q213
+    27 102 227T202 10386 108 320 105 347 109Q359 115 370 132T528T81
+
+    127388 126 193 118T403 104T412 82T421 67Q640 45 426 441 253Q471 19 47Q275 486
+    47Q491 60 48T716 90Q9657 102 442 148Q176 126 178T404 235T387 298Q382 96 372 321T371
+    332 371 342 433 368 448 317 460 481 305 307 510 529 588 233 234 582T271
+
+    516T261 500T254 485Q253 473 257 464T261 448Q261 442 255 434 245 416Q241 404 405
+    390 397T238 381Q237 330 380T189 265Q157 230 216 277T172 194Q171 188 166 196Q171
+    135 108 148 128 118 127 120T780 110T417 227 336 235 507 218 377 201T376 169 175
+    165 168 162 132T 138 138 111 21 221 269 269 25 225 180 276 228 165 208 158 151
+    118 118  164 163 165 172 175 189 119  207 208 228 225 228 237 237 224 257 229  29  337
+    337 355 355  59  36 332  32  34  362 349 370 347 377 362 392 269 402 271 408 282
+
+    411 486 409 298 385 334 330 231 231  235 225 228  280 244 244 257 231 234 261
+    264 268 264 269 284 262 272 302 202 202  28  28  285 253 256 248 248 234 222 299
+    292 281 221 2217 207 205 205 205 205 259 189 186 201 78 340 83 338 306
+
+    ```
+
+
+    Figure 3.27 A glyph of the letter "A".'
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: '# 22
+
+
+    ```
+
+    86T260 83Q231 82 201 78ZM194 70Q190 60 188 53Q181
+
+    36 176 30Q172 27 169 25T165 18Q162 15 16 2Q175
+
+    23 181 31Q196 52 194 70ZM491 126Q494 122 489
+
+    136T475 174T452 232T424 303Q390 388 344 496Q383
+
+    394 414 314Q429 278 442T465 187T481 144T491
+
+    126Z/>
+
+    ```
+
+
+    To use a full alphabet you will need to create the lowercase
+
+    uercase for each character on the keyboard. Your files for a
+
+    simple font will get very large quickly.
+
+
+    # Adding Interactivity and Javascript to Your
+
+    SVG Drawings
+
+
+    You can useJavaScript to add interactivity to your SVG
+
+    illustrations. You do this using the SCRIPT element your SVG
+
+    document. The following example adds a JavaScript that changes
+
+    t color of a rectangle shape each you click on.
+
+
+    ```
+
+    <?xml version="1.0" encoding="UTF-8"
+
+    standalone="no"?>n<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+
+    "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+    <svg xmlns="http://www.w3.org/2000/svg"
+
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+
+    width="800" height="800">
+
+    <script type="text/ecscript">
+
+    <![CDATA[
+
+    function randomColor(evt) {
+
+    var red = Math.round(Math.random() * 255);
+
+    var green = Math.round(Math.random() * 255);
+
+    var blue = Math.round(Math.random() * 255);
+
+    evt.target.setAttributeNS("null","fill","rgb("
+
+    red+",
+
+    ```
+
+
+    You can see that this allows the script to be correctly interpreted by a CDATA\lement.
+    The JavaScript engine running in the web browser. The onclick
+
+    event attribute links the name of the JavaScript function with the
+
+    rectangle.'
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: '# 23
+
+
+    Through using JavaScript you can do a lot with SVG. Some great sites that push
+    the interactive limits of JavaScript and SVG integration are:
+
+
+    +   * http://raphael.js/
+
+    * http://svgkit.sourceforge.net/
+
+    * http://www.liquidx.net/plotkit/
+
+    * http://www.lututhan.net/svgmld/index.html
+
+    * http://code.google.com/pl/svgweb/
+
+
+    Each of these gives you libraries of JavaScript code that allow you to complete
+    complex, interactive SVG presentations.
+
+
+    # Leveraging SVG Drawing Tools
+
+
+    If you have gotten this far then you have realized that drawing with SVG is complex.
+    There, unfortunately, very few illustrations you can use to create SVG drawings.
+    Fortunately, the few tools that are on the market just happen to be very good.
+
+
+    Adobe''s Illustrator has supported, since CSS2, the ability to export any illustration
+    in SVG format. This is great news, as you can take complex drawings and import
+    them directly to SVG.
+
+
+    While Illustrator export to SVG, the Open Source project InkSpace will save and
+    edit SVG files. InkSpace is not as easy to use Illustrator, but it is free, and
+    it is certainly easier to create SVG illustrations with Inkscape from scratch.
+
+
+    Sketsa is a Java-based drawing tool. The tool is quite basic, but again, it is
+    better than nothing.
+
+
+    Finally, if you use Google''s Docs to create documents online you will be interested
+    to know that the "Insert Image" feature uses SVG to create the images. Additionally,
+    if you use a text, then Google uses the complex Glyph editor to embed the fonts
+    for you.
+
+
+    The good news is that there tools you can use to create SVG illustrations. The
+    bad news is that there are few tools you can use to visually add interactivity
+    to your SVG drawings. With SVG becoming more popular for sites such as Google
+    Maps and Wikipedia now as a first-class citizen in HTML5, we should expect SVG
+    authoring tools to be more common.
+
+
+    # Adding the CANVAS Element to Your Web Page
+
+
+    There is a battle happening in the Web-o-sphere between technologies that enable
+    you to create cool, interactive animations. The current "king" is Adobe''s Flash,
+    with Microsoft Silver coming in guns blazing. The "black horse" contender is the
+    emerging HTML5 standard. Baked into HTML5 is a new'
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: 'element called CANVAS. Not sure what CANVAS is? Do you own a Mac? Most of the
+    widgets you run on your dashboard are built with HTML5''s CANVAS element.
+
+
+    The CANVAS element gives you the ability to build Adobe Flash-like applications
+    without having to use Flash. It is in the early stages of development, but some
+    of the things you can already accomplish are very impressive. If you are running
+    Google''s Chrome, Firefox, or Safari, then you will want to check http://www.chromeexperiments.com/,
+    a site that pushes the capabilities of what can be done in your browser (Figure
+    3.28). In particular, look at the CANVAS experiments. It is me, or do they look
+    Flash-like?
+
+
+    In many ways, CANVAS looks and feels similar to SVG. Your valid question is: Why
+    no technologies that are the same? There is a fundamental difference between CANVAS
+    and SVG. SVG is a drawing technology that creates vector images. CANVAS, on the
+    other hand, dynamically creates bitmap images. You can think of CANVAS as a programmable
+    version of JPEG/PNG images.
+
+
+    Unlike SVG, a technology that has been maturing for a decade as a separate standard
+    and only recently became part of HTML5, CANVAS was created as part of HTML5. The
+    CANVAS technology was originally created by Apple to help in the creation of desktop
+    widgets for the Mac OSX operating system. The technology was quickly included
+    into WebKit, the technology Apple leverages to power its Safari web browser, and
+    CANVAS has been adopted by Mozilla''s Firefox, Opera''s Browser, and Google''s
+    Chrome. Canvas is a powerful drawing tool that aligns with competing technologies
+    such as Adobe''s Flash and SilverLight.
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_27_0.png)
+
+
+    **Figure 3.28** Google''s ChromeExperiments.com web site showcases some of the
+    best CANVAS solutions on the Web.'
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: "25\n\nThe only browser that currently does not support CANVAS is Microsoft's\
+    \ Internet Explorer. You can, however, add CANVAS support to Internet Explorer\
+    \ through a plug-in called ExplorerCanvas, which can be downloaded at http://excanvas.sourceforge.net/\n\
+    \nAt the end of the day, SVG is a good solution, whereas CANVAS is an exciting\
+    \ emerging solution. A lot of technology from Google, Apple, Opera, and Mozilla\
+    \ is being invested into expanding the functionality of CANVAS.\n\n# Starting\
+    \ with the Basics\n\nThere are two parts you need to create a visual element using\
+    \ CANVAS. The first is the CANVAS element itself used in your HTML. In many ways,\
+    \ the CANVAS element is very much the same as any other element used in HTML.\
+    \ Here is an example:\n\n```\n<canvas id=\"myCanvas\" width=\"640\" height=\"\
+    480\">\n</canvas>\n```\n\nThe tag uses the new HTML5 CANVAS as the opening and\
+    \ closing tag. The width and height attributes specify the size of the CANVAS\
+    \ on the screen. It is the ID that is important. The ID is \"myCanvas\".\n\nUsing\
+    \ JavaScript, you can now program the illustration that will appear in the CANVAS\
+    \ tag. The following example creates a black, outlined square that appears in\
+    \ your web page using JavaScript and Canvas.\n\n```\n<html>\n<head>\n<title>Basic\
+    \ Canvas Drawing</title>\n<script type=\"text/javascript\">\nfunction draw() {\n\
+    \  var canvas = document.getElementById('myCanvas');\n  if (canvas.getContext('2d'))\
+    \ {\n    var ctx = canvas.getContext('2d');\n  }\n}\n</script>\n<style type=\"\
+    text/css\">\ncanvas { border: 1px solid black; }\n</style>\n</head>\n<body onload=\"\
+    draw();\">\n<canvas id=\"myCanvas\" width=\"150\" height=\"150\"></canvas>\n</body>\n\
+    </html>\n```"
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: "# 26\n\nFigure 3.29 shows the end result.\n\nStepping through the code you\
+    \ will see that the CANVAS element has not changed. What is modified is how the\
+    \ object in the CANVAS element is presented. Using JavaScript, you start a new\
+    \ function named \"draw\". The draw function is constructed of a variable called\
+    \ \"my\" declares that the CANVAS element is a 2D object. The distinction of 2D\
+    \ is important, as it is expected that a three-dimensional (3D) definition will\
+    \ be added to the CANVAS element as part of the WebGL\n\nUsing Cascading Sheets\
+    \ to define the color and border thickness for the drawing. In this instance,\
+    \ the drawing is black with a solid 1-pixel outline.\n\nThe \"onload\" event in\
+    \ the BODY triggers when the CANVAS illustration is drawn.\n\nFigure 3.29 The\
+    \ CANVAS element draws a simple rectangle.\n\n![](img/273fb5489df445536bf1c8159f903498_29_0.png)\n\
+    \n# Controlling Shapes\n\nThe CANVAS element does not have the same rich collection\
+    \ of primitive drawing objects you find in SVG. The only primitive drawing object\
+    \ is a rectangle. This does not limit what you can draw, as CANVAS leverages an\
+    \ alternative, rich collection of path drawing functions that allow you to create\
+    \ complex paths, arcs, Bezier curves, and quadratic curves that you can use as\
+    \ the basis of your illustrations.\n\nThe rectangle shape is built of four basic\
+    \ parts:\n\n+   - X-starting position of the rectangle along the X axis\n- Y-starting\
+    \ position of the rectangle along the Y axis\n- Width–width of the rectangle\n\
+    - Height–height of the rectangle\n\nThe following is example of a solid rectangle\
+    \ shape:\n\n```\nmyRectangle.fillRect(15,15,100,100);\n```\n\nThis description\
+    \ places the rectangle as starting 15 pixels from the left side of the CANVAS\
+    \ element (the X axis), 15 pixels from the top of the CANVAS element (the Y axis),\
+    \ and with a width and height of 100 pixels each CANVAS element. You need to add\
+    \ the following HTML to view the rectangle.\n\n```\n<html>\n<head>\n  <title>Basic\
+    \ Canvas Drawing</</title>\n<script>\n  function draw() {\n    var canvas = document.getElementById(\\\
+    `myCanvas');\n    if (canvas.getContext) {\n```"
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: "```\nvar myRectangle = canvas.getContext('2d');\nmyRectangle.fillRect(15,15,100,100);\n\
+    }\n</script>\n<style type=\"text/css\">\ncanvas { border: 1px solid black; }\n\
+    </style>\n</head>\n<body onload=\"draw();\">\n  <canvas id=\"myCanvas\" width=\"\
+    150\" height=\"150\"></canvas>\n</body>\n</html>\n```\n\nThe code describing the\
+    \ rectangle must be placed in the script section of your HTML page. Below you\
+    \ will see that a variable called myRectangle is declared on line 6. Line 7 describes\
+    \ what the variable myRectangle will look like. The CANVAS element illustrates\
+    \ where the rectangle will be drawn.\n\nThere are three different types of rectangle\
+    \ primitive you can draw. The example demonstrates how to fill the rectangle shape.\
+    \ You can also draw clearRect and strokeRect.\n\n+   - clearRect draws a transparent\
+    \ rectangle on the screen.\n- strokeRect draws only the outline of the rectangle\
+    \ on the screen.\n\nFollowing is how you wrote the JavaScript describing how to\
+    \ draw the different rectangle primitives.\n\n```\nmyRectangle.fillRect(15,15,100,100);\n\
+    myRectangle.clearRect(20,20,60,60);\nmyRectangle.strokeRect(25,25,50,50);\n```\n\
+    \nAll three rectangles can be combined with JavaScript and presented within your\
+    \ web page, as follows.\n\n```\n<html>\n<head>\n  <title>Basic Canvas Drawing</title>\n\
+    <script>\n  function draw() {\n    var canvas = document.getElementById('myCanvas');\n\
+    \    if (canvas.getContext()) {\n      var myRectangle = canvas.getContext('2d');\n\
+    \      myRectangle.fillRect(15,15,100,100);\n      myRectangle.clearRect(20,20,60,60);\n\
+    \      myRectangle.strokeRect(25,25,50,50);\n    }\n  }\n```"
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: '# 28
+
+
+    ```
+
+    }
+
+    <script>
+
+    <style type="text/css">
+
+    canvas { border: 1px solid black; }
+
+    </style>
+
+    </head>
+
+    <body onload="draw();">
+
+    <canvas id="myCanvas" width="150" height="150"></canvas>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_31_0.png)
+
+
+    Figure 3.30 There are three different types of rectangle primitive you can draw
+    using the CANVAS element.
+
+
+    See Figure 3.30 for how the rectangles are created. All other drawings are created
+    from paths you must describe.
+
+
+    # Drawing Simple Shapes
+
+
+    Shapes are described in JavaScript and presented in the CANVAS element. The structure
+    for describing a shape takes the following methods:
+
+
+    +   * beginPath
+
+    * moveTo
+
+    * closePath
+
+    * fill
+
+
+    The role of the beginPath method is to declare the start of the shape. Following
+    the beginPath method is where you start drawing your shape. The moveTo method
+    is used to describe that you have moved your virtual pen and are starting to draw
+    a new shape. The moveTo method is where you describe the structure of the shape.
+    The following code demonstrates how a triangle is started and drawn.
+
+
+    ```
+
+    myShape.beginPath();
+
+    myShape.moveTo(750,500);
+
+    myShape.lineTo(1000,750);
+
+    myShape.lineTo(1000,250);
+
+    ```
+
+
+    The first line declares the start of the shape. The second line is the moveTo
+    method stating that the drawing will start at 750 pixels from the left (X axis)
+    and down 500 pixels (Y axis).
+
+    The triangle itself is a closed shape. By default you do not need to use the closePath
+    method. You use the closePath method to close a shape when it is not clear where
+    the closure for the shape is.
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_31_1.png)
+
+
+    Figure 3.31 A simple triangle is drawn using the CANVAS element.
+
+
+    The final method is the fill method. Together, the code looks like, and Figure
+    3.31 shows the end result.'
+  merge: -1
+  pgno: 31
+- img_proc: true
+  md: "```\n<html>\n<head>\n  <title>Basic Canvas Drawing</title>\n  <script>\n  function\
+    \ draw() {\n    var canvas = document.getElementById('myCanvas');\n    if (canvas.getContext('2d'))\
+    \ {\n      var myShape = canvas.getContext('2d');\n      myShape.beginPath();\n\
+    \      myShape.moveTo(750,500);\n      myShape.lineTo(1000,750);\n      myShape.lineTo(1000,250);\n\
+    \      myShape.fill();\n    }\n  }\n</script>\n</head>\n<body onload=\"draw();\"\
+    >\n  <canvas id=\"myCanvas\" width=\"1500\" height=\"1500\"></canvas>\n</body>\n\
+    </html>\n```\n\nThe LineTo method describes the shape. There are four tools you\
+    \ can use to describe your shape:\n\n+   * Lines\n* Arcs\n* Bezier curves\n* Quadratic\
+    \ curves\n\nThese four shape drawing tools allow you to create any type of shape.\n\
+    \n# Drawing Lines\n\nThe most simple path to describe the line. Using the LineTo\
+    \ method you describe the starting and ending X and Y positions. For instance,\
+    \ the following code describes a basic rectangle.\n\n```\nmyTriangle.beginPath();\n\
+    myTriangle.moveTo(10, 10);\nmyTriangle.lineTo(500, 10);\nmyTriangle.lineTo(10,\
+    \ 10);\n```\n\nThe lineTo property describes the three lines used to create position:"
+  merge: -1
+  pgno: 32
+- img_proc: true
+  md: "# 30\n\n![](img/273fb5489df445536bf1c8159f903498_33_0.png)\n\n**Figure 3.32**\
+    \ *The lineTo property allows you to draw lines in a CANVAS image.\n\n```\nmyTriangle.lineTo(500,\
+    \ 10);\nmyTriangle.lineToTo(10, 500);\nmyTriangle.lineToTo(10, 10);\n```\n\nFigure\
+    \ 3.32 shows what the triangle will look like.\nThe following code shows how to\
+    \ present the triangle shape in your web browser.\n\n```\n<!DOCTYPE html> <html\
+    \ lang=\"en\">\n  <head><meta charset=\"utf-8\">\n  <title>Drawing a Rectangle</title>\n\
+    \  <script type=\"text/javascript\"-->\n    window.addEventListener('load', function\
+    \ () {\n    var elem = document.getElementById('myCanvas');\n    if (!elem ||\
+    \ !elem.getContext) {\n      return;\n      var myTriangle = elem.getContext('2d');\n\
+    \      if (myTriangle) {\n        myTriangle.fillStyle = \"orange\";\n       \
+    \ myTriangle.strokeStyle = \"yellow\";\n        myTriangle.lineWidth = 7;\n  \
+    \      myTriangle.beginPath();\n        myTriangle.moveTo(10, 10);\n        myTriangle.lineTo(500,\
+    \ 10);\n        myTriangle.lineTo(10, 500);\n        myTriangle.lineTo(10, 10);\n\
+    \        myTriangle.fill();\n        myTriangle.stroke();\n        myTriangle.closePath();\n\
+    \      }\n    });\n  // --></script>\n</head> <body style=\"background-color:#000;\"\
+    >\n<canvas id=\"myCanvas\" width=\"500\" height=\"500\">\n</canvas>\n</body></html>\n\
+    ```\n\nUsing the lineTo property allows you to draw simple, line-shapes.\n\n#\
+    \ Creating Arcs\n\nWhen you want to draw a circle use the Arc method. An arc is\
+    \ drawn with six different properties:\n\n+   - X—the coordinates for the circle's\
+    \ center along the X axis.\n- Y—the coordinates for the circle's center along\
+    \ the Y axis."
+  merge: -1
+  pgno: 33
+- img_proc: true
+  md: "31\n\n+   - Radius—the size of the circle.\n- startAngle—the start point of\
+    \ the arc.\n- endAngle—the end point of the arc.\n- anticlockwise—a Boolean value\
+    \ that dictates the direction\ncircle is drawn.\n\nThe following code describes\
+    \ the structure of an arc:\ncontext.arc(260,260,250,0,7,true);\n\nFigure 3.33\
+    \ shows the circle as it is drawn on the page.\nThe following code embeds the\
+    \ Arc method and instructions into a CANVAS drawing.\n\n![](img/273fb5489df445536bf1c8159f903498_34_0.png)\n\
+    \n```\n<!DOCTYPE html>\n<html>\n<head>\n  <title>Canvas - Creating a Circle</title>\n\
+    \  <script type=\"text/javascript\">\n    window.onload = function() {\n     \
+    \ var drawingCanvas = document.getElementById('myCircle');\n      if (drawingCanvas\
+    \ && drawingCanvas) {\n        var context = drawingCanvas.getContext('2d');\n\
+    \        context.strokeStyle = \"yellow\";\n        context.fillStyle = \"red\"\
+    ;\n        context.lineWidth = 20;\n        context.beginPath();\n        context.arc(260,260,250,0,Math.PI*2,true);\n\
+    \        context.closePath();\n        context.stroke();\n        context.fill();\n\
+    \      }\n    }\n  </script>\n</head>\n<body>\n  <canvas id=\"myCircle\" width=\"\
+    550\" height=\"550\"></canvas>\n</body>\n</html>\n```\n\nFigure 3.34 illustrates\
+    \ how you can add color to your circles.\nin addition to the Arc method you can\
+    \ also add Bezier and quadratic curves, both of which are mathematical calculations\
+    \ for creating an image. Bezier curves were developed by French mathematician\
+    \ Pierre Bezier in 1962. A Bezier curve is calculated from a parametric curve\
+    \ describing a parabola.\nFigure 3.35 shows the four points used to create a Bezier\
+    \ curve.\n\n![](img/273fb5489df445536bf1c8159f903498_34_1.png)"
+  merge: -1
+  pgno: 34
+- img_proc: true
+  md: "# 32\n\n![](img/273fb5489df445536bf1c8159f903498_35_0.png)\n\nA quadratic curve\
+    \ is based on the Bezier curve. The difference is that the quadratic curve is\
+    \ constructed of three points of definition instead of just one. It can be difficult\
+    \ to draw complex, Bezier curve images in CANVAS for a single, simple reason:\
+    \ There are no visual drawing tools, such as Adobe Illustrator, to export images\
+    \ that can be read by the CANVAS element.\n\nFigure 3.35 A Bezier curve.\n\n#\
+    \ Adding Color\n\nSo you now have basic shapes on the page. Big deal, right? Using\
+    \ JavaScript you can now begin to programmatically paint your objects. The following\
+    \ shows two semitransparent squares. You will see that the fill color is a CSS\
+    \ style.\n\n```\n<html>\n<head>\n<script type=\"application/x-javascript\">\n\
+    function draw() {\n  var canvas = document.getElementById(\"myCanvas\");\n  if\
+    \ (canvas.getContext) {\n    var ctx = canvas.getContext(\"2d\");\n    ctx.fillStyle\
+    \ = \"rgb(0,0,0)\";\n    ctx.fillRect(10, 10, 150, 150);\n    ctx.fillStyle =\
+    \ \"rgba(0, 300, 0, 0.5)\";\n    ctx.fillRect(75, 75, 150, 150);\n  }\n}\n</script>\n\
+    </head>\n<body onload=\"draw();\">\n<canvas id=\"myCanvas\" width=\"300\"></canvas>\n\
+    </body>\n</html>\n```\n\nThe fill method allows you to apply CSS style formatting.\
+    \ CSS increases the amount of visual control you have over your drawings on the\
+    \ screen. As SVG you can use any of the CSS color naming formats as Hex and RGB.\n\
+    \nLinear and radial gradients can also be applied to CANVAS images. With SVG,\
+    \ the linear and radial gradients inherit how CSS implements gradients. The gradient\
+    \ construction is developed by creating a shape, giving the gradient name, defining\
+    \ the gradient, and then applying the gradient.\n\nThe first step is to create\
+    \ a shape. The following is a simple CANVAS rectangle:"
+  merge: -1
+  pgno: 35
+- img_proc: true
+  md: "myRectangle.fillRect(10,10,650,650);\n\nThe next step is to create a new variable\
+    \ that declares a new gradient. The following line creates a new gradient that\
+    \ is named verticalGradient. The name is arbitrary; what is not arbitrary is the\
+    \ description of the gradient type that follows the name.\n\n```\nvar verticalGradient\
+    \ = myRectangle.createLinearGradient\n(0,0,0,650);\n```\n\nHere you are associating\
+    \ the gradient with the CANVAS object myRectangle. At this point the gradient\
+    \ will not paint the image that comes later—the code at this point merely associates\
+    \ the gradient and the image. The property createLinearGradient dictates where\
+    \ the gradient will paint an object. The parenthesis are the X and Y axes and\
+    \ height and width.\n\nA gradient must have at least two colors. The following\
+    \ will paint a gradient color that starts red and then transitions 50% through\
+    \ the image to yellow.\n\n```\nverticalGradient.addColorStop(0, 'red');\nverticalGradient.addColorStop(0.5,\
+    \ 'yellow');\n```\n\nThe final step is to use the paintStyle property to paint\
+    \ the gradient into the rectangle:\n\n```\nmyRectangle.setStyle = verticalGradient;\n\
+    ```\n\nThe whole CANVAS script looks as follows.\n\n```\n<html>\n<head>\n  <title>Linear\
+    \ Gradient</title>\n  <script type=\"application/x-javascript\">\n  function draw()\
+    \ {\n    var myRectangle = document.getElementById('myCanvas').getContext('2d');\n\
+    \    var verticalGradient = myRectangle;\n    createLinearGradient(0,0,0,650);\n\
+    \    verticalGradient.addColorStop(0, 'red');\n    verticalGradient.addColorStop(0.5,\
+    \ 'yellow');\n    myRectangle.setStyle = verticalGradient;\n    myRectangle.fillRect(10,10,650,650);\n\
+    \  }\n</script>\n</head>\n<body onload=\"draw();\">\n  <canvas id=\"myCanvas\"\
+    \ width=\"800\" height=\"800\"></canvas>\n</body>\n</html>\n```"
+  merge: -1
+  pgno: 36
+- img_proc: true
+  md: 'See Figure 3.36 for an example image.
+
+    As with the linear gradient, the radial gradient is painted onto an image and
+    the gradient must be constructed of at least two colors. With SVG, the radial
+    gradients require starting and stopping-radius dimensions, size, and position.
+    The following creates a radial gradient called myRadialGradient with three colors:
+    red, yellow, and blue.
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_37_0.png)
+
+
+    Figure 3.36 Linear gradients can be applied to CANVAS images.
+
+
+    ```
+
+    var myRadialGradient = myCycle;
+
+    createRadialGradient(0,150,150,0,140,90);
+
+    myRadialGradient.addColorStopStop(0, ''red'');
+
+    myRadialGradient.addColorStopStop(0.9, ''yellow'');
+
+    myRadialGradient.addColorStopStop(1, ''blue'');
+
+    ```
+
+
+    You need to add the gradient to your CANVAS example, as follows. See Figure 3.37.
+
+
+    ![](img/273fb5489df445536bf1c8159f903498_37_1.png)
+
+
+    Figure 3.37 A radial gradient applied to a CANVAS image.
+
+
+    ```
+
+    <html>
+
+    <head>
+
+    <title>A canvas radialGradient Images</title>
+
+    <script type="application/x-javascript">
+
+    function draw() {
+
+    var myCycle = document.getElementById(''myCanvas'').getContext(''2d'');
+
+    var myRadialGradient = myCycle;
+
+    createRadialGradient(0,150,150,0,140,90);
+
+    myRadialGradient.addColorStopStop(0, ''red'');
+
+    myRadialGradient.addColorStopStop(0.9, ''yellow'');
+
+    myRadialGradient.addColorStopStop(1, ''blue'');
+
+    myCycle.fillStyle = myRadialGradient;
+
+    myCycle.fillRect(0,0,450,450);
+
+    }
+
+    </script>
+
+    <body onload="draw()">
+
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    Gradients are useful for creating depth on an object. Careful use of gradients
+    can simulate a 3D environment.
+
+
+    # Adding Animation to CANVAS Images
+
+
+    Animation can be added to CANVAS images. As you can imagine, animation requires
+    additional work. To make your life easier there is a great JavaScript library
+    called CAKE (Canvas Animation'
+  merge: -1
+  pgno: 37
+- img_proc: true
+  md: "Kit Experiment) that you can download at http://code.google.com/p/cakejs/.\
+    \ Using the CAKE library you can easily create CANVAS-based animation. The following\
+    \ code will create a pulsing blue circle.\n\n```\nwindow.onload = function ()\
+    \ {\n  var CAKECanvas = new Canvas(document.body, 600, 400);\n  var myCircle =\
+    \ new Circle(100, \n    {\n      id: 'myCircle',\n      x: CAKECanvas.width /\
+    \ 3,\n      y: CAKECanvas.height / 2,\n      stroke: 'blue',\n      strokeWidth:\
+    \ 20,\n      endAngle: Math.PI*2\n    }\n  );\n  myCircle.addFrameListener(\n\
+    \    function (t, dt) {\n      this.scale = Math.sin(t / 1000);\n    }\n  );\n\
+    \  CAKECanvas.append(myCircle);\n}\n```\n\nThe final you need to ensure that your\
+    \ animation works is to download the CAKE library files to your Web site. The\
+    \ files can be downloaded at http://glim.rubyforge.org/cake/. You will need to\
+    \ use the SAKE JS library to save your Web site. In the HEAD section of your page\
+    \ you will need to make a linked reference to the CAKE library. It will look like\
+    \ this:\n\n```\n<script type=\"text/javascript\" src=\"cake.js\"></script>\n```\n\
+    \nTo accomplish the action use the Scale method. The effect is very similar to\
+    \ Adobe's Flash, but with the benefit of running correctly on web browsers on\
+    \ mobile devices such as the iPhone, MyTouch, and Palm Pre.\n\nThe introduction\
+    \ of CANVAS and SVG gives you great opportunities to create complex and compelling\
+    \ illustrations inside your HTML5 web pages. It is fair to say that CANVAS is\
+    \ still growing in technical scope. Expect additions and changes to the technology\
+    \ over the next few years. A big addition will be the inclusion of 3D within CANVAS."
+  merge: -1
+  pgno: 38
+- img_proc: true
+  md: '# What You Have Learned
+
+
+    This article introduced you to scalable vector graphics (SVG) and the CANVAS element.
+    These two technologies enable you to programmatically build images inside of your
+    web pages without needing graphic tools such as Adobe Illustrator, Flash, or Photoshop.'
+  merge: -1
+  pgno: 39
+- img_proc: true
+  md: "# focal press books\n\nVISUALIZING THE WEB WITH HTML 5\nDownload these other\
+    \ great articles in the HTML5: Visualizing the Web series\n\n# HTML5 Rich Media\
+    \ Foundation\n\nLearn about the new ways in which video and audio can be easily\
+    \ embedded into your HTML5 Web pages. Discover how you can create new Web media\
+    \ content and how JavaScript, CSS, and SVG can be integrated to create a compelling,\
+    \ rich media foundation for your work.\n\n# Picture CSS3\n\nSee how you can use\
+    \ Cascading Style Sheets 3, or CSS3, to quickly and easily increase your control\
+    \ over visual Web page design. \n\n# The HTML5 JavaScript Model\n\nJavaScript\
+    \ is the glue that enables HTML to become interactive. Learn how you can leverage\
+    \ JavaScript Libraries to build beautiful Web applications.\n\n# Rendering HTML5\
+    \ Illustration\n\nScalable Vector Graphics (SVG) and CANVAS are two new tools\
+    \ introduced in HTML5 that you can use to add illustration and interactive animation\
+    \ to your Web pages. Understand why there are two different formats, how you can\
+    \ use them, and where they can be used today.\n\n# HTML5 Tag Structure\n\nTake\
+    \ a gander at the new HTML5 elements: how you can take advantage of them and what\
+    \ you need to look out for as you design your new Web sites.\n\nAnd look for the\
+    \ HTML5: Visualizing the Web book coming in July 2010. The book will feature information\
+    \ and resources that expand on the 5-part series.\n\nVisit focalpress.com for\
+    \ video tutorials, sample chapters, podcasts and exclusive competitions and discounts.\n\
+    \nf o c a l p r e s s . c o m"
+  merge: -1
+  pgno: 40

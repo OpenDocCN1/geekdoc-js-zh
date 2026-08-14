@@ -1224,6 +1224,7 @@
 +   [ReactJS：Web 应用开发：学习最流行的 Javascript 库之一](docs/reactjs-web-app-development-learn-one-of-the-most-popular-ja/README.md)
 +   [重新发现 JavaScript](docs/rediscovering-javascript/README.md)
 +   [可靠的 JavaScript：在最危险语言中编写安全代码](docs/reliable-javascript-how-to-code-safely-in-the-worlds-most-da/README.md)
++   [HTML5 绘图渲染（Web 可化）](docs/rendering-html5-illustration-visualizing-the-web/README.md)
 +   [负责任的 JavaScript](docs/responsible-javascript/README.md)
 +   [React Native 培训手册](docs/rn-train/README.md)
 +   [Ruby on Rails 教程：使用 Rails 学习 Web 开发，第 4 版](docs/ruby-on-rails-tutorial-learn-web-development-with-rails-4th-/README.md)
