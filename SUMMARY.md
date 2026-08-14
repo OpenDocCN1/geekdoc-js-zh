@@ -1225,6 +1225,7 @@
 +   [ReactJS：Web 应用开发：学习最流行的 Javascript 库之一](docs/reactjs-web-app-development-learn-one-of-the-most-popular-ja/README.md)
 +   [Angular.JS 秘籍](docs/recipes-with-angularjs/README.md)
 +   [重新发现 JavaScript](docs/rediscovering-javascript/README.md)
++   [重构：改进现有代码的设计 (第2版) (Addison-Wesley Signature Series (Fowler))](docs/refactoring-improving-the-design-of-existing-code-2nd-editio/README.md)
 +   [JavaScript 重构指南](docs/refactoring-javascript/README.md)
 +   [可靠的 JavaScript：在最危险语言中编写安全代码](docs/reliable-javascript-how-to-code-safely-in-the-worlds-most-da/README.md)
 +   [HTML5 绘图渲染（Web 可化）](docs/rendering-html5-illustration-visualizing-the-web/README.md)
