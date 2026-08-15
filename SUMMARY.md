@@ -1271,6 +1271,7 @@
 +   [JavaScript 和 Ajax 脚本：设计师指南](docs/scriptin-with-javascript-and-ajax-a-designers-guide/README.md)
 +   [Scrum：从新手到忍者：敏捷高效开发方法论](docs/scrum-novice-to-ninja-methods-for-agile-powerful-development/README.md)
 +   [Java 秘籍：面向学生、学者及工业专业人士的自学方法](docs/secrets-of-java-a-self-learning-approach-for-students-academ/README.md)
++   [移动应用安全开发：如何使用 php 和 javascript 设计并编写安全移动应用](docs/secure-development-for-mobile-apps-how-to-design-and-code-se/README.md)
 +   [Selenium Webdriver 与 JavaScript 编程简化：编程初学者指南 - 2 合 1](docs/selenium-webdriver-and-javascript-coding-made-simple-a-begin/README.md)
 +   [Node.js Selenium WebDriver 秘籍：JavaScript Selenium WebDriver 解决方案指南（Test 秘籍系列）（第 6 卷）](docs/selenium-webdriver-recipes-in-nodejs-the-problem-solving-gui/README.md)
 +   [七周精通七种语言](docs/seven-languages-in-seven-weeks/README.md)
