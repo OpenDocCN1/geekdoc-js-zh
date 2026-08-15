@@ -1265,6 +1265,7 @@
 +   [Sams 24 小自学 PHP，第二版](docs/sams-teach-yourself-php-in-24-hours-second-edition/README.md)
 +   [Sams 24 小时自学 PHP：Web 应用；数据库；Cookie](docs/sams-teach-yourself-php-in-24-hours-web-applications-databas/README.md)
 +   [Sams 自学 PHP、MySQL 和 Apache：合集](docs/sams-teach-yourself-php-mysql-and-apache-all-in-one---includ/README.md)
++   [HTML, CSS 和 JavaScript 入门指南](docs/samsteachyourself-html-css-and-javascript/README.md)
 +   [Web 设计师 Sass](docs/sass-for-web-designers/README.md)
 +   [JavaScript 和 Ajax 脚本：设计师指南](docs/scriptin-with-javascript-and-ajax-a-designers-guide/README.md)
 +   [Java 秘籍：面向学生、学者及工业专业人士的自学方法](docs/secrets-of-java-a-self-learning-approach-for-students-academ/README.md)
