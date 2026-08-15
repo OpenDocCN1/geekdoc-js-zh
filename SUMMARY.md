@@ -1261,6 +1261,7 @@
 +   [Sams 24 小自学 Javaserver Pages](docs/sams-teach-yourself-javaserver-pages-in-24-hours-sams-teach-/README.md)
 +   [Sams 24 小时自学 jQuery Mobile](docs/sams-teach-yourself-jquery-mobile-in-24-hours-sams-teach-you/README.md)
 +   [24 小时自学 Perl（第3版）](docs/sams-teach-yourself-perl-in-24-hours-3rd-edition-teach-yours/README.md)
++   [Sams 自学 PHP、MySQL 和 Apache：合集](docs/sams-teach-yourself-php-mysql-and-apache-all-in-one---includ/README.md)
 +   [Web 设计师 Sass](docs/sass-for-web-designers/README.md)
 +   [JavaScript 和 Ajax 脚本：设计师指南](docs/scriptin-with-javascript-and-ajax-a-designers-guide/README.md)
 +   [Selenium Webdriver 与 JavaScript 编程简化：编程初学者指南 - 2 合 1](docs/selenium-webdriver-and-javascript-coding-made-simple-a-begin/README.md)
