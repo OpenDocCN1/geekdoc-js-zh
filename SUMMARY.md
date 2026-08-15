@@ -1251,6 +1251,7 @@
 +   [10 分钟学会 HTML5（第5版）（Sams 自学系列 - 分钟系列）](docs/sams-teach-yourself-html5-in-10-minutes-5th-edition-sams-tea/README.md)
 +   [Sams 24 小时自学 HTML5 移动应用开发](docs/sams-teach-yourself-html5-mobile-application-development-in-/README.md)
 +   [Sams 24 小时自学 Javascript 1.3](docs/sams-teach-yourself-javascript-13-in-24-hours-teach-yourself/README.md)
++   [24 小时自学 JavaScript（第二版）](docs/sams-teach-yourself-javascript-in-24-hours-2nd-edition/README.md)
 +   [Sams 24 小时自学 JavaScript（第4 版）](docs/sams-teach-yourself-javascript-in-24-hours-4th-edition-sams-/README.md)
 +   [24 小时自学 JavaScript [6版]](docs/sams-teach-yourself-javascript-in-24-hours-6th-ed/README.md)
 +   [Web 设计师 Sass](docs/sass-for-web-designers/README.md)
