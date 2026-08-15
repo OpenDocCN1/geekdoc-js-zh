@@ -1,0 +1,10168 @@
+- img_proc: true
+  md: '# SECRETS OF JAVA
+
+
+    Free CD Included
+
+
+    FIREWAL MEDIA
+
+
+    Er. R. KABILAN'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: '# SECRETS OF JAVA'
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_4_0.png)
+
+
+    **SECRETS** **OF** **JAVA**
+
+
+    *A Self Learning Approach* *for* *Students,*
+
+
+    *Academic* *and* *Industrial Professionals*
+
+
+    By
+
+
+    Er. R. Kabilan, M.E
+
+
+    *Senior Lecturer*
+
+
+    Thiruvalluvar College of Engg. and Tech.
+
+
+    Vandavasi (Chennai)
+
+
+    FIREWAL MEDIA
+
+
+    (An Imprint of Laxmi Publications Pvt. Ltd.)
+
+
+    BANGALORE
+
+
+    **e** CHENNAI
+
+
+    •
+
+
+    COCHIN
+
+
+    •
+
+
+    GUWAHATI
+
+
+    •
+
+
+    HYDERABAD
+
+
+    JALANDHAR
+
+
+    •
+
+
+    KOLKATA
+
+
+    •
+
+
+    LUCKNOW
+
+
+    •
+
+
+    MUMBAI
+
+
+    •
+
+
+    RANCHI
+
+
+    NEW DELHI'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_5_0.png)
+
+
+    ***<l>***
+
+
+    ***<l>***
+
+
+    ***<l>***
+
+
+    *<l>*
+
+
+    ***<l>***
+
+
+    *Published* *by* *:*
+
+
+    **FIREWAL** **MEDIA**
+
+
+    *(An* *Imprin**t* *of* *La**xmi* *Publications P**vt**.* *Ltd**.)*
+
+
+    **11****3,** Golden House, Daryaganj,
+
+
+    New Delhi-110002
+
+
+    *Phone:* 011-43 53 25 00
+
+
+    *Fax* : 011-43 53 25 28
+
+
+    www .laxmipublications.com
+
+
+    info@laxmipublications.com
+
+
+    *Copyright© 2008* *by* *Laxmi* *Publications P**ut.* *Ltd.* *All* *rights reserved.*
+    *No* *pmt* *of*
+
+
+    *this publication* *may* *be reproduced, stored* *in* *a retrieval system,* *or*
+    *transmitted*
+
+
+    *in* *any* *form or* *by* *an**y means, electronic, mechanical, photocopying,
+    recording or*
+
+
+    *oth**e**rwise* *without* *the* *prior* *written* *permission* *of* *the* *publish**e**r.*
+
+
+    *First* *Edition* *:* 2009
+
+
+    **OFFICES**
+
+
+    **Bangalore**
+
+
+    080-26 61 15 61
+
+
+    ***<l>*** **Chennai**
+
+
+    044-24 34 47 26
+
+
+    **Coch****in**
+
+
+    **Hyder****a****bad**
+
+
+    **Kolkata**
+
+
+    **Mumbai**
+
+
+    0484-239 70 04
+
+
+    040-24 65 23 33
+
+
+    033-22 27 43 84
+
+
+    022-24 91 54 15, 24 92 78 69
+
+
+    ***<l>*** **Guwahati**
+
+
+    ***<l>*** ***J*** **alandhar**
+
+
+    ***<l>*** **Lucknow**
+
+
+    ***<l>*** **Ranchi**
+
+
+    0361-254 36, 69, 251 38 81
+
+
+    0181-222 12 72
+
+
+    0522-220 95 78
+
+
+    0651-221 47 64
+
+
+    FSE-3032-085-SECRET OF JAVA
+
+
+    **C-**
+
+
+    *Typeset* *at* *:* ABRO Enterprises, Delhi.
+
+
+    *Printed* *at* *:* L.B. Enterprises
+
+
+    ![](img/2939962d59d1a33af55f4203ff42bf76_5_1.png)'
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_6_0.png)
+
+
+    ~etficatetf ***to***
+
+
+    *!Mj;* ~arents/
+
+
+    *t1Jrotfiers* *&* *Sisters/*
+
+
+    *!A&* *UJift*
+
+
+    *&*
+
+
+    *!A&* *K._idS*
+
+
+    *K.:* *K._avini*
+
+
+    *K.:* *K._aviram*
+
+
+    *and* *especia!{y* *to* *m!J* *5e!ovetf* *foend$*'
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_8_0.png)
+
+
+    **CoNTENTS**
+
+
+    *Pages*
+
+
+    **1\.** **INTRODUCTION**
+
+
+    **1-3**
+
+
+    History of Java
+
+
+    1
+
+
+    OOPS Concept
+
+
+    1
+
+
+    Definition of Java
+
+
+    2
+
+
+    JDK-Tools
+
+
+    3
+
+
+    **2\.** **WORLD** **WIDE** **WEB(WWW)**
+
+
+    **4-6**
+
+
+    BASICS of WWW
+
+
+    4
+
+
+    Definition
+
+
+    4
+
+
+    E-mail
+
+
+    5
+
+
+    3\. **HYPER** **TEXT** **MARKUP** **LANGUAGE** **(HTML)**
+
+
+    7-8
+
+
+    Introduction
+
+
+    7
+
+
+    HTML Tags
+
+
+    7
+
+
+    Types of HTML DTD
+
+
+    8
+
+
+    Browser
+
+
+    8
+
+
+    **4\.** **FUNDAMENTALS** **OF** **JAVA**
+
+
+    **9-17**
+
+
+    Introduction
+
+
+    9
+
+
+    Data Types
+
+
+    10
+
+
+    Special Operator
+
+
+    12
+
+
+    Typecasting
+
+
+    14
+
+
+    Command Line Arguments
+
+
+    15
+
+
+    **5\.** **INHERITANCE**
+
+
+    **18****-** **19**
+
+
+    Introduction
+
+
+    18
+
+
+    Single and Multiple Inheritance
+
+
+    18
+
+
+    **6\.** **INTERFACE**
+
+
+    **2o-21**
+
+
+    Introduction
+
+
+    20
+
+
+    **7\.** **PACKAGES**
+
+
+    **22-23**
+
+
+    Introduction
+
+
+    22
+
+
+    (vii)'
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_9_0.png)
+
+
+    *(viii)*
+
+
+    **8\.** **EXCEPTIONS**
+
+
+    **24-26**
+
+
+    Concept of Exceptions
+
+
+    24
+
+
+    **9\.** **10** **STREA****MS**
+
+
+    **27****- 32**
+
+
+    Definition
+
+
+    27
+
+
+    Top Level Classes of 10 Package
+
+
+    27
+
+
+    **10\.** **AWT**
+
+
+    **33****-** **42**
+
+
+    Introduction
+
+
+    33
+
+
+    Layout Managers
+
+
+    33
+
+
+    Event Handlers
+
+
+    34
+
+
+    **11\.** **APPLET**
+
+
+    **44****-** **49**
+
+
+    Introduction
+
+
+    44
+
+
+    Life Cycle of Applet
+
+
+    44
+
+
+    **12****.** **SWINGS**
+
+
+    **50-60**
+
+
+    Introduction
+
+
+    50
+
+
+    Comparison with AWT
+
+
+    50
+
+
+    **13****.** **NETWORKING**
+
+
+    **61-66**
+
+
+    Introduction
+
+
+    61
+
+
+    Types of Networking Programs
+
+
+    61
+
+
+    **14\.** **THREADS**
+
+
+    **67****-7****3**
+
+
+    Definition
+
+
+    67
+
+
+    Life Cycle of Thread
+
+
+    68
+
+
+    Thread Priority
+
+
+    70
+
+
+    **15\.** **JDBC** **(Java** **Database** **Connectivity)**
+
+
+    **74-80**
+
+
+    Introduction
+
+
+    74
+
+
+    JDBC VS ODBC
+
+
+    75
+
+
+    **16\.** **THE** **JAVA.****UTIL.** ***** **PACKAGE**
+
+
+    **81****-** **85**
+
+
+    Basics of Util Package
+
+
+    81
+
+
+    **INDEX**
+
+
+    **86-87**'
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_10_0.png)
+
+
+    **PREFACE**
+
+
+    J
+
+
+    ava software is a technology used to develop distributed application executed
+    across all
+
+
+    platforms. There are several IDE (Integrated Development Environment) from Sun,
+    Symantec
+
+
+    and Borland available in the market. Java uses a compiler to convert the source
+    code into
+
+
+    architecture independent byte codes. The JDK (Java Development Kit) from Javasoft
+    contains the
+
+
+    basic tools and API (Application Programming Interface) for creating and executing
+    both types
+
+
+    of java programs namely application and applet (internet) type programs. This
+    book covers all
+
+
+    the important topics of Java programs. Each and every chapter has been prepared
+    with key
+
+
+    points and simple examples. I assure that if you read this book you can confidently
+    say that ''I
+
+
+    know Java''. This book also contains CD with more examples from all the topics
+    of java, which
+
+
+    is pure hard coding that will help you to know the syntax of java very easily.
+
+
+    Every possible attempt has been made to make this book useful for the students,
+    still any
+
+
+    suggestions regarding improvement of this book will be acknowledged.
+
+
+    **-AU****THOR**
+
+
+    *(ix)*'
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_11_0.png)
+
+
+    ACKNO~WLEDGEMENT
+
+
+    M
+
+
+    y first and foremost thanks to the Almighty for his everlasting love showed upon
+    me
+
+
+    throughout this endeavor.
+
+
+    I wish to thank our beloved Chairman/Principal **Dr. S. Ar****un****ac****halam**
+    and vice principal
+
+
+    **Dr. M. Shanmu****ga****m,** Thiruvalluvar College of Engg. and Tech., who encouraged
+    and supported
+
+
+    me for to bring out this book.
+
+
+    My unbounded thanks to our HOD **Mr.** **V.** **Ba****lu****, AP** and all my
+    colleagues and friends, who
+
+
+    have been inspired to prepare this text.
+
+
+    Last but not the least, my students have given me the lhirst and induced me to
+    write this
+
+
+    book and I remember them here.
+
+
+    **-** **AUT****HOR**
+
+
+    (x)'
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_12_0.png)
+
+
+    Chapter **1**
+
+
+    ***Introduction***
+
+
+    The aim of this book is the user can say that ''I KNOW JAVN., from that the user
+    can develop
+
+
+    application and applet (Internet) type programs.
+
+
+    **HISTORY** **OF** **JAVA**
+
+
+    - Java is a pure or true object oriented language developed by sunmicrosystem.
+
+
+    - The first name of java during the year 1991 is oak.
+
+
+    -
+
+
+    A team with James gosling developed this language.
+
+
+    -
+
+
+    During the year 1995 it is renamed as JAVA.
+
+
+    **Why** **we** **are choosing this java** ?
+
+
+    - Java is a world first platform neutral (independent) language.
+
+
+    -
+
+
+    This is the first language supporting and gives the same output with all the operating
+
+
+    system.
+
+
+    -
+
+
+    From this language we can develop both the application type and internet based
+    applet
+
+
+    type programs.
+
+
+    **OOPS** **CONCEPT**
+
+
+    There are eight concepts, any language that supports this concept we call that
+    language as object
+
+
+    oriented language. They are :
+
+
+    **1\. Object** : Instance of class, for example : apple.
+
+
+    **2\. Class** : It is a collection of objects of similar type, for example : fruits.
+
+
+    **3\. Data abstraction** : The insulation of the data from direct access by the
+    program is
+
+
+    called data abstraction or data hiding.
+
+
+    **4\.** **Dynamic binding** : A method call resolved at run time is referred to
+    as dynamic
+
+
+    binding.
+
+
+    **5\. Data Encapsulation** : The wrapping up of data and method into a single
+    unit is known
+
+
+    as data encapsulation.
+
+
+    **1**'
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_13_0.png)
+
+
+    2
+
+
+    Secrets of Java
+
+
+    6\. Inheritance : Inheritance is the process by which object of one class acquire
+    the
+
+
+    properties of another class.
+
+
+    7\. Polymorphism : A property by which we can send the same message to object
+    of
+
+
+    several different classes, that object can respond in a different way depending
+    on its
+
+
+    class.
+
+
+    8\. Message passing : Objects communicate with one another by sending and receiving
+
+
+    information.
+
+
+    The language that support program with objects are said to be object based language,
+    for
+
+
+    example, javascript
+
+
+    The language that support programming with all the oops concept is known as object-
+
+
+    oriented language. For example : c++, JAVA
+
+
+    DEFINITION OF JAVA
+
+
+    *JAVA* *is* *simple, robust, object oriented, distributed, interpreted,* *and*
+    *secures, architecture neutml,*
+
+
+    *portable,* *higl1* *performance, multitl1readed,* *and* *dynamic* *language.*
+
+
+    Comparison with C
+
+
+    1\. Java does not have goto, sizeof and typedef statements.
+
+
+    2\. Java does not have data types such as struct, union, and enum.
+
+
+    3\. Java does not define modifiers such as auto, extern, register, signed and
+    unsigned,
+
+
+    4\. Java does not support preprocessor and pointer.
+
+
+    5\. Java adds new operators such as instance of and>>>.
+
+
+    Comparison with C + +
+
+
+    1\. Java does not support operator overloading except + operator.
+
+
+    2\. Java does not directly support multiple inheritance, but this is achieved
+    by interface
+
+
+    3\. Java has finalize( ) method corresponding to destructor( ) in c+ +.
+
+
+    4\. Java is an pure object-oriented language.
+
+
+    Software Installation
+
+
+    The software jdk (java development kit) can be downloaded from sun.com or javasoft.com
+    web
+
+
+    sites.
+
+
+    This software is compatible with windows''95, windows''98, windows''2000, windows,
+
+
+    windows.
+
+
+    After installed the software we get folders like jdk1.1.5, when we move on to
+    jdk1.1.5
+
+
+    folder we get many subfolders from that the important folder is bin within that
+    only all exe files
+
+
+    are there.
+
+
+    Commonly we have to set path in autoexec.bat
+
+
+    Path= c:\windows\command;c:\jdk1.5\bin
+
+
+    Path=c:\windows\system32;c:\jdk1.5\bin in windows ''xp
+
+
+    Now we check that the java software is installed or not by type java or javac
+    in dos prompt,
+
+
+    if the software is installed that will show like this.'
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_14_0.png)
+
+
+    Introduction
+
+
+    3
+
+
+    **JDK-T****OOLS**
+
+
+    For java progranm1ing we need the following *exe* files in the bin folder :
+
+
+    1\. java.exe
+
+
+    - interpreter to run the program
+
+
+    2\. javac.exe
+
+
+    - java compiler to compile program
+
+
+    3\. javap.exe
+
+
+    - convert byte code to source code
+
+
+    4\. javadoc.exe
+
+
+    - to create the documentation
+
+
+    5\. javah.exe
+
+
+    - source code to byte code
+
+
+    6\. jar.exe
+
+
+    - to compress the files like win -zip
+
+
+    7\. appletviewer.exe- to run applet type program.
+
+
+    **Types** **of** **Program**
+
+
+    By using java we can develop two types'' applications
+
+
+    1\. Standalone application type.
+
+
+    2\. Internet based applet tyjpe.
+
+
+    **Steps for executing the standalone application type**
+
+
+    1\. Create a java program in editor., for exan1ple : Dos-prompt edit or Notepad.
+
+
+    2\. Save the file with .java extension., for example : Filename.java.
+
+
+    3\. Compile the Java Program using javac., for example : javac Filename.java.
+
+
+    4\. If there is no error automatically class file will be appear in the directory,
+    for example:
+
+
+    Filename .class.
+
+
+    5\. To execute the program use the java., for example : java Class name.
+
+
+    **Steps for executing the internet based appl****et** **type Program**
+
+
+    1\. Create a java program in editor. For example : Dos-prompt edit or Notepad.
+
+
+    2\. Save the file with .java extension., for example : Filename.java.
+
+
+    3\. Compile the Java Program using javac., for example : javac Filename.java.
+
+
+    4\. If there is no error automatically class file will be appear in the directory,
+    for example:
+
+
+    Filename .class.
+
+
+    5\. Create a HTML file to call the applet class file by using the following tag
+
+
+    for example :<applet code= Classname.class width=200 height=3000> </applet> .
+
+
+    6\. Save the html file with .htm or .html, for example : Filename.htm.
+
+
+    7\. If there is no browser in your system run html file using appletviewer.exe
+    file, for
+
+
+    example: appletviewer Filename. java.
+
+
+    8\. If browser is there then you can locate the html file and you can see output
+    in browser.
+
+
+    **ODD**'
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_15_0.png)
+
+
+    Chapter **2**
+
+
+    ***World Wide***
+
+
+    ***Web*** ***(WWW)***
+
+
+    **BASICS** **OF** **WWW**
+
+
+    The CERN (Center European Research Nuclear) developed the technology known as
+    WWW.
+
+
+    Tim Berners - Lee is the author of www
+
+
+    It is developed during year 1989 in Geneva.
+
+
+    The website www.w3c.org gives the information about how the websites should be
+
+
+    developed. The w3c is the World Wide Web consortium.
+
+
+    **DEFINITION**
+
+
+    World Wide Web is the websites contains information about particular organization.
+
+
+    In this portals means the website includes its own information as well as other
+    company
+
+
+    information.
+
+
+    **URL (Uniform Resource Locator)**
+
+
+    It is website address, for example : www yahoo.com . [n which www is the protocol,
+    yahoo is
+
+
+    the company name and com represents zones. Generally we call this address is hardware
+
+
+    address and it is mapped with software address and loads the web pages of that
+    sites.
+
+
+    For example if www yahoo com typed on the address bar of the browser that converts
+    that
+
+
+    URL into http :Uyahoo.com/index.htm. In which http is a hyper text transport protocol
+    used for
+
+
+    navigation of web pages. In which index.htm is Lhe name of source files.
+
+
+    The various zones are :
+
+
+    .com -
+
+
+    commercial organization
+
+
+    .edu -
+
+
+    educational institution
+
+
+    .net
+
+
+    -
+
+
+    networking organization
+
+
+    .gov
+
+
+    - government sites
+
+
+    4'
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_16_0.png)
+
+
+    .mil
+
+
+    - military sites
+
+
+    .org
+
+
+    - organization
+
+
+    World Wide Web (WWW)
+
+
+    5
+
+
+    Some sites URL are with country code for example WV\rw.yahoo.co.in.
+
+
+    The various country codes are :
+
+
+    .uk
+
+
+    - united kingdom
+
+
+    .in
+
+
+    India
+
+
+    .us
+
+
+    - USA
+
+
+    .jp
+
+
+    Japan
+
+
+    .as
+
+
+    -
+
+
+    Australia
+
+
+    **Search** **Engine**
+
+
+    Some sites are having search engine options to find web pages based on the particular
+    topic.
+
+
+    Exan1ples of search engine sites are :
+
+
+    www google co in
+
+
+    www. altavista.com
+
+
+    www.yahoo.co.in
+
+
+    www.infoseek.com
+
+
+    We can classify the entire network into three types, they are :
+
+
+    ***Intranet***
+
+
+    - Means when the same company connected in network for example TCS of different
+
+
+    location.
+
+
+    ***Exte******ranet***
+
+
+    - Means when one company AT different places link witlll another company. For
+
+
+    example : SSi links with TCS for placed the students.
+
+
+    **Internet**
+
+
+    This is the network of networks, that intranet and extranet links to www internet.
+
+
+    **E-mail**
+
+
+    E-mail is the one of the service to sending and receiving the messages globally
+    througlh internet.
+
+
+    There are various free e-mail sites are :
+
+
+    www.hotmail.com
+
+
+    www.yahoo.com
+
+
+    www lycos com
+
+
+    www.gmail.com
+
+
+    In that the new user can register the personnel detail and get unique e-mail id.
+    In future
+
+
+    you can access this service any where in the world.
+
+
+    You just open e-mail sites enter username and password you can get separate pages
+    in
+
+
+    which the message is received and sending the message to others e-mail id.'
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_17_0.png)
+
+
+    6
+
+
+    Secrets of Java
+
+
+    Many sites provides To, CC, BCC, Subject, Message box. Send, reply, forward and
+    delete
+
+
+    options.
+
+
+    We can send message of maximum 50 e-mail id by type the id with comma in To or
+    CC
+
+
+    or BCC.
+
+
+    In which cc means carbon copy and bee means blind carbon copy.
+
+
+    If we send message to one e-mail means you can type the id in TO Textfield or
+    else we
+
+
+    can send the same message 25 id means you type that id in cc or bee with comma.
+
+
+    The difference between CC and BCC is that if we use cc means the receiver can
+    know the
+
+
+    others e-mail id also or if we use BCC means the receiver not know the others
+    e-mail id.
+
+
+    **ODD**'
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_18_0.png)
+
+
+    Chapter **3**
+
+
+    **INTRODUCTION**
+
+
+    ***Hyper*** ***Text***
+
+
+    ***Markup***
+
+
+    ***Language (HTML)***
+
+
+    HTML is the very basic fundamental scripting language for developing the web pages.
+    This html
+
+
+    is derived from SGML (standard generalized markup language). XML (extensible markup
+    language)
+
+
+    also derived from SGML. The only language browser can understand is HTML. During
+    the year
+
+
+    1960 SGML arises as a general purpose scripting language. From that html is derived
+    as scripting
+
+
+    language.
+
+
+    **HTML** **TAGS**
+
+
+    HTML comprises of tags. Tags means a message with lefl angle bracket and right
+    angle bracket
+
+
+    is known as tags. For exan1ple : <html>.
+
+
+    **Tags**
+
+
+    There are Lwo types'' tags :
+
+
+    - opening tag (on code), for example :<html>
+
+
+    - closing tag (off code), for example :</html>
+
+
+    The tag with slash in front of the message is known as closing tag. Some tags
+    have
+
+
+    attributes which is used to specify how the web browser should Lreat a particular
+    tag.
+
+
+    For example :<body bgcolor=red>
+
+
+    HTML file can be developed with notepad or WordPad or front page and save the
+    file with
+
+
+    Filename.htm or IFilename.html.
+
+
+    No need of any software to installed for HTML. We need editor and browser. The
+    browser
+
+
+    contains DTD (Document type definition) which is used to validate the html files.
+
+
+    7'
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_19_0.png)
+
+
+    8
+
+
+    Secrets of Java
+
+
+    TYPES OF HTML DTD
+
+
+    (i) lEFT level 2 HTML DTD - standard for all browser
+
+
+    *(ii)* lEFT level 3 HTML DTD - under experimental stage
+
+
+    *(iii)* Netscape''s Mozilla DTD - developed Netscape Communication Corporation.
+
+
+    BROWSER
+
+
+    It is a software for browse the web pages and to run html files. For example :
+    Internet Explorer
+
+
+    from Microsoft, Netscape from Netscape Company, Mozilla firebox and Lynx.
+
+
+    Examples
+
+
+    The entire web pages can be splitted into three parts namely (i) Head *(ii)* body
+    *(iii)* footer.
+
+
+    The head tags contain key information about the particular web page. Body part
+    contains
+
+
+    all information about that page. And the footer part contain address, e-mail and
+    contact
+
+
+    information.
+
+
+    General Structure of HTML File
+
+
+    <html>
+
+
+    <head>
+
+
+    <title> TCET </title>
+
+
+    <!head>
+
+
+    <body bgcolor=red>
+
+
+    <center> <hl>TCET<!hl> </center>
+
+
+    <hr>
+
+
+    <marquee> EEE </marquee>
+
+
+    Reaming 80% of tags are included in between the body tag
+
+
+    </body>
+
+
+    </html>
+
+
+    It is not a casesentitive; some tags are not having the closing tag. Many of the
+    tags are
+
+
+    optional.
+
+
+    Examples of tags : <i>, < b>, <address> , <strong>, <kbd>, <p>, <pre>, <br>,
+
+
+    <strike>, <blink>.
+
+
+    ODD'
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_20_0.png)
+
+
+    Chapter **4**
+
+
+    **INTRODUCTION**
+
+
+    ***Fundamentals*** ***of***
+
+
+    ***java***
+
+
+    Java is a strictly case sensitive. Java program includes with inbuilt class, methods
+    and variables.
+
+
+    The user can also develop class, methods and variables called user defined things.
+
+
+    As per the rules of sunmicrosystem we have to follow certain rules for class name,
+    method
+
+
+    name, variables name and object name.
+
+
+    **Class** **Na****me**
+
+
+    Class name first letter is capital. For example : String.
+
+
+    **Obj****ect Name**
+
+
+    Method name first letter is small case and second word first letter is capital,
+    for example
+
+
+    draw Line().
+
+
+    **Variabl****es** **Name**
+
+
+    Variables name first letter is any alphabets or underscore or dollar and further
+    we can include
+
+
+    the number also.
+
+
+    We should not use the keywords for our own defining purpose.
+
+
+    **Program Structure**
+
+
+    The general struchtre of java programming is as follows :
+
+
+    1\. Package d!eclaration
+
+
+    2\. Import statements
+
+
+    3\. Class definitions
+
+
+    9'
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_21_0.png)
+
+
+    10
+
+
+    Secrets of Java
+
+
+    **Simple example**
+
+
+    class One
+
+
+    public static void main(String args [])
+
+
+    System . out. println ("Hello World");
+
+
+    **Output**
+
+
+    Hello World
+
+
+    In the above program One is user defined class name, public and static is access
+    modifiers,
+
+
+    main method is the starting point of application type program, String is built
+    in class name,
+
+
+    args[ ] is an user defined array, System is built-in class, out is object, println
+    is method. All the
+
+
+    declaration is within the class hence it is called pure object oriented programming.
+
+
+    **DATA** **TYPES**
+
+
+    byte
+
+
+    8 bits
+
+
+    short
+
+
+    16 bits
+
+
+    int
+
+
+    32 bits
+
+
+    long
+
+
+    64 bits
+
+
+    float
+
+
+    32 bits
+
+
+    double
+
+
+    64 bits
+
+
+    boolean
+
+
+    1 bits
+
+
+    char
+
+
+    16 bits
+
+
+    **Operators**
+
+
+    Arithmetic Operators
+
+
+    *Ope**ra**to**r*
+
+
+    *Meaning*
+
+
+    *Ex**ample*
+
+
+    +
+
+
+    Addition
+
+
+    5 + 3
+
+
+    -
+
+
+    Subtraction
+
+
+    5 - 4
+
+
+    *
+
+
+    Multification
+
+
+    10 * 5
+
+
+    *I*
+
+
+    Division
+
+
+    6 *I* 3
+
+
+    %
+
+
+    Modulus
+
+
+    5%2'
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_22_0.png)
+
+
+    class Two
+
+
+    public static void main(String args[])
+
+
+    {
+
+
+    int X=S, y=S;
+
+
+    System . out.println("The value of X+y is
+
+
+    **O utput**
+
+
+    The value of x+y is
+
+
+    10;
+
+
+    Assignment Operators
+
+
+    *Exp**ression*
+
+
+    X+= y
+
+
+    X-= y
+
+
+    X*= y
+
+
+    X *I=* y
+
+
+    X= y
+
+
+    Increment and Hecrement Operator
+
+
+    Pre increment operator, for example : ++a
+
+
+    In this case first increment and than assignment
+
+
+    Post increment operator, for example : a++
+
+
+    In this case first assignment and then increment
+
+
+    Pre decrement operator, for example : --a
+
+
+    In this case first decrement and then assignment
+
+
+    Post decrement operator, for example : a-
+
+
+    In this case first assignment and then increment.
+
+
+    Comparison Oper ators
+
+
+    *Op**er**at**or*
+
+
+    --
+
+
+    !=
+
+
+    <
+
+
+    >
+
+
+    <=
+
+
+    >=
+
+
+    Fundamentals of Java
+
+
+    11
+
+
+    "
+
+
+    + (x+y)) ;
+
+
+    *Me**aning*
+
+
+    X= X+ y
+
+
+    X= X- y
+
+
+    X= X* y
+
+
+    X= X *I* y
+
+
+    X = y
+
+
+    *Meaning*
+
+
+    Equal
+
+
+    Not equal
+
+
+    Less than
+
+
+    Greater than
+
+
+    Less Lhan or equal lo
+
+
+    Greater than or equal to'
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_23_0.png)
+
+
+    **12**
+
+
+    Secrets of Java
+
+
+    **Short Circuit Operators** **&&** **and** II
+
+
+    Why we call this operator as short circuit operator means, if any one side of
+    expression is false
+
+
+    means we don''t t·est the other side expression.
+
+
+    **Bitwise** **Operators**
+
+
+    &
+
+
+    Bitwise AND
+
+
+    I
+
+
+    Bitwise OR
+
+
+    "''
+
+
+    Bitwise XOR
+
+
+    <<
+
+
+    Left shift
+
+
+    >>
+
+
+    Right shift
+
+
+    >>>
+
+
+    Zero fill right shift
+
+
+    -
+
+
+    Bitwise complement
+
+
+    Ternary
+
+
+    ? :
+
+
+    **SPEC****I****AL** **OPERATOR**
+
+
+    The another two important operator is :
+
+
+    -
+
+
+    **dot** **operator**
+
+
+    The variables or methods declared with the scope of class are known as instance
+
+
+    variable and instance method. To access this variables and methods we can use
+    the
+
+
+    below formula
+
+
+    *Syntax :* < objectname >. < variablename >
+
+
+    < objectname>. < methodname >
+
+
+    -
+
+
+    **new operator**
+
+
+    The new operator is used to create the object of a particular class. For example
+
+
+    *Syntax is :* Classname objectName = new Classname( );
+
+
+    **Keywords**
+
+
+    abstract
+
+
+    const
+
+
+    implements
+
+
+    import
+
+
+    package
+
+
+    boolean
+
+
+    false
+
+
+    final
+
+
+    instanceOf
+
+
+    privale
+
+
+    break
+
+
+    continue
+
+
+    finally
+
+
+    int
+
+
+    protected
+
+
+    byte
+
+
+    default
+
+
+    float
+
+
+    interface
+
+
+    public
+
+
+    case
+
+
+    do
+
+
+    for
+
+
+    long
+
+
+    return
+
+
+    catch
+
+
+    double
+
+
+    go to
+
+
+    native
+
+
+    transient
+
+
+    char
+
+
+    else
+
+
+    if
+
+
+    short
+
+
+    static
+
+
+    class
+
+
+    extends
+
+
+    new
+
+
+    null
+
+
+    super
+
+
+    synchronized
+
+
+    this
+
+
+    throw
+
+
+    throws
+
+
+    true
+
+
+    try
+
+
+    void
+
+
+    volatile'
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_24_0.png)
+
+
+    Fundamentals of Java
+
+
+    13
+
+
+    **Literals**
+
+
+    A literal is a value that may be assigned to a primitive or string variable or
+    passed as an
+
+
+    argument to a method call.
+
+
+    **Example** : Boolean isBig = true;
+
+
+    In this true is a literal.
+
+
+    **Programming** **Co****nstru****ct**
+
+
+    The construct such as if, for, while, do-while, switch, break, and continue is
+    derived fTOm C
+
+
+    programming.
+
+
+    The variables declared within the method are known as local variables. We can
+    directly
+
+
+    use the variables name to access its value.
+
+
+    **Stri****ng**
+
+
+    String is an inbuilt class of java.lang.String package.
+
+
+    java .lang.* is a default package.
+
+
+    **Example :**
+
+
+    Class strings
+
+
+    int i;
+
+
+    String names[)= {"C++", "c" , "java", "oops", "oracle"};
+
+
+    Void show()
+
+
+    System . out . println("The languages are
+
+
+    ");
+
+
+    for(i=O;i<names .length() ; i++)
+
+
+    {
+
+
+    System. out . println (names [i] );
+
+
+    public static void main(String args[J)
+
+
+    {
+
+
+    strings ss = new strings ( );
+
+
+    ss . show() ;
+
+
+    Java does not support operator overloading except the + operator.
+
+
+    If any one operand string means the result is concatenation
+
+
+    **E****xa****mpl****e** : "10"+10= 1010
+
+
+    10+10 = 20;
+
+
+    class str
+
+
+    public static void main(String args[))
+
+
+    {
+
+
+    String s = "Now is the time for all good men" + "to come to the aid of
+
+
+    their country" +"and pay their taxes";'
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_25_0.png)
+
+
+    **14**
+
+
+    Secrets of Java
+
+
+    String sl
+
+
+    String s2
+
+
+    String s3
+
+
+    "hello world";
+
+
+    "hello";
+
+
+    "HELLO";
+
+
+    System .out.println(s);
+
+
+    System . out. println ("index of t" +S. idexOf ( ''t'' ) ) ;
+
+
+    System . out.println("last index of t" +S . lastidexOf( ''t'');
+
+
+    System. out.println("index of (t, 10)=" +s . idexOf(''t'',lO);
+
+
+    System .out .println(sl.substring(3,8));
+
+
+    System .out .println(s2 . concat . ("world"));
+
+
+    System .out .println(s2 . replace(''l'', ''w''));
+
+
+    System .out .println (s3 . toLowercase());
+
+
+    System .out .println(sl . trim()) ;
+
+
+    **StringBuffer;**
+
+
+    String class static one we cannot change the value and insert and delete at middle
+    of string. But
+
+
+    StringBuffer is flexible one we eliminate or insert at middle of the String.
+
+
+    **Example:**
+
+
+    Public class strbuf
+
+
+    public static void main(String args[])
+
+
+    String too= "too";
+
+
+    Strings = "abc"+too+"def"+Integer.toString(SO);
+
+
+    System .out .println(s) ;
+
+
+    StringBuffer sb = new StringBuffer ("abc") ;
+
+
+    Sb . append (too) ;
+
+
+    Sb . append ( "def");
+
+
+    Sb.append(Integer.toString(SO));
+
+
+    System .out .println(sb);
+
+
+    int is the primitive data type, Integer is the wrapper class.
+
+
+    **TYPECAST****I****NG**
+
+
+    Typecasting also possible, *i.e.,* the conversion one data type to another data
+    type.
+
+
+    There are two types type casting namely : 1\. Widening 2\. Narrowing.
+
+
+    Widening means conversion of small data type to bigger data type.
+
+
+    For example : int to long.
+
+
+    Narrowing means conversion of bigger data type to small data type. In this case
+    loss of data
+
+
+    is possible.
+
+
+    For example : long to int.'
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_26_0.png)
+
+
+    Fundamentals of Java
+
+
+    **15**
+
+
+    *Syntax :* byte s= 10;
+
+
+    int a =(int)s;
+
+
+    In java object type casting also possible.
+
+
+    **Array****s**
+
+
+    Array is an object used to store the group similar data type elements.
+
+
+    Declarations
+
+
+    int arr[ ];
+
+
+    Creations
+
+
+    int arr[] = new int[10];
+
+
+    Initialization
+
+
+    int arr[ ]={1,2,3,4,5};
+
+
+    To find the length of array the formula is arrnaroe.length.
+
+
+    Java supports one dimensional and two dimensional arrays. It does not support
+
+
+    multidimensional arrays.
+
+
+    **Example :**
+
+
+    Class arra:t
+
+
+    int I ;
+
+
+    int arr[]
+
+
+    {1,2,3 , 4,5};
+
+
+    void disp()
+
+
+    S:ttern.out.println("Display the arra:t list•);
+
+
+    for(int i=O;i<arr.length;i++)
+
+
+    S:tstem .out .println(arr [i]);
+
+
+    public static void main(String args[])
+
+
+    arra:t ar = new array();
+
+
+    ar . disp ();
+
+
+    **COMMAND** **LINE** **ARGUMENTS**
+
+
+    In java the user can fed the input values to the program in two ways 1\. command
+    line arguments
+
+
+    and Files/streams.
+
+
+    **Example** :
+
+
+    Class carg
+
+
+    public static void main(String args[ ] )'
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_27_0.png)
+
+
+    **16**
+
+
+    Secrets of Java
+
+
+    System.out.println("The input value is
+
+
+    compile >javac carg.java
+
+
+    run>java carg "j ava"
+
+
+    **Output**
+
+
+    The inpul value is : java
+
+
+    **Thi****s**
+
+
+    " +args [0] ) ;
+
+
+    This is the keyword. This refers current object.Instead of object name of current
+    class we can
+
+
+    use this keyword.
+
+
+    **Example** :
+
+
+    Class pointl
+
+
+    int x,y;
+
+
+    void init(int x, inty)
+
+
+    thiS.X=X;
+
+
+    t his.y=y;
+
+
+    void disp ()
+
+
+    System . out.println(" X - vaue "+x);
+
+
+    public static void main (String args [])
+
+
+    pointl pp =new pointl();
+
+
+    pp . ini t ( 5 , 5) ;
+
+
+    **Constructor**
+
+
+    In java constructor name same as class name without return type.
+
+
+    Constructor cannot be ovedoaded.construtor initializes the object in memory to
+    free of that
+
+
+    in c+ + destructor is used in java finalize methods are used. And more important
+    point once
+
+
+    java program running at background a program or thread run to free of the resources
+    this is
+
+
+    caned automatic garbage collection.
+
+
+    **Access Modifier**
+
+
+    **public** : If we declared class, methods and variables with public modifier
+    any one can
+
+
+    access or open to all.
+
+
+    **protected :** If we declared the variables and methods with protected modifier,
+    it can access
+
+
+    in the same class and its subclass.'
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_28_0.png)
+
+
+    Fundamentals of Java
+
+
+    **17**
+
+
+    **private** : If we declared the variables and methods with private modifier,
+    it can access with
+
+
+    in the class only.
+
+
+    **static** : If we declared the variables and methods with static modifier, it
+    can be accessed
+
+
+    by means the class name. For example, Classname.methodname, classname.variablename.
+
+
+    **final** : If we declared the class, methods and variables with final modifier,
+    final class
+
+
+    cannot be make subclasses, final variables cannot change the value. Final methods
+    cannot be
+
+
+    overridden by subclass. Local variables cannot be declared as final variables.
+
+
+    **Examples** **of** **Application Type Program**
+
+
+    Class sample
+
+
+    public static void main(String args[ ] )
+
+
+    int X
+
+
+    10;
+
+
+    int y
+
+
+    20;
+
+
+    float z = 25 . 2f;
+
+
+    System. out.println("
+
+
+    System. out.println("
+
+
+    System . out.println("
+
+
+    system. out.println("
+
+
+    System . out.println("
+
+
+    **Comments**
+
+
+    *II* is the single comment
+
+
+    /*multiple line
+
+
+    comment*/
+
+
+    The value of X
+
+
+    The value of X
+
+
+    The value of X
+
+
+    The value of X
+
+
+    The value of z
+
+
+    + y is
+
+
+    " ^(+(X) ^+ ^(y))) ^;
+
+
+    -  ^y is
+
+
+    " ^+ ^((x)
+
+
+    y));
+
+
+    * ^y ^(is)
+
+
+    " ^+ ^((x) * ^(y))) ^;
+
+
+    *I* y is
+
+
+    " ^(+(X) *I* ^(y))) ^;
+
+
+    % y is
+
+
+    "
+
+
+    + (z % y)) ;
+
+
+    **ODD**'
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_29_0.png)
+
+
+    Chapter **5**
+
+
+    ***Inheritance***
+
+
+    **INTRODUCTION**
+
+
+    Inheritance is the process of deriving features of existing class. The existing
+    class is super class
+
+
+    (parent class) where the derived class is subclass (child class). From this the
+    bigger class is
+
+
+    subclass because it contains its own features as well as the features of parent
+    class.
+
+
+    In java the top level class (parent class) for all the class is Object class.
+
+
+    The major advantage of inheritance is reusability of existing code.
+
+
+    **SINGLE** **AND** **MULTIPLE INHERITANCE**
+
+
+    When a subclass is derived from a single super class, the inheritance is called
+    single inheritance
+
+
+    and when it is derived from more than one super class, it is called as multiple
+    inheritances.
+
+
+    **Ex****ample:**
+
+
+    Class woodfurn
+
+
+    String type= "teak";
+
+
+    String finish= "course";
+
+
+    Void showdet ( l
+
+
+    System. out.println ("instance of class " +this.getClass() .getName() l ;
+
+
+    System . out.println("type of wood-" +type);
+
+
+    System . out.println("finish is -
+
+
+    " +finish) ;
+
+
+    c lass woodtable extends woodfurn
+
+
+    int legs = 5 :
+
+
+    18'
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_30_0.png)
+
+
+    void show()
+
+
+    System. out . println ("wood type = "+type) ;
+
+
+    System. out .println("finish
+
+
+    "+finish) ;
+
+
+    System. out .println("legs = "+legs) ;
+
+
+    public static void main (String args[))
+
+
+    **Output**
+
+
+    woodtable t = new woodtable() ;
+
+
+    t . show() ;
+
+
+    woodlype - leak
+
+
+    finish
+
+
+    legs
+
+
+    - course
+
+
+    - 4
+
+
+    Inheritance
+
+
+    19
+
+
+    **DOD**'
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_31_0.png)
+
+
+    Chapter **6**
+
+
+    ***Interface***
+
+
+    **INTROD****UC****TION**
+
+
+    Java dose not support multiple inheritance directly, but this is achieved by interface.
+    C++
+
+
+    supports multiple inheritances directly. Interface is same class definition but
+    it contains abstract
+
+
+    method. Abstract methods means method does not have body and it ends with semicolon.
+
+
+    An interface consists of a set of method definitions. Any class implementing it
+    should
+
+
+    provide code for all the methods. Implements are the keyword for using interface.
+    The method
+
+
+    should be declared as public and the variables are static and final modifier and
+    it cannot be
+
+
+    changed by the class implementing them.
+
+
+    Class a extends b, a is subclass, b is super class
+
+
+    Class a extends b, c is not possible
+
+
+    But
+
+
+    Class a extends b implements c, d - this is possible. c and d are interface.
+
+
+    Class a implements b, b is interface.
+
+
+    *Syntax :*
+
+
+    <acess><interfacename>
+
+
+    <returntype><methodname>(<parameter list>);
+
+
+    <type><variablename>=<value>
+
+
+    Example :
+
+
+    Public interface address
+
+
+    public void add (String add);
+
+
+    public void name(String name);
+
+
+    20'
+  merge: -1
+  pgno: 31
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_32_0.png)
+
+
+    Any class implements this interface has provide code for the methods.
+
+
+    Class test implements address
+
+
+    **Output**
+
+
+    public void add{String a)
+
+
+    System.out.println{"Inside implemented method add{)");
+
+
+    System. out .println {"Address :"+a);
+
+
+    public static void main{String args[])
+
+
+    test tt =new test{) ;
+
+
+    t t . add ("north road Chennai" ) ;
+
+
+    Address : north road chennai.
+
+
+    Interface
+
+
+    21
+
+
+    **DOD**'
+  merge: -1
+  pgno: 32
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_33_0.png)
+
+
+    Chapter **7**
+
+
+    ***Packages***
+
+
+    **INTRODUCTION**
+
+
+    Java software contains large number of inbuilt packages.
+
+
+    **Ex****ample of lnbuilt** **Pa****ckage**
+
+
+    For exrunple ; java.lang.Stripg; java.awt. * ; generally we carl declare the package
+    as import
+
+
+    mainpackage.subpackage.classname;
+
+
+    In this java is main package lang is sub-package and String is inbuilt class.
+
+
+    Each package contains group of large number of related inbuilt class, each class
+    contains
+
+
+    inbuilt variables, and methods. We can reuse it for our application.
+
+
+    Package is used to distinguish the same class name.
+
+
+    **Implementation of** **Use****r Defined** **Pac****kage**
+
+
+    **Steps** :
+
+
+    1\. Create a directory called pack
+
+
+    2\. Open a new file and enter the following code
+
+
+    package pack;
+
+
+    public class classl
+
+
+    public static void greet()
+
+
+    System .out .println ("hello•);
+
+
+    3\. Save the file as classl.java inside the pack directory.
+
+
+    4\. Create a subdirectory called subpack inside the pack directory.
+
+
+    22'
+  merge: -1
+  pgno: 33
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_34_0.png)
+
+
+    5\. Open a file and enter the following code
+
+
+    package pack.subpack;
+
+
+    public class class2
+
+
+    public static void f arewell()
+
+
+    {
+
+
+    System .out .println ("bye" ) ;
+
+
+    6\. Save the file as class2.java inside the subpack directory.
+
+
+    7\. Open a file in the root directory and enter the following code :
+
+
+    import pack . *;
+
+
+    import pack .subpack.*;
+
+
+    class importer
+
+
+    public static void main(String args[])
+
+
+    **Output**
+
+
+    hello
+
+
+    bye
+
+
+    classl . greet () ;
+
+
+    class2 . farewell();
+
+
+    Packages
+
+
+    23
+
+
+    **DOD**'
+  merge: -1
+  pgno: 34
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_35_0.png)
+
+
+    Chapter **8**
+
+
+    ***Exceptions***
+
+
+    **CONCEPT OF EXCEPTIONS**
+
+
+    Errors and abnormal conditions arising while executing a program need lo be handled.
+
+
+    Exceptions are erroneous events like division by zero, opening a file that does
+    not exist
+
+
+    etc.
+
+
+    **Exception Key Words**
+
+
+    Java handles exceptions using five keywords try, **catch, finally, throws,** and
+    **throw.**
+
+
+    **Class Hierarchy**
+
+
+    Object
+
+
+    ~
+
+
+    Throwable
+
+
+    Error
+
+
+    Exception
+
+
+    I
+
+
+    **l**
+
+
+    IOExcep lion
+
+
+    RuntimeException
+
+
+    Whenever there is a possibility of an exception being generated in a program,
+    it is better
+
+
+    to handle explicitly.
+
+
+    This can be done using the try and catch block. It prevents the program from terminating
+
+
+    abruptly.
+
+
+    An error generated code will be placed inside the try block like
+
+
+    *Syntax:*
+
+
+    try
+
+
+    {
+
+
+    statements ;
+
+
+    catch(Exception e)
+
+
+    24'
+  merge: -1
+  pgno: 35
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_36_0.png)
+
+
+    Exceptions
+
+
+    25
+
+
+    statements;
+
+
+    try block should immediately follow one or more catch block or finally block.
+
+
+    If more than one catch block placed means, the first catch should enclosed the
+    super class
+
+
+    Exception then the subclass catch block are placed.
+
+
+    Examples for subclass of Exception class
+
+
+    1\. ClassN otFoundExcep tion
+
+
+    2\. IOException
+
+
+    3\. SocketException
+
+
+    4\. ArithmaticException
+
+
+    5\. NumberFormatException
+
+
+    6\. ArraylndexOutofBounceException, etc
+
+
+    If more than one catch block is there means the control search for corresponding
+    matching
+
+
+    catch block and executes that catch block, are if there is no corresponding catch
+    block means
+
+
+    than it will executes the super class catch block.
+
+
+    Class NegTest
+
+
+    {
+
+
+    **Output**
+
+
+    public static void main(String args[])
+
+
+    {
+
+
+    try
+
+
+    {
+
+
+    int arr[); new int[-2);
+
+
+    System.out .println("First element :"+arr[O));
+
+
+    catch(Exception e)
+
+
+    {
+
+
+    System. out . println ("super exception") ;
+
+
+    catch(NegativeArraySizeException n)
+
+
+    {
+
+
+    System. out . println ("Sub-class of Exception) ;
+
+
+    System . out . println ("After the catch block") ;
+
+
+    Sub-class of Exception
+
+
+    After the catch block
+
+
+    Finally Block
+
+
+    If we want to execute certain part of code at any cast of moment weather the errors
+    is handles
+
+
+    or does not handled, that code is placed in the finally block.
+
+
+    For example if files are opened that should closed, that closing code should be
+    placed in
+
+
+    the finally block.'
+  merge: -1
+  pgno: 36
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_37_0.png)
+
+
+    26
+
+
+    Secrets of Java
+
+
+    Try block foUows either catch block or finally block, if try block follows both
+    catch block
+
+
+    and finally block means the finally block should be placed as the last block.
+
+
+    **throws**
+
+
+    This keyword are used defined along with the method, if we want to throws the
+    exception and
+
+
+    not to catch it or handle it means we can use this throws keyword.
+
+
+    Class throwsexception
+
+
+    {
+
+
+    **throw**
+
+
+    public static void main(String args[])throws ArithmeticException
+
+
+    {
+
+
+    System .out .println( "inside main");
+
+
+    int i = 0;
+
+
+    int j
+
+
+    = 40/i
+
+
+    System . out.println("Iam not coming");
+
+
+    If we want throw the exception explicitly or if we want create a user defined
+    exception we use
+
+
+    the throw keyword.
+
+
+    *Syntax:*
+
+
+    throw new Exceptionname( );
+
+
+    **Example** :
+
+
+    Class throwdemo
+
+
+    static void demoproc()
+
+
+    try
+
+
+    {
+
+
+    throw new NullPointerException ("demo" l;
+
+
+    catch(NullPointerException e)
+
+
+    {
+
+
+    System.out .println("inside demoproc");
+
+
+    throw e;
+
+
+    public static void main(String args[])
+
+
+    {
+
+
+    try
+
+
+    {
+
+
+    demoproc();
+
+
+    catch(NullPointerException e)
+
+
+    {
+
+
+    System.out . println ( "recaught
+
+
+    "+e)
+
+
+    **ODD**'
+  merge: -1
+  pgno: 37
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_38_0.png)
+
+
+    Chapter **9**
+
+
+    ***10*** ***Streams***
+
+
+    **DEFINITION**
+
+
+    A stream is a sequence of bytes traveling from a source to a destination over
+    a communication
+
+
+    path.
+
+
+    If we want to work with input and output files we have import the package ja.va.io.
+    *.
+
+
+    **Two** **Types** **of** **Streams**
+
+
+    • input streams - for reading purpose
+
+
+    • output streams - for writing purpose
+
+
+    **TOP** **LEVEL** **CLASSES** **OF** **10** **PACKAGE**
+
+
+    The major top level classes of io package is
+
+
+    - InputStream class
+
+
+    - OutputStream class
+
+
+    - Reader class
+
+
+    - Writer class
+
+
+    - File
+
+
+    - StreamTokenizer
+
+
+    - RandomAccessFile
+
+
+    From this all classes except RandomAcessFile reads and writes the data in sequential
+
+
+    manor. The RandomAccessFile reads and write the in non-sequentia[ manner.
+
+
+    The difference between the I/0 stream and Reader/Writer class is that the 1/0
+    stream read
+
+
+    and write in bytes manor, where as the Reader/Writer class are read and write
+    in character
+
+
+    manor.
+
+
+    27'
+  merge: -1
+  pgno: 38
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_39_0.png)
+
+
+    28
+
+
+    Secrets of Java
+
+
+    **Classes** **of** **10** **Stream**
+
+
+    The pre-defined classes for InputStream and OutputStream are :
+
+
+    **InputStream**
+
+
+    **OutputStream**
+
+
+    - SequenceinputStream
+
+
+    - ByteArrayOutputStream
+
+
+    - ByteArraylnputStream
+
+
+    - PipedOutputStream
+
+
+    - FilelnputStream
+
+
+    - FileOutputStream
+
+
+    - ObjectlnputStream
+
+
+    - FilterOutPutStream
+
+
+    - PipedlnputStream
+
+
+    - BufferedOutputSlream
+
+
+    - FilterlnputStream
+
+
+    - DataOutputStream
+
+
+    - PushBackinputStream
+
+
+    - ObjectOutputSt:ream
+
+
+    - BufferedlnputStream
+
+
+    - DatainputStream
+
+
+    **Sub-Classes** **of** **Re****ader/Writer classes**
+
+
+    The pre-defined classes for Reader and Writer are :
+
+
+    **Reader**
+
+
+    **Writer**
+
+
+    - BufferedReader
+
+
+    - BufferedWriter
+
+
+    - CharArrayReader
+
+
+    - CharArrayWriter
+
+
+    - StringReader
+
+
+    - Filterwriter
+
+
+    - PipedReader
+
+
+    - StringWriter
+
+
+    - InputStreamReader
+
+
+    - PipedWriter
+
+
+    - FilterReader
+
+
+    - PrintWriter
+
+
+    - OutputStream Writer
+
+
+    Datai/OStream - used for reading and writing of primitive data types
+
+
+    Pipedi/Ostream - used for the transfer of data between threads
+
+
+    Objecti/OStream- used for read and writer the object to the stream
+
+
+    **Example** **of** **Methods**
+
+
+    The important methods of InputStream/Reader classes are :
+
+
+    - read( )
+
+
+    read bytes from input source
+
+
+    - skip( )
+
+
+    skip the bytes of input
+
+
+    - available( )
+
+
+    - close ()
+
+
+    - mark()
+
+
+    bytes currently available for reading
+
+
+    close the input source
+
+
+    marks current point in stream
+
+
+    - reset
+
+
+    returns input pointer to previously set mark
+
+
+    The important methods of OuputStream/Writer classes are :
+
+
+    - write( )
+
+
+    writes the data to output
+
+
+    - flush()
+
+
+    finalizes output state to clear the buffer
+
+
+    - close( )
+
+
+    closes output stream'
+  merge: -1
+  pgno: 39
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_40_0.png)
+
+
+    **Examples** :
+
+
+    import java . io .* ;
+
+
+    class FileMethodl
+
+
+    public static void main(String args[])
+
+
+    File fl = new File( "kabilan","hello . txt") ;
+
+
+    //File f2 = new File(fl.getParent());
+
+
+    System.out.println("parent: " + fl.getParent());
+
+
+    System. out. println ("File name : " + fl . getName ());
+
+
+    System . out . println("Path: " + fl.getPath());
+
+
+    IO Streams
+
+
+    29
+
+
+    System . out. println ("Absolute : " + fl . getAbsolutePath () ) ;
+
+
+    System . out . println(fl .exists()?"file exists• : •file does not exists•);
+
+
+    System.out.println(fl . isDirectory()?"fl is a directory" :"fl is not directory");
+
+
+    System .out.println(fl.isFile()?"file exists• : "file does not exists•);
+
+
+    //System.out .println("parent :f2 " + f2 .getParent());
+
+
+    //pgm to test the rename and delete method
+
+
+    import java . io. *;
+
+
+    class FileMethod2
+
+
+    public static void main(String args[J)
+
+
+    for(int i =O;i<args . length;i++)
+
+
+    File fl =new File("i :/kabilan/newr",args(i]);
+
+
+    File f2 = new File ( "i : /kabilan/newr/kill. txt•);
+
+
+    if (fl . exists () )
+
+
+    System. out .println(fl + "does exists . ");
+
+
+    System.out .println("size is" + fl.length() + "bytes");
+
+
+    fl. renameTo ( f2) ;
+
+
+    else
+
+
+    System.out .println(fl +•does not exists•);'
+  merge: -1
+  pgno: 40
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_41_0.png)
+
+
+    **30**
+
+
+    Secrets of Java
+
+
+    import java . io . *;
+
+
+    public class FileMethod3 implements FilenameFilter
+
+
+    {
+
+
+    String z;
+
+
+    public FileMethod3(String w)
+
+
+    thiS . Z="." + W;
+
+
+    public boolean accept(File dir,String name)
+
+
+    {
+
+
+    return name .endsWith (z ) ;
+
+
+    public static void main (String args[J) throws IOException
+
+
+    for(int p = O;p<args.length;p++)
+
+
+    **File** fl = new File("i : /kabi lan/newr/inou" );
+
+
+    FilenameFilter only- new FileMethodJ(args [p]};
+
+
+    String s[J = fl.list(only);
+
+
+    for(int i = O;i<s . length;i++)
+
+
+    system.out .println(s[i]);
+
+
+    import java . io . *;
+
+
+    public class Linr
+
+
+    public static void main(String args[])throws Exception
+
+
+    FileReader fr =new FileReader("Linr . java• );
+
+
+    LineNumberReader lnr =new LineNumberReader(fr);
+
+
+    String str;
+
+
+    while((str=lnr . readLine()) !=null)
+
+
+    System.out.println(lnr.getLineNumber()+"."+str);'
+  merge: -1
+  pgno: 41
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_42_0.png)
+
+
+    IO Streams
+
+
+    31
+
+
+    import java . io . *;
+
+
+    public class Ran
+
+
+    {
+
+
+    public static void main(String args[))throws Exception
+
+
+    RandomAccessFile ra = new RandomAccessFile ("kill . txt" *1* "rw");
+
+
+    //RandomAcessFile ra = new RandomAccessFile ("kill . txt" *I* r);
+
+
+    ra .writeint(l234) ;
+
+
+    ra .writeDouble(l2 . 5) ;
+
+
+    ra .writeBoolean(true) ;
+
+
+    ra . seek ( 0) ;
+
+
+    System .out .println(ra . readint()) ;
+
+
+    long pp = ra .getFilePointer();
+
+
+    System .out .println(pp);
+
+
+    ra. seek (pp);
+
+
+    System .out .println(ra.readDouble());
+
+
+    ra . seek (2);
+
+
+    System .out .println(ra.readBool ean()) ;
+
+
+    System .out .println(ra . length());
+
+
+    import java . io .* ;
+
+
+    public class Word
+
+
+    public static void main(String args[])throws IOException
+
+
+    FileReader fr = new FileReader ( "i : /kabilan/newr/inou/aa . txt") ;
+
+
+    StreamTokenizer input= new StreamTokenizer(fr);
+
+
+    int tok;
+
+
+    int count = 0 ;
+
+
+    while((tok = input .nextToken()) != StreamTokenizer . TT_ EOF)
+
+
+    if(tok == StreamTokenizer.TT_WORD)
+
+
+    //System.out.println("Word Found: "+ input.nval);
+
+
+    System. out . println ( "Word Found : "+ input . sval};
+
+
+    count++;
+
+
+    System . out . printl n( " Found "+count+"words in aa . txt");'
+  merge: -1
+  pgno: 42
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_43_0.png)
+
+
+    32
+
+
+    Secrets of Java
+
+
+    import java . io .*;
+
+
+    class DataStream
+
+
+    public static void main(String args[])throws IOException
+
+
+    BufferedReader d = new BufferedReader(new
+
+
+    InputStreamReader (new FileinputStream ( "i: /kabilan/newr/inou/aa. t x t " )))
+    ;
+
+
+    DataOutputStream o
+
+
+    = new DataOutputStream(new
+
+
+    FileOutputStream( "i : /kabilan/newr/ inou/templ . txt"));
+
+
+    String line;
+
+
+    while ((line
+
+
+    d . readLine ()) ! =null)
+
+
+    String a = (line . toUpperCase()) ;
+
+
+    System. out .println(a);
+
+
+    o.writeBytes(a+ "\r\n" ) ;
+
+
+    d . close() ;
+
+
+    o .close () ;
+
+
+    **ODD**'
+  merge: -1
+  pgno: 43
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_44_0.png)
+
+
+    Chapter **1** **0** ***AWT***
+
+
+    **INTRODUCTION**
+
+
+    The Abstract Windowing Toolkit (AWT) is an API that is responsible for building
+    the Graphical
+
+
+    User Interface (GUI). It is a part of the Java Foundation Classes *UFC).* AWT
+    includes a rich set
+
+
+    of user interface components, a powerful event handling model, graphics and image
+    tools,
+
+
+    layout managers and support for data transfer using cut and paste through clipboards.
+    AWT also
+
+
+    supports JavaBeans architecture. Every AWT component is a simple bean. The java.awt.
+    * package
+
+
+    contains all classes for creating user interface and for painting graphics and
+    images.
+
+
+    AWT package contains *n* number of class. Examples Graphics, Color, Font. Each
+    class
+
+
+    contains *n* number of constructor, methods and variables.
+
+
+    If we want know the methods and variables of particular class we can use the following
+
+
+    syntax
+
+
+    **> javap jav****a.awt****.G****raphlcs > a.txt**
+
+
+    The details of this particular class are stored in a.txt file, open that text
+    file and see the
+
+
+    details.
+
+
+    If we want to create the help or documentation of the particular user defined
+    java program
+
+
+    means use the following syntax
+
+
+    **>javado****c F****ilename****.****ja****va**
+
+
+    It will give output in html file.
+
+
+    One more important point is the top level or super class of all java class is
+    **Obj****ect.**
+
+
+    **LAYOUT** **MANAGERS**
+
+
+    The java.awt.LayoutManager helps to position the components in a container.
+
+
+    The basic Layout Managers are
+
+
+    1\. FlowLayout
+
+
+    Left to Right arrangement of components
+
+
+    2\. BorderLayout
+
+
+    Arrange components in North, South, East, West and center
+
+
+    3 3'
+  merge: -1
+  pgno: 44
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_45_0.png)
+
+
+    34
+
+
+    Secrets of Java
+
+
+    3\. GridLayout
+
+
+    Arrange components in row and column wise
+
+
+    4\. GridBagLayout -
+
+
+    This is the Layout arrange components as per the User requirements
+
+
+    5\. CardLayout
+
+
+    This Layout is used to arrange the components one on top of another
+
+
+    **The Examples for components are** :
+
+
+    1\. Button
+
+
+    2\. TextField
+
+
+    3\. TextArea
+
+
+    4\. Checkbox
+
+
+    5\. Label
+
+
+    6\. Choice
+
+
+    7\. List
+
+
+    8\. Scrollbar
+
+
+    **The Examples for Container is**
+
+
+    1\. Panel
+
+
+    2\. Frame
+
+
+    3\. Applet
+
+
+    **EVENT** **HANDLERS**
+
+
+    ActionListener, MouseListener, FocusListeners, WindowListeners, etc, all this
+    Listeners with
+
+
+    abstract methods, the class implements this Listeners should provide the body
+    of that method.
+
+
+    **Examples** :
+
+
+    import java .awt.* ;
+
+
+    import java.applet . *;
+
+
+    import java.awt . event . *;
+
+
+    class frame extends Frame
+
+
+    boolean a;
+
+
+    frame ()
+
+
+    a =false;
+
+
+    addWindowListener(new W());
+
+
+    class w extends WindowClosing(WindowEvent e)
+
+
+    dispose();
+
+
+    System .exit(O);
+
+
+    public class frame extends Applet'
+  merge: -1
+  pgno: 45
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_46_0.png)
+
+
+    int num = o;
+
+
+    public void init (}
+
+
+    Button b= new Button ( "create window"};
+
+
+    b.addActionListener(new B(}};
+
+
+    add(b};
+
+
+    class B implements ActionListener
+
+
+    public void actionPerformed(ActionEvent e)
+
+
+    frame mf =new frame(};
+
+
+    mf.setVisible(true} ;
+
+
+    mf . setSize(300,300};
+
+
+    mf . set Title ( "Amjath:" +num};
+
+
+    ++num;
+
+
+    import java .awt .*;
+
+
+    import java . applet .*;
+
+
+    import java.awt.event.*;
+
+
+    public class FlowL extends Frame
+
+
+    Panel pl,p2,p3,p4;
+
+
+    String str [)={"one", "two", "three" , "four", "five", "seven"};
+
+
+    FileDialog ff;
+
+
+    FlowL (}
+
+
+    addWindowListener(new winclo()};
+
+
+    setTi tle( "Layout" );
+
+
+    setLayout(new BorderLayout());
+
+
+    pl
+
+
+    new Panel();
+
+
+    p2
+
+
+    new Panel(};
+
+
+    p3
+
+
+    new Panel() ;
+
+
+    p4
+
+
+    new Panel();
+
+
+    ff
+
+
+    new FileDialog (this, "save", FileDialog. SAVE);
+
+
+    TextField tfl
+
+
+    new TextField(30) ;
+
+
+    TextField tf2
+
+
+    new TextField(30);
+
+
+    TextField tf3
+
+
+    new TextField(30);
+
+
+    TextArea ta = new TextArea(};
+
+
+    pl . setBackground(Color.gray} ;
+
+
+    AWT
+
+
+    35'
+  merge: -1
+  pgno: 46
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_47_0.png)
+
+
+    36
+
+
+    Secrets of Java
+
+
+    p2 . setBackground(Color .black) ;
+
+
+    p l. setLayout(new GridLayout(2,3, 10,10));
+
+
+    p2.setLayout(new BorderLayout());
+
+
+    p3 . setBackground(Color .yellow);
+
+
+    p3.setLayout(new FlowLayout(FlowLayout .LEFT));
+
+
+    p3 . setBackground(Color .blue) ;
+
+
+    p4.setLayout(new GridBagLayout()) ;
+
+
+    for(int i=O;i<str . length; i++)
+
+
+    pl .add(new Button(str[i)));
+
+
+    p2 . add ( "North" , new But ton ( "N") ) ;
+
+
+    p2 . add("South" ,new Button("s"));
+
+
+    p2 . add("East" ,new Button("e"));
+
+
+    p2.add("West" ,new Button("w"));
+
+
+    p2 . add ("Center", new Button ( "c")) ;
+
+
+    p3\. add (new Button ( "blgghgggg")) ;
+
+
+    p3 . add (new Button ( "b2")) ;
+
+
+    p3 .add (new Button ( "b3")) ;
+
+
+    p3 . add(new Button("b4")) ;
+
+
+    p4 .add(tfl );
+
+
+    p4 .add(tf2);
+
+
+    p4 .add(tf3) ;
+
+
+    add(ta,BorderLayout . CENTER);
+
+
+    add(pl,BorderLayout . EAST) ;
+
+
+    add(p2,BorderLayout.WEST) ;
+
+
+    add(p3,BorderLayout . SOUTH);
+
+
+    add(p4,BorderLayout . NORTH);
+
+
+    public static void main(String args[))
+
+
+    FlowL ff = new FlowL();
+
+
+    ff . setSize(300,300);
+
+
+    ff . setVisible(true);
+
+
+    class winclo extends WindowAdapter
+
+
+    public void windowClosing(WindowEvent e)
+
+
+    *I* /dispose() ;'
+  merge: -1
+  pgno: 47
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_48_0.png)
+
+
+    ff . show();
+
+
+    import java .awt.* ;
+
+
+    import java . applet . *;
+
+
+    /*capplet code = "color.java" width=300 height=200>
+
+
+    c/applet>*/
+
+
+    public class color exte·nds Applet
+
+
+    public void init ()
+
+
+    setBackground(Color .blue) ;
+
+
+    setForeground(Color .yellow);
+
+
+    publi c void paint(Graphics g)
+
+
+    Font f =new Font("Times Roman",Font.BOLD,20);
+
+
+    Font fl= new Font ("Courier", Font . PLAIN, 20);
+
+
+    Font f2 =new Font("helvetica",Font.ITALIC,20);
+
+
+    Color rr =new Color(255,175,175) ;
+
+
+    g.setColor(Color.blue);
+
+
+    g.setFont(f) ;
+
+
+    g. drawString ("be happy, be hopefull", 30, 3 0) ;
+
+
+    g.setColor(Color.yellow);
+
+
+    g.setFont(fl) ;
+
+
+    g.drawString("be happy, be hopefull",30, 60);
+
+
+    g . setColor(rr);
+
+
+    g.setFont(f2) ;
+
+
+    g .drawString("be happy, be hopefull",30, 110);
+
+
+    import java.awt.event.*;
+
+
+    import java .awt .*;
+
+
+    AWT
+
+
+    37
+
+
+    public class action extends Frame implements
+
+
+    ActionListener,FocusListener//,MouseListener,MouseMotionListener//,KeyListener,
+
+
+    Button btn;'
+  merge: -1
+  pgno: 48
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_49_0.png)
+
+
+    38
+
+
+    Secrets of Java
+
+
+    TextField tfl,tf2 , tf3 ;
+
+
+    TextArea ta;
+
+
+    Panel pn;
+
+
+    public action ()
+
+
+    btn
+
+
+    new Button("click me");
+
+
+    tfl
+
+
+    new TextField(30);
+
+
+    tf2
+
+
+    new TextField(30);
+
+
+    tf3 =new TextField(30);
+
+
+    ta
+
+
+    new TextArea(30,30);
+
+
+    pn
+
+
+    new Panel() ;
+
+
+    pn. setLayout(new FlowLayout());
+
+
+    pn . add (btn) ;
+
+
+    pn .add(tfl );
+
+
+    pn .add(tf2);
+
+
+    pn. add (ta);
+
+
+    pn .add(tf3) ;
+
+
+    add(pn);
+
+
+    btn . addActionListener(this);
+
+
+    addWindowLi stener(new wi n());
+
+
+    tf2 . addKeyListener(new kk());
+
+
+    ta.addMouseListener(new mn());
+
+
+    ta . addMouseMotionListener(new mm());
+
+
+    tf3 . addFocusListener(this);
+
+
+    *II* c l ass bb extends Button implements ActionListener
+
+
+    *II*
+
+
+    public void actionPerformed(ActionEvent e)
+
+
+    if(e . getSource()==btn)
+
+
+    tfl.setText("ok");
+
+
+    *II* }
+
+
+    class win extends WindowAdapterll implements WindowListener
+
+
+    public void windowClosing(WindowEvent e)
+
+
+    System. exit(O);
+
+
+    class kk extends KeyAdapt er
+
+
+    publ ic voi d keyPressed(KeyEvent e)'
+  merge: -1
+  pgno: 49
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_50_0.png)
+
+
+    *II* System.out.println("aciotnm");
+
+
+    tf2.setText("String()• );
+
+
+    class mn extends MouseAdapter
+
+
+    public void mouseReleased(MouseEvent e)
+
+
+    ta . setText("out•);
+
+
+    class mm extends MouseMotionAdapter
+
+
+    public void mouseMoved(MouseEvent e)
+
+
+    ta.setText("in•);
+
+
+    public void focusLost(FocusEvent e)
+
+
+    tf3.setText("lost•);
+
+
+    public void focusGained(FocusEvent e)
+
+
+    tf3.setText("Gain•);
+
+
+    public static void main(String args [])
+
+
+    action aa =new action();
+
+
+    aa.setsize(300,200);
+
+
+    aa.setVisible(true);
+
+
+    import java.awt. * ;
+
+
+    import java.awt.event . *;
+
+
+    public c lass bar extends Frame implements ActionListener
+
+
+    {
+
+
+    Label 11, 12, 13,14;
+
+
+    TextField tl,t2,t3,t4;
+
+
+    Button bl, b2, b3;
+
+
+    Choice cl, c2 ;
+
+
+    Panel pl,p2,p3;
+
+
+    AWT
+
+
+    39'
+  merge: -1
+  pgno: 50
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_51_0.png)
+
+
+    40
+
+
+    Secrets of Java
+
+
+    bar()
+
+
+    {
+
+
+    setTitle("Medical");
+
+
+    pl = new Panel();
+
+
+    pl.setLayout(new GridLayout(4,2));
+
+
+    11
+
+
+    new Label ( •asd") ;
+
+
+    12
+
+
+    new Label ( •asd") ;
+
+
+    l3
+
+
+    new Label ("ad") ;
+
+
+    14
+
+
+    new Label ( •asd") ;
+
+
+    tl
+
+
+    new TextField(lO);
+
+
+    t2
+
+
+    new TextFi eld(lO);
+
+
+    t3
+
+
+    new TextField(lO);
+
+
+    t4
+
+
+    new TextField(lO);
+
+
+    p2 = new Panel();
+
+
+    p2\. setLayout (new FlowLayout () ) ;
+
+
+    bl
+
+
+    new Button ("add") ;
+
+
+    b2
+
+
+    new Button ( "Dee•) ;
+
+
+    b3
+
+
+    new Button ( "ok");
+
+
+    p3 = new Panel() ;
+
+
+    p3 . setLayout(new FlowLayout());
+
+
+    cl = new Choice() ;
+
+
+    cl .add( "sds");
+
+
+    cl .add("df") ;
+
+
+    pl .add(ll) ;
+
+
+    pl .add(tl);
+
+
+    pl .add(l2) ;
+
+
+    pl. add(t2);
+
+
+    pl .add(l3);
+
+
+    pl. add(t3);
+
+
+    pl. add(l4);
+
+
+    pl.add(t4);
+
+
+    p2 .add (bl );
+
+
+    p2.add(b2);
+
+
+    p2 .add(b3);
+
+
+    p3 .add(cl);
+
+
+    thi s . setLayout(new GridLayout(3,1));
+
+
+    this.add(pl) ;'
+  merge: -1
+  pgno: 51
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_52_0.png)
+
+
+    this . add(p2) ;
+
+
+    this . add(p3);
+
+
+    bl .addActionListener(this);
+
+
+    public static void main(String args[])
+
+
+    bar bb = new bar() ;
+
+
+    bb . setSize(300,300);
+
+
+    bb . setVisible(true);
+
+
+    publ ic void actionPerformed(ActionEvent e)
+
+
+    if(e .getSource()==bl)
+
+
+    System .exi t (0);
+
+
+    import java .awt .*;
+
+
+    import java.awt . event . * ;
+
+
+    c l ass MyAppl extends Frame implements ActionListener
+
+
+    MenuBar Mb;
+
+
+    Menu M;
+
+
+    Menuitem mil , mi2;
+
+
+    public MyAppl ()
+
+
+    Mb = new MenuBar() ;
+
+
+    M = new Menu ("Menu" ) ;
+
+
+    mil= new Menuitem("Item 1");
+
+
+    mi2 =new Menuitem("Item 2");
+
+
+    M. add(mil) ;
+
+
+    M. add(mi2);
+
+
+    Mb .add(M) ;
+
+
+    setMenuBar (Mb) ;
+
+
+    setTitle ("Sample Stand alone Application");
+
+
+    mil . addActionListener(this);
+
+
+    mi2 . addActionListener(this);
+
+
+    publi c stati c void main(String a[])
+
+
+    MyAppl m =new MyAppl();
+
+
+    m. setVisi ble(true);
+
+
+    m.set Size(300,400);
+
+
+    AWT
+
+
+    41'
+  merge: -1
+  pgno: 52
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_53_0.png)
+
+
+    4 2
+
+
+    Secrets of Java
+
+
+    public void actionPerformed(ActionEvent ae)
+
+
+    Menuitem m = (Menuitem) ae .getSource () ;
+
+
+    if (m == mil)
+
+
+    setTitle("Menu I tem 1 Selected");
+
+
+    if (m == mi2)
+
+
+    setTitle("Menu I tem 2 Selected");
+
+
+    import java .awt.*;
+
+
+    import java . awt . event .* ;
+
+
+    class dialog extends Dialog
+
+
+    public dialog(Frame F, String s)
+
+
+    super (F, s);
+
+
+    Label l -new Label( "User Defined Dialog Box");
+
+
+    setSize(200,200) ;
+
+
+    add(l) ;
+
+
+    class Dial extends Frame implements ActionListener
+
+
+    MenuBar Mb;
+
+
+    Menu M;
+
+
+    Menuitem Mil, Mi2;
+
+
+    public Dial()
+
+
+    Mb = new MenuBar() ;
+
+
+    M = new Menu ( "Menu" ) ;
+
+
+    Mil= new Menuitem( "Dialog");
+
+
+    Mi2 = new Menu Item ("File Dialog") ;
+
+
+    M. add(Mi l ) ;
+
+
+    M.add(Mi2);
+
+
+    Mb .add(M);
+
+
+    Mil . addActionListener(this);
+
+
+    Mi2. addActionListener(this);
+
+
+    setMenuBar (Mb) ;
+
+
+    public static void main(String a[])
+
+
+    Dial D =new Dial() ;'
+  merge: -1
+  pgno: 53
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_54_0.png)
+
+
+    D. setVisible(true);
+
+
+    D. setSize(400,500);
+
+
+    public void actionPerformed(ActionEvent ae)
+
+
+    String df =new String();
+
+
+    Menu ltem Mf = (Menuitem)ae .getSource() ;
+
+
+    if (Mf == Mil)
+
+
+    dialog d =new dialog(this , "Dialog Demo") ;
+
+
+    d . setVisi ble(true) ;
+
+
+    if (Mf == Mi2)
+
+
+    Fi leDial og Fd = new FileDi alog (th is , "File" ) ;
+
+
+    Fd . show() ;
+
+
+    if(Fd .getFile() !=null)
+
+
+    d f = Fd.get File() ;
+
+
+    df += Fd .getDirectory() ;
+
+
+    setTitle(df ) ;
+
+
+    AWT
+
+
+    43
+
+
+    **000**'
+  merge: -1
+  pgno: 54
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_55_0.png)
+
+
+    Chapter **11**
+
+
+    ***Applet***
+
+
+    INTRODUCTION
+
+
+    An applet is a dynamic and interactive program that can run inside a Web page
+    displayed by
+
+
+    a Java-capable browser such as Hot Java, Lynx, Netscape or Internet Explorer.
+    Hot Java Browser
+
+
+    is a World Wide Web browser used to view web pages, follow links and submit forms.
+    It can
+
+
+    also downloaded and play applets on our system.
+
+
+    Simply we call applet program is an internet program view on web pages. This is
+    another
+
+
+    type of java program. If there is no browser in our system means we can use tools
+    appletviewer.exe
+
+
+    to execute applet program. This applet window is just embedded in the browser.
+    We can see
+
+
+    the status bar of browser applet started is displayed from that we can identify
+    that web page
+
+
+    contains applet program. If we want execute the applet in browser means we need
+    to develop
+
+
+    html file and call the applet class file in html file and locate the html file
+    in browser. For
+
+
+    developing applet program we have import java.applet. * package. The minimum requirements
+
+
+    of html tags for applet is given below.
+
+
+    HTML Tag Requirements for Applet
+
+
+    <applet code=Appletclassfilename.class width = 300 height=300></applet>
+
+
+    Restrictions of Applet
+
+
+    1\. Applets cannot read or write to the file system.
+
+
+    2\. Applets cannot communicate with any other server.
+
+
+    3\. Applet cannot run any programs on the System.
+
+
+    LIFE CYCLE OF APPLET
+
+
+    1\. init()
+
+
+    2\. start( )
+
+
+    3\. stop()
+
+
+    4\. destroy( )
+
+
+    This method gets called as soon an applet is started. Initialization of all
+
+
+    variables are done here.
+
+
+    This method is executed after the init () method. The stage is currently
+
+
+    we viewing the web page.
+
+
+    If we are moving other than applet page that time stop () method is
+
+
+    called, and if we come to the applet again start () method is called.
+
+
+    When we are closing the web pages that time destroy() method is called.
+
+
+    44'
+  merge: -1
+  pgno: 55
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_56_0.png)
+
+
+    **Exampl****es** :
+
+
+    import java.applet. * ;
+
+
+    import java.awt.*;
+
+
+    public class FirstApplet extends Applet
+
+
+    {
+
+
+    public void paint (Graphics g)
+
+
+    {
+
+
+    g,drawstring("Hello World",50,50);
+
+
+    Apple!
+
+
+    **45**
+
+
+    If the package contains * means it will search and import the required class.
+    Anyway it
+
+
+    is safer means it will take more time when compared to this java.applet.Applet
+    syntax.
+
+
+    Graphics are class of AWT package
+
+
+    drawString ("String", x-coordinates, y-coordinates) is method of graphics class.
+
+
+    The html file contains the following tag for executing the above applet program.
+
+
+    <applet code=FirstApplet . class width =300 height=400></applet>
+
+
+    import java .awt. * ;
+
+
+    import java . applet . *;
+
+
+    public class ParamTest extends Applet
+
+
+    Font ff = new Font("TimesRoman", Font . BOLD, 35);
+
+
+    String name;
+
+
+    Public void init()
+
+
+    name = get Parameter ("name") ;
+
+
+    if (name == null)
+
+
+    name
+
+
+    name = "Have a good day" + name;
+
+
+    public void paint (Graphics g)
+
+
+    g.setFont(ff);
+
+
+    g.set Color(Color.red);
+
+
+    g.drawString(name, 50, 50);
+
+
+    The html files is
+
+
+    <applet code = ParamTest . class width=300 height=400>
+
+
+    <param Name = name value = "APPLET">'
+  merge: -1
+  pgno: 56
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_57_0.png)
+
+
+    46
+
+
+    Secrets of Java
+
+
+    </aaplet>
+
+
+    import java.awt. *;
+
+
+    import java . applet .*;
+
+
+    import java . awt . event .*;
+
+
+    import javax . swing .*;
+
+
+    public class awt extends Frame implements ActionListener
+
+
+    {
+
+
+    Button btn1 1 btn2;
+
+
+    Label 11;
+
+
+    Checkbox cbl 1 cb2;
+
+
+    Choice cc;
+
+
+    CheckboxGroup cbg;
+
+
+    JFileChooser fd;
+
+
+    awt (}
+
+
+    setLayout(n ew GridLayout(3 1 3}} ;
+
+
+    btnl
+
+
+    = new But ton ( "ok" } ;
+
+
+    btn2
+
+
+    = new Button( "cancel" );
+
+
+    1 1 = new Label ( "cli ckme"} ;
+
+
+    cbg
+
+
+    new CheckboxGroup(} ;
+
+
+    cbl
+
+
+    = new Checkbox("male" *l* *cbg* *1* *true);*
+
+
+    cb2 = new Checkbox ( "fma" *1* cbg *1* fal se);
+
+
+    fd
+
+
+    new JFi leChooser ( " s : /kabilan/" } ;
+
+
+    cc = new Choice(} ;
+
+
+    cc . add ( "dfdf" } ;
+
+
+    cc . add ( "dfdf" } ;
+
+
+    cc . add ( "dfdf" } ;
+
+
+    btnl . addActionListener(this} ;
+
+
+    btn2. addActionListener(this) ;
+
+
+    add(btnl} ;
+
+
+    add(btn2};
+
+
+    add(ll };
+
+
+    add(cbl} ;
+
+
+    add (cb2} ;
+
+
+    a dd(cc} ;
+
+
+    publ ic void actionPerformed(ActionEvent e)
+
+
+    {
+
+
+    if(e .getsource(}==btnl}
+
+
+    {
+
+
+    System. out . println ("the hashcode" + btnl . hashCode (}} ;
+
+
+    system. out . println ( "sdfd") ;
+
+
+    fd . show(};'
+  merge: -1
+  pgno: 57
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_58_0.png)
+
+
+    public static void main(String args[])
+
+
+    {
+
+
+    awt aa = new awt() ;
+
+
+    aa.setSize(3UU,30U);
+
+
+    aa . setVisible(true);
+
+
+    import java.awt. * ;
+
+
+    import java.awt . event .*;
+
+
+    i mport java . applet .*;
+
+
+    / *
+
+
+    <applet code="But . class" height=400 width=400>
+
+
+    </applet>
+
+
+    */
+
+
+    Apple!
+
+
+    47
+
+
+    public class But extends Applet implements ActionListener, MouseListener
+
+
+    {
+
+
+    Button bl, b2 ;
+
+
+    TextFi eld Tf;
+
+
+    List Ll;
+
+
+    Stri ng d;
+
+
+    Checkbox cl, c2;
+
+
+    public void init ()
+
+
+    {
+
+
+    bl
+
+
+    b2
+
+
+    Ll
+
+
+    Tf
+
+
+    new
+
+
+    new
+
+
+    new
+
+
+    new
+
+
+    Button ("Add");
+
+
+    Button( "Select• ) ;
+
+
+    List(S , true);
+
+
+    TextFi eld("Hello• , 10);
+
+
+    Checkbox ( "Male• , false , new CheckboxGroup ()) ;
+
+
+    c2
+
+
+    new Checkbox ( " Female" , true, new CheckboxGroup () ) ;
+
+
+    add(bl);
+
+
+    cl
+
+
+    new
+
+
+    add(Ll);
+
+
+    add(Tf);
+
+
+    add(b2) ;
+
+
+    add(cl );
+
+
+    add(c2);
+
+
+    bl .addActionListener(this);
+
+
+    b2 .addActionListener(this);
+
+
+    cl .addMouseListener(this) ;
+
+
+    c2 .addMouseListener(this) ;
+
+
+    public void paint(Graphics g)
+
+
+    {
+
+
+    g.drawString("Controls Demo", 40,50) ;
+
+
+    public void actionPerformed(ActionEvent ae)
+
+
+    {
+
+
+    Button b = (Button) ae .getSource();'
+  merge: -1
+  pgno: 58
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_59_0.png)
+
+
+    48
+
+
+    Secrets of Java
+
+
+    Strings = b .getLabel(};
+
+
+    String d =new String(};
+
+
+    if (s . equals ("Add"}}
+
+
+    Ll.add(Tf.getText ()};
+
+
+    else if ( s . equals ("Select" ))
+
+
+    {
+
+
+    String a(] = Ll .getSelecteditems(} ;
+
+
+    for(int i=O; i<a.length; i++)
+
+
+    d+= a[i];
+
+
+    showstatus (d) ;
+
+
+    public void mouseClicked(MouseEvent ae)
+
+
+    {
+
+
+    Checkbox v = (Checkbox) ae .getSource();
+
+
+    Strings= v.getLabel();
+
+
+    if (V==Cl)
+
+
+    showStatus ("Male Selected ... " ) ;
+
+
+    c l . setState(true);
+
+
+    c2 . setState(false);
+
+
+    else if (v==c2 )
+
+
+    showStatus("Female Selected ... ");
+
+
+    c l . setstate(false);
+
+
+    c2 . setState(true);
+
+
+    public void mouseEntered(MouseEvent me)
+
+
+    public void mouseExited(MouseEvent mel{}
+
+
+    public void mousePressed(MouseEvent me)
+
+
+    public void mouseReleased(MouseEvent me)
+
+
+    import java . applet . * ;
+
+
+    import java .awt. *;
+
+
+    {}
+
+
+    {}
+
+
+    {}
+
+
+    //<applet code=Grid width=300 height=200></applet>
+
+
+    public class Grid extends Applet
+
+
+    {
+
+
+    TextArea ta ;
+
+
+    TextField tf;
+
+
+    Button bl, b2, b3;
+
+
+    Choice ch;
+
+
+    GridBagLayout gbl;'
+  merge: -1
+  pgno: 59
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_60_0.png)
+
+
+    GridBagconstraints gbc ;
+
+
+    publi c void ini t ()
+
+
+    {
+
+
+    gbl
+
+
+    = new GridBagLayout() ;
+
+
+    setLayout (gbl ) ;
+
+
+    gbc = new GridBagconstraints() ;
+
+
+    ta
+
+
+    new TextArea( "Java", lO , lO) ;
+
+
+    tf = new TextFi eld(lO) ;
+
+
+    ch = new Choice() ;
+
+
+    c h. a dditem ("one " ) ;
+
+
+    c h . a ddi t em ("two" ) ;
+
+
+    c h .additem( "three" ) ;
+
+
+    b l
+
+
+    new Button ( "one") ;
+
+
+    b2
+
+
+    new Button (" two" ) ;
+
+
+    b3
+
+
+    new Button( "three" ) ;
+
+
+    gbc.fill = Gri dBagConstrai nts . BOTH;
+
+
+    a ddCom(ta, gbl, gbc, O, O, l , 3) ;
+
+
+    gbc . fil l = Gri dBagConstraints . HORIZONTAL ;
+
+
+    addCom(bl ,gbl ,gbc, 0,1, 2, 1 );
+
+
+    gbc.weightx=l;
+
+
+    gbc .weighty=l;
+
+
+    gbc . fil l = GridBagConstrai nts . BOTH;
+
+
+    addCom(b2,gbl ,gbc,l,l,l , l ) ;
+
+
+    gbc .weightx=O;
+
+
+    gbc .weighty=O ;
+
+
+    addCom(b3,gbl ,gbc,3,0, 2, 1 );
+
+
+    addCom(tf, gbl ,gbc, l , 2 , 1 , 1) ;
+
+
+    a ddCom (ch, gbl, gbc, 2 , 2, 1 , 1) ;
+
+
+    Apple!
+
+
+    49
+
+
+    publ ic voi d addCom(Component c , GridBagLayout g , GridBagConstraints gc ,
+
+
+    int row, int column, int width , i nt height)
+
+
+    gc .gri dx=column;
+
+
+    gc .gri dy=row;
+
+
+    gc .gri dwidth=width;
+
+
+    gc .g r i dhei ght=he i ght ;
+
+
+    g.setConstraints (c , gc) ;
+
+
+    add(c) ;
+
+
+    **ODD**'
+  merge: -1
+  pgno: 60
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_61_0.png)
+
+
+    Chapter **12** ***Swings***
+
+
+    **INTRODUCTION**
+
+
+    JDK1.2 was introduced with a new set of packages the java Foundation classes (JFC)
+    that
+
+
+    includes an improved user interface components called swing components.
+
+
+    JFC or swing is an extension of AWT not a replacement of AWT. The classes of AWT
+    are
+
+
+    valid for swing components.
+
+
+    **COMPARISON** **WITH** **AWT**
+
+
+    Awt components application has given different look and feel in different, different
+    platforms.
+
+
+    This is one of the disadvantages of AWT Components. Sun-Microsystems developed
+    a new
+
+
+    version JFC1.2 or Swing components to give same look and feel application in all
+    platforms.
+
+
+    **JFC1.2** **cons****is****ts** **of** **five** **major** **package** :
+
+
+    1\. Swing
+
+
+    2\. Pluggable Look and Feel
+
+
+    3\. Drag and Drop
+
+
+    4\. Accessibility
+
+
+    5\. 2D.
+
+
+    The swing components facilitate efficient graphical user interface (GUI) development.
+
+
+    These components are a collection of lightweight visual components. The root class
+    of all swing
+
+
+    components is JComponent which is derived from Container of AWT package so that
+    only we
+
+
+    ca]l swing is an extension of AWT not an replacement of AWT.
+
+
+    **Syntax**
+
+
+    The programming way is some what different when compared to AWT. In swing components
+
+
+    all the class names are start with capital J.
+
+
+    For example AWT Class is Button.
+
+
+    For example swing class is JBu tton. This is the only difference jn syntax wise.
+    So swing
+
+
+    is an improved version of AWT and it has some additional components also.
+
+
+    **50**'
+  merge: -1
+  pgno: 61
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_62_0.png)
+
+
+    **Examples** :
+
+
+    import java .awt. *;
+
+
+    import javax . swing . * ;
+
+
+    import java.awt . event .* ;
+
+
+    import javax . swing .border . *;
+
+
+    / *<applet code=card wi dth=300 height=200>
+
+
+    </applet>*/
+
+
+    public class card extends JApplet implements ActionListener
+
+
+    JPanel pl, p2;
+
+
+    CardLayout cl ;
+
+
+    public void init()
+
+
+    pl
+
+
+    new JPanel();
+
+
+    p2
+
+
+    new JPanel();
+
+
+    p2 . setLayout(new FlowLayout());
+
+
+    p2 . setBackground(Color .orange);
+
+
+    JButton btnl
+
+
+    JButton btn2
+
+
+    JButton btn3
+
+
+    new JButton("Firsthjghgjhg");
+
+
+    new JButton("Secondkjhlkhkl" );
+
+
+    new JButton ( "Thirdioyihh") ;
+
+
+    JButton btn4 = new JButton("Action");
+
+
+    cl =new CardLayout() ;
+
+
+    pl.setLayout(cl);
+
+
+    pl .add("First",btnl) ;
+
+
+    pl .add( "Second" , btn2) ;
+
+
+    pl . add ("Third", btn3) ;
+
+
+    this.getContentPane() .add(p2) ;
+
+
+    p2 .add (pl );
+
+
+    p2 .a.dd(btn4) ;
+
+
+    btn4 . addActionListener(this) ;
+
+
+    Swings
+
+
+    **51**
+
+
+    Border line = BorderFactory .createLineBorder(Color .black,S);
+
+
+    btnl . setBorder(line) ;
+
+
+    btn2 . setBorder(BorderFactory .createLineBorder(Color . red,5));'
+  merge: -1
+  pgno: 62
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_63_0.png)
+
+
+    52
+
+
+    Secrets of Java
+
+
+    btn3 . setBorder(BorderFactory .createLineBorder(Color . green, 5)) ;
+
+
+    p l. setBorder (new Bevel Border (Bevel Border . RAISED)) ;
+
+
+    p2 . setBorder(new Bevel Border(BevelBorder . RAISED)) ;
+
+
+    *II* p2 . setBorder(BorderFactory.createLineBorder(Color.black, S)) ;
+
+
+    publ ic void actionPerformed(ActionEvent ae)
+
+
+    c l. next (pl ) ;
+
+
+    import javax. swing .*;
+
+
+    impor t java .awt .*;
+
+
+    import javax. swing .border .*;
+
+
+    l *<applet code
+
+
+    <lappl et>*l
+
+
+    japp width=300 height=200>
+
+
+    public class japp e xtends JApplet
+
+
+    String ct []={ "India" , "usa" , "japan" , "canada" };
+
+
+    public void init()
+
+
+    getContentPane() . setLayout(new FlowLayout()) ;
+
+
+    JButton btn = new JButton( "Cl ick" , new Imageicon("Paris .gif" )) ;;
+
+
+    btn . setMnemonic( ''l'' ) ;
+
+
+    JCheckBox jb = new JCheckBox( "select") ;
+
+
+    JLabel j bl = new JLabel ( "Name" ) ;
+
+
+    JTex t Field jtf =new JTex t Field(30);
+
+
+    J Tex tArea jta =new JTextArea(lO,lO) ;
+
+
+    JLi st jls =new JLi st(ct) ;
+
+
+    JComboBox jcb = new JComboBox ();
+
+
+    jcb . additem( "aaa") ;
+
+
+    jcb . additem( "bbb" ) ;
+
+
+    jcb . additem( "ccc");
+
+
+    jcb . additem( "ddd" );
+
+
+    JScrollPane jscl = new
+
+
+    JScrol lPane(j l s, J Scrol lPane . VERTICAL_SCROLLBAR_ ALWAYS , JScrollPane .
+
+
+    HORIZONTAL_ SCROLLBAR_AS_ NEEDED) ;
+
+
+    JScrollPane jsc2 = new
+
+
+    JScrollPane(jta, J ScrollPane . VERTICAL_SCROLLBAR_ ALWAYS , JScrollPane .
+
+
+    HORIZONTAL_SCROLLBAR_AS_NEEDED);'
+  merge: -1
+  pgno: 63
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_64_0.png)
+
+
+    getContentPane() .add(jcb);
+
+
+    getContentPane() . add(jscl);
+
+
+    getContentPane() .add(jsc2);
+
+
+    getContentPane() .add(jbl);
+
+
+    getContentPane() .add(jtf);
+
+
+    getContentPane() .add(btn);
+
+
+    getContentPane() . add(jb) ;
+
+
+    Swings
+
+
+    53
+
+
+    Border line =BorderFactory. createLineBorder(Color . red,S);
+
+
+    btn . setBorder(line);
+
+
+    Border linel =BorderFactory .createLineBorder(Color .yellow,S);
+
+
+    jta . setBorder(linel) ;
+
+
+    import javax.swing.* ;
+
+
+    import java .awt.* ;
+
+
+    //<applet code *=* BoxDemo width=300 height=200></applet>
+
+
+    public class BoxDemo extends JApplet
+
+
+    public void init ()
+
+
+    Box bb
+
+
+    new Box(BoxLayout . Y_AXIS);
+
+
+    JButton btnl
+
+
+    JButton btn2
+
+
+    JButton btn3
+
+
+    bb.add(btnl);
+
+
+    new JButton ("one") ;
+
+
+    new JButton( " two" );
+
+
+    new JButton ("three");
+
+
+    bb . add (btn2) ;
+
+
+    bb .add(btn3) ;
+
+
+    getcontentPane() . add(bb) ;
+
+
+    import java .awt.*;
+
+
+    import javax . swing .*;
+
+
+    *I**
+
+
+    <applet code= "JLabelDemo" width=300 height=200>
+
+
+    </applet>
+
+
+    **I*
+
+
+    public class JLabelDemo extends JApplet {'
+  merge: -1
+  pgno: 64
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_65_0.png)
+
+
+    54
+
+
+    Secrets of Java
+
+
+    public void init() {
+
+
+    container contentPane = getcontentPane();
+
+
+    Imagelcon ii =new Imagelcon("france.gif");
+
+
+    JLabel jl =new JLabel( "France", ii , JLabel . CENTER);
+
+
+    contentPane . add(jl);
+
+
+    import java .awt .*;
+
+
+    import javax.swing.*;
+
+
+    import java.awt.event .*;
+
+
+    public class JLis extends J Frame
+
+
+    {
+
+
+    JLis ()
+
+
+    }
+
+
+    getContentPane() . setLayout(new FlowLayout());
+
+
+    Stri ng str []={"one", "two", "three", "four", "five"};
+
+
+    JLi st l i =new JList();
+
+
+    li . setBackground(Color . red);
+
+
+    l i. setListData(str);
+
+
+    int mode = ListSelectionModel . SINGLE INTERVAL_SELECTION;
+
+
+    li . setSelectionMode(mode) ;
+
+
+    JScrollPane sc = new
+
+
+    JScrollPane(li,JScrollPane.VERTICAL_SCROLLBAR_ALWAYS , JScrollPane.
+
+
+    HORIZONTAL_SCROLLBAR_AS_NEEDED);
+
+
+    getContentPane() . add(sc);
+
+
+    public stati c voi d main(String argfs[])
+
+
+    JLi s ls = new JLi s() ;
+
+
+    ls . setVisi ble(tru e);
+
+
+    ls . setSize(300,300);
+
+
+    //System.out .println(ListSelectionModel . MULTIPLE_INTERVAL_SELECTION);
+
+
+    import java .awt .*;
+
+
+    import java.awt . event .*;'
+  merge: -1
+  pgno: 65
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_66_0.png)
+
+
+    import javax.swing . *;
+
+
+    / *
+
+
+    <applet code="JRadioButtonDemo" width=300 height=200>
+
+
+    </applet>
+
+
+    **I*
+
+
+    Swings
+
+
+    55
+
+
+    public class JRadioButtonDemo extends JApplet implements ActionListener
+
+
+    TextArea tf ;
+
+
+    public void init ()
+
+
+    Container contentPane= getContentPane();
+
+
+    contentPane . setLayout(new FlowLayout());
+
+
+    JRadioButton bl = new JRadioButton ( "A" );
+
+
+    bl .addActionListener(this);
+
+
+    contentPane . add(bl );
+
+
+    JRadioButton b2 = new JRadioButton ( "B");
+
+
+    b2 .addActionListener(this);
+
+
+    contentPane . add(b2);
+
+
+    JRadioButton b3 =new JRadioButton( "C");
+
+
+    b3 .addActi onListener(this);
+
+
+    contentPane . add(b3);
+
+
+    ButtonGroup bg = new ButtonGroup();
+
+
+    bg .add (bl);
+
+
+    bg .add (b2);
+
+
+    bg .add(b3);
+
+
+    tf = new TextArea(l,O);
+
+
+    contentPane . add(tf);
+
+
+    public void actionPerformed(ActionEvent ae)
+
+
+    tf.append(ae.getActionCommand()) ;
+
+
+    To run the above program wi thout browser the syntax is
+
+
+    >appletviewer filename.java'
+  merge: -1
+  pgno: 66
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_67_0.png)
+
+
+    56
+
+
+    Secrets of Java
+
+
+    import java .awt. *;
+
+
+    import javax . swing . * ;
+
+
+    import java . awt . event . *;
+
+
+    public class colo extends JFrame implements Act i onListener
+
+
+    {
+
+
+    JColorChooser jc;
+
+
+    //JFi l eChooser jc;
+
+
+    JPanel pp;
+
+
+    JButton btn;
+
+
+    col o()
+
+
+    {
+
+
+    getContentPane() . setLayout(new FlowLayout());
+
+
+    pp=new JPanel ();
+
+
+    btn =new JButton( "Select• ) ;
+
+
+    getCon tentPane() . add(btn) ;
+
+
+    jc = new JCol orChooser();
+
+
+    getContentPane() . add(jc) ;
+
+
+    btn . addActionListener(this);
+
+
+    pp . setBackground(Color .green) ;
+
+
+    pp . setsize(150,150);
+
+
+    getContentPane() . add(pp) ;
+
+
+    publ ic stati c void main(String ags[ ] )
+
+
+    colo cc = new colo() ;
+
+
+    cc . setVisible(tru e);
+
+
+    cc . setSize(300 , 200);
+
+
+    public void actionPerformed(ActionEvent ae)
+
+
+    {
+
+
+    System. out . pri ntln ( "ckkk• ) ;
+
+
+    pp . setBackground(jc . getColor()) ;
+
+
+    }
+
+
+    i mport javax . swing . * ;
+
+
+    impor t java .awt . * ;
+
+
+    import java.awt . event . *;
+
+
+    //<appl et code = swg4 width=300 height=200></applet>
+
+
+    public c l ass swg4 extends JAppl et impl ements ItemListener
+
+
+    {
+
+
+    public void init()
+
+
+    {
+
+
+    getContentPane() . setLayout(new FlowLayout());
+
+
+    JComboBox cbl =new JComboBox() ;'
+  merge: -1
+  pgno: 67
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_68_0.png)
+
+
+    cbl . additem("aaa");
+
+
+    cbl . additem ( "bbb") ;
+
+
+    cbl . additem("ccc");
+
+
+    getContentPane{) .add(cbl) ;
+
+
+    cbl . additemListener(this);
+
+
+    public void itemStateChanged(ItemEvent ei)
+
+
+    {
+
+
+    if(ei.getStateChange()==ItemEvent . SELECTED)
+
+
+    {
+
+
+    Swings
+
+
+    57
+
+
+    System. out . pri ntln ( (String) (ei. get Item ())+"was selected") ;
+
+
+    showStatus ((String) (ei . get Item ())+"was selected");
+
+
+    **import** **javax.swing** **.*** **;**
+
+
+    import java .awt.* ;
+
+
+    import javax . swing .border .* ;
+
+
+    class Tab extends JFrame
+
+
+    public Tab ()
+
+
+    {
+
+
+    JTabbedPane Jt =new JTabbedPane ();
+
+
+    JPanel JPl *=* new JPanel ();
+
+
+    JPanel JP2 *=* new JPanel ();
+
+
+    JPl . setBackground(Color.red);
+
+
+    JP2 . setBackground(Color .yellow);
+
+
+    JButton btnl
+
+
+    JButton btn2
+
+
+    JPl . add (btnl) ;
+
+
+    JP2 . add (btn2) ;
+
+
+    new JButton("First");
+
+
+    new JButton ("Second" ) ;
+
+
+    Jt.addTab ("First" , JPl);
+
+
+    Jt . add Tab ("Second" , JP2) ;
+
+
+    Jt . setSelectedindex(O);
+
+
+    getContentPane () . setLayout (new BorderLayout ()) ;
+
+
+    getcontentPane () .add(Jt, BorderLayout .CENTER) ;
+
+
+    JPl . setBorder (new TitledBorder ("panel .. 1"));
+
+
+    btn2 . setBorder (new TitledBorder ( "btn2" )) ;'
+  merge: -1
+  pgno: 68
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_69_0.png)
+
+
+    58
+
+
+    Secrets of Java
+
+
+    public static void main (String ar[))
+
+
+    {
+
+
+    Tab t =new Tab () ;
+
+
+    t.setVisible (true) ;
+
+
+    t. setTitle ( "Tabbed Pane") ;
+
+
+    t.setSize (400,300);
+
+
+    import java.awt .*;
+
+
+    import java.awt . event .*;
+
+
+    **import** **javax.swing.** ***;**
+
+
+    /*<applet code = progress width=300 height=200>
+
+
+    </applet>*/
+
+
+    public class progress extends JApplet implements Runnable
+
+
+    {
+
+
+    ProgressMonitor monitor;
+
+
+    JFrame frame;
+
+
+    public void init()
+
+
+    {
+
+
+    frame = new JFrame();
+
+
+    int: min =0;
+
+
+    int max = 100;
+
+
+    String[) message = new String[2);
+
+
+    message [0) = ("Performing Operation .. ");
+
+
+    message[!) = ("This may take some time . .. ");
+
+
+    monitor = new ProgressMonitor(frame, message , "Iteration" , min, max);
+
+
+    public void run()
+
+
+    {
+
+
+    for(int i = 1; i <= 100; i++)
+
+
+    try{
+
+
+    monitor.setNote("Iteration
+
+
+    monitor.setProgress(i);
+
+
+    if(monitor . isCanceled())
+
+
+    monitor.setProgress(lOO);
+
+
+    break;
+
+
+    **''''+i+ll%''11);**
+
+
+    Thread .sleep (SOO) ;
+
+
+    }catch(InterruptedException e){ }
+
+
+    monitor.close();'
+  merge: -1
+  pgno: 69
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_70_0.png)
+
+
+    public void start()
+
+
+    {
+
+
+    Thread th =new Thread(this);
+
+
+    th . start() ;
+
+
+    Swings
+
+
+    59
+
+
+    import javax.swing.*;
+
+
+    import java .awt .*;
+
+
+    import java . awt . event .*;
+
+
+    public class JTf extends JFrame implements ActionListener
+
+
+    {
+
+
+    JTextArea ta2;
+
+
+    JTextField tf;
+
+
+    JTf ()
+
+
+    {
+
+
+    getContentPane() .setLayout(new FlowLayout());
+
+
+    JLabel lb = new JLabel ("Name", new Image Icon ("Ms . gif") , JLabel. CENTER)
+    ;
+
+
+    tf =new JTextField(lO);
+
+
+    JTextArea tal =new JTextArea(lO,lO);
+
+
+    tal. set Font (new Font ( "TimesRoman", Font . BOLD, 10) ) ;
+
+
+    tal . setForeground(Color . red);
+
+
+    tal . setBackground(Color .green);
+
+
+    ta2 = new JTextArea(lO,lO) ;
+
+
+    JScrollPane sc = new
+
+
+    JScrollPane(ta2,JScrollPane . VERTICAL_ SCROLLBAR_ ALWAYS,JScrollPane .
+
+
+    HORIZONTAL SCROLLBAR_AS_NEEDED);
+
+
+    getContentPane() .add(lb);
+
+
+    getContentPane() . add(tf) ;
+
+
+    getContentPane() . add(tal) ;
+
+
+    getContentPane() .add(sc);
+
+
+    tf .addAct i onLi stener(this);
+
+
+    public stati c voi d main(String atgs[ J )
+
+
+    {
+
+
+    JTf jt = new JTf() ;
+
+
+    jt.setVisible(true);
+
+
+    jt . setSize(300 , 300);
+
+
+    public void actionPerformed(ActionEvent ae)
+
+
+    {
+
+
+    ta2 . append(tf . getText()+ "\n" ) ;'
+  merge: -1
+  pgno: 70
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_71_0.png)
+
+
+    60
+
+
+    Secrets of Java
+
+
+    import java .awt. *;
+
+
+    import java.awt . event . * ;
+
+
+    **import** **java****x.** **swing** **.*;**
+
+
+    / *
+
+
+    <applet code="JCheckBoxDemo" wi dth =400 height=100>
+
+
+    </appl et>
+
+
+    ** I*
+
+
+    public class JCheckBoxDemo extends JApplet implements ItemListener
+
+
+    {
+
+
+    JTextField jtf ;
+
+
+    public void init(}
+
+
+    Container contentPane = getContentPane(};
+
+
+    contentPane . setLayout(new FlowLayout(}};
+
+
+    JCheckBox cb = new JCheckBox ( "C" } ;
+
+
+    cb .addltemListener(this) ;
+
+
+    contentPane . add(cb};
+
+
+    cb = new JCheckBox ("C++"} ;
+
+
+    cb .additemListener(thi s} ;
+
+
+    contentPane . add(cb};
+
+
+    cb = new JCheckBox ( "Java"} ;
+
+
+    cb .additemListener(this} ;
+
+
+    contentPane . add(cb};
+
+
+    cb = new JCheckBox ("Per 1" } ;
+
+
+    cb .additemListener(thi s) ;
+
+
+    contentPane . add(cb};
+
+
+    jtf =new JTextField( l S};
+
+
+    contentPane . add(jtf} ;
+
+
+    public void itemStateChanged(ItemEvent ie}
+
+
+    {
+
+
+    JCheckBox cb = (JCheckBox} ie .getltem(} ;
+
+
+    jtf. setText(cb .getText(}} ;
+
+
+    **ODD**'
+  merge: -1
+  pgno: 71
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_72_0.png)
+
+
+    Chapter **13**
+
+
+    ***Networking***
+
+
+    **IN****TRODUCTION**
+
+
+    A network is a set of computers and peripherals, which are physically connected
+    together.
+
+
+    Networking enables sharing of resources and communication. Internet is a network
+    of networks.
+
+
+    Networking in java is possible through the use of java.net package.
+
+
+    Protocols assigning set of rules for communication between computers and between
+    the
+
+
+    networks. Java networking is done using TCP/IP and UDP protocols.
+
+
+    **Clien****t/****Se****rv****er**
+
+
+    A computer which requests for some service from another computer is known as client.
+
+
+    The one that processes the request is called as server.
+
+
+    **IP** **Addr****ess**
+
+
+    Every computer com1ected to a network has a unique IP address. IP address is a
+    32-bit number
+
+
+    which has four numbers separated by periods.
+
+
+    Ex. of IP address is
+
+
+    80.0.0.53
+
+
+    **Port Number**
+
+
+    Port number is assigned to all protocols, 21 are assigned for FTP, 23 are assigned
+    for Telnet, etc.
+
+
+    **TYPES** **OF NETWORKING PROGRAMS**
+
+
+    There are two types of networking program they are :
+
+
+    • Connection oriented protocols is TCP/IP (Transmission control protocols)
+
+
+    • Connectionless protocols are UDP (User datagram protocols).
+
+
+    The supporting package is java.net. *;
+
+
+    61'
+  merge: -1
+  pgno: 72
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_73_0.png)
+
+
+    62
+
+
+    Secrets of Java
+
+
+    **Classes** **of** **java.net** **Pa****ckage**
+
+
+    Datagram, DatagramPacket, DatagramSocket are classes of java.net package for connectionless
+
+
+    protocols.
+
+
+    Socket, ServerSocket is classes of java.nel package for connection oriented protocols.
+
+
+    **Implementation** **of** **Networking Programs**
+
+
+    1\. Compile the both client and server program.
+
+
+    2\. Run the server program in one machine
+
+
+    3\. Run the client in another machine
+
+
+    4\. If you want do the same in same machines you have open two DOS-prompt, one
+    for
+
+
+    client and another one server.
+
+
+    **Examples for both type** are as **follows**
+
+
+    import java .net.* ;
+
+
+    class inetaddresstest
+
+
+    public static void main(String args[))throws Exception
+
+
+    try
+
+
+    InetAddress add=InetAddress.getLocalHost();
+
+
+    System.out .println("the address of the local host is .... "+ add);
+
+
+    catch(Exception u)
+
+
+    System. out .println(u);
+
+
+    import java .net.*;
+
+
+    import java . io . * ;
+
+
+    class datagramserver
+
+
+    static Datagramsocket ds;
+
+
+    static int cport=9,sport=8;
+
+
+    public static void main(String args[))throws Exception
+
+
+    byte ff[)=new byte[l024);
+
+
+    ds=new Datagramsocket(sport);
+
+
+    BufferedReader dis=new BufferedReader(new InputStreamReader(System . in));
+
+
+    System. out.println("server is waiting for input");'
+  merge: -1
+  pgno: 73
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_74_0.png)
+
+
+    //InetAddress ia=InetAddress .getLocalHost() ;
+
+
+    I netAddress ia=InetAddress . getByName ( "80\. 0 . 1 .16") ;
+
+
+    while (true)
+
+
+    String str=dis . readLine() ;
+
+
+    if((str==null l lstr . equals("end")))
+
+
+    break;
+
+
+    ff=str .getBytes();
+
+
+    Networking
+
+
+    63
+
+
+    ds . send(new DatagramPacket(ff,str . length() ,ia,cport));
+
+
+    import java.net.*;
+
+
+    i mport java . io .*;
+
+
+    c lass datagramcl ient
+
+
+    static DatagramSocket ds;
+
+
+    stati c byte ff[)=new byte[1024);
+
+
+    static int cport=9,sport=8 ;
+
+
+    public static voi d main (String args [J)th rows Except ion
+
+
+    ds=new Datagramsocket(cport);
+
+
+    System .out .pri nt ln ("clie nt is waiting for server to send the data");
+
+
+    System . out. println ("press control c to come to the dos prompt") ;
+
+
+    while (true)
+
+
+    DatagramPacket p=new DatagramPacket(ff,ff.length) ;
+
+
+    ds . receive (p);
+
+
+    String psx =new String(p .getData() , O,p . getLength()) ;
+
+
+    System. out .printl n(psx) ;
+
+
+    import java .net . * ;
+
+
+    class Cl ient
+
+
+    public static void main (String ads[)) throws Exception
+
+
+    byte buf [)
+
+
+    new byte[1024);'
+  merge: -1
+  pgno: 74
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_75_0.png)
+
+
+    64
+
+
+    Secrets of Java
+
+
+    Datagramsocket Ds
+
+
+    new Datagramsocket (170) ;
+
+
+    while (true)
+
+
+    DatagramPacket Dp= new DatagramPacket (buf, 1024) ;
+
+
+    Ds . receive (Dp) ;
+
+
+    String a= new String (Dp .getData(), o, Dp .getLength());
+
+
+    System.out .println (a);
+
+
+    import java .net .*;
+
+
+    import java.io.*;
+
+
+    class Server
+
+
+    public static void main (String as[]) throws Exception
+
+
+    {
+
+
+    DatagramSocket Ds
+
+
+    BufferedReader Bf
+
+
+    while (true)
+
+
+    new DatagramSocket (180);
+
+
+    new BufferedReader (new InputStreamReader
+
+
+    (System. in));
+
+
+    Strings= Bf . readLine () ;
+
+
+    if((s==null) II (s . equals( "end" )))
+
+
+    break;
+
+
+    Ds.send (new DatagramPacket
+
+
+    (s .getBytes() , s.length() ,InetAddress . getLocalHost() , 170));
+
+
+    import java .net .*;
+
+
+    **import** **java.io.*;**
+
+
+    public c lass TServer
+
+
+    public stati c void main(String args[]) throws Exception
+
+
+    ServerSocket ss=new ServerSocket(95);
+
+
+    *II* ServerSocket s2 = new ServerSocket(int port,int maxque);
+
+
+    Socket cs=ss . accept();'
+  merge: -1
+  pgno: 75
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_76_0.png)
+
+
+    Networking
+
+
+    65
+
+
+    system . out . println ("connected to" +cs) ;
+
+
+    PrintWri ter out=new PrintWriter(cs .getOutputStream() ,true);
+
+
+    String inputline,outputline;
+
+
+    BufferedReader stdin=new BufferedReader(new
+
+
+    InputStreamReader (System.in));
+
+
+    System . out . printl n( "enter data in server") ;
+
+
+    String s=stdin . readLine() ;
+
+
+    File f=new File(s) ;
+
+
+    if(f . exists())
+
+
+    BufferedReader d=new BufferedReader (new FileReader(s));
+
+
+    String l ine;
+
+
+    while((line=d . readLine()) !=null)
+
+
+    out .wr i te(l i ne) ;
+
+
+    out . flush() ;
+
+
+    d . c l ose();
+
+
+    out . c l ose();
+
+
+    cs .close();
+
+
+    ss . c l ose();
+
+
+    import java .net. *;
+
+
+    import java . io .*;
+
+
+    public c l ass TClient
+
+
+    public static void main(String args[]) throws Exception
+
+
+    Socket echoSocket=new Socket(args[O] , 95) ; //InetAddress .getLocalHost() , 95)
+    ;
+
+
+    BufferedReader in=new BufferedReader(new
+
+
+    InputStreamReader(echoSocket .getinputStream()) ) ;
+
+
+    Stri ng userlnput ;
+
+
+    while((userlnput=in . readLine()) !=null)
+
+
+    System .out .println(userlnput) ;
+
+
+    i n. close();
+
+
+    echoSocket.close();
+
+
+    import java .awt. *;
+
+
+    i mport java.awt . event .*;'
+  merge: -1
+  pgno: 76
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_77_0.png)
+
+
+    66
+
+
+    Secrets of Java
+
+
+    import java .net. *;
+
+
+    import java . applet .* ;
+
+
+    //<applet code=ur width=300 height=200></applet>
+
+
+    public class ur extends Applet implements ActionListener
+
+
+    Button btn;
+
+
+    public void init ()
+
+
+    btn = new Button ( "c lick" ) ;
+
+
+    setLayout(new FlowLayout());
+
+
+    btn . addActionListener(this);
+
+
+    add(btn);
+
+
+    public void actionPerformed(ActionEvent ae)
+
+
+    try
+
+
+    URL uu = new URL ("http :I /hotmail .com/" ) ;
+
+
+    URLConnection uc = uu.openConnection ();
+
+
+    showstatus ( "the"+uc) ;
+
+
+    }catch(Exception e){}
+
+
+    **DOD**'
+  merge: -1
+  pgno: 77
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_78_0.png)
+
+
+    Chapter **14**
+
+
+    ***Threads***
+
+
+    **DEFINITION**
+
+
+    The thread is similar to a program that has a single flow of control.
+
+
+    The program that contains multiple flows of control is known as multithreaded
+
+
+    programming.
+
+
+    **Supporting Package**
+
+
+    The thread supporting classes are resides in the java.lang. * package.
+
+
+    **Two** **W ay** **of** **Thread Programming**
+
+
+    We can develop thread based application in two ways *i.e.,* is either by using
+    inbuilt Thread class
+
+
+    or Runnable interface. There is no difference between this two types but it is
+    based on the user
+
+
+    requirements.
+
+
+    If we are using Thread class it executes its 0\1\''11 run () method or if we are
+    using the
+
+
+    interface Runnable it executes the run method of some other objects.
+
+
+    **Ex****ample with Thread class** :
+
+
+    Public class CounterThread extends Thread
+
+
+    public void run()
+
+
+    for (int i=l ; i<=lO;i++)
+
+
+    System . out . println ("Counting " +i) ;
+
+
+    public static void rnain (String args [])
+
+
+    CounterThread ct = new CounterThread();
+
+
+    ct . start() ;
+
+
+    67'
+  merge: -1
+  pgno: 78
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_79_0.png) ![](img/2939962d59d1a33af55f4203ff42bf76_79_1.png)
+    ![](img/2939962d59d1a33af55f4203ff42bf76_79_1.png) ![](img/2939962d59d1a33af55f4203ff42bf76_79_1.png)
+
+
+    68
+
+
+    Secrets of Java
+
+
+    In this program the start( ) method indirectly calls the run( ) method.
+
+
+    **Ex****ample** **with** **Runnable Interface** :
+
+
+    Public class RunCounter implements Runnable
+
+
+    public void run()
+
+
+    {
+
+
+    for(int i=lO;i>=lO;i-)
+
+
+    System .out.println("Counting down" + i);
+
+
+    public static void main(String args[])
+
+
+    Runcounter rc = new Runcounter();
+
+
+    Thread td = new Thread(rc);
+
+
+    td . start () ;
+
+
+    **LIFE** **CYCLE** **Of** **THREAD**
+
+
+    1\. New born state
+
+
+    2\. Runnable state
+
+
+    3\. Running state
+
+
+    4\. Blocked state
+
+
+    5\. Dead State.
+
+
+    **New** **Born State**
+
+
+    When we create a thread object, the thread is said to be new born state. In this
+    state we can
+
+
+    apply to methods either start() or stop().
+
+
+    start()
+
+
+    New born
+
+
+    state
+
+
+    **Fi****gure 14.1**'
+  merge: -1
+  pgno: 79
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_80_0.png)
+
+
+    Threads
+
+
+    6 9
+
+
+    **Runnable** **St****ate**
+
+
+    The runnable state means that the thread is ready for execution and is wailing
+    for the availability
+
+
+    of the processor. If more than one thread waiting for execution actually it will
+    work first come
+
+
+    first service manner. In this state, the yield() method is used to cause the currently
+    running
+
+
+    threads into ready state (runnable state).
+
+
+    Yield()
+
+
+    **Figure 14.2**
+
+
+    **Running State**
+
+
+    In this state the processor assigns time to the thread for its execution.
+
+
+    In this stage, the following methods are applied to the running state thread.
+
+
+    **Blocked** **St****ate**
+
+
+    1\. Suppose we want to suspend a thread for some time, we can apply suspend( )
+    and to
+
+
+    wakeup the thread use resume() method.
+
+
+    suspend()
+
+
+    resume()
+
+
+    **Figure 14.3**
+
+
+    2\. Suppose we want to make the thread to sleep for some time, use sleep( ) method.
+    After
+
+
+    the time is elapsed that will enter into runnable stage.
+
+
+    sleep(time)
+
+
+    **Figure 14****.4**'
+  merge: -1
+  pgno: 80
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_81_0.png)
+
+
+    70
+
+
+    Secrets of Java
+
+
+    3\. To make the thread to wait until some event occurs use wait() method, then
+    this will
+
+
+    wakeup by using notify() method.
+
+
+    **Dead State**
+
+
+    Once the thread finishes its running stage enters naturally into dead stage. If
+    we want force to
+
+
+    finish its task we can use stop( ) method.
+
+
+    **THREAD PRIORITY**
+
+
+    Thread priority affects the order of thread for running.
+
+
+    The method threadName.setPriority (intNumber) used for executing the threads as
+    per the
+
+
+    user orders.
+
+
+    There are three inbuilt variable used to set the priority for execution the thread
+
+
+    MIN PRIORITY
+
+
+    1
+
+
+    NORM PRIORITY = 5
+
+
+    DEFAULT
+
+
+    MAX PRIORITY
+
+
+    10
+
+
+    **Synchronization**
+
+
+    Two or more thread access the same data leads to loss of data. To avoid this data''s
+    are placed
+
+
+    inside the synchronized block leads to accessing data in sequence manner.
+
+
+    **Examples** :
+
+
+    class thrdel extends Thread
+
+
+    public void run()
+
+
+    this . setName ("one" ) ;
+
+
+    System .out .println(this . currentThread() . getName());
+
+
+    class thrde2 extends Thread
+
+
+    public void run ()
+
+
+    {
+
+
+    this .setName( "two" );
+
+
+    System .out .println(this . currentThread() . getName()) ;
+
+
+    class thrde3 extends Thread
+
+
+    public void run()
+
+
+    this . setName ("three" ) ;
+
+
+    System.out.println(this.currentThread() .getName());'
+  merge: -1
+  pgno: 81
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_82_0.png)
+
+
+    public static void main(String aet[))
+
+
+    thrdel tdl
+
+
+    thrde2 td2
+
+
+    thrde3 td3
+
+
+    tdl . start() ;
+
+
+    td2 .start() ;
+
+
+    td3 . start () ;
+
+
+    new thrdel();
+
+
+    new thrde2();
+
+
+    new thrde3();
+
+
+    tdl . setPriorit y(Thread . MAX_PRIORITY) ;
+
+
+    td3 . setPriority(5);
+
+
+    td2 .setPriority(l ) ;
+
+
+    class synl extends Thread
+
+
+    public void run()
+
+
+    {
+
+
+    call .comm(this .currentThread() .getName());
+
+
+    class syn2 extends Thread
+
+
+    public void run()
+
+
+    {
+
+
+    call .comm(this . currentThread() .getName()) ;
+
+
+    class syn3 extends Thread
+
+
+    public void run()
+
+
+    call.comm(this . currentThread() .getName());
+
+
+    class call
+
+
+    static void comm(String str)
+
+
+    System .out .println(str);
+
+
+    synl sl
+
+
+    new synl();
+
+
+    syn2 s2 =new syn2();
+
+
+    Threads
+
+
+    71'
+  merge: -1
+  pgno: 82
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_83_0.png)
+
+
+    72
+
+
+    Secrets of Java
+
+
+    syn3 s3 =new syn3( ) ;
+
+
+    sl . start();
+
+
+    s3 . start() ;
+
+
+    s2 . start () ;
+
+
+    for(int i=O;i<lO ; i++)
+
+
+    if (i==5)
+
+
+    break ;
+
+
+    publ ic stati c void main(String args[])
+
+
+    comm ( "kabi" ) ;
+
+
+    ll<applet code = moving width=400 height=200><lapplet>
+
+
+    i mpor t java .awt . * ;
+
+
+    import java .appl et .Applet ;
+
+
+    public c l ass movi ng extends Appl et implements Runnable
+
+
+    Thread t =null;
+
+
+    int p=O ;
+
+
+    int x =O;
+
+
+    Image il ;
+
+
+    Image i 2 ;
+
+
+    publ ic void i nit()
+
+
+    i l =getimage(getCodeBase(), "j uggler3 . gif" ) ;
+
+
+    *I I* i2=getimage (getCodeBase () ,"santa workshop .gif" ) ;
+
+
+    publi c void start()
+
+
+    t=new Thread(thi s) ;
+
+
+    t . start() ;
+
+
+    publi c void r un( )
+
+
+    {
+
+
+    while (true)
+
+
+    for(p=O ;p<getSize() . width;p+=5)
+
+
+    for(x=O ; x<getSize() . height ;x+=50)'
+  merge: -1
+  pgno: 83
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_84_0.png)
+
+
+    repaint();
+
+
+    try
+
+
+    {
+
+
+    t .sleep(lOOO) ;
+
+
+    }catch(InterruptedException il{};
+
+
+    public void stop()
+
+
+    t . stop();
+
+
+    t=null;
+
+
+    public void paint(Graphics h)
+
+
+    h.drawi mage(il , 30+p,5+x, this) ;
+
+
+    h .drawimage( i l,l00+x,200+p,this) ;
+
+
+    Threads
+
+
+    73
+
+
+    **ODD**'
+  merge: -1
+  pgno: 84
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_85_0.png)
+
+
+    Chapter **15**
+
+
+    **INTRODUCTION**
+
+
+    ***}DBC*** ***(java***
+
+
+    ***Database***
+
+
+    ***Connectivity)***
+
+
+    JDBC APis provides to develop the application with java front end and database
+    with back end.
+
+
+    The supporting package is java.sql. *. The database is Sybase, Informix, Ingress,
+    MS-access, and
+
+
+    oracle., sql we can use as the back end tool. The java.sql. * API provides set
+    of classes and
+
+
+    interfaces to enable programmers to write pure java database applications.
+
+
+    **The following are the characteristics** **of** **JDBC:**
+
+
+    1\. It is a call - level SQL interface for java.
+
+
+    2\. It does not restrict the type of queries passed to an underlying DBMS(database
+
+
+    management system) driver.
+
+
+    3\. JDBC mechanisms are simple to understand and use.
+
+
+    4\. It provides a java interface that stays consistent with the rest of the java
+    system.
+
+
+    5\. JDBC may be implemented on top of common SQL level APis.
+
+
+    6\. It uses strong, static typing whenever possible.
+
+
+    Microsoft ODBC is not sufficient to connect to the database by java. To overcome
+    the
+
+
+    problem JDBC driver arises.
+
+
+    **Some** **of** **the advantages** **of** **using java** **with** **JDB****C are**
+    :
+
+
+    1\. Easy and economical.
+
+
+    2\. Continued usage of already installed databases.
+
+
+    3\. Development time is short.
+
+
+    4\. Installation and version control simplified.
+
+
+    **JDBC** **does the following three things:**
+
+
+    1\. Establish connection with a database.
+
+
+    2\. Send sql statements.
+
+
+    3\. Process tlhe results
+
+
+    **74**'
+  merge: -1
+  pgno: 85
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_86_0.png)
+
+
+    *]DBC* Oava Database Connectivity)
+
+
+    75
+
+
+    **JDBC** **VS** **ODBC**
+
+
+    The most widely used interface to acess relational database today is MS ODBC API.
+    ODBC
+
+
+    performs similar tasks as that of JDBC and yet JDBC is preferred due to the following
+    reasons:
+
+
+    1\. ODBC cannot be directly used with java because it uses a C interface.
+
+
+    2\. ODBC makes use of pointers which have been totally removed from java.
+
+
+    3\. ODBC is complex one when compared to it JDBC is easy.
+
+
+    4\. ODBC is manual Installations but JDBC is automatically installed in all platforms.
+
+
+    **Different Types** **of** **Driver Managers**
+
+
+    There are four different types of JDBC drivers:
+
+
+    1\. The JDBC-ODBC Bridge plus ODBC driver.
+
+
+    2\. Native-API partly-java driver.
+
+
+    3\. JDBC-Net pure java driver.
+
+
+    4\. Native-protocol pure java driver.
+
+
+    **Syntax for Connection**
+
+
+    DriverManager.getConnection(String url(jdbc :odbc :dsn name), String user, String
+    password);
+
+
+    url is jdbc :odbc :subname.
+
+
+    **The subname is created** **as** **follows** :
+
+
+    1\. Click the control panel
+
+
+    2\. Click the Administrative tools
+
+
+    3\. Select the ODBC
+
+
+    4\. Click th e add button
+
+
+    5\. Select the database driver
+
+
+    6\. click the finish button
+
+
+    7\. enter the dsn name
+
+
+    8\. enter the password
+
+
+    9\. select the database
+
+
+    10\. click the ok button
+
+
+    11. this dsn, password name is given getConnection method
+
+
+    **Steps** **for using JDBC**
+
+
+    There are seven basic steps for using JDBC to access a database. They are :
+
+
+    1\. Import the java.sql package
+
+
+    2\. Register the driver
+
+
+    3\. Connect to the database
+
+
+    4\. Create a statement
+
+
+    5\. Execute the statement
+
+
+    6\. Retrieve the results
+
+
+    7\. Close the statement and the connection'
+  merge: -1
+  pgno: 86
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_87_0.png)
+
+
+    76
+
+
+    Secrets of Java
+
+
+    **Exampl****es** :
+
+
+    import java .sql . * ;
+
+
+    public c l ass jdbcl
+
+
+    public static void rnain(String args[J )
+
+
+    {
+
+
+    try
+
+
+    Cl ass .forName( "sun . jdbc .odbc . JdbcOdbcDriver");
+
+
+    Connection conn=Dri verManager. get Connection ( "j dbc: odbc : kabi",
+
+
+    "scott","tiger");
+
+
+    Statement stnt=conn . createStatement() ;
+
+
+    int x = stnt .e xecuteUpdate( "update kab set age=lO where age=200");
+
+
+    System. out .println("rowsupdated");
+
+
+    }catch (Exception e)
+
+
+    {
+
+
+    System.out .println (" Error ·" + e);
+
+
+    import java .sql .*;
+
+
+    class j dbc2
+
+
+    public static voi d rna i n(Stri ng args[])throws SQLExcepti on,
+
+
+    Cl assNotFoundExcepti on
+
+
+    Class. forName ( "sun . j dbc . odbc. JdbcOdbcDri ver" ) ;
+
+
+    try
+
+
+    Connection conn=Dri verManager . get connection ( "j dbc : odbc : sanj ay" ,
+
+
+    "dummy", "ssi");
+
+
+    Statement stnt=conn . createStatement () ;
+
+
+    ResultSet rs=stnt .executeQuery("select * from tz2" ) ;
+
+
+    while (rs . next())
+
+
+    System.out .println(rs .getint(l));
+
+
+    System.out .println(rs .getString(2)) ;
+
+
+    rs . c l ose ();
+
+
+    stnt . close() ;'
+  merge: -1
+  pgno: 87
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_88_0.png)
+
+
+    conn. close();
+
+
+    }catch(Exception exl{}
+
+
+    *]DBC* Oava Database Connectivity)
+
+
+    77
+
+
+    import java .sql.*;
+
+
+    class jdbc3
+
+
+    {
+
+
+    public static void main(String args[])throws SQLException,
+
+
+    ClassNotFoundException
+
+
+    Class. forName ("sun . j dbc. odbc. JdbcOdbcDri ver") ;
+
+
+    Connection conn=DriverManager .getConnection("jdbc :odbc :sanjay" ,
+
+
+    **''''dummy''./,** **"ssi");**
+
+
+    System . out. println ("connected successfully to the database") ;
+
+
+    System. out. println ("creating table master_details3");
+
+
+    Statement stnt=conn.createStatement();
+
+
+    String sqlstring="create table master_detailsl (shareid number(3) ,compname
+
+
+    varchar2(20),noofshares number(4) ,purrate number(6,2) ,purdate
+
+
+    date, currrate number (6, 2)) ";
+
+
+    String sqlstringb" create table detailslll (shareid number (3), certno
+
+
+    varchar2(10) ,noofshares number(3),firstholder varchar2(15) ,secondholder
+
+
+    varchar2(15))";
+
+
+    stnt .execute(sqlstring);
+
+
+    stnt . execute(sqlstringl) ;
+
+
+    System. out. println ("table created master_details3");
+
+
+    System. out. println ("table created _detailsll");
+
+
+    *I** sqlstring="select * from master_details33";
+
+
+    sqlstring="select * from detailsll";
+
+
+    ResultSet rs=stnt .executeQuery(sqlstring);
+
+
+    if (rs! =null)
+
+
+    {
+
+
+    while (rs. next ())
+
+
+    {
+
+
+    **I*
+
+
+    System. out .println(rs .getString(l));
+
+
+    System.out .println(rs .getstring(2));
+
+
+    import java.sql.*;
+
+
+    import java . io . *;
+
+
+    import java.lang.String;
+
+
+    class jdbc4'
+  merge: -1
+  pgno: 88
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_89_0.png)
+
+
+    78
+
+
+    Secrets of Java
+
+
+    public static void main(String args[]) throws Exception
+
+
+    {
+
+
+    Class . forName ( "sun. j dbc . odbc . JdbcOdbcDri ver") ;
+
+
+    Connect ion conn=Dri verManager. get Connect ion ( "j dbc: odbc : sanj ay",
+
+
+    "dummy", "ssi");
+
+
+    System . out . println ("connected succes.sfully to the database") ;
+
+
+    System. out.println("Do you want to continue ?" ) ;
+
+
+    Statement stnt=conn .createStatement() ;
+
+
+    try
+
+
+    {
+
+
+    char resp= *''y'';*
+
+
+    while ((char) System . in . read()== ''y'')
+
+
+    BufferedReader b=new BufferedReader(new InputStreamReader(System. in));
+
+
+    String chk=b . readLine();
+
+
+    String str=readEntry ( "enter the insert statement" ) ;
+
+
+    stnt .executeUpdate(str) ;
+
+
+    System. out . println ("one row inserted") ;
+
+
+    System. out .println("Do you want to insert another row(y/n) ?") ;
+
+
+    }catch(SQLException ex){
+
+
+    System. out . println ("the SQL Exception raised is" +ex) ;
+
+
+    stnt . c l ose() ;
+
+
+    conn . c l ose() ;
+
+
+    stati c String readEntry(Stri ng prompt)
+
+
+    try
+
+
+    {
+
+
+    StringBuffer buffer=new StringBuffer();
+
+
+    System . out .print(prompt);
+
+
+    System . out . flush();
+
+
+    BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+
+
+    Str ing c=br.readLine();
+
+
+    return c ;
+
+
+    }catch(IOException e)
+
+
+    {
+
+
+    **return** **\\****e** **";**
+
+
+    import java . sql.*;
+
+
+    class customer
+
+
+    public static void main(String args[])throws SQLException,ClassNotFoundException'
+  merge: -1
+  pgno: 89
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_90_0.png)
+
+
+    *]DBC* Oava Database Connectivity)
+
+
+    79
+
+
+    Class. forName ("sun . j dbc . odbc . JdbcOdbcDri ver") ;
+
+
+    Connection conn= DriverManager .get Connection ( "jd!bc: odbc: sanjay",
+
+
+    "dummy","ssi");
+
+
+    System. out. println ("connected succes.sfully to the database");
+
+
+    try
+
+
+    {
+
+
+    Statement stnt=conn . createStatement();
+
+
+    ResultSet rs=stnt .executeQuery("select ''connected'' from dual");
+
+
+    rs.next ();
+
+
+    String s=rs.getString(l);
+
+
+    System. out .println(s);
+
+
+    stnt.close();
+
+
+    conn. close();
+
+
+    }catch(Exception ex){
+
+
+    System. out . println ("the exception raised is" +ex) ;
+
+
+    import java . sql.*;
+
+
+    class jdbc6
+
+
+    {
+
+
+    public static void main(String args[))throws Exception
+
+
+    {
+
+
+    Class . forName ("sun . j dbc . odbc . JdbcOdbcDri ver") ;
+
+
+    Connect ion conn=Dri verManager . getConnection ( "j dbc: odbc : madhuri" ,
+
+
+    "dummy", "ssi");
+
+
+    try{
+
+
+    System. out .println("connected successfully to the database");
+
+
+    System.out .println("altering table detailsll" ) ;
+
+
+    Statement stnt=conn . createStatement();
+
+
+    stnt . executeUpdate ("alter table tel modify (address varchar2 (70)) ");
+
+
+    System. out . println ("table tel altered") ;
+
+
+    }catch (Exception er){
+
+
+    System.out .println("the exception is raised"+er);
+
+
+    import java . sql.*;
+
+
+    public class jdbc
+
+
+    {
+
+
+    public j dbc ()
+
+
+    {
+
+
+    try
+
+
+    {'
+  merge: -1
+  pgno: 90
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_91_0.png)
+
+
+    80
+
+
+    Secrets of Java
+
+
+    String dn = "sun.jdbc .odbc.JdbcOdbcDriver";
+
+
+    Driver dd = (Driver)Class . forName(dn) . newinstance() ;
+
+
+    String dburl = "jdbc:odbc:student";
+
+
+    if(dd .acceptsURL(dburl))
+
+
+    {
+
+
+    System. out .println("url is val id") ;
+
+
+    e l se
+
+
+    System.out .println( "url is not valid" ) ;
+
+
+    catch(Exception el{}
+
+
+    public static void main(String args[])
+
+
+    {
+
+
+    jdbc jd =new jdbc() ;
+
+
+    import java .sql. *;
+
+
+    public class drop
+
+
+    {
+
+
+    public static void main(String arg[])
+
+
+    {
+
+
+    try
+
+
+    {
+
+
+    Cl ass . forName ("sun . jdbc . odbc . JdbcOdbcDriver") ;
+
+
+    Connection c = DriverManager.getConnection("jdbc:odbc:g", "dummy", "ssi");
+
+
+    Statement s = c . createStatement();
+
+
+    s . execute ("drop table ssi3") ;
+
+
+    System. out . println ("Table draped ....... ") ;
+
+
+    s . close() ;
+
+
+    c .close();
+
+
+    }catch(Exception e)
+
+
+    {
+
+
+    System. out . println ("Some error" +e) ;
+
+
+    **ODD**'
+  merge: -1
+  pgno: 91
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_92_0.png)
+
+
+    **Chapter** **16**
+
+
+    **BASICS** **OF** **UTIL** **PACKAGE**
+
+
+    ***The*** ***java.*** ***uti/.****
+
+
+    ***package***
+
+
+    The java.util package provides 34 classes and 13 interfaces that support Collection
+    API., date/
+
+
+    ca~endar operations, internationalization, parsing, and basic event processing.
+    The package is
+
+
+    used to work mainly with date and calendars.
+
+
+    The example of classes is GregorianCalendar, SimpleTimeZone and Timezone. The
+    Date
+
+
+    class is responsible for encapsulating date and time information. The StringTokenizer
+    class
+
+
+    provides methods to parse a string.
+
+
+    **Examples** :
+
+
+    Import java .lang .*; (default package)
+
+
+    Import java.util .*;
+
+
+    Public class StrToken
+
+
+    **Output**
+
+
+    this
+
+
+    is
+
+
+    public static void main(String args(])
+
+
+    StringTokenzier token = new StringTokenizer (" This is a test for tokens") :
+
+
+    While(token . hasMoreTokens() )
+
+
+    System.out .println(token .nextToken());
+
+
+    **81**'
+  merge: -1
+  pgno: 92
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_93_0.png)
+
+
+    82
+
+
+    Secrets of Java
+
+
+    a
+
+
+    test
+
+
+    for
+
+
+    tokens
+
+
+    //Example for Aloirthms class of java .util . *;
+
+
+    import java .util.*;
+
+
+    public c l ass alog
+
+
+    public static void main(String pp[]);
+
+
+    LinkedLi st 11 = new LinkedList();
+
+
+    ll.add(new Integer( - 8));
+
+
+    ll. add(new Integer(20));
+
+
+    ll.add(new Integer(-20));
+
+
+    ll.add(new Integer(B)) ;
+
+
+    Comparator co = new Collections.reverseOrder();
+
+
+    Collections . sort(ll,co) ;
+
+
+    Iterator li = ll.iterator();
+
+
+    System.o ut .println( "List sorted in reverse :• ) ;
+
+
+    while(li.hasNext())
+
+
+    System .out .print(li.next() + "• ) ;
+
+
+    System .out .println();
+
+
+    Collections . shuffle(ll);
+
+
+    li = ll . iterator();
+
+
+    System . out. println (" Li st shuffled :" ) ;
+
+
+    while(li.hasNext())
+
+
+    System . out.print(li . next() + "" ) ;
+
+
+    System. out .println() ;
+
+
+    System. out .println ( "Minimum · " + Collections .min(ll));
+
+
+    System. out .pri n t ln ("Maximum ·" + Collections. max (ll)) ;
+
+
+    public class ru
+
+
+    public stati c void main(String at[) )throws Exception'
+  merge: -1
+  pgno: 93
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_94_0.png)
+
+
+    Runtime rn = Runtime .getRuntime();
+
+
+    rn . exec ( "c : /windows . 000 /notepad. exe") ;
+
+
+    / *String sl = new String ("abc");
+
+
+    String s2 = new String ("ABC") ;
+
+
+    System .out .println(sl . compareTo(s2)) ;*/
+
+
+    import java .util .*;
+
+
+    public class SetExample
+
+
+    public static void main (String args[])
+
+
+    Set set= new HashSet();
+
+
+    set.add("Bernadine");
+
+
+    set.add("Elizabeth");
+
+
+    set.add("Gene");
+
+
+    set. add ("Elizabeth" l ;
+
+
+    set.add("Clara"l;
+
+
+    System. out .println(set) ;//no duplicates
+
+
+    Set sortedSet = new Treeset(set);
+
+
+    System .out .println(sortedSet) ;//sorted
+
+
+    /*[Gene, Clara , Bernadine, Elizabeth]
+
+
+    [Bernadine , Clara, Elizabeth, Gene]
+
+
+    */
+
+
+    //Example for Hashtable class of java.util.*;
+
+
+    import java.util.*;
+
+
+    public class hashtdemo
+
+
+    public static void main(String pp[))
+
+
+    Hashtable hs =new Hashtable();
+
+
+    Enumeration enu;
+
+
+    String str;
+
+
+    double bal;
+
+
+    The java. util. * package
+
+
+    83'
+  merge: -1
+  pgno: 94
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_95_0.png)
+
+
+    84
+
+
+    Secrets of Java
+
+
+    hs .put("John" ,new Double(3456.2));
+
+
+    hs .put ("Sara", new Double(6734 . 232));
+
+
+    hs . put ( "Naren", new Double (6876 .122)) ;
+
+
+    hs .put("Nithya",new Double(3344.56));
+
+
+    hs.put("Sasi" ,new Double(539 .84));
+
+
+    enu = hs . keys ( ) ;
+
+
+    while (enu.hasMoreElements())
+
+
+    str = (String) enu .nextElement() ;
+
+
+    System.out .println(str + " :" + h s .get(str)) ;
+
+
+    System .out .println () ;
+
+
+    bal = ((Double)hs.get("Sara")).doubleValue();
+
+
+    hs .put ("Sara", new Double (bal+lOOO));
+
+
+    System. out. println ("Sara • s new balance : " + hs. get ( "Sara") ) ;
+
+
+    //Example for vector class of java . util*;
+
+
+    import java . util. *;
+
+
+    class vectordemo
+
+
+    public static void main(String pp[))
+
+
+    Vector ve =new Vector(3,2);
+
+
+    System.out .println("Initial size : " + ve .size());
+
+
+    System.out .println ("Initial capacity :• + ve .capacity()) ;
+
+
+    ve.addElement(new Integer (l ));
+
+
+    ve.addElement(new Integer(2));
+
+
+    ve .addElement(new Integer(3));
+
+
+    ve .addElement(new Integer (4));
+
+
+    System. out.println("Capacity after 4 additions ·" + ve .capacity());
+
+
+    ve.addElement(new Double(5.451));
+
+
+    System. out . println ("Current capacity ·" + ve. capacity());
+
+
+    ve .addElement(new Double(6.081));
+
+
+    ve . addElement(new Integer (?)) ;
+
+
+    System. out. println ("Current capacity · • + ve . capacity()) ;'
+  merge: -1
+  pgno: 95
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_96_0.png)
+
+
+    The java.util.* package
+
+
+    85
+
+
+    ve.addElement(new Float (9 .41)) ;
+
+
+    ve.addElement(new Integer(l9));
+
+
+    System.out .println("current capacity ·" + ve.capacity());
+
+
+    ve.addElement(new Integer (lO)) ;
+
+
+    ve.addElement(new Integer (ll)) ;
+
+
+    System .out.println("First element :" + (Integer)ve . firstElement());
+
+
+    System . out.println("Last element :" + (Integer)ve . lastElement());
+
+
+    if(ve . contains(new I nteger(30)))
+
+
+    System . out . prin t ln ("Vector contains 3") ;
+
+
+    Enumeration enu = ve . e l ements();
+
+
+    System. out.println("\n Elements in Vector :");
+
+
+    while(enu.hasMoreElements())
+
+
+    System. out .print (enu. nextElement () +" ");
+
+
+    System.out.println();
+
+
+    *I** Iterator ite = ve.iterator();
+
+
+    System.out.println ("\n Elements in Vector :");
+
+
+    while(ite.hasNext())
+
+
+    System.out .print (ite .next() +" ");
+
+
+    System.out.println(); */
+
+
+    **000**'
+  merge: -1
+  pgno: 96
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_97_0.png)
+
+
+    ***Index***
+
+
+    0
+
+
+    Dot Operator, 12
+
+
+    Driver Managers, 75
+
+
+    Access Modifier, 16
+
+
+    DTD, 8
+
+
+    AclionListener, 34
+
+
+    Dynamic Binding, 1
+
+
+    Applet Type, 3
+
+
+    [I]
+
+
+    Applet, 44
+
+
+    Application IYPe, 3
+
+
+    E-mail, 5
+
+
+    Arrays, 15
+
+
+    Exceptions, 24
+
+
+    AWT, 33
+
+
+    Exteranet, 5
+
+
+    [I]
+
+
+    0
+
+
+    Blocked State, 69
+
+
+    File, 27
+
+
+    BorderLayout, 33
+
+
+    Final, 17
+
+
+    Browser, 8
+
+
+    Finally Block, 25
+
+
+    Finally, 24
+
+
+    0
+
+
+    FlowLayout, 33
+
+
+    FocusListeners, 34
+
+
+    CardLayout, 34
+
+
+    @]
+
+
+    Catch, 24
+
+
+    CERN, 4
+
+
+    GridBagLayout, 34
+
+
+    Class, 1
+
+
+    GridLayout, 34
+
+
+    Client/Server, 61
+
+
+    GUI, 33
+
+
+    Constructor, 16
+
+
+    [BJ
+
+
+    @]
+
+
+    Hot Java, 44
+
+
+    Data Abstraction, 1
+
+
+    HTML, 7
+
+
+    Datagram, 62
+
+
+    [!]
+
+
+    DatagramPacket, 62
+
+
+    DatagramSocket, 62
+
+
+    Inheritance, 2, 18
+
+
+    Dead State, 70
+
+
+    Input streams, 27
+
+
+    86'
+  merge: -1
+  pgno: 97
+- img_proc: true
+  md: '![](img/2939962d59d1a33af55f4203ff42bf76_98_0.png)
+
+
+    Index
+
+
+    87
+
+
+    Interface, 20
+
+
+    Port Number, 61
+
+
+    Internet Explorer, 44
+
+
+    Private, 17
+
+
+    Internet, 5
+
+
+    Protected, 16
+
+
+    Intranet, 5
+
+
+    Public, 16
+
+
+    IP Address, 61
+
+
+    ~
+
+
+    **OJ**
+
+
+    RandomAccessFile, 27
+
+
+    JAVA, 2
+
+
+    Runnable Interface, 68
+
+
+    Java.util, 81
+
+
+    Runnable State, 69
+
+
+    JDBC, 74
+
+
+    Running State, 69
+
+
+    JDK, 2
+
+
+    **[I]**
+
+
+    **[I]**
+
+
+    Search Engine, 5
+
+
+    Keywords, 12
+
+
+    ServerSocket, 62
+
+
+    **[I]**
+
+
+    Socket, 62
+
+
+    Static, 17
+
+
+    Life Cyde uf Applel, 44
+
+
+    String, 13
+
+
+    Life Cycle of Thread, 68
+
+
+    StringBuffer, 14
+
+
+    Lynx, 44
+
+
+    Swing, 50
+
+
+    [ill
+
+
+    Synchronization, 70
+
+
+    [!]
+
+
+    Message Passing, 2
+
+
+    MouseListener, 34
+
+
+    Tags, 7
+
+
+    ~
+
+
+    TCP/IP, 61
+
+
+    Thread Class, 67
+
+
+    Netscape, 44
+
+
+    Thread Priority, 70
+
+
+    Networking, 61
+
+
+    Thread, 67
+
+
+    New Operator, 12
+
+
+    Throw, 24, 26
+
+
+    @]
+
+
+    Try, 24
+
+
+    @]
+
+
+    Oak, 1
+
+
+    Object, 1
+
+
+    UDP, 61
+
+
+    ODBC, 75
+
+
+    URL, 4
+
+
+    Output Streams, 27
+
+
+    ~
+
+
+    **0**
+
+
+    WindowListeners, 34
+
+
+    Package, 22
+
+
+    **ODD**
+
+
+    Polymorphism, 2'
+  merge: -1
+  pgno: 98
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 99
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 100
+- img_proc: true
+  md: '# ABOUT THE BOOK
+
+
+    The book ''Secrets of Java'' covers all the important topics of Java programs.
+    Each and every chapter has been prepared with key point and simple examples. If
+    you read this book you can confidently say that ''I know java''. One importance
+    of this book is that it contains CD with more examples in all topics of java,
+    which is pure hard coding that will help you to know the syntax of java very easily.
+
+
+    # ABOUT THE AUTHOR
+
+
+    Er. R. Kabilan is presently working as a Senior Lecturer in Thiruvalluar College
+    of Engineering and Technology. Earlier he worked as a Software Engineer in SSI
+    Limited around the various branches at a National level. He obtained his B.E.
+    degree from Madras University and his M.E. from Anna University, his areas of
+    interest are Sun-Micystems products, DSP and Power Electronics.
+
+
+    ISBN : 978-81-318-0720-0
+
+
+    ![](img/2939962d59d1a33af55f4203ff42bf76_101_0.png)'
+  merge: -1
+  pgno: 101

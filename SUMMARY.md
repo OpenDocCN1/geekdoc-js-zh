@@ -1267,6 +1267,7 @@
 +   [Sams 自学 PHP、MySQL 和 Apache：合集](docs/sams-teach-yourself-php-mysql-and-apache-all-in-one---includ/README.md)
 +   [Web 设计师 Sass](docs/sass-for-web-designers/README.md)
 +   [JavaScript 和 Ajax 脚本：设计师指南](docs/scriptin-with-javascript-and-ajax-a-designers-guide/README.md)
++   [Java 秘籍：面向学生、学者及工业专业人士的自学方法](docs/secrets-of-java-a-self-learning-approach-for-students-academ/README.md)
 +   [Selenium Webdriver 与 JavaScript 编程简化：编程初学者指南 - 2 合 1](docs/selenium-webdriver-and-javascript-coding-made-simple-a-begin/README.md)
 +   [JavaScript 简化指南](docs/simplifying-javascript/README.md)
 +   [Simply Electron：使用 JavaScript 精通桌面软件开发](docs/simply-electron-mastering-desktop-software-development-with-/README.md)
