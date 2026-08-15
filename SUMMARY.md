@@ -1275,6 +1275,7 @@
 +   [Selenium Webdriver 与 JavaScript 编程简化：编程初学者指南 - 2 合 1](docs/selenium-webdriver-and-javascript-coding-made-simple-a-begin/README.md)
 +   [Node.js Selenium WebDriver 秘籍：JavaScript Selenium WebDriver 解决方案指南（Test 秘籍系列）（第 6 卷）](docs/selenium-webdriver-recipes-in-nodejs-the-problem-solving-gui/README.md)
 +   [七周精通七种语言](docs/seven-languages-in-seven-weeks/README.md)
++   [针对重要程序员的简易 JavaScript：快速掌握核心 JavaScript 概念](docs/simplified-javascript-for-very-important-programmers-the-fas/README.md)
 +   [JavaScript 简化指南](docs/simplifying-javascript/README.md)
 +   [Simply Electron：使用 JavaScript 精通桌面软件开发](docs/simply-electron-mastering-desktop-software-development-with-/README.md)
 +   [SitePoint：现代 JavaScript 工具与技能](docs/sitepoint-modern-javascript-tools-skills/README.md)
