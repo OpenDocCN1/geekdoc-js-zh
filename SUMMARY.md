@@ -1255,6 +1255,7 @@
 +   [21 天自学 JavaScript](docs/sams-teach-yourself-javascript-in-21-days/README.md)
 +   [24 小时自学 JavaScript](docs/sams-teach-yourself-javascript-in-24-hours/README.md)
 +   [24 小时自学 JavaScript（第二版）](docs/sams-teach-yourself-javascript-in-24-hours-2nd-edition/README.md)
++   [24 小时自学 JavaScript（第 3 版）](docs/sams-teach-yourself-javascript-in-24-hours-3rd-edition/README.md)
 +   [Sams 24 小时自学 JavaScript（第4 版）](docs/sams-teach-yourself-javascript-in-24-hours-4th-edition-sams-/README.md)
 +   [24 小时自学 JavaScript [6版]](docs/sams-teach-yourself-javascript-in-24-hours-6th-ed/README.md)
 +   [Sams 24 小自学 Javaserver Pages](docs/sams-teach-yourself-javaserver-pages-in-24-hours-sams-teach-/README.md)
