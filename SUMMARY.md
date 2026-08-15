@@ -1278,6 +1278,7 @@
 +   [针对重要程序员的简易 JavaScript：快速掌握核心 JavaScript 概念](docs/simplified-javascript-for-very-important-programmers-the-fas/README.md)
 +   [JavaScript 简化指南](docs/simplifying-javascript/README.md)
 +   [Simply Electron：使用 JavaScript 精通桌面软件开发](docs/simply-electron-mastering-desktop-software-development-with-/README.md)
++   [JavaScript 入门指南](docs/simply-javascript/README.md)
 +   [SitePoint：现代 JavaScript 工具与技能](docs/sitepoint-modern-javascript-tools-skills/README.md)
 +   [开源平台智能计算](docs/smart-computing-with-open-source-platforms/README.md)
 +   [移动 Web 开发：使用 HTML5、CSS3 和 Javascript 开启移动开发](docs/smashing-mobile-web-development-going-mobile-with-html5-css3/README.md)
