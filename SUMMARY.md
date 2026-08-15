@@ -1261,6 +1261,7 @@
 +   [Sams 24 小自学 Javaserver Pages](docs/sams-teach-yourself-javaserver-pages-in-24-hours-sams-teach-/README.md)
 +   [Sams 24 小时自学 jQuery Mobile](docs/sams-teach-yourself-jquery-mobile-in-24-hours-sams-teach-you/README.md)
 +   [24 小时自学 Perl（第3版）](docs/sams-teach-yourself-perl-in-24-hours-3rd-edition-teach-yours/README.md)
++   [Sams 24 小自学 PHP，第二版](docs/sams-teach-yourself-php-in-24-hours-second-edition/README.md)
 +   [Sams 24 小时自学 PHP：Web 应用；数据库；Cookie](docs/sams-teach-yourself-php-in-24-hours-web-applications-databas/README.md)
 +   [Sams 自学 PHP、MySQL 和 Apache：合集](docs/sams-teach-yourself-php-mysql-and-apache-all-in-one---includ/README.md)
 +   [Web 设计师 Sass](docs/sass-for-web-designers/README.md)
