@@ -1314,6 +1314,7 @@
 +   [Struts 设计与编程 [电子资源]：入门指南](docs/struts-design-and-programming-electronic-resource-a-tutorial/README.md)
 +   [结构 核心技能指南](docs/strutws-essential-skills/README.md)
 +   [探索网页设计师技术学习指南](docs/studyguide-for-exploring-web-technologies-for-designers-by-b/README.md)
++   [CSS 样式设计：设计师指南 (第2版) (Voices That Matter)](docs/stylin-with-css-a-designers-guide-2nd-edition-voices-that-ma/README.md)
 +   [SurviveJS - Webpack 和 React：从入门到精通](docs/survivejs---webpack-and-react-from-apprentice-to-master/README.md)
 +   [Svelte：初学者指南](docs/svelte-a-beginners-guide/README.md)
 +   [教孩子编程：家长友好 Python 编程指南](docs/teach-your-kids-to-code-a-parent-friendly-guide-to-python-pr/README.md)
