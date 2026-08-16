@@ -1304,6 +1304,7 @@
 +   [精神 A.D.D.：克服精神性注意力缺陷障碍](docs/spiritual-a-d-d-overcoming-spiritual-attention-deficit-disor/README.md)
 +   [Spring MVC 入门指南](docs/spring-mvc-a-tutorial-a-tutorial/README.md)
 +   [SQL：SQL 精通指南（SQL 编程语言、数据库、计算机编程、结构化查询语言、脚本、JavaScript）](docs/sql-become-a-master-in-sql-sql-programming-language-database/README.md)
++   [从这里开始：使用 HTML5 和 JavaScript 构建 Windows 8 应用](docs/start-here-build-windows-8-apps-with-html5-and-javascript/README.md)
 +   [使用 Html, Css 和 Javascript 开始编程指南](docs/start-programming-using-html-css-and-javascript/README.md)
 +   [Angular 路由分步指南：学习使用路由和导航创建客户端及单页应用](docs/step-by-step-angular-routing-learn-to-create-client-side-and/README.md)
 +   [探索网页设计师技术学习指南](docs/studyguide-for-exploring-web-technologies-for-designers-by-b/README.md)
