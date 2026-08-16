@@ -1298,6 +1298,7 @@
 +   [软件设计示例：Python 工具入门指南](docs/software-design-by-example-a-tool-based-introduction-with-py/README.md)
 +   [JavaScript 软件工具](docs/software-tools-in-javascript/README.md)
 +   [JavaScript 入门指南](docs/speaking-javascript/README.md)
++   [HTML and XHTML 使用指南特别版](docs/special-edition-using-html-and-xhtml/README.md)
 +   [精神 A.D.D.：克服精神性注意力缺陷障碍](docs/spiritual-a-d-d-overcoming-spiritual-attention-deficit-disor/README.md)
 +   [SQL：SQL 精通指南（SQL 编程语言、数据库、计算机编程、结构化查询语言、脚本、JavaScript）](docs/sql-become-a-master-in-sql-sql-programming-language-database/README.md)
 +   [使用 Html, Css 和 Javascript 开始编程指南](docs/start-programming-using-html-css-and-javascript/README.md)
