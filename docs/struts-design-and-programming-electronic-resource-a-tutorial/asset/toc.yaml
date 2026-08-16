@@ -1,0 +1,666 @@
+- - '#'
+  - Struts 设计与编程 [电子资源]：入门指南
+- - '##'
+  - BUDI KURNIAWAN
+- - '#'
+  - 警告与免责声明
+- - '#'
+  - 索引 ............................................................................425
+- - '#'
+  - 引言
+- - '#'
+  - 为什么 Servlets 还没有灭亡
+- - '##'
+  - Model 1 的问题
+- - '##'
+  - Model 2
+- - '##'
+  - 注意
+- - '##'
+  - Struts 的优势
+- - '##'
+  - 注意事项
+- - '##'
+  - 序言
+- - '##'
+  - 章节概述
+- - '##'
+  - 代码下载
+- - '##'
+  - 其他资源
+- - '#'
+  - 第 1 章：Model 2 与 Struts
+- - '##'
+  - 备记
+- - '##'
+  - 作用域变量和作用域对象
+- - '##'
+  - 一个简单的 Model 2 应用
+- - '##'
+  - ProductTO 类
+- - '###'
+  - 列表 1.1：ProductTO 类
+- - '##'
+  - ControllerServlet 类
+- - '###'
+  - 列表 1.2：ControllerServlet
+- - '###'
+  - 列表 1.4：displaySavedProduct.jsp 页面
+- - '##'
+  - 标签库描述符的直接引用和间接引用
+- - '##'
+  - 一个基础的 Model 2 应用程序
+- - '##'
+  - 部署描述符
+- - '###'
+  - 列表 1.6：部署描述符 (web.xml)
+- - '##'
+  - 使用应用程序
+- - '##'
+  - 引入视图管理器和管理器
+- - '###'
+  - 列表 1.7：ActionManager
+- - '###'
+  - 列表 1.8：ViewManager
+- - '###'
+  - 列表 1.9：controller servlet 中的 process 方法
+- - '#'
+  - 注意
+- - '#'
+  - 进入 Struts
+- - '#'
+  - Model 2 与 Struts
+- - '##'
+  - 注意
+- - '##'
+  - Struts 配置文件
+- - '##'
+  - 注意
+- - '##'
+  - 警告
+- - '##'
+  - Action, ActionForward 和 ActionMapping
+- - '##'
+  - 第一章：模型 2 与 Struts
+- - '##'
+  - 编辑部署描述符 (web.xml)
+- - '##'
+  - 一个 Struts 示例
+- - '##'
+  - 一个 Struts 重写示例
+- - '##'
+  - 部署描述符与 Struts 配置文件
+- - '###'
+  - Action 类
+- - '##'
+  - 运行应用程序
+- - '##'
+  - Struts 的 MVC 模式
+- - '#'
+  - 总结
+- - '#'
+  - 第 2 章：使用 Action Forms 进行输入验证
+- - '##'
+  - Action Forms 概述
+- - '##'
+  - 使用 Action Forms
+- - '##'
+  - 使用 HTML 标签库
+- - '###'
+  - 注意事项
+- - '##'
+  - 使用标签库
+- - '##'
+  - 错误处理
+- - '#'
+  - 第2章：使用 Action 表单进行输入验证
+- - '#'
+  - 另一个示例
+- - '##'
+  - 目录结构
+- - '##'
+  - Struts 配置文件
+- - '##'
+  - Action 类
+- - '###'
+  - 列表 2.9：GetProductAction
+- - '###'
+  - 列表 2.10：UpdateProductAction 类
+- - '##'
+  - 运行应用程序
+- - '##'
+  - 多页表单
+- - '##'
+  - 目录结构
+- - '##'
+  - Struts 配置文件
+- - '###'
+  - 列表 2.13：struts-config.xml 文件
+- - '##'
+  - Action 表单
+- - '###'
+  - 列表 2.14：EmployeeForm 类
+- - '##'
+  - 动作类
+- - '###'
+  - 列表 2.15：ActionAction 类
+- - '##'
+  - 运行应用程序
+- - '##'
+  - 动态表单
+- - '##'
+  - 目录结构
+- - '##'
+  - Struts 配置文件
+- - '###'
+  - 列表 2.16：struts-config.xml 文件
+- - '#'
+  - 动态 Action 表单
+- - '##'
+  - Action 类
+- - '##'
+  - 运行应用程序
+- - '##'
+  - 总结
+- - '#'
+  - 第 3 章：HTML 标签库
+- - '##'
+  - html 标签
+- - '##'
+  - form 标签
+- - '##'
+  - text, password, hidden, textarea 标签
+- - '##'
+  - reset 标签
+- - '##'
+  - button 标签
+- - '##'
+  - checkbox 标签
+- - '##'
+  - multibox 标签
+- - '###'
+  - 使用 LabelValueBean 管理选项
+- - '##'
+  - radio 标签
+- - '##'
+  - select 标签
+- - '##'
+  - option 标签
+- - '##'
+  - options 标签
+- - '##'
+  - 与包含集合的对象配合 options
+- - '##'
+  - 与包含集合配合 options
+- - '##'
+  - 与集合配合 options
+- - '#'
+  - link 标签
+- - '##'
+  - 添加一个请求参数
+- - '##'
+  - 包含多个请求参数
+- - '##'
+  - img 标签
+- - '##'
+  - rewrite 标签
+- - '##'
+  - frame 标签
+- - '##'
+  - image 标签
+- - '##'
+  - xhtml 标签
+- - '##'
+  - 输入验证与数据转换示例
+- - '###'
+  - 列表 4.1：app04a 的 Struts 配置文件
+- - '#'
+  - 第 4 章：输入验证与数据转换
+- - '##'
+  - 列表 4.2：OrderTO 类
+- - '##'
+  - 输入验证与数据转换示例
+- - '##'
+  - 使用 BeanUtils
+- - '##'
+  - 列表 4.5：SaveOrderAction 类
+- - '##'
+  - 高效转换
+- - '##'
+  - 列表 4.9：displayAddOrderForm.jsp 页面
+- - '##'
+  - 列表 4.10：app4c.action.SaveAction 类
+- - '##'
+  - 列表 4.11：DateTool 类
+- - '#'
+  - 第 5 章：Validator 插件
+- - '##'
+  - 默认验证器
+- - '##'
+  - required
+- - '##'
+  - minlength
+- - '##'
+  - maxlength
+- - '##'
+  - byte, short, integer, long, float, double
+- - '##'
+  - intRange
+- - '##'
+  - floatRange
+- - '##'
+  - date
+- - '##'
+  - Note
+- - '##'
+  - mask
+- - '##'
+  - email
+- - '##'
+  - url
+- - '##'
+  - creditCard
+- - '##'
+  - validwhen
+- - '##'
+  - 使用 Validator
+- - '#'
+  - 编写 Action Form
+- - '#'
+  - 编写验证规则
+- - '##'
+  - 验证规则
+- - '#'
+  - 运行应用程序
+- - '##'
+  - 注意
+- - '##'
+  - global 和 validator 元素
+- - '##'
+  - formset 和 form 元素
+- - '##'
+  - 使用客户端验证
+- - '##'
+  - 使用 DynaForm
+- - '##'
+  - 混合 Validator 与自定义验证
+- - '##'
+  - 声明基于 action 的规则
+- - '###'
+  - 列表 5.6：displayOrderForm2.jsp 页面
+- - '###'
+  - 列表 5.7：structs-config.xml 文件
+- - '##'
+  - 验证器插件 (Validator Plugin)
+- - '###'
+  - 列表 5.9：CustomValidator 类
+- - '##'
+  - 编写自定义验证器
+- - '##'
+  - 注册自定义验证器
+- - '##'
+  - 验证文件
+- - '###'
+  - 列表 5.11：验证文件
+- - '##'
+  - 带客户端验证的自定义验证器
+- - '##'
+  - 注册验证器插件
+- - '##'
+  - 运行应用
+- - '##'
+  - 带客户端验证的自定义验证器
+- - '##'
+  - 编写函数
+- - '###'
+  - 列表 5.13：JavaScript 函数
+- - '##'
+  - 注册验证器
+- - '##'
+  - JSPs页面
+- - '##'
+  - 运行应用程序
+- - '##'
+  - 使用 validwhen
+- - '##'
+  - 总结
+- - '#'
+  - 第 6 章 表达式语言
+- - '##'
+  - 表达式语言语法
+- - '##'
+  - 保留关键字
+- - '##'
+  - '[ ] 和 . 运算符'
+- - '##'
+  - 表达式语言 (EL)
+- - '##'
+  - 求值
+- - '##'
+  - 访问 JavaBeans
+- - '##'
+  - 隐式对象
+- - '##'
+  - pageContext
+- - '##'
+  - initParam
+- - '##'
+  - param
+- - '##'
+  - paramValues
+- - '##'
+  - header
+- - '##'
+  - headerValues
+- - '##'
+  - cookie
+- - '##'
+  - 其他 EL 运算符
+- - '##'
+  - applicationScope, sessionScope, 和 pageScope
+- - '##'
+  - 算术运算符
+- - '#'
+  - 第 7 章：JSTL
+- - '##'
+  - 介绍 JSTL
+- - '##'
+  - 通用操作
+- - '##'
+  - out 标签
+- - '##'
+  - 条件操作
+- - '##'
+  - 处理输出取决于特定输入。
+- - '##'
+  - switch 语句
+- - '##'
+  - case 标签
+- - '##'
+  - otherwise 标签
+- - '##'
+  - if 标签
+- - '##'
+  - 迭代动作
+- - '##'
+  - forEach 标签
+- - '##'
+  - forTokens 标签
+- - '##'
+  - 格式化
+- - '##'
+  - formatNumber 标签
+- - '##'
+  - formatDate 标签
+- - '##'
+  - Time Zone 标签
+- - '##'
+  - setTimeZone 标签
+- - '##'
+  - parseNumber 标签
+- - '##'
+  - parseDate 标签
+- - '##'
+  - Functions
+- - '##'
+  - contains
+- - '##'
+  - containsIgnoreCase
+- - '##'
+  - endsWith
+- - '##'
+  - escapeXml
+- - '##'
+  - indexOf
+- - '##'
+  - join
+- - '##'
+  - length
+- - '##'
+  - replace
+- - '##'
+  - split
+- - '##'
+  - startsWith
+- - '##'
+  - substring
+- - '##'
+  - substringAfter
+- - '##'
+  - substringBefore
+- - '##'
+  - toLowerCase
+- - '##'
+  - toUpperCase
+- - '##'
+  - trim
+- - '##'
+  - 8 章：Bean 库
+- - '##'
+  - write 标签
+- - '##'
+  - cookie 标签
+- - '##'
+  - parameter 标签
+- - '##'
+  - define 标签
+- - '##'
+  - include 标签
+- - '##'
+  - message 标签
+- - '##'
+  - resource 标签
+- - '##'
+  - size 标签
+- - '##'
+  - 总结
+- - '#'
+  - 第 9 章：逻辑库
+- - '##'
+  - 数值比较
+- - '##'
+  - 使用 present 和 notPresent
+- - '##'
+  - 使用 equal
+- - '##'
+  - notEqual
+- - '##'
+  - lessThan
+- - '##'
+  - greaterEqual
+- - '##'
+  - 字符串匹配
+- - '##'
+  - 展示位置
+- - '##'
+  - forward（跳转）
+- - '##'
+  - redirect（重定向）
+- - '#'
+  - 第 10 章：Struts-EL, Nested, selectLabel
+- - '##'
+  - 集合工具
+- - '##'
+  - 集合工具标签
+- - '##'
+  - TestAction 类
+- - '##'
+  - execute 方法
+- - '##'
+  - 嵌套标签
+- - '##'
+  - 嵌套标签库 (Nested Library)
+- - '##'
+  - 列表 10.1：TestAction类的
+- - '##'
+  - 10 章：Struts-EL, Nested, selectLabel
+- - '##'
+  - 列表 10.2：displayAddForm.jsp
+- - '##'
+  - 列表 10.3：displayAddForm.jsp
+- - '##'
+  - 列表 10.4：SaveAction 类
+- - '##'
+  - 列表 10.5：displaySavedProduct.jsp
+- - '#'
+  - 第 11 章：消息处理与国际化
+- - '##'
+  - Struts 中区域
+- - '##'
+  - 注册文件
+- - '##'
+  - HTML标签库
+- - '##'
+  - messages 标签
+- - '##'
+  - JSTL I18N 库
+- - '##'
+  - setLocale
+- - '##'
+  - bundle
+- - '##'
+  - message
+- - '##'
+  - param
+- - '##'
+  - requestEncoding
+- - '##'
+  - 总结
+- - '#'
+  - 第 12 章：Tiles 框架
+- - '##'
+  - JSP包含
+- - '##'
+  - 初体验
+- - '##'
+  - 使用 JSP 定义
+- - '##'
+  - 比较 Java与定义
+- - '##'
+  - XML 定义
+- - '##'
+  - 列表 12.1：myLayout.jsp
+- - '##'
+  - 列表 12.2：displayAddForm.jsp。
+- - '##'
+  - 列表 12.3：displayAddForm.jsp
+- - '##'
+  - 列表 12.5：app1b 中的 displayAddForm.jsp。
+- - '##'
+  - 列表 12.8：app1c 中的 `displayAddForm.jsp`
+- - '##'
+  - add 标签
+- - '##'
+  - definition 标签 标签
+- - '##'
+  - getAsString
+- - '##'
+  - importAttribute
+- - '##'
+  - insert 标签
+- - '##'
+  - put 标签
+- - '##'
+  - putList 标签
+- - '##'
+  - bean 元素
+- - '##'
+  - item 元素
+- - '##'
+  - set-property 元素
+- - '##'
+  - 总结
+- - '#'
+  - 第 13 章：保护 Struts 应用
+- - '##'
+  - 编写安全策略
+- - '##'
+  - 保护资源
+- - '##'
+  - 指定登录方法
+- - '##'
+  - 身份验证方法
+- - '##'
+  - 基本认证
+- - '##'
+  - 基于表单认证
+- - '##'
+  - 列表 13.1：app13b 中的登录页面
+- - '##'
+  - 隐藏资源
+- - '##'
+  - 程序安全
+- - '##'
+  - getAuthType 方法
+- - '##'
+  - isUserInRole 方法
+- - '##'
+  - getUserPrincipal 方法
+- - '##'
+  - getRemoteUser 方法
+- - '##'
+  - 总结
+- - '#'
+  - 第 14 章：Config 对象
+- - '##'
+  - 使用 web.xml 文件或属性文件
+- - '##'
+  - 单例模式简介
+- - '##'
+  - 实现单例对象
+- - '##'
+  - 列表 14.4：ReadConfigAction 类
+- - '##'
+  - 列表 14.5：displayConfig.jsp 页面
+- - '##'
+  - 运行应用程序
+- - '##'
+  - 总结
+- - '#'
+  - 第 15 章：持久化层
+- - '##'
+  - DAO 模式
+- - '##'
+  - DAO模式的最简单实现
+- - '##'
+  - 带有 DAO接口的 DAO 模式
+- - '##'
+  - 结合抽象工厂模式的 DAO 模式
+- - '##'
+  - 实现 DAO 模式
+- - '##'
+  - DAO 接口和 DAOBase 类
+- - '##'
+  - 警告
+- - '##'
+  - Config 类
+- - '##'
+  - CustomerDAO接口
+- - '##'
+  - 实现 DAO模式
+- - '##'
+  - 列表 15.5：CustomerDAO接口
+- - '##'
+  - CustomerDAOMySQLImpl 类
+- - '##'
+  - 列表 15.6：CustomerDAOMySQLImpl接口
+- - '##'
+  - 实现 DAO模式
+- - '##'
+  - DAOFactory类
+- - '##'
+  - 客户端
+- - '##'
+  - 复杂数据结构
+- - '##'
+  - 运行应用程序
+- - '##'
+  - Hibernate
+- - '##'
+  - 总结
+- - '##'
+  - 实现缓存
+- - '#'
+  - 第 16 章：对象缓存
+- - '##'
+  - 列表 16.1：对象缓存

@@ -1311,6 +1311,7 @@
 +   [Angular 路由分步指南：学习使用路由和导航创建客户端及单页应用](docs/step-by-step-angular-routing-learn-to-create-client-side-and/README.md)
 +   [计算机程序结构与解释 (第2版) JavaScript 版](docs/structure-and-interpretation-of-computer-programs-2e-javascr/README.md)
 +   [计算机程序的结构与解释 (JavaScript 版)](docs/structure-and-interpretation-of-computer-programs-javascript/README.md)
++   [Struts 设计与编程 [电子资源]：入门指南](docs/struts-design-and-programming-electronic-resource-a-tutorial/README.md)
 +   [探索网页设计师技术学习指南](docs/studyguide-for-exploring-web-technologies-for-designers-by-b/README.md)
 +   [SurviveJS - Webpack 和 React：从入门到精通](docs/survivejs---webpack-and-react-from-apprentice-to-master/README.md)
 +   [Svelte：初学者指南](docs/svelte-a-beginners-guide/README.md)
