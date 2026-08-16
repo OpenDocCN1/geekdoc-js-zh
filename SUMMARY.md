@@ -1307,6 +1307,7 @@
 +   [从这里开始：使用 HTML5 和 JavaScript 构建 Windows 8 应用](docs/start-here-build-windows-8-apps-with-html5-and-javascript/README.md)
 +   [使用 Html, Css 和 Javascript 开始编程指南](docs/start-programming-using-html-css-and-javascript/README.md)
 +   [HTML、CSS 和 JavaScript 编程入门 (Chapman & Hall／CRC 计算书籍丛第 17 册)](docs/start-programming-using-html-css-and-javascript-chapman-hall/README.md)
++   [JavaScript 编程入门：由教师编写的 JavaScript 语言基础，一本非常适合零基础读者的好书](docs/starting-programming-with-javascript-fundamentals-of-the-the/README.md)
 +   [Angular 路由分步指南：学习使用路由和导航创建客户端及单页应用](docs/step-by-step-angular-routing-learn-to-create-client-side-and/README.md)
 +   [探索网页设计师技术学习指南](docs/studyguide-for-exploring-web-technologies-for-designers-by-b/README.md)
 +   [SurviveJS - Webpack 和 React：从入门到精通](docs/survivejs---webpack-and-react-from-apprentice-to-master/README.md)
