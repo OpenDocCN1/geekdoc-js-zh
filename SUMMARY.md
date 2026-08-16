@@ -1322,6 +1322,7 @@
 +   [攻克 TypeScript：从 JavaScript 升级](docs/tackling-typescript-upgrading-from-javascript/README.md)
 +   [教孩子编程：家长友好 Python 编程指南](docs/teach-your-kids-to-code-a-parent-friendly-guide-to-python-pr/README.md)
 +   [自学 Javascript](docs/teach-yourself---javascript/README.md)
++   [视觉自学 HTML 和 CSS 入门指南](docs/teach-yourself-visually-html-and-css-description-based-on-pr/README.md)
 +   [JavaScript 应用测试实战](docs/test-driving-javascript-applications/README.md)
 +   [全合版 HTML、CSS 和 JavaScript 初学者指南：涵盖最重要的三个内容](docs/the-all-in-one-html-css-and-javascript-beginners-guide-cover/README.md)
 +   [青少年焦虑生存指南：克服恐惧、担忧与恐慌的 CBT 技能（即时帮助解决方案系列）](docs/the-anxiety-survival-guide-for-teens-cbt-skills-to-overcome-/README.md)
