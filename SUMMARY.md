@@ -1309,6 +1309,7 @@
 +   [HTML、CSS 和 JavaScript 编程入门 (Chapman & Hall／CRC 计算书籍丛第 17 册)](docs/start-programming-using-html-css-and-javascript-chapman-hall/README.md)
 +   [JavaScript 编程入门：由教师编写的 JavaScript 语言基础，一本非常适合零基础读者的好书](docs/starting-programming-with-javascript-fundamentals-of-the-the/README.md)
 +   [Angular 路由分步指南：学习使用路由和导航创建客户端及单页应用](docs/step-by-step-angular-routing-learn-to-create-client-side-and/README.md)
++   [计算机程序的结构与解释 (JavaScript 版)](docs/structure-and-interpretation-of-computer-programs-javascript/README.md)
 +   [探索网页设计师技术学习指南](docs/studyguide-for-exploring-web-technologies-for-designers-by-b/README.md)
 +   [SurviveJS - Webpack 和 React：从入门到精通](docs/survivejs---webpack-and-react-from-apprentice-to-master/README.md)
 +   [Svelte：初学者指南](docs/svelte-a-beginners-guide/README.md)
