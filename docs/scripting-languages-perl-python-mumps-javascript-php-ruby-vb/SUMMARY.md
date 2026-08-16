@@ -1,0 +1,2 @@
++   [脚本语言：Perl、Python、Mumps、Javascript、Php、Ruby、Vbscript、Awk、Command.com、Sed、Bash、Autolisp、Tcl、Shell 脚本、Quakec](README.md)
++   [脚本语言：Perl、Python、Mumps、Javascript、Php、Ruby、Vbscript、Awk、Command.com、Sed、Bash、Autolisp、Tcl、Shell 脚本、Quakec](scripting-languages-perl-python-mumps-javascript-php-ruby-vb.md)
