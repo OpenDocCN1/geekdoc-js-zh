@@ -1269,6 +1269,7 @@
 +   [HTML, CSS 和 JavaScript 入门指南](docs/samsteachyourself-html-css-and-javascript/README.md)
 +   [Web 设计师 Sass](docs/sass-for-web-designers/README.md)
 +   [JavaScript 和 Ajax 脚本：设计师指南](docs/scriptin-with-javascript-and-ajax-a-designers-guide/README.md)
++   [JavaScript 和 Ajax 脚本：设计师指南](docs/scriptin-with-javascript-and-ajax-a-designers-guide---descri/README.md)
 +   [Scrum：从新手到忍者：敏捷高效开发方法论](docs/scrum-novice-to-ninja-methods-for-agile-powerful-development/README.md)
 +   [Java 秘籍：面向学生、学者及工业专业人士的自学方法](docs/secrets-of-java-a-self-learning-approach-for-students-academ/README.md)
 +   [移动应用安全开发：如何使用 php 和 javascript 设计并编写安全移动应用](docs/secure-development-for-mobile-apps-how-to-design-and-code-se/README.md)
