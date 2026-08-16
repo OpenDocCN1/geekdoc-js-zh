@@ -1333,6 +1333,7 @@
 +   [全合版 HTML、CSS 和 JavaScript 初学者指南：涵盖最重要的三个内容](docs/the-all-in-one-html-css-and-javascript-beginners-guide-cover/README.md)
 +   [青少年焦虑生存指南：克服恐惧、担忧与恐慌的 CBT 技能（即时帮助解决方案系列）](docs/the-anxiety-survival-guide-for-teens-cbt-skills-to-overcome-/README.md)
 +   [WebAssembly 艺术：构建安全、可移植、高性能应用程序](docs/the-art-of-webassembly-build-secure-portable-high-performanc/README.md)
++   [JavaScript 的艺术与科学：来自全球顶尖的启发性前沿 JavaScript](docs/the-art-science-of-javascript-inspirational-cutting-edge-jav/README.md)
 +   [Javascript 编程入门指南](docs/the-basics-of-javascript-programming/README.md)
 +   [初学者 Web 编码与开发全指南：学习 HTML、CSS 和 JavaScript：Web 开发核心三剑客（初步精通系列第 21 册）](docs/the-complete-guide-to-web-coding-and-development-for-absolut/README.md)
 +   [Dart 语言入门指南](docs/the-dart-programming-language/README.md)
