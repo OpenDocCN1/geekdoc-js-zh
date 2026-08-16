@@ -1287,6 +1287,7 @@
 +   [SitePoint：现代 JavaScript 工具与技能](docs/sitepoint-modern-javascript-tools-skills/README.md)
 +   [开源平台智能计算](docs/smart-computing-with-open-source-platforms/README.md)
 +   [CoffeeScript 实战](docs/smashing-coffeescript/README.md)
++   [精通 CoffeeScript (Smashing Magazine 书 Series)](docs/smashing-coffeescript-smashing-magazine-book-series/README.md)
 +   [Smashing CSS：现代布局专业技术](docs/smashing-css-professional-techniques-for-modern-layout/README.md)
 +   [HTML5 实战](docs/smashing-html5/README.md)
 +   [移动 Web 开发：使用 HTML5、CSS3 和 Javascript 开启移动开发](docs/smashing-mobile-web-development-going-mobile-with-html5-css3/README.md)
