@@ -1328,6 +1328,7 @@
 +   [测试驱动的 JavaScript 开发 (开发者库)](docs/test-driven-javascript-development-developers-library/README.md)
 +   [JavaScript 应用测试实战](docs/test-driving-javascript-applications/README.md)
 +   [JavaScript 应用测试驱动：快速、可靠且可维护的代码](docs/test-driving-javascript-applications-rapid-confident-maintai/README.md)
++   [JavaScript文本文本指南](docs/text-processing-with-javascript/README.md)
 +   [全合版 HTML、CSS 和 JavaScript 初学者指南：涵盖最重要的三个内容](docs/the-all-in-one-html-css-and-javascript-beginners-guide-cover/README.md)
 +   [青少年焦虑生存指南：克服恐惧、担忧与恐慌的 CBT 技能（即时帮助解决方案系列）](docs/the-anxiety-survival-guide-for-teens-cbt-skills-to-overcome-/README.md)
 +   [WebAssembly 艺术：构建安全、可移植、高性能应用程序](docs/the-art-of-webassembly-build-secure-portable-high-performanc/README.md)
