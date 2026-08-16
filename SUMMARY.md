@@ -1293,6 +1293,7 @@
 +   [Smashing JavaScript：基于 Ajax 和 jQuery 的专业技术](docs/smashing-javascript-professional-techniques-with-ajax-and-jq/README.md)
 +   [移动 Web 开发：使用 HTML5、CSS3 和 Javascript 开启移动开发](docs/smashing-mobile-web-development-going-mobile-with-html5-css3/README.md)
 +   [Smashing Node.js：无处不在 JavaScript](docs/smashing-nodejs-javascript-everywhere/README.md)
++   [Smashing Node.js：Javascript 无处不在](docs/smashing-nodejs-javascript-everywhere-nodejs-javascript-ever/README.md)
 +   [软件设计示例：JavaScript 工具入门指南](docs/software-design-by-example-a-tool-based-introduction-with-ja/README.md)
 +   [软件设计示例：Python 工具入门指南](docs/software-design-by-example-a-tool-based-introduction-with-py/README.md)
 +   [JavaScript 软件工具](docs/software-tools-in-javascript/README.md)
