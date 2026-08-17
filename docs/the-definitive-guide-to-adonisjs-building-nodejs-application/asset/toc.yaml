@@ -1,0 +1,292 @@
+- - '#'
+  - AdonisJs 终极指南：使用 JavaScript 构建 Node.js 应用
+- - '#'
+  - 关于作者
+- - '#'
+  - 致谢
+- - '#'
+  - 引言
+- - '#'
+  - 第 1 章：入门
+- - '##'
+  - 入门
+- - '##'
+  - 安装 Node.js
+- - '##'
+  - 安装 AdonisJs 命令行工具
+- - '##'
+  - 创建新应用程序
+- - '##'
+  - 运行应用程序
+- - '##'
+  - 探索代码
+- - '##'
+  - 总结
+- - '#'
+  - 第 2 章：路由
+- - '##'
+  - 路由
+- - '##'
+  - 什么是路由？
+- - '##'
+  - 规划路由
+- - '##'
+  - 定义路由
+- - '##'
+  - 测试路由
+- - '##'
+  - 定义路由参数
+- - '##'
+  - 列表 2-3。自 threadbear/test/routes.js
+- - '##'
+  - Listing 2-7. 这源自 threadbear/test/routes.js
+- - '##'
+  - Listing 2-9. 这源自 threadbear/test/routes.js
+- - '#'
+  - 第 3 章：视图 (VIEWS)
+- - '##'
+  - 学习模板语法
+- - '##'
+  - 插值
+- - '##'
+  - 条件判断
+- - '##'
+  - 循环
+- - '##'
+  - 部分组件 (Partials)
+- - '##'
+  - 渲染输出 (Yield)
+- - '##'
+  - 函数 (Functions)
+- - '##'
+  - 列表 3-4. 源自 threadbear/start/app.js
+- - '##'
+  - 列表 3-5. 源自 threadbear/start/routes.js
+- - '##'
+  - 列表 3-6. 源自 threadbear/resources/views/layout.edge
+- - '##'
+  - 列表 3-7. 源自 threadbear/resources/views/user/login.edge
+- - '##'
+  - '**列表 4-3.** 此内容源自 threadbear/test/routes.js'
+- - '#'
+  - 第 4 章：请求
+- - '##'
+  - 理解请求
+- - '##'
+  - 获取参数
+- - '##'
+  - 获取 Headers 和 Cookies
+- - '##'
+  - 获取 “accepts” 和 “language”
+- - '##'
+  - 了解更多信息
+- - '##'
+  - 响应 POST、PUT、PATCH 和 DELETE
+- - '##'
+  - 列表 4-4. 此内容源自 threadbear/test/helpers.js
+- - '##'
+  - 总结
+- - '#'
+  - 第 5 章：响应 (Responses)
+- - '##'
+  - 发送简单响应
+- - '##'
+  - 发送 JSON 响应
+- - '##'
+  - 处理 Cookie
+- - '##'
+  - 重定向用户
+- - '##'
+  - 响应附件
+- - '##'
+  - 使用宏进行扩展
+- - '##'
+  - 列表 5-7。源自 threadbear/start/routes.js
+- - '##'
+  - Listing 6-5.
+- - '#'
+  - 第 6 章：生成器
+- - '##'
+  - 生成器 (Generators)
+- - '##'
+  - 协作式多任务 (Cooperative Multitasking)
+- - '##'
+  - Listing 6-8.
+- - '##'
+  - Listing 6-9.
+- - '##'
+  - Listing 6-10.
+- - '##'
+  - Listing 6-11.
+- - '#'
+  - 第 7 章：承诺 (Promises)
+- - '##'
+  - 进入回调地狱 (Callback Hell)
+- - '##'
+  - 理解承诺 (Promises)
+- - '##'
+  - 在协程 (Coroutines) 中使用承诺
+- - '##'
+  - 列表 7-4
+- - '##'
+  - 回到 AdonisJs
+- - '##'
+  - 总结
+- - '#'
+  - 第 8 章：控制器与中间件
+- - '##'
+  - 创建控制器
+- - '##'
+  - 代码复用
+- - '##'
+  - 使用中间件
+- - '##'
+  - 列表 8-3. 此内容源自 `threadbear/start/routes.js`
+- - '###'
+  - 代码列表 8-6. 这来自 threadbear/start/kernel.js
+- - '###'
+  - 代码列表 8-7. 这来自 threadbear/app/Middleware/CurrencySelector.js
+- - '###'
+  - 代码列表 8-8. 这来自 threadbear/app/Middleware/CurrencySelector.js
+- - '##'
+  - 总结
+- - '#'
+  - 第 9 章：数据库
+- - '##'
+  - 数据库
+- - '##'
+  - 安装 Lucid
+- - '##'
+  - 数据库填充 (Seeding)
+- - '##'
+  - 处理路由与数据库
+- - '##'
+  - 注册客户
+- - '##'
+  - 客户身份验证
+- - '##'
+  - 代码列表 9-1. 这来自 threadbear/start/app.js
+- - '##'
+  - 代码列表 9-2. 这来自 threadbear/config/database.js
+- - '##'
+  - 列表 9-10. 源自 threadbear/database/seeds/DatabaseSeeder.js
+- - '##'
+  - 列表 9-11. 源自 threadbear/database/..._customers_schema.js
+- - '##'
+  - 列表 9-20. 代码来自 threadbear/app/Models/Product.js
+- - '##'
+  - 列表 9-21. 代码来自 threadbear/app/Controllers/Http/CustomerController.js
+- - '##'
+  - 列表 9-24.
+- - '##'
+  - 列表 9-25. 代码来自 threadbear/app/Models/Customer.js
+- - '##'
+  - 列表 9-26. 代码来自 threadbear/app/Models/Customer.js
+- - '##'
+  - 列表 9-27. 代码来自 threadbear/app/Controllers/Http/CustomerController.js
+- - '##'
+  - 列表 9-28. 代码来自 threadbear/app/Models/Customer.js
+- - '##'
+  - 创建迁移 (Migrations)
+- - '##'
+  - 总结
+- - '#'
+  - 第 10 章：验证与错误
+- - '##'
+  - 安装验证
+- - '##'
+  - 复用验证
+- - '##'
+  - 显示自定义错误页面
+- - '##'
+  - 创建自定义异常
+- - '##'
+  - 列表 10-6. 源自 threadbear/resources/views/customer/login.edge
+- - '##'
+  - 列表 10-7. 源自 threadbear/start/app.js
+- - '##'
+  - 列表 10-8. 源自 threadbear/start/kernel.js
+- - '##'
+  - 列表 10-9. 源自 threadbear/app/Controllers/CustomerController.js
+- - '##'
+  - 列表 10-10. 源自 threadbear/app/Controllers/Http/CustomerController.js
+- - '##'
+  - 列表 10-11. 源自 threadbear/resources/views/customer/register.edge
+- - '##'
+  - 列表 10-15. 这来自 threadbear/app/Exceptions/Handler.js "use strict"
+- - '##'
+  - 列表 10-18. 这来自 threadbear/start/hooks.js
+- - '##'
+  - 列表 10-19. 这来自 threadbear/app/Exceptions/ProfileMissingException.js
+- - '##'
+  - 列表 10-20. 这来自 threadbear/app/Exceptions/Handler.js
+- - '##'
+  - 列表 10-21. 这来自 threadbear/app/Controllers/Http/CustomerController.js
+- - '##'
+  - 总结
+- - '#'
+  - 第 11 章：会话
+- - '##'
+  - 会话
+- - '##'
+  - 仪表板
+- - '##'
+  - 注销客户
+- - '##'
+  - 列表 11-2。此源自 threadbear/app/Models/BaseModel.js
+- - '##'
+  - 列表 11-3。此源自 threadbear/app/Models/Customer.js
+- - '##'
+  - 列表 11-6。此源自 threadbear/app/Models/Order.js
+- - '##'
+  - 列表 11-7。此源自 threadbear/app/Models/OrderItem.js
+- - '##'
+  - 列表 11-8。此源自 threadbear/database/migrations/*_orders_schema.js
+- - '##'
+  - 列表 11-9。此源自 threadbear/database/migrations/*_order_items_schema.js
+- - '##'
+  - 列表 11-12。自 threadbear/start/routes.js
+- - '##'
+  - 列表 11-13。自 threadbear/app/Controllers/Http/CustomerController.js
+- - '#'
+  - 第 12 章：安全
+- - '##'
+  - 回顾
+- - '##'
+  - 创建更多中间件
+- - '##'
+  - 保护
+- - '##'
+  - 加密
+- - '##'
+  - 列表 12-1。自 threadbear/app/Controllers/Http/CustomerController.js
+- - '##'
+  - 列表 12-4. 源自 threadbear/start/kernel.js
+- - '##'
+  - 列表 12-5. 源自 threadbear/start/routes.js
+- - '##'
+  - 总结
+- - '#'
+  - 第 13 章：布局
+- - '##'
+  - 创建布局
+- - '##'
+  - 列表 3-6. 源自 threadbear/resources/views/layout.edge
+- - '##'
+  - 列表 3-7. 源自 threadbear/resources/views/user/login.edge
+- - '#'
+  - 第 14 章：WebSocket
+- - '##'
+  - WebSocket
+- - '##'
+  - 创建订单
+- - '##'
+  - 列表 14-1.自 threadbear/app/Controllers/Http/CustomerController.js
+- - '##'
+  - 列表 14-2.自 threadbear/start/routes.js
+- - '##'
+  - 列表 14-3.自 threadbear/start/routes.js
+- - '##'
+  - 列表 14-4.此内容源自 threadbear/test/helpers.js
+- - '##'
+  - 列表 14-5.自 threadbear/start/routes.js

@@ -1344,6 +1344,7 @@
 +   [CSS3 精选集：将你的网站推向新高度，第四版](docs/the-css3-anthology-take-your-sites-to-new-heights-fourth-edi/README.md)
 +   [Dart 语言入门指南](docs/the-dart-programming-language/README.md)
 +   [ANTLR 权威指南：领域特定语言构建指南](docs/the-definitive-antlr-reference-building-domain-specific-lang/README.md)
++   [AdonisJs 终极指南：使用 JavaScript 构建 Node.js 应用](docs/the-definitive-guide-to-adonisjs-building-nodejs-application/README.md)
 +   [学习 javascript 的简单方法](docs/the-easy-way-to-learn-javascript/README.md)
 +   [古代的礼物](docs/the-gift-in-antiquity/README.md)
 +   [JavaScript 金金书籍：从基础到高级应用](docs/the-golden-book-of-javascript-from-fundamentals-to-advanced-/README.md)
