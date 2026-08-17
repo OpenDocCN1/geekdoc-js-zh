@@ -1355,6 +1355,7 @@
 +   [HTML5 JavaScript 模型](docs/the-html5-javascript-model/README.md)
 +   [Javascript 探险之旅](docs/the-javascript-adventure/README.md)
 +   [Javascript 精选集：101 个核心技巧、窍门与黑科技](docs/the-javascript-anthology-101-essential-tips-tricks-and-hacks/README.md)
++   [JavaScript 圣经](docs/the-javascript-bible/README.md)
 +   [jQuery 的乐趣：全球最流行的 JavaScript 库初学者指南](docs/the-joy-of-jquery-a-beginners-guide-to-the-worlds-most-popul/README.md)
 +   [现代 JavaScript 合集 1-4](docs/the-modern-javascript-collection-1-4/README.md)
 +   [现代 JavaScript 教程 - 第二部分：浏览器文档、事件、接口 2](docs/the-modern-javascript-tutorial---part-ii-browser-document-ev/README.md)
