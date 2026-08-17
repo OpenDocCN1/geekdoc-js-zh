@@ -1340,6 +1340,7 @@
 +   [Javascript 第 2 版 (Chayon Shaah 书系列)](docs/the-book-of-javascript-2nd-edition-by-thau-chayon-shaah-book/README.md)
 +   [JavaScript 之书：交互式 Web 页面实用指南](docs/the-book-of-javascript-a-practical-guide-to-interactive-web-/README.md)
 +   [初学者 Web 编码与开发全指南：学习 HTML、CSS 和 JavaScript：Web 开发核心三剑客（初步精通系列第 21 册）](docs/the-complete-guide-to-web-coding-and-development-for-absolut/README.md)
++   [Redux 完整指南](docs/the-complete-redux-book/README.md)
 +   [Dart 语言入门指南](docs/the-dart-programming-language/README.md)
 +   [学习 javascript 的简单方法](docs/the-easy-way-to-learn-javascript/README.md)
 +   [古代的礼物](docs/the-gift-in-antiquity/README.md)
