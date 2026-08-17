@@ -1265,6 +1265,7 @@
 +   [Sams 24 小自学 PHP，第二版](docs/sams-teach-yourself-php-in-24-hours-second-edition/README.md)
 +   [Sams 24 小时自学 PHP：Web 应用；数据库；Cookie](docs/sams-teach-yourself-php-in-24-hours-web-applications-databas/README.md)
 +   [Sams 自学 PHP、MySQL 和 Apache：合集](docs/sams-teach-yourself-php-mysql-and-apache-all-in-one---includ/README.md)
++   [21天自学 Visual J++ 6：掌握 Visual J++ 6 所需的理念与技能；并诸用所学技能创建复杂的 Java Applet 和应用程序](docs/sams-teach-yourself-visual-j-6-in-21-days-learn-the-concepts/README.md)
 +   [Sams 21天学会使用 J2ME 无线 Java：[在21天内学习创建和部署 J2ME 应用所需的技能和概念；在现实世界中应用你的知识]](docs/sams-teach-yourself-wireless-java-with-j2me-in-21-days-learn/README.md)
 +   [HTML, CSS 和 JavaScript 入门指南](docs/samsteachyourself-html-css-and-javascript/README.md)
 +   [Web 设计师 Sass](docs/sass-for-web-designers/README.md)
