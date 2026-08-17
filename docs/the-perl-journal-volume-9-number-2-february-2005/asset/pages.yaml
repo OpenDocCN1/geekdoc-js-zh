@@ -1,0 +1,1664 @@
+- img_proc: true
+  md: '![](img/b86215b902ba1585658e902d051321b2_0_0.png)'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: '# The Perl Journal
+
+
+    February 2005
+
+    Volume 9, Number 2
+
+
+    # Implementing Symbolic Algebra
+
+    & Calculus in Perl
+
+
+    Jonathan Worthington• 3
+
+
+    # Graphing Perl Data with
+
+    GraphViz::Data::Structure
+
+
+    Joe McMahon• 7
+
+
+    # Keeping Up with the World, Part II
+
+
+    Simon Cozens• 10
+
+
+    # Private CPAN Distributions
+
+
+    brian doy• 15
+
+
+    # PLUS
+
+
+    Letter from the Editor • 1
+
+    Perl News by Shannon Cochran • 2
+
+    Book Review by Jack J. Woehr:
+
+    Perl Core Language, Second Edition • 15
+
+
+    ![](img/b86215b902ba1585658e902d051321b2_1_0.png)'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: '# LETTER FROM THE EDITOR
+
+
+    # Don''t Make Em Like They Used To
+
+
+    I heard a report on the radio the other day that showed that consumers are becoming
+    increasingly indifferent to traditional notions of product quality. It used to
+    be (50 years ago, at any rate) that salespeople put the quality of a product''s
+    construction at the top of a sales pitch. If you could convince Mr. and Mrs. America
+    that their blender was good as 50 years ago, they would have. So many days later
+    Quality means much less than before. We are more affluent with our money, so we
+    expect to get more features than with just a few short years. We are sure to buy
+    our new digital models and whistles than the camera we had (and more bells and
+    whistles than the one our neighbor has), but we''re not really about whether it
+    is worth it. Salespeople can''t just tell us digital cameras are "built to last"
+
+
+    One of the major engines behind this change in consumers is the rapid pace of
+    innovation in electronics. We expect a product to be beautiful and its life doesn''t
+    matter. And if cheaply built products are more affordable, so much better. This
+    new definition of quality—with high features-to-price ratio of industry—is helped
+    by along and the price of products brought about by cheap offerings.
+
+
+    Software is properly connected to this, but it''s hard to say sure software is
+    so fundamentally different from other products. What "quality" in software means
+    never "durable," since binary code doesn''t ever expire. Our software environment
+    is so volatile compared to operating systems that stay the same. In every extent
+    of the matter, we are constantly updating our apps and other software that adapts
+    to the changing environment. Software does operate well, but only briefly. It
+    is important to make it easy and to use.
+
+
+    It makes sense how change in environment will reflect better in the code. The
+    goal is to make it as easy as possible for the user, without error and confusion.
+    We make our code as easy as possible, so that when new code inevitably must be
+    written, with the path clear.
+
+
+    ![](img/b86215b902ba1585658e902d051321b2_2_0.png)
+
+
+    Kevin Carlson
+
+    Executive Editor
+
+    karlson@tpj.com
+
+
+    Letters to the editor, article proposals and submissions, and inquiries can be
+    sent to editors@tpj.com, to fax (650) 663-4618, or to mail The Pearl Journal,
+    2800 June Drive, San Mateo, CA 94020.
+
+    THE PEAR JOURNAL is 64033 Harbor Street, San Francisco, CA, 94017) (985-2200).
+    Subscription: $18.00 for year. Payment may be made by MasterCard or Visa; see:
+    http://www.tpj.com/. Entire contents (c) 2005 by CMP Media LLC, unless otherwise
+    noted. All rights reserved.
+
+
+    # The Pearl Journal
+
+
+    EXECUTIVE EDITOR
+
+    Kevin Carlson
+
+
+    MANAGING EDITOR
+
+    Della Wyser
+
+
+    ART DIRECTOR
+
+    Margaret A. Anderson
+
+
+    NEWS EDITOR
+
+    Sharon Costner
+
+
+    EDITORIAL DIRECTOR
+
+    Jonathan Erickson
+
+
+    COLUMNISTS
+
+    Simon Cozens, Brian d. fox, Mos Basher, Andy Lee
+
+
+    CONTRIBUTING EDITORS
+
+    Simon Cozens, Dag Saulberg, Eugene Kim, Kent Dent, Kevin OMalley, Charles North
+
+
+    INTERNET OPERATIONS
+
+    DIRECTOR
+
+    Michael Caldwell
+
+    Steve Morris
+
+
+    WEBMASTERS
+
+    Sara Coon, Joe Luca
+
+
+    MARKETING/ADVERTISING
+
+    PUBLISHER
+
+    Michael Goodman
+
+    MARKETING DIRECTOR
+
+    James White
+
+    GRAPHIC DESIGN
+
+    Curey Perez
+
+
+    THE PEAR JOURNAL
+
+    2800 June Drive, San Mateo, CA 94020
+
+    650-663-4100 http://www.tpj.com/
+
+
+    CMP MEDIA LLC
+
+    PRESIDENT AND CEO Gary Marshall
+
+    EXECUTIVE PRESIDENT AND CEO Steve Young
+
+    EXECUTIVE PRESIDENT, SALES AND MARKETING
+
+    CHIEF INFORMATION OFFICER Mike Adams
+
+    SENIOR VICE PRESIDENT, SALES
+
+    SENIOR VICE PRESIDENT, HUMAN RESOURCES Leon Hardee
+
+    VICE PRESIDENT, ADVERTISING
+
+    Mika Azura
+
+    VICE PRESIDENT AND GENERAL CONSULTANT, Sandra Gray
+
+    VICE PRESIDENT, COMMUNICATION, Alexandra Raine
+
+    VICE PRESIDENT, PRODUCTION, Daniel Shell
+
+    VICE PRESIDENT, HEMP MARKETING, Vicky Masseria
+
+    VICE PRESIDENT, INFORMATION TECHNOLOGY
+
+    MEDIA NETWORK Michael Friedberg
+
+    VICE PRESIDENT, PUBLIC RELATIONS David Green
+
+    Paul Miller
+
+    VICE PRESIDENT, GROUP OPERATIONS, COMPUTER NETWORK
+
+    ENTERPRISE ARCHITECTURE GROUP, Fred Hill
+
+    VICE PRESIDENT, PRODUCT DEVELOPMENT
+
+    Meta Winter
+
+
+    CORPORATE DIRECTOR, AUDIENCE DEVELOPMENT
+
+    Sharon Anderson
+
+    CORPORATE DIRECTOR, AUDIENCE DEVELOPMENT
+
+    Michael Zane
+
+    CORPORATE PUBLISHING Services Mary Mayyer'
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: '# Shannon Cochran
+
+
+    # Perl News
+
+
+    # The Perl Foundation Calls for Donations
+
+
+    The Perl Foundation is looking for money that it can give away,
+
+    Specifically
+
+
+    The German Workshop was recently able to raise enough
+
+    to fund 20 days of development for Perl 6. Each day of development
+
+    listed at http://www.perlfoundation.org/grants/2005-p6-proposal.html shows the
+    cost
+
+    index.pl#modules-contribution/$20. Donations to The Perl
+
+    nof achieving milestone can be made online at: donate.perlfoundation.org/
+
+
+    # Perl Users Hitters Milestone
+
+
+    Austrijus Tanaka has been able to create an interpreter for
+
+    Perl 6, with Warren Haskell. “Aims to implement the full
+
+    Perl specification, as stated in Synopsys”. Works on Perl
+
+    has been progressing at a breakthrough rate: Austrijus has 11
+
+    developers working on the project, and after one month of devel-
+
+    velopment they have been able to run code.
+
+    Currently, it is running in version 6.0 and other would be
+
+    compatible with CPAN. It uses Perl G2 API and Article Inter-
+
+    Version 2.06.
+
+
+    Gator is available at http://cpan.org/Similar
+
+
+    # CPAN:Forum Updates
+
+
+    Gabor Szabo has launched a new web site, http://cpanforum-
+
+    /, for CPAN modules. He notes: “One of my-
+
+    objectives is to let people easily monitor discussions on several modules without
+    subscribing to many lists. It also
+
+    help to lost of module authors that do not have a list
+
+
+    if guess 95 percent of all the modules on CPAN) to provide
+
+    upport Users can opt to be notified by email when messages
+
+    are posted to the forums for this month, and an RSS feed is also
+
+    available.
+
+
+    # Phalanx Marches On
+
+
+    Andy Lester has organized his Phalanx project, an effort to add
+
+    to test CPAN modules, find bugs, and improve decu-
+
+    ment. His initial group of 12 testers, working other
+
+    decided to make the project more community-oriented. A site has been set up
+
+    ith http://phalanx.ckwiki.org/, with a wiki and a per-ql list is hosted at lists.pernlorg.
+
+
+    When Poanie was announced in July 2003, we knew that it
+
+    would require a rigorous test suite since Perl had ever
+
+    no one. The implementation of CPAN, depends on the
+
+    variable PerlIO. Perl Kevins says: “In July 2002, he has
+
+    brought a ‘New Implementation’ added to create
+
+    standard modules for use.” Andy. We’re hoping that the 100 distri-
+
+    we selected, mostly on rough analysis of us-
+
+    age, will cover a large part of the CPAN that’s used by the Perl
+
+    community... will be until you’re out there.
+
+
+    # Perl Security Issues
+
+
+    Kevin has discovered issues with which a
+
+    local user could crash a machine using setup perl. Both
+
+    depend on manipulating the “PERL-DEBUG” using
+
+    variable PerlIO. For Perl 5.8 there was a ‘New Implementation’ added
+
+    to create standard modules. The implementation of
+
+    functional response depends on the PerlIO
+
+    responding for the request. The CPAN DEBUG method depends on us
+
+    nto create write-out rules with world-wide permissions.
+
+    “Since the world-wide application can also add this
+
+    or if she desires to create it. Charles Steven
+
+    suggested that a file could be created from /etc/nerd/wiki, which will
+
+    allow an author to control the machine with the next run
+
+    of code. This writes to the system, making an
+
+    sad root output key, file, as well as that has
+
+    in my example, I could make a more immediate and risky
+
+    by http://edit/sed.perl and proceed to rojan.
+
+
+    Randall Garcia found the security issue. Charles, and
+
+    Mandrake produced a patch, available at http://cpan.commandrake
+
+    /cgi-bin/vsweeb.cgi/checkout-SPECS/perl-5.8-
+
+    33990.patch?rev=1.1&content-type=text
+
+
+    The Perl Journal February 2005
+
+
+    www.perl.com'
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: '# Jonathan Worthington
+
+
+    # # Implementing
+
+    Symbolic Algebra & Calculus in Perl
+
+
+    Computers are good at working with numbers. With the ability to perform millions
+    of calculations in a fraction of a second, complex problems can be solved numerically.
+    However, sometimes it''s useful to find an analytical solution to a problem, or
+    at least a part of it, even when given the limits of floating-point arithmetic.
+
+
+    One advantage is that a solution obtained without any loss of accuracy. A solution
+    computed from a numerical method may suffer unless the method is mathematically
+    proved to give an exact answer for metric, example.
+
+
+    Another advantage is that the more general solution provided by an analytical
+    method may make cheaper; for example, if an analytical solution is found for the
+    derivative of an expression. If the derivative is evaluated at each point simply
+    evaluating the derivative for appropriate variable.
+
+
+    This work highlights how representing expressions can be easily manipulated and
+    evaluated. In part I will present three modules I have worked on, which may or
+    not be a good starting point for working with mathematical expressions analytically
+    in Perl. These modules are:
+
+
+    +   * **Math::Expression**, a module for representing an expression
+
+    * **Math::Calculus**, a module that computes the analytical derivative of an expression
+    with a single variable
+
+    * **Math::NewtonRaphson**, which demonstrates a conjunction of numerical and analytical
+    methods, and provides a way of solving an equation, currently in just a single
+    variable.
+
+
+    These modules are available on CPAN, and can be installed in the usual way:
+
+
+    ```
+
+    perl -CPAN -e ''install Math::Expression -e ''Expression''
+
+    perl -CPAN -e ''install Math::Calculus -e ''Differentiate''
+
+    perl -CPAN -e ''install Math::Calculus -e ''NewtonRaphson''
+
+    ```
+
+
+    Jonathan currently is an undergraduate in Computer Science at the University of
+    Cambridge. He can be contacted by e-mail at jon@jwcs.net.
+
+
+    # Representing Expressions
+
+
+    An expression in human-readable form, such as $sin(x^2)$, is not necessarily easy
+    to manipulate in a computer program. Regular expressions are not suitable because
+    the language of mathematical expressions is not regular. Perl''s regexes are more
+    powerful than regular expressions and a recursively defined regex could help here,
+    but this makes implementing programs complex. A separate representation tree-based
+    structure came to mind simple to write programs on.
+
+
+    The requirements for the representation were simple: it needs to be able to represent
+    a mathematical expression, relatively easily. A binary tree seemed like a suitable
+    representation and simple to perform operations on. After some pounding, under
+    this scheme, a node can contain any of the following:
+
+
+    +   * An operator, such as $+$, $-$, $*$, $/$, and $\wedge$ (to raise to a power).
+    These would have two branches—one for each expression.
+
+    * A function, such as $cos$, $tan$, $exp$, and the like. These would have one
+    branch, as these functions only take one parameter.
+
+    * A variable or constant, such as $x$, $2.4$, and the like. These would have no
+    branches.
+
+
+    Any branch in the tree can be assembled without any loss of information. If an
+    expression as $x^2+2$ is equal to the expression $(x*x)+2$, which is also true,
+    then the tree is capable of representing all mathematical expressions, for they
+    can all be translated into an "formatted bracket".
+
+
+    Out of this analysis shows a simple method of converting an expression in human-readable
+    form to a binary tree. Taking the expression $x^5+2$ as an example, it is clear
+    that the tree built from
+
+
+    ![](img/b86215b902ba1585658e902d051321b2_4_0.png)
+
+
+    Figure 1: Tree build from expression $x^5+2$.'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: "Notice the left subtree is the same tree that would be found if the expression\
+    \ 5^x was turned into a tree, and the right node is the same that would be expected\
+    \ if the 2 was put into the tree. A strong hint is that the entire process of\
+    \ building the tree can be done in three steps, where each step operates on one\
+    \ node.\n\nThe second and third steps are simple, but the first requires a little\
+    \ thought. It is important that the correct operator is chosen at each step, and\
+    \ for this the tree building itself is not needed. The key is to define a function\
+    \ that returns True if the expression of the first operator has lower precedence\
+    \ than that of the second. This means that finding the operator to split on is\
+    \ a case of scanning the expression by character and keeping track of the last\
+    \ operator that has lower precedence than the one being found, the one that is\
+    \ currently regarded as the best to choose. If it has lower precedence, it is\
+    \ marked as the current best operator, and the process continues.\n\nThis isn't\
+    \ quite the whole story. Be aware of special cases that should be checked before\
+    \ the first division. If there is no division, return the root. If there is one,\
+    \ the it will be a tree from a constant (which may or may not be an integer) or\
+    \ a single leaf.\n\nThe special case is when the entire expression is a function\
+    \ of a subsection. In this case, the expression will start with the name of a\
+    \ recognized function, such as sin, followed by an expression in parentheses.\
+    \ The function is where the operator would otherwise be located, and the left\
+    \ branch of the tree is generated by recursively calling the tree builder on the\
+    \ function's parameter. There is no right branch.\n\n+   * If the node is a constant\
+    \ or variable, this can be simply returned.\n* If the node is a function, recursively\
+    \ call the function on the left branch of the tree, then return something of the\
+    \ form \"<function>\"\n* If the node is an operator, recursively call the left\
+    \ branch and the right branch, then return something of the form \"<left branch>\
+    \ <operator> <right branch>\"\n\nchecking for code manipulation. The general benefits\
+    \ of parsing expression from evaluation are given, too: There is just one place\
+    \ to fix parsing bugs.\n\n# Math::Class:Expression\n\nMath::Expression module\
+    \ implements classes that represent a mathematical expression using the binary\
+    \ tree method. Remember that an expression is not an equation; there must be no\
+    \ \"=\" or other statements about mathematical equality. For instance, an expression\
+    \ like 5 + 2 has a precedence, and so do all the functions like sin, cos, tan,\
+    \ sec, cot, ceil (which adds an add to the end of names—for example, asin(x))\
+    \ and binary operators like + and - to the end of the expression. Use of brackets\
+    \ is controlled by an operator. All subexpressions must be represented by an operator,\
+    \ so order does not matter, and brackets control precedence. 2 * 5 means exactly\
+    \ the same as 5 * 2.\n\nA new expression is instantiated using the new method\
+    \ of the class:\n\n```\nuse Math::Expression;\n\\$expr = Math::Expression::new(\"\
+    \");\n```\n\nVarious methods can be called on the expression object. The setExpression\
+    \ method attempts to convert the expression into a human-readable string format\
+    \ and then attempts to reconstruct it from the string string. If it fails, it\
+    \ will return a false value. A trace that may contain useful information is also\
+    \ available by calling the getTrace method, and a short error message can be obtained\
+    \ by calling the getErrorMessage method:\n\n```\nif (!\\$expr->setExpression(\"\
+    2*(x+2)+cos(x)\")) {\n    print \"Error: \" . \\$expr->error . \"\\n\";n    print\
+    \ \"Trace: \" . \\$expr->getTrace;\";\n}\n```\n\nExpressions stored in an object\
+    \ can be retrieved in a human-readable form using the getExpression method:\n\n\
+    ```\n# 2*(x+2) + cos(x)\nprint \\$expr->getExpression;\n```\n\nNote that getExpression\
+    \ might not return exactly the same as the string inserted. The internal representation\
+    \ represents the meaning of the expression, but not spaces.\n\nIt is useful to\
+    \ use the module which handles variables; any variables that need to be assigned\
+    \ constants. The variable method is used to define a leaf as a variable.\n\n```\n\
+    \\$expr->setVariable(\"x\");\n```\n\nThe simplify method attempts to shrink the\
+    \ expression simplpler. Some of tricks includes constant evaluation(\"3*5x becomes\
+    \ 15x\"), redundant-term elimination(\"0*sin(x)+2-x*2 becomes 2\"), and more parts\
+    \ of a expression can disappear, and unit elimination(\"1*x\" and \"x+0\" becomes\
+    \ x\\). The method is invoked on an expression object and modifies the expression\
+    \ it stores.\n\n```\n\\$expr->simplify();\n```\n\nSome extra tasks of work are\
+    \ to be done if brackets are needed or if they are omitted because precedence\
+    \ rules make them redundant.\n\nSo, far of the three requirements for the representation\
+    \ are satisfied: mathematical expressions can be handled and easily be converted\
+    \ to and from human-readable string format it stood possible to manipulate mathematical\
+    \ expressions using representation. The binary tree structure has some useful\
+    \ properties. It is now trivial to identify and extract subexpressions; every\
+    \ subtree is a valid expression. Precedence is completely determined by the depth\
+    \ of the nodes so there is no need to check operator precedence when manipulating\
+    \ the expression. If this representation is found, it also means that the expression\
+    \ is valid, removing the responsibility for error"
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: "The evaluate takes a hash, mapping any variables and\nconstants (collectively)\
+    \ to the expression in numer-\nal values, and if it finds letters that have no\
+    \ mapping or\nan error such as division zero occurs. The currently stored\nexpression\
+    \ is not modified, so this may be called to evalu-\nnate at many points.\n\n```\n\
+    $value = $expression->evaluate();\n\n# Use defined as 0 is false but\nunefined($value)\
+    \ {\n    print(\"Error: \" . $expression->getError() . \"\\n\");\n}\n```\n\nThe\
+    \ sameRepresentation method takes expression object-\nit its parameters and returns\
+    \ true if it has the same\ninternal representation as the expression the method\
+    \ is\nvoked; or when implementation, means means.\nBe careful—if two expressions\
+    \ have the samerepresentation, it would be false if they\nhave different representations,\
+    \ they are not equal. If\nthey are equal, their internal representation and semantics\n\
+    dwell. It may change over time, the only thing that is safe about this\nmethod\
+    \ is if it returns true, the expressions are true. If it returns\nfalse, such\
+    \ may be called\n\n```\n$print(\"Sample\" if $expr->\n    sameRepresentation($expr2));\n\
+    ```\n\nFinally, the clone method returns a copy of the expression\n(\"deep copy\"\
+    ) if the original is modified, the\ncopy will not be affected and versa.\n\n```\n\
+    $copy = $expression->clone();\n```\n\n# Operating on an Expression\n\nThe Math::Calculus::Expression\
+    \ class uses a hash for each node.\nThe hash has keys (operator or function name)\n\
+    operand1 (for the left), and operand2 (for the right).\nThe values correspond\
+    \ to each operand1 and operand2\nnare stored in the hash. A hash-based structure\
+    \ helps\nwith programming readability and allows modules that need to\nmore sophisticated\
+    \ manipulation to access the tree without\n\nGenerally, trees are implemented\
+    \ using recursion,\ndeep-first exploration of the tree is usually required. Bread-\n\
+    first exploration may be useful in some cases, and this could\nbe achieved by\
+    \ using breadth instead of depth first\napproach. Operations can be divided into\
+    \ three categories:\nthose that use the tree to build another tree, and the third\n\
+    those that use the tree to generate something else (such\nas a simple string).\
+    \ Knowing how to traverse the tree is far\neasy, but it's not always obvious when\
+    \ choosing between\nthe first and second approach. The goal is to decide whether\
+    \ the\noperation changes the values or the structure of the\ntree. If the structure\
+    \ is changed, then it will be simpler to\nto use.\n\nAs a simple example, consider\
+    \ a module that can subst-\\itute an expression or a constant for a letter. A\
+    \ good\\starting point is to inherit from Math::Calculus::Expression, as\nthis\
+    \ will provide a constructor and other methods:\n\n```\npackage Math::Calculus::Substitute;\n\
+    use strict;\n```\n\nuse Math::Calculus::Expression;\n$expr = $q->getMath::Calculus::Expression;\n\
+    \nThe expression of the tree may change a complex\nfor a letter, but that note\
+    \ this is an simple\nextension and no change to the structure that is place-\n\
+    bial, a single value being changed, it may be changed by\nto subtree rather than\
+    \ any value. Furthermore, this is\nsimple enough to focus on building the existing.\
+    \ A pr-\nedcure that will recurse the tree looking for a\nbranch that is not a\
+    \ leaf and then substitute it\nwith replacement has been provided, which it is\n\
+    ready to be substituted. This is OK because it will be a\nmethod rather than the\
+    \ interface of the object.\n\n```\nsub Substitute;\n# Grab parameters.\nmy ($self,\
+    \ $tree, $sub) = @_;\n\n# Look at each branch.\nmy $Branch:\nforeach ($branch\
+    \ ('operand1', 'operand2') {\n    if ($ref $branch eq 'subtree') {\n        $self->substitute($tree->($branch),\n\
+    \            $letter, $sub);\n    }\n}\n```\n\n# otherwise, if it's the...\nelif\
+    \ ($tree->($branch) eq $letter) {\n\n\nThe public method needs to be implemented.\
+    \ It uses\na copy of the private methods of the Expression class that\nuse for\
+    \ substitution, namely getTree and setTree to get the\ncurrent error message.\
+    \ The substitution could be a letter/\norber an expression (but not a tree-remember)\
+    \ that\ntree representation is internal), means only to show\nwhat is passed to\
+    \ substitute can be substituted\n\n```\nsub substitute;\n# Grab parameters.\n\
+    my ($self, $tree, $sub) = @_;\n\n# Check letter it is real?\nif ($letter =~ /^[A-Za-z]/)\
+    \ {\n    $self->setError(\"A valid letter\n    be passed.\");\n}\nnreturn undef;\n\
+    \n# If the subtree is a reference, then\n# be pointing to an expression.\n# Object.\
+    \ Extract the raw expression.\nmy $realSub;\nif (ref($sub)) {\n    $realSub =\
+    \ $sub->getExpressionTree();\n}\nelse {\n    $realSub = $sub;\n}\n```\n\nThe Perl\
+    \ February 2005\n\n5\n\nwww.tpj.com"
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: '```
+
+    # expression tree
+
+    $stree = $self->getExpressionTree();
+
+    ```
+
+
+    ```
+
+    # Make the recursive call.
+
+    $self->restitute($stree, $letter, $realSub);
+
+    ```
+
+
+    ```
+
+    # Clear the error and return success.
+
+    $self->setError('''');
+
+    ;
+
+    ```
+
+
+    The next sections will take a quick look at some of methods that inherit from
+    the Expression class and do more complex manipulations.
+
+
+    # Math::Calculus::Differentiation
+
+
+    Differentiation is part of calculus. It involves taking a function and returning
+    its derivative—function that shows how the function changes at any given point.
+    In many cases, the function to be written in the form f(x) as an expression and
+    differentiation is finding the derivative of a defined set of mappings, the tools
+    described far will be needed to implement differentiation analytically.
+
+
+    As many instances involve significant changes to the expression, the Differentiation
+    method builds a new tree. This is hidden from the end user of the public differentiation
+    method takes the tree and sets the expression object to point to this. It is a
+    good thing to do, in case the user with only two needs to change the return result
+    and so that they modify the tree and success or failure.
+
+
+    Usage of the model is simple: call the differentiate with respect to one. Note
+    that not all differentiation is possible; if there are multiple variables, then
+    others are treated as constants, and as in partial differentiation. The following
+    example shows the module at:
+
+
+    ```
+
+    use Math::Calculus::Differentiation;
+
+    ```
+
+
+    ```
+
+    # Create new expression object
+
+    $expr = Math::Calculus::Differentiation::new();
+
+    ```
+
+
+    ```
+
+    # Set expression and variable.
+
+    $expr->setExpression(''x^2 + sin(x)'');
+
+    $expr->addVariable(''x'');
+
+    ```
+
+
+    ```
+
+    # Differentiate with respect to x and simplify.
+
+    $expr->differentiate();
+
+    ```
+
+
+    ```
+
+    # Output result.
+
+    print $expr->getExpression(); // Prints 2*x + cos(x)
+
+    ```
+
+
+    Note that error handling has been omitted from this example to keep it simple,
+    and course should be included in any program that uses this module.
+
+
+    # Math::Calculus::NewtonRaphson
+
+
+    Solving equations is sometimes impossible for people, but not computers. This
+    is a case where a numerical method is needed. One advantage of using the NewtonRaphson
+    method of solving an equation is that it is rearranged into the form f(x)=0. An
+    expression and is therefore suitable to use the system described in this article
+    to manipulate it.
+
+
+    The Newton Raphson method is iterative: it takes an input and produces a solution.
+    That solution can be fed back to produce a better solution. This process can be
+    repeated until achieve the desired result. Being able to use the Newton Raphson
+    method involves knowing the derivative of itself, and finding a good initial guess.
+    Each of these can be calculated with the Calculus module, and the those that users
+    of the module use.
+
+
+    This is an example of a method that produces result without modifying the existing
+    expression—least, from the point of view. Under, it will need to make a copy of
+    the expression and differentiate it, then return the original and the derivative.
+    This can then be passed to the evaluation inherited from the Expression class.
+    A sample of the method works follows:
+
+
+    ```
+
+    use Math::Calculus::NewtonRaphson;
+
+    ```
+
+
+    ```
+
+    # Create new expression object
+
+    $expr = Math::Calculus::NewtonRaphson();
+
+    ```
+
+
+    ```
+
+    # Set expression and variable.
+
+    $expr->setExpression(''x^2 - 4'');
+
+    $expr->addVariable(''x'');
+
+    ```
+
+
+    ```
+
+    # Solve with Newton Raphson initial of 3
+
+    $expr = $expr->newRaphson(3);
+
+    ```
+
+
+    ```
+
+    # Display result, which will
+
+    # be 2*2 - 4 = 0
+
+    print $expr // Prints 2
+
+    ```
+
+
+    It is possible that the NewtonRaphson method will not be found; in which case,
+    any real-world problem would show this case.
+
+
+    # Where From Here
+
+
+    There is plenty of scope for improving the simpler and writer more modules. One
+    thing by I have described in this article is that there is currently no way to
+    test quality—whether the expressions have the same representation in the tree
+    or not. We need to find a canonical representation—one in which there are always
+    will the same representation. This is happens in binary design, and it allows
+    us to debug by comparing expressions. The problem with this is that we need to
+    ensure that the expression stays in canonical representation, enabling each tree
+    may not be possible. Another option is to build a function that copies the expression
+    into some canonical form and then compare their representations. Decomposing the
+    expressions in their Taylor series and comparing the series could be difficult,
+    but achievable.
+
+
+    I hope this has some insight into the way of working with mathematical expressions.
+    Whether it is a good way to do that, if you think this is a good approach, it
+    is not the only person seems to learn from. There may be other ways to represent
+    expressions regularly (or ever), some of the illustrated here (such as the idea
+    of using a internal data representation that is seen by the end user) are more
+    widely applicable.'
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: "# # Graphing Perl Data with GraphViz::Data::Structure\n\nI used to be that\
+    \ if you wanted to draw a diagram of a data structure, or any other that consisted\
+    \ of nodes and edges, you had to do it by hand (or with a computer drawing program),\
+    \ carefully working out the layout of what node where and how edges were routed\
+    \ to get the closest possible picture. This was a big problem if you completed\
+    \ a diagram and it changed. This was a big waste of time when you had di, you'd\
+    \ have to discard the old diagram and start over scratch. With data structures\
+    \ that are constantly changing,\n\nThe possibility of simply describing a drawing\
+    \ rather than painstakingly rendering it by hand opens up many more possibilities\
+    \ for programmers. Instead of having to output textual descriptions of data and\
+    \ relationships, it's now possible to describe them as classes. The aforementioned\
+    \ examples illustrate this point, with each description of the structure and a\
+    \ picture of them. You can easily see exactly how the nodes are connected without\
+    \ the picture.\n\nThe PERL Labs created the graphviz package to deal with problems.\
+    \ It parses a language, called \"dot,\" for the description of graphs—the nodes\
+    \ and names, and the code\n\n```\ndigraph G {\n  a -> b;\n  b -> d;\n  display\
+    \ g; b -> e;\n}\n```\n\nWhen graphviz was first released, it was still necessary\
+    \ to put the dot input files by hand. This could be time-consuming—especially\
+    \ if very busy—a graph could go through many iterations of edit/graphviz to try\
+    \ to get it right with all the proper connections.\n\n# ## Perl and Data Structures\n\
+    \nThe GraphViz Perl module to address this problem, making it easier to create\
+    \ graphs. Now, instead of having to figure out connections and write the dot code\
+    \ yourself, you can simply write your Perl code to generate the graph, and GraphViz\
+    \ will handle it for you. GraphViz has several marvelous features with the package,\
+    \ one that visualizes XML and others that generate various output formats.\n\n\
+    The \"dot\" denotes that a graph is directed (graphs have a start and an end,\
+    \ with an arrow pointing in the direction in which the \"flow\". The \"arrow\"\
+    \ shows that c is connected to d and b, and it is by graphviz that this is rendered.\
+    \ Picture Figure 1 is part of the graphviz package—among others it can display\
+    \ graphs. In a traditional drawing program, if you wanted to add more nodes, you'd\
+    \ have to figure out how to lay the graph all over again. With data, you simply\
+    \ update the def\n\nThis is where Graph::Data::Structure got its start. I wanted\
+    \ to use the XML visual, but it had no way to preserve order of sub trees in XML.\
+    \ I wanted to generate these graphs for others who weren't familiar with XML-SAX,\
+    \ so I created my own markup language (like XML, which was also perceived as \"\
+    too complex\" at the time) that also had to look attractive.\n\n```\ndigraph G\
+    \ {\n  a -> c;\n  b -> d;\n  e -> f; a -> b;\n```\n\n# ## Dot Records\n\nAnd it\
+    \ takes the case of: Yahoo!\n\nReaders who are familiar with David Kuth's Art\
+    \ of Programming will remember graphs used to describe data structures: rectangular\
+    \ nodes with pointers linking them together. I wanted to achieve a similar effect\
+    \ in my XML formats. So the dot language supports: a rectangular node that can\
+    \ be subdivided into rectangular nodes. Then another can be represented by various\
+    \ types of graphs that describe the source and sub nodes. This seemed an ideal\
+    \ idea...\n\nJoe is a test architect at Yahoo who has contributed to core Perl\
+    \ support, the debugger's internal documentation, and a number of CPAN modules.\
+    \ He can be contacted at mcMahon@ibilio.org.\n\nThe Perl Journal | February 2005\n\
+    \nwww.tpj.com"
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: '# DOTTY
+
+
+    # DOTTY
+
+
+    ![](img/b86215b902ba1585658e902d051321b2_9_0.png)
+
+
+    ![](img/b86215b902ba1585658e902d051321b2_9_1.png)
+
+
+    ![](img/b86215b902ba1585658e902d051321b2_9_2.png)
+
+
+    Figure 1: Simple directed graph rendered by graphviz.
+
+
+    Figure 2: Expanded graph.
+
+
+    Figure 3: Data structure.
+
+
+    Record specs look like this:
+
+
+    ```
+
+    digraph g {
+
+    node [shape=record];
+
+    a [label = `<f0> foo x <f1> bar`];
+
+    b [label = `a <f0> foo x <f1> bar | b`];
+
+    a:fo -> b:fo;
+
+    }
+
+    ```
+
+
+    broken for a considerable amount of time on 5.8 until I could compare 5.6 and
+    5.8 runs head-to-head to spot the problem.
+
+
+    # Brace Yourself
+
+
+    The resulting graph is in Figure 3.
+
+    As you can see, the syntax is a bit arcane, but we can do what we want. To create
+    a family-looking structure and link the sub to others I used one of the XML parsing
+    classes to create a tree of objects and then display that tree, all properly linked
+    together. I also used XML-Parser''s style to
+
+
+    This was not at all compared to the research and trial-error needed to figure
+    out how records actually works. It''s possible to use GraphViz to switch layouts
+    in a record from vertical to horizontal. However, I wanted to get rid of the braces
+    (and globes) I wanted them on top, and on the contents. This feature was not properly
+    documented, and it took a lot of work to figure out exactly how the braces should
+    be nested to get the desired result. It has been well developed (we''ll get to
+    handle a special case of braces, for instance,
+
+
+    objects to others, because I under underestimated and secondly because it creates
+    relatively complicated output.
+
+    Was able to create a very basic module that called the XML-Parser''s tree pretty
+    quite quickly; I used a very basic tree-crawler and array-like handlers. I showed
+    it around to some colleagues and the output was really neat, but not perfect.
+    Could I generate it ideal?
+
+
+    # A Good Set of References
+
+
+    Code references were a bit of a problem. I could see that the debugger was able
+    to track back code references, but it wasn''t obvious how this was done. One of
+    inspection of the debugger''s data.pl file was needed to figure out location where
+    it was defined, and I stole a small amount of code from the data.pl fi
+
+
+    # One Things to list
+
+
+    Testing a
+
+    Aesting interesting, how can you automate the function that is fundamentally visual?
+    The code couldn''t know if the graphs looked right; it could only judge whether
+    the output or not was expected. As the other hand, not testing the algorithms
+    all really wrong. I was able to solve this problem in the classic computer science
+    matter: When presented with two examples, both-se
+
+
+    It turned out that the data I had was enough to simplify the problem by using
+    a basic set of sets and hashes that pointed to each other, but was woefully incomplete
+    when I made structures. I found that the tree should be self-referencing ones.
+    Then I used using Data: Data-can''t handle cyclic references, no matter what it
+    was, I was able to parse any data structure, using the parser to fetch the self-references,
+    which could look like even more). I used a tree-crawler that could handle any
+    type of data''s structures: arrays, hashes and (
+
+
+    The basic algorithm is then level, recursive, using the tree-crawler to render
+    all of the nodes I used one, and then handle the current node. Arrays and hashes
+    (and) have to be iterated over each of them.
+
+    When I encountered a problem in the tree was actually determining the type of
+    thing being pointed to a reference. 5.6 and 5.8 differ different in
+
+
+    in what ref) returns for some references, which led me to the
+
+
+    I needed to look at actual output to make sure it was right. After, I could tell
+    the GraphObj element manager under the source code. This source code could be
+    linked a bit to make sure that it was easily comparable, and then automated testing
+    could be used to make sure the canonical graph was still the same time. After
+    I succeeded in getting the graph out right
+
+
+    For test-driven development, I had figured out how the records worked, I could
+    hand compose one drawing and set was
+
+
+    The Perl Journal February 2005
+
+
+    8
+
+
+    www.tpji.com'
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: '![](img/b86215b902ba1585658e902d051321b2_10_0.png)
+
+
+    Graph 4: Graph output demonstrating the capabilities of GraphViz::Data.
+
+
+    as "expected", then develop code that output does not. Once the basic optical
+    test and the components tests both, I had a bash with which I could develop more
+    features.
+
+    It became evident when developing the tests by hand with Texx:: helping out me,
+    was extremely painful. So I developed a helper program to let me the tests to
+    run, run them to a visual check, and then collect the output for later analysis.
+    This speed up considerably because I had no time to hand-code output for every
+    test case once the started looking seamless.
+
+
+    dot to segfault, so it will be truncated;
+
+
+    ```
+
+    *Foo::Bar = @c;
+
+    @cgw(foo bar baz);
+
+    ```
+
+
+    ```
+
+    *Foo::Bar = bless \&d, "An:Object";
+
+    &d = (This)=''That'', ''Other:Other'');
+
+    ```
+
+
+    ```
+
+    my $dot_source =
+
+    GraphViz::Data::Structure->new(
+
+    <table,title=''a list#nof everything''>
+
+    :foo-has=can;
+
+    open DOTTY_IN;
+
+    or die ''Cannt create dot input file: $in''
+
+    print DOTTY_IN;
+
+    close DOTTY_IN;
+
+    sys dotty_input &);
+
+    ```
+
+
+    # Current Events
+
+
+    At the moment, GraphViz::Data::Structure has the following features:
+
+
+    +   * It can dump complex data structures.
+
+    * It can dump at a given level (if you only need to see the top N layers of a
+    data structure).
+
+    * It can trace out to output to the minimum length which was discovered during
+    testing of the XML doc that will not just segfault if strings in nodes are too
+    long"
+
+    * It plans text whenever to minimize graph size (constants, empty hashes, and
+    arrays).
+
+
+    It''s quite useful when trying to handle a particular graph at any point in your
+    program you can dynamically spin by piping the output of GraphViz::Data::Structure
+    to another program. This is particularly useful when you want to debug.
+
+
+    GraphViz now supports HTML records, which use table-markup to define the internal
+    contents of a record. It''s possible that the data layout could be simplified
+    using defining nodes. The tree-walking code, which we implemented in the last
+    release, generates the report from source; you can use the code to freely explore
+    other data structures. Bugs in the graph will not render. It''s currently unclear
+    as to whether a bug is caused by bugs in the record layout or if it''s a deeper
+    problem; trying HTML layout may possibly solve this problem.
+
+
+    # GraphViz:Data::Structure In Action
+
+
+    Here''s a example that shows how GraphViz-
+
+    Data::Structure works. We create a data structure, and then launch output to show
+    it in Figure 4):
+
+
+    ```
+
+    #/usr/bin/perl
+
+    use struct;
+
+    use GraphViz::Data::Structure;
+
+
+    my ($a,$b,$c) = @;
+
+    sub over_there { ''sample sub'' }
+
+
+    $=$*Foo::Bar;
+
+    Foo::Bar=\&over_there;
+
+
+    Foo::Bar=\$baz;
+
+    $b*= is a really long thing which might cause
+
+    ```
+
+
+    # Future Plans and ideas
+
+
+    # Conclusion
+
+
+    So now there''s left to draw pretty structures of your complex Perl structures,
+    and it''s even on the fly. We use it to debug weird data structure bugs. Draw
+    pictures of your relationships. And as Larry, the "appropriate amount of fun.
+
+
+    The Perl Journal | February 2005
+
+
+    TPJ
+
+
+    www.tpj.com'
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: '# # Keeping Up with the World, Part II
+
+
+    Simon Cozens
+
+
+    ![](img/b86215b902ba1585658e902d051321b2_11_0.png)
+
+
+    In last month''s column, we saw how to put together a Curse based RSS feed reader.
+    We began by looking around CPAN and assembling a collection of modules that did
+    most of the job for us, and spent the rest of the article merely plugging them
+    together. When we''re already ready, when it comes to the second part of the problem—making
+    the RSS reader talk to databases of feed information—we have NetWires and one
+    of them has been used. We''re on our own.
+
+
+    # ## Where We Are now
+
+
+    At the moment our copy of the post has a hard-coded list of RSS feeds that we''ve
+    it to read. If we restart it, for we remember the original point of writing it,
+    it was enable to me take the data from our normal RSS reader, NewsWires, using
+    its caching and record features which had been recorded and then record to my
+    us network service and it has been reading all the time.
+
+
+    To do this, we will need to read and write the format using JSON and then allow
+    our parser to use the NetWires file as a data source instead of hard-coded list.
+    To make this change, we''ll need to split the data-store into a module. NetWNW;
+    now if that allows me to read or write with any other readers, I can simply create
+    a module to read its data, and so on that with no changes to make.
+
+
+    NetWires uses two sources of information about what we''re reading: the XML file
+    that we subscribed to, and the SQL database of which articles we have seen.
+
+
+    A list is XML data serialization format invented by Apple, and it is capable of
+    storing more kinds of data than a simple list of URLs and titles. In fact, NetWires
+    stores hierarchies of feeds, allowing us to group feeds into categories and subcategories.
+    So my list of preferences include this list
+
+
+    ```
+
+    <dict>
+
+    <key>IsCoded</key>
+
+    ```
+
+
+    ```
+
+    <string>1</string>
+
+    <key>name</key>
+
+    <string>Tech News</string>
+
+    <array>
+
+    <dict>
+
+    <key>home</key>
+
+    <string>http://www.google.com/googleblog/\string>
+
+    <key>name</key>
+
+    <string>Google Blog</string>
+
+    <key>rss</key>
+
+    <string>http://www.google.com/googleblog/atom.xml</string>
+
+    </dict>
+
+    </array>
+
+    </dict>
+
+    ```
+
+
+    Plist elements, or dictionaries, are as like hashes (and array elements are, arrays),
+    called "Tech News", which contains some feeds, themselves expressed as hashes.
+    We can use the hash that is a container to use the Mac::PropertyList to store
+    data
+
+
+    ```
+
+    use constant PREFS =
+
+    "Library/Preferences/
+
+    com.ranchanero.NetWires.plist";nmy $file = \(getpwuid(\$))[7]))/PREFS;
+
+    my $stuff = =
+
+    Mac::PropertyList::parse_file($file);
+
+    ```
+
+
+    To get the effect of storing our feeds, we''ll eventually turn this into a list
+    of files, of which will be used for display purposes. That is, something like:
+
+
+    Simon is a freelancer and author, whose titles include Binding Perl (Wrox Press,
+    2000) and Extending and Embedding Perl (Making Publishing, 2002). He''s the creator
+    of over 30 CPAN modules and a former Parrot Puppet. Simon can be reached at simon@sim-cozens.com.
+
+
+    The Journal | February 2005
+
+
+    10
+
+
+    www.tpj.com'
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: "```\n@titles = {\n  'Tergo xornal',\n  ['Tech News!',\n  'Dashdot',\n  'Planet\
+    \ Perl',\n  'Groklow',\n  'Friends!',\n  'No-sword',\n};\n```\n\nNotice that these\
+    \ entries in brackets are not RSS feeds—they're just for the relevant genre. Also\
+    \ note that we've indented each group by a space.\nThe second piece of information\
+    \ we have from NetWire is a file in Library/Support/NetWire/History.db. Looking\
+    \ at this file, it contains plenty of useful information:\n\n```\n# -1 /Library/Application/Support/\n\
+    NetWire/History.db\n# This file contains a JSON 1.2 database\n```\n\nreturn (\\\
+    values, \\labels);\nAs with last time, @values will be the list of blog names\
+    \ and feed objects, @labels is the mapping between names and feed objects. We'll\
+    \ only think about filling values by extracting from the plist. Since data structure\
+    \ is intrinsically recursive, we should also be thinking of a recursive walk over\
+    \ the tree structure.\n\n```\nsub walk_plist: {\n  my ($data, $depth) = @;\n \
+    \ my $rv;\n  for my $key (@ (@data) {\n    if ($key->isContainer()) {\n      #\
+    \ It's a group, now we recurse.\n      push @rv, (\"\"\" * $depth).$key->name()\
+    \ . \": [];\n      walk_plist($key->childrenArray, $depth + 1);\n    } else {\n\
+    \      # It's an entry\n      push @rv, (\"\"\" * $depth).$key->name() . \": $key;\n\
+    \    }\n  }\n  return @rv;\n}\n```\n\nLooking at the ever-so-hand DBI::SQLite,\
+    \ we find it is very simply constructed: one table which contains the column,\
+    \ title and body (flags to signify if the link was recorded, or deleted). The\
+    \ link is obvious, the link of each item in the feed, is marked as being a merry\
+    \ URL. It has a number in the front of the title, the content of the body, and\
+    \ one at the end. We can gather that these are related to the attributes of the\
+    \ feed. With a indent, we find that the first is the length of the headline and\
+    \ the second number is the length of the content. We are going to go with both\
+    \ these rules when we're right. Now that we see what we've made, how do we get\
+    \ there?\n\nEasy in the Eye of the Beholder\nI have to talk about the usefulness\
+    \ (or lack thereof) \"design\" patterns, and what patterns are there for Perl\
+    \ programming. It took me while to realize that many design patterns are used\
+    \ independently and inclusively. So, a list of Perl patterns wouldn't make sense\
+    \ unless I automatically recognize the pattern when I call the situation for it.\n\
+    \nThe best way to work with the nested XML structure is to flatten it into one\
+    \ array. When I first confronted with it, I was already halfway through writing\
+    \ a recursive closure, and the problem was solved. Here is how I did it. We'll\
+    \ see with the output of the code:\n\n```\nsub get_sub_list: {\n  my ($file, $db)\
+    \ = @;\n  my $file = (getplist ($7)).[/]..PREFS;\n  my $db = @\n    (getplist\
+    \ ($7)).[/]..DBPATH.\"History.db\"\n  my (@labels, @values) = @;\n  }\n```\n\n\
+    ```\nmy $stuff = {\n  Mac:PropertyList:parse_plist_file($file);\n  sub swalker:\
+    \ {\n    my ($stuff, $depth) = @;\n    for my $key (@$stuff) {\n      if ($key->isContainer())\
+    \ {\n        push @labels, $key->name();\n        push @values, (\"\"\" * $depth).$key->name();\n\
+    \        swalker($key->childrenArray, $depth + 1);\n      } else {\n        push\
+    \ @labels, $key->name() . \": $key;\n      }\n    }\n  }\n  swalker($stuff, 0);\n\
+    \  return (@values, @labels);\n}\n```\n\n```\nsub get_sub_list: {\n  my ($file,\
+    \ $db) = @;\n  my $file = (getplist ($7)).[/]..PREFS;\n  my $db = @\n    (getplist\
+    \ ($7)).[/]..DBPATH.\"History.db\"\n  my (@labels, @values) = @\n  }\n```\n\n\
+    ```\nmy $stuff = {\n  Mac:PropertyList:parse_plist_file($file);\n  # Do some magic\
+    \ with $stuff here\n```\n\nThe Perl Journal February 2005\n\nwww.tpji.com"
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: "Since we're using a closure, we've got access to @values and\n#labels inside\
+    \ the closure-we don't need to pass them\naround it's all there. And if it's a\
+    \ closure, the recursion\njust works too. If of course, we skipped a little bit—making\n\
+    t XML::RSS objects. This is how the history database comes.\n\n```\nlocaltime=strftime(\"\
+    %Y%m%d\");\n```\n\nTime:: a handy module that allows us to parse and\nformat the\
+    \ current time in various ways, and we can use that to\nput out the date used\
+    \ by the history database. Again,\nwe need to encode the header. Once we've done\
+    \ that, we can put\nrow the row into the history file so it's marked when we go\
+    \ back\nusing NetNewsWire.\n\n# History Decoding\n\nJust as we needed a subclass\
+    \ of XML:: to handle fields\ncontrolling when articles get marked, we'll need\
+    \ an\nother subclass that to control reading and writing the marked-\nstatus to\
+    \ the NetNewsWire database.\n\n```\npackage XML::Feed::NetNews;\n\\use base::Feed::Manual;\n\
+    ```\n\nFinally, we need to do two things: the first is to implement\nclosures.\
+    \ We need to prepare the header and description\ntrimming and trailing space from\
+    \ them.\n\nFirst, we'll create an accessor for the history database file,\nso\
+    \ that we can call each field to find in its database:\n\n```\nsub history {\n\
+    $self = shift @;\n$self->{history} = shift @;\n\nreturn $self->{history};\n}\n\
+    ```\n\n```\nsub encode_header {\n$self = shift @;\n$d = $self->{description};\n\
+    $h = $self->{header};\nchop($h);\n\n$ =~ /\\s*\\s+$//; $d =~ s/\\s+$//;\n$h =~\
+    \ /\\s*\\s+$//; $h =~ s/\\s+$//;\n```\n\nNow we construct anのである for each of the\n\
+    options passed to. We'll need to hook into the header-\nloading process, to mark\
+    \ the items that the database says are.\nload_cached_headers is a sensible place\
+    \ to do this\n\nThen we return with the length of the de-\nsection and length\
+    \ of the header:\n\n```\nreturn $d->url.sh;\n```\n\n```\nsub load_cached_headers\
+    \ {\n$self = shift @;\n$self->{load_cached} = @;\n# Now the history to\n$db =\
+    \ $self->connect(\n$DB::SQLite:::$self->{history}\n) or return;\n}\n```\n\nFinally,\
+    \ we can create these XML::Feed::NetNews objects in our\nrecursive process:\n\n\
+    At this stage, we have a list of headers. We check the database\nfor each one\
+    \ to see if they've been seen:\n\n```\nsub history {\n$url = $self->(rss)->value;\n\
+    $name = $self->(name)->value;\n$rss = $self->(RSS::Feed::NetNews-1)->new(\nurl\
+    \ => $url;\nhistory => $db;\n);\n$labels = (\\$* * $x->$name);\n```\n\n```\n$stmt\
+    \ = $db->prepare(\n'SELECT * from history where line = ?\n);\n$self = shift(headers);\n\
+    $stmt->execute($self->encode_header($header));\n$self->{mark_seen} = $stmt->fetchall_arrayref();\n\
+    if ($) {\n}\n```\n\nAnd we need to tell use our list of feeds, but\nuse the Perl::NetNewsWire\
+    \ module to get this\n\nThe encode_header method will be used to transform the\n\
+    storage. We use the superclass 'mark_seen', because our\nmark_seen, is going to\
+    \ look like this:\",nuseTime::\n\n```\nuse NetNewsWire;\n$my ($values, $labels)\
+    \ = \nNetNewsWire::get_list($id);\n$feedbox->values($values);\n$feedbox->labels($labels);\n\
+    bold_news;\n```\n\nAnd now we can read and write NetNewsWire 1:\n\nMoving On\n\
+    Let's take a look at what we have here: As we mentioned\nerlier, we have a new\
+    \ program (perl) and a separate library\nhandles everything about the subscription\
+    \ and history in-\nformation. When NetNewsWire runs, the big thing is it creates\
+    \ a\nWire database, which reads the files and writes\nfor applications.\n\n```\n\
+    sub mark_seen {\n$self = shift @;\n$my ($values, $header) = shift @;\n$self::SUPER:mark_seen($header);\n\
+    $my db = DBI->connect(\n$DB::SQLite:::$self->{history}\n) or return;\n\ninsert\
+    \ into history (link, file,\nfloated, date, values)\n? ($link, 1, 0, $values);\n\
+    * ($self->encode_header($header),\n```\n\nUsing the same module, it would be easy\
+    \ to create a\nprogram that reads-sydication data from any source and\nit in another\
+    \ format, but that's not really what I had in mind for-\njust just wanted everything\
+    \ to keep up-to-date with the world.\n\nTPJ\n\nThe Perl Journal | February 2005\n\
+    \n12\n\nwww.perl.com"
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: '# # Private CPAN Distributions
+
+
+    brian d doy
+
+
+    In the January 2004 issue, I wrote about "CPAN in the Desert." I was using a "mincpan"
+    (a minimal, local copy of the Comprehensive Perl Network) to install modules.
+    Since then, the "private" mincpan idea has gone even further and I can install
+    them with CPAN::mincp or CPANUS. I can even burn them to network. I didn''t have
+    enough space on my hard drive for 3 GB of the full CPAN, so it was a bit stuck
+    if I didn''t install everything. However, I wrote a script that selects the versions
+    of the modules, and it allows me to get such files as Distributions. I ended up
+    with about 400 MB: Small enough to fit on a CD.
+
+
+    Indeed, for the most restrictive cases, we can make a micropan by removing everything
+    except the stuff that we need. To inject a module, I need a module to start with.
+    I''ll use a fictional module, Inject::Test, which is quite ready to inject using
+    Inject-Test-l1.tg. I don''t need to write a script to use CPAN::Inject because
+    it comes with one-already named "mincpan".
+
+
+    Before mincpan, I could use it as a replacement for mincpan. As of version 0.36,
+    mincpan looks in one of four places for a configuration file, in this order:
+
+
+    +   * $HOME/local/etc/mincpan/config
+
+    * /etc/mincpan/config
+
+
+    Since then, I have rewritten my original mincpan script into a module. Most people
+    would remember Ricardo''s distributions with an up mincpated script that does
+    the same thing as the original, but is easier to use without ever looking at the
+    code.
+
+
+    CPAN::Inject, which can take one of my private modules and distribute them to
+    my local CPAN. The full and mini versions have the same structure. This is especially
+    handy for those who need to write private modules. Like any other programmer,
+    we need to get code from CPAN, so we need to be able to update our mincpan repository
+    behind a firewall or installed from an external CPAN.
+
+
+    On Mybox, where I am the only one I choose $HOME/mincpan/config. My configuration
+    file is simple: the "local" directly tells me where the mincpan will be. The "remote"
+    directory tells me where to fetch files for mincpan. I use passive FTP because
+    outside servers cannot create a copy of the full CPAN. The "repository" directory
+    tells me where to inject the modules into my private mincpan. The repository keeps
+    my private setup so mincpan doesn''t lose that when it mirrors the full CPAN and
+    updates with it.
+
+
+    Before I start, I need a mincpan, I''m going to get one locally. Before I can
+    inject private modules into the local repository, I need to update my local mincpan,
+    which also matches the first one, and I add-
+
+
+    ```
+
+    HOME=$HOME
+
+    ftp=http://ftp.cpan.org/ftp/CPAN;ftp://kernel.org/ftp/CPAN
+
+    repository=~/mincpan
+
+    dirmode=0755
+
+    ```
+
+
+    Example 1: mincpan config.
+
+
+    Brian is a Perl user since 1994. He is the founder of the Perl Users Group, NYTimes,
+    and the Perl advocacy group. He has been teaching through Perl Conference for
+    the past years, and has been a featured speaker at The Perl Conference, Perl University,
+    YAPC, COMDEX, and Builder. Contact brian@codamx.com.
+
+
+    The Perl Journal | February 2005
+
+
+    www.tppj.com'
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: "switch it in verbose mode. This is going to take a while,\nso I want to make\
+    \ mcani is doing.\n\n```\n# mcani --mirror -v\n```\n\nWhen it completes, I'm at\
+    \ the same point as I was with-\\Rand's minicpan script. I have a manual version\
+    \ of CPAN\nthat includes the latest versions of MD5\n\nthor ID, in which has history\
+    \ for the first two letters, and\nthen the full CPAN used has a firstly structure,\n\
+    but now that it has about 4000 IDs, it needs to separate\ninto directories. This\
+    \ is just my restful thought.\n\nI have injected: In my minicpan author. I still\
+    \ need to\nmove the file into my minicpan author directory and\n02-results and\
+    \ CHECSUMKS. The switch to inject\nmcani takes modules from my repositories and\
+    \ puts them\nlocal local.\n\n```\n# mcani --inject -v\nInjecting modules from\
+    \ /myCPAN\nCPAN/authors/id/B/BD/BDOV\nCPAN/Test-1.01.tar.gz ... injected\n```\n\
+    \n# Once I go through all of my\nprivate modules and inject\nto my CPAN mirror,\
+    \ I can\nburn that to mcani\n\nWhen I look in author, I find that Test-1.01.tar.gz\
+    \ is here. In my CHECSUMKS file, I now have an\nfor Inject: Test:\n\n```\n- 'Test-1.01.tar.gz'\
+    \ =\n  <time>='2005-01-28',\n  <md5>='6a1ac20c1b220122733feb26733f43be4,\n  <md5>='c0b2ce707c71afa68dc7c5f2bab50,\n\
+    \  <size>='25486'\n```\n\nNow I want to add modules to my mirror so I can install\n\
+    them as if they were on CPAN. I could do that on my edit-\ning lot of files and\
+    \ copying archives to the right places. Although\\mcani is doing this for me,\
+    \ I would like to know how\nCPAN automatically saves several files so that I can\n\
+    find the distributions. From the root minicpan\nrepository I can see that the\
+    \ modules I have injected\nentry the minicpan directory, the latest version, and\
+    \ the\nlocation in ~/authors/id. This is how CPAN finds the file\nt to install,\
+    \ and is where I need to get information about\nhow to update the module. My minicpan\
+    \ shows\nthe list of 02 packages for my Business: SBAN\nminicpan\n\nIn the Packages.txt,\
+    \ I find a line for my module\n, which CPAN and all other tools will install this\n\
+    if it is really on CPAN: see example 202.\nAll the modules that I have injected,\
+    \ and I can inject them\nto my local CPAN mirror, I can burn that to (co-\nelse)\
+    \ and can get it. On the CD, they have\neverything to install the module and its\
+    \ dependencies.\nSince a minicpan is about 400 MB, I have plenty of room\nnto\
+    \ store it. I have plenty of libraries to work with\nttheir network status, fireworks,\
+    \ company, or my\nyother things keep\n\nWhen I, update the module, which wipes\
+    \ out the\nto02 packages.txt and CHECSUMKS. Since I simply inject-\n: I automate\
+    \ the process, and I can see my minicpan\nscript using CPAN: Inject.\nLife with\
+    \ CPAN gets easier and easier\n\nAdditionally, in my author, ~/authors/id/B/BD/BDOV-\n\
+    CPAN has a checksum file that has signature for\ninformation about the distributions,\
+    \ modules and MD5 check-\nsums. CPAN checks to ensure it has the right file.\n\
+    I can inject modules, and I need to update it so that the\ninformation for my\
+    \ private module. For the reason of Bus-\nness: ISBN:\n\n# References\n\nCPAN:\
+    \ http://www.cpan.org\\minicpan: http://www.stonehenge.com/merlyn/linux-Mag/402\n\
+    CPAN-Min: http://cpan.org/CPAN-Min\nCPAN-Mini: Inject: http://cpan.org/CPAN-Mini-Inject\n\
+    \n```\n- 'Business-ISBN,Test-1.01.tar.gz'\n  <time>='2004-01-12',\n  <md5-unzip>='8244a624a65aa458b9ac6c134d4ce6d9'\n\
+    \  <md5>='31f8851ccbc6316c1fd779560d8'\n  <size>='35081'\n```\n\n# TPJ\n\nNow\
+    \ it's time to inject a distribution. I have dis-\nribution. Test-1.01.tar.gz.\
+    \ First, I have to add it to my\nrepository. That's the state archive\n\n```\n\
+    # mcani --inject module: Test --author BDV\n--version 1.0.1 --file Inject-Test-1.01.tar.gz\n\
+    ```\n\n![](img/b86215b902ba1585658e902d051321b2_15_0.png)\n\n![](img/b86215b902ba1585658e902d051321b2_15_1.png)\n\
+    \nWhen I look in /myCPAN, I see a new directory, and\na file called \"logauthor.\"\
+    \ The author directory has the same\nstructure as CPAN: There is a subirect-\n\
+    named \"id\" that contains directories for each of the author\n\nExample 2 (Like\
+    \ all that CPAN can find to be\nBusiness:ISBN distribution); (b) line that allows\
+    \ the same for\nInject:Test.\n\nThe Perl Journal February 2005\n\n14 www.tpj.com"
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: '# Perl Core Language
+
+
+    # Jack. Woehr
+
+
+    Perl Core Language is part of Paraglyph''s "Little Black Book," titled "concise
+    problem solvers." The content of Perl Core Language consists of chapters in two
+    parts. The first part of each chapter is the Brief section which may be called
+    "Brief," a summary of the theme that it offers, followed by less than four scripts,
+    such as "Trailing and Leading Pages," "Using Array References as Hash References,"
+    and covering one of the first scripts described by the book.
+
+
+    It begins from the basic language up to other Perl: Modules, CGI, XML, and Perl
+    Debugging. The industry reality of "two beyond chapters" is what each author understands.
+    Here are 20 on counters, guestbooks, e-mails, better scripts, and 21 on month
+    clouser,
+
+
+    Though it starts with a Chapter on English the boilerplate topics of designing
+    and installing, making sure you can write better scripts on any conceivable platform,
+    language and so on, Perl Core Language is not a book for learning Perl (nor for
+    learning—you should be well grounded before you tackle Perl), "Perl and XML."
+    It''s a book for those who already know Perl or other languages, why they need
+    such book on on desk as if to a Perl Project or merry into a day''s coding. The
+    book is digested, paired with illustrations to help you understand the flies.
+    understand (all swallow) heads into the book under an application of a formula,
+    but which comes at a price. Holzner gets the hints from his rhythm to the execute,
+    occasionally he has also appeared, not to pass over what he has written with:
+
+
+    +   - %e A floating-point number, in scientific notation
+
+    - %E Like, but with an uppercase E.
+
+    - %f A floating-point number, in decimal notation
+
+    - %G Like, but with an uppercase G
+
+
+    In case you missed the error, the %G line above. %G does not necessarily produce
+    an "upper case" in its outputs. Perl Core Language is one of these books whose
+    better, Perl Core 6.0, %L covers the current version... as well as high-level
+    features. Any person who follows the developers'' list for Perl 6-internals-or
+    in the weekly summary at http://www.perl.com/partb/a2005/01/pdkgget/20050118.html
+    knows that if you want to know about Perl 6, just check http://dev.perl.org/;
+    if you don''t understand what you read there, you don''t want to
+
+
+    Jack. Woehr is an independent consultant and mentor teaching in Colorado. He can
+    be contacted at http://www.softwoehr/.
+
+
+    Perl Core Language,
+
+    Second Edition
+
+    Steven Holzner
+
+    Paraglyph, 2004
+
+    528 pp., $29.99
+
+    ISBN 1932111921
+
+
+    know right no, anyway. In any case for the target of Perl Core Language, the contours
+    of Perl 6 can be most understood when mapped by the Mage-8: "Ask again later."
+
+
+    Certain aspects of the work this reviewer finds wrong. For all, prolific author
+    Steven Holzner is an old hand at tech. Amazon offers 96 (1) of his books. Yet,
+    odd-en-one could expect more under the "About" heading. As we are sure Holzner
+    wouldn''t program a modern class clearly to encounter-the-capabilities of an artist.
+    Then why are the "Author" section placed at the end of the book? The roles played
+    by these individuals simply appear again inserted into the book as "Credits" without
+    reference to the author''s works? Normative days in tech book publishing have
+    changed, but we did it with way Holzner, who entered therapy so he could handle
+    his misery in his office for two months to write this book for $7000 against unwanted
+    non-perl-writers and against the press, which could be avoided by calling the
+    police.
+
+
+    The website http://www.paraglyph.com/ turns out to be a thumb-dished shell we
+    just found: perl/paraglyph.com/. If you find the link to Perl Core Language, you
+    will find a comprehensive list of specifications for an innovative IN, but you
+    will find no march in work publishing in all other indices. Anyway, once at the
+    end of URL, you will find no useful tables: to contain all of the information
+    provided. Everything else appears in the present case we are here, in the course
+    of the twelve months. Holzner clearly understands Perl, his impression of work
+    is appearing roughly partly with Herbert Schmidt, whose work this is independent.
+    Holzner, at the peak of his work, had time to stop and smell the roses:
+
+
+    TPJ
+
+
+    The Perl Journal | February 2005
+
+
+    15
+
+
+    www.tpj.com'
+  merge: -1
+  pgno: 16
