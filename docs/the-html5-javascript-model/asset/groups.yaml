@@ -1,0 +1,2693 @@
+- md: '
+
+    # VISUALIZING
+
+    # THE WEB
+
+    # HTML5
+
+    # JAVASCRIPT MODEL
+
+    # Matthew David
+
+
+    ![](img/1770128c4f0e28ca70b194a533659495_0_0.png)
+
+
+    # HTML5 JAVASCRIPT MODEL
+
+
+    Matthew David
+
+
+    AMSTERDAM • BOSTON • HEIDELBERG • LONDON • NEW YORK • OXFORD
+
+    PARIS • SAN DIEGO • SAN FRANCISCO • SINGAPORE • SYDNEY • TOKYO
+
+    focal Press is an imprint of Elsevier
+
+
+    Focal Press is an imprint of Elsevier
+
+    30 Corporate Drive, Suite 400, Burlington, MA 01803, USA
+
+    The Boulevard, Langford Lane, Kidlington, Oxford, OX5 1GB, UK
+
+
+    © 2010 Elsevier, Inc. All rights reserved.
+
+
+    No part of this publication in this field may be reproduced or transmitted in
+    any form or by any means, electronic or mechanical, including photocopying, recording,
+    or any information storage and retrieval system, without permission in writing
+    from the publisher. Details on how to seek permission, further information about
+    the Publisher’s permissions policies and our arrangements with organizations such
+    as the Copyright Clearance Center and the Copyright Licensing Agency, can be found
+    at our website: http://www.elsevier.com/permissions/
+
+
+    This book and the individual contributions contained in it are protected under
+    copyright by the Publisher (other than may be noted herein).
+
+
+    # Notices
+
+
+    Knowledge and best practice in this field are constantly changing. As new research
+    and experience broaden our understanding, changes in research methods, professional
+    practices, or medical treatment may become necessary.
+
+
+    Practitioners and researchers must always rely on their own experience and knowledge
+    in evaluating and using any information, methods, compounds, or experiments herein.
+    In using such information or methods they should be mindful of their own safety
+    and the safety of others, including parties for whom they have a professional
+    responsibility.
+
+
+    To the full extent of the law, neither the Publisher nor the authors, contributors,
+    or editors, assume any liability for any injury or damage to persons or property
+    as a matter of products liability, negligence or otherwise, or from any use or
+    operation of any methods, products, instructions, or ideas contained in the material
+    herein.
+
+
+    ISBN: 978-0-240-81380-6
+
+
+    For information on all Focal Press publications visit our website at www.elsevierdirect.com
+
+
+    ![](img/1770128c4f0e28ca70b194a533659495_2_0.png)
+
+
+    # CONTENTS
+
+
+    - Understanding JavaScript ................................................................................
+    2
+
+    - JavaScript as Programming Language ................................................................
+    4
+
+    - Developing JavaScript for HTML5 .................................................................
+    15
+
+    - Integrating JavaScript with HTML5 .................................................................
+    23
+
+    - Taking JavaScript to the Next Level with Ajax ............................................
+    27
+
+    - What You Have Learned ................................................................................
+    34
+
+
+    # HTML5 JAVASCRIPT MODEL
+
+
+    CSS, SVG, and Video are all great improvements to HTML5. The role for HTML5, however,
+    is not to simply add eye-candy, but to enable developers to create applications
+    in web browsers that are equal in performance to desktop applications. To accomplish
+    this, you need a development language that gives developers the ability to create
+    sophisticated solutions. The answer to this is JavaScript, the world''s most popular
+    programming language.
+
+
+    Currently, the belief is that web applications simply are not as powerful as desktop
+    applications. The reason for this is not due to JavaScript, but the engines inside
+    of your web browser that process JavaScript. The faster a script can be processed,
+    the more sophisticated your applications can become.
+
+
+    During 2009, web browser companies played a game of leap frog trying to reset
+    speed benchmarks. Firefox, Safari, Google, and Opera played concurrently. Toward
+    the end of the year it appeared that the only company that would be left in the
+    dark was Microsoft with the Internet Explorer 8 browser. At the fall 2009 PDC
+    Microsoft showed off an early developer version of IE running standard JavaScript
+    tests (such as the SunSpider test at http://www2.webkit.org/perfs/sunspider-0.9/sunspider.html)
+    that placed its JavaScript engine on par with its competitors (see Figure 5.1).
+
+
+    The goal of this article is to review JavaScript, including how it is used in
+    HTML5, how you can build upon the work of others through Ajax, and how to implement
+    popular Ajax libraries into your work.
+
+
+    ![](img/1770128c4f0e28ca70b194a533659495_5_0.png)
+
+
+    ## Understanding JavaScript
+
+
+    The goal of this article is to show how JavaScript can be used with HTML5 by a
+    designer to give exceptional visual control to the layout of your web page. In
+    addition, HTML5 is expanding to support application programming interfaces (APIs)
+    that enable complex system integration inside your web pages. The new APIs, such
+    as Web Workers, Geolocation, and local data storage, are complex and require sophisticated
+    use of JavaScript to make them work.
+
+
+    JavaScript is not a new technology. The roots of JavaScript go back to 1993 when
+    Netscape Communications included a scripting technology called LiveScript in their
+    web browser. Incorporating even a simple programming language that enables interactivity
+    in the web browser became extremely popular.
+
+
+    The current release of JavaScript has dramatically matured the original LiveScript
+    language. Unlike desktop applications that run code optimized for an operating
+    system, JavaScript must be interpreted within a virtual machine translator running
+    inside of the web browser. This process inherently forces JavaScript solutions
+    to run more slowly than desktop applications. To compensate for this, Google uses
+    a technology called V8 that dramatically improves the processing of JavaScript
+    code. Competitors Mozilla, Apple, and Microsoft also have their own JavaScript
+    engines that compete with Google''s V8. Their engines—Rhino (Firefox) and SquirrelFish
+    (Safari)—bring applications extremely close to desktop. Sorry, Microsoft does
+    not have a cool name for the JavaScript engine; they just call it Chakra -not
+    very sexy.
+
+
+    Today''s JavaScript allows you to build desktop-like applications that run inside
+    of your web browsers. Google''s Wave solution is an excellent example of a massively
+    complex application that you are using JavaScript (Figure 5.2).
+
+
+    JavaScript is the most popular language in the world, with millions of users.
+    The technology is not too complex to learn; if you have any experience with C#,
+    Java, or ActionScript, you will likely learn quickly.
+
+
+    JavaScript is so popular that it has its own standard. Ecma International is an
+    industry association founded in 1961 and dedicated to the standardization of information
+    and communication technology (ICT) and consumer electronics (EC). The standardized
+    version of JavaScript is managed by Ecma. The full name is ECMA-262, but is often
+    referred to as ECMAScript. ECMA-262 is a standard and well supported by all browsers,
+    including Microsoft''s Internet Explorer.
+
+
+    ![](img/1770128c4f0e28ca70b194a533659495_6_0.png)
+
+
+    Figure 5.2 Complex JavaScript solutions Google''s Wave.
+
+
+    ## JavaScript as Programming Language
+
+
+    Fortunately, as programming languages go, JavaScript is not too complicated to
+    learn. By the time you get to the end of this section you will understand what
+    is needed to write basic programs. There are two ways in which you can insert
+    JavaScript into your web page:
+
+
+    - Insert your JavaScript directly into your web page between two SCRIPT elements.
+
+    - Add your JavaScript to a text file and link the web page to the text file.
+
+
+    To get started, we will use SCRIPT elements on a page to separate the code. Later,
+    you will create separate files for your JavaScript. Following is a simple JavaScript
+    file:
+
+
+    ```html
+
+    <html>
+
+    <body>
+
+    <script type="text/javascript">
+
+    document.write("Welcome to JavaScript");
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    This is a normal web page with opening and closing HTML elements. Within the BODY
+    element you can see the opening and closing SCRIPT element. You place your JavaScript
+    code within the SCRIPT element.
+
+
+    The SCRIPT element will default to JavaScript as a scripting language. There is,
+    however, more than one scripting language you can use. A alternative to JavaScript
+    is Microsoft''s VBScript, a version of the VB language in script format. VBScript
+    is natively supported by Microsoft''s Internet Explorer. Other web browsers can
+    support JavaScript through a plug-in.
+
+
+    This example JavaScript has one line of code:
+
+
+    ```javascript
+
+    document.write("Welcome to JavaScript");
+
+    ```
+
+
+    The "document" is referencing an object. In this case, the document object is
+    the web page itself. The "write" script is property of the document object that
+    allows you to add code. Figure 5.3 shows what your page will look like when you
+    run this script.
+
+
+    JavaScript can also be placed inside the HEAD element of a page and executed by
+    an event action. Event actions are driven
+
+    '
+  mdcn: "\n\n# 可视化\n# 网页\n# HTML5\n# JavaScript 模型\n# Matthew David \n\n![](img/1770128c4f0e28ca70b194a533659495_0_0.png)\n\
+    \n# HTML5 JavaScript 模型\n\nMatthew David \n\n阿姆斯特丹 • 波士顿 • 海德尔堡 • 伦敦 • 纽约 • 牛津\
+    \ \n巴黎 • 圣地亚哥 • 旧金山 • 新加坡波 • 悉尼 • 东京 \nfocal Press 是 Elsevier 的旗下品牌\n\nFocal Press\
+    \ 是 Elsevier 的旗下品牌 \n30 Corporate Drive, Suite 400, Burlington, MA 01803, USA\n\
+    The Boulevard, Langford Lane, Kidlington, Oxford, OX5 1GB, UK\n\n© 2010 Elsevier,\
+    \ Inc. 版权所有。\n\n未经出版商书面许可，本书的任何部分不得以任何形式或任何方式（电子或机械，包括复印、录制或任何信息存储和检索系统）进行复制或传输。有关如何寻求许可的详情、有关出版商许可政策的更多信息以及我们与版权许可中心和版权许可机构等组织的安排，请参阅我们的网站：http://www.elsevier.com/permissions/\n\
+    \n本书及其中包含的个人贡献受出版商版权保护（另有另处说明除外）。\n\n# 通知\n\n该领域的知识和最佳实践在不断变化。随着新研究和经验扩大了我们的理解，研究方法、专业实践或医疗治疗的改变可能变得必要。\n\
+    \n执业人员和研究人员在评估和使用本文中的任何信息、方法、化合物或实验时，必须始终依靠自己的经验和知识。在使用此类信息或方法时，他们应该注意自己及他人的安全，包括对他们负有专业责任的方。\n\
+    \n在法律允许的范围内，出版商以及作者、贡献者或编辑对于由于产品责任、疏忽或其他原因导致的人员或财产的任何伤害或损害，或对材料中包含的任何方法、产品、说明或思想的任何使用或操作不承担任何责任。\n\
+    \nISBN: 978-0-240-81380-6\n\n有关 Focal Press 所有出版物的信息，请访问我们的网站 www.elsevierdirect.com\n\
+    \n![](img/1770128c4f0e28ca70b194a533659495_2_0.png)\n\n# 目录\n\n- 理解 JavaScript\
+    \ ................................................................................\
+    \ 2\n- 作为编程语言的 JavaScript ................................................................\
+    \ 4\n- 为 HTML5 开发 JavaScript .................................................................\
+    \ 15\n- 将 JavaScript 与 HTML5 集成 .................................................................\
+    \ 23\n- 通过 Ajax 将 JavaScript 提升到新水平...........................................\
+    \ 27\n- 你所学的内容 ................................................................................\
+    \ 34\n\n# HTML5 JavaScript 模型\n\nCSS、SVG 和视频都是 HTML5 的巨大改进。然而，HTML5 的作用不仅仅是添加一些视觉点缀，而是让开发者能够在网页浏览器中创建性能等同于桌面应用程序的程序。为了实现这一点，你需要一种能够赋予开发者创建复杂解决方案能力的开发语言。答案就是\
+    \ JavaScript，世界上最流行的编程语言。\n\n目前的观点是 Web 应用程序并不像桌面应用程序那样强大。原因不在于 JavaScript，而是于你网页浏览器内部处理\
+    \ JavaScript 的引擎。脚本处理得越快，你的应用程序就可以变得越复杂。\n\n在 2009 年，网页浏览器公司进行了一场跳跃式的游戏，试图重置速度基准。Firefox、Safari、Google\
+    \ 和 Opera 同时进行。到年底，似乎唯一一家被留在黑暗中的公司是带有 Internet Explorer 8 器的微软。在 2009 年秋季 PDC\
+    \ 上，微软展示了 IE 的早期开发者版本，它运行标准的 JavaScript 测试（例如 http://www2.webkit.org/perfs/sunspider-0.9/sunspider.html\
+    \ 上的 SunSpider 测试），使其 JavaScript 引擎与竞争对手处于平级（见图 5.1）。\n\n本文的目标是回顾 JavaScript，包括它如何在\
+    \ HTML5 中被使用、你如何通过 Ajax 在他人工作的基础上进行构建，以及如何将流行的 Ajax 库实现到你的工作中。\n\n![](img/1770128c4f0e28ca70b194a533659495_5_0.png)\n\
+    \n## 理解 JavaScript\n\n本文的目标是向设计师展示如何将 JavaScript 配合 HTML5，为你的网页布局提供卓越的视觉控制。此外，HTML5\
+    \ 正在扩展以支持应用程序编程接口 (API)，这些接口能够在你的网页内部实现复杂的系统集成。新的 API，如 Web Workers、地理位置和本地数据存储是复杂的，需要熟练使用\
+    \ JavaScript 才能使其工作。\n\nJavaScript 不是一项新技术。JavaScript 的根源可以追溯到 1993 年，当时 Netscape\
+    \ Communications 在其网页浏览器中包含了一种名为 LiveScript 的脚本技术。即使是能够在网页浏览器中实现交互的简单编程语言也变得极其流行。\n\
+    \nJavaScript 的当前版本极大地完善了原始的 LiveScript 语言。与运行针对操作系统优化代码的桌面应用程序不同，JavaScript 必须在网页浏览器内部运行虚拟机翻译器中进行解释。这一过程本质上强制\
+    \ JavaScript 解决方案的运行速度比桌面应用程序慢。为了补偿这一点，Google 使用了一种名为 V8 的技术极大改进了 JavaScript 代码的处理。竞争对手\
+    \ Mozilla、Apple 和微软也有他们自己的 JavaScript 引擎来与 Google 的 V8 竞争。它们的引擎——Rhino (Firefox)\
+    \ 和 SquirrelFish (Safari) 让应用程序非常接近桌面级。抱歉，微软没有为 JavaScript 引擎起一个酷的名字；他们只叫它 Chakra——不怎么性感。\n\
+    \n今天的 JavaScript 允许你构建在网页浏览器中运行的类桌面应用程序。Google 的 Wave 解决方案是一个使用 JavaScript 的极其复杂的应用程序示例（图\
+    \ 5.2）。\n\nJavaScript 是世界上最流行的语言，拥有数百万用户。这项技术学习起来并不复杂；如果你有任何 C#、Java 或 ActionScript\
+    \ 的经验，可能会很快学会。\n\nJavaScript 如此流行，以至于它有自己的标准。Ecma International 是一家成立于 1961 年的行业协会，致力于信息和通信技术\
+    \ (ICT) 以及消费电子 (EC) 的标准化。JavaScript 的标准化版本由 Ecma 管理。全称是 ECMA-262，但通常被称为 ECMAScript。ECMA-262\
+    \ 是一个标准，并受到包括微软 Internet Explorer 在内的所有浏览的支持。\n\n![](img/1770128c4f0e28ca70b194a533659495_6_0.png)\n\
+    \n图 5.2 复杂的 JavaScript 解决方案 Google 的 Wave。\n\n## 作为编程语言的 JavaScript\n\n幸运的是，作为编程语言，JavaScript\
+    \ 学习起来并不复杂。当你读到本节结束时，你将理解编写基础程序需要什么。有两种方法可以将 JavaScript 插入到你的网页中：\n\n- 将你的 JavaScript\
+    \ 直接插入到网页中两个 SCRIPT 元素之间。\n- 将你的 JavaScript 添加到文本文件中并将网页链接到该文本文件。\n\n为了开始，我们将在页面中使用\
+    \ SCRIPT 元素来分离代码。稍后，你为为 创建单独的文件。以下是一个简单的 JavaScript 文件：\n\n```html\n<html>\n<body>\n\
+    <script type=\"text/javascript\">\ndocument.write(\"Welcome to JavaScript\");\n\
+    </script>\n</body>\n</html>\n```\n\n这是一个带有打开和关闭 HTML 元素的正常网页。在 BODY 元素中，你可以看到打开和关闭的\
+    \ SCRIPT 元素。你将你的 JavaScript 代码放在 SCRIPT 元素中。\n\nSCRIPT 元素将默认使用 JavaScript 作为脚本语言。然而，不止一种脚本语言可以使用。JavaScript\
+    \ 的替代方案是微软的 VBScript，它是脚本格式的 VB 语言。VBScript 由微软 Internet Explorer 原生支持。其他网页浏览器可以通过插件支持\
+    \ JavaScript。\n\n这个示例 JavaScript 有一行代码：\n\n```javascript\ndocument.write(\"Welcome\
+    \ to JavaScript\");\n```\n\n\"document\" 引用了一个对象。在这种情况下，document 对象是网页本身。\"write\"\
+    \ 脚本是 document 对象的属性，允许你添加代码。图 5.3 显示了当你运行此脚本时你的页面看起来的样子。\n\nJavaScript 也可以放在页面的\
+    \ HEAD 元素中，并由事件动作执行。事件动作由\n\n"
+  merge: -1
+  raw:
+  - '[PAGE 0]
+
+
+    # VISUALIZING
+
+
+    # THE WEB
+
+
+    # HTML5
+
+
+    # JAVASCRIPT MODEL
+
+
+    # Matthew David
+
+
+    ![](img/1770128c4f0e28ca70b194a533659495_0_0.png)'
+  - '[PAGE 1]
+
+
+    # HTML5 JAVASCRIPT MODEL
+
+
+    Matthew David
+
+
+    AMSTERDAM • BOSTON • HEIDELBERG • LONDON • NEW YORK • OXFORD
+
+    PARIS • SAN DIEGO • SAN FRANCISCO • SINGAPORE • SYDNEY • TOKYO
+
+    focal Press is an imprint of Elsevier'
+  - '[PAGE 2]
+
+
+    Focal Press is an imprint of Elsevier
+
+    30 Corporate Drive, Suite 400, Burlington, MA 01803, USA
+
+    The Boulevard, Langford Lane, Kidlington, Oxford, OX5 1GB, UK
+
+
+    © 2010 Elsevier, Inc. All rights reserved.
+
+
+    No part of this publication in this field may be reproduced or transmitted in
+    any form or by any means, electronic or mechanical, including photocopying, recording,
+    or any information storage and retrieval system, without permission in writing
+    from the publisher. Details on how to seek permission, further information about
+    the Publisher’s permissions policies and our arrangements with organizations such
+    as the Copyright Clearance Center and the Copyright Licensing Agency, can be found
+    at our website: http://www.elsevier.com/permissions/
+
+
+    This book and the individual contributions contained in it are protected under
+    copyright by the Publisher (other than may be noted herein).
+
+
+    # Notices
+
+
+    Knowledge and best practice in this field are constantly changing. As new research
+    and experience broaden our understanding, changes in research methods, professional
+    practices, or medical treatment may become necessary.
+
+
+    Practitioners and researchers must always rely on their own experience and knowledge
+    in evaluating and using any information, methods, compounds, or experiments herein.
+    In using such information or methods they should be mindful of their own safety
+    and the safety of others, including parties for whom they have a professional
+    responsibility.
+
+
+    To the full extent of the law, neither the Publisher nor the authors, contributors,
+    or editors, assume any liability for any injury or damage to persons or property
+    as a matter of products liability, negligence or otherwise, or from any use or
+    operation of any methods, products, instructions, or ideas contained in the material
+    herein.
+
+
+    ISBN: 978-0-240-81380-6
+
+
+    For information on all Focal Press publications visit our website at www.elsevierdirect.com
+
+
+    ![](img/1770128c4f0e28ca70b194a533659495_2_0.png)'
+  - '[PAGE 3]
+
+
+    # CONTENTS
+
+
+    +   Understanding JavaScript ................................................................................
+    2
+
+    JavaScript as Programming Language ................................................................
+    4
+
+    Developing JavaScript for HTML5 .................................................................
+    15
+
+    Integrating JavaScript with HTML5 .................................................................
+    23
+
+    Taking JavaScript to the Next Level with Ajax ............................................
+    27
+
+    What You Have Learned ................................................................................
+    34'
+  - '[PAGE 4]
+
+
+    # HTML5 JAVASCRIPT MODEL
+
+
+    CSS, SVG, and Video are all great improvements to HTML5. The role for HTML5, however,
+    is not to simply add eye-candy, but to enable developers to create applications
+    in web browsers that are equal in performance to desktop applications. To accomplish
+    this, you need a development language that gives developers the ability to create
+    sophisticated solutions. The answer to this is JavaScript, the world''s most popular
+    programming language.
+
+
+    Currently, the belief is that web applications simply are not as powerful as desktop
+    applications. The reason for this is not due to JavaScript, but the engines inside
+    of your web browser that process JavaScript. The faster a script can be processed,
+    the more sophisticated your applications can become.
+
+
+    During 2009, web browser companies played a game of leap frog trying to reset
+    speed benchmarks. Firefox, Safari, Google, and Opera played concurrently. Toward
+    the end of the year it appeared that the only company that would be left in the
+    dark was Microsoft with the Internet Explorer 8 browser. At the fall 2009 PDC
+    Microsoft showed off an early developer version of IE running standard JavaScript
+    tests (such as the SunSpider test at http://www2.webkit.org/perfs/sunspider-0.9/sunspider.html)
+    that placed its JavaScript engine on par with its competitors (see Figure 5.1).
+
+
+    The goal of this article is to review JavaScript, including how it is used in
+    HTML5, how you can build upon the work of others through Ajax, and how to implement
+    popular Ajax libraries into your work.'
+  - '[PAGE 5]
+
+
+    ![](img/1770128c4f0e28ca70b194a533659495_5_0.png)
+
+
+    # # Understanding JavaScript
+
+
+    The goal of this article is to show how JavaScript can be used with HTML5 by a
+    designer to give exceptional visual control to the layout of your web page. In
+    addition, HTML5 is expanding to support application programming interfaces (APIs)
+    that enable complex system integration inside your web pages. The new APIs, such
+    as Web Workers, Geolocation, and local data storage, are complex and require sophisticated
+    use of JavaScript to make them work.
+
+
+    JavaScript is not a new technology. The roots of JavaScript go back to 1993 when
+    Netscape Communications included a scripting technology called LiveScript in their
+    web browser. Incorporating even a simple programming language that enables interactivity
+    in the web browser became extremely popular.
+
+
+    The current release of JavaScript has dramatically matured the original LiveScript
+    language. Unlike desktop applications that run code optimized for an operating
+    system, JavaScript must be interpreted within a virtual machine translator running
+    inside of the web browser. This process inherently forces'
+  - '[PAGE 6]
+
+
+    JavaScript solutions to run more slowly than desktop applications. To compensate
+    for this, Google uses a technology called V8 that dramatically improves the processing
+    of JavaScript code. Competitors Mozilla, Apple, and Microsoft also have their
+    own JavaScript engines that compete with Google''s V8. Their engines—Rhino (Firefox)
+    and SquirrelFish (Safari)—bring applications extremely close to desktop. Sorry,
+    Microsoft does not have a cool name for the JavaScript engine; they just call
+    it -not very sexy.
+
+
+    Today''s JavaScript allows you to build desktop-like applications that run inside
+    of your web browsers. Google''s Wave solution is an excellent example of a massively
+    complex application that you are using JavaScript (Figure 5.2).
+
+
+    JavaScript is the most popular language in the world, with millions of users.
+    The technology is not too complex to learn; if you have any experience with C#,
+    Java, or ActionScript, you will likely learn quickly.
+
+
+    JavaScript is so popular that it has its own standard. Ecma International is an
+    industry association founded in 1961 and dedicated to the standardization of information
+    and communication technology (ICT) and consumer electronics (EC). The standardized
+    version of JavaScript is managed by Ecma. The full name is ECMA-262, but is often
+    referred to as ECMAScript ECMA-262 is a standard and well supported by all browsers,
+    including Microsoft''s Internet Explorer.
+
+
+    ![](img/1770128c4f0e28ca70b194a533659495_6_0.png)
+
+
+    Figure 5.2 Complex JavaScript solutions Google''s Wave.'
+  - '[PAGE 7]
+
+
+    # JavaScript as Programming Language
+
+
+    Fortunately, as programming languages go, JavaScript is not too
+
+    plicated to learn. By the time you get to the end of this sec-
+
+    tion you will understand what is needed to write basic programs.
+
+    There are two ways in which you can insert JavaScript into your
+
+    web page:
+
+
+    +   - Insert your JavaScript directly into your web page between
+
+    two SCRIPT elements.
+
+    - Add your JavaScript to a text file and link the web page to
+
+    the text file.
+
+
+    To get started, we will use SCRIPT elements on a page to
+
+    separate the code. Later, you will create separate files for your
+
+    JavaScript. Following is a simple JavaScript file:
+
+
+    ```
+
+    <html>
+
+    <body>
+
+    <script type="text/javascript">
+
+    document.write("Welcome to JavaScript");
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    This is a normal web page with opening and closing HTML
+
+    elements. Within the BODY element you can see the opening and
+
+    closing SCRIPT element. You place your JavaScript code within
+
+    the SCRIPT element.
+
+
+    The SCRIPT element will default to JavaScript as a script-
+
+    ing language. There is, however, more than one scripting
+
+    language you can use. A alternative to JavaScript is
+
+    Microsoft''s VBScript, a version of the VB language in script
+
+    format. VBScript is natively supported by Microsoft''s Internet
+
+    Explorer. Other web browsers can support JavaScript through a
+
+    plug-in.
+
+
+    This example JavaScript has one line of code:
+
+
+    ```
+
+    document.write("Welcome to JavaScript");
+
+    ```
+
+
+    The "document" is referencing an object. In this case, the
+
+    document object is the web page itself. The "write" script is
+
+    property of the document object that allows you to add code.
+
+    Figure 5.3 shows what your page will look like when you run this
+
+    script.
+
+
+    JavaScript can also be placed inside the HEAD element of a
+
+    page and executed by an event action. Event actions are driven'
+- md: "\n![](img/1770128c4f0e28ca70b194a533659495_8_0.png)\n\nwhen something happens.\
+    \ For instance, when a web page loads, you can add an event action called onLoad\
+    \ (see Figure 5.4). The following is an example of inserting JavaScript into the\
+    \ HEAD element on the page.\n\n```html\n<html\n<head>\n<script type=\"text/javascript\"\
+    >\nfunction popUpAlert()\n{\n  alert(\"Welcome to JavaScript\");\n}\n</script>\n\
+    </head>\n<body onLoad=\"popUpAlert()\">\n</body>\n</html>\n```\n\nThe JavaScript\
+    \ runs a function. A function is a block of code that executes when called by\
+    \ another code. In this case, the other code is on onLoad command in the BODY\
+    \ element.\n\nAs you might imagine, you can mix up code in the HEAD element and\
+    \ in the main page as shown in the following example.\n\n# 6\n\n**Figure 5.4**\
+    \ You can force a JavaScript alert box to pop up when you load a web page.\n\n\
+    ![](img/1770128c4f0e28ca70b194a533659495_9_0.png)\n\n```html\n<html\n<head>\n\
+    <script type=\"text/javascript\">\nfunction popUpAlert() {\n  alert(\"Welcome\
+    \ to JavaScript\");\n}\n</script>\n</head>\n<body>\n<script type=\"text/javascript\"\
+    >\ndocument.write(\"<h1>Welcome to JavaScript</h1>\");\n</script>\n<a href=\"\
+    #\" onclick=\"popUpAlert()\">Click me</a>\n</body>\n</html>\n```\n\nYou will see\
+    \ in JavaScript that there is the same function called popUpAlert(). What is different\
+    \ is the event to call that script has been moved into the main content of the\
+    \ web page. AN ANCHOR element is now controlling when the JavaScript function\
+    \ is executed:\n\n<a href=\"#\" onclick=\"popUpAlert()\">Click me</a>\n\nThe ANCHOR\
+    \ element cannot be used with the onload event, so it is an onClick event to run\
+    \ the popUpAlert() function. This JavaScript will only run when you click on the\
+    \ link. Above the ANCHOR element is a JavaScript that dynamically adds content\
+    \ to the page, as follows:\n\n```html\n<script type=\"text/javascript\">\ndocument.write(\"\
+    <h1>Welcome to JavaScript</h1>\");\n</script>\n```\n\nIn adding dynamic text,\
+    \ the JavaScript also inserts HTML H1 elements. Figure 5.5 shows how this all\
+    \ looks in your web page.\n\n## Welcome to JavaScript\n\nClick me\n\n> Figure\
+    \ 5.5 JavaScript can be placed within the HEAD and BODY elements.\n\n![](img/1770128c4f0e28ca70b194a533659495_10_0.png)\n\
+    \nA third way to run your scripts is through an external file. Keeping your files\
+    \ in an external file allows you to share the file with other web pages and keep\
+    \ your HTML cleaner.\n\nThe external file you will use is really just a text file.\
+    \ Open your favorite text editor such as Notepad, paste the JavaScript function\
+    \ into the file, and save it, naming the file popup.js. Paste the following JavaScript\
+    \ into your new JS file.\n\n```javascript\nfunction popUpAlert() {\n  alert(\"\
+    Welcome to JavaScript\");\n}\n```\n\nYou will notice that the JavaScript does\
+    \ not have a leading and closing SCRIPT element. You do not need one when you\
+    \ move your code to an external file. The \"js\" extension identifies the document\
+    \ as a JavaScript file (see Figure 5.6).\n\nNow you can link the SCRIPT element\
+    \ in your web file to the JS file:\n\n```html\n<script type=\"text/javascript\"\
+    \ src=\"popup.js\"></script>\n```\n\nYou will see that your JavaScript runs just\
+    \ fine in your web browser.\n\n## Working with Variables\n\nJavaScript is a programming\
+    \ language and, as part of this, comes loaded with ways in which you can create\
+    \ data. A simple way to create data is through variables. A variable is a declared\
+    \ object that contains data. For instance, the following is a variable called\
+    \ \"color\" with the value of red:\n\n```javascript\nvar color=\"red\"\n```\n\n\
+    Now, you can write a JavaScript where you are referencing the variable \"color\"\
+    \ to substitute the value red.\n\n```html\n<script type=\"text/javascript\">\n\
+    document.write(\"<p>My favorite color is \" + color + \"</p>\");\n</script>\n\
+    ```\n\nThe variable named \"color\" is dynamically added to the content on the\
+    \ page.\n\n## Using Math in Your Scripts\n\nVariables can also have mathematical\
+    \ values (see Figure 5.7). For instance, the following two variables can be used\
+    \ to create the value of a third variable.\n\n```html\n<html\n<head>\n<script\
+    \ type=\"text/javascript\" src=\"popup.js\"></script>\n</head>\n<body>\n<script\
+    \ type=\"text/javascript\">\ndocument.write(\"<h1>Welcome to JavaScript</h1>\"\
+    );\n</script>\n<a href=\"#\" onclick=\"popUpAlert()\">Click me</a>\n</body>\n\
+    </html>\n```\n\n**Figure 5.6** You can add your JavaScript to externally linked\
+    \ files.\n\n```javascript\n<script type=\"text/javascript\">\nvar myFirstNumber=4;\n\
+    var mySecondNumber=3;\nvar myThirdNumber=myFirstNumber*mySecondNumber;\n</script>\n\
+    ```\n\n![](img/1770128c4f0e28ca70b194a533659495_13_0.png)\n\nYou can see that\
+    \ the first two variables are multiplied (the * is the multiplier value) to generate\
+    \ the third variable. The following JavaScript presents the final value in the\
+    \ web page:\n\n```javascript\ndocument.write(\"<p>My favorite number is \" + myThirdNumber\
+    \ + \"</p>\");\n```\n\nThere are seven arithmetic operators that you can use in\
+    \ JavaScript:\n\n- + addition\n- - subtraction\n- * multiplication\n- / division\n\
+    - % modulus\n- ++ increment\n- -- decrement\n\nThe following example uses all\
+    \ seven operators to demonstrate how you can use them in your code (see also Figure\
+    \ 5.8).\n\n```html\n<html\n<head>\n<script type=\"text/javascript\">\nvarNumber=7;\n\
+    var varAddition=varNumber+3;\nvar varSubtraction=varNumber-3;\nvarMultiplication=varNumber*3;\n\
+    7+3=10\n7-3=4\n7*3=21\n7/3=2.3333333333333335\n7%3=1\nIncrement 7=8\nDecrement\
+    \ 7=7\n```\n\n**Figure 5.8** JavaScript has seven different arithmetic operators\
+    \ you can use to control the value of content dynamically.\n\n```javascript\n\
+    var varDivision=varNumber/3;\nvar varModulus=varNumber%3;\nvar varIncrement=++varNumber;\n\
+    var varDecrement=--varNumber;\n```\n\n```html\n<script>\n</head>\n<body>\n<script\
+    \ type=\"text/javascript\">\ndocument.write(\"<p>7+3=\"+varAddition+\"</p>\");\n\
+    document.write(\"<p>7-3=\"+varSubtraction+\"</p>\");\ndocument.write(\"<p>7*3=\"\
+    +varMultiplication+\"</p>\");\ndocument.write(\"<p>7/3=\"+varDivision+\"</p>\"\
+    );\ndocument.write(\"<p>7%3=\"+varModulus+\"</p>\");\ndocument.write(\"<p>Increment\
+    \ 7=\"+varIncrement+\"</p>\");\ndocument.write(\"<p>Decrement 7=\"+varDecrement+\"\
+    </p>\");\n</script>\n</body>\n</html>\n>Wait, corrected:\n\n## Assessing Values\
+    \ Using Operators\n\nIn addition to mathematical operators, JavaScript also has\
+    \ comparison operators that allow you to take two or more values and compare the\
+    \ differences. There are seven comparison operators:\n\n- == is equal to\n- ===\
+    \ is exactly equal\n- != is not equal\n- > is greater than\n- < is less than\n\
+    - >= is greater or equal to\n- <= is lesser or equal to\n\nComparison operators\
+    \ become valuable when you start to write functions that have potentially two\
+    \ or more outcomes.\n\n## Controlling Outcomes with If/Else and Switch Statements\n\
+    \nCommon to almost all programming languages is the use of if/else statements.\
+    \ Essentially, the if/else statement looks for a condition, and depending on the\
+    \ value, will execute a statement. Take for instance the following code.\n\n```html\n\
+    <script type=\"text/javascript\">\nvar myColor=\"red\"\nif (myColor==\"red\")\n\
+    {\n  document.write(\"The correct color\");\n}\n</script>\n```\n\nA variable called\
+    \ myColor is created with a string value of \"red\". The script uses an \"if\"\
+    \ statement to look for a value using the comparison operator, ==. If the exact\
+    \ value is met then the text \"The correct color\" is printed on the page. If\
+    \ the variable myColor is changed to \"blue\", then the \"if\" statement will\
+    \ not run. To show how you can use an \"else\" statement to show a second option,\
+    \ as follows:\n\n```html\n<script type=\"text/javascript\">\nvar myColor=\"blue\"\
+    \nif (myColor==\"red\")\n{\n  document.write(\"The correct color\");\n}\nelse\n\
+    {\n  document.write(\"This is not the correct color\");\n}\n</script>\n```\n\n\
+    The if/else statement can have a third condition using the else if statement.\
+    \ For instance, the following allows you to have two correct answers (red and\
+    \ blue), but when the value in myColor is changed to any other value, a third\
+    \ result is printed.\n\n```html\n<script type=\"text/javascript\">\nvar myColor=\"\
+    green\"\nif (myColor==\"red\")\n{\ndocument.write(\"The correct color\");\n}\n\
+    else if (myColor==\"blue\")\n{\ndocument.write(\"This is a good color\");\n}\n\
+    else\n{\ndocument.write(\"The wrong color was chosen\");\n}\n</script>\n```\n\n\
+    If there is a chance for you to have three or more valid choices then you will\
+    \ want to use \"switch\" statements to allow you to match your choice from a list\
+    \ of choices. Let's start creating a variable that we can match different choices:\n\
+    \n```javascript\nvar myColor=\"green\"\n```\n\nThe \"switch\" statement can now\
+    \ look for the condition of the variable myColor and match it against possible\
+    \ answers. The following \"switch\" statement creates three different answers\
+    \ depending whether the variable is \"green\", \"red\", or \"blue\". A final,\
+    \ default value will run if none of the conditions are met.\n\n```javascript\n\
+    switch (myColor)\n{\ncase \"red\":\ndocument.write(\"You picked red\");\nbreak;\n\
+    case \"green\":\ndocument.write(\"You picked green\");\nbreak;\n}\n```\n[/content]\
+    \ (Wait, I noticed I repeated some logic in the final block of the thought process,\
+    \ I will provide the clean final version as requested.)\n\n*Self-correction: The\
+    \ prompt asks for ONLY the final text. I will provide the cleaned version now.*\n\
+    \n[content]\n![](img/1770128c4f0e28ca70b194a533659495_8_0.png)\n\nwhen something\
+    \ happens. For instance, when a web page loads, you can add an event action called\
+    \ onLoad (see Figure 5.4). The following is an example of inserting JavaScript\
+    \ into the HEAD element on the page.\n\n```html\n<html\n<head>\n<script type=\"\
+    text/javascript\">\nfunction popUpAlert()\n{\n  alert(\"Welcome to JavaScript\"\
+    );\n}\n</script>\n</head>\n<body onLoad=\"popUpAlert()\">\n</</body>\n</html>\n\
+    ```\n\nThe JavaScript runs a function. A function is a block of code that executes\
+    \ when called by another code. In this case, the other code is on onLoad command\
+    \ in the BODY element.\n\nAs you might imagine, you can mix up code in the HEAD\
+    \ element and in the main page as shown in the following example.\n\n# 6\n\n**Figure\
+    \ 5.4** You can force a JavaScript alert box to pop up when you load a web page.\n\
+    \n![](img/1770128c4f0e28ca70b194a533659495_9_0.png)\n\n```html\n<html\n<head>\n\
+    <script type=\"text/javascript\">\nfunction popUpAlert() {\n  alert(\"Welcome\
+    \ to JavaScript\");\n}\n</script>\n</head>\n<body>\n<script type=\"text/javascript\"\
+    >\ndocument.write(\"<h1>Welcome to JavaScript</h1>\");\n</script>\n<a href=\"\
+    #\" onclick=\"popUpAlert()\">Click me</a>\n</body>\n</html>\n```\n\nYou will see\
+    \ in JavaScript that there is the same function called popUpAlert(). What is different\
+    \ is the event to call that script has been moved into the main content of the\
+    \ web page. ANCHOR element is now controlling when the JavaScript function is\
+    \ executed:\n\n<a href=\"#\" onclick=\"popUpAlert()\">Click me</a>\n\nThe ANCHOR\
+    \ element cannot be used with the onload event, so it is an onClick event to run\
+    \ the popUpAlert() function. This JavaScript will only run when you click on the\
+    \ link. Above the ANCHOR element is a JavaScript that dynamically adds content\
+    \ to the page, as follows:\n\n```html\n<script type=\"text/javascript\">\ndocument.write(\"\
+    <h1>Welcome to JavaScript</h1>\");\n</script>\n```\n\nIn adding dynamic text,\
+    \ the JavaScript also inserts HTML H1 elements. Figure 5.5 shows how this all\
+    \ looks in your web page.\n\n## Welcome to JavaScript\n\nClick me\n\n> Figure\
+    \ 5.5 JavaScript can be placed within the HEAD and BODY elements.\n\n![](img/1770128c44f0e28ca70b194a533659495_10_0.png)\n\
+    \nA third way to run your scripts is through an external file. Keeping your files\
+    \ in an external file allows you to share the file with other web pages and keep\
+    \ your HTML cleaner.\n\nThe external file you will use is really just a text file.\
+    \ Open your favorite text editor such as Notepad, paste the JavaScript function\
+    \ into the file, and save it, naming the file popup.js. Paste the following JavaScript\
+    \ into your new JS file.\n\n```javascript\nfunction popUpAlert() {\n  alert(\"\
+    Welcome to JavaScript\");\n}\n```\n\nYou will notice that the JavaScript does\
+    \ not have a leading and closing SCRIPT element. You do not need one when you\
+    \ move your code to an external file. The \"js\" extension identifies the document\
+    \ as a JavaScript file (see Figure 5.6).\n\nNow you can link the SCRIPT element\
+    \ in your web file to the JS file:\n\n```html\n<script type=\"text/javascript\"\
+    \ src=\"popup.js\"></script>\n```\n\nYou will see that your JavaScript runs just\
+    \ fine in your web browser.\n\n## Working with Variables\n\nJavaScript is a programming\
+    \ language and, as part of this, comes loaded with ways in which you can create\
+    \ data. A simple way to create data is through variables. A variable is a declared\
+    \ object that contains data. For instance, the following is a variable called\
+    \ \"color\" with the value of red:\n\n```javascript\nvar color=\"red\"\n```\n\n\
+    Now, you can write a JavaScript where you are referencing the variable \"color\"\
+    \ to substitute the value red.\n\n```html\n<script type=\"text/javascript\">\n\
+    document.write(\"<p>My favorite color is \" + color + \"</p>\");\n</script>\n\
+    ```\n\nThe variable named \"color\" is dynamically added to the content on the\
+    \ page.\n\n## Using Math in Your Scripts\n\nVariables can also have mathematical\
+    \ values (see Figure 5.7). For instance, the following two variables can be used\
+    \ to create the value of a third variable.\n\n```html\n<html\n<head>\n<script\
+    \ type=\"text/javascript\" src=\"popup.js\"></script>\n</head>\n<body>\n<script\
+    \ type=\"text/javascript\">\ndocument.write(\"<h1>Welcome to JavaScript</h1>\"\
+    );\n</script>\n<a href=\"#\" onclick=\"popUpAlert()\">Click me</a>\n</body>\n\
+    </html>\n```\n\n**Figure 5.6** You can add your JavaScript to externally linked\
+    \ files.\n\n```javascript\n<script type=\"text/javascript\">\nvar myFirstNumber=4;\n\
+    var mySecondNumber=3;\nvar myThirdNumber=myFirstNumber*mySecondNumber;\n</script>\n\
+    ```\n\n![](img/1770128c4f0e28ca70b194a533659495_13_0.png)\n\nYou can see that\
+    \ the first two variables are multiplied (the * is the multiplier value) to generate\
+    \ the third variable. The following JavaScript presents the final value in the\
+    \ web page:\n\n```javascript\ndocument.write(\"<p>My favorite number is \" + myThirdNumber\
+    \ + \"</p>\");\n```\n\nThere are seventh arithmetic operators that you can use\
+    \ in JavaScript:\n\n- + addition\n- - subtraction\n- * multiplication\n- / division\n\
+    - % modulus\n- ++ increment\n- -- decrement\n\nThe following example uses all\
+    \ seven operators to demonstrate how you can use them in your code (see also Figure\
+    \ 5.8).\n\n```html\n<html\n<head>\n<script type=\"text/javascript\">\nvarNumber=7;\n\
+    var varAddition=varNumber+3;\nvar varSubtraction=varNumber-3;\nvarMultiplication=varNumber*3;\n\
+    7+3=10\n7-3=4\n7*3=21\n7/3=2.3333333333333335\n7%3=1\nIncrement 7=8\nDecrement\
+    \ 7=7\n```\n\n**Figure 5.8** JavaScript has seven different arithmetic operators\
+    \ you can use to control the value of content dynamically.\n\n```javascript\n\
+    var varDivision=varNumber/3;\nvar varModulus=varNumber%3;\nvar varIncrement=++varNumber;\n\
+    var varDecrement=--varNumber;\n```\n\n```html\n<script>\n</head>\n<body>\n<script\
+    \ type=\"text/javascript\">\ndocument.write(\"<p>7+3=\"+varAddition+\"</p>\");\n\
+    document.write(\"<p>7-3=\"+varSubtraction+\"</p>\");\ndocument.write(\"<p>7*3=\"\
+    +varMultiplication+\"</p>\");\ndocument.write(\"<p>7/3=\"+varDivision+\"</p>\"\
+    );\ndocument.write(\"<p>7%3=\"+varModulus+\"</p>\");\ndocument.write(\"<p>Increment\
+    \ 7=\"+varIncrement+\"</p>\");\ndocument.write(\"<p>Decrement 7=\"+varDecrement+\"\
+    </p>\");\n</script>\n</body>\n</html>\n```\n\n## Assessing Values Using Operators\n\
+    \nIn addition to mathematical operators, JavaScript also has comparison operators\
+    \ that allow you to take two or more values and compare the differences. There\
+    \ are seven comparison operators:\n\n- == is equal to\n- === is exactly equal\n\
+    - != is not equal\n- > is greater than\n- < is less than\n- >= is greater or equal\
+    \ to\n- <= is lesser or equal to\n\nComparison operators become extremely valuable\
+    \ when you start to write functions that have potentially two or more outcomes.\n\
+    \n## Controlling Outcomes with If/Else and Switch Statements\n\nCommon to almost\
+    \ all programming languages is the use of if/else statements. Essentially, the\
+    \ if/else statement looks for a condition, and depending on the value, will execute\
+    \ a statement. Take for instance the following code.\n\n```html\n<script type=\"\
+    text/javascript\">\nvar myColor=\"red\"\nif (myColor==\"red\")\n{\n  document.write(\"\
+    The correct color\");\n}\n</script>\n```\n\nA variable called myColor is created\
+    \ with a string value of \"red\". The script uses an \"if\" statement to look\
+    \ for a value using the comparison operator, ==. If the exact value is met then\
+    \ the text \"The correct color\" is printed on the page. If the variable myColor\
+    \ is changed to \"blue\", then the \"if\" statement will not run. To show how\
+    \ you can use an \"else\" statement to show a second option, as follows:\n\n```html\n\
+    <script type=\"text/javascript\">\nvar myColor=\"blue\"\nif (myColor==\"red\"\
+    )\n{\n  document.write(\"The correct color\");\n}\nelse\n{\n  document.write(\"\
+    This is not the correct color\");\n}\n</script>\n```\n\nThe if/else statement\
+    \ can have a third condition using the else if statement. For instance, the following\
+    \ allows you to have two correct answers (red and blue), but when the value in\
+    \ myColor is changed to any other value, a third result is printed.\n\n```html\n\
+    <script type=\"text/javascript\">\nvar myColor=\"green\"\nif (myColor==\"red\"\
+    )\n{\ndocument.write(\"The correct color\");\n}\nelse if (myColor==\"blue\")\n\
+    {\ndocument.write(\"This is a good color\");\n}\nelse\n{\ndocument.write(\"The\
+    \ wrong color was chosen\");\n}\n</script>\n```\n\nIf there is a chance for you\
+    \ to have three or more valid choices then you will want to use \"switch\" statements\
+    \ to allow you to match your choice from a list of choices. Let's start creating\
+    \ a variable that we can match different choices:\n\n```javascript\nvar myColor=\"\
+    green\"\n```\n\nThe \"switch\" statement can now look for the condition of the\
+    \ variable myColor and match it against possible answers. The following \"switch\"\
+    \ statement creates three different answers depending whether the variable is\
+    \ \"green\", \"red\", or \"blue\". A final, default value will run if none of\
+    \ the conditions are met.\n\n```javascript\nswitch (myColor)\n{\ncase \"red\"\
+    :\ndocument.write(\"You picked red\");\nbreak;\ncase \"green\":\ndocument.write(\"\
+    You picked green\");\nbreak;\n}\n```\n"
+  mdcn: "\n\n![](img/1770128c4f0e28ca70b194a533659495_8_0.png)\n\n当某些事情发生时。例如，当网页加载时，你可以添加一个名为\
+    \ `onLoad` 的事件操作（见图 5.4）。以下是将 JavaScript 插入页面 `HEAD` 元素中的示例。\n\n```html\n<html\n\
+    <head>\n<script type=\"text/javascript\">\nfunction popUpAlert()\n{\n  alert(\"\
+    Welcome to JavaScript\");\n}\n</script>\n</head>\n<body onLoad=\"popUpAlert()\"\
+    >\n</body>\n</html>\n```\n\nJavaScript 运行一个函数。函数是由另一个代码调用时执行的代码块。在这种情况下，另一个代码是\
+    \ `BODY` 元素中的 `onLoad` 命令。\n\n正如你所想象的，你可以像下面的示例那样在 `HEAD` 元素和主页面中混合代码。\n\n# 6\n\
+    \n**图 5.4** 你可以在加载网页时强制弹出一个 JavaScript 警告框。\n\n![](img/1770128c4f0e28ca70b194a533659495_9_0.png)\n\
+    \n```html\n<html\n<head>\n<script type=\"text/javascript\">\nfunction popUpAlert()\
+    \ {\n  alert(\"Welcome to JavaScript\");\n}\n</script>\n</head>\n<body>\n<script\
+    \ type=\"text/javascript\">\ndocument.write(\"<h1>Welcome to JavaScript</h1>\"\
+    );\n</script>\n<a href=\"#\" onclick=\"popUpAlert()\">Click me</a>\n</body>\n\
+    </html>\n```\n\n你会在 JavaScript 中看到有一个同名为 `popUpAlert()` 的函数。不同之处在于调用该脚本的事件已移动到网页的主内容中。现在由一个\
+    \ `ANCHOR`（锚点）元素控制 JavaScript 函数的执行时机：\n\n<a href=\"#\" onclick=\"popUpAlert()\"\
+    >Click me</a>\n\n`ANCHOR` 元素不能与 `onload` 事件一起使用，因此是使用 `onClick` 事件来运行 `popUpAlert()`\
+    \ 函数。这段 JavaScript 只有在你点击链接时才会运行。在 `ANCHOR` 元素上方是一个动态向页面添加内容的 JavaScript，如下所示：\n\
+    \n```html\n<script type=\"text/javascript\">\ndocument.write(\"<h1>Welcome to\
+    \ JavaScript</h1>\");\n</script>\n```\n\n在添加动态文本时，JavaScript 还插入了 HTML 的 `H1`\
+    \ 元素。图 5.5 显示了这一切在你的网页中的外观。\n\n## 欢迎来到 JavaScript\n\n点击这里\n\n> 图 5.5 JavaScript\
+    \ 可以放置在 HEAD 和 BODY 元素中。\n\n![](img/1770128c4f0e28ca70b194a533659495_10_0.png)\n\
+    \n运行脚本的第三方法是通过外部文件。将文件保留在外部文件中允许你与其他网页共享该文件并保持 HTML 更加整洁。\n\n你将使用的外部文件其实就是一个文本文件。打开你喜欢的文本编辑器（如记事本），将\
+    \ JavaScript 函数粘贴到文件中并保存，将其命名为 `popup.js`。将以下 JavaScript 粘贴到你的新 JS 文件中。\n\n```javascript\n\
+    function popUpAlert() {\n  alert(\"Welcome to JavaScript\");\n}\n```\n\n你会注意到\
+    \ JavaScript 中没有开头和结尾的 `SCRIPT` 元素。当你将代码移动到外部文件时，不需要它。“`.js`”扩展名标识该文档为 JavaScript\
+    \ 文件（见图 5.6）。\n\n现在你可以将网页文件中的 `SCRIPT` 元素链接到 JS 文件：\n\n```html\n<script type=\"\
+    text/javascript\" src=\"popup.js\"></script>\n```\n\n你会发现你的 JavaScript 在网页浏览器中运行良好。\n\
+    \n## 变量操作\n\nJavaScript 是一种编程语言，作为其的一部分，它自带了许多创建数据的方法。创建数据的简单方法是通过变量。变量是一个包含数据的声明对象。例如，以下是一个名为\
+    \ \"color\" 值为 \"red\" 的变量：\n\n```javascript\nvar color=\"red\"\n```\n\n现在，你可以编写\
+    \ JavaScript，在其中引用变量 \"color\" 来替换值 \"red\"。\n\n```html\n<script type=\"text/javascript\"\
+    >\ndocument.write(\"<p>My favorite color is \" + color + \"</p>\");\n</script>\n\
+    ```\n\n名为 \"color\" 的变量被动态地添加到页面内容中。\n\n## 在脚本中使用数学运算\n\n变量也可以具有数学值（见图 5.7）。例如，以下两个变量可以用来创建第三个变量的值。\n\
+    \n```html\n<html\n<head>\n<script type=\"text/javascript\" src=\"popup.js\"></script>\n\
+    </head>\n<body>\n<script type=\"text/javascript\">\ndocument.write(\"<h1>Welcome\
+    \ to JavaScript</h1>\");\n</script>\n<a href=\"#\" onclick=\"popUpAlert()\">Click\
+    \ me</a>\n</body>\n</html>\n```\n\n**图 5.6** 你可以将你的 JavaScript 添加到外部链接的文件。\n\n\
+    ```javascript\n<script type=\"text/javascript\">\nvar myFirstNumber=4;\nvar mySecondNumber=3;\n\
+    var myThirdNumber=myFirstNumber*mySecondNumber;\n</script>\n```\n\n![](img/1770128c4f0e28ca70b194a533659495_13_0.png)\n\
+    \n你可以看到前两个变量相乘（`*` 是乘数值）以生成第三个变量。以下 JavaScript 在网页中展示了最终值：\n\n```javascript\n\
+    document.write(\"<p>My favorite number is \" + myThirdNumber + \"</p>\");\n```\n\
+    \nJavaScript 中有七种算术运算符可以使用：\n\n- + 加法\n- - 减法\n- * 乘法\n- / 除法\n- % 取模\n- ++ 递增\n\
+    - -- 递减\n\n以下示例使用了所有七种运算符来演示你如何在代码中使用它们（另见图 5.8）。\n\n```html\n<html\n<head>\n\
+    <script type=\"text/javascript\">\nvarNumber=7;\nvar varAddition=varNumber+3;\n\
+    var varSubtraction=varNumber-3;\nvarMultiplication=varNumber*3;\n7+3=10\n7-3=4\n\
+    7*3=21\n7/3=2.3333333333333335\n7%3=1\nIncrement 7=8\nDecrement 7=7\n```\n\n**图\
+    \ 5.8** JavaScript 有七种不同的算术运算符，你可以它们来动态控制内容的值。\n\n```javascript\nvar varDivision=varNumber/3;\n\
+    var varModulus=varNumber%3;\nvar varIncrement=++varNumber;\nvar varDecrement=--varNumber;\n\
+    ```\n\n```html\n<script>\n</head>\n<body>\n<script type=\"text/javascript\">\n\
+    document.write(\"<p>7+3=\"+varAddition+\"</p>\");\ndocument.write(\"<p>7-3=\"\
+    +varSubtraction+\"</p>\");\ndocument.write(\"<p>7*3=\"+varMultiplication+\"</p>\"\
+    );\ndocument.write(\"<p>7/3=\"+varDivision+\"</p>\");\ndocument.write(\"<p>7%3=\"\
+    +varModulus+\"</p>\");\ndocument.write(\"<p>Increment 7=\"+varIncrement+\"</p>\"\
+    );\ndocument.write(\"<p>Decrement 7=\"+varDecrement+\"</p>\");\n</script>\n</body>\n\
+    </html>\n```\n\n## 使用运算符评估值\n\n除了算术运算符外，JavaScript 还有比较运算符，允许你取两个或多个值并比较它们的差异。有七种比较运算符：\n\
+    \n- == 等于\n- === 严格相等\n- != 不等于\n- > 大于\n- < 小于\n- >= 大于等于\n- <= 小于等于\n\n比较运算符在你开始编写具有两个或多个结果的函数时非常有价值。\n\
+    \n## 使用 If/Else 控制结果\n\n几乎所有编程语言通都会使用 `if/else` 语句。本质上，`if/else` 语句查找一个条件，并根据该值执行语句。例如，以下代码：\n\
+    \n```html\n<script type=\"text/javascript\">\nvar myColor=\"red\"\nif (myColor==\"\
+    red\")\n{\n  document.write(\"The correct color\");\n}\n</script>\n```\n\n名为 `myColor`\
+    \ 的变量带有值为 \"red\" 的字符串。`if` 语句使用比较运算符 `==` 来查找值。如果精确相等，则在页面上打印 \"The correct color\"\
+    。如果变量 `myColor` 变为 \"blue\"，则 `if` 语句将不会运行。如何使用 `else` 语句来显示第二种选择，如下：\n\n```html\n\
+    <script type=\"text/javascript\">\nvar myColor=\"blue\"\nif (myColor==\"red\"\
+    )\n{\n  document.write(\"The correct color\");\n}\nelse\n{\n  document.write(\"\
+    This is not the color\");\n}\n</script>\n```\n\n`if/else` 语句可以有第三种条件。例如，允许你有两个正确答案（red\
+    \ 和 blue），但当 `myColor` 的值变为任何其他值时，会打印第三个结果。\n\n```html\n<script type=\"text/javascript\"\
+    >\nvar myColor=\"green\"\nif (myColor==\"red\")\n{\n  document.write(\"The correct\
+    \ color\");\n}\nelse if (myColor==\"blue\")\n{\ndocument.write(\"This is a good\
+    \ color\");\n}\nelse\n{\ndocument.write(\"The wrong color was chosen\");\n}\n\
+    </script>\n```\n\n如果你有三个或更多有效选择，你将希望使用 `switch` 语句来匹配你的列表中的选择。让我们创建一个可以匹配不同选择的变量：\n\
+    \n```javascript\nvar myColor=\"green\"\n```\n\n`switch` 语句现在可以查找 `myColor` 的条件并与可能的答案进行匹配。以下\
+    \ `switch` 语句根据变量是 \"green\"、\"red\" 还是 \"blue\" 创建三种不同的答案。如果没有满足任何条件，将运行默认值。\n\
+    \n```javascript\nswitch (myColor)\n{\ncase \"red\":\ndocument.write(\"You picked\
+    \ red\");\nbreak;\ncase \"green\":\ndocument.write(\"You picked green\");\nbreak;\n\
+    }\n```\n"
+  merge: 1
+  raw:
+  - "[PAGE 8]\n\n![](img/1770128c4f0e28ca70b194a533659495_8_0.png)\n\nwhen something\
+    \ happens. For instance, when a web page loads, you can add an event action called\
+    \ onLoad (see Figure 5.4). The following is an example of inserting JavaScript\
+    \ into the HEAD element on the page.\n\n```\n<html>\n<head>\n<script type=\"text/javascript\"\
+    >\nfunction popUpAlert()\n{\n  alert(\"Welcome to JavaScript\");\n}\n</script>\n\
+    </head>\n<body onLoad=\"popUpAlert (\">\n</body>\n</html>\n```\n\nThe JavaScript\
+    \ runs a function. A function is a block of code that executes when called by\
+    \ another code. In this case, the other code is on onLoad command in the BODY\
+    \ element.\n\nAs you might imagine, you can mix up code in the HEAD element and\
+    \ in the main page as shown in the following example."
+  - "[PAGE 9]\n\n# 6\n\n**Figure 5.4** You can force a JavaScript alert box to pop\
+    \ up when you load a web page.\n\n![](img/1770128c4f0e28ca70b194a533659495_9_0.png)\n\
+    \n```\n<html>\n<head>\n<script type=\"text/javascript\">\nfunction popUpAlert()\
+    \ {\n  alert(\"Welcome to JavaScript\");\n}\n</script>\n</head>\n<body>\n<script\
+    \ type=\"text/javascript\">\ndocument.write(\"<h1>Welcome to JavaScript</h1>\"\
+    );\n</script>\n<a href=\"#\" onclick=\"popUpAlert()\">Click me</a>\n</body></html>\n\
+    ```\n\nYou will see in JavaScript that there is the same function called popUpAlert().\
+    \ What is different is the event to call that script has been moved into the main\
+    \ content of the web page. ANCHOR element is now controlling when the JavaScript\
+    \ function is executed:\n\n<a href=\"#\" onclick=\"popUpAlert()\">Click me</a>\n\
+    \nThe ANCHOR element cannot be used with the onload event, so it is an onClick\
+    \ event to run the popUpAlert() function. This JavaScript will only run when you\
+    \ click on the link. Above the ANCHOR element is a JavaScript that dynamically\
+    \ adds content to the page, as follows:\n\n```\n<script type=\"text/javascript\"\
+    >\ndocument.write(\"<h1>Welcome to JavaScript</h1>\");\n</script>\n```\n\nIn adding\
+    \ dynamic text, the JavaScript also inserts HTML H1 elements. Figure 5.5 shows\
+    \ how this all looks in your web page."
+  - '[PAGE 10]
+
+
+    # # Welcome to JavaScript
+
+
+    Click me
+
+
+    > Figure 5.5 JavaScript can be placed within the HEAD and BODY elements.
+
+
+    ![](img/1770128c4f0e28ca70b194a533659495_10_0.png)
+
+
+    A third way to run your scripts is through an external file. Keeping your files
+    in an external file allows you to share the file with other web pages and keep
+    your HTML cleaner.
+
+    The external file you will use is really just a text file. Open your favorite
+    text editor such as Notepad, paste the JavaScript function'
+  - "[PAGE 11]\n\ninto the file, and save it, naming the file popup.js. Paste the\
+    \ following JavaScript into your new JS file.\n\n```\nfunction popUpAlert() {\n\
+    \  alert(\"Welcome to JavaScript\");\n}\n```\n\nYou will notice that the JavaScript\
+    \ does not have a leading and closing SCRIPT element. You do not need one when\
+    \ you move your code to an external file. The \"js\" extension identifies the\
+    \ document as a JavaScript file (see Figure 5.6).\n\nNow you can link the SCRIPT\
+    \ element in your web file to the JS file:\n\n```\n<script type=\"text/javascript\"\
+    \ src=\"popup.js\"></script>\n```\n\nYou will see that your JavaScript runs just\
+    \ fine in your web browser.\n\n# Working with Variables\n\nJavaScript is a programming\
+    \ language and, as part of this, comes loaded with ways in which you can create\
+    \ data. A simple way to create data is through variables. A variable is a declared\
+    \ object that contains data. For instance, the following is a variable called\
+    \ \"color\" with the value of red:\n\n```\nVar color=\"red\"\n```\n\nNow, you\
+    \ can write a JavaScript where you are referencing the variable \"color\" to substitute\
+    \ the value red.\n\n```\n<script type=\"text/javascript\">\ndocument.write(\"\
+    <p>My favorite color is +color+\"</p>\");\n</script>\n```\n\nThe variable named\
+    \ \"color\" is dynamically added to the content on the page.\n\n# Using Math in\
+    \ Your Scripts\n\nVariables can also have mathematical values (see Figure 5.7).\
+    \ For instance, the following two variables can be used to create the value of\
+    \ a third variable."
+  - '[PAGE 12]
+
+
+    ```
+
+    <html>
+
+    <head>
+
+    <script type="text/javascript" src="popup.js"></script>
+
+    </head>
+
+    <body>
+
+    <script type="text/javascript">
+
+    document.write("<h1>Welcome to JavaScript</h1>");\n</script>
+
+    <a href="#" onclick="popUpAlert()">Click me</a>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    **Figure 5.6** You can add your JavaScript to externally linked files.
+
+
+    ```
+
+    <script type="text/javascript">
+
+    var myFirstNumber=4;
+
+    var mySecondNumber=3;
+
+    var myThirdNumber=myFirstNumber*mySecondNumber;
+
+    </script>
+
+    ```'
+  - "[PAGE 13]\n\n![](img/1770128c4f0e28ca70b194a533659495_13_0.png)\n\nYou can see\
+    \ that the first two variables are multiplied (the * is the multiplier value)\
+    \ to generate the third variable. The following JavaScript presents the final\
+    \ value in the web page:\n\n```\ndocument.write(\"<p>My favorite number is \\\
+    +myThirdNumber</p>\");\n```\n\nThere are seventh arithmetic operators that you\
+    \ can use in JavaScript:\n\n+   * + addition\n* subtraction\n* multiplication\n\
+    * / division\n* % modulus\n* ++ increment\n* -- decrement\n\nThe following example\
+    \ uses all seven operators to demonstrate how you can use them in your code (see\
+    \ also Figure 5.8).\n\n```\n<html>\n<head>\n<script type=\"text/javascript\">\n\
+    \ varNumber=7;\n varVarAddition=varNumber+3;\n varVarSubtraction=varNumber-3;\n\
+    \ varMultiplication=varNumber*3;\n```"
+  - '[PAGE 14]
+
+
+    7+3=10
+
+    7-3=4
+
+    7*3=21
+
+    7/3=2.3333333333333335
+
+    7%3=1
+
+    Increment 7=8
+
+    Decrement 7=7
+
+
+    **Figure 5.8** JavaScript has seven different arithmetic operators you can use
+    to control the value of content dynamically.
+
+
+    ```
+
+    var varDivision=varNumber/3;
+
+    var varModulus=varNumber%3;
+
+    var varIncrement=++varNumber;
+
+    var varDecrement=--varNumber;
+
+    ```
+
+
+    ```
+
+    <script>
+
+    </head>
+
+    <body>
+
+    <script type="text/javascript">
+
+    document.write("<<p>7+3="+varAddition+"</p>");
+
+    document.write("<<p>7-3="+varSubtraction+"</p>");
+
+    document.write("<<p>7*3="+varMultiplication+"</p>");
+
+    document.write("<<p>7/3="+varDivision+"</p>");
+
+    document.write("<<p>7%3="+varModulus+"</p>");
+
+    document.write("<<p>Increment 7="+varIncrement+"</p>");
+
+    document.write("<<p>Decrement 7="+varDecrement+"</p>");
+
+    </script>
+
+    </body>
+
+    ```'
+  - "[PAGE 15]\n\n# Assessing Values Using Operators\n\nIn addition to mathematical\
+    \ operators, JavaScript also has comparison operators that allow you to take two\
+    \ or more values and compare the differences. There are seven comparison operators:\n\
+    \n+   - == is equal to\n- === is exactly equal\n- != is not equal\n- > is greater\
+    \ than\n- < is less than\n- >= is greater or equal to\n- <= is lesser or equal\
+    \ to\n\nComparison operators become extremely valuable when you start to write\
+    \ functions that have potentially two or more outcomes.\n\n# Controlling Outcomes\
+    \ with If/Else and Switch Statements\n\nCommon to almost all programming languages\
+    \ is the use of if/else statements. Essentially, the if/else statement looks for\
+    \ a condition, and depending on the value, will execute a statement. Take for\
+    \ instance the following code.\n\n```\n<script type=\"text/javascript\">\nvar\
+    \ myColor=\"red\"\nif (myColor==\"red\")\n{\n  document.write(\"The correct color\"\
+    );\n}\n</script>\n```\n\nA variable called myColor is created with a string value\
+    \ of \"red\". The script uses an \"if\" statement to look for a value using the\
+    \ comparison operator, ==. If the exact value is met then the text \"The correct\
+    \ color\" is printed on the page.\\ If the variable myColor is changed to \"blue\"\
+    , then the \"if\" statement will not run. To show how you can use an \"else\"\
+    \ statement to show a second option, as follows.\n\n```\n<script type=\"text/javascript\"\
+    >\nvar myColor=\"blue\"\nif (myColor==\"red\")\n{\n  document.write(\"The correct\
+    \ color\");\n}\n</script>\n```"
+  - '[PAGE 16]
+
+
+    ```
+
+    else (myColor="red")
+
+    {
+
+    document.write("This is not the correct color");
+
+    }
+
+    </script>
+
+    ```
+
+
+    The if/else statement can have a third condition set using the else/if statement.
+    For instance, the following allows you to have two correct answers (red and blue),
+    but when the value in the myColor is changed to any other value, a third result
+    is printed.
+
+
+    ```
+
+    <script type="text/javascript">
+
+    var myColor="green"
+
+    if (myColor=="red")
+
+    {
+
+    document.write("The correct color");
+
+    }
+
+    else if (myColor=="blue")
+
+    {
+
+    document.write("This is a good color");
+
+    }
+
+    else
+
+    {
+
+    document.write("The wrong color was chosen");
+
+    }
+
+    </script>
+
+    ```
+
+
+    If there is a chance for you to have three or more valid choices then you will
+    want to use "switch" statements to allow you to match your choice from a list
+    of choices. Let''s start creating a variable that we can match different choices:
+
+
+    ```
+
+    var myColor="green"
+
+    ```
+
+
+    The "switch" statement can now look for the condition of the variable myColor
+    and match it against possible answers. The following "switch" statement creates
+    three different answers depending whether the variable is "green", "red", or "blue".
+    A final, default value will run if none of the conditions are met.
+
+
+    ```
+
+    switch (myColor)
+
+    {
+
+    case "red":
+
+    document.write("You picked red");
+
+    break;
+
+    case "green":
+
+    document.write("You picked green");
+
+    break;
+
+    ```'
+- md: "\n```javascript\ncase \"blue\":\ndocument.write(\"You picked blue\");\nbreak;\n\
+    default:\ndocument.write(\"You did not make a valid choice\");\n}\n```\n\nWhen\
+    \ you run this script the \"case\" statement that matches the string value \"\
+    green\" will print \"You picked green\" in the web page. Try changing the myColor\
+    \ variable value to \"red\" and \"blue\" to change the value printed to the page.\n\
+    \nJavaScript supports many other tools you can use to control content. For instance,\
+    \ you can create a loop statement that will look through a list to match the correct\
+    \ results. The following uses an array with a \"for\" loop to print the results\
+    \ in the web page (Figure 5.9).\n\n```html\n<html>\n<body>\n<script type=\"text/javascript\"\
+    >\nvar my;\nvar colors = new Array();\nmycolors[0] = \"Red\";\nmycolors[1] = \"\
+    Green\";\nmycolors[2] = \"Blue\";\nmycolors[3] = \"Yellow\";\nmycolors[4] = \"\
+    Orange\";\nfor (color in colors)\n```\n\n| Red |\n| :--- |\n| Green |\n| Blue\
+    \ |\n| Yellow |\n| Orange |\n\n![](img/1770128c4f0e28ca70b194a533659495_17_0.png)\n\
+    \n```javascript\n{ document.write(mycolors[mycolor]) + \"<br />\";\n}\n</script>\n\
+    </body>\n</html>\n```\n\n## Specific Objects You Can Use in JavaScript\n\nJavaScript\
+    \ can be extended further inside of the web browser through use of objects. JavaScript\
+    \ is an object-oriented programming (OOP) language in the same way that languages\
+    \ such as Java, C++, and C# are OOP. This means you can create and use objects.\
+    \ By default, web browsers support the following objects:\n\n- String—this is\
+    \ text\n- Date—allows you to use date and time\n- Array—allows you to build a\
+    \ structured collection of data\n- Boolean—true or false\n- Math—allows you to\
+    \ use mathematical operators\n- RegExp—allows you to use regular expressions to\
+    \ define a pattern, such as social security number or phone number\n\nUsing these\
+    \ objects enables you to create complex solutions. Do final solutions meet the\
+    \ demands of desktop applications? Five years ago I would have said no; today,\
+    \ it is extremely close and tomorrow's solutions will certainly outpace what you\
+    \ can on the desktop.\n\n## Developing JavaScript for HTML5\n\nNew APIs in HTML5\
+    \ can be programmatically interfaced with JavaScript. There are three APIs that\
+    \ stand out:\n\n- Web Workers\n- LocalStorage\n- Geolocation-aware systems\n\n\
+    Using JavaScript, you can interface with these new APIs to create new, Web-centric\
+    \ solutions.\n\n## Using Web Workers\n\nJavaScript is a scripting solution that,\
+    \ when runs, will execute the code by line. Many other development languages,\
+    \ such as C# and Java, can have multiple processes running simultaneously. Web\
+    \ Workers is a technology that can run JavaScript from sequential execution. You\
+    \ can now run multiple scripts at once.\n\nThis is easily done in JavaScript.\
+    \ In the following script you will declare a new variable, called myWebWorker,\
+    \ as a new Web Workers file:\n\n```javascript\nvar myWebWorker = new Worker(\"\
+    webWorker.js\");\n```\n\nThe example is loading a second script. In the JavaScript\
+    \ JS file is a second script that triggers another, duplicate Web Workers to run.\
+    \ The loop forces two programs to run at once. The JavaScript for webWorker.js\
+    \ is as follows:\n\n```javascript\nvar results = [];\nfunction resultReceiver(event)\
+    \ {\n  results.push(parseInt(event.data));\n  if (results.length == 2) {\n   \
+    \ postMessage(results[0] + results[1]);\n  }\n}\n\nfunction errorReceiver(event)\
+    \ {\n  throw event.data;\n}\n\nonmessage = function(event) {\n  var n = parseInt(event.data);\n\
+    \  if (n == 0 || n == 1) {\n    postMessage(n);\n    return;\n  }\n\n  for (var\
+    \ i = 1; i <= 2; i++) {\n    myWebWorker = new Worker(\"webWorker.js\");\n   \
+    \ myWebWorker.onmessage = resultReceiver;\n    myWebWorker.onerror = errorReceiver;\n\
+    \    myWebWorker.postMessage(n - i);\n  }\n}\n```\n\nThe \"for\" statement triggers\
+    \ the same webWorker.js file to reload. The for script to run multiple times.\
+    \ Your main HTML page you will add the following HTML and JavaScript to load the\
+    \ Web Worker.\n\n```html\n<html>\n<title>Test threads fibonacci</title>\n<body>\n\
+    <div id=\"result\"></div>\n<script language=\"javascript\">\nvar myWebWorker =\
+    \ new Worker(\"webWorker.js\");\nmyWebWorker.onmessage = function(event) {\n \
+    \ document.getElementById(\"result\").textContent = event.data;\n  dump(\"Got:\
+    \ \" + event.data + \"\\n\");\n};\nmyWebWorker.onerror = function(event) {\n \
+    \ dump(\"Web Worker error: \" + event.data + \"\\n\");\n  throw event.data;\n\
+    }\n\nmyWebWorker.postMessage(\"Success, Web Workers are working\");\n</script>\n\
+    </body>\n</html>\n```\n\nEnabling multiple JavaScripts to execute simultaneous\
+    \ is essential for complex applications. There is a quick test you can take to\
+    \ see massive numbers of JavaScript programs running. Go to www.Gmail.com and\
+    \ log into Google's Web-based email service. The service will run a simple version\
+    \ of the site if you visit Gmail with IE7 or earlier. If you are using Firefox\
+    \ 3.6 or Google's Chrome then you are presented with a jet-fueled alternative\
+    \ loaded with JavaScript. The high-performance alternative requires that the browser\
+    \ can support technologies such as Web Workers to process scripts simultaneously.\n\
+    \n## Storing Data with LocalStorage\n\nKey to applications is the ability to store\
+    \ data. In the past you have been able to do this using complex cookies or Ajax\
+    \ commands that leverage the ability to send data to a database. The ability to\
+    \ store data locally in your web browser is dramatically improved with the implementation\
+    \ of LocalStorage.\n\nLocalStorage is essentially the ability to have an SQL-like\
+    \ database running in your web browser. An example of LocalStorage being used\
+    \ is Google's version of Gmail for the iPhone. Using LocalStorage, you can view\
+    \ and send email without having a Web connection. The email is resynchronized\
+    \ with the mail servers when a new network connection is established.\n\nYou access\
+    \ LocalStorage in your JavaScript by using the GlobalStorage object. Figure 5.10\
+    \ demonstrates LocalStorage used.\n\n![](img/1770128c4f0e28ca70b194a533659495_20_0.png)\n\
+    \n> Figure 5.10 Data can be stored locally in web browsers using the LocalStorage\
+    \ object.\n\nThe first step for the example in Figure 5.10 is to create an area\
+    \ where you can type some text. You are going to use standard-form controls.\n\
+    \n```html\n<textarea id=\"text\" class=\"freetext\">\n</textarea> Item name <input\
+    \ id=\"item_name\" type=\"text\" value=\"new item\" />\n```\n\nAn event is going\
+    \ to be added to the INPUT button to trigger the JavaScript to run:\n\n```html\n\
+    <input onclick=\"writeLocal();\" type=\"button\" value=\"Save\"/>\n```\n\nThe\
+    \ Local is going to post the data stored in the browser to the web page. An area\
+    \ with the ID \"items\" is defined.\n\n```html\n<div id=\"items\"></div>\n```\n\
+    \nThe first function run in your JavaScript is to define that the content on the\
+    \ page is going to be associated with the web site your page is hosted on.\n\n\
+    ```javascript\nfunction $(id) { return document.getElementById(id); }\nvar host\
+    \ = location.hostname;\nvar myLocalStorage = globalStorage[host];\n```\n\nThe\
+    \ second function allows you to store data using the LocalStorage API.\n\n```javascript\n\
+    function writeLocal() {\nvar data = $('text').value;\nvar itemName = $('item_name').value;\n\
+    myLocalStorage.setItem(itemName, data);\nupdateItemsList();\n}\n```\n\nAs any\
+    \ SQL you will be able to delete entries. The following function allows you to\
+    \ delete items using remove.\n\n```javascript\nfunction deleteLocal(itemName)\
+    \ {\nmyLocalStorage.removeItem(itemName);\nupdateItemsList();\n}\n```\n\nThe following\
+    \ sample shows you the whole program with some styling for presentation.\n\n```html\n\
+    <html><head><title>HTML5 Web Storage</title></head>\n```\n\n```css\n<style>\n\
+    .freetext {\n  width: 100%;overflow: hidden;\n  background: #FFE;font-family:\
+    \ sans-serif;font-size: 14pt;moz-border-radius: 10px;-webkit-border-radius: 10px;\n\
+    }\nli {\n  padding: 4px;width: 400px;\n}\ninput {\n  margin: 2px;border-style:\
+    \ solid; -moz-border-radius: 10px;-webkit-border-radius: 10px;color: #666;padding:\
+    \ 2px;\n}\nbody {\n  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida\
+    \ Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: #FF0000;font-size:\
+    \ medium;\n}\n</style>\n```\n\n```javascript\nfunction updateItemsList() {\n \
+    \ var items = myLocalStorage.length;\n  // list items\n}\n```\n"
+  mdcn: "\n\n```javascript\ncase \"blue\":\ndocument.write(\"You picked blue\");\n\
+    break;\ndefault:\ndocument.write(\"You did not make a valid choice\");\n}\n```\n\
+    \n当你运行此脚本时，匹配字符串值 \"green\" 的 \"case\" 语句将在网页上打印 \"You picked green\"。尝试将 `myColor`\
+    \ 变量的值更改为 \"red\" 和 \"blue\"，以更改打印到页面上的值。\n\nJavaScript 支持许多其他你可以用来控制内容的工具。例如，你可以创建一个循环语句，遍历列表以匹配正确的结果。以下示例使用数组配合\
+    \ `for` 循环在网页上打印结果（图 5.9）。\n\n```html\n<html>\n<body>\n<script type=\"text/javascript\"\
+    >\nvar my;\nvar colors = new Array();\nmycolors[0] = \"Red\";\nmycolors[1] = \"\
+    Green\";\nmycolors[2] = \"Blue\";\nmycolors[3] = \"Yellow\";\nmycolors[4] = \"\
+    Orange\";\nfor (color in colors)\n```\n\n| Red |\n| :--- |\n| Green |\n| Blue\
+    \ |\n| Yellow |\n| Orange |\n\n![](img/1770128c4f0e28ca70b194a533659495_17_0.png)\n\
+    \n```javascript\n{ document.write(mycolors[mycolor]) + \"<br />\";\n}\n</script>\n\
+    </body>\n</html>\n```\n\n## 在 JavaScript 中可以使用特定对象\n\nJavaScript可以通过使用对象在 浏览器内部进一步扩展。JavaScript\
+    \ 是一种面向对象的编程 (OOP) 语言，与 Java、C++ 和 C# 等语言一样都是 OOP。这意味着你可以创建并使用对象。默认情况下，网页浏览器支持以下对象：\n\
+    \n- String—这是文本\n- Date—允许你使用日期和时间\n- Array—允许你构建结构化的数据集合\n- Boolean—真或假\n- Math—允许你使用数学运算符\n\
+    - RegExp—允许你使用正则表达式来定义模式，例如社会安全号或电话号码\n\n使用这些对象使你能够创建复杂的解决方案。最终的解决方案是否满足桌面应用程序的需求？五年前我会说不；但今天，它已经非常接近，而且未来的解决方案将超出你在桌面上可以的操作。\n\
+    \n## 为 HTML5 开发 JavaScript\n\nHTML5 中的新 API 可以与 JavaScript 进行程序化接口接。有三个 API 脱颖而出：\n\
+    \n- Web Workers\n- LocalStorage\n- 地理位置感知系统\n\n使用 JavaScript，你可以与这些新 API 交互以创建新的以\
+    \ Web 为中心的解决方案。\n\n## 使用 Web Workers\n\nJavaScript 是一种脚本解决方案，运行时会按行执行代码。许多其他开发语言（如\
+    \ C# 和 Java）可以同时运行多个进程。Web Workers 是一项可以让 JavaScript 离顺序执行的技术。你现在可以同时运行多个脚本。\n\
+    \n这在 JavaScript 中很容易实现。在下面的脚本中，你将一个名为 `myWebWorker` 的新变量作为一个新的 Web Workers 文件：\n\
+    \n```javascript\nvar myWebWorker = new Worker(\"webWorker.js\");\n```\n\n示例正在加载第二个脚本。在\
+    \ JavaScript JS 文件中，第二个脚本会触发另一个重复的 Web Workers 运行。该循环强制两个程序同时运行。`webWorker.js`\
+    \ 的 JavaScript 代码如下：\n\n```javascript\nvar results = [];\nfunction resultReceiver(event)\
+    \ {\n  results.push(parseInt(event.data));\n  if (results.length == 2) {\n   \
+    \ postMessage(results[0] + results[1]);\n  }\n}\n\nfunction errorReceiver(event)\
+    \ {\n  throw event.data;\n}\n\nonmessage = function(event) {\n  var n = parseInt(event.data);\n\
+    \  if (n == 0 || n == 1) {\n    postMessage(n);\n    return;\n  }\n\n  for (var\
+    \ i = 1; i <= 2; i++) {\n    myWebWorker = new Worker(\"webWorker.js\");\n   \
+    \ myWebWorker.onmessage = resultReceiver;\n    myWebWorker.onerror = errorReceiver;\n\
+    \    myWebWorker.postMessage(n - i);\n  }\n}\n```\n\n\"for\" 语句触发相同的 `webWorker.js`\
+    \ 文件重载。以便 for 脚本运行多次。在你的主 HTML 页面中，你将添加以下 HTML 和 JavaScript 来加载 Web Worker。\n\n\
+    ```html\n<html>\n<title>Test threads fibonacci</title>\n<body>\n<div id=\"result\"\
+    ></div>\n<script language=\"javascript\">\nvar myWebWorker = new Worker(\"webWorker.js\"\
+    );\nmyWebWorker.onmessage = function(event) {\n  document.getElementById(\"result\"\
+    ).textContent = event.data;\n  dump(\"Got: \" + event.data + \"\\n\");\n};\nmyWebWorker.onerror\
+    \ = function(event) {\n  dump(\"Web Worker error: \" + event.data + \"\\n\");\n\
+    \  throw event.data;\n}\n\nmyWebWorker.postMessage(\"Success, Web Workers are\
+    \ working\");\n</script>\n</body>\n</html>\n```\n\n允许多个 JavaScript 同时执行对于复杂应用程序至关重要。你可以进行一个快速测试来查看大量的\
+    \ JavaScript 程序正在运行。访问 www.Gmail.com 并登录 Google 的 Web 电子邮件服务。如果你使用 IE7 或更早版本访问\
+    \ Gmail，该服务将运行网站的简易版本。如果你使用 Firefox 3.6 或 Google Chrome，那么你将看到一个加载了 JavaScript\
+    \ 的喷气动力替代方案。这种高性能的替代方案要求浏览器支持如 Web Workers 等技术来同时处理脚本。\n\n## 使用 LocalStorage 存储数据\n\
+    \n应用程序的关键在于存储数据的能力。过去，你可以使用复杂的 cookie 或利用发送数据到数据库的 Ajax 命令来实现这一点。随着 LocalStorage\
+    \ 的实施，在网页浏览器中本地存储数据的能力得到了极大提高。\n\nLocalStorage 本质上是你在网页浏览器中运行类似 SQL 数据库的能力。LocalStorage\
+    \ 的使用示例是 Google 的 iPhone 版本的 Gmail。使用 LocalStorage，你可以在没有 Web 连接的情况下查看和发送电子邮件。当建立新的网络连接时，电子邮件将与邮件服务器同步。\n\
+    \n你在 JavaScript 中通过使用 `GlobalStorage` 对象来访问 LocalStorage。图 5.10 展示了 LocalStorage\
+    \ 的用法。\n\n![](img/1770128c4f0e28ca70b194a533659495_20_0.png)\n\n> 图 5.10 使用 LocalStorage\
+    \ 对象可以在网页浏览器中本地存储数据。\n\n图 5.10 示例的第一步是创建一个可以输入某些文本的区域。你将使用标准的表单控件。\n\n```html\n\
+    <textarea id=\"text\" class=\"freetext\">\n</textarea> 项目名称 <input id=\"item_name\"\
+    \ type=\"text\" value=\"new item\" />\n```\n\n将在 INPUT 按钮上添加一个事件来触发 JavaScript\
+    \ 运行：\n\n```html\n<input onclick=\"writeLocal();\" type=\"button\" value=\"Save\"\
+    />\n```\n\nLocal 将数据存储在浏览器中并到网页。定义了一个 ID 为 \"items\" 的区域。\n\n```html\n<div id=\"\
+    items\"></div>\n```\n\n你在 JavaScript 中运行的第一个函数是定义页面内容与你所在的网站关联。\n\n```javascript\n\
+    function $(id) { return document.getElementById(id); }\nvar host = location.hostname;\n\
+    var myLocalStorage = globalStorage[host];\n```\n\n第二个函数允许你使用 LocalStorage 存储数据。\n\
+    \n```javascript\nfunction writeLocal() {\nvar data = $('text').value;\nvar itemName\
+    \ = $('item_name').value;\nmyLocalStorage.setItem(itemName, data);\nupdateItemsList();\n\
+    }\n```\n\n像任何 SQL 一样删除条目。下面的函数允许使用 remove 删除项目。\n\n```javascript\nfunction deleteLocal(itemName)\
+    \ {\nmyLocalStorage.removeItem(itemName);\nupdateItemsList();\n}\n```\n\n以下示例向你展示了带有样式的完整程序。\n\
+    \n```html\n<html><head><title>HTML5 Web Storage</title></head>\n```\n\n```css\n\
+    <style>\n.freetext {\n  width: 100%;overflow: hidden;\n  background: #FFE;font-family:\
+    \ sans-serif;font-size: 14pt;moz-border-radius: 10px;-webkit-border-radius: 10px;\n\
+    }\nli {\n  padding: 4px;width: 400px;\n}\ninput {\n  margin: 2px;border-style:\
+    \ solid; -moz-border-radius: 10px;-webkit-border-radius: 10px;color: #666;padding:\
+    \ 2px;\n}\nbody {\n  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida\
+    \ Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: #FF0000;font-size:\
+    \ medium;\n}\n</style>\n```\n\n```javascript\nfunction updateItemsList() {\n \
+    \ var items = myLocalStorage.length;\n  // 列出项目\n}\n```\n\n"
+  merge: 0
+  raw:
+  - '[PAGE 17]
+
+
+    ```
+
+    case "blue":
+
+    document.write("You picked blue");
+
+    break;
+
+    default:
+
+    document.write("You did not make a valid
+
+    choice");
+
+    }
+
+    ```
+
+
+    When you run this script the "case" statement that matches the string value "green"
+    will print "You picked green" in the web page. Try changing the myCamera variable
+    value to "red" and "blue" to change the value printed to the page.
+
+
+    JavaScript supports many other tools you can use to control content. For instance,
+    you can create a loop statement that will look through a list to match the correct
+    results. The following uses an array with a "for" loop to print the results in
+    the web page Figure 5.9).
+
+
+    ```
+
+    <html>
+
+    <body>
+
+    <script type="text/javascript">
+
+    var my;
+
+    var colors = new Array();
+
+    mycolors[0] = "Red";
+
+    mycolors[1] = "Green";
+
+    mycolors[2] = "Blue";
+
+    mycolors[3] = "Yellow";
+
+    mycolors[4] = "Orange";
+
+    for (color in colors)
+
+    ```
+
+
+    |Red|
+
+    |Green|
+
+    |Blue|
+
+    |Yellow|
+
+    |Orange|
+
+
+    ![](img/1770128c4f0e28ca70b194a533659495_17_0.png)'
+  - '[PAGE 18]
+
+
+    ```
+
+    { document.write(mycolors[mycolor]) + "<br />";
+
+    }
+
+    <script>
+
+    <body>
+
+    </html>
+
+    ```
+
+
+    # Specific Objects You Can Use in JavaScript
+
+
+    JavaScript can be extended further inside of the web browser through use of objects.
+    JavaScript is an object-oriented programming (OOP) language in the same way that
+    languages such as Java, C++, and C# are OOP. This means you can create and use
+    objects. By default, web browsers support the following objects:
+
+
+    +   * String—this is text
+
+    * Date—allows you to use date and time
+
+    * Array—allows you to build a structured collection of data
+
+    * Boolean—true or false
+
+    * Math—allows you to use mathematical operators
+
+    * RegExp—allows you to use regular expressions to define a pattern, such as social
+    security number or phone number
+
+
+    Using these objects enables you to create complex solutions. Do final solutions
+    meet the demands of desktop applications? Five years ago I would have said no;
+    today, it is extremely close and tomorrow''s solutions will certainly outpace
+    what you can on the desktop.
+
+
+    # Developing JavaScript for HTML5
+
+
+    New APIs in HTML5 can be programmatically interfaced with JavaScript. There are
+    three APIs that stand out:
+
+
+    +   * Web Workers
+
+    * LocalStorage
+
+    * Geolocation-aware systems
+
+
+    Using JavaScript, you can interface with these new APIs to create new, Web-centric
+    solutions.
+
+
+    # Using Web Workers
+
+
+    JavaScript is a scripting solution that, when runs, will execute the code by line.
+    Many other development languages, such as C# and Java, can have multiple processes
+    running simultaneously. Web Workers is a technology that can run JavaScript from
+    sequential execution. You can now run multiple scripts at once.
+
+
+    This is easily done in JavaScript. In the following script you will declare a
+    new variable, called myWebWorker, as a new Web Workers file:'
+  - "[PAGE 19]\n\nvar myWebWorker = new Worker(\"webWorker.js\");\n\nThe example is\
+    \ loading a second script. In the JavaScript JS file is a second script that triggers\
+    \ another, duplicate Web Workers to run. The loop forces two programs to run at\
+    \ once. The JavaScript for webWorker.js is as follows:\n\n```\nvar results = [];\n\
+    function resultReceiver(event) {\n  results.push(parseInt(event.data));\n  if\
+    \ (results.length == 2) {\n    postMessage(results[0] + results[1]);\n  }\n}\n\
+    \nfunction errorReceiver(event) {\n  throw event.data;\n}\n\nonmessage = function(event)\
+    \ {\n  var n = parseInt(event.data);\n  if (n == 0 || n == 1) {\n    postMessage(n);\n\
+    \    return;\n  }\n\nfor (var i = 1; i <= 2; i++) {\n    myWebWorker = new Worker(\"\
+    webWorker.js\");\n    myWebWorker.onmessage = resultReceiver;\n    myWebWorker.onerror\
+    \ = errorReceiver;\n    myWebWorker.postMessage(n - i);\n  }\n```\n\nThe \"for\"\
+    \ statement triggers the same webWorker.js file to reload. The for script to run\
+    \ multiple times.\nYour main HTML page you will add the following HTML and JavaScript\
+    \ to load the Web Worker.\n\n```\n<html>\n<title>Test threads fibonacci</title>\n\
+    <body>\n<div id=\"result\"></div>\n<script language=\"javascript\">\nvar myWebWorker\
+    \ = new Worker(\"webWorker.js\");\nmyWebWorker.onmessage = function(event) {\n\
+    \  document.getElementById(\"result\").ntextContent = event.data;\n  dump(\"Got:\
+    \ \" + event.data + \"\\n\");\n};\nmyWebWorker.onerror = function(event) {\n \
+    \ dump(\"Web Worker error: \" + event.data + \"\\n\");\n  throw event.data;\n\
+    }\n```"
+  - '[PAGE 20]
+
+
+    ```
+
+    myWebWorker.postMessage("Success, Web Workers are working");
+
+    </script>
+
+    <body>
+
+    </html>
+
+    ```
+
+
+    Enabling multiple JavaScripts to execute simultaneous essential for complex applications.
+    There is a quick test you can take to see massive numbers of JavaScript programs
+    running. Go to www.Gmail.com and log into Google''s Web-based email service. The
+    service will run a simple version of the site if you visit Gmail with IE7 or earlier.
+    If you are using Firefox 3.6 or Google''s Chrome then you are presented with a
+    jet-fueled alternative loaded with JavaScript. The high-performance alternative
+    requires that the browser can support technologies such as Web Workers to process
+    scripts simultaneously.
+
+
+    # Storing Data with LocalStorage
+
+
+    Key to applications is the ability to store data. In the past you have been able
+    to do this using complex cookies or Ajax commands that leverage the ability to
+    send data to a database. The ability to store data locally in your web browser
+    is dramatically improved with the implementation of LocalStorage.
+
+
+    LocalStorage is essentially the ability to have an SQL-like database running in
+    your web browser. An example of LocalStorage being used is Google''s version of
+    Gmail for the iPhone. Using LocalStorage, you can view and send email without
+    having a Web connection. The email is resynchronized with the mail servers when
+    a new network connection is established.
+
+
+    You access LocalStorage in your JavaScript by using the GlobalStorage object.
+    Figure 5.10 demonstrates LocalStorage used.
+
+
+    ![](img/1770128c4f0e28ca70b194a533659495_20_0.png)
+
+
+    > Figure 5.10 Data can be stored locally in web browsers using the LocalStorage
+    object.'
+  - "[PAGE 21]\n\nThe first step for the example in Figure 5.10 is to create an area\
+    \ where you can type some text. You are going to use standard-form controls.\n\
+    \n```\n<textarea id=\"text\" class=\"freetext\">\n</textarea> Item name <input\
+    \ id=\"item_name\"\ntype=\"text\" value=\"new item\" />\n```\n\nAn event is going\
+    \ to be added to the INPUT button to trigger the JavaScript to run:\n\n```\n<input\
+    \ onclick=\"writeLocal();\" type=\"button\" value=\"Save\"/>\n```\n\nThe Local\
+    \ is going to post the data stored in the browser to the web page. An area with\
+    \ the ID \"items\" is defined.\n\n```\n<div id=\"items\">\n</div>\n```\n\nThe\
+    \ first function run in your JavaScript is to define that the content on the page\
+    \ is going to be associated with the web site your page is hosted on.\n\n```\n\
+    function $(id) { return document.getElementById(\n(id);\nvar host = location.hostname;\n\
+    var myLocalStorage = globalStorage[host];\n```\n\nThe second function allows you\
+    \ to store data using the LocalStorage API.\n\n```\nfunction writeLocal() {\n\
+    var data = $(\text').value;\nvar itemName = $(\\item_name').value;\nmyLocalStorage.setItem(itemName,\
+    \ data);\nupdateItemsList();\n```\n\nAs any SQL database you will be able to delete\
+    \ entries. The following function allows you to delete items using the removeproperty.\n\
+    \n```\nfunction deleteLocal(itemName) {\nmyLocalStorage.removeItem(itemName);\n\
+    updateItemsList();\n}\n```\n\nThe following sample shows you the whole program\
+    \ with some CSS styling for presentation.\n\n```\n<html><head><title>HTML5 Web\
+    \ Storage /\nlocalStorage</title></head>\n```"
+  - "[PAGE 22]\n\n```\n<style>\n.freetext {\n  width: 100%;overflow: hidden;\n  background:\
+    \ #FFE;font-family: sans-serif;font-size: 14pt;moz-border-radius: 10px;-webkit-border-\n\
+    radius: 10px;\n}\nli {\n  padding: 4px;width: 400px;\n}\ninput {\n  margin: 2px;border-style:\
+    \ solid; -moz-border-\nradius: 10px;-webkit-border-radius: 10px;color:\n  #666;padding:\
+    \ 2px;\n}\nbody {\n  font-family: 'Lucida Sans', 'Lucida Sans\nRegular', 'Lucida\
+    \ Grande', 'Lucida Sans Unicode',\nGeneva, Verdana, sans-serif;color: #FF0000;font-\n\
+    size: medium;\n}\n</style>\n<body><textarea id=\"text\" class=\"freetext\">\n\
+    </textarea>Item name <input id=\"item_name\"\ntype=\"text\" value=\"new item\"\
+    \ /><input onclick=\n\"writeLocal();\" type=\"button\" value=\"Save\" />\n<div\
+    \ id=\"items\"></div>\n<script>\nfunction $(id) { return document.getElementById(id);\
+    \ }\n  var host = location.hostname;\n  var myStorage = globalStorage[host];\n\
+    function writeLocal() {\n  var data = $('text').value;\n  var itemName = $('item_name').value;\n\
+    \  myLocalStorage.setItem(itemName, data);\n  updateItemsList();\n}\nfunction\
+    \ deleteLocal(itemName) {\n  myLocalStorage.removeItem(itemName);\n  updateItemsList();\n\
+    }\nfunction readLocal(itemName) {\n  $('item_name').value=itemName;\n  $('text').value=myLocalStorage.getItem(itemName);\n\
+    }\nfunction updateItemsList() {\n  var items = myLocalStorage.length\n  // list\
+    \ items\n```"
+- md: "\n# 20\n\n```javascript\nvar s = '<h2>Items for '+host+'</h2>';\ns+= '<ul>';\n\
+    for (var i=0;i<items;i++) {\n  var itemName = myLocalStorage.key(i);\n  s+= '<li>'+\n\
+    \    '<div style=\"float:right;\">'+\n    '<input type=\"button\" value=\"Load\"\
+    \ onclick=\"readLocal(\\'+itemName+'\\')\">' + ' ' +\n    '<input type=\"button\"\
+    \ value=\"Delete\" onclick=\"deleteLocal(\\'+itemName+'\\')\">' + ' '+\n    '</div>'+\n\
+    \    '<strong>'+itemName+'</strong>'+\n  '</li>';\n}\n$(items).innerHTML = s+'</ul>';\n\
+    \nwindow.onload = function () {\n  updateItemsList();\n  $(text).value = ['Quick\
+    \ and dirty Web Storage sample:','1 Write some text,\n2 Give it some name,\n3\
+    \ Click Save button,','Data is stored and retrieved using Web Storage (no cookies\
+    \ and no server side).'].join('\\n');\n}\n</script></body></html>\n```\n\nAs you\
+    \ see, the implementation of LocalStorage allows you to store data without using\
+    \ cookies from a serverside database.\n\n# Controlling Geolocation Devices with\
+    \ JavaScript\n\nThere is no doubt that the tech world is going mobile. Devices\
+    \ now need to know where they are geographically. In preparation for this, HTML5\
+    \ includes support for Geolocation (see Figure 5.11). The iPhone and Android phones\
+    \ are uses Geolocation enabled.\n\nThe following example uses Google Maps' service\
+    \ to tell you where you are located. The first step is to load the Map services.\n\
+    \n```html\n<script src=\"http://maps.google.com/maps?file=api&v=2&sensor=false&key=ABQIAAAAAIUzol0s6QWHuyxx-JVN7ABSUL8-Cfelegd6fe6dq-CwlitXxhqkov2kxasxgGQCdn10OCYag7Ub2S3\"\
+    \ type=\"text/javascript\"></script>\n```\n\nThe Google Maps services are publicly\
+    \ accessible. The first step is to define a series of variables that you can use\
+    \ in your code.\n\n# HTML 5 Geolocation\n\n![](img/1770128c4f0e28ca70b194a533659495_24_0.png)\n\
+    \n```javascript\nvar map;\nvar mapCenter;\nvar geocoder;\nvar fakeLatitude;\n\
+    var fakeLongitude;\n```\n\nWith your JavaScript variables defined, you can create\
+    \ the function that initializes the Geolocation services in your browser.\n\n\
+    ```javascript\nfunction initialize() {\n  navigator.geolocation.getCurrentPosition(\n\
+    \    function (position) {\n      mapServiceProvider(position.coords.latitude,position.coords.longitude);\n\
+    \    }\n  );\n} else {\n```\n\n```javascript\nalert(\"I’m sorry, but geolocation\
+    \ services\nnot supported by your browser or you do\nnot have a GPS device in\
+    \ your computer. I\nwill use a sample location to produce the map\ninstead.\"\
+    );\nfakeLatitude = 49.2736777;\nfakeLongitude = -123.114420;\nmapServiceProvider(fakeLatitude);\n\
+    }\n```\n\nThe next function instructs the Geolocation services to use the Google\
+    \ Map service.\n\n```javascript\nfunction mapServiceProvider(latitude, longitude)\n\
+    {\n  mapThisGoogle(latitude, longitude);\n}\nfunction mapThisGoogle(latitude,\
+    \ longitude)\n{\n  var mapCenter = new GLatLng(latitude,longitude);\n  map = new\
+    \ GMap2(document.getElementById(\"map\"));\n  map.setCenter(mapCenter, 15);\n\
+    \  map.addOverlay(new GMarker(mapCenter));\n  geocoder = new GCGeocoder();\n \
+    \ geocoder.getLocations(latitude+','+longitude);\n  addAddressToMap();\n}\n```\n\
+    \nThe final code completes the mapping.\n\n```javascript\nfunction addAddressToMap(response)\n\
+    {\n  if (!response || response.Status.code != 200) {\n    alert(\"Sorry, we were\
+    \ unable to geocode\nthat address\");\n  } else {\n    place = response.Placemark[0];\n\
+    \    $('#address').html(\"Your address: '+place.address);\n  }\n  window.location.querystring\
+    \ = (function() {\n    var collection = {};\n    var queryString = window.location.search;\n\
+    \    if (!queryString) {\n```\n\n```javascript\n    return { toString: function()\
+    \ { return \"\"; };\n  };\n  }();\n  queryString = decodeURI(queryString.substring(1));\n\
+    \  var pairs = queryString.split(\"&\");\n  for (var i = 0; i < pairs.length;\
+    \ i++) {\n    if (!pairs[i]) {\n      continue;\n    }\n    var seperatorPosition\
+    \ = pairs[i].indexOf(\"=\");\n    if (seperatorPosition == -1) {\n      collection[pairs[i]]\
+    \ = \"\";\n    } else {\n      collection[pairs[i].substring(0, seperatorPosition)]\
+    \ = pairs[i].substr(seperatorPosition + 1);\n    }\n  }\n  collection.toString\
+    \ = function() {\n    return \"?\" + queryString;\n  }\n  return collection;\n\
+    })();();\n```\n\nThe final result is that you use Geolocation to determine where\
+    \ you are using your web browser. This is very useful in mobile web browsers where\
+    \ you can link map services to geographically based tools.\n\n# Integrating JavaScript\
+    \ with HTML5\n\nIt will come as surprise to find out that JavaScript is tightly\
+    \ integrated with all elements of HTML5. This is clearly seen with the use of\
+    \ the CANVAS element. By itself, the element cannot do much. It is the use of\
+    \ JavaScript that allows it to become interactive.\n\nThe following JavaScript\
+    \ example demonstrates how you can use JavaScript, CANVAS, and a little CSS to\
+    \ create a simple game where you can control a crowd of people. Called \"Crowd\
+    \ Control,\" the goal of this simple game is to chase the people on the screen.\
+    \ What you will find is that each person on the screen will run away from your\
+    \ cursor as you move toward it.\n\n# 24\n\nThe first step is to create a basic\
+    \ HTML5 page with some CSS to control the color of the page. The following one\
+    \ will do.\n\n```html\n<!DOCTYPE HTML>\n<html>\n<head>\n<title>Canvas Example\
+    \ - Crowd Control</title>\n<style type=\"text/css\">\nbody{\n    margin: 0;\n\
+    \    padding: 0;\n    overflow: hidden;\n    background: yellow;\n    color: white;\n\
+    \    text-align: right;\n    font-family: Arial, Helvetica, sans-serif;\n    font-size:\
+    \ 0.8em;\n}\n</style>\n</head>\n<body>\n</body>\n</html>\n```\n\nIn between the\
+    \ BODY elements you will need to add the following CANVAS element. Notice that\
+    \ the CANVAS element has the ID \"Crowd Control.\" You will link to this ID using\
+    \ JavaScript.\n\n```html\n<canvas id=\"crowdControl\"></canvas>\n```\n\nFollowing\
+    \ this will start your JavaScript. The first action is to define the contextual\
+    \ structure of the CANVAS element.\n\n```javascript\n<script type=\"text/javascript\"\
+    >\nvar context = document.getElementById('crowdControl').getContext('2d');\nvar\
+    \ mouseX=0,mouse=0;\n```\n\nThe CrowdControl JavaScript will add copies of a PNG\
+    \ file onto the screen. You will want to create a new object variable that can\
+    \ point to the PNG file.\n\n```javascript\nvar imagine=new Image();\nimagine.src=\"\
+    people.png\";\n```\n\nNow you can start building your functions. The function\
+    \ will declare where on the crowd can move.\n\n```javascript\nfunction crowd()\
+    \ {\n  this.x=Math.random()*context.canvas.width;\n  this.y=Math.random()*context.canvas.height;\n\
+    \  this.vx=0;\n  this.vy=0;\n  this.move=crowd_move;\n```\n\n```javascript\n \
+    \ this.draw=crowd_draw;\n}\nfunction crowd_move() {\n  this.x+=this.vx;\n  this.y+=this.vy;\n\
+    \  this.vx*=0.9;\n  this.vy*=0.9;\n  this.vx+=(Math.random()-0.5)*0.1;\n  this.vy+=(Math.random()-0.5)*0.1;\n\
+    \  this.x=(this.x*500+context.canvas.width/2)/501;\n  this.y=(this.y*500+context.canvas.height/2)/501;\n\
+    }\n```\n\nNext, let's add the JavaScript that will actually draw the crowd.\n\n\
+    ```javascript\nfunction crowd_draw() {\n  context.save();\n  context.beginPath();\n\
+    \  context.translate(this.x,this.y);\n  context.rotate(angle(this.vx,this.vy));\n\
+    \  context.drawImage(image,-10,-5);\n  context.fillStyle = 'white';\n  context.fill();\n\
+    \  context.restore();\n}\n```\n\nThe next two functions allow your mouse to push\
+    \ the people around the screen and allow you to interact with them.\n\n```javascript\n\
+    var people=new Array();\nfunction begin() {\n  for (var i=0;i<100;i++) {\n   \
+    \ var temp=new crowd();\n    people.push(temp);\n  }\n}\nfunction work() {\n \
+    \ var x;\n  context.save();\n  context.beginPath();\n  context.fillStyle = 'yellow';\n\
+    \  context.strokeStyle = 'white';\n  context.rect(0,0,context.canvas.width,context.canvas.height);\n\
+    \  context.fill();\n  context.stroke();\n  context.restore();\n}\n```\n\n# 26\n\
+    \n```javascript\nfor(y in people) {\n  if(y!=x) {\n    var dx=people[y].x-people[x].x;\n\
+    \    var dy=people[y].y-people[x].y;\n    var d=Math.sqrt(dx*dx+dy*dy);\n    if(cd<40)\
+    \ {\n      people[x].vx+=20*(-dx/d);\n      people[x].vy+=20*(-dy/d);\n    } else\
+    \ if (cd<100) {\n      people[x].vx+=0.07*(dx/d);\n      people[x].vy+=0.07*(dy/d);\n\
+    \    }\n  }\n}\nvar dx=mouse-people[x].x;\nvar dy=mouse-people[x].y;\nvar d=Math.sqrt(dx*dx+dy*dy);\n\
+    if(cd<100) {\n  people[x].vx+=1*(-dx/d);\n  people[x].vy+=1*(-dy/d);\n}\npeople[x].move();\n\
+    people[x].draw();\n```\n"
+  mdcn: "\n\n# 20\n\n```javascript\nvar s = '<h2>Items for '+host+'</h2>';\ns+= '<ul>';\n\
+    for (var i=0;i<items;i++) {\n  var itemName = myLocalStorage.key(i);\n  s+= '<li>'+\n\
+    \    '<div style=\"float:right;\">'+\n    '<input type=\"button\" value=\"Load\"\
+    \ onclick=\"readLocal(\\'+itemName+'\\')\">' + ' ' +\n    '<input type=\"button\"\
+    \ value=\"Delete\" onclick=\"deleteLocal(\\'+itemName+'\\')\">' + ' '+\n    '</div>'+\n\
+    \    '<strong>'+itemName+'</strong>'+\n  '</li>';\n}\n$(items).innerHTML = s+'</ul>';\n\
+    \nwindow.onload = function () {\n  updateItemsList();\n  $(text).value = ['Quick\
+    \ and dirty Web Storage sample:','1 Write some text,\n2 Give it some name,\n3\
+    \ Click Save button,','Data is stored and retrieved using Web Storage (no cookies\
+    \ and no server side).'].join('\\n');\n}\n</script></body></html>\n```\n\n如你所见，LocalStorage\
+    \ 的实现允许你在不使用服务器端数据库 Cookie 的存储数据。\n\n# 使用 JavaScript 控制地理位置设备\n\n毫无疑问，科技世界正在走向移动化。设备现在需要知道自己的地理位置。为了准备这一点，HTML5\
+    \ 包含了对地理定位的支持（见图 5.11）。iPhone 和 Android 手机都启用了地理定位功能。\n\n以下示例使用 Google Maps 服务告诉你你所在的位置。第一步是加载地图服务。\n\
+    \n```html\n<script src=\"http://maps.google.com/maps?file=api&v=2&sensor=false&key=ABQIAAAAAIUzol0s6QWHuyxx-JVN7ABSUL8-Cfelegd6fe6dq-CwlitXxhqkov2kxasxgGQCdn10OCYag7Ub2S3\"\
+    \ type=\"text/javascript\"></script>\n```\n\nGoogle Maps 服务是公开访问的。第一步是定义一组可以在代码中使用的变量。\n\
+    \n# HTML 5 地理定位\n\n![](img/1770128c4f0e28ca70b194a533659495_24_0.png)\n\n```javascript\n\
+    var map;\nvar mapCenter;\nvar geocoder;\nvar fakeLatitude;\nvar fakeLongitude;\n\
+    ```\n\n定义好 JavaScript 变量后，你可以创建一个初始化浏览器中地理定位服务的函数。\n\n```javascript\nfunction\
+    \ initialize() {\n  navigator.geolocation.getCurrentPosition(\n    function (position)\
+    \ {\n      mapServiceProvider(position.coords.latitude,position.coords.longitude);\n\
+    \    }\n  );\n} else {\n```\n\n```javascript\nalert(\"I’m sorry, but geolocation\
+    \ services\nnot supported by your browser or you do\nnot have a GPS device in\
+    \ your computer. I\nwill use a sample location to produce the map\ninstead.\"\
+    );\nfakeLatitude = 49.2736777;\nfakeLongitude = -123.114420;\nmapServiceProvider(fakeLatitude);\n\
+    }\n```\n\n下一个函数指令地理定位服务使用 Google Map 服务。\n\n```javascript\nfunction mapServiceProvider(latitude,\
+    \ longitude)\n{\n  mapThisGoogle(latitude, longitude);\n}\nfunction mapThisGoogle(latitude,\
+    \ longitude)\n{\n  var mapCenter = new GLatLng(latitude,longitude);\n  map = new\
+    \ GMap2(document.getElementById(\"map\"));\n  map.setCenter(mapCenter, 15);\n\
+    \  map.addOverlay(new GMarker(mapCenter));\n  geocoder = new GCGeocoder();\n \
+    \ geocoder.getLocations(latitude+','+longitude);\n  addAddressToMap();\n}\n```\n\
+    \n最后的代码完成了地图映射。\n\n```javascript\nfunction addAddressToMap(response)\n{\n  if\
+    \ (!response || response.Status.code != 200) {\n    alert(\"Sorry, we were unable\
+    \ to geocode\nthat address\");\n  } else {\n    place = response.Placemark[0];\n\
+    \    $('#address').html(\"Your address: '+place.address);\n  }\n  window.location.querystring\
+    \ = (function() {\n    var collection = {};\n    var queryString = window.location.search;\n\
+    \    if (!queryString) {\n```\n\n```javascript\n    return { toString: function()\
+    \ { return \"\"; };\n  };\n  }();\n  queryString = decodeURI(queryString.substring(1));\n\
+    \  var pairs = queryString.split(\"&\");\n  for (var i = 0; i < pairs.length;\
+    \ i++) {\n    if (!pairs[i]) {\n      continue;\n    }\n    var seperatorPosition\
+    \ = pairs[i].indexOf(\"=\");\n    if (seperatorPosition == -1) {\n      collection[pairs[i]]\
+    \ = \"\";\n    } else {\n      collection[pairs[i].substring(0, seperatorPosition)]\
+    \ = pairs[i].substr(seperatorPosition + 1);\n    }\n  }\n  collection.toString\
+    \ = function() {\n    return \"?\" + queryString;\n  }\n  return collection;\n\
+    })();();\n```\n\n最终结果是你可以使用地理定位通过网络浏览器确定你的位置。这在移动网络浏览器中非常有用，你可以将地图服务链接到基于地理的工具。\n\
+    \n# 将 JavaScript 与 HTML5 集成\n\n发现 JavaScript 与 HTML5 的所有元素都紧密集成，可能会感到惊讶。这在 CANVAS\
+    \ 元素的使用上是非常明显的。元素本身不能做什么。是 JavaScript 的使用使其具有交互性。\n\n以下 JavaScript 示例演示了如何使用 JavaScript、CANVAS\
+    \ 和少量的 CSS 创建简单的游戏，你可以在其中控制人群。这个游戏被称为“人群控制”（Crowd Control），这个简单游戏的目标是追逐屏幕上的人。你会发现，当你向光标移动时，屏幕上的每一个人都会避开它。\n\
+    \n# 24\n\n第一步是创建一个基础 HTML5 页面，并使用一些 CSS 控制页面的颜色。使用下面的即可。\n\n```html\n<!DOCTYPE\
+    \ HTML>\n<html>\n<head>\n<title>Canvas Example - Crowd Control</title>\n<style\
+    \ type=\"text/css\">\nbody{\n    margin: 0;\n    padding: 0;\n    overflow: hidden;\n\
+    \    background: yellow;\n    color: white;\n    text-align: right;\n    font-family:\
+    \ Arial, Helvetica, sans-serif;\n    font-size: 0.8em;\n}\n</style>\n</head>\n\
+    <body>\n```\n\n"
+  merge: 0
+  raw:
+  - "[PAGE 23]\n\n# 20\n\n```\nvar s = '<h2>Items for '+host+'</h2>';\ns+= '<ul>';\n\
+    for (var i=0;i<items;i++) {\n  var itemName = myLocalStorage.key(i);\n  s+= '<li>'+\n\
+    \    '<div style=\"float:right;\">'+\n    '<input type=\"button\" value=\"Load\"\
+    \ onclick=\"readLocal(\\'+itemName+'\\')\">' + ' ' +\n    '<input type=\"button\"\
+    \ value=\"Delete\" onclick=\"deleteLocal(\\'+itemName+'\\')\">' + ' '+\n    '</div>'+\n\
+    \    '<strong>'+itemName+'</strong>'+\n  '</li>';\n}\n$(items).innerHTML = s+'</ul>';\n\
+    \nwindow.onload = function () {\n  updateItemsList();\n  $(text).value = ['Quick\
+    \ and dirty Web Storage sample:','\n1 Write some text,\n2 Give it some name,\n\
+    3 Click Save button,','\nData is stored and retrieved using Web Storage (no cookies\
+    \ and no server side).'].join('\\n');\n}\n</script></body></html>\n```\n\nAs you\
+    \ see, the implementation of LocalStorage allows you to store data without using\
+    \ cookies from a serverside database.\n\n# Controlling Geolocation Devices with\
+    \ JavaScript\n\nThere is no doubt that the tech world is going mobile. Devices\
+    \ now need to know where they are geographically. In preparation for this, HTML5\
+    \ includes support for Geolocation (see Figure 5.11). The iPhone and Android phones\
+    \ are uses Geolocation enabled.\n\nThe following example uses Google Maps' service\
+    \ to tell you where you are located. The first step is to load the Map services.\n\
+    \n```\n<script src=\"http://maps.google.com/maps?file=api&v=2&sensor=false&key=ABQIAAAAAIUzol0s6QWHuyxx-JVN7ABSUL8-Cfelegd6fe6dq-CwlitXxhqkov2kxasxgGQCdn10OCYag7Ub2S3\"\
+    \ type=\"text/javascript\"></script>\n```\n\nThe Google Maps services are publicly\
+    \ accessible. The first step is to define a series of variables that you can use\
+    \ in your code."
+  - "[PAGE 24]\n\n# HTML 5 Geolocation\n\n![](img/1770128c4f0e28ca70b194a533659495_24_0.png)\n\
+    \n```\nvar map;\nvar mapCenter;\nvar geocoder;\nvar fakeLatitude;\nvar fakeLongitude;\n\
+    ```\n\nWith your JavaScript variables defined, you can create the function that\
+    \ initializes the Geolocation services in your browser.\n\n```\nfunction initialize()\
+    \ {\n{\n  navigator.geolocation.getCurrentPosition(\n    function (position) {\n\
+    \      mapServiceProvider(position.coords.\n      latitude,position.coords.longitude);\n\
+    \    }\n  }\n} else {\n\n```"
+  - "[PAGE 25]\n\n```\nalert(\"I’m sorry, but geolocation services\nnot supported\
+    \ by your browser or you do\nnot have a GPS device in your computer. I\nwill use\
+    \ a sample location to produce the map\ninstead.\");\nfakeLatitude = 49.2736777;\n\
+    fakeLongitude = -123.114420;\nmapServiceProvider(fakeLatitude);\n}\n```\n\nThe\
+    \ next function instructs the Geolocation services to use the\\Google Map service.\n\
+    \n```\nfunction mapServiceProvider(latitude, longitude)\n{\n  mapThisGoogle(latitude,\
+    \ longitude);\n}\nfunction mapThisGoogle(latitude, longitude)\n{\n  var mapCenter\
+    \ = new GLatLng(latitude,\nlongitude);\n  map = new GMap2(document.getElementById(\"\
+    map\"));\n  map.setCenter(mapCenter, 15);\n  map.addOverlay(new GMarker(mapCenter));\n\
+    \  geocoder = new GCGeocoder();\n  geocoder.getLocations(latitude+','+longitude);\n\
+    \  addAddressToMap);\n}\n```\n\nThe final code completes the mapping.\n\n```\n\
+    function addAddressToMap(response)\n{\n  if (!response || response.Status.code\
+    \ != 200) {\n    alert(\"Sorry, we were unable to geocode\nthat address\");\n\
+    \  } else {\n    place = response.Placemark[0];\n    $('#address').html(\"Your\
+    \ address: '+place.\naddress\");\n  }\n  window.location.querystring = (function()\
+    \ {\n    var collection = {};\n    var queryString = window.location.search;\n\
+    \    if (!queryString) {\n```"
+  - "[PAGE 26]\n\n```\nreturn { toString: function() { return \"\";\n };\nqueryString\
+    \ = decodeURI(queryString);\nsubstring(1));\nvar pairs = queryString.split(\"\
+    &\");\nfor (var i = 0; i < pairs.length; i++) {\n  if (!pairs[i]) {\n    continue;\n\
+    \  }\n  var seperatorPosition = pairs[i].indexOf(\"=\");\n  if (seperatorPosition\
+    \ == -1) {\n    collection[pairs[i]] = \"\";\n  } else {\n    collection[pairs[i].substring(0,\
+    \ seperatorPosition)] = pairs[i].\n    substr(seperatorPosition + 1);\n  }\n}\n\
+    collection.toString = function() {\n  return \"?\" + queryString;\n}\nreturn collection;\n\
+    }()();\n```\n\nThe final result is that you use Geolocation to determine where\
+    \ you are using your web browser. This is very useful in mobile web browsers where\
+    \ you can link map services to geographically based tools.\n\n# Integrating JavaScript\
+    \ with HTML5\n\nIt will come as surprise to find out that JavaScript is tightly\
+    \ integrated with all elements of HTML5. This is clearly seen with the use of\
+    \ the CANVAS element. By itself, the element cannot do much. It is the use of\
+    \ JavaScript that allows it to become interactive.\n\nThe following JavaScript\
+    \ example demonstrates how you can use JavaScript, CANVAS, and a little CSS to\
+    \ create a simple game where you can control a crowd of people. Called \"Crowd\
+    \ Control,\" the goal of this simple game is to chase the people on the screen.\
+    \ What you will find is that each person on the screen will run away from your\
+    \ cursor as you move toward it."
+  - "[PAGE 27]\n\n# 24\n\nThe first step is to create a basic HTML5 page with some\
+    \ CSS to control the color of the page. The following one will do.\n\n```\n<!DOCTYPE\
+    \ HTML> <html> <head> <title>Canvas\nExample - Crowd Control</title>\n<style type=\"\
+    text/css\">\nbody{\n    margin: 0;\n    padding: 0;\n    overflow: hidden;\n \
+    \   background: yellow;\n    color: white;\n    text-align: right;\n    font-family:\
+    \ Arial, Helvetica, sans-serif;\n    font-size: 0.8em;\n}\n</style>\n</head>\n\
+    <body>\n</body>\n</html>\n```\n\nInbetween the BODY elements you will need to\
+    \ add the following CANVAS element. Notice that the CANVAS element has the ID\
+    \ \"Crowd Control.\" You will link to this ID using JavaScript.\n\n```\n<canvas\
+    \ id=\"crowdControl\"></canvas>\n```\n\nFollowing this will start your JavaScript.\
+    \ The first action is to define the contextual structure of the CANVAS element.\n\
+    \n```\n<script type=\"text/javascript\">\nvar context = document.getElementById('crowdControl').getContext('2d');\n\
+    var mouseX=0,mouse=0;\n```\n\nThe CrowdControl JavaScript will add copies of a\
+    \ PNG file onto the screen. You will want to create a new object variable that\
+    \ can point to the PNG file.\n\n```\nvar imagine=new Image();\nimagine.src=\"\
+    people.png\";\n```\n\nNow you can start building your functions. The function\
+    \ will declare where on the crowd can move.\n\n```\nfunction crowd() {\nthis.x=Math.random()*context.canvas.width;\n\
+    this.y=Math.random()*context.canvas.height;\nthis.vx=0;\nthis.vy=0;\nthis.move=crowd_move;\n\
+    ```"
+  - "[PAGE 28]\n\n```\nthis.draw=crowd_draw;\n}\nfunction crowd_move() {\n  this.x+=this.vx;\n\
+    \  this.y+=this.vy;\n  this.vx*=0.9;\n  this.vy*=0.9;\n  this.vx+=(Math.random()-0.5)*0.1;\n\
+    \  this.vy+=(Math.random()-0.5)*0.1;\n  this.x=(this.x*500+context.canvas.width/2)/501;\n\
+    \  this.y=(this.y*500+context.canvas.height/2)/501;\n}\n```\n\nNext, let's add\
+    \ the JavaScript that will actually draw the crowd.\n\n```\nfunction crowd_draw()\
+    \ {\n  context.save();\n  context.beginPath();\n  context.translate(this.x,this.y);\n\
+    \  context.rotate(angle(this.vx,this.vy));\n  context.drawImage(image,-10,-5);\n\
+    \  context.fillStyle = 'white';\n  context.fill();\n  context.restore();\n}\n\
+    ```\n\nThe next two functions allow your mouse to push the people around the screen\
+    \ and allow you to interact with them.\n\n```\nvar people=new Array();\nfunction\
+    \ begin() {\n  for (var i=0;i<100;i++) {\n    var temp=new crowd();\n    people.push(temp);\n\
+    \  }\n}\nfunction work() {\n  var x;\n  context.save();\n  context.beginPath();\n\
+    \  context.fillStyle = 'yellow';\n  context.strokeStyle = 'white';\n  context.rect(0,0,context.canvas.width,context.canvas.height);\n\
+    \  context.fill();\n  context.stroke();\n  context.restore();\n  for(x in people)\
+    \ {\n    var y;\n```"
+  - "[PAGE 29]\n\n# 26\n\n```\nfor(y in people) {\n  if(y!=x) {\n    var dx=people[y].x-people[x].x;\n\
+    \    var dy=people[y].y-people[x].y;\n    var d=Math.sqrt(dx*dx+dy*dy);\n    if(cd<40)\
+    \ {\n      people[x].vx+=20*(-dx/ (d*d));\n      people[x].vy+=20*(-dy/ (d*d));\n\
+    \    } else if (cd<100) {\n      people[x].vx+=0.07*(dx/d);\n      people[x].vy+=0.07*(dy/d);\n\
+    \    }\n  }\n}\nvar dx=mouse-people[x].x;\nvar dy=mouse-people[x].y;\nvar d=Math.sqrt(dx*dx+dy*dy);\n\
+    if(cd<100) {\n  people[x].vx+=1*(-dx/ (d));\n  people[x].vy+=1*(-dy/ (d));\n}\n\
+    people[x].move();\npeople[x].draw();\n```\n\nThe final functions set the size\
+    \ of the CANVAS element on the screen.\n\n```\nfunction mmouse(event) {\n  mouse-event.pageX;\n\
+    \  mouse-event.pageY;\n}\ncontext.canvas.onmousemove = mmouse;\nfunction resize_context()\
+    \ {\n  context.canvas.width=window.innerWidth;\n  context.canvas.height=window.innerHeight;\n\
+    }\nwindow.onresize=resize_context;\nonLoad=resize_context();\nonLoad=begin();\n\
+    setInterval(work,10);\n</script>\n```\n\nThe final result is shown in Figure 5.12.\n\
+    JavaScript is central to adding interaction to the CANVAS element. This is where\
+    \ the root power of JavaScript can be found—JavaScript allows you to interact\
+    \ with any HTML5"
+- md: "\nelement on the screen, whether it is HTML, SVG, CSS, or CANVAS. This gives\
+    \ you great control.\n\n## Taking JavaScript to the Next Level with Ajax\n\nThe\
+    \ good news is that there is a lot of tools that break down the barrier to complex\
+    \ development with JavaScript. You can download JavaScript libraries of code that\
+    \ come prebuilt with functionality such as animation, form validation controls,\
+    \ and data manipulation. These libraries are called Ajax libraries. Originally,\
+    \ called AJAX (Asynchronous JavaScript and XML), the term has now been changed\
+    \ to Ajax (note the lowercase letters) to allow support for a broader range of\
+    \ technologies beyond just XML.\n\n## Using Ajax in Your Work\n\nAt the core,\
+    \ Ajax is a set of well-written JavaScript programs that you can interact with.\
+    \ Each Ajax library has slightly different ways in which you can use it. The following\
+    \ example demonstrates how you can use the most popular Ajax library, jQuery,\
+    \ in your web site.\n\nThere are hundreds of different Ajax libraries, but jQuery\
+    \ is the one that is stepping above the crowd. The library itself is robust and\
+    \ will work with all popular web browsers, including Microsoft's Internet Explorer.\
+    \ The popularity of jQuery is so great that Microsoft is now supporting jQuery\
+    \ as their default Ajax tool for ASP.NET. This means ASP.NET solution can integrate\
+    \ with the jQuery Ajax library seamlessly.\n\nTo get jQuery you need to go to\
+    \ www.jquery.com, as shown in Figure 5.13. You either download the latest jQuery\
+    \ JavaScript library or simply connect it over the Internet. The following example\
+    \ will connect jQuery from the Web. Start by creating an empty web page, as follows.\n\
+    \n```html\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n</head>\n<body>\n</body>\n\
+    </html>\n```\n\nIn the BODY section of the page, let's add some content.\n\n```html\n\
+    <section id=\"container\">\n  <article class=\"article\">\n    <h1>A Christmas\
+    \ Carol</h1>\n    <p class=\"thebody\">Marley was dead: to begin with. There is\
+    \ no doubt whatever about that. The register of his burial was signed by the clergyman,\
+    \ the clerk, the undertaker, and the chief mourner. Scrooge signed it. And Scrooge's\
+    \ name was good upon 'Change', for anything he chose to put his hand to.</p>\n\
+    \    <ul class=\"actions\">\n    </ul>\n  </article>\n  <article class=\"article\"\
+    >\n    <h1>David Copperfield</h1>\n    <p class=\"thebody\">Whether I shall turn\
+    \ out to be the hero of my own life, or whether that station will be held by anybody\
+    \ else, these pages must show. I begin my life with the beginning of life, I record\
+    \ that I was born (as I have been informed and believe) on a Friday, at twelve\
+    \ o'clock at night. It was remarked that the clock began to strike, and I began\
+    \ to cry, simultaneously.</p>\n    <ul class=\"actions\">\n    </ul>\n  </article>\n\
+    </section>\n```\n\nWhen you preview this page you will see that there is no formatting\
+    \ or interaction. What you have is a list of Charles Dickens followed by the opening\
+    \ paragraph. This amount of content will get difficult to read if you have lots\
+    \ of entries to skim through. Using a little jQuery you can insert a show/hide\
+    \ action to show and hide the paragraph (see [Figure 5.14]).\n\nIn the HEAD section\
+    \ of the page, insert the following code to call and use the jQuery library.\n\
+    \n```html\n<script src=\"http://jquery.com/src/jquery-latest.js\"></script>\n\
+    ```\n\nThe next JavaScript interacts with the jQuery library to create simple\
+    \ interaction.\n\n### A Christmas Carol\n\nMarley was dead: to begin with. There\
+    \ is no doubt whatever about that. The register of his burial was signed by the\
+    \ clergyman, the clerk, the undertaker, and the chief mourner signed it. And Scrooge's\
+    \ name was good upon 'Change', for anything he chose to put his hand to.\n\n```\n\
+    Read/Hide\n```\n\n### David Copperfield\n\n```\nRead/Hide\n```\n\n### A Tale of\
+    \ Two Cities\n\n```\nRead/Hide\n```\n\n### Bleak House\n\nLONDON. Miles Term lately\
+    \ over, and the Lord Chancellor sitting in Lincoln's Inn Hall. Implacable November\
+    \ weather. As much mud in the streets as it would be wonderful to meet a Megalosaurus,\
+    \ forty feet from the face of the earth, and it would not be as big as grown feet\
+    \ long or so, waddling like an elephantine lizard off Holborn Hill. Lowering down\
+    \ from chimney-pots, making a soft black drizzle, with flakes of soot in it as\
+    \ big as grown snow snowflakes—gone into moving, one might imagine, for the death\
+    \ of the sun....\n\n```\nRead/Hide\n```\n\nFigure 5.14 Query allows you to add\
+    \ effects, such as a show and hide effect, with very few lines of code.\n\n```javascript\n\
+    <script> //![CDATA[\n// When the page is ready\n$(document).ready(function() {\n\
+    \  $(\".article .tbody\n```\n\nFigure 5.15 Adobe's Spry framework is a mature\
+    \ AJAX library built into Adobe's Dreamweaver web site management.\n\nAdding Ajax,\
+    \ interaction controls for validation, animation, and data control are very easy\
+    \ for nondevelopers.\n\nYou can download the library at www.labs.adobe.com/technologies/spry/\n\
+    \n## YUI: Yahoo Interface Library\n\nYahoo is well known for their Web services.\
+    \ They're less well known for their work on Web standards and functionality. The\
+    \ YUI library is Yahoo's set of Ajax tools you can use in your web site. You can\
+    \ find more information on the YUI tools at the Yahoo Developer Network at http://developer.yahoo.com/\
+    \ (see Figure 5.16).\n\n## Controlling Forms with Wforms\n\nAt some point you\
+    \ will want to control how users use forms in your web site. Form control covers\
+    \ elements such as how users enter data into the forms, how form fields are controlled\
+    \ by other elements on the page, and how hide/show form elements depending on\
+    \ how your users enter data. These functions are all handled easily by Wforms\
+    \ (http://www.formassembly.com/Wforms/). The library is small and well documented.\n\
+    \nFinally, insert a little CSS to make the page look pleasing, as follows.\n\n\
+    ```css\n<style type=\"text/css\">\nsection {\n  width: 500px;\n}\nul {\n  list-style-type:\
+    \ none;\n  right: 0px;\n  font-family: \"Franklin Gothic Medium\", \"Arial Narrow\"\
+    , Arial, sans-serif;\n  font-size: xx-small;\n  text-decoration: none;\n}\nh1\
+    \ {\n  font-family: \"Cambria, Cochin, Georgia, Times, \"Times Roman\", serif;\n\
+    \  font-size: x-large;\n  font-weight: bolder;\n}\np {\n  font-family: \"Franklin\
+    \ Gothic Medium\", \"Arial Narrow\", Arial, sans-serif;\n  font-size: small;\n\
+    }\n</style>\n```\n\nYou can now test your page. You will then select the \"show/hide\"\
+    \ text to make the opening paragraph appear. This makes skimming through the content\
+    \ easier.\n\nThere are many Ajax libraries. While jQuery is the most popular,\
+    \ there are many that fit specific needs.\n"
+  mdcn: "\n屏幕上的元素，无论是 HTML、SVG、CSS 还是 CANVAS。这带给了你极大的控制力。\n\n## 使用 Ajax 将 JavaScript\
+    \ 提升到新高度\n\n好消息是，有很多工具可以打破 JavaScript 复杂开发的屏障。你可以下载预先构建好功能的 JavaScript 代码库，这些库包含了如动画、表单验证控制和数据操作等功能。这些库被称为\
+    \ Ajax 库。它最初被称为 AJAX（异步 JavaScript 和 XML），现在该术语已改为 Ajax（注意小写字母），以便支持除 XML 之外更广泛的技术。\n\
+    \n## 在工作中使用 Ajax\n\n从核心来说，Ajax 是一组你可以与之交互的编写良好的 JavaScript 程序。每个 Ajax 库都有略有不同的使用方法。以下示例演示了如何在你的网站中使用最流行的\
+    \ Ajax 库——jQuery。\n\n有数百种不同的 Ajax 库，但 jQuery 是脱颖而出的。该库本身非常健壮，能够与所有流行的网页浏览器配合，包括微软的\
+    \ Internet Explorer。jQuery 的流行程度之高，使得微软现在将 jQuery 作为其 ASP.NET 的默认 Ajax 工具。这意味着\
+    \ ASP.NET 解决方案可以无缝集成 jQuery Ajax 库。\n\n要获取 jQuery，你需要访问 www.jquery.com，如图 5.13\
+    \ 所示。你可以下载最新的 jQuery JavaScript 库，或者简单地通过互联网连接它。以下示例将从 Web 端连接 jQuery。首先如下所示创建一个空白网页。\n\
+    \n```html\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n</head>\n<body>\n</body>\n\
+    </html>\n```\n\n在页面的 BODY 部分中，让我们添加一些内容。\n\n```html\n<section id=\"container\"\
+    >\n  <article class=\"article\">\n    <h1>《圣诞颂歌》</h1>\n    <p class=\"thebody\"\
+    >首先，马尔利已经死了。关于这一点，没有任何疑义。他的埋葬登记簿由牧师、书记员、殡葬承办人和首席哀悼者签署了。斯克鲁奇签了名。而斯克鲁奇的名字在“兑换”上很灵通，无论他选择手手任何事情都能行。</p>\n\
+    \    <ul class=\"actions\">\n    </ul>\n  </article>\n  <article class=\"article\"\
+    >\n    <h1>《查理·铜伯环》</h1>\n    <p class=\"thebody\">我究竟会成为自己生活的英雄，还是这个位置会被别人占据，这必须由这些页来说明。我从生命的开始开始我的生命，我记录我出生（正如我所知和相信的）在周五午夜十二点。有人注意到，钟声开始敲响，我也同时哭了起来。</p>\n\
+    \    <ul class=\"actions\">\n    </ul>\n  </article>\n</section>\n```\n\n当你预览此页面时，你会发现没有任何格式化或交互。你所看到的是一个查尔斯·狄更斯的列表，紧接着是开头段落。如果你有大量的条目需要快速浏览，这些内容将变得难以阅读。使用一点\
+    \ jQuery，你可以插入一个显示/隐藏动作来显示和隐藏段落（参见[图 5.14]）。\n\n在页面的 HEAD 部分，插入以下代码来调用并使用 jQuery\
+    \ 库。\n\n```html\n<script src=\"http://jquery.com/src/jquery-latest.js\"></script>\n\
+    ```\n\n接下来的 JavaScript 与 jQuery 库交互以创建简单的交互。\n\n### 《圣诞颂歌》\n\n首先，马尔利已经死了。关于这一点，没有任何疑义。他的埋葬登记簿由牧师、书记员、殡葬承办人和首席哀悼者签署了。斯克鲁奇签了名。而斯克鲁奇的名字在“兑换”上很灵通，无论他选择手手任何事情都能行。\n\
+    \n```\n显示/隐藏\n```\n\n### 《查理·铜伯环》\n\n```\n显示/隐藏\n```\n\n### 《双城记》\n\n```\n显示/隐藏\n\
+    ```\n\n### 《荒野时》\n\n伦敦。迈尔斯·特姆最近去世了，大法官正坐在林肯法学院大厅里。冷酷无情的十一月天气。街道上的泥多得简直如果能遇到一只恐龙就太奇妙了，它距离地面四十英尺，而且它可能还没有成年人的脚那么大，像头头象般的蜥蜴一样在霍尔伯恩山上蹒跚。从烟囱口向下落下，下着细细的黑色毛雨，夹杂着像成年雪花一样大的烟粒——人们可以想象，它们正在移动，为了太阳的死亡……\n\
+    \n```\n显示/隐藏\n```\n\n图 5.14 查询允许你用极少数行代码添加效果，例如显示和隐藏效果。\n\n```javascript\n<script>\
+    \ //![CDATA[\n// 当页面准备就绪时\n$(document).ready(function() {\n  $(\".article .tbody\n\
+    ```\n\n图 5.15 Adobe 的 Spry 框架是一个内置在 Adobe Dreamweaver 网站管理中的成熟 AJAX 库。\n\n对于非开发人员来说，添加\
+    \ Ajax、验证交互控制、动画和数据控制非常容易。\n\n你可以在 www.labs.adobe.com/technologies/spry 下载该库。\n\
+    \n## YUI: Yahoo 界面库\n\nYahoo 以其 Web 服务而闻名。它们在 Web 标准和功能方面的工作较为人知。YUI 库是 Yahoo\
+    \ 提供的一组可以在网站使用的 Ajax 工具。你可以在 Yahoo 开发者网络 http://developer.yahoo.com/ 更多关于 YUI\
+    \ 工具的信息（参见图 5.16）。\n\n## 使用 Wforms 控制表单\n\n在某些时刻，你会想要控制用户如何使用网站中的表单。表单控制涵盖了诸如用户如何向表单输入数据、页面上的其他元素如何控制表单字段，以及根据用户输入数据如何隐藏/显示表单元素。这些功能都可以由\
+    \ Wforms (http://www.formassembly.com/Wforms/) 轻松处理。该库体积很小且文档齐全。\n\n最后，插入一点 CSS\
+    \ 让页面看起来更美观，如下：\n\n```css\n<style type=\"text/css\">\nsection {\n  width: 500px;\n\
+    }\nul {\n  list-style-type: none;\n  right: 0px;\n  font-family: \"Franklin Gothic\
+    \ Medium\", \"Arial Narrow\", Arial, sans-serif;\n  font-size: xx-small;\n  text-decoration:\
+    \ none;\n}\nh1 {\n  font-family: \"Cambria, Cochin, Georgia, Times, \"Times Roman\"\
+    , serif;\n  font-size: x-large;\n  font-weight: bolder;\n}\np {\n  font-family:\
+    \ \"Franklin Gothic Medium\", \"Arial Narrow\", Arial, sans-serif;\n  font-size:\
+    \ small;\n}\n</style>\n```\n\n现在你可以测试你的页面了。你将选择“显示/隐藏”文本让开头段落出现。这使得快速浏览内容变得更容易。\n\
+    \n有很多 Ajax 库。虽然 jQuery 是最流行的，但有很多符合特定需求的库。\n\n"
+  merge: 0
+  raw:
+  - '[PAGE 30]
+
+
+    ![](img/1770128c4f0e28ca70b194a533659495_30_0.png)
+
+
+    element on the screen, whether it is HTML, SVG, CSS, or CANVAS.
+
+    This gives you great control.
+
+
+    # # Taking JavaScript to the Next Level with Ajax
+
+
+    The good news is that there is a lot of tools that break down the barrier to complex
+    development with JavaScript. You can down-load JavaScript libraries of code that
+    come prebuilt with functionality such as animation, form validation controls,
+    and data manipulation. These libraries are called Ajax libraries. Originally,
+    called AJAX (Asynchronous JavaScript and XML) the term has now been changed to
+    Ajax (note the lowercase letters) to allow support for a broader range of technologies
+    beyond just XML.
+
+
+    # # Using Ajax in Your Work
+
+
+    At the core, Ajax is a set of well-written JavaScript programs that you can interact
+    with. Each Ajax library has slightly different ways in which you can use it. The
+    following example demonstrates how you can use the most popular Ajax library,
+    jQuery, in your web site.
+
+
+    There are hundreds of different Ajax libraries, but jQuery is the one that is
+    stepping above the crowd. The library itself is robust and will work with all
+    popular web browsers, including Microsoft''s Internet Explorer. The popularity
+    of jQuery is so great that Microsoft is now supporting jQuery as their default
+    Ajax tool'
+  - '[PAGE 31]
+
+
+    # 28
+
+
+    ![](img/1770128c4f0e28ca70b194a533659495_31_0.png)
+
+
+    Figure 5.13 jQuery can be downloaded at www.jquery.com.
+
+
+    ASP.NET. This means ASP.NET solution can integrate with the jQuery Ajax library
+    seamlessly.
+
+    To get jQuery you need to go to www.jquery.com, as shown in Figure 5.13.
+
+    You either download the latest jQuery JavaScript library or simply connect it
+    over the Internet. The following example will connect jQuery from the Web. Start
+    by creating an empty web page, as follows.
+
+
+    ```
+
+    <DOCTYPE html>
+
+    <html lang="en">
+
+    <head>
+
+    1.1 </head>
+
+    1.2 <body>
+
+    1.3 </body>
+
+    1.4 </html>
+
+    ```'
+  - "[PAGE 32]\n\nIn the BODY section of the page, let's add some content.\n\n```\n\
+    <section id=\"container\">\n  <article class=\"article\">\n    <h1>A Christmas\
+    \ Carol</h1>\n    <p class=\"thebody\">Marley was dead: to begin\\with. There\
+    \ is no doubt whatever about that. The register of his burial was signed by the\
+    \ clergyman,\nThe clerk, the undertaker, and the chief mourner.\nScrooge signed\
+    \ it. And Scrooge's name was good upon\n'Change', for anything he chose to put\
+    \ his hand to.\n</p>\n    <ul class=\"actions\">\n      <ul>\n    </ul>\n  </article>\n\
+    \  <article class=\"article\">\n    <h1>David Copperfield</h1>\n    <p class=\"\
+    thebody\">Whether I shall turn out\nto be the hero of my own life, or whether\
+    \ that\nstation will be held by anybody else, these pages\nmust show. I begin\
+    \ my life with the beginning\nof life, I record that I was born (as I have\nbeen\
+    \ informed and believe) on a Friday, at\ntelve o'clock at night. It was remarked\
+    \ that\nt clock began to strike, and I began to cry,\nsimultaneously.\n</p>\n\
+    \    <ul class=\"actions\">\n      <ul>\n    </ul>\n  </article>\n</section>\n\
+    ```\n\nWhen you preview this page you will see that there is no formatting or\
+    \ interaction. What you have is a list of Charles Dickens followed by the opening\
+    \ paragraph. This amount of content will get difficult to read if you have lots\
+    \ of entries to skim through. Using a little jQuery you can insert a show/hide\
+    \ action to show and hiding the paragraph (see [Figure 5.14](Figure 5.14))\n\n\
+    In the HEAD section of the page, insert the following code to call and use the\
+    \ jQuery library.\n\n```\n<script src=\"http://jquery.com/src/jquery-latest.js\"\
+    ></script>\n```\n\nThe next JavaScript interacts with the jQuery library to create\
+    \ simple interaction."
+  - "[PAGE 33]\n\n# A Christmas Carol\n\nMarley was dead: to begin with. There is\
+    \ no doubt whatever about that. The register of his burial was signed by the clergyman,\
+    \ the clerk, the undertaker, and the chief mourner signed it. And Scrooge's name\
+    \ was good upon 'Change', for anything it he chose to put his hand to.\n\n```\n\
+    Read/Hide\n```\n\n# David Copperfield\n\n```\nRead/Hide\n```\n\n# A Tale of Two\
+    \ Cities\n\n```\nRead/Hide\n```\n\n# Bleak House\n\nLONDON. Michaels Term lately\
+    \ over, and the Lord Chancellor sitting in Lincoln's Inn Hall. Implacable November\
+    \ weather. As much mud in the streets as it would be wonderful to meet a Megalosaurus,\
+    \ forty feet from the face of the earth, and it would not be as big as grown feet\
+    \ long or so, waddling like an elephantine lizard off Holborn Hill. Lowering down\
+    \ from chimney-pots, making a soft black drizzle, with flakes of soot in it as\
+    \ big as grown snow snowflakes—gone into moving, one might imagine, for the death\
+    \ of the sun....\n\n```\nRead/Hide\n```\n\nFigure 5.14 Query allows you to add\
+    \ effects, such as a show and hide effect, with very few lines of code.\n\n```\n\
+    <script> //![CDATA[\n// When the page is ready\n$(document).ready(function() {\n\
+    \  $(\".article .tbody\n```"
+  - '[PAGE 34]
+
+
+    # 32
+
+
+    ![](img/1770128c4f0e28ca70b194a533659495_34_0.png)
+
+
+    Figure 5.15 Adobe''s Spry framework is a mature AJAX library built into Adobe''s
+    Dreamweaver web site management.
+
+
+    Adding Ajax, interaction controls for validation, animation, and data control
+    are very easy for nondevelopers.
+
+
+    You can download the library at www.labs.adobe.com/technologies/spry/
+
+
+    YUI: Yahoo Interface Library
+
+    Yahoo is well known for their Web services. They''re less well known for their
+    work on Web standards and functionality.
+
+    YUI library is Yahoo''s set of Ajax tools you can use in your web site. You can
+    find more information on the YUI tools at the Yahoo Developer Network at http://developer.yahoo.com/
+    (see Figure 5.16).
+
+
+    Controlling Forms with Wforms
+
+    At some point you will want to control how users use forms in your web site. Form
+    control covers elements such as how users enter data into the forms, how form
+    fields are controlled by other elements on the page, and how hide/show form elements
+    depending on how your users enter data. These functions are all handled easily
+    by Wforms (http://www.formassembly.com/Wforms/). The library is small and well
+    documented.'
+  - "[PAGE 35]\n\nFinally, insert a little CSS to make the page look pleasing, as\
+    \ follows.\n\n```\n<style type=\"text/css\">\nsection {\n  width: 500px;\n}\n\
+    ul {\n  list-style-type: none;\n  right: 0px;\n  font-family: \"Franklin Gothic\
+    \ Medium\", \"Arial Narrow\", Arial, sans-serif;\n  font-size: xx-small;\n  text-decoration:\
+    \ none;\n}\nh1 {\n  font-family: \"Cambria, Cochin, Georgia, Times, \"Times Roman\"\
+    , serif;\n  font-size: x-large;\n  font-weight: bolder;\n}\np {\n  font-family:\
+    \ \"Franklin Gothic Medium\", \"Arial Narrow\", Arial, sans-serif;\n  font-size:\
+    \ small;\n}\n</style>\n```\n\nYou can now test your page. You will then select\
+    \ the \"show/hide\" text to make the opening paragraph appear or disappear. This\
+    \ makes skimming through the content easier.\n\nThe jQuery library comes with\
+    \ extensions you can use to expand the web pages. Check out http://plugins.jquery.com/,\
+    \ where you can find the jQuery extensions.\n\n# Popular Ajax Libraries\n\nThere\
+    \ are quite literally hundreds of Ajax libraries. While jQuery is the most popular,\
+    \ there are many that fit specific needs. Below is a list of some really good\
+    \ libraries you can use in your web applications.\n\n# Adobe’s Spry Framework\n\
+    \nAdobe has an Ajax library called Spry. The Spry framework makes this list simply\
+    \ because it is tied directly into Dreamweaver (see Figure 5.15). Dreamweaver\
+    \ is a great web site development tool and now comes with tight integration with\
+    \ the Spry framework."
+  - '[PAGE 36]
+
+
+    # 32
+
+
+    ![](img/1770128c4f0e28ca70b194a533659495_36_0.png)
+
+
+    # ## Ajax for Everyone
+
+
+    Spry is a JavaScript-based framework that enables the rapid development of AJAX-powered
+    web pages. Not a JavaScript guru? No problem. Spry was designed to feel like an
+    extension of HTML and CSS, so with basic web-skills you can create next-generation
+    web experiences by adding the power of Ajax to your projects.
+
+
+    Spry can be used with any server-side technology (ColdFusion, PHP, ASP.Net etc.).
+    By building the front-end of your web application with Spry you enable a more
+    efficient workflow by keeping UI separated from back-end application logic.
+
+
+    # ### Spry 1.6.1 - Ensuring Adobe AIR
+
+
+    With Spry 1.6.1, the latest release of Spry, you''ll get features, samples and
+    documentation that enable you to add Ajax to your pages without having to sacrifice
+    adherence to web standards or best-practices. We have made changes to the framework
+    to ensure that work well in the Adobe AIR space.
+
+
+    *Figure 5.15 Adobe Spry''s framework is a mature AJAX library that is built into
+    Adobe''s Dreamweaver web site*
+
+
+    Adding Ajax, interaction controls such as validation, animation, and data control
+    are very easy for nondevelopers. You can download the library at www.labs.adobe.com/technologies/spry/
+
+
+    # ## YUI: Yahoo Interface Library
+
+
+    Yahoo is well known for its Web services. They''re less well known for their work
+    on Web standards and functionality. The YUI library is Yahoo''s set of Ajax tools
+    you can use in your web site. You can find more information on the YUI tools at
+    the Yahoo Developer Network at http://developer.yahoo.com/ (see Figure 5.16).
+
+
+    # ## Controlling Forms with Wforms
+
+
+    At some point you will want to control how users use forms in your web site. Form
+    control controls elements as how users enter data into the forms, how fields are
+    controlled by other elements on the page, and how to hide/show form elements depending
+    on how your users enter data. These functions are all handled easily by Wforms
+    (http://www.formassembly.com/wForms/). The library is small and well documented.'
+- md: '
+
+    # YAHOO! DEVELOPER NETWORK
+
+
+    33
+
+
+    | MY PROJECTS | TOOLS & SERVICES | RESOURCES | YUI ON YDN | YUI HOME APPS | YUI
+    3.0 |
+
+    | :--- | :--- | :--- | :--- | :--- | :--- |
+
+    | New and Old | CONNECTED TV WORK | YUI BETA IN YAP | | | |
+
+
+    # Yahoo! Connected TV Platform Is Now Open
+
+
+    POSTED JANUARY 2007
+
+
+    Take your web content to television! Developing new interactive experiences for
+    millions of TV owners in North America, Europe, and Asia via Yahoo Connected TV.
+    The Yahoo Connected TV Widget platform is available for a variety of consumer
+    electronic devices, including flat panels from Samsung, Sony, LG Electronics,
+    and VIZIO, with others coming soon.
+
+
+    Are you a Javascript developer working in the confines of today? Visit connectedtv.yahoo.com/developer
+    to download the WDK (widget development kit).
+
+
+    Learn more | Download the WDK | ConnectedTV forum
+
+
+    ![](img/1770128c4f0e28ca70b194a533659495_37_0.png)
+
+
+    | GET THE MOST OF YDN | 1 EXPLORE YUI APIs and resources. | 2 BUILD Get an API
+    Key and create your app. | 3 CONNECT with other developers in our forums. |
+
+    | :--- | :--- | :--- | :--- |
+
+
+    Figure 5.16 Yahoo''s Developer Network.
+
+
+    # Animation Control with $fx()
+
+
+    Need a way to add animation in your web page? The $fx() library (http://fx.inetcat.com/)
+    allows you to add animation in your site.
+
+
+    # Visualizing Data with JCharts
+
+
+    Data visualization is a big thing. The days of just presenting data in rows and
+    columns is dead. We need to have ways in which the data we are looking mean something.
+    The Ajax library JCharts (http://www.jcharts.com/) will give you ways in which
+    you
+
+
+    ![](img/1770128c4f0e28ca70b194a533659495_37_1.png)
+
+
+    can transform HTML tables into line charts, bar charts, and pie charts. They look
+    fantastic (see Figure 5.17).
+
+
+    At the end of the day, Ajax libraries are a great way to extend what you are doing
+    with your web page. Coupling CSS, SVG, HTML, and all of the HTML5 family of tools
+    together, you can create compelling web applications.
+
+
+    # What You Have Learned
+
+
+    Throughout this chapter you have learned how JavaScript, the programming language
+    within HTML, is evolving to allow you to develop large, complex applications.
+    Sites such as Google''s Gmail are excellent examples of Web-based applications
+    that run with the same level of efficiency as desktop equivalents. The next step
+    for you to take is to download an Ajax library, such as jQuery, and begin to create
+    applications on the Web.
+
+
+    # focal press books
+
+
+    # VISUALIZING THE WEB WITH HTML 5
+
+
+    Download these other great articles in the HTML5: Visualizing the Web series
+
+
+    # HTML5 Rich Media Foundation
+
+
+    # Picture CSS3
+
+
+    Learn about the new ways in which video and audio can be easily embedded into
+    HTML5 Web pages. Discover how you can create new Web media content and how JavaScript,
+    CSS, and SVG can be integrated to create a compelling, rich media foundation for
+    your work.
+
+
+    See how you can use Cascading Style Sheets, or CSS3, to quickly and easily increase
+    your control over visual Web page design.
+
+
+    # The HTML5 JavaScript Model
+
+
+    JavaScript is the glue that enables HTML to become interactive. Learn how you
+    can leverage JavaScript Libraries to quickly build beautiful Web applications.
+
+
+    # Rendering HTML5 Illustration
+
+
+    Scalable Vector Graphics (SVG) and CANVAS are two new tools introduced in HTML5
+    that you can use to add illustration and interactive animation to your Web pages.
+    Understand why there are two different formats, how you can use them, and where
+    they can be used today.
+
+
+    # HTML5 Tag Structure
+
+
+    Take a glance at the new HTML5 elements: how you can take advantage of them and
+    what you need to look out for your new Web sites.
+
+
+    And look for the HTML5: Visualizing the Web book coming in 2010. The book will
+    feature information and resources that expand on the 5-part series.
+
+
+    ![](img/1770128c4f0e28ca70b194a533659495_39_0.png)
+
+
+    Visit focalpress.com for video tutorials, sample chapters, podcasts and exclusive
+    competitions and discounts. focalpress.com
+
+    '
+  mdcn: '
+
+
+    # YAHOO! 开发者网络
+
+
+    33
+
+
+    | 我的项目 | 工具与服务 | 资源 | YUI 在 YDN 上 | YUI 首页应用 | YUI 3.0 |
+
+    | :--- | :--- | :--- | :--- | :--- | :--- |
+
+    | 新与旧 | 连接电视工作 | YAP 中的 YUI Beta 版 | | | |
+
+
+    # Yahoo! 连接电视平台现已开放
+
+
+    发布于2007年1月
+
+
+    将你的网页内容带到电视上！通过 Yahoo Connected TV 为北美、欧洲和亚洲的数百万电视所有者开发新的交互式体验。Yahoo Connected
+    TV Widget 平台适用于多种消费电子设备，包括来自三星、索尼、LG电子和 VIZIO 的平板显示器，其他设备也即将推出。
+
+
+    你是一个局限于今天技术限制而工作的 Javascript 开发者吗？访问 connectedtv.yahoo.com/developer 下载 WDK（小部件开发包）。
+
+
+    了解更多 | 下载 WDK | ConnectedTV 论坛
+
+
+    ![](img/1770128c4f0e28ca70b194a533659495_37_0.png)
+
+
+    | 充分利用 YDN | 1 探索 YUI API 和资源。 | 2 构建 获取 API 密钥并创建你的应用。 | 3 连接 在我们的论坛中与其他开发者建立联系。
+    |
+
+    | :--- | :--- | :--- | :--- |
+
+
+    图 5.16 Yahoo 开发者网络。
+
+
+    # 使用 $fx() 进行动画控制
+
+
+    需要一种在网页中添加动画的方法吗？$fx() 库 (http://fx.inetcat.com/) 允许你在网站中添加动画。
+
+
+    # 使用 JCharts 实现数据视觉化
+
+
+    数据可视化是一项大趋势。仅用行和列呈现数据的时代已经结束了。我们需要一些方法，让我们看到的数据具有意义。Ajax 库 JCharts (http://www.jcharts.com/)
+    将为你提供方法，
+
+
+    ![](img/1770128c4f0e28ca70b194a533659495_37_1.png)
+
+
+    将 HTML 表格转换为折线图、柱状图和饼图。它们看起来极佳（见图 5.17）。
+
+
+    根结底，Ajax 库是扩展你网页功能的绝佳方式。通过将 CSS、SVG、HTML 以及整个 HTML5 族工具结合起来，你可以创建引人入目的 Web 应用程序。
+
+
+    # 你学到的知识
+
+
+    在整个章节中，你学习了作为 HTML 内编程语言的 JavaScript 如何演进，以便你开发大型、复杂的应用程序。像 Google Gmail 这样的网站是
+    Web 应用程序的极佳示例，它们的运行效率与桌面版本相当。你的下一步是下载一个 Ajax 库（例如 jQuery），并开始在 Web 上创建应用程序。
+
+
+    # focal press 书籍
+
+
+    # 使用 HTML 5 实现网页视觉化
+
+
+    下载 HTML5 中的这些其他优秀文章：Visualizing the Web（网页视觉化）系列
+
+
+    # HTML5 富媒体基础
+
+
+    # 图片 CSS3
+
+
+    了解将视频和音频轻松嵌入 HTML5 网页页的新方法。发现你如何如何创建新的 Web 媒体内容，以及如何整合 JavaScript、CSS 和 SVG 来为你的工作创建一个引人入目的富媒体基础。
+
+
+    查看你如何使用层叠样式表（或 CSS3）来快速方便地增强你对视觉化网页设计的控制。
+
+
+    # HTML5 JavaScript 模型
+
+
+    JavaScript 是让 HTML 变得交互的胶水。学习你如何利用 JavaScript 库来快速构建美丽的 Web 应用程序。
+
+
+    # HTML5 渲染插
+
+
+    可缩矢量图形 (SVG) 和 CANVAS 是 HTML5 中引入的两个新工具，你可以用它们为网页添加插图和交互式动画。理解为什么会有两种不同的格式、你如何使用它们以及它们在今天的使用场景。
+
+
+    # HTML5 标签结构
+
+
+    浏览一下新的 HTML5 元素：你可以如何利用它们，以及在构建新网站时需要注意什么。
+
+
+    请关注 2010 年出版的《HTML5: Visualizing the Web》书籍。该书将包含扩展这五部分系列的信息和资源。
+
+
+    ![](img/1770128c4f0e28ca70b194a533659495_39_0.png)
+
+
+    访问 focalpress.com 获取视频教程、示例章节、播客以及专属竞赛和折扣。focalpress.com
+
+
+    '
+  merge: 0
+  raw:
+  - '[PAGE 37]
+
+
+    # YAHOO! DEVELOPER NETWORK
+
+
+    33
+
+
+    | MY PROJECTS | TOOLS & SERVICES | RESOURCES | YUI ON YDN | YUI HOME APPS | YUI
+    3.0 |
+
+
+    | New and Old | CONNECTED TV WORK | YUI BETA IN YAP |
+
+
+    # Yahoo! Connected TV Platform Is Now Open
+
+
+    POSTED JANUARY 2007
+
+    Take your web content to television! Developing new interactive experiences for
+    millions of TV owners in North America, Europe, and Asia via Yahoo Connected TV.
+    The Yahoo Connected TV Widget platform is available for a variety of consumer
+    electronic devices, including flat panels from Samsung, Sony, LG Electronics,
+    and VIZIO, with others coming soon.
+
+
+    Are you a Javascript developer working in the confines of today? Visit connectedtv.yahoo.com/developer
+    to download the WDK (widget development kit).
+
+
+    Learn more | Download the WDK | ConnectedTV forum
+
+
+    ![](img/1770128c4f0e28ca70b194a533659495_37_0.png)
+
+
+    | GET THE MOST OF YDN | 1 EXPLORE YUI APIs and resources. | 2 BUILD Get an API
+    Key and create your app. | 3 CONNECT with other developers in our forums.
+
+
+    Figure 5.16 Yahoo''s Developer Network.
+
+
+    # Animation Control with $fx()
+
+
+    Need a way to add animation in your web page? The $fx() library (http://fx.inetcat.com/)
+    allows you to add animation in your site.
+
+
+    # Visualizing Data with JCharts
+
+
+    Data visualization is a big thing. The days of just presenting data in rows and
+    columns is dead. We need to have ways in which the data we are looking mean something.
+    The Ajax library JCharts (http://www.jcharts.com/) will give you ways in which
+    you
+
+
+    ![](img/1770128c4f0e28ca70b194a533659495_37_1.png)
+
+
+    Figure 5.17 Ajax libraries allow you to convert HTML tables into charts.'
+  - '[PAGE 38]
+
+
+    can transform HTML tables into line charts, bar charts, and pie charts. They look
+    fantastic (see Figure 5.17).
+
+
+    At the end of the day, Ajax libraries are a great way to extend what you are doing
+    with your web page. Coupling CSS, SVG, HTML, and all of the HTML5 family of tools
+    together, you can create compelling web applications.
+
+
+    # What You Have Learned
+
+
+    Throughout this chapter you have learned how JavaScript, the programming language
+    within HTML, is evolving to allow you to develop large, complex applications.
+    Sites such as Google''s Gmail are excellent examples of Web-based applications
+    that run with the same level of efficiency as desktop equivalents. The next step
+    for you to take is to download an Ajax library, such as jQuery, and begin to create
+    applications on the Web.'
+  - '[PAGE 39]
+
+
+    # focal press books
+
+
+    # VISUALIZING THE WEB WITH HTML 5
+
+
+    Download these other great articles in the HTML5: Visualizing the Web series
+
+
+    # HTML5 Rich Media Foundation
+
+
+    # Picture CSS3
+
+
+    Learn about the new ways in which video and audio can be easily embedded into
+    HTML5 Web pages. Discover how you can create new Web media content and how JavaScript,
+    CSS, and SVG can be integrated to create a compelling, rich media foundation for
+    your work.
+
+
+    See how you can use Cascading Style Sheets, or CSS3, to quickly and easily increase
+    your control over visual Web page design.
+
+
+    # The HTML5 JavaScript Model
+
+
+    JavaScript is the glue that enables HTML to become interactive. Learn how you
+    can leverage JavaScript Libraries to quickly build beautiful Web applications.
+
+
+    # Rendering HTML5 Illustration
+
+
+    Scalable Vector Graphics (SVG) and CANVAS are two new tools introduced in HTML5
+    that you can use to add illustration and interactive animation to your Web pages.
+    Understand why there are two different formats, how you can use them, and where
+    they can be used today.
+
+
+    # HTML5 Tag Structure
+
+
+    Take a glance at the new HTML5 elements: how you can take advantage of them and
+    what you need to look out for your new Web sites.
+
+
+    And look for the HTML5: Visualizing the Web book coming in 2010. The book will
+    feature information and resources that expand on the 5-part series.
+
+
+    ![](img/1770128c4f0e28ca70b194a533659495_39_0.png)
+
+
+    Visit focalpress.com for video tutorials, sample chapters, podcasts and exclusive
+    competitions and discounts. focalpress.com'
