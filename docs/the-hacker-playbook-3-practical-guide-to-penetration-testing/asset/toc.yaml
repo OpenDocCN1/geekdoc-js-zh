@@ -1,0 +1,402 @@
+- - '#'
+  - 黑客攻略书 3：渗透测试实用指南
+- - '#'
+  - 献辞
+- - '#'
+  - 序言
+- - '##'
+  - 引言
+- - '##'
+  - 渗透测试团队 vs 红队
+- - '#'
+  - 设置你的攻势行动
+- - '##'
+  - 设置你的外部服务器
+- - '##'
+  - 职业工具
+- - '##'
+  - Metasploit 框架
+- - '##'
+  - 混淆负载 (Obfuscating Payloads)
+- - '##'
+  - Cobalt Strike
+- - '##'
+  - Cobalt Strike 基础设施
+- - '##'
+  - 控制服务器
+- - '##'
+  - Cobalt Strike Aggressor 脚本
+- - '##'
+  - PowerShell Empire
+- - '#'
+  - Obfuscated
+- - '##'
+  - dnscat2
+- - '##'
+  - 使用 GoDaddy 设置权威 DNS 服务器
+- - '##'
+  - 名称服务器
+- - '##'
+  - 编译客户端
+- - '##'
+  - dnscat 连接
+- - '##'
+  - dnscat2 中的隧道
+- - '##'
+  - Pupy Shell
+- - '##'
+  - PoshC2
+- - '##'
+  - Merlin
+- - '##'
+  - Nishang
+- - '##'
+  - 结论
+- - '##'
+  - 爆发前夕 - 红队侦察
+- - '##'
+  - 监控环境
+- - '##'
+  - 定期 Nmap 差异对比
+- - '##'
+  - 云端扫描 (Cloud Scanning)
+- - '##'
+  - 网络/服务搜索引擎 (Network/Service Search Engines)
+- - '##'
+  - Shodan
+- - '###'
+  - 一些基础查询语句：
+- - '##'
+  - Censys.io
+- - '##'
+  - KNOCK
+- - '##'
+  - 实验室：
+- - '##'
+  - Sublist3r
+- - '##'
+  - SubBrute
+- - '##'
+  - Github
+- - '##'
+  - S3 存储桶枚举
+- - '##'
+  - 存储桶查找器
+- - '##'
+  - 查询 S3 并下载：
+- - '##'
+  - 写入 S3：
+- - '##'
+  - 修改 AWS 存储桶中的访问控制
+- - '##'
+  - 子域名接管
+- - '##'
+  - 电子邮件
+- - '##'
+  - SimplyEmail
+- - '###'
+  - 实验：
+- - '##'
+  - 历史泄露事件
+- - '##'
+  - 额外的开源资源
+- - '##'
+  - 结论
+- - '#'
+  - 3 攻击 - Web 应用程序利用
+- - '##'
+  - Web 攻击简介 - Cyber Space Kittens
+- - '##'
+  - 红队 Web 应用程序攻击
+- - '##'
+  - 客户支持系统实验
+- - '##'
+  - 什么是 Node？
+- - '##'
+  - 设置你的 Web 应用程序攻击机
+- - '##'
+  - 分析 Web 应用程序
+- - '##'
+  - Web 发现
+- - '##'
+  - 跨站脚本 XSS
+- - '##'
+  - 绕淆负载（Obfuscated Payloads）
+- - '##'
+  - 盲目 XSS (Blind XSS)
+- - '##'
+  - 基于 DOM 的 XSS (DOM Based XSS)
+- - '##'
+  - Node.js 中的高级 XSS
+- - '##'
+  - 练习 1 (http://chat:3000/xss)
+- - '##'
+  - 练习 2
+- - '##'
+  - 练习 3
+- - '##'
+  - 练习 4
+- - '##'
+  - 练习 5
+- - '##'
+  - 通过 XSS 获取控制权限
+- - '##'
+  - NoSQL 注入
+- - '###'
+  - NoSQL 特性：
+- - '##'
+  - 攻击客户支持系统的 NoSQL 应用
+- - '###'
+  - 服务器源代码
+- - '###'
+  - 注入 NoSQL Chat
+- - '#'
+  - NodeJS 中的反序列化
+- - '##'
+  - 创建 Payload
+- - '##'
+  - 请求
+- - '##'
+  - 响应
+- - '##'
+  - 寻找执行函数
+- - '##'
+  - 代码执行：
+- - '##'
+  - JavaScript 与远程代码执行
+- - '##'
+  - 通过上传攻击受漏洞影响的聊天应用程序
+- - '##'
+  - RCE 上传攻击：
+- - '##'
+  - 服务端请求伪造 (SSRF)
+- - '##'
+  - 我们在这里为您提供支持。
+- - '##'
+  - 负载集 (Payload Sets)
+- - '##'
+  - 负载选项 [Numbers]
+- - '##'
+  - LethalNodeJS
+- - '##'
+  - 外部实体 (XXE)
+- - '##'
+  - XXE 实验 - 读取文件：
+- - '##'
+  - 高级 XXE - 带外攻击 (Out Of Band)
+- - '##'
+  - 结论
+- - '#'
+  - 4 驱动之旅 - 渗透网络
+- - '##'
+  - 从网络外部寻找凭据
+- - '##'
+  - 为什么要对外部服务进行测试？
+- - '##'
+  - 高级实验
+- - '##'
+  - 在网络中移动
+- - '##'
+  - 环境搭建 - 实验网络
+- - '##'
+  - 使用 CrackMapExec (CME) 扫描网络
+- - '##'
+  - 攻破初始主机后
+- - '##'
+  - 权限提升
+- - '##'
+  - 用于漏洞的注册表权限
+- - '##'
+  - 从内存中提取明文凭据
+- - '#'
+  - Empire (agents) > interact DH0MT2KW
+- - '##'
+  - 从 Windows 凭据存储和浏览器获取密码
+- - '##'
+  - 从 OSX 获取本地凭据和信息
+- - '##'
+  - PowerShell Empire 中的 Windows
+- - '##'
+  - 在 Windows 域环境中“离地攻击”（Living Off the Land）
+- - '##'
+  - 服务主体（Service Principals）
+- - '##'
+  - 查询 Active Directory
+- - '##'
+  - 获取关于 AD 用户的详细信息
+- - '##'
+  - 有哪些可用的态感知模块？
+- - '##'
+  - '模块: situational_awareness/network/powerview/get_user'
+- - '##'
+  - '模块: situational_awareness/network/powerview/get_group_member'
+- - '##'
+  - '模块: situational_awareness/network/powerview/get_computer'
+- - '##'
+  - Bloodhound/Sharp
+- - '###'
+  - 启动 Bloodhound
+- - '##'
+  - 高级 ACL/ACE Bloodhound
+- - '##'
+  - 在远程系统上执行 lateral_movement/invoke_wmi
+- - '##'
+  - 使用 DCOM 进行横移动
+- - '##'
+  - 哈希传递攻击 (Pass-the-Hash)
+- - '##'
+  - 从服务账户获取凭据
+- - '##'
+  - 倾储域控制器
+- - '###'
+  - 审核卷影复制技术
+- - '###'
+  - NinjaCopy
+- - '###'
+  - DCSync
+- - '##'
+  - Linux 中的跳转 (Pivoting)
+- - '##'
+  - 权限提升 (Privilege Escalation)
+- - '#'
+  - 本地 Linux 节点枚举与权限提升脚本
+- - '#'
+  - '系统信息:'
+- - '##'
+  - 横向移动实验室 (Lateral Movement)
+- - '###'
+  - 设置虚拟环境
+- - '##'
+  - 攻击 CSK 安全网络
+- - '##'
+  - 欢迎！
+- - '##'
+  - '[THP Kali Machine]'
+- - '##'
+  - 通过 dnscat 进行权限提升：
+- - '##'
+  - 结论
+- - '#'
+  - 5 屏幕 - 社会工程学
+- - '##'
+  - 构建你的社会工程 (SE) 战
+- - '##'
+  - 双域名 (Doppel Domains)
+- - '##'
+  - 如何克隆页面
+- - '###'
+  - 设置 SET
+- - '##'
+  - 带有 2FA 的凭据
+- - '##'
+  - 钓鱼攻击
+- - '##'
+  - Microsoft Word/Excel 宏文件
+- - '##'
+  - 非 Office 文件 - DDE
+- - '#'
+  - 隐藏加密负载
+- - '##'
+  - 通过社会工程利用内部 Jenkins
+- - '##'
+  - ./JenkinsExploit.py
+- - '##'
+  - 结论
+- - '#'
+  - 6 侧翼踢球 - 物理攻击
+- - '##'
+  - 读卡器克隆器
+- - '##'
+  - 绕过访问点的物理工具
+- - '##'
+  - LAN Turtle (lanturtle.com)
+- - '##'
+  - 设置 VPS OpenVPN AS：
+- - '##'
+  - 设置 OpenVPN AS 服务器：
+- - '##'
+  - 下载 OpenVPN 配置文件：
+- - '##'
+  - 设置 LAN Turtle 和初始配置：
+- - '##'
+  - Bash Bunny
+- - '##'
+  - 破解 Cyber Space Kittens
+- - '##'
+  - 使用 Kali 设置 Bash Bunny
+- - '##'
+  - 登录 Bash Bunny
+- - '##'
+  - WiFi
+- - '##'
+  - 结论
+- - '#'
+  - 7 分卫手接假跑 - 规避杀毒和网络检测
+- - '##'
+  - 为红队行动编写代码
+- - '###'
+  - 构建键盘记录器的基础
+- - '###'
+  - 设置你的环境
+- - '###'
+  - 从源码编译
+- - '##'
+  - 示例框架
+- - '#'
+  - 混淆
+- - '##'
+  - 可执行文件信息
+- - '##'
+  - 实验 (Lab)：
+- - '##'
+  - 自定义 THP 加器 (Custom Droppers)
+- - '##'
+  - Shellcode 与 DLL
+- - '##'
+  - 运行服务器
+- - '##'
+  - 客户端
+- - '##'
+  - 配置客户端和服务器
+- - '##'
+  - 添加新处理器
+- - '##'
+  - 进阶练习
+- - '##'
+  - 重新编译 Metasploit/Meterpreter 以绕过 AV 和网络检测
+- - '##'
+  - 实验：
+- - '###'
+  - 如何构建 Metasploit/Meterpreter
+- - '#'
+  - SharpShooter
+- - '##'
+  - 应用白名单 (Application Whitelisting)
+- - '##'
+  - 代码洞 (Code Caves)
+- - '##'
+  - PowerShell 混淆
+- - '##'
+  - 没有 PowerShell 的：
+- - '##'
+  - NoPowerShell (NPS)
+- - '##'
+  - SharpPick
+- - '##'
+  - HideMyPS
+- - '##'
+  - 自动化 Empire
+- - '##'
+  - 自动化 Cobalt Strike
+- - '##'
+  - 自动化的未来
+- - '#'
+  - 密码破解
+- - '##'
+  - 实验室
+- - '##'
+  - 喜欢的列表：
+- - '##'
+  - 破解一切 - 尽可能快速地破解密码
+- - '##'
+  - 破解 CyberKittens NTLM 哈希：
