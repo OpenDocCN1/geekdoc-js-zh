@@ -1369,6 +1369,7 @@
 +   [现代 JavaScript 入门指南](docs/the-modern-javascript-tutorial-23-0911-crawled/README.md)
 +   [现代 Web：使用 HTML5、CSS3 和 JavaScript 进行多设备 Web 开发](docs/the-modern-web-multi-device-web-development-with-html5-css3-/README.md)
 +   [代码本质：使用 JavaScript 模拟自然系统](docs/the-nature-of-code-simulating-natural-systems-with-javascrip/README.md)
++   [Node.js 入门指南：全面的 node.js 教程](docs/the-node-beginner-book-a-comprehensive-nodejs-tutorial/README.md)
 +   [Javascript 的力量 (编程的力量)](docs/the-power-of-javascript-the-power-of-coding/README.md)
 +   [GraphQL 之路：在 JavaScript、React.Js 和 Node.Js 中精通实用 GraphQL 的进阶](docs/the-road-to-graphql-your-journey-to-master-pragmatic-graphql/README.md)
 +   [React 进阶：掌握简洁实用的 React.js 之路](docs/the-road-to-react-your-journey-to-master-plain-yet-pragmatic/README.md)
