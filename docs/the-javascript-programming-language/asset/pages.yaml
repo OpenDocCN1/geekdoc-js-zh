@@ -1,0 +1,4760 @@
+- img_proc: true
+  md: '# Ray Toal • John David N. Dionisio
+
+
+    # the JAVASCRIPT Programming Language
+
+
+    ![](img/8b2f777e78c0b5f77130ace12a52e3b1_0_0.png)'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: '# # Ray Toal • John David N. Dionisio
+
+    Loyola Marymount University
+
+
+    # # JAVASCRIPT
+
+    Programming Language
+
+
+    ![](img/8b2f777e78c0b5f77130ace12a52e3b1_2_0.png)
+
+
+    JONES AND BARTLETT PUBLISHERS
+
+    Sudbury, Massachusetts
+
+    BOSTON TORONTO LONDON SINGAPORE'
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: '# World Headquarters
+
+
+    Jones and Bartlett Publishers
+
+    40 Tall Pine Drive
+
+    Sudbury, MA 01776
+
+    978-443-5000
+
+    info@jpubcom.com
+
+    www.jpubcom.com
+
+
+    Jones and Bartlett Publishers
+
+    Canada
+
+    6339 Ormindale Way
+
+    Mississauga, Ontario L5V 2J2
+
+    Canada
+
+
+    Jones and Bartlett Publishers
+
+    International
+
+    Barb House, Barb Mews
+
+    London W6 7TPA
+
+    United Kingdom
+
+
+    Jones and Bartlett''s books and products are available through most bookstores
+    and online sellers. To contact Jones and Bartlett Publishers directly, call 800-832-0034,
+    fax 978-443-8000, or visit our website www.jpubcom.com.
+
+
+    Substantial discounts on bulk quantities of Jones and Bartlett''s publications
+    are available to corporations, professional associations, and other qualified
+    organizations. For details and discount information, contact the special sales
+    department at Jones and Bartlett via the above contact information or send an
+    email to specialsales@jpubcom.com.
+
+
+    © 2010 by Jones and Bartlett Publishers, LLC all rights reserved. No part of the
+    material protected by this copyright may be reproduced or utilized in any form,
+    electronic or mechanical, including photocopying, recording, or by any information
+    storage and retrieval system, without written permission from the copyright owner.
+
+
+    # Production Credits
+
+
+    +   Acquisitions Editor: Timothy Anderson
+
+    Editorial Assistant: Melissa Potter
+
+    Production Director: Amy Rose
+
+    Production Assistant: Ashlee Hazeline
+
+    Composition: Northeast Compositors, Inc.
+
+    Cover Design: Scott Moden
+
+    Cover Image and Title Page: © Noreebo/ShutterStock, Inc.
+
+    Printing and Binding: Malloy, Inc.
+
+    Cover Printing: Malloy, Inc.
+
+
+    # Library of Congress Cataloging-in-Publication Data
+
+
+    Toal, Ray.
+
+    The JavaScript programming language / Ray Toal, John D. Nino.isio.
+
+    ISBN-13: 978-0-7637-6658-0 (pbk).
+
+    ISBN-10: 0-7637-6658-5 (ibid).
+
+    1. JavaScript (Computer program language) I. Dionisio, John D., 1970– II. Title.
+
+
+    QA76.73.J38T3 2009
+
+    005.2.762—dc22
+
+
+    ![](img/8b2f777e78c0b5f77130ace12a52e3b1_3_0.png)
+
+
+    6048
+
+
+    Printed in the United States of America
+
+    13 12 11 10 09 10 9 8 7 6 5 4 3 2 1'
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: '# Contents
+
+
+    # About This Book
+
+
+    vii
+
+
+    +   1 Introduction .................................................................................
+    . . . . . . 1
+
+    1.1 Why JavaScript? .................................................................................
+    . . . . . . . . . . . 1
+
+    1.2 Writing and Running JavaScript .................................................................................
+    . . . . . 2
+
+    1.2.1 JavaScript URLs ........................................................................................................................
+    . . . . . 2
+
+    1.2.2 JavaScript Scratch Pages .................................................................................................
+    . . . . 2
+
+    1.2.3 JavaScript Files .................................................................................................................................
+    . . . . . 5
+
+    1.2.4 Comments .....................................................................................................................................
+    . . . . 5
+
+    1.3 Your First Nontrivial Script ...................................................................................................................
+    . . 6
+
+    1.4 One More Nontrivial Script* ...................................................................................................................
+    . . 8
+
+    Chapter Summary .......................................................................................................................................
+    . . . 9
+
+    Exercises ............................................................................................................................................................
+    . . 10
+
+
+    +   2 Basic JavaScript ....................................................................................................................................
+    . . 13
+
+    2.1 Expressions ....................................................................................................................................................
+    . . 13
+
+    2.1.1 Booleans ...................................................................................................................................................................
+    . . . 14
+
+    2.1.2 Numbers .....................................................................................................................................................................
+    . . . . 14
+
+    2.1.3 Strings .....................................................................................................................................................................................
+    . 16
+
+    2.1.4 Type Conversion ............................................................................................................................................................
+    . 18
+
+    2.2 Variables ........................................................................................................................................................................
+    . . 19
+
+    2.3 Arrays ...........................................................................................................................................................................
+    . . 21
+
+    2.4 Statements .....................................................................................................................................................................
+    . . 22
+
+    2.4.1 The Declaration Statement ............................................................................................................................
+    . . 22
+
+    2.4.2 The Expression Statement ............................................................................................................................
+    . . 22
+
+    2.4.3 Conditional Execution ........................................................................................................................................
+    . . 22
+
+    2.4.4 Loops ............................................................................................................................................................................................
+    . . 23'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: '# Contents
+
+
+    +   Chapter Summary . . . . . . . . . . . . . . . . . . . . . . . 25
+
+
+    +   Exercises . . . . . . . . . . . . . . . . . . . . . . . . 26
+
+
+    +   3 Functions . . . . . . . . . . . . . . . . . . . . . . . 29
+
+
+    +   3.1 Function Definitions and Function Calls . . . . 29
+
+
+    +   3.2 Variable Scope . . . . . . . . . . . . . . . . . 31
+
+
+    +   3.3 Function Statements . . . . . . . . . . . . . . 35
+
+
+    +   3.4 Functions as Arguments to Functions . . . 35
+
+
+    +   3.5 Functions Returned from Functions* . . . 37
+
+
+    +   Chapter Summary . . . . . . . . . . . . . . . . . 37
+
+
+    +   Exercises . . . . . . . . . . . . . . . . . . . . . . 37
+
+
+    +   4 Objects . . . . . . . . . . . . . . . . . . . . 41
+
+
+    +   4.1 Object Notation . . . . . . . . . . . . . . 41
+
+
+    +   4.2 Object Values . . . . . . . . . . . . . . 43
+
+
+    +   4.3 Prototypes . . . . . . . . . . . . . . 44
+
+
+    +   4.4 Constructors . . . . . . . . . . . . . 46
+
+
+    +   4.5 Native, Built-In, and Host Objects . 49
+
+
+    +   4.6 Regular Expressions* . . . . . . . 49
+
+
+    +   4.7 The Global Object . . . . . . . . . 51
+
+
+    +   Chapter Summary . . . . . . . . . . . . . . . . 52
+
+
+    +   Exercises . . . . . . . . . . . . . . . . . . . . 52
+
+
+    +   5 Interaction . . . . . . . . . . . . . . . . . 55
+
+
+    +   5.1 Phone Numbers Revisited . . . . 55
+
+
+    +   5.2 Dynamic HTML . . . . . . . . . . . . 56
+
+
+    +   5.2.1 The Document Is “Just” a Built-In Object 57
+
+
+    +   5.2.2 Elements and IDs for Fun and Profit 61
+
+
+    +   5.2.3 Events . . . . . . . . . . . . . 65
+
+
+    +   5.2.4 Packaging a Dynamic HTML Website 70
+
+
+    +   5.2.5 Other Related Built-In Objects 71
+
+
+    +   5.2.6 Timed or Ongoing Activity 72
+
+
+    +   5.3 Introduction to Ajax 73
+
+
+    +   5.3.1 Ajax in Action 74
+
+
+    +   5.3.2 The Secret Ingredient: XMLHttpRequest 75
+
+
+    +   5.3.3 Processing Responses 78
+
+
+    +   5.3.4 Overall Ajax Structure 80
+
+
+    +   5.3.5 Where’s the XML? 81
+
+
+    +   Chapter Summary . . . . . . . . . . . . . . . . . 81
+
+
+    +   Exercises . . . . . . . . . . . . . . . . . . . . 82'
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: '# Contents
+
+
+    +   - Afterword 85
+
+
+    +   - Book Website Guide 87
+
+
+    +   - Glossary 89
+
+
+    +   - Bibliography 91
+
+
+    +   - Index 93'
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: "# About This Book\n\nIntroduction\n short guide introduces the JavaScript™\
+    \ programming language. It is targeted to students taking a general-interest computer\
+    \ science course (CS50) who need material on a specific programming language to\
+    \ complete a language-neutral primary text. For this reason, we limit our coverage\
+    \ to the \"good parts\" [Cro8sa] subset of the JavaScript language. While no previous\
+    \ programming experience is assumed, it is fast paced and at times includes material\
+    \ not traditionally presented at the introductory level. Therefore, it is also\
+    \ suitable for seasoned programmers who are new to the language and desire a practical\
+    \ adventure. Sections with advanced material that can be safely skipped are marked\
+    \ with an asterisk (*).\n\nWhile the book strives to teach basic programming practice,\
+    \ it is ultimately about the JavaScript language, and includes details of objects,\
+    \ functions, constructors, and prototypes. Understanding a language's structural\
+    \ foundation is necessary to express oneself effectively in the language. Of course,\
+    \ we do not neglect the fact that JavaScript is the primary language for making\
+    \ web browsers more interactive. Given that web programming is only one application\
+    \ area of JavaScript, however, we defer coverage of this topic until after much\
+    \ of the language has been covered in detail.\n\nBecause the book is concise,\
+    \ it's best read to cover. We start with the rationale for the JavaScript language\
+    \ and quickly introduce several short example programs. The middle chapters of\
+    \ the text cover the major elements of the language in a rather technical fashion,\
+    \ illustrated with ready-to-run example code. The last chapter explores JavaScript's\
+    \ use on the World Wide Web, briefly introducing HTML and Ajax. We encourage readers\
+    \ to enter and run the sample code, and to work through the many exercises at\
+    \ the end of each chapter.\n\nvii"
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: '# About This Book
+
+
+    We do hope that readers who have picked up this book only to satisfy a required
+    course in JavaScript will nevertheless gain the knowledge and skills necessary
+    to move on to study the interesting and rewarding disciplines of computer science
+    and software engineering.
+
+
+    # Text Website
+
+
+    Visit http://www.jpubub.com/catalog/9780673665680 for errata, additional exercises,
+    solutions, and more sample code.
+
+
+    # Acknowledgments
+
+
+    We are grateful to Loren Abrams, Hervé Franceschi, and B. J. Johnson for their
+    insight and comments; all took significant time and effort to help us improve
+    the text a great deal. Thanks also to Mike Megally and Matt Werner for giving
+    us their overall impressions.
+
+
+    Love and thanks to Mei Lyn, Aidan, Anton, and Aila for their support and perspective.
+
+
+    > -JDND
+
+    Finally, Tim Anderson, Acquisitions Editor; Melissa Potter, Editorial Assistant;
+    Amy Rose, Production Director; Ashlee Hazeltine, Production Assistant; and their
+    Jones and Bartlett colleagues were instrumental in encouraging this book and seeing
+    it through the entire production process.'
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: '# Introduction
+
+
+    Rather than introducing you to JavaScript, this chapter takes the approach of
+    initiating you into it. After briefly discussing why JavaScript is worth learning,
+    we jump immediately into writing and running a variety of real JavaScript programs.
+
+
+    # 1.1 Why JavaScript?
+
+
+    JavaScript, which is one of many programming languages that are in use today,
+    primarily known as the technology that allows web pages to become “dynamic” or
+    “interactive.” Every programming language comes with its own merits, distinguishing
+    features, fans, and detractors, all of which contribute to some rationale for
+    why that language would be worthwhile to learn. In JavaScript’s case, the language
+    is worth learning for these reasons:
+
+
+    +   - Virtually any computing device runs JavaScript “out of the box,” thanks
+    to the ubiquity of web browsers. No installation, download, or setup is necessary.
+
+    - JavaScript programs integrate with web page content better than programs in
+    any other current programming language, enabling draggable objects, scrollable
+    maps, animated and real-time effects, 3D rendering, and more, in “pure” web pages
+    without plugins or extensions.
+
+
+    Regardless of people’s misunderstandings about the language [Cro01], JavaScript
+    is an extremely powerful [Cro08a] and extremely popular programming language (with
+    some arguing that it is the most popular language in'
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: '# CHAPTER 1 Introduction
+
+
+    use today [Cr08b]. In the realm of programming languages, popularity frequently
+    leads to importance [Sco05].
+
+
+    # 1.2 Writing and Running JavaScript
+
+
+    To write and run JavaScript programs, you''ll need the following resources:
+
+
+    +   - A web browser
+
+
+    That''s it. While technically this single requirement may be subject to a variety
+    of qualifying statements (e.g., it has to be a "modern" web browser; JavaScript
+    must be enabled; you must have a "good implementation" of JavaScript), in this
+    book we take the optimistic (yet likely) stance that the web browser you use today
+    is ready and willing to run JavaScript without any showoppers. So fire that browser
+    and start with the simplest way to write and run JavaScript: your browser''s own
+    address field.
+
+
+    # 1.2.1 JavaScript URLs
+
+
+    Type this "Hello world!" into your web browser:
+
+
+    ```
+
+    javascript:alert("Hello world!")
+
+    ```
+
+
+    Make your browser go to this address (typically by pressing the Enter or Return
+    key), and your browser should respond with a window that says, surprisingly enough,
+    "Hello world!"
+
+    Figure 1.1 illustrates this program looks in two browsers running on different
+    operating systems (other browsers and platforms will look very similar). The underlying
+    website does not affect the display—you''ve asked that the browser executes a
+    JavaScript program (alert("Hello world!")) and the browser has obliged. To emphasize
+    the ubiquity of web browsers, by extension, JavaScript, screenshots throughout
+    this book will intentionally mix browsers and platforms. Unless otherwise noted,
+    everything in this book should run just fine on what you have. The final displays
+    may look different, but the underlying behavior remains the same.
+
+
+    # 1.2.2 JavaScript Scratch Pages
+
+
+    Writing JavaScript in a one-line text field gets very old very quickly, we''ve
+    developed a "scratch page" through which you can enter scripts more easily. The
+    website http://javascript.cs.lmu.edu/scratch hosts a rudimentary version of such
+    a scratch page (Figure 1.2).'
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: '# 1.2 Writing and Running JavaScript
+
+
+    ![](img/8b2f777e78c0b5f77130ace12a52e3b1_12_0.png)
+
+
+    **Figure 1.1** JavaScript "Hello world!" in Firefox on Linux and Chrome on Windows
+    XP
+
+
+    ![](img/8b2f777e78c0b5f77130ace12a52e3b1_12_1.png)
+
+
+    **Figure 1.2** A rudimentary JavaScript scratch page
+
+
+    To use this, type a script into the text area and then click the **Run** button.
+    For the trivial example from Section 1.2.1, you would type:
+
+
+    ```
+
+    alert(''Hello world!'');
+
+    ```
+
+
+    This is identical to what you typed into the browser''s address field *except*
+    for the javascript: prefix. That prefix was not part of the language; it was a
+    marker that told the browser how the address text was to be interpreted. Because
+    the scratch page expects and will only work properly with JavaScript, this prefix
+    is now unnecessary.'
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: '# CHAPTER 1 Introduction
+
+
+    Not surprisingly, clicking Run results in exactly the same behavior as before.
+    This is because the browser is running exactly the same program—the only difference
+    lies in how you entered this program into the web browser.
+
+
+    You might want to acclimate yourself to this environment a little bit by typing
+    and running the short examples that follow using rudimentary JavaScript scratch
+    page. We''ll leave them mostly unexplained for now; their purpose is not to teach
+    you the language, but rather to get you used to the process of typing in and running
+    JavaScript. If you have used some programming experience under your belt already,
+    these examples were chosen to preview some of JavaScript''s interesting and unique
+    aspects, so giving them a quick scan would be useful.
+
+
+    Remember to type things exactly as shown. If the program doesn''t behave as, review
+    what you typed to make sure it matches the program given here. In addition, feel
+    free to experiment with these scripts by making small changes and observing the
+    results.
+
+
+    +   This program simulates a single dice roll—every time you run it, you''ll get
+    a random number from one to six:
+
+
+    ```
+
+    alert("You rolled a " + +
+
+    (Math.floor(Math.random() * 6) + 1) + "!");",
+
+    ```
+
+
+    +   This program plays a baby game of "mad libs" based on a 1940s show you tune:
+
+
+    ```
+
+    alert("I like " +
+
+    prompt("Please enter a city:") + " in " + +
+
+    prompt("Please enter a month:") + ", how about you?");",
+
+    ```
+
+
+    +   This two-liner is great if you''re lazy about capitalization:
+
+
+    ```
+
+    alert(prompt("Enter something to shout:").toUpperCase());
+
+    alert(prompt("Shout" something (all caps):").toLowerCase());",",
+
+    ```
+
+
+    +   Here''s a script that runs another script entered by the user. Which do you
+    think is more intriguing—the fact that this is possible in JavaScript-Script,
+    or the fact that a script can be this short?
+
+
+    ```
+
+    newFunction(prompt("Type in a script:")));();
+
+    ```
+
+
+    Pay attention to those parentheses—they have to be typed in exactly as shown.
+    What do you think happens when the script you type into this program''s prompt
+    is the program itself?'
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: "# Writing and Running JavaScript\n\n# 1.2.3 JavaScript Files\n\nJavaScript\
+    \ URLs and scratch pages make it easy to write and experiment with JavaScript\
+    \ code quickly and conveniently. However, they do not handle the distribution\
+    \ and sharing of JavaScript programs once the code has been deemed ready for prime\
+    \ time.\n\nTo allow other users to partake of your latest and greatest scripts,\
+    \ you must save JavaScript programs in their own files. Web browsers can then\
+    \ download these files and run them, in the same way that they can run JavaScript\
+    \ URLs or the content of a JavaScript scratch page. The difference is that, instead\
+    \ of requiring direct typing (as you did with URLs and the scratch page), the\
+    \ web browsers can grab the code on their own.\n\nBecause this book strives to\
+    \ focus specifically on JavaScript as a programming language, and not JavaScript\
+    \ as a web technology, we’ll pur-posely delay further coverage of the distribution\
+    \ and sharing of JavaScript code, for use in web browser applications, until Section\
+    \ 5.2.4.\n\n# 1.2.4 Comments\n\nTake a look at the following script. Notice anything\
+    \ unusual about it? (Needless to say, try typing it in and running it,.)\n\n```\n\
+    /*\n* We will be echoing some text more than once.\n*/\nvar echo = function(s)\
+    \ {\n  return s + \" \" + s;\n}\n\nalert(echo(\"pizza\"));\nalert(echo(\"money\"\
+    ));\n\n// We can also echo something given by the user.\nalert(echo(prompt(\"\
+    Type something to echo:\")));));\n```\n\nThe block between /* and */ at the beginning\
+    \ of the example, as well as the line starting with // near the end, dont look\
+    \ like code—they appear to be plain English. That’s because they are plain English;\
+    \ text between /* and */, as well as any text after two slashes (/) to the end\
+    \ of the line, are called comments. Comments allow human-speak to become part\
+    \ of a script, helping readers to understand the programmer’s intent a little\
+    \ better. When JavaScript sees a /, it knows to skip everything after that until\
+    \ it sees /. When JavaScript sees //, it ignores everything from there to the\
+    \ end of the line.\n\nThe liberal inclusion of comments in code is highly encouraged\
+    \ in practice; no matter how great an expert becomes with programming, it’s"
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: '# CHAPTER 1 Introduction
+
+
+    often easier to read about something in plain English (or in any other language
+    that you can speak, read, or write) than in code. This becomes especially compelling
+    when you are part of a team of programmers and are reading code that you didn''t
+    write, or even when you are revisiting code that you''ve written but haven''t
+    seen for some time.
+
+
+    # 1.3 Your First Nontrivial Script
+
+
+    Now we have established straightforward mechanisms for writing and running JavaScript,
+    let''s take a look at a slightly more complex script. The purpose here is to show
+    what a nontrivial script looks like; it is not necessary at that point that you
+    understand the meaning of every line. Type the following into http://javascript.cs.lmu.edu/:
+
+
+    ![](img/8b2f777e78c0b5f77130ace12a52e3b1_15_0.png)
+
+
+    ```
+
+    // Ask the user for a number phrase.
+
+    var phrase = prompt(''Please enter a phone number "phrase:")'');
+
+
+    // Association of each letter with the number of the phone key.
+
+    var conversion = A: 2, B: 2, C: 2, D: 3, E: 3, F: 3, G: 4, H: 4, I: 4, J: 5, K:
+    5, L: 5, M: 6, N: 6, O: 6, P: 7, Q: 7, R: 7, S: 7, T: 8, U: 8, V: 8, W: 9, X:
+    9, Y: 9, Z: 9;
+
+    // Build up the number one digit at a time.
+
+    var phoneNumber = ""
+
+    for (var index = 0; index < phrase.length; index += ++) {
+
+    var symbol = phrase[index].toUpperCase();
+
+    phoneNumber += conversion[symbol]; //
+
+
+    alert("You want to dial " + phoneNumber + ".");
+
+    ```
+
+
+    As previously mentioned, the code with absolute precision—copy everything exactly.
+    If you don''t trust your copy, you can visit http://javascript.cs.lmu.edu/scratch/phrase-to-phone
+    for a version of the scratch page that has this script already preloaded.
+
+
+    Assuming you''ve typed this script correctly, Running on the scratch page should
+    display a dialog box that requests Please enter a phone number "phrase". Typing
+    a valid phone number phrase as (800) DENTIST (or 310) GROCERY should yield you
+    a second dialog box that gives the phone number equivalent of that phrase. Figure
+    1.3 shows the screenshot sequence based on the phone number (212) GET-CTR.
+
+
+    Going over this script line by line, it is possible to see, even without prior
+    programming experience, how of its content corresponds to its behavior when run.
+    First, remember that JavaScript ignores comments, because those items are meant
+    for the humans who are reading the script.'
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: '# 1.3 Your First Nontrivial Script
+
+
+    ![](img/8b2f777e78c0b5f77130ace12a52e3b1_16_0.png)
+
+
+    **Figure 1.3** Screenshots from your first nontrivial script, with (212) GET-CRTR
+    as the phone number phrase to dial
+
+
+    The first line that is actually performed, then, is the one starting with `phrase
+    = prompt` ...
+
+
+    When running in a web browser, JavaScript can perform `prompt`, which in this
+    case makes the web browser display a dialog that asks for the “phone number phrase”
+    to be dialed. Technically, `prompt` is called a “function” you’ll learn more about
+    functions in Chapter 3.
+
+
+    To convert the letters in the phone number into the digits 0-9, a *JavaScript
+    object* named `conversion` is used. JavaScript objects are greater in detail in
+    Chapter 4; for now it is to say that conversion defines a list of possible letter-to-number
+    “translations”. Each translation (e.g., “A” corresponds to 2, “Q” corresponds
+    to 7) is separated by a comma (,), with the letter and number parts separated
+    by a colon (:). Letters appear before the colon, and the number that corresponds
+    to each letter appears after the colon: For example, the letters “D,” “E,” and
+    “F” correspond to the number 3; “T,” “U,” and “V” correspond to the number 8;
+    and so on.
+
+
+    By executing the block of code that starts with `for`, the script runs through
+    each symbol in the phone number phrase, determining that corresponds to the uppercase
+    version of the script. Symbols that are not listed in `conversion` remain unconverted.
+
+
+    The `for` code block is called a *loop* because it repeats some activity according
+    to conditions. In this case, the conversion sequence (the section in the braces
+    `{ }`) is repeated for every letter or symbol in the user-defined phone number
+    phrase. Loops are discussed in detail in Section 2.4.4.
+
+
+    Once every symbol in the phrase has been processed, `alert` displays the result
+    to the user—and we’re done! The script then returns to your regularly scheduled
+    web page.'
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: "# CHAPTER 1 Introduction\n\n# 1.4 One More Nontrivial Script*\n\nHere's another\
+    \ (optional) script to try before we move on to look at JavaScript in detail.\
+    \ As with the previous script, the purpose of this example is simply to acquaint\
+    \ you with the look and feel of a longer JavaScript program, not to teach any\
+    \ aspect of the language. The script is available online - if you're typing averse,\
+    \ at http://javascript.cs.lmu.edu/scratch/phone-to-phrase/:\n\n```\n/**\n * This\
+    \ function converts a digit into a random phone keypad letter\n * corresponding\
+    \ to that digit. Non digits are not converted.\n */\nvar getRandomLetterFromDigit\
+    \ = function(digit) {\n  var conversion = [\"ABC\", \"DEF\", \"GHI\", \"JKL\"\
+    , \"MNO\", \"PQRS\", \"TUV\", \"XYZ\"];\n  // 0 and 1 don't convert into letters.\n\
+    \  var possibleLetters = conversion[digit - 2];\n  return possibleLetters =\n\
+    \    possibleLetters[Math.floor(possibleLetters.length) * Math.random())] :\n\
+    \    digit;\n};\n\n// Ask the user for a phone number.\nvar phoneNumber = prompt(\"\
+    Please enter a phone number:\");\n\n/**\n * A \"number\" is any sequence of digits,\
+    \ spaces, parentheses,\n * and dashes. The code right after \"match\" may look\
+    \ scary, but\n * is common in advanced scripts. For now, just make sure to type\n\
+    \ * it exactly.\n */\nif(phoneNumber.match(/^[0-9\\-\\(\\)\\s\\{}]*$/)) {\n  //\
+    \ Build the phone number, one character at a time.\n  var mnemonic = \"\";\n \
+    \ for (var index = 0; index < phoneNumber.length; index++) {\n    mnemonic = mnemonic\
+    \ + getRandomLetterFromDigit(phoneNumber[index]);\n  }\n  alert(mnemonic + \"\
+    \ is a possible Letter equivalent of \" +\n    phoneNumber + \".\");\n} else {\n\
+    \  // There was at least one character that was not a digit, space,\n  // parentheses,\
+    \ or dash.\n  alert(phoneNumber + \" * cannot be interpreted as a phone number.\"\
+    );\n}\n```\n\nWhen you run the script, you are first greeted by a request that\
+    \ you enter a phone number. Typing a valid phone number (the script is actually\
+    \ quite lenient with what it considers to be a \"phone number\") yields an alert\
+    \ that gives a randomly chosen letter equivalent to that number. Figure 1.4 shows\
+    \ screenshots of the phone number 555-1212.\n't worry if the output in the figure\
+    \ isn't the same as what you see on your own screen—remember that each of the\
+    \ digits 2-9 on a telephone"
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: '# Chapter Summary
+
+
+    ![](img/8b2f777e78c0b5f77130ace12a52e3b1_18_0.png)
+
+
+    **Figure 1.4** Screenshots from your nontrivial script, with 555-1212 as the phone
+    number to convert
+
+
+    corresponds to several possible letters, this letter is chosen at random by the
+    script. What matters is if you “dial” the randomly chosen phone number phrase,
+    you will end up dialing the phone number that was entered (555-1212 in Figure
+    1.4).
+
+
+    This script involves functions (Chapter 3), objects (Chapter 4), and loops (Section
+    2.4.4), plus a few more features of the JavaScript language—some basic, but for
+    now, we will leave it at that. Feel free to try or modify this script before moving
+    on.
+
+
+    This example completes our initial look at the JavaScript language; in the interest
+    of getting you to try things out and see some results right away, we have taken
+    the approach of starting with examples but skipping some details. The remaining
+    chapters delve deeper into the language itself, and the book concludes with an
+    overview of how JavaScript and its features are used to create interactive web-based
+    applications.
+
+
+    # Chapter Summary
+
+
+    +   - JavaScript is the world''s most popular programming language. Almost every
+    computer with a web browser (including some cell phones and embedded devices)
+    will run “out of the box.”
+
+
+    +   - To start programming in JavaScript, all you need is just a web browser.
+
+
+    +   - JavaScript can be executed by typing one-line javascript: URLs to a browser,
+    or by using a browser-based scratch page. The code, finalized, can be stored,
+    distributed, and shared using flags.
+
+
+    +   - Scripts contain both code, representing things for the computer to do, and
+    comments, representing information meant for the human readers of these scripts.
+
+
+    +   - The prompt and alert functions, which are built into web browsers running
+    JavaScript, are, respectively, the simplest ways to request information from (input)
+    and display information to (output) the’s user.'
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: '# CHAPTER 1 Introduction
+
+
+    # Exercises
+
+
+    +   1. Run the following program (1) as a one-line JavaScript URL and (2) as text
+    entered into a scratch page or console.
+
+
+    ```
+
+    alert("Hello, " + prompt("What''s your name?")");
+
+    ```
+
+
+    +   2. Try to run each of the sample programs given in Section 1.2.2 using the
+    JavaScript URL approach instead of a scratch page.
+
+
+    +   (a) Is it possible to do this?
+
+
+    +   (b) What does the answer to part (a) tell you about JavaScript handles spacing
+    and new or blank lines?
+
+
+    +   3. Run the following one-line scripts (remember to type them in *exactly as
+    shown*) and note what appears. Explain the relationships between what was in the
+    alert parentheses and what was displayed.
+
+
+    +   (a) alert("Good night and good" + "luck.");
+
+
+    +   (b) alert(2 + 10);
+
+
+    +   (c) alert(5 > 9);
+
+
+    +   (d) alert(/* * Do the right thing. */);
+
+
+    +   (e) alert(Math.sqrt(-1));
+
+
+    +   4. The following one-line script (remember to type it in *exactly as shown*)
+    asks for some input from you and displays something back:
+
+
+    ```
+
+    alert(prompt("Type something:"));
+
+    ```
+
+
+    +   (a) Run the script and type 2 + 10 as input. What is displayed?
+
+
+    +   (b) Run the script and type 5 > 9 as input. What is displayed?
+
+
+    +   (c) Run the script and type Math.sqrt(-1) as input. What is displayed?
+
+
+    +   (d) Run the script and click the *Cancel* button. What is displayed?
+
+
+    +   (e) Briefly, and in your own words, describe what the script does.
+
+
+    +   5. Look up the range of values within which JavaScript''s Math.random function
+    returns its results. Also look up Math.floor does. You can write a general "formula"
+    for generating random numbers greater than equal to *a* but less than *b*? If
+    you want random integers'
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: '# Exercises
+
+
+    6. Type and run this script, which includes a block comment inside another comment:
+
+
+    ```
+
+    / A comment /* inside */ / a comment. */
+
+    alert("Done!");
+
+    ```
+
+
+    What happens (or doesn''t happen)? Hazard a guess as to why JavaScript-behaved
+    in this manner.
+
+
+    7. Type and run this script, which uses the + operator to combine expressions:
+
+
+    ```
+
+    alert(1 + 1);
+
+    alert("*1" + "1");");
+
+    ```
+
+
+    What is displayed? Hazard a guess as to why JavaScript behaved in this time, the
+    user gets to choose what is +-ed together:
+
+
+    8. The following script is a variation on the one in Exercise 7; this time, the
+    user gets to choose what is +- together:
+
+
+    ```
+
+    alert(prompt("First thing to add: ") + prompt("Second thing to add: "));
+
+    ```
+
+
+    Type and run this script. Enter 1 and 1 as input, as well as other combinations.
+    What is displayed? Does this confirm or contradict your guess as to what + does?
+
+
+    9. Older phones, particularly those with rotary dials, did not include the letters
+    Q and Z as possible conversions for the numbers 7 and 9, respectively. Modify
+    the script on page 6 so that it is “backward compatible” with these older phones.'
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: '# # Basic JavaScript
+
+
+    Now that you have had a chance to run some simple JavaScript programs, we''re
+    ready for a technical look at the basic elements of the language itself.
+
+
+    # ## 2.1 Expressions
+
+
+    We''ll start our overview of the language with expressions. An expression is code
+    that is evaluated. Let''s evaluate some expressions:
+
+
+    ```
+
+    2 => 2
+
+    2 + 8.1 * 5 => 42.5
+
+    (2 + 8.1) * 5 => 50.5
+
+    9 > 4 => true
+
+    "dog" + "house" => "doghouse"
+
+    ```
+
+
+    Expressions are made up of values, such as 8.1, true, and "dog", and operators,
+    such as + (addition) and * (multiplication). Every value in JavaScript is either
+
+
+    +   - A Boolean (true or false),
+
+    - A number,
+
+    - A string,
+
+    - The special value undefined,
+
+    - The special value null, or
+
+    - An object.
+
+
+    We''ll discuss Booleans, numbers, and strings. We''ll cover undefined in Section
+    2.3, and objects and null in Chapter 4.'
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: '# CHAPTER 2 Basic JavaScript
+
+
+    # 2.1.1 Booleans
+
+
+    The Boolean values true and false are most often seen as the results of comparisons—expressions
+    that compute whether two values are equal, not equal (!=), or ordered in some
+    fashion (<, <=, >=, or >).
+
+
+    ```
+
+    7 === 5 => false (equal to)
+
+    3 == 3 => true (not equal to)
+
+    12 <= 12 => true (less than or equal to)
+
+    ```
+
+
+    JavaScript provides operators on Boolean values, including these:
+
+
+    +   - && ("and"): x && y is true if and only if x and y are both true.
+
+    - || ("or"): x || y is true if and if either x or y, or both, are true.
+
+    - ^ ("exclusive or"): x ^ y is true if and only if exactly one of x and y is true
+    (not both).
+
+    - ! ("not"): !x is true if and only if x is false.
+
+
+    The following table summarizes these relationships:
+
+
+    | x | y | x && y | x || y | x | !x |
+
+    |---|---|---|---|---|---|
+
+    | true | true | true | true | false | false |
+
+    | true | false | false | true | true | false |
+
+    | false | true | false | true | true | true |
+
+    | false | false | false | false | false | true |
+
+
+    Do not confuse the operators && || with & and |; the two are little-used in JavaScript
+    applications. Also, do not confuse their cousins == and !=; [Cro08a, p. 109].
+    The == operator, for example, considers a few things to be equal to each other
+    that you might not expect; however experienced programmers sometimes find them
+    useful.
+
+
+    # 2.1.2 Numbers
+
+
+    You write numbers pretty much as you''d expect: 1729, 3.141592, and 29972948.
+    The letter E (or e) sandwiched between two numbers expresses the value “number
+    before E times 10 raised after E” (also known as scientific notation):
+
+
+    ```
+
+    3.6288E6 => 3.6288 × 10⁶ => 3628800
+
+    5.390E-44 => 5.390 × 10⁻⁴⁴
+
+    4.63e170 => 4.63 × 10¹⁷⁰
+
+    ```'
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: "# 2.1 Expressions\n\nOperators on numbers include + (addition), - (subtraction),\
+    \ * (multiplication), / (division), and % (modulo). The modulo operator computes\
+    \ the remainder after division:\n\n```\n18 % 5 => 3\n31.5 % 2.125 => 1.75\n```\n\
+    \nOther operations include Math.floor(x), which produces the largest number less\
+    \ than or equal to x: Math.ceil(x), which produces the smallest number greater\
+    \ than or equal to x: Math.sqrt(x), which produces $\\sqrt{x}$; Math.pow(x, y),\
+    \ which produces $x^y$; and Math.random(), which produces a random number between\
+    \ 0 and 1.\n\n```\nMath.floor(2.8) => 2\nMath.floor(-2.8) => -3\nMath.ceil(2.8)\
+    \ => 3\nMath.ceil(-5) => -5\nMath.sqrt(100) => 10\nMath.pow(2.5, 4) => 39.0625\n\
+    ```\n\nIn JavaScript, as in most programming languages, numbers are stored to\
+    \ be finite storage locations in a computer's memory, so there are limits to the\
+    \ set of numbers that can be represented. There is a largest finite number (JavaScript's\
+    \ is approximately $1.79 \times 10^{308}$) and a smallest finite number (approximately\
+    \ $-1.79 \times 10^{308}$). Any computation producing a value larger than the\
+    \ largest finite number (or smaller than the smallest) yields the special value\
+    \ Infinity (-Infinity).\n\n```\n2E00 * 73.987E150 => Infinity\n-1e306 => -Infinity\n\
+    ```\n\nHaving numbers digitally represented limits not only the size of numbers,\
+    \ but also their precision. This may cause some surprises:\n\n```\n12157692620396223359\
+    \ => 12157692620396224000\n12157692620396223959 + 1 => 12157692620396224000\n\
+    1e200 === 1e200 + 1 => true\n4.18 - 1000 => 0\n0.1 + 0.2 => 0.30000000000000004\n\
+    0.3 === 0.1 + 0.2 => false\n```\n\n+   1. Or $10^{294} - 2972$ to be exact."
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: '# CHAPTER 2 Basic JavaScript
+
+
+    In practice, you usually won''t run into these cases, but it is important to be
+    aware that they exist! Here are some tips to help you cope:
+
+
+    +   - The representable numbers are packed most tightly around zero; in fact,
+    more than half of them are between -1 and 1. The farther you stray from 0, the
+    more they spread out there.
+
+
+    +   - All integers (the technical term for "whole number") between the values
+    -9007199254709992 and 9007199254709991 are represented exactly. Unless you''re
+    doing financial calculations in excessively devalued currencies, you can count
+    without worry.
+
+
+    +   - Computations nonacting (or yielding) large integers or nonintegers often
+    produce inexact results.
+
+
+    The special value NaN, meaning Not a Number, pops up whenever a computation produces
+    something that is well, not a number.
+
+
+    ```
+
+    0 / 0                   => NaN
+
+    "dog" - "cat"      => NaN
+
+    Infinity - Infinity    => NaN
+
+    NaN + 16               => NaN
+
+    NaN === NaN             => false
+
+    ```
+
+
+    The last example is somewhat surprising: NaN is not equal to itself, not even
+    NaN! To determine whether something is a number, use isNaN:
+
+
+    ```
+
+    isNaN(2.71828828)      => false
+
+    isNaN(NaN)             => true
+
+    isNaN("water")         => true
+
+    isNaN(Infinity)        => false
+
+    ```
+
+
+    # 2.1.3 Strings
+
+
+    A string is a sequence of characters from the Unicode [Uni06] character set. Each
+    character has a unique name called its codepoint. By convention, codepoints are
+    written in hex. Here are some examples:
+
+
+    ```
+
+    F1      LATIN SMALL LETTER N WITH TILDE
+
+    03B8    GREEK SMALL LETTER THETA
+
+    095A    DEVANAGARI LETTER GHHA
+
+    ```
+
+
+    Hex, or hexadecimal, numerals are base 16; they''re ordered like this: 0, 1, 2,
+    3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f, 10, 11, 12, ..., 9e, 9f, a0, a1, ..., ff,
+    100, ...'
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: '# 2.1 Expressions
+
+
+    11F4 HANGUL JONGSEONG KAPYEUNPHIEUPH
+
+    13C9 CHEROKEE LETTER QUO
+
+    265B BLACK CHESS QUEEN
+
+    2678 RECYCLING SYMBOL FOR TYPE-6 PLASTICS
+
+    FE7C ARABIC SHADDA ISOLATED FORM
+
+    11D22 MUSICAL SYMBOL F CLEF
+
+
+    An old version of the codepoint-to-character mapping can be found in the source
+    [Uni08].
+
+    String values are written within double quotes (e.g., "hello") or single quotes
+    (e.g., ''hello''), and must fit on one line. The backslash character ''\'' is
+    special; it combines with subsequent characters to express characters we may not
+    be able to type, among other. Backslash combinations are called escape sequences,
+    several of which are given in Table 2.1.
+
+    Here are two examples of:
+
+
+    +   * ''\u1f6ies\''s me.'''' This 20-character string (about lines) illustrates
+    the code for escaping a quote character.
+
+    * ''\u03a8\u03b8\u03b7\u03b1'' This string names the capital of Greece, Αθηνα.
+
+
+    The "control characters" mentioned in Table 2.1 affect how a string is displayed.
+    The most common of these are the newline \n, which causes the rest of the string
+    to be written on the next line, and the tab, \t, which
+
+
+    | '' | The single-quote character (used to get the single-quote character in a
+    string surrounded by single quotes) |
+
+    | " | The double-quote character (used to get the double-quote character in a
+    string surrounded by double quotes) |
+
+    | \xhh | Where hh is a two-digit hexadecimal value, is the character whose codepoint
+    is that value |
+
+    | \hhhh | Where hhhh is a four-digit hexadecimal value, is the character whose
+    codepoint is that value |
+
+    | \n, \t, \b, \f, \r, \v | The control characters newline, tab, backspace, form-feed,
+    carriage return, and vertical tab |
+
+    | \ | The backslash character itself |
+
+
+    Table 2.1 JavaScript escape sequences'
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: '# CHAPTER 2 Basic JavaScript
+
+
+    ![](img/8b2f777e78c0b5f77130ace12a52e3b1_27_0.png)
+
+
+    **Figure 2.1** A string with tabs and newlines
+
+
+    can be used to align text in columns. Here''s a fun one-line script that alerts
+    a string with tabs and newlines; Figure 2.1 shows the output.
+
+
+    ```
+
+    alert("1\tf3\e5\n2\tg4\u265ba4++");
+
+    ```
+
+
+    JavaScript provides dozens of string operations, such as finding the string''s
+    length (number of characters), translations to uppercase and lowercase, and replacing
+    parts of the string.
+
+
+    | "Hello, there".length | ⇒ 12 |
+
+    | "Hello, there".toLowerCase() | ⇒ "hello, there" |
+
+    | "Hello, there".toUpperCase() | ⇒ "HELLO, THERE" |
+
+    | "Hello, there".replace("ello", "i") | ⇒ "Hi, there" |
+
+
+    Sometimes you''d like to know where in a string certain character can be found,
+    or find out which character is at a given position. In JavaScript, the first character
+    in a string is index 0, the second index at 1, the third at index 2, and so on.
+    The character at position p within string is found with the expression s.charAt(p).
+    Text within a string can be located using indexOf and lastIndexOf. The expression
+    s.substring(x,y) produces a string consisting of all characters of string x up
+    to not including the character at index y.
+
+
+    | "Some text".charAt(7) | ⇒ "x" |
+
+    | "Some text".indexOf("me") | ⇒ 2 |
+
+    | "Some text".lastIndexOf("e") | ⇒ 6 |
+
+    | "Some text".substring(3, 7) | ⇒ "e te" |
+
+
+    # 2.1.4 Type Conversion
+
+
+    JavaScript operators expect operands of certain types; for example, * multiplies
+    numbers, toUpperCase() capitalizes strings, and so on. However,'
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: '# 2.2 Variables
+
+
+    when an operator is applied to a value of an unexpected type, JavaScript will
+    find a suitable treatment for your value. When a Boolean is expected, false, the
+    empty string ("" or ''''),''), undefined, null, and NaN are treated as false and
+    everything else is treated as true. When a string is expected, nonstrings are
+    treated as you might expect—for example, true as "true" and 100 as "100". When
+    a number is expected, undefined is treated as NaN, null and false are 0, and true
+    is 1. Strings that look like numbers are treated as numbers; those that don''t
+    like NaN-number conversion kicks in for most arithmetic operations, but not for
+    addition, because pesky plus symbol (+) does string concatenation instead!
+
+
+    ```
+
+    "dog" + 256  => "dog256"
+
+    "dog" * 256  => NaN
+
+    "100" + 256  => 100256
+
+    "100" * 256  => 25600
+
+    "100" * "256"  => 25600
+
+    ```
+
+
+    # 2.2 Variables
+
+
+    Values can be stored in variables for later use. You must first declare a variable
+    to bring it into existence. You may specify an initial value in the declaration;
+    if you do not, the value stored in the variable will be the special value undefined.
+
+
+    After the declaration, you are free to use the variable. You can also store a
+    new value in a variable by a process called assignment, which replaces (overwrites)
+    the existing value stored in the variable.
+
+
+    ```
+
+    var x = 2;               // Declares x, initializing it to 2.
+
+    alert(x);                // Alerts 2.
+
+    alert(10 * x);            // Alerts 20.
+
+    var y;                   // Declares y, without an explicit initial value.
+
+    alert(y);                // Alerts undefined.
+
+    y = x * 5;               // Assigns 10 to y, because x is still 2.
+
+    var z = y;               // Declares z, initializes it to 10.
+
+    y = "dog";             // Assigns "dog10" to y, overwriting the old value 10.
+
+    alert(y + z);            // Alerts "dog10", because z is still 10.
+
+    ```
+
+
+    +   3. We''ll see how objects are treated as strings in Chapter 4.'
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: '# CHAPTER 2 Basic JavaScript
+
+
+    Interestingly, = is not the only assignment operator:
+
+
+    | var x = 5; | // Same as x = x + 30, x now 35. |
+
+    | x += 30; | // Same as x = x - 2, x now 33. |
+
+    | x -= 2; | |
+
+    | x += -4; | // Same as x = x + -4, x now -132. |
+
+    | x = false; | |
+
+    | x ||= true; | // Same as x = x || true, x now true. |
+
+
+    Variables can also be updated with the ++ (increment) and -- (decrement) operators.
+    These can be tricky! When placed in front of a variable, the operator updates
+    the variable *before* the expression is evaluated. If the operator follows the
+    variable, the variable is updated *after* the evaluation.
+
+
+    | var x = 5; | // Now x is 6. |
+
+    | x++; | |
+
+    | y = x++; | // y gets 6, THEN x becomes 7. |
+
+    | z = ++x; | // First z is bumped to 8, THEN z gets 8. |
+
+
+    Attempting to use a variable without first declaring it generates an error, as
+    the following script illustrates:
+
+
+    ```
+
+    alert(next_song);
+
+    ```
+
+
+    The actual error you''ll receive depends on what you''re using to run JavaScript;
+    perhaps a window will pop up with the words “next_song is not defined.” Some systems
+    have a *console*, *error*, or *debug* window that maintains a running list of
+    issues.
+
+
+    Perhaps strangely, this script gives us no error:
+
+
+    ```
+
+    next_song = "Purple Haze";
+
+    ```
+
+
+    We say “strange” because this line doesn''t look like a declaration; it looks
+    like an assignment. JavaScript, though, treats it as a declaration if the variable
+    isn''t already declared. This automatic declaration is considered by many experts
+    to be a language design flaw, for technical reasons beyond the scope of this book.
+    Its existence means it is important to *always use var* when declaring variables.
+
+
+    Variable names are subject to two rules. First, the name must begin with a letter,
+    the $ character, or the _ character, and contain only letters, digits, ''s, and
+    ''$ thereafter.
+
+
+    +   4. They are also unnecessary, with good reasons to avoid them completely.
+    See [Cro08a, p. 112] for details.'
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: '# 2.3 Arrays
+
+
+    Second, you cannot use any of JavaScript''s reserved words: abstract, boolean,
+    break, byte, case, catch, char, class, const, continue, de-debugger, default,
+    delete, do, double, else, enum, export, extends, final, finally, float, for, function,
+    goto, if, implements, import, instanceof, int, interface, long, native, new, package,
+    private, protected, public, return, short, static, super, synchronized, this,
+    throw, throws, transient, try, typeof, var, volatile, with. JavaScript reserves
+    these words for possible special meanings; we''ve seen, for example, how var introduces
+    variable declarations.
+
+
+    # 2.3 Arrays
+
+
+    An array is composed of a sequence of values. You identify the first value in
+    array as a[0], the second as a[1], and so on. Arrays are written with square brackets
+    (e.g., [2, 3, 7]). You can add items to the end of the array with push and to
+    the beginning of the array with shift. You can remove items from the end with
+    pop and from the front with shift. You can also sort arrays.
+
+
+    ```
+
+    var a = [];                  // a is an array of length 0
+
+    var b = [3, 5];               // b has length 2
+
+    b.push(2);                   // Now b is [3, 5, 2]
+
+    b.shift();                  // Now b is [5, 2]
+
+    a.push(3, 10);               // Now a is [3, 10, 5, 2]
+
+    alert(a[0]);                // Alerts 3 and changes a to [3, 5, 2]
+
+    lert(a.shift());           // Alerts 3 and changes a to [10]
+
+    b.push(b[0], 1);            // Now b is [7, 3, 5, 2, 10, 1]
+
+    b.sort();                    // Now b is [1, 10, 2, 3, 5, 7]
+
+    ```
+
+
+    What? How did 10 get between 1 and 2? The answer is that arrays can contain any
+    kind of value—not JavaScript treats all values as strings when sorting. The string
+    "1" is less than "10", which is less than "2". So how do you sort numerically?
+    You have to wait until the next chapter for the answer to this question.
+
+
+    Given an array a, the expression a.length yields the number of elements in a.
+    Assigning to a.length can grow or shrink the array; new values are set to undefined.
+    You may also grow an array by assigning to an index position beyond the end of
+    the array.
+
+
+    ```
+
+    var a = [9, 3, 2, 1, 8, 7, 3];     // a[7] through a[19] now undefined.
+
+    a[20] = 6;                      // Alerts 21.
+
+    alert(a.length);                // Alerts 21.
+
+    a.length = 50;                  // a[21] through a[49] all undefined.
+
+    a.length = 3;                   // Now a is [9, 3, 2].
+
+    ```'
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: "# CHAPTER 2 Basic JavaScript\n\n# 2.4 Statements\n\nWe round out our overview\
+    \ of basic JavaScript by looking at statements. Whereas expressions compute values,\
+    \ statements produce actions. A script is, in fact, a sequence of statements,\
+    \ each of which is executed when the script is run.\n\nIn this section we cover\
+    \ the most common JavaScript statements, providing scripts that contain them.\
+    \ You will notice that we finish every statement with a semicolon (;), unless\
+    \ it already ends with a right brace (}). While not strictly required, this is\
+    \ a highly recommended practice. Leaving out semicolons can be very problematic\
+    \ (see [ECM99, Sec.7.9]).\n\n# 2.4.1 The Declaration Statement\n\nA declaration\
+    \ statement just declares a variable.\n\n```\nvar count = 0;\nvar dogs = [\"Sparky\"\
+    , \"Spot\", \"Spike\\];\nvar response;\n```\n\n# 2.4.2 The Expression Statement\n\
+    \nAn expression statement evaluates an expression and ignores its value. Therefore\
+    \ the only useful kinds of expression statements are those that have an effect\
+    \ on subsequent computation, like assignment.\n\n```\n2 + 2;               //\
+    \ A legal statement, but completely useless.\nx = 1 + (y = 4);      // Assigns\
+    \ 4 to y and then 5 to x.\ncount++;             // Incrementing is actually quite\
+    \ common.\nalert(\"hi\");         // This one definitely has a visible effect.\n\
+    ```\n\n# 2.4.3 Conditional Execution\n\nPrograms often need to do one thing under\
+    \ conditions and something else under conditions. The if statement does exactly\
+    \ one of a number of alternative executions, based on various conditions. The\
+    \ general form of this statement is to have one part, zero or more else parts,\
+    \ and an optional else part. The conditions are evaluated in order, from top to\
+    \ bottom.\n\n```\nif (score >= 90) {\n  grade = \"A\";\n} else if (score >= 80)\
+    \ {\n  grade = \"B\";\n```"
+  merge: -1
+  pgno: 31
+- img_proc: true
+  md: "# 2.4 Statements\n\n```\n} else if (score >= 70) {\n    grade = \"C\";\n} else\
+    \ {\n    grade = \"F\";\n    alert(score + \" \" + grade);\n}\n```\n\nSometimes\
+    \ you may prefer a conditional expression in place of an statement: x ? y evaluates\
+    \ to y if x evaluates to true and z otherwise. For example, instead of\n\n```\n\
+    if (latitude >= 0) {\n    hemisphere = \"north\"\n} else {\n    hemisphere = \"\
+    south\"\n}\n```\n\nyou can write\n\n```\nhemisphere = (latitude >= 0) ? \"north\"\
+    \ : \"south\";\n```\n\nAnother kind of conditional statement, the switch statement,\
+    \ compares a value against a sequence of cases, until it finds one that is equal\
+    \ to (==) the value, and begins executing statements at that point. An optional\
+    \ default case will match any value at all.\n\n```\nswitch (direction.toLowerCase())\
+    \ {\n    case \"north\": row -= 1; break;\n    case \"south\": row += 1; break;\n\
+    \    case \"east\": column += 1; break;\n    case \"west\": column -= 1; break;\n\
+    \    default: alert(\"Illegal direction\");\n}\n```\n\nA break statement will\
+    \ terminate the entire switch statement. It's considered good practice to finish\
+    \ each case with a break,5 otherwise, execution will \"fall through\" to the next\
+    \ case.\n\n# 2.4.4 Loops\n\nThe term loop refers to code that is executed over\
+    \ and over again. JavaScript's while statement executes code repeatedly as long\
+    \ as a condition evaluates to true. The following example generates a random letter\
+    \ and\n\nOr a return statement, which we will see in the next chapter."
+  merge: -1
+  pgno: 32
+- img_proc: true
+  md: '# CHAPTER 2 Basic JavaScript
+
+
+    asks a user to guess the letter. If the user''s guess is not correct, the script
+    records the number of guesses and repeats the prompt. Only when the guess is correct
+    while the statement finish, and the script notifies the user of the number of
+    guesses.
+
+
+    ```
+
+    // Get a random number between 0 and 25, inclusive.
+
+    var index = Math.floor(Math.random() * 26);
+
+
+    // Get a random letter.
+
+    var letter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".charAt(index);
+
+
+    var_of_tries = 1;
+
+    while (prompt("Guess my letter") != letter)
+
+    number_of_tries++;
+
+    alert("Guessed it in " + number_of_tries + " tries");
+
+    ```
+
+
+    The second kind of loop, the for statement, also loops as long as a condition
+    is true, but lets the programmer pack some additional code into a small space.
+    The general form of this statement is
+
+
+    ```
+
+    for (init ; test ; each) {
+
+    ```
+
+
+    The init code is run first, then as long as test is true, runs each by each. For
+    example:
+
+
+    ```
+
+    // Alerts even numbers from 4 through 20.
+
+    for (var number = 4; number <= 20; number += 2) {
+
+    alert(number + " is even");
+
+    }
+
+    ```
+
+
+    number is initialized to 4. Because this value is less than or equal to 20, the
+    script alerts "4 is even" and bumps number 6 is now less than or equal to 20,
+    we next see "6 is even" and number becomes 8. The last value alerted is 20, because
+    number will subsequently be bumped to 22 and the test condition will become false,
+    ending the loop.
+
+
+    The use of for statements is very common when writing code that processes arrays.
+    In the following example, we process the strings [0], words[1], words[2], and
+    so on, by incrementing the variable i each time we pass through the loop.
+
+
+    ```
+
+    // Alerts a string made up of the initial characters of each array item.
+
+    var words = ["Rats", "are", "very", "intelligent"];
+
+    var result = "";
+
+    for (var i = 0; i < words.length; i++) {
+
+    result += words[i].charAt(0);
+
+    }
+
+    alert(result);
+
+    ```'
+  merge: -1
+  pgno: 33
+- img_proc: true
+  md: "# Chapter Summary\n\nJavaScript also has another kind of for loop that we will\
+    \ encounter in Chapter 4.\n\nThe break statement will immediately terminate an\
+    \ entire loop (it breaks out, in a way). This behavior is especially useful when\
+    \ you are looking for something in an array.\n\n```\n// Find the index position\
+    \ of the first even number in array.\nfor (var i = 0; i < array.length; i++) {\n\
+    \  if (array[i] % 2 == 0) {\n    alert(\"Even number found at \" + i);\n    break;\n\
+    \  }\n}\n```\n\nThe continue statement immediately starts the next iteration of\
+    \ a loop, without finishing the current one. It is useful when some, but not all,\
+    \ of the iterations in your loop produce useful information.\n\n```\n// Computes\
+    \ the sum of all positive values in array.\nvar sum = 0;\nfor (var i = 0; i <\
+    \ array.length; i++) {\n  if (array[i] < 0) { // Skip nonpositives.\n    continue;\n\
+    \  }\n  sum += array[i]; // Accumulate positives.\n}\nalert(\"Sum of positives\
+    \ is \" + sum);\n```\n\nThis completes our overview of the most basic elements\
+    \ of JavaScript. We've seen only a small part of the language, but you should\
+    \ now be able to write simple scripts on your own. Some of the exercises in this\
+    \ chapter encourage you to do so.\n\n# Chapter Summary\n\n+   - Scripts are made\
+    \ up of statements, many of which evaluate expressions.\n- Every JavaScript value\
+    \ is either undefined, null, a number, a Boolean, a string, or an object.\n- JavaScript\
+    \ numbers have size and precision limits, so many computations return approximate\
+    \ results.\n- We store the results of evaluating expressions in variables and\
+    \ retrieve them later. Variables must be declared before used. If an initial value\
+    \ is not given in the declaration, the variable's value is undefined."
+  merge: -1
+  pgno: 34
+- img_proc: true
+  md: '# CHAPTER 2 Basic JavaScript
+
+
+    +   The expression x === y computes whether x and y are equal, while x = y assigns
+    the value of y to x. The expression x == y is another kind of equality test, but
+    should generally be avoided because its behavior, while completely specified in
+    the official language definition, is often unexpected.
+
+
+    +   An array is a collection of values, indexed from 0.
+
+
+    +   JavaScript statements include declarations, expression statements, conditionals,
+    loops, and break and continue statements.
+
+
+    # Exercises
+
+
+    +   1. Let x = 10, y = 4, b = false. Evaluate the following expressions:
+
+    **(a) x * y > 25 && !b ? y % -3 : 2**
+
+    **(b) --y * 4 ===2 || (b --true)
+
+
+    +   2. Find out about the numeric operators: <<, >>, >>>, -, and ^. Describe each
+    of them in your own words. Experiment with them in a console or scratch page.
+
+
+    +   3. Consult a JavaScript reference manual (print or online) and make a list
+    of all Math operations in the language.
+
+
+    +   4. What does the following expression represent?
+
+
+    ```
+
+    Math.random() < 0.75 ? "Heads" : "Tails"
+
+    ```
+
+
+    +   5. Evaluate the following expressions:
+
+    **(a) 5 / 0
+
+    **(b) 0 / 0
+
+    **(c) Infinity + Infinity
+
+    **(d) Infinity - Infinity
+
+    **(e) Infinity * Infinity
+
+    **(f) Infinity / Infinity
+
+
+    +   6. Explain, in your own words, the difference between a variable having the
+    value undefined, and the error that occurs when a variable has not been defined.
+
+
+    +   7. Write a (one-line) script that alerts a greeting message in Armenian, Arabic,
+    Hebrew, Hindi, Chinese, or any other language using a non-Latin script.
+
+
+    +   8. Look up the details of the array operations slice and splice on the Web
+    or in a JavaScript reference book. Experiment with these'
+  merge: -1
+  pgno: 35
+- img_proc: true
+  md: "# EXERCISES\n\noperations in a scratch page until you are able to explain in\
+    \ your own words.\n\n9. What is the expression x < y ? x : y good for?\n\n10.\
+    \ In the \"Rats are very intelligent\" example on page 24, what happens when one\
+    \ of the array items is the empty string? What happens when an array item is a\
+    \ number? The value undefined? You will want to modify and run the script to find\
+    \ out.\n\n11. Look up information on the string split operation. Evaluate the\
+    \ following expressions:\n\n+   (a) \"one three\".split(\" \")\n\n+   (b) \"abracabra\"\
+    .split(\"a\")\n\n12. Write a script that prompts the user for a string containing\
+    \ numbers separated by spaces, and then alerts the minimum value, the maximum\
+    \ value, and the sum. For example, if the input is 2 9 3 4, the script should\
+    \ alert Minimum is -9, Maximum is 4, Sum is 1.\n\n13. Write a script that repeatedly\
+    \ prompts a user to enter a word or phrase, until the empty string is entered.\
+    \ Collect all of the inputs into an array while they are being input. Convert\
+    \ all of the strings to uppercase, and then sort the array. Finally, alert the\
+    \ array, showing each array entry on its own line.\n\n14. Write a script that\
+    \ prompts the user for a string, then alerts the input string is a palindrome.\
+    \ A palindrome is a string that is spelled same both forward and backward—for\
+    \ example, \"I\",\"racecar\". Experiment with variations of the script that is\
+    \ insensitive to the case of letters (e.g., allowing \"Abba\" code) and that ignore\
+    \ nonletters (e.g., allowing \"Madam, I'm Adam\").\n\n15. Explain, in your own\
+    \ words, the behavior of each of the scripts:\n\n```\nvar i = 0;\nwhile (i < 10)\
+    \ {\n  continue;\n  i++;\n}\nalert(\"All done\");\n```"
+  merge: -1
+  pgno: 36
+- img_proc: true
+  md: "```\nfor (var i = 0; i < 10; i++) {\n  continue;\n}\nalert(\"All done\");\n\
+    ```"
+  merge: -1
+  pgno: 37
+- img_proc: true
+  md: '# # Functions
+
+
+    A function is an object that carries out a specific computation; it is written
+    once but can be run over and over again. This chapter illustrates how to define
+    and use functions, spending some time on one of JavaScript''s most useful and
+    powerful features: the ability to pass functions as arguments to other functions.
+
+
+    # ## 3.1 Function Definitions and Function Calls
+
+
+    Conceptually, a function transforms inputs to outputs. Figure 3.1 shows the “computation”
+    of an account balance after $t$ years, given a starting balance $p$, and an annual
+    percentage rate $r$, compounded $n$ times per year.
+
+    In JavaScript, a function consists of a block of executable code, called its *body*,
+    together with zero or more “inputs,” called *parameters*. The following examples
+    show how function values are written in JavaScript.
+
+
+    ![](img/8b2f777e78c0b5f77130ace12a52e3b1_38_0.png)'
+  merge: -1
+  pgno: 38
+- img_proc: true
+  md: "# CHAPTER 3 Functions\n\n```\n// A function that computes the cube of a number.\n\
+    function(x) { return x * x * x; }\n\n// A function that computes an account balance.\n\
+    function(p, n, r, t) { return p * Math.pow(1 + (r / n), n * t); }\n\n// A function\
+    \ that alerts a message twice, without returning anything.\nfunction(message)\
+    \ { alert(message); alert(\"I said: \" + message + \"!\"); }\n```\n\nBecause functions\
+    \ exist to be reused, you will generally see function values assigned to variables.\n\
+    \n```\n// Returns the area of a circle with radius r.\nvar circle_area = function(r)\
+    \ { return Math.PI * r * r; }\n\n// Returns the sum of all elements in an array.\n\
+    var sum = function(a) {\n  var result = 0;\n  for (var i = 0; i < a.length; i++)\
+    \ {\n    result += a[i];\n  }\n  return result;\n};\n\n// Reverses all strings\
+    \ in an array.\nvar reverse_all = function(a) {\n  for (var i = 0; i < a.length;\
+    \ i++) {\n    a[i] = a[i].reverse();\n  }\n};\n\n// Uppercases all strings in\
+    \ an array.\nvar uppercase_all = function(a) {\n  for (var i = 0; i < a.length;\
+    \ i++) {\n    a[i] = a[i].toUpperCase();\n  }\n};\n\n// Whether x evenly divides\
+    \ y.\nvar divides = function(x, y) { return x % y === 0; };\n```\n\nTo use, \"\
+    call,\" a function, you \"pass\" it a parenthesized list of arguments. The function's\
+    \ body will run with those arguments in place of its parameters. A return statement,\
+    \ if any, is used to pass the result of a computation back to the \"caller.\"\
+    \ Functions that finish without executing a return statement return undefined.\n\
+    \n```\n// Assign a function value to a variable.\nvar cubed = function(x) { return\
+    \ x * x * x; };\n```"
+  merge: -1
+  pgno: 39
+- img_proc: true
+  md: '# 3.2 Variable Scope
+
+
+    ```
+
+    // Call the function, using the return value.
+
+    var numberOfRubiksCubeBlocks = cubed(3) - 1;
+
+
+    // Function calls can be nested.
+
+    alert(cubed(5));                                  // Alerts 125.
+
+    ```
+
+
+    If you don''t pass enough arguments, the extra parameters will be initialized
+    to undefined.
+
+
+    ```
+
+    var show = function(x, y) { alert(x + " " + y); };
+
+    show(1);                               // Alerts "i undefined".
+
+    ```
+
+
+    It is not uncommon to see functions with no parameters. For example:
+
+
+    ```
+
+    var diceRoll = function() { return 1 + Math.floor(6 * Math.random()); };
+
+    ```
+
+
+    To run this function, you must write diceRoll(), not simply diceRoll.
+
+    The former expression calls the function; the latter simply is the function.
+
+    Figure 3.2 shows the difference.
+
+
+    ![](img/8b2f777e78c0b5f77130ace12a52e3b1_40_0.png)
+
+
+    # 3.2 Variable Scope
+
+
+    Each time you call a function, JavaScript immediately creates something called
+    an activation object that holds all the parameters and any variables defined in
+    the body of the function. It also creates and initializes a special variable called
+    arguments, though this is beyond the scope of this book.
+
+    These variables are different from variables outside of the function—even those
+    with the same name, as we shall soon see.'
+  merge: -1
+  pgno: 40
+- img_proc: true
+  md: "# 32 CHAPTER 3 Functions\n\nWe'll use the following script to illustrate how\
+    \ JavaScript treats variables and parameters:\n\n```\n/* 1 * var remove_spaces\
+    \ = true;\n/* 2 * var message = prompt(\"Enter a message\");\n/* 3 * var codpoints\
+    \ = function(text) {\n/* 4 * var message = [];\n/* 5 * for (var i = 0; i < text.length;\
+    \ i++) {\n/* 6 * if (remove_spaces && text[i] == \" \" {\n * continue;\n/* 7 *\n\
+    }\n/* 8 *\n * message.push(text.charCodeAt(i));\n/* 9 *\n/* 10 *\n/* 11 * return\
+    \ message;\n/* 12 *\n/* 13 * alert(codpoints(message));\n```\n\nThis script prompts\
+    \ the user for a message and then alerts the codepoints of each character in the\
+    \ message, except for the space characters. If the user enters Mobi8, the script\
+    \ will alert 77, 98, 244, 208, 183.\n\nThe script defines three top-level variables\
+    \ (remove_spaces, message, and codpoints), where “top-level” is another way of\
+    \ “defined outside of any function.” The function referred to by (top-level) has\
+    \ one parameter (text) and two local variables (message and i). Local variables\
+    \ are variables defined within some function.\n\nThe script begins execution on\
+    \ line 1, and declares a new variable remove_spaces, initializing it to true.\
+    \ This new variable is added to the collection of preexisting top-level variables,\
+    \ including prompt, alert, Infinity, and dozens more. Next, on line 2, a new variable\
+    \ is declared and initialized with whatever the user types into the prompt. For\
+    \ the sake of argument, let the user enter Buã dzua. On line 3, we declare another\
+    \ top-level variable, codpoints, whose initial value is codpoints; Note executing\
+    \ that line 3 declares the variable codpoints; it does not call the function.\
+    \ This brings us to the situation in Figure 3.3.\n\nNext execute line 1, the first\
+    \ part of which is the actual call of function codpoints. JavaScript builds the\
+    \ activation object and fills it with the parameters and local variables. Parameters\
+    \ will be immediately initialized with their corresponding arguments, but local\
+    \ variables are immediately initialized to undefined. See Figure 3.4.\n\nOn line\
+    \ 4, we assign the empty array value [] to the local variable message. Note that\
+    \ there are two variables called message: one top-level\n\n+   1. Note this very\
+    \ important distinction between top-level variables and local variables. Top-level\
+    \ variables are declared and initialized when they are first encountered, but\
+    \ local variables come into existence immediately when the function in which they\
+    \ are declared is called."
+  merge: -1
+  pgno: 41
+- img_proc: true
+  md: '# 3.2 Variable Scope
+
+
+    ![](img/8b2f777e78c0b5f77130ace12a52e3b1_42_0.png)
+
+
+    variable and one variable that is local to the codecs function. Updating the local
+    variable in no way affects the top-level one, even though they share the same
+    name.
+
+
+    In lines 5-11, the array message grows with the datapoints of every character
+    in the variable text, except that space characters are skipped if the variable
+    remove_spaces is true. The interesting thing is that remove_spaces is defined
+    outside the function; however, it can be referred to by code inside the function
+    body. This is a common scenario in many programming languages: “outer” variables
+    are visible to “inner” regions of a script. It is also very useful: alert and
+    prompt and friends exist at the top level, and we don''t want them hidden from
+    function bodies. Figure 3.5 illustrates our situation at the end of the function
+    body.
+
+
+    More technically, function activation objects are linked together, from the inside
+    out, forming what is called a scope chain. When using a name from code inside
+    the datapoints function, JavaScript first looks for
+
+
+    ![](img/8b2f777e78c0b5f77130ace12a52e3b1_42_1.png)
+
+
+    **Figure 3.4 At function entry'
+  merge: -1
+  pgno: 42
+- img_proc: true
+  md: "# CHAPTER 3 Functions\n\n![](img/8b2f777e78c0b5f77130ace12a52e3b1_43_0.png)\n\
+    \n**Figure 3.5** At the end of the function body\n\nname in the function's activation\
+    \ object. If the name is not found, it moves along the scope chain and looks for\
+    \ the name in the next object. The object containing all the top-level variables\
+    \ is last on the chain. As a consequence:\n\n+   - Inside the function, the name\
+    \ message will always refer to the inner variable of that name, never the outer\
+    \ one.\n- Because the chain runs “outward” only, code outside of a function cannot\
+    \ see any variables inside the function.\n\nThe second point, though it follows\
+    \ directly from the language rules defining chains, still merits an example:\n\
+    \n```\nvar say_hello = function() {\n  var message = \"Hello\";\n  alert(message\
+    \ + \"!!!\");\n}\n```\n\n```\nmessage = \"Goodbye\"; // This isn't the inner variable.\n\
+    say_hello(); // Alerts \"Hello!!!\"\n```\n\nThe fact that local variables are\
+    \ protected from outside interference means that functions are an excellent way\
+    \ to package and share code. Furthermore, a function gets its own copies of its\
+    \ local variables and parameters every time it is called, so you never have to\
+    \ worry about a variable named x defined in one function clashing with a variable\
+    \ named x in another function. They are two separate variables.\n\n+   2. The\
+    \ fact that each call gets its own copies supports an extremely powerful programming\
+    \ technique called recursion, whose underlying theory is explained in any computer\
+    \ science textbook."
+  merge: -1
+  pgno: 43
+- img_proc: true
+  md: "# 3.3 Function Statements\n\n# 3.3 Function Statements\n\nJavaScript's function\
+    \ *statement* provides an alternative way to declare a variable and assign it\
+    \ a function value. The following statement declares and initializes a variable\
+    \ called cubed:\n\n```\nfunction cubed(x) {\n  return x * x * x;\n}\n```\n\nWe\
+    \ prefer to use the longer form, as it makes clear that functions are values.\n\
+    \n# 3.4 Functions as Arguments to Functions\n\nAll programmers realize at some\
+    \ point writing the same code over and over is a bad thing. If you had to, say,\
+    \ encrypt a large batch of credit card numbers, you certainly wouldn't duplicate\
+    \ the 50 or so lines of encryption code for each credit card number. Rather, you\
+    \ would write an encryption function taking the credit number as a parameter.³\
+    \ Now your code follows the DRY (Don't Repeat Yourself) principle—a good thing.\n\
+    \nSometimes these two functions, both of which return arrays generated by manipulating\
+    \ each element of an input array in a particular way:\n\n```\nvar square_all =\
+    \ function(a) {\n  var result = [];\n  for (var i = 0; i < a.length; i++) {\n\
+    \    result[i] = a[i] * a[i];\n  }\n  return result;\n};\n\nvar capitalize_all\
+    \ = function(a) {\n  var result = [];\n  for (var i = 0; i < a.length; i++) {\n\
+    \    result[i] = a[i].toUpperCase();\n  }\n  return result;\n}\n```\n\nThese two\
+    \ functions *differ* in only one small way. The first function squares an element;\
+    \ the latter capitalizes it. We can code the common\n\n+   3. When this concept\
+    \ becomes second nature to you, you have moved beyond your programming white belt."
+  merge: -1
+  pgno: 44
+- img_proc: true
+  md: "# CHAPTER 3 Functions\n\nstructure once and parametrize it by the small difference?\
+    \ JavaScript makes this very easy:\n\n```\nvar do_all = function(a, f) {\n  var\
+    \ result = [];\n  for (var i = 0; i < a.length; i++) {\n    result[i] = f(a[i]);\n\
+    \  }\n  return result;\n};\n```\n\nThe actual operation you perform on each array\
+    \ element (e.g., squaring, capitalizing) is now passed as an argument:\n\n```\n\
+    var square_all = function(a) {\n  return do_all(a, function(x) { return x * x;\
+    \ });\n};\nvar capitalize_all = function(a) {\n  return do_all(a, function(x)\
+    \ { return x.toUpperCase(); });\n};\n```\n\nIf placing an entire function value\
+    \ in the middle of a return statement looks cryptic, you can define these arguments\
+    \ separately:\n\n```\nvar square = function(x) { return x * x; };\nvar capitalize\
+    \ = function(x) { return x.toUpperCase(); };\nvar square_all = function(a) { return\
+    \ do_all(a, square); };\nvar capitalize_all = function(a) { return do_all(a, capitalize);\
+    \ };\n```\n\nRemember from the previous chapter how calling a.sort() sorted an\
+    \ array alphabetically? You can, if desired, pass a comparison function to sort\
+    \ to sort it differently. A comparison function is a two-argument function returning\
+    \ a negative value if the first argument is less than the second, O if the two\
+    \ arguments are equal, and a positive value if the first argument is larger.\n\
+    \n```\nvar a = [3, 6, 10, 1, 40, 25, 8, 73];\nalert(a.sort()); // Alphabetically.\n\
+    alert(a.sort(function(x, y) { return x - y; })); // Numeric ascending.\nalert(a.sort(function(x,\
+    \ y) { return y - x; })); // Numeric descending.\n```"
+  merge: -1
+  pgno: 45
+- img_proc: true
+  md: "We've just shown that functions can be passed to other functions, but we haven't\
+    \ really said why this matters. We'll see in Chapter 5 that passing functions\
+    \ is JavaScript's way of handling user interaction in web pages. It also happens\
+    \ to be one of the most dominant programming paradigms in artificial intelligence\
+    \ programming. And, as described in [SPo06], it aids the construction of massively\
+    \ large, distributed applications.\n\n# 3.5 Functions Returned from Functions*\n\
+    \nNot only can functions be passed to other functions, but functions can be returned\
+    \ as well. Let's say you need a function that adds 10 to its argument, and another\
+    \ that adds 17. We can capture the similar parts of these functions in one place:\n\
+    \n```\nvar incrementer = function(n) {\n  return function(x) { return x + n; }\n\
+    }\nvar add_ten = incrementer(10);\nvar add_seventeen = incrementer(17);\nalert(add_ten(236));\
+    \      // Alerts 246.\n```\n\nThe add_ten and add_seventeen, as well as any value\
+    \ returned from calling incrementer, is called a closure. Closures play an integral\
+    \ role in some very sophisticated JavaScript structures, such as sequence generators\
+    \ and modules. These topics are well beyond the scope of this book, but details\
+    \ can be found in [Fla06] and [Cr08a].\n\n# Chapter Summary\n\n+   - A function\
+    \ value is a parameterized block of code that can run (or \"called\") as often\
+    \ as you wish.\n- When calling a function, we pass arguments to its parameters.\
+    \ Excess parameters are initialized to undefined. Functions can return results\
+    \ to the caller via a return statement.\n- JavaScript functions are values and,\
+    \ therefore, can be assigned to variables, passed as arguments to other functions,\
+    \ and returned from functions.\n\n# Exercises\n\n+   1. Write a function that\
+    \ returns the average of its two arguments. For example, the call average(-2,\
+    \ 10) should return 4."
+  merge: -1
+  pgno: 46
+- img_proc: true
+  md: "# CHAPTER 3 Functions\n\n2. Write a function that returns the average of all\
+    \ items in an array. For example, average([4, 5, 7, 2]) should return 4.5.\n\n\
+    3. Write a function that returns the number of occurrences of a given character\
+    \ in a string. For example, give the string \"Rat-a-tat-tat\" and the character\
+    \ t, your function should return 5.\n\n4. Explain, in detail, what is alerted\
+    \ by this script:\n\n```\nvar x = 5;\nvar f = function() { alert(x); var x = 10;\
+    \ alert(x); };\nf();\nalert(x);\n```\n\n5. Explain, in detail, what happens when\
+    \ you run this script:\n\n```\nalert(\"Hello\");\nvar alert = 2;\nalert(\"World\"\
+    );\n```\n\n6. Write a function called twice that takes in a function f and a value\
+    \ x, and returns f(f(x)).\n\n7. Define a function calledTheEighthPower that takes\
+    \ in a value x and returns x². Use the square function defined in this chapter\
+    \ and the twice function you defined in Exercise 6.\n\n8. Suppose you tried to\
+    \ implement the square.all function we wrote in Section 3.4 using the incorrect\
+    \ expression do.all(a, square()). Explain why this is wrong.\n\n9. Suppose you\
+    \ were asked by an employer, teacher or friend to write a function that determines\
+    \ whether a given function would finish or whether it would run forever. In other\
+    \ words, you are asked to fill the body of this function:\n\n```\n// Returns true\
+    \ if the call f() finishes; false if it runs forever.\nvar finishes = function()\
+    \ {\n  // Fill this in...\n}\n```\n\nBefore attempting to implement this function,\
+    \ consider the following function:\n\n```\nvar paradox = function() {\n  if (finishes(paradox))\
+    \ {\n    while (true) {\n  }\n}\n```"
+  merge: -1
+  pgno: 47
+- img_proc: true
+  md: 'Suppose function paradox finishes: The expression finishes(paradox) on line
+    2 will return true, but then it will run forever on line 3. Now suppose it doesn''t
+    finish: The call to finishes on line 2 will return false, at which point it will
+    reach the end of its body and ... finish. Why does this mean that function finishes
+    is logically, mathematically, scientifically impossible to write?'
+  merge: -1
+  pgno: 48
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 49
+- img_proc: true
+  md: "# 4 chapter Objects\n\nJavaScript values come in two flavors: simple values\
+    \ (numbers, Booleans, strings, null, and undefined) and objects. This chapter\
+    \ shows how to define and use objects.\n\n# 4.1 Object Notation\n\nIn JavaScript,\
+    \ objects have properties, and properties have values. Property values may be\
+    \ objects as well, allowing complex structures to be defined. An object literal\
+    \ is an expression defining a new object; several examples follow.\n\n```\nvar\
+    \ dress =\n  { size: 4, color: \"green\", brand: \"DKNY\", price: 834.95 };\n\
+    var location = {\n  latitude: 31.131013,\n  longitude: 29.976977\n};\nvar song\
+    \ = {\n  title: \"This Town\",\n  track_number: 6,\n  album: \"Beauty and the\
+    \ Beat\",\n  artist: \"The Go-Go's\",\n  authors: [\"Charlotte Caffey\", \"Jane\
+    \ Wiedlin\"],\n  duration: 200\n};\n```"
+  merge: -1
+  pgno: 50
+- img_proc: true
+  md: "# CHAPTER 4 Objects\n\n```\nvar p = {\n  name: { first: \"Ciarán\", last: \"\
+    O'Brien\" },\n  country: \"Ireland\",\n  birth: { year: 1952, month: 2, day: 17\
+    \ },\n  kids: [\"Ciara\", \"Seán\", \"Bearach\", \"Máiréad\", \"Aisling\"]\n};\n\
+    ```\n\nAfter defining an object, you can access its properties with either a dot\
+    \ or square brackets.\n\n```\np.country => \"Ireland\"\np[\"country\"] => \"Ireland\"\
+    \np.birth.year => 1952\np.birth[\"year\"] => 1952\np[\"birth\"].year => 1952\n\
+    p[\"birth\"][\"year\"] => 1952\np.kids[1] => \"Seán\"\np[\"kids\\][1] => \"Seán\"\
+    \n```\n\nProperty names can be strings (with or without quotes) or non-negative\
+    \ integers (0, 1, 2, ...). Arrays, which we have seen before, are objects with\
+    \ integer properties and one called length. Functions are objects, too.\n\nThe\
+    \ dot notation for properties is a bit more concise, but cannot be used with integer\
+    \ properties (i.e., you can't say., nor can it be used if the property is a JavaScript\
+    \ reserved word (we saw these back on page 21). In these cases, the bracket notation\
+    \ is required (e.g., a[10], a[\"var\"]).\n\nIt's not necessary to fully specify\
+    \ all the properties of an object when defining it. You can later add (or delete)\
+    \ properties if you like:\n\n```\nvar dog = {}; // Object with no properties.\n\
+    dog.name = \"Kärl\"; // Now the object has one property.\nalert(dog);\ndog.breed\
+    \ = \"Rottweiler\"; // Now the object has two properties.\ndelelete dog.name;\
+    \ // Now one property again.\n```\n\nObject properties can be, and often are,\
+    \ function values. In such a function, this expression refers to the object containing\
+    \ the function.\n\n```\nvar vector = {\n  i: 4,\n  j: -3,\n  magnitude: function()\
+    \ {return Math.sqrt(this.i*this.i+this.j*this.j)};\n};\nalert(vector.magnitude());\
+    \ // Alerts 5\nvector.i = 0;\nalert(vector.magnitude()); // Alerts 3\n```"
+  merge: -1
+  pgno: 51
+- img_proc: true
+  md: '# 4.2 Object Values
+
+
+    The following two facts about objects are essential to understanding how
+
+    uuse objects correctly and efficiently, and should be memorized:
+
+
+    +   * Every evaluation of an object literal creates a brand-new object.
+
+
+    +   * The value of an object literal expression is not really the object itself,
+
+    but rather a reference, or pointer, to it.
+
+
+    We need to tell this story in pictures. Figure 4.1 shows the result of
+
+    executing a script that declares three variables and creates two objects.
+
+    Note how the two object facts are reflected in the following:
+
+
+    +   * Because two separate object literals are evaluated, two distinct ob-
+
+    jects are created, even though each object contains the same proper-
+
+    ties with the same values.
+
+
+    +   * Although the code seems to suggest the objects themselves are stored
+
+    inside the variables, the variables contain only references.
+
+
+    The use of references means that one object can be simultaneously referred
+
+    by more than one variable. Either variable can be used to update the
+
+    object''s properties, and can be used to see these updates. See Fig-
+
+    are 4.2.
+
+
+    You can disassociate an object from a variable by assigning a different
+
+    value to the variable. The special value null is particularly useful in this
+
+    regard. It''s generally used to represent the notion of a "pointer to nothing",
+
+    as as shown in Figure 4.3.
+
+
+    Every object you create up storage space. When an object ceases
+
+    to be referenced from any variable, it becomes known as garbage. JavaScript
+
+    garbage eventually gets picked up, freeing the storage space it occupied
+
+    for you to create new objects. Generating garbage is a good thing; it''s a
+
+    bad thing to hold on objects you will never use again, as that space will
+
+    never be freed up. A program that loses memory because unused objects
+
+    are not being reclaimed is said to have a memory leak.
+
+
+    ![](img/8b2f777e78c0b5f77130ace12a52e3b1_52_0.png)
+
+
+    Figure 4.1 Three variables and two objects'
+  merge: -1
+  pgno: 52
+- img_proc: true
+  md: "# CHAPTER 4 Objects\n\n```\nvar a = {x:1, y:2};\nvar b = a;\nvar c = {x:1,\
+    \ y:2};\nb.y = 3;\nalert(a.y); // 3\n```\n\n![](img/8b2f777e78c0b5f77130ace12a52e3b1_53_0.png)\n\
+    \nFigure 4.2 Updating a property of a shared object\n\n```\nvar a = {x:1, y:2};\n\
+    var b = a;\nvar c = {x:1, y:2};\nb.y = 3;\nc = null;\n```\n\n![](img/8b2f777e78c0b5f77130ace12a52e3b1_53_1.png)\n\
+    \nFigure 4.3 Assigning null to a variable\n\n# 4.3 Prototypes\n\nConsider a script\
+    \ that deals with thousands of points on the Earth's surface. A function that\
+    \ creates points would free us from writing object literals for every point, each\
+    \ of which would need to repeat the words \"latitude\" and \"longitude\". We might\
+    \ try this script:\n\n```\n// This function creates a new point every time it\
+    \ is called.\nvar make_point = function(lat, lon) {\n  return {\n    latitude:\
+    \ lat,\n    longitude: lon,\n    is_valid: function() {\n      return Math.abs(this.latitude)\
+    \ <= 90 &&\n             Math.abs(this.longitude) <= 180;\n    },\n    antipodes:\
+    \ function() {\n      return make_point(-this.latitude, -this.longitude);\n  \
+    \  },\n    is_arctic_circle: function() { return this.latitude > 66.5608; }\n\
+    \  };\n};\n\n// Example calls\nvar mauna_ke = make_point(19.8210, -155.4683);\n\
+    ```"
+  merge: -1
+  pgno: 53
+- img_proc: true
+  md: '# 4.3 Prototypes
+
+
+    ```
+
+    alert(mauna_kea.is_in_arctic_circle()); // Alerts false.
+
+    alert(mauna_kea.is_valid());             // Alerts true.
+
+    var north_pole = make_point(90, 0);
+
+    alert(north_pole.is_in_arctic_circle());    // Alerts true.
+
+    alert(north_pole.antipode().latitude);      // Alerts -90.
+
+    ```
+
+
+    Of course, this code is terribly wasteful. Every point object we create requires
+    space to store all five fields (even though functions are meant to be shared),
+    and each object gets its own copy of the three functions (see Figure 4.4).
+
+
+    ![](img/8b2f777e78c0b5f77130ace12a52e3b1_54_0.png)
+
+
+    Figure 4.4 Wasteful copies of property
+
+
+    Fortunately, the designers of JavaScript realized the need for similar objects
+    to share properties. For this reason, they gave every object a special hidden
+    property that is (either null or) a reference to another object called its prototype.
+    Whenever you try to read a nonexistent property of an object, JavaScript will
+    look for the property in the prototype object. If the property isn''t there, the
+    prototype of the prototype is searched, and so on. Figure 4.5 shows a single prototype
+    holding the shared properties for our points.
+
+
+    ![](img/8b2f777e78c0b5f77130ace12a52e3b1_54_1.png)
+
+
+    Figure 4.5 Objects sharing a prototype'
+  merge: -1
+  pgno: 54
+- img_proc: true
+  md: "# CHAPTER 4 Objects\n\nJavaScript attaches the prototype to an object at the\
+    \ time the object is created. Let's see how this is done.\n\n# 4.4 Constructors\n\
+    \nAs mentioned earlier, JavaScript functions are objects. Every function has (at\
+    \ least) two properties: length, the number of parameters in its declaration,\
+    \ and prototype, the object that will be attached to all objects created with\
+    \ this function, provided the function was called with the operator new. When\
+    \ a function is called this way (e.g., new Point(...)) JavaScript does some magic:\n\
+    \n+   1. It creates a brand-new object.\n\n+   2. It sets the prototype of this\
+    \ new object to the value of this being the new object.\n\n+   3. It executes\
+    \ the function, with the value of this being the new object.\n\n+   4. It returns\
+    \ the new object from the function unless you explicitly return something else.\n\
+    \nFunctions intended to be used with new are constructors. The convention for\
+    \ creating new types of things (such as points) is to write a constructor that\
+    \ fills in properties unique to each instance, while putting into the prototype\
+    \ properties that are shared. For points, we can define and use the following\
+    \ constructor:\n\n```\nvar Point = function(lat, lon) {\n  this.latitude = lat;\n\
+    \  this.longitude = lon;\n};\n\nPoint.prototype.is_in_arctic_circle = function()\
+    \ {\n  return this.latitude > 66.5608;\n};\nPoint.prototype.antipode = function()\
+    \ {\n  return make_point(-this.latitude, -this.longitude);\n};\nPoint.prototype.is_valid\
+    \ = function() {\n  return Math.abs(this.latitude) <= 90 &&\n         Math.abs(this.longitude)\
+    \ <= 180;\n};\n```\n\nBe careful not to confuse the prototype property of the\
+    \ function with the function's own prototype. Remember—the value of Point.prototype\
+    \ is the object that will be attached to the prototype for all objects created\
+    \ with the new Point(...)."
+  merge: -1
+  pgno: 55
+- img_proc: true
+  md: '# 4.4 Constructors
+
+
+    ![](img/8b2f777e78c0b5f77130ace12a52e3b1_56_0.png)
+
+
+    Figure 4.6 Object, function, and array prototypes
+
+
+    Let''s see the new type in action:
+
+
+    ```
+
+    var p = new Point(40.185486, 44.515069);
+
+    alert(p.is_in_arctic_circle()); // Alert false.
+
+    ```
+
+
+    Objects created with curly braces {...}, internally call new Object(), so these
+    objects have a prototype of Object.prototype. Creating an array with [...] calls
+    new Array(), so an array is Array.prototype. Similarly, all function objects receive
+    Function.prototype. The "built-in" prototypes are used to store properties common
+    to all objects, arrays, and functions, respectively. Also, as prototypes objects
+    themselves, they have prototype properties, too. All except Object.prototype,
+    that is—it is designed to be the ultimate prototype. Figure 4.6.
+
+
+    Because Object.prototype sits at the end of every prototype chain, its functions
+    are available to every object.¹ The hasProperty and toString properties are the
+    most widely used. The former returns a Boolean value indicating whether there
+    is a property with the given name in the object itself (not the prototype!); the
+    latter returns a string representation of the object.
+
+
+    +   1. Unless some clever (or malicious) programmer has manipulated the prototype
+    chain.'
+  merge: -1
+  pgno: 56
+- img_proc: true
+  md: "# CHAPTER 4 Objects\n\n```\nvar p = new Point(40.185486, 44.515069);\nalert(p.hasOwnProperty(\"\
+    latitude\")); // Alerts true.\nalert(p.hasOwnProperty(\"antipode\")); // Alerts\
+    \ false.\nalert(p.toString()); // Alerts [object Object].\n```\n\nWhoops! The\
+    \ last alert was ugly. We can fix this by giving Point.prototype its own toString\
+    \ property. This will allow points to display nicely, without affecting the way\
+    \ other objects are displayed (Exercise 9 at the end of this chapter):\n\n```\n\
+    Point.prototype.toString = function() {\n  return (\"N\" + Math.abs(this.latitude)\
+    \ + +\n    (this.latitude > 0 ? \"S\" : \",\") + +\n    Math.abs(this.longitude)\
+    \ + +\n    (this.longitude > 0 ? \"E\" : \"W\"));\n}\nvar p = new Point(40.185486,\
+    \ 44.515069);\nalert(p.toString()); // Alerts (40.185486N,44.515069E)\n```\n\n\
+    The toString property is actually quite special. This function can call:\n\n```\n\
+    alert(p);\n```\n\nHere p is a point and alert expects a string. In JavaScript,\
+    \ when a string is expected but an object is supplied, the object's toString property\
+    \ function is called.\n\nThe hasOwnProperty function is generally used in conjunction\
+    \ with the variant of the for statement (sometimes called the for in statement)\
+    \ that iterates through all of an object's properties, often including those in\
+    \ the object's prototype.\n\n```\nvar point = new Point(0, 0);\n// latitude, longitude,\
+    \ antipode, is_in_arctic_circle, etc.\nfor (var p in point) {\n  alert(p);\n}\n\
+    ```\n\nMany scripts will want to exclude properties from the prototype, the following\
+    \ idiom is the most common choice:\n\n```\nvar point = new Point(0, 0);\n// latitude\
+    \ and longitude only.\nfor (var p in point) {\n  if (point.hasOwnProperty(p))\
+    \ {\n    alert(p);\n  }\n}\n```"
+  merge: -1
+  pgno: 57
+- img_proc: true
+  md: '# 4.5 Native, Built-In, and Host Objects
+
+
+    # 4.5 Native, Built-In, and Host Objects
+
+
+    JavaScript programs are designed to run inside some host environment, such as
+    a cell phone, web browser, Adobe Acrobat, or Adobe Photoshop. Objects you create
+    in a JavaScript program, as well as a handful of built-in objects are called native
+    objects. Objects provided by the host environment are called host objects. Web
+    browsers, for instance, supply host objects such as windows, documents, buttons,
+    cookies, frames, browsing histories, menus, text fields, and many more. You''ll
+    see some of these in the next chapter.
+
+
+    Among the few built-in JavaScript objects are Object, Function, Number, Boolean,
+    String, Date, Array, RegExp and Error. One of the more useful of these objects
+    is the constructor function Date. The expression new Date() creates a date object
+    for the current time. If necessary, you may then modify properties of the date
+    (e.g., the month or year) by calling functions such as setMonth and setYear.
+
+
+    ```
+
+    var d = new Date();
+
+    d.setFullYear(''2285'');
+
+    d.setMonth(8);
+
+    d.setDate(20);
+
+    d.setHours(18);
+
+    d.setMinutes(29);
+
+    d.alert(d);
+
+    ```
+
+
+    For this code, we got the following alert (your output may differ):
+
+
+    Sun 20 2285 18:29:54 GMT-0700 (PDT)
+
+
+    Note the month value. JavaScript uses 0 through 11—beware!
+
+
+    # 4.6 Regular Expressions*
+
+
+    A regular expression, or regex, is a pattern representing a set of strings. JavaScript
+    regexes are generally delimited with slashes (/ ... /). We speak of regex as matching
+    strings. For example:
+
+
+    +   /dog|rat|cat/ matches any string containing "dog" or "rat" or "cat," the "/"
+    character means or.
+
+    /colou?r/ matches any string containing "color" or "colour," because the question
+    mark means optional.
+
+
+    The complete list of built-ins, and their properties and behavior, can be found
+    in [ECM99].'
+  merge: -1
+  pgno: 58
+- img_proc: true
+  md: '# CHAPTER 4 Objects
+
+
+    +   - /gle* matches any string containing "gogle", "gogle", "gogle"
+
+    "googogle," and so on, because the asterisk means zero or
+
+    more. The plus sign is related; it means one or more: /go+*/ will
+
+    not match "ggle" for example.
+
+
+    +   - [aeiou]b matches any string containing "bab", "beb", "bib", "bob"
+
+    or "bub", because the square brackets mean one of.
+
+
+    +   - /Once/ matches any string beginning with "Once" (indicated by the
+
+    caret).
+
+
+    +   - /ss/ matches any string ending with "ss" (indicated by the
+
+    sign).
+
+
+    +   - /dog*/ matches any string that begins and ends with "dog"—in other
+
+    words, it matches only the string "dog".
+
+
+    +   - [A-PR-YO-0-9]$ matches only a string of 10 characters, each of
+
+    which is an uppercase letter A through P or R through Y, and a decimal
+
+    digit.
+
+
+    +   - /z(3,5)/ matches "zzz", "zzzz," and "zzzzz".
+
+
+    +   - /\d+/ matches any string containing a whitespace character followed
+
+    one or more decimal digits 0–9 followed by a whitespace character.
+
+
+    The test function on regexp will tell you whether a regex matches
+
+    a string, whereas the search function on strings will return the
+
+    string of the first match. You can also use regexes when splitting
+
+    strings or replacing pieces of strings.
+
+
+    ```
+
+    /ab/cd+/?\.test("tab characters") => true
+
+    /[0-9]+\.test("U2 - War") => false
+
+    "JavaScript".search(/[N-Z]/) => 4
+
+    "Brendan".search(/x/) => -1
+
+    "ladedada".split(/\//) => ["1", "ed", "a"]
+
+    "Hello".replace([ei]/, "u") => "Hullo"
+
+    ```
+
+
+    The Regex constructor is required when the pattern depends on
+
+    known until the script is running:
+
+
+    ```
+
+    var name = prompt("What''s your name?");
+
+    var pattern = new Regex("^" + name + "$");
+
+    ```
+
+
+    Can you see why writing /name$/ be wrong?
+
+    A full treatment of regular expressions requires more space than this is
+
+    av in this short guide. You can, for instance, capture the piece of the
+
+    string matched by the regex using the match and exec functions. Special
+
+    pattern characters as ?= and ?! allow matching if and only if the'
+  merge: -1
+  pgno: 59
+- img_proc: true
+  md: '# 4.7 The Global Object
+
+
+    matched string is, or not, followed by some given pattern. Taking the time to
+    master regular expressions will pay many dividends. Well-chosen regexes can turn
+    100 lines of code into fewer than 10.
+
+
+    # 4.7 The Global Object
+
+
+    Every JavaScript environment has a single, unique object known as the global object.
+    For those interested in the technical aspects of the language:
+
+
+    +   1. Top-level variables are really properties of the global object.
+
+
+    +   2. The global object appears at the end of every scope chain, meaning it is
+    searched last when looking up variables.
+
+
+    In fact, the scope chains in Figures 3.3 through 3.5 can now be understood to
+    be objects in their own right, with the global object being found at the end of
+    the chain. Variables and parameters of a function are properties of the function''s
+    activation object.
+
+
+    The global object actually contains a fair number of properties when JavaScript
+    starts up. Among these are NaN, Infinity, isNaN, isFinite, undefined, escape,
+    unescape, parseInt, parseFloat, Object, Array, Function, Date, Boolean, and all
+    the rest of what we have been the built-in constructors.
+
+
+    The built-in objects, then, are simply properties of the built-in global object.
+    You don''t usually think about this fact because you never mention the global
+    object when referring to it. However—and here where things get really interesting—JavaScript
+    environments are allowed to augment the global object with anything they like.
+    In Web environments, the global object contains dozens of properties. For example,
+    document is a reference to the innards of the containing web page; screen is a
+    reference to a screen object describing the size and available colors; alert is
+    a function that pops up a message box; and so on. There''s even a property of
+    the global object called window is—get this—a reference to the global object itself!
+    Meaning you can write
+
+
+    ```
+
+    window.window.window.window.window.alert("Hi");
+
+    ```
+
+
+    ... but doesn''t mean you.
+
+
+    There is a great deal more on the global object and host objects in Chapter 5,
+    where we write scripts that live and run within a web browser.'
+  merge: -1
+  pgno: 60
+- img_proc: true
+  md: "# Chapter Summary\n\n+   - Objects consist of properties, which contain values.\
+    \ Property values can be, and often are, other objects.\n\n+   - Object values\
+    \ are actually references, so the exact object can be referred to by multiple\
+    \ variables at the same time.\n\n+   - Every object contains a hidden reference\
+    \ to another object, called its prototype. When a request for a property is made\
+    \ on an object and the object doesn't have that property, the request is sent\
+    \ to the prototype.\n\n+   - A constructor creates a new object and assigns its\
+    \ prototype.\n\n+   - A JavaScript environment consists of native objects and\
+    \ host objects. The built-in objects are a subset of the native objects\n\n# Exercises\n\
+    \n+   1. Let p = { x: 1, y: [ 4, {z: 2 } ] }. What is p.y[1]?\n\n+   2. What is\
+    \ the value of { x: 1, y: 2 }.y? Would you ever write-something like that?\n\n\
+    +   3. What is the difference between p[\"dog\"] and p[\"dog\"]?\n\n+   4. Write\
+    \ a function that takes in a song object, like the example in Section 4.1, and\
+    \ returns its duration in minutes. The duration stored in the object is in seconds.\n\
+    \n+   5. Write a function that takes in an array of song objects and returns the\
+    \ cumulative duration of all of the songs, seconds.\n\n+   6. How many objects\
+    \ are created by the following for statement?\n\n```\nfor (var i = 0; i < 100;\
+    \ i++) {\n  alert(x: 1, y: 2);\n}\n```\n\n+   7. Given the point constructor in\
+    \ Section 4.3, write code that creates a point object, then assigns an integer\
+    \ value to its toString property. What happens when you call alert with this object?\
+    \ (You will need to try this code; the answer is not in the text.)\n\n+   8. Write\
+    \ a constructor function suitable for constructing song objects like the song\
+    \ in the example in Section 4.1.\n\n+   9. Explain why adding toString to Point.prototype\
+    \ does not affect the way objects other than points are converted to strings."
+  merge: -1
+  pgno: 61
+- img_proc: true
+  md: '+   10. Suppose your friend expresses annoyance with having to type the word
+    Math in front of every mathematical function, and decides to declare a number
+    of top-level variables like this: `var sin = Math.sin; var cos = Math.cos; var
+    log = Math.log;` and so on. What do you tell your friend?
+
+
+    +   11. Make a list of the properties of the global object in the JavaScript environment
+    of your favorite browser and operating system.
+
+
+    +   12. Explain why window.window.window.window.alert("Hi")") works, in your own
+    words.'
+  merge: -1
+  pgno: 62
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 63
+- img_proc: true
+  md: '![](img/8b2f777e78c0b5f77130ace12a52e3b1_64_0.png)
+
+
+    # # Interaction
+
+
+    Thus far, your scripts have communicated with their users exclusively via prompt
+    when requesting input and via alert when displaying output. As with any language,
+    user interaction with JavaScript can be accomplished in other ways; of these,
+    the most popular by far is the Web. Now that you are better acquainted with the
+    language, we can discuss web page interaction more effectively.
+
+
+    Because JavaScript and the Web are very tightly coupled in most people''s minds,
+    you might have expected a chapter such as this to appear sooner in the Web. We
+    have purposely delayed discussing Web technologies to this point because we believe
+    that maximizing JavaScript''s potential with the Web involves understanding JavaScript
+    as a programming language first. Thus this chapter has a second purpose: It is
+    also intended to bring the material from previous chapters together, like individual
+    puzzle pieces that can form a meaningful picture.
+
+
+    # ## 5.1 Phone Numbers Revisited
+
+
+    Taken in isolation, the phone number scripts introduced in Chapter 1 are not ready
+    for prime time: The only way to invoke them is to copy/paste or type the code
+    into scratch page, and then have that page run the script. It certainly isn''t
+    fair to ask this of your potential user base; we expect the scripts to be part
+    of a web page with a convenient user interface, a simple version of which is shown
+    in Figure 5.1. The screenshot on the left displays the page when it is loaded
+    for the first time. The view on the right displays the page after some input into
+    the text field and some "dialing" on the virtual keypad.'
+  merge: -1
+  pgno: 64
+- img_proc: true
+  md: '# CHAPTER 5 Interaction
+
+
+    ![](img/8b2f777e78c0b5f77130ace12a52e3b1_65_0.png)
+
+
+    (a) On initial load
+
+
+    (b) After user interaction
+
+
+    Figure 5.1 A simple web-based interface for phone number conversions
+
+
+    Visit http://javascript.cs.lmu.edu/phone-form to interact with the page for yourself.
+    The application consists of two files: phone-form.html and phoneConversion.js.
+    When you view the page''s source, you are seeing phone-form.html. To see the phoneConversion.js
+    file, use http://javascript.cs.lmu.edu/phoneConversion.js.
+
+
+    Take a moment to read the code in phoneConversion.js. Note its overall structure;
+    it is essentially a list of function definitions. As part of good programming
+    practice, there are comments aplenty. The function code itself includes constructs
+    from previous chapters: variables, different kinds of statements and operators,
+    objects, arrays, and even advanced features such as regular expressions.
+
+
+    The rest of this chapter describes the technology behind these dynamic web pages,
+    making full use of the languages discussed so far. We conclude by introducing
+    Ajax, a combination of JavaScript and dynamic web pages with behind-the-scenes
+    data exchange to produce highly interactive, efficient web applications.
+
+
+    # 5.2 Dynamic HTML
+
+
+    Web pages are written in Hypertext Markup Language (HTML). They are delivered
+    over the Internet by web servers to web browsers, rendered by these browsers into
+    the visual representations with which we are so familiar. Without JavaScript,
+    these pages are static—that is, loaded,'
+  merge: -1
+  pgno: 65
+- img_proc: true
+  md: '# 5.2 Dynamic HTML
+
+
+    their content will not change. The only way to change the display is to click
+    on a link, which effectively restarts the connect-and-render cycle for a new web
+    page. With JavaScript, the web page gains the ability to trigger changes to itself,
+    becoming dynamic based on the user''s interaction with the content on that page.
+
+
+    (While prior knowledge of HTML is not absolutely necessary at this point, it may
+    be helpful nonetheless. You might want to have one or more HTML tutorials or references
+    handy, on paper or on screen.) A quick search should yield an abundance of such
+    resources.
+
+
+    The key to JavaScript''s facilitation of dynamic HTML is its ability to access
+    and manipulate a web page''s content that is identical to accessing and manipulating
+    any other object or function. A web browser, its window(s), and its HTML documents
+    are exposed to JavaScript in the form of well-defined, built-in objects. Scripts
+    can access the information in these objects just as they would any other JavaScript
+    object described in the previous chapters. Changes these objects results in immediate,
+    sometimes visible, effects. For a quick demonstration of such an effect, type
+    and run the following code into the scratch page:
+
+
+    ```
+
+    document.getElementById("introduction").style.background = "red";
+
+    ```
+
+
+    Despite not having an explanation of this code yet, can you still see a correlation
+    between what happened and what ran? From a language perspective, you can tell
+    us this: A function called getElementById, defined for some object called document,
+    returns other object, which has a property style, which in turn has a property
+    background. The value "red" is then assigned to that background property. The
+    rub, of course, is what is this function? What are these properties? What do they
+    have to do with the web page?
+
+
+    The objects, functions, and properties that were used in the previous one-liner,
+    and many more, are collectively known as the document object model (DOM). The
+    DOM serves as the central technology that enables dynamic HTML.¹
+
+
+    # 5.2.1 The Document is “Just” a Built-In Object
+
+
+    From a language point of view, the DOM is a set of built-in objects and functions,
+    no different from the likes of Math, Date, prompt, and alert. What makes the DOM
+    interesting is its direct connection to visible elements such as the web browser,
+    its windows, and the content within these windows. Thus, as stated in this section''s
+    title, "just"
+
+
+    +   1. A full discussion of HTML is beyond the scope of this book; our assumption
+    is that we at least recognize how HTML consists of a set of nested tags with accompanying
+    attributes.'
+  merge: -1
+  pgno: 66
+- img_proc: true
+  md: "# CHAPTER 5 Interaction\n\nanother built-in object, it is probably the most\
+    \ complex object in the bunch. In addition, because the DOM serves as the liaison\
+    \ between web page users and JavaScript's functionality, it includes the concept\
+    \ of events, which represent things that \"happen\" outside the explicit activity\
+    \ in your JavaScript code. Events includes actions taken by the current user on\
+    \ the web page or even background activity performed by the web browser, such\
+    \ as something that you might have scheduled for advance or periodic execution\
+    \ or incoming data over the network.\n\nThe rudimentary scratch page at http://javascript.cs.lmu.edu/scratch\
+    \ is itself a web page, and therefore, is visible as a JavaScript object. Type\
+    \ this into the scratch page and run it:\n\n```\nalert(document);\n```\n\nWhat\
+    \ do you see? You see an alert dialog box, of course, but what does it contain?\
+    \ It certainly isn't null or undefined. That, us the very least, document is a\
+    \ bona fide, predefined object. The alert message tells you precisely that.\n\n\
+    Because document is a built-in object, it must have properties. To see some of\
+    \ them, enter and run this script:\n\n```\nvar i = 0;\nfor (var property in document)\
+    \ {\n  alert(property);\n  i = i + 1;\n  if (i > 4) {\n    break;\n  }\n}\n```\n\
+    \nYou see a sequence of five alert dialogs, each with a name such as bgColor,\
+    \ width, or getElementById. We can't give you a definitive list here, because\
+    \ different browsers may list document's properties in different orders (they\
+    \ may include properties that other browsers won't have). But note how, code-wise,\
+    \ this is exactly how you would iterate through the properties of any old JavaScript\
+    \ object.\n\nThe i counter in the preceding script limits the number of properties\
+    \ shown to you; without it, you would have to press Enter or Return a number of\
+    \ times. There is, however, a more palatable way to view all of document's properties.\
+    \ Try this script:\n\n```\nvar footer = document.getElementById(\"footer\");\n\
+    footer.innerHTML = \"<b>document properties:**<br/>\";\nfor (var property in document)\
+    \ {\n  footer.innerHTML += property + \"<br/>\";\n}\n```"
+  merge: -1
+  pgno: 67
+- img_proc: true
+  md: '# 5.2 Dynamic HTML
+
+
+    # 59
+
+
+    ![](img/8b2f777e78c0b5f77130ace12a52e3b1_68_0.png)
+
+
+    Figure 5.2 The JavaScript scratch page, with a script that has appended document''s
+    properties to its content
+
+
+    What happens now? You should see something that''s not unlike Figure 5.2. Your
+    script has changed the actual content of the scratch page. This is the essence
+    of dynamic HTML—changes to document are immediately manifested as changes to the
+    browser window. This capability represents a potential replacement for the venerable
+    alert function.
+
+
+    The "DOM object" does not stop with document or its immediate properties. What
+    lies beneath is an entire tree of objects, with document at the top. And if you
+    are familiar with HTML, it gets even better: the structure of this tree parallels
+    the structure of the web page''s HTML. Figure 5.3 illustrates this for our now-familiar
+    JavaScript scratch page. Individual elements of the tree (e.g., document, p, form)
+    are called nodes; each DOM node contains additional nodes (e.g., head contains
+    meta and title), the containing node is a parent node, while the contained nodes''s
+    parents are children. A child node may have only one parent; document, the only
+    node that has no parent is the root of the tree.
+
+
+    How about a replacement for prompt? If adding content to a web page corresponds
+    to displaying output, then it makes sense that reading the usereditable sections
+    of a page, such as text areas, check boxes, radio buttons, lists, and more, would
+    correspond to receiving input. In fact, this is the case. Try this script:
+
+
+    ```
+
+    var scriptArea = document.getElementById(''scriptArea'');
+
+    var footer = document.getElementById(''footer'');
+
+    footer.innerHTML = "<pre>" + scriptArea.value + "</pre>";
+
+    ```'
+  merge: -1
+  pgno: 68
+- img_proc: true
+  md: '# CHAPTER 5
+
+
+    ![](img/8b2f777e78c0b5f77130ace12a52e3b1_69_0.png)
+
+
+    Figure 5.3 HTML and document representations of the JavaScript script page, with
+    paragraph text elided for brevity; the parallels between HTML tags and document''s
+    properties (the properties of its properties, etc.).
+
+
+    When you run this script, you should find that the web page has been appended
+    with something that looks exactly like the content of the scratch page''s text
+    area. That''s because it is the content of the scratch page''s text area—you have
+    just asked JavaScript to access that text and copy it to the bottom of the page
+    (also known as the page''s “footer")!
+
+
+    The script has replaced `prompt` with another mechanism for receiving information
+    from the the user; specifically, it reads the content of the scratch page''s text
+    area. The rudimentary scratch page has one other mechanism: the `Run button`.
+    The ability to click a button counts as user input.
+
+
+    One last thing before we move on: When we say the DOM exposes everything on a
+    web page to JavaScript, we can do *everything*. This following script demonstrates
+    this flexibility—even-buttons, whose content is typically sacrosanct in most other
+    environments (or else not changeable on the fly), are fair game in the DOM:
+
+
+    ```
+
+    var runButton = document.getElementById("runButton\nrunButton.value = "Please
+    Execute This Script as Soon As Possible";
+
+    ```'
+  merge: -1
+  pgno: 69
+- img_proc: true
+  md: '# 5.2 Dynamic HTML
+
+
+    But why stop there? You can never have too many buttons:
+
+
+    ```
+
+    var form = document.getElementById("scratch");
+
+    var new = document.createElement("input");
+
+    newButton.type = "button";
+
+    Button.value = "I''m New! But I Do Nothing...";
+
+    form.appendChild(newButton);
+
+    ```
+
+
+    (Needless to say, you really should type and run these here to get the most out
+    of what you''re reading—there are no screenshots to let you off the hook.)
+
+
+    # 5.2.2 Elements and IDs for Fun and Profit
+
+
+    HTML defines a large number of objects beyond those illustrated in our rudimentary
+    scratch page. To introduce you to more DOM elements without requiring you to write
+    entire pages from scratch, we move to a new scratch page that includes more objects
+    to manipulate. This page can be seen in Figure 5.4 and is accessible online at
+    http://javascript.info/eduplayground.
+
+
+    ![](img/8b2f777e78c0b5f77130ace12a52e3b1_70_0.png)
+
+
+    **Figure 5.4** A JavaScript scratch page with more DOM elements that you can manipulate'
+  merge: -1
+  pgno: 70
+- img_proc: true
+  md: '# CHAPTER 5 Interaction
+
+
+    Before we dive further into this new page, let''s demystify some of the properties
+    that we have used so far. The top-level document object (Figure 5.3) has the following
+    functions:
+
+
+    getElementById(name): This function locates and returns, as a JavaScript object,
+    the page element whose id attribute in HTML has been set to name.
+
+
+    createElement(type): This function creates a new HTML element, as if the tag specified
+    in type were written into the original HTML file. The new element does not get
+    added to the page yet (the function appendChild does that), so you can think of
+    element as existing in a "holding area" as you customize its properties.
+
+
+    Dynamic HTML activity typically starts with a call to document.getElementById
+    so to "get to" the DOM node that you want to manipulate. This manipulation involves
+    reading or writing properties such as the following:
+
+
+    innerHTML: This property, which is available for nodes that correspond to HTML
+    blocks as <p> ...</p> or <div> ... </div>, represents the exact HTML code that
+    appear within that block''s opening and closing tags. Assigning a new value to
+    this property results in an immediate change to the corresponding section of the
+    web page.
+
+
+    value: This property, which is available for most nodes that user input, represents
+    the current content of that element, such as the text within a text field, the
+    state of a button, or the current selection in a list. As with innerHTML, assigning
+    something to this property immediately modifies the corresponding element in the
+    web page.
+
+
+    DOM nodes within document also have functions of their own; these, we have used
+    only appendChild(newElement). This function adds Element to the invoked DOM node''s
+    list of children. It is equivalent to inserting a new HTML tag into a page''s
+    HTML source, within the tag that corresponds to the invoked DOM node.
+
+
+    So far, we have described three functions and properties that you will use most
+    of them, a lot more is available in the DOM. For a comprehensive list, web searches
+    as "JavaScript DOM properties" or "JavaScript DOM reference" should yield sites
+    that contain this information. Popular sites include those hosted at http://www.w3schools.com/js/js_obj_htmldom.asp,
+
+
+    ![](img/8b2f777e78c0b5f77130ace12a52e3b1_71_0.png)'
+  merge: -1
+  pgno: 71
+- img_proc: true
+  md: '# 5.2 Dynamic HTML 63
+
+
+    http://www.mozilla.org/docs/dom, and finally the authoritative standard-defined
+    by the World Wide Web Consortium (W3C) at http://www.w3.org/DOM. Most of these
+    sites have a search function or outline that is based on the actual object, function,
+    and property names within the DOM, such as the handful just listed.
+
+
+    We''re ready to start working with our new playground page. The key to reaching
+    the element (tag) that you want is use getElementById. But, as they say, with
+    this power comes a responsibility: The HTML source must make sure that the elements
+    you want have assigned to them in the first place. This is a key aspect of the
+    HTML-JavaScript symbiosis for JavaScript to get to (and manipulate) the web page
+    must be marked with identifiers for the tags the scripts will care about.
+
+
+    It''s easy to spot the IDs in a web page. While viewing our new page in a browser,
+    select browser''s View Source, Page Source, or a similarly named command. This
+    opens a new window showing the HTML code for the web page. Every tag with an id
+    attribute (example, <p id="description") is an element that you can reach using
+    getElementById.
+
+
+    Take a moment to get the ID''s tag in the page, and then type of this in script:
+
+
+    ```
+
+    // Grab the elements that we need.
+
+    var input1 = document.getElementById("input1");
+
+    var input2 = document.getElementById("input2");
+
+    var status = document.getElementById("status");
+
+
+    // Read the required values.
+
+    var number1 = parseFloat(input1.value);
+
+    var number2 = parseFloat(input2.value);
+
+
+    // Write the result.
+
+    status.innerHTML = number1 + " + " + number2 + " = " + (number1 + number2);
+
+    ```
+
+
+    You''ve just written a simple adder! The script grabs the input1 and input2 text
+    fields from the page, converts the text within those fields (the value property)
+    into numbers via the built-in parseFloat function, and adds the resulting numbers
+    together. While addition might be trivial, this script is meant to show you how
+    judicious assignment of IDs to HTML elements makes it extremely easy, with the
+    help of getElementById, to access and modify the content of a web page—including
+    content that solicits user input, such as the input fields.
+
+
+    +   2. Of course, the correctness of this adder is subject to the correctness
+    of JavaScript arithmetic in general, as discussed in Chapter 2.'
+  merge: -1
+  pgno: 72
+- img_proc: true
+  md: "# 64 CHAPTER 5 Interaction\n\nOf course, the labeling and information on the\
+    \ page doesn't really say\nadder\", so let's tweak the web page accordingly with\
+    \ this script:\n\n```\ndocument.getElementById(\"header\").innerHTML =\n  \"A\
+    \ Simple Dynamic HTML Adder\";\ndocument.getElementById(\"introduction\").innerHTML\
+    \ =\n  \"This page adds two numbers.\";\ndocument.getElementById(\"instructions\"\
+    ).innerHTML = \"+\n  \"Type a number in each of the fields below, \" +\n  \"paste\
+    \ the addition script into the text area, \" +\n  \"then click the <Add/>i button\"\
+    ;\ndocument.getElementById(\"inputLabel\").innerHTML = \" Addend 1\"\ndocument.getElementById(\"\
+    input2Label\").innerHTML = \" Addend 2\"\ndocument.getElementById(\"status\").innerHTML\
+    \ = \"\"\ndocument.getElementById(\"runButton\").innerHTML = \" Add Em\";\n```\n\
+    \n```\n// Make everything else invisible.\nvar idsToHide = [\"check\", \"checkLabel\"\
+    , \"row2\", \"row3\\];\nfor (var index = 0; index < idsToHide.length; index++)\
+    \ {\n  document.getElementById(idsToHide[index]).style.display = \"none\";\n}\n\
+    // A final reminder that we need the separate script\npasted in.\nalert(\"Don't\
+    \ forget to paste/type in the adder script!\");\n```\n\nOnce this script is run,\
+    \ replace it with the pure addition script. Note how\nthe changes \"stick\" for\
+    \ as long as you refresh the page. The JavaScript\nobjects that you've manipulated\
+    \ stay with the page until one is read\nto the browser's window. Web pages booking\
+    \ JavaScript's \"life span\":\nObjects, variables, functions, and everything else\
+    \ is discarded when a\nweb page is closed, refreshed, or replaced, to be taken\
+    \ by whatever\nDOM/scripts/variables appear in the next page.\n\nThe following\
+    \ collection of one-liners shows how you aren't restricted\nto just text values\
+    \ or the innerHTML; free to run just the ones\nthat interest you most. A one-liner\
+    \ may affect more than\nelelement. For example, selecting a radio button automatically\
+    \ de-selects\nanother radio button. In addition, one of the lines has no immediate\
+    \ visible\neffect, but affects the behavior of some lines after—can you identify\
+    \ this\nline?\n\n```\ndocument.getElementById(\"input1\").disabled = true;\ndocument.getElementById(\"\
+    check\").disabled = true;\ndocument.getElementById(\"check\").checked = true;\n\
+    document.getElementById(\"radio2\").checked = true;\n// The radio buttons are\
+    \ exclusive.\ndocument.getElementById(\"radio4\").checked = true;\ndocument.getElementById(\"\
+    password\").value = \"swordfish\"\ndocument.getElementById(\"password\").readOnly\
+    \ = true;\n```"
+  merge: -1
+  pgno: 73
+- img_proc: true
+  md: '# 5.2 Dynamic HTML
+
+
+    ```
+
+    document.getElementById("category").selectedIndex = 2;
+
+    document.getElementById("category").style["vertical-align"] = "bottom";ndocument.getElementById("wonder").multiple
+    = true;
+
+    document.getElementById("wonder").style.float = "right";ndocument.getElementById("wonder").options[1].selected
+    = true;
+
+    document.getElementById("wonder").options[3].selected = true;
+
+    document.getElementById("status").style.border = "medium outset #000";ndocument.getElementById("status").style["text-align"]
+    = "right";
+
+    ```
+
+
+    You have noticed that properties that are purely-visual—affect only the appearance
+    of an HTML element (e.g., color, fonts, borders, visibility, margins), and not
+    its data or behavior (e.g., checked/unchecked, enabled/disabled)—are reached through
+    an intermediary style property. These properties pertain to a distinct standard
+    Cascading Style Sheets (CSS). Unfortunately, CSS by itself is a whole additional
+    ball of wax, and is beyond the scope of this book. For now, you can get by in
+    just making sure to include “CSS” as a search term when looking for information
+    about a web content that pertains only to appearance. The authoritative CSS home
+    page is http://www.w3.org/Style/CSS.
+
+
+    Before moving on, take a moment to appreciate that there is a seemingly endless
+    loop of objects and properties within the DOM. The way to gain proficiency with
+    these things is to find what is available (via books and online references) and
+    experiment by manipulating these properties on some page with known content and
+    IDs, as our playground page. It’s safe to change, add, and delete things as much
+    as you like, because everything you dynamically gets quite away once you close
+    the window or visit another.
+
+
+    # 5.2.3 Events
+
+
+    Now that you''ve seen how scripts can read, write, and have total control over
+    the content of a web page, a chicken-and-egg question may have emerged in your
+    mind: Who runs the scripts? With the scratch pages so far, you write the code
+    and then it “happen”. This is not how it works. Scripts just run. This section
+    discusses precisely how these scripts happen, using HTML/JavaScript’s mechanism.
+
+
+    An event is a term for something that may happen during the life of a program,
+    outside of the code that is currently being executed. If a program cares about
+    a particular event—for example, it may need to respond to mouse clicks—then an
+    event handler is set up for that event. The handler is nothing fancy; it is a
+    function. What distinguishes event handlers from other functions is, once set
+    up, they are called “automatically” when an event takes place.
+
+
+    > 3. Yes you guessed it—there’s more to this topic than can be said within the
+    scope of this.'
+  merge: -1
+  pgno: 74
+- img_proc: true
+  md: "# CHAPTER 5 Interaction\n\nMost of the time, events refer to actions performed\
+    \ by a user. For example, mouse activity triggers \"mouse events,\" keyboard actions\
+    \ trigger \"key events,\" and so so on. If you think about it, such user activity\
+    \ is indeed, a good fit for events: Users can move or click the mouse at any time,\
+    \ press keys at any time, or do anything else at any time. Thus the only way for\
+    \ your program to respond to such activities is through an event handler. There\
+    \ are non-user-triggered events, though; you'll read about a particularly useful\
+    \ one in Section 5.3. But for now, let's stick with things that a user might do.\n\
+    \nThe page http://javascript.cs.lmu.edu/playground does not, by default, handle\
+    \ any events in a custom way. Let's add a trivial event handler just to get things\
+    \ started:\n\n```\ndocument.getElementById(\"header\").onclick =\nfunction() {\
+    \ alert(this.innerHTML); };\n```\n\nWhen you run this script, nothing will seem\
+    \ to happen. Something has happened, however: the page has been told to handle\
+    \ click events on the page element whose ID is header. This element happens to\
+    \ be the large heading of the page—click on it now and see what happens.\n\nSimple,\
+    \ but perhaps not too useful. Here's something that you are more likely to see\
+    \ \"in the wild.\" Again, type it into http://javascript.cs.lmu.edu/playground\
+    \ and run the script:\n\n```\n/*n Enables or disables the category drop-down menu.\n\
+    */\nvar setCategoryEnabled = function(enabled) {\n  // Recall that \"1\" in JavaScript\
+    \ means \"not\"\n  document.getElementById(\"category\").disabled = !enabled;\n\
+    }\n\n/*\n* Enables or disables the category drop-down menu based\n* on whether\
+    \ the \"Check me\" box is checked.\n*/\nvar handleCheckClick = function() {\n\
+    \  setCategoryEnabled(this.checked);\n}\n\n// Sync the drop-down menu and the\
+    \ check box.\nsetCategoryEnabled(document.getElementById(\"check\").checked);\n\
+    \n// Set the event handler.\ndocument.getElementById(\"check\").onclick = handleCheckClick;\n\
+    ```"
+  merge: -1
+  pgno: 75
+- img_proc: true
+  md: "# 5.2 Dynamic HTML 67\n\nAfter running this script, clicking on the check box,\
+    \ which corresponds to its checked property, will enable or disable the Category\
+    \ drop-down menu accordingly, via its disabled property. handleCheckClick is\n\
+    t event handler for the [mouse] click event of the box. This partic-\nlar handler\
+    \ illustrates another property of these functions:\nWhen invoked by an event,\
+    \ some properties have preassigned values. this\nis set to refer to the DOM element\
+    \ that triggered that event, so we can\nuse this.checked without calling getElementById.\
+    \ Also, though\nused in this example, event is set to an object representing the\
+    \ event-\nself. These event objects hold supplementary information about the event\n\
+    that just took place. The information that is available depends on the\nevent\
+    \ type. With a mouse event, for a key event, you might want to know\nthe mouse\
+    \ coordinates of the event. For a key event, you might want to\nif the Shift key\
+    \ was being held down at the time. You can look up\ndynamic HTML/DOM/JavaScript\
+    \ reference sites for comprehensive lists\nof the events that are available and\
+    \ the information they provide in\nthe corresponding objects.\n\nHere's another\
+    \ script that shows off a few more events, in-cluding access to the aforementioned\
+    \ event object from within an eventnhhandler invocation:\n\n```\n* Eliminate all\
+    \ nondigits from the given string. *\nvar restrictToDigits = function(string)\
+    \ {\n    return string.replace(/[^\\d]/g, \"\");\n}\n\n* Checks if the value is\
+    \ all digits. *\nvar isAllDigits = function(string) {\n    return string.match(/\\\
+    d+$/);\n}\n\n* Rejects nondigit keypresses. *\nvar handleInputKeyPress = function()\
+    \ {\n    // Yes, this is slight overkill because we are sure to have\n    // a\
+    \ one-character string, but it still works.\n    if (!isAllDigits(String.fromCharCode(event.charCode)))\
+    \ {\n        event.preventDefault();\n    }\n}\n\n* Rejects nondigits in this\
+    \ value, and selects the next field. *\nvar handleBlur = function() {\n    if\
+    \ (!isAllDigits(this.value)) {\n        alert(\"Sorry, only 0-9 are allowed here.\"\
+    );\n        this.value = restrictToDigits(this.value);\n        this.select();\n\
+    \    }\n}\n```"
+  merge: -1
+  pgno: 76
+- img_proc: true
+  md: "# CHAPTER 5 Interaction\n\n```\ndocument.getElementById(\"input1\").onkeypress\
+    \ = handleKeyPress;\ndocument.getElementById(\"input2\").onblur = handleInputBlur;\n\
+    ```\n\nAfter running this script, typing values into the page's Input 1 and Input\n\
+    2 fields. If all well, Input 1 should now accept only digits 0 to 9, with\n other\
+    \ characters being rejected. The way that this task is accomplished\nreveals a\
+    \ new aspect of the event mechanism: event propagation. \"Normal\"\nbutton clicks,\
+    \ text field edits, and other activity are actually done by event\nhandlers, too—they\
+    \ are default handlers that are automatically \"installed\"\nin the DOM nodes.\
+    \ Further, elements can reside within elements—a parent\nelement may have an event\
+    \ handler for some event, but its child does not.\nThis is where propagation comes\
+    \ into play: When triggered, an event is\npassed to a custom handler first, if\
+    \ available. After the custom handler\ncomes the default handler for that \"closest\"\
+    \ element; when there is no\ndef handler (such as for elements that are typically\
+    \ inert,) including\nparagraphs or headings), the event goes to the element's\
+    \ parent, and\n on, until something deals with it or the root of the DOM tree\
+    \ is\nreached.\n\nThere are additional details and caveats to event propagation\
+    \ (part-\nicularly with regard to differences between browsers), but as with other\
+    \ areas,\nthis book is not the place for them. The bottom line is not\nhander,\
+    \ whether assigned by a script or installed by default, has the\nopportunity to\
+    \ respond to an event.\n\nFor input fields, the default handler for keypresses\
+    \ inserts the char-\nacter by the pressed key into the field. In the case of our\
+    \ digit re-\nstructor, we never always want this to happen; we only want digits\
+    \ to be en-\ntered into the text field. That's where the preventDefault function\
+    \ is\nCalling this function tells JavaScript \"stop right here\"—in other\nwords,\
+    \ dont propagate the event to the default event handler. Then, when\nsour custom\
+    \ handler catches nudges, preventDefault() treats them as\nthey never happened\
+    \ (from the point of view of the default key event\nhander for Input 1).\n\nInput\
+    \ 2 will also accept only digits 0 to 9, but checks for conformity\nwith this\
+    \ criterion only after you tap out of field or click on another\ncontrol. If the\
+    \ value in Input 2 contains anything other than 0-9, it will\ner an alert message\
+    \ to that effect when the field loses focus (i.e., it stops\nbeing the target\
+    \ of keypresses). A change in focus (i.e., being or becoming\nto be the recipient\
+    \ of keypresses) is as much an event as a mouse click or a\nkey hit. When an element\
+    \ receives focus (e.g., it's \"tabbed into\" or clicked\nof, the focus event takes.\
+    \ When an element loses focus (e.g., it's\n\"tabbed out of\" or another element\
+    \ is clicked), dynamic HTML engages\na a little word play by invoking onblur (i.e.,\
+    \ the opposite of \"focus\" is\n\"blur\"—get it)?"
+  merge: -1
+  pgno: 77
+- img_proc: true
+  md: '# 5.2 Dynamic HTML 69
+
+
+    Of course, (almost) never see event handling assigned by user-entered code that
+    runs in. Instead, the dynamic web pages that we “just know” how to handle events.
+    In substance, such pages aren''t doing anything differently from what you just
+    did. Instead, the little events are already included as part of the web page''s
+    files, including an option to encode them as attributes of HTML tags.
+
+
+    To see event handling that is set up directly within the page''s source, visit
+    http://javascript.cs.lmu.edu/boxes. This page displays a number of HTML boxes
+    that you can drag around. They also “light up” as your mouse rolls over them.
+    If you view the HTML source of boxes.html, you''ll see like this:
+
+
+    ```
+
+    <div id="bozi"
+
+    class="box"
+
+    style="left:100px; top:100px; width:200px; height:150px;"
+
+    ononmouseover="highlight(this);"
+
+    ononmouseout="unhighlight(this);"
+
+    ononmousedown="startMove(this, event);"
+
+    ononmousemove="move(this, event);"
+
+    ononmouseup="endMove(this);">Hello world!</div>
+
+    ```
+
+
+    These tags show how event handler scripts can run in the HTML source. Every user
+    interface event has a corresponding HTML attribute
+
+
+    With events, dynamic HTML rounds out into complete, self-contained package. When
+    you access a dynamic HTML site, the web browser loads the HTML source. This source
+    is displayed to the user as a web page, and is simultaneously exposed to JavaScript
+    as the document object. As the user reads the web page, he or she may move the
+    mouse, click, press a key, or do something else. If any of these events have associated
+    with a script, the browser runs that script. More likely, the script will access
+    the DOM and manipulate it somehow, by changing some value or adding/removing elements.
+    Once the script finishes, the user is back to looking at the web page, which is
+    now different from the one that was originally read by the browser. The cycle
+    goes on, until the user requests a new web page. The cycle begins again. These
+    event loops go on ad infinitum, until the user quits the web browser.'
+  merge: -1
+  pgno: 78
+- img_proc: true
+  md: '# CHAPTER 5 Interaction
+
+
+    # 5.2.4 Packaging a Dynamic HTML Website
+
+
+    While there is much much more beyond the material presented in this book, the
+    core ideas of (1) the DOM for reading/or writing the content of a web page directly,
+    plus (2) events for responding to user activities within a web page, form the
+    foundation of dynamic HTML. Before we go beyond this foundation, let''s take a
+    quick breath to examine the mechanics of this HTML-JavaScript combination is delivered
+    to a web browser.
+
+
+    In the previous section, event handlers were specified as JavaScript fragments
+    set as attributes right within HTML tags. This is one way to get JavaScript "into"
+    a web page. Two other mechanisms are also commonly used for this:
+
+
+    +   - Direct inclusion of JavaScript in the HTML content
+
+    - Linking to a JavaScript file that is downloaded separately
+
+
+    Both mechanisms actually use the same HTML tag: Depending on how you use the tag,
+    the browser either invokes JavaScript found right in the web page or loads a separate
+    file and runs it.
+
+    Here is the "direct inclusion" version of script:
+
+
+    ```
+
+    <script type="text/javascript">
+
+    var displayMessage = function(message) {
+
+    document.getElementById("message").innerHTML = message;
+
+    };
+
+    </script>
+
+    ```
+
+
+    When the web browser gets to this part of the web page, it executes the included
+    code. In this particular example, the result will be the definition of a displayMessage
+    function. Subsequent script tags, as well as event handlers, will now be able
+    to invoke this function as needed.
+
+    To reference a separate file, an src attribute is added to the script tag.
+
+
+    ```
+
+    <script type="text/javascript" src="messageUtilities.js"></script>
+
+    ```
+
+
+    Upon encountering this tag, the web browser will download JavaScript in messageUtilities.js
+    from the same location as the original HTML and then execute the content of that
+    file. For example, if messageUtilities.js defines an emailMessage function, then
+    that will be defined as a result of loading the messageUtilities.js file. If messageUtilities.js
+    defines a top-level timestamp variable, then that variable will be accessible
+    to any other JavaScript code within that web page.'
+  merge: -1
+  pgno: 79
+- img_proc: true
+  md: "# 5.2 Dynamic HTML\n\nWhen a separate script file is given, script's body is\
+    \ ignored. Don't bother doing this:\n\n```\n<script type=\"text/javascript\" src=\"\
+    messageUtilities.js\">\n  var displayHelp = function() {\n    alert(\"Please visit\
+    \ our support website.\");\n  };\n</script>\n```\n\nIn this case, the code in\
+    \ messageUtilities.js is downloaded and executed, the code defining the displayHelp\
+    \ function is never defined. Just break this up into separate script tags—you\
+    \ can include any script tags as you like, of either type, within an HTML file.\
+    \ The browser treats all of tags as if they were one script code is executed in\
+    \ the order in which the tags appear.\n\nThese JavaScript inclusion mechanisms\
+    \ contribute to an overall JavaScript environment within which all scripts run.\
+    \ Thus the typical JavaScript content of a dynamic HTML site, whether included\
+    \ directly in the HTML or loaded from separate files, consists mainly of function\
+    \ and variable definitions. As a page is loaded and rendered by the browser, these\
+    \ functions and variables cumulatively become available for access. When page\
+    \ loading finishes, user activity that triggers events that call those defined\
+    \ functions or access those variables as needed.\n\nThe built-up JavaScript environment\
+    \ remains valid until the next page is loaded, either by the user clicking on\
+    \ a link or a reload of the web page. Thus the displayMessage function defined\
+    \ in the earlier examples will persist for as long as the web browser stays on\
+    \ the page that defined it. If the browser loads a new page, function goes away.\
+    \ If the browser reloads the page, then displayMessage remains available, but\
+    \ what really happened behind the scenes was that the \"old\" displayMessage function\
+    \ was discarded, and the page's script defines it once more.\n\n# 5.2.5 Other\
+    \ Related Built-In Objects\n\nIn addition to document, which is a JavaScript object\
+    \ representation of a web page's content and structure, other web browser-related\
+    \ JavaScript objects are available. We just list them here and leave full details\
+    \ to materials outside of this book:\n\n+   * window The window in which a web\
+    \ page is being displayed.\n\n+   * navigator The web browser application itself.\n\
+    \n+   * screen The user's display screen."
+  merge: -1
+  pgno: 80
+- img_proc: true
+  md: "# CHAPTER 5 Interaction\n\nUsing these objects is pretty much identical to\
+    \ using document—they're always available, you can read or write them by accessing\
+    \ their properties, and you can make them do things by accessing the functions\
+    \ that you define. The difference is that they are, after all, different objects,\
+    \ so the specific properties and functions that they have be different from those\
+    \ in document. As always, look up more information on these objects to see all\
+    \ of the juicy details.\n\n# 5.2.6 Timed or Ongoing Activity\n\nFor this section\
+    \ on dynamic HTML, we present two functions that are not strictly related to the\
+    \ web environment, but are nonetheless useful in giving web pages an active “live”\
+    \ feel. These functions, setTimeout and setInterval, facilitate deferred or ongoing\
+    \ activity. In other words, allow code to be run at that exact point in a script,\
+    \ but rather at some point in the future or at predefined intervals.\n\nEnter\
+    \ this script into http://javascript.cs.lmu.edu/playground—but don't click Run\
+    \ right away:\n\n```\nvar timeoutStr = document.getElementById(\"input1\").value;\n\
+    var timeout = parseInt(timeoutStr) + 1000;\ndocument.getElementById(\"status\"\
+    ).innerHTML = \"Wait for it...\";\nsetTimeout(function() { document.getElementById(\"\
+    status\").innerHTML = \"Liftoff!\"; }, timeout);\n```\n\nBefore running the program,\
+    \ enter a number, in seconds, into the Input1 text field. The green status should\
+    \ change to Wait for it ... and stay that for the number of seconds you entered.\
+    \ The message will change to Liftoff!\n\nYou have just used the setTimeout function\
+    \ to defer the calling of a JavaScript function for a specific number of milliseconds\
+    \ (thus explaining the preponing of 1000s in this section's examples). setTimeout\
+    \ returns immediately, allowing your code to do other things while the deferred\
+    \ function “waits” in the background until the designated amount of time has elapsed.\
+    \ During that time, your code may have done a bunch of other things, including\
+    \ additional computation and handling events. To see this in action, add an alert\
+    \ call after the line with setTimeout and then run the script again. Note how\
+    \ the alert box appears immediately after you click Run, with Liftoff! appearing\
+    \ later (remember to type some number of seconds into Input1 so that things don't\
+    \ happen too quickly).\n\nNow try this program:\n\n```\nsetInterval(function()\
+    \ { document.getElementById(\"status\").innerHTML = \nnew Date(); }, 1000);\n\
+    ```"
+  merge: -1
+  pgno: 81
+- img_proc: true
+  md: '# 5.3 Introduction to Ajax
+
+
+    This time, you''re using setInterval. Like setTimeout, setInterval defers the
+    calling of a function for some number of milliseconds. Unlike setTimeout, setInterval
+    repeats the function call, between pauses (intervals) of the given amount of time.
+    In the preceding example, the green status area of the playground gets a by-the-second
+    update of the current date and time. The function is called repeatedly, for forever.
+    Without writing additional code, you would need to reload a page, close the browser
+    window, or visit a new site to end the repeated calls.
+
+
+    With additional code, you can exert better control over setTimeout and setInterval.
+    When invoked, these functions actually return something—a value that serves as
+    an identifier for the particular "deferred call" represented by the timeout or
+    interval function. This identifier can be used in clearTimeout and clearInterval,
+    respectively, to stop or cancel the pending function call(s). To use these functions,
+    your code as here:
+
+
+    ```
+
+    // starting a timeout or interval, save the returned ID.
+
+    var timeoutID = setTimeout(function, someDuration);
+
+    var intervalID = setInterval(anotherFunction, anotherDuration);
+
+
+    /* any other code runs here... */
+
+
+    // whenever a timeout or interval must be canceled, invoke:
+
+    clearTimeout(timeoutID);
+
+    clearInterval(intervalID);
+
+    ```
+
+
+    Visit http://javascript.cs.lmu.edu/deferred for a concrete demonstration of this
+    family of functions. You can also use web page to review the HTML and JavaScript
+    files are packaged, as discussed in Section 5.2.5.
+
+
+    At this point, you should have the information needed to fully understand the
+    phone conversion page that was introduced in Section 5.1. Now would be a good
+    time to revisit http://javascript.cs.lmu.edu/phone-form to see how the JavaScript
+    interactions described above come together to produce a relatively useful, and
+    (we hope) fairly understandable, browser-based application.
+
+
+    When you''re ready, we can go ahead and cap off this book with an introduction
+    to Ajax, which combines JavaScript and dynamic HTML with the rest of the Web to
+    realize the full interactive potential of each of these technologies.
+
+
+    # 5.3 Introduction to Ajax
+
+
+    Congratulations—you''re almost done. Having come this far with this book, you
+    should now know, among other things:'
+  merge: -1
+  pgno: 82
+- img_proc: true
+  md: '# CHAPTER 5 Interaction
+
+
+    ■ The overall look (syntax) and meaning (semantics) of the JavaScript scripting/programming
+    language (Chapters 1 to 4)
+
+    ■ The way a web browser “exposes” a web page''s HTML content as a tree of JavaScript
+    objects starting with document (Section 5.2.1)
+
+    ■ The way a user''s interactions with a web page can trigger JavaScript code to
+    change the current content of the web page, or otherwise respond to the user''s
+    activities (Section 5.2.3)
+
+
+    This knowledge forms the foundation for developing browser applications such as
+    the one shown in Section 5.1. Such web pages are essentially downloadable applications
+    that can run within a web browser without requiring additional plug-ins or “native”
+    (to the operating system) code.
+
+    Through all of this, one last aspect of the Web remains unused—and that is the
+    Web itself. No web page is an island; any website''s usefulness and power derives
+    at least partially from its access to/from other sites on the Internet. So far,
+    the only connectivity mechanisms we''ve seen are the link or anchor—an explicit
+    HTML tag that, when clicked, makes the browser discard of its current web page
+    and reload page in its entirety—plus the src variant of script tag which causes
+    the browser to download and run a .js file from the Web. Nevertheless, it is possible
+    to communicate with the Web without causing the full HTML downloading-rendering
+    sequence to start over. This ability, coupled with JavaScript and dynamic HTML,
+    forms the basis of Ajax (Asynchronous JavaScript and XML). As with the rest of
+    this book, we cannot cover Ajax in full detail, but this section introduces you
+    to its primary concepts and mechanisms.
+
+
+    # 5.3.1 Ajax in Action
+
+
+    To Ajax in action, you generally need look no further than any website that claims
+    to use “Web 2.0” technology. Scrolling maps or lists, live updates, and dynamic
+    filters that don''t change addresses or load new pages are very likely using Ajax
+    to accomplish these effects. For a simple example with code that is short enough
+    to easily digest, we''ve written a small Ajax-style application that you can access
+    at http://javascript.cs.lmu.edu/ajax-sample.
+
+
+    You can use the View Source feature of your web browser to look at the HTML (and
+    thus the DOM) of that sample application. To see the JavaScript code that drives
+    this example'
+  merge: -1
+  pgno: 83
+- img_proc: true
+  md: '# 5.3 Introduction to Ajax
+
+
+    Take a look around the source, and note what looks familiar and what doesn''t.
+    By the end of this Ajax introduction, you should have an overall picture of how
+    the whole thing works.
+
+
+    # 5.3.2 The Secret Ingredient: XMLHttpRequest
+
+
+    The central characteristic of an Ajax-style web page (er, application) is that
+    it can send and receive new information without shifting from one web to another.
+    Dynamic HTML processes user activity and interprets it into new information to
+    be sent back to a server, typically elicits a response from that server, consisting
+    of new or updated information that must now be displayed back to the user. At
+    this point, dynamic HTML takes over again, as the information from the server
+    is fed back into the DOM, resulting in updates to the web page''s content.
+
+
+    There is one catch to this connectivity: For security purposes, an application
+    may retrieve information only from the same server that hosted the original Ajax
+    web page. For example, the Ajax code in text, which you have reached via http://javascript.cs.lmu.edu,
+    can make network connections to only http://javascript.cs.lmu.edu. This restriction
+    is called a sandbox security model—it is meant to protect web pages that make
+    all kinds of connections to any arbitrary machine or the Internet... behavior
+    that, more often than not, may be quite malicious, while putting the blame squarely
+    on your computer!
+
+
+    With this caveat in mind, let''s move to some actual code. What''s the new ingredient
+    that adds Ajax to dynamic HTML? Not surprisingly, it''s "just another" built-in
+    JavaScript object: XMLHttpRequest. A web browser is Ajax capable if its JavaScript
+    environment includes XMLHttpRequest. A quick search would give you an up-to-minute
+    list of these browsers, although at this point, unless you''re running really
+    old software (in computer years, not human years!), you can be confident that
+    your browser and your target users'' browsers—will have XMLHttpRequest.
+
+
+    Using XMLHttpRequest is easy; it''s figuring out when to use it''s trickier (on
+    that issue later). In fact, you can create and invoke an XMLHttpRequest in the
+    usual place—a JavaScript scratch page. Type this script into our "enhanced" version
+    at http://javascript.cs.lmu.edu/playground, or skip the typing by going right
+    to http://javascript.cs.lmu.edu/ajax:
+
+
+    ```
+
+    // Set up some objects that everyone will want to see.
+
+    var xml;
+
+    var status = document.getElementById("status");
+
+    ```
+
+
+    +   * This function handles changes to a request''s state.'
+  merge: -1
+  pgno: 84
+- img_proc: true
+  md: "# CHAPTER 5 Interaction\n\n```\nvar stateChanged = function() {\n  var state\
+    \ = xmlHttp.readyState;\n  switch (state) {\n    case 0: status.innerHTML += \"\
+    Not initialized.\"; break;\n    case 1: status.innerHTML += \"Setup...\"; break;\n\
+    \    case 2: status.innerHTML += \"...Sent...\"; break;\n    case 3: status.innerHTML\
+    \ += \"...In Process\"; break;\n    case 4: status.innerHTML += \"...Complete\"\
+    ; break;\n    // Deal with the data here.\n}\n};\n\n// This is the main script\
+    \ sequence.\nstatus.innerHTML = \"\";\nif (XMLHttpRequest) {\n  xmlHttp = new\
+    \ XMLHttpRequest();\n  xmlHttp.onreadystatechange = stateChanged;\n}\n\n// We\
+    \ expect a URL in Input 1.\nxmlHttp.open(\"GET\", document.getElementById(\"input1\"\
+    ).value, true);\nxmlHttp.send(null);\n} else {\n  status.innerHTML = \"Sorry,\
+    \ no AJAX!\";\n}\n```\n\n![](img/8b2f777e78c0b5f77130ace12a52e3b1_85_0.png)\n\n\
+    To use this script in action, type any URL that starts with http:////javascript.cs.lmu.edu\
+    \ (because this is the site that served the page) into the Input 1 text field,\
+    \ click Run, and watch the green status area. What happens? You should see that\
+    \ text gradually builds up into something like this:\n\nSetup...Sent...In Process...In\
+    \ Process...Complete\n\nYou have just sent out your Ajax-style HTTP request! Let's\
+    \ break the script down to see what happened.\nThe script starts by declaring\
+    \ variables for the two objects that we will need later: the XMLHttpRequest and\
+    \ the status area on the web page. Assignment of the status variable is just for\
+    \ the sake of brevity (we don't want to write document.getElementById(\"status\"\
+    ) over and over again), but we definitely need to hold on to the XMLHttpRequest.\
+    \ After the variables come the function stateChanged, followed by the main sequence.\n\
+    \nAfter blinking the status area, the script starts with this line:\n\n```\nif\
+    \ (XMLHttpRequest) {\n```\n\nFor current browser versions, this line is a simple,\
+    \ elegant check for Ajax readiness—we simply test for the presence of the built-in\
+    \ XMLHttpRequest"
+  merge: -1
+  pgno: 85
+- img_proc: true
+  md: '# 5.3 Introduction to Ajax
+
+
+    object. If XMLHttpRequest is defined, then the if condition evaluates to true,
+    and we go on with our Ajax activity; otherwise, it evaluates to false, and the
+    web page should handle the absence of Ajax in some graceful manner. In our example,
+    the web page warns the user that Ajax is not available via the green status region.
+
+
+    Once we know that we can "do" Ajax, the script goes ahead and creates a new object
+    based on the XMLHttpRequest prototype. The remainder of that block assigns one
+    property and calls two functions. We''ll look at the functions:
+
+
+    open: This function defines the connection that the XMLHttpRequest object is to
+    make. The first argument is the method to be used for the connection (common ones
+    are "GET", "PUT", and "POST"), but there are more); the second argument is the
+    URL to access; and the third argument states whether the connection is to be asynchronous
+    (i.e., whether to wait for it to finish before moving on). The sample script uses
+    the "GET" method, takes whatever you typed into the Input field before running
+    the script as the URL, and says true. Of course, we make an asynchronous connection:
+    The''s first "A" in Ajax, after.
+
+
+    send: This function actually initiates the connection and may include some content
+    (its none argument) if applicable. In the case of the sample script, we send the
+    request with no additional information.
+
+
+    After XMLHttpRequest.send(null); the script "ends"—there is no other code to run.
+    Seem strange? At glance, perhaps, but don''t forget that we skipped over this
+    line:
+
+
+    ```
+
+    xml.readyState = stateChanged;
+
+    ```
+
+
+    This assignment, from a big-picture, structural perspective, is perhaps the most
+    important part of the script. The onreadystatechange property is supposed to hold
+    the JavaScript function that is to be invoked when something happens to the XMLHttpRequest
+    object. You won''t call this function in your script, but the browser will. And
+    does.
+
+
+    +   4. If you wish to support older browsers that are Ajax ready but use different
+    request mechanisms, this line explodes into a near-page-long function. For brevity''s
+    sake and because older browsers will eventually fall into disuse, we''re leaving
+    this more inclusive but much longer version for you to find on. One day this check
+    might not even be necessary, as it may become far to assume that all current browsers
+    will be Ajax capable.'
+  merge: -1
+  pgno: 86
+- img_proc: true
+  md: '# CHAPTER 5 Interaction
+
+
+    Sound familiar? *Déjà vu? Mais oui!*—onreadychange is an event.
+
+    While it is not associated with a component on the web page, the way events like
+    onclick, onblur, and keyup are, onreadychange-behaves in the same way: by setting
+    this property, you are “setting up” the XMLHttpRequest with some code to invoke
+    when something happens, leaving it at that until, somewhere outside your code,
+    the environment detects “something” and calls the assigned function. Thus, XMLHttpRequest
+    is event-driven, just like dynamic HTML, and notification of XMLHttpRequest changes
+    can trigger the event handler after the function is assigned, just as with those
+    unpredictable user mouse and key events.
+
+
+    At this point, we can finally look at the stateChanged function, which we now
+    know to be the event handler for whenever the “ready state” of the XMLHttpRequest
+    changes. In fact, readyState is one more property of the XMLHttpRequest object,
+    as seen in the body of stateChanged. In our sample script, stateChanged displays
+    the current value of readyState on the page’s status component. You might recall
+    the switch statement from 2.4.3. In this example, readyState can take values from
+    0 to 4, with each value corresponding pretty to the text in the status area, here
+    we cumulatively build the innerHTML of the status area to show how XMLHttpRequest
+    progresses through connection.
+
+
+    As written in this example, we never see the “initialized” state-because no events
+    trigger stateChanged if the XMLHttpRequest weren''t initialized yet. The state
+    changes to “setup” once open is called (try the script without the send() line).
+    When the URL has been fully loaded, we may get more than one stateChanged invocation
+    at readyState “in process.” When the state becomes “complete.”
+
+
+    You may get multiple “process” state change events, even though the state didn’t
+    change, because “process” is the state during which XMLHttpRequest is receiving
+    data from the URL server. The incoming data may be substantial, a good XMLHttpRequest
+    implementation should keep you posted in case there are some data in the pipeline
+    and your web application might want to do something with it.
+
+
+    That covers the entire sample script, as it was. If you understand the script,
+    you generally understand XMLHttpRequest. The request object does its work, and
+    it settles into readyState === 4 (i.e., “completed,” “loaded,” “finished”), XMLHttpRequest’s
+    involvement technically ends. But from an Ajax perspective, there’s one more thing
+    to do, and that is...
+
+
+    # 5.3.3 Processing Responses
+
+
+    You can round out the introductory Ajax script given in Section 5.3.2 by adding
+    a line between the // Deal with the data. comment and the'
+  merge: -1
+  pgno: 87
+- img_proc: true
+  md: '# 5.3 Introduction to Ajax
+
+
+    break; statement in stateChanged, so that the overall case 4 arms looks
+
+    like this:
+
+
+    ```
+
+    case 4: status.innerHTML += "...Complete";n// Deal with the data.
+
+    document.getElementById("footer").innerHTML = xhr.responseText;
+
+    break;
+
+    ```
+
+
+    Before running this tweaked version of the script, take a moment to think
+
+    about what you would see in the playground page when you click Run for
+
+    whatever URL you''d like to enter into the Input 1 text field. Now actually
+
+    run it. Does what happens match you would happen?
+
+
+    In any case, that single assignment accesses the last XMLHttpRequest-
+
+    Response property that we cover in this book: responseText. Simply put,
+
+    this property, upon completion of an HTTP connection, holds the exact
+
+    content of the server''s response to the request. What do we do with
+
+    content is now completely up to us.
+
+
+    In the sample scratch script, the content is, in all likelihood, HTML
+
+    source, because you were told to provide a URL as input. This should explain
+
+    plain what you saw—that the responseText was assigned directly to the
+
+    innerProperty of the page''s footer connection. When this property
+
+    assigned in this way, the browser tried to render this as it would
+
+    any web page. Of course, the content probably looks nothing like
+
+    what you would have seen had you accessed the URL "normal" way,
+
+    but switches should be recognizable. There are many possible reasons
+
+    this difference, but overall it''s because the content you retrieved was
+
+    meant to be viewed as a stand-alone web page, not embedded in another
+
+    page''s HTML.
+
+
+    The point here is not that you''ve managed to force one website''s content
+
+    to the page, but rather that you are free to do what you wish with the
+
+    information that you receive from the server. Now that you know about
+
+    XMLHttpRequest, you can take a closer look at the source of the fully
+
+    Ajax example from Section 5.3.1. Specifically, find the URL that
+
+    is given to the request''s open function. If you typed that URL directly into
+
+    a web browser, you should not see a web page, but plain text. This plain
+
+    text, however, contains the raw information that is easily displayed
+
+    nicely on the dynamic web page.
+
+
+    This, then, the final phase of a typical Ajax cycle: The server''s content has
+    been received and now resides in the object''s responseText property. This content
+    can now be presented to the user in some way. In the
+
+    end, responseText gets massaged or processed as needed, leading to some
+
+    assignment to a property of a component somewhere in the DOM. If this
+
+    right, the user sees this information, and his or her subsequent actions may now
+    be based on that information.'
+  merge: -1
+  pgno: 88
+- img_proc: true
+  md: '# CHAPTER 5 Interaction
+
+
+    # 5.3.4 Overall Ajax Structure
+
+
+    You may have noticed by now that an effective Ajax application can''t just be
+    "thrown together." Rather, creating one takes genuine planning, design, and discipline.
+    To recap, a full-fledged Ajax application consists of the following main parts:
+
+
+    +   - A model of the data involved in the application. What information is presented
+    initially? What new information will the user provide as or she interacts with
+    the web page? What updated information must be retrieved from the Web based on
+    the user''s input? How does this information translate to the web page?
+
+
+    +   - A well-planned view of the application in the form of the web page that
+    the user initially accesses. This web page must have all relevant components properly
+    identified (via the id attribute in the HTML tag) for easy manipulation by JavaScript.
+    Outgoing information comes from interactive components such as text fields, buttons,
+    and selection lists, while incoming information can show up pretty anywhere on
+    the page.
+
+
+    +   - A set of JavaScript functions that effectively control the application behaves.
+    These functions determine when and how information moves from one place to another.
+    Proper setting of event handlers in the original HTML (e.g., onclick, focus, keyup)
+    helps trigger the interaction cycle by allowing the browser to call the right
+    JavaScript code when the user does something of interest. Code triggered by these
+    events can then manipulate content completely located (e.g., change the state
+    of other controls, update their values, modify other displayed information) or
+    seek new information from the network via XMLHttpRequest. When this information
+    arrives, code triggered by the onchange handler updates the displayed content
+    accordingly. It is this latter activity that forms the basis of what is now called
+    Ajax-style programming.
+
+
+    "Control" does not necessarily have to be user-triggered, either. Web pages that
+    exhibit "live update" behavior without distinct browser reloads having ongoing
+    activity, set up through JavaScript''s built-in setTimeout or setInterval functions,
+    that is triggered automatically at set times. This also constitutes a form of
+    control and ultimately has the same structure: At some point, a function is called,
+    and this function uses XMLHttpRequest to initiate an automatic update of the web
+    page''s content.
+
+
+    As you venture further into Ajax, keep this overall structure in mind. It will
+    help to "calibrate" the decision over which technology or mechanism'
+  merge: -1
+  pgno: 89
+- img_proc: true
+  md: '# Chapter Summary
+
+
+    to use and when, while making your combined HTML and JavaScript code easier to
+    understand and to follow.⁵
+
+
+    # 5.3.5 Where''s the XML?
+
+
+    You might have noticed that the examples used in this section exchange plain text
+    information to do their work—easy to read, easy to understand. But doesn''t the
+    "X" in Ajax stand for "XML," also known as eXtensible Markup Language? Yes, it
+    does—but no, Ajax does not necessarily use XML. In that respect, "Ajax" is a bit
+    of a misnomer. But it certainly sounds better than "AJAT" (text), "AJAPT" (plain
+    text), "AJAD" (data), or any other alternative you might think up. That''s just
+    a hafta that many have still—we still use our cool-sounding acronyms.
+
+
+    For this book, we''ve chosen to elide the use of XML because it requires a whole
+    bunch of additional baggage. The bottom line is that, in addition to plain text,
+    Ajax-style applications exchange any kind of information that they''d like with
+    their servers: images, documents, and, yes, XML. The key is to choose the data
+    format that best suits the needs of the application. XML, with its ability to
+    represent structured relation, potentially complex information, is generally used
+    when the data exchanged possesses, well, structure and complexity. But in the
+    end, it is just one option among many for creating dynamic, information-rich,
+    yet efficient web applications.
+
+
+    # Chapter Summary
+
+
+    +   - Beyond alert and prompt, web pages constitute another technology that allows
+    users to interact with JavaScript programs.
+
+    - The current web page is visible to JavaScript as the built-in document object,
+    which has properties, structure, and functions just like any other JavaScript
+    object.
+
+    - The JavaScript object representation of a web page is known as the document
+    object (DOM). Unlike "regular" JavaScript properties, DOM properties are frequently
+    "hotwired" to the web page, so that modifications to those properties result in
+    immediate changes to the web page''s visible content—thus the name dynamic HTML
+    (DTHTML).
+
+    - JavaScript code responds to user activity through events, which "hook up" user
+    actions on web elements of interest or importing data from network connections
+    with the scripts that handle events.
+
+
+    > ⁵ Some readers may recognize this structure and information flow as an MVC (model-view-controller)
+    architecture. That''s exactly what it is—if you''re interested, look it up.'
+  merge: -1
+  pgno: 90
+- img_proc: true
+  md: "JavaScript can be embedded directly into HTML code, or it can be referenced\
+    \ from a separate file. Both techniques use the HTML script tag.\n\nThe Ajax programming\
+    \ style consists of DHT combined with “in-page” access to the Web to acquire new\
+    \ information that was not originally a part of the page, especially information\
+    \ that is based on the user’s input.\n\n# # Exercises\n\n+   1. Run the one-liners\
+    \ listed on page 64, making sure that you know precisely which one does.\n   \
+    \ * (a) Identify the one-liner that has no immediate visible effect.\n    * (b)\
+    \ Identify the other one-liners that are affected by the “invisible” one. Feel\
+    \ free to look it up instead of figuring out by trial and error. In either case\
+    \ run these one-liners in isolation to verify your answer.\n\n+   2. Change the\
+    \ last line of the adder program on page 63 to match the following line (i.e.,\
+    \ remove the parentheses that enclose the expression number1 = \" + \" \" + number2):\n\
+    \n```\nstatus.innerHTML = number1 + \" + \" + number2 + \" = \" +\nnumber1 + number2;\n\
+    ```\n\nThis new version of the adder. In what way is it different from the original\
+    \ version? What difference did those deleted parentheses make?\n\n+   3. On most\
+    \ graphical user interfaces (GUIs), check boxes and radio buttons are “clickable”\
+    \ not only on the control itself, but also on their associated labels (e.g., when\
+    \ a native GUI displays a “Do not show again” check box, then clicking either\
+    \ the check box itself or the “Do not show again” label will toggle that). This\
+    \ is not the case on web: Default, a check box or radio button’s label does not\
+    \ respond to mouse clicks. Write an HTML/JavaScript combination that implements\
+    \ the standard GUI behavior for web check boxes and radio buttons.\n\n+   4. Modify\
+    \ the scripts in Section 5.2.2 so that they turn the playground into a basic calculator.\n\
+    \    * (a) Write a setup script based on the one on page 64 to change the page\
+    \ so that the radio buttons are relabeled to add +, -, *, and /, respectively."
+  merge: -1
+  pgno: 91
+- img_proc: true
+  md: '# EXERCISES
+
+
+    +   (b) Write the actual calculator script, based on one on page 63, that takes
+    two numbers from the text fields, performs the selected arithmetic operation on
+    them, and displays the result in the green status area.
+
+
+    +   5. The “digit restricter” example on page 67 has a loophole for Input 1; it
+    is possible to enter a nondigit into that field. Can you identify that loophole
+    (i.e., which specific actions can the user take—except for running JavaScript
+    code, of course—to make Input accept nondigit characters?)
+
+
+    +   6. If you play with the “box dragger” example (referenced on page 69 and available
+    from http://javascript.cs.lmu.edu/boxes) for a long enough time, you will notice
+    it is not quite perfect. Sometimes, drag operations “abort” and leave the boxes
+    in an inconsistent state.
+
+
+    +   (a) Experiment with this example a little bit. Can you identify one possible
+    explanation for this behavior?
+
+
+    +   (b) How might you be able to resolve this issue?
+
+
+    +   (c) Code your idea to see if it works.
+
+
+    +   7. Implement a “make change” web application. The application should consist
+    of an HTML file with an input field requesting an amount from which to change
+    and a Make Change button. Clicking the button should display, below the field,
+    the number of quarters, dimes, nickels, and pennies needed for the amount given
+    by the user. The JavaScript that provides this functionality should be stored
+    in a separate .js file; the only JavaScript that is directly included in the HTML
+    file should be the event handlers needed to deliver the requested functionality.
+
+
+    +   8. At what point in an XMLHttpRequest object''s life cycle would its readyState
+    be 0, or “not initialized?” Write a JavaScript program that shows this.
+
+
+    +   9. The script from page 76 is tweaked on page 79 so that you can see text
+    or HTML content that is retrieved by the XMLHttpRequest in the footer of the scratch
+    page. But this content is not necessarily HTML or plain text; it really be anything
+    that is downloadable from the Web. Modify the playground page and/or JavaScript
+    to accommodate responses that hold image data.
+
+
+    +   10. The Ajax sandbox security model permits to code that has been downloaded
+    from the Web; code that resides as a file on your machine (i.e., opened through
+    a web browser''s File | Open command) can connect to anything.'
+  merge: -1
+  pgno: 92
+- img_proc: true
+  md: '(a) Save the scratch page at http://javascript.cs.lmu.edu/playground as an
+    HTML file on your own machine, and then open it in your web browser. Type and
+    run the script from page 76 and try accessing URLs other than those that start
+    with http://javascript.cs.lmu.edu/. What happens, compared to doing the same thing
+    directly from http://javascript.cs.lmu.edu/playground?
+
+
+    (b) Why do you think local files are “exempt” from the sandbox?
+
+
+    +   11. Read the source code of http://javascript.cs.lmu.edu/ajax-sample to answer
+    the following questions:
+
+    (a) What does the URL invoked by the application’s XMLHttpRequest look like (i.e.,
+    what is its format)?
+
+    (b) Try to visit URLs of this format directly from your web browser. What happens?
+
+
+    +   12. Write a completely different web page that performs the same task as the
+    one at http://javascript.cs.lmu.edu/ajax-sample, but has a look and feel that
+    all is your own. Make sure to accommodate the fact that this web page will be
+    provided by a different machine (such as locally on your computer) while still
+    using the same server for XMLRequests.'
+  merge: -1
+  pgno: 93
+- img_proc: true
+  md: '# Afterword
+
+
+    As we reach the end of this book, you might have noticed that we both started
+    and finished the text with an introduction. First, we introduced you to JavaScript
+    as a programming language; eventually, we capped off with an introduction to Ajax,
+    an extremely powerful application of JavaScript enabling truly interactive software
+    delivered over the Web. This is, of course, by design: With all worthwhile subjects,
+    there are no real endpoints, just transitions to other (deeper, broader) areas.
+    You started by seeing JavaScript as a pure programming language, without the distractions
+    or hype that accompany technology bandwags and trends. In the end, presumably
+    with a better grasp of the language, you find yourself at the cusp of using JavaScript
+    to implement a class of applications that have already transformed the way many
+    people use the World Wide Web, and whose full potential has yet to be realized.
+
+
+    So where do you go from here? Presuming that we''ve gotten your attention and
+    interest with this little volume, the true answer of "anywhere" actually isn''t
+    that far off. We certainly did not cover all of the JavaScript language (a much
+    longer book would be required for that), nor did we mention many professional
+    JavaScript libraries used in the real world today. Instead, we sometimes used
+    phrases such as "beyond the scope of this book," or "leave the details to you."
+    Those are good places to start: Find something that made you wish it were covered,
+    find information that goes into deeper detail in those areas, and try to apply
+    that information.
+
+
+    +   - If you are interested in the JavaScript language, pick up a language reference,
+    where you will encounter advanced and powerful features such as exceptions, reflection,
+    enumeration, and something called "duck typing." Learn more about closures and
+    regular expressions. Find out about labeled statements, the typeof operator, the
+    constructor
+
+
+    85'
+  merge: -1
+  pgno: 94
+- img_proc: true
+  md: '# Afterword
+
+
+    property, and the mysterious and much-maligned eval function. Several built-in
+    objects, such as Number and String (and their prototypes), have properties you
+    might find useful. For the exceptionally curious, pore through the reference to
+    answer questions such as “Why don’t I see PrototypeOf when iterating through my
+    object''s properties?” and “Why can’t I delete the constructor property from Object.prototype?”
+
+
+    +   - If you are interested in developing expertise in JavaScript programming
+    to further your career goals, familiarize yourself with JavaScript tools and libraries,
+    as well as related technologies such as HTML, XML, and JSON. While tools come
+    and go, we think it is a safe bet that (the indispensable) JSLint [Cro02] and
+    the (Firefox-specific) Firebug will be viable as long as JavaScript itself is
+    viable.
+
+
+    Wherever your interests lie, we''re happy to have given you the dual introductions
+    in this brief book. May you find yourself with the confidence, skills, and ability
+    to introduce yourself to more knowledge on your own.'
+  merge: -1
+  pgno: 95
+- img_proc: true
+  md: 'Sample web pages and code are an integral part of getting the most out of this
+    book. Here''s a list of what''s available at http://javascript.cs.lmu.edu:
+
+
+    +   - http://javascript.cs.lmu.edu/scratch
+
+    A rudimentary JavaScript scratch page, best used for learning the language and
+    introductory scripts.
+
+
+    +   - http://javascript.cs.lmu.edu/scratch/phrase-to-phone
+
+    A rudimentary JavaScript scratch page, with the introductory script shown in Section
+    1.3 pretyped into the text area.
+
+
+    +   - http://javascript.cs.lmu.edu/phone-to-phrase
+
+    A rudimentary JavaScript scratch page, with the script shown in Section 1.4 pretyped
+    into the text area.
+
+
+    +   - http://javascript.cs.lmu.edu/phone-form
+
+    A dynamic HTML front end for the script introduced in Section 1.3, plus some additional
+    functionality facilitated by the language features covered in Chapters 2 through
+    5.
+
+
+    +   - http://javascript.cs.lmu.edu/js/phoneConversion.js
+
+    Supporting JavaScript file that defines the core functionality behind http://javascript.cs.lmu.edu/phone-form
+    application.
+
+
+    +   - http://javascript.cs.lmu.edu/playground
+
+    A more advanced JavaScript scratch page, including assorted HTML elements for
+    learning dynamic HTML and possibly some Ajax.
+
+
+    +   - http://javascript.cs.lmu.edu/boxes
+
+    A demonstration page showing dynamic HTML mouse event handling.'
+  merge: -1
+  pgno: 96
+- img_proc: true
+  md: '+   http://javascript.cs.lmu.edu/deferred execution with setTimeout
+
+    A demonstration page showing deferred execution with setTimeout and setInterval
+
+
+    +   http://javascript.cs.lmu.edu/ajax-sample
+
+    A fully functional but simple Ajax-style sample application.
+
+
+    +   http://javascript.cs.lmu.edu/playground/ajax
+
+    The advanced JavaScript scratch page with the introductory Ajax script shown in
+    Section 5.3.2 pretyped into the text area.'
+  merge: -1
+  pgno: 97
+- img_proc: true
+  md: '# Glossary
+
+
+    **Ajax** An acronym for Asynchronous JavaScript and XML, which is a style of JavaScript
+    web programming where requests are made to a server and where responses, generally
+    but not necessarily in XML, are processed at some later time without leaving the
+    current web page.
+
+
+    **Array** A collection of values, indexed from 0. A true JavaScript array has
+    a length property that, if assigned a value by a script, will expand and shrink
+    the array.
+
+
+    **Character** A named symbol, such as PLUS SIGN, MUSICAL SYMBOL F CLEF, CHEROKEE
+    LETTER QV, or WHITE CHESS KNIGHT. Do not confuse a character with a glyph, which
+    is a picture of a character. For example, the two distinct letters P and CYRILLIC
+    LETTER ER can both be represented with the glyph P; similarly, the distinct GREEK
+    LETTER TERMA and N-ARY SUMATION can both be represented with the glyph Σ.
+
+
+    **Character Set** A collection of characters, each of which is tagged with a unique
+    integer called its codepoint. For example, in the Unicode Character Set, the character
+    CYRILLIC SMALL LETTER Y has codepoint 44E (hex). Popular character sets in use
+    today are Unicode, ASCII, and ISO-8859-1.
+
+
+    **Constructor** A function that creates a new object.
+
+
+    **DOM** An acronym for document object model, which represents the structure and
+    content of a web page as a JavaScript object.
+
+
+    **Event** An action such as a page load, button press, or stroke, to which a script
+    may wish to respond.'
+  merge: -1
+  pgno: 98
+- img_proc: true
+  md: '# Glossary
+
+
+    **Expression** A chunk of code that is evaluated.
+
+
+    **Function** Code that can be called, generally with arguments. JavaScript, unlike
+    some languages, treats functions as values that can be assigned to variables and
+    passed as arguments to other functions.
+
+
+    **Loop** A chunk of code that is performed multiple times, until some condition
+    becomes true (or false—but if you think about it, that''s pretty much the same
+    thing).
+
+
+    **Object** A value made up of named properties.
+
+
+    **Prototype** An object holding properties intended to be shared by a number of
+    similar objects.
+
+
+    **Script** A sequence of statements intended to be executed as a single unit.
+
+
+    **Statement** A unit of execution within a script. The JavaScript statements are
+    the empty statement, variable declaration, evaluation, block, if, for, while,
+    continue, break, return, with, switch, throw, and try.
+
+
+    **String** A text value. Strings can be viewed as a sequence of symbols or characters.
+    Thus they have length, and individual characters in the string can be accessed
+    by a numeric index starting from zero.
+
+
+    **Type** A particular set of values. All values in JavaScript belong to one of
+    six types: undefined, null, Boolean, number, string, or object.
+
+
+    **Unicode** An internationally standardized character set, containing hundreds
+    of thousands of characters. It is the native character set of JavaScript.
+
+
+    **Variable** A named “container” for a value. The variable can be updated by assigning
+    it a new value.'
+  merge: -1
+  pgno: 99
+- img_proc: true
+  md: '+   [Cro01] Douglas Crockford. Javascript: The world''s most misunderstood
+    programming language. http://javascript.crockford.com/javascript.html, 2001. Accessed
+    May 24, 2008.
+
+
+    +   [Cro02] Douglas Crockford. JSLint: The JavaScript verifier. http://www.jslint.com/,
+    2002. Accessed August 4, 2008.
+
+
+    +   [Cro08a] Douglas Crockford. JavaScript: The good parts. O''Reilly Media, 2008.
+
+
+    +   [Cro08b] Douglas Crockford. JavaScript: The world''s most misunderstood programming
+    language has become the world''s most popular programming language. http://javascript.crockford.com/popular.html,
+    2008. Accessed May 24, 2008.
+
+
+    +   [ECM99] ECMA. Standard ECMA-262, ECMAScript specification, 3rd edition. ECMA
+    International, December 1999. http://www.ecma-international.org/publications/standards/ecma-262.htm.
+
+
+    +   [Fla06] David Flanagan. JavaScript: The definitive guide, 5th edition. O''Reilly
+    Media, 2006.
+
+
+    +   [Sco05] Michael L. Scott. Programming language pragmatics. Morgan Kaufmann,
+    2005.
+
+
+    +   [Spo06] Joel Polsky. Can your programming language do this? http://www.joelsonsoftware.com/items/2006/08/01.html,
+    2006. Accessed May 31, 2008.'
+  merge: -1
+  pgno: 100
+- img_proc: true
+  md: '[Uni06] The Unicode Consortium. The unicode standard, version 5.0. Addison-Wesley
+    Professional, 2006.
+
+
+    [Uni08] Unicode, Inc. The Unicode character code charts. http://www.unicode.org/charts,
+    2008. Accessed June 13, 2008.'
+  merge: -1
+  pgno: 101
+- img_proc: true
+  md: '# Index
+
+
+    +   activation object, 31, 51
+
+    Ajax, 73
+
+    argument, 30
+
+    arithmetic operator, *see* numeric
+
+    operator
+
+    array, 21
+
+    assignment, 19
+
+    asynchronous JavaScript and XML,
+
+    *see* Ajax
+
+    Boolean expression, 14
+
+    Boolean operator, 14
+
+    *break* statement, 23, 25
+
+    closure, 37
+
+    codepoint, 16
+
+    comments, 5, 56
+
+    conditional execution, *see*
+
+    statement
+
+    constructor, 46
+
+    *continue* statement, 25
+
+    CSS, 65
+
+    document object model, *see* DOM
+
+    DOM, 57
+
+    event, *see* event
+
+    DRY, 35
+
+    dynamic HTML, 56
+
+    escape sequence, 17
+
+
+    +   event, 58, 65
+
+    handler, 65, 66, 78, 80
+
+    object, 67
+
+    enblur, 68
+
+    onclick, 66
+
+    onkeypress, 68
+
+    onmousedown, 69
+
+    onmousemove, 69
+
+    onmouseout, 69
+
+    onmouseover, 69
+
+    onmouseup, 69
+
+    ononreadystatechange, 77
+
+    expression, 13
+
+    Boolean, *see* Boolean
+
+    expression
+
+    conditional, 23
+
+    numeric, *see* numeric
+
+    expression
+
+    string, *see* string expression
+
+    escape sequence, *see* escape
+
+    sequence
+
+    for statement, 7, 24
+
+    function, 29, 56
+
+    argument, *see* argument
+
+    as argument, 35
+
+    body, 29
+
+    built-in
+
+    alert, 2, 4, 7, 51
+
+
+    93'
+  merge: -1
+  pgno: 102
+- img_proc: true
+  md: '# 94
+
+
+    # Index
+
+
+    +   clearInterval, 73
+
+    clearTimeout, 73
+
+    parseFloat, 51, 63
+
+    parseInt, 51
+
+    prompt, 4, 7
+
+    setInterval, 72
+
+    setTimeout, 72
+
+    toLowerCase, 4
+
+    toUpperCase, 4
+
+    caller, 30
+
+    closure, see closure
+
+    parameter, see parameter
+
+    result, see return statement
+
+    function statement, 35
+
+
+    +   RegExp, 49
+
+    screen, 51, 71
+
+    String, 49
+
+    window, 51, 71
+
+    XMLHttpRequest, 75
+
+    constructor, see constructor
+
+    global object, see global
+
+    object,
+
+    liter, 41, 43
+
+    notation, 41
+
+    property, 41
+
+    prototype, see prototype
+
+    value, 43
+
+
+    +   operator
+
+    arithmetic, see numeric
+
+    operator
+
+    Boolean, see Boolean operator
+
+    numeric, see numeric operator
+
+    string, see string operator
+
+
+    +   global object, the, 51
+
+    adecimal, 16
+
+    HTML, 56
+
+
+    +   if statement, 22
+
+    Infinity, 51
+
+    integer, 16
+
+
+    +   parameter, 29
+
+    prototype, 44
+
+
+    +   loop, 7, 23
+
+
+    +   regular expression, 49
+
+    reserved word, 21
+
+    return statement, 30
+
+
+    +   memory leak, 43
+
+
+    +   NaN, 16, 51
+
+    null, 13, 19, 43, 45
+
+    numeric expression, 14
+
+    numeric operator, 15
+
+
+    +   scope, 31
+
+    scope chain, 33, 51
+
+    statement, 22
+
+    break, see break statement
+
+    continue, see continue
+
+    statement
+
+
+    +   object, 7, 41
+
+    built-in, 49, 71
+
+    Array, 49, 51
+
+    Boolean, 49, 51
+
+    Date, 49, 51
+
+    document, 51, 58
+
+    Error, 49
+
+    Function, 4, 49, 51
+
+    Math, 4, 15, 49
+
+    navigator, 71
+
+    Number, 49
+
+    Object, 49, 51
+
+
+    +   declaration, 22
+
+    expression, 22
+
+    for, see statement
+
+    function statement, see
+
+    function statement
+
+    if statement, see if statement
+
+    return, see return statement
+
+    while, see while statement
+
+
+    +   string, 16
+
+    string expression, 16
+
+    string operator, 18'
+  merge: -1
+  pgno: 103
+- img_proc: true
+  md: "+   switch statement, 23\nswitch statement, 78\nthis, 46, 67\ntype conversion,\
+    \ 18\nundefined, 13, 19, 21, 31, 51\nundefined\n  parameters, 31\n  returned from\
+    \ function, 30\nUnicode, 16\nvariable, 19\n  local, 32\n  top-level, 32, 51\n\
+    while statement, 23"
+  merge: -1
+  pgno: 104
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 105
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 106
+- img_proc: true
+  md: '# JAVASCRIPT
+
+    Programming Language
+
+
+    Ray Toal • John David N. Dionisio
+
+
+    The JavaScript Programming Language provides a brief introduction to the JavaScript
+    language, which is now an important component of every programmer''s tool box.
+    This helpful guide offers an overview of JavaScript to students interested in
+    pursuing advanced programming skills and delving into web development.
+
+
+    Clear and concise, The JavaScript Programming Language is an excellent primer
+    to this popular dynamic language and is ideal for use on its own or when coupled
+    with one of Jones and Bartlett''s outstanding introductory computer science texts.'
+  merge: -1
+  pgno: 107

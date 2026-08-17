@@ -1359,6 +1359,7 @@
 +   [JavaScript 面试圣经：包含 1000 多个核心问题与答案的全面指南！](docs/the-javascript-interview-bible-a-comprehensive-guide-with-10/README.md)
 +   [JavaScript 面试练习册：400 道编程练习！](docs/the-javascript-interview-workbook-400-coding-exercises/README.md)
 +   [JavaScript 入门指南](docs/the-javascript-pocket-guide-description-based-on-print-versi/README.md)
++   [JavaScript 编程语言入门指南](docs/the-javascript-programming-language/README.md)
 +   [jQuery 的乐趣：全球最流行的 JavaScript 库初学者指南](docs/the-joy-of-jquery-a-beginners-guide-to-the-worlds-most-popul/README.md)
 +   [现代 JavaScript 合集 1-4](docs/the-modern-javascript-collection-1-4/README.md)
 +   [现代 JavaScript 教程 - 第二部分：浏览器文档、事件、接口 2](docs/the-modern-javascript-tutorial---part-ii-browser-document-ev/README.md)
