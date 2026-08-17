@@ -1363,6 +1363,7 @@
 +   [jQuery 的乐趣：全球最流行的 JavaScript 库初学者指南](docs/the-joy-of-jquery-a-beginners-guide-to-the-worlds-most-popul/README.md)
 +   [现代 JavaScript合集](docs/the-modern-javascript-collection/README.md)
 +   [现代 JavaScript 合集 1-4](docs/the-modern-javascript-collection-1-4/README.md)
++   [现代 JavaScript 教程 - 第一部分：JavaScript 语言 1](docs/the-modern-javascript-tutorial---part-i-the-javascript-langu/README.md)
 +   [现代 JavaScript 教程 - 第二部分：浏览器文档、事件、接口 2](docs/the-modern-javascript-tutorial---part-ii-browser-document-ev/README.md)
 +   [现代 JavaScript 入门指南](docs/the-modern-javascript-tutorial-23-0911-crawled/README.md)
 +   [代码本质：使用 JavaScript 模拟自然系统](docs/the-nature-of-code-simulating-natural-systems-with-javascrip/README.md)
