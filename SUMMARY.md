@@ -1383,6 +1383,7 @@
 +   [PHP 选集第 1 ：面向对象的 PHP 解决方案](docs/the-php-anthology-volume-1-object-oriented-php-solutions/README.md)
 +   [PHP 选集第 2 ：面向对象的 PHP 解决方案](docs/the-php-anthology-volume-2-object-oriented-php-solutions/README.md)
 +   [Javascript 的力量 (编程的力量)](docs/the-power-of-javascript-the-power-of-coding/README.md)
++   [面向对象 JavaScript 原](docs/the-principles-of-object-oriented-javascript/README.md)
 +   [GraphQL 之路：在 JavaScript、React.Js 和 Node.Js 中精通实用 GraphQL 的进阶](docs/the-road-to-graphql-your-journey-to-master-pragmatic-graphql/README.md)
 +   [React 进阶：掌握简洁实用的 React.js 之路](docs/the-road-to-react-your-journey-to-master-plain-yet-pragmatic/README.md)
 +   [JavaScript 精通终极指南：初学者之路](docs/the-ultimate-guide-to-mastering-javascript-a-beginners-journ/README.md)
