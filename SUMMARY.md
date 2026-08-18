@@ -1374,6 +1374,7 @@
 +   [PHP 精选：面向对象的 PHP 解决方案卷 1](docs/the-php-anthology---object-oriented-php-solutions-vol-1/README.md)
 +   [PHP 精选集：面向对象的 PHP 解决方案第 2](docs/the-php-anthology---object-oriented-php-solutions-vol-2/README.md)
 +   [PHP 选集：101 个核心技巧、窍门与技巧 第二版](docs/the-php-anthology-101-essential-tips-tricks-hacks-second-edi/README.md)
++   [PHP 精选：应用第二卷](docs/the-php-anthology-applications-volume-ii/README.md)
 +   [PHP 精选集：基础卷 1](docs/the-php-anthology-foundations-vol1/README.md)
 +   [PHP 精选：面向对象的 PHP 解决方案第 2](docs/the-php-anthology-object-oriented-php-solution-volume-2/README.md)
 +   [PHP 选集：面向对象的 PHP 解决方案：常见问题的实用解决方案](docs/the-php-anthology-object-oriented-php-solutions-practical-so/README.md)
