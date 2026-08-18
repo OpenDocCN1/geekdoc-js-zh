@@ -1,0 +1,1557 @@
+- img_proc: true
+  md: "![](img/76188a8f748fc585400eeef7e6351b2a_0_0.png)\n\nJS Mastery Pro\n\nThe\
+    \ Ultimate \n\n Ebook\n\nNext.js\n\n![](img/76188a8f748fc585400eeef7e6351b2a_0_1.png)![](img/76188a8f748fc585400eeef7e6351b2a_0_2.png)![](img/76188a8f748fc585400eeef7e6351b2a_0_3.png)![](img/76188a8f748fc585400eeef7e6351b2a_0_4.png)![](img/76188a8f748fc585400eeef7e6351b2a_0_5.png)![](img/76188a8f748fc585400eeef7e6351b2a_0_6.png)![](img/76188a8f748fc585400eeef7e6351b2a_0_0.png)![](img/76188a8f748fc585400eeef7e6351b2a_0_8.png)"
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: 'Table Of Contents
+
+
+    Chapter 1 Birth
+
+
+    01
+
+
+    Chapter 2 Introduction
+
+
+    07
+
+
+    Chapter 3 Roadmap
+
+
+    15
+
+
+    Chapter 4 How it works
+
+
+    40
+
+
+    Chapter 5 Create a Next.js Application
+
+
+    47
+
+
+    Chapter 6 Client Vs. Server
+
+
+    68
+
+
+    ![](img/76188a8f748fc585400eeef7e6351b2a_1_0.png)![](img/76188a8f748fc585400eeef7e6351b2a_1_1.png)![](img/76188a8f748fc585400eeef7e6351b2a_1_2.png)![](img/76188a8f748fc585400eeef7e6351b2a_1_3.png)![](img/76188a8f748fc585400eeef7e6351b2a_1_4.png)![](img/76188a8f748fc585400eeef7e6351b2a_1_4.png)![](img/76188a8f748fc585400eeef7e6351b2a_1_6.png)![](img/76188a8f748fc585400eeef7e6351b2a_1_7.png)![](img/76188a8f748fc585400eeef7e6351b2a_1_8.png)![](img/76188a8f748fc585400eeef7e6351b2a_1_9.png)![](img/76188a8f748fc585400eeef7e6351b2a_1_10.png)
+
+
+    Index
+
+
+    00'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: "Chapter 1\n\nBirth\n\nIn the first chapter, we explore the evolution of JavaScript\
+    \ and web \n\ndevelopment frameworks. We discuss the significance of embracing\
+    \ \n\nnew technologies and compare code snippets in different frameworks \n\n\
+    to highlight their benefits. We introduce Next.js as a framework built on \n\n\
+    React.js, addressing limitations and incorporating new features. \n\nThe chapter\
+    \ concludes with the recommendation to shift focus to \n\nNext.js for building\
+    \ modern web applications."
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: "Birth\n\nNot too long ago, in 2015, React.js entered the scene. However, even\
+    \ the \n\njourney of JavaScript in the IT industry hasn't been exceptionally long.\
+    \ \n\nOriginally developed by Brenden Eich at Netscape in 1995, JavaScript \n\n\
+    gained significant popularity during the 2000s. \n\nThis was largely due to Google's\
+    \ ingenious utilization of JavaScript to \n\nintroduce interactive and dynamic\
+    \ features for map exploration. \n\nSubsequently, developers were introduced to\
+    \ frameworks and libraries, \n\nincluding jQuery, Angular, Node.js, React.js,\
+    \ and, most recently, Next.js. \n\nThese technologies have revolutionized the\
+    \ web development \n\nlandscape, offering developers various capabilities and\
+    \ possibilities.\n\nYou might wonder why this information is relevant in the context.\
+    \ The \n\nsignificance lies in the fact that it highlights the timeless truth\
+    \ that \n\n\"change is constant.\" As we continue to advance and evolve as a \n\
+    \nsociety, our tools and technologies will naturally progress alongside us. \n\
+    \nWe have no other option but to embrace and adapt to these changes. It \n\nserves\
+    \ as a reminder that our willingness to embrace new ideas and \n\ntechnologies\
+    \ is essential for growth and success in the ever-changing \n\nIT industry landscape.\n\
+    \nThese technologies and tools share a common purpose: to enhance \n\nwork efficiency\
+    \ and improve performance. In this era, we can still use \n\nvanilla JavaScript\
+    \ or create websites using HTML and CSS without a \n\ndoubt. \n\nBirth\n\n01"
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: "However, when it comes to developing applications on a large scale, \n\nthe\
+    \ efficiency of using the latest technologies surpasses that of \n\ntraditional\
+    \ approaches. To showcase and experiment with this concept, \n\nwe have created\
+    \ a video on \"\n\n\" \n\non our YouTube channel. You can personally analyze the\
+    \ amount of \n\ncode and the level of efficiency demonstrated in the video.\n\n\
+    How to create a website using HTML & CSS\n\nTo provide a brief glimpse of the\
+    \ evolution in JavaScript coding \n\npractices, here is a well-known code snippet\
+    \ implemented in various \n\nframeworks, starting from the core JavaScript language\
+    \ itself — The \n\nHello World:\n\nVanilla JavaScript\n\n// HTML: <button id=\"\
+    btn\">Click Me</button> \n\ndocument\n\n(\n\n) \n\n(\n\n \n\n \n\n \n\n)\n\n.\n\
+    \n'\n\n'\n\n .\n\n'\n\n',\n\n() { \n\n'\n\n' ; \n\n } ; \n\ngetElementById\n\n\
+    addEventListener\n\nalert\n\nbtn\n\nclick\n\nHello, World!\n\nfunction\n\n \n\n\
+    (\n\n)\n\njQuery\n\n// HTML: <button id=\"btn\">Click Me</button> \n\n$\n\nclick\n\
+    \nalert\n\n(\n\n)\n\n(\n\n \n\n \n\n)\n\n'\n\n' .\n\n() { \n\n'\n\n' ; \n\n} ;\
+    \ \n\n#btn\n\nHello, World!\n\nfunction\n\n \n\n(\n\n)\n\nBirth\n\n02"
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: "Angular\n\n<!--\n\n: <\n\n (click)=\"showMessage()\">Click Me</button> -->\
+    \ \n\n {\n\n} \n\n '\n\n'; \n\n@Component({ \n\n selector: '\n\n', \n\n template:\
+    \ \\`<button (click)=\"showMessage()\">Click Me</button>\\` \n\n}) \n\n \n\n \n\
+    \n { \n\nvoid { \n\n(\"\n\n\")\n\n} \n\n}\n\n \n\n \n\n Component \n\n \n\n():\
+    \ \n\n \n\n \n\n; \n\n \n\nHTML\n\nbutton\n\nalert\n\nimport\n\nfrom\n\nexport\
+    \ class ExampleComponent\n\n@angular/core\n\napp-example\n\nHello, World!\n\n\
+    showMessage\n\nReact.js\n\nimport\n\nfrom '\n\n'; \n\n.\n\n{ \n\n() { \n\n'\n\n\
+    ' ; \n\n} \n\n() { \n\nreturn <\n\n \n\n\\={this.\n\n}>\n\n</\n\n\\>; \n\n} \n\
+    \n}\n\n React \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\nshowMessage\n\n\
+    Click Me\n\nreact\n\nHello, World!\n\nclass\n\nextends\n\nonClick\n\nExampleComponent\n\
+    \nReact Component\n\nshowMessage\n\n \n\n(\n\n)\n\n \n\nrender\n\n \n\n button\n\
+    \nbutton\n\n \n\nalert\n\n“Ah? From what I see, there's an increase in the amount\
+    \ of code being \n\nwritten. It appears to be in complete opposition to what was\
+    \ mentioned \n\nearlier” — Are you thinking the same?\n\nIf we look at it solely\
+    \ from this perspective, one would certainly feel that \n\nthe original language\
+    \ and framework require less code.\n\nBirth\n\n03"
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: "However, it's important to consider the bigger picture. And that's what \n\n\
+    truly matters, doesn't it? In reality, we don't just build \"Hello World\" \n\n\
+    projects. We undertake more substantial projects that demand the \n\nutilization\
+    \ of various frameworks and tools to achieve the desired \n\nfunctionality and\
+    \ scalability.\n\nWe could have talked about the “big picture” of using React\
+    \ or even \n\nAngular over vanilla code, but that is not the primary focus of\
+    \ this \n\neBook. However, it is worth mentioning a few foundational reasons why\
+    \ \n\nthese new tools make development more efficient:\n\nArchitecture — React\
+    \ and Angular follow a Component-Based \n\nArchitecture, encouraging code reusability.\
+    \ For instance, if you create a \n\ncomponent like a Button, you can use it anywhere\
+    \ in the application as \n\noften as needed. This reusability enhances the maintainability\
+    \ and \n\nscalability of the application.\n\nVirtual DOM — The Virtual DOM is\
+    \ a lightweight representation of the \n\nactual DOM. It facilitates efficient\
+    \ and optimized updates to the user \n\ninterface, resulting in improved performance.\
+    \ Simply put, it tracks \n\nchanges within the application and performs a \"diffing\"\
+    \ process by \n\ncomparing the previous version of the virtual DOM with the new\
+    \ version. \n\nIt identifies the differences and updates the real DOM accordingly.\n\
+    \nEcosystem & Community — Modern libraries like React.js have vibrant \n\nand\
+    \ active communities. This provides developers with abundant \n\nresources, extensive\
+    \ documentation, reusable code packages, bug \n\nfixes, and support.\n\nBirth\n\
+    \n04"
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: "… and many other libraries or framework-specific reasons that you can \n\n\
+    explore. To truly appreciate the impact, I would once again recommend \n\nvisiting\
+    \ the YouTube videos we created, where you can experience \n\nfirsthand what it\
+    \ takes to build a simple landing page using two \n\ndifferent tools to measure\
+    \ the efficiency of these tools:\n\n![](img/76188a8f748fc585400eeef7e6351b2a_7_0.png)\n\
+    \nBuild and Deploy a Sushi \n\nWebsite using HTML & CSS\n\nWatch and Code Now\n\
+    \n![](img/76188a8f748fc585400eeef7e6351b2a_7_1.png)\n\nBuild and Deploy a Bank\
+    \ \n\nWebsite using React.js\n\nWatch and Code Now\n\nBut hey, where does Next.js\
+    \ come in the picture?\n\nAs mentioned earlier, as we continue to progress, technology\
+    \ also \n\nadvances. jQuery addressed the limitations of vanilla JavaScript, and\
+    \ \n\nthen React.js emerged to overcome the shortcomings and loopholes of \n\n\
+    jQuery. However, even React.js has its own challenges, which have now \n\nbeen\
+    \ addressed by another tool called Next.js.\n\nIt’s a big misconception that Next.js\
+    \ is a new language or library. No!\n\nBirth\n\n05"
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: "Vercel, the team behind Next.js, embarked on a unique approach to \n\ndevelop\
+    \ a framework encompassing client-side (frontend) and server-\n\nside (backend)\
+    \ functionalities within a single application. Guillermo \n\nRauch, the original\
+    \ creator of Next.js and the mastermind behind \n\nSocket.IO, began working on\
+    \ this idea in 2016.\n\nOver the course of a year, they continuously added new\
+    \ features such \n\nas file-based routing, automatic code splitting, hybrid rendering,\
+    \ \n\ninternationalization, image and font optimization, and many more.\n\nThe\
+    \ relentless dedication of the Vercel developers, coupled with their \n\nability\
+    \ to transform diverse ideas into reality, has caught the attention \n\nof Meta\
+    \ (previously known as Facebook) — the creators of React.js. Meta \n\nnow explicitly\
+    \ recommends that developers use Next.js as their primary \n\ntool instead of\
+    \ relying solely on React.js. It's an extraordinary \n\nachievement!\n\nAnd that’s\
+    \ how we developers now need to shift our focus to the latest \n\nand greatest\
+    \ version, Next.js 13, to build highly capable and production-\n\nready applications.\
+    \ This exciting evolution opens up new possibilities \n\nand opportunities for\
+    \ creating advanced web applications.\n\nOnto the next chapter…\n\nBirth\n\n06"
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: "Chapter 2\n\nIntroduction\n\nIn this chapter, we'll dive into Next.js, a flexible\
+    \ React framework. We'll \n\nexplore its advantages over React.js, including simplified\
+    \ frontend \n\ndevelopment, reduced tooling time, and an easy learning curve.\
+    \ We'll \n\nalso discuss how Next.js improves performance, enhances SEO, and \n\
+    \nkeeps advancing with new features. \n\nBy the end, you'll grasp the importance\
+    \ of mastering Next.js and be \n\nprepared to embark on an exciting journey with\
+    \ this framework."
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: "Introduction\n\nNext.js — A flexible React Framework. But what does that mean?\n\
+    \nIn software development, a framework serves as a tool equipped with \n\npredefined\
+    \ rules and conventions that offer a structured approach to \n\nconstructing an\
+    \ application. It provides an environment that outlines \n\nthe overall architecture,\
+    \ design patterns, and workflows, allowing \n\ndevelopers to focus on implementing\
+    \ specific application logic rather \n\nthan dealing with low-level design.\n\n\
+    Simply put, a framework provides pre-built solutions for common \n\nfunctionalities\
+    \ such as integrating databases, managing routing, \n\nhandling authentication,\
+    \ and more.\n\nSo what sets Next.js apart from React.js? — Next.js introduces\
+    \ plenty of \n\nfeatures and capabilities that we will dive into in the upcoming\
+    \ chapter \n\nin detail.\n\nBut what you need to understand is Next.js is essentially\
+    \ an extension of \n\nReact.js, incorporating pre-built solutions, ready-to-use\
+    \ features, and \n\nsome additional functionalities. In other words, Next.js is\
+    \ built on top of \n\nReact, expanding its capabilities.\n\nIf you’re already\
+    \ a React.js developer, the Next.js journey will be silky \n\nsmooth. If you don’t\
+    \ know React.js, you should familiarize yourself with \n\nsome of the main foundations\
+    \ of React.js, i.e., How to create a \n\ncomponent, state management, code structure,\
+    \ etc.\n\nIntroduction\n\n07"
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: "To help you learn faster, we have a crash course on React.js that covers \n\
+    \nall the important things and includes a project for you to practice and \n\n\
+    test your skills:\n\n![](img/76188a8f748fc585400eeef7e6351b2a_11_0.png)\n\nReact.js\
+    \ Crash Course\n\nWatch and Code Now\n\nBut Why should you use a React Framework\
+    \ — Next.js?\n\nReact is constantly evolving and revolutionizing the way websites\
+    \ are \n\nbuilt. It completely transforms your approach to designing and \n\n\
+    developing applications. \n\nIt begins by encouraging you to think about components,\
+    \ breaking \n\ndown the user interface into small pieces of code. You describe\
+    \ states \n\nto introduce interactivity and establish connections between these\
+    \ \n\nvarious components, shaping the flow of your application.\n\nImplementing\
+    \ the great React architecture requires deep integration \n\nbetween all parts\
+    \ of your application, and this is where frameworks \n\ncome in:\n\nLess tooling\
+    \ time\n\nEvery aspect of frontend development has seen innovation, from \n\n\
+    compiling, bundling, minifying, formatting, etc., to deploying and more. \n\n\
+    Introduction\n\n08"
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: "With Next.js, we won’t have to worry about configuring these tools, thus \n\
+    \ninvesting more time in writing React code.\n\nWe can focus more on business\
+    \ logic using open-source solutions for \n\nrouting, data fetching, rendering,\
+    \ authentication, and more.\n\nEasy Learning Curve\n\nIf you are familiar with\
+    \ React.js, you will discover Next.js is considerably \n\nsimpler.\n\nNext.js,\
+    \ built on the foundation of React.js, offers exceptional \n\ndocumentation that\
+    \ provides comprehensive and detailed information \n\non the why and how of using\
+    \ Next.js. The \"\n\n\" \n\nguide developed by the Vercel team is regarded as\
+    \ one of the best \n\nresources for the learning experience.\n\nIntroduction |\
+    \ Learn Next.js\n\nThe constant updates and help from the community make the \n\
+    \ndevelopment process even easier.\n\nOne of the key aspects of Next.js is that\
+    \ it is not just a Frontend React \n\nFramework but a Full Stack React Framework\
+    \ enabling you to write \n\nbackend code alongside your frontend code.\n\nHow\
+    \ does it contribute to an \"Easy Learning Curve\"? Wouldn't it be \n\nanother\
+    \ thing to learn?\n\nAbsolutely not.\n\nThe backend aspect of the code you'll\
+    \ be working with is much simpler \n\nthan you might anticipate. There's no need\
+    \ to set up anything or \n\nconfigure any routes as we have to do for any traditional\
+    \ backend app.\n\nIntroduction\n\n09"
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: "In fact, the Vice President of Vercel, Lee Robinson, expressed the \n\nfollowing\
+    \ viewpoint:\n\nMoving from React + Express + Webpack to a framework \n\nresulted\
+    \ in removing \n\n and \n\n – while improving HMR (Hot Module \n\nReloading) from\
+    \ \n\n.\n\n20,000+ lines of code\n\n30+ \n\ndependencies\n\n1.3s to 131ms\n\n\
+    ![](img/76188a8f748fc585400eeef7e6351b2a_13_0.png)\n\nIf the backend and tooling\
+    \ aspects discussed here seem confusing, \n\nthere's no need to worry. In the\
+    \ upcoming chapters, we will dive into a \n\npractical comparison of how things\
+    \ are done with React.js and \n\nExpress.js, as well as how both can be accomplished\
+    \ within Next.js.\n\nImproved Performance\n\nNext.js offers built-in features\
+    \ like server-side rendering, static site \n\ngeneration, and automatic code splitting,\
+    \ which optimize application \n\nperformance by enabling faster initial page loads,\
+    \ improving SEO, and \n\nenhancing the user experience.\n\nHowever, it doesn't\
+    \ mean server-side capabilities are limited to Next.js \n\nalone. React has introduced\
+    \ a new concept called React Server \n\nComponents, which allows rendering components\
+    \ on the server side.\n\nSo, why choose Next.js over using React alone?\n\nThe\
+    \ advantage lies in the convenience and productivity provided by \n\nNext.js.\
+    \ By utilizing Next.js, you can leverage the existing features of \n\nReact without\
+    \ the need for extensive setup and configuration. \n\nIntroduction\n\n10"
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: "Next.js automates many aspects, allowing you to focus more on utilizing \n\n\
+    the features rather than dealing with infrastructure & boilerplate code.\n\nThis\
+    \ approach follows the principle of \"Convention over Configuration,\" \n\nstreamlining\
+    \ the development process and reducing the amount of \n\ncode you need to write\
+    \ compared to implementing React Server \n\nComponents independently.\n\nSEO -\
+    \ Search Engine Optimization\n\nPerhaps the most ignored and must topic in an\
+    \ application’s life, and \n\nthe only drawback of React.js.\n\nThe key difference\
+    \ lies in the rendering approach between Next.js and \n\nReact.js.\n\nSearch engine\
+    \ crawlers are like busy visitors to websites. They come \n\nand ask for the content\
+    \ of pages. They explore the links on those pages, \n\ncarefully examining and\
+    \ organizing them for ranking purposes. This is \n\nwhat they do every day. To\
+    \ do their job well, they need to be able to \n\naccess the content of the website\
+    \ pages.\n\nReact.js renders everything on the client side, sending a minimal\
+    \ initial \n\nHTML response from the server. The server sends a minimal HTML file\
+    \ \n\ncode and a JavaScript file that the browser executes to generate the \n\n\
+    HTML. This poses a challenge for search engine crawlers to access and \n\nunderstand\
+    \ the complete content of the page.\n\nOn the other hand, Next.js provides the\
+    \ option of Static Site Generation \n\n(SSG) or Server Side Rendering (SSR). \n\
+    \nIntroduction\n\n11"
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: "With SSG or SSR, the server sends the complete HTML file and minimal \n\nJavaScript\
+    \ code to render only the content requiring client-side \n\ninteraction. This\
+    \ enables search engine crawlers to access easily and \n\nindex every page of\
+    \ the Next.js website accurately.\n\nBut, now you might wonder, \"Why should I\
+    \ prioritize SEO?\"\n\nSEO is essential for making your website visible and highly\
+    \ ranked in \n\nsearch engine (browser) results. When you focus on SEO, you get\
+    \ \n\nseveral benefits, like more people visiting your website, better user \n\
+    \nexperience, increased trust and credibility, and an advantage over your \n\n\
+    competitors because your website shows up higher in search results. \n\nGiving\
+    \ priority to SEO can greatly impact how well your website does \n\nand how many\
+    \ people find it online.\n\nAlways Advancing\n\nNext.js, the ever-evolving framework,\
+    \ consistently introduces new \n\nfeatures to simplify developers' lives. With\
+    \ over 7+ versions released last \n\nyear, Next.js focuses on innovation and improvement\
+    \ for a better user \n\nexperience. This is precisely what frameworks like Next.js\
+    \ aim to achieve, \n\nmaking development easier and more efficient.\n\nOn top\
+    \ of that, other technologies like Expo, used for building React \n\nNative projects,\
+    \ are also adopting Next.js's groundbreaking features. \n\nInspired by Next.js's\
+    \ file-based routing system, Expo developers have \n\nimplemented a similar feature\
+    \ — Expo Router to improve the decade-\n\nold routing system in React Native.\n\
+    \nIntroduction\n\n11"
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: "Isn’t that great? Master one feature and effortlessly utilize it across \n\n\
+    multiple platforms\n\nHowever, the list of features provided by Next.js goes beyond\
+    \ what has \n\nbeen mentioned so far. \n\nIt offers a wide range of capabilities,\
+    \ including seamless file-based \n\nrouting, efficient code splitting, image &\
+    \ font optimization, HMR(Hot \n\nModule Replacement), API Routes(backend), built-in\
+    \ support for Sass, \n\nCSS modules, data fetching choice (SSG, SSR, ISR), error\
+    \ handling, \n\nMetadata API (For SEO), Internationalization(support for any spoken\
+    \ \n\nlanguage), etc.\n\nIt is best to try these features firsthand through practical\
+    \ \n\nimplementation to truly appreciate its potential. That's precisely what\
+    \ \n\nwe will do in the upcoming lessons – dive into the coding aspect!\n\n\"\
+    Hmm, alright. I'm willing to trust your insights on the new features of \n\nNext.js\
+    \ and such. However, is it actually being used by people? Are \n\ncompanies actively\
+    \ seeking professionals with Next.js expertise? Is \n\nthere a high demand for\
+    \ it in the industry?\" \n\n— Are you wondering the same?\n\nLet the data speak\
+    \ for itself:\n\nIntroduction\n\n12"
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: "![](img/76188a8f748fc585400eeef7e6351b2a_17_0.png)\n\nIn the past 30 days,\
+    \ Next.js has received significantly higher search \n\ninterest worldwide than\
+    \ React.js.\n\nBut hey, that’s just a Google trend. What about the industry? Are\
+    \ people \n\neven creating websites using Next.js?\n\nSure, let’s take a look\
+    \ at “The Next.js Showcase” which shows different \n\ncompanies using Next.js:\n\
+    \nq Notiow\n\nq Hulj\n\nq Netflix Job\\`\n\nq Nikr\n\nq HBO Mae\n\nq Audiblr\n\
+    \nq Typeform\n\nq TE\x92\n\nq Auth\x8C\n\nq Product Hun\x8D\n\nq Hyunda\x8B\n\n\
+    q Porschr\n\nq repl.i\x8D\n\nq Marvel\n\nq Futuris­\n\nq Material-U\x9E\n\nq Coco\
+    \ Col¯\n\nq Ferrar\x8B\n\nq Hashnodr\n\nq Verge\n\nIntroduction\n\n13"
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: "And many more renowned names. This demonstrates the genuine \n\nexcitement\
+    \ and widespread adoption of Next.js!\n\nConsidering the rapid rate at which companies\
+    \ embrace Next.js, it \n\nwould be no surprise to witness a huge surge in demand\
+    \ for Next.js jobs \n\nin the coming months, if not years.\n\nNow is the perfect\
+    \ time to seize the opportunity and prepare for the \n\nfuture job market by mastering\
+    \ Next.js. \n\nWith this book and the courses we have done and will continue to\
+    \ do, \n\nyou can be the next Next.js developer. \n\n![](img/76188a8f748fc585400eeef7e6351b2a_18_0.png)\n\
+    \nSo, grab a cup of coffee, and let's get started on this exciting journey! \n\
+    \nIntroduction\n\n14"
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: "Chapter 3\n\nRoadmap\n\nThe Roadmap is a concise guide to web development essentials.\
+    \ It \n\ncovers HTML for structuring web content, CSS for styling and layout,\
+    \ and \n\nJavaScript for interactivity. Learners will grasp important concepts\
+    \ like \n\nsemantic tags, visual effects, variables, control flow, functions,\
+    \ and \n\nmanipulating the DOM. \n\nThis chapter equips beginners with the skills\
+    \ needed to create dynamic \n\nand interactive web applications."
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: "Roadmap\n\nBefore we start exploring Next.js, reviewing or relearning some\
+    \ basic \n\nconcepts is a good idea to make learning easier. It all begins with\
+    \ \n\nbuilding a solid foundation through fundamentals.\n\nThink of this roadmap\
+    \ as a summary of what you should know as a \n\nfoundation for learning Next.js.\
+    \ It's alright if you're unfamiliar with \n\nadvanced topics like integrating\
+    \ databases or implementing \n\nauthentication. \n\nThese points help you understand\
+    \ the main concepts without focusing \n\non specific coding details.\n\nIn Next.js,\
+    \ there are various approaches to implementing these \n\nconcepts. You have options\
+    \ like utilizing \n\n (one of the coolest \n\nfeatures), exploring popular market\
+    \ solutions like \n\n, or even building \n\neverything from scratch. \n\nNextAuth\n\
+    \nClerk\n\nSimilarly, when it comes to databases, you can choose between \n\n\
+    different options such as SQL databases like \n\n, NoSQL databases \n\nlike \n\
+    \n, or even consider using \n\n as an ORM (Object-\n\nRelational Mapping) manager.\n\
+    \nPostgres\n\nMongoDB\n\nPrisma\n\nWhether or not you have coding experience is\
+    \ not the most important \n\nfactor here. What truly matters is understanding\
+    \ the underlying \n\nconcepts. The roadmap is designed to introduce you to these\
+    \ concepts \n\nand familiarize you with the beneficial knowledge when aspiring\
+    \ to \n\nbecome a Next.js Developer.\n\nRoadmap\n\n15"
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: "Later in the next chapters, and with our branded courses, you’ll learn \n\n\
+    how to do all the code stuff in Next.js. So don’t worry; you have our back!\n\n\
+    Presenting the Roadmap,\n\nThese points help you understand the main concepts\
+    \ without focusing \n\non specific coding details.\n\n1\n\n![](img/76188a8f748fc585400eeef7e6351b2a_21_0.png)\n\
+    \n1\n\nWeb Development Fundamentals\n\nHTML - HyperText Markup Language\n\nBasics\n\
+    \nUnderstand the structure, elements, and attributes of HTML documents\n\n\x8B\
+    \ Structure\n\n\x8B Elements\n\n<!DOCTYPE>\n\n<html>\n\n<head>\n\n<body>\n\nµ\
+    \ Heading\n\n<h1>\n\nto\n\n<h6>\n\nµ Paragraph\n\n<p>\n\nµ Lists\n\n<ul>\n\n<ol>\n\
+    \n<li>\n\nµ Link\n\n<a>\n\nµ Image\n\n<img>\n\nµ Input\n\n<input>\n\n<textarea>\n\
+    \nµ Button\n\n<button>\n\nµ Group Elements\n\n<div\\>\n\nRoadmap\n\n16"
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: " Semantics\n\nUse elements like\n\n Forms\n\nLearn to create forms, handling\
+    \ user input, perform form validations by \n\nusing form element and onSubmit\
+    \ event listener\n\netc. to enhance document structure of accessibility.\n\n<header>\n\
+    \n<nav>\n\n<main>\n\n<section>\n\n<aside>\n\n<footer>\n\nCSS — Cascading Style\
+    \ Sheets\n\nFundamentals\n\nUnderstand the structure, elements, and attributes\
+    \ of HTML documents\n\n Structure\n\n§ Box Model\n\n§ Selectors\n\nUnderstand\
+    \ how elements are styled using \n\npadding\n\nmargin\n\nborder\n\nLearn about\
+    \ different types of selectors to target and style \n\nspecific HTML elements.\
+    \ For example,\n\nType\n\nClass\n\nId\n\nChild\n\nSibling\n\nRoadmap\n\n17"
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: " Typography\n\n Colors and Backgrounds\n\nExplore text-related properties like\
+    \ \n\nfont\n\nsize\n\nweight\n\nalignment\n\nUnderstand how to set different \n\
+    \ncolors\n\ngradients\n\nbackground images\n\nLearn the various display values\
+    \ like\n\nblock\n\ninline\n\ninline-block\n\nExplore how to position an element\
+    \ in different ways such as\n\nrelative\n\nabsolute\n\nsticky\n\nfixed\n\nMaster\
+    \ the flexbox layout to create responsive website layouts\n\nDive into CSS grid\
+    \ layout for advanced two-dimensional layouts\n\nLayout and Positioning\n\n Display\n\
+    \n Position\n\n Flexbox\n\n Grid\n\nRoadmap\n\n18"
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: "Learn to create smooth transitions using different CSS properties like\n\n\
+    delay\n\ntiming\n\nduration\n\nproperty\n\ntiming-function\n\nExplore 2D and 3D\
+    \ transformations like\n\nscaling\n\nrotating\n\ntranslating elements\n\nLearn\
+    \ how to create animations using keyframes\n\nExplore with box shadows and linear\
+    \ or radial gradients\n\nEffects\n\n\x91 Transitions\n\nAdvanced (Plus)\n\n\x91\
+    \ Learn how to use CSS processors like sass or frameworks like \n\ntailwindcss\
+    \ for more powerful and efficient styling\n\n\x91 Transformations\n\n\x91 Animations\n\
+    \n\x91 Shadows and Gradients\n\nRoadmap\n\n19"
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: "JavaScript\n\n Variables and Data Types\n\n Operators\n\n Control Flow\n\n\
+    \ Functions\n\n DOM Manipulation\n\nDeclaring variables and understanding different\
+    \ data types such \n\nas string, number, boolean, null, undefined, object, array,\
+    \ etc.\n\nLearn to use different operators such as arithmetic, comparison, \n\n\
+    logical, and assignment to perform operations on data\n\nTry & test conditional\
+    \ statements such as if else, switch and loops \n\nsuch as for while to control\
+    \ program flow\n\nDefine and learn to create different functions, understand function\
+    \ \n\nscope, and work with different parameters and return values\n\nKnowing how\
+    \ to use JavaScript to change and interact with HTML \n\nelements on a webpage\
+    \ is an important skill. It's like a building \n\nblock that we use in different\
+    \ ways with tools like React or Next.js in \n\nthe form of new APIs.\n\nRemember\
+    \ when we showed you different \"Hello World\" examples \n\nin vanilla JavaScript\
+    \ and React.js? The basic idea is the same, but \n\nthe code structure is a bit\
+    \ different in React.\n\nRoadmap\n\n20"
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: "If you're uncertain about how to learn & create a website using HTML, \n\n\
+    CSS, and JavaScript, you can immediately build an attractive Sushi \n\nWebsite\
+    \ by simply following the right free course:\n\n![](img/76188a8f748fc585400eeef7e6351b2a_26_0.png)\n\
+    \nBuild and Deploy a Sushi \n\nWebsite using HTML & CSS\n\nWatch and Code Now\n\
+    \n2\n\n![](img/76188a8f748fc585400eeef7e6351b2a_26_1.png)\n\n2\n\nModern JavaScript\n\
+    \nf Arrow Functions\n\nf Destructuring\n\nIn JavaScript, there are different kinds\
+    \ of functions. One type that \n\nyou'll often come across is called the Arrow\
+    \ function. Many prefer \n\nusing arrow functions because they are shorter & easier\
+    \ to write.\n\nA helpful concept that will come in handy when we have to extract\
+    \ \n\nvalues from arrays and objects\n\nIf you take the time to understand the\
+    \ syntax and how arrow \n\nfunctions work, it will help you write shorter and\
+    \ more \n\nstraightforward functions. This can make your code look cleaner \n\n\
+    and easier to read.\n\nf ES6 Features\n\nRoadmap\n\n21"
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: " Spread Syntax\n\n Template Literals\n\n Modules\n\nAllows to expand elements\
+    \ of an array or object into individual \n\nelements\n\nOne of the widely used.\
+    \ Using the back sticks \n\n, we can \n\ninterpolate strings with placeholders\
+    \ & expressions\n\n\\`\\`\n\nLearn how to import export code between files to\
+    \ organize the \n\ncode\n\n Asynchronous Programming\n\n Promises\n\n Async/Await\n\
+    \nGain an understanding of the concept of promises and why they \n\nare necessary.\
+    \ Learn about resolving and rejecting promises and \n\nutilizing \n\n and \n\n\
+    \ for handling asynchronous operations.\n\nthen\n\ncatch\n\nExplore the usage\
+    \ of \n\n to write asynchronous code in a \n\nmore synchronous way. This convention\
+    \ is widely adopted as an \n\nalternative to using \n\n and \n\n for handling\
+    \ promises.\n\nasync/await\n\nthen\n\ncatch\n\n Fetch API\n\nDiscover how to use\
+    \ the Fetch API in the browser to send HTTP \n\nrequests and handle the resulting\
+    \ responses.\n\nRoadmap\n\n22"
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: " Axios (Plus)\n\nExplore the popular third-party library, Axios, which simplifies\
+    \ the \n\nprocess of making HTTP requests compared to the standard Fetch \n\n\
+    API.\n\n Additional JavaScript Concepts\n\n Array Methods\n\n Error Handling\n\
+    \nFamiliarize yourself with different widely used array methods to \n\nsimplify\
+    \ the development process. For example,\n\nOne of the crucial part of web development\
+    \ is to catch and \n\ndisplay the errors properly. No user will like to see the\
+    \ complete \n\nred screen with a text — “Error on line 35”. Not even us.\n\nmap\n\
+    \nfilter\n\nreduce\n\nslice\n\nsplice\n\nforEach\n\nincludes\n\njoin\n\nreverse\n\
+    \nand few others\n\nTherefore, it is essential for every developer to cultivate\
+    \ the skill of \n\nerror handling. Familiarize yourself with the try-catch-finally\
+    \ block, \n\nwhich enables you to capture errors and present them on the user\
+    \ \n\ninterface using user-friendly and easily understandable language.\n\nRoadmap\n\
+    \n23"
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: " Foundations\n\n Bundlers and Compilers\n\nA javascript runtime environment\
+    \ that allows us to run JavaScript \n\ncode outside of the browser.\n\nA tool\
+    \ that manages third party packages. Using it, you can \n\ndownload different\
+    \ packages needed inside you project like Axios\n\nBundlers like webpack or Parcel\
+    \ help combine our JavaScript files \n\nand other assets into a single bundle\n\
+    \nIt’s needed to work with React or Next.js. Make sure to download it\n\nBefore\
+    \ we proceed learning the libraries and frameworks like \n\nReact.js and Next.js,\
+    \ we’ll need some kind of config to setup these \n\nprojects:\n\n3\n\n![](img/76188a8f748fc585400eeef7e6351b2a_29_0.png)\n\
+    \n3\n\nThe Ecosystem\n\nNode.js\n\n![](img/76188a8f748fc585400eeef7e6351b2a_29_1.png)\n\
+    \nNPM — Node Package Manager\n\nWebpack\n\nTranspilers like Babel convert modern\
+    \ JavaScript code to a version \n\nthat works in all browsers\n\nBabel\n\nRoadmap\n\
+    \n24"
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: " Version Control (Plus)\n\nLearning a version control system like Git is highly\
+    \ valuable for \n\nanyone on the path to becoming a developer.\n\nGitHub - a web\
+    \ based platform to manage git repositories \n\nin the cloud\n\nGit - version\
+    \ control system\n\nFrom here, you’re efficiently learning Next.js. The same concepts\
+    \ \n\nare as it is used in the Next.\n\n4\n\n![](img/76188a8f748fc585400eeef7e6351b2a_30_0.png)\n\
+    \n4\n\nReact JS\n\n Components\n\nThink in terms of components. Learn to break\
+    \ the code or the UI in \n\nsmall manageable components for reusability & maintainability\n\
+    \nThere are two ways in which we can create a component i.e.,\n\n Class Componen\x8F\
+    \n\n Function Component — Widely used\n\n Fundamentals\n\nAlong with that, learn\
+    \ “What is JSX?” and the “Component \n\nLifecycle”.\n\nRoadmap\n\n25"
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: " State and Props\n\n Events\n\n Conditional Rendering\n\nState\n\nProps\n\n\
+    Learn how to create and manage state — A small store that holds \n\na particular\
+    \ data of the application\n\nLearn how to handle user interactions, such as clicks\
+    \ and form \n\nsubmissions, using event handlers.\n\nLearn how to conditionally\
+    \ render components and render \n\ndynamic list of data using the mapping techniques\n\
+    \nLearn how to pass props (a piece of data) between components\n\nJSX is syntax\
+    \ in React that allows you two write HTML \n\ncode. You won’t even feel like you’re\
+    \ using something \n\ndifferent. It looks like HTML but isn’t.\n\n![](img/76188a8f748fc585400eeef7e6351b2a_31_0.png)\n\
+    \nP.S., Don’t forget to learn about the special “Key” prop when rendering \n\n\
+    the dynamic list with map method.\n\nRoadmap\n\n26"
+  merge: -1
+  pgno: 31
+- img_proc: true
+  md: " Hooks\n\n Router\n\n State Management\n\nAfter learning how to create functional\
+    \ component, the next \n\nchallenge will be to understand how to use hooks.\n\n\
+    Learn how to do client side routing by understanding concepts like\n\nUnderstand\
+    \ different state management options in React such as \n\nbuilt-in state management\
+    \ — Context API\n\nHooks are special functions that allows us to manage state,\
+    \ \n\nhandle side effects and improve the efficiency. Few famous hooks \n\nare,\n\
+    \n Hooks & Router\n\nuseState\n\nuseEffect\n\nuseRef\n\nuseContext\n\nuseCallback\n\
+    \nuseMemo\n\nContext API\n\nRedux Toolkit\n\nZustland\n\nRoutes\n\nRoute parameters\n\
+    \nNested routes\n\n![](img/76188a8f748fc585400eeef7e6351b2a_32_0.png)\n\nReact\
+    \ Router DOM is an independent package used to \n\nhandle the routing in React\
+    \ application\n\nRoadmap\n\n27"
+  merge: -1
+  pgno: 32
+- img_proc: true
+  md: " Style\n\n Forms\n\n HTTP Requests\n\nExplore different approaches to styling\
+    \ React components, \n\nincluding\n\nCSS-in-JS libraries like\n\nLearn to create\
+    \ form validation, handling form submission with or \n\nwithout using third party\
+    \ libraries like,\n\nLearn how to make requests using libraries like Axios or\
+    \ the built-in \n\nFetch API\n\nInline styles\n\nCSS modules\n\nSass\n\nTailwindCSS\n\
+    \nMaterial UI\n\nstyled-components\n\nEmotion\n\nFormik\n\nReact Hook Form\n\n\
+    \ Forms & HTTP Requests\n\nIf you want to learn the fundamentals, styling and\
+    \ how to do HTTP \n\nRequests in React, you can check out our FREE and highly\
+    \ popular Crash \n\nCourse on YouTube:\n\nRoadmap\n\n28"
+  merge: -1
+  pgno: 33
+- img_proc: true
+  md: "![](img/76188a8f748fc585400eeef7e6351b2a_34_0.png)\n\nReact JS Full Course\
+    \ 2023 | \n\nBuild an App and Master \n\nReact in 1 Hour - YouTube\n\nWatch and\
+    \ Code Now\n\nIf you want to enhance your skills in state management using tools\
+    \ like \n\nRedux Toolkit, you can explore our professional-level course:\n\n![](img/76188a8f748fc585400eeef7e6351b2a_34_1.png)\n\
+    \nUltimate ReactJS Course \n\nwith Redux Toolkit & Framer \n\nMotion jsmastery.pro\n\
+    \nWatch and Code Now\n\nAlso, if you want to create websites with a modern and\
+    \ attractive \n\ndesign that will impress clients or potential employers, we suggest\
+    \ you \n\ncheck out this series. It teaches you how to build React websites using\
+    \ \n\ndifferent styling techniques like TailwindCSS, Sass, and even pure CSS.\n\
+    \n![](img/76188a8f748fc585400eeef7e6351b2a_34_2.png)\n\nBuild and Deploy a Fully\
+    \ \n\nResponsive Modern UI/UX \n\nSite in React JS - YouTube\n\nWatch and Code\
+    \ Now\n\nRoadmap\n\n29"
+  merge: -1
+  pgno: 34
+- img_proc: true
+  md: "Although it’s not a must to know how to do the backend to \n\nbecome a Next.js\
+    \ developer, it’ll be nice to have the skill to \n\nshowcase the ability to do\
+    \ both and become a full-stack Next.js \n\ndeveloper.\n\nYou can use the following\
+    \ steps to learn backend development in \n\nany technology stack you prefer. It\
+    \ can even be Python\n\n5\n\n![](img/76188a8f748fc585400eeef7e6351b2a_35_0.png)\n\
+    \n5\n\nBackend\n\nK HTTP Protocol\n\nK APIs and REST\n\nUnderstand the HyperText\
+    \ Transfer Protocol and its fundamental \n\nconcepts\n\nK Basics\n\nAPIs\n\nREST\n\
+    \nLearn what is Application Programming Interface (API)\n\nLearn what is Representational\
+    \ State Transfer\n\nK HTTP Methods\n\nExplore methods, protocols and data formats\
+    \ that applications \n\ncan use to to exchange information\n\nGET\n\nPOST\n\n\
+    PUT\n\nDELETE\n\nPATCH\n\nRoadmap\n\n30"
+  merge: -1
+  pgno: 35
+- img_proc: true
+  md: " Status Code\n\n HTTP Headers\n\n Request and Response\n\n Resource URI\n\n\
+    200\n\n201\n\n404\n\n500\n\nC\n\nR\n\nU\n\nD\n\n— ok\n\n— Creating data (POST)\n\
+    \n— created\n\n— Reading data (GET)\n\n— Not Found\n\n— Updating data (PUT/PATCH)\n\
+    \n— Internal server error\n\n— Deleting data (DELETE)\n\n Understand the concept\
+    \ of CRUD operations\n\n CRUD\n\n Authentication and Authorization\n\nUnderstand\
+    \ the difference between Authentication and \n\nAuthorization\n\nRoadmap\n\n31"
+  merge: -1
+  pgno: 36
+- img_proc: true
+  md: " User Sessions\n\n Relational Database\n\n NoSQL Database\n\n JWT — JSON Web\
+    \ Token\n\n Cookies\n\n Permissions and Roles\n\n Database\n\nFamiliarize yourself\
+    \ with databases in storing and managing \n\napplication data\n\ng Production\n\
+    \ng Development\n\ng Staging\n\nMySQL\n\n![](img/76188a8f748fc585400eeef7e6351b2a_37_0.png)\n\
+    \nMongoDB\n\nPostgreSQL\n\nRedis\n\n Environments\n\n Deployment\n\nRoadmap\n\n\
+    32"
+  merge: -1
+  pgno: 37
+- img_proc: true
+  md: " Hosting Platforms\n\n Advanced (plus)\n\nVercel\n\nNetlify\n\nFirebase\n\n\
+    AWS Amplify\n\nHeroku\n\nRender\n\nRailway\n\nZ CI/CD — Continuous Integration/Continuous\
+    \ Deployment\n\nZ Docker\n\nBuilding backend applications can be challenging,\
+    \ but you can acquire \n\nthe necessary skills with sufficient practice. If you're\
+    \ interested in in-\n\ndepth project tutorials that specifically teach backend\
+    \ development \n\nusing Express and MongoDB—a highly popular stack—feel free to\
+    \ \n\nexplore some of our free courses available on YouTube:\n\n![](img/76188a8f748fc585400eeef7e6351b2a_38_0.png)\n\
+    \nFull Stack MERN Project - \n\nBuild and Deploy an App | \n\nYouTube\n\nWatch\
+    \ and Code Now\n\nRoadmap\n\n33"
+  merge: -1
+  pgno: 38
+- img_proc: true
+  md: "![](img/76188a8f748fc585400eeef7e6351b2a_39_0.png)![](img/76188a8f748fc585400eeef7e6351b2a_39_1.png)\n\
+    \nBuild and Deploy a Full \n\nStack MERN App With \n\nCRUD, Auth, Charts - YT\n\
+    \nWatch and Code Now\n\nIf you want to enhance your skills in state management\
+    \ using tools like \n\nRedux Toolkit, you can explore our professional-level course:\n\
+    \n![](img/76188a8f748fc585400eeef7e6351b2a_39_2.png)\n\nBuild & Deploy a Full\
+    \ Stack \n\nMERN AI Image Generation \n\nApp | DALL-E Clone - YT\n\nWatch and\
+    \ Code Now\n\nAnd now, at last, we will dive into the Next.js roadmap. It may\
+    \ not be \n\nnecessary, as the content of this book is organized in a manner where\
+    \ \n\neach chapter serves as a guiding milestone, and it’s the only resource \n\
+    \nyou need (alongside some Build and Deploy courses, of course) to \n\nmaster\
+    \ Next.js!\n\nBut still, for you,\n\nRoadmap\n\n34"
+  merge: -1
+  pgno: 39
+- img_proc: true
+  md: "6\n\n![](img/76188a8f748fc585400eeef7e6351b2a_40_0.png)\n\n6\n\nThe Next.js\n\
+    \n Learn why we should use Next.js and its benefits\n\n Master the basic fundamentals\
+    \ of web development & React.js\n\n Familiarize yourself with the ecosystem\n\n\
+    \ Setup a next.js application using create next app\n\nl Fundamentals\n\nl Architecture\n\
+    \nl File Based Routing\n\nState\n\nProp\n\nComponents\n\nModule\n\nSimple route\n\
+    \nNested\n\nDynamic\n\nParallel\n\nIntercepting\n\nNode\n\nNPM/Yarn\n\nNPX\n\n\
+    Client\n\nServer\n\nUnderstand the architecture of a Next.js application including\
+    \ \n\ndifferent files and directories i.e., app directory vs pages directory.\n\
+    \nLearn how to create different types of routes in Next.js\n\nNext, dive into\
+    \ the backbone of Next.js functionality by exploring \n\ntwo distinct rendering\
+    \ processes:\n\nRoadmap\n\n35"
+  merge: -1
+  pgno: 40
+- img_proc: true
+  md: " Style\n\n Data Fetching\n\n SEO and Metadata\n\nCSS modules\n\nTailwind CSS\n\
+    \nSass\n\nSSG\n\nSSR\n\nISR\n\nCSR\n\n— Static Site Generation\n\n— Server Side\
+    \ Rendering\n\n— Incremental Static Regeneration\n\n— Client Side Rendering\n\n\
+    Next.js has built-in support for CSS processors like Sass to CSS \n\nmodules.\
+    \ Try different types of styling with Next.js to find the one \n\nthat best fits\
+    \ your application:\n\nYou have the flexibility to choose between different types\
+    \ of \n\nrendering and data fetching methods for your application. These \n\n\
+    methods include:\n\nIt's important to understand each of these concepts in detail\
+    \ to \n\ndetermine how and when to implement the most suitable \n\nstrategy for\
+    \ your application.\n\nLearn how to use SEO strategies and leverage the use of\
+    \ Metadata \n\nAPI of Next.js\n\nPoints to learn:\n\nStatic Metadata\n\nDynamic\
+    \ Metadata\n\nFile based Metadata\n\nRoadmap\n\n36"
+  merge: -1
+  pgno: 41
+- img_proc: true
+  md: " Handling Errors, loading states and much more\n\n Authentication\n\n API routes\n\
+    \nNextAuth\n\nClerk\n\nStatic Route Handlers\n\nDynamic Route Handlers\n\nThe\
+    \ latest Next.js 13 app directory introduces various file \n\nconventions that\
+    \ facilitate effective error handling, loading state \n\nmanagement, displaying\
+    \ not found pages, and even organizing \n\nlayouts in a more structured manner.\n\
+    \nLearn,\n\nImplementing custom email/password or social authentication \n\nbecomes\
+    \ hassle-free with NextAuth in Next.js. Few auth libraries \n\nyou can use with\
+    \ Next.js to speed up the development process:\n\nExplore how to create API routes\
+    \ — the backend:\n\nCreate custom request handlers\n\nerror.js file\n\nloading.js\
+    \ file\n\nnot-found.js file\n\nlayout.js file\n\n Route Handlers\n\n Middleware\n\
+    \n Supported HTTP Methods\n\n NextResponse\n\n CORS and Headers\n\nRoadmap\n\n\
+    37"
+  merge: -1
+  pgno: 42
+- img_proc: true
+  md: " Database\n\nMongoDB\n\nPostgres\n\nPrisma\n\nDiscover how to incorporate various\
+    \ types of databases into your \n\nNext.js application by utilizing API routes.\n\
+    \nIf you're someone who prefers video content over reading, you'll find our \n\
+    \nbest and most up-to-date Crash Course on Next.js 13 on YouTube very \n\nenjoyable.\
+    \ This course not only covers the fundamentals of Next.js but \n\nalso guides\
+    \ you in building a Full Stack project with authentication, \n\nutilizing the\
+    \ latest features of Next.js 13:\n\nIf you have a keen interest in learning how\
+    \ to implement complex \n\nfiltering, pagination, and searching using server-side\
+    \ rendering (SSR) \n\nwith Next.js, then you should check out this resource:\n\
+    \n![](img/76188a8f748fc585400eeef7e6351b2a_43_0.png)![](img/76188a8f748fc585400eeef7e6351b2a_43_1.png)\n\
+    \nNext.js 13 Full Course 2023 | \n\nBuild & Deploy a Full Stack \n\nApplication\
+    \ - YouTube\n\nWatch and Code Now\n\n![](img/76188a8f748fc585400eeef7e6351b2a_43_2.png)\n\
+    \nBuild and Deploy a Modern \n\nNext.js 13 App | TypeScript, \n\nTailwind CSS\
+    \ - YouTube\n\nWatch and Code Now\n\nRoadmap\n\n38"
+  merge: -1
+  pgno: 43
+- img_proc: true
+  md: "Keep in mind that real progress happens when you actively do coding. \n\nSo,\
+    \ grab coffee, find a quiet spot, and start coding to make things \n\nhappen.\n\
+    \nRoadmap\n\n39"
+  merge: -1
+  pgno: 44
+- img_proc: true
+  md: "Chapter 4\n\nHow it works\n\nIn this chapter, we lay the foundation by understanding\
+    \ how the web \n\nworks before diving into Next.js code. We explore the traditional\
+    \ \n\napproach of HTML, CSS, and JavaScript websites, where the server \n\nsends\
+    \ complete files to the client for each page request. \n\nWe also introduce the\
+    \ React way, where the server sends a minimal \n\nHTML file and a bundled JavaScript\
+    \ file, and React manipulates the \n\nvirtual DOM for efficient rendering. Finally,\
+    \ we discuss the Next.js way."
+  merge: -1
+  pgno: 45
+- img_proc: true
+  md: "How it works\n\nYou might be itching to start with Next.js code, right?\n\n\
+    Although writing code is important, we must first build our foundations. \n\n\
+    It’ll not just help you in clearing interviews but will also help in making \n\
+    \nsound decisions in your application.\n\nIf your why isn’t clear, you’ll have\
+    \ no idea what you’re doing, and you’ll \n\nblame it on Next.js by saying that\
+    \ it’s an overrated piece of technology. \n\nThat will only showcase your lack\
+    \ of knowledge. It's a foolproof recipe to \n\namaze everyone with your impressive\
+    \ ignorance.\n\nSo, perfect your why and your how will come naturally.\n\nLet’s\
+    \ time-travel a bit to see how things were used to work with \n\ndifferent technologies.\n\
+    \nThe vanilla — HTML, CSS, \n\nand JavaScript\n\nWebsites built using the web's\
+    \ fundamental elements, namely HTML, \n\nCSS, and JavaScript, function differently\
+    \ compared to the latest \n\ntechnologies.\n\nWhen a user visits such a website,\
+    \ their browser (the client) sends a \n\nrequest to the server (another computer\
+    \ where the site is hosted) \n\nasking for the content to be displayed.\n\nHow\
+    \ it works\n\n40"
+  merge: -1
+  pgno: 46
+- img_proc: true
+  md: "![](img/76188a8f748fc585400eeef7e6351b2a_47_0.png)![](img/76188a8f748fc585400eeef7e6351b2a_47_1.png)\n\
+    \nRequest\n\n![](img/76188a8f748fc585400eeef7e6351b2a_47_2.png)![](img/76188a8f748fc585400eeef7e6351b2a_47_3.png)![](img/76188a8f748fc585400eeef7e6351b2a_47_4.png)![](img/76188a8f748fc585400eeef7e6351b2a_47_5.png)![](img/76188a8f748fc585400eeef7e6351b2a_47_6.png)![](img/76188a8f748fc585400eeef7e6351b2a_47_7.png)![](img/76188a8f748fc585400eeef7e6351b2a_47_8.png)\n\
+    \nAnalyzing the HTML file\n\nApplies the styles\n\nImplements any user interaction\n\
+    \nTraditionally, for each of these requests, the server responds by sending \n\
+    \nthree files i.e., the HTML, CSS, and JavaScript (only if any JavaScript code\
+    \ \n\nis involved). The client's browser receives these files and begins by \n\
+    \nanalyzing the HTML file. Then, it applies the styles from the CSS file and \n\
+    \nimplements any user interaction, such as event handlers or dynamic \n\nbehavior,\
+    \ specified in the JavaScript file on the webpage.\n\nThe client will send additional\
+    \ requests to the server if the website has \n\nmultiple pages. In response, the\
+    \ server will send the three files \n\ncontaining the respective content needed\
+    \ to render each page.\n\nHow it works\n\n41"
+  merge: -1
+  pgno: 47
+- img_proc: true
+  md: "What’s the catch?\n\nProcessing\n\nMost processing occurs on the client side,\
+    \ meaning the user's web \n\nbrowser is responsible for rendering the HTML page\
+    \ and executing any \n\nJavaScript code present.\n\nHowever, if the website is\
+    \ complex and the user's device needs more \n\ncapabilities, it can strain the\
+    \ browser and create a burden for it to \n\nhandle.\n\nBandwidth\n\nAs the server\
+    \ sends complete files to the client for each page request, it \n\nincreases bandwidth\
+    \ usage. This becomes particularly significant when \n\ndealing with complex websites\
+    \ containing numerous pages and video \n\nand audio clips scattered throughout\
+    \ the site.\n\nLoad Time\n\nThe initial page load time may be longer when compared\
+    \ to the latest \n\ntechnologies. This is due to the complete transfer of files\
+    \ for each \n\nrequest. Only after the server has sent all the necessary files\
+    \ and the \n\nbrowser has finished parsing everything will we be able to view\
+    \ the \n\nwebsite's content.\n\nHow it works\n\n42"
+  merge: -1
+  pgno: 48
+- img_proc: true
+  md: "The React way\n\nThis is where React comes in. It improved the development\
+    \ lifecycle by \n\nintroducing components, virtual DOM concepts, and the client-server\
+    \ \n\nmechanism.\n\nWhen you access a React website, the client's browser sends\
+    \ a request \n\nto the server for the webpage content. In response, the server\
+    \ sends a \n\nminimal HTML file, which serves as the entry point for the entire\
+    \ \n\napplication, along with a bundled JavaScript file.\n\nReact initiates client-side\
+    \ rendering using this JavaScript file, \n\nmanipulating the virtual DOM. Instead\
+    \ of directly modifying the actual \n\nDOM, React updates the virtual DOM and\
+    \ then applies only the \n\nnecessary changes to the real DOM, resulting in the\
+    \ desired page \n\ndisplay.\n\nReact utilizes its client-side routing library,\
+    \ React Router, to navigate to \n\ndifferent pages within the React application.\
+    \ This library enables \n\nchanging the route without a full server request, preventing\
+    \ page \n\nrefreshes.\n\nReact Router re-renders the relevant components based\
+    \ on the new \n\nURL when a new route is triggered. If the new page requires fetching\
+    \ \n\ndata from the server, the corresponding components initiate requests \n\n\
+    to retrieve the necessary data.\n\nHow it works\n\n43"
+  merge: -1
+  pgno: 49
+- img_proc: true
+  md: "What’s the catch?\n\nComplexity\n\nBuilding a React application can present\
+    \ greater complexity than \n\ntraditional HTML, CSS, and JavaScript websites.\
+    \ It involves thinking in \n\ncomponents, managing state and props, and working\
+    \ with the virtual \n\nDOM, which may require a learning curve for developers\
+    \ new to React.js.\n\nProcessing\n\nSimilar to the traditional approach, react\
+    \ primarily performs client-side \n\nrendering. It heavily relies on JavaScript\
+    \ for initial rendering and \n\nsubsequent requests to update the user interface,\
+    \ which are all handled \n\non the client’s browser.\n\nHowever, this reliance\
+    \ on client-side rendering can delay rendering and \n\ninteractivity, particularly\
+    \ on devices with slower processors and limited \n\nresources.\n\nSEO\n\nYes,\
+    \ if you recall, we previously touched upon a notable drawback of \n\nReact compared\
+    \ to Next.js in the Introduction chapter.\n\nThe issue is that search engine crawlers\
+    \ might need help fully \n\naccessing the website's content since everything is\
+    \ handled through \n\nJavaScript and only rendered on the client side. As a result,\
+    \ it impacts \n\nthe website’s visibility in search engine results\n\nHow it works\n\
+    \n44"
+  merge: -1
+  pgno: 50
+- img_proc: true
+  md: "![](img/76188a8f748fc585400eeef7e6351b2a_51_0.png)![](img/76188a8f748fc585400eeef7e6351b2a_51_1.png)![](img/76188a8f748fc585400eeef7e6351b2a_51_2.png)![](img/76188a8f748fc585400eeef7e6351b2a_51_3.png)![](img/76188a8f748fc585400eeef7e6351b2a_51_4.png)![](img/76188a8f748fc585400eeef7e6351b2a_51_5.png)![](img/76188a8f748fc585400eeef7e6351b2a_51_6.png)\n\
+    \nThe Next.js Way - A blend of both\n\nKnowing the benefits and limitations of\
+    \ both techniques, Vercel \n\ndevelopers allowed us to choose where to render\
+    \ the content, on the \n\nclient or server.\n\nTypically, when a user visits a\
+    \ Next.js site, the client sends the request to \n\nthe server, which starts executing\
+    \ the React Components, generates \n\nHTML, CSS, and JavaScript files, and sends\
+    \ back the fully rendered HTML \n\nto the client as a response. This file includes\
+    \ initial content, fetched \n\ndata, and React component markup, making the client\
+    \ render it \n\nimmediately without waiting for JavaScript to download and execute.\n\
+    \nBut it doesn’t mean we don’t receive any JavaScript files. The server will \n\
+    \nstill send the JavaScript code as needed for the user interaction. From \n\n\
+    here, Next.js takes over and performs client-side hydration\n\nHave you ever encountered\
+    \ the issue of a hydration error where the \n\nuser interface doesn't match what\
+    \ was originally rendered on the \n\nserver?\n\nWell, this is what it is about.\
+    \ Hydration is attaching JavaScript event \n\nhandlers and interactivity to the\
+    \ pre-rendered HTML. And when the \n\nplaceholders of React components i.e., div,\
+    \ form, span, don’t match \n\nwhat’s being rendered on the client side, you see\
+    \ that error.\n\nThis is what it is — The hot topic of web development i.e., SSR.\
+    \ \L\n\nServer Side Rendering!\n\nHow it works\n\n45"
+  merge: -1
+  pgno: 51
+- img_proc: true
+  md: "For subsequent requests, you have full control over where to render \n\nyour\
+    \ page content i.e., either on the server side (SSR) or the client side \n\n(CSR).\n\
+    \nIn the following chapters, we’ll talk in-depth about different types of \n\n\
+    server-side rendering along with client-side rendering and when and \n\nwhere\
+    \ to render what.\n\nHow it works\n\n46"
+  merge: -1
+  pgno: 52
+- img_proc: true
+  md: "Chapter 5\n\nCreate a Next.js \n\nApplication\n\nIn this chapter, you will\
+    \ learn how to create a Next.js application. You'll \n\nstart by setting up the\
+    \ necessary tools like Node.js and Visual Studio \n\nCode. Then, you'll create\
+    \ a new Next.js project using the create-next-\n\napp command. \n\nYou'll explore\
+    \ the project structure and understand the purpose of \n\nimportant files and\
+    \ folders. Finally, you'll learn about the jsconfig.json \n\nand package-lock.json\
+    \ files and their significance in managing \n\ndependencies."
+  merge: -1
+  pgno: 53
+- img_proc: true
+  md: "Create a Next.js Application\n\nBy now, you should fully understand how the\
+    \ websites load. Now it’s \n\ntime to learn how to create websites using Next.js.\n\
+    \nSetting up a Next.js application can be done in various ways. However, \n\n\
+    before we dive into that, there are a few things we need to have in place \n\n\
+    to get started with Next.js. The first requirement is having Node.js 16.8 or \n\
+    \na more recent version. It's worth noting that there is a common \n\nmisconception\
+    \ that Node.js is a new programming language.\n\nIn reality, it’s a JavaScript\
+    \ runtime that enables the execution of \n\nJavaScript code outside of a web browser.\n\
+    \nIf you haven't installed Node.js before, you can visit this link and start \n\
+    \ndownloading it. The website will give you two options based on your \n\noperating\
+    \ system: LTS and Current. The LTS (Long Term Support) version \n\nis the most\
+    \ stable, while the Current version is like a \"Work in Progress\" \n\nthat adds\
+    \ new features but may have some bugs.\n\nSo, did you download it?\n\nTo determine\
+    \ the version you're using and check if you've downloaded \n\nNode.js, you can\
+    \ execute this command in your terminal or Command \n\nPrompt to verify:\n\nnode\
+    \ - v\n\nCreate a Next.js Application\n\n47"
+  merge: -1
+  pgno: 54
+- img_proc: true
+  md: "node -v\n\n18.16.1\n\nNext, we require a Code Editor. Considering that Visual\
+    \ Studio Code \n\n(VSCode) is an exceptional editor, we suggest using it. You\
+    \ can visit \n\n \n\nlink, and depending on your operating system (OS), you will\
+    \ find the \n\nappropriate download link. The download process and installation\
+    \ \n\nprocess is as straightforward as it gets.\n\nthis\n\n![](img/76188a8f748fc585400eeef7e6351b2a_55_0.png)\n\
+    \nCreate a Next.js Application\n\n48"
+  merge: -1
+  pgno: 55
+- img_proc: true
+  md: "After downloading Node.js and VSCode, let's set up your first Next.js \n\n\
+    application.\n\nGo to the desired location where you want to create your project.\
+    \ It can \n\nbe any location, but it's advisable to maintain an organized structure.\
+    \ \n\nCreate a new folder inside that location and name it \"NextEbook.\" If you\
+    \ \n\nprefer a different name, feel free to choose one. This folder will hold\
+    \ all \n\nthe code we will cover in this ebook.\n\n![](img/76188a8f748fc585400eeef7e6351b2a_56_0.png)\n\
+    \nNow, let's proceed with the following steps to open the folder we just \n\n\
+    created in our chosen code editor, which is VSCode:\n\n\x83} Launch VSCode}\n\n\
+    c} Click on the \"File\" option in the top menu bar}\n\nb} From the dropdown menu,\
+    \ choose \"Open Folder.f\n\n\\_} Browse to the location where you created the\
+    \ \"NextEbook\" folder}\n\ne} Select the \"NextEbook\" folder}\n\nZ} Click on\
+    \ the \"Open\" button.\n\nCreate a Next.js Application\n\n49"
+  merge: -1
+  pgno: 56
+- img_proc: true
+  md: "Following these steps, you can view your \"NextEbook\" folder in VSCode.\n\n\
+    VSCode provides its own built-in terminal, eliminating the need for \n\ndevelopers\
+    \ to open the OS Terminal or Command Prompt separately. \n\nWith the inline terminal\
+    \ in VSCode, we can perform all necessary tasks \n\nwithin the application.\n\n\
+    To open the terminal, press ctrl + \\`(backtick) or click on the \n\n\"Terminal\"\
+    \ option in the top menu bar. From the dropdown menu, select \n\n\"New Terminal.\"\
+    \ The terminal window will appear as follows:\n\n![](img/76188a8f748fc585400eeef7e6351b2a_57_0.png)\n\
+    \nFor the final, let’s now create our Next.js application. There are two \n\n\
+    options:\n\n\x91 Automatic Installatio\x83\n\n\x91 Manual Installation\n\nCreate\
+    \ a Next.js Application\n\n50"
+  merge: -1
+  pgno: 57
+- img_proc: true
+  md: "As the name implies, manual installation involves obtaining and \n\nconfiguring\
+    \ packages individually and organizing the initial file and \n\nfolder structure\
+    \ along with some code. We’ll have to do everything on \n\nour own.\n\nOn the\
+    \ other hand, the alternative approach aims to accelerate the \n\ndevelopment\
+    \ process by allowing us to create the application with our \n\npreferred choices.\
+    \ Depending on our preferences, such as using \n\nTypeScript or not, incorporating\
+    \ styling libraries like Tailwind CSS, or \n\nopting for other options, we can\
+    \ set up the complete project with just \n\none click.\n\nBeing widely used and\
+    \ an easy installation choice, we can create a \n\nnext.js project by running\
+    \ a Zero Dependency CLI (Command Line \n\nInterface) tool — create-next-app. You\
+    \ can visit \n\n link if you want to \n\nknow about this in detail. Inside, you’ll\
+    \ see how the create-next-app has \n\nbeen created with the templates, including\
+    \ with/without JavaScript, \n\nTailwind CSS, etc.\n\nthis\n\nDon’t worry; you\
+    \ don’t need to download create-next-app as another \n\nglobal package. Thanks\
+    \ to npx!\n\nWhen you installed Node.js, you also got two other useful tools:\
+    \ \n\nNPM\n\nNPX\n\nNPM, which stands for Node Package Manager, allows us to manage\
+    \ \n\nand download various packages (collections of code) that we need to \n\n\
+    run our application. For example, packages like Axios for making HTTP \n\nrequests\
+    \ or Redux Toolkit for state management.\n\nCreate a Next.js Application\n\n51"
+  merge: -1
+  pgno: 58
+- img_proc: true
+  md: "On the other hand, NPX, short for Node Package Runner, is a command-\n\nline\
+    \ tool. It lets us execute packages without installing them globally on \n\nour\
+    \ system. It's important to note that npx is used to run command-line \n\ntools\
+    \ and execute commands from packages, but it doesn't handle the \n\ninstallation\
+    \ of packages. That responsibility falls to npm, which takes \n\ncare of package\
+    \ installation.\n\nLet's move on from the theoretical discussion and proceed with\
+    \ the \n\ncommand that will automatically install the necessary packages for \n\
+    \nrunning a Next.js application.\n\nnpx create-next-app@latest\n\nAs soon as you\
+    \ press enter, it will prompt you to confirm whether it can \n\ndownload the required\
+    \ packages. Please select \"yes\" to proceed with \n\nthe installation.\n\nDuring\
+    \ the installation process, we will encounter a series of prompts \n\nindividually.\
+    \ These prompts allow you to choose the specific features \n\nand configurations\
+    \ we desire for our Next.js application.\n\n√\n\n√\n\n√\n\n√\n\n√\n\n√\n\n√\n\n\
+    \ What is your project named? \n\n Would you like to use TypeScript with this\
+    \ project? \n\n Would you like to use ESLint with this project? \n\n Would you\
+    \ like to use Tailwind CSS with this project? \n\n Would you like to use src/\
+    \ directory with this project? \n\n Use App Router (recommended)? \n\n Would you\
+    \ like to customize the default import alias? \n\nintroduction \n\nNo \n\nNo \n\
+    \nNo \n\nNo \n\nYes \n\nNo\n\nLet's choose not to include TypeScript, ESLint,\
+    \ and Tailwind CSS. In the \n\nupcoming chapters, we will explore these options\
+    \ in detail.\n\nCreate a Next.js Application\n\n52"
+  merge: -1
+  pgno: 59
+- img_proc: true
+  md: "If you see the installation process carefully, you’ll see “Using npm.” \n\n\
+    npx is used solely to execute commands from packages, while npm \n\nhandles the\
+    \ installation of those packages.\n\n![](img/76188a8f748fc585400eeef7e6351b2a_60_0.png)\n\
+    \nAnd there you have it! The Next.js application has been successfully \n\ninstalled\
+    \ \n\nNow, let's explore what's inside. Click on the \"introduction\" folder or\
+    \ the \n\nname you chose for your project. Inside, you will find several files\
+    \ and \n\nfolders.\n\n![](img/76188a8f748fc585400eeef7e6351b2a_60_1.png)![](img/76188a8f748fc585400eeef7e6351b2a_60_2.png)\n\
+    \nApp\n\nIt’s the root of the application, where we'll create various client \n\
+    \n(frontend) routes and potentially write backend code. Initially, you'll find\
+    \ \n\nsome starter files in this location, including:\n\nCreate a Next.js Application\n\
+    \n53"
+  merge: -1
+  pgno: 60
+- img_proc: true
+  md: "favicon.ico\n\nIt represents the website's favicon displayed in the browser's\
+    \ tab. By \n\ndefault, the favicon will be the Vercel icon. You can replace it\
+    \ with the \n\none you like.\n\n![](img/76188a8f748fc585400eeef7e6351b2a_61_0.png)\n\
+    \nglobals.css\n\nThis file holds the CSS code for the application. It is a global\
+    \ file where \n\nyou can define CSS variables, import fonts, or perform other\
+    \ CSS \n\ninitialization tasks.\n\nYou can keep the file, rename it, or even move\
+    \ it to a different location. It \n\ndoesn't matter. However, if you make any\
+    \ changes to this file, you must \n\nupdate any other parts of the application\
+    \ that rely on it.\n\nCreate a Next.js Application\n\n54"
+  merge: -1
+  pgno: 61
+- img_proc: true
+  md: "global.css\n\n:\n\n{ \n\n:\n\n; \n\n:\n\n; \n\n:\n\n,\n\n,\n\n, '\n\n',\n\n\
+    '\n\n','\n\n', '\n\n', '\n\n',\n\n'\n\n','\n\n', '\n\n',\n\n; \n\n:\n\n,\n\n,\n\
+    \n; \n\n:\n\n,\n\n,\n\n; \n\n:\n\n,\n\n,\n\n; \n\n:\n\n( \n\nfrom\n\nat\n\n, \n\
+    \n#\n\n, \n\n#\n\n, \n\n#\n\n, \n\n#\n\n, \n\n); \n\n:\n\n( \n\n(\n\n,\n\n,\n\n\
+    ,\n\n), \n\n(\n\n,\n\n,\n\n,\n\n) \n\n);............\n\nroot \n\n\\--max-width\
+    \ \n\n\\--border-radius \n\n\\--font-mono \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\
+    \n \n\n monospace\n\n\\--foreground-rgb \n\n \n\n \n\n\\--background-start-rgb\
+    \ \n\n \n\n \n\n\\--background-end-rgb \n\n \n\n \n\n\\--primary-glow \n\n \n\n\
+    \ \n\n \n\n \n\n16abff33 \n\n0885ff33 \n\n54d6ff33 \n\n0071ff33 \n\ntransparent\
+    \ \n\n\\--secondary-glow \n\n \n\n \n\n \n\n \n\n \n\n \n\n1100px\n\n12px\n\n\
+    0\n\n0\n\n0\n\n214\n\n219\n\n220\n\n255\n\n255\n\n255\n\n180deg\n\n50% 50%\n\n\
+    0deg\n\n55deg\n\n120deg\n\n160deg\n\n360deg \n\n255\n\n255\n\n255\n\n1\n\n255\n\
+    \n255\n\n255\n\n0\n\nui-monospace\n\nMenlo\n\nMonaco\n\nCascadia Mono\n\nSegoe\
+    \ UI Mono\n\nRoboto Mono\n\nOxygen Mono\n\nUbuntu Monospace\n\nSource Code Pro\n\
+    \nFira Mono\n\nDroid Sans Mono\n\nconic-gradient\n\nradial-gradient\n\nrgba\n\n\
+    rgba\n\nlayout.js\n\nIt’s the main entry point of the application. The root. The\
+    \ parent. The \n\nlayout. Whatever you prefer to call it.\n\nIf you write anything\
+    \ in there, it’ll appear on each & every client \n\n(frontend) route. It’s universal.\n\
+    \nIf you need to import fonts, add metadata, wrap the application with \n\nRedux,\
+    \ or show a Navbar, this is the place to do it. All these tasks can be \n\nperformed\
+    \ within this file.\n\nCreate a Next.js Application\n\n55"
+  merge: -1
+  pgno: 62
+- img_proc: true
+  md: "page.js\n\nIt’s an alias of the home route i.e., “/”. It's important not to\
+    \ confuse this \n\nfile with layout.js. Whatever you write inside page.js will\
+    \ be displayed \n\nonly on the \"/\" route, while anything inside layout.js will\
+    \ appear across all \n\nroutes, including the home route i.e., “/”.\n\nIn short,\
+    \ layout.js is the parent of page.js, providing a common layout for \n\nall pages.\n\
+    \npage.module.css\n\nThis CSS file is specifically designed to style a particular\
+    \ page \n\ncomponent or module. The naming convention .module.css indicates \n\
+    \nthat the CSS rules in this file are scoped to a specific component. In this\
+    \ \n\ncase, it corresponds to the page.js component.\n\nIf you closely examine\
+    \ the code, you will notice the presence of the \n\nfollowing:\n\nimport\n\nfrom\
+    \ '\n\n styles \n\n ./page.module.css\\`\n\ninside the page.js file.\n\n![](img/76188a8f748fc585400eeef7e6351b2a_63_0.png)\n\
+    \nNode Modules\n\nWell, it’s the backbone!\n\nThe node\\_modules directory is\
+    \ a storage location for all the \n\ndependencies or packages required to run\
+    \ a project. Whenever we \n\ninstall packages using npm, the corresponding code\
+    \ for those \n\npackages is placed inside this directory.\n\nCreate a Next.js\
+    \ Application\n\n56"
+  merge: -1
+  pgno: 63
+- img_proc: true
+  md: "For example, if we install Axios, a folder named axios will be created \n\n\
+    within the node\\_modules folder. If you've been following closely, you \n\nmay\
+    \ have noticed that Next.js is built on top of React. Therefore, you can \n\n\
+    explore the node\\_modules folder to find the react folder, which contains \n\n\
+    the code for React itself.\n\nIn addition to React, you'll come across several\
+    \ other folders such as \n\nnext (which enables Next.js-specific features), react-dom,\
+    \ postcss, \n\nstyled-jsx, and more. Each of these folders contains numerous files\
+    \ \n\nand lines of code essential for running our Next.js application.\n\nNo need\
+    \ to worry, though. You don't have to interact with or visit this \n\ndirectory\
+    \ in the future (unless something terrible happens). npm \n\nautomatically manages\
+    \ the node\\_modules folder when we install or \n\nuninstall node packages.\n\n\
+    ![](img/76188a8f748fc585400eeef7e6351b2a_64_0.png)\n\nPublic\n\nIt’s a special\
+    \ folder allowing us to include static assets like images or \n\nfiles like fonts,\
+    \ videos, etc.\n\nThe content inside this folder is automatically optimized and\
+    \ available \n\nthroughout the application. Thus it’s advisable to put any PNGs,\
+    \ JPEGs, \n\nor SVGs we need inside this folder.\n\n![](img/76188a8f748fc585400eeef7e6351b2a_64_1.png)\n\
+    \n.gitignore\n\nThe .gitignore is a special text file that tells Git, the version\
+    \ control \n\nsystem, to exclude certain files and directories from being tracked.\n\
+    \nOne common entry in the .gitignore file is node\\_modules.\n\nCreate a Next.js\
+    \ Application\n\n57"
+  merge: -1
+  pgno: 64
+- img_proc: true
+  md: "This is because the node\\_modules directory contains many files and \n\nfolders\
+    \ generated when installing dependencies for a Node.js project. \n\nIncluding\
+    \ these files in version control would create unnecessary clutter \n\nand increase\
+    \ the size of the repository.\n\nAs said by the Creator of Node.js — Ryan Dahl\n\
+    \n![](img/76188a8f748fc585400eeef7e6351b2a_65_0.png)\n\nWe would certainly not\
+    \ want to track the “Heaviest Object” in the \n\nuniverse!\n\n![](img/76188a8f748fc585400eeef7e6351b2a_65_1.png)\n\
+    \njsconfig.json\n\nRemember the prompt that appeared when we ran the Next.js CLI\
+    \ tool? \n\nIt asked us if we wanted to customize the default import alias, and\
+    \ we \n\nchose \"No\".\n\nCreate a Next.js Application\n\n58"
+  merge: -1
+  pgno: 65
+- img_proc: true
+  md: "√ Would you like to customize the default import alias? No\n\nWell, the jsconfig.json\
+    \ file is related to that question. It act as a \n\nconfiguration file where we\
+    \ can set various options and settings for our \n\nproject. One of the things\
+    \ we can configure is the import behavior.\n\nBy default, when we want to import\
+    \ code from one file into another, we \n\nuse relative paths like this:\n\nimport\n\
+    \nfrom '\n\n something \n\n ../../components\\`\n\nThis is the correct, but sometimes\
+    \ long and complex, relative path.\n\nIn larger projects or projects with complex\
+    \ directory structures, \n\nmanually specifying relative paths for each import\
+    \ can become tedious \n\nand prone to errors.\n\nHowever, by configuring the compilerOptions\
+    \ in the jsconfig.json \n\nfile, we can inform the compiler about a specific import\
+    \ path structure \n\nthat we want to use.\n\nIf we take a look at the content\
+    \ of the jsconfig.json file, we have:\n\n{ \n\n \"\n\n\"\n\n{ \n\n \"\n\n\": {\
+    \ \n\n \"\n\n\":\n\n\"\n\n\"\n\n } \n\n } \n\n}\n\ncompilerOptions\n\n./\\*\n\n\
+    : \n\npaths\n\n \n\n@/\\*\n\n \\[\n\n\\] \n\nCreate a Next.js Application\n\n\
+    59"
+  merge: -1
+  pgno: 66
+- img_proc: true
+  md: "In this configuration, we have defined path aliases using \n\n. This \n\nmeans\
+    \ that now we can do the following:\n\n@/\\*\n\nimport\n\nfrom '\n\n something\
+    \ \n\n @/components\\`\n\ni.e., using @/\\* for any files and folders located\
+    \ in this location ./\\* i.e., the \n\nroot!\n\n![](img/76188a8f748fc585400eeef7e6351b2a_67_0.png)\n\
+    \nFeel free to customize the alias to your preference. You can change @/\\* \n\
+    \nto @\\* or even #/\\* — the choice is yours! \n\n![](img/76188a8f748fc585400eeef7e6351b2a_67_1.png)\n\
+    \npackage-lock.json\n\nHave you ever think of this as an unwanted file?\n\nWell,\
+    \ let me tell you, it's actually quite important. This file, called \n\npackage-lock.json,\
+    \ is automatically created when we install or make \n\nchanges to packages. It\
+    \ serves as a lock file, carefully keeping track of \n\nthe specific versions\
+    \ of all the installed packages and their \n\ndependencies.\n\nLet's imagine a\
+    \ scenario: You're working on a Next.js project. After \n\ncompleting your work,\
+    \ you share the project code with your manager, \n\nbut you omit the package-lock.json\
+    \ file, thinking it's not essential.\n\nNow, your manager starts downloading the\
+    \ packages listed in the \n\npackage.json file. The package manager, npm, installs\
+    \ the specified \n\npackages and their dependencies (i.e., the folder and files\
+    \ we have \n\nseen inside the node\\_modules folder).\n\nCreate a Next.js Application\n\
+    \n60"
+  merge: -1
+  pgno: 67
+- img_proc: true
+  md: "However, if any dependencies release a new version, the package \n\nmanager\
+    \ will eagerly download it. And unfortunately, if this new version \n\nmay contain\
+    \ unresolved bugs or compatibility issues, it can cause your \n\napplication to\
+    \ misbehave.\n\n![](img/76188a8f748fc585400eeef7e6351b2a_68_0.png)![](img/76188a8f748fc585400eeef7e6351b2a_68_1.png)\n\
+    \nAs a result, your manager may become frustrated, saying, \"It doesn't \n\nwork\
+    \ on my machine \n\n,\" while you feel helpless, responding with a \n\ndisheartened\
+    \ \"It works on my machine \n\n.\"\n\n![](img/76188a8f748fc585400eeef7e6351b2a_68_2.png)\n\
+    \nKnow the importance and always share your package-lock.json file \n\n![](img/76188a8f748fc585400eeef7e6351b2a_68_3.png)\n\
+    \npackage.json\n\nThink of this as an info card that tells about you — who you\
+    \ are, where \n\nyou are from, etc. but with more complete details.\n\nAlong with\
+    \ containing the information regarding the name of the \n\nproject, and its version,\
+    \ it tells us the dependencies and dev \n\ndependencies required to run this project\n\
+    \ndependencies\n\nList of the packages that are necessary for the project to run\
+    \ the \n\nproduction environment\n\ndevDependencies\n\nList of packages that are\
+    \ only needed during the development process. \n\nFor example, linting packages\
+    \ like eslint.\n\nWhenever we install a package, whether a dependency or a dev\
+    \ \n\ndependency, npm automatically records the package name and its \n\ncorresponding\
+    \ version in the respective section of the package.json file.\n\nCreate a Next.js\
+    \ Application\n\n61"
+  merge: -1
+  pgno: 68
+- img_proc: true
+  md: "This way, the package.json file records all the packages required for \n\n\
+    the project, making it easier to manage and reproduce the \n\ndevelopment and\
+    \ production environments accurately.\n\nOther than that, we can see another part\
+    \ i.e., “scripts”. It contains \n\nexecutable commands or scripts using npm. We\
+    \ can completely \n\ncustomize it. Through these commands/scripts, we run tests,\
+    \ build a \n\nproject, start a development server, or deploy the application.\n\
+    \nLast but not least,\n\n![](img/76188a8f748fc585400eeef7e6351b2a_69_0.png)\n\n\
+    README.md\n\nIt’s a like a manual or guidebook for your project — a text file\
+    \ where we \n\ncan write down important information about our project, such as\
+    \ how to \n\ninstall it, what it does, and how others can contribute to it.\n\n\
+    Having a good README helps people understand what our project is all \n\nabout\
+    \ and how they can use it or get involved. It's like giving them \n\ndirections\
+    \ or instructions on how to make the most of our project.\n\nNow, let's finally\
+    \ run our application. We need to execute one of the \n\ncommands from the \"\
+    scripts\" section we just mentioned, specifically the \n\n\"dev\" command.\n\n\
+    Before proceeding, ensure the terminal's path is set to the correct \n\nlocation.\
+    \ Since we created a subfolder called \"introduction\" inside the \n\n\"NextEbook\"\
+    \ folder, we need to navigate into it. To do that, enter the \n\nfollowing command\
+    \ in the open terminal:\n\ncd introduction\n\nCreate a Next.js Application\n\n\
+    62"
+  merge: -1
+  pgno: 69
+- img_proc: true
+  md: "The \"cd\" command, which stands for \"change directory,\" will navigate us\
+    \ \n\ninside the \"introduction\" folder.\n\nNow run,\n\nnpm run dev\n\nThis command\
+    \ will start a local machine's development server on port \n\n3000\\. To see the\
+    \ application in action, open your preferred web browser \n\nand type the URL:\
+    \ \n\n. If you have followed all the \n\nprevious steps correctly, you should\
+    \ be able to see the application \n\nrunning as expected:\n\nhttp://localhost:3000\n\
+    \n![](img/76188a8f748fc585400eeef7e6351b2a_70_0.png)\n\nCreate Next App\n\nhttp://localhost:3000\n\
+    \n![](img/76188a8f748fc585400eeef7e6351b2a_70_1.png)\n\nPhew, a lot of explaining\
+    \ just to cover the initial file and folder structure. \n\nBut it’s of no use\
+    \ if we don’t take any actions. Let’s change few things \n\nfrom the repo to see\
+    \ how it works.\n\nCreate a Next.js Application\n\n63"
+  merge: -1
+  pgno: 70
+- img_proc: true
+  md: "Open the page.js file and delete all the existing code. We'll start fresh \n\
+    \nby creating the Home component.\n\n![](img/76188a8f748fc585400eeef7e6351b2a_71_0.png)\n\
+    \nexport default\n\n() { \n\nreturn\n\n<\n\n\\> \n\n< >\n\n</ > \n\n</\n\n\\>\
+    \ \n\n}\n\n \n\n \n\n \n\n \n\n \n\nHello World \n\n \n\nfunction Home\n\n \n\n\
+    \ ( \n\n main\n\np\n\np\n\nman\n\n)\n\n![](img/76188a8f748fc585400eeef7e6351b2a_71_1.png)\n\
+    \nAfter making the changes, save the file and return to your browser. If \n\n\
+    you visit the localhost again, you should see the updated content of \n\n\"Hello\
+    \ World \n\n\" without manually refreshing the page. This is possible \n\nbecause\
+    \ of the \n\n feature of Next.js, which automatically \n\nreflects the changes\
+    \ in real time as we edit the code.\n\nFast Refresh\n\nNow, open the layout.js\
+    \ file and add text inside the body tag:\n\n![](img/76188a8f748fc585400eeef7e6351b2a_71_2.png)\n\
+    \nimport '\n\n'; \n\nimport {\n\n} from '\n\n'; \n\n\\=\n\n{\n\n:\n\n'\n\n'\n\n\
+    } ; \n\nexport\n\n\\= { \n\n: '\n\n', \n\n: '\n\n', \n\n}; \n\nexport default\n\
+    \n({\n\n}) { \n\nreturn\n\n<\n\n \n\n\\=\"\n\n\"> \n\n<\n\n \n\n\\={\n\n.\n\n\
+    }> \n\n< >\n\n</ > \n\n{\n\n} \n\n</\n\n\\> \n\n</\n\n\\> \n\n; \n\n}\n\n \n\n\
+    \ \n\nInter\n\n \n\n \n\n inter \n\n( \n\n \\[\n\n\\] )\n\n \n\n metadata \n\n\
+    \ \n\n \n\n \n\n \n\n \n\n \n\n \n\n children \n\n \n\n \n\ninter className\n\n\
+    \ \n\nHello, I'm Groot \n\n children\n\n \n\n \n\n./globals.css\n\nnext/font/google\n\
+    \nlatin\n\nCreate Next App\n\nGenerated by create next app\n\nen\n\n \n\n \n\n\
+    subsets\n\ntitle\n\ndescription\n\n \n\n ( \n\n html\n\nbody\n\np\n\np\n\nbody\n\
+    \nhtml\n\n )\n\nconst\n\nconst\n\nfunction\n\nlang\n\nclassName\n\nInter\n\nRootLayout\n\
+    \nCreate a Next.js Application\n\n64"
+  merge: -1
+  pgno: 71
+- img_proc: true
+  md: "![](img/76188a8f748fc585400eeef7e6351b2a_72_0.png)\n\nTake a moment to ponder:\
+    \ Where will this text appear? Will it be \n\ndisplayed before the \"Hello World\
+    \ \n\n\" or after it? Or perhaps it won't be \n\ndisplayed at all since we are\
+    \ on the home route, which is \"/\".\n\n3, 2, 1... finished thinking?\n\n![](img/76188a8f748fc585400eeef7e6351b2a_72_0.png)\n\
+    \nTo find the answer to your question, visit the browser. And you're right! \n\
+    \nThe text will be displayed before the \"Hello World \n\n\".\n\n![](img/76188a8f748fc585400eeef7e6351b2a_72_2.png)\n\
+    \nCreate Next App\n\nhttp://localhost:3000\n\n![](img/76188a8f748fc585400eeef7e6351b2a_72_3.png)\n\
+    \nWhy? Because layout.js is parent or root of the application.\n\n![](img/76188a8f748fc585400eeef7e6351b2a_72_0.png)![](img/76188a8f748fc585400eeef7e6351b2a_72_5.png)\n\
+    \nBut why before the “Hello World \n\n”? Because we are rendering the \n\nchildren\
+    \ components of layout.js after the text \"Hello, I'm Groot \n\n\".\n\n![](img/76188a8f748fc585400eeef7e6351b2a_72_6.png)\n\
+    \n<\n\n \n\n\\={\n\n.\n\n}> \n\n< >\n\n</ > \n\n{\n\n} \n\n</\n\n\\>\n\nbody\n\
+    \np\n\np\n\nbody\n\nclassName\n\ninter className\n\n \n\nHello, I'm Groot \n\n\
+    \ children\n\nCreate a Next.js Application\n\n65"
+  merge: -1
+  pgno: 72
+- img_proc: true
+  md: "Reverse the order, and see the magic, i.e.:\n\n![](img/76188a8f748fc585400eeef7e6351b2a_73_0.png)\n\
+    \n<\n\n \n\n\\={\n\n.\n\n}> \n\n {\n\n} \n\n< >\n\n</ > \n\n</\n\n\\>\n\nbody\n\
+    \np\n\np\n\nbody\n\nclassName\n\ninter className\n\nchildren\n\n \n\nHello, I'm\
+    \ Groot \n\nThe children prop is passed by Next.js to the RootLayout component\
+    \ in \n\nlayout.js. It contains all the child components or route components of\
+    \ \n\nthe application, starting from the home route and extending to any \n\n\
+    other routes that we may create.\n\n![](img/76188a8f748fc585400eeef7e6351b2a_73_0.png)\n\
+    \n// children is passed as a prop by Next.js \n\n/\\* Contains the route components,\
+    \ i.e., home route \\*/\n\nexport default\n\n({\n\n}) { \n\nreturn\n\n<\n\n \n\
+    \n\\=\"\n\n\"> \n\n<\n\n \n\n\\={\n\n.\n\n}> \n\n< >\n\n</ > \n\n{\n\n} \n\n{\n\
+    \n} \n\n</\n\n\\> \n\n</\n\n\\> \n\n}\n\n \n\n \n\n \n\n children \n\n \n\n \n\
+    \ninter className\n\n \n\nHello, I'm Groot \n\n \n\n children\n\n \n\n \n\nfunction\n\
+    \nlang\n\nclassName\n\nRootLayout\n\n \n\n ( \n\n html\n\nbody\n\np\n\np\n\nbody\n\
+    \nhtml\n\n ) \n\nen\n\nClear enough?\n\nAmazing! Before you rush to start the\
+    \ next chapter, I have a few tasks for \n\nyou to complete:\n\nCreate a Next.js\
+    \ Application\n\n66"
+  merge: -1
+  pgno: 73
+- img_proc: true
+  md: "![](img/76188a8f748fc585400eeef7e6351b2a_74_0.png)\n\nTasks \n\n![](img/76188a8f748fc585400eeef7e6351b2a_74_1.png)![](img/76188a8f748fc585400eeef7e6351b2a_74_2.png)\n\
+    \n Comment down the {children} inside the RootLayout and see if you \n\ncan still\
+    \ see the “Hello World \n\n”\n\n![](img/76188a8f748fc585400eeef7e6351b2a_74_3.png)\n\
+    \nimport '\n\n' \n\nimport {\n\n} from '\n\n' \n\n\\=\n\n{\n\n:\n\n'\n\n'\n\n\
+    }\n\nexport\n\n\\= { \n\n: '\n\n', \n\n: '\n\n', \n\n} \n\nexport default\n\n\
+    ({\n\n}) { \n\nreturn\n\n<\n\n \n\n\\=\"\n\n\"> \n\n<\n\n \n\n\\={\n\n.\n\n}>\
+    \ \n\n< >\n\n</ > \n\n{\n\n} \n\n{\n\n} \n\n</\n\n\\> \n\n</\n\n\\> \n\n}\n\n\
+    \ \n\n \n\nInter\n\n \n\n \n\n inter \n\n( \n\n \\[\n\n\\] ) \n\n \n\n metadata\
+    \ \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n children \n\n \n\n \n\ninter className\n\
+    \n \n\nHello, I'm Groot \n\n \n\n \n\n \n\n \n\n./globals.css\n\nnext/font/google\n\
+    \nlatin\n\nCreate Next App\n\nGenerated by create next app\n\nen\n\n \n\n \n\n\
+    subsets\n\ntitle\n\ndescription\n\n \n\n ( \n\n html\n\nbody\n\np\n\np\n\nbody\n\
+    \nhtml\n\n ) \n\nconst\n\nconst\n\nfunction\n\nlang\n\nclassName\n\nInter\n\n\
+    RootLayout\n\n// children is passed as a prop by Next.js \n\n/\\* Contains the\
+    \ route components i.e., home route \\*/\n\n/\\* {children} \\*/\n\n![](img/76188a8f748fc585400eeef7e6351b2a_74_4.png)\n\
+    \nExplain the purpose of Node.js in the context of Next.js and web \n\ndevelopment.\n\
+    \n![](img/76188a8f748fc585400eeef7e6351b2a_74_4.png)\n\nExplain the purpose and\
+    \ usage of the create-next-app CLI tool \n\nand why we use npx with it.\n\n![](img/76188a8f748fc585400eeef7e6351b2a_74_4.png)\n\
+    \nWhat is the role of the node\\_modules directory in a Next.js \n\nproject? Why\
+    \ is it recommended not to include it in version \n\ncontrol?\n\nCreate a Next.js\
+    \ Application\n\n67"
+  merge: -1
+  pgno: 74
+- img_proc: true
+  md: "Chapter 6\n\nClient Vs. Server\n\nIn this chapter, you'll dive into the concepts\
+    \ of client-side rendering \n\n(CSR) and server-side rendering (SSR) in Next.js.\
+    \ You'll explore how \n\nNext.js handles rendering on the client and server, understand\
+    \ the \n\nbenefits and trade-offs of each approach, and learn how to implement\
+    \ \n\nCSR and SSR in your Next.js applications."
+  merge: -1
+  pgno: 75
+- img_proc: true
+  md: "Client Vs. Server\n\nSo far, we understand that Next.js does a mix of server-side\
+    \ and client-\n\nside rendering to get the best of both worlds. But we need to\
+    \ find out \n\nwhich parts of the application are rendered on the server side.\
+    \ Can we \n\nchoose what to render in each environment? \n\nAnd if so, how can\
+    \ we do that?\n\nBefore we answer these questions, let's go back and remind ourselves\
+    \ \n\nwhat we mean by client and server. What do these terms actually \n\nmean?\n\
+    \nClient\n\nThe client refers to the device you are currently using, such as your\
+    \ \n\nsmartphone or computer. The device sends requests to the server and \n\n\
+    displays the interface that we can interact with.\n\nServer\n\nThe server is essentially\
+    \ just a computer device, but it is equipped with \n\nstrong configurations and\
+    \ remains operational continuously. It is where \n\nall the code for our application\
+    \ is stored. When the client, our device, \n\nsends a request, the server performs\
+    \ the necessary computations and \n\nsends back the required outcome.\n\nIn previous\
+    \ versions of Next.js, specifically versions before 13, we faced a \n\nlimitation\
+    \ where server-side rendering was restricted to individual \n\npages. This meant\
+    \ that only the route pages like \"/\", \"/about\", \"/projects\", \n\nand so\
+    \ on could be rendered on the server side. \n\nClient Vs. Server\n\n68"
+  merge: -1
+  pgno: 76
+- img_proc: true
+  md: "This limitation led to challenges such as prop drilling and duplication of\
+    \ \n\nAPI calls when passing data to lower-level components.\n\nI recommend reading\
+    \ this article to gain a deeper understanding of the \n\ndifferences between the\
+    \ pages directory and the app directory in Next.js \n\nand how they address these\
+    \ limitations. It provides detailed insights \n\ninto the topic:\n\nLess code,\
+    \ better UX: \n\nFetching data faster with \n\nthe Next.js 13 App Router\n\nLink\
+    \ to blog\n\n![](img/76188a8f748fc585400eeef7e6351b2a_77_0.png)\n\nAnd that, my\
+    \ friends, is where the app directory comes into action. It not \n\nonly introduced\
+    \ many features but also brought about a revolutionary \n\nchange, i.e., — Component\
+    \ level Server Side Rendering.\n\nWhat does that mean?\n\nIt means that now we\
+    \ have the ability to choose where we want to \n\nrender specific components or\
+    \ a section of code.\n\nFor instance, let's consider a component called Navbar.jsx.\
+    \ With this \n\nnew capability, we can decide whether we want to render it on\
+    \ the \n\nserver side or the client side (in the user's browser).\n\nAnd that's\
+    \ how we end up with two types of components: Client \n\nComponents and Server\
+    \ Components.\n\nClient Vs. Server\n\n69"
+  merge: -1
+  pgno: 77
+- img_proc: true
+  md: "What are these?\n\nSimply put, both are React components, but the difference\
+    \ lies in where \n\nthey are rendered.\n\nClient Component - A react component\
+    \ that runs/renders on the user’s \n\ndevice, such as a web browser or mobile\
+    \ app.\n\nServer Component - A react component that runs/renders on the \n\nserver,\
+    \ i.e., the infra or place where we’ll deploy our application\n\nBut why would\
+    \ we want to render such a small component on the \n\nserver side?\n\nWell, think\
+    \ about it!\n\nBy strategically deciding to render certain components on the server\
+    \ \n\nside, we save users' browsers from doing extra work with JavaScript to \n\
+    \nshow those components. Instead, we get the initial HTML code for those \n\n\
+    components, which the browser can display immediately. This reduces \n\nthe size\
+    \ of the JavaScript bundle, making the initial page load faster.\n\nAnd as discussed\
+    \ above, we’ll overcome our limitations with the pages \n\ndirectory. Rather than\
+    \ fetching and passing data to components \n\nseparately, we can fetch the data\
+    \ directly within the component, \n\nturning it into a server component.\n\nOverall,\
+    \ we’ll have these benefits if we choose to do server-side \n\nrendering:\n\n\
+    Smaller JavaScript bundle size: The size of the JavaScript code that \n\nneeds\
+    \ to be downloaded by the browser is reduced.\n\nClient Vs. Server\n\n70"
+  merge: -1
+  pgno: 78
+- img_proc: true
+  md: "Enhanced SEO (Search Engine Optimization: Server-side rendering \n\nhelps improve\
+    \ search engine visibility and indexing of your website's \n\ncontent. (remember?)\n\
+    \nFaster initial page load for better accessibility and user experience: \n\n\
+    Users can see the content more quickly, leading to a smoother \n\nbrowsing experience.\n\
+    \nEfficient utilization of server resources: By fetching data closer to the \n\
+    \nserver, the time required to retrieve data is reduced, resulting in \n\nimproved\
+    \ performance.\n\nOkay, but when to decide what to render where?\n\nAs their name\
+    \ suggests, where to render each component depends on \n\nwhat the component does.\n\
+    \nIf a component needs the user to interact with it, such as clicking \n\nbuttons,\
+    \ entering information in input fields, triggering events, or using \n\nreact\
+    \ hooks, then it should be a client component. These interactions \n\nrely on\
+    \ the capabilities of the user's web browser, so they need to be \n\nrendered\
+    \ on the client side.\n\nOn the other hand, if a component doesn't require any\
+    \ user interaction \n\nor involves tasks like fetching data from a server, displaying\
+    \ static \n\ncontent, or performing server-side computations, it can be a server\
+    \ \n\ncomponent. These components can be rendered on the server without \n\nspecific\
+    \ browser features.\n\nClient Vs. Server\n\n71"
+  merge: -1
+  pgno: 79
+- img_proc: true
+  md: "Ask yourself:\n\nDoes the component require user interactivity?\n\nYes — Client\
+    \ Component\n\nNo — Server Component\n\nTo simplify things, the Next.js documentation\
+    \ provides a helpful table \n\nthat guides you on where to render each component.\n\
+    \nWhat do you need to do?\n\nServer \n\nComponent\n\nClient \n\nComponent\n\n\
+    Fetch data.\n\nAccess backend resources (directly)\n\nKeep sensitive information\
+    \ on the server (access \n\ntokens, API keys, etc)\n\nKeep large dependencies\
+    \ on the server / Reduce \n\nclient-side JavaScript\n\nAdd interactivity and event\
+    \ listeners (onClick(), \n\nonChange(), etc)\n\nUse State and Lifecycle Effects\
+    \ (useState(),  \n\nuseReducer(),  useEffect(), etc)\n\nUse browser-only APIs\n\
+    \nUse custom hooks that depend on state, effects, or \n\nbrowser-only APIs\n\n\
+    Use React Class components\n\n![](img/76188a8f748fc585400eeef7e6351b2a_80_0.png)![](img/76188a8f748fc585400eeef7e6351b2a_80_1.png)![](img/76188a8f748fc585400eeef7e6351b2a_80_1.png)![](img/76188a8f748fc585400eeef7e6351b2a_80_1.png)![](img/76188a8f748fc585400eeef7e6351b2a_80_1.png)![](img/76188a8f748fc585400eeef7e6351b2a_80_1.png)![](img/76188a8f748fc585400eeef7e6351b2a_80_1.png)![](img/76188a8f748fc585400eeef7e6351b2a_80_1.png)![](img/76188a8f748fc585400eeef7e6351b2a_80_1.png)![](img/76188a8f748fc585400eeef7e6351b2a_80_1.png)![](img/76188a8f748fc585400eeef7e6351b2a_80_0.png)![](img/76188a8f748fc585400eeef7e6351b2a_80_0.png)![](img/76188a8f748fc585400eeef7e6351b2a_80_0.png)![](img/76188a8f748fc585400eeef7e6351b2a_80_0.png)![](img/76188a8f748fc585400eeef7e6351b2a_80_0.png)![](img/76188a8f748fc585400eeef7e6351b2a_80_0.png)![](img/76188a8f748fc585400eeef7e6351b2a_80_0.png)![](img/76188a8f748fc585400eeef7e6351b2a_80_0.png)\n\
+    \nClient Vs. Server\n\n72"
+  merge: -1
+  pgno: 80
+- img_proc: true
+  md: "Impressive! You've just discovered one of the most significant features \n\n\
+    of the modern era. Take a well-deserved break!\n\nReady for more?\n\nAnother groundbreaking\
+    \ aspect of Next.js 13's app directory is that all \n\ncomponents are automatically\
+    \ considered server components by \n\ndefault. That's right; every component is\
+    \ treated as a server component \n\nunless specified otherwise.\n\nSo how do we\
+    \ differentiate it from the client components?\n\nWell, it's as simple as writing\
+    \ \"use client\" at the top of the component \n\nfile. It's a straightforward\
+    \ and slick way to indicate that the component \n\nshould be treated as a client\
+    \ component.\n\n![](img/76188a8f748fc585400eeef7e6351b2a_81_0.png)\n\nThat's enough\
+    \ theory for now. Let's dive into coding \n\nTo get started, follow the steps\
+    \ outlined in the previous section to \n\nquickly set up a new Next.js project\
+    \ within the same NextEbook folder.\n\nBefore proceeding, ensure that the terminal's\
+    \ path points to the \n\nNextEbook folder and not the previously created introduction\
+    \ folder. \n\nTo navigate out of the introduction folder, you can run the following\
+    \ \n\ncommand:\n\ncd ..\n\nNow, execute the create\\-next\\-app command. In this\
+    \ example, I'll be \n\nusing the name client\\-server for the new folder, but\
+    \ feel free to \n\nchoose any name you prefer.\n\nClient Vs. Server\n\n73"
+  merge: -1
+  pgno: 81
+- img_proc: true
+  md: "Once the installation is complete, use the cd command to navigate into \n\n\
+    the client-server folder and start the application.\n\nNow go to the app folder,\
+    \ then to the page.js file, and delete all other \n\ncontent except for the main\
+    \ and h2 tags:\n\napp/page.js\n\n![](img/76188a8f748fc585400eeef7e6351b2a_82_0.png)\n\
+    \nimport\n\nfrom '\n\n' \n\nexport default\n\n() { \n\n.\n\n\"\n\n\"\n\nreturn\n\
+    \n<\n\n \n\n\\={\n\n.\n\n}> \n\n<\n\n\\>\n\n</\n\n\\> \n\n</\n\n\\> \n\n}\n\n\
+    \ styles \n\n \n\n \n\n \n\n \n\n \n\nconsole\n\nstyles main\n\n \n\nWelcome \n\
+    \n \n\n./page.module.css\n\nWhere do I render?\n\nfunction\n\nclassName\n\nHome\n\
+    \nlog\n\n \n\n(\n\n) \n\n \n\n ( \n\n main\n\nh2\n\nh2\n\nmain\n\n ) \n\nIf you\
+    \ prefer, you can delete everything else from the page.module.css \n\nfile and\
+    \ keep the styles only for the main tag of HTML.\n\napp/page.module.css\n\n.\n\
+    \n{ \n\n:\n\n; \n\n:\n\n; \n\n:\n\n; \n\n:\n\n; \n\n:\n\n; \n\n}\n\nmain \n\n\
+    \ \n\n flex\n\n \n\n column\n\n \n\n center\n\n \n\n \n\n \n\n \n\ndisplay\n\n\
+    flex-direction\n\nalign-items\n\npadding\n\nmin-height\n\n6rem\n\n100vh\n\nAfter\
+    \ adding a console log in our page.js file, let's open our web browser \n\nto\
+    \ see if it appears there:\n\nClient Vs. Server\n\n74"
+  merge: -1
+  pgno: 82
+- img_proc: true
+  md: "Once the installation is complete, use the cd command to navigate into \n\n\
+    the client-server folder and start the application.\n\n![](img/76188a8f748fc585400eeef7e6351b2a_83_0.png)\n\
+    \nCreate Next App\n\nhttp://localhost:3000\n\n![](img/76188a8f748fc585400eeef7e6351b2a_83_1.png)![](img/76188a8f748fc585400eeef7e6351b2a_83_1.png)![](img/76188a8f748fc585400eeef7e6351b2a_83_3.png)\n\
+    \nHmm, “Where do I render?” is not there. How on Earth? \n\nIndeed, you are correct.\
+    \ As previously discussed, all these components \n\nwill be Server Components\
+    \ by default!\n\nSo where do we see the console statements if not in the browser\
+    \ \n\nconsole? You know that, right?\n\nThe terminal! Let's return to our terminal\
+    \ and check if the mentioned log \n\ntext is present there:\n\nClient Vs. Server\n\
+    \n75"
+  merge: -1
+  pgno: 83
+- img_proc: true
+  md: "Terminal\n\nnpm run dev\n\n\\- next dev \n\n\\- wait compiling /page (client\
+    \ and server)... \n\n\\- event compiled client and server successfully in 390\
+    \ ms (413 modules)\n\nWhere do I render?\n\n![](img/76188a8f748fc585400eeef7e6351b2a_84_0.png)\n\
+    \nAnd there we go, the log is there \n\nNow let’s create two more components for\
+    \ each Client and Server.\n\nInside the root of the folder, i.e., outside of the\
+    \ app folder, create a new \n\nfolder and name it components. Create two new files\
+    \ inside it, \n\nExampleClient.jsx and ExampleServer.jsx.\n\ncomponents/ExampleClient.jsx\n\
+    \n\"\n\n\"; \n\n\\= ()\n\n{ \n\n.\n\n\"\n\n\" ; \n\nreturn\n\n<\n\n\\> \n\n< >\n\
+    \n</ > \n\n</\n\n\\> \n\n; \n\n}; \n\nexport default\n\n;\n\nuse client\n\nI'm\
+    \ Client Component :)\n\nconst\n\n\\=>\n\n ExampleClient \n\n \n\n \n\nconsole\n\
+    \n \n\nThis an example client component\n\n \n\n \n\n ExampleClient\n\n \n\n(\n\
+    \n)\n\n \n\n ( \n\n div\n\np\n\np\n\ndiv\n\n )\n\nlog\n\nClient Vs. Server\n\n\
+    76"
+  merge: -1
+  pgno: 84
+- img_proc: true
+  md: "And the small ExampleServer component as\n\ncomponents/ExampleServer.jsx\n\n\
+    const\n\n\\=>\n\n ExampleServer \n\n \n\n \n\nconsole\n\n \n\nThis is an example\
+    \ server component\n\n \n\n \n\n ExampleServer\n\n\\= ()\n\n{ \n\n.\n\n\"\n\n\"\
+    \ ; \n\nreturn\n\n<\n\n\\> \n\n< >\n\n</ > \n\n</\n\n\\> \n\n; \n\n}; \n\nexport\
+    \ default\n\n;\n\n \n\n(\n\n)\n\n \n\n ( \n\n div\n\np\n\np\n\ndiv\n\n )\n\nlog\n\
+    \nI'm Server Component :)\n\nNow, first import & use the ExampleClient component\
+    \ inside the app/\n\npage.js file:\n\napp/page.js\n\n![](img/76188a8f748fc585400eeef7e6351b2a_85_0.png)\n\
+    \nimport\n\nfrom '\n\n' \n\nimport\n\nfrom '\n\n' \n\nexport default\n\n() { \n\
+    \n.\n\n\"\n\n\"\n\nreturn\n\n<\n\n \n\n\\={\n\n.\n\n}> \n\n<\n\n\\>\n\n</\n\n\\\
+    > \n\n<\n\n /> \n\n</\n\n\\> \n\n}\n\n styles \n\n \n\n ExampleClient \n\n \n\n\
+    \ \n\n \n\n \n\n \n\nconsole\n\nstyles main\n\n \n\nWelcome \n\n \n\n \n\n./page.module.css\n\
+    \n@/components/ExampleClient\n\nWhere do I render?\n\nfunction\n\nclassName\n\n\
+    Home\n\nlog\n\n \n\n(\n\n) \n\n \n\n ( \n\n main\n\nh2\n\nh2\n\nmain\n\n ) \n\n\
+    ExampleClient\n\nClient Vs. Server\n\n77"
+  merge: -1
+  pgno: 85
+- img_proc: true
+  md: "![](img/76188a8f748fc585400eeef7e6351b2a_86_0.png)\n\nPerfect. Let’s check\
+    \ where we see which console log \n\nFirst browser,\n\n![](img/76188a8f748fc585400eeef7e6351b2a_86_1.png)\n\
+    \nCreate Next App\n\nhttp://localhost:3000\n\n![](img/76188a8f748fc585400eeef7e6351b2a_86_2.png)![](img/76188a8f748fc585400eeef7e6351b2a_86_2.png)\n\
+    \nOkay, that’s right, right? We explicitly said Next.js to render \n\nExampleClient.jsx\
+    \ as Client Component. Fair enough!\n\nGoing back to the Terminal, we see…\n\n\
+    Terminal\n\nnpm run dev\n\n\\- next dev \n\n\\- wait compiling /page (client and\
+    \ server)... \n\n\\- event compiled client and server successfully in 390 ms (418\
+    \ modules)\n\nWhere do I render? \n\nI'm Client Component :)\n\nClient Vs. Server\n\
+    \n78"
+  merge: -1
+  pgno: 86
+- img_proc: true
+  md: "Both of them, why?\n\nThis is because Next.js performs pre-rendering certain\
+    \ content before \n\nsending it back to the client.\n\nSo basically, two things\
+    \ happen:\n\nP Server Components are guaranteed to be only rendered on the \n\n\
+    serveL\n\nP On the other hand, client components are primarily rendered on the\
+    \ \n\nclient side.\n\nHowever, Next.js also pre-renders them on the server to\
+    \ ensure a \n\nsmooth user experience and improve search engine optimization (SEO).\n\
+    \nNext.js, by default, performs static rendering, which means it pre-\n\nrenders\
+    \ the necessary content on the server before sending it to the \n\nclient. This\
+    \ pre-rendering process includes server and client \n\ncomponents that can be\
+    \ pre-rendered without compromising \n\nfunctionality.\n\nThe server Component\
+    \ is the latest React.js Feature. Next.js has \n\nsimply used it over what they\
+    \ had, making the setup easy.\n\nLet’s play around with these components a little\
+    \ more. Now, import the \n\nExampleServer component inside the app/page.js file\n\
+    \nClient Vs. Server\n\n79"
+  merge: -1
+  pgno: 87
+- img_proc: true
+  md: "app/page.js\n\n![](img/76188a8f748fc585400eeef7e6351b2a_88_0.png)\n\nimport\n\
+    \nfrom '\n\n' \n\nimport\n\nfrom '\n\n' \n\nimport\n\nfrom '\n\n' \n\nexport default\n\
+    \n() { \n\n.\n\n\"\n\n\"\n\nreturn\n\n<\n\n \n\n\\={\n\n.\n\n}> \n\n<\n\n\\>\n\
+    \n</\n\n\\> \n\n<\n\n /> \n\n<\n\n /> \n\n</\n\n\\> \n\n}\n\n styles \n\n \n\n\
+    \ ExampleClient \n\n \n\n ExampleServer \n\n \n\n \n\n \n\n \n\n \n\nconsole\n\
+    \nstyles main\n\n \n\nWelcome \n\n \n\n \n\n \n\n./page.module.css\n\n@/components/ExampleClient\n\
+    \n@/components/ExampleServer\n\nWhere do I render?\n\nfunction\n\nclassName\n\n\
+    Home\n\nlog\n\n \n\n(\n\n) \n\n \n\n ( \n\n main\n\nh2\n\nh2\n\nmain\n\n ) \n\n\
+    ExampleClient\n\nExampleServer\n\nAnd now, if we visit the browser, along with\
+    \ showing both client-server \n\ncomponent text on the website, it’ll only show\
+    \ the “I'm Client Component \n\n:)” log inside the browser’s console:\n\n![](img/76188a8f748fc585400eeef7e6351b2a_88_1.png)\n\
+    \nCreate Next App\n\nhttp://localhost:3000\n\n![](img/76188a8f748fc585400eeef7e6351b2a_88_2.png)![](img/76188a8f748fc585400eeef7e6351b2a_88_2.png)\n\
+    \nClient Vs. Server\n\n80"
+  merge: -1
+  pgno: 88
+- img_proc: true
+  md: "Whereas the terminal will show all the three console logs\n\nTerminal\n\nnpm\
+    \ run dev\n\n\\- next dev \n\n\\- wait compiling /page (client and server)...\
+    \ \n\n\\- event compiled client and server successfully in 588 ms (548 modules)\n\
+    \nWhere do I render? \n\nI'm Server Component :) \n\nI'm Client Component :)\n\
+    \nAll good!\n\nFor the final play, let’s remove the ExampleServer from app/page.js\
+    \ \n\nand add it inside the components/ExampleClient.js\n\napp/page.js\n\n![](img/76188a8f748fc585400eeef7e6351b2a_89_0.png)\n\
+    \nimport\n\nfrom '\n\n' \n\nimport\n\nfrom '\n\n' \n\nexport default\n\n() { \n\
+    \n.\n\n\"\n\n\"\n\nreturn\n\n<\n\n \n\n\\={\n\n.\n\n}> \n\n<\n\n\\>\n\n</\n\n\\\
+    > \n\n<\n\n /> \n\n</\n\n\\> \n\n}\n\n styles \n\n \n\n ExampleClient \n\n \n\n\
+    \ \n\n \n\n \n\n \n\nconsole\n\nstyles main\n\n \n\nWelcome \n\n \n\n \n\n./page.module.css\n\
+    \n@/components/ExampleClient\n\nWhere do I render?\n\nfunction\n\nclassName\n\n\
+    Home\n\nlog\n\n \n\n(\n\n) \n\n \n\n ( \n\n main\n\nh2\n\nh2\n\nmain\n\n ) \n\n\
+    ExampleClient\n\nClient Vs. Server\n\n81"
+  merge: -1
+  pgno: 89
+- img_proc: true
+  md: "And the ExampleClient will look like this:\n\ncomponents/ExampleClient.jsx\n\
+    \n\"\n\n\"; \n\nimport\n\nfrom \"\n\n\"; \n\n\\= ()\n\n{ \n\n.\n\n\"\n\n\" ; \n\
+    \nreturn\n\n<> \n\n<\n\n\\> \n\n< >\n\n</ > \n\n</\n\n\\> \n\n<\n\n /> \n\n</>\
+    \ \n\n; \n\n}; \n\nexport default\n\n;\n\nuse client\n\n./ExampleServer\n\nI'm\
+    \ Client Component :)\n\n ExampleServer \n\n \n\n ExampleClient \n\n \n\n \n\n\
+    console\n\n \n\n \n\nThis an example client component\n\n \n\n \n\n \n\n \n\n\
+    \ ExampleClient\n\nconst\n\n\\=>\n\n \n\n(\n\n)\n\n \n\n ( \n\n \n\ndiv\n\np\n\
+    \np\n\ndiv\n\n )\n\nlog\n\nExampleServer\n\nHit save and see the result in both\
+    \ the Terminal and Browser console.\n\nFirst, let’s see what the terminal shows:\n\
+    \nTerminal\n\nnpm run dev\n\n\\- next dev \n\n\\- wait compiling /page (client\
+    \ and server)... \n\n\\- event compiled client and server successfully in 429\
+    \ ms (549 modules)\n\nWhere do I render? \n\nI'm Client Component :) \n\nI'm Server\
+    \ Component :)\n\nClient Vs. Server\n\n82"
+  merge: -1
+  pgno: 90
+- img_proc: true
+  md: "As expected, we see all three console logs due to the pre-rendering of \n\n\
+    Next.js and the server feature.\n\nBut something doesn’t look good in the Browser\
+    \ console…\n\n![](img/76188a8f748fc585400eeef7e6351b2a_91_0.png)\n\nCreate Next\
+    \ App\n\nhttp://localhost:3000\n\n![](img/76188a8f748fc585400eeef7e6351b2a_91_1.png)![](img/76188a8f748fc585400eeef7e6351b2a_91_1.png)![](img/76188a8f748fc585400eeef7e6351b2a_91_1.png)\n\
+    \nWhy is the server component log appearing here? Wasn’t it supposed \n\nto be\
+    \ on the server side only?\n\nWell, in Next.js, there is a pattern at play. When\
+    \ we use \"use client\" in a \n\nfile, all the other modules imported into that\
+    \ file, including child server \n\ncomponents, are treated as part of the client\
+    \ module.\n\nConsider \"use client\" as a dividing line between the server and\
+    \ client \n\ncode. Once you set this boundary, everything inside it becomes client\
+    \ \n\ncode.\n\nUnderstood? If not, there is no need to worry.\n\nClient Vs. Server\n\
+    \n83"
+  merge: -1
+  pgno: 91
+- img_proc: true
+  md: "Just remember: Do not include server components inside the client \n\ncomponents.\n\
+    \nAnd in case you encounter such a scenario, we have a solution. We'll \n\ndiscuss\
+    \ it in detail in its dedicated section, where we'll dive into the \n\nrendering\
+    \ process of client and server components. Additionally, we will \n\nshare some\
+    \ valuable tips and tricks on creating different types of \n\ncomponents depending\
+    \ on real-world examples.\n\nBefore we dive into yet another feature of Next.js,\
+    \ take some time out to \n\nwork on the below tasks to solidify your learning\
+    \ so far:\n\n![](img/76188a8f748fc585400eeef7e6351b2a_92_0.png)\n\nTasks \n\n\
+    ![](img/76188a8f748fc585400eeef7e6351b2a_92_1.png)\n\n Add “use client” inside\
+    \ the app/page.js file and see where the \n\nconsole logs are appearing:\n\napp/page.js\n\
+    \n![](img/76188a8f748fc585400eeef7e6351b2a_92_2.png)\n\n\"\n\n\" \n\nimport\n\n\
+    from '\n\n' \n\nimport\n\nfrom '\n\n' \n\nexport default\n\n() { \n\n.\n\n\"\n\
+    \n\"\n\nreturn\n\n<\n\n \n\n\\={\n\n.\n\n}> \n\n<\n\n\\>\n\n</\n\n\\> \n\n<\n\n\
+    \ /> \n\n</\n\n\\> \n\n}\n\nuse client\n\n./page.module.css\n\n@/components/ExampleClient\n\
+    \nWhere do I render?\n\n styles \n\n \n\n ExampleClient \n\n \n\n \n\n \n\n \n\
+    \n \n\nconsole\n\nstyles main\n\n \n\nWelcome \n\n \n\n \n\nfunction\n\nclassName\n\
+    \nHome\n\nlog\n\n \n\n(\n\n) \n\n \n\n ( \n\n main\n\nh2\n\nh2\n\nmain\n\n ) \n\
+    \nExampleClient\n\nClient Vs. Server\n\n84"
+  merge: -1
+  pgno: 92
+- img_proc: true
+  md: "![](img/76188a8f748fc585400eeef7e6351b2a_93_0.png)\n\nWhat are the different\
+    \ types of components in Nex.js, and \n\nexplain their difference?\n\n![](img/76188a8f748fc585400eeef7e6351b2a_93_0.png)\n\
+    \nWhat are the benefits of server-side rendering?\n\n![](img/76188a8f748fc585400eeef7e6351b2a_93_0.png)\n\
+    \nWhat are the latest features of the app directory regarding the \n\nclient/server\
+    \ rendering?\n\nClient Vs. Server\n\n85"
+  merge: -1
+  pgno: 93
+- img_proc: true
+  md: "Is this the END? Absolutely not!\n\nWe have an abundance of additional chapters\
+    \ awaiting you. Starting \n\nfrom routing, rendering, data fetching, backend API\
+    \ routes, database, \n\ntypescript, and even extending to testing, best practices,\
+    \ and Next.js tips \n\nand tricks. The ebook covers it all.\n\n![](img/76188a8f748fc585400eeef7e6351b2a_94_0.png)\n\
+    \nWe labeled it a \"must-have\" book for a reason \n\nWe're just scratching the\
+    \ surface. Stay tuned for the next update as we \n\nrelease more chapters that\
+    \ unlock the full potential of Next.js 13.\n\nGive yourself a pat on the back\
+    \ for completing all the chapters thus far. \n\nWe would greatly appreciate hearing\
+    \ your suggestions or feedback. \n\nFeel free to provide your honest input through\
+    \ this \n\n.\n\nlink\n\nWith your feedback and collaboration, we will bring you\
+    \ the best version \n\nof Next.js in the coming weeks. Thank you!\n\nClient Vs.\
+    \ Server\n\n86"
+  merge: -1
+  pgno: 94
