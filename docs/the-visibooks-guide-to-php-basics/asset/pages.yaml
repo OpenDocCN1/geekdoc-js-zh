@@ -1,0 +1,1590 @@
+- img_proc: true
+  md: '# Visibooks illustration-based computer textbooks
+
+
+    # THE VISIBOOKS GUIDE TO
+
+
+    # PHP Basics
+
+
+    ![](img/30f0fa1c6cb552c908695ea335a9f268_0_0.png)
+
+
+    # See. Do. Learn.'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: " \n\nTABLE OF CONTENTS \n\n**i**\n\n**Table of Contents **\n\n**Learning the\
+    \ Basics ........................................1** \n\n**Install an FTP program\
+    \ ..........................................................................2**\
+    \ \n\n**Create a simple script..........................................................................12**\
+    \ \n\n**Upload a script .....................................................................................18**\
+    \ \n\n**Run a script from a Web page.............................................................22**\
+    \ \n\n**Insert comments...................................................................................26**\
+    \ \n\n**Format output with HTML....................................................................32**\
+    \ \n\n**Working with Variables.................................39** \n\n**Employ\
+    \ single variables ......................................................................41**\
+    \ \n\n**Print quotation marks ..........................................................................52**\
+    \ \n\n**Employ lists of variables .....................................................................62**\
+    \ \n\n**Working with Numbers .................................71** \n\n**Perform\
+    \ calculations............................................................................72**\
+    \ \n\n**Increment/decrement...........................................................................75**\
+    \ \n\n**Generate random numbers .................................................................78**"
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: " \n\n \n\nTABLE OF CONTENTS \n\n**ii **\n\n**User Functions ..............................................83**\
+    \ \n\n**Create a user function.........................................................................84**\
+    \ \n\n**Pass form inputs to a script................................................................89**\
+    \ \n\n**Logic & Loops................................................95** \n\n\
+    **Employ conditional logic ....................................................................96**\
+    \ \n\n**Employ looping..................................................................................118**\
+    \ \n\n**Working With Files.......................................129** \n\n**Create\
+    \ a text file .................................................................................130**\
+    \ \n\n**Display files........................................................................................137**\
+    \ \n\n**Append to files...................................................................................140**"
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: " \n\nLEARNING THE BASICS \n\n**1**\n\n**Learning the Basics **\n\n \n\n \n\n\
+    In this section, you’ll learn how to: \n\n \n\n• **Install an FTP program **\n\
+    \n• **Create a simple script **\n\n• **Upload a script **\n\n• **Run a script\
+    \ from a Web page **\n\n• **Insert comments **\n\n• **Format output with HTML\
+    \ **"
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: " \n\n \n\nLEARNING THE BASICS \n\n**2 **\n\n**Install an FTP program **\n\n\
+    \ \n\n**1.** \n\nOpen your Web browser and go to: \n\n \n\n **www.ipswitch.com**\
+    \ \n\n \n\n**2.** \n\nDownload and install WS\\_FTP Home. \n\n \n\n \n\n \n\n\
+    \ \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\
+    \n**WS\\_FTP **\n\n \n\nFTP stands for File Transfer Protocol, a way to transfer\
+    \ files between \n\ncomputers over the Internet. \n\n \n\nUsing an FTP program\
+    \ is the most straightforward way to upload a \n\nWeb site to a Web server. WS\\\
+    _FTP is the most popular FTP program \n\nused to upload and download Web pages.\
+    \ \n\n \n\nThe Home version is free to use for 30 days, and can be downloaded\
+    \ \n\nat www.ipswitch.com."
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: " \n\nLEARNING THE BASICS \n\n**3**\n\n**3.** \n\nOpen WS\\_FTP Home. \n\n \n\
+    \nThe Connection Wizard should open. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_5_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_5_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_5_2.png)\n\
+    \n \n\n \n\n**4.** \n\nClick the \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_5_3.png)\n\
+    \n button."
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: " \n\n \n\nLEARNING THE BASICS \n\n**4 **\n\n**5.** \n\nWhen the **Site Name**\
+    \ screen appears, type: \n\n \n\n**PHP Script Uploads** \n\n \n\nin the **Site\
+    \ Name** box. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_6_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_6_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_6_2.png)\n\
+    \n \n\nThen click the \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_6_3.png)\n\n\
+    \ button."
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: " \n\nLEARNING THE BASICS \n\n**5**\n\n**6.** \n\nWhen the **Server Address**\
+    \ screen appears, type the host \n\naddress of your server in the **Server Address**\
+    \ box. \n\n \n\nIt can be something like: \n\n \n\n**www.visibooks.com **\n\n\
+    **washington.patriot.net **\n\n** 207.176.7.217** \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_7_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_7_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_7_2.png)\n\
+    \n \n\nThen click the \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_7_3.png)\n\n\
+    \ button. \n\n \n\n**Tip:** You can get the Server Address of your Web site, as\
+    \ well \n\nas your username and password, from your Web server \n\nadministrator."
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: " \n\n \n\nLEARNING THE BASICS \n\n**6 **\n\n**7.** \n\nWhen the **User Name\
+    \ and Password** screen appears, type in \n\nyour username and password. \n\n\
+    \ \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_8_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_8_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_8_2.png)\n\
+    \n \n\nThen click the \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_8_3.png)\n\n\
+    \ button."
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: " \n\nLEARNING THE BASICS \n\n**7**\n\n**8.** \n\nWhen the **Connection Type**\
+    \ screen appears, leave the \n\nconnection type set at **FTP**. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_9_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_9_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_9_2.png)\n\
+    \n \n\nThen click the \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_9_3.png)\n\n\
+    \ button."
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: " \n\n \n\nLEARNING THE BASICS \n\n**8 **\n\n**9.** \n\nWhen the **Finish **screen\
+    \ appears, click the \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_10_0.png)\n\n\
+    \ button. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_10_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_10_2.png)![](img/30f0fa1c6cb552c908695ea335a9f268_10_3.png)"
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: " \n\nLEARNING THE BASICS \n\n**9**\n\nWS\\_FTP should connect to your Web server:\
+    \ \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_11_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_11_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_11_2.png)![](img/30f0fa1c6cb552c908695ea335a9f268_11_3.png)![](img/30f0fa1c6cb552c908695ea335a9f268_11_4.png)\n\
+    \n \n\n \n\n \n\n \n\n**10.** In the right-hand **PHP Script Uploads** pane, double-click\
+    \ on the \n\n**public\\_html** folder, **html** folder, or the folder that contains\
+    \ your \n\nWeb pages on the server. \n\n \n\nYou should now see the contents of\
+    \ your Web site on the server. \n\n \n\nYour \n\ncomputer \n\nWeb server"
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: " \n\n \n\nLEARNING THE BASICS \n\n**10 **\n\n**11.** In the right-hand **PHP\
+    \ Script Uploads** pane, navigate to that \n\ndirectory in your Web site. \n\n\
+    \ \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_12_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_12_1.png)\n\
+    \n \n\n \n\n**Tip:** You may have to click the \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_12_2.png)\n\
+    \n icon to move up in the site \n\nhierarchy. \n\n \n\n**12.** Click the \n\n\
+    ![](img/30f0fa1c6cb552c908695ea335a9f268_12_3.png)\n\n icon. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_12_4.png)"
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: " \n\nLEARNING THE BASICS \n\n**11**\n\n**13.** When the **Make directory**\
+    \ window appears, type: \n\n \n\n**phpscripts** \n\n \n\nin the textbox. \n\n\
+    \ \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_13_0.png)\n\n \n\n \n\n**14.**\
+    \ Click the \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_13_1.png)\n\n button.\
+    \ \n\n \n\nYou should now see a directory called **phpscripts **in the right \n\
+    \npane: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_13_2.png)![](img/30f0fa1c6cb552c908695ea335a9f268_13_3.png)\n\
+    \n \n\n \n\n**15.** Close WS\\_FTP."
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: " \n\n \n\nLEARNING THE BASICS \n\n**12 **\n\n**Create a simple script **\n\n\
+    \ \n\n**1.** \n\nCreate a folder called **PHPSCRIPTS** on your hard drive. \n\n\
+    \ \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_14_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_14_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_14_2.png)![](img/30f0fa1c6cb552c908695ea335a9f268_14_3.png)\n\
+    \n \n\n \n\n**2.** \n\nOpen the Notepad program on your computer. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_14_4.png)![](img/30f0fa1c6cb552c908695ea335a9f268_14_5.png)"
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: " \n\nLEARNING THE BASICS \n\n**13**\n\n**3.** \n\nClick **File**, then **Open**.\
+    \ \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_15_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_15_1.png)\n\
+    \n \n\n \n\n**4.** \n\nClick **File**, then **Save**. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_15_2.png)![](img/30f0fa1c6cb552c908695ea335a9f268_15_3.png)"
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: " \n\n \n\nLEARNING THE BASICS \n\n**14 **\n\n**5.** \n\nWhen the **Save As**\
+    \ window appears, navigate to the \n\n**PHPSCRIPTS** folder, then double click\
+    \ it. \n\n \n\nThe **PHPSCRIPTS** folder should appear in the **Save In** box.\
+    \ \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_16_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_16_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_16_2.png)"
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: " \n\nLEARNING THE BASICS \n\n**15**\n\n**6.** \n\n In the **File Name** textbox,\
+    \ type: \n\n \n\n**simple.php** \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_17_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_17_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_17_2.png)\n\
+    \n \n\n \n\n**7.** \n\nClick the \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_17_3.png)\n\
+    \n button."
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: " \n\n \n\nLEARNING THE BASICS \n\n**16 **\n\n**8.** \n\nIn the blank document\
+    \ window, type: \n\n \n\n**<?php **\n\n**print \"Welcome to ACME AUTO\"; **\n\n\
+    **?> **\n\n![](img/30f0fa1c6cb552c908695ea335a9f268_18_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_18_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_18_2.png)\n\
+    \n \n\n**Tip:** You’re now typing commands to the Web server in the PHP \n\nlanguage.\
+    \ Sometimes these commands are case-sensitive. Use \n\nlower-case for PHP commands—that\
+    \ is, everything not enclosed \n\nin quotation marks, like \n\n \n\n**print **\"\
+    Welcome to ACME AUTO\"; \n\n \n\nAlso, don't forget to type a semicolon (**;**)\
+    \ at the end of each line. \n\nFor your commands to work, or “execute,” they need\
+    \ a \n\nsemicolon (**;**) at the end."
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: " \n\nLEARNING THE BASICS \n\n**17**\n\nForgetting a semicolon is the most common\
+    \ programming \n\nmistake in most computer languages. \n\n \n\n**9.** \n\nSave\
+    \ the script. \n\n \n\nHere’s what each line of this PHP script does: \n\n \n\n\
+    • **<?php **\n\nThis is the opening PHP tag. PHP code is always written \n\nbetween\
+    \ the opening and closing PHP tags.\n\n• **(blank line) **\n\nBefore the next\
+    \ line of code is a blank line. You can use \n\nblank lines throughout your PHP\
+    \ scripts.\n\nBlank lines allow you to group sections of code together, \n\nwhich\
+    \ makes scripts easier to read.\n\n• **print \"Welcome to ACME AUTO\"; **\n\n\
+    This print command tells the Web server to “print” the \n\nwords between the quotes\
+    \ to the browser window. \n\n \n\nRemember: for a command string to execute, there\
+    \ must \n\nbe a semicolon (**;**) at the end.\n\n• **?> **\n\nThis is the closing\
+    \ PHP tag. No more PHP code can be \n\nwritten after this closing tag without\
+    \ another opening \n\nPHP tag."
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: " \n\n \n\nLEARNING THE BASICS \n\n**18 **\n\n**Upload a script **\n\n \n\n\
+    **1.** \n\nOpen WS\\_FTP and navigate to the home directory on your Web \n\nserver.\
+    \ \n\n \n\nIt should look something like this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_20_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_20_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_20_2.png)![](img/30f0fa1c6cb552c908695ea335a9f268_20_3.png)![](img/30f0fa1c6cb552c908695ea335a9f268_20_4.png)"
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: " \n\nLEARNING THE BASICS \n\n**19**\n\n**2.** \n\nIn the left-hand **My Computer**\
+    \ pane, navigate to the \n\n**PHPSCRIPTS** folder on your computer. \n\n \n\n\
+    ![](img/30f0fa1c6cb552c908695ea335a9f268_21_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_21_1.png)\n\
+    \n \n\n \n\n**3.** \n\nDouble-click the **PHPSCRIPTS** folder. \n\n \n\n**simple.php**\
+    \ should appear. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_21_2.png)"
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: " \n\n \n\nLEARNING THE BASICS \n\n**20 **\n\n**4.** \n\nIn the right-hand **PHP\
+    \ Script Uploads** pane, navigate to the \n\n**phpscripts **directory in your\
+    \ Web site. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_22_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_22_1.png)\n\
+    \n \n\n \n\n**5.** \n\nDouble-click the **phpscripts** directory. \n\n \n\nThe\
+    \ pane should be blank: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_22_2.png)"
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: " \n\nLEARNING THE BASICS \n\n**21**\n\n**6.** \n\nClick **simple.php** in the\
+    \ **My Computer** pane, then click the \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_23_0.png)\n\
+    \n \n\nbutton. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_23_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_23_2.png)![](img/30f0fa1c6cb552c908695ea335a9f268_23_3.png)\n\
+    \n \n\n**simple.php** should now appear in the **PHP Script Uploads** \n\npane:\
+    \ \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_23_4.png)![](img/30f0fa1c6cb552c908695ea335a9f268_23_5.png)![](img/30f0fa1c6cb552c908695ea335a9f268_23_6.png)"
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: " \n\n \n\nLEARNING THE BASICS \n\n**22 **\n\n**Run a script from a Web page\
+    \ **\n\n \n\n**1.** \n\nUsing Notepad, create a new Web page with this code: \n\
+    \n \n\n**<html> **\n\n**<head> **\n\n**<title>Run your PHP scripts</title> **\n\
+    \n**</head> **\n\n**<body> **\n\n**Click on <a **\n\n**href=\"http://www.yourwebsite.com/phpscripts/sim**\n\
+    \n**ple.php\">this link</a> to run your first PHP **\n\n**script. **\n\n**</body>\
+    \ **\n\n**</html> **\n\n![](img/30f0fa1c6cb552c908695ea335a9f268_24_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_24_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_24_2.png)"
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: " \n\nLEARNING THE BASICS \n\n**23**\n\n**2.** \n\nSave the Web page as **phplinks.html**\
+    \ in the **PHPSCRIPTS** \n\nfolder on your computer. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_25_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_25_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_25_2.png)"
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: " \n\n \n\nLEARNING THE BASICS \n\n**24 **\n\n**3.** \n\nIn WS\\_FTP, upload\
+    \ **phplinks.html** into the home directory of \n\nyour Web site. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_26_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_26_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_26_2.png)\n\
+    \n \n\n**Tip:** Don’t upload **phplinks.html** into the**phpscripts** directory.\
+    \ \n\n \n\nPut it in the home directory of your Web site, where the home \n\n\
+    page—**index.html**—resides. \n\n \n\n**4.** \n\nOpen the Web browser and go to:\
+    \ \n\n \n\n**www.yourwebsite.com/phplinks.html** \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_26_3.png)![](img/30f0fa1c6cb552c908695ea335a9f268_26_4.png)"
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: " \n\nLEARNING THE BASICS \n\n**25**\n\n**5.** \n\nClick the link. \n\n \n\n\
+    ![](img/30f0fa1c6cb552c908695ea335a9f268_27_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_27_1.png)\n\
+    \n \n\nThe output should look like this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_27_2.png)![](img/30f0fa1c6cb552c908695ea335a9f268_27_3.png)![](img/30f0fa1c6cb552c908695ea335a9f268_27_4.png)"
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: " \n\n \n\nLEARNING THE BASICS \n\n**26 **\n\n**Insert comments**\n\n \n\n**1.**\
+    \ \n\nUsing Notepad, create a new script with this code: \n\n \n\n**<?php **\n\
+    \n**// A comment line to explain the code **\n\n**\\# Another example of a comment\
+    \ line **\n\n**/\\* **\n\n**A block of words can be commented this way. **\n\n\
+    **These comments do not affect the way **\n\n**the script works. **\n\n**\\*/\
+    \ **\n\n**print \"Welcome to ACME AUTO!\"; // A comment on **\n\n**the same line\
+    \ as your code. **\n\n**?> **\n\n![](img/30f0fa1c6cb552c908695ea335a9f268_28_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_28_1.png)"
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: " \n\nLEARNING THE BASICS \n\n**27**\n\n**Tip:** If you’re writing a comment\
+    \ in a script and it wraps to the \n\nnext line, it needs a new # character in\
+    \ front. \n\n \n\nIncorrect: \n\n \n\n**\\# The second line lets a browser **\n\
+    \n**display the script output. **\n\n \n\nCorrect: \n\n \n\n**\\# The second line\
+    \ lets a browser **\n\n**\\# display the script output. **\n\n \n\n**2.** \n\n\
+    Save this script as **comments.php** in the **PHPSCRIPTS** folder \n\non your\
+    \ computer. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_29_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_29_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_29_2.png)"
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: " \n\n \n\nLEARNING THE BASICS \n\n**28 **\n\n**3.** \n\nOpen WS\\_FTP and upload\
+    \ the **comments.php** script to the \n\n**phpscripts** directory in your Web\
+    \ site. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_30_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_30_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_30_2.png)\n\
+    \n \n\n \n\n**4.** \n\nOpen **phplinks.html** in Notepad. \n\n \n\n**Tip:** It’s\
+    \ in the **PHPSCRIPTS** folder. \n\n \n\nYou may need to select **All Files**\
+    \ in the **Files of type** list."
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: " \n\nLEARNING THE BASICS \n\n**29**\n\n**5.** \n\nAdd a link to see the output\
+    \ of **format.php**: \n\n \n\n**<html> **\n\n**<head> **\n\n**<title>Run your\
+    \ PHP scripts</title> **\n\n**</head> **\n\n**<body> **\n\n**Click on <a **\n\n\
+    **href=\"http://www.yourwebsite.com/PHPSCRIPTS/sim**\n\n**ple.php\">this link</a>\
+    \ to run your first PHP **\n\n**script. **\n\n**<p><a **\n\n**href=\"http://www.yourwebsite.com/phpscripts/com**\n\
+    \n**ments.php\">2. You can include hidden comments **\n\n**in PHP code.</a></p>\
+    \ **\n\n**</body> **\n\n**</html> **\n\n![](img/30f0fa1c6cb552c908695ea335a9f268_31_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_31_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_31_2.png)"
+  merge: -1
+  pgno: 31
+- img_proc: true
+  md: " \n\n \n\nLEARNING THE BASICS \n\n**30 **\n\n**6.** \n\nSave **phplinks.html**,\
+    \ then use WS\\_FTP to upload it to the home \n\ndirectory in your Web site. \n\
+    \n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_32_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_32_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_32_2.png)\n\
+    \n \n\n**Tip:** This is the same place **phplinks.html** was before. When \n\n\
+    WS\\_FTP prompts you to replace the existing file, click the \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_32_3.png)\n\
+    \n button. \n\n \n\n**7.** \n\nOpen the browser and go to: \n\n \n\n**www.yourwebsite.com/\
+    \ phplinks.html** \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_32_4.png)![](img/30f0fa1c6cb552c908695ea335a9f268_32_5.png)"
+  merge: -1
+  pgno: 32
+- img_proc: true
+  md: " \n\nLEARNING THE BASICS \n\n**31**\n\n**8.** \n\nClick the **2\\. You can\
+    \ include hidden comments in PHP code** \n\nlink. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_33_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_33_1.png)\n\
+    \n \n\nThe output should look like this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_33_2.png)![](img/30f0fa1c6cb552c908695ea335a9f268_33_3.png)\n\
+    \n \n\n \n\n**9.** Close Notepad and WS\\_FTP."
+  merge: -1
+  pgno: 33
+- img_proc: true
+  md: " \n\n \n\nLEARNING THE BASICS \n\n**32 **\n\n**Format output with HTML **\n\
+    \n \n\n**1.** \n\nIn Notepad, create a new script with this code: \n\n**<html>\
+    \ **\n\n**<head> **\n\n**<title>HTML and PHP together</title> **\n\n**</head>\
+    \ **\n\n**<body> **\n\n**<h1 align=center> **\n\n**<?php **\n\n**print \"Welcome\
+    \ to ACME AUTO\"; **\n\n**?> **\n\n**</h1> **\n\n**</body> **\n\n**</html> **\n\
+    \n![](img/30f0fa1c6cb552c908695ea335a9f268_34_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_34_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_34_2.png)"
+  merge: -1
+  pgno: 34
+- img_proc: true
+  md: " \n\nLEARNING THE BASICS \n\n**33**\n\n**2.** \n\nSave the script as **format.php**\
+    \ in the **PHPSCRIPTS** folder. \n\n \n\n**Tip:** This PHP script includes HTML\
+    \ tags that format the text it \n\noutputs. \n\n \n\nNotice that the **<h1 align=center>**\
+    \ tag is outside of the PHP \n\ncode. It’s standard HTML. \n\n \n\n**3.** \n\n\
+    Upload **format.php** to the **phpscripts** directory in your Web site. \n\n \n\
+    \n![](img/30f0fa1c6cb552c908695ea335a9f268_35_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_35_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_35_2.png)\n\
+    \n \n\n \n\n**4.** \n\nOpen **phplinks.html** in Notepad."
+  merge: -1
+  pgno: 35
+- img_proc: true
+  md: " \n\n \n\nLEARNING THE BASICS \n\n**34 **\n\n**5.** \n\nAdd a link to see the\
+    \ output of **format.php**: \n\n \n\n**<p><a **\n\n**href=\"http://www.yourwebsite.com/phpscripts/com**\n\
+    \n**ments.php\">2. You can include hidden comments **\n\n**in PHP code.</a></p>\
+    \ **\n\n**<p><a **\n\n**href=\"http://www.yourwebsite.com/phpscripts/for**\n\n\
+    **mat.php\">3. You can include HTML tags in PHP **\n\n**code to format text.</a></p>\
+    \ **\n\n![](img/30f0fa1c6cb552c908695ea335a9f268_36_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_36_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_36_2.png)"
+  merge: -1
+  pgno: 36
+- img_proc: true
+  md: " \n\nLEARNING THE BASICS \n\n**35**\n\n**6.** \n\nSave **phplinks.html**, then\
+    \ use WS\\_FTP to upload it to the home \n\ndirectory in your Web site. \n\n \n\
+    \n![](img/30f0fa1c6cb552c908695ea335a9f268_37_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_37_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_37_2.png)\n\
+    \n \n\n**7.** \n\nOpen the browser and go to: \n\n \n\n**www.yourwebsite.com/phplinks.html**\
+    \ \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_37_3.png)![](img/30f0fa1c6cb552c908695ea335a9f268_37_4.png)"
+  merge: -1
+  pgno: 37
+- img_proc: true
+  md: " \n\n \n\nLEARNING THE BASICS \n\n**36 **\n\n**8.** \n\nClick the **3\\. You\
+    \ can include HTML tags in PHP code to **\n\n**format text **link. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_38_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_38_1.png)\n\
+    \n \n\nThe output should look like this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_38_2.png)![](img/30f0fa1c6cb552c908695ea335a9f268_38_3.png)\n\
+    \n \n\n \n\n**9.** \n\nClose Notepad and WS\\_FTP."
+  merge: -1
+  pgno: 38
+- img_proc: true
+  md: " \n\nLEARNING THE BASICS \n\n**37**\n\n**Practice: Learning the Basics **\n\
+    \n \n\n \n\n**1.** \n\nCreate a new folder called **PRACTICEPHP** on your computer’s\
+    \ \n\nhard drive. \n\n \n\n**2.** \n\nOpen the Notepad program and create a new\
+    \ PHP script called \n\n**cars.php**. \n\n \n\nWrite the script so it prints:\
+    \ \n\n \n\n**Fast cars, vintage cars, and classic cars, we all have our favorite\
+    \ **\n\n**car.**  \n\n \n\nin a Web browser window. \n\n \n\n**3.** \n\nSave **cars.php**\
+    \ in the **PRACTICEPHP** folder on your computer. \n\n \n\n**4.** \n\nOpen WS\\\
+    _FTP and create a new directory called **practicephp** \n\ndirectory in your Web\
+    \ site. \n\n \n\n**5.** \n\nUpload **cars.php** to the **practicephp **directory\
+    \ in your Web site. \n\n \n\n**6.** \n\nUsing Notepad, create a new Web page called\
+    \ **practice.html** \n\nthat contains a link to the PHP script **cars.php**: \n\
+    \n \n\n**<p><a **\n\n**href=”http://www.yourwebsite.com/practicephp/ca**\n\n**rs.php”>Read\
+    \ about cars</a></p>** \n\n \n\n**7.** \n\nSave **practice.html**, then upload\
+    \ it to the home directory in your \n\nWeb site."
+  merge: -1
+  pgno: 39
+- img_proc: true
+  md: " \n\n \n\nLEARNING THE BASICS \n\n**38 **\n\n**8.** \n\nIn the browser, go\
+    \ to: \n\n \n\n**www.yourwebsite.com/practice.html** \n\n \n\nand click the **Read\
+    \ about cars** link. \n\n \n\nThe browser window should look like this: \n\n \n\
+    \n![](img/30f0fa1c6cb552c908695ea335a9f268_40_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_40_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_40_2.png)\n\
+    \n \n\n \n\n**9.** \n\nClose Notepad and WS\\_FTP."
+  merge: -1
+  pgno: 40
+- img_proc: true
+  md: " \n\nWORKING WITH VARIABLES \n\n**39**\n\n**Working with **\n\n**Variables\
+    \ **\n\n \n\n \n\nIn this section, you’ll learn how to: \n\n \n\n• **Employ single\
+    \ variables **\n\n• **Print quotation marks **\n\n• **Employ a list of variables\
+    \ **"
+  merge: -1
+  pgno: 41
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH VARIABLES \n\n**40 **\n\n \n\n**What’s a variable? **\n\
+    \n \n\nA variable is a placeholder for information within a PHP script. Data is\
+    \ \n\nstored and retrieved using variables. \n\n \n\nIn PHP, a variable is can\
+    \ be a single piece of information, or a list of \n\nthings store in an array.\
+    \ They always start with a dollar sign, and are \n\ncase sensitive. \n\n \n\n\
+    Example: **$myName** \n\n \n\nVariables are essential to all programming, and\
+    \ very useful. For \n\nexample, you can use a variable to easily change “brown\
+    \ eyes” to \n\n“blue eyes” in a PHP script: \n\n \n\n**$eyecolor=“brown”; **\n\
+    \n \n\nAs the old song says, “Don’t it make my $eyecolor eyes blue…”"
+  merge: -1
+  pgno: 42
+- img_proc: true
+  md: " \n\nWORKING WITH VARIABLES \n\n**41**\n\n**Employ single variables **\n\n\
+    \ \n\nAssign a number to a variable \n\n \n\n**1.** \n\nOpen Notepad, then create\
+    \ a new script with this code: \n\n**<?php **\n\n**$cars\\_on\\_lot = 100; **\n\
+    \n**print \"<p>Welcome to <b>ACME AUTO!</b></p>\"; **\n\n**print \"<p>Which one\
+    \ of our $cars\\_on\\_lot cars is **\n\n**right for you?</p>\"; **\n\n**?> **\n\
+    \n![](img/30f0fa1c6cb552c908695ea335a9f268_43_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_43_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_43_2.png)"
+  merge: -1
+  pgno: 43
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH VARIABLES \n\n**42 **\n\n**2.** Save the script as **numbers.php**\
+    \ in the **PHPSCRIPTS **\n\nfolder. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_44_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_44_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_44_2.png)\n\
+    \n \n\nHere’s what each line of the script does: \n\n \n\n• **<?php **\n\nThis\
+    \ is the starting PHP tag. Your PHP code starts after \n\nthis tag."
+  merge: -1
+  pgno: 44
+- img_proc: true
+  md: " \n\nWORKING WITH VARIABLES \n\n**43**\n\n• **$cars\\_on\\_lot = 100; **\n\n\
+    **$cars\\_on\\_lot** is the variable. Variables start with a **$**. \n\n \n\n\
+    The number 100 is assigned to the variable. The number \n\nis easy to change—that’s\
+    \ why it’s called a variable.\n\n• **print \"<p>Welcome to <b>ACME **\n\n**AUTO!</b></p>\"\
+    ; **\n\n**print \"<p>Which one of our $cars\\_on\\_lot **\n\n**cars is right for\
+    \ you?</p>\"; **\n\nThese lines should also look familiar. They’re HTML \n\ncode\
+    \ like we’ve used before, but with a difference: \n\n**$cars\\_on\\_lot**. \n\n\
+    \ \n\nThis variable tells the Web browser to get the number \n\nspecified (100)\
+    \ and insert it here. \n\n \n\nYou’ll see how it works in the following steps."
+  merge: -1
+  pgno: 45
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH VARIABLES \n\n**44 **\n\n**3.** \n\nOpen WS\\_FTP, then\
+    \ upload **numbers.php** to the **phpscripts **\n\ndirectory in your Web site.\
+    \ \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_46_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_46_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_46_2.png)\n\
+    \n \n\n**4.** \n\nIn Notepad, open **phplinks.html**."
+  merge: -1
+  pgno: 46
+- img_proc: true
+  md: " \n\nWORKING WITH VARIABLES \n\n**45**\n\n**5.** \n\nInsert a new link to **numbers.php**:\
+    \ \n\n \n\n**<p><a **\n\n**href=\"http://www.yourwebsite.com/phpscripts/for**\n\
+    \n**mat.php\">3. You can include HTML tags in PHP **\n\n**code to format text.</a></p>\
+    \ **\n\n**<p><a **\n\n**href=\"http://www.yourwebsite.com/phpscripts/num**\n\n\
+    **bers.php\">4. Assign a number to a **\n\n**variable.</a></p> **\n\n![](img/30f0fa1c6cb552c908695ea335a9f268_47_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_47_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_47_2.png)"
+  merge: -1
+  pgno: 47
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH VARIABLES \n\n**46 **\n\n**6.** \n\nSave **phplinks.html**,\
+    \ then upload it to the home directory in your \n\nWeb site. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_48_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_48_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_48_2.png)\n\
+    \n \n\n \n\n**7.** \n\nUsing the browser, go to: \n\n \n\n**www.yourwebsite.com/phplinks.html**\
+    \ \n\n \n\n**8.** \n\nClick the **4\\. Assign a number to a variable** link. \n\
+    \n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_48_3.png)![](img/30f0fa1c6cb552c908695ea335a9f268_48_4.png)"
+  merge: -1
+  pgno: 48
+- img_proc: true
+  md: " \n\nWORKING WITH VARIABLES \n\n**47**\n\nThe output should look like this:\
+    \ \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_49_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_49_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_49_2.png)"
+  merge: -1
+  pgno: 49
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH VARIABLES \n\n**48 **\n\nAssign text to a variable \n\
+    \n \n\n**1.** \n\nUsing Notepad, create a new script with this code: \n\n**<?php\
+    \ **\n\n**$company\\_name = \"ACME AUTO\"; **\n\n**$cars\\_on\\_lot = 100; **\n\
+    \n**$deal\\_of\\_day = \"Ford Mustang\"; **\n\n**print \"<p>Welcome to $company\\\
+    _name!</p>\"; **\n\n**print \"<p>Which one of our $cars\\_on\\_lot cars is **\n\
+    \n**right for you?</p>\"; **\n\n**print \"<p>Today we have a GREAT deal on a **\n\
+    \n**$deal\\_of\\_day.</p>\"; **\n\n**?> **\n\n![](img/30f0fa1c6cb552c908695ea335a9f268_50_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_50_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_50_2.png)"
+  merge: -1
+  pgno: 50
+- img_proc: true
+  md: " \n\nWORKING WITH VARIABLES \n\n**49**\n\n**2.** \n\nSave the script as **text.php**\
+    \ in the **PHPSCRIPTS** folder. \n\n \n\nHere’s what the relevant lines in this\
+    \ script do: \n\n \n\n• **$company\\_name = \"ACME AUTO\"; **\n\nAssigns the text\
+    \ **ACME AUTO** to the variable \n\n**$company\\_name**.\n\n• **$deal\\_of\\_day\
+    \ = \"Ford Mustang\"; **\n\nAssigns the text Ford Mustang to the variable \n\n\
+    **$deal\\_of\\_day**.\n\n• **$cars\\_on\\_lot = 100; **\n\nAssigns the number\
+    \ **100** to the variable \n\n**$cars\\_on\\_lot**.\n\n• **print \"<p>Welcome\
+    \ to **\n\n**$company\\_name!</p>\\\\n\";**\n\nPrints the words “**Welcome to**”\
+    \ to the browser window, \n\nthen inserts the text assigned to the variable \n\
+    \n**$company\\_name** (“ACME AUTO”).\n\n• **print \"<p>Which one of our $cars\\\
+    _on\\_lot **\n\n**cars is right for you?</p>\\\\n\"; **\n\nPrints words to the\
+    \ browser window, inserting the \n\nnumber assigned to the variable **$cars\\\
+    _on\\_lot** (100)."
+  merge: -1
+  pgno: 51
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH VARIABLES \n\n**50 **\n\n• **print \"<p>Today we have\
+    \ a GREAT deal on a **\n\n**$deal\\_of\\_day.</p>\\\\n\"; **\n\nPrints words to\
+    \ the browser window, then inserts the text \n\nassigned to the variable **$deal\\\
+    _of\\_day** (“Ford \n\nMustang”).\n\n \n\n**3.** \n\nUpload text.php to the **PHPSCRIPTS\
+    \ **directory in your Web site. \n\n \n\n**4.** \n\nIn Notepad, open **phplinks.html**.\
+    \ \n\n \n\n**5.** \n\nInsert a new link to **text.php**: \n\n \n\n**<p><a **\n\
+    \n**href=\"http://www.yourwebsite.com/phpscripts/tex**\n\n**t.php\">5. Assign\
+    \ text to a variable.</a></p> **\n\n![](img/30f0fa1c6cb552c908695ea335a9f268_52_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_52_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_52_2.png)"
+  merge: -1
+  pgno: 52
+- img_proc: true
+  md: " \n\nWORKING WITH VARIABLES \n\n**51**\n\n**6.** \n\nSave **phplinks.html**,\
+    \ then upload it to the home directory in your \n\nWeb site. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_53_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_53_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_53_2.png)\n\
+    \n \n\n \n\n**7.** \n\nUsing the browser, go to: \n\n \n\n**www.yourwebsite.com/phplinks.html**\
+    \ \n\n \n\n**8.** \n\nClick the **5\\. Assign text to a variable** link. \n\n\
+    \ \n\nThe output should look like this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_53_3.png)![](img/30f0fa1c6cb552c908695ea335a9f268_53_4.png)"
+  merge: -1
+  pgno: 53
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH VARIABLES \n\n**52 **\n\n**Print quotation marks **\n\
+    \n \n\n**1.** \n\nIn the browser, go to: \n\n \n\n**www.visibooks.com/books/php**\
+    \ \n\n \n\n**2.** \n\nRight-click **maxima.jpg**, then save it in the **PHPSCRIPTS**\
+    \ folder \n\non your computer. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_54_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_54_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_54_2.png)"
+  merge: -1
+  pgno: 54
+- img_proc: true
+  md: " \n\nWORKING WITH VARIABLES \n\n**53**\n\n**3.** \n\nUpload **maxima.jpg**\
+    \ to the home directory in your Web site. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_55_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_55_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_55_2.png)\n\
+    \n \n\n \n\n**4.** \n\nIn Notepad, create a new script with this code: \n\n**<?php\
+    \ **\n\n**$cars\\_on\\_lot = 100; **\n\n**$deal\\_of\\_day = \"Nissan Maxima\"\
+    ; **\n\n**$pic\\_of\\_day = **\n\n**\"http://www.yourwebsite.com/maxima.jpg\"\
+    ; **\n\n**print \"<p>Welcome to <b>ACME AUTO!</b></p>\"; **\n\n**print \"<p>Which\
+    \ one of our $cars\\_on\\_lot cars is **\n\n**right for you?</p>\"; **\n\n**print\
+    \ \"<p>Today we have a <b>GREAT</b> deal on **\n\n**a $deal\\_of\\_day car:</p>\"\
+    ; **\n\n**print \"<img src=\"$pic\\_of\\_day\">\"; **\n\n**?> **"
+  merge: -1
+  pgno: 55
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH VARIABLES \n\n**54 **\n\n**Tip:** Remember to change\
+    \ the **www.yourwebsite.com** \n\naddress in **$pic\\_of\\_day = **\n\n**\"http://www.yourwebsite.com/maxima.jpg\"\
+    ** to your \n\nactual Web site address. \n\n**5.** \n\nSave the script as **qmarks.php**\
+    \ in the **PHPSCRIPTS** folder. \n\n \n\n**6.** \n\nUpload **qmarks.php** to the\
+    \ **phpscripts** directory in your Web \n\nsite. \n\n \n\n**7.** \n\nIn Notepad,\
+    \ open **phplinks.html**. \n\n \n\n**8.** \n\nInsert a new link to **qmarks.php**:\
+    \ \n\n \n\n**<p><a **\n\n**href=\"http://www.yourwebsite.com/phpscripts/qma**\n\
+    \n**rks.php\">6. Print quotation marks.</a></p> **\n\n**9.** \n\nSave **phplinks.html**,\
+    \ then upload it to the home directory in your \n\nWeb site. \n\n \n\n**10.**\
+    \ Using the browser, go to: \n\n \n\n**www.yourwebsite.com/phplinks.html**"
+  merge: -1
+  pgno: 56
+- img_proc: true
+  md: " \n\nWORKING WITH VARIABLES \n\n**55**\n\n**11.** Click the **6\\. Print quotation\
+    \ marks** link. \n\n \n\nThe output should look something like this: \n\n \n\n\
+    ![](img/30f0fa1c6cb552c908695ea335a9f268_57_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_57_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_57_2.png)"
+  merge: -1
+  pgno: 57
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH VARIABLES \n\n**56 **\n\n**12.** In Notepad, edit **qmarks.php**\
+    \ to enclose the **$pic\\_of\\_day** \n\nvariable in **\\\\** characters: \n\n\
+    \ \n\n**print \"<img src=\\\\\"$pic\\_of\\_day\\\\\">\"; **\n\n![](img/30f0fa1c6cb552c908695ea335a9f268_58_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_58_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_58_2.png)\n\
+    \n**13.** Save **qmarks.php** and upload it to the **phpscripts** directory \n\
+    \nagain. \n\n \n\n**14.** Reload **phplinks.html** in your Web browser."
+  merge: -1
+  pgno: 58
+- img_proc: true
+  md: " \n\nWORKING WITH VARIABLES \n\n**57**\n\n**15.** Click the **Print quotation\
+    \ marks** link again. \n\n \n\nIts output should look like this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_59_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_59_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_59_2.png)\n\
+    \n \n\n \n\n**Tip:** Since the HTML **<img>** tag requires the use of two double-\n\
+    \nquotation marks inside the already quoted print statement. \n\n \n\n**<img src=”maxima.jpg”>**\
+    \ \n\n \n\nenclose them in **\\\\** characters to let the Web server know that\
+    \ you \n\nwant to print a double-quote to the screen. Otherwise, the Web \n\n\
+    server will think you want the double-quotes to start and end a \n\ntext string\
+    \ in a PHP command. \n\n \n\n**\\\\**is called an “escape character.” Escape characters\
+    \ are used \n\nto print characters, such as double-quotes, that the Web server\
+    \ \n\nmight otherwise think were part of a PHP command or text \n\nstring."
+  merge: -1
+  pgno: 59
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH VARIABLES \n\n**58 **\n\nPrint with double vs. single\
+    \ quotes \n\n \n\n**1.** \n\nCreate a new script with this code: \n\n**<?php **\n\
+    \n**\\# Printing with Double Quotes (\") **\n\n**\\# vs. Single Quotes (') **\n\
+    \n**$cars\\_on\\_lot = 100; **\n\n**print \"<p>Welcome to <b>ACME AUTO!</b></p>\\\
+    \\n\"; **\n\n**\\# double quotes **\n\n**print \"<p>Which one of our $cars\\_on\\\
+    _lot cars is **\n\n**right for you?</p>\\\\n\"; **\n\n**\\# single quotes **\n\
+    \n**print '<p>Which one of $cars\\_on\\_lot is right **\n\n**for you?</p>\\\\\
+    n'; **\n\n**?> **\n\n**2.** \n\nSave the script as quotes.php in the **PHPSCRIPTS**\
+    \ folder. \n\n \n\nHere’s what the relevant lines in this script do: \n\n \n\n\
+    • **print \"<p>Which one of our $cars\\_on\\_lot **\n\n**cars is right for you?</p>\\\
+    \\n\"; **\n\nBy using “double quotes” in the above print statement, \n\nthe number\
+    \ assigned to the variable **$cars\\_on\\_lot** \n\n(100) is printed to the browser\
+    \ window."
+  merge: -1
+  pgno: 60
+- img_proc: true
+  md: " \n\nWORKING WITH VARIABLES \n\n**59**\n\n• **print '<p>Which one of $cars\\\
+    _on\\_lot is **\n\n**right for you?</p>\\\\n'; **\n\nBy using ‘single quotes’\
+    \ in the above print statement, the \n\ntext **$cars\\_on\\_lot** is printed to\
+    \ the browser window \n\nalong with the words that surround it.\n\n**3.** \n\n\
+    Upload **quotes.php** to the **phpscripts** directory in your Web \n\nsite. \n\
+    \n \n\n**4.** \n\nOpen **phplinks.html** and insert a new link to **quotes.php**:\
+    \ \n\n \n\n**<p><a **\n\n**href=\"http://www.yourwebsite.com/phpscripts/quo**\n\
+    \n**tes.php\">7. Double vs. single quotes.</a></p> **\n\n**5.** \n\nSave **phplinks.html**,\
+    \ then upload it to the home directory in your \n\nWeb site. \n\n \n\n**6.** \n\
+    \nIn the browser, go to: \n\n \n\n**www.yourwebsite.com/phplinks.html**"
+  merge: -1
+  pgno: 61
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH VARIABLES \n\n**60 **\n\n**7.** \n\nClick the **7\\\
+    . Double vs. single quotes** link. \n\n \n\nThe output should look like this:\
+    \ \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_62_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_62_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_62_2.png)\n\
+    \n \n\n**Tip:** Using single quotes (**‘**) with the **print** function \n\n \n\
+    \n**print ‘<p>Which one of $cars\\_on\\_lot is right **\n\n**for you?</p>\\\\\
+    n’;** \n\n \n\nprints literally everything in between the two quotation marks.\
+    \ \n\n(Except HTML tags, such as the <p> and </p> tags.) \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_62_3.png)"
+  merge: -1
+  pgno: 62
+- img_proc: true
+  md: " \n\nWORKING WITH VARIABLES \n\n**61**\n\nIf you want to display the value\
+    \ of a variable, use double quotes \n\n(**“**): \n\n \n\n**print “<p>Which one\
+    \ of our $cars\\_on\\_lot cars is **\n\n**right for you?</p>\\\\n”; **\n\n![](img/30f0fa1c6cb552c908695ea335a9f268_63_0.png)"
+  merge: -1
+  pgno: 63
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH VARIABLES \n\n**62 **\n\n**Employ lists of variables\
+    \ **\n\n \n\nCreate lists of number variables \n\n \n\n**1.** \n\nCreate a new\
+    \ script with this code: \n\n**<?php **\n\n**\\# This script demonstrates how\
+    \ to **\n\n**\\# create a numeric array. **\n\n**$AcmeInventory = array(178,286,387);\
+    \ **\n\n**print “$AcmeInventory\\[0\\]<br>\\\\n”; **\n\n**print “$AcmeInventory\\\
+    [1\\]<br>\\\\n”; **\n\n**print “$AcmeInventory\\[2\\]<br>\\\\n”; **\n\n**print\
+    \ \"<p>We just created a list of numbers **\n\n**using an array variable!\"; **\n\
+    \n**?> **\n\n**Tip:** Lists of variables are called arrays. \n\n**2.** \n\nSave\
+    \ the script as **numberlist.php** in the **PHPSCRIPTS** folder. \n\n \n\nHere’s\
+    \ what the relevant lines in this script do: \n\n \n\n• **$AcmeInventory = array(178,286,387);\
+    \ **\n\nThe numbers 178, 286, and 387 are assigned to the \n\narray variable **$AcmeInventory**."
+  merge: -1
+  pgno: 64
+- img_proc: true
+  md: " \n\nWORKING WITH VARIABLES \n\n**63**\n\n• **print “$AcmeInventory\\[0\\]<br>\\\
+    \\n”; **\n\nPrints the first number in the array, the number 178. \n\n• **print\
+    \ “$AcmeInventory\\[1\\]<br>\\\\n”; **\n\nPrints the second number in the array,\
+    \ the number 286. \n\n• **print “$AcmeInventory\\[2\\]<br>\\\\n”; **\n\nPrints\
+    \ the third number in the array, the number 387.\n\n \n\n**3.** \n\nUpload **numberlist.php**\
+    \ to the **phpscripts** directory in your Web \n\nsite. \n\n \n\n**4.** \n\nOpen\
+    \ **phplinks.html** and insert a new link to **numberlist.php**: \n\n \n\n**<p><a\
+    \ **\n\n**href=\"http://www.yourwebsite.com/phpscripts/num**\n\n**berlist.php\"\
+    >8. Create a list of **\n\n**numbers.</a></p> **\n\n**5.** \n\nSave **phplinks.html**,\
+    \ then upload it to the home directory in your \n\nWeb site. \n\n \n\n**6.** \n\
+    \nIn the browser, go to: \n\n \n\n**www.yourwebsite.com/phplinks.html**"
+  merge: -1
+  pgno: 65
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH VARIABLES \n\n**64 **\n\n**7.** \n\nClick the **8\\\
+    . Create a list of numbers** link. \n\n \n\nThe output should look like this:\
+    \ \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_66_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_66_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_66_2.png)"
+  merge: -1
+  pgno: 66
+- img_proc: true
+  md: " \n\nWORKING WITH VARIABLES \n\n**65**\n\nCreate lists of text variables \n\
+    \n \n\n**1.** \n\nCreate a new script with this code: \n\n**<?php **\n\n**\\#\
+    \ This script demonstrates how to **\n\n**\\# create a text array. **\n\n**$AcmeCars\
+    \ = array(\"Ford\",\"Dodge\",\"Chevy\"); **\n\n**print \"$AcmeCars\\[0\\]<br>\\\
+    \\n\"; **\n\n**print \"$AcmeCars\\[1\\]<br>\\\\n\"; **\n\n**print \"$AcmeCars\\\
+    [2\\]<br>\\\\n\"; **\n\n**print \"<p>We have just created a text **\n\n**array!</p>”;\
+    \ **\n\n**?> **\n\n**2.** \n\nSave the script as **textlist.php** in the **PHPSCRIPTS**\
+    \ folder. \n\n \n\nHere's what the relevant lines in this script do: \n\n \n\n\
+    • **$AcmeCars = (\"Ford\",\"Dodge\",\"Chevy\"); **\n\nThe words \"Ford\",\"Dodge\"\
+    , and \"Chevy\" are assigned to \n\nthe array variable **$AcmeCars**.\n\n• **print\
+    \ \"$AcmeCars\\[0\\]<br>\\\\n\"; **\n\nPrints the first word in the array, “Ford.”"
+  merge: -1
+  pgno: 67
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH VARIABLES \n\n**66 **\n\n• **print \"$AcmeCars\\[1\\\
+    ]<br>\\\\n\"; **\n\nPrints the second word in the array, “Dodge.”\n\n• **print\
+    \ \"$AcmeCars\\[2\\]<br>\\\\n\"; **\n\nPrints the third word in the array, “Chevy.”\n\
+    \n**3.** \n\nUpload **textlist.php** to the **phpscripts** directory in your Web\
+    \ site. \n\n \n\n**4.** \n\nOpen **phplinks.html** and insert a new link to **textlist.php**:\
+    \ \n\n \n\n**<p><a **\n\n**href=\"http://www.yourwebsite.com/phpscripts/tex**\n\
+    \n**tlist.php\">9. Create a list of words.</a></p> **\n\n**5.** \n\nSave **phplinks.html**,\
+    \ then upload it to the home directory in your \n\nWeb site. \n\n \n\n**6.** \n\
+    \nIn the browser, go to: \n\n \n\n**www.yourwebsite.com/phplinks.html**"
+  merge: -1
+  pgno: 68
+- img_proc: true
+  md: " \n\nWORKING WITH VARIABLES \n\n**67**\n\n**7.** \n\nClick the **9\\. Create\
+    \ a list of words** link. \n\n \n\nThe output should look like this: \n\n \n\n\
+    ![](img/30f0fa1c6cb552c908695ea335a9f268_69_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_69_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_69_2.png)"
+  merge: -1
+  pgno: 69
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH VARIABLES \n\n**68 **\n\n**Practice: **\n\n**Working\
+    \ with Variables **\n\n \n\n \n\n**1.** \n\nWrite a script that uses a single\
+    \ variable to specify there are 16 \n\nmonkeys in a barrel of monkeys, then print\
+    \ it to the browser \n\nwindow. \n\n \n\n**2.** \n\nSave the script as **monkeys.php**\
+    \ in the **PRACTICEPHP** folder \n\non your computer. \n\n \n\n**3.** \n\nUpload\
+    \ it into the **practicephp** directory in your Web site. \n\n \n\n**4.** \n\n\
+    Add the paragraph “How many monkeys are in a barrel of \n\nmonkeys?” to **practice.html**,\
+    \ and link that paragraph to \n\n**monkeys.php**. \n\n \n\n**5.** \n\nUpload **practice.html**\
+    \ to the home directory in your Web site. \n\n \n\n**6.** \n\nView practice.html\
+    \ in the browser, then click the new link. \n\n \n\nIts output should look like\
+    \ this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_70_0.png)"
+  merge: -1
+  pgno: 70
+- img_proc: true
+  md: " \n\nWORKING WITH VARIABLES \n\n**69**\n\n**7.** \n\nWrite a script that creates\
+    \ a list (array) of presidents: \n\n \n\n**James Buchanan **\n\n**George Washington\
+    \ **\n\n**Millard Fillmore** \n\n \n\n…Prints the text “**This was the Revolution’s\
+    \ indispensable **\n\n**man:**” \n\n \n\n…Then prints the second name in the list.\
+    \ \n\n \n\n**8.** \n\nSave the script as **presidents.php** in the **PRACTICEPHP**\
+    \ folder \n\non your computer. \n\n \n\n**9.** \n\nUpload it into the **practicephp**\
+    \ directory in your Web site. \n\n \n\n**10.** Add the paragraph “**The indispensable\
+    \ man**” to **practice.html**, \n\nand link that paragraph to **presidents.php**.\
+    \ \n\n \n\n**11.** Upload **practice.html** to the home directory in your Web\
+    \ site."
+  merge: -1
+  pgno: 71
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH VARIABLES \n\n**70 **\n\n**12.** View **practice.html**\
+    \ in the browser, then click the new link. \n\n \n\nIts output should look like\
+    \ this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_72_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_72_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_72_2.png)"
+  merge: -1
+  pgno: 72
+- img_proc: true
+  md: " \n\nWORKING WITH NUMBERS \n\n**71**\n\n**Working with **\n\n**Numbers **\n\
+    \n \n\n \n\nIn this section, you’ll learn how to: \n\n \n\n• **Perform calculations\
+    \ **\n\n• **Increment/decrement **\n\n• **Generate random numbers **"
+  merge: -1
+  pgno: 73
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH NUMBERS \n\n**72 **\n\n**Perform calculations **\n\n\
+    \ \n\n**1.** \n\nCreate a new script with this code: \n\n**<?php **\n\n**$var1\
+    \ = 5; **\n\n**$var2 = 2; **\n\n**$answer = $var1 + $var2; **\n\n**print \"$var1\
+    \ plus $var2 equals $answer.\"; **\n\n**?> **\n\n \n\n**2.** \n\nSave the script\
+    \ as **add.php** in the **PHPSCRIPTS** folder. \n\n \n\nHere's what the relevant\
+    \ lines in this script do: \n\n• **$answer = $var1 + $var2 ; **\n\nAdds the variables\
+    \ **$var1** and **$var2** together, then \n\nassigns the sum to a variable called\
+    \ **$answer**. \n\n \n\nSince **$var1** is 5, and **$var2** is 2, **$answer**\
+    \ has a value \n\nof 7.\n\n \n\n**3.** \n\nUpload **add.php** to the **PHPSCRIPTS**\
+    \ directory in your Web site."
+  merge: -1
+  pgno: 74
+- img_proc: true
+  md: " \n\nWORKING WITH NUMBERS \n\n**73**\n\n**4.** \n\nOpen **phplinks.html** and\
+    \ insert a new link to **add.php**: \n\n \n\n**<p><a **\n\n**href=\"http://www.yourwebsite.com/phpscripts/add**\n\
+    \n**.php\">10. Add five plus two.</a></p> **\n\n**5.** \n\nSave **phplinks.html**,\
+    \ then upload it to the home directory in your \n\nWeb site. \n\n \n\n**6.** \n\
+    \nIn the browser, go to: \n\n \n\n**www.yourwebsite.com/phplinks.html** \n\n \n\
+    \n**7.** \n\nClick the **10\\. Add five plus two** link. \n\n \n\nThe output should\
+    \ look like this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_75_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_75_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_75_2.png)"
+  merge: -1
+  pgno: 75
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH NUMBERS \n\n**74 **\n\n**Tip:** To subtract, just change\
+    \ the **+** sign in the script above to a \n\n**–** sign. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_76_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_76_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_76_2.png)\n\
+    \n \n\nTo multiply, just change it to a **\\*** sign. \n\n \n\nTo divide, change\
+    \ it to **/**."
+  merge: -1
+  pgno: 76
+- img_proc: true
+  md: " \n\nWORKING WITH NUMBERS \n\n**75**\n\n**Increment/decrement **\n\n \n\n**1.**\
+    \ \n\nCreate a new script with this code: \n\n**<?php **\n\n**$cars\\_on\\_lot\
+    \ = 10; **\n\n**print \"We have $cars\\_on\\_lot cars.\\\\n<br>\"; **\n\n**print\
+    \ \"We got another new car.\\\\n<br>\"; **\n\n**$cars\\_on\\_lot++; **\n\n**print\
+    \ \"Now we have $cars\\_on\\_lot cars!\\\\n<p>\"; **\n\n**print '<b>$cars\\_on\\\
+    _lot++</b> is the same to PHP **\n\n**as <b>$cars\\_on\\_lot + 1.</b>'; **\n\n\
+    **?> **\n\n \n\n**2.** \n\nSave the script as **autoplus.php** in the **PHPSCRIPTS**\
+    \ folder. \n\n \n\nHere's what the relevant lines in this script do: \n\n \n\n\
+    • **$cars\\_on\\_lot++; **\n\nThe auto incrementer (**++**) adds 1 to the **$cars\\\
+    _on lot** \n\nvariable.\n\n• **print '<b>$cars\\_on\\_lot++</b> is the same **\n\
+    \n**to PHP as <b>$cars\\_on\\_lot + 1</b>'; **\n\nPrints the text:**$cars\\_on\\\
+    _lot++ is the same to PHP as **\n\n**$cars\\_on\\_lot + 1****. **"
+  merge: -1
+  pgno: 77
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH NUMBERS \n\n**76 **\n\n**3.** \n\nUpload **autoplus.php**\
+    \ to the **phpscripts** directory in your Web \n\nsite. \n\n \n\n**4.** \n\nOpen\
+    \ **phplinks.html** and insert a new link to **autoplus.php**: \n\n \n\n**<p><a\
+    \ **\n\n**href=\"http://www.yourwebsite.com/phpscripts/aut**\n\n**oplus.php\"\
+    >11. Advance a number by 1 **\n\n**automatically.</a></p> **\n\n**5.** \n\nSave\
+    \ **phplinks.html**, then upload it to the home directory in your \n\nWeb site.\
+    \ \n\n \n\n**6.** \n\nIn the browser, go to: \n\n \n\n**www.yourwebsite.com/phplinks.html**\
+    \ \n\n \n\n**7.** \n\nClick the **11\\. Advance a number by 1 automatically**\
+    \ link. \n\n \n\nThe output should look like this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_78_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_78_1.png)"
+  merge: -1
+  pgno: 78
+- img_proc: true
+  md: " \n\nWORKING WITH NUMBERS \n\n**77**\n\n**Tip:** To automatically decrement\
+    \ by one, change the auto \n\nincrementer in the script above (**++**) to an auto\
+    \ decrementer: \n\n \n\n**\\--** \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_79_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_79_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_79_2.png)"
+  merge: -1
+  pgno: 79
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH NUMBERS \n\n**78 **\n\n**Generate random numbers **\n\
+    \n \n\n**1.** \n\nCreate a new script with this code: \n\n**<?php **\n\n**$random\\\
+    _number = rand(1,10); **\n\n**print \"<p>Your Lucky Number from 1 to 10 is <b>\
+    \ **\n\n**$random\\_number </b></p>\"; **\n\n**print \"Click the Reload button\
+    \ on your browser **\n\n**to get a new random number.\"; **\n\n**?> **\n\n**2.**\
+    \ \n\nSave the script as **random.php** in the **PHPSCRIPTS** folder. \n\n \n\n\
+    Here's what the relevant lines in this script do: \n\n \n\n• **$random\\_number\
+    \ = rand(1,10); **\n\n• **The rand() command generates a random **\n\n**number\
+    \ from 1 to 10. **\n\nIt is then assigned to the variable **$random\\_number**.\n\
+    \n• **print \"<p>Your Acme Auto Lucky Number **\n\n**from 1 to 10 is <b> $random\\\
+    _number **\n\n**</b></p>\"; **\n\nPrints “**Your Lucky Number from 1 to 10 is\
+    \ 8**. ” \n\n \n\nBecause it’s a random number, the number on your \n\nscreen\
+    \ will be different."
+  merge: -1
+  pgno: 80
+- img_proc: true
+  md: " \n\nWORKING WITH NUMBERS \n\n**79**\n\n**3.** \n\nUpload **random.php** to\
+    \ the **phpscripts** directory in your Web \n\nsite. \n\n \n\n**4.** \n\nOpen\
+    \ **phplinks.html** and insert a new link to **random.php**: \n\n \n\n**<p><a\
+    \ **\n\n**href=\"http://www.yourwebsite.com/phpscripts/ran**\n\n**dom.php\">12.\
+    \ Generate random numbers.</a></p> **\n\n**5.** \n\nSave **phplinks.html**, then\
+    \ upload it to the home directory in your \n\nWeb site. \n\n \n\n**6.** \n\nIn\
+    \ the browser, go to: \n\n \n\n**www.yourwebsite.com/phplinks.html** \n\n \n\n\
+    **7.** \n\nClick the **12\\. Generate random numbers** link. \n\n \n\nThe output\
+    \ should look like this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_81_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_81_1.png)"
+  merge: -1
+  pgno: 81
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH NUMBERS \n\n**80 **\n\n**Practice: **\n\n**Working with\
+    \ Numbers **\n\n \n\n \n\n**1.** \n\nWrite a script that multiplies 347 \\* 221.\
+    \ \n\n \n\n**2.** \n\nSave the script as **multiply.php** in the **PRACTICEPHP**\
+    \ folder on \n\nyour computer. \n\n \n\n**3.** \n\nUpload it into the **practicephp**\
+    \ directory in your Web site. \n\n \n\n**4.** \n\nAdd the paragraph “What’s 347\
+    \ times 221?” to **practice.html**, \n\nand link that paragraph to **multiply.php**.\
+    \ \n\n \n\n**5.** \n\nUpload **practice.html** to the home directory in your Web\
+    \ site. \n\n \n\n**6.** \n\nView **practice.html** in the browser, then click\
+    \ the new link. \n\n \n\nIts output should look like this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_82_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_82_1.png)"
+  merge: -1
+  pgno: 82
+- img_proc: true
+  md: " \n\nWORKING WITH NUMBERS \n\n**81**\n\n**7.** \n\nWrite a script that generates\
+    \ a whole random number between 1 \n\nand 450. \n\n \n\nThen have the script advance\
+    \ that number by 1. \n\n \n\n**8.** \n\nSave the script as **randinc.php** in\
+    \ the **PRACTICEPHP** folder on \n\nyour computer. \n\n \n\n**9.** \n\nUpload\
+    \ it into the** practicephp** directory in your Web site. \n\n \n\n**10.** Add\
+    \ the paragraph “random number plus one” to **practice.html**, \n\nand link that\
+    \ paragraph to **randinc.php**. \n\n \n\n**11.** View **practice.html** in the\
+    \ browser, then click the new link. \n\n \n\nIts output should look like this:\
+    \  \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_83_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_83_1.png)"
+  merge: -1
+  pgno: 83
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH NUMBERS \n\n**82 **"
+  merge: -1
+  pgno: 84
+- img_proc: true
+  md: " \n\nUSER FUNCTIONS \n\n**83**\n\n**User Functions **\n\n \n\n \n\nIn this\
+    \ section, you’ll learn how to: \n\n \n\n• **Create a user function **\n\n• **Pass\
+    \ form inputs to a script **"
+  merge: -1
+  pgno: 85
+- img_proc: true
+  md: " \n\n \n\nUSER FUNCTIONS \n\n**84 **\n\n**Create a user function **\n\n \n\n\
+    \ \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n**1.** \n\nCreate a new page with this\
+    \ code: \n\n**<html> **\n\n**<head> **\n\n**<title>Create a User Function</title>\
+    \ **\n\n**<?php **\n\n** function myFunction($company) { **\n\n** print(\"<p>Welcome\
+    \ to $company</p>\"); **\n\n** } **\n\n**?> **\n\n**</head> **\n\n**<body> **\n\
+    \n**<h3>Start</h3> **\n\n**<?php **\n\n** $company = “Acme Auto”; **\n\n** myFunction($company);\
+    \ **\n\n**?> **\n\n**What is a user function?**\n\nIt’s a block of reusable code\
+    \ that you create within your program. It is \n\nsometimes called a subroutine.\
+    \ \n\n \n\nPHP instructions within the user function can be called or executed\
+    \ \n\nfrom the main program more then once. This makes redundant tasks \n\nsimpler.\
+    \ \n\n \n\nYou can also pass variable information into a subroutine to make the\
+    \ \n\nuser function more powerful and flexible."
+  merge: -1
+  pgno: 86
+- img_proc: true
+  md: " \n\nUSER FUNCTIONS \n\n**85**\n\n**<h3>End</h3> **\n\n**</body> **\n\n**</html>\
+    \ **\n\n \n\n**2.** \n\nSave the page as **functionsimple.php** in the **PHPSCRIPTS\
+    \ **\n\nfolder. \n\n \n\nHere's what the relevant lines in this script do: \n\n\
+    • **function myFunction($company) { **\n\n**function** is the PHP command to create\
+    \ a function.\n\n**myFunction **is the name of the user function. \n\n \n\nThe\
+    \ variable **$company** is passed into the user function \n\ninside of the parentheses\
+    \ ( ).\n\n• **{ **\n\nMarks the beginning of the user function.\n\n• ** print(\"\
+    <p>Welcome to $company</p>\"); **\n\nThis is what the user function does. It prints\
+    \ the text \n\n“**Welcome to Acme Auto!**” to the browser window. This \n\nis\
+    \ because the variable **$company** is given the value of \n\n“Acme Auto.”\n\n\
+    • **} **\n\nMarks the end of the user function."
+  merge: -1
+  pgno: 87
+- img_proc: true
+  md: " \n\n \n\nUSER FUNCTIONS \n\n**86 **\n\n• **<body> **\n\nThis HTML tag begins\
+    \ the part of this script that’s \n\nviewable in the browser.\n\n• **<?php **\n\
+    \nBegins the viewable part of this PHP script. \n\n• **$company = “Acme Auto”;\
+    \ **\n\nThe variable **$company** is assigned the text value \n\n“Acme Auto.”\
+    \ \n\n• **myFunction($company); **\n\nExecutes the code written in the **myFunction**\
+    \ user \n\nfunction above. This is where the variable **$company** \n\nis passed\
+    \ into the user function. \n\n• **?> **\n\nEnds the viewable part of the PHP script.\n\
+    \n \n\n**3.** \n\nUpload **functionsimple.php** to the **phpscripts** directory\
+    \ in your \n\nWeb site."
+  merge: -1
+  pgno: 88
+- img_proc: true
+  md: " \n\nUSER FUNCTIONS \n\n**87**\n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n\
+    \ \n\n \n\n \n\n \n\n \n\n**4.** \n\nOpen **phplinks.html** and insert a new link\
+    \ to \n\n**functionsimple.php**: \n\n \n\n**<p><a **\n\n**href=\"http://www.yourwebsite.com/phpscripts/fun**\n\
+    \n**ctionsimple.php\">13. Execute a user **\n\n**function.</a></p> **\n\n**5.**\
+    \ \n\nSave **phplinks.html**, then upload it to the home directory in your \n\n\
+    Web site. \n\n \n\n**6.** \n\nIn the browser, go to: \n\n \n\n**www.yourwebsite.com/phplinks.html**\
+    \ \n\n \n\n**PHP pages **\n\n \n\nWith PHP, you can create HTML pages with PHP\
+    \ scripts embedded \n\nin them. \n\n \n\nTo get them to work, you just give them\
+    \ the extension .php instead of \n\n.html. \n\n \n\nExample: page.php."
+  merge: -1
+  pgno: 89
+- img_proc: true
+  md: " \n\n \n\nUSER FUNCTIONS \n\n**88 **\n\n**7.** \n\nClick the **13\\. Execute\
+    \ a user function** link. \n\n \n\nThe output should look like this: \n\n \n\n\
+    ![](img/30f0fa1c6cb552c908695ea335a9f268_90_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_90_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_90_2.png)"
+  merge: -1
+  pgno: 90
+- img_proc: true
+  md: " \n\nUSER FUNCTIONS \n\n**89**\n\n**Pass form inputs to a script **\n\n \n\n\
+    **1.** \n\nCreate a new Web page with this code: \n\n \n\n**<html> **\n\n**<body>\
+    \ **\n\n**<form method=\"post\" action=\"**\n\n**http://www.yourwebsite.com/phpscripts/formoutpu**\n\
+    \n**t.php\"> **\n\n**What is your name? **\n\n**<input type=\"text\" name=\"yourname\"\
+    ><br> **\n\n**<input type=\"submit\" value=\"Submit\"> **\n\n**</form> **\n\n\
+    **</body> **\n\n**</html> **\n\n**2.** \n\nSave the page as **simpleform.html**\
+    \ in the **PHPSCRIPTS** folder \n\non your computer. \n\n \n\nHere's what the\
+    \ relevant lines in this page do: \n\n \n\n• **<form method=\"post\" action=\"\
+    \ **\n\n**http://www.yourwebsite.com/phpscripts/for**\n\n**moutput.php\"> **\n\
+    \nWhen the \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_91_0.png)\n\n button on\
+    \ the form is clicked, the script \n\n**formoutput.php** will execute."
+  merge: -1
+  pgno: 91
+- img_proc: true
+  md: " \n\n \n\nUSER FUNCTIONS \n\n**90 **\n\n• **<input type=\"text\" name=\"yourname\"\
+    > **\n\nThis puts a textbox called **yourname** on the page. \n\n \n\n**3.** \n\
+    \nUpload simpleform.html to the home directory in your Web site. \n\n \n\n**4.**\
+    \ \n\nCreate a new script with this code: \n\n \n\n**<?php **\n\n**print \"Hi\
+    \ $yourname\"; **\n\n**?> **\n\n \n\n**5.** \n\nSave the script as **formoutput.php**\
+    \ in the **PHPSCRIPTS** folder \n\non your computer. \n\n \n\n**6.** \n\nHere's\
+    \ what the relevant line in this script does: \n\n \n\n• **print \"Hi $yourname\"\
+    ; **\n\nDisplays the name the user enters on the form page. \n\n \n\nThe variable\
+    \ **$yourname** is given the value from the \n\ntextbox called **yourname** on\
+    \ the **simpleform.php** page.\n\n \n\n**7.** \n\nUpload it into the **phpscripts**\
+    \ directory in your Web site. \n\n \n\n**8.** \n\nOpen **phplinks.html** and insert\
+    \ a new link to **simpleform.html**: \n\n \n\n**<p><a **\n\n**href=\"http://www.yourwebsite.com/simpleform.htm**\n\
+    \n**l\">14.Pass form inputs to a script.</a></p> **"
+  merge: -1
+  pgno: 92
+- img_proc: true
+  md: " \n\nUSER FUNCTIONS \n\n**91**\n\n**9.** \n\nSave **phplinks.html**, then upload\
+    \ it to the home directory in your \n\nWeb site. \n\n \n\n**10.** In the browser,\
+    \ go to: \n\n \n\n**www.yourwebsite.com/phplinks.html** \n\n \n\n**11.** Click\
+    \ the **14\\. Pass form inputs to a script** link. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_93_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_93_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_93_2.png)"
+  merge: -1
+  pgno: 93
+- img_proc: true
+  md: " \n\n \n\nUSER FUNCTIONS \n\n**92 **\n\n**12.** Type your name in the textbox,\
+    \ then click the \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_94_0.png)\n\n button.\
+    \ \n\n \n\nThe output should look like this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_94_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_94_2.png)![](img/30f0fa1c6cb552c908695ea335a9f268_94_3.png)"
+  merge: -1
+  pgno: 94
+- img_proc: true
+  md: " \n\nUSER FUNCTIONS \n\n**93**\n\n**Practice: User Functions **\n\n \n\n \n\
+    \n**1.** \n\nCreate a copy the **simpleform.html** page, then save the page \n\
+    \nas **simpleform2.html** in the **PRACTICEPHP** folder on your \n\ncomputer.\
+    \ \n\n \n\n**2.** \n\nModify **simpleform2.html** to call a new php script called\
+    \ \n\n**skilltest.php** in the **practicephp** directory, instead of \n\n**formoutput.php**.\
+    \  \n\n \n\n**3.** \n\nUse the **functionsimple.php** script as a model to create\
+    \ a new \n\nscript called **skilltest.php**. \n\n \n\n**4.** \n\nMake **skilltest.php**\
+    \ print the **$yourname** variable from the \n\n**simpleform2.html** page. \n\n\
+    \ \n\n**5.** \n\nUpload **simpleform2.html** to the home directory in your Web\
+    \ \n\nsite. \n\n \n\n**6.** \n\nUpload **skilltest.php** to the **practicephp\
+    \ **directory in your Web \n\nsite."
+  merge: -1
+  pgno: 95
+- img_proc: true
+  md: " \n\n \n\nUSER FUNCTIONS \n\n**94 **\n\n**7.** \n\nView **simpleform2.html**\
+    \ in the browser, and test the \n\n**skilltest.php** script. \n\n \n\nIts output\
+    \ should look something like this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_96_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_96_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_96_2.png)"
+  merge: -1
+  pgno: 96
+- img_proc: true
+  md: " \n\nLOGIC & LOOPS \n\n**95**\n\n**Logic & Loops **\n\n \n\n \n\nIn this section,\
+    \ you’ll learn how to: \n\n \n\n• **Employ conditional logic **\n\n• **Employ\
+    \ looping **"
+  merge: -1
+  pgno: 97
+- img_proc: true
+  md: " \n\n \n\nLOGIC & LOOPS \n\n**96 **\n\n**Employ conditional logic **\n\n \n\
+    \nIf statements \n\n \n\n**1.** \n\nCreate a new Web page with this code: \n\n\
+    **<html> **\n\n**<head> **\n\n**<title>If Statements</title> **\n\n**</head> **\n\
+    \n**<body> **\n\n**<h2>Acme Logon Page</h2> **\n\n**<form method=\"POST\" action=\"\
+    **\n\n**http://www.yourwebsite.com/phpscripts/if.php”> **\n\n**<h2>Enter Password:</h2>\
+    \ **\n\n**Password: <input type=\"password\" name= **\n\n**\"password\"><p> **\n\
+    \n**<input type=\"submit\" value=\"Submit\"> **\n\n**</form> **\n\n**</body> **\n\
+    \n**</html>**\n\n \n\n**2.** \n\nSave the page as **if.html** in the **PHPSCRIPTS**\
+    \ folder. \n\n \n\n**3.** \n\nUpload it to the home directory in your Web site."
+  merge: -1
+  pgno: 98
+- img_proc: true
+  md: " \n\nLOGIC & LOOPS \n\n**97**\n\n**4.** \n\nCreate a new script with this code:\
+    \ \n\n**<?php **\n\n**$GoodPassword = 'acme'; **\n\n**if ($password == $GoodPassword){\
+    \ **\n\n** print \"<b>Acme Password verified!</b>\\\\n\"; **\n\n**} **\n\n**?>\
+    \ **\n\n**5.** \n\nSave the script as **if.php** in the **PHPSCRIPTS** folder,\
+    \ then \n\nupload it to the **phpscripts** directory in your Web site. \n\n \n\
+    \nHere's what the relevant lines in this script do: \n\n• **$GoodPassword = 'acme';\
+    \ **\n\nAssigns the value “acme” to the variable \n\n**$GoodPassword**.\n\n• **if\
+    \ ($password == $GoodPassword){ **\n\nCompares the password word typed in the\
+    \ text box on \n\n**if.html** to the password assigned to the variable \n\n**$GoodPassword**.\
+    \ \n\n \n\nIf they’re the same, then the code between the curly \n\nbraces is\
+    \ executed: \n\n \n\n**print \"<b>Acme Password **\n\n**verified!</b><br>\\\\\
+    n\";**\n\n**Tip:**The double equal sign **\\==** is used to compare \n\nvariables.\
+    \ A single equal sign assigns a value to a \n\nvariable."
+  merge: -1
+  pgno: 99
+- img_proc: true
+  md: " \n\n \n\nLOGIC & LOOPS \n\n**98 **\n\n**6.** \n\nOpen phplinks.html and insert\
+    \ a new link to if.html: \n\n \n\n**<p><a **\n\n**href=\"http://www.yourwebsite.com/if.html\"\
+    >15. **\n\n**Enter a password.</a></p> **\n\n**7.** \n\nSave **phplinks.html**,\
+    \ then upload it to the home directory in your \n\nWeb site. \n\n \n\n**8.** \n\
+    \nIn the browser, go to: \n\n \n\n**www.yourwebsite.com/phplinks.html** \n\n \n\
+    \n**9.** \n\nClick the **15\\. Enter a password** link. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_100_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_100_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_100_2.png)"
+  merge: -1
+  pgno: 100
+- img_proc: true
+  md: " \n\nLOGIC & LOOPS \n\n**99**\n\n**10.** In the Password box, type: \n\n \n\
+    \n**pizza** \n\n \n\nthen click the \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_101_0.png)\n\
+    \n button. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_101_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_101_2.png)![](img/30f0fa1c6cb552c908695ea335a9f268_101_3.png)\n\
+    \n \n\n \n\nThe output should look like this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_101_4.png)![](img/30f0fa1c6cb552c908695ea335a9f268_101_5.png)"
+  merge: -1
+  pgno: 101
+- img_proc: true
+  md: " \n\n \n\nLOGIC & LOOPS \n\n**100 **\n\n**11.** Go back to **if.html**. \n\n\
+    \ \n\nIn the Password box, type: \n\n \n\n**acme** \n\n \n\nthen click the \n\n\
+    ![](img/30f0fa1c6cb552c908695ea335a9f268_102_0.png)\n\n button. \n\n \n\nThe output\
+    \ should look like this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_102_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_102_2.png)![](img/30f0fa1c6cb552c908695ea335a9f268_102_3.png)"
+  merge: -1
+  pgno: 102
+- img_proc: true
+  md: " \n\nLOGIC & LOOPS \n\n**101**\n\nIf/else statements \n\n \n\n**1.** \n\nIn\
+    \ the Web page **if.html**, change the action of its **<form>** tag to \n\nuse\
+    \ a script called **ifelse.php**: \n\n \n\n**<form method=\"post\" **\n\n**action=\"\
+    http://www.yourwebsite.com/phpscripts/i**\n\n**felse.php\"> **\n\n**2.** \n\n\
+    Save the page as **ifelse.html** in the **PHPSCRIPTS** folder, then \n\nupload\
+    \ it to the home directory in your Web site. \n\n \n\n**3.** \n\nIn the script\
+    \ **if.php**, change its code from this: \n\n \n\n**if ($password == $GoodPassword){\
+    \ **\n\n**print \"<b>Acme Password verified!</b>\\\\n\"; **\n\n**}** \n\n \n\n\
+    To this: \n\n \n\n**if ($password == $GoodPassword){ **\n\n**print \"<b>Acme Password\
+    \ verified!</b>\\\\n\"; **\n\n**} **\n\n**else { **\n\n**print \"<b>Acme Password\
+    \ incorrect.</b>\\\\n\"; **\n\n**}**\n\n \n\n**4.** \n\nSave the script as **ifelse.php**\
+    \ in the **PHPSCRIPTS** folder."
+  merge: -1
+  pgno: 103
+- img_proc: true
+  md: " \n\n \n\nLOGIC & LOOPS \n\n**102 **\n\nHere's what the relevant lines in this\
+    \ script do: \n\n \n\n• **if ($password == $GoodPassword){ **\n\nCompares the\
+    \ password word typed in the text box on \n\n**ifelse.html** to the password assigned\
+    \ to the variable \n\n**$GoodPassword**. \n\n \n\nIf they’re the same, then the\
+    \ code between the curly \n\nbraces is executed.\n\n• **else { **\n\nIf the two\
+    \ values are NOT the same, then the else \n\ncondition is executed.\n\n**Tip:**\
+    \ Think of it this way:\n\n**if (this is true) { then do this } **\n\n**else {\
+    \ do this } **\n\n \n\n**5.** \n\nUpload **ifelse.php** to the **phpscripts**\
+    \ directory in your Web site. \n\n \n\n**6.** \n\nOpen **phplinks.html** and insert\
+    \ a new link to **ifelse.html**: \n\n \n\n**<p><a **\n\n**href=\"http://www.yourwebsite.com/ifelse.html\"\
+    >1**\n\n**6.Enter another password.</a></p> **\n\n**7.** \n\nSave **phplinks.html**,\
+    \ then upload it to the home directory in your \n\nWeb site."
+  merge: -1
+  pgno: 104
+- img_proc: true
+  md: " \n\nLOGIC & LOOPS \n\n**103**\n\n**8.** \n\nIn the browser, go to: \n\n \n\
+    \n**www.yourwebsite.com/phplinks.html** \n\n \n\n**9.** \n\nClick the **16\\.\
+    \ Enter another password** link. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_105_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_105_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_105_2.png)"
+  merge: -1
+  pgno: 105
+- img_proc: true
+  md: " \n\n \n\nLOGIC & LOOPS \n\n**104 **\n\n**10.** In the Password box, type:\
+    \ \n\n \n\n**pizza** \n\n \n\nthen click the \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_106_0.png)\n\
+    \n button. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_106_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_106_2.png)![](img/30f0fa1c6cb552c908695ea335a9f268_106_3.png)\n\
+    \n \n\nThe output should look like this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_106_4.png)![](img/30f0fa1c6cb552c908695ea335a9f268_106_5.png)"
+  merge: -1
+  pgno: 106
+- img_proc: true
+  md: " \n\nLOGIC & LOOPS \n\n**105**\n\n**11.** Go back to ifelse.html. \n\n \n\n\
+    In the Password box, type: \n\n \n\n**acme** \n\n \n\nthen click the \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_107_0.png)\n\
+    \n button. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_107_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_107_2.png)![](img/30f0fa1c6cb552c908695ea335a9f268_107_3.png)"
+  merge: -1
+  pgno: 107
+- img_proc: true
+  md: " \n\n \n\nLOGIC & LOOPS \n\n**106 **\n\nThe output should look like this: \n\
+    \n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_108_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_108_1.png)"
+  merge: -1
+  pgno: 108
+- img_proc: true
+  md: " \n\nLOGIC & LOOPS \n\n**107**\n\nThe OR operator \n\n \n\n**1.** \n\nCreate\
+    \ a new Web page with this code: \n\n**<html> **\n\n**<head> **\n\n**<title>The\
+    \ OR Operator</title> **\n\n**</head> **\n\n**<body> **\n\n**<form method=\"post\"\
+    \ action=\"**\n\n**http://www.yourwebsite.com/phpscripts/or.php”> **\n\n**<h2>Enter\
+    \ Acme Auto User Name</h2> **\n\n**User Name: <input type=\"text\" name= \"username\"\
+    > **\n\n**<input type=\"submit\" value=\"Submit\"> **\n\n**</form> **\n\n**</body>\
+    \ **\n\n**</html>**\n\n \n\n**2.** \n\nSave the page as **or.html** in the **PHPSCRIPTS**\
+    \ folder, then \n\nupload it to the home directory in your Web site."
+  merge: -1
+  pgno: 109
+- img_proc: true
+  md: " \n\n \n\nLOGIC & LOOPS \n\n**108 **\n\n**3.** \n\nChange the code in **ifelse.php**\
+    \ from this:  \n\n \n\n**$GoodPassword = 'acme'; **\n\n**if ($password == $GoodPassword){\
+    \ **\n\n**print \"<b>Acme Password verified!</b>\\\\n\"; **\n\n**} **\n\n**else\
+    \ { **\n\n**print \"<b>Acme Password incorrect.</b>\\\\n\"; **\n\n**} **\n\n \n\
+    \n![](img/30f0fa1c6cb552c908695ea335a9f268_110_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_110_1.png)\n\
+    \n \n\nTo this: \n\n \n\n**<?php **\n\n**$user1 = \"Paul\"; **\n\n**$user2 = \"\
+    Donna\"; **\n\n**if ($username == $user1 || $username == $user2) **\n\n**{ **\n\
+    \n**print \"$username welcome to Acme Auto.\"; **\n\n**} **\n\n**?> **"
+  merge: -1
+  pgno: 110
+- img_proc: true
+  md: " \n\nLOGIC & LOOPS \n\n**109**\n\n![](img/30f0fa1c6cb552c908695ea335a9f268_111_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_111_1.png)\n\
+    \n**4.** \n\nSave the script as **or.php** in the **PHPSCRIPTS** folder. \n\n\
+    \ \n\nHere's what the relevant lines in this script do: \n\n• **if ($username\
+    \ == $user1 || $username == **\n\n**$user2) **\n\nUses the OR operator: \n\n \n\
+    \n**|| ** \n\n \n\nto compare two conditions. \n\n \n\nIt is asking the question,\
+    \ “is condition one true, OR is \n\ncondition two true?” Is the entered user name\
+    \ either Paul \n\nOR Donna? \n\n \n\nIf the entered user name is either Paul or\
+    \ Donna, then \n\nthe block of code in between the curly braces is \n\nexecuted.\n\
+    \n \n\n**5.** \n\nUpload **or.php** to the **phpscripts** directory in your Web\
+    \ site."
+  merge: -1
+  pgno: 111
+- img_proc: true
+  md: " \n\n \n\nLOGIC & LOOPS \n\n**110 **\n\n**6.** \n\nOpen **phplinks.html** and\
+    \ insert a new link to **or.html**: \n\n \n\n**<p><a **\n\n**href=\"http://www.yourwebsite.com/or.html\"\
+    >17.En**\n\n**ter the username.</a></p>**\n\n**7.** \n\nSave **phplinks.html**,\
+    \ then upload it to the home directory in your \n\nWeb site. \n\n \n\n**8.** \n\
+    \nIn the browser, go to: \n\n \n\n**www.yourwebsite.com/phplinks.html **\n\n \n\
+    \n**9.** \n\nClick the **17\\. Enter the username** link. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_112_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_112_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_112_2.png)"
+  merge: -1
+  pgno: 112
+- img_proc: true
+  md: " \n\nLOGIC & LOOPS \n\n**111**\n\n**10.** In the User Name box, type: \n\n\
+    \ \n\n**Donna** \n\n \n\nthen click the \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_113_0.png)\n\
+    \n button. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_113_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_113_2.png)\n\
+    \n \n\n \n\nThe output should look like this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_113_3.png)![](img/30f0fa1c6cb552c908695ea335a9f268_113_4.png)"
+  merge: -1
+  pgno: 113
+- img_proc: true
+  md: " \n\n \n\nLOGIC & LOOPS \n\n**112 **\n\n**11.** Go back to **or.html**. \n\n\
+    \ \n\nIn the User Name box, type: \n\n \n\n**Paul** \n\nthen click the \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_114_0.png)\n\
+    \n button. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_114_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_114_2.png)\n\
+    \n \n\n \n\nThe output should look like this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_114_3.png)![](img/30f0fa1c6cb552c908695ea335a9f268_114_4.png)"
+  merge: -1
+  pgno: 114
+- img_proc: true
+  md: " \n\nLOGIC & LOOPS \n\n**113**\n\nThe AND operator \n\n \n\n**1.** \n\nCreate\
+    \ a new Web page with this code: \n\n**<html> **\n\n**<head> **\n\n**<title>The\
+    \ AND Operator</title> **\n\n**</head> **\n\n**<body> **\n\n**<form method=\"\
+    post\" action=\"**\n\n**http://www.yourwebsite.com/phpscripts/and.php\"> **\n\n\
+    **<h2>Acme Logon Page</h2> **\n\n**<h3>Enter User Name & Password</h3> **\n\n\
+    **User Name: <input type=\"text\" name= **\n\n**\"username\"><br> **\n\n**Password:\
+    \ <input type=\"password\" **\n\n**name=\"password\"><br> **\n\n**<input type=\"\
+    submit\" value=\"Submit\"> **\n\n**</form> **\n\n**</body> **\n\n**</html>**\n\
+    \n \n\n**2.** \n\nSave the page as **and.html** in the **PHPSCRIPTS** folder,\
+    \ then \n\nupload it to the home directory in your Web site."
+  merge: -1
+  pgno: 115
+- img_proc: true
+  md: " \n\n \n\nLOGIC & LOOPS \n\n**114 **\n\n**3.** \n\nChange the code in **or.php**\
+    \ from this: \n\n \n\n**<?php** \n\n**$user1 = \"Paul\"; **\n\n**$user2 = \"Donna\"\
+    ; **\n\n**if ($username == $user1 || $username == $user2) **\n\n**{ **\n\n**print\
+    \ \"$username welcome to Acme Auto.\"; **\n\n**} **\n\n**?> **\n\nTo this:\n\n\
+    **<?php **\n\n**$user = \"Donna\"; **\n\n**$pass = \"acme\"; **\n\n**if ($username\
+    \ == $user && $password == $pass) { **\n\n**print \"Welcome to Acme Auto $username.\"\
+    ; **\n\n**} **\n\n**?> **\n\n![](img/30f0fa1c6cb552c908695ea335a9f268_116_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_116_1.png)"
+  merge: -1
+  pgno: 116
+- img_proc: true
+  md: " \n\nLOGIC & LOOPS \n\n**115**\n\n**4.** \n\nSave the script as **and.php**\
+    \ in the **PHPSCRIPTS** folder. \n\n \n\nHere's what the relevant lines in this\
+    \ script do: \n\n \n\n• **if ($username == $user && $pass == $pass) **\n\nUses\
+    \ the AND operator: \n\n \n\n**&&** \n\n \n\nto compare two conditions. \n\n \n\
+    \nIt’s asking: \n\n \n\nIs the word entered in the textbox named username the\
+    \ \n\nsame as the word assigned to the variable **$user**? \n\n \n\nAND \n\n \n\
+    \nIs the word entered in the textbox named **password** the \n\nsame as the word\
+    \ assigned to the variable **$pass**? \n\n \n\nIf both these things are true,\
+    \ then execute the code in \n\nthe curly braces.\n\n**5.** \n\nUpload **and.php**\
+    \ to the **phpscripts** directory in your Web site. \n\n \n\n**6.** \n\nOpen **phplinks.html**\
+    \ and insert a new link to **and.html**: \n\n \n\n**<p><a **\n\n**href=\"http://www.yourwebsite.com/and.html\"\
+    >18.E**\n\n**nter the username and password.</a></p> **\n\n**7.** \n\nSave **phplinks.html**,\
+    \ then upload it to the home directory in your \n\nWeb site."
+  merge: -1
+  pgno: 117
+- img_proc: true
+  md: " \n\n \n\nLOGIC & LOOPS \n\n**116 **\n\n**8.** \n\nIn the browser, go to: \n\
+    \n \n\n**www.yourwebsite.com/phplinks.html** \n\n \n\n**9.** \n\nClick the **18\\\
+    . Enter the username and password** link. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_118_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_118_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_118_2.png)\n\
+    \n \n\n \n\n**10.** In the User Name box, type: \n\n \n\n**Donna**"
+  merge: -1
+  pgno: 118
+- img_proc: true
+  md: " \n\nLOGIC & LOOPS \n\n**117**\n\n**11.**  In the Password box, type: \n\n\
+    \ \n\n**asdf** \n\n \n\nthen click the \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_119_0.png)\n\
+    \n button. \n\n \n\nThe output should look like this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_119_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_119_2.png)\n\
+    \n \n\n \n\n**12.** View **and.html** in the browser. \n\n \n\nEnter **Donna**\
+    \ as the User Name and **acme** as the Password, \n\nthen click the \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_119_0.png)\n\
+    \n button. \n\n \n\nThe output should look like this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_119_4.png)![](img/30f0fa1c6cb552c908695ea335a9f268_119_5.png)"
+  merge: -1
+  pgno: 119
+- img_proc: true
+  md: " \n\n \n\nLOGIC & LOOPS \n\n**118 **\n\n**Employ looping **\n\n \n\nPrint a\
+    \ list of elements \n\n \n\n**1.** \n\nCreate a new script with this code: \n\n\
+    **<?php **\n\n**$AcmeCars = array(\"Ford\",\"Dodge\",\"Chevy\"); **\n\n**print\
+    \ \"<p>The text array contains:</p>\"; **\n\n**foreach ($AcmeCars as $thisCar){\
+    \ **\n\n**print \"$thisCar<br>\\\\n\"; **\n\n**} **\n\n**?> **\n\n**2.** \n\n\
+    Save the script as **printlist.php** in the **PHPSCRIPTS** folder. \n\n \n\nHere's\
+    \ what the relevant lines in the script do: \n\n• **$AcmeCars = array **\n\n**(\"\
+    Ford\",\"Dodge\",\"Chevy\"); **\n\nCreates the array variable **@AcmeCars** and\
+    \ places the \n\n“Ford”, “Dodge”, and “Chevy” values into the array."
+  merge: -1
+  pgno: 120
+- img_proc: true
+  md: " \n\nLOGIC & LOOPS \n\n**119**\n\n• **foreach ($AcmeCars as $thisCar){ **\n\
+    \n**foreach** tells the Web server to “loop” through the \n\n**$AcmeCars** array,\
+    \ going through each value in the \n\narray, one by one. \n\n \n\n**$thisCar**\
+    \ is a variable: it tells the Web server to pull out \n\neach separate element\
+    \ in the **$AcmeCars** array.\n\n \n\n**3.** \n\nUpload **printlist.php** to the\
+    \ **phpscripts** directory in your Web \n\nsite. \n\n \n\n**4.** \n\nOpen **phplinks.html**\
+    \ and insert a new link to **printlist.php**: \n\n \n\n**<p><a **\n\n**href=\"\
+    http://www.yourwebsite.com/phpscripts/pri**\n\n**ntlist.php\">19. Print a list\
+    \ of **\n\n**elements.</a></p> **\n\n**5.** \n\nSave **phplinks.html**, then upload\
+    \ it to the home directory in your \n\nWeb site. \n\n \n\n**6.** \n\nIn the browser,\
+    \ go to: \n\n \n\n**www.yourwebsite.com/phplinks.html**"
+  merge: -1
+  pgno: 121
+- img_proc: true
+  md: " \n\n \n\nLOGIC & LOOPS \n\n**120 **\n\n**7.** \n\nClick the **19\\. Print\
+    \ a list of elements** link. \n\n \n\nThe output should look like this: \n\n \n\
+    \n![](img/30f0fa1c6cb552c908695ea335a9f268_122_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_122_1.png)"
+  merge: -1
+  pgno: 122
+- img_proc: true
+  md: " \n\nLOGIC & LOOPS \n\n**121**\n\nPrint elements in a table \n\n \n\n**1.**\
+    \ \n\nCreate a new script with this code: \n\n**<html> **\n\n**<head> **\n\n**<title>Table\
+    \ Example</title> **\n\n**</head> **\n\n**<body> **\n\n**<table border=1 bgcolor=yellow>\
+    \ **\n\n**<?php **\n\n**$AcmeCars = array (\"Ford\",\"Dodge\",\"Chevy\"); **\n\
+    \n**$AcmeCarId = array (“K234”,”J987”,”F982”); **\n\n**for($x=0; $x < count($AcmeCars);\
+    \ $x++){ **\n\n**print “<tr><td>$AcmeCarId\\[$x\\]</td>”; **\n\n**print “<td>$AcmeCars\\\
+    [$x\\]</td></tr>\\\\n\"; **\n\n**} **\n\n**?> **\n\n**</table> **\n\n**</body>\
+    \ **\n\n**</html> **"
+  merge: -1
+  pgno: 123
+- img_proc: true
+  md: " \n\n \n\nLOGIC & LOOPS \n\n**122 **\n\n**2.** \n\nSave the script as **tablelist.php**\
+    \ in the **PHPSCRIPTS** folder. \n\n \n\nHere's what the relevant lines in this\
+    \ script do: \n\n• **<table border=1 bgcolor=yellow> **\n\nHTML tag that sets\
+    \ up an HTML table.\n\n• **<?php **\n\nPHP start tag. \n\n• **$AcmeCars = array\
+    \ **\n\n**(\"Ford\",\"Dodge\",\"Chevy\"); **\n\nCreates the array list called\
+    \ **$AcmeCars**. This is a list \n\nof cars. \n\n• **$AcmeCarId = array **\n\n\
+    **(\"K234\",\"J987\",\"F982\"); **\n\nCreates the array list called **$AcmeCarId**.\
+    \ This is a \n\nlist of ID numbers for each of the cars. \n\n• **for($x=0; $x\
+    \ < count($AcmeCars); $x++){ **\n\nThis creates a loop. The variable **$x** starts\
+    \ at 0 and \n\nincreases by 1 (**$x++**) each time it loops. \n\nThe loop will\
+    \ stop when **$x** reaches the **count()** of \n\nthe number of items in the **$AcmeCars**\
+    \ variable. \n\n• **print \"<tr><td>$AcmeCarId\\[$x\\]</td>\"; **\n\nPrints each\
+    \ **$AcmeCarId** item within a table cell each \n\ntime the program loops around."
+  merge: -1
+  pgno: 124
+- img_proc: true
+  md: " \n\nLOGIC & LOOPS \n\n**123**\n\n• **print \"<td>$AcmeCars\\[$x\\]</td></tr>\\\
+    \\n\"; **\n\nPrints each **$AcmeCars** item within a table cell each \n\ntime\
+    \ the program loops around. \n\n• **} **\n\nThis is the closing** }** for the\
+    \ for loop. \n\n• **?> **\n\nPHP end tag.\n\n**3.** \n\nUpload **tablelist.php**\
+    \ to the **phpscripts** directory in your Web \n\nsite. \n\n \n\n**4.** \n\nOpen\
+    \ **phplinks.html** and insert a new link to **tablelist.php**: \n\n \n\n**<p><a\
+    \ **\n\n**href=\"http://www.yourwebsite.com/phpscripts/tab**\n\n**lelist.php\"\
+    >20. Print a list in a **\n\n**table.</a></p> **\n\n**5.** \n\nSave **phplinks.html**,\
+    \ then upload it to the home directory in your \n\nWeb site. \n\n \n\n**6.** \n\
+    \nIn the browser, go to: \n\n \n\n**www.yourwebsite.com/phplinks.html**"
+  merge: -1
+  pgno: 125
+- img_proc: true
+  md: " \n\n \n\nLOGIC & LOOPS \n\n**124 **\n\n**7.** \n\nClick the **20\\. Print\
+    \ a list in a table** link. \n\n \n\nThe output should look like this: \n\n \n\
+    \n![](img/30f0fa1c6cb552c908695ea335a9f268_126_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_126_1.png)"
+  merge: -1
+  pgno: 126
+- img_proc: true
+  md: " \n\nLOGIC & LOOPS \n\n**125**\n\n**Practice: Logic & Loops **\n\n \n\n \n\n\
+    **1.** \n\nCreate a Web page and script, **entry.html** and **entry.php**, that\
+    \ \n\nwork together to password-protect a Web page. \n\n \n\nWrite the script\
+    \ so that IF the proper username/password \n\ncombination is entered, the user\
+    \ is taken to a page at: \n\n \n\n**www.yourwebsite.com/presidents.html** \n\n\
+    \ \n\n**Tip:** Refer to the script used in the If/Else statements task, but \n\
+    \ninstead of printing text if the if condition is fulfilled, have it do \n\nthis:\
+    \ \n\n \n\n**print \"<script>window.location.replace **\n\n**(\\\\\"http://www.yourwebsite.com/presidents.html\\\
+    \\\"**\n\n**)</script>\";** \n\n \n\n ELSE, have **entry.php** print this: \n\n\
+    \ \n\n**Sorry, it didn’t work. Try again.** \n\n \n\nLink the words **Try again**\
+    \ to the page at: \n\n \n\n**www.yourwebsite.com/entry.html** \n\n \n\n**2.**\
+    \ \n\nSave **entry.html** and **entry.php** in the **PRACTICEPHP** folder on \n\
+    \nyour computer. \n\n \n\n**3.** \n\nUpload **entry.html** to the home directory\
+    \ in your Web site, then \n\nupload **entry.php** to the **practicephp **directory\
+    \ in your Web site."
+  merge: -1
+  pgno: 127
+- img_proc: true
+  md: " \n\n \n\nLOGIC & LOOPS \n\n**126 **\n\n**4.** \n\nCreate a page called **presidents.html**,\
+    \ save it in the \n\n**PRACTICEPHP** folder, then upload it to the home directory\
+    \ in \n\nyour Web site. \n\n \n\nThe page should have this code: \n\n \n\n**<h3>Who\
+    \ were our three greatest **\n\n**presidents?</h3> **\n\n**<input type=”text”\
+    \ name=”prez1”> **\n\n**<p> **\n\n**<input type=”text” name=”prez2”> **\n\n**<p>\
+    \ **\n\n**<input type=”text” name=”prez3”>** \n\n \n\n**5.** \n\nAdd a **<form>**\
+    \ tag that specifies the form action as: \n\n \n\n**http://www.yourwebsite.com/phpscripts/president**\n\
+    \n**s.php**"
+  merge: -1
+  pgno: 128
+- img_proc: true
+  md: " \n\nLOGIC & LOOPS \n\n**127**\n\n**6.** \n\nCreate a script called **presidents.php**\
+    \ that: \n\n \n\n\\-Requests the names entered in the input boxes on \n\n**presidents.html**.\
+    \ \n\n \n\n\\-Checks to see if the names “George Washington” or “Abraham \n\n\
+    Lincoln” were input. \n\n \n\n\\-If either name was input, the script prints out\
+    \ all three names in \n\nan HTML table with a gray background: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_129_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_129_1.png)\n\
+    \n \n\n \n\n\\-If neither name was input, it prints: \n\n \n\n**What about George\
+    \ Washington or Abraham Lincoln? **\n\n**Shouldn’t they be in the list?** \n\n\
+    \ \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_129_2.png)![](img/30f0fa1c6cb552c908695ea335a9f268_129_3.png)"
+  merge: -1
+  pgno: 129
+- img_proc: true
+  md: " \n\n \n\nLOGIC & LOOPS \n\n**128 **\n\n**7.** \n\nIn your browser, go to:\
+    \ \n\n \n\n**www.yourwebsite.com/entry.html** \n\n \n\n**8.** \n\nEnter the correct\
+    \ username and password combination, so \n\nyou’re taken to **presidents.html**.\
+    \ \n\n \n\n**9.** \n\nTest the page to make sure **presidents.php** works."
+  merge: -1
+  pgno: 130
+- img_proc: true
+  md: " \n\nWORKING WITH FILES \n\n**129**\n\n**Working With Files **\n\n \n\n \n\n\
+    In this section, you’ll learn how to: \n\n \n\n• **Create a text file **\n\n•\
+    \ **Display files **\n\n• **Append to files **"
+  merge: -1
+  pgno: 131
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH FILES \n\n**130 **\n\n**Create a text file**\n\n \n\n\
+    **1.** \n\nCreate a new Web page with this code: \n\n**<html> **\n\n**<head> **\n\
+    \n**<title>Create Text File</title> **\n\n**</head> **\n\n**<body> **\n\n**<h2>Today's\
+    \ Thought</h2> **\n\n**<form action=” **\n\n**http://www.yourwebsite.com/phpscripts/textwrite**\n\
+    \n**r.php” method=”post”> **\n\n**<input type=\"hidden\" name=\"filename\" **\n\
+    \n**value=\"textthought.txt\"> **\n\n**<textarea name=\"comments\" rows=3 cols=50\
+    \ **\n\n**wrap></textarea> **\n\n**<p><input type=\"submit\" value=\"Create Thought\"\
+    \ **\n\n**name=\"submit\"> **\n\n**</form> **\n\n**</body> **\n\n**</html>**\n\
+    \n \n\n**2.** \n\nSave the page as **textwriter.html** in the **PHPSCRIPTS** folder,\
+    \ \n\nthen upload it to the home directory in your Web site."
+  merge: -1
+  pgno: 132
+- img_proc: true
+  md: " \n\nWORKING WITH FILES \n\n**131**\n\n**3.** \n\nCreate a new script with\
+    \ this code: \n\n**<?php **\n\n**$myfile = fopen ($filename, 'w') or die(\"Can\
+    \ **\n\n**not open file\"); **\n\n**$outputFile = “$comments\\\\n\\\\n”; **\n\n\
+    **fputs($myfile, $outputFile); **\n\n**fclose($myfile); **\n\n**print \"<p>The\
+    \ $filename file is created with **\n\n**the following thought:</p>\"; **\n\n\
+    **print \"<p>$comments</p>\"; **\n\n**print \"<p><a href=\\\\\"textwriter.html\\\
+    \\\">Enter a **\n\n**new thought</a></p>\\\\n\"; **\n\n**print \"<p><a href=\\\
+    \\\"$filename\\\\\">View the **\n\n**$filename text file</a></p>\\\\n\"; **\n\n\
+    **?> **"
+  merge: -1
+  pgno: 133
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH FILES \n\n**132 **\n\n**4.** \n\nSave the file as **textwriter.php**\
+    \ in the **PHPSCRIPTS** folder. \n\n \n\nHere's what the relevant lines in this\
+    \ script do: \n\n \n\n• **$myfile = fopen ($filename, 'w') or **\n\n**die(\"Can\
+    \ not open file\"); **\n\nThe form in **textwriter.html** has a hidden text field\
+    \ \n\nnamed filename. Here the script requests the value \n\nassigned to it in\
+    \ the form—**textthought.txt**, then assigns \n\nthat value to the variable **$myfile**.\
+    \ \n\n \n\nThe ‘**w**’ means the text file **textthough.txt** (**$myfile**) is\
+    \ \n\nopened for writing. \n\n \n\nIf the file does not exist, a new one will\
+    \ be created. If the \n\nfile already exists, it will overwrite the existing file.\
+    \ \n\n \n\nIf there is a problem with the file opening, the process \n\nwill stop\
+    \ (or die) and display the message “Can not open \n\nfile”. \n\n• **$outputFile\
+    \ = “$comments\\\\n\\\\n”; **\n\nThis line adds two “new line” characters (**\\\
+    \\n\\\\n**) to the \n\nend of the comments submitted through the form on \n\n\
+    **textwriter.html**. \n\n \n\nAny new data added to the file **textthought.txt**\
+    \ starts on \n\na new paragraph. This new data is then assigned to the \n\nvariable\
+    \ **$outputFile**."
+  merge: -1
+  pgno: 134
+- img_proc: true
+  md: " \n\nWORKING WITH FILES \n\n**133**\n\n• **fputs($myfile, $outputFile); **\n\
+    \nfputs gets the comments from the form (**$outputFile**), \n\nand puts them in\
+    \ the file associated with the **$myfile** \n\nvariable—**textthought.txt**. \n\
+    \n \n\n• **fclose($myfile); **\n\nThe **fclose** command tells the Web server\
+    \ that you’re \n\ndone using the **$myfile** variable.\n\n**Tip:**When using the\
+    \ **fopen()** command, there are six \n\nways a file can be opened: \n\n \n\n\
+    **r ** Read only. \n\n**r+** Read and write. \n\n**w** Write only. \n\n**w+**\
+    \ Read and over-write. \n\n**a** Append. \n\n**a+** Read and append.\n\n \n\n\
+    **5.** \n\nUpload **textwriter.php** to the **phpscripts** directory in your Web\
+    \ \n\nsite. \n\n \n\n**6.** \n\nOpen **phplinks.html** and insert a new link to\
+    \ **textwriter.html**: \n\n \n\n**<p><a **\n\n**href=\"textwriter.html\">21. Create\
+    \ a text **\n\n**file.</a></p> **\n\n**7.** \n\nSave **phplinks.html**, then upload\
+    \ it to the home directory in your \n\nWeb site."
+  merge: -1
+  pgno: 135
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH FILES \n\n**134 **\n\n**8.** \n\nIn the browser, go\
+    \ to: \n\n \n\n**www.yourwebsite.com/phplinks.html** \n\n \n\n**9.** \n\nClick\
+    \ the **21\\. Create a text file** link. \n\n \n\nThe **textwriter.html** page\
+    \ will appear: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_136_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_136_1.png)![](img/30f0fa1c6cb552c908695ea335a9f268_136_2.png)\n\
+    \n \n\n \n\n**10.** Type some text in the comments area, then click the \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_136_3.png)\n\
+    \n button."
+  merge: -1
+  pgno: 136
+- img_proc: true
+  md: " \n\nWORKING WITH FILES \n\n**135**\n\nThe output should look something like\
+    \ this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_137_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_137_1.png)\n\
+    \n \n\n \n\n**11.** Return to the **textwriter.html** page. \n\n \n\nEnter different\
+    \ text in the comments area, then click the \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_137_2.png)\n\
+    \n button again."
+  merge: -1
+  pgno: 137
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH FILES \n\n**136 **\n\nThe output should be different:\
+    \ \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_138_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_138_1.png)"
+  merge: -1
+  pgno: 138
+- img_proc: true
+  md: " \n\nWORKING WITH FILES \n\n**137**\n\n**Display files **\n\n \n\n**1.** \n\
+    \nCreate a new script with this code: \n\n**<?php **\n\n**$myfile = fopen ('textthought.txt',\
+    \ 'r') or die **\n\n**(\"Can not open file\"); **\n\n**while (!feof($myfile)){\
+    \ **\n\n** $line = fgets($myfile,5000); **\n\n** print \"$line <br>\"; **\n\n\
+    **} **\n\n**fclose($myfile); **\n\n**?> **\n\n \n\n**2.** \n\nSave the file as\
+    \ **textviewer.php** in the **PHPSCRIPTS** folder, then \n\nupload it to the **phpscripts**\
+    \ directory in your Web site. \n\n \n\nHere's what the relevant lines in this\
+    \ script do: \n\n \n\n• **$myfile = fopen ('textthought.txt', 'r') **\n\n**or\
+    \ die (\"Can not open file\"); **\n\nOpens the file **textthought.txt** in read-only\
+    \ mode, and \n\nassigns the text in it to the variable **$myfile**."
+  merge: -1
+  pgno: 139
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH FILES \n\n**138 **\n\n• **while (!feof($myfile)){ **\n\
+    \nThis **while** loop loops through the **$myfile** variable \n\none line at a\
+    \ time until it gets to the end-of-file. \n\n \n\n**!feof** means “not the end\
+    \ of the file.” \n\n \n\nSo, this line means: “Keep looping through each line\
+    \ in \n\nthe **$myfile** file while it has “not” (**!**) reached “the end \n\n\
+    of the file” (**feof**). \n\n \n\nWhen the program reaches the end of the file,\
+    \ it will exit \n\nthe loop.\n\n• **$line = fgets($myfile,5000); **\n\n \n\nThis\
+    \ “gets” the first line of the **$myfile** file and assigns \n\nit to the variable\
+    \ **$line**. \n\n \n\nEach time the while loop comes back to this command, it\
+    \ \n\nwill get the next line, and then the next line, and so on. \n\n \n\nThe\
+    \ **5000** means that each line can be up to 5000 \n\ncharacters long. \n\n \n\
+    \n• **print \"$line <p>\"; **\n\n \n\nPrints the text in each line of **textthought.txt**\
+    \ in a new \n\nparagraph as the script loops through them. \n\n \n\n• **} **\n\
+    \nThis is the end marker for the while loop."
+  merge: -1
+  pgno: 140
+- img_proc: true
+  md: " \n\nWORKING WITH FILES \n\n**139**\n\n• **fclose($myfile); **\n\n \n\nOnce\
+    \ the while loop is finished, **$myfile** (the variable \n\nthat stands for **textthought.txt**)\
+    \ is closed. \n\n \n\n**3.** \n\nOpen **phplinks.html** and insert a new link\
+    \ to **textviewer.php**: \n\n \n\n**<p><a **\n\n**href=” **\n\n**http://www.yourwebsite.com/phpscripts/textviewe**\n\
+    \n**r.php”>22. Display a text file.</a></p> **\n\n**4.** \n\nSave **phplinks.html**,\
+    \ then upload it to the home directory in your \n\nWeb site. \n\n \n\n**5.** \n\
+    \nIn the browser, go to: \n\n \n\n**www.yourwebsite.com/phplinks.html** \n\n \n\
+    \n**6.** \n\nClick the **22\\. Display a text file** link. \n\n \n\nThe output\
+    \ should look like this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_141_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_141_1.png)"
+  merge: -1
+  pgno: 141
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH FILES \n\n**140 **\n\n**Append to files **\n\n \n\n\
+    **1.** \n\nCreate a new script with this code: \n\n \n\n**<html> **\n\n**<head>\
+    \ **\n\n**<title>Append to files</title> **\n\n**</head> **\n\n**<body> **\n\n\
+    **<h2>Add to Today's Thought</h2> **\n\n**<p><b>Today's Thought is ...</b></p>\
+    \ **\n\n**<?php **\n\n**$myfile = fopen ('textthought.txt', 'r') or die **\n\n\
+    **(\"Can not open file\"); **\n\n**while (!feof($myfile)){ **\n\n** $line = fgets($myfile,4096);\
+    \ **\n\n** print \"$line <br>\"; **\n\n**} **\n\n**fclose($myfile); **\n\n**?>\
+    \ **\n\n**<form action=\"textappender.php\" method=\"post\"> **\n\n**<input type=\"\
+    hidden\" name=\"filename\" **\n\n**value=\"textthought.txt\"> **\n\n**<b>Write\
+    \ what you want to add here ... </b><br> **\n\n**<textarea name=\"comments\" rows=3\
+    \ cols=50 **\n\n**wrap></textarea> **\n\n**<br><input type=\"submit\" value=\"\
+    Update **\n\n**Thought\"> **"
+  merge: -1
+  pgno: 142
+- img_proc: true
+  md: " \n\nWORKING WITH FILES \n\n**141**\n\n**</form> **\n\n**</body> **\n\n**</html>\
+    \ **\n\n**2.** \n\nSave the script as **textappenderform.php** in the **PHPSCRIPTS\
+    \ **\n\nfolder, then upload it to the **phpscripts **directory in your Web \n\n\
+    site. \n\n \n\nThis script combines a page (**textwriter.html**) and a script\
+    \ \n\n(**textviewer.php**) \n\n \n\n**<?php **\n\n**$myfile = fopen ('textthought.txt',\
+    \ 'r') or die **\n\n**(\"Can not open file\"); **\n\n**while (!feof($myfile)){\
+    \ **\n\n** $line = fgets($myfile,4096); **\n\n** print \"$line <br>\"; **\n\n\
+    **} **\n\n**fclose($myfile); **\n\n**?> **\n\n \n\ninto one script. \n\n \n\n\
+    It displays the text in the **texthtought.txt** file, and creates a form \n\n\
+    that allows you to add new text to the end of it. \n\n \n\nThe one change is that\
+    \ the form now calls a new script called \n\ntextappender.php: \n\n \n\n**<form\
+    \ action=\"textappender.php\" method=\"post\"> **"
+  merge: -1
+  pgno: 143
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH FILES \n\n**142 **\n\n**3.** \n\nCreate a new script\
+    \ with this code: \n\n**<?php **\n\n**$myfile = fopen ($filename, 'a') or die(\"\
+    Can **\n\n**not open file\"); **\n\n**$outputFile = \"$comments\\\\n\"; **\n\n\
+    **fputs($myfile,$outputFile); **\n\n**fclose($myfile); **\n\n**print \"<p>The\
+    \ $filename file is updated!</p>\"; **\n\n**print \"<a href=\\\\\"$filename\\\\\
+    \">View the $filename **\n\n**text file</a>\\\\n\"; **\n\n**?> **\n\n**4.** \n\
+    \nSave the file as **textappender.php** in the **PHPSCRIPTS** folder, \n\nthen\
+    \ upload it to the **phpscripts** directory in your Web site. \n\n \n\nHere's\
+    \ what the relevant lines in this script do: \n\n• **$myfile = fopen ($filename,\
+    \ 'a') or **\n\n**die(\"Can not open file\"); **\n\nThe ‘a’ parameter is used\
+    \ with the **fopen()** command. \n\n \n\nThis tells the Web server to append new\
+    \ text to the end \n\nof the existing file, without overwriting the text already\
+    \ \n\nthere."
+  merge: -1
+  pgno: 144
+- img_proc: true
+  md: " \n\nWORKING WITH FILES \n\n**143**\n\n**5.** \n\nOpen **phplinks.html** and\
+    \ insert a new link to \n\n**textappenderform.php**: \n\n \n\n**<p><a **\n\n**href=”\
+    \ **\n\n**http://www.yourwebsite.com/phpscripts/textappen**\n\n**derform.php”>23.\
+    \ Append new data to a text **\n\n**file.</a></p> **\n\n**6.** \n\nSave **phplinks.html**,\
+    \ then upload it to the home directory in your \n\nWeb site. \n\n \n\n**7.** \n\
+    \nIn the browser, go to: \n\n \n\n**www.yourwebsite.com/phplinks.html** \n\n \n\
+    \n**8.** \n\nClick the **23\\. Append new data to a text file** link. \n\n \n\n\
+    The output should look like this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_145_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_145_1.png)"
+  merge: -1
+  pgno: 145
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH FILES \n\n**144 **\n\n**9.** \n\nIn its comments box,\
+    \ type: \n\n \n\nMoney doesn’t grow on trees. \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_146_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_146_1.png)\n\
+    \n \n\n**10.** \n\n \n\n**11.** Click the  \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_146_2.png)\n\
+    \n button. \n\n \n\nThe output should look like this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_146_3.png)![](img/30f0fa1c6cb552c908695ea335a9f268_146_4.png)"
+  merge: -1
+  pgno: 146
+- img_proc: true
+  md: " \n\nWORKING WITH FILES \n\n**145**\n\n**12.** In the browser, go to: \n\n\
+    \ \n\n**www.yourwebsite.com/phplinks.html** \n\n \n\n**13.** Click the **22\\\
+    . Display a text file** link. \n\n \n\nThe new thought should appear below the\
+    \ first."
+  merge: -1
+  pgno: 147
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH FILES \n\n**146 **\n\n**Practice: Working With Files\
+    \ **\n\n \n\n \n\n**1.** \n\nCreate a Web page and script, **quotes.html** and\
+    \ **quotes.php**, \n\nthat work together to create a new text file named quotes.txt.\
+    \  \n\n \n\nMake sure that **quotes.php** generates links that allow you to \n\
+    \nchange and view **quotes.txt**. \n\n \n\n**2.** \n\nSave **quotes.html** and\
+    \ **quotes.php** in the **PRACTICEPHP** folder \n\non your computer. \n\n \n\n\
+    **3.** \n\nUpload **quotes.html** to the home directory in your Web site, then\
+    \ \n\nupload **quotes.php** to the **practicephp** directory in your Web \n\n\
+    site. \n\n \n\n**4.** \n\nUsing **quotes.html**, enter and submit this quote:\
+    \ \n\n \n\n**I cannot tell a lie.** \n\n \n\n**5.** \n\nClick the link to view\
+    \ quotes.txt. \n\n \n\nIt should look like this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_148_0.png)"
+  merge: -1
+  pgno: 148
+- img_proc: true
+  md: " \n\nWORKING WITH FILES \n\n**147**\n\n**6.** \n\nEnter and submit another\
+    \ quote: \n\n \n\n**Few men have virtue to withstand the highest bidder.** \n\n\
+    \ \n\n**7.** \n\nClick the link to view **quotes.txt**. \n\n \n\nIt should look\
+    \ like this: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_149_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_149_1.png)\n\
+    \n \n\n \n\n**8.** \n\nCreate a Web page and script, **append.html** and **append.php**,\
+    \ \n\nthat work together to allow you to add more than one quote to \n\n**quotes.txt**.\
+    \  \n\n \n\n**9.** \n\nSave **append.html** and **append.php** in the **PRACTICEPHP\
+    \ **\n\nfolder on your computer. \n\n \n\n**10.** Upload **append.html** to the\
+    \ home directory in your Web site, \n\nthen upload **append.php** to the **practicephp**\
+    \ directory in your \n\nWeb site. \n\n \n\n**11.** Using **append.html**, enter\
+    \ and submit this quote: \n\n \n\n**I cannot tell a lie.**"
+  merge: -1
+  pgno: 149
+- img_proc: true
+  md: " \n\n \n\nWORKING WITH FILES \n\n**148 **\n\n**12.** Create a script that allows\
+    \ you to view **quotes.txt**. \n\n \n\nIt should show both quotes: \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_150_0.png)![](img/30f0fa1c6cb552c908695ea335a9f268_150_1.png)"
+  merge: -1
+  pgno: 150
+- img_proc: true
+  md: " \n\nMODIFYING SCRIPTS \n\n**149**\n\n**Modifying scripts **\n\n \n\n \n\n\
+    \ \n\n**<?php **\n\n**if( empty($name) || empty($email) ){ **\n\n**print \"<html><head><title>Name\
+    \ and Email **\n\n**Required</title></head>\"; **\n\n**print \"<body><h3>Please\
+    \ enter your name and **\n\n**email.</h3>\"; **\n\n**print \"<h3><a href=\\\\\"\
+    mailform.html\\\\\">Click here **\n\n**to **\n\n**return to form.</a></h3>\";\
+    \ **\n\n**print \"</body></html>\"; **\n\n**exit; **\n\n**} **\n\nChecks the referring\
+    \ \n\nform for empty form \n\ninputs. Prints an \n\nerror message if any \n\n\
+    are left empty. \n\n**Modifying downloaded scripts**\n\nJust about any basic script\
+    \ you’d need has already been written by \n\nsomeone else. Do a Web search on\
+    \ “php scripts” and you’ll find many \n\nsites with good, useful scripts. Most\
+    \ are either free or inexpensive to \n\nuse. \n\n \n\nNow that you’re familiar\
+    \ with PHP, you can download an existing script \n\nthat generally does what you\
+    \ want, then modify it to meet your specific \n\nneeds. \n\n \n\nBelow is an example\
+    \ of a script downloaded from a Web site. It takes \n\nform data from a Web page\
+    \ and sends it to an email address. Modify a \n\nfew sections, and you can use\
+    \ it on your Web site."
+  merge: -1
+  pgno: 151
+- img_proc: true
+  md: " \n\n \n\nMODIFYING SCRIPTS \n\n**150 **\n\n**if ($\\_SERVER\\['REQUEST\\_METHOD'\\\
+    ] != \"POST\") { **\n\n**exit; **\n\n**} **\n\n**$headers .= \"From: $name <$email>\\\
+    \\n\"; **\n\n**$headers .= \"Reply-To: <$email>\\\\n\"; **\n\n**$headers .= \"\
+    Content-Type: text/plain; **\n\n**charset=iso-8859-1\\\\n\"; **\n\n**$recipient\
+    \ = \"you@yourwebsite.com\"; **\n\n**$subject = \"Contact From Your Website\"\
+    ; **\n\n**$msg = wordwrap( $msg, 1024 ); **\n\n**//send the message using the\
+    \ **\n\n**//server’s mail() function **\n\n**mail($recipient, $subject, **\n\n\
+    **stripslashes($msg), $headers); **\n\n**?> **\n\n**<html> **\n\n**<head> **\n\
+    \n**<title>Mail Sent</title> **\n\n**</head> **\n\n**<body> **\n\n**<h2>Thank\
+    \ you <? echo \"$name\"; ?>!</h2> **\n\n**<p><strong>Your email has been sent.</strong>\
+    \ **\n\n**</body> **\n\n**</html> **\n\nTakes sender’s name \n\nand email address\
+    \ from \n\nthe referring form, and \n\nplugs them into the \n\n“from” and “reply\
+    \ to” \n\nheaders of the email \n\nsent to you. \n\n \n\nThe “recipient” and \n\
+    \n“subject” of this email \n\nare specified by you. \n\nThe Web page that appears\
+    \ \n\non the sender’s screen after \n\nthe email is sent. \n\nPrevents spammers\
+    \ \n\nfrom hijacking the \n\nscript, and sending \n\nmessages fromthe \n\nscript’s\
+    \ URL instead of \n\nits referring form."
+  merge: -1
+  pgno: 152
+- img_proc: true
+  md: " \n\n \n\n \n\n \n\n**Where to Get Visibooks **\n\n \n\n \n\nIf you liked using\
+    \ this book, and would like to use more like it, visit: \n\n \n\n**www.visibooks.com\
+    \ **\n\n \n\n \n\nVisibooks offers more than 30 titles on subjects such as: \n\
+    \n \n\n• **Computer Basics **\n\n• **Microsoft Office **\n\n• **Desktop Linux\
+    \ **\n\n• **OpenOffice.org **\n\n• **Web Site Layout **\n\n• **Web Graphics **\n\
+    \n• **Web Programming **\n\nVisibooks: the simplest way to learn \n\nand teach\
+    \ computer subjects. \n\n \n\n \n\n![](img/30f0fa1c6cb552c908695ea335a9f268_153_0.png)\n\
+    \n \n\n \n\nwww.visibooks.com"
+  merge: -1
+  pgno: 153
