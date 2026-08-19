@@ -1,0 +1,1665 @@
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_0_0.png)
+
+
+    **Topalian**
+
+
+    **JavaScript**
+
+
+    **Robot AI**
+
+
+    **by**
+
+
+    **Christopher Andrew Topalian**
+
+
+    All Rights Reserved
+
+
+    Copyright 2000-2023'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_1_0.png)
+
+
+    **Dedicated**
+
+
+    **to**
+
+
+    **God****the****Father**'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_2_0.png)'
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_3_0.png)'
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: 'Hi
+
+    Howdy Buddy
+
+    How are you?
+
+    Having fun and you?
+
+
+    excellent
+
+
+    Hi
+
+    Howdy Buddy
+
+    How are you?
+
+    Having fun and you?
+
+    excellent
+
+    Nice'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: 'Hi
+
+    Howdy Buddy
+
+    How are you?
+
+    Having fun and you?
+
+    excellent
+
+    Nice
+
+
+    Hi
+
+    Howdy Buddy
+
+    How are you?
+
+    Having fun and you?
+
+    excellent
+
+    Nice
+
+    What is the weather like?
+
+    It''s a beautiful day.'
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_6_0.png)
+
+
+    ![](img/3e986e3c8d5087a94f9df94cc12e8768_6_1.png)'
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_7_0.png)'
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: 'Earth is a nice place
+
+    Do you have anymore information on it?
+
+
+    Well, it has land and it also has water
+
+
+    Earth is a nice place
+
+    Do you have anymore information on it?
+
+    Well, it has land and it also has water
+
+    Interesting, please go on.'
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: 'Earth is a nice place
+
+    Do you have anymore information on it?
+
+    Well, it has land and it also has water
+
+    Interesting, please go on.
+
+
+    Earth is a fun place to visit
+
+
+    Earth is a nice place
+
+    Do you have anymore information on it?
+
+    Well, it has land and it also has water
+
+    Interesting, please go on.
+
+    Earth is a fun place to visit
+
+    That''s interesting.'
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: 'Christopher Topalian
+
+
+    ![](img/3e986e3c8d5087a94f9df94cc12e8768_10_0.png)
+
+
+    200+200
+
+
+    Send
+
+
+    200+200
+
+    400
+
+
+    Send
+
+
+    College of Scripting Music & Science
+
+
+    CollegeOfScripting.weebly.com'
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: 'Christopher Topalian
+
+
+    ```
+
+    (16*4) + (400/16) * 750
+
+    ```
+
+
+    Send
+
+
+    (16*4) + (400/16) * 750
+
+    18814
+
+
+    Send
+
+
+    College of Scripting Music & Science
+
+
+    CollegeOfScripting.weebly.com'
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_12_0.png)
+
+
+    **<!-- Dedicated to God the Father -->**
+
+
+    **<!-- All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2023 -->**
+
+
+    **<!-- https://github.com/ChristopherTopalian --**
+
+
+    **\>**
+
+
+    **<!-- **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n -->**
+
+
+    **<!-- Topalian\_JavaScript\_Robot\_AI.html-->**
+
+
+    **<!-- Version 001 -->**
+
+
+    **<****html****\>**
+
+
+    **<****head****\>**'
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_13_0.png)
+
+
+    **<****title****\>**** Topalian JavaScript Robot AI ****</****title****\>**
+
+
+    **<****link****rel****\=****''****stylesheet****''****href****\=**
+
+
+    **''****css/style001.css****''>**
+
+
+    **<****script****src****\=****''****js/utility.js****''></****script****\>**
+
+
+    **<****script****src****\=****''****data/responses.js****''></****script****\>**
+
+
+    **<****script****src****\=**
+
+
+    **''****data/randomResponses.js****''></****script****\>**
+
+
+    **<****script****\>**
+
+
+    **function****calculate****(****input****)**
+
+
+    **{**
+
+
+    **try**
+
+
+    **{**'
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_14_0.png)
+
+
+    **return****eval****(****input****)****;**
+
+
+    **}**
+
+
+    **catch****(****error****)**
+
+
+    **{**
+
+
+    **return****null****;**
+
+
+    **}**
+
+
+    **}**
+
+
+    **function****createRobot****()**
+
+
+    **{**
+
+
+    **let****context****\=****null****;**
+
+
+    **let****mainDiv****\=****ce****(****''****div****''****)****;**
+
+
+    **mainDiv****.****id****\=****''****mainDiv****'';**
+
+
+    **mainDiv****.****className****\=****''****mainDiv****'';**
+
+
+    **document****.****body****.****append****(****mainDiv****)****;**
+
+
+    **//-//**'
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_15_0.png)
+
+
+    **let****chatBox****\=****ce****(****''****div****''****)****;**
+
+
+    **chatBox****.****id****\=****''****chatBox****'';**
+
+
+    **chatBox****.****innerHTML****\=****'''';**
+
+
+    **chatBox****.****className****\=****''****chatBox****'';**
+
+
+    **mainDiv****.****append****(****chatBox****)****;**
+
+
+    **//-//**
+
+
+    **let****lineBreakUnderOutput****\=****ce****(****''****hr****''****)****;**
+
+
+    **mainDiv****.****append****(****lineBreakUnderOutput****)****;**
+
+
+    **//-//**
+
+
+    **let****userInput****\=****ce****(****''****input****''****)****;**
+
+
+    **userInput****.****id****\=****''****userInput****'';**
+
+
+    **userInput****.****className****\=****''****userInput****'';**
+
+
+    **userInput****.****style****.****type****\=****''****text****'';**'
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_16_0.png)
+
+
+    **userInput****.****style****.****placeholder****\=****''****Type Words **
+
+
+    **Here****'';**
+
+
+    **mainDiv****.****append****(****userInput****)****;**
+
+
+    **//-//**
+
+
+    **let****sendButton****\=****ce****(****''****button****''****)****;**
+
+
+    **sendButton****.****innerHTML****\=****''****Send****'';**
+
+
+    **sendButton****.****id****\=****''****sendButton****'';**
+
+
+    **sendButton****.****className****\=****''****sendButton****'';**
+
+
+    **mainDiv****.****append****(****sendButton****)****;**
+
+
+    **//-//**
+
+
+    **// Enter button activates a click on send **
+
+
+    **button**
+
+
+    **userInput****.****onkeydown****\=****function****(****event****)**
+
+
+    **{**'
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_17_0.png)
+
+
+    **if**** (****event****.****key**** === ****''****Enter****''****)**
+
+
+    **{**
+
+
+    **// prevent default Enter key behavior**
+
+
+    **event****.****preventDefault****()****;**
+
+
+    **// trigger a click on the send button **
+
+
+    **sendButton****.****click****()****;**
+
+
+    **// color send button border aqua**
+
+
+    **ge****(****''****sendButton****''****)****.****style****.****borderColor****\=**
+
+
+    **''****rgb(0, 255, 255)****'';**
+
+
+    **// color send button font color aqua**
+
+
+    **ge****(****''****sendButton****''****)****.****style****.****color****\=****''****rgb(0,
+    **
+
+
+    **255, 255)****'';**
+
+
+    **// after 275 milliseconds**
+
+
+    **setTimeout****(****function****()**'
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_18_0.png)
+
+
+    **{**
+
+
+    **// default border color of send **
+
+
+    **button**
+
+
+    **ge****(****''****sendButton****''****)****.****style****.****borderColor****\=**
+
+
+    **''****rgb(255, 255, 255)****'';**
+
+
+    **// default font color of send button**
+
+
+    **ge****(****''****sendButton****''****)****.****style****.****color****\=**
+
+
+    **''****rgb(255, 255, 255)****'';**
+
+
+    **},****275****)****;**
+
+
+    **}**
+
+
+    **};**
+
+
+    **sendButton****.****onclick****\=****function****()**
+
+
+    **{**
+
+
+    **// display what the person typed in **
+
+
+    **chatBox**'
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_19_0.png)
+
+
+    **ge****(****''****chatBox****''****)****.****innerHTML****+=****\`****<span style
+    **
+
+
+    **\= ''color: rgb(255, 255, 255);''>****$**
+
+
+    **{****ge****(****''****userInput****''****)****.****value****}****</span><br>****\`;**
+
+
+    **let****userQuestion****\=****userInput****.****value****.****trim****()****;**
+
+
+    **if**** (****userQuestion****)**
+
+
+    **{**
+
+
+    **let****responseObj****\=**
+
+
+    **responses****.****find****(****function****(****obj****)**
+
+
+    **{**
+
+
+    **return**
+
+
+    **obj****.****keywords****.****some****(****function****(****keyword****)**
+
+
+    **{**
+
+
+    **// lowercase and remove **
+
+
+    **punctuation**'
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_20_0.png)
+
+
+    **let****cleanInput****\=**
+
+
+    **userQuestion****.****toLowerCase****()****.****replace****(****/****\[^****\\w\\**
+
+
+    **s****\]****/****g****,****''''****)****;**
+
+
+    **let****cleanKeyword****\=**
+
+
+    **keyword****.****toLowerCase****()****;**
+
+
+    **// check for exact match of **
+
+
+    **cleaned input and cleaned keyword**
+
+
+    **return****cleanInput**** === **
+
+
+    **cleanKeyword****;**
+
+
+    **}****)****;**
+
+
+    **}****)****;**
+
+
+    **if**** (****responseObj****)**
+
+
+    **{**'
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_21_0.png)
+
+
+    **let****randomIndex****\=**
+
+
+    **Math****.****floor****(****Math****.****random****() \* **
+
+
+    **responseObj****.****responses****.****length****)****;**
+
+
+    **ge****(****''****chatBox****''****)****.****innerHTML****+=****\`****<span **
+
+
+    **style = ''color: aqua;''>****$**
+
+
+    **{****responseObj****.****responses****\[****randomIndex****\]****}****</spa**
+
+
+    **n><br>****\`;**
+
+
+    **if**
+
+
+    **(****responseObj****.****keywords****.****indexOf****(****''****bye****''****)
+    !== -****1****)**
+
+
+    **{**
+
+
+    **context****\=****null****;**
+
+
+    **ge****(****''****chatBox****''****)****.****scrollTop****\=**
+
+
+    **ge****(****''****chatBox****''****)****.****scrollHeight****;**
+
+
+    **}**
+
+
+    **else**'
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_22_0.png)
+
+
+    **{**
+
+
+    **context****\=****responseObj****.****keywords****;**
+
+
+    **ge****(****''****chatBox****''****)****.****scrollTop****\=**
+
+
+    **ge****(****''****chatBox****''****)****.****scrollHeight****;**
+
+
+    **}**
+
+
+    **}**
+
+
+    **else**
+
+
+    **{**
+
+
+    **let****result****\=****calculate****(****userQuestion****)****;**
+
+
+    **if**** (****result**** !== ****null****)**
+
+
+    **{**
+
+
+    **ge****(****''****chatBox****''****)****.****innerHTML****+=**
+
+
+    **\`****<span style = ''color: aqua;''>****$**
+
+
+    **{****result****}****</span><br>****\`;**'
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_23_0.png)
+
+
+    **ge****(****''****chatBox****''****)****.****scrollTop****\=**
+
+
+    **ge****(****''****chatBox****''****)****.****scrollHeight****;**
+
+
+    **}**
+
+
+    **else**
+
+
+    **{**
+
+
+    **let****randomIndex****\=**
+
+
+    **Math****.****floor****(****Math****.****random****() \* **
+
+
+    **randomResponses****.****length****)****;**
+
+
+    **ge****(****''****chatBox****''****)****.****innerHTML****+=**
+
+
+    **\`****<span style = ''color: aqua;''>****$**
+
+
+    **{****randomResponses****\[****randomIndex****\]****}****</span><b**
+
+
+    **r>****\`;**
+
+
+    **ge****(****''****chatBox****''****)****.****scrollTop****\=**
+
+
+    **ge****(****''****chatBox****''****)****.****scrollHeight****;**
+
+
+    **}**
+
+
+    **}**'
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_24_0.png)
+
+
+    **userInput****.****value****\=****'''';**
+
+
+    **}**
+
+
+    **};**
+
+
+    **}**
+
+
+    **</****script****\>**
+
+
+    **</****head****\>**
+
+
+    **<****body****onload****\=****''****createRobot****()****;''>**
+
+
+    **</****body****\>**
+
+
+    **</****html****\>**'
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_25_0.png)
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2023**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// utility.js**
+
+
+    **function****ge****(****whichId****)**
+
+
+    **{**
+
+
+    **return****document****.****getElementById****(****whichId****)****;**
+
+
+    **}**'
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_26_0.png)
+
+
+    **function****ce****(****whichType****)**
+
+
+    **{**
+
+
+    **return**
+
+
+    **document****.****createElement****(****whichType****)****;**
+
+
+    **}**'
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_27_0.png)
+
+
+    **/\* Dedicated to God the Father \*/**
+
+
+    **/\* All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2023 \*/**
+
+
+    **/\* https://github.com/ChristopherTopalian \*/**
+
+
+    **/\* **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n \*/**
+
+
+    **/\* style001.css \*/**
+
+
+    **body**
+
+
+    **{**
+
+
+    **background-color****:****rgb****(****40****,****40****,****40****);**
+
+
+    **color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **}**'
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_28_0.png)
+
+
+    **.****mainDiv**
+
+
+    **{**
+
+
+    **position****:****fixed****;**
+
+
+    **top****:****0px****;**
+
+
+    **left****:****0px****;**
+
+
+    **width****:****400px****;**
+
+
+    **padding****:****5px****;**
+
+
+    **margin****:****20px****;**
+
+
+    **border-radius****:****8px****;**
+
+
+    **z-index****:****10000****;**
+
+
+    **background-color****:****rgb****(****0****,****0****,****0****);**
+
+
+    **color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **}**
+
+
+    **.****userInput**
+
+
+    **{**
+
+
+    **width****:****340px****;**'
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_29_0.png)
+
+
+    **padding-left****:****10px****;**
+
+
+    **padding-right****:****10px****;**
+
+
+    **padding-top****:****4px****;**
+
+
+    **padding-bottom****:****4px****;**
+
+
+    **border-radius****:****8px****;**
+
+
+    **background-color****:****rgb****(****0****,****0****,****0****);**
+
+
+    **color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **}**
+
+
+    **.****robotTextStyle**
+
+
+    **{**
+
+
+    **color****:****rgb****(****255****,****135****,****255****);**
+
+
+    **}**
+
+
+    **.****sendButton**
+
+
+    **{**
+
+
+    **margin-left****:****5px****;**
+
+
+    **border-radius****:****8px****;**'
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_30_0.png)
+
+
+    **background-color****:****rgb****(****0****,****0****,****0****);**
+
+
+    **color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **}**
+
+
+    **.****sendButton****:****hover**
+
+
+    **{**
+
+
+    **border-color****:****aqua****;**
+
+
+    **}**
+
+
+    **.****sendButton****:****active**
+
+
+    **{**
+
+
+    **color****:****rgb****(****0****,****255****,****255****);**
+
+
+    **}**
+
+
+    **.****chatBox**
+
+
+    **{**
+
+
+    **height****:****200px****;**
+
+
+    **padding-left****:****10px****;**'
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_31_0.png)
+
+
+    **padding-right****:****10px****;**
+
+
+    **padding-top****:****5px****;**
+
+
+    **padding-bottom****:****5px****;**
+
+
+    **background-color****:****black****;**
+
+
+    **overflow-y****:****scroll****;**
+
+
+    **}**'
+  merge: -1
+  pgno: 31
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_32_0.png)
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2023**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// responses.js**
+
+
+    **// if keyword is found, use these responses**
+
+
+    **let****responses****\=**
+
+
+    **\[**
+
+
+    **{**
+
+
+    **keywords****:**** \[**'
+  merge: -1
+  pgno: 32
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_33_0.png)
+
+
+    **\`****hi****\`,**
+
+
+    **\`****howdy****\`,**
+
+
+    **\`****hey****\`,**
+
+
+    **\`****holla****\`,**
+
+
+    **\`****good evening****\`,**
+
+
+    **\`****good morning****\`,**
+
+
+    **\`****greetings****\`,**
+
+
+    **\`****yo****\`,**
+
+
+    ** \]****,**
+
+
+    **responses****:**** \[**
+
+
+    **\`****Howdy Buddy****\`,**
+
+
+    **\`****Hi Friend****\`,**
+
+
+    **\`****Hi there****\`,**
+
+
+    **\`****Greetings Friend****\`,**
+
+
+    **\`****Good day****\`,**
+
+
+    **\`****Bonjour****\`**
+
+
+    ** \]**'
+  merge: -1
+  pgno: 33
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_34_0.png)
+
+
+    **},**
+
+
+    **{**
+
+
+    **keywords****:**** \[**
+
+
+    **\`****what is the weather like****\`,**
+
+
+    **\`****what is the forecast****\`,**
+
+
+    **\`****is it going to be sunny****\`,**
+
+
+    ** \]****,**
+
+
+    **responses****:**** \[**
+
+
+    **\`****It''s a beautiful day.****\`,**
+
+
+    **\`****The weather is very nice.****\`,**
+
+
+    **\`****It''s sunny and warm.****\`**
+
+
+    ** \]**
+
+
+    **},**
+
+
+    **{**
+
+
+    **keywords****:**** \[**
+
+
+    **\`****how are you****\`,**'
+  merge: -1
+  pgno: 34
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_35_0.png)
+
+
+    **\`****what''s up****\`,**
+
+
+    **\`****what are you up to?****\`**
+
+
+    ** \]****,**
+
+
+    **responses****:**** \[**
+
+
+    **\`****I''m doing good, you?****\`,**
+
+
+    **\`****Having fun and you?****\`,**
+
+
+    **\`****I''m good, how about you?****\`**
+
+
+    ** \]**
+
+
+    **},**
+
+
+    **{**
+
+
+    **keywords****:**** \[**
+
+
+    **\`****excellent****\`,**
+
+
+    **\`****very good****\`,**
+
+
+    **\`****doing good****\`**
+
+
+    ** \]****,**
+
+
+    **responses****:**** \[**'
+  merge: -1
+  pgno: 35
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_36_0.png)
+
+
+    **\`****Nice****\`,**
+
+
+    **\`****That''s nice****\`,**
+
+
+    **\`****Very good****\`,**
+
+
+    **\`****Very Excellent****\`**
+
+
+    ** \]**
+
+
+    **},**
+
+
+    **{**
+
+
+    **keywords****:**
+
+
+    ** \[**
+
+
+    **\`****bye****\`,**
+
+
+    **\`****goodbye****\`,**
+
+
+    **\`****take care****\`**
+
+
+    ** \]****,**
+
+
+    **responses****:**
+
+
+    ** \[**
+
+
+    **\`****Bye. Talk to you soon.****\`,**
+
+
+    **\`****Goodbye****\`,**'
+  merge: -1
+  pgno: 36
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_37_0.png)
+
+
+    **\`****Have fun****\`**
+
+
+    ** \]**
+
+
+    **},**
+
+
+    **{**
+
+
+    **keywords****:**
+
+
+    ** \[**
+
+
+    **\`****what are your interests****\`,**
+
+
+    **\`****what do you want to do as a career****\`,**
+
+
+    **\`****what is your current job goal****\`**
+
+
+    ** \]****,**
+
+
+    **responses****:**
+
+
+    ** \[**
+
+
+    **\`****Computer Science is fun.****\`,**
+
+
+    **\`****Programming is lots of fun.****\`,**
+
+
+    **\`****I like programming a lot.****\`**
+
+
+    ** \]**
+
+
+    **}**'
+  merge: -1
+  pgno: 37
+- img_proc: true
+  md: '```
+
+    ];
+
+    ```'
+  merge: -1
+  pgno: 38
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_39_0.png)
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2023**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// randomResponses.js**
+
+
+    **// if no keywords are found, use these **
+
+
+    **responses**
+
+
+    **let****randomResponses****\=**
+
+
+    **\[**
+
+
+    **\`****That''s interesting.****\`,**'
+  merge: -1
+  pgno: 39
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_40_0.png)
+
+
+    **\`****Would you tell me more?****\`,**
+
+
+    **\`****Hmm, tell me more about that.****\`,**
+
+
+    **\`****Would you elaborate?****\`,**
+
+
+    **\`****Interesting, please go on.****\`,**
+
+
+    **\`****What else can you tell me about it?****\`,**
+
+
+    **\`****Do you have anymore information on it?****\`,**
+
+
+    **\`****Say again?****\`,**
+
+
+    **\`****Fascinating! Tell me more.****\`,**
+
+
+    **\]****;**'
+  merge: -1
+  pgno: 40
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_41_0.png)
+
+
+    **True Artificial Intelligence System**
+
+
+    **Tautology**
+
+
+    **1111**
+
+
+    **Contra-**
+
+
+    **\-diction**
+
+
+    **0000**
+
+
+    **XOR**
+
+
+    **0110**
+
+
+    **XNOR**
+
+
+    **1001**
+
+
+    **AND**
+
+
+    **0001**
+
+
+    **NAND**
+
+
+    **1110**
+
+
+    **OR**
+
+
+    **0111**
+
+
+    **NOR**
+
+
+    **1000**
+
+
+    **MI**
+
+
+    **1101**
+
+
+    **MNI**
+
+
+    **0010**
+
+
+    **LP**
+
+
+    **0011**
+
+
+    **LC**
+
+
+    **1100**
+
+
+    **RP**
+
+
+    **0101**
+
+
+    **RC**
+
+
+    **1010**
+
+
+    **CI**
+
+
+    **1011**
+
+
+    **CNI**
+
+
+    **0100**
+
+
+    **16-Gon**'
+  merge: -1
+  pgno: 41
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_42_0.png)
+
+
+    **For More Tutorials:**
+
+
+    **CollegeOfScripting.weebly.com**
+
+
+    **CollegeOfScripting.wordpress.com**
+
+
+    **Youtube.com/ScriptingCollege**
+
+
+    **Twitter.com/CollegeOfScript**
+
+
+    **GitHub.com/ChristopherTopalian**
+
+
+    **GitHub.com/ChristopherAndrewTopalian**
+
+
+    **Sites.google.com/view/CollegeOfScripting**'
+  merge: -1
+  pgno: 42
+- img_proc: true
+  md: '![](img/3e986e3c8d5087a94f9df94cc12e8768_43_0.png)
+
+
+    **Dedicated to God the Father**
+
+
+    **This book is created by the**
+
+
+    **College of Scripting Music & Science.**
+
+
+    **Always remember, that each time you write a script **
+
+
+    **with a pencil and paper, it becomes imprinted so **
+
+
+    **deeply in memory that the material and methods are**
+
+
+    **learned extremely well.**
+
+
+    **When you Type the scripts, the same is true. The **
+
+
+    **more you type and write out the scripts by keyboard**
+
+
+    **or pencil and paper, the more you will learn **
+
+
+    **programming!**
+
+
+    **Write and Type every example that you find.**
+
+
+    **Keep all of your scripts organized.**
+
+
+    **Every script that you create increases your **
+
+
+    **programming abilities.**
+
+
+    **SEEING CODE, is one thing,**
+
+
+    **but WRITING CODE is another.**
+
+
+    **Write it, Type it, Speak It, See It, Dream It.**
+
+
+    **CollegeOfScripting.weebly.com**'
+  merge: -1
+  pgno: 43
