@@ -1,0 +1,1114 @@
+- md: "\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_0_0.png)\n\nCommunity Experience\
+    \ Distilled\n\n# Thinking in JavaScript\n\nA focused guide designed to help you\
+    \ understand and start speaking the language of the Web\n\nAravind Shenoy\n\n\
+    ![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_0_1.png)\n\nThinking in JavaScript\n\n\
+    A focused guide designed to help you understand and start speaking the language\
+    \ of the Web\n\nAravind Shenoy\n\nBIRMINGHAM - MUMBAI\n\nThinking in JavaScript\n\
+    \nCopyright © 2014 Packt Publishing\n\nAll rights reserved. No part of this book\
+    \ may be reproduced, stored in a retrieval system, or transmitted in any form\
+    \ or by any means, without the prior written permission of the publisher, except\
+    \ in the case of brief quotations embedded in critical articles or reviews.\n\n\
+    Every effort has been made in the preparation of this book to ensure the accuracy\
+    \ of the information presented. However, the information contained in this book\
+    \ is sold without warranty, either express or implied. Neither the author, nor\
+    \ Packt Publishing, and its dealers and distributors will be held liable for any\
+    \ damages caused or alleged to be caused directly or indirectly by this book.\n\
+    \nPackt Publishing has endeavored to provide trademark information about all of\
+    \ the companies and products mentioned in this book by the appropriate use of\
+    \ capitals. However, Packt Publishing cannot guarantee the accuracy of this information.\n\
+    \nFirst published: March 2014\n\nProduction Reference: 1130314\n\nPublished by\
+    \ Packt Publishing Ltd.\n\nLivery Place\n35 Livery Street\nBirmingham B3 2PB,\
+    \ UK.\n\nwww.packtpub.com\n\nCover Image by Ankita Jha (ankitajha17@gmail.com)\n\
+    \n## Credits\n\n### Author\nAravind Shenoy\n\n### Reviewers\n- Arturas Lebedevas\n\
+    - Anirudh Prabhu\n\n### Content Development Editor\n- Nehma Ramakrishnan\n\n###\
+    \ Technical Editor\n- Dennis John\n\n### Proofreaders\n- Stephen Copestake\n\n\
+    ### Production Coordinators\n- Nitesh Thakur\n- Pooja Chiplunkar\n\n### Cover\
+    \ Work\n- Prachali Bhiwandkar\n\n## About the Author\n\nAravind Shenoy is an in-house\
+    \ author at Packt Publishing. An engineering graduate from the Manipal Institute\
+    \ of Technology, his core interests include technical writing, web designing,\
+    \ and software testing. He is a native of Mumbai, India, and currently resides\
+    \ there. He has penned down books such as *Hadoop: A Big Data Initiative* and\
+    \ *Thinking in CSS*. He has also authored the bestselling book: *HTML5 and CSS3\
+    \ Transition, Transformation, and Animation*, *Packt Publishing*, (http://www.packtpub.com/html5-and-css3-for-transition-transformation-animation/book).\
+    \ He is a music buff with *The Doors*, *Oasis*, and *R.E.M* ruling his playlists.\n\
+    \n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_5_0.png)\n\n## Overview\n\nInstead\
+    \ of wandering through loads of theory, we have used practical examples in this\
+    \ book. The examples in this book are compatible with almost every browser. Instead\
+    \ of using the verbatim code, you can modify the code and see the change in the\
+    \ output thereby understanding the subtle nuances of JavaScript.\n\nBy the end\
+    \ of the book, with practice, you can achieve better things and get more acquainted\
+    \ with JavaScript.\n\n## Thinking in JavaScript\n\nJavaScript is a scripting language\
+    \ for the Web. Before we delve into the intricacies of JavaScript, we need to\
+    \ know why it is used. While HTML tells your browser how the page will look, JavaScript\
+    \ will be used for dynamic content and to add functionality.\n\nThe prerequisites\
+    \ for getting started with JavaScript are as follows:\n\n- Prior knowledge of\
+    \ HTML\n- A text editor such as Notepad\n- JavaScript enabled on your web browser\n\
+    \nJavaScript does not require a compiler to execute the code. JavaScript can be\
+    \ embedded within the HTML code. The web browser interprets the JavaScript while\
+    \ the page loads.\n\nIn this book, we are going to use a practical approach so\
+    \ that we can gain more insight into JavaScript. By the end of the book, we should\
+    \ be able to understand the concepts of JavaScript so that we can implement it\
+    \ in our real-life applications.\n\n## Applying JavaScript\n\nInstead of beating\
+    \ around the bush and wandering through loads of theory, we will start with a\
+    \ simple code right away.\n\nLet's look at the following code to understand how\
+    \ JavaScript is applied to a web page:\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+    <title> Introduction to JavaScript </title>\n<script type=\"text/javascript\"\
+    >\n alert(\" Welcome to Packt \");\n</script>\n</head>\n</html>\n```\n\nWhen we\
+    \ look at this code, we can see that we have included a line: `script type=\"\
+    text/javascript\"` in the `<head>` section. The script tag and its type attribute\
+    \ tell the browser that we have introduced a JavaScript in the HTML code. We can\
+    \ also see that there is an alert command in the code. We will talk about the\
+    \ alert command later in this book. On executing the code, we can see the following\
+    \ output on the screen:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_8_0.png)\n\
+    \nWe can see that the JavaScript code must be inserted between the `<script>`\
+    \ and `</script>` tags.\n\nOur JavaScript code can be kept in the `<head>` or\
+    \ `<body>` tags. It is a matter of choice and depends on the web page. If there\
+    \ are a lot of styles and videos, it is preferable to keep the JavaScript code\
+    \ in the `<body>` tag. This ensures that the web page and its resources have been\
+    \ loaded completely before JavaScript comes into the picture. Another reason is\
+    \ that any resource, except for a JavaScript file, loads asynchronously. However,\
+    \ when a JavaScript file is being loaded, it happens one at a time. This hampers\
+    \ the performance.\n\nWe must understand that if there is a lot of code to be\
+    \ written, it is always systematic to keep the JavaScript code separate from the\
+    \ HTML code. In this book, we will embed JavaScript in the HTML between the `<script>`\
+    \ tags for the sake of convenience. However, in real-world situations, it is good\
+    \ practice to keep the JavaScript code as a standalone. For that, we need to create\
+    \ a standalone JavaScript file and save it with a .js extension. The JavaScript\
+    \ code must be written in this separate .js file. Suppose we create a JavaScript\
+    \ file called `main.js`. We then invoke the `main.js` file in our HTML code. Let's\
+    \ have a look at a code example to view the procedure:\n\n```html\n<!DOCTYPE html>\n\
+    <html>\n<head>\n<title> Introduction to JavaScript </title>\n<script type=\"text/javascript\"\
+    \ src=\"main.js\"></script>\n</head>\n</html>\n```\n\nIn the `.js` file, we need\
+    \ to write the following code snippet:\n\n```javascript\nalert(\" Welcome to Packt\
+    \ \");\n```\n\nWhen we execute the code, we will get the same output as shown\
+    \ in the earlier example. As we can see, we have invoked the `main.js` file by\
+    \ using the following code in our HTML file:\n\n`<script type=\"text/javascript\"\
+    \ src=\"main.js\"></script>`\n\nHere, the `main.js` file should be on the same\
+    \ path as the HTML file. If it is in a different folder, we need to specify the\
+    \ entire path.\n\nThereby, we have seen the procedure to applying JavaScript in\
+    \ our code.\n\n## Variables\n\nIn JavaScript, we need containers that will store\
+    \ data and values for processing purposes. Hence, we use variables in JavaScript.\
+    \ We can assign a numeric or a string value to a variable. A string needs to be\
+    \ enclosed in quotes. We also have the concept of constants. A constant is assigned\
+    \ a value that is permanent in the script, unlike variables where the values can\
+    \ be changed.\n\nLet's have a look at the way we declare variables and constants\
+    \ in JavaScript:\n\n```javascript\nvar amount;\nvar amount=5;\nconst a;\n```\n\
+    \nIt is quite evident that the variable should be preceded by the `var` keyword\
+    \ whereas constants must be preceded by the `const` keyword. We can also see that\
+    \ the value can be assigned to a variable at the time of declaring it. `const`\
+    \ is compatible with modern versions of all browsers except Internet Explorer.\n\
+    \nA variable can be either local or global. Let's look at how we differentiate\
+    \ between local and global variables.\n\nRemember that JavaScript is case-sensitive.\
+    \ Hence \"myAttribute\" is *not* the same as \"myattribute\". One more point to\
+    \ note is that every statement ends with a semicolon. Spaces inside the quotes\
+    \ will be reflected in the output.\n\n### Global and local variables\n\nGlobal\
+    \ variables can be accessed from any location in the script, whereas local variables\
+    \ can be accessed only within the function.\n\nLet's have a look at the following\
+    \ code to understand it better:\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+    <title> Introduction to JavaScript </title>\n</head>\n<body>\n<h1> Variables in\
+    \ JavaScript </h1>\n<script type=\"text/javascript\">\n function subtraction(a,\
+    \ b)\n{\n var c;\n c = a-b;\n return c;\n }\nvar z = subtraction(10, 7);\n document.write(\"\
+    After subtraction, the difference is \" + z);\n</script>\n</body>\n</html>\n```\n"
+  mdcn: "\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_0_0.png)\n\n社区经验精华\n\n# JavaScript\
+    \ 思维\n\n一份旨在帮助你理解并开始使用这种 Web 语言的专注指南\n\nAravind Shenoy\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_0_1.png)\n\
+    \nJavaScript 思维\n\n一份旨在帮助你理解并开始使用这种 Web 语言的专注指南\n\nAravind Shenoy\n\n伯明 - 孟买\n\
+    \nJavaScript 思维\n\nCopyright © 2014 Packt Publishing\n\n版权所有。未经出版者事先书面许可，不得以任何形式或通过任何手段复制、存储在检索系统中或传输本书的任何部分，批判性文章或评论中嵌入的简短引用除外。\n\
+    \n在编写本书的过程中，我们已尽一切努力确保所陈述信息的准确性。然而，书中包含的信息按现状销售，不提供任何明示或暗示的保证。作者、Packt Publishing\
+    \ 及其经销商和分销商对因本书直接或间接引起或声称引起的损害不承担责任。\n\nPackt Publishing 已努力通过正确使用大写字母提供书中提到的所有公司和产品的商标信息。然而，Packt\
+    \ Publishing 无法保证这些信息的准确性。\n\n首次出版：2014年3月\n\n制作参考号：1130314\n\nPackt Publishing\
+    \ Ltd 出版\n\nLivery Place\n35 Livery Street\nBirmingham B3 2PB, UK.\n\nwww.packtpub.com\n\
+    \n封面设计：Ankita Jha (ankitajha17@gmail.com)\n\n## 致谢\n\n### 作者\nAravind Shenoy\n\
+    \n### 审核员\n- Arturas Lebedevas\n- Anirudh Prabhu\n\n### 内容开发编辑\n- Nehma Ramakrishnan\n\
+    \n### 技术编辑\n- Dennis John\n\n### 校对员\n- Stephen Copestake\n\n### 制作协调员\n- Nitesh\
+    \ Thakur\n- Pooja Chiplunkar\n\n### 封面制作\n- Prachali Bhiwandkar\n\n## 关于作者\n\n\
+    Aravind Shenoy 是 Packt Publishing 的内部作者。他毕业于马尼帕尔理工学院（Manipal Institute of Technology），他的核心兴趣包括技术写作、网页设计和软件测试。他是印度孟买人，目前居住在那里。他曾编写过\
+    \ *Hadoop: A Big Data Initiative* 和 *Thinking in CSS* 等书籍。他还编写了畅销书：*HTML5 and\
+    \ CSS3 Transition, Transformation, and Animation*, *Packt Publishing*, (http://www.packtpub.com/html5-and-css3-for-transition-transformation-animation/book)。他是一个音乐爱好者，他的歌单里被\
+    \ *The Doors*、*Oasis* 和 *R.E.M* 占据。\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_5_0.png)\n\
+    \n## 概述\n\n在书中没有在海量的理论中徘徊，而是使用了实践示例。书中的示例兼容几乎所有的浏览器。你不需要照抄代码，而是修改代码并查看输出的变化，从而理解\
+    \ JavaScript 的细微差别。\n\n通过练习，在本书结束时，你可以取得更好的成就并更熟悉 JavaScript。\n\n## JavaScript\
+    \ 思维\n\nJavaScript 是一种用于 Web 的脚本语言。在我们深入研究 JavaScript 的复杂性之前，我们需要知道为什么要使用它。虽然\
+    \ HTML 告诉浏览器页面应该什么样，但 JavaScript 将用于动态内容和添加功能。\n\n开始学习 JavaScript 的前提条件如下：\n\n\
+    - HTML 的先验知识\n- 一个如记事本之类的文本编辑器\n- 你的网页浏览器已启用 JavaScript\n\nJavaScript 执行代码不需要编译器。JavaScript\
+    \ 可以嵌入到 HTML 代码中。网页浏览器在页面加载时解释 JavaScript。\n\n在书中，我们将采用实践方法，以便对 JavaScript 有更深入的了解。在本书结束时，我们应该能够理解\
+    \ JavaScript 的概念，以便我们可以在现实应用中实现它。\n\n## 应用 JavaScript\n\n我们不会绕圈子或在海量的理论中徘徊，而是将直接从简单的代码开始。\n\
+    \n让我们来看下面的代码，了解 JavaScript是如何应用于网页的：\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+    <title> JavaScript 简介 </title>\n<script type=\"text/javascript\">\n alert(\" Welcome\
+    \ to Packt \");\n</script>\n</head>\n</html>\n```\n\n当我们 own看这段代码时，可以看到我们在 `<head>`\
+    \ 部分包含了一行：`script type=\"text/javascript\"`。`<script>` 标签及其类型属性告诉浏览器我们在 HTML 代码中引入了\
+    \ JavaScript。我们还可以看到代码中有一个 `alert` 命令。我们将在书的稍后部分讨论 `alert` 命令。执行代码后，我们可以在屏幕上看到以下输出：\n\
+    \n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_8_0.png)\n\n我们可以看到 JavaScript 代码必须插入在\
+    \ `<script>` 和 `</script>` 标签之间。\n\n我们的 JavaScript 代码可以放在 `<head>` 或 `<body>`\
+    \ 标签中。这取决于选择并取决于网页。如果有很多样式和视频，最好将 JavaScript 代码保留在 `<body>` 标签中。这确保了网页及其资源在 JavaScript\
+    \ 出现之前完全加载。另一个原因是除了 JavaScript 文件外，任何资源都是异步加载的。然而，当加载 JavaScript 文件时，它是一个一个加载的。这会影响性能。\n\
+    \n我们必须理解，如果有代码要写，将 JavaScript 代码与 HTML 代码分离始终是系统化的。在书中，为了方便起见，我们将 JavaScript 嵌入在\
+    \ HTML 的 `<script>` 标签之间。然而，在现实世界中，将 JavaScript 代码保持为独立是一个良好的做法。为了这样做，我们需要创建一个独立的\
+    \ JavaScript 文件并以 .js 扩展名保存它。JavaScript 代码必须写在这个单独的 .js 文件中。假设我们创建了一个名为 `main.js`\
+    \ 的 JavaScript 文件。然后我们在 HTML 代码中调用 `main.js` 文件。让我们看一下代码示例以查看该过程：\n\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n<title> JavaScript 简介 </title>\n<script type=\"\
+    text/javascript\" src=\"main.js\"></script>\n</head>\n</html>\n```\n\n在 `.js`\
+    \ 文件中，我们需要编写以下代码段：\n\n```javascript\nalert(\" Welcome to Packt \");\n```\n\n当我们执行代码时，将得到与之前示例相同的输出。正如我们所看到的，我们通过在\
+    \ HTML 文件中使用以下代码调用了 `main.js` 文件：\n\n`<script type=\"text/javascript\" src=\"\
+    main.js\"></script>`\n\n在这里，`main.js` 文件应该与 HTML 文件处于同一路径。如果它在不同的文件夹，我们需要指定整个路径。\n\
+    \n由此，我们看到了在代码中应用 JavaScript 的方法。\n\n## 变量\n\n在 JavaScript 中，我们需要用于存储数据和值的容器。因此，我们在\
+    \ JavaScript 中使用变量。我们可以为变量分配数值或字符串值。字符串需要包含引号内。我们还有常量的概念。常量被分配了一个永久的值，而变量的值可以改变。\n\
+    \n让我们来看看 JavaScript 中声明变量和常量的方式：\n\n```javascript\nvar amount;\nvar amount=5;\n\
+    const a;\n```\n\n显而易见，变量之前应该是 `var` 关键字，而常量应该是 `const` 关键字。我们还可以看到可以在声明时给变量赋值。`const`\
+    \ 兼容除 Internet Explorer 以外的所有现代版本。\n\n变量可以是局部的也可以是全局的。让我们看看如何区分局部和全局变量。\n\n记住\
+    \ JavaScript 是区分大小写的。因此 \"myAttribute\" 不等于 \"myattribute\"。另一个注意点是每条语句都以分号结束。引号内的空格将反映在输出中。\n\
+    \n### 全局变量和局部变量\n\n全局变量可以在脚本的任何位置访问，而局部变量只能在函数内部访问。\n\n让我们来看下面的代码以更好地理解：\n\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n<title> JavaScript 简介 </title>\n</head>\n<body>\n\
+    <h1> JavaScript 中的变量 </h1>\n<script type=\"text/javascript\">\n function subtraction(a,\
+    \ b)\n{\n var c;\n c = a-b;\n return c;\n }\nvar z = subtraction(10, 7);\n document.write(\"\
+    相减后，差值是 \" + z);\n</script>\n</body>\n</html>\n```\n\n"
+  merge: -1
+  raw:
+  - '[PAGE 0]
+
+
+    ![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_0_0.png)
+
+
+    Community Experience Distilled
+
+
+    # # Thinking in JavaScript
+
+
+    A focused guide designed to help you understand and start speaking the language
+    of the Web
+
+
+    Aravind Shenoy
+
+
+    ![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_0_1.png)'
+  - "[PAGE 1]\n\nThinking in JavaScript\n\nA focused guide designed to help you understand\
+    \ and \n\nstart speaking the language of the Web\n\nAravind Shenoy\n\nBIRMINGHAM\
+    \ - MUMBAI"
+  - "[PAGE 2]\n\nThinking in JavaScript\n\nCopyright © 2014 Packt Publishing\n\nAll\
+    \ rights reserved. No part of this book may be reproduced, stored in a retrieval\
+    \ system, or \n\ntransmitted in any form or by any means, without the prior written\
+    \ permission of the publisher, \n\nexcept in the case of brief quotations embedded\
+    \ in critical articles or reviews.\n\nEvery effort has been made in the preparation\
+    \ of this book to ensure the accuracy of the \n\ninformation presented. However,\
+    \ the information contained in this book is sold without \n\nwarranty, either\
+    \ express or implied. Neither the author, nor Packt Publishing, and its dealers\
+    \ \n\nand distributors will be held liable for any damages caused or alleged to\
+    \ be caused directly or \n\nindirectly by this book.\n\nPackt Publishing has endeavored\
+    \ to provide trademark information about all of the companies \n\nand products\
+    \ mentioned in this book by the appropriate use of capitals. However, Packt \n\
+    \nPublishing cannot guarantee the accuracy of this information.\n\nFirst published:\
+    \ March 2014\n\nProduction Reference: 1130314\n\nPublished by Packt Publishing\
+    \ Ltd.\n\nLivery Place\n\n35 Livery Street\n\nBirmingham B3 2PB, UK.\n\nwww.packtpub.com\n\
+    \nCover Image by Ankita Jha (ankitajha17@gmail.com)"
+  - '[PAGE 3]
+
+
+    Credits
+
+
+    Author
+
+
+    Aravind Shenoy
+
+
+    Reviewers
+
+
+    Arturas Lebedevas
+
+
+    Anirudh Prabhu
+
+
+    Content Development Editor
+
+
+    Neeshma Ramakrishnan
+
+
+    Technical Editor
+
+
+    Dennis John
+
+
+    Proofreaders
+
+
+    Stephen Copestake
+
+
+    Production Coordinators
+
+
+    Nitesh Thakur
+
+
+    Pooja Chiplunkar
+
+
+    Cover Work
+
+
+    Prachali Bhiwandkar'
+  - "[PAGE 4]\n\nAbout the Author\n\nAravind Shenoy is an in-house author at Packt\
+    \ Publishing. An engineering graduate from \n\nthe Manipal Institute of Technology,\
+    \ his core interests include technical writing, web designing, \n\nand software\
+    \ testing. He is a native of Mumbai, India, and currently resides there. He has\
+    \ \n\npenned down books such as *Hadoop: A Big Data Initiative* and *Thinking\
+    \ in CSS*. He has also \n\nauthored the bestselling book: *HTML5 and CSS3 Transition,\
+    \ Transformation, and Animation, *\n\n*Packt Publishing*, (http://www.packtpub.com/html5-and-css3-for-transition-\n\
+    \ntransformation-animation/book). He is a music buff with *The Doors*, *Oasis*,\
+    \ and *R.E.M* \n\nruling his playlists."
+  - '[PAGE 5]
+
+
+    ![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_5_0.png)'
+  - "[PAGE 6]\n\nOverview\n\nInstead of wandering through loads of theory, we have\
+    \ used practical examples in this \n\nbook. The examples in this book are compatible\
+    \ with almost every browser. Instead of \n\nusing the verbatim code, you can modify\
+    \ the code and see the change in the output \n\nthereby understanding the subtle\
+    \ nuances of JavaScript.\n\nBy the end of the book, with practice, you can achieve\
+    \ better things and get more \n\nacquainted with JavaScript."
+  - "[PAGE 7]\n\nThinking in JavaScript\n\nJavaScript is a scripting language for\
+    \ the Web. Before we delve into the intricacies of \n\nJavaScript, we need to\
+    \ know why it is used. While HTML tells your browser how the page \n\nwill look,\
+    \ JavaScript will be used for dynamic content and to add functionality.\n\nThe\
+    \ prerequisites for getting started with JavaScript are as follows:\n\nf\n\nf\n\
+    \nPrior knowledge of HTML\n\nf\n\nf\n\nA text editor such as Notepad\n\nf\n\n\
+    f\n\nJavaScript enabled on your web browser\n\nJavaScript does not require a compiler\
+    \ to execute the code. JavaScript can be embedded \n\nwithin the HTML code. The\
+    \ web browser interprets the JavaScript while the page loads.\n\nIn this book,\
+    \ we are going to use a practical approach so that we can gain more insight \n\
+    \ninto JavaScript. By the end of the book, we should be able to understand the\
+    \ concepts \n\nof JavaScript so that we can implement it in our real-life applications."
+  - "[PAGE 8]\n\n2\n\nApplying JavaScript\n\nInstead of beating around the bush and\
+    \ wandering through loads of theory, we will start with a \n\nsimple code right\
+    \ away.\n\nLet's look at the following code to understand how JavaScript is applied\
+    \ to a web page:\n\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<title> Introduction\
+    \ to JavaScript </title>\n\n<script type=\"text/javascript\">\n\n alert(\" Welcome\
+    \ to Packt \");\n\n</script>\n\n</head>\n\n</html>\n\nWhen we look at this code,\
+    \ we can see that we have included a line: script type=\"text/\n\njavascript\"\
+    \ in the <head> section. The script tag and its type attribute tell the \n\nbrowser\
+    \ that we have introduced a JavaScript in the HTML code. We can also see that\
+    \ there \n\nis an alert command in the code. We will talk about the alert command\
+    \ later in this book. \n\nOn executing the code, we can see the following output\
+    \ on the screen:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_8_0.png)\n\nWe can\
+    \ see that the JavaScript code must be inserted between the <script> and \n\n\
+    </script> tags.\n\nOur JavaScript code can be kept in the <head> or <body> tags.\
+    \ It is a matter of choice and \n\ndepends on the web page. If there are a lot\
+    \ of styles and videos, it is preferable to keep the \n\nJavaScript code in the\
+    \ <body> tag. This ensures that the web page and its resources have \n\nbeen loaded\
+    \ completely before JavaScript comes into the picture. Another reason is that\
+    \ any \n\nresource, except for a JavaScript file, loads asynchronously. However,\
+    \ when a JavaScript file is \n\nbeing loaded, it happens one at a time. This hampers\
+    \ the performance."
+  - "[PAGE 9]\n\n3\n\nWe must understand that if there is a lot of code to be written,\
+    \ it is always systematic to \n\nkeep the JavaScript code separate from the HTML\
+    \ code. In this book, we will embed \n\nJavaScript in the HTML between the <script>\
+    \ tags for the sake of convenience. However, \n\nin real-world situations, it\
+    \ is good practice to keep the JavaScript code as a standalone. For \n\nthat,\
+    \ we need to create a standalone JavaScript file and save it with a .js extension.\
+    \ The \n\nJavaScript code must be written in this separate .js file. Suppose we\
+    \ create a JavaScript file \n\ncalled main.js. We then invoke the main.js file\
+    \ in our HTML code. Let's have a look at a \n\ncode example to view the procedure:\n\
+    \n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<title> Introduction to JavaScript </title>\n\
+    \n**<script type=\"text/javascript\" src=\"main.js\"></script>**\n\n</head>\n\n\
+    </html>\n\nIn the .js file, we need to write the following code snippet:\n\nalert(\"\
+    \ Welcome to Packt \");\n\nWhen we execute the code, we will get the same output\
+    \ as shown in the earlier example. As \n\nwe can see, we have invoked the main.js\
+    \ file by using the following code in our HTML file:\n\n<script type=\"text/javascript\"\
+    \ src=\"main.js\"></script>\n\nHere, the main.js file should be on the same path\
+    \ as the HTML file. If it is in a different \n\nfolder, we need to specify the\
+    \ entire path.\n\nThereby, we have seen the procedure to applying JavaScript in\
+    \ our code.\n\nVariables\n\nIn JavaScript, we need containers that will store\
+    \ data and values for processing purposes. \n\nHence, we use variables in JavaScript.\
+    \ We can assign a numeric or a string value to a variable. \n\nA string needs\
+    \ to be enclosed in quotes. We also have the concept of constants. A constant\
+    \ \n\nis assigned a value that is permanent in the script, unlike variables where\
+    \ the values can \n\nbe changed.\n\nLet's have a look at the way we declare variables\
+    \ and constants in JavaScript:\n\nvar amount;\n\nvar amount=5;\n\nconst a;"
+  - "[PAGE 10]\n\n4\n\nIt is quite evident that the variable should be preceded by\
+    \ the var keyword whereas constants \n\nmust be preceded by the const keyword.\
+    \ We can also see that the value can be assigned \n\nto a variable at the time\
+    \ of declaring it.\n\nconst is compatible with modern versions of all browsers\
+    \ except \n\nInternet Explorer.\n\nA variable can be either local or global. Let's\
+    \ look at how we differentiate between local \n\nand global variables.\n\nRemember\
+    \ that JavaScript is case-sensitive. Hence \"myAttribute\" is \n\n*not* the same\
+    \ as \"myattribute\". One more point to note is that every \n\nstatement ends\
+    \ with a semicolon. Spaces inside the quotes will be \n\nreflected in the output.\n\
+    \nGlobal and local variables\n\nGlobal variables can be accessed from any location\
+    \ in the script, whereas local variables can \n\nbe accessed only within the function.\n\
+    \nLet's have a look at the following code to understand it better:\n\n<!DOCTYPE\
+    \ html>\n\n<html>\n\n<head>\n\n<title> Introduction to JavaScript </title>\n\n\
+    </head>\n\n<body>\n\n<h1> Variables in JavaScript </h1>\n\n<script type=\"text/javascript\"\
+    >\n\n function subtraction(a, b)\n\n {\n\n var c;\n\n c = a-b;\n\n return c;\n\
+    \n }\n\n var z = subtraction(10, 7);\n\n document.write(\"After subtraction, the\
+    \ difference is \" + z);\n\n</script>\n\n</body>\n\n</html>"
+- md: "\n5\n\nIn the code, a as well as b have been passed as arguments to the function.\
+    \ a and b are local\n\nvariables that can be accessed only within the function,\
+    \ as they exist in the function. However,\n\nz is declared outside the function\
+    \ and hence is a global variable.\n\nWe can see the output of the executed code\
+    \ in the following screenshot:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_11_0.png)\n\
+    \nFunctions will be explained under the heading *Functions* in this book, so let's\
+    \ stick to variables\nas of now.\n\nTo understand the scope and concept of variables\
+    \ better, let's have a look at the\nfollowing code:\n\n<html>\n\n<head>\n\n<title>\
+    \ Scope of variables </title>\n</head>\n\n<body>\n\n<script type=\"text/javascript\"\
+    >\n\n var a = \"Packt publishes Books on Technology\";\n\n var b = \"Welcome to\
+    \ Packt\";\n\n function Packt()\n\n {\n\n var a = \"Packt Publishing has an online\
+    \ book library\";\n\n alert(a);\n\n alert(b);\n\n } \n\n Packt();\n\n alert(a);\n\
+    \n</script>\n\n</body>\n\n</html>\n\nOn execution, we see three alerts in the\
+    \ following order :\n\nPackt Publishing has an online book library\n\nWelcome\
+    \ to Packt\n\nPackt publishes Books on Technology\n\n6\n\nFrom the output, it\
+    \ is quite evident that the function can access the local variable (hence the\n\
+    first alert) as well as the global variable (hence the second alert). However,\
+    \ anything outside a\nspecific function cannot access the variables inside that\
+    \ function (hence the third alert). That\nclears the concept of global and local\
+    \ variables.\n\n## Operators\n\nThe three types of commonly used operators in\
+    \ JavaScript are as follows:\n\n- Arithmetic operators\n- Logical operators\n\
+    - Comparison operators\n\n### Arithmetic operators\n\nThe following table displays\
+    \ the various kinds of Arithmetic operators:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_12_0.png)\n\
+    \nThe operators mentioned in the table are used for Arithmetic operations.\n\n\
+    The Addition, Subtraction, Multiplication, and Division operators are self explanatory.\n\
+    The Modular operator (%) is used for the remnant left after division (we call\
+    \ this the modulus). Increment operators are used to increase the value by one\
+    \ whereas the\ndecrement operator is used to decrease the value by one.\n\nFor\
+    \ example, x=x+1 can also be written as x++ whereas y=y-1 can be written as y--.\n\
+    \n7\n\nLogical operators\n\nThe following table displays the different types of\
+    \ logical operators:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_13_0.png)\n\n\
+    The AND operator is used when all the conditions must be satisfied. For example,\
+    \ X>5 &&\ny=5 means that x should be greater than 5 and y must be equal to 5 for\
+    \ the condition to\nbe true.\n\nThe OR operator is used when one of the conditions\
+    \ must be true. For example, x=5 || y<3\nmeans that the condition is true when\
+    \ x is equal to 5 or y is less than 3.\n\nThe NOT operator is used when the antithesis\
+    \ is true. For example, !(x>5) is true when x\nis equal to or less than 5.\n\n\
+    ## Conditions and Loops\n\nThe main purpose of JavaScript is to add dynamic functionality.\
+    \ In order to execute a lot of\nactions and iterations, we have the concept of\
+    \ conditions and loops in JavaScript. The\nif-else statement is primarily used\
+    \ for various conditions. The structure of the If-else\nstatement is as follows:\n\
+    \nif (condition)\n {\n JavaScript statements to be executed\n }\nelse\n {\n JavaScript\
+    \ statements to be executed\n }\n\nFor example, consider the following code snippet:\n\
+    \nIf (i>5)\n {\n x=50;\n }\nelse\n {\n x=100;\n }\n\n8\n\nThe interpretation of\
+    \ this code is simple. If the value of i is greater than 5, the value of x will\n\
+    be 50. If the value of i is not greater than 5, then the value of x will be 100.\n\
+    \nAt times, we know the number of iterations to be performed. Suppose we need\
+    \ to execute the\ncode and get the output, say 10 times. At that time, we use\
+    \ loops to perform multiple\niterations as we know the number of times the loop\
+    \ will be repeated. We will see an example\nof the for loop in this chapter.\n\
+    \nThe structure of the for loop is as follows:\n\nfor (initialization;condition;increment)\n\
+    \ {\n JavaScript statements\n }\n\nLet us have a look at a code snippet:\n\n<!DOCTYPE\
+    \ html>\n<html>\n<body>\n<script type=\"text/javascript\">\n\n for (i=0;i<5;i++)\n\
+    \ {\n document.write(i+ \"<br>\");\n }\n</script>\n<p>Hi</p>\n<p>This is an example\
+    \ of the execution of the for loop</p>\n</body>\n</html>\n\nThe output of the\
+    \ code on execution would be as follows:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_14_0.png)\n\
+    \n9\n\n## Functions\n\nFunctions are an integral part of JavaScript. Let's understand\
+    \ the concept of functions. We know\nthat the imperative purpose of JavaScript\
+    \ is to add functionality to the web page. Say, we want\nto add certain functionality\
+    \ in JavaScript. Suppose we need to implement it on different pages of\nthe website\
+    \ or different places on the same web page. Instead of adding functionality each\
+    \ time,\nwe can use the concept of functions where we can declare the function\
+    \ once. From there on, we\ncan use it multiple times on multiple web pages or\
+    \ at different places on the website.\n\nThere are many inbuilt functions in JavaScript.\
+    \ We can also craft our own functions in\nJavaScript and customize them according\
+    \ to our needs. Let's look at the following code\nto understand how the functions\
+    \ work:\n\n<!DOCTYPE html>\n<html>\n<head>\n<title> Java Script in a nutshell\
+    \ </title>\n<<h1> Functions in JavaScript </h1>\n<p> Click on \"Click Here\" to\
+    \ execute the code in the function </p>\n<script type=\"text/javascript\">\n\n\
+    \ function PacktPub()\n {\n var x = prompt(\"Hey\", \"\");\n alert(\"Welcome to\
+    \ Packt, \" + x);\n }\n</script>\n</head>\n<body>\n\n<a href=\"javascript:PacktPub()\"\
+    >Click Here</a>\n</body>\n</html>\n\nThe execution of the code will give us the\
+    \ following output:\n\n![](img/e22f9ec0935e89c75d7b9cd0b6f17410a_15_0.png)\n\n\
+    10\n\nOn clicking the Click Here link, we can see the following output:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_16_0.png)\n\
+    \nWe get a prompt box that requests for an input. Say we enter the name Joe and\
+    \ click on OK.\nWe will get the following alert box as defined in the code.\n\n\
+    ![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_16_1.png)\n\nLet's now understand how\
+    \ the code works. We have used two functions in the code:\nalert and prompt are\
+    \ inbuilt functions in JavaScript. JavaScript is case-sensitive; hence, we must\
+    \ use lowercase for\nalert and prompt, otherwise the code will not work.\n\n11\n\
+    \nThe alert and prompt functions are commonly used in JavaScript. An alert box\
+    \ is used\nwhen we need to inform the user about some development. Similarly,\
+    \ a prompt box is used\nwhen we want an input from the user before he accesses\
+    \ the page. If you observe the code, it is quite evident that the PacktPub() function\
+    \ was declared prior to calling it. In the PacktPub() function, we have used the\
+    \ prompt and alert functions.\nThe prompt command on execution will prompt the\
+    \ user for an input. The double quotes\nafter Hey are for the default string that\
+    \ has to be entered as the input. In the code, x is\na variable that is assigned\
+    \ a prompt function. Again, x is used in the alert command in the\nvery next line.\n\
+    \nOnce we enter the name Joe, we get an alert: Welcome to Packt, Joe.\n\nThe concept\
+    \ of functions must be clear by now. Functions are used extensively in JavaScript\n\
+    and are widely used to return a value in real-world programming. Hence, functions\
+    \ are an\nimperative part of JavaScript.\n\n## Objects and their role in JavaScript\n\
+    \nJavaScript is an object-oriented language. We have inbuilt objects such as Math,\
+    \ Date, and\nDocument, to mention a few. However, we can also create our own objects\
+    \ and customize\nthem to suit our needs.\n\nAn object has properties and methods\
+    \ to define it. These are attributes that give meaning\nto the object-oriented\
+    \ concept in JavaScript. A property is an attribute that defines values for\n\
+    the object. Methods define the action that can be implemented on the objects.\n\
+    \nLet's have a look at the following code to understand how properties define\
+    \ values for\nan object:\n\n<!DOCTYPE html>\n<html>\n<body>\n<script>\n\n var\
+    \ animal=new Object();\n\n animal.species=\"Dog\";\n\n animal.nickname=\"Monster\"\
+    ;\n\n animal.age=10;\n\n animal.eyecolor=\"brown\"; \n\n document.write(animal.nickname\
+    \ + \" is a dog that has \" +\nanimal.eyecolor + \" eyes\");\n\n</script>\n</body>\n\
+    </html>\n"
+  mdcn: "\n5\n\n在代码中，a 和 b 都已作为参数传递给函数。a 和 b 是局部变量，只能在函数内部访问，因为它们存在于函数之中。然而，z 是在函数外部声明的，因此是一个全局变量。\n\
+    \n我们可以在下面的截图中看到执行代码的输出：\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_11_0.png)\n\
+    \n函数将在本书的 *Functions*（函数）章节下进行介绍，所以我们目前先关注变量。\n\n为了更好地理解变量的作用域和概念，让我们来看下面的代码：\n\
+    \n<html>\n\n<head>\n\n<title> 变量的作用域 </title>\n</head>\n\n<body>\n\n<script type=\"\
+    text/javascript\">\n\n var a = \"Packt des Books on Technology\";\n\n var b =\
+    \ \"Welcome to Packt\";\n\n function Packt()\n\n {\n\n var a = \"Packt Publishing\
+    \ has an online book library\";\n\n alert(a);\n\n alert(b);\n\n } \n\n Packt();\n\
+    \n alert(a);\n\n</script>\n\n</body>\n</html>\n\n执行时，我们按照以下顺序看到三个 alert：\n\nPackt\
+    \ Publishing has an online book library\n\nWelcome to Packt\n\nPackt publishes\
+    \ Books on Technology\n\n6\n\n从输出中显而易见，函数可以访问局部变量（因此是第一个 alert）以及全局变量（因此是第二个 alert）。然而，特定函数外部的任何内容无法访问该函数内部的变量（因此是第三个\
+    \ alert）。这解释了全局变量和局部变量的概念。\n\n## 运算符\n\nJavaScript 中常用的三种运算符如下：\n\n- 算术运算符\n-\
+    \ 逻辑运算符\n- 比较运算符\n\n### 算术运算符\n\n下表显示了各种算术运算符：\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_12_0.png)\n\
+    \n表中提到的运算符用于算术运算。\n\n加、减、乘、除运算符是自言自懂的。取模运算符 (%) 用于除法后留下的余数（我们称之为模）。自增运算符用于将值加一，而自减运算符用于将值减一。\n\
+    \n例如，x=x+1 也可以写成 x++，而 y=y-1 可以写成 y--。\n\n7\n\n逻辑运算符\n\n下表显示了不同类型的逻辑运算符：\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_13_0.png)\n\
+    \nAND（与）运算符用于所有条件都必须满足的情况。例如，X>5 && y=5 意味着 x 必须大于 5 且 y 必须等于 5，条件才成立。\n\nOR（或）运算符用于其中一个条件为真的情况。例如，x=5\
+    \ || y<3 意味着 x 等于 5 或 y 小于 3 时条件为真。\n\nNOT（非）运算符用于反面为真的情况。例如，!(x>5) 在 x 等于或小于\
+    \ 5 时为真。\n\n## 条件与循环\n\nJavaScript 的主要目的是添加动态功能。为了执行大量的操作和迭代，我们在 JavaScript 中有了条件和循环的概念。if-else\
+    \ 语句主要用于各种条件。if-else 语句的结构如下：\n\nif (condition)\n {\n 要执行的 JavaScript 语句\n }\n\
+    else\n {\n 要执行的 JavaScript 语句\n }\n\n例如，考虑以下代码片段：\n\nIf (i>5)\n {\n x=50;\n }\n\
+    else\n {\n x=100;\n }\n\n8\n\n这段代码的解释非常简单。如果 i 的值大于 5，则 x 的值将是 50。如果 i 的值大于 5，那么\
+    \ x 的值将是 100。\n\n有时，我们知道需要执行的迭代次数。假设我们需要执行代码并获取输出，比如 10 次。这时，我们使用循环来执行多次迭代，因为我们知道循环重复的次数。我们将在本章查看\
+    \ for 循环的示例。\n\nfor 循环的结构如下：\n\nfor (initialization;condition;increment)\n {\n\
+    \ JavaScript 语句\n }\n\n让我们来看代码片段：\n\n<!DOCTYPE html>\n<html>\n<body>\n<script\
+    \ type=\"text/javascript\">\n\n for (i=0;i<5;i++)\n {\n document.write(i+ \"<br>\"\
+    );\n }\n</script>\n<p>Hi</p>\n<p>这是一个 for 循环执行的示例</p>\n</body>\n</html>\n\n代码执行后的输出将如下：\n\
+    \n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_14_0.png)\n\n9\n\n## 函数\n\n函数是 JavaScript\
+    \ 的不可或缺的一部分。让我们理解函数的概念。我们知道 JavaScript 的命令性目的是为网页添加功能。假设我们想在 JavaScript 中添加某些功能。假设我们需要在网站的不同页面或同一网页的不同位置实现它。与其每次都添加一次功能，不如使用函数的概念，我们可以只声明一次函数。从那时起，我们可以在多个网页上或在网站的不同位置多次使用它。\n\
+    \nJavaScript 中有很多内置函数。我们也可以在 JavaScript 中编写自己的函数并根据需要进行自定义。让我们来看下面的代码以理解函数是如何工作的：\n\
+    \n<!DOCTYPE html>\n<html>\n<head>\n<title> 简述 JavaScript </title>\n<h1> JavaScript\
+    \ 中的函数 </h1>\n<p> 点击“Click Here”执行函数中的代码 </p>\n<script type=\"text/javascript\"\
+    >\n\n function PacktPub()\n {\n var x = prompt(\"Hey\", \"\");\n alert(\"Welcome\
+    \ to Packt, \" + x);\n }\n</script>\n</head>\n<body>\n\n<a href=\"javascript:PacktPub()\"\
+    >Click Here</a>\n</body>\n</html>\n\n代码的执行将给我们带来以下输出：\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_15_0.png)\n\
+    \n10\n\n点击 Click Here 链接后，我们看到以下输出：\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_16_0.png)\n\
+    \n我们得到一个请求输入的提示框。假设我们输入名字 Joe 并点击 OK。我们将得到代码中定义的以下 alert 框：\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_16_1.png)\n\
+    \n11\n\n这两个函数在 JavaScript 中常用。当我们需要向用户告知某些进展时，使用 alert 框。同样，当我们在用户访问页面之前想要输入时，使用\
+    \ prompt 框。观察代码可以显而易见，PacktPub() 函数在调用之前已经声明。在 PacktPub() 函数中，我们使用了 prompt 和 alert\
+    \ 函数。执行 prompt 命令将提示用户输入。Hey 后面的双引号是作为输入的默认字符串。在代码中，x 是赋值给 prompt 函数的变量。再次，x 在紧接的一行的\
+    \ alert 命令中使用。\n\n一旦输入名字 Joe，我们就得到 alert：Welcome to Packt, Joe。\n\n现在应该理解函数的概念。函数在\
+    \ JavaScript 中被广泛使用，并在实际编程中广泛用于返回值。因此，函数是 JavaScript 的重要部分。\n\n## 对象在 JavaScript\
+    \ 中的作用\n\nJavaScript 是一种面向对象的语言。我们提到了一些内置对象，我们也可以创建自己的对象并根据需要进行自定义。\n\n对象通过属性和方法来定义。这些属性为\
+    \ JavaScript 中的对象概念赋予了意义。属性是定义对象的属性。方法定义可以在对象上实现的操作。\n\n让我们来看下面的代码，理解属性是如何定义对象的：\n\
+    \n<!DOCTYPE html>\n<html>\n<body>\n<script>\n\n var animal=new Object();\n\n animal.species=\"\
+    Dog\";\n\n animal.nickname=\"Monster\";\n\n animal.age=10;\n\n animal.eyecolor=\"\
+    brown\"; \n\n document.write(animal.nickname + \" is a dog that has \" +\nanimal.eyecolor\
+    \ + \" eyes\");\n\n</script>\n</body>\n</html>\n\n"
+  merge: 0
+  raw:
+  - "[PAGE 11]\n\n5\n\nIn the code, a as well as b have been passed as arguments to\
+    \ the function. a and b are local \n\nvariables that can be accessed only within\
+    \ the function, as they exist in the function. However, \n\nz is declared outside\
+    \ the function and hence is a global variable.\n\nWe can see the output of the\
+    \ executed code in the following screenshot:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_11_0.png)\n\
+    \nFunctions will be explained under the heading *Functions* in this book, so let's\
+    \ stick to variables \n\nas of now.\n\nTo understand the scope and concept of\
+    \ variables better, let's have a look at the \n\nfollowing code:\n\n<html>\n\n\
+    <head>\n\n<title> Scope of variables </title>\n\n</head>\n\n<body>\n\n<script\
+    \ type=\"text/javascript\">\n\n var a = \"Packt publishes Books on Technology\"\
+    ;\n\n var b = \"Welcome to Packt\";\n\n function Packt()\n\n {\n\n var a = \"\
+    Packt Publishing has an online book library\";\n\n alert(a);\n\n alert(b);\n\n\
+    \ } \n\n Packt();\n\n alert(a);\n\n</script>\n\n</body>\n\n</html>\n\nOn execution,\
+    \ we see three alerts in the following order :\n\nf\n\nf\n\nPackt Publishing has\
+    \ an online book library\n\nf\n\nf\n\nWelcome to Packt\n\nf\n\nf\n\nPackt publishes\
+    \ Books on Technology"
+  - "[PAGE 12]\n\n6\n\nFrom the output, it is quite evident that the function can\
+    \ access the local variable (hence the \n\nfirst alert) as well as the global\
+    \ variable (hence the second alert). However, anything outside a \n\nspecific\
+    \ function cannot access the variables inside that function (hence the third alert).\
+    \ That \n\nclears the concept of global and local variables.\n\nOperators\n\n\
+    The three types of commonly used operators in JavaScript are as follows:\n\nf\n\
+    \nf\n\nArithmetic operators\n\nf\n\nf\n\nLogical operators\n\nf\n\nf\n\nComparison\
+    \ operators\n\nArithmetic operators\n\nThe following table displays the various\
+    \ kinds of Arithmetic operators:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_12_0.png)\n\
+    \nThe operators mentioned in the table are used for Arithmetic operations.\n\n\
+    The Addition, Subtraction, Multiplication, and Division operators are self explanatory.\
+    \ \n\nThe Modular operator (%) is used for the remnant left after division (we\
+    \ call this the \n\nmodulus). Increment operators are used to increase the value\
+    \ by one whereas the \n\ndecrement operator is used to decrease the value by one.\n\
+    \nFor example, x=x+1 can also be written as x++ whereas y=y-1 can be written as\
+    \ y--."
+  - "[PAGE 13]\n\n7\n\nLogical operators\n\nThe following table displays the different\
+    \ types of logical operators:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_13_0.png)\n\
+    \nThe AND operator is used when all the conditions must be satisfied. For example,\
+    \ X>5 && \n\ny=5 means that x should be greater than 5 and y must be equal to\
+    \ 5 for the condition to \n\nbe true.\n\nThe OR operator is used when one of the\
+    \ conditions must be true. For example, x=5 || y<3 \n\nmeans that the condition\
+    \ is true when x is equal to 5 or y is less than 3.\n\nThe NOT operator is used\
+    \ when the antithesis is true. For example, !(x>5) is true when x \n\nis equal\
+    \ to or less than 5.\n\nConditions and Loops\n\nThe main purpose of JavaScript\
+    \ is to add dynamic functionality. In order to execute a lot \n\nof actions and\
+    \ iterations, we have the concept of conditions and loops in JavaScript. The \n\
+    \nif-else statement is primarily used for various conditions. The structure of\
+    \ the If-else \n\nstatement is as follows:\n\nif (condition)\n\n {\n\n JavaScript\
+    \ statements to be executed\n\n }\n\nelse\n\n {\n\n JavaScript statements to be\
+    \ executed\n\n }\n\nFor example, consider the following code snippet:\n\nIf (i>5)\n\
+    \n {\n\n x=50;\n\n }\n\nelse\n\n {\n\n x=100;\n\n }"
+  - "[PAGE 14]\n\n8\n\nThe interpretation of this code is simple. If the value of\
+    \ i is greater than 5, the value of x will \n\nbe 50. If the value of i is not\
+    \ greater than 5, then the value of x will be 100.\n\nAt times, we know the number\
+    \ of iterations to be performed. Suppose we need to execute \n\nthe code and get\
+    \ the output, say 10 times. At that time, we use loops to perform multiple \n\n\
+    iterations as we know the number of times the loop will be repeated. We will see\
+    \ an example \n\nof the for loop in this chapter.\n\nThe structure of the for\
+    \ loop is as follows:\n\nfor (initialization;condition;increment)\n\n {\n\n JavaScript\
+    \ statements\n\n }\n\nLet us have a look at a code snippet:\n\n<!DOCTYPE html>\n\
+    \n<html>\n\n<body>\n\n<script type=\"text/javascript\">\n\n for (i=0;i<5;i++)\n\
+    \n {\n\n document.write(i+ \"<br>\");\n\n }\n\n</script>\n\n<p>Hi</p>\n\n<p>This\
+    \ is an example of the execution of the for loop</p>\n\n</body>\n\n</html>\n\n\
+    The output of the code on execution would be as follows:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_14_0.png)"
+  - "[PAGE 15]\n\n9\n\nFunctions\n\nFunctions are an integral part of JavaScript.\
+    \ Let's understand the concept of functions. We know \n\nthat the imperative purpose\
+    \ of JavaScript is to add functionality to the web page. Say, we want \n\nto add\
+    \ certain functionality in JavaScript. Suppose we need to implement it on different\
+    \ pages of \n\nthe website or different places on the same web page. Instead of\
+    \ adding functionality each time, \n\nwe can use the concept of functions where\
+    \ we can declare the function once. From there on, we \n\ncan use it multiple\
+    \ times on multiple web pages or at different places on the website.\n\nThere\
+    \ are many inbuilt functions in JavaScript. We can also craft our own functions\
+    \ in \n\nJavaScript and customize them according to our needs. Let's look at the\
+    \ following code \n\nto understand how the functions work:\n\n<!DOCTYPE html>\n\
+    \n<html>\n\n<head>\n\n<title> Java Script in a nutshell </title>\n\n<h1> Functions\
+    \ in JavaScript </h1>\n\n<p> Click on \"Click Here\" to execute the code in the\
+    \ function </p>\n\n<script type=\"text/javascript\">\n\n function PacktPub()\n\
+    \n {\n\n var x = prompt(\"Hey\", \"\");\n\n alert(\"Welcome to Packt, \" + x);\n\
+    \n }\n\n</script>\n\n</head>\n\n<body>\n\n<a href=\"javascript:PacktPub()\">Click\
+    \ Here</a>\n\n</body>\n\n</html>\n\nThe execution of the code will give us the\
+    \ following output:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_15_0.png)"
+  - "[PAGE 16]\n\n10\n\nOn clicking the Click Here link, we can see the following\
+    \ output:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_16_0.png)\n\nWe get a prompt\
+    \ box that requests for an input. Say we enter the name Joe and click on OK. \n\
+    \nWe will get the following alert box as defined in the code.\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_16_1.png)\n\
+    \nLet's now understand how the code works. We have used two inbuilt functions\
+    \ in the code:\n\nf\n\nf\n\nalert\n\nf\n\nf\n\nprompt\n\nalert and prompt are\
+    \ inbuilt functions in JavaScript.\n\nJavaScript is case-sensitive; hence, we\
+    \ must use lowercase for \n\nalert and prompt, otherwise the code will not work."
+  - "[PAGE 17]\n\n11\n\nThe alert and prompt functions are commonly used in JavaScript.\
+    \ An alert box is used \n\nwhen we need to inform the user about some development.\
+    \ It is also used when we want to \n\ngive the user some information prior to\
+    \ clicking on a link or surfing the website. Similarly, a \n\nprompt box is used\
+    \ when we want an input from the user before he accesses the page.\n\nIf you observe\
+    \ the code, it is quite evident that the PacktPub() function was declared prior\
+    \ \n\nto calling it. In the PacktPub() function, we have used the prompt and alert\
+    \ functions. \n\nThe prompt command on execution will prompt the user for an input.\
+    \ The double quotes \n\n(\"\") after Hey are for the default string that has to\
+    \ be entered as the input. In the code, x is \n\na variable that is assigned a\
+    \ prompt function. Again, x is used in the alert command in the \n\nvery next\
+    \ line.\n\nOnce we enter the name Joe, we get an alert: Welcome to Packt, Joe.\n\
+    \nThe concept of functions must be clear by now. Functions are used extensively\
+    \ in JavaScript \n\nand are widely used to return a value in real-world programming.\
+    \ Hence, functions are an \n\nimperative part of JavaScript.\n\nObjects and their\
+    \ role in JavaScript\n\nJavaScript is an object-oriented language. We have inbuilt\
+    \ objects such as Math, Date, and \n\nDocument, to mention a few. However, we\
+    \ can also create our own objects and customize \n\nthem to suit our needs.\n\n\
+    An object has properties and methods to define it. These are attributes that give\
+    \ meaning  \n\nto the object-oriented concept in JavaScript. A property is an\
+    \ attribute that defines values for  \n\nthe object. Methods define the action\
+    \ that can be implemented on the objects.\n\nLet's have a look at the following\
+    \ code to understand how properties define values for  \n\nan object:\n\n<!DOCTYPE\
+    \ html>\n\n<html>\n\n<body>\n\n<script>\n\n var animal=new Object();\n\n animal.species=\"\
+    Dog\";\n\n animal.nickname=\"Monster\";\n\n animal.age=10;\n\n animal.eyecolor=\"\
+    brown\"; \n\n document.write(animal.nickname + \" is a dog that has \" + \n\n\
+    animal.eyecolor + \" eyes\");\n\n</script>\n\n</body>\n\n</html>"
+- md: "\n12\n\nThe output of the code would be as follows:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_18_0.png)\n\
+    \nThus, we have defined properties for a dog called Monster. If you observe the\
+    \ code and the \noutput, we can see that we have connected the properties using\
+    \ string values connected by \nan operator known as the concatenation operator.\
+    \ The concatenation operator is used to \nconnect several pieces of text together.\
+    \ One point to remember is that the empty space in the \nstring is taken into\
+    \ consideration. Observe how we have a space preceding and following the \n\"\
+    \ is a dog that has \" string and how it reflects in the output. Coming back to\
+    \ objects, we have \ndefined the properties for the dog by specifying its name,\
+    \ age, and eye color.\n\nIn JavaScript, all the user-defined objects and the inbuilt\
+    \ objects belong to an object called \nObject. Let's understand the concept of\
+    \ the new operator and the constructor function. In \nthe earlier code, there\
+    \ is a line of code `var animal=new Object();`. Hence, it is evident \nthat the\
+    \ new operator is used to create an instance of the object. The constructor used\
+    \ in \nthis case is Object(). The new operator is always followed by a constructor\
+    \ method. That \nexplains the code structure to create a new object.\n\nInstead\
+    \ of the inbuilt functions, we can also use user-defined functions. Let's have\
+    \ a look at \nthe following code to understand how it works:\n\n<html>\n\n<head>\n\
+    \n<script type=\"text/javascript\">\n\n function rate(cost){\n\n this.sellingPrice\
+    \ = cost;\n\n }\n\n function prose(name, company){\n\n this.name= name; \n\n this.company\
+    \ = company;\n\n this.rate = rate; \n\n }\n\n</script>\n</head>\n\n<body>\n\n\
+    <script type=\"text/javascript\">\n\n var y = new prose(\"JavaScript\", \"Packt\
+    \ Publishing\");\n\n y.rate(50);\n\n document.write(\"The name of the book is\
+    \ \" + y.name+ \"<br>\");\n\n document.write(\"The name of the publishing company\
+    \ is : \" + \ny.company + \"<br>\");\n\n document.write(\"The cost of the book\
+    \ is $\" + y.sellingPrice+ \n\"<br>\");\n\n</script>\n</body>\n\n</html>\n\nThe\
+    \ output of the code would be as follows:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_19_0.png)\n\
+    \nWe need to understand that a function and method are very similar. The only\
+    \ difference is \nthat a function is a standalone bunch of statements whereas\
+    \ a method belongs to an object \nand can be referenced by the this keyword. In\
+    \ the code, we have defined the rate function \nthat will act as the method; then\
+    \ we assign the rate method as a property in the function \nprose. Hence, we have\
+    \ seen the concept of properties and methods in JavaScript objects.\n\nAs we mentioned,\
+    \ JavaScript is an object-oriented language. As with any object-oriented \nlanguage,\
+    \ the OOP concept applies to JavaScript as well. Encapsulation, Inheritance, \n\
+    Abstraction, and Polymorphism are features of OOP that can be applied to JavaScript.\n\
+    \n## Arrays\n\nIn many programming languages such as C++, Java, and PHP to mention\
+    \ a few, we use \nthe concept of arrays. Similarly, we use the concept of arrays\
+    \ in JavaScript too. Objects in \nJavaScript store and allow manipulation of data.\
+    \ So far, we have seen variables that are \nrestricted to a single piece of data.\
+    \ However, in an array, we can store multiple items and \nretrieve them with ease.\n\
+    \nArrays can be created in different ways. Let's have a look at the following\
+    \ code snippet to \nunderstand it better:\n\n```javascript\nvar animals = new\
+    \ Array();\nanimals[0]=\"cat\";\nanimals[1]=\"dog\";\nanimals[2]=\"mouse\";\n\
+    ```\n\nWe can also create an array by entering the items directly within the new\
+    \ Array constructor. \nThe following code snippet will show how it works:\n\n\
+    ```javascript\nvar animals = new Array(\"cat\", \"dog\", \"mouse\");\n```\n\n\
+    We can also define an array without using the new Array constructor.\n\n```javascript\n\
+    var animals = [\"cat\", \"dog\", \"mouse\"];\n```\n\nThe index position of an\
+    \ array starts with 0. The index feature helps us in accessing the data \nstored\
+    \ in the array. Let's say we define the array as follows:\n\n```javascript\nvar\
+    \ animals = [\"cat\", \"dog\", \"mouse\"];\n```\n\nIf we want to retrieve the\
+    \ third item in the array, we need to specify its index position.\n\nLet's have\
+    \ a look at the following code to understand how it works:\n\n<html>\n\n<head>\n\
+    \n<title> Index in Arrays </title>\n</head>\n\n<body>\n\n<script type= \"text/javascript\"\
+    >\n\nvar animals = [\"cat\", \"dog\", \"mouse\"];\n\nvar x = animals[2];\n\ndocument.write(x);\n\
+    \n</script>\n</body>\n\n</html>\n\nThe output of the following code would be as\
+    \ follows:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_20_0.png)\n\nAn array has\
+    \ inbuilt properties and methods. For example, length is a property of arrays.\
+    \ \nLet's have a look at the following code to see how it works:\n\n<html>\n\n\
+    <head>\n\n<title> Index in Arrays </title>\n</head>\n\n<body>\n\n<script type=\
+    \ \"text/javascript\">\n\nvar animals = [\"cat\", \"dog\", \"mouse\"];\n\ny=animals.length\n\
+    \ndocument.write(y);\n\n</script>\n</body>\n\n</html>\n\nThe output of the code\
+    \ would be 3.\n\nIn brief, let's look at the various properties and methods of\
+    \ arrays:\n\n- push: To add an item at the end of the array\n- pop: To remove\
+    \ an item at the end of the array\n- reverse: To reverse the order of elements\
+    \ in the array\n- toString: To convert an array to a string\n- sort: To sort items\
+    \ alphabetically or numerically in an ascending or descending order\n\n## An overview\
+    \ on jQuery – the need of the hour\n\njQuery, a multi-browser JavaScript library,\
+    \ was invented by John Resig. It is an open source \nlibrary. Modern complex websites\
+    \ that have a lot of animation and navigation can be \ndeveloped with ease using\
+    \ jQuery. jQuery mobile (JQM) is also an offshoot of the \nsmartphones and tablets,\
+    \ responsive design is the trend today.\n\nIncluding a hosted copy of jQuery\n\
+    \nWe can use the Content Delivery Network (CDN) of Google or Microsoft to host\
+    \ the jQuery \nfile. Let's have a look at the following code snippet to see how\
+    \ it works.\n\nIf we go to the Google CDN, we can see the following code snippet\
+    \ that has to be included \nin order to use jQuery:\n\n```html\n<script src=\"\
+    //ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js\"></script>\n```\n\n\
+    If we go to the Microsoft CDN, we can see the following code snippet that has\
+    \ to be included \nin order to use jQuery:\n\n```html\n<script src=\"http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js\"\
+    ></script>\n```\n\nWe also have the minified version that can be used:\n\n```html\n\
+    <script src=\"http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js\"></script>\n\
+    ```\n"
+  mdcn: "\n\n12\n\n代码的输出如下：\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_18_0.png)\n\
+    \n因此，我们为一只名为 Monster 的狗定义了属性。如果我们观察代码和输出，我们可以看到我们使用被称为连接运算符（concatenation operator）的运算符通过字符串值连接属性。连接运算符用于将几段文本连接在一起。记住的一点是，字符串中的空格是被考虑在内的。观察我们在\
+    \ \" is a dog that has \" 字符串前后各有一个空格，以及它是如何反映在输出中的。回到对象，我们通过指定名称、年龄和眼睛颜色定义了只狗的属性。\n\
+    \n在 JavaScript 中，所有用户定义的对象和内置对象都属于一个名为 `Object` 的对象。让我们来理解 `new` 运算符和构造函数的概念。在之前的代码中，有一行代码\
+    \ `var animal=new Object();`。因此，显而易见，`new` 运算符被用于创建对象的实例。在这种情况下，使用的构造函数是 `Object()`。`new`\
+    \ 运算符后面总是跟着一个构造方法。这解释了创建新对象的代码结构。\n\n除了内置函数，我们也可以使用用户定义的函数。让我们来看下面的代码以理解它是如何工作的：\n\
+    \n<html>\n\n<head>\n\n<script type=\"text/javascript\">\n\n function rate(cost){\n\
+    \n this.sellingPrice = cost;\n\n }\n\n function prose(name, company){\n\n this.name=\
+    \ name; \n\n this.company = company;\n\n this.rate = rate; \n\n }\n\n</script>\n\
+    </head>\n\n<body>\n\n<script type=\"text/javascript\">\n\n var y = new prose(\"\
+    JavaScript\", \"Packt Publishing\");\n\n y.rate(50);\n\n document.write(\"The\
+    \ name of the book is \" + y.name+\"<br>\");\n\n document.write(\"The name of\
+    \ the publishing company is : \" + \ny.company + \"<br>\");\n\n document.write(\"\
+    The cost of the book is $\" + y.sellingPrice+ \n\"<br>\");\n\n</script>\n</body>\n\
+    \n</html>\n\n代码的输出如下：\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_19_0.png)\n\n\
+    我们需要理解函数和方法非常相似。唯一的区别是，函数是一组独立的语句，而方法属于一个对象，并可以通过 `this` 关键字进行引用。在代码中，我们定义了 `rate`\
+    \ 函数它将作为方法运行；然后我们将 `rate` 方法赋值为 `prose` 函数中的一个属性。因此，我们已经看到了 JavaScript 对象中属性和方法的概念。\n\
+    \n正如我们所提到的，JavaScript 是一种面向对象的语言。和任何其他面向对象的语言一样，OOP 概念也适用于 JavaScript。封装、继承、抽象和多态是适用于\
+    \ JavaScript 的 OOP 特性。\n\n## 数组 (Arrays)\n\n在许多编程语言中，如 C++、Java 和 PHP 等，我们使用数组的概念。同样，我们在\
+    \ JavaScript 中也使用数组的概念。JavaScript 对象存储并允许对数据进行操作。到为止，我们看到的变量局限于单个数据。然而，在数组中，我们可以存储多个项目并轻松地检索它们。\n\
+    \n数组可以通过不同的方式创建。让我们来看下面的代码片段以更好地理解：\n\n```javascript\nvar animals = new Array();\n\
+    animals[0]=\"cat\";\nanimals[1]=\"dog\";\nanimals[2]=\"mouse\";\n```\n\n我们也可以通过在\
+    \ `new Array` 构造函数直接输入项目来创建数组。下面的代码片段将显示它是如何工作的：\n\n```javascript\nvar animals\
+    \ = new Array(\"cat\", \"dog\", \"mouse\");\n```\n\n我们也可以不使用 `new Array` 构造函数来定义数组。\n\
+    \n```javascript\nvar animals = [\"cat\", \"dog\", \"mouse\"];\n```\n\n数组的索引位置从\
+    \ 0 开始。索引功能帮助我们访问存储在数组中的数据。假设我们如下定义数组：\n\n```javascript\nvar animals = [\"cat\"\
+    , \"dog\", \"mouse\"];\n```\n\n如果我们想检索数组中的第三项，我们需要指定它的索引位置。\n\n让我们来看下面的代码以理解它是如何工作的：\n\
+    \n<html>\n\n<head>\n\n<title> 中的索引 </title>\n</head>\n\n<body>\n\n<script type=\
+    \ \"text/javascript\">\n\nvar animals = [\"cat\", \"dog\", \"mouse\"];\n\nvar\
+    \ x = animals[2];\n\ndocument.write(x);\n\n</script>\n</body>\n\n</html>\n\n以下代码的输出如下：\n\
+    \n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_20_0.png)\n\n数组有内置属性和方法。例如，`length`\
+    \ 是数组的属性。让我们来看下面的代码看看它是如何工作的：\n\n<html>\n\n<head>\n\n<title> 中的索引 </title>\n</head>\n\
+    \n<body>\n\n<script type= \"text/javascript\">\n\nvar animals = [\"cat\", \"dog\"\
+    , \"mouse\"];\n\ny=animals.length\n\ndocument.write(y);\n\n</script>\n</body>\n\
+    \n</html>\n\n代码的输出为 3。\n\n简而言之，让我们来看数组的各种属性和方法：\n\n- push: 在数组末尾添加项目\n- pop: 从数组末尾删除项目\n\
+    - reverse: 反转数组中元素的顺序\n- toString: 将数组转换为字符串\n- sort: 按字母顺序或数字顺序升序或降序对项目进行排序\n\
+    \n## jQuery 概述 – 时代所需之需\n\njQuery 是一个多浏览器 JavaScript 库，由 John Resig 发明。它是一个开源库。具有大量动画和导航的现代复杂网站可以使用\
+    \ jQuery 轻松开发。jQuery mobile (JQM) 也是智能手机和平板电脑的衍生产品，响应式设计是今天的趋势。\n\n包含托管副本的 jQuery\n\
+    \n我们可以使用 Google 或 Microsoft 的内容传递网络 (CDN) 来托管 jQuery 文件。让我们来看下面的代码片段看看它是如何工作的。\n\
+    \n如果我们去 Google CDN，我们可以看到为了使用 jQuery 必须包含的代码片段：\n\n```html\n<script src=\"//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js\"\
+    ></script>\n```\n\n如果我们去 Microsoft CDN，我们可以看到为了使用 jQuery 必须包含的代码片段：\n\n```html\n\
+    <script src=\"http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js\"></script>\n\
+    ```\n\n我们还有一个可以使用的压缩版本：\n\n```html\n<script src=\"http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js\"\
+    ></script>\n```\n\n"
+  merge: 0
+  raw:
+  - "[PAGE 18]\n\n12\n\nThe output of the code would be as follows:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_18_0.png)\n\
+    \nThus, we have defined properties for a dog called Monster. If you observe the\
+    \ code and the \n\noutput, we can see that we have connected the properties using\
+    \ string values connected by \n\nan operator known as the concatenation operator.\
+    \ The concatenation operator is used to \n\nconnect several pieces of text together.\
+    \ One point to remember is that the empty space in the \n\nstring is taken into\
+    \ consideration. Observe how we have a space preceding and following the \n\n\"\
+    \ is a dog that has \" string and how it reflects in the output. Coming back to\
+    \ objects, we have \n\ndefined the properties for the dog by specifying its name,\
+    \ age, and eye color.\n\nIn JavaScript, all the user-defined objects and the inbuilt\
+    \ objects belong to an object called \n\nObject. Let's understand the concept\
+    \ of the new operator and the constructor function. In \n\nthe earlier code, there\
+    \ is a line of code var animal=new Object();. Hence, it is evident \n\nthat the\
+    \ new operator is used to create an instance of the object. The constructor used\
+    \ in \n\nthis case is Object(). The new operator is always followed by a constructor\
+    \ method. That \n\nexplains the code structure to create a new object.\n\nInstead\
+    \ of the inbuilt functions, we can also use user-defined functions. Let's have\
+    \ a look at \n\nthe following code to understand how it works:\n\n<html>\n\n<head>\n\
+    \n<script type=\"text/javascript\">\n\n function rate(cost){\n\n this.sellingPrice\
+    \ = cost;\n\n }\n\n function prose(name, company){\n\n this.name= name; \n\n this.company\
+    \ = company;\n\n this.rate = rate; \n\n }\n\n</script>\n\n</head>\n\n<body>\n\n\
+    <script type=\"text/javascript\">\n\n var y = new prose(\"JavaScript\", \"Packt\
+    \ Publishing\");\n\n y.rate(50);\n\n document.write(\"The name of the book is\
+    \ \" + y.name+ \"<br>\");"
+  - "[PAGE 19]\n\n13\n\n document.write(\"The name of the publishing company is :\
+    \ \" + \n\ny.company + \"<br>\");\n\n document.write(\"The cost of the book is\
+    \ $\" + y.sellingPrice+ \n\n\"<br>\");\n\n</script>\n\n</body>\n\n</html>\n\n\
+    The output of the code would be as follows:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_19_0.png)\n\
+    \nWe need to understand that a function and method are very similar. The only\
+    \ difference is \n\nthat a function is a standalone bunch of statements whereas\
+    \ a method belongs to an object \n\nand can be referenced by the this keyword.\
+    \ In the code, we have defined the rate function \n\nthat will act as the method;\
+    \ then we assign the rate method as a property in the function \n\nprose. Hence,\
+    \ we have seen the concept of properties and methods in JavaScript objects.\n\n\
+    As we mentioned, JavaScript is an object-oriented language. As with any object-oriented\
+    \ \n\nlanguage, the OOP concept applies to JavaScript as well. Encapsulation,\
+    \ Inheritance, \n\nAbstraction, and Polymorphism are features of OOP that can\
+    \ be applied to JavaScript.\n\nArrays\n\nIn many programming languages such as\
+    \ C++, Java, and PHP to mention a few, we use \n\nthe concept of arrays. Similarly,\
+    \ we use the concept of arrays in JavaScript too. Objects in \n\nJavaScript store\
+    \ and allow manipulation of data. So far, we have seen variables that are \n\n\
+    restricted to a single piece of data. However, in an array, we can store multiple\
+    \ items and \n\nretrieve them with ease.\n\nArrays can be created in different\
+    \ ways. Let's have a look at the following code snippet to \n\nunderstand it better:\n\
+    \nvar animals = new Array();\n\nanimals\\[0\\]=\"cat\";\n\nanimals\\[1\\]=\"dog\"\
+    ;\n\nanimals\\[2\\]=\"mouse\";\n\nWe can also create an array by entering the\
+    \ items directly within the new Array constructor. \n\nThe following code snippet\
+    \ will show how it works:\n\nvar animals = new Array(\"cat\", \"dog\", \"mouse\"\
+    );"
+  - "[PAGE 20]\n\n14\n\nWe can also define an array without using the new Array constructor.\n\
+    \nvar animals = \\[\"cat\", \"dog\", \"mouse\"\\];\n\nThe index position of an\
+    \ array starts with 0. The index feature helps us in accessing the data \n\nstored\
+    \ in the array. Let's say we define the array as follows:\n\nvar animals = \\\
+    [\"cat\", \"dog\", \"mouse\"\\];\n\nIf we want to retrieve the third item in the\
+    \ array, we need to specify its index position.\n\nLet's have a look at the following\
+    \ code to understand how it works:\n\n<html>\n\n<head>\n\n<title> Index in Arrays\
+    \ </title>\n\n</head>\n\n<body>\n\n<script type= \"text/javascript\">\n\nvar animals\
+    \ = \\[\"cat\", \"dog\", \"mouse\"\\];\n\nvar x = animals\\[2\\];\n\ndocument.write(x);\n\
+    \n</script>\n\n</body>\n\n</html>\n\nThe output of the following code would be\
+    \ as follows:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_20_0.png)\n\nAn array\
+    \ has inbuilt properties and methods. For example, length is a property of arrays.\
+    \ \n\nLet's have a look at the following code to see how it works:\n\n<html>\n\
+    \n<head>\n\n<title> Index in Arrays </title>\n\n</head>\n\n<body>\n\n<script type=\
+    \ \"text/javascript\">\n\nvar animals = \\[\"cat\", \"dog\", \"mouse\"\\];\n\n\
+    y=animals.length"
+  - "[PAGE 21]\n\n15\n\ndocument.write(y);\n\n</script>\n\n</body>\n\n</html>\n\n\
+    The output of the code would be 3.\n\nIn brief, let's look at the various properties\
+    \ and methods of arrays:\n\nf\n\nf\n\npush: To add an item at the end of the array\n\
+    \nf\n\nf\n\npop: To remove an item at the end of the array\n\nf\n\nf\n\nreverse:\
+    \ To reverse the order of elements in the array\n\nf\n\nf\n\ntoString: To convert\
+    \ an array to a string\n\nf\n\nf\n\nsort: To sort items alphabetically or numerically\
+    \ in an ascending or descending order\n\nAn overview on jQuery – the need of the\
+    \ \n\nhour\n\njQuery, a multi-browser JavaScript library, was invented by John\
+    \ Resig. It is an open source \n\nlibrary. Modern complex websites that have a\
+    \ lot of animation and navigation can be \n\ndeveloped with ease using jQuery.\
+    \ jQuery mobile (JQM) is also an offshoot of jQuery. With the \n\nadvent of smartphones\
+    \ and tablets, responsive web design is the trend today. Responsive \n\nweb design\
+    \ can be achieved with the use of jQuery.\n\nAdding jQuery to the web page\n\n\
+    jQuery can be added to the website in the following ways:\n\nf\n\nf\n\nIncluding\
+    \ jQuery locally by downloading a copy of the library\n\nf\n\nf\n\nIncluding a\
+    \ hosted copy of jQuery\n\nLet's have a look at both of the procedures in the\
+    \ next sections.\n\nIncluding jQuery locally by downloading a copy of the library\n\
+    \nWhen we visit the jQuery website at http://jquery.com/ to download the copy\
+    \ of the \n\nlibrary, we can view two different versions. The first version in\
+    \ the download section is \n\nthe Minified Production jQuery version, whereas\
+    \ the second version is the Uncompressed \n\nDevelopment version. There is a difference\
+    \ between the two."
+  - "[PAGE 22]\n\n16\n\nThe Uncompressed Development version is readable and has lots\
+    \ of whitespaces and \n\ncomments to understand the code better. Hence, it is\
+    \ recommended you use the Uncompressed \n\nDevelopment version when you are learning\
+    \ jQuery or are in the development stage.\n\nThe Minified Production version is\
+    \ precise and does not have the whitespaces as in the \n\nUncompressed Development\
+    \ version. Moreover, the variables are given short names and the \n\ncomments\
+    \ removed along with other compression tricks to reduce the size of the file as\
+    \ much \n\nas possible. Hence, during deployment, it is advisable to use the Minified\
+    \ version, as a shorter \n\nfile has to be downloaded on loading the page. Let's\
+    \ see how we add the jQuery file locally.\n\nWhen we go to the website, we can\
+    \ view the Minified Production and Uncompressed \n\nDevelopment versions. Click\
+    \ on the version of your choice and it will be loaded in the browser \n\nas shown\
+    \ in the following figure.\n\nIn our case, we will download the Minified version:\n\
+    \n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_22_0.png)\n\nCopy the contents of the\
+    \ file and save it in a text file giving it an extension .js. In our case, \n\n\
+    we will save it as latestjquery.js. Make sure you are saving the file in the same\
+    \ directory \n\nas your project so that we can call it directly. The following\
+    \ code snippet displays the way we \n\ninclude jQuery in our website:\n\n<!DOCTYPE\
+    \ html>\n\n<html>\n\n<head>\n\n<title>Including jQuery</title>\n\n<script type=\"\
+    text/javascript\" src=\"latestjquery.js\"></script>\n\n<script type=\"text/javascript\"\
+    \ \n\nsrc=\"ourjavascriptpage.js\"></script>\n\n</head>\n\n<body>"
+  - "[PAGE 23]\n\n17\n\n<p>jQuery: an amazing JavaScript library</p>\n\n</body>\n\n\
+    </html>\n\nIn the preceding code, we have invoked latestjquery.js (our jQuery\
+    \ file) prior to any \n\nJavaScript code for example, (ourjavascriptpage.js).\
+    \ Hence, it is quite evident that \n\nwe need to include jQuery first as our code\
+    \ needs to find jQuery fully loaded before we use \n\nit. It is good practice\
+    \ to include the jQuery file in our <head> section as it has to be loaded \n\n\
+    completely. Let's now have a look at the second way of including jQuery to our\
+    \ website.\n\nIncluding a hosted copy of jQuery\n\nWe can use the Content Delivery\
+    \ Network (CDN) of Google or Microsoft to host the jQuery \n\nfile. Let's have\
+    \ a look at the following code snippet to see how it works.\n\nIf we go to the\
+    \ Google CDN, we can see the following code snippet that has to be included in\
+    \ \n\norder to use jQuery:\n\n<script \n\nsrc=\"//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js\"\
+    > \n\n</script>\n\nIf we go to the Microsoft CDN, we can see the following code\
+    \ snippet that has to be included \n\nin order to use jQuery:\n\n<script src=\"\
+    http://ajax.aspnetcdn.com/ajax/jquery/jquery- \n\n1.9.0.js\"></script>\n\nWe also\
+    \ have the minified version that can be used:\n\n<script src=\"http://ajax.aspnetcdn.com/ajax/jquery/jquery-\
+    \ \n\n1.9.0.min.js\"></script>\n\nRemember that we need to include this snippet\
+    \ before our JavaScript file as jQuery has to be \n\nloaded completely if we need\
+    \ to use it.\n\nUsing the document ready feature\n\nBefore we understand the document\
+    \ ready feature, let's look at the following code:\n\n<html>\n\n<head>\n\n<title>Understanding\
+    \ the document ready function</title>\n\n<script src=\"http://ajax.aspnetcdn.com/ajax/jquery/jquery-\
+    \ \n\n1.9.0.js\"></script>\n\n<script type=\"text/javascript\">"
+- md: "\n18\n\n$(\"p\").click(function() {\n  alert(\"Welcome to Packt Publishing\"\
+    );\n});\n\n</script>\n</head>\n\n<body>\n\n<p>Click here to understand the document\
+    \ ready feature</p>\n\n</body>\n</html>\n\nOn execution, we can see the following\
+    \ output:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_24_0.png)\n\nAccording to\
+    \ the code, when we click on the text, an alert dialog box is displayed that reads\
+    \ \n\nWelcome to Packt Publishing.\n\nHowever, we do not see any alert box. This\
+    \ is because the events must be fired, or should perform the desired action, before\
+    \ the page loads. If you observe the code, the alert box is not displayed as the\
+    \ method is not called before the click event takes place. By using the document\
+    \ ready feature, we can solve this issue. Let's tweak the code a bit and include\
+    \ the document ready feature.\n\n<html>\n\n<head>\n<title>Understanding the document\
+    \ ready function</title>\n<script src=\"http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js\"\
+    ></script>\n<script type=\"text/javascript\">\n$(document).ready(function() {\n\
+    \  $(\"p\").click(function() {\n    alert(\"Welcome to Packt Publishing\");\n\
+    \  });\n});\n</script>\n</head>\n\n<body>\n\n<p>Click here to understand the document\
+    \ ready feature</p>\n</body>\n</html>\n\n19\n\nThe code on execution will display\
+    \ the following output:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_25_0.png)\n\
+    \nHowever, the difference here is that on clicking the text in the output, the\
+    \ following alert box gets displayed:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_25_1.png)\n\
+    \nHence, it is a good practice to include the document ready feature in jQuery.\
+    \ We have to use the following syntax to implement the document ready feature:\n\
+    \n$(document).ready(function()\n\nIf we observe the code snippet, the function\
+    \ is the callback function that has to be executed once the document gets ready\
+    \ for implementing jQuery. We can also observe a $ sign. The $ sign is the synonym\
+    \ for the jQuery() function. Instead of writing jQuery before the tag name, tag\
+    \ id, or class, we can use $. It simplifies and shows that it is a jQuery code\
+    \ snippet. Using the appropriate syntax makes up for cleaner and shorter code;\
+    \ this is of prime importance when the page loads.\n\n## Accessing DOM elements\
+    \ using jQuery\n\nSimilar to CSS, we can access elements in the Document Object\
+    \ Model (DOM) using jQuery. In JavaScript, we use the getElementByID function\
+    \ to access elements in the DOM by using their ID. However, we can do that in\
+    \ jQuery in a much shorter code.\n\n20\n\n### Using the ID\n\nLet's have a look\
+    \ at the following code snippet to see how we access the elements by their IDs:\n\
+    \n$(document).ready(function() {\n  var x = $(\"#packt\");\n});\n\nFor an element\
+    \ with an ID packt, we can refer to it using the # operator similar to the way\
+    \ it is done in CSS. We need to remember that the ID has to be preceded by a #\
+    \ and should be enclosed in double quotes.\n\n### Using the class\n\nLet's have\
+    \ a look at the following code snippet to see how we access the elements by their\
+    \ class:\n\n$(document).ready(function() {\n  var y = $(\".pubman\");\n});\n\n\
+    For an element defined with a class pubman, we can refer it using the dot (.)\
+    \ operator. The class has to be preceded by a dot (.) operator similar to the\
+    \ way it is done in CSS. However, the class has to be enclosed in double quotes.\n\
+    \n### Using the tag\n\nLet's have a look at the following code snippet to see\
+    \ how we access the elements by their tag name:\n\n$(document).ready(function)\
+    \ {\n  var links = $(\"a\");\n});\n\nThe elements can be accessed by their tag\
+    \ name in jQuery by referring to the tag enclosed in double quotes.\n\n### Anonymous\
+    \ functions\n\nLet's have a look at the way we use anonymous functions in jQuery.\
+    \ The following code will give us an idea about its functionality:\n\n$(document).ready(function()\
+    \ {\n  $('#packt').click(function() {\n    $('div').remove();\n  });\n});\n\n\
+    Let's understand the meaning of the code.\n\nThe document ready feature has already\
+    \ been explained. Then we query the DOM for the element with the ID packt and\
+    \ we assign a click event to it. Inside the function, we have included the remove\
+    \ method, which will remove the element. \n\n21\n\nThe document ready feature\
+    \ has already been explained. Then we query the DOM for the element with the ID\
+    \ packt and we assign a click event to it. Inside the function, we have included\
+    \ the remove method, which will remove the element. (Wait, let's re-read the flow).\n\
+    \n<html>\n\n<head>\n<title>jQuery Animation</title>\n<script src=\"http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js\"\
+    ></script>\n<script type=\"text/javascript\">\n$(document).ready(function() {\n\
+    \  $(\"#packt\").click(function() {\n    $(\".pubman\").show(2000);\n  });\n \
+    \ $(packt).click(function() {\n    $(\".pubman\").hide(3500);\n  });\n});\n</script>\n\
+    <style>\n.pubman{\nmargin:5px;\npadding:5px;\nborder:3px dashed;\ncolor:lime;\n\
+    display:inline;\nwidth:110px;\nheight:40px;\n}\n</style>\n</head>\n\n<body>\n\n\
+    <br>\n<div class=\"pubman\">Packt Publishing</div>\n<input id=\"packpub\" type=\"\
+    button\" value=\"Click to Hide\" />\n<input id=\"packt\" type=\"button\" value=\"\
+    Click to Display\" />\n</body>\n</html>\n\nLet's have a look at the output on\
+    \ execution:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_28_0.png)\n\nWhen we\
+    \ click on Click to Hide, the box containing the text vanishes. When we click\
+    \ on Click to Display, the box appears again. We have used the show() method as\
+    \ well as the hide() method in jQuery. We have also specified the time in milliseconds\
+    \ for the transition to take place. Hence, we can see how easy it is to create\
+    \ animations using jQuery. There are various other methods as toggle and fade,\
+    \ to mention a few, but we cannot cover everything that jQuery has to offer in\
+    \ this book.\n\n23\n\nCoding gets better with practice. We would really appreciate\
+    \ if you copy the code mentioned in this book on an editor such as Notepad or\
+    \ Notepad++ and practice it. When you implement the things you have learned in\
+    \ this book in real life, you will realize how interesting it is to work on JavaScript.\
+    \ We have covered objects and arrays in this book. There are different kinds of\
+    \ objects such as the Math object and Date object, to mention a few. However,\
+    \ everything cannot be covered here.\n\nIf the right book for you isn’t listed\
+    \ here, you can visit our online library PacktLib at http://packtlib.packtpub.com/\
+    \ for our full list of JavaScript titles as well as a wide range of other technologies.\
+    \ Alternatively, you can check out our responsive browser app at https://app.packtpub.com/\
+    \ using your smartphone or tablet.\n\nFeel free to let us know about the kind\
+    \ of titles that you’d like to see on JavaScript. You can get in touch via contact@packtpub.com.\n\
+    \nYour input is very important to us; it helps us produce better products that\
+    \ help the community more. If you have any feedback on the books, or are struggling\
+    \ with something we haven’t covered, surely let us know. You can e-mail us at\
+    \ customercare@packtpub.com for the same.\n\nTo know more about our future releases,\
+    \ our full catalogue, and daily deals, please visit http://www.packtpub.com/.\n"
+  mdcn: "\n18\n\n$(\"p\").click(function() {\n  alert(\"Welcome to Packt Publishing\"\
+    );\n});\n\n</script>\n</head>\n\n<body>\n\n<p>点击此处理解文档准备就绪（document ready）功能</p>\n\
+    \n</body>\n</html>\n\n执行时，我们可以看到以下输出：\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_24_0.png)\n\
+    \n根据代码，当我们点击文本时，会显示一个如下内容的警告对话框：\n\nWelcome to Packt Publishing.\n\n然而，我们并没有看到任何警告框。这是因为事件必须在页面加载之前触发，或者执行预期的操作。如果你观察代码，警告框没有显示，是因为该方法在点击事件发生之前没有被调用。通过使用文档准备就绪功能，我们可以解决这个问题。让我们稍微调整一下代码并包含文档准备就绪功能。\n\
+    \n<html>\n\n<head>\n<title>理解文档准备就绪函数</title>\n<script src=\"http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js\"\
+    ></script>\n<script type=\"text/javascript\">\n$(document).ready(function() {\n\
+    \  $(\"p\").click(function() {\n    alert(\"Welcome to Packt Publishing\");\n\
+    \  });\n});\n</script>\n</head>\n\n<body>\n\n<p>点击此处理解文档准备就绪（document ready）功能</p>\n\
+    </body>\n</html>\n\n19\n\n代码执行后将显示以下输出：\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_25_0.png)\n\
+    \n然而，这里的区别在于，当点击输出中的文本时，会显示以下警告框：\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_25_1.png)\n\
+    \n因此，在 jQuery 中包含文档准备就绪功能是一个良好的习惯。我们必须使用以下语法来实现文档准备就绪功能：\n\n$(document).ready(function()\n\
+    \n如果我们观察代码片段，该函数是在文档准备就绪以实现 jQuery 后必须执行的回调函数。我们还可以看到一个 $ 符号。$ 符号是 jQuery() 函数的同义词。在标签名、标签\
+    \ ID 或类名之前不需要写 jQuery，而是使用 $。它简化了代码并表明这是一个 jQuery 代码片段。使用适当的语法使代码更整洁、更短；这在页面加载时至关重要。\n\
+    \n## 使用 jQuery 访问 DOM 元素\n\n与 CSS 类似，我们可以使用 jQuery 访问文档对象模型（DOM）中的元素。在 JavaScript\
+    \ 中，我们使用 `getElementByID` 函数通过 ID 访问 DOM 中的元素。然而，在 jQuery 中可以用更短的代码实现这一点。\n\n\
+    20\n\n### 使用 ID\n\n让我们来看这段代码，查看如何通过 ID 访问元素：\n\n$(document).ready(function() {\n\
+    \  var x = $(\"#packt\");\n});\n\n对于 ID 为 `packt` 的元素，我们可以使用 `#` 运算符来引用它，就像在 CSS\
+    \ 中一样。我们需要记住 ID 前必须有一个 `#`，并且应该包含在双引号中。\n\n### 使用类\n\n让我们来看这段代码，查看如何通过类访问元素：\n\
+    \n$(document).ready(function() {\n  var y = $(\".pubman\");\n});\n\n对于定义类为 `pubman`\
+    \ 的元素，我们可以使用点 `.` 运算符来引用它。类的前必须有一个点 `.` 运算符，就像在 CSS 中一样。然而，类必须包含在双引号中。\n\n###\
+    \ 使用标签\n\n让我们来看这段代码，查看如何通过标签名访问元素：\n\n$(document).ready(function) {\n  var links\
+    \ = $(\"a\");\n});\n\n在 jQuery 中，可以通过引用包含在双引号中的标签通过标签名访问元素。\n\n### 匿名函数\n\n让我们来看看在\
+    \ jQuery 中如何使用匿名函数。以下代码将让我们对其功能有所了解：\n\n$(document).ready(function() {\n  $('#packt').click(function()\
+    \ {\n    $('div').remove();\n  });\n});\n\n让我们理解这段代码的含义。\n\n文档准备就绪功能已经解释过了。然后我们查询\
+    \ DOM 中 ID 为 `packt` 的元素，并为它分配一个点击事件。在函数内部，我们包含了 `remove` 方法，它将移除该元素。\n\n21\n\n\
+    文档准备就绪功能已经解释过了。然后我们查询 DOM 中 ID 为 `packt` 的元素，并为它分配一个点击事件。在函数内部，我们包含了 `remove`\
+    \ 方法，它将移除该元素。（等等，让我们重新读一下流程）。\n\n<html>\n\n<head>\n<title>jQuery Animation</title>\n\
+    <script src=\"http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js\"></script>\n\
+    <script type=\"text/javascript\">\n$(document).ready(function() {\n  $(\"#packt\"\
+    ).click(function() {\n    $(\".pubman\").show(2000);\n  });\n  $(packt).click(function()\
+    \ {\n    $(\".pubman\").hide(3500);\n  });\n});\n</script>\n<style>\n.pubman{\n\
+    margin:5px;\npadding:5px;\nborder:3px dashed;\ncolor:lime;\ndisplay:inline;\n\
+    width:110px;\nheight:40px;\n}\n</style>\n</head>\n\n<body>\n\n<br>\n<div class=\"\
+    pubman\">Packt Publishing</div>\n<input id=\"packpub\" type=\"button\" value=\"\
+    隐藏\" />\n<input id=\"packt\" type=\"button\" value=\"显示\" />\n</body>\n</html>\n\
+    \n让我们看看执行时的输出：\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_28_0.png)\n\n当我们点击“隐藏”时，包含文本的框会消失。当我们点击“显示”时，框再次出现。我们在\
+    \ jQuery 中使用了 `show()` 方法以及 `hide()` 方法。我们还指定了过渡的毫秒数。因此，我们可以看到使用 jQuery 创建动画是多么简单。还有其他如\
+    \ `toggle` 和 `fade` 等方法（仅举例），但我们无法在书中涵盖 jQuery 的所有内容。\n\n23\n\n编程会随着练习而进步。我们非常感谢你将书中提到的代码复制到\
+    \ Notepad 或 Notepad++ 等编辑器中进行练习。当你在生活中实现书中中学到的内容时，你会发现操作 JavaScript 是多么有趣。我们在书中涵盖了对象和数组。有不同类型的对象，例如\
+    \ `Math` 对象和 `Date` 对象（仅举例）。然而，这里无法涵盖所有内容。\n\n如果你需要的书没有在这里列出，可以访问我们的在线库 PacktLib\
+    \ (http://packtlib.packtpub.com/) 查看我们完整的 JavaScript 书籍以及广泛的其他技术。或者，你可以使用智能手机或平板电脑查看我们的响应式浏览器应用程序\
+    \ (https://app.packtpub.com/)。\n\n随时告诉我们希望在 JavaScript 上看到哪些类型的书籍。可以通过 contact@packtpub.com\
+    \ 与我们联系。\n\n你的反馈对我们非常重要；它帮助我们生产更好的产品，更好地帮助社区。如果你对书籍有任何反馈，或者在我们涵盖的内容上遇到困难，务必告诉我们。你可以发送电子邮件至\
+    \ customercare@packtpub.com。\n\n要了解更多关于我们未来的发布信息、完整目录和每日优惠，请访问 http://www.packtpub.com/。\n"
+  merge: 0
+  raw:
+  - "[PAGE 24]\n\n18\n\n$(\"p\").click(function() {\n\n alert(\"Welcome to Packt Publishing\"\
+    );\n\n});\n\n</script>\n\n</head>\n\n<body>\n\n<p>Click here to understand the\
+    \ document ready feature</p>\n\n</body>\n\n</html>\n\nOn execution, we can see\
+    \ the following output:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_24_0.png)\n\
+    \nAccording to the code, when we click on the text, an alert dialog box is displayed\
+    \ that reads \n\nWelcome to Packt Publishing.\n\nHowever, we do not see any alert\
+    \ box. This is because the events must be fired, or should \n\nperform the desired\
+    \ action, before the page loads. If you observe the code, the alert box is \n\n\
+    not displayed as the method is not called before the click event takes place.\
+    \ By using the \n\ndocument ready feature, we can solve this issue. Let's tweak\
+    \ the code a bit and include the \n\ndocument ready feature.\n\n<html>\n\n<head>\n\
+    \n<title>Understanding the document ready function</title>\n\n<script src=\"http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js\"\
+    > \n\n</script>\n\n<script type=\"text/javascript\">\n\n$(document).ready(function()\
+    \ {\n\n $(\"p\").click(function() {\n\n alert(\"Welcome to Packt Publishing\"\
+    );\n\n });\n\n});\n\n</script>\n\n</head>\n\n<body>\n\n<p>Click here to understand\
+    \ the document ready feature</p>\n\n</body>\n\n</html>"
+  - "[PAGE 25]\n\n19\n\nThe code on execution will display the following output:\n\
+    \n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_25_0.png)\n\nHowever, the difference\
+    \ here is that on clicking the text in the output, the following alert box \n\n\
+    gets displayed:\n\n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_25_1.png)\n\nHence,\
+    \ it is a good practice to include the document ready feature in jQuery. We have\
+    \ to use \n\nthe following syntax to implement the document ready feature:\n\n\
+    $(document).ready(function()\n\nIf we observe the code snippet, the function is\
+    \ the callback function that has to be executed \n\nonce the document gets ready\
+    \ for implementing jQuery. We can also observe a $ sign. \n\nThe $ sign is the\
+    \ synonym for the jQuery() function. Instead of writing jQuery before \n\nthe\
+    \ tag name, tag id, or class, we can use $. It simplifies and shows that it is\
+    \ a jQuery code \n\nsnippet. Using the appropriate syntax makes up for cleaner\
+    \ and shorter code; this is of \n\nprime importance when the page loads.\n\nAccessing\
+    \ DOM elements using jQuery\n\nSimilar to CSS, we can access elements in the Document\
+    \ Object Model (DOM) using jQuery. \n\nIn JavaScript, we use the getElementByID\
+    \ function to access elements in the DOM by using \n\ntheir ID. However, we can\
+    \ do that in jQuery in a much shorter code."
+  - "[PAGE 26]\n\n20\n\nUsing the ID\n\nLet's have a look at the following code snippet\
+    \ to see how we access the elements by their IDs:\n\n$(document).ready(function()\n\
+    \n {\n\n var x = $(\"#packt\");\n\n });\n\nFor an element with an ID packt, we\
+    \ can refer to it using the # operator similar to the way \n\nit is done in CSS.\
+    \ We need to remember that the ID has to be preceded by a # and should \n\nbe\
+    \ enclosed in double quotes.\n\nUsing the class\n\nLet's have a look at the following\
+    \ code snippet to see how we access the elements by \n\ntheir class:\n\n$(document).ready(function()\n\
+    \n {\n\n var y = $(\".pubman\");\n\n });\n\nFor an element defined with a class\
+    \ pubman, we can refer it using the dot (.) operator. \n\nThe class has to be\
+    \ preceded by a dot (.) operator similar to the way it is done in CSS. \n\nHowever,\
+    \ the class has to be enclosed in double quotes.\n\nUsing the tag\n\nLet's have\
+    \ a look at the following code snippet to see how we access the elements by their\
+    \ \n\ntag name:\n\n$(document).ready(function)\n\n {\n\n var links = $(\"a\");\n\
+    \n });\n\nThe elements can be accessed by their tag name in jQuery by referring\
+    \ to the tag enclosed in \n\ndouble quotes.\n\nAnonymous functions\n\nLet's have\
+    \ a look at the way we use anonymous functions in jQuery.\n\nThe following code\
+    \ will give us an idea about its functionality:\n\n$(document).ready(function()\n\
+    \n {"
+  - "[PAGE 27]\n\n21\n\n $('#packt').click(function()\n\n {\n\n $('div').remove();\n\
+    \n });\n\n });\n\nLet's understand the meaning of the code.\n\nThe document ready\
+    \ feature has already been explained. Then we query the DOM for the \n\nelement\
+    \ with the ID packt and we assign a click event to it. Inside the function, we\
+    \ have \n\nincluded the remove method, which will remove all <div> elements.\n\
+    \nFor the various methods used in jQuery, we can have a look at books such \n\n\
+    as *jQuery for Designers: Beginner's Guide*, which are on the Packt website \n\
+    \nat www.packtpub.com. Alternatively, we can refer to the Packt online \n\nlibrary\
+    \ at http://packtlib.packtpub.com/.\n\njQuery is widely used for animation. We\
+    \ will now have a look at the following code where we \n\nhide and show elements\
+    \ on the web page:\n\n<html>\n\n<head>\n\n<title>jQuery Animation</title>\n\n\
+    <script src=\"http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js\"> \n\n</script>\n\
+    \n<script type=\"text/javascript\">\n\n $(document).ready(function() {\n\n $(\"\
+    #packt\").click(function () {\n\n $(\".pubman\").show( 2000);\n\n });\n\n $(\"\
+    #packtpub\").click(function () {\n\n $(\".pubman\").hide( 3500 );\n\n });\n\n\
+    \ });\n\n</script>\n\n<style>\n\n.pubman{ margin:5px;padding:7px;\n\n border:3px\
+    \ dashed navy;\n\n color:lime;"
+  - "[PAGE 28]\n\n22\n\n width:110px;\n\n height:40px;\n\n display:inline;\n\n }\n\
+    \n</style>\n\n</head>\n\n<body>\n\n<br>\n\n<div class=\"pubman\">\n\nPackt Publishing\n\
+    \n</div>\n\n<input id=\"packtpub\" type=\"button\" value=\"Click here to Hide\"\
+    \ />\n\n<input id=\"packt\" type=\"button\" value=\"Click here to Display\" />\n\
+    \n</body>\n\n</html>\n\nLet's have a look at the output of the code on execution:\n\
+    \n![](img/e2f9ec0935e89c75d7b9cd0b6f17410a_28_0.png)\n\nWhen we click on Click\
+    \ here to Hide, the box containing the text Packt Publishing vanishes. \n\nWhen\
+    \ we click on Click here to Display, the box appears again. We have used the show()\
+    \ \n\nmethod as well as the hide() method in the jQuery code. We have also specified\
+    \ the time in \n\nmilliseconds for the transition to take place.\n\nHence, we\
+    \ can see how easy it is to create animations using jQuery. There are various\
+    \ other \n\nmethods such as toggle and fade, to mention a few, but we cannot cover\
+    \ everything that \n\njQuery has to offer in this book.\n\njQuery is a vast subject\
+    \ and the book will only look at a certain aspect of it. Packt has a lot of \n\
+    \nbooks on jQuery such as *jQuery for Designers: Beginner's Guide*, Packt Publishing,\
+    \ and you \n\ncan visit our web page at http://www.packtpub.com/books?keys=jquery\
+    \ to see the \n\nvarious books on jQuery customized for your needs."
+  - "[PAGE 29]\n\n23\n\nCoding gets better with practice. We would really appreciate\
+    \ if you copy the code mentioned \n\nin this book on an editor such as Notepad\
+    \ or Notepad++ and practice it. When you implement \n\nthe things you have learned\
+    \ in this book in real life, you will realize how interesting it is to work \n\
+    \non JavaScript practically. We have covered objects and arrays in this book.\
+    \ There are different \n\nkinds of objects such as the Math object and Date object,\
+    \ to mention a few. However, \n\neverything cannot be covered here."
+  - "[PAGE 30]\n\nIf the right book for you isn’t listed here, you can visit our online\
+    \ library PacktLib \n\nat http://packtlib.packtpub.com/ for our full list of JavaScript\
+    \ titles as well as \n\na wide range of other technologies. Alternatively, you\
+    \ can check out our responsive \n\nbrowser app at https://app.packtpub.com/ using\
+    \ your smartphone or tablet.\n\nFeel free to let us know about the kind of titles\
+    \ that you’d like to see on JavaScript. \n\nYou can get in touch via contact@packtpub.com.\n\
+    \nYour input is very important to us; it helps us produce better products that\
+    \ help \n\nthe community more. If you have any feedback on the books, or are struggling\
+    \ \n\nwith something we haven’t covered, surely let us know. You can e-mail us\
+    \ at \n\ncustomercare@packtpub.com for the same.\n\nTo know more about our future\
+    \ releases, our full catalogue, and daily deals, please \n\nvisit http://www.packtpub.com/."
