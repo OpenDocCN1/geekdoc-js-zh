@@ -1,0 +1,972 @@
+- img_proc: true
+  md: '![](img/865544a8e1192fb8e223d4b06c92518d_0_0.png)
+
+
+    **Topalian**
+
+
+    **JavaScript**
+
+
+    **Math**
+
+
+    **Generator**
+
+
+    **by**
+
+
+    **Christopher Andrew Topalian**
+
+
+    All Rights Reserved
+
+
+    Copyright 2000-2024'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: '![](img/865544a8e1192fb8e223d4b06c92518d_1_0.png)
+
+
+    **Dedicated**
+
+
+    **to**
+
+
+    **God****the****Father**'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: '![](img/865544a8e1192fb8e223d4b06c92518d_2_0.png)'
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: '# Math Exercise Generator
+
+
+    Generate
+
+
+    25
+
+
+    43
+
+
+    7
+
+
+    Not that'
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: '# Math Exercise Generator
+
+
+    Generate
+
+
+    25
+
+
+    43
+
+
+    68
+
+
+    Correct :-)'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: '# Math Exercise Generator
+
+
+    Generate
+
+
+    89
+
+
+    37
+
+
+    126
+
+
+    Correct :-)'
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: '# Math Exercise Generator
+
+
+    Generate
+
+
+    74
+
+
+    78
+
+
+    152
+
+
+    Correct :-)'
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: '![](img/865544a8e1192fb8e223d4b06c92518d_7_0.png)
+
+
+    **<!-- Dedicated to God the Father -->**
+
+
+    **<!-- All Rights Reserved Christopher Topalian **
+
+
+    **Copyright 2000-2024 -->**
+
+
+    **<!-- https://github.com/ChristopherTopalian --**
+
+
+    **\>**
+
+
+    **<!-- **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n -->**
+
+
+    **<!-- **
+
+
+    **Topalian\_JavaScript\_Math\_Generator.html -->**
+
+
+    **<!-- Version 001 - (2024-01-16) -->**
+
+
+    **<****html****\>**'
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: '![](img/865544a8e1192fb8e223d4b06c92518d_8_0.png)
+
+
+    **<****head****\>**
+
+
+    **<****title****\>**** Topalian JavaScript Math Generator **
+
+
+    **</****title****\>**
+
+
+    **<****link****rel****\=****''****stylesheet****''****href****\=**
+
+
+    **''****css/style001.css****''>**
+
+
+    **<****script****\>**
+
+
+    **function****ge****(****whichId****)**
+
+
+    **{**
+
+
+    **let****result****\=**
+
+
+    **document****.****getElementById****(****whichId****)****;**
+
+
+    **return****result****;**
+
+
+    **}**
+
+
+    **function****ce****(****whichType****)**'
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: '![](img/865544a8e1192fb8e223d4b06c92518d_9_0.png)
+
+
+    **{**
+
+
+    **let****result****\=**
+
+
+    **document****.****createElement****(****whichType****)****;**
+
+
+    **return****result****;**
+
+
+    **}**
+
+
+    **function****ba****(****whichElement****)**
+
+
+    **{**
+
+
+    **let****result****\=**
+
+
+    **document****.****body****.****append****(****whichElement****)****;**
+
+
+    **return****result****;**
+
+
+    **}**
+
+
+    **function****createMathGenerator****()**
+
+
+    **{**
+
+
+    **// mainDiv**'
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: '![](img/865544a8e1192fb8e223d4b06c92518d_10_0.png)
+
+
+    **let****mainDiv****\=****ce****(****''****div****''****)****;**
+
+
+    **mainDiv****.****id****\=****''****mainDiv****'';**
+
+
+    **mainDiv****.****className****\=****''****mainDiv****'';**
+
+
+    **mainDiv****.****style****.****position****\=****''****relative****'';**
+
+
+    **mainDiv****.****style****.****width****\=****300**** + ****''****px****'';**
+
+
+    **ba****(****mainDiv****)****;**
+
+
+    **//-//**
+
+
+    **// theTitle**
+
+
+    **let****theTitle****\=****ce****(****''****div****''****)****;**
+
+
+    **theTitle****.****innerHTML****\=****''****Math Exercise **
+
+
+    **Generator****'';**
+
+
+    **theTitle****.****className****\=****''****theTitle****'';**
+
+
+    **mainDiv****.****append****(****theTitle****)****;**
+
+
+    **//-//**'
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: '![](img/865544a8e1192fb8e223d4b06c92518d_11_0.png)
+
+
+    **// generate button**
+
+
+    **let****generateButton****\=****ce****(****''****button****''****)****;**
+
+
+    **generateButton****.****textContent****\=****''****Generate****'';**
+
+
+    **generateButton****.****id****\=****''****generateButton****'';**
+
+
+    **generateButton****.****className****\=**
+
+
+    **''****buttonStyle001****'';**
+
+
+    **generateButton****.****onclick****\=****function****()**
+
+
+    **{**
+
+
+    **ge****(****''****textBox1****''****)****.****value****\=**
+
+
+    **Math****.****floor****(****Math****.****random****() \* ****100****)****;**
+
+
+    **ge****(****''****textBox2****''****)****.****value****\=**
+
+
+    **Math****.****floor****(****Math****.****random****() \* ****100****)****;**
+
+
+    **ge****(****''****textBox3****''****)****.****value****\=****'''';**
+
+
+    **ge****(****''****textBox4****''****)****.****value****\=****'''';**'
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: '![](img/865544a8e1192fb8e223d4b06c92518d_12_0.png)
+
+
+    **ge****(****''****mainDiv****''****)****.****style****.****borderColor****\=**
+
+
+    **''****rgb(255, 255, 255)****'';**
+
+
+    **};**
+
+
+    **mainDiv****.****append****(****generateButton****)****;**
+
+
+    **//-//**
+
+
+    **// textBox1**
+
+
+    **let****textBox1****\=****ce****(****''****input****''****)****;**
+
+
+    **textBox1****.****type****\=****''****text****'';**
+
+
+    **textBox1****.****value****\=****Math****.****floor****(****Math****.****random****()
+    **
+
+
+    **\* ****100****)****;**
+
+
+    **textBox1****.****id****\=****''****textBox1****'';**
+
+
+    **mainDiv****.****append****(****textBox1****)****;**
+
+
+    **//-//**
+
+
+    **// textBox2**'
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: '![](img/865544a8e1192fb8e223d4b06c92518d_13_0.png)
+
+
+    **let****textBox2****\=****ce****(****''****input****''****)****;**
+
+
+    **textBox2****.****type****\=****''****text****'';**
+
+
+    **textBox2****.****value****\=****Math****.****floor****(****Math****.****random****()
+    **
+
+
+    **\* ****100****)****;**
+
+
+    **textBox2****.****id****\=****''****textBox2****'';**
+
+
+    **mainDiv****.****append****(****textBox2****)****;**
+
+
+    **//-//**
+
+
+    **// textBox3**
+
+
+    **let****textBox3****\=****ce****(****''****input****''****)****;**
+
+
+    **textBox3****.****type****\=****''****text****'';**
+
+
+    **textBox3****.****id****\=****''****textBox3****'';**
+
+
+    **textBox3****.****onchange****\=****function****()**
+
+
+    **{**
+
+
+    **let****text1****\=**
+
+
+    **parseFloat****(****ge****(****''****textBox1****''****)****.****value****)****;**'
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: '![](img/865544a8e1192fb8e223d4b06c92518d_14_0.png)
+
+
+    **let****text2****\=**
+
+
+    **parseFloat****(****ge****(****''****textBox2****''****)****.****value****)****;**
+
+
+    **let****text3****\=**
+
+
+    **parseFloat****(****ge****(****''****textBox3****''****)****.****value****)****;**
+
+
+    **let****evaluated****\=****eval****(****text1**** + ****text2****)****;**
+
+
+    **console****.****log****(****evaluated****)****;**
+
+
+    **if**** (****text3**** == ****evaluated****)**
+
+
+    **{**
+
+
+    **console****.****log****(****''****Correct****''****)****;**
+
+
+    **ge****(****''****textBox4****''****)****.****value****\=****''****Correct :-)****'';**
+
+
+    **ge****(****''****mainDiv****''****)****.****style****.****borderColor****\=**
+
+
+    **''****rgb(0, 255, 255)****'';**'
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: '![](img/865544a8e1192fb8e223d4b06c92518d_15_0.png)
+
+
+    **}**
+
+
+    **else**
+
+
+    **{**
+
+
+    **console****.****log****(****''****Not that****''****)****;**
+
+
+    **ge****(****''****textBox4****''****)****.****value****\=****''****Not that****'';**
+
+
+    **ge****(****''****mainDiv****''****)****.****style****.****borderColor****\=**
+
+
+    **''****rgb(255, 0, 0)****'';**
+
+
+    **}**
+
+
+    **}**
+
+
+    **mainDiv****.****append****(****textBox3****)****;**
+
+
+    **//-//**
+
+
+    **// textBox4**
+
+
+    **let****textBox4****\=****ce****(****''****input****''****)****;**
+
+
+    **textBox4****.****type****\=****''****text****'';**'
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: '![](img/865544a8e1192fb8e223d4b06c92518d_16_0.png)
+
+
+    **textBox4****.****id****\=****''****textBox4****'';**
+
+
+    **mainDiv****.****append****(****textBox4****)****;**
+
+
+    **}**
+
+
+    **</****script****\>**
+
+
+    **</****head****\>**
+
+
+    **<****body****onload****\=****''****createMathGenerator****()****;''>**
+
+
+    **</****body****\>**
+
+
+    **</****html****\>**'
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: '![](img/865544a8e1192fb8e223d4b06c92518d_17_0.png)
+
+
+    **/\* Dedicated to God the Father \*/**
+
+
+    **/\* All Rights Reserved Christopher Topalian **
+
+
+    **Copyright 2000-2024 \*/**
+
+
+    **/\* https://github.com/ChristopherTopalian \*/**
+
+
+    **/\* **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n \*/**
+
+
+    **/\* style001.css \*/**
+
+
+    **body**
+
+
+    **{**
+
+
+    **background-color****:****rgb****(****40****,****40****,****40****);**
+
+
+    **font-family****:****arial****;**
+
+
+    **font-size****:****30px****;**'
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: '![](img/865544a8e1192fb8e223d4b06c92518d_18_0.png)
+
+
+    **color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **}**
+
+
+    **input**
+
+
+    **{**
+
+
+    **padding-left****:****10px****;**
+
+
+    **padding-right****:****10px****;**
+
+
+    **padding-top****:****2px****;**
+
+
+    **padding-bottom****:****2px****;**
+
+
+    **background-color****:****rgb****(****30****,****30****,****30****);**
+
+
+    **font-size****:****30px****;**
+
+
+    **color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **}**
+
+
+    **hr**
+
+
+    **{**
+
+
+    **width****:****100%****;**
+
+
+    **}**'
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: '![](img/865544a8e1192fb8e223d4b06c92518d_19_0.png)
+
+
+    **.****mainDiv**
+
+
+    **{**
+
+
+    **border-style****:****solid****;**
+
+
+    **border-width****:****2px****;**
+
+
+    **display****:****flex****;**
+
+
+    **flex-direction****:****column****;**
+
+
+    **margin****:****auto****;**
+
+
+    **}**
+
+
+    **.****theTitle**
+
+
+    **{**
+
+
+    **padding-left****:****10px****;**
+
+
+    **padding-right****:****10px****;**
+
+
+    **padding-top****:****5px****;**
+
+
+    **padding-bottom****:****5px****;**
+
+
+    **margin****:****auto****;**
+
+
+    **font-family****:****arial****;**'
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: '![](img/865544a8e1192fb8e223d4b06c92518d_20_0.png)
+
+
+    **font-size****:****20px****;**
+
+
+    **}**
+
+
+    **.****buttonStyle001**
+
+
+    **{**
+
+
+    **padding-top****:****3px****;**
+
+
+    **padding-bottom****:****3px****;**
+
+
+    **padding-left****:****10px****;**
+
+
+    **padding-right****:****10px****;**
+
+
+    **border-radius****:****8px****;**
+
+
+    **background-color****:****rgb****(****0****,****0****,****0****);**
+
+
+    **font-family****:****arial****;**
+
+
+    **font-size****:****20px****;**
+
+
+    **color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **}**
+
+
+    **.****buttonStyle001****:****hover**
+
+
+    **{**'
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: '![](img/865544a8e1192fb8e223d4b06c92518d_21_0.png)
+
+
+    **border-color****:****rgb****(****0****,****255****,****255****);**
+
+
+    **}**
+
+
+    **.****buttonStyle001****:****active**
+
+
+    **{**
+
+
+    **color****:****rgb****(****0****,****255****,****255****);**
+
+
+    **}**'
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: '![](img/865544a8e1192fb8e223d4b06c92518d_22_0.png)
+
+
+    **True Artificial Intelligence System**
+
+
+    **Tautology**
+
+
+    **1111**
+
+
+    **Contra-**
+
+
+    **\-diction**
+
+
+    **0000**
+
+
+    **XOR**
+
+
+    **0110**
+
+
+    **XNOR**
+
+
+    **1001**
+
+
+    **AND**
+
+
+    **0001**
+
+
+    **NAND**
+
+
+    **1110**
+
+
+    **OR**
+
+
+    **0111**
+
+
+    **NOR**
+
+
+    **1000**
+
+
+    **MI**
+
+
+    **1101**
+
+
+    **MNI**
+
+
+    **0010**
+
+
+    **LP**
+
+
+    **0011**
+
+
+    **LC**
+
+
+    **1100**
+
+
+    **RP**
+
+
+    **0101**
+
+
+    **RC**
+
+
+    **1010**
+
+
+    **CI**
+
+
+    **1011**
+
+
+    **CNI**
+
+
+    **0100**
+
+
+    **16-Gon**'
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: '![](img/865544a8e1192fb8e223d4b06c92518d_23_0.png)
+
+
+    **For More Tutorials:**
+
+
+    **CollegeOfScripting.weebly.com**
+
+
+    **CollegeOfScripting.wordpress.com**
+
+
+    **Youtube.com/ScriptingCollege**
+
+
+    **Twitter.com/CollegeOfScript**
+
+
+    **GitHub.com/ChristopherTopalian**
+
+
+    **GitHub.com/ChristopherAndrewTopalian**
+
+
+    **Sites.google.com/view/CollegeOfScripting**'
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: '![](img/865544a8e1192fb8e223d4b06c92518d_24_0.png)
+
+
+    **Dedicated to God the Father**
+
+
+    **This book is created by the**
+
+
+    **College of Scripting Music & Science.**
+
+
+    **Always remember, that each time you write a script **
+
+
+    **with a pencil and paper, it becomes imprinted so **
+
+
+    **deeply in memory that the material and methods are**
+
+
+    **learned extremely well.**
+
+
+    **When you Type the scripts, the same is true. The **
+
+
+    **more you type and write out the scripts by keyboard**
+
+
+    **or pencil and paper, the more you will learn **
+
+
+    **programming!**
+
+
+    **Write and Type every example that you find.**
+
+
+    **Keep all of your scripts organized.**
+
+
+    **Every script that you create increases your **
+
+
+    **programming abilities.**
+
+
+    **SEEING CODE, is one thing,**
+
+
+    **but WRITING CODE is another.**
+
+
+    **Write it, Type it, Speak It, See It, Dream It.**
+
+
+    **CollegeOfScripting.weebly.com**'
+  merge: -1
+  pgno: 24
