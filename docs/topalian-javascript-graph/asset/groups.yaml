@@ -1,0 +1,2890 @@
+- md: '
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_0_0.png)
+
+
+    **Topalian**
+
+
+    **JavaScript**
+
+
+    **Graph**
+
+
+    **by**
+
+
+    **Christopher Andrew Topalian**
+
+
+    All Rights Reserved
+
+
+    Copyright 2000-2024
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_1_0.png)
+
+
+    **Dedicated**
+
+
+    **to**
+
+
+    **God the Father**
+
+
+    # Graph Title
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_2_0.png)
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_6_0.png)
+
+
+    # Christopher Topalian
+
+
+    js
+
+    Home
+
+    Share View
+
+
+    Topalian_JavaScript_Graph > js
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_7_0.png)
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_7_1.png)
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_7_2.png)
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_7_3.png)
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_7_4.png)
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_7_5.png)
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_7_6.png)
+
+
+    College of Scripting Music & Science
+
+
+    CollegeOfScripting.weebly.com
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_8_0.png)
+
+
+    <!-- Dedicated to God the Father -->
+
+
+    <!-- All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024 -->
+
+
+    <!-- https://github.com/ChristopherTopalian -->
+
+
+    <!-- https://github.com/ChristopherAndrewTopalian -->
+
+
+    <!-- https://github.com/ChristopherTopalian/TopalianGameEngineDataNavigator -->
+
+
+    <!-- Topalian_JavaScript_Graph.html -->
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_9_0.png)
+
+
+    <!-- Version 001 - (2024-04-23) -->
+
+    <html>
+
+    <head>
+
+    <title>Topalian JavaScript Graph</title>
+
+    <link rel="stylesheet" href="css/style001.css">
+
+    <script src="js/1shortcuts/shortcuts.js"></script>
+
+    <script src="js/2worldVariables/worldVariables.js"></script>
+
+    <script src="js/data/temperature.js"></script>
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_10_0.png)
+
+    <script src="js/make/makeGraph.js"></script>
+
+    <script src="js/make/makeGraphTitle.js"></script>
+
+    <script src="js/make/makeInfoDiv.js"></script>
+
+    <script src="js/make/makeTitleOfApp.js"></script>
+
+    <script src="js/sound/sounds.js"></script>
+
+    <script src="js/sound/loadSounds.js"></script>
+
+    <script src="js/sound/audioPlay.js"></script>
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_11_0.png)
+
+    <script src="js/whenLoaded/whenLoaded.js"></script>
+
+    </head>
+
+    <body onload="whenLoaded()">
+
+    </body>
+
+    </html>
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_12_0.png)
+
+    /* Dedicated to God the Father */
+
+    /* All Rights Reserved Christopher Topalian Copyright 2000-2024 */
+
+    /* https://github.com/ChristopherTopalian */
+
+    /* https://github.com/ChristopherTopalian style001.css */
+
+    body {
+
+    background-color: rgb(0, 0, 0);
+
+    }
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_13_0.png)
+
+    a {
+
+    color: rgb(100, 100, 100);
+
+    text-decoration: none;
+
+    }
+
+    a:hover {
+
+    text-decoration: underline;
+
+    }
+
+    #graphTitle {
+
+    font-family: Arial;
+
+    }
+
+    #mainDiv {
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_14_0.png)
+
+    position: relative;
+
+    width: 75%;
+
+    height: 55%;
+
+    margin: auto;
+
+    padding-right: 25px;
+
+    border: 1px solid rgb(255, 255, 255);
+
+    border-radius: 8px;
+
+    background-color: rgb(83, 83, 83);
+
+    overflow: scroll;
+
+    }
+
+    .dataPoint {
+
+    width: 30px;
+
+    border: 1px solid rgb(255, 255, 255);
+
+    background-color: rgb(20, 20, 20);
+
+    font-family: arial;
+
+    font-size: 17px;
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_15_0.png)
+
+    font-weight: bold;
+
+    color: rgb(255, 255, 255);
+
+    text-align: center;
+
+    }
+
+    .temperatureText {
+
+    position: absolute;
+
+    top: -25px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    }
+
+    .yearLabel {
+
+    position: absolute;
+
+    bottom: -25px;
+
+    left: 50%;
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_16_0.png)
+
+    transform: translateX(-50%);
+
+    font-family: arial;
+
+    font-size: 14px;
+
+    color: rgb(255, 255, 255);
+
+    }
+
+    #infoContainer {
+
+    position: absolute;
+
+    left: 0px;
+
+    right: 0px;
+
+    width: 30%;
+
+    height: 50px;
+
+    margin: auto;
+
+    margin-top: 10px;
+
+    border: 3px solid rgb(255, 255, 255);
+
+    border-radius: 8px;
+
+    padding-left: 10px;
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_17_0.png)
+
+    padding-right: 10px;
+
+    padding-top: 10px;
+
+    padding-bottom: 10px;
+
+    background-color: rgb(0, 0, 0);
+
+    font-family: Arial;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    color: rgb(255, 255, 255);
+
+    text-align: center;
+
+    line-height: 43px;
+
+    overflow: hidden;
+
+    resize: none;
+
+    }
+
+    #titleOfApp {
+
+    font-family: Arial;
+
+    font-weight: bold;
+
+    color: rgb(100, 100, 100);
+
+    }
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_18_0.png)
+
+    /* Dedicated to God the Father */
+
+    /* All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024 */
+
+    /* https://github.com/ChristopherTopalian */
+
+    /* https://github.com/ChristopherAndrewTopalian */
+
+
+    // shortcuts.js
+
+    function ge(whichId) {
+
+    let result = document.getElementById(whichId);
+
+    return result;
+
+    }
+
+    function ce(whichType) {
+
+    let result = document.createElement(whichType);
+
+    return result;
+
+    }
+
+    function ba(whichElement) {
+
+    let result = document.body.append(whichElement);
+
+    return result;
+
+    }
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_21_0.png)
+
+    /* Dedicated to God the Father */
+
+    /* All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024 */
+
+    /* https://github.com/ChristopherTopalian */
+
+    /* https://github.com/ChristopherAndrewTopalian */
+
+
+    // worldVariables.js
+
+    let online = false;
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_22_0.png)
+
+    // temperature.js
+
+    let temperature = [20, 67, 35];
+
+    '
+  mdcn: '
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_0_0.png)
+
+
+    **Topalian**
+
+
+    **JavaScript**
+
+
+    **图表**
+
+
+    **作者**
+
+
+    **Christopher Andrew Topalian**
+
+
+    保留所有权利
+
+
+    Copyright 2000-2024
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_1_0.png)
+
+
+    **献给**
+
+
+    **上帝**
+
+
+    **父神**
+
+
+    # 图表标题
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_2_0.png)
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_6_0.png)
+
+
+    # Christopher Topalian
+
+
+    js
+
+    首页
+
+    分享 视图
+
+
+    Topalian_JavaScript_Graph > js
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_7_0.png)
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_7_1.png)
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_7_2.png)
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_7_3.png)
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_7_4.png)
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_7_5.png)
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_7_6.png)
+
+
+    脚本音乐与科学学院
+
+
+    CollegeOfScripting.weebly.com
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_8_0.png)
+
+
+    <!-- 献给上帝父神 -->
+
+
+    <!-- 保留所有权利 Christopher Andrew Topalian Copyright 2000-2024 -->
+
+
+    <!-- https://github.com/ChristopherTopalian -->
+
+
+    <!-- https://github.com/ChristopherAndrewTopalian -->
+
+
+    <!-- https://github.com/ChristopherTopalian/TopalianGameEngineDataNavigator -->
+
+
+    <!-- Topalian_JavaScript_Graph.html -->
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_9_0.png)
+
+
+    <!-- 版本 001 - (2024-04-23) -->
+
+    <html>
+
+    <head>
+
+    <title>Topalian JavaScript 图表</title>
+
+    <link rel="stylesheet" href="css/style001.css">
+
+    <script src="js/1shortcuts/shortcuts.js"></script>
+
+    <script src="js/2worldVariables/worldVariables.js"></script>
+
+    <script src="js/data/temperature.js"></script>
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_10_0.png)
+
+    <script src="js/make/makeGraph.js"></script>
+
+    <script src="js/make/makeGraphTitle.js"></script>
+
+    <script src="js/make/makeInfoDiv.js"></script>
+
+    <script src="js/make/makeTitleOfApp.js"></script>
+
+    <script src="js/sound/sounds.js"></script>
+
+    <script src="js/sound/loadSounds.js"></script>
+
+    <script src="js/sound/audioPlay.js"></script>
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_11_0.png)
+
+    <script src="js/whenLoaded/whenLoaded.js"></script>
+
+    </head>
+
+    <body onload="whenLoaded()">
+
+    </body>
+
+    </html>
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_12_0.png)
+
+    /* 献给上帝父神 */
+
+    /* 保留所有权利 Christopher Topalian Copyright 2000-2024 */
+
+    /* https://github.com/ChristopherTopalian */
+
+    /* https://github.com/ChristopherTopalian style001.css */
+
+    body {
+
+    background-color: rgb(0, 0, 0);
+
+    }
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_13_0.png)
+
+    a {
+
+    color: rgb(100, 100, 100);
+
+    text-decoration: none;
+
+    }
+
+    a:hover {
+
+    text-decoration: underline;
+
+    }
+
+    #graphTitle {
+
+    font-family: Arial;
+
+    }
+
+    #mainDiv {
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_14_0.png)
+
+    position: relative;
+
+    width: 75%;
+
+    height: 55%;
+
+    margin: auto;
+
+    padding-right: 25px;
+
+    border: 1px solid rgb(255, 255, 255);
+
+    border-radius: 8px;
+
+    background-color: rgb(83, 83, 83);
+
+    overflow: scroll;
+
+    }
+
+    .dataPoint {
+
+    width: 30px;
+
+    border: 1px solid rgb(255, 255, 255);
+
+    background-color: rgb(20, 20, 20);
+
+    font-family: arial;
+
+    font-size: 17px;
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_15_0.png)
+
+    font-weight: bold;
+
+    color: rgb(255, 255, 255);
+
+    text-align: center;
+
+    }
+
+    .temperatureText {
+
+    position: absolute;
+
+    top: -25px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    }
+
+    .yearLabel {
+
+    position: absolute;
+
+    bottom: -25px;
+
+    left: 50%;
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_16_0.png)
+
+    transform: translateX(-50%);
+
+    font-family: arial;
+
+    font-size: 14px;
+
+    color: rgb(255, 255, 255);
+
+    }
+
+    #infoContainer {
+
+    position: absolute;
+
+    left: 0px;
+
+    right: 0px;
+
+    width: 30%;
+
+    height: 50px;
+
+    margin: auto;
+
+    margin-top: 10px;
+
+    border: 3px solid rgb(255, 255, 255);
+
+    border-radius: 8px;
+
+    padding-left: 10px;
+
+    padding-right: 10px;
+
+    padding-top: 10px;
+
+    padding-bottom: 10px;
+
+    background-color: rgb(0, 0, 0);
+
+    font-family: Arial;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    color: rgb(255, 255, 255);
+
+    text-align: center;
+
+    line-height: 43px;
+
+    overflow: hidden;
+
+    resize: none;
+
+    }
+
+    #titleOfApp {
+
+    font-family: Arial;
+
+    font-weight: bold;
+
+    color: rgb(100, 100, 100);
+
+    }
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_18_0.png)
+
+    /* 献给上帝父神 */
+
+    /* 保留所有权利 Christopher Andrew Topalian Copyright 2000-2024 */
+
+    /* https://github.com/ChristopherTopalian */
+
+    /* https://github.com/ChristopherAndrewTopalian */
+
+
+    // shortcuts.js
+
+    function ge(whichId) {
+
+    let result = document.getElementById(whichId);
+
+    return result;
+
+    }
+
+    function ce(whichType) {
+
+    let result = document.createElement(whichType);
+
+    return result;
+
+    }
+
+    function ba(whichElement) {
+
+    let result = document.body.append(whichElement);
+
+    return result;
+
+    }
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_21_0.png)
+
+    /* 献给上帝父神 */
+
+    /* 保留所有权利 Christopher Andrew Topalian Copyright 2000-2024 */
+
+    /* https://github.com/ChristopherTopalian */
+
+    /* https://github.com/ChristopherAndrewTopalian */
+
+
+    // worldVariables.js
+
+    let online = false;
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_22_0.png)
+
+    // temperature.js
+
+    let temperature = [20, 67, 35];
+
+
+    '
+  merge: -1
+  raw:
+  - '[PAGE 0]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_0_0.png)
+
+
+    **Topalian**
+
+
+    **JavaScript**
+
+
+    **Graph**
+
+
+    **by**
+
+
+    **Christopher Andrew Topalian**
+
+
+    All Rights Reserved
+
+
+    Copyright 2000-2024'
+  - '[PAGE 1]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_1_0.png)
+
+
+    **Dedicated**
+
+
+    **to**
+
+
+    **God****the****Father**'
+  - '[PAGE 2]
+
+
+    # Graph Title
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_2_0.png)'
+  - '[PAGE 3]
+
+
+    '
+  - '[PAGE 4]
+
+
+    '
+  - '[PAGE 5]
+
+
+    '
+  - '[PAGE 6]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_6_0.png)'
+  - '[PAGE 7]
+
+
+    # Christopher Topalian
+
+
+    js
+
+    Home
+
+    Share View
+
+
+    Topalian_JavaScript_Graph > js
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_7_0.png)
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_7_1.png)
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_7_2.png)
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_7_3.png)
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_7_4.png)
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_7_5.png)
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_7_6.png)
+
+
+    College of Scripting Music & Science
+
+
+    CollegeOfScripting.weebly.com'
+  - '[PAGE 8]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_8_0.png)
+
+
+    **<!-- Dedicated to God the Father -->**
+
+
+    **<!-- All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024 -->**
+
+
+    **<!-- https://github.com/ChristopherTopalian --**
+
+
+    **\>**
+
+
+    **<!-- **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n -->**
+
+
+    **<!-- **
+
+
+    **https://github.com/ChristopherTopalian/Topal**
+
+
+    **ianGameEngineDataNavigator -->**
+
+
+    **<!-- Topalian\_JavaScript\_Graph.html -->**'
+  - '[PAGE 9]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_9_0.png)
+
+
+    **<!-- Version 001 - (2024-04-23) -->**
+
+
+    **<****html****\>**
+
+
+    **<****head****\>**
+
+
+    **<****title****\>**** Topalian JavaScript Graph ****</****title****\>**
+
+
+    **<****link****rel****\=****''****stylesheet****''****href****\=**
+
+
+    **''****css/style001.css****''>**
+
+
+    **<****script****src****\=**
+
+
+    **''****js/1shortcuts/shortcuts.js****''></****script****\>**
+
+
+    **<****script****src****\=**
+
+
+    **''****js/2worldVariables/worldVariables.js****''></****scrip**
+
+
+    **t****\>**
+
+
+    **<****script****src****\=****''****js/data/temperature.js****''></****script****\>**'
+  - '[PAGE 10]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_10_0.png)
+
+
+    **<****script****src****\=**
+
+
+    **''****js/make/makeGraph.js****''></****script****\>**
+
+
+    **<****script****src****\=**
+
+
+    **''****js/make/makeGraphTitle.js****''></****script****\>**
+
+
+    **<****script****src****\=**
+
+
+    **''****js/make/makeInfoDiv.js****''></****script****\>**
+
+
+    **<****script****src****\=**
+
+
+    **''****js/make/makeTitleOfApp.js****''></****script****\>**
+
+
+    **<****script****src****\=****''****js/sound/sounds.js****''></****script****\>**
+
+
+    **<****script****src****\=**
+
+
+    **''****js/sound/loadSounds.js****''></****script****\>**
+
+
+    **<****script****src****\=****''****js/sound/audioPlay.js****''></****script****\>**'
+  - '[PAGE 11]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_11_0.png)
+
+
+    **<****script****src****\=**
+
+
+    **''****js/whenLoaded/whenLoaded.js****''></****script****\>**
+
+
+    **</****head****\>**
+
+
+    **<****body****onload****\=****"****whenLoaded****()****;">**
+
+
+    **</****body****\>**
+
+
+    **</****html****\>**'
+  - '[PAGE 12]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_12_0.png)
+
+
+    **/\* Dedicated to God the Father \*/**
+
+
+    **/\* All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024 \*/**
+
+
+    **/\* https://github.com/ChristopherTopalian \*/**
+
+
+    **/\* **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n \*/**
+
+
+    **/\* style001.css \*/**
+
+
+    **body**
+
+
+    **{**
+
+
+    **background-color****:****rgb****(****0****,****0****,****0****);**
+
+
+    **}**'
+  - '[PAGE 13]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_13_0.png)
+
+
+    **a**
+
+
+    **{**
+
+
+    **color****:****rgb****(****100****,****100****,****100****);**
+
+
+    **text-decoration****:****none****;**
+
+
+    **}**
+
+
+    **a****:****hover**
+
+
+    **{**
+
+
+    **text-decoration****:****underline****;**
+
+
+    **}**
+
+
+    **#****graphTitle**
+
+
+    **{**
+
+
+    **font-family****:****Arial****;**
+
+
+    **}**
+
+
+    **#****mainDiv**
+
+
+    **{**'
+  - '[PAGE 14]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_14_0.png)
+
+
+    **position****:****relative****;**
+
+
+    **width****:****75****%****;**
+
+
+    **height****:****55****%****;**
+
+
+    **margin****:****auto****;**
+
+
+    **padding-right****:****25****px****;**
+
+
+    **border****:****solid****1****px****rgb****(****255****,****255****,****255****);**
+
+
+    **border-radius****:****8****px****;**
+
+
+    **background-color****:****rgb****(****83****,****83****,****83****);**
+
+
+    **overflow****:****scroll****;**
+
+
+    **}**
+
+
+    **.****dataPoint**
+
+
+    **{**
+
+
+    **width****:****30****px****;**
+
+
+    **border****:****solid****1****px****rgb****(****255****,****255****,****255****);**
+
+
+    **background-color****:****rgb****(****20****,****20****,****20****);**
+
+
+    **font-family****:****arial****;**
+
+
+    **font-size****:****17****px****;**'
+  - '[PAGE 15]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_15_0.png)
+
+
+    **font-weight****:****bold****;**
+
+
+    **color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **text-align****:****center****;**
+
+
+    **}**
+
+
+    **.****temperatureText**
+
+
+    **{**
+
+
+    **position****:****absolute****;**
+
+
+    **top****:****\-25****px****;**
+
+
+    **left****:****50****%****;**
+
+
+    **transform****:****translateX****(****\-50****%****);**
+
+
+    **}**
+
+
+    **.****yearLabel**
+
+
+    **{**
+
+
+    **position****:****absolute****;**
+
+
+    **bottom****:****\-25****px****;**
+
+
+    **left****:****50****%****;**'
+  - '[PAGE 16]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_16_0.png)
+
+
+    **transform****:****translateX****(****\-50****%****);**
+
+
+    **font-family****:****arial****;**
+
+
+    **font-size****:****14****px****;**
+
+
+    **color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **}**
+
+
+    **#****infoContainer**
+
+
+    **{**
+
+
+    **position****:****absolute****;**
+
+
+    **left****:****0****px****;**
+
+
+    **right****:****0****px****;**
+
+
+    **width****:****30****%****;**
+
+
+    **height****:****50****px****;**
+
+
+    **margin****:****auto****;**
+
+
+    **margin-top****:****10****px****;**
+
+
+    **border****:****solid****3****px****rgb****(****255****,****255****,****255****);**
+
+
+    **border-radius****:****8****px****;**
+
+
+    **padding-left****:****10****px****;**'
+  - '[PAGE 17]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_17_0.png)
+
+
+    **padding-right****:****10****px****;**
+
+
+    **padding-top****:****2****px****;**
+
+
+    **padding-bottom****:****2****px****;**
+
+
+    **background-color****:****rgb****(****0****,****0****,****0****);**
+
+
+    **font-family****:****Arial****;**
+
+
+    **font-size****:****30****px****;**
+
+
+    **font-weight****:****bold****;**
+
+
+    **color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **text-align****:****center****;**
+
+
+    **line-height****:****43****px****;**
+
+
+    **overflow****:****hidden****;**
+
+
+    **resize****:****none****;**
+
+
+    **}**
+
+
+    **#****titleOfApp**
+
+
+    **{**
+
+
+    **font-family****:****Arial****;**
+
+
+    **font-weight****:****bold****;**'
+  - '[PAGE 18]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_18_0.png)
+
+
+    **color****:****rgb****(****100****,****100****,****100****);**
+
+
+    **}**'
+  - '[PAGE 19]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_19_0.png)
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// shortcuts.js**
+
+
+    **function****ge****(****whichId****)**
+
+
+    **{**
+
+
+    **let****result****\=**
+
+
+    **document****.****getElementById****(****whichId****)****;**'
+  - '[PAGE 20]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_20_0.png)
+
+
+    **return****result****;**
+
+
+    **}**
+
+
+    **function****ce****(****whichType****)**
+
+
+    **{**
+
+
+    **let****result****\=**
+
+
+    **document****.****createElement****(****whichType****)****;**
+
+
+    **return****result****;**
+
+
+    **}**
+
+
+    **function****ba****(****whichElement****)**
+
+
+    **{**
+
+
+    **let****result****\=**
+
+
+    **document****.****body****.****append****(****whichElement****)****;**
+
+
+    **return****result****;**
+
+
+    **}**'
+  - '[PAGE 21]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_21_0.png)
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// worldVariables.js**
+
+
+    **let****online****\=****false****;**'
+  - '[PAGE 22]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_22_0.png)
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// temperature.js**
+
+
+    **let****temperature****\=**
+
+
+    **\[**
+
+
+    **20****,**
+
+
+    **67****,**
+
+
+    **35****,**'
+- md: "\n![](img/63bc524a4cef522a06a9e633e34f0acf_23_0.png)\n\n**85,**\n**32,**\n\
+    **84,**\n**26,**\n**16,**\n**18,**\n**43,**\n**34,**\n**22,**\n**83,**\n**98,**\n\
+    **38,**\n**48,**\n**77,**\n**70,**\n**40,**\n**82,**\n**21,**\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_24_0.png)\n\
+    \n**50,**\n**78,**\n**87,**\n**45,**\n**75,**\n**45,**\n**48,**\n**90,**\n**50,**\n\
+    **70,**\n**55,**\n**45,**\n**35,**\n**20,**\n**10,**\n**98,**\n**100,**\n**125,**\n\
+    \n![](img/63bc524a4cef522a06a9e633e34f0acf_25_0.png)\n\n**100,**\n**83,**\n**77,**\n\
+    **70,**\n**53,**\n**100,**\n**97,**\n**30,**\n**45,**\n**16,**\n**82];**\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_26_0.png)\n\
+    \n// Dedicated to God the Father\n// All Rights Reserved Christopher Andrew Topalian\
+    \ Copyright 2000-2024\n// https://github.com/ChristopherTopalian\n// https://github.com/ChristopherAndrewTopalian\n\
+    n\n// makeGraph.js\nfunction makeGraph(whichArray) {\n  let xPos = 15;\n  let\
+    \ yPos = 195;\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_27_0.png)\n\n//-//\n\
+    \  let mainDiv = createElement(\"div\");\n  mainDiv.id = 'mainDiv';\n  body(mainDiv);\n\
+    // //-//\n  for (let x = 0; x < whichArray.length; x++) {\n    let dataPoint =\
+    \ createElement(\"div\");\n    dataPoint.id = 'dataPoint' + x;\n    dataPoint.className\
+    \ = \"dataPoint\";\n    dataPoint.style.position = 'absolute';\n    dataPoint.style.left\
+    \ = xPos + \"px\";\n    dataPoint.style.top = yPos - whichArray[x] + \"px\";\n\
+    \n![](img/63bc524a4cef522a06a9e633e34f0acf_28_0.png)\n    dataPoint.style.height\
+    \ = whichArray[x] + \"px\";\n    dataPoint.onmouseover = function() {\n      audioPlay('sfx_001',\
+    \ 1.0);\n      ('temperature' + x).style.color = 'rgb(0, 255, 255)';\n      ('dataPoint'\
+    \ + x).style.borderColor = 'rgb(0, 255, 255)';\n      (infoContainer).value =\
+    \ whichArray[x];\n      (infoContainer).style.borderColor = 'rgb(0, 255, 255)';\n\
+    \n![](img/63bc524a4cef522a06a9e633e34f0acf_29_0.png)\n    };\n    dataPoint.onmouseleave\
+    \ = function() {\n      ('temperature' + x).style.color = 'rgb(255, 255, 255)';\n\
+    \      ('dataPoint' + x).style.borderColor = 'rgb(255, 255, 255)';\n      (infoContainer).style.borderColor\
+    \ = 'rgb(255, 255, 255)';\n      (infoContainer).style.color = 'rgb(255, 255,\
+    \ 255)';\n    };\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_30_0.png)\n    dataPoint.onclick\
+    \ = function() {\n      audioPlay('sfx_blip_001', 1.0);\n      ('temperature'\
+    \ + x).style.color = 'rgb(255, 0, 255)';\n      ('dataPoint' + x).style.borderColor\
+    \ = 'rgb(255, 0, 255)';\n      (infoContainer).style.borderColor = 'rgb(255, 0,\
+    \ 255)';\n      (infoContainer).style.color = 'rgb(255, 0, 255)';\n    };\n  \
+    \  mainDiv.append(dataPoint);\n![](img/63bc524a4cef522a06a9e633e34f0acf_31_0.png)\n\
+    \n// //-//\n    let temperatureText = createElement(\"div\");\n    temperatureText.id\
+    \ = 'temperature' + x;\n    temperatureText.className = \"temperatureText\";\n\
+    \    temperatureText.textContent = whichArray[x];\n    dataPoint.append(temperatureText);\n\
+    // //-//\n    let yearLabel = document.createElement(\"div\");\n    yearLabel.className\
+    \ = \"yearLabel\";\n    yearLabel.textContent = 1990 + x;\n    dataPoint.append(yearLabel);\n\
+    \n![](img/63bc524a4cef522a06a9e633e34f0acf_32_0.png)\n\n// //-//\n    xPos +=\
+    \ 50;\n  }\n// //-//\n  let infoContainer = createElement(\"textarea\");\n  infoContainer.id\
+    \ = 'infoContainer';\n  mainDiv.insertAdjacentElement(\"end\", infoContainer);\n\
+    }\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_33_0.png)\n\n// Dedicated to God\
+    \ the Father\n// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024\n\
+    // https://github.com/ChristopherTopalian\n// https://github.com/ChristopherAndrewTopalian\n\
+    n\n// makeTitle.js\nfunction makeTitle() {\n  let graphTitle = createElement(\"\
+    div\");\n  graphTitle.id = 'graphTitle';\n  graphTitle.innerHTML = 'Graph';\n\n\
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_34_0.png)\n  graphTitle.style.marginBottom\
+    \ = '7px';\n  graphTitle.style.fontSize = '30px';\n  graphTitle.style.fontWeight\
+    \ = 'bold';\n  graphTitle.style.color = 'rgb(255, 255, 255)';\n  graphTitle.style.textAlign\
+    \ = 'center';\n  mainDiv.before(graphTitle);\n}\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_35_0.png)\n\
+    \n// Dedicated to God the Father\n// All Rights Reserved Christopher Andrew Topalian\
+    \ Copyright 2000-2024\n// https://github.com/ChristopherTopalian\n// https://github.com/ChristopherAndrewTopalian\n\
+    n\n// makeInfoDiv.js\nfunction makeInfoDiv() {\n  let infoContainer = createElement(\"\
+    textarea\");\n  infoContainer.id = 'infoContainer';\n  infoContainer.style.position\
+    \ = 'relative';\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_36_0.png)\n  infoContainer.style.margin\
+    \ = 'auto';\n  mainDiv.after(infoContainer);\n}\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_37_0.png)\n\
+    \n// Dedicated to God the Father\n// All Rights Reserved Christopher Andrew Topalian\
+    \ Copyright 2000-2024\n// https://github.com/ChristopherTopalian\n// https://github.com/ChristopherAndrewTopalian\n\
+    n\n// makeTitleOfApp.js\nfunction makeTitleOfApp() {\n  let titleContainer = createElement(\"\
+    div\");\n  titleContainer.style.position = 'absolute';\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_38_0.png)\n\
+    \  titleContainer.style.right = '10px';\n  titleContainer.style.bottom = '5px';\n\
+    \  titleContainer.style.zIndex = 1;\n  body(titleContainer);\n// //-//\n// titleOfApp\n\
+    \  let titleOfApp = createElement(\"div\");\n  titleOfApp.id = 'titleOfApp';\n\
+    \  titleOfApp.innerHTML = `<a href='https://github.com/christophertopalian/topalian_javascript_graph'\
+    \ target='blank'>Topalian JavaScript Graph</a>`;\n  titleContainer.append(titleOfApp);\n\
+    }\n"
+  mdcn: "\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_23_0.png)\n\n**85,**\n**32,**\n\
+    **84,**\n**26,**\n**16,**\n**18,**\n**43,**\n**34,**\n**22,**\n**83,**\n**98,**\n\
+    **38,**\n**48,**\n**77,**\n**70,**\n**40,**\n**82,**\n**21,**\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_24_0.png)\n\
+    \n**50,**\n**78,**\n**87,**\n**45,**\n**75,**\n**45,**\n**48,**\n**90,**\n**50,**\n\
+    **70,**\n**55,**\n**45,**\n**35,**\n**20,**\n**10,**\n**98,**\n**100,**\n**125,**\n\
+    \n![](img/63bc524a4cef522a06a9e633e34f0acf_25_0.png)\n\n**100,**\n**83,**\n**77,**\n\
+    **70,**\n**53,**\n**100,**\n**97,**\n**30,**\n**45,**\n**16,**\n**82];**\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_26_0.png)\n\
+    \n// 献给父神\n// 版权所有 Christopher Andrew Topalian 版权 2000-2024\n// https://github.com/ChristopherTopalian\n\
+    // https://github.com/ChristopherAndrewTopalian\nn\n// makeGraph.js\nfunction\
+    \ makeGraph(whichArray) {\n  let xPos = 15;\n  let yPos = 195;\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_27_0.png)\n\
+    \n//-//\n  let mainDiv = createElement(\"div\");\n  mainDiv.id = 'mainDiv';\n\
+    \  body(mainDiv);\n// //-//\n  for (let x = 0; x < whichArray.length; x++) {\n\
+    \    let dataPoint = createElement(\"div\");\n    dataPoint.id = 'dataPoint' +\
+    \ x;\n    dataPoint.className = \"dataPoint\";\n    dataPoint.style.position =\
+    \ 'absolute';\n    dataPoint.style.left = xPos + \"px\";\n    dataPoint.style.top\
+    \ = yPos - whichArray[x] + \"px\";\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_28_0.png)\n\
+    \    dataPoint.style.height = whichArray[x] + \"px\";\n    dataPoint.onmouseover\
+    \ = function() {\n      audioPlay('sfx_001', 1.0);\n      ('temperature' + x).style.color\
+    \ = 'rgb(0, 255, 255)';\n      ('dataPoint' + x).style.borderColor = 'rgb(0, 255,\
+    \ 255)';\n      (infoContainer).value = whichArray[x];\n      (infoContainer).style.borderColor\
+    \ = 'rgb(0, 255, 255)';\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_29_0.png)\n\
+    \    };\n    dataPoint.onmouseleave = function() {\n      ('temperature' + x).style.color\
+    \ = 'rgb(255, 255, 255)';\n      ('dataPoint' + x).style.borderColor = 'rgb(255,\
+    \ 255, 255)';\n      (infoContainer).style.borderColor = 'rgb(255, 255, 255)';\n\
+    \      (infoContainer).style.color = 'rgb(255, 255, 255)';\n    };\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_30_0.png)\n\
+    \    dataPoint.onclick = function() {\n      audioPlay('sfx_blip_001', 1.0);\n\
+    \      ('temperature' + x).style.color = 'rgb(255, 0, 255)';\n      ('dataPoint'\
+    \ + x).style.borderColor = 'rgb(255, 0, 255)';\n      (infoContainer).style.borderColor\
+    \ = 'rgb(255, 0, 255)';\n      (infoContainer).style.color = 'rgb(255, 0, 255)';\n\
+    \    };\n    mainDiv.append(dataPoint);\n![](img/63bc524a4cef522a06a9e633e34f0acf_31_0.png)\n\
+    \n// //-//\n    let temperatureText = createElement(\"div\");\n    temperatureText.id\
+    \ = 'temperature' + x;\n    temperatureText.className = \"temperatureText\";\n\
+    \    temperatureText.textContent = whichArray[x];\n    dataPoint.append(temperatureText);\n\
+    // //-//\n    let yearLabel = document.createElement(\"div\");\n    yearLabel.className\
+    \ = \"yearLabel\";\n    yearLabel.textContent = 1990 + x;\n    dataPoint.append(yearLabel);\n\
+    \n![](img/63bc524a4cef522a06a9e633e34f0acf_32_0.png)\n\n// //-//\n    xPos +=\
+    \ 50;\n  }\n// //-//\n  let infoContainer = createElement(\"textarea\");\n  infoContainer.id\
+    \ = 'infoContainer';\n  mainDiv.insertAdjacentElement(\"end\", infoContainer);\n\
+    }\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_33_0.png)\n\n// 献给父神\n// 版权所有 Christopher\
+    \ Andrew Topalian 版权 2000-2024\n// https://github.com/ChristopherTopalian\n//\
+    \ https://github.com/ChristopherAndrewTopalian\nn\n// makeTitle.js\nfunction makeTitle()\
+    \ {\n  let graphTitle = createElement(\"div\");\n  graphTitle.id = 'graphTitle';\n\
+    \  graphTitle.innerHTML = '图表';\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_34_0.png)\n\
+    \  graphTitle.style.marginBottom = '7px';\n  graphTitle.style.fontSize = '30px';\n\
+    \  graphTitle.style.fontWeight = 'bold';\n  graphTitle.style.color = 'rgb(255,\
+    \ 255, 255)';\n  graphTitle.style.textAlign = 'center';\n  mainDiv.before(graphTitle);\n\
+    }\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_35_0.png)\n\n// 献给父神\n// 版权所有 Christopher\
+    \ Andrew Topalian 版权 2000-2024\n// https://github.com/ChristopherTopalian\n//\
+    \ https://github.com/ChristopherAndrewTopalian\nn\n// makeInfoDiv.js\nfunction\
+    \ makeInfoDiv() {\n  let infoContainer = createElement(\"textarea\");\n  infoContainer.id\
+    \ = 'infoContainer';\n  infoContainer.style.position = 'relative';\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_36_0.png)\n\
+    \  infoContainer.style.margin = 'auto';\n  mainDiv.after(infoContainer);\n}\n\n\
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_37_0.png)\n\n// 献给父神\n// 版权所有 Christopher\
+    \ Andrew Topalian 版权 2000-2024\n// https://github.com/ChristopherTopalian\n//\
+    \ https://github.com/ChristopherAndrewTopalian\nn\n// makeTitleOfApp.js\nfunction\
+    \ makeTitleOfApp() {\n  let titleContainer = createElement(\"div\");\n  titleContainer.style.position\
+    \ = 'absolute';\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_38_0.png)\n  titleContainer.style.right\
+    \ = '10px';\n  titleContainer.style.bottom = '5px';\n  titleContainer.style.zIndex\
+    \ = 1;\n  body(titleContainer);\n// //-//\n// titleOfApp\n  let titleOfApp = createElement(\"\
+    div\");\n  titleOfApp.id = 'titleOfApp';\n  titleOfApp.innerHTML = `<a href='https://github.com/christophertopalian/topalian_javascript_graph'\
+    \ target='blank'>Topalian JavaScript 图表</a>`;\n  titleContainer.append(titleOfApp);\n\
+    }\n\n"
+  merge: 0
+  raw:
+  - '[PAGE 23]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_23_0.png)
+
+
+    **85****,**
+
+
+    **32****,**
+
+
+    **84****,**
+
+
+    **26****,**
+
+
+    **16****,**
+
+
+    **18****,**
+
+
+    **43****,**
+
+
+    **34****,**
+
+
+    **22****,**
+
+
+    **83****,**
+
+
+    **98****,**
+
+
+    **38****,**
+
+
+    **48****,**
+
+
+    **77****,**
+
+
+    **70****,**
+
+
+    **40****,**
+
+
+    **82****,**
+
+
+    **21****,**'
+  - '[PAGE 24]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_24_0.png)
+
+
+    **50****,**
+
+
+    **78****,**
+
+
+    **87****,**
+
+
+    **45****,**
+
+
+    **75****,**
+
+
+    **45****,**
+
+
+    **48****,**
+
+
+    **90****,**
+
+
+    **50****,**
+
+
+    **70****,**
+
+
+    **55****,**
+
+
+    **45****,**
+
+
+    **35****,**
+
+
+    **20****,**
+
+
+    **10****,**
+
+
+    **98****,**
+
+
+    **100****,**
+
+
+    **125****,**'
+  - '[PAGE 25]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_25_0.png)
+
+
+    **100****,**
+
+
+    **83****,**
+
+
+    **77****,**
+
+
+    **70****,**
+
+
+    **53****,**
+
+
+    **100****,**
+
+
+    **97****,**
+
+
+    **30****,**
+
+
+    **45****,**
+
+
+    **16****,**
+
+
+    **82**
+
+
+    **\]****;**'
+  - '[PAGE 26]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_26_0.png)
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// makeGraph.js**
+
+
+    **function****makeGraph****(****whichArray****)**
+
+
+    **{**
+
+
+    **let****xPos****\=****15****;**
+
+
+    **let****yPos****\=****195****;**'
+  - '[PAGE 27]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_27_0.png)
+
+
+    **//-//**
+
+
+    **let****mainDiv****\=****ce****(****"****div****"****)****;**
+
+
+    **mainDiv****.****id****\=****''****mainDiv****'';**
+
+
+    **ba****(****mainDiv****)****;**
+
+
+    **//-//**
+
+
+    **for**** (****let****x****\=****0****;****x****<****whichArray****.****length****;****x****++****)**
+
+
+    **{**
+
+
+    **let****dataPoint****\=****ce****(****"****div****"****)****;**
+
+
+    **dataPoint****.****id****\=****''****dataPoint****''****+****x****;**
+
+
+    **dataPoint****.****className****\=****"****dataPoint****";**
+
+
+    **dataPoint****.****style****.****position****\=****''****absolute****'';**
+
+
+    **dataPoint****.****style****.****left****\=****xPos****+****"****px****";**
+
+
+    **dataPoint****.****style****.****top****\=****yPos****\-**
+
+
+    **whichArray****\[****x****\] ****+****"****px****";**'
+  - '[PAGE 28]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_28_0.png)
+
+
+    **dataPoint****.****style****.****height****\=****whichArray****\[****x****\]
+    ****+**
+
+
+    **"****px****";**
+
+
+    **dataPoint****.****onmouseover****\=****function****()**
+
+
+    **{**
+
+
+    **audioPlay****(****''****sfx\_warp\_001****'',****1.0****)****;**
+
+
+    **ge****(****''****temperature****''****+****x****)****.****style****.****color****\=**
+
+
+    **''****rgb(0, 255, 255)****'';**
+
+
+    **ge****(****''****dataPoint****''****+****x****)****.****style****.****borderColor****\=**
+
+
+    **''****rgb(0, 255, 255)****'';**
+
+
+    **ge****(****''****infoContainer****''****)****.****value****\=**
+
+
+    **whichArray****\[****x****\]****;**
+
+
+    **ge****(****''****infoContainer****''****)****.****style****.****borderColor****\=**
+
+
+    **''****rgb(0, 255, 255)****'';**'
+  - '[PAGE 29]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_29_0.png)
+
+
+    **ge****(****''****infoContainer****''****)****.****style****.****color****\=****''****rgb(0,**
+
+
+    **255, 255)****'';**
+
+
+    **};**
+
+
+    **dataPoint****.****onmouseleave****\=****function****()**
+
+
+    **{**
+
+
+    **ge****(****''****temperature****''****+****x****)****.****style****.****color****\=**
+
+
+    **''****rgb(255, 255, 255)****'';**
+
+
+    **ge****(****''****dataPoint****''****+****x****)****.****style****.****borderColor****\=**
+
+
+    **''****rgb(255, 255, 255)****'';**
+
+
+    **ge****(****''****infoContainer****''****)****.****style****.****borderColor****\=**
+
+
+    **''****rgb(255, 255, 255)****'';**
+
+
+    **ge****(****''****infoContainer****''****)****.****style****.****color****\=**
+
+
+    **''****rgb(255, 255, 255)****'';**
+
+
+    **};**'
+  - '[PAGE 30]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_30_0.png)
+
+
+    **dataPoint****.****onclick****\=****function****()**
+
+
+    **{**
+
+
+    **audioPlay****(****''****sfx\_blip\_001****'',****1.0****)****;**
+
+
+    **ge****(****''****temperature****''****+****x****)****.****style****.****color****\=**
+
+
+    **''****rgb(255, 0, 255)****'';**
+
+
+    **ge****(****''****dataPoint****''****+****x****)****.****style****.****borderColor****\=**
+
+
+    **''****rgb(255, 0, 255)****'';**
+
+
+    **ge****(****''****infoContainer****''****)****.****style****.****borderColor****\=**
+
+
+    **''****rgb(255, 0, 255)****'';**
+
+
+    **ge****(****''****infoContainer****''****)****.****style****.****color****\=**
+
+
+    **''****rgb(255, 0, 255)****'';**
+
+
+    **};**
+
+
+    **mainDiv****.****append****(****dataPoint****)****;**'
+  - '[PAGE 31]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_31_0.png)
+
+
+    **//-//**
+
+
+    **let****temperatureText****\=****ce****(****"****div****"****)****;**
+
+
+    **temperatureText****.****id****\=****''****temperature****''****+****x****;**
+
+
+    **temperatureText****.****className****\=**
+
+
+    **"****temperatureText****";**
+
+
+    **temperatureText****.****textContent****\=**
+
+
+    **whichArray****\[****x****\]****;**
+
+
+    **dataPoint****.****append****(****temperatureText****)****;**
+
+
+    **//-//**
+
+
+    **let****yearLabel****\=**
+
+
+    **document****.****createElement****(****"****div****"****)****;**
+
+
+    **yearLabel****.****className****\=****"****yearLabel****";**
+
+
+    **yearLabel****.****textContent****\=****1990****+****x****;**
+
+
+    **dataPoint****.****append****(****yearLabel****)****;**'
+  - '[PAGE 32]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_32_0.png)
+
+
+    **//-//**
+
+
+    **xPos****+=****50****;**
+
+
+    **}**
+
+
+    **//-//**
+
+
+    **let****infoContainer****\=****ce****(****''****textarea****''****)****;**
+
+
+    **infoContainer****.****id****\=****''****infoContainer****'';**
+
+
+    **mainDiv****.****insertAdjacentElement****(****"****afterend****",**
+
+
+    **infoContainer****)****;**
+
+
+    **}**'
+  - '[PAGE 33]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_33_0.png)
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// makeGraphTitle.js**
+
+
+    **function****makeGraphTitle****()**
+
+
+    **{**
+
+
+    **let****graphTitle****\=****ce****(****''****div****''****)****;**
+
+
+    **graphTitle****.****id****\=****''****graphTitle****'';**
+
+
+    **graphTitle****.****innerHTML****\=****''****Graph Title****'';**'
+  - '[PAGE 34]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_34_0.png)
+
+
+    **graphTitle****.****style****.****marginBottom****\=****''****7px****'';**
+
+
+    **graphTitle****.****style****.****fontSize****\=****''****30px****'';**
+
+
+    **graphTitle****.****style****.****fontWeight****\=****''****bold****'';**
+
+
+    **graphTitle****.****style****.****color****\=****''****rgb(255, 255, 255)****'';**
+
+
+    **graphTitle****.****style****.****textAlign****\=****''****center****'';**
+
+
+    **ge****(****''****mainDiv****''****)****.****before****(****graphTitle****)****;**
+
+
+    **}**'
+  - '[PAGE 35]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_35_0.png)
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// makeInfoDiv.js**
+
+
+    **function****makeInfoDiv****()**
+
+
+    **{**
+
+
+    **let****infoContainer****\=****ce****(****''****textarea****''****)****;**
+
+
+    **infoContainer****.****id****\=****''****infoContainer****'';**
+
+
+    **infoContainer****.****style****.****position****\=****''****relative****'';**'
+  - '[PAGE 36]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_36_0.png)
+
+
+    **infoContainer****.****style****.****margin****\=****''****auto****'';**
+
+
+    **ge****(****''****mainDiv****''****)****.****after****(****infoContainer****)****;**
+
+
+    **}**'
+  - '[PAGE 37]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_37_0.png)
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// makeTitleOfApp.js**
+
+
+    **function****makeTitleOfApp****()**
+
+
+    **{**
+
+
+    **// titleContainer**
+
+
+    **let****titleContainer****\=****ce****(****''****div****''****)****;**
+
+
+    **titleContainer****.****style****.****position****\=****''****absolute****'';**'
+  - '[PAGE 38]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_38_0.png)
+
+
+    **titleContainer****.****style****.****right****\=****''****10px****'';**
+
+
+    **titleContainer****.****style****.****bottom****\=****''****5px****'';**
+
+
+    **titleContainer****.****style****.****zIndex****\=****1****;**
+
+
+    **ba****(****titleContainer****)****;**
+
+
+    **//-//**
+
+
+    **// titleOfApp**
+
+
+    **let****titleOfApp****\=****ce****(****''****div****''****)****;**
+
+
+    **titleOfApp****.****id****\=****''****titleOfApp****'';**
+
+
+    **titleOfApp****.****innerHTML****\=**
+
+
+    **\`****<a href = **
+
+
+    **''https://github.com/christophertopalian/topali**
+
+
+    **an\_javascript\_graph'' target = ''\_blank''> **
+
+
+    **Topalian JavaScript Graph </a>****\`;**
+
+
+    **titleContainer****.****append****(****titleOfApp****)****;**
+
+
+    **}**'
+- md: "\n![](img/63bc524a4cef522a06a9e633e34f0acf_39_0.png)\n\n// Dedicated to God\
+    \ the Father\n// All Rights Reserved Christopher Andrew \n// Topalian Copyright\
+    \ 2000-2024\n// https://github.com/ChristopherTopalian\n// \nhttps://github.com/ChristopherAndrewTopalia\n\
+    n\n\n// audioPlay.js\nfunction audioPlay(whichId, whichVolume) {\n  let audio\
+    \ = ge(whichId);\n  if (audio) {\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_40_0.png)\n\
+    \  audio.volume = whichVolume;\n  audio.play();\n  }\n}\n\n// Dedicated to God\
+    \ the Father\n// All Rights Reserved Christopher Andrew \n// Topalian Copyright\
+    \ 2000-2024\n// https://github.com/ChristopherTopalian\n// \nhttps://github.com/ChristopherAndrewTopalia\n\
+    n\n\n// loadSounds.js\nfunction loadSounds(whichArray) {\n  for (let x = 0; x\
+    \ < whichArray.length; x++) {\n    let theSound = ce('audio');\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_42_0.png)\n\
+    \    if (online == false) {\n      theSound.src = whichArray[x].soundFileOffline;\n\
+    \    } else {\n      theSound.src = whichArray[x].soundFileOnline;\n    }\n  \
+    \  theSound.id = whichArray[x].name;\n    theSound.loop = false;\n    theSound.volume\
+    \ = 1.0;\n    ba(theSound);\n  }\n}\n\n// Dedicated to God the Father\n// All\
+    \ Rights Reserved Christopher Andrew \n// Topalian Copyright 2000-2024\n// https://github.com/ChristopherTopalian\n\
+    // \nhttps://github.com/ChristopherAndrewTopalia\nn\n\n// sounds.js\nlet sounds\
+    \ = [\n  {\n    name: 'sfx_blip_001',\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_44_0.png)\n\
+    \    soundFileOffline: 'media/sounds/sfx_blip_001.mp4',\n    soundFileOnline:\
+    \ 'https://collegeofscripting.weebly.com/upload/6/4/4/8/64482293/sfx_blip_001.mp4'\n\
+    \  },\n  {\n    name: 'sfx_warp_001',\n    soundFileOffline: 'media/sounds/sfx_warp_001.mp4',\n\
+    \    soundFileOnline: 'https://collegeofscripting.weebly.com/upload/6/4/4/8/64482293/sfx_warp_001.mp4'\n\
+    \  }\n];\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_45_0.png)\n// Dedicated to\
+    \ God the Father\n// All Rights Reserved Christopher Andrew \n// Topalian Copyright\
+    \ 2000-2024\n// https://github.com/ChristopherTopalian\n// \nhttps://github.com/ChristopherAndrewTopalia\n\
+    n\n\n// whenLoaded.js\nfunction whenLoaded() {\n  loadSounds(sounds);\n  makeGraph(sounds);\n\
+    }\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_46_0.png)\nmakeGraphTitle();\nmakeTitleOfApp();\n\
+    }\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_47_0.png)\nTrue Artificial Intelligence\
+    \ System\nTautology\n1111\nContra-diction\n0000\nXOR\n0110\nXNOR\n1001\nAND\n\
+    0001\nNAND\n1110\nOR\n0111\nNOR\n1000\nMI\n1101\nMNI\n0010\nLP\n0011\nLC\n1100\n\
+    RP\n0101\nRC\n1010\nCI\n1011\nCNI\n0100\n16-Gon\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_48_0.png)\n\
+    For More Tutorials:\nGitHub.com/ChristopherTopalian\nGitHub.com/ChristopherAndrewTopalia\n\
+    Sites.google.com/view/CollegeOfScripting\nCollegeOfScripting.weebly.com\nCollegeOfScripting.wordpress.com\n\
+    Youtube.com/ScriptingCollege\nTwitter.com/CollegeOfScript\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_49_0.png)\n\
+    Dedicated to God the Father\nThis book is created by the\nCollege of Scripting\
+    \ Music & Science.\nAlways remember, that each time you write a script\nwith a\
+    \ pencil and paper, it becomes imprinted so\ndeeply in memory that the material\
+    \ and methods are\nlearned extremely well.\nWhen you Type the scripts, the same\
+    \ is true. The\nmore you type and write out the scripts by keyboard ownor pencil\
+    \ and paper, the more you will learn\nprogramming!\nWrite and Type every example\
+    \ that you find.\nKeep all of your scripts organized.\nEvery script that you create\
+    \ increases your\nprogramming abilities.\nWrite it, Type it, Speak it, See it,\
+    \ Dream it.\nCollegeOfScripting.weebly.com\n"
+  mdcn: "\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_39_0.png)\n\n// 献给父神上帝\n// 版权所有\
+    \ Christopher Andrew\n// Topalian 版权 2000-2024\n// https://github.com/ChristopherTopalian\n\
+    // \nhttps://github.com/ChristopherAndrewTopalia\nn\n\n// audioPlay.js\nfunction\
+    \ audioPlay(whichId, whichVolume) {\n  let audio = ge(whichId);\n  if (audio)\
+    \ {\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_40_0.png)\n  audio.volume = whichVolume;\n\
+    \  audio.play();\n  }\n}\n\n// 献给父神上帝\n// 版权所有 Christopher Andrew\n// Topalian\
+    \ 版权 2000-2024\n// https://github.com/ChristopherTopalian\n// \nhttps://github.com/ChristopherAndrewTopalia\n\
+    n\n\n// loadSounds.js\nfunction loadSounds(whichArray) {\n  for (let x = 0; x\
+    \ < whichArray.length; x++) {\n    let theSound = ce('audio');\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_42_0.png)\n\
+    \    if (online == false) {\n      theSound.src = whichArray[x].soundFileOffline;\n\
+    \    } else {\n      theSound.src = whichArray[x].soundFileOnline;\n    }\n  \
+    \  theSound.id = whichArray[x].name;\n    theSound.loop = false;\n    theSound.volume\
+    \ = 1.0;\n    ba(theSound);\n  }\n}\n\n// 献给父神上帝\n// 版权所有 Christopher Andrew\n\
+    // Topalian 版权 2000-2024\n// https://github.com/ChristopherTopalian\n// \nhttps://github.com/ChristopherAndrewTopalia\n\
+    n\n\n// sounds.js\nlet sounds = [\n  {\n    name: 'sfx_blip_001',\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_44_0.png)\n\
+    \    soundFileOffline: 'media/sounds/sfx_blip_001.mp4',\n    soundFileOnline:\
+    \ 'https://collegeofscripting.weebly.com/upload/6/4/4/8/64482293/sfx_blip_001.mp4'\n\
+    \  },\n  {\n    name: 'sfx_warp_001',\n    soundFileOffline: 'media/sounds/sfx_warp_001.mp4',\n\
+    \    soundFileOnline: 'https://collegeofscripting.weebly.com/upload/6/4/4/8/64482293/sfx_warp_001.mp4'\n\
+    \  }\n];\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_45_0.png)\n// 献给父神上帝\n//\
+    \ 版权所有 Christopher Andrew\n// Topalian 版权 2000-2024\n// https://github.com/ChristopherTopalian\n\
+    // \nhttps://github.com/ChristopherAndrewTopalia\nn\n\n// whenLoaded.js\nfunction\
+    \ whenLoaded() {\n  loadSounds(sounds);\n  makeGraph(sounds);\n}\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_46_0.png)\n\
+    makeGraphTitle();\nmakeTitleOfApp();\n}\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_47_0.png)\n\
+    真人工智能系统\n同义反复\n1111\n矛盾\n0000\n异或 (XOR)\n0110\n同异否 (XNOR)\n1001\n与 (AND)\n0001\n\
+    非与 (NAND)\n1110\n或 (OR)\n0111\n非或 (NOR)\n1000\nMI\n1101\nMNI\n0010\nLP\n0011\n\
+    LC\n1100\nRP\n0101\nRC\n1010\nCI\n1011\nCNI\n0100\n16边形\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_48_0.png)\n\
+    更多教程：：\nGitHub.com/ChristopherTopalian\nGitHub.com/ChristopherAndrewTopalia\n\
+    Sites.google.com/view/CollegeOfScripting\nCollegeOfScripting.weebly.com\nCollegeOfScripting.wordpress.com\n\
+    Youtube.com/ScriptingCollege\nTwitter.com/CollegeOfScript\n\n![](img/63bc524a4cef522a06a9e633e34f0acf_49_0.png)\n\
+    献给父神上帝\n本书由编程音乐与科学学院 (College of Scripting Music & Science) 创建。\n请始终记住，每当你用铅笔和纸书写脚本时，它就会深深地印在记忆中，从而很好地学会材料和方法。\n\
+    当你输入脚本时，也是如此。你越通过键盘或铅笔和纸输入并写出脚本，你就能越学到编程！\n写下并输入你找到每一个例子。\n保持你所有的脚本整洁。\n你创建的脚本都会提高你的编程能力。\n\
+    写下它，输入它，说出它，看到它，梦见它。\nCollegeOfScripting.weebly.com\n\n"
+  merge: 0
+  raw:
+  - '[PAGE 39]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_39_0.png)
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// audioPlay.js**
+
+
+    **function****audioPlay****(****whichId****,****whichVolume****)**
+
+
+    **{**
+
+
+    **let****audio****\=****ge****(****whichId****)****;**
+
+
+    **if**** (****audio****)**'
+  - '[PAGE 40]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_40_0.png)
+
+
+    **{**
+
+
+    **audio****.****volume****\=****whichVolume****;**
+
+
+    **audio****.****play****()****;**
+
+
+    **}**
+
+
+    **}**'
+  - '[PAGE 41]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_41_0.png)
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// loadSounds.js**
+
+
+    **function****loadSounds****(****whichArray****)**
+
+
+    **{**
+
+
+    **for**** (****let****x****\=****0****;****x****<****whichArray****.****length****;****x****++****)**
+
+
+    **{**
+
+
+    **let****theSound****\=****ce****(****''****audio****''****)****;**'
+  - '[PAGE 42]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_42_0.png)
+
+
+    **if**** (****online****\==****false****)**
+
+
+    **{**
+
+
+    **theSound****.****src****\=**
+
+
+    **whichArray****\[****x****\]****.****soundFileOffline****;**
+
+
+    **}**
+
+
+    **else**
+
+
+    **{**
+
+
+    **theSound****.****src****\=**
+
+
+    **whichArray****\[****x****\]****.****soundFileOnline****;**
+
+
+    **}**
+
+
+    **theSound****.****id****\=****whichArray****\[****x****\]****.****name****;**
+
+
+    **theSound****.****loop****\=****false****;**
+
+
+    **theSound****.****volume****\=****1.0****;**
+
+
+    **ba****(****theSound****)****;**
+
+
+    **}**
+
+
+    **}**'
+  - '[PAGE 43]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_43_0.png)
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// sounds.js**
+
+
+    **let****sounds****\=**
+
+
+    **\[**
+
+
+    **{**
+
+
+    **name****:****''****sfx\_blip\_001****'',**'
+  - '[PAGE 44]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_44_0.png)
+
+
+    **soundFileOffline****:**
+
+
+    **''****media/sounds/sfx\_blip\_001.mp4****'',**
+
+
+    **soundFileOnline****:**
+
+
+    **''****https://collegeofscripting.weebly.com/upload**
+
+
+    **s/6/4/4/8/64482293/sfx\_blip\_001.mp4****''**
+
+
+    **},**
+
+
+    **{**
+
+
+    **name****:****''****sfx\_warp\_001****'',**
+
+
+    **soundFileOffline****:**
+
+
+    **''****media/sounds/sfx\_warp\_001.mp3****'',**
+
+
+    **soundFileOnline****:**
+
+
+    **''****https://collegeofscripting.weebly.com/upload**
+
+
+    **s/6/4/4/8/64482293/sfx\_warp\_001.mp3****''**
+
+
+    **}**
+
+
+    **\]****;**'
+  - '[PAGE 45]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_45_0.png)
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// whenLoaded.js**
+
+
+    **function****whenLoaded****()**
+
+
+    **{**
+
+
+    **loadSounds****(****sounds****)****;**
+
+
+    **makeGraph****(****temperature****)****;**'
+  - '[PAGE 46]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_46_0.png)
+
+
+    **makeGraphTitle****()****;**
+
+
+    **makeTitleOfApp****()****;**
+
+
+    **}**'
+  - '[PAGE 47]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_47_0.png)
+
+
+    **True Artificial Intelligence System**
+
+
+    **Tautology**
+
+
+    **1111**
+
+
+    **Contra-**
+
+
+    **\-diction**
+
+
+    **0000**
+
+
+    **XOR**
+
+
+    **0110**
+
+
+    **XNOR**
+
+
+    **1001**
+
+
+    **AND**
+
+
+    **0001**
+
+
+    **NAND**
+
+
+    **1110**
+
+
+    **OR**
+
+
+    **0111**
+
+
+    **NOR**
+
+
+    **1000**
+
+
+    **MI**
+
+
+    **1101**
+
+
+    **MNI**
+
+
+    **0010**
+
+
+    **LP**
+
+
+    **0011**
+
+
+    **LC**
+
+
+    **1100**
+
+
+    **RP**
+
+
+    **0101**
+
+
+    **RC**
+
+
+    **1010**
+
+
+    **CI**
+
+
+    **1011**
+
+
+    **CNI**
+
+
+    **0100**
+
+
+    **16-Gon**'
+  - '[PAGE 48]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_48_0.png)
+
+
+    **For More Tutorials:**
+
+
+    **GitHub.com/ChristopherTopalian**
+
+
+    **GitHub.com/ChristopherAndrewTopalian**
+
+
+    **Sites.google.com/view/CollegeOfScripting**
+
+
+    **CollegeOfScripting.weebly.com**
+
+
+    **CollegeOfScripting.wordpress.com**
+
+
+    **Youtube.com/ScriptingCollege**
+
+
+    **Twitter.com/CollegeOfScript**'
+  - '[PAGE 49]
+
+
+    ![](img/63bc524a4cef522a06a9e633e34f0acf_49_0.png)
+
+
+    **Dedicated to God the Father**
+
+
+    **This book is created by the**
+
+
+    **College of Scripting Music & Science.**
+
+
+    **Always remember, that each time you write a script **
+
+
+    **with a pencil and paper, it becomes imprinted so **
+
+
+    **deeply in memory that the material and methods are**
+
+
+    **learned extremely well.**
+
+
+    **When you Type the scripts, the same is true. The **
+
+
+    **more you type and write out the scripts by keyboard**
+
+
+    **or pencil and paper, the more you will learn **
+
+
+    **programming!**
+
+
+    **Write and Type every example that you find.**
+
+
+    **Keep all of your scripts organized.**
+
+
+    **Every script that you create increases your **
+
+
+    **programming abilities.**
+
+
+    **SEEING CODE, is one thing,**
+
+
+    **but WRITING CODE is another.**
+
+
+    **Write it, Type it, Speak it, See it, Dream it.**
+
+
+    **CollegeOfScripting.weebly.com**'
