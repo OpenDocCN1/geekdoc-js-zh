@@ -1,0 +1,2720 @@
+- md: "\n![](img/53420ea31f2d946491030784cbf3b0ae_0_0.png)\n\n**Topalian**\n\n**JavaScript**\n\
+    \n**Graphics**\n\n**Editor**\n\n**by**\n\n**Christopher Andrew Topalian**\n\n\
+    All Rights Reserved\n\nCopyright 2000-2024\n\n![](img/53420ea31f2d946491030784cbf3b0ae_1_0.png)\n\
+    \n**Dedicated**\n\n**to**\n\n**God the Father**\n\n# Christopher Topalian\n\n\
+    ![](img/53420ea31f2d946491030784cbf3b0ae_2_0.png)\n\nCollege of Scripting Music\
+    \ & Science\nCollegeOfScripting.weebly.com\n\n![](img/53420ea31f2d946491030784cbf3b0ae_7_0.png)\n\
+    \n**<!-- Dedicated to God the Father -->**\n\n**<!-- All Rights Reserved Christopher\
+    \ Andrew Topalian Copyright 2000-2024 -->**\n\n**<!-- https://github.com/ChristopherTopalian\
+    \ -->**\n\n**\\>**\n\n**<!-- https://github.com/ChristopherAndrewTopalian**\n\n\
+    **n -->**\n\n**<!-- Topalian_JavaScript_Graphics_Editor.html --\\**\n\n**\\>**\n\
+    \n**<!-- Version 001 - (2024-01-09) -->**\n\n![](img/53420ea31f2d946491030784cbf3b0ae_8_0.png)\n\
+    \n<html>\n<head>\n<title>Topalian JavaScript Graphics Editor</title>\n<link rel='stylesheet'\
+    \ href='css/style001.css'>\n<script>\nfunction ge(whichId) {\n  let result = document.getElementById(whichId);\n\
+    \  return result;\n}\n\nfunction ce(whichType) {\n  let result = document.createElement(whichType);\n\
+    \  return result;\n}\n\nfunction ba(whichElement) {\n  let result = document.body.append(whichElement);\n\
+    \  return result;\n}\n\nfunction menuBrushOptions() {\n  if (ge('mainLineWidthDiv'))\
+    \ {\n    ge('mainLineWidthDiv').remove();\n  }\n  let mainDiv = ce('div');\n \
+    \ mainDiv.id = 'mainLineWidthDiv';\n  mainDiv.style.position = 'fixed';\n  mainDiv.style.right\
+    \ = '3px';\n  mainDiv.style.top = '30px';\n  ba(mainDiv);\n  //-//\n  let brushOptions\
+    \ = ce('div');\n  mainDiv.append(brushOptions);\n  //-//\n\n![](img/53420ea31f2d946491030784cbf3b0ae_1_0.png)\n\
+    let lineWidthText = ce('span');\nlineWidthText.innerHTML = 'Line Width';\nlineWidthText.style.fontSize\
+    \ = '15px';\nbrushOptions.append(lineWidthText);\n//-//\nlet linebreakLineWidthText\
+    \ = ce('br');\nbrushOptions.append(linebreakLineWidthText);\n//-//\nlet lineWidthTextbox\
+    \ = ce('input');\nlineWidthTextbox.type = 'text';\nlineWidthTextbox.id = 'lineWidthTextbox';\n\
+    \n![](img/53420ea31f2d946491030784cbf3b0ae_12_0.png)\nlineWidthTextbox.className\
+    \ = 'inputStyle001';\nlineWidthTextbox.onkeyup = function() {\n  lineWidth = lineWidthTextbox.value;\n\
+    };\nbrushOptions.append(lineWidthTextbox);\n//-//\nlet brushForceLabel = ce('div');\n\
+    brushForceLabel.innerHTML = 'Force N/A';\nbrushForceLabel.id = 'brushForceLabel';\n\
+    brushForceLabel.style.fontSize = '15px';\nbrushOptions.append(brushForceLabel);\n\
+    //-//\n\n![](img/53420ea31f2d946491030784cbf3b0ae_13_0.png)\nlet brushForceTextbox\
+    \ = ce('input');\nbrushForceTextbox.type = 'text';\nbrushForceTextbox.id = 'brushForceTextbox';\n\
+    brushForceTextbox.className = 'inputStyle001';\nbrushForceTextbox.title = 'brushForceTextbox';\n\
+    brushForceTextbox.placeholder = 'N/A';\nbrushForceTextbox.onkeyup = function()\
+    \ {\n  brushForce = brushForceTextbox.value;\n};\nbrushOptions.append(brushForceTextbox);\n\
+    //-//\nbrushOptions.append(ce('br'));\n}\n\nfunction updateLineCap() {\n  if (ge('roundCap'))\
+    \ {\n    ctx.lineCap = 'round';\n  } else if (ge('squareCap')) {\n    ctx.lineCap\
+    \ = 'square';\n  } else if (ge('buttCap')) {\n    ctx.lineCap = 'butt';\n  }\n\
+    }\n\n![](img/53420ea31f2d946491030784cbf3b0ae_15_0.png)\nfunction clearCanvas()\
+    \ {\n  ctx.clearRect(0, 0, canvas.width, canvas.height);\n}\n\nfunction toolboxCreate()\
+    \ {\n  let mainDivToolBox = ce('div');\n  mainDivToolBox.id = 'toolbox';\n  mainDivToolBox.className\
+    \ = 'mainDivToolBox';\n  ba(mainDivToolBox);\n  //-//\n  // saveButton\n  let\
+    \ saveButton = ce('button');\n\n![](img/53420ea31f2d946491030784cbf3b0ae_16_0.png)\n\
+    saveButton.textContent = 'Save';\n  saveButton.id = 'saveButton';\n  saveButton.className\
+    \ = 'toolboxButton';\n  saveButton.onclick = function() {\n    saveDrawing();\n\
+    \  };\n  mainDivToolBox.append(saveButton);\n  //-//\n  let linebreakSaveButton\
+    \ = ce('br');\n  mainDivToolBox.append(linebreakSaveButton);\n  //-//\n\n![](img/53420ea31f2d946491030784cbf3b0ae_17_0.png)\n\
+    // drawButton\nlet drawButton = ce('button');\ndrawButton.textContent = 'Draw';\n\
+    drawButton.id = 'drawButton';\ndrawButton.className = 'toolboxButton';\ndrawButton.onclick\
+    \ = function() {\n  selectTool('draw');\n};\nmainDivToolBox.append(drawButton);\n\
+    //-//\nlet linebreakDrawButton = ce('br');\nmainDivToolBox.append(linebreakDrawButton);\n\
+    \n![](img/53420ea31f2d946491030784cbf3b0ae_18_0.png)\n//-//\n// eraseButton\n\
+    let eraseButton = ce('button');\neraseButton.textContent = 'Erase';\neraseButton.id\
+    \ = 'eraseButton';\neraseButton.className = 'toolboxButton';\neraseButton.onclick\
+    \ = function() {\n  selectTool('erase');\n};\nmainDivToolBox.append(eraseButton);\n\
+    //-//\nlet linebreakEraseButton = ce('br');\n\n![](img/53420ea31f2d946491030784cbf3b0ae_19_0.png)\n\
+    mainDivToolBox.append(linebreakEraseButton);\n//-//\nlet colorChooser = ce('input');\n\
+    colorChooser.id = 'colorChooser';\ncolorChooser.type = 'color';\ncolorChooser.oninput\
+    \ = function() {\n  lineColor = colorChooser.value;\n};\nmainDivToolBox.append(colorChooser);\n\
+    //-//\nmainDivToolBox.append(ce('hr'));\n"
+  mdcn: "\n\n![](img/53420ea31f2d946491030784cbf3b0ae_0_0.png)\n\n**Topalian**\n\n\
+    **JavaScript**\n\n**图形**\n\n**编辑器**\n\n**作者**\n\n**Christopher Andrew Topalian**\n\
+    \n保留所有权利\n\nCopyright 2000-2024\n\n![](img/53420ea31f2d946491030784cbf3b0ae_1_0.png)\n\
+    \n**献给**\n\n**我们的**\n\n**父神**\n\n# Christopher Topalian\n\n![](img/53420ea31f2d946491030784cbf3b0ae_2_0.png)\n\
+    \n脚本音乐与科学学院\nCollegeOfScripting.weebly.com\n\n![](img/53420ea31f2d946491030784cbf3b0ae_7_0.png)\n\
+    \n**<!-- 献给父神 -->**\n\n**<!-- 保留所有权利 Christopher Andrew Topalian Copyright 2000-2024\
+    \ -->**\n\n**<!-- https://github.com/ChristopherTopalian -->**\n\n**\\>**\n\n\
+    **<!-- https://github.com/ChristopherAndrewTopalian**\n\n**n -->**\n\n**<!-- Topalian_JavaScript_Graphics_Editor.html\
+    \ --\\***\n\n**\\>**\n\n**<!-- 版本号 001 - (2024-01-09) -->**\n\n![](img/53420ea31f2d946491030784cbf3b0ae_8_0.png)\n\
+    \n```html\n<head>\n<title>Topalian JavaScript 图形编辑器</title>\n<link rel='stylesheet'\
+    \ href='css/style001.css'>\n<script>\nfunction ge(whichId) {\n  let result = document.getElementById(whichId);\n\
+    \  return result;\n}\n\nfunction ce(whichType) {\n  let result = document.createElement(whichType);\n\
+    \  return result;\n}\n\nfunction ba(whichElement) {\n  let result = document.body.append(whichElement);\n\
+    \  return result;\n}\n\nfunction menuBrushOptions() {\n  if (ge('mainLineWidthDiv'))\
+    \ {\n    ge('mainLineWidthDiv').remove();\n  }\n  let mainDiv = ce('div');\n \
+    \ mainDiv.id = 'mainLineWidthDiv';\n  mainDiv.style.position = 'fixed';\n  mainDiv.style.right\
+    \ = '3px';\n  mainDiv.style.top = '30px';\n  ba(mainDiv);\n  //-//\n  let brushOptions\
+    \ = ce('div');\n  mainDiv.append(brushOptions);\n  //-//\n```\n\n![](img/53420ea31f2d946491030784cbf3b0ae_1_0.png)\n\
+    ```javascript\nlet lineWidthText = ce('span');\nlineWidthText.innerHTML = '线宽';\n\
+    lineWidthText.style.fontSize = '15px';\nbrushOptions.append(lineWidthText);\n\
+    //-//\nlet linebreakLineWidthText = ce('br');\nbrushOptions.append(linebreakLineWidthText);\n\
+    //-//\nlet lineWidthTextbox = ce('input');\nlineWidthTextbox.type = 'text';\n\
+    lineWidthTextbox.id = 'lineWidthTextbox';\n```\n\n![](img/53420ea31f2d946491030784cbf3b0ae_12_0.png)\n\
+    ```javascript\nlineWidthTextbox.className = 'inputStyle001';\nlineWidthTextbox.onkeyup\
+    \ = function() {\n  lineWidth = lineWidthTextbox.value;\n};\nbrushOptions.append(lineWidthTextbox);\n\
+    //-//\nlet brushForceLabel = ce('div');\nbrushForceLabel.innerHTML = '力度 N/A';\n\
+    brushForceLabel.id = 'brushForceLabel';\nbrushForceLabel.style.fontSize = '15px';\n\
+    brushOptions.append(brushForceLabel);\n//-//\n```\n\n![](img/53420ea31f2d946491030784cbf3b0ae_13_0.png)\n\
+    ```javascript\nlet brushForceTextbox = ce('input');\nbrushForceTextbox.type =\
+    \ 'text';\nbrushForceTextbox.id = 'brushForceTextbox';\nbrushForceTextbox.className\
+    \ = 'inputStyle001';\nbrushForceTextbox.title = 'brushForceTextbox';\nbrushForceTextbox.placeholder\
+    \ = 'N/A';\nbrushForceTextbox.onkeyup = function() {\n  brushForce = brushForceTextbox.value;\n\
+    };\nbrushOptions.append(brushForceTextbox);\n//-//\nbrushOptions.append(ce('br'));\n\
+    }\n```\n\n```javascript\nfunction updateLineCap() {\n  if (ge('roundCap')) {\n\
+    \    ctx.lineCap = 'round';\n  } else if (ge('squareCap')) {\n    ctx.lineCap\
+    \ = 'square';\n  } else if (ge('buttCap')) {\n    ctx.lineCap = 'butt';\n  }\n\
+    }\n```\n\n![](img/53420ea31f2d946491030784cbf3b0ae_15_0.png)\n```javascript\n\
+    function clearCanvas() {\n  ctx.clearRect(0, 0, canvas.width, canvas.height);\n\
+    }\n\nfunction toolboxCreate() {\n  let mainDivToolBox = ce('div');\n  mainDivToolBox.id\
+    \ = 'toolbox';\n  mainDivToolBox.className = 'mainDivToolBox';\n  ba(mainDivToolBox);\n\
+    \  //-//\n  // saveButton\n  let saveButton = ce('button');\n```\n\n![](img/53420ea31f2d946491030784cbf3b0ae_16_0.png)\n\
+    ```javascript\nsaveButton.textContent = '保存';\n  saveButton.id = 'saveButton';\n\
+    \  saveButton.className = 'toolboxButton';\n  saveButton.onclick = function()\
+    \ {\n    saveDrawing();\n  };\n  mainDivToolBox.append(saveButton);\n  //-//\n\
+    \  let linebreakSaveButton = ce('br');\n  mainDivToolBox.append(linebreakSaveButton);\n\
+    \  //-//\n```\n\n![](img/53420ea31f2d946491030784cbf3b0ae_17_0.png)\n```javascript\n\
+    // drawButton\nlet drawButton = ce('button');\ndrawButton.textContent = '绘制';\n\
+    drawButton.id = 'drawButton';\ndrawButton.className = 'toolboxButton';\ndrawButton.onclick\
+    \ = function() {\n  selectTool('draw');\n};\nmainDivToolBox.append(drawButton);\n\
+    //-//\nlet linebreakDrawButton = ce('br');\nmainDivToolBox.append(linebreakDrawButton);\n\
+    ```\n\n![](img/53420ea31f2d946491030784cbf3b0ae_18_0.png)\n```javascript\n//-//\n\
+    // eraseButton\nlet eraseButton = ce('button');\neraseButton.textContent = '擦除';\n\
+    eraseButton.id = 'eraseButton';\neraseButton.className = 'toolboxButton';\neraseButton.onclick\
+    \ = function() {\n  selectTool('erase');\n};\nmainDivToolBox.append(eraseButton);\n\
+    //-//\nlet linebreakEraseButton = ce('br');\n```\n\n![](img/53420ea31f2d946491030784cbf3b0ae_19_0.png)\n\
+    ```javascript\nmainDivToolBox.append(linebreakEraseButton);\n//-//\nlet colorChooser\
+    \ = ce('input');\ncolorChooser.id = 'colorChooser';\ncolorChooser.type = 'color';\n\
+    colorChooser.oninput = function() {\n  lineColor = colorChooser.value;\n};\nmainDivToolBox.append(colorChooser);\n\
+    //-//\nmainDivToolBox.append(ce('hr'));\n```\n\n"
+  merge: -1
+  raw:
+  - '[PAGE 0]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_0_0.png)
+
+
+    **Topalian**
+
+
+    **JavaScript**
+
+
+    **Graphics**
+
+
+    **Editor**
+
+
+    **by**
+
+
+    **Christopher Andrew Topalian**
+
+
+    All Rights Reserved
+
+
+    Copyright 2000-2024'
+  - '[PAGE 1]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_1_0.png)
+
+
+    **Dedicated**
+
+
+    **to**
+
+
+    **God****the****Father**'
+  - '[PAGE 2]
+
+
+    # Christopher Topalian
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_2_0.png)
+
+
+    College of Scripting Music & Science
+
+
+    CollegeOfScripting.weebly.com'
+  - '[PAGE 3]
+
+
+    <!-- no content -->'
+  - '[PAGE 4]
+
+
+    '
+  - '[PAGE 5]
+
+
+    <!-- no content -->'
+  - '[PAGE 6]
+
+
+    '
+  - '[PAGE 7]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_7_0.png)
+
+
+    **<!-- Dedicated to God the Father -->**
+
+
+    **<!-- All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024 -->**
+
+
+    **<!-- https://github.com/ChristopherTopalian --**
+
+
+    **\>**
+
+
+    **<!-- **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n -->**
+
+
+    **<!-- **
+
+
+    **Topalian\_JavaScript\_Graphics\_Editor.html --**
+
+
+    **\>**
+
+
+    **<!-- Version 001 - (2024-01-09) -->**'
+  - '[PAGE 8]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_8_0.png)
+
+
+    **<****html****\>**
+
+
+    **<****head****\>**
+
+
+    **<****title****\>**** Topalian JavaScript Graphics Editor **
+
+
+    **</****title****\>**
+
+
+    **<****link****rel****\=****''****stylesheet****''****href****\=**
+
+
+    **''****css/style001.css****''>**
+
+
+    **<****script****\>**
+
+
+    **function****ge****(****whichId****)**
+
+
+    **{**
+
+
+    **let****result****\=**
+
+
+    **document****.****getElementById****(****whichId****)****;**
+
+
+    **return****result****;**
+
+
+    **}**'
+  - '[PAGE 9]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_9_0.png)
+
+
+    **function****ce****(****whichType****)**
+
+
+    **{**
+
+
+    **let****result****\=**
+
+
+    **document****.****createElement****(****whichType****)****;**
+
+
+    **return****result****;**
+
+
+    **}**
+
+
+    **function****ba****(****whichElement****)**
+
+
+    **{**
+
+
+    **let****result****\=**
+
+
+    **document****.****body****.****append****(****whichElement****)****;**
+
+
+    **return****result****;**
+
+
+    **}**
+
+
+    **function****menuBrushOptions****()**
+
+
+    **{**'
+  - '[PAGE 10]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_10_0.png)
+
+
+    **if**** (****ge****(****''****mainLineWidthDiv****''****))**
+
+
+    **{**
+
+
+    **ge****(****''****mainLineWidthDiv****''****)****.****remove****()****;**
+
+
+    **}**
+
+
+    **let****mainDiv****\=****ce****(****''****div****''****)****;**
+
+
+    **mainDiv****.****id****\=****''****mainLineWidthDiv****'';**
+
+
+    **mainDiv****.****style****.****position****\=****''****fixed****'';**
+
+
+    **mainDiv****.****style****.****right****\=****''****3px****'';**
+
+
+    **mainDiv****.****style****.****top****\=****''****30px****'';**
+
+
+    **ba****(****mainDiv****)****;**
+
+
+    **//-//**
+
+
+    **let****brushOptions****\=****ce****(****''****div****''****)****;**
+
+
+    **mainDiv****.****append****(****brushOptions****)****;**
+
+
+    **//-//**'
+  - '[PAGE 11]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_11_0.png)
+
+
+    **let****lineWidthText****\=****ce****(****''****span****''****)****;**
+
+
+    **lineWidthText****.****innerHTML****\=****''****Line Width****'';**
+
+
+    **lineWidthText****.****style****.****fontSize****\=****''****15px****'';**
+
+
+    **brushOptions****.****append****(****lineWidthText****)****;**
+
+
+    **//-//**
+
+
+    **let****linebreakUnderLineWidthText****\=****ce****(****''****br****''****)****;**
+
+
+    **brushOptions****.****append****(****linebreakUnderLineWi**
+
+
+    **dthText****)****;**
+
+
+    **//-//**
+
+
+    **let****lineWidthTextbox****\=****ce****(****''****input****''****)****;**
+
+
+    **lineWidthTextbox****.****type****\=****''****text****'';**
+
+
+    **lineWidthTextbox****.****id****\=****''****lineWidthTextbox****'';**'
+  - '[PAGE 12]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_12_0.png)
+
+
+    **lineWidthTextbox****.****className****\=**
+
+
+    **''****inputStyle001****'';**
+
+
+    **lineWidthTextbox****.****onkeyup****\=****function****()**
+
+
+    **{**
+
+
+    **lineWidth****\=****lineWidthTextbox****.****value****;**
+
+
+    **};**
+
+
+    **brushOptions****.****append****(****lineWidthTextbox****)****;**
+
+
+    **//-//**
+
+
+    **let****brushForceLabel****\=****ce****(****''****div****''****)****;**
+
+
+    **brushForceLabel****.****innerHTML****\=****''****Force N/A****'';**
+
+
+    **brushForceLabel****.****id****\=****''****brushForceLabel****'';**
+
+
+    **brushForceLabel****.****style****.****fontSize****\=****''****15px****'';**
+
+
+    **brushOptions****.****append****(****brushForceLabel****)****;**
+
+
+    **//-//**'
+  - '[PAGE 13]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_13_0.png)
+
+
+    **let****brushForceTextbox****\=****ce****(****"****input****"****)****;**
+
+
+    **brushForceTextbox****.****type****\=****"****text****";**
+
+
+    **brushForceTextbox****.****id****\=**
+
+
+    **"****brushForceTextbox****";**
+
+
+    **brushForceTextbox****.****className****\=**
+
+
+    **''****inputStyle001****'';**
+
+
+    **brushForceTextbox****.****title****\=**
+
+
+    **"****brushForceTextbox****";**
+
+
+    **brushForceTextbox****.****placeholder****\=****''****N/A****'';**
+
+
+    **brushForceTextbox****.****onkeyup****\=****function****()**
+
+
+    **{**
+
+
+    **brushForce****\=****brushForceTextbox****.****value****;**
+
+
+    **};**
+
+
+    **brushOptions****.****append****(****brushForceTextbox****)****;**
+
+
+    **//-//**
+
+
+    **brushOptions****.****append****(****ce****(****''****br****''****))****;**'
+  - '[PAGE 14]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_14_0.png)
+
+
+    **}**
+
+
+    **function****updateLineCap****()**
+
+
+    **{**
+
+
+    **if**** (****ge****(****''****roundCap****''****)****.****checked****)**
+
+
+    **{**
+
+
+    **ctx****.****lineCap****\=****''****round****'';**
+
+
+    **}**
+
+
+    **else****if**** (****ge****(****''****squareCap****''****)****.****checked****)**
+
+
+    **{**
+
+
+    **ctx****.****lineCap****\=****''****square****'';**
+
+
+    **}**
+
+
+    **else****if**** (****ge****(****''****buttCap****''****)****.****checked****)**
+
+
+    **{**
+
+
+    **ctx****.****lineCap****\=****''****butt****'';**
+
+
+    **}**
+
+
+    **}**'
+  - '[PAGE 15]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_15_0.png)
+
+
+    **function****clearCanvas****()**
+
+
+    **{**
+
+
+    **ctx****.****clearRect****(****0****,****0****,****canvas****.****width****,**
+
+
+    **canvas****.****height****)****;**
+
+
+    **}**
+
+
+    **function****toolboxCreate****()**
+
+
+    **{**
+
+
+    **let****mainDivToolBox****\=****ce****(****''****div****''****)****;**
+
+
+    **mainDivToolBox****.****id****\=****''****toolbox****'';**
+
+
+    **mainDivToolBox****.****className****\=**
+
+
+    **''****mainDivToolBox****'';**
+
+
+    **ba****(****mainDivToolBox****)****;**
+
+
+    **//-//**
+
+
+    **// saveButton**
+
+
+    **let****saveButton****\=****ce****(****''****button****''****)****;**'
+  - '[PAGE 16]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_16_0.png)
+
+
+    **saveButton****.****textContent****\=****''****Save****'';**
+
+
+    **saveButton****.****id****\=****''****saveButton****'';**
+
+
+    **saveButton****.****className****\=****''****toolboxButton****'';**
+
+
+    **saveButton****.****onclick****\=****function****()**
+
+
+    **{**
+
+
+    **saveDrawing****()****;**
+
+
+    **};**
+
+
+    **mainDivToolBox****.****append****(****saveButton****)****;**
+
+
+    **//-//**
+
+
+    **let****linebreakUnderSaveButton****\=****ce****(****''****br****''****)****;**
+
+
+    **mainDivToolBox****.****append****(****linebreakUnderSave**
+
+
+    **Button****)****;**
+
+
+    **//-//**'
+  - '[PAGE 17]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_17_0.png)
+
+
+    **// drawButton**
+
+
+    **let****drawButton****\=****ce****(****''****button****''****)****;**
+
+
+    **drawButton****.****textContent****\=****''****Draw****'';**
+
+
+    **drawButton****.****id****\=****''****drawButton****'';**
+
+
+    **drawButton****.****className****\=****''****toolboxButton****'';**
+
+
+    **drawButton****.****onclick****\=****function****()**
+
+
+    **{**
+
+
+    **selectTool****(****''****draw****''****)****;**
+
+
+    **};**
+
+
+    **mainDivToolBox****.****append****(****drawButton****)****;**
+
+
+    **//-//**
+
+
+    **let****linebreakUnderDrawButton****\=****ce****(****''****br****''****)****;**
+
+
+    **mainDivToolBox****.****append****(****linebreakUnderDraw**
+
+
+    **Button****)****;**'
+  - '[PAGE 18]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_18_0.png)
+
+
+    **//-//**
+
+
+    **// eraseButton**
+
+
+    **let****eraseButton****\=****ce****(****''****button****''****)****;**
+
+
+    **eraseButton****.****textContent****\=****''****Erase****'';**
+
+
+    **eraseButton****.****id****\=****''****eraseButton****'';**
+
+
+    **eraseButton****.****className****\=****''****toolboxButton****'';**
+
+
+    **eraseButton****.****onclick****\=****function****()**
+
+
+    **{**
+
+
+    **selectTool****(****''****erase****''****)****;**
+
+
+    **};**
+
+
+    **mainDivToolBox****.****append****(****eraseButton****)****;**
+
+
+    **//-//**
+
+
+    **let****linebreakUnderEraseButton****\=****ce****(****''****br****''****)****;**'
+  - '[PAGE 19]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_19_0.png)
+
+
+    **mainDivToolBox****.****append****(****linebreakUnderEras**
+
+
+    **eButton****)****;**
+
+
+    **//-//**
+
+
+    **let****colorChooser****\=****ce****(****''****input****''****)****;**
+
+
+    **colorChooser****.****id****\=****''****colorChooser****'';**
+
+
+    **colorChooser****.****type****\=****''****color****'';**
+
+
+    **colorChooser****.****oninput****\=****function****()**
+
+
+    **{**
+
+
+    **lineColor****\=****colorChooser****.****value****;**
+
+
+    **};**
+
+
+    **mainDivToolBox****.****append****(****colorChooser****)****;**
+
+
+    **//-//**
+
+
+    **mainDivToolBox****.****append****(****ce****(****''****hr****''****))****;**'
+- md: "\n![](img/53420ea31f2d946491030784cbf3b0ae_20_0.png)\n\n//-//\nlet lineCapContainer\
+    \ = createElement('div');\nmainDivToolBox.append(lineCapContainer);\n\n//-//\n\
+    let capText = createElement('label');\ncapText.textContent = 'Line Cap';\ncapText.style.fontSize\
+    \ = '13px';\ncapText.style.fontWeight = 'bold';\nlineCapContainer.append(capText);\n\
+    \n//-//\nlineCapContainer.append(createElement('br'));\n\n![](img/53420ea31f2d946491030784cbf3b0ae_21_0.png)\n\
+    \n//-//\nlet roundCapCheckbox = createElement('input');\nroundCapCheckbox.type\
+    \ = 'radio';\nroundCapCheckbox.id = 'roundCap';\nroundCapCheckbox.name = 'lineCapChoice';\n\
+    roundCapCheckbox.onchange = function() {\n    updateLineCap();\n};\nlineCapContainer.append(roundCapCheckbox);\n\
+    \n//-//\n\n![](img/53420ea31f2d946491030784cbf3b0ae_22_0.png)\n\nlet labelRound\
+    \ = createElement('label');\nlabelRound.id = 'labelRound';\nlabelRound.textContent\
+    \ = 'Round';\nlabelRound.className = 'labels';\nlineCapContainer.append(labelRound);\n\
+    \n//-//\nlineCapContainer.append(createElement('br'));\n\n//-//\nlet squareCapCheckbox\
+    \ = createElement('input');\nsquareCapCheckbox.type = 'radio';\nsquareCapCheckbox.textContent\
+    \ = 'Square';\nsquareCapCheckbox.id = 'squareCap';\n\n![](img/53420ea31f2d946491030784cbf3b0ae_23_0.png)\n\
+    \nsquareCapCheckbox.name = 'lineCapChoice';\nsquareCapCheckbox.className = 'labels';\n\
+    squareCapCheckbox.onchange = function() {\n    updateLineCap();\n};\nlineCapContainer.append(squareCapCheckbox);\n\
+    \n//-//\nlet labelSquare = createElement('label');\nlabelSquare.id = 'labelSquare';\n\
+    labelSquare.textContent = 'Square';\nlabelSquare.className = 'labels';\nlineCapContainer.append(labelSquare);\n\
+    \n![](img/53420ea31f2d946491030784cbf3b0ae_24_0.png)\n\n//-//\nlineCapContainer.append(createElement('br'));\n\
+    \n//-//\nlet buttCapCheckbox = createElement('input');\nbuttCapCheckbox.type =\
+    \ 'radio';\nbuttCapCheckbox.textContent = 'Butt';\nbuttCapCheckbox.id = 'buttCap';\n\
+    buttCapCheckbox.name = 'lineCapChoice';\nbuttCapCheckbox.className = 'labels';\n\
+    buttCapCheckbox.onchange = function() {\n    updateLineCap();\n};\n\n![](img/53420ea31f2d946491030784cbf3b0ae_25_0.png)\n\
+    \nlineCapContainer.append(buttCapCheckbox);\n\n//-//\nlet labelButt = createElement(\"\
+    label\");\nlabelButt.textContent = 'Butt';\nlabelButt.id = 'labelButt';\nlabelButt.className\
+    \ = 'labels';\nlineCapContainer.append(labelButt);\n\n//-//\nlineCapContainer.append(createElement('hr'));\n\
+    \n//-//\n// clear button\n![](img/53420ea31f2d946491030784cbf3b0ae_26_0.png)\n\
+    \nlet clearButton = createElement('button');\nclearButton.textContent = 'Clear';\n\
+    clearButton.className = 'toolbox';\nclearButton.onclick = function() {\n    let\
+    \ choice = confirm('Erase All');\n    if (choice) {\n        clearCanvas();\n\
+    \    } else {\n        return;\n    }\n};\nmainDivToolBox.append(clearButton);\n\
+    \n//-//\nmainDivToolBox.append(createElement('hr'));\n\n//-//\n![](img/53420ea31f2d946491030784cbf3b0ae_27_0.png)\n\
+    \nlet githubLink = createElement('a');\ngithubLink.textContent = 'CODE';\ngithubLink.href\
+    \ = 'https://github.com/Christopher/JavaScript-Editor';\ngithubLink.target = '_blank';\n\
+    githubLink.style.fontSize = '13px';\nmainDivToolBox.append(githubLink);\n\n//-//\n\
+    ![](img/53420ea31f2d946491030784cbf3b0ae_28_0.png)\n\nlet info = createElement('div');\n\
+    info.textContent = 'JavaScript Editor';\ninfo.style.fontSize = '12px';\nmainDivToolBox.append(info);\n\
+    \nfunction whenLoaded() {\n    toolbox();\n    brushOptions();\n}\n</script>\n\
+    </head>\n<body onload='whenLoaded()\n\n![](img/53420ea31f2d946491030784cbf3b0ae_29_0.png)\n\
+    <input type='file' id='imageInput' accept='image/*'>\n<canvas id='drawingCanvas'></canvas>\n\
+    <script>\nlet canvas = getElement('drawingCanvas');\ncanvas.width = 775;\ncanvas.height\
+    \ = 450;\nlet ctx = canvas.getContext('2d');\nlet lineWidth = 5;\nlet brushForce\
+    \ = 1.0;\n\n![](img/53420ea31f2d946491030784cbf3b0ae_30_0.png)\nlet lineColor\
+    \ = `rgba(0, 0, 0, ${brushForce})`;\nlet colorPicker = getElement('colorPicker');\n\
+    let paths = [];\nlet selectedTool = 'draw';\nlet drawing = false;\nlet erasing\
+    \ = false;\nlet lastPos;\ncanvas.addEventListener('mousedown', handleMouseDown);\n\
+    \n![](img/53420ea31f2d946491030784cbf3b0ae_31_0.png)\ncanvas.addEventListener('mouseup',\
+    \ handleMouseUp);\ncanvas.addEventListener('mousemove', handleMouseMove);\nfunction\
+    \ handleImageUpload(event) {\n    let file = event.target.files[0];\n    if (file)\
+    \ {\n        let reader = new FileReader();\n        reader.onload = function(e)\
+    \ {\n            let img = new Image();\n\n![](img/53420ea31f2d946491030784cbf3b0ae_32_0.png)\n\
+    \            img.onload = function() {\n                canvas.width = img.naturalWidth;\n\
+    \                canvas.height = img.naturalHeight;\n                ctx.clearRect(0,\
+    \ 0, canvas.width, canvas.height);\n                ctx.drawImage(img, 0, 0, canvas.width,\
+    \ canvas.height);\n            };\n            img.src = e.target.result;\n  \
+    \      };\n        reader.readAsDataURL(file);\n    }\n}\n"
+  mdcn: "\n\n![](img/53420ea31f2d946491030784cbf3b0ae_20_0.png)\n\n//-//\nlet lineCapContainer\
+    \ = createElement('div');\nmainDivToolBox.append(lineCapContainer);\n\n//-//\n\
+    let capText = createElement('label');\ncapText.textContent = '线端样式';\ncapText.style.fontSize\
+    \ = '13px';\ncapText.style.fontWeight = 'bold';\nlineCapContainer.append(capText);\n\
+    \n//-//\nlineCapContainer.append(createElement('br'));\n\n![](img/53420ea31f2d946491030784cbf3b0ae_21_0.png)\n\
+    \n//-//\nlet roundCapCheckbox = createElement('input');\nroundCapCheckbox.type\
+    \ = 'radio';\nroundCapCheckbox.id = 'roundCap';\nroundCapCheckbox.name = 'lineCapChoice';\n\
+    roundCapCheckbox.onchange = function() {\n    updateLineCap();\n};\nlineCapContainer.append(roundCapCheckbox);\n\
+    \n//-//\n\n![](img/53420ea31f2d946491030784cbf3b0ae_22_0.png)\n\nlet labelRound\
+    \ = createElement('label');\nlabelRound.id = 'labelRound';\nlabelRound.textContent\
+    \ = '圆角';\nlabelRound.className = 'labels';\nlineCapContainer.append(labelRound);\n\
+    \n//-//\nlineCapContainer.append(createElement('br'));\n\n//-//\nlet squareCapCheckbox\
+    \ = createElement('input');\nsquareCapCheckbox.type = 'radio';\nsquareCapCheckbox.textContent\
+    \ = '方方形';\nsquareCapCheckbox.id = 'squareCap';\n\n![](img/53420ea31f2d946491030784cbf3b0ae_23_0.png)\n\
+    \nsquareCapCheckbox.name = 'lineCapChoice';\nsquareCapCheckbox.className = 'labels';\n\
+    squareCapCheckbox.onchange = function() {\n    updateLineCap();\n};\nlineCapContainer.append(squareCapCheckbox);\n\
+    \n//-//\nlet labelSquare = createElement('label');\nlabelSquare.id = 'labelSquare';\n\
+    labelSquare.textContent = '方方形';\nlabelSquare.className = 'labels';\nlineCapContainer.append(labelSquare);\n\
+    \n![](img/53420ea31f2d946491030784cbf3b0ae_24_0.png)\n\n//-//\nlineCapContainer.append(createElement('br'));\n\
+    \n//-//\nlet buttCapCheckbox = createElement('input');\nbuttCapCheckbox.type =\
+    \ 'radio';\nbuttCapCheckbox.textContent = '平圆头';\nbuttCapCheckbox.id = 'buttCap';\n\
+    buttCapCheckbox.name = 'lineCapChoice';\nbuttCapCheckbox.className = 'labels';\n\
+    buttCapCheckbox.onchange = function() {\n    updateLineCap();\n};\n\n![](img/53420ea31f2d946491030784cbf3b0ae_25_0.png)\n\
+    \nlineCapContainer.append(buttCapCheckbox);\n\n//-//\nlet labelButt = createElement(\"\
+    label\");\nlabelButt.textContent = '平圆头';\nlabelButt.id = 'labelButt';\nlabelButt.className\
+    \ = 'labels';\nlineCapContainer.append(labelButt);\n\n//-//\nlineCapContainer.append(createElement('hr'));\n\
+    \n//-//\n// 清除按钮\n![](img/53420ea31f2d946491030784cbf3b0ae_26_0.png)\n\nlet clearButton\
+    \ = createElement('button');\nclearButton.textContent = '清空';\nclearButton.className\
+    \ = 'toolbox';\nclearButton.onclick = function() {\n    let choice = confirm('全部擦除');\n\
+    \    if (choice) {\n        clearCanvas();\n    } else {\n        return;\n  \
+    \  }\n};\nmainDivToolBox.append(clearButton);\n\n//-//\nmainDivToolBox.append(createElement('hr'));\n\
+    \n//-//\n![](img/53420ea31f2d946491030784cbf3b0ae_27_0.png)\n\nlet githubLink\
+    \ = createElement('a');\ngithubLink.textContent = '代码';\ngithubLink.href = 'https://github.com/Christopher/JavaScript-Editor';\n\
+    githubLink.target = '_blank';\ngithubLink.style.fontSize = '13px';\nmainDivToolBox.append(githubLink);\n\
+    \n//-//\n![](img/53420ea31f2d946491030784cbf3b0ae_28_0.png)\n\nlet info = createElement('div');\n\
+    info.textContent = 'JavaScript 编辑器';\ninfo.style.fontSize = '12px';\nmainDivToolBox.append(info);\n\
+    \nfunction whenLoaded() {\n    toolbox();\n    brushOptions();\n}\n</script>\n\
+    </head>\n<body onload='whenLoaded()\n\n![](img/53420ea31f2d946491030784cbf3b0ae_29_0.png)\n\
+    <input type='file' id='imageInput' accept='image/*'>\n<canvas id='drawingCanvas'></canvas>\n\
+    <script>\nlet canvas = getElement('drawingCanvas');\ncanvas.width = 775;\ncanvas.height\
+    \ = 450;\nlet ctx = canvas.getContext('2d');\nlet lineWidth = 5;\nlet brushForce\
+    \ = 1.0;\n\n![](img/53420ea31f2d946491030784cbf3b0ae_30_0.png)\nlet lineColor\
+    \ = `rgba(0, 0, 0, ${brushForce})`;\nlet colorPicker = getElement('colorPicker');\n\
+    let paths = [];\nlet selectedTool = 'draw';\nlet drawing = false;\nlet erasing\
+    \ = false;\nlet lastPos;\ncanvas.addEventListener('mousedown', handleMouseDown);\n\
+    \n![](img/53420ea31f2d946491030784cbf3b0ae_31_0.png)\ncanvas.addEventListener('mouseup',\
+    \ handleMouseUp);\ncanvas.addEventListener('mousemove', handleMouseMove);\nfunction\
+    \ handleImageUpload(event) {\n    let file = event.target.files[0];\n    if (file)\
+    \ {\n        let reader = new FileReader();\n        reader.onload = function(e)\
+    \ {\n            let img = new Image();\n\n![](img/53420ea31f2d946491030784cbf3b0ae_32_0.png)\n\
+    \            img.onload = function() {\n                canvas.width = img.naturalWidth;\n\
+    \                canvas.height = img.naturalHeight;\n                ctx.clearRect(0,\
+    \ 0, canvas.width, canvas.height);\n                ctx.drawImage(img, 0, 0, canvas.width,\
+    \ canvas.height);\n            };\n            img.src = e.target.result;\n  \
+    \      };\n        reader.readAsDataURL(file);\n    }\n}\n"
+  merge: 0
+  raw:
+  - '[PAGE 20]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_20_0.png)
+
+
+    **//-//**
+
+
+    **let****lineCapContainer****\=****ce****(****''****div****''****)****;**
+
+
+    **mainDivToolBox****.****append****(****lineCapContainer****)****;**
+
+
+    **//-//**
+
+
+    **let****capText****\=****ce****(****''****label****''****)****;**
+
+
+    **capText****.****textContent****\=****''****Line Cap****'';**
+
+
+    **capText****.****style****.****fontSize****\=****''****13px****'';**
+
+
+    **capText****.****style****.****fontWeight****\=****''****bold****'';**
+
+
+    **lineCapContainer****.****append****(****capText****)****;**
+
+
+    **//-//**
+
+
+    **lineCapContainer****.****append****(****ce****(****''****br****''****))****;**'
+  - '[PAGE 21]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_21_0.png)
+
+
+    **//-//**
+
+
+    **let****roundCapCheckbox****\=****ce****(****''****input****''****)****;**
+
+
+    **roundCapCheckbox****.****type****\=****''****radio****'';**
+
+
+    **roundCapCheckbox****.****id****\=****''****roundCap****'';**
+
+
+    **roundCapCheckbox****.****name****\=**
+
+
+    **''****lineCapChoice****'';**
+
+
+    **roundCapCheckbox****.****onchange****\=****function****()**
+
+
+    **{**
+
+
+    **updateLineCap****()****;**
+
+
+    **};**
+
+
+    **lineCapContainer****.****append****(****roundCapCheckbo**
+
+
+    **x****)****;**
+
+
+    **//-//**'
+  - '[PAGE 22]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_22_0.png)
+
+
+    **let****labelRound****\=****ce****(****''****label****''****)****;**
+
+
+    **labelRound****.****id****\=****''****labelRound****'';**
+
+
+    **labelRound****.****textContent****\=****''****Round****'';**
+
+
+    **labelRound****.****className****\=****''****labels****'';**
+
+
+    **lineCapContainer****.****append****(****labelRound****)****;**
+
+
+    **//-//**
+
+
+    **lineCapContainer****.****append****(****ce****(****''****br****''****))****;**
+
+
+    **//-//**
+
+
+    **let****squareCapCheckbox****\=****ce****(****''****input****''****)****;**
+
+
+    **squareCapCheckbox****.****type****\=****''****radio****'';**
+
+
+    **squareCapCheckbox****.****textContent****\=**
+
+
+    **''****Square****'';**
+
+
+    **squareCapCheckbox****.****id****\=****''****squareCap****'';**'
+  - '[PAGE 23]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_23_0.png)
+
+
+    **squareCapCheckbox****.****name****\=**
+
+
+    **''****lineCapChoice****'';**
+
+
+    **squareCapCheckbox****.****className****\=****''****labels****'';**
+
+
+    **squareCapCheckbox****.****onchange****\=****function****()**
+
+
+    **{**
+
+
+    **updateLineCap****()****;**
+
+
+    **};**
+
+
+    **lineCapContainer****.****append****(****squareCapCheckb**
+
+
+    **ox****)****;**
+
+
+    **//-//**
+
+
+    **let****labelSquare****\=****ce****(****''****label****''****)****;**
+
+
+    **labelSquare****.****id****\=****''****labelSquare****'';**
+
+
+    **labelSquare****.****textContent****\=****''****Square****'';**
+
+
+    **labelSquare****.****className****\=****''****labels****'';**
+
+
+    **lineCapContainer****.****append****(****labelSquare****)****;**'
+  - '[PAGE 24]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_24_0.png)
+
+
+    **//-//**
+
+
+    **lineCapContainer****.****append****(****ce****(****''****br****''****))****;**
+
+
+    **//-//**
+
+
+    **let****buttCapCheckbox****\=****ce****(****''****input****''****)****;**
+
+
+    **buttCapCheckbox****.****type****\=****''****radio****'';**
+
+
+    **buttCapCheckbox****.****textContent****\=****''****Butt****'';**
+
+
+    **buttCapCheckbox****.****id****\=****''****buttCap****'';**
+
+
+    **buttCapCheckbox****.****name****\=****''****lineCapChoice****'';**
+
+
+    **buttCapCheckbox****.****className****\=****''****labels****'';**
+
+
+    **buttCapCheckbox****.****onchange****\=****function****()**
+
+
+    **{**
+
+
+    **updateLineCap****()****;**
+
+
+    **};**'
+  - '[PAGE 25]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_25_0.png)
+
+
+    **lineCapContainer****.****append****(****buttCapCheckbox****)****;**
+
+
+    **//-//**
+
+
+    **let****labelButt****\=****ce****(****"****label****"****)****;**
+
+
+    **labelButt****.****textContent****\=****''****Butt****'';**
+
+
+    **labelButt****.****id****\=****''****labelButt****'';**
+
+
+    **labelButt****.****className****\=****''****labels****'';**
+
+
+    **lineCapContainer****.****append****(****labelButt****)****;**
+
+
+    **//-//**
+
+
+    **lineCapContainer****.****append****(****ce****(****''****hr****''****))****;**
+
+
+    **//-//**
+
+
+    **// clear button**'
+  - '[PAGE 26]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_26_0.png)
+
+
+    **let****clearButton****\=****ce****(****''****button****''****)****;**
+
+
+    **clearButton****.****textContent****\=****''****Clear****'';**
+
+
+    **clearButton****.****className****\=****''****toolboxButton****'';**
+
+
+    **clearButton****.****onclick****\=****function****()**
+
+
+    **{**
+
+
+    **let****choice****\=****confirm****(****''****Erase All****''****)****;**
+
+
+    **if**** (****choice****)**
+
+
+    **{**
+
+
+    **clearCanvas****()****;**
+
+
+    **}**
+
+
+    **else**
+
+
+    **{**
+
+
+    **return****;**
+
+
+    **}**
+
+
+    **};**
+
+
+    **mainDivToolBox****.****append****(****clearButton****)****;**'
+  - '[PAGE 27]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_27_0.png)
+
+
+    **//-//**
+
+
+    **mainDivToolBox****.****append****(****ce****(****''****hr****''****))****;**
+
+
+    **//-//**
+
+
+    **let****githubLink****\=****ce****(****''****a****''****)****;**
+
+
+    **githubLink****.****textContent****\=****''****CODE****'';**
+
+
+    **githubLink****.****href****\=**
+
+
+    **''****https://github.com/ChristopherTopalian/Topal**
+
+
+    **ian\_JavaScript\_Graphics\_Editor****'';**
+
+
+    **githubLink****.****target****\=****''****\_blank****'';**
+
+
+    **githubLink****.****style****.****fontSize****\=****13**** + ****''****px****'';**
+
+
+    **mainDivToolBox****.****append****(****githubLink****)****;**
+
+
+    **//-//**'
+  - '[PAGE 28]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_28_0.png)
+
+
+    **let****info****\=****ce****(****''****div****''****)****;**
+
+
+    **info****.****textContent****\=****''****Topalian JavaScript **
+
+
+    **Graphics Editor****'';**
+
+
+    **info****.****style****.****fontSize****\=****12**** + ****''****px****'';**
+
+
+    **mainDivToolBox****.****append****(****info****)****;**
+
+
+    **}**
+
+
+    **function****whenLoaded****()**
+
+
+    **{**
+
+
+    **toolboxCreate****()****;**
+
+
+    **menuBrushOptions****()****;**
+
+
+    **}**
+
+
+    **</****script****\>**
+
+
+    **</****head****\>**
+
+
+    **<****body****onload****\=****''****whenLoaded****()****;''>**'
+  - '[PAGE 29]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_29_0.png)
+
+
+    **<****input****type****\=****''****file****''****id****\=****''****imageInput****''****class****\=**
+
+
+    **''****imageInput****''****accept****\=****''****image/\*****''>**
+
+
+    **<****canvas****id****\=****''****drawingCanvas****''></****canvas****\>**
+
+
+    **<****script****\>**
+
+
+    **let****canvas****\=****ge****(****''****drawingCanvas****''****)****;**
+
+
+    **canvas****.****width****\=****775****;**
+
+
+    **canvas****.****height****\=****450****;**
+
+
+    **let****ctx****\=****canvas****.****getContext****(****''****2d****''****)****;**
+
+
+    **let****lineWidth****\=****5****;**
+
+
+    **let****brushForce****\=****1.0****;**'
+  - '[PAGE 30]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_30_0.png)
+
+
+    **let****lineColor****\=****\`****rgba(0, 0, 0, ****${****brushForce****}****)****\`;**
+
+
+    **let****colorPicker****\=****ge****(****''****colorPicker****''****)****;**
+
+
+    **let****paths****\=**** \[\]****;**
+
+
+    **let****selectedTool****\=****''****draw****'';**
+
+
+    **let****drawing****\=****false****;**
+
+
+    **let****erasing****\=****false****;**
+
+
+    **let****lastPos****;**
+
+
+    **canvas****.****addEventListener****(****''****mousedown****'',**
+
+
+    **handleMouseDown****)****;**'
+  - '[PAGE 31]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_31_0.png)
+
+
+    **canvas****.****addEventListener****(****''****mouseup****'',**
+
+
+    **handleMouseUp****)****;**
+
+
+    **canvas****.****addEventListener****(****''****mousemove****'',**
+
+
+    **handleMouseMove****)****;**
+
+
+    **function****handleImageUpload****(****event****)**
+
+
+    **{**
+
+
+    **let****file****\=****event****.****target****.****files****\[****0****\]****;**
+
+
+    **if**** (****file****)**
+
+
+    **{**
+
+
+    **let****reader****\=****new****FileReader****()****;**
+
+
+    **reader****.****onload****\=****function****(****e****)**
+
+
+    **{**
+
+
+    **let****img****\=****new****Image****()****;**'
+  - '[PAGE 32]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_32_0.png)
+
+
+    **img****.****onload****\=****function****()**
+
+
+    **{**
+
+
+    **let****canvas****\=****ge****(****''****drawingCanvas****''****)****;**
+
+
+    **canvas****.****width****\=****img****.****naturalWidth****;**
+
+
+    **canvas****.****height****\=****img****.****naturalHeight****;**
+
+
+    **ctx****.****clearRect****(****0****,****0****,****canvas****.****width****,**
+
+
+    **canvas****.****height****)****;**
+
+
+    **ctx****.****drawImage****(****img****,****0****,****0****,**
+
+
+    **canvas****.****width****,****canvas****.****height****)****;**
+
+
+    **};**
+
+
+    **img****.****src****\=****e****.****target****.****result****;**
+
+
+    **};**'
+- md: "\n![](img/53420ea31f2d946491030784cbf3b0ae_33_0.png)\n\nreader.readAsDataURL(file);\n\
+    \n}\n\n}\n\nlet imageInput = ge('imageInput');\n\nif (imageInput) {\n  imageInput.addEventListener('change',\
+    \ handleImageUpload);\n}\nelse {\n  console.error(\"Element with id 'imageInput'\
+    \ not found.\");\n}\n\nfunction handleMouseDown(e)\n![](img/53420ea31f2d946491030784cbf3b0ae_34_0.png)\n\
+    {\n  if (selectedTool === 'draw') {\n    drawing = true;\n    startDrawing(e);\n\
+    \  }\n  else if (selectedTool === 'erase') {\n    erasing = true;\n    startErasing(e);\n\
+    \  }\n}\n\nfunction handleMouseUp()\n{\n  if (drawing)\n![](img/53420ea31f2d946491030784cbf3b0ae_35_0.png)\n\
+    {\n    stopDrawing();\n  }\n  else if (erasing) {\n    erasing = false;\n    stopErasing();\n\
+    \  }\n}\n\nfunction handleMouseMove(e)\n{\n  if (drawing) {\n    draw(e);\n  }\n\
+    \  else if (erasing)\n![](img/53420ea31f2d946491030784cbf3b0ae_36_0.png)\n{\n\
+    \    erasePath(e);\n  }\n}\n\nfunction startDrawing(e)\n{\n  lastPos = getMousePos(e);\n\
+    \  ctx.beginPath();\n  ctx.moveTo(lastPos.x, lastPos.y);\n}\n\nfunction stopDrawing()\n\
+    {\n  drawing = false;\n![](img/53420ea31f2d946491030784cbf3b0ae_37_0.png)\n  paths.push(ctx.getImageData(0,\
+    \ 0, canvas.width, canvas.height));\n}\n\nfunction draw(e)\n{\n  if (!drawing)\
+    \ {\n    return;\n  }\n  let currentPos = getMousePos(e);\n  ctx.lineTo(currentPos.x,\
+    \ currentPos.y);\n  ctx.strokeStyle = lineColor;\n  ctx.lineWidth = lineWidth;\n\
+    ![](img/53420ea31f2d946491030784cbf3b0ae_38_0.png)\n  ctx.stroke();\n}\n\nfunction\
+    \ startErasing(e)\n{\n  if (!erasing) {\n    return;\n  }\n  lastPos = getMousePos(e);\n\
+    \  ctx.beginPath();\n  ctx.moveTo(lastPos.x, lastPos.y);\n![](img/53420ea31f2d946491030784cbf3b0ae_39_0.png)\n\
+    function stopErasing()\n{\n  if (!erasing) {\n    return;\n  }\n  ctx.closePath();\n\
+    }\n\nfunction erasePath(e)\n{\n  if (!erasing) {\n    return;\n  }\n  let currentPos\
+    \ = getMousePos(e);\n![](img/53420ea31f2d946491030784cbf3b0ae_40_0.png)\n  ctx.clearRect(currentPos.x\
+    \ - lineWidth / 2, currentPos.y - lineWidth / 2, lineWidth, lineWidth);\n}\n\n\
+    function getMousePos(e)\n{\n  let rect = canvas.getBoundingClientRect();\n  return\
+    \ {\n    x: e.clientX - rect.left,\n    y: e.clientY - rect.top\n  };\n}\n\nfunction\
+    \ selectTool(whichTool)\n{\n![](img/53420ea31f2d946491030784cbf3b0ae_41_0.png)\n\
+    \  selectedTool = whichTool;\n  drawing = false;\n}\n\nfunction saveDrawing()\n\
+    {\n  let dataUrl = canvas.toDataURL('image/png');\n  let link = ce('a');\n  link.href\
+    \ = dataUrl;\n  link.download = 'drawing.png';\n  link.click();\n}\n\n![](img/53420ea31f2d946491030784cbf3b0ae_42_0.png)\n\
+    </script>\n</body>\n</html>\n\n![](img/53420ea31f2d946491030784cbf3b0ae_43_0.png)\n\
+    /* Dedicated to God the Father */\n/* All Rights Reserved Christopher Andrew Topalian\
+    \ Copyright 2000-2024 */\n/* https://github.com/ChristopherTopalian */\n/* https://github.com/ChristopherAndrewTopalian\
+    \ */\n/* style001.css */\nbody {\n  background-color: rgb(80, 80, 80);\n  color:\
+    \ rgb(255, 255, 255);\n  text-shadow: 2px 2px 4px rgb(0, 0, 0);\n}\ncanvas {\n\
+    \  border-style: solid;\n  border-width: 1px;\n  border-color: rgb(0, 0, 0);\n\
+    }\na {\n  text-decoration: none;\n  color: rgb(0, 255, 255);\n}\n#drawingCanvas\
+    \ {\n  position: absolute;\n![](img/53420ea31f2d946491030784cbf3b0ae_45_0.png)\n\
+    \  left: 110px;\n  top: 5px;\n}\n#toolbox {\n  position: fixed;\n  left: 0px;\n\
+    \  top: 0px;\n  width: 70px;\n  height: 400px;\n  padding: 10px;\n  border-style:\
+    \ solid;\n  border-width: 1px;\n  border-color: rgb(255, 255, 255);\n  border-radius:\
+    \ 8px;\n  overflow-y: scroll;\n  scrollbar-width: thin;\n}\n![](img/53420ea31f2d946491030784cbf3b0ae_46_0.png)\n\
+    .toolboxButton {\n  padding: 5px;\n  padding-right: 5px;\n  padding-top: 3px;\n\
+    \  padding-bottom: 3px;\n  margin-bottom: 2px;\n  border-style: solid;\n  border-width:\
+    \ 1px;\n  border-radius: 8px;\n  background-color: rgb(20, 20, 20);\n  color:\
+    \ rgb(255, 255, 255);\n  font-size: 15px;\n  line-height: 17px;\n}\n.toolboxButton:hover\
+    \ {\n  border-color: aqua;\n}\n.toolboxButton:active {\n  color: aqua;\n}\n.labels\
+    \ {\n  font-size: 13px;\n}\n.inputStyle01 {\n![](img/53420ea31f2d946491030784cbf3b0ae_48_0.png)\n\
+    \  width: 70px;\n  padding-left: 10px;\n  padding-right: 10px;\n  border-radius:\
+    \ 8px;\n  border-color: rgb(255, 255, 255);\n  background-color: rgb(0, 0, 0);\n\
+    \  font-size: 15px;\n  color: rgb(255, 255, 255);\n}\n.imageInput {\n  position:\
+    \ fixed;\n  right: 0px;\n  top: 0px;\n  width: 100px;\n  padding-left: 1px;\n\
+    \  padding-right: 1px;\n  padding-top: 1px;\n![](img/53420ea31f2d946491030784cbf3b0ae_49_0.png)\n\
+    \  padding-bottom: 1px;\n  margin-bottom: 1px;\n  border-style: solid;\n  border-width:\
+    \ 1px;\n  border-radius: 8px;\n  border-color: rgb(255, 255, 255);\n  background-color:\
+    \ rgb(20, 20, 20);\n  font-size: 15px;\n  color: rgb(255, 255, 255);\n  line-height:\
+    \ 15px;\n  z-index: 100;\n}\n"
+  mdcn: "\n\n![](img/53420ea31f2d946491030784cbf3b0ae_33_0.png)\n\nreader.readAsDataURL(file);\n\
+    \n}\n\n}\n\nlet imageInput = ge('imageInput');\n\nif (imageInput) {\n  imageInput.addEventListener('change',\
+    \ handleImageUpload);\n}\nelse {\n  console.error(\"Element with id 'imageInput'\
+    \ not found.\");\n}\n\nfunction handleMouseDown(e)\n![](img/53420ea31f2d946491030784cbf3b0ae_34_0.png)\n\
+    {\n  if (selectedTool === 'draw') {\n    drawing = true;\n    startDrawing(e);\n\
+    \  }\n  else if (selectedTool === 'erase') {\n    erasing = true;\n    startErasing(e);\n\
+    \  }\n}\n\nfunction handleMouseUp()\n{\n  if (drawing)\n![](img/53420ea31f2d946491030784cbf3b0ae_35_0.png)\n\
+    {\n    stopDrawing();\n  }\n  else if (erasing) {\n    erasing = false;\n    stopErasing();\n\
+    \  }\n}\n\nfunction handleMouseMove(e)\n{\n  if (drawing) {\n    draw(e);\n  }\n\
+    \  else if (erasing)\n![](img/53420ea31f2d946491030784cbf3b0ae_36_0.png)\n{\n\
+    \    erasePath(e);\n  }\n}\n\nfunction startDrawing(e)\n{\n  lastPos = getMousePos(e);\n\
+    \  ctx.beginPath();\n  ctx.moveTo(lastPos.x, lastPos.y);\n}\n\nfunction stopDrawing()\n\
+    {\n  drawing = false;\n![](img/53420ea31f2d946491030784cbf3b0ae_37_0.png)\n  paths.push(ctx.getImageData(0,\
+    \ 0, canvas.width, canvas.height));\n}\n\nfunction draw(e)\n{\n  if (!drawing)\
+    \ {\n    return;\n  }\n  let currentPos = getMousePos(e);\n  ctx.lineTo(currentPos.x,\
+    \ currentPos.y);\n  ctx.strokeStyle = lineColor;\n  ctx.lineWidth = lineWidth;\n\
+    ![](img/53420ea31f2d946491030784cbf3b0ae_38_0.png)\n  ctx.stroke();\n}\n\nfunction\
+    \ startErasing(e)\n{\n  if (!erasing) {\n    return;\n  }\n  lastPos = getMousePos(e);\n\
+    \  ctx.beginPath();\n  ctx.moveTo(lastPos.x, lastPos.y);\n}\n\nfunction stopErasing()\n\
+    {\n  if (!erasing) {\n    return;\n  }\n  ctx.closePath();\n}\n\nfunction erasePath(e)\n\
+    {\n  if (!erasing) {\n    return;\n  }\n  let currentPos = getMousePos(e);\n![](img/53420ea31f2d946491030784cbf3b0ae_40_0.png)\n\
+    \  ctx.clearRect(currentPos.x - lineWidth / 2, currentPos.y - lineWidth / 2, lineWidth,\
+    \ lineWidth);\n}\n\nfunction getMousePos(e)\n{\n  let rect = canvas.getBoundingClientRect();\n\
+    \  return {\n    x: e.clientX - rect.left,\n    y: e.clientY - rect.top\n  };\n\
+    }\n\nfunction selectTool(whichTool)\n{\n![](img/53420ea31f2d946491030784cbf3b0ae_41_0.png)\n\
+    \  selectedTool = whichTool;\n  drawing = false;\n}\n\nfunction saveDrawing()\n\
+    {\n  let dataUrl = canvas.toDataURL('image/png');\n  let link = ce('a');\n  link.href\
+    \ = dataUrl;\n  link.download = 'drawing.png';\n  link.click();\n}\n\n![](img/53420ea31f2d946491030784cbf3b0ae_42_0.png)\n\
+    </script>\n</body>\n</>\n\n![](img/53420ea31f2d946491030784cbf3b0ae_43_0.png)\n\
+    /* 献给父神 */\n/* 版权所有 Christopher Andrew Topalian 2000-2024 */\n/* https://github.com/ChristopherTopalian\
+    \ */\n/* https://github.com/ChristopherAndrewTopalian */\n/* style001.css */\n\
+    body {\n  background-color: rgb(80, 80, 80);\n  color: rgb(255, 255, 255);\n \
+    \ text-shadow: 2px 2px 4px rgb(0, 0, 0);\n}\ncanvas {\n  border-style: solid;\n\
+    \  border-width: 1px;\n  border-color: rgb(0, 0, 0);\n}\na {\n  text-decoration:\
+    \ none;\n  color: rgb(0, 255, 255);\n}\n#drawingCanvas {\n  position: absolute;\n\
+    ![](img/53420ea31f2d946491030784cbf3b0ae_45_0.png)\n  left: 110px;\n  top: 5px;\n\
+    }\n#toolbox {\n  position: fixed;\n  left: 0px;\n  top: 0px;\n  width: 70px;\n\
+    \  height: 400px;\n  padding: 10px;\n  border-style: solid;\n  border-width: 1px;\n\
+    \  border-color: rgb(255, 255, 255);\n  border-radius: 8px;\n  overflow-y: scroll;\n\
+    \  scrollbar-width: thin;\n}\n![](img/53420ea31f2d946491030784cbf3b0ae_46_0.png)\n\
+    .toolboxButton {\n  padding: 5px;\n  padding-right: 5px;\n  padding-top: 3px;\n\
+    \  padding-bottom: 3px;\n  margin-bottom: 2px;\n  border-style: solid;\n  border-width:\
+    \ 1px;\n  border-radius: 8px;\n  background-color: rgb(20, 20, 20);\n  color:\
+    \ rgb(255, 255, 255);\n  font-size: 15px;\n  line-height: 17px;\n}\n.toolboxButton:hover\
+    \ {\n  border-color: aqua;\n}\n.toolboxButton:active {\n  color: aqua;\n}\n.labels\
+    \ {\n  font-size: 13px;\n}\n.inputStyle01 {\n![](img/53420ea31f2d946491030784cbf3b0ae_48_0.png)\n\
+    \  width: 70px;\n  padding-left: 10px;\n  padding-right: 10px;\n  border-radius:\
+    \ 8px;\n  border-color: rgb(255, 255, 255);\n  background-color: rgb(0, 0, 0);\n\
+    \  font-size: 15px;\n  color: rgb(255, 255, 255);\n}\n.imageInput {\n  position:\
+    \ fixed;\n  right: 0px;\n  top: 0px;\n  width: 100px;\n  padding-left: 1px;\n\
+    \  padding-right: 1px;\n  padding-top: 1px;\n![](img/53420ea31f2d946491030784cbf3b0ae_49_0.png)\n\
+    \  padding-bottom: 1px;\n  margin-bottom: 1px;\n  border-style: solid;\n  border-width:\
+    \ 1px;\n  border-radius: 8px;\n  border-color: rgb(255, 255, 255);\n  background-color:\
+    \ rgb(20, 20, 20);\n  font-size: 15px;\n  color: rgb(255, 255, 255);\n  line-height:\
+    \ 15px;\n  z-index: 100;\n}\n\n"
+  merge: 0
+  raw:
+  - '[PAGE 33]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_33_0.png)
+
+
+    **reader****.****readAsDataURL****(****file****)****;**
+
+
+    **}**
+
+
+    **}**
+
+
+    **let****imageInput****\=****ge****(****''****imageInput****''****)****;**
+
+
+    **if**** (****imageInput****)**
+
+
+    **{**
+
+
+    **imageInput****.****addEventListener****(****''****change****'',**
+
+
+    **handleImageUpload****)****;**
+
+
+    **}**
+
+
+    **else**
+
+
+    **{**
+
+
+    **console****.****error****(****"****Element with id ''imageInput''**
+
+
+    **not found.****"****)****;**
+
+
+    **}**
+
+
+    **function****handleMouseDown****(****e****)**'
+  - '[PAGE 34]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_34_0.png)
+
+
+    **{**
+
+
+    **if**** (****selectedTool**** === ****''****draw****''****)**
+
+
+    **{**
+
+
+    **drawing****\=****true****;**
+
+
+    **startDrawing****(****e****)****;**
+
+
+    **}**
+
+
+    **else****if**** (****selectedTool**** === ****''****erase****''****)**
+
+
+    **{**
+
+
+    **erasing****\=****true****;**
+
+
+    **startErasing****(****e****)****;**
+
+
+    **}**
+
+
+    **}**
+
+
+    **function****handleMouseUp****()**
+
+
+    **{**
+
+
+    **if**** (****drawing****)**'
+  - '[PAGE 35]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_35_0.png)
+
+
+    **{**
+
+
+    **stopDrawing****()****;**
+
+
+    **}**
+
+
+    **else****if**** (****erasing****)**
+
+
+    **{**
+
+
+    **erasing****\=****false****;**
+
+
+    **stopErasing****()****;**
+
+
+    **}**
+
+
+    **}**
+
+
+    **function****handleMouseMove****(****e****)**
+
+
+    **{**
+
+
+    **if**** (****drawing****)**
+
+
+    **{**
+
+
+    **draw****(****e****)****;**
+
+
+    **}**
+
+
+    **else****if**** (****erasing****)**'
+  - '[PAGE 36]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_36_0.png)
+
+
+    **{**
+
+
+    **erasePath****(****e****)****;**
+
+
+    **}**
+
+
+    **}**
+
+
+    **function****startDrawing****(****e****)**
+
+
+    **{**
+
+
+    **lastPos****\=****getMousePos****(****e****)****;**
+
+
+    **ctx****.****beginPath****()****;**
+
+
+    **ctx****.****moveTo****(****lastPos****.****x****,****lastPos****.****y****)****;**
+
+
+    **}**
+
+
+    **function****stopDrawing****()**
+
+
+    **{**
+
+
+    **drawing****\=****false****;**'
+  - '[PAGE 37]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_37_0.png)
+
+
+    **paths****.****push****(****ctx****.****getImageData****(****0****,****0****,**
+
+
+    **canvas****.****width****,****canvas****.****height****))****;**
+
+
+    **}**
+
+
+    **function****draw****(****e****)**
+
+
+    **{**
+
+
+    **if**** (!****drawing****)**
+
+
+    **{**
+
+
+    **return****;**
+
+
+    **}**
+
+
+    **let****currentPos****\=****getMousePos****(****e****)****;**
+
+
+    **ctx****.****lineTo****(****currentPos****.****x****,****currentPos****.****y****)****;**
+
+
+    **ctx****.****strokeStyle****\=****lineColor****;**
+
+
+    **ctx****.****lineWidth****\=****lineWidth****;**'
+  - '[PAGE 38]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_38_0.png)
+
+
+    **ctx****.****stroke****()****;**
+
+
+    **}**
+
+
+    **function****startErasing****(****e****)**
+
+
+    **{**
+
+
+    **if**** (!****erasing****)**
+
+
+    **{**
+
+
+    **return****;**
+
+
+    **}**
+
+
+    **lastPos****\=****getMousePos****(****e****)****;**
+
+
+    **ctx****.****beginPath****()****;**
+
+
+    **ctx****.****moveTo****(****lastPos****.****x****,****lastPos****.****y****)****;**
+
+
+    **}**'
+  - '[PAGE 39]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_39_0.png)
+
+
+    **function****stopErasing****()**
+
+
+    **{**
+
+
+    **if**** (!****erasing****)**
+
+
+    **{**
+
+
+    **return****;**
+
+
+    **}**
+
+
+    **ctx****.****closePath****()****;**
+
+
+    **}**
+
+
+    **function****erasePath****(****e****)**
+
+
+    **{**
+
+
+    **if**** (!****erasing****)**
+
+
+    **{**
+
+
+    **return****;**
+
+
+    **}**
+
+
+    **let****currentPos****\=****getMousePos****(****e****)****;**'
+  - '[PAGE 40]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_40_0.png)
+
+
+    **ctx****.****clearRect****(****currentPos****.****x**** - ****lineWidth**** /
+    ****2****,**
+
+
+    **currentPos****.****y**** - ****lineWidth**** / ****2****,****lineWidth****,**
+
+
+    **lineWidth****)****;**
+
+
+    **}**
+
+
+    **function****getMousePos****(****e****)**
+
+
+    **{**
+
+
+    **let****rect****\=****canvas****.****getBoundingClientRect****()****;**
+
+
+    **return****{**
+
+
+    **x****:****e****.****clientX**** - ****rect****.****left****,**
+
+
+    **y****:****e****.****clientY**** - ****rect****.****top**
+
+
+    **};**
+
+
+    **}**
+
+
+    **function****selectTool****(****whichTool****)**
+
+
+    **{**'
+  - '[PAGE 41]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_41_0.png)
+
+
+    **selectedTool****\=****whichTool****;**
+
+
+    **drawing****\=****false****;**
+
+
+    **}**
+
+
+    **function****saveDrawing****()**
+
+
+    **{**
+
+
+    **let****dataUrl****\=**
+
+
+    **canvas****.****toDataURL****(****''****image/png****''****)****;**
+
+
+    **let****link****\=****ce****(****''****a****''****)****;**
+
+
+    **link****.****href****\=****dataUrl****;**
+
+
+    **link****.****download****\=****''****drawing.png****'';**
+
+
+    **link****.****click****()****;**
+
+
+    **}**'
+  - '[PAGE 42]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_42_0.png)
+
+
+    **</****script****\>**
+
+
+    **</****body****\>**
+
+
+    **</****html****\>**'
+  - '[PAGE 43]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_43_0.png)
+
+
+    **/\* Dedicated to God the Father \*/**
+
+
+    **/\* All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024 \*/**
+
+
+    **/\* https://github.com/ChristopherTopalian \*/**
+
+
+    **/\* **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n \*/**
+
+
+    **/\* style001.css \*/**
+
+
+    **body**
+
+
+    **{**
+
+
+    **background-color****:****rgb****(****80****,****80****,****80****);**
+
+
+    **color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **text-shadow****:****2px****2px****4px****rgb****(****0****,****0****,****0****);**'
+  - '[PAGE 44]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_44_0.png)
+
+
+    **}**
+
+
+    **canvas**
+
+
+    **{**
+
+
+    **border-style****:****solid****;**
+
+
+    **border-width****:****1px****;**
+
+
+    **border-color****:****rgb****(****0****,****0****,****0****);**
+
+
+    **}**
+
+
+    **a**
+
+
+    **{**
+
+
+    **text-decoration****:****none****;**
+
+
+    **color****:****rgb****(****0****,****255****,****255****);**
+
+
+    **}**
+
+
+    **#****drawingCanvas**
+
+
+    **{**
+
+
+    **position****:****absolute****;**'
+  - '[PAGE 45]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_45_0.png)
+
+
+    **left****:****110px****;**
+
+
+    **top****:****5px****;**
+
+
+    **}**
+
+
+    **#****toolbox**
+
+
+    **{**
+
+
+    **position****:****fixed****;**
+
+
+    **left****:****0px****;**
+
+
+    **top****:****0px****;**
+
+
+    **width****:****70px****;**
+
+
+    **height****:****400px****;**
+
+
+    **padding****:****10px****;**
+
+
+    **border-style****:****solid****;**
+
+
+    **border-width****:****1px****;**
+
+
+    **border-color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **border-radius****:****8px****;**
+
+
+    **overflow-y****:****scroll****;**
+
+
+    **scrollbar-width****:****thin****;**'
+  - '[PAGE 46]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_46_0.png)
+
+
+    **}**
+
+
+    **.****toolboxButton**
+
+
+    **{**
+
+
+    **padding-left****:****5px****;**
+
+
+    **padding-right****:****5px****;**
+
+
+    **padding-top****:****3px****;**
+
+
+    **padding-bottom****:****3px****;**
+
+
+    **margin-bottom****:****2px****;**
+
+
+    **border-style****:****solid****;**
+
+
+    **border-width****:****1px****;**
+
+
+    **border-radius****:****8px****;**
+
+
+    **border-color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **background-color****:****rgb****(****20****,****20****,****20****);**
+
+
+    **font-size****:****15px****;**
+
+
+    **color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **line-height****:****17px****;**
+
+
+    **}**'
+  - '[PAGE 47]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_47_0.png)
+
+
+    **.****toolboxButton****:****hover**
+
+
+    **{**
+
+
+    **border-color****:****aqua****;**
+
+
+    **}**
+
+
+    **.****toolboxButton****:****active**
+
+
+    **{**
+
+
+    **color****:****aqua****;**
+
+
+    **}**
+
+
+    **.****labels**
+
+
+    **{**
+
+
+    **font-size****:****13px****;**
+
+
+    **}**
+
+
+    **.****inputStyle001**
+
+
+    **{**'
+  - '[PAGE 48]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_48_0.png)
+
+
+    **width****:****70px****;**
+
+
+    **padding-left****:****10px****;**
+
+
+    **padding-right****:****10px****;**
+
+
+    **border-radius****:****8px****;**
+
+
+    **background-color****:****rgb****(****0****,****0****,****0****);**
+
+
+    **font-size****:****15px****;**
+
+
+    **color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **}**
+
+
+    **.****imageInput**
+
+
+    **{**
+
+
+    **position****:****fixed****;**
+
+
+    **right****:****0px****;**
+
+
+    **top****:****0px****;**
+
+
+    **width****:****100px****;**
+
+
+    **padding-left****:****1px****;**
+
+
+    **padding-right****:****1px****;**
+
+
+    **padding-top****:****1px****;**'
+  - '[PAGE 49]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_49_0.png)
+
+
+    **padding-bottom****:****1px****;**
+
+
+    **margin-bottom****:****1px****;**
+
+
+    **border-style****:****solid****;**
+
+
+    **border-width****:****1px****;**
+
+
+    **border-radius****:****8px****;**
+
+
+    **border-color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **background-color****:****rgb****(****20****,****20****,****20****);**
+
+
+    **font-size****:****15px****;**
+
+
+    **color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **line-height****:****15px****;**
+
+
+    **z-index****:****100****;**
+
+
+    **}**'
+- md: '
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_50_0.png)
+
+
+    **True Artificial Intelligence System**
+
+
+    **Tautology**
+
+
+    | Operation | Binary |
+
+    | :--- | :--- |
+
+    | Contradiction | 1111 |
+
+    | XOR | 0000 |
+
+    | XNOR | 0110 |
+
+    | AND | 1001 |
+
+    | NAND | 0001 |
+
+    | OR | 1110 |
+
+    | NOR | 0111 |
+
+    | MI | 1000 |
+
+    | MNI | 1101 |
+
+    | LP | 0010 |
+
+    | LC | 0011 |
+
+    | RP | 1100 |
+
+    | RC | 0101 |
+
+    | CI | 1010 |
+
+    | CNI | 1011 |
+
+    | 16-Gon | 0100 |
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_51_0.png)
+
+
+    **For More Tutorials:**
+
+
+    - CollegeOfScripting.weebly.com
+
+    - CollegeOfScripting.wordpress.com
+
+    - Youtube.com/ScriptingCollege
+
+    - Twitter.com/CollegeOfScript
+
+    - GitHub.com/ChristopherTopalian
+
+    - GitHub.com/ChristopherAndrewTopalian
+
+    - Sites.google.com/view/CollegeOfScripting
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_52_0.png)
+
+
+    **Dedicated to God the Father**
+
+
+    This book is created by the College of Scripting Music & Science.
+
+
+    Always remember, that each time you write a script with a pencil and paper, it
+    becomes imprinted so deeply in memory that the material and methods are learned
+    extremely well.
+
+
+    When you Type the scripts, the same is true. The more you type and write out the
+    scripts by keyboard or pencil and paper, the more you will learn programming!
+
+
+    Write and Type every example that you find.
+
+
+    Keep all of your scripts organized.
+
+
+    Every script that you create increases your programming abilities.
+
+
+    SEEING CODE, is one thing, but WRITING CODE is another.
+
+
+    Write it, Type it, Speak It, See It, Dream It.
+
+
+    CollegeOfScripting.weebly.com
+
+    '
+  mdcn: '
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_50_0.png)
+
+
+    **真人工智能系统**
+
+
+    **同义性**
+
+
+    | 运算 | 二进制 |
+
+    | :--- | :--- |
+
+    | 矛盾 | 1111 |
+
+    | 异或 | 0000 |
+
+    | 同异或 | 0110 |
+
+    | 与 | 1001 |
+
+    | 非与 | 0001 |
+
+    | 或 | 1110 |
+
+    | 非或 | 0111 |
+
+    | MI | 1000 |
+
+    | MNI | 1101 |
+
+    | LP | 0010 |
+
+    | LC | 0011 |
+
+    | RP | 1100 |
+
+    | RC | 0101 |
+
+    | CI | 1010 |
+
+    | CNI | 1011 |
+
+    | 16边形 | 0100 |
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_51_0.png)
+
+
+    **更多教程：**
+
+
+    - CollegeOfScripting.weebly.com
+
+    - CollegeOfScripting.wordpress.com
+
+    - Youtube.com/ScriptingCollege
+
+    - Twitter.com/CollegeOfScript
+
+    - GitHub.com/ChristopherTopalian
+
+    - GitHub.com/ChristopherAndrewTopalian
+
+    - Sites.google.com/view/CollegeOfScripting
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_52_0.png)
+
+
+    **献给父神**
+
+
+    本书由脚本音乐与科学学院（College of Scripting Music & Science）创作。
+
+
+    永远记住，每当你用笔和纸写脚本时，它会被深深地烙印在记忆中，从而极好地学习材料和方法。
+
+
+    当你输入脚本时也是如此。你通过键盘或纸笔输入和写出的脚本越多，你学到的编程知识就越多！
+
+
+    写下并输入你看到的每一个例子。
+
+
+    保持你所有脚本的整洁。
+
+
+    你创建的每一个脚本都会提升你的编程能力。
+
+
+    **看代码**是一回事，但**写代码**是另一回事。
+
+
+    写下它、输入它、说出它、看到它、梦见它。
+
+
+    CollegeOfScripting.weebly.com
+
+
+    '
+  merge: 0
+  raw:
+  - '[PAGE 50]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_50_0.png)
+
+
+    **True Artificial Intelligence System**
+
+
+    **Tautology**
+
+
+    **1111**
+
+
+    **Contra-**
+
+
+    **\-diction**
+
+
+    **0000**
+
+
+    **XOR**
+
+
+    **0110**
+
+
+    **XNOR**
+
+
+    **1001**
+
+
+    **AND**
+
+
+    **0001**
+
+
+    **NAND**
+
+
+    **1110**
+
+
+    **OR**
+
+
+    **0111**
+
+
+    **NOR**
+
+
+    **1000**
+
+
+    **MI**
+
+
+    **1101**
+
+
+    **MNI**
+
+
+    **0010**
+
+
+    **LP**
+
+
+    **0011**
+
+
+    **LC**
+
+
+    **1100**
+
+
+    **RP**
+
+
+    **0101**
+
+
+    **RC**
+
+
+    **1010**
+
+
+    **CI**
+
+
+    **1011**
+
+
+    **CNI**
+
+
+    **0100**
+
+
+    **16-Gon**'
+  - '[PAGE 51]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_51_0.png)
+
+
+    **For More Tutorials:**
+
+
+    **CollegeOfScripting.weebly.com**
+
+
+    **CollegeOfScripting.wordpress.com**
+
+
+    **Youtube.com/ScriptingCollege**
+
+
+    **Twitter.com/CollegeOfScript**
+
+
+    **GitHub.com/ChristopherTopalian**
+
+
+    **GitHub.com/ChristopherAndrewTopalian**
+
+
+    **Sites.google.com/view/CollegeOfScripting**'
+  - '[PAGE 52]
+
+
+    ![](img/53420ea31f2d946491030784cbf3b0ae_52_0.png)
+
+
+    **Dedicated to God the Father**
+
+
+    **This book is created by the**
+
+
+    **College of Scripting Music & Science.**
+
+
+    **Always remember, that each time you write a script **
+
+
+    **with a pencil and paper, it becomes imprinted so **
+
+
+    **deeply in memory that the material and methods are**
+
+
+    **learned extremely well.**
+
+
+    **When you Type the scripts, the same is true. The **
+
+
+    **more you type and write out the scripts by keyboard**
+
+
+    **or pencil and paper, the more you will learn **
+
+
+    **programming!**
+
+
+    **Write and Type every example that you find.**
+
+
+    **Keep all of your scripts organized.**
+
+
+    **Every script that you create increases your **
+
+
+    **programming abilities.**
+
+
+    **SEEING CODE, is one thing,**
+
+
+    **but WRITING CODE is another.**
+
+
+    **Write it, Type it, Speak It, See It, Dream It.**
+
+
+    **CollegeOfScripting.weebly.com**'
