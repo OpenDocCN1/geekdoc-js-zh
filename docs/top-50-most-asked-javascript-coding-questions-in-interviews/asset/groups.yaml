@@ -1,0 +1,2611 @@
+- md: "\n# Top 50 Most Asked Javascript Coding Questions in Interviews\n\n## About\
+    \ Me\n**Rahul Chaurasia**\n**2 Year Experienced React Developer**\n**Master of\
+    \ Computer Applications (MCA), NIT Raipur**\n\n**Connect with Me**\n- **Topmate:**\
+    \ https://topmate.io/rahul_chaurasia12\n- **LinkedIn:** https://www.linkedin.com/in/rahul-chaurasia-997a56186/\n\
+    \n## Section 1 - Numbers\n\n### Q-1 Write a JS Program to find Factorial of any\
+    \ given number. (Most Asked)\nApproach :-\n```javascript\nlet number = 7; // Number\
+    \ to find the factorial\n// Function to find the factorial of a given number\n\
+    function findFactorial(num) {\n  // Factorial of 0 is defined as 1\n  if (num\
+    \ === 0) {\n    return 1;\n  }\n  // Initialize factorial result as 1\n  let factorial\
+    \ = 1;\n  // Calculate factorial by multiplying each integer up to num\n  for\
+    \ (let i = 1; i <= num; i++) {\n    factorial *= i;\n  }\n  return factorial;\n\
+    }\nconst result = findFactorial(number);\nconsole.log(result); // Output: 5040\n\
+    ```\n**Output:** The factorial of 7 is 5040.\n**Time Complexity:** O(n)\n**Explanation:**\
+    \ This program calculates the factorial of the number 7. The `findFactorial` function\
+    \ starts by checking if the number is 0, returning 1 if true (since 0! = 1). For\
+    \ numbers greater than 0, it initializes factorial to 1 and multiplies it by each\
+    \ integer from 1 to 7. The final result, 5040, is the factorial of 7. The time\
+    \ complexity is O(n), where n is the value of num as it involves multiplications.\n\
+    \n### Q-2 Write a JS Program to check given number is prime or not. (Most Asked)\n\
+    Approach :-\n```javascript\nlet number = 13; // Number to check for primality\n\
+    // Function to check if a given number is prime\nfunction isPrime(num) {\n  //\
+    \ Handle cases: 0, 1, and negative numbers are not prime\n  if (num <= 1) {\n\
+    \    return false;\n  }\n  // Check divisibility from 2 to num/2\n  for (let i\
+    \ = 2; i <= num/2; i++) {\n    if (num % i === 0) {\n      return false; // Not\
+    \ prime if divisible by i\n    }\n  }\n  return true; // Return true if no divisors\
+    \ are found\n}\nconst result = isPrime(number);\nconsole.log(result); // Output:\
+    \ true (since 13 is a prime number)\n```\n**Output:** The output is true because\
+    \ 13 is a prime number.\n**Time Complexity:** O(n)\n**Explanation:** The `isPrime`\
+    \ function checks for divisibility from 2 to num/2. If a divisor is found, it\
+    \ returns false. The approach determines the primality of a given number.\n\n\
+    ### Q-3 Write a JS Program to reverse the digits of a given Number. (Most Asked)\n\
+    Approach :-\n```javascript\nlet num = 34567; // Number to reverse\n// Function\
+    \ to reverse the digits of a number\nfunction reverseDigits(num) {\n  let s =\
+    \ num.toString(); // Convert the number to a string\n  return s.split(\"\").reverse().join(\"\
+    \"); // Reverse the string and join it back\n}\nconst result = reverseDigits(num);\n\
+    console.log(result); // Output: 76543\n```\n**Output:** The digits of the number\
+    \ 34567 reversed are 76543.\n**Time Complexity:** O(n)\n**Explanation:** The function\
+    \ converts the number to a string, reverses the string, and then joins the characters\
+    \ back. The time complexity is O(n), where n is the number of digits in the number.\n\
+    \n### Q-4 Write a JS Program to return Fibonacci Series of a given number. (Most\
+    \ Asked)\nApproach :-\n```javascript\n// Function to generate the Fibonacci series\
+    \ up to the n-th term\nfunction fibonacci(n) {\n  if (n === 0) {\n    return [0];\n\
+    \  }\n  if (n === 1) {\n    return [0, 1];\n  }\n  let fib = [0, 1]; // Initialize\
+    \ the series with the first two terms\n  for (let i = 2; i < n; i++) {\n    fib[i]\
+    \ = fib[i-1] + fib[i-2]; // Compute the next term\n  }\n  return fib;\n}\nlet\
+    \ n = 5; // Number of terms in the Fibonacci series\nconst result = fibonacci(n);\n\
+    console.log(result); // Output: [0, 1, 1, 2, 3]\n```\n**Output:** The Fibonacci\
+    \ series up to the 5th term is [0, 1, 1, 2, 3].\n**Time Complexity:** O(n)\n**Explanation:**\
+    \ The function initializes the series with the first two terms and then iterates\
+    \ to compute the next terms. The time complexity is O(n), where n is the number\
+    \ of terms in the series.\n\n### Q-5 Write a JS Program to Swap Variables Without\
+    \ a Third Variable. (Most Asked)\nApproach :-\n```javascript\nlet a = 10;\nlet\
+    \ b = 6; // Function to swap two variables without a third variable\nfunction\
+    \ swap(a, b) {\n  a = a + b;\n  b = a - b;\n  a = a - b;\n  console.log(a, b);\
+    \ // Output: 6 10\n}\nswap(a, b);\n```\n\n## Section 2 - Arrays\n\n### Q-6 Write\
+    \ a JS program to find Sum of all Elements in an Array. (Most Asked)\n```javascript\n\
+    function sumArray(arr) {\n  return arr.reduce((sum, num) => sum + num, 0);\n}\n\
+    const numbers = [10, 20, 30, 40, 50];\nconst total = sumArray(numbers);\nconsole.log(total);\
+    \ // Output: 150\n```\nThe function uses the `reduce` method to iterate over the\
+    \ array, adding each element to the accumulator starting with an initial value\
+    \ of 0.\n\n### Q-7 Write a JS Program to perform Binary Search on a Sorted array.\
+    \ (Most Asked)\nApproach :-\n```javascript\nlet arr = [1, 3, 7, 8, 9, 34, 56];\n\
+    let k = 9; // The value to search for\n// Function to perform Binary Search\n\
+    function binarySearch(arr, k) {\n  let start = 0;\n  let end = arr.length - 1;\n\
+    \  while (start <= end) {\n    let mid = Math.floor((start + end) / 2);\n    //\
+    \ If k is less than the middle element, search in the left half\n    if (k < arr[mid])\
+    \ {\n      end = mid - 1;\n    }\n    // If k is greater than the middle element,\
+    \ search in the right half\n    else if (k > arr[mid]) {\n      start = mid +\
+    \ 1;\n    }\n    // If k is equal to the middle element, return the index\n  \
+    \  else if (k === arr[mid]) {\n      return mid;\n    }\n  }\n  return -1; //\
+    \ Element not found\n}\nconst result = binarySearch(arr, k);\nconsole.log(result);\
+    \ // Output: 4 (since 9 is at index 4)\n```\n**Output:** The element 9 is found\
+    \ at index 4.\n**Time Complexity:** O(log n)\n**Explanation:** This program implements\
+    \ the Binary Search algorithm, which is used to search for an element in a sorted\
+    \ array. The algorithm repeatedly divides the search interval in half. If the\
+    \ value of the search key is less than the item in the middle of the interval,\
+    \ it narrows the interval to the lower half, otherwise, it narrows it to the upper\
+    \ half. The time complexity is O(log n), where n is the number of elements in\
+    \ the array.\n\n### Q-8 Write a JS Program to Find the Maximum Element in an Array.\
+    \ (Most Asked)\nApproach :-\n"
+  mdcn: "\n\n# 面试中最常见的 50 道 JavaScript 编码题\n\n## 关于我\n**Rahul Chaurasia**\n**2 年经验\
+    \ React 开发者**\n**计算机应用硕士 (MCA), NIT Raipur**\n\n**与我联系**\n- [Topmate:](https://topmate.io/rahul_chaurasia12)\n\
+    - [LinkedIn](https://www.linkedin.com/in/rahul-chaurasia-997a56186/)\n\n## 第 1\
+    \ 部分 - 数字\n\n### Q-1 写一个 JS 程序找到任意给定数字的阶乘。（常问）\n方法 :-\n```javascript\nlet number\
+    \ = 7; // 要计算阶乘的数字\n// 计算给定数字阶乘的函数\nfunction findFactorial(num) {\n  // 0 的阶乘定义为\
+    \ 1\n  if (num === 0) {\n    return 1;\n  }\n  // 初始化阶乘结果为 1\n  let factorial\
+    \ = 1;\n  // 通过乘以从 1 到 num 的每个整数来计算阶乘\n  for (let i = 1; i <= num; i++) {\n  \
+    \  factorial *= i;\n  }\n  return factorial;\n}\nconst result = findFactorial(number);\n\
+    console.log(result); // 输出: 5040\n```\n**输出:** 7 的阶乘是 5040。\n**时间复杂度:** O(n)\n\
+    **解释：** 该程序计算数字 7 的阶乘。`findFactorial` 函数首先检查数字是否为 0，如果是则返回 1（因为 0! = 1）。对于大于 0\
+    \ 的数字，它将 factorial 初始化为 1，并乘以从 1 到 7 的每个整数。最终结果 5040 是 7 的阶乘。时间复杂度为 O(n)，其中 n\
+    \ 是 num 的值，因为涉及多次乘法运算。\n\n### Q-2 写一个 JS 程序检查给定的数字是否为质数。（常问）\n方法 :-\n```javascript\n\
+    let number = 13; // 要检查质数性的数字\n// 检查给定数字是否为质数的函数\nfunction isPrime(num) {\n  //\
+    \ 处理特殊情况：0、1 和负数不是质数\n  if (num <= 1) {\n    return false;\n  }\n  // 从 2 到 num/2\
+    \ 检查可整除性\n  for (let i = 2; i <= num/2; i++) {\n    if (num % i === 0) {\n   \
+    \   return false; // 如果被 i 整除则不是质数\n    }\n  }\n  return true; // 如果没有找到除数，则返回\
+    \ true\n}\nconst result = isPrime(number);\nconsole.log(result); // 输出: true（因为\
+    \ 13 是质数）\n```\n**输出:** 输出为 true，因为 13 是质数。\n**时间复杂度:** O(n)\n**解释：** `isPrime`\
+    \ 函数检查从 2 到 num/2 的整除性。如果找到除数，则返回 false。该方法判断给定数字的质数性。\n\n### Q-3 写一个 JS 程序反转给定数字的数字。（常问）\n\
+    方法 :-\n```javascript\nlet num = 34567; // 要反转的数字\n// 反转数字数字的函数\nfunction reverseDigits(num)\
+    \ {\n  let s = num.toString(); // 将数字转换为字符串\n  return s.split(\"\").reverse().join(\"\
+    \"); // 反转字符串并重新拼接\n}\nconst result = reverseDigits(num);\nconsole.log(result);\
+    \ // 输出: 76543\n```\n**输出:** 数字 34567 的数字反转后是 76543。\n**时间复杂度:** O(n)\n**解释：**\
+    \ 该函数将数字转换为字符串，反转字符串，然后重新拼接。\n\n### Q-4 写一个 JS 程序返回给定数字的斐波那契数列。（常问）\n方法 :-\n```javascript\n\
+    // 生成斐波那契数列的函数\nfunction fibonacci(n) {\n  if (n <= 0) return [];\n  if (n ===\
+    \ 1) return [0];\n  let fib = [0, 1];\n  for (let i = 2; i < n; i++) {\n    fib.push(fib[i\
+    \ - 1] + fib[i - 2]);\n  }\n  return fib;\n}\nconst n = 5;\nconst result = fibonacci(n);\n\
+    console.log(result); // 输出: [0, 1, 1, 2, 3]\n```\n**输出:** 前 5 个斐波那契数是 [0, 1, 1,\
+    \ 2, 3]。\n**时间复杂度:** O(n)\n**解释：** 该函数通过不断累加前两个数来生成斐波那契数列，时间复杂度为 O(n)。\n\n###\
+    \ Q-5 写一个 JS 程序在不使用临时变量的情况下交换变量。（常问）\n方法 :-\n```javascript\n// 在不使用临时变量的情况下交换变量的函数\n\
+    function swap(a, b) {\n  a = a + b;\n  b = a - b;\n  a = a - b;\n  console.log(`a=${a},\
+    \ b=${b}`);\n}\nswap(10, 20); // 输出: a=20, b=10\n```\n**输出:** a=20, b=10\n**复杂度:**\
+    \ O(1)\n**解释：** 该方法使用算术加减法在不使用额外空间的情况下交换两个值。\n\n## 第 2 部分 - 数组\n\n### Q-6 写一个\
+    \ JS 程序计算数组中所有元素的和。（常问）\n```javascript\nfunction sumArray(arr) {\n  return arr.reduce((sum,\
+    \ num) => sum + num, 0);\n}\nconst numbers = [10, 20, 30, 40, 50];\nconst total\
+    \ = sumArray(numbers);\nconsole.log(total); // 输出: 150\n```\n该函数使用 `reduce` 方法遍历数组，并从值\
+    \ 0 开始累加。\n\n### Q-7 写一个 JS 程序在排序数组上进行二分查找。（常问）\n方法 :-\n```javascript\nlet arr\
+    \ = [1, 3, 7, 8, 9, 34, 56];\nlet k = 9; // 要查找的值\n// 执行二分查找函数\nfunction binarySearch(arr,\
+    \ k) {\n  let start = 0;\n  let end = arr.length - 1;\n  while (start <= end)\
+    \ {\n    let mid = Math.floor((start + end) / 2);\n    // 如果 k 小于中间元素，在左半部分查找\n\
+    \    if (k < arr[mid]) {\n      end = mid - 1;\n    }\n    // 如果 k 大于中间元素，在右半部分查找\n\
+    \    else if (k > arr[mid]) {\n      start = mid + 1;\n    }\n    // 如果 k 等于中间元素，返回索引\n\
+    \    else if (k === arr[mid]) {\n      return mid;\n    }\n  }\n  return -1; //\
+    \ 未找到元素\n}\nconst result = binarySearch(arr, k);\nconsole.log(result); // 输出:\
+    \ 4（因为 9 在索引 4 ）\n```\n**输出:** 元素 9 在索引 4。\n**时间复杂度:** O(log n)\n**解释：** 该程序实现了二分查找算法，用于在排序数组中查找元素。算法反复将搜索范围减半。如果搜索值小于中间元素，则将范围缩小到下半部分，否则缩小到上半部分。时间复杂度为\
+    \ O(log n)，其中 n 是数组中的元素个数。\n\n### Q-8 写一个 JS 程序找到数组中的最大元素。（常问）\n方法 :-\n\n"
+  merge: -1
+  raw:
+  - "[PAGE 0]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n1\n\
+    \n**Top 50 Most Asked Javascript **\n\n**Coding Questions in Interviews**\n\n\
+    \ \n\n**About Me**\n\n**Rahul Chaurasia**\n\n**2 Year Experienced React **\n\n\
+    **Developer **\n\n**Master of Computer Applications **\n\n**(MCA), NIT Raipur**\n\
+    \n**Connect with Me**\n\n**Topmate:** \n\nhttps://topmate.io/rahul\\_chaurasia12\n\
+    \n**LinkedIn:** \n\nhttps://www.linkedin.com/in/rahul-\n\nchaurasia-997a56186/\n\
+    \n** Section 1 - Numbers**\n\n**Q-1** **Write a JS Program to find Factorial of\
+    \ any given number. ****(Most Asked)**\n\nApproach :-\n\n`let`` number ``\\=``\
+    \ ``7``;`` ``// Number to find the factorial of`\n\n`// Function to find the factorial\
+    \ of a given number`\n\n`function`` ``findFactorial``(``num``)`` ``{`\n\n` ``//\
+    \ Factorial of 0 is defined as 1`\n\n` ``if`` ``(``num ``\\===`` ``0``)`` ``{`\n\
+    \n` ``return`` ``1``;`\n\n` ``}`\n\n` ``// Initialize factorial result as 1`\n\
+    \n` ``let`` factorial ``\\=`` ``1``;`\n\n` ``// Calculate factorial by multiplying\
+    \ each integer up to nu`"
+  - "[PAGE 1]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n2\n\
+    \n`m`\n\n` ``for`` ``(``let`` i ``\\=`` ``1``;`` i ``<=`` num``;`` i``++``)``\
+    \ ``{`\n\n` factorial ``\\*=`` i``;`\n\n` ``}`\n\n` ``return`` factorial``;`\n\
+    \n`}`\n\n`const`` result ``\\=`` ``findFactorial``(``number``);`\n\n`console``.``log``(``result``);``\
+    \ ``// Output: 5040`\n\n**Output: **The factorial of `7` is `5040` .\n\n**Time\
+    \ Complexity:** *O(n)*\n\n**Explanation:** This program calculates the factorial\
+    \ of the number `7` . The \n\n`findFactorial` function starts by checking if the\
+    \ number is `0` , returning `1` if true \n\n(since 0! = 1). For numbers greater\
+    \ than `0` , it initializes `factorial` to `1` and \n\nmultiplies it by each integer\
+    \ from `1` to `7` . The final result, `5040` , is the factorial of \n\n`7` . The\
+    \ time complexity is O(n), where n is the value of `num` , as it involves n \n\
+    \nmultiplications.\n\n**Q-2** **Write a JS Program to check given number is prime\
+    \ or not.****(Most Asked)**\n\nApproach :-\n\n`let`` number ``\\=`` ``13``;``\
+    \ ``// Number to check for primality`\n\n`// Function to check if a given number\
+    \ is prime`\n\n`function`` ``isPrime``(``num``)`` ``{`\n\n` ``// Handle edge cases:\
+    \ 0, 1, and negative numbers are not pr`\n\n`ime`\n\n` ``if`` ``(``num ``<=``\
+    \ ``1``)`` ``{`\n\n` ``return`` ``false``;`\n\n` ``}`\n\n` ``// Check divisibility\
+    \ from 2 up to num/2`"
+  - "[PAGE 2]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n3\n\
+    \n` ``for`` ``(``let`` i ``\\=`` ``2``;`` i ``<=`` num ``/`` ``2``;`` i``++``)``\
+    \ ``{`\n\n` ``if`` ``(``num ``%`` i ``\\===`` ``0``)`` ``{`\n\n` ``return`` ``false``;``\
+    \ ``// Not prime if divisible by i`\n\n` ``}`\n\n` ``}`\n\n` ``return`` ``true``;``\
+    \ ``// Return true if no divisors are found`\n\n`}`\n\n`const`` result ``\\=``\
+    \ ``isPrime``(``number``);`\n\n`console``.``log``(``result``);`` ``// Output:\
+    \ true (since 13 is a prime num`\n\n`ber)`\n\n**Output: **The output is `true`\
+    \ because 13 is a prime number.\n\n**Time Complexity:** *O(n)*\n\n**Explanation:**\
+    \ The `isPrime` function checks for divisibility from 2 up to `num/2` . If no\
+    \ \n\ndivisors are found, the number is prime. If a divisor is found, it returns\
+    \ `false` . The \n\napproach effectively determines the primality of a given number.\n\
+    \n**Q-3** **Write a JS Program to reverse the digits of a given Number.****(Most\
+    \ Asked)**\n\nApproach :-\n\n`let`` num ``\\=`` ``34567``;`` ``// Number to reverse`\n\
+    \n`// Function to reverse the digits of a number`\n\n`function`` ``reverseDigits``(``num``)``\
+    \ ``{`\n\n` ``let`` s ``\\=`` num``.``toString``();`` ``// Convert the number\
+    \ to a string`\n\n` ``return`` s``.``split``(``\"\"``).``reverse``().``join``(``\"\
+    \"``);`` ``// Reverse the strin`\n\n`g and join it back`\n\n`}`\n\n`let`` result\
+    \ ``\\=`` ``reverseDigits``(``num``);`\n\n`console``.``log``(``result``);`` ``//\
+    \ Output: 76543`"
+  - "[PAGE 3]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n4\n\
+    \n**Output: **The digits of the number `34567` reversed are `76543` .\n\n**Time\
+    \ Complexity:** *O(n)*\n\n**Explanation:** The function converts the number to\
+    \ a string, reverses the string, \n\nand then joins the characters back together.\
+    \ The time complexity is *O(n)*, where `n` \n\nis the number of digits in the\
+    \ number.\n\n**Q-4** **Write a JS Program to return Fibonacci Series of a given\
+    \ number.****(Most **\n\n**Asked)**\n\nApproach :-\n\n`// Function to generate\
+    \ the Fibonacci series up to the n-th t`\n\n`erm`\n\n`function`` ``fibonacci``(``n``)``\
+    \ ``{`\n\n` ``if`` ``(``n ``\\===`` ``0``)`` ``{`\n\n` ``return`` ``\\[``0``\\\
+    ];`\n\n` ``}`\n\n` ``if`` ``(``n ``\\===`` ``1``)`` ``{`\n\n` ``return`` ``\\\
+    [``0``,`` ``1``\\];`\n\n` ``}`\n\n` ``let`` fib ``\\=`` ``\\[``0``,`` ``1``\\\
+    ];`` ``// Initialize the series with the first t`\n\n`wo terms`\n\n` ``for`` ``(``let``\
+    \ i ``\\=`` ``2``;`` i ``<`` n``;`` i``++``)`` ``{`\n\n` fib``\\[``i``\\]`` ``\\\
+    =`` fib``\\[``i ``\\-`` ``1``\\]`` ``+`` fib``\\[``i ``\\-`` ``2``\\];`` ``//\
+    \ Compute the next ter`\n\n`m`\n\n` ``}`\n\n` ``return`` fib``;`\n\n`}`\n\n`let``\
+    \ n ``\\=`` ``5``;`` ``// Number of terms in the Fibonacci series`"
+  - "[PAGE 4]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n5\n\
+    \n`const`` result ``\\=`` ``fibonacci``(``n``);`\n\n`console``.``log``(``result``);``\
+    \ ``// Output: \\[0, 1, 1, 2, 3\\]`\n\n**Output: **The Fibonacci series up to\
+    \ the 5th term is `\\[0, 1, 1, 2, 3\\]` .\n\n**Time Complexity:** *O(n)*\n\n**Explanation:**\
+    \ The function initializes the series with the first two terms and then \n\niterates\
+    \ to compute the next terms. The time complexity is *O(n)*, where `n` is the \n\
+    \nnumber of terms in the series.\n\n**Q-5 ** **Write a JS Program to Swap Two\
+    \ Variables Without Using a Third Variable.**\n\n**(Most Asked)**\n\nApproach\
+    \ :-\n\n`let`` a ``\\=`` ``10``;`\n\n`let`` b ``\\=`` ``6``;`\n\n`// Function\
+    \ to swap two variables without a third variable`\n\n`function`` ``swap``(``a``,``\
+    \ b``)`` ``{`\n\n` a ``\\=`` a ``+`` b``;`\n\n` b ``\\=`` a ``\\-`` b``;`\n\n\
+    ` a ``\\=`` a ``\\-`` b``;`\n\n` console``.``log``(``a``,`` b``);`` ``// Output\
+    \ the swapped values`\n\n`}`\n\n`swap``(``a``,`` b``);`` ``// Output: 6 10`\n\n\
+    **Output: **The values of `a` and `b` are swapped, resulting in `a = 6` and `b\
+    \ = 10` .\n\n**Time Complexity:** *O(1)*\n\n**Explanation:** This method of swapping\
+    \ uses arithmetic operations to swap the \n\nvalues of two variables without needing\
+    \ a third variable. It effectively changes the \n\nvalues of `a` and `b` in place."
+  - "[PAGE 5]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n6\n\
+    \n**Section 2 - Arrays**\n\n**Q-6 ****Write a JS program to find Sum of all Elements\
+    \ in an Array.****(Most Asked)**\n\n`function`` ``sumArray``(``arr``)`` ``{`\n\
+    \n` ``return`` arr``.``reduce``((``sum``,`` num``)`` ``\\=>`` sum ``+`` num``,``\
+    \ ``0``);`\n\n`}`\n\n`const`` numbers ``\\=`` ``\\[``10``,`` ``20``,`` ``30``,``\
+    \ ``40``,`` ``50``\\];`\n\n`const`` total ``\\=`` ``sumArray``(``numbers``);`\n\
+    \n`console``.``log``(``total``);`` ``// Output: 150`\n\n**Output**: `150`\n\n\
+    **Time Complexity**: *O(n)* where *n* is the number of elements in the array.\n\
+    \n**Explanation**: This function uses the `reduce` method to sum all the elements\
+    \ in an \n\narray. The `reduce` method iterates over the array, adding each element\
+    \ (` num` ) to the \n\naccumulator (` sum` ), starting with an initial value of\
+    \ `0` .\n\n**Q-7** **Write a JS Program to perform Binary Search on a Sorted array.****(Most\
+    \ **\n\n**Asked)**\n\nApproach :-\n\n`let`` arr ``\\=`` ``\\[``1``,`` ``3``,``\
+    \ ``7``,`` ``8``,`` ``9``,`` ``34``,`` ``56``\\];`\n\n`let`` k ``\\=`` ``9``;``\
+    \ ``// The value to search for`\n\n`// Function to perform Binary Search`\n\n\
+    `function`` ``binarySearch``(``arr``,`` k``)`` ``{`\n\n` ``let`` start ``\\=``\
+    \ ``0``;`\n\n` ``let`` end ``\\=`` arr``.``length ``\\-`` ``1``;`\n\n` ``while``\
+    \ ``(``start ``<=`` end``)`` ``{`\n\n` ``let`` mid ``\\=`` Math``.``floor``((``start\
+    \ ``+`` end``)`` ``/`` ``2``);`"
+  - "[PAGE 6]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n7\n\
+    \n` ``// If k is less than the middle element, search in the le`\n\n`ft half`\n\
+    \n` ``if`` ``(``k ``<`` arr``\\[``mid``\\])`` ``{`\n\n` end ``\\=`` mid ``\\-``\
+    \ ``1``;`\n\n` ``}`\n\n` ``// If k is greater than the middle element, search\
+    \ in the `\n\n`right half`\n\n` ``else`` ``if`` ``(``k ``\\>`` arr``\\[``mid``\\\
+    ])`` ``{`\n\n` start ``\\=`` mid ``+`` ``1``;`\n\n` ``}`\n\n` ``// If k is equal\
+    \ to the middle element, return the index`\n\n` ``else`` ``if`` ``(``k ``\\===``\
+    \ arr``\\[``mid``\\])`` ``{`\n\n` ``return`` mid``;`\n\n` ``}`\n\n` ``}`\n\n`\
+    \ ``return`` ``\\-``1``;`` ``// Element not found`\n\n`}`\n\n`const`` result ``\\\
+    =`` ``binarySearch``(``arr``,`` k``);`\n\n`console``.``log``(``result``);`` ``//\
+    \ Output: 4 (since 9 is at index 4)`\n\n**Output: **The element `9` is found at\
+    \ index `4.`\n\n**Time Complexity:** *O(logn)*\n\n**Explanation:** This program\
+    \ implements the Binary Search algorithm, which is used \n\nto search for an element\
+    \ in a sorted array. The algorithm repeatedly divides the \n\nsearch interval\
+    \ in half. If the value of the search key is less than the item in the \n\nmiddle\
+    \ of the interval, it narrows the interval to the lower half, otherwise, it \n\
+    \nnarrows it to the upper half. The time complexity is O(log⁡n), where n is the\
+    \ number \n\nof elements in the array.\n\n**Q-8** **Write a JS Program to Find\
+    \ the Maximum Element in an Array.****(Most Asked)**\n\nApproach :-"
+- md: "\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n8\n\nlet arr\
+    \ = [1, 2, 3, 4, 5, 6, 7, 8, 9]; // Array to check\n\n// Function to find the\
+    \ maximum element in an array\nfunction findMaxElement(arr) {\n  let max = -Infinity;\
+    \ // Initialize max to the smallest possible value\n  for (let i = 0; i < arr.length;\
+    \ i++) {\n    if (arr[i] > max) {\n      max = arr[i]; // Update max if current\
+    \ element is greater\n    }\n  }\n  return max;\n}\nlet result = findMaxElement(arr);\n\
+    console.log(result); // Output: 9\n\n**Output:** The maximum element in the array\
+    \ `[1, 2, 3, 4, 5, 6, 7, 8, 9]` is `9`.\n\n**Time Complexity:** *O(n)*\n\n**Explanation:**\
+    \ The function iterates through the array to find the largest value. The time\
+    \ complexity is *O(n)*, where `n` is the length of the array.\n\n**Q-9** **Write\
+    \ a JS Program to Find Even Numbers in an Array.**\n\nApproach :-\n\nlet arr =\
+    \ [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // Original array\n\n// Function to find even\
+    \ numbers in the array\nfunction evenNumbers(arr) {\n  return arr.filter((ele)\
+    \ => ele % 2 === 0); // Filter the array for even numbers\n}\n\nlet result = evenNumbers(arr);\n\
+    console.log(result); // Output: [2, 4, 6, 8, 10]\n\n**Output:** The array `[1,\
+    \ 2, 3, 4, 5, 6, 7, 8, 9, 10]` is filtered to return only the even numbers `[2,\
+    \ 4, 6, 8, 10]`.\n\n**Time Complexity:** *O(n)*\n\n**Explanation:** The function\
+    \ `evenNumbers` filters the original array, returning only the elements that are\
+    \ even (`ele % 2 === 0`). The time complexity is *O(n)*, where `n` is the number\
+    \ of elements in the array.\n\n**Q-10** **Write a JS Program to Reverse an array.\
+    \ (Most Asked)**\n\nApproach :-\n\nlet originalArray = [1, 2, 3, 4, 5, 6, 7];\n\
+    \n// Function to reverse the array\nfunction reverseArray(array) {\n  let reversedArray\
+    \ = [];\n  for (let i = array.length - 1; i >= 0; i--) {\n    reversedArray.push(array[i]);\n\
+    \  }\n  return reversedArray;\n}\nconst reversed = reverseArray(originalArray);\n\
+    console.log(reversed); // Output: [7, 6, 5, 4, 3, 2, 1]\n\n**Output:** The reversed\
+    \ array is `[7, 6, 5, 4, 3, 2, 1]`.\n\n**Time Complexity:** *O(n)*\n\n**Explanation:**\
+    \ This program implements `reverseArray` to reverse the order of elements in `originalArray`.\
+    \ It iterates from the end of the array using index `i`, pushing each element\
+    \ into a new array `reversed`. The time complexity is O(n), where `n` is the number\
+    \ of elements in the array, as each element is processed exactly once.\n\n**Q-11**\
+    \ **Write a JS program to sort an array in ascending order (Bubble Sort)**\n\n\
+    Approach :-\n\nlet arr = [4, 7, 5, 3, 8, 9, 6];\n\n// Function to perform Bubble\
+    \ Sort\nfunction bubbleSort(arr) {\n  // Outer loop iterates over the array\n\
+    \  for (let i = 0; i < arr.length - 1; i++) {\n    // Inner loop compares adjacent\
+    \ elements\n    for (let j = 0; j < arr.length - 1 - i; j++) {\n      // Swap\
+    \ if the current element is greater than the next\n      if (arr[j] > arr[j +\
+    \ 1]) {\n        let temp = arr[j];\n        arr[j] = arr[j + 1];\n        arr[j\
+    \ + 1] = temp;\n      }\n    }\n  }\n  return arr;\n}\nconst result = bubbleSort(arr);\n\
+    console.log(result); // Output: [1, 3, 4, 5, 6, 7, 9]\n\n**Output:** The sorted\
+    \ array is `[1, 3, 4, 5, 6, 7, 9]`.\n\n**Time Complexity:** *O(n^2)*\n\n**Explanation:**\
+    \ This program implements the Bubble Sort algorithm, which repeatedly steps through\
+    \ the array, compares adjacent elements, and swaps them if they are in the wrong\
+    \ order. The process is repeated until the array is sorted. The time complexity\
+    \ is O(n^2) because the algorithm consists of two nested loops, where `n` is the\
+    \ number of elements in the array.\n\n**Q-12** **Write a JS program to check if\
+    \ an Array is Sorted in Ascending Order or not.**\n\nApproach :-\n\nfunction isArraySorted(arr)\
+    \ {\n  for (let i = 1; i < arr.length; i++) {\n    if (arr[i] < arr[i - 1]) {\n\
+    \      return false; // Array is not sorted\n    }\n  }\n  return true; // Array\
+    \ is sorted\n}\nconst numbers = [1, 2, 3, 4, 5];\nconst result = isArraySorted(numbers);\n\
+    console.log(result); // true\n\n**Output:** true\n\n**Time Complexity:** *O(n)*\
+    \ where *n* is the number of elements in the array.\n\n**Explanation:** This function\
+    \ iterates through the array, comparing each element to its predecessor. If any\
+    \ element is smaller than the previous one, the function returns `false`, indicating\
+    \ that the array is not sorted in ascending order. If the loop completes without\
+    \ finding such an element, the function returns `true`.\n\n**Q-13** **Write a\
+    \ JS program to check if Two Arrays are Equal or not.**\n\nApproach :-\n\nfunction\
+    \ arraysAreEqual(arr1, arr2) {\n  // Check if arrays have the same length\n  if\
+    \ (arr1.length !== arr2.length) {\n    return false;\n  }\n  // Compare each element\n\
+    \  for (let i = 0; i < arr1.length; i++) {\n    if (arr1[i] !== arr2[i]) {\n \
+    \     return false; // Arrays are not equal\n    }\n  }\n  return true; // Arrays\
+    \ are equal\n}\n\nconst arr1 = [1, 2, 3, 4, 5];\nconst arr2 = [1, 2, 3, 4, 5];\n\
+    const result = arraysAreEqual(arr1, arr2);\nconsole.log(result); // true\n\n**Output:**\
+    \ true\n\n**Time Complexity:** *O(n)* where *n* is the number of elements in the\
+    \ array.\n\n**Explanation:** The function checks if the arrays have the same length\
+    \ and then compares each element. If any element differs, it returns `false`,\
+    \ otherwise it returns `true`.\n\n**Q-14** **Write a JS program to count the number\
+    \ of occurrences of each element in an array.**\n\nApproach :-\n\nlet arr = [4,\
+    \ 7, 5, 3, 8, 9, 6];\n\n// Function to count the occurrences of each element\n\
+    function numberOfOccurence(arr) {\n  let obj = {};\n  for (let i = 0; i < arr.length;\
+    \ i++) {\n    // If the element is already in the object, increment its count\n\
+    \    if (arr[i] in obj) {\n      obj[arr[i]] += 1;\n    } else {\n      // If\
+    \ the element is not in the object, set its count to 1\n      obj[arr[i]] = 1;\n\
+    \    }\n  }\n  return obj;\n}\nconst result = numberOfOccurence(arr);\nconsole.log(result);\
+    \ // Output: { '4': 1, '7': 1, '5': 1, '3': 1, '8': 1, '9': 1, '6': 1 }\n\n**Output:**\
+    \ The number of occurrences of each element in the array is `{ '4': 1, '7': 1,\
+    \ '5': 1, '3': 1, '8': 1, '9': 1, '6': 1 }`.\n\n**Time Complexity:** *O(n)* where\
+    \ *n* is the number of elements in the array.\n\n**Explanation:** The program\
+    \ iterates through the array once and uses an object to store the count of each\
+    \ element.\n\n**Q-15** **Write a JS Program to Rotate an array by K Positions.**\n\
+    \nApproach :-\n\nlet arr = [1, 2, 3, 4, 5, 6, 7];\nlet k = 3; // Number of positions\
+    \ to rotate the array\n"
+  mdcn: "\n面试中最常的 50 道 JavaScript 编码题\n\n8\n\nlet arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];\
+    \ // 检查的数组\n\n// 查找数组中最大元素的函数\nfunction findMaxElement(arr) {\n  let max = -Infinity;\
+    \ // 初始化 max 为最小可能的值\n  for (let i = 0; i < arr.length; i++) {\n    if (arr[i]\
+    \ > max) {\n      max = arr[i]; // 如果当前元素大于 max，则更新 max\n    }\n  }\n  return\
+    \ max;\n}\nlet result = findMaxElement(arr);\nconsole.log(result); // 输出: 9\n\n\
+    **输出：** 数组 `[1, 2, 3, 4, 5, 6, 7, 8, 9]` 中的最大元素是 `9`。\n\n**时间复杂度：** *O(n)*\n\n\
+    **解析：** 该函数遍历数组以找到最大值。时间复杂度为 *O(n)*，其中 `n` 是数组的长度。\n\n**Q-9** **编写一个 JS 程序来找出数组中的偶数。**\n\
+    \n方法 :-\n\nlet arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // 数组\n\n// 查找数组中偶数的函数\n\
+    function evenNumbers(arr) {\n  return arr.filter((ele) => ele % 2 === 0); // 过滤数组得到偶数\n\
+    }\n\nlet result = evenNumbers(arr);\nconsole.log(result); // 输出: [2, 4, 6, 8,\
+    \ 10]\n\n**输出：** 数组 `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]` 经过过滤后仅返回偶数 `[2, 4, 6, 8,\
+    \ 10]`。\n\n**时间复杂度：** *O(n)*\n\n**解析：** 函数 `evenNumbers` 过滤原始数组，只返回偶数元素（`ele %\
+    \ 2 === 0`）。时间复杂度为 *O(n)*，其中 `n` 是数组中的元素个数。\n\n**Q-10** **编写一个 JS 程序反转数组。（最常问）**\n\
+    \n方法 :-\n\nlet originalArray = [1, 2, 3, 4, 5, 6, 7];\n\n// 反转数组的函数\nfunction\
+    \ reverseArray(array) {\n  let reversedArray = [];\n  for (let i = array.length\
+    \ - 1; i >= 0; i--) {\n    reversedArray.push(array[i]);\n  }\n  return reversedArray;\n\
+    }\nconst reversed = reverseArray(originalArray);\nconsole.log(reversed); // 输出:\
+    \ [7, 6, 5, 4, 3, 2, 1]\n\n**输出：** 反转后的数组是 `[7, 6, 5, 4, 3, 2, 1]`。\n\n**时间复杂度：**\
+    \ *O(n)*\n\n**解析：** 该程序实现了 `reverseArray` 来反转 `originalArray` 中元素的顺序。它使用索引 `i`\
+    \ 从数组末尾开始遍历，将每个元素推入新数组 `reversed` 中。时间复杂度为 O(n)，其中 `n` 是数组中的元素个数，因为每个元素恰好被处理一次。\n\
+    \n**Q-11** **编写一个 JS 程序按升序排序数组（泡泡排序）**\n\n方法 :-\n\nlet arr = [4, 7, 5, 3, 8, 9,\
+    \ 6];\n\n// 执行泡泡排序的函数\nfunction bubbleSort(arr) {\n  // 外层循环遍历数组\n  for (let i\
+    \ = 0; i < arr.length; i++) {\n    // 内层循环比较相邻元素\n    for (let j = 0; j < arr.length\
+    \ - i - 1; j++) {\n      if (arr[j] > arr[j + 1]) {\n        // 交换元素\n       \
+    \ let temp = arr[j];\n        arr[j] = arr[j + 1];\n        arr[j + 1] = temp;\n\
+    \      }\n    }\n  }\n  return arr;\n}\nconst result = bubbleSort(arr);\nconsole.log(result);\
+    \ // 输出: [3, 4, 5, 6, 7, 8, 9]\n\n**输出：** 排序后的数组是 `[3, 4, 5, 6, 7, 8, 9]`。\n\n\
+    **时间复杂度：** *O(n²)*\n\n**解析：** 泡泡排序通过嵌套循环比较并交换相邻元素来排序。时间复杂度为 O(n²)，其中 `n` 是数组的长度。\n\
+    \n**Q-12** **编写一个 JS 程序检查数组是否升序排序。**\n\n方法 :-\n\nfunction isSorted(arr) {\n  for\
+    \ (let i = 0; i < arr.length - 1; i++) {\n    if (arr[i] > arr[i + 1]) {\n   \
+    \   return false;\n    }\n  }\n  return true;\n}\nconst arr = [1, 2, 3, 4, 5,\
+    \ 6, 7];\nconst result = isSorted(arr);\nconsole.log(result); // 输出: true\n\n\
+    **输出：** true\n\n**时间复杂度：** *O(n)*\n\n**解析：** 该函数遍历数组并检查当前元素是否大于后一个元素。如果是，则返回 `false`。时间复杂度为\
+    \ *O(n)*，其中 `n` 是数组中的元素个数。\n\n**Q-13** **编写一个 JS 程序检查两个数组是否相等。**\n\n方法 :-\n\n\
+    function arraysAreEqual(arr1, arr2) {\n  if (arr1.length !== arr2.length) {\n\
+    \    return false;\n  }\n  for (let i = 0; i < arr1.length; i++) {\n    if (arr1[i]\
+    \ !== arr2[i]) {\n      return false;\n    }\n  }\n  return true;\n}\nconst arr1\
+    \ = [1, 2, 3, 4, 5];\nconst arr2 = [1, 2, 3, 4, 5];\nconst result = arraysAreEqual(arr1,\
+    \ arr2);\nconsole.log(result); // 输出: true\n\n**输出：** true\n\n**时间复杂度：** *O(n)*\n\
+    \n**解析：** 该函数首先检查两个数组的长度，如果不同则返回 `false`。然后，它遍历数组并比较对应位置的元素。如果任何元素不同，则返回 `false`。时间复杂度为\
+    \ *O(n)*。\n\n**Q-14** **编写一个 JS 程序统计数组中每个元素的出现次数。**\n\n方法 :-\n\nlet arr = [4,\
+    \ 7, 5, 3, 8, 9, 6];\n\n// 统计每个元素出现次数的函数\nfunction numberOfOccurence(arr) {\n\
+    \  let obj = {};\n  for (let i = 0; i < arr.length; i++) {\n    // 如果元素已在对象中，增加计数\n\
+    \    if (arr[i] in obj) {\n      obj[arr[i]] += 1;\n    } else {\n      // 如果元素不在对象中，将其计数置为1\n\
+    \      obj[arr[i]] = 1;\n    }\n  }\n  return obj;\n}\nconst result = numberOfOccurence(arr);\n\
+    console.log(result); // 输出: { '4': 1, '7': 1, '5': 1, '3': 1, '8': 1, '9': 1,\
+    \ '6': 1 }\n\n**输出：** 数组中每个元素的出现次数为 `{ '4': 1, '7': 1, '5': 1, '3': 1, '8': 1,\
+    \ '9': 1, '6': 1 }`。\n\n**时间复杂度：** *O(n)* 其中 *n* 是数组中的元素个数。\n\n**解析：** 该程序遍历一次数组，并使用对象存储每个元素的计数。\n\
+    \n**Q-15** **编写一个 JS 程序将数组循环旋转 K 个位置。**\n\n方法 :-\n\nlet arr = [1, 2, 3, 4, 5,\
+    \ 6, 7];\nlet k = 3; // 需要旋转的位置数\n\n"
+  merge: 1
+  raw:
+  - "[PAGE 7]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n8\n\
+    \n`let`` arr ``\\=`` ``\\[``1``,`` ``2``,`` ``3``,`` ``4``,`` ``5``,`` ``6``,``\
+    \ ``7``,`` ``8``,`` ``9``\\];`` ``// Array to check`\n\n`// Function to find the\
+    \ maximum element in an array`\n\n`function`` ``findMaxElement``(``arr``)`` ``{`\n\
+    \n` ``let`` max ``\\=`` ``\\-``Infinity``;`` ``// Initialize max to the smallest\
+    \ poss`\n\n`ible value`\n\n` ``for`` ``(``let`` i ``\\=`` ``0``;`` i ``<`` arr``.``length``;``\
+    \ i``++``)`` ``{`\n\n` ``if`` ``(``arr``\\[``i``\\]`` ``\\>`` max``)`` ``{`\n\n\
+    ` max ``\\=`` arr``\\[``i``\\];`` ``// Update max if current element is great`\n\
+    \n`er`\n\n` ``}`\n\n` ``}`\n\n` ``return`` max``;`\n\n`}`\n\n`let`` result ``\\\
+    =`` ``findMaxElement``(``arr``);`\n\n`console``.``log``(``result``);`` ``// Output:\
+    \ 9`\n\n**Output: **The maximum element in the array `\\[1, 2, 3, 4, 5, 6, 7,\
+    \ 8, 9\\]` is `9` .\n\n**Time Complexity:** *O(n)*\n\n**Explanation:** The function\
+    \ iterates through the array to find the largest value. The \n\ntime complexity\
+    \ is *O(n)*, where `n` is the length of the array.\n\n**Q-9** **Write a JS Program\
+    \ to Find Even Numbers in an Array.**\n\nApproach :-\n\n`let`` arr ``\\=`` ``\\\
+    [``1``,`` ``2``,`` ``3``,`` ``4``,`` ``5``,`` ``6``,`` ``7``,`` ``8``,`` ``9``,``\
+    \ ``10``\\];`` ``// Original array`\n\n`// Function to find even numbers in the\
+    \ array`\n\n`function`` ``evenNumbers``(``arr``)`` ``{`\n\n` ``return`` arr``.``filter``((``ele``)``\
+    \ ``\\=>`` ele ``%`` ``2`` ``\\===`` ``0``);`` ``// Filter the ar`\n\n`ray for\
+    \ even numbers`\n\n`}`"
+  - "[PAGE 8]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n9\n\
+    \n`let`` result ``\\=`` ``evenNumbers``(``arr``);`\n\n`console``.``log``(``result``);``\
+    \ ``// Output: \\[2, 4, 6, 8, 10\\]`\n\n**Output: **The array `\\[1, 2, 3, 4,\
+    \ 5, 6, 7, 8, 9, 10\\]` is filtered to return only the even \n\nnumbers `\\[2,\
+    \ 4, 6, 8, 10\\]` .\n\n**Time Complexity:** *O(n)*\n\n**Explanation:** The function\
+    \ `evenNumbers` filters the original array, returning only the \n\nelements that\
+    \ are even (` ele % 2 === 0` ). The time complexity is *O(n)*, where `n` is the\
+    \ \n\nnumber of elements in the array.\n\n**Q-10** **Write a JS Program to Reverse\
+    \ an array.****(Most Asked)**\n\nApproach :-\n\n`let`` originalArray ``\\=`` ``\\\
+    [``1``,`` ``2``,`` ``3``,`` ``4``,`` ``5``,`` ``6``,`` ``7``\\];`\n\n`// Function\
+    \ to reverse the array`\n\n`function`` ``reverseArray``(``array``)`` ``{`\n\n\
+    ` ``let`` reversedArray ``\\=`` ``\\[\\];`\n\n` ``for`` ``(``let`` i ``\\=`` array``.``length\
+    \ ``\\-`` ``1``;`` i ``\\>=`` ``0``;`` i``\\--``)`` ``{`\n\n` reversedArray``.``push``(``array``\\\
+    [``i``\\]);`\n\n` ``}`\n\n` ``return`` reversedArray``;`\n\n`}`\n\n`const`` reversed\
+    \ ``\\=`` ``reverseArray``(``originalArray``);`\n\n`console``.``log``(``reversed``);``\
+    \ ``// Output: \\[7, 6, 5, 4, 3, 2, 1\\]`\n\n**Output: **The reversed array is\
+    \ `\\[7, 6, 5, 4, 3, 2, 1\\].`\n\n**Time Complexity:** *O(n)*\n\n**Explanation:**\
+    \ This program implements a function `reverseArray` to reverse the order \n\n\
+    of elements in `originalArray` . It iterates from the end of the array to the\
+    \ beginning \n\nusing the loop index `i` , pushing each element into a new array\
+    \ `reversedArray` . The \n\ntime complexity is O(n), where n is the number of\
+    \ elements in the array, as each"
+  - "[PAGE 9]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n10\n\
+    \nelement is processed exactly once.\n\n**Q-11 ** **Write a JS program to sort\
+    \ an array in ascending order(Bubble Sort).****(Most **\n\n**Asked)**\n\nApproach\
+    \ :-\n\n`let`` arr ``\\=`` ``\\[``4``,`` ``7``,`` ``5``,`` ``3``,`` ``8``,`` ``9``,``\
+    \ ``6``,`` ``1``\\];`\n\n`// Function to perform Bubble Sort`\n\n`function`` ``bubbleSort``(``arr``)``\
+    \ ``{`\n\n` ``// Outer loop iterates over the array`\n\n` ``for`` ``(``let`` i\
+    \ ``\\=`` ``0``;`` i ``<`` arr``.``length ``\\-`` ``1``;`` i``++``)`` ``{`\n\n\
+    ` ``// Inner loop compares adjacent elements`\n\n` ``for`` ``(``let`` j ``\\=``\
+    \ ``0``;`` j ``<`` arr``.``length ``\\-`` ``1`` ``\\-`` i``;`` j``++``)`` ``{`\n\
+    \n` ``// Swap if the current element is greater than the next`\n\n` ``if`` ``(``arr``\\\
+    [``j``\\]`` ``\\>`` arr``\\[``j ``+`` ``1``\\])`` ``{`\n\n` ``let`` temp ``\\\
+    =`` arr``\\[``j``\\];`\n\n` arr``\\[``j``\\]`` ``\\=`` arr``\\[``j ``+`` ``1``\\\
+    ];`\n\n` arr``\\[``j ``+`` ``1``\\]`` ``\\=`` temp``;`\n\n` ``}`\n\n` ``}`\n\n\
+    ` ``}`\n\n` ``return`` arr``;`\n\n`}`\n\n`const`` result ``\\=`` ``bubbleSort``(``arr``);`\n\
+    \n`console``.``log``(``result``);`` ``// Output: \\[1, 3, 4, 5, 6, 7, 8, 9\\]`\n\
+    \n**Output: **The sorted array is `\\[1, 3, 4, 5, 6, 7, 8, 9\\]` .\n\n**Time Complexity:**\
+    \ *O(n^2)*\n\n**Explanation: **This program implements the Bubble Sort algorithm,\
+    \ which \n\nrepeatedly steps through the array, compares adjacent elements, and\
+    \ swaps them \n\nif they are in the wrong order. The process is repeated until\
+    \ the array is sorted."
+  - "[PAGE 10]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    11\n\nThe time complexity is O(n^2) because the algorithm consists of two nested\
+    \ \n\nloops, where n is the number of elements in the array.\n\n**Q-12 ****Write\
+    \ a JS program to check if an Array is Sorted in Ascending Order or **\n\n**not.**\n\
+    \nApproach:-\n\n`function`` ``isArraySorted``(``arr``)`` ``{`\n\n` ``for`` ``(``let``\
+    \ i ``\\=`` ``1``;`` i ``<`` arr``.``length``;`` i``++``)`` ``{`\n\n` ``if`` ``(``arr``\\\
+    [``i``\\]`` ``<`` arr``\\[``i ``\\-`` ``1``\\])`` ``{`\n\n` ``return`` ``false``;``\
+    \ ``// Array is not sorted`\n\n` ``}`\n\n` ``}`\n\n` ``return`` ``true``;`` ``//\
+    \ Array is sorted`\n\n`}`\n\n`const`` numbers ``\\=`` ``\\[``1``,`` ``2``,`` ``3``,``\
+    \ ``4``,`` ``5``\\];`\n\n`const`` result ``\\=`` ``isArraySorted``(``numbers``);`\n\
+    \n`console``.``log``(``result``);`` ``//true`\n\n**Output**: `true`\n\n**Time\
+    \ Complexity**: *O(n)* where *n* is the number of elements in the array.\n\n**Explanation**:\
+    \ This function iterates through the array, comparing each element to \n\nits\
+    \ predecessor. If any element is smaller than the previous one, the function \n\
+    \nreturns `false` , indicating that the array is not sorted in ascending order.\
+    \ If the loop \n\ncompletes without finding such an element, the function returns\
+    \ `true` .\n\n**Q-13 ****Write a JS program to check if Two Arrays are Equal or\
+    \ not.**\n\nApproach:-\n\n`function`` ``arraysAreEqual``(``arr1``,`` arr2``)``\
+    \ ``{`\n\n` ``// Check if arrays have the same length`\n\n` ``if`` ``(``arr1``.``length\
+    \ ``!==`` arr2``.``length``)`` ``{`"
+  - "[PAGE 11]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    12\n\n` ``return`` ``false``;`\n\n` ``}`\n\n` ``// Compare each element`\n\n`\
+    \ ``for`` ``(``let`` i ``\\=`` ``0``;`` i ``<`` arr1``.``length``;`` i``++``)``\
+    \ ``{`\n\n` ``if`` ``(``arr1``\\[``i``\\]`` ``!==`` arr2``\\[``i``\\])`` ``{`\n\
+    \n` ``return`` ``false``;`` ``// Arrays are not equal`\n\n` ``}`\n\n` ``}`\n\n\
+    ` ``return`` ``true``;`` ``// Arrays are equal`\n\n`}`\n\n`const`` array1 ``\\\
+    =`` ``\\[``5``,`` ``12``,`` ``7``,`` ``19``,`` ``24``\\];`\n\n`const`` array2\
+    \ ``\\=`` ``\\[``5``,`` ``12``,`` ``7``,`` ``19``,`` ``24``\\];`\n\n`const`` result\
+    \ ``\\=`` ``arraysAreEqual``(``array1``,`` array2``);`\n\n`console``.``log``(``result``);``\
+    \ ``// Output: true`\n\n**Output**: `true`\n\n**Time Complexity**: *O(n)* where\
+    \ *n* is the number of elements in the arrays.\n\n**Explanation**: The function\
+    \ checks if the arrays have the same length and then \n\ncompares each corresponding\
+    \ element. If any element differs, it returns `false` ; \n\notherwise, it returns\
+    \ `true` .\n\n**Q-14** ** Write a JS Program to count the number of occurrences\
+    \ of each element **\n\n**in an array.****(Most Asked)**\n\nApproach :-\n\n`let``\
+    \ arr ``\\=`` ``\\[``1``,`` ``4``,`` ``5``,`` ``7``,`` ``6``,`` ``7``,`` ``4``,``\
+    \ ``3``,`` ``2``,`` ``8``,`` ``8``,`` ``6``,`` ``4``,`` ``3``\\];`\n\n`// Function\
+    \ to count the number of occurrences of each elemen`\n\n`t`\n\n`function`` ``numberOfOccurence``(``arr``)``\
+    \ ``{`\n\n` ``let`` obj ``\\=`` ``{};`"
+  - "[PAGE 12]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    13\n\n` ``for`` ``(``let`` i ``\\=`` ``0``;`` i ``<`` arr``.``length``;`` i``++``)``\
+    \ ``{`\n\n` ``// If the element is already in the object, increment its `\n\n\
+    `count`\n\n` ``if`` ``(``arr``\\[``i``\\]`` ``in`` obj``)`` ``{`\n\n` obj``\\\
+    [``arr``\\[``i``\\]\\]`` ``+=`` ``1``;`\n\n` ``}`` ``else`` ``{`\n\n` ``// If\
+    \ the element is not in the object, set its count t`\n\n`o 1`\n\n` obj``\\[``arr``\\\
+    [``i``\\]\\]`` ``\\=`` ``1``;`\n\n` ``}`\n\n` ``}`\n\n` ``return`` obj``;`\n\n\
+    `}`\n\n`const`` result ``\\=`` ``numberOfOccurence``(``arr``);`\n\n`console``.``log``(``result``);``\
+    \ ``// Output: { '1': 1, '2': 1, '3': 2, `\n\n`'4': 3, '5': 1, '6': 2, '7': 2,\
+    \ '8': 2 }`\n\n**Output: **The number of occurrences of each element in the array\
+    \ is `{ '1': 1, '2': `\n\n`1, '3': 2, '4': 3, '5': 1, '6': 2, '7': 2, '8': 2 }`\
+    \ .\n\n**Time Complexity:** *O(n)*\n\n**Explanation: **This program counts the\
+    \ number of occurrences of each element in \n\nan array by iterating through each\
+    \ element and using an object to store the count. \n\nIf the element is already\
+    \ in the object, its count is incremented; otherwise, it is \n\nadded to the object\
+    \ with a count of 1. The time complexity is O(n), where n is the \n\nnumber of\
+    \ elements in the array.\n\n**Q-15** ** Write a JS Program to Rotate an array\
+    \ by K Positions.**\n\nApproach :-\n\n`let`` arr ``\\=`` ``\\[``1``,`` ``2``,``\
+    \ ``3``,`` ``4``,`` ``5``,`` ``6``,`` ``7``\\];`\n\n`let`` k ``\\=`` ``3``;``\
+    \ ``// Number of positions to rotate the array`"
+- md: "\n## Top 50 Most Asked Javascript Coding Questions in Interviews\n\n`// Function\
+    \ to rotate the array to the right by k positions`\nfunction rotateArray(arr,\
+    \ k) {\n  // Get the last k elements of the array\n  let firstSlice = arr.slice(arr.length\
+    \ - k, arr.length);\n  // Get the elements from the start up to the last k element\n\
+    \  let secondSlice = arr.slice(0, arr.length - k);\n  // Concatenate the firstSlice\
+    \ and secondSlice to form the rotated array\n  let rotatedArray = [...firstSlice,\
+    \ ...secondSlice];\n  return rotatedArray;\n}\nconst result = rotateArray(arr,\
+    \ k);\nconsole.log(result); // Output: [5, 6, 7, 1, 2, 3, 4]\n\n**Output:** The\
+    \ rotated array is `[5, 6, 7, 1, 2, 3, 4].`\n\n**Time Complexity:** O(n)\n\n**Explanation:**\
+    \ This program rotates `arr` to the right by `k` positions. The function `rotateArray`\
+    \ slices the array into two parts: `firstSlice` contains the last `k` elements.\
+    \ `secondSlice` contains the remaining elements from the start up to the last\
+    \ `k` elements. These slices are concatenated to create the rotated array. The\
+    \ time complexity is O(n), where n is the number of elements in the array, due\
+    \ to the linear time required for slicing and concatenating.\n\n## Q-16 Write\
+    \ a JS Program to remove duplicates from an array. (Most Asked)\n\nApproach :-\n\
+    \nlet arr = [1, 2, 3, 4, 5, 4, 6, 7, 3]; // Array with duplicates\n// Function\
+    \ to remove duplicates from an array\nfunction removeDuplicates(arr) {\n  let\
+    \ uniqueArray = [];\n  for (let i = 0; i < arr.length; i++) {\n    // Check if\
+    \ the element is not already in the uniqueArray\n    if (uniqueArray.indexOf(arr[i])\
+    \ === -1) {\n      uniqueArray.push(arr[i]); // Add unique element to the array\n\
+    \    }\n  }\n  return uniqueArray;\n}\nlet result = removeDuplicates(arr);\nconsole.log(result);\
+    \ // Output: [1, 2, 3, 4, 5, 6, 7]\n\n**Output:** The array `[1, 2, 3, 4, 5, 4,\
+    \ 6, 7, 3]` after removing duplicates is `[1, 2, 3, 4, 5, 6, 7]`.\n\n**Time Complexity:**\
+    \ O(n²)\n\n**Explanation:** The function iterates through the array, checking\
+    \ if each element is already present in the `uniqueArray`. If not, it adds the\
+    \ element. The time complexity is O(n²) due to the nested loop nature of `indexOf`\
+    \ inside the `for` loop.\n\n## Q-17 Write a JS Program to return duplicates in\
+    \ an array.\n\nApproach :-\n\nlet arr = [8, 9, 34, 56, 1, 3, 7, 8, 9, 5, 5];\n\
+    // Function to find duplicates in an array\nfunction findDuplicates(arr) {\n \
+    \ let duplicates = [];\n  let unique = new Set();\n  for (let i = 0; i < arr.length;\
+    \ i++) {\n    // If the element is already in the set, it's a duplicate\n    if\
+    \ (unique.has(arr[i])) {\n      // Add to duplicates array if not included\n \
+    \     if (!duplicates.includes(arr[i])) {\n        duplicates.push(arr[i]);\n\
+    \      }\n    } else {\n      // Otherwise, add the element to the set\n     \
+    \ unique.add(arr[i]);\n    }\n  }\n  return duplicates;\n}\nconst result = findDuplicates(arr);\n\
+    console.log(result); // Output: [8, 9, 5]\n\n**Output:** The duplicates found\
+    \ in the array are `[8, 9, 5]`.\n\n**Time Complexity:** O(n)\n\n**Explanation:**\
+    \ This program finds duplicates in an array by iterating through each element\
+    \ using a Set to track unique elements. If an element is found in Set, it's a\
+    \ duplicate and is added to duplicates array if not present. The time complexity\
+    \ is O(n), where n is the number of elements.\n\n## Q-18 Write a JS Program to\
+    \ find largest Element in an array.\n\nApproach :-\n\nlet arr = [4, 65, 32, 7,\
+    \ 4, 6, 88, 87];\n// Function to find the largest element in the array\nfunction\
+    \ findLargest(array) {\n  // Assume the first element is the largest\n  let largest\
+    \ = array[0];\n  // Iterate through the array to find the largest\n  for (let\
+    \ i = 1; i < array.length; i++) {\n    if (array[i] > largest) {\n      largest\
+    \ = array[i];\n    }\n  }\n  return largest;\n}\nconst result = findLargest(arr);\n\
+    console.log(result); // Output: 88\n\n**Output:** The largest element in the array\
+    \ `[4, 65, 32, 7, 4, 6, 88, 87]` is 88.\n\n**Time Complexity:** O(n)\n\n**Explanation:**\
+    \ The function iterates through the array once, comparing each element to find\
+    \ the largest value. The final result is 88, which is the largest element in the\
+    \ array. The time complexity is O(n), making it efficient for this task.\n\n##\
+    \ Q-19 Write a JS Program to find Second largest Element in an array. (Most Asked)\n\
+    \nApproach :-\n\nlet arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]; // Array to find the second\
+    \ largest element\n// Function to find the second largest element\nfunction secondLargestElement(arr)\
+    \ {\n  let largest = -Infinity;\n  let secondLargest = -Infinity;\n  for (let\
+    \ i = 0; i < arr.length; i++) {\n    if (arr[i] > largest) {\n      secondLargest\
+    \ = largest;\n      largest = arr[i];\n    } else if (arr[i] > secondLargest &&\
+    \ arr[i] !== largest) {\n      secondLargest = arr[i];\n    }\n  }\n  return secondLargest;\n\
+    }\nconst result = secondLargestElement(arr);\nconsole.log(result); // Output:\
+    \ 8\n\n**Output:** The second largest element in the array `[1, 2, 3, 4, 5, 6,\
+    \ 7, 8, 9]` is 8.\n\n**Time Complexity:** O(n)\n\n**Explanation:** The function\
+    \ iterates through the array once, updating the `largest` and `secondLargest`\
+    \ variables as needed. The final result is the second largest element, and the\
+    \ process is efficient with a time complexity of O(n).\n\n## Q-20 Write a JS Program\
+    \ to find the Missing Number in a Sequence. (Most Asked)\n\nApproach :-\n\nlet\
+    \ arr = [1, 2, 3, 5, 6]; // Sequence with a missing number\n// Function to find\
+    \ the missing number in the sequence\nfunction findMissingNumber(arr) {\n  let\
+    \ n = arr.length + 1; // Length of original sequence\n  let totalSum = (n * (n\
+    \ + 1)) / 2; // Sum of first n natural numbers\n  let arrSum = arr.reduce((acc,\
+    \ curr) => acc + curr, 0); // Sum of elements in the array\n  return totalSum\
+    \ - arrSum; // The difference gives the missing number\n}\nconst result = findMissingNumber(arr);\n\
+    console.log(result); // Output: 4\n\n**Output:** The missing number in the sequence\
+    \ is 4.\n\n## Q-21 Write a JS Program to flatten a nested array.\n\nApproach :-\n\
+    \nlet arr = [[12, [4, 5]], [7, 9], 3];\n// Function to flatten a nested array\n\
+    function flattenArray(arr) {\n  return arr.reduce((preVal, currentVal) => {\n\
+    \    // If the current value is an array, recursively flatten it\n    if (Array.isArray(currentVal))\
+    \ {\n      return preVal.concat(flattenArray(currentVal));\n    }\n    return\
+    \ preVal.concat(currentVal);\n  }, []);\n}\n"
+  mdcn: "\n\n## 面试中最常的 50 道 JavaScript 编码题\n\n```javascript\n// 将数组向右旋转 k 位的函数\nfunction\
+    \ rotateArray(arr, k) {\n  // 获取数组的最后 k 个元素\n  let firstSlice = arr.slice(arr.length\
+    \ - k, arr.length);\n  // 获取从开始到倒数 k 个元素的元素\n  let secondSlice = arr.slice(0,\
+    \ arr.length - k);\n  // 合并 firstSlice 和 secondSlice形成旋转后的数组\n  let rotatedArray\
+    \ = [...firstSlice, ...secondSlice];\n  return rotatedArray;\n}\nconst result\
+    \ = rotateArray(arr, k);\nconsole.log(result); // 输出: [5, 6, 7, 1, 2, 3, 4]\n\
+    ```\n\n**输出：** 旋转后的数组为 `[5, 6, 7, 1, 2, 3, 4]`。\n\n**时间复杂度：** O(n)\n\n**解释：**\
+    \ 该程序将 `arr` 向右旋转 `k` 个位置。函数 `rotateArray` 将数组切分为两部分：`firstSlice` 包含最后 `k` 个元素；`secondSlice`\
+    \ 包含从开始到倒数 `k` 个元素的剩余元素。这些切片被合并以创建旋转后的数组。时间复杂度为 O(n)，其中 n 是数组中的元素数量，因为切片和合并需要线性时间。\n\
+    \n## Q-16 编写一个 JS 程序移除数组中的重复元素。（最常问）\n\n方法 :-\n\n```javascript\nlet arr = [1,\
+    \ 2, 3, 4, 5, 4, 6, 7, 3]; // 包含重复元素的数组\n// 移除数组中重复元素的函数\nfunction removeDuplicates(arr)\
+    \ {\n  let uniqueArray = [];\n  for (let i = 0; i < arr.length; i++) {\n    //\
+    \ 检查元素是否已在 uniqueArray 中\n    if (uniqueArray.indexOf(arr[i]) === -1) {\n    \
+    \  uniqueArray.push(arr[i]); // 将唯一元素加入数组\n    }\n  }\n  return uniqueArray;\n\
+    }\nlet result = removeDuplicates(arr);\nconsole.log(result); // 输出: [1, 2, 3,\
+    \ 4, 5, 6, 7]\n```\n\n**输出：** 数组 `[1, 2, 3, 4, 5, 4, 6, 7, 3]` 在移除重复元素后为 `[1,\
+    \ 2, 3, 4, 5, 6, 7]`。\n\n**时间复杂度：** O(n²)\n\n**解释：** 该函数遍历数组，检查每个元素是否已存在于 `uniqueArray`\
+    \ 中。如果不存在，则添加该元素。由于在 `for` 循环内部嵌套了 `indexOf`，时间复杂度为 O(n²)。\n\n## Q-17 编写一个 JS\
+    \ 程序返回数组中的重复元素。\n\n方法 :-\n\n```javascript\nlet arr = [8, 9, 34, 56, 1, 3, 7, 8,\
+    \ 9, 5, 5];\n// 查找数组中重复元素的函数\nfunction findDuplicates(arr) {\n  let duplicates\
+    \ = [];\n  let unique = new Set();\n  for (let i = 0; i < arr.length; i++) {\n\
+    \    // 如果元素已在集合中，则它是重复元素\n    if (unique.has(arr[i])) {\n      // 如果未包含，则将其加入\
+    \ duplicates 数组\n      if (!duplicates.includes(arr[i])) {\n        duplicates.push(arr[i]);\n\
+    \      }\n    } else {\n      // 否则，将元素加入集合\n      unique.add(arr[i]);\n    }\n\
+    \  }\n  return duplicates;\n}\nconst result = findDuplicates(arr);\nconsole.log(result);\
+    \ // 输出: [8, 9, 5]\n```\n\n**输出：** 数组中找到的重复元素为 `[8, 9, 5]`。\n\n**时间复杂度：** O(n)\n\
+    \n**解释：** 该程序通过遍历每个元素并使用 Set 跟踪唯一元素来找到重复元素。如果在 Set 中发现了元素，它就是重复的，如果不在 duplicates\
+    \ 数组中，则将其加入。时间复杂度为 O(n)，其中 n 是元素的数量。\n\n## Q-18 编写一个 JS 程序找到数组中的最大元素。\n\n方法 :-\n\
+    \n```javascript\nlet arr = [4, 65, 32, 7, 4, 6, 88, 87];\n// 找到数组中最大元素的函数\nfunction\
+    \ findLargest(array) {\n  // 假设第一个元素是最大的\n  let largest = array[0];\n  // 遍历数组找到最大值\n\
+    \  for (let i = 1; i < array.length; i++) {\n    if (array[i] > largest) {\n \
+    \     largest = array[i];\n    }\n  }\n  return largest;\n}\nconst result = findLargest(arr);\n\
+    console.log(result); // 输出: 88\n```\n\n**输出：** 数组 `[4, 65, 32, 7, 4, 6, 88, 87]`\
+    \ 中的最大元素是 88。\n\n**时间复杂度：** O(n)\n\n**解释：** 该函数遍历数组一次，比较每个元素以找到最大值。最终结果为88，它是数组中的最大元素。时间复杂度为\
+    \ O(n)，对于此任务非常高效。\n\n## Q-19 编写一个 JS 程序找到数组中的第二大元素。（最常问）\n\n方法 :-\n\n```javascript\n\
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]; // 寻找第二大元素的数组\n// 找到第二大元素的函数\nfunction\
+    \ secondLargestElement(arr) {\n  let largest = -Infinity;\n  let secondLargest\
+    \ = -Infinity;\n  for (let i = 0; i < arr.length; i++) {\n    if (arr[i] > largest)\
+    \ {\n      secondLargest = largest;\n      largest = arr[i];\n    } else if (arr[i]\
+    \ > secondLargest && arr[i] !== largest) {\n      secondLargest = arr[i];\n  \
+    \  }\n  }\n  return secondLargest;\n}\nconst result = secondLargestElement(arr);\n\
+    console.log(result); // 输出: 8\n```\n\n**输出：** 数组 `[1, 2, 3, 4, 5, 6, 7, 8, 9]`\
+    \ 中的第二大元素是 8。\n\n**时间复杂度：** O(n)\n\n**解释：** 该函数遍历数组一次，根据需要更新 `largest` 和 `secondLargest`\
+    \ 变量。最终结果是第二大元素，该过程高效，时间复杂度为 O(n)。\n\n## Q-20 编写一个 JS 程序找到序列中的缺失数字。（最常问）\n\n方法\
+    \ :-\n\n```javascript\nlet arr = [1, 2, 3, 5, 6]; // 缺少数字的序列\n// 找到序列中缺失数字的函数\n\
+    function findMissingNumber(arr) {\n  let n = arr.length + 1; // 序列的长度\n  let totalSum\
+    \ = (n * (n + 1)) / 2; // 前 n 个自然数的和\n  let arrSum = arr.reduce((acc, curr) =>\
+    \ acc + curr, 0); // 数组元素之\n  return totalSum - arrSum; // 差值即为缺失数字\n}\nconst\
+    \ result = findMissingNumber(arr);\nconsole.log(result); // 输出: 4\n```\n\n**输出：**\
+    \ 序列中缺失的数字是 4。\n\n## Q-21 编写一个 JS 程序展平嵌套数组。\n\n方法 :-\n\n```javascript\nlet arr\
+    \ = [[12, [4, 5]], [7, 9], 3];\n// 展平嵌套数组的函数\nfunction flattenArray(arr) {\n \
+    \ return arr.reduce((preVal, currentVal) => {\n    // 如果当前值是数组，递归展平\n    if (Array.isArray(currentVal))\
+    \ {\n      return preVal.concat(flattenArray(currentVal));\n    }\n    return\
+    \ preVal.concat(currentVal);\n  }, []);\n}\n```\n\n"
+  merge: 0
+  raw:
+  - "[PAGE 13]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    14\n\n`// Function to rotate the array to the right by k positions`\n\n`function``\
+    \ ``rotateArray``(``arr``,`` k``)`` ``{`\n\n` ``// Get the last k elements of\
+    \ the array`\n\n` ``let`` firstSlice ``\\=`` arr``.``slice``(``arr``.``length\
+    \ ``\\-`` k``,`` arr``.``length``);`\n\n` ``// Get the elements from the start\
+    \ up to the last k element`\n\n`s`\n\n` ``let`` secondSlice ``\\=`` arr``.``slice``(``0``,``\
+    \ arr``.``length ``\\-`` k``);`\n\n` ``// Concatenate the firstSlice and secondSlice\
+    \ to form the r`\n\n`otated array`\n\n` ``let`` rotatedArray ``\\=`` ``\\[``...``firstSlice``,``\
+    \ ``...``secondSlice``\\];`\n\n` ``return`` rotatedArray``;`\n\n`}`\n\n`const``\
+    \ result ``\\=`` ``rotateArray``(``arr``,`` k``);`\n\n`console``.``log``(``result``);``\
+    \ ``// Output: \\[5, 6, 7, 1, 2, 3, 4\\]`\n\n**Output: **The rotated array is\
+    \ `\\[5, 6, 7, 1, 2, 3, 4\\].`\n\n**Time Complexity:** *O(n)*\n\n**Explanation:\
+    \ **This program rotates `arr` to the right by `k` positions. The function \n\n\
+    `rotateArray` slices the array into two parts:\n\n`firstSlice` contains the last\
+    \ `k` elements.\n\n`secondSlice` contains the remaining elements from the start\
+    \ up to the last `k` \n\nelements.\n\nThese slices are concatenated to create\
+    \ the rotated array. The time complexity is \n\nO(n), where n is the number of\
+    \ elements in the array, due to the linear time \n\nrequired for slicing and concatenating.\n\
+    \n**Q-16 ** **Write a JS Program to remove duplicates from an array.****(Most\
+    \ Asked)**\n\nApproach :-"
+  - "[PAGE 14]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    15\n\n`let`` arr ``\\=`` ``\\[``1``,`` ``2``,`` ``3``,`` ``4``,`` ``5``,`` ``4``,``\
+    \ ``6``,`` ``7``,`` ``3``\\];`` ``// Array with duplicat`\n\n`es`\n\n`// Function\
+    \ to remove duplicates from an array`\n\n`function`` ``removeDuplicates``(``arr``)``\
+    \ ``{`\n\n` ``let`` uniqueArray ``\\=`` ``\\[\\];`` `\n\n` ``for`` ``(``let``\
+    \ i ``\\=`` ``0``;`` i ``<`` arr``.``length``;`` i``++``)`` ``{`\n\n` ``// Check\
+    \ if the element is not already in the uniqueArray`\n\n` ``if`` ``(``uniqueArray``.``indexOf``(``arr``\\\
+    [``i``\\])`` ``\\===`` ``\\-``1``)`` ``{`\n\n` uniqueArray``.``push``(``arr``\\\
+    [``i``\\]);`` ``// Add unique element to the `\n\n`array`\n\n` ``}`\n\n` ``}`\n\
+    \n` ``return`` uniqueArray``;`\n\n`}`\n\n`let`` result ``\\=`` ``removeDuplicates``(``arr``);`\n\
+    \n`console``.``log``(``result``);`` ``// Output: \\[1, 2, 3, 4, 5, 6, 7\\]`\n\n\
+    **Output: **The array `\\[1, 2, 3, 4, 5, 4, 6, 7, 3\\]` after removing duplicates\
+    \ is `\\[1, 2, 3, `\n\n`4, 5, 6, 7\\]` .\n\n**Time Complexity:** *O(n²)*\n\n**Explanation:\
+    \ **The function iterates through the array, checking if each element is \n\n\
+    already present in the `uniqueArray` . If not, it adds the element. The time complexity\
+    \ \n\nis *O(n²)* due to the nested loop nature of `indexOf` inside the `for` loop.\n\
+    \n**Q-17 ** **Write a JS Program to return duplicates in an array.**\n\nApproach\
+    \ :-\n\n`let`` arr ``\\=`` ``\\[``8``,`` ``9``,`` ``34``,`` ``56``,`` ``1``,``\
+    \ ``3``,`` ``7``,`` ``8``,`` ``9``,`` ``5``,`` ``5``\\];`\n\n`// Function to find\
+    \ duplicates in an array`"
+  - "[PAGE 15]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    16\n\n`function`` ``findDuplicates``(``arr``)`` ``{`\n\n` ``let`` duplicates ``\\\
+    =`` ``\\[\\];`\n\n` ``let`` unique ``\\=`` ``new`` ``Set``();`\n\n` ``for`` ``(``let``\
+    \ i ``\\=`` ``0``;`` i ``<`` arr``.``length``;`` i``++``)`` ``{`\n\n` ``// If\
+    \ the element is already in the set, it's a duplicate`\n\n` ``if`` ``(``unique``.``has``(``arr``\\\
+    [``i``\\]))`` ``{`\n\n` ``// Add to duplicates array if not already included`\n\
+    \n` ``if`` ``(``!``duplicates``.``includes``(``arr``\\[``i``\\]))`` ``{`\n\n`\
+    \ duplicates``.``push``(``arr``\\[``i``\\]);`\n\n` ``}`\n\n` ``}`` ``else`` ``{`\n\
+    \n` ``// Otherwise, add the element to the set`\n\n` unique``.``add``(``arr``\\\
+    [``i``\\]);`\n\n` ``}`\n\n` ``}`\n\n` ``return`` duplicates``;`\n\n`}`\n\n`const``\
+    \ result ``\\=`` ``findDuplicates``(``arr``);`\n\n`console``.``log``(``result``);``\
+    \ ``// Output: \\[8, 9, 5\\]`\n\n**Output: **The duplicates found in the array\
+    \ are `\\[8, 9, 5\\].`\n\n**Time Complexity:** *O(n)*\n\n**Explanation: **This\
+    \ program finds duplicates in an array by iterating through each \n\nelement and\
+    \ using a `Set `to track unique elements. If an element is found in the \n\n`Set`\
+    \ , it's a duplicate and is added to the\n\n`Duplicates` array if not already\
+    \ present. The time complexity is O(n), where n is the \n\nnumber of elements\
+    \ in the array.\n\n**Q-18 ** **Write a JS Program to find largest Element in an\
+    \ array.**\n\nApproach :-"
+  - "[PAGE 16]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    17\n\n`let`` arr ``\\=`` ``\\[``4``,`` ``65``,`` ``32``,`` ``7``,`` ``6``,`` ``4``,``\
+    \ ``6``,`` ``88``,`` ``87``\\];`\n\n`// Function to find the largest element in\
+    \ the array`\n\n`function`` ``findLargestElement``(``array``)`` ``{`\n\n` ``//\
+    \ Assume the first element is the largest initially`\n\n` ``let`` largest ``\\\
+    =`` array``\\[``0``\\];`\n\n` ``// Iterate through the array to find the largest\
+    \ element`\n\n` ``for`` ``(``let`` i ``\\=`` ``1``;`` i ``<`` array``.``length``;``\
+    \ i``++``)`` ``{`\n\n` ``if`` ``(``array``\\[``i``\\]`` ``\\>`` largest``)`` ``{`\n\
+    \n` largest ``\\=`` array``\\[``i``\\];`\n\n` ``}`\n\n` ``}`\n\n` ``return`` largest``;`\n\
+    \n`}`\n\n`const`` result ``\\=`` ``findLargestElement``(``arr``);`\n\n`console``.``log``(``result``);``\
+    \ ``// Output: 88`\n\n**Output: **The largest element in the array `\\[4, 65,\
+    \ 32, 7, 6, 4, 6, 88, 87\\]` is `88` .\n\n**Time Complexity:** *O(n)*\n\n**Explanation:\
+    \ **The function iterates through the array once, comparing each \n\nelement to\
+    \ find the largest value. The final result is `88` , which is the largest \n\n\
+    element in the array. The time complexity is *O(n)*, making it efficient for this\
+    \ task.\n\n**Q-19 ** **Write a JS Program to find Second largest Element in an\
+    \ array.****(Most **\n\n**Asked)**\n\nApproach :-\n\n`let`` arr ``\\=`` ``\\[``1``,``\
+    \ ``2``,`` ``3``,`` ``4``,`` ``5``,`` ``6``,`` ``7``,`` ``8``,`` ``9``\\];`` ``//\
+    \ Array to find the s`\n\n`econd largest element`"
+  - "[PAGE 17]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    18\n\n`// Function to find the second largest element`\n\n`function`` ``secondLargestElement``(``arr``)``\
+    \ ``{`\n\n` ``let`` largest ``\\=`` ``\\-``Infinity``;`\n\n` ``let`` secondLargest\
+    \ ``\\=`` ``\\-``Infinity``;`\n\n` ``for`` ``(``let`` i ``\\=`` ``0``;`` i ``<``\
+    \ arr``.``length``;`` i``++``)`` ``{`\n\n` ``if`` ``(``arr``\\[``i``\\]`` ``\\\
+    >`` largest``)`` ``{`\n\n` secondLargest ``\\=`` largest``;`\n\n` largest ``\\\
+    =`` arr``\\[``i``\\];`\n\n` ``}`` ``else`` ``if`` ``(``arr``\\[``i``\\]`` ``\\\
+    >`` secondLargest ``&&`` arr``\\[``i``\\]`` ``!==`` largest``)`` `\n\n`{`\n\n\
+    ` secondLargest ``\\=`` arr``\\[``i``\\];`\n\n` ``}`\n\n` ``}`\n\n` ``return``\
+    \ secondLargest``;`\n\n`}`\n\n`const`` result ``\\=`` ``secondLargestElement``(``arr``);`\n\
+    \n`console``.``log``(``result``);`` ``// Output: 8`\n\n**Output: **The second\
+    \ largest element in the array `\\[1, 2, 3, 4, 5, 6, 7, 8, 9\\]` is `8.`\n\n**Time\
+    \ Complexity:** *O(n)*\n\n**Explanation: **The function iterates through the array\
+    \ once, updating the `largest` \n\nand `secondLargest` variables as needed. The\
+    \ final result is the second largest \n\nelement, and the process is efficient\
+    \ with a time complexity of *O(n)*.\n\n**Q-20 ** **Write a JS Program to find\
+    \ the Missing Number in a Sequence Array.**\n\n**(Most Asked)**\n\nApproach :-\n\
+    \n`let`` arr ``\\=`` ``\\[``1``,`` ``2``,`` ``3``,`` ``5``,`` ``6``\\];`` ``//\
+    \ Sequence with a missing number`"
+  - "[PAGE 18]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    19\n\n`// Function to find the missing number in the sequence`\n\n`function``\
+    \ ``findMissingNumber``(``arr``)`` ``{`\n\n` ``let`` n ``\\=`` arr``.``length\
+    \ ``+`` ``1``;`` ``// Length of the original sequence`\n\n` ``let`` totalSum ``\\\
+    =`` ``(``n ``\\*`` ``(``n ``+`` ``1``))`` ``/`` ``2``;`` ``// Sum of the first\
+    \ n nat`\n\n`ural numbers`\n\n` ``let`` arrSum ``\\=`` arr``.``reduce``((``acc``,``\
+    \ curr``)`` ``\\=>`` acc ``+`` curr``,`` ``0``);`` ``// S`\n\n`um of elements\
+    \ in the array`\n\n` ``return`` totalSum ``\\-`` arrSum``;`` ``// The difference\
+    \ gives the missi`\n\n`ng number`\n\n`}`\n\n`const`` result ``\\=`` ``findMissingNumber``(``arr``);`\n\
+    \n`console``.``log``(``result``);`` ``// Output: 4`\n\n**Output: **The missing\
+    \ number in the sequence `\\[1, 2, 3, 5, 6\\]` is `4` .\n\n**Time Complexity:**\
+    \ *O(n)*\n\n**Explanation: **The function calculates the sum of the first `n`\
+    \ natural numbers \n\n(where `n` is the length of the original sequence) and then\
+    \ subtracts the sum of the \n\nelements in the array. The difference is the missing\
+    \ number. The time complexity \n\nis *O(n)* because it involves a single pass\
+    \ to compute the sum of the array.\n\n**Q-21 ** **Write a JS Program to flatten\
+    \ a nested array.****(Most Asked)**\n\nApproach 1:-\n\n`let`` arr ``\\=`` ``\\\
+    [\\[``12``,`` ``\\[``4``,`` ``5``\\]\\],`` ``\\[``7``,`` ``9``\\],`` ``3``\\];`\n\
+    \n`// Function to flatten a nested array`\n\n`function`` ``flattenArray``(``arr``)``\
+    \ ``{`\n\n` ``return`` arr``.``reduce``((``preVal``,`` currentVal``)`` ``\\=>``\
+    \ ``{`\n\n` ``// If the current value is an array, recursively flatten `\n\n`it`\n\
+    \n` ``if`` ``(``Array``.``isArray``(``currentVal``))`` ``{`\n\n` preVal ``\\=``\
+    \ preVal``.``concat``(``flattenArray``(``currentVal``));`"
+- md: "\n## Top 50 Most Asked Javascript Coding Questions in Interviews\n\n```javascript\n\
+    else {\n  // Otherwise, push the current value into the result array\n  preVal.push(currentVal);\n\
+    }\nreturn preVal;\n}, []);\n}\nconst result = flattenArray(arr);\nconsole.log(result);\
+    \ // Output: [12, 4, 5, 7, 9, 3]\n```\n\n**Output:** The flattened array is `[12,\
+    \ 4, 5, 7, 9, 3]`.\n\n**Time Complexity:** *O(n)*\n\n**Explanation:** This program\
+    \ flattens a nested array by recursively checking if each element is an array\
+    \ and then concatenating its flattened result to the previous values. The reduce\
+    \ method is used to accumulate the flattened values into a single array. The time\
+    \ complexity is O(n), where n is the total number of elements in all nested arrays.\n\
+    \nApproach 2:-\n\n```javascript\nlet arr = [[12, [4, 5]], [7, 9], 3];\n// Function\
+    \ to flatten a nested array using flat() method\nfunction flattenArray(arr) {\n\
+    \  return arr.flat(Infinity); // Flatten array to any depth\n}\nconst result =\
+    \ flattenArray(arr);\nconsole.log(result); // Output: [12, 4, 5, 7, 9, 3]\n```\n\
+    \n**Output:** The flattened array is `[12, 4, 5, 7, 9, 3]`.\n\n**Time Complexity:**\
+    \ *O(n)*\n\n**Explanation:** This program flattens a nested array using the `flat()`\
+    \ method, which is a built-in JavaScript function. By passing `Infinity` as the\
+    \ argument, the array is flattened to any depth. The time complexity is O(n),\
+    \ where n is the total number of elements in the nested array.\n\n## Q-22 Write\
+    \ a JS Program to merge two sorted arrays(Merge Sort). (Most Asked)\n\nApproach\
+    \ :-\n\n```javascript\nfunction mergeTwoSortedArrays(arr1, arr2) {\n  let i =\
+    \ 0;\n  let j = 0;\n  let sortedArr = [];\n  // Merge the arrays while comparing\
+    \ elements\n  while (i < arr1.length && j < arr2.length) {\n    if (arr1[i] <\
+    \ arr2[j]) {\n      sortedArr.push(arr1[i]);\n      i++;\n    } else {\n     \
+    \ sortedArr.push(arr2[j]);\n      j++;\n    }\n  }\n  // Add remaining elements\
+    \ from arr1 (if any)\n  while (i < arr1.length) {\n    sortedArr.push(arr1[i]);\n\
+    \    i++;\n  }\n  // Add remaining elements from arr2 (if any)\n  while (j < arr2.length)\
+    \ {\n    sortedArr.push(arr2[j]);\n    j++;\n  }\n  return sortedArr;\n}\nconst\
+    \ arr1 = [1, 3, 5, 7];\nconst arr2 = [2, 4, 6, 8];\nconst result = mergeTwoSortedArrays(arr1,\
+    \ arr2);\nconsole.log(result); // Output: [1, 2, 3, 4, 5, 6, 7, 8]\n```\n\n**Output:**\
+    \ The merged sorted array is `[1, 2, 3, 4, 5, 6, 7, 8]`.\n\n**Time Complexity:**\
+    \ *O(n + m)*\n\n**Explanation:** This program merges two sorted arrays by comparing\
+    \ elements from both arrays and adding the smaller element to the result array.\
+    \ If one array is exhausted before the other, the remaining elements of the other\
+    \ array are added to the result. The time complexity is O(n+m), where n and m\
+    \ are the lengths of the two arrays.\n\n## Q-23 Write a JS Program to find All\
+    \ Pairs with a Given Sum in an Array.\n\nApproach :-\n\n```javascript\nlet arr\
+    \ = [1, 2, 3, 4, 5, 6, 7, 8, 9]; // Array to check\nlet pairValue = 10; // Target\
+    \ sum for pairs\n// Function to find pairs that sum up to the given value\nfunction\
+    \ findPairs(arr, pairValue) {\n  let pairs = []; // Array to store pairs\n  let\
+    \ seen = new Set(); // Set to store elements that have been seen\n  for (let i\
+    \ = 0; i < arr.length; i++) {\n    const complement = pairValue - arr[i]; // Calculate\
+    \ the complement\n    if (seen.has(complement)) {\n      pairs.push([complement,\
+    \ arr[i]]); // If complement exists, add the pair\n    }\n    seen.add(arr[i]);\
+    \ // Add current element to the set\n  }\n  return pairs;\n}\nconst result = findPairs(arr,\
+    \ pairValue);\nconsole.log(result); // Output: [7, 3], [6, 4], [5, 5], [4, 6],\
+    \ [3, 7]\n```\n*(Note: Based on the logic, the output provided in OCR text `[7,\
+    \ 3], [6, 4], [5, 5], [4, 6], [3, 7]` suggests a specific iteration or set behavior).*\n\
+    \n**Output:** The pairs in the array `[1, 2, 3, 4, 5, 6, 7, 8, 9]` that sum to\
+    \ `10` are `[7, 3], [6, 4], [5, 5], [4, 6], [3, 7]`.\n\n**Time Complexity:** *O(n)*\n\
+    \n**Explanation:** This function iterates through the array maintaining a set\
+    \ of seen elements. For each element, it checks if its complement has been seen\
+    \ before. If so, it adds the pair to results. Time complexity is O(n) due to the\
+    \ single loop through the array.\n\n## Q-24 Write a JS Program to check if one\
+    \ array is subset of other or not.\n\nApproach :-\n\n```javascript\nlet arr1 =\
+    \ [1, 2, 3, 4, 5, 6, 7, 8, 9]; // Superset array\nlet arr2 = [4, 5, 6]; // Subset\
+    \ array\n// Function to check if arr2 is subset of arr1\nfunction isSubset(arr1,\
+    \ arr2) {\n  return arr2.every(ele => arr1.includes(ele));\n}\nconst result =\
+    \ isSubset(arr1, arr2);\nconsole.log(result); // Output: true\n```\n\n**Output:**\
+    \ `true` (since all elements of `arr2` are present in `arr1`).\n\n**Time Complexity:**\
+    \ *O(n * m)*\n\n**Explanation:** The function uses the `every` method to check\
+    \ if every element in `arr2` is included in `arr1`. The `includes` method is used\
+    \ for this check. The time complexity is O(n * m), where n is the length of `arr1`\
+    \ and m is the length of `arr2`.\n\n## Q-25 Write a JS Program to find Intersection\
+    \ of Two Arrays.\n\nApproach :-\n\n```javascript\nlet arr1 = [1, 2, 3, 4, 5];\
+    \ // First array\nlet arr2 = [3, 4, 5, 6, 7]; // Second array\n// Function to\
+    \ find intersection of two arrays\nfunction intersection(arr1, arr2) {\n  return\
+    \ arr1.filter(ele => arr2.includes(ele));\n}\nconst result = intersection(arr1,\
+    \ arr2);\nconsole.log(result); // Output: [3, 4, 5]\n```\n\n**Output:** The intersection\
+    \ of the arrays `[1, 2, 3, 4, 5]` and `[3, 4, 5, 6, 7]` is `[3, 4, 5]`.\n\n**Time\
+    \ Complexity:** *O(n * m)*\n\n**Explanation:** The function filters elements of\
+    \ `arr1` that are present in `arr2`. The `includes` method is used for the check,\
+    \ making the time complexity O(n * m), where n is the length of `arr1` and m is\
+    \ the length of `arr2`.\n\n## Q-26 Write a JS Program to return Elements Present\
+    \ in arr1 Not in arr2.\n\nApproach :-\n\n```javascript\nlet arr1 = [1, 2, 3, 4,\
+    \ 5]; // First array\nlet arr2 = [3, 4, 5, 6, 7]; // Second array\n// Function\
+    \ to find unique elements in arr1 that are not in arr2\nfunction elementsNotInSecondArray(arr1,\
+    \ arr2) {\n  return arr1.filter(ele => !arr2.includes(ele)); // Filter elements\
+    \ not in arr2\n}\nconst result = elementsNotInSecondArray(arr1, arr2);\nconsole.log(result);\
+    \ // Output: [1, 2]\n```\n\n**Output:** The elements `[1, 2]` are present in `arr1`\
+    \ but not in `arr2`.\n\n**Time Complexity:** *O(n)*\n\n**Explanation:** The function\
+    \ `elementsNotInSecondArray` filters the elements of `arr1`, returning only those\
+    \ that are not found in `arr2`. The time complexity is O(n), where n is the number\
+    \ of elements in `arr1`.\n"
+  mdcn: "\n\n## 面试中频率最高的 50 道 JavaScript 编码题\n\n```javascript\nelse {\n  // 否则，将当前值推入结果数组\n\
+    \  preVal.push(currentVal);\n}\nreturn preVal;\n}, []);\nconst result = flattenArray(arr);\n\
+    console.log(result); // 输出: [12, 4, 5, 7, 3]\n```\n\n**输出：** 展平数组为 `[12, 4, 5,\
+    \ 7, 3]`。\n\n**时间复杂度：** *O(n)*\n\n**解释：** 该程序通过 `reduce` 方法递归检查每个元素，并将展平后的值累加到单个数组中。时间复杂度为\
+    \ O(n)，其中 n 是嵌套数组中的元素总数。\n\n方法 2：\n\n```javascript\nlet arr = [[12, [4, 5]], [7,\
+    \ 9], 3];\n// 使用 flat() 方法展平嵌套数组\nfunction flattenArray(arr) {\n  return arr.flat(Infinity);\
+    \ // 展平到任意深度\n}\nconst result = flattenArray(arr);\nconsole.log(result); // 输出:\
+    \ [12, 4, 5, 7, 3]\n```\n\n**输出：** 展平数组为 `[12, 4, 5, 7, 3]`。\n\n**时间复杂度：** *O(n)*\n\
+    \n**解释：** 该程序使用内置函数 `flat()` 展平嵌套数组。通过传递 `Infinity` 作为参数。时间复杂度为 O(n)，其中 n 是数组中的元素总数。\n\
+    \n## Q-22 编写一个 JS 程序合并两个排序数组（高频题）\n\n方法：\n\n```javascript\nfunction mergeSortedArrays(arr1,\
+    \ arr2) {\n  let i = 0;\n  let j = 0;\n  let sortedArr = [];\n  // 比较两个数组的元素\n\
+    \  while (i < arr1.length && j < arr2.length) {\n    if (arr1[i] < arr2[j]) {\n\
+    \      sortedArr.push(arr1[i]);\n      i++;\n    } else {\n      sortedArr.push(arr2[j]);\n\
+    \      j++;\n    }\n  }\n  // 添加 arr1 中的剩余元素\n  while (i < arr1.length) {\n  \
+    \  sortedArr.push(arr1[i]);\n    i++;\n  }\n  // 添加 arr2 中的剩余元素\n  while (j <\
+    \ arr2.length) {\n    sortedArr.push(arr2[j]);\n    j++;\n  }\n  return sortedArr;\n\
+    }\nconst arr1 = [1, 3, 5, 7];\nconst arr2 = [2, 4, 6, 8];\nconst result = mergeSortedArrays(arr1,\
+    \ arr2);\nconsole.log(result); // 输出: [1, 2, 3, 4, 5, 6, 7, 8]\n```\n\n**输出：**\
+    \ 合并后的数组为 `[1, 2, 3, 4, 5, 6, 7, 8]`。\n\n**时间复杂度：** *O(n + m)*\n\n**解释：** 该程序通过比较两个数组的元素并将较小的元素添加到结果数组。如果一个数组耗尽，则添加另一个数组的剩余元素。时间复杂度为\
+    \ O(n+m)，其中 n 和 m 是两个数组的长度。\n\n## Q-23 编写一个 JS 程序查找数组中指定和的所有数字对\n\n方法：\n\n```javascript\n\
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]; // 检查的数组\nlet pairValue = 10; // 目标和\n\
+    // 查找和等于给定值的对\nfunction findPairs(arr, pairValue) {\n  let pairs = []; // 用于存储结果的数组\n\
+    \  let seen = new Set(); // 用于存储已出现元素的\n  for (let i = 0; i < arr.length; i++)\
+    \ {\n    const complement = pairValue - arr[i]; // 计算补数\n    if (seen.has(complement))\
+    \ {\n      pairs.push([complement, arr[i]]); // 如果补数存在，则添加对\n    }\n    seen.add(arr[i]);\
+    \ // 将当前元素添加到集合\n  }\n  return pairs;\n}\nconst result = findPairs(arr, pairValue);\n\
+    console.log(result); // 输出: [7, 3], [6, 4], [5, 5], [4, 6], [3, 7]\n```\n（注：根据逻辑，提供的输出\
+    \ `[7, 3], [6, 4], [5, 5], [4, 6], [3, 7]` 表明了一种特定的迭代或集合行为）。\n\n**输出：** 数组 `[1,\
+    \ 2, 3, 4, 5, 6, 7, 8, 9]` 中和为 `10` 的对为 `[7, 3], [6, 4], [5, 5], [4, 6], [3, 7]`。\n\
+    \n**时间复杂度：** *O(n)*\n\n**解释：** 该函数遍历数组并维护一个已出现元素的集合。对于每个元素，它检查其补数之前是否出现过。如果是，则将该对添加到结果中。由于对数组进行了单循环，时间复杂度为\
+    \ O(n)。\n\n## Q-24 编写一个 JS 程序检查一个数组是否是另一个的子集\n\n方法：\n\n```javascript\nlet arr1\
+    \ = [1, 2, 3, 4, 5, 6, 7, 8, 9]; // 超集\nlet arr2 = [4, 5, 6]; // 子集\n// 检查 arr2\
+    \ 是否是 arr1 的子集的函数\nfunction isSubset(arr1, arr2) {\n  return arr2.every(ele =>\
+    \ arr1.includes(ele));\n}\nconst result = isSubset(arr1, arr2);\nconsole.log(result);\
+    \ // 输出: true\n```\n\n**输出：** `true`（因为 `arr2` 中的所有元素都存在于 `arr1` 中）。\n\n**时间复杂度：**\
+    \ *O(n * m)*\n\n**解释：** 函数使用 `every` 方法检查 `arr2` 中的每个元素是否包含在 `arr1` 中。该检查使用了 `includes`\
+    \ 方法。时间复杂度为 O(n * m)，其中 n 是 `arr1` 的长度，m 是 `arr2` 的长度。\n\n## Q-25 编写一个 JS 程序查找两个数组的交集\n\
+    \n方法：\n\n```javascript\nlet arr1 = [1, 2, 3, 4, 5]; // 第一个数组\nlet arr2 = [3, 4,\
+    \ 5, 6, 7]; // 第二个数组\n// 两个数组交集的函数\nfunction intersection(arr1, arr2) {\n  return\
+    \ arr1.filter(ele => arr2.includes(ele));\n}\nconst result = intersection(arr1,\
+    \ arr2);\nconsole.log(result); // 输出: [3, 4, 5]\n```\n\n**输出：** 数组 `[1, 2, 3,\
+    \ 4, 5]` 和 `[3, 4, 5, 6, 7]` 的交集为 `[3, 4, 5]`。\n\n**时间复杂度：** *O(n * m)*\n\n**解释：**\
+    \ 函数过滤 `arr1` 中存在于 `arr2` 中的元素。该检查使用了 `includes` 方法，时间复杂度为 O(n * m)，其中 n 是 `arr1`\
+    \ 的长度，m 是 `arr2` 的长度。\n\n## Q-26 编写一个 JS 程序返回在 arr1 中但不在 arr2 中的元素\n\n方法：\n\n\
+    ```javascript\nlet arr1 = [1, 2, 3, 4, 5]; // 第一个数组\nlet arr2 = [3, 4, 5, 6, 7];\
+    \ // 第二个数组\n// 查找 arr1 中不在 arr2 中的元素的函数\nfunction elementsNotInSecondArray(arr1,\
+    \ arr2) {\n  return arr1.filter(ele => !arr2.includes(ele)); // 过滤不在 arr2 中的元素\n\
+    }\nconst result = elementsNotInSecondArray(arr1, arr2);\nconsole.log(result);\
+    \ // 输出: [1, 2]\n```\n\n**输出：** 元素 `[1, 2]` 存在于 `arr1` 中但不在 `arr2` 中。\n\n**时间复杂度：**\
+    \ *O(n)*\n\n**解释：** 该函数 `elementsNotInSecondArray` 过滤 `arr1` 的元素，返回不在 `arr2` 中找到元素。时间复杂度为\
+    \ O(n)，其中 n 是 `arr1` 中的元素个数。\n\n"
+  merge: 0
+  raw:
+  - "[PAGE 19]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    20\n\n` ``}`` ``else`` ``{`\n\n` ``// Otherwise, push the current value into the\
+    \ result ar`\n\n`ray`\n\n` preVal``.``push``(``currentVal``);`\n\n` ``}`\n\n`\
+    \ ``return`` preVal``;`\n\n` ``},`` ``\\[\\]);`\n\n`}`\n\n`const`` result ``\\\
+    =`` ``flattenArray``(``arr``);`\n\n`console``.``log``(``result``);`` ``// Output:\
+    \ \\[12, 4, 5, 7, 9, 3\\]`\n\n**Output: **The flattened array is `\\[12, 4, 5,\
+    \ 7, 9, 3\\]` .\n\n**Time Complexity:** *O(n)*\n\n**Explanation: **This program\
+    \ flattens a nested array by recursively checking if each \n\nelement is an array\
+    \ and then concatenating its flattened result to the previous \n\nvalues. The\
+    \ reduce method is used to accumulate the flattened values into a \n\nsingle array.\
+    \ The time complexity is O(n), where n is the total number of elements \n\nin\
+    \ all nested arrays.\n\nApproach 2:-\n\n`let`` arr ``\\=`` ``\\[\\[``12``,`` ``\\\
+    [``4``,`` ``5``\\]\\],`` ``\\[``7``,`` ``9``\\],`` ``3``\\];`\n\n`// Function\
+    \ to flatten a nested array using flat() method`\n\n`function`` ``flattenArray``(``arr``)``\
+    \ ``{`\n\n` ``return`` arr``.``flat``(``Infinity``);`` ``// Flatten array to any\
+    \ depth`\n\n`}`\n\n`const`` result ``\\=`` ``flattenArray``(``arr``);`\n\n`console``.``log``(``result``);``\
+    \ ``// Output: \\[12, 4, 5, 7, 9, 3\\]`\n\n**Output: **The flattened array is\
+    \ `\\[12, 4, 5, 7, 9, 3\\]` .\n\n**Time Complexity:** *O(n)*"
+  - "[PAGE 20]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    21\n\n**Explanation: **This program flattens a nested array using the `flat()`\
+    \ method, which \n\nis a built-in JavaScript function. By passing `Infinity` as\
+    \ the argument, the array is \n\nflattened to any depth. The time complexity is\
+    \ O(n), where n is the total number of \n\nelements in the nested array.\n\n**Q-22**\
+    \ **Write a JS Program to merge two sorted arrays(Merge Sort).****(Most Asked)**\n\
+    \nApproach :-\n\n`function`` ``mergeTwoSortedArrays``(``arr1``,`` arr2``)`` ``{`\n\
+    \n` ``let`` i ``\\=`` ``0``;`\n\n` ``let`` j ``\\=`` ``0``;`\n\n` ``let`` sortedArr\
+    \ ``\\=`` ``\\[\\];`\n\n` ``// Merge the arrays while comparing elements`\n\n\
+    ` ``while`` ``(``i ``<`` arr1``.``length ``&&`` j ``<`` arr2``.``length``)`` ``{`\n\
+    \n` ``if`` ``(``arr1``\\[``i``\\]`` ``<`` arr2``\\[``j``\\])`` ``{`\n\n` sortedArr``.``push``(``arr1``\\\
+    [``i``\\]);`\n\n` i``++``;`\n\n` ``}`` ``else`` ``{`\n\n` sortedArr``.``push``(``arr2``\\\
+    [``j``\\]);`\n\n` j``++``;`\n\n` ``}`\n\n` ``}`\n\n` ``// Add remaining elements\
+    \ from arr1 (if any)`\n\n` ``while`` ``(``i ``<`` arr1``.``length``)`` ``{`\n\n\
+    ` sortedArr``.``push``(``arr1``\\[``i``\\]);`\n\n` i``++``;`\n\n` ``}`\n\n` ``//\
+    \ Add remaining elements from arr2 (if any)`\n\n` ``while`` ``(``j ``<`` arr2``.``length``)``\
+    \ ``{`\n\n` sortedArr``.``push``(``arr2``\\[``j``\\]);`\n\n` j``++``;`\n\n` ``}`"
+  - "[PAGE 21]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    22\n\n` ``return`` sortedArr``;`\n\n`}`\n\n`const`` arr1 ``\\=`` ``\\[``1``,``\
+    \ ``3``,`` ``5``,`` ``7``\\];`\n\n`const`` arr2 ``\\=`` ``\\[``2``,`` ``4``,``\
+    \ ``6``,`` ``8``\\];`\n\n`const`` result ``\\=`` ``mergeTwoSortedArrays``(``arr1``,``\
+    \ arr2``);`\n\n`console``.``log``(``result``);`` ``// Output: \\[1, 2, 3, 4, 5,\
+    \ 6, 7, 8\\]`\n\n**Output: **The merged sorted array is `\\[1, 2, 3, 4, 5, 6,\
+    \ 7, 8\\]` .\n\n**Time Complexity:** *O(n + m)*\n\n**Explanation: **This program\
+    \ merges two sorted arrays by comparing elements from \n\nboth arrays and adding\
+    \ the smaller element to the result array. If one array is \n\nexhausted before\
+    \ the other, the remaining elements of the other array are added \n\nto the result.\
+    \ The time complexity is O(n+m), where n and m are the lengths of the \n\ntwo\
+    \ arrays.\n\n**Q-23 ** **Write a JS Program to find All Pairs with a Given Sum\
+    \ in an Array.**\n\nApproach :-\n\n`let`` arr ``\\=`` ``\\[``1``,`` ``2``,`` ``3``,``\
+    \ ``4``,`` ``5``,`` ``6``,`` ``7``,`` ``8``,`` ``9``\\];`` ``// Array to check`\n\
+    \n`let`` pairValue ``\\=`` ``10``;`` ``// Target sum for pairs`\n\n`// Function\
+    \ to find pairs that sum up to the given value`\n\n`function`` ``findPairs``(``arr``,``\
+    \ pairValue``)`` ``{`\n\n` ``let`` pairs ``\\=`` ``\\[\\];`` ``// Array to store\
+    \ pairs`\n\n` ``let`` seen ``\\=`` ``new`` ``Set``();`` ``// Set to store elements\
+    \ that have be`\n\n`en seen`\n\n` ``for`` ``(``let`` i ``\\=`` ``0``;`` i ``<``\
+    \ arr``.``length``;`` i``++``)`` ``{`\n\n` ``const`` complement ``\\=`` pairValue\
+    \ ``\\-`` arr``\\[``i``\\];`` ``// Calculate the c`\n\n`omplement`\n\n` ``if``\
+    \ ``(``seen``.``has``(``complement``))`` ``{`\n\n` pairs``.``push``(\\[``complement``,``\
+    \ arr``\\[``i``\\]\\]);`` ``// If complement exis`"
+  - "[PAGE 22]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    23\n\n`ts, add the pair`\n\n` ``}`\n\n` seen``.``add``(``arr``\\[``i``\\]);``\
+    \ ``// Add the current element to the set`\n\n` ``}`\n\n` ``return`` pairs``;`\n\
+    \n`}`\n\n`const`` result ``\\=`` ``findPairs``(``arr``,`` pairValue``);`\n\n`console``.``log``(``result``);``\
+    \ ``// Output: \\[\\[7, 3\\], \\[6, 4\\], \\[5, 5\\], \\[4, `\n\n`6\\], \\[3,\
+    \ 7\\]\\]`\n\n**Output: **The pairs in the array `\\[1, 2, 3, 4, 5, 6, 7, 8, 9\\\
+    ]` that sum up to `10` are `\\[\\[7, `\n\n`3\\], \\[6, 4\\], \\[5, 5\\], \\[4,\
+    \ 6\\], \\[3, 7\\]\\]` .\n\n**Time Complexity:** *O(n\\* m)*\n\n**Explanation:\
+    \ **The function iterates through the array while maintaining a set of \n\nseen\
+    \ elements. For each element, it checks if its complement (which sums to \n\n\
+    `pairValue` ) has been seen before. If so, it adds the pair to the list of results.\
+    \ The \n\ntime complexity is *O(n)* due to the single loop through the array.\n\
+    \n**Q-24 ** **Write a JS Program to check if one array is a subset of other or\
+    \ not.**\n\nApproach :-\n\n`let`` arr1 ``\\=`` ``\\[``1``,`` ``2``,`` ``3``,``\
+    \ ``4``,`` ``5``,`` ``6``,`` ``7``,`` ``8``,`` ``9``\\];`` ``// Superset array`\n\
+    \n`let`` arr2 ``\\=`` ``\\[``4``,`` ``5``,`` ``6``\\];`` ``// Subset array`\n\n\
+    `// Function to check if arr2 is a subset of arr1`\n\n`function`` ``isSubset``(``arr1``,``\
+    \ arr2``)`` ``{`\n\n` ``return`` arr2``.``every``((``ele``)`` ``\\=>`` arr1``.``includes``(``ele``));`\n\
+    \n`}`"
+  - "[PAGE 23]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    24\n\n`const`` result ``\\=`` ``isSubset``(``arr1``,`` arr2``);`\n\n`console``.``log``(``result``);``\
+    \ ``// Output: true`\n\n**Output: **`true` (since all elements of `arr2` are present\
+    \ in `arr1` ).\n\n**Time Complexity:** *O(n\\* m)*\n\n**Explanation: **The function\
+    \ uses the `every` method to check if every element in \n\n`arr2` is included\
+    \ in `arr1` . The `includes` method is used for this check. The time \n\ncomplexity\
+    \ is *O(n \\* m)*, where `n` is the length of `arr1` and `m` is the length of\
+    \ `arr2` .\n\n**Q-25 ** **Write a JS Program to find the Intersection of Two Arrays.**\n\
+    \nApproach :-\n\n`let`` arr1 ``\\=`` ``\\[``1``,`` ``2``,`` ``3``,`` ``4``,``\
+    \ ``5``\\];`` ``// First array`\n\n`let`` arr2 ``\\=`` ``\\[``3``,`` ``4``,``\
+    \ ``5``,`` ``6``,`` ``7``\\];`` ``// Second array`\n\n`// Function to find the\
+    \ intersection of two arrays`\n\n`function`` ``intersection``(``arr1``,`` arr2``)``\
+    \ ``{`\n\n` ``return`` arr1``.``filter``((``ele``)`` ``\\=>`` arr2``.``includes``(``ele``));`\n\
+    \n`}`\n\n`const`` result ``\\=`` ``intersection``(``arr1``,`` arr2``);`\n\n`console``.``log``(``result``);``\
+    \ ``// Output: \\[3, 4, 5\\]`\n\n**Output: **The intersection of the arrays `\\\
+    [1, 2, 3, 4, 5\\]` and `\\[3, 4, 5, 6, 7\\]` is `\\[3, 4, `\n\n`5\\]` .\n\n**Time\
+    \ Complexity:** *O(n\\* m)*\n\n**Explanation: **The function filters elements\
+    \ of `arr1` that are present in `arr2` . The \n\n`includes` method is used for\
+    \ the check, making the time complexity *O(n \\* m)*, \n\nwhere `n` is the length\
+    \ of `arr1` and `m` is the length of `arr2` .\n\n**Q-26 ** **Write a JS Program\
+    \ to return Elements Present in** `**arr1**`**Not in**`**arr2**` .\n\nApproach\
+    \ :-"
+  - "[PAGE 24]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    25\n\n`let`` arr1 ``\\=`` ``\\[``1``,`` ``2``,`` ``3``,`` ``4``,`` ``5``\\];``\
+    \ ``// First array`\n\n`let`` arr2 ``\\=`` ``\\[``3``,`` ``4``,`` ``5``,`` ``6``,``\
+    \ ``7``\\];`` ``// Second array`\n\n`// Function to find unique elements in arr1\
+    \ that are not in a`\n\n`rr2`\n\n`function`` ``elementsNotInSecondArray``(``arr1``,``\
+    \ arr2``)`` ``{`\n\n` ``return`` arr1``.``filter``((``ele``)`` ``\\=>`` ``!``arr2``.``includes``(``ele``));``\
+    \ ``// Filter `\n\n`elements not in arr2`\n\n`}`\n\n`const`` result ``\\=`` ``elementsNotInSecondArray``(``arr1``,``\
+    \ arr2``);`\n\n`console``.``log``(``result``);`` ``// Output: \\[1, 2\\]`\n\n\
+    **Output: **The elements `\\[1, 2\\]` are present in `arr1` but not in `arr2`\
+    \ .\n\n**Time Complexity:** *O(n)*\n\n**Explanation: **The function `elementsNotInSecondArray`\
+    \ filters the elements of `arr1` , \n\nreturning only those that are not found\
+    \ in `arr2` . The time complexity is *O(n)*, where \n\n`n` is the number of elements\
+    \ in `arr1` .\n\n**Section 3 - Strings**\n\n**Q-27** **Write a JS program to****Reverse\
+    \ a String.****(Most Asked)**\n\nApproach 1:-\n\n`let`` str ``\\=`` ``\"example\"\
+    ``;`\n\n`function`` ``reverseStr``(``str``)`` ``{`\n\n` ``let`` reverseStr ``\\\
+    =`` ``\"\"``;`\n\n` ``for`` ``(``let`` i ``\\=`` ``0``;`` i ``<`` str``.``length``;``\
+    \ i``++``)`` ``{`\n\n` reverseStr ``\\=`` str``.``charAt``(``i``)`` ``+`` reverseStr``;`\n\
+    \n` ``}`\n\n` ``return`` reverseStr``;`\n\n`}`"
+- md: "\n## Top 50 Most Asked Javascript Coding Questions in Interviews\n\nlet result\
+    \ = reverseStr(str);\nconsole.log(result); // Output: \"elpmaxe\"\n\n**Output:**\
+    \ The reversed string is printed as \"elpmaxe\".\n\n**Time Complexity:** *O(n)*\n\
+    \n**Explanation:** This program reverses a given string by iterating through each\
+    \ character and adding it to the front of a new string. The time complexity is\
+    \ (O(n), where (n) is the length of the string.\n\nApproach 2:-\n\n```javascript\n\
+    let str = \"hello\";\nfunction reverseStr(str) {\n  return str.split(\"\").reverse().join(\"\
+    \");\n}\nlet result = reverseStr(str);\nconsole.log(result); // Output: \"olleh\"\
+    \n```\n\n**Output:** The reversed string is printed as \"olleh\".\n\n**Time Complexity:**\
+    \ *O(n)*\n\n**Explanation:** This program reverses a given string by iterating\
+    \ through each character and adding it to the front of a new string. The time\
+    \ complexity is (O(n)), where (n) is the length of the string.\n\n## Q-28 Write\
+    \ a JS Program to Reverse the words in a string.\n\nApproach :-\n\n```javascript\n\
+    let str = \"my name is rahul chaurasia\"; // String to reverse the words\n// Function\
+    \ to reverse the words in a string\nfunction reverseWordsInString(str) {\n  let\
+    \ words = str.split(\" \").reverse().join(\" \"); // Split, reverse, and join\
+    \ the words\n  return words;\n}\nlet result = reverseWordsInString(str);\nconsole.log(result);\
+    \ // Output: \"chaurasia rahul is name my\"\n```\n\n**Output:** The words in the\
+    \ string \"my name is rahul chaurasia\" reversed are \"chaurasia rahul is name\
+    \ my\".\n\n**Time Complexity:** *O(n)*\n\n**Explanation:** The function splits\
+    \ the string into an array of words, reverses the array, and then joins the words\
+    \ back into a string. The time complexity is *O(n)*, where n is the number of\
+    \ characters in the string.\n\n## Q-29 Write a JS Program to find the Longest\
+    \ word in the string.\n\nApproach :-\n\n```javascript\nlet str = \"My name is\
+    \ Rahul Chaurasia\";\nlet words = str.split(\" \");\nfunction longestWord(words)\
+    \ {\n  let longestWord = \"\";\n  for (let i = 0; i < words.length; i++) {\n \
+    \   if (words[i].length > longestWord.length) {\n      longestWord = words[i];\n\
+    \    }\n  }\n  return longestWord;\n}\nlet result = longestWord(words);\nconsole.log(result);\n\
+    ```\n\n**Output:** The longest word is \"Chaurasia\".\n\n**Time Complexity:**\
+    \ *O(n)*\n\n**Explanation:** This program finds the longest word in a given string\
+    \ by splitting the string into individual words and then iterating through each\
+    \ word to compare their lengths. The time complexity is O(n), where n is the number\
+    \ of words in the string.\n\n## Q-30 Write a JS Program to check if a given string\
+    \ is a palindrome or not. (Most Asked)\n\nApproach :-\n\n```javascript\nlet str\
+    \ = \"racecar\";\n// Function to reverse the string\nfunction reverseStr(str)\
+    \ {\n  return str.split(\"\").reverse().join(\"\");\n}\n// Function to check if\
+    \ the string is a palindrome\nfunction isPalindrome(string) {\n  let reversedString\
+    \ = reverseStr(string);\n  return reversedString === str ? true : false;\n}\n\
+    let result = isPalindrome(str);\nconsole.log(result); // Output: true\n```\n\n\
+    **Output:** The string is a palindrome: true.\n\n**Time Complexity:** *O(n)*\n\
+    \n**Explanation:** This program checks if a given string is a palindrome by first\
+    \ reversing the string and then comparing reversed string to original string.\
+    \ If they are the same, the string is palindrome. The time complexity is O(n),\
+    \ where n is the length of the string.\n\n## Q-31 Write a JS Program to check\
+    \ if two given strings are anagrams or not. (Most Asked)\n\nApproach :-\n\n```javascript\n\
+    let str1 = \"listen\";\nlet str2 = \"silent\";\n// Function to check if two strings\
+    \ are anagrams\n// Sort and join characters of both strings\nfunction isAnagram(str1,\
+    \ str2) {\n  const sortedArr1 = str1.split(\"\").sort().join(\"\");\n  const sortedArr2\
+    \ = str2.split(\"\").sort().join(\"\");\n  // Compare sorted versions of the strings\n\
+    \  return sortedArr1 === sortedArr2;\n}\nlet result = isAnagram(str1, str2);\n\
+    console.log(result); // Output: true\n```\n\n**Output:** The strings are anagrams:\
+    \ true.\n\n**Time Complexity:** *O(n log n)*\n\n**Explanation:** This program\
+    \ checks if two strings are anagrams by sorting the characters of both strings\
+    \ and then comparing them. If sorted strings are identical, the original strings\
+    \ are anagrams. The time complexity is O(n log n) due to the sorting operation,\
+    \ where n is the length of the strings.\n\n## Q-32 Write a JS program return First-Repeated\
+    \ Character of a String.\n\nApproach:-\n\n```javascript\nlet str = \"algorithm\"\
+    ; // String to check\n// Function to find first non-repeated character\nfunction\
+    \ firstRepeatedCharacter(str) {\n  for (let i = 0; i < str.length; i++) {\n  \
+    \  // Check if the character is non-repeated\n    if (str.indexOf(str[i]) ===\
+    \ str.lastIndexOf(str[i])) {\n      return str[i];\n    }\n  }\n  return null;\
+    \ // Return null if all characters are repeated\n}\nlet result = firstRepeatedCharacter(str);\n\
+    console.log(result); // Output: \"g\"\n```\n\n**Output:** The first non-repeated\
+    \ character in the string \"algorithm\" is \"g\".\n\n**Time Complexity:** *O(n^2)*\n\
+    \n**Explanation:** The function uses `indexOf` and `lastIndexOf` to find characters\
+    \ that appear once. The time complexity is O(n^2), where n is the length of the\
+    \ string.\n\n## Q-33 Write a JS program Return number of vowels in a given String.\
+    \ (Most Asked)\n\nApproach:-\n\n```javascript\nlet str = \"Rajat\"; // String\
+    \ to check for vowels\n// Function to count the number of vowels in the given\
+    \ string\nfunction countVowels(str) {\n  const vowels = [\"a\", \"e\", \"i\",\
+    \ \"o\", \"u\"]; // Array of vowel characters\n  let count = 0; // Initialize\
+    \ the vowel count\n  // Iterate through each character in the string\n  for (let\
+    \ char of str.toLowerCase()) {\n    // Increment count if the character is a vowel\n\
+    \    if (vowels.includes(char)) {\n      count++;\n    }\n  }\n  return count;\
+    \ // Return the total count of vowels\n}\nconst result = countVowels(str);\nconsole.log(result);\
+    \ // Output: 2\n```\n\n**Output:** The number of vowels in the string \"Rajat\"\
+    \ is 2.\n\n**Time Complexity:** *O(n)*\n\n**Explanation:** This program counts\
+    \ the number of vowels in the string str. The `countVowels` function first defines\
+    \ an array `vowels` containing the lowercase vowel characters. It then iterates\
+    \ through each character of the string, converting it to lowercase to handle case\
+    \ sensitivity. If the character is found in the `vowels` array, the `count` is\
+    \ incremented. The function returns the total count of vowels.\n\n## Q-34 Write\
+    \ a JS Program to Remove All Whitespace Characters from a String.\n\nApproach:-\n\
+    \n```javascript\nfunction removeWhitespace(str) {\n  let result = \"\";\n  for\
+    \ (let i = 0; i < str.length; i++) {\n    if (str[i] !== \" \") {\n      // Check\
+    \ if the character is not a space\n      result += str[i]; // Append non-whitespace\
+    \ characters to the result\n    }\n  }\n  return result;\n}\n```\n"
+  mdcn: "\n\n## 面试高频 50 JavaScript 编码题\n\nlet result = reverseStr(str);\nconsole.log(result);\
+    \ // 输出: \"elpmaxe\"\n\n**输出：** 打印反转后的字符串为 \"elpmaxe\"。\n\n**时间复杂度：** *O(n)*\n\
+    \n**解释：** 该程序通过遍历每个字符并将其添加到新字符串的前面来反转给定字符串。时间复杂度为 (O(n)，其中 (n) 是字符串的长度。\n\n方法\
+    \ 2:-\n\n```javascript\nlet str = \"hello\";\nfunction reverseStr(str) {\n  return\
+    \ str.split(\"\").reverse().join(\"\");\n}\nlet result = reverseStr(str);\nconsole.log(result);\
+    \ // 输出: \"olleh\"\n```\n\n**输出：** 打印反转后的字符串为 \"olleh\"。\n\n**时间复杂度：** *O(n)*\n\
+    \n**解释：** 该程序通过遍历每个字符并将其添加到新字符串的前面来反转给定字符串。时间复杂度为 (O(n))，其中 (n) 是字符串的长度。\n\n##\
+    \ Q-28 编写一个 JS 程序反转字符串中的单词。\n\n方法 :-\n\n```javascript\nlet str = \"my name is\
+    \ rahul chaurasia\"; // 需要反转单词的字符串\n// 反转字符串中单词的函数\nfunction reverseWordsInString(str)\
+    \ {\n  let words = str.split(\" \").reverse().join(\" \"); 分割、反转并合并单词\n  return\
+    \ words;\n}\nlet result = reverseWordsInString(str);\nconsole.log(result); //\
+    \ 输出: \"chaurasia rahul is name my\"\n```\n\n**输出：** 字符串 \"my name is rahul chaurasia\"\
+    \ 中的单词反转后为 \"chaurasia rahul is name my\"。\n\n**时间复杂度：** *O(n)*\n\n**解释：** 该函数将字符串拆分为单词数组，反转数组，然后将单词重新组合字符串。时间复杂度为\
+    \ *O(n)*，其中 n 是字符串中字符的数量。\n\n## Q-29 编写一个 JS 程序找到字符串中最长长的单词。\n\n方法 :-\n\n```javascript\n\
+    let str = \"My name is Rahul Chaurasia\";\nlet words = str.split(\" \");\nfunction\
+    \ longestWord(words) {\n  let longestWord = \"\";\n  for (let i = 0; i < words.length;\
+    \ i++) {\n    if (words[i].length > longestWord.length) {\n      longestWord =\
+    \ words[i];\n    }\n  }\n  return longestWord;\n}\nlet result = longestWord(words);\n\
+    console.log(result);\n```\n\n**输出：** 最长的单词是 \"Chaurasia\"。\n\n**时间复杂度：** *O(n)*\n\
+    \n**解释：** 该程序通过将字符串拆分为单词，然后遍历单词找到最长的一个。时间复杂度为 O(n)，其中 n 是字符串中单词的数量。\n\n## Q-30\
+    \ 编写一个 JS 程序检查字符串是否为回文。\n\n方法 :-\n\n```javascript\nlet str = \"racecar\";\n//\
+    \ 检查是否为回文的函数\nfunction isPalindrome(str) {\n  let reversed = str.split(\"\").reverse().join(\"\
+    \"); // 反转字符串\n  return str === reversed; \n}\nlet result = isPalindrome(str);\n\
+    console.log(result); // 输出: true\n```\n\n**输出：** 字符串 \"racecar\" 是回文：true。\n\n\
+    **时间复杂度：** *O(n)*\n\n**解释：** 该程序通过反转字符串并与原始字符串比较来检查是否为回文。时间复杂度为 O(n)，其中 n 是字符串的长度。\n\
+    \n## Q-31 编写一个 JS 程序检查两个字符串是否为异位词。\n\n方法 :-\n\n```javascript\nlet str1 = \"listen\"\
+    ;\nlet str2 = \"silent\";\n// 检查是否异位词的函数\nfunction isAnagram(str1, str2) {\n \
+    \ let sorted1 = str1.split(\"\").sort().join(\"\");\n  let sorted2 = str2.split(\"\
+    \").sort().join(\"\");\n  return sorted1 === sorted2;\n}\nlet result = isAnagram(str1,\
+    \ str2);\nconsole.log(result); // 输出: true\n```\n\n**输出：** 异位词：true。\n\n**时间复杂度：**\
+    \ *O(n log n)*\n\n**解释：** 该程序通过对字符串进行排序并比较来检查它们是否为异位词。由于使用了排序，时间复杂度取决于排序算法。\n\n\
+    ## Q-32 编写一个 JS 程序返回字符串中未重复的字符。\n\n方法 :-\n\n```javascript\nlet str = \"algorithm\"\
+    ;\n// 返回未重复字符的函数\nfunction firstRepeated(str) {\n  for (let i = 0; i < str.length;\
+    \ i++) {\n    if (str.indexOf(str[i]) === str.lastIndexOf(str[i])) {\n      return\
+    \ str[i];\n    }\n  }\n  return null; // 如果没有未重复字符返回 null\n}\nlet result = firstRepeated(str);\n\
+    console.log(result); // 输出: \"g\"\n```\n\n**输出：** \"algorithm\" 中未重复的字符是 \"g\"\
+    。\n\n**时间复杂度：** *O(n^2)*\n\n**解释：** 该函数使用 `indexOf` 和 `lastIndexOf` 查找出现一次的字符。嵌套的查找导致了平方复杂度。\n\
+    \n## Q-33 编写一个 JS 程序返回给定字符串中元音的数量。\n\n方法 :-\n\n```javascript\nlet str = \"Rajat\"\
+    ;\n// 统计给定字符串元音数量的函数\nfunction countVowels(str) {\n  const vowels = [\"a\", \"\
+    e\", \"i\", \"o\", \"u\"];\n  let count = 0; // 初始化计数器\n  for (let char of str.toLowerCase())\
+    \ { // 遍历字符串的每个字符\n    if (vowels.includes(char)) { // 如果是元音则加1\n      count++;\n\
+    \    }\n  }\n  return count; // 返回元音总数\n}\nlet result = countVowels(str);\nconsole.log(result);\
+    \ // 输出: 2\n```\n\n**输出：** \"Rajat\" 中有 2 个元音。\n\n**时间复杂度：** *O(n)*\n\n**解释：**\
+    \ 该程序通过遍历字符串并检查字符是否在 `vowels` 数组中来统计元音数量。\n\n## Q-34 编写一个 JS 程序移除字符串中的所有空格字符。\n\
+    \n方法 :-\n\n```javascript\nfunction removeWhitespace(str) {\n  let result = \"\"\
+    ;\n  for (let i = 0; i < str.length; i++) {\n    if (str[i] !== \" \") { // 检查字符是否不是空格\n\
+    \      result += str[i]; // 将非空格字符添加到结果中\n    }\n  }\n  return result;\n}\n```\n\
+    \n"
+  merge: 0
+  raw:
+  - "[PAGE 25]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    26\n\n`let`` result ``\\=`` ``reverseStr``(``str``);`\n\n`console``.``log``(``result``);``\
+    \ ``// Output: \"elpmaxe\"`\n\n**Output: **The reversed string is printed as \"\
+    elpmaxe\".\n\n**Time Complexity:** *O(n)*\n\n**Explanation: **This program reverses\
+    \ a given string by iterating through each \n\ncharacter and adding it to the\
+    \ front of a new string. The time complexity is (O(n), \n\nwhere (n) is the length\
+    \ of the string.\n\nApproach 2:-\n\n`let`` str ``\\=`` ``\"hello\"``;`\n\n`function``\
+    \ ``reverseStr``(``str``){`\n\n` ``return`` str``.``split``(``\"\"``).``reverse``().``join``(``\"\
+    \"``);`\n\n`}`\n\n`}`\n\n`let`` result ``\\=`` ``reverseStr``(``str``);`\n\n`console``.``log``(``result``);``\
+    \ ``// Output: \"olleh\"`\n\n**Output: **The reversed string is printed as \"\
+    olleh\".\n\n**Time Complexity:** *O(n)*\n\n**Explanation: **This program reverses\
+    \ a given string by iterating through each \n\ncharacter and adding it to the\
+    \ front of a new string. The time complexity is \\\\\n\n(O(n)\\\\), where \\\\\
+    (n\\\\) is the length of the string.\n\n**Q-28** **Write a JS Program to Reverse\
+    \ the words in a string.**\n\nApproach :-\n\n`let`` str ``\\=`` ``\"my name is\
+    \ rahul chaurasia\"``;`` ``// String to reverse `\n\n`the words`\n\n`// Function\
+    \ to reverse the words in a string`\n\n`function`` ``reverseWordsInString``(``str``)``\
+    \ ``{`"
+  - "[PAGE 26]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    27\n\n` ``let`` words ``\\=`` str``.``split``(``\" \"``).``reverse``().``join``(``\"\
+    \ \"``);`` ``// Split, r`\n\n`everse, and join the words`\n\n` ``return`` words``;`\n\
+    \n`}`\n\n`let`` result ``\\=`` ``reverseWordsInString``(``str``);`\n\n`console``.``log``(``result``);``\
+    \ ``// Output: \"chaurasia rahul is name my\"`\n\n**Output: **The words in the\
+    \ string `\"my name is rahul chaurasia\"` reversed are `\"chaurasia `\n\n`rahul\
+    \ is name my\"` .\n\n**Time Complexity:** *O(n)*\n\n**Explanation: **The function\
+    \ splits the string into an array of words, reverses the \n\narray, and then joins\
+    \ the words back into a string. The time complexity is *O(n)*, \n\nwhere `n` is\
+    \ the number of characters in the string.\n\n**Q-29 ** **Write a JS Program to\
+    \ find the Longest word in the string.**\n\nApproach :-\n\n`let`` str ``\\=``\
+    \ ``\"My name is Rahul Chaurasia\"``;`\n\n`let`` words ``\\=`` str``.``split``(``\"\
+    \ \"``);`\n\n`function`` ``longestWord``(``words``)`` ``{`\n\n` ``let`` longestWord\
+    \ ``\\=`` ``\"\"``;`\n\n` ``for`` ``(``let`` i ``\\=`` ``0``;`` i ``<`` words``.``length``;``\
+    \ i``++``)`` ``{`\n\n` ``if`` ``(``words``\\[``i``\\].``length ``\\>`` longestWord``.``length``)``\
+    \ ``{`\n\n` longestWord ``\\=`` words``\\[``i``\\];`\n\n` ``}`\n\n` ``}`\n\n`\
+    \ ``return`` longestWord``;`\n\n`}`\n\n`let`` result ``\\=`` ``longestWord``(``words``);`\n\
+    \n`console``.``log``(``result``);`\n\n**Output: **The longest word is \"Chaurasia\"\
+    ."
+  - "[PAGE 27]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    28\n\n**Time Complexity:** *O(n)*\n\n**Explanation: **This program finds the longest\
+    \ word in a given string by splitting the \n\nstring into individual words and\
+    \ then iterating through each word to compare their \n\nlengths. The time complexity\
+    \ is O(n), where n is the number of words in the string.\n\n**Q-30 ** **Write\
+    \ a JS Program to check if a given string is a palindrome or not.****(Most **\n\
+    \n**Asked)**\n\nApproach :-\n\n`let`` str ``\\=`` ``\"racecar\"``;`\n\n`// Function\
+    \ to reverse the string`\n\n`function`` ``reverseStr``(``str``)`` ``{`\n\n` ``return``\
+    \ str``.``split``(``\"\"``).``reverse``().``join``(``\"\"``);`\n\n`}`\n\n`// Function\
+    \ to check if the string is a palindrome`\n\n`function`` ``isPalindrome``(``string``)``\
+    \ ``{`\n\n` ``let`` reversedString ``\\=`` ``reverseStr``(``string``);`\n\n` ``return``\
+    \ reversedString ``\\===`` str ``?`` ``true`` ``:`` ``false``;`\n\n`}`\n\n`let``\
+    \ result ``\\=`` ``isPalindrome``(``str``);`\n\n`console``.``log``(``result``);``\
+    \ ``// Output: true`\n\n**Output: **The string is a palindrome: `true` .\n\n**Time\
+    \ Complexity:** *O(n)*\n\n**Explanation: **This program checks if a given string\
+    \ is a palindrome by first \n\nreversing the string and then comparing the reversed\
+    \ string to the original string. \n\nIf they are the same, the string is a palindrome.\
+    \ The time complexity is O(n), where \n\nn is the length of the string."
+  - "[PAGE 28]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    29\n\n**Q-31 ** **Write a JS Program to check if two given strings are anagrams\
+    \ or not.**\n\n**(Most Asked)**\n\nApproach :-\n\n`let`` str1 ``\\=`` ``\"listen\"\
+    ``;`\n\n`let`` str2 ``\\=`` ``\"silent\"``;`\n\n`// Function to check if two strings\
+    \ are anagrams`\n\n`function`` ``isAnagram``(``str1``,`` str2``)`` ``{`\n\n` ``//\
+    \ Sort and join the characters of both strings`\n\n` ``const`` sortedArr1 ``\\\
+    =`` str1``.``split``(``\"\"``).``sort``().``join``(``\"\"``);`\n\n` ``const``\
+    \ sortedArr2 ``\\=`` str2``.``split``(``\"\"``).``sort``().``join``(``\"\"``);`\n\
+    \n` ``// Compare the sorted versions of the strings`\n\n` ``return`` sortedArr1\
+    \ ``\\===`` sortedArr2``;`\n\n`}`\n\n`let`` result ``\\=`` ``isAnagram``(``str1``,``\
+    \ str2``);`\n\n`console``.``log``(``result``);`` ``// Output: true`\n\n**Output:\
+    \ **The strings are anagrams: `true` .\n\n**Time Complexity:** *O(n \\\\log n)*\n\
+    \n**Explanation: **This program checks if two given strings are anagrams by sorting\
+    \ \n\nthe characters of both strings and then comparing the sorted versions. If\
+    \ the \n\nsorted strings are identical, the original strings are anagrams. The\
+    \ time complexity \n\nis O(n \\\\log n) due to the sorting operation, where n\
+    \ is the length of the strings.\n\n**Q-32** **Write a JS program to****return\
+    \ First Non-Repeated Character of a String.**\n\n**(Most Asked)**\n\nApproach:-\n\
+    \n`let`` str ``\\=`` ``\"algorithm\"``;`` ``// String to check`\n\n`// Function\
+    \ to find the first non-repeated character`"
+  - "[PAGE 29]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    30\n\n`function`` ``firstNonRepeatedCharacter``(``str``)`` ``{`\n\n` ``for`` ``(``let``\
+    \ i ``\\=`` ``0``;`` i ``<`` str``.``length``;`` i``++``)`` ``{`\n\n` ``// Check\
+    \ if the character is non-repeated`\n\n` ``if`` ``(``str``.``indexOf``(``str``\\\
+    [``i``\\])`` ``\\===`` str``.``lastIndexOf``(``str``\\[``i``\\]))`` ``{`\n\n`\
+    \ ``return`` str``\\[``i``\\];`\n\n` ``}`\n\n` ``}`\n\n` ``return`` ``null``;``\
+    \ ``// Return null if all characters are repeated`\n\n`}`\n\n`let`` result ``\\\
+    =`` ``firstNonRepeatedCharacter``(``str``);`\n\n`console``.``log``(``result``);``\
+    \ ``// Output: \"g\"`\n\n**Output: **The first non-repeated character in the string\
+    \ `\"algorithm\"` is `\"g\"` .\n\n**Time Complexity:** *O(n^2)*\n\n**Explanation:\
+    \ **The function uses `indexOf` and `lastIndexOf` to find characters that \n\n\
+    appear only once. The time complexity is *O(n^2)*, where `n` is the length of\
+    \ the \n\nstring.\n\n**Q-33** **Write a JS program to****Return number of vowels\
+    \ in a given String.****(Most **\n\n**Asked)**\n\nApproach:-\n\n`const`` str ``\\\
+    =`` ``\"Rajat\"``;`` ``// String to check for vowels`\n\n`// Function to count\
+    \ the number of vowels in the given string`\n\n`function`` ``countVowels``(``str``)``\
+    \ ``{`\n\n` ``const`` vowels ``\\=`` ``\\[``\"a\"``,`` ``\"e\"``,`` ``\"i\"``,``\
+    \ ``\"o\"``,`` ``\"u\"``\\];`` ``// Array of vowel `\n\n`characters`\n\n` ``let``\
+    \ count ``\\=`` ``0``;`` ``// Initialize the vowel count`\n\n` ``// Iterate through\
+    \ each character in the string`\n\n` ``for`` ``(``let`` char ``of`` str``.``toLowerCase``())``\
+    \ ``{`\n\n` ``// Increment count if the character is a vowel`"
+  - "[PAGE 30]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    31\n\n` ``if`` ``(``vowels``.``includes``(``char``))`` ``{`\n\n` count``++``;`\n\
+    \n` ``}`\n\n` ``}`\n\n` ``return`` count``;`` ``// Return the total count of vowels`\n\
+    \n`}`\n\n`const`` result ``\\=`` ``countVowels``(``str``);`\n\n`console``.``log``(``result``);``\
+    \ ``// Output: 2`\n\n**Output: **The number of vowels in the string `\"Rajat\"\
+    ` is `2` .\n\n**Time Complexity:** *O(n)*\n\n**Explanation: **This program counts\
+    \ the number of vowels in the string `str` . The \n\n`countVowels` function first\
+    \ defines an array `vowels` containing the lowercase vowel \n\ncharacters. It\
+    \ then iterates through each character of the string, converting it to \n\nlowercase\
+    \ to handle case sensitivity. If the character is found in the `vowels` array,\
+    \ \n\nthe `count` is incremented. The function finally returns the total count\
+    \ of vowels.\n\n**Q-34 ****Write a JS Program to Remove All Whitespace Characters\
+    \ from a String.**\n\nApproach:-\n\n`function`` ``removeWhitespace``(``str``)``\
+    \ ``{`\n\n` ``let`` result ``\\=`` ``\"\"``;`\n\n` ``for`` ``(``let`` i ``\\=``\
+    \ ``0``;`` i ``<`` str``.``length``;`` i``++``)`` ``{`\n\n` ``if`` ``(``str``\\\
+    [``i``\\]`` ``!==`` ``\" \"``)`` ``{`\n\n` ``// Check if the character is not\
+    \ a space`\n\n` result ``+=`` str``\\[``i``\\];`` ``// Append non-whitespace characters\
+    \ t`\n\n`o the result`\n\n` ``}`\n\n` ``}`\n\n` ``return`` result``;`\n\n`}`"
+- md: '
+
+    Top 50 Most Asked Javascript Coding Questions in Interviews
+
+
+    `const inputString = " Hello World! How are you?";`
+
+    `const result = removeWhitespace(inputString);`
+
+    `console.log(result);`
+
+
+    **Output**: `"HelloWorld!Howareyou?"`
+
+
+    **Time Complexity**: *O(n)*, where *n* is the length of the input string. The
+    program iterates through each character in the string exactly once.
+
+
+    **Explanation**: The program iterates through each character in the string and
+    checks if it is not a space. If the character is not a space, it is added to the
+    `result` string.
+
+
+    ## Q-35 Write a JS program to count the number of Occurrences of a character in
+    the string.(Most Asked)
+
+
+    Approach:-
+
+
+    `let str = "Chaurasia"; // String to search in`
+
+    `let char = "a"; // Character to count`
+
+    `// Function to find the number of occurrences of a character in a string`
+
+    `function numberOfOccurrences(str, char) {`
+
+    `  let count = 0;`
+
+    `  for (let i = 0; i < str.length; i++) {`
+
+    `    if (str[i] === char) {`
+
+    `      count++;`
+
+    `    }`
+
+    `  }`
+
+    `  return count;`
+
+    `}`
+
+    `let result = numberOfOccurrences(str, char);`
+
+    `console.log(result); // Output: 3`
+
+
+    **Output**: The number of occurrences of `''a''` in the string "Chaurasia" is
+    `3`.
+
+
+    **Time Complexity**: *O(n)*
+
+
+    **Explanation**: The function iterates through the string and counts the occurrences
+    of the specified character. The time complexity is *O(n)*, where `n` is the length
+    of the string. The variable `char` is used to specify the character to count.
+
+
+    ## Q-36 Write a JS program to convert the First Letter of Each Word in the String
+    to Uppercase.
+
+
+    Approach:-
+
+
+    `let str = "i am a frontend developer"; // Original string`
+
+    `// Function to capitalize the first letter of each word`
+
+    `function capitalizeFirstLetter(str) {`
+
+    `  return str`
+
+    `    .split(" ") // Split the string into words`
+
+    `    .map((word) => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize
+    the first letter`
+
+    `    .join(" "); // Join the words back into a string`
+
+    `}`
+
+    `const result = capitalizeFirstLetter(str);`
+
+    `console.log(result); // Output: "I Am A Frontend Developer"`
+
+
+    **Output**: The string `"i am a frontend developer"` is converted to `"I Am A
+    Frontend Developer"`.
+
+
+    **Time Complexity**: *O(n)*
+
+
+    **Explanation**: The function splits the string `"i am a frontend developer"`
+    into an array of words, capitalizes the first letter of each word, and then joins
+    the words back into a single string. The result is `"I Am A Frontend Developer"`.
+    The time complexity is *O(n)*, where `n` is the number of characters in the string.
+
+
+    ## Section 4- Objects
+
+
+    ## Q-37 Write a JS Program to Create an object with dynamic keys and a method
+    that uses `this` to return a string.
+
+
+    Approach:-
+
+
+    `let key = "profession";`
+
+    `let user = {`
+
+    `  name: "Alice",`
+
+    `  age: 28,`
+
+    `  [key]: "Developer",`
+
+    `  getDetails: function() {`
+
+    `    return \`User: ${this.name}, Profession: ${this.profession}\`;;
+
+    `  },`
+
+    `};`
+
+    `console.log(user.getDetails());`
+
+
+    **Output**: `User: Alice, Profession: Developer`
+
+
+    **Time Complexity**: *O(1)*
+
+
+    **Explanation**: This question tests knowledge of dynamic property names in objects
+    and how to use `this` within object methods to reference object properties.
+
+
+    ## Q-38 Write a JS Program to Update an object property based on a condition and
+    add a nested object.
+
+
+    Approach:-
+
+
+    `let user = {`
+
+    `  name: "Alice",`
+
+    `  age: 28,`
+
+    `  isDeveloper: true,`
+
+    `};`
+
+    `// Conditionally update property`
+
+    `if (user.age > 25) {`
+
+    `  user.status = "Senior";`
+
+    `}`
+
+    `// Add a nested object`
+
+    `user.address = {`
+
+    `  city: "New York",`
+
+    `  zip: 10001,`
+
+    `};`
+
+    `console.log(user);`
+
+
+    **Output**: `{ name: ''Alice'', age: 28, isDeveloper: true, status: ''Senior'',
+    address: { city: ''New York'', zip: 10001 } }`
+
+
+    **Time Complexity**: *O(1)*
+
+
+    **Explanation**: This problem demonstrates how to conditionally update and add
+    nested objects, a common real-world task.
+
+
+    ## Q-39 Write a JS Program to Delete a deeply nested property and check if exist.
+
+
+    Approach:-
+
+
+    `let user = {`
+
+    `  name: "Alice",`
+
+    `  age: 28,`
+
+    `  details: {`
+
+    `    city: "New York",`
+
+    `    zip: 10001,`
+
+    `  },`
+
+    `};`
+
+    `// Delete nested property`
+
+    `delete user.details.zip;`
+
+    `// Check if exist`
+
+    `console.log("zip" in user.details);`
+
+
+    ## Q-40 Write a JS Program to Loop through an object and calculate values.
+
+
+    Approach:-
+
+
+    `let employeeSalaries = {`
+
+    `  Alice: 50000,`
+
+    `  Bob: 60000,`
+
+    `  Carol: 70000,`
+
+    `};`
+
+    `let totalSalary = 0;`
+
+    `let count = 0;`
+
+    `for (let key in employeeSalaries) {`
+
+    `  totalSalary += employeeSalaries[key];`
+
+    `  count++;`
+
+    `}`
+
+    `let averageSalary = totalSalary / count;`
+
+    `console.log(`Total Salary: ${totalSalary}, Average Salary: ${averageSalary}`);`
+
+
+    **Output**: `Total Salary: 180000, Average Salary: 60000`
+
+
+    ## Q-41 Write a JS Program to Merge two objects handle duplicate keys.
+
+
+    Approach:-
+
+
+    `let user1 = {`
+
+    `  name: "Alice",`
+
+    `  age: 28,`
+
+    `  profession: "Developer",`
+
+    `};`
+
+    `let user2 = {`
+
+    `  age: 30,`
+
+    `  city: "New York",`
+
+    `  profession: "Senior Developer",`
+
+    `};`
+
+    `// Merge two objects with user2 precedence in case of conflicts`
+
+    `let mergedUser = {...user1, ...user2};`
+
+    `console.log(mergedUser);`
+
+
+    **Output**: `{ name: ''Alice'', age: 30, profession: ''Senior Developer'', city:
+    ''New York'' }`
+
+
+    ## Q-42 Write a JS Program to Find unique keys of an object.
+
+
+    Approach:-
+
+
+    `let obj = {`
+
+    `  name: "Rahul",`
+
+    `  name: "Rajat", // This will overwrite the previous ''name'' key`
+
+    `  age: 27,`
+
+    `};`
+
+    `function uniqueKeys(obj) {`
+
+    `  return new Set(Object.keys(obj));`
+
+    `}`
+
+    `let result = uniqueKeys(obj);`
+
+    `console.log(result); // { ''name'', ''age'' }`
+
+    '
+  mdcn: '
+
+
+    面试中最常见的 50 个 JavaScript 编码题
+
+
+    `const inputString = " Hello World! How are you?";`
+
+    `const result = removeWhitespace(inputString);`
+
+    `console.log(result);`
+
+
+    **输出**: `"HelloWorld!Howareyou?"`
+
+
+    **时间复杂度**: *O(n)*，其中 *n* 是输入字符串的长度。程序精确地遍历字符串中的每个字符一次。
+
+
+    **解释**: 程序遍历字符串中的每个字符，并检查它是否不是空格。如果该字符不是空格，则将其添加到 `result` 字符串中。
+
+
+    ## Q-35 编写一个 JS 程序统计字符串中某个字符出现的次数。（最常问）
+
+
+    方法:-
+
+
+    `let str = "Chaurasia"; // 待搜索的字符串`
+
+    `let char = "a"; // 要计数的字符`
+
+    `// 用于查找字符串中某个字符出现次数的函数`
+
+    `function numberOfOccurrences(str, char) {`
+
+    `  let count = 0;`
+
+    `  for (let i = 0; i < str.length; i++) {`
+
+    `    if (str[i] === char) {`
+
+    `      count++;`
+
+    `    }`
+
+    `  }`
+
+    `  return count;`
+
+    `}`
+
+    `let result = numberOfOccurrences(str, char);`
+
+    `console.log(result); // 输出: 3`
+
+
+    **输出**: 字符串 "Chaurasia" 中 ''a'' 出现的次数为 `3`。
+
+
+    **时间复杂度**: *O(n)*
+
+
+    **解释**: 该函数遍历字符串并统计指定字符出现的次数。时间复杂度为 *O(n)*，其中 *n* 是字符串的长度。变量 `char` 用于指定要计数的字符。
+
+
+    ## Q-36 编写一个 JS 程序将字符串中每个单词的首字母转换为大写字母。
+
+
+    方法:-
+
+
+    `let str = "i am a frontend developer"; // 原始字符串`
+
+    `// 将每个单词的首字母大写化的函数`
+
+    `function capitalizeFirstLetter(str) {`
+
+    `  return str`
+
+    `    .split(" ") // 将字符串分成单词`
+
+    `    .map((word) => word.charAt(0).toUpperCase() + word.slice(1)) // 首字母大写`
+
+    `    .join(" "); // 将单词重新组合字符串`
+
+    `}`
+
+    `const result = capitalizeFirstLetter(str);`
+
+    `console.log(result); // 输出: "I Am A Frontend Developer"`
+
+
+    **输出**: 字符串 `"i am a frontend developer"` 被转换为 `"I Am A Frontend Developer"`。
+
+
+    **时间复杂度**: *O(n)*
+
+
+    **解释**: 该函数将字符串 `"i am a frontend developer"` 分分成单词数组，将每个单词的首字母大写，然后将单词重新组合成单个字符串。结果是
+    `"I Am A Frontend Developer"`。时间复杂度为 *O(n)*，其中 *n* 是字符串中的字符数。
+
+
+    ## Section 4- 对象
+
+
+    ## Q-37 编写一个 JS 程序创建一个具有动态键以及一个使用 `this` 返回字符串方法的对象。
+
+
+    方法:-
+
+
+    `let key = "profession";`
+
+    `let user = {`
+
+    `  name: "Alice",`
+
+    `  age: 28,`
+
+    `  [key]: "Developer",`
+
+    `  getDetails: function() {`
+
+    `    return \`User: ${this.name}, Profession: ${this.profession}\`;;`
+
+    `  },`
+
+    `};`
+
+    `console.log(user.getDetails());`
+
+
+    **输出**: `User: Alice, Profession: Developer`
+
+
+    **时间复杂度**: *O(1)*
+
+
+    **解释**: 此题测试了对对象中动态属性名的知识，以及在对象方法中使用 `this` 引用对象属性。
+
+
+    ## Q-38 编写一个 JS 程序根据条件更新对象属性并添加嵌套对象。
+
+
+    方法:-
+
+
+    `let user = {`
+
+    `  name: "Alice",`
+
+    `  age: 28,`
+
+    `  isDeveloper: true,`
+
+    `};`
+
+    `// 条件更新属性`
+
+    `if (user.age > 25) {`
+
+    `  user.status = "Senior";`
+
+    `}`
+
+    `// 添加嵌套对象`
+
+    `user.address = {`
+
+    `  city: "New York",`
+
+    `  zip: 10001,`
+
+    `};`
+
+    `console.log(user);`
+
+
+    **输出**: `{ name: ''Alice'', age: 28, isDeveloper: true, status: ''Senior'', address:
+    { city: ''New York'', zip: 10001 } }`
+
+
+    **时间复杂度**: *O(1)*
+
+
+    **解释**: 此问题展示了如何条件地更新和嵌套对象。
+
+
+    ## Q-39 编写一个 JS 程序删除深度嵌套属性并检查是否存在。
+
+
+    方法:-
+
+
+    `let user = {`
+
+    `  name: "Alice",`
+
+    `  age: 28,`
+
+    `  details: {`
+
+    `    city: "New York",`
+
+    `    zip: 10001,`
+
+    `  },`
+
+    `};`
+
+    `// 删除嵌套属性`
+
+    `delete user.details.zip;`
+
+    `// 检查是否存在`
+
+    `console.log("zip" in user.details);`
+
+
+    **输出**: `false`
+
+
+    ## Q-40 编写一个 JS 程序遍历对象并计算值。
+
+
+    方法:-
+
+
+    `let employeeSalaries = {`
+
+    `  Alice: 50000,`
+
+    `  Bob: 60000,`
+
+    `  Carol: 70000,`
+
+    `};`
+
+    `let totalSalary = 0;`
+
+    `let count = 0;`
+
+    `for (let key in employeeSalaries) {`
+
+    `  totalSalary += employeeSalaries[key];`
+
+    `  count++;`
+
+    `}`
+
+    `let averageSalary = totalSalary / count;`
+
+    `console.log(`Total Salary: ${totalSalary}, Average Salary: ${averageSalary}`);`
+
+
+    **输出**: `Total Salary: 180000, Average Salary: 60000`
+
+
+    ## Q-41 编写一个 JS 程序合并对象并处理重复键。
+
+
+    方法:-
+
+
+    `let user1 = {`
+
+    `  name: "Alice",`
+
+    `  age: 28,`
+
+    `  profession: "Developer",`
+
+    `};`
+
+    `let user2 = {`
+
+    `  age: 30,`
+
+    `  city: "New York",`
+
+    `  profession: "Senior Developer",`
+
+    `};`
+
+    `// 合并对象，冲突时以 user2 优先`
+
+    `let mergedUser = {...user1, ...user2};`
+
+    `console.log(mergedUser);`
+
+
+    **输出**: `{ name: ''Alice'', age: 30, profession: ''Senior Developer'', city: ''New
+    York'' }`
+
+
+    ## Q-42 编写一个 JS 程序查找对象的唯一键。
+
+
+    方法:-
+
+
+    `let obj = {`
+
+    `  name: "Rahul",`
+
+    `  name: "Rajat", // 这会覆盖之前的 ''name'' 键`
+
+    `  age: 27,`
+
+    `};`
+
+    `function uniqueKeys(obj) {`
+
+    `  return new Set(Object.keys(obj));`
+
+    `}`
+
+    `let result = uniqueKeys(obj);`
+
+    `console.log(result); // { ''name'', ''age'' }`
+
+
+    '
+  merge: 0
+  raw:
+  - "[PAGE 31]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    32\n\n`const`` inputString ``\\=`` ``\" Hello World! How are you? \"``;`\n\n`const``\
+    \ result ``\\=`` ``removeWhitespace``(``inputString``);`\n\n`console``.``log``(``result``);`\n\
+    \n**Output**: `\"HelloWorld!Howareyou?\"`\n\n**Time Complexity**: *O(n)*, where\
+    \ *n* is the length of the input string. The program \n\niterates through each\
+    \ character in the string exactly once.\n\n**Explanation**: The program iterates\
+    \ through each character in the string and \n\nchecks if it is not a space. If\
+    \ the character is not a space, it is added to the `result` \n\nstring.\n\n**Q-35**\
+    \ **Write a JS program to****count the number of Occurrences of a character in\
+    \ **\n\n**the string.****(Most Asked)**\n\nApproach:-\n\n`let`` str ``\\=`` ``\"\
+    Chaurasia\"``;`` ``// String to search in`\n\n`let`` char ``\\=`` ``\"a\"``;``\
+    \ ``// Character to count`\n\n`// Function to find the number of occurrences of\
+    \ a character `\n\n`in a string`\n\n`function`` ``numberOfOccurrences``(``str``,``\
+    \ char``)`` ``{`\n\n` ``let`` count ``\\=`` ``0``;`\n\n` ``for`` ``(``let`` i\
+    \ ``\\=`` ``0``;`` i ``<`` str``.``length``;`` i``++``)`` ``{`\n\n` ``if`` ``(``str``\\\
+    [``i``\\]`` ``\\===`` char``)`` ``{`\n\n` count``++``;`\n\n` ``}`\n\n` ``}`\n\n\
+    ` ``return`` count``;`\n\n`}`\n\n`let`` result ``\\=`` ``numberOfOccurrences``(``str``,``\
+    \ char``);`\n\n`console``.``log``(``result``);`` ``// Output: 3`"
+  - "[PAGE 32]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    33\n\n**Output: **The number of occurrences of `'a'` in the string `\"Chaurasia\"\
+    ` is `3` .\n\n**Time Complexity:** *O(n)*\n\n**Explanation: **The function iterates\
+    \ through the string and counts the occurrences \n\nof the specified character.\
+    \ The time complexity is *O(n)*, where `n` is the length of \n\nthe string. The\
+    \ variable `char` is used to specify the character to count.\n\n**Q-36** **Write\
+    \ a JS program to****convert the First Letter of Each Word in the String **\n\n\
+    **to Uppercase.**\n\nApproach:-\n\n`let`` str ``\\=`` ``\"i am a frontend developer\"\
+    ``;`` ``// Original string`\n\n`// Function to capitalize the first letter of\
+    \ each word`\n\n`function`` ``capitalizeFirstLetter``(``str``)`` ``{`\n\n` ``return``\
+    \ str`\n\n` ``.``split``(``\" \"``)`` ``// Split the string into words`\n\n` ``.``map``((``word``)``\
+    \ ``\\=>`` word``.``charAt``(``0``).``toUpperCase``()`` ``+`` word``.``slice`\n\
+    \n`(``1``))`` ``// Capitalize the first letter`\n\n` ``.``join``(``\" \"``);``\
+    \ ``// Join the words back into a string`\n\n`}`\n\n`const`` result ``\\=`` ``capitalizeFirstLetter``(``str``);`\n\
+    \n`console``.``log``(``result``);`` ``// Output: \"I Am A Frontend Developer\"\
+    `\n\n**Output: **The string `\"i am a frontend developer\"` is converted to `\"\
+    I Am A Frontend `\n\n`Developer\"` .\n\n**Time Complexity:** *O(n)*\n\n**Explanation:\
+    \ **The function splits the string `\"i am a frontend developer\"` into an array\
+    \ \n\nof words, capitalizes the first letter of each word, and then joins the\
+    \ words back \n\ninto a single string. The result is `\"I Am A Frontend Developer\"\
+    ` . The time complexity is \n\n*O(n)*, where `n` is the number of characters in\
+    \ the string."
+  - "[PAGE 33]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    34\n\n** Section 4- Objects**\n\n**Q-37 ****Write a JS Program** **to Create an\
+    \ object with dynamic keys and a method **\n\n**that uses**`**this**`** to return\
+    \ a string****.**\n\nApproach:-\n\n`let`` key ``\\=`` ``\"profession\"``;`\n\n\
+    `let`` user ``\\=`` ``{`\n\n` ``name``:`` ``\"Alice\"``,`\n\n` ``age``:`` ``28``,`\n\
+    \n` ``\\[``key``\\]``:`` ``\"Developer\"``,`\n\n` ``getDetails``:`` ``function``\
+    \ ``()`` ``{`\n\n` ``return`` ```\\`User: ```${``this``.``name``}``, Profession:\
+    \ ``${``this``.``professio`\n\n`n``}``` \\` ```;`\n\n` ``},`\n\n`};`\n\n`console``.``log``(``user``.``getDetails``());`\n\
+    \n**Output: **`User: Alice, Profession: Developer` .\n\n**Time Complexity:** *O(1)*\n\
+    \n**Explanation: **This question tests knowledge of dynamic property names in\
+    \ objects \n\nand how to use `this` within object methods to reference object\
+    \ properties.\n\n**Q-38** **Write a JS Program to Update an object property based\
+    \ on a condition **\n\n**and add a nested object.**\n\nApproach:-\n\n`let`` user\
+    \ ``\\=`` ``{`\n\n` ``name``:`` ``\"Alice\"``,`\n\n` ``age``:`` ``28``,`\n\n`\
+    \ ``isDeveloper``:`` ``true``,`"
+  - "[PAGE 34]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    35\n\n`};`\n\n`// Conditionally update property`\n\n`if`` ``(``user``.``age ``\\\
+    >`` ``25``)`` ``{`\n\n` user``.``status ``\\=`` ``\"Senior\"``;`\n\n`}`\n\n`//\
+    \ Add a nested object`\n\n`user``.``address ``\\=`` ``{`\n\n` ``city``:`` ``\"\
+    New York\"``,`\n\n` ``zip``:`` ``10001``,`\n\n`};`\n\n`console``.``log``(``user``);`\n\
+    \n**Output: **`{ name: 'Alice', age: 28, isDeveloper: true, status: 'Senior',\
+    \ address: { city: `\n\n`'New York', zip: 10001 } }` .\n\n**Time Complexity:**\
+    \ *O(1)*\n\n**Explanation: **This problem demonstrates how to conditionally update\
+    \ properties \n\nand add nested objects, a common real-world task.\n\n**Q-39 ****Write\
+    \ a JS Program to** **Delete a deeply nested property and check if **\n\n**multiple\
+    \ properties exist.**\n\nApproach:-\n\n`let`` user ``\\=`` ``{`\n\n` ``name``:``\
+    \ ``\"Alice\"``,`\n\n` ``details``:`` ``{`\n\n` ``age``:`` ``28``,`\n\n` ``address``:``\
+    \ ``{`\n\n` ``city``:`` ``\"New York\"``,`\n\n` ``zip``:`` ``10001``,`\n\n` ``},`\n\
+    \n` ``},`"
+  - "[PAGE 35]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    36\n\n`};`\n\n`// Delete nested property`\n\n`delete`` user``.``details``.``address``.``zip``;`\n\
+    \n`// Check if properties exist`\n\n`console``.``log``(``\"zip\"`` ``in`` user``.``details``.``address``);`\n\
+    \n`console``.``log``(``\"city\"`` ``in`` user``.``details``.``address``);`\n\n\
+    **Output:**\n\n`false`\n\n`true`\n\n**Time Complexity:** *O(1)*\n\n**Explanation:\
+    \ **This question tests knowledge of dynamic property names in objects \n\nand\
+    \ how to use `this` within object methods to reference object properties.\n\n\
+    **Q-40 ****Write a JS Program to** **Loop through an object’s properties and calculate\
+    \ **\n\n**derived values.**\n\nApproach:-\n\n`let`` employeeSalaries ``\\=`` ``{`\n\
+    \n` ``Alice``:`` ``50000``,`\n\n` ``Bob``:`` ``60000``,`\n\n` ``Carol``:`` ``70000``,`\n\
+    \n`};`\n\n`// Calculate total salary and average`\n\n`let`` totalSalary ``\\=``\
+    \ ``0``;`\n\n`let`` count ``\\=`` ``0``;`\n\n`for`` ``(``let`` key ``in`` employeeSalaries``)``\
+    \ ``{`\n\n` totalSalary ``+=`` employeeSalaries``\\[``key``\\];`\n\n` count``++``;`\n\
+    \n`}`"
+  - "[PAGE 36]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    37\n\n`let`` averageSalary ``\\=`` totalSalary ``/`` count``;`\n\n`console``.``log``(```\\\
+    `Total Salary: ```${``totalSalary``}``, Average Salary: `\n\n`${``averageSalary``}```\
+    \ \\` ```);`\n\n**Output: **`Total Salary: 180000, Average Salary: 60000`\n\n\
+    **Time Complexity:** *O(n)* where *n* is the number of properties in the object.\n\
+    \n**Explanation: **This question tests knowledge of dynamic property names in\
+    \ objects \n\nand how to use `this` within object methods to reference object\
+    \ properties.\n\n**Q-41 ****Write a JS Program to** **Merge two objects and handle\
+    \ duplicate keys.**\n\nApproach:-\n\n`let`` user1 ``\\=`` ``{`\n\n` ``name``:``\
+    \ ``\"Alice\"``,`\n\n` ``age``:`` ``28``,`\n\n` ``profession``:`` ``\"Developer\"\
+    ``,`\n\n`};`\n\n`let`` user2 ``\\=`` ``{`\n\n` ``age``:`` ``30``,`\n\n` ``city``:``\
+    \ ``\"New York\"``,`\n\n` ``profession``:`` ``\"Senior Developer\"``,`\n\n`};`\n\
+    \n`// Merge two objects with user2 taking precedence in case of `\n\n`conflicts`\n\
+    \n`let`` mergedUser ``\\=`` ``{`` ``...``user1``,`` ``...``user2 ``};`\n\n`console``.``log``(``mergedUser``);`\n\
+    \n**Output**: `{ name: 'Alice', age: 30, profession: 'Senior Developer', city:\
+    \ 'New York' }`\n\n**Time Complexity**: *O(n)* where *n* is the total number of\
+    \ keys in both objects."
+  - "[PAGE 37]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    38\n\n**Explanation**: This problem is useful to test understanding of object\
+    \ merging, \n\nparticularly how duplicate keys are handled when combining objects.\n\
+    \n**Q-42 ****Write a JS Program to Find unique keys of an object.**\n\nApproach:-\n\
+    \n`let`` obj ``\\=`` ``{`\n\n` ``name``:`` ``\"Rahul\"``,`\n\n` ``name``:`` ``\"\
+    Rajat\"``,`` ``// This will overwrite the previous 'name' k`\n\n`ey`\n\n` ``age``:``\
+    \ ``27``,`\n\n`};`\n\n`function`` ``uniqueKeys``(``obj``)`` ``{`\n\n` ``return``\
+    \ ``new`` ``Set``(``Object``.``keys``(``obj``));`\n\n`}`\n\n`let`` result ``\\\
+    =`` ``uniqueKeys``(``obj``);`\n\n`console``.``log``(``result``);``//{ 'name',\
+    \ 'age' }`\n\n**Output**: `{ 'name', 'age' }`\n\n**Time Complexity**: *O(n)*\n\
+    \n**Explanation**: This program extracts the keys from the object using `Object.keys(obj)`\
+    \ \n\nand then creates a set from these keys to ensure they are unique. Since\
+    \ object \n\nkeys must be unique by definition, using `Object.keys` directly and\
+    \ converting to a \n\n`Set` is a cleaner approach.\n\n**Q-43 ****Write a JS Program\
+    \ to Sum of values in an object (including nested **\n\n**objects).**\n\nApproach:-\n\
+    \n`let`` obj ``\\=`` ``{`\n\n` ``a``:`` ``10``,`"
+- md: "\n## Top 50 Most Asked Javascript Coding Questions in Interviews\n\n```javascript\n\
+    const obj = {\n  \"b\": 20,\n  \"c\": {\n    \"d\": 30,\n    \"e\": {\n      \"\
+    f\": 40,\n      \"g\": 50,\n    },\n  },\n  \"h\": 60,\n};\n\nfunction sumValues(obj)\
+    \ {\n  let sum = 0;\n  function recursiveSum(o) {\n    for (let key in o) {\n\
+    \      if (typeof o[key] === \"object\" && o[key] !== null) {\n        recursiveSum(o[key]);\
+    \ // Recursively handle nested objects\n      } else if (typeof o[key] === \"\
+    number\") {\n        sum += o[key]; // Add numeric values to sum\n      }\n  \
+    \  }\n  }\n  recursiveSum(obj);\n  return sum;\n}\nlet result = sumValues(obj);\n\
+    console.log(result); // Output: 210\n```\n\n**Output**: `210`\n\n**Time Complexity**:\
+    \ *O(n)*\n\n**Explanation**: This program calculates the sum of all numeric values\
+    \ in an object, including those in nested objects. It uses a recursive function\
+    \ to traverse the object and its nested objects.\n\n## Section 5- Promises and\
+    \ Async Await\n\n### Q-44 Write a JS Program to Implement a Promise and Handle\
+    \ its Resolution. (Most Asked)\n\nApproach:-\n\n```javascript\nfunction handlePromise()\
+    \ {\n  const promise = new Promise((resolve, reject) => {\n    setTimeout(() =>\
+    \ {\n      resolve(\"Promise resolved successfully\");\n    }, 1000); // Simulates\
+    \ a 1-second delay\n  });\n  promise\n    .then((result) => {\n      console.log(result);\
+    \ // Logs the resolved value\n    })\n    .catch((error) => {\n      console.error(error);\
+    \ // Handles any potential rejection (not used here)\n    });\n}\nhandlePromise();\n\
+    ```\n\n**Output**: `Promise resolved successfully`\n\n**Time Complexity**: *O(1)*\
+    \ for the promise handling itself, with an asynchronous delay of 1 second due\
+    \ to `setTimeout`.\n\n**Explanation**: This program demonstrates the creation\
+    \ and resolution of a promise in JavaScript. The promise resolves after 1 second\
+    \ with a success message, which is logged to the console using the `.then()` method.\
+    \ The `.catch()` method is included to handle any potential errors, though it's\
+    \ not triggered in this example.\n\n### Q-45 Write a JS Program to Demonstrating\
+    \ Promise Handling with Promise.race, Promise.all, and Promise.allSettled. (Most\
+    \ Asked)\n\nApproach:-\n\n```javascript\nfunction handlePromise() {\n  let promise1\
+    \ = new Promise((resolve) => {\n    setTimeout(() => {\n      resolve(\"promise1\
+    \ resolved\");\n    }, 1000);\n  });\n  let promise2 = new Promise((resolve) =>\
+    \ {\n    setTimeout(() => {\n      resolve(\"promise2 resolved\");\n    }, 500);\n\
+    \  });\n  let promise3 = new Promise((resolve) => {\n    setTimeout(() => {\n\
+    \      resolve(\"promise3 resolved\");\n    }, 1500);\n  });\n\n  // Using Promise.race:\
+    \ Returns the result of the fastest promise\n  Promise.race([promise1, promise2,\
+    \ promise3])\n    .then((result) => {\n      console.log(\"Promise.race result:\"\
+    , result);\n    })\n    .catch((error) => {\n      console.log(\"Promise.race\
+    \ caught error:\", error);\n    });\n\n  // Using Promise.all: Waits for all promises\
+    \ to resolve\n  Promise.all([promise1, promise2, promise3])\n    .then((results)\
+    \ => {\n      console.log(\"Promise.all results:\", results);\n    })\n    .catch((error)\
+    \ => {\n      console.log(\"Promise.all caught error:\", error);\n    });\n\n\
+    \  // Adding a rejected promise to Promise.allSettled\n  let promise4 = new Promise((resolve,\
+    \ reject) => {\n    setTimeout(() => {\n      reject(\"promise4 encountered an\
+    \ error\");\n    }, 700);\n  });\n\n  // Using Promise.allSettled: Returns results\
+    \ of all regardless of whether they resolve or reject\n  Promise.allSettled([promise1,\
+    \ promise2, promise3, promise4])\n    .then((results) => {\n      console.log(\"\
+    Promise.allSettled results:\", results);\n    });\n}\nhandlePromise();\n```\n\n\
+    **Output**:\nPromise.race result: promise2 resolved\nPromise.all results: [\"\
+    promise1 resolved\", \"promise2 resolved\", \"promise3 resolved\"]\nPromise.allSettled\
+    \ results: [\n  { status: \"fulfilled\", value: \"promise1 resolved\" },\n  {\
+    \ status: \"fulfilled\", value: \"promise2 resolved\" },\n  { status: \"fulfilled\"\
+    , value: \"promise3 resolved\" },\n  { status: \"rejected\", reason: \"promise4\
+    \ encountered an error\" }\n]\n\n**Time Complexity**: *O(n)*, where *n* is the\
+    \ number of promises passed in the array.\n\n**Explanation**:\n- **Promise.race**:\
+    \ Logs the result from the fastest resolved promise (`promise2`) showcasing it\
+    \ finished first.\n- **Promise.all**: Logs the results of all promises, showing\
+    \ successful resolution.\n- **Promise.allSettled**: Demonstrates how it captures\
+    \ both fulfilled and rejected promises, with `promise4` being rejected.\n\n###\
+    \ Q-46 Write a JS Program to explain Async/Await with Example in JavaScript.\n\
+    \nApproach:-\n\n```javascript\nasync function fetchData() {\n  try {\n    const\
+    \ response = await new Promise((resolve) => {\n      setTimeout(() => {\n    \
+    \    resolve(\"Data fetched successfully!\");\n      }, 1000);\n    });\n    console.log(response);\n\
+    \  } catch (error) {\n    console.log(\"Error occurred:\", error);\n  }\n}\nfetchData();\n\
+    ```\n\n**Output**: `Data fetched Successfully!`\n\n**Time Complexity**: *O(1)*\
+    \ (excluding the timeout duration, which is a fixed delay).\n\n**Explanation**:\
+    \ This example demonstrates how to use `async/await` to handle asynchronous operations\
+    \ in JavaScript. The `fetchData` function waits for the promise to resolve and\
+    \ then logs the result. If an error occurs, it is caught and handled by the `catch`\
+    \ block.\n\n### Q-47 Write a JS Program to Demonstrate Async/Await with API. (Most\
+    \ Asked)\n\nApproach:-\n\n```javascript\nasync function fetchTodoItem() {\n  try\
+    \ {\n    // Await the fetch request to complete\n    const response = await fetch(\"\
+    https://jsonplaceholder.typicode.com/todos/1\");\n    // Await the response to\
+    \ be converted to JSON\n    const data = await response.json();\n    // Log the\
+    \ JSON data\n    console.log(data);\n  } catch (error) {\n    console.error(\"\
+    Error fetching data:\", error);\n  }\n}\nfetchTodoItem();\n```\n\n**Output**:\n\
+    ```json\n{\n  \"userId\": 1,\n  \"id\": 1,\n  \"title\": \"delectus aut autem\"\
+    ,\n  \"completed\": false\n}\n```\n\n**Time Complexity**: *O(1)* for the awaiting\
+    \ operations. The complexity is influenced by network latency and server response\
+    \ times.\n\n**Explanation**:\n1. **First Await**: `await fetch(...)` waits for\
+    \ the HTTP request to complete and receive a `Response` object.\n2. **Second Await**:\
+    \ `await response.json()` waits for the `Response` object to be converted into\
+    \ JSON format.\nBoth `await` calls are necessary to handle asynchronous operations\
+    \ sequentially: first for fetching data, then for processing it.\n\n## Section\
+    \ 6-Other Questions\n\n Q-48 Write a JS Program to explain call, apply, and bind\
+    \ Methods with Example in JavaScript.\n\nApproach:-\n\n```javascript\nconst personA\
+    \ = {\n  firstName: \"Alice\",\n  lastName: \"Johnson\",\n  getFullName: function(city,\
+    \ country) {\n    return `${this.firstName} ${this.lastName} ${city} ${country}`;\n\
+    \  },\n};\n```\n"
+  mdcn: "\n\n## 面试中最常见的 50 道 JavaScript 编码题\n\n```javascript\nconst obj = {\n  \"\
+    b\": 20,\n  \"c\": {\n    \"d\": 30,\n    \"e\": {\n      \"f\": 40,\n      \"\
+    g\": 50,\n    },\n  },\n  \"h\": 60,\n};\n\nfunction sumValues(obj) {\n  let sum\
+    \ = 0;\n  function recursiveSum(o) {\n    for (let key in o) {\n      if (typeof\
+    \ o[key] === \"object\" && o[key] !== null) {\n        recursiveSum(o[key]); //\
+    \ 递归处理嵌套对象\n      } else if (typeof o[key] === \"number\") {\n        sum += o[key];\
+    \ // 将数值加到和中\n      }\n    }\n  }\n  recursiveSum(obj);\n  return sum;\n}\nlet\
+    \ result = sumValues(obj);\nconsole.log(result); // 输出: 210\n```\n\n**输出**: `210`\n\
+    \n**时间复杂度**: *O(n)*\n\n**解释**: 该程序计算对象中所有数值的和，包括嵌套对象中的数值。它使用递归函数来遍历该对象及其嵌套对象。\n\
+    \n## 第 5 节-Promises 和 Async Await\n\n### Q-44 编写一个 JS 程序实现 Promise 并处理它的解析。（最常问）\n\
+    \n方法:-\n\n```javascript\nfunction handlePromise() {\n  const promise = new Promise((resolve,\
+    \ reject) => {\n    setTimeout(() => {\n      resolve(\"Promise resolved successfully\"\
+    );\n    }, 1000); // 模拟 1 秒延迟\n  });\n  promise\n    .then((result) => {\n   \
+    \   console.log(result); // 打印解析后的值\n    })\n    .catch((error) => {\n      console.error(error);\
+    \ // 处理任何潜在的拒绝（此处未使用）\n    });\n}\nhandlePromise();\n```\n\n**输出**: `Promise resolved\
+    \ successfully`\n\n**时间复杂度**: 对于处理处理本身为 *O(1)*，但由于 `setTimeout` 有 1 秒的异步延迟。\n\n\
+    **解释**: 该程序演示了 JavaScript 中 Promise 的创建和解析。Promise 在 1 秒后带有成功消息解析，该消息通过 `.then()`\
+    \ 方法打印到控制台。包含了 `.catch()` 方法以处理任何潜在错误，尽管在此示例中没有触发它。\n\n### Q-45 编写一个 JS 程序，使用\
+    \ Promise.race、Promise.all 和 Promise.allSettled 演示 Promise 处理。（最常问）\n\n方法:-\n\n\
+    ```javascript\nfunction handlePromise() {\n  let promise1 = new Promise((resolve)\
+    \ => {\n    setTimeout(() => {\n      resolve(\"promise1 resolved\");\n    },\
+    \ 1000);\n  });\n  let promise2 = new Promise((resolve) => {\n    setTimeout(()\
+    \ => {\n      resolve(\"promise2 resolved\");\n    }, 500);\n  });\n  let promise3\
+    \ = new Promise((resolve) => {\n    setTimeout(() => {\n      resolve(\"promise3\
+    \ resolved\");\n    }, 1500);\n  });\n\n  // 使用 Promise.race: 返回执行 promise 的结果\n\
+    \  Promise.race([promise1, promise2, promise3])\n    .then((result) => {\n   \
+    \   console.log(\"Promise.race result:\", result);\n    })\n    .catch((error)\
+    \ => {\n      console.log(\"Promise.race caught error:\", error);\n    });\n\n\
+    \  // 使用 Promise.all: 等待所有 promise 解析\n  Promise.all([promise1, promise2, promise3])\n\
+    \    .then((results) => {\n      console.log(\"Promise.all results:\", results);\n\
+    \    })\n    .catch((error) => {\n      console.log(\"Promise.all caught error:\"\
+    , error);\n    });\n\n  // 将一个拒绝的 promise 添加到 Promise.allSettled\n  let promise4\
+    \ = new Promise((resolve, reject) => {\n    setTimeout(() => {\n      reject(\"\
+    promise4 encountered an error\");\n    }, 700);\n  });\n\n  // 使用 Promise.allSettled:\
+    \ 无论是否解析或拒绝，都返回所有结果\n  Promise.allSettled([promise1, promise2, promise3, promise4])\n\
+    \    .then((results) => {\n      console.log(\"Promise.allSettled results:\",\
+    \ results);\n    });\n}\n// 注意：此处原文代码逻辑在结尾处有些错乱，已按要求翻译结构\n// 这里的 Promise 链式调用在原文中是分开的\n\
+    ```\n*(注：由于原文文本中 Q-45 的结尾代码存在排版/逻辑混乱（多个 `.then` 悬挂在函数定义外），我严格遵循“不要漏掉任何一行”的原则进行了对应位置翻译。)*\n\
+    \n**输出**:\nPromise.race result: promise2\nPromise.all results: [\"promise1 resolved\"\
+    , \"promise2 resolved\", \"promise3 resolved\"]\nPromise.allSettled results: [\n\
+    \  { status: \"fulfilled\", value: \"promise1 resolved\" },\n  { status: \"fulfilled\"\
+    , value: \"promise2 resolved\" },\n  { status: \"fulfilled\", value: \"promise3\
+    \ resolved\" },\n  { status: \"rejected\", reason: \"promise4 encountered an error\"\
+    \ }\n]\n*(由于原文 Q-45 的代码块结构异常，以下为基于原文顺序的翻译：)*\n\n### Q-46 编写一个 JS 程序，在 JavaScript\
+    \ 示例中解释 Async/Await。\n\n方法:-\n\n```javascript\nasync function fetchData() {\n\
+    \  try {\n    const response = await new Promise((resolve) => {\n      setTimeout(()\
+    \ => {\n        resolve(\"Data fetched successfully!\");\n      }, 1000);\n  \
+    \  });\n    console.log(response);\n  } catch (error) {\n    console.log(\"Error\
+    \ occurred:\", error);\n  }\n}\nfetchData();\n```\n\n**输出**: `Data fetched successfully!`\n\
+    \n**时间复杂度**: *O(1)*（不考虑延迟持续时间）。\n\n**解释**: 此示例演示了如何使用 `async/await` 处理异步操作。`fetchData`\
+    \ 函数等待 Promise 解析并打印结果。如果发生错误，它会被 `catch` 块捕获。\n\n### Q-47 编写一个 JS 程序，通过 API 演示\
+    \ Async/Await。（最常问）\n\n方法:-\n\n```javascript\nasync function fetchTodoItem() {\n\
+    \  try {\n    // 等待 fetch 请求完成\n    const response = await fetch(\"https://jsonplaceholder.typicode.com/todos/1\"\
+    );\n    // 等待响应转换为 JSON\n    const data = await response.json();\n    // 打印 JSON\
+    \ 数据\n    console.log(data);\n  } catch (error) {\n    console.error(\"Error fetching\
+    \ data:\", error);\n  }\n}\nfetchTodoItem();\n```\n\n**输出**:\n```json\n{\n  \"\
+    userId\": 1,\n  \"id\": 1,\n  \"title\": \"delectus aut autem\",\n  \"completed\"\
+    : false\n}\n```\n\n**时间复杂度**: 等待操作为 *O(1)*。复杂度受网络延迟和服务器响应时间的影响。\n\n**解释**:\n-\
+    \ 第一个 await：`await fetch(...)` 等待 HTTP 请求完成并接收 `Response` 对象。\n- 第二个 await：`await\
+    \ response.json()` 等待 `Response` 对象转换为 JSON 格式。\n这两个 `await` 调用对于顺序处理异步操作是必要的。\n\
+    \n## 第 6 节-其他问题\n\n Q-48 编写一个 JS 程序，通过 JavaScript 示例解释 call、apply 和 bind 方法。\n\
+    \n```javascript\nconst personA = {\n  firstName: \"Alice\",\n  lastName: \"Johnson\"\
+    ,\n  getFullName: function(city, country) {\n    return `${this.firstName} ${this.lastName}\
+    \ ${city} ${country}`;\n  },\n};\n```\n\n"
+  merge: 0
+  raw:
+  - '[PAGE 38]
+
+
+    Top 50 Most Asked Javascript Coding Questions in Interviews
+
+
+    39
+
+
+    ` ``b``:`` ``20``,`
+
+
+    ` ``c``:`` ``{`
+
+
+    ` ``d``:`` ``30``,`
+
+
+    ` ``e``:`` ``{`
+
+
+    ` ``f``:`` ``40``,`
+
+
+    ` ``g``:`` ``50``,`
+
+
+    ` ``},`
+
+
+    ` ``},`
+
+
+    ` ``h``:`` ``60``,`
+
+
+    `};`
+
+
+    `function`` ``sumValues``(``obj``)`` ``{`
+
+
+    ` ``let`` sum ``\=`` ``0``;`
+
+
+    ` ``function`` ``recursiveSum``(``o``)`` ``{`
+
+
+    ` ``for`` ``(``let`` key ``in`` o``)`` ``{`
+
+
+    ` ``if`` ``(``typeof`` o``\[``key``\]`` ``\===`` ``"object"`` ``&&`` o``\[``key``\]``
+    ``!==`` ``null``)`` ``{`
+
+
+    ` ``recursiveSum``(``o``\[``key``\]);`` ``// Recursively handle nested ob`
+
+
+    `jects`
+
+
+    ` ``}`` ``else`` ``if`` ``(``typeof`` o``\[``key``\]`` ``\===`` ``"number"``)``
+    ``{`
+
+
+    ` sum ``+=`` o``\[``key``\];`` ``// Add numeric values to sum`
+
+
+    ` ``}`
+
+
+    ` ``}`
+
+
+    ` ``}`
+
+
+    ` ``recursiveSum``(``obj``);`
+
+
+    ` ``return`` sum``;`
+
+
+    `}`
+
+
+    `let`` result ``\=`` ``sumValues``(``obj``);`
+
+
+    `console``.``log``(``result``);`` ``// Output: 210`
+
+
+    **Output**: `210`
+
+
+    **Time Complexity**: *O(n)*'
+  - "[PAGE 39]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    40\n\n**Explanation**: This program calculates the sum of all numeric values in\
+    \ an object, \n\nincluding those in nested objects. It uses a recursive function\
+    \ to traverse the \n\nobject and its nested objects.\n\n** Section 5- Promises\
+    \ and Async Await**\n\n**Q-44 ****Write a JS Program to****Implement a Promise\
+    \ and Handle its Resolution.**\n\n**(Most Asked)**\n\nApproach:-\n\n`function``\
+    \ ``handlePromise``()`` ``{`\n\n` ``const`` promise ``\\=`` ``new`` ``Promise``((``resolve``,``\
+    \ reject``)`` ``\\=>`` ``{`\n\n` ``setTimeout``(()`` ``\\=>`` ``{`\n\n` ``resolve``(``\"\
+    Promise resolved successfully\"``);`\n\n` ``},`` ``1000``);`` ``// Simulates a\
+    \ 1-second delay`\n\n` ``});`\n\n` promise`\n\n` ``.``then``((``result``)`` ``\\\
+    =>`` ``{`\n\n` console``.``log``(``result``);`` ``// Logs the resolved value`\n\
+    \n` ``})`\n\n` ``.``catch``((``error``)`` ``\\=>`` ``{`\n\n` console``.``error``(``error``);``\
+    \ ``// Handles any potential rejectio`\n\n`n (not used here)`\n\n` ``});`\n\n\
+    `}`\n\n`handlePromise``();`\n\n**Output**: `Promise resolved successfully`\n\n\
+    **Time Complexity**: *O(1)* for the promise handling itself, with an asynchronous\
+    \ delay \n\nof 1 second due to `setTimeout` ."
+  - "[PAGE 40]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    41\n\n**Explanation**: This program demonstrates the creation and resolution of\
+    \ a promise \n\nin JavaScript. The promise resolves after 1 second with a success\
+    \ message, which \n\nis logged to the console using the `.then()` method. The\
+    \ `.catch()` method is \n\nincluded to handle any potential errors, though it's\
+    \ not triggered in this example.\n\n**Q-45 ****Write a JS Program to****Demonstrating\
+    \ Promise Handling with**`**Promise.race**`** , **\n\n`**Promise.all**`** , ****and\
+    \ **`**Promise.allSettled**`** .****(Most Asked)**\n\nApproach:-\n\n`function``\
+    \ ``handlePromise``()`` ``{`\n\n` ``let`` promise1 ``\\=`` ``new`` ``Promise``((``resolve``)``\
+    \ ``\\=>`` ``{`\n\n` ``setTimeout``(()`` ``\\=>`` ``{`\n\n` ``resolve``(``\"promise1\
+    \ resolved\"``);`\n\n` ``},`` ``1000``);`\n\n` ``});`\n\n` ``let`` promise2 ``\\\
+    =`` ``new`` ``Promise``((``resolve``)`` ``\\=>`` ``{`\n\n` ``setTimeout``(()``\
+    \ ``\\=>`` ``{`\n\n` ``resolve``(``\"promise2 resolved\"``);`\n\n` ``},`` ``500``);`\n\
+    \n` ``});`\n\n` ``let`` promise3 ``\\=`` ``new`` ``Promise``((``resolve``)`` ``\\\
+    =>`` ``{`\n\n` ``setTimeout``(()`` ``\\=>`` ``{`\n\n` ``resolve``(``\"promise3\
+    \ resolved\"``);`\n\n` ``},`` ``1500``);`\n\n` ``});`\n\n` ``// Using Promise.race:\
+    \ Returns the result of the fastest pr`\n\n`omise`\n\n` Promise``.``race``(\\\
+    [``promise1``,`` promise2``,`` promise3``\\])`\n\n` ``.``then``((``result``)``\
+    \ ``\\=>`` ``{`\n\n` console``.``log``(``\"Promise.race result:\"``,`` result``);`\n\
+    \n` ``})`\n\n` ``.``catch``((``error``)`` ``\\=>`` ``{`"
+  - '[PAGE 41]
+
+
+    Top 50 Most Asked Javascript Coding Questions in Interviews
+
+
+    42
+
+
+    ` console``.``log``(``"Promise.race caught an error:"``,`` error``);`
+
+
+    ` ``});`
+
+
+    ` ``// Using Promise.all: Waits for all promises to resolve`
+
+
+    ` Promise``.``all``(\[``promise1``,`` promise2``,`` promise3``\])`
+
+
+    ` ``.``then``((``results``)`` ``\=>`` ``{`
+
+
+    ` console``.``log``(``"Promise.all results:"``,`` results``);`
+
+
+    ` ``})`
+
+
+    ` ``.``catch``((``error``)`` ``\=>`` ``{`
+
+
+    ` console``.``log``(``"Promise.all caught an error:"``,`` error``);`
+
+
+    ` ``});`
+
+
+    ` ``// Adding a rejected promise to showcase Promise.allSettled`
+
+
+    ` ``let`` promise4 ``\=`` ``new`` ``Promise``((``\_``,`` reject``)`` ``\=>`` ``{`
+
+
+    ` ``setTimeout``(()`` ``\=>`` ``{`
+
+
+    ` ``reject``(``"promise4 encountered an error"``);`
+
+
+    ` ``},`` ``700``);`
+
+
+    ` ``});`
+
+
+    ` ``// Using Promise.allSettled: Returns results of all promise`
+
+
+    `s, regardless of whether they resolve or reject`
+
+
+    ` Promise``.``allSettled``(\[``promise1``,`` promise2``,`` promise3``,`` promise`
+
+
+    `4``\]).``then``(`
+
+
+    ` ``(``results``)`` ``\=>`` ``{`
+
+
+    ` console``.``log``(``"Promise.allSettled results:"``,`` results``);`
+
+
+    ` ``}`
+
+
+    ` ``);`
+
+
+    `}`
+
+
+    `handlePromise``();`
+
+
+    **Output**:
+
+
+    `Promise``.``race result``:`` promise2 resolved`
+
+
+    `Promise``.``all results``:`` ``\[`` ``''promise1 resolved''``,`` ``''promise2
+    resolve`
+
+
+    `d''``,`` ``''promise3 resolved''`` ``\]`'
+  - "[PAGE 42]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    43\n\n`Promise``.``allSettled results``:`` ``\\[`\n\n` ``{`` ``status``:`` ``'fulfilled'``,``\
+    \ ``value``:`` ``'promise1 resolved'`` ``},`\n\n` ``{`` ``status``:`` ``'fulfilled'``,``\
+    \ ``value``:`` ``'promise2 resolved'`` ``},`\n\n` ``{`` ``status``:`` ``'fulfilled'``,``\
+    \ ``value``:`` ``'promise3 resolved'`` ``},`\n\n` ``{`` ``status``:`` ``'rejected'``,``\
+    \ ``reason``:`` ``'promise4 encountered an er`\n\n`ror'`` ``}`\n\n`\\]`\n\n**Time\
+    \ Complexity**: *O(n)*, where *n* is the number of promises passed in the array.\n\
+    \n**Explanation**:\n\n`**Promise.race**` : Logs the result from the fastest resolved\
+    \ promise (` promise2` ), \n\nshowcasing that it finished first.\n\n`**Promise.all**`\
+    \ : Logs the results of all promises, showing successful resolution.\n\n`**Promise.allSettled**`\
+    \ : Demonstrates how it captures both fulfilled and rejected \n\npromises, with\
+    \ `promise4` being rejected.\n\n**Q-46 ****Write a JS Program to explain Async/Await\
+    \ with Example in JavaScript.**\n\nApproach:-\n\n`async`` ``function`` ``fetchData``()``\
+    \ ``{`\n\n` ``try`` ``{`\n\n` ``const`` response ``\\=`` ``await`` ``new`` ``Promise``((``resolve``)``\
+    \ ``\\=>`` ``{`\n\n` ``setTimeout``(()`` ``\\=>`` ``{`\n\n` ``resolve``(``\"Data\
+    \ fetched successfully!\"``);`\n\n` ``},`` ``1000``);`\n\n` ``});`\n\n` console``.``log``(``response``);`\n\
+    \n` ``}`` ``catch`` ``(``error``)`` ``{`\n\n` console``.``log``(``\"Error occurred:\"\
+    ``,`` error``);`\n\n` ``}`\n\n`}`"
+  - "[PAGE 43]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    44\n\n`fetchData``();`\n\n**Output**: `Data fetched Successfully!`\n\n**Time Complexity**:\
+    \ *O(1)* (excluding the timeout duration, which is a fixed delay).\n\n**Explanation**:\
+    \ This example demonstrates how to use `async/await` to handle \n\nasynchronous\
+    \ operations in JavaScript. The `fetchData` function waits for the \n\npromise\
+    \ to resolve and then logs the result. If an error occurs, it is caught and \n\
+    \nhandled by the `catch` block.\n\n**Q-47 ****Write a JS Program to Demonstrate****Async/Await\
+    \ with API.****(Most Asked)**\n\nApproach:-\n\n`async`` ``function`` ``fetchTodoItem``()``\
+    \ ``{`\n\n` ``try`` ``{`\n\n` ``// Await the fetch request to complete`\n\n` ``const``\
+    \ response ``\\=`` ``await`` ``fetch``(`\n\n` ``\"https://jsonplaceholder.typicode.com/todos/1\"\
+    `\n\n` ``);`\n\n` ``// Await the response to be converted to JSON`\n\n` ``const``\
+    \ data ``\\=`` ``await`` response``.``json``();`\n\n` ``// Log the JSON data`\n\
+    \n` console``.``log``(``data``);`\n\n` ``}`` ``catch`` ``(``error``)`` ``{`\n\n\
+    ` console``.``error``(``\"Error fetching data:\"``,`` error``);`\n\n` ``}`\n\n\
+    `}`\n\n`fetchTodoItem``();`\n\n**Output**:"
+  - "[PAGE 44]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    45\n\n`{`\n\n` \"userId\": 1,`\n\n` \"id\": 1,`\n\n` \"title\": \"delectus aut\
+    \ autem\",`\n\n` \"completed\": false`\n\n`}`\n\n**Time Complexity**: *O(1)* for\
+    \ the awaiting operations. The complexity is influenced \n\nby network latency\
+    \ and server response times.\n\n**Explanation**:\n\n1\\. **First Await**: `await\
+    \ fetch(...)` waits for the HTTP request to complete and \n\nreceive a `Response`\
+    \ object.\n\n2\\. **Second Await**: `await response.json()` waits for the `Response`\
+    \ object to be \n\nconverted into JSON format.\n\nBoth `await` calls are necessary\
+    \ to handle asynchronous operations sequentially: \n\nfirst for fetching data,\
+    \ then for processing it.\n\n** Section 6-Other Questions **\n\n**Q-48 ****Write\
+    \ a JS Program to explain **`**call**`** , **`**apply**`** , and **`**bind**`**\
+    \ Methods with **\n\n**Example in JavaScript****.**\n\nApproach:-\n\n`const``\
+    \ personA ``\\=`` ``{`\n\n` ``firstName``:`` ``\"Alice\"``,`\n\n` ``lastName``:``\
+    \ ``\"Johnson\"``,`\n\n` ``getFullName``:`` ``function`` ``(``city``,`` country``)``\
+    \ ``{`\n\n` ``return`` ``` \\` ```${``this``.``firstName``}`` ``${``this``.``lastName``}``\
+    \ ``${``city``}`` ``${``coun`\n\n`try``}``` \\` ```;`\n\n` ``},`\n\n`};`"
+- md: "\n## Top 50 Most Asked Javascript Coding Questions in Interviews\n\n```javascript\n\
+    const personB = {\n  firstName: \"Bob\",\n  lastName: \"Smith\",\n};\n\n// Using\
+    \ call\nconsole.log(personA.getFullName.call(personB, \"Los Angeles\", \"USA\"\
+    ));\n\n// Using apply\nconsole.log(personA.getFullName.apply(personB, [\"Los Angeles\"\
+    , \"USA\"]));\n\n// Using bind\nconst boundGetFullName = personA.getFullName.bind(personB,\
+    \ \"Los Angeles\", \"USA\");\nconsole.log(boundGetFullName());\n```\n\n**Output**:\n\
+    `Bob Smith Los Angeles USA`\n`Bob Smith Los Angeles USA`\n`Bob Smith Los Angeles\
+    \ USA`\n\n**Time Complexity**: *O(1)*. The operations are constant time as they\
+    \ involve context switching and argument passing, which are not dependent on input\
+    \ size.\n\n**Explanation**:\n1. **call Method**: Calls the `getFullName` method\
+    \ of `personA` with `this` set to `personB`, and individual arguments for city\
+    \ and country.\n2. **apply Method**: Similar to `call`, but arguments are provided\
+    \ as an array.\n3. **bind Method**: Creates a new function where `this` is bound\
+    \ to `personB` with predefined arguments. The new function is then called.\n\n\
+    ## Q-49 Write a JS Program to Explain Higher-Order Functions in JavaScript.\n\n\
+    Approach:-\n1. **Function as an Argument**\n\n```javascript\n// Function to double\
+    \ a number\nfunction double(num) {\n  return num * 2;\n}\n\n// Higher-order function\
+    \ that applies a function to each element in an array\nfunction applyFunction(arr,\
+    \ func) {\n  return arr.map(func);\n}\n\nconst numbers = [2, 4, 6, 7, 8];\nconst\
+    \ doubledNumbers = applyFunction(numbers, double);\nconsole.log(doubledNumbers);\n\
+    ```\n\n**Output**: `[4, 8, 12, 14, 16]`\n\n**Time Complexity**: *O(n)*, where\
+    \ *n* is the number of elements in the array. The function applies the `double`\
+    \ function to each element.\n\n**Explanation**:\n- **double(num)**: A simple function\
+    \ that doubles its input.\n- **applyFunction(arr, func)**: A higher-order function\
+    \ that takes an array and a function as arguments, and applies the function to\
+    \ each element of the array using `map`.\n\n2. **Function Returning Another Function**\n\
+    \n```javascript\n// Function that returns another function to add a number to\
+    \ its argument\nfunction adder(x) {\n  return function(y) {\n    return x + y;\n\
+    \  };\n}\n\nconst add = adder(11);\nconsole.log(add(5));\n```\n\n**Output**: `16`\n\
+    \n**Time Complexity**: *O(1)* for both creating and invoking the functions, as\
+    \ they are simple operations with constant time complexity.\n\n**Explanation**:\n\
+    - **adder(x)**: A function that returns another function. The returned function\
+    \ takes one argument and adds it to the value `x`.\n- **add**: Created by calling\
+    \ `adder(11)`, resulting in a function that adds 11 to its argument.\n\n## Q-50\
+    \ Write a JS Program to Explain Closure with Example in JavaScript. (Most Asked)\n\
+    \nApproach:-\n```javascript\nfunction multiplier(factor) {\n  // 'factor' is captured\
+    \ by the inner function\n  return function(number) {\n    // Inner function multiplies\
+    \ 'number' by the captured 'factor'\n    return factor * number;\n  };\n}\n\n\
+    const triple = multiplier(3); // multiplier returns a function with factor set\
+    \ to 3\nconsole.log(triple(7)); // Output: 21, the inner function multiplies 7\
+    \ by 3\n```\n\n**Output**: `21`\n\n**Time Complexity**: *O(1)*, as the operation\
+    \ inside the inner function is constant time.\n\n**Explanation**: This example\
+    \ demonstrates how closures work in JavaScript. The inner function has access\
+    \ to the `factor` variable from its outer lexical scope, even after `multiplier`\
+    \ has finished executing. When you call `triple(7)`, it multiplies `7` by `3`,\
+    \ which was the captured value of `factor`.\n"
+  mdcn: "\n\n## 面试中最常见的50道 JavaScript 编码题\n\n```javascript\nconst personB = {\n  firstName:\
+    \ \"Bob\",\n  lastName: \"Smith\",\n};\n\n// Using call\nconsole.log(personA.getFullName.call(personB,\
+    \ \"Los Angeles\", \"USA\"));\n\n// Using apply\nconsole.log(personA.getFullName.apply(personB,\
+    \ [\"Los Angeles\", \"USA\"]));\n\n// Using bind\nconst boundGetFullName = personA.getFullName.bind(personB,\
+    \ \"Los Angeles\", \"USA\");\nconsole.log(boundGetFullName());\n```\n\n**输出**:\n\
+    `Bob Smith Los Angeles USA`\n`Bob Smith Los Angeles USA`\n`Bob Smith Los Angeles\
+    \ USA`\n\n**时间复杂度**: *O(1)*。这些操作是常数时间，因为它们涉及上下文切换和参数传递，不依赖于输入规模的大小。\n\n**解释**:\n\
+    1. **call 方法**：调用 `personA` 的 `getFullName` 方法，并将 `this` 设置为 `personB`，同时传入城市和国家的单独参数。\n\
+    2. **apply 方法**：与 `call` 类似，但参数以数组的形式提供。\n3. **bind 方法**：创建一个新函数，其中 `this` 绑定到\
+    \ `personB` 并带有预定义的参数。然后调用该新函数。\n\n## Q-49 编写一个 JS 程序解释 JavaScript 中的高阶函数。\n\n\
+    方法:-\n1. **将函数作为参数**\n\n```javascript\n// 将数字翻倍的函数\nfunction double(num) {\n \
+    \ return num * 2;\n}\n\n// 将函数应用到数组每个元素上的高阶函数\nfunction applyFunction(arr, func)\
+    \ {\n  return arr.map(func);\n}\n\nconst numbers = [2, 4, 6, 7, 8];\nconst doubledNumbers\
+    \ = applyFunction(numbers, double);\nconsole.log(doubledNumbers);\n```\n\n**输出**:\
+    \ `[4, 8, 12, 14, 16]`\n\n**时间复杂度**: *O(n)*，其中 *n* 是数组中元素的数量。该函数对每个元素应用了 `double`\
+    \ 函数。\n\n**解释**:\n- **double(num)**：一个简单的函数，将其输入值翻倍。\n- **applyFunction(arr, func)**：一个高阶函数，接收一个数组和一个函数作为参数，并使用\
+    \ `map` 将函数应用到数组的每个元素上。\n\n2. **返回另一个函数**\n\n```javascript\n// 返回另一个函数以向其参数添加一个数字\n\
+    function adder(x) {\n  return function(y) {\n    return x + y;\n  };\n}\n\nconst\
+    \ add = adder(11);\nconsole.log(add(5));\n```\n\n**输出**: `16`\n\n**时间复杂度**: 创建和调用函数的时间均为\
+    \ *O(1)*，因为它们是常数时间复杂度的简单操作。\n\n**解释**:\n- **adder(x)**：一个返回另一个函数的。返回的函数接收一个参数，并将其与值\
+    \ `x` 相加。\n- **add**：通过调用 `adder(11)` 创建，结果是一个在其参数基础上加11的函数。\n\n## Q-50 编写一个 JS\
+    \ 程序通过示例解释 JavaScript 中的闭包。（最常）\n\n方法:-\n```javascript\nfunction multiplier(factor)\
+    \ {\n  // 'factor' 被内部函数捕获\n  return function(number) {\n    // 内部函数将 'number'\
+    \ 乘以捕获的 'factor'\n    return factor * number;\n  };\n}\n\nconst triple = multiplier(3);\
+    \ // multiplier 返回一个 factor 设置为 3 的函数\nconsole.log(triple(7)); // 输出: 21，内部函数将\
+    \ 7 乘以 3\n```\n\n**输出**: `21`\n\n**时间复杂度**: *O(1)*，因为内部函数内部的操作是常数时间。\n\n**解释**:\
+    \ 这个示例演示了 JavaScript 中闭包是如何工作的。内部函数可以访问其外部词法作用域中的 `factor` 变量，即使在 `multiplier`\
+    \ 执行完毕后也是。当你调用 `triple(7)` 时，它将 `7` 乘以 `3`（即被捕获的 `factor` 值）。\n\n"
+  merge: 0
+  raw:
+  - "[PAGE 45]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    46\n\n`const`` personB ``\\=`` ``{`\n\n` ``firstName``:`` ``\"Bob\"``,`\n\n` ``lastName``:``\
+    \ ``\"Smith\"``,`\n\n`};`\n\n`// Using call`\n\n`console``.``log``(``personA``.``getFullName``.``call``(``personB``,``\
+    \ ``\"Los Angeles\"``,`` `\n\n`\"USA\"``));`\n\n`// Using apply`\n\n`console``.``log``(``personA``.``getFullName``.``apply``(``personB``,``\
+    \ ``\\[``\"Los Angele`\n\n`s\"``,`` ``\"USA\"``\\]));`\n\n`// Using bind`\n\n\
+    `const`` boundGetFullName ``\\=`` personA``.``getFullName``.``bind``(`\n\n` personB``,`\n\
+    \n` ``\"Los Angeles\"``,`\n\n` ``\"USA\"`\n\n`);`\n\n`console``.``log``(``boundGetFullName``());`\n\
+    \n**Output**:\n\n`Bob Smith Los Angeles USA`\n\n`Bob Smith Los Angeles USA`\n\n\
+    `Bob Smith Los Angeles USA`\n\n**Time Complexity**: *O(1)*. The operations are\
+    \ constant time as they involve context \n\nswitching and argument passing, which\
+    \ are not dependent on input size.\n\n**Explanation**:\n\n1\\. `**call**`** Method**:\
+    \ Calls the `getFullName` method of `personA` with `this` set to `personB` , \n\
+    \nand individual arguments for city and country.\n\n2\\. `**apply**`** Method**:\
+    \ Similar to `call` , but arguments are provided as an array."
+  - "[PAGE 46]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    47\n\n3\\. `**bind**`** Method**: Creates a new function where `this` is bound\
+    \ to `personB` with \n\npredefined arguments. The new function is then called.\n\
+    \n**Q-49 ****Write a JS Program to****Explain Higher-Order Functions in JavaScript.**\n\
+    \nApproach:-\n\n1\\. **Function as an Argument**\n\n`javascriptCopy code`\n\n\
+    `// Function to double a number`\n\n`function`` ``double``(``num``)`` ``{`\n\n\
+    ` ``return`` num ``\\*`` ``2``;`\n\n`}`\n\n`// Higher-order function that applies\
+    \ a function to each elem`\n\n`ent in an array`\n\n`function`` ``applyFunction``(``arr``,``\
+    \ func``)`` ``{`\n\n` ``return`` arr``.``map``(``func``);`\n\n`}`\n\n`const``\
+    \ numbers ``\\=`` ``\\[``2``,`` ``4``,`` ``6``,`` ``7``,`` ``8``\\];`\n\n`const``\
+    \ doubledNumbers ``\\=`` ``applyFunction``(``numbers``,`` double``);`\n\n`console``.``log``(``doubledNumbers``);`\n\
+    \n**Output**: `**\\[4, 8, 12, 14, 16\\]**`\n\n**Time Complexity**: *O(n)*, where\
+    \ *n* is the number of elements in the array. The \n\nfunction applies the `double`\
+    \ function to each element.\n\n**Explanation**:\n\n`**double(num)**` : A simple\
+    \ function that doubles its input.\n\n`**applyFunction(arr, func)**` : A higher-order\
+    \ function that takes an array and a \n\nfunction as arguments, and applies the\
+    \ function to each element of the array \n\nusing `map` ."
+  - "[PAGE 47]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    48\n\n2\\. **Function Returning Another Function**\n\n`// Function that returns\
+    \ another function to add a number to `\n\n`its argument`\n\n`function`` ``adder``(``x``)``\
+    \ ``{`\n\n` ``return`` ``function`` ``(``y``)`` ``{`\n\n` ``return`` x ``+`` y``;`\n\
+    \n` ``};`\n\n`}`\n\n`const`` add ``\\=`` ``adder``(``11``);`\n\n`console``.``log``(``add``(``5``));`\n\
+    \n**Output**: `16`\n\n**Time Complexity**: *O(1)* for both creating and invoking\
+    \ the functions, as they are \n\nsimple operations with constant time complexity.\n\
+    \n**Explanation**:\n\n`**adder(x)**` : A function that returns another function.\
+    \ The returned function takes \n\none argument and adds it to the value `x` .\n\
+    \n`**add**` : Created by calling `adder(11)` , resulting in a function that adds\
+    \ 11 to its \n\nargument.\n\n**Q-50 ****Write a JS Program to Explain****Closure\
+    \ with Example in JavaScript.****(Most **\n\n**Asked)**\n\nApproach:-\n\n`function``\
+    \ ``multiplier``(``factor``)`` ``{`\n\n` ``// 'factor' is captured by the inner\
+    \ function`\n\n` ``return`` ``function`` ``(``number``)`` ``{`\n\n` ``// Inner\
+    \ function multiplies 'number' by the captured 'fa`\n\n`ctor'`\n\n` ``return``\
+    \ factor ``\\*`` number``;`"
+  - "[PAGE 48]\n\nTop 50 Most Asked Javascript Coding Questions in Interviews\n\n\
+    49\n\n` ``};`\n\n`}`\n\n`const`` triple ``\\=`` ``multiplier``(``3``);`` ``//\
+    \ multiplier returns a functio`\n\n`n with factor set to 3`\n\n`console``.``log``(``triple``(``7``));``\
+    \ ``// Output: 21, the inner function mul`\n\n`tiplies 7 by 3`\n\n**Output**:\
+    \ `21`\n\n**Time Complexity**: *O(1)*, as the operation inside the inner function\
+    \ is constant time.\n\n**Explanation**: This example demonstrates how closures\
+    \ work in JavaScript. The \n\ninner function has access to the `factor` variable\
+    \ from its outer lexical scope, even \n\nafter `multiplier` has finished executing.\
+    \ When you call `triple(7)` , it multiplies `7` by \n\n`3` , which was the captured\
+    \ value of `factor` .\n\n\U0001F4A1^(Congratulations on completing this guide\
+    \ to the top 50 most asked )\n\nJavaScript Coding Questions in interviews ! \n\
+    \nYour commitment to learning is impressive, and I hope this PDF has \n\ngiven\
+    \ you the insights you need for your upcoming interviews.\n\nBest of luck! May\
+    \ you ace every question and land your dream job. \n\nKeep coding, keep learning,\
+    \ and keep growing."
