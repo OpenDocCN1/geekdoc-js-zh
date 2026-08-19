@@ -1,0 +1,3765 @@
+- md: "\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_0_0.png)\n\n**Topalian**\n\n**JavaScript**\n\
+    \n**Clock**\n\n**with**\n\n**Moving**\n\n**Seconds**\n\n**by**\n\n**Christopher\
+    \ Andrew Topalian**\n\nAll Rights Reserved\n\nCopyright 2000-2024\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_1_0.png)\n\
+    \n**Dedicated**\n**to**\n**God****the****Father**\n\n# Christopher Topalian\n\n\
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_2_0.png)\n\nCollege of Scripting Music\
+    \ & Science\nCollegeOfScripting.weebly.com\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_8_0.png)\n\
+    \n**<!-- Dedicated to God the Father -->**\n**<!-- All Rights Reserved Christopher\
+    \ Andrew **\n**Topalian Copyright 2000-2024 -->**\n**<!-- https://github.com/ChristopherTopalian\
+    \ --**\n**\\>**\n**<!-- **\n**https://github.com/ChristopherAndrewTopalia**\n\
+    **n -->**\n**<!-- **\n**Topalian\\_JavaScript\\_Clock\\_with\\_Moving\\_Se**\n\
+    **conds\\_(Online\\_Version).html -->**\n**<!-- Version 001 - (2024-11-23) -->**\n\
+    ******html****>**\n******head****>**\n******title****>**** Topalian JavaScript\
+    \ Clock with Moving**\n**Seconds ********title****>**\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_9_0.png)\n\
+    \n******style****>**\n**/* style001.css *//**\n**body**\n**{**\n    **background-color****:rgb********40********40********40****);**\n\
+    \    **font-family****:Arial****;**\n    **font-size****:30****px****;**\n   \
+    \ **font-weight****:bold****;**\n    **color****:rgb********255********255********255****);**\n\
+    **}**\n**.****mainDiv**\n**{**\n    **border****:solid1px****rgb********100********100********100****);;**\n\
+    \    **border-radius****:8****px****;**\n    **padding****:5px10px****;**\n\n\
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_10_0.png)\n    **word-wrap****:break-word****;**\n\
+    **}**\n**.****secondsRectangle**\n**{**\n    **width****:1****px****;**\n    **height****:10****px****;**\n\
+    \    **background****:rgb********200********200********200****);**\n    **border****:solid2px****rgb********255********255********255****);;**\n\
+    \    **border-radius****:0px****;**\n**}**\n**.****timeLine**\n**{**\n    **width****:5****px****;**\n\
+    \    **height****:1****px****;**\n    **background****:rgb********0********0********0****);;**\n\
+    \    **border****:solid2px****rgb********255********255********255****);;**\n\n\
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_11_0.png)\n    **border-radius****:0px****;**\n\
+    \    **color****:rgb********255********255********255****);;**\n**}**\n**/* Dedicated\
+    \ to God the Father */**\n**/* All Rights Reserved Christopher Andrew **\n**Topalian\
+    \ Copyright 2000-2024 */**\n**/* https://github.com/ChristopherTopalian *******\n\
+    **/* https://github.com/ChristopherAndrewTopalia *******\n**/* https://sites.google.com/view/CollegeOfScripting\
+    \ *******\n**</style>**\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_12_0.png)\n\
+    ******script>**\n**// shortcuts.js**\n**function ge(whichId)**\n**{**\n    **let\
+    \ result****:document.getElementById(whichId)****;**\n    **return result****;**\n\
+    **}**\n**function ce(whichType)**\n**{**\n    **let result****:document.createElement(whichType)****;**\n\
+    \    **return result****;**\n**}**\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_13_0.png)\n\
+    **function ba(whichElement)**\n**{**\n    **let result****:document.body.append(whichElement)****;**\n\
+    \    **return result****;**\n**}**\n**function cl(whichMessage)**\n**{**\n   \
+    \ **let result****:console.log(whichMessage)****;**\n    **return result****;**\n\
+    **}**\n**//--//**\n**// Dedicated to God the Father**\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_14_0.png)\n\
+    **// All Rights Reserved Christopher Andrew **\n**Topalian Copyright 2000-2024**\n\
+    **// https://github.com/ChristopherTopalian *******\n**// https://github.com/ChristopherAndrewTopalia**\n\
+    **n *******\n**// https://sites.google.com/view/CollegeOfScripting**\n**// worldVariables.js**\n\
+    **let timer001;// makeDateTimeDiv.js**\n**function makeDateTimeDiv()**\n**{**\n\
+    \    **let dateTimeDiv****:ce('div')****;**\n    **dateTimeDiv.id****:'dateTimeDiv'****;**\n\
+    \n![](img/caee5a601dc1e6c3e9deb9d745ec8934_15_0.png)\n    **dateTimeDiv.title****:'dateTimeDiv'****;**\n\
+    \    **ge('mainDiv')****append(dateTimeDiv)****;**\n**}**\n**//--//**\n**// Dedicated\
+    \ to God the Father**\n**// All Rights Reserved Christopher Andrew **\n**Topalian\
+    \ Copyright 2000-2024**\n**// https://github.com/ChristopherTopalian *******\n\
+    **// https://github.com/ChristopherAndrewTopalia**\n**n *******\n**// https://sites.google.com/view/CollegeOfScripting**\n\
+    **// makeInterface.js**\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_16_0.png)\n\
+    **function makeInterface()**\n**{**\n    **makeDiv();****;**\n    **makeDateTimeDiv();****;**\n\
+    \    **makeClock();****;**\n    **makeLine();****;**\n    **makeRectangle();****;**\n\
+    \    **makeTitleApp();****;**\n**}**\n**//--//**\n**// Dedicated to God the Father**\n\
+    \n![](img/caee5a601dc1e6c3e9deb9d745ec8934_17_0.png)\n**// All Rights Reserved\
+    \ Christopher Andrew **\n**Topalian Copyright 2000-2024**\n**// https://github.com/ChristopherTopalian\
+    \ *******\n**// https://github.com/ChristopherAndrewTopalia**\n**n *******\n**//\
+    \ https://sites.google.com/view/CollegeOfScripting**\n**// makeDiv.js**\n**function\
+    \ makeDiv()**\n**{**\n    **let mainDiv****:ce('div')****;**\n    **mainDiv.id****:'mainDiv'****;**\n\
+    \    **mainDiv.title****:'mainDiv'****;**\n    **mainDiv.className****:'mainDiv'****;**\n\
+    \n![](img/caee5a601dc1e6c3e9deb9d745ec8934_18_0.png)\n    **mainDiv.style.position****:'absolute'****;**\n\
+    \    **mainDiv.style.top****:30px****;**\n    **ba(mainDiv)****;**\n    **makeDraggable(mainDiv)****;**\n\
+    **}**\n**//--//**\n**// Dedicated to God the Father**\n**// All Rights Reserved\
+    \ Christopher Andrew **\n**Topalian Copyright 2000-2024**\n**// https://github.com/ChristopherTopalian\
+    \ *******\n**// https://github.com/ChristopherAndrewTopalia**\n**n *******\n**//\
+    \ https://sites.google.com/ing**\n**// makeTitleApp.js**\n**function makeTitleApp()**\n\
+    **{**\n    **let mainDiv****:ce('div')****;**\n    **mainDiv.style.position****:'absolute'****;**\n\
+    \    **mainDiv.style.right****:'20px'****;**\n    **mainDiv.style.top****:'2px'****;**\n\
+    \    **mainDiv.style.zIndex****:1****;**\n    **ba(mainDiv)****;**\n    **//-//**\n\
+    \    **let titleOfApp****:ce('a')****;**\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_19_0.png)\n\
+    \    **titleOfApp.id****:'titleOfApp'****;**\n    **titleOfApp.textContent****:'Topalian\
+    \ **\n**JavaScript Clock with Moving Seconds****';;**\n    **titleOfApp.href****:'https://github.com/christophertopalian/****;******\n\
+    \    **titleOfApp.target****:'\\_blank'****;**\n    **titleOfApp.style.fontSize****:'17px'****;**\n\
+    \    **titleOfApp.style.fontWeight****:'bold'****;**\n    **titleOfApp.style.textDecoration****:'none'****;**\n\
+    \    **titleOfApp.style.color****:'rgb(100, 100, 100)****;;**\n    **mainDiv.append(titleOfApp)****;**\n\
+    **}**\n"
+  mdcn: "\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_0_0.png)\n\n**Topalian**\n\n\
+    **JavaScript**\n\n**时钟**\n\n**带**\n\n**动态**\n\n**秒级**\n\n**作者**\n\n**Christopher\
+    \ Andrew Topalian**\n\n所有权利保留\n\n版权 2000-2024\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_1_0.png)\n\
+    \n**献给**\n**天父**\n**父神**\n\n# Christopher Topalian\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_2_0.png)\n\
+    \n脚本音乐与科学学院\nCollegeOfScripting.weebly.com\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_8_0.png)\n\
+    \n**<!-- 献给天父 -->**\n**<!-- 版权所有 Christopher Andrew **\n**Topalian 版权 2000-2024\
+    \ -->**\n**<!-- https://github.com/ChristopherTopalian --**\n**\\>**\n**<!-- **\n\
+    **https://github.com/ChristopherAndrewTopalia**\n**n -->**\n**<!-- **\n**Topalian\\\
+    _JavaScript\\_Clock\\_with\\_Moving\\_Se**\n**conds\\_(Online\\_Version).html\
+    \ -->**\n**<!-- 版本 001 - (2024-11-23) -->**\n******html****>**\n******head****>**\n\
+    ******title****>****带动态秒级的 Topalian JavaScript 时钟 ********title****>**\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_9_0.png)\n\
+    \n******style****>**\n**/* style001.css *//**\n**body**\n**{**\n    **background-color****:rgb********40********40********40****);**\n\
+    \    **font-family****:Arial****;**\n    **font-size****:30****px****;**\n   \
+    \ **font-weight****:bold****;**\n    **color****:rgb********255********255********255****);**\n\
+    **}**\n**.****mainDiv**\n**{**\n    **border****:solid1px****rgb********100********100********100****);;**\n\
+    \    **border-radius****:8****px****;**\n    **padding****:5px10px****;**\n\n\
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_10_0.png)\n    **word-wrap****:break-word****;**\n\
+    **}**\n**.****secondsRectangle**\n**{**\n    **width****:1****px****;**\n    **height****:10****px****;**\n\
+    \    **background****:rgb********200********200********200****);**\n    **border****:solid2px****rgb********255********255********255****);;**\n\
+    \    **border-radius****:0px****;**\n**}**\n**.****timeLine**\n**{**\n    **width****:5****px****;**\n\
+    \    **height****:1****px****;**\n    **background****:rgb********0********0********0****);;**\n\
+    \    **border****:solid2px****rgb********255********255********255****);;**\n\n\
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_11_0.png)\n    **border-radius****:0px****;**\n\
+    \    **color****:rgb********255********255********255****);;**\n**}**\n**/* 献给天父\
+    \ */**\n**/* 版权所有 Christopher Andrew **\n**Topalian 版权 2000-2024 */**\n**/* https://github.com/ChristopherTopalian\
+    \ *******\n**/* https://github.com/ChristopherAndrewTopalia *******\n**/* https://sites.google.com/view/CollegeOfScripting\
+    \ *******\n**</style>**\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_12_0.png)\n\
+    ******script>**\n**// shortcuts.js**\n**function ge(whichId)**\n**{**\n    **let\
+    \ result****:document.getElementById(whichId)****;**\n    **return result;**\n\
+    **}**\n**function ce(whichType)**\n**{**\n    **let result****:document.createElement(whichType)****;**\n\
+    \    **return result;**\n**}**\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_13_0.png)\n\
+    **function ba(whichElement)**\n**{**\n    **let result****:document.body.append(whichElement)****;**\n\
+    \    **return result;**\n**}**\n**function cl(whichMessage)**\n**{**\n    **let\
+    \ result****:console.log(whichMessage)****;**\n    **return result;**\n**}**\n\
+    **//--//**\n**// 献给天父**\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_14_0.png)\n\
+    **// 版权所有 Christopher Andrew **\n**Topalian 版权 2000-2024**\n**// https://github.com/ChristopherTopalian\
+    \ *********\n**// https://github.com/ChristopherAndrewTopalia *********\n**//\
+    \ https://sites.google.com/view/CollegeOfScripting**\n**// worldVariables.js**\n\
+    **let timer001;// makeDateTimeDiv.js**\n**function makeDateTimeDiv()**\n**{**\n\
+    \    **let dateTimeDiv****:ce('div')****;**\n    **dateTimeDiv.id****:'dateTimeDiv'****;**\n\
+    \n![](img/caee5a601dc1e6c3e9deb9d745ec8934_15_0.png)\n    **dateTimeDiv.title****:'dateTimeDiv'****;**\n\
+    \    **ge('mainDiv')****append(dateTimeDiv)****;**\n**}**\n**//--//**\n**// 献给天父**\n\
+    **// 版权所有 Christopher Andrew **\n**Topalian 版权 2000-2024**\n**// https://github.com/ChristopherTopalian\
+    \ *********\n**// https://github.com/ChristopherAndrewTopalia *********\n**//\
+    \ https://sites.google.com/view/CollegeOfScripting**\n**// makeInterface.js**\n\
+    \n![](img/caee5a601dc1e6c3e9deb9d745ec8934_16_0.png)\n**function makeInterface()**\n\
+    **{**\n    **makeDiv();****;**\n    **makeDateTimeDiv();****;**\n    **makeClock();****;**\n\
+    \    **makeLine();****;**\n    **makeRectangle();****;**\n    **makeTitleApp();****;**\n\
+    **}**\n**//--//**\n**// 献给天父**\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_17_0.png)\n\
+    **// 版权所有 Christopher Andrew **\n**Topalian 版权 2000-2024**\n**// https://github.com/ChristopherTopalian\
+    \ *********\n**// https://github.com/ChristopherAndrewTopalia *********\n**//\
+    \ https://sites.google.com/view/CollegeOfScripting**\n**// makeDiv.js**\n**function\
+    \ makeDiv()**\n**{**\n    **let mainDiv****:ce('div')****;**\n    **mainDiv.id****:'mainDiv'****;**\n\
+    \    **mainDiv.title****:'mainDiv'****;**\n    **mainDiv.className****:'mainDiv'****;**\n\
+    \n![](img/caee5a601dc1e6c3e9deb9d745ec8934_18_0.png)\n    **mainDiv.style.position****:'absolute'****;**\n\
+    \    **mainDiv.style.top****:30px****;**\n    **ba(mainDiv)****;**\n    **makeDraggable(mainDiv)****;**\n\
+    **}**\n**//--//**\n**// 献给天父**\n**// 版权所有 Christopher Andrew **\n**Topalian 版权\
+    \ 2000-2024**\n**// https://github.com/ChristopherTopalian *********\n**// https://github.com/ChristopherAndrewTopalia\
+    \ *********\n**// https://sites.google.com/ing**\n**// makeTitleApp.js**\n**function\
+    \ makeTitleApp()**\n**{**\n    **let mainDiv****:ce('div')****;**\n    **mainDiv.style.position****:'absolute'****;**\n\
+    \    **mainDiv.style.right****:'20px'****;**\n    **mainDiv.style.top****:'2px'****;**\n\
+    \    **mainDiv.style.zIndex****:1****;**\n    **ba(mainDiv)****;**\n    **//-//**\n\
+    \    **let titleOfApp****:ce('a')****;**\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_19_0.png)\n\
+    \    **titleOfApp.id****:'titleOfApp'****;**\n    **titleOfApp.textContent****:'带动态秒级的\
+    \ Topalian JavaScript 时钟****';;**\n    **titleOfApp.href****:'https://github.com/christophertopalian/****;******\n\
+    \    **titleOfApp.target****:'\\_blank'****;**\n    **titleOfApp.style.fontSize****:'17px'****;**\n\
+    \    **titleOfApp.style.fontWeight****:'bold'****;**\n    **titleOfApp.style.textDecoration****:'none'****;**\n\
+    \    **titleOfApp.style.color****:'rgb(100, 100, 100)****;;;**\n    **mainDiv.append(titleOfApp)****;**\n\
+    **}**\n\n"
+  merge: -1
+  raw:
+  - '[PAGE 0]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_0_0.png)
+
+
+    **Topalian**
+
+
+    **JavaScript**
+
+
+    **Clock**
+
+
+    **with**
+
+
+    **Moving**
+
+
+    **Seconds**
+
+
+    **by**
+
+
+    **Christopher Andrew Topalian**
+
+
+    All Rights Reserved
+
+
+    Copyright 2000-2024'
+  - '[PAGE 1]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_1_0.png)
+
+
+    **Dedicated**
+
+
+    **to**
+
+
+    **God****the****Father**'
+  - '[PAGE 2]
+
+
+    # Christopher Topalian
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_2_0.png)
+
+
+    College of Scripting Music & Science
+
+
+    CollegeOfScripting.weebly.com'
+  - '[PAGE 3]
+
+
+    '
+  - '[PAGE 4]
+
+
+    '
+  - '[PAGE 5]
+
+
+    '
+  - '[PAGE 6]
+
+
+    '
+  - '[PAGE 7]
+
+
+    '
+  - '[PAGE 8]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_8_0.png)
+
+
+    **<!-- Dedicated to God the Father -->**
+
+
+    **<!-- All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024 -->**
+
+
+    **<!-- https://github.com/ChristopherTopalian --**
+
+
+    **\>**
+
+
+    **<!-- **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n -->**
+
+
+    **<!-- **
+
+
+    **Topalian\_JavaScript\_Clock\_with\_Moving\_Se**
+
+
+    **conds\_(Online\_Version).html -->**
+
+
+    **<!-- Version 001 - (2024-11-23) -->**
+
+
+    **<****html****\>**
+
+
+    **<****head****\>**
+
+
+    **<****title****\>**** Topalian JavaScript Clock with Moving**
+
+
+    **Seconds ****</****title****\>**'
+  - '[PAGE 9]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_9_0.png)
+
+
+    **<****style****\>**
+
+
+    **/\* style001.css \*/**
+
+
+    **body**
+
+
+    **{**
+
+
+        **background-color****:****rgb****(****40****,****40****,****40****);**
+
+
+        **font-family****:****Arial****;**
+
+
+        **font-size****:****30****px****;**
+
+
+        **font-weight****:****bold****;**
+
+
+        **color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **}**
+
+
+    **.****mainDiv**
+
+
+    **{**
+
+
+        **border****:****solid****1****px****rgb****(****100****,****100****,****100****);**
+
+
+        **border-radius****:****8****px****;**
+
+
+        **padding****:****5****px****10****px****;**'
+  - '[PAGE 10]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_10_0.png)
+
+
+        **word-wrap****:****break-word****;**
+
+
+    **}**
+
+
+    **.****secondsRectangle**
+
+
+    **{**
+
+
+        **width****:****1****px****;**
+
+
+        **height****:****10****px****;**
+
+
+        **background****:****rgb****(****200****,****200****,****200****);**
+
+
+        **border****:****solid****2****px****rgb****(****255****,****255****,****255****);**
+
+
+        **border-radius****:****0****px****;**
+
+
+    **}**
+
+
+    **.****timeLine**
+
+
+    **{**
+
+
+        **width****:****59****px****;**
+
+
+        **height****:****1****px****;**
+
+
+        **background****:****rgb****(****0****,****0****,****0****);**
+
+
+        **border****:****solid****2****px****rgb****(****255****,****255****,****255****);**'
+  - '[PAGE 11]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_11_0.png)
+
+
+        **border-radius****:****0****px****;**
+
+
+        **color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **}**
+
+
+    **/\*----\*/**
+
+
+    **/\* Dedicated to God the Father \*/**
+
+
+    **/\* All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024 \*/**
+
+
+    **/\* https://github.com/ChristopherTopalian \*/**
+
+
+    **/\* **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n \*/**
+
+
+    **/\* **
+
+
+    **https://sites.google.com/view/CollegeOfScript**
+
+
+    **ing \*/**
+
+
+    **</****style****\>**'
+  - '[PAGE 12]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_12_0.png)
+
+
+    **<****script****\>**
+
+
+    **// shortcuts.js**
+
+
+    **function****ge****(****whichId****)**
+
+
+    **{**
+
+
+        **let****result****\=**
+
+
+    **document****.****getElementById****(****whichId****)****;**
+
+
+        **return****result****;**
+
+
+    **}**
+
+
+    **function****ce****(****whichType****)**
+
+
+    **{**
+
+
+        **let****result****\=**
+
+
+    **document****.****createElement****(****whichType****)****;**
+
+
+        **return****result****;**
+
+
+    **}**'
+  - '[PAGE 13]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_13_0.png)
+
+
+    **function****ba****(****whichElement****)**
+
+
+    **{**
+
+
+        **let****result****\=**
+
+
+    **document****.****body****.****append****(****whichElement****)****;**
+
+
+        **return****result****;**
+
+
+    **}**
+
+
+    **function****cl****(****whichMessage****)**
+
+
+    **{**
+
+
+        **let****result****\=****console****.****log****(****whichMessage****)****;**
+
+
+        **return****result****;**
+
+
+    **}**
+
+
+    **//----//**
+
+
+    **// Dedicated to God the Father**'
+  - '[PAGE 14]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_14_0.png)
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// **
+
+
+    **https://sites.google.com/view/CollegeOfScript**
+
+
+    **ing**
+
+
+    **// worldVariables.js**
+
+
+    **let****timer001****;****// makeDateTimeDiv.js**
+
+
+    **function****makeDateTimeDiv****()**
+
+
+    **{**
+
+
+        **let****dateTimeDiv****\=****ce****(****''****div****''****)****;**
+
+
+        **dateTimeDiv****.****id****\=****''****dateTimeDiv****'';**'
+  - '[PAGE 15]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_15_0.png)
+
+
+        **dateTimeDiv****.****title****\=****''****dateTimeDiv****'';**
+
+
+        **ge****(****''****mainDiv****''****)****.****append****(****dateTimeDiv****)****;**
+
+
+    **}**
+
+
+    **//----//**
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// **
+
+
+    **https://sites.google.com/view/CollegeOfScript**
+
+
+    **ing**
+
+
+    **// makeInterface.js**'
+  - '[PAGE 16]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_16_0.png)
+
+
+    **function****makeInterface****()**
+
+
+    **{**
+
+
+        **makeMainDiv****()****;**
+
+
+        **makeDateTimeDiv****()****;**
+
+
+        **makeClockContainer****()****;**
+
+
+        **makeTimeLine****()****;**
+
+
+        **makeSecondsRectangle****()****;**
+
+
+        **makeTitleOfApp****()****;**
+
+
+    **}**
+
+
+    **//----//**
+
+
+    **// Dedicated to God the Father**'
+  - '[PAGE 17]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_17_0.png)
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// **
+
+
+    **https://sites.google.com/view/CollegeOfScript**
+
+
+    **ing**
+
+
+    **// makeMainDiv.js**
+
+
+    **function****makeMainDiv****()**
+
+
+    **{**
+
+
+        **let****mainDiv****\=****ce****(****''****div****''****)****;**
+
+
+        **mainDiv****.****id****\=****''****mainDiv****'';**
+
+
+        **mainDiv****.****title****\=****''****mainDiv****'';**
+
+
+        **mainDiv****.****className****\=****''****mainDiv****'';**'
+  - '[PAGE 18]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_18_0.png)
+
+
+        **mainDiv****.****style****.****position****\=****''****absolute****'';**
+
+
+        **mainDiv****.****style****.****top****\=****30**** + ****''****px****'';**
+
+
+        **ba****(****mainDiv****)****;**
+
+
+        **makeElementDraggable****(****mainDiv****)****;**
+
+
+    **}**
+
+
+    **//----//**
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**'
+  - '[PAGE 19]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_19_0.png)
+
+
+    **// **
+
+
+    **https://sites.google.com/view/CollegeOfScript**
+
+
+    **ing**
+
+
+    **// makeTitleOfApp.js**
+
+
+    **function****makeTitleOfApp****()**
+
+
+    **{**
+
+
+        **let****mainDiv****\=****ce****(****''****div****''****)****;**
+
+
+        **mainDiv****.****style****.****position****\=****''****absolute****'';**
+
+
+        **mainDiv****.****style****.****right****\=****''****20px****'';**
+
+
+        **mainDiv****.****style****.****top****\=****''****2px****'';**
+
+
+        **mainDiv****.****style****.****zIndex****\=****1****;**
+
+
+        **ba****(****mainDiv****)****;**
+
+
+        **//-//**
+
+
+        **let****titleOfApp****\=****ce****(****''****a****''****)****;**'
+  - '[PAGE 20]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_20_0.png)
+
+
+        **titleOfApp****.****id****\=****''****titleOfApp****'';**
+
+
+        **titleOfApp****.****textContent****\=****''****Topalian **
+
+
+    **JavaScript Clock with Moving Seconds****'';**
+
+
+        **titleOfApp****.****href****\=**
+
+
+    **''****https://github.com/christophertopalian/****'';**
+
+
+        **titleOfApp****.****target****\=****''****\_blank****'';**
+
+
+        **titleOfApp****.****style****.****fontSize****\=****''****17px****'';**
+
+
+        **titleOfApp****.****style****.****fontWeight****\=****''****bold****'';**
+
+
+        **titleOfApp****.****style****.****textDecoration****\=****''****none****'';**
+
+
+        **titleOfApp****.****style****.****color****\=****''****rgb(100, 100, 100)****'';**
+
+
+        **mainDiv****.****append****(****titleOfApp****)****;**
+
+
+    **}**
+
+
+    **//--//**
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**'
+- md: "\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_21_0.png)\n\n// https://github.com/ChristopherTopalian\n\
+    \n// //\n\nhttps://github.com/ChristopherAndrewTopalian\n\nn\n\n// //\n\nhttps://sites.google.com/view/CollegeOfScripting\n\
+    \n// makeClockContainer.js\nfunction makeClockContainer()\n{\n    let clockContainer\
+    \ = document.createElement('div');\n    clockContainer.id = 'clockContainer';\n\
+    \    clockContainer.title = 'clockContainer';\n    clockContainer.style.display\
+    \ = 'flex';\n    clockContainer.style.flexDirection = 'column';\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_22_0.png)\n\
+    \    document.getElementById('mainDiv').append(clockContainer);\n}\n//----\n//\
+    \ Dedicated to God the Father\n// All Rights Reserved Christopher Andrew Topalian\
+    \ 2000-2024\n// https://github.com/ChristopherTopalian\n// //\nhttps://github.com/ChristopherAndrewTopalian\n\
+    \nn\n\n //\nhttps://sites.google.com/view/CollegeOfScripting\n\n// makeRectangle.js\n\
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_23_0.png)\nfunction makeRectangle()\n\
+    {\n    let secondsRectangle = document.createElement('div');\n    secondsRectangle.id\
+    \ = 'secondsRectangle';\n    secondsRectangle.className = 'secondsRectangle';\n\
+    \    document.getElementById('clockContainer').append(secondsRectangle);\n}\n\
+    //----\n// Dedicated to God the Father\n// All Rights Reserved Christopher Andrew\
+    \ Topalian 2000-2024\n// https://github.com/ChristopherTopalian\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_24_0.png)\n\
+    // //\nhttps://github.com/ChristopherAndrewTopalian\n\nn\n\n //\nhttps://sites.google.com/view/CollegeOfScripting\n\
+    \n// makeTimeLine.js\nfunction makeTimeLine()\n{\n    let timeLine = document.createElement('div');\n\
+    \    timeLine.id = 'timeLine';\n    timeLine.title = 'timeLine';\n    timeLine.className\
+    \ = 'timeLine';\n    document.getElementById('clockContainer').append(timeLine);\n\
+    }\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_25_0.png)\n//----\n// Dedicated to\
+    \ God the Father\n// All Rights Reserved Christopher Andrew Topalian 2000-2024\n\
+    // https://github.com/ChristopherTopalian\n// //\nhttps://github.com/ChristopherAndrewTopalian\n\
+    \nn\n\n //\nhttps://sites.google.com/view/CollegeOfScripting\n\n// getDayName.js\n\
+    function getDayName()\n{\n    let dateTime = new Date();\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_26_0.png)\n\
+    \    let day = dateTime.getDay();\n    if (day == 0)\n    {\n        return \"\
+    Sunday\";\n    }\n    if (day == 1)\n    {\n        return \"Monday\";\n    }\n\
+    \    if (day == 2)\n    {\n        return \"Tuesday\";\n    }\n    if (day ==\
+    \ 3)\n    {\n        return \"Wednesday\";\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_27_0.png)\n\
+    \    }\n    if (day == 4)\n    {\n        return \"Thursday\";\n    }\n    if\
+    \ (day == 5)\n    {\n        return \"Friday\";\n    }\n    if (day == 6)\n  \
+    \  {\n        return \"Saturday\";\n    }\n}\n//----\n// Dedicated to God the\
+    \ Father\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_28_0.png)\n// All Rights Reserved\
+    \ Christopher Andrew Topalian 2000-2024\n// https://github.com/ChristopherTopalian\n\
+    // //\nhttps://github.com/ChristopherAndrewTopalian\n\nn\n\n //\nhttps://sites.google.com/view/CollegeOfScripting\n\
+    \n// getDayOfMonth.js\nfunction getDayOfMonth()\n{\n    let dateTime = new Date();\n\
+    \    let dayOfMonth = dateTime.getDate();\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_29_0.png)\n\
+    \    return dayOfMonth;\n}\n//----\n// Dedicated to God the Father\n// All Rights\
+    \ Reserved Christopher Andrew Topalian 2000-2024\n// https://github.com/ChristopherTopalian\n\
+    // //\nhttps://github.com/ChristopherAndrewTopalian\n\nn\n\n //\nhttps://sites.google.com/view/CollegeOfScripting\n\
+    \n// getMonthName.js\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_30_0.png)\nfunction\
+    \ getMonthName()\n{\n    let dateTime = new Date();\n    let month = dateTime.getMonth();\n\
+    \    if (month == 0)\n    {\n        return \"January\";\n    }\n    if (month\
+    \ == 1)\n    {\n        return \"February\";\n    }\n    if (month == 2)\n   \
+    \ {\n        return \"March\";\n    }\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_31_0.png)\n\
+    \    if (month == 3)\n    {\n        return \"April\";\n    }\n    if (month ==\
+    \ 4)\n    {\n        return \"May\";\n    }\n    if (month == 5)\n    {\n    \
+    \    return \"June\";\n    }\n    if (month == 6)\n    {\n        return \"July\"\
+    ;\n    }\n    if (month == 7)\n    {\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_32_0.png)\n\
+    \        return \"August\";\n    }\n    if (month == 8)\n    {\n        return\
+    \ \"September\";\n    }\n    if (month == 9)\n    {\n        return \"October\"\
+    ;\n    }\n    if (month == 10)\n    {\n        return \"November\";\n    }\n \
+    \   if (month == 11)\n    {\n        return \"December\";\n    }\n}\n//----\n\
+    // Dedicated to God the Father\n// All Rights Reserved Christopher Andrew Topalian\
+    \ 2000-2024\n// https://github.com/ChristopherTopalian\n// //\nhttps://github.com/ChristopherAndrewTopalian\n\
+    \nn\n\n //\nhttps://sites.google.com/view/CollegeOfScripting\n\n// getAmPm.js\n\
+    function getAmPm()\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_33_0.png)\n{\n  \
+    \  let hours = new Date().getHours();\n    let amPm;\n    if (hours < 12)\n  \
+    \  {\n        amPm = \"AM\";\n    }\n    else\n    {\n        amPm = \"PM\";\n\
+    \    }\n    return amPm;\n}\n//----\n// Dedicated to God the Father\n// All Rights\
+    \ Reserved Christopher Andrew Topalian 2000-2024\n// https://github.com/ChristopherTopalian\n\
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_35_0.png)\n// getHours.js\nfunction getHours()\n\
+    {\n    let dateTime = new Date();\n    let hours = dateTime.getHours();\n    //\
+    \ convert from military time\n    if (hours > 12)\n    {\n        hours -= 12;\n\
+    \    }\n    else if (hours === 0)\n    {\n        hours = 12;\n    }\n    return\
+    \ hours;\n}\n"
+  mdcn: "\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_21_0.png)\n\n// https://github.com/ChristopherTopalian\n\
+    \n// //\n\nhttps://github.com/ChristopherAndrewTopalian\n\nn\n\n// //\n\nhttps://sites.google.com/view/CollegeOfScripting\n\
+    \n// makeClockContainer.js\nfunction makeClockContainer()\n{\n    let clockContainer\
+    \ = document.createElement('div');\n    clockContainer.id = 'clockContainer';\n\
+    \    clockContainer.title = 'clockContainer';\n    clockContainer.style.display\
+    \ = 'flex';\n    clockContainer.style.flexDirection = 'column';\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_22_0.png)\n\
+    \    document.getElementById('mainDiv').append(clockContainer);\n}\n//----\n//\
+    \ 献给父神\n// 版权所有 Christopher Andrew Topalian 2000-2024\n// https://github.com/ChristopherTopalian\n\
+    // //\nhttps://github.com/ChristopherAndrewTopalian\n\nn\n\n //\nhttps://sites.google.com/view/CollegeOfScripting\n\
+    \n// makeRectangle.js\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_23_0.png)\nfunction\
+    \ makeRectangle()\n{\n    let secondsRectangle = document.createElement('div');\n\
+    \    secondsRectangle.id = 'secondsRectangle';\n    secondsRectangle.className\
+    \ = 'secondsRectangle';\n    document.getElementById('clockContainer').append(secondsRectangle);\n\
+    }\n//----\n// 献给父神\n// 版权所有 Christopher Andrew Topalian 2000-2024\n// https://github.com/ChristopherTopalian\n\
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_24_0.png)\n// //\nhttps://github.com/ChristopherAndrewTopalian\n\
+    \nn\n\n //\nhttps://sites.google.com/view/CollegeOfScripting\n\n// makeTimeLine.js\n\
+    function makeTimeLine()\n{\n    let timeLine = document.createElement('div');\n\
+    \    timeLine.id = 'timeLine';\n    timeLine.title = 'timeLine';\n    timeLine.className\
+    \ = 'timeLine';\n    document.getElementById('clockContainer').append(timeLine);\n\
+    }\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_25_0.png)\n//----\n// 献给父神\n// 版权所有\
+    \ Christopher Andrew Topalian 2000-2024\n// https://github.com/ChristopherTopalian\n\
+    // //\nhttps://github.com/ChristopherAndrewTopalian\n\nn\n\n //\nhttps://sites.google.com/view/CollegeOfScripting\n\
+    \n// getDayName.js\nfunction getDayName()\n{\n    let dateTime = new Date();\n\
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_26_0.png)\n    let day = dateTime.getDay();\n\
+    \    if (day == 0)\n    {\n        return \"Sunday\";\n    }\n    if (day == 1)\n\
+    \    {\n        return \"Monday\";\n    }\n    if (day == 2)\n    {\n        return\
+    \ \"Tuesday\";\n    }\n    if (day == 3)\n    {\n        return \"Wednesday\"\
+    ;\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_27_0.png)\n    }\n    if (day == 4)\n\
+    \    {\n        return \"Thursday\";\n    }\n    if (day == 5)\n    {\n      \
+    \  return \"Friday\";\n    }\n    if (day == 6)\n    {\n        return \"Saturday\"\
+    ;\n    }\n}\n//----\n// 献给父神\n// 版权所有 Christopher Andrew Topalian 2000-2024\n\
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_28_0.png)\n// 版权所有 Christopher Andrew\
+    \ Topalian 2000-2024\n// https://github.com/ChristopherTopalian\n\nn\n\n //\n\
+    https://sites.google.com/view/CollegeOfScripting\n\n// getDayOfMonth.js\nfunction\
+    \ getDayOfMonth()\n{\n    let dateTime = new Date();\n    let dayOfMonth = dateTime.getDate();\n\
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_29_0.png)\n    return dayOfMonth;\n}\n\
+    //----\n// 献给父神\n// 版权所有 Christopher Andrew Topalian 2000-2024\n// https://github.com/ChristopherTopalian\n\
+    // //\nhttps://github.com/ChristopherAndrewTopalian\n\nn\n\n //\nhttps://sites.google.com/view/CollegeOfScripting\n\
+    \n// getMonthName.js\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_30_0.png)\nfunction\
+    \ getMonthName()\n{\n    let dateTime = new Date();\n    let month = dateTime.getMonth();\n\
+    \    if (month == 0)\n    {\n        return \"January\";\n    }\n    if (month\
+    \ == 1)\n    {\n        return \"February\";\n    }\n    if (month == 2)\n   \
+    \ {\n        return \"March\";\n    }\n    if (month == 3)\n    {\n        return\
+    \ \"April\";\n    }\n    if (month == 4)\n    {\n        return \"May\";\n   \
+    \ }\n    if (month == 5)\n    {\n        return \"June\";\n    }\n    if (month\
+    \ == 6)\n    {\n        return \"July\";\n    }\n    if (month == 7)\n    {\n\
+    \        return \"August\";\n    }\n    if (month == 8)\n    {\n        return\
+    \ \"September\";\n    }\n    if (month == 9)\n    {\n        return \"October\"\
+    ;\n    }\n    if (month == 10)\n    {\n        return \"November\";\n    }\n \
+    \   if (month == 11)\n    {\n        return \"December\";\n    }\n}\n//----\n\
+    // 献给父神\n// 版权所有 Christopher Andrew Topalian 2000-2024\n// https://github.com/ChristopherTopalian\n\
+    // //\nhttps://github.com/ChristopherAndrewTopalian\n\nn\n\n //\nhttps://sites.google.com/view/CollegeOfScripting\n\
+    \n// getAmPm.js\nfunction getAmPm()\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_33_0.png)\n\
+    {\n    let hours = new Date().getHours();\n    let amPm;\n    if (hours < 12)\n\
+    \    {\n        amPm = \"AM\";\n    }\n    else\n    {\n        amPm = \"PM\"\
+    ;\n    }\n    return amPm;\n}\n//----\n// 献给父神\n// 版权所有 Christopher Andrew Topalian\
+    \ 2000-2024\n// https://github.com/ChristopherTopalian\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_35_0.png)\n\
+    // getHours.js\nfunction getHours()\n{\n    let dateTime = new Date();\n    let\
+    \ hours = dateTime.getHours();\n    // 将军用时间转换\n    if (hours > 12)\n    {\n \
+    \       hours -= 12;\n    }\n    else if (hours === 0)\n    {\n        hours =\
+    \ 12;\n    }\n    return hours;\n}\n\n"
+  merge: 0
+  raw:
+  - '[PAGE 21]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_21_0.png)
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// **
+
+
+    **https://sites.google.com/view/CollegeOfScript**
+
+
+    **ing**
+
+
+    **// makeClockContainer.js**
+
+
+    **function****makeClockContainer****()**
+
+
+    **{**
+
+
+        **let****clockContainer****\=****ce****(****''****div****''****)****;**
+
+
+        **clockContainer****.****id****\=****''****clockContainer****'';**
+
+
+        **clockContainer****.****title****\=****''****clockContainer****'';**
+
+
+        **clockContainer****.****style****.****display****\=****''****flex****'';**
+
+
+        **clockContainer****.****style****.****flexDirection****\=**
+
+
+    **''****column****'';**'
+  - '[PAGE 22]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_22_0.png)
+
+
+        **ge****(****''****mainDiv****''****)****.****append****(****clockContainer****)****;**
+
+
+    **}**
+
+
+    **//----//**
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// **
+
+
+    **https://sites.google.com/view/CollegeOfScript**
+
+
+    **ing**
+
+
+    **// makeSecondsRectangle.js**'
+  - "[PAGE 23]\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_23_0.png)\n\n**function****makeSecondsRectangle****()**\n\
+    \n**{**\n\n    **let****secondsRectangle****\\=****ce****(****'****div****'****)****;**\n\
+    \n    **secondsRectangle****.****id****\\=**\n\n**'****secondsRectangle****';**\n\
+    \n    **secondsRectangle****.****className****\\=**\n\n**'****secondsRectangle****';**\n\
+    \n    \n\n**ge****(****'****clockContainer****'****)****.****append****(****secondsRectang**\n\
+    \n**le****)****;**\n\n**}**\n\n**//----//**\n\n**// Dedicated to God the Father**\n\
+    \n**// All Rights Reserved Christopher Andrew **\n\n**Topalian Copyright 2000-2024**\n\
+    \n**// https://github.com/ChristopherTopalian**"
+  - '[PAGE 24]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_24_0.png)
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// **
+
+
+    **https://sites.google.com/view/CollegeOfScript**
+
+
+    **ing**
+
+
+    **// makeTimeLine.js**
+
+
+    **function****makeTimeLine****()**
+
+
+    **{**
+
+
+        **let****timeLine****\=****ce****(****''****div****''****)****;**
+
+
+        **timeLine****.****id****\=****''****timeLine****'';**
+
+
+        **timeLine****.****title****\=****''****timeLine****'';**
+
+
+        **timeLine****.****className****\=****''****timeLine****'';**
+
+
+        **ge****(****''****clockContainer****''****)****.****append****(****timeLine****)****;**
+
+
+    **}**'
+  - '[PAGE 25]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_25_0.png)
+
+
+    **//----//**
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// **
+
+
+    **https://sites.google.com/view/CollegeOfScript**
+
+
+    **ing**
+
+
+    **// getDayName.js**
+
+
+    **function****getDayName****()**
+
+
+    **{**
+
+
+        **let****dateTime****\=****new****Date****()****;**'
+  - '[PAGE 26]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_26_0.png)
+
+
+        **let****day****\=****dateTime****.****getDay****()****;**
+
+
+        **if**** (****day**** == ****0****)**
+
+
+        **{**
+
+
+            **return****"****Sunday****";**
+
+
+        **}**
+
+
+        **if**** (****day**** == ****1****)**
+
+
+        **{**
+
+
+            **return****"****Monday****";**
+
+
+        **}**
+
+
+        **if**** (****day**** == ****2****)**
+
+
+        **{**
+
+
+            **return****"****Tuesday****";**
+
+
+        **}**
+
+
+        **if**** (****day**** == ****3****)**
+
+
+        **{**
+
+
+            **return****"****Wednesday****";**'
+  - '[PAGE 27]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_27_0.png)
+
+
+        **}**
+
+
+        **if**** (****day**** == ****4****)**
+
+
+        **{**
+
+
+            **return****"****Thursday****";**
+
+
+        **}**
+
+
+        **if**** (****day**** == ****5****)**
+
+
+        **{**
+
+
+            **return****"****Friday****";**
+
+
+        **}**
+
+
+        **if**** (****day**** == ****6****)**
+
+
+        **{**
+
+
+            **return****"****Saturday****";**
+
+
+        **}**
+
+
+    **}**
+
+
+    **//----//**
+
+
+    **// Dedicated to God the Father**'
+  - '[PAGE 28]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_28_0.png)
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// **
+
+
+    **https://sites.google.com/view/CollegeOfScript**
+
+
+    **ing**
+
+
+    **// getDayOfMonth.js**
+
+
+    **function****getDayOfMonth****()**
+
+
+    **{**
+
+
+        **let****dateTime****\=****new****Date****()****;**
+
+
+        **let****dayOfMonth****\=****dateTime****.****getDate****()****;**'
+  - '[PAGE 29]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_29_0.png)
+
+
+        **return****dayOfMonth****;**
+
+
+    **}**
+
+
+    **//----//**
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// **
+
+
+    **https://sites.google.com/view/CollegeOfScript**
+
+
+    **ing**
+
+
+    **// getMonthName.js**'
+  - '[PAGE 30]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_30_0.png)
+
+
+    **function****getMonthName****()**
+
+
+    **{**
+
+
+        **let****dateTime****\=****new****Date****()****;**
+
+
+        **let****month****\=****dateTime****.****getMonth****()****;**
+
+
+        **if**** (****month**** == ****0****)**
+
+
+        **{**
+
+
+            **return****"****January****";**
+
+
+        **}**
+
+
+        **if**** (****month**** == ****1****)**
+
+
+        **{**
+
+
+            **return****"****February****";**
+
+
+        **}**
+
+
+        **if**** (****month**** == ****2****)**
+
+
+        **{**
+
+
+            **return****"****March****";**
+
+
+        **}**'
+  - '[PAGE 31]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_31_0.png)
+
+
+        **if**** (****month**** == ****3****)**
+
+
+        **{**
+
+
+            **return****"****April****";**
+
+
+        **}**
+
+
+        **if**** (****month**** == ****4****)**
+
+
+        **{**
+
+
+            **return****"****May****";**
+
+
+        **}**
+
+
+        **if**** (****month**** == ****5****)**
+
+
+        **{**
+
+
+            **return****"****June****";**
+
+
+        **}**
+
+
+        **if**** (****month**** == ****6****)**
+
+
+        **{**
+
+
+            **return****"****July****";**
+
+
+        **}**
+
+
+        **if**** (****month**** == ****7****)**
+
+
+        **{**'
+  - '[PAGE 32]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_32_0.png)
+
+
+            **return****"****August****";**
+
+
+        **}**
+
+
+        **if**** (****month**** == ****8****)**
+
+
+        **{**
+
+
+            **return****"****September****";**
+
+
+        **}**
+
+
+        **if**** (****month**** == ****9****)**
+
+
+        **{**
+
+
+            **return****"****October****";**
+
+
+        **}**
+
+
+        **if**** (****month**** == ****10****)**
+
+
+        **{**
+
+
+            **return****"****November****";**
+
+
+        **}**
+
+
+        **if**** (****month**** == ****11****)**
+
+
+        **{**
+
+
+            **return****"****December****";**
+
+
+        **}**'
+  - '[PAGE 33]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_33_0.png)
+
+
+    **}**
+
+
+    **//----//**
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// **
+
+
+    **https://sites.google.com/view/CollegeOfScript**
+
+
+    **ing**
+
+
+    **// getAmOrPm.js**
+
+
+    **function****getAmOrPm****()**'
+  - '[PAGE 34]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_34_0.png)
+
+
+    **{**
+
+
+        **let****hours****\=****new****Date****()****.****getHours****()****;**
+
+
+        **let****amOrPm****;**
+
+
+        **if**** (****hours**** < ****12****)**
+
+
+        **{**
+
+
+            **amOrPm****\=****"****AM****";**
+
+
+        **}**
+
+
+        **else**
+
+
+        **{**
+
+
+            **amOrPm****\=****"****PM****";**
+
+
+        **}**
+
+
+        **return****amOrPm****;**
+
+
+    **}**
+
+
+    **//----//**'
+  - '[PAGE 35]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_35_0.png)
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// **
+
+
+    **https://sites.google.com/view/CollegeOfScript**
+
+
+    **ing**
+
+
+    **// getHours.js**
+
+
+    **function****getHours****()**
+
+
+    **{**
+
+
+        **let****dateTime****\=****new****Date****()****;**'
+  - '[PAGE 36]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_36_0.png)
+
+
+        **let****hours****\=****dateTime****.****getHours****()****;**
+
+
+        **// convert from military time**
+
+
+        **if**** (****hours**** > ****12****)**
+
+
+        **{**
+
+
+            **hours****\-=****12****;**
+
+
+        **}**
+
+
+        **else****if**** (****hours**** === ****0****)**
+
+
+        **{**
+
+
+            **hours****\=****12****;**
+
+
+        **}**
+
+
+        **return****hours****;**
+
+
+    **}**
+
+
+    **//----//**
+
+
+    **// Dedicated to God the Father**'
+- md: "\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_37_0.png)\n\n// All Rights Reserved\
+    \ Christopher Andrew \n// Topalian Copyright 2000-2024\n// https://github.com/ChristopherTopalian\n\
+    // \nhttps://github.com/ChristopherAndrewTopalia\nn\n// \nhttps://sites.google.com/view/CollegeOfScript\n\
+    ing\n// getMinutes.js\nfunction getMinutes()\n{\n    let dateTime = new Date();\n\
+    \    let minutes = dateTime.getMinutes();\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_38_0.png)\n\
+    \    // add a zero if less than 10\n    if (minutes < 10) {\n        minutes =\
+    \ \"0\" + minutes;\n    }\n    return minutes;\n}\n//----//\n// Dedicated to God\
+    \ the Father\n// All Rights Reserved Christopher Andrew \n// Topalian Copyright\
+    \ 2000-2024\n// https://github.com/ChristopherTopalian\n// \nhttps://github.com/ChristopherAndrewTopalia\n\
+    n\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_39_0.png)\n// \nhttps://sites.google.com/view/CollegeOfScript\n\
+    ing\n// getSeconds.js\nfunction getSeconds()\n{\n    let dateTime = new Date();\n\
+    \    let seconds = dateTime.getSeconds();\n    return seconds;\n}\n//----//\n\
+    // Dedicated to God the Father\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_40_0.png)\n\
+    // All Rights Reserved Christopher Andrew \n// Topalian Copyright 2000-2024\n\
+    // https://github.com/ChristopherTopalian\n// \nhttps://github.com/ChristopherAndrewTopalia\n\
+    n\n// \nhttps://sites.google.com/view/CollegeOfScript\ning\n// startTimer.js\n\
+    function startTimer()\n{\n    timer001 = setInterval(function()\n    {\n     \
+    \   updateDateTime();\n    }, 1000);\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_41_0.png)\n\
+    }\n//----//\n// Dedicated to God the Father\n// All Rights Reserved Christopher\
+    \ Andrew \n// Topalian Copyright 2000-2024\n// https://github.com/ChristopherTopalian\n\
+    // \nhttps://github.com/ChristopherAndrewTopalia\nn\n// \nhttps://sites.google.com/view/CollegeOfScript\n\
+    ing\n// updateDateTime.js\nfunction updateDateTime()\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_42_0.png)\n\
+    {\n    if (ge(\"dateTimeDiv\")) {\n        ge(\"dateTimeDiv\").innerHTML =\n \
+    \           getHours() + \":\" + getMinutes() + \"\" +\n            getAmOrPm()\
+    \ + ', ' +\n            getDayName() + \", \" +\n            getMonthName() +\
+    \ \"\"\n            getDayOfMonth();\n    }\n    //-//\n    // adjust size of\
+    \ secondsRectangle\n    let theElement = ge(\"secondsRectangle\");\n    theElement.style.backgroundColor\
+    \ = \"rgb(128, 128, 128)\";\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_43_0.png)\n\
+    \    if (getSeconds() == 0) {\n        theElement.style.width = 0 + \"px\";\n\
+    \    }\n    else {\n        theElement.style.width = getSeconds() + \"px\";\n\
+    \    }\n}\n//----//\n// Dedicated to God the Father\n// All Rights Reserved Christopher\
+    \ Andrew \n// Topalian Copyright 2000-2024\n// https://github.com/ChristopherTopalian\n\
+    \n![](img/caee5a601dc1e6c3e9deb9d745ec8934_44_0.png)\n// \nhttps://sites.google.com/view/CollegeOfScript\n\
+    ing\n// makeElementDraggable.js\n// creating event handler for mouse down\nfunction\
+    \ createMouseDownHandler(element, state)\n{\n    return function(e)\n    {\n \
+    \       // ignore mouse down events on textarea or input elements\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_45_0.png)\n\
+    \        if (e.target == \"TEXTAREA\" || e.target == \"INPUT\") {\n          \
+    \  return;\n        }\n        e.preventDefault();\n        state.startX = e.clientX;\n\
+    \        state.startY = e.clientY;\n        document.onmousemove = createMouseMoveHandler(element,\
+    \ state);\n        document.onmouseup = createMouseUpHandler();\n    };\n}\n\n\
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_46_0.png)\n// creating event handler\
+    \ for mouse\nfunction createMouseMoveHandler(element, state)\n{\n    return function(e)\n\
+    \    {\n        // ignore move events on textarea or elements\n        if (e.target\
+    \ == \"TEXTAREA\" || e.target == \"INPUT\") {\n            return;\n        }\n\
+    \        e.preventDefault();\n        let deltaX = state.startX - e.clientX;\n\
+    \        let deltaY = state.startY - e.clientY;\n        state.startX = e.clientX;\n\
+    \        state.startY = e.clientY;\n        let newTop = element.offsetTop - deltaY;\n\
+    \        let newLeft = element.offsetLeft - deltaX;\n        element.style.top\
+    \ = newTop + \"px\";\n        element.style.left = newLeft + \"px\";\n    };\n\
+    }\n// creating event handler for mouse up\nfunction createMouseUpHandler()\n{\n\
+    \    return function() {\n        document.onmousemove = null;\n        document.onmouseup\
+    \ = null;\n    };\n}\n// make element draggable\nfunction makeElementDraggable(element)\n\
+    {\n    let state = {startX: 0, startY: 0};\n    element.onmousedown = createMouseDownHandler(element,\
+    \ state);\n}\n//----//\n// Dedicated to God the Father\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_49_0.png)\n\
+    // All Rights Reserved Christopher Andrew \n// Topalian Copyright 2000-2024\n\
+    // https://github.com/ChristopherTopalian\n// \nhttps://github.com/ChristopherAndrewTopalia\n\
+    n\n// \nhttps://sites.google.com/view/CollegeOfScript\ning\n// whenLoaded.js\n\
+    function whenLoaded()\n{\n    makeInterface();\n    updateDateTime();\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_50_0.png)\n\
+    \    startTimer();\n}\n//----//\n// Dedicated to God the Father\n// All Rights\
+    \ Reserved Christopher Andrew \n// Topalian Copyright 2000-2024\n// https://github.com/ChristopherTopalian\n\
+    // \nhttps://github.com/ChristopherAndrewTopalia\nn\n// \nhttps://sites.google.com/view/CollegeOfScript\n\
+    ing\n</script>\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_51_0.png)\n</head>\n\
+    <body onload='whenLoaded()'>\n\n</body></html>\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_52_0.png)\n\
+    \n# How to Combine\n.js files\ninto one\nmain.js file\nusing\nCommand\nPrompt\n\
+    Version for when we have only\nONE folder of .js files that we\nwant to combine.\n"
+  mdcn: "\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_37_0.png)\n\n// 版权所有 Christopher\
+    \ Andrew \n// Topalian 版权 2000-2024\n// https://github.com/ChristopherTopalian\n\
+    // \nhttps://github.com/ChristopherAndrewTopalia\nn\n// \nhttps://sites.google.com/view/CollegeOfScript\n\
+    ing\n// getMinutes.js\nfunction getMinutes()\n{\n    let dateTime = new Date();\n\
+    \    let minutes = dateTime.getMinutes();\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_38_0.png)\n\
+    \    // 如果小于 10 则加零\n    if (minutes < 10) {\n        minutes = \"0\" + minutes;\n\
+    \    }\n    return minutes;\n}\n//----//\n// 献给天父神\n// 版权所有 Christopher Andrew\
+    \ \n// Topalian 版权 2000-2024\n// https://github.com/ChristopherTopalian\n// \n\
+    https://github.com/ChristopherAndrewTopalia\nn\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_39_0.png)\n\
+    // \nhttps://sites.google.com/view/CollegeOfScript\ning\n// getSeconds.js\nfunction\
+    \ getSeconds()\n{\n    let dateTime = new Date();\n    let seconds = dateTime.getSeconds();\n\
+    \    return seconds;\n}\n//----//\n// 献给天父神\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_40_0.png)\n\
+    // 版权所有 Christopher Andrew \n// Topalian 版权 2000-2024\n// https://github.com/ChristopherTopalian\n\
+    // \nhttps://github.com/ChristopherAndrewTopalia\nn\n// \nhttps://sites.google.com/view/CollegeOfScript\n\
+    ing\n// startTimer.js\nfunction startTimer()\n{\n    timer001 = setInterval(function()\n\
+    \    {\n        updateDateTime();\n    }, 1000);\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_41_0.png)\n\
+    }\n//----//\n// 献给天父神\n// 版权所有 Christopher Andrew \n// Topalian 版权 2000-2024\n\
+    // https://github.com/ChristopherTopalian\n// \nhttps://github.com/ChristopherAndrewTopalia\n\
+    n\n// \nhttps://sites.google.com/view/CollegeOfScript\ning\n// updateDateTime.js\n\
+    function updateDateTime()\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_42_0.png)\n\
+    {\n    if (ge(\"dateTimeDiv\")) {\n        ge(\"dateTimeDiv\").innerHTML =\n \
+    \           getHours() + \":\" + getMinutes() + \"\" +\n            getAmOrPm()\
+    \ + ', ' +\n            getDayName() + \", \" +\n            getMonthName() +\
+    \ \"\"\n            getDayOfMonth();\n    }\n    //-//\n    // 调整 secondsRectangle\
+    \ 的大小\n    let theElement = ge(\"secondsRectangle\");\n    theElement.style.backgroundColor\
+    \ = \"rgb(128, 128, 128)\";\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_43_0.png)\n\
+    \    if (getSeconds() == 0) {\n        theElement.style.width = 0 + \"px\";\n\
+    \    }\n    else {\n        theElement.style.width = getSeconds() + \"px\";\n\
+    \    }\n}\n//----//\n// 献给天父神\n// 版权所有 Christopher Andrew \n// Topalian 版权 2000-2024\n\
+    // https://github.com/ChristopherTopalian\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_44_0.png)\n\
+    // \nhttps://sites.google.com/view/CollegeOfScript\ning\n// makeElementDraggable.js\n\
+    // 为鼠标按下创建事件处理器\nfunction createMouseDownHandler(element, state)\n{\n    return\
+    \ function(e)\n    {\n        // 忽略 textarea 或 input 元素上的按下事件\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_45_0.png)\n\
+    \        if (e.target == \"TEXTAREA\" || e.target == \"INPUT\") {\n          \
+    \  return;\n        }\n        e.preventDefault();\n        state.startX = e.clientX;\n\
+    \        state.startY = e.clientY;\n        document.onmousemove = createMouseMoveHandler(element,\
+    \ state);\n        document.onmouseup = createMouseUpHandler();\n    };\n}\n\n\
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_46_0.png)\n// 为鼠标移动创建事件处理器\nfunction\
+    \ createMouseMoveHandler(element, state)\n{\n    return function(e)\n    {\n \
+    \       // 忽略 textarea 或元素上的移动事件\n        if (e.target == \"TEXTAREA\" || e.target\
+    \ == \"INPUT\") {\n            return;\n        }\n        e.preventDefault();\n\
+    \        let deltaX = state.startX - e.clientX;\n        let deltaY = state.startY\
+    \ - e.clientY;\n        state.startX = e.clientX;\n        state.startY = e.clientY;\n\
+    \        let newTop = element.offsetTop - deltaY;\n        let newLeft = element.offsetLeft\
+    \ - deltaX;\n        element.style.top = newTop + \"px\";\n        element.style.left\
+    \ = newLeft + \"px\";\n    };\n}\n// 为鼠标释放创建事件处理器\nfunction createMouseUpHandler()\n\
+    {\n    return function() {\n        document.onmousemove = null;\n        document.onmouseup\
+    \ = null;\n    };\n}\n// 让元素可拖拽\nfunction makeElementDraggable(element)\n{\n \
+    \   let state = {startX: 0, startY: 0};\n    element.onmousedown = createMouseDownHandler(element,\
+    \ state);\n}\n//----//\n// 献给天父神\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_49_0.png)\n\
+    // 版权所有 Christopher Andrew \n// Topalian 版权 2000-2024\n// https://github.com/ChristopherTopalian\n\
+    // \nhttps://github.com/ChristopherAndrewTopalia\nn\n// \nhttps://sites.google.com/view/CollegeOfScript\n\
+    ing\n// whenLoaded.js\nfunction whenLoaded()\n{\n    makeInterface();\n    updateDateTime();\n\
+    \n![](img/caee5a601dc1e6c3e9deb9d745ec8934_50_0.png)\n    startTimer();\n}\n//----//\n\
+    // 献给天父神\n// 版权所有 Christopher Andrew \n// Topalian 版权 2000-2024\n// https://github.com/ChristopherTopalian\n\
+    // \nhttps://github.com/ChristopherAndrewTopalia\nn\n// \nhttps://sites.google.com/view/CollegeOfScript\n\
+    ing\n</script>\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_51_0.png)\n</head>\n\
+    <body onload='whenLoaded()'>\n\n</body></html>\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_52_0.png)\n\
+    \n# 如何将\n.js 文件\n合并成一个\nmain.js 文件\n使用\n命令行\n提示符\n适用于我们想要\n合并\n单个\n文件夹中的\n.js\n\
+    文件的情况。\n\n"
+  merge: 0
+  raw:
+  - '[PAGE 37]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_37_0.png)
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// **
+
+
+    **https://sites.google.com/view/CollegeOfScript**
+
+
+    **ing**
+
+
+    **// getMinutes.js**
+
+
+    **function****getMinutes****()**
+
+
+    **{**
+
+
+        **let****dateTime****\=****new****Date****()****;**
+
+
+        **let****minutes****\=****dateTime****.****getMinutes****()****;**'
+  - '[PAGE 38]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_38_0.png)
+
+
+        **// add a zero if less than 10**
+
+
+        **if**** (****minutes**** < ****10****)**
+
+
+        **{**
+
+
+            **minutes****\=****"****0****"**** + ****minutes****;**
+
+
+        **}**
+
+
+        **return****minutes****;**
+
+
+    **}**
+
+
+    **//----//**
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**'
+  - '[PAGE 39]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_39_0.png)
+
+
+    **// **
+
+
+    **https://sites.google.com/view/CollegeOfScript**
+
+
+    **ing**
+
+
+    **// getSeconds.js**
+
+
+    **function****getSeconds****()**
+
+
+    **{**
+
+
+        **let****dateTime****\=****new****Date****()****;**
+
+
+        **let****seconds****\=****dateTime****.****getSeconds****()****;**
+
+
+        **return****seconds****;**
+
+
+    **}**
+
+
+    **//----//**
+
+
+    **// Dedicated to God the Father**'
+  - '[PAGE 40]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_40_0.png)
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// **
+
+
+    **https://sites.google.com/view/CollegeOfScript**
+
+
+    **ing**
+
+
+    **// startTimer.js**
+
+
+    **function****startTimer****()**
+
+
+    **{**
+
+
+        **timer001****\=****setInterval****(****function****()**
+
+
+        **{**
+
+
+            **updateDateTime****()****;**
+
+
+        **},****1000****)****;**'
+  - '[PAGE 41]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_41_0.png)
+
+
+    **}**
+
+
+    **//----//**
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// **
+
+
+    **https://sites.google.com/view/CollegeOfScript**
+
+
+    **ing**
+
+
+    **// updateDateTime.js**
+
+
+    **function****updateDateTime****()**'
+  - '[PAGE 42]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_42_0.png)
+
+
+    **{**
+
+
+        **if**** (****ge****(****"****dateTimeDiv****"****))**
+
+
+        **{**
+
+
+            **ge****(****"****dateTimeDiv****"****)****.****innerHTML****\=**
+
+
+            **getHours****() + ****"****:****"**** + ****getMinutes****() + ****"****"****
+    +**
+
+
+    **getAmOrPm****() + ****''****, ****''**** +**
+
+
+            **getDayName****() + ****"****, ****"**** +**
+
+
+            **getMonthName****() + ****"****"**** +**
+
+
+            **getDayOfMonth****()****;**
+
+
+        **}**
+
+
+        **//-//**
+
+
+        **// adjust size of secondsRectangle**
+
+
+        **let****theElement****\=****ge****(****"****secondsRectangle****"****)****;**
+
+
+        **theElement****.****style****.****backgroundColor****\=**
+
+
+    **"****rgb(128, 128, 128)****";**'
+  - '[PAGE 43]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_43_0.png)
+
+
+        **if**** (****getSeconds****() == ****0****)**
+
+
+        **{**
+
+
+            **theElement****.****style****.****width****\=****0**** + ****"****px****";**
+
+
+        **}**
+
+
+        **else**
+
+
+        **{**
+
+
+            **theElement****.****style****.****width****\=****getSeconds****() + **
+
+
+    **"****px****";**
+
+
+        **}**
+
+
+    **}**
+
+
+    **//----//**
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**'
+  - '[PAGE 44]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_44_0.png)
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// **
+
+
+    **https://sites.google.com/view/CollegeOfScript**
+
+
+    **ing**
+
+
+    **// makeElementDraggable.js**
+
+
+    **// creating event handler for mouse down**
+
+
+    **function****createMouseDownHandler****(****element****,**
+
+
+    **state****)**
+
+
+    **{**
+
+
+        **return****function****(****e****)**
+
+
+        **{**
+
+
+            **// ignore mouse down events on textarea**
+
+
+    **or input elements**'
+  - '[PAGE 45]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_45_0.png)
+
+
+            **if**** (****e****.****target****.****tagName**** === ****''****TEXTAREA****''****
+    || **
+
+
+    **e****.****target****.****tagName**** === ****''****INPUT****''****)**
+
+
+            **{**
+
+
+                **return****;**
+
+
+            **}**
+
+
+            **e****.****preventDefault****()****;**
+
+
+            **state****.****startX****\=****e****.****clientX****;**
+
+
+            **state****.****startY****\=****e****.****clientY****;**
+
+
+            **document****.****onmousemove****\=**
+
+
+    **createMouseMoveHandler****(****element****,****state****)****;**
+
+
+            **document****.****onmouseup****\=**
+
+
+    **createMouseUpHandler****()****;**
+
+
+        **};**
+
+
+    **}**'
+  - '[PAGE 46]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_46_0.png)
+
+
+    **// creating event handler for mouse move**
+
+
+    **function****createMouseMoveHandler****(****element****,**
+
+
+    **state****)**
+
+
+    **{**
+
+
+        **return****function****(****e****)**
+
+
+        **{**
+
+
+            **// ignore mouse move events on textarea**
+
+
+    **or input elements**
+
+
+            **if**** (****e****.****target****.****tagName**** === ****''****TEXTAREA****''****
+    || **
+
+
+    **e****.****target****.****tagName**** === ****''****INPUT****''****)**
+
+
+            **{**
+
+
+                **return****;**
+
+
+            **}**
+
+
+            **e****.****preventDefault****()****;**
+
+
+            **let****deltaX****\=****state****.****startX**** - ****e****.****clientX****;**'
+  - '[PAGE 47]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_47_0.png)
+
+
+            **let****deltaY****\=****state****.****startY**** - ****e****.****clientY****;**
+
+
+            **state****.****startX****\=****e****.****clientX****;**
+
+
+            **state****.****startY****\=****e****.****clientY****;**
+
+
+            **let****newTop****\=****element****.****offsetTop**** - ****deltaY****;**
+
+
+            **let****newLeft****\=****element****.****offsetLeft**** - ****deltaX****;**
+
+
+            **element****.****style****.****top****\=****newTop**** + ****"****px****";**
+
+
+            **element****.****style****.****left****\=****newLeft**** + ****"****px****";**
+
+
+        **};**
+
+
+    **}**
+
+
+    **// creating event handler for mouse up**
+
+
+    **function****createMouseUpHandler****()**
+
+
+    **{**
+
+
+        **return****function****()**
+
+
+        **{**'
+  - '[PAGE 48]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_48_0.png)
+
+
+            **document****.****onmousemove****\=****null****;**
+
+
+            **document****.****onmouseup****\=****null****;**
+
+
+        **};**
+
+
+    **}**
+
+
+    **// make an element draggable**
+
+
+    **function****makeElementDraggable****(****element****)**
+
+
+    **{**
+
+
+        **let****state****\=****{****startX****:****0****,****startY****:****0****};**
+
+
+        **element****.****onmousedown****\=**
+
+
+    **createMouseDownHandler****(****element****,****state****)****;**
+
+
+    **}**
+
+
+    **//----//**
+
+
+    **// Dedicated to God the Father**'
+  - '[PAGE 49]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_49_0.png)
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// **
+
+
+    **https://sites.google.com/view/CollegeOfScript**
+
+
+    **ing**
+
+
+    **// whenLoaded.js**
+
+
+    **function****whenLoaded****()**
+
+
+    **{**
+
+
+        **makeInterface****()****;**
+
+
+        **updateDateTime****()****;**'
+  - '[PAGE 50]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_50_0.png)
+
+
+        **startTimer****()****;**
+
+
+    **}**
+
+
+    **//----//**
+
+
+    **// Dedicated to God the Father**
+
+
+    **// All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2024**
+
+
+    **// https://github.com/ChristopherTopalian**
+
+
+    **// **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n**
+
+
+    **// **
+
+
+    **https://sites.google.com/view/CollegeOfScript**
+
+
+    **ing**
+
+
+    **</****script****\>**'
+  - '[PAGE 51]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_51_0.png)
+
+
+    **</****head****\>**
+
+
+    **<****body****onload****\=****''****whenLoaded****()****;''>**
+
+
+    **</****body****\>**
+
+
+    **</****html****\>**'
+  - '[PAGE 52]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_52_0.png)
+
+
+    **How to Combine**
+
+
+    **.js files**
+
+
+    **into one**
+
+
+    **main.js file**
+
+
+    **using**
+
+
+    **Command**
+
+
+    **Prompt**
+
+
+    **Version for when we have only**
+
+
+    **ONE folder of .js files that we**
+
+
+    **want to combine.**'
+- md: "\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_53_0.png)\n\n## // HowToCombineJSFilesOneFolder.js\n\
+    \nFirst, we add **two new lines** at the end of **every script. This way they\
+    \ will later combine nicely with a line break in between each script.**\n\nWe\
+    \ open our **js** folder.\n\nIn our js project folder, we type **cmd** in the\
+    \ address bar of the folder and then press enter. This opens our js folder in\
+    \ the Command prompt.\n\nWe type in the words `copy *.js main.js` and then press\
+    \ enter.\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_54_0.png)\n\nThis creates\
+    \ a new file that is named main.js. This new file contains all .js files in ONE\
+    \ file. But, there is a junk character at the end of the main.js script that we\
+    \ have to delete. In VSCode the character might be called SUB\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_55_0.png)\n\
+    \nWe remove this junk SUB character and the code will now run. As we can see,\
+    \ the junk character is removed.\n\n<!-- Now, in our html code, we can type -->\n\
+    `<script src = 'main.js'></script>`\nThis makes it much easier to upload our js\
+    \ code to our website.\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_56_0.png)\n\
+    \n## How to Combine .js files into one main.js file using Command Prompt\n\nVersion\
+    \ for when we have js scripts in subfolders in our js project folder, that we\
+    \ want to combine.\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_57_0.png)\n\n##\
+    \ // HowToCombineJSFilesAllFolders.js\n\n### TUTORIAL:\nHow to Combine all .js\
+    \ files in all folders that are in our js folder.\n\n**Getting things ready:**\n\
+    We should add two new lines at the end every script. This way they will combine\
+    \ nicely with a line break in between each script.\n\nStep One: Open our js folder\n\
+    Step Two: Type in the address bar of the js folder, **cmd**, press **Enter**.\
+    \ This opens our js folder in the command prompt.\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_58_0.png)\n\
+    \nStep Three: Type the command shown below in the command prompt and then press\
+    \ Enter\n`for /r \"%CD%\" %i in (*.js) do type \"%i\" >> main.js`\n\nNow we have\
+    \ a newly created .js file named main.js that has all of our js files included\
+    \ into one file. This makes it easy to upload our application and easy to find\
+    \ out how many lines of code our project is.\n\nTo use our main.js file, we include\
+    \ it in our html file code:\n`<script src = 'js/main.js'></script>`\n\nHappy Scripting\
+    \ :-)\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_59_0.png)\n\n## How to Combine\
+    \ .js files into one main.js file using a batch file\n\nVersion for when we have\
+    \ js scripts in subfolders in our js project folder, that we want to combine.\n\
+    \n![](img/caee5a601dc1e6c3e9deb9d745ec8934_60_0.png)\n\n## // HowToCombineJSFilesUsingBatFile.js\n\
+    \nWe can combine all of the .js files that are located in our js folder into one\
+    \ main.js file, using either:\n- The Command Prompt Method\n- or\n- The .bat File\
+    \ Method\n\nThe .bat file method is very easy. We double click the bat file, which\
+    \ is located in our js folder, and it will make a main.js file, which includes\
+    \ all .js files in the js folder, including all .js files in all subdirectories\
+    \ of our js folder.\n\nThis is a very easy way to combine our .js files, because\
+    \ we can double click the .bat file anytime, and it will again generate the main.js\
+    \ file which includes all js files in js folder, including all .js files in all\
+    \ subdirectories of our js folder. This makes uploading our application much easier.\n\
+    \nHappy Scripting :-)![](img/caee5a601dc1e6c3e9deb9d745ec8934_61_0.png)\n\n##\
+    \ Topalian_Combine_JS_Files.bat\n\n:: This .bat File Combines All js files in\
+    \ all folders of our project folder, into one main.js file.\n:: To activate this\
+    \ bat file, we double click the bat file while it is located in js folder.\n```batch\n\
+    @echo off\n:: set the output name\nset \"output=main.js\"\n:: clear existing output\
+    \ file\ntype nul>\"%output%\"\n:: loop through JavaScript files in subdirectories\n\
+    for /r %%i in (*js) do (\n:: append the content of each file to output file\n\
+    type \"%%i\"%\"%output%\"\n)\necho \"JavaScript files combined into %output% successfully.\"\
+    \n```\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_62_0.png)\n\n## How to Combine\
+    \ .js files into one main.js file using Node.js\n\nThis version will successfully\
+    \ combine a single folder of js files. It also works to combine js files in all\
+    \ subdirectories.\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_63_0.png)\n\n//\
+    \ Topalian_Combine_JS_Files.js\n```javascript\nlet fs = require('fs');\nlet path\
+    \ = require('path');\n\nfunction combineJSFiles(directory, scriptFilename) {\n\
+    \    let outputFilePath = path.join(directory, 'main.js');\n    let fileContents\
+    \ = [];\n\n    function traverseFolder(folder) {\n        let files = fs.readdirSync(folder);\n\
+    \        for (let i = 0; i < files.length; i++) {\n            let file = files[i];\n\
+    \            let filePath = path.join(folder, file);\n            let stats =\
+    \ fs.statSync(filePath);\n            if (stats.isDirectory()) {\n           \
+    \     traverseFolder(filePath);\n            } else if (path.extname(filePath)\
+    \ === '.js') {\n                let content = fs.readFileSync(filePath, 'utf8');\n\
+    \                // check if file is not script itself\n                if (filePath\
+    \ !== scriptFilename) {\n                    fileContents.push(content);\n   \
+    \             }\n            }\n        }\n    }\n\n    traverseFolder(directory);\n\
+    \    fs.writeFileSync(outputFilePath, fileContents.join('\\n'), 'utf8');\n   \
+    \ console.log(`Combined ${fileContents.length} .js files into ${outputFilePath}`);\n\
+    }\n\n// get current directory of script\nlet currentDirectory = process.cwd();\n\
+    \n// get filename of script\nlet scriptFilename = __filename;\ncombineJSFiles(currentDirectory,\
+    \ scriptFilename);\n```\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_64_0.png)\n\
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_65_0.png)\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_66_0.png)\n\
+    \n![](img/caee5a601dc1e6c3e9deb9d745ec8934_67_0.png)\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_68_0.png)\n\
+    \n![](img/caee5a601dc1e6c3e9deb9d745ec8934_69_0.png)\n\n## How to Combine .js\
+    \ files into one main.js file using Python\n\nThis version will successfully combine\
+    \ a single folder of js files. It also works to combine js files in all subdirectories.\n\
+    \n## # Topalian_Combine_JS_Files.py\n\n```python\nimport os\ndef combineJSFiles(directory,\
+    \ scriptFileName):\n    outputFilePath = os.path.join(directory, 'main.js')\n\
+    \    fileContents = []\n\n    def traverseFolder(folder):\n        for root, dirs,\
+    \ files in os.walk(folder):\n            for file in files:\n                filePath\
+    \ = os.path.join(root, file)\n                if filePath != scriptFileName and\
+    \ filePath.endswith('.js'):\n                    with open(filePath, 'r', encoding='utf-8')\
+    \ as f:\n                        fileContents.append(f.read())\n\n    traverseFolder(directory)\n\
+    \    with open(outputFilePath, 'w', encoding='utf-8') as f:\n        f.write('\\\
+    n'.join(fileContents))\n```\n"
+  mdcn: "\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_53_0.png)\n\n## // 如何合并一个文件夹下的JS文件.js\n\
+    \n首先，我们在**每个脚本**的末尾添加**两个新行**。这样它们以后就可以在每个脚本之间通过换行符完美地合并。**\n\n我们打开 **js** 文件夹。\n\
+    \n在我们的 js 项目文件夹中，在文件夹的地址栏中输入 **cmd** 然后按回车。这会在命令提示符中打开我们的 js 文件夹。\n\n我们输入 `copy\
+    \ *.js main.js` 然后按回车。\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_54_0.png)\n\
+    \n这将创建一个名为 main.js 的新文件。这个新文件将所有的 .js 文件包含在**一个**文件中。但是，在 main.js 脚本的末尾有一个杂质字符，我们需要删除它。在\
+    \ VSCode 中，该字符可能被称为 SUB。\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_55_0.png)\n\
+    \n我们移除这个杂质 SUB 字符，代码就可以运行了。正如我们看到的，杂质字符已被删除。\n\n<!-- 现在，在我们的 html 代码中，我们可以输入 -->\n\
+    `<script src = 'main.js'></script>`\n这使得将 js 代码上传到网站变得简单得多。\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_56_0.png)\n\
+    \n## 如何使用命令提示符将 .js 文件合并为一个 main.js 文件\n\n此适用于适用于 js 项目文件夹的子文件夹中有想要合并的 js 脚本的情况。\n\
+    \n![](img/caee5a601dc1e6c3e9deb9d745ec8934_57_0.png)\n\n## // 如何合并所有文件夹下的JS文件.js\n\
+    \n### 教程：\n如何合并我们 js 文件夹中所有文件夹下的所有 .js 文件。\n\n**准备工作：**\n我们应该在每个脚本的末尾添加两个新行。这样它们就可以在每个脚本之间通过换行符完美地合并。\n\
+    \n第一步：打开我们的 js 文件夹\n第二步：在 js 文件夹的地址栏输入 **cmd**，按**回车**。这会在命令提示符中打开我们的 js 文件夹。\n\
+    \n![](img/caee5a601dc1e6c3e9deb9d745ec8934_58_0.png)\n\n第三步：在命令提示符中输入下面的命令然后按回车\n\
+    `for /r \"%CD%\" %i in (*.js) do type \"%i\" >> main.js`\n\n现在我们有一个名为 main.js\
+    \ 的新 .js 文件，它将所有的 js 文件包含在一个文件中。这使得上传应用程序变得容易，并且容易发现我们的项目有多少行代码。\n\n要使用我们的 main.js\
+    \ 文件，我们在 html 文件代码中包含它：\n`<script src = 'js/main.js'></script>`\n\n编写愉快 :-)\n\n\
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_59_0.png)\n\n## 如何使用批处理文件将 .js 文件合并为一个\
+    \ main.js 文件\n\n此适用于我们的 js 项目文件夹的子文件夹中有想要合并的 js 脚本的情况。\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_60_0.png)\n\
+    \n## // 如何使用Bat文件合并JS文件.js\n\n我们可以使用以下方法将位于 js 文件夹中的所有 .js 文件合并为一个 main.js 文件：\n\
+    - 命令提示符方法\n- 或者\n- .bat 文件方法\n\n.bat 文件方法非常简单。我们双击位于 js 文件夹中的 bat 文件，它就会生成一个 main.js\
+    \ 文件，该文件包含了 js 文件夹中的所有 .js 文件，包括我们 js 文件夹下所有子目录中的所有 .js 文件。\n\n这是一种合并我们 .js 文件的非常简单的方法，因为我们可以随时双击\
+    \ .bat 文件，它会再次生成 main.js 文件，包含 js 文件夹中的所有 js 文件，包括 js 文件夹下所有子目录中的所有 .js 文件。这使得上传我们的应用程序变得简单得多。\n\
+    \n编写愉快 :-)![](img/caee5a601dc1e6c3e9deb9d745ec8934_61_0.png)\n\n## Topalian_Combine_JS_Files.bat\n\
+    \n:: 此 .bat 文件将我们项目文件夹中所有文件夹中的所有 js 文件合并为一个 main.js 文件。\n:: 要激活此 bat 文件，在它位于 js\
+    \ 文件夹时双击该 bat 文件。\n```batch\n@echo off\n:: 设置输出名称\nset \"output=main.js\"\n::\
+    \ 清空现有的输出文件\ntype nul>\"%output%\"\n:: 遍历子目录中的 JavaScript 文件\nfor /r %%i in (*js)\
+    \ do (\n:: 将每个文件的内容追加到输出文件\ntype \"%%i\"%\"%output%\"\n)\necho \"JavaScript files\
+    \ combined into %output% successfully.\"\n```\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_62_0.png)\n\
+    \n## 如何使用 Node.js 将 .js 文件合并为一个 main.js 文件\n\n此版本将成功合并单个文件夹的 js 文件。它也可以合并所有子目录中的\
+    \ js 文件。\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_63_0.png)\n\n// Topalian_Combine_JS_Files.js```javascript\n\
+    let fs = require('fs');\nlet path = require('path');\n\nfunction combineJSFiles(directory,\
+    \ scriptFilename) {\n    let outputFilePath = path.join(directory, 'main.js');\n\
+    \    let fileContents = [];\n\n    function traverseFolder(folder) {\n       \
+    \ let files = fs.readdirSync(folder);\n        for (let i = 0; i < files.length;\
+    \ i++) {\n            let file = files[i];\n            let filePath = path.join(folder,\
+    \ file);\n            let stats = fs.statSync(filePath);\n            if (stats.isDirectory())\
+    \ {\n                traverseFolder(filePath);\n            } else if (path.extname(filePath)\
+    \ === '.js') {\n                let content = fs.readFileSync(filePath, 'utf8');\n\
+    \                // 检查是否为脚本本身\n                if (filePath !== scriptFilename)\
+    \ {\n                    fileContents.push(content);\n                }\n    \
+    \        }\n        }\n    }\n\n    traverseFolder(directory);\n    fs.writeFileSync(outputFilePath,\
+    \ fileContents.join('\\n'), 'utf8');\n    console.log(`Combined ${fileContents.length}\
+    \ .js files into ${outputFilePath}`);\n}\n\n// 获取脚本目录\nlet currentDirectory =\
+    \ process.cwd();\n\n// 获取脚本文件名\nlet scriptFilename = __filename;\ncombineJSFiles(currentDirectory,\
+    \ scriptFilename);\n```\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_64_0.png)\n\
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_65_0.png)\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_66_0.png)\n\
+    \n![](img/caee5a601dc1e6c3e9deb9d745ec8934_67_0.png)\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_68_0.png)\n\
+    \n![](img/caee5a601dc1e6c3e9deb9d745ec8934_69_0.png)\n\n## 如何使用 Python 将 .js 文件合并为一个\
+    \ main.js 文件\n\n此版本将成功合并单个文件夹的 js 文件。它也可以合并所有子目录中的 js 文件。\n\n## Topalian_Combine_JS_Files.py\n\
+    \n```python\nimport os\ndef combineJSFiles(directory, scriptFileName):\n    outputFilePath\
+    \ = os.path.join(directory, 'main.js')\n    fileContents = []\n\n    def traverseFolder(folder):\n\
+    \        for root, dirs, files in os.walk(folder):\n            for file in files:\n\
+    \                filePath = os.path.join(root, file)\n                if filePath\
+    \ != scriptFileName and filePath.endswith('.js'):\n                    with open(filePath,\
+    \ 'r', encoding='utf-8') as f:\n                        fileContents.append(f.read())\n\
+    \n    traverseFolder(directory)\n    with open(outputFilePath, 'w', encoding='utf-8')\
+    \ as f:\n        f.write('\\n'.join(fileContents))\n```\n\n"
+  merge: 0
+  raw:
+  - '[PAGE 53]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_53_0.png)
+
+
+    **// HowToCombineJSFilesOneFolder.js**
+
+
+    **First, we add ****two new lines**** at the end of **
+
+
+    **every script. This way they will later combine **
+
+
+    **nicely with a line break in between each **
+
+
+    **script.**
+
+
+    **We open our ****js**** folder.**
+
+
+    **In our js project folder, we type**
+
+
+    **cmd**
+
+
+    **in the address bar of the folder and then**
+
+
+    **press enter**
+
+
+    **This opens our js folder in the Command **
+
+
+    **prompt**
+
+
+    **We type in the words**
+
+
+    **copy \*.js main.js**
+
+
+    **and then****press enter**'
+  - '[PAGE 54]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_54_0.png)
+
+
+    **This creates a new file that is named main.js**
+
+
+    **This new file contains all .js files in ONE file.**
+
+
+    **But, there is a junk character at the end of the**
+
+
+    **main.js script that we have to delete. In **
+
+
+    **VSCode the character might be called SUB**'
+  - '[PAGE 55]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_55_0.png)
+
+
+    **We remove this junk SUB character and the **
+
+
+    **code will now run.**
+
+
+    **As we can see, the junk character is **
+
+
+    **removed.**
+
+
+    **<!-- Now, in our html code, we can type -->**
+
+
+    **<script src = ''main.js''></script>**
+
+
+    **This makes it much easier to upload our js **
+
+
+    **code to our website.**'
+  - '[PAGE 56]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_56_0.png)
+
+
+    **How to Combine**
+
+
+    **.js files**
+
+
+    **into one**
+
+
+    **main.js file**
+
+
+    **using**
+
+
+    **Command**
+
+
+    **Prompt**
+
+
+    **Version for when we have js**
+
+
+    **scripts in subfolders in our js**
+
+
+    **project folder, that we want to**
+
+
+    **combine.**'
+  - '[PAGE 57]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_57_0.png)
+
+
+    **// HowToCombineJSFilesAllFolders.js**
+
+
+    **TUTORIAL:**
+
+
+    **How to Combine all .js files in all folders that **
+
+
+    **are in our js folder.**
+
+
+    **Getting things ready:**
+
+
+    **We should add two new lines at the end every**
+
+
+    **script. This way they will combine nicely with **
+
+
+    **a line break in between each script.**
+
+
+    **Step One: Open our js folder**
+
+
+    **Step Two: Type in the address bar of the js **
+
+
+    **folder, ****cmd****, press ****Enter**
+
+
+    **This opens our js folder in the command **
+
+
+    **prompt**'
+  - '[PAGE 58]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_58_0.png)
+
+
+    **Step Three: Type the command shown below **
+
+
+    **in the command prompt and then press Enter**
+
+
+    **for /r "%CD%" %i in (\*.js) do type "%i" >> **
+
+
+    **main.js**
+
+
+    **Now we have a newly created .js file named **
+
+
+    **main.js that has all of our js files included **
+
+
+    **into one file.**
+
+
+    **This makes it easy to upload our application **
+
+
+    **and easy to find out how many lines of code **
+
+
+    **our project is.**
+
+
+    **To use our main.js file, we include it in our **
+
+
+    **html file code:**
+
+
+    **<script src = ''js/main.js''></script>**
+
+
+    **Happy Scripting :-)**'
+  - '[PAGE 59]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_59_0.png)
+
+
+    **How to Combine**
+
+
+    **.js files**
+
+
+    **into one**
+
+
+    **main.js file**
+
+
+    **using**
+
+
+    **a ****batch file**
+
+
+    **Version for when we have js**
+
+
+    **scripts in subfolders in our js**
+
+
+    **project folder, that we want to**
+
+
+    **combine.**'
+  - '[PAGE 60]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_60_0.png)
+
+
+    **// HowToCombineJSFilesUsingBatFile.js**
+
+
+    **We can combine all of the .js files**
+
+
+    **that are located in our js folder**
+
+
+    **into one main.js file, using either:**
+
+
+    ** The Command Prompt Method**
+
+
+    ** or**
+
+
+    ** The .bat File Method**
+
+
+    **The .bat file method is very easy.**
+
+
+    **We double click the bat file, which is located **
+
+
+    **in our js folder, and it will make a main.js file, **
+
+
+    **which includes all .js files in the js folder, **
+
+
+    **including all .js files in all subdirectories of **
+
+
+    **our js folder.**
+
+
+    **This is a very easy way to combine our .js **
+
+
+    **files, because we can double click the .bat file**'
+  - '[PAGE 61]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_61_0.png)
+
+
+    **anytime, and it will again generate the main.js**
+
+
+    **file, which includes all .js files in the js folder,**
+
+
+    **including all .js files in all subdirectories of **
+
+
+    **our js folder. This makes uploading our **
+
+
+    **application online much easier.**
+
+
+    **Happy Scripting :-)**'
+  - '[PAGE 62]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_62_0.png)
+
+
+    **:: Topalian\_Combine\_JS\_Files.bat**
+
+
+    **:: This .bat File Combines All .js files in all **
+
+
+    **folders of our project folder, into one main.js **
+
+
+    **file.**
+
+
+    **:: To activate this .bat file, we double click **
+
+
+    **the .bat file, while it is located in our js folder.**
+
+
+    **@****echo****off**
+
+
+    **:: set the output file name**
+
+
+    **set****"****output****\=****main.js****"**
+
+
+    **:: clear existing output file**
+
+
+    **type****nul****\>****"%****output****%"**
+
+
+    **:: loop through all JavaScript files in **
+
+
+    **subdirectories**
+
+
+    **for**** /r ****%%****i****in****(****\*.js****)****do****(**'
+  - '[PAGE 63]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_63_0.png)
+
+
+    **:: append the content of each file to the **
+
+
+    **output file**
+
+
+    **type****"%%****i****"****\>>****"%****output****%"**
+
+
+    **)**
+
+
+    **echo****"****JavaScript files combined into **
+
+
+    **%****output****%**** successfully.****"**'
+  - '[PAGE 64]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_64_0.png)
+
+
+    **How to Combine**
+
+
+    **.js files**
+
+
+    **into one**
+
+
+    **main.js file**
+
+
+    **using**
+
+
+    **Node.js**
+
+
+    **This version will successfully**
+
+
+    **combine a single folder of js**
+
+
+    **files.**
+
+
+    **It also works to combine js files**
+
+
+    **in all subdirectories.**'
+  - '[PAGE 65]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_65_0.png)
+
+
+    **// Topalian\_Combine\_JS\_Files.js**
+
+
+    **let****fs****\=****require****(****''****fs****''****)****;**
+
+
+    **let****path****\=****require****(****''****path****''****)****;**
+
+
+    **function****combineJSFiles****(****directory****,**
+
+
+    **scriptFilename****)**
+
+
+    **{**
+
+
+    **let****outputFilePath****\=****path****.****join****(****directory****,**
+
+
+    **''****main.js****''****)****;**
+
+
+    **let****fileContents****\=**** \[\]****;**
+
+
+    **function****traverseFolder****(****folder****)**
+
+
+    **{**
+
+
+    **let****files****\=****fs****.****readdirSync****(****folder****)****;**
+
+
+    **for**** (****let****i****\=****0****;****i****<****files****.****length****;****i****++****)**'
+  - '[PAGE 66]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_66_0.png)
+
+
+    **{**
+
+
+    **let****file****\=****files****\[****i****\]****;**
+
+
+    **let****filePath****\=****path****.****join****(****folder****,****file****)****;**
+
+
+    **let****stats****\=****fs****.****statSync****(****filePath****)****;**
+
+
+    **if**** (****stats****.****isDirectory****())**
+
+
+    **{**
+
+
+    **traverseFolder****(****filePath****)****;**
+
+
+    **}**
+
+
+    **else****if**** (****path****.****extname****(****filePath****) ****\===****''****.js****''****)**
+
+
+    **{**
+
+
+    **let****content****\=**
+
+
+    **fs****.****readFileSync****(****filePath****,****''****utf8****''****)****;**
+
+
+    **// check if file is not script file itself**
+
+
+    **if**** (****filePath****!==****scriptFilename****)**
+
+
+    **{**'
+  - '[PAGE 67]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_67_0.png)
+
+
+    **fileContents****.****push****(****content****)****;**
+
+
+    **}**
+
+
+    **}**
+
+
+    **}**
+
+
+    **}**
+
+
+    **traverseFolder****(****directory****)****;**
+
+
+    **fs****.****writeFileSync****(****outputFilePath****,**
+
+
+    **fileContents****.****join****(****''****\\n****''****)****,****''****utf8****''****)****;**
+
+
+    **console****.****log****(****\`****Combined ****$**
+
+
+    **{****fileContents****.****length****}**** .js files into ****$**
+
+
+    **{****outputFilePath****}****\`****)****;**
+
+
+    **}**
+
+
+    **// get current directory of script**
+
+
+    **let****currentDirectory****\=****process****.****cwd****()****;**'
+  - '[PAGE 68]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_68_0.png)
+
+
+    **// get filename of script**
+
+
+    **let****scriptFilename****\=****\_\_filename****;**
+
+
+    **combineJSFiles****(****currentDirectory****,**
+
+
+    **scriptFilename****)****;**'
+  - '[PAGE 69]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_69_0.png)
+
+
+    **How to Combine**
+
+
+    **.js files**
+
+
+    **into one**
+
+
+    **main.js file**
+
+
+    **using**
+
+
+    **Python**
+
+
+    **This version will successfully**
+
+
+    **combine a single folder of js**
+
+
+    **files.**
+
+
+    **It also works to combine js files**
+
+
+    **in all subdirectories.**'
+  - '[PAGE 70]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_70_0.png)
+
+
+    **\# Topalian\_Combine\_JS\_Files.py**
+
+
+    **import****os**
+
+
+    **def****combineJSFiles****(****directory****,**
+
+
+    **scriptFileName****):**
+
+
+    **outputFilePath****\=****os****.****path****.****join****(****directory****,**
+
+
+    **''****main.js****'')**
+
+
+    **fileContents****\=****\[\]**
+
+
+    **def****traverseFolder****(****folder****):**
+
+
+    **for****root****,****dirs****,****files****in****os****.****walk****(****folder****):**
+
+
+    **for****file****in****files****:**
+
+
+    **filePath****\=****os****.****path****.****join****(****root****,****file****)**
+
+
+    **if****filePath****!=****scriptFileName****and**
+
+
+    **filePath****.****endswith****(''****.js****''):**
+
+
+    **with****open****(****filePath****,****''****r****'',**
+
+
+    **encoding****\=''****utf-8****'')****as****f****:**'
+- md: "\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_71_0.png)\n\n```python\nfileContents.append(f.read())\n\
+    \ntraverseFolder(directory)\n\nwith open(outputFilePath, 'w', encoding='utf-8')\
+    \ as f:\n    f.write('\\n'.join(fileContents))\n\nprint(f\"Combined {len(fileContents)}\
+    \ .js files into {outputFilePath}\")\n\n# get current directory of script\ncurrentDirectory\
+    \ = os.path.dirname(os.path.abspath(__file__))\n\n# get filename of script\nscriptFileName\
+    \ = os.path.abspath(__file__)\n```\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_72_0.png)\n\
+    \n```python\ncombineJSFiles(currentDirectory, scriptFileName)\n```\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_73_0.png)\n\
+    \n### What other file types can we combine?\n\nWe have combined .js files in this\
+    \ book, but we might choose to instead combine:\n\n.py or .html or .txt\n\nThis\
+    \ is very useful for book making.\n\nIn each of the scripts shown in this book,\
+    \ we can manually change the parts where it says .js, with .py, if we wanted to,\
+    \ for instance, copy all .py files into one main.py file.\n\nWe can do the same\
+    \ thing for .html files, where we change the file type it will be combining to\
+    \ .html and it will combine all .html files into one main.html file.\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_74_0.png)\n\
+    \nWe add two line breaks at the end of all files, so that there is space between\
+    \ files, when they are combined.\n\nRemember too, that not all file types will\
+    \ combine, but the ones above will.\n\nThe original files are not changed. The\
+    \ content from the original files is only copied from.\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_75_0.png)\n\
+    \nTrue Artificial Intelligence System\nTautology\n\n| Binary | Logic |\n| :---\
+    \ | :--- |\n| 1111 | Contra-contradiction |\n| 0000 | XOR |\n| 0110 | XNOR |\n\
+    | 1001 | AND |\n| 0001 | NAND |\n| 1110 | OR |\n| 0111 | NOR |\n| 1000 | MI |\n\
+    | 1101 | MNI |\n| 0010 | LP |\n| 0011 | LC |\n| 1100 | RP |\n| 0101 | RC |\n|\
+    \ 1010 | CI |\n| 1011 | CNI |\n| 0100 | 16-Gon |\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_76_0.png)\n\
+    \n### For More Tutorials:\n\n- GitHub.com/ChristopherTopalian\n- GitHub.com/ChristopherAndrewTopalian\n\
+    - Sites.google.com/view/CollegeOfScripting\n- CollegeOfScripting.weebly.com\n\
+    - CollegeOfScripting.wordpress.com\n- Youtube.com/ScriptingCollege\n- Twitter.com/CollegeOfScript\n\
+    - Rumble.com/user/CollegeOfScripting\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_77_0.png)\n\
+    \nDedicated to God the Father\nThis book is created by the College of Scripting\
+    \ Music & Science.\n\nAlways remember, that each time you write a script with\
+    \ a pencil and paper, it becomes imprinted so deeply in memory that the material\
+    \ and methods are learned extremely well.\n\nWhen you Type the scripts, the same\
+    \ is true. The more you type and write out the scripts by keyboard or pencil and\
+    \ paper, the more you will learn programming!\n\nWrite and Type every example\
+    \ that you find.\n\nKeep all of your scripts organized.\n\nEvery script that you\
+    \ create increases your programming abilities.\n\nSEEING CODE, is one thing, but\
+    \ WRITING CODE is another.\n\nWrite it, Type it, Speak it, See it, Dream it.\n\
+    \nCollegeOfScripting.weebly.com\n"
+  mdcn: "\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_71_0.png)\n\n```python\nfileContents.append(f.read())\n\
+    \ntraverseFolder(directory)\n\nwith open(outputFilePath, 'w', encoding='utf-8')\
+    \ as f:\n    f.write('\\n'.join(fileContents))\n\nprint(f\"Combined {len(fileContents)}\
+    \ .js files into {outputFilePath}\")\n\n# get current directory of script\ncurrentDirectory\
+    \ = os.path.dirname(os.path.abspath(__file__))\n\n# get filename of script\nscriptFileName\
+    \ = os.path.abspath(__file__)\n```\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_72_0.png)\n\
+    \n```python\ncombineJSFiles(currentDirectory, scriptFileName)\n```\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_73_0.png)\n\
+    \n### 我们还可以合并哪些文件类型？\n\n我们在本书中合并了 .js 文件，但我们也可以选择合并：\n\n.py 或 .html 或 .txt\n\n\
+    这对于制作书籍非常有用。\n\n在本书所示的每个脚本中，如果我们想这样做，可以手动将写有 .js 的部分改为 .py，例如将所有 .py 文件复制到一个主文件\
+    \ main.py 文件中。\n\n我们也可以对 .html 文件执行相同的操作，将它要合并的文件类型更改为 .html，它就会将所有 .html 文件合并到一个主文件\
+    \ main.html 文件中。\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_74_0.png)\n\n我们在所有文件的末尾添加了两个换行符，这样在合并它们时，文件之间会有间隔。\n\
+    \n同时记住，并不是所有的文件类型都可以合并，但上述类型是可以的。\n\n原始文件不会被修改。内容仅是从原始文件中复制而的。\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_75_0.png)\n\
+    \n真正的人工智能系统\n同义反复\n\n| 二进制 | 逻辑 |\n| :--- | :--- |\n| 1111 | 逆矛盾 |\n| 0000 | 异或\
+    \ |\n| 0110 | 异非 |\n| 1001 | 与 |\n| 0001 | 非与 |\n| 1110 | 或 |\n| 0111 | 非或 |\n\
+    | 1000 | MI |\n| 1101 | MNI |\n| 0010 | LP |\n| 0011 | LC |\n| 1100 | RP |\n|\
+    \ 0101 | RC |\n| 1010 | CI |\n| 1011 | CNI |\n| 0100 | 十六形 (16-Gon) |\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_76_0.png)\n\
+    \n### 教程：\n\n- GitHub.com/ChristopherTopalian\n- GitHub.com/ChristopherAndrewTopalian\n\
+    - Sites.google.com/view/CollegeOfScripting\n- CollegeOfScripting.weebly.com\n\
+    - CollegeOfScripting.wordpress.com\n- Youtube.com/ScriptingCollege\n- Twitter.com/CollegeOfScript\n\
+    - Rumble.com/user/CollegeOfScripting\n\n![](img/caee5a601dc1e6c3e9deb9d745ec8934_77_0.png)\n\
+    \n献给父神\n本书由脚本音乐科学学院 (College of Scripting Music & Science) 创建\n\n始终记住，每当你用笔和纸写一个脚本时，它就会深深地印在记忆中，使得材料和方法被掌握得非常好。\n\
+    \n当你输入脚本时也是如此。你通过键盘或笔纸输入和编写脚本越多，就越能学会编程！\n\n编写并输入你找到每一个示例。\n\n整理好你所有的脚本。\n\n你创建每一个脚本都会提升你的编程能力。\n\
+    \n看到代码是一回事，编写代码是另一回事。写下，输入它，说出来，看到它，梦到它。\n\nCollegeOfScripting.weebly.com\n\n"
+  merge: 0
+  raw:
+  - '[PAGE 71]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_71_0.png)
+
+
+    **fileContents****.****append****(****f****.****read****())**
+
+
+    **traverseFolder****(****directory****)**
+
+
+    **with****open****(****outputFilePath****,****''****w****'',**
+
+
+    **encoding****\=''****utf-8****'')****as****f****:**
+
+
+    **f****.****write****(''****\\n****''.****join****(****fileContents****))**
+
+
+    **print****(****f****"Combined ****{****len****(****fileContents****)****}****
+    .js **
+
+
+    **files into ****{****outputFilePath****}****"****)**
+
+
+    **\# get current directory of script**
+
+
+    **currentDirectory****\=**
+
+
+    **os****.****path****.****dirname****(****os****.****path****.****abspath****(****\_\_file\_\_****))**
+
+
+    **\# get filename of script**
+
+
+    **scriptFileName****\=****os****.****path****.****abspath****(****\_\_file\_\_****)**'
+  - '[PAGE 72]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_72_0.png)
+
+
+    **combineJSFiles****(****currentDirectory****,**
+
+
+    **scriptFileName****)**'
+  - '[PAGE 73]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_73_0.png)
+
+
+    **What other file types can we combine?**
+
+
+    **We have combined .js files in this book, but **
+
+
+    **we might choose to instead combine:**
+
+
+    **.py**** or ****.html **** or ****.txt**
+
+
+    **This is very useful for book making.**
+
+
+    **In each of the scripts shown in this book, we **
+
+
+    **can manually change the parts where it **
+
+
+    **says .js, with .py, if we wanted to, for **
+
+
+    **instance, copy all .py files into one main.py **
+
+
+    **file.**
+
+
+    **We can do the same thing for .html files, **
+
+
+    **where we change the file type it will be **
+
+
+    **combining to .html and it will combine **
+
+
+    **all .html files into one main.html file.**'
+  - '[PAGE 74]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_74_0.png)
+
+
+    **We add two line breaks at the end of all files, **
+
+
+    **so that there is space between files, when **
+
+
+    **they are combined.**
+
+
+    **Remember too, that not all file types will **
+
+
+    **combine, but the ones above will.**
+
+
+    **The original files are not changed. The **
+
+
+    **content from the original files is only copied **
+
+
+    **from.**'
+  - '[PAGE 75]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_75_0.png)
+
+
+    **True Artificial Intelligence System**
+
+
+    **Tautology**
+
+
+    **1111**
+
+
+    **Contra-**
+
+
+    **\-diction**
+
+
+    **0000**
+
+
+    **XOR**
+
+
+    **0110**
+
+
+    **XNOR**
+
+
+    **1001**
+
+
+    **AND**
+
+
+    **0001**
+
+
+    **NAND**
+
+
+    **1110**
+
+
+    **OR**
+
+
+    **0111**
+
+
+    **NOR**
+
+
+    **1000**
+
+
+    **MI**
+
+
+    **1101**
+
+
+    **MNI**
+
+
+    **0010**
+
+
+    **LP**
+
+
+    **0011**
+
+
+    **LC**
+
+
+    **1100**
+
+
+    **RP**
+
+
+    **0101**
+
+
+    **RC**
+
+
+    **1010**
+
+
+    **CI**
+
+
+    **1011**
+
+
+    **CNI**
+
+
+    **0100**
+
+
+    **16-Gon**'
+  - '[PAGE 76]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_76_0.png)
+
+
+    **For More Tutorials:**
+
+
+    **GitHub.com/ChristopherTopalian**
+
+
+    **GitHub.com/ChristopherAndrewTopalian**
+
+
+    **Sites.google.com/view/CollegeOfScripting**
+
+
+    **CollegeOfScripting.weebly.com**
+
+
+    **CollegeOfScripting.wordpress.com**
+
+
+    **Youtube.com/ScriptingCollege**
+
+
+    **Twitter.com/CollegeOfScript**
+
+
+    **Rumble.com/user/CollegeOfScripting**'
+  - '[PAGE 77]
+
+
+    ![](img/caee5a601dc1e6c3e9deb9d745ec8934_77_0.png)
+
+
+    **Dedicated to God the Father**
+
+
+    **This book is created by the**
+
+
+    **College of Scripting Music & Science.**
+
+
+    **Always remember, that each time you write a script **
+
+
+    **with a pencil and paper, it becomes imprinted so **
+
+
+    **deeply in memory that the material and methods are**
+
+
+    **learned extremely well.**
+
+
+    **When you Type the scripts, the same is true. The **
+
+
+    **more you type and write out the scripts by keyboard**
+
+
+    **or pencil and paper, the more you will learn **
+
+
+    **programming!**
+
+
+    **Write and Type every example that you find.**
+
+
+    **Keep all of your scripts organized.**
+
+
+    **Every script that you create increases your **
+
+
+    **programming abilities.**
+
+
+    **SEEING CODE, is one thing,**
+
+
+    **but WRITING CODE is another.**
+
+
+    **Write it, Type it, Speak it, See it, Dream it.**
+
+
+    **CollegeOfScripting.weebly.com**'
