@@ -1,0 +1,1792 @@
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_0_0.png)
+
+
+    **Topalian**
+
+
+    **JavaScript**
+
+
+    **Password**
+
+
+    **Generator 002**
+
+
+    **by**
+
+
+    **Christopher Andrew Topalian**
+
+
+    All Rights Reserved
+
+
+    Copyright 2000-2023'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_1_0.png)
+
+
+    **Dedicated**
+
+
+    **to**
+
+
+    **God****the****Father**'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_2_0.png)
+
+
+    Double Click **Launch.html**'
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: '# Password Generator
+
+
+    # Launch.html'
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_4_0.png)
+
+
+    **Topalian\_JavaScript\_Password\_Generator.ht**
+
+
+    **ml**'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_5_0.png)'
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: ''
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_7_0.png)
+
+
+    **<!-- Dedicated to God the Father -->**
+
+
+    **<!-- All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2023 -->**
+
+
+    **<!-- https://github.com/ChristopherTopalian --**
+
+
+    **\>**
+
+
+    **<!-- **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n -->**
+
+
+    **<!-- Launch.html -->**
+
+
+    **<****html****\>**
+
+
+    **<****head****\>**
+
+
+    **<****title****\>**** Topalian JavaScript Password **
+
+
+    **Generator Launcher ****</****title****\>**'
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_8_0.png)
+
+
+    **<****style****\>**
+
+
+    **body**
+
+
+    **{**
+
+
+    **background-color****:****rgb****(****40****,****40****,****40****);**
+
+
+    **background-image****:**
+
+
+    **url****(''****Topalian\_JavaScript\_Password\_Generato**
+
+
+    **r/texture/code.webp****'');**
+
+
+    **font-size****:****20px****;**
+
+
+    **font-weight****:****bold****;**
+
+
+    **color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **}**
+
+
+    **.****buttonLauncher**
+
+
+    **{**'
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_9_0.png)
+
+
+    **position****:****fixed****;**
+
+
+    **left****:****20px****;**
+
+
+    **top****:****20px****;**
+
+
+    **width****:****200px****;**
+
+
+    **height****:****100px****;**
+
+
+    **border-style****:****solid****;**
+
+
+    **border-width****:****5px****;**
+
+
+    **border-radius****:****5px****;**
+
+
+    **border-color****:****rgb****(****0****,****0****,****0****);**
+
+
+    **background-color****:****rgb****(****5****,****5****,****84****);**
+
+
+    **font-size****:****30px****;**
+
+
+    **font-weight****:****bold****;**
+
+
+    **color****:****white****;**
+
+
+    **line-height****:****30px****;**
+
+
+    **}**
+
+
+    **.****buttonLauncher****:****hover**
+
+
+    **{**'
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_10_0.png)
+
+
+    **border-color****:****rgb****(****0****,****255****,****255****);**
+
+
+    **color****:****rgb****(****0****,****255****,****255****);**
+
+
+    **cursor****:****pointer****;**
+
+
+    **}**
+
+
+    **.****buttonLauncher****:****active**
+
+
+    **{**
+
+
+    **border-color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **}**
+
+
+    **</****style****\>**
+
+
+    **<****script****\>**
+
+
+    **function****createWindow****()**
+
+
+    **{**'
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_11_0.png)
+
+
+    **let****newWindow****\=**
+
+
+    **window****.****open****(****"****Topalian\_JavaScript\_Passwor**
+
+
+    **d\_Generator/Topalian\_JavaScript\_Password\_**
+
+
+    **Generator.html****",****"",****"****left = 10 top = 10 width =**
+
+
+    **450, height = 255****",****true****)****;**
+
+
+    **// wait a specified duration and then **
+
+
+    **remove the launcher**
+
+
+    **setTimeout****(****function****()**
+
+
+    **{**
+
+
+    **window****.****close****()****;**
+
+
+    **},****500****)****;**
+
+
+    **}**
+
+
+    **</****script****\>**
+
+
+    **</****head****\>**'
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_12_0.png)
+
+
+    **<****body****\>**
+
+
+    **<****button****onclick****\=****"****createWindow****()****;"****class****\=**
+
+
+    **''****buttonLauncher****''>**** Password Generator **
+
+
+    **</****button****\>**
+
+
+    **</****body****\>**
+
+
+    **</****html****\>**'
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_13_0.png)
+
+
+    **<!-- Dedicated to God the Father -->**
+
+
+    **<!-- All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2023 -->**
+
+
+    **<!-- https://github.com/ChristopherTopalian --**
+
+
+    **\>**
+
+
+    **<!-- **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n -->**
+
+
+    **<!-- **
+
+
+    **Topalian\_JavaScript\_Password\_Generator.ht**
+
+
+    **ml -->**
+
+
+    **<!-- Version 002 -->**'
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_14_0.png)
+
+
+    **<****html****\>**
+
+
+    **<****head****\>**
+
+
+    **<****title****\>**** Topalian JavaScript Password **
+
+
+    **Generator ****</****title****\>**
+
+
+    **<****link****rel****\=****"****stylesheet****"****href****\=**
+
+
+    **"****css/style001.css****">**
+
+
+    **<****script****\>**
+
+
+    **// current passwordLength is 12**
+
+
+    **let****passwordLength****\=****12****;**
+
+
+    **// we can comment out any symbols that we **
+
+
+    **don''t want to include in the password **
+
+
+    **generation**
+
+
+    **let****symbolsArray****\=**** \[**
+
+
+    **"****a****",**'
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_15_0.png)
+
+
+    **"****b****",**
+
+
+    **"****c****",**
+
+
+    **"****d****",**
+
+
+    **"****e****",**
+
+
+    **"****f****",**
+
+
+    **"****g****",**
+
+
+    **"****h****",**
+
+
+    **"****i****",**
+
+
+    **"****j****",**
+
+
+    **"****k****",**
+
+
+    **"****l****",**
+
+
+    **"****m****",**
+
+
+    **"****n****",**
+
+
+    **"****o****",**
+
+
+    **"****p****",**
+
+
+    **"****q****",**
+
+
+    **"****r****",**
+
+
+    **"****s****",**'
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_16_0.png)
+
+
+    **"****t****",**
+
+
+    **"****u****",**
+
+
+    **"****v****",**
+
+
+    **"****w****",**
+
+
+    **"****x****",**
+
+
+    **"****y****",**
+
+
+    **"****z****",**
+
+
+    **"****A****",**
+
+
+    **"****B****",**
+
+
+    **"****C****",**
+
+
+    **"****D****",**
+
+
+    **"****E****",**
+
+
+    **"****F****",**
+
+
+    **"****G****",**
+
+
+    **"****H****",**
+
+
+    **"****I****",**
+
+
+    **"****J****",**
+
+
+    **"****K****",**'
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_17_0.png)
+
+
+    **"****L****",**
+
+
+    **"****M****",**
+
+
+    **"****N****",**
+
+
+    **"****O****",**
+
+
+    **"****P****",**
+
+
+    **"****Q****",**
+
+
+    **"****R****",**
+
+
+    **"****S****",**
+
+
+    **"****T****",**
+
+
+    **"****U****",**
+
+
+    **"****V****",**
+
+
+    **"****W****",**
+
+
+    **"****X****",**
+
+
+    **"****Y****",**
+
+
+    **"****Z****",**
+
+
+    **0****,**
+
+
+    **1****,**
+
+
+    **2****,**'
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_18_0.png)
+
+
+    **3****,**
+
+
+    **4****,**
+
+
+    **5****,**
+
+
+    **6****,**
+
+
+    **7****,**
+
+
+    **8****,**
+
+
+    **9****,**
+
+
+    **"****!****",**
+
+
+    **"****@****",**
+
+
+    **"****#****",**
+
+
+    **"****$****",**
+
+
+    **"****%****",**
+
+
+    **"****^****",**
+
+
+    **"****&****",**
+
+
+    **"****\*****",**
+
+
+    **"****(****",**
+
+
+    **"****)****",**
+
+
+    **"****\-****"**'
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_19_0.png)
+
+
+    **\]****;**
+
+
+    **function****createPasswordGenerator****()**
+
+
+    **{**
+
+
+    **let****mainDiv****\=**
+
+
+    **document****.****createElement****(****"****div****"****)****;**
+
+
+    **mainDiv****.****className****\=****"****mainDiv****";**
+
+
+    **document****.****body****.****append****(****mainDiv****)****;**
+
+
+    **let****passwordTextBox****\=**
+
+
+    **document****.****createElement****(****"****textarea****"****)****;**
+
+
+    **passwordTextBox****.****className****\=**
+
+
+    **"****passwordTextBox****";**
+
+
+    **passwordTextBox****.****id****\=****"****passwordTextBox****";**
+
+
+    **mainDiv****.****append****(****passwordTextBox****)****;**
+
+
+    **//-//**'
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_20_0.png)
+
+
+    **let****lineBelowPasswordTextBox****\=**
+
+
+    **document****.****createElement****(****"****hr****"****)****;**
+
+
+    **mainDiv****.****append****(****lineBelowPasswordTextBox****)**
+
+
+    **;**
+
+
+    **//-//**
+
+
+    **let****buttonSection****\=**
+
+
+    **document****.****createElement****(****''****div****''****)****;**
+
+
+    **mainDiv****.****append****(****buttonSection****)****;**
+
+
+    **//-//**
+
+
+    **let****generateButton****\=**
+
+
+    **document****.****createElement****(****"****button****"****)****;**
+
+
+    **generateButton****.****className****\=****"****button001****";**
+
+
+    **generateButton****.****innerHTML****\=****"****Generate****";**'
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_21_0.png)
+
+
+    **generateButton****.****onclick****\=****function****()**
+
+
+    **{**
+
+
+    **generateRandomPassword****(****symbolsArray****)****;**
+
+
+    **};**
+
+
+    **buttonSection****.****append****(****generateButton****)****;**
+
+
+    **let****copyButton****\=**
+
+
+    **document****.****createElement****(****"****button****"****)****;**
+
+
+    **copyButton****.****className****\=****"****button002****";**
+
+
+    **copyButton****.****innerHTML****\=****"****Copy****";**
+
+
+    **copyButton****.****onclick****\=****function****()**
+
+
+    **{**
+
+
+    **copyText****()****;**
+
+
+    **};**'
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_22_0.png)
+
+
+    **buttonSection****.****append****(****copyButton****)****;**
+
+
+    **//-//**
+
+
+    **let****lineBelowCopyButton****\=**
+
+
+    **document****.****createElement****(****"****hr****"****)****;**
+
+
+    **mainDiv****.****append****(****lineBelowCopyButton****)****;**
+
+
+    **//-//**
+
+
+    **let****passwordLengthTitle****\=**
+
+
+    **document****.****createElement****(****"****div****"****)****;**
+
+
+    **passwordLengthTitle****.****className****\=**
+
+
+    **"****passwordLengthTitle****";**
+
+
+    **passwordLengthTitle****.****innerHTML****\=**
+
+
+    **"****Password Length****";**
+
+
+    **mainDiv****.****append****(****passwordLengthTitle****)****;**'
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_23_0.png)
+
+
+    **//-//**
+
+
+    **let****passwordLengthTextBox****\=**
+
+
+    **document****.****createElement****(****"****input****"****)****;**
+
+
+    **passwordLengthTextBox****.****className****\=**
+
+
+    **"****passwordLengthTextBox****";**
+
+
+    **passwordLengthTextBox****.****id****\=**
+
+
+    **"****passwordLengthTextBox****";**
+
+
+    **passwordLengthTextBox****.****value****\=**
+
+
+    **passwordLength****;**
+
+
+    **passwordLengthTextBox****.****onkeyup****\=**
+
+
+    **function****()**
+
+
+    **{**
+
+
+    **passwordLength****\=**
+
+
+    **passwordLengthTextBox****.****value****;**'
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_24_0.png)
+
+
+    **document****.****getElementById****(****"****passwordLength**
+
+
+    **Slider****"****)****.****value****\=****passwordLength****;**
+
+
+    **};**
+
+
+    **mainDiv****.****append****(****passwordLengthTextBox****)****;**
+
+
+    **//-//**
+
+
+    **let****passwordLengthSlider****\=**
+
+
+    **document****.****createElement****(****"****input****"****)****;**
+
+
+    **passwordLengthSlider****.****className****\=**
+
+
+    **"****passwordLengthSlider****";**
+
+
+    **passwordLengthSlider****.****id****\=**
+
+
+    **"****passwordLengthSlider****";**
+
+
+    **passwordLengthSlider****.****type****\=****"****range****";**
+
+
+    **passwordLengthSlider****.****min****\=****1****;**
+
+
+    **passwordLengthSlider****.****max****\=****200****;**'
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_25_0.png)
+
+
+    **passwordLengthSlider****.****value****\=**
+
+
+    **passwordLength****;**
+
+
+    **passwordLengthSlider****.****oninput****\=****function****()**
+
+
+    **{**
+
+
+    **document****.****getElementById****(****"****passwordLength**
+
+
+    **TextBox****"****)****.****value****\=**
+
+
+    **passwordLengthSlider****.****value****;**
+
+
+    **passwordLength****\=**
+
+
+    **document****.****getElementById****(****"****passwordLength**
+
+
+    **TextBox****"****)****.****value****\=**
+
+
+    **passwordLengthSlider****.****value****;**
+
+
+    **};**
+
+
+    **mainDiv****.****append****(****passwordLengthSlider****)****;**
+
+
+    **}**'
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_26_0.png)
+
+
+    **function****copyText****()**
+
+
+    **{**
+
+
+    **let****copyText****\=**
+
+
+    **document****.****getElementById****(****"****passwordTextBo**
+
+
+    **x****"****)****;**
+
+
+    **copyText****.****select****()****;**
+
+
+    **copyText****.****setSelectionRange****(****0****,****1000****)****;**
+
+
+    **document****.****execCommand****(****"****copy****"****)****;**
+
+
+    **console****.****log****(****document****.****getElementById****(****"****pass**
+
+
+    **wordTextBox****"****)****.****value****)****;**
+
+
+    **}**'
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_27_0.png)
+
+
+    **function**
+
+
+    **generateRandomPassword****(****whichArray****)**
+
+
+    **{**
+
+
+    **// make an empty array named **
+
+
+    **randomSymbolsArray**
+
+
+    **let****randomSymbolsArray****\=**** \[\]****;**
+
+
+    **for**** (****let****i****\=****0****;****i**** < ****passwordLength****;****i****++)**
+
+
+    **{**
+
+
+    **// for loop through whichArray**
+
+
+    **for**** (****let****x****\=****0****;****x**** < ****whichArray****.****length****;****x****++)**
+
+
+    **{**
+
+
+    **// add the random symbol to **
+
+
+    **randomSymbolsArray**
+
+
+    **randomSymbolsArray****.****push****(****whichArray****\[****Math**
+
+
+    **.****floor****(****Math****.****random****() \* ****whichArray****.****length****)\])****;**
+
+
+    **}**'
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_28_0.png)
+
+
+    **}**
+
+
+    **// remove comma from **
+
+
+    **randomSymbolsArray**
+
+
+    **randomSymbolsArray****\=**
+
+
+    **randomSymbolsArray****.****join****(****""****)****;**
+
+
+    **// passwordLength is currently set to 12**
+
+
+    **// below, we use the slice function to **
+
+
+    **extract 12 items from randomSymbolsArray **
+
+
+    **to create the random password**
+
+
+    **// slice function has start and end **
+
+
+    **parameters**
+
+
+    **// we start the extraction at 0, and end the **
+
+
+    **extraction up to, but not including the end: 12**
+
+
+    **// 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 means that **
+
+
+    **we have extracted 12 items from **
+
+
+    **randomSymbolsArray**'
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_29_0.png)
+
+
+    **randomSymbolsArray****\=**
+
+
+    **randomSymbolsArray****.****slice****(****0****,**
+
+
+    **passwordLength****)****;**
+
+
+    **// show the generated password **
+
+
+    **randomSymbolsArray**
+
+
+    **document****.****getElementById****(****"****passwordTextBo**
+
+
+    **x****"****)****.****innerHTML****\=****randomSymbolsArray****;**
+
+
+    **}**
+
+
+    **function****whenLoaded****()**
+
+
+    **{**
+
+
+    **createPasswordGenerator****()****;**
+
+
+    **generateRandomPassword****(****symbolsArray****)****;**
+
+
+    **}**'
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_30_0.png)
+
+
+    **</****script****\>**
+
+
+    **</****head****\>**
+
+
+    **<****body****onload****\=****"****whenLoaded****()****;">**
+
+
+    **</****body****\>**
+
+
+    **</****html****\>**'
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_31_0.png)
+
+
+    **/\* Dedicated to God the Father \*/**
+
+
+    **/\* All Rights Reserved Christopher Andrew **
+
+
+    **Topalian Copyright 2000-2023 \*/**
+
+
+    **/\* https://github.com/ChristopherTopalian \*/**
+
+
+    **/\* **
+
+
+    **https://github.com/ChristopherAndrewTopalia**
+
+
+    **n \*/**
+
+
+    **/\* style001.css \*/**
+
+
+    **body**
+
+
+    **{**
+
+
+    **background-color****:****rgb****(****40****,****40****,****40****);**
+
+
+    **}**'
+  merge: -1
+  pgno: 31
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_32_0.png)
+
+
+    **hr**
+
+
+    **{**
+
+
+    **width****:****400px****;**
+
+
+    **padding-top****:****1px****;**
+
+
+    **padding-bottom****:****1px****;**
+
+
+    **line-height****:****1px****;**
+
+
+    **margin-top****:****1px****;**
+
+
+    **margin-bottom****:****1px****;**
+
+
+    **}**
+
+
+    **.****mainDiv**
+
+
+    **{**
+
+
+    **position****:****relative****;**
+
+
+    **top****:****0px****;**
+
+
+    **display****:****flex****;**
+
+
+    **flex-direction****:****column****;**
+
+
+    **align-items****:****center****;**
+
+
+    **}**'
+  merge: -1
+  pgno: 32
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_33_0.png)
+
+
+    **.****button001**
+
+
+    **{**
+
+
+    **margin****:****4px****;**
+
+
+    **padding-left****:****10px****;**
+
+
+    **padding-right****:****10px****;**
+
+
+    **border-style****:****solid****;**
+
+
+    **border-width****:****1px****;**
+
+
+    **border-radius****:****8px****;**
+
+
+    **background-color****:****rgb****(****0****,****0****,****0****);**
+
+
+    **font-family****:****arial****;**
+
+
+    **font-size****:****20px****;**
+
+
+    **font-weight****:****bold****;**
+
+
+    **color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **text-align****:****center****;**
+
+
+    **}**
+
+
+    **.****button001****:****hover**'
+  merge: -1
+  pgno: 33
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_34_0.png)
+
+
+    **{**
+
+
+    **border-color****:****rgb****(****0****,****255****,****255****);**
+
+
+    **}**
+
+
+    **.****button001****:****active**
+
+
+    **{**
+
+
+    **position****:****relative****;**
+
+
+    **top****:****1px****;**
+
+
+    **color****:****rgb****(****0****,****255****,****255****);**
+
+
+    **}**
+
+
+    **.****button002**
+
+
+    **{**
+
+
+    **padding-left****:****10px****;**
+
+
+    **padding-right****:****10px****;**
+
+
+    **border-style****:****solid****;**
+
+
+    **border-width****:****1px****;**
+
+
+    **border-radius****:****8px****;**'
+  merge: -1
+  pgno: 34
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_35_0.png)
+
+
+    **background-color****:****rgb****(****50****,****50****,****50****);**
+
+
+    **font-family****:****arial****;**
+
+
+    **font-size****:****20px****;**
+
+
+    **font-weight****:****bold****;**
+
+
+    **color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **text-align****:****center****;**
+
+
+    **}**
+
+
+    **.****button002****:****hover**
+
+
+    **{**
+
+
+    **border-color****:****rgb****(****0****,****255****,****255****);**
+
+
+    **}**
+
+
+    **.****button002****:****active**
+
+
+    **{**
+
+
+    **position****:****relative****;**
+
+
+    **top****:****1px****;**
+
+
+    **color****:****rgb****(****0****,****255****,****255****);**'
+  merge: -1
+  pgno: 35
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_36_0.png)
+
+
+    **}**
+
+
+    **.****passwordTextBox**
+
+
+    **{**
+
+
+    **height****:****100px****;**
+
+
+    **padding-left****:****10px****;**
+
+
+    **padding-right****:****10px****;**
+
+
+    **padding-top****:****5px****;**
+
+
+    **padding-bottom****:****5px****;**
+
+
+    **margin-bottom****:****0px****;**
+
+
+    **background-color****:****rgb****(****40****,****40****,****40****);**
+
+
+    **border-style****:****solid****;**
+
+
+    **border-width****:****3px****;**
+
+
+    **border-color****:****rgb****(****120****,****120****,****120****);**
+
+
+    **border-radius****:****8px****;**
+
+
+    **font-family****:****arial****;**
+
+
+    **font-size****:****30px****;**
+
+
+    **color****:****rgb****(****255****,****255****,****255****);**'
+  merge: -1
+  pgno: 36
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_37_0.png)
+
+
+    **text-align****:****center****;**
+
+
+    **overflow-y****:****scroll****;**
+
+
+    **}**
+
+
+    **.****passwordLengthTitle**
+
+
+    **{**
+
+
+    **padding-top****:****1px****;**
+
+
+    **margin-top****:****0px****;**
+
+
+    **margin-bottom****:****0px****;**
+
+
+    **font-family****:****arial****;**
+
+
+    **font-size****:****20px****;**
+
+
+    **font-weight****:****bold****;**
+
+
+    **color****:****rgb****(****200****,****200****,****200****);**
+
+
+    **}**
+
+
+    **.****passwordLengthTextBox**
+
+
+    **{**
+
+
+    **width****:****100px****;**'
+  merge: -1
+  pgno: 37
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_38_0.png)
+
+
+    **margin-top****:****1px****;**
+
+
+    **margin-bottom****:****4px****;**
+
+
+    **border-radius****:****8px****;**
+
+
+    **background-color****:****rgb****(****0****,****0****,****0****);**
+
+
+    **font-size****:****20px****;**
+
+
+    **font-weight****:****bold****;**
+
+
+    **color****:****rgb****(****255****,****255****,****255****);**
+
+
+    **text-align****:****center****;**
+
+
+    **resize****:****none****;**
+
+
+    **}**
+
+
+    **.****passwordLengthSlider**
+
+
+    **{**
+
+
+    **margin-top****:****2px****;**
+
+
+    **width****:****400px****;**
+
+
+    **border-style****:****solid****;**
+
+
+    **border-width****:****1px****;**
+
+
+    **border-color****:****rgb****(****70****,****70****,****70****);**'
+  merge: -1
+  pgno: 38
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_39_0.png)
+
+
+    **border-radius****:****8px****;**
+
+
+    **background-color****:****rgb****(****0****,****0****,****0****);**
+
+
+    **\-webkit-appearance****:****none****;**
+
+
+    **\-moz-appearance****:****none****;**
+
+
+    **appearance****:****none****;**
+
+
+    **}**'
+  merge: -1
+  pgno: 39
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_40_0.png)
+
+
+    **True Artificial Intelligence System**
+
+
+    **Tautology**
+
+
+    **1111**
+
+
+    **Contra-**
+
+
+    **\-diction**
+
+
+    **0000**
+
+
+    **XOR**
+
+
+    **0110**
+
+
+    **XNOR**
+
+
+    **1001**
+
+
+    **AND**
+
+
+    **0001**
+
+
+    **NAND**
+
+
+    **1110**
+
+
+    **OR**
+
+
+    **0111**
+
+
+    **NOR**
+
+
+    **1000**
+
+
+    **MI**
+
+
+    **1101**
+
+
+    **MNI**
+
+
+    **0010**
+
+
+    **LP**
+
+
+    **0011**
+
+
+    **LC**
+
+
+    **1100**
+
+
+    **RP**
+
+
+    **0101**
+
+
+    **RC**
+
+
+    **1010**
+
+
+    **CI**
+
+
+    **1011**
+
+
+    **CNI**
+
+
+    **0100**
+
+
+    **16-Gon**'
+  merge: -1
+  pgno: 40
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_41_0.png)
+
+
+    **For More Tutorials:**
+
+
+    **CollegeOfScripting.weebly.com**
+
+
+    **CollegeOfScripting.wordpress.com**
+
+
+    **Youtube.com/ScriptingCollege**
+
+
+    **Twitter.com/CollegeOfScript**
+
+
+    **GitHub.com/ChristopherTopalian**
+
+
+    **GitHub.com/ChristopherAndrewTopalian**
+
+
+    **Sites.google.com/view/CollegeOfScripting**'
+  merge: -1
+  pgno: 41
+- img_proc: true
+  md: '![](img/b0db8f5f73016fec5c6999ccbaffec34_42_0.png)
+
+
+    **Dedicated to God the Father**
+
+
+    **This book is created by the**
+
+
+    **College of Scripting Music & Science.**
+
+
+    **Always remember, that each time you write a script **
+
+
+    **with a pencil and paper, it becomes imprinted so **
+
+
+    **deeply in memory that the material and methods are**
+
+
+    **learned extremely well.**
+
+
+    **When you Type the scripts, the same is true. The **
+
+
+    **more you type and write out the scripts by keyboard**
+
+
+    **or pencil and paper, the more you will learn **
+
+
+    **programming!**
+
+
+    **Write and Type every example that you find.**
+
+
+    **Keep all of your scripts organized.**
+
+
+    **Every script that you create increases your **
+
+
+    **programming abilities.**
+
+
+    **SEEING CODE, is one thing,**
+
+
+    **but WRITING CODE is another.**
+
+
+    **Write it, Type it, Speak It, See It, Dream It.**
+
+
+    **CollegeOfScripting.weebly.com**'
+  merge: -1
+  pgno: 42
