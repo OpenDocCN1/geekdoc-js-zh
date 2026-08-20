@@ -1,0 +1,1807 @@
+- img_proc: true
+  md: '`Spotligh `
+
+
+    `Kids ``Can ``Code `
+
+
+    `Understanding ``Coding ``with `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_0_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_0_1.png)'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: '`Digitized ``by ``the ``Internet ``Archive `
+
+
+    `in ``2023 `
+
+
+    `https://archive.org/details/understandingcod0000saba `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_1_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_1_1.png)'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: '# Spotlight on Kids Can Code
+
+
+    Understanding Coding with
+
+
+    # JAVASCRIPT
+
+
+    Michael Sabatino
+
+
+    PowerKiDS press
+
+
+    New York'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: '`Published ``in ``2018 ``by ``The ``Rosen ``Publishing ``Group, ``Inc. `
+
+
+    `29 ``East ``21st ``Street, ``New ``York, ``NY ``10010 `
+
+
+    `Copyright ``© ``2018 ``by ``The ``Rosen ``Publishing ``Group, ``Inc. `
+
+
+    `All ``rights ``reserved. ``No ``part ``of ``this ``book ``may ``be ``reproduced
+    ``in ``any ``form ``without ``permission ``in ``writing `
+
+
+    `from ``the ``publisher, ``except ``by ``a ``reviewer. `
+
+
+    `First ``Edition `
+
+
+    `Editor: ``Melissa ``Raé ``Shofner `
+
+
+    `Book ``Design: ``Michael ``J. ``Flynn `
+
+
+    `Photo ``Credits: ``Cover ``Jose ``Luis ``Pelaez ``Inc/Blend ``Images/Getty ``Images;
+    ``p. ``4 ``https: ``//commons.wikimedia. `
+
+
+    `org/wiki/File:Brendan\_Eich\_Mozilla\_Foundation\_ofticial\_photo.jpg; ``p. ``5
+    ``Sergey ``Maksienko/Shutterstock. `
+
+
+    `com; ``p. ``7 ``FatCamera/E+/Getty ``Images; ``p. ``9 ``racorn/Shutterstock.com;
+    ``p. ``11 ``(top) ``sabrisy/Shutterstock. `
+
+
+    `com; ``p. ``11 ``(bottom) ``1000s\_pixels/Shutterstock/com; ``p. ``12 ``Dragon
+    ``Images/Shutterstock.com; `
+
+
+    `p. ``13 ``Teguh ``Jati ``Prasetyo/Shutterstock.com; ``p. ``21 ``vgajic/E+/Getty
+    ``Images. `
+
+
+    `Library ``of ``Congress ``Cataloging-in-Publication ``Data `
+
+
+    `Names: ``Sabatino, ``Michael, ``author. `
+
+
+    `Title: ``Understanding ``coding ``with ``JavaScript ``/ ``Michael ``Sabatino.
+    `
+
+
+    `Description: ``New ``York ``: ``PowerKids ``Press, ``\[2018\] ``| ``Series: ``Spotlight
+    ``on ``kids `
+
+
+    `can ``code ``| ``Includes ``bibliographical ``references ``and ``index. `
+
+
+    `Identifiers: ``LCCN ``2017003086\] ``ISBN ``9781508154785 ``(6 ``pack) ``| ``ISBN
+    `
+
+
+    `9781508155256 ``(pbk.} ``| ``ISBN ``9781508155133 ``(library ``bound) `
+
+
+    `Subjects: ``LCSH: ``JavaScript ``(Computer ``program ``language)-juvenile ``literature.
+    `
+
+
+    `| ``HTML ``(Document ``markup ``language\]-Juvenile ``literature. ``| ``Internet
+    `
+
+
+    `programming-juvenile ``literature. ``| ``Web ``sites-Authoring `
+
+
+    `programs-juvenile ``literature. `
+
+
+    `Classification: ``LCC ``QA76.73 `
+
+
+    `J39 ``$24 ``2018 ``| ``DDC ``005.2/762-de23 `
+
+
+    `LC ``record ``available ``at ``https: ``//lecn.loc.gov/2017003086 `
+
+
+    `Manufactured ``in ``the ``United ``States ``of ``America `
+
+
+    `CPSIA ``Compliance ``Information: ``Batch ``#8S17PK: ``For ``Further ``Information
+    ``contact ``Rosen ``Publishing, ``New ``York, ``New ``York ``at ``1-800-237-9932
+    `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_5_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_5_1.png)'
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: '`\_ `
+
+
+    `iu `
+
+
+    `ut `
+
+
+    `ana `
+
+
+    `ii `
+
+
+    `Contents `
+
+
+    `The ``Language ``of ``the ``Web `
+
+
+    `A ``Key ``Ingredient.... `
+
+
+    `Follow ``the ``Rules.... `
+
+
+    `Plays ``Well ``with ``HIML `
+
+
+    `Terms ``to ``Know... `
+
+
+    `Let''s ``Get ``Coding `
+
+
+    `Making ``the ``Call. `
+
+
+    `Games ``Pilanherenn. `
+
+
+    `Just ``the ``Beginning `
+
+
+    `GOSiS''a `
+
+
+    `Ting ``ieee ``iy: `
+
+
+    `Indexes) `
+
+
+    `re a. `
+
+
+    `Websites.......... `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_6_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_6_1.png)'
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: '`Have ``you ``ever ``played ``a ``game ``or ``looked ``at ``a ``slideshow `
+
+
+    `of ``pictures ``online ``in ``your ``web ``browser? ``If ``so, ``then ``you''ve
+    `
+
+
+    `likely ``visited ``a ``web ``page ``that ``uses ``JavaScript. ``JavaScript ``is
+    ``a `
+
+
+    `popular ``programming ``language ``that ``brings ``web ``pages ``to ``life. `
+
+
+    `From ``games ``to ``entire ``business ``applications ``such ``as ``word `
+
+
+    `processors ``and ``spreadsheets, ``it''s ``hard ``to ``imagine ``the ``World
+    `
+
+
+    `Wide ``Web ``without ``it. `
+
+
+    `In ``the ``mid-1990s, ``coder ``Brendan ``Eich ``wrote ``Mocha, `
+
+
+    `which ``was ``an ``early ``version ``of ``JavaScript. ``In ``the ``early ``days
+    `
+
+
+    `of ``the ``Internet, ``web ``pages ``were ``mostly ``basic ``text ``files, ``which
+    `
+
+
+    `were ``static, ``or ``unchanging. ``Early ``web ``pioneers ``wanted ``a `
+
+
+    `way ``to ``make ``web ``pages ``more ``dynamic ``and ``interactive. ``That `
+
+
+    `required ``a ``new ``programming `
+
+
+    `language ``made ``specifically ``with `
+
+
+    `web ``pages ``in ``mind. ``The ``result `
+
+
+    `was ``JavaScript. ``Today, ``JavaScript `
+
+
+    `is ``used ``to ``create ``all ``sorts ``of `
+
+
+    `online ``programs ``that ``run ``through `
+
+
+    `web ``browsers. `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_7_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_7_1.png)'
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: '`ad `
+
+
+    `ae `
+
+
+    `ed `
+
+
+    `ecm `
+
+
+    `ser `
+
+
+    `2 `
+
+
+    `Ss `
+
+
+    `ee `
+
+
+    `. `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_8_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_8_1.png)'
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: '`cript ``is ``one ``of ``the `
+
+
+    `main ``parts ``of ``modern ``website ``design. ``Programmers ``use `
+
+
+    `HTML, ``CSS, ``and ``JavaScript ``to ``create ``web ``pages ``that `
+
+
+    `users ``can ``interact ``with ``by ``using ``a ``mouse ``and ``keyboard ``or
+    `
+
+
+    `a ``touchscreen. ``However, ``of ``those ``three ``main ``parts, ``only `
+
+
+    `JavaScript ``i ``is ``considered ``a ``true ``programming ``language. `
+
+
+    `By ``using ``lines ``of ``code ``made ``up ``of ``words ``and `
+
+
+    `symbols, ``web ``designers ``can ``use ``JavaScript ``to ``create `
+
+
+    `interactive ``pages ``for ``website ``visitors. ``A ``page ``may ``be `
+
+
+    `able ``to ``detect ``mouse ``clicks, ``keystrokes, ``and ``much ``more. `
+
+
+    `a `
+
+
+    `This ``allows ``web ``pages ``to ``respond ``to ``users ``with ``pop-up `
+
+
+    `messages, ``moving ``images, ``sounds, ``and ``videos. `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_9_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_9_1.png)'
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: '`JavaScript `
+
+
+    `can ``work `
+
+
+    `on `
+
+
+    `most ``computers, `
+
+
+    `even `
+
+
+    `if `
+
+
+    `they''re ``not ``connected `
+
+
+    `to ``the ``Internet `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_10_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_10_1.png)'
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: '`employ `
+
+
+    `ogic `
+
+
+    `ther ``key ``word `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_11_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_11_1.png)'
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: '`JavaScript ``15 ``usually ``run `
+
+
+    `on ``the ``client ``side. ``This `
+
+
+    `means ``that ``the ``code ``1s `
+
+
+    `executed ``on ``the ``user''s `
+
+
+    `computer ``instead ``of ``the ``web `
+
+
+    `server ``that ``provided ``the `
+
+
+    `web ``page ``over ``the ``Internet. `
+
+
+    `Breaking ``the ``Code `
+
+
+    `Many ``programming ``languages, ``such ``as ``Scratch ``and ``Hopscotch, `
+
+
+    `require ``a ``GUI ``(GOO-ee), ``or ``graphical ``user ``interface, ``in ``order
+    ``to `
+
+
+    `write ``code. ``“Graphical” ``refers ``to ``graphics, ``which ``are ``pictures
+    `
+
+
+    `and ``shapes. ``An ``“interface” ``is ``a ``way ``two ``things—such ``as ``a
+    `
+
+
+    `computer ``and ``a ``user—communicate ``with ``each ``other. ``However, `
+
+
+    `JavaScript ``doesn''t ``need ``its ``own ``GUI. ``It’s ``a ``written-text ``language
+    `
+
+
+    `and ``can ``be ``created ``in ``any ``basic ``text-editor ``program. `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_12_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_12_1.png)'
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: '# Plays Well with HTML
+
+
+    JavaScript was designed to work closely with HTML. HTML is the standard language
+    needed to create a web page. Web browsers convert HTML into what we see as web
+    pages on computer screens. JavaScript is able to manipulate, shape, all the HTML
+    elements on a web page. This makes it a powerful tool for creating web applications.
+
+    Programmers can place JavaScript code right inside HTML code. When a web browser
+    loads HTML to display a web page, it also executes, or runs, all of the JavaScript
+    code it finds inside the HTML. Web browsers execute the JavaScript code in the
+    order in which it appears. This means JavaScript code in the beginning of the
+    HTML is executed before code near the end. A common use for JavaScript is to let
+    users know if they made an error while filling out a form online.'
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: '`\-ollery `
+
+
+    `grey ``4 `
+
+
+    `; `
+
+
+    `$ ``Ga), `
+
+
+    `Lefty ``\= `
+
+
+    `8p ``94 `
+
+
+    `, `
+
+
+    `ra, ``aa, `
+
+
+    `\-Qollery ``.previtewer, `
+
+
+    `Ger ``oaihy `
+
+
+    `ere ``eee `
+
+
+    `& `
+
+
+    `eeccio ``Cman-widiy ``127 ``\> ``4 `
+
+
+    `case-study `
+
+
+    `Muse ``| `
+
+
+    `paddings ``Vis See ``ay `
+
+
+    `case-study ``©) ``4 `
+
+
+    `font-size. ``Bho=$ `
+
+
+    `Line-heights ``Shon `
+
+
+    `sproject ``qt `
+
+
+    `Even ``with ``a ``good ``plan ``in `
+
+
+    `place, ``many ``programmers ``need `
+
+
+    `to ``tinker ``with ``code ``to ``get ``it `
+
+
+    `to ``work ``the ``way ``they ``want. `
+
+
+    `padding-bottor ``Box} `
+
+
+    `nwt? `
+
+
+    `\= `
+
+
+    `an `
+
+
+    `backgrounds ``repos ``Wy ``By `
+
+
+    `padding-top\* ``SQony `
+
+
+    `¥ ``eojectsofter ``q `
+
+
+    `height\* ``TOS `
+
+
+    `: `
+
+
+    `aprion ``1 `
+
+
+    `5 `
+
+
+    `.descrrye’ `
+
+
+    `GR `
+
+
+    `prose’ ``¢-colunn-g9P\* ``2S’ `
+
+
+    `s `
+
+
+    `OD `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_14_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_14_1.png)'
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: '# Terms to Know
+
+
+    Coding isn''t just for computer specialists. Anyone can do it! Before we run through
+    a few examples, here''s a helpful list of terms you''ll need to understand. You''ll
+    be coding with JavaScript in no time!
+
+
+    > You don''t have to be an expert-or even an adult to learn how to code. Check
+    to see if your school or local library offers a coding program and get started
+    today!
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_15_0.png)'
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: '`alert: ``A ``built-in ``JavaScript ``function ``that `
+
+
+    `shows ``a ``message ``to ``the ``user ``in ``a `
+
+
+    `pop-up ``window. `
+
+
+    `code ``library: ``Prewritten ``code ``that ``performs `
+
+
+    `commonly ``used ``tasks ``to ``save ``time ``when `
+
+
+    `Creating ``a ``program. `
+
+
+    `\+ `
+
+
+    `function: ``Reusable ``code that ``performs ``a ``task `
+
+
+    `‘3 `
+
+
+    `and ``can ``be ``used ``repeatedly ``in ``a ``program. `
+
+
+    `HTML ``event: ``Something ``the ``user ``or ``browser ``does `
+
+
+    `that ``causes ``code ``to ``execute. `
+
+
+    `HTML ``tag: ``A ``single ``building ``block ``of ``a `
+
+
+    `web ``page. `
+
+
+    `pop-up ``window: ``A ``smaller ``window ``inside ``the `
+
+
+    `larger ``web ``browser ``window ``that ``is ``often `
+
+
+    `used ``to ``display ``messages `
+
+
+    `to ``the ``user. `
+
+
+    `write: ``A ``built-in ``JavaScript ``function ``that `
+
+
+    `writes ``text ``on ``the ``screen ``in ``Te `
+
+
+    `web ``browser. `
+
+
+    `: `
+
+
+    `'' `
+
+
+    `function. ``getYsxValve ``(array) `
+
+
+    `var ``matValue `
+
+
+    `(os `
+
+
+    `wat ``tnfem ``index ``array ``length; ``index ``j{ `
+
+
+    `var ``element ``\- ``errayl\[index\] ``; `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_16_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_16_1.png)'
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: '`It''s ``easy ``to ``start ``coding ``a ``JavaScript. ``All ``you ``need `
+
+
+    `is ``a ``simple ``text ``editor ``and ``a ``web ``browser. ``Most ``computers
+    `
+
+
+    `already ``have ``these ``programs ``installed, ``or ``set ``up ``for ``use. `
+
+
+    `Ie ``text ``editor ``| ``is ``where ``you ``write ``and ``save ``your ``code
+    ``as `
+
+
+    `a ``html ``extension. ``The ``.html ``extension ``tells ``the `
+
+
+    `: ``t''s ``opened ``ir `
+
+
+    `in ``a `
+
+
+    `a `
+
+
+    `web `
+
+
+    `browser. `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_17_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_17_1.png)'
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: '`The ``HTML ``tags ``<script> ``and ``</script> ``instruct ``the ``web `
+
+
+    `browser `
+
+
+    `to ``treat ``the ``text ``that ``appears ``between ``them ``as `
+
+
+    `JavaScript ``code. `
+
+
+    `In ``this ``example, ``document ``.write(“Hello, `
+
+
+    `World!”); `
+
+
+    `is ``the ``JavaScript ``code ``that ``gets ``executed. `
+
+
+    `<!doctype ``html> `
+
+
+    `1 `
+
+
+    `2 `
+
+
+    `~ ``<html> `
+
+
+    `3\. `
+
+
+    `~ ``<head> `
+
+
+    `ho `
+
+
+    `<title>My ``Webpage</title> `
+
+
+    `| `
+
+
+    `6 ``~»<script> `
+
+
+    `7 ``~~ ``document.write("Hello, ``World!"); ``~ `
+
+
+    `8 ``\= ``</script> `
+
+
+    `g `
+
+
+    `18 `
+
+
+    `</head> `
+
+
+    `11 `
+
+
+    `<body></body> `
+
+
+    `12\. ``\= `
+
+
+    `</html> `
+
+
+    `le ``containing ``your ``code ``in ``a ``browser. ``Once ``the ``file ``is ``loaded,
+    ``you `
+
+
+    `\_can ``hit ``the ``browser’s ``refresh ``button ``to ``execute ``the ``code
+    ``again. `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_18_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_18_1.png)'
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: '`The ``previous ``example ``used ``a ``JavaScript ``function `
+
+
+    `called ``“write.” ``Functions ``are ``common ``to ``many ``programming `
+
+
+    `languages ``and ``are ``important ``building ``blocks ``in ``most `
+
+
+    `applications. ``They ``do ``oT ``wee ``and ``are ``eal ``named `
+
+
+    `| ``(Hip `
+
+
+    `anything ``else ``on ``eit ``page. `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_19_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_19_1.png)'
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: '`spelling ``and ``capitalization ``matter ``when ``writing ``code. `
+
+
+    `you ``aren''t ``consistent, `
+
+
+    `your ``code ``won''t ``work ``properly. `
+
+
+    `<!doctype ``htm1> `
+
+
+    `4 `
+
+
+    `2 ``~<html> `
+
+
+    `3 ``~<head> `
+
+
+    `h `
+
+
+    ` <title>My ``Webpage</title> `
+
+
+    `: `
+
+
+    `7 `
+
+
+    `6 ``»<script> `
+
+
+    `7 ``~ ``atert("Hello, ``Wotld! ``"7: `
+
+
+    `8 ``. ``</script> `
+
+
+    `g `
+
+
+    `18 `
+
+
+    `</head> `
+
+
+    `11 `
+
+
+    `<body></body> `
+
+
+    `1) `
+
+
+    `</html> `
+
+
+    `f ``foe `
+
+
+    `Van `
+
+
+    `'' ``Breaking ``the ``Code `
+
+
+    `\- ``| ``Functions ``can ``accept ``parameters. ``A ``parameter ``is ``a ``bit
+    ``of `
+
+
+    `\_\_\_ ``information ``that ``the ``code ``inside ``the ``function ``can ``use
+    ``to `
+
+
+    `perform ``its ``task. ``In ``this ``example, ``we''re ``passing ``the ``text
+    `
+
+
+    `Hello, ``World!” ``to ``the ``alert ``function ``as ``a ``parameter. ``The ``alert
+    `
+
+
+    `function’s ``task ``is ``to ``display ``its ``parameter ``in ``a ``pop-up ``window.
+    `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_20_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_20_1.png)'
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: '`WW `
+
+
+    `) `
+
+
+    `DA `
+
+
+    `4 `
+
+
+    `\\ `
+
+
+    `ARR ``RRR `
+
+
+    `IIIA `
+
+
+    `LAN `
+
+
+    `A ``AX `
+
+
+    `A `
+
+
+    `AX `
+
+
+    `\\\\ `
+
+
+    `q `
+
+
+    `\\\\\\ ``ANY `
+
+
+    `A `
+
+
+    `\\\\\\\\\\ `
+
+
+    `Y `
+
+
+    `\\\\) `
+
+
+    `We `
+
+
+    `om `
+
+
+    `the `
+
+
+    `\\ `
+
+
+    `a `
+
+
+    `2 `
+
+
+    `oo `
+
+
+    `AN `
+
+
+    `. `
+
+
+    `Ais `
+
+
+    `A `
+
+
+    `CA `
+
+
+    `\\ `
+
+
+    `\\\\\\ `
+
+
+    `ANY `
+
+
+    `\\ `
+
+
+    `AY ``\\i ``\\\\ `
+
+
+    `\\\\ `
+
+
+    `\\ `
+
+
+    `\\ `
+
+
+    `‘ `
+
+
+    `Len `
+
+
+    `Here, ``we''re ``using ``the ``HTML ``< ``button> ``tag ``to ``create `
+
+
+    `the ``button. ``Within ``this ``tag, ``there’s ``a ``specialcommand `
+
+
+    `called ``“onClick.” ``This ``instructs ``the ``browser ``to ``“call” ``our `
+
+
+    `custom-made ``function ``“sayCheese” ``whenever ``a ``user ``click: ``: `
+
+
+    `that ``button. ``The ``phrase ``“call ``a ``function” ``means ``to ``make ``the
+    `
+
+
+    `code ``inside ``of ``that ``function ``execute. ``To ``put ``it ``all ``together,
+    `
+
+
+    `clicking ``the ``button ``will ``trigger ``the ``call ``to ``our ``“sayCheese”
+    `
+
+
+    `function, ``which ``then ``executes ``the ``familiar ``alert ``function `
+
+
+    `inside `
+
+
+    `of ``it. ``Similar ``to ``the ``last ``example, ``the ``alert ``will ``then `
+
+
+    `display ``“Cheese!” ``to ``the ``user ``in ``a ``pop-up ``window. `
+
+
+    `; `
+
+
+    `Sa `
+
+
+    `ee ``eee `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_21_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_21_1.png)'
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: '`13 `
+
+
+    `14 `
+
+
+    `15 `
+
+
+    `16 `
+
+
+    `17 `
+
+
+    `The ``command ``“onClick” ``is ``one ``of ``several ``HTML ``events. `
+
+
+    `| `
+
+
+    `An ``event ``is ``something ``the ``user `
+
+
+    `or ``web ``browser ``does `
+
+
+    `, `
+
+
+    `that ``prompts `
+
+
+    `Jav `
+
+
+    `t `
+
+
+    `<!doctype ``html> `
+
+
+    `v ``<html> `
+
+
+    `~ ``<head> `
+
+
+    `<title>My ``Webpage</title> `
+
+
+    `w ``<script> `
+
+
+    `function ``sayCheese ``() `
+
+
+    `v{ `
+
+
+    `alert("Cheese!")- `
+
+
+    `</script> `
+
+
+    `</head> `
+
+
+    `v ``<body> `
+
+
+    `<button ``onCLick="sayCheese( ``J; `
+
+
+    `">Say ``cheese!</button> `
+
+
+    `</body> `
+
+
+    `</html> `
+
+
+    `It’s ``good ``practice ``to ``use ``descriptive ``names ``for ``the ``functions
+    ``you `
+
+
+    `create ``yourself. ``This ``makes ``your ``code ``easier ``to ``understand. `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_22_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_22_1.png)'
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: '`Game ``Plan `
+
+
+    `When ``you''re ``ready ``to ``create ``your ``own ``JavaScript `
+
+
+    `program, ``here ``are ``the ``steps ``to ``follow: `
+
+
+    `1.Write ``out ``a ``simple ``plan ``for ``your ``program. `
+
+
+    `i`
+
+
+    `2.Open ``your ``text ``editor ``and ``create ``a ``file ``with `
+
+
+    `a ``.html ``extension. `
+
+
+    `3.Type ``the ``following ``HTML ``code ``in ``the ``file: `
+
+
+    `<!doctype ``html> `
+
+
+    `<html> `
+
+
+    `<head> `
+
+
+    `<title>My ``Web ``page</titLle> `
+
+
+    `<Script> `
+
+
+    `</script> `
+
+
+    `</head> `
+
+
+    `<body> `
+
+
+    `</body> `
+
+
+    `</html> `
+
+
+    `4.Type ``your ``JavaScript ``code ``between ``the ``<script> `
+
+
+    `.`
+
+
+    `and ``</script> ``HTML ``tags. `
+
+
+    `|`
+
+
+    `Ja0dVe ``the ``file. `
+
+
+    `|`
+
+
+    `6.Open ``the ``file ``in ``a ``web ``browser `
+
+
+    `to ``run ``your ``code! `
+
+
+    `|`
+
+
+    `If ``you ``make ``any ``changes ``to ``the ``code, ``be ``sure ``to ``save `
+
+
+    `the ``file ``again ``before ``you ``run ``it ``in ``the ``browser. ``Any ``changes
+    ``you `
+
+
+    `make ``won''t ``show ``in ``the ``browser ``unless ``you ``save ``the ``file
+    ``first. `
+
+
+    `Once ``you ``have ``your ``HTML ``file ``open ``in ``a ``web ``browser, ``you
+    ``can `
+
+
+    `hit ``the ``refresh ``button ``each ``time ``you''d ``like ``to ``rerun ``the
+    ``code. ``This `
+
+
+    `| ``is ``is ``if ``you ``''re ``‘making ``lots ``of ``changes ``to ``your ``code.
+    `
+
+
+    `20° `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_23_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_23_1.png)'
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: '`There ``are ``lots ``of ``online `
+
+
+    `resources `
+
+
+    `to ``help ``you `
+
+
+    `Learn ``more ``about ``coding. `
+
+
+    `Some ``websites ``even `
+
+
+    `provide ``step-by-step `
+
+
+    `instructions ``and ``let ``you `
+
+
+    `practice ``coding ``right ``on `
+
+
+    `their ``page. `
+
+
+    `lll `
+
+
+    `| `
+
+
+    `a `
+
+
+    `i `
+
+
+    `oe `
+
+
+    `a `
+
+
+    `We `
+
+
+    `ei `
+
+
+    `CN `
+
+
+    `apa, `
+
+
+    `ney `
+
+
+    `sia `
+
+
+    `insrint `
+
+
+    `att `
+
+
+    `fog `^(`Th `)
+
+
+    `asi ``ny ``i `
+
+
+    `i `
+
+
+    `sa ``MeN `
+
+
+    `wt `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_24_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_24_1.png)'
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: '`JavaScript''s ``antax ``is ``anlar ``to ``ther ``more ``complex `
+
+
+    `ai `
+
+
+    `powerful ``programming ``languages, ``such ``as ``C++ ``and ``Java. `
+
+
+    `lf ``you''re ``familiar ``with ``JavaScript, ``you ``may ``find ``it''s ``easier
+    ``to `
+
+
+    `learn ``other ``programming ``languages. `
+
+
+    `Today, ``there ``are ``many ``JavaScript ``code ``libraries ``you `
+
+
+    `can ``download ``to ``make ``building ``programs ``even ``faster ``and `
+
+
+    `easier. ``You ``can ``download ``many ``JavaScript ``frameworks `
+
+
+    `from ``the ``Internet ``for ``free. ``Frameworks ``are ``prewritten ``code `
+
+
+    `that ``give ``you ``an ``orderly ``way ``of ``creating ``programs. ``These `
+
+
+    `examples ``are ``just ``the ``beginning ``of ``what ``you ``can ``do ``with `
+
+
+    `JavaScript. ``With ``a ``plan, ``a ``text ``editor, ``and ``a ``web ``browser,
+    `
+
+
+    `it''s ``easy ``to ``start ``coding ``with ``JavaScript! `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_25_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_25_1.png)'
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: '`3 ``environment: ``The ``combination ``of ``computer ``hardware ``and `
+
+
+    `; `
+
+
+    `software ``that ``allows ``a ``user ``to ``perform ``various ``tasks. `
+
+
+    `: ``The ``last ``part ``of ``a ``filename ``that ``tells ``what ``kind ``of ``file
+    ``it ``is, `
+
+
+    `such ``as ``tor ``docx. `
+
+
+    `input: ``Information ``that ``is ``entered ``into ``a ``computer. `
+
+
+    `\_ ``ee `
+
+
+    `logic: ``A ``proper `
+
+
+    `or ``reasonable ``way ``of ``thinking ``about ``or `
+
+
+    `understanding ``something. `
+
+
+    `syntax: ``How ``words ``are ``arranged ``to ``form ``a ``sentence. `
+
+
+    `version: ``A ``form ``of ``something ``that ``is ``different ``from ``the ``ones
+    ``that `
+
+
+    `came ``before ``it. `
+
+
+    `web ``browser: ``A ``computer ``program ``that ``aloe ``users ``to `
+
+
+    `: `
+
+
+    `search ``the ``Internet. `
+
+
+    `web ``server: ``cA `
+
+
+    `paligihape ``or ``wainicnitat ``prog `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_26_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_26_1.png)'
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: '`ao `
+
+
+    `function), ``13, ``16, `
+
+
+    `17, ``18 `
+
+
+    `B `
+
+
+    `browser, ``web, ``4, ``6, ``10, `
+
+
+    `13, 14, ``15, ``16, 18, `
+
+
+    `19,20,22 `
+
+
+    `. `
+
+
+    `c `
+
+
+    `C++, ``22 `
+
+
+    `Cascading ``Style ``Sheets `
+
+
+    `(CSS),6 `
+
+
+    `code ``library, ``13, ``22 `
+
+
+    `E `
+
+
+    `Eich, ``Brendan, ``4,5. `
+
+
+    `extension, ``14, ``20\. `
+
+
+    `frameworks, ``22 `
+
+
+    `function, ``13, 16, ``17, `
+
+
+    `| `
+
+
+    `18,19. `
+
+
+    `24° `
+
+
+    `: ``graphical ``user ``interface. `
+
+
+    `(GUN), ``9 `
+
+
+    `H `
+
+
+    `Hopscotch, ``9 `
+
+
+    `HTML, ``6, ``10, ``13, ``14, ``15, `
+
+
+    `18, ``19, ``20\. `
+
+
+    `HTML ``event, ``13, ``19 `
+
+
+    `HTML ``tag, ``13, ``15, `
+
+
+    `16, ``20\. `
+
+
+    `J `
+
+
+    `Java, ``22 `
+
+
+    `t `
+
+
+    `\_ ``LiveScript, ``5 `
+
+
+    `logic, ``8 `
+
+
+    `Mocha, ``4, ``5 `
+
+
+    `N `
+
+
+    `tscape ``Navigator, ``6 `
+
+
+    `Due ``to ``the ``changing ``nature ``of ``Internet ``links, ``Powerkids ``Press
+    ``has ``developed ``an `
+
+
+    `\_ `
+
+
+    `online ``list ``of ``websites ``related ``to ``the ``subject ``of ``this ``book.
+    ``This ``site ``is ``updated ``regularly. `
+
+
+    `Please ``use ``this ``link ``to ``access ``the ``list: ``www.powerkidslinks.com/skcc/ucjs.\_\_
+    `
+
+
+    `P `
+
+
+    `parameter,17 `
+
+
+    `pop-up ``window, ``13, ``16, `
+
+
+    `17.18°°> `
+
+
+    `a `
+
+
+    `Scratch, ``9 `
+
+
+    `server, ``web, ``9° `
+
+
+    `syntax, ``22 `
+
+
+    `T `
+
+
+    `text ``editor, ``9, ``14, ``20, ``22 `
+
+
+    `WwW `
+
+
+    `ce `
+
+
+    `write ``JavaScript `
+
+
+    `function), `
+
+
+    `13, ``15, ``16 `
+
+
+    `Gt `
+
+
+    `1h `
+
+
+    `Hot. ``1ot `
+
+
+    `oOvot.: `
+
+
+    `DO `
+
+
+    `OY `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_27_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_27_1.png)'
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: '`bes `
+
+
+    `ee `
+
+
+    `’ ``A `
+
+
+    `4 ``ied `
+
+
+    `ile `
+
+
+    `en `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_30_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_30_1.png)'
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: '`Coding ``for ``Hear ``sey `
+
+
+    `Understanding ``Coding ``with ``Apple ``Swift `
+
+
+    `Understanding ``Coding ``with ``. `
+
+
+    `Understanding ``STE ``with ``JavaScript `
+
+
+    `What ``Are `
+
+
+    `What ``Are ``Enteorited ``Circuits? `
+
+
+    `What ``Are ``Programs ``and ``Applications? `
+
+
+    `What ``\[5 `
+
+
+    `\= `
+
+
+    `What ``Is ``HTML ``Code? `
+
+
+    `What ``Is ``User ``Experience ``Design? `
+
+
+    `What ``Is ``User ``Interface ``Design? `
+
+
+    `Why ``Are ``There ``So ``Many ``?rocranmine ``een `
+
+
+    `| `
+
+
+    `ISBN: `
+
+
+    `9781508155 `
+
+
+    `LI `
+
+
+    `deg `
+
+
+    `e `
+
+
+    `| `
+
+
+    `9''781508!" `
+
+
+    ![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_31_0.png)![](img/d58e8e46bd867e5a296f2ee0f2d4ca26_31_1.png)'
+  merge: -1
+  pgno: 31
