@@ -1,0 +1,3363 @@
+- img_proc: true
+  md: '© Engr. Michael David
+
+
+    All right reserved. No part of this work may be reproduced, stored in a retrieval
+    system, or transmitted in any form or means, electronics, mechanical, photocopying,
+    recording or otherwise without the permission or acknowledgement of the author.'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: '# HTML, CSS, Bootstrap, Javascript and jQuery'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: '# # Table of contents
+
+
+    +   1 HTML .................................................................................................................................................
+    . . . . . . . . 1
+
+    1.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . 1
+
+    1.2 First code . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . 2
+
+    1.3 Basic tags . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . 4
+
+    1.4 Attributes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . 4
+
+    1.4.1 Attribute ''name'' and ''value'' ................................................................................
+    4
+
+    1.4.2 Core attributes ................................................................................................................
+    4
+
+    1.5 Tables .......................................................................................................................................................
+    5
+
+    1.6 Text formatting ..............................................................................................................................
+    6
+
+    1.7 Images .....................................................................................................................................................
+    6
+
+    1.8 Lists ........................................................................................................................................................
+    8
+
+    1.9 Links ........................................................................................................................................................
+    8
+
+    1.10 Forms ......................................................................................................................................................
+    10
+
+    2 Cascading Style Sheets (CSS) ................................................................................................
+    15
+
+    2.1 Introduction ...................................................................................................................................
+    15
+
+    2.1.1 Inline CSS ...................................................................................................................................
+    15
+
+    2.1.2 Embedded CSS ..........................................................................................................................................
+    15
+
+    2.1.3 External CSS ...................................................................................................................................
+    16
+
+    2.2 Basic CSS Selectors ................................................................................................................
+    17
+
+    2.3 Hierarchy .....................................................................................................................................
+    18
+
+    2.4 More selectors ...............................................................................................................................
+    20
+
+    2.4.1 Attribute selector ................................................................................................................
+    20
+
+    2.5 More properties ............................................................................................................................
+    21
+
+    3 Bootstrap .......................................................................................................................................
+    22
+
+    3.1 Introduction .................................................................................................................................
+    22
+
+    3.2 Setup .......................................................................................................................................
+    22
+
+    3.2.1 Download and include files ................................................................................................
+    22
+
+    3.2.2 Add CDN .......................................................................................................................................
+    23
+
+    3.2.3 Check setup ..............................................................................................................................
+    23
+
+    3.3 Grid system ...................................................................................................................................
+    24
+
+    3.3.1 Example .......................................................................................................................................
+    25
+
+    3.3.2 Nested columns ................................................................................................................
+    26
+
+    3.3.3 Offset .......................................................................................................................................
+    26
+
+    3.4 Components ................................................................................................................
+    27
+
+    3.4.1 Labels .......................................................................................................................................
+    28
+
+    3.4.2 Buttons .................................................................................................................................
+    29
+
+    3.4.3 Forms .......................................................................................................................................
+    29
+
+    3.4.4 Horizontal form ................................................................................................
+    30
+
+    3.4.5 Form elements ................................................................................................
+    33'
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: "+   Control size...........................................................................................................\
+    \ 35\nMore buttons......................................................................................................\
+    \ 37\nInput group.......................................................................................................\
+    \ 39\nNavigation bar (navbar)...............................................................................................\
+    \ 42\n4 JavaScript 45\n  4.1 Introduction...............................................................................................\
+    \ 45\n  4.2 First code ...............................................................................................\
+    \ 45\n    4.2.1 JavaScript in HTML file ............................................................\
+    \ 45\n    4.3 Keywords, Datatypes, Variables and Operators ................. 46\n\
+    \      4.3.1 Keywords ......................................................................................\
+    \ 46\n      4.3.2 Datatypes ......................................................................................\
+    \ 47\n      4.3.3 Variables .......................................................................................\
+    \ 47\n      4.3.4 Operators ...................................................................................\
+    \ 48\n        4.3.5 String to number conversion ............................................\
+    \ 49\n  4.3.6 Convert to integer ................................................................\
+    \ 49\n  4.3.7 Convert to float .......................................................................\
+    \ 50\n  4.3.8 Math .......................................................................................\
+    \ 50\n  4.3.9 String ...................................................................................\
+    \ 50\n    4.3.10 Arrays ................................................................................\
+    \ 50\n  4.4 Control structure, loops and functions .................................\
+    \ 51\n  4.4.1 If-else .................................................................................\
+    \ 51\n  4.4.2 Switch-case-default .......................................................\
+    \ 52\n  4.4.3 For loop ...............................................................................\
+    \ 52\n    4.4.4 While loop ............................................................................\
+    \ 52\n  4.4.5 do-while ..............................................................................\
+    \ 53\n  4.4.6 for-in loop ............................................................................\
+    \ 53\n  4.4.7 Continue and break ........................................................\
+    \ 53\n  4.4.8 Functions ............................................................................\
+    \ 54\n  4.5 Event handling .......................................................................\
+    \ 55\n  4.6 Conclusion ............................................................................\
+    \ 55\n5 jQuery 56\n  Introduction ...............................................................................\
+    \ 56\n  Requirements ..............................................................................\
+    \ 56\n  Add contents ...............................................................................\
+    \ 57\njQuery examples ............................................................................\
+    \ 58\n  Add jQuery code...............................................................................\
+    \ 58\n  jQuery in separate file.......................................................................\
+    \ 60\n  Get input from user.......................................................................\
+    \ 61\nSelectors ................................................................................\
+    \ 64\n  Select elements .......................................................................\
+    \ 64\n  Filters .......................................................................................\
+    \ 67\nOperations ................................................................................\
+    \ 69\nEvent handling ............................................................................\
+    \ 69"
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: '# Chapter 1
+
+
+    # HTML
+
+
+    # Introduction
+
+
+    In this chapter, various component of HTML are discussed to design a web page.
+
+
+    The basic structure for an HTML page is shown below.
+
+
+    +   * Entries inside the /<.../> are known as tags. Most of the tags have an opening
+    and closing e.g. <head> (opening head) and </head> (closing head). Some of the
+    tags do not have closing tags e.g. <!DOCTYPE ... and />.
+
+    * The comments are written between ''<!--'' and ''-->''.
+
+    * Here Line 1 gives the details of the ''HTML version'' to the web-browser. The
+    ''html'' tells it is version 5. The ''head'' tag (beginning of the html) and links
+    for the css files'' etc.
+
+    * The ''body'' tag (7-11) contains the actual HTML code which is displayed on
+    the web-browser. We add all the JavaScript related codes just before the closing
+    body tag (<body>).
+
+
+    ```
+
+    <!DOCTYPE html> <!-- tells browser above the html version -->
+
+    <html>
+
+    <head>
+
+    <!-- header related tags e.g. title, links etc. -->
+
+    </head>
+
+    <body>
+
+    <!-- actual HTML document here -->
+
+    <!-- add JavaScript files here -->
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # First code
+
+
+    In below code, the message "Hello World" is displayed on the HTML page. The Fig.
+    1.1 is the resultant HTML.
+
+
+    +   * The title (Line 4) appears on the top of the browser.
+
+    * The tag <h1> is called ''header'' tag, which has the larger size than the normal
+    text (see the size of ''Hello World!'')
+
+    * The tag <p> is called the ''paragraph'' tag, which can be used to write the
+    paragraphs.
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    ```'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: '```
+
+    <html>
+
+    <head>
+
+    <title>HTML Tutorial</title>
+
+    </head>
+
+    <body>
+
+    <h1>Hello World!</h1>
+
+    <p>This is the first HTML code</p>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    ![](img/f70659d57873500d1a13fffa6bbe945a_5_0.png)
+
+
+    Fig. 1.1: First code
+
+
+    # Basic tags
+
+
+    +   * The Table 1.1 shows the list of tags which are required for writing the
+    basic ''HTML'' codes i.e. without any style e.g. bold, italics and numbering each
+    etc.
+
+
+    Table 1.1: List of basic tags
+
+
+    | Tag | Description | Example |
+
+    |---|---|---|
+
+    | h1, ... h6 | Header tag h1 to h6 | <h2> Hi </h2> |
+
+    | p | paragraphs (Lines at the end) | <p> Hi </p> |
+
+    | span | No line change after span | <span>Hi</span><span> Bye. |
+
+    | div | make division between contents | <div> ... </div> |
+
+    | hyperlink | Move content to center | see Section 1.9 |
+
+    | center | | <center> Hi </center> |
+
+    | br | Line break (no closing) | <br /> or <br> |
+
+    | hr | horizontal line (no closing tag) | <hr> or <hr> |
+
+    | pre | preserve formatting | <pre> ...... </pre> |
+
+    | table | insert table | see Section 1.5 |
+
+
+    +   * Let''s see the example of each of these tags,
+
+
+    > Note: All the new codes are added below the previous codes in the ''body'' tag.
+    Therefore only newly added codes are shown in the tutorial.
+
+
+    ```
+
+    <h2> Heading 2 </h2>
+
+    <h6> He heading 6 </h6>
+
+    ```'
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: '# 1.3. Basic tags (continued from previous page)
+
+
+    ```
+
+    <p> This is paragraph </p>
+
+    <span> This is span.</span>
+
+    <span> The ''br'' tag is used after span to break the line </span>
+
+    <br/>
+
+    <div style="color:blue">
+
+    nThe ''div'' tag can be used for formatting the tags inside it at once using ''style''
+    and ''classes'' and etc.
+
+    <p> This paragraph is inside the ''div'' tag </p>
+
+    <span> This span is inside the ''div'' tag </span>
+
+    <br/>
+
+    </div>
+
+    <center>
+
+    <h3> Heading 3 is centered</h3>
+
+    <p><span> Centered span inside the paragraph. </span><p>
+
+    </center>
+
+    Two horizontal line is drawn using two ''hr'' tag.
+
+    <hr/>
+
+    <hr/>
+
+    <pre>''pre'' tag preserve the formatting (good for writing codes) # Python code
+
+    x=2
+
+    y=3
+
+    print(x+y)
+
+    </pre>
+
+    ```
+
+
+    +   * Fig. 1.2 is the output of above code. Read the text to understand each tag.,
+
+
+    # Heading 2
+
+
+    Heading 6
+
+
+    This is paragraph
+
+    The ''br'' tag is used after span to break the line
+
+    The ''div'' tag can be used for formatting the tags inside it at once using ''style''
+    and ''classes'' etc.
+
+    nThis paragraph is inside the ''div'' tag
+
+    This span is inside the ''div'' tag
+
+
+    # Heading 3 is centered
+
+
+    Centered span inside the paragraph.
+
+
+    Two horizontal line is drawn using two ''hr'' tag.
+
+
+    ```
+
+    ''pre'' tag preserve the formatting (good for writing codes)
+
+    # Python code
+
+    x=2
+
+    y=3
+
+    print(x+y)
+
+    ```
+
+
+    ![](img/f70659d57873500d1a13fffa6bbe945a_6_0.png)'
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: '# Attributes
+
+
+    In Fig.1.2, we saw an example of attribute (ie. style) which changed the color
+    of all the elements to ''blue'' inside the ''div'' tag.
+
+
+    # Attribute ''name'' and ''value''
+
+
+    +   - Attribute is defined inside the opening part of a ''tag''. For example,
+    in the code below, the attribute ''style'' is defined inside the ''div'' tag.
+
+
+    ```
+
+    <div style="color:blue;">
+
+    </div>
+
+    ```
+
+
+    +   - Attribute has two parts i.e. ''name'' and ''value''. For example, in the
+    above code, name and value of the attribute are ''style'' and ''blue'' respectively.
+
+
+    # Core attributes
+
+
+    Below are the three attributes which are frequently used in web design.
+
+
+    +   - id: The ''id'' is the unique name which can be given to any tag. This is
+    very useful in distinguishing the element with other elements.
+
+    <p id="para1">This is paragraph with id ''para1'' </p>
+
+    <p id="para2">This is paragraph with id ''para2'' </p>
+
+    <p class="blue">This is paragraph with class ''blue'' </p>
+
+    <span class="b">This spans with class ''b''</span>
+
+    - class: The attribute ''class'' can be used with multiple tags. This is very
+    useful in groups HTML design.
+
+    - style: We already saw the example of style attribute, which can be used to change
+    the formatting of the text in HTML design. We can specify various styles which
+    are discussed in Chapter 2.
+
+
+    ```
+
+    <p style="font-weight:bold;color:red;">Style attribute is used to bold and color</p>
+
+    ```
+
+
+    > Note: Above three attributes are used with ''CSS (casading style sheet) and
+    JavaScript/jQuery, which are the very handy tools to enhance the look and functionalities
+    of the web-page respectively. The CSS is discussed in Chapter 2, JavaScript and
+    jQuery are discussed in Chapter 4 and Chapter 5.
+
+
+    +   - We can also define multiple attributes for one tag as shown:
+
+    <p class="my_class" id="para_class" style="color:green;\>Multiple attributes </p>
+
+    - The other attributes are discussed in Table 1.2
+
+
+    | Name | Values | Description |
+
+    |---|---|---|
+
+    | id | user defined names | <p id="1"> Hi </p> |
+
+    | class | user defined names | <p class="_class"> Hi </p> |
+
+    | style | CSS styles | <p style="color:red;font-weight:bold;">Hi </p> |
+
+    | align | left, right, center | horizontal alignment |
+
+    | width | numeric value or % value | width of images and tables etc. |
+
+    | height | numeric value | height of images and tables etc. |'
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: "# Tables\n\n# 1.4. Attributes\n\nIn this section, we will learn to draw tables\
+    \ along some attributes which are discussed in Table 1.2. Table 1.3 shows the\
+    \ list of tags available to create the table, which are used in Listing 1.1.\n\
+    \n# Table 1.3: Tags and attributes for creating tables\n\n| Tag | Description\
+    \ |\n| --- | --- |\n| table | beginning and end of table |\n| tr | row of table\
+    \ |\n| th | header cell |\n| td | data cell |\n| Attributes | |\n| rowspan | number\
+    \ of rows to merge |\n| colspan | number of columns to merge |\n| border | width\
+    \ of border |\n| cellpadding | width of whitespace between two border |\n| cellspacing\
+    \ | width of whitespace within a border |\n| bgcolor | background color |\n| bordercolor\
+    \ | color of border |\n| width | width of table (numeric or %) |\n| height | height\
+    \ of table (numeric) |\n| caption | caption for table |\n\n+   - Some of the attributes\
+    \ of Table 1.3 are used in below example,\n\n# Listing 1.1: With border and color\n\
+    \n```\n<!-- border - color, width and height -->\n<table border=\"1\" bgcolor=\"\
+    black\" width=\"450\" height=\"100\">\n<caption>Table 1 : Various tags of table</caption>\n\
+    <tr bgcolor=\"red\">\n  <th>Column 1</th></th> <!-- header -->\n  <th>Column 2</th></th>\
+    \ -->\n  <th>Column 3</th></th> -->\n</tr>\n<tr bgcolor=\"yellow\"> <!-- row -->\n\
+    \  <td>Data 1</th> <!-- data -- -->\n  <td>Data 2</th> <!-- data -- -->\n  <td>Data\
+    \ 3</th> <!-- data -- -->\n</tr>\n<tr bgcolor=\"cyan\"> <!-- background color\
+    \ -->\n  <td colspan=\"2\">New Data 1</td> <!-- column span -->\n  <td>New Data\
+    \ 2</td> <!-- data -- -->\n</tr>\n</table>\n%\n%                %\n<!-- width\
+    \ in -->\n<table border=\"1\" bordercolor=\"black\" width=\"80\" height=\"80\"\
+    >\n<caption>Table 2 : Width is 80</caption>\n<tr bgcolor=\"red\">\n  <th>Column\
+    \ 1</th></th>\n  <th>Column 2</th></th>\n  <th>Column 3</th></th>\n</tr>\n</table>\n\
+    ```"
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: "```\n<tr bgcolor=\"cyan\" <!-- row -->\n  <td>Data 1</td><!-- data -->\n  <td>Data\
+    \ 2</td>\n  <td>Data 3</td>\n</tr>\n</table>\n```\n\n+   - Fig. 1.3 is the output\
+    \ of above code,\n\n| Column 1 | Column 2 | Column 3 |\n| --- | --- | --- |\n\
+    | Data 1 | Data 2 | Data 3 |\n| New Data 1 | | New Data 2 |\n\nTable 1: Various\
+    \ tags of table\n\n| Column 1 | Column 2 | Column 3 |\n| --- | --- | --- |\n|\
+    \ Data 1 | Data 2 | Data 3 |\n\nTable 2 : Width is 80%\n\nFig. 1.3: Table generated\
+    \ by Table 1.3\n\n# Text formatting\n\nIn this section, we will see some of the\
+    \ text formatting options (see Table 1.4) e.g. bold, italic, subscript and strike\
+    \ etc.\n\nTable 1.4: Text formatting\n\n| Tag | Description |\n| --- | --- |\n\
+    | b | bold |\n| i | italic |\n| u, ins | underline |\n| strike, del | strike |\n\
+    | sup | superscript |\n| sub | subscript |\n| big | big size text |\n| small |\
+    \ small size text |\n\n+   - Below are the some of the examples of text formatting,\
+    \ whose results are shown in Fig. 1.4,\n\n```\n<!-- Text formatting -->\n<p>This\
+    \ is <b>bold/</b></b> text</p>\n<p>This is <strike>striked</strike> text</p>\n\
+    <p>This is <sub>subscript</sub> text</p>\n```\n\n# Images\n\nImage has two important\
+    \ attributes i.e. 'src' and 'alt' as described below,\n\n+   - src tells the location\
+    \ of 'image' file e.g. in Line 2 the image 'logo.jpg' will be searched inside\
+    \ the folder 'img'."
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: '# This is bold text
+
+
+    # This is striked text
+
+
+    # This is subscript
+
+
+    Fig. 1.4: Text formatting
+
+
+    +   * alt is the ''alternate text'' which is displayed if image is not found.
+    For example, in Line 6, the name of the image is incorrectly written i.e. ''logo''
+    (instead of ''logo''), therefore the value of ''alt'' i.e. ''Missing Logo.jpg''
+    will be displayed as shown in Fig. 1.5.
+
+
+    ```
+
+    <!-- Images --
+
+    <img src="img/logo.jpg" alt="Logo.jpg" width="200"/>
+
+    <br/> <br>
+
+    <img src="img/logoa.jpg" alt="Missing Logo.jpg" width="200"/>
+
+    ```
+
+
+    ![](img/f70659d57873500d1a13fffa6bbe945a_10_0.png)
+
+
+    Fig. 1.5: Images
+
+
+    **Note:** We can use other attributes as well e.g. ''height'', ''align'' and ''border''
+    etc.'
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: "# Lists\n\nThere are three type of lists in HTML,\n\n+   - Unordered list :\
+    \ bullet is used in it (see Lines 2 and 9)\n- Ordered list : numbers are used\
+    \ in it (see Lines 15, 22 and 28)\n- Definition list : This can be used for writing\
+    \ definitions in HTML (see Line 35)\n\n```\n<!-- Lists -->\n<!-- unordered list\
+    \ -->\n<ul>\n  <li>Pencil</li>\n  <li>Pencil</li>\n  <li>Eraser</li>\n</ul>\n\n\
+    <ul type=\"circle\"> Change bullets : 'square', 'circle' or 'disc'\n  <li>Pencil</li>\n\
+    \  <li>Pencil</li>\n  <li>Eraser</li>\n</ul>\n\n<!-- ordered list --\n<ol>\n \
+    \ <li>Pencil</li>\n  <li>Pencil</li>\n  <li>Eraser</li>\n</ol>\n\n<ol type=\"\
+    i\"> Change style : 'i', 'I', '1', 'a' or 'A'\n  <li>Pencil</li>\n  <li>Pencil</li>\n\
+    \  <li>Eraser</li>\n</ol>\n\n<ol type=\"l\" start=\"5\"> Start from 'v'\n  <li>Pencil</li>\n\
+    \  <li>Pencil</li>\n  <li>Eraser</li>\n</ol>\n\n<!-- Definition list --\n<dl>\n\
+    \  <dt>HTML</dt>\n  <dd>HTML is easy</dd>\n  <dd>HTML is good</dd>\n</dl>\n```\n\
+    \n# Links\n\n```\n<!-- links -->\n<p><a href=\"#para1\" id=\"para1\">Link</a></p>\n\
+    <a href=\"http://python.dsp.readocs.io/\"> PythonDSP </a>\n```\n\nJavaScript Tutorial\
+    \ </a> in same window.</p>\n<p><a href=\"js.html\" target=\"_blank\"> JavaScript\
+    \ Tutorial </a> in newWindow.</p>\n\n(continues on next page)"
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: '# Unordered List
+
+
+    +   * Pen
+
+    * Pencil
+
+    * Eraser
+
+
+    Change bullets : ''square'', ''circle'' or ''disc''
+
+    * Pen
+
+    * Pencil
+
+    * Eraser
+
+
+    # Ordered List
+
+
+    +   1. Pen
+
+    2. Pencil
+
+    3. Eraser
+
+
+    Change style : ''i'', ''I'', ''1'', ''a'' or ''A''
+
+    i. Pen
+
+    ii. Pencil
+
+    iii. Eraser
+
+
+    Start from ''v''
+
+    v. Pen
+
+    vi. Pencil
+
+    vii. Eraser
+
+
+    # HTML Definition List
+
+
+    HTML is easy
+
+    HTML is good'
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: '<p><a href="http://python.readthedocs.io/pdf">Download PDF, DOC or Zip Files</a></p>
+
+
+    <p><a href="mailto:thondyspl@gmail.com">Email me</a></p><p><a href="mailto:thondyspl@gmail.com?subject=Feedback">Feedback</a></p>
+
+
+    # Go to paragraph with id=''paral''
+
+
+    # PythonDSP
+
+
+    # JavaScript Tutorial in same window.
+
+
+    # JavaScript Tutorial in new Window.
+
+
+    # Download PDF, DOC or Zip Files
+
+
+    # Email me
+
+
+    # Feedback email
+
+
+    Note: We can change the color of the links using ''alink (active link)'', ''link''
+    and ''vlink (visited link)'', by defining these attributes in the ''body tag''
+    as shown below,
+
+
+    ```
+
+    <body alink="green" link="blue" vlink="red">
+
+    ```
+
+
+    # Forms
+
+
+    Forms can have different types of controls to collect the input-data from users,
+    which are listed below and shown in Table 1.5.
+
+
+    +   * Text input
+
+    * Text area
+
+    * Radio button
+
+    * Checkbox
+
+    * Select box
+
+    * File select
+
+    * Buttons
+
+    * Submit and reset buttons
+
+    * Hidden input'
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: '# Chapter 1. HTML
+
+
+    Table 1.5: List of control inputs and their attributes
+
+
+    | Control | Attributes | Values | Description |
+
+    | --- | --- | --- | --- |
+
+    | Input : text | type | text, password | initial value in the area |
+
+    | | name | user-defined | name sent to server |
+
+    | | size | numeric value | width of the text area |
+
+    | | maxlength | numeric value | maximum number of characters |
+
+    | Input : radio | type | user-defined | name sent to server |
+
+    | | name | user-defined | value of the button if selected |
+
+    | | checked | checkbox | check the button by default |
+
+    | Input : box | name | user-defined | name sent to server |
+
+    | | value | user-defined | value of the box if selected |
+
+    | | checked | | check the box client script |
+
+    | Input : button | type | submit | submit the form and ''action'' |
+
+    | | reset | | create image button |
+
+    | | method | get, post | get or post method |
+
+    | | action | user-defined | action to perform on submit |
+
+    | Input : hidden | hidden | will not display on html, but can be used for sending
+    information to server |
+
+    | Selection box | name | user-defined | name sent to server |
+
+    | | size | numeric value | enables scroll (default dropdown) |
+
+    | | multiple | numeric value | select multiple items |
+
+    | | value | user-defined | value of the item if selected |
+
+    | | selected | | select item by default |
+
+    | Text area | rows, cols | number of rows and cols |
+
+    | | name | user-defined | name sent to server |
+
+
+    * Below are the example of the control inputs in Table 1.5
+
+
+    ```
+
+    <!-- Forms --
+
+    <form>
+
+    <h4>Text input </h4></h4>
+
+    Name: <input type="text" name="user_name" size="4" value="e.g. meher21" maxlength="10"><br>Password:
+    <input type="password" name="user_pass"><br>
+
+
+    <h4>Radio button - name should be different </h4>
+
+    <input type="radio" name="r_gender"> Male
+
+    <input type="radio" name="r_gender"> Female
+
+    <input type="radio" name="r_gender" checked> Infant
+
+
+    <h4>Checkbox - name should be different </h4>
+
+    <input type="checkbox" name="c_male" checked> Male
+
+    <input type="checkbox" name="c_female"> Female
+
+    <input type="checkbox" name="c_infant"> Infant
+
+
+    <h4>Select box : dropdown </h4>
+
+    <select name="s_box">
+
+    <option value="s_male">Male</option>
+
+    <option value="s_female" selected>Female</option>
+
+    <option value="s_infant">Infant</option>
+
+    </select>
+
+
+    <h4>Select box : scroll </h4>
+
+    ```
+
+
+    (continues on next page)'
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: '# L10. Forms (continued from previous page)
+
+
+    ```
+
+    <select name="s_box" size="4" multiple>
+
+    <option value="s_male" selected>Male</option>
+
+    <option value="s_female">Female</option>
+
+    <option value="s_infant">Infant 1</option>
+
+    <option value="s_infant" selected>Infant 2</option>
+
+    <option value="s_infant">Infant 3</option>
+
+    <option value="s_infant">Infant 4</option>
+
+    </select>
+
+
+    <h4>Text area</h4>
+
+    <textarea rows="10" cols="30"\ name="txt_area">Initial Text x = 2
+
+    y = 3
+
+    </textarea> <!-- formatting work as pre -->
+
+
+    </form>
+
+    ```
+
+
+    Fig. 1.7 is the output of above code,
+
+
+    +   - Below is the code which shows the working of various buttons. Note that
+    method and action are defined in this form, which will be triggered on ''submit''
+    button. Lastly, ''hidden'' option is used in this example.
+
+
+    ```
+
+    <form method="get" action="jquery.html">
+
+    <h4>Buttons and Hidden</h4>
+
+
+    Name: <input type="text" name="user_name" size="4" value="Meher"
+
+    length="16">Password: <input type="password" name="user_pass"><br>
+
+
+    <input type="button" onclick="alert(''Hello'')" name="b_alert" value="Say Hello"<br>
+
+    <input type="submit" name="b_submit" value="Go to jQuery"<br>
+
+    <input type="reset" name="b_reset" value="Reset"<br>
+
+
+    <input type="hidden" name="h_data" value="html_tutorial">
+
+    </form>
+
+    ```
+
+
+    Fig. 1.8 is the output of above code,'
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: "# Text input\n\nName : e.g. meher21\n\nPassword : \n\nRadio button: name should\
+    \ be same\n\n+   - Male ☐ Female ☆ Infant\n\nCheck box : name should be different\n\
+    \n+   - ☑ Male ☐ Female Infant\n\nSelect box : drop-down\n\n![](img/f70659d57873500d1a13fffa6bbe945a_16_0.png)\n\
+    \nSelect box : scroll\n\n![](img/f70659d57873500d1a13fffa6bbe945a_16_1.png)\n\n\
+    Text area\n\n```\nInitial Text\nx = 2\ny = 3\n```\n\n> Fig. 1.7: Various control\
+    \ inputs for creating form"
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: '# Buttons and Hidden
+
+
+    Name : Meher
+
+    Password :
+
+    Say Hello
+
+    Go to jQuery Reset
+
+
+    Fig. 1.8: Various buttons and hidden-input in the form'
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: "# Chapter 2\n\n# Cascading Style Sheets (CSS)\n\n# Introduction\n\nCSS is used\
+    \ to enhance the web page. In Section 1.4.2, we saw the attribute 'style', which\
+    \ is used for changing the color of the text. Let's rewrite the example of 'style'\
+    \ as shown in next section.\n\n# Inline CSS\n\n+   - Below code is an example\
+    \ of 'inline CSS', where the styles are defined inside the individual tags.\n\n\
+    ```\n<!-- css.html -->\n<!DOCTYPE html>\n<html>\n<head>\n  <title>CSS Tutorial</title>\n\
+    </head>\n<body>\n  <h3 style=\"color:blue\"> Heading 1</h3>\n  <h3 style=\"color:blue\"\
+    > Heading 2</h3>\n  <h3 style=\"color:blue\"> Heading 3</h3>\n</body>\n</html>\n\
+    ```\n\nThe above code, we have three 'headings' with font-color 'blue'. Suppose,\
+    \ we want to change the color to red, then we must go to individual 'h3' tag and\
+    \ change the color. This is easy in this case, but if we have 100 headings in\
+    \ 5 different 'html' files, then this process is not very handy. In such cases,\
+    \ CSS can be quite useful as shown in next section.\n\n# Embedded CSS\n\nIn the\
+    \ code, the style is embedded inside the 'style' tag as shown in Lines 8-17. Here,\
+    \ we have defined two classes i.h3_blue (Lines 21-23) and .h3_red (Lines 26-28).\
+    \ Then, the selectors at Lines 9 and 13 targets the class .h3_blue & .h3_red,\
+    \ and change the color to blue and red respectively. In this chapter, we will\
+    \ discuss the selectors (e.g. #h3_blue) in more details.\n\n# Note:\n\n+   - In\
+    \ CSS, the comments are written between /* and */."
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: "# 2.1. Introduction\n\n+   - CSS has three parts.\n- Selectors e.g. p,h3.h3_blue\n\
+    - Properties e.g. color\n- Values of properties e.g. red\n\n```\n<!-- css.html\
+    \ -->\n<!DOCTYPE html>\n<html>\n<Head>\n<title>CSS Tutorial</title>\n<style type=\"\
+    text/css\">\nh3.h3_blue{\n    /* change color to blue */\n    color: blue;\n}\n\
+    \nh3.h3_red{\n    /* change color to red */\n    color:red;\n}\n</style>\n</head>\n\
+    <body>\n<h3 class=\"h3_blue\"> Heading 1 </h3>\n<h3 class=\"h3_blue\"> Heading\
+    \ 2 </h3>\n<h3 class=\"h3_blue\"> Heading 3 </h3>\n</body>\n</html>\n```\n\n```\n\
+    <h3 class=\"h3_red\"> Heading 1 </h3>\n<h3 class=\"h3_red\"> Heading 2 </h3>\n\
+    <h3 class=\"h3_red\"> Heading 3 </h3>\n```\n\n5 Below is the output of above code,\n\
+    \n# External CSS\n\nWe can write the 'CSS' code in different file and import the\
+    \ file into 'html' document as shown in this section. This way, we can manage\
+    \ the files easily.\n\n+   - The 'CSS' code is saved in the file 'my_css.css'\
+    \ which is saved inside the folder 'asset/css'.\n\n```\n/* asset/css/my_css.css\
+    \ */\nh3.h3_blue{\n    color: blue;\n}\nh3.h3_red{\n    color:red;\n}\n```\n\n\
+    +   - Next, we need to import the CSS file into the 'html' file as shown in Line\
+    \ 7.\n\n```\n<!-- css.html -->\n(continues on next page)\n```"
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: "# Heading 1\n\n# Heading 3\n\n# Heading 3\n\n# Heading 1\n\n# Heading 3\n\n\
+    # Heading 3\n\n![](img/f70659d57873500d1a13fffa6bbe945a_20_0.png)\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n  <title>CSS Tutorial</title>\n  <link rel=\"stylesheet\"\
+    \ type=\"text/css\" href=\"asset/my_css.css\">\n</head>\n<body>\n  <h3 class=\"\
+    h3_blue\"> Heading 1</h3>\n  <h3 class=\"h3_blue\"> Heading 3</h3>\n  <h3 class=\"\
+    h3_blue\"> Heading 3</h3>\n\n  <h3 class=\"h3_red\"> Heading 1</h3>\n  <h3 class=\"\
+    h3_red\"> Heading 3</h3>\n  <h3 class=\"h3_red\"> Heading 3</h3>\n</body>\n</html>\n\
+    ```\n\n# Basic CSS-Selectors\n\nThere are three types of selectors in CSS,\n\n\
+    +   - Element : can be selected using its name e.g. 'p', 'div' and 'h1' etc.\n\
+    - Class : can be selected using '.className' operator e.g. '.h3_blue'.\n- ID :\
+    \ can be selected using '#idName' e.g. '#my_para'.\n\nWe will use following HTML\
+    \ for understanding the selectors,"
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: "```\n<!-- css.html -->\n<!DOCTYPE html>\n<html>\n<head>\n  <title>CSS Selectors</title>\n\
+    \  <link rel=\"stylesheet\" type=\"text/css\" href=\"css/my_css.css\">\n</head>\n\
+    <body>\n  <h3>CSS Selectors</h3>\n  <p class=\"c_head\">Paragraph with class 'c_head'</p>\n\
+    \  <p id=\"i_head\">Paragraph with id 'i_head'</p>\n</body>\n</html>\n/* Below\
+    \ code shows the example of different selectors, and the output is shown in Fig.\
+    \ 2.2 */\n/* asset/css/my_css.css */\n/*element selection*/\nh3 {\n  color: blue;\n\
+    }\n/*class selection*/\n.c_head {\n  font-family;\n  cursive: color;\n  orange;\n\
+    }\n/*id selection*/\n#i_head {\n  font-variant: small-\n  caps: color: red;\n\
+    }\n```\n\n# CSS Selectors\n\nParagraph with class 'c_head'\n\nPARAGRAPH WITH ID\
+    \ 'I_HEAD'\n\nFig. 2.2: Selectors : element, class and id\n\n# Hierarchy\n\nIn\
+    \ previous section, we saw the example of selectors. In this section, we will\
+    \ understand the hierarchy of the styling operations.\n\n**Important:** Below\
+    \ is the priority level for the CSS,"
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: "# Chapter 2. Cascading Style Sheets (CSS)\n\n+   Priority level:\n- ID (highest\
+    \ priority)\n- Class\n- Element\n\nIf CSS have same priority, CSS rule at the\
+    \ last will be applicable.\n\n+   Below is the html code with following tags,\n\
+    - 'p' tag\n- 'p' tag with class 'c_head'\n- 'p' tag with class 'c_head' and id\
+    \ 'i_head'\n\n```\n<!-- css.html -->\n<!DOCTYPE html>\n<html>\n<head>\n<title>CSS\
+    \ Selectors</title>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"asset/my_css.css\"\
+    >\n</head>\n<body>\n<p>Paragraph</p>\n<p class=\"c_head\">Paragraph with class\
+    \ 'c_head'</p>\n<p class=\"c_head\" id=\"i_head\">Paragraph with class 'c_head'\
+    \ and id 'i_head'</p>\n</body>\n</html>\n```\n\nBelow is the CSS code. Let us\
+    \ understand the formatting of all three 'p' tags individually. The results are\
+    \ shown\n\n+   Line 13 of HTML: Since 'id' has highest priority, CSS rule for\
+    \ '#i_head' (Line 12) will be overridden by Line 24; hence the color is red. Line\
+    \ 13 has 'p' tag, therefore 'font-variant' will be applied by Line 17. Also, this\
+    \ tag has class 'c_head', therefore 'font' will be set to 'cursive'. Line 12 of\
+    \ HTML: Similarly, the tag has higher priority than 'element' therefore color\
+    \ of this line is orange and font-family is 'cursive'. Also, Line 17 will make\
+    \ it all caps with font-variant in red. Line 10 of HTML: Color defined at Line\
+    \ 18 will be overridden by Line 24; hence the color will be blue.\n\nFig. 2.3.\n\
+    \n```\n/* asset/my_css.css */\n/* selection */\n.c_head {\n  font-family: cursive;\n\
+    \  /* override the blue color*/\n}\n/*id selection */\n#i_head {\n  color: red;\n\
+    }\n/* element selection */\npp {\n  font-variant: small-caps;\n  color: blue;\n\
+    }\n```\n\n(continues on next page)"
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: "```\n/*element selection*/\n p {\n  color: green;\n}\n```\n\n# PARAGRAP WITH\
+    \ CLASS 'C_HEAD'\n\n# PARAGRAP WITH CLASS 'C_HEAD' AND ID 'I_HEAD'\n\n# PARAGRAP\
+    \ WITH CLASS 'C_HEAD' AND ID 'I_HEAD'\n\nFig. 2.3: Priority level for CSS rule\n\
+    \n# More selectors\n\nTable 2.1 shows the combinations of selectors to target\
+    \ the various elements of the HTML. Also, some of the example of 'Attribute selector'\
+    \ is shown in this section.\n\nTable 2.1: List of selectors\n\n| Selectors | Description\
+    \ |\n| --- | --- |\n| h1, p, span etc. | element selector |\n| .className | class\
+    \ selector |\n| #idName | id selector |\n| * | Universal selector (select everything)\
+    \ |\n| h1.className | select h1 with class 'className' |\n| h1#idName | select\
+    \ h1 with id 'idName' |\n| p span | descendant selector (span which is inside\
+    \ p) |\n| p > span | child selector ('span' which is direct descendant of 'p')\
+    \ |\n| h1, h2, p | group selector (select h1, h2 and p) |\n| span[my id] | select\
+    \ 'span' with attribute 'my_id' |\n| span[my id=m_span] | select 'span' with attribute\
+    \ 'my_id=m_span' |\n\n# Attribute selector\n\n+   - Add block code at the end\
+    \ of the html file. In these lines 'custom attributes' are added (i.e. my_id).\n\
+    \n```\n<!-- css.html -->\n<span with attribute 'my_id' value 'm_span'> </span>\n\
+    <span[my_id] { select 'span' with attribute 'my_id' }\n<span class='priority-2'>\
+    \ Span with attribute 'my_id' value 'm_span2' </span>\nfont-weight: bold;\n```\n\
+    \n+   - These custom attributes can be selected as below,"
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: 'Chapter 2. Cascading Style Sheets (CSS)
+
+
+    (continued from previous page)
+
+
+    ```
+
+    }
+
+    span[my_id=m_span] { /* select ''span'' with attribute ''my_id = _span'' */
+
+    color: red;
+
+    }
+
+    ```
+
+
+    # More properties
+
+
+    Table 2.2 shows some more important properties which can be used in CSS,
+
+
+    Table 2.2: CSS properties
+
+
+    | Property | Syntax | Description/possible values |
+
+    | --- | --- | --- |
+
+    | size | 20% | size = 20px |
+
+    | | 20px | 20 pixel |
+
+    | | 2em | 2''font-size |
+
+    | | 2mm, 2cm, 2in | 2 mm, cm and inch |
+
+    | color | names | e.g. red, blue, green |
+
+    | | hex code (#RRGGBB or #RGB) | #FFF000 or #FFF |
+
+    | | rgb(num, num, num) | rgb(0, 0, 255) or rgb(20, 10%, 70%) |
+
+    | link | a:link | a:link [color: red] |
+
+    | | a:hover | |
+
+    | | a:visited | |
+
+    | | a:active | |
+
+    | Font | font-family | serif, cursive |
+
+    | | font-style | normal, italic, oblique |
+
+    | | font-variant | normal, small-caps |
+
+    | | font-weight | normal, bold, lighter, 100-900 |
+
+    | | font-size | 10px, small, medium, large etc |
+
+    | Text | color | red, #FFF |
+
+    | | letter-spacing | 10px |
+
+    | | word-spacing | 10 px |
+
+    | | text-align | right, left, center |
+
+    | | text-decoration | underline, outline, line-through, none |
+
+    | | text-transform | capitalize, uppercase, lowercase, none |
+
+    | | white-space | pre, normal, nowrap |
+
+    | | text-shadow | text-shadow:5px 5px 5px red; |
+
+    | Image | border | ''1px'', or ''1px solid blue'' |
+
+    | | height, width | 100px, 20% |
+
+    | Border | border | solid, dashed, double, none etc. |
+
+    | | border-top-style | |
+
+    | | border-bottom-style | |
+
+    | | border-left-style | |
+
+    | | border-right-style | |
+
+    | | border-width | 4px, 4pt |
+
+    | | border-bottom-width | similarly use ''top'', ''left'', ''right'' |
+
+    | border (shortcut) | 1px solid blue |
+
+    | Margin | margin, margin-left etc. | |
+
+    | Padding | padding (top, bottom, left, right) | ''10px 20px 2px'' or ''10px 2px''
+    |
+
+    | | padding-right, padding-left etc. | |'
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: '# Chapter 3
+
+
+    # Bootstrap
+
+
+    # Introduction
+
+
+    One of the problem with basic HTML design is that the webpage may look different
+    in different browser or device (e.g. mobile, tablet and laptop). Therefore, we
+    may need to modify the code according to browser or device. The problem can be
+    easily resolved by using Bootstrap.
+
+
+    Bootstrap.js is a framework that uses HTML, CSS and JavaScript for the web design.
+    It is supported by all the major browsers e.g. Firefox, Opera and Chrome etc.
+    Further, Bootstrap includes several predefined classes for easy layouts e.g. dropdown
+    menus, navigation bar and alerts etc. Lastly, it is responsive in nature i.e.
+    the layout changes automatically to the device e.g. mobile or laptop etc.
+
+
+    # Setup
+
+
+    Bootstrap needs atleast 3 files for its operation which can be downloaded from
+    the Bootstrap website.
+
+
+    +   - bootstrap.css (Line 7) : This file contains various CSS for bootstrap.
+
+    - bootstrap.js (Line 16) : This file contains various JavaScript functionalities
+    e.g. dropdown and alerts etc.
+
+    - jQuery.js (Line 17) : This file is the jQuery library which can be downloaded
+    from the ''jQuery'' website. It is required for proper working of ''bootstrap''.
+
+
+    # Download and include files
+
+
+    These files are downloaded and saved inside the ''asset'' folder. Next, we need
+    to include these files in the HTML document as below.
+
+
+    ```
+
+    <DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <title>Bootstrap Tutorial</title>
+
+    <!-- CSS --
+
+    <link href="asset/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Add Custom CSS below --
+
+    </head>
+
+    <body>
+
+    <!-- Javascript -->
+
+    <!-- put jquery before bootstrap.min.js; and then add custom jquery -->
+
+    ```'
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: '# Chapter 3. Bootstrap
+
+
+    ```
+
+    <script src="asset/js/jquery-3.3.min.js"></script>
+
+    <script src="asset/js/bootstrap.min.js"></script>
+
+    n</html>
+
+    ```
+
+
+    # Add CDN
+
+
+    Another way to include the files as CDN. In this method, we do not need to download
+    the files, to provide the links to these files, as Lines 8, 17 and 19 of below
+    code. Note, in this case the code will not work in offline mode.
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <title>Bootstrap Tutorial</title>
+
+    <!-- CSS --
+
+    <!-- Latest compiled and min CSS --
+
+    <link rel="stylesheet" href="https://cdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BWWY8iIFKIdgnmRKyuhAHrHg32Omucw7n3RYdg4v+PmTSsz/K68vbdE_j4hu4"
+    crossorigin="anonymous">
+
+    <!-- Add Custom CSS below --
+
+    </head>
+
+    <body>
+
+    <!-- JavaScript --
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and min JavaScript --
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-TC5qib027aqviSMFHJOMAlkffuRvZXzPrnCJA7i2mWN1pGMCD0wGNIlcPD7Txa
+    crossorigin="anonymous"></script>
+
+    </body>
+
+    </html>
+
+    Note: In this case we used the first method to download the files and include
+    them in the html document.
+
+    ```
+
+
+    # Check setup
+
+
+    Let''s write our first code to check the correct setup of the Bootstrap.
+
+
+    > Note: We do not need to memorize the code for the ''dropdown'' button. All the
+    templates are available on the Bootstrap website. Copy and paste the code from
+    there and modify the code according to need as shown in this tutorial.
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <title>Bootstrap Tutorial</title>
+
+    <!-- CSS --
+
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Add Custom CSS below --
+
+    ```'
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: "# 3.3. Grid system\n(continued from previous page)\n\n```\n<head>\n<body>\n\
+    \  <button class=\"btn btn-success dropdown-toggle\" type=\"button\" id=\"dropdownMenu\"\
+    \ data-toggle=\n  \"dropdown\" aria-haspopup=\"true\" aria-\n  expanded=\"true\"\
+    > Dropdown\n  <span class=\"caret\"></span>\n  </button>\n  <ul  class=\"dropdown-menu\"\
+    \ aria-labelledby=\"dropdownMenu\">\n    <li><a href=\"#\">Action</a></li>\n \
+    \   <li><a href=\"#\">Another action</a></li>\n    <li><a href=\"#\">Something\
+    \ else here</a></li>\n    <li><div role=\"separator\"></div></li>\n    <li><a\
+    \ href=\"#\">Separated link</a></li>\n  </ul>\n</div>\n<!-- JavaScript -->\n \
+    \ <!-- put jQuery.js before bootstrap.min.js, and then add custom jquery -->\n\
+    \  <script src=\"asset/js/jquery-3.3.1.min.js\"></script>\n  <script src=\"asset/js/bootstrap.min.js\"\
+    ></script>\n</body>\n</html>\n```\n\nThe resultant web page is shown in Fig. 3.\n\
+    \n![](img/f70659d57873500d1a13fffa6bbe945a_27_0.png)\n\nFig. 3.1: Click on the\
+    \ 'Dropdown' button\n\n# Grid system\n\nBootstrap divides each row into 12 columns.\
+    \ Then following commands can be used to specify the width of the columns\n\n\
+    +   - col-lg-4 : It will select 4 columns. Choose any number between 1-12. The\
+    \ 'lg' stand for large screen (e.g. computer screen).\n- col-md-5 : 'md' = medium\
+    \ screen\n- col-sm-3 : 'sm' = small screen\n- col-xs-3 : 'xs' = extra small screen\n\
+    - col-lg-offset-4 : skip first 4 columns. Similary use 'md', 'sm' and 'xs' with\
+    \ offset"
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: '# Chapter 3. Bootstrap Example
+
+
+    Below is an example of grid system. Read the content of the Lines 13-16 to understand
+    it. The resultant webpage is shown in Fig. 3.2.
+
+
+    Note:
+
+
+    +   - For easy visualization, in the code the CSS code (Lines 9-21) is used to
+    fill the columns with colors and border.
+
+    - The columns (Lines 28-30) should be defined inside the class ''row'' (Line 27).
+
+    - Also, some of the widths of individual columns should not be greater than 12.
+
+    - Lastly, if we use ''col-md-4'' without defining the ''lg'', ''sm'' then ''md''
+    rule will be applicable to higher size ''lg'', but not the lower size ''sm'' and
+    ''xs''. Similarly, if we use ''sm'' without defining the ''lg'', ''md'' and ''xs'',
+    then rule will be applicable to higher size screen i.e. ''lg'' but not on ''xs''
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <title>Bootstrap Tutorial</title>
+
+    <style>
+
+    <!-- Custom CSS --
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Add custom CSS -->
+
+    <style type="text/css">
+
+    .col-xs-1 .col-xs-2 .col-xs-3 .col-xs-4 .col-xs-5 .col-xs-6 .col-xs-7 .col-xs-8,
+
+    .col-sm-1 .col-sm-2 .col-sm-3 .col-sm-4 .col-sm-5 .col-sm-6 .col-sm-7 .col-sm-8,
+
+    .col-md-1 .col-md-2 .col-md-3 .col-md-4 .col-md-5 .col-md-6 .col-md-7 .col-md-8,
+
+    .col-lg-1 .col-lg-2 .col-lg-3 .col-lg-4 .col-lg-5 .col-lg-6 .col-lg-7 .col-lg-8
+    {
+
+    background-color: grey;
+
+    color: white;
+
+    weight: bold;
+
+    border: 1px solid red;
+
+    height: 3em; /*height of the box*/
+
+    text-align: center; /*vertical center the text*/
+
+    }
+
+    </style>
+
+    </head>
+
+    <body>
+
+    <div class="row">
+
+    <div class="col-md-2 col-xs-4 col-md-2"></div>
+
+    <div class="col-md-6 col-xs-4 col-md-6"></div>
+
+    <div class="col-md-4 col-xs-4 col-md-4"></div>
+
+    </div>
+
+    <!-- Javascript --
+
+    <!-- put jquery.js before bootstrap.min.js and then add custom jquery -->
+
+    <script src="asset/js/jquery-3.1.min.js"></script>
+
+    <div class="col-xs-12 col-md-4 col-md-6 col-md-4 col-xs-4"></div>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    ![](img/f70659d57873500d1a13fffa6bbe945a_28_0.png)'
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: "Fig. 3.3: Equal grid-size (i.e. 4) for 'extra small' and 'small' screen\n\n\
+    # Nested columns\n\nWe can divide a column into small columns by defining a 'row'\
+    \ (Line 30) inside the 'column' (Line 29), as shown in Lines 29-34.\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n<title>Bootstrap Tutorial</title>\n<!-- CSS --><link\
+    \ href=\"asset/bootstrap.min.css\" rel=\"stylesheet\">\n<!-- Add Custom CSS below\
+    \ -->\n<style type=\"text/css\">\n  .col-xs-1 .col-xs-2 .col-xs-3 .col-xs-4 .col-xs-5\
+    \ .col-xs-6 .col-xs-7 .col-xs-8,\n  .col-sm-1 .col-sm-2 .col-sm-3 .col-sm-4 .col-sm-5\
+    \ .col-sm-6 .col-sm-7 .col-sm-8,\n  .col-md-1 .col-md-2 .col-md-3 .col-md-4 .col-md-5\
+    \ .col-md-6 .col-md-7 .col-md-8,\n  .col-lg-1 .col-lg-2 .col-lg-3 .col-lg-4 .col-lg-5\
+    \ .col-lg-6 .col-lg-7 .col-lg-8 {\n  background-color: green;\n  color: white;\n\
+    \  border: 1px solid red;\n  height: 3em;/*height of the box*/\n  text-align:\
+    \ center;/*vertical center the text*/\n}\n</style>\n</head>\n<body>\n<div class=\"\
+    row\">\n  <div class=\"col-md-4\">\n  <div class=\"row col-xs-4\">\n    <div class=\"\
+    row\">\n      <div class=\"col-xs-6\">col-xs-6</div>\n      <div class=\"col-xs-6\"\
+    >col-xs-6</div>\n    </div>\n  </div>\n</div>\n</div>\n<!-- Javascript -->\n--\
+    \ put jQuery before bootstrap.min.js; and then add custom jquery --\n<script src=\"\
+    asset/js/jquery-3.1.min.js\"></script>\n<script src=\"asset/bootstrap.min.js\"\
+    ></script>\n</body>\n</html>\n```\n\n* we can offset the columns using 'offset'\
+    \ as shown in Line 27; and the corresponding html page is shown in Fig. 3.4,"
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: '# Chapter 3. Bootstrap
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <title>Bootstrap Tutorial</title>
+
+    <!-- CSS -->
+
+    <link href="asset/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Add Custom CSS below --
+
+    <style type="text/css">
+
+    .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8,
+
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8,
+
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8,
+
+    .col-lg-9 { background-color: green;
+
+    color: white;
+
+    font-weight: bold;
+
+    border: 1px solid red;
+
+    height: 3cm; /*height of the box*/
+
+    text-align: center; /*vertical center the text*/
+
+    </style>
+
+    </head>
+
+    </a>
+
+    <body>
+
+    <div class="row">
+
+    <div class="col-md-offset-2 col-md-2">
+
+    <div class="col-md-8">col-md-8</div>
+
+    </div>
+
+    </div>
+
+    ```
+
+
+    ![](img/f70659d57873500d1a13fffa6bbe945a_30_0.png)
+
+
+    ```
+
+    <!-- put jQuery("document).ready(function(){... }); here -->
+
+    <script src="asset/js/jquery-3.1.min.js"></script>
+
+    <!-- Fig.14: Offset -->
+
+    ```
+
+
+    # Components
+
+
+    We understand the ''html'', ''css'' and ''Bootstrap-grid'' understood, then the
+    use of Bootstrap-components are straightforward. Just copy and paste the code
+    from the Bootstrap website and modify it according to the requirement.
+
+
+    In this section we will use following template.
+
+
+    (continues on next page)
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <title>Bootstrap Tutorial</title>
+
+    <!-- CSS -->
+
+    <link href="asset/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Add Custom CSS below --
+
+    </head>
+
+    ```'
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: '# 3.4. Components
+
+    (continued from previous page)
+
+
+    ```
+
+    <body>
+
+    <!-- JavaScript -- put jQuery before bootstrap.min.js; and then add custom jquery
+    -->
+
+    <script src="asset/js/jquery-3.3.1.min.js"></script>
+
+    <script src="asset/js/bootstrap.min.js"></script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # Labels
+
+
+    +   * The class ‘label’ is used to create the label (Line 11).
+
+    * The class ‘label-info’ sets the color of the label to ‘blue’ (Line 11)
+
+    * The size of the ‘labels’ can be changes using ‘element’ tags (e.g. ‘h3’ in Line
+    11) outside the ‘span’ tag
+
+
+    Note: Bootstrap provides 6 color options,
+
+
+    +   * danger
+
+    * default
+
+    * info
+
+    * primary
+
+    * success
+
+    * warning
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <title>Bootstrap Tutorial</title>
+
+    <!-- CSS -->
+
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Add Custom CSS below -->
+
+    </head>
+
+    <body>
+
+    <h3>Example heading <span class="label label-info">New</span></h3>
+
+
+    <!-- JavaScript -- put.jQuery.js before bootstrap.min.js; and then add custom
+    jquery -->
+
+    <script src="asset/js/jquery-3.3.1.min.js"></script>
+
+    <script src="asset/js/bootstrap.min.js"></script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    Fig. 3.5 is the output of above code,
+
+
+    ![](img/f70659d57873500d1a13fffa6bbe945a_31_0.png)
+
+
+    Fig. 3.5: Label'
+  merge: -1
+  pgno: 31
+- img_proc: true
+  md: 'Chapter 3. Bootstrap
+
+
+    Note: All the codes will be in the  `body` tag, and the new code will be inserted
+    below the previous codes. Therefore full HTML code is not added in the tutorial.
+
+
+    # Buttons
+
+
+    The element ''button'' can be used to create the button in Bootstrap as shown
+    below,
+
+
+    Note:
+
+
+    +   - We can use ''lg'', ''md'' and ''xs'' etc. to set the size of the button.
+
+    - In Line 3, a glyphicon is added (i.e. trash sign). More glyphicon can be found
+    on the Bootstrap-webapp.
+
+
+    ```
+
+    <h3>Buttons</h3>
+
+    <button type="button" class="btn btn-primary">Sign in<span class="glyphicon glyphicon-trash"></span></button>
+
+    <button type="button" class="btn btn-danger">Delete <span class="glyphicon glyphicon-trash"></span></button>
+
+    <button type="submit" class="btn btn-lg-success">Submit</button>
+
+    <button type="submit" class="btn btn-md-success">Submit</button>
+
+    ```
+
+
+    +   - Fig. 3.6 is the output of above code,
+
+
+    ![](img/f70659d57873500d1a13fffa6bbe945a_32_0.png)
+
+
+    Fig. 3.6: Buttons
+
+
+    # Forms
+
+
+    In this section, 4 types of forms are added,
+
+
+    # 3.4.3.1 Basic form
+
+
+    Output of below code is shown in Fig. 3.7, (continues on next page)
+
+
+    ```
+
+    <h2>Basic form </h2>
+
+    <div class="row">
+
+    <div class="col-sm-5" style="background: pink;">
+
+    <div class="panel-body">
+
+    <form class="form">
+
+    <div class="form-group">
+
+    <label for="exampleInputEmail">Email address</label>
+
+    <input class="form-control" id="exampleInputEmail" placeholder="Enter email">
+
+    </div>
+
+    <div class="form-group">
+
+    <label for="exampleInputPassword">Password</label>
+
+    <input class="form-control" id="exampleInputPassword" placeholder="Password" type="password"
+
+    </div>
+
+    </form>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    ```'
+  merge: -1
+  pgno: 32
+- img_proc: true
+  md: "```\n<div class=\"form-group\">\n  <label for=\"exampleInput\">File input</label>\n\
+    \  <input id=\"exampleInput\" type=\"file\">\n  <p class=\"help-block\">Example\
+    \ block-level help text here.</p>\n  <div class=\"checkbox\">\n    <label>\n \
+    \     <input type=\"checkbox\"> Check me\n    </label>\n  </div>\n  <button type=\"\
+    submit\" class=\"btn btn-info\">Submit</button>\n</form>\n</div>\n</div>\n<br><br>\n\
+    ```\n\n3.4. Components\n(continued from previous page)\n\n# Basic form\n\n![](img/f70659d57873500d1a13fffa6bbe945a_33_0.png)\n\
+    \n# Horizontal form\n\nOutput of below code is shown in Fig. 3.8,\n\n```\n<h3>Horizontal\
+    \ form</h3>\n<div class=\"row\">\n```"
+  merge: -1
+  pgno: 33
+- img_proc: true
+  md: "```\n<div class=\"col-lg-5\" style=\"background: pink\">\n  <div class=\"panel-body\"\
+    >\n    <form class=\"form-horizontal\" role=\"form\">\n      <div class=\"form-group\"\
+    >\n        <label for=\"inputEmail\" class=\"col-lg-2 col-sm-2\">Email</label>\n\
+    \        <div class=\"col-lg-10\">\n          <input class=\"form-control\" id=\"\
+    inputEmail\" placeholder=\"Email\" type=\"email\">\n          <div class=\"help-block\"\
+    >Example block-level help text.</div>\n        </div>\n      </div>\n      <div\
+    \ class=\"form-group\">\n        <label for=\"inputPassword\" class=\"col-lg-2\
+    \ col-sm-2\">Password</label>\n        <div class=\"col-lg-10\">\n          <input\
+    \ class=\"form-control\" id=\"inputPassword\" placeholder=\"Password\" type=\"\
+    password\">\n        </div>\n      </div>\n      <div class=\"form-group\">\n\
+    \        <div class=\"col-lg-offset-2 col-lg-10\">\n          <div class=\"checkbox\"\
+    >\n            <label>\n              <input type=\"checkbox\"> Remember me\n\
+    \            </label>\n          </div>\n        </div>\n      </div>\n      <div\
+    \ class=\"form-group\">\n        <div class=\"col-lg-offset-2 col-lg-10\">\n \
+    \         <button type=\"submit\" class=\"btn btn-danger\">Sign in</button>\n\
+    \        </div>\n      </div>\n    </form>\n  </div>\n</div>\n```\n\n# Inline\
+    \ form\n\nOutput of below code is shown in Fig. 3.9.\n\n```\n<h2>Inline form</h2>\n\
+    <div class=\"row\">\n  <div class=\"col-sm-5\" style=\"background: pink\">\n \
+    \   <div class=\"panel-body\">\n      <form class=\"form-inline\" role=\"form\"\
+    >\n        <div class=\"form-group\">\n          <label class=\"sr-only\" for=\"\
+    exampleInput2\">Email address</label>\n          <input class=\"form-control\"\
+    \ id=\"exampleInput2\" placeholder=\"Enter email\" type=\"email\">\n        </div>\n\
+    \        <div class=\"form-group\">\n          <label class=\"sr-only\" for=\"\
+    examplePassword2\">Password</label>\n          <input class=\"form-control\" id=\"\
+    examplePassword2\" placeholder=\"Password\" type=\"password\"\n        </div>\n\
+    \        </div>\n        <div class=\"checkbox\">\n          <label>\n       \
+    \     <input type=\"checkbox\"> Remember me\n          </label>\n        </div>\n\
+    \      </form>\n    </div>\n  </div>\n</div>\n```"
+  merge: -1
+  pgno: 34
+- img_proc: true
+  md: '![](img/f70659d57873500d1a13fffa6bbe945a_35_0.png)
+
+
+    ```
+
+    <div>
+
+    </div>
+
+    <div>
+
+    <br><br>
+
+    ```
+
+
+    # Inline form
+
+
+    ![](img/f70659d57873500d1a13fffa6bbe945a_35_1.png)
+
+
+    Modal form
+
+
+    Modal form appears in the pop-up window. Output of below code is shown in Fig.
+    3.10,
+
+
+    ```
+
+    <!-- model form -->
+
+    <h3>Modal form</h3>
+
+
+    <div class="row">
+
+    <div class="col-sm-5" style="background: pink">
+
+    ```'
+  merge: -1
+  pgno: 35
+- img_proc: true
+  md: "Chapter 3. Bootstrap\n\n```\n<div class=\"panel-body\">\n  <!-- button to generate\
+    \ modal form -->\n  <a href=\"#myModal\" data-toggle=\"modal\" class=\"btn btn-xs\
+    \ btn-success\" data-body&gt;Form in Modal\n  </a>\n\n  <!-- modal form settings\
+    \ -->\n  <div aria-hidden=\"true\" aria-labelledby=\"myLabel\" role=\"dialog\"\
+    \ tabindex=\"-1\" id=\"myModal\" class=\"modal fade\">\n    <div class=\"modal-dialog\"\
+    >\n      <div class=\"modal-content\">\n        <div class=\"modal-header\">\n\
+    \          <button aria-hidden=\"true\" data-dismiss=\"modal\" class=\"close\"\
+    \n                  type=\"button\"&gt;&times;</button>\n          <h4 class=\"\
+    modal-title\">Form Tittle</h4>\n        </div>\n        <div class=\"modal-body\"\
+    >\n          <!-- actual form -->\n          <form>\n            <div class=\"\
+    form-group\">\n              <label for=\"exampleInputEmail\">Email address</label>\n\
+    \              <input class=\"form-control\" id=\"exampleInputEmail\"\n      \
+    \               placeholder=\"Enter email\">\n            </div>\n           \
+    \ <div class=\"form-group\">\n              <label for=\"exampleInputPassword1\"\
+    >Password</label>\n              <input class=\"form-control\" id=\"exampleInputPassword1\"\
+    \n                     placeholder=\"Password\">\n            </div>\n       \
+    \     <div class=\"form-group\">\n              <label for=\"exampleFileInput3\"\
+    >File input</label>\n              <input id=\"exampleFileInput3\" type=\"file\"\
+    >\n              <p class=\"help-block\">Example block-help text here.</p>\n \
+    \           </div>\n            <div class=\"checkbox\">\n              <label>\n\
+    \                <input type=\"checkbox\"> Check me out\n              </label>\n\
+    \            </div>\n            <button type=\"submit\" class=\"btn btn-default\"\
+    >Submit</button>\n          </form>\n          <!-- actual ends --\n        </div>\n\
+    \      </div>\n    </div>\n  </div>\n</div>\n<hr>\n```\n\n# Form elements\n\n\
+    Output of below code is shown in Fig. 3.11,"
+  merge: -1
+  pgno: 36
+- img_proc: true
+  md: "# Horizontal form\n\n![](img/f70659d57873500d1a13fffa6bbe945a_37_0.png)\n\n\
+    # Inline form\n\n![](img/f70659d57873500d1a13fffa6bbe945a_37_1.png)\n\n# Modal\
+    \ form\n\n![](img/f70659d57873500d1a13fffa6bbe945a_37_2.png)\n\nFig. 3.10: Modal\
+    \ form\n\n```\n<-- Form elements --\n<h3>Form elements </h3>\n<div class=\"row\"\
+    >\n<div class=\"col-sm-5\" style=\"background: pink\">\n<div class=\"panel-body\"\
+    >\n  <form class=\"form-horizontal tasi-form\" method=\"get\">\n    <div class=\"\
+    form-group\">\n      <label class=\"col-sm-2 col-sm-2 label-label\">Default</label>\n\
+    \      <div class=\"col-sm-10\">\n        <input class=\"form-control\" type=\"\
+    text\">\n      </div>\n    </div>\n    <div class=\"form-group\">\n      <label\
+    \ class=\"col-sm-2 col-sm-2 label-label\">Help text</label>\n      <div class=\"\
+    col-sm-10\">\n        <input class=\"form-control\" type=\"text\">\n        <span\
+    \ class=\"help-block\">A block of help text that breaks onto a new line and may.</span>\n\
+    \      </div>\n    </div>\n    <div class=\"form-group\">\n      <label class=\"\
+    col-sm-2 col-sm-2 label-label\">Round</label>\n      <div class=\"col-sm-10\"\
+    >\n        <input class=\"form-control round-input\" type=\"text\">\n      </div>\n\
+    \    </div>\n  </form>\n</div>\n</div>\n</div>\n<div class=\"form-group\">\n \
+    \ <label class=\"col-sm-2 col-sm-2 label-label\">Input focus</label>\n</div>\n\
+    ```\n\n(continues on next page)"
+  merge: -1
+  pgno: 37
+- img_proc: true
+  md: "```\n<div class=\"col-sm-10\" id=\"focusedInput\">\n  <input class=\"form-control\"\
+    \ value=\"This is focused..\"\n       type=\"text\">\n</div>\n<div class=\"form-group\"\
+    >\n  <label class=\"col-sm-2 col-sm-2 control-label\" for=\"disabled\">Disabled</label>\n\
+    \  <div class=\"col-sm-10\">\n    <input class=\"form-control\" id=\"disabledInput\"\
+    \ placeholder=\"Disabled...\"\n           disabled=\"disabled\" type=\"text\"\
+    >\n  </div>\n</div>\n<div class=\"form-group\">\n  <label class=\"col-sm-2 col-sm-2\
+    \ control-label\">Placeholder</label>\n  <div class=\"col-sm-10\">\n    <input\
+    \ class=\"form-control\" placeholder=\"placeholder\" type=\"text\">\n  </div>\n\
+    </div>\n<div class=\"form-group\">\n  <label class=\"col-sm-2 col-sm-2 control-label\"\
+    >Password</label>\n  <div class=\"col-sm-10\">\n    <input class=\"form-control\"\
+    \ placeholder=\"\" type=\"password\">\n  </div>\n</div>\n<div class=\"form-group\"\
+    >\n  <label class=\"col-lg-2 col-sm-2 control-label\">Static control</label>\n\
+    \  <div class=\"col-lg-10\">\n    <p class=\"form-control-static\">email@example.com</p>\n\
+    \  </div>\n</div>\n```\n\n# Control size\n\nOutput of below code is shown in Fig.\
+    \ 3.12.\n\n```\n<-- Control size --\n<h3>Control size</h3>\n<div class=\"row\"\
+    >\n  <div class=\"col-sm-5\" style=\"background: pink;\">\n    <div class=\"panel-body\"\
+    >\n      <form class=\"form-horizontal tari-form\" method=\"get\">\n        <div\
+    \ class=\"form-group\">\n          <label class=\"col-sm-2 control-label col-lg-2\"\
+    \ for=\"inputSuccess\">Control sizing</label>\n          <div class=\"col-lg-10\"\
+    >\n            <input class=\"form-control-lg m-b15\" placeholder=\"input-lg\"\
+    \ type=\"text\">\n            <input class=\"form-control m-b15\" placeholder=\"\
+    Default input\" type=\"text\">\n            <input class=\"form-control-sm m-b15\"\
+    \ placeholder=\"input-sm\" type=\"text\">\n          </div>\n        </div>\n\
+    \        <select class=\"form-control m-b15\">\n          <option selected=\"\
+    selected\">Option 1</option>\n          <option>Option 2</option>\n          <option>Option\
+    \ 3</option>\n        </select>\n        <select class=\"form-control m-b15\"\
+    >\n          <option selected=\"selected\">Option 1</option>\n        </select>\n\
+    \      </form>\n    </div>\n  </div>\n</div>\n```"
+  merge: -1
+  pgno: 38
+- img_proc: true
+  md: '# Form elements
+
+
+    ![](img/f70659d57873500d1a13fffa6bbe945a_39_0.png)
+
+
+    Fig. 3.11: Form elements'
+  merge: -1
+  pgno: 39
+- img_proc: true
+  md: "```\n<option>Option 3</option>\n</select>\n<select class=\"form-control input-sm\
+    \ m-bot15\">\n  <option selected=selected>Option 1</option>\n  <option>Option\
+    \ 2</option>\n  <option>Option 3</option>\n</select>\n</div>\n</form>\n</div>\n\
+    </div>\n</div>\n```\n\n# Control size\n\n| Control sizing |\n| .input-lg |\n|\
+    \ Default Input |\n| .input-sm |\n| Option 1 |\n| Option 1 |\n| Option 1 |\n\n\
+    Fig. 3.12: Form elements\n\n# More buttons\n\nOutput of below code is shown in\
+    \ Fig. 3.13.\n\n```\n<h3>Buttons</h3>\n<div class=\"row\">\n  <div class=\"col-sm-12\"\
+    \ style=\"background:pink\">\n    <div class=\"panel panel-body\">\n      <form\
+    \ class=\"form-horizontal tasi-form\" method=\"get\">\n        <div class=\"form-group\"\
+    >\n          <label class=\"col-sm-2 control-label col-lg-2\" for=\"inputSuccess\"\
+    >checkboxes and...</label>\n          <div class=\"col-lg-10\">\n            <div\
+    \ class=\"checkbox\">\n              <label>\n                <input value=\"\"\
+    \ type=\"checkbox\">\n                Option 1 is this and that tbe to include\
+    \ why it's great\n              </label>\n            </div>\n          </div>\n\
+    \        </div>\n      </form>\n    </div>\n  </div>\n</div>\n```"
+  merge: -1
+  pgno: 40
+- img_proc: true
+  md: "# 3.4. Components\n(continued from previous page)\n\n```\n<label>\n  <input\
+    \ value=\"\" type=\"checkbox\">\n  Option one is this and that be sure to include\
+    \ why it's great\n  option one\n</label>\n</div>\n```\n\n```\n<div class=\"radio\"\
+    >\n  <label>\n    <input name=\"optionsRadios\" id=\"optionsRadios1\" value=\"\
+    option1\" checked>\n    Option one is this and that be sure to include why it's\
+    \ great\n  </label>\n</div>\n```\n\n```\n<div class=\"radio\">\n  <label>\n  \
+    \  <input name=\"optionsRadios\" id=\"optionsRadios2\" value=\"option2\" type=\"\
+    Option two can be something else and selecting it will deselect option\">\n  </label>\n\
+    </div>\n```\n\n```\n<div class=\"form-group\">\n  <label class=\"col-sm-2 control-label\
+    \ col-lg-2\" for=\"inputSuccess\">Inline checkboxes</label>\n  <div class=\"col-10\"\
+    >\n    <label>\n      <input id=\"inlineCheckbox1\" value=\"option1\" type=\"\
+    checkbox\"> 1\n    </label>\n    <label>\n      <input id=\"inlineCheckbox2\"\
+    \ value=\"option2\" type=\"checkbox\"> 2\n    </label>\n    <label>\n      <input\
+    \ id=\"inlineCheckbox3\" value=\"option3\" type=\"checkbox\"> 3\n    </label>\n\
+    \  </div>\n</div>\n```\n\n```\n<div class=\"form-group\">\n  <label class=\"col-sm-2\
+    \ control-label col-lg-2\" for=\"inputSuccess\">Selects</label>\n  <div class=\"\
+    col-lg-10\">\n    <select id=\"select-dropdownnum\" class=\"form-control m-bot15\"\
+    \ selected=\"selected\">\n      <option>1</option>\n      <option>2</option>\n\
+    \      <option>3</option>\n      <option>4</option>\n      <option>5</option>\n\
+    \    </select>\n    <select multiple=\"multiple\" class=\"form-control\">\n  \
+    \    <option>1</option>\n      <option>2</option>\n      <option>3</option>\n\
+    \      <option>4</option>\n      <option>5</option>\n    </select>\n  </div>\n\
+    </div>\n```"
+  merge: -1
+  pgno: 41
+- img_proc: true
+  md: '# Chapter 3. Bootstrap
+
+
+    ```
+
+    elect>
+
+    / </div>
+
+    s </div>
+
+    ```
+
+
+    (continues on next page)
+
+
+    ![](img/f70659d57873500d1a13fffa6bbe945a_42_0.png)'
+  merge: -1
+  pgno: 42
+- img_proc: true
+  md: "# 3.4. Components\n(continued from previous page)\n\n```\n<div class=\"form-group\"\
+    >\n  <label class=\"col-sm-2 control-label col-lg-2\" for=\"inputSuccess\">Column\
+    \ sizing/\n</label>\n  <div class=\"col-lg-10\">\n    <div class=\"row\">\n  \
+    \    <div class=\"col-lg-2\">\n        <input class=\"form-control\" placeholder=\"\
+    col-lg-2\" type=\"text\">\n      </div>\n      <div class=\"col-lg-3\">\n    \
+    \    <input class=\"form-control\" placeholder=\"col-lg-3\" type=\"text\">\n \
+    \     </div>\n      <div class=\"col-lg-4\">\n        <input class=\"form-control\"\
+    \ placeholder=\"col-lg-4\" type=\"text\">\n      </div>\n    </div>\n  </div>\n\
+    </form>\n```\n\n# Buttons\n\n+   Checkboxes and radios\n- Option one is this and\
+    \ that be sure to include why it's great\n- Option one is this and that be sure\
+    \ to include why it's great option\n- Option one is this and that be sure to include\
+    \ why it's great\n- Option two can be something else and selecting it will deselect\
+    \ option one\n\nInline checkboxes\n\n+   1\n2\n3\n4\n5\n\nSelects\n\n| | | | |\n\
+    |---|---|---||\n| Column sizing | col-lg-2 | col-lg-3 | col-lg-4 |\n\n![](img/f70659d57873500d1a13fffa6bbe945a_43_0.png)\n\
+    \n# Input group\n\nOutput of below code is shown in Fig. 3.14,\n\n```\n<!-- Input\
+    \ groups -->\n<h3>Input groups</h3>\n<div class=\"row\">\n  <div class=\"col-sm-2\"\
+    \ style=\"background: pink;\">\n    <div class=\"panel-body\">\n      <form class=\"\
+    form-horizontal-form\" method=\"get\">\n        <div class=\"form-group\">\n \
+    \         <label class=\"col-sm-2 control-label col-lg-2\">Basic examples</label>\n\
+    \          <div class=\"col-lg-10\">\n            <div class=\"input-group\">\n\
+    \              <span class=\"input-group-addon\">@</span></span>\n           \
+    \   <input class=\"form-control\" placeholder=\"Username\" type=\"text\">\n  \
+    \          </div>\n          </div>\n        </div>\n      </form>\n    </div>\n\
+    \  </div>\n</div>\n```"
+  merge: -1
+  pgno: 43
+- img_proc: true
+  md: "Chapter 3. Bootstrap\n\n```\n<div class=\"input-group m-bot-15\">\n  <input\
+    \ class=\"form-control input-addon\" type=\"text\">\n  <span class=\"input-group-addon\"\
+    >.00</span>\n</div>\n<div class=\"input-group m-bot-15\">\n  <span class=\"input-group-addon\"\
+    >$</span>\n  <input class=\"form-control\" type=\"text\">\n  <span class=\"input-group-addon\"\
+    >.00</span>\n</div>\n<div class=\"form-group\">\n  <label class=\"col-sm-2 control-label\
+    \ col-lg-2\">Sizing</label>\n  <div class=\"col-lg-10\">\n    <div class=\"input-group\
+    \ input-group-addon m-bot-15\">\n      <span class=\"input-group-addon\">@</span>\n\
+    \      <input class=\"form-control input-lg\" placeholder=\"Username\" type=\"\
+    text\">\n    </div>\n    <div class=\"input-group m-bot-15\">\n      <span class=\"\
+    input-group-addon\">@</span>\n      <input class=\"form-control\" placeholder=\"\
+    Username\" type=\"text\">\n    </div>\n    <div class=\"input-group input-group-sm\
+    \ m-bot-15\">\n      <span class=\"input-group-addon\">@</span>\n      <input\
+    \ class=\"form-control\" placeholder=\"Username\" type=\"text\">\n    </div>\n\
+    \  </div>\n</div>\n<div class=\"form-group\">\n  <label class=\"col-sm-2 control-label\
+    \ col-lg-2\">Checkbox</label>\n  <div class=\"col-lg-10\">\n    <div class=\"\
+    input-group m-bot-15\">\n      <span class=\"input-group-addon\">\n        <input\
+    \ type=\"checkbox\">\n      </span>\n      <input class=\"form-control\" type=\"\
+    text\">\n    </div>\n    <div class=\"input-group m-bot-15\">\n      <span class=\"\
+    input-group-addon\">\n        <input type=\"radio\">\n      </span>\n      <input\
+    \ class=\"form-control\" type=\"text\">\n    </div>\n  </div>\n</div>\n<div class=\"\
+    form-group\">\n  <label class=\"col-sm-2 control-label col-lg-2\">Buttons</label>\n\
+    \  <div class=\"col-lg-10\">\n    <div class=\"input-group m-bot-15\">\n     \
+    \ <span class=\"btn btn-white\">\n<<button type=\"buttonGoGobutton>\n      </span>\n\
+    \      <input class=\"form-control\" type=\"text\">\n    </div>\n  </div>\n</div>\n\
+    ```\n\n(continued from previous page)\n\n(continues on next page)"
+  merge: -1
+  pgno: 44
+- img_proc: true
+  md: "# 3.4. Components\n(continued from previous page)\n\n```\n<div class=\"input-group\
+    \ m-bot-5\">\n  <input class=\"form-control\" type=\"text\">\n  <span class=\"\
+    input-group-btn\">\n    <button class=\"btn btn-white\" type=\"button\">Go!</button>\n\
+    \  </span>\n</div>\n<div class=\"input-group m-bot-5\">\n  <input class=\"input-group-btn\"\
+    >\n    <button type=\"button\" class=\"btn btn-white dropdown-toggle\" data-toggle=\"\
+    dropdown\">\n      <span class=\"caret\"></span>\n    </button>\n    <ul class=\"\
+    dropdown-menu\">\n      <li><a href=\"#\">Action</a></li>\n      <li><a href=\"\
+    #\">Another action</a></li>\n      <li><a href=\"#\">Something else here</a></li>\n\
+    \      <li class=\"divider\"></li>\n      <li><a href=\"#\">Separated link</a></li>\n\
+    \    </ul>\n  </div>\n  <input class=\"form-control\" type=\"text\">\n</div>\n\
+    <div class=\"input-group m-bot-5\">\n  <input class=\"form-control\" type=\"text\"\
+    >\n  <div class=\"input-group-btn\">\n    <button type=\"button\" class=\"btn\
+    \ btn-white dropdown-toggle\" data-toggle=\"dropdown\">\n      <span class=\"\
+    caret\"></span>\n    </button>\n    <ul class=\"dropdown-menu pull-right\">\n\
+    \      <li><a href=\"#\">Action</a></li>\n      <li><a href=\"#\">Another action</a></li>\n\
+    \      <li><a href=\"#\">Something else here</a></li>\n      <li class=\"divider\"\
+    ></li>\n      <li><a href=\"#\">Separated link</a></li>\n    </ul>\n  </div>\n\
+    </div>\n<div class=\"form-group\">\n  <label class=\"col-sm-2 control-label col-lg-2\"\
+    >Segmented buttons</label>\n  <div class=\"col-sm-10\">\n    <div class=\"input-group\
+    \ m-bot-5\">\n      <input class=\"input-group-btn\">\n      <button data-index=\"\
+    1\" class=\"btn btn-white\" type=\"button\">Action</button>\n      <button data-index=\"\
+    1\" data-toggle=\"dropdown\" class=\"btn btn-white dropdown-toggle\" type=\"button\"\
+    >\n        <span class=\"caret\"></span>\n      </button>\n      <ul class=\"\
+    dropdown-menu\">\n        <li><a href=\"#\">Action</a></li>\n        <li><a href=\"\
+    #\">Another action</a></li>\n        <li><a href=\"#\">Something else here</a></li>\n\
+    \        <li class=\"divider\"></li>\n        <li><a href=\"#\">Separated link</a></li>\n\
+    \      </ul>\n    </div>\n    <input class=\"form-control\" type=\"text\">\n \
+    \ </div>\n</div>\n```"
+  merge: -1
+  pgno: 45
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 46
+- img_proc: true
+  md: "```\n<div class=\"input-group m-bt0\">\n  <input class=\"form-control\" type=\"\
+    text\">\n  <div class=\"input-group-btn\">\n    <button class=\"btn btn-white\"\
+    \ type=\"button\" aria-expanded=\"false\">Action</button>\n    <button data-index=\"\
+    -1\" data-toggle=\"dropdown\" class=\"btn btn-white dropdown-toggle\" type=\"\
+    button\">\n      <span class=\"caret\"></span>\n      <ul role=\"menu\" class=\"\
+    dropdown-menu-pull-right\">\n        <li><a href=\"#\">Action</a></li>\n     \
+    \   <li><a href=\"#\">Another action</a></li>\n        <li><a href=\"#\">Something\
+    \ else here</a></li>\n        <li class=\"divider\"></li>\n        <li><a href=\"\
+    #\">Separated link</a></li>\n      </ul>\n    </button>\n  </div>\n</div>\n</form>\n\
+    </div>\n</div>\n```\n\n![](img/f70659d57873500d1a13fffa6bbe945a_47_0.png)\n\n\
+    | Basic examples | Username | |\n|---|---|--|\n| | $ | |\n| String | Username\
+    \ |\n| | Username |\n| | Username |\n| Checkbox and radio | | |\n| Button options\
+    \ | | | - |\n| Segmented buttons | Action - |\n\nFig. 14: Input groups\n\n# Navigation\
+    \ bar (navbar)\n\nFor navbar, one more 'css' file is added at Line 8. This CSS\
+    \ will create the space at the top for the 'navbar' so that it will not overlap\
+    \ with the contents of the HTML page. Further, Links 13-44 adds various links\
+    \ to the navbar. Lastly, we can add HTML title content below Line 46.\n\nOutput\
+    \ of below code is shown in Fig. 3.15.\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n\
+    (continues. on next page)\n```"
+  merge: -1
+  pgno: 47
+- img_proc: true
+  md: "```\n<title>Bootstrap Tutorial</title>\n<!-- CSS --\n<link href=\"asset/bootstrap.min.css\"\
+    \ rel=\"stylesheet\">\n<!-- Add Custom CSS below --\nn<link href=\"asset/css/theme.css\"\
+    \ rel=\"stylesheet\"> <!-- make space at the top for nav-bar -->\n</head>\n\n\
+    <body>\n  <div class=\"navbar navbar-inverse navbar-fixed-top\">\n    <div class=\"\
+    container\">\n      <div class=\"navbar-header\">\n        <button type=\"button\"\
+    \ class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"navbar-collapse\"\
+    >\n          <span class=\"icon-bar\"></span>\n          <span class=\"icon-bar\"\
+    ></span>\n          <span class=\"icon-bar\"></span>\n        </button>\n    \
+    \    <a class=\"navbar-brand hidden-sm\" href=\"http://pythondsp.readthedocs.io/\"\
+    >PythonDSP</a>\n      </div>\n      <div class=\"row\">\n        <div class=\"\
+    navbar-collapse collapse\">\n          <ul class=\"nav navbar-nav\">\n       \
+    \     <li><a href=\"basic.html\">HTML</a></li>\n            <li><a href=\"css.html\"\
+    >CSS</a></li>\n          </ul>\n          <li class=\"dropdown\">\n          \
+    \  <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">More<b class=\"\
+    caret\"></span></a>\n            <ul class=\"dropdown-menu\">\n              <li><a\
+    \ href=\"bootstrap.html\">Bootstrap</a></li>\n              <li><a href=\"js.html\"\
+    >JavaScript</a></li>\n              <li><a href=\"jquery.html\">jQuery</a></li>\n\
+    \            </ul>\n          </li>\n        </div>\n      </div>\n    </div>\n\
+    \  </div>\n<!-- /nav - collapse -->\n\n<!-- other codes here -- -->\n<!-- Javascript\
+    \ before -->\n<!-- put jQuery before bootstrap.min.js; and add custom jquery -->\n\
+    \  <script src=\"asset/jquery-3.3.1.min.js\"></script>\n  <script src=\"asset/bootstrap.min.js\"\
+    ></script>\n</body>\n</html>\n```"
+  merge: -1
+  pgno: 48
+- img_proc: true
+  md: '![](img/f70659d57873500d1a13fffa6bbe945a_49_0.png)
+
+
+    Fig. 3.15: Navigation bar (navbar)'
+  merge: -1
+  pgno: 49
+- img_proc: true
+  md: '# Chapter 4
+
+
+    # JavaScript
+
+
+    # Introduction
+
+
+    +   - JavaScript is a dynamic language which is used for designing the web pages
+    on the client side.
+
+    - It is case sensitive language.
+
+    - It is untyped language i.e. a variable can hold any type of value.
+
+    - // is used for comments.
+
+    - ; i used for line termination.
+
+    - JavaScript code should be added at the end i.e. just above the closing-body-tag.
+
+    - It is better to write the JavaScript code in separate file as shown in next
+    section.
+
+
+    # First code
+
+
+    The JavaScript code can be written in the ‘html’ file or in the separate ‘JavaScript
+    file (.js)’ as shown in this section,
+
+
+    # JavaScript in HTML file
+
+
+    In HTML file, the JavaScript codes can be written inside the ‘script’ tag as shown
+    in Lines 11-13 of below code. The code will write the “Hello World from JavaScript!”
+    on the web page. Open the ‘js.html’ in the browser to see the message.
+
+
+    ```
+
+    <!-- js.html -->
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <title>JavaScript</title>
+
+    </head>
+
+    <body>
+
+    <script type="text/javascript">
+
+    document.write("Hello World from JavaScript!<br>");
+
+    </script>
+
+    </body>
+
+    </html></html>
+
+    ```
+
+
+    Below is the output on the HTML page.'
+  merge: -1
+  pgno: 50
+- img_proc: true
+  md: "# 4.3. Keywords, Datatypes, Variables and Operators\n\n# JavaScript in separate\
+    \ file\n\n+   - The JavaScript code is saved in the file 'my_javascript.js' which\
+    \ is located inside the folders 'asset/js'. Note that, no 'script tag' is used\
+    \ here.\n\n```\n// asset/my/javascript.js\ndocument.write('Hello World from JavaScript!<br>');\n\
+    // Next we need to import the .js file in the HTML file as shown below,\n<!--\
+    \ js.html -->\n<!DOCTYPE html>\n<html>\n<head>\n <title>JavaScript</title>\n</head>\n\
+    <body>\n <!-- import JavaScript files here -->\n <script src=\"asset/my/javascript.js\"\
+    ></script>\n</body>\n</html>\n```\n\n**Note:** We will use the second method in\
+    \ this tutorial.\n\n# Keywords, Datatypes, Variables and Operators\n\n# Keywords\n\
+    \n+   - Below are the reserved keywords in the JavaScript which can not be used\
+    \ as 'variable' and 'function' names etc."
+  merge: -1
+  pgno: 51
+- img_proc: true
+  md: '# Table 4.1; List of keywords
+
+
+    | abstract | boolean | break | byte |
+
+    | --- | --- | --- | --- |
+
+    | case | catch | char | class |
+
+    | const | continue | debugger | default |
+
+    | delete | | double | else |
+
+    | enum | export | extends | false |
+
+    | final | float | for | function |
+
+    | goto | | implements | import |
+
+    | in | int | interface | long |
+
+    | native | | null | package |
+
+    | private | protected | public | return |
+
+    | short | static | super | switch |
+
+    | this | throw | throws | transient |
+
+    | true | try | typeof | var |
+
+    | void | volatile | while | with |
+
+
+    # Datatypes
+
+
+    JavaScript has three types of data,
+
+
+    +   - Numbers: 123,32,32
+
+    - Strings: "Meher", "Krishna Patel", "123"
+
+    - Boolean: true, false
+
+
+    Note: All the numbers are considered as ‘floating point’.
+
+
+    # Variables
+
+
+    Variables can define using keyword ''var''. Further, JavaScript is untyped language
+    i.e. a variable can hold any type of value.
+
+
+    +   - In the below HTML, ''p'' tag with id ''p_name'' is defined at Line 10. This
+    will be used to write some text using JavaScript,
+
+
+    ```
+
+    <!-- js.html -->
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <title>JavaScript</title>
+
+    </head>
+
+    <body>
+
+    <p id=''p_name''></p>
+
+    <!-- import_JavaScript files here -- -->
+
+    <script src="asset/js/my_javascript.js"></script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    Two variables are defined at Lines 9-10 of type ''string'' and ''float'' respectively.
+    Then ''getElementById'' is used to locate the tag with id=''p_name'' and the text
+    is inserted as shown in Line 11. Lastly, the ''+'' sign is used to concatenate
+    the values as Line 11.'
+  merge: -1
+  pgno: 52
+- img_proc: true
+  md: "```\n// asset/js/my_javascript\n\n// print message on the webpage\ndocument.write(\"\
+    Hello World from JavaScript!<br>\");\n\n// variable example\nvar var_name = \"\
+    Meher\";\nage age = 20;\ndocument.getElementById('p_name').innerHTML = \"Hello\
+    \ \" + var_name + \"br>Age : \" + age;\n// below is the output of above codes.\
+    \ note that the message 'Hello world from JavaScript' is added to the\nas as 'JavaScript'\
+    \ file is imported at the end.\n```\n\n# 4.3. Keywords, Datatypes, Variables and\
+    \ Operators\n\nWarning: If you import the 'JavaScript' file between the 'ending-head-tag'\
+    \ and 'start-body-tag', then Message\nHello Meher... will not be displayed as\
+    \ 'JavaScript' will execute before the loading of the page; and JavaScript\ncannot\
+    \ find the 'p_name'.\n\nHello\nMeher\nAge : 20\nHello World from JavaScript!\n\
+    \nNote: All JavaScript/HTML codes will be added below the following codes, therefore\
+    \ only the newly added code\n be shown in the rest of the tutorial.\n\n+   • 'prompt'\
+    \ can be used to read the values from the user.\n\n```\n//prompt\nvar x = prompt(\"\
+    enter a number\");\ndocument.write(\"2*\" + x + \" = \" + 2*x + \"br>\");\n=6\n\
+    ```\n\nA pop-up window will appear after prompt. If we provide the input value\
+    \ as 3, then below output will be\ngener.\n\nNote: The ' ' and '+' can be used\
+    \ to combine outputs as shown in above example\n\n# Operators\n\nVarious operators\
+    \ are shown in this section. The usage of some of these operators are shown in\
+    \ Section 4.4.\n\n# Arithmetic operators\n\n+   • +\n• *\n• /\n• % : modulus i.e\
+    \ remainder of the division\n• ++ (increment)\n• - (decrement)"
+  merge: -1
+  pgno: 53
+- img_proc: true
+  md: "# Chapter 4. JavaScript Assignment operators\n\n+   * +=\n* -=\n* *=\n* /=\n\
+    \ *=%\n\n# Comparison operators\n\n+   * == (compare only values not type)\n*\
+    \ === (compare both values and type)\n* !=\n*>\n* <\n* >=\n* <=\n\n# Conditional\
+    \ operator\n\n+   * ?:\n\ne.g. '(a > b) ? a/b : b/a' i.c if 'a>b' then do 'a/b'\
+    \ else do 'b/a'\n\n# Logical operators\n\n+   * && (logical and)\n* || (logical\
+    \ or)\n* ! (logical not)\n\n# Bitwise operators\n\n+   * & (and)\n* | (or)\n*\
+    \ ^ (xor)\n* ~ (not)\n\n# String to number conversion\n\n'Number' is used to convert\
+    \ the string into numbers.\n\n```\n// string to number conversion\ndocument.write(2\
+    \ + Number(3.4) + \", 2 + Number(3.4),<br>\");\n2 + Number(3.4) = 5.4\n```\n\n\
+    Below is the output of above code,\n\n# Convert to integer\n\nA string or float\
+    \ value can be converted into integer using 'parseInt'"
+  merge: -1
+  pgno: 54
+- img_proc: true
+  md: '# 4.3. Keywords, Datatypes, Variables and Operators
+
+
+    ```
+
+    // int conversion
+
+    document.write("2 + parseInt(''3.4'') = =", 2 + parseInt(''3.4''), "<br>"); //
+    string to int
+
+    document.write("2 + parseInt(3.4) = =", 2 + parseInt(3.4), "<br>"); // float to
+    int
+
+    ```
+
+
+    Below are the outputs of code:
+
+
+    2 + parseInt(''3.4'') = 5
+
+    2 + parseInt(3.4) = 5
+
+
+    The ''parseFloat'' or ''Number'' can be used to convert the float into values.
+
+
+    ```
+
+    document.write("2 + parseFloat(''3.4'') = =", 2 + parseFloat("3.4"), "<br>");
+
+    ```
+
+
+    # Math
+
+
+    ''Math'' library contains various useful functions as shown below:
+
+
+    ```
+
+    // math
+
+    document.write("Math.PI = =", Math.PI, "<br>");
+
+    document.write("Math.floor(3.14) = =", Math.floor(3.14), "<br>"); // floor
+
+    document.write("Math.ceil(3.14) = =", Math.ceil(3.14), "<br>"); // ceil
+
+    document.write("Math.random() = =", Math.floor(Math.random()*20), "<br>"); //
+    random number : 16
+
+    ```
+
+
+    Below are some of the useful ''string-styles'':
+
+
+    # String
+
+
+    ```
+
+    // strings
+
+    document.write("meher".toUpperCase()", "<br>"); // uppercase
+
+    w = "Krishna"
+
+    document.write(w.toLowerCase(), "<br>"); // lowercase(w)
+
+    document.write(w.small(), "<br>"); // small document.write(w.strike(), "<br>");
+    // bold
+
+    document.write(w.fontsize("5em"), "<br>"); // strike
+
+    document.write(w.link("http://javascript.info"), "<br>"); // link
+
+    document.write(w.fontcolor("red").fontsize("12em"), "<br>"); // multiple
+
+    ```
+
+
+    The outputs are shown in Fig.4.1
+
+
+    # Arrays
+
+
+    In JavaScript, the arrays can store different types of values as shown in below,'
+  merge: -1
+  pgno: 55
+- img_proc: true
+  md: "Chapter 4. JavaScript\n\n# MEHER\nkrishna\nKrishna\nKrishna\nKrishna\nKrishna\n\
+    \nFig. 4.1: String styles\n\n```\n// arrays\narr = [15, 30, \"Meher\"]\nfor(a\
+    \ in arr) {\n  document.write(arr[a], \" \");\n  document.write(\"<br>\");\n}\n\
+    document.write(arr.pop(), \"<br>\"); // remove last element\narr.push(\"Krishna\"\
+    ); // add element to end document.write(arr.pop());\ndocument.write(\"<br>\");\n\
+    document.write(\"length of array: \", arr.length, \"<br>\");\n```\n\nBelow are\
+    \ the output of above code,\n\n| 15 30 |\n| Meher |\n| Meher |\n| Krishna |\n\
+    | Length of array: 2 |\n\n# Control structure, loops and functions\n\nIf-else\n\
+    \nIn the below code, three conditions are checked for the variable 'age'; and\
+    \ corresponding message is printed.\n(continues on next page)\n\n```\n// asset/js/my_javascript\n\
+    if-else {\n  age = 10;\n  if (age > 3 && age < 6) {\n    document.write(\"Age:\
+    \ \" + age + \"<br> go to kindergarten</br>\");\n  } else if (age >= 6 && age\
+    \ < 8) {\n    document.write(\"Age: \" + age + \"<br> go to school</br>\");\n\
+    \  } else {\n    document.write(\"Age: \" + age + \"<br> go to college</br>\"\
+    );\n  }\n}\n```"
+  merge: -1
+  pgno: 56
+- img_proc: true
+  md: "# 4.4. Control structure, loops and functions\n(continued from previous page)\n\
+    \n```\n}\ndocument.write(\"<br>\");\n```\n\n+   - Since age is 10, there else\
+    \ if\" statement is satisfied and we will get below output,\n\nAge : 10 go to\
+    \ school\n\n# Switch-case-default\n\nBelow is an example of Switch-case-default\
+    \ statement,\n\n```\n//asset/js/my_javascript\n// Grade_A: Very good grade!\n\
+    var grade = 'A';\ndocument.write(\"Grade \" + grade + \": \");\nswitch(grade)\
+    \ {\n    case 'A':\n        document.write(\"Very good grade!\");\n        break;\n\
+    \    case 'B':\n        document.write(\"Good grade!\");\n        break;\n   \
+    \ default: // if grade is neither 'A' nor 'B'\n        document.write(\"Enter\
+    \ correct grade\");\n}\ndocument.write(\"<br>\");\n```\n\n+   - Below is the output\
+    \ of above code,\n\n# For loop\n\nBelow code prints the value from 5-0,\n\n```\n\
+    // For loop\nfor (i=5;i>0;i--) {\n    document.write(i + \" \\ \");\n}\n```\n\n\
+    ```\ndocument.write(\"<br>\");\n```\n\n+   - Below is the output,\n\n# While loop\n\
+    \nBelow code prints the value from 0-4,\n\n```\n// While loop\nx=0;\nwhile (x\
+    \ < 5) {\n    document.write(x + \" \\ \");\n    x++;\n}\ndocument.write(\"<br>\"\
+    );\n```"
+  merge: -1
+  pgno: 57
+- img_proc: true
+  md: "# Chapter 4. JavaScript do-while\n\nBelow code prints the value from 0-2,\n\
+    \n```\n// do-while\nx=0;\ndo {\n  document.write(x + \" \");\n  x++;\n} while(x\
+    \ < 3);\ndocument.write('<br>'););\n```\n\nBelow is the output,\n\n# For-in loop\n\
+    \nThe 'for-in' loop can be used to iterate the array as shown below,\n\n```\n\
+    // for-in loop\narr = [10, 12, 31]; // array\nfor (a in arr) {\n  document.write(arr[a]\
+    \ + \" \");\n}\ndocument.write('<br>'););\n```\n\n# Continue and break\n\nContinue\
+    \ and break statements are used inside the 'loop' statements.\n\n+   The continue\
+    \ statement will skip the loop and go to next iteration, if the condition is met.\
+    \ In the below code, 3 will not be printed at the output.\n\n```\n// continue\n\
+    for (i=5; i>=0; i--) {\n  if (i==3) { // skip 3\n    continue;\n  }\n  document.write(i\
+    \ + \" \");\n}\ndocument.write('<br>'););\n```\n\nBelow is the output where 3\
+    \ is not printed in the output.\n\n> 'Break' statement will quit the loop if the\
+    \ condition is met. In the below code, the loop will be terminated 'i=3', therefore\
+    \ only 5 and 4 will be printed,\n\n```\n// break\nfor (i=5; i>=0; i--) {\n  if\
+    \ (i==3) { // exit loop when i=3\n    break;\n  }\n  document.write(i + \" \"\
+    );\n}\ndocument.write('<br>'););\n```\n\nBelow is the output of the above code,"
+  merge: -1
+  pgno: 58
+- img_proc: true
+  md: "# 4.5. Event handling\n\n# Functions\n\nIn the below code function 'add2Num'\
+    \ is defined which adds the two numbers and returns the result.\n\n```\n// function\n\
+    function add2Num(num1, num2) { // function definition\n  return num1 + num2;\n\
+    }\nnsum = add2Num(2, 3); // function onclick\ndocument.write(\"2 + 3 = \" + sum);\n\
+    document.write(\"<br>\");\n```\n\nBelow is the output,\n\n# Event handling\n\n\
+    One of the main usage of JavaScript 'event handling'. \"Mouse click\" and \"pressing\
+    \ keys on keyboard\" are the example of \"events\". With the help of JavaScript,\
+    \ we can perform certain actions on the occurrence of the events, as shown below.\n\
+    \n+   - 'alert' is used to display message in the 'pop up' window.\n\n```\nfunction\
+    \ alertMessage(message) {\n  alert(message);\n}\n```\n\n+   - In Line 13, \"Hello\"\
+    \ is shown in the pop-up window on the event 'onclick'. Note that \"JavaScript:void(0)\"\
+    \ is used here, which does not refresh the page.\n- Line 15 is as Line 13, \"\
+    JavaScript:void(0)\" is not used, therefore page will be refreshed.\n- Line 17\
+    \ calls the function 'alertMessage' to display the message, which is defined in\
+    \ the above code.\n- Lines 19-25 use different events i.e. 'onmouseover', 'onmouseleave',\
+    \ 'onmouseup' and 'onmousedown' and the color of the text string changes based\
+    \ on these operations.\n\n```\n<!-- js.html -->\n<!DOCTYPE html>\n<html>\n<head>\n\
+    \  <title>JavaScript</title>\n</head>\n<body>\n  <p id=\"p_name\"></p>\n\n  <a\
+    \ href=\"JavaScript:void(0)\", onclick=\"alert('Hello')\">Say Hello</a><br> <!--\
+    \ do not reload the page -->\n  <a href=\"#\" onclick=\"alert('Hello')\">Say Bye</a><br>\
+    \ <!-- reload the page -->\n  <a href=\"JavaScript:void(0)\", onclick=\"alertMessage('Bye\
+    \ via function')\">Bye-function</a><br> (continues on next page)\n  <a href=\"\
+    JavaScript:void(0)\"></a>\n```"
+  merge: -1
+  pgno: 59
+- img_proc: true
+  md: '```
+
+    ormouseover="this.style.color='' red''
+
+    mouseleave="this.style.color='' blue''\nmouseup="this.text='' Not clicked''\nmousedown="this.text=''
+    You clicked me''" Not
+
+    clicked
+
+    /><br>
+
+
+    <!-- import JavaScript files here -->
+
+    <script src="asset/my_javascript.js"></script>
+
+
+    <body>
+
+    </html>
+
+    ```
+
+
+    # # Conclusion
+
+
+    In this tutorial, we have selected the element with certain ''id'' using ''getElementById''.
+    Also, we saw the example of ''event handling Although, we can use JavaScript for
+    these operations, but it is better to use jQuery for these purposes, which is
+    discussed in Chapter 5. A good approach is to use the jQuery for ''selectors''
+    & ''event handling'' and then use various features of JavaScript which are described
+    in Section 4.4 to implement the logics.'
+  merge: -1
+  pgno: 60
+- img_proc: true
+  md: '# Chapter 5
+
+
+    # jQuery
+
+
+    # Introduction
+
+
+    jQuery is the Javascript library.
+
+
+    # Requirements
+
+
+    +   * Create a file ''jQuery.html''. Next, we need three files, i.e. one CSS (Line
+    9) and Javascript (Lines 23-24), for using jQuery in this tutorial. These files
+    are saved inside the folder ''asset'', which can be downloaded from the repository.
+    Lines 9 and 24 are the bootstrap files, whereas Line 23 is the actual ''jQuery''
+    file which is required to use jQuery.
+
+
+    > Note: Note that, ''jQuery.js'' files should be placed above the ''bootstrap.js''
+    file, otherwise the bootstrap-javascript will not work.
+
+
+    ```
+
+    <!-- jQuery.html -->
+
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <title>jQuery</title>
+
+
+    <!-- CSS --
+
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Add Custom styles below --
+
+
+    </head>
+
+    <body>
+
+
+    <!-- Javascript --
+
+    <!--- put jQuery.js before bootstrap.min.js; and then add custom jquery --
+
+    <script src="asset/js/jquery-3.1.min.js"></script>
+
+    <script src="asset/js/bootstrap.min.js"></script>
+
+
+    </body>
+
+    </html>
+
+    ```'
+  merge: -1
+  pgno: 61
+- img_proc: true
+  md: "Chapter 5. jQuery\n\n# Add contents\n\nNext add one jumbotron (Line 15-19)\
+    \ and a few labels (Lines 21-26) in the html file as shown in Fig. 5.1.\n\n```\n\
+    <!-- jQuery.html --\n<!DOCTYPE html>\n<html>\n<head>\n  <title>jquery</title>\n\
+    \  <!-- CSS --\n  <link rel=\"stylesheet\" href=\"asset/css/bootstrap.min.css\"\
+    >\n  <!-- Add Custom styles below -->\n</head>\n<body>\n  <div class=\"jumbotron\"\
+    >\n    <div class=\"col-md-offset-4 container\">\n      <h1><b></body></h1>\n\
+    \    </div>\n  </div>\n\n  <span class=\"label label-default\" id=\"l_default\"\
+    >Default</span>\n  <span class=\"label label-primary\" id=\"l_primary\">Primary</span>\n\
+    \  <span class=\"label label-success\" id=\"l_success\">Success</span>\n  <span\
+    \ class=\"label label-info\" id=\"l_info\">Info</span>\n  <span class=\"label\
+    \ label-warning\" id=\"l_warning\">Warning</span>\n  <span class=\"label label-danger\"\
+    \ id=\"l_danger\">Danger</span>\n\n  <!-- Javascript -->\n  <!-- put jQuery.js\
+    \ before bootstrap.min.js; and then add custom jquery --\n  <script src=\"asset/js/jquery-3.3.1.min.js\"\
+    ></script>\n  <script src=\"asset/js/bootstrap.min.js\"></script>\n</body>\n</html>\n\
+    ```\n\n![](img/f70659d57873500d1a13fffa6bbe945a_62_0.png)\n\nFig. 5.1: Jumbotron\
+    \ and labels are added"
+  merge: -1
+  pgno: 62
+- img_proc: true
+  md: "# 5.2. jQuery examples\n\njQuery are the important parts for writing a jQuery.\n\
+    \n+   - Selectors: to select the specific element (e.g. 'id', 'class' etc.) for\
+    \ operations.\n- Event handling: perform some operations (e.g, toggle etc.) on\
+    \ the selected items at some events (e.g. click, mouse over etc.).\n\nIn this\
+    \ section, we will see the working of jQuery with the help of some examples. Then\
+    \ in Section 5.3, we will see various methods using the selectors to separate\
+    \ the specific elements. Next, a list of operations are shown in Table 5.2. Finally\
+    \ in Section 5.5, a list of events are shown which can be used to initiate the\
+    \ operations.\n\n# Add jQuery code\n\nNow, we can add the jQuery code as shown\
+    \ in Lines 36-40. Please note the following part,\n\n+   - Sign is used to hit\
+    \ the jQuery. In the simple words, we can say that it execute the jQuery.\n- The\
+    \ code is written between the following block. This block stops the jQuery to\
+    \ execute the whole page as loaded, i.e. jquery will be executed after completion\
+    \ of the page-download.\n\n```\nfunction() {\n    // write code here\n});\n```\n\
+    \n+   - The above block is a shorthand for below,\n\n```\n$(document).ready(function()\
+    \ {\n    // write code here\n});\n```\n\n**Note:** We can use multiple blocks,\
+    \ if we want to separate the codes; or we can write the jQueries within one block.\n\
+    \n+   - Lastly, the blue line hides the \"l_default\" after 1000 ms, i.e. 'Default'\
+    \ label will not be displayed after 1000 ms as shown in Fig. 5.2\n\n```\n$('#l_default').hide(1000);\
+    \ // hide id = 'l_default' using operator after 300 ms\n```\n\n```\n<!-- jQuery.html\
+    \ -->\n<!DOCTYPE html>\n<html>\n<head>\n    <title>jQuery</title>\n\n    <!--\
+    \ CSS --\n    <link rel=\"stylesheet\" href=\"asset/css/bootstrap.min.css\" rel=\"\
+    stylesheet\"-->\n    <!-- Add custom styles here -->\n</head>\n<body>\n    <div\
+    \ class=\"umbotron col-md-offset-4 container\">\n        <div class=\"col-md-8\"\
+    >\n            <h1><div>jQuery</div></h1>\n        </div>\n    </div>\n\n    <span\
+    \ class=\"label label-lg label-default\" id=\"l_default\">Default</span>\n```"
+  merge: -1
+  pgno: 63
+- img_proc: true
+  md: "# Chapter 5. jQuery\n\n```\n<span class=\"label label-primary\" id=\"l_primary\"\
+    >Primary</span>\n\n<span class=\"label label-success\" id=\"l_success\">Success</span>\n\
+    \n<span class=\"label label-info\" id=\"l_info\">Info</span>\n\n<span class=\"\
+    label label-warning\" id=\"l_warning\">Warning</span>\n\n<span class=\"label label-danger\"\
+    \ id=\"l_danger\">Danger</span>\n\n\n\n<!-- Javascript -->\n<!-- put jquery.js/jquery-3.1.min.js,\
+    \ and then add custom jquery --\n<script src=\"asset/js/bootstrap.min.js\"></script>\n\
+    \n\n<script type=\"text/javascript\">\n$(function() {\n  $(\"#l_default\").hide(1000);\
+    \ // hide id = 'l_default' using operator after 300 ms\n});\n</script>\n\n</body>\n\
+    </html>\n```\n\n![](img/f70659d57873500d1a13fffa6bbe945a_64_0.png)\n\nNote: \"\
+    #\" is used to select the 'id'; whereas '.' is used to select the 'class'.\n\n\
+    +   - In the code below, the label 'Danger' is removed; and \"opacity=0.5\" is\
+    \ set for the rest of the labels. Here, '.label' selects all the classes with\
+    \ the name 'label' in it. Since all the entries have classes with name 'label',\
+    \ they are all selected and faded to 'opacity=0.5', as shown in Fig. 5.3.\n\n\
+    ```\n<!-- jQuery -->\n<!DOCTYPE html>\n<html>\n<head>\n  <title>jQuery</title>\n\
+    \  <!-- CSS --\n  <link href=\"asset/css/bootstrap.min.css\" rel=\"stylesheet\"\
+    >\n  <!-- Add Custom styles below --\n</head>\n<body>\n  <div class=\"umbotron\"\
+    >\n    <div class=\"col-md-offset-4 container\">\n      <h1>jQuery</h1>\n    </div>\n\
+    \  </div>\n\n<span class=\"label label-ig label-default\" id=\"l_default\">Default</span>\n\
+    <span class=\"label label-primary\" id=\"l_primary\">Primary</span>\n<span class=\"\
+    label label-success\" id=\"l_success\">Success</span>\n```"
+  merge: -1
+  pgno: 64
+- img_proc: true
+  md: "# 5.2 jQuery examples\n(committed from previous page)\n\n```\n<span class=\"\
+    label label-info\" id=\"l_info\">Info</span>\n<span class=\"label label-warning\"\
+    \ id=\"l_warning\">Warning</span>\n<span class=\"label label-danger\" id=\"l_danger\"\
+    >Danger</span>\n```\n\n```\n<!-- Javascript -->\n<!-- put.jquery is before bootstrap.min.js;\
+    \ and then add custom query -->\n<script src=\"asset/js/jquery-3.1.min.js\"></script>\n\
+    <script src=\"asset/js/bootstrap.min.js\"></script>\n```\n\n```\n<script type=\"\
+    text/javascript\">\n$(function() {\n  $(\"#l_default\").hide(1000); // hide id\
+    \ = 'l_default' using # operator after 300 ms\n  $(\".label-danger\").hide();\
+    \ // hide class = 'label' using . operator\n  $(\".label\").css({\"opacity\":\
+    \ 0.5}); // add opacity to all classes with name 'label'\n});\n</script>\n</body>\n\
+    \n</html>\n```\n\n![](img/f70659d57873500d1a13fffa6bbe945a_65_0.png)\n\nFig. 5:\
+    \ Faded labels\n\n# jQuery in separate file\n\nIt is better to write the jQuery\
+    \ in the separate files, then the codes are more manageable.\n\n+   - For this,\
+    \ write the first code in the separate file 'my_jquery.js' as below,\n\nNote:\
+    \ 'html' is used to change the content of the 'id' as shown in Line 5 below listing\
+    \ (see Fig. 5.4)\n\n```\n// asset/js/my_jquery.js\n$(function() {\n  $(\"#l_default\"\
+    ).hide(); // hide id = 'l_default' using # operator after some\n  $(\".label-danger\"\
+    ).html(\"Shark is dangerous\"); // change content using \"html\"\n});\n```\n\n\
+    +   - Next, import this file to 'html' as shown in Line 35 of code,\n\n```\n<!--\
+    \ jquery.jquery.html -->\n<!DOCTYPE html>\n<html>\n<head>\n<title>jQuery</title>\n\
+    <!-- CSS --></\n<link href=\"asset/css/bootstrap.min.css\" rel=\"stylesheet\"\
+    >\n<!-- Add Custom styles below ---->\n```\n\n(continues on next page)"
+  merge: -1
+  pgno: 65
+- img_proc: true
+  md: '```
+
+    </head>
+
+    <body>
+
+    <div class="jumbotron">
+
+    <div class="col-md-offset-4 container">
+
+    <h1><b>jquery</b></h1>
+
+    </div>
+
+    </div>
+
+    <span class="label label-lg label-default" id="l_default">Default</span>
+
+    <span class="label label-lg label-primary" id="l_primary">Primary</span>
+
+    <span class="label label-lg label-success" id="l_success">Success</span>
+
+    <span class="label label-lg label-info" id="l_info">Info</span>
+
+    <span class="label label-lg label-warning" id="l_warning">Warning</span>
+
+    <span class="label label-lg label-danger" id="l_danger">Danger</span>
+
+
+    <!-- jQuery is before bootstrap.min.js, and then add custom jquery --
+
+    <script src="asset/jquery-3.1.min.js"></script>
+
+    <script src="asset/bootstrap.min.js"></script>
+
+    <script src="asset/my_jquery.js"></script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    ![](img/f70659d57873500d1a13fffa6bbe945a_66_0.png)
+
+
+    Fig 5.4: Changed code using ‘html’
+
+
+    # Get input from user
+
+
+    Below is the complete html code, which we will use in this section,
+
+
+    Listing 5.1: complete HTML code
+
+
+    ```
+
+    <!-- jQuery.html -->
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <title>jquery</title>
+
+    <!-- CSS --
+
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Add Custom styles -->
+
+    </head>
+
+    <body>
+
+    <div class="jumbotron">
+
+    <div class="col-md-offset-4 container">
+
+    <h1><b>jquery</b></h1>
+
+    </div>
+
+    </div>
+
+    </body>
+
+    </html>
+
+    ```'
+  merge: -1
+  pgno: 66
+- img_proc: true
+  md: "# 5.2 jQuery examples (continued from previous page)\n\n```\n<span class=\"\
+    label label-default\" id=\"l_default\">Default</span>\n<span class=\"label label-primary\"\
+    \ id=\"l_primary\">Primary</span>\n<span class=\"label label-success\" id=\"l_success\"\
+    >Success</span>\n<span class=\"label label-info\" id=\"l_info\">Info</span>\n\
+    <span class=\"label label-warning\" id=\"l_warning\">Warning</span>\n<span class=\"\
+    label label-danger\" id=\"l_danger\">Danger</span>\n\n<br><br>\n<span class=\"\
+    btn btn-sm btn-btn-warning\" id=\"b_warning\">Toggle Warning Label</span>\n<br><br>\n\
+    <span class=\"btn btn-sm btn-btn-default\" id=\"b_default\" data-toggle=\"Toggle\
+    \ Label\">Toggle Label</span>\n<span class=\"btn btn-sm btn-btn-primary\" id=\"\
+    b_primary\" data-toggle=\"Toggle Label\">Toggle Label</span>\n<span class=\"btn\
+    \ btn-sm btn-btn-success\" id=\"b_success\" data-toggle=\"Toggle Label\">Toggle\
+    \ Label</span>\n<span class=\"btn btn-sm btn-btn-info\" id=\"b_info\" data-toggle=\"\
+    Toggle Label\">Toggle Label</span>\n<span class=\"btn btn-sm btn-btn-warning\"\
+    \ id=\"b_warning\" data-toggle=\"Toggle Label\">Toggle Label</span>\n<span class=\"\
+    btn btn-sm btn-btn-danger\" id=\"b_danger\" data-toggle=\"Toggle Label\">Toggle\
+    \ Label</span>\n```\n\n```\n// jQuery before bootstrap.min.js, and then custom\
+    \ jquery--\n<script src=\"asset/js/jquery-3.0.min.js\"></script>\n<script src=\"\
+    asset/js/bootstrap.min.js\"></script>\n<script src=\"asset/js/my_jquery.js\"></script>\n\
+    \n</body>\n</html>\n```\n\n# Toggle label on mouse click\n\nIn this section, the\
+    \ 'mouse click' on the button 'Toggle Label (Line 29)' is read; then the label\
+    \ 'warning' is toggled.\n\n+   * The method 'on' waits for user's input (i.e.\
+    \ mouse click)\n* On mouse-click next query i. 'toggle' is executed which hides/unhide\
+    \ the 'warning' label as shown in Fig 5.5 - 5.6.\n\n```\n// asset/js/my_jquery.js\n\
+    // 'hide label' and 'change content'\n$(function () {\n  $('#l_default').hide(1000);\
+    \ // hide id = 'l_default' using operator after 300 ms\n  $('#l_danger').html(\"\
+    Shark is dangerous\"); // change content using \"html\"\n});\\n\n// toggle 'warning\
+    \ label' based on the click on the button 'Toggle Warning Label'\n$(function ()\
+    \ {\n  $('#b_warning').on('click', function() {\n    $('#l_warning').toggle();\n\
+    \  });\n});\n```\n\nToggle label based on the buttons\nIn previous section, we\
+    \ wrote the code which can toggle only one. In this section, we will toggle multiple\
+    \ labels by writing one-generalized-jQuery as shown in Fig. 5.."
+  merge: -1
+  pgno: 67
+- img_proc: true
+  md: "# Chapter 5. jQuery\n\n![](img/f70659d57873500d1a13fffa6bbe945a_68_0.png)\n\
+    \nFig. 5.5: Hide label ‘warning’\n\n![](img/f70659d57873500d1a13fffa6bbe945a_68_1.png)\n\
+    \nFig. 5.6: Show label ‘warning’\n\n+   - Lines 21-26 and 31-38 of Listing 5.1\
+    \ are used for this section,\n- Custom attributes `label_id=...` are added in\
+    \ each button which has the value which corresponds to one of the ‘label’s’ id.\
+    \ e.g. `label_id` for Line 33 (i_1 default) is as ‘id’ at Line 21.\n- Next, in\
+    \ the below jQuery, we saved the `label_id` in a variable (see Line 21) and then\
+    \ the variable is used to toggle the labels.\n\nListing 5.2: Toggle the label\
+    \ based on the button-clicked\n\n```\n// asset/js/my_jquery.js\n// 'hide label'\
+    \ and 'change content'\nfunction() {\n  $(\"#1_default\").hide(1000); // hide\
+    \ id = '1 default' using # operator after 300 ms\n  $(\\(\".label-danger\").html('Shark\
+    \ is dangerous'); // change content using 'html'\n}\n\n// toggle 'warning label'\
+    \ based on click on the button 'Toggle Warning Label'\nfunction() {\n  $(\".label-btn\"\
+    ).on('click', function() {\n    $(\"#1_warning\").toggle();\n  });\n}\n\n// toggle\
+    \ panels according to the clicked-buttons\nfunction() {\n  $(\".label-btn\").on('click',\
+    \ function() { // select class 'label-btn'\n    var label_id = $(this).attr(label_id);\
+    \ // store the attribute value of 'label_id'\n```\n\n![](img/f70659d57873500d1a13fffa6bbe945a_68_2.png)\n\
+    \nFig. 5.7: Toggle labels based on button-clicked"
+  merge: -1
+  pgno: 68
+- img_proc: true
+  md: '```
+
+    $(''#'' + labelId).toggle(); // toggle the label with id stored in ''label_id''
+
+    );
+
+    );
+
+    ```
+
+
+    # Selectors
+
+
+    In this section, we will use following to understand HTML the various combination
+    of the selectors which are summarized in Table 5.1.
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <head>
+
+    <title>Query Selectors</title>
+
+    </head>
+
+    <body>
+
+    <p>Query Selectors</p>
+
+    <p class="foo">Paragraph with class. </p>
+
+    <p><span>Paragraph with span. <span></span></span></p>
+
+    <p id="bar">Paragraph with ID. <span class="foo">Span with class and inside the
+    paragraph-with-id. <span></span></span></p>
+
+    <div>
+
+    <p id="my_para">Paragraph (with custom id) inside the div</p>
+
+    <p id="my_para_2"><span>Span inside the paragraph (with custom id) inside the
+    div</span></p>
+
+    </div>
+
+
+    <!-- Javascript --
+
+    <script src="...asset/js/jquery-3.3.1.min.js"></script>
+
+    ```
+
+
+    Note:
+
+
+    +   - Press ''ctrl+shift+k'' (or go to Tools->Web Developer->Web Console) to open
+    the web-console in Firefox and click on ''console'' and type the "jQuery" commands
+    there.
+
+    - Press ''ctrl-shift+J'' (or go to Tools->Javascript Console) in ''Chrome'' and
+    type the jQuery commands there.
+
+    - In this tutorial, the output of the "Firefox" are shown.
+
+
+    # Select elements
+
+
+    Select elements
+
+
+    HTML elements, e.g. div, p, span and table etc., can be selected by writing them
+    with the quotation mark as shown in below codes.
+
+
+    +   - Here,(''$'') is the command, where the lines below it are the outputs.
+
+    - The outputs show the ''selected elements''; and the total number of selected
+    elements i.e. ‘length: 6’.
+
+    - If we put the cursor to one of the outputs, then it will highlight the corresponding
+    elements in the html as shown in Fig. 5.8.'
+  merge: -1
+  pgno: 69
+- img_proc: true
+  md: '# Chapter 5. jQuery
+
+
+    ```
+
+    $(''p'')
+
+    [..]
+
+    0: <p>
+
+    1: <p class="foo">
+
+    2: <p>
+
+    3: <p id="bar">
+
+    4: <p my-id="my_para">
+
+    5: <p my-id="my_para_2">
+
+    6: { length: 6 }
+
+    ```
+
+
+    ![](img/f70659d57873500d1a13fffa6bbe945a_70_0.png)
+
+
+    +   - Similarly, we can select ''div'' elements
+
+
+    ```
+
+    $(''div'')
+
+    [..]
+
+    0: <div>
+
+    length: 1
+
+    ```
+
+
+    # Select class
+
+
+    Class can be selected using ''. '' operator. In below code, ''foo'' is selected.
+
+
+    ```
+
+    $(''.foo'')
+
+    [..]
+
+    0: <p class="foo">
+
+    1: <span>class="foo</span>
+
+    length: 2
+
+    ```
+
+
+    # Select ID
+
+
+    ID can be selected using ''#bar'' operator. In the below code, ''bar'' is selected.
+
+
+    ```
+
+    $(''#bar'')
+
+    [..]
+
+    0: <p id="bar">
+
+    length: 1
+
+    ```
+
+
+    # Combining selectors
+
+
+    We can select an element with specific class name using ''. '' operator as shown
+    in below code. Here element ''span'' with class ''foo'' is selected.'
+  merge: -1
+  pgno: 70
+- img_proc: true
+  md: '# 5.3. Selectors
+
+
+    ```
+
+    $(''span.foo'')
+
+    []
+
+    0: <span class="foo''>
+
+    length: 1
+
+    ```
+
+
+    # Multiple selectors
+
+
+    Use ''*'' to select different types of elements. In the code below, "paragraph
+    with id ''bar'' and "elements with class ''foo" are selected.
+
+
+    ```
+
+    $(''*bar .foo'')
+
+    []
+
+    0: <span class="foo''>
+
+    1: <span id="bar''>
+
+    2: <span class="foo''>
+
+    length: 3
+
+    ```
+
+
+    # Select descendant element
+
+
+    Select ''span'' inside the ''p'' (use space between ''span'' and ''p'').
+
+
+    ```
+
+    $(''p span'')
+
+    []
+
+    0: <span>
+
+    1: <span class="foo''>
+
+    2: <span>
+
+    length: 3
+
+    ```
+
+
+    # Select child element
+
+
+    The ''>'' is used to select the child of an element.
+
+
+    ```
+
+    $(''div span'')
+
+    []
+
+    length: 0
+
+    ```
+
+
+    > Note: There is one element inside ''div'' but it''s path is ''div->span'' therefore
+    ''span'' is a child of ''p'' (not of ''div''). But ''span'' is the descendant
+    of ''div'' therefore can be accessed using space,
+
+
+    ```
+
+    $(''div span'')
+
+    []
+
+    0: <span>
+
+    length: 1
+
+    ```
+
+
+    # Attribute selector
+
+
+    Custom attributes can be selected as below, (continues on next page)
+
+
+    ```
+
+    $(''[my-id = my_para]'')
+
+    []
+
+    0: <p my-id="my_para''>
+
+    length: 1
+
+    ```'
+  merge: -1
+  pgno: 71
+- img_proc: true
+  md: "# Chapter 5. jQuery\n\n```\n$('p[my-id != my_para]') // select p with my-id\
+    \ != my_para\n[...]\n<p>\n0:\n1: <p class=\"foo\">\n2: <p>\n3: <p id=\"bar\">\n\
+    4: <p my-id=\"my_para2\">\n   length: 5\n\n$('p[class = 'foo'])\n[...]\n0: <p\
+    \ class=\"foo\">\nlength: 1\n```\n\n# Filters\n\nVarious filter options (e.g.\
+    \ first, last and has etc.) can be used after ':': as shown below,\n\n```\n(':first')\
+    \ // select first element\n[...]\n0: <p>\n\n(':last') // select last element\n\
+    [...]\n0: <p my-id=\"my_para2\">\n   length: 1\n\n(':not('foo)') // select p which\
+    \ does not have class 'foo'\n[...]\n0: <p>\n1: <p>\n2: <p id=\"bar\">\n3: <p my-id=\"\
+    my_para\">\n4: <p my-id=\"my_para2\">\n   length: 5\n\n(':has(span)') // select\
+    \ p which has 'span' inside it\n[...]\n0: <p>\n1: <p id=\"bar\">\n2: <p my-id=\"\
+    my_para2\">\n   length: 3\n\n(':hidden') // hidden 'p'\n[...]\nlength: 0\n\n(':visible')\
+    \ // visible 'p'\n[...]\n0: <p>\n1: <p class=\"foo\">\n2: <p>\n3: <p id=\"bar\"\
+    >\n4: <p my-id=\"my_para\">\n5: <p my-id=\"my_para2\">\n   length: 6\n\n(':contains(class)')\
+    \ // select paragraph which contains class inside it\n```"
+  merge: -1
+  pgno: 72
+- img_proc: true
+  md: '```
+
+    <p class="foo">
+
+    0: <p id="bar">
+
+    1: length: 2
+
+    $('''').filter(
+
+    ```
+
+
+    Table 5.1: Selectors
+
+
+    | Command | Description | example |
+
+    | --- | --- | --- |
+
+    | ${(elementName) | select the tags (p, body, table) | \$(''p''), \$(''body'')
+    |
+
+    | $(''.className'') | select element with ''className'' | \$(".foo") |
+
+    | ${(elementName.className) | select element with className | \$("span.foo") |
+
+    | $(selector1,selector2) | select selector1 and selector2 | \$(''p/bar, foo'')
+    |
+
+    | $(selector1 selector2) | select selector2 inside selector1 | \$(''p span'')
+    |
+
+    | $(selector1>selector2) | select selector2 which is child of selector | \$(div>span)
+    |
+
+    | ${(attribute = someName) | select attribute with someName | \$(\[''my-id = my_para''])
+    |
+
+    | \$(attr(attribute = someName)) | select ''p'' with attribute with someName |
+    \$(\[''my-id = my_para'']) |'
+  merge: -1
+  pgno: 73
+- img_proc: true
+  md: '# Operations
+
+
+    In Listing 5.2 we saw some operations e.g. ''hide()'' and ''toggle()''. Table
+    5.2 shows some more such operations.
+
+
+    Table 5.2: Operations
+
+    | | | | |
+
+    |---|---|---||}{
+
+    | hide() | hide(speed) | fadeIn(speed) | fadeOut(speed) |
+
+    | show() | show(speed) | slideDown(speed) | slideToggle(speed) |
+
+    | slideUp(speed) | toggle() | toggle(speed) | toggle(switch) |
+
+
+    # Event handling
+
+
+    In Listing 5.2 we saw one example of event handling, where certain operations
+    are performed on the event ''mouse click''. Table 5.2 shows a list of some more
+    events.
+
+
+    Table 5.3: Event handle
+
+    | Events | | | |
+
+    |---|---|---|---|n| click | keydown | keypress | key |
+
+    | mousedown | mouseover | | |'
+  merge: -1
+  pgno: 74
