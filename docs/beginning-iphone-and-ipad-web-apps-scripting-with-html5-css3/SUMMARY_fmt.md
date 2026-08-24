@@ -1,4 +1,0 @@
-
-
-* [iPhone 和 iPad Web 应用入门指南：使用 HTML5、CSS3 和 JavaScript 进行脚本编程](README.md)
-* [iPhone 和 iPad Web 应用入门指南：使用 HTML5、CSS3 和 JavaScript 进行脚本编程](beginning-iphone-and-ipad-web-apps-scripting-with-html5-css3.md)
