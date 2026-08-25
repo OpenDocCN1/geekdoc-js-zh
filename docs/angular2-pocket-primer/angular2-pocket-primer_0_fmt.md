@@ -1,0 +1,7758 @@
+
+# Angular2 入门指南
+
+# 第 3 章：图形与动画
+
+## Angular 生命周期方法
+
+## Angular 生命周期方法的简单示例
+
+- *清单 3.1：app.component.ts*
+
+## GSAP 动画与 ngAfterContentInit()方法
+
+- *清单 3.2：main.ts*
+- *清单 3.3：app.component.ts*
+- *清单 3.4：ArchTubeOvals1.ts*
+- *清单 3.5：app.module.ts*
+
+## Angular 中的 CSS3 动画效果
+
+- *清单 3.6：app.component.ts*
+
+## 通过“Angular 方式”实现动画效果
+
+- *清单 3.7：app.component.ts*
+
+## Angular 中的基本 SVG 示例
+
+- *清单 3.8：app.component.ts*
+- *清单 3.9：MyEllipse1.ts*
+- *清单 3.10：app.module.ts*
+
+## Angular 与 SVG 中的鼠标跟随
+
+- *清单 3.11：app.component.ts*
+- *清单 3.12：MouseMove.ts*
+- *清单 3.13：app.module.ts*
+
+## D3 与 Angular
+
+- *清单 3.14：app.component.ts*
+
+## D3 动画与 Angular
+
+## Angular 中的纯 CSS3 3D 动画
+
+- *清单 3.15：index.html*
+- *清单 3.16：Anim240Flicker3DLGrad2SkewOpacity2Reflect1DIV6.css*
+
+## Angular 中的 CSS3 与 jQuery 动画效果
+
+- *清单 3.17：index.html*
+- *清单 3.18：app.component.ts*
+- *清单 3.19：SkewAnim1.css*
+
+## “Angular 方式”的动画效果
+
+- *清单 3.20：app.component.html*
+- *清单 3.21：app.component.ts*
+- *清单 3.22：app.module.ts*
+
+## Angular 的图表工具
+
+## 总结
+
+# 第 4 章：HTTP 请求与路由
+
+## Angular 中的依赖注入
+
+## 使用 jQuery 和 Angular 进行 Flickr 图像搜索
+
+- *清单 4.1：app.component.ts*
+
+## Angular 中 Promise 与 Observable 的结合
+
+- *清单 4.2：app.component.ts*
+- *清单 4.3：nyt.service.ts*
+- *清单 4.4：app.module.ts*
+
+## 通过 Angular 中的 Observable 读取 JSON 数据
+
+- *清单 4.5：app.component.ts*
+- *清单 4.6：employees.json*
+- *清单 4.7：app.module.ts*
+
+## Angular 中使用 forkJoin()的多个并发请求
+
+- *清单 4.8：app.component.ts*
+- *清单 4.9：file.service.ts*
+- *清单 4.10：customers.json*
+
+## Angular2 HTTP 与 Observable
+
+## Angular 中的 TypeScript 接口
+
+## 一个简单的 TypeScript 接口
+
+- *清单 4.11：employee.ts*
+
+## JSON 数据与 TypeScript 接口
+
+- *清单 4.12：employees.ts*
+
+## 带有 TypeScript 接口的 Angular 应用
+
+## 在 Angular 中获取 GitHub 用户数据
+
+- *清单 4.13：app.component.ts*
+
+## 使用简单服务器进行 HTTP GET 请求
+
+- *清单 4.14：app.component.ts*
+- *清单 4.15：posts.json*
+
+## 使用简单服务器进行 HTTP POST 请求
+
+- *清单 4.16：app.component.ts*
+- *清单 4.17：authors.json*
+
+## Angular 中的路由
+
+## Angular 中的路由示例
+
+- *清单 4.18：app.component.ts*
+- *清单 4.19：about.ts*
+- *清单 4.20：login.ts*
+- *清单 4.21：users.ts*
+- *清单 4.22：user.ts*
+
+## 使用 Webpack 的 Angular 路由
+
+## 总结
+
+# 第 5 章：表单、管道与服务
+
+## Angular 表单概述
+
+## 响应式表单
+
+## 模板驱动表单
+
+## 一个 Angular 表单示例
+
+- *清单 5.1：app.component.ts*
+- *清单 5.2：app.module.ts*
+
+## 数据绑定与 ngModel
+
+## 第三方 UI 组件
+
+## 使用 FormBuilder 的 Angular 表单
+
+- *清单 5.3：app.component.ts*
+
+## Angular 响应式表单
+
+- 清单 5.4：app.component.ts
+- 清单 5.5：app.component.html
+- 清单 5.6：app.module.ts
+
+### FormGroup 与 FormArray
+
+### Angular 中的其他表单特性
+
+### Angular 表单与 Bootstrap 4（可选）
+
+### 在 Angular 中使用管道
+
+### 使用内置管道
+
+### AsyncPipe
+
+### 创建自定义 Angular 管道
+
+- 清单 5.7：app.component.ts
+- 清单 5.8：pipe.component.ts
+- 清单 5.9：user.component.ts
+- 清单 5.10：app.module.ts
+
+### 什么是 Angular 服务？
+
+### 内置 Angular 服务
+
+### Angular 服务示例
+
+- 清单 5.13：app.component.ts
+
+### 带有 EventEmitter 的服务
+
+- 清单 5.14：user.component.ts
+- 清单 5.15：user.service.ts
+- 清单 5.16：app.component.ts
+- 清单 5.17：app.module.ts
+
+### 显示 GitHub 用户数据
+
+- 清单 5.18：app.component.ts
+- 清单 5.19：user.component.ts
+
+### 其他与服务相关的用例
+
+### 多个服务实例
+
+### 单个服务实例
+
+### 服务与组件间通信
+
+### 将服务注入到服务中
+
+## 总结
+
+# 第 6 章：Angular 与 Express
+
+### 一个极简的 Node 应用程序
+
+### 设置 Node 环境（可选）
+
+### 创建 Express 应用程序
+
+- 清单 6.1：server.js
+
+### 启动 Express 应用程序
+
+### 一个包含 Angular 和 Express 的应用程序
+
+### 启动服务器和 Angular 应用程序
+
+### Angular HTTP 与 Observables
+
+### 服务器代码：package.json
+
+- 清单 6.2：package.json
+
+### 服务器代码：server.js
+
+- 清单 6.3：server.js
+
+### Angular 代码
+
+- 清单 6.4：app.component.ts
+
+### 并发请求与 Angular（版本 2）
+
+### 如何启动 Express 服务器代码
+
+### Angular 代码
+
+- 清单 6.5：app.component.ts
+
+### 一个带有 MongoDB 的 Express 应用程序（第 1 部分）
+
+- 清单 6.6：package.json
+
+### 服务器端自定义文件（第 2 部分）
+
+### app.js 文件
+
+- 清单 6.7：app.js
+
+### index.js 文件
+
+- 清单 6.8：index.js
+
+### userlist.jade 模板
+
+- 清单 6.9：userlist.jade
+
+### 启动服务器端应用程序
+
+### 一个带有 Express 的 Angular 应用程序
+
+- 清单 6.10：app.component.ts
+- 清单 6.11：app.js
+
+### Angular 与日文文本（可选）
+
+- 清单 6.12：load-japanese.js
+
+### Angular Universal
+
+### 服务器文件 main.server.ts
+
+- 清单 6.13：main.server.js
+
+### 网页 index.html
+
+- 清单 6.14：index.html
+
+### TypeScript 文件 app.ts
+
+- 清单 6.15：app.ts
+
+### 使用微服务（可选）
+
+### 微服务的优势
+
+### 微服务的劣势
+
+## 总结
+
+## 第 7 章：Flux、Redux、GraphQL、Apollo 与 Relay
+
+### 什么是 Flux？
+
+### 什么是 Action？
+
+### 什么是 Reducer？
+
+### Store 与应用程序状态
+
+### 什么是 Redux？
+
+### 应用程序数据的数据结构
+
+### 何时应该使用 Redux？
+
+### Reducer 的简单示例
+
+### 用于加减数值的 Reducer
+
+### 用于从数组中添加/删除字符串的 Reducer
+
+### Redux Reducer 是同步的
+
+### Redux Store
+
+### 中间件
+
+### 什么是 GraphQL？
+
+### GraphQL 与 REST
+
+### GraphQL 查询
+
+### 在 GraphQL 中定义类型系统
+
+### 有用的 GraphQL 链接
+
+### 什么是 Apollo？
+
+### 启动 Apollo 服务器
+
+### 启动 Angular 客户端
+
+### Angular 客户端中的项目结构
+
+- 清单 7.1：app.module.ts
+
+### 什么是 Relay？
+
+### Relay Modern
+
+## 总结
+
+## 第 8 章：Angular 与移动应用
+
+### 使用 Ionic 2 进行移动开发
+
+### 安装与项目创建
+
+### Ionic Native
+
+### Ionic 应用程序的项目结构
+
+- 清单 8.1：app.component.ts
+- 清单 8.2：app.module.ts
+
+### 在 Ionic 应用程序中检索 GitHub 用户数据
+
+- 清单 8.3：github.ts
+- 清单 8.4：app.component.ts
+- 清单 8.5：app.module.ts
+- 清单 8.6：app.html
+
+### 什么是 NativeScript？
+
+### 安装与新建项目
+
+### Angular 与 NativeScript
+
+### 使用 React Native
+
+### React Native 的安装步骤
+
+### 如何创建 React Native 应用程序
+
+- 清单 8.7：index.android.ts
+
+### 将 React Native 应用部署到移动设备
+
+### Angular 与 React Native
+
+- 清单 8.8：NG2RNGraphics.ts
+
+### React Native 与 NativeScript：高级对比
+
+### Angular Mobile Toolkit
+
+### 创建移动项目
+
+### manifest.webapp 文件
+
+- 清单 8.9：manifest.webapp
+
+### 渐进式 Web 应用（可选）
+
+### Web Workers 与 Service Workers
+
+### PWA 的组成部分
+
+### 其他链接
+
+## 总结
+
+## 第 9 章：函数式响应式编程
+
+## 什么是函数式响应式编程（FRP）？
+
+### 观察者模式
+
+### 处理异步事件
+
+Promise 与异步事件
+
+不使用 FRP 的运算符
+
+关于 Observable 的类比
+
+RxJS 的 JavaScript 文件
+
+中间运算符与终端运算符
+
+运算符
+
+subscribe() 和 unsubscribe() 运算符
+
+subscribe() 和 forEach() 运算符
+
+将数据源转换为 Observable
+
+使用 range() 和 filter() 运算符
+
+*清单 9.1 ObservableRangeFilter1.html*
+
+使用 from() 和 map() 运算符
+
+*清单 9.2 ObservableMapUpper1.html*
+
+使用 interval()、take() 和 map() 运算符
+
+*清单 9.3 ObservableTake.html*
+
+其他中间运算符
+
+retry() 运算符
+
+合并/连接运算符列表
+
+映射相关运算符列表
+
+timeout() 运算符
+
+冷 Observable 与热 Observable
+
+*清单 9.4 ColdObservables1.html*
+
+使 HTML 网页响应式
+
+*清单 9.5 ObservableDivElement2.html*
+
+RxJS 与 SVG 图形/动画
+
+*清单 9.6 SVGObservables1Anim1.html*
+
+RxJS 与 HTML 网页中的鼠标事件
+
+*清单 9.7 SVGObservables1MouseMove1.html*
+
+可观察表单
+
+*清单 9.9 app.component.ts*
+
+在 Angular 应用中取消订阅
+
+RxJS 与定时器示例
+
+*清单 9.8 app.component.ts*
+
+RxJS 版本 5
+
+在 RxJS 版本 5 中创建 Observable
+
+在 RxJS 中缓存结果
+
+d3.express：集成发现环境
+
+总结
+
+**第 10 章：杂项主题**
+
+Angular 4.1.0
+
+新特性
+
+Angular 配置文件
+
+package.json 配置文件
+
+*清单 10.1：package.json*
+
+tsconfig.json 配置文件
+
+*清单 10.2：tsconfig.json*
+
+什么是 AOT？
+
+AOT 的优势
+
+AOT 配置
+
+设置 @ngtools/webpack
+
+使用 ngc 编译器
+
+tsconfig-aot.json 文件
+
+编译步骤
+
+AOT、CLI 和 Angular Universal 的状态
+
+Tree Shaking 与 Rollup 工具
+
+rollup-config.js 文件
+
+调用 rollup 工具
+
+减小 Angular 应用的大小
+
+减小打包文件的大小
+
+Angular 变更检测
+
+zone.js 库
+
+什么是 Webpack？
+
+使用 Webpack
+
+启动 Webpack 的简单示例
+
+简单的 webpack.config.js 文件
+
+*清单 10.3：webpack.config.js*
+
+热模块重载（HMR）与 Webpack
+
+通过修改 webpack.config.js 实现 AOT
+
+*清单 10.4：webpack.config.js*
+
+Angular Material
+
+其他 Angular 功能
+
+Angular 应用中的 I18n 和 L10n 支持
+
+使用组件容器
+
+ViewChild 装饰器
+
+在何处指定服务
+
+测试 Angular 应用
+
+实用的 Angular 工具
+
+Augury Chrome 扩展
+
+显示 Angular 组件的依赖树
+
+Compodoc
+
+Angular 与深度学习
+
+总结
+
+*索引*
+
+# 前言
+
+## 本书的核心价值主张是什么？
+
+本书力求涵盖 Angular 4 的基本特性，并附有大量代码示例（基于 Angular 4 的生产版本），这些示例将容纳在一本 300 页的书中。代码示例的主要目标是向您展示如何完成各种任务，例如显示和更新用户列表、将信息保存到数据存储、使用 `Observables`、开发移动应用程序等。如果您对阅读那些“能完成任务”的 Angular 代码示例感兴趣，即使某些细节被省略，这本书也可能非常适合您。
+
+如果您对本书的风格犹豫不决，或者您认为“口袋入门书”应该有不同的格式（关于这一点，意见确实存在分歧），那么也许另一本书更适合您的需求。
+
+## 阅读本书需要 Angular 知识吗？
+
+阅读本书不需要事先了解 Angular。您需要理解 HTML（如何使用基本元素）以及一些 JavaScript 知识。第 6 章 包含与 Node 相关的代码示例，这确实需要一些背景知识才能理解材料。第 7 章 包含将 Angular 与 Redux 和 GraphQL 结合的代码示例，这些是更高级的主题。然而，如果您想专注于 Angular 的“核心”概念，可以省略这两章。如果您遇到不熟悉的概念，在许多情况下，您可以通过阅读众多在线教程中的一篇来学习这些概念。
+
+请记住，在代码示例技术细节的解释深度与广度之间，以及在一本短书中包含的示例类型（和数量）之间，总是存在权衡。本书倾向于广度而非深度，尤其是在代码示例方面。因此，某些主题（如测试）被省略了，而其他主题（ES6 和 TypeScript）仅在“按需”基础上简要介绍。因此，有时您需要查阅其他资料以获取代码示例中技术“细节”的更详细信息，例如 ES6 方法 `map()` 和 `filter()`，或者对 `Observables` 和 `Promises` 的深入解释。
+
+如果您想确保自己能掌握本书的内容，请浏览一些代码示例，了解其中有多少是您熟悉的，有多少是新的。
+
+## 目标读者
+
+本书旨在面向全球读者，他们来自不同年龄层且背景各异。虽然许多读者能阅读英文，但他们的母语并非英语（可能是第二、第三甚至第四语言）。因此，本书使用标准英语，而非可能让这些读者感到困惑的口语表达。如你所知，许多人通过不同类型的模仿来学习，包括阅读、写作或听新材料（是的，也有一些基础视频可供使用）。本书充分考虑这些因素，旨在为目标读者提供舒适且有意义的学习体验。
+
+### 如何充分利用本书
+
+
+
+有些程序员擅长通过文字学习，另一些则擅长通过示例代码（以及大量代码）学习，这意味着没有一种风格适用于所有人。
+
+此外，有些程序员希望先运行代码，观察其效果，然后再回头深入钻研代码细节（而另一些则采用相反的方法）。
+
+因此，本书包含多种类型的代码示例：有些简短，有些较长，还有一些代码示例是在先前代码示例的基础上“构建”而成的。
+
+### 本书代码是如何测试的？
+
+本书中的代码示例已在搭载 OS X 10.16 的 Macbook Pro 上的 Google Chrome 浏览器（版本 53）中测试过。除非另有说明，否则未使用任何特定于浏览器的特殊功能，这意味着这些代码示例在其他平台上的 Chrome 以及其他现代浏览器中应该也能正常工作。
+
+另需注意，所有对“Web Inspector”的引用均指 Chrome 中的 Web Inspector，这与 Safari 中的 Web Inspector 不同。如果你使用的是其他（但仍属现代）浏览器或早期版本的 Chrome，可能需要在线查询启动和查看 Web Inspector 所需的按键序列。请访问以下链接获取更多有用信息：
+
+*[`benalman.com/projects/javascript-debug-console-log/`](http://benalman.com/projects/javascript-debug-console-log/)*
+
+### 为什么截图是黑白的？
+
+黑白图像的成本低于原始彩色图像，因此采用黑白图像意味着本书可以以更低的价格提供。不过，彩色图像以及补充代码示例（在浏览器中启动时会以彩色呈现）均可在随附光盘中找到。
+
+### 为什么本书只有 300 页而不是 500 页？
+
+本书属于 *Pocket Primer* 系列，该系列书籍通常介于 200 到 300 页之间。其次，目标读者是那些对 HTML 和 JavaScript 了解程度从入门到中级的读者。在编写本书的过程中，我们尽一切努力满足这些读者的需求，使他们能够在自学过程中充分准备好探索 SVG 的更高级功能。
+
+### 本书是否包含生产级代码示例？
+
+本书中的代码示例确实使用了 Angular 的生产版本来说明 Angular 的各种特性。清晰度比编写更紧凑但更难理解（且可能更容易出现错误）的代码更为重要，尤其是在一本篇幅较短的书中。如果你决定在正式网站中使用本书中的任何代码，则应对该代码进行与其他 Web 应用程序同样严格的分析。
+
+### 作者的其他相关书籍
+
+1) HTML5 Canvas and CSS3:
+
+[*http://www.amazon.com/HTML5-Canvas-CSS3-Graphics-Primer/dp/1936420341*](http://www.amazon.com/HTML5-Canvas-CSS3-Graphics-Primer/dp/1936420341)
+
+2) jQuery, HTML5, and CSS3:
+
+[*http://www.amazon.com/jQuery-HTML5-Mobile-Desktop-Devices/dp/1938549031*](http://www.amazon.com/jQuery-HTML5-Mobile-Desktop-Devices/dp/1938549031)
+
+3) HTML5 Pocket Primer:
+
+*[`www.amazon.com/HTML5-Pocket-Primer-Oswald-Campesato/dp/1938549104`](http://www.amazon.com/HTML5-Pocket-Primer-Oswald-Campesato/dp/1938549104)*
+
+4) jQuery Pocket Primer:
+
+*[`www.amazon.com/dp/1938549147`](http://www.amazon.com/dp/1938549147)*
+
+以下开源项目包含的代码示例有时会补充本书各章节的内容：
+
+*[`code.google.com/p/css3-graphics/`](https://code.google.com/p/css3-graphics/)*
+
+*[`code.google.com/p/d3-graphics/`](https://code.google.com/p/d3-graphics/)*
+
+*[`code.google.com/p/html5-canvas-graphics/`](https://code.google.com/p/html5-canvas-graphics/)*
+
+*[`code.google.com/p/jquery-css3-graphics/`](https://code.google.com/p/jquery-css3-graphics/)*
+
+*[`code.google.com/p/raphael-graphics/`](https://code.google.com/p/raphael-graphics/)*
+
+*[`code.google.com/p/svg-filters-graphics/`](https://code.google.com/p/svg-filters-graphics/)*
+
+*[`code.google.com/p/svg-graphics/`](https://code.google.com/p/svg-graphics/)*
+
+# 第 1 章：Angular 快速入门
+
+本章快速介绍如何使用 Angular 开发 Web 应用程序。在介绍 Angular 的一些高级特性之后，你将能够快速理解后续章节中讨论的许多代码示例（但有些代码示例更为复杂）。同时，请记住，你需要投入额外的时间和精力才能更深入地理解 Angular。
+
+注意
+
+*本书中的 Angular 代码示例基于 2017 年 3 月发布的 Angular 生产代码。*
+
+另一个重要的考虑因素是你的学习风格：你可能更倾向于在深入第一个代码示例之前，先阅读有关 Angular 应用程序“脚手架”的详细信息。不过，完全可以先略读本章的引言部分，然后快速“深入”本章的第一个 Angular 示例代码，之后再回头复习引言部分。
+
+本章第一部分讨论 Angular 的设计目标以及一些新特性，例如组件、模块和单向数据绑定。本章第二部分讨论 Angular 命令行界面（CLI），这是一个用于生成 Angular 应用程序的命令行工具。
+
+注意
+
+*本书中的 Angular 项目基于 `ng`（即 Angular CLI）的 1.0.0 版本，用于创建 Angular 4 应用程序。*
+
+在阅读本章之前，有几点需要牢记。首先，本书提供了许多 Angular 应用程序的示例，因此关于 Angular 概念、设计目标和架构的细节比你在 500 页的书籍中可能找到的要“轻量”一些。不过，你可以在 Victor Savkin（以及其他人士）的在线文章中找到有用的信息。
+
+其次，你可以使用 ECMA5、ES6 和 TypeScript 创建 Angular 应用程序。但主要建议是使用 ES6 或 TypeScript 开发 Angular 应用程序；事实上，本书中的所有代码示例都使用 TypeScript，这使得转译过程（在“幕后”执行）变得简单直接。第三，不需要有 Angular 的使用经验，但有一些知识显然会有所帮助。
+
+注意
+
+![Image](img/disc.jpg)
+
+*当你从随附光盘复制项目目录时，如果 `node_modules` 目录不存在，请复制已软链接到该项目目录内的顶层 `node_modules` 目录（大多数示例应用程序都是这种情况）。*
+
+## 支持的 Angular 版本：工作原理
+
+你可能已经知道，Angular 的发展速度很快，从 2017 年 3 月 Angular 4 的生产版本开始，一直延伸到计划于 2018 年 9 月发布的 Angular 7。
+
+每个即将发布的版本（从 2018 年的 Angular 6 开始）可能只支持前两个版本的 Angular。例如，Angular 6 将支持 Angular 4 和 Angular 5，而 Angular 7 将支持 Angular 6 和 Angular 5（但不支持 Angular 4）。
+
+此外，Angular 的命名约定中存在一种“二元性”：即将发布的 Angular 版本会指定版本号，但*不带*版本号的 Angular 是 Angular 2 及更高版本的官方名称（而 AngularJS 是 1.x 版本的官方名称）。
+
+Angular 核心团队在此开发过程中的另一个重要目标是尽量减少破坏性变更，并确保此类变更对升级到新版本 Angular 的影响最小。
+
+注意
+
+*尽管未来生产代码版本有版本号，但 Angular 2 及更高版本在官方上被称为 Angular。*
+
+## 跳过 Angular 3 的原因
+
+Angular 核心库位于 `github.com/angular/angular`。它们都采用相同的版本控制方式，但作为不同的基于 Node 的包分发：
+
+`@angular/core` v2.3.0
+
+`@angular/compiler` v2.3.0
+
+`@angular/compiler-cli` v2.3.0
+
+`@angular/http` v2.3.0
+
+`@angular/router` `v3.3.0`
+
+如你所见，路由包的版本号与其他包的版本号不同。使版本号相同的最简单方法是使用版本 4 而不是版本 3，这反过来导致了跳过 Angular 3。
+
+## TypeScript 版本
+
+将 TypeScript 依赖从 v1.8 升级到 v2.1（或更高版本）确实涉及破坏性变更。幸运的是，从 Angular 2 升级到 Angular 4（及更高版本）并不需要大规模重写，只需更改几个核心库。
+
+Angular 团队开发了一个自动升级流程，他们使用的工具也可能对公众开放（可能在 2017 年期间）。
+
+注意
+
+*本书中的 Angular 2 应用程序使用 TypeScript 编译器的 2.2.2 版本。*
+
+## 从 Angular 2 迁移到 Angular
+
+如果你使用的是最新版本的 Angular，则本节为可选内容，因为最新版本自动包含了 Angular 2.0 之后 Angular 2.x 中引入的所有功能。
+
+下面简要概述了几个 Angular 2.x 版本，因为新功能已添加到 Angular 2 中（但它们不属于 Angular 2.0 的一部分）。此外，TypeScript 的版本也已更改。
+
+首先，Angular 2.2 于 2016 年 11 月发布；该版本提供了提前编译（AOT）兼容性，并在第 10 章中进行了更详细的讨论。接下来，Google 于 2016 年 12 月发布了 Angular 2.3，其中包含用于与集成开发环境（IDE）集成的 Angular 语言服务。该服务提供了类型补全和 Angular 模板的错误检查。此外，该服务还提供了组件的对象继承功能。
+
+关于 TypeScript 版本：Angular 2 使用 TypeScript 1.8，而 Angular 4 的初始生产版本使用 TypeScript 2.1.6（或更高版本），这涉及一些相对较小的破坏性变更。
+
+## 学习 Angular 应用程序需要掌握的内容
+
+本书中的 Angular 应用程序使用 TypeScript 编写，但你还需要掌握以下技术的基本技能：
+
+![图片](img/greybox.jpg) NodeJS (npm)
+
+![图片](img/greybox.jpg) ECMA5、ES6 和 TypeScript
+
+![图片](img/greybox.jpg) Webpack 2.2（或更高版本）
+
+以下小节包含有关上述列表中项目的更多信息。
+
+### NodeJS
+
+本书中的代码示例需要 node v6.x.x（或更高版本）和 npm 4.x.x（或更高版本）。在终端中使用以下命令确定你机器上的版本：
+
+```
+node -v
+npm -v
+```
+
+如有必要，请访问 NodeJS 主页下载更新版本的 node 可执行文件。如果你没有使用过 Node，请阅读在线教程以了解以下命令的用途：
+
+![图片](img/greybox.jpg) `npm install –g webpack`
+
+![图片](img/greybox.jpg) `npm install webpack@latest –save`
+
+![图片](img/greybox.jpg) `npm start`
+
+### ECMA5、ES6 和 TypeScript
+
+你需要学习 ES6 和 TypeScript 的基本概念，它们各自的主页包含大量信息可帮助你入门。特别是，学习箭头函数、类、模板字符串和模块加载器。其他有用的功能包括展开和剩余运算符（你将在第 7 章中遇到它们）。正如你将在后续章节中看到的，Angular 应用程序严重依赖动态模板，这些模板经常涉及变量插值（通过“{{}}”语法）。
+
+如果你计划使用 TypeScript 编写 Angular 应用程序，了解 ES6 会很有帮助。幸运的是，以下网站提供了一个在线“游乐场”以及 TypeScript 的文档和代码示例链接：
+
+*[`www.typescriptlang.org/play/`](https://www.typescriptlang.org/play/)*
+
+熟悉 ECMA5 也很有用：例如，`filter()` 函数很方便（例如，与 Angular 管道一起使用），而 `map()` 函数在将 Observable 与 Angular 应用程序中的 HTTP 请求结合使用时可能很有用。其他函数，如 `merge()` 和 `flatten()`，也可能有用，你可以根据需要学习它们以及其他函数。
+
+你还需要对 Promise 和 Observable 有基本的了解。使用 TypeScript 的 Angular 更倾向于 Observable，本书中的代码示例也是如此，但你也会遇到使用 Promise 的在线代码示例。请自行查阅有关 ECMA5、Promise 和 Observable 的在线资源。
+
+Angular 利用了 ES6 的特性，如组件和类，以及 TypeScript 的特性，如注解及其类型系统。TypeScript 优于 ECMA5 或 ES6，因为 (1) TypeScript 支持 ES6 的所有特性，以及 (2) TypeScript 提供了一个可选的类型推断系统，可以帮助你捕获许多错误。
+
+至于脚手架工具，Webpack 已成为 Angular 应用程序的事实标准。Webpack（版本 2.2 或更高版本）已成为 Angular 应用程序的事实标准脚手架工具，其主页位于：
+
+*[`webpack.github.io/`](https://webpack.github.io/)*
+
+如果你没有使用过 Webpack，请了解 2.x 版本的功能（并跳过 1.x 版本）。
+
+一些其他相关细节：你可以在 Electron、Webstorm 和 Visual Studio Code 中开发 Angular 应用程序。请查看它们各自的网站以了解定价和功能支持。最后，以下链接包含开发 Angular 应用程序的样式指南以及“最佳实践”：
+
+*[`github.com/mgechev/angular2-style-guide`](https://github.com/mgechev/angular2-style-guide)*
+
+快速浏览上述链接以熟悉其内容，然后你将在阅读本书各章节时知道何时阅读相关部分。
+
+## Angular 高层概览
+
+Angular 被设计为一个平台，支持浏览器中的 Angular 应用程序、服务器端渲染以及移动设备上的 Angular 应用程序。第一个方面——在浏览器中渲染 Angular 应用程序——是本书各章节的重点。第二个方面——Angular Universal（即服务器端渲染）——在第 6 章中简要讨论。本质上，服务器端渲染在服务器上而不是浏览器中创建 Angular 应用程序的“第一视图”。由于浏览器无需构建此视图，它们可以更快地渲染视图，从而缩短感知加载时间。第三个方面——移动设备上的 Angular 应用程序——在第 8 章中讨论。
+
+Angular 也采用基于组件的架构，组件以树状结构组织（Angular 模块也是如此，你将在第 5 章中看到）。Angular 还支持强大的技术，你将学会熟练编写 Angular 应用程序。创建 Angular 应用程序最简单的方法是使用 Angular CLI（稍后详细讨论），它可以从命令行生成 Angular 应用程序所需的文件。
+
+以下是 Angular 的一些重要特性：
+
+![Image](img/greybox.jpg)单向数据绑定
+
+![Image](img/greybox.jpg)“摇树优化”
+
+![Image](img/greybox.jpg)变更检测
+
+![Image](img/greybox.jpg)样式封装
+
+前两个特性将在下面简要讨论，第三个特性在第 2 章中讨论，其中的代码示例会比本章更容易理解。
+
+由于 Angular 4 的生产版本于 2017 年 3 月发布，并且后续发布了额外的“小版本”（例如 4.1），因此后续版本可能会导致本书中的某些代码示例发生破坏性变更。因此，你可能需要修改受影响代码示例中的应用程序编程接口（API）调用，或更改某些导入语句。你可以随时查阅关于 Angular 连续版本之间变更的在线文档：
+
+[`angular.io/`](https://angular.io/)
+
+## Angular 中的单向数据绑定
+
+Angular 默认提供声明式单向绑定（但如果你愿意，也可以切换到双向绑定）。单向绑定作为一种单向变更传播，相比双向数据绑定有两个优势：（1）消除了 Angular 1.x 中的 `$digest` 循环和观察者，从而提高了性能；（2）降低了代码复杂度。Angular 还支持有状态、响应式和不可变模型。随着你使用 Angular 应用程序，上述声明的含义将变得更加清晰。
+
+Angular 应用程序涉及定义一个顶层（“根”）模块，该模块引用一个 `Component`，而该 `Component` 又指定一个 HTML 元素（通过必需的 `selector` 属性），该元素是 `Component` 的“父”元素。`Component` 的定义涉及一个所谓的“装饰器”，其中包含 `selector` 属性和 `template` 属性（或 `templateUrl` 属性）。
+
+
+
+`template` 属性包含 HTML 和自定义标记的混合（可以放在单独的文件中，然后通过 `templateUrl` 属性引用）。此外，`Component` 之后紧跟着一个 TypeScript 类定义，其中包含与 `template` 属性中出现的组件相关变量相关联的“支持代码”。在你使用一些 Angular 应用程序之后，这些细节将变得更加清晰。
+
+**注意**
+
+`templateUrl` 属性和 `styleUrls` 属性引用文件，而 `template` 属性和 `styles` 属性引用内联代码。
+
+## 摇树优化 Angular 应用程序
+
+摇树优化指的是从 Angular 项目中“修剪”不必要的文件（其他技术也有类似概念），就像摇晃树上的枯枝一样，以创建 Angular 应用程序的生产版本。这个生产版本可以显著更小，因此加载时间更短。Webpack 2 和 Angular AOT 支持摇树优化，你将在第 10 章中看到一个使用 AOT 的示例。
+
+## Angular 应用程序的高层视图
+
+Angular 应用程序由内置组件和自定义组件（后者由你编写）组合而成，每个组件通常定义在单独的 TypeScript 文件（扩展名为 `.ts`）中。每个组件通过 `import` 语句指定其依赖项。Angular 中有多种类型的依赖项，例如指令和管道（本章稍后讨论）。
+
+*自定义指令*本质上是一个定义组件的 TypeScript 文件的内容。因此，自定义指令由 `import` 语句、`@Component` 装饰器和一个导出的 TypeScript 类组成。
+
+Angular 提供了*内置指令*，例如 `*ngIf`（用于“if”逻辑）和 `*ngFor`（用于循环）。这两个指令也被称为*结构型指令*，因为它们会修改 HTML 页面的内容。
+
+Angular *内置管道*包括日期和数字项（`currency`、`decimal`、`number` 和 `percent`），而*自定义管道*由你定义。
+
+此外，TypeScript 类使用*装饰器*（一种内置函数），它为类、其成员或其方法参数提供元数据。装饰器很容易识别，因为它们总是带有 `@` 前缀。Angular 提供了许多内置装饰器，例如 `@Component()` 和 `@NgModule`。
+
+以上是对 Angular 特性的高层介绍。本章的下一部分将介绍 Angular CLI，本书将全程使用它来创建 Angular 应用程序。
+
+## Angular CLI
+
+在 Angular 的测试版发布期间，开发人员使用手动流程创建应用程序，或者使用“入门”或“种子”项目（通常在 GitHub 上提供）。然而，这些项目在 Angular 新版本发布后往往过时。因此，本书中的代码示例基于 Angular CLI，它是 Google 官方的 Angular 应用程序生成器。
+
+Angular CLI 是一个名为 `ng` 的命令行工具，它可以生成完整的 Angular 应用程序，包括测试相关代码，并且（默认情况下）还会启动 `npm install` 以在 `node_modules` 中安装所需的文件。Angular CLI 的主页位于：
+
+[`cli.angular.io`](https://cli.angular.io)
+
+Angular CLI 生成一个名为 `package.json` 的配置文件，用于管理必要的依赖项及其版本号。生成 Angular 应用程序后，导航到 `node_modules` 子目录，你将看到各种 Angular 子目录，其中包含 Angular 应用程序所需的文件。
+
+Angular CLI 是使用“入门”项目或手动创建项目的更优替代方案，其功能集将随着时间的推移不断改进。
+
+## 安装 Angular CLI
+
+你需要执行几个步骤来安装 Angular CLI。首先使用以下命令卸载之前的 CLI（如果你安装了旧版本）：
+
+```bash
+sudo npm uninstall -g angular-cli
+npm cache clean
+```
+
+接下来，使用以下命令安装新的 CLI（注意新的包名）：
+
+```bash
+[sudo] npm install -g @angular/cli
+```
+
+按如下方式创建一个名为 `hello-world` 的新项目，使用 Angular 4：
+
+```bash
+ng new hello-world
+```
+
+Angular CLI 提供了除自定义代码之外的所有内容，并且安装所需的时间明显长于入门应用程序。其次，Angular CLI 允许你生成新的组件、路由器等，这些在入门应用程序中也是可能的。第三，Angular CLI 完全基于 TypeScript，生成的应用程序包括 JavaScript 对象表示法（JSON）文件 `tsconfig.json`、`tslint.json`、`typedoc.json` 和 `typings.json`。另一方面，入门应用程序倾向于使用 Webpack，这涉及配置文件 `webpack.config.js`，其中包含 Angular 应用程序的信息。
+
+## Angular CLI 的特性
+
+`ng` 可执行文件支持各种选项，以下是一些命令行调用示例：
+
+```bash
+ng new app-root-name
+ng build
+ng deploy
+ng e2e
+ng generate <component-type>
+ng generate route
+ng generate ...
+ng lint
+ng serve
+ng test
+ng x18n
+```
+
+`ng g` 选项等同于 `ng generate` 选项，它允许你生成 Angular 自定义组件、Angular 管道（在第 5 章中讨论）等。`ng x18n` 选项从源代码中提取 i18n 消息。下一节将展示如何在应用程序中生成 Angular 自定义组件的示例，以及自动为你生成的文件内容。
+
+组件的默认前缀是 `app`（例如 `<app-root></app-root>`），但你可以通过以下调用指定不同的前缀：
+
+`ng new app-root-name –prefix abc`
+
+### 注意
+
+通过 `ng` 创建的 Angular 应用程序始终包含 `src/app` 目录。
+
+关于升级 Angular CLI 的信息位于：
+
+[`github.com/angular/angular-cli`](https://github.com/angular/angular-cli)
+
+Angular CLI 的文档位于：
+
+[`cli.angular.io`](http://cli.angular.io)
+
+现在你已经了解了 `ng` 工具的一些特性，让我们创建第一个 Angular 应用程序，这是下一节的主题。
+
+## 通过 Angular CLI 创建“Hello World”应用程序
+
+导航到一个方便的目录，并使用以下命令创建一个名为 `myapp` 的 Angular 应用程序：
+
+`ng new myapp`
+
+### 注意
+
+早期版本的 `ng` 需要 `--ng4` 开关。
+
+上述命令完成后，进入新项目目录：
+
+`cd myapp`
+
+使用以下命令启动 Angular 应用程序：
+
+`ng serve`
+
+上述命令会自动在以下 URL 启动浏览器会话：
+
+`localhost:4200`
+
+你将在屏幕上看到以下内容：
+
+`app works!`
+
+上述字符串在文件 `app/app.component.ts` 的 `template` 属性中指定。
+
+### 注意
+
+`template` 属性（或 `templateUrl` 属性）是你放置自定义代码的地方，这些代码将生成 HTML 输出，然后插入到 `index.html` 网页的 `<app-root>` 元素中。
+
+## Angular 应用程序的结构
+
+当你调用 `ng` 命令创建 Angular 应用程序时，以下是自动创建的文件：
+
+- `angular-cli.json`
+- `dist/`（详细信息省略）
+- `e2e/`（详细信息省略）
+- `karma.conf.js`
+- `node_modules`
+- `package.json`
+- `protractor.conf.js`
+- `README.md`
+- `src/app/app.component.css`
+- `src/app/app.component.html`
+- `src/app/app.component.spec.ts`
+- `src/app/app.component.ts`
+- `src/app/app.module.ts`
+- `src/environments/environment.prod.ts`
+- `src/environments/environment.ts`
+- `src/favicon.ico`
+- `src/index.html`
+- `src/main.ts`
+- `src/polyfills.ts`
+- `src/styles.css`
+- `src/test.ts`
+- `src/tsconfig.json`
+- `tslint.json`
+
+`dist` 子目录包含编译后的项目和 JavaScript 包，而 `e2e` 子目录包含端到端测试的文件（调用命令 `ng test` 来执行测试）。
+
+文件 `app.component.ts`（以粗体显示）包含本书代码示例中的自定义 TypeScript 代码，并且（在较小程度上）你可能需要更新文件 `app.module.ts`。当你需要包含 JavaScript `<script>` 元素（用于 jQuery、Bootstrap 等）时，你将修改 `index.html`，而 `styles.css` 文件用于全局层叠样式表（CSS）样式规则（如果有的话）。
+
+最后，文件 `angular-cli.json`、`package.json` 和 `tslint.json` 分别是 `ng`、`npm` 和 `tslint` 的配置文件。请注意，当你调用命令 `ng lint` 时，它会调用 `tslint` 工具，而该工具又依赖于文件 `tslint.json`。
+
+## Angular 项目文件的命名约定
+
+`app` 子目录中的文件有一个命名约定，由三部分组成：功能类型、它是组件还是模块，以及指示代码类型的后缀。例如，TypeScript 文件 `app.component.ts` 包含应用程序的组件相关代码，而 TypeScript 文件 `app.module.ts` 包含模块相关代码。此外，文件 `app.component.css` 包含组件的 CSS 选择器，`app.component.html` 包含同一组件的 HTML 标记。
+
+本章的下一部分包含两个小节：第一部分讨论 `index.html` 和各种 JavaScript 配置相关文件的内容，第二部分讨论包含在 `app` 子目录中的应用程序相关文件。唉，阅读这些部分是一个“漫长的过程”，虽然建议你阅读它们，但也可以随意浏览本节，并在启动第一个 Angular 应用程序后再回来阅读。两种阅读方式各有利弊，因此请以最适合你学习风格的方式继续学习这些材料。
+
+现在让我们看看 HTML 网页 `index.html` 的内容，它是我们 Angular 应用程序的主网页。
+
+## index.html 网页
+
+清单 1.1 显示了通过 `ng` 工具从命令行生成的新 Angular 应用程序的 `index.html` 内容。
+
+### 清单 1.1：index.html
+
+![Image](img/pg13.jpg)
+
+清单 1.1 非常简洁：只有自定义的 `<app-root>` 元素（你将在 `app/app.component.ts` 的 `selector` 属性中看到它）表明这个网页是 Angular 应用程序的一部分。
+
+### 注意
+
+JavaScript 依赖项在项目“构建”期间由 Angular CLI 动态插入到 `index.html` 中。
+
+在我们深入探讨 Angular 应用程序中的 TypeScript 文件之前，让我们先快速了解一下 `import` 语句在 Angular 应用程序中是如何工作的。如果你已经熟悉 Angular 中的 `import` 和 `export` 语句，可以跳过下一节。
+
+## 导出和导入包与类（可选）
+
+请记住以下几点：在 TypeScript 文件中导入的每个 TypeScript 类都必须在定义该类的 TypeScript 文件中导出。你将看到许多 `import` 和 `export` 语句的示例；事实上，本书中的每个 Angular 应用程序都是如此。
+
+有两种常见的 `import` 语句类型：一种涉及从 Angular 模块导入包，另一种涉及导入自定义类（由你编写）。以下是两种类型的语法：
+
+```typescript
+import {some-package-name}   from 'some-angular-module';
+import {some-class }         from 'my-custom-class';
+```
+
+以下是两种 `import` 语句的示例：
+
+```typescript
+import { NgModule }     from '@angular/core';
+import {EmpComponent}   from './emp.component';
+```
+
+在上面的代码片段中，`NgModule` 包是从位于 `node_modules` 目录中的 `@angular/core` 模块导入的。`EmpComponent` 类是在 TypeScript 文件 `emp.component.ts` 中定义和导出的自定义类。
+
+在第二个 `import` 语句中，当从 TypeScript 文件导入自定义类时，需要 `"./"` 前缀，并且注意省略了 `".ts"` 后缀。
+
+接下来的几节将讨论 `src/app` 子目录中的三个与应用程序相关的 TypeScript 文件：`main.ts`、`app.component.ts` 和 `app.module.ts`。这些文件分别是此 Angular 应用程序的引导文件、主模块和主组件类。
+
+以下是这三个文件用途的简要说明：Angular 使用 `main.ts` 作为初始“入口点”来引导 Angular 模块 `AppModule`（在 `app.module.ts` 中定义），该模块又包含组件 `AppComponent`（在 `app.component.ts` 中定义），以及你导入到 `AppModule` 中的任何其他自定义组件（和模块）。
+
+此外，这三个文件位于 `src/app` 子目录中，这也是你放置自定义组件（和模块）的地方，或者放在 `src/app` 的某个合适的子目录中，其名称基于其功能。
+
+## 引导文件 main.ts
+
+清单 1.2 显示了 `src` 子目录（不是 `src/app` 子目录）中 `main.ts` 的内容，它导入并引导顶层 Angular 模块 `AppModule`。
+
+### 清单 1.2：main.ts
+
+![Image](img/pg14.jpg)
+
+![Image](img/pg15a.jpg)
+
+清单 1.2 中的第一行代码是一个导入语句，用于后续代码中的条件逻辑。第二个导入语句在许多 Angular 代码示例中都会看到，它对于在桌面和笔记本电脑上启动 Angular 应用是必需的。
+
+第三个导入语句涉及 Angular 应用的顶层模块，该模块又包含此 Angular 模块中的所有自定义组件和服务。第四个导入语句包含与环境相关的信息，用于接下来的条件逻辑片段：如果当前应用处于生产模式，则执行 `enableProdMode()` 函数。
+
+最后一行代码是实际的引导过程，涉及在浏览器中渲染 `app.component.ts` 中的代码。
+
+## 顶层模块文件 `app.module.ts`
+
+清单 1.3 显示了 `app.module.ts`（位于 `src/app` 子目录）的内容，该文件导出了顶层 Angular 模块 `AppModule`。
+
+`清单 1.3: app.module.ts`
+
+![Image](img/pg15b.jpg)
+
+清单 1.3 包含两个导入语句，分别导入 `BrowserModule`、`NgModule`、`FormsModule`、`HttpModule` 和 `BrowserModule`，所有这些都属于 Angular。最后一个导入语句导入类 `AppComponent`，这是清单 1.4 中所示的顶层组件。
+
+**注意：** Angular 依赖项始终包含 `@` 符号，而自定义依赖项则指定到 TypeScript 文件的相对路径。
+
+接下来，`@NgModule` 装饰器包含一个具有多个属性的对象（将在下一节讨论）。这些属性为类 `AppModule` 指定元数据，该类在最后一行代码中导出。`AppModule` 中的元数据涉及以下属性，每个属性都是一个值数组：`imports`、`providers`、`declarations`、`exports` 和 `bootstrap`。
+
+在清单 1.3 中，数组属性 `declarations`、`imports` 和 `bootstrap` 非空，而 `providers` 属性是一个空数组。Angular 需要这些元数据来引导 `AppComponent` 中的代码，而 `AppComponent` 又包含渲染内容（例如 `<h1>` 元素）和渲染位置（例如 `index.html` 中的 `app-root` 元素）的详细信息。
+
+现在让我们仔细看看 `@NgModule` 装饰器中每个基于数组的属性的用途，以理解它们的作用。
+
+### `@NgModule` 中的元数据
+
+`imports` 数组包含此应用所需的模块，例如 `BrowserModule`，以及一些可选模块（例如 `FormModule`）。`imports` 数组不具有传递性：如果模块 A 导入模块 B，模块 B 导入模块 C，则模块 C 不会导入到模块 A 中。
+
+接下来，`providers` 数组是一个针对此 Angular 应用的全局服务数组。服务是提供后台功能的东西，在应用中不可见。`providers` 数组包含通过 `@Injectable` 装饰器（稍后讨论）定义的所有可注入服务。
+
+
+
+`declarations`数组由此应用所需的`组件`组成，例如`AppComponent`，以及自定义组件、指令和管道，所有这些都具有（模块级别的）私有作用域。具体来说，私有作用域意味着`declarations`数组中的所有内容只能通过在同一模块中声明的其他组件、指令和管道访问。
+
+请记住，`declarations`属性中列出的组件必须从其各自的组件相关文件中导出。例如，`AppComponent`从`app.component.ts`（稍后显示）中导出，这使得你可以在`app.module.ts`中导入它，并在`declarations`属性中指定它。
+
+`exports`数组包含应用中其他组件所需的组件、指令和管道。
+
+`schemas`数组包含值`CUSTOM_ELEMENTS_SCHEMA`，它提供了应用“外部”的附加信息；请参见第 2 章中的示例和第 5 章中的示例。
+
+最后，`bootstrap`数组包含当 Angular 应用在浏览器中启动时将“引导”的组件名称。
+
+**注意：**通常，建议通过`bootstrap`属性仅引导一个组件。
+
+## 顶层组件文件：`app.component.ts`
+
+清单 1.4 显示了`app.component.ts`（位于`src/app`子目录）的内容，该文件导出了顶层 Angular 组件`AppComponent`。
+
+**清单 1.4：`app.component.ts`**
+
+![Image](img/pg17.jpg)
+
+清单 1.4 以导入 Angular `@Component`装饰器的语句开头，用于为类`AppComponent`定义元数据。元数据至少涉及两个属性：`selector`和`template`。除了与路由相关的组件外，这两个属性在自定义组件中都是必需的。在此示例中，`selector`属性指定了你在 HTML 网页`index.html`中看到的自定义元素`app-root`（你可以更改它）。
+
+`template`属性指定将插入到自定义元素`app-root`中的 HTML 标记。在此示例中，标记是一个包含一些文本的`<h1>`元素。清单 1.4 中的最后一行代码是一个导出语句，使`AppComponent`类可用于在其他 TypeScript 文件中导入，例如清单 1.3 中所示的`app.module.ts`。
+
+**注意：**本书中所有 Angular 项目的文件`main.ts`、`app.component.ts`和`app.module.ts`都位于`src/app`子目录中。
+
+通过导航到根目录并在 shell 中输入以下命令来启动你的 Angular 应用：
+
+```bash
+ng serve
+```
+
+下一节将讨论 Angular 模板语法，你将在`template`属性中的自定义代码中使用它。
+
+## 一个简单的 Angular 模板
+
+如清单 1.4 所示，文件`app.component.ts`包含一个`template`属性，其中包含一个`<h1>`元素，该元素包含一行文本。但是，当你将所有内容放在一对匹配的反引号（“``”）内时，Angular 允许你指定多行文本。这种语法（在 ES6 中引入）在 Angular 应用中大量使用，并且方便地支持变量插值。
+
+清单 1.5 显示了一个新的`app.component.ts`文件的内容，该文件比清单 1.4 有更多内容。此代码示例说明了如何在`template`属性中使用插值。
+
+**清单 1.5：`app.component.ts`**
+
+![Image](img/pg18.jpg)
+
+![Image](img/pg19a.jpg)
+
+清单 1.5 包含两个`<h3>`元素；第一个是简单的文本字符串，第二个包含“花括号”，用于引用在类`AppComponent`中定义的数据值。Angular 使用一种称为插值的方法，结合字面对象`emp`的元素，然后将花括号内的变量替换为它们在第二个`<h3>`元素中的实际值。
+
+## 在 Angular 中使用组件
+
+Angular 应用是一个嵌套组件的树，其中顶层组件就是应用本身。组件定义了用户界面（UI）元素、屏幕和路由。通常，通过将每个自定义组件放在一个 TypeScript 文件中，然后将该 TypeScript 文件导入到包含顶层组件的“主”文件（通常命名为`app.component.ts`）中来组织 Angular 应用。
+
+### 组件中的元数据
+
+Angular 组件通常是`@Component`装饰器和类定义的组合，类定义可以选择包含构造函数。下面是一个简单的示例：
+
+![Image](img/pg19b.jpg)
+
+上面的`@Component`装饰器包含几个属性，其中一些是必需的，另一些是可选的。让我们看看前面代码块中的两种类型。
+
+`selector`属性是必需的，它指定作为 Angular 应用“根”的 HTML 元素（无论是现有元素还是自定义元素）。
+
+接下来，`template`属性（或`templateUrl`属性）是必需的，它包含标记、插值变量和 TypeScript 代码的混合。一个重要的细节：当`template`属性的定义跨越多行时，需要使用反引号。
+
+`directives`属性是一个可选属性，用于指定被视为嵌套组件的组件数组。在此示例中，`directives`属性指定了组件`EmpComponent`，该组件也在代码块开头附近通过`import`语句导入。请注意，`import`语句不包含`@`符号，这意味着`EmpComponent`是在文件`emp/emp.component.ts`中定义的自定义组件。
+
+## Angular 中的有状态组件与无状态组件
+
+从高层次来看，有状态组件会保留与同一 Angular 应用程序的其他部分相关的信息。另一方面，无状态组件不维护应用程序状态，也不请求或获取数据：它们通过属性绑定从另一个组件（例如其父组件）接收数据。
+
+本书中的代码示例通常是有状态组件、无状态组件以及有时是“值对象”的组合，这些值对象是模拟不同实体（例如员工、客户、学生等）的自定义类的实例。
+
+你将在第 2 章中看到一个表示组件的示例。同时，这里有一篇深入探讨有状态和无状态组件的好文章：
+
+[`toddmotto.com/stateful-stateless-components#stateful`](https://toddmotto.com/stateful-stateless-components#stateful)
+
+## 使用 Angular CLI 生成组件
+
+之前你已经看到了`ng`实用程序的一些选项，本节将讨论如何使用`generate`选项。此外，这里还有一些不言自明的示例：
+
+```bash
+ng generate component mycomp
+ng generate directive mydir
+ng generate pipe mypipe
+ng generate route myroute
+ng generate service mycomp
+```
+
+以下命令与上面列表中的对应命令等效，只是它们使用了短别名：
+
+```bash
+ng g c mycomp
+ng g d mydir
+ng g p mypipe
+ng g r myroute
+ng g s mycomp
+```
+
+上述命令会创建新文件，这些文件位于`src/app`的新子目录中。例如，命令`ng g c mycomp`会创建子目录`src/app/mycomp`并用文件填充它（稍后讨论）。
+
+如果你不想创建新的子目录，请使用`--flat`选项，新文件将放置在`src/app`中，而不是`src/app/mycomp`中。
+
+现在，让我们在 Angular 应用程序中调用以下命令来生成一个学生组件：
+
+```bash
+ng g c student
+```
+
+上述命令完成后，你将看到以下输出：
+
+```text
+installing component
+create src/app/student/student.component.css
+create src/app/student/student.component.html
+create src/app/student/student.component.spec.ts
+create src/app/student/student.component.ts
+```
+
+如你所见，上述输出显示了四个新文件：一个 CSS 文件、一个 HTML 文件、一个 TypeScript 测试文件和一个组件定义文件。
+
+### 清单 1.6：`student.component.ts`
+
+![Image](img/pg21.jpg)
+
+![Image](img/pg22a.jpg)
+
+> **注意**
+>
+> 当你使用`ng`创建自定义组件时，`ng`会在`app.module.ts`中插入一条`import`语句，并更新`declarations`属性，添加对新自定义组件的引用。
+
+为了方便起见，当你从命令行生成组件时，`ng`还会生成一个测试文件。具体来说，清单 1.7 显示了名为`student.component.spec.ts`的测试文件的内容。
+
+### 清单 1.7：`student.component.spec.ts`
+
+![Image](img/pg22b.jpg)
+
+清单 1.7 包含`import`语句，以使各种组件可用于此测试文件，包括清单 1.6 中定义的`StudentComponent`。
+
+`student.component.html`的自动生成内容如下所示：
+
+```html
+<p>
+student works!
+</p>
+```
+
+如你所见，文件`student.component.html`非常简约，你可以自由地在此文件中添加与应用程序相关的 HTML 标记。
+
+请注意，文件`student.component.css`当前为空；添加你需要的任何 CSS 选择器以进行样式设置。
+
+另一个细节：`ng`允许你在现有组件内部创建组件。例如，以下命令在`student`组件内部创建一个`profile`组件：
+
+```bash
+ng g component student/profile
+```
+
+你必须在`student`子目录中调用上述命令，否则你将看到以下错误消息：
+
+```text
+You have to be inside an angular-cli project in order to use the generate command.
+```
+
+准备就绪后，使用以下命令创建 Angular 应用程序的生产构建：
+
+```bash
+ng build --prod
+```
+
+请记住，你可以通过 AOT 显著减小 Angular 应用程序的大小，这在第 10 章中有更详细的讨论。
+
+## Angular 中的语法、属性和特性
+
+Angular 引入了方括号`[]`表示法用于属性和特性，以及圆括号`()`表示法用于处理事件的函数。这种新语法实际上是有效的 HTML5 语法。以下是指定属性和函数的代码片段示例：
+
+```html
+<foo [bar]="x+1" (baz)="doSomething()">Hello World</foo>
+```
+
+以下是指定属性和函数的示例：
+
+```html
+<button [disabled]="!inputIsValid" (click)="authenticate()">Login</button>
+```
+
+以下是带有自定义元素的数据相关元素的示例：
+
+```html
+<my-chart [data]="myData" (drag)="handleDrag()"></my-chart>
+```
+
+上述代码片段中的新语法消除了许多内置指令的需求，你将在本章后面看到这一点。
+
+## Angular 中的特性与属性
+
+请记住以下区别：属性可以指定复杂模型，而特性只能指定字符串。例如，在 Angular 1.x 中，你可以编写以下代码：
+
+```html
+<my-directive foo="{{something}}"></my-directive>
+```
+
+Angular 中对应的代码（不需要插值）如下所示：
+
+```html
+<my-directive [foo]="something"></my-directive>
+```
+
+Angular 的新架构提供了改进的性能，并提供了开发“更干净”的 Angular 应用程序的机制，这些应用程序可以更快地开发、增强和维护。
+
+下一节包含一个涉及`<button>`元素的代码示例，这可能是 HTML 网页中最常见的 UI 控件之一。
+
+## 在 Angular 中显示按钮
+
+在经历了本章中的所有代码清单并阅读了关于它们用途的解释之后，你可能会想知道在 Angular 中进行应用程序开发是否会是一个漫长而繁琐的过程。幸运的是，你可以用少量代码创建许多基本应用程序。当你准备创建中型应用程序时，你可以利用 Angular 应用程序基于组件的特性，逐步添加新组件（和模块）。
+
+作为一个简单的示例，本节中的文件`app.component.ts`包含了此 Angular 应用程序的所有自定义代码。`ng`实用程序用于生成此代码示例中的所有文件，你无需手动修改其他文件。
+
+![Image](img/disc.jpg)
+
+将配套光盘中的`ButtonClick`目录复制到方便的位置。清单 1.8 显示了`app.component.ts`的内容，它演示了如何渲染一个`<button>`元素，并通过显示用户在当前会话中点击`<button>`元素的次数来响应点击事件。
+
+### 清单 1.8：`app.component.ts`
+
+![Image](img/pg25.jpg)
+
+清单 1.8 以一条导入语句开头，该语句出现在`app.component.ts`中，你将在本书的每个代码示例中看到它。这条语句让你能够访问`Component`装饰器，它会将元数据注入到名为`AppComponent`的 TypeScript 类中。当 TypeScript 编译器将 TypeScript 代码转译（转换）为 ECMA5 时，这些元数据也会被包含在内，以便在现代浏览器中运行 Angular 应用。
+
+必需的`selector`属性指定了值`app-root`，这是一个自定义元素（在`index.html`中列出），作为“容器”，`template`元素的内容将在其中渲染。
+
+在这个示例中，`template`属性包含一个响应点击事件的`<button>`元素，以及一个`<p>`元素，当用户点击`<button>`元素时，其内容会更新。如你所见，`(click)`的值是`clickMe()`函数（定义在`AppComponent`类中），该函数会递增并显示`clickCount`变量的值。
+
+此外，`styles`属性为`<button>`元素指定了`red`值。`styles`属性是组件样式的一个示例，这意味着这些样式仅适用于该组件的模板。
+
+![图片](img/pg26.jpg)
+
+**图 1.1** 一个响应点击事件的`<button>`元素。
+
+实际上，Angular 通过生成唯一的属性来局部应用 CSS，而不是全局应用，当你点击 Chrome Web Inspector 中的 Elements 选项卡时，这些属性是可见的。
+
+关于 Angular 中组件样式的更多详细信息，请参见：
+
+[`angular.io/docs/ts/latest/guide/component-styles.html`](https://angular.io/docs/ts/latest/guide/component-styles.html)
+
+清单 1.8 的下一部分是`AppComponent`类的定义，其中包含`clickCount`变量，该变量在`clickMe()`函数中递增。
+
+导航到该应用的`src`子目录，并调用以下命令：
+
+```bash
+ng serve
+```
+
+图 1.1 显示了该 Angular 应用的浏览器输出。你还可以看到文件`main.bundle.js`，其中包含经过“树摇”压缩的代码，这在第 10 章中有更详细的讨论。
+
+## 元素与属性
+
+在清单 1.8 中，`selector`属性匹配了 HTML 页面`index.html`中的元素`<app-root></app-root>`：
+
+```typescript
+selector: 'app-root'
+```
+
+然而，你也可以指定一个属性而不是元素。例如，假设`index.html`包含以下元素：
+
+```html
+<div app-root>加载中...</div>
+```
+
+你还需要按如下方式修改`selector`属性：
+
+```typescript
+selector: '[app-root]'
+```
+
+## 总结
+
+本章首先介绍了 Angular 的版本号、Angular 的必备条件，以及 Angular 及其基于组件的分层结构概述。
+
+接着，你学习了 Angular CLI 工具`ng`，以及如何使用`ng`工具创建一个 Angular“Hello world”应用。你还了解了 TypeScript 文件`main.ts`、`app.component.ts`和`app.module.ts`，它们包含 Angular 应用的 TypeScript 代码。然后，你学习了将 Angular 应用中的代码转译为 ECMA5 的原因。最后，你看到了一个 Angular 应用的代码，它显示了一个响应点击事件的`<button>`元素。
+
+# 第 2 章
+
+## UI 控件与用户输入
+
+本章包含使用各种用户界面（UI）控件的 Angular 应用，以及处理用户交互（如用户输入和鼠标事件）的示例。请记住，本章中的代码示例使用标准 HTML 语法来渲染 UI 控件，而不是使用 Angular 特有的功能。此外，本章最后一节提供了提供 Angular UI 组件的工具包链接。
+
+本章第一部分简要讨论了在任何 Angular 应用中都可以使用的基本调试技术。该部分使用第 1 章中与按钮相关的代码示例来说明如何在 Angular 中使用调试器。
+
+本章第二部分展示了如何管理项目列表，包括显示、添加和删除列表中的项目。请注意，Angular 中的表单将推迟到第 4 章讨论，届时你还会学习 Controls 和 ControlGroups。
+
+![图片](img/disc.jpg)
+
+
+
+本章第三部分包含两个显示用户名列表的示例：第一个示例检索存储在 JavaScript 数组中的字符串形式的用户名，第二个示例检索存储在 JavaScript 数组中的对象字面量形式的用户名。第三部分更进一步：你将学习如何定义一个包含用户相关信息（也存储在 JavaScript 数组中）的自定义用户组件。
+
+**注意**
+
+当你从配套光盘复制项目目录时，如果`node_modules`目录不存在，请复制该目录内已软链接的顶层`node_modules`目录（大多数示例应用都是这种情况）。
+
+现在，让我们学习如何在 Angular 中执行一些基本调试。
+
+## 在控制台中调试 Angular 代码
+
+本节展示如何使用`ng.probe()`来“单步执行”Angular 应用的执行过程，并查找（或更新）变量的值。本节中的信息将帮助你检测应用中的简单错误。如果你感兴趣，还有一个更强大的调试器 Augury（一个 Chrome 扩展），在第 10 章中会讨论。
+
+现在，在 Chrome 中启动第 1 章（清单 1.8）中的 Angular 应用 ButtonClick，并执行以下步骤：
+
+1. 打开 Chrome Web Inspector。
+2. 点击 Elements 选项卡。
+3. 点击`<app-root>`元素。
+
+现在点击 Console 选项卡，并在控制台中输入以下代码片段：
+
+```javascript
+ng.probe($0)
+```
+
+你将看到一个类似如下的`DebugElement`：
+
+```text
+DebugElement {nativeNode: app-root, parent: null, listeners: Array[0], providerTokens: Array[1], properties: Map…}
+```
+
+展开上述对象并仔细查看其元素。多次点击按钮（屏幕顶部），然后使用以下代码片段获取组件类实例的引用：
+
+```javascript
+ng.probe($0).componentInstance
+```
+
+上述代码片段显示以下元素：
+
+```text
+UserInput {clickCount: 3}
+```
+
+使用以下代码片段修改`clickCount`的值：
+
+```javascript
+ng.probe($0).componentInstance.clickCount = 7
+```
+
+上述代码片段将`clickCount`的值改为 7，诚然，在这个代码示例中这没有任何实际用途。但在其他包含各种输入字段和小部件的 Angular 应用中，此功能可能对测试有用。
+
+以下代码片段提供与组件相关的信息：
+
+```javascript
+ng.probe($0).injector._depProvider.componentView
+```
+
+上述代码片段显示以下输出：
+
+```text
+AppView {proto: AppProtoView, renderer: DebugDomRenderer, viewManager: AppViewManager_, projectableNodes: null, containerAppElement: AppElement…}
+```
+
+下一个代码片段提供更多信息：
+
+```javascript
+ng.probe($0).injector._depProvider.componentView.changeDetector
+```
+
+```text
+ChangeDetector_UserInput_0 {id: "UserInput_0"", numberOfPropertyProtoRecords: 2, bindingTargets: Array[1], directiveIndices: Array[0], strategy: 5…}
+```
+
+通过展开并检查其内容来试验可用的元素。此外，以下链接包含有关 Chrome 开发工具的有用信息：
+
+[`developers.google.com/web/tools/chrome-devtools/javascript`](https://developers.google.com/web/tools/chrome-devtools/javascript)
+
+现在，让我们创建一个简单的 Angular 应用，展示如何通过`ngFor`指令显示字符串列表，如下一节所述。
+
+## Angular 中的 ngFor 指令
+
+本节中的代码示例通过`*ngFor`指令展示了一个硬编码的字符串列表。这个非常简单的代码示例是一个起点，你可以在此基础上创建更复杂、更有趣的 Angular 应用。
+
+![Image](img/disc.jpg)
+
+将配套光盘中的 SimpleList 目录复制到一个方便的位置。清单 2.1 展示了`app.component.ts`的内容，说明了如何在 Angular 中使用`*ngFor`指令显示项目列表。
+
+### 清单 2.1：app.component.ts
+
+![Image](img/pg32.jpg)
+
+清单 2.1 包含一个`Component`注解，该注解又包含标准的`selector`属性。`template`属性由一个`<div>`元素组成。该元素包含`ngFor`指令，它遍历`items`数组并显示数组中的每个项目。注意，`items`数组在`AppComponent`类中被初始化为空数组，然后在`constructor`方法中将其值设置为包含四个字符串的数组。
+
+启动本节中的应用程序，你将在浏览器会话中看到以下输出：
+
+```text
+one
+two
+three
+four
+```
+
+现在你已经了解了如何显示数组中的项目，让我们稍微偏离一下，学习一种 Angular 代码类型，它可以跟踪用户点击了哪个单选按钮（“选中”）。之后，我们将看到如何使用`<button>`元素将新的用户名添加到用户列表中。
+
+## Angular 与单选按钮
+
+![Image](img/disc.jpg)
+
+将配套光盘中的 RadioButtons 目录复制到一个方便的位置。清单 2.2 展示了`app.component.ts`的内容，说明了如何渲染一组单选按钮并跟踪用户点击了哪个按钮。
+
+### 清单 2.2：app.component.ts
+
+![Image](img/pg33.jpg)
+
+清单 2.2 定义了`AppComponent`组件，其`template`属性包含三个部分：一个`<label>`元素、一个`<input>`元素和一个`<button>`元素。`<label>`元素包含一个`ngFor`指令，通过遍历`AppComponent`类中定义的`radioItems`数组来显示一组单选按钮。
+
+默认情况下，第一个单选按钮被高亮显示。然而，当用户点击`<button>`元素时，`<input>`元素的`(click)`属性将*当前*项设置为`model.options`的值，然后`<input>`元素的`[checked]`属性将*选中*项设置为`model.options`的当前值。如你所见，清单 2.2 中的`<input>`元素包含的功能比使用 JavaScript 实现相同结果更简洁。
+
+## 在 Angular 中向列表添加项目
+
+![Image](img/disc.jpg)
+
+将配套光盘中的 AddListButton 目录复制到一个方便的位置。清单 2.3 展示了`app.component.ts`的内容，说明了当用户点击按钮时如何将字符串追加到项目数组中。
+
+### 清单 2.3：app.component.ts
+
+![Image](img/pg34.jpg)
+
+清单 2.3 包含与清单 2.1（显示字符串列表）类似的代码。此外，清单 2.3 中的`template`属性包含一个`<input>`元素，以便用户输入文本。当用户点击`<button>`元素时，会调用`clickMe()`方法，参数为`fname.value`，它是对`<input>`元素中文本的引用。
+
+注意使用`#fname`语法作为元素的标识符，在本例中是一个`<input>`元素。因此，用户在`<input>`元素中输入的文本通过`fname.value`引用。以下代码片段提供了此功能：
+
+```html
+<input #fname>
+
+<button (click)="clickMe(fname.value)">点击我</button>
+```
+
+`AppComponent`组件中的`clickMe()`方法包含一个`console.log()`语句来显示用户输入的文本（可选），然后将该文本追加到数组`user`中。清单 2.3 的最后一部分是一个被注释掉的伪代码块，用于防止用户输入空字符串或重复字符串。该代码块涉及“纯”JavaScript，实际代码留作练习。
+
+## 在 Angular 中从列表删除项目
+
+本节通过在每个列表项旁边添加一个新的`<button>`元素来增强上一节的代码。
+
+![Image](img/disc.jpg)
+
+将配套光盘中的 DelListButton 目录复制到一个方便的位置。清单 2.4 展示了`app.component.ts`的内容，说明了当用户点击每个数组项旁边的按钮时，如何从项目数组中删除单个元素。
+
+### 清单 2.4：app.component.ts
+
+![Image](img/pg35.jpg)
+
+![Image](img/pg36.jpg)
+
+清单 2.4 包含一个`ngFor`指令，显示一个“对”列表，其中每个“对”由一个`<button>`元素和`users`数组中的一个用户组成。
+
+当用户点击任何`<button>`元素时，“关联的”用户作为参数传递给`deleteMe()`方法，该方法简单地从`users`数组中删除该用户。`deleteMe()`的内容是用于从数组中删除项目的标准 JavaScript 代码。你可以用你在清单 2.3 中添加的相同代码替换清单 2.4 中的伪代码块，以防止用户输入空字符串或重复字符串。
+
+## Angular 指令与子组件
+
+在本节中，你将看到如何在 Angular 中创建一个子组件，并可以在 Angular 应用程序中引用它。
+
+![Image](img/disc.jpg)
+
+将配套光盘中的 ChildComponent 目录复制到一个方便的位置。清单 2.5 展示了`app.component.ts`的内容，说明了如何在 Angular 应用程序中导入自定义组件（由你编写）。
+
+### 清单 2.5：app.component.ts
+
+![Image](img/pg37a.jpg)
+
+清单 2.5 包含一个`template`属性，该属性由一个`<div>`元素组成，其中嵌套了一个`<child-comp>`元素，后者是子组件`ChildComponent`中`selector`属性的值。
+
+注意，清单 2.5 并没有导入`ChildComponent`类：该类在清单 2.7 的`app.module.ts`中导入。
+
+清单 2.6 显示了 app 子目录中`child.component.ts`的内容。
+
+### 清单 2.6：child.component.ts
+
+![Image](img/pg37b.jpg)
+
+清单 2.6 很简单：`template`属性指定了一个文本字符串，该字符串将出现在嵌套在清单 2.5 中`<div>`元素内部的`<child-comp>`元素中。
+
+**注意**
+
+这是本章中第一个涉及修改`app.module.ts`文件默认内容的代码示例。
+
+清单 2.7 显示了修改后的`app.module.ts`内容，它必须从`child.component.ts`导入`ChildComponent`类，并在`declarations`属性中指定`ChildComponent`。这些添加部分以粗体显示。
+
+### 清单 2.7：app.module.ts
+
+![Image](img/pg38a.jpg)
+
+清单 2.7 中第一个要注意的细节是新的导入语句（以粗体显示），它从 TypeScript 文件`child.component.ts`中导入`ChildComponent`组件。第二个细节是在`declarations`数组中包含了`ChildComponent`（以粗体显示）。
+
+如你所见，这是在 Angular 应用程序中包含子组件的相当简单的步骤。通过练习，你将熟悉本节中演示的步骤顺序。
+
+## Angular 中的构造函数与状态存储
+
+本节包含一个代码示例，说明如何在`constructor`中初始化变量，然后通过`template`属性中的插值引用该变量的值。
+
+![Image](img/disc.jpg)
+
+将配套光盘中的 StateComponent 目录复制到一个方便的位置。清单 2.8 展示了`app.component.ts`的内容。
+
+### 清单 2.8：app.component.ts
+
+![Image](img/pg38b.jpg)
+
+![Image](img/pg39a.jpg)
+
+清单 2.8 与清单 2.5 几乎相同：当前代码添加了一个`constructor()`方法，用于初始化变量`name`以及字面量对象`emp`。`emp`变量在模板属性中以粗体显示，同时在`AppComponent`类中的另外两处也以粗体显示。
+
+*问题*：启动应用程序时会显示哪个名称？
+
+*答案*：构造函数中分配给`emp`变量的值。此行为与 Java 等面向对象语言相同。
+
+以下是启动该应用程序的输出：
+
+```text
+My name is Sarah Smith
+```
+
+眼尖的读者会注意到，我们在`emp`和`name`变量的声明中“悄悄引入了”TypeScript 关键字`public`。其他可能的关键字包括`private`和`protected`，它们（再次）的行为与 Java 中相同。如果你不熟悉这些关键字，可以查找在线教程来了解它们的用途。
+
+TypeScript 支持另一种方便的语法（针对变量），将在下一节讨论。
+
+## 构造函数中的私有参数：一种快捷方式
+
+TypeScript 提供了一种简写符号，用于通过构造函数初始化私有变量。请考虑以下 TypeScript 代码块：
+
+![Image](img/pg39b.jpg)
+
+这里展示了一个更简单且等效的 TypeScript 代码块：
+
+![Image](img/pg40a.jpg)
+
+TypeScript 在构造函数中支持`private`关键字是一个很好的特性：它减少了一些样板代码，同时也消除了潜在的错误来源（例如，拼写错误的变量名）。
+
+另一个例子是，以下代码片段中的`constructor()`方法使用从`EmpService`组件（在其他地方定义，此处不重要）检索到的数据填充了一个`employees`对象：
+
+![Image](img/pg40b.jpg)
+
+下一节将向你展示如何在 Angular 应用程序中使用`*ngIf`指令进行条件逻辑处理。
+
+## Angular 中的条件逻辑
+
+尽管之前的示例包含一个只有一行文本的模板属性，但 Angular 允许你指定多行文本。如果你将插值变量放在一对匹配的反引号内，Angular 将用它们的值替换（“插值”）这些变量。
+
+![Image](img/disc.jpg)
+
+将配套光盘中的`IfLogic`目录复制到一个方便的位置。清单 2.9 显示了`app.component.ts`的内容，说明了如何使用`*ngIf`指令。
+
+### 清单 2.9：app.component.ts
+
+![Image](img/pg40c.jpg)
+
+![Image](img/pg41.jpg)
+
+清单 2.9 在模板属性中包含了一些新代码：一个`<button>`元素，当用户点击该按钮时，会调用`moreInfo()`方法。点击事件后，会显示一个`<div>`元素，其中包含一个`<h3>`元素内的城市相关信息。请注意，只有当`showMore`为`true`时，该`<div>`元素才会显示，这是通过检查`showMore`值的`ngIf`指令控制的。`showMore`的初始值为`false`，但一旦用户点击`<button>`元素，该值就被设置为`true`，此时`<div>`元素就会显示。
+
+`AppComponent`中的新代码涉及一个布尔变量`showMore`（初始值为`false`）和方法`moreInfo()`，该方法将`showMore`初始化为`true`。
+
+## 在 Angular 应用程序中检测鼠标位置
+
+Angular 支持检测各种鼠标事件，其中一些你已经在之前的章节中看到过（例如点击事件）。本节中的代码示例向你展示了如何检测可缩放矢量图形（SVG）`<svg>`元素内的鼠标位置（SVG 图形效果在第 3 章中讨论）。
+
+![Image](img/disc.jpg)
+
+将配套光盘中的`SVGMouseMove`目录复制到一个方便的位置。清单 2.10 显示了`app.component.ts`的内容，说明了如何检测`mousemove`事件并显示当前鼠标位置的坐标。
+
+### 清单 2.10：app.component.ts
+
+![Image](img/pg42a.jpg)
+
+清单 2.10 包含一个模板属性，该属性由一个`<div>`元素组成，其中包含一个嵌套的`<mouse-move>`元素，后者是自定义组件`MouseMove`中`selector`属性的值，该组件在`mousemove.ts`中定义。本质上，组件`AppComponent`将`mousemove`事件的处理“委托”给`MouseMove`组件，该组件定义了`mouseMove()`函数来处理此类事件。
+
+清单 2.11 显示了`mousemove.ts`的内容，说明了如何检测`mousemove`事件并显示当前鼠标位置的坐标。
+
+### 清单 2.11：mousemove.ts
+
+![Image](img/pg42b.jpg)
+
+清单 2.11 包含`mouseMove()`方法，其唯一参数`event`是一个包含鼠标事件信息（例如其位置）的对象。`mouseMove()`方法包含一个`console.log()`语句，该语句仅显示鼠标点击事件位置的 x 坐标和 y 坐标。
+
+记得更新`app.module.ts`的内容以包含`MouseMove`类，如清单 2.12 所示。
+
+### 清单 2.12：app.module.ts
+
+
+
+![Image](img/pg43a.jpg)
+
+清单 2.12 导入了`MouseMove`类，并将此类添加到`declarations`属性中（两者均以粗体显示）。
+
+## Angular 中的鼠标事件和用户输入
+
+Angular 支持鼠标事件，并自动识别`click`、`mousedown`、`mousemove`、`mouseover`、`mouseup`和`mousewheel`事件。
+
+以下代码片段向你展示了如何在标准 HTML 中指定一个带有事件处理程序的`<button>`元素：
+
+`<button onclick="action()">Action</button>`
+
+以下代码片段向你展示了如何在 Angular 中指定一个带有事件处理程序的`<button>`元素：
+
+`<button (click)="action($event)">Action</button>`
+
+清单 2.13 显示了`mouseevents.ts`的内容，说明了如何在 Angular 中处理`mouseover`事件。
+
+### 清单 2.13：mouseevents.ts
+
+![Image](img/pg43b.jpg)
+
+![Image](img/pg44a.jpg)
+
+清单 2.13 包含一个模板属性，该属性由一个`<div>`元素、一个用户可以输入文本的`<input>`元素以及一个带有鼠标相关事件处理程序`mouseEvent`的`<button>`元素组成。表达式`$event.myInput.value`引用了`<input>`元素中的文本，该值被传递给`mouseEvent()`方法。
+
+清单 2.13 的下一部分是导出的类`MouseEvents`，它以变量`mouseCount`开头，初始值为`0`。`MouseEvents`的其余部分是`mouseEvent()`方法，该方法在每次`mouseover`事件期间递增并显示`mouseCount`的值，并显示`<input>`元素中的文本。
+
+清单 2.14 显示了`app.component.ts`的内容，其中涉及一个用于 Angular 中鼠标相关事件的“通用”`<mouse-events>`元素。请记住，此元素是一个自定义元素（即它不是 Angular 元素）。
+
+### 清单 2.14：app.component.ts
+
+![Image](img/pg44b.jpg)
+
+清单 2.14 包含一个模板属性，该属性由一个`<div>`元素组成，其中包含一个嵌套的`<mouse-events>`元素，后者是自定义组件`MouseEvents`中`selector`属性的值，该组件在`mouseevents.ts`中定义。本质上，组件`AppComponent`将`mouseover`事件的处理“委托”给`MouseEvents`组件，该组件定义了`mouseEvent()`函数来处理此类事件。
+
+要通过鼠标点击捕获用户输入，请将`<button>`元素中的`(mouseover)`替换为`(click)`（以及显示的文本），如下所示：
+
+`<button (click)="mouseEvent($event,myInput.value)">Add</button>`
+
+记得更新`app.module.ts`的内容以包含`MouseEvents`类，如清单 2.15 所示。
+
+### 清单 2.15：app.module.ts
+
+![Image](img/pg45a.jpg)
+
+清单 2.15 很简单：它导入了`MouseEvents`类，并将此类添加到`declarations`属性中（以粗体显示）。
+
+## 处理用户输入
+
+本节中的代码示例演示了如何处理用户输入，并引入了 Angular 中*服务*的概念，该概念将在第 5 章中详细讨论。
+
+正如你已经看到的，Angular 允许你创建对 HTML 元素的引用，如下所示：
+
+`<input type="text" #user>`
+
+`#user` 语法创建了对 `<input>` 元素的引用，使你能够引用 `{{user.value}}` 来查看其值，或引用 `{{user.type}}` 来查看输入类型。此外，你可以在以下代码块中使用此引用：
+
+```
+<p (click)="user.focus()">
+获取输入焦点
+</p>
+<input type="text" #user (keyup)>
+{{user.value}}
+```
+
+当用户点击 `<input>` 元素时，会调用 `focus()` 方法，而 `(keyup)` 属性会在 `keyup` 事件发生时更新输入框中的值。
+
+![Image](img/disc.jpg)
+
+将随附光盘中的`TodoInput`目录复制到方便的位置。清单 2.16 显示了`app.component.ts`的内容，说明了如何引用一个将用户输入追加到 Angular 数组中的组件。
+
+### 清单 2.16：app.component.ts
+
+![Image](img/pg46a.jpg)
+
+清单 2.16 包含一个标准的导入语句。`template`属性指定了一个`<div>`元素，其中包含`TodoInput`和`TodoList`组件的占位符。
+
+清单 2.17 显示了`todoinput.ts`的内容，说明了如何在 Angular 中显示一个`<input>`字段和一个`<button>`元素来捕获用户输入。
+
+### 清单 2.17：todoinput.ts
+
+![Image](img/pg46b.jpg)
+
+![Image](img/pg47a.jpg)
+
+清单 2.17 包含一个`template`属性，该属性由一个`<div>`元素组成，其中包含一个用于用户输入的`<input>`元素，后跟一个用于处理鼠标点击事件的`<button>`元素。
+
+`TodoInput`类定义了一个空构造函数，该构造函数还初始化了自定义`TodoService`的一个实例，该实例在文件顶部导入。此实例包含一个数组`todos`，当用户点击`<button>`元素时，该数组会更新新的待办事项，前提是新待办事项不是空字符串。
+
+清单 2.18 显示了`todolist.ts`的内容，该文件跟踪待办事项列表中的项目。
+
+### 清单 2.18：todolist.ts
+
+![Image](img/pg47b.jpg)
+
+清单 2.18 包含一个`template`属性，其内容与清单 2.3 中`template`属性的内容类似，同时还有一个空构造函数，用于初始化`TodoService`自定义组件的实例。该实例在`template`属性中用于遍历`todos`数组中的元素。
+
+清单 2.19 显示了`todoservice.ts`的内容，该文件跟踪待办事项列表。
+
+### 清单 2.19：todoservice.ts
+
+```
+export class TodoService {
+todos = [];
+}
+```
+
+清单 2.19 包含一个`todos`数组，当用户点击根组件中的`<button>`元素时，该数组会更新新的待办事项。
+
+最后，更新`app.module.ts`的内容，以包含清单 2.20 中加粗显示的类。
+
+### 清单 2.20：app.module.ts
+
+![Image](img/pg48.jpg)
+
+清单 2.20 导入了三个与待办事项相关的类，并将它们添加到`providers`属性和`declarations`属性中（以粗体显示）。
+
+## Angular 中的 moduleId 和 templateUrl 属性
+
+前面的一节向你展示了如何在`template`属性中使用`ngFor`指令来遍历项目列表。Angular 还支持`templateUrl`属性，这意味着你可以将`template`属性中的代码移动到单独的文件中，然后将该文件的名称作为`templateUrl`属性的值进行引用。
+
+例如，假设`template`属性中的代码放在文件`itemdetails.html`中。如果该文件与`itemsapp.ts`（如下所示）位于同一目录中，则必须包含`moduleId`属性来指示`itemdetails.html`所在的子目录。如果不指定`moduleId`属性，则 Angular 会假定`itemdetails.html`与启动顶层 Angular 组件的顶层网页位于同一目录中。
+
+> **注意**
+> *使用`moduleId`属性为`templateUrl`属性中指定的文件指定相对路径。*
+
+清单 2.21 显示了`itemsapp.ts`的内容，该文件引用了`itemdetails.html`，其中包含用于遍历项目列表的代码。`moduleId`属性指示该文件与`itemsapp.ts`位于同一目录中。
+
+### 清单 2.21：itemsapp.ts
+
+![Image](img/pg49.jpg)
+
+清单 2.21 包含一个`templateUrl`属性，该属性引用了`itemdetails.html`文件，其中包含用于显示`items`数组内容的 Angular 代码。
+
+清单 2.22 显示了`itemdetails.html`的内容，该文件包含用于显示`items`数组内容的代码，该数组在清单 2.21 的构造函数中初始化。
+
+### 清单 2.22：itemdetails.html
+
+```
+<div *ngFor="let item of items">
+{{item}}
+</div>
+```
+
+你可以轻松地将清单 2.22 的内容移动到清单 2.21 的`template`属性中；包含此文件的唯一目的是向你展示如何使用`templateUrl`属性。
+
+## 在 Angular 中使用自定义类
+
+你已经看到了一个表示用户的自定义 TypeScript 类的示例。本节将向你展示如何使用自定义 TypeScript 类的实例数组。
+
+清单 2.23 显示了`newuser.ts`的内容，说明了如何创建一个表示用户的自定义 TypeScript 类。
+
+### 清单 2.23：newuser.ts
+
+![Image](img/pg50a.jpg)
+
+为便于说明，清单 2.23 定义了一个非常简单的`User`自定义组件，该组件仅跟踪单个用户的`fname`属性。
+
+清单 2.24 显示了`app.component.ts`的内容，该文件使用`User`自定义组件来填充一个数组，该数组包含由`User`类实例表示的一组用户，然后在列表中显示与用户相关的信息。当你在名字属性之外还包含其他与用户相关的属性时，`User`类显然更有用。
+
+### 清单 2.24：app.component.ts
+
+![Image](img/pg50b.jpg)
+
+![Image](img/pg51.jpg)
+
+清单 2.24 包含一个`template`属性，该属性遍历`users`数组中的`User`实例列表，并显示每个实例中包含的名称。注意`users`数组是如何在`AppComponent`组件中初始化的：从`newuser.ts`中定义的`User`自定义组件创建了三个`User`实例。
+
+清单 2.24 还包含一个`clickMe()`方法，当用户点击`<button>`元素时调用该方法，之后一个新用户会被追加到`users`数组中。最后，清单 2.24 包含一个`onSelect()`方法，当用户在用户列表中选择不同的项目时调用该方法。
+
+## 多个组件中的点击事件
+
+一个 Angular 应用程序可以包含多个组件，每个组件都可以声明同名的事件处理程序。本节包含一个示例，向你展示在 Angular 应用程序中点击事件的处理顺序。
+
+![Image](img/disc.jpg)
+
+将随附光盘中的`ClickItems`目录复制到方便的位置。清单 2.25 显示了`app.component.ts`的内容，该文件为列表中的每个项目声明了一个`onClick()`事件处理程序。
+
+### 清单 2.25：app.component.ts
+
+![Image](img/pg52.jpg)
+
+清单 2.25 中的`template`属性显示了一个无序列表，其中每个项目都是一个可点击的基于 PNG 的图像。当用户点击其中一个图像时，会调用`onClick()`方法，该方法仅通过`console.log()`显示一条消息。
+
+清单 2.26 显示了`clickitem.ts`的内容，该文件为列表中的每个项目声明了一个`onClick()`事件处理程序。
+
+### 清单 2.26：clickitem.ts
+
+![Image](img/pg53.jpg)
+
+清单 2.26 在功能上与清单 2.25 类似。启动应用程序，在浏览器中的不同位置点击，并观察 Chrome Web Inspector 中显示的不同消息。
+
+## 使用 @Input、@Output 和 EventEmitter
+
+Angular 支持使用`@Input`和`@Output`注解在组件之间传递值。`@Input`注解用于从父组件接收值的变量，而`@Output`注解则在给定变量的值被修改时，将数据从组件发送（或“发射”）到其父组件。
+
+此代码示例的输出结果并不出人意料。然而，该代码示例的目的是让你关注一些不太直观的代码片段（尤其是在`app.module.ts`中）。此外，该代码示例在 TypeScript 编译器 2.1.5 版本下能正常工作，但未来版本可能需要对代码进行修改（请记住这一点）。
+
+![Image](img/disc.jpg)
+
+现在，将随附光盘中的`ParentChildEmitters`目录复制到一个方便的位置。清单 2.27 显示了`app.component.ts`的内容，向你展示如何从父组件更新子组件属性的值。
+
+### 清单 2.27：app.component.ts
+
+![Image](img/pg54.jpg)
+
+清单 2.27 中的模板属性包含一个顶级`<div>`元素，该元素内有一个`<child-comp>`元素，它有两个属性，如下所示：
+
+```
+<child-comp [childValue]="parentValue" (childValueChange)="reportValueChange($event)">
+</child-comp>
+```
+
+`[childValue]`属性将`parentValue`的值赋给`childValue`的值。请注意，变量`parentValue`定义在`AppComponent`中，而变量`childValue`定义在`ChildComponent`中。*这就是如何将值从父组件传递给子组件*。
+
+接下来，`childValueChange`属性被赋值为从`ChildComponent`返回到当前（“父”）组件的值。请记住，只有当`childValue`（在子组件中）的值被修改时，`childValueChange`属性才会更新。*这就是如何将值从子组件传递给父组件*。
+
+请记住以下几点：子组件*必须*定义一个类型为`EventEmitter`的变量（例如`childValueChange`），以便将修改后的值从子组件“发射”到父组件。
+
+清单 2.27 的下一部分是一个简单的构造函数，后面跟着方法`reportValueChange`，该方法包含一条`console.log()`语句。
+
+清单 2.28 显示了`childcomponent.ts`的内容，向你展示如何从父组件更新子组件属性的值。
+
+### 清单 2.28：childcomponent.ts
+
+![Image](img/pg55.jpg)
+
+![Image](img/pg56a.jpg)
+
+清单 2.28 包含一个模板属性，其中有一个“递减”`<button>`元素、一个用户可以输入数字的`<input>`字段，以及一个“递增”`<button>`元素。第一个`<button>`元素增加`<input>`字段的值，而第二个`<button>`元素则减少该值。
+
+导出的类`ChildComponent`包含数值变量`childValue`，该变量通过`@Input()`装饰，其值由父组件设置。
+
+如你所见，方法`increment()`和`decrement()`分别增加和减少`childValue`的值。在这两种情况下，修改后的`childValue`值随后通过以下代码块“发射”回父组件：
+
+```
+this.childValueChange.emit({
+  value: this.childValue
+})
+```
+
+按照清单 2.29 所示更新`app.module.ts`的内容，*这与本章前面示例中的代码不同*。
+
+### 清单 2.29：app.module.ts
+
+![Image](img/pg56b.jpg)
+
+![Image](img/pg57a.jpg)
+
+如果你在`declarations`属性中指定`ChildComponent`而不是`providers`属性，你可能会看到以下错误消息：
+
+```
+"Can't bind to <child-comp> since it isn't a known native property"
+```
+
+当你启动本节中的 Angular 应用程序时，`<input>`元素中显示的值是 77，这是父组件中的值，而*不是*子组件中分配的值（即 3）。
+
+## 展示型组件
+
+展示型组件接收数据作为输入，并生成视图作为输出（因此它们不维护应用程序状态）。考虑以下组件：
+
+![Image](img/pg57b.jpg)
+
+`StudentDetailsComponent`组件主要承担展示职责。该组件接收输入数据并将其显示在屏幕上。因此，该组件是可复用的。
+
+相比之下，特定于应用程序的组件（也称为“智能”组件）与特定的 Angular 应用程序紧密耦合。因此，智能组件可以包含展示型组件（但反之则不成立）。
+
+由于数据是同步传递给此组件的（而不是通过`Observable`），数据最初可能不存在，这就是包含所谓的 Elvis 运算符（模板中的“?”）的原因。
+
+
+
+## Angular 中的样式元素和 Shadow DOM
+
+Angular 支持层叠样式表（CSS）封装，这意味着 CSS 选择器只会匹配在同一自定义组件中定义的元素。这种封装之所以可行，是因为 Angular 中的 ShadowDOM 模拟。具体来说，这涉及导入`ViewEncapsulation`的 import 语句，并指定以下值之一：
+
+- ![Image](img/greybox.jpg) `ViewEncapsulation.Emulated`
+- ![Image](img/greybox.jpg) `ViewEncapsulations.Native`
+- ![Image](img/greybox.jpg) `ViewEncapsulation.None`
+
+组件的默认值是`ViewEncapsulation.Emulated`，它会在样式旁边输出类的命名空间，并继承全局样式。相比之下，`ViewEncapsulations.Native`使用原生 ShadowDOM（并非所有浏览器都支持），并且会丢失全局样式。最后，`ViewEncapsulation.None`会移除组件中的所有样式封装。
+
+![Image](img/pg58.jpg)
+
+![Image](img/disc.jpg)
+
+将随附光盘中的`ViewEncapsulation`目录复制到一个方便的位置。清单 2.30 显示了`app.component.ts`的内容，其中包含一个 CSS 选择器，该选择器匹配`app.component.ts`中的`<button>`元素，但不匹配`index.html`中的`<button>`元素。
+
+### 清单 2.30：app.component.ts
+
+![Image](img/pg59a.jpg)
+
+清单 2.30 包含两条 import 语句和一个`encapsulation`属性，其值设置为`ViewEncapsulation.Native`。接下来，`styles`属性为模板部分中声明的`<button>`元素指定了红色。
+
+现在修改`index.html`中的`<body>`元素，添加一个`<button>`元素，如下所示：
+
+![Image](img/pg59b.jpg)
+
+启动 Angular 应用程序，你将看到组件中有一个红色的`<button>`元素，而 HTML 页面中有一个深灰色的`<button>`元素。
+
+## Angular UI 组件
+
+本章中的代码示例向你展示了如何在 Angular 应用程序中使用 HTML 小部件。然而，你也可以使用作为 HTML 小部件“包装器”的 Angular UI 组件。Angular 官方网站包含大量 UI 组件集合：
+
+[`angular.io/resources/#!#UI%20Components`](https://angular.io/resources/)
+
+上述网站包含指向其他工具包的链接，例如`ng-bootstrap`（Bootstrap 的原生 Angular 2 指令）和`Angular Material 2`（Angular 2 的 Material Design 组件）。
+
+以下网站包含大量 Angular UI 组件（例如表格、树、菜单和图表）：
+
+[`github.com/brillout/awesome-angular-components`](https://github.com/brillout/awesome-angular-components)
+
+请记住，上述链接中的 UI 组件适用于 Angular 2，因此最好在最新版本的 Angular 中测试它们。此外，第 5 章包含一些在 Angular 4 版本中确实可用的表单相关 UI 组件。
+
+你也可以通过互联网搜索其他开源（或商业）替代方案，以确定哪种方案适合你的需求。
+
+## Angular 的新特性
+
+Angular 的一些新特性包括在`ngIf`指令中支持 if/else 逻辑，以及`NgComponentOutlet`指令。
+
+`ngIf`指令根据表达式的值有条件地包含一个模板。接着，`ngIf`会计算表达式，然后根据表达式为真值或假值，分别渲染`then`或`else`模板。通常，`then`模板是`ngIf`的内联模板，除非绑定到不同的值；而`else`模板默认为空，除非进行了绑定。更多信息请参见此处：
+
+[`angular.io/docs/ts/latest/api/common/index/NgIfdirective.html`](https://angular.io/docs/ts/latest/api/common/index/NgIfdirective.html)
+
+`NgComponentOutlet`指令是一个实验性指令，提供了一种声明式方法来创建动态组件，示例如下：
+
+![Image](img/pg60.jpg)
+
+你可能已经猜到，`ng-container`指令是一个用于“分组”节点的逻辑容器。在前面的代码块中，`ng-container`指令包含一个`NgComponentOutlet`，其值为`Input`类型，而`Input`又引用了一个自定义组件。接下来，请确保将动态组件添加到`ngModule`的`entryComponents`部分，如下所示：
+
+![Image](img/pg61.jpg)
+
+`NgComponentOutlet`指令支持其他选项，详情请参见此处：
+
+[`angular.io/docs/ts/latest/api/common/index/NgComponentOutlet-directive.html`](https://angular.io/docs/ts/latest/api/common/index/NgComponentOutlet-directive.html)
+
+## 总结
+
+本章介绍了如何在 Angular 应用程序中使用 UI 控件。你学习了如何渲染按钮、如何渲染名称列表，以及如何从这些列表中添加和删除名称。你还了解了条件逻辑以及如何创建子组件。
+
+接着，你学习了如何处理鼠标相关事件，例如`mousemove`事件。然后你学习了父组件与子组件之间的通信，随后讨论了表示型组件。你还学习了如何在 Angular 应用程序中指定不同类型的 CSS 封装。最后，简要介绍了 Angular 中一些与 UI 相关的新特性。
+
+# 第 3 章：图形与动画
+
+本章介绍如何通过 HTML5 技术和各种开源工具包，在 Angular 应用程序中创建图形和动画效果。本章之所以较早地引入图形相关内容，是因为图形提供了一种有趣的学习技术的方式。即使你不打算在 Angular 应用程序中使用图形和动画，也值得浏览本章内容，以熟悉未来可能对你有用的视觉效果。
+
+你很快会看到，本章的代码示例使用了与 Angular 无关的技术，例如可缩放矢量图形（SVG）、数据驱动文档（D3）、GreenSock 动画平台（GSAP）、层叠样式表 3（CSS3）和 jQuery。实际上，有一个示例使用了“纯”CSS3 在 Angular 应用程序中创建动画效果，然后将其改编为使用 Angular 的`animations`属性创建动画效果的代码示例。阅读该示例中的代码后，你可以创建自己的变体，或许可以结合本章其他代码示例中的技术。
+
+如果你是图形效果方面的新手，这可能是学习如何使用 Angular 创建图形和动画效果的最快途径。因此，你将受益于两个原因：首先，“Angular 方式”的动画效果有相当多的在线文档；其次，你无需花费大量额外时间学习如何使用无关技术在 Angular 中创建动画效果。
+
+本章的第一节讨论了 Angular 生命周期，部分原因是本章中与 GSAP 相关的代码示例需要用到其中一个生命周期方法。
+
+本章的第二节展示了如何在 SVG 以及 D3 中渲染图形和创建动画效果。尽管本节中的示例非常简单，但它们为你提供了起点，以便在 Angular 应用程序中创建此类效果。
+
+第三节包含基于 D3 的图形和动画效果示例。如果你还不知道，D3 是一个极其流行且非常适合数据可视化的开源工具包（因此被纳入本章）。
+
+第四节包含一个使用“纯”CSS3 创建动画效果的示例，以及一个将 CSS3 与 jQuery 结合的代码示例。接下来你将学习如何在 Angular 应用程序中处理鼠标相关事件。最后一节简要讨论了用于创建图表和图形的 Angular 模块`ng2-charts`。
+
+关于本章代码示例的一个重要说明：它们假设你具备 SVG、D3、GSAP、CSS3 和 jQuery 的基础知识。如果你对这些技术不熟悉，可以阅读描述其基本功能的在线教程，或者直接深入代码示例，找出需要从在线资源中学习的概念。即使你决定跳过图形示例，也请阅读本章的第一节，该节讨论了 Angular 生命周期，并提供了有关 Angular 应用程序的有用信息。
+
+本章包含了多个 GitHub 仓库，其中包含大量类似色板的代码示例，展示了通过 SVG、D3、HTML5 Canvas、GSAP 和 CSS3 创建额外图形和动画效果的技术。顺便提一下（如果你感兴趣），还可以将 WebGL 与 Angular 结合使用，示例如下：
+
+[`github.com/chliebel/angular2-3d-demo`](https://github.com/chliebel/angular2-3d-demo)
+
+还有一点需要牢记：尽量避免使用原生解决方案进行文档对象模型（DOM）操作，例如`document.domMethod()`或`$('dom-element')`，并尽量少用（如果必须使用的话）。Angular 允许你通过`ElementRef`、`Renderer`和`ViewContainer`应用程序编程接口（API）安全地执行 DOM 操作。然而，本章中的某些代码示例确实打破了上述建议，以展示如何创建特定类型的图形效果。
+
+## 注意
+
+![Image](img/disc.jpg)
+
+*当你从配套光盘复制项目目录时，如果`node_modules`目录不存在，请复制该项目目录内已软链接的顶层`node_modules`目录（大多数示例应用程序都是这种情况）。*
+
+在深入图形相关的代码示例之前，让我们先看看 Angular 生命周期方法。
+
+## Angular 生命周期方法
+
+Angular 应用程序具有生命周期方法，你可以在其中放置自定义代码来处理各种事件（应用程序启动、运行等）。生命周期钩子接口定义在`@angular/core`库中，如下所示：
+
+- ![Image](img/greybox.jpg) `OnInit`
+- ![Image](img/greybox.jpg) `OnDestroy`
+- ![Image](img/greybox.jpg) `DoCheck`
+- ![Image](img/greybox.jpg) `OnChanges`
+- ![Image](img/greybox.jpg) `AfterContentInit`
+- ![Image](img/greybox.jpg) `AfterContentChecked`
+- ![Image](img/greybox.jpg) `AfterViewInit`
+- ![Image](img/greybox.jpg) `AfterViewChecked`
+
+每个接口都有一个方法，其方法名是接口名前缀`ng`。例如，`OnInit`接口有一个名为`ngOnInit`的方法。Angular 按以下顺序调用这些生命周期方法：
+
+- ![Image](img/greybox.jpg) `ngOnChanges`：当输入或输出绑定值发生变化时调用
+- ![Image](img/greybox.jpg) `ngOnInit`：在第一次`ngOnChanges`之后调用
+- ![Image](img/greybox.jpg) `ngDoCheck`：开发者的自定义变更检测
+- ![Image](img/greybox.jpg) `ngAfterContentInit`：组件内容初始化后调用
+- ![Image](img/greybox.jpg) `ngAfterContentChecked`：每次检查组件内容后调用
+- ![Image](img/greybox.jpg) `ngAfterViewInit`：组件视图初始化后调用
+- ![Image](img/greybox.jpg) `ngAfterViewChecked`：每次检查组件视图后调用
+- ![Image](img/greybox.jpg) `ngOnDestroy`：在指令销毁之前调用。
+
+由于 Angular 在创建组件时会调用该组件的构造函数，因此构造函数是初始化组件状态的便捷位置。然而，在访问子组件中定义的任何属性或数据之前，必须先初始化子组件。在这种情况下，应将自定义代码放在`ngOnInit`生命周期方法中，以便从子组件访问数据。
+
+完整的 Angular 生命周期事件列表位于此处：
+
+*[`angular.io/docs/ts/latest/guide/lifecycle-hooks.html`](https://angular.io/docs/ts/latest/guide/lifecycle-hooks.html)*
+
+*[`learnangular2.com/lifecycle/`](http://learnangular2.com/lifecycle/)*
+
+## Angular 生命周期方法的简单示例
+
+![Image](img/disc.jpg)
+
+将随附光盘中的`LifeCycle`目录复制到一个方便的位置。
+
+清单 3.1 显示了`app.component.ts`的内容，展示了某些 Angular 生命周期方法的调用顺序。
+
+***清单 3.1：app.component.ts***
+
+![Image](img/pg66.jpg)
+
+![Image](img/pg67.jpg)
+
+清单 3.1 包含了所有 Angular 生命周期方法，每个方法都包含`console.log()`，以便您查看方法的执行顺序。
+
+通过导航到`LifeCycle`应用的`src`子目录，并执行以下命令来启动应用：
+
+`ng serve`
+
+在 Chrome 会话中导航到`localhost:4200`，然后打开 Chrome Web Inspector，您将在 Console 选项卡中看到以下输出：
+
+`ngOnInit`
+
+`ngDoCheck`
+
+`ngAfterContentInit`
+
+`ngAfterContentChecked`
+
+`ngAfterViewInit`
+
+`ngAfterViewChecked`
+
+`ngDoCheck`
+
+`ngAfterContentChecked`
+
+`ngAfterViewChecked`
+
+下一节将说明`ngAfterContentInit()`方法在动态生成一组 SVG 元素后应用动画效果的实用性。
+
+## GSAP 动画与`ngAfterContentInit()`方法
+
+![Image](img/disc.jpg)
+
+将随附光盘中的`D3GSAP`目录复制到一个方便的位置。此代码示例涉及更新（或创建）以下文件：
+
+`package.json`
+
+`main.ts`
+
+`app.component.ts`
+
+`app.module.ts`
+
+`ArchTubeOvals1.ts`
+
+现在，按如下方式在`package.json`中安装所需的`gsap`包：
+
+`npm install gsap --save`
+
+接下来，在`main.ts`中导入`gsap`，如清单 3.2 所示。
+
+***清单 3.2：main.ts***
+
+![Image](img/pg68.jpg)
+
+除了粗体代码片段外，清单 3.2 包含动态生成的代码。
+
+现在让我们看看清单 3.3，它显示了`app.component.ts`的内容，其中包含生命周期方法`ngAfterContentInit()`。此方法执行基于 GSAP 的动画代码，以动画化一些动态生成的 SVG 元素。
+
+***清单 3.3：app.component.ts***
+
+![Image](img/pg69.jpg)
+
+清单 3.3 中的`ngAfterContentInit`方法包含基本的基于 GSAP 的代码，用于创建动画效果。这些效果应用于 SVG 元素，基于其`id`属性的值，该属性是字符串`elem`与一个整数的拼接。请导航到 GSAP 主页并查阅在线 GSAP 文档，了解清单 3.3 中 GSAP API 的详细信息。
+
+当需要在组件加载后执行 JavaScript 函数时，`ngAfterContentInit()`方法非常有用。在此代码示例中，TypeScript 文件`ArchTubeOvals1.ts`定义了一个子组件，该子组件动态生成一组 SVG 元素，之后`mainArchOvals.ts`中的代码执行一个 JavaScript 函数，添加基于 GSAP 的动画效果。此执行顺序确保动画效果在 SVG 元素创建*之后*应用：否则 SVG 元素尚不存在，因此没有动画效果！
+
+清单 3.4 显示了`ArchTubeOvals1.ts`（位于`src/app`子目录）的内容，该文件动态生成一组 SVG 元素。
+
+***清单 3.4：ArchTubeOvals1.ts***
+
+![Image](img/pg70.jpg)
+
+![Image](img/pg71a.jpg)
+
+清单 3.4 定义了`ArchTubeOvals1`自定义组件，其构造函数调用`generateGraphics()`方法，该方法生成一组 SVG `<ellipse>`元素。此方法中的代码由一组 JavaScript 变量和一个循环组成，该循环计算阿基米德螺旋线上的位置。每个位置用于计算动态生成的 SVG `<ellipse>`元素的属性，该元素将在该位置渲染。
+
+现在更新`app.module.ts`，以包含对 TypeScript 文件`ArchTubeOvals1.ts`的必要引用，如清单 3.5 中的粗体所示。
+
+***清单 3.5：app.module.ts***
+
+![Image](img/pg71b.jpg)
+
+
+
+本节中的代码示例是一个简单的图形效果演示，您可以通过将 Angular 与 GSAP 结合来创建这些效果。涉及 SVG、GSAP 和 Angular（但使用 beta 级别的 Angular 代码）的各种示例位于此处：
+
+[`github.com/ocampesato/react-svg-gsapi`](https://github.com/ocampesato/react-svg-gsapi)
+
+下一节将向您展示如何在 Angular 应用中添加 CSS3 动画效果。
+
+## Angular 中的 CSS3 动画效果
+
+本节中的代码示例通过添加 CSS3 动画效果，增强了上一节中的代码示例。
+
+![Image](img/disc.jpg)
+
+将随附光盘中的 `SimpleCSS3Anim` 目录复制到一个方便的位置。清单 3.6 显示了 `app.component.ts` 的内容，演示了当用户将鼠标悬停在每个列表项上时，如何更改列表项的颜色。
+
+### 清单 3.6：`app.component.ts`
+
+![Image](img/pg72.jpg)
+
+![Image](img/pg73a.jpg)
+
+清单 3.6 包含 `styles` 属性，其中包含一个 `@keyframes` 定义，用于创建涉及颜色变化的动画效果。`styles` 属性还包含一个 `li:hover` 选择器，该选择器引用了 `@keyframes` 定义，并指定了动画效果的持续时间为 4 秒。您看到的颜色在 `@keyframes` 定义中指定。
+
+启动 Angular 应用。当名称列表在浏览器中显示时，将鼠标缓慢移动到每个名称上，观察其颜色变化。尽管这个例子确实很简单，但您可以修改其内容以实现其他基于 CSS3 的动画效果。
+
+## 通过“Angular 方式”实现动画效果
+
+本节中的代码示例也通过添加一些 CSS3 选择器来创建动画效果。
+
+![Image](img/disc.jpg)
+
+将随附光盘中的 `SimpleNG2Anim` 目录复制到一个方便的位置。清单 3.7 显示了 `app.component.ts` 的内容，演示了当用户将鼠标悬停在 `<li>` 元素上时，如何移动它们的位置。此代码基于对清单 3.6 中代码的修改（稍后讨论）。
+
+### 清单 3.7：`app.component.ts`
+
+![Image](img/pg73b.jpg)
+
+![Image](img/pg74.jpg)
+
+![Image](img/pg75a.jpg)
+
+清单 3.7 对清单 3.6 中的代码进行了五处修改。具体来说，标记为“part #1”的部分是一个新的导入语句，替换了原来的导入语句。标记为“part #2”的部分是新添加的 `Emp` 类，用于保存每个员工的数据。
+
+标记为“part #3”的部分是新的 `transitions` 属性，它定义了动画事件触发时的行为（当鼠标移动事件“悬停”在 `<li>` 元素上时发生）。`ngFor` 元素中粗体部分（未标记，但为“part #4”）本质上将鼠标移动事件绑定到 `Emp` 类中的 `toggleState()` 方法。最后，标记为“part #5”的部分是一个 `Emp` 对象数组，替换了原来的数组，其中每个员工表示为 JavaScript 对象表示法（JSON）字符串。
+
+## Angular 中的基本 SVG 示例
+
+本节中的代码示例向您展示如何指定一个包含 SVG 代码的自定义组件，用于显示 SVG 元素。此示例作为下一节代码的基础，下一节涉及动态创建 SVG 元素并将其附加到 DOM。
+
+![Image](img/disc.jpg)
+
+将目录 `SVGEllipse1` 从配套光盘复制到一个方便的位置。清单 3.8 显示了 `app.component.ts` 的内容，该文件引用了一个 Angular 自定义组件，用于渲染 SVG 椭圆。
+
+### 清单 3.8：`app.component.ts`
+
+![Image](img/pg75b.jpg)
+
+清单 3.8 非常简单：代码定义了一个组件，其 `template` 属性包含一个自定义的 `<my-svg>` 元素，该元素位于 `<div>` 元素内部。
+
+清单 3.9 显示了 `MyEllipse1.ts` 的内容，其中包含用于 SVG 椭圆的 SVG 代码。
+
+### 清单 3.9：`MyEllipse1.ts`
+
+![Image](img/pg76a.jpg)
+
+清单 3.9 很直接：`template` 属性包含一个带有 `width` 和 `height` 属性的 SVG `<svg>` 元素，以及一个嵌套的 SVG `<ellipse>` 元素，该元素为必需的属性 `cx`、`cy`、`rx`、`ry` 和 `fill` 提供了硬编码值。
+
+清单 3.10 显示了 `app.module.ts` 的内容，其中新内容以粗体显示。
+
+### 清单 3.10：`app.module.ts`
+
+![Image](img/pg76b.jpg)
+
+清单 3.10 包含你从第 2 章中熟悉的通用代码，以及一个涉及 `MyEllipse1` 类的新导入语句（以粗体显示）。清单 3.10 中的另一个修改是在 `declarations` 数组中包含了 `MyEllipse1` 类（以粗体显示）。
+
+启动 Angular 应用程序，你将看到一个彩色的 SVG 椭圆。
+
+顺便提一下，以下链接解释了如何创建 SVG 渐变，以及如何在 Angular 应用程序中创建 SVG 渐变效果：
+
+[`developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Gradients`](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Gradients)
+
+[`medium.com/@OlegVaraksin/how-to-proper-use-svg-gradients-in-angularjs-2-3241672e4de2#.oah0e9z1k`](https://medium.com/@OlegVaraksin/how-to-proper-use-svg-gradients-in-angularjs-2-3241672e4de2#.oah0e9z1k)
+
+## Angular 与 SVG 中的跟随鼠标效果
+
+![Image](img/disc.jpg)
+
+本节中的代码示例创建了一个子组件，并使用鼠标相关事件来创建动态图形效果。将目录 `SVGFollowMe` 从配套光盘复制到一个方便的位置。
+
+清单 3.11 显示了 `app.component.ts` 的内容，该文件说明了如何引用一个自定义的 Angular 组件，该组件在当前鼠标位置渲染一个 SVG `<ellipse>` 元素。
+
+### 清单 3.11：`app.component.ts`
+
+![Image](img/pg77a.jpg)
+
+如你所见，清单 3.11 中的 `template` 属性指定了一个 `<div>` 元素，该元素包含一个自定义的 `<mouse-move>` 元素。
+
+清单 3.12 显示了 `MouseMove.ts` 的内容，该文件说明了如何引用一个自定义的 Angular 组件，该组件在当前鼠标位置渲染一个 SVG `<ellipse>` 元素。
+
+### 清单 3.12：`MouseMove.ts`
+
+![Image](img/pg77b.jpg)
+
+![Image](img/pg78.jpg)
+
+清单 3.12 包含一个 `template` 属性，该属性定义了一个 SVG `<svg>` 元素。每当用户移动鼠标时，`(mousemove)` 事件处理程序就会被执行，进而执行自定义方法 `mouseMove()`。
+
+请注意，`mouseMove` 方法接受一个 `event` 参数，该参数是一个对象，提供了每次 `mousemove` 事件的位置坐标。坐标由 `event.clientX` 和 `event.clientY` 指定，它们分别是当前鼠标位置的 x 坐标和 y 坐标。
+
+`mouseMove` 方法中的下一个代码块动态创建一个 SVG `<ellipse>` 元素，设置五个必需属性的值（详见上一节），然后将新创建的 SVG `<ellipse>` 元素附加到 DOM 中。此功能创建了一种跟随鼠标的效果，当你启动本节中的 Angular 应用程序代码时可以看到。
+
+请注意，`mouseMove` 方法中的最后一行代码将 SVG `<ellipse>` 元素直接附加到 DOM 中；如果可能，最好避免这种方法。
+
+清单 3.13 显示了 `app.module.ts` 的内容，其中新内容以粗体显示。
+
+### 清单 3.13：`app.module.ts`
+
+![Image](img/pg79.jpg)
+
+清单 3.13 中的代码遵循一个熟悉的模式：从“基线”代码开始，添加一个导入语句，引用一个导出的 TypeScript 类（本例中为 `MouseMove`），并将同一个 TypeScript 类添加到 `declarations` 数组中。
+
+启动 Angular 应用程序。在新的浏览器会话启动后，慢慢移动鼠标，你会看到鼠标附近渲染出不同颜色的 SVG 椭圆。作为练习，修改 `MouseMove.ts` 中的代码，使新的 SVG 椭圆“居中”于鼠标下方。
+
+## D3 与 Angular
+
+前两节展示了带有 SVG 的 Angular 应用程序示例。本节展示如何将 D3 与 Angular 结合使用。请注意，本节中的代码示例也将 SVG 元素直接附加到 DOM 中。
+
+如果你还不知道，D3 是一个开源工具包，它提供了基于 JavaScript 的 SVG 抽象层。幸运的是，每个 SVG 元素的属性与你在 D3 中指定的属性相同（因此你的工作量减少了一半）。
+
+![Image](img/disc.jpg)
+
+将目录 `D3Angular2` 从配套光盘复制到一个方便的位置。清单 3.14 显示了 `app.component.ts` 的内容，该文件说明了如何在 Angular 应用程序中使用 D3 渲染基本的 SVG 图形。
+
+### 清单 3.14：`app.component.ts`
+
+![Image](img/pg80.jpg)
+
+![Image](img/pg81.jpg)
+
+清单 3.14 以两个导入语句开头，随后是一个注释块，总结了在 Angular 应用程序中使用 D3.js 的关键点。`template` 属性包含一个 `<div>` 元素，该元素在 `ngAfterContentInit` 方法中可用，该方法随后调用 `createSVG()` 方法，该方法用四个形状（一个圆、一个椭圆、一个矩形和一条线段）填充 SVG `<svg>` 元素。
+
+注意 `@ViewChild` 装饰器定义了变量 `mysvg`，其类型为 `ElementRef`；该变量将 `template` 属性中的 `<div>` 元素与 `createSVG()` 方法中定义的变量 `svgElement`“链接”起来：
+
+```typescript
+let svgElement = this.mysvg.nativeElement;
+```
+
+注意各种 SVG 元素是如何动态创建的，以及它们的必需属性（取决于具体的 SVG 元素）是如何通过 `attr()` 方法赋值的，如下所示（以及前面的代码块）：
+
+```javascript
+// 附加一个圆
+svg.append("circle")
+  .attr("cx", cx)
+  .attr("cy", cy)
+  .attr("r", radius1)
+  .attr("fill", colors[0]);
+```
+
+在学习了 SVG 元素的必需属性名称后，你可以使用上述语法创建并将这些元素附加到 DOM 中。
+
+你还可以在此处找到许多涉及 SVG 和 Angular（使用 beta 版本的 Angular 代码）的类似代码示例：
+
+[`github.com/ocampesato/angular2-svg-graphics`](https://github.com/ocampesato/angular2-svg-graphics)
+
+## D3 动画与 Angular
+
+以下代码块说明了如何向 `D3Angular2` Angular 应用程序中的 SVG `<circle>` 元素添加基于 D3 的动画效果：
+
+![Image](img/pg82.jpg)
+
+![Image](img/pg83a.jpg)
+
+上述事件处理程序中的代码在每次 `mousemove` 事件期间执行，并伴随动态创建 SVG `<ellipse>` 元素。新功能涉及 `transition()` 方法、`duration()` 方法以及设置 `transform` 属性，所有这些都在上述代码块中以粗体显示。
+
+如你所见，`transform` 属性被设置为一个 `scale()` 值，该值在 2 秒（即 2000 毫秒）的间隔内将宽度和高度设置为初始值的 50%，从而产生动画效果。
+
+## Angular 中的纯 CSS3 3D 动画
+
+本节中的代码示例创建了 3D 图形和动画效果，无需任何 SVG、D3、HTML5 Canvas 代码或其他与图形相关的工具包。
+
+![Image](img/disc.jpg)
+
+将目录 `PureCSS3Anim` 从配套光盘复制到一个方便的位置。清单 3.15 显示了 `index.html` 的内容，该文件引用了一个带有 3D 动画效果的 CSS 选择器。
+
+### 清单 3.15：`index.html`
+
+![Image](img/pg83b.jpg)
+
+![Image](img/pg84a.jpg)
+
+清单 3.15 包含常见的 Angular 代码，后面跟着一个 `<body>` 元素，其中包含一个带有六个嵌套 `<div>` 元素的 `<div>`。这些 `<div>` 元素中的每一个都匹配一个 CSS 选择器，用于创建动画效果。
+
+清单 3.16 展示了 CSS 样式表 `Anim240Flicker3DLGrad2SkewOpacity2Reflect1DIV6.css` 的一小部分内容。
+
+### 清单 3.16：`Anim240Flicker3DLGrad2SkewOpacity2Reflect1DIV6.css`
+
+![Image](img/pg84b.jpg)
+
+![Image](img/pg85a.jpg)
+
+清单 3.16 包含了名为 `Anim240Flicker3DLGrad2SkewOpacity2Reflect1DIV6.css` 的 CSS 样式表中的一小部分代码。请查阅包含 CSS3 `@keyframes` 详细信息的在线文档和教程。
+
+## Angular 中的 CSS3 和 jQuery 动画效果
+
+本节中的代码示例包含一些 CSS3 渐变效果，其细节超出了本示例的范围。不过，如果你打算创建这种渐变效果，可以找到提供背景细节的在线教程。
+
+![Image](img/disc.jpg)
+
+将随附光盘中的 `CSS3JQueryAnim` 目录复制到一个方便的位置。清单 3.17 显示了 `index.html` 的内容，其中包含基于 jQuery 和 CSS3 创建图形效果的 JavaScript 代码。
+
+### 清单 3.17：`index.html`
+
+![Image](img/pg85b.jpg)
+
+![Image](img/pg86.jpg)
+
+清单 3.17 中的 `<head>` 标签包含一个 `<link>` 标签，引用了包含动画相关代码的 CSS 样式表 `SkewAnim1.css`。接下来的代码片段是对 jQuery 代码的引用（你可以将其替换为更新的版本）。
+
+`<head>` 标签的其余部分是一个 `<style>` 元素，包含两个选择器。第一个选择器匹配 `index.html` 中 `id` 属性值为 `outer` 的 HTML 元素。第二个选择器匹配 `class` 属性值为 `radial6` 的元素。这些元素在哪里？正如你很快会看到的，它们是在清单 3.18 的循环中（借助 jQuery）以编程方式生成的。
+
+清单 3.18 显示了 `app.component.ts` 的内容，其中包含基于 jQuery 和 CSS3 创建图形和动画效果的 JavaScript 代码。
+
+### 清单 3.18：`app.component.ts`
+
+![Image](img/pg87.jpg)
+
+![Image](img/pg88.jpg)
+
+清单 3.19 包含一个标准的 `import` 语句，后面跟着这段代码片段：
+
+```typescript
+declare var $: any;
+```
+
+上述代码片段对于 TypeScript 能够“找到”通过 `index.html` 中的 `<script>` 元素加载的 jQuery 是必需的。
+
+清单 3.19 导出了 TypeScript 类 `AppComponent`，其构造函数包含所有用于动态生成 HTML `<div>` 元素并将其附加到 DOM 的代码。
+
+构造函数的第一部分首先初始化一些用于创建图形的 JavaScript 变量。接下来，包含一个标准的 jQuery `ready` 代码片段，该片段保证其中的代码在 DOM 加载到内存后执行。具体来说，有一个循环计算大致遵循阿基米德螺旋线的位置，然后 jQuery 的 `css()` 方法在这些位置动态创建 `<div>` 元素并将其附加到 DOM。循环中包含简单的 if-else 条件逻辑来指定不同属性的值。在每次迭代中，以下代码片段将新创建的 `<div>` 元素附加到 `id` 属性值为 `outer` 的 DOM 元素上：
+
+```javascript
+$("#outer").append(newNode);
+```
+
+清单 3.19 显示了 CSS 样式表 `SkewAnim.css` 的一部分内容，其中包含用于创建动画效果的 CSS 选择器。
+
+### 清单 3.19：`SkewAnim1.css`
+
+![Image](img/pg89.jpg)
+
+清单 3.19 包含一个 CSS3 `@keyframes` 属性（带有特定于供应商的前缀），用于创建复杂的视觉效果。下面展示了一个包含 `transform` 属性的 CSS 选择器示例，该属性调用了 `skew()` 函数、`scale()` 函数和 `rotate()` 函数：
+
+![Image](img/pg90a.jpg)
+
+
+
+上述代码块产生了一个涉及倾斜、缩放和旋转变换以及阴影效果的变换效果。上述代码块中以粗体显示的两行将`animCube1`（在其他地方定义）中的动画效果“链接”到选择器`skewAnim1`，并指定动画效果的持续时间为 10 秒（`10s`）。
+
+## “Angular 方式”的动画效果
+
+现在你已经看到了使用各种其他技术创建图形和动画效果的 Angular 应用程序，本节包含一个代码示例，其中涉及基于 CSS 的功能和少量 Bootstrap 代码的动画效果。如果你不熟悉 Bootstrap，仍然可以跟随其余代码并查看动画效果。
+
+![Image](img/disc.jpg)
+
+将随附光盘中的`NgGraphicsAnimation`目录复制到一个方便的位置。清单 3.20 显示了`app.component.html`的内容，其中包含用于渲染两个`<div>`元素和两个触发动画效果的`<button>`元素的 HTML 标记。
+
+### 清单 3.20：app.component.html
+
+![Image](img/pg90b.jpg)
+
+![Image](img/pg91a.jpg)
+
+清单 3.20 包含三个嵌套的`<div>`元素，分别具有 Bootstrap 的`container`类、`row`类和`col-xs-12`类。最内层的`<div>`元素包含一个`<button>`元素，当用户点击该按钮时，会触发动画效果（如清单 3.21 所示）。点击按钮会调用`onAnimate()`方法，该方法更新变量`state`和`currState`的值。
+
+清单 3.20 的下一部分是一个`<div>`元素，它根据`state`属性的值进行更新，该值可以是`normal`或`animated`。这两个值中的每一个都在你将在清单 3.21 中看到的`animations`属性中有对应的条目。这个`<div>`元素显示为椭圆，因为`width`和`height`属性不同，并且由于`border-radius`属性。
+
+请注意，第二个`<div>`元素有一个基于`currState`值的`@currState`属性，而第一个`<div>`元素基于`state`的值。
+
+### 清单 3.21：app.component.ts
+
+![Image](img/pg91b.jpg)
+
+![Image](img/pg92.jpg)
+
+![Image](img/pg93.jpg)
+
+清单 3.21 包含一段较长的`animations`属性代码块，其中包含两个触发器函数（均以粗体显示）。第一个触发器根据`divState`的值是`normal`还是`animated`来执行一段代码。类似地，第二个触发器根据`currState`的值是`normal`还是`animated`来执行一段代码。
+
+在所有四种情况下，都会更新一组简单的 CSS 属性来设置背景颜色和`transform`方法。除了此代码示例中的 CSS 变换之外，你还可以使用许多其他 CSS 变换，包括`rotate()`、`perspective()`、`matrix()`以及其他 3D CSS3 变换。
+
+第一个触发器的第二个状态中的变换值很有趣，如下所示：
+
+```
+transform: 'rotate3d(50,50,50,-180deg) skew(-15deg,0) scale3d(1.25, 1.25, 1.25)'
+```
+
+上述变换是 3D 旋转、2D 倾斜效果和 3D 缩放效果的组合。如果你需要创建复杂的视觉效果，请放心，CSS3 提供了一组极其强大的变换，用于创建丰富且美观的视觉效果。视觉效果的选择显然取决于目标受众（例如，企业环境与高中生）。
+
+请注意，第二个`trigger()`函数包含多个`transition()`函数，这些函数指定了`<div>`元素的行为。例如，第一个`transition()`指定了从正常状态过渡到动画状态时的持续时间为 500 毫秒，而反向过渡则持续 1500 毫秒。第三个`transition()`指定了在更新`background-color`属性和`borderRadius`属性时的持续时间为 500 毫秒。
+
+清单 3.22 显示了`app.module.ts`的内容，其中新增内容以粗体显示。
+
+### 清单 3.22：app.module.ts
+
+![Image](img/pg94.jpg)
+
+清单 3.22 中的代码包含你熟悉的代码，以及以粗体显示的代码，这些代码对于动画相关效果是必需的。
+
+## Angular 的图表工具
+
+有多个开源工具包提供图表相关功能。其中之一是 Angular 模块`ng2-charts`，用于创建图表和图形，其主页位于：
+
+[`mean.expert/2016/09/17/angular-2-chart-component-revised/`](http://mean.expert/2016/09/17/angular-2-chart-component-revised/)
+
+另一个选项是`ng2d3`框架，它是一个 Angular2 + D3js 可组合可复用的图表框架，其主页位于：
+
+[`github.com/swimlane/ng2d3`](https://github.com/swimlane/ng2d3)
+
+`ng2d3`框架使用 Angular 来渲染和动画化 SVG 元素，并使用 D3 进行数学函数、比例尺、坐标轴和形状生成器等。请注意，Angular 负责实际的渲染。此外，`ng2d3`支持自定义图表，并且样式可以通过 CSS 进行自定义。
+
+请检查这些（以及其他）工具包中支持的功能，以确定哪个最适合你的需求。
+
+## 总结
+
+本章向你展示了如何在 Angular 应用程序中渲染基于 SVG 的图形。你学习了如何使用 D3 和 GSAP 创建图形和动画效果，在后一种情况下，你看到了如何将自定义代码放置在 Angular 的生命周期方法中，以便在 SVG 元素生成后应用动画效果。此外，你还学习了如何在 Angular 中使用纯 CSS3 图形和动画效果。
+
+# 第 4 章
+
+## HTTP 请求与路由
+
+本章将向你展示如何在 Angular 应用程序中发起 HTTP 请求，以及如何在 Angular 应用程序中使用`Observable`。代码示例将展示如何从各种来源获取数据，以及如何从`Promise`创建`Observable`。如果需要，你可以访问各种在线教程，其中包含关于`Observable`和`Promise`的介绍性材料。
+
+第一部分简要讨论了依赖注入（DI）和`@Injectable`装饰器。第二部分展示了如何在 Angular 应用程序中发起 HTTP 请求，以读取文本文件中定义的基于 JSON 的数据。
+
+第三部分展示了如何在 Angular 应用程序中发起 HTTP 请求，以检索 GitHub 用户的信息。你还将看到如何通过`forkJoin()`方法发起多个并发请求。本章的最后一部分讨论了 Angular 应用程序中的路由。
+
+注意
+
+![Image](img/disc.jpg)
+
+*当你从配套光盘复制项目目录时，如果`node_modules`目录不存在，请复制该项目目录内软链接的顶层`node_modules`目录（大多数示例应用程序都是这种情况）。*
+
+## Angular 中的依赖注入
+
+Angular 提供了一种简单的依赖注入机制：依赖项被注入到类的构造函数中。你可以通过在类的构造函数中将每个依赖项指定为参数来注入多个依赖项。
+
+DI 涉及在 TypeScript 类上方指定`@Injectable`装饰器，以及一个包含你想要注入的类型的构造函数。本章中的代码示例使用了`Http`服务，该服务也在 TypeScript 文件中被导入。
+
+你需要执行两个简单的步骤：首先，在`app.component.ts`（以及可能的其他自定义类）中导入`Http`，然后更新`app.module.ts`的内容。
+
+例如，以下代码块（即步骤 1）注入了`Http`类的一个实例（以粗体显示）：
+
+![Image](img/pg98a.jpg)
+
+注意
+
+*`Http`模块使用`rxjs`在 Angular 中返回`Observable`。*
+
+正如你在前面的代码块中看到的，`Injectable`服务位于`@angular/core`中，而`Http`服务位于`@angular/http`中。
+
+注意
+
+*当你导入`Http`时，还必须更新`app.module.ts`的内容。*
+
+步骤 2 涉及更新`app.module.ts`，如下所示：
+
+![Image](img/pg98b.jpg)
+
+请注意，前面的代码块从`@angular/http`导入了`HttpModule`，并将其指定为`imports`属性中的依赖项，而步骤 1 从`@angular/http`导入了`Http`。在本章后面，你将看到需要`app.module.ts`中`providers`属性的代码示例。
+
+## 使用 jQuery 和 Angular 进行 Flickr 图像搜索
+
+本节中的代码示例展示了如何在 Angular 应用程序中使用 jQuery，这对于通过 jQuery 执行 HTTP 请求的现有 Web 页面非常有用。
+
+![Image](img/disc.jpg)
+
+将配套光盘中的`SearchFlickr`目录复制到方便的位置。请注意，文件`index.html`包含以下代码片段，该片段允许在此项目中使用 jQuery：
+
+```
+<script src="http://code.jquery.com/jquery-latest.js"> </script>
+```
+
+清单 4.1 显示了`app.component.ts`的内容，该文件演示了如何发起 HTTP GET 请求以从 Flickr 检索图像。此请求基于用户在搜索框中输入的文本字符串。
+
+### 清单 4.1：app.component.ts
+
+![Image](img/pg99.jpg)
+
+![Image](img/pg100.jpg)
+
+清单 4.1 包含一个标准的导入语句，后跟以下代码片段：
+
+```
+declare var $: any;
+```
+
+前面的代码片段对于 TypeScript 能够“找到”通过`index.html`中的`<script>`元素加载的 jQuery 是必需的。如果你删除前面的代码片段，你将看到以下错误：
+
+```
+app/app.component.ts(20,5): error TS2304: Cannot find name '$'.
+```
+
+清单 4.1 的下一部分是`@Component`装饰器，其`template`属性包含`<input>`、`<button>`和`<div>`元素，分别用于捕获用户的搜索字符串、使用该字符串执行搜索以及显示搜索结果。
+
+清单 4.1 的下一部分是导出的类`AppComponent`，它定义了`url`变量，该变量初始化为一个硬编码的字符串值，该值“指向”Flickr 网站。
+
+接下来，定义了一个空的构造函数，后跟`httpRequest()`方法，该方法在用户单击`<button>`元素时被调用。此方法调用 jQuery 的`getJSON()`方法，该方法基于在`<input>`元素中输入的文本字符串执行 Flickr 图像搜索，原因在于以下代码片段：
+
+```
+tags: $("#searchterm").val()
+```
+
+当检索到匹配的图像时，它们通过`data.items`可用，并且 jQuery 的`each()`方法遍历图像列表。每个图像通过以下代码片段动态插入到`<images>`元素中：
+
+```
+$("<img/>").attr("src", item.media.m).prependTo("#images");
+```
+
+![Image](img/pg101.jpg)
+
+**图 4.1** 显示意大利面的部分图像列表。
+
+花一两分钟时间体会 jQuery 以简洁的方式实现所需结果。
+
+图 4.1 显示了启动此 Angular 应用程序并使用关键字 pasta 搜索 Flickr 后的输出。
+
+## 在 Angular 中结合 Promise 和 Observable
+
+本节中的代码示例演示了如何检索基于 JSON 的数据，将该数据转换为`Promise`，然后将`Promise`转换为`Observable`。此外，您将看到两种处理数据的技术：一个代码块将数据作为`Promise`处理，另一个代码块将数据作为`Observable`处理（因此您可以选择任意一种风格）。请记住，Angular 中的`Http`服务返回一个支持`subscribe()`方法的`Observable`。
+
+请访问以下网站注册免费的应用编程接口（API）密钥，本节中的代码示例将需要该密钥：
+
+[`developer.nytimes.com/signup`](http://developer.nytimes.com/signup)
+
+![Image](img/disc.jpg)
+
+现在将配套光盘中的`SearchNYT`目录复制到一个方便的位置。清单 4.2 显示了`app.component.ts`的内容，该文件演示了如何将`Promise`（从自定义服务返回）转换为`Observable`，然后将返回的数据显示为链接列表。
+
+### 清单 4.2: app.component.ts
+
+![Image](img/pg102.jpg)
+
+![Image](img/pg103a.jpg)
+
+清单 4.2 包含一个`@Component`装饰器，其模板属性显示了一个无序列表，列表项是从 *纽约时报* 网站检索到的文章标题。
+
+`AppComponent`类包含三个部分。第一部分定义了一个`Promise` `p`，它调用`getNYTInfo()`方法（定义在下面的`NYTService`类中）来获取一组文章。第二部分从`Promise` `p`定义了一个`Observable`，其`subscribe()`方法通过以下代码片段用检索到的文章标题列表初始化变量`headlines`：
+
+`data => this.headlines = data.response.docs`
+
+模板中的`*ngFor`语句遍历`headlines`中的项，以显示文章标题列表。
+
+第三部分从`Promise` `p`获取文章列表，并用检索到的文章标题列表初始化变量`headlines`。
+
+清单 4.3 显示了`nyt.service.ts`的内容，该文件使用`jQuery`向 *纽约时报* 端点发起 HTTP GET 请求，然后向父组件返回一个`Promise`。请注意，端点将返回一个 JSON 字符串，而 return 语句（在清单 4.3 中以粗体显示）将该 JSON 字符串转换为`Promise`。
+
+### 清单 4.3: nyt.service.ts
+
+![Image](img/pg103b.jpg)
+
+![Image](img/pg104a.jpg)
+
+清单 4.3 分别用注册的 API 密钥值和 *纽约时报* URL 初始化了变量`apiKey`和`nytURL`。主要关注点是`gettNYTInfo()`方法，它填充了 *纽约时报* 所需的各种属性（如`fq`和`fl`），然后调用`jQuery`的`get()`方法从 *纽约时报* 检索文章。
+
+有趣的部分在于：由于 return 语句（以粗体显示），基于 JSON 的数据作为`Promise`返回。`docsArray`包含一个文章数组，该数组在清单 4.2 的代码中被访问。
+
+清单 4.4 显示了`app.module.ts`的更新内容，该文件导入了`NYTService`类和 Angular 的`HttpModule`。
+
+### 清单 4.4: app.module.ts
+
+![Image](img/pg104b.jpg)
+
+![Image](img/pg105a.jpg)
+
+清单 4.4 中主要需要注意的是，自定义的`NYTService`类列在`providers`数组中，而 Angular 的`HttpModule`列在`imports`数组中，两者都在`@NgModule`装饰器中指定。
+
+请注意，Web 服务并非 100% 可靠，您可能会看到类似以下的错误消息：
+
+`SearchNYT/src/app/app.component.ts` (36,39) 中的错误：类型`'{}'`上不存在属性`'response'`。
+
+`webpack`：编译失败。
+
+稍等片刻，重新加载网页，最终您将看到正确的结果。
+
+图 4.2 显示了启动此 Angular 应用程序并从 *纽约时报* 检索一组文章后的输出（诚然，用户界面部分还有很大的改进空间）。
+
+![Image](img/pg105b.jpg)
+
+**图 4.2** 来自 *纽约时报* 的文章标题列表。
+
+## 在 Angular 中通过 Observable 读取 JSON 数据
+
+![Image](img/disc.jpg)
+
+本节向您展示如何从包含 JSON 数据的文件中读取数据。将配套光盘中的`ReadJSONFile`目录复制到一个方便的位置。清单 4.5 显示了`app.component.ts`的内容，该文件演示了如何发起 HTTP 请求（返回一个`Observable`）来读取包含员工信息的 JSON 文件。
+
+### 清单 4.5: app.component.ts
+
+![Image](img/pg106.jpg)
+
+清单 4.5 中的模板属性以一个`<button>`元素开头，用于发起 HTTP GET 请求以检索员工信息。模板属性还包含一个`<ul>`元素，用于显示基于员工数据的无序列表。
+
+
+
+`AppComponent`类包含变量`employees`，后面跟着一个构造函数，该构造函数初始化了`http`变量，它是`Http`类的一个实例。`httpRequest()`方法包含发起 HTTP GET 请求的代码，该请求返回一个`Observable`。`subscribe()`方法包含常规代码，在本例中，它还从子目录`app/src`中的文件`employees.json`的内容初始化了`employees`数组。
+
+清单 4.6 显示了`employees.json`的内容，其中包含员工相关信息。该文件位于`src/app`子目录中，如清单 4.5 中的粗体所示。
+
+### 清单 4.6: employees.json
+
+```json
+[
+  {"fname":"Jane","lname":"Jones","city":"San Francisco"},
+  {"fname":"John","lname":"Smith","city":"New York"},
+  {"fname":"Dave","lname":"Stone","city":"Seattle"},
+  {"fname":"Sara","lname":"Edson","city":"Chicago"}
+]
+```
+
+清单 4.7 显示了`app.module.ts`的内容，该文件导入了 Angular 的`HttpModule`。
+
+### 清单 4.7: app.module.ts
+
+![Image](img/pg107.jpg)
+
+清单 4.7 包含一组标准的 import 语句，以及`HttpModule`，后者列在`@NgModule`装饰器的 imports 数组中。
+
+![Image](img/pg108a.jpg)
+
+**图 4.3** 来自 JSON 文件的员工列表。
+
+图 4.3 显示了启动此 Angular 应用程序并从文件中检索基于 JSON 的员工数据后的输出。
+
+下一节包含一个使用`forkjoin()`的示例，其代码与清单 4.5 的内容类似。
+
+## 在 Angular 中使用 forkJoin() 进行多个并发请求
+
+上一节中的代码示例读取了单个文件的内容。然而，在某些情况下，您可能需要从多个源加载数据，并延迟加载后的逻辑，直到所有数据都加载完毕。`Observables`提供了一种名为`forkJoin()`的方法来“包装”多个`Observables`，并发出多个并发的`http.get()`请求。请注意，如果任何一个单独的请求失败，整个操作就会失败。`subscribe()`方法为整个`Observables`集合设置处理程序。
+
+![Image](img/disc.jpg)
+
+将配套光盘中的`ForkJoin`目录复制到一个方便的位置。清单 4.8 显示了`app.component.ts`的内容，该文件演示了如何引用自定义组件`FileService`，该组件读取`employees.json`和`customers.json`的内容。
+
+### 清单 4.8: app.component.ts
+
+![Image](img/pg108b.jpg)
+
+![Image](img/pg109.jpg)
+
+清单 4.8 中的模板属性包含一个员工无序列表和一个客户无序列表，两者都通过自定义`AppComponent`组件中的`getBothFiles()`方法检索。请注意，检索到的数据是一个包含两个元素的数组，其中第一个元素包含客户相关数据，第二个元素包含员工相关数据。
+
+`getBothFiles()`方法在`ngOnInit()`生命周期方法中被调用，实际的 HTTP GET 请求在`FileService`自定义组件中定义的一个方法（也名为`getBothFiles()`）中执行。
+
+清单 4.9 展示了定义`FileService`类的`file.service.ts`文件的内容。该类包含一个`getBothFiles()`方法，该方法使用`forkJoin()`从两个基于 JSON 的文件中读取数据。
+
+### 清单 4.9: file.service.ts
+
+![Image](img/pg110.jpg)
+
+清单 4.9 包含`getBothFiles()`方法，该方法调用`Observable`类的`forkJoin()`方法，以检索文件`src/app/customers.json`和`src/app/employees.json`中的 JSON 数据。
+
+以下代码片段在清单 4.9 中出现了三次，每次都在`Observable`内部返回 JSON 格式的数据：
+
+```
+.map((res:Response) => res.json())
+```
+
+与员工相关的数据显示在清单 4.6 中，而清单 4.10 展示了包含客户相关信息的`customers.json`文件的内容。
+
+### 清单 4.10: customers.json
+
+```
+[
+{"fname":"Paolo","lname":"Friulano","city":"Maniago"},
+{"fname":"Luigi","lname":"Napoli","city":"Vicenza"},
+{"fname":"Miko","lname":"Tanaka","city":"Yokohama"},
+{"fname":"Yumi","lname":"Fujimoto","city":"Tokyo"}
+]
+```
+
+通过`ng serve`命令启动 Angular 应用。你将在浏览器会话中看到以下输出，地址为`localhost:4200`：
+
+**Angular2 HTTP 和 Observables**
+
+部分员工信息
+
+![Image](img/greybox.jpg)Paolo Friulano 居住在 Maniago
+
+![Image](img/greybox.jpg)Luigi Napoli 居住在 Vicenza
+
+![Image](img/greybox.jpg)Miko Tanaka 居住在 Yokohama
+
+![Image](img/greybox.jpg)Yumi Fujimoto 居住在 Tokyo
+
+部分客户信息
+
+![Image](img/greybox.jpg)Jane Jones 居住在 San Francisco
+
+![Image](img/greybox.jpg)John Smith 居住在 New York
+
+![Image](img/greybox.jpg)Dave Stone 居住在 Seattle
+
+![Image](img/greybox.jpg)Sara Edson 居住在 Chicago
+
+现在你已经基本掌握了如何在 Angular 应用中使用 Observables，接下来让我们看看如何在 TypeScript 接口中表示 JSON 数据。
+
+## Angular 中的 TypeScript 接口
+
+JSON 文件`customers.json`包含关于客户的记录式信息，每个客户都可以通过一种称为接口（interface）的东西来建模，这在许多编程语言中都存在。接口在某种程度上类似于 Apple Swift、Google Go 或 C 语言中的结构体（struct）。
+
+通常，TypeScript 接口指定一个变量列表及其类型，以及一个或多个方法。当你想要关联逻辑上相关的数据项（即信息片段）时，TypeScript 接口是一个有用的构造。有许多包含多个数据项的实体示例，例如客户、员工、学生、采购订单等。你可以使用 TypeScript 接口对所有这些（以及许多其他）进行建模，下一节将讨论一个示例。
+
+## 一个简单的 TypeScript 接口
+
+清单 4.11 展示了`employee.ts`文件的内容，其中包含一个假设员工的接口。实际示例中，这样的接口会包含许多其他信息片段（和方法），而这个高度简化的示例旨在说明如何在 Angular 中使用 TypeScript 接口。
+
+### 清单 4.11: employee.ts
+
+```
+export interface Employee {
+fname: string,
+lname: string,
+city: string
+}
+```
+
+请注意，清单 4.11 中`Employee`接口的结构与`Employees.json`中行的内容相匹配。
+
+## JSON 数据和 TypeScript 接口
+
+清单 4.12 展示了`employees.ts`文件的内容，其中包含一个`Employee`实例数组。文件`employees.ts`说明了如何用符合 TypeScript 接口的硬编码数据值填充数组。注意，当前代码示例中并未使用清单 4.10。其目的仅仅是演示可以从静态文件加载“种子数据”（这对测试目的很有用）。
+
+### 清单 4.12: employees.ts
+
+![Image](img/pg112.jpg)
+
+## 使用 TypeScript 接口的 Angular 应用
+
+本节讨论如何创建一个使用 TypeScript 接口的 Angular 应用。
+
+通过克隆 Angular 应用`ReadJSONFile`来创建一个名为`ReadJSONFileTS`的 Angular 应用，然后对`ReadJSONFileTS`中的`app.component.ts`文件内容进行两处小修改。
+
+第一处修改是添加以下导入语句：
+
+```
+import {Employee} from './employee';
+```
+
+第二处修改是将清单 4.10 中加粗的代码片段替换为以下代码片段，该片段将`employees`变量声明为符合`Employee`接口的对象数组：
+
+```
+employees : Employee[];
+```
+
+启动应用，你将看到相同的结果。请记住，此项目中唯一显著的区别在于 TypeScript 接口。尽管在此示例中使用 TypeScript 接口并未提供显著优势，但请考虑包含多个 TypeScript 接口的 Angular 应用的情况，其中一些接口可能包含数十个元素。在这种情况下，TypeScript 接口简化了跟踪相关数据的任务，这在需要执行创建、读取、更新和删除（CRUD）操作时非常有用。
+
+关于 TypeScript 接口，有一些有用的事实需要记住。首先，它们可以包含在类中实现的方法定义。其次，TypeScript 接口可以扩展现有接口（因此可以创建层次结构）。第三，TypeScript 接口可以扩展 TypeScript 类。虽然本章没有包含说明这些额外功能的示例，但你可以通过在线搜索找到相关的代码示例和教程。
+
+## 在 Angular 中获取 GitHub 用户数据
+
+![Image](img/disc.jpg)
+
+将配套光盘中的`GithubUsers`目录复制到一个方便的位置。清单 4.13 展示了`app.component.ts`文件的内容，该文件说明了如何发出 HTTP GET 请求以检索 GitHub 用户的信息。
+
+### 清单 4.13: app.component.ts
+
+![Image](img/pg113.jpg)
+
+![Image](img/pg114.jpg)
+
+清单 4.13 中的代码与清单 4.5 中的代码类似。不同之处在于`httpRequest()`方法，它从实时端点发出 HTTP GET 请求，而不是从文件读取数据。另一个不同之处在于，唯一显示的数据出现在浏览器的控制台选项卡中。
+
+启动本节中的代码；在控制台选项卡中，你将看到类似以下输出：
+
+followers = 16
+
+following = 2
+
+created_at = 2011-07-14T23:06:31Z
+
+本节中的代码为你提供了一个起点，用于显示关于用户的更多详细信息，并以更美观的方式展示信息。
+
+## 使用简单服务器的 HTTP GET 请求
+
+本节向你展示如何使用命令行工具`json-server`，它可以提供基于 JSON 的数据。该程序执行一个非常简单的服务器功能：客户端可以发出 GET 请求以从服务器检索 JSON 数据。此外，在启动`json-server`的控制台中输入一个简单命令，即可将内存中的数据保存到文件中。
+
+尽管`json-server`不能执行包含 Express 和 MongoDB 的基于 Node 的应用的功能，但它是一个方便的程序，可以帮助你学习 Angular 应用如何与文件服务器交互。
+
+你需要执行以下步骤：
+
+![Image](img/greybox.jpg)步骤 1：安装`json-server`。
+
+![Image](img/greybox.jpg)步骤 2：启动`json-server`。
+
+![Image](img/greybox.jpg)步骤 3：启动 Angular 应用。
+
+通过以下命令安装`json-server`：
+
+```
+[sudo] npm install –g json-server
+```
+
+导航到包含 JSON 文件`posts.json`的目录，并调用以下命令：
+
+```
+json-server posts.json
+```
+
+上述命令在端口 3000 启动一个文件服务器，并将`posts.json`的内容读入内存，使该数据可用于 HTTP GET 请求。
+
+![Image](img/disc.jpg)
+
+将配套光盘中的目录`JSONServerGET`复制到一个方便的位置。清单 4.14 显示了`app.component.ts`的内容，演示了如何发起 HTTP GET 请求以从文件服务器检索数据。
+
+### 清单 4.14: app.component.ts
+
+![Image](img/pg115.jpg)
+
+![Image](img/pg116.jpg)
+
+清单 4.14 包含与之前代码示例相似的代码。第一个不同之处在于模板属性中显示的无序列表的细节。第二个不同之处在于 HTTP GET 请求中的本地端点[`localhost:3000/users`](http://localhost:3000/users)。该端点通过监听端口 3000 的`json-server`提供 JSON 数据。
+
+清单 4.15 显示了`posts.json`的内容，该文件在清单 4.14 的 HTTP GET 请求中被检索。
+
+### 清单 4.15: posts.json
+
+![Image](img/pg117a.jpg)
+
+下一节将展示如何在 Angular 应用中向本地文件服务器发起 HTTP POST 请求。
+
+## 使用简单服务器的 HTTP POST 请求
+
+本节展示如何使用工具`json-server`发起 HTTP POST 请求，该工具可以提供基于 JSON 的数据。请记住，此代码示例中的服务器仅处理基本的数据请求；本章不涉及“通用”JavaScript（有时称为“同构”JavaScript）。
+
+导航到`src/app`子目录，其中包含 JSON 文件`authors.json`，并启动以下命令：
+
+`json-server authors.json`
+
+上述命令在端口 3000 启动一个文件服务器，并将`authors.json`的内容读入内存，使这些数据可用于 HTTP GET 请求。
+
+![Image](img/disc.jpg)
+
+现在将配套光盘中的目录`JSONServerPOST`复制到一个方便的位置。清单 4.16 显示了`app.component.ts`的内容，演示了如何向本地文件服务器发起 HTTP POST 请求。
+
+### 清单 4.16: app.component.ts
+
+![Image](img/pg117b.jpg)
+
+![Image](img/pg118.jpg)
+
+![Image](img/pg119.jpg)
+
+清单 4.16 包含与清单 4.14 相同的导入语句，随后是一个模板属性，显示一个基于作者数据的表格。当用户点击`<button>`元素时，`postAuthorData()`方法会向作者列表中添加一个硬编码的新作者。该方法执行标准的 jQuery POST 请求，而不是使用`Observable`。请注意，该方法会递增每个作者的`id`属性值，以便将它们视为不同的作者（即使新用户的名称几乎相同）。
+
+另一方面，`getAuthorData()`方法确实使用`Observable`从运行在端口 3000 的文件服务器中检索作者相关数据（如清单 4.17 所示）。
+
+> **注意：** *当前功能仅支持插入一个新作者。作为练习，请修改代码以支持插入多个新作者。*
+
+还有一个小细节：每次调用`postAuthorData()`方法后浏览器会重新加载，因此您需要点击“Author Info”按钮才能看到新添加的作者。
+
+清单 4.17 显示了`authors.json`的部分内容，这些内容在此 Angular 应用中显示。
+
+### 清单 4.17: authors.json
+
+![Image](img/pg120.jpg)
+
+如您所见，清单 4.17 是一个非常简单的基于 JSON 的数据项集合，每个数据项包含`id`、`title`和`author`元素。
+
+本章中涉及使用`json-server`作为本地文件服务器的代码示例部分到此结束。本章的下一节将讨论 Angular 中如何支持路由。
+
+## Angular 中的路由
+
+Web 应用可以有对应不同 URL 的不同部分，以编程方式支持这些部分称为*路由*。当您看到一个包含选项卡或一组水平链接的网页，这些链接显示应用的不同部分时，该网页很可能使用了某种形式的路由。
+
+例如，一个网页可能提供“关于”部分、“登录”部分和“订单”部分。假设您希望仅在用户登录应用后才允许访问订单部分。路由可以限制对订单部分的访问，并维护状态以简化各部分之间切换的代码。
+
+Angular 应用中的路由涉及在`app.module.ts`中添加路由与操作之间的“映射”，如下面的变量`appRoutes`所示：
+
+![Image](img/pg121a.jpg)
+
+上述代码块定义了变量`appRoutes`，它指定了三个路由——about、login 和 contact——分别映射到组件`AboutComponent`、`LoginComponent`和`ContactComponent`。
+
+
+
+无论用户点击哪个链接，相关组件都会显示在 `<router-outlet>` 元素中（在 `app.component.ts` 的模板定义中指定）。当用户点击一个链接时，`<router-outlet>` 中的所有现有内容都会被移除，并替换为与当前点击链接关联的组件。
+
+用选项卡类比，当用户点击一个选项卡时，当前屏幕内容会被最近点击的选项卡的内容替换。
+
+更通用的路由配置场景支持重定向和指定参数，如下所示：
+
+![Image](img/pg121b.jpg)
+
+有关 Angular 路由的更多详细信息，请访问：
+
+[`angular.io/docs/ts/latest/guide/router.html`](https://angular.io/docs/ts/latest/guide/router.html)
+
+请记住，与路由相关的代码已从早期版本的 Angular 中更改，并且将来也可能更改，因此最好查看 Stack Overflow 网站上的最新帖子以及在线文档。
+
+下一节包含一个简单但完整的代码示例，使用了 Angular 路由。
+
+## Angular 中的路由示例
+
+![Image](img/disc.jpg)
+
+本节中的代码示例向你展示如何在 Angular 应用中设置基本路由。将配套光盘中的目录 `BasicRouting` 复制到一个方便的位置。请注意，`index.html` 中 `<body>` 元素上方包含以下代码片段：
+
+```html
+<base href="/">
+```
+
+上述代码片段对于任何涉及路由相关功能的 Angular 应用都是必需的；事实上，Angular 依赖此标签来确定如何构建其路由信息。
+
+清单 4.18 显示了 `app.component.ts` 的内容，演示了 Angular 中路由的简单示例。
+
+### 清单 4.18：`app.component.ts`
+
+![Image](img/pg122.jpg)
+
+![Image](img/pg123a.jpg)
+
+清单 4.18 包含三个与路由功能相关的导入语句，随后是用于访问自定义组件 `About`、`Login` 和 `Users` 的导入语句。
+
+清单 4.18 中的模板属性包含一个 `<nav>` 元素，该元素包含三个锚点元素，用于设置指向三个自定义组件的链接。模板属性还包含 `<router-outlet>` 元素，每个自定义组件的输出将在此处渲染。
+
+清单 4.17 的最后一部分包含 `RouteConfig` 映射，该映射将自定义组件与路径元素关联起来。
+
+清单 4.19 显示了 `about.ts` 的内容，这是一个允许用户登录应用的组件。
+
+### 清单 4.19：`about.ts`
+
+![Image](img/pg123b.jpg)
+
+清单 4.19 很简单：模板属性包含一个 `<p>` 元素，其中包含一个文本字符串，该字符串显示在根组件的 `<router-outlet>` 元素中。
+
+清单 4.20 显示了 `login.ts` 的内容，这是一个允许用户登录应用的组件。
+
+### 清单 4.20：`login.ts`
+
+![Image](img/pg124a.jpg)
+
+清单 4.21 包含一个模板属性，用于模拟用户的登录过程。提供了用户名和密码的输入字段，当用户点击 `<button>` 元素时，会调用 `clickMe()` 方法，但该方法中不执行实际的验证。
+
+### 清单 4.21：`users.ts`
+
+![Image](img/pg124b.jpg)
+
+![Image](img/pg125a.jpg)
+
+清单 4.21 包含一个模板属性，用于显示 `users` 数组中用户姓名的列表，该数组在 `Users` 类中初始化。每个用户都作为 `User` 类的一个实例创建，该类目前仅包含用户的名字；一个实际的示例显然会包含更多与用户相关的属性。
+
+清单 4.22 显示了 `user.ts` 的内容，这是一个允许用户在应用程序中注册自己的组件。
+
+### 清单 4.22：`user.ts`
+
+![Image](img/pg125b.jpg)
+
+清单 4.22 定义了 `User` 类，其中包含一个用于初始化用户名字的构造函数。
+
+## 使用 Webpack 的 Angular 路由
+
+如果你将 Webpack 与 Angular 应用程序结合使用，可以通过以下路由器加载器使用 Webpack 执行 Angular 路由：
+
+[`www.npmjs.com/package/angular2-router-loader`](https://www.npmjs.com/package/angular2-router-loader)
+
+GitHub 仓库位于：
+
+[`github.com/brandonroberts/angular2-router-loader`](https://github.com/brandonroberts/angular2-router-loader)
+
+一篇描述如何使用上述路由器加载器的文章位于：
+
+[`medium.com/@daviddentoom/angular-2-lazy-loading-with-webpack-d25fe71c29c1#.8srgkl44h`](https://medium.com/@daviddentoom/angular-2-lazy-loading-with-webpack-d25fe71c29c1#.8srgkl44h)
+
+## 总结
+
+本章首先向你展示了如何发起 HTTP GET 请求来读取基于 JSON 的文件内容。接着你学习了如何发起 HTTP GET 请求来获取 GitHub 用户的信息，以及如何发起 HTTP POST 请求。你还学习了如何从网站获取 JSON 数据，将该数据转换为 Promise，然后再将 Promise 转换为 Observable。最后，你学习了如何在 Angular 应用程序中设置路由。
+
+# 第 5 章
+
+## 表单、管道和服务
+
+本章将向你展示如何创建使用 Angular 表单、管道和服务的 Angular 应用程序。代码示例依赖于对前面章节讨论的功能的理解，例如如何在 Angular 中发起 HTTP 请求。
+
+本章的第一部分包含使用 Angular 控件和控件组的 Angular 应用程序。这一部分还提供了一个包含发起 HTTP GET 请求的表单的 Angular 应用程序示例，该示例增强了第 4 章中涉及 HTTP 相关功能的示例。
+
+本章的第二部分讨论 Angular 管道（Angular 1.x 中过滤器的对应物）。你还将在这一部分学习异步管道，它可以消除定义实例变量的需要，并减少 Angular 应用程序中内存泄漏的可能性。
+
+## Angular 表单概述
+
+Angular 的 `FormControl` 表示单个输入字段，`FormGroup` 由多个逻辑上相关的字段组成，`NgForm` 组件表示 HTML 网页中的 `<form>` 元素。用于提交表单的 `ngSubmit` 操作具有以下语法：
+
+```html
+(ngSubmit)="onSubmit(myForm.value)"
+```
+
+请注意，`NgForm` 提供了 `ngSubmit` 事件，而你必须在该组件类中定义 `onSubmit()` 方法。表达式 `myForm.value` 由表单中的键/值对组成。在本章后面，你将看到涉及这些控件以及 `FormBuilder` 的示例，`FormBuilder` 支持其他有用的功能。
+
+Angular 还支持模板驱动表单（使用 `FormsModule`）和响应式表单（使用 `ReactiveFormsModule`），两者都属于 `@angular/forms`。然而，响应式表单是同步的，而模板驱动表单是异步的。
+
+## 响应式表单
+
+响应式表单涉及对非用户界面（UI）数据模型与面向 UI 的表单模型之间流动的数据进行显式管理，该表单模型保留屏幕上 HTML 控件的状态和值。响应式表单提供了使用响应式模式、测试和验证的便利性。
+
+响应式表单涉及在组件类 `app.component.ts` 中创建 Angular 表单控件对象的树，这些对象也绑定到组件模板 `app.component.html` 中的原生表单控件元素。
+
+组件类可以访问数据模型和表单控件结构，这使你能够将数据模型值传播到表单控件中，并检索 HTML 控件中用户提供的值。组件可以观察表单控件状态的变化并对其做出反应。直接使用表单控件对象的一个优点是值和有效性的更新始终是同步的，并且在你控制之下。你不会遇到有时困扰模板驱动表单的时间问题，并且响应式表单更容易进行单元测试。由于响应式表单是通过代码直接创建的，它们始终可用，这使你能够立即更新值并“深入”到后代元素。
+
+## 模板驱动表单
+
+模板驱动表单涉及将 HTML 表单控件（例如 `<input>`、`<select>` 等）放置在组件模板中。此外，表单控件通过指令（如 `ngModel`）绑定到组件中的数据模型属性。
+
+请注意，Angular 指令根据提供的数据绑定中的信息创建 Angular 表单对象。Angular 使用 `ngModel` 来处理数据值的传输，并在用户更改发生时更新可变数据模型。因此，`ngModel` 指令不属于 `ReactiveFormsModule`。
+
+![Image](img/disc.jpg)
+
+在深入本节内容之前，配套光盘中包含 Angular 应用程序 `MasterForm`，其中包含与表单相关的代码。尽管此代码示例未使用 Angular `FormGroup`，但你可能会在代码中找到一些有用的功能。
+
+下一节将向你展示如何使用 Angular 的 `ngForm` 组件以“Angular 方式”创建表单。然后你将看到一个示例，展示如何在 Angular 应用程序中使用 Angular 的 `FormGroup`。
+
+## 一个 Angular 表单示例
+
+![Image](img/disc.jpg)
+
+将配套光盘中的 `NGForm` 目录复制到一个方便的位置。清单 5.1 显示了 `app.component.ts` 的内容，该文件说明了如何在 Angular 应用程序中使用带有 `ngModel` 属性的 `<input>` 元素。
+
+### 清单 5.1：`app.component.ts`
+
+![Image](img/pg129.jpg)
+
+![Image](img/pg130a.jpg)
+
+清单 5.1 定义了一个模板属性，其中包含一个带有两个 `<div>` 元素的 `<form>` 元素，每个 `<div>` 元素包含一个 `<input>` 元素。第一个 `<input>` 元素用于新用户的名字，第二个 `<input>` 元素用于新用户的姓氏。
+
+Angular 提供了 `NgModel` 指令，使你能够在 Angular 表单中使用实例变量 `myForm`。例如，以下代码片段将 `myForm` 指定为给定表单的控件组：
+
+```html
+<form [ngModel]="myForm" (ngSubmit)="onSubmit(myForm.value)"
+```
+
+请注意，`onSubmit` 指定了 `myForm`，并且一个控件绑定到了输入元素。
+
+**注意**：在 `<form>` 元素中添加 `novalidate` 属性以禁用浏览器验证。
+
+清单 5.2 显示了 `app.module.ts` 的内容，该文件导入了 `FormsModule` 并将其包含在 `imports` 属性中。
+
+### 清单 5.2：`app.module.ts`
+
+![Image](img/pg130b.jpg)
+
+清单 5.2 很直接：它包含两行（以粗体显示）涉及 `FormsModule` 的代码，这些代码是此代码示例所必需的。
+
+## 数据绑定与 `ngModel`
+
+Angular 支持表单中的三种绑定类型：无绑定、单向绑定和双向绑定。以下是一些示例：
+
+```html
+<!-- 无绑定 -->
+<input name="fname" ngModel>
+
+<!-- 单向绑定 -->
+<input name="fname" [ngModel]="fname">
+
+<!-- 双向绑定 -->
+<input name="fname" [ngModel]="fname" (ngModelChange)="fname=$event">
+
+<!-- 双向绑定 -->
+<input name="fname" [(ngModel)]="fname">
+```
+
+单向绑定示例会在关联的组件中查找 `fname` 属性，并用 `fname` 属性的值初始化 `<input>` 字段。
+
+双向绑定示例在用户更改 `<input>` 字段的值时触发 `ngModelChange` 事件，从而更新组件中的 `fname` 属性，确保输入值与其关联的组件值保持一致。你也可以将 `ngModelChange` 的值替换为函数的输出（例如，将用户在输入字段中输入的文本字符串转换为大写）。
+
+第二个双向数据绑定示例使用了“盒子里的香蕉”语法，这是一种简写方式，可实现与第一个双向数据绑定示例相同的结果。然而，这种语法不支持使用函数，而较长的双向数据绑定语法则支持。
+
+## 第三方 UI 组件
+
+Valor 为 Angular 提供了 Bootstrap 组件，其主页位于：
+
+[`valor-software.com/ng2-bootstrap/#/`](https://valor-software.com/ng2-bootstrap/#/)
+
+该模块提供了 Twitter Bootstrap 组件以及日期选择器、时间选择器、评分和自动补全（以及其他组件），并且兼容 Bootstrap 版本 3 和版本 4。
+
+或者，你可以在 Angular 应用程序中使用 `ng2-bootstrap`。在 Angular 应用程序中安装和使用 `ng2-bootstrap` 需要三个步骤。首先，使用以下命令安装 `ng2-bootstrap`：
+
+```bash
+npm install ng2-bootstrap --save
+```
+
+其次，将以下代码片段添加到 `index.html` 中以引用 Bootstrap 样式：
+
+```html
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+```
+
+第三，在 `angular-cli.json` 的 `styles` 数组中插入一个新条目：
+
+![Image](img/pg132a.jpg)
+
+如需更多说明和代码示例，请访问以下 URL：
+
+[`github.com/valor-software/ng2-bootstrap`](https://github.com/valor-software/ng2-bootstrap)
+
+本章的下一部分将向你展示如何“以 Angular 方式”处理表单。
+
+## 使用 `FormBuilder` 的 Angular 表单
+
+`FormBuilder` 类和 `FormGroup` 类是 Angular 内置的用于创建表单的类。`FormBuilder` 支持 `control()` 函数用于创建 `FormControl`，以及 `group()` 函数用于创建 `FormGroup`。
+
+![Image](img/disc.jpg)
+
+将随附光盘中的 `FormBuilder` 目录复制到方便的位置。清单 5.3 显示了 `app.component.ts` 的内容，演示了如何在 Angular 应用程序中使用 Angular 表单。
+
+### 清单 5.3：`app.component.ts`
+
+![Image](img/pg132b.jpg)
+
+![Image](img/pg133.jpg)
+
+清单 5.3 包含一个 `<form>` 元素，其中有两个 `<div>` 元素，每个 `<div>` 包含一个 `<input>` 元素。第一个 `<input>` 元素用于新用户的名字，第二个 `<input>` 元素用于新用户的姓氏。
+
+在清单 5.3 中，`FormBuilder` 被注入到构造函数中，该构造函数创建了一个 `FormBuilder` 实例，并赋值给构造函数中的 `fb` 变量。接着，通过调用 `group()` 方法初始化 `myForm`，该方法接受一个键值对对象。在此例中，`fname` 和 `lname` 是键，它们都作为 `<input>` 元素出现在模板属性中。这些键的值是可选的初始值。
+
+显然，你可以在 `group()` 方法中添加许多其他属性（例如地址相关字段）。此外，你可以为每个新实体添加不同的表单。例如，你可以为 `Customer`、`PurchaseOrder` 和 `LineItems` 创建单独的表单。
+
+## Angular 响应式表单
+
+![Image](img/disc.jpg)
+
+将随附光盘中的 `ReactiveForm` 目录复制到方便的位置。清单 5.4 显示了 `app.component.ts` 的内容，演示了如何在 Angular 应用程序中定义响应式 Angular 表单。
+
+### 清单 5.4：`app.component.ts`
+
+![Image](img/pg134.jpg)
+
+![Image](img/pg135a.jpg)
+
+清单 5.4 包含常见的导入语句。注意变量 `userForm`（类型为 `FormBuilder`）是如何在构造函数中初始化的。除了两个文本字段外，`userForm` 还包含 `address` 元素，其类型也是 `FormBuilder`。
+
+清单 5.5 显示了 `app.module.html` 的内容，其中包含一个 Angular 表单，该表单包含与 `userForm` 变量中的字段相对应的 `<input>` 元素。
+
+### 清单 5.5：`app.component.html`
+
+![Image](img/pg135b.jpg)
+
+![Image](img/pg136a.jpg)
+
+清单 5.5 包含非常简单的 HTML 标记，允许用户更改每个输入字段的默认值。
+
+清单 5.6 显示了 `app.module.ts` 的更新内容（以粗体显示）。
+
+### 清单 5.6：`app.module.ts`
+
+![Image](img/pg136b.jpg)
+
+
+
+清单 5.6 包含一行新代码：导入 `ReactiveFormsModule` 的语句（可与 `FormsModule` 的导入语句合并），该模块也在 `imports` 属性中被引用。
+
+## `FormGroup` 与 `FormArray`
+
+如你所知，`FormGroup` 将 `FormControl` 元素的值聚合到一个对象中，其中控件名称作为键。Angular 还支持 `FormArray`（`FormGroup` 的一种“变体”），它将 `FormControl` 元素的值聚合到一个数组中。
+
+`FormGroup` 数据序列化为对象，而 `FormArray` 数据序列化为数组。如果你不知道给定组中有多少个控件，请考虑使用 `FormArray`（否则使用 `FormGroup`）。以下链接包含使用 `FormArray` 的示例：
+
+[`alligator.io/angular/reactive-forms-formarray-dynamic-fields/`](https://alligator.io/angular/reactive-forms-formarray-dynamic-fields/)
+
+## Angular 中的其他表单特性
+
+上一节让你初步了解了 Angular 表单的模块化风格，本小节将简要介绍 Angular 中其他与表单相关的特性，例如：
+
+![Image](img/greybox.jpg)表单验证
+
+![Image](img/greybox.jpg)自定义验证器
+
+![Image](img/greybox.jpg)嵌套表单
+
+![Image](img/greybox.jpg)动态表单
+
+![Image](img/greybox.jpg)模板驱动表单
+
+验证器允许你对表单字段执行验证，例如指定必填字段以及字段的最小和最大长度。你还可以指定字段必须匹配的正则表达式，这对于邮政编码、电子邮件地址等非常有用。或者，你也可以通过编程方式指定验证器。
+
+Angular 表单还提供了事件监听器，用于检测与表单状态相关的各种事件，如下面的代码片段所示：
+
+```
+{{myform.form.touched}}
+{{myform.form.untouched}}
+{{myform.form.pristine}}
+{{myform.form.dirty}}
+{{myform.form.valid}}
+{{myform.form.invalid}}
+```
+
+例如，如果有一个或多个表单字段无效，则会显示以下 `<span>` 元素：
+
+```
+<span *ngIf="!myform.form.valid">表单无效</span>
+```
+
+你还可以使用 `*ngIf` 指令显示错误消息，以显示特定字段的状态，如下所示：
+
+![Image](img/pg137.jpg)
+
+![Image](img/pg138.jpg)
+
+你可以在此处找到动态 Angular 表单的示例：
+
+[`angular.io/docs/ts/latest/cookbook/dynamic-form.html`](https://angular.io/docs/ts/latest/cookbook/dynamic-form.html)
+
+你可以在此处找到模板驱动 Angular 表单的示例：
+
+[`toddmotto.com/angular-2-forms-template-driven`](https://toddmotto.com/angular-2-forms-template-driven)
+
+对于字段相关错误消息的样式效果，可以考虑使用 `ng2-bootstrap` 或 Bootstrap（下一节将简要讨论），而不是使用纯层叠样式表（CSS）。
+
+## Angular 表单与 Bootstrap 4（可选）
+
+尽管 Bootstrap 是 Angular 的外部库，但你很可能希望为 Angular 应用程序添加一些样式效果，尤其是当它们包含包含许多控件的 Angular 表单时。例如，前面章节中的 `ReactiveForm` 应用程序提供了非常朴素的用户界面，而 Bootstrap 可以帮助你极大地改善其外观。
+
+![Image](img/disc.jpg)
+
+然而，你并不局限于 Bootstrap，因此本节仅向你展示一些使用 Bootstrap 非常容易创建的视觉效果。如果你想查看相应的代码，请将随附光盘中的 `FormBootstrap4` 目录复制到一个方便的位置，并查看 `app.component.ts` 的内容。
+
+图 5.1 显示了启动 `FormBootstrap4` 应用程序后的输出，该应用程序展示了一个表单和带有各种颜色的按钮。
+
+至此，本章关于 Angular 表单的部分结束。下一节将讨论 Angular 管道，它提供了 Angular 应用程序中的实用功能。
+
+## 在 Angular 中使用管道
+
+Angular 支持一种称为管道（类似于 Unix 管道命令“|”）的功能，它允许你根据条件逻辑（由你指定）过滤数据。Angular 支持内置管道、异步管道以及自定义管道。接下来的两节将展示一些内置管道的示例，随后介绍异步管道。另外单独一节将展示如何定义自定义 Angular 管道。
+
+![Image](img/pg139.jpg)
+
+***图 5.1*** 一个使用 Bootstrap 4 的 Angular 应用程序。
+
+### 使用内置管道
+
+Angular 支持多种内置管道，例如 `DatePipe`、`UpperCasePipe`、`LowerCasePipe`、`CurrencyPipe` 和 `PercentPipe`。这些名称直观的管道提供了你所期望的功能：`DatePipe` 处理日期值，`UpperCasePipe` 将字符串转换为大写，等等。
+
+作为一个简单示例，假设变量 `food` 的值为 pizza。那么以下代码片段将显示字符串 PIZZA：
+
+`<p>I eat too much {{ food | UppercasePipe }} </p>`
+
+你还可以为某些 Angular 管道设置参数，示例如下：
+
+`<p>My brother's birthday is {{ birthday | date:"MM/dd/yy" }} </p>`
+
+事实上，你甚至可以链式使用管道，如下所示：
+
+`My brother's birthday is {{ birthday | date | uppercase}}`
+
+在上面的代码片段中，`birthday` 是一个自定义管道（由你编写）。再举一个例子，假设一个 Angular 应用程序包含变量 `employees`，它是一个基于 JSON 的数组。你可以通过以下代码片段显示该数组的内容：
+
+`<div>{{employees | json }}</div>`
+
+### `AsyncPipe`
+
+Angular 的 `AsyncPipe` 接受一个 `Promise` 或 `Observable` 作为输入，并自动订阅该输入，最终返回发出的值。此外，`AsyncPipe` 是有状态的：该管道会保持对输入 `Observable` 的订阅，并在值到达时持续传递。
+
+以下代码块展示了如何显示股票报价，其中变量 `quotes$` 是一个 `Observable`：
+
+![Image](img/pg140.jpg)
+
+请记住，`AsyncPipe` 有两个优点。首先，`AsyncPipe` 减少了样板代码。其次，无需手动订阅或取消订阅 `Observable`（后者有助于避免内存泄漏）。
+
+另一点：Angular 不提供用于过滤或排序列表的管道（即没有 `FilterPipe` 或 `OrderByPipe`），因为这两者都可能消耗大量计算资源，从而对应用程序的感知性能产生不利影响。
+
+下一节的代码示例将展示如何创建一个自定义管道，该管道根据自定义代码中定义的条件逻辑显示过滤后的用户列表。
+
+### 创建自定义 Angular 管道
+
+![Image](img/disc.jpg)
+
+将随附光盘中的 `SimplePipe` 目录复制到一个方便的位置。清单 5.7 显示了 `app.component.ts` 的内容，该文件演示了如何在 Angular 应用程序中定义和使用自定义管道，以显示硬编码用户列表的子集。
+
+***清单 5.7: `app.component.ts`***
+
+![Image](img/pg141.jpg)
+
+![Image](img/pg142a.jpg)
+
+清单 5.7 引用了自定义组件 `User` 和自定义组件 `MyPipe`，其中后者在 `pipes` 属性的值数组中指定。`template` 属性显示两个无序的用户名列表。第一个列表显示完整列表，当用户（用鼠标）悬停在第一个列表中的某个用户上时，通过 `mouseEvent()` 方法（在 `AppComponent` 类中定义）中的代码将当前用户设置为该用户。请注意，`AppComponent` 类中的构造函数使用一组用户初始化了 `userList` 数组，每个用户都是自定义组件 `User` 的一个实例。
+
+第二个列表根据自定义管道 `MyPipe` 中的条件逻辑显示过滤后的用户列表。清单 5.8 显示了 `pipe.component.ts` 的内容，该文件定义了清单 5.7 中引用的管道 `MyPipe`。
+
+***清单 5.8: `pipe.component.ts`***
+
+![Image](img/pg142b.jpg)
+
+![Image](img/pg143a.jpg)
+
+清单 5.8 包含 `MyPipe` 类，其中包含 `transform()` 方法。这里给出了三个定义管道行为的示例，第一个示例返回名字以大写字母 J 开头的用户（虽然有些刻意，但足以说明管道相关功能）。
+
+清单 5.9 显示了用于创建 `User` 实例的自定义组件 `user.component.ts` 的内容，该组件也通过 `app.component.ts` 中的 `import` 语句引用。
+
+***清单 5.9: `user.component.ts`***
+
+![Image](img/pg143b.jpg)
+
+清单 5.9 的内容很简单：有一个 `User` 类，包含字段 `fname` 和 `lname`，分别表示每个新用户的名字和姓氏。
+
+最后，我们需要更新 `app.module.ts` 的内容，如清单 5.10 所示，其中修改的内容以粗体显示。
+
+***清单 5.10: `app.module.ts`***
+
+![Image](img/pg143c.jpg)
+
+![Image](img/pg144a.jpg)
+
+如你所见，清单 5.10 包含两个新的 `import` 语句，以便在 `declarations` 属性中引用自定义组件 `MyPipe` 和 `User`。
+
+启动应用程序，稍后你将在浏览器会话中看到以下内容：
+
+完整用户列表：
+
+![Image](img/greybox.jpg)Jane-Smith
+
+![Image](img/greybox.jpg)John-Stone
+
+![Image](img/greybox.jpg)Dave-Jones
+
+![Image](img/greybox.jpg)Rick-Heard
+
+过滤后的用户列表：
+
+![Image](img/greybox.jpg)Jane-Smith
+
+![Image](img/greybox.jpg)John-Stone
+
+图 5.2 显示了启动此 Angular 应用程序并根据名字以大写字母 J 开头的用户进行过滤后的输出。
+
+![Image](img/pg144b.jpg)
+
+***图 5.2*** 通过 Angular 管道过滤后的用户列表。
+
+现在你已经了解了如何在 Angular 中定义基本管道，你可以尝试使用自定义管道来异步接收数据。当你需要在数据更新后显示数据（例如列表或表格）而无需“轮询”数据源时，这种功能非常有用。
+
+有关 Angular 管道的更多信息，请访问：
+
+[`angular.io/docs/ts/latest/guide/pipes.html`](https://angular.io/docs/ts/latest/guide/pipes.html)
+
+至此，本章关于 Angular 管道的部分结束。下一节将讨论 Angular 应用程序中的服务。
+
+## 什么是 Angular 服务？
+
+有时，Web 应用程序的前端包含表示逻辑和一些业务逻辑。Angular 组件构成表示层，而服务属于业务逻辑层。定义 Angular 服务时应使其与表示层解耦。
+
+Angular 服务是实现某些业务逻辑的类，其设计目的是可以被组件、模型和其他服务使用。换句话说，服务可以作为应用程序其他部分的提供者。
+
+由于 Angular 中的依赖注入（DI）机制，服务可以在 Angular 应用程序的其他部分被调用。此外，Angular 确保服务是单例的，这意味着每个服务消费者都将访问同一个服务类实例。
+
+下面展示了一个 Angular 自定义服务的示例：
+
+![Image](img/pg145.jpg)
+
+简单的服务 `UpperCaseService` 提供了一个方法，该方法接受一个字符串作为参数，并返回该字符串的大写版本。`@Injectable()` 装饰器是必需的，这样该类才能作为依赖项被注入。虽然这个装饰器并非在所有情况下都是强制性的，但以这种方式标记你的服务是一个好习惯。仅当服务（或类）“接收”注入时，才使用 `@Injectable` 装饰器。
+
+以下是一个 `app.component.ts` 类的示例，它调用了前面服务中的方法：
+
+![Image](img/pg146.jpg)
+
+前面的代码块通过 `import` 语句导入了 `UpperCaseService` 类（以粗体显示），然后将该类的实例注入到 `UpperComponent` 类的构造函数中。接下来，模板属性包含一个带有点击处理器的 `<button>` 元素，该处理器调用前面代码块中定义的 `greet()` 方法。`greet()` 方法显示一个警告框，其内容是在自定义 `UpperCaseService` 类中调用 `upper()` 方法的结果。
+
+## 内置 Angular 服务
+
+Angular 支持各种内置服务，这些服务被组织在不同的模块中。例如，`http` 模块（位于 `@angular/http` 中）包含对涉及常见动词（如 GET、POST、PUT 和 DELETE）的 HTTP 请求的支持。你在第 4 章中看到了基于 HTTP 的请求示例。路由模块（位于 `@angular/router` 中）提供路由支持，包括 HTML5 和哈希路由。表单模块（位于 `@angular/forms` 中）提供与表单相关的服务。请查阅 Angular 文档以获取内置服务的完整列表。
+
+## 一个 Angular 服务示例
+
+![Image](img/disc.jpg)
+
+将随附光盘中的 `ServiceExample` 目录复制到一个方便的位置。清单 5.13 显示了 `app.component.ts` 的内容，其中包含一个定义服务的示例。
+
+### 清单 5.13：`app.component.ts`
+
+![Image](img/pg147a.jpg)
+
+清单 5.13 包含一个 `Service` 类，该类前面有 `@Injectable` 装饰器，这使我们能够在清单 5.13 的 `AppComponent` 类的构造函数中注入 `Service` 类的实例。
+
+## 带有 `EventEmitter` 的服务
+
+本节包含一个使用 `EventEmitters` 在组件及其子组件之间进行通信的代码示例。
+
+![Image](img/disc.jpg)
+
+将随附光盘中的 `UserServiceEmitter` 目录复制到一个方便的位置。清单 5.14 显示了 `user.component.ts` 的内容，该文件为单个用户定义了一个自定义组件。
+
+### 清单 5.14：`user.component.ts`
+
+![Image](img/pg147b.jpg)
+
+![Image](img/pg148a.jpg)
+
+清单 5.14 很直接：自定义的 `User` 类和一个带有三个参数的构造函数，这三个参数分别代表用户的名字、姓氏和图像 URL。
+
+清单 5.15 显示了 `user.service.ts` 的内容，该文件创建了一个用户列表，其中每个用户都有名字、姓氏和一个关联的 PNG 文件。
+
+### 清单 5.15：`user.service.ts`
+
+![Image](img/pg148b.jpg)
+
+清单 5.15 导入了自定义组件 `User`（显示在清单 5.16 中），然后定义了自定义组件 `UserService`，它使用 `userList` 数组来跟踪用户。该数组在构造函数中初始化，创建了三个新的 `User` 实例并填充了数据。`getUserList()` 方法执行“服务”，返回 `userList` 数组。
+
+清单 5.16 显示了 `app.component.ts` 的内容，该文件引用了前面两个自定义组件，并在无序列表中渲染用户相关信息。
+
+### 清单 5.16：`app.component.ts`
+
+![Image](img/pg149.jpg)
+
+![Image](img/pg150a.jpg)
+
+清单 5.16 包含一个模板属性，用于显示当前用户列表（即在清单 5.15 的构造函数中初始化的三个用户）。注意显示用户列表中每个用户信息的语法：
+
+`USER {{i+1}}: {{user.fname}}-{{user.lname}}`
+
+`<img class="user-image" [src]="user.imageUrl" (mouseenter)="mouseEnter(user)" width="50" height="50">`
+
+当用户将鼠标移到显示的列表上时，会调用 `mouseEvent()` 方法，将 `currentUser` 设置为指向当前用户。此外，当用户将鼠标移到其中一张图片上时，会调用 `mouseEnter()` 方法，该方法通过 `console.log()` 显示一条消息，并显示一个警告框。
+
+清单 5.17 显示了 `app.module.ts` 的内容，该文件引用了自定义组件和自定义服务。
+
+### 清单 5.17：`app.module.ts`
+
+![Image](img/pg150b.jpg)
+
+![Image](img/pg151a.jpg)
+
+
+
+清单 5.17 的内容与第 2 章中包含 `schemas` 属性的示例基本相同。以粗体显示的行是本节代码示例所需的修改。
+
+## 显示 GitHub 用户数据
+
+本节展示如何从输入字段读取 GitHub 用户名，在 GitHub 中搜索该用户，然后将该用户的一些详细信息附加到列表中。
+
+![Image](img/disc.jpg)
+
+将随附光盘中的 `GithubUsersForm` 目录复制到一个方便的位置。清单 5.18 显示了 `app.component.ts` 的内容，该文件说明了如何发出 HTTP GET 请求以检索有关 GitHub 用户的信息。
+
+### 清单 5.18：app.component.ts
+
+![Image](img/pg151b.jpg)
+
+![Image](img/pg152.jpg)
+
+![Image](img/pg153.jpg)
+
+清单 5.18 包含常见的 `import` 语句，后面跟着一个 `@Component` 装饰器，其中包含常见的 `selector` 属性和一个内容丰富的模板属性。
+
+模板属性由一个顶级 `<div>` 元素组成，该元素包含一个 `<form>` 元素和另一个 `<div>` 元素。`<form>` 元素包含一个 `<input>` 元素，用户可以在其中输入 GitHub 用户名，而 `<div>` 元素包含一个 `<ul>` 元素，该元素进而渲染当前用户列表。注意，`<ul>` 元素中的每个 `<li>` 元素通过将当前用户设置为用户鼠标高亮显示的元素来处理 `mouseover` 事件。
+
+清单 5.18 的下一部分是导出类 `AppComponent` 的定义，它初始化了一些实例变量，然后是一个构造函数，该构造函数用两个硬编码的用户初始化了 `users` 数组。接下来，`currUser()` 方法“指向”用户鼠标高亮显示的用户。这个功能不是必需的，但如果你需要跟踪当前高亮显示的用户，它也是可用的。
+
+`findGithubUser()` 方法在 `<input>` 元素为空时显示一个警告框（这可以防止冗余调用 `http()` 方法）。如果在 `<input>` 元素中输入了用户，代码会向 GitHub 网站发出 HTTP GET 请求，并将新用户（作为 `UserComponent` 类的实例）追加到 `users` 数组中。此外，如果没有与输入字符串匹配的 GitHub 用户，则会显示一个警告框。
+
+另一个小而重要的细节是以下代码片段，它跟踪用户指定的输入字符串：
+
+`this.guserStr = guser.value;`
+
+上述代码片段是必需的，因为在调用 `get()` 方法内部会发生上下文变化，从而丢失对 `guser` 参数的引用。
+
+清单 5.19 显示了 `user.component.ts` 的内容，其中包含三个字符串，用于跟踪三个与用户相关的字段。
+
+### 清单 5.19：user.component.ts
+
+![Image](img/pg154.jpg)
+
+清单 5.19 包含了字符串属性 `field1`、`field2` 和 `field3`，用于跟踪基于 JSON 的 GitHub 用户信息字符串中的三个属性。`UserComponent` 类中的属性名称是通用的，这样你就可以存储 JSON 字符串中的不同属性，例如 `followers`、`following` 和 `created_at`。
+
+现在你已经有了一个起点，可以显示关于用户的更多详细信息，并且可以通过使用 Bootstrap 或其他 UI 相关布局工具包来改进显示效果。
+
+图 5.3 展示了启动这个 Angular 应用并添加 GitHub 用户信息后的输出。需要注意的一点是，当前示例允许重复（防止重复的代码留作练习）。
+
+![Image](img/pg155a.jpg)
+
+*图 5.3* 在列表中搜索并显示 GitHub 用户。
+
+## 其他与服务相关的用例
+
+正如你在上一节中所看到的，服务对于获取外部数据非常有用。此外，在 Angular 应用中还有其他涉及共享数据和服务的情况。特别是，一个应用可能需要服务类的多个实例，而另一个应用可能需要强制使用服务类的单个实例。还有一种情况涉及在 Angular 应用的组件之间共享数据。
+
+以下小节简要讨论了这三种场景，它们基于一个非常简单的 `UserService` 类，定义如下：
+
+![Image](img/pg155b.jpg)
+
+### 多个服务实例
+
+假设 `UserService`、`MyComponent1` 和 `MyComponent2` 分别定义在 TypeScript 文件 `user.service.ts`、`component1.ts` 和 `component2.ts` 中。如果你需要在每个组件中使用 `UserService` 类的不同实例，可以在它们的构造函数中注入这个类，如下所示：
+
+![Image](img/pg156.jpg)
+
+在上述代码中，`MyComponent1` 中的 `UserService` 类实例与 `MyComponent2` 中的 `UserService` 类实例是不同的。
+
+### 单个服务实例
+
+考虑这样一种情况：两个 Angular 组件必须共享 `UserService` 类的同一个实例。为简单起见，假设这两个组件是根组件的子组件。在这种情况下，执行以下步骤序列：
+
+1. 创建一个新的服务组件（`ng g s service`）。
+2. 在 `app.module.ts` 的 `providers` 数组中包含 `UserService`。
+3. 在 `service.component.ts` 中导入 `MyComponent1` 和 `MyComponent2`。
+4. 从 `MyComponent1` 的 `providers` 数组中移除 `UserService` 类。
+5. 从 `MyComponent2` 的 `providers` 数组中移除 `UserService` 类。
+
+步骤 2 确保 `UserService` 类对此 Angular 应用中的*所有*组件都可用，并且整个应用中只有一个 `UserService` 类的实例。
+
+### 服务与组件间通信
+
+将新用户从 `MyComponent1` 发送到 `MyComponent2` 需要三个步骤。
+
+步骤 1：在 `UserService` 中定义一个变量 `sendUser`，它是 `EventEmitter` 的一个实例，以及一个 `sendNewUser()` 方法：
+
+![Image](img/pg157a.jpg)
+
+步骤 2：在 `MyComponent1` 中定义一个 `onSend()` 方法，用于向 `MyComponent2` 发送新用户：
+
+![Image](img/pg157b.jpg)
+
+步骤 3：在 `MyComponent2` 中定义一个 `Observable`，用于“监听”从 `MyComponent1` 发出的数据：
+
+![Image](img/pg157c.jpg)
+
+另一种总结上述代码块中逻辑流程的方式如下：
+
+![Image](img/greybox.jpg) 用户点击按钮添加新用户。
+
+![Image](img/greybox.jpg) `UserService` 实例将数据发送给 `Component1`。
+
+![Image](img/greybox.jpg) `Component1` 实例“发出”新用户。
+
+![Image](img/greybox.jpg) `Component2` 实例通过 `Observable`“监听”新用户。
+
+### 将服务注入到服务中
+
+你已经了解了如何使用 DI 通过构造函数将服务注入到组件中。你也可以将服务注入到其他服务中。为此，在“被注入的服务”中使用 `@Injectable` 装饰器：
+
+```typescript
+@Injectable
+
+@Component({
+
+})
+
+export MyService(…)
+```
+
+> **注意**
+>
+> *Angular 中的 DI 仅适用于类定义中包含适当装饰器的类。*
+
+## 总结
+
+本章向你展示了如何创建包含 HTML5 表单以及包含 Angular 控件和 FormGroups 的 Angular 应用。你还了解了如何将基于表单的数据保存到本地存储中。接下来，你学习了 Angular 管道，并附有一个示例展示了如何实现此功能。
+
+你还学习了 Angular 服务，并看到了一个说明如何使用服务的示例。最后，你学习了如何使用 `Http` 类的 `http()` 方法（返回一个 `Observable`）来检索任何 GitHub 用户的数据，并将该数据的一部分显示在用户列表中。
+
+# 第 6 章
+
+## ANGULAR 与 EXPRESS
+
+本章包含与通常被称为“Node 栈”的服务器端技术协同工作的 Angular 应用。你将学习如何创建在服务器上使用 Express 和 NoSQL 数据库 Mongo 的 Angular 应用。本章还将介绍微服务。然而，本章不涵盖 Node 本身的入门级材料，这是本章的先决条件（网上有许多教程可供参考）。
+
+第一部分展示了如何设置一个简单的基于 JavaScript 对象表示法（JSON）的服务器（称为 `json-server`），它可以与许多客户端应用（不仅仅是 Angular）一起使用。第二部分介绍了基本的基于 Express 的应用，这些应用可以处理客户端数据请求。
+
+第三部分稍微偏离主题，介绍了微服务，以及一个包含 `forkJoin()` 方法的 Angular 应用，用于模拟一个非常简单的微服务示例。服务器端代码由三个 Express 应用组成，它们监听三个不同端口上的客户端请求。
+
+第四部分结合了一个基于 Express 的应用和一个向 Express 应用发出数据请求的 Angular 应用。数据请求从 Mongo 实例中检索一组用户，然后将该用户列表返回给 Angular 应用。此外，此代码示例使用了你在第 4 章中看到的技术，将服务器返回的基于 JSON 的数据转换为 Promise，再转换为 Observable，然后在 Angular 应用内部进行处理。
+
+### 一个极简的 Node 应用
+
+在第 4 章中，你学习了如何创建能够使用 `json-server` 向文件服务器发出 HTTP GET 和 HTTP POST 请求的 Angular 应用。使用 `json-server` 的优势在于“零配置”，这对于创建原型和演示非常方便。在本节中，你将看到如何使用 Express 创建一个极简的代码示例，它只需要文件 `server.js`。
+
+![Image](img/disc.jpg)
+
+将配套光盘中的 `SimpleNode` 目录复制到一个方便的位置。该目录包含本节的所有文件。但是，如果你想自己执行这些步骤，下一节将解释如何操作。如果你想使用现有代码，请跳过下面的设置部分。
+
+#### 设置 Node 环境（可选）
+
+在机器上安装 NodeJS 后，导航到一个方便的目录并输入以下命令：
+
+```bash
+npm init –y
+```
+
+第二步是使用以下命令安装 Express（我们在下一节中需要它）：
+
+```bash
+npm install express –save
+```
+
+上述命令执行完毕后，当前目录将包含文件 `package.json`，其内容类似于以下内容：
+
+![Image](img/pg160.jpg)
+
+#### 创建一个 Express 应用
+
+![Image](img/disc.jpg)
+
+如果你还没有这样做，请将随附光盘中的 `SimpleNode` 目录复制到一个方便的位置。清单 6.1 显示了 `server.js` 的内容，这是一个基于 Express 的简单应用程序。
+
+### 清单 6.1：server.js
+
+![Image](img/pg161.jpg)
+
+清单 6.1 包含一条 `require` 语句，然后是一段初始化 `app` 变量的代码片段。定义了两个路由：第一个路由是默认路由 `/`，第二个路由是 `/pasta`，当用户导航到 URL `localhost:3000/pasta` 时，它会显示相应的消息。
+
+## 启动 Express 应用程序
+
+在启动应用程序之前，你必须使用以下命令安装 Node 相关的依赖项：
+
+```bash
+npm install
+```
+
+当上一步完成后，调用以下命令：
+
+```bash
+npm start
+```
+
+该命令将显示以下输出：
+
+```text
+Listening on port 3000
+```
+
+现在，启动一个浏览器会话并导航到 `localhost:3000/pasta`，如果一切设置正确，你将在浏览器中看到字符串 hello pasta。
+
+## 使用 Angular 和 Express 的应用程序
+
+在第 4 章中，你了解了如何使用 `Observable` 类中的 `forkJoin()` 方法并发发出多个 HTTP 请求，然后聚合这些请求的结果。本节将向你展示如何用基于 Express 的应用程序替换第 4 章中的 `json-server` 文件 `server`，以及如何聚合来自该 Express 应用程序的多个响应。（在后面的章节中，你将看到如何从多个基于 Express 的应用程序提供数据。）
+
+代码示例分为两部分：第一部分展示如何创建一个基于 Node 的应用程序，该应用程序返回关于单个学生的 JSON 格式数据（基于发送给服务器的学生 ID）。第二部分包含一个 Angular 应用程序，它使用 `forkJoin()` 方法向服务器发送多个并发请求。
+
+因此，你需要两个命令 shell 来执行以下操作：
+
+- 调用 `node server.js`（从 `NodeForkJoin/server` 目录）。
+- 调用 `ng serve`（从 `NodeForkJoin/src` 目录）。
+
+## 启动服务器和 Angular 应用程序
+
+![Image](img/disc.jpg)
+
+将随附光盘中名为 `NodeForkJoin` 的目录复制到一个方便的位置。让我们先启动基于 Express 的应用程序，然后再启动 Angular 应用程序。
+
+导航到包含 `package.json`（将在下一节讨论）和 `server.js` 文件的 `src/server` 目录。执行以下步骤来安装必要的代码：
+
+```bash
+npm install
+```
+
+现在使用以下命令启动基于 Express 的应用程序：
+
+```bash
+node server.js
+```
+
+该命令显示以下输出：
+
+```text
+Listening on port 3000
+```
+
+接下来，通过打开另一个命令 shell，导航到 `NodeForkJoin/src` 目录，并输入以下命令来启动 Angular 应用程序：
+
+```bash
+ng serve
+```
+
+导航到 URL `localhost:4200`；如果一切正常，你将看到以下文本：
+
+**Angular HTTP 和 Observables**
+
+学生列表
+
+- ![Image](img/greybox.jpg) John Smith
+- ![Image](img/greybox.jpg) Dave Stone
+- ![Image](img/greybox.jpg) Miko Mason
+
+现在 Angular 应用程序已正常运行，接下来的两节将检查基于 Express 的应用程序的 `package.json` 和 `server.js` 文件，然后是一节讨论 Angular 代码的内容。
+
+## 服务器代码：package.json
+
+清单 6.2 显示了 `package.json` 的内容，其中包含本节 Node 应用程序所需的一个依赖项。
+
+### 清单 6.2：package.json
+
+![Image](img/pg163.jpg)
+
+## 服务器代码：server.js
+
+清单 6.3 显示了 `server.js` 的内容，这是本节的 Node 应用程序。
+
+### 清单 6.3：server.js
+
+![Image](img/pg164.jpg)
+
+清单 6.3 包含一个 `students` 数组，其中包含 JSON 格式的数据，以便于使用。在实际应用程序中，你会从 Mongo 数据库（或其他数据存储）中检索此类数据。
+
+清单 6.3 包含三个路由，第一个是默认路由 `/`，它返回一条 hello world 消息。第二个路由处理包含 `id` 值的请求，这留作你的练习。
+
+第三个路由也支持一个 `id` 参数，该参数用作 `students` 数组的索引。与指定 `id` 关联的用户信息通过以下代码片段返回给客户端：
+
+```javascript
+res.send(students[studentid]);
+```
+
+如你所见，清单 6.3 处理单个请求。下一节将展示如何发出多个并发请求来检索学生相关信息。
+
+## Angular 代码
+
+清单 6.4 显示了 `app.component.ts` 的内容，它查询基于 Express 的服务器以获取多个学生，然后显示这些学生的名字和姓氏。
+
+### 清单 6.4：app.component.ts
+
+![Image](img/pg165.jpg)
+
+![Image](img/pg166.jpg)
+
+清单 6.4 包含一个模板属性，该属性通过遍历 `students` 数组来显示学生相关信息的无序列表。清单 6.4 中的 `AppComponent` 类将 `students` 初始化为空数组，将 `studentids` 初始化为包含四个整数的数组。`AppComponent` 类还包含一个构造函数，用于初始化 `Http` 类的实例。
+
+注意 `ngOnInit()` 生命周期方法。此方法调用 `getStudents()` 方法，该方法也在 `AppComponent` 类中定义。
+
+接下来，`getStudents()` 方法调用 `Observable` 类的 `forkJoin` 方法来聚合发出多个并发 HTTP GET 请求的结果。这些多个请求是通过使用 `map()` 方法遍历 `studentids` 数组中的值来发出的。`getStudents()` 方法中的最后一行代码调用 `subscribe()` 方法，用从服务器检索到的数据初始化 `students` 数组的内容。在此示例中，`studentids` 数组包含三个值，因此 `students` 数组将包含三个学生的 JSON 格式数据。
+
+下一节包含本节代码示例的通用版本：你将学习如何创建一个 Angular 应用程序，该应用程序向多个端点发出 HTTP 请求，以检索并聚合来自这些端点的数据。
+
+## 并发请求与 Angular（版本 2）
+
+
+
+上一节的代码示例创建了一个 Node 应用程序，该应用程序通过`forkJoin()`方法为 Angular 应用程序提供数据请求服务。此方法发出多个并发请求，然后聚合响应。此示例还启动了监听三个不同端口号（4500、5500 和 6500）的 Express 应用程序。
+
+![Image](img/disc.jpg)
+
+将随附光盘中的`NodeForkJoin2`目录复制到一个方便的位置，以便你可以查看以下小节中讨论的代码。
+
+## 如何启动 Express 服务器代码
+
+`NodeForkJoin2`目录包含子目录`server`，其中包含一个配置文件`package.json`、四个简单的 Express 应用程序以及一个简单的 shell 脚本（为方便起见），用于启动将为 Angular 应用程序提供数据的 Express 应用程序。`server`子目录中的文件列表如下：
+
+- `package.json`
+- `server.js`
+- `server4500.js`
+- `server5500.js`
+- `server6500.js`
+- `start.sh`
+
+文件`server.js`是一个通用的 Express 应用程序，它响应来自给定端口号的请求。此外，`server.js`被复制到三个 JS 文件`server4500.js`、`server5500.js`和`server6500.js`。请注意，这些 JS 文件中的每一个都从其各自的端口号提供数据（仅此而已）。因此，文件`server4500.js`、`server5500.js`和`server6500.js`将分别“监听”端口 4500、5500 和 6500。
+
+导航到`server`子目录（如上一节所述），并启动以下命令来安装 Express 相关代码：
+
+```bash
+npm install
+```
+
+shell 脚本`start.sh`包含启动三个 Express 应用程序的 node 命令，其内容如下所示：
+
+```bash
+node server4500.js &
+node server5500.js &
+node server6500.js &
+```
+
+你可以手动调用上述三个命令，或者调用以下命令在后台启动三个 Express 应用：
+
+```bash
+./start.sh
+```
+
+启动浏览器，分别访问上述三个端口号（在 localhost 上），确认它们都能正确响应。
+
+至此，你已经准备好查看本应用的 Angular 代码，下一节将对此进行讨论。
+
+## Angular 代码
+
+清单 6.5 显示了文件`app.component.ts`的内容，该文件从你在上一节启动的三个 Express 应用中请求数据。
+
+### 清单 6.5：`app.component.ts`
+
+![Image](img/pg168.jpg)
+
+![Image](img/pg169.jpg)
+
+清单 6.5 与清单 6.4 类似，修改后的代码以粗体显示（原始代码保留以供比较）。关键思想是为每个请求指定一个包含端口号和学生 ID 的 URL。清单 6.5 中`getStudents()`方法内修改后的`forkJoin()`命令展示了如何构造每个 URL 以发出 HTTP 请求。
+
+现在考虑以下泛化：指定多个包含你想要在浏览器中聚合的信息的外部网页，这是结合 Angular 和微服务的一个示例。
+
+本章接下来的部分包含一些 Angular 应用示例，这些示例向基于 Express 的应用发出请求，这些应用使用 MongoDB 作为数据存储以及 Jade 模板。如果你不熟悉 Jade，可以用 EJS 或其他你偏好的模板引擎替换 Jade。尽管 Jade 已被弃用并由 Pug 取代，但你仍会发现大量使用 Jade 的在线代码示例，本节将帮助你理解这些代码示例。另外，如果你理解了如何使用 Jade（许多人认为它有些困难），那么其他模板引擎对你来说可能更容易学习。
+
+如果你不熟悉 MongoDB，请阅读一篇介绍 MongoDB 的在线教程。然后你就可以进入下一节，该节将展示如何设置一个连接到 MongoDB 数据库实例的基于 Express 的应用。
+
+## 使用 MongoDB 的 Express 应用（第一部分）
+
+本节（第一部分）解释如何设置一个使用 Mongo 的 Express 应用，随后一节（第二部分）将讨论 Express 应用中的文件。
+
+![Image](img/disc.jpg)
+
+在尝试启动本节中的应用之前，请确保你的机器上已安装 Mongo、`node`和`nodemon`。接下来，将目录`ExpressMongoJade`从随附光盘复制到一个方便的位置。该目录包含服务器端代码，用于处理来自 Angular 应用`NG2NodeApp`的请求，该应用将在本节后面讨论。
+
+以下是启动现有访问 MongoDB 数据库中数据的 Express 应用所需执行的步骤：
+
+1. 在你的机器上安装 Mongo。
+2. 启动`mongod`。
+3. 执行`cd ExpressMongoJade`。
+4. 执行`mongo load-newusers.js`。
+5. 执行`npm install`。
+6. 执行`npm start`。
+7. 访问`localhost:3000`。
+
+安装 Mongo 后，将`bin`目录添加到命令 shell 的`PATH`环境变量中，然后启动`mongod`守护进程：
+
+```bash
+mongod
+```
+
+你也可以为数据文件指定不同的目录：
+
+```bash
+mongod --dbpath <目录的完整路径>
+```
+
+第 4 步用种子数据填充 Mongo 数据库。如果你还没有`node_modules`目录（示例代码中存在），则需要执行第 5 步；第 6 步通过执行脚本`bin/www`启动 Express 应用。
+
+如果一切顺利，你将在浏览器会话中看到以下文本：
+
+Express
+
+Welcome to Express
+
+URL`localhost:3000/userlist`显示 Mongo 数据库中的当前用户列表，示例如下：
+
+用户列表
+
+![Image](img/greybox.jpg) 0 Janice | Smith
+
+![Image](img/greybox.jpg) 1 Steven | Stone
+
+![Image](img/greybox.jpg) 2 Yuki | Tanaka
+
+![Image](img/greybox.jpg) 3 Hideki | Hiura
+
+![Image](img/greybox.jpg) 4 Himiko | Yamamoto
+
+现在让我们看看`package.json`的内容（显示在清单 6.6 中），它列出了该应用的所有依赖项。
+
+### 清单 6.6：`package.json`
+
+![Image](img/pg171.jpg)
+
+如你所见，清单 6.6 指定了各种 Node 模块，例如`express`、`jade`（一个模板引擎）和`mongo`。请注意，版本号在某些情况下可能会发生变化，你的机器上`node`和`npm`的版本也可能不同。
+
+## 服务器端自定义文件（第二部分）
+
+在深入探讨上一节介绍的项目中与 Angular 相关的各种文件内容之前，我们先简要浏览一些重要文件的名称及其用途。
+
+首先，文件`app.js`（清单 6.7）包含 Node 应用代码。该代码包含中间件、对 Mongo 数据库实例的引用、对`views`目录的引用以及`routes`子目录中的路由定义。你可以通过以下命令启动`app.js`：
+
+```bash
+npm start
+```
+
+每当你发出一个有效的 HTTP GET 请求时，该请求会通过一个三步过程处理：第一步涉及 Express 应用中的相应代码（在`app.js`中定义），该代码作为第二步调用`routes/index.js`中的相应代码块，然后数据作为第三步传递给 Jade 模板。在此过程结束时，将生成一个 HTML 页面并返回给发出初始请求的客户端。
+
+按照惯例，该应用的 Jade 模板位于`views`子目录中。在本例中，Jade 模板包括`userlist.jade`（用于显示所有用户）和`index.jade`（用于显示简单消息）。每个 Jade 模板都会处理从`routes/index.js`中的路由接收到的数据，以填充 Jade 模板。
+
+由于 Jade 模板和数据是动态组合以生成 HTML 网页的，因此应用中不存在与 Jade 模板对应的 HTML 网页。
+
+另一点：匹配`/userlist`的路由是最复杂的路由，因为它首先从 Mongo 数据库中提取所有用户的列表，然后将该用户列表传递给 Jade 模板`views/userlist.jade`。
+
+为了以要点形式总结步骤，逻辑流程如下：
+
+1. 客户端请求到达，由`app.js`处理。
+2. 该请求被“路由”到`routes/index.js`。
+3. 数据被传递给`views`目录中的 Jade 模板。
+4. 生成一个 HTML 网页。
+5. 生成的 HTML 网页返回给客户端。
+
+## `app.js`文件
+
+清单 6.7 显示了用于从 Mongo 数据库检索用户相关数据的基于 Node 的应用的`app.js`内容。
+
+### 清单 6.7：`app.js`
+
+![Image](img/pg172.jpg)
+
+![Image](img/pg173.jpg)
+
+![Image](img/pg174a.jpg)
+
+清单 6.7 中的代码往往让初学者感到特别困惑，部分原因是文档有限（或许还有代码的不直观性）。经过足够多的重复后，你会对这段代码感到熟悉，它在基于 Node 的应用中频繁出现（至少对你来说有一些好消息）。
+
+清单 6.7 的第一部分包含标准的`require`语句，初始化路由（`routes/index.js`）和用户（`routes/users.js`），然后将`app`初始化为一个 Express 应用。清单 6.7 的另一部分设置了中间件，随后是 Mongo 相关的变量，例如`url`（带有默认值）。
+
+## `index.js`文件
+
+清单 6.8 显示了`routes/index.js`的内容，它定义了与用户相关的路由，例如从 Mongo 实例检索用户列表和保存新用户。
+
+### 清单 6.8：`index.js`
+
+![Image](img/pg174b.jpg)
+
+![Image](img/pg175.jpg)
+
+清单 6.8 包含了`router`变量，它管理默认路由和另外两个路由。然而，清单 6.8 中的路由将基于 JSON 的数据传递给位于`views`子目录中的基于 Jade 的模板。命名约定使其变得简单：默认路由将`title`的值传递给模板`views/index.jade`，第二个路由将`title`（不同的值）传递给模板`views/helloworld.jade`。
+
+第二个路由中的代码执行以下步骤序列：
+
+1. 首先，将变量`collection`初始化为对`users`数据库的引用。
+2. 将`userlist`初始化为对`users`数据库中文档的引用。
+3. 将`userlist`变量传递给`views/userlist.jade`模板。
+
+如你所见，在第三个路由中，大量工作已经为你代劳。
+
+请注意，在动态生成发送回浏览器的 HTML 网页的过程中，Jade 模板会被填充各种信息。
+
+回到清单 6.3，你会看到以下代码片段，它指定了 Jade 模板引擎：
+
+```javascript
+app.set('view engine', 'jade');
+```
+
+使用清单 6.4 中的代码定义文件`index.js`的一个好处是，避免了使主要包含初始化代码的`app.js`内容变得杂乱。
+
+为了方便起见，此应用程序包含可选文件`load-newusers.js`，你可以从命令行启动它，以便用一组用户填充数据库。
+
+## `userlist.jade`模板
+
+清单 6.9 显示了`routes/userlist.jade`的内容，它接收用户列表作为输入，用基于用户的数据填充模板。
+
+### 清单 6.9：`userlist.jade`
+
+![Image](img/pg176.jpg)
+
+如果你是 Jade 新手，可能会对清单 6.9 中代码的紧凑性感到惊讶。变量`userlist`（包含一个用户数组）从`routes/index.js`中匹配路由`/userlist`的路由传递进来。`userlist`中的每个用户都是一个基于 JSON 的字符串，包含`fname`属性和`lname`属性。
+
+为了方便起见，以下便捷网站可以将 HTML 转换为 Jade，从而在创建 Jade 模板时提高你的生产力：
+
+[`html2jade.org/`](http://html2jade.org/)
+
+## 启动服务器端应用程序
+
+回顾启动应用程序所需的步骤，你需要启动 Mongo 守护进程并启动 Express 应用程序。具体来说，你需要执行以下两个步骤：
+
+步骤 1：启动 Mongo 守护进程：`mongod`。
+
+步骤 2：启动 Express 应用程序：`npm start`。
+
+另一点：本节中的代码示例是使用`express`命令创建的。如果你想创建自己的基于 Express 的应用程序，需要执行以下两个命令：
+
+```bash
+sudo npm install -g express-generator
+express myexpressappname
+```
+
+你可以使用本节中的文件来填充新的 Express 应用程序，也可以提供自己的自定义内容。
+
+现在你已经完成了本节内容，可以开始使用从 Mongo 数据库访问数据的 Angular 应用程序了，这是下一节的主题。
+
+## 带 Express 的 Angular 应用程序
+
+本节包含一个 Angular 应用程序，它向 Express 应用程序发送数据请求，而 Express 应用程序则从硬编码的值数组中发送数据。如果你想从 Mongo 数据库中检索数据，可以整合`ExpressMongoJade`应用程序中的部分代码。
+
+另一点：此代码示例中的代码并未展示“最佳实践”，而是向你展示了一些可能对你自己的应用程序有用的功能（例如清单 6.10 中`userInfo()`方法中的代码）。
+
+![Image](img/disc.jpg)
+
+现在将目录`NG2NodeApp`从配套光盘复制到一个方便的位置。清单 6.10 中的文件`app.component.ts`与第 4 章中涉及 HTTP GET 请求的 Angular 应用程序非常相似。我们需要对新版本的`app.component.ts`进行非常小的修改，包括指定一个与上一节中`app.js`代码匹配的 URL。
+
+### 清单 6.10：`app.component.ts`
+
+![Image](img/pg177.jpg)
+
+![Image](img/pg178.jpg)
+
+清单 6.10 展示了如何轻松地将 Angular 应用程序中的代码与 NodeJS 应用程序中的服务器端代码分离。注意`*ngFor`代码块如何使用变量`i`来跟踪`firstNames`数组中的当前索引，然后使用同一个变量在`lastNames`数组中查找对应的姓氏。
+
+当用户点击模板属性中的`<button>`元素时，会调用`httpRequest()`方法从 Express 应用程序中检索与学生相关的数据。`httpRequest()`方法完成后，`firstNames`数组和`lastNames`数组会在`userInfo()`方法中被填充。输出如下所示：
+
+![Image](img/greybox.jpg)John ![Image](img/star.jpg) Smith
+
+![Image](img/greybox.jpg)Jane ![Image](img/star.jpg) Jones
+
+![Image](img/greybox.jpg)Dave ![Image](img/star.jpg) Stone
+
+![Image](img/greybox.jpg)Miko ![Image](img/star.jpg) Mason
+
+![Image](img/greybox.jpg)Yuki ![Image](img/star.jpg) Smith
+
+回想一下，Express 应用程序需要绕过 Jade 模板，将基于 JSON 的数据返回给浏览器。清单 6.11 显示了`app.js`（位于`pNG2NodeApp/server`子目录中）的内容，它返回一个硬编码的学生信息数组。
+
+### 清单 6.11：`app.js`
+
+![Image](img/pg179.jpg)
+
+清单 6.11 以`students`数组中的硬编码用户列表开始，以及返回`students`数组内容的`/students`路由。
+
+导航到`NG2NodeApp/server`子目录并调用以下命令：
+
+```bash
+node server.js
+```
+
+接下来，导航到`NG2NodeApp/src`子目录并使用以下命令启动 Angular 应用程序：
+
+```bash
+ng serve
+```
+
+点击`<button>`元素；如果一切设置正确，你将看到以下学生列表：
+
+![Image](img/greybox.jpg)John ![Image](img/star.jpg) Smith
+
+![Image](img/greybox.jpg)Jane ![Image](img/star.jpg) Jones
+
+![Image](img/greybox.jpg)Dave ![Image](img/star.jpg) Stone
+
+![Image](img/greybox.jpg)Miko ![Image](img/star.jpg) Mason
+
+![Image](img/greybox.jpg)Yuki ![Image](img/star.jpg) Smith
+
+下一节概述了检索存储在 Mongo 数据库中的日语文本的步骤。
+
+## Angular 与日语文本（可选）
+
+你可以轻松修改上一节中的代码示例`ExpressMongoJade`，使其适用于日语文本。你需要对此代码示例进行两项修改：
+
+1. 用日语文本填充一个集合（`mongo load-japanese.js`）。
+2. 在`index.js`中定义一个新路由`/japanesejson`。
+
+
+
+清单 6.12 显示了`load-japanese.js`的内容，它用一个简单的英语单词及其日语对应词的字典填充 Mongo 集合。
+
+### 清单 6.12：load-japanese.js
+
+![Image](img/pg180.jpg)
+
+![Image](img/pg181a.jpg)
+
+现在将以下新路由添加到`index.js`中：
+
+![Image](img/pg181b.jpg)
+
+前面的代码块与上一节中修改后的路由非常相似：不是将数据传递给 Jade 模板，而是通过以粗体显示的代码片段直接返回数据。
+
+## Angular Universal
+
+Universal Angular 支持 Angular 的服务器端渲染，原始主页位于此处（但本节未使用）：
+
+[`github.com/angular/universal`](https://github.com/angular/universal)
+
+然而，Angular 核心团队进行了非常广泛的修改，将前面链接中的代码集成到了 Angular 中。Universal Angular 代码已集成到`@angular/platform-server`中。
+
+一个非常基础的涉及 Universal Angular 的示例应用程序可在此处下载：
+
+[`github.com/robwormald/ng-universal-demo/`](https://github.com/robwormald/ng-universal-demo/)
+
+从上述链接下载并解压代码到方便的位置，然后输入以下命令：
+
+```
+npm install
+```
+
+上述命令完成后，启动应用程序：
+
+```
+npm start
+```
+
+导航到 URL `localhost:8000`，你将看到以下简单界面：
+
+通用演示
+
+*首页 懒加载*
+
+首页视图
+
+点击上述任一链接，你将看到一些基本文本显示。
+
+## 服务器文件 main.server.ts
+
+清单 6.13 显示了文件`main.server.js`的内容，该文件在你启动上一节中的 Angular Universal 应用程序时执行。
+
+### 清单 6.13：main.server.js
+
+![Image](img/pg182.jpg)
+
+![Image](img/pg183a.jpg)
+
+清单 6.13 包含了 Angular 代码和 Express 相关代码的导入语句，这些代码在本章第一部分的代码示例中已经熟悉。具体来说，`app`变量被初始化为一个 Express 应用程序，随后是一些中间件设置步骤。定义了两个简单的路由——`/`和`/lazy`——以演示如何处理基于路由的请求。注意，具有多个路由的应用程序可能会将其定义放在单独的文件中（位于单独的子目录中）。
+
+注意，清单 6.13 将`src`目录指定为包含视图相关文件的目录。具体来说，`/lazy`路由被“映射”到文件`index.html`，该文件位于`src`子目录中。
+
+## 网页 index.html
+
+清单 6.14 显示了包含自定义元素`<demo-app>`的网页`index.html`的内容。
+
+### 清单 6.14：index.html
+
+![Image](img/pg183b.jpg)
+
+清单 6.14 很直接：`<body>`元素包含`<demo-app>`自定义元素，这是 Angular 应用程序的顶级元素。
+
+## TypeScript 文件 app.ts
+
+TypeScript 文件`app.ts`包含与路由相关的代码，这在第 5 章中有更详细的讨论。
+
+清单 6.15 显示了`app.ts`文件的内容，该文件也位于`src`子目录中。
+
+### 清单 6.15：app.ts
+
+![Image](img/pg184.jpg)
+
+清单 6.15 包含三个主要部分：`HomeView`类、`AppComponent`类和`AppModule`类（所有这些都被导出）。
+
+`HomeView`类与`home`路由相关联，这是该示例应用程序中两个路由中的第一个。
+
+`AppComponent`类前面有一个`@Component`装饰器，其`selector`属性指定了`<demo-app>`自定义元素。此外，`template`属性包含了两个路由的定义。
+
+最后，`AppModule`类前面有一个`@NgModule`装饰器，其内容通常位于单独的文件中，例如`app.module.ts`。
+
+本质上，Universal Angular 应用程序涉及一个两步过程：使用`npm`启动一个基于 Express 的应用程序，该应用程序包含一个指向`index.html`网页的路由。这个网页包含一个元素，该元素是 Angular 应用程序的根，而后者在 TypeScript 文件中定义。
+
+## 使用微服务（可选）
+
+本节包含对微服务的精简和简化概述。你将了解微服务的一些优点和缺点，然后是一个使用微服务的 Angular 应用程序示例。尽管 Angular 支持微服务（因此这是本章的相关主题），但你可以跳过本节而不会影响连续性。
+
+### 微服务的优点
+
+微服务架构将单体应用分解为一组服务，而不减少原始应用的功能。每个服务通过其暴露的应用程序编程接口（API）可访问。使用微服务简化了开发、维护和增强“单一用途”服务的过程。
+
+其次，微服务允许以独立的方式开发服务。每个新服务可以使用最适合该服务的技术来编写（这意味着当前技术不是强制性的）。
+
+第三个优点是微服务可以独立于其他微服务进行部署。第四，服务可以彼此独立地扩展。
+
+### 微服务的缺点
+
+许多独立微服务的集合可能会产生复杂性。微服务之间的通信需要决定进程间通信的方式。此外，微服务的分布式特性要求处理由于超时和其他原因可能出现的故障。
+
+例如，如果面向事务的微服务与多个数据库交互，那么处理和协调这些事务可能会很复杂。请记住，采用微服务的主要目标之一是减少大型单体应用中可能出现的相互依赖的复杂性。
+
+有些人认为微服务是一种“细粒度的面向服务架构（SOA）”。然而，SOA 需要 Web 服务定义语言，该语言定义服务端点并且是强类型的，而微服务具有非常简单的连接和智能端点。另一个重要区别是 SOA 通常是无状态的，而微服务是有状态的，并将数据和逻辑保持在一起。总的来说，SOA 复杂且重量级，而微服务是更简单、轻量级的独立进程。
+
+## 总结
+
+本章向你展示了如何创建简单的基于 Express 的 Node 应用程序，这些应用程序可以处理来自 Angular 应用程序的请求。你了解了如何使用 NoSQL 数据库 MongoDB 来存储和检索 Web 应用程序的数据。你还学习了如何在不同端口号上启动多个 Express 应用程序，以便为 Angular 应用程序提供数据。然后你看到了微服务的概述，它可以与 Angular 无缝协作。最后，你学习了一些关于 Angular Universal 的基本概念，它涉及 Angular 代码的服务器端渲染。
+
+# 第 7 章：Flux、Redux、GraphQL、Apollo 和 Relay
+
+本章对基于 JavaScript 的技术 Flux、Redux、GraphQL、Apollo 和 Relay 进行了广泛介绍。除了 Apollo（由 Meteor 支持）之外，上述列表中的其他技术均由 Facebook 开发。尽管这些技术用于基于 ReactJS 的 Web 应用程序，但它们也可以用于 Angular 应用程序（因此本章内容）。
+
+由于你可以在不使用本章任何内容的情况下创建 Angular 应用程序，因此主要目的是解释上述技术中的一些概念。此外，本章只有一个完整的代码示例（参见讨论 Apollo 的部分）。尽管网上有各种结合 Angular 和 Redux 的代码示例，但请注意，其中许多是为早期版本的 Angular 编写的，可能需要一些修改才能与 Angular 4.0.0 配合使用。
+
+本章的第一节描述了由 Facebook 设计的 Flux 架构，它有许多实现（包括 Redux 和 Relay）。Flux 架构最初是为开发客户端 Web 应用程序而创建的。由于 Flux 与语言无关，你可以在基于 React 的应用程序、Angular 应用程序等中使用 Flux 模式。注意，你也会看到 Flux 架构被描述为 Flux 模式，或许就像模型-视图-控制器（MVC）也是一种模式一样。
+
+第二节讨论 Redux，这是一个工具包，其目的是将应用程序状态存储在应用程序外部。有趣的是，这种存储应用程序状态的方法有一些优点，你将在本章后面看到。你将看到一个很好的示例，说明如何在 Angular 应用程序中使用 Redux 来跟踪项目。
+
+第三部分描述了 GraphQL，它是一个接收 Relay 请求的 JavaScript 工具包。GraphQL 通过从数据存储（可以是关系型数据存储或 NoSQL 数据存储）中检索匹配的数据来处理这些请求。本部分包含一个使用 GraphQL 的基本 Angular 应用程序。
+
+第四部分讨论了 Apollo，它是客户端 JavaScript，用于向驻留在服务器上的 GraphQL 工具包发送数据请求。由于 Apollo 相对于 Relay 的优势，它最近获得了关注。
+
+需要记住的一点是，中大型 Web 应用程序从 Redux 或 GraphQL 等工具包中获益的程度要大于小型 Web 应用程序（在小型应用中 MobX 可能更合适）。因此，如果你目前正在开发基本的 Web 应用程序，本章的部分内容可能对你来说是可选的。
+
+## 什么是 Flux？
+
+Flux 模式基于其他设计模式（如观察者模式和命令查询职责分离[CQRS]）。Flux 为开发复杂应用程序提供了良好的基础。Flux 的主要目的是支持单向数据流。观看此视频获取 Flux 技巧：
+
+[`angular-university.io/course/angular2-ngrx`](https://angular-university.io/course/angular2-ngrx)
+
+![Image](img/pg188.jpg)
+
+***图 7.1*** Flux 模式的元素。
+
+Flux 模式的组件包括 Action、Dispatcher 和 Store。这些组件之间的关系如下所示：
+
+`Action --> Dispatcher --> Store --> View`（然后回到`Action`）
+
+图 7.1 中的图表展示了 Flux 架构（复制自 GitHub 仓库[`github.com/lgvalle/android-flux-todo-app`](https://github.com/lgvalle/android-flux-todo-app)）。
+
+以下是对 Flux 模式的一段描述：当用户在 Web 应用程序中执行一个手势（例如点击按钮）时，该手势被转换为一个 Action，该 Action 通过（1）一个描述动作类型的`type`和（2）一个包含新值的`value`来“建模”状态变化。该 Action 被发送到 Dispatcher，Dispatcher 又将 Action 和当前 Store 发送给适当的 reducer 函数来处理该 Action。reducer 函数包含一个 switch 语句和条件逻辑，以确定哪个 case 语句与 Action 类型匹配，然后执行匹配的 case 语句中的代码，最后从 reducer 函数返回更新后的 Store（有时 Store 不变）。接下来，注册用于检测状态相关变化的 View 对象将相应地更新 Web 页面的内容。每当用户在 Web 应用程序中执行手势时，这个过程就会重复。更一般的场景涉及多个 reducer 和多个 store，这意味着 Dispatcher 中需要额外的逻辑。此外，Action 既可以来自服务器，也可以来自用户发起的事件。
+
+**注意**
+
+*在基于 Flux 的 Web 应用程序中，应用程序组件不会直接相互通信。*
+
+注意，上述数据流*始终*是单向的。此外，数据*只能*在 reducer 中的一个 case 语句中更新，这反过来简化了调试过程。
+
+## 什么是 Action？
+
+Action 是一个包含基于 JSON 的数据的 JavaScript 对象，具有一个名为`type`的必需属性。Action 的目的是指定需要在应用程序状态中修改什么以创建新状态。将 Action 视为包含用于更新应用程序状态的信息或指令的“消息”（例如添加新用户、删除用户等）。关键点：不是修改当前状态，而是通过将 action“应用”到当前状态来创建一个新对象。
+
+简而言之，一个应用程序涉及许多 Action（作为异步操作执行）：一个 Dispatcher、一个或多个 Store 以及一个或多个 View 组件。Action 通常包含与 View 组件中发生的用户发起事件（如用户输入、按键、鼠标相关事件等）相关联的数据。
+
+尽管 Action 可以是字符串或数组，但 Action 通常是基于 JSON 的对象字面量。例如，一个涉及新用户的 ADD 操作的 Action 可能如下所示：
+
+```
+{ type: 'ADD_USER', value: 'John Smith' }
+```
+
+上述 Action（通过`dispatcher`）被转发给一个 reducer 函数，该函数将新用户添加到外部数据存储中。你将在本章后面看到此用例的更多细节。
+
+另一点需要记住的是，Action 的属性可以有不同的名称。例如，以下 Action 等同于前面的代码片段：
+
+```
+{ kind: 'ADD_USER', data: 'John Smith' }
+```
+
+请注意，你有时会看到一个 JavaScript“辅助”函数（称为“Action Creator”），它返回一个 Action，示例如下：
+
+![Image](img/pg190.jpg)
+
+## 什么是 Reducer？
+
+Reducer 是一个没有副作用的 JavaScript 函数（也称为“纯函数”），其目的是根据 Action 对象的内容将应用程序的当前状态转换为新状态。通常，每个动作类型关联一个函数。Reducer 是改变应用程序状态的 JavaScript 函数。
+
+JavaScript 的`Array`对象有一个`reduce()`方法，示例如下：
+
+```
+function sum(a,b) { return a + b }
+
+[1,2,3,4].reduce(sum,0);
+```
+
+Redux 利用 JavaScript 的`reduce()`方法的概念如下：`reducer()`方法有一个 state 参数和一个 action 参数，并带有返回新状态的条件逻辑。
+
+## Store 与应用程序状态
+
+Store 是一个容器，它保存全局状态树（一个 JavaScript 对象）并分发 actions。Store 还保存 reducers，并提供对状态变化的订阅。
+
+请记住，基于 Flux 的 Web 应用程序将应用程序状态维护在应用程序*外部*，并且当应用程序状态发生变化时，应用程序组件之间不会相互通信；相反，它们从 Store 的内容中获取应用程序状态。由于多个组件之间的交叉通信可能引入难以发现的错误，Flux 架构消除了这个错误源（想象一下一个包含数百个具有交叉通信的组件时可能发生的情况）。
+
+由于 reducing 函数是唯一可以更新 Store 的地方，因此当发生与数据相关的错误时，你知道应该去哪里查找。
+
+## 什么是 Redux？
+
+Redux 是由 Dan Abramov 创建的开源工具包，它实现了 Flux 模式（后者由 Facebook 创建）；其主页位于：
+
+[`github.com/reactjs/react-redux`](https://github.com/reactjs/react-redux)
+
+Redux 由 Actions（用于消息）、Reducers（用于改变状态）和 Store（用于保存应用程序的全局状态）组成，这些组件共同实现了 Flux 模式。
+
+一个说明 Redux 作用的简单用例是一个显示姓名列表并允许用户添加新姓名的 Web 应用程序。数据流涉及创建一个 action（用于添加用户），将该 action 分派给实际添加新用户的方法，然后用应用程序的新状态更新 store，最后更新 Web 页面以显示更新后的姓名列表。
+
+Redux 的 DevTools（支持热重载、动作回放和可自定义用户界面）可在此处下载：
+
+[`github.com/gaearon/redux-devtools`](https://github.com/gaearon/redux-devtools)
+
+## 应用程序数据的数据结构
+
+除了将应用状态存储在 store 中之外，还有一个问题：应该使用哪些数据结构来处理应用数据。适用于服务器端代码或视图组件的数据结构，未必最适合 store 中数据的结构。换句话说，你不能简单地模仿 store 中数据的相同结构（尽管这很诱人），并期望应用能够高效运行。有一篇文章讨论了这一点，链接如下：
+
+[`hackernoon.com/avoiding-accidental-complexity-when-structuring-your-app-state-6e6d22ad5e2a#.jzmngm3cf`](https://hackernoon.com/avoiding-accidental-complexity-when-structuring-your-app-state-6e6d22ad5e2a#.jzmngm3cf)
+
+## 何时应该使用 Redux？
+
+虽然对这个问题的答案各不相同，但 Dan Abramov 本人表示，人们往往过早地开始使用 Redux。也许使用 Redux 的正确时机是当应用的复杂性需要 Redux 时。然而，这个回答又引出了一个新问题：什么才是合适的复杂性？
+
+幸运的是，有一些指导原则可以帮助你决定是否使用 Redux。以下链接也讨论了 Redux 的使用：
+
+[`jamesknelson.com/5-types-react-application-state/`](http://jamesknelson.com/5-types-react-application-state/)
+
+这篇文章绝对值得花时间阅读，以了解上述编号列表的细节。
+
+还有一些额外的考虑因素。例如，当你热重载组件时，状态会从现有的组件树中移除。因此，如果应用的状态在外部维护，那么该状态可以随更新后的组件一起重新加载，从而保持状态的一致性。其他好处包括更好的测试工具、集中化的逻辑、时间旅行调试以及可预测的状态更新。
+
+
+
+顺便提一下，除了 Redux 之外，还有许多 Flux 的实现，因此你确实有选择（到目前为止，Redux 是最流行的一种）。另一种选择是 Mobx，本章后面会讨论。
+
+## Reducers 的简单示例
+
+正如你将在本节中看到的，reducers 中的自定义代码通常包含一个带有多个 `case` 语句（以及一个 `default case`）的 `switch` 语句。以下代码块是一个 reducer 的通用示例，它接受一个 `state` 参数（初始化为空对象），后跟一个 `action` 参数：
+
+![Image](img/pg193a.jpg)
+
+`case` 语句的细节显然是特定于应用的。以下小节展示了状态为数字计数器的 reducers，以及状态为字符串数组的示例。请注意，某些代码示例使用了 JavaScript 中的“展开”运算符。
+
+### 用于加减数值的 Reducer
+
+在 HTML 网页中，JavaScript 变量可以跟踪一个数字计数器。现在让我们学习如何使用 reducer 函数来跟踪这样一个计数器。计数器的 `state` 就是它的当前值，该值将与网页中的 JavaScript 代码分开“存储”。
+
+假设我们有一个包含两个按钮的网页：一个按钮从计数器减 1，另一个按钮给计数器加 1（计数器的初始值为 0）。
+
+ACTION 元素 `{type:'ADD'}` 和 `{type:'SUBTRACT'}` 分别对应加按钮和减按钮。
+
+该网页的 reducer 由一个 `switch` 语句组成，其中包含三个 `case` 语句，分别处理 `ADD`、`SUBTRACT` 和一个默认操作，如下所示：
+
+![Image](img/pg193b.jpg)
+
+![Image](img/pg194a.jpg)
+
+> 注意：  
+> *Reducers 同步处理状态变化。*
+
+上述示例的通用版本涉及一个包含 `amt` 字段的 ACTION 元素，其数值是要从计数器中增加或减少的量。在这种情况下，典型的 ACTION 是 `{type:'ADD', amt:3}` 或 `{type:'SUBTRACT', amt:5}`，其中 `amt` 的值在其他地方填充。此外，修改后的 `CountReducer` 代码块如下：
+
+![Image](img/pg194b.jpg)
+
+实际应用中的 reducer 与上述 `CountReducer` 类似：区别在于具体的 `case` 语句以及每个 `case` 语句中执行的代码。
+
+### 用于从数组中添加/删除字符串的 Reducer
+
+以下代码块定义了一个 reducer，它可以向数组中添加项（`ADD_ITEM`）和从数组中删除项（`DEL_ITEM`）：
+
+![Image](img/pg194c.jpg)
+
+在上述代码块中，通过创建一个包含当前状态的新数组，并将该项追加到该数组中，从而添加一个新项。注意展开运算符“...”如何提供了一种简洁的方式来列出当前状态中的项。
+
+通过 `filter()` 方法中的条件逻辑删除现有项：返回当前状态中除该项之外的所有内容。
+
+### Redux Reducers 是同步的
+
+请记住关于 Redux reducers 的以下几点。首先，上一节中的 `arrReducer()` 方法是一个纯函数，因为该函数中没有发生突变；不需要外部变量，并且创建了一个新状态，而不是使用数组的 `push()` 方法（这是一个修改器）。
+
+其次，reducers 是同步的；但是，如果你需要一个执行异步计算的 reducer，可以使用 `redux-observable`。第三，`reducer()` 中的数据逻辑与视图层分离。第四，可以在应用中定义多个 reducers。
+
+RxFlux 是一个基于 RxJS 的 Flux 实现，其主页位于：
+
+[`github.com/fdecampredon/rx-flux`](https://github.com/fdecampredon/rx-flux)
+
+关于 Redux 的一个非常好的介绍是 Dan Abramov 制作的这个视频系列：
+
+[`egghead.io/series/getting-started-with-redux`](https://egghead.io/series/getting-started-with-redux)
+
+## Redux Store
+
+Redux Store 维护应用的状态，该状态表示为一个全局状态树。`Store` 提供了两个函数：`getState()` 和 `dispatch()`。
+
+`getState()` 函数允许应用的不同部分访问与状态相关的信息。
+
+关于 Store 还有另外两点需要记住。首先，store 持有 reducers，并在 actions 被派发时以“广播”方式调用它们。其次，store 提供了一种订阅机制，当状态树被修改时，通知应用的各个部分（如 UI）。
+
+以下代码块展示了如何创建一个 store：
+
+```
+import { createStore } from 'redux'
+
+import RootReducer from '../Reducers/'
+
+const store = createStore(RootReducer)
+```
+
+## 中间件
+
+Redux Store 还可以通过中间件形式的插件进行扩展。有多种类型的第三方中间件可用于执行各种任务，例如持久化、日志记录和流程控制。
+
+总结一下，Redux 的工作方式如下：
+
+- ![Image](img/greybox.jpg) 应用状态封装在一个名为 `state` 的 JavaScript 对象中。
+- ![Image](img/greybox.jpg) 状态保存在 store 中。
+- ![Image](img/greybox.jpg) store 是不可变的，永远不会被直接更改。
+- ![Image](img/greybox.jpg) 用户交互触发 actions，这些 actions 描述事件并封装数据。
+
+一个名为 reducer 的函数将旧状态和 action 结合起来，创建状态的新版本，该版本保存在 store 中。Redux 通过将功能代码与表示代码分离，简化了状态管理的任务。在 Angular 应用中使用 Redux 时，更简单的方法是使用 Redux 的实现，例如 `ngrx-store`。
+
+[`github.com/mgechev/angular-seed`](https://github.com/mgechev/angular-seed)
+
+关于 `ngrx-store` 的详细描述（同时也强化了本章第一部分的内容）可以在这里找到：
+
+[`gist.github.com/btroncone/a6e4347326749f938510`](https://gist.github.com/btroncone/a6e4347326749f938510)
+
+这里有一部关于 ngrx-store 的免费 10 分钟视频（截至本书出版时）：
+
+[`egghead.io/lessons/angular-2-ngrx-store-in-10-minutes`](https://egghead.io/lessons/angular-2-ngrx-store-in-10-minutes)
+
+至此，关于 Angular 应用和 Redux 的部分就结束了。如果你认为 Redux 对你的需求来说过于复杂，那么 MobX 是 Redux 的一个替代方案，它比 Redux 更简单。MobX 被认为是 Redux 的流行（且更简单）替代方案之一，其主页位于：
+
+[`github.com/mobxjs/mobx`](https://github.com/mobxjs/mobx)
+
+## 什么是 GraphQL？
+
+GraphQL 是 Facebook 推出的一种数据查询语言和运行时，可以向移动和 Web 应用发送数据；其主页位于：
+
+[`graphql.org/`](http://graphql.org/)
+
+GraphQL 是一种规范，这意味着它可以与任何平台和任何语言一起使用。Facebook 维护着其参考实现，该实现是用 JavaScript 编写的。GraphQL 规范位于：
+
+[`facebook.github.io/graphql/`](http://facebook.github.io/graphql/)
+
+GraphQL 模式充当数据存储的“包装器”，数据存储可以包含 NoSQL 数据和关系数据。例如，以下链接解释了如何将 GraphQL 与 Mongo 一起使用：
+
+[`www.compose.io/articles/using-graphql-with-mongodb/`](https://www.compose.io/articles/using-graphql-with-mongodb/)
+
+Facebook 的 StarWars 模式位于：[`goo.gl/oCrK7F`](https://goo.gl/oCrK7F)
+
+以下是 GraphQL 的几个方面：
+
+- ![Image](img/greybox.jpg) 查询语言
+- ![Image](img/greybox.jpg) 查询语义
+- ![Image](img/greybox.jpg) 查询变量
+- ![Image](img/greybox.jpg) 变更
+- ![Image](img/greybox.jpg) 片段
+
+GraphQL 查询语言是 GraphQL 的主要部分，你将在后续章节中看到其示例。GraphQL 查询变量使你可以向 GraphQL 查询传递值，这显然比使用硬编码值更好。变更允许你更改 GraphQL 背后的数据集。变更与 GraphQL 查询中的字段非常相似，但 GraphQL 假定变更具有副作用并会更改模式背后的数据集。GraphQL 片段提供了一种机制，用于对常用字段进行分组并重用它们。一些已实现 GraphQL 的编程语言位于：
+
+[`graphql.org/code/`](http://graphql.org/code/)
+
+使用 GraphQL 的公司包括 Coursera、Intuit、Pinterest 和 Shopify。此外，GitHub（从 2016 年开始）支持 GraphQL，并已发布其公共 GraphQL API：
+
+[`githubengineering.com/the-github-graphql-api/`](http://githubengineering.com/the-github-graphql-api/)
+
+## GraphQL 与 REST 对比
+
+正如你将在后续章节中看到的，GraphQL 允许你指定细粒度的查询，这些查询仅返回客户端应用所需的数据。请记住关于涉及 GraphQL 的应用的以下要点：在 GraphQL 中，数据获取细节由客户端决定，而在使用表述性状态转移（REST）的应用中，数据获取细节由服务器决定。
+
+这种方法有几个优点：
+
+- ![Image](img/greybox.jpg) 不会向客户端发送冗余数据。
+- ![Image](img/greybox.jpg) 在服务器上添加新数据字段不会影响查询。
+- ![Image](img/greybox.jpg) 只需要一次网络往返。
+
+GraphQL 的上述优点对于移动应用尤其重要，因为在这些应用中检索数据的成本可能很高。此外，向客户对象（在服务器上）添加新字段不会影响 GraphQL 查询。
+
+另一方面，基于 REST 的请求粒度更粗，并且涉及“过度获取”：此类请求会返回客户对象中 100% 的字段，而不区分必需字段和非必需字段。此外，向客户对象添加新字段会增加返回给客户端的有效负载大小。
+
+## GraphQL 查询
+
+GraphQL 查询是由服务器解释的字符串，它以指定格式返回数据。以下是一个非常简单的 GraphQL 查询示例：
+
+![Image](img/pg198a.jpg)
+
+上述查询可以理解为“给我 `emp` 实体的 `fname` 属性”。如你所见，`emp` 实体后面跟着一对花括号，其中包含一个名为 `fname` 的属性。
+
+下一个查询要复杂得多，但遵循与上一个查询相同的机制：
+
+![Image](img/pg198b.jpg)
+
+![Image](img/pg199a.jpg)
+
+上述查询请求 `id` 为 `30000` 的用户的 `id`、`name` 和 `isViewerFriend` 属性。此外，该查询还请求同一用户的 `profilePicture`（50 × 50 像素大小）的 `uri`、`width` 和 `height` 属性。
+
+上述查询的响应如下所示：
+
+![Image](img/pg199b.jpg)
+
+GraphQL 查询可能非常复杂，有时返回的数据包含重复的“子树”数据。开源项目 Apollo（本章后面会讨论）会从服务器返回的数据中删除重复的子树。
+
+## 在 GraphQL 中定义类型系统
+
+本节包含一个类型系统的示例，该示例对文件 `employees.json` 中基于 JavaScript 对象表示法（JSON）的数据进行建模。
+
+类型系统的第一部分定义了一个 `Employee` 接口，第二部分定义了一个 `Query` 类型，如下所示：
+
+![Image](img/pg199c.jpg)
+
+![Image](img/pg200a.jpg)
+
+对于本节，让我们先做一个简化的假设：只有一个名为“John Smith”的员工。以下查询指定了员工的 `fname` 字段：
+
+![Image](img/pg200b.jpg)
+
+上述查询的结果如下所示：
+
+![Image](img/pg200c.jpg)
+
+以下查询是指定员工 `fname` 字段的更详细方式：
+
+![Image](img/pg200d.jpg)
+
+上述查询的结果如下所示：
+
+![Image](img/pg200e.jpg)
+
+包含 `query` 关键字和操作名称（例如 `EmpNameQuery`）的查询需要指定多个字段。例如，以下查询指定了 `fname` 和 `lname` 字段：
+
+![Image](img/pg200f.jpg)
+
+![Image](img/pg201a.jpg)
+
+上述查询的结果如下所示：
+
+![Image](img/pg201b.jpg)
+
+现在假设我们的数据集包含以下员工：
+
+![Image](img/pg201c.jpg)
+
+让我们再次查看之前的查询：
+
+![Image](img/pg201d.jpg)
+
+现在，上述查询的结果涉及三名员工的 `fname` 和 `lname` 字段，如下所示：
+
+![Image](img/pg201e.jpg)
+
+上述代码示例非常基础地介绍了可以在 GraphQL 中定义的查询类型。你还可以定义参数化查询以及返回分层数据集的查询。
+
+例如，以下参数化查询指定了名字为 Jane 的员工的 `fname`、`lname` 和 `city` 字段：
+
+![Image](img/pg202a.jpg)
+
+上述查询返回以下数据：
+
+![Image](img/pg202b.jpg)
+
+## 有用的 GraphQL 链接
+
+Reindex 是一个 GraphQL 生成器，其主页位于：
+
+[`www.reindex.io/`](https://www.reindex.io/)
+
+Scaphold.io 是一个用于创建 GraphQL 模式的在线服务，其主页位于：
+
+[`www.scaphold.io`](https://www.scaphold.io)
+
+GraphQL 的工具以及与各种语言和数据存储引擎的集成列表位于：
+
+[`www.npmjs.com/search?q=graphql`](https://www.npmjs.com/search?q=graphql)
+
+如果你使用 React 应用，可以使用 GraphiQL，这是一个浏览器内的集成开发环境（IDE），可在此处下载：
+
+[`github.com/graphql/graphiql`](https://github.com/graphql/graphiql)
+
+![Image](img/pg203.jpg)
+
+***图 7.2*** Chrome 浏览器中的 GraphiQL。
+
+以下链接包含 GraphQL 的文档和代码示例：
+
+[`graphql.org/graphql-js/basic-types/`](http://graphql.org/graphql-js/basic-types/)
+
+图 7.2 展示了在 Chrome 浏览器中 GraphiQL 的一个示例。
+
+下一节将讨论 Apollo，随后是一个结合 Apollo 和 Angular 的应用程序。
+
+## 什么是 Apollo？
+
+Apollo 是一个开源项目，旨在与 GraphQL 配合使用，其主页位于：
+
+[`www.apollodata.com/`](http://www.apollodata.com/)
+
+Apollo 的交互式教程（含视频）位于：
+
+[`www.learnapollo.com/introduction/get-started/`](https://www.learnapollo.com/introduction/get-started/)
+
+本节中的代码示例包含一个服务器组件和一个基于 Angular 的客户端组件，前者需要一些配置步骤。
+
+> 注意：  
+> *你必须先启动 Apollo 服务器，再启动 Angular 客户端，如下两小节所述。*
+
+## 启动 Apollo 服务器
+
+从以下 GitHub 仓库下载并解压代码：
+
+[`github.com/apollographql/GitHunt-API`](https://github.com/apollographql/GitHunt-API)
+
+执行 `README.md` 文件中描述的设置步骤，包括在 GitHub 上注册一个应用程序以获取两个密钥。然后，使用以下命令安装所需模块：
+
+```
+npm install
+```
+
+现在，使用以下命令启动 Apollo 服务器：
+
+```
+npm start
+```
+
+图 7.3 展示了 Apollo 服务器（如果配置正确）在 Chrome 浏览器中渲染的内容。
+
+## 启动 Angular 客户端
+
+从以下 GitHub 仓库下载并解压 Angular 客户端代码：
+
+[`github.com/apollographql/githunt-angular`](https://github.com/apollographql/githunt-angular)
+
+然后，使用以下命令安装所需模块：
+
+```
+npm install
+```
+
+现在，使用以下命令启动 Angular 客户端：
+
+```
+npm start
+```
+
+
+
+图 7.4 展示了 Angular 客户端（如果配置正确）在 Chrome 浏览器中渲染的部分内容。
+
+现在让我们看看一些客户端 Angular 代码。
+
+![Image](img/pg204.jpg)
+
+**图 7.3** Chrome 浏览器中的 Apollo 服务器。
+
+![Image](img/pg205.jpg)
+
+**图 7.4** Chrome 浏览器中的 Angular 客户端。
+
+## Angular 客户端中的项目结构
+
+上一节中 Angular 代码的 `app/src` 子目录包含以下文件：
+
+- `./app.component.html`
+- `./app.component.ts`
+- `./app.module.ts`
+- `./client.ts`
+- `./comments`
+- `./comments/comment.component.html`
+- `./comments/comment.component.ts`
+- `./comments/comments-page.component.html`
+- `./comments/comments-page.component.ts`
+- `./comments/comments-page.model.ts`
+- `./comments/index.ts`
+- `./feed/feed-entry.component.html`
+- `./feed/feed-entry.component.ts`
+- `./feed/feed-entry.model.ts`
+- `./feed/feed.component.html`
+- `./feed/feed.component.ts`
+- `./feed/feed.model.ts`
+- `./feed/index.ts`
+- `./feed/vote-buttons.component.html`
+- `./feed/vote-buttons.component.ts`
+- `./feed/vote-buttons.model.ts`
+- `./index.ts`
+- `./navigation/navigation.component.html`
+- `./navigation/navigation.component.ts`
+- `./new-entry/new-entry.component.html`
+- `./new-entry/new-entry.component.ts`
+- `./new-entry/new-entry.model.ts`
+- `./profile/profile.component.html`
+- `./profile/profile.component.ts`
+- `./profile/profile.model.ts`
+- `./routes.ts`
+- `./shared/index.ts`
+- `./shared/info-label.component.ts`
+- `./shared/loading.component.ts`
+- `./shared/repo-info.component.html`
+- `./shared/repo-info.component.ts`
+- `./shared/repo-info.model.ts`
+- `./subscriptions.ts`
+
+文件 `app.component.ts` 仅包含 `AppComponent` 类的定义。
+
+清单 7.1 显示了执行所有工作的文件 `app.module.ts` 的内容，这与本书中的其他代码示例不同。
+
+**清单 7.1：`app.module.ts`**
+
+![Image](img/pg206.jpg)
+
+![Image](img/pg207.jpg)
+
+清单 7.1 首先通过初始导入语句导入各种自定义组件，包括与 Apollo 相关的 `ApolloModule`（以粗体显示）。接下来，`NgModule` 装饰器包含一个 `declarations` 属性，指定了一些组件，其中一些涉及展开运算符（你在之前的示例中未见过）。`NgModule` 装饰器还包含一个 `imports` 属性，使用 `ApolloModule.forRoot()` 语法（以粗体显示）来引用在 `client.ts` 中定义的导出函数 `provideClient()`。该函数处理从服务器获取数据的细节。
+
+包含 Apollo 示例的各种 GitHub 仓库可在此处找到：
+
+[`github.com/apollostack`](https://github.com/apollostack)
+
+Apollo 相对于 Relay（稍后讨论）的优势之一是能够移除 GraphQL 查询返回的数据集中的重复子树。然而，Relay 由 Facebook 开发，是下一节的主题。
+
+## 什么是 Relay？
+
+Relay 是 Facebook 基于 JavaScript 的技术，作为需要从服务器获取数据的 ReactJS 组件的“包装器”。Relay 主页位于：
+
+[`github.com/facebook/relay`](https://github.com/facebook/relay)
+
+ReactJS 应用程序可以使用 Relay（本章稍后讨论）向 GraphQL 发出数据请求。此外，GraphQL 可以向不使用 Relay 的客户端（如 Angular 客户端）提供数据。
+
+> **注意**
+>
+> `GraphQL` 可以独立于 Relay 使用，而 Relay 不能在没有 `GraphQL` 的情况下使用。
+
+作为对比，基于 REST 的请求返回实体的数据（例如客户的数据），而 Relay 允许你请求实体的单个字段（例如客户的名字和姓氏）。简而言之，你可以将 Relay 视为 REST 的更细粒度替代方案。
+
+Relay 使用网络层与 GraphQL 服务器通信。Relay 提供了一个与 `express-graphql` 兼容的网络层，并且随着开发，网络层将添加更多功能。
+
+以下链接包含 Relay 的交互式教程：
+
+[`www.learnrelay.org/`](https://www.learnrelay.org/)
+
+> **注意**
+>
+> `GraphQL` 可以独立于 Relay 使用，而 Relay 不能在没有 `GraphQL` 的情况下使用。
+
+## Relay Modern
+
+Facebook 在 2017 年初发布了 React Fiber，这是对 ReactJS 的大规模重写，目标是提高性能和可扩展性。Facebook 还重写了 Relay，称为 Relay Modern。Relay Modern 的新功能包括静态查询、AOT（提前）编译和内置垃圾回收。
+
+Relay Modern 还提供了一个兼容性 API，以防你已经在使用旧版本的 Relay。
+
+## 总结
+
+本章从 Flux 开始，这是一种 Web 应用程序的单向模式。你还学习了 Redux，它是 Flux 模式的一种实现。此外，你了解了如何在 Angular 应用程序中使用 Flux/Redux。接着你学习了 Relay 和 GraphQL，两者均由 Facebook 开发。然后你看到了一个使用 GraphQL 检索基于 JSON 文件定义的服务器端数据的应用程序示例。
+
+# 第 8 章：Angular 与移动应用
+
+本章将探讨使用多种工具包进行移动应用程序开发，包括 Ionic 2、Ionic 2 与 NativeScript、Angular 与 NativeScript，以及 Angular 与 React Native。
+
+本章的第一部分讨论 Ionic 2。Ionic 2 扩展了 Apache Cordova，后者是 Adobe 旗下 PhoneGap 的开源对应产品。由于 Ionic 2 依赖于 Cordova，因此你可以开发跨平台的混合移动应用。此外，Ionic 2 使用 Angular 作为用户界面（UI）层，这也是将其纳入本章的原因。你将学习如何创建一个显示用户列表的简单 Ionic 2 移动应用。请注意，Ionic 2 是本章中唯一依赖 WebView 的工具包；本章中所有其他技术都生成跨平台的原生移动应用（即不涉及文档对象模型 [DOM]）。
+
+本章的第二部分向你介绍 NativeScript，你可以将其与 Ionic 2 结合使用来创建原生移动应用。该工具包生成不涉及 DOM 的原生应用，这与 Facebook 的 React Native 类似。
+
+第三部分将 NativeScript 与 Angular 结合，创建跨平台的原生移动应用。
+
+第四部分可能会让你感到惊讶：它概述了用于开发跨平台原生移动应用的 React Native。虽然 React Native 最初是与 ReactJS 结合用于 UI 层，但你可以将 React Native 与 Angular（用于 UI 层）结合，创建跨平台的原生移动应用。
+
+本章的第五部分讨论 Angular Mobile Toolkit，它基于 Angular CLI，因此你可以使用 `ng` 命令行工具创建应用。该工具包生成基于渐进式 Web 应用（PWA）的移动应用，但本章不讨论 PWA。
+
+## 使用 Ionic 2 进行移动开发
+
+Angular 旨在支持多平台应用，包括移动应用。还有一些基于 Angular 的工具包用于开发移动应用。一个著名的工具包是 Ionic 2，其主页位于：
+
+[`ionic.io`](https://ionic.io)
+
+Ionic 2 构建在 Angular 之上，并利用了 Cordova 工具包。Ionic 框架提供了一个模仿原生 UI 的 UI 框架，用于创建混合移动应用。
+
+> **注意**
+>
+> 本书付印时 Ionic 3 已发布，以下链接讨论了主要变化和新功能：
+>
+> [`blog.ionic.io/`](http://blog.ionic.io/)
+
+### 安装与项目创建
+
+使用以下命令安装 Ionic 2：
+
+```bash
+[sudo] npm install -g ionic cordova
+```
+
+如果你已安装旧版本的 Ionic，并在上一步中遇到错误，以下命令可能有助于解决该错误：
+
+```bash
+npm uninstall -g ionic
+[sudo] npm i -g ionic cordova
+```
+
+现在使用以下命令创建一个 Ionic 应用：
+
+```bash
+ionic start firstIonicProject blank --v2
+```
+
+我们的项目名称为 `firstIonicProject`，它基于空白 Ionic 模板。参数 `--v2` 表示 Ionic 2（否则默认为 Ionic 1）。
+
+```bash
+cd firstIonicProject
+```
+
+使用以下命令启动 Ionic 服务器：
+
+```bash
+ionic serve
+```
+
+你将看到上述命令的输出类似如下：
+
+```text
+> ionic-hello-world@ ionic:serve firstIonicProject
+> ionic-app-scripts serve "--v2" "--address" "0.0.0.0" "--port" "8100" "--livereload-port" "35729"
+[13:31:04] ionic-app-scripts 1.1.4
+[13:31:04] watch started ...
+[13:31:04] build dev started ...
+[13:31:04] clean started ...
+[13:31:04] clean finished in 1 ms
+[13:31:04] copy started ...
+[13:31:04] transpile started ...
+[13:31:17] transpile finished in 13.07 s
+[13:31:17] preprocess started ...
+[13:31:17] preprocess finished in 1 ms
+[13:31:17] webpack started ...
+[13:31:18] copy finished in 14.11 s
+[13:31:33] webpack finished in 15.74 s
+[13:31:33] sass started ...
+[13:31:36] sass finished in 3.17 s
+[13:31:36] postprocess started ...
+[13:31:36] postprocess finished in 1 ms
+[13:31:36] lint started ...
+[13:31:36] build dev finished in 32.05 s
+[13:31:36] watch ready in 32.18 s
+[13:31:36] dev server running: http://localhost:8100/
+```
+
+此外，浏览器会话会自动在 `localhost:8080` 启动，你将看到图 8.1 的内容。
+
+你也可以通过启动以下命令在移动设备上查看应用的模拟效果：
+
+```bash
+ionic serve -l
+```
+
+上述命令会在 `localhost:8100` 启动浏览器，并在模拟的 iPhone 和 Android 设备上显示输出，其中后者是从右上角下拉列表中选择的显示方式。
+
+图 8.2 在浏览器中显示了模拟的 iPhone 和 Android 设备。
+
+下一节将简要讨论 Ionic 原生移动应用。
+
+![Image](img/pg212a.jpg)
+
+**图 8.1** Chrome 浏览器中的最小 Ionic 应用。
+
+![Image](img/pg212b.jpg)
+
+**图 8.2** Chrome 浏览器中模拟的 iOS 和 Android 上的 Ionic 应用。
+
+### Ionic Native
+
+Ionic Native 的主页位于：
+
+[`ionicframework.com/docs/v2/native/`](http://ionicframework.com/docs/v2/native/)
+
+Ionic Native 将插件回调封装在 `Promise` 或 `Observable` 中，为所有插件提供通用接口，并确保原生事件触发 Angular 中的变更检测。以下代码块演示了如何向 Ionic Native 应用添加地理定位功能：
+
+![Image](img/pg213a.jpg)
+
+下一节将讨论项目结构以及 TypeScript 文件 `app.component.ts` 的内容。
+
+### Ionic 应用的项目结构
+
+上一节中的 `firstProject` 目录包含以下文件和文件夹：
+
+![Image](img/pg213b.jpg)
+
+![Image](img/pg214a.jpg)
+
+`app/src` 目录包含你在前面章节代码示例中见过的熟悉的 TypeScript 文件。清单 8.1 显示了 `app.component.ts` 的内容，其内容与 Angular Web 应用有显著不同。
+
+**清单 8.1：`app.component.ts`**
+
+![Image](img/pg214b.jpg)
+
+清单 8.1 以标准的 `import` 语句开头，随后是三个 Ionic 特定的 `import` 语句。请注意，`@Component` 装饰器不包含 `selector` 属性，而该属性在 Angular 应用中是必需的。`templateUrl` 属性引用了 HTML 页面 `app.html`，其内容与 Cordova 应用中的 Web 页面 `index.html` 非常相似。
+
+清单 8.1 导出了类 `MyApp`，它初始化了 `rootPage` 变量（Ionic 特有），随后是构造函数。如果你使用过 Cordova，构造函数中的 `ready()` 方法可能看起来很熟悉。但在 Ionic 应用中，`platform.ready()` 返回一个 `Promise`，当该 Promise 被解析时，`then()` 方法会根据 `app.html` 的内容显示主屏幕。
+
+清单 8.2 显示了 `app.module.ts` 的内容，它具有熟悉的结构（例如 `@NgModule` 装饰器），以及 Ionic 特定的内容。
+
+**清单 8.2：`app.module.ts`**
+
+![Image](img/pg215.jpg)
+
+清单 8.2 导入了 `MyApp` 类（如清单 8.1 所示）和 `HomePage` 类（此处未显示），两者都列在 `declarations` 属性中。你可以阅读 Ionic 文档以了解清单 8.2 中的其他组件。
+
+下一节将向你展示如何通过 Ionic 应用检索 GitHub 用户相关信息（类似于第 4 章中的示例）。
+
+### 在 Ionic 应用中检索 GitHub 用户数据
+
+![Image](img/disc.jpg)
+
+将随附光盘中的 `IonicGithub` 目录复制到方便的位置。该应用包含以下包含自定义代码的文件，所有这些文件都在 `src/app` 子目录中：
+
+- `github.ts`
+- `app.component.ts`
+- `app.module.ts`
+- `app.html`
+
+清单 8.3 显示了 `github.ts` 的内容，它定义了自定义组件 `GitHubService`，用于检索给定用户的 GitHub 相关信息。
+
+**清单 8.3：`github.ts`**
+
+![Image](img/pg216a.jpg)
+
+清单 8.3 定义并导出了自定义类 `GitHubService`，其中包含用于获取指定用户 GitHub 仓库列表的方法 `getRepos()`。在该应用中，用户被硬编码为 `ocampesato`，你可以将其替换为一个 `<input>` 元素，以接受任意 GitHub 用户名。
+
+方法 `getRepos()` 调用了 `http` 实例变量的 `get()` 方法，该变量在构造函数中被实例化为私有变量，然后返回该方法调用的结果。
+
+清单 8.4 展示了 `app.component.ts` 的内容，它定义并导出了 `MyApp` 组件，该组件调用了 `GitHubService` 类中的 `getRepos()` 方法。
+
+### 清单 8.4：`app.component.ts`
+
+![Image](img/pg216b.jpg)
+
+![Image](img/pg217a.jpg)
+
+
+
+清单 8.4 修改了默认构造函数，添加了变量`github`，它是`GitHubService`类（定义于清单 8.3）的一个私有实例。当用户在 HTML 网页中点击按钮时，会调用`getRepos()`方法。该方法订阅了从`GitHubService`类的`getRepos()`方法返回的`Observable`。
+
+清单 8.5 展示了`app.module.ts`的内容，它定义并导出了`AppModule`组件。
+
+### 清单 8.5：app.module.ts
+
+![Image](img/pg217b.jpg)
+
+![Image](img/pg218a.jpg)
+
+清单 8.5 包含与之前 Ionic 代码示例相似的代码，但增加了对`GitHubService`的导入语句，并修改了`providers`属性的内容，这两处均以粗体显示。
+
+清单 8.6 展示了`app.html`的内容，其中包含用于显示 GitHub 用户仓库列表的 HTML 标记。
+
+### 清单 8.6：app.html
+
+![Image](img/pg218b.jpg)
+
+![Image](img/pg219a.jpg)
+
+清单 8.6 包含三个部分：第一部分显示用于执行 GitHub 查询的 GitHub 用户名；第二部分包含一个`<div>`元素，其中嵌套了一个`<button>`元素，用户点击该按钮时会调用`getRepos()`方法；第三部分包含一个 Ionic 的`<ion-card>`元素，其中使用了`*ngFor`指令遍历 GitHub 仓库列表，并以卡片式容器显示每个仓库。
+
+图 8.3 展示了某个 GitHub 用户的仓库列表。
+
+以下链接描述了 PhoneGap、Ionic、Titanium（本章未讨论）和 Cordova 之间的区别：
+
+[`maheshkariya.wordpress.com/2017/04/18/what-are-the-basic-differences-between-phonegap-ionic-titanium-and-cordova`](https://maheshkariya.wordpress.com/2017/04/18/what-are-the-basic-differences-between-phonegap-ionic-titanium-and-cordova)
+
+开发跨平台原生移动应用的另一个选择是结合使用 Ionic 2 和 NativeScript。在查看代码示例之前，我们先快速了解一下 NativeScript 的一些基本特性，这是下一节的主题。
+
+![Image](img/pg219b.jpg)
+
+**图 8.3** 某个 GitHub 用户的仓库列表。
+
+### 什么是 NativeScript？
+
+NativeScript 2.0 允许你为多个平台创建原生移动应用，其主页位于：
+
+[`www.nativescript.org/`](https://www.nativescript.org/)
+
+NativeScript 使用原生平台的渲染引擎（即不使用 WebView）来渲染 UI，从而获得接近原生的性能。然而，NativeScript 为 Android 和 iOS 生成原生应用，而 Ionic 2 为 Android 和 iOS 生成混合应用。因此，NativeScript 与 React Native“相当”，而 Ionic 2 则与 PhoneGap“相当”。
+
+NativeScript 具有以下特性：
+
+- ![Image](img/greybox.jpg) 原生 UI（无 WebView）
+- ![Image](img/greybox.jpg) 可扩展
+- ![Image](img/greybox.jpg) 易于学习
+- ![Image](img/greybox.jpg) 跨平台
+- ![Image](img/greybox.jpg) 由 Telerik 支持
+- ![Image](img/greybox.jpg) 开源（Apache 2 许可证）
+
+请记住，用于 Angular 的 NativeScript 为 Android 和 iOS 生成原生应用，而 Ionic 2 为 Android 和 iOS 生成混合应用。因此，NativeScript 与 Angular 的组合是 React Native 的“对应物”（其中 UI 层可以是 ReactJS 或 Angular）。
+
+### 安装与创建新项目
+
+使用以下命令安装 NativeScript：
+
+```bash
+[sudo] npm install –g nativescript
+```
+
+上述命令完成后，你可以通过执行以下三个命令来创建和部署 NativeScript 应用：
+
+```bash
+tns create FirstNSProject --template
+nativescript-template-tutorial
+cd FirstNSProject
+tns run android
+```
+
+为简单起见，`FirstNSProject`项目基于现有的 NativeScript 模板。
+
+调用以下命令部署到 iOS 设备：
+
+```bash
+tns run ios
+```
+
+图 8.4 展示了 Android 设备上 NativeScript `FirstNSProject`的（显然很简单的）内容。
+
+NativeScript 插件列表位于：
+
+[`plugins.telerik.com/nativescript`](http://plugins.telerik.com/nativescript)
+
+如果你想知道，图 8.4 中的文本是在文件`main-page.xml`（位于`app`子目录中）中指定的，其内容如下：
+
+```xml
+<Page loaded="pageLoaded">
+<ActionBar title="My App" class="action-bar"></ActionBar>
+<!-- Your UI components go here -->
+</Page>
+```
+
+如你所见，NativeScript 使用 XML 文件来定义 NativeScript 应用的内容和布局。
+
+![Image](img/pg221.jpg)
+
+**图 8.4** Android 设备上的 NativeScript 应用。
+
+你也可以将现有的 Ionic 2 应用转换为 NativeScript：
+
+[`www.thepolyglotdeveloper.com/2016/05/converting-ionic-2-mobile-app-nativescript`](https://www.thepolyglotdeveloper.com/2016/05/converting-ionic-2-mobile-app-nativescript)
+
+### Angular 与 NativeScript
+
+如果你尚未安装 NativeScript，请按照上一节所述进行安装，然后执行以下步骤：
+
+```bash
+tns create FirstNSNGProject --template
+nativescript-template-ng-tutorial
+cd FirstNSNGProject
+tns run android
+```
+
+调用以下命令将基于 NativeScript 的 iOS 应用部署到 iOS 设备：
+
+```bash
+tns run ios
+```
+
+如果你更倾向于在模拟器中启动应用，请调用以下命令之一：
+
+```bash
+tns run android --emulator
+```
+
+本章关于 NativeScript 的部分到此结束。下一节将深入探讨 React Native，这是一个用于为 Android 和 iOS 生成原生移动应用的跨平台工具包。
+
+### 使用 React Native
+
+React Native 是由 Facebook 开发的用于开发移动应用的工具包，其主页位于：
+
+[`facebook.github.io/react-native/`](https://facebook.github.io/react-native/)
+
+由于本书是关于 Angular 的，为什么本章会包含 React Native？答案可能会让你惊讶：你可以结合使用 Angular 和 React Native 来创建原生移动应用，这将在本章后面看到。尽管如此，本节对某些读者来说可能是可选的，请随意跳过。
+
+另一点需要记住：React Native 开发至少需要基本的 ReactJS 知识。在某些情况下，了解如何从 Xcode 和 Android Studio 将移动应用部署到设备上会很有用。
+
+### React Native 的设置步骤
+
+在创建 React Native 应用并将其部署到 iOS 和 Android 设备之前，请确保已安装以下硬件和软件（步骤 1 中支持其他版本）：
+
+1. 一台装有 El Capitan (10.11.4) 和 Xcode 7.3 的 MacBook
+2. 一台装有 El Capitan 的 iOS 设备
+3. 一台装有 Android Studio 2.x 的 MacBook
+
+接下来，执行以下设置步骤：
+
+4. 在 MacBook 上安装 Android SDK、Android NDK 和 Java8
+5. 设置环境变量`ANDROID_HOME`、`NDK_HOME`和`JAVA_HOME`
+
+你还需要在 Android 设备上安装 Android 4.x 或更高版本。接下来，如果尚未安装，请在 MacBook 上安装`node`，然后使用以下命令在 MacBook 上安装 React Native：
+
+```bash
+npm install -g react-native-cli
+```
+
+以下链接包含更详细的 React Native 安装说明：
+
+1. [`facebook.github.io/react-native/docs/getting-started.html#content`](https://facebook.github.io/react-native/docs/getting-started.html#content)
+2. [`facebook.github.io/react-native/docs/android-setup.html`](https://facebook.github.io/react-native/docs/android-setup.html)
+3. [`facebook.github.io/react-native/docs/running-on-device-android.html`](https://facebook.github.io/react-native/docs/running-on-device-android.html)
+
+下一节将向你展示如何创建 React Native 应用并将其部署到移动设备上。
+
+## 如何创建 React Native 应用
+
+完成前面各节的设置步骤后，按如下方式创建一个新的 React Native 项目：
+
+1. 导航到一个方便的位置。
+2. 调用此命令：`react-native FirstRNProject`。
+3. 进入根目录：`cd FirstRNProject`。
+
+现在使用以下命令安装依赖项（这需要一些时间）：
+
+```bash
+npm install
+```
+
+上述命令完成后，你可以查看`FirstRNProject`的内容，为了方便，下面列出了这些内容：
+
+- `android/`
+- `index.android.js`
+- `index.ios.js`
+- `ios/`
+- `node_modules/`
+- `package.json`
+
+清单 8.7 显示了`index.android.js`的内容，它与`index.ios.js`的内容类似。
+
+### 清单 8.7：index.android.ts
+
+![Image](img/pg224.jpg)
+
+![Image](img/pg225.jpg)
+
+```javascript
+AppRegistry.registerComponent('MyRNProject', () => MyRNProject);
+```
+
+清单 8.7 以各种所需组件的`import`语句开头，包括稍后在代码中需要的`StyleSheet`组件。清单 8.7 的下一部分定义了`MyRNProject`组件，该组件包含一个`render()`方法，该方法返回一个顶级`<View>`组件。请注意，`<View>`组件包含三个`<Text>`组件，这些组件包含纯文本字符串。清单 8.5 的第三部分从`StyleSheet`组件定义了变量`styles`，该变量又定义了三个属性，这些属性在三个`<Text>`组件中被引用。
+
+清单 8.7 中的最后一段代码调用了`AppRegistry`组件的`registerComponent()`方法，以注册自定义的`MyRNProject`类：这一步对于 React Native 应用是必需的，但对于 ReactJS 则不是。
+
+## 将 React Native 应用部署到移动设备
+
+将上一节中的原生 Android 应用部署到 Android 设备，步骤如下：
+
+1. `adb devices`（检查设备是否可用）
+2. `cd <项目根目录>`
+3. `react-native run-android`
+
+将上一节中的原生 iOS 应用部署到 iOS 设备，步骤如下：
+
+1. `cd <项目根目录>`
+2. `react-native run-ios`
+
+你可以使用以下命令刷新屏幕内容：
+
+`command-r`
+
+现在你已经完成了这一入门部分，可以开始学习如何创建使用 Angular 和 React Native 的移动应用，这是下一节的主题。
+
+## Angular 和 React Native
+
+一个将 Angular 与 React Native 结合使用的代码 GitHub 仓库位于：
+
+[`github.com/angular/react-native-renderer`](https://github.com/angular/react-native-renderer)
+
+从上述链接下载代码，并执行以下步骤（这些步骤列在`README.md`文件中）：
+
+```bash
+npm install -g gulp react-native-cli typings
+npm install
+gulp init
+gulp start.android (用于 android)
+gulp start.ios (用于 ios)
+```
+
+**注意：** 请确保在启动上述命令列表的命令行 shell 中，将`JAVA_HOME`设置为 Java8（而非 Java9）。
+
+清单 8.8 显示了`NG2RNGraphics.ts`的内容，该文件演示了如何生成一组遵循阿基米德螺旋线路径的彩色圆圈。请注意，代码包含了 GitHub 仓库中`sample/samples/android`子目录下的`animate.js`部分内容。
+
+### 清单 8.8：NG2RNGraphics.ts
+
+![Image](img/pg226.jpg)
+
+![Image](img/pg227.jpg)
+
+![Image](img/pg228.jpg)
+
+清单 8.8 首先导入 Angular 模块，以及从`react-native`导入的`Stylesheet`（用于层叠样式表 [CSS] 相关属性）。接下来，`Ball`类的`Component`装饰器包含一个`template`属性，该属性由一个`View`组件组成，该组件指定了各种属性，例如样式表、CSS 属性，以及分别用于处理平移事件和平移结束事件的方法`moveBall()`和`endMoveBall()`。`Ball`类的`constructor()`执行一些初始化操作，`set`方法确保`x`、`y`、`radius`和`color`属性具有有效值。
+
+清单 8.8 的第二部分包含`AnimationApp`类的`Component`装饰器，该装饰器使用自定义元素初始化`selector`属性，并使用 CSS 相关值初始化`host`属性。此外，`template`属性包含一个`*ngFor`语句，该语句遍历创建图形效果的`Ball`实例集合。
+
+`AnimationApp`类初始化多个 TypeScript 变量，然后是一个`constructor()`，其中包含一个循环，该循环用遵循阿基米德螺旋线路径的圆圈填充 TypeScript 数组`balls`。
+
+你可以备份`sample/samples/android`子目录中的`animation.js`，并将其内容替换为`NG2RNGraphics.ts`，或者克隆该目录并使用单独的项目。
+
+该仓库的其他文档位于：
+
+[`angular.github.io/react-native-renderer/`](http://angular.github.io/react-native-renderer/)
+
+图 8.5 显示了在 Android 设备上启动清单 8.8 中的代码后的输出。
+
+## React Native 与 NativeScript：高级比较
+
+尽管这两个工具包都能让你开发原生移动应用，但它们确实存在差异。首先，NativeScript 将 Angular 的高级功能与 NativeScript 中的低级 UI 元素相结合，以创建具有一致外观和感觉的跨平台应用。另一方面，React Native 使开发人员能够编写与平台无关的代码，同时访问特定于平台的 UI 层。其次，React 试图为业务逻辑提供抽象，而 NativeScript 则提供更“统一”的开发体验。
+
+第三，React Native 通过“热重载”提供快速部署和执行，这在某些情况下可能优于 NativeScript。第四，将 Angular 与 NativeScript 结合使用需要“拥抱”Angular 架构，而 React 则不需要。NativeScript 和 Angular 也是独立的开源项目，因此存在另一个依赖关系，而 React Native 在 React 框架中处理跨平台功能。
+
+![Image](img/pg230.jpg)
+
+**图 8.5** Android 设备上 Angular 和 React Native 应用的图形。
+
+
+
+这些要点将帮助你结合项目需求权衡各种利弊，从而确定最适合你需求的环境。
+
+## Angular 移动工具包
+
+Angular 移动工具包（AMT）使你能够创建渐进式 Web 应用，其主页位于：
+
+[`mobile.angular.io/`](https://mobile.angular.io/)
+
+包含可下载代码的 GitHub 链接位于：
+
+[`github.com/angular/mobile-toolkit`](https://github.com/angular/mobile-toolkit)
+
+以下引用（来自`README.md`文件）是对该 GitHub 仓库的简洁描述：
+
+本仓库是一系列帮助构建渐进式 Web 应用（PWA）的工具和指南。所有指南目前均基于 Angular CLI，所有工具均被视为 alpha 质量。未来，这里以及[`mobile.angular.io`](https://mobile.angular.io)上将添加更多涵盖不同工具和用例的指南与方案。
+
+如果你对渐进式 Web 应用不熟悉（本章稍后会简要讨论 PWA），可以在此处找到一份很好的介绍：
+
+[`developers.google.com/web/fundamentals/getting-started/codelabs/your-first-pwapp/#download_the_code`](https://developers.google.com/web/fundamentals/getting-started/codelabs/your-first-pwapp/#download_the_code)
+
+接下来的几节将涵盖以下主题：
+
+- ![Image](img/greybox.jpg)使用`ng`创建 AMT 项目
+- ![Image](img/greybox.jpg)`manifest.webapp`文件的内容
+- ![Image](img/greybox.jpg)安装移动应用
+- ![Image](img/greybox.jpg)构建应用外壳
+- ![Image](img/greybox.jpg)通过 Service Worker 添加离线功能
+
+## 创建移动项目
+
+完成以下步骤，通过`ng`命令行工具在 Angular 中创建基于 PWA 的移动应用：
+
+步骤 1：按照第 1 章所述安装 Angular CLI。
+
+步骤 2：使用以下命令创建一个新项目：
+
+```bash
+ng new hello-mobile --mobile
+```
+
+步骤 3：提供移动应用服务：
+
+```bash
+cd hello-mobile
+ng serve
+```
+
+步骤 4：导航至`localhost:4200`（通常会自动打开）。
+
+当你使用`--mobile`标志调用`ng`时，`ng`工具会创建一个包含以下内容的 PWA：
+
+- ![Image](img/greybox.jpg)一个 Web 应用清单，其中包含将应用安装到主屏幕所需的信息
+- ![Image](img/greybox.jpg)一个构建步骤，用于从根组件生成应用外壳
+- ![Image](img/greybox.jpg)一个 Service Worker 脚本，用于自动缓存你的应用以实现快速加载（即使没有网络连接）
+
+请记住，Service Worker 仅在生产模式下安装，即`ng serve --prod`或`ng build --prod`。
+
+## `manifest.webapp`文件
+
+上一节中的代码示例包含一个 Web 应用清单，该清单在项目创建期间自动生成。清单 8.9 显示了`src`子目录中`manifest.webapp`文件的内容。
+
+### 清单 8.9：`manifest.webapp`
+
+![Image](img/pg232.jpg)
+
+![Image](img/pg233.jpg)
+
+清单 8.9 包含基于 JavaScript 对象表示法（JSON）的数据，其中最长的属性是`icons`，它是一个由六个 PNG 文件属性组成的数组。清单 8.9 还包含颜色相关属性，以及`start_url`属性（它指定了 HTML 网页`index.html`）。
+
+有关安装移动应用、构建应用外壳以及添加离线功能的信息，请导航至以下 GitHub 链接：
+
+[`github.com/angular/mobile-toolkit`](https://github.com/angular/mobile-toolkit)
+
+## 渐进式 Web 应用（可选）
+
+最近，PWA 在移动社区中引起了极大的兴趣。如果你不熟悉 PWA，以下是维基百科的一段引用：
+
+渐进式 Web 应用（PWA）是一个术语，用于表示一种新的软件开发方法。与传统应用不同，渐进式 Web 应用可以被视为常规网页（或网站）与移动应用的混合体。这种新的应用生命周期模型结合了大多数现代浏览器提供的功能以及移动体验的优势。（[`en.wikipedia.org/wiki/Progressive_web_app`](https://en.wikipedia.org/wiki/Progressive_web_app)）
+
+PWA 是类似原生移动应用的应用程序，由 HTML5、CSS3、JavaScript 和 Service Worker 创建。PWA 加载速度快，可以离线工作，并支持推送通知。PWA 的图标会出现在移动设备上，就像“常规”的原生移动应用一样。然而，PWA 在任何应用商店中都是不可发现的，根据你的视角，这可能是优势（例如，省去了发布流程）或劣势（例如，其他人找不到你的 PWA，可能会减少流量）。
+
+目前，Chrome 支持 PWA，未来其他浏览器也可能在某个时候支持 PWA。
+
+## Web Worker 和 Service Worker
+
+Service Worker 提供了 Web Worker 的功能以及额外的特性。你可以在此处了解 Service Worker：
+
+[`developers.google.com/web/fundamentals/getting-started/primers/service-workers?hl=en`](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers?hl=en)
+
+## PWA 的组成部分
+
+一个 PWA 通常包含以下文件：
+
+- ![Image](img/greybox.jpg)一个`index.html`网页
+- ![Image](img/greybox.jpg)一个用于导航和 UI 逻辑的`app.js`文件
+- ![Image](img/greybox.jpg)一个应用外壳文件
+- ![Image](img/greybox.jpg)一个缓存文件
+
+你可以在线搜索博客文章，这些文章会显示上述列表中某些文件的内容。此外，你还可以在此站点浏览各种 PWA：
+
+[`pwa.rocks/`](https://pwa.rocks/)
+
+## 其他链接
+
+以下链接包含 PWA 与 Android 的对比：
+
+[`stackoverflow.com/questions/35504194/what-features-do-progressive-web-apps-have-vs-native-apps-and-vice-versa-on-an`](http://stackoverflow.com/questions/35504194/what-features-do-progressive-web-apps-have-vs-native-apps-and-vice-versa-on-an)
+
+以下链接包含 Angular 与 PWA 的相关信息：
+
+[`www.slideshare.net/ManfredSteyer/progressive-web-apps-with-angular-2`](http://www.slideshare.net/ManfredSteyer/progressive-web-apps-with-angular-2)
+
+## 总结
+
+本章向你展示了多种创建移动应用的方法，这些方法使用 Angular 作为 UI 层。首先，你了解了 Angular Mobile Toolkit，它使你能够使用 Angular 创建移动应用。你还学习了如何使用 Ionic 2 工具包创建跨平台混合移动应用。然后，你看到了如何将 Ionic 2 与 NativeScript 结合来创建原生移动应用。
+
+你还了解了如何使用 Angular 和 NativeScript 创建原生移动应用。接下来，你学习了 React Native，它使你能够使用 ReactJS 或 Angular 作为 UI 层生成跨平台原生移动应用。
+
+# 第 9 章：函数式响应式编程
+
+本章讨论函数式响应式编程（FRP），重点介绍一些基本的 RxJS 代码示例，这些示例可以帮助你开发简单的 Web 应用（即使没有 Angular）。从第 4 章开始，你已经看到了许多使用`Observables`的 Angular 代码示例。然而，本章将深入探讨之前章节未涉及的 RxJS 的其他方面。
+
+你很快就会看到，本章中的大多数代码示例都是简单的 HTML 网页。这种方法大大减少了开发时间，因为你只需在浏览器中启动 HTML 网页，而无需从命令行创建应用（也无需`node_modules`子目录）。因此，本章使你能够专注于快速学习 RxJS 的各个方面，之后你可以在 Angular 应用中使用你需要的功能。
+
+本章的第一部分包含对 FRP 的高层介绍，以及一些流行的 FRP JavaScript 工具包列表。
+
+本章的第二部分讨论 RxJS 中的中间操作符和终端操作符，包括说明如何通过方法链调用多个操作符的代码示例。本节还讨论了冷`Observable`与热`Observable`之间的区别，以及如何无法将前者“转换”为后者。本节中几乎所有的代码示例都是完整且自包含的，因此你可以在浏览器中启动它们，并在 Chrome Web Inspector 中查看其输出。
+
+本章的第三部分包含使用 RxJS 与可缩放矢量图形（SVG）生成图形和动画效果的示例。你还将看到一个在 HTML 网页中“reactify”某些 HTML 元素的示例。
+
+本章的最后部分提供了一个非常简短的章节，介绍 RxJS 第 5 版，以及 RxJS 第 5 版与第 4 版之间的一些差异。
+
+## 什么是函数式响应式编程（FRP）？
+
+网络上可以找到 FRP 的各种定义。就我们的目的而言，FRP 基于观察者模式、迭代器模式和函数式编程的组合。其主页位于：
+
+[`reactivex.io/`](http://reactivex.io/)
+
+响应式编程于 1997 年引入，可以概括如下：
+
+- ![Image](img/greybox.jpg)它是使用异步数据流进行编程。
+- ![Image](img/greybox.jpg)它是事件驱动的，而非主动式。
+- ![Image](img/greybox.jpg)有多种工具包和库可用。
+- ![Image](img/greybox.jpg)它支持 JS、Java、Scala、Android 和 Swift 等语言。
+
+Conal Elliott 被认为是 FRP 的创始人，你可以在此处找到他对 FRP 的非常具体的定义：
+
+[`stackoverflow.com/questions/1028250/what-is-functional-reactive-programming`](https://stackoverflow.com/questions/1028250/what-is-functional-reactive-programming)
+
+FRP 的另一个定义涉及两个其他概念的组合：响应式编程（异步数据流）和函数式编程（纯函数、不可变性以及最小化变量和状态的使用）。
+
+响应式编程支持许多操作符，这些操作符在处理异步流时提供了强大的功能。响应式编程范式避免了其他环境中可能出现的“回调地狱”。此外，与基于 Promise 的工具包和库相比，Observable 提供了更大的灵活性。
+
+FRP 部分基于函数式编程，函数式编程之所以流行，是因为它可以减少程序中的状态量，从而有助于减少代码错误的数量。然而，FRP 比函数式编程更具声明性，通常具有更多的抽象性，并且可能涉及高阶函数。因此，响应式编程和函数式编程的结合使你能够编写更简洁但更强大的代码。
+
+根据 Reactive 主页的说法，FRP 能够正确处理异步流中的错误，并避免编写自定义代码来处理线程、同步和并发。从另一个角度来看，FRP 是从集合到流，再到异步流这条路径的“顶峰”。
+
+以下网站可以找到 JavaScript 中用于 FRP 的几个工具包：
+
+- RxJS：[`github.com/Reactive-Extensions/RxJS`](https://github.com/Reactive-Extensions/RxJS)
+- Bacon.js：[`baconjs.github.io/`](https://baconjs.github.io/)
+- Kefir.js：[`rpominov.github.io/kefir/`](https://rpominov.github.io/kefir/)
+- most.js：[`github.com/cujojs/most`](https://github.com/cujojs/most)
+
+上述工具包各有不同的优势，并且通常比 RxJS 更轻量。完成本章后，你将能够更好地评估这些 RxJS 的替代方案，并决定是否要使用它们来代替 RxJS。
+
+现在让我们简要了解一下 FRP 基础的观察者模式。
+
+## 观察者模式
+
+观察者模式是一种强大的模式，在许多编程语言中都有实现。简而言之，观察者模式涉及一个 Observable（即被观察或“监视”的对象）和一个或多个 Observer 对象。Observer（也称为订阅者）“监视”另一个对象中数据的变化或事件的发生。在 Java 等语言中，Observable 包含一个已向该 Observable 注册的 Observer 对象集合。当 Observable 中发生状态变化或事件时，Observable 会通知已注册的 Observer 对象。
+
+定义 Observable 的细节将在本章后面讨论，但关键思想是组合（“链式调用”）操作符（例如`map()`和`filter()`），然后调用`subscribe()`方法来“使其发生”。
+
+## 处理异步事件
+
+RxJS 有时被描述为“用于异步事件的 LoDash”。各种类型的异步事件包括：
+
+- ![Image](img/greybox.jpg)Ajax
+- ![Image](img/greybox.jpg)用户事件（包括鼠标相关事件）
+- ![Image](img/greybox.jpg)动画
+- ![Image](img/greybox.jpg)套接字和服务器发送事件（SSE）
+- ![Image](img/greybox.jpg)Worker
+
+作为对比，以下代码片段说明了处理异步事件的 ECMA5 风格：
+
+```javascript
+getDataFromSomewhere(function(result) {
+console.log("result = "+result)
+});
+```
+
+上述代码片段对应的 ES6 版本如下所示：
+
+```javascript
+getDataFromSomewhere((result) => {
+console.log("result = "+result)
+});
+```
+
+## Promise 与异步事件
+
+Promise 非常适合异步操作（例如基于 Ajax 的请求），前提是预期行为只有一个值并且随后完成。以下列表描述了 Promise 的一些属性：
+
+- ![Image](img/greybox.jpg)保证未来（在 Web 应用中并不总是可取）
+- ![Image](img/greybox.jpg)不可变
+- ![Image](img/greybox.jpg)单一值（在 Web 应用中并不总是可取）
+- ![Image](img/greybox.jpg)缓存
+- ![Image](img/greybox.jpg)立即调用
+- ![Image](img/greybox.jpg)无法取消
+- ![Image](img/greybox.jpg)无法重用
+
+因此，当未来结果有保证且返回单个值时，Promise 是合适的。以下是一个使用 Promise 的简单示例：
+
+![Image](img/pg240.jpg)
+
+![Image](img/pg241a.jpg)
+
+如果你还不知道，Observable 可用的某些操作符在 ECMA5 中也作为方法存在。在深入探讨 FRP 代码示例之前，让我们在下一节中看看如何使用其中一些方法。
+
+## 不使用 FRP 的操作符
+
+以下代码块展示了如何链式调用`filter()`和`map()`方法来处理一组整数：
+
+![Image](img/pg241b.jpg)
+
+请注意，`result1`和`result2`的输出是相同的。如果可能，在`map()`方法之前指定`filter()`方法，以进行“前置”数据缩减（但请参见下面的注意事项）。在前面的示例中，性能差异可能无法察觉，但如果你将源数据改为包含前一百万个正整数，你可能会看到性能差异。
+
+如前所述，关于操作顺序有一个重要的注意事项：当`filter()`方法和`map()`方法以相反顺序调用时，有时会产生不同的结果。例如，以下代码块是前面代码块的修改版本（修改部分以粗体显示），说明了这一点：
+
+![Image](img/pg241c.jpg)
+
+![Image](img/pg242a.jpg)
+
+变量`result3`的值为 [0,4,8,12,16,20]，而变量`result4`的值为 [0,8,16]。
+
+## 关于 Observable 的类比
+
+如果你是 Observable 的新手，或者发现自己在处理包含 Observable 的代码示例时感到困难，本节提供了 Venkat Subramanian 的一个幽默类比，对 Observable 的世界有巧妙的见解。
+
+首先，Observable 涉及一些关键概念：链式调用中间操作符（例如`map()`、`filter()`等），然后（可能稍后）调用终端操作符（例如`subscribe()`或`forEach`）来“让事情发生”。
+
+
+
+跳过语法相关的细节，考虑 JavaScript 中涉及中间操作符 `map()` 和 `filter()` 的一对 Observable：
+
+![Image](img/pg242b.jpg)
+
+**问题**：`result1` 和 `result2` 有什么区别？
+
+**答案**：只有 `result2` 包含了终端操作符 `subscribe()`。
+
+**结果**：第一个 `console.log()` 不显示任何内容，第二个显示数字 0 和 12。
+
+现在，让我们来读一段来自 Venkat Subramanian 的有趣（且有意义）的类比，他通过讲述妻子和两个十几岁儿子的故事来解释 Observable，当时他们都在客厅看电视：
+
+母亲：“该关电视了。”
+
+儿子们：[没有回应。]
+
+母亲：“该倒垃圾了。”
+
+儿子们：[没人动。]
+
+母亲：“你们该开始做作业了。”
+
+儿子们：[仍然没反应。]
+
+过了一段时间……
+
+母亲：“我去叫你们爸爸。”
+
+儿子们：[立刻行动起来……]
+
+希望你能意识到，母亲的前三次请求类似于中间操作符，而她最后一句陈述则类似于终端操作符，它触发了前三次请求的执行。
+
+如果这个类比让你对 Observable、中间操作符和终端操作符有了“顿悟时刻”，那么好消息是，本章中的许多代码示例对你来说会更容易理解。
+
+## RxJS 的 JavaScript 文件
+
+RxJS 的 JavaScript 文件可通过内容分发网络（CDN）获取，大约包含 10 个不同的文件。以下是在 HTML 网页中需要包含的“核心”JavaScript 文件：
+
+```html
+<script src="http://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.js">
+</script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.async.js">
+</script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.binding.js">
+</script>
+```
+
+本书付印时版本号可能有所不同。此外，请注意 RxJS v5 目前仍处于测试阶段。其他 RxJS 文件可在此处获取（第一个用于动画效果）：
+
+```html
+<script src="http://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.time.js">
+</script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.coincidence.js">
+</script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/rxjs-dom/2.0.7/rx.dom.js">
+</script>
+```
+
+在讨论了所有预备细节之后，让我们在下一节深入探讨各种中间操作符和终端操作符。
+
+## 中间操作符与终端操作符
+
+将 Observable 视为数据流或数据集，它们可以包含任意数量的项（时间任意）。Observable 在被“订阅”时生成值，并且可以被取消和重新启动（Promise 则不行）。Observable 帮助你避免在不使用 Observable 或 Promise 的异步代码中可能出现的“回调地狱”。
+
+## 操作符
+
+操作符是 Observable 中的方法。操作符可以是中间操作符或终端操作符（稍后讨论），它们允许你组合新的 Observable。常见的操作符包括 `filter()`、`map()`、`reduce` 和 `merge()`。
+
+如果你需要在 RxJS 中创建自定义操作符，可以使用以下语法：
+
+```javascript
+Rx.Observable.prototype.myCustomOperator = // 在此处定义内容
+```
+
+你可以使用方法链式调用操作符，通用语法如下：
+
+![Image](img/pg244.jpg)
+
+**结果**：`obs` 是一个“连接”到数据源的 Observable。
+
+## `subscribe()` 和 `unsubscribe()` 操作符
+
+必须调用 `subscribe()` 方法才能生成数据。举例说明，考虑以下代码块：
+
+![Image](img/pg245.jpg)
+
+第一个 Observable 没有生成输出，因为没有 `subscribe()` 方法，而第二个 Observable 显示 0 到 3（含）之间的整数。
+
+另一方面，`unsubscribe()` 会“拆除”生产者，这意味着生产者将停止生成数据。以下代码块展示了如何调用 `unsubscribe()` 方法：
+
+```javascript
+let x = Rx.Observable.(...)
+let result = x.subscribe(...)
+// 在此处执行某些操作...
+result.unsubscribe();
+```
+
+调用 `unsubscribe()` 操作符后，你可以重新启动一个 Observable 并“重新订阅”该 Observable，而 Promise 则无法做到这一点。（曾向 TC39 委员会提交了一项提案，要求增加对取消 Promise 的支持，但后来被撤回。）
+
+## `subscribe()` 和 `forEach()` 操作符
+
+RxJS 4.0 遵循 ES6 规范（但不遵循 ES7 规范），其中 `subscribe()` 和 `forEach()` 是相同的。然而，RxJS 5.0 遵循 ES7 规范，其中 `subscribe()` 和 `forEach()` 是不同的，如下所述。
+
+RxJS 5.0 中 `subscribe()` 方法的语法如下：
+
+```typescript
+public subscribe(observerOrNext: Observer | Function, error: Function, complete: Function): Subscription
+```
+
+`Observable.subscribe` 返回一个*订阅*令牌，使你能够取消订阅。当订阅事件的持续时间未知，或者需要提前终止时，此功能非常有用。
+
+RxJS 5.0 中 `forEach()` 方法的语法如下：
+
+```typescript
+public forEach(next: Function, PromiseCtor?: PromiseConstructor): Promise
+```
+
+`Observable.forEach` 返回一个*Promise*，该 Promise 根据 Observable 是否完成（或失败）而 resolve（或 reject）。再次提醒，Promise 不能被取消。
+
+请记住，目前绝大多数在线代码示例都使用 RxJS 4.0，因此同时学习 RxJS 4.0 和 RxJS 5.0 可能是值得的。
+
+## 将数据源转换为 Observable
+
+你可以使用多种方法将其他数据源“转换”为 Observable，如下所示：
+
+```javascript
+Observable.of(...)
+Observable.from(promise/iterable/observable);
+Observable.fromEvent(...)
+```
+
+接下来的几个小节包含代码示例，说明如何在 RxJS 中使用变量操作符。
+
+## 使用 `range()` 和 `filter()` 操作符
+
+清单 9.1 显示了 `ObservableRangeFilter1.html` 的内容，该文件说明了如何使用不同的语法风格定义 Observable。
+
+### 清单 9.1：`ObservableRangeFilter1.html`
+
+![Image](img/pg246.jpg)
+
+![Image](img/pg247.jpg)
+
+清单 9.1 包含三个 Observable，第一个没有生成任何输出，因为没有 `subscribe()` 方法。第二个 Observable 将范围 (0,20) 内的整数过滤为小于 4 的整数，然后通过 `console.log()` 显示它们的值。第三个 Observable 遍历范围 (1,5) 内的整数，并通过 `console.log()` 方法显示它们的值。
+
+运行清单 9.1 中的代码，你将看到以下输出：
+
+```
+#2 x = 0
+#2 x = 1
+#2 x = 2
+#2 x = 3
+onNext: 1
+onNext: 2
+onNext: 3
+onNext: 4
+onNext: 5
+onCompleted
+```
+
+下一节包含一个示例，展示如何链式调用 `from()` 和 `map()` 中间操作符。
+
+## 使用 `from()` 和 `map()` 操作符
+
+清单 9.2 显示了 `ObservableMapUpper1.html` 的内容，该文件说明了如何使用 Observable 来“反应化”一个 HTML 网页。
+
+### 清单 9.2：`ObservableMapUpper1.html`
+
+![Image](img/pg248.jpg)
+
+清单 9.2 从一个字符串数组定义了一个 Observable。`map()` 方法将每个数组项转换为大写形式，然后附加原始数组项。`subscribe()` 方法仅显示在 `map()` 方法内部创建的每个字符串的值。在浏览器中运行清单 9.2 中的代码，你将看到以下输出：
+
+```
+A1a1
+A2a2
+A3a3
+```
+
+下一节包含一个示例，展示如何链式调用 `interval()`、`take()` 和 `map()` 中间操作符。
+
+## 使用 `interval()`、`take()` 和 `map()` 操作符
+
+清单 9.3 显示了 `ObservableTake.html` 的内容，该文件说明了如何在 HTML 网页中“交错”两个 Observable 的输出。
+
+### 清单 9.3：`ObservableTake.html`
+
+![Image](img/pg249.jpg)
+
+`清单 9.3` 定义了两个 `Observables`，它们调用了 `interval()`、`take()` 和 `map()` 操作符。第一个 `Observable` 每 1000 毫秒发射一次数据，而第二个 `Observable` 每 500 毫秒发射一次数据。第一个 `Observable` 调用了包含 `console.log()` 语句的 `subscribe()` 方法来显示数据项。第二个 `Observable` 也调用了 `subscribe()` 方法，但使用了不同的语法：指定了三个函数，分别处理 `next`、`error` 和 `completed` 事件。
+
+运行 `清单 9.3` 中的代码，你将看到以下输出：
+
+```
+source2 onNext: 1
+x = 1
+source2 onNext: 2
+source2 onNext: 3
+x = 2
+source2 onNext: 4
+source2 onCompleted
+x = 3
+x = 4
+```
+
+至此，你已经了解了如何组合一些中间操作符。`RxJS` 还支持许多其他操作符，下一节将对这些操作符进行高层级且快速的介绍。
+
+## 其他中间操作符
+
+除了本章前面介绍的 `filter()` 和 `map()` 操作符之外，`Observables` 还支持以下有用的操作符，其中大多数名称直观易懂：
+
+- ![Image](img/greybox.jpg) `reduce()`
+- ![Image](img/greybox.jpg) `first()`
+- ![Image](img/greybox.jpg) `last()`
+- ![Image](img/greybox.jpg) `skip()`
+- ![Image](img/greybox.jpg) `toArray()`
+- ![Image](img/greybox.jpg) `isEmpty()`
+- ![Image](img/greybox.jpg) `retry()`
+- ![Image](img/greybox.jpg) `startWith()`
+
+即使你之前没有见过上述操作符，也可能推测出这个 `Observable` 的结果：
+
+![Image](img/pg250.jpg)
+
+## `retry()` 操作符
+
+`retry()` 操作符允许你多次尝试从外部网站访问数据。以下是该语法的两个示例：
+
+```javascript
+myObservable.retry(3);
+myObservable.retryWhen(errors => errors.delay(3000));
+```
+
+下一节将列出一些用于在 `Observables` 中合并和连接数据流的中间操作符。
+
+## 合并/连接操作符列表
+
+在第 4 章中，你学习了 `forkJoin()` 中间操作符，它合并了从多个端点发起的 HTTP 请求返回的数据。以下列表包含了各种对数据流执行合并或连接操作的中间操作符：
+
+- ![Image](img/greybox.jpg) `merge()`
+- ![Image](img/greybox.jpg) `mergeMap()`
+- ![Image](img/greybox.jpg) `concat()`
+- ![Image](img/greybox.jpg) `concatMap()`
+- ![Image](img/greybox.jpg) `switch()`
+- ![Image](img/greybox.jpg) `switchMap()`
+- ![Image](img/greybox.jpg) `zip()`
+- ![Image](img/greybox.jpg) `forkJoin()`
+- ![Image](img/greybox.jpg) `withLatestFrom()`
+- ![Image](img/greybox.jpg) `combineLatest()`
+
+其中一些名称直观易懂（例如 `concat()` 用于连接输出），但仍存在一些细微差别。例如，`merge()` 操作符将多个 `Observables` 合并为一个 `Observable`，*可能交错*数据值。而 `concat()` 操作符按顺序将多个 `Observables` 合并为一个 `Observable`，*不交错*任何数据。
+
+请阅读你感兴趣的中间操作符的在线文档（如果有时间，也可以了解所有操作符！）。
+
+## 与 Map 相关的操作符列表
+
+在第 4 章中，你看到了几个使用 `map()` 中间操作符的示例，通常用于将输入流转换为基于 JavaScript 对象表示法（JSON）的数据。以下是与 map 相关的操作符列表：
+
+- ![Image](img/greybox.jpg) `map()`
+- ![Image](img/greybox.jpg) `flatMap()`
+- ![Image](img/greybox.jpg) `flatMapLatest()`
+- ![Image](img/greybox.jpg) `mergeMap()`
+- ![Image](img/greybox.jpg) `concatMap()`
+- ![Image](img/greybox.jpg) `switchMap()`
+- ![Image](img/greybox.jpg) `flatten()`
+
+回想一下第 4 章中你如何使用 `map()` 操作符将字符串转换为基于 JSON 的数据。一个更强大的操作符是 `concatMap()`，它使用 `concat()` 确保中间结果不被交错，然后应用 `map()` 操作符。
+
+正如你在上一节中学到的，中间结果可以通过 `merge()` 操作符交错。由于 `flatMap()` 使用了 `merge()` 操作符，因此中间结果也可以与 `flatMap()` 交错（但不能与 `concatMap()` 操作符交错）。
+
+请阅读你感兴趣的中间操作符的在线文档，特别是了解 `flatten()` 和 `flatMap()` 操作符之间的区别。
+
+## `timeout()` 操作符
+
+`timeout()` 操作符用于检测 `Observable` 在指定时间段后是否未产生值：
+
+```javascript
+Rx.Observable
+  .fromEvent(document, 'dragover')
+  .throttle(350)
+  .map(true)
+  .timeout(1000, Rx.Observable.just(false))
+  .distinctUntilChanged();
+```
+
+请记住，`timeout()` 会取消订阅源 `Observable`，并订阅作为参数传递给 `timeout()` 的 `Observable`；因此，你必须重新订阅该 `Observable` 才能接收后续结果。另一点需要记住的是，`map()` 操作放在 `throttle()` 操作符之后，以避免对未使用的值进行不必要的映射操作。
+
+## 冷 Observable 与热 Observable
+
+*冷* `Observable` 类似于观看录制的电影（例如，在浏览器中观看）。尽管用户在不同时间访问相同的 URL，但他们都能看到电影的完整内容。对于冷 `Observables`，每个消费者（相当于观看电影的人）都会创建一个新的生产者（电影实例）。
+
+相比之下，*热* `Observable` 类似于观看在线直播演示。用户在不同时间访问网站，他们看到的不是整个演示，而是从他们启动演示的时间点开始的部分内容。对于冷 `Observables`，每个消费者（观看演示的人）都使用同一个生产者（流式演示）。
+
+`清单 9.4` 显示了网页 `ColdObservables1.html` 的内容，该页面演示了一系列冷 `Observables`，以及如何将它们转换为热 `Observables`。
+
+### 清单 9.4：`ColdObservables1.html`
+
+![Image](img/pg253.jpg)
+
+![Image](img/pg254a.jpg)
+
+`清单 9.4` 包含一个冷 `Observable`，以及该 `Observable` 的两个 `Subscribers`。
+
+运行 `清单 9.4` 中的代码，你将看到以下输出：
+
+```
+subscriber 1: 13
+Called next: 13
+subscriber 2: 13
+delayed: 13
+```
+
+注意
+
+
+
+默认情况下，所有 `Observables` 都是冷的，而所有 `Promises` 默认都是热的。
+
+将冷 `Observable` 转换为热 `Observable` 的一种方法是通过 `publish()` 操作符，如下所示：
+
+[`blog.thoughtram.io/angular/2016/06/16/cold-vs-hot-observables.html`](http://blog.thoughtram.io/angular/2016/06/16/cold-vs-hot-observables.html)
+
+## 使 HTML 网页响应式
+
+包含用于访问外部数据的按钮元素的网页是使用 `Observables` 的良好候选。
+
+`清单 9.5` 显示了 `ObservableDivElement2.html` 的内容，该页面演示了如何使用 `Observable` 使 HTML 网页响应式。
+
+### 清单 9.5：`ObservableDivElement2.html`
+
+![Image](img/pg254b.jpg)
+
+![Image](img/pg255.jpg)
+
+`清单 9.5` 包含两个 `<div>` 元素，后面跟着一个引用这两个元素的 `<script>` 元素。`<script>` 元素还定义了一个 `Observable`，它发射前 10 个整数，数据项之间间隔 500 毫秒。
+
+`Observable` 的下一部分调用了 `map()` 操作符来计算每个数据项的平方。`subscribe()` 方法将新计算出的数字追加到两个 `<div>` 元素的当前内容中。
+
+运行 `清单 9.5` 中的代码，在 `Observable` 完成后，你将在浏览器会话中看到以下输出：
+
+```
+This is a DIV element0149162536496481
+This is a DIV element0149162536496481
+```
+
+## RxJS 与 SVG 图形/动画
+
+清单 9.6 展示了网页 `SVGObservables1Anim1.html` 的内容，该页面演示了如何使用 `Observable` 在 HTML 网页中生成并显示带有动画效果的 SVG `<ellipse>` 元素。
+
+### 清单 9.6：`SVGObservables1Anim1.html`
+
+![Image](img/pg256.jpg)
+
+![Image](img/pg257.jpg)
+
+清单 9.6 包含一个 `<script>` 元素，用于初始化一组 JavaScript 变量。接下来，清单 9.6 获取一个 `id` 属性值为 `svg1` 的 `<div>` 元素的引用，然后通过一个简单循环初始化 JavaScript 数组 `XPoints`。初始化 `XPoints` 后，有一段有趣的代码，它基于 `XPoints` 数组创建 `Observable` 项，并设置一个延迟属性来产生动画效果（即相邻 SVG `<ellipse>` 元素渲染之间间隔 1 秒）。
+
+清单 9.6 的第三部分调用了 `subscribe()` 方法，该方法从填充的数组中检索数据值，以计算一组椭圆的位置。通过 `createElementNS()` 方法创建 SVG 椭圆，然后通过 `setAttribute()` 方法为其分配属性。椭圆被完全填充并渲染，连续椭圆之间间隔 1 秒，直到总共渲染了 10 个椭圆。
+
+## RxJS 与 HTML 网页中的鼠标事件
+
+清单 9.7 展示了 `SVGObservables1MouseMove1.html` 的内容，该页面演示了如何处理鼠标相关事件。此代码示例创建了一个跟随鼠标的效果，当用户移动鼠标时，会渲染不同颜色的椭圆。
+
+### 清单 9.7：`SVGObservables1MouseMove1.html`
+
+![Image](img/pg258.jpg)
+
+![Image](img/pg259.jpg)
+
+清单 9.7 包含一个 `<script>` 元素，用于初始化一些 JavaScript 变量。接下来，清单 9.7 定义了处理鼠标按下、鼠标松开和鼠标移动事件的 `Observables`。第三部分调用了 `subscribe()` 方法，该方法从填充的数组中检索数据值，以计算一组椭圆的位置。
+
+通过 `createElementNS()` 方法创建 SVG 椭圆，然后通过 `setAttribute()` 方法为其分配属性。代码使用 JavaScript 变量 `colorIndex` 的值作为 `colors` 数组的索引，如下所示：
+
+```
+elem.setAttribute("fill", colors[(colorIndex++)%colors.length]);
+elem.setAttribute("stroke", colors[(1+colorIndex)%colors.length]);
+```
+
+在其他必需属性初始化后，新创建的 SVG `<ellipse>` 通过 jQuery 的 `$` 函数附加到文档对象模型（DOM）中。
+
+更多使用 RxJS 处理鼠标事件的示例可在此处获取：
+
+![Image](img/greybox.jpg)[`jsfiddle.net/dinkleburg/ay8afp5f`](http://jsfiddle.net/dinkleburg/ay8afp5f)
+
+![Image](img/greybox.jpg)[`reactivex.io/learnrx/`](http://reactivex.io/learnrx/)
+
+![Image](img/greybox.jpg)[`rxmarble.com`](http://rxmarble.com)
+
+![Image](img/greybox.jpg)[`cycle.js.org/basic-examples.html`](http://cycle.js.org/basic-examples.html)
+
+其他涉及 RxJS 和 SVG 图形/动画的代码示例位于：
+
+[`github.com/ocampesato/rxjs-svg-graphics`](https://github.com/ocampesato/rxjs-svg-graphics)
+
+以下网站演示了如何使用 RxJS 创建切换按钮：
+
+[`www.themarketingtechnologist.co/create-a-simple-toggle-button-with-rxjs-using-scan-and-startwith`](https://www.themarketingtechnologist.co/create-a-simple-toggle-button-with-rxjs-using-scan-and-startwith)
+
+## 一个可观察的表单
+
+本节中的代码示例展示了如何在 Angular 应用中将中间操作符 `interval()` 与 `async` 操作符结合使用，以固定间隔发出整数。
+
+![Image](img/disc.jpg)
+
+将随附光盘中的 `ObservableForm` 目录复制到方便的位置。清单 9.9 展示了 `app.component.ts` 的内容，该文件演示了如何监听 `<input>` 元素的变化，然后从姓名数组中随机选择一个姓氏动态更新另一个 `<input>` 元素。
+
+### 清单 9.9：`app.component.ts`
+
+![Image](img/pg260.jpg)
+
+![Image](img/pg261.jpg)
+
+![Image](img/pg262.jpg)
+
+清单 9.9 是第 5 章中 `FormBuilder` 目录的副本，新增的代码部分以粗体显示。新功能很简单：当用户在第一个 `<input>` 元素中输入文本字符串并暂停 750 毫秒后，构造函数中的 `subscribe()` 方法会调用 `getUserName()` 方法，并将输入的字符串（本例中实际未使用）传入。接着，`getUserName()` 方法从 `lNames` 数组中随机选择一个姓氏，并将选中的姓氏显示在第三个 `<input>` 元素中。
+
+如您所见，当您希望在用户点击 `<submit>` 按钮之前执行动态验证时，这种功能非常有用。
+
+## Angular 应用中的取消订阅
+
+Angular 文档指出，对于您在 Angular 应用中定义的 `Observables`，Angular 会为您调用取消订阅方法。然而，此功能存在一个错误（在本书付印时发现），该错误通过这篇博客文章中的代码示例进行了描述：
+
+[`netbasal.com/when-to-unsubscribe-in-angular-d61c6b21bad3`](https://netbasal.com/when-to-unsubscribe-in-angular-d61c6b21bad3)
+
+## 一个 RxJS 与定时器示例
+
+本节中的代码示例展示了如何在 Angular 应用中将中间操作符 `interval()` 与 `async` 操作符结合使用，以固定间隔发出整数。
+
+![Image](img/disc.jpg)
+
+将随附光盘中的 `NGObservableTimer` 目录复制到方便的位置。清单 9.8 展示了 `app.component.ts` 的内容，该文件演示了如何在 Angular 应用中使用简单的定时器。
+
+### 清单 9.8：`app.component.ts`
+
+![Image](img/pg263.jpg)
+
+清单 9.8 包含一个标准导入语句，随后是两个额外的导入语句，分别用于 `Observable` 和 `interval()` 方法。接下来，一个模板属性包含名为 `mytimer` 的 `Observable`，其输出通过管道传递给 `async` 操作符。
+
+`AppComponent` 类包含 `mytimer` 的定义，该定时器每 1500 毫秒（本例中为 `pause` 的值）发出一个整数。
+
+至此，您可以轻松地通过合并本章中的 `Observables` 来修改此代码示例。
+
+## RxJS 版本 5
+
+RxJS 版本 5 提供了更好的调试和更好的模块化。版本 5 还遵循 ES7 规范，而 RxJS 版本 4 遵循 ES6 规范。
+
+RxJS 版本 5 在性能上有显著提升：在 Google Chrome V8 中，RxJS 版本 5 平均比 RxJS v4 快 5 倍。
+
+使用 RxJS v5 和 ES6 的代码片段：
+
+```
+import {Observable} from "rxjs/Observable";
+import { map } from "rxjs/operator/map";
+map.call(Observable.of(1,2,3), x => x*x).subscribe(console.log.bind(console));
+```
+
+使用 RxJS v5 和 Babel 的 ES6 代码片段：
+
+```
+import {Observable} from "rxjs/Observable";
+import { map } from "rxjs/operator/map";
+Observable.of(1,2,3)::map(x => x*x).subscribe(::console.log);
+```
+
+以下代码片段使用 TypeScript 中 RxJS 版本 5 的语法：
+
+```
+import {Observable} from "rxjs/Observable";
+import "rxjs/add/operator/map";
+Observable.of(1,2,3).map(x => x*x).subscribe(console.log.bind(console));
+```
+
+## 在 RxJS 版本 5 中创建 Observables
+
+在版本 5 中创建 `Observable` 的语法与版本 4 略有不同：版本 5 中已去掉了“on”前缀。
+
+RxJS 版本 5 的语法示例如下：
+
+![Image](img/pg264.jpg)
+
+将上述语法与本章前面 `Observables` 的示例进行比较。
+
+## 在 RxJS 中缓存结果
+
+RxJS 第 5 版支持 `cache()` 操作符，它允许你缓存 `Observable` 的结果。如果你使用的是 RxJS 第 4 版，并且希望在代码中使用缓存，以下链接包含有关缓存结果的信息：
+
+[`www.syntaxsuccess.com/viewarticle/caching-with-rxjs-observables-in-angular-2.0`](http://www.syntaxsuccess.com/viewarticle/caching-with-rxjs-observables-in-angular-2.0)
+
+## d3.express：集成探索环境
+
+在第 3 章中，你看到了一些创建基于 D3 图形的 Angular 应用程序。在本书付印之际，D3.js 的创建者 Mike Bostock 正在开发 `d3.express`，他在以下文章中对此进行了描述：
+
+[`medium.com/@mbostock/a-better-way-to-code-2b1d2876a3a0`](https://medium.com/@mbostock/a-better-way-to-code-2b1d2876a3a0)
+
+根据这篇文章的内容，`d3.express` 很可能与 RxJS 配合良好（因此被纳入本章），这对 `d3.express` 来说是个好兆头。这看起来又是 Mike Bostock 的一个非常有趣的项目，它可以在 Angular 应用程序中提供更复杂的数据可视化功能。
+
+在本书付印之际，`d3.express` 的 alpha 版本可能已经可用，你可以在此处注册早期访问：
+
+[`d3.express`](https://d3.express)
+
+## 总结
+
+本章向你介绍了 FRP，主要关注用于 Web 应用程序的 RxJS。然后你学习了 FRP 中的各种操作符，例如 `filter()`、`map()` 和 `reduce()`。你看到了 `Promise` 和 `Observable` 之间的异同。接着你了解了冷 `Observable` 和热 `Observable` 之间的区别，以及如何将冷 `Observable` 转换为热 `Observable`。
+
+此外，你还学习了如何使 HTML 网页中的 HTML 元素响应式化。最后，你看到了如何使用 `Observable` 生成 SVG 图形和动画效果，以及一个跟随鼠标的示例，该示例在鼠标移动事件期间显示基于 SVG 的椭圆。
+
+最后，你学习了如何在 Angular 应用程序中将中间操作符 `interval()` 与 `async` 操作符结合使用，以定期发出整数。
+
+# 第 10 章：杂项主题
+
+本章包含 Angular 功能的混合内容，包括对 Angular 应用程序的两个配置文件的简要描述、预编译（AOT）、`ngc` 编译器、“树摇”功能、Webpack 工具以及其他一些主题。这些主题只是简要介绍，部分原因是本书付印后细节可能会发生变化。不过，你可以搜索相关的在线文档（或博客文章）以获取最新变化。
+
+本章第一部分简要讨论了配置文件 `package.json`（`npm` 工具所需）和 `tsconfig.json`（`tsc` 工具可选）。第二部分讨论了 AOT、其优势以及调用 AOT 的两种方式。
+
+第三部分讨论了树摇和 `rollup` 工具，以及如何减小 Angular 应用程序的大小。第四部分向你介绍了 Webpack，以及如何将其与 AOT 结合使用。你还将了解热模块替换（HMR），它可以缩短开发周期，以及一些有用的 Angular 工具。
+
+最后一部分通过一个 Angular 应用程序简要探讨了深度学习，该应用程序为 TensorFlow Playground 提供了类似容器的功能，而后者提供了高度可定制神经网络的交互式可视化。
+
+## Angular 4.1.0
+
+Angular 4.1.0 版本在本书付印时发布。然而，这是一个次要版本，意味着没有破坏性更改。此外，该版本是 4.x.x 的直接替代品。
+
+### 新特性
+
+4.1.0 版本增加了对 TypeScript 2.2 和 2.3 的完全支持；事实上，Angular 是使用 TypeScript 2.3 构建的。幸运的是，这一更改不会影响随 TypeScript 2.1 发布的 Angular 4.0。
+
+此外，Angular 现在符合 TypeScript 中的 `StrictNullChecks`。因此，如果你愿意，可以在 Angular 项目中启用 `StrictNullChecks`。
+
+Angular 4.1.0 的完整功能和错误修复列表可在此处获取：
+
+[`github.com/angular/angular/blob/master/CHANGELOG.md`](https://github.com/angular/angular/blob/master/CHANGELOG.md)
+
+## Angular 配置文件
+
+本节讨论配置文件 `package.json`（`npm` 所需）和 `tsconfig.json`（`tsc` 可选），它们是每个 Angular 应用程序的一部分。
+
+### `package.json` 配置文件
+
+清单 10.1 显示了 `package.json` 中的 JavaScript 依赖项及其当前版本号，这些是由 `ng` 命令行工具自动生成的。请注意，在本书付印时，某些版本号可能略有不同。
+
+**清单 10.1：`package.json`**
+
+![Image](img/pg268.jpg)
+
+![Image](img/pg269.jpg)
+
+![Image](img/pg270.jpg)
+
+清单 10.1 中的 `scripts` 部分指定了可以从命令行调用的各种命令。清单 10.1 的下一部分是 `dependencies` 部分，列出了编译和启动应用程序所需的模块。当你从命令行调用 `npm` 时，会安装此部分中的模块。请注意，此部分包含 12 个版本为 4.0.0 的 Angular 特定模块。每当你从命令行使用 `--save` 开关调用 `npm install` 时，`dependencies` 部分都会更新（始终按字母顺序排列）。
+
+**注意**
+
+`package.json` 的 `devDependencies` 部分会在你的机器上安装一些可执行文件，这些文件在 `package.json` 的 `scripts` 部分中被引用。
+
+
+
+如果你想使用`lite-server`可执行文件作为此应用程序的服务器，你可以手动调用`npm`来安装`lite-server`（如果尚未安装）。
+
+`devDependencies`部分指定了仅开发所需的模块，例如用于执行测试的`karma`相关模块。
+
+### `tsconfig.json`配置文件
+
+TypeScript 编译器`tsc`使用`tsconfig.json`配置文件中的参数值将 TypeScript 文件转译为 JavaScript 文件，而不是从命令行指定参数值。
+
+请记住，有时 Angular 应用程序无法正常工作，但浏览器的检查器中不会显示编译错误。如果发生这种情况，请从命令行调用`tsc`以检查未报告的错误。
+
+清单 10.2 显示了`tsconfig.json`的内容，其中包含与配置相关的属性，使你能够从命令行调用`tsc`而无需指定任何参数。
+
+**清单 10.2: `tsconfig.json`**
+
+![Image](img/pg271.jpg)
+
+清单 10.2 包含 TypeScript 编译器的各种编译器相关属性及其值。请注意，`outDir`属性指定`dist/out-tsc`子目录作为生成文件的位置。`sourceMap`为 true，这意味着在转译过程中会生成源映射。`src`子目录包含更多配置文件，你可以随时查看其内容。关于 Angular 应用程序中配置相关文件的简要介绍到此结束。
+
+## 什么是 AOT？
+
+Angular AOT 是预编译的缩写，它涉及在应用程序加载到浏览器之前编译一次应用程序，从而缩短加载时间。
+
+正如你已经看到的，Angular 在浏览器中通过即时编译（JIT）加载应用程序。然而，JIT 编译会带来运行时性能损失，并且应用程序更大，因为它包含了 Angular 编译器和许多不必要的库代码。JIT 编译可以在运行时发现组件-模板绑定错误，而 AOT 可以提前发现模板错误，并通过构建时编译提高性能。
+
+此外，AOT 与 Angular 命令行界面（CLI）集成良好。例如，以下命令在创建 Angular 应用的生产构建时使用了 AOT 编译：
+
+```bash
+ng build --prod --aot
+```
+
+## AOT 的优势
+
+AOT 的部分优势如下：
+
+- ![Image](img/greybox.jpg) 更快的渲染
+- ![Image](img/greybox.jpg) 更少的异步请求
+- ![Image](img/greybox.jpg) 更小的 Angular 框架下载体积
+- ![Image](img/greybox.jpg) 更早检测模板错误
+- ![Image](img/greybox.jpg) 更好的安全性
+- ![Image](img/greybox.jpg) 更好的性能
+- ![Image](img/greybox.jpg) 模板的编译时错误报告
+- ![Image](img/greybox.jpg) 更小的应用体积
+- ![Image](img/greybox.jpg) 移除死代码（摇树优化）
+
+直到最近，`ng`模板中的错误会在运行时（有时静默）失败，这使得调试 Angular 模板变得困难。现在 AOT 会在编译时报告模板错误，但目前 AOT 只能与 Webpack 2 一起使用。这种情况未来可能会有所改变。
+
+## AOT 配置
+
+在 Angular 应用中启用 AOT 有两种方式：使用`@ngtools/webpack`（下文讨论）或使用`ngc`工具（在另一节中讨论）。第一种方式提供更细粒度的控制，而第二种方式更简单且配置更少。请记住一个重要点：Angular AOT 仅适用于可静态分析的代码和元数据。
+
+阅读以下章节后，你将能更好地决定哪种技术最适合你的需求。你可以参考以下内容获取更多信息：
+
+[`github.com/UltimateAngular/aot-loader`](https://github.com/UltimateAngular/aot-loader)
+
+### 设置`@ngtools/webpack`
+
+安装`@ngtools/webpack`并将其保存为开发依赖，如下所示：
+
+```bash
+npm install -D @ngtools/webpack
+```
+
+接下来，将以下代码添加到配置文件`webpack.config.js`中（Webpack 将在后面讨论）：
+
+![Image](img/pg273.jpg)
+
+`@ngtools/webpack`加载器与`AotPlugin`配合使用以启用 AoT 编译。请注意，Angular CLI 并非在所有场景下都支持自定义配置。
+
+### 使用`ngc`编译器
+
+`ngc`编译器是`tsc`的替代品，配置方式类似。
+
+然而，`ngc`在缺乏必要上下文的情况下会尝试内联层叠样式表（CSS）。例如，`index.css`中的`@import basscss-basic`语句会导致错误，因为没有指示`basscss-basic`位于`node_modules`中。
+
+另一方面，`@ngtools/webpack`提供了`AotPlugin`和一个 Webpack 加载器，该加载器与其他加载器/插件共享上下文。因此，当`@ngtools/webpack`调用`ngc`时，`ngc`可以从其他插件（如`postcss-import`）获取信息，以编译诸如`@import 'basscss-basic'`之类的内容。
+
+### `tsconfig-aot.json`文件
+
+`ngc`工具依赖于`tsconfig-aot.json`，它是`tsconfig.json`的一个变体。文件`tsconfig-aot.json`包含面向 AOT 的设置，示例如下：
+
+![Image](img/pg274.jpg)
+
+注意加粗的两行，它们指定了`app.module.ts`和`main.ts`，这两个文件都在`src/app`子目录中。
+
+### 编译步骤
+
+现在，打开命令 shell 并安装这些 npm 依赖：
+
+```bash
+npm install @angular/compiler-cli @angular/platform-server --save
+```
+
+接下来，调用`node_modules/@angular/compiler-cli`中的`ngc`编译器，通过以下命令创建 AOT 相关文件：
+
+```bash
+./node_modules/.bin/ngc –p .
+```
+
+上述命令完成后，你将看到一个`aot`目录，其内容如下：
+
+```text
+./aot
+./aot/src
+./aot/src/app
+./aot/src/app/app.component.ngfactory.ts
+./aot/src/app/app.component.ngsummary.json
+./aot/src/app/app.module.ngfactory.ts
+./aot/src/app/app.module.ngsummary.json
+```
+
+简而言之，组件“工厂”文件通过将原始类文件与组件中模板的 JavaScript 表示相结合来创建组件实例。此外，生成的工厂会引用原始组件类。
+
+AOT 和动态 Angular 组件的示例可在此处找到：
+
+[`angularjs.blogspot.co.il/2017/01/understanding-aot-and-dynamic-components.html`](http://angularjs.blogspot.co.il/2017/01/understanding-aot-and-dynamic-components.html)
+
+### AOT、CLI 和 Angular Universal 的状态
+
+Angular CLI 不支持 Angular Universal。有一个单独的 Angular CLI 分支支持 Universal，但该分支不支持 AOT。不过，Angular Universal 的一些关键部分将被放入 Angular 核心中。
+
+### 摇树优化与 Rollup 工具
+
+AOT 编译将 Angular 应用的更大一部分转换为 JavaScript。下一步是调用所谓的摇树优化，它涉及移除冗余代码，从而减小 Angular 应用的体积。请记住，摇树优化仅适用于 JavaScript 代码。
+
+Angular 提供了一个名为`rollup`的摇树优化工具，它执行静态代码分析以创建一个代码包，该包排除了所有从未被导入的导出代码。`rollup`工具仅适用于包含`import`和`export`语句的 ES2015 模块。
+
+现在使用以下命令安装`rollup`依赖：
+
+```bash
+npm install rollup rollup-plugin-node-resolve rollup-plugin-commonjs rollup-plugin-uglify --save-dev
+```
+
+### `rollup-config.js`文件
+
+在项目根目录中创建配置文件`rollup-config.js`，内容如下：
+
+![Image](img/pg276a.jpg)
+
+上述文件中的`entry`属性指定`app/main.js`作为应用入口点，`dest`属性使`rollup`在`dist`子目录中创建文件`build.js`。
+
+### 调用`rollup`工具
+
+通过调用以下命令从命令行调用`rollup`工具：
+
+```bash
+node_modules/.bin/rollup -c rollup-config.js
+```
+
+上述命令创建文件`dist/build.js`，你可以在 HTML 页面`index.html`中引用它，如下所示：
+
+![Image](img/pg276b.jpg)
+
+![Image](img/pg277.jpg)
+
+现在使用以下命令启动 Angular 应用：
+
+```bash
+npm run lite
+```
+
+片刻之后，你将看到一个新的浏览器会话，如果一切正常，你应该能看到 Angular 应用。
+
+### 减小 Angular 应用的体积
+
+使用 Angular AOT 结合摇树优化可以减小应用代码体积，并使代码执行更快。最简单的选项是使用以下命令为生产环境构建项目：
+
+```bash
+ng build --prod
+```
+
+然而，你可以通过以下命令进一步减小文件体积：
+
+```bash
+ng build --prod --aot
+```
+
+上述命令会移除未使用的代码和 Angular 编译器。
+
+有关 AOT 编译器的更多信息可在此处找到：
+
+[`angular.io/docs/ts/latest/cookbook/aot-compiler.html`](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html)
+
+### 减小包体积
+
+本节描述了一个测量 Angular 应用中包体积的简单过程。第一步是执行以下安装：
+
+```bash
+sudo npm install -g source-map-explorer
+```
+
+接下来，使用源映射构建应用，如下所示：
+
+```bash
+ng build --prod -sm
+```
+
+![Image](img/pg278a.jpg)
+
+***图 10.1*** Angular 应用中代码大小的映射图。
+
+第三步，检查其中一个包，示例如下（你的应用中的名称会不同）：
+
+```bash
+source-map-explorer dist/main.d357e5f7797d112767e6.bundle.js
+```
+
+上述命令将启动一个 Chrome 浏览器会话，并显示总代码大小，以及该总大小中各个模块所占的百分比。
+
+图 10.1 显示了在 Chrome 浏览器中执行上述命令后的输出。
+
+## Angular 变更检测
+
+Angular 中的变更检测基于`zone.js`，它会监控所有异步事件。每个组件都有自己的变更检测器。变更检测（默认情况下）会检查任何模板表达式的值是否发生了变化。变更方向是单向的，并且只进行一次遍历，从组件树的顶部到底部。请记住，变更只能来自组件。
+
+你也可以通过编程方式指定变更检测策略，如下面的代码片段所示：
+
+![Image](img/pg278b.jpg)
+
+上述代码块包含`changeDetection`属性，其值为`ChangeDetectionStrategy.OnPush`，这意味着只有当组件中的数据被修改时，组件才会重新渲染。
+
+正如你所知，Angular 应用是一个由 Angular 组件组成的层次化树，每个组件都有自己的变更检测器。每当一个组件被修改时，整个树都会触发一次变更检测遍历。实际上，Angular 在扫描变更时会从上到下遍历树。
+
+`ChangeDetectionStrategy.Default`是`changeDetection`的默认值，而`ChangeDetectionStrategy.OnPush`是另一个可能的值。根据 Angular 文档（遗憾的是，文档中似乎没有关于“水合”的解释）：
+
+> OnPush 意味着在 hydration 期间，变更检测器的模式将被设置为`CheckOnce`。
+>
+> Default 意味着在 hydration 期间，变更检测器的模式将被设置为`CheckAlways`。
+
+上述引用来自以下 Angular 文档：
+
+[`angular.io/docs/ts/latest/api/core/index/ChangeDetectionStrategy-enum.html#!#OnPush-anchor`](https://angular.io/docs/ts/latest/api/core/index/ChangeDetectionStrategy-enum.html)
+
+然而，如果 Angular 应用使用了不可变对象或 Observable，则可以修改变更检测系统以提高性能。此外，你可以通过指定仅在其某个输入值发生变化时才执行检查，来修改任何组件的变更检测器行为。回想一下，输入值是组件从应用其他地方接收到的属性。
+
+考虑以下代码示例：
+
+![Image](img/pg279.jpg)
+
+![Image](img/pg280a.jpg)
+
+要使变更检测在`person`发生变化（一个输入属性）时发生，请将其`changeDetection`属性设置为`ChangeDetectionStrategy.OnPush`，如下所示：
+
+![Image](img/pg280b.jpg)
+
+## `zone.js`库
+
+Angular 在以下情况下使用`zone.js`库进行变更检测：
+
+- ![Image](img/greybox.jpg) 当文档对象模型（DOM）事件发生时（例如`click`、`change`等）
+- ![Image](img/greybox.jpg) 当 HTTP 请求被解析时
+- ![Image](img/greybox.jpg) 当定时器被触发时（`setTimeout`或`setInterval`）
+
+然而，在某些情况下`zone.js`无法检测到变更，例如：
+
+- ![Image](img/greybox.jpg) 使用异步运行的第三方库
+- ![Image](img/greybox.jpg) 不可变数据
+- ![Image](img/greybox.jpg) Observable
+
+## 什么是 Webpack？
+
+尽管本章不包含依赖 Webpack 的项目，但它是 Angular 应用的事实标准工具，其主页位于：
+
+[`webpack.github.io/`](https://webpack.github.io/)
+
+Webpack 是一个模块打包器，这意味着 Webpack 接收带有依赖关系的模块，并生成代表这些模块的静态资源。Webpack 被认为是 Web 应用开发中的最新“热门”工具，并且在许多方面，Webpack 取代了 Gulp 的功能（但后者仍然相关且有用）。幸运的是，你还可以将 Webpack 与 grunt、gulp、bower 和 karma 结合使用（参见在线文档中的示例）。
+
+Webpack 的目标如下：
+
+- ![Image](img/greybox.jpg) 将依赖树拆分为按需加载的块。
+- ![Image](img/greybox.jpg) 保持初始加载时间较短。
+- ![Image](img/greybox.jpg) 每个静态资源都应该能够成为一个模块。
+- ![Image](img/greybox.jpg) 将第三方库作为模块集成。
+- ![Image](img/greybox.jpg) 自定义模块打包器的几乎每个部分。
+- ![Image](img/greybox.jpg) 适用于大型项目。
+
+Webpack 的口头禅很简单：一切都是加载器。
+
+此外，你可以将 AOT 与 Webpack 结合使用。一个用于 AOT 的 Webpack 配置文件示例如下：
+
+[`github.com/blacksonic/angular2-aot-webpack/blob/master/webpack.aot.config.js`](https://github.com/blacksonic/angular2-aot-webpack/blob/master/webpack.aot.config.js)
+
+## 使用 Webpack
+
+Webpack 二进制可执行文件会在你启动`webpack`的目录中搜索名为`webpack.config.js`的默认配置文件。此配置文件包含各种属性，因此你无需从命令行指定它们。Webpack 支持许多选项，你可以通过调用以下命令查看完整列表：
+
+```bash
+webpack --help
+```
+
+尽管 Webpack 2 版本于 2016 年底发布，但你仍然会遇到使用 Webpack 1.x 版本的教程。
+
+## 启动 Webpack 的简单示例
+
+确保你已经安装了`npm`，然后使用以下命令安装 Webpack：
+
+```bash
+npm install webpack -g
+```
+
+接下来，使用以下命令安装 Webpack 开发服务器：
+
+```bash
+npm install webpack-dev-server -g
+```
+
+完成上述步骤后，导航到一个空目录并创建两个文件：
+
+- `entry.js`
+- `index.html`
+
+`entry.js`的内容如下：
+
+```javascript
+document.write("It works.");
+```
+
+
+
+`index.html` 的内容如下：
+
+![Image](img/pg282a.jpg)
+
+现在调用以下命令：
+
+`webpack ./entry.js bundle.js`
+
+上述命令完成后，你将在同一目录中找到 `bundle.js` 文件。
+
+## 一个简单的 `webpack.config.js` 文件
+
+清单 10.3 显示了 `webpack.config.js` 的内容，这是一个示例 Webpack 配置文件。
+
+### 清单 10.3：`webpack.config.js`
+
+![Image](img/pg282b.jpg)
+
+清单 10.3 包含有关生成的输出文件名称（此处为 `bundle.js`）以及 CSS 样式表加载器的信息。
+
+## 热模块替换（HMR）与 Webpack
+
+热模块替换指的是文件的动态重新编译。你可以从命令行调用 HMR，或者在 `webpack.config.js` 中指定 HMR 属性。
+
+具体来说，有三种从命令行调用 HMR 的方法。
+
+第一种方法涉及 `webpack-dev-server` 工具（你可以通过 `npm` 全局安装），示例如下：
+
+```bash
+//选项 #1：WDS 已全局安装
+webpack-dev-server --inline --hot
+```
+
+第二种方法涉及将 `webpack-dev-server` 作为依赖项安装在 `package.json` 中，如下所示：
+
+```bash
+//选项 #2：WDS 作为开发依赖项安装
+node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline –hot
+```
+
+第三种方法涉及将 `webpack-dev-server` 指定为 `package.json` 中 `scripts` 元素的目标之一，如下所示：
+
+![Image](img/pg283.jpg)
+
+选择最适合你需求的选项。
+
+## 通过修改后的 `webpack.config.js` 实现 AOT
+
+除了上一节中介绍的三种使用 AOT 的方法之外，你还可以修改 `webpack.config.js` 以支持 AOT，如清单 10.4 所示。
+
+### 清单 10.4：`webpack.config.js`
+
+![Image](img/pg284.jpg)
+
+清单 10.4 通过添加 `plugins` 部分和 `loaders` 部分中的额外加载器，扩展了清单 10.3 的内容。在对 `webpack.config.js` 进行上述修改后，你可以使用前面章节中描述的选项之一从命令行调用 HMR。
+
+由于 Angular 4.1.0 支持 TypeScript 2.1 及以上版本，请阅读以下关于 AOT、TypeScript 和 Webpack 的注意事项：
+
+[`stackoverflow.com/questions/43276853/angular-4-aot-with-webpack/43282448`](http://stackoverflow.com/questions/43276853/angular-4-aot-with-webpack/43282448)
+
+## Angular Material
+
+Angular Material 包含用于 Angular 应用的 Material Design 组件；其主页位于：
+
+[`github.com/angular/material2`](https://github.com/angular/material2)
+
+从上述链接下载 zip 文件并解压到方便的位置。注意此代码示例中 `package.json` 对 `HammerJS` 的依赖。
+
+进入 `material2-master` 目录，使用以下命令安装依赖：
+
+`npm install`
+
+接下来，通过 `npm`（而非 `ng`）使用以下命令启动应用：
+
+`npm run demo-app`
+
+导航到 URL `localhost:4200`，你将看到图 10.2 中显示的输出。
+
+图 10.2 展示了使用 Angular Material（在 Chrome 浏览器中）渲染用户界面（UI）组件的示例。
+
+点击汉堡菜单（屏幕左上角），你将看到各种 UI 组件的列表，例如 Button、Card、Checkbox、Dialog、Grid List 和 Menu。点击其中任意一项，你将看到该 UI 组件使用 Angular Material 渲染的示例。
+
+你可以查看 `package.json` 的内容，它几乎有两页长（因此本章不会列出）。
+
+![Image](img/pg285.jpg)
+
+*图 10.2* 使用 Angular Material 的一些 UI 组件。
+
+`src/demo-app/demo-app` 子目录包含 `demo-app` 代码示例的代码，其中包含 30 多个子目录，每个子目录对应一个 UI 组件（包括上面列出的那些）。
+
+上述子目录还包含 TypeScript 文件 `demo-app-module.ts`（也接近两页长），其与 Material 相关的导入语句如下所示：
+
+```typescript
+import {
+  MaterialModule,
+  OverlayContainer,
+  FullscreenOverlayContainer,
+  MdSelectionModule,
+} from '@angular/material';
+```
+
+此代码示例为你提供了一个良好的起点，帮助你将自己的 Angular 应用中融入基于 Material 的功能。
+
+## 其他 Angular 功能
+
+当你时间充裕时，还可以探索其他几个主题，以下小节将简要介绍（按重要性不分先后顺序）。
+
+## Angular 应用中的 I18n 和 L10n 支持
+
+Angular 支持本地化（称为 L10n）和国际化（称为 I18n）。本地化指以不同语言显示文本，而国际化指显示正确的格式和符号，例如货币、日期/时间、数字符号（小数点与逗号在不同语言中含义不同）、邮政编码和电话号码。
+
+通常，L10n 也涉及 I18n。例如，如果你从美式英语切换到法语，那么货币、日期/时间和数字中的符号（以及其他符号）都会发生变化。虽然 I18n 也可能涉及 L10n，但有时变化“较小”。例如，美式英语和澳式英语之间的差异是地域性的，差异相对较小（显然远小于美式英语和法语之间的差异）。
+
+Android 设备（以及笔记本电脑和台式机）上的默认语言取决于设备所在的国家/地区（例如，美国使用美式英语，英国使用英式英语）。幸运的是，用户可以通过菜单选项轻松更改默认语言。
+
+## 使用组件容器
+
+使用 `this.elementRef` 访问子组件或创建新元素。示例如下：
+
+![Image](img/pg287.jpg)
+
+请记住，允许直接访问 DOM 存在安全风险，如下所述：
+
+[`angular.io/docs/js/latest/api/core/index/ElementRef-class.html`](https://angular.io/docs/js/latest/api/core/index/ElementRef-class.html)
+
+## `ViewChild` 装饰器
+
+`ViewChild` 装饰器使你能够访问 Angular 应用中的子元素，如下所示：
+
+`@ViewChild('input') input: ElementRef;`
+
+Angular 支持 `@ViewChild` 装饰器来搜索模板中名为 `input` 的元素。注意其类型为 `ElementRef`，因为无法使用特定的类名。
+
+当只有一个元素时，上述代码的变体如下所示：
+
+`@ViewChild(ElementClassName) variableName: ElementClassName;`
+
+你还需要在 Angular 应用中导入 `ElementClassName`。
+
+## 在何处指定服务
+
+根据你打算如何使用该服务，有几种指定服务的方式，简要说明如下。
+
+![Image](img/greybox.jpg)
+
+选项 1：如果你希望在整个应用中使用/共享服务的单个实例，则在 `NgModule` 的 `providers` 中指定服务。
+
+![Image](img/greybox.jpg)
+
+选项 2：如果你希望类的每个实例都使用服务的同一个实例，则在 `Component` 的 `providers` 中注入服务。
+
+![Image](img/greybox.jpg)
+
+选项 3：如果你希望类的每个实例都拥有服务的不同实例，则在类的 `constructor` 中注入服务。
+
+![Image](img/greybox.jpg)
+
+选项 4：如果你希望每个组件有一个实例，并且仅与组件的*视图*子组件共享，而不与组件的*内容*子组件共享，则在 `Component` 的 `viewProviders` 中注入服务。
+
+有关上述场景的更多详细信息，请查阅在线文档。
+
+## 测试 Angular 应用
+
+这是一个重要主题，但本书未涉及。不过，以下链接提供了极好的信息（包括代码示例）：
+
+[`medium.com/google-developer-experts/angular-2-testing-guide-a485b6cb1ef0#.s7grqvua2`](https://medium.com/google-developer-experts/angular-2-testing-guide-a485b6cb1ef0#.s7grqvua2)
+
+[`www.discoversdk.com/blog/writing-unit-tests-in-angular-2`](http://www.discoversdk.com/blog/writing-unit-tests-in-angular-2)
+
+[`blog.nrwl.io/essential-angular-testing-192315f8be9b#.yybrldt04`](https://blog.nrwl.io/essential-angular-testing-192315f8be9b#.yybrldt04)
+
+## 有用的 Angular 工具
+
+有多种第三方工具可用，它们以 Chrome 扩展、可安装模块（通过 `npm`）或命令行可执行文件的形式提供额外功能。下面简要介绍两个工具：提供调试支持的 Augury Chrome 扩展，以及用于显示 Angular 应用中组件依赖树的 `ngd` 工具。
+
+### Augury Chrome 扩展
+
+Augury Chrome 开发者工具扩展为 Angular 应用提供了非常好的调试支持，可从以下链接下载：
+
+[`augury.angular.io/`](https://augury.angular.io/)
+
+Augury 选项卡显示两个面板，你可以在左侧面板中选择查看 Angular 组件的组件树或路由器树（如果有）。当你在左侧面板中选择一个组件时，该组件的详细信息（包括变量）会显示在右侧面板中。此外，你还可以动态修改右侧面板中的变量值，然后将这些修改应用到当前的 Angular 应用中。
+
+图 10.3 显示了 Chrome 浏览器中一个简单 Angular 应用的 Augury 控制台选项卡的示例内容。
+
+图 10.4 显示了 Chrome 浏览器中一个简单 Angular 应用的 Augury 组件树选项卡的示例内容。
+
+### 显示 Angular 组件的依赖树
+
+`ngd` 工具是一个开源工具，提供 Angular 应用中组件的层次结构显示，其主页位于：
+
+[`github.com/compodoc/ngd`](https://github.com/compodoc/ngd)
+
+![Image](img/pg289.jpg)
+
+### 图 10.3 Angular 应用的 Augury 控制台选项卡
+
+![Image](img/pg290.jpg)
+
+### 图 10.4 Angular 应用的 Augury 组件树选项卡
+
+按如下方式安装 `ngd`：
+
+`npm install -g @compodoc/ngd-cli` 或
+
+`yarn global add @compodoc/ngd-cl`
+
+接下来，在 Angular 应用中添加一些与 `ngd` 相关的额外代码（如 `README.txt` 文件所述），以便使用 `ngd` 工具。添加所需代码后，导航到 Angular 应用的根目录并执行以下步骤。
+
+步骤 1：按如下方式启动 `ngd`：
+
+`ngd` 或
+
+`ngd -p ./tsconfig.json`
+
+步骤 2：指定包含根组件的文件：
+
+`ngd -f src/main.ts`
+
+你还可以通过导航到 `screenshots` 子目录查看一些示例，该目录包含以下示例：
+
+![Image](img/greybox.jpg) `dependencies-1.png`
+
+![Image](img/greybox.jpg) `dependencies-2.png`
+
+![Image](img/greybox.jpg) `dependencies-3.gif`
+
+![Image](img/greybox.jpg) `dependencies-4.png`
+
+![Image](img/greybox.jpg) `dependencies.html`
+
+![Image](img/greybox.jpg) `dependencies.material2.svg`
+
+![Image](img/greybox.jpg) `dependencies.ng-bootstrap.svg`
+
+![Image](img/greybox.jpg) `dependencies.soundcloud-ngrx.svg`
+
+## Compodoc
+
+Compodoc 是一个文档工具，用于生成 Angular 应用的静态文档，其主页位于此处（包含在线演示）：
+
+[`github.com/compodoc/compodoc`](https://github.com/compodoc/compodoc)
+
+Compodoc 自动生成目录，并提供各种其他功能，例如主题、搜索功能、JSDoc 轻量支持，并且对 Angular CLI 友好。
+
+官方文档的网站位于此处：
+
+[`compodoc.github.io/website/guides/getting-started.html`](https://compodoc.github.io/website/guides/getting-started.html)
+
+## Angular 与深度学习
+
+本节包含 Angular 应用 AngularDLPG，该应用基于以下“deep playground”GitHub 仓库中的代码。该仓库提供了基于深度学习的神经网络：
+
+[`github.com/tensorflow/playground`](https://github.com/tensorflow/playground)
+
+Deep playground 是一个神经网络的交互式可视化工具，使用 TypeScript 和 D3.js 编写。本质上，AngularDLPG 应用充当了此交互式可视化的容器。
+
+AngularDLPG 应用通过三个步骤创建，首先使用 `ng` 工具创建基线应用。接下来，将上述 GitHub 仓库中的 `package.json` 和 `index.html` 文件合并到 AngularDLPG 应用的对应文件中。第三步，将 GitHub 仓库中 `src` 子目录下的 TypeScript 文件复制到 AngularDLPG 应用的 `src` 子目录中。
+
+![Image](img/disc.jpg)
+
+将配套光盘中的 `AngularDLPG` 目录复制到方便的位置。该应用的 `src` 子目录中包含以下 TypeScript 文件（从 GitHub 仓库复制而来）：
+
+![Image](img/greybox.jpg) `dataset.ts`
+
+![Image](img/greybox.jpg) `heatmap.ts`
+
+![Image](img/greybox.jpg) `linechart.ts`
+
+![Image](img/greybox.jpg) `main.ts`
+
+![Image](img/greybox.jpg) `nn.ts`
+
+![Image](img/greybox.jpg) `playground.ts`
+
+![Image](img/greybox.jpg) `polyfills.ts`
+
+![Image](img/greybox.jpg) `seedrandom.d.ts`
+
+![Image](img/greybox.jpg) `state.ts`
+
+![Image](img/greybox.jpg) `typings.d.ts`
+
+上述 TypeScript 文件（不包括 `typings.d.ts`）还通过添加以下代码片段进行了修改：
+
+```typescript
+import * as d3 from 'd3';
+```
+
+上述代码片段使 TypeScript 文件能够访问位于 `node_modules` 子目录中的 D3 相关代码。
+
+通过导航到 `src` 子目录并执行以下命令来启动 Angular 应用：
+
+`ng serve`
+
+图 10.5 显示了在 Chrome 浏览器中 Angular 应用内的 TensorFlow playground 内容。
+
+![Image](img/pg292.jpg)
+
+### 图 10.5 Angular 应用中的 TensorFlow playground
+
+## 总结
+
+本章首先介绍了 Angular 4.1.0 的更新，随后介绍了 `npm` 工具和 `tsc` 工具的配置文件。接下来，你学习了 AOT，这是 Angular 中用于优化 Web 应用大小和性能的高级部分。
+
+你还了解了如何使用 `ngc` 编译器、tree-shaking 功能和 `rollup` 工具的目的。接着，你学习了 Angular 变更检测和 `Webpack` 工具。你还了解了与 `Webpack` 结合使用的 HMR（热模块重载）。然后，你看到了一个使用 Angular Material 的示例，它可以提升 Angular 应用的美学价值。
+
+你还学习了 Angular 中的其他各种主题，例如对 I18n 的支持、用于调试的 Augury Chrome 开发者工具扩展，以及用于显示 Angular 应用依赖树的 `ngd` 工具。
+
+
+
+最后，你看到了一个包含深度学习神经网络交互式可视化的 Angular 应用。
+
+## 索引
+
+### A
+
+`about.ts`，路由，123
+
+Abramov, Dan，191，192
+
+Action，Flux 模式，189–190
+
+预编译（AOT），3
+
+编译，267，271
+
+优势，272
+
+配置，272–273
+
+通过修改后的 `webpack.config.js`，283–284
+
+AMT，参见 Angular Mobile Toolkit
+
+Angular 应用
+
+变更检测，278–280
+
+减小大小，277–278
+
+结构，11–12
+
+测试，288
+
+取消订阅，262
+
+工具，288–291
+
+Angular 命令行界面（CLI），1，8–9，275
+
+功能，9–10
+
+使用 CLI 生成组件，20–23
+
+使用 CLI 创建“Hello World”应用，10–11
+
+安装，9
+
+Angular 组件，使用，19–20
+
+AngularDLPG，291–292
+
+`@angular/http`，98
+
+Angular 语言服务，3
+
+Angular 生命周期方法，65–66
+
+`app.component.ts`，66–67
+
+Angular Material，284–286
+
+Angular Mobile Toolkit（AMT），210，230–233
+
+Angular Universal，275
+
+Angular 4 版本，6
+
+Angular 4.1.0 版本，267–268
+
+Angular 2.x，3
+
+动画效果，63
+
+通过“Angular 方式”，73–75，90–94
+
+层叠样式表，3，72–73
+
+GreenSock 动画平台，68–72
+
+`animCube1`，90
+
+AOT，参见预编译
+
+Apache Cordova，209
+
+API，参见应用程序编程接口
+
+Apollo，188
+
+Angular 客户端代码，204–205
+
+Angular 客户端中的项目结构，205–207
+
+服务器，启动，203–204
+
+`AppComponent` 类，17，19，25，103，107，166，185
+
+`clickMe()` 方法，35
+
+`app.component.html`
+
+Angular 动画效果，90–91
+
+响应式 Angular 表单，135–136
+
+`app.component.ts`，12，17，24，66
+
+Angular 代码，165–166，168–169，177–178
+
+动画效果，91–93
+
+`ChildComponent`，36，37
+
+`clickMe()` 函数，25，26
+
+CSS3 动画效果，72–73
+
+自定义管道，141–142
+
+数据驱动文档，80–82
+
+`DelListButton`，35–36
+
+`FormBuilder`，132–133
+
+GitHub 用户，151–154
+
+GitHub 用户数据，113–114
+
+基于 GSAP 的动画，69
+
+HTTP GET 请求，99–100，115–116
+
+HTTP POST 请求，117–119
+
+`@Input` 注解，54
+
+Ionic 应用程序，214–217
+
+jQuery 和 CSS3，87–89
+
+生命周期方法，66–67
+
+`mouseEvent()` 方法，44–45
+
+`mouseMove` 方法，42，77–78
+
+`ngFor`，32
+
+`*ngIf`，40–41
+
+`ngModel` 属性，129–130
+
+`Observable`，102–103
+
+`ObservableForm`，260–263
+
+`onClick()` 事件，52
+
+`Promise`，102–103
+
+响应式 Angular 表单，134–135
+
+在 `ReadJSONFileTS` 中，113
+
+路由，122–123
+
+可缩放矢量图形，75–76
+
+`StateComponent`，38–39
+
+`template`/`templateUrl` 属性，18–19
+
+`TodoInput`，46
+
+顶级组件，17–18
+
+`User` 类，50–51
+
+`UserService` 自定义组件，149–150
+
+`ViewEncapsulation`，59
+
+`app.html`，218–220
+
+`app.js`，172–174，179
+
+应用程序编程接口（API），6，64
+
+`AppModule`，14，15，185
+
+`app.module.ts`，12，15–18，71，79，206–207，215，217–218
+
+`ChildComponent`，36–38
+
+自定义管道，143–144
+
+`FormsModule`，130
+
+`HttpModule`，98–99，107
+
+`@Input` 注解，56–57
+
+`mouseEvent()` 方法，45
+
+`MouseMove`，43
+
+`NYTService` 类，104–105
+
+响应式 Angular 表单，136
+
+可缩放矢量图形，76–77
+
+`UserService` 自定义组件，150–151
+
+`ArchOvals.ts`，70
+
+`ArchTubeOvals1.ts`，70–71
+
+异步事件
+
+处理，240–241
+
+Promise 与，240–241
+
+异步管道，140
+
+`AsyncPipe`，140
+
+属性（attributes）与属性（properties），24
+
+`attr()` 方法，82
+
+Augury Chrome 扩展，288–289
+
+`authors.json`，120
+
+### B
+
+“盒子中的香蕉”语法，131
+
+Bootstrap，4，138，139
+
+bootstrap 数组，17
+
+Bootstrap 组件，131–132
+
+浏览器，6
+
+`BrowserModule`，16
+
+内置指令，8
+
+内置管道，8，139–140
+
+内置服务，146
+
+按钮，24–27
+
+### C
+
+层叠样式表 3（CSS3），63，64
+
+动画效果，72–73
+
+与 jQuery，85–90
+
+3D 动画，83–85
+
+层叠样式表（CSS），封装，58
+
+CDN，参见内容分发网络
+
+`changeDetection` 属性，279
+
+`ChangeDetectionStrategy.Default`，279
+
+`ChangeDetectionStrategy.OnPush`，279，280
+
+图表工具，94–95
+
+`ChildComponent`，36–38
+
+`childcomponent.ts`，37
+
+`@Input` 注解，55–56
+
+`childValue`，55–56
+
+`childValueChange`，55
+
+CLI，参见命令行界面
+
+click events（点击事件），52–53
+
+`ClickItems`，52
+
+`clickitem.ts`，53
+
+`clickMe()`，25，26，34，35，51，124
+
+`ColdObservables1.html`，253–254
+
+冷与热 observables，252–254
+
+`colorIndex`，260
+
+命令行界面（CLI），1，272
+
+命令查询职责分离（CQRS），188
+
+Compodoc，291
+
+基于组件的架构，6
+
+`@Component` 装饰器，19
+
+组件，定义，7
+
+`concat()`，252
+
+`concatMap()`，252
+
+并发请求与 Angular，166–169
+
+条件逻辑，40–41
+
+`console`，67
+
+在 `console` 中调试 Angular 代码，30–31
+
+`console.log()`，67，247
+
+构造函数与状态存储，38–40
+
+构造函数方法，32，39，40
+
+内容分发网络（CDN），243
+
+CQRS，参见命令查询职责分离
+
+`createElementNS()`，259
+
+创建、读取、更新和删除（CRUD），113
+
+`createSVG()` 方法，82
+
+CRUD，参见创建、读取、更新和删除
+
+CSS3，参见层叠样式表，3
+
+`CSS3JQueryAnim`，85
+
+自定义类，50–51
+
+自定义指令，8
+
+`customers.json`，110–111
+
+自定义管道，8，141–145
+
+### D
+
+数据绑定模型，131
+
+数据驱动文档（D3），79–83
+
+在 `console` 中调试 Angular 代码，30–31
+
+声明数组，16
+
+装饰器，7，8
+
+`deleteMe()` 方法，36
+
+`DelListButton`，35
+
+依赖类型，8
+
+依赖注入（DI），97–99
+
+机制，145
+
+`devDependencies` 部分，270
+
+`d3.express`，265
+
+DI，参见依赖注入
+
+`directives` 属性，20
+
+`document.dom-Method()`，64
+
+文档对象模型（DOM）操作，64
+
+`duration()` 方法，83
+
+### E
+
+`each()` 方法，100
+
+ECMA5，4–6
+
+元素与属性，26–27
+
+Elliott, Conal，238
+
+Elvis 运算符，58
+
+`EmpComponent` 类，14，20
+
+`employees.json`，107
+
+`employee.ts`，112
+
+`enableProdMode()` 函数，15
+
+ES6，4–6
+
+`EventEmitters`，53–57，147–151
+
+exports 数组，17
+
+Express 应用，159
+
+与 Angular 结合，177–180
+
+创建，161
+
+启动，161–162
+
+与 MongoDB 结合，169–171
+
+### F
+
+`file.service.ts`，109
+
+`filter()` 操作符，241，246–247
+
+`flatMap()`，252
+
+`flatten()` 函数，5
+
+Flickr 图片搜索，99–101
+
+Flux 架构，187
+
+Action，189–190
+
+组件，189–191
+
+Reducer，190–191
+
+Store，191
+
+`#fname` 语法，34
+
+`focus()` 方法，46
+
+`forEach()` 方法，245–246
+
+`forkJoin()` 方法，97，108–111，159，162，166，251
+
+`FormArray` 类，136–137
+
+`FormBuilder` 类，132–134
+
+`FormGroup` 类，132，136–137
+
+FRP，参见函数式响应式编程
+
+函数式响应式编程（FRP），237
+
+定义，238
+
+函数式编程，238–239
+
+在 JavaScript 中，239
+
+观察者模式，239
+
+不使用操作符，241–242
+
+函数
+
+`clickMe()`，25，26
+
+`enableProdMode()`，15
+
+`flatten()`，5
+
+`merge()`，5
+
+`mouseMove()`，43
+
+`rotate()`，90
+
+`scale()`，90
+
+`transition()`，93–94
+
+`trigger()`，93
+
+### G
+
+`generateGraphics()` 方法，71
+
+`getAuthorData()` 方法，119
+
+`getBothFiles()` 方法，109，110
+
+`getJSON()` 方法，100
+
+`getState()` 函数，195
+
+`gettNYTInfo()` 方法，103，104
+
+`getUserList()` 方法，149
+
+GitHub
+
+仓库，64，203–204，230–231，291
+
+用户数据，113–114，151–155
+
+`github.ts`，215
+
+GitHunt API 服务器，204–205
+
+图形效果，63
+
+GraphQL，188，196，197
+
+定义类型系统于，199–202
+
+链接，202–203
+
+查询，198–199
+
+表述性状态转移对比，197–198
+
+GreenSock 动画平台（GSAP），63，68–72
+
+### H
+
+处理用户输入，45–48
+
+hello-world 项目，9
+
+`HomeView` 类，184
+
+热对比冷可观察对象，252–254
+
+HTML 网页
+
+响应式化，254–255
+
+RxJS 和鼠标事件在 HTML 中，257–260
+
+HTTP GET 请求，115–117
+
+HTTP POST 请求，117–120
+
+`httpRequest()` 方法，100，107，114
+
+### I
+
+IDE，参见集成开发环境
+
+`index.html`
+
+CSS3 3D 动画，83–84
+
+CSS3JQueryAnim，85–86
+
+`index.html` 网页，12–13，18
+
+`index.js` 文件，174–175
+
+`@Injectable`，98
+
+注入的服务，157–158
+
+`@Input` 注解，53–54
+
+`app.component.ts`，54
+
+`app.module.ts`，56–57
+
+`childcomponent.ts`，55–56
+
+集成开发环境（IDE），4
+
+组件间通信，157
+
+中间操作符，244–246，250–252
+
+国际化（I18n），286–287
+
+`interval()`，248–250，260，262，263
+
+Ionic 应用
+
+GitHub 用户数据，215–220
+
+项目结构，213–215
+
+Ionic 2，移动开发，209，210–213
+
+安装和项目创建，210–213
+
+Ionic Native 主页，213
+
+`itemdetails.html`，49
+
+### J
+
+Jade 模板，169
+
+日文文本和 Angular，181–182
+
+JavaScript 数组，29
+
+JavaScript 对象表示法（JSON），9，75，97，105–108
+
+和 TypeScript 接口，112
+
+jQuery 动画效果，63，85–90
+
+使用 jQuery 的 Flickr 图片搜索，99–101
+
+JSON，参见 JavaScript 对象表示法
+
+`json-server`，113，159，160
+
+即时（JIT）编译，272
+
+### K
+
+`@keyframes`，73
+
+### L
+
+生命周期钩子接口，65
+
+`load-japanese.js`，180–181
+
+本地化（L10n），286–287
+
+`login.ts`，124
+
+### M
+
+`main.server.js`，182–183
+
+`main.ts`
+
+引导模块，14–15
+
+GSAP 在 `main.ts` 中，68
+
+`manifest.webapp` 文件，232–233
+
+`map()` 操作符，241，247–250
+
+`merge()` 操作符，5，252
+
+元数据，19–20
+
+微服务
+
+优点，185
+
+缺点，186
+
+模型-视图-控制器（MVC），187
+
+MongoDB，169–171
+
+`moreInfo()` 方法，41
+
+`mouseCount`，44
+
+`mouseEnter()` 方法，150
+
+`mouseMove()` 函数，43，44
+
+`mouseMove` 方法，41–43，78
+
+`MouseMove.ts`，42–44，77–78
+
+鼠标位置，41–43
+
+多个服务实例，156
+
+`myapp`，10
+
+`MyEllipse1.ts`，可缩放矢量图形，76
+
+`myForm`，130，134
+
+`MyPipe` 类，142–143
+
+`mytimer`，263
+
+### N
+
+命名约定，针对 Angular 项目文件，12
+
+NativeScript，209
+
+Angular 和 NativeScript，222
+
+特性，220
+
+安装和创建新项目，220–222
+
+React Native 对比，229–230
+
+`newuser.ts`，50
+
+`ngAfterContentInit()` 方法，68–72，82
+
+`ng-bootstrap`，60
+
+`ng2-bootstrap`，132
+
+`ngc` 编译器，273–275
+
+`ng2-charts`，94–95
+
+`NgComponentOutlet`，60–61
+
+`ngd` 工具，289–291
+
+`ngFor` 指令，31–32
+
+`NgGraphicsAnimation`，90
+
+`ngIf`，60
+
+`ngModel` 属性，128–130
+
+`ngModule`，61
+
+`@NgModule`，16–17
+
+`ngOnInit` 生命周期方法，65，66
+
+`NG2RNGraphics.ts`，226–228
+
+`ngrx-store`，196
+
+`ngSubmit` 动作，127
+
+`@ngtools/webpack`，272，273
+
+节点环境设置，160
+
+`NodeForkJoin`，162
+
+`NodeForkJoin2` 目录，167
+
+NodeJS，4
+
+`node server.js`，162–163
+
+`node stack`，159
+
+`npm` 依赖项，274–275
+
+`nyt.service.ts`，103–104
+
+### O
+
+`Observable`，101–105
+
+Angular2 HTTP 与，111
+
+`ObservableDivElement2.html`，254–255
+
+`ObservableMapUpper1.html`，247–248
+
+`ObservableRangeFilter1.html`，246–247
+
+`Observables`，244，265
+
+类比，242–243
+
+Angular HTTP 与，163–165
+
+将数据源转换为，246
+
+在 RxJS 第 5 版中，264
+
+`ObservableTake.html`，248–250
+
+观察者模式，239
+
+`onAnimate()` 方法，91
+
+`onClick()` 事件，53
+
+`onClick()` 方法，52
+
+单向数据绑定，7，131
+
+`OnInit` 接口，65
+
+`onSelect()` 方法，51，52
+
+`@Output` 注解，53–57
+
+### P
+
+`package.json`，8，68，160，163，167，171，268–270，285
+
+`parentValue`，55
+
+
+
+`pipe.component.ts`，142–143
+
+管道，138–139
+
+异步，140
+
+内置，139–140
+
+自定义，141–145
+
+`postAuthorData()` 方法，119
+
+`posts.json`，117
+
+展示组件，57–58
+
+渐进式 Web 应用（PWA），210，233–235
+
+- 组件，234
+- 链接，234
+- `Service Worker`，234
+- `Web Worker`，234
+
+`Promise`，101–105
+
+异步事件与，240–241
+
+`providers` 数组，16
+
+`PureCSS3Anim`，83
+
+## R
+
+`range()` 操作符，246–247
+
+响应式表单，128，134–137
+
+`React Native`，209，222
+
+- Angular 与，226–229
+- 创建，223–226
+- 部署，225–226
+- `NativeScript` 对比，229–230
+- 设置步骤，223
+
+`ReadJSONFileTS`，113
+
+`Reducer`，Flux 模式，190–191
+
+`Redux`，187–188，191
+
+- 应用数据的数据结构，192
+- 中间件，196
+- reducers，参见 `Redux reducers`
+- store，195–196
+- 使用时机，192
+
+`Redux reducers`
+
+- 从数组中添加/删除字符串，194–195
+- 用于数值的加减，193–194
+- 同步，193–194
+
+`Reindex`，GraphQL 生成器，202
+
+`Relay`，207–208
+
+`reportValueChange`，55
+
+表述性状态转移（REST），GraphQL 对比，197–198
+
+`retry()` 操作符，250–251
+
+`rollup-config.js`，276
+
+`rollup` 工具，275–276
+
+- 调用，276–277
+
+`rom()` 操作符，247–248
+
+`rotate()` 函数，90
+
+路由，120–122
+
+- 与 `Webpack`，126
+
+`RxJS`，237，239
+
+- JavaScript 文件，243–244
+- 与 HTML 网页中的鼠标事件，257–260
+- SVG 图形/动画，255–257
+- 计时器示例，262–263
+- 第 5 版，263–265
+
+## S
+
+脚手架工具，5
+
+可缩放矢量图形（SVG），41，63
+
+- `app.component.ts`，75–76
+- `app.module.ts`，76
+- 创建渐变效果，77
+- 椭圆，257，259–260
+- 跟随鼠标，77–79
+- `MyEllipse1.ts`，76
+
+可缩放矢量图形（SVG），238
+
+`scale()` 函数，90
+
+`Scaphold.io`，202
+
+`schemas` 数组，17
+
+`selector` 属性，7，17–18，25，27
+
+`sendNewUser()` 方法，157
+
+`server.js`，164–165，167
+
+服务端自定义文件，171–177
+
+- `app.js` 文件，172–174
+- `index.js` 文件，174–175
+- 启动，176–177
+- `userlist.jade` 模板，176
+
+面向服务架构（SOA），186
+
+服务与组件间通信，157
+
+`setAttribute()` 方法，259
+
+`ShadowDOM`，58–59
+
+`SimpleCSS3Anim`，72
+
+`SimpleNG2Anim`，73
+
+`SimpleNode`，160
+
+单一服务实例，156
+
+`SkewAnim1.css`，89
+
+跳过 Angular 3 的原因，3
+
+智能组件，58
+
+`StateComponent`，38
+
+有状态与无状态组件，20
+
+`Store`，Flux 模式，191
+
+`StrictNullChecks`，268
+
+结构型指令，8
+
+`student.component.html`，22–23
+
+`student.component.spec.ts`，22
+
+`student.component.ts`，21–22
+
+`StudentDetailsComponent`，57
+
+`styles` 属性，25
+
+`subscribe()` 方法，101，103，107，244–245
+
+SVG，参见可缩放矢量图形
+
+`SVGEllipse1`，75
+
+`SVG Observables 1 Anim1.html`，255–257
+
+`SVGObservables1MouseMove1.html`，257–260
+
+语法，23
+
+## T
+
+`take()`，248–250
+
+模板驱动表单，128–129
+
+`template`/`templateUrl` 属性，7，11，17–18，20，25，33，48
+
+终端操作符，244–246
+
+第三方用户界面组件，131–132
+
+`this.elementRef`，287
+
+3D 动画效果，83–85
+
+`timeout()` 操作符，252
+
+`TodoInput` 类，46，47
+
+`todoinput.ts`，46–47
+
+`todolist.ts`，47
+
+`TodoService`，47–48
+
+`todoservice.ts`，48
+
+`transition()` 函数，83，93–94
+
+摇树优化，7，275–277
+
+`trigger()` 函数，93
+
+`tsconfig-aot.json`，274
+
+`tsconfig.json`，268，270–271
+
+双向数据绑定，7，131
+
+TypeScript 文件 `app.ts`，183–185
+
+TypeScript 文件，4–7，291–292
+
+- `app.component.ts`，12
+- `app.module.ts`，12
+- 接口，111–113
+- 版本，3
+
+## U
+
+`Universal Angular`，181–185
+
+`main.server.js`，182–183
+
+`unsubscribe()` 方法，245
+
+`UpperCaseService`，145–146
+
+`User` 类，50
+
+`user.component.ts`
+
+- 自定义管道，143
+- Github 用户，154–155
+- `User` 类，147–148
+- `userForm` 变量，135
+
+用户界面（UI）
+
+- 组件，59–60
+- 控件，29
+- `userlist.jade` 模板，176
+
+`UserService` 类，155
+
+`user.service.ts`，148
+
+`users.ts`，124–125
+
+## V
+
+验证器，137
+
+`ViewChild` 装饰器，287
+
+`ViewEncapsulation`，58
+
+`ViewEncapsulation.Emulated`，58
+
+`ViewEncapsulation.Native`，58
+
+`ViewEncapsulation.None`，58
+
+## W
+
+`Webpack`，5，9，126，280–281
+
+- 目标，281
+- 热模块重载与，283–284
+- 使用，281–283
