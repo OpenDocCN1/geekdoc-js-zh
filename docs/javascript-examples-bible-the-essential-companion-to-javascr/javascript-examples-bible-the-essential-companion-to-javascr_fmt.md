@@ -1,0 +1,19847 @@
+
+# JavaScript 示例圣经：JavaScript Bible 必备指南
+
+## 前言
+
+在我编写计算机书籍的职业生涯中，贯穿始终的主线是：我倾向于写一本我起初为了学习新技术时希望拥有的书。由于我必须在没有现有模型的情况下编写这本书，因此我会尽力掌握这项技术，然后通过编写这本书来像我当年需要的那样帮助其他初学者，但要比我更快、更少一些痛苦、焦虑和困惑。为了实现这一目标，我会尽可能多地编写必要的内容，以按照读者所需的深度覆盖该主题。
+
+当我开始编写后来成为《JavaScript 圣经》（JavaScript Bible）的书时，已经有可以遵循的模型了（我之前的三个版本），此外还有大量的新材料，其中许多内容尚未在任何地方被记录。我还承担了整合 JavaScript 语言在各种浏览器品牌和版本应用中那些经常冲突的哲学理念的责任。解决这些冲突我在为客户进行编程工作时面临的挑战，我很乐意与追随其后的程序员分享我的解决方案和方法。
+
+作为我的编辑，通过统计我为这些新版汇编的页数，我们发现页数超过了打印机的印刷能力，即使是使用硬装本（金色版）所能实现的厚度也无法容纳。显然，我写的每一个字并不是珍贵到无法删减的程度。但我们超出了容量数百页。删减那么多内容将导致语言或文档对象词汇表被剔除在外。
+
+幸运的是，正如之前的版本中所做的那样，新版本的计划包括在附带的 CD-ROM 中提供书籍的 Adobe Acrobat 版本。虽然为了阅读做出了重大的妥协，但可以将书籍的部分内容移动到 CD-ROM 中，并将最重要的部分保留在打印页面上。对于平装版第 4 版，参考章节中较少使用或高级的主题被移除了；对于硬装金色版，高级章节被放回了书中（以及该版本额外增加了 15 个章节），而 JavaScript 教程被放逐到了 CD-ROM。
+
+但即使在做了关于哪些章节可以放入 CD-ROM 的艰难决定后，两卷书的页数仍然过多。必须有其他东西——一件大事——被删掉。唯一让我们摆脱页数魔咒的剩余组合，是参考词汇表中所有的示例（Example）部分。通过对这些提取内容不加区分——即提取所有内容而不是只提取选中的部分——我们可以向读者传达一个一致的组织模型。
+
+最终，第三部分和第四部分的示例部分进入了这部大书两个版本 CD-ROM 中的附录 F。我知道，作为我自己书籍的读者（而且考虑到我现在的年纪数了），我并不会喜欢在书和屏幕之间来回翻看，以刷新我对某个术语的记忆并看到它的实际运行情况。对于许多《JavaScript 圣经》的读者来说，更令人愉悦的解决方案是包含一个示例部分打印版本的独立卷。这本新书将作为《JavaScript 圣经》第 4 版和金色版的配套。
+
+以附录 F 为起点，我按照与《JavaScript 圣经》参考章节相同的思路将内容分成了章节。这给了我一个机会，以全新的眼光研究每个章节的示例。示例没有变，但我有机会将读者的注意力引导到我认为对掌握文档级或核心语言对象特别有帮助的示例上。因此，这本书的每一章都从一个场景设定和一份你应该关注的亮点列表开始。由于你可能会不时地浏览这本书，我添加了许多代码列表页面的插图。这些图将帮助你在页面加载到浏览器时，视觉化重要的列表代码。
+
+现在你了解了《JavaScript 示例圣经》（JavaScript Examples Bible）背后的故事。预算有限的读者可能不会为一个看起来像是他们已经拥有的电子格式内容的打印版支付更多钱而感到兴奋。如果是这样，像我一样，喜欢印刷品的可携性和视觉扫描性，请保留这本书。
+
+## 本书的组织方式
+
+按照与《JavaScript 圣经》参考章节相同的思路，我将内容分成了章节。这给了我一个机会，以全新的眼光研究每个章节的示例。示例没有变，但我有机会将读者的注意力引导到我认为对掌握文档级或核心语言对象特别有帮助的示例上。因此，这本书的每一章都从一个场景设定和一份你应该关注的亮点列表开始。由于你可能会不时地浏览这本书，我添加了许多代码列表页面的插图。这些图将帮助你在页面加载到浏览器时，视觉化重要的列表代码。
+
+现在你了解了《JavaScript 示例圣经》背后的故事。预算有限的读者可能不会为一个看起来像是他们已经拥有的电子格式内容的打印版支付更多钱而感到兴奋。如果是这样，像我一样，喜欢印刷品的可携性和视觉扫描性，请保留这本书。
+
+## 本书的特征
+
+为了在文中更容易对特定浏览器和浏览器版本进行排序，大多数浏览器引用由两个字母的缩写和一个版本号组成。例如，`IE5` 表示任何操作系统上的 Internet Explorer 5；`NN6` 表示任何操作系统上的 Netscape Navigator 6。如果某个功能是在特定版本的浏览器中引入并在后续版本中支持，则数字后会有一个加号 (`+`)。例如，标记为 `IE4+` 的功能表示至少需要 Internet Explorer 4，但该功能也适用于 IE5、IE5.5 等。偶尔，某些功能或突出行为仅适用于一种操作系统。例如，标记为 `IE4+/Windows` 的功能意味着它适用于 Windows 版本的 Internet Explorer 4 或更高版本。作为参考点，第一个脚本的浏览器是 NN2、IE3/Windows 和 IE3.01/Macintosh。此外，Windows 版 IE3 可以配备两个版本的 JavaScriptdll 文件。对较早版本的引用为 `IE3/J1`，而较新版本的引用为 `IE3/J2`。你主要将在参考章节中的兼容性表中看到这种记法。
+
+## CD-ROM
+
+附带的 CD-ROM 包含了《JavaScript 圣经》（金色版）中全套可运行的 HTML 文档。这些适用于书中和此书中。你可以使用启用 JavaScript 的浏览器运行这些示例。此页面显示了兼容每个示例的浏览器。附录 A 中的快速参考以 .pdf 格式位于 CD-ROM 中，供你打印作为参考。CD-ROM 中包含了 Adobe Reader，以便你阅读此 .pdf 文件。最后，书的内容以 .pdf 格式位于 CD-ROM 中，方便搜索。
+
+## 格式和命名规范
+
+书中的脚本列表和单词使用了等宽字体以使其与正文区分。由于页面宽的限制，脚本列表的行有时会发生不自然的折行。在这种情况下，脚本的其余部分将下一行，并与列表边缘对齐，就像在开启了自动换行的文本编辑器中显示一样。如果你自己在文档中输入脚本列表时这些折行导致了问题，我鼓励你访问 CD-ROM 上的对应列表以查看它应该的样子。
+
+为了在文中更容易对特定浏览器和浏览器版本进行排序，大多数浏览器引用由两个字母的缩写和一个版本号组成。例如，`IE5` 表示任何操作系统上的 Internet Explorer 5；`NN6` 表示任何操作系统上的 Netscape Navigator 6。如果某个功能是在特定版本的浏览器中引入并在后续版本中支持，则数字后会有一个加号 (`+`)。例如，标记为 `IE4+` 的功能表示至少需要 Internet Explorer 4，但该功能也适用于 IE5、IE5.5 等。偶尔，某些功能或突出行为仅适用于一种操作系统。例如，标记为 `IE4+/Windows` 的功能意味着它适用于 Windows 版本的 Internet Explorer 4 或更高版本。作为参考点，第一个脚本的浏览器是 NN2、IE3/Windows 和 IE3.01/Macintosh。此外，Windows 版 IE3 可以配备两个版本的 JavaScriptdll 文件。对较早版本的引用为 `IE3/J1`，而较新版本的引用为 `IE3/J2`。你主要将在参考章节中的兼容性表中看到这种记法。
+
+## 致谢
+
+由于本书的大部分内容是作为《JavaScript 第四版》或《JavaScript圣经》的一部分创建的，因此您在黄金版中看到的致谢同样适用于本书。但是，这本《JavaScript 实例圣经》的诞生，如果没有 Hungry Minds, Inc. 专职员工的额外努力是不可能实现的。特别地，我要感谢 Sharon Cox 将我的想法转化为书名，感谢编辑 Neil Romanovsky，他在为第4版和黄金版统筹了超过 4,000 页的内容后，又接手了本书，以保持整个系列书籍的连贯性。还要感谢我的朋友和家人，他们肯定已经听厌了我在几个月里一次又一次、甚至三次达到该项目进度里程碑的调侃。
+
+## 目录
+
+- 前言 ..................................................................................................................................................... ix
+- 致谢 ........................................................................................................................................ xiii
+- 第一章：通用 HTML 元素对象（第 15 章） ................................................ 1
+- 第二章：窗口与框架对象（第 16 章） ....................................................... 127
+- 第三章：位置与历史对象（第 17 章） ................................................ 205
+- 第四章：文档与主体对象（第 18 章） ............................................. 223
+- 第五章：正文对象（第 19 章） ................................................... 265
+- 第六章：图像、区域与地图对象（第 22 章） ................................................ 317
+- 第七章：表单与相关对象（第 23 章） ............................................ 335
+- 第八章：按钮对象（第 24 章） ................................................................ 343
+- 第九章：文本相关的表单对象（第 25 章） ................................... 357
+- 第十章：Select、Option 和 Optgroup 对象（第 26 章） ....................... 369
+- 第十一章：表格与列表对象（第 27 章） ....................................................... 381
+- 第十二章：导航器及其他环境对象（第 28 章） ............................... 397
+- 第十三章：事件对象（第 29 章） ................................................................ 409
+- 第十四章：样式表对象（第 30 章） ....................................................... 435
+- 第十五章：NN4 图层对象（第 31 章） ...................................................... 441
+- 第十六章：字符串与数字对象（第 34 和 35 章） ....................... 469
+- 第十七章：数组对象（第 37 章） ........................................................ 487
+- 附录：CD-ROM 包含内容 ................................................................... 497
+- 索引 .......................................................................................................................... 499
+- Hungry Minds, Inc. 用户许可协议 ................................................ 528
+- CD-ROM 安装说明 ................................................................................... 532
+
+# 第一章：通用 HTML 元素对象（第 15 章）
+
+## 示例亮点
+
+- 遵循 `disabled` 属性的步骤，查看如何在 IE4+ 和 NN6 中禁用表单控件。IE5.5 允许你禁用页面上的任何元素，正如你在遵循示例操作时实时看到的那样。
+- 资深 IE 脚本熟悉 `innerHTML` 和 `innerText` 属性的威力。列表 15-1 巩固了这两个相关属性之间的精确差异。只有这些属性中的一个（`innerHTML`）在 NN6 中得到了实现。
+- 掌握控制元素位置和尺寸的属性细节并非易事，正如《JavaScript 圣经》中所述。但你可以通过练习 IE4+ 的 `client-`、`offset-` 和 `scroll-` 相关属性示例，以及 NN6 的 `offset-` 相关属性示例，来帮助你可视化这些属性的控制作用。如果你正在编写跨浏览器应用程序，请务必在两个浏览器中都练习这些 offset 相关属性以进行对比。
+- 对比 IE5+ 的 `attachEvent()` 方法和 NN6 的 `addEventListener` 方法，用于为对象分配事件处理程序。尽管方法名称不同，但两者的功能完全相同。
+- 观察 `getAttribute()` 方法在当属性名为字符串且名称与分配的元素属性名相同时，如何返回对象的属性值。根据 W3 DOM 标准，`getAttribute()` 方法是检索属性值的规定方法。
+- 你可以看到 `getElementsByTagName()` 方法如何返回一个具有特定标签的嵌套元素数组。这是一个很好的方法，例如用于获取表格内所有单元格的一维数组。
+- 花时间比较各种插入（insert-）和替换（replace-）相关方法从不同角度的操作方式。在 IE 世界中，以及 W3C DOM 世界中，这些方法在当前元素的子节点上操作。
+- 对于 IE5+，Windows 提供了许多事件处理程序，例如 `onBeforeCopy`、`onPaste`、`onCut` 和 `onPaste`，让脚本管理剪板中保留的特定信息。这些事件处理程序还可以配合 `onContextMenu` 事件处理程序使用，以便自定义右键菜单。
+- 另一组 IE5+/Window 处理器对用户在页面上拖放元素提供了极好的控制。列表 15-37 在这方面特别有趣。
+- 列表 15-41 显示了一个跨浏览器事件以及如何从事件中获取键和字符信息。你会看到适用于 IE4+、NN4 和 NN6 模型的事件处理。
+- 许多鼠标相关的事件属于所有 HTML 元素。列表 15-42 和 15-43 展示了简单的图像切换和元素拖拽。
+
+## 通用对象
+
+### 属性
+
+#### accessKey
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+**示例**
+
+当加载列表 15-1 中的脚本时，调整浏览器窗口的高度，直到你看不到第二个分割线（divider rule）以下的内容。在设置（Settings）部分输入任何字符并按回车键。（回车键可能会导致你的电脑鸣响）。然后按住 Alt (Windows) 或 Ctrl (Mac) 键同时按下同一个键盘键。第二个分割线下方的元素应该出现在视野中。
+
+### 列表 15-1: 控制 accessKey 属性
+
+```html
+<HTML>
+<HEAD>
+<TITLE>accessKey Property</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function assignKey(type, elem) {
+  if (window.event.keyCode == 13) {
+    switch (type) {
+      case "button":
+        document.forms["output"].1.accessKey = elem.value
+        break
+      case "text":
+        document.forms["output"].2.accessKey = elem.value
+        break
+      case "table":
+        document.all.myTable.accessKey = elem.value
+    }
+  }
+  return false
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<h1>accessKey 属性实验室</h1>
+<HR>
+Settings:<BR>
+```
+
+### 列表 15-1 (续)
+
+```html
+<FORM NAME="input">
+为下面的按钮分配 accessKey 值并按回车：
+<INPUT TYPE="text" SIZE=2 MAXLENGTH=1
+onkeypress="return assignKey('button', this)">
+<BR>
+为下面的文本框分配 accessKey 值并按回车：
+<INPUT TYPE="text" SIZE=2 MAXLENGTH=1
+onkeypress="return assignKey('text', this)">
+<BR>
+为下面的表格分配 accessKey 值（仅限 IE5.5）并按回车：
+<INPUT TYPE="text" SIZE=2 MAXLENGTH=1
+onkeypress="return assignKey('table', this)">
+</FORM>
+<BR>
+然后按 Alt (Windows) 或 Control (Mac) + 键。
+调整浏览器窗口大小，使看不到低于此行的内容。
+<HR>
+
+<FORM NAME="output" onSubmit="return false">
+<INPUT TYPE="button" NAME="access1" VALUE="Standard Button">
+<P></P>
+<INPUT TYPE="text" NAME="access2">
+<P></P>
+<TABLE ID="myTable" CELLPADDING="10" ORDER="2">
+<TR>
+<th>Quantity</th><th>Description</th><th>Price</th>
+</TR>
+<TBODY COLOR="red">
+<TR>
+<TD WIDTH="100">Primary Widget</td><td>$14.96</td>
+</TR>
+<TD WIDTH="100">Secondary Widget</td><td>$14.96</td>
+</TR>
+</TBODY>
+</TABLE>
+</BODY>
+</HTML>
+```
+
+> 注意：在 IE 中，Alt (Windows) 或 Control (Mac) + 键的组合会将焦点带到。
+
+#### all
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 兼容性 | | | | | | | | |
+
+#### behaviorUrns
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 兼容性 | | | | | | ✓ | ✓ | |
+
+**示例**
+
+以下函数嵌入在一个完整的 IE 行为示例中（本章列表 15-19）。它报告了 `behaviorUrns` 数组的长度，并显示——如果返回了值——行为的 URL。
+
+```javascript
+function showBehaviors() {
+  var num = document.all.myP.behaviorUrns.length
+  var msg = "The myP element has " + num + " behavior(s)."
+  if (num > 0) {
+    msg += "Name(s): \r\n";
+    for (var i = 0; i < num; i++) {
+      msg += document.all.myP.behaviorUrns[i] + "\r\n";
+    }
+  }
+  alert(msg)
+}
+```
+
+#### canHaveChildren
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 兼容性 | | | | | | ✓ | ✓ | |
+
+**示例**
+
+列表 15-2 使用颜色来区分可以拥有子元素和不能的元素。第一个按钮将页面上所有可见元素的样式属性设置为红色。因此，元素（包括通常不产生子元素的 HR 和 INPUT）都会受到颜色变化的影响。如果你重置页面并点击最大的按钮，只有那些可以包含嵌套元素的元素接收颜色。
+
+### 列表 15-2: 读取 canHaveChildren 属性
+
+```html
+<HTML>
+<HEAD>
+<TITLE>canHaveChildrenProperty</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+```
+
+```javascript
+function colorAll() {
+  for (var i = 0; i < document.all.length; i++) {
+    document.all[i].style.color = "red"
+  }
+}
+```
+
+```javascript
+function colorChildBearing() {
+  for (var i = 0; i < document.all.length; i++) {
+    if (document.all[i].canHaveChildren) {
+      document.all[i].style.color = "red"
+    }
+  }
+}
+```
+
+
+
+```html
+</SCRIPT>
+<HEAD>
+<BODY>
+<HI>canHaveChildren 属性实验室</HI>
+<HR>
+<FORM NAME="input">
+<INPUT TYPE="button" VALUE="所有元素染色" onclick="colorAll()"
+<BR>
+<INPUT TYPE="button" VALUE="重置" onclick="history.go(0)"
+<BR>
+<INPUT TYPE="button" VALUE="仅对可子元素的元素染色" onclick="colorChildBearing()"
+</FORM>
+<BR>
+<HR>
+<FORM NAME="output">
+<INPUT TYPE="checkbox" NAME="access2" CHECKED>你的基础复选框
+<P</P>
+<INPUT TYPE="text" NAME="access2" VALUE="一些文本框文字。">
+<P</P>
+</FORM>
+```
+
+| 数量 | 描述 | 价格 |
+|---|---|---|
+| 主组件 | | $114.96 |
+| | 次要组件 | $114.96 |
+
+```html
+<TABLE id="myTable" CELLPADDING="10" ORDER=2>
+<TR>
+<th>数量</th><th>描述</th><th>价格</th>
+</TR>
+<BODY>
+<TR>
+<TD WIDTH=100>主组件</td><td>$114.96</td>
+</TR>
+<TR>
+<td</td><td>次要组件</td><td>$114.96</td>
+</TR>
+</BODY>
+</TABLE>
+```
+
+```html
+</BODY>
+</html>
+```
+
+# 通用 HTML 元素对象
+
+## canHaveHTML
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | ✓ |
+
+### 示例
+
+使用评估器（《JavaScript 圣经》第 13 章）对`canHaveHTML`属性进行实验。在顶部文本框中输入以下语句并观察结果：
+
+```javascript
+document.all.input.canHaveHTML
+document.all.myP.canHaveHTML
+```
+
+第一条语句返回`false`，因为`INPUT`元素（在此情况下为顶部的字段）不能包含嵌套 HTML。但`myP`元素是一个`P`元素，乐意接受 HTML 内容。
+
+## childNodes
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+### 示例
+
+`childNodes()`方法（在《JavaScript 圣经》第 4 章中描述）通过`objRef`参数累加来自某个视图的子节点列表。你可以通过在示例 15-3 中输入以下语句来测试它：
+
+```javascript
+childNodes()
+```
+
+`childNodes()`方法显示了`objRef`对象的 HTML 元素之间的关系。你可以通过在示例 15-3 中输入以下语句来测试它：
+
+```javascript
+childNodes("myP")
+```
+
+`childNodes()`方法显示了`objRef`对象的 HTML 元素之间的关系。你可以通过将结果与源代码进行比较来对每个元素进行染色。
+
+### 列表 15-3：收集子节点
+
+```javascript
+function childNodes(objRef, n) {
+  var obj
+  if (objRef) {
+    if (typeof objRef == "string") {
+      obj = document.getElementById(objRef)
+    } else {
+      obj = objRef
+    }
+  }
+  obj = document.body.parentElement ? document.body.parentNode : null;
+  var output = ""
+  var indent = "  "
+  var i, group
+  if (n) {
+    for (i = 0; i < n; i++) {
+      indent += "----"
+  }
+  } else {
+    var n = 0
+    output += "Children of " + obj.tagName
+    output += "====================\n"
+  }
+  var group = obj.childNodes
+  for (i = 0; i < group.length; i++) {
+    output += indent
+    switch (group[i].nodeType) {
+      case 1:
+        output += "<" + group[i].tagName
+        output += (group[i].id) ? " ID=" + group[i].id : ""
+        output += (group[i].name) ? " NAME=" + group[i].name : ""
+        output += "\n"
+        break
+      case 3:
+        txt = group[i].value.substr(0,15)
+        output += "[Text:" + txt.replace(/\r\n)/g,"<cr>")
+        if (group[i].value.length > 15) {
+          output += "..."
+        }
+        output += "\n"
+        break
+      case 8:
+        output += "[COMMENT]\n"
+        break
+      default:
+        output += "[Node Type = " + group[i].nodeType + "]\n"
+    }
+  }
+  return output
+}
+```
+
+### 列表 15-3（续）
+
+```javascript
+if (group.length > 0) {
+    childNodes(group[i], n+1)
+}
+```
+
+## children
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 |
+|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | |
+
+### 列表 15-4：收集元素
+
+```javascript
+function walkChildren(objRef, n) {
+  var obj
+  if (objRef) {
+    if (typeof objRef == "string") {
+      obj = document.getElementById(objRef)
+    } else {
+      obj = objRef
+    }
+  }
+  obj = document.body.parentElement ? document.body.parentNode : null;
+  var output = "";
+  var indent = "  "
+  var i, group
+  if (n) {
+    for (i = 0; i < n; i++) {
+      indent += "----"
+    }
+  } else {
+    var n = 0
+    output += "Children of " + obj.tagName
+    output += "====================\n"
+  }
+  var group = obj.childNodes;
+  for (i = 0; i < group.length; i++) {
+    output += indent
+    switch (group[i].nodeType) {
+      case 1:
+        output += "<" + group[i].tagName;
+        output += (group[i].id) ? " ID=" + group[i].id : ""
+        output += (group[i].name) ? " NAME=" + group[i].name : ""
+        output += "\>\n"
+        break;
+    }
+  }
+  return output;
+}
+```
+
+## className
+
+元素的样式通过将`className`属性设置为现有的类选择器和空字符串，在"开启"和"关闭"之间切换。当你将`className`设置为空字符串时，`H1`元素的默认行为控制了第一个标题的显示。点击按钮会强制样式表规则覆盖第一个`H1`元素的默认行为。
+
+你还可以创建多个具有不同类选择器标识的样式规则版本，并随时将其应用于给定的元素。
+
+## clientHeight
+
+## clientWidth
+
+| NN2 | NN3 | NN4 | NN6 | IE3/JI | IE3/2 | IE4 | IE5 | IE5.5 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+《JavaScript 圣经：JavaScript 圣经必备伴侣》
+
+列表 15-6 调用了包含段落元素的`DIV`元素的`clientHeight`和`clientWidth`属性。`DIV`元素的宽度仅在其样式表规则中指定，这意味着段落文本会在该宽度内换行，并根据需要向下延伸以显示整个段落。随后，`clientHeight`属性计算出 logo 图片应该在紧随`DIV`之后所在的位置，无论文本长度如何。作为奖励，`clientWidth`属性有助于脚本相对于段落水平居中图像。
+
+### 列表 15-6：使用 clientHeight 和 clientWidth 属性
+
+```html
+<HTML>
+<HEAD>
+<TITLE>clientHeight 和 clientWidth 属性</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function showLogo() {
+  var paragraph = document.all.myDIV.clientWidth
+  var paragraphH = document.all.myDIV.clientHeight
+  // 修正 Windows/Mac 差异
+  var paragraphTop = (document.all.myDIV.clientTop) ?
+  document.all.myDIV.clientTop :
+  document.all.myDIV.offsetTop;
+  var logoW = document.all.logo.style.pixelWidth
+  // 相对于段落水平居中 logo
+  document.all.logo.style.pixelLeft = (paragraph-logoW)/2
+  // 将图像置于段落结束正下方
+  document.all.logo.style.pixelTop = paragraphTop + paragraphH
+  document.all.logo.style.visibility = "visible"
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<BUTTON onclick="showLogo()">定位并显示 Logo 图</BUTTON>
+<DIV id="logo" style="position:absolute; width:120px; visibility:hidden"><IMG
+SRC="logo.gif</DIV>
+<DIV id="myDIV" style="width:200px">
+```
+
+（上上）
+
+`elementObject.clientHeight`
+
+### 列表 15-6（续）
+
+```html
+<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+此处为占位符文本：Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim minim ad veniam, quis nostrud exercitation ullamco nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse dolore fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</P>
+</DIV>
+<BODY>
+</HTML>
+```
+
+为了辅助 logo 的垂直定位，`DIV`对象的`offsetTop`属性提供了`DIV`相对于其外部容器（`BODY`）的起始位置。遗憾的是，IE/Mac 使用`clientTop`属性来获取所需的尺寸。该测量值（赋值给变量`paragraph`）加上`DIV`的`clientHeight`，就得到了图像的顶部坐标。
+
+如果你只使用 IE5，可以移除`P`元素周围的`DIV`包装器，并直接将`STYLE`属性赋值给`P`元素。脚本随后就可以读取`P`对象的`clientHeight`和`clientWidth`。
+
+## contentEditable
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 兼容性 | | | | | | | | ✓ |
+
+### 示例
+
+列表 15-7 是如何将文档内的文本转换为可编辑元素的简化演示。当你点击新加载页面的按钮时，`toggleEdit()`函数通过目标`DIV`对象的`isEditable`属性获取当前可编辑状态的反面。在下一条语句中，我们通过将新值赋给`DIV`的`Editable`属性来开启该元素的编辑功能。为了增强效果，将`DIV`的文本变为红色，以便就页面上哪些内容可编辑提供额外的用户反馈。你还可以将按钮标签更改为指示下次点击时将执行的操作的文字。
+
+### 列表 15-7：使用 contentEditable 属性
+
+```html
+<HTML>
+<HEAD>
+<STYLE TYPE="text/css">
+.normal { color: black }
+.editing { color: red }
+```
+
+`elementObject.contentEditable`
+
+```html
+<STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+function toggleEdit() {
+  var newState = !editableText.isContentEditable;
+  editableText.className = (newState) ? "editing" : "normal";
+  editBtn.innerText = (newState) ? "禁用编辑" : "启用编辑"
+}
+</SCRIPT>
+<BODY>
+<H1>编辑内容</H1>
+<HR>
+<P>开启编辑以修改以下文本：</P>
+<DIV id="editableText">动态编辑此处</p>
+<BUTTON id="editBtn" onclick="toggleEdit()" onFocus="this.blur">
+启用编辑
+</BUTTON</P>
+</BODY>
+</HTML>
+```
+
+`BUTTON`元素有一个`onFocus`处理程序，它会立即调用按钮的`blur()`方法。这防止了在编辑期间按下空格键时意外触发按钮点击。
+
+## currentStyle
+
+| NN2 | NN3 | NN4 | NN6 | IE3/JI | IE3/2 | IE4 | IE5 | IE5.5 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 兼容性 | | | | | | | | |
+
+### 示例
+
+使用`currentStyle`属性可以获取元素的当前样式。在 15-8 示例中，我们通过该属性检查元素的显示状态……（注：由于原文文本在此处严重缺失，此处根据上下文进行了逻辑性翻译）。
+
+页面上的另一个按钮允许你在文档的初始部分版本和完整的未格式化版本之间进行切换。要将整个文档作为单条记录加载，第二个`OBJECT`元素的`FieldDel`和`RowDel`参数通过将其替换为文档中完全没有出现过的字符，消除了它们的默认值。由于外部文件在文件中没有文件名，默认值（此文档中列的`column1`）就是数据字段。因此，在`toggleComplete()`函数中，`dataSrc`属性被更改为所需的`OBJECT`元素，`dataField`属性被设置为数据源的正确值，而`dateFormat`属性被更改以反映源内容的不同意图（渲染为 HTML 或纯文本）。当显示显示整个文档时，你可以使用两个单选按钮来切换按钮。通过为`SPAN`元素分配一个`className`值，该元素引用了文档样式表中的类选择器。当`toggleComplete()`函数将`className`属性重置为空时，默认属性（正常的内联显示样式）将起作用。
+
+另一个示例演示了 TDC 在脚本控制下所拥有的强大。列表 15-9 显示了来自奥斯卡奖信息的制表符分隔文件。该文件有八列数据，每个列标题被视为一个字段名：年份、最佳影片、最佳导演、最佳导演电影、最佳女主角、最佳影片、最佳男主角和最佳演员。对于页面设计，每条记录中只出现五个字段：年份、电影、导演、女演员和演员。注意表格及其内容的 HTML 绑定到了数据源对象和数据中的字段。
+
+此示例的"动态"部分在于，一旦数据加载到浏览器，你就可以对数据进行排序和过滤，而无需再次访问原始源数据。TDC 对象具有`Sort`和`Filter`属性，这些允许你对当前加载的数据进行操作。最简单的排序类型指示整个数据应该根据哪个字段（或通过分号分隔的字段名列表）进行排序。排序字段名称的前面加有`+`（表示升序）或`-`（表示降序）符号。在设置数据对象的`Sort`属性后，调用其`Reset()`方法告诉对象应用新属性。绑定中的数据将立即重新绘制以反映任何更改。
+
+同样，你可以告诉数据集合显示符合特定标准的记录。在列表 15-9 中，你选择的一对单选按钮为`Filter`属性的设置提供了界面（见图 1-1）。例如，你可以过滤输出，仅显示"最佳影片"与获奖"最佳女主角"的同一电影的记录。简单的过滤表达式基于字段名：
+
+```javascript
+dataObj.Filter = "Best Picture" = "Best Actress Film",
+```
+
+### 列表 15-9：排序和过滤绑定数据
+
+```html
+<HTML>
+<HEAD>
+<TITLE>数据绑定-排序</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+function sortBy(type) {
+  oscars.Sort = (type == "normal") ? "-Year" : "+Year
+  oscars.Reset(0);
+}
+
+function filterCommon(form) {
+  var filterExpr1 = form.filter1.options[form.filter1.selectedIndex].value
+  var filterExpr2 = form.filter2.options[form.filter2.selectedIndex].value
+  var operator = (form.operator[0].checked) ? "-" : "<"
+  var filterExpr = filterExpr1 + operator + filterExpr2
+  oscars.filter = filterExpr
+  oscars.Reset(0);
+}
+
+</SCRIPT>
+<HEAD>
+<BODY>
+<P>奥斯卡奖 1978-1997</B</P>
+<FORM>
+<P>按以下排序列表 <A href="javascript:sortBy('normal')">从新到旧</A> 或 <A href="javascript:sortBy('reverse')">从旧到新</A</P>
+<P>过滤记录列表
+<SELECT NAME="filter1" onchange="filterCommon(this.form)">
+<OPTION VALUE="Best Picture">最佳影片</OPTION>
+<OPTION VALUE="Best Director">最佳导演电影</OPTION>
+<OPTION VALUE="Best Actress">最佳女演员电影</OPTION>
+<OPTION VALUE="Best Actor">最佳男演员电影</OPTION>
+</SELECT>
+<INPUT TYPE="radio" NAME="operator" onclick="filterCommon(this.form)">是
+<INPUT TYPE="radio" NAME="operator" onclick="filterCommon(this.form)">不是
+<SELECT NAME="filter2" onchange="filterCommon(this.form)">
+<OPTION VALUE="Best Picture">最佳影片</OPTION>
+<OPTION VALUE="Best Director">最佳导演电影</OPTION>
+<OPTION VALUE="Best Actress">最佳女演员电影</OPTION>
+<OPTION VALUE="Best Actor">最佳男演员电影</OPTION>
+</SELECT>
+</P>
+</FORM>
+<TABLE DATASrc="#oscars" BORDER="1" ALIGN="center">
+<THE STYLE="background-color:yellow; text-align:center">
+<TR><td>Year/TD
+<td>Film/TD
+<td>Director/TD
+<td>Actress/TD
+<td>Actor/TD
+</TR>
+</TR>
+</HEAD>
+<TR>
+```
+
+### 列表 15-9（续）
+
+```html
+<TD><DIV ID="col1" DATAFIELD="Year</div</TD>
+<TD><DIV ID="col2" DATAFIELD="Best Picture</div</TD>
+<TD><DIV ID="col3" DATAFIELD="Best Director</div</TD>
+<TD><DIV ID="col4" DATAFIELD="Best Actress</div</TD>
+<TD><DIV ID="col5" DATAFIELD="Best Actor</div</TD>
+</TR>
+</TABLE>
+</OBJECT>
+<BODY>
+</HTML>
+```
+
+更多关于数据源对象及其属性的详细信息，请访问 http://msn.microsoft.com 并搜索"Data Binding"。
+
+![](img/14de829a231bb2cbf5843e2f444fc0b)
+
+## dir
+
+兼容性表格
+
+### 示例
+
+更改此属性是实验的起点。使用该属性进行：`document.getElementById("myP").dir = "rtl"`
+
+## disabled
+
+兼容性表格
+
+### 示例
+
+如果你有 IE5，通过输入以下语句禁用`myP`元素：`document.all.myP.disabled = true`。段落会变灰色。
+
+![](img/14de829a231bb2cbf5843e2f444fc0b)
+
+## document
+
+兼容性表格
+
+### 示例
+
+下面的简化函数接受层级结构中的任何参数。脚本查找对象所在的文档：
+
+```javascript
+function getCompanionCount(obj) {
+  var ownerDoc = obj.document
+  return ownerDoc.length
+}
+```
+
+由于`ownerDoc`变量包含指向文档的有效引用，返回语句使用该引用返回文档的典型属性。
+
+## firstChild
+
+## lastChild
+
+| | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+这两个元素在列表 15-10 中非常有用，它的任务是添加或替换`LI`元素。你可以输入任何想要出现在开头或结尾的文本。使用`firstChild`和`lastChild`属性简化了对列表末端的访问。对于替换子节点的函数，示例使用了`replaceChild()`方法。或者对于 IE4+，你可以修改`firstChild`或`lastChild`返回对象的`innerText`。当你向列表添加项目时，这个示例特别有趣：浏览器会自动重新编号项目以适应列表当前状态。
+
+### 列表 15-10：使用 firstChild 和 lastChild 属性
+
+```html
+<HTML>
+<HEAD>
+<TITLE>firstChild and lastChild Properties</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+// 用于 prepend 和 append() 的辅助函数
+function makeNewLi(txt) {
+  var newItem = document.createElement("LI")
+  newItem.innerHTML = txt
+  return newItem
+}
+
+function prepend(form) {
+  var newItem = makeNewLi(form.input.value)
+  var firstLI = document.getElementById("myList").firstChild
+  document.getElementById("myList").insertBefore(newItem, firstLI)
+}
+
+</SCRIPT>
+<BODY>
+<FORM onsubmit="prepend(this); return false;">
+<input name="input" />
+<input type="submit" value="添加到顶部">
+</FORM>
+<UL id="myList">
+</ul>
+</BODY>
+</HTML>
+```
+
+```javascript
+function append(form) {
+  var newItem = makeLI(form.input.value)
+  var lastLI = document.getElementById("itemList").lastChild
+  document.getElementById("itemList").appendChild(newItem)
+}
+
+function replaceFirst(form) {
+  var newItem = makeLI(form.input.value)
+  var firstLI = document.getElementById("itemList").firstChild
+  document.getElementById("itemList").replaceChild(newItem, firstLI)
+}
+
+function replaceLast(form) {
+  var newItem = makeLI(form.input.value)
+  var lastLI = document.getElementById("itemList").lastChild
+  document.getElementById("itemList").replaceChild(newItem, lastLI)
+}
+
+</script>
+<HEAD>
+<body>
+<h1>firstChild 和 lastChild 属性</h1>
+<HR>
+<FORM>
+<LABEL>在 OL 元素中添加或替换文本：</LABEL>
+<INPUT TYPE="text" NAME="input" SIZE="50"><BR>
+<INPUT TYPE="button" VALUE="在顶部插入" onclick="prepend(this.form)">
+<INPUT TYPE="button" VALUE="在底部追加" onclick="append(this.form)">
+<BR>
+<INPUT TYPE="button" VALUE="替换第一个项目" onclick="replaceFirst(this.form)">
+<INPUT TYPE="button" VALUE="替换最后一个项目" onclick="replaceLast(this.form)">
+</FORM>
+<P</P>
+<OL id="itemList">
+<li>初始项目 1</li>
+<li>初始项目 2</li>
+<li>初始项目 3</li>
+<li>初始项目 4</li>
+</OL>
+</body>
+</html>
+```
+
+## height
+
+## width
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/4 | IE3/2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | ✓ | | ✓ | ✓ | ✓ |
+
+### 示例
+
+以下示例将表格的宽度增加了 10。
+
+```javascript
+var tableW = parseInt(document.all.myTable.width)
+document.myTable.width = (tableW * 1.1) + "%";
+```
+
+由于`TABLE`元素`WIDTH`属性的初始设置是百分比值，脚本计算会从百分比字符串值中提取数字。在第二条语句中，旧数字增加了 10%，并通过在值末尾附加百分比符号将其转换为百分比字符串。生成的字符串值被赋值给表格的`width`属性。
+
+## hideFocus
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | ✓ |
+
+### 示例
+
+使用评估器（《JavaScript 圣经》第 13 章）在 IE5.5 中测试`hideFocus`属性。在顶部的文本框中输入以下语句，为`myP`元素分配一个`tabIndex`值，以便该元素默认情况下会接收焦点并显示虚线矩形：
+
+```javascript
+document.all.myP.tabIndex = 1
+```
+
+多次按下 Tab 键直到段落获得焦点。现在，禁用焦点矩形：
+
+```javascript
+document.all.myP.hideFocus = true
+```
+
+如果现在多次按下 Tab 键，段落周围就不会出现虚线矩形。为了证明该元素接收了焦点，向下滚动页面到最后，使段落不可见（你可能需要调整窗口大小）。点击页面底部的可获取焦点的元素，然后缓慢按下 Tab 键，直到地址栏工具具有焦点。按一次 Tab 键。页面将滚动并将段落移入视野，但元素周围没有焦点矩形。
+
+## id
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ | ✓ |
+
+`elementObject.id`
+
+### 示例
+
+在脚本中你很少需要访问此属性——除非你正在编写一个辅助工具，该工具遍历页面上的所有元素以提取作者分配的 ID。一旦你知道了对象的 ID（通过`document.getElementById(elemID)`方法），你就可以获取对象引用。但如果出于某种原因，你的脚本不知道文档中第二个段落的 ID，你可以这样提取它：
+
+```javascript
+var elemID = document.all.tags("P")[1].id
+```
+
+## innerHTML
+
+## innerText
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ | |
+
+列表 15-11 生成的示例页面包含一个`H1`元素和一段文本。其目的是演示`innerHTML`和`innerText`在意图上的区别。两个文本框包含相同的 HTML 和标签组合，这替换了段落标签的内容。如果你将第一个框的默认内容应用到标签的`innerHTML`属性，样式将渲染为第一个单词。此外，括号中的文本将被渲染。当你将相同内容应用到标签的`innerText`属性时，标签将如何显示？在列表 15-11 中展示了这两个属性的用法。
+
+### 示例页面
+
+```html
+<html>
+<head>
+<title>innerHTML and innerText</title>
+<style>
+body{font-family="Comic Sans", Arial, sans-serif;}
+h1{font-size:18pt;font-weight:bold;color:gray;}
+.small{font-size:12pt;font-weight:400;}
+</style>
+</head>
+<body>
+<h1>innerHTML and innerText</h1>
+<p>
+<label>在 OL 元素中添加或替换文本：</label>
+<input type="text" name="input" size="50"><br>
+<input type="button" value="在顶部插入" onclick="prepend(this.form)">
+<input type="button" value="在底部追加" onclick="append(this.form)">
+<br>
+<input type="button" value="替换第一个项目" onclick="replaceFirst(this.form)">
+<input type="button" value="替换最后一个项目" onclick="replaceLast(this.form)">
+</p>
+<ol id="itemList">
+<li>初始项目 1</li>
+<li>初始项目 2</li>
+<li>初始项目 3</li>
+<li>初始项目 4</li>
+</ol>
+<p id="myP">
+<label>框一：</label>
+<input type="text" id="box1" value="<b>Hello</b>">
+<label>框二：</label>
+<input type="text" id="box2" value="<i>World</i>">
+</p>
+<script>
+function append(form) {
+  var newItem = makeLI(form.input.value)
+  var lastLI = document.getElementById("itemList").lastChild
+  document.getElementById("itemList").appendChild(newItem)
+}
+
+function replaceFirst(form) {
+  var newItem = makeLI(form.input.value)
+  var firstLI = document.getElementById("itemList").firstChild
+  document.getElementById("itemList").replaceChild(newItem, firstLI)
+}
+
+function replaceLast(form) {
+  var newItem = makeLI(form.input.value)
+  var lastLI = document.getElementById("itemList").lastChild
+  document.getElementById("itemList").replaceChild(newItem, lastLI)
+}
+
+function makeLI(text) {
+  var li = document.createElement("li")
+  li.innerHTML = text
+}  
+
+</script>
+</body>
+</html>
+```
+
+## isEditable
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | |
+
+### 示例
+
+使用评估器（《JavaScript 圣经》第 13 章）在 IE5.5 中测试`hideFocus`属性。在顶部的文本框中输入以下语句，为`myP`元素分配一个`tabIndex`值，以便该元素默认情况下会接收焦点并显示虚线矩形：
+
+```javascript
+document.all.myP.tabIndex = 1
+```
+
+多次按下 Tab 键直到段落获得焦点。现在，禁用焦点矩形：
+
+```javascript
+document.all.myP.hideFocus = true
+```
+
+如果现在多次按下 Tab 键，段落周围就不会出现虚线矩形。为了证明该元素接收了焦点，向下滚动页面到最后，使段落不可见（你可能需要调整窗口大小）。点击页面底部的可获取焦点的元素，然后缓慢按下 Tab 键，直到地址栏工具具有焦点。按一次 Tab 键。页面将滚动并将段落移入视野，但元素周围没有焦点矩形。
+
+## isDisabled
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+### 示例
+
+使用评估器（《JavaScript 圣经》第 13 章）在 IE5.5 中测试`disabled`和`isDisabled`属性。在`myP`和嵌套的`myEM`元素上（刷新页面以获取已知版本）。在顶部的文本框中输入以下语句，检查`myEM`元素的设置：
+
+```javascript
+myEM.isDisabled
+```
+
+值为 false，因为还没有任何父级元素被设置为禁用。现在，禁用周围的`myP`元素：
+
+```javascript
+myP.disabled = true
+```
+
+此时，整个`myP`元素（包括其子元素）都已禁用。通过在文本框中输入语句来证明这一点：
+
+```javascript
+myEM.isDisabled
+```
+
+虽然`myEM`元素显示为禁用状态，但其`disabled`属性并没有发生变化：
+
+```javascript
+myEM.disabled
+```
+
+该属性值保持为默认的 false。
+
+## isMultiLine
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+### 示例
+
+使用 Evaluator（《JavaScript 圣经》中的第 13 章）读取该页面上元素的`isMultiLine`属性。在顶部的文本框中尝试以下语句：
+
+```javascript
+document.body.isMultiLine
+document.forms[0].input.isMultiLine
+myP.isMultiLine
+myEM.isMultiLine
+```
+
+所有文本字段表单控件都报告它们能够占据多行。
+
+## isTextEdit
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ | ✓ |
+
+### 示例
+
+良好的编码规范要求在对任何对象上调用`createTextRange()`方法之前，先让脚本检查此属性。一个典型的实现如下：
+
+```javascript
+if (document.all.myObject.isTextEdit) {
+  var myRange = document.all.myObject.createTextRange()
+  [更多对 myRange 执行的语句]
+}
+```
+
+## lang
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ | ✓ |
+
+`elementObject.lang`
+
+### 示例
+
+`lang`属性的值由包含有效 ISO 语言代码的字符串组成。这些代码至少包含一个主语言代码（例如法语的`"fr"`）以及一个可选的区域标识符（例如瑞士法语的`"fr-ch"`）。为元素分配瑞士德语值的代码如下：
+
+```javascript
+document.all.specialSpan.lang = "de-ch"
+```
+
+## language
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+### 示例
+
+尽管你不太可能会修改此属性，但下面的示例向你展示了如何对表格单元对象进行操作：
+
+```javascript
+document.all.cellA3.language = "vbs"
+```
+
+## lastChild
+
+参见`firstChild`。
+
+## length
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | | | ✓ | ✓ | | ✓ | ✓ |
+
+### 示例
+
+你可以在 Evaluator（《JavaScript 圣经》中的第 13 章）的文本框中尝试以下语句序列，以查看`length`属性如何返回值（并为某些对象设置值）。注意，某些语句仅存在某些浏览器版本。
+
+```javascript
+(所有浏览器) document.forms.length
+(所有浏览器) document.forms[0].elements.length
+(NN3+, IE4+) document.images.length
+(NN4+) document.layers.length
+(IE4+) document.all.length
+(IE5+, NN6) document.getElementById("myTable").childNodes.length
+```
+
+```javascript
+elementObject.length
+```
+
+## nextSibling
+
+## previousSibling
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | | ✓ | ✓ |
+
+### 示例
+
+以下函数为元素的所有子节点分配了相同的类名：
+
+```javascript
+function setAllChildClasses(parentElem, className) {
+  var childElem = parentElem.firstChild;
+  while (childElem.nextSibling) {
+    childElem.className = className;
+    childElem = childElem.nextSibling;
+  }
+}
+```
+
+这个示例无疑不是实现相同结果的唯一方法。使用`for`循环遍历父元素的`childNodes`集合是同样有效的方法。
+
+## nodeName
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ | |
+
+### 示例
+
+以下函数演示了在 IE5+ 文档中为每个`P`元素分配新类名的一种（并不高效的）方法：
+
+```javascript
+function setAllPClasses(className) {
+  for (var i = 0; i < document.all.length; i++) {
+    if (document.all[i].nodeName == "P") {
+      document.all[i].className = className;
+    }
+  }
+}
+```
+
+更高效的方法是使用`getElementsByTagName()`方法获取所有`P`元素的集合，然后直接对它们进行迭代。
+
+## nodeType
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | | |
+
+### 示例
+
+你可以实验查看 ID 为`myP`的元素的属性值。这是一个很好的开始。`P`元素本身的`nodeType`为 1：
+
+```javascript
+document.getElementById("myP").nodeType
+```
+
+该元素有三个子节点：(text)；元素(text) 以及元素的其余(content)。如果你查看任一子节点的`nodeType`，值为 3：
+
+```javascript
+document.getElementById("myP").childNodes[0].nodeType
+```
+
+在 NN6 和 IE5/Mac 中，你可以检查此元素属性（ID 属性）的`nodeType`：
+
+```javascript
+document.getElementById("myP").attributes[0].nodeType
+```
+
+在 NN6 和 IE5/Mac 中，你可以看到`document`对象返回的`nodeType`为 9：
+
+```javascript
+document.nodeType
+```
+
+当 IE5 不支持节点的`nodeType`常量时，其值有时被报告为 1。但更有可能是 undefined。
+
+## nodeValue
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | |
+
+### 示例
+
+第一个示例增加了`TEXTAREA`对象的宽%。在执行数学运算和重新赋值之前，`nodeValue`（NN6 的字符串值）转换为整数：
+
+```javascript
+function widthCols(textAreaElem) {
+  var colWidth = parseInt(textAreaElem.attributes["cols"].nodeValue, 10);
+  textAreaElem.attributes["cols"].nodeValue = (colWidth * 10);
+}
+```
+
+`elementObject.nodeValue`
+
+第二个示例替换了元素的文本，假设该元素不包含进一步的元素：
+
+```javascript
+function replaceText(elem, newText) {
+  if (elem.childNodes.length == 1 && elem.firstChild.nodeType == 3) {
+    elem.firstChild.nodeValue = newText;
+  }
+}
+```
+
+该函数包含一个最终验证：元素仅包含一个节点且为文本类型。赋值语句的另一种版本在 IE 中使用`innerText`属性具有相同的结果：`elem.innerText = newText`
+
+## offsetHeight
+
+## offsetWidth
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | |
+
+### 示例
+
+在 IE4+ 中，可以用 offset 替换列表 15-6 中的`clientHeight`和`clientWidth`。原因是这两个元素的宽度在样式表中硬编码的。因此，`offsetWidth`属性遵循父元素（`BODY`）的默认宽度。在 IE5+ 和 NN6 中，你可以使用 Evaluator 页面上各种对象的`offsetHeight`和`offsetWidth`属性。在文本框中输入以下语句：
+
+```javascript
+document.getElementById("myP").offsetWidth
+document.getElementById("myEM").offsetWidth
+document.getElementById("myP").offsetHeight
+document.getElementById("myTable").offsetWidth
+```
+
+## offsetLeft
+
+## offsetTop
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | | |
+
+`elementObject.offsetTop`
+
+### 示例
+
+IE 脚本语句利用四个"偏移"维度属性来调整`DIV`元素的大小和位置，使其完全覆盖`SP`元素。这可以用于在页面其他地方提供文本输入字段的填空测试。当用户得到答案时，阻塞的`DIV`元素将被揭为正确答案。
+
+```javascript
+document.blocker.style.pixelLeft = document.all.span2.offsetLeft
+document.blocker.style.pixelTop = document.all.span2.offsetTop
+document.blocker.height = document.all.span2.offsetHeight
+document.blocker.width = document.all.span2.offsetWidth
+```
+
+因为`span`元素的`offsetParent`属性是`BODY`，所以定位的`DIV`元素可以使用相同的上下文（至少是默认上下文）来设置`pixelLeft`和`pixelTop`样式属性。（记住定位属性属于元素的样式对象。）`offsetHeight`和`offsetWidth`属性可以读取`SPAN`的尺寸（示例没有边框、外边距或内边距），并将它们分配给`DIV`元素包含的。
+
+这个示例在某些实现中也是危险的。如果`span2`的文本换到新行，`offsetParent`值有足够的像素来容纳两行。`blockImg` `DIV`元素是块级元素，渲染为单个矩形。也就是说，块元素不会变成两个条来跨跨两行的`span2`空间。
+
+## offsetParent
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | | |
+
+### 示例
+
+你可以使用`offsetParent`属性来帮助定位页面上嵌套元素的位置。列表 15-12 演示了脚本如何在 Windows 版 IE 中"向上"遍历`offsetParent`对象的层级结构以组装嵌套元素的位置。
+
+`onLoad`处理程序调用`setPosition()`函数。该函数首先设置一个布尔标记，确定计算是基于 client 还是 offset 属性集。IE4/Windows 和 IE5/Mac 依赖 client 属性，然而使用`while`循环。此循环从单元格的`offsetParent`开始遍历`offsetParent`层级结构，但不包括`document.body`对象。不包括 body 对象是因为它是图像的定位上下文。在 IE5 中，`while`循环只执行一次，仅仅是因为`TABLE`元素位于单元格和 body 之间；在 IE4 中，循环执行两次是为了计算上层级结构中的`TR`和`TABLE`元素。
+
+最后，左侧和顶部测量的累加值被对齐到`DIV`对象样式的定位属性，并使图像可见。
+
+### 列表 15-12：使用 offsetParent 属性
+
+```html
+<HTML>
+<HEAD>
+<TITLE>offset Property</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function setImagePosition() {
+  var cElement = document.all.myCell
+  // 设置标记以判断计算应使用
+  // client- 还是 offset- 属性。
+  // IE3/IE4/Windows 使用 client- 属性；否则
+  // 使用 offset- 属性。这是一个丑陋但必要的
+  // 变通方案。
+  var useClient = (cElement.offsetTop == 0) ?
+    (cElement.offsetParent.tagName == "TR") ? true : false;
+  if (useClient) {
+    var x = cElement.clientLeft
+    var y = cElement.clientTop
+  } else {
+    var x = cElement.offsetLeft
+    var y = cElement.offsetTop
+  }
+  var pElement = document.all.myCell.offsetParent
+  while (pElement != document.body) {
+    if (useClient) {
+      x += pElement.clientLeft
+      y += pElement.clientTop
+    } else {
+      x += pElement.offsetLeft
+      y += pElement.offsetTop
+    }
+    pElement = pElement.offsetParent
+  }
+  document.all.myDIV.style.offsetLeft = x
+  document.all.myDIV.style.offsetTop = y
+  document.all.myDIV.style.visibility = "visible"
+}
+</SCRIPT>
+</HEAD>
+<BODY onload="setImagePosition()">
+<SCRIPT LANGUAGE="JavaScript">
+</SCRIPT>
+<h1>The offset Property/</h1>
+<HR>
+<P>文档加载后，脚本将一个小图像放置在第二个表格单元格的左上角</P>
+<TABLE ORDER=1 ALIGN="center">
+```
+
+`elementObject.offset`
+
+```html
+<TR>
+<TD>这是第一个单元格</TD>
+<TD ID="myCell">这是第二个单元格</TD>
+</TR>
+<TABLE>
+<DIV id="myDIV" STYLE="position:absolute; visibility:hidden; height:12; width:12">
+<IMG SRC="end.gif" HEIGHT-12 WIDTH-12</div>
+</BODY>
+</HTML>
+```
+
+## outerHTML
+
+## outerText
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/JI | IE3/2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | ✓ | ✓ | |
+
+列表 15-13 生成的页面（仅限 IE4+）包含一个`H1`元素标签和一段文本。其目的是演示`outerHTML`和`outerText`在意图上的区别。两个文本框包含相同的属性和 HTML 标签组合，这些组合替换了包含段落标签的元素。
+
+如果你将文本框的默认内容应用到标签对象的`outerHTML`属性，`H1`元素将被一个`SPAN`元素替换，该元素获取了文档早早定义的不同样式规则。注意新`span`元素的 ID 与原始`H1`元素相同。这允许附加到第二个框的脚本访问该对象。但此第二个脚本用原始文本（包括标签）替换了元素。该元素现在消失了，任何更改标签对象的`outerHTML`或`outerText`属性的尝试都会导致错误，因为文档中不再有标签对象。
+
+使用此实验尝试两个文本框中的其他内容。
+
+### 列表 15-13：使用 outerHTML 和 outerText 属性
+
+```html
+<HTML>
+<HEAD>
+<TITLE>outerHTML and outerText Properties</TITLE>
+<STYLE TYPE="text/css">
+```
+
+上上
+
+```css
+elementObject.outerHTML
+```
+
+### 列表 15-13（续）
+
+```css
+H1 (font-size:18pt; font-weight:bold; font-family:"Comic Sans MS", Arial, sans-serif);
+.heading (font-size:20pt; font-weight:bold; font-family:"Arial Black", Arial, sans-serif)
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+function groupLabelAsText(form) {
+  var content = form.inputText.value
+  if (content) {
+    document.all.label.outerText = content
+  }
+}
+function groupLabelAsHTML(form) {
+  var content = form.inputText.value
+  if (content) {
+    document.all.label.outerHTML = content
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+<INPUT TYPE="text" name="inputText" VALUE="<SPAN id="label" CLASS="heading">Article the First</SPAN> SIZE=55>
+<INPUT TYPE="button" value="Change Heading HTML" onclick="setGroupLabelAsHTML(this.form)">
+</P>
+<P>
+<INPUT TYPE="text" name="inputText" VALUE="<SPAN id='label' CLASS='heading'>Article the First</SPAN> SIZE=55>
+<INPUT TYPE="button" value="Change Heading HTML" onclick="setGroupLabelAsHTML(this.form)">
+</P>
+<h1 id="label">ARTICLE I</h1
+<P>Congress shall make no law respecting an establishment of religion, or freedom of speech, or the right of the people peacefully assemble, and to petition the government for redress of grievances</P>
+</BODY>
+</HTML>
+```
+
+## outerDocument
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/JI | IE3/2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | |
+
+使用评估器（第 15 章）探索`ownerDocument`属性。输入以下语句：
+
+```javascript
+document.body.childNodes[5]
+```
+
+结果是文档的引用。你可以使用以下语句：
+
+```javascript
+document.body.childNodes[5]
+```
+
+## parentElement
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/JI | IE3/2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | ✓ | ✓ | |
+
+使用评估器查看元素和非节点的`parentElement`值。从以下语句开始观察结果：
+
+| 表达式 | 结果 |
+|---|---|
+| `document.getElementById("myP").tagName` | P |
+| `document.getElementById("myP").parentElement` | [object] |
+| `document.getElementById("myP").parentElement.tagName` | BODY |
+| `document.getElementById("myP").parentElement.parentElement` | HTML |
+
+## parentNode
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/JI | IE3/2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | ✓ | ✓ | |
+
+使用评估器查看元素和非节点的`parentNode`属性。
+
+```javascript
+document.getElementById("myP").childNodes[0].nodeName
+document.getElementById("myP").childNodes[0].element（仅限 IE）
+```
+
+注意（在 IE 中）文本节点没有`parentElement`属性。
+
+## parentElementEdit
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/JI | IE3/2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | ✓ | ✓ | |
+
+列表 15-14 生成的页面包含一段希腊文本和三个单选按钮，用于选择段落块：一个字符、单词或句子。如果你点击段落的任何位置，`onClick`事件处理程序将调用`select()`函数。第一个函数检查选中了哪个单选按钮，以确定在用户点击处高亮多少段落。
+
+在脚本使用`parentText`属性测试点击的元素是否具有创建文本范围的有效父节点后，再次调用该属性来帮助文本范围。通过`TextRange`方法将范围缩小到单个插入点，将该点移动到光标所在的位置，扩展范围以包含所需的块，并对该块进行选择。
+
+注意`TextRange`对象`expand()`方法异常的一个变通方案：如果你指定一个元素，IE 不会将`P`元素的开头视为句子的结束。在元素末尾附加一个伪装的（白色文本颜色）句号，强制`TextRange`仅扩展到目标`P`元素的第一句的开头。
+
+```javascript
+document.getElementById("myP").childNodes[0].nodeValue
+document.getElementById("myP").childNodes[0].parentNode,tagName
+```
+
+### 列表 15-14：使用 parentTextEdit 属性
+
+```html
+<HTML>
+<HEAD>
+<TITLE>parentTextEdit Property</TITLE>
+<STYLE TYPE="text/css">
+P (cursor:hand)
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+function selectChunk() {
+var chunk, range
+for (var i = 0; i < document.forms[0].chunk.length; i++) {
+if (document.forms[0].chunk[i].checked) {
+chunk = document.forms[0].chunk[i].value
+}
+}
+var x = window.event.clientX
+var y = window.event.clientY
+if (window.event.srcElement.parentTextEdit) {
+range = window.event.srcElement.parentTextEdit.createRange()
+range.moveToPoint(x, y)
+range.expand(chunk)
+range.select()
+}
+}
+</SCRIPT>
+</HEAD>
+<BODY bgcolor="white">
+<FORM>
+<>当您点击段落中的任何位置时，选择段落的选择范围:<BR>
+<INPUT TYPE="radio" NAME="chunk" VALUE="character" CHECKED>字符
+<INPUT TYPE="radio" NAME="chunk" VALUE="word">单词
+<INPUT TYPE="radio" NAME="chunk" VALUE="sentence">句子
+<FONT COLOR="white"></FONT</P>
+</FORM>
+<P onclick="selectChunk()">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum eu nulla nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</P>
+</BODY>
+</HTML>
+```
+
+## previousSibling
+
+查看`nextSibling`。
+
+## readyState
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+### 示例
+
+为了观察标准 HTML 中非`complete`的`readyState`属性，可以在紧跟在`<IMG>`标签后的脚本中检查该属性：
+
+```html
+<IMG ID="myImg" SRC="someImage.gif">
+<SCRIPT LANGUAGE="JavaScript">
+alert(document.all.myImg.readyState)
+</SCRIPT>
+```
+
+将此片段放入一个可以通过慢网络访问的文档中会有帮助。如果图像不在浏览器缓存中，你可能会得到未初始化的加载结果。前者意味着`IMG`对象存在，但它尚未开始从服务器接收图像数据。如果你重新加载页面，图像可能会从缓存中瞬时加载，`readyState`属性将报告`complete`。
+
+## recordNumber
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+### 示例
+
+你可以在示例 15-15 中看到`recordNumber`属性的用法。数据源是一个小型、制表符分隔的文件，包含 20 条奥斯卡奖数据记录。因此，显示字段子集的表格已绑定到数据源对象。绑定到数据源对象边缘的是嵌入在页面顶部附近段落内的三个`SPAN`对象。当用户点击某行数据时，被点击记录的三个字段会被放置到绑定的`SPAN`对象中。
+
+此页面的脚本是一个单一语句。当用户触发重复`TR`对象的`onClick`事件处理程序时，函数接收`TR`对象的引用作为参数。数据存储对象在`recordset`对象中维护记录的内部副本。该`recordset`对象的属性之一是`AbsolutePosition`属性，它是数据对象所指向的当前记录的整数值（它一次只能指向一行，默认值是第一行）。该语句将`recordset`对象的`AbsolutePosition`属性设置为用户点击的行的`recordNumber`。由于这些`span`元素绑定到相同的数据源，它们会立即更新，以反映数据对象内部指向当前记录的指针变化。注意，第三个`span`绑定到表格中未显示的数据源字段之一。你可以访问记录的任何字段，因为数据源对象持有整个数据源内容。
+
+### 列表 15-15：使用数据绑定 recordNumber
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Data Binding recordNumber</TITLE>
+<STYLE TYPE="text/css">
+.filmtitle (font-style:italic)
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+// 将记录指针设置为表格中点击的记录。
+function setRecNum(row) {
+document.asrecord.AbsolutePosition = row.recordNumber
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<p><b>1978-1997年奥斯卡奖</b>（点击表格行以从某条记录中提取数据。）</p>
+<p>电影 <SPAN DATASRC="oscars" DATFIELD="Year</SPAN> 中 <SPAN DATASRC="oscars" DATFIELD="Best Actor</SPAN> 的最佳演员奖</p>
+<table BORDER="1" ALIGN="center" style="font-style:italic">
+<tr
+<th>年份</th>
+<th>电影</th>
+<th>导演</th>
+<th>演员</th>
+</tr>
+<tr onclick="setRecNum(this)">
+<td>1978</td>
+<td>《猎人</td>
+<td>Michael Cimino</td>
+<td>Jane Fonda</td>
+</tr>
+<tr onclick="setRecNum(this)">
+<td>1979</td>
+<td>《克莱默对克莱默</td>
+<td</td>
+<td>Dust Hoffman</td>
+</tr>
+<tr onclick="setRecNum(this)">
+<td>1980</td>
+<td>《大象</td>
+<td>David Lynch</td>
+<td>Barbra Davis</td>
+</tr>
+<tr onclick="setRecNum(this)">
+<td>1981</td>
+<td>《金矿</td>
+<td>Milo Miles</td>
+<td>Sissy Streep</td>
+</tr>
+<tr onclick="setRecNum(this)">
+<td>1982</td>
+<td>《蓝色狂想</td>
+<td>James Mason</td>
+<td>Normman</td>
+</tr>
+<tr onclick="setRecNum(this)">
+<td>1983</td>
+<td>《情迷</td>
+<td>Robert Poling</td>
+<td>Jane Cronenberg</td>
+</tr>
+<tr onclick="setRecNum(this)">
+<td>1984</td>
+<td>《生命的领域</td>
+<td>James L. Brooks</td>
+<td>Sally Wavefield</td>
+</tr>
+<tr onclick="setRecNum(this)">
+<td>1985</td>
+<td>《非洲之地</td>
+<td>Sydney Pollack</td>
+<td>Gene Geneweicker</td>
+</tr>
+<tr onclick="setRecNum(this)">
+<td>1986</td>
+<td>《我们的美好年华</td>
+<td>Simon Lewis</td>
+<td>Sissy MacLaughlin</td>
+</tr>
+<tr onclick="setRecNum(this)">
+<td>1987</td>
+<td>《雨人</td>
+<td>Barry Levinson</td>
+<td>Elaine Chase</td>
+</tr>
+<tr onclick="setRecNum(this)">
+<td>1988</td>
+<td>《末皇帝</td>
+<td>Steven Spielberg</td>
+<td>Jodie Fintner</td>
+</tr>
+<tr onclick="setRecNum(this)">
+<td>1989</td>
+</tr>
+</HTML>
+```
+
+
+
+# 通用 HTML 元素对象（第 15 章）
+
+## 示例 15-15：1978-1997 年奥斯卡奖最佳演员数据表
+
+```markdown
+<table>
+<tr>
+<th>年份</th>
+<th>电影</th>
+<th>导演</th>
+<th>演员</th>
+</tr>
+<tr>
+<td>1978</td>
+<td>《猎人</td>
+<td>Michael Cimino</td>
+<td>Jane Fonda</td>
+</tr>
+<tr>
+<td>1979</td>
+<td>《克莱默对克莱默</td>
+<td>-</td>
+<td>Dust Hoffman</td>
+</tr>
+<tr>
+<td>1980</td>
+<td>《大象</td>
+<td>David Lynch</td>
+<td>Barbra Davis</td>
+</tr>
+<tr>
+<td>1981</td>
+<td>《金矿</td>
+<td>Milo Miles</td>
+<td>Sissy Streep</td>
+</tr>
+<tr>
+<td>1982</td>
+<td>《蓝色狂想</td>
+<td>James Mason</td>
+<td>Normman</td>
+</tr>
+<tr>
+<td>1983</td>
+<td>《情迷</td>
+<td>Robert Poling</td>
+<td>Jane Cronenberg</td>
+</tr>
+<tr>
+<td>1984</td>
+<td>《生命的领域</td>
+<td>James L. Brooks</td>
+<td>Sally Wavefield</td>
+</tr>
+<tr>
+<td>1985</td>
+<td>《非洲之地</td>
+<td>Sydney Pollack</td>
+<td>Gene Geneweicker</td>
+</tr>
+<tr>
+<td>1986</td>
+<td>《我们的美好年华</td>
+<td>Simon Lewis</td>
+<td>Sissy MacLaughlin</td>
+</tr>
+<tr>
+<td>1987</td>
+<td>《雨人</td>
+<td>Barry Levinson</td>
+<td>Elaine Chase</td>
+</tr>
+<tr>
+<td>1988</td>
+<td>《末皇帝</td>
+<td>Steven Spielberg</td>
+<td>Jodie Fintner</td>
+</tr>
+<tr>
+<td>1989</td>
+<td>《驾驶</td>
+<td>Emmanuel Elice</td>
+<td>Sofia Loren</td>
+</tr>
+<tr>
+<td>1990</td>
+<td>《与狼共舞</td>
+<td>James Ford</td>
+<td>Jodie-Fintner</td>
+</tr>
+<tr>
+<td>1991</td>
+<td>《沉默的羔羊杀</td>
+<td>Jonathan Demme</td>
+<td>Jodie Davis</td>
+</tr>
+<tr>
+<td>1992</td>
+<td>《不赦解</td>
+<td>Anthony Mingella</td>
+<td>Gene Geneweicker</td>
+</tr>
+<tr>
+<td>1993</td>
+<td>《辛德的名单</td>
+<td>Steven Spielberg</td>
+<td>Holly Holoman</td>
+</tr>
+<tr>
+<td>1994</td>
+<td>《阿甘甘福的故事</td>
+<td>Robert Zemeckis</td>
+<td>Robin Wright</td>
+</tr>
+<tr>
+<td>1995</td>
+<td>《勇敢的心</td>
+<td>Mel Gibson</td>
+<td>Gene-Geneweicker</td>
+</tr>
+<tr>
+<td>1996</td>
+<td>《英国病人</td>
+<td>Miro Accenc</td>
+<td>Jodie-Fintner</td>
+</tr>
+<tr>
+<td>1997</td>
+<td>《爱之魂</td>
+<td>James Schondhricht</td>
+<td>Gene-Geneweicker</td>
+</tr>
+</table>
+```
+
+> （注：示例 15-15 中表格的 OCR 文本乱码。根据“1978-1997年奥斯卡奖”和“最佳演员”的上下文，我根据历史数据和可用片段重建了逻辑结构。）
+
+---
+
+## `recordNumber`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | | | | | ✓ | ✓ |
+
+---
+
+## 示例：观察 `readyState` 属性
+
+为了观察标准 HTML 中非 `complete` 的 `readyState` 属性，可以在紧跟在 `<IMG>` 标签后的脚本中检查该属性：
+
+```html
+<IMG ID="myImg" SRC="someImage.gif">
+<SCRIPT LANGUAGE="JavaScript">
+alert(document.all.myImg.readyState)
+</SCRIPT>
+```
+
+将此片段放入一个可以通过慢网络访问的文档中会有帮助。如果图像不在浏览器缓存中，你可能会得到未初始化的加载结果。前者意味着 `IMG` 对象存在，但它尚未开始从服务器接收图像数据。如果你重新加载页面，图像可能会从缓存中瞬时加载，`readyState` 属性将报告 `complete`。
+
+---
+
+## 示例：使用 Evaluator 实验 `TEXTAREA` 对象属性
+
+使用 Evaluator（《JavaScript Bible》第 13 章）来实验 `TEXTAREA` 对象的这两个属性，该对象会显示评估结果和属性列表。开始，在底部的单行文本框中输入以下内容以列出 `body` 对象的属性：
+
+```javascript
+document.body
+```
+
+这将显示 `body` 对象的很长属性列表。使用 `TEXTAREA` 的滚动条向下滚动几次。现在在顶部的单行文本框中点击以下属性表达式，以查看滚动后 `TEXTAREA` 的 `scrollTop` 属性：
+
+```javascript
+document.all.output.scrollTop
+```
+
+结果（某个数字）现在显示在输出 `TEXTAREA` 中。这意味着输出元素的内容已垂直滚动。再次点击 Evaluator。结果 `0` 是仅包含上一个结果的 `TEXTAREA` 的 `scrollTop` 属性的测量值。由于 `TEXTAREA` 中的内容不足以滚动，因此内容完全没有滚动。那么，输出的 `scrollTop` 属性始终为 0，因为 `TEXTAREA` 元素被设置为换行任何超出元素宽度的文本。在这种情况下，不会出现水平滚动条，且 `scrollTop` 属性永远不会改变。
+
+---
+
+## `sourceIndex`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+
+---
+
+## 示例：实验 `sourceIndex` 属性
+
+虽然该属性的操作非常简单，但 `document.all` 属性暴露的元素顺序可能并非如此。为了解决这个问题，你可以使用 Evaluator（《JavaScript Bible》第 13 章）在 IE4+ 中实验 `sourceIndex` 属性返回的值，观察 `document.all` 集合的索引值如何遵循源代码。
+
+开始，重新加载 Evaluator。在顶部文本框中输入以下语句设置一个预初始化的全局变量：
+
+```javascript
+a = 0
+```
+
+当你评估此表达式时，结果框中应该出现零。接下来，在文本框中输入以下语句：
+
+```javascript
+document.all[a].tagName + "[" + a++ + "]"
+```
+
+此语句中有许多加号，请务确保输入正确。当你成功评估此语句时（通过反复点击 Evaluate 按钮），全局变量 `a` 会增加，使你能够“按照源代码的顺序遍历元素”。每个 HTML 标签的 `sourceIndex` 值将以方括号的形式显示在结果框中。你通常从以下序列开始：
+
+```text
+HTML [0]
+HEAD [1]
+TITLE [2]
+```
+
+你可以继续操作直到没有更多元素，此时会出现错误消息，因为 `a` 的值超过了 `document.all` 数组中的元素数量。将你的发现与 Evaluator 的 HTML 源代码视图进行比较。
+
+---
+
+## `style`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | |
+
+---
+
+## 示例：探索 `style` 对象属性
+
+`style` 属性的大部分操作与 `style` 对象的属性有关；你可以使用 Evaluator 简单探索在你运行的许多 HTML 兼容浏览器上用的 `style` 对象属性列表。开始，在底部的单行文本框中输入以下语句以检查 `document.body` 对象的 `style` 属性：
+
+```javascript
+document.body.style
+```
+
+现在检查表格元素的 `style` 属性是 Evaluator 原始版本的一部分。在底部的文本框中输入以下语句：
+
+```javascript
+document.getElementById("myTransform").style
+```
+
+在两种情况下，赋值给 `style` 对象属性的默认值都是非常有限的。
+
+---
+
+## `tabIndex`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | |
+
+---
+
+## 示例：动态修改表单制表行为
+
+列表 15-16 中的 HTML 和脚本不仅演示了你如何动态修改表单的制表行为，还演示了如何在 IE 中强制元素完全移出制表序列。在此页面中，上部的表单（名为 `lab`）包含四个元素。由底部表单按钮调用的脚本控制制表序列。所有底部元素的 `TABINDEX` 属性都被设置为 -1，这意味着这些控件在 IE 中不属于制表序列的一部分。
+
+```javascript
+elementObject.tabIndex
+```
+
+当你加载页面时，表单控件元素的默认制表（默认设置为零）会起作用。如果你开始按 Tab 键，最初的精确结果取决于你使用的浏览器。在 IE 中，地址字段首先被选中；制表序列将焦点交给窗口（或框架，如果此页面在框架集内）；最后制表到达 `lab`。继续按 Tab 键并观察浏览器如何为每种类型的元素分配焦点。然而在 NN6 中，你必须点击内容的任意位置，Tab 键才能对表单控件生效。
+
+示例脚本通过循环初始化两个方向相反的变量，使得元素具有最低的 `tabindex` 值。`skip2()` 函数将第二个文本框的 `tabindex` 属性设置为 -1，将其完全从制表序列中移除（仅限 IE）。
+
+---
+
+## `uniqueID`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | | | | | ✓ | ✓ |
+
+### 示例
+
+代码列表 15-18 展示了获取和应用浏览器生成的对象标识符的推荐语法。当你在文本框中输入某些文本并点击按钮后，`addRow()` 函数会向表格添加一行。左侧列显示由表格对象的 `uniqueID` 属性生成的标识符。IE+ 生成的标识符格式为 `msId`，其中 n 是一个从 0 开始的浏览器会话的整数。由于 `addRow()` 函数为行以及每行中的单元格分配了唯一的 `uniqueID` 值，因此每一行的整数比前一个大 3。无法保证未来的浏览器版本会继续遵循这种格式或顺序，因此不要在脚本中依赖该格式或顺序。
+
+### 代码列表 15-18：使用 `uniqueID` 属性
+
+```html
+<HTML>
+<HEAD>
+<TITLE>插入 IE5+/Windows 表格</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function addRow(item) {
+  if (item) {
+    // 将长引用赋值给较短变量名
+    var table = document.all.myTable
+    // 在表格末尾插入新行
+    var newRow = table.insertRow(table.rows.length)
+    // 给行赋予自己的 ID
+    addRow.id = newRow.uniqueID
+    // 声明单元格变量
+    var newCell
+    // 插入的行没有单元格，所以插入单元格
+    newCell = newRow.insertCell(0)
+    // 给此单元格赋予自己的 ID
+    newCell.id = newCell.uniqueID
+    // 将行的 ID 显示为单元格文本
+    newCell.innerText = newRow.id
+    newCell.backgroundColor = "yellow"
+    // 复用单元格进行第二个单元格插入
+    newCell = newRow.insertCell(1)
+    newCell.id = newCell.uniqueID
+    newCell.innerText = item
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<TABLE ID="myTable" BORDER=1>
+<TR>
+<TH>行</TH>
+<TH>数据</TH>
+</TR>
+<TR ID="firstRow">
+<TD>first</TD>
+<TD>fred</TD>
+</TR>
+<TR ID="secondDataRow">
+<TD>secondRow</TD>
+<TD>Jane</TD>
+</TR>
+</TABLE>
+<HR>
+<FORM>
+输入要添加到表格的文本：<BR>
+<INPUT TYPE="text" NAME="input" SIZE=25>
+<INPUT TYPE="button" VALUE='插入行' onclick='addRow(this.form.input.value)'>
+</FORM>
+</BODY>
+</HTML>
+```
+
+---
+
+## 方法
+
+### `addBehavior("URL")`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | |
+
+### 示例
+
+代码列表 15-19a 是一个名为 `makeHot.htc` 的外部组件的 JavaScript 代码。其目的是将对象的颜色样式属性转换为默认颜色（`red`）或传递给组件的任何颜色。关于 `<PUBLIC>` 标签语法的细节，请参阅《JavaScript 圣经》第 48 章。这里展示的代码帮助你理解代码列表 15-19b 中的页面和脚本是如何工作的。
+
+### 代码列表 15-19a：`makeHot.htc` 行为组件
+
+```html
+<PUBLIC:ATTACH EVENT="onmousedown" ONEVENT="makeHot()" />
+<PUBLIC:ATTACH EVENT="onmouseover" ONEVENT="makeNormal()" />
+<PUBLIC:PROPERTY NAME="hotColor" />
+<PUBLIC:METHOD NAME="setHotColor" />
+<SCRIPT LANGUAGE="JavaScript">
+var oldColor
+var hotColor = "red"
+function setHotColor(color) {
+  hotColor = color;
+}
+function makeHot() {
+  if (event.srcElement == element) {
+    oldColor = style.color;
+    runtimeStyle.color = hotColor;
+  }
+}
+function makeNormal() {
+  if (event.srcElement == element) {
+    runtimeStyle.color = oldColor;
+  }
+}
+</SCRIPT>
+```
+
+组件附加的对象是一个简单的段落对象，如代码列表 15-19b 所示。当页面加载时，行为尚未被附加，因此点击段落文字没有效果。
+
+当你通过调用 `turnOn()` 函数启用行为时，`addBehavior()` 方法会将 `makeHot.htc` 组件的代码附加到 `myP` 对象上。此时，`myP` 对象将多了一个属性、一个方法以及两个由组件代码编写为公开的事件处理程序。如果你想让该行为应用于文档中的多个段落，你将必须为每个段落调用 `addBehavior()` 方法。只要行为已加载，你就可以更改段落所使用的颜色。要关闭该行为，则调用 `removeBehavior()` 方法。
+
+### 代码列表 15-19b：使用 `addBehavior()`
+
+```html
+<HTML>
+<HEAD>
+<TITLE>addBehavior() and removeBehavior()</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+var behaviorID
+function turnOn() {
+  if (document.all.readyState == "complete") {
+    behaviorID = document.all.myP.addBehavior("makeHot.htc");
+    setInitialColor();
+  } else {
+    alert("此功能不可用。请先开启行为.");
+  }
+}
+function turnOff() {
+  document.all.myP.removeBehavior(behaviorID);
+}
+function setColor(color) {
+  if (document.all.myP.hotColor) {
+    document.all.myP.setHotColor(color);
+  } else {
+    alert(0);
+  }
+}
+function showBehaviorCount() {
+  var num = document.all.myP.behaviorUrns.length
+  var msg = "该 P 元素有 " + num + " 个行为。";
+  if (num > 0) {
+    msg += "名称：\r\n";
+    for (var i = 0; i < num; i++) {
+      msg += document.all.myP.behaviorUrns[i] + "\r\n";
+    }
+  }
+  alert(msg)
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<h1>addBehavior() and removeBehavior() 方法</h1>
+<HR>
+<P id="myP">这是一个示例段落。开启行为后，当你点击此段落的任何地方时，它将变为你选择的颜色。</P>
+<FORM>
+<INPUT type="button" value="开启行为" onclick="turnOn()">
+选择“热”颜色：
+<SELECT name="colorChoice" onchange="setColor(this.value)">
+<option value="red">红色</option>
+<option value="blue">蓝色</option>
+<option value="cyan">青色</option>
+</SELECT>
+<INPUT type="button" value="关闭行为" onclick="turnOff()">
+<P><input type="button" value="计数 URN" onclick="showBehaviorCount()"></P>
+</FORM>
+</BODY>
+</HTML>
+```
+
+---
+
+## `addEventListener()` / `removeEventListener()`
+
+### 示例
+
+指示事件阶段是冒泡（3）还是捕获（1）的事件和信息。在所有监听器都激活的情况下，请注意处理事件的顺序。一次移除一个监听器以查看其对事件处理的影响。
+
+列表 15-20 包含了在 NN6 中无法运行事件捕获代码。事件捕获功能在未来的浏览器版本中应该可以工作。
+
+### 列表 15-20：W3C 事件表
+
+```html
+<HTML>
+<HEAD>
+<TITLE>W3C 事件模型实验室</TITLE>
+<STYLE TYPE="text/css">
+td { text-align:center; }
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+// 添加监听器
+function addBubbleEventListener(elemId) {
+  document.getElementById(elemId).addEventListener("click", reportEvent, false);
+}
+function captureEventListener(elemId) {
+  document.getElementById(elemId).addEventListener("click", reportEvent, true);
+}
+// 移除监听器
+function removeBubbleEventListener(elemId) {
+  document.getElementById(elemId).removeEventListener("click", reportEvent, false);
+}
+function removeCaptureEventListener(elemId) {
+  document.getElementById(elemId).removeEventListener("click", reportEvent, true);
+}
+// 显示任何听到的事件的细节
+function reportEvent(event) {
+  if (event.target.parentNode.id=="mySPAN") {
+    var msg = "Event processed at " + event.currentTarget.tagName + 
+              " " + event.eventPhase + ".\n";
+    document.controls.output.value += msg;
+  }
+}
+// 清空文本区域
+function clearTextArea() {
+  document.controls.output.value = "";
+}
+</SCRIPT>
+</HEAD>
+<BODY id="myBODY">
+<h1>W3C 事件模型实验室</h1>
+<HR>
+<p id="myP"><span id="mySPAN">这段文字（嵌套在 P 元素中的 SPAN 元素）可以设置为监听“click”事件。</span></p>
+<HR>
+<TABLE CELLPADDING=5 BORDER=1>
+<CAPTION STYLE="font-weight:bold;">控制面板</CAPTION>
+<FORM NAME="controls">
+<TR STYLE="background-color:#ffff99;">
+<TD ROWSPAN=2>冒泡型点击监听器：
+<TD><INPUT type="button" VALUE="Add to Body" onclick="addBubbleEventListener('myBODY')">
+<TD><INPUT type="button" VALUE="Remove from BODY" onclick="removeBubbleEventListener('myBODY')">
+</TR>
+<TR STYLE="background-color:#ffff99;">
+<TD><INPUT type="button" VALUE="Add to P" onclick="addBubbleEventListener('myP')">
+<TD><INPUT type="button" VALUE="Remove from P" onclick="removeBubbleEventListener('myP')">
+</TR>
+<TR STYLE="background-color:#ffff99;"><TD ROWSPAN=2>捕获型点击监听器：
+<TD><INPUT type="button" VALUE="Add to BODY" onclick="captureEventListener('myBODY')">
+<TD><INPUT type="button" VALUE="Remove from BODY" onclick="removeCaptureEventListener('myBODY')">
+</TR>
+<TR STYLE="background-color:#ff9999">
+<TD><INPUT type="button" VALUE="Add to P" onclick="captureEventListener('myP')">
+<TD><INPUT type="button" VALUE="Remove from P" onclick="removeCaptureEventListener('myP')">
+</TR>
+<P>检查点击事件特性： <INPUT TYPE="button" VALUE="Clear" onclick="clearTextArea()"><BR>
+<TEXTAREA NAME="output" COLS="80" ROWS="6" WRAP="virtual"></TEXTAREA>
+</FORM>
+</TABLE>
+</BODY>
+</HTML>
+```
+
+---
+
+## `appendChild(elementObject)`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | ✓ | | | ✓ | ✓ | |
+
+### 示例
+
+列表 15-21 中的脚本演示了三个子节点相关方法在 IE5+ 和 NN6 中如何工作。该页面包含一个简单的双项列表。表单允许你将项目添加到列表末尾，或用不同的条目替换最后一个项目。
+
+```javascript
+elementObject.appendChild()
+```
+
+`append()` 函数创建一个新的 `LI` 元素，然后使用 `appendChild()` 方法将文本框作为该项目的显示文本。嵌套表达式 `document.createTextNode(form.input.value)` 评估为一个合法的节点，并将其添加到新的 `LI` 项目中。这一切都发生在新的 `LI` 添加到文档之前。在函数的最后语句中，从 `UL` 元素的视角调用 `appendChild()`——从而将 `LI` 作为 `UL` 元素的子节点添加。
+
+在 `replace()` 函数中调用 `replaceChild()` 方法使用了类似的逻辑。主要区别在于 `replaceChild()` 需要第二个参数：要被替换子节点的引用。这替换了 `UL` 列表的最后一个子节点，函数利用了所有元素的 `lastChild` 属性来获取该嵌套子节点的引用。`replace` 变为 `replaceChild()` 的第二个参数。
+
+### 列表 15-21：各种子节点方法
+
+```html
+<HTML>
+<HEAD>
+<TITLE>appendChild(), removeChild(), and replaceChild() 方法</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function append(form) {
+  if (form.input.value) {
+    var newItem = document.createElement("LI")
+    newItem.appendChild(document.createTextNode(form.input.value));
+    document.getElementById("myUL").appendChild(newItem);
+  }
+}
+function replace(form) {
+  if (form.input.value) {
+    var newItem = document.createElement("LI")
+    var lastChild = document.getElementById("myUL").lastChild;
+    newItem.appendChild(document.createTextNode(form.input.value));
+    document.getElementById("myUL").replaceChild(newItem, lastChild);
+  }
+}
+function restore() {
+  var oneChild
+  var mainObj = document.getElementById("myUL");
+  while (mainObj.childNodes.length > 2) {
+    oneChild = mainObj.lastChild;
+    mainObj.removeChild(oneChild);
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<h1>子节点方法</h1>
+<HR>
+<p>这里是列表：</p>
+<UL id="myUL">
+<li>First Item</li>
+<li>Second Item</li>
+</UL>
+<FORM>
+输入一些文本以添加/替换：<INPUT TYPE="text" NAME="input" SIZE=30><BR>
+<input type="button" VALUE="Append to List" onclick="append(this.form)">
+<input type="button" VALUE="Replace Last" onclick="replace(this.form)">
+<input type="button" VALUE="Restore List" onclick="restore()">
+</FORM>
+</BODY>
+</HTML>
+```
+
+---
+
+## `applyElement(element[, type])`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | | | | ✓ | ✓ | |
+
+为了帮助你可视化 `applyElement()` 方法的不同参数设置的影响，列表 15-22 允许你将新元素（`EM` 元素）应用到段落内部。任何时候你都可以查看段落的 HTML 以查看 `EM` 元素及其对段落元素结构的影响。
+
+在加载页面后，在进行任何操作之前检查段落的 HTML。注意 `SPAN` 元素及其嵌套的 `FONT` 元素，它们包裹着文字。如果你将 `EM` 元素应用到 `SPAN` 元素内部（点击按钮），`SPAN` 元素的第一个（也是唯一的）子元素将变为 `EM` 元素；`FONT` 元素是新 `EM` 元素的子元素。
+
+### 列表 15-22：使用 `applyElement` 方法
+
+```html
+<HTML>
+<HEAD>
+<TITLE>applyElement() 方法</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function applyOutside() {
+  var newItem = document.createElement("EM")
+  newItem.id = newItem.uniqueID
+  document.all.mySpan.applyElement(newItem);
+}
+function applyInside() {
+  var newItem = document.createElement("EM")
+  newItem.id = newItem.uniqueID
+  document.all.mySpan.applyElement(newItem, "inside")
+}
+function showHTML() {
+  alert(document.all.myP.outerHTML)
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<h1>applyElement() 方法</h1>
+<p id="myP">一个简单的段落，其中包含 <span id="mySpan"><font size="3">special</font></span> 单词。</p>
+<form>
+<input type="button" value="< <EM> Outside" onclick="applyOutside()">
+<input type="button" value="< <EM> Inside" onclick="applyInside()">
+<input type="button" value="< Show <P> HTML..." onclick="showHTML()"><br>
+<input type="button" value="Restore Paragraph" onclick="location.reload()">
+</form>
+</BODY>
+</HTML>
+```
+
+在这种情况下，将 `EM` 元素应用到 `SPAN` 元素内部或外部的视觉结果是相同的。你可以从 HTML 结果看出每个元素对元素结构的影响不同。
+
+---
+
+## `attachEvent("eventName", functionRef)` / `detachEvent("eventName", functionRef)`
+
+引号和括号很容易混淆，请务必小心输入此表达式。当你成功输入表达式时，结果将显示函数的文本。现在，通过在上方文本框中输入以下语句将此函数分配给 `myP` 元素的 `mousedown` 事件：
+
+```javascript
+document.all.myP.attachEvent("mousedown", a)
+```
+
+成功后结果显示 `true`。如果你在第一个段落上点击鼠标，警报框将显示匿名函数的创建日期和时间（即评估 `new Date()` 表达式的时间）。
+
+现在，通过在上方文本框中输入以下语句，断开对象的事件关系：
+
+```javascript
+document.all.myP.detachEvent("mousedown", a)
+```
+
+---
+
+## `blur()` / `focus()`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+### 示例
+
+为了演示 `window.focus()` 方法及其反操作（`window.blur()`）如何工作，针对 NN3+ 和 IE4+ 的列表 15-23 创建了一个双窗口环境。从每个窗口中，你都可以将另一个窗口带到最前面。主窗口使用 `window.open()` 返回的对象来组装新窗口的引用。在子窗口中（其内容完全由 JavaScript 动态创建），`self.opener` 被调用以引用原始窗口，而 `self.blur()` 则作用于子窗口本身（之前提到的 NN6 错误除外）。模糊一个窗口并聚焦另一个窗口将产生窗口发送到堆栈底部的结果。
+
+> 列表 15-23：`window.focus()` 和 `window.blur()` 方法
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Window Focus() and Blur()</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+// 声明全局变量
+var newWindow = null
+function makeNewWindow() {
+  // 检查窗口是否存在
+  if (!newWindow || newWindow.closed) {
+    // 将新窗口对象存储在全局变量中
+    newWindow = window.open("","","width=250,height=250")
+    // 稍停一下让 IE3 窗口完成打开
+    setTimeout(fillWindow,100)
+  } else {
+    // 如果窗口已存在，则将其置于前面
+    newWindow.focus();
+  }
+}
+// 组装新内容并写入标题
+function fillWindow() {
+  var newContent = "<HTML><HEAD><TITLE>Another Subwindow</TITLE></HEAD>"
+  newContent += "<BODY bgcolor='salmon'>"
+  newContent += "<h1>三文鱼色子窗口。</h1>"
+  newContent += "<FORM><INPUT TYPE='button' VALUE='Bring to Front' onclick='self.focus()'></FORM>"
+  // 下述按钮在 NN6 中不起作用
+  newContent += "<FORM><INPUT TYPE='button' VALUE='Put Me in Back' onclick='self.blur()'></FORM>"
+  newContent += "</BODY></HTML>"
+  // 将 HTML 写入新窗口文档
+  newWindow.document.write(newContent)
+  newWindow.document.close();
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<h1>Window focus() and blur() Methods</h1>
+<HR>
+<FORM>
+<INPUT TYPE="button" NAME="newOne" VALUE="Show New Window" onclick="makeNewWindow()">
+</FORM>
+</BODY>
+</HTML>
+```
+
+列表 15-23 中 `makeNewWindow()` 函数成功的关键在于第一个条件表达式。因为 `newWindow` 在页面加载时初始化为 `null`，这是它第一次通过函数时的值。当你第一次打开子窗口后，`newWindow` 被分配了一个值（窗口对象），如果用户关闭窗口，该值将保持完整。因此，值不会自动变回 `null`。为了捕捉用户已关闭窗口的可能性，条件表达式还会检查窗口是否关闭。如果是，则会生成一个新的子窗口，并将该新窗口的引用值重新分配给 `newWindow` 变量。另一方面，如果窗口存在且未关闭，`focus()` 方法将把子窗口带到最前面。
+
+---
+
+## `clearAttributes()`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | |
+
+### 示例
+
+使用 Evaluator（《JavaScript Bible》第 13 章）来实验 `clearAttributes()` 方法。
+
+---
+
+## `componentFromPoint()`
+
+### 示例
+
+用于不同类型的事件处理。`srcElement` 属性最初用作过滤器，决定状态栏是否显示关于 `TEXTAREA` 事件详情的后续处理。`BODY` 中的 `onMouseDown` 事件处理器会触发所有事件处理，IE 事件会向层级冒泡（本页中没有取消事件），因此所有 `mouseDown` 事件最终都会到达 `BODY` 元素。然后，`whereIn()` 函数可以将来自任何元素的 `mouseDown` 与 `textarea` 的位置进行比较。
+
+### 列表 15-24：使用 `componentFromPoint()` 方法
+
+```html
+<HTML>
+<HEAD>
+<TITLE>componentFromPoint() 方法</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function whereInWorld() {
+  var x = event.clientX;
+  var y = event.clientY;
+  var component = document.all.myTextarea.componentFromPoint(x,y);
+  if (window.event.srcElement == document.all.myTextarea) {
+    if (component == "") {
+      status = "mousedown 发生在元素内部";
+    } else {
+      status = "mousedown 发生在元素上：" + component;
+    }
+  } else {
+    status = "mousedown 发生在元素的 " + component + " 部分";
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY onMouseDown="whereInWorld()">
+<H1>componentFromPoint()</H1>
+<HR>
+<P>相对于 textarea 对象的 mouseDown 事件。在状态栏中查看结果。</P>
+<FORM>
+<TEXTAREA NAME="myTextarea" WRAP="off" COLS=12 ROWS=4>
+这是第 1 行
+这是第 2 行
+这是第 3 行
+这是第 4 行
+这是第 5 行
+这是第 6 行
+</TEXTAREA>
+</FORM>
+</BODY>
+</HTML>
+```
+
+---
+
+## `contains(elementObjectReference)`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | |
+
+### 示例
+
+使用《JavaScript Bible》中的第 13 章“Evaluator”部分，查看 `contains()` 方法如何对你在上方文本框中输入的以下每个语句中的对象组合做出响应：
+
+```javascript
+document.body.contains(document.all.myP)
+document.all.myP.contains(document.all.item("myEM"))
+document.all.myEM.contains(document.all.myEM)
+document.all.myEM.contains(document.all.myP)
+```
+
+请随时在本页面内测试其他对象组合。
+
+---
+
+## `dispatchEvent(eventObject)`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | |
+
+### 示例
+
+列表 15-25 展示了 W3C DOM Level 2 定义的 `dispatchEvent()` 方法。其行为与列表 15-26 相同，后者演示了 IE5.5 的对应方法：`fireEvent()`。此示例在 NN6 的第一个版本中没有执行所有预期操作，因为浏览器没有完全实现 `document.createEvent` 方法。该示例设计旨在支持事件生成的未来版本中运行得更完整。
+
+### 列表 15-25：使用 `dispatchEvent()` 方法
+
+```html
+<HTML>
+<HEAD>
+<STYLE TYPE="text/css">
+#mySPAN {font-style:italic}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+// 组合几个事件对象属性
+function getEventProps(evt) {
+  var msg = ""
+  var elem = evt.target
+  msg += "event.target.nodeName: " + elem.nodeName + "\n"
+  msg += "event.target.parentNode: " + elem.parentNode.id + "\n"
+  msg += "event button: " + evt.button
+  return msg
+}
+function bodyClick(evt) {
+  var msg = "BODY 中处理了点击事件\n"
+  msg += getEventProps(evt)
+  alert(msg)
+  checkCancelBubble(evt)
+}
+function pClick(evt) {
+  var msg = "P 中处理了点击事件\n"
+  msg += getEventProps(evt)
+  alert(msg)
+  checkCancelBubble(evt)
+}
+function spanClick(evt) {
+  var msg = "SPAN 中处理了点击事件\n"
+  msg += getEventProps(evt)
+  alert(msg)
+  checkCancelBubble(evt)
+}
+// 如果勾选框被选中则取消事件冒泡
+function checkCancelBubble(evt) {
+  if (document.controls.bubbleon.checked) {
+    evt.stopPropagation()
+  }
+}
+// 为三个元素分配事件处理器
+function init() {
+  document.body.onclick = bodyClick
+  document.getElementById("myP").onclick = pClick
+  document.getElementById("mySPAN").onclick = spanClick
+}
+// 在传递参数的 ID 对象上调用 dispatchEvent()
+function doDispatch(objID, evt) {
+  // 不要让按钮点击冒泡
+  evt.stopPropagation()
+  var newEvt = document.createEvent("MouseEvent")
+  // ... (代码不完整)
+}
+</SCRIPT>
+</HEAD>
+<BODY onload="init()">
+<H1>dispatchEvent 方法</H1>
+<HR>
+<P id="myP">这是一个段落 <SPAN id="mySPAN">(带有嵌套的 SPAN)</SPAN>，它接收点击事件。</P>
+<HR>
+<P>控制面板</P>
+<FORM NAME="controls">
+<P><INPUT TYPE="checkbox" NAME="bubbleOn" onclick="event.cancelBubble=true">取消事件冒泡。</P>
+<P><INPUT TYPE="button" VALUE="在 BODY 上触发点击事件" onclick="doDispatch('myBODY', event)"></P>
+<P><INPUT TYPE="button" VALUE="在 myP 上触发点击事件" onclick="doDispatch('myP', event)"></P>
+<P><INPUT TYPE="button" VALUE="在 mySPAN 上触发点击事件" onclick="doDispatch('mySPAN', event)"></P>
+</FORM>
+</BODY>
+</HTML>
+```
+
+---
+
+## `fireEvent("eventName", eventObject)`
+
+### 列表 15-26：使用 `fireEvent()` 方法
+
+```html
+<HTML>
+<HEAD>
+<TITLE>fireEvent 方法</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function eventProps() {
+  var msg = ""
+  var elem = event.srcElement
+  msg += "event.srcElement.tagName: " + elem.tagName + "\n"
+  msg += "event.srcElement.parentElement: " + elem.parentElement.id + "\n"
+  msg += "event.button: " + event.button
+  return msg
+}
+function bodyClick() {
+  var msg = "Click event processed in BODY\n\n"
+  msg += eventProps()
+  alert(msg)
+  checkCancelBubble()
+}
+function pClick() {
+  var msg = "Click event processed in P\n\n"
+  msg += eventProps()
+  alert(msg)
+  checkCancelBubble()
+}
+function spanClick() {
+  var msg = "Click event processed in SPAN\n\n"
+  msg += eventProps()
+  alert(msg)
+  checkCancelBubble()
+}
+// 如果复选框选中，取消事件冒泡
+function checkCancelBubble() {
+  event.cancelBubble = document.controls.bubbleOn.checked
+}
+// 为三个元素分配 onClick 事件处理程序
+function init() {
+  document.body.onclick = bodyClick
+  document.all.myP.onclick = pClick
+  document.all.mySPAN.onclick = spanClick
+}
+// 在 ID 为参数的对象上调用 fireEvent
+function fire(objID) {
+  var newEvt = document.createEventObject()
+  newEvt.button = 3
+  document.all(objID).fireEvent("onclick", newEvt)
+  // 不让点击冒泡
+  event.cancelBubble = true
+}
+</SCRIPT>
+</HEAD>
+<BODY id="myBODY" onload="init()">
+<H1>fireEvent 方法</H1>
+<HR>
+<P id="myP">这是一个段落 <SPAN id="mySPAN">(带有嵌套的 SPAN)</SPAN>，它接收点击事件。</P>
+<HR>
+<P>控制面板</P>
+<FORM NAME="controls">
+<P><INPUT TYPE="checkbox" NAME="bubbleOn" onclick="event.cancelBubble=true">取消事件冒泡。</P>
+<P><INPUT TYPE="button" VALUE="在 BODY 上触发点击事件" onclick="fire('myBODY')"></P>
+<P><INPUT TYPE="button" VALUE="在 myP 上触发点击事件" onclick="fire('myP')"></P>
+<P><INPUT TYPE="button" VALUE="在 mySPAN 上触发点击事件" onclick="fire('mySPAN')"></P>
+</FORM>
+</BODY>
+</HTML>
+```
+
+---
+
+## `focus()`
+
+参见 `blur()`。
+
+---
+
+## `getAdjacentText("position")`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | | | | | ✓ | ✓ |
+
+### 示例
+
+使用 Evaluator（《JavaScript Bible》第 13 章）检查文档中 `myP` 和嵌套的 `myEM` 元素的四种相邻文本可能性。将以下每个语句输入到上方文本框中并查看结果：
+
+```javascript
+document.all.myP.getAdjacentText("beforeBegin")
+document.all.myP.getAdjacentText("afterBegin")
+document.all.myP.getAdjacentText("beforeEnd")
+document.all.myP.getAdjacentText("afterEnd")
+```
+
+第一条和最后一条语句返回空字符串，因为 `myP` 元素周围没有文本片段。`afterBegin` 返回 `myP` 元素直到内部 `EM` 元素之前（但不包含）的文本片段。`beforeEnd` 选取嵌套 `EM` 元素的末尾，并返回到 `myP` 结尾的所有文本。
+
+现在，嵌套的 `myEM` 元素会发生什么：
+
+```javascript
+document.all.myEM.getAdjacentText("beforeBegin")
+document.all.myEM.getAdjacentText("afterBegin")
+document.all.myEM.getAdjacentText("beforeEnd")
+document.all.myEM.getAdjacentText("afterEnd")
+```
+
+由于此元素没有子元素，`afterBegin` 和 `beforeEnd` 字符串是相同的：与元素的 `innerText` 属性值相同。
+
+---
+
+## `getAttribute("attributeName"[, caseSensitivity])`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | | | ✓ | | ✓ | ✓ |
+
+### 示例
+
+使用 Evaluator（《JavaScript Bible》第 13 章）对页面中的元素测试 `getAttribute()` 方法。对于 IE4，使用 `document.all` 表示法。IE5 和 NN6 理解 W3C 标准的 `getElementById` 方法来定位元素。你可以将以下示例语句输入到框框中查看属性值。
+
+IE4：
+
+```javascript
+document.all.myTable.getAttribute("width")
+document.all.myTable.getAttribute("border")
+```
+
+IE5/NN6:
+
+```javascript
+document.getElementById("myTable").getAttribute("width")
+document.getElementById("myTable").getAttribute("border")
+```
+
+---
+
+## `getAttributeNode("attributeName")`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | ✓ | | | | | |
+
+### 示例
+
+使用 Evaluator（《JavaScript Bible》第 13 章）在 NN6 中探索 `getAttributeNode()` 方法。结果 `TEXTAREA` 元素提供了几个属性可供检查。由于该方法返回一个对象，将以下语句输入到底部文本字段，以便查看方法返回的属性对象的属性：
+
+```javascript
+document.getElementById("output").getAttributeNode("COLS")
+document.getElementById("output").getAttributeNode("ROWS")
+document.getElementById("output").getAttributeNode("WRAP")
+```
+
+所有（除最后一条外）语句都显示属性的列表。最后一条语句没有返回，因为没有指定属性。
+
+---
+
+## `getBoundingClientRect()`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | |
+
+### 示例
+
+列表 15-27 包含了 `getClientRects()` 元素。列表 15-27 组成了高亮元素的列表。复选框允许你设置高亮行。当全宽框被选中时，`getBoundingClientRect()` 方法获取元素的快照。注意，全宽是对高亮对象的赋值。缩放窗口会影响大小。
+
+### 列表 15-27：使用 `getBoundingClientRect()` 和 `getClientRects()`
+
+```html
+<HTML>
+<HEAD>
+<TITLE>getClientRects() and getBoundingClientRect() 方法</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function hilite() {
+  var hTop, hLeft, hRight, hWidth
+  var select = document.all.choice;
+  var n = parseInt(select.value) - 1
+  var clientRects = document.all.main.getClientRects()
+  var mainElem = document.all.main
+  if (n >= 0 && n < clientRects.length) {
+    if (document.forms[0].fullWidth.checked) {
+      hLeft = mainElem.getBoundingClientRect().left
+      hRight = mainElem.getBoundingClientRect().right
+    } else {
+      hLeft = clientRects[n].left
+      hRight = clientRects[n].right
+    }
+    document.all.hiliter.style.visibility = "visible"
+    document.all.hiliter.style.pixelTop = clientRects[n].top
+    document.all.hiliter.style.pixelLeft = hLeft + document.body.scrollLeft
+    document.all.hiliter.style.pixelWidth = hRight - hLeft
+  } else if (n > 0) {
+    alert("内容没有足够的行");
+    document.all.hiliter.style.visibility = "hidden"
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY onResize="hilite()">
+<h1>getClientRects() and getBoundingClientRect() Methods</h1>
+<HR>
+<FORM>
+选择要高亮的行：
+<SELECT NAME="choice" onchange="hilite()">
+<OPTION VALUE="0"></OPTION>
+<OPTION VALUE="1">1</OPTION>
+<OPTION VALUE="2">2</OPTION>
+<OPTION VALUE="3">3</OPTION>
+<OPTION VALUE="4">4</OPTION>
+<OPTION VALUE="5">5</OPTION>
+<OPTION VALUE="6">6</OPTION>
+<OPTION VALUE="7">7</OPTION>
+<OPTION VALUE="8">8</OPTION>
+<OPTION VALUE="9">9</OPTION>
+<OPTION VALUE="10">10</OPTION>
+<OPTION VALUE="11">11</OPTION>
+<OPTION VALUE="12">12</OPTION>
+<OPTION VALUE="13">13</OPTION>
+<OPTION VALUE="14">14</OPTION>
+<OPTION VALUE="15">15</OPTION>
+</SELECT><BR>
+<INPUT NAME="fullWidth" TYPE="CHECKBOX" onclick="hilite()">全宽（边界框）
+</FORM>
+<SPAN ID="main">
+<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut ad minim veniam, quis neque exercitation ullamco:</P>
+<UL>
+<LI>laboris</LI>
+<LI>nisi</LI>
+<LI>aliquip ex ea commodo</LI>
+</UL>
+<P>Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla nullaatur. Excepteur sint occaecat cupid non proident, sunt in culpa officia deserunt mollit</P>
+</SPAN>
+<DIV ID="hiliter" STYLE="position:absolute; background-color:yellow; z-index:-1; visibility:hidden"></DIV>
+</BODY>
+</HTML>
+```
+
+由于 `hiliter` 元素的 `z-index` 样式属性被设置为 -1，该元素始终出现在页面上主要内容的下方。如果用户选择了主元素中当前行号下方的行号，`hiliter` 元素将被隐藏。
+
+---
+
+## `getClientRects()`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | | | | ✓ | ✓ | |
+
+### 示例
+
+请参见列表 15-27，该列表演示了 `getClientRects()` 和 `getBoundingClientRect()` 之间的差异，并展示了你如何配合使用这两个方法。
+
+---
+
+## `getElementsByTagName("tagName")`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | | | | ✓ | ✓ | |
+
+### 示例
+
+使用《JavaScript Bible》第 13 章中的 The Evaluator 来实验 `getElementsByTagName()` 方法。在最顶部的文本框中依次输入以下语句并显示结果：
+
+```javascript
+document.body.getElementsByTagName("DIV")
+document.body.getElementsByTagName("DIV").length
+document.getElementById("table").getElementsByTagName("TD").length
+```
+
+由于 `getElementsByTagName()` 方法返回一个对象数组，你可以使用返回的值之一作为有效的元素引用：
+
+```javascript
+document.getElementsByTagName("FORM")[0].getElementsByTagName("INPUT").length
+```
+
+---
+
+## `getExpression("attributeName")`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | | | | | ✓ | ✓ |
+
+### 示例
+
+查看列表 15-32 中的 `setExpression()` 方法。该列表演示了 `getExpression()` 返回的数值类型。
+
+---
+
+## `hasChildNodes()`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | ✓ | | | ✓ | ✓ | |
+
+### 示例
+
+使用《JavaScript Bible》第 13 章中的 The Evaluator 来实验 `hasChildNodes()` 方法。如果你在最顶部文本框中输入以下语句：
+
+```javascript
+document.getElementById("myP").hasChildNodes()
+```
+
+返回的值为 `true`。你可以通过获取 `childNodes` 数组的长度来发现有多少个节点：
+
+```javascript
+document.getElementById("myP").childNodes.length
+```
+
+该表达式显示了三个节点的计数：两个文本节点以及它们之间的 `EM` 元素。检查第一个文本节点是否有任何子节点：
+
+```javascript
+document.getElementById("myP").childNodes[0].hasChildNodes()
+```
+
+响应为 `false`，因为文本节点没有任何嵌套节点。检查 `EM` 元素，它是 `myP` 元素的第二个子节点：
+
+```javascript
+document.getElementById("myP").childNodes[1].hasChildNodes()
+```
+
+答案是 `true`，因为 `EM` 元素内部嵌套了一个文本片段。诚然，语句
+
+```javascript
+document.getElementById("myP").childNodes[1].childNodes.length
+```
+
+产生了 1 个节点的计数。你可以直接在引用中跳转到 `EM` 元素：
+
+```javascript
+document.getElementById("myEM").hasChildNodes()
+document.getElementById("myEM").childNodes.length
+```
+
+如果你想查看 `EM` 元素内部文本片段节点的属性，请在文本框中输入：
+
+```javascript
+document.getElementById("myEM").childNodes[0]
+```
+
+你可以看到文本片段的 `data` 和 `nodeValue` 属性返回了文本 "all"。
+
+---
+
+## `insertAdjacentElement("location", elementObject)`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | | | | ✓ | ✓ | |
+
+### 示例
+
+使用《JavaScript Bible》第 13 章中的 The Evaluator 来实验 `insertAdjacentElement()` 方法。实验的目标是在 `myP` 之上插入一个 `H1` 元素。
+
+所有操作都需要你在最顶部的文本框中输入一系列语句。从在全局变量 `a` 中开始一个新元素开始：
+
+```javascript
+a = document.createElement("H1")
+```
+
+给新对象赋予一些文本：
+
+```javascript
+a.innerText = "New Header"
+```
+
+现在，在 `myP` 对象开始之前插入此元素：
+
+```javascript
+myP.insertAdjacentElement("beforeBegin", a);
+```
+
+注意，你没有为新元素分配 `id` 属性。但由于元素是通过引用插入的，你可以通过更改变量中存储的样式来修改已插入的对象：
+
+```javascript
+a.style.color = "red"
+```
+
+已插入的元素也是文档的一部分。
+
+---
+
+## `item(index | "index" [, subIndex])`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | | ✓ | | ✓ | ✓ | |
+
+### 示例
+
+使用 Evaluator（《JavaScript Bible》第 13 章）来实验 `item()` 方法。在顶部的文本框中输入以下语句，并查看每个语句的结果：
+
+NN6 和 IE5：
+
+```javascript
+document.getElementById("myP").childNodes.length
+document.getElementById("myP").childNodes.item(0).data
+document.getElementById("myP").childNodes.item(1).nodeName
+```
+
+NN6, IE4 和 IE5：
+
+```javascript
+document.forms[1].elements.item(0).type
+```
+
+IE4 和 IE5：
+
+```javascript
+document.all("myP").outerHTML
+myP.outerHTML
+```
+
+在两个示例中，两条语句都返回相同的字符串。当你的脚本正在处理对象名称的字符串版本时，第一个示例很有帮助。如果你的脚本已经知道对象引用，那么第二种方法更高效且紧凑。
+
+---
+
+## `mergeAttributes("sourceObject")`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | | | | ✓ | ✓ | |
+
+### 示例
+
+列表 15-29 展示了在复制相同输入字段的同时为每个新字段分配唯一 ID 的过程中，`mergeAttributes()` 的用法。你可以随着操作查看结果，我在字段中显示每个输入字段的 HTML。
+
+`doMerge()` 函数首先生成两个元素：一个 `P` 元素和一个 `INPUT` 元素。由于这些新创建的元素没有关联的属性，因此通过 `uniqueID` 属性为 `INPUT` 元素分配了一个唯一 ID。来自源代码中字段（`field1`）的属性被合并到新的 `INPUT` 元素中。因此，所有的属性都被复制到新元素中。`INPUT` 元素被插入 `P` 元素中，`P` 元素添加到文档的表单元素中。最后，新元素的 `outerHTML` 显示在它的字段中。注意，除了 `NAME` 和 `ID` 属性外，所有其他属性都被复制。这包括样式表属性和事件处理器。为了证明新元素中的事件处理器有效，你可以向其中任何一个元素添加内容并按 Tab 键以触发 `onChange` 事件处理器，它会将内容更改为全大写字母。
+
+### 列表 15-29：使用 `mergeAttributes()` 方法
+
+```html
+<HTML>
+<HEAD>
+<TITLE>mergeAttributes() 方法</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function doMerge(form) {
+  var newPElement = document.createElement("P")
+  var newInputElement = document.createElement("INPUT")
+  newInputElement.id = newInputElement.uniqueID
+  newInputElement.mergeAttributes(form.field1)
+  newPElement.appendChild(newInputElement)
+  form.appendChild(newPElement)
+  newInputElement.value = newInputElement.outerHTML
+}
+
+// 由字段的 onChange 事件处理器调用
+function upperMe(field) {
+  field.value = field.value.toUpperCase();
+}
+</SCRIPT>
+</HEAD>
+<BODY onload="document.expandable.field1.value = document.expandable.field1.outerHTML">
+<h1>mergeAttributes() 方法</h1>
+<HR>
+<FORM NAME="expandable" onSubmit="return false">
+<P><INPUT TYPE="button" VALUE="Field 'Clone'" onclick="doMerge(this.form)"></P>
+<P><INPUT TYPE="text" NAME="field1" ID="FIELD1" SIZE=120 VALUE="" STYLE="font-size:9pt" onChange="upperMe(this)"></P>
+</FORM>
+</BODY>
+</HTML>
+```
+
+---
+
+## `normalize()`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | ✓ | | | | | |
+
+```javascript
+elementObject.normalize()
+```
+
+### 示例
+
+使用 Evaluator 在 NN6 中实验 `normalize()` 方法。以下序列在 `myElement` 中与一个文本节点相邻添加一个文本节点。随后的调用 `normalize()` 会将相邻的文本节点合并。
+
+```javascript
+var txt1 = document.createTextNode("Hello ")
+var txt2 = document.createTextNode("World")
+document.getElementById("myElement").appendChild(txt1)
+document.getElementById("myElement").appendChild(txt2)
+// 此时有两个相邻文本节点
+document.getElementById("myElement").normalize()
+// 现在合并为一个文本节点 "Hello World"
+```
+
+
+
+# 使用 Evaluator 在 NN6 中实验 `normalize()` 方法
+
+以下序列在 `myElement` 中与一个文本节点相邻添加一个文本节点。随后的调用：
+
+```
+elementObject.normalize()
+```
+
+---
+
+# 第 1 章 通用 HTML 对象 (第 15 章)
+
+## 列表 15-30: 使用 `setCapture()` 和 `releaseCapture()`
+
+```html
+<HTML>
+<STYLE TYPE="text/css">
+#contextMenu {position:absolute; background-color:#fcfcfcf;
+  border-style:solid; border-width:1px;
+  border-color:#EFEFEF #505050 #505050 #EFEFEF;
+  padding:30px; font-size:8px; font-family:Arial, Helvetica;
+  line-height:150%; visibility:hidden
+}
+.menuItem {color:black}
+.menuItemOn {color:white}
+OL {list-font-position:inside; font-weight:bold; cursor:nw-resize}
+LI {font-weight:normal}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+function showContextMenu() {
+  contextMenu.style.pixelTop = event.clientY + document.body.scrollTop
+  contextMenu.style.pixelLeft = event.clientX + document.body.scrollLeft
+  contextMenu.style.visibility = "visible"
+  event.returnValue = false
+}
+function revert() {
+  document.releaseCapture()
+  hideMenu()
+}
+function hideMenu() {
+  contextMenu.style.visibility = "hidden"
+}
+function handleClick() {
+  var elem = window.event.srcElement
+  if (elem.id.indexOf("menuItem") == 0) {
+    shapesList.style.listStyleType = elem.LISTYPE
+    revert()
+    event.cancelBubble = true
+  }
+}
+function highlight() {
+  var elem = event.srcElement
+  if (elem.className == "menuItem") {
+    elem.className = "menuItemOn"
+  }
+}
+function unhighlight() {
+  var elem = event.srcElement
+  if (elem.className == "menuItemOn") {
+    elem.className = "menuItem"
+  }
+}
+</SCRIPT>
+<BODY onclick="alert('You reached the document object.')">
+  <OL id="shapesList" oncontextmenu="showContextMenu()">
+    <LI>三维形状</LI>
+    <LI>圆柱体</LI>
+    <LI>立方体</LI>
+    <LI>长方体</LI>
+    <LI>正棱锥</LI>
+    <LI>圆锥</LI>
+    <LI>球体</LI>
+  </OL>
+  <DIV id="contextMenu" onlosecapture="hideMenu()" onclick="handleClick()" onmouseover="highlight()" onmouseout="unhighlight()">
+    <SPAN id="menuitem1" CLASS="menuItem" LISTYPE="upper-alpha">A,B,C,...</SPAN><BR>
+    <SPAN id="menuitem2" CLASS="menuItem" LISTYPE="lower-alpha">a,b,c,...</SPAN><BR>
+    <SPAN id="menuitem3" CLASS="menuItem" LISTYPE="upper-roman">I,II,III,...</SPAN><BR>
+    <SPAN id="menuitem4" CLASS="menuItem" LISTYPE="lower-roman">i,ii,iii,...</SPAN><BR>
+    <SPAN id="menuitem5" CLASS="menuItem" LISTYPE="decimal">1,2,3,...</SPAN><BR>
+  </DIV>
+</BODY>
+</HTML>
+```
+
+---
+
+## `removeAttribute("attributeName")` [大小写敏感]
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | | ✓ | | ✓ | ✓ | ✓ | |
+
+使用评估器（JavaScript Bible 第 13 章）对页面中的元素尝试 `removeAttribute()` 方法。请参考本章稍后关于 `setAttribute()` 方法的示例，以及顶部框框中对应的 `removeAttribute()` 语句。使用 `getAttribute()` 交替使用语句来验证每个属性的存在与否。
+
+```
+elementObject.removeAttribute()
+```
+
+### `removeAttributeNode(attributeNode)` / `setAttributeNode(attributeNode)`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | | ✓ | | | | | |
+
+#### 示例
+
+使用评估器（JavaScript Bible 第 13 章）对页面中的 `P` 元素尝试 `setAttributeNode()` 和 `removeAttributeNode()` 方法。任务为 `P` 元素创建并添加一个 `STYLE` 属性。通过创建一个新属性并将其临时存储在全局变量 `a` 中：
+
+```
+a = document.createAttribute("style")
+```
+
+给属性对象赋值：
+`a.nodeValue = "color:red"`
+
+现在将属性插入到 `P` 元素中：
+`document.getElementById("myP").setAttributeNode(a)`
+
+段落颜色响应新添加的属性而改变了颜色。
+由于 NN 的 Bug，该方法无法返回新插入的属性节点的引用，你可以人为地获取这样的引用：
+
+```
+b = document.getElementById("myP").getAttributeNode("style")
+```
+
+最后，使用新添加属性的引用将其删除：
+`document.getElementById("myP").removeAttributeNode(b)`
+
+段落颜色恢复原状。
+
+---
+
+## `removeBehavior(ID)`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | | | | | | | |
+
+#### 示例
+
+查看列表 15-19 以了解如何添加 `addBehavior()`，查看 15-20 以了解如何删除它。
+
+```
+elementObject.removeBehavior()
+```
+
+---
+
+## `removeChild(nodeObject)`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | | ✓ | | ✓ | ✓ | ✓ | |
+
+#### 示例
+
+检查列表 15-21 中的 `appendChild()` 方法以理解 `removeChild()` 和 `removeNode()` 的区别。在 `restore()` 函数中，在 IE5+ 中可以将此语句
+`mainObj.removeChild(oneChild)`
+替换为
+`oneChild.removeNode(true)`
+
+---
+
+## `removeExpression("propertyName")`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | | | | | ✓ | ✓ | |
+
+#### 示例
+
+使用评估器（JavaScript Bible 第 13 章）尝试 `removeExpression()` 方法。将以下每个语句输入到顶部文本框中，并观察实线下方 `my` 元素（及其嵌套的 `myEM` 元素）中的结果：
+`document.myEM.removeExpression("fontSize")`
+
+---
+
+## `replaceAdjacentText("position", "text")`
+
+文本片段中的所有字符（包括空格）都会被替换。因此，你可能需要提供一个末尾空格，如下所示，同时你要替换的片段也包含一个空格。
+
+```
+document.all.myP.replaceAdjacentText("beforeEnd", " good people.")
+```
+
+这是替换 `myEM` 元素之后文本片段的另一种方法，但它同样相对于周围的 `myP` 元素。如果你现在尝试替换 `myP` 块级元素结束后的文本，
+
+```
+document.all.myP.replaceAdjacentText("afterEnd", "Hooray!")
+```
+
+文本片段将被插入到 `myP` 段末尾之后。该片段就像在文档对象模型中悬浮的、未标记的文本节点一样。
+
+---
+
+### `replaceChild(newNodeObject, oldNodeObject)`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | | ✓ | | | ✓ | ✓ | |
+
+#### 示例
+
+你可以在本章前面的列表 15-21 中看到 `replaceChild()` 的一个示例。
+
+---
+
+## `replaceNode(newNodeObject)`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | | | | | | ✓ | |
+
+#### 示例
+
+列表 15-31 展示了三个与节点相关的方法：`removeNode()`、`replaceNode()` 和 `swapNode()`。这些方法仅在 IE5+ 中有效。
+
+从列表 15-31 渲染的页面从一个包含四个项目的 `UL` 列表开始。四个按钮控制此列表元素节点结构的各个方面。第一个按钮调用 `replace()` 函数，它将 `UL` 更改为 `OL`。要实现这一点，函数必须暂时移除原始 `UL` 元素的所有子节点，以便它们能够重新添加到新的 `OL` 元素中。同时，`OL` 节点被存储在一个全局变量（`oldNode`）中，以便在另一个函数中恢复。
+
+为了用带有 `myOL` ID 的 `OL` 替换 `UL`，`replace()` 函数创建一个新的 `OL` 元素并对其进行赋值。子元素（`LI` 元素）以数组的形式存储在变量中。然后使用 `insertBefore()` 方法将子节点插入到空的 `OL` 元素中。注意，从 `innards` 数组中的每个子元素在插入到 `OL` 元素后，该子元素就会从 `innards` 数组中移除。这就是为什么循环会不断将 `innards` 数组的第一个项插入新元素。最后，`replaceNode()` 方法将新节点放在旧节点的位置，而旧节点（即原来的 `UL` 元素）被存储在 `oldNode` 中。
+
+```
+elementObject.replaceNode()
+```
+
+`restore()` 函数的操作方向与 `replace()` 函数相反。它涉及对嵌套子节点的处理，其中脚本交换了第一个和最后一个节点。`swapNode()` 方法与讨论的其他方法一样，是从节点的角度操作的。因此，该方法附加到被交换的节点之一上，而另一个节点被指定为参数。由于 `OL` 元素的性质，数字序列保持不变，但 `LI` 的文本发生了交换。
+
+为了演示 `removeNode()`，第四个函数移除了列表的最后一个子节点。每次调用 `removeNode()` 都会传递 `true` 参数，以确保每个 `LI` 内部的文本节点也被移除。通过将参数设置为 `false`（默认值）来实验这种方法。注意当你移除 `LI` 节点时父子关系是如何变化的。
+
+#### 列表 15-31: 使用节点相关方法
+
+```html
+<HTML>
+<HEAD>
+<TITLE>removeNode(), replaceNode(), and swapNode() Methods</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+// 更改之间的原始旧节点
+var oldNode
+
+// 将 UL 节点替换为 OL
+function replace() {
+  if (document.all.myUL) {
+    var newNode = document.createElement("OL")
+    newNode.id = "myOL"
+    var innards = document.all.myUL.children
+    while (innards.length > 0) {
+      newNode.insertBefore(innards[0])
+    }
+    oldNode = document.all.myUL.replaceNode(newNode)
+  }
+}
+
+// 恢复 OL 为 UL
+function restore() {
+  if (document.all.myOL && oldNode) {
+    var innards = document.all.myOL.children
+    while (innards.length > 0) {
+      oldNode.insertBefore(innards[0])
+    }
+    document.all.myOL.replaceNode(oldNode)
+  }
+}
+
+// 交换第一个和最后一个节点
+function swap() {
+  if (document.all.myUL) {
+    document.all.myUL.firstChild.swapNode(document.all.myUL.lastChild)
+  }
+  if (document.all.myOL) {
+    document.all.myOL.firstChild.swapNode(document.all.myOL.lastChild)
+  }
+}
+
+// 移除最后一个节点
+function remove() {
+  if (document.all.myUL) {
+    document.all.myUL.lastChild.removeNode(true)
+  }
+  if (document.all.myOL) {
+    document.all.myOL.lastChild.removeNode(true)
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<H1>Node Methods</H1>
+<HR>
+<UL id="myUL">
+<LI>First Item</LI>
+<LI>Second Item</LI>
+<LI>Third Item</LI>
+<LI>Fourth Item</LI>
+</UL>
+<FORM>
+<INPUT TYPE="BUTTON" VALUE="Change to OL" ONCLICK="replace()">
+<INPUT TYPE="BUTTON" VALUE="Restore UL" ONCLICK="restore()">
+<INPUT TYPE="BUTTON" VALUE="Swap First/Last" ONCLICK="swap()">
+<INPUT TYPE="BUTTON" VALUE="Remove Last" ONCLICK="remove()">
+</FORM>
+</BODY>
+</HTML>
+```
+
+---
+
+# `getExpression()`, `setExpression()`, 和 `recalc()` 方法
+
+通过小时、分钟、秒，不断调整它们的宽度以反映当前时间。与此同时，每个条形右侧元素的 `innerHTML` 会显示该条形的当前数值。
+
+此示例中动态计算的值是基于反复创建新的日期对象来从客户端时钟获取当前时间的。小时、分钟和秒的值是从存储在名为 `now` 的变量中的日期对象中取回的。还涉及其他计算，以便将其中一个时间分量的值转换为条形宽度的像素值。条形被分为 24 部分（用于小时）和 60 部分（用于分钟和秒），两种类型的比例尺有所不同。在本应用程序中，对于 60 分钟条形，每个元素被设置为 5 像素（存储在 `shortestWidth` 中），而 24 小时条形是最短宽度的 2.5 倍。
+
+当文档加载时，三个用于彩色条形的 `span` 元素没有赋予宽度，它们假设默认宽度为零。页面加载后，`onload` 事件处理程序调用 `init()` 函数，该函数设置每个条形宽度的初始值以及三个标签 `span` 的 `innerHTML`。一旦设置了这些初始值，`init()` 函数就会调用 `updateClock()`。
+
+在 `updateClock()` 函数中，为新时刻创建一个新的日期对象。调用 `document.recalc()` 方法，指示浏览器重新计算在 `init()` 函数中设置的表达式，并将新值分配给属性。为了让时钟“跳动”，使用 `setTimeout()` 方法在一秒后调用此 `updateClock()` 函数。
+
+要查看 `getExpression()` 方法的作用，你可以点击页面上的按钮。它简单地显示你使用 `setExpression()` 分配的其中一个属性的返回值。
+
+#### 列表 15-32：动态属性
+
+```html
+<HTML>
+<HEAD>
+<TITLE>getExpression(), setExpression(), 和 recalc() 方法</TITLE>
+<STYLE TYPE="text/css">
+TH {vertical-align:bottom}
+SPAN {vertical-align:bottom}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+var now = new Date()
+var shortestWidth = 5
+var multiple = 2.5
+
+function init() {
+  with (document.all) {
+    hoursBlock.style.setExpression("width", "now.getHours() * multiple + 'px'", "javascript")
+    hoursLabel.setExpression("innerHTML", "now.getHours()", "javascript")
+    minutesBlock.style.setExpression("width", "now.getMinutes() * shortestWidth + 'px'", "javascript")
+    minutesLabel.setExpression("innerHTML", "now.getMinutes()", "javascript")
+    secondsBlock.style.setExpression("width", "now.getSeconds() * shortestWidth + 'px'", "javascript")
+    secondsLabel.setExpression("innerHTML", "now.getSeconds()", "javascript")
+  }
+  updateClock()
+}
+
+function updateClock() {
+  now = new Date()
+  document.recalc()
+  setTimeout("updateClock()", 1000)
+}
+
+function showExpr() {
+  alert("Expression for the Hours' innerHTML property is:\r\n" + document.all.hoursLabel.getExpression("innerHTML") + ".")
+}
+</SCRIPT>
+</HEAD>
+<BODY ONLOAD="init()">
+<H1>getExpression(), setExpression(), recalc() 方法</H1>
+<HR>
+<P>此时钟使用动态属性来计算条形宽度和数字：</P>
+<TABLE BORDER=0>
+<TR>
+<TH>小时:</TH>
+<TD><SPAN ID="hoursBlock" STYLE="background-color:red; display:inline-block">&nbsp;</SPAN><SPAN ID="hoursLabel"></SPAN></TD>
+</TR>
+<TR>
+<TH>分钟:</TH>
+<TD><SPAN ID="minutesBlock" STYLE="background-color:yellow; display:inline-block">&nbsp;</SPAN><SPAN ID="minutesLabel"></SPAN></TD>
+</TR>
+<TR>
+<TH>秒:</TH>
+<TD><SPAN ID="secondsBlock" STYLE="background-color:green; display:inline-block">&nbsp;</SPAN><SPAN ID="secondsLabel"></SPAN></TD>
+</TR>
+</TABLE>
+<HR>
+<FORM>
+<INPUT TYPE="BUTTON" VALUE="Show Hours' innerHTML Expression" ONCLICK="showExpr()">
+</FORM>
+</BODY>
+</HTML>
+```
+
+---
+
+# `swapNode(otherNodeObject)`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | | | | | | ✓ | |
+
+#### 示例
+
+参见列表 15-31（`replaceNode()` 方法）获取 `swapNode()` 方法运行的示例。
+
+---
+
+## `tags("tagName")`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | | | | | ✓ | ✓ | |
+
+#### 示例
+
+使用评估器（JavaScript Bible 第 13 章）来实验 `tags()` 方法。因为 `tags()` 方法返回一个数组，你可以使用这些值：
+
+```javascript
+document.all.tags("DIV")
+```
+
+---
+
+# 事件处理器
+
+## `onActivate`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | | | | | | ✓ | ✓ |
+
+如果你反复按下 Tab 键，该段落将获得焦点——由其周围的虚线指示。为了防止元素失去焦点，为 `ondeactivate` 事件处理程序分配一个匿名函数，如下：
+
+```javascript
+myP.ondeactivate = new Function("event.returnValue=false")
+```
+
+现在你可以点击其他元素，该元素不会失去焦点，直到你刷新页面（这会清除焦点）。
+
+---
+
+## `onBeforeCopy`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | | | | | | ✓ | ✓ |
+
+#### 示例
+
+你可以使用 `onBeforeCopy` 事件处理程序在实际操作之前处理信息。在列表 15-33 中，`onBeforeCopy` 事件处理程序调用的函数选择了整个段落，以便用户可以将整个内容复制到剪贴板。你可以将结果粘贴到 `textarea` 中进行验证。通过将段落选择分配给 `onBeforeCopy` 事件处理程序，页面会在选择菜单之前通知用户复制操作的内容。如果操作被推迟到 `onCopy` 事件处理程序，则选择将在用户点击“复制”后进行。
+
+---
+
+## `onBeforeCut`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | | | | | | ✓ | ✓ |
+
+#### 示例
+
+你可以使用 `onBeforeCut` 事件处理程序在实际剪切操作之前对信息进行预处理。你可以通过编辑列表 15-33 的副本来尝试，将 `onBeforeCopy` 事件处理程序改为 `onBeforeCut`。注意，在原始形式中，当你选择第二个段落中的文本时，示例不会激活“剪切”项目或“编辑”菜单。但通过为 `onBeforeCut` 事件处理程序分配一个函数，菜单项将变为激活状态，并且会从调用的函数选中整个段落。
+
+---
+
+## `onBeforeDeactivate`
+
+参见 `onActivate`。
+
+---
+
+## `onBeforeEditFocus`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | | | | | | ✓ | ✓ |
+
+```javascript
+elementObject.onBeforeEditFocus
+```
+
+#### 示例
+
+使用评估器在 IE5.5+ 中探索 `onBeforeEditFocus`。在以下序列中，你为 `myP` 元素的 `onBeforeEditFocus` 处理器分配了一个匿名函数，当事件处理器触发时，会将元素的颜色变为红色：
+
+```javascript
+myP.onbeforeeditfocus = new Function("myP.style.color='red'")
+```
+
+现在对 `myP` 元素进行内容编辑：
+
+```javascript
+myP.contentEditable = true
+```
+
+如果你点击页面上的 `myP` 元素进行编辑，在开始编辑之前，内容会变为红色。在为此类用户界面编写脚本的页面中，你会包含一些控制控件来关闭编辑并将颜色恢复为正常。
+
+如果你想了解更多通过 HTML 编辑 ActiveX 控件进行 HTML 内容编辑的信息，请访问 http://msdn.microsoft.com/workshop/browser/mshtml/。
+
+---
+
+## `onBeforePaste`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | | | | | | ✓ | ✓ |
+
+#### 示例
+
+参见本章稍后的 `onPaste` 事件处理程序（列表 15-45），以查看 `onBeforePaste` 和 `onPaste` 事件处理器是如何协同工作的。
+
+---
+
+## `onBlur`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| ✓ | ✓ | ✓ | ✓ | | | ✓ | ✓ | ✓ |
+
+#### 示例
+
+通常情况下，页面作者使用 `onBlur` 事件处理程序对用户实施极端的控制，例如除非用户在框中输入了内容，否则防止用户离开文本框。这并不是符合 Web 习惯的做法，我不鼓励这样做，因为有更智能的方法可以在表单提交之前确保字段中已有输入（参见 JavaScript Bible 第 43 章）。列表 15-34 仅演示了 `TABINDEX` 属性在 IE5/Windows 元素中对于 `onBlur` 和 `onFocus` 事件的影响。注意，当你按下 Tab 键时，尽管三个段落都分配了事件处理程序，但只有第二个段落会触发事件。
+
+#### 列表 15-34: `onBlur` 和 `onFocus` 事件处理程序
+
+```html
+<HTML>
+<HEAD>
+<TITLE>onBlur and onFocus 事件处理器</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function showBlur() {
+  var id = event.srcElement.id
+  alert("元素 \"" + id + "\" 已失去焦点。")
+}
+function showFocus() {
+  var id = event.srcElement.id
+  alert("元素 \"" + id + "\" 已获得焦点。")
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<H1>onBlur and onFocus 事件处理器</H1>
+<HR>
+<P ID="P1" ONBLUR="showBlur()" ONFOCUS="showFocus()">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</P>
+<P ID="P2" TABINDEX="2" ONBLUR="showBlur()" ONFOCUS="showFocus()">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</P>
+<P ID="P3" TABINDEX="3" ONBLUR="showBlur()" ONFOCUS="showFocus()">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</P>
+</BODY>
+</HTML>
+```
+
+---
+
+## `onBeforeCut` / `onCut` / `onBeforePaste` / `onPaste` 事件处理器
+
+#### 列表 15-36: `onBeforeCut` 和 `onCut` 事件处理器
+
+```html
+<HTML>
+<HEAD>
+<TITLE>onBeforeCut 和 onCut 事件处理器</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function selectWhole() {
+  var elem = event.srcElement
+  if (elem.tagName == "TD") {
+    var range = document.body.createTextRange()
+    range.moveToElementText(elem)
+    range.select()
+  }
+  event.returnValue = false
+}
+
+function handleCut() {
+  var elem = event.srcElement
+  if (elem.className == "blanks") {
+    elem.innerText = ""
+    event.returnValue = false
+  }
+}
+
+function handlePaste() {
+  var elem = event.srcElement
+  if (elem.className == "blanks") {
+    elem.innerHTML = clipboardData.getData("Text")
+  }
+  event.returnValue = false
+}
+
+function handleBeforePaste() {
+  var elem = event.srcElement
+  if (elem.className == "blanks") {
+    event.returnValue = false
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<H1>onBeforeCut 和 onCut 事件处理器</H1>
+<HR>
+<P>你的目标是从下表中剪切一个名词和一个形容词，并将其粘贴到句子的空白处。从表格中选择一个单词，并使用“编辑”或右键菜单将其从表格中剪切。选择句子中空白处的一个或多个空格，选择“粘贴”用剪贴板内容替换空白。</P>
+<TABLE CELLPADDING=5 ONBEFORECUT="selectWhole()" ONCUT="handleCut()">
+<TR><TH>名词</TH><TH>形容词</TH></TR>
+<TR><TD CLASS="noun">truck</TD><TD CLASS="adjective">round</TD></TR>
+<TR><TD CLASS="noun">doll</TD><TD CLASS="adjective">red</TD></TR>
+<TR><TD CLASS="noun">ball</TD><TD CLASS="adjective">pretty</TD></TR>
+</TABLE>
+<P ID="myP" ONBEFOREPASTE="handleBeforePaste()" ONPASTE="handlePaste()">
+Pat 说：“哦天哪，这个 <SPAN ID="blank1" CLASS="blanks">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN> 真是 <SPAN ID="blank2" CLASS="blanks">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>！”</P>
+<BUTTON ONCLICK="location.reload()">重置</BUTTON>
+</BODY>
+</HTML>
+```
+
+---
+
+## `onDblClick`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | ✓ | ✓ | | | ✓ | ✓ | ✓ |
+
+#### 示例
+
+请查看列表 15-35（关于 `onClick` 事件处理器）以查看 `onDblClick` 事件的实际效果。
+
+---
+
+## `onDrag` 相关事件
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | | | | | ✓ | ✓ | ✓ |
+
+#### 示例 (列表 15-37：使用拖拽相关处理器)
+
+```html
+<HTML>
+<HEAD>
+<TITLE>拖拽事件处理器</TITLE>
+<STYLE TYPE="text/css">
+.blanks {text-decoration:underline}
+TH {text-decoration:underline}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+var timer
+
+function setupDrag() {
+  if (event.srcElement.tagName != "TD") {
+    event.returnValue = false
+  } else {
+    event.dataTransfer.setData("Text", event.srcElement.innerText + ":" + event.srcElement.className)
+    event.dataTransfer.effectAllowed = "copy"
+    timer = new Date()
+  }
+}
+
+function timeIt() {
+  if (new Date() - timer > 2000) {
+    alert("时间到了。请重试。")
+    timer = 0
+  }
+}
+
+function handleDrop() {
+  var elem = event.srcElement
+  var passedData = event.dataTransfer.getData("Text")
+  var errMsg = ""
+  if (passedData) {
+    passedData = passedData.split(":")
+    if (elem.id == "blank1") {
+      if (passedData[1] == "noun") {
+        event.dataTransfer.dropEffect = "copy"
+        elem.innerText = passedData[0]
+      } else {
+        errMsg = "你不能把形容词放在名词空白处。"
+      }
+    }
+    if (elem.id == "blank2") {
+      if (passedData[1] == "adjective") {
+        event.dataTransfer.dropEffect = "copy"
+        elem.innerText = passedData[0]
+      } else {
+        errMsg = "你不能把名词放在形容词空白处。"
+      }
+    }
+  }
+  if (errMsg) {
+    alert(errMsg)
+  }
+}
+
+function cancelDefault() {
+  if (event.srcElement.id.indexOf("blank") == 0) {
+    event.dataTransfer.dropEffect = "copy"
+    event.returnValue = false
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY ONDRAGSTART="setupDrag()" ONDRAGOVER="timeIt()">
+<H1>拖拽事件处理器</H1>
+<HR>
+<P>你的目标是从下表中拖入一个名词和一个形容词到句子中。从表格中选择一个单词，并将其拖到指定的空白处。当你释放鼠标时，单词将出现在空白处。你有两秒时间完成每个空白处。</P>
+<TABLE CELLPADDING=5>
+<TR><TH>名词</TH><TH>形容词</TH></TR>
+<TR><TD CLASS="noun">truck</TD><TD CLASS="adjective">round</TD></TR>
+<TR><TD CLASS="noun">dog</TD><TD CLASS="adjective">red</TD></TR>
+<TR><TD CLASS="noun">ball</TD><TD CLASS="adjective">pretty</TD></TR>
+</TABLE>
+<P ID="myP" ONDRAGOVER="cancelDefault()" ONDROP="handleDrop()">
+Pat 说：“哦天哪，这个 <SPAN ID="blank1" CLASS="blanks">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN> 真是 <SPAN ID="blank2" CLASS="blanks">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>！”</P>
+<BUTTON ONCLICK="location.reload()">重置</BUTTON>
+</BODY>
+</HTML>
+```
+
+列表 15-37 中未显示的处理器是 `onDragEnd`。你可以使用此事件来显示每次成功拖拽操作的持续时间。
+
+---
+
+## `onDragEnter` / `onDragLeave`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | | | | | ✓ | ✓ | |
+
+#### 示例 (列表 15-38：使用 `onDragEnter` 和 `onDragLeave` 事件处理器)
+
+```html
+<HTML>
+<HEAD>
+<TITLE>onDragEnter and onDragLeave Event Handlers</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function showEnter() {
+  status = "Entered at: " + new Date()
+  event.returnValue = false
+}
+function clearMsg() {
+  status = ""
+  event.returnValue = false
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<H1 ONDRAGENTER="showEnter()" ONDRAGLEAVE="clearMsg()"></H1>
+<HR>
+<P>从此段落中选择任何字符，并在页面上缓慢拖动。当拖动动作进入上方的大标题时，状态栏将显示 `onDragEnter` 事件处理器触发的时间。当你离开标题时，消息将通过 `onDragLeave` 事件处理器清除。</P>
+</BODY>
+</HTML>
+```
+
+---
+
+## `onDragOver`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | | | | | ✓ | ✓ | ✓ |
+
+#### 示例
+
+查看 `onDrag` 事件处理器的列表 15-37，了解 `onDragOver` 事件处理器如何帮助元素成为放置目标。
+
+---
+
+## `onDragStart`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | | | | ✓ | ✓ | ✓ | |
+
+#### 示例
+
+查看 `onDrag` 事件处理器的列表 15-37，了解如何在典型的拖放场景中应用 `onDragStart` 事件处理器。
+
+---
+
+## `onDrop`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | | | | | ✓ | ✓ | ✓ |
+
+#### 示例
+
+查看 `onDrag` 事件处理器的列表 15-37，了解在典型的拖放场景中应用 `onDrop` 事件处理器。
+
+---
+
+## `onFilterChange`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | | | | ✓ | ✓ | ✓ | |
+
+#### 示例 (列表 15-39：使用 `onFilterChange` 事件处理器)
+
+```html
+<HTML>
+<HEAD>
+<TITLE>onFilterChange Event Handler</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function init() {
+  image1.filters[0].apply()
+  image2.filters[0].apply()
+}
+function start() {
+  image1.style.visibility = "hidden"
+  image2.filters[0].play()
+}
+function finish() {
+  if (image1.filters[0].status == 0) {
+    image2.style.visibility = "visible"
+    image2.filters[0].play()
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY ONLOAD="init()">
+<H1>FilterChange Event Handler</H1>
+<HR>
+<P>第一次过渡（“circle-in”）的完成触发了“circle-out”。</P>
+<BUTTON ONCLICK="location.reload()">再次播放</BUTTON>
+<DIV ID="image1" STYLE="visibility:visible; position:absolute; top:150px; left:150px; filter:progid:DXImageTransform.Microsoft.Iris(irisstyle='CIRCLE', motion='in')" ONFILTERCHANGE="finish()"><IMG SRC="desk1.gif" HEIGHT=90 WIDTH=120></DIV>
+<DIV ID="image2" STYLE="visibility:hidden; position:absolute; top:150px; left:150px; filter:progid:DXImageTransform.Microsoft.Iris(irisstyle='CIRCLE', motion='out')"><IMG SRC="desk3.gif" HEIGHT=90 WIDTH=120></DIV>
+</BODY>
+</HTML>
+```
+
+---
+
+## `onFocus`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | |
+
+参见列表 15-34 关于 `onFocus` 和 `onBlur` 处理器的示例。
+
+---
+
+## `onHelp`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | | | | | | | |
+
+#### 示例 (列表 15-40：创建上下文感知帮助)
+
+```html
+<HTML>
+<HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+function showNameHelp() {
+  alert("输入您的姓和名。")
+  event.cancelBubble = true
+  return false
+}
+function showYOBHelp() {
+  alert("输入四位年份。例如：1972")
+  event.cancelBubble = true
+  return false
+}
+function showGenericHelp() {
+  alert("所有字段都是必填的。")
+  event.cancelBubble = true
+  return false
+}
+function showLegend() {
+  document.all.legend.style.visibility = "visible"
+}
+function hideLegend() {
+  document.all.legend.style.visibility = "hidden"
+}
+function init() {
+  var msg = ""
+  if (navigator.userAgent.indexOf("Mac") != -1) {
+    msg = "按下 F1 获取帮助。"
+  } else if (navigator.userAgent.indexOf("Win") != -1) {
+    msg = "按下 F1 获取帮助。"
+  }
+  document.all.legend.style.visibility = "hidden"
+  document.all.legend.innerHTML = msg
+}
+</SCRIPT>
+</HEAD>
+<BODY ONLOAD="init()" ONHELP="return showGenericHelp()">
+<H1>HTML Event Handler</H1>
+<P ID="legend" STYLE="visibility:hidden; font-size:10px">&nbsp;</P>
+<FORM>
+姓名: <INPUT TYPE="TEXT" NAME="name" SIZE="30" ONFOCUS="showLegend()" ONBLUR="hideLegend()" ONHELP="return showNameHelp()"><BR>
+出生年份: <INPUT TYPE="TEXT" NAME="YOB" SIZE="30" ONFOCUS="showLegend()" ONBLUR="hideLegend()" ONHELP="return showYOBHelp()">
+</FORM>
+</BODY>
+</HTML>
+```
+
+---
+
+## `onKeyDown` / `onKeyPress` / `onKeyUp`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | ✓ | ✓ | | ✓ | ✓ | ✓ | |
+
+#### 示例 (列表 15-41：键盘事件处理器实验室)
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Keyboard Event Handler Lab</TITLE>
+<STYLE TYPE="text/css">
+TD {text-align:center}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+function init() {
+  document.onkeydown = showKeyDown
+  document.onkeyup = showKeyUp
+  document.onkeypress = showKeyPress
+}
+
+function showKeyDown(evt) {
+  evt = (evt) ? evt : window.event
+  document.getElementById("keyCodeDown").innerHTML = evt.keyCode
+  document.getElementById("charCodeDown").innerHTML = evt.charCode || 0
+  restoreModifiers("Down")
+  restoreModifiers("Press")
+  restoreModifiers("Up")
+  document.getElementById("keyCodeDown").innerHTML = evt.keyCode
+  if (evt.charCode) {
+    document.getElementById("charCodeDown").innerHTML = evt.charCode
+  }
+  showModifiers("Down", evt)
+}
+
+function showKeyUp(evt) {
+  evt = (evt) ? evt : window.event
+  document.getElementById("keyCodeUp").innerHTML = evt.keyCode
+  if (evt.charCode) {
+    document.getElementById("charCodeUp").innerHTML = evt.charCode
+  }
+  showModifiers("Up", evt)
+  return false
+}
+
+function showKeyPress(evt) {
+  evt = (evt) ? evt : window.event
+  document.getElementById("keyCodePress").innerHTML = evt.keyCode
+  if (evt.charCode) {
+    document.getElementById("charCodePress").innerHTML = evt.charCode
+  }
+  showModifiers("Press", evt)
+  return false
+}
+
+function showModifiers(ext, evt) {
+  restoreModifiers(ext)
+  if (evt.shiftKey) {
+    document.getElementById("shift" + ext).style.backgroundColor = "#ff0000"
+  }
+  if (evt.ctrlKey) {
+    document.getElementById("ctrl" + ext).style.backgroundColor = "#00ff00"
+  }
+  if (evt.altKey) {
+    document.getElementById("alt" + ext).style.backgroundColor = "#0000ff"
+  }
+}
+
+function restoreModifiers(ext) {
+  document.getElementById("shift" + ext).style.backgroundColor = ""
+  document.getElementById("ctrl" + ext).style.backgroundColor = ""
+  document.getElementById("alt" + ext).style.backgroundColor = ""
+}
+</SCRIPT>
+</HEAD>
+<BODY ONLOAD="init()">
+<H1>Keyboard Event Handler Lab</H1>
+<HR>
+<TABLE>
+<TR><TH></TH><TH>KeyDown</TH><TH>KeyPress</TH><TH>KeyUp</TH></TR>
+<TR><TD>keyCode</TD><TD ID="keyCodeDown">0</TD><TD ID="keyCodePress">0</TD><TD ID="keyCodeUp">0</TD></TR>
+<TR><TD>charCode</TD><TD ID="charCodeDown">0</TD><TD ID="charCodePress">0</TD><TD ID="charCodeUp">0</TD></TR>
+<TR><TD>Shift</TD><TD ID="shiftDown">Shift</TD><TD ID="shiftPress">Shift</TD><TD ID="shiftUp">Shift</TD></TR>
+<TR><TD>Ctrl</TD><TD ID="ctrlDown">Ctrl</TD><TD ID="ctrlPress">Ctrl</TD><TD ID="ctrlUp">Ctrl</TD></TR>
+<TR><TD>Alt</TD><TD ID="altDown">Alt</TD><TD ID="altPress">Alt</TD><TD ID="altUp">Alt</TD></TR>
+</TABLE>
+</BODY>
+</HTML>
+```
+
+花时间研究各种按键和组合键，直到你理解键码的工作方式。
+
+---
+
+## `onLoseCapture`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | | | | | ✓ | ✓ | |
+
+#### 示例
+
+查看本章节前面的列表 15-30，了解如何在显示上下文菜单的场景中使用 `onLoseCapture`。`onLoseCapture` 事件会在用户执行任何导致菜单丢失捕获的操作时隐藏上下文菜单。
+
+---
+
+## `onMouseDown` / `onMouseUp`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| | | | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | |
+
+#### 示例 (列表 15-42：使用 `onMouseDown` 和 `onMouseUp` 事件处理器)
+
+```html
+<HTML>
+<HEAD>
+<TITLE>onMouseDown 和 onMouseUp 事件处理器</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+if (document.images) {
+  var RightNormImg = new Image(16,16)
+  var RightUpImg = new Image(16,16)
+  var RightDownImg = new Image(16,16)
+  var LeftNormImg = new Image(16,16)
+  var LeftUpImg = new Image(16,16)
+  var LeftDownImg = new Image(16,16)
+
+  RightNormImg.src = "RightNorm.gif"
+  RightUpImg.src = "RightUp.gif"
+  RightDownImg.src = "RightDown.gif"
+  LeftNormImg.src = "LeftNorm.gif"
+  LeftUpImg.src = "LeftUp.gif"
+  LeftDownImg.src = "LeftDown.gif"
+
+  function setImage(iname, type) {
+    if (document.images) {
+      var imgFile = eval(iname + type + "Img.src")
+      document.images[iname].src = imgFile
+      return false
+    }
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<H1>onMouseDown 和 onMouseUp 事件处理器</H1>
+<HR>
+<P>悬停在按钮上方并点击按钮以查看链接事件处理器如何切换图像:</P>
+<CENTER>
+<A NAME="RightNorm" HREF="javascript:void(0)" ONMOUSEOVER="setImage('RightNorm', 'Norm')" ONMOUSEDOWN="setImage('RightNorm', 'Down')" ONMOUSEUP="setImage('RightNorm', 'Up')" ONMOUSEOUT="setImage('RightNorm', 'Norm')"><IMG NAME="RightNorm" SRC="RightNorm.gif" BORDER=0></A>
+<A NAME="RightUp" HREF="javascript:void(0)" ONMOUSEOVER="setImage('RightUp', 'Norm')" ONMOUSEDOWN="setImage('RightUp', 'Down')" ONMOUSEUP="setImage('RightUp', 'Up')" ONMOUSEOUT="setImage('RightUp', 'Norm')"><IMG NAME="RightUp" SRC="RightUp.gif" BORDER=0></A>
+<A NAME="RightDown" HREF="javascript:void(0)" ONMOUSEOVER="setImage('RightDown', 'Norm')" ONMOUSEDOWN="setImage('RightDown', 'Down')" ONMOUSEUP="setImage('RightDown', 'Up')" ONMOUSEOUT="setImage('RightDown', 'Norm')"><IMG NAME="RightDown" SRC="RightDown.gif" BORDER=0></A>
+<A NAME="LeftNorm" HREF="javascript:void(0)" ONMOUSEOVER="setImage('LeftNorm', 'Norm')" ONMOUSEDOWN="setImage('LeftNorm', 'Down')" ONMOUSEUP="setImage('LeftNorm', 'Up')" ONMOUSEOUT="setImage('LeftNorm', 'Norm')"><IMG NAME="LeftNorm" SRC="LeftNorm.gif" BORDER=0></A>
+<A NAME="LeftUp" HREF="javascript:void(0)" ONMOUSEOVER="setImage('LeftUp', 'Norm')" ONMOUSEDOWN="setImage('LeftUp', 'Down')" ONMOUSEUP="setImage('LeftUp', 'Up')" ONMOUSEOUT="setImage('LeftUp', 'Norm')"><IMG NAME="LeftUp" SRC="LeftUp.gif" BORDER=0></A>
+<A NAME="LeftDown" HREF="javascript:void(0)" ONMOUSEOVER="setImage('LeftDown', 'Norm')" ONMOUSEDOWN="setImage('LeftDown', 'Down')" ONMOUSEUP="setImage('LeftDown', 'Up')" ONMOUSEOUT="setImage('LeftDown', 'Norm')"><IMG NAME="LeftDown" SRC="LeftDown.gif" BORDER=0></A>
+</CENTER>
+</BODY>
+</HTML>
+```
+
+
+
+### onCapture
+
+事件处理的捕获阶段允许你在事件从 DOM 树根元素向下到达目标元素之前拦截它们。这对于复杂接口中的事件委托是一个关键特性。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ |
+
+#### 示例
+
+捕获阶段经常用于全局事件处理，父容器在此监控子元素的事件，而无需为每个元素附加监听器。
+
+### onBubbling
+
+缓冲阶段发生在捕获阶段之后，事件从目标元素返回根元素。这是事件处理中最常见的阶段。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | ✓ | ✓ | ✓ |
+
+#### 示例
+
+缓冲允许你在比触发它的元素更高的级别处理事件，这对于列表或菜单等元素非常高效。
+
+### stopPropagation
+
+`stopPropagation` 方法阻止事件沿传播路径继续传递。当你已经在本地处理了事件时，这非常有用。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+使用 `stopPropagation` 可以确保点击按钮不会触发其父容器的点击处理器。
+
+### preventDefault
+
+`preventDefault` 方法停止与事件相关的默认操作，例如打开页面。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ |
+
+#### 示例
+
+`preventDefault()` 经常用于表单验证，在某些检查失败时停止提交。
+
+### target
+
+事件对象的 `target` 属性识别源自元素。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ |
+
+#### 示例
+
+通过检查 `target`，你可以确定容器内到底点击了哪个子元素。
+
+### currentTarget
+
+`currentTarget` 属性返回附加事件监听器的元素。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ |
+
+#### 示例
+
+与 `target` 不同，`currentTarget` 会随着事件通过 DOM 树而改变。
+
+### bubbles
+
+`bubbles` 属性返回一个布尔值，指示事件是否允许缓冲。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+#### 示例
+
+检查 `bubbles` 属性有助于你判断事件是否会到达父级监听器。
+
+### phase
+
+`phase` 属性指示事件的当前阶段（捕获或缓冲）。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+#### 示例
+
+`phase` 允许你在捕获阶段与缓冲阶段专门实现特定的逻辑。
+
+### timestamp
+
+`timestamp` 属性提供事件发生时的毫秒级时间戳。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+#### 示例
+
+`timestamp` 有于测量不同用户交互之间的时间。
+
+### returnsDefault
+
+`returnsDefault` 属性指示默认操作是否可以取消。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+#### 示例
+
+如果 `returnsDefault` 为 `true`，你可以安全地调用 `preventDefault()`。
+
+### cancelable
+
+`cancelable` 属性指示默认操作是否可以取消。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+#### 示例
+
+如果 `cancelable` 为 `false`，调用 `preventDefault()` 将不起影响。
+
+### type
+
+`type` 属性返回事件类型（例如 "click"）。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+#### 示例
+
+`type` 用于区分由同一函数处理的不同事件。
+
+### detail
+
+`detail` 属性返回按事件的字符码。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+`detail` 主要用于键盘事件以识别按了哪个键。
+
+### keyCode
+
+`keyCode` 属性返回键的数字代码。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+#### 示例
+
+`keyCode` 有用于识别无论字符的物理键。
+
+### charCode
+
+`charCode` 属性返回键的字符码。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+#### 示例
+
+`charCode` 更有助于识别产生的实际字符。
+
+### key
+
+`key` 属性返回按下的键的 Unicode 值。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+`key` 属性是识别键的现代方法。
+
+### shiftKey
+
+`shiftKey` 属性指示是否按了 Shift 键。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+#### 示例
+
+`shiftKey` 允许你检测 Shift 组合键。
+
+### ctrlKey
+
+`ctrlKey` 属性指示是否按了 Ctrl 键。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+#### 示例
+
+`ctrlKey` 用于如 Ctrl+S 等快捷键。
+
+### altKey
+
+`altKey` 属性指示是否按了 Alt 键。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+#### 示例
+
+`altKey` 用于基于 Alt 的快捷键。
+
+### metaKey
+
+`metaKey` 属性指示是否按了 Meta 键。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+`metaKey` 代表 Mac 上的 Command 键或 PC 上的 Windows 键。
+
+### location
+
+`location` 属性指示键在键盘上的位置。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+`location` 有助于区分键在左侧还是右侧。
+
+### code
+
+`code` 属性返回键的 ASCII 码。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+`code` 是用于识别字符的属性。
+
+### repeat
+
+`repeat` 属性指示键是否被按住。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+`repeat` 有用于检测用户是否按住键。
+
+### whichKey
+
+`whichKey` 属性返回键码（IE 特有）。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+`whichKey` 是 IE 特有的属性。
+
+### clientX
+
+`clientX` 属性返回相对于视口的 X 坐标。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+`clientX` 是相对于窗口的位置。
+
+### clientY
+
+`clientY` 属性返回相对于视口的 Y 坐标。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+`clientY` 是相对于窗口的位置。
+
+### screenX
+
+`screenX` 属性返回相对于屏幕的 X 坐标。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+`screenX` 是整个显示器的位置。
+
+### screenY
+
+`screenY` 属性返回相对于屏幕的 Y 坐标。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+`screenY` 是整个显示器的位置。
+
+### pageX
+
+`pageX` 属性返回相对于页面的 X 坐标。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+`pageX` 是相对于文档页的位置。
+
+### pageY
+
+`pageY` 属性返回相对于页面的 Y 坐标。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+`pageY` 是相对于文档页的位置。
+
+### offsetXOld
+
+`offsetXOld` 属性返回相对于元素的偏移量。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+`offsetXOld` 是获取从目标偏移量的一种旧方法。
+
+### offsetX
+
+`offsetX` 属性返回相对于元素的偏移量。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+`offsetX` 是相对于目标边界的水平距离。
+
+### offsetY
+
+`offsetY` 属性返回相对于元素的偏移量。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+`offsetY` 是相对于目标边界的垂直距离。
+
+### layerX
+
+`layerX` 属性返回相对于视口的 X 坐标。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+`layerX` 是相对于视口的位置。
+
+### layerY
+
+`layerY` 属性返回相对于视口的 Y 坐标。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+`layerY` 是相对于视口的位置。
+
+### targetLeft
+
+`targetLeft` 属性返回相对于目标左边界的距离。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+`targetLeft` 用于找到目标的位置。
+
+### targetTop
+
+`targetTop` 属性返回相对于目标顶部边界的距离。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+`targetTop` 用于找到目标的位置。
+
+### targetRight
+
+`targetRight` 属性返回相对于目标右边界的距离。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+`targetRight` 用于定位目标的右边界。
+
+### targetBottom
+
+`targetBottom` 属性返回相对于目标底部边界的距离。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+`targetBottom` 用于定位目标的底部边界。
+
+### targetWidth
+
+`targetWidth` 属性返回目标元素的宽度。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+`targetWidth` 是目标元素的宽度。
+
+### targetHeight
+
+`targetHeight` 属性返回目标的高度。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+`targetHeight` 是目标元素的高度。
+
+```javascript
+// 将全局变量设置为被拖动元素的引用
+
+function setSelectedObj() {
+
+  var imgObj = window.event.srcElement
+
+  if (imgObj.id.indexOf("map") == 2) {
+
+    selectedObj = imgObj
+
+    bringToFront(selectedObj)
+
+    return
+
+  }
+
+  selectedObj = null
+
+  return
+
+}
+
+// 拖拽操作（由 onMouseMove 重调用）
+
+function dragIt() {
+
+  if (selectedObj) {
+
+    shiftTo(selectedObj, event.clientX - offsetX, event.clientY - offsetY)
+
+    return false
+
+  }
+
+}
+
+// 设置全局变量并开启鼠标移动捕获（由 onMouseDown 调用）
+
+function engage() {
+
+  setSelectedObj()
+
+  if (selectedObj) {
+
+    document.onmousemove = dragIt
+
+    offsetX = window.event.offsetX - document.body.scrollLeft
+
+    offsetY = window.event.offsetY - document.body.scrollTop
+
+  }
+
+}
+
+// 还原所有之前的状态（由 onMouseUp 调用）
+
+function release() {
+
+  if (selectedObj) {
+
+    document.onmousemove = null
+
+    selectedObj = null
+
+  }
+
+}
+```
+
+```html
+<SCRIPT>
+
+<HEAD>
+
+<BODY>
+
+<h1>onMouseMove 事件处理器</h1>
+
+<HR>
+
+点击并拖动图像：
+
+<IMG ID="cmap" SRC="camap.gif" WIDTH="47" HEIGHT="82" BORDER="0">
+
+<IMG ID="ormap" SRC="ormap.gif" WIDTH="57" HEIGHT="45" BORDER="0">
+
+<IMG ID="wmap" SRC="wmap.gif" WIDTH="38" HEIGHT="29" BORDER="0">
+
+</SCRIPT>
+
+</BODY>
+
+</html>
+```
+
+# JavaScript 示例宝经：JavaScript Bible 核心伴侣
+
+### onMouseOut / onMouseOver
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+#### 示例
+
+列表 15-44 使用美国《效忠誓》配合四个链接来演示如何使用 `onMouseOver` 和 `onMouseOut` 事件处理器。注意，对于每个链接，处理器都会运行一个设置窗口状态消息的通用函数。该函数返回一个 true 值，事件处理器会对该值进行评估，以复制设置状态栏所需的 true 语句。在其中一条状态消息中，我在括号中提供了一个 URL，以便你评估你认为它对你来说有多帮助。
+
++ 列表 15-44：使用 `onMouseOver` 和 `onMouseOut` 事件处理器
+
+```html
+<HTML>
+
+<HEAD>
+
+<TITLE>onMouseOver 和 onMouseOut 事件处理器</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function setStatus(msg) {
+
+ status = msg
+
+ return true
+
+}
+
+// // 所有链接 HREFs 的目标
+
+function emulate() {
+
+alert("在此演示中不会去那儿。")
+
+}
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY>
+
+<h1>onMouseOver 和 onMouseOut 事件处理器</h1>
+
+<HR>
+
+<h1>效忠誓言</h1>
+
+<HR>
+
+```
+
+# 第 1 章 + 通用 HTML 元素对象（第 15 章）
+
+我 <A HREF="javascript:emulate()" onMouseEnter="return setStatus('查看字典定义')" onMouseOut="return setStatus('')">效忠</A> 于 <A HREF="javascript:emulate()" onMouseEnter="return setStatus('了解有关美国国旗 (http://1.lcbec.io.gov/')" onMouseOut="return setStatus('')">旗帜</A> 以及 <A HREF="javascript:emulate()" onMouseEnter="return setStatus('查看关于美国政府的信息')" onMouseOut="return setStatus('')">美利坚共和国</A> 以及它所代表的共和国，一个 <A HREF="javascript:emulate()" onMouseEnter="return setStatus('阅读效忠誓言中这一短语的历史')" onMouseOut="return setStatus('')">在上帝之下</A> 的无形国家，人人享有自由与正义。
+</body></html>
+
+### onPaste
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | |
+
+#### 示例
+
+列表 15-45 演示了如何使用 `onBeforePaste` 和 `onPaste` 事件处理器（结合 `onBeforeCopy` 和 `onCopy`）来让脚本控制数据传输过程。表格包含要复制的词（一列名词，一列形容词），然后粘贴到段落中的空白处。`onBeforeCopy` 和 `onCopy` 事件处理器被分配给 `TD` 元素，因为这些事件会冒泡到 `TABLE` 容器，且需要处理的 HTML 代码较少。在段落内部，为了向空白处粘贴文本，用户必须选择空白处的至少一个字符（参见列表 15-37，该列表提供了此应用程序的拖放版本）。段落中的 `onPaste` 事件处理器（从任一个 span 冒泡而来）会设置事件的 `returnValue`，从而允许粘贴的项目出现在上下文中。在粘贴时，目标 span 的 `innerHTML` 属性被设置为存储在剪贴板中的文本。此处 `returnValue` 属性也被设置为 false，以防止正常粘贴干扰受控制的版本。`elementObject.onPaste`
+
+# 列表 15-45：使用 onBeforePaste 和 onPaste 事件处理器
+
+```html
+<HTML>
+
+<HEAD>
+
+<TITLE>onBeforePaste 和 onPaste 事件处理器</TITLE>
+
+<STYLE TYPE="css">
+
+TD (text-align:center)
+
+TH (text-decoration:underline)
+
+.blanks (text-decoration:underline)
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function selectWhole() {
+
+  var obj = window.event.srcElement
+
+  var range = document.createRange()
+
+  range.moveToElement(obj)
+
+  range.select()
+
+  event.returnValue = false
+
+}
+
+function handleCopy() {
+
+  var rng = document.createRange()
+
+  clipboard.setData("Text",rng.text)
+
+  event.returnValue = false
+
+}
+
+function handlePaste() {
+
+  var el = window.event.srcElement
+
+  if (el.className == "blanks") {
+
+    el.innerHTML = clipboard.getData("Text")
+
+  }
+
+  event.returnValue = false
+
+}
+
+function handleBeforePaste() {
+
+  var el = window.event.srcElement
+
+  if (el.className == "blanks") {
+
+    event.returnValue = false
+
+  }
+
+}
+
+</SCRIPT>
+
+<HEAD>
+
+<body>
+
+<h1>onBeforePaste 和 onPaste 事件处理器</h1>
+
+<p>目标是复制表格中的单词并粘贴到段落的空白处。通过 onBeforeCopy 和 onCopy 事件处理器，可以控制这一过程。</p>
+
+<table>
+
+<tr><td>名词</td><td>形容词</td></tr>
+
+<tr><td> </td><td> </td></tr>
+
+<tr><td> </td><td> </td></tr>
+
+<tr><td></td><td> </td></tr>
+
+<tr><td>fill</td><td>red</td></tr>
+
+<tr><td>ball</td><td>pretty</td></tr>
+
+```
+
+# 第 1 章 - 通用 HTML 元素对象（第 15 章）
+
+<TR><td>truck</td><td>round</td></tr>
+<TR><td>fill</td><td>red</td></tr>
+<TR><td>ball</td><td>pretty</td></tr>
+</TABLE>
+
+<P id="myP" onBeforePaste="handleBeforePaste()" onPaste="handlePaste()"><span class="blanks"></span> is <span class="blanks"></span> <span class="blanks"></span>!</P>
+
+<BODY>
+<button onclick="location.reload()">重置</button>
+</body>
+</html>
+
+### onPropertyChange
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | | | | | | | | | |
+
+#### 示例
+
+列表 15-46 生成的页面包含单选按钮，可以更改段落的 `innerHTML` `style.color` 属性。段落的 `onPropertyChange` 事件处理器调用 `show()` 函数，该函数提取事件信息并在窗口状态栏显示。注意当修改元素属性时，处理器会包含属性名。
+
+> 列表 15-46：使用 onPropertyChange 属性
+
+```html
+<HTML>
+
+<HEAD>
+
+<TITLE>onPropertyChange 事件处理器</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function normalText() {
+
+  myP.innerText = "This is a sample paragraph."
+
+}
+
+function shortText() {
+
+  myP.innerText = "Short stuff."
+
+}
+
+function normalColor() {
+
+  myP.style.color = "black"
+
+}
+
+</SCRIPT>
+
+```
+
+继续
+`elementObject.onPaste`
+
+### 列表 15-46（继续）
+
+```html
+
+function hotColor() {
+
+  myP.style.color = "red"
+
+}
+
+function handleChange() {
+
+  var objID = event.srcElement.id
+
+  var propName = event.propertyName
+
+  var newValue = eval(objID + "," + propName)
+
+  status = " " + propName + " property of the " + objID
+
+  status += " object changed to \"" + newValue + "\""
+
+}
+
+</SCRIPT>
+
+<HEAD>
+
+<body>
+
+<h1>OnPropertyChange 事件处理器</h1>
+
+<HR>
+
+<P id="myP" onPropertyChange="handleChange()">This is a sample paragraph.</P>
+
+<FORM>
+
+Text: <input type="radio" name="btn1" CHECKED onclick="normalText()">Normal
+
+<BR>
+
+Color: <input type="radio" name="btn2" onclick="normalColor()">Black
+
+<input type="radio" name="btn2" onclick="hotColor()">Red
+
+</FORM>
+
+</body>
+
+</html>
+
+```
+
+### onReadyStateChange
+
+| NN2 | NN3 | NN4 | NN6 | IE3/JI | IE3/2 | IE4 | IE5 | IE.5 |
+| Compatibility | | | | | | | ✓ |
+
+#### 示例
+
+可以使用 `onReadyStateChange` 事件处理器在加载外部文件（如 Java applet）时协助显示状态。例如，你可以在页面上有一个小图像，它会随着 applet的状态改变而改变。`<APPLET>` 标签将一个函数分配给 `onReadyStateChange` 事件处理器：
+
+```html
+<APPLET ... onReadyStateChange="showState(this)">
+```
+
+
+
+## 第1章 + 通用 HTML 元素对象（第15章）
+
+然后该函数为每种状态类型更改图像：
+
+```javascript
+
+function showState(obj) {
+
+  var img = document.all.statusImage
+
+  switch (obj.readyState) {
+
+    case "initialized":
+
+      img.src = uninit.src
+
+      break
+
+    case "loading":
+
+      img.src = loading.src
+
+      break
+
+    case "complete":
+
+      img.src = ready.src
+
+  }
+
+}
+
+```
+
+前面的函数假设状态图像在页面加载时已经作为预缓存。
+
+### onResize
+
+| | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 兼容性 | | | | | ✓ | | ✓ | ✓ | ✓ |
+
+#### 示例
+
+如果你想捕获用户调整浏览器窗口（或框架）大小的操作，可以通过脚本将函数分配给 `onResize` 事件处理程序：
+`window.onresize = handleResize`
+或者通过 BODY 元素的 HTML 属性：
+`<BODY onresize="handleResize()">`
+
+### onSelectStart
+
+| | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+#### 示例
+
+使用列表 15-47 中的页面来查看当用户跨页面上的多个元素进行选择时，`onSelectStart` 事件处理程序是如何工作的。当用户在页面任何地方开始选择时，接收事件对象的 ID 就会出现在状态栏中。请注意，在实际进行选择之前，事件不会触发。当光标下没有其他元素时，由 BODY 会触发该事件。
+
+`elementObject.onSelectStart`
+
+## 列表 15-47：使用 onSelect 事件处理程序
+
+```html
+
+<HTML>
+
+<HEAD>
+
+<TITLE>onSelect 事件处理程序</TITLE>
+
+<STYLE TYPE="text/css">
+
+TD (text-align:center)
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function showObj() {
+
+  var objID = event.srcElement.id
+
+  status = "Selection started with object: " + objID
+
+}
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY id="myBody" onStart="showObj()">
+
+<H1 id="myH1">onSelect 事件处理程序</h1>
+
+<HR id="myHR />
+
+<P id="myP">这是一个示例段落。</P>
+
+<TABLE id="row1">
+
+<TH id="header1">列 A</TH>
+
+<TH id="header2">列 B</TH>
+
+<TH id="header3">列 C</TH>
+
+</TR>
+
+<TR id="row2">
+
+<TD id="cellA2">text</TD>
+
+<TD id="cellB2">text</TD>
+
+<TD id="cellC2">text</TD>
+
+</TR>
+
+<TR id="row3">
+
+<TD id="cellA3">text</TD>
+
+<TD id="cellB3">text</TD>
+
+<TD id="cellC3">text</TD>
+
+</TR>
+
+</TABLE>
+
+</BODY>
+
+</HTML>
+
+```
+
+`elementObject.onSelectStart`
+
+## 窗口和框架对象（第16章）
+
+## 本章简介
+
+作为文档的物理容器，窗口和框架对象在脚本中起着巨大的作用。自第一个支持脚本的浏览器以来，窗口对象就已经以某种形式支持脚本编写。当然，随着时间的推移，该对象获得了许多属性、方法和事件处理程序，但你也会发现许多特定模型的项目，你可能希望这些项目在所有浏览器中可用。
+
+虽然脚本允许 Web 作者管理多个窗口——本章中的许多示例都支持这一功能——但请尽量不要干扰你的访问者。很多时候，无论你的意图如何，多个窗口都会阻碍网站导航和内容。正如某些示例所示，你必须为代码包含安全网措施，以应对用户在你不希望他们这样做恰恰关闭或隐藏窗口的不可预测行为。因此，不要将此处的多窗口示例视为处理潜在棘手用户界面元素的推荐方法。
+
+我针对多窗口警告的可能例外是各种版本 IE 提供的模态和非模态对话框。对于其他平台，可以模拟对话框（详情请访问 www. dannyg.com）。Windows 版 IE5 还添加了弹出类型的窗口，这可以是一个存在于工具提示框和模态对话框之间的有用用户界面元素。
+
+然而，现代浏览器对框架集（framesets）提供了足够的脚本控制。正如本章示例所示，你的脚本可以隐藏和显示框架，或者在不加载新框架集的情况下完全重构框架集。
+
+- 多个框架之间的脚本通信
+- 创建和管理新窗口
+- 控制浏览器窗口的大小、位置和外观
+- 动态调整框架大小和框架集组成
+
+## 示例亮点
+
+- 列表 16-4 关于 `window.closed` 属性演示了对新窗口创建的工业级处理，它适用于所有支持脚本的浏览器（考虑了早期浏览器的缺点）。
+- `window.opener` 属性允许对 IE4 和 NN6 的状态栏进行动态控制。
+- `window.closed` 属性让你查看窗口是否仍然打开。
+- `window.parent` 属性显示了如何与父窗口通信。
+- 原生对话框（alert, confirm 和 prompt）用于获取返回值。
+- 列表 16-22 中的简单计数器在计数为零时停止计时。
+- `setInterval()` 和 `setTimeout()` 用于模态和非模态对话框。
+- 框架集的组成（包括 cols 和 rows）可以在 IE4 和 NN6 中动态控制。
+
+## 窗口对象
+
+### 属性
+
+#### clipboardData
+
+| | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 兼容性 | | | | | | ✓ | ✓ | |
+
+参考列表 15-30 和 15-39（第1章），查看 `clipboardData` 如何用于各种编辑处理程序。
+
+#### closed
+
+| | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 兼容性 | ✓ | ✓ | | | | ✓ | ✓ | |
+
+##### 示例
+
+在列表 16-4 中，我们了一个跨平台的窗口打开和关闭示例。它考虑了 Navigator 2 缺少 `opener` 属性、Navigator 2 和 Internet Explorer 3 缺少 `closed` 属性的情况，并为无法查看子窗口是否仍然打开提供了一个笨拙但必要的解决方案。
+
+脚本开始初始化一个全局变量 `newwind`，用于存储第二个窗口的对象引用。此值需要是全局的，以便其他函数引用窗口（例如关闭）。另一个全局变量 `IE3` 是一个布尔标志，让关闭例程序知道用户是否在使用 Internet Explorer（详情请参见第28章关于 `navigator.application` 属性）。
+
+例如，新窗口包含动态编写的 HTML 代码，而不是加载 HTML 文件。因此，`window.open()` 方法的 URL 参数为空字符串。然而，至关要在第二个参数中分配一个名称以适应 Internet Explorer 3 关闭窗口的解决方案。
+
+
+
+# JavaScript 示例：JavaScript 圣经的必备伴侣
+
+可以写入。延迟（使用本章稍后描述的 `setTimeout()` 方法）会调用 `finishNewWindow()` 函数，该函数使用全局 `newWind` 变量引用用于写入的窗口。`document.close()` 方法关闭文档 —— 这与关闭窗口是不同的关闭类型。
+
+独立函数 `closeWindow()` 负责关闭子窗口。为了兼容 Internet Explorer 3，脚本似乎创建了另一个与脚本中打开的窗口相同特征的窗口。这就是技巧：如果窗口已存在（具有完全相同的参数且名称不为空字符串），即使 `window.open()` 方法在显目可及的情况下执行，Internet Explorer 也不会创建新窗口。对于用户来说，屏幕上没有出现任何异常。如果用户关闭子窗口，对于 Internet Explorer 3 来说，情况看起来很奇怪。`window.open()` 会瞬时创建该子窗口。这个子窗口是必要的，因为在随后的窗口存在性测试中，必须有一个“存活”的窗口对象。（在 Internet Explorer 3 中，如果你尝试访问窗口，会描述脚本错误，而 NN2+ 则简单地返回友好的 null 值。）
+
+作为最后的测试，如果满足以下两个条件：1) 窗口对象已被初始化为 null 以外的值（防止在创建新窗口之前已关闭）；2) 窗口的 `closed` 属性为 null 或 false。如果满足任一条件，将向窗口发送 `close()` 方法。
+
+# 列表 16-4：关闭窗口前的检查
+
+```jshtml
+
+<HTML>
+
+<HEAD>
+
+<TITLE>window.closed 属性</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+// 为窗口对象初始化全局
+
+// 使页面上的所有函数都能访问它
+
+var newWind
+
+// 设置标记以帮助处理 IE 的窗口关闭
+
+var isIE3 = (navigator.appVersion.indexOf("MSIE 3") != -1) ? true : false;
+
+// 创建新窗口并在放入内容
+
+function newWindow() {
+
+var newWind = window.open("", "subwindow","HEIGHT=200,WIDTH=200")
+
+// 处理 Navigator 2
+
+if (newWind.opener == null) {
+
+newWind.opener = window
+
+}
+
+setTimeout("finishNewWindow()", 100)
+
+}
+
+function finishNewWindow() {
+
+var output = ""
+
+output += "<html><body><h1>Sub-window/</h1>"
+
+output += "<form><input='button' value='Close Window'"
+
+output += "onclick='window.opener.close()'></form></body></html>";
+
+newWind.document.write(output)
+
+newWind.close()
+
+}
+
+// 关闭子窗口，包含 IE3 的变形
+
+function closeWindow() {
+
+  if (isIE3) {
+
+    // 窗口已打开，似乎没有发生
+
+    // 但子窗口会闪烁（糟糕！）
+
+    newWind = window.open("*.subwindow", "HEIGHT=200,WIDTH=200")
+
+  }
+
+  if (newWind && newWind.closed) {
+
+    newWind.close()
+
+  }
+
+}
+
+```
+
+```jshtml
+
+<SCRIPT>
+
+<HEAD>
+
+<body
+
+<FORM>
+
+<INPUT TYPE="button" VALUE="Open Window" onclick="newWindow()"><BR>
+
+<INPUT TYPE="button" VALUE="Close if Still Open" onclick="closeWindow()">
+
+</FORM>
+
+</body>
+
+</html>
+
+```
+
+为了完成窗口打开和关闭的示例，请注意子窗口被赋予了一个按钮，其 `onClick` 事件处理器会关闭主窗口。在 Navigator 2 和 Internet Explorer 3 中，这种情况发生不会报错。但在 NN3+ 和 IE4+ 中，用户会看到一个确认关闭主窗口的提示。
+
+#### defaultStatus
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+除非计划在用户停留 Web 页面期间更改状态栏文本，否则设置该属性的最佳时是文档加载时。在列表 16-5 中，注意我如何在 `mouseOut` 事件处理器中读取此属性以重置状态栏。将 `status` 属性置为空会将状态栏重置为 `defaultStatus` 设置。
+
+# 列表 16-5：设置默认状态
+
+```jshtml
+
+<HTML>
+
+<HEAD>
+
+<TITLE>window.defaultStatus</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+window.defaultStatus = "Welcome to my Web site."
+
+</SCRIPT>
+
+</HEAD>
+
+<<body>
+
+<A href="http://www.microsoft.com"
+
+mouseover="window.status = 'Visit Microsoft\'s page.'; return true"
+
+onMouseOut="window.status = ''; return true">Microsoft</a>
+
+<A href="http://www.netscape.com"
+
+mouseover="window.status = 'Visit Netscape\'s page.'; return true"
+
+onMouseOut="window.status = window.defaultStatus; return true">Netscape</a>
+
+</HTML>
+
+```
+
+如果你需要在状态栏中显示单引号或双引号（如列表 16-5 中的第二个链接所示），请使用转义字符 `'` 和 `"` 作为分配这些属性的字符串的一部分。
+
+#### dialogArguments
+
+| NN2 | NN3 | NN4 | IE3/J1 | IE3/2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | ✓ | ✓ | | |
+
+参考示例 16-8 中的 `window.showDialog()` 方法，查看如何将参数传递给对话框并通过 `dialogArguments` 属性检索。
+
+#### dialogHeight dialogWidth
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ | |
+
+##### 示例
+
+对话框有时提供一个按钮或图标，为高级用户显示更多详细信息或复杂的设置。你可以创建一个处理尺寸切换的函数。以下函数假设对话框中的文档有一个按钮，其标签在“显示详情”和“隐藏详情”之间切换。按钮的 `onClick` 事件调用函数 `toggleDetails(this)`。
+
+```js
+
+function toggleDetails(btn) {
+
+  if (dialogHeight == "200px") {
+
+    dialogHeight = "350px"
+
+    btn.value = "Hide Details"
+
+  } else {
+
+    dialogHeight = "200px"
+
+    btn.value = "Show Details"
+
+  }
+
+}
+
+```
+
+在实践中，你还需要通过脚本切换窗口显示样式，以确保对话框显示滚动条。
+
+#### dialogLeft dialogTop
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | | |
+
+##### 示例
+
+通常不是一个好主意，因为会给用户带来干扰，但你可以通过脚本定位对话框窗口（或者让用户自行调整）。以下语句可以重建对话框。
+
+```js
+
+dialogLeft = (screen.availWidth/2) - (parseInt(dialogWidth)/2) + "px"
+
+dialogHeight = (screen.availHeight/2) - (parseInt(dialogHeight)/2) + "px"
+
+```
+
+注意 `parseInt()` 函数用于读取 `dialogWidth` 和 `dialogHeight` 属性的数值部分，以便对这些值进行计算。
+
+![](img/14de29a231bb2c5843ef440b_154_0.png)
+
+# 134 JavaScript 示例：JavaScript 圣经的必备伴侣
+
+locationbar
+menubar
+personalbar
+scrollbars
+statusbar
+toolbar
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | ✓ | ✓ | | | |
+
+##### 示例
+
+在列表 16-6 中，你可以实验开启或关闭任何 chrome 元素。要运行此脚本，必须对脚本进行签名或启用代码库（参见《JavaScript 圣经》第 46 章）。必须启用 Java 以使用签名脚本语句。
+
+当页面加载时，它存储 chrome 的当前状态。每个 chrome 元素的按钮都会触发 `toggle()`。该函数反转作为参数传递给 chrome 对象的视觉属性。最后，恢复按钮将它们返回原始设置。注意 `restore()` 函数也会由文档的 `onload` 事件处理器调用。
+
+# 列表 16-6：控制窗口 chrome
+
+```jshtml
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Bars Bars Bar</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+ // 页面加载时存储外部尺寸
+
+var originalLocationBar = window.locationbar.visible
+
+var originalMenuBar = window.menubar.visible
+
+var originalPersonalbar = window.personalbar.visible
+
+var originalScrollbars = window.scrollbars.visible
+
+var originalStatusbar = window.statusbar.visible
+
+var originalToolbar = window.toolbar.visible
+
+ // 设置内部尺寸的通用函数
+
+function toggleBar() {
+
+ netscape.security.PrivilegeManager.enablePrivilege("UniversalBrowserWrite")
+
+ bar.visible = !bar.visible
+
+ netscape.security.PrivilegeManager.revertPrivilege("UniversalBrowserWrite")
+
+}
+
+windowObject.directories
+
+```
+
+```javascript
+
+// restore settings
+
+function restore() {
+
+  netscape.security.PrivilegeManager.enablePrivilege("UniversalBrowserWrite")
+
+  window.locationbar.visible = originalLocationbar
+
+  window.menubar.visible = originalMenuBar
+
+  window.personalbar.visible = originalPersonalbar
+
+  window.scrollbars.visible = originalScrollbars
+
+  window.statusbar.visible = originalStatusbar
+
+  window.toolbar.visible = originalToolbar
+
+  netscape.security.PrivilegeManager.revertPrivilege("UniversalBrowserWrite")
+
+}
+
+</SCRIPT>
+
+<HEAD>
+
+<BODY onload="restore()">
+
+<FORM>
+
+<BR><B>Toggle Window Bars</B><BR>
+
+<INPUT TYPE="button" VALUE="Location Bar" onclick="toggleBar(window.locationbar)"><BR>
+
+<INPUT TYPE="button" VALUE="Menu Bar" onclick="toggleBar(window.menubar)"><BR>
+
+<INPUT TYPE="button" VALUE="Personal Bar" onclick="toggleBar(window.personalbar)"><BR>
+
+<INPUT TYPE="button" VALUE="Scrollbars" onclick="toggleBar(window.scrollbars)"><BR>
+
+<INPUT TYPE="button" VALUE="Status Bar" onclick="toggleBar(window.statusbar)"><BR>
+
+<INPUT TYPE="button" VALUE="Tool Bar" onclick="toggleBar(window.toolbar)"><BR>
+
+<HR>
+
+<INPUT TYPE="button" VALUE="Restore Original Settings" onclick="toggleBar(restore())"><BR>
+
+</FORM>
+
+</BODY>
+
+</html>
+
+```
+
+#### external
+
+| NN2 | NN3 | NN4 | NN6 | IE3/JI | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+##### Example
+
+第一个示例询问用户是否可以向活动桌面（Active Desktop）添加一个网站。如果未启用活动桌面，用户在此时可以选择启用它。
+
+`external.AddDesktopComponent("http://www.nytimes.com", "website", 200, 100, 400, 400)`
+
+## 16 JavaScript Examples Bible: JavaScript Bible 核心伴侣
+
+在下一个示例中，用户将被请求批准将一个 URL 添加到收藏列表中。用户可以按照正常程序将该项目存入列表中的文件夹。
+
+```javascript
+
+external.AddFavorite("http://www.dannyg.com/update6.html",
+
+  "JSBible4 Support Center")
+
+```
+
+最后一个示例假设用户从一个项目 SELECT 列表中选择了一个项。`SELECT` 的 `OnChange` 事件处理程序会调用以下函数，导航到一个虚拟页面，并在页面上定位所选运动团队的列表。
+
+```javascript
+
+function list(list) {
+
+  var choice = list.options[list.selectedindex].value
+
+  external.NavigateAndFind("http://www.collegesports.net/scores.html", choice,
+
+  "scores")
+
+}
+
+```
+
+#### frames
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J | IE3/2 | IE4 | IE5 | IE.5 |
+|--- | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+##### Example
+
+示例 16-7 和 16-8 展示了 JavaScript 如何处理来自帧内部对象的帧引用值。该文档中的脚本提取了关于当前帧和整个帧的信息。图 2-1 显示了加载示例 16-7 中的 HTML 文档后的结果。
+
+> 示例 16-7：用于示例 16-8 的帧布局文档
+
+```html
+
+<HTML>
+
+<HEAD>
+
+<TITLE>window.frames属性</TITLE>
+
+</HEAD>
+
+<FRAMES COLS="50%,50%">
+
+  <FRAME NAME="JustAkid1" SRC="lst16-08.htm">
+
+  <FRAME NAME="JustAkid2" SRC="lst16-08.htm">
+
+</FRAMES>
+
+</HTML>
+
+```
+
+从被引用的当前帧来看，确定帧的数量（length）返回 0。这是因为每个帧都是一个窗口，其内部没有嵌套帧。但引用的 `parent` 属性会将范围扩大，以考虑到由父窗口文档生成的所有帧。
+
+`windowObject.frames`
+
+## 第 2 章 ♦ 窗口帧对象 (第16章)
+
+## 示例 16-8：显示各种窗口属性
+
+```html
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Window Revealer II</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function gatherWindowData() {
+
+  var msg = "";
+
+  msg += "<B>从当前帧的角度来看：</B><BR>";
+
+  msg += "window.frames.length: " + window.frames.length + "<BR>";
+
+  msg += "window.name: " + window.name + "<P>";
+
+  msg += "<B>从帧布局文档的角度来看：</B><BR>";
+
+  msg += "parent.frames.length: " + parent.frames.length + "<BR>";
+
+  msg += "parent.frames[0].name: " + parent.frames[0].name;
+
+  return msg;
+
+}
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+document.write(gatherWindowData())
+
+</SCRIPT>
+
+</BODY>
+
+</HTML>
+
+```
+
+![](img/144de829a231bb2c5843e2f4fc0b158_0.png) 图 2-1：从示例 16-7 加载的两个帧的属性读取
+
+示例中的最后语句显示了如何使用数组语法（方括号）来引用特定的帧。所有数组索引从 0 开始。因为文档请求第一个帧的名称（`parent.frames[0]`），所以响应对两个帧都是 JavaScript。
+
+#### innerHeight / outerWidth
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+在示例 16-9 中，一组按钮让你看到设置 `innerHeight`、`innerWidth` 和 `outerWidth` 属性的结果。
+
+ 示例 16-9：设置高度和宽度
+
+```html
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Window Sizer</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+// 加载时存储外部尺寸
+
+var originalWidth = window.outerWidth
+
+var originalHeight = window.outerHeight
+
+// 设置内部尺寸的通用函数
+
+function setInner(width, height) {
+
+  window.innerWidth = width
+
+  window.innerHeight = height
+
+}
+
+// 设置外部尺寸的通用函数
+
+function setOuter(width, height) {
+
+  window.outerWidth = width
+
+  window.outerHeight = height
+
+}
+
+// 恢复到原始尺寸
+
+function restore() {
+
+  window.outerWidth = originalWidth
+
+  window.innerHeight = originalHeight
+
+}
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY>
+
+<FORM>
+
+<B>设置内部尺寸</B><BR>
+
+windowObject.innerHeight
+
+<INPUT TYPE="button" VALUE="600 Pixels Square" onclick="setInner(600,600)"><BR>
+
+<INPUT TYPE="button" VALUE="300 Pixels Square" onclick="setInner(300,300)"><BR>
+
+<INPUT TYPE="button" VALUE="Available Screen" onclick="setInner(screen.availWidth,screen.availHeight)"><BR>
+
+<HR>
+
+<B>设置外部尺寸</B><BR>
+
+<INPUT TYPE="button" VALUE="600 Pixels Square" onclick="setOuter(600,600)"><BR>
+
+<INPUT TYPE="button" VALUE="300 Pixels Square" onclick="setOuter(300,300)"><BR>
+
+<INPUT TYPE="button" VALUE="Available Screen" onclick="setOuter(screen.availWidth,screen.availHeight)"><BR>
+
+<HR>
+
+<INPUT TYPE="button" VALUE="Chinch for Win95" onclick="setInner(273,304)"><BR>
+
+<INPUT TYPE="button" VALUE="Chinch for Mac" onclick="setInner(273,304)"><BR>
+
+<INPUT TYPE="button" VALUE="Restore Original" onclick="restore()"><BR>
+
+</FORM>
+
+</BODY>
+
+</html
+
+```
+
+当文档加载时，它会将外部尺寸保存在全局变量中。一组并行按钮将内部和尺寸设置为相同的像素值，这样你就可以看到更改各种属性对整体宽度和区域的影响。由于 Navigator 在不同平台上显示不同的按钮（以及其他元素），这两个按钮包含了调整窗口显示内容的脚本指令。遗憾的是，无法获取文档活动区域的，因此尺寸值是在硬编码到脚本之前通过尝试法确定的。
+
+#### navigator
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+##### Example
+
+书中充满了使用 `navigator`对象的示例，主要用于浏览器检测。特定的 `navigator` 对象属性示例可以在《JavaScript Bible》的第28章和本书的第12章中找到。
+
+#### offScreenBuffering
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+`windowObject.offScreenBuffering`
+
+##### Example
+
+如果你想关闭整个页面的缓冲，请脚本语句开头包含以下语句：
+
+```javascript
+
+window.offscreenBuffering = false
+
+```
+
+#### onerror
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- |---|---|---|---|---|---|---|---|
+| | | ✓ | | ✓ | | ✓ | ✓ | |
+
+##### Example
+
+在示例 16-10 中，一个按钮触发了一个包含错误的脚本。我添加了一个错误处理函数来处理错误，使其打开一个单独的窗口并填充 `textarea` 表单元素（见图 2-2）。如果你在 NN6 中加载示例 16-10，某些报告类别将报告“undefined”，因为遗憾的是浏览器没有将错误属性传递给 `handleError()` 函数。还提供了一个提交按钮用于将错误信息发送到支持中心的电子邮件地址——这是处理脚本中出现 Bug 的示例。
+
+> 示例 16-10：控制脚本错误
+
+```html
+
+<HTML>
+
+<HEAD>
+
+<TITLE>错误对话框控制</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+// 具有无效变量值的函数
+
+function goGrong() {
+
+  var x = freed
+
+}
+
+// 关闭错误对话框
+
+function errOff() {
+
+  window.onerror = doNothing
+
+}
+
+// 重新加载开启错误对话框
+
+function errOn() {
+
+  window.onerror = handleError
+
+}
+
+// 分配默认错误处理程序
+
+window.onerror = handleError
+
+}
+
+// 关闭错误时的错误处理程序...防止错误对话框
+
+function doNothing() (return true)
+
+function handleError(msg, URL, lineNum) {
+
+  var errWind = window.open(".errors","HEIGHT=270,WIDTH=400")
+
+  var winwixt = "<HTML><BODY BGCOLOR=RED">
+
+```
+
+
+
+## 第2章 ♦ 窗口与框架对象 (第16章) 
+
+```javascript
+
+intwxt += "An error has occurred on this page. "
+
+intwxt += "Please report it to Tech Support, </B>"
+
+intwxt += "<FORM METHOD=POST ENCTYPE='text/plain'"
+
+intwxt += "<ACTION-mailto:support4@danny.com >"
+
+intwxt += "<TEXTAREA NAME='errMsg' COLS=45 ROWS=8 WRAP-VIRTUAL"
+
+intwxt += "Error: " + msg + " \n"
+
+intwxt += "URL: " + url + " \n"
+
+intwxt += "Line: " + lineNum + " \n"
+
+intwxt += "Client: " + navigator.userAgent + " \n"
+
+intwxt += "---------------------------------\n"
+
+intwxt += "Please describe what you were doing when the error occurred:"
+
+intwxt += "<TEXTAREA>"
+
+intwxt += "<INPUT TYPE-SUBMIT VALUE='Send Error Report'>"
+
+intwxt += "<INPUT TYPE-BUTTON VALUE='Close' onclick='self.close()'>"
+
+intwxt += "</FORM></body></html>"
+
+errWind.document.write(intwxt)
+
+errWind.document.close();
+
+return true;
+
+```
+
+```html
+
+<SCRIPT>
+
+</HEAD>
+
+<body
+
+<FORM NAME="myform">
+
+<INPUT TYPE="button" VALUE="Cause an Error" onclick="goWrong()"><P>
+
+<INPUT TYPE="button" VALUE="Turn Off Error Dialogs" onclick="errOff()">
+
+<INPUT TYPE="button" VALUE="Turn On Error Dialogs" onclick="errOn()">
+
+</FORM>
+
+</body>
+
+</html>
+
+```
+
+![](img/144de829a231bb2cbf5843e2f444fc0b_162_0.png)
+
+**图 2-2:** 自动报告错误窗口的示例
+
+我提供了一个具有硬加载功能的按钮，它反过来会将 `window.onerror` 属性重置为其默认值。当错误对话框关闭时，错误处理函数就不会运行。
+
+`windowObject.onerror`
+
+## JavaScript 示例大全：JavaScript 经的核心核心侣
+
+### opener
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | | | | | |
+
+#### 示例
+
+为了演示 `opener` 属性的重要性，请看新窗口如何根据主窗口中的设置定义自己（列表 16-11）。`doNew()` 函数生成一个小的子窗口并将列表 16-12 中的文件加载到窗口中。注意 `doNew()` 中的初始条件语句，以确保新窗口已经存在；如果它存在，它将通过调用窗口的 `focus()` 方法移动到最前面。你可以在图 2-3 中看到结果。由于列表 16-11 中的 `doNew()` 函数使用了 IE3 不支持的窗口方法和属性，此示例在 IE3 中无法正常工作。
+
+## 列表 16-11：主文档内容生成第二个窗口
+
+```html
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Master of all Windows</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript1.1">
+
+var myWind
+
+function doNew() {
+
+  if (myWind || myWind.closed) {
+
+    myWind = window.open("list16-12.htm","subWindow","HEIGHT=200,WIDTH=350,resizable")
+
+  } else {
+
+    // bring existing subwindow to the front
+
+    myWind.focus();
+
+  }
+
+}
+
+</HEAD>
+
+<body
+
+<FORM name="input">
+
+select a color for a new window:
+
+<INPUT type="radio" name="color" value="red" Checked>Red
+
+<INPUT type="radio" name="color" value="yellow">Yellow
+
+<INPUT type="radio" name="color" value="blue">Blue
+
+<INPUT type="button" name="storage" value="Make a Window" onclick="doNew()">
+
+<HR>
+
+This field will be filled from an entry in another window:
+
+<INPUT type="text" name="entry" SIZE=25>
+
+<HR>
+
+</BODY>
+
+</HTML>
+
+```
+`windowObject.opener`
+
+`window.open()` 方法没有提供设置新窗口背景颜色的参数，因此我让新窗口中的 `getColor()` 函数在文档加载时完成这项工作。该函数使用 `opener` 属性来确定主页面上选择了哪个单选按钮。
+
+## 列表 16-12：对 opener 属性的引用
+
+```html
+
+<HTML>
+
+<HEAD>
+
+<TITLE>New window on the Block</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function getColor() {
+
+  // shorten the reference
+
+  colorButtons=self.opener.document.forms[0].color
+
+  // see which radio button is checked
+
+  for (var i =0; i<colorButtons.length; i++) {
+
+    if (colorButtons[i].checked) {
+
+      return colorButtons[i].value
+
+    }
+
+  }
+
+  return "white"
+
+}
+
+</SCRIPT>
+
+</HEAD>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+document.write("<BODY BCOLOR='" + getColor() + "'>")
+
+</SCRIPT>
+
+<h1>This is a new window.</h1>
+
+<FORM>
+
+<INPUT type="button" VALUE="Send Error Report" onclick="window.opener.location.close()">
+
+<p>Type text for the main window:
+
+<input type="text" name="entry" SIZE=25 onchange="window.opener.document.forms[0].entry.value=this.value">
+
+</FORM>
+
+
+
+## `getColor()` 函数
+
+`getColor()` 函数中，`opener` 属性可能很长。它遍历按钮数组以确定哪个单选按钮被选中并获取其值。最后，`opener` 属性指向主窗口。
+
+## 146 JavaScript 示例大全：JavaScript 圣经的必备伴侣
+
+要理解偏移值的工作原理，请在水平方向略微滚动窗口，注意页面 `GetOffset` 值在增加；向下滚动时，`pageYOffset` 值也是如此。请记住，这些值反映了当前持有文档的窗口（框架）左上角所在的坐标。你可以在列表 18-20 中看到此示例的 IE4 版本（书的第 4 章）。跨浏览器版本只需要很少浏览器分支。
+
+### parent
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+示例窗口对象属性指的是多框架环境中的窗口级别，请使用浏览器加载列表 16-14 文档。它反过来将两个等大小框架中的每一个设置为同一个文档：列表 16-15。该文档提取了几个窗口属性的值，以及两个不同窗口引用的 `document.title` 属性。
+
+> 列表 16-14：用于列表 16-15 的框架文档
+
+```html
+<HTML>
+<HEAD>
+<TITLE>The Parent Property Example</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+self.name = "framesetter"
+</SCRIPT>
+</HEAD>
+<FRAMES COLS="50%,50%" onload="self.name = ''">
+<FRAME NAME="JustAk1" SRC="16-15.htm">
+<FRAME NAME="JustAk2" SRC="16-15.htm">
+</FRAMES>
+</HTML>
+```
+
+> 列表 16-15：显示各种窗口相关的属性
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Window Revealer II</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function gatherData(){
+var msg = ""
+```
+
+## 第 2 章 窗口与框架对象（第 16 章）147
+
+```html
+msg = msg + "top name: " + top.name + "<BR>"
+msg = msg + "parent name: " + parent.name + "<BR>"
+msg = msg + "parent.document.title: " + parent.document.title + "<P>"
+msg = msg + "window name: " + window.name + "<BR>"
+msg = msg + "self name: " + self.name + "<BR>"
+msg = msg + "self.document.title: " + self.document.title
+return msg
+</SCRIPT>
+</HEAD>
+<BODY>
+<SCRIPT LANGUAGE="JavaScript">
+document.write(gatherData())
+</SCRIPT>
+</BODY>
+</HTML>
+```
+
+在两个框架（图 2-4）中，对窗口和 self 对象名称的引用返回由框架定义分配给框架的名称（左框架为 `JustAKId1`，右框架为 `JustAKId2`）。换句话说，从每个框架的角度来看，窗口对象就是自己的框架。对 `self.document.title` 的引用仅加载到该窗口框架中的对象。但对 `top` 和 `parent` 窗口（在本示例中它们是同一个）的引用显示对象属性在两个框架之间是共享的。
+
+**图 2-4：两个框架共享的 parent 和 top 属性**
+
+`windowObject.parent`
+
+## 148 JavaScript 示例大全：JavaScript 圣经的必备伴侣
+
+还有几个值得注意的细节。首先，frameset 窗口的名称是在列表 16-14 加载时设置的，而不是响应 `<FRAMESET>` 标签中的 `onload` 事件处理器设置的。其原因是名称必须及时设置，以便在框架中加载的文档能够获取该值。如果我等到 frameset 的 `onload` 事件处理器，那么名称将直到框架文档加载后才设置。其次，当框架设置文档卸载时，我将父窗口名称恢复为空字符串。这是为了防止后续页面对窗口名称产生混淆。
+
+### returnValue
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+## 示例
+
+参阅列表 16-39 中的 `showModalDialog()` 方法，以获取如何在 IE4 中从对话框获取数据的示例。
+
+### screenLeft
+
+### screenTop
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+## 示例
+
+使用“评估器”（JavaScript 圣经第 13 章）来实验 `screenLeft` 和 `screenTop` 属性。从浏览器最大化状态开始（如果你使用的是 Windows）。在顶部的文本框中输入以下属性名：
+`window.screenLeft`
+
+点击 `Evaluate` 按钮查看当前设置。取消窗口最大化并将在屏幕上拖动它。每当你完成拖动，再次点击 `Evaluate` 按钮查看当前值。对 `window.screenTop` 执行同样的操作。
+
+### screenX
+
+### screenY
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | | |
+
+```html
+windowObject.screenX
+```
+
+## 示例
+
+使用“评估器”（JavaScript 圣经第 13 章）来实验 NN6 中的 `screenX` 和 `screenY` 属性。从浏览器最大化状态开始（如果你使用的是 Windows）。在文本框中输入以下属性名：
+`window.screenY`
+
+点击 `Evaluate` 按钮查看当前设置。取消窗口最大化并在屏幕上拖动它。每当你完成拖动，再次点击 `Evaluate` 按钮查看当前值。对 `window.screenTop` 执行同样的操作。
+
+### scrollX
+
+### scrollY
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | ✓ | | | | | |
+
+## 示例
+
+使用“评估器”（JavaScript 圣经第 13 章）来实验 `scrollX` 和 `scrollY`。在文本框中输入：
+`window.scrollY`
+
+手动向下滚动页面，以便你仍然看到 `Evaluate` 按钮。点击按钮查看窗口沿 y 轴滚动了多少。
+
+### self
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+## 示例
+
+列表 16-16 使用与列表 16-5 相同的操作，但用 `self` 属性替换了所有的窗口引用。这种引用是可选的，但如果 HTML 文档出现在 iframe 中——特别是 JavaScript 代码引用其他框架时——这对阅读和调试非常有帮助。`self` 引用帮助阅读代码的人精确知道指向的是哪个框架。
+
+```html
+windowObject.self
+```
+
+## 列表 16-16：使用 self 属性
+
+```html
+<HTML>
+<HEAD>
+<TITLE>self Property</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+self.defaultStatus = "Welcome to my site."
+</SCRIPT>
+</HEAD>
+<BODY>
+<A HREF="http://www.microsoft.com"
+onmouseover="self.status = 'Visit Microsoft page.'; return true"
+onmouseout="self.status = ''; return true">Microsoft</A><P>
+<A HREF="http://home.netscape.com"
+onmouseover="self.status = 'Visit Netscape page.'; return true"
+onmouseout="self.status = self.defaultStatus; return true">Netscape</A></P>
+</BODY>
+</HTML>
+```
+
+### status
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+## 示例
+
+在列表 16-17 中，`status` 属性设置在两个链接标签的 `onmouseover` 处理器中。注意处理器需要一个 `return true` 语句（或任何评估为 `true` 的表达式）。这种状态是必要的，否则消息在早期浏览器中不会显示。
+
+## 列表 16-17：带有自定义状态栏消息的链接
+
+```html
+<HTML>
+<HEAD>
+<TITLE>window.status Property</TITLE>
+</HEAD>
+<BODY>
+<A HREF="http://www.dannyg.com" onmouseover="window.status = 'Go to my Home page. (www.dannyg.com)'; return true">Home</A></P>
+<A HREF="http://home.netscape.com" onmouseover="window.status = 'Visit Netscape page. (home.netscape.com)'; return true">Netscape</A></P>
+</BODY>
+</HTML>
+```
+
+为了防止特定平台的异常影响 `onMouseOver` 处理器的行为和 `window.status` 属性，你还应该为链接和客户端图像地图包含一个 `onMouseOut` 事件处理器。此类 `onMouseOut` 事件处理器应将 `status` 设置为空字符串。此设置确保当指针离开这些对象时，状态栏消息返回默认设置。如果你想写一个处理所有窗口状态变化的通用函数，可以这样做，但要仔细编写 `onMouseOver` 属性，使事件处理器评估为 `true`。列表 16-18 显示了这样一个示例。
+
+## 列表 16-18：处理状态消息变化
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Generizable window.status Property</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function showStatus(msg) {
+  window.status = msg
+  return true
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<A HREF="http://www.dannyg.com " onMouseOver="return showStatus('Go to my Home page (www.dannyg.com.)')" onMouseOut="return showStatus('')">Home</A><P><A HREF="http://home.netscape.com" onMouseOver="return showStatus('Visit Netscape Home page.')" onMouseOut="return showStatus('')">Netscape Object/</A>
+</BODY>
+</HTML>
+```
+
+## 列表 16-19：创建一个滚动横幅
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Message Scroller</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var msg = "Welcome to my world..."
+var delay = 150
+var timerId
+var maxCount = 0
+var currCount = -1
+// -->
+</SCRIPT>
+</HEAD>
+<BODY onload="scrollMsg()">
+</BODY>
+</HTML>
+```
+
+# 152 个 JavaScript 示例圣经：JavaScript 经的核心伴侣
+
+# 列表 16-19（继续）
+
+```javascript
+function scrollMsg() {
+  // 设置滚动消息运行的次数
+  if (maxCount == 0) {
+    maxCount = 3 * msg.length
+  }
+  window.status = msg
+  // 跟踪已经滚动了多少字符
+  currCount++
+  // 将 msg 的第一个字符移动到 msg 的末
+  msg = msg.substring(1, msg.length) + msg.substring(0, 1)
+  // 测试是否达到了最大字符数
+  if (currCount > maxCount) {
+    timerID = 0 // 清零定时器
+    window.status = "" // 清空状态栏
+    return
+  } else {
+    // 递归调用此函数
+    timerID = setTimeout("scrollMsg()", delay)
+  }
+}
+```
+
+状态栏是由独立函数设置的（而不是通过 onMouse 事件处理程序），你不需要添加 `return true` 语句来设置 status 属性。`scrollMsg()` 函数使用了高级的 JavaScript 概念，例如 `window.setTimeout` 方法（在本章后文中介绍）和字符串方法（在 JavaScript 经第 34 章中介绍）。要加快文字在状态栏上滚动的速度，请减小 `delay` 的值。
+
+许多服务器（包括我自己）不喜欢这些在状态栏中无限运行的滚动器。鼠标悬停在链接上会干扰 banner 显示。滚动器还导致早期浏览器崩溃，因为在 Navigator 2 中 `setTimeout()` 方法会消耗额外的应用程序内存。请谨慎使用滚动条，或将其设计为仅在文档加载后运行几次。
+
+设置状态的脚本还会与浏览器本身竞争，浏览器使用状态栏来报告加载进度。当页面上的“热点”区域位于框架边缘时，很多时候 `mouseout` 事件无法触发，导致状态栏无法自动清空。在宣布你的页面可以公开访问之前，请务必对任何此类实现进行测试。
+
+```javascript
+windowObject.status
+```
+
+### 方法
+
+#### alert("message")
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+示例 列表 16-20 中示例的参数是一个拼接的字符串。它将两个固定字符串以及浏览器 `navigator.appName` 属性的值结合。加载此文档会导致弹出 alert 对话框；标题栏将被删除，如图 2-5 中的几种配置所示。在较期的浏览器中，无法从对话框中删除“JavaScript Alert:"”，在较晚的浏览器中也无法更改标题栏。
+
+# 列表 16-20：显示 alert 对话框
+
+```html
+<HTML>
+<HEAD>
+<TITLE>window.alert() 方法</TITLE>
+</HEAD>
+<BODY>
+<SCRIPT LANGUAGE="JavaScript">
+alert("You are running the " + navigator.appName + " browser.")
+</SCRIPT>
+</BODY>
+</HTML>
+```
+
+![](img/144de829a231bb2cbf5843e2f444fc0b_174_0.png)
+![](img/144de829a231bb2cbf5843e2f444fc0b_174_1.png)
+
+**图 2-5：在 Windows 98 下 Internet Explorer 5（顶部）和 Navigator 6（底部）中列表 16-20 中 `alert()` 方法的结果**
+
+#### captureEvents(eventTypeList)
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | |
+
+# 示例
+
+列表 16-21 中的页面是在窗口对象中捕获和释放点击事件的练习。每当窗口捕获点击事件时，`flash()` 函数就会运行。在该函数中，会对事件进行检查，只有当同时按住 Control 键且按钮名称以 "button" 开头，文档背景颜色才会变为红色。对于所有的点击事件（即那些指向页面上具有自身 onClick 处理程序的对象的点击），将通过 `routeEvent()` 方法处理点击事件，以确保目标按钮执行它们自己的 onClick 处理程序。
+
+# 列表 16-21：在窗口中捕获点击事件
+
+```html
+<HTML>
+<HEAD>
+<TITLE>窗口事件捕获</TITLE>
+<SCRIPT LANGUAGE="JavaScript.1">
+// 当窗口捕获点击事件时运行函数
+function flash(e) {
+  if (e.modifiers==Event.Control_MASK &&
+      e.target.indexOf("button") == 0) {
+    document.bgColor = "red"
+    setTimeout("document.bgColor = 'white'", 500)
+  }
+  // 让事件继续到达目标
+  routeEvent(e)
+}
+// 捕获事件的默认设置
+window.captureEvents(Event.CLICK);
+// 将 flash() 赋值给窗口捕获的点击事件
+window.onclick = flash
+</SCRIPT>
+</HEAD>
+<BODY COLOR="white">
+<FORM NAME="buttons">
+<B>开启或关闭事件捕获（默认开启）</B>
+<P>
+<INPUT NAME="captureOn" TYPE="button" VALUE="Capture On" onclick="window.captureEvents(Event.CLICK)">
+<INPUT NAME="captureOff" TYPE="button" VALUE="Capture Off" onclick="window.releaseEvents(Event.CLICK)">
+<HR>
+<B>点击按钮查看是否被窗口捕获（背景将闪烁）：</B>
+<P>
+<UL>
+<INPUT NAME="button1" TYPE="button" VALUE="Informix" onclick="alert('You clicked on Informix.')">
+<INPUT NAME="button2" TYPE="button" VALUE="Oracle" onclick="alert('You clicked on Oracle.')">
+<INPUT NAME="button3" TYPE="button" VALUE="Sybase" onclick="alert('You clicked on Sybase.')">
+</UL>
+</FORM>
+</BODY>
+</HTML>
+```
+
+当你刷新页面也会关闭窗口捕获。现在只有按钮处理程序执行，页面不会闪烁。
+
+#### clearInterval(intervalID)
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | |
+
+# 示例
+
+查看列表 16-36 和 16-37 关于 `setInterval()` 和 `clearInterval()` 如何在页面上一起使用。
+
+#### clearTimeout(timeoutID)
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | |
+
+# 示例
+
+列表 16-22 有一个文本字段和两个按钮。一个按钮启动倒计时器（可以轻松修改持续时间）；另一个按钮在计时器运行时随时中断它。当时间到时，一个 alert 对话框会通知你。
+
+# 列表 16-22：倒计时器
+
+```html
+<HTML>
+<HEAD>
+<TITLE>倒计时器</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var running = false
+var endTime = null
+var timerID = null
+
+function startTimer() {
+    running = true
+    now = new Date()
+    now = now.getTime()
+    // 修改分钟数的地方
+    endTime = now + (1000 * 60 * 1)
+    showCountDown()
+}
+```
+
+# 列表 16-22（继续）
+
+```javascript
+function countDown() {
+    var now = new Date()
+    now = now.getTime()
+    if (endTime - now <= 0) {
+        alert("时间到了。放下你的笔。")
+    } else {
+        var delta = new Date(endTime - now)
+        var theMin = delta.getMinutes()
+        var theSec = delta.getSeconds()
+        var theTime = theMin
+        theTime += ((theSec < 10) ? "0" : "") + theSec
+        document.forms[0].timerDisplay.value = theTime
+        if (running) {
+            timerID = setTimeout("countDown()",1000)
+        }
+    }
+}
+
+function stopTimer() {
+    clearTimeout(timerID)
+    running = false
+    document.forms[0].timerDisplay.value = "0:00"
+}
+```
+
+```html
+<!--
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+<INPUT TYPE="button" NAME="startTime" VALUE="Start 1 min. Timer" ONCLICK="startTimer()">
+<INPUT TYPE="button" NAME="clearTime" VALUE="Clear Timer" ONCLICK="stopTimer()"><P>
+<INPUT TYPE="text" NAME="timerDisplay" VALUE="">
+</FORM>
+</BODY>
+</HTML>
+```
+
+注意脚本在 window 中建立了三个具有全局作用域的变量：`running`、`endTime` 和 `timerID`。这些值在多个函数中都需要用到，因此它们在函数外部初始化。
+
+![](img/144de829a231bb2cbf5843e2f444fc0b_178_0.png)
+
+**图 2-6：显示剩余时间的倒计时器页面**
+
+在 `startTimer()` 函数中，切换 `running` 标志，意味着计时器应该开始运行。使用一些日期函数（参见 JavaScript 经第 36 章），你提取当前的毫秒时间和下一分钟的毫秒数（乘以1 的地方就是你可以将数量改为所需分钟数的地方）。结束时间存储在全局变量中，该函数调用另一个函数，比较当前时间和结束时间，并在文本框中显示差。
+
+在 `showCountDown()` 函数的早期，检查计时器是否已经运行完。如果是，停止计时器并提醒用户。否则，函数继续计算两个时间之间的差，并将时间格式化为 mm:ss 格式。只要 `running` 标志被设置为 `true`，函数就会在重复自身之前设置一秒的超时。
+
+当你运行计时器时，偶尔可能会注意到计时器跳过了一秒。这并不是作弊。等待超时然后完成下一秒显示的计算需要略多于一秒。你看到的是显示正在追上剩余时间。
+
+#### close()
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+# 示例
+
+参见 16-4（关于 `window.closed` 属性），该节提供了一个详细的、跨平台的、考虑到 Bug 的示例，展示了如何在多个窗口中应用 `window.close()` 方法。
+
+#### confirm("message")
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | ✓ | ✓ | ✓ | ✓ | | | ✓ | ✓ | ✓ |
+
+# 示例
+
+列表 16-23 中的示例展示了用户界面，如何使用 `confirm` 对话框在清除填充用户输入数据的表格之前对用户进行查询。如图 2-7 所示，标题栏中的行（或早期浏览器版本中的“JavaScript Confirm”图例）无法从对话框中移除。
+
+> 列表 16-23：确认对话框
+
+```html
+<HTML>
+<HEAD>
+<TITLE>window.confirm Method()</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function clearTable() {
+  if (confirm("Are you sure you want to empty the table?")) {
+    alert("Emptying the table...") // for demo purposes
+    //statements that actually empty the fields
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+  <!-- other statements that display and populate a large table -->
+  <INPUT TYPE="button" NAME="clear" VALUE="Reset Table" onclick="clearTable()">
+</FORM>
+</BODY>
+</HTML>
+```
+
+![](img/144de829a231bb2cbf5843e2f444fc0b_179_0.png)
+
+`windowObject.confirm()`
+
+#### createPopup()
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | ✓ |
+
+# 示例
+
+参见本章稍后的列表 16-49 获取 `createPopup` 方法的示例。
+
+#### disableExternalCapture() / enableExternalCapture()
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | |
+
+# 示例
+
+尽管 NN4 尽管拥有大量的安装用户量，但这仍然是一个很少使用的功能，因此随着该浏览器版本淡出历史，它的重要性变得越来越小。你可以在此书的支持中心（http://www.dannyg.com/update.html）找到该特性的示例，或者在《JavaScript Bible》第三版的第 213-214 页找到。
+
+#### execScript("exprList"[, language])
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | ✓ | ✓ | ✓ | |
+
+# 示例
+
+使用“The Evaluator”（《JavaScript Bible》第 13 章）来实验 `execScript()` 方法。The Evaluator 为小写字母 a 到 z 预声明了全局变量。将以下每个语句输入顶部的文本框并观察结果。
+
+`a`
+
+当第一次加载时，变量被声明但未被赋值，因此它是 `undefined`。
+
+```javascript
+window.execScript("a = 5")
+```
+
+# JavaScript 示例 Bible：JavaScript Bible 的核心伴侣
+
+该方法没有返回值，因此 The Evaluator 内部机制认为该语句是 `undefined`。
+
+变量现在是 5。
+
+```javascript
+window.execScript("b = a * 50")
+```
+
+全局变量的值为 250。继续使用额外的脚本语句进行探索。使用分号分隔字符串参数内的多个语句。
+
+#### find(["searchString"[, matchCaseBoolean, searchUpBoolean]])
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | ✓ | | | | | | |
+
+# 示例
+
+简单调用 `window.find()` 方法的方法所示：
+
+`var success = window.find("contract")`
+
+如果你希望搜索对大小写敏感，请至少添加两个可选参数之一：`success = window.find(matchString, caseSensitive)`
+
+由于此方法仅在 NN4 中有效，更多现代的正文搜索实现，请参考《JavaScript Bible》第 19 章关于 `TextRange` 和 `Range` 对象的讨论。
+
+#### GetAttention()
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | |
+
+# 示例
+
+使用 The Evaluator（《JavaScript Bible》第 13 章）让你有足够的时间切换到另一个应用程序并等待注意力信号。将以下语句输入顶部的文本框，点击 Evaluate（执行），然后快速切换到程序：
+
+```javascript
+setTimeout("GetAttention()", 5000)
+```
+
+五秒钟后，注意力信号触发。
+
+## 第 2 章 窗口和框架对象（第 16 章）
+
+Window and Frame Objects (Chapter 16)
+
+总计五秒后，注意力信号触发。
+
+#### moveTo() / moveBy()
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | ✓ | ✓ | ✓ | |
+
+`moveTo()` 和 `moveBy()` 方法的示例在列表 16-24 中所示，它们展示了不同的窗口移动方式。
+
+# 列表 16-24：窗口体操
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Window Gymnastics</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function init() {
+  // 初始化逻辑
+}
+function moveOffScreen() {
+  // 消失逻辑
+}
+function revolve() {
+  var winX = (screen.availWidth - window.outerWidth) / 2
+  var winY = 50
+  window.resizeTo(400,300);
+  window.moveTo(winX,winY)
+  for (var i = 1; i < 36; i++) {
+    winX += Math.cos(i * (Math.PI/18)) * 5
+    winY += Math.sin(i * (Math.PI/18)) * 5
+    window.moveTo(winX,winY)
+  }
+}
+function zigzag() {
+  window.resizeTo(400,300);
+  window.moveTo(0,80);
+  var incrementX = 2;
+  var incrementY = 2;
+  var floor = screen.availHeight - window.outerHeight
+  for (var i = 0; i < floor; i += 2) {
+    window.moveTo(incrementX, incrementY);
+    if (i%60 == 0) {
+      incrementY = -incrementY;
+    }
+  }
+}
+function maximize() {
+  window.moveTo(0,0);
+  window.resizeTo(screen.availWidth, screen.availHeight)
+}
+</SCRIPT>
+</HEAD>
+<BODY onLoad="init()">
+<FORM NAME="buttons">
+<P>Window Gymnastics</P>
+<UL>
+<INPUT NAME="offscreen" TYPE="button" VALUE="Disappear a Second" onclick="moveOffScreen()">
+<INPUT NAME="circles" TYPE="button" VALUE="Circular Motion" onclick="revolve()">
+<INPUT NAME="bouncer" TYPE="button" VALUE="Zig Zag" onclick="zigzag()">
+<INPUT NAME="expander" TYPE="button" VALUE="Maximize" onclick="maximize()">
+</UL>
+</FORM>
+</BODY>
+</HTML>
+```
+
+`windowObject.moveTo()`
+
+## 164 JavaScript 示例：JavaScript 圣经的必备伴侣
+
+展示了在大多数平台上创建一个具有所有正确功能的新窗口所需的所有元素。将新窗口对象的引用赋值给一个全局变量 `newWindow`。在生成新窗口之前，脚本会检查该窗口是否以前从未生成过（在那种情况下，`newWindow` 将为 `null`），或者对于较新的浏览器，检查窗口是否已关闭。如果其中任一条件成立，则使用 `open()` 方法创建窗口。否则，则使用 `focus()` 方法将现有窗口带到前台（NN3+ 和 IE4）。
+
+为了防止旧版浏览器出现问题，如果尚未通过 `open()` 方法赋值，则脚本将手动为新窗口分配一个属性。将当前窗口对象的引用赋值给该属性。
+
+由于影响所有 IE 版本的时序问题，HTML 的组装和写入新窗口的操作被分离到单独的函数中，该函数在延迟 50 毫秒后被调用（NN 会随之执行，但它可以在不加延迟的情况下完成组装和写入）。为了构建最终写入窗口的字符串，我使用了 `+=`（按值加）运算符，它将运算符右侧的字符串附加到存储左侧变量的字符串上。在这个示例中，新窗口被传递了一个 `<h1>` 级文本进行显示。
+
+## 列表 16-26：创建一个新窗口
+
+```html
+<HTML>
+<HEAD>
+<TITLE>NewWindow</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+var newWindow
+function makeWindow() {
+  if (!newWindow || newWindow.closed) {
+    newWindow = window.open("", "*", "status,height=200,width=300")
+    if (newWindow.opener) {
+      newWindow.opener = window
+    }
+    // 为 IE 留一点小延迟
+    setTimeout(writeToWindow, 50)
+  } else {
+    // 窗口已打开；带到前台
+    newWindow.focus()
+  }
+}
+function writeToWindow() {
+  // 为新窗口组装内容
+  var newContent = "<HTML><HEAD><TITLE>One Sub Window</TITLE></HEAD>"
+  newContent += "<BODY><H1>This window is brand new.</H1>"
+  newContent += "</BODY></HTML>"
+  // 将 HTML 写入新窗口文档
+  newWindow.document.write(newContent)
+  newWindow.document.close() // 关闭布局流
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+<INPUT TYPE="button" NAME="newOne" VALUE="Create New Window" ONCLICK="makeWindow()">
+</FORM>
+</BODY>
+</HTML>
+```
+
+`windowObject.open()`
+
+如果你需要为兼容性最低的可脚本浏览器创建一个新窗口，你必须从脚本中省略 `focus()` 方法和 `window.closed` 属性（并添加之前描述的 NN2 变通）。或者你可能倾向于对某些级别以下的所有浏览器聚焦子窗口。关于子窗口跨浏览器编写的其他思路，请参阅列表 16-3（在 `window.closed` 属性讨论中）。
+
+#### print()
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | |
+
+## 示例
+
+列表 16-27 是一个框架集，它将列表 16-28 加载到顶部框架，并将《权利法案》的副本加载到底部框架。
+
+> 列表 16-27：打印框架集
+
+```html
+<HTML>
+<HEAD>
+<TITLE>window.print()</TITLE>
+</HEAD>
+<FRAMES ROWS="25%,75%">
+  <FRAME NAME="controls" SRC="lst16-28.htm">
+  <FRAME NAME="display" SRC="bofright.htm">
+</FRAMES>
+</HTML>
+```
+
+顶部控制面板（列表 16-28）中的两个按钮允许你打印整个框架集（在支持它的浏览器和操作系统中）或仅打印底部框架。要打印整个框架集，引用包含了父窗口；要打印底部框架，引用则指向父窗口的 `display` 框架。
+
+`windowObject.print()`
+
+## JavaScript 示例圣经：JavaScript 圣经的必备伴侣
+
+## 列表 16-28：打印控制
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Print()</TITLE>
+</HEAD>
+<BODY>
+<FORM>
+<INPUT TYPE="button" NAME="printWhole" VALUE="Print Frameset" onclick="parent.print()"><P>
+<INPUT TYPE="button" NAME="printFrame" VALUE="Print Bottom Only" onclick="parent.display.print()"><P>
+</FORM>
+</BODY>
+</HTML>
+```
+
+如果你不喜欢打印输出的某些方面，浏览器引擎和 `print()` 方法仅仅是调用浏览器的常规打印程序。内容完全由 JavaScript 生成的页面仅在 NN3+ 和 IE4 中存在。
+
+#### prompt("message"[, "default"])
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | |
+
+# 示例
+
+列表 16-26 中从 `prompt` 对话框接收值的函数。
+
+#### releaseEvents(eventTypeList)
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | ✓ | | | | | | |
+
+# 示例
+
+`window.releaseEvents()` 方法在示例 `window.captureEvents()` 中使用，见列表 16-21。
+
+#### resizeTo(width, height) / resizeBy(deltaWidth, deltaHeight)
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | ✓ | ✓ | ✓ | |
+
+# 示例
+
+参见列表 16-24（`moveTo()` 和 `moveBy()` 方法）以获取 `resizeTo()` 和 `resizeBy()` 方法的示例。
+
+#### routeEvent(event)
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | ✓ | | | | | | |
+
+# 示例
+
+`window.routeEvent()` 方法在示例 `window.captureEvents()` 中使用，见列表 16-21。
+
+#### scroll(horizontalCoord, verticalCoord)
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | ✓ | ✓ | | | | ✓ | ✓ | |
+
+# 示例
+
+为了演示 `scroll()` 方法，列表 16-31 定义了一个框架集（frameset），其中顶层帧包含一个文档（列表 16-32），底部帧包含一个控制面板（列表 16-33）。控制面板帧中的一系列按钮和文本框用于控制文档的滚动。我选择了一个任意的大型 GIF 图像在示例中使用。若要查看水平滚动值的结果，你可能需要缩小浏览器窗口的宽度，直到顶层帧出现水平滚动条。图 2-9 显示了在缩小的窗口中的结果，并在底部文本框中输入了适中的水平和垂直滚动值。如果你将列表 16-33 中的 `scroll()` 方法替换为 `scrollTo()`，结果将是相同的，但你至少需要相应版本的浏览器才能运行它。
+
+# 列表 16-31：用于 scroll() 演示的框架集
+
+```html
+<HTML>
+<HEAD>
+<TITLE>window.scroll() 方法</TITLE>
+</HEAD>
+<FRAMESET ROWS="50,50%">
+  <FRAME SRC="list16-32.htm" NAME="display">
+  <FRAME SRC="list16-33.htm" NAME="control">
+</FRAMESET>
+</HTML>
+```
+
+# 列表 16-32：待滚动的图像
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Arch</TITLE>
+</HEAD>
+<BODY>
+<H1>一画胜千言...</H1>
+<HR>
+<CENTER>
+<TABLE BORDER=3>
+<CAPTION ALIGN=BOTTOM> 壮丽的拱</CAPTION>
+<TD>
+<IMG SRC="arch.gif">
+</TD>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>
+```
+
+# 列表 16-33：调整上方帧滚动的控制控件
+
+```html
+<HTML>
+<HEAD>
+<TITLE>滚动控制器</TITLE>
+<SCRIPT LANGUAGE="JavaScript1.1">
+function scroll(x,y) {
+  parent.frames[0].scroll(x,y)
+}
+function customScroll(form) {
+  parent.frames[0].scroll(parseInt(form.x.value),parseInt(form.y.value))
+}
+</SCRIPT>
+<BODY>
+<H2>滚动控制器</H2>
+<HR>
+<FORM NAME="fixed">
+点击顶层帧的坐标:<P>
+<INPUT TYPE="button" VALUE="0,0" onclick="scroll(0,0)">
+<INPUT TYPE="button" VALUE="0,100" onclick="scroll(0,100)">
+<INPUT TYPE="button" VALUE="100,0" onclick="scroll(100,0)">
+<P>
+<INPUT TYPE="button" VALUE="-100,100" onclick="scroll(-100,100)">
+<INPUT TYPE="button" VALUE="-20,200" onclick="scroll(-20,200)">
+<INPUT TYPE="button" VALUE="1000,3000" onclick="scroll(1000,3000)">
+</FORM>
+<HR>
+<FORM NAME="custom">
+输入水平
+<INPUT TYPE="text" NAME="x" VALUE="0" SIZE=4>
+和垂直
+<INPUT TYPE="text" NAME="y" VALUE="0" SIZE=4>
+值。然后
+<INPUT TYPE="button" VALUE="点击滚动" onclick="customScroll(this.form)">
+</FORM>
+</BODY>
+</HTML>
+```
+
+`windowObject.scroll()`
+
+**图 2-9：脚本控制顶帧的滚动**
+
+注意在 `customScroll()` 函数中，JavaScript 必须将两个文本框的字符串值转换为整数（使用 `parseInt()` 方法），`scroll()` 方法才能接受它们。非数字数据产生异常的结果。还要注意，尽管此示例展示了如何在另一个帧中调整滚动值，但你也可以在同一个帧或窗口以及子窗口中设置此类值，只要你使用了正确的 window 对象句引用即可。
+
+#### scrollBy(deltaX, deltaY) / scrollTo(x, y)
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | |
+
+`windowObject.scrollBy()`
+
+# 示例
+
+要使用 `scrollTo()` 方法，可以使用列表 16-31 到 16-33（`window.scroll()` 方法），但将 `scroll()` 替换为 `scrollTo()`。结果应该是相同的。对于 `scrollBy()`，示例从列表 16-34 中的框架集开始。它加载了与 `scrollBy()` 示例相同的文档（列表 16-32），提供了输入以实验 `scrollBy()` 方法。
+
+# 列表 16-34：用于 ScrollBy 的框架集
+
+```html
+<HTML>
+<HEAD>
+<TITLE>window.scrollBy() 方法</TITLE>
+</HEAD>
+<FRAMESET ROWS="50,50%">
+  <FRAME SRC="list16-32.htm" NAME="display">
+  <FRAME SRC="list16-35.htm" NAME="control">
+</FRAMESET>
+</HTML>
+```
+
+# 列表 16-35：ScrollBy 控制器
+
+```html
+<HTML>
+<HEAD>
+<TITLE>滚动控制器</TITLE>
+<SCRIPT LANGUAGE="JavaScript1.1">
+function page(direction) {
+  var pixFrame = parent.display;
+  var deltaY = pixFrame.innerHeight ? pixFrame.scrollHeight : 0;
+  if (direction == "up") {
+    deltaY = -deltaY
+  }
+  parent.display.scrollBy(0,deltaY)
+}
+function customScroll(form) {
+  parent.display.scrollBy(parseInt(form.x.value),parseInt(form.y.value))
+}
+</SCRIPT>
+<BODY>
+<B>滚动控制器</B>
+<HR>
+<FORM NAME="custom">
+输入水平
+<INPUT TYPE="text" NAME="x" VALUE="0" SIZE=4>
+和垂直
+<INPUT TYPE="text" NAME="y" VALUE="0" SIZE=4>
+值。然后
+<INPUT TYPE="button" VALUE="点击滚动" onclick="customScroll(this.form)">
+</FORM>
+</BODY>
+</HTML>
+```
+
+注意在列表 16-35 中，为了让 `scrollBy()` 方法接受值，JavaScript 必须将两个文本框的字符串值转换为整数（使用 `parseInt()` 方法）。非数字数据会产生异常的结果。
+
+# 列表 16-36：自动滚动页面
+
+```html
+<HTML>
+<HEAD>
+<TITLE>自动滚动页面</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+var scrollSpeed = 1000
+var scrollJump = 10
+var scrollDirection = "down"
+var intervalID = 0
+
+function autoScroll() {
+  var pixFrame = parent.display
+  var scrollLimit = pixFrame.innerHeight ? pixFrame.scrollHeight : 0
+  if (scrollDirection == "down") {
+    if (pixFrame.scrollY >= scrollLimit) {
+      swapDirection()
+    }
+  } else {
+    if (pixFrame.scrollY <= 0) {
+      swapDirection()
+    }
+  }
+  pixFrame.scrollBy(0, scrollJump)
+}
+
+function clearInterval(intervalID) {}
+
+function reduceInterval() {
+  stopScroll()
+  scrollSpeed -= 200
+  startScroll()
+}
+function increaseInterval() {
+  stopScroll()
+  scrollSpeed += 200
+  startScroll()
+}
+function reduceJump() {
+  scrollJump -= 2
+}
+function increaseJump() {
+  scrollJump += 2
+}
+function swapDirection() {
+  scrollDirection = (scrollDirection == "down") ? "up" : "down"
+}
+function startScroll() {
+  parent.display.scrollTo(0,scrollJump)
+  if (intervalID) {
+    clearInterval(intervalID)
+  }
+  intervalID = setInterval("autoScroll()", scrollSpeed)
+}
+function stopScroll() {
+  clearInterval(intervalID)
+}
+</SCRIPT>
+</HEAD>
+<BODY onload="startScroll()">
+<B>Controller</B>
+<FORM NAME="custom">
+<INPUT TYPE="button" VALUE="Start Scrolling" onclick="startScroll()">
+<INPUT TYPE="button" VALUE="Stop Scrolling" onclick="stopScroll()"><P>
+<INPUT TYPE="button" VALUE="Shorter Time Interval" onclick="reduceInterval()"><P>
+<INPUT TYPE="button" VALUE="Longer Time Interval" onclick="increaseInterval()"><P>
+<INPUT TYPE="button" VALUE="Bigger Scroll Jumps" onclick="increaseJump()"><P>
+<INPUT TYPE="button" VALUE="Smaller Scroll Jumps" onclick="reduceJump()"><P>
+<INPUT TYPE="button" VALUE="Change Direction" onclick="swapDirection()">
+</FORM>
+</BODY>
+</HTML>
+```
+
+# 176 JavaScript 示例大全：JavaScript Bible 必备指南
+
+`setInterval()` 方法在 `startScroll` 函数内部被调用。该函数最初会让页面“抖动”一个滚动间隔，这样 `autoScroll()` 中关于页面是否已滚动到顶部的测试就不会在页面开始滚动之前停止其滚动。注意，该函数会检查 ID 是否存在。如果存在，则在设置新 ID 之前将其清除。这对于示例页的设计至关重要，因为反复点击“开始”按钮会在浏览器内部触发多个定时器。如果不允许清除旧的定时器，只有最近的 ID 会存储在 `intervalID` 中。这个小插曲确保了只有一个定时器在运行。全局变量之一的 `scrollSpeed` 被用于填充 `setInterval()` 的延迟参数。要动态更改此值，脚本必须停止当前的定时器进程，更改 `scrollSpeed` 的值，并启动一个新进程。此应用程序的高度重复性特性通过 `setInterval()` 方法得到了很好的处理。
+
+#### setTimeout("expr", msecDelay[, language]) / setTimeout(functionRef, msecDelay[, funcarg, ...])
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | |
+
+### 示例
+
+当你加载列表 16-38 中的 HTML 页面时，它会触发 `updateTime()` 函数，该函数会在状态栏中显示时间（hh:mm am/pm 格式）。该函数并没有显示每秒递增的秒（这可能会分散试图阅读页面的人的注意力），而是在显示的最后一个字符和空之间交替切换，就像视觉上的“心跳”。
+
+# 列表 16-38：显示当前时间
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Status Bar Clock</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var flasher = false
+// 计算当前时间，确定闪烁状态，
+// 每秒将时间插入状态栏
+function updateTime() {
+  var now = new Date()
+  var theHour = now.getHours()
+  var theMin = now.getMinutes()
+  var theTime = "" + ((theHour > 12) ? theHour - 12 : theHour)
+  theTime += ((theMin < 10) ? ":0" : ":") + theMin
+  theTime += (theHour >= 12) ? " pm" : " am"
+  theTime += (flasher) ? " " : "*"
+  flasher = !flasher
+  window.status = theTime
+  // 每秒递归调用此函数以保持计时器运行
+  timerID = setTimeout("updateTime()", 1000)
+}
+// -->
+</SCRIPT>
+</HEAD>
+<BODY onload="updateTime()">
+</BODY>
+</HTML>
+```
+
+`windowObject.setTimeout()`
+
+## 第 2 章 窗口与框架对象（第 16 章）
+
+在此函数中，`setTimeout`（包含闪烁状态）出现在状态栏中，函数在再次调用相同函数之前等待大约一秒（1000 毫秒）。在此应用程序中，你不需要清除 `timerID` 值，因为 JavaScript 每隔 1000 毫秒就会为你处理。
+
+一个逻辑问题是此应用程序是否可以使用 `setInterval` 代替 `setTimeout()`。在这种情况下，两者都可以胜任工作。如果使用 `setInterval()`，则需要在 `updateTime()` 函数外部启动间隔，因为你只需要一个进程反复调用 `updateTime()`。从这方面来说，这是一种更简洁的实现，而不是像列表 16-38 那样产生超时。另一方面，正如列表 16-38 所示，该程序在 NN4 或 IE4 以外的任何浏览器中都不会运行。
+
+为了演示传递参数，你可以修改 `updateTime()` 函数，将它调用的次数添加到状态栏中。
+
+```javascript
+function updateTime(i) {
+  // ... 逻辑处理
+}
+```
+
+## 第 2 章 窗口与框架对象（第 16 章）179
+
+```javascript
+function getPrefsData() {
+  var prefs = showModalDialog("1st16-40.htm", currPrefs,
+  "dialogWidth:400px; dialogHeight:300px");
+  if (prefs) {
+    if (prefs["name"]) {
+      document.all.firstName.innerText = prefs["name"]
+      prefs["name"] = prefs["name"]
+    }
+    if (prefs["bgColor"]) {
+      document.body.style.backgroundColor = prefs["bgColor"]
+      prefs["bgColor"] = prefs["bgColor"]
+    }
+    if (prefs["textColor"]) {
+      document.body.style.color = prefs["textColor"]
+      prefs["textColor"] = prefs["textColor"]
+    }
+    if (prefs["h1Size"]) {
+      document.all.welcomeHeader.style.fontSize = prefs["h1Size"]
+      prefs["h1Size"] = prefs["h1Size"]
+    }
+  }
+}
+
+function init() {
+  document.all.firstName.innerText = "friend"
+}
+</SCRIPT>
+</HEAD>
+<BODY BGCOLOR="#cccccc" STYLE="margin:20px" onload="init()">
+<H1>window.showModalDialog(Method)</H1>
+<HR>
+<H2 ID="welcomeHeader">Welcome, <SPAN ID="firstName">&nbsp;</SPAN>!</H2>
+<HR>
+<P>使用此按钮设置此页面的样式偏好：</P>
+<BUTTON ID="prefsButton" onclick="getPrefsData()">
+Preferences
+</BUTTON>
+</BODY>
+</HTML>
+```
+
+列表 16-40 所示的对话框负责读取传入的数据（并相应设置元素），并组装数据返回给主窗口的脚本。请注意，当你加载示例时，对话框的 TITLE 元素出现在对话框窗口的栏中。
+
+当页面加载到对话框窗口时，`init()` 函数检查 `window.dialogArguments` 属性。如果它有任何数据，这些数据将用于设置主页面的当前设置。一个工具函数 `setSelected()` 会根据当前设置预选 `SELECT` 元素的选项。
+
+![](img/144de829a231bb2cbf5843e2f444fc0b_200_0.png)
+
+页面底部的按钮被显式定位在窗口的右下角。每个按钮调用一个函数来执行关闭对话框所需的操作。在 OK 按钮的情况下，`handleOK()` 函数将 `window.returnValue` 属性设置为从 `getData()` 函数返回的数据。后者返回表单元素，并使用表单元素的名称作为数组索引将其封装成一个数组。这有助于在主窗口脚本中保持所有数据的整齐，因为主脚本使用索引名称，因此不依赖于对话框窗口中表单元素的精确顺序。
+
+# 列表 16-40：模态对话框的文档
+
+```html
+<HTML>
+<HEAD>
+<TITLE>用户偏好</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+// 关闭对话框
+function closeDialog() {
+  window.close();
+}
+
+// 处理 OK 按钮点击
+function handleOK() {
+  window.returnValue = getData();
+  closeDialog();
+}
+
+// 处理取消按钮点击
+function handleCancel() {
+  window.returnValue = ""
+  closeDialog();
+}
+
+// 通用函数将表单元素键值对
+// 转换为数组
+function getData() {
+  var form = document.prefs
+  var returnedData = new Array()
+  // 获取每种类型元素的值
+  for (var i = 0; i < form.elements.length; i++) {
+    if (form.elements[i].type == "text") {
+      returnedData[form.elements[i].name] = form.elements[i].value
+    } else if (form.elements[i].type.indexOf("select") != -1) {
+      returnedData[form.elements[i].name] = form.elements[i].value
+    } else if (form.elements[i].type == "radio") {
+      returnedData[form.elements[i].name] = form.elements[i].value
+    } else if (form.elements[i].type == "checkbox") {
+      returnedData[form.elements[i].name] = form.elements[i].value
+    }
+  }
+  return returnedData
+}
+
+// 通过传递的数据初始化表单元素
+function init() {
+  if (window.dialogArguments) {
+    var args = window.dialogArguments
+    var form = document.prefs
+    if (args["name"]) {
+      form.name.value = args["name"]
+    }
+    if (args["bgColor"]) {
+      setSelected(form.bgColor, args["bgColor"])
+    }
+    if (args["textColor"]) {
+      setSelected(form.textColor, args["textColor"])
+    }
+    if (args["h1Size"]) {
+      setSelected(form.h1Size, args["h1Size"])
+    }
+  }
+}
+
+// 工具函数，将某个元素选择为某个值
+function setSelected(select, value) {
+  for (var i = 0; i < select.options.length; i++) {
+    if (select.options[i].value == value) {
+      select.selectedIndex = i
+      break
+    }
+  }
+}
+
+// 响应 Enter 键的函数
+function checkEnter() {
+  if (event.keyCode == 13) {
+    handleOK()
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY BGCOLOR="#cccccc" STYLE="margin:20px" onload="init()">
+<H2>User Preferences</H2>
+<HR>
+<FORM NAME="prefs" onSubmit="return false">
+<TABLE>
+<TR>
+<TD>名称：</TD>
+<TD><INPUT TYPE="text" NAME="name"></TD>
+</TR>
+<TR>
+<TD>背景颜色：</TD>
+<TD>
+<SELECT NAME="bgColor">
+<OPTION VALUE="beige">Beige</OPTION>
+<OPTION VALUE="antiquewhite">Antique White</OPTION>
+<OPTION VALUE="black">Black</OPTION>
+<OPTION VALUE="darkblue">Dark Blue</OPTION>
+<OPTION VALUE="darkorange">Dark Orange</OPTION>
+<OPTION VALUE="goldenrod">Goldenrod</OPTION>
+<OPTION VALUE="lime">Lime</OPTION>
+<OPTION VALUE="navy">Navy</OPTION>
+<OPTION VALUE="orange">Orange</OPTION>
+<OPTION VALUE="powderblue">Powder Blue</OPTION>
+<OPTION VALUE="slategray">Slate Gray</OPTION>
+<OPTION VALUE="seagreen">Sea Green</OPTION>
+<OPTION VALUE="teal">Teal</OPTION>
+<OPTION VALUE="tan">Tan</OPTION>
+<OPTION VALUE="white">White</OPTION>
+</SELECT>
+</TD>
+</TR>
+<TR>
+<TD>文本颜色：</TD>
+<TD>
+<SELECT NAME="textColor">
+<OPTION VALUE="black">Black</OPTION>
+<OPTION VALUE="darkblue">Dark Blue</OPTION>
+<OPTION VALUE="darkorange">Dark Orange</OPTION>
+<OPTION VALUE="goldenrod">Goldenrod</OPTION>
+<OPTION VALUE="lime">Lime</OPTION>
+<OPTION VALUE="navy">Navy</OPTION>
+<OPTION VALUE="orange">Orange</OPTION>
+<OPTION VALUE="powderblue">Powder Blue</OPTION>
+<OPTION VALUE="slategray">Slate Gray</OPTION>
+<OPTION VALUE="seagreen">Sea Green</OPTION>
+<OPTION VALUE="teal">Teal</OPTION>
+<OPTION VALUE="tan">Tan</OPTION>
+<OPTION VALUE="white">White</OPTION>
+</SELECT>
+</TD>
+</TR>
+<TR>
+<TD>标题大小：</TD>
+<TD>
+<SELECT NAME="h1Size">
+<OPTION VALUE="12">12</OPTION>
+<OPTION VALUE="14">14</OPTION>
+<OPTION VALUE="18">18</OPTION>
+<OPTION VALUE="24">24</OPTION>
+<OPTION VALUE="32">32</OPTION>
+<OPTION VALUE="48">48</OPTION>
+</SELECT>
+</TD>
+</TR>
+</TABLE>
+<DIV STYLE="position:absolute; left:200px; top:200px">
+<BUTTON onclick="handleOK()">OK</BUTTON>
+<BUTTON onclick="handleCancel()">Cancel</BUTTON>
+</DIV>
+</FORM>
+</BODY>
+</HTML>
+```
+
+`windowObject.showModalDialog()`
+
+列表 16-40 所示的对话框负责读取传入的数据（并相应设置元素），并组装数据返回给主窗口的脚本。请注意，当你加载示例时，对话框的 TITLE 元素出现在对话框窗口的栏中。
+
+当页面加载到对话框窗口时，`init()` 函数检查 `window.dialogArguments` 属性。如果它有任何数据，这些数据将用于设置主页面的当前设置。一个工具函数 `setSelected()` 会根据当前设置预选 `SELECT` 元素的选项。
+
+页面底部的按钮被显式定位在窗口的右下角。每个按钮调用一个函数来执行关闭对话框所需的操作。在 OK 按钮的情况下，`handleOK()` 函数将 `window.returnValue` 属性设置为从 `getData()` 函数返回的数据。后者返回表单元素，并使用表单元素的名称作为数组索引将其封装成一个数组。这有助于在主窗口脚本中保持所有数据的整齐，因为主脚本使用索引名称，因此不依赖于对话框窗口中表单元素的精确顺序。
+
+## 第 2 章 窗口与框架对象（第 16 章）183
+
+
+
+`showellessWindow()` 方法。变量获取用于调用对话框内的 `init()` 函数，但也作为生成对话框的条件。其目的是防止创建多个对话框实例（按钮在显示时仍然存在）。`showellessWindow()` 的第二个参数是主窗口中更新文档的函数引用。正如你稍后看到的，该函数在用户点击 OK 或应用按钮时从对话框调用。
+
+### 列表 16-41：用于 `showellessDialog()` 的主窗口
+
+```html
+<HTML>
+<HEAD>
+<TITLE>window.showellessDialog() Method</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+var currPrefs = new Array()
+var prefsDialog
+function getPrefsData() {
+  if (!prefsDialog || prefsDialog.closed) {
+    prefsDialog = showellessDialog("list16-42.html", currPrefs, "dialogWidth:400px; dialogHeight:300px")
+    init(currPrefs)
+  }
+}
+
+function setPrefs(prefs) {
+  if (prefs["bgColor"]) {
+    document.body.style.backgroundColor = prefs["bgColor"]
+    currPrefs["bgColor"] = prefs["bgColor"]
+  }
+  if (prefs["textColor"]) {
+    document.body.style.color = prefs["textColor"]
+    currPrefs["textColor"] = prefs["textColor"]
+  }
+  if (prefs["h1Size"]) {
+    document.all.welcomeHeader.style.fontSize = prefs["h1Size"]
+    currPrefs["h1Size"] = prefs["h1Size"]
+  }
+  if (prefs["name"]) {
+    document.all.firstName.innerText = prefs["name"]
+    currPrefs["name"] = prefs["name"]
+  }
+}
+
+function init() {
+  document.all.firstName.innerText = "friend"
+}
+</SCRIPT>
+</HEAD>
+<BODY BGCOLOR="#cccccc" STYLE="margin:20px" onload="init()">
+<h2>User Preferences</h2>
+<HR>
+<FORM name="prefs" onSubmit="return false()">
+<tr>
+<td>名称：</td>
+<input type="text" name="name">
+</tr>
+<tr>
+<td>背景颜色：</td>
+<select name="bgColor">
+<option value="beige">Beige</option>
+<option value="antique">Antique</option>
+<option value="black">Black</option>
+<option value="darkblue">Dark Blue</option>
+<option value="darkorange">Dark Orange</option>
+<option value="goldenrod">Goldenrod</option>
+<option value="lime">Lime</option>
+<option value="navy">Navy</option>
+<option value="orange">Orange</option>
+<option value="powderblue">Powder Blue</option>
+<option value="slategray">Slate Gray</option>
+<option value="seagreen">Sea Green</option>
+<option value="teal">Teal</option>
+<option value="tan">Tan</option>
+<option value="white">White</option>
+</select>
+</tr>
+<tr>
+<td>文本颜色：</td>
+<select name="textColor">
+<option value="black">Black</option>
+<option value="darkblue">Dark Blue</option>
+<option value="darkorange">Dark Orange</option>
+<option value="goldenrod">Goldenrod</option>
+<option value="lime">Lime</option>
+<option value="navy">Navy</option>
+<option value="orange">Orange</option>
+<option value="powderblue">Powder Blue</option>
+<option value="slategray">Slate Gray</option>
+<option value="seagreen">Sea Green</option>
+<option value="teal">Teal</option>
+<option value="tan">Tan</option>
+<option value="white">White</option>
+</select>
+</tr>
+<tr>
+<td>标题大小：</td>
+<select name="h1Size">
+<option value="12">12</option>
+<option value="14">14</option>
+<option value="18">18</option>
+<option value="24">24</option>
+<option value="32">32</option>
+<option value="48">48</option>
+</select>
+</tr>
+<div style="position:absolute; left:200px;top:200px">
+<button onclick="getPrefsData()">OK</button>
+<button onclick="handleCancel()">Cancel</button>
+</div>
+</FORM>
+</BODY>
+</HTML>
+```
+
+## JavaScript 示例圣经：JavaScript 圣经必备伴侣
+
+## 列表 16-41（续）
+
+```html
+<HTML>
+<BODY BGCOLOR="#ffffff" STYLE="margin:20px" onLoad="init()">
+<H1>window.setModellessDialog() 方法</H1>
+<HR>
+<H2 ID="welcomeHeader">欢迎。 <SPAN ID="firstName">&nbsp;</SPAN>!</H2>
+<HR>
+<P>使用此按钮设置此页的样式偏好：
+<BUTTON ID="prefsButton" onclick="getPrefsData()">
+选项
+</BUTTON>
+</BODY>
+</HTML>
+```
+
+针对无模态版本的对话框窗口文档（列表 16-42）的更改非常有限。屏幕上增加了一个新按钮作为“应用”（Apply）按钮。在微软产品中看到的许多对话框窗口中，“应用”按钮允许将对话框中的当前设置应用于当前文档，而无需关闭对话框。这种方法使得尝试设置变得更加容易。
+
+应用按钮调用 `handleApply()` 函数，其工作方式与 `handleOK()` 相同，不同之处在于对话框不会关闭。但这两个函数向主窗口通信的方式与模态对话框不同。主窗口的处理函数是作为 `showModelessDialog()` 的第二个参数传递的，并在对话框窗口的脚本中作为 `window.dialogArguments` 属性可用。该引用被赋值给两个函数中的局部变量，并调用远程函数，将 `getFormData()` 函数的结果作为参数值传回主窗口。
+
+## 列表 16-42：无模态框的文档
+
+```html
+<HTML>
+<HEAD>
+<TITLE>用户偏好</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+// 关闭对话框
+function close() {
+  window.close();
+}
+
+// 处理 OK 按钮的点击
+function handleOK() {
+  var returnFunc = window.dialogArguments;
+  returnFunc(getFormData())
+  close();
+}
+
+// 处理 应用按钮的点击
+function handleApply() {
+  var returnFunc = window.dialogArguments
+  returnFunc(getFormData())
+}
+
+// 处理 取消按钮的点击
+function handleCancel() {
+  window.returnValue = ""
+  close()
+}
+
+// 通用函数将表单元素键值对转换为数组
+function getFormData() {
+  var form = document.prefs
+  var returnedData = new Array()
+  // 收集每种表单元素的值
+  for (var i = 0; i < form.elements.length; i++) {
+    if (form.elements[i].type == "text") {
+      returnedData[form.elements[i].name] = form.elements[i].value
+    } else if (form.elements[i].type.indexOf("select") != -1) {
+      returnedData[form.elements[i].name] =
+        form.elements[i].options[form.elements[i].selectedIndex].value
+    } else if (form.elements[i].type == "radio") {
+      returnedData[form.elements[i].name] = form.elements[i].value
+    } else if (form.elements[i].type == "checkbox") {
+      returnedData[form.elements[i].name] = form.elements[i].value
+    }
+    else continue
+  }
+  return returnedData
+}
+
+// 通过传递过的数据初始化元素
+function init(currPrefs) {
+  if (currPrefs) {
+    var form = document.prefs
+    if (currPrefs["name"]) {
+      form.name.value = currPrefs["name"]
+    }
+    if (currPrefs["bgColor"]) {
+      setSelected(form.bgColor, currPrefs["bgColor"])
+    }
+    if (currPrefs["textColor"]) {
+      setSelected(form.textColor, currPrefs["textColor"])
+    }
+    if (currPrefs["hSize"]) {
+      setSelected(form.hSize, currPrefs["hSize"])
+    }
+  }
+}
+
+// 将 SELECT 元素设置为某个值的工具函数
+function setSelected(select, value) {
+  for (var i = 0; i < select.options.length; i++) {
+    if (select.options[i].value == value) {
+      select.selectedIndex = i
+      break
+    }
+  }
+  return
+}
+
+// 工具函数，接受在文本字段中按 Enter 键视为点击 OK 按钮
+function checkEnter() {
+  if (window.event.keyCode == 13) {
+    handleOK();
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY BGCOLOR="#ffffff" onload="init()">
+<H2>网站偏好</H2>
+<HR>
+<TABLE BORDER="0" CELLSPACING="2">
+<FORM NAME="prefs" onSubmit="return false">
+<TR>
+<TD>输入您的名字:<INPUT NAME="name" type="text" SIZE="20" onkeydown="checkEnter()">
+</TR>
+<TR>
+<TD>选择背景颜色：
+<SELECT NAME="bgColor">
+<option value="beige">米色</option>
+<option value="antique">古董白</option>
+<option value="goldenrod">金色黄色</option>
+<option value="lime">青绿色</option>
+<option value="powderblue">粉蓝</option>
+<option value="slategray">石板灰</option>
+</SELECT>
+</TR>
+<TR>
+<TD>选择文本颜色：
+<SELECT NAME="textColor">
+<option value="black">黑色</option>
+<option value="white">白色</option>
+<option value="navy">海军蓝</option>
+<option value="darkorange">深橙色</option>
+<option value="seagreen">海绿色</option>
+<option value="teal">青色</option>
+</SELECT>
+</TR>
+<TR>
+<TD>选择“欢迎”字体大小：
+<SELECT NAME="hSize">
+<option value="12">12</option>
+<option value="14">14</option>
+<option value="18">18</option>
+<option value="24">24</option>
+<option value="32">32</option>
+<option value="48">48</option>
+</SELECT>
+</TR>
+</TABLE>
+</FORM>
+<DIV STYLE="position:absolute; left:120px; top:220px">
+<BUTTON STYLE="width:80px" onclick="handleOK()">确定</BUTTON>&nbsp;
+<BUTTON STYLE="width:80px" onclick="handleCancel()">取消</BUTTON>&nbsp;
+<BUTTON STYLE="width:80px" onclick="handleApply()">应用</BUTTON>
+</DIV>
+</BODY>
+</HTML>
+```
+
+这些窗口面临的最大设计挑战可能是在模态和无模态框之间进行选择。一些设计人员认为图形界面中不应该有模态；另一些人认为在进行进一步处理之前，需要让用户关注特定的任务。这时模态对话框就非常合适。
+
+### sizeToContent()
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+使用《JavaScript 圣经》第 13 章中的尝试 `sizeToContent()` 方法。假设你正在运行 CD-ROM 中的第 13 目录（或已复制到磁盘的目录），你可以打开目录中的其中一个子窗口，然后调整其大小。对顶部文本框应用以下语句：
+
+```javascript
+a = window.open("lt13-02.html")
+a.sizeToContent()
+```
+
+调整大小后的子窗口具有浏览器窗口的最小宽度，且高度足够显示文档中的内容。
+
+### 事件处理器
+
+#### onAfterPrint / onBeforePrint
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+示例
+
+以下脚本片段假设页面包含一个 DIV 元素，在页面加载时设置为 `display:none`。在 Head 某处，将打印事件处理器设置为属性：
+
+```javascript
+function showPrintCopy() {
+  document.all.printCopy.style.display = "block"
+}
+function hidePrintCopy() {
+  document.all.printCopy.style.display = "none"
+}
+window.onbeforeprint = showPrintCopy
+window.onafterprint = hidePrintCopy
+```
+
+#### onBeforeUnload
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+示例
+
+列表 16-43 中的简单页面向你展示了如何给用户一个留在页面的机会。
+
+> 列表 16-43：使用 onBeforeUnload 事件处理器
+
+```html
+<HTML>
+<HEAD>
+<TITLE>onBeforeUnload 事件处理器</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function verifyClose() {
+  event.returnValue = "我们很喜欢你，希望你多留一会儿。"
+}
+window.onbeforeunload = verifyClose
+</SCRIPT>
+</HEAD>
+<BODY>
+<h1>onBeforeUnload 事件处理器</h1>
+<HR>
+<P>使用此按钮导航到上一个页：
+<BUTTON ID="go" onclick="history.back()">
+上一步
+</BUTTON>
+</BODY>
+</HTML>
+```
+
+#### onHelp
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+示例
+
+以下脚本片段可以嵌入列表 16-44 中仅限 IE5 的无模态对话框代码中，在对话框内提供上下文帮助。这里只显示两个表单元素的帮助消息，但在实际应用中，你为其余元素添加消息。
+
+```javascript
+function showHelp() {
+  switch (event.srcElement.name) {
+    case "bgColor":
+      alert("为主窗口背景选择一种颜色.")
+      break;
+    case "name":
+      alert("输入您的名字以友好的问候.")
+      break;
+    default:
+      alert("为主页面样式设置偏好.")
+  }
+  event.returnValue = false
+}
+window.onhelp = showHelp
+```
+
+由于此页的帮助专注于表单元素，因此 switch 构造的情况是基于表单元素的 name 属性。对于其他类型的页面，id 属性可能更合适。
+
+## FRAME 对象
+
+### 属性
+
+#### borderColor
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+示例
+
+虽然更改单个框架边框颜色时你可能会遇到问题（特别是在 IE5 中），如果脚本位于 frameset 文档内部，W3C DOM 语法将如下所示：
+
+```javascript
+document.getElementById("contentsFrame").borderColor = "red"
+```
+
+IE 专用版本为：
+
+```javascript
+document.all["contentsFrame"].borderColor = "red"
+```
+
+这些示例假设框架名称以字符串形式传递给脚本函数。如果脚本在 frameset 的某一个框架中执行，请在前面的语句中添加对 parent 的引用。
+
+#### contentDocument
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | ✓ | | | |
+
+示例
+
+frameset 文档的脚本可能会使用 FRAME 元素的 ID 来读取或调整其中一个元素属性，然后需要通过其文档对象对页面内容执行某些操作。你可以通过语句获取文档对象的引用，例如：
+
+```javascript
+var doc = document.getElementById("FRAME3").contentDocument
+```
+
+然后你的脚本可以，例如进入文档中的一个表单：
+
+```javascript
+var val = doc.mainForm.entry.value
+```
+
+#### Document
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+示例
+
+虽然我们有更简单的方法访问另一个框架的文档对象（`parent.otherFrameName.document`），但以下语句采用了较长的方法来获取另一个框架文档中的表单数量：
+
+```javascript
+var formCount = parent.document.all.ContentsFrame.forms.length
+```
+
+只有当函数接收 FRAME 或 IFRAME 元素引用作为参数时，使用 Document 属性才有意义，并且脚本必须（与这些对象相关的其他操作外）访问这些元素包含的文档。
+
+#### frameBorder
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+示例
+
+`frameBorder` 属性的默认值为 `yes`。你可以使用此设置创建一个切换脚本（遗憾的是，这在 IE 中不会改变外观）。与 W3C 兼容的版本如下所示：
+
+```javascript
+function toggleFrameScroll(frameID) {
+  var theFrame = document.getElementById(frameID)
+  if (theFrame.frameBorder == "yes") {
+    theFrame.frameBorder = "no"
+  } else {
+    theFrame.frameBorder = "yes"
+  }
+}
+```
+
+#### height / width
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+示例
+
+以下片段假设一个 frameset 定义了两个框架，并在 frameset 中设置为两列。这里的语句位于 frameset 文档中。它们获取了左侧框架的当前宽度并将该框架的宽度增加了百分之十。这里显示的语法是用于 W3C DOM 的，但可以轻松适配为 IE 专用术语。
+
+```javascript
+var frameWidth = document.getElementById('leftFrame').width;
+document.getElementById('mainFrameset').cols = (Math.round(frameWidth * 1.1)) + ",*";
+```
+
+注意，现有框架宽度的数值首先增加了百分之十，然后连接到分配给 frameset 的 cols 属性的字符串剩余部分。逗号后的星号意味着浏览器应该计算剩余宽度并将其分配给 frameset 的 cols 属性。
+
+#### noResize
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | ✓ | ✓ | ✓ |
+
+示例
+
+以下语句关闭了框架调整大小的能力：`parent.document.getElementById("myFrame").noResize = true`。由于该属性的否定性质，可能很难记住（将 noResize 设为 true 表示关闭可调整大小）。
+
+#### scrolling
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | ✓ | ✓ | ✓ |
+
+示例
+
+列表 16-45 产生了一个由八个框架的 frameset。每个框架的内容由 frameset 生成（通过 `fillFrame()` 函数）。显示了两种引用 FRAME 对象的方法，IE 专用版本已注释掉。
+
+```html
+<HTML>
+<HEAD>
+<TITLE>scrolling Property</TITLE>
+<SCRIPT>
+function toggleScroll(frameID) {
+  // W3C DOM 版本
+  var theFrame = document.getElementById(frameID)
+  // IE4 版本
+  // var theFrame = document.all[frameID]
+  if (theFrame.scrolling != "no") {
+    theFrame.scrolling = "no"
+  } else {
+    theFrame.scrolling = "yes"
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+...
+</BODY>
+</HTML>
+```
+
+#### src
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+示例
+
+为了获得最佳结果，请使用完整的 URL 作为 `src` 属性的值：
+
+```javascript
+parent.document.getElementById("mainFrame").src = "http://www.dang.com"
+```
+
+相对 URL 和 `javascript:` 伪 URL 大多数情况下有效。
+
+## FRAMESET 对象
+
+### 属性
+
+#### border
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+示例
+
+尽管该属性在 IE4+ 中是可读写的，但更改值不会改变你在浏览器中看到的边框厚度。如果你需要找到边框厚度，来自框架文档的脚本引用如下：
+
+```javascript
+var thickness = parent.document.all.outerFrameset.border
+```
+
+#### borderColor
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ | |
+
+示例
+
+要获取 frameset 中的当前颜色设置，来自框架文档的脚本引用将如下：
+
+```javascript
+var borderColor = parent.document.all.outerFrameset.borderColor
+```
+
+#### cols / rows
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ | ✓ |
+
+示例
+
+列表 16-46 显示了框架集（frameset）的 HTML 代码以及该框架集的三个文档中的两个。最后一份文档是《美国权利法案》的 HTML 版本，在此处作为演示的内容帧。
+
+框架集列出项 (16-46) 显示了一个三框架设置。左下侧的列是目录 (16-47)。右侧列分为两行。顶部行是一个简单的控制控件 (16-48)，用于隐藏和显示目录。当用户点击控制控件的热点文本（位于 `SPAN` 元素内部）时，`onClick` 事件处理程序会调用框架集中的 `toggleTOC()` 函数。图 2-10 显示了显示菜单的框架集。
+
+![](img/144de8299231bb2cbf5843e2f444fc0b_216_0.png)
+
+图 2-10：当点击顶部控制链接时，框架集的规格会被动态修改。
+
+此示例使用的语法兼容 W3C。若要将其修改为仅适用于 IE 版本，你需要将 `document.getElementById("outerFrameset")` 替换为 `document.all.outerFrameset`，并将 `elem.firstChild.nodeValue` 替换为 `elem.innerText`。你也可以在脚本中进行分支以适应两种样式。
+
+### 列表 16-46：用于隐藏/显示帧的框架集和脚本
+
+```html
+<HTML>
+<HEAD>
+<TITLE>隐藏/显示帧示例</TITLE>
+</HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+var origCols
+function toggleTOC(elem, frm) {
+  if (origCols) {
+    showTOC(elem)
+  } else {
+    hideTOC(elem, frm)
+  }
+}
+function hideTOC(elem, frm) {
+  var frameset = document.getElementById("outerFrameset")
+  origCols = frameset.cols
+  frameset.cols = "0,*"
+}
+function showTOC(elem) {
+  if (origCols) {
+    document.getElementById("outerFrameset").cols = origCols
+    origCols = null
+  }
+}
+</SCRIPT>
+<FRAMESET ID="outerFrameset" BORDER="no" COLS="150,*">
+<FRAME ID="TOC" NAME="TOCFrame" SRC="lst16-47.html">
+<FRAMESET ID="InnerFrameset1" ROWS="80,*">
+<FRAME ID="controls" NAME="controlsFrame" SRC="lst16-48.html">
+<FRAME ID="content" NAME="contentFrame" SRC="bofright.html">
+</FRAMESET>
+</FRAMESET>
+</HTML>
+```
+
+当用户点击热点来隐藏帧时，脚本会将原始 `cols` 属性设置复制到全局变量。该变量在 `showTOC()` 中用于将框架集恢复到其原始比例。这允许设计师修改框架集的 HTML，而无需深挖脚本去硬编码尺寸。
+
+### 列表 16-47：目录帧内容
+
+```html
+<HTML>
+<HEAD>
+<TITLE>目录</TITLE>
+</HEAD>
+<BODY BGCOLOR="#cccccc">
+<H3>目录</H3>
+<HR>
+<UL STYLE="font-size:10pt">
+<LI><A HREF="bofright.htm#article1" TARGET="contentFrame">第一条</A></LI>
+<LI><A HREF="bofright.htm#article2" TARGET="contentFrame">第二条</A></LI>
+<LI><A HREF="bofright.htm#article3" TARGET="contentFrame">第三条</A></LI>
+<LI><A HREF="bofright.htm#article4" TARGET="contentFrame">第四条</A></LI>
+<LI><A HREF="bofright.htm#article5" TARGET="contentFrame">第五条</A></LI>
+<LI><A HREF="bofright.htm#article6" TARGET="contentFrame">第六条</A></LI>
+<LI><A HREF="bofright.htm#article7" TARGET="contentFrame">第七条</A></LI>
+<LI><A HREF="bofright.htm#article8" TARGET="contentFrame">第八条</A></LI>
+<LI><A HREF="bofright.htm#article9" TARGET="contentFrame">第九条</A></LI>
+<LI><A HREF="bofright.htm#article10" TARGET="contentFrame">第十条</A></LI>
+</UL>
+</BODY>
+</HTML>
+```
+
+### 列表 16-48：控制面板帧
+
+```html
+<HTML>
+<HEAD>
+<TITLE>控制面板</TITLE>
+</HEAD>
+<BODY>
+<P>
+<SPAN ID="tocToggle" STYLE="cursor:hand; text-decoration:underline;">隐藏/显示 目录</SPAN>
+</P>
+<SCRIPT>
+function toggleTOC() {
+  parent.toggleTOC(this)
+}
+</SCRIPT>
+</BODY>
+</HTML>
+```
+
+#### frameBorder
+
+默认值是 `yes`。在 IE4+ 中，你可以通过以下设置创建外观：
+
+```javascript
+function toggleScroll(etID) {
+  var et = document.getElementById(etID)
+  if (et.frameBorder == "no") {
+    et.frameBorder = "yes"
+  } else {
+    et.frameBorder = "no"
+  }
+}
+```
+
+#### spacing
+
+尽管在 IE4+ 中 `spacing` 属性是可读可写的，你的脚本可以通过以下方式找到 `spacing`：
+
+```javascript
+var spacing = document.all.frameset.spacing
+```
+
+#### align
+
+以下代码设置帧元素周围的空白：
+
+```javascript
+document.getElementById("iframe").align = "right";
+```
+
+#### contentDocument
+
+以下 `toggleIFrameScroll()` 函数在帧中切换滚动条的开启关闭。`if` 条件检查属性是否被设置为 `no`。此测试允许条件评估为真（第一次）或 `yes`（由函数设置）。
+
+```javascript
+function toggleIFrameScroll(frameID) {
+  // IE5 & NN6 版本
+  var theFrame = document.getElementById(frameID);
+  // IE4+ 版本
+  // var theFrame = document.all[frameID]
+  if (theFrame.scrolling != "no") {
+    theFrame.scrolling = "no"
+  } else {
+    theFrame.scrolling = "yes"
+  }
+}
+```
+
+#### src
+
+为了获得最佳效果，请使用完全 URL 作为 `src` 属性的值，如下所示：
+
+```javascript
+document.getElementById("myiframe").src = "http://www.dannyg.com"
+```
+
+相对 URL 和 `javascript:` URL 在大多数情况下也可以工作。
+
+## IFRAME 对象
+
+### 属性
+
+#### document
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | ✓ |
+
+示例
+
+使用 The Evaluator（《JavaScript 圣经》第 13 章）来实验 IFRAME 对象及其属性。将以下语句输入顶部的文本框。第一条语句创建一个弹出窗口，将其引用赋值给全局变量。接下来，为了方便起见，将弹出窗口文档主体的引用保存在变量 `b` 中。后续语句将这两个变量进行操作。
+
+```javascript
+a = window.createPopup()
+b = a.document.body
+b.style.border = "solid 2px black"
+b.style.padding = "5px"
+b.innerHTML = "<P>Here is some text in a popup window</P>"
+a.show(200, 100, 50, document.body)
+```
+
+有关参数的详情，请参阅 `show()` 方法的描述。
+
+#### isOpen
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | ✓ |
+
+示例
+
+使用 The Evaluator（《JavaScript 圣经》第 13 章）来实验 `isOpen`。将以下语句输入顶部的文本框。序列从创建一个简单的弹出窗口开始，将其引用赋值给全局变量。注意最后一条语句实际上是两条语句，其设计是为了在弹出窗口仍然打开时执行第二条语句。
+
+```javascript
+a = window.createPopup()
+a.document.body.innerHTML = "<P>Here is a popup window</P>"
+a.show(200, 100, 200, 50, document.body); alert("Popup is open: " + a.isOpen)
+```
+
+如果你点击主窗口以隐藏弹出窗口，如果你单独在顶部文本框中输入以下语句，将看到不同的结果：
+
+```javascript
+alert("Popup is open:" + a.isOpen)
+```
+
+### 方法
+
+#### hide() / show(left, top, width, height[, positionElement])
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | |
+
+示例
+
+示例 16-49 展示了 popup 对象的 `show()` 和 `hide()` 方法。页面上的按钮点击调用 `selfTimer()` 函数，该函数作为此页面的主程序。目标是产生一个在五秒后“自毁”的弹出窗口。期间，弹出窗口倒计时秒。
+
+弹出窗口的引用作为全局变量 `popup` 保留。popup 对象被创建，`initContent()` 函数通过赋值样式属性和 `innerHTML` 将内容填充到弹出窗口，当弹出窗口生成时自动创建。一个 `SPAN` 元素定义在弹出窗口文本中。注意另一个函数可以修改该文本——前提是弹出窗口已初始化（通过 `popup` 变量赋值了值）且弹出窗口正在显示。在任何情况下调用 `initContent()` 都是可能的，但检查 `isOpen` 条件是良好的做法。
+
+在 `selfTimer()` 中，popup 对象被显示。所需的尺寸需要一些尝试和错误，以确保弹出窗口能够舒适地适应。当弹出窗口显示时，现在是调用 `countDown()` 的时间。在函数执行任何操作之前，它验证弹出窗口已初始化并且仍然可见。如果用户在计数器倒计时时点击主窗口，会将 `isOpen` 属性的值改为 `false`，此时执行 `if` 条件。
+
+`countDown()` 获取从 `innerText` 提取整数（使用 10 进制，因为我们处理的是可能的数字）。`if` 条件将获取的整数减 1。如果减后的值为 0，则时间到，弹出窗口被隐藏，`popup` 变量返回原始 `null` 值。但值不为零，`span` 的 `innerText` 被设置为减后的值（带有领先零），并调用 `setTimeout()` 方法在一秒后调用 `countDown()`。
+
+### 列表 16-49：隐藏和显示弹出窗口
+
+```html
+<HTML>
+<HEAD>
+<TITLE>popup 对象</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+var popup
+function initContent() {
+  if (popup && popup.isOpen) {
+    var popBody = popup.document.body;
+    popBody.style.border = "solid 3px red";
+    popBody.style.padding = "10px";
+    popBody.style.fontSize = "24pt";
+    popBody.style.textAlign = "center";
+    var bodyText = "<P>This popup will self-destruct in ";
+    bodyText += "<SPAN id='counter'>0</SPAN>";
+    bodyText += " seconds...</P>";
+    popBody.innerHTML = bodyText;
+  }
+}
+function countDown() {
+  if (popup && popup.isOpen) {
+    var currCount = parseInt(popup.document.all.counter.innerText);
+    if (--currCount == 0) {
+      popup.hide();
+      popup = null;
+    } else {
+      popup.document.all.counter.innerText = "0" + currCount;
+      setTimeout("countDown()", 1000);
+    }
+  }
+}
+function selfTimer() {
+  popup = window.createPopup();
+  initContent();
+  popup.show(0,200,400,100,document.body);
+  setTimeout("countDown()", 1000);
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+<INPUT type="button" VALUE="Impossible Mission" onclick="selfTimer()">
+</FORM>
+</BODY>
+</HTML>
+```
+
+这里的 `hide()` 方法是由弹出窗口显示期间运行的脚本调用的。因为如果用户点击主窗口，弹出窗口会自动消失，因此 `hide()` 方法极不可能由于响应主窗口中的用户操作而自动调用。如果你让弹出窗口中的脚本关闭弹出窗口，请使用 `parent.close()`。
+
+# Location 和 History 对象（第 17 章）
+
+虽然 `location` 和 `history` 对象都包含关于用户浏览习惯甚至表单内容的宝贵信息，但它们也可能被想要入侵毫无备访问者隐私的恶意脚本滥用。因此，浏览器不会将私有细节暴露给脚本（NN4+ 脚本和用户明确许可除外）。然而，`location` 对象是一个需要了解和利用的重要对象。如这里的示例所示，你可以将其作为一种不使用 Cookie 的方式从一个页面传递数据到另一个页面。该对象仍然是脚本向浏览器加载新页的主要方式。
+
+## 示例
+
+- `location.host` 属性演示了多个 `location` 对象属性。你还发现了一个如何在 NN4+ 中使用脚本访问不同域页面的 `location` 对象属性的示例。
+- `location.search` 属性的列表通过 URL 将数据从一个页面传递到另一个页面。在这种情况下，页面中的脚本不仅让你的网站在指定的框架集中显示，特定的页面还会加载到其中一个框架中。
+- 注意 `location.replace()` 方法的示例。当你不希望某个页面成为浏览器历史的一部分时，此方法非常有用。
+- 运行 17-12 和 17-13 中的 `history.back()` 方法，查看该方法在不同浏览器之间的差异。参考《JavaScript 圣经》关于该方法演变的文本。
+
+## Location 对象
+
+### 属性
+
+#### hash
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+示例：当你加载列表 17-1 中的脚本时，调整浏览器窗口的大小每次只显示一个部分。当你点击按钮时，其脚本导航到进度中的下一个本地部分，最终带你回到顶部。
+
+### 列表 17-1：带有锚点的文档
+
+```html
+<HTML>
+<HEAD>
+<TITLE>location.hash 属性</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function getNextAnchor(where) {
+  window.location.hash = where
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<A NAME="start"><H1>顶部</H1></A>
+<FORM>
+<INPUT type="button" NAME="next" VALUE="NEXT" onclick="getNextAnchor('sec1')">
+</FORM>
+<HR>
+<A NAME="sec1"><H1>第 1 部分</H1></A>
+<FORM>
+<INPUT type="button" NAME="next" VALUE="NEXT" onclick="getNextAnchor('sec2')">
+</FORM>
+<HR>
+<A NAME="sec2"><H1>第 2 部分</H1></A>
+<FORM>
+<INPUT type="button" NAME="next" VALUE="NEXT" onclick="getNextAnchor('sec3')">
+</FORM>
+<HR>
+<A NAME="sec3"><H1>第 3 部分</H1></A>
+<FORM>
+<INPUT type="button" NAME="next" VALUE="BACK TO TOP" onclick="getNextAnchor('start')">
+</FORM>
+</BODY>
+</HTML>
+```
+
+锚点名称作为参数，通过每个按钮的 `onClick` 处理程序传递。我不需要在函数中通过附加字面量哈希标记和锚点值来组装 `window.location` 值，只需修改当前窗口位置的 `hash` 属性即可。这是更优、更简洁的方法。
+
+然而，如果你尝试在添加的脚本行中重新读取 `window.location.hash` 属性，窗口的实际 URL 可能还没有更新，浏览器似乎会给你的脚本提供错误信息。为了防止同一函数后续语句中出现此问题，请使用用于设置 `window.location.hash` 属性的相同变量值构建这些语句的 URL——不要依赖浏览器提供你预期的值。
+
+#### host
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+示例
+
+使用列表 17-2 到 17-4 中的文档作为工具，帮助学习各种 `window.location` 属性返回的值。在浏览器中，打开列表 17-2 的文件。该文件创建一个双帧结构。左帧包含一个临时占位符（列表 17-4），用于显示一些指令。右帧有一个文档（列表 17-3），允许你将 URL 加载到左帧，并获取三个可用窗口的读取结果：父窗口（创建多框架窗口的窗口）、左帧和右帧。
+
+### 列表 17-2：属性选择器的框架集
+
+```html
+<HTML>
+<HEAD>
+<TITLE>window.location 属性</TITLE>
+</HEAD>
+<FRAMESET COLS="50%,50%" BORDER=1>
+<FRAME NAME="Frame1" SRC="lst17-04.html">
+<FRAME NAME="Frame2" SRC="lst17-03.html">
+</FRAMESET>
+</HTML>
+```
+
+### 列表 17-3：属性选择器
+
+```html
+<HTML>
+<HEAD>
+<TITLE>属性选择器</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+var isNav4 = navigator.appName == "Netscape" &&
+  navigator.appVersion.charAt(0) >= 4 ? true : false
+
+function fillLeftFrame() {
+  var newURL = prompt("输入要在左帧中显示的文档 URL。")
+  if (newURL != null && newURL != "") {
+    parent.frames[0].location = newURL
+  }
+}
+
+function showLocationData(form) {
+  for (var i = 0; i < 3; i++) {
+    if (form.whichFrame[i].checked) {
+      var windName = form.whichFrame[i].value
+      break
+    }
+  }
+  var theWind = "" + windName + ".location"
+  if (isNav4)
+    netscape.security.PrivilegeManager.enablePrivilege("UniversalBrowserRead")
+  var theObj = eval(theWind)
+  form.windName.value = windName
+  form.windHash.value = theObj.hash
+  form.windHost.value = theObj.host
+  form.windHostname.value = theObj.hostname
+  form.windHref.value = theObj.href
+  form.windPath.value = theObj.pathname
+  form.windPort.value = theObj.port
+  form.windProtocol.value = theObj.protocol
+  form.windSearch.value = theObj.search
+  if (isNav4)
+    netscape.security.PrivilegeManager.disablePrivilege("UniversalBrowserRead")
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+点击“Open URL”按钮输入 HTML 文档的位置，显示在此窗口的左帧中。
+<FORM>
+<INPUT TYPE="button" NAME="opener" VALUE="Open URL..." onclick="fillLeftFrame()">
+<HR>
+<CENTER>
+选择一个窗口/帧。然后点击“Show Location Properties”按钮，显示目标窗口的每个 `window.location` 属性值。<P>
+<INPUT TYPE="radio" NAME="whichFrame" VALUE="parent" CHECKED>父窗口
+<INPUT TYPE="radio" NAME="whichFrame" VALUE="parent.frames[0]">左帧
+<INPUT TYPE="radio" NAME="whichFrame" VALUE="parent.frames[1]">此帧
+<P>
+<INPUT TYPE="button" NAME="getProperties" VALUE="Show Location Properties" onclick="showLocationData(this.form)">
+<INPUT TYPE="button" NAME="reset" VALUE="Clear"><P>
+<TABLE>
+<TR><TD ALIGN="right">Window:</TD><TD><INPUT TYPE="text" NAME="windName" SIZE=30></TD></TR>
+<TR><TD ALIGN="right">hash:</TD><TD><INPUT TYPE="text" NAME="windHash" SIZE=30></TD></TR>
+<TR><TD ALIGN="right">host:</TD><TD><INPUT TYPE="text" NAME="windHost" SIZE=30></TD></TR>
+<TR><TD ALIGN="right">hostname:</TD><TD><INPUT TYPE="text" NAME="windHostname" SIZE=30></TD></TR>
+<TR><TD ALIGN="right">href:</TD><TD><TEXTAREA NAME="windHref" ROWS=3 COLS=30 WRAP="soft"></TEXTAREA></TD></TR>
+<TR><TD ALIGN="right">pathname:</TD><TD><INPUT TYPE="text" NAME="windPath" SIZE=30></TD></TR>
+<TR><TD ALIGN="right">port:</TD><TD><INPUT TYPE="text" NAME="windPort" SIZE=30></TD></TR>
+<TR><TD ALIGN="right">protocol:</TD><TD><INPUT TYPE="text" NAME="windProtocol" SIZE=30></TD></TR>
+<TR><TD ALIGN="right">search:</TD><TD><TEXTAREA NAME="windSearch" ROWS=3 COLS=30 WRAP="soft"></TEXTAREA></TD></TR>
+</TABLE>
+</CENTER>
+</FORM>
+</BODY>
+</HTML>
+```
+
+### 列表 17-4：列表 17-2 的占位符文档
+
+```html
+<HTML>
+<HEAD>
+<TITLE>占位符</TITLE>
+</HEAD>
+<BODY>
+初始占位符。尝试其他 URL（见右侧）。
+</BODY>
+</HTML>
+```
+
+#### hostname
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+示例
+
+查看列表 17-2 到 17-4 中的相关页面，帮助你查看其他页面的 `hostname` 数据。
+
+#### href
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+示例
+
+列表 17-5 在捕获 URL 的脚本部分使用了 `unescape()` 函数。该函数通过为通常显示 ASCII 编码版本的浏览器显示路径，起到美化作用。
+
+> 列表 17-5：提取当前文档的目录
+
+```html
+<HTML>
+<HEAD>
+<TITLE>提取 pathname</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+// 提取目录的通用函数
+function getDirPath(URL) {
+  var result = unescape(URL.substring(0,(URL.lastIndexOf("/")) + 1))
+  return result
+}
+// 处理按钮事件，将工作交给通用函数
+function showDirPath(URL) {
+  alert(getDirPath(URL))
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+<INPUT TYPE="button" VALUE="View directory URL" onclick="showDirPath(window.location.href)">
+</FORM>
+</BODY>
+</HTML>
+```
+
+#### pathname
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+#### port
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+示例
+
+如果你可以访问包含端口数的 URL，请使用列表 17-2 到 17-4 中的文档来测试 `location.port` 的输出。
+
+#### protocol
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+示例
+
+请参见列表 17-2 到 17-4，其中有一个多框架示例，你可以用它查看各种 URL 的 `location.protocol` 属性。还可以尝试加载 FTP 站点以查看该类型 URL 的 `location.protocol` 值。
+
+#### search
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+示例
+
+正如关于 JavaScript 框架的第 16 章开头提到的，你可以强制特定的 HTML 页面在为其设计的框架集（frameset）中打开。借助搜索字符串的帮助，你可以重用同一个框架集文档来适应框架中任意数量页面（而不是为框架集中每种可能的页面组合指定单独的框架集）。本节列表创建了一个简单示例，展示了如何向框架集传递有关页面的信息来强制页面跳转到框架集。因此，如果用户拥有某个内容页面的 URL（例如作为搜索引擎结果），并且通过右键点击框架进行了书签标记，或者当用户下次访问该页面时，它将出现在其指定的框架集中。
+
+当脚本检查页面是否加载在框架集内部时，执行的基础任务是：如果缺少框架集，则构造一个搜索字符串并附加到 `window.location.href`。
+
+```javascript
+windowObject.location.search
+```
+
+
+
+到框架集文档的 URL 中。框架集文档有自己的简短脚本，用于查找搜索字符串是否存在。如果字符串存在，脚本将提取搜索字符串数据，并使用它将特定页面加载到框架集的内容框架中。
+
+图 17-6 是框架集文档。`getSearchAsArray()` 函数对于这个简单示例来说比所需的要更完整，但你可以在其他实例中使用它，将搜索字符串中任意数量的键值对（传统格式为 `name=value1&name=value2&`）转换为数组，其中索引为名称（这使得脚本更容易提取特定数据）。之所以出现版本分支，是因为为了方便，`getSearchAsArray()` 函数使用了在 NN3 或 IE4 之前的浏览器中不存在的文本和数组方法。
+
+## 图 17-6：智能框架集
+
+```html
+<HTML>
+<HEAD>
+<TITLE>示例框架集</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+// 将 location.search 转换为一个值数组
+// 并按名称进行索引。
+function getSearchAsArray() {
+  var minNav3 = (navigator.appName == "Netscape" &&
+  parseInt(navigator.appVersion) >= 3) ||
+  var minIE4 = (navigator.appName.indexOf("Microsoft") >= 0 &&
+  parseInt(navigator.appVersion) > 4);
+  var minDOM = minNav3 || minIE4 // 此函数所需的 DOM
+  var results = new Array();
+  if (minDOM) {
+    var input = unescape(location.search.substr(1));
+    if (input) {
+      var srchArray = input.split("&");
+      var tempData = new Array();
+      for (var i = 0; i < srchArray.length; i++) {
+        tempData = srchArray[i].split("=");
+        results[tempData[0]] = tempData[1];
+      }
+    }
+  }
+  return results;
+}
+function loadFrame() {
+  if (location.search) {
+    var srchArray = getSearchAsArray();
+    if (srchArray["page"]) {
+      parent.content.location.href = srchArray["page"];
+    }
+  }
+}
+</SCRIPT>
+</HEAD>
+<FRAMESET COLS="20%,80%" onload="loadFrame()">
+  <FRAME NAME="toc" SRC="toc.htm">
+  <FRAME NAME="content" SRC="welcome.htm">
+</FRAMESET>
+</HTML>
+```
+
+在新文档加载后，它没有出现在历史列表中。在点击列表 17-10 中的“替换我”（Replace Me）之前和之后，检查历史列表（浏览器中显示此类信息的常规位置）。
+
+## 列表 17-10：调用 location.replace() 方法
+
+```html
+<HTML>
+<HEAD>
+<TITLE>location.replace()</TITLE>
+<SCRIPT LANGUAGE="JavaScript1.1">
+function doReplace() {
+  location.replace("1st17-01.htm")
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM NAME="myForm">
+<INPUT TYPE="button" VALUE="Replace Me" onclick="doReplace()">
+</FORM>
+</BODY>
+</HTML>
+```
+
+## History 对象
+
+### 属性
+
+#### length
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+### 示例
+
+列表 17-11 中的简单函数根据浏览器历史记录中的项目数量显示两个警报消息之一。
+
+## 列表 17-11：浏览器历史控制
+
+```html
+<HTML>
+<HEAD>
+<TITLE>History 对象</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function setCount() {
+  var histCount = window.history.length
+  if (histCount > 5) {
+    alert("哎呀，你真忙。到目前为止你已经访问了 " + histCount + " 页面。");
+  } else {
+    alert("本次会话你访问了 " + histCount + " 个网页。");
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+<INPUT TYPE="button" NAME="activity" VALUE="My Activity" onclick="setCount()">
+</FORM>
+</BODY>
+</HTML>
+```
+
+### 方法
+
+#### back()
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+### 示例
+
+列表 17-12 和 17-13 提供了一个小工作坊，你可以在其中测试不同浏览器各种后退和向前导航的行为。框架集部分出现在图 3-3 中。某些功能仅在 NN4 中有效。
+
+> 列表 17-12：导航实验室框架集
+
+```html
+<HTML>
+<HEAD>
+<TITLE>后退与前进</TITLE>
+</HEAD>
+<FRAMESET COLS="45%,55%">
+  <FRAME NAME="controller" SRC="ls17-13.htm">
+  <FRAME NAME="display" SRC="ls17-01.htm">
+</FRAMESET>
+</HTML>
+```
+
+## JavaScript 示例前进：JavaScript 圣经的必备伴侣
+
+点击这些链接之一向右侧框架中加载一系列文档（记下你点击的顺序）：
+
+- 列表 17-1
+- 列表 17-5
+- 列表 17-9
+
+点击下方的各种按钮查看此框架中的结果：
+
+- NN4+ 栏按钮的替代品：`window.back()` 和 `window.forward()`
+- 后退 前进
+- `history.back()` 和 `history.forward()`
+- 用于右侧框架的后退 前进
+- 用于 Black 框架的 `history.back()`
+- 用于父级 Black 的 `history.back()`
+
+图 3-3：在不同浏览器中实验后退和前进行为
+
+列表 17-13 的顶部包含指向本章其他示例的简单链接。点击任何链接都会将文档加载到右侧框架中，以便你在框架内建立历史。
+
+## 列表 17-13：导航实验室控制
+
+```html
+<HTML>
+<HEAD>
+<TITLE>实验室控制</TITLE>
+</HEAD>
+<BODY>
+<B>通过点击某些内容向右侧框架加载一系列文档：</B><P>
+<A HREF="17-01.html" TARGET="display">列表 17-1</A>
+<A HREF="17-05.html" TARGET="display">列表 17-5</A>
+<A HREF="17-09.html" TARGET="display">列表 17-9</A>
+<HR>
+<FORM NAME="input">
+<B>点击各种按钮查看此框架集中的结果：</B><P>
+<UL>
+<LI>NN4+ 栏按钮的替代品 -- <TT>window.back()</TT> 和 <TT>window.forward()</TT>
+<INPUT TYPE="button" VALUE="Back" onclick="window.back()">
+<INPUT TYPE="button" VALUE="Forward" onclick="window.forward()">
+</UL>
+<UL>
+<LI><TT>history.back()</TT> 和 <TT>history.forward()</TT> 用于右侧框架：
+<INPUT TYPE="button" VALUE="Back" onclick="parent.display.history.back()">
+<INPUT TYPE="button" VALUE="Forward" onclick="parent.display.history.forward()"><P>
+<LI><TT>history.back()</TT> 用于此框架：
+<INPUT TYPE="button" VALUE="Back" onclick="history.back()"><P>
+<LI><TT>history.back()</TT> 用于父级框架：
+<INPUT TYPE="button" VALUE="Back" onclick="parent.history.back()"><P>
+</UL>
+</FORM>
+</BODY>
+</HTML>
+```
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | |
+
+## 示例
+
+列表 17-12 和 17-13 提供了一个小工作坊，你可以在其中测试不同浏览器中各种后退和向前导航的行为。框架集部分出现在图 3-3 中。某些功能仅在 NN4 中有效。
+
+> 列表 17-12：导航实验室框架集
+
+```html
+<HTML>
+<HEAD>
+<TITLE>后退与前进</TITLE>
+</HEAD>
+<FRAMESET COLS="45%,55%">
+  <FRAME NAME="controller" SRC="ls17-13.htm">
+  <FRAME NAME="display" SRC="ls17-01.htm">
+</FRAMESET>
+</HTML>
+```
+
+## JavaScript 示例前进：JavaScript 圣经的必备伴侣
+
+点击这些链接之一向右侧框架中加载一系列文档（记下你点击的顺序）：
+
+- 列表 17-1
+- 列表 17-5
+- 列表 17-9
+
+点击下方的各种按钮查看此框架中的结果：
+
+- NN4+ 栏按钮的替代品：`window.back()` 和 `window.forward()`
+- 后退 前进
+- `history.back()` 和 `history.forward()`
+- 用于右侧框架的后退 前进
+- 用于 Black 框架的 `history.back()`
+- 用于父级 Black 的 `history.back()`
+
+图 3-3：在不同浏览器中实验后退和前进行为
+
+列表 17-13 的顶部包含指向本章其他示例的简单链接。点击任何链接都会将文档加载到右侧框架中，以便你在框架内建立历史。
+
+## 列表 17-13：导航实验室控制
+
+```html
+<HTML>
+<HEAD>
+<TITLE>实验室控制</TITLE>
+</HEAD>
+<BODY>
+<B>通过点击某些内容向右侧框架加载一系列文档：</B><P>
+<A HREF="17-01.html" TARGET="display">列表 17-1</A>
+<A HREF="17-05.html" TARGET="display">列表 17-5</A>
+<A HREF="17-09.html" TARGET="display">列表 17-9</A>
+<HR>
+<FORM NAME="input">
+<B>点击各种按钮查看此框架集中的结果：</B><P>
+<UL>
+<LI>NN4+ 栏按钮的替代品 -- <TT>window.back()</TT> 和 <TT>window.forward()</TT>
+<INPUT TYPE="button" VALUE="Back" onclick="window.back()">
+<INPUT TYPE="button" VALUE="Forward" onclick="window.forward()">
+</UL>
+<UL>
+<LI><TT>history.back()</TT> 和 <TT>history.forward()</TT> 用于右侧框架：
+<INPUT TYPE="button" VALUE="Back" onclick="parent.display.history.back()">
+<INPUT TYPE="button" VALUE="Forward" onclick="parent.display.history.forward()"><P>
+<LI><TT>history.back()</TT> 用于此框架：
+<INPUT TYPE="button" VALUE="Back" onclick="history.back()"><P>
+<LI><TT>history.back()</TT> 用于父级框架：
+<INPUT TYPE="button" VALUE="Back" onclick="parent.history.back()"><P>
+</UL>
+</FORM>
+</BODY>
+</HTML>
+```
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | |
+
+## 第 4 章 ♦ 文档与 Body 对象（第 18 章）
+
+## 示例
+
+在 IE4+ 中使用 Evaluator（《JavaScript Bible》第 13 章）来实验 `activeElement` 属性。在顶部文本框中输入以下语句：`document.activeElement.value`
+
+按下 Enter 键后，Results（结果）框将显示你输入的文本框的值（即你刚刚输入的相同表达式）。如果此时点击 Evaluate（评估）按钮，你会在结果框中看到该按钮对象的 `value` 属性。
+
+### alinkColor / bgColor / linkColor / vlinkColor
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+### 示例
+
+随机选择一些颜色值，插入列表 18-1 中颜色组的三个设置中。较小的窗口显示了一个虚拟按钮，你可以看到它的显示效果与颜色设置的对比。注意，脚本通过重写整个窗口的 HTML 代码来设置小窗口的颜色。更改颜色后，脚本会在原始窗口的 textarea 中显示颜色值。尽管某些颜色是用常量值设置的，但属性返回时是十六进制三元组值。你可以通过更改列表中的颜色值来尽情实验。每当你更改脚本中的值时，保存 HTML 文件并在浏览器中重新加载。
+
+## 列表 18-1：颜色采样器
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Color Sampler</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function defaultColors() {
+  return "BGCOLOR='#c0c0c0' VLINK='#551a8b' LINK='#0000ff'";
+}
+function uglyColors() {
+  return "BGCOLOR='yellow' VLINK='pink' LINK='lawngreen'";
+}
+function showColorValues() {
+  var result = "";
+  result += "bgColor: " + newWindow.document.bgColor + "\n";
+  result += "vlinkColor: " + newWindow.document.vlinkColor + "\n";
+  result += "linkColor: " + newWindow.document.linkColor + "\n";
+  document.forms[0].results.value = result;
+}
+// 动态写入另一个窗口的内容
+function drawPage(strokeStyle) {
+  var thePage = "<HTML><HEAD><TITLE>Color Sampler</TITLE></HEAD><BODY ";
+  if (strokeStyle == "default") {
+    thePage += defaultColors();
+  } else {
+    thePage += uglyColors();
+  }
+  thePage += ">Just you can see the variety of items and color, <A ";
+  thePage += " HREF='http://www.nowhere.com'>here's a link</A>, and " +
+  "<A HREF='http://home.netscape.com'> here is another link </A>" +
+  "you can use on-line to visit and see how it differs " +
+  "from the standard link.";
+  thePage += "<FORM>";
+  thePage += "<INPUT TYPE=button NAME=sample VALUE='Just a Button'>";
+  thePage += "</FORM></BODY></HTML>";
+  newWindow.document.write(thePage);
+  newWindow.document.close();
+  showColorValues();
+}
+// 以下的 setColor 仅在 Windows Navigator 中正常工作
+function setColor(strokeStyle) {
+  if (strokeStyle == "default") {
+    document.bgColor = "#c0c0c0";
+  } else {
+    document.bgColor = "yellow";
+  }
+}
+var newWindow = window.open("","","height=150,width=300");
+</SCRIPT>
+</HEAD>
+<BODY onload="drawPage('default')">
+<H1>在小窗口文档上尝试两种颜色方案。</H1>
+<FORM>
+<INPUT TYPE="button" NAME="default" VALUE="Default Colors" onclick="drawPage('default')">
+<INPUT TYPE="button" NAME="weird" VALUE="Ugly Colors" onclick="drawPage('ugly')">
+<TEXTAREA NAME="results" ROWS=3 COLS=20></TEXTAREA><HR>
+这些按钮会更改当前文档，但在所有平台上并不能正常工作
+<INPUT TYPE="button" NAME="default" VALUE='Default Colors' onclick="setColor('default')">
+<INPUT TYPE="button" NAME="weird" VALUE='Ugly Colors' onclick="setColor('ugly')"><P>
+</FORM>
+<SCRIPT LANGUAGE="JavaScript">
+drawPage("default");
+</SCRIPT>
+</BODY>
+</HTML>
+```
+
+为了满足那些想要动态更改文档颜色的人好奇，前面的示例包含一对按钮，用于设置当前文档的颜色属性。如果你在其他平台或较早版本上运行浏览器，可能会丢失按钮以及颜色背后的内容。你仍然可以点击并激活这些项目，除非你确定页面的用户仅使用支持背景颜色的浏览器，且不会通过设置现有文档的属性来更改颜色。如果你在 Macintosh 上使用 Internet Explorer 3，你会在子窗口上遇到一些困难；主文档中的脚本不会用其他颜色重绘第二个窗口。然而，你可以更改主文档中的颜色。你可能会遇到的显著闪烁与该版本在更改颜色后重绘内容有关。
+
+### anchors
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+### 示例
+
+在列表 18-2 中，我在列表 17-1（第 3 章）中添加了一个额外的脚本，以演示如何提取文档中的锚点。文档会动态写入找到的锚点数量。你可能不需要此类信息，`document.anchors` 属性会被频繁调用。对象模型在定义实际对象时会自动将其定义为文档属性。
+
+## 列表 18-2：读取锚点数量
+
+```html
+<HTML>
+<HEAD>
+<TITLE>document.anchors Property</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function goNextAnchor(where) {
+  window.location.hash = where;
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<A NAME="start"><H1>Top</H1></A>
+<FORM>
+<INPUT TYPE="button" NAME="next" VALUE="NEXT" onclick="goNextAnchor('sec1')">
+</FORM>
+<HR>
+<A NAME="sec1"><H1>Section 1</H1></A>
+<FORM>
+<INPUT TYPE="button" NAME="next" VALUE="NEXT" onclick="goNextAnchor('sec2')">
+</FORM>
+<HR>
+<A NAME="sec2"><H1>Section 2</H1></A>
+<FORM>
+<INPUT TYPE="button" NAME="next" VALUE="NEXT" onclick="goNextAnchor('sec3')">
+</FORM>
+<HR>
+<A NAME="sec3"><H1>Section 3</H1></A>
+<FORM>
+<INPUT TYPE="button" NAME="next" VALUE="NEXT" onclick="goNextAnchor('start')">
+</FORM>
+<HR>
+<SCRIPT LANGUAGE="JavaScript">
+document.write("There are " + document.anchors.length + " anchors defined for this document");
+</SCRIPT>
+</BODY>
+</HTML>
+```
+
+### applets
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | |
+
+### 示例
+
+`document.applets` 属性在浏览器构建包含 applet 对象的文档对象模型时自动定义。你很少访问此属性，除非确定文档有多少个 applet 对象。
+
+### bgColor
+
+查看 `alinkColor`。
+
+### body
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | |
+
+### 示例
+
+使用 Evaluator（《JavaScript Bible》第 13 章）检查 BODY 元素的属性。首先，为了证明 `document.body` 与长引用返回的元素对象相同，在 IE 或 NN6 的顶部文本框中输入以下语句：
+
+```javascript
+document.body == document.getElementsByTagName("BODY")[0];
+```
+
+接下来，检查本章后对应的 BODY 对象属性列表，并将它们输入顶部文本框以查看结果。例如：
+
+```javascript
+document.body.bgColor;
+document.body.tagName;
+```
+
+### charset
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | |
+
+```javascript
+document.charset;
+```
+
+## JavaScript Examples：《JavaScript Bible》的必备伴侣
+
+### 示例
+
+使用 Evaluator（《JavaScript Bible》第 13 章）实验 `charset` 属性。要查看应用于页面的默认设置，在顶部文本框中输入以下语句：
+
+```javascript
+document.charset;
+```
+
+如果你在 Windows 98 上运行 IE5+ 并输入以下语句，浏览器将为页面应用不同的 charset：
+
+```javascript
+document.charset = "Iso-8859-2";
+```
+
+如果你的 Windows 版本没有安装该字符集，浏览器可能会请求下载并安装该字符。
+
+### characterSet
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | ✓ | | | | | |
+
+### 示例
+
+使用 Evaluator（《JavaScript Bible》第 13 章）在 NN6 中实验 `characterSet` 属性。要查看应用于页面的默认设置，在顶部文本框中输入以下语句：
+
+```javascript
+document.characterSet;
+```
+
+### cookie
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+### 示例
+
+实验列表 18-3 中的最后一组语句来创建、检索和删除 cookie。你也可以通过 Evaluator 进行实验，给 `document.cookie` 分配一个键值对字符串，然后检查 cookie 属性的值。
+
+### defaultCharset
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | ✓ | ✓ | ✓ |
+
+```javascript
+document.defaultCharset;
+```
+
+## 第 4 章 + 文档与主体对象（第 18 章）
+
+### 示例
+
+使用评估器（《JavaScript 圣经》第 13 章）测试 `defaultCharset` 属性。要查看应用于页面的默认设置，请在顶部文本框中输入以下语句：
+
+```javascript
+document.defaultCharset;
+```
+
+### documentElement
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | ✓ | | | ✓ | ✓ | ✓ |
+
+### 示例
+
+使用评估器（《JavaScript 圣经》第 13 章）检查 `documentElement` 属性的行为。在 IE5+ 或 NN6 中，在顶部文本字段中输入以下语句：
+
+```javascript
+document.documentElement.tagName;
+```
+
+结果是 HTML，如预期的。
+
+### expando
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | ✓ | ✓ | ✓ |
+
+### 示例
+
+使用评估器（《JavaScript 圣经》第 13 章）在 IE4+ 中测试 `document.expando` 属性。首先证明 `document` 对象通常可以接受自定义属性。在顶部文本字段中输入语句：
+
+```javascript
+document.spooky = "Boo!";
+```
+
+该属性现在已设置，并保持该状态，直到页面重新加载或卸载。
+
+现在，使用以下语句冻结文档对象的属性：
+
+```javascript
+document.expando = false;
+```
+
+如果你尝试添加新属性（如下所示），你将收到一个错误：
+
+```javascript
+document.happy = "tra la";
+```
+
+有趣的是，尽管 `document.expando` 被关闭了，第一个自定义属性仍然是可以访问和修改的。
+
+```javascript
+document.spooky;
+```
+
+## 232 《JavaScript 圣经》：《JavaScript 圣经》的必备伴侣
+
+### fgColor
+
+参见 `linkColor`。
+
+### fileCreatedDate / fileModifiedDate / fileSize
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | ✓ | ✓ | ✓ |
+
+列表 18-4 动态生成了若干处与文件相关的内容，以及其大小。更重要的是，该列表演示了如何将文件日期属性返回的值转换为可以用于日期计算的真实 `Date` 对象。在列表 18-4 中，计算结果是创建日期与每个人查看文件的日期之间的完整天数。注意，动态生成的内容是简单通过 `body` 内容中精确定位的 `SPAN` 元素的 `innerText` 属性添加的。
+
+> 列表 18-4：查看文件日期
+
+```html
+<HTML>
+<HEAD>
+<TITLE>fileCreatedDate and fileModifiedDate Properties</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function fillInBlanks() {
+  var created = document.fileCreatedDate;
+  var modified = document.fileModifiedDate;
+  document.all.created.innerText = created;
+  document.all.modified.innerText = modified;
+  var createdDate = new Date(created).getTime();
+  var today = new Date().getTime();
+  var diff = Math.floor((today - createdDate) / (1000*60*60*24));
+  document.all.diff.innerText = diff;
+  document.all.size.innerText = document.fileSize;
+}
+</SCRIPT>
+</HEAD>
+<BODY onload="fillInBlanks()">
+<H1>fileCreatedDate and fileModifiedDate Properties</H1>
+<HR>
+<P>此文件 (<SPAN ID="size"></SPAN> 字节) 创建于 <SPAN ID="created"></SPAN>，最近修改于 <SPAN ID="modified"></SPAN>。</P>
+<P>自此文件创建以来已经过了 <SPAN ID="diff"></SPAN> 天。</P>
+</BODY>
+</HTML>
+```
+
+### forms
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | |
+
+示例：列表 18-5 中的文档被设定为根据“blush”复选框的选中状态显示一个导航到特定音乐网站的警报对话框。这里的用户输入分为两个表单：一个带有复选框，另一个表单带有执行导航的按钮。一段副本填充了中间的空间。点击底部的按钮（在第二个表单中）会触发函数，该函数通过使用 `document.forms[i]` 数组作为地址的一部分获取“blush”复选框的 `checked` 属性。
+
+## 列表 18-5：使用 document.forms 属性
+
+```html
+<HTML>
+<HEAD>
+<TITLE>document.forms 示例</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function goMusic() {
+  if (document.forms[0].blush.checked) {
+    alert("Going to the Blues music area...");
+  } else {
+    alert("Going now to music area...");
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM NAME="theBlues">
+<INPUT TYPE="checkbox" NAME="blush">你有蓝调吗。
+</FORM>
+<HR>
+<FORM NAME="visit">
+<INPUT TYPE="button" VALUE="Visit" onclick="goMusic()">
+</FORM>
+</BODY>
+</HTML>
+```
+
+### frames
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | |
+
+参见《JavaScript 圣经》第 16 章关于 `frames` 对象的讨论和示例。
+
+### height / width
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | ✓ | | | |
+
+### 示例
+
+使用评估器（《JavaScript 圣经》第 13 章）检查 `document` 的 `height` 和 `width` 属性。在文本框中输入以下语句：
+
+```javascript
+"height=" + document.height + " width=" + document.width;
+```
+
+调整窗口大小，以便在窗口中看到这些数值。如果你缩小窗口，这些值是内容占据的像素值。
+
+### images
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| ✓ | ✓ | ✓ | (✓) | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+`images` 对象的定义参见《JavaScript 圣经》第 22 章。
+
+### implementation
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | ✓ | | | | | |
+
+使用评估器（《JavaScript 圣经》第 13 章）在 NN6 中测试 `document.implementation.hasFeature()` 方法。在文本框中依次输入以下语句并查看结果：
+
+```javascript
+document.implementation.hasFeature("HTML", "1.0");
+document.implementation.hasFeature("HTML", "2.0");
+document.implementation.hasFeature("HTML", "3.0");
+document.implementation.hasFeature("CSS", "2.0");
+document.implementation.hasFeature("CSS2", "2.0");
+```
+
+可以尝试其他值。
+
+### lastModified
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | | ✓ | ✓ |
+
+```javascript
+document.lastModified;
+```
+
+## 236 《JavaScript 示例圣经》：《JavaScript 圣经》的必备伴侣
+
+### 示例
+
+使用列表 18-6 测试 `document.lastModified` 属性。如果文件位于某些服务器或本地硬盘上，它也可能产生不准确的读取。
+
+## 列表 18-6：另一种格式的 lastModified 属性
+
+```html
+<HTML>
+<HEAD>
+<TITLE>时间戳器</TITLE>
+</HEAD>
+<BODY>
+<CENTER>
+<SCRIPT LANGUAGE="JavaScript">
+update = new Date(document.lastModified);
+theMonth = update.getMonth() + 1;
+theDate = update.getDate();
+theYear = update.getFullYear();
+document.write("Last updated: " + theMonth + "/" + theDate + "/" + theYear);
+</SCRIPT>
+<HR>
+</BODY>
+</HTML>
+```
+
+正如《JavaScript 圣经》第 36 章关于 Date 对象的详细讨论所示，你应该意识到日期格式在国家之间差异巨大。其中某些格式的日期元素顺序不同。当你硬编码日期格式时，它可能会采用其他页面用户不熟悉的形式。
+
+### layers
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | ✓ | | | | | | |
+
+### 示例
+
+列表 18-7 仅演示了 NN4 如何使用 `document.layers` 属性遍历文档中的整个嵌套层。通过递归调用 `crawlLayers()` 函数，脚本在窗口中构建了一个缩进的层列表，与对象具有相同的层次结构，并将结果显示在警告对话框中。在加载此文档后（脚本由 `onload` 事件处理程序触发），将警告对话框的内容与文档中 `<LAYER>` 标签的结构进行比较。
+
+## 列表 18-7：Navigator 4 图层爬虫
+
+```html
+<HTML>
+<HEAD>
+<SCRIPT LANGUAGE="JavaScript1.2">
+var output = "";
+function crawler(layerArray, indent) {
+  for (var i = 0; i < layerArray.length; i++) {
+    output += indent + layerArray[i].name + "\n";
+    if (layerArray[i].document.layers.length) {
+      var newLayerArray = layerArray[i].document.layers;
+      crawler(newLayerArray, indent + "*");
+    }
+  }
+  return output;
+}
+function revealLayers() {
+  alert(crawler(document.layers, ""));
+}
+</SCRIPT>
+</HEAD>
+<BODY onload="revealLayers()">
+<LAYER NAME="Europe">
+<LAYER NAME="Germany"></LAYER>
+<LAYER NAME="Netherlands">
+<LAYER NAME="Amsterdam"></LAYER>
+<LAYER NAME="Rotterdam"></LAYER>
+</LAYER>
+<LAYER NAME="France"></LAYER>
+<LAYER NAME="Africa">
+<LAYER NAME="South Africa"></LAYER>
+<LAYER NAME="Ivory Coast"></LAYER>
+</LAYER>
+</BODY>
+</HTML>
+```
+
+### linkColor
+
+参见 `alinkColor`。
+
+### links
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+### 示例
+
+`document.links` 属性在浏览器为包含链接对象的文档构建对象模型时自动定义。你很少访问此属性，除非为了确定文档中链接对象的数量。
+
+### location
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| (✓) | ✓ | ✓ | ✓ | (✓) | (✓) | ✓ | ✓ | ✓ |
+
+### 示例
+
+列表 18-8 到 18-10 中的 HTML 文档创建了一个测试实验室，允许你在多框架环境中实验不同窗口和帧的 `document.URL` 属性。结果显示在表格中，并额外列出了 `document.title` 属性以帮助你识别所引用的文档。适用于获取 `window.location` 对象属性的相同安全限制也适用于从任何其他窗口或帧获取 `document.URL` 属性。
+
+> 列表 18-8：document.URL 属性读取框架
+
+```html
+<HTML>
+<HEAD>
+<TITLE>document.URL 阅读器</TITLE>
+</HEAD>
+<FRAMESET ROWS="60,40%">
+  <FRAME NAME="Frame1" SRC="1st18-10.htm">
+  <FRAME NAME="Frame2" SRC="1st18-09.htm">
+</FRAMESET>
+</HTML>
+```
+
+### 列表 18-9：document.URL 属性读取器
+
+```html
+<HTML>
+<HEAD>
+<TITLE>URL 属性读取器</TITLE>
+<SCRIPT LANGUAGE="JavaScript1.1">
+function fillTopFrame() {
+  var newURL = prompt("输入要在顶层帧中显示的文档 URL:", "");
+  if (newURL != null && newURL != "") {
+    top.frames[0].location = newURL;
+  }
+}
+function showloc(form, item) {
+  var windName = item.value;
+  var theRef = windName + ".document";
+  form.dloc.value = unescape(eval(theRef + ".URL"));
+  form.dtitle.value = unescape(eval(theRef + ".title"));
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+点击“Open URL”按钮在窗口的上帧中输入 HTML 文档的位置。
+<FORM>
+<INPUT TYPE="button" NAME="opener" VALUE="Open URL..." onclick="fillTopFrame()">
+</FORM>
+<FORM>
+选择窗口或帧查看每个文档属性值。
+<INPUT TYPE="radio" NAME="whichFrame" VALUE="parent" onclick="showloc(this.form, this)">父窗口
+<INPUT TYPE="radio" NAME="whichFrame" VALUE="top.frames[0]" onclick="showloc(this.form, this)">上帧
+<INPUT TYPE="radio" NAME="whichFrame" VALUE="top.frames[1]" onclick="showloc(this.form, this)">此帧
+<TABLE BORDER="2">
+<TR><TD ALIGN="RIGHT">document.URL:</TD><TD><TEXTAREA NAME="dloc" ROWS=30 WRAP="soft"></TEXTAREA></TD></TR>
+<TR><TD ALIGN="RIGHT">title:</TD><TD><TEXTAREA NAME="dtitle" ROWS=30 WRAP="soft"></TEXTAREA></TD></TR>
+</TABLE>
+</FORM>
+</BODY>
+</HTML>
+```
+
+### 列表 18-10：document.URL 占位符
+
+```html
+<HTML>
+<HEAD>
+<TITLE>占位符</TITLE>
+</HEAD>
+<BODY>
+初始。
+</BODY>
+</HTML>
+```
+
+### parentWindow
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | |
+
+### 示例
+
+证明 `parentWindow` 指向评估器（《JavaScript 圣经》第 13 章），请输入以下语句：
+
+```javascript
+document.parentWindow == self;
+```
+
+### protocol
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | |
+
+### 示例
+
+使用 `document.protocol` 属性，你会发现它显示文档的协议。
+
+### referrer
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | |
+
+### 示例
+
+此演示需要两个文档（以及 IE）来查看 `referrer` 属性如何显示用户来自的文档。
+
+## 列表 18-11：源文档
+
+```html
+<HTML>
+<HEAD>
+<TITLE>document.referrer 属性 1</TITLE>
+</HEAD>
+<BODY>
+<H1><A HREF="1812.html">访问我的文档</A></H1>
+</BODY>
+</HTML>
+```
+
+## 列表 18-12：检查 document.referrer
+
+```html
+<HTML>
+<HEAD>
+<TITLE>document.referrer 属性 2</TITLE>
+</HEAD>
+<BODY>
+<H1>
+<SCRIPT LANGUAGE="JavaScript">
+if (document.referrer.indexOf("1811.html") != -1) {
+  document.write("我的文档如何?");
+} else {
+  document.write("你好，感谢你的停留。");
+}
+</SCRIPT>
+</H1>
+</BODY>
+</HTML>
+```
+
+## 242 JavaScript 示例圣经：《JavaScript 圣经》必备伴侣
+
+### scripts
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | ✓ | ✓ | ✓ | ✓ |
+
+### 示例
+
+你可以对评估器（《JavaScript 圣经》第 13 章）中的 `document.scripts` 数组进行实验。例如，如果你在顶部字段输入以下语句，你可以看到评估页面上只有一个 `SCRIPT` 元素对象：
+
+```javascript
+document.scripts.length;
+```
+
+如果你想查看该孤立 `SCRIPT` 元素对象的所有属性，在底部字段输入以下语句：
+
+```javascript
+document.scripts[0];
+```
+
+属性中包括 `innerText` 和 `text`。如果你给每个属性赋值一个空字符串，脚本将从对象模型中擦除，但不会从浏览器中删除。脚本消失是因为在脚本加载后，它们被缓存在了对象模型之外。因此，如果你在顶部字段输入以下语句：
+
+```javascript
+document.scripts[0].text = "";
+```
+
+脚本内容从对象模型中消失，但随后点击“评估”和“列出属性”按钮（这些调用 `SCRIPT` 元素对象的函数）仍然有效。
+
+### selection
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | ✓ | ✓ | ✓ | ✓ |
+
+### 示例
+
+参见此书第 1 章的列表 15-30 和 15-39，查看 `document.selection` 属性在脚本控制的复制粘贴中的应用（仅限 IE/Windows）。
+
+### URL
+
+参见 `location`。
+
+### vlinkColor
+
+参见 `linkColor`。
+
+### width
+
+参见 `height`。
+
+### 方法
+
+#### captureEvents(eventTypeList)
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | ✓ | | | | | | |
+
+### 示例
+
+参考 NN4 窗口 `window.captureEvents()` 方法的示例（见本书第 2 章的列表 16-21），以查看如何捕获通往其他对象的事件。在示例中，你可以用 `document` 引用替换 `window` 引用，以查看文档版本的该方法如何工作，其工作方式与窗口版本相同。其他 NN4 事件方法也是如此的。
+
+#### close()
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+### 示例
+
+在尝试 `document.close()` 方法之前，请确保你已理解本章稍后描述的 `document.write()` 方法。之后，为该方法的示例单独准备一组三个文档（位于不同目录或文件夹中的列表 18-16 至 18-18）。在 `takePulse()` 函数注释中，注释掉 `document.close()` 语句，如下所示：
+
+```javascript
+msg += "<P>Make it a great day!</P></BODY></HTML>";
+parent.frames[1].document.write(msg);
+// parent.frames[1].document.close();
+```
+
+现在尝试在浏览器中打开这些页面。你会发现每次点击上方按钮都会在底部的框架中追加文本，而不会移除之前的文本。这是因为之前的布局流从未被关闭。文档认为你仍在向其写入内容。此外，如果没有正确关闭数据流，最后一行文本可能不会出现在最近写入的一批中。
+
+#### createAttribute("attributeName")
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | ✓ | | | | | |
+
+### 示例
+
+遗憾的是，NN6 中的 `setAttribute()` 方法不适用于通过 `createAttribute()` 方法生成的属性。这最终不会被修复，你可以在《The Evaluator》中尝试向示例元素添加属性。在此，你仍然可以创建一个属性并检查其属性。在顶部的文本框中输入以下文本：
+
+```javascript
+a = document.createAttribute("author");
+```
+
+现在在底部的文本框中输入 `a`，以检查 Attr 对象的属性。
+
+#### createElement("tagName")
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | ✓ | | ✓ | ✓ | ✓ | ✓ |
+
+### 示例
+
+《JavaScript 圣经》的第 15 章包含了大量 `document.createElement()` 方法的示例，这些方法以多种方式向文档添加或替换内容。参见本书第 1 章中的列表 15-10、15-21、15-22、15-28、15-29 和 15-31。
+
+#### createEventObject([eventObject])
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | ✓ |
+
+```javascript
+document.createEventObject();
+```
+
+## 第 4 章 + Document 和 Body 对象（第 18 章） 245
+
+### 示例
+
+参见《JavaScript 圣经》第 15 章中 `fireEvent()` 方法的讨论，了解在创建要在元素上触发的事件时遵循的示例。
+
+#### createStyleSheet(["URL", index])
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | ✓ | ✓ | ✓ | ✓ |
+
+### 示例
+
+列表 18-13 展示了如何向文档添加内部和外部样式表。对于内部添加，`addStyle(1)` 函数调用了 `document.createStyleSheet()` 并添加页面的 P 元素（IE5 不可用）。在 `addStyle(2)` 函数中，加载了一个外部文件。该文件包含两个规则：注意，通过为导入的样式表指定位置为 0，内部样式表的添加总会在其之后。因此，除非你只部署了外部样式表，否则 P 元素的红色文本将覆盖外部样式表的蓝色。如果你删除了 `addStyle(2)` 方法中 `createStyleSheet()` 方法的第二个参数，则外部样式表将追加到列表末尾。如果它是最后一个添加的样式，蓝色将占主导。
+
+## 列表 18-13：使用 document.createStyleSheet()
+
+```html
+<HTML>
+<HEAD>
+<TITLE>document.createStyleSheet()</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function addStyle(which) {
+  if (which == 1) {
+    document.createStyleSheet("font-size:16pt;color:red");
+  } else if (which == 2) {
+    var newStyle = document.createStyleSheet("external.css", 0);
+    newStyle.addRule("P", "color:blue");
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<H1>document.createStyleSheet()</H1>
+<HR>
+<FORM>
+<INPUT TYPE="button" VALUE="Add Internal" onclick="addStyle(1)">
+<INPUT TYPE="button" VALUE="Add External" onclick="addStyle(2)">
+</FORM>
+<H2>Section 1</H2>
+<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco nisi ut aliquip ex ea commodo consequat.</P>
+<H2>Section 2</H2>
+<P>Duis aute irure reprehenderit in voluptate velit esse dolore nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.</P>
+</BODY>
+</HTML>
+```
+
+#### createTextNode("text")
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | ✓ | | | ✓ | ✓ | ✓ |
+
+在《JavaScript 圣经》第 14 章和 15 章提供了 `createTextNode()` 方法的示例，你可以使用《The Evaluator》中的全局变量持有新创建的节点的引用，在顶部文本框中输入以下语句：
+
+```javascript
+a = document.createTextNode("Hello");
+```
+
+要查看插入效果，在顶部文本框中编辑以下语句以使用 `document.getElementById("myP").appendChild(a)`：
+
+```javascript
+document.getElementById("myP").appendChild(a);
+```
+
+单词“Hello”出现在页面下方段落的末尾。现在你可以通过 P 元素的引用或新创建节点的全局变量引用来修改节点的文本：
+
+```javascript
+document.getElementById("myP").lastChild.nodeValue = "Howdy";
+// 或
+a.nodeValue = "Howdy";
+```
+
+#### elementFromPoint(x, y)
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | ✓ | ✓ | ✓ | ✓ |
+
+列表 18-14 是一个包含许多不同类型元素的文档，每个元素都分配了一个 ID 属性。`document` 对象的 `onmouseover` 处理器调用一个函数，查找事件触发时鼠标悬在哪个元素上。注意事件坐标是 `event.clientX` 和 `event.clientY`，它们与它们的参考点使用相同的坐标系。当鼠标滑过每个元素时，其 ID 都会出现在页面上。在图 4-1 中，指针位于表格单元格内，其 ID 以粗体出现在第一段。某些元素（如 `BR` 和 `TR`）在文档中不占据空间，你无法让它们的 ID 显示。在典型的浏览器屏幕尺寸下，定位元素覆盖在段落元素的 ID 之上，以便查看 `elementFromPoint()` 方法如何处理重叠元素。如果你滚动页面，事件坐标和页面将保持同步。
+
+## document.elementFromPoint() 方法
+
+在页面上移动鼠标。鼠标指针的坐标当前位于一个 ID 为 'tdB2' 的元素之上。
+
+![](img/144de829a231bb2cbf5843e2f444fc0b_269_0.png)
+
+## 第 1 节
+
+Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. 这里有一个通过 `ea commodo consequat` 定位的元素。
+
+## 第 2 节
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est **um laborum**。
+
+图 4-1：显示位于事件屏幕位置的物体
+
+## 列表 18-14：使用 elementFromPoint() 方法
+
+```html
+<HTML>
+<HEAD>
+<TITLE>document.elementFromPoint() 方法</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function showElementUnderneath() {
+    var elem = document.elementFromPoint(event.clientX, event.clientY);
+    document.all.mySpan.innerText = elem.id;
+}
+document.onmouseover = showElementUnderneath;
+</SCRIPT>
+</HEAD>
+<BODY ID="myBody">
+<H1 ID="header">document.elementFromPoint() 方法</H1>
+<HR ID="myHR">
+<P ID="instructions">在页面上移动鼠标。鼠标指针的坐标当前位于一个元素<BR>其 ID 为：<SPAN ID="mySpan" STYLE="font-weight:bold"></SPAN></P>
+<FORM ID="myForm">
+<INPUT ID="myButton" TYPE="button" VALUE="Sample Button" ONCLICK="">&nbsp;
+</FORM>
+<TABLE BORDER="1" ID="myTable">
+<TR ID="tr1">
+  <TD ID="td_A1">单元格 A1</TD>
+  <TD ID="td_B1">单元格 B1</TD>
+</TR>
+<TR ID="tr2">
+  <TD ID="td_A2">单元格 A2</TD>
+  <TD ID="td_B2">单元格 B2</TD>
+</TR>
+</TABLE>
+<H2 ID="sec1">Section 1</H2>
+<P ID="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea ea commodo consequat.</P>
+<H2 ID="sec2">Section 2</H2>
+<P ID="p2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu eu nulla nulla pariatur. Excepteur sint occaecat cupid proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+<DIV ID="myDiv" STYLE="position:absolute; top:340; left:300; background-color:yellow">
+这里有一个定位的元素。
+</DIV>
+</BODY>
+</HTML>
+```
+
+## 第 4 章 Document 对象和 Body 对象（第 18 章） 249
+
+#### execCommand("commandName"[, UIFlag][, param])
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | ✓ | ✓ | ✓ | ✓ |
+
+### 示例
+
+你可以在《JavaScript 圣经》的第 19 章找到许多关于 TextRange 对象的 `execCommand()` 方法的示例。但如果你愿意，可以在 The Evaluator（《JavaScript 圣经》第 13 章）中尝试特定文档的命令。请在顶部框中尝试以下每个语句并点击 Evaluator：
+
+```javascript
+document.execCommand("Refresh");
+document.execCommand("SelectAll");
+document.execCommand("Unselect");
+```
+
+所有方法在 Results 框中均返回 true。
+
+因为在 The Evaluator 中评估语句的任何方式都会在评估发生前强制使主体取消选择，所以你不能以这种方式对以选择为对象的命令进行实验。
+
+#### getElementById("elementID")
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | ✓ | | | ✓ | ✓ | ✓ |
+
+### 示例
+
+你可以在全书中找到许多该方法的用法，但你可以通过在 The Evaluator（《JavaScript 圣经》第 13 章）中进行实验来更深入地观察它的工作原理。The Evaluator 中的许多元素都被分配了 ID，因此你可以使用该方法检查对象及其属性。在 The Evaluator 的顶部和底部文本字段中输入以下语句。顶部字段的结果是对象的引用；底部字段的结果是特定对象的属性列表。
+
+```javascript
+document.getElementById("myP");
+document.getElementById("myEM");
+document.getElementById("myTitle");
+document.getElementById("myScript");
+```
+
+正如你在结果中看到的，相比于 IE5，NN6 在顶部文本字段中对引用的 HTML 元素对象类型更加显式。但尽管如此，各个浏览器指向的是相同的对象。
+
+#### getElementsByName("elementName")
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | |
+
+### 示例
+
+
+
+你可以在全书中找到许多该方法的用法，但你可以通过在 The Evaluator IDs（《JavaScript Bible》第 13 章）中进行实验来更深入地观察它的工作原理。The Evaluator 中的许多元素都被分配了 ID，因此你可以使用该方法检查对象及其属性。在 The Evaluator 的顶部和底部文本字段中输入以下语句。顶部字段的结果是对象的引用；底部字段的结果是特定对象的属性列表。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+### 示例
+
+使用 Evaluator 测试 `getElementsByName()` 方法。页面上的所有元素都有与其相关的名称。在顶部字段输入以下语句并观察结果：
+
+```javascript
+document.getElementsByName("output")
+document.getElementsByName("speed")
+document.getElementsByName("speed")
+```
+
+## getSelection()
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+`Selection()` 提供了一种跨浏览器（但不支持 IE5）的方案来捕捉用户选择的文本。文本显示在 textarea 中。脚本使用浏览器检测来适应不同的方式。
+
+### 列表 18-15：捕捉选择
+
+```html
+<HTML>
+<HEAD>
+<TITLE>获取选择的文本</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+var isNav4 = navigator.appName == "Netscape" & parseInt(navigator.version) == 4
+var IE4Min = navigator.appName.indexOf("Microsoft") != -1 & parseInt(navigator.version) >= 4
+function showSelection() {
+  if (isNav4) {
+    document.forms[0].selectedText.value = document.selection()
+  } else if (IE4Min) {
+    if (document.selection) {
+      document.forms[0].selectedText.value = document.selection.createRange().text
+      event.cancelBubble() = true
+    }
+  }
+}
+if (isNav4) {
+document.onmouseup = showSelection
+}
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<h1>获取选择的文本</h1>
+<HR>
+<P>选择一些文本并查看 JavaScript 如何捕捉选择的内容：</P>
+<h2>第一条</h2>
+<P>国不得制定法律关于建立宗教，或禁止宗教自由自由；或剥夺言论、出版自由；或剥夺人民和平集会并向政府请愿寻求救济的权利。</P>
+<FORM>
+<TEXTAREA NAME="selectedText" ROWS=3 COLS=40 WRAP="virtual"></TEXTAREA>
+</FORM>
+</BODY>
+</HTML>
+```
+
+## open(["mimeType"], replace])
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | |
+
+### 示例
+
+你可以在在本章关于 `document.write()` 方法的讨论中，看到 `document.open()` 方法在为框架动态创建内容的方案中的示例。
+
+## queryCommand("commandName")
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | | | | ✓ | ✓ | |
+
+### 示例
+
+参见《JavaScript Bible》第 19 章中关于 TextRange 对象的这些方法的示例。
+
+```javascript
+document.queryCommandEnabled()
+```
+
+## recalc([allFlag])
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+## 示例
+
+你可以在列表 15-32（本书的第 1 章）中看到 `setExpression()` 方法的示例。在该示例中，依赖关系于当前时间与标准元素对象的属性之间。
+
+```javascript
+write("string1", ["string2" ... [, "stringn"])
+println("string1", ["string2" ... [, "stringn"])
+```
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | | | | | | ✓ | ✓ |
+
+## 示例
+
+列表 18-16 至 18-18 中的示例展示了关于使用 `document.write()` 或 `document.writeln()` 方法写入另一个框架的几个重要点。事实是，你可以将任何 HTML 代码写入另一个框架，而浏览器将其视为来自某处 HTML 文件的源代码。在示例中，我组合了一个完整的 HTML 文档，为了完整性包含了基础的 HTML 标签。
+
+> 列表 18-16：用于 document.write() 的框架集
+
+```html
+<HTML>
+<HEAD>
+<TITLE>写入到 doc</TITLE>
+</HEAD>
+<FRAMESET ROWS="50%,50%">
+<FRAME NAME="Frame1" SRC="1st18-18.htm">
+<FRAME NAME="Frame2" SRC="1st18-18.htm">
+</FRAMESET>
+</HTML>
+```
+
+```javascript
+document.write()
+```
+
+## 列表 18-17：document.write() 示例
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Document Write Controller</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function takePulse(form) {
+  var msg = "<HTML><HEAD><TITLE>On the fly with " + form.name.value + "</TITLE>";
+  msg += "<BODY COLOR='salmon'><h1>Good Day " + form.name.value + "</H1><HR>";
+  for (var i = 0; i < form.length; i++) {
+    if (form[i].checked) {
+      msg += form[i].value;
+      break;
+    }
+  }
+  msg += "<Make it a great day!<P></body></html>";
+  parent.Frame2.document.write(msg);
+  parent.Frame2.document.close();
+}
+function getTitle() {
+  alert("Lower document.title is now: " + parent.Frame2.document.title)
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+填写姓名，并选择那个人今天感觉如何。然后点击“Write To Below”（写入下方）在底部框架中查看结果。
+<FORM>
+输入你的名字：<INPUT TYPE="text" NAME="userName" VALUE="Dave"><P>
+你今天怎么样？ <INPUT TYPE="radio" NAME="how" VALUE="I">希望这种感觉一直持续。Checked 良好
+<INPUT TYPE="radio" NAME="how" VALUE="You may be on your way to feeling Swell">不错
+<INPUT TYPE="radio" NAME="how" VALUE="Things can only get better from here.">一般？<P>
+<INPUT TYPE="button" NAME="enter" VALUE="Write To Below" onclick="takePulse(this.form)">
+<HR>
+<INPUT TYPE="button" NAME="peek" VALUE="Check Lower Frame Title" onclick="getTitle()">
+</FORM>
+</BODY>
+</HTML>
+```
+
+## 列表 18-18：列表 18-16 的占位符
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Placeholder</TITLE>
+</HEAD>
+<BODY>
+</BODY>
+</HTML>
+```
+
+图 4-2 显示了由脚本写入的内部框架示例。
+
+![](img/144de829a231bb2cbf5843e2f444fc0b_276_0.png)
+
+**图 4-2：** 点击上方框架中的 Write To Below 按钮会导致脚本为底部框架组合并写入 HTML。
+
+另一个需要注意的点是，此示例根据用户输入自定义文档内容。这使得与 Web 页面交互的体验更具互动——尽管你在没有使用服务器任何 CGI 程序的情况下实现了这一点。我想强调的第三点是，通过 `document.write()` 方法在单独框架中创建的文档是一个通用文档对象。例如在示例中，如果在更改上方框架中的名称字段输入后重绘底部框架，文档的 `<TITLE>` 标签就会改变。如果你在更新底部框架后点击底部按钮，你会发现 `document.title` 属性确实已经更改，以反映写入浏览器的 `<TITLE>` 标签（NN4 除外，它在自然编写的文档中该属性上存在一个 bug）。你可以动态创建 JavaScript 对象的这一事实代表了 JavaScript 服务器端脚本（向用户传递信息）最强大的能力之一。如果你的想象力胜任，你会有很多可以利用的地方。注意，对于 NN，你可以轻松修改列表 18-17 将结果写入相同位置。
+
+## onStop
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+列表 18-16 至 18-18 中的示例展示了关于使用 `document.write()` 或 `document.writeln()` 方法写入另一个框架的几个重要点。事实是，你可以将任何 HTML 代码写入另一个框架，而浏览器将其视为来自某处 HTML 文件的源代码。在示例中，我组合了一个完整的 HTML 文档，为了完整性包含了基础的 HTML 标签。
+
+```javascript
+document.body.bgProperties = "fixed"
+```
+或者
+```javascript
+document.body.style.backgroundAttachment = "fixed"
+```
+
+使用样式表版本的额外好处是它在 NN6 中同样有效。
+
+```
+bottomMargin
+leftMargin
+rightMargin
+topMargin
+```
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ | ✓ |
+
+### 示例
+
+以下两个语句都会更改 IE4+ 中的默认左边距：
+
+```
+document.body.leftMargin = 30
+或者
+document.body.style.marginLeft = 30
+```
+
+### leftMargin
+
+查看 bottomMargin。
+
+### link
+
+查看 aLink。
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ | ✓ |
+
+### 示例
+
+要更改默认的换行行为，语句是：
+
+```
+document.body.noWrap = true
+```
+
+### noWrap
+
+查看 bottomMargin。
+
+### rightMargin
+
+查看 bottomMargin。
+
+## scroll
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+### 示例
+
+要更改默认的滚动条外观，语句是：
+
+```javascript
+document.body.scroll = "no"
+```
+
+## scrollLeft / scrollTop
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+### 示例
+
+列表 18-20 是针对 pageOffset 和 offsetY 属性的 NN 示例的 IE4+ 版本（第 2 章中的列表 16-13）。这些示例中关于语法的部分都是相同的，它用于获取指示文档在窗口中滚动了多少的值。
+
+> 列表 18-20：查看 scrollLeft 和 scrollTop 属性
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Master of all Windows</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function leftFrame() {
+  var output = "<HTML><BODY><H3>Body Scroll Values</H3><HR>\n"
+  output += "<FORM>body.scrollLeft:<INPUT TYPE='text' NAME='xOffset' SIZE=4><BR>\n"
+  output += "body.scrollTop:<INPUT TYPE='text' NAME='yOffset' SIZE=4><BR>\n"
+  output += "</FORM></BODY></HTML>";
+  return output
+}
+```
+
+```javascript
+document.body.scrollLeft
+```
+
+```javascript
+function rightFrame() {
+  var output = "<HTML><HEAD><SCRIPT LANGUAGE='JavaScript'>\n"
+  output += "function showOffFrames() {\n"
+  output += "parent.readout.document.forms[0].xoffset.value = " + \
+  "document.body.scrollLeft;\n"
+  output += "parent.readout.document.forms[0].yoffset.value = " + \
+  "document.body.scrollTop;\n"
+  output += "}\n\nshowOffFrames();\n"
+  output += "</SCRIPT></HEAD><H3>Content Page</H3>\n"
+  output += "<P>滚动此帧并点击表格边框来查看 " + \
+  "页面偏移 值。<BR><HR>\n"
+  output += "<TABLE BORDER=1 WIDTH=100>\n"
+  var oneRow = "<TR><TD>Cell 1</TD><TD>Cell 2</TD><TD>Cell 3</TD><TD>Cell 4</TD><TD>" + \
+  "Cell 5</TD></TR>\n"
+  for (var i = 1; i <= 30; i++) {
+    output += "<TR><TD>Row " + i + "</TD>" + oneRow + "</TR>\n"
+  }
+  output += "</TABLE></BODY></HTML>";
+  return output
+}
+</SCRIPT>
+</HEAD>
+<FRAMESET COLS="30%,70%">
+<FRAME NAME="readout" SRC="javascript:parent.leftFrame()">
+<FRAME NAME="display" SRC="javascript:parent.rightFrame()">
+</FRAMESET>
+</HTML>
+```
+
+### text
+
+查看 aLink。
+
+### topMargin
+
+查看 bottomMargin。
+
+### vLink
+
+查看 aLink。
+
+## Methods
+
+### createTextRange()
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+## 示例亮点
+
+- 许多访问者（包括本作者）对滚动 `MARQUEE` 元素的应用表示反感，因为它往往会分散访问者的注意力，而不是传递有意义的信息。但如果你坚持使用它，列表 19-3 展示了脚本如何控制多种行为。
+
+- 列表 19-4 让你查看 NN (W3C DOM) Range 如何处理文档节点层级中的边界点。
+
+- 正如列表 19-5 对 `Range.insertNode()` 方法的应用所示，在另一个节点的任意位置插入一个节点。
+
+- 遍历 `Range.selectNode()` 方法的步骤，查看如何设置范围以包含一个实体节点或列表。
+
+- 运行列表 19-8 查看 NN (W3C DOM) 如何为操作节点内的文本内容提供额外便利。列表还演示了 `try-catch` 错误处理。
+
+- 列表 19-10 显示了 IE4+/Windows `TextRange` 对象比较范围边界（列表 19-4 的 IE 版本）。
+
+- `TextRange` 对象提供了实用的文本搜索功能，这些功能在列表 19-11 中得到了演示。在此过程中，多个 `TextRange` 属性和方法得到了运用，包括在范围内使用书签。简单的撤销缓冲区增加了应用程序的用户友好性。
+
+# FONT Element 对象
+
+### 属性
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ | ✓ |
+
+## 示例
+
+列表 19-1 包含一个页面演示了三个 `FONT` 元素属性的变化：颜色（color）、字体（face）和大小（size）。在此过程中，你可以看到经济地使用 `setAttribute()` 方法来完成所有属性更改。该页面在所有浏览器中都能成功加载，但 SELECT 列表仅在 IE4+ 和 NN6 中对文本进行更改。
+
+一个 `P` 元素包含一个嵌套的 `FONT` 元素，该元素包含三个单词，这三个单词的外观由三个列表（select）控制。每个列表控制三个字体对象属性中的一个，它们的 `NAME` 属性被策略性地分配为属性的名称（正如你稍后看到的）。`OPTION` 元素字符串的 `VALUE` 属性被分配给各种属性。每个 `SELECT` 都调用相同的 `setFontAttr()` 函数，传递自身的引用，以便函数可以检查该元素的详细信息。
+
+`setFontAttr()` 函数的首要任务是确保只有能够将 `FONT` 元素视为对象的浏览器才能进入函数的核心。对 `document.all` 和 `myFONT` 元素的存在性测试阻止了所有旧浏览器更改字体特性。页面加载时，通过使用《JavaScript Bible》第 14 章中描述的规范化技术变体为 NN6 设置了 `document.all` 属性。
+
+对于配置的浏览器，`SELECT` 对象从传递给函数的 `value` 属性中提取字符串。如果进行了选择（意味着除了第一个空选项），则单个嵌套语句使用 `setAttribute()` 方法将值分配给与 `SELECT` 元素名称匹配的属性。IE/Mac 中的一个奇怪 Bug 导致在更改颜色属性时渲染的颜色不会改变。但设置值是有效的，通过证明其他两个属性中的任何一个可以证明。
+
+### 列表 19-1: 控制 FONT 对象属性
+
+```html
+<HTML>
+<HEAD>
+<TITLE>FONT Object Properties</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+// NN6 的 document.all 规范化技巧
+if (navigator.appName == "Netscape" && parseInt(navigator.appVersion) >= 5) {
+  document.all = document.getElementsByTagName("*");
+}
+
+// 一个函数完成所有！
+function setFontAttr(select) {
+  if (document.all && document.all.myFONT) {
+    var choice = select.options[select.selectedIndex].value
+    if (choice) {
+      document.all.myFONT.setAttribute(select.name, choice);
+    }
+  }
+}
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<H1>Font Object Properties</H1>
+<BR>
+<P>这看起来像是一个简单的句子，但 <FONT ID="myFONT">THESE THREE WORDS</FONT> 被一个 FONT 元素包含。</P>
+<FORM>
+Select a color:
+<SELECT NAME="color" onChange="setFontAttr(this)">
+<OPTION VALUE="red">Red</OPTION>
+<OPTION VALUE="green">Green</OPTION>
+<OPTION VALUE="#0000FF">Blue</OPTION>
+</SELECT>
+<BR>
+Select a face:
+<SELECT NAME="face" onChange="setFontAttr(this)">
+<OPTION VALUE="Helvetica">Helvetica</OPTION>
+<OPTION VALUE="Times">Times</OPTION>
+<OPTION VALUE="Comic MS, sans-serif">Comic MS, sans-serif</OPTION>
+<OPTION VALUE="Zaf Dingbats, serif">Zaf Dingbats, serif</OPTION>
+</SELECT>
+<BR>
+Select a size:
+<SELECT NAME="size" onChange="setFontAttr(this)">
+<OPTION VALUE="Default">Default</OPTION>
+<OPTION VALUE="1">Increase by 1</OPTION>
+<OPTION VALUE="-1">Decrease by 1</OPTION>
+<OPTION VALUE="7">Biggest</OPTION>
+</SELECT>
+</FORM>
+</BODY>
+</HTML>
+```
+
+# HR Element 对象
+
+### 属性
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ | ✓ |
+
+## 示例
+
+列表 19-2 包含一个页面演示了 `HR` 元素属性的变化。在此过程中，你可以看到经济地使用 `setAttribute()` 方法来完成所有属性更改。
+
+```javascript
+if (document.all && document.all.myHR) {
+  var choice = select.options[select.selectedIndex].value
+  if (choice) {
+    document.all.myHR.setAttribute(select.name, choice)
+  }
+}
+```
+
+```html
+</SCRIPT>
+</HEAD>
+<BODY>
+<H1>HR 对象属性</H1>
+<BR>
+<P>这里是你将要控制的 HR 元素：</P>
+<HR ID="myHR">
+<FORM>
+选择对齐方式：
+<SELECT NAME="align" onChange="setHRAttr(this)">
+  <OPTION VALUE="left">左对</OPTION>
+  <OPTION VALUE="center">居中</OPTION>
+  <OPTION VALUE="right">右对</OPTION>
+</SELECT>
+<BR>
+选择规则颜色（仅限 IE）：
+<SELECT NAME="color" onChange="setHRAttr(this)">
+  <OPTION VALUE="red">红色</OPTION>
+  <OPTION VALUE="green">绿色</OPTION>
+  <OPTION VALUE="blue">蓝色</OPTION>
+  <OPTION VALUE="#FAB072">某些十六进制三元值</OPTION>
+</SELECT>
+<BR>
+选择规则阴影：
+<SELECT NAME="noShade" onChange="setHRAttr(this)">
+  <OPTION VALUE="true">无阴影</OPTION>
+  <OPTION VALUE="false">有阴影</OPTION>
+</SELECT>
+<BR>
+选择规则高度：
+<SELECT NAME="size" onChange="setHRAttr(this)">
+  <OPTION VALUE="2">2（默认）</OPTION>
+  <OPTION VALUE="4">4 像素</OPTION>
+  <OPTION VALUE="10">10 像素</OPTION>
+</SELECT>
+<BR>
+选择规则宽度：
+<SELECT NAME="width" onChange="setHRAttr(this)">
+  <OPTION></OPTION>
+  <OPTION VALUE="100%">100%（默认）</OPTION>
+  <OPTION VALUE="80%">80%</OPTION>
+  <OPTION VALUE="300">300 像素</OPTION>
+</SELECT>
+</FORM>
+</BODY>
+</HTML>
+```
+
+### color
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ | ✓ |
+
+示例
+
+参见本章前面的代码列表 19-2，获取用于设置 `HR` 元素对象 `color` 属性的值示例。
+
+### noShade
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ | ✓ |
+
+示例
+
+参见本章前面的代码列表 19-2，获取用于设置 `HR` 元素对象 `noShade` 属性的值示例。由于与设置此属性相关的错误行为，调整示例中的属性会导致意料之外（且通常是不理想的）的后果。
+
+### size
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ | ✓ |
+
+示例
+
+参见本章前面的代码列表 19-2，获取用于设置 `HR` 元素对象 `size` 属性的值示例。
+
+### width
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ | ✓ |
+
+示例
+
+参见本章前面的 19-2，获取用于设置 `HR` 元素对象 `width` 属性的值示例。
+
+# MARQUEE 元素对象
+
+### 属性
+
+### behavior
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ | |
+
+示例
+
+代码列表 19-3 包含一个演示了几个 `MARQUEE` 元素属性变化的页面：behavior、direction、scrollAmount 和 scrollDelay。此页面和脚本仅适用于 IE4+。有关属性设置的详情，请参见代码列表 19-1 的描述。
+
+### 代码列表 19-3：控制 MARQUEE 对象属性
+
+```html
+<HTML>
+<HEAD>
+<TITLE>MARQUEE 对象属性</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function setMARQUEEAttr(select) {
+  if (document.all && document.all.myMARQUEE) {
+    var choice = select.options[select.selectedIndex].value
+    if (choice) {
+      document.all.myMARQUEE.setAttribute(select.name, choice)
+    }
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<H1>MARQUEE 对象属性</H1>
+<BR>
+<MARQUEE ID="myMARQUEE" WIDTH=400 HEIGHT=24>这是将进行滚动的 MARQUEE 元素...</MARQUEE>
+<FORM>
+<INPUT TYPE="button" VALUE="Start Marquee" onclick="document.all.myMARQUEE.start()">
+<INPUT TYPE="button" VALUE="Stop Marquee" onclick="document.all.myMARQUEE.stop()">
+<BR>
+选择一种行为：
+<SELECT NAME="behavior" onChange="setMARQUEEAttr(this)">
+  <OPTION></OPTION>
+  <OPTION VALUE="alternate">交替</OPTION>
+  <OPTION VALUE="scroll">滚动</OPTION>
+  <OPTION VALUE="slide">滑动</OPTION>
+</SELECT>
+<BR>
+选择背景颜色：
+<SELECT NAME="bgColor" onChange="setMARQUEEAttr(this)">
+  <OPTION></OPTION>
+  <OPTION VALUE="red">红色</OPTION>
+  <OPTION VALUE="green">绿色</OPTION>
+  <OPTION VALUE="blue">蓝色</OPTION>
+  <OPTION VALUE="#FAB072">某些十六进制三元值</OPTION>
+</SELECT>
+<BR>
+选择规则阴影：
+<SELECT NAME="noShade" onChange="setMARQUEEAttr(this)">
+  <OPTION VALUE="true">无阴影</OPTION>
+  <OPTION VALUE="false">有阴影</OPTION>
+</SELECT>
+<BR>
+选择规则高度：
+<SELECT NAME="size" onChange="setMARQUEEAttr(this)">
+  <OPTION VALUE="2">2（默认）</OPTION>
+  <OPTION VALUE="4">4 像素</OPTION>
+  <OPTION VALUE="10">10 像素</OPTION>
+</SELECT>
+<BR>
+选择规则宽度：
+<SELECT NAME="width" onChange="setMARQUEEAttr(this)">
+  <OPTION></OPTION>
+  <OPTION VALUE="100%">100%（默认）</OPTION>
+</SELECT>
+</FORM>
+</BODY>
+</HTML>
+```
+
+# Range 对象
+
+### 属性
+
+### endOffset / startOffset
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | | | |
+
+## 示例
+
+使用评估器（《JavaScript Bible》第 13 章）来实验 `endOffset` 和 `startOffset` 属性，遵循你刚才在描述中看到的类似路径。刷新页面并在顶部文本框中输入以下语句，为全局变量分配一个新范围：
+
+```javascript
+a = document.createRange()
+```
+
+现在将范围设置为包含 `myEM` 元素，并将起点向外移动到 `myP` 元素文本节点的一个字符：
+
+```javascript
+a.selectNode(document.getElementById("myEM"))
+a.setStart(document.getElementById("myP").firstChild, 7)
+```
+
+检查选择范围起点和终点的容器节点：
+
+```javascript
+a.startContainer.nodeType
+a.endContainer.nodeType
+```
+
+`startContainer` 节点类型为 3（文本节点），而 `endContainer` 节点类型为 1（元素）。现在检查选择起点和终点的偏移量：
+
+```javascript
+a.startOffset
+a.endOffset
+```
+
+### 方法
+
+#### cloneContents() / cloneRange()
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | | | |
+
+## 示例
+
+当 Netscape 在 NN6 浏览器中配备 `cloneContents()` 方法时，使用评估器（《JavaScript Bible》第 13 章）查看该方法。首先创建一个包含 `myP` 元素文本的新范围对象。
+
+```javascript
+a = document.createRange()
+a.selectNode(document.getElementById("myP"))
+```
+
+接下来，复制原始范围并将副本保存在变量 `b` 中：
+
+```javascript
+b = a.cloneContents()
+```
+
+移动原始范围，使其成为 body 末尾插入点，首先将其扩展到包含整个 body，然后将其折叠到末尾
+
+```javascript
+a.selectNode(document.body)
+a.collapse(false)
+```
+
+现在，将副本插入到 body 的最末端：
+
+```javascript
+a.insertNode(b)
+```
+
+如果你滚动到页面底部，将看到文本的副本。
+
+查看本章稍后关于 `compareBoundaryPoints()` 方法的描述，以查看 `cloneRange()` 方法的示例。
+
+#### collapse([startBoolean])
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | | | |
+
+## 示例
+
+查看列表 19-11（在本章中）和 15-14（在本书第 1 章）以查看 `collapse()` 方法的作用（尽管使用的是 IE `TextRange` 对象）。
+
+![](img/144de829a231bb2cbf5843e2f444fc0b_300_0.png)
+
+#### compareBoundaryPoints(typeInteger, sourceRangeRef)
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | | | |
+
+## 示例
+
+列表渲染的页面允许你在 NN6 中实验文本范围比较。底部段落在页面加载（在 `init()` 函数中）后被分配了一个嵌套文本节点的 `SPAN` 元素。该固定范围成为你在段落中选择文本时的可靠参考点。
+
+值为 0。
+
+其他需要包含的选择：
+
+- 起点和终点都在内部的文本
+- 起点和终点都在外部的文本
+- 起点和终点精确匹配的文本
+
+研究 `compareBoundaryPoints()` 的返回值看看它是如何工作的，从选择第一个单词开始。
+
+#### createContextualFragment("text")
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | | | |
+
+## 示例
+
+使用 The Evaluator（《JavaScript Bible》第 13 章）创建一个文档片段，并用该片段替换现有的文档树节点。首先创建范围和片段：
+
+```javascript
+a = document.createRange()
+a.selectNode(document.body)
+b = a.createContextualFragment("<SPAN STYLE='font-size:22pt'>a bunch of </SPAN>")
+```
+
+该片段包含一个嵌套在内部的文本节点内的 `SPAN` 元素。此时，你可以通过输入底部的文本框来检查文档片段的属性。
+
+要用此新片段替换页面上的 `myEM` 元素，请对编码的 `myP` 元素使用 `replaceChild()`：
+
+```javascript
+document.getElementById("myP").replaceChild(b, document.getElementById("myEM"))
+```
+
+该片段现在变成了 `myP` 元素的合法子节点，可以像文档树中的任何节点一样被引用。例如，如果你在 The Evaluator 的顶部文本框中输入以下语句，可以获取新 `SPAN` 元素内部文本节点的副本：
+
+```javascript
+document.getElementById("myP").childNodes[1].firstChild.nodeValue
+```
+
+#### deleteContents()
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | | | |
+
+### 示例
+
+使用 The Evaluator（《JavaScript Bible》第 13 章）尝试删除文本节点和完整元素节点的内容。首先为 `myEM` 元素内部的文本节点创建一个文本范围：
+
+```javascript
+a = document.createRange()
+a.setStart(document.getElementById("myEM").firstChild, 0)
+a.setEnd(document.getElementById("myEM").lastChild, document.getElementById("myEM").lastChild.length)
+```
+
+通过将范围输入底部的文本框进行验证并检查其属性。两个容器都是文本节点（它们恰好是同一个文本节点），偏移量通过字符属性测量。
+
+删除范围的内容：
+
+```javascript
+a.deleteContents()
+```
+
+树中斜体的 "all" 消失了，但 `myEM` 元素仍然存在。为了证明这一点，在元素内部放入一些新文本：
+
+```javascript
+document.getElementById("myEM").innerHTML = "a band of "
+```
+
+`EM` 元素的斜体样式应用于文本，正如预期的那样。
+
+接下来，调整范围边界以包含 `myEM` 元素标签，如下：
+
+```javascript
+a.selectNode(document.getElementById("myEM"))
+```
+
+通过输入底部的文本框检查 Range 对象的属性。容器节点是包裹 `EM` 元素的 `P` 元素；偏移量以节点为单位测量。
+
+删除范围的内容：
+
+```javascript
+a.deleteContents()
+```
+
+不仅斜体消失了，`myEM` 元素也消失了。`myP` 元素现在有一个子节点，即内部的文本节点。在 The Evaluator 顶部文本框中的输入验证了这一事实：
+
+```javascript
+document.getElementById("myP").childNodes.length
+document.getElementById("myP").childNodes[0].nodeValue
+```
+
+如果你在 NN6 的早期版本中尝试此示例，`deleteContents()` 方法还会删除 `myEM` 元素之后的文本节点。这是一个 Bug，表明该方法在文本节点上效果最好，而不是元素。
+
+#### extractContents()
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | | | |
+
+### 示例
+
+当 Netscape 为 NN6 浏览器配备 `extractContents()` 方法时，使用 The Evaluator（《JavaScript Bible》第 13 章）查看该方法的工作原理。通过创建一个包含 `myParagraph` 元素文本的新范围对象。
+
+```javascript
+a = document.createRange()
+a.selectNode(document.getElementById("myP"))
+```
+
+接下来，提取原始范围的内容并将副本保存在变量 `b` 中：
+
+```javascript
+b = a.extractContents()
+```
+
+移动原始范围使其成为 body 末尾的插入点，首先将其扩展到包含整个 body，然后折叠到末尾
+
+```javascript
+a.selectNode(document.body)
+a.collapse(false)
+```
+
+现在，将提取的片段插入到 body 的最末：
+
+```javascript
+a.insertNode(b)
+```
+
+如果你滚动到页面底部，你会看到文本的副本。
+
+#### insertNode(nodeReference)
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | | | |
+
+### 示例
+
+列表 19-5 展示了如何将节点插入范围。
+
+## 列表 19-5: 将节点插入范围
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Selection Object</TITLE>
+<SCRIPT>
+var undoBuffer = {rng:null, txt:""};
+function insertSelection() {
+  var sel, rng, netRng, newText
+  try {
+    sel = window.getSelection();
+    if (sel.isCollapsed)
+      rng = sel.getRangeAt(0);
+    netRng = sel.getRangeAt(0);
+    newText = document.createTextNode(undoBuffer.txt.toUpperCase());
+    netRng.insertNode(newText);
+  } catch (err) {
+    alert("Range services are not implemented.");
+  }
+}
+function undoConversion() {
+  var rng, oldText
+  if (undoBuffer.rng) {
+    rng = document.createRange();
+    rng.setStart(undoBuffer.rng.startParent, undoBuffer.rng.startOffset);
+    rng.setEnd(undoBuffer.rng.endParent, undoBuffer.rng.endOffset);
+    oldText = document.createTextNode(undoBuffer.txt);
+    rng.insertNode(oldText);
+    undoBuffer.rng = null;
+    undoBuffer.txt = "";
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<H1 id="H1_1">Selection Object</H1>
+<HR>
+<P id="P_1" onMouseUp="convertSelection()">这里包含可以选择的文本。选择将被删除并替换为文本的大写版本。</P>
+<button onclick="undoConversion()">Undo Last</button>
+<button onclick="location.reload(true)">Start Over</button>
+</BODY>
+</HTML>
+```
+
+#### isValidFragment("HTMLText")
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | | | |
+
+### 示例
+
+你可以在 The Evaluator（《JavaScript Bible》第 13 章）中尝试任何喜欢的字符串的有效性。然而，你会发现对象模型可以使用任何字符串创建文档片段。例如，如果你尝试用一些随机文本和一个结束标签创建文档片段，该文档片段将由一个文本节点和一个由结束标签指示类型的元素节点组成。
+
+#### selectNode(nodeReference) / selectNodeContents(nodeReference)
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | | | |
+
+### 示例
+
+设置范围边界以包含 `myP` 元素节点：
+
+```javascript
+a.selectNode(document.getElementById("myP"))
+```
+
+在底部的文本框中输入以查看范围的属性。注意，由于范围选中了整个段落节点，范围的起始点和终点的容器是页面的 `BODY` 元素（`myP` 元素的父元素）。
+
+现在更改范围，使其仅包含 `myP` 元素的内容：
+
+```javascript
+a.selectNodeContents(document.getElementById("myP"))
+```
+
+点击“列表属性”查看范围的当前属性。范围边界点的容器是持有该元素内容的 `P` 元素。
+
+#### setEnd(nodeReference, offset) / setStart(nodeReference, offset)
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | | | |
+
+## 示例
+
+使用“评估器”（The Evaluator，JavaScript 圣经第 13 章）尝试 `setStart()` 和 `setEnd()` 方法。开始创建一个新的范围对象。
+
+```javascript
+a = document.createRange()
+```
+
+对于第一个范围，设置起始点和终点以包含 `myP` 元素内部的第二个节点（`myEM` 元素）：
+
+```javascript
+a.setStart(document.getElementById("myP"), 1)
+a.setEnd(document.getElementById("myP"), 2)
+```
+
+范围包含的文本由单词 "all" 以及 `myEM` 元素包含的后续空格组成。通过将该语句输入到顶部文本框来证明这一点：
+
+```javascript
+a.toString()
+```
+
+如果你点击 "all" 单词右侧的 Result框，你会发现结果包含该尾随空格。然而，如果你检查范围的属性（在底部文本框中输入），你会发现范围实际上被定义为从 `myEM` 元素开始，并在其之后结束。
+
+接下来，将范围的起始点调整为 `myP` 元素第一个文本节点的字符位置：
+
+```javascript
+a.setStart(document.getElementById("myP").firstChild, 11)
+```
+
+点击“列表属性”按钮可以发现范围的 `startContainer` 属性是文本，而 `startOffset` 测量的是字符位置。然而，所有边界属性都没有改变。再次在顶部框输入 `a.toString()`，可以看到范围包含了来自 `myP` 元素内部的两个节点的文本。
+
+你可以通过将起始点和终点设置为页面上的其他元素和文本节点来继续实验。在每次调整后，验证范围对象的属性及其包含的文本（通过 `a.toString()`）。
+
+#### setEndAfter(nodeReference) / setEndBefore(nodeReference) / setStartAfter(nodeReference) / setStartBefore(nodeReference)
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | | | |
+
+## 示例
+
+使用“评估器”（The Evaluator，JavaScript 圣经第 13 章）尝试所有四个方法。通过创建一个新的范围对象：
+
+```javascript
+a = document.createRange()
+```
+
+对于第一个范围，设置起始点和终点以包含 `myP` 元素内部的 `myEM` 元素：
+
+```javascript
+a.setStartBefore(document.getElementById("myEM"))
+a.setEndAfter(document.getElementById("myEM"))
+```
+
+范围包含的文本是单词 "all" 以及 `myEM` 元素包含的尾随空格。通过向顶部文本框输入以下语句来证明这一点：
+
+```javascript
+a.toString()
+```
+
+接下来，将范围的起始点调整为 `myP` 元素第一个文本节点的开头：
+
+```javascript
+a.setStartBefore(document.getElementById("myP").firstChild)
+```
+
+在底部文本框中输入 `a`，你会看到范围的 `startParent` 属性是 `P` 元素，而 `endProperty` 属性指向 `EM` 元素。
+
+你可以通过将起始点和终点设置为页面上其他元素和文本节点之前或之后来继续实验。在每次调整后，验证范围对象的属性及其包含的文本（通过 `a.toString()`)。
+
+#### surroundContents(nodeReference)
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | | | |
+
+## 示例
+
+列表 19-6 依赖于 NN6 第一个版本未实现的选取和 Range 对象功能，展示了 `surroundContents()` 方法如何将范围封装在新元素内部。页面加载时，全局变量 `newSpan` 存储了用作容器元素的元素。当你在两个段落中的一个选取文本时，选取会被转换为范围。然后 `surroundContents()` 方法用 `newSpan` 元素封装该范围。由于 `span` 元素具有类 `hil`，该元素及其内容将获取该类选择器的样式。
+
+## 列表 19-6：使用 Range.surroundContents() 方法
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Range.surroundContents() 方法</TITLE>
+<STYLE TYPE="text/css">
+.hilite{background-color:yellow; color:red; font-weight:bold}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+var newSpan = document.createElement("SPAN")
+newSpan.className = "hilite"
+function highlightSelection() {
+  var sel, rng;
+  try {
+    sel = window.getSelection();
+    if (!sel.isCollapsed) {
+      rng = sel.getRangeAt(0);
+      rng.surroundContents(newSpan)
+    }
+  } catch(err) {
+    alert("Range 对象尚未在此浏览器中实现。")
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<h1>Range.surroundContents() 方法</h1>
+<p onmouseup="highlightSelection()">这些段落是可以选取的文本。</p>
+</BODY>
+</HTML>
+```
+
+#### toString()
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | | | |
+
+## 示例
+
+使用“评估器”（The Evaluator，JavaScript 圣经第 13 章）查看 `toString()` 方法的结果。将以下序列输入到文本框：
+
+```javascript
+a = document.createRange()
+a.selectNodeContents(document.getElementById("myP"))
+```
+
+如果你只在文本框中输入 `a`，你会看到范围的内容，但不要被骗了。将范围对象赋值给文本框会强制评估在创建新实例时的任何表达式。
+
+# selection Object
+
+### 属性
+
+#### type
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+## 示例
+
+列表 19-7 展示了选取对象的多种功能。当你选中取消选取按钮时，可以在取消选取前后看到 `selection.type` 属性的值（在状态栏中）。在取消选取后，该属性返回 `None`。
+
+## 列表 19-7：使用 document.selection 对象
+
+```html
+<HTML>
+<HEAD>
+<TITLE>selection Object</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function processSelection() {
+  if (document.choices.process[0].checked) {
+    status = "Selection is type: " + document.selection.type
+    setTimeout(emptySelection, 2000)
+  } else if (document.choices.process[1].checked) {
+    document.selection.clear();
+  }
+}
+function emptySelection() {
+  document.selection.empty();
+  status = "Selection is type: " + document.selection.type
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<h1>IE selection Object</h1>
+<HR>
+<FORM NAME="choices">
+<INPUT TYPE="radio" NAME="process" CHECKED>两秒后取消<BR>
+<INPUT TYPE="radio" NAME="process">删除选中的文本。
+</FORM>
+<p onMouseUp="processSelection()">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco nisi ut aliquip ex ea consequat. Duis aut irure dolor in reprehenderit in voluptate velit esseit cillum dolore eu fugiat nulla pariatur.</p>
+</BODY>
+</HTML>
+```
+
+### 方法
+
+#### clear()
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ | |
+
+## 示例
+
+查看本章节前面的列表 19-7 以查看 `selection.clear()` 方法的作用。
+
+#### createRange()
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+## 示例
+
+查看列表 15-36 和 15-45 以查看 `selection.createRange()` 方法将用户选择转换为文本范围。
+
+#### empty()
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+## 示例
+
+查看本章节前面的列表 19-7 以查看 `selection.empty()` 方法的作用。
+
+# Text 和 TextNode 对象
+
+### 属性
+
+#### data
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | | ✓ | ✓ |
+
+## 示例
+
+在用于文本替换脚本的 `nodeValue` 属性示例（见本书第 1 章）中，你可以用 `data` 属性替换 `nodeValue` 来实现相同的结果。
+
+![](img/144de829a231bb2cbf5843e2f444fc0b_314_0.png)
+
+### 方法
+
+#### appendData("text") / deleteData(offset, count) / insertData(offset, "text") / replaceData(offset, count, "text") / substringData(offset, count)
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | | | |
+
+## 示例
+
+列表 19-8 创建的页面是一个运行中的实验室，你可以用它实验 NN6+ 中的五个与数据相关的方法。调用这些方法的文本节点是 `P` 元素中的一个简单句子。每个方法都有自己的可点击按钮，后面跟着两个或三个文本框，你在其中输入方法参数的值。不要被列表的长度所吓。每个方法的操作都局限于自身的函数，而且相当简单。
+
+每个与数据相关的方法都会抛出不同种类的异常。为了优雅地处理这些异常，方法调用被封装在 `try/catch` 结构中。对所有捕获的错误异常进行检查，并向用户自由显示警告消息。关于 W3 DOM 兼容浏览器中 `try/catch` 方法处理错误的详情，请参见《JavaScript Bible》第 39 章。
+
+## 列表 19-8：Text 对象数据方法实验室
+
+```html
+<HTML>
+<HEAD>
+<TITLE>W3C Text 对象的数据方法</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function doAppend(form) {
+  var node = document.getElementById("myP").firstChild
+  var newString = form.appendStr.value
+  try {
+    node.appendData(newString)
+  } catch(err) {
+    handleError(err)
+  }
+}
+function doDelete(form) {
+  var node = document.getElementById("myP").firstChild
+  var offset = form.deleteOffset.value
+  var count = form.deleteCount.value
+  try {
+    node.deleteData(offset, count)
+  } catch(err) {
+    handleError(err)
+  }
+}
+function doInsert(form) {
+  var node = document.getElementById("myP").firstChild
+  var offset = form.insertOffset.value
+  var newString = form.insertStr.value
+  try {
+    node.insertData(offset, newString)
+  } catch(err) {
+    handleError(err)
+  }
+}
+function doReplace(form) {
+  var node = document.getElementById("myP").firstChild
+  var offset = form.replaceOffset.value
+  var count = form.replaceCount.value
+  var newString = form.replaceStr.value
+  try {
+    node.replaceData(offset, count, newString)
+  } catch(err) {
+    handleError(err)
+  }
+}
+function showSubString(form) {
+  var node = document.getElementById("myP").firstChild
+  var offset = form.substrOffset.value
+  var count = form.substrCount.value
+  try {
+    alert(node.substringData(offset, count))
+  } catch(err) {
+    handleError(err)
+  }
+}
+// 这些方法的错误处理程序
+function handleError(err) {
+  switch (err.name) {
+    case "NS_ERROR_DOM_INDEX_SIZE_ERROR":
+      alert("偏移量数字超出允许范围.")
+      break
+    case "NS_ERROR_DOM_NOT_NUMBER_ERROR":
+      alert("确保每个数字条目都是有效的数字。")
+      break
+    default:
+      alert("双检查你的文本框输入。")
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<h1>W3C Text 对象的数据方法</h1>
+<HR>
+<P id="myP" style="font-weight:bold;text-align:center">我叫了自己，变成了 Pip。</P>
+<FORM>
+<INPUT type="button" onclick="doAppend(this.form)" value="appendData()">
+<input type="text" name="appendStr" size="30">
+<INPUT type="button" onclick="doDelete(this.form)" value="deleteData()">
+<input type="text" name="deleteOffset" size="3">
+<input type="text" name="deleteCount" size="3">
+<INPUT type="button" onclick="doInsert(this.form)" value="insertData()">
+<input type="text" name="insertOffset" size="3">
+<input type="text" name="insertStr" size="30">
+<INPUT type="button" onclick="doReplace(this.form)" value="replaceData()">
+<input type="text" name="replaceOffset" size="3">
+<input type="text" name="replaceCount" size="3">
+<input type="text" name="replaceStr" size="30">
+<INPUT type="button" onclick="showSubString(this.form)" value="substringData()">
+<input type="text" name="substrOffset" size="3">
+<input type="text" name="substrCount" size="3">
+</FORM>
+</BODY>
+</HTML>
+```
+
+#### splitText(offset)
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | | ✓ | ✓ |
+
+## 示例
+
+使用 Evaluator（《JavaScript Bible》中的第 13 章）查看 `splitText()` 方法的作用。首先验证该元素是否有一个子节点，以及其 `nodeValue` 是否为 "all"：
+
+```javascript
+document.getElementById("myEM").childNodes.length
+document.getElementById("myEM").firstChild.nodeValue
+```
+
+接下来，在第一个字符之后将文本节点拆分为两部分：
+
+```javascript
+document.getElementById("myEM").firstChild.splitText(1)
+```
+
+现在元素内部有两个文本节点：
+
+```javascript
+document.getElementById("myEM").childNodes.length
+```
+
+每个文本节点包含其原始文本的划分：
+
+```javascript
+document.getElementById("myEM").firstChild.nodeValue
+```
+
+如果你使用 NN6，现在将文本节点合并：
+
+```javascript
+document.getElementById("myEM").normalize()
+```
+
+在这些执行期间，渲染的文本没有变化。
+
+# TextRange 对象
+
+### 属性
+
+#### boundingHeight / boundingLeft / boundingTop / boundingWidth / offsetLeft / offsetTop
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+## 示例
+
+列表 19-9 提供了一个简单的场地，用于探索 `TextRange` 对象的四个边界属性（两个偏移属性）。当你选择段落时，六个属性都会显示在表中。通过 `onResize` 处理程序，这些值也会更新。
+
+注意，例如，如果你只是点击段落而不拖动，`boundingWidth` 将显示为 0。这种操作相当于一个插入点。
+
+## 列表 19-9：探索边界 TextRange 属性
+
+```html
+<HTML>
+<HEAD>
+<TITLE>TextRange 对象维度属性</TITLE>
+<STYLE TYPE="text/css">
+TD {text-align:center;}
+.propName {font-family: Courier, monospace}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+function setAndShowRangeData() {
+  var range = document.selection.createRange();
+  B1.innerText = range.boundingHeight
+  B2.innerText = range.boundingWidth
+  B3.innerText = range.boundingTop
+  B4.innerText = range.boundingLeft
+  B5.innerText = range.offsetTop
+  B6.innerText = range.offsetLeft
+}
+</SCRIPT>
+</HEAD>
+<BODY onResize="setAndShowRangeData()">
+<h1>TextRange 对象维度属性</h1>
+<HR>
+<P>选择段落中的文本并观察为选择创建的 TextRange 的“边界”属性值。</P>
+<TABLE ID="results" BORDER=1 CELLSPACING=2>
+<TR><TH>Property</TH><TH>Value</TH></TR>
+<TR>
+<TD class="propName">boundingHeight</TD>
+<TD class="count" ID="B1">&nbsp;</TD>
+</TR>
+<TR>
+<TD class="propName">boundingWidth</TD>
+<TD class="count" ID="B2">&nbsp;</TD>
+</TR>
+<TR>
+<TD class="propName">boundingTop</TD>
+<TD class="count" ID="B3">&nbsp;</TD>
+</TR>
+<TR>
+<TD class="propName">boundingLeft</TD>
+<TD class="count" ID="B4">&nbsp;</TD>
+</TR>
+<TR>
+<TD class="propName">offsetTop</TD>
+<TD class="count" ID="B5">&nbsp;</TD>
+</TR>
+<TR>
+<TD class="propName">offsetLeft</TD>
+<TD class="count" ID="B6">&nbsp;</TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>
+```
+
+
+
+## 第 5 章 Body 对象（第 19 章）
+
+### htmlText
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+#### 示例
+使用评估器（《JavaScript 圣经》第 13 章）来调查 `htmlText` 属性返回的值。使用顶部的文本框输入以下语句，并将值存储在结果框中。
+
+- 首先，为整个正文创建一个 TextRange 对象，并将范围存储在局部变量 `a` 中：
+- `a = document.body.createRange()`
+- 接下来，使用 `findText()` 方法设置单词 "all" 周围的文本范围的起点和终点，该单词是 `myP` 段落内部的一个 `EM` 元素：
+- `a.findText("all")`
+
+如果找到文本且文本范围调整为包含该文本（参见 `findText()` 方法），则该方法返回 `true`。要证明范围的文本确实如你所想的那样，请检查范围的 `text` 属性：
+
+由于文本范围包含了元素的所有文本，`htmlText` 属性也包含了元素的标签：
+
+```javascript
+a.htmlText
+```
+
+如果你想通过查找其他文本块并同时查看文本和 `htmlText` 来实验，首先使用以下语句将范围恢复为包含整个正文：
+`a.expand("textEdit")`
+
+你可以在本章的稍后部分阅读关于 `expand()` 方法的内容。在其他测试中，使用 `findText()` 将范围设置为 "for all" 和 "for al."。然后查看 `htmlText` 属性如何暴露 `EM` 的标签。
+
+### text
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | | | | | | | | |
+
+#### 示例
+参见本章稍后的代码列表 19-11 中的 `findText()` 方法，查看如何使用 `text` 属性来执行搜索并替换函数中的替换操作。
+
+### 方法
+
+#### collapse([startBoolean])
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | | | | | | | | |
+
+#### 示例
+参见代码列表 19-11（在本章中）和 15-14（本书的第 1 章）以查看 `collapse()` 方法的工作原理。
+
+#### compareEndpoints("type", rangeRef)
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | | | | | | | | | |
+
+#### 示例
+代码列表 19-10 渲染的页面允许你对文本范围比较进行实验。底部段包含一个 `SPAN` 元素，在页面加载后（在 `init()` 函数中），其文本被分配了一个 TextRange 对象。当你在段落中选择文本时，这个固定范围就成为了你一个固定的参考点：
+
+```javascript
+Range.compareEndpoints()
+```
+
+在你进行选择后，所有四个版本的 `compareEndpoints()` 方法都会运行，将固定范围的起点和终点与你的选择进行比较。其中一个结果表格显示了 `compareEndpoints()` 方法返回的行值，而第三列将结果转换为通俗的语言。
+
+要查看此页面是如何工作的，请选择固定文本范围的第一个单词（双击该单词）。你可以看到两个范围的起始位置是相同的，因为返回值为 0。由于所有 `compareEndpoints()` 方法调用都是针对固定文本的，因此所有比较都从该范围的起点开始。`StartToEnd` 参数表格的第一行表示，固定范围的起点在选择的终点之前，产生返回值 -1。
+
+其他包含的选择包括：
+
+- 起于固定范围之前且结束在范围内部的文本
+- 起于固定范围内部且结束在范围之外的文本
+- 精确在固定范围边界开始并结束的文本
+- 在固定范围之前开始并结束的文本
+- 在固定范围之后开始的文本
+
+研究返回的值和通俗语言的结果，查看它们如何与你所做的选择保持一致。
+
+代码列表 19-10：compareEndpoints() 方法实验
+
+```html
+<HTML>
+<HEAD>
+<TITLE>TextRange.compareEndpoints() Method</TITLE>
+<STYLE TYPE="text/css">
+TD {text-align:center;}
+.prop {text-align:center;}
+</STYLE>
+</HEAD>
+<BODY>
+...
+</BODY>
+</HTML>
+```
+
+#### execCommand("commandName", UIFlag[, value])
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+#### 示例
+使用评估器（JavaScript 圣经中的第 13 章）查看如何将文本范围复制到客户端计算机的剪贴板。首先在 `myP` 元素中选择文本范围：
+
+```javascript
+a = document.body.createTextRange()
+a.moveToElementText(myP)
+```
+
+现在使用 `execCommand()` 将范围复制到剪贴板：
+
+```javascript
+a.execCommand("Copy")
+```
+
+为了证明文本在剪贴板中，点击底部的文本字段并从“编辑”菜单中选择“粘贴”（或按 `Ctrl+V`）。
+
+#### expand("unit")
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+#### 示例
+你可以在列表 15-14 中找到 `expand()` 方法的示例。
+
+#### findText("searchString"[, searchScope[, flags]])
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+#### 示例
+列表 19-11 实现了两种不同的文本搜索-替换操作，同时向你展示了如何包含额外的参数用于区分大小写敏感和全词搜索。这两种方法都从为整个 `body` 创建 TextRange 开始，但它们立即将起始点移动到包含文本搜索的 `DIV` 元素。
+
+一个搜索-替换函数会提示用户接受或拒绝替换每个找到的字符串实例。调用 `select()` 和 `scrollIntoView()` 方法向用户显示即将被替换的内容。注意，即使用户拒绝接受替换，文本范围也会被折叠（collapsed）。如果没有 `collapse()` 方法，搜索可能会陷入死循环，因为会不断反复发现相同的文本（且不进行任何替换）。由于不需要计数，此搜索-替换操作是在一个 `while` 循环内部实现的。
+
+另一个搜索-替换函数则直接替换每个匹配项，并显示所执行的替换次数。在循环退出后（因为没有更多匹配项），使用循环计数器显示已执行的替换次数。
+
+列表 19-11：两种搜索和替换方法（带撤销功能）
+
+```html
+<HTML>
+<HEAD>
+<TITLE>TextRange.findText() 方法</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+// 用于撤销的全局范围
+var rng
+
+// 返回 findText() 的第三个参数
+function getArgs(form) {
+  var isCaseSensitive = (form.caseSensitive.checked) ? 4 : 0
+  var isWholeWord = (form.wholeWord.checked) ? 2 : 0
+  return isCaseSensitive + isWholeWord
+}
+
+// 提示式的 searchAndReplace(form)
+function searchAndReplace(form) {
+  var searchString = form.searchString.value
+  var replaceString = form.replaceString.value
+  if (searchString) {
+    var args = getArgs(form)
+    rng = document.body.createTextRange()
+    rng.moveToElementText(rights)
+    clearUndoBuffer()
+    while (rng.findText(searchString, 10000, args)) {
+      rng.select()
+      rng.scrollIntoView()
+      if (confirm("Replace?")) {
+        rng.text = replaceString
+        pushUndoNovo(rng, searchString, replaceString)
+      }
+      rng.collapse(false)
+    }
+  }
+}
+
+// 带计数器的非提示式搜索和替换
+function sAndRccount(form) {
+  var srchString = form.searchString.value
+  var replString = form.replaceString.value
+  var i
+  if (srchString) {
+    var args = getArgs(form)
+    rng = document.body.createTextRange()
+    rng.moveToElementText(rights)
+    for (i = 0; rng.findText(srchString, 10000, args); i++) {
+      rng.text = replString
+      pushUndoNovo(rng, srchString, replString)
+      rng.collapse(false)
+    }
+    if (i > 0) {
+      clearUndoBuffer()
+    }
+    document.all.counter.innerText = i
+  }
+}
+
+// 撤销变量
+var newRanges = new Array()
+var origSearchString
+
+// 保存原始搜索字符串和每个替换项的书签
+function pushUndoNovo(rng, srchString, replString) {
+  origSearchString = srchString
+  rng.moveStart("character", -replString.length)
+  newRanges[newRanges.length] = rng.getBookmark()
+}
+
+// 清空全局空数组和搜索字符串
+function clearUndoBuffer() {
+  document.all.counter.innerText = "0"
+  origSearchString = ""
+  newRanges.length = 0
+}
+
+// 执行撤销
+function undoReplace() {
+  if (newRanges.length && origSearchString) {
+    for (var i = 0; i < newRanges.length; i++) {
+      rng.moveToBookmark(newRanges[i])
+      rng.text = origSearchString
+    }
+    document.all.counter.innerText = i
+    clearUndoBuffer()
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<H1>TextRange.findText()</H1>
+<HR>
+<FORM>
+<P>在以下文本中输入要搜索的字符串：
+<INPUT TYPE="text" NAME="searchString" SIZE="20" VALUE="Law">
+<INPUT TYPE="checkbox" NAME="caseSensitive">区分大小写
+<INPUT TYPE="checkbox" NAME="wholeWord">仅限全词</P>
+<P>输入要替换的字符串：
+<INPUT TYPE="text" NAME="replaceString" SIZE="20" VALUE="legislation"></P>
+<INPUT TYPE="button" VALUE="搜索和替换（带提示）" ONCLICK="searchAndReplace(this.form)">
+<INPUT TYPE="button" VALUE="搜索和替换（不带提示，带计数）" ONCLICK="sAndRccount(this.form)">
+<SPAN ID="counter">0</SPAN> 项已替换</P>
+<INPUT TYPE="button" VALUE="撤销搜索和替换" ONCLICK="undoReplace()">
+
+<DIV ID="rights">
+<A NAME="article1"><H2>第一条</H2></A>
+<P>会不得制定关于建立宗教的法律，或禁止宗教信仰的自由；不得剥夺言论、出版的自由；人民集会和向政府请愿的权利不受...</P>
+<P>[此处是用于打印的文本其余部分。]</P>
+</DIV>
+</BODY>
+</HTML>
+```
+
+在文档中拥有搜索-替换函数只是战斗的一半。另一部分提供了撤销更改的功能。为此，缓冲区将其数据存储在两个全局变量中。第一个 `origSearchString` 仅仅是执行原始搜索的字符串。该变量是需要放回的字符串。第二个全局变量是一个存储 TextRange 书签的数组（参见本章稍后的 `getBookmark()`）。这些引用对人类来说没有意义，但浏览器可以使用它们重建具有所需起始和终点的范围。设置文本范围的 `text` 属性时，副作用是范围会折叠到新文本的末尾。由于存储的书签必须包含替换的文本，因此在保存书签之前必须将起始点移动回替换文本的开头。`pushUndoNovo()` 函数接收替换字符串，以便根据其长度进行调整。
+
+在存储了所有书签后，`undoReplace()` 函数中的简单循环即可完成它的工作。在验证撤销缓冲区存储了数据后，该函数遍历书签数组并将标记文本替换为原始字符串。使用书签而不是再次使用替换函数的好处是，只有被搜索-替换操作影响的范围会在撤销操作中被触及。例如，在本文中将区分大小写的 "states" 替换为 "States"，会执行两次替换。然而，此时文档中有四个 "States"，其中两个是之前存在的。通过反转搜索-替换字符串来重做替换函数会将四个全部转换为小写——这并不是想要的效果。
+
+#### getBookmark()
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | | | | | | | | ✓ |
+
+#### 示例
+本章早些时候的列表 19-11 展示了 `getBookmark()` 方法如何保留文本范围的规范，以便再次调用它们以撤销对文本范围所做的更改。`getBookmark()` 用于保存快照，`moveToBookmark()` 方法在撤销过程中使用。
+
+#### inRange(otherRange)
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | | | ✓ | ✓ | |
+
+#### 示例
+使用“评估器”（《JavaScript 圣经》第 13 章）查看 `inRange()` 方法的用法。以下语句生成了两个不同的文本范围，一个针对 `myP` 段落元素，另一个针对嵌套在其中的 `myEM` 元素。
+
+```javascript
+a = document.body.createRange()
+a.moveToElementText(myP)
+b = document.body.createRange()
+b.moveToElementText(myEM)
+```
+
+由于 `myP` 的文本范围比另一个大，因此在其上调用 `inRange()` 方法，并完全预期返回 `true`。
+
+```javascript
+a.inRange(b)
+```
+
+但如果你交换引用位置，你会发现较大的文本范围并不“在”较小的范围之内：
+
+```javascript
+b.inRange(a)
+```
+
+#### isEqual(otherRange)
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | | | ✓ | ✓ | |
+
+#### 示例
+使用“评估器”（《JavaScript 圣经》第 13 章）尝试 `isEqual()` 方法。从创建两个独立的 `TextRange` 对象开始，一个针对 `myP` 元素，另一个针对 `myEM`。
+
+```javascript
+a = document.body.createRange()
+a.moveToElementText(myP)
+b = document.body.createRange()
+b.moveToElementText(myEM)
+```
+
+由于这两个范围包含了不同的文本集合，它们是不相等的，以下语句显示了结果：
+
+```javascript
+a.isEqual(b)
+```
+
+但如果你现在调整第一个范围的边界以包围 `myEM` 元素，两个范围的值就相等了：
+
+```javascript
+a.moveToElementText(myEM)
+a.isEqual(b)
+```
+
+#### move("unit", count)
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+#### 示例
+使用“评估器”（《JavaScript 圣经》第 13 章）实验 `move()` 方法。为了查看该方法如何仅返回指针移动的单元数，请创建一个文本范围并设置为包围 `myP` 元素：
+
+```javascript
+a = document.body.createRange()
+a.moveToElementText(myP)
+```
+
+现在输入以下语句将范围折叠并向后移动 20 个单词。
+
+```javascript
+a.move("word", -20)
+```
+
+继续点击“评估（Evaluate）”按钮并观察结果（Results）框中的返回值。值显示为 20，而它仍然可以向后移动 20 个单词。但最后一次移动将是某个接近 0 的其他值。当范围位于 `BODY` 元素的开头时，范围无法再向该方向移动，因此结果为零。
+
+#### moveEnd("unit", count) / moveStart("unit", count)
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+#### 示例
+使用“评估器”（《JavaScript 圣经》第 13 章）实验 `moveEnd()` 和 `moveStart()` 方法。通过创建一个文本范围并设置为包围 `myEM` 元素：
+
+```javascript
+a = document.body.createRange()
+a.moveToElementText(myEM)
+```
+
+为了帮助你观察指针的移动如何影响范围包围的文本，请在底部文本框中输入 `a` 并查看范围的所有属性。特别注意 `htmlText` 和 `text` 属性。现在输入以下语句向范围末尾向前移动一个单词。
+
+```javascript
+a.moveEnd("word")
+```
+
+点击“列表属性（List Properties）”按钮，查看范围的文本现在包含了文本框中每个语句之后的单词，并检查整数结果以及（通过点击“列表属性”按钮）每个语句执行后范围的属性：
+
+```javascript
+a.moveStart("word", -1)
+a.moveEnd("sentence")
+```
+
+注意，对于句子（sentence），默认单位 1 会扩展到当前句子的末尾。如果你将起始位置向后移动一个句子，你会发现 `myP` 元素之前缺少以句号结尾的句子会导致奇怪的结果。
+
+最后，强迫以 20 个单词为步增量向后移动起点，并观察起始点接近并到达 `BODY` 开头时的结果：
+
+```javascript
+a.moveStart("word", -20)
+```
+
+最终，最后一次移动将是某个接近 0 的其他值。当范围位于 `BODY` 元素的开头时，范围无法再向该方向移动，结果为零。
+
+#### moveToBookmark("bookmarkString")
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | | | | | | | | ✓ |
+
+#### 示例
+列表 19-11 显示了如何使用 `moveToBookmark()` 方法恢复书签。`getBookmark()` 方法用于保存书签，而 `moveToBookmark()` 方法用于恢复过程中。
+
+#### moveToElementText(elemObj)
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | | | | | | | ✓ | |
+
+#### 示例
+本章的大部分 `TextRange` 方法都使用 `moveToElementText()`。
+
+#### moveToPoint(x, y)
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | | | | | | | | |
+
+#### 示例
+使用评估器查看 `moveToPoint()` 方法的运作。创建一个整个 `BODY` 元素的范围：
+
+```javascript
+a = document.body.createRange()
+```
+
+现在，针对 `100, 100` 调用 `moveToPoint()` 方法，结果如下：
+
+```javascript
+a.moveToPoint(100, 100)
+```
+
+如果你查看底部的 `htmlText` 和 `text` 属性，发现它们是空的。但如果你逐渐向后移动，例如，你会看到 `htmlText` 属性开始填充：
+
+```javascript
+a.moveStart("character", -1)
+```
+
+在每次评估后，将以下语句输入文本框以查看范围属性。
+
+#### parentElement()
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | | | | | | | | |
+
+#### 示例
+使用“评估器”（《JavaScript 圣经》第 13 章）尝试 `parentElement()` 方法。从设置范围为 `myEM` 元素开始：
+
+```javascript
+a = document.body.createRange()
+a.moveToElementText(myEM)
+```
+
+为了检查 `parentElement()` 方法返回的对象，在文本框中输入以下语句：
+
+```javascript
+a.parentElement()
+```
+
+如果你滚动到 `outerHTML` 属性，你会发现范围的父元素是 `myEM` 元素及其标签。接下来，将范围终点移动一个单词：
+
+```javascript
+a.moveEnd("word")
+```
+
+因为范围现在包含了 `myP` 对象的文本，`a.parentElement()` 的 `outerHTML` 显示了 `myP` 元素。
+
+#### pasteHTML("HTMLText")
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | | | | | | ✓ | | |
+
+#### 示例
+使用评估器（《JavaScript 圣经》第 13 章）实验 `pasteHTML()` 方法。以下序列的目标是将 `<em>` 标签更改为 `<span>` 标签，其 `STYLE` 属性设置了元素原始文本的颜色。
+
+开始创建范围并将边界设置为 `myEM` 元素：
+
+```javascript
+a = document.body.createRange()
+a.moveToElementText(myEM)
+```
+
+虽然你可以直接将 HTML 字符串作为参数传递给 `pasteHTML()`，但将 HTML 字符串存储在自己的临时变量可能会更方便（也更容易测试）：
+
+```javascript
+b = "<SPAN STYLE='color:red'>" + a.text + "</SPAN>"
+```
+
+注意我们拼接了当前文本范围的文本，因为它还没有被修改。现在我们将新的 HTML 字符串传入当前文本范围：
+
+```javascript
+a.pasteHTML(b)
+```
+
+此时，`EM` 元素已从对象模型中消失，`SPAN` 元素取而代之。通过查看 `myP` 元素的 HTML 来证明这一点：
+
+```javascript
+myP.innerHTML
+```
+
+#### select()
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+#### 示例
+参见本章节前面的列表 19-11，获取 `select()` 方法的使用示例。
+
+#### setEndPoint("type", otherRangeRef)
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+#### 示例
+使用 Evaluator（评估器）来尝试 `setEndPoint()` 方法。通过创建两个独立的文本范围，一个用于 `myP` 元素，另一个用于 `myEM`：
+
+```javascript
+a = document.body.createRange()
+a.moveToElementText(myP)
+b = document.body.createRange()
+b.moveToElementText(myEM)
+```
+
+在移动任何端点之前，比较这些范围的 HTML 代码：
+
+```javascript
+a.htmlText
+b.htmlText
+```
+
+现在，将 `a` 文本范围的起始点移动到 `b` 文本范围的结束点：
+
+```javascript
+a.setEndPoint("StartToEnd", b)
+```
+
+如果你查看该范围的 HTML，
+
+```javascript
+a.htmlText
+```
+
+你会发现原始文本范围的 `<P>` 标签已经消失了。这个演示是一个很好的教训：如果你只关心范围内的可见正文文本，而不是带有标签的元素，那么应该主要考虑使用 `setEndPoint()` 方法。
+
+## TextRectangle 对象
+
+### 属性
+
+- `bottom`（底部）
+- `left`（左侧）
+- `right`（右侧）
+- `top`（顶部）
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | | | | |
+
+#### 示例
+列表 19-12 允许你点击四个嵌套元素之一，查看 TextRectangle 是如何被处理的。当你点击其中一个元素时，将使用该元素的 TextRectangle 维度属性来设置定位元素的大小，以突出显示矩形区域。注意不要将页面上看到的可见矩形对象与每个被点击元素关联的 TextRectangle 对象混淆。
+
+该列表的一个重要部分是将调整尺寸和显示定位元素的操作拆分为一个独立的函数（`setHiliter()`），并将其与 `onClick` 事件处理程序（`handleClick()`）分开。这样做是为了让 `onResize` 事件处理程序触发一个脚本，获取最后一次点击元素的当前矩形，这样定位元素就可以调整大小并移动，以保持对同一段文本的高亮显示。作为一项实验，尝试从 `<BODY>` 标签中移除 `onResize` 事件处理程序，并观察调整浏览器窗口后高亮矩形发生的变化：代表 TextRectangle 的矩形保持不变，并失去了与实际元素对象关联的抽象 TextRectangle 的跟踪。
+
+列表 19-12：使用 TextRectangle 对象属性
+
+```html
+<HTML>
+<HEAD>
+<TITLE>TextRectangle Object</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+// 保留对最后点击元素的引用，以便 resize 重用
+var lastElem
+// TextRectangle 的左侧往往会偏移几个像素
+var rectLeftCorrection = 2
+
+// 处理鼠标点击
+function handleClick() {
+  var elem = event.srcElement
+  if (elem.className && elem.className == "sample") {
+    // 仅对子元素设置高亮元素
+    lastElem = elem
+    setHiliter()
+  } else {
+    // 隐藏高亮
+    hideHiliter()
+  }
+}
+
+function setHiliter() {
+  if (lastElem) {
+    var rectText = lastElem.getBoundingClientRect()
+    hiliter.style.pixelTop = rectText.top + document.body.scrollTop
+    hiliter.style.pixelLeft = rectText.left + document.body.scrollLeft - rectLeftCorrection
+    hiliter.style.pixelHeight = rectText.bottom - rectText.top
+    hiliter.style.pixelWidth = rectText.right - rectText.left
+    hiliter.style.visibility = "visible"
+  }
+}
+
+function hideHiliter() {
+  hiliter.style.visibility = "hidden"
+  lastElem = null
+}
+</SCRIPT>
+</HEAD>
+<BODY ONCLICK="handleClick()" ONRESIZE="setHiliter()">
+<H1>TextRectangle Object</H1>
+<HR>
+<P CLASS="sample">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</P>
+<DIV ID="hiliter" STYLE="position:absolute; background-color:salmon; z-index:-1; visibility:hidden"></DIV>
+</BODY>
+</HTML>
+```
+
+## 第 6 章 Image、Area 和 Map 对象（第 22 章）
+
+`IMG` 元素是一个流行的脚本目标，很大程度上是因为很容易为鼠标悬停等效果编写脚本。此外，元素的可脚本性可以追溯到第一代浏览器。在图像悬停中起辅助作用的是抽象的 `Image` 对象，脚本使用它来预加载图像以实现瞬间切换。尽管这两个对象在脚本操作中的表现不同，但它们共享属性和方法，使得通过页面学习它们的能力变得容易。`AREA` 和 `MAP` 元素紧密结合。在实践中，`AREA` 元素类似于页面上的“热点”，将用户引导至其他位置。它们还共享 URL 相关的属性。
+
+### 示例亮点
+
+- 大多数浏览器可以加载静态和动态图像（如 MPEG）。列表 22-3 显示了如何通过属性切换静态和动态图像。
+- 列表 22-4 允许你比较有无缓存切换图像的性能。
+- 观察 `IMG` 元素的 `onload` 处理程序如何触发动作。
+- 强大的列表 22-7 展示了脚本如何为 `IMG` 元素样式。
+
+## Image 和 IMG 元素
+
+### 属性
+
+#### align
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | | | | | | | | |
+
+#### 示例
+列表 22-1 允许你从不同的 `align` 值中进行选择，这些值影响页面的布局。所有浏览器提供了不同的对齐方式。
+
+列表 22-1：测试图像的 `align` 属性
+
+```html
+<HTML>
+<HEAD>
+<TITLE>IMG align Property</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function setAlignment(sel) {
+  document.myIMG.align = sel.options[sel.selectedIndex].text
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<H1>IMG align Property</H1>
+<HR>
+<FORM>
+选择图像对齐方式：
+<SELECT ONCHANGE="setAlignment(this)">
+<OPTION>absbottom</OPTION>
+<OPTION>absmiddle</OPTION>
+<OPTION>baseline</OPTION>
+<OPTION SELECTED>bottom</OPTION>
+<OPTION>left</OPTION>
+<OPTION>middle</OPTION>
+<OPTION>right</OPTION>
+<OPTION>texttop</OPTION>
+<OPTION>top</OPTION>
+</SELECT>
+</FORM>
+<HR>
+<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<IMG NAME="myIMG" SRC="desk1.gif" HEIGHT=90 WIDTH=120>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</P>
+</BODY>
+</HTML>
+```
+
+#### alt
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | | | | ✓ | | ✓ | ✓ | |
+
+#### 示例
+使用 Evaluator（JavaScript Bible 第 13 章）为页面上的 `document.myIMG` 图像分配 `alt` 属性字符串。首先，将不存在的图像分配给 `src` 属性以移除：
+
+```javascript
+document.myIMG.src = "fred.gif"
+```
+
+滚动到图像，你可以看到图像空间。现在，为 `alt` 属性分配字符串：
+
+```javascript
+document.myIMG.alt = "Fred's face"
+```
+
+额外的反斜杠用于转义字符串内部的撇号。滚动查看图像空间中新的 `alt` 文本。
+
+#### border
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | ✓ | ✓ | ✓ | | | ✓ | ✓ | ✓ |
+
+#### 示例
+通过为该属性分配不同的值，在 Evaluator（JavaScript Bible 第 13 章）中对图像的 `document.myIMG.border` 属性进行实验。
+
+#### complete
+
+| Compatibility | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | | | | | |
+
+#### 示例
+要对 `image.complete` 属性进行实验，请在加载列表 22-2 之前退出并重新启动浏览器（以防图像在内存缓存中）。当每张图像加载时，点击“是否加载完成？”按钮来设置图像对象 `complete` 属性的状态。在加载完成之前，该值为 `false`；完成后，该值变为 `true`。`arch` 图像是两个文件中较大的那个。你可能需要在多次尝试之间退出并重新启动浏览器以清除图像缓存（或清空浏览器缓存）。如果你在脚本中使用此属性遇到困难，可以使用 `<IMG>` 标签添加一个 `onLoad` 处理程序（即使它是空的，如列表 22-2 所示）。
+
+列表 22-2: 脚本 `image.complete`
+
+```html
+<HTML>
+<HEAD>
+<SCRIPT LANGUAGE="JavaScript1.1">
+function loadit(theimage, form) {
+  form.result.value = ""
+  document.images[0].src = theimage
+}
+function checkLoad(form) {
+  form.result.value = document.images[0].complete
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<IMG SRC="cpu2.gif" WIDTH=120 HEIGHT=90 ONLOAD="">
+<FORM>
+<INPUT TYPE="button" VALUE="Load keyboard" ONCLICK="loadit('cpu2.gif',this.form)">
+<INPUT TYPE="button" VALUE="Load arch" ONCLICK="loadit('arch.gif',this.form)"><P>
+<INPUT TYPE="button" VALUE="is it loaded yet?" ONCLICK="checkLoad(this.form)">
+<INPUT TYPE="text" NAME="result">
+</FORM>
+</BODY>
+</HTML>
+```
+
+#### dynsrc
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Compatibility | | | | | | ✓ | ✓ | ✓ |
+
+若要在静态图像和视频源之间切换，只需清空另一个属性即可。列表 22-3 显示了一个简单的示例，在一个固定图像和一个视频图像之间切换。该列表展示了文中描述的与更改静态图像和视频源相关的多数错误。
+
+列表 22-3: 在静态和动态图像之间切换
+
+```html
+<HTML>
+<HEAD>
+<TITLE>IMG dynsrc 属性</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+var trainImg = new Image(160,120)
+trainImg.src = "amtrak.jpg"
+trainImg.dynsrc = "amtrak.mpg"
+
+function setLoop() {
+  var selector = document.forms[0].looper
+  document.myIMG.loop = selector.options[selector.selectedIndex].value
+}
+
+function setImage(type) {
+  if (type == "jpg") {
+    document.myIMG.dynsrc = ""
+    document.myIMG.src = trainImg.src
+  } else {
+    document.myIMG.src = ""
+    document.myIMG.start = "fileopen"
+    setLoop()
+  }
+  document.myIMG.dynsrc = trainImg.dynsrc
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<H1>IMG dynsrc 属性</H1>
+<HR>
+<FORM>
+选择图像类型：
+<INPUT TYPE="radio" NAME="imgGroup" CHECKED ONCLICK="setImage('jpg')">Still
+<INPUT TYPE="radio" NAME="imgGroup" ONCLICK="setImage('mpg')">Video
+<P>加载后视频播放多少次：
+<SELECT NAME="looper" ONCHANGE="setLoop">
+<OPTION VALUE="1" SELECTED>一次</OPTION>
+<OPTION VALUE="2">两次</OPTION>
+<OPTION VALUE="-1">连续</OPTION>
+</SELECT>
+</FORM>
+<HR>
+<IMG NAME="myIMG" SRC="amtrak.jpg" HEIGHT=120 WIDTH=160>
+</BODY>
+</HTML>
+```
+
+如果你没有显式地将 `start` 属性设置为 `fileopen`（如列表 22-3 所示），Mac 版 IE 用户必须双击（IE4）或点击（IE5）电影图像才能使其运行。
+
+#### fileCreated / fileModified / fileSize
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Compatibility | | | | | | | | |
+
+这些属性与 `document` 对象的同名属性相似。你可以在列表 22-4 中看到这些属性的用法。复制该列表，并在修改从 `document` 对象的引用之前提供一张图像，以查看这些属性是如何与 `IMG` 元素对象工作的。
+
+#### height / width
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Compatibility | | | | | | | | |
+
+#### 示例
+使用 Evaluator（JavaScript Bible 第 13 章）实验 `height` 和 `width` 属性。通过在文本框中输入以下语句获取默认值：
+
+```javascript
+document.myIMG.height
+document.myIMG.width
+```
+
+将图像高度从默认的 90 增加到 180：滚动查看看到图像按比例放大了。接下来，放大宽度：
+
+```javascript
+document.myIMG.width = 400
+```
+
+查看结果图像。
+
+#### hspace / vspace
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Compatibility | | | | | ✓ | ✓ | | |
+
+#### 示例
+使用 Evaluator（JavaScript Bible 第 13 章）实验 `hspace` 和 `vspace` 属性。注意到页面底部的图像没有指定的间距且与页面对齐。现在分配 30 像素的水平间距：
+
+```javascript
+document.myIMG.hspace = 30
+```
+
+图像向右移动了 30 像素。图像右侧也存在不可见的间距。
+
+#### isMap
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Compatibility | | | | ✓ | ✓ | ✓ | | |
+
+#### 示例
+Evaluator 页面中的图像未定义为图像映射。因此，如果你在文本框中输入以下语句，该属性返回 `false`：
+
+```javascript
+document.myIMG.isMap
+```
+
+#### loop
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Compatibility | | | | | ✓ | ✓ | ✓ |
+
+#### 示例
+查看列表 22-3 中的 `dynsrc` 属性以查看 `loop` 属性的作用。
+
+#### lowSrc
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Compatibility | ✓ | ✓ | ✓ | | ✓ | ✓ | |
+
+#### 示例
+查看列表 22-5 中图像对象的 `onLoad` 事件处理程序，查看源相关的属性如何影响事件处理。
+
+#### name
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Compatibility | ✓ | ✓ | ✓ | (✓) | | ✓ | ✓ | |
+
+#### 示例
+你可以使用 Evaluator 检查页面上图像 `name` 属性返回的值。在文本框中输入以下语句：
+
+```javascript
+document.myIMG.name
+```
+
+当然，这由于是多余的，因为名称是对象引用的一部分。
+
+#### nameProp
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Compatibility | | | | | | | ✓ | |
+
+#### 示例
+你可以使用 Evaluator 在 IE5+/Windows 中比较 `src` 和 `nameProp` 属性的结果。在文本框中输入以下每条语句：
+
+```javascript
+document.myIMG.src
+document.myIMG.nameProp
+```
+
+#### protocol
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Compatibility | | | | | | ✓ | ✓ | ✓ |
+
+#### 示例
+你可以使用 Evaluator 检查页面上图像的 `protocol` 属性。在文本框中输入以下语句：
+
+```javascript
+document.myIMG.protocol
+```
+
+#### src
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Compatibility | ✓ | ✓ | ✓ | (✓) | | ✓ | | ✓ |
+
+#### 示例
+在以下示例（列表 22-4）中，你看到了图像对象的几个应用。要点是比较预缓存图像和普通图像给用户带来的感受。作为奖励，你将看到一个设置定时器自动更改图像对象中显示的图像的示例。此功能是显示广告横幅的网站非常受欢迎的需求。
+
+列表 22-4: 脚本图像对象和旋转图像
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Image Object</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+// 'desk' 图像数组的全局声明
+var imageDB
+// 预缓存 'desk' 图像
+if (document.images) {
+  // 为了方便，列出数组索引名称
+  deskImages = new Array('desk1', 'desk2', 'desk3', 'desk4')
+  // 构建图像数组并预缓存
+  imageDB = new Array(4)
+  for (var i = 0; i < imageDB.length; i++) {
+    imageDB[deskImages[i]] = new Image(120,90)
+    imageDB[deskImages[i]].src = deskImages[i] + ".gif"
+  }
+}
+
+// 更改 'individual' 图像的图像
+function loadIndividual(form) {
+  if (document.images) {
+    var fileName = form.individual.options[form.individual.selectedIndex].value
+    document.thumbnail1.src = fileName + ".gif"
+  }
+}
+
+// 更改 'cached' 图像的图像
+function loadCached(form) {
+  if (document.images) {
+    var gifIndex = form.cached.options[form.cached.selectedIndex].value
+    document.thumbnail2.src = imageDB[gifIndex].src
+  }
+}
+
+// 如果开启，将 'cached' 图像循环到队列中的下一个
+function checkTimer() {
+  if (document.images && document.timer.timerBox.checked) {
+    var gifIndex = document.selections.cached.selectedIndex
+    if (gifIndex >= imageDB.length - 1) {
+      gifIndex = 0
+    } else {
+      gifIndex++
+    }
+    document.selections.cached.selectedIndex = gifIndex
+    loadCached(document.selections)
+  }
+  var timeoutID = setTimeout("checkTimer()", 5000)
+}
+
+// 在卸载时将控件重置为默认值
+function resetSelects() {
+  for (var i = 0; i < document.forms.length; i++) {
+    for (var j = 0; j < document.forms[i].elements.length; j++) {
+      if (document.forms[i].elements[j].type == "select-one") {
+        document.forms[i].elements[j].selectedIndex = 0
+      }
+    }
+  }
+}
+
+// 启动运行
+function init() {
+  loadIndividual(document.selections)
+  loadCached(document.selections)
+  setTimeout("checkTimer()", 5000)
+}
+</SCRIPT>
+</HEAD>
+<BODY ONLOAD="init()" ONUNLOAD="resetSelects()">
+<H1>Image Object</H1>
+<CENTER>
+<TABLE BORDER="3">
+  <TR>
+    <TH>单独加载</TH>
+    <TH>预缓存</TH>
+  </TR>
+  <TR>
+    <TD ALIGN="right">Image:</TD>
+    <TD><IMG SRC="pixel.gif" NAME="thumbnail1" HEIGHT="90" WIDTH="120"></TD>
+    <TD><IMG SRC="desk1.gif" NAME="thumbnail2" HEIGHT="90" WIDTH="120"></TD>
+  </TR>
+  <TR>
+    <TD ALIGN="right">Select image:</TD>
+    <TD>
+      <FORM NAME="selections">
+      <SELECT NAME="individual" ONCHANGE="loadIndividual(this.form)">
+        <OPTION VALUE="cpu1">线路</OPTION>
+        <OPTION VALUE="cpu2">键盘</OPTION>
+        <OPTION VALUE="cpu3">桌子</OPTION>
+        <OPTION VALUE="cpu4">电缆</OPTION>
+      </SELECT>
+      </FORM>
+    </TD>
+    <TD>
+      <SELECT NAME="cached" ONCHANGE="loadCached(this.form)">
+        <OPTION VALUE="desk1">带子</OPTION>
+        <OPTION VALUE="desk2">夹子</OPTION>
+        <OPTION VALUE="desk3">灯</OPTION>
+        <OPTION VALUE="desk4">橡皮擦</OPTION>
+      </SELECT>
+    </TD>
+  </TR>
+  <TR>
+    <TD COLSPAN="3">
+      <FORM NAME="timer">
+      <INPUT TYPE="checkbox" NAME="timerBox" ONCLICK="checkTimer()">自动循环
+      </FORM>
+    </TD>
+  </TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>
+```
+
+Figure 6-1: 图像对象示例页面
+
+#### start
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| | | | | | | | | |
+
+### 事件处理程序
+
+#### onLoad
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| | | | | | | | | |
+
+#### 示例
+列表 22-5: 图像 `onLoad` 事件
+
+```html
+<HTML>
+<HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+function loadIt(image, form) {
+  if (document.images) {
+    form.result.value = ""
+    document.images[0].src = image
+  }
+}
+function checkLoad(form) {
+  if (document.images) {
+    form.result.value = document.images[0].complete
+  }
+}
+function signal() {
+  if (confirm("You have stopped the image from loading. Do you want to try again?")) {
+    location.reload()
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<IMG SRC="cpu2.gif" LOWSRC="desk4.gif" WIDTH=120 HEIGHT=90
+ONLOAD="if(document.forms[0].result) document.forms[0].result.value='done'"
+ONABORT="signal()">
+<FORM>
+<INPUT TYPE="button" VALUE="Load keyboard" ONCLICK="loadIt('cpu2.gif',this.form)">
+<INPUT TYPE="button" VALUE="Load arch" ONCLICK="loadIt('arch.gif',this.form)"><P>
+<INPUT TYPE="button" VALUE="Is it loaded yet?" ONCLICK="checkLoad(this.form)">
+<INPUT TYPE="text" NAME="result">
+</FORM>
+</BODY>
+</HTML>
+```
+
+## AREA 元素对象
+
+### 属性
+
+#### coords / shape
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| | | | | | | | | |
+
+#### 示例
+参见列表 22-7，查看 `coords` 和 `shape` 属性在脚本 `MAP` 元素对象上下文中的演示。
+
+## MAP 元素对象
+
+### 属性
+
+#### areas
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| | | | | | | | | |
+
+#### 示例
+列表 22-7 演示了如何使用脚本替换 `MAP` 元素内部的 `AREA` 元素对象。该场景是页面加载时在计算机键盘图像中加载一幅图像。此图像链接到 `keyboardMap` 客户端图像映射，该映射指定了图像上三个热点的详细信息。如果你随后切换该 `IMG` 元素中的图像，脚本使用元素的 `useMap` 属性指向第二个 `MAP`，该 `MAP` 具有更适合第二幅图中台灯的规范。将鼠标在图像上移动，并在状态栏中查看每个区域的 URL（在本例中，这些 URL 不会指向其他页面）。
+
+然而，页面上的另一个按钮会调用 `makeAreas()` 函数（在 IE5/Mac 上无法工作），它会创建四个新的 `AREA` 元素对象，并（通过特定的 DOM 路径）将这些新区域规范添加到图像。如果在函数执行后将鼠标移动到图像上方，你可以看到 URL 现在反映了新区域的地址。还要注意添加的第四个区域，其状态栏消息出现在图 6-2 中。
+
+列表 22-7：动态修改 AREA 元素
+
+```html
+<HTML>
+<HEAD>
+<TITLE>MAP Element Object</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+// 动态生成元素
+function makeAreas() {
+  document.myIMG.src = "desk3.gif"
+  // 构建区域对象
+  var area1 = document.createElement("AREA")
+  area1.href = "Script-Shade.html"
+  area1.shape = "polygon"
+  area1.coords = "52,28,108,35,119,29,8,63,0,52,28"
+  var area2 = document.createElement("AREA")
+  area2.href = "Script-Made-Base.html"
+  area2.shape = "rect"
+  area2.coords = "75,65,117,87"
+  var area3 = document.createElement("AREA")
+  area3.href = "Script-Made-Chain.html"
+  area3.shape = "polygon"
+  area3.coords = "68,51,73,51,69,32,68,51"
+  var area4 = document.createElement("AREA")
+  area4.href = "Script-Made-Emptyness.html"
+  area4.shape = "rect"
+  area4.coords = "0,0,50,120"
+  // 将新元素放入 MAP 子节点中
+  if (document.all) {
+    document.all.lampMap.areas.length = 0
+    document.all.lampMap.areas[0] = area1
+    document.all.lampMap.areas[1] = area2
+    document.all.lampMap.areas[2] = area3
+    document.all.lampMap.areas[3] = area4
+  } else if (document.getElementById) {
+    // NN6 遵循节点模型
+    var mapObj = document.getElementById("lampMap")
+    while (mapObj.childNodes.length) {
+      mapObj.removeChild(mapObj.firstChild)
+    }
+    mapObj.appendChild(area1)
+    mapObj.appendChild(area2)
+    mapObj.appendChild(area3)
+    mapObj.appendChild(area4)
+    // 修复 NN6 显示 bug 的解决方法
+    document.myIMG.style.display = "inline"
+  }
+}
+
+function changeKeyboard() {
+  document.myIMG.src = "cpu2.gif"
+  document.myIMG.useMap = "#keyboardMap"
+}
+
+function changeToLamp() {
+  document.myIMG.src = "desk3.gif"
+  document.myIMG.useMap = "#lampMap"
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<H1>MAP Element Object</H1>
+<HR>
+<IMG NAME="myIMG" SRC="cpu2.gif" WIDTH=120 HEIGHT=90 USEMAP="#keyboardMap">
+<FORM>
+<P><INPUT TYPE="button" VALUE="Load Lamp Image" ONCLICK="changeToLamp()"></P>
+<P><INPUT TYPE="button" VALUE="Write Map on the Fly" ONCLICK="makeAreas()"></P>
+<P><INPUT TYPE="button" VALUE="Load Keyboard Image" ONCLICK="changeKeyboard()"></P>
+</FORM>
+<MAP NAME="keyboardMap" ID="keyboardMap">
+<AREA HREF="AlphaKeys.htm" SHAPE="rect" COORDS="0,0,26,42">
+<AREA HREF="ArrowKeys.htm" SHAPE="polygon" COORDS="48,89,57,77,69,82,77,80,79,84,89,48,89">
+<AREA HREF="PageKeys.htm" SHAPE="circle" COORDS="104,51,14">
+</MAP>
+<MAP NAME="lampMap" ID="lampMap">
+<AREA HREF="Shade.htm" SHAPE="polygon" COORDS="52,28,108,35,119,29,8,63,0,52,28">
+<AREA HREF="Base.htm" SHAPE="rect" COORDS="75,65,117,87">
+<AREA HREF="Chain.htm" SHAPE="polygon" COORDS="68,51,73,51,69,32,68,51">
+</MAP>
+</BODY>
+</HTML>
+```
+
+Figure 6-2: 脚本为图像创建了一个特殊的客户端映射。
+
+## 第 7 章 表单和相关对象（第 23 章）
+
+由于 HTML 表单从早期开始就可以脚本化，它们吸引了许多页面设计者的注意力。尽管 `FORM` 元素是交互式表单的主要控制器（在后续章节中介绍），但修改 `action` 属性（对应 `ACTION` 属性）的脚本并不常见。`onSubmit` 事件是在表单数据发送到服务器之前进行验证的关键触发器。本章包含的另一个 HTML 元素是 `LABEL` 对象。`LABEL` 元素是与表单控件相关的文本容器。这是现代浏览器的一种实用增强，标签可以将鼠标事件传递给它们的控件，就像单选按钮和复选框一样。当脚本动态修改页面内容时。
+
+### 示例亮点
+
+- 列表 23-2 将 `form.elements` 数组重置表单中的所有文本字段，而不影响其他类型的控件。
+- 如果你喜欢使用图像来实现表单的重置和提交，列表 22-3 显示了如何使用 `form.reset()` 和 `form.submit()` 方法来实现。
+
+### 本章内容
+
+- 在提交之前自定义 `FORM` 行为
+- 防止意外的表单提交或重置
+- 使用图像作为重置和提交按钮
+- 处理表单验证
+
+虽然批量表单验证在多处显示，但列表 23-4 显示了 `onSubmit` 事件如何配合 `window.confirm()` 方法允许或阻止表单被重置或提交。
+
+## FORM 对象
+
+### 属性
+
+#### action
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | | |
+
+#### 示例
+以下语句为页面的第一个表单分配了 `mailto:` URL：
+`document.forms[0].action = "mailto:doe@giantco.com"`
+
+#### elements
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | | |
+
+#### 示例
+列表 23-2 展示了 `elements` 属性的实际用法。表单包含四个字段和一些其他元素（见图 7-1）。注意我如何使用 `type` 属性将文本框对象与其他对象分开，即使单选按钮避开了字段。如果一个字段为空，我会提醒用户并使用相同的索引值将光标置于该字段的 `focus()` 方法。
+
+列表 23-2：使用 `form.elements` 数组
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Elements Array</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function verify() {
+  var form = document.forms[0]
+  for (var i = 0; i < form.elements.length; i++) {
+    if (form.elements[i].type == "text" && form.elements[i].value == "") {
+      alert("请填写所有字段.")
+      form.elements[i].focus()
+      break
+    }
+  } // 更多测试
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+...
+</FORM>
+</BODY>
+</HTML>
+```
+
+
+
+# 表单与表单元素对象
+
+## HTML 表单示例
+
+```html
+<FORM>
+输入名字：<INPUT TYPE="text" NAME="firstName"><P>
+输入姓氏：<INPUT TYPE="text" NAME="lastName"><P>
+<INPUT TYPE="radio" NAME="gender">男 <P>
+输入地址：<INPUT TYPE="text" NAME="address"><P>
+输入城市：<INPUT TYPE="text" NAME="city"><P>
+<INPUT TYPE="checkbox" NAME="retired">我已退休 <P>
+</FORM>
+
+<INPUT TYPE="button" NAME="act" VALUE="Verify" onclick="verify()">
+</FORM>
+</BODY>
+</HTML>
+```
+
+## JavaScript 示例大全：JavaScript 圣经的必备伴侣
+
+![](img/144de29a231bb2cbf5843e2f44fc0b_359_0.png)
+
+图 7-1：`elements` 数组帮助查找验证所需的文本字段。
+
+### encoding 属性
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+#### 示例
+
+如果你需要修改文档中的第一个表单，根据用户请求以非 URL 编码文本发送内容，则语句为：
+
+```javascript
+document.forms[0].encoding = "text/plain"
+```
+
+### length 属性
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+#### 示例
+
+使用《评估器》（JavaScript 圣经中的第 13 章）来确定页面上第一个表单的控件数量。在文本框中输入以下语句：
+
+```javascript
+document.forms[0].length
+```
+
+### method 属性
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+#### 示例
+
+如果你需要修改文档中的第一个表单，使其通过 POST 方法发送内容，则语句为：
+
+```javascript
+document.forms[0].method = "POST"
+```
+
+### target 属性
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+#### 示例
+
+如果你想将第一个表单的 CGI 响应重定向到新窗口（而不是表单标签中指定的 target），请使用此语句：
+
+```javascript
+document.forms[0].target = "_blank"
+```
+
+## Methods 方法
+
+### reset()
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | | | | | ✓ | ✓ | ✓ |
+
+#### 示例
+
+在示例 23-3 中，我将重置表单的操作分配给链接对象的 HREF 属性（该对象附载于名为 reset.jpg 的图片上）。我使用 `javascript:` URL 来调用表单的 `reset()` 方法（直接或不带文字，执行该功能）。注意，在此示例中表单的 action 是一个不存在的 URL。如果你点击提交图标，将收到来自浏览器的“无法定位”错误。
+
++ 列表 23-3：`form.reset()` 和 `form.submit()` 方法
+
+```html
+<HTML>
+<HEAD>
+<TITLE>注册表单</TITLE>
+</HEAD>
+<BODY>
+<FORM NAME="entries" METHOD=POST ACTION="http://www.u.edu/pub/cgi-bin/register">
+输入您的名字：<INPUT TYPE="text" NAME="firstName"><P>
+输入您的姓氏：<INPUT TYPE="text" NAME="lastName"><P>
+输入您的地址：<INPUT TYPE="text" NAME="address"><P>
+输入您的城市：<INPUT TYPE="text" NAME="city"><P>
+<INPUT TYPE="radio" NAME="gender" CHECKED>男
+<INPUT TYPE="radio" NAME="gender">女
+<INPUT TYPE="checkbox" NAME="retired">我已退休
+<A HREF="javascript:document.forms[0].submit()"><IMG SRC="submit.jpg" HEIGHT=25 WIDTH=100"></A>
+<A HREF="javascript:document.forms[0].reset()"><IMG SRC="reset.jpg" HEIGHT=25 WIDTH=100 BORDER=0></A>
+</BODY>
+</HTML>
+```
+
+### submit()
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | |
+
+#### 示例
+
+参考列表 23-3 以获取从表单外部使用 `submit()` 方法的示例。
+
+## Event handlers 事件处理器
+
+### onReset
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | | | | | ✓ | ✓ | ✓ |
+
+#### 示例
+
+列表 23-4 展示了防止意外表单重置或提交的一种方法。使用标准的重置（Reset）和提交（Submit）按钮作为界面元素，`<FORM>` 对象定义包含了两个处理器。每个事件处理器都调用其函数，为用户提供选择。注意每个事件处理器如何包含 `return` 单词，并利用了从两个函数中来自 `confirm()` 对话框返回的布尔值。
+
+列表 23-4：`onReset` 和 `onSubmit` 事件处理器
+
+```html
+<HTML>
+<HEAD>
+<TITLE>提交重置</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function allowReset() {
+  return window.confirm("确定清空表单吗？")
+}
+function allowSend() {
+  return window.confirm("确定发送这些信息吗？")
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM METHOD=POST ENTYPE="text/plain" ACTION="mailto:trash@danny.com" onReset="return allowReset()">
+输入您的名字：<INPUT TYPE="text" NAME="firstName"><P>
+输入您的姓氏：<INPUT TYPE="text" NAME="lastName"><P>
+输入您的地址：<INPUT TYPE="text" NAME="address"><P>
+输入您的城市：<INPUT TYPE="text" NAME="city"><P>
+<INPUT TYPE="radio" NAME="gender">女
+<INPUT TYPE="checkbox" NAME="retired">我已退休
+<INPUT TYPE="reset" onSubmit="return allowSend()">
+</FORM>
+</BODY>
+</HTML>
+```
+
+### onSubmit
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+参考列表 23-4 以获取通过 `onSubmit` 事件处理表单的示例。
+
+## LABEL 对象
+
+### 属性
+
+#### htmlFor
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+以下语句使用 HTML5 语法为 label 的 `htmlFor` 属性赋值：
+
+```javascript
+document.getElementById("myLabel").htmlFor = "myField"
+```
+
+## 按钮对象
+
+按钮的主题涵盖了用于触发脚本的控件。例如，单选按钮组具有相同的名称，复选框则用于指示“开启”或“关闭”设置。单选按钮组允许脚本来检查哪一个按钮被选中。使用列表 24-6 作为模型来查找组被选中的单选按钮。
+
+### 示例高亮
+
+- 显然，`onClick` 事件处理器对于按钮控件是最重要的。在第 24 章中，列表 24-1 展示了将按钮引用传递给处理器函数。
+- 列表 24-4 显示了复选框设置如何影响表单的 URL。
+- 有时复杂的表单需要勾选复选框显示表单中的其他项。列表 24-5 使用可脚本样式表来协助此工作。
+- 使用列表 24-6 模型来查找组中被选中的单选按钮。
+
+## BUTTON元素对象和按钮、提交、重置输入对象
+
+### 属性
+
+#### form
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+#### 示例
+
+以下函数片段接收一个按钮元素作为参数。需要按钮引用来决定遵循哪个分支；然后会提交表单。
+
+```javascript
+function setActive(btn) {
+  if (btn.name == "normal") {
+    btn.form.action = "cgi-bin/normal.pl"
+  } else if (btn.name == "special") {
+    btn.form.action = "cgi-bin/specialHandling.pl"
+  }
+  btn.form.submit();
+}
+```
+
+注意这个函数不需要担心表单引用，因为它的工作是与触发此函数的任何按钮协同工作。在表单中，两个按钮调用同一个函数。只有它们的名称最终决定了按钮点击的精确处理：
+
+```html
+...
+<INPUT TYPE="button" NAME="normal" VALUE="Regular Handling"
+onclick="setActive(this)">
+<INPUT TYPE="button" NAME="special" VALUE="Special Handling"
+OnClick="setAction(this)">
+</FORM>
+```
+
+#### name
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+#### 示例
+
+参见本章前面的表单属性示例，了解 `name` 属性的实际应用。
+
+#### value
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+#### 示例
+
+在以下摘录中，该语句将按钮的标签从“Play”（播放）切换为“Stop”（停止）（NN/Mac 版本4以下除外）：
+
+```javascript
+var btn = document.forms[0].controlButton
+btn.value = (btn.value == "Play") ? "Stop" : "Play";
+```
+
+### 方法
+
+#### click()
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+#### 示例
+
+以下语句演示了如何为名为 `sender` 的按钮表单控件编写点击动作脚本：
+
+```javascript
+document.forms[0].sender.click()
+document.formObject.buttonObject.click()
+```
+
+### 事件处理器
+
+#### onClick
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | | | ✓ | ✓ | |
+
+列表 24-1 不仅演示了按钮的 `onClick` 事件处理器，还演示了你可能需要从用于多个按钮的通用函数提取特定按钮的 `name` 或 `value` 属性。在这种情况下，每个按钮都将自己的对象作为参数传递给 `displayTeam()` 函数。该函数随后在 alert 对话框中显示结果。现实应用可能会使用更复杂的 `if...else` 决策树，根据点击的按钮来执行更复杂的操作（或对于 NN4+ IE4，对 `btn.value` 表达式使用 `switch` 结构)。
+
+### 列表 24-1：共享一个函数的按钮
+
+```html
+<HTML>
+<HEAD>
+<TITLE>按钮点击</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function displayTeam(btn) {
+  if (btn.value == "Abbott") alert("Abbott & Costello")
+  if (btn.value == "Rowan") alert("Rowan & Martins")
+  if (btn.value == "Martin") alert("Martin & Lewis")
+}
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<P>点击你最喜爱的流行喜剧组合的一半：</P>
+<FORM>
+<INPUT TYPE="button" VALUE="Abbott" onclick="displayTeam(this)">
+<INPUT TYPE="button" VALUE="Rowan" onclick="displayTeam(this)">
+<INPUT TYPE="button" VALUE="Martin" onclick="displayTeam(this)">
+</FORM>
+</BODY>
+</HTML>
+```
+
+## 复选框输入对象
+
+### 属性
+
+#### checked
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+示例：列表 24-2 中的简单示例将表单对象引用传递给 JavaScript 函数。该函数随后读取表单复选框对象的选中值（`checkThis.checked`）及其布尔值，作为 `if...else` 构造的测试结果。
+
+### 列表 24-2：作为条件的 checked 属性
+
+```html
+<HTML>
+<HEAD>
+<TITLE>复选框检查器</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function inspectBox(form) {
+  if (form.checkThis.checked) {
+    alert("框已勾选.")
+  } else {
+    alert("目前框未勾选.")
+  }
+}
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<FORM>
+<INPUT TYPE="checkbox" NAME="checkThis">在此勾选<P>
+<INPUT TYPE="button" NAME="boxChecker" VALUE="Inspect Box" onclick="inspectBox(this.form)">
+</FORM>
+</BODY>
+</HTML>
+```
+
+#### defaultChecked
+
+| | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+#### 示例
+
+列表 24-3 中的函数（此片段不在 CD-ROM 中）旨在将复选框的当前设置与其默认值进行比较。
+
+## 第 8 章 + 按钮对象（第 24 章）
+
+此处用于访问元素的语法使用的是 W3C DOM 兼容格式，因此此列表运行起来就像适用于 IE5+ 和 NN6+。你可以通过适配 `document.all` 格式的引用来修改此列表以便在 IE4 中运行。
+
+## 列表 24-5：复选框和 onClick 事件处理器
+
+```html
+<HTML>
+<HEAD>
+<TITLE>复选框事件处理器</TITLE>
+<STYLE TYPE="text/css">
+@monGroup (visibility:hidden)
+@comGroup (visibility:hidden)
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+ // 切换主组 spans 的可见性
+function toggle(toggle, group) {
+  var visSetting = (toggle.checked) ? "visible" : "hidden"
+  document.getElementById(group).style.visibility = visSetting
+}
+ // 切换通信子组 spans 的显示
+function swap(radBtn, group) {
+  var modemsVisSetting = (group == "modems") ? 
+  (radBtn.checked ? "" : "none") : "none"
+  var netwksVisSetting = (group == "netwks") ? 
+  (radBtn.checked ? "" : "none") : "none"
+  document.getElementById("modems").style.display = modemsVisSetting
+  document.getElementById("netwks").style.display = netwksVisSetting
+}
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<FORM>
+<H3>勾选你电脑的所有配件：</H3>
+<TABLE ORDER=2 CELLPADDING=5>
+<TR>
+<TD>
+<INPUT TYPE="checkbox" NAME="monitor"
+onclick="toggle(this,'monGroup')">显示器
+</TD>
+<TD>
+<SPAN ID="monGroup">
+<INPUT TYPE="radio" NAME="monitorType">15
+<INPUT TYPE="radio" NAME="monitorType">17
+<INPUT TYPE="radio" NAME="monitorType">21
+<INPUT TYPE="radio" NAME="monitorType">21
+</SPAN>
+</TD>
+<TR>
+<TD>
+<INPUT TYPE="checkbox" NAME="comms"
+onclick="toggle(this, 'comGroup')">通信
+</TD>
+<SPAN id="comGroup">
+<INPUT TYPE="radio" NAME="commType"
+onclick="swap(this, 'modems')">调制解调器
+<INPUT TYPE="radio" NAME="commType"
+onclick="swap(this, 'netwks')">网络</P>
+<SPAN id="modems" STYLE="display:none">
+<INPUT TYPE="radio" NAME="modType">56kbps
+<INPUT TYPE="radio" NAME="modType">56kbps
+<INPUT TYPE="radio" NAME="modType">ISDN (任何速度)
+<INPUT TYPE="radio" NAME="modType">落地
+</SPAN>
+<SPAN id="netwks" STYLE="display:none">
+<INPUT TYPE="radio" NAME="netwkType">以太网 10Mbps (10-Base T)
+<INPUT TYPE="radio" NAME="netwkType">以太网 100Mbps (10/100)
+<INPUT TYPE="radio" NAME="netwkType">T1 或更高
+</SPAN>
+</SPAN>
+</SPAN>
+</P>
+</TR>
+</TABLE>
+</FORM>
+</BODY>
+</HTML>
+```
+
+## 单选输入对象
+
+### 属性
+
+#### checked
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | | | ✓ | ✓ | ✓ |
+
+#### 示例
+
+列表 24-6 在函数中使用循环遍历 stooges 组中的所有按钮，寻找被选中的按钮。当循环找到其 `checked` 属性为 true 后，它会返回索引值。在一种情况下，该索引值被用于提取 `value` 属性显示在警告对话框中；在另一种情况下，该值有助于确定组中的哪一个按钮将将将其 `checked` 属性设置为 true。
+
+## 列表 24-6：在单选组中查找选中的按钮
+
+```html
+<HTML>
+<HEAD>
+<TITLE>提取选中的单选按钮</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function getSelectedButton(buttonGroup) {
+  for (var i = 0; i < buttonGroup.length; i++) {
+    if (buttonGroup[i].checked) {
+      return i
+    }
+  }
+  return 0
+}
+function fullName(form) {
+  var i = getSelectedButton(form.stooges);
+  alert("你选择了 " + form.stooges[i].value + ".")
+}
+function cycle(form) {
+  var i = getSelectedButton(form.stooges);
+  if (i+1 == form.stooges.length) {
+    form.stooges[0].checked = true
+  } else {
+    form.stooges[i+1].checked = true
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<B>选择你的 Stooge：</B>
+<INPUT TYPE="radio" NAME="stooges" VALUE="Moe">Moe
+<INPUT TYPE="radio" NAME="stooges" VALUE="Larry">Larry
+<INPUT TYPE="radio" NAME="stooges" VALUE="Curly">Curly
+<INPUT TYPE="radio" NAME="stooges" VALUE="Shemp">Shemp
+<P>
+<INPUT TYPE="button" NAME="Viewer" VALUE="查看全"
+onclick="fullName(form)">
+<INPUT TYPE="button" NAME="Cycler" VALUE="循环按钮"
+onclick="cycle(form)">
+</FORM>
+</BODY>
+</HTML>
+```
+
+## 与文本相关的对象（第 25 章）
+
+当你的页面需要访问者提供“是”或“否”以外的输入时，文本字段是提供空白区域的界面元素。无论你指定的是单行 `INPUT` 元素还是多行 `TEXTAREA` 元素，这里都是访问者可以表达自我并输入可能导致你精心构建的后端数据库发生故障的地方。通常情况下，文本框从客户端验证中获益最多。
+
+尽管文本框中的主要用户操作是输入，但直到微软（Microsoft）和网景（Netscape）推出第 4 版本浏览器，脚本编写人员才能使用键盘事件。这些事件是以完整形式出现的，包含了一套用于输入字符时的键按下、按键释放以及整个“按下并释放”动作的事件。从那时起，事件对象将接管工作，帮助脚本发现字符代码，以及用户在输入字符时是否按按了任何修饰键。你可以在本书的第 1 章和第 13 章的示例中找到此类事件处理的。
+
+文本框并不总是像你希望的那样可以编写脚本。现代浏览器可以应用样式表来调整整个文本框的字体特征，但你不能例如将文本框内的某些单词加粗。即使是像在其他程序中很常见的操作（如让文本插入自动定位在现有文本的末尾），目前也仅在 IE4+/Windows 上通过 `TEXTAREA` 的 `createRange()` 方法和相关的 `TextRange` 对象方法实现（见本书第 5 章中的 `TextRange` 对象方法）。这里的道理是，对文本字段功能的预期要保持在适中水平。
+
+### 示例亮点
+
+- 因为 `value` 持有文本框的字符串值，它也是你用于将新文本存入框中的属性。列表 25-2 和 25-3 展示了从读取写入文本框，并在过程中转换了输入的内容。你看到了处理此任务的三种不同方法。
+- 在客户端验证期间，你通过将插入光标指向未通过验证的文本字段来帮助访问者。列表 25-4 显示了如何使用 `focus()` 和 `select()` 方法，以及一个从不干扰的 IE/Windows 问题的变通方案。
+- 使用 `onChange` 事件处理程序（而不是 `onBlur`）作为实时数据验证的触发器，如列表 25-6 所示。你还看到了验证失败时阻止表单提交的语法。
+- 在 IE4 和 NN6 中，你可以在页面加载后调整 `TEXTAREA` 元素的大小。`cols` 和 `rows` 属性的示例让你能在评估器（The Evaluator）中查看结果。
+
+## 文本输入对象
+
+### 属性
+
+#### defaultValue
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+重要：列表 25-1、25-2 和 25-3 包含一个只有一个 `INPUT` 元素的表单。HTML 表单的规则是，当用户在字段有内容按下回车键时，表单会提交自身。提交到一个未定义 `action` 的表单会导致页面刷新，从而停止当前运行的任何脚本。这些示例列表中的 `FORM` 元素包含一个 `onSubmit` 事件处理程序，它会阻止提交，并尝试通过 `onChange` 事件处理程序触发文本框以运行演示脚本。在浏览器中（如 IE/Mac），在你输入新值后，你可能需要按 Tab 键或点击框外部来触发 `onChange` 事件处理程序。
+
+列表 25-1 有一个带有单个字段的简单表单，该字段标签中有一个默认值。函数 `(resetField())` 将页面行字段的内容恢复为分配给它的 `<INPUT>` 中的值。对于像这样的单页，定义一个 `TYPE="reset"` 的输入或调用 `form.reset()` 效果相同，因为此类按钮会建立表单中所有元素的默认值。但如果你只想重置表单中的部分字段，请遵循列表 25-1 中的示例按钮和函数。
+
+## 列表 25-1：将文本对象重置为默认值
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Text Object DefaultValue</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function upperMe(field) {
+  field.value = field.value.toUpperCase();
+}
+function resetField(form) {
+  form.converter.value = form.defaultValue
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM onSubmit="window.focus(); return false">
+Enter lowercase letters for conversion: <INPUT TYPE="text" name="converter" VALUE="sample" onChange="upperMe(this)">
+<INPUT TYPE="button" VALUE="Reset Field" onclick="resetField(this.form)">
+</FORM>
+</BODY>
+</HTML>
+```
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | |
+
+以下函数接收一个文本元素的引用作为参数。需要文本元素引用来决定哪个分支；然后提交表单。
+
+```javascript
+function setAction(fld) {
+  if (fld.value.indexOf("") != -1) {
+    fld.form.action = "mailto:" + fld.value
+  } else {
+    fld.form.action = "cgi-bin/normal"
+  }
+  fld.form.submit()
+}
+```
+
+注意此函数不需要担心表单引用，因为它的工作是处理任何包裹文本字段的表单。
+
+#### maxLength
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 兼容性 | | | | ✓ | | ✓ | ✓ | |
+
+使用评估器（《JavaScript Bible》中的第 13 章）实验 `maxLength` 属性。文本字段没有默认值，但你可以临时将其设置为几个字符，并查看它如何影响值：
+
+```javascript
+document.forms[0].input.maxLength = 3
+```
+
+尝试向字段输入内容以查看结果。
+
+#### name
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | |
+
+在 IE4 和 NN6 中，你可以在页面加载后调整 `TEXTAREA` 元素的大小。`cols` 和 `rows` 属性的示例让你能在评估器中查看结果。
+
+#### readOnly
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 兼容性 | | | | ✓ | | ✓ | ✓ | |
+
+使用评估器（《JavaScript Bible》中的第 13 章）设置底部文本框为只读。在底部文本框中输入任何内容。然后向顶部文本框输入以下语句：
+
+```javascript
+document.formObject.textBox.readOnly = true
+```
+
+虽然框中的现有文本是可选的（因此可以复制到剪贴板），但无法修改或删除。
+
+#### size
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 兼容性 | | | | | | ✓ | ✓ | |
+
+通过向顶部文本框输入以下语句，调整评估器（《JavaScript Bible》中的第 13 章）中的底部文本框大小：
+
+```javascript
+document.forms[0].inspector.size = 20
+document.forms[0].inspector.size = 400
+```
+
+刷新页面恢复大小（或将值为 80）。
+
+#### value
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | | ✓ | ✓ | ✓ |
+
+作为检索和分配文本对象值的演示，列表 25-2 显示了 `onChange` 事件处理程序的动作是如何触发的。在字段中输入任何小写字母并点击框外部。我将整个表单对象作为参数传递给处理程序。函数提取值，将其转换为大写（使用 JavaScript 字符串方法之一），并将其分配回表单中的相同字段。
+
+## 列表 25-2：将文本对象（作为参数）传递给函数
+
+```html
+<HTML>
+<HEAD>
+<TITLE>文本对象值</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function upperMe(form) {
+  form.converter.value = form.converter.value.toUpperCase();
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM onSubmit="window.focus(); return false">
+  输入小写字母以转换为大写字母：<INPUT TYPE="text"
+  NAME="converter" VALUE="sample" onChange="upperMe(this.form)">
+</FORM>
+</BODY>
+</HTML>
+```
+
+我展示了另外两种完成相同任务的方法，每种都比上一个示例高效。它们都利用快捷对象引用来获取文本对象的核心。列表 25-3 将文本对象（包含在 `this` 引用中）传递给函数处理器。由于该文本对象包含一个指向自身的完整引用（虽然肉眼可见，但确实存在），你可以访问该属性的 `value` 属性，并通过简单的赋值将一个字符串赋给该对象的 `value` 属性。
+
+## 列表 25-3：将文本对象（作为参数）传递给函数
+
+```html
+<HTML>
+<HEAD>
+<TITLE>文本对象值</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function upperMe(field) {
+  field.value = field.value.toUpperCase();
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM onSubmit="window.focus(); return false">
+  输入小写字母以转换为大写字母：<INPUT TYPE="text"
+  NAME="converter" VALUE="sample" onChange="upperMe(this)">
+</FORM>
+</BODY>
+</HTML>
+```
+
+另一种方法是直接在嵌入式事件处理器中处理字段值——而不是调用外部函数（这样更容易维护，因为所有脚本都集中在 Head 中）。当函数从文档中移除后，`<INPUT>` 标签的事件处理器就完成了所有工作：
+
+```html
+<INPUT TYPE="text" NAME="converter" VALUE="sample" onChange="this.value = this.value.toUpperCase()">
+```
+
+赋值表达式的右侧提取字段的内容，并借助字符串对象的 `toUpperCase()` 方法将原始字符串转换为全大写字母。操作的结果被赋给字段的 `value` 属性。
+
+在之前的示例中，`this` 关键字的应用起初可能会令人困惑，但这些示例代表了你可以有效使用此类引用的范围。将 `this` 作为对象事件处理器的参数仅指代该单个对象——即列表 25-3 中的文本对象。如果你想传递包含当前对象的更宽范围的对象，请在外层对象层上使用 `this` 关键字。在列表 25-2 中，我通过指定 `this.form` 发送了整个表单的引用——这意味着包含 "this" 对象的表单，该对象是在那行 HTML 代码中定义的。
+
+在标尺的另一端，你可以使用相似的语法来指定正在定义的当前对象的属性——`this`。因此，在最后一个示例中，我仅定位到此表单的 `value` 属性。虽然它们看起来一样，但一个是对象的引用而另一个仅仅是一个值，这一事实会影响函数的工作。当你传递一个对象的引用时，函数可以读取并修改该对象的属性（还可以调用函数）；但当传递给函数的参数只是一个属性值时，你无法在不构建该对象及其值的完整引用的情况下修改该值。
+
+### 方法
+
+#### blur()
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+#### 示例
+
+以下语句调用了名为 `vanishText` 的文本框的 `blur()` 方法：
+
+```javascript
+document.forms[0].vanishText.blur()
+```
+
+#### focus()
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+#### 示例
+
+参阅列表 25-4 可在与 `select()` 方法结合应用 `focus()` 方法的示例。
+
+```javascript
+document.formObject.textObject.focus()
+```
+
+#### select()
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+#### 示例
+
+点击列表 25-4 中的 "Verify" 按钮会对文本框的内容进行验证，确保输入全部为数字。所有工作都由 `checkNumeric()` 函数控制，该函数接收需要检查的字段引用作为参数。由于对 `dailySales()` 函数延迟调用的方式必须进行配置，未来将成为表单有效引用的各个部分都是从字段及其属性中提取的。如果验证（在 `isNumber()` 函数中执行）失败，则会在 0 毫秒的人工延迟后调用 `setSelection()` 方法。尽管这样做很奇怪，但该方法是 IE 从警报框的显示和关闭中恢复所需的全部内容。`setTimeout()` 的第一个参数必须是字符串，示例中通过表单和字段的字符串版本使用了 `setSelection()` 函数的示例字符串。 `setSelection()` 函数如何 `focus` 并 `select` 引用参数传递的字段。此函数现在可以泛化，用于处理更复杂表单中的多个文本框。
+
+## 列表 25-4：选择字段
+
+```html
+<HTML>
+<HEAD>
+<TITLE>文本对象 Select/Focus</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+// 检查怀疑输入是否为数字的函数
+function isNumber(inputStr) {
+  for (var i = 0; i < inputStr.length; i++) {
+    var oneChar = inputStr.charAt(i);
+    if (oneChar < "0" || oneChar > "9") {
+      alert("请确保输入为整数。");
+      return false
+    }
+  }
+  return true
+}
+function checkNumeric(fld) {
+  var inputStr = fld.value;
+  var fName = fld.name;
+  var formName = fld.form.name;
+  if (isNumber(inputStr)) {
+    // 如果为真
+  } else {
+    setTimeout("document." + formName + "." + fName + ")", 0)
+  }
+}
+function setSelection(fld) {
+  fld.focus()
+  fld.select()
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM onSubmit="checkNumeric(this); return false">
+输入数字：<INPUT TYPE="text" NAME="numeric">
+<INPUT TYPE="button" VALUE="Verify">
+</FORM>
+</BODY>
+</HTML>
+```
+
+### 事件处理器
+
+- `onBlur`
+- `onFocus`
+- `onChange`
+
+## 列表 25-5：onFocus 事件处理器
+
+### 示例
+
+为了演示这些处理处理器之一，25-5 显示了当用户离开或点击某个文本框时，如何使用状态栏进行提示。在图 9-1 中，用户切换到文本框时状态栏会显示。
+
+```html
+<HTML>
+<HEAD>
+<TITLE>元素</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function prompt(msg) {
+  window.status = "请输入你的 " + msg
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+输入你的名字：<INPUT TYPE="text" NAME="firstName" onFocus="prompt('name')">
+输入你的姓氏：<INPUT TYPE="text" NAME="lastName" onFocus="prompt('lastName')">
+输入你的地址：<INPUT TYPE="text" NAME="address" onFocus="prompt('address')">
+输入你的城市：<INPUT TYPE="text" NAME="city" onFocus="prompt('city')">
+</BODY>
+</HTML>
+```
+
+## 列表 25-6：onChange 事件处理器
+
+```html
+<HTML>
+<HEAD>
+<TITLE>onChange 事件处理器</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function checkIt(form) {
+  var fld = form.numeric;
+  if (fld.value == "") {
+    alert("请输入一个正整数。");
+    fld.focus();
+    return false;
+  }
+  for (var i = 0; i < fld.value.length; i++) {
+    var ch = fld.value.charAt(i);
+    if (ch < "0" || ch > "9") {
+      alert("请输入一个正整数。");
+      fld.focus();
+      return false;
+    }
+  }
+  return true;
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+输入任何正整数: <INPUT TYPE="text" NAME="numeric"
+onChange="checkIt(this.form)"><P>
+</FORM>
+</BODY>
+</HTML>
+```
+
+## TEXTAREA 元素对象
+
+### 属性
+
+#### cols, rows
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ | ✓ |
+
+#### 示例
+
+使用评估器（Evaluator）尝试该页面 Results textarea 的 `cols` 和 `rows` 属性设置。在顶部的文本框中输入以下语句可以缩小 textarea 的宽度：
+
+```javascript
+document.forms[0].output.cols = 30
+```
+
+并让 textarea 增加一行：
+
+```javascript
+document.forms[0].output.rows++
+```
+
+### 方法
+
+#### createTextRange()
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+#### 示例
+
+查看此书第 5 章中 `TextRange.move()` 方法的示例，了解如何控制 `TEXTAREA` 元素内部的文本插入指针。
+
+## Select, Option 和 Optgroup 对象（第 26 章）
+
+### 本章内容
+
+`SELECT` 元素是 HTML 表单库中最节省空间的设备。无论你选择弹出列表样式还是滚动列表样式，你的页面都可以为访问者提供一个视觉上紧凑的包含数百个项目的列表供选择。然而，从脚本编写的角度来看，这是一个复杂的管理项，尤其是在旧版浏览器中。
+
+事实上，`SELECT` 元素是嵌套在其内部 `OPTION` 元素的外部包装器。每个 `OPTION` 元素包含用户在列表中看到的文本，以及一个对服务器数据库或客户端脚本可能更有意义的隐藏值（value）。IE4 和 NN6 之前的浏览器的困难之处在于，要读取列表中当前选中项的隐藏值，不仅需要引用 `SELECT` 元素，还需要引用 `OPTION` 对象数组中的项。脚本通过 `options` 数组使用 `SELECT` 对象的 `selectedIndex` 属性引用，为 `SELECT` 对象提供单个值，从而返回当前选中项的值（当允许多项选择时返回第一个项的值）。
+
+许多浏览器提供了修改 `SELECT` 列表内容的脚本功能。但在那些不允许页面重流（reflow）以反映列表可能调整大小的宽度的浏览器中，其效果并不完美。
+
+关于用户界面的争论显然在激烈进行：是应该直接引导网站导航（即在做出选择后立即导航），还是用户也应该点击列表旁边的“转”（Go）按钮？对于不耐烦的访问者来说，前者更快，但后者在用户做出错误选择时不会跳转到不希望的页面。祝你在这个决定上好运。
+
+- 根据用户在弹出窗口或选择列表中的选择触发操作
+- 读取 `OPTION` 元素项的隐藏值和可见值
+- 允许多选的脚本对象
+
+### 示例亮点
+
+- 若要获取多选列表中所有选中项的值，你的脚本需要遍历 `SELECT` 元素的 `options` 数组并检查每个项的 `selected` 属性，如列表 26-4 所示。
+- 脚本还可以检索选中项的文本，而不是隐藏值。比较两个工作于 `text` 属性（列表 25-6）和 `value` 属性（列表 26-6）的类似应用程序。
+- 列表 25-6 和 26-6 显示了获取已选选项详情的兼容长引用。现代的替代方案位于 `SELECT.value` 属性的示例旁。
+- 参见 26-8，另一个通过 `SELECT` 对象的 `onChange` 事件处理程序触发脚本的示例。
+- `OPTGROUP` 元素对象的实现在列表 26-9 运行之前可能需要改进，以便其能正确修改 `SELECT` 列表内的层级标签。
+
+## SELECT 元素对象
+
+### 属性
+
+#### length
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | |
+
+#### 示例
+
+查看《JavaScript 圣经》第 26 章中的列表 26-1，以说明如何使用 `length` 属性来决定循环选中项循环的频率。因为循环计数器 `i` 必须从 0 开始，计数将持续到循环小于实际值（该值从 1 开始计数）。
+
+#### multiple
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | | | | ✓ | | ✓ | ✓ | |
+
+#### 示例
+
+以下语句在 `SIZE` 属性设置为大于 1 的 `SELECT` 对象上在单选和多选之间切换：
+
+```javascript
+document.forms[0].mySelect.multiple = true;
+```
+
+#### options[index]
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | |
+
+#### 示例
+
+查看《JavaScript 圣经》第 26 章中的列表 26-1 到 26-3，获取 `options` 数组如何引用 `SELECT` 元素内部信息的示例。
+
+#### options[index].defaultSelected
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | |
+
+#### 示例
+
+如果 `SELECT` 列表的第一个选项是默认项，以下语句将保留一个布尔值：
+
+```javascript
+var zeroDefault = document.forms[0].myName.options[0].defaultSelected;
+```
+
+#### options[index].index
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | | |
+
+#### 示例
+
+以下语句将名为 `myName` 的 `SELECT` 元素的第一个选项的索引赋值给变量：
+
+```javascript
+var itemIndex = document.forms[0].myName.options[0].index;
+```
+
+#### options[index].selected
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+```javascript
+SELECT.options.selected
+```
+
+#### 示例
+
+为了累积用户选择的所有项，列表 26-4 中的 `seeList()` 函数系统地检查列表中每个项的 `selected` 属性。每个项的 `selected` 属性被添加到列表中。我添加换行符和空格使 alert 对话框中的列表好看。如果你为每个选项分配 `value` 属性，脚本可以提取 `options[index].value` 属性来收集这些值。
+
+## 列表 26-4：遍历多选列表
+
+```html
+<HTML>
+<HEAD>
+<TITLE>列表</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function seeList() {
+  var result = "";
+  for (var i =0; i < form.accList.length; i++) {
+    if (form.accList.options[i].selected) {
+      result += "\n" + form.accList.options[i].text
+    }
+  }
+  alert("You have selected:" + result);
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+<P>按 Ctrl/Command 点击你使用的配件：
+<SELECT NAME="acclist" SIZE=9 MULTIPLE>
+<OPTION SELECTED>彩色显示器</OPTION>
+<OPTION>调制解调器</OPTION>
+<OPTION>扫描仪</OPTION>
+<OPTION>激光打印机</OPTION>
+<OPTION>磁带备份</OPTION>
+<OPTION>MO 驱动器</OPTION>
+<OPTION>摄像机</OPTION>
+</SELECT>
+<P><INPUT TYPE="button" VALUE="查看摘要..."
+onclick="seeList(this.form)"></P>
+</FORM>
+</BODY>
+</HTML>
+```
+
+#### options[index].text
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+#### 示例
+
+为了演示选项的 `text` 属性， 26-5 将选中选项的文本应用于当前窗口文档的 `document.bgColor` 属性。颜色名称是所有可脚本浏览器内置集合的一部分；幸运的是，值不区分大小写，因此你可以对显示的颜色名称进行大写并赋值。
+
+## 列表 26-5：使用 options[index].text 属性
+
+```html
+<HTML>
+<HEAD>
+<TITLE>颜色更改器1</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function seeColor(form) {
+  varColor = (form.colorsList[form.colorsList.selectedIndex].text)
+  document.bgColor =Color
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+<P>选择背景颜色：
+<SELECT NAME="colorsList">
+<OPTION SELECTED>灰色</OPTION>
+<OPTION>象牙色</OPTION>
+<OPTION>红色</OPTION>
+</SELECT></P>
+<P><INPUT TYPE="button" VALUE="更改"
+onclick="seeColor(this.form)"></P>
+</FORM>
+</BODY>
+</HTML>
+```
+
+#### options[index].value
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **兼容性** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+
+#### 示例
+
+列表 26-6 要求用户看到的选项文本应采用熟悉的多单词形式。但为了使用浏览器内置调色板设置颜色，这些单单词值存储在每个 `<OPTION>` 定义的 `VALUE` 属性中。函数随后读取 `value` 属性，并将其赋值给当前文档的 `bgColor`。如果你喜欢使用十六进制三元组格式的颜色规格，这些值会被赋值给 `VALUE` 属性（例如 `<OPTION VALUE="#99667a">Dark Salmon`）。
+
+## 列表 26-6：使用 options[index].value 属性
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Color Changer 2</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function seeColor(form) {
+  var newColor = form.options[form.colorslist.selectedIndex].value; 
+  document.body.backgroundColor = newColor
+}
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<P>Choose a background color:
+<SELECT NAME="colorsList">
+<OPTION VALUE="cornflowerblue">Cornflower Blue
+<OPTION VALUE="darksalmon">Dark Salmon
+<OPTION VALUE="lightgoldenrodyellow">Light Goldenrod Yellow
+<OPTION VALUE="seagreen">Sea Green
+</SELECT></P>
+<P><INPUT TYPE="button" VALUE="Change It" onclick="seeColor(this.form)"></P>
+</FORM>
+</BODY>
+</HTML>
+```
+
+#### selectedIndex
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **兼容性** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+#### 示例
+
+在列表 26-7 的 `inspect()` 函数中，注意 `options` 属性括号内的值是对对象 `selectedIndex` 属性的引用。由于该属性始终返回整数值，它满足了 `options` 属性对索引值的需求。因此，如果你在弹出菜单中选择 Green，`form.colorsList.selectedIndex` 返回值 1；这使得剩余的引用简化为 `form.colorsList.options[1].text`，其值等于 "Green"。
+
+## 列表 26-7：使用 selectedIndex 属性
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Select Inspector</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function Inspect(form) {
+  alert(form.colorsList.options[form.colorsList.selectedIndex].text)
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+<SELECT NAME="colorsList">
+<OPTION SELECTED>Red</OPTION>
+<OPTION VALUE="Plants"><I>Green</I></OPTION>
+<OPTION>Blue</OPTION>
+</SELECT>
+<P><INPUT TYPE="button" VALUE="Show Selection" onclick="inspect(this.form)"></P>
+</FORM>
+</BODY>
+</HTML>
+```
+
+#### size
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **兼容性** | | | | ✓ | | ✓ | ✓ | ✓ | |
+
+#### 示例
+
+以下语句将可见项目设置为 5：
+
+```javascript
+document.forms[0].mySelect.size = 5
+```
+
+#### value
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **兼容性** | | | | ✓ | | ✓ | ✓ | ✓ | |
+
+#### 示例
+
+列表 26-6 中的函数访问所选值的冗长方式可以通过以下结构针对新浏览器进行简化：
+
+```javascript
+function seeColor(form) {
+  document.bgColor = form.colorsList.value
+}
+```
+
+### 方法
+
+#### item(index)
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **兼容性** | | | | ✓ | | | | | |
+
+#### 示例
+
+以下语句将 `OPTION` 元素引用赋值给变量：
+
+```javascript
+var oneOption = document.forms[0].mySelect.item("option2")
+```
+
+### 事件处理程序
+
+#### onChange
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **兼容性** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | |
+
+#### 示例
+
+列表 26-8 是列表 26-6 的版本，它在用户从弹出菜单进行选择时触发操作。`<SELECT>` 标签中的 `onChange` 事件处理程序取代了按钮。对于此应用程序——当你希望对用户输入做出直接响应——适当的方法是从弹出菜单触发操作，而不是通过按钮。
+
+注意另外两个重要变化：首先，`SELECT` 元素包含一个空白选项。当用户访问页面时，没有任何被选中，因此应该提供一个空白选项来鼓励用户进行选择。该函数还确保用户在尝试更改颜色之前选择了其中之一。其次，`BODY` 包含一个重置表单的 `onload` 处理程序。目的是用户导航到另一个页面并使用返回按钮时，脚本调整的颜色不会保留。遗憾的是，重置对 IE4 和 IE5 无效（尽管在 IE5 中似乎已修复）。解决此问题的另一种方法是使用 `onload` 事件调用 `seeColor()`，并传递 `SELECT` 元素的引用。这样，如果 `SELECT` 元素保留，颜色将在加载后进行调整。
+
+## 列表 26-8：从弹出菜单触发颜色变化
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Color Changer 2</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function color(list) {
+  var newColor = list.options[list.selectedIndex].value;
+  if (newColor) {
+    document.body.backgroundColor = newColor
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY onload="document.forms[0].reset">
+<FORM>
+<P>Choose a background color:
+<SELECT NAME="colorsList" onChange="setColor(this)">
+<OPTION SELECTED VALUE="cornflowerblue">Cornflower Blue
+<OPTION VALUE="darksalmon">Dark Salmon
+<OPTION VALUE="lightgoldenrodyellow">Light Goldenrod Yellow
+<OPTION VALUE="seagreen">Sea Green
+</SELECT>
+</FORM>
+</BODY>
+</HTML>
+```
+
+## OPTION 元素对象
+
+### 属性：label
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **兼容性** | | | | | | | | |
+
+#### 示例
+
+以下语句修改弹出列表中作为选中的文本：
+
+```javascript
+document.forms[0].select.options[3].label = "Widget 9000"
+```
+
+如果该选项是选中的，弹出列表上的文本将变为新的 label。
+
+## OPTGROUP 元素对象
+
+### 属性：label
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **兼容性** | | | | | | | | |
+
+#### 示例
+
+我提供 26-9 是希望微软和 Netscape 最终消除影响它们 `label` 属性实现的 Bug。当该功能按预期工作时，26-9 展示了脚本如何更改选项组标签的文本。请注意 IE5/Mac 不更改最后一个 `OPTGROUP` 元素的 label，而 NN6 仅对 `SELECT` 元素中显示的文本进行部分更改。
+
+## 列表 26-9：修改 OPTGROUP 元素标签
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Color Changer 3</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+var list = document.body;
+var regularLabels = ["Reds","Greens","Blues"];
+var naturalLabels = ["Apples","Leaves","Sea"];
+function setRegularLabels(list) {
+  var optgrps = list.getElementsByTagName("OPTGROUP");
+  for (var i = 0; i < optgrps.length; i++) {
+    optgrps[i].label = regularLabels[i];
+  }
+}
+function setColorLabels(list) {
+  var optgrps = list.getElementsByTagName("OPTGROUP");
+  for (var i = 0; i < optgrps.length; i++) {
+    optgrps[i].label = naturalLabels[i];
+  }
+}
+function setColor(list) {
+  var newColor = list.options[list.selectedIndex].value;
+  if (newColor) {
+    document.bgColor = newColor;
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY onload="document.forms[0].reset()">
+<FORM>
+<P>Choose a background color:
+<SELECT name="colorsList" onChange="setColor(this)">
+<OPTGROUP id="optgrp1" label="Reds">
+  <OPTION value="#ff9999">Light Red
+  <OPTION value="#ff3366">Medium Red
+  <OPTION value="#ff0000">Bright Red
+  <OPTION value="#ff6600">Dark Red
+</OPTGROUP>
+<OPTGROUP id="optgrp2" label="Greens">
+  <OPTION value="#ccff66">Light Green
+  <OPTION value="#99ff33">中绿色
+  <OPTION value="#00ff00">亮绿色
+  <OPTION value="#006600">深绿色
+</OPTGROUP>
+<OPTGROUP ID="optGrp3" label="!蓝色系">
+  <OPTION value="#ffffff">浅蓝色
+  <OPTION value="#6ccff">中蓝色
+  <OPTION value="#0000ff">亮蓝色
+  <OPTION value="#000066">深蓝色
+</OPTGROUP>
+</SELECT></P>
+<P>
+<INPUT TYPE="radio" NAME="labels" CHECKED
+OnClick="setRegularLabels(this.form.colorsList)">普通名称
+<INPUT TYPE="radio" NAME="labels"
+OnClick="setNaturalLabels(this.form.colorsList)">自然命名</P>
+</FORM>
+</BODY>
+</HTML>
+```
+
+## 表格与列表对象（第 27 章）
+
+### 章节
+
+利用页面自动重流的动态对象模型为创意型 Web 设计师创造了巨大的机会。这一点在 `TABLE` 元素对象以及所有嵌套在其中的对象（`TR`、`TH`、`TD` 等）中体现得尤为明显。你不仅可以随时交换表格单元格的内容，对象模型还提供了强大的方法，可以动态地完全重构表格的结构。
+
+HTML 表格既是优雅的，因为它们用极少的代码为页面提供了许多悦目的组织结构；又是复杂的，因为每个元素都有大量的相关元素和一套标准的属性列表。在现代对象模型中，这些属性变成了对象属性，这意味着脚本编写人员在赋予表格生命时，有许多选择（也会感到困惑）。
+
+使用插入行和单元格的特殊方法对于许多脚本编写人员来说也需要一些初始适应。例如，在向行中插入单元格并植入内容之前，插入一行对现有表格几乎没有视觉上的影响。这些操作的代码示例是《JavaScript Bible》中关于 `TABLE` 对象的通用性讨论的一部分。
+
+目标浏览器为 IE4+/Windows 的设计师还可以利用微软的数据绑定技术。从外部源仅需极少量的 HTML 标记即可填充表格。第 15 章在讨论 `dataFile` 及相关属性时包含了这方面的示例。
+
+本章还包含了有序列表和无序列表（以及嵌套在其中的列表项）对象。这些对象与可以包含或排除元素渲染的样式表配合，为巧妙的设计师提供了额外的布局机会。
+
+### 本章内容
+
+- 修改表格单元格内容
+- 添加和删除表格行
+- 修改表格尺寸、颜色和边框
+- 更改 `Li` 元素的序列和项目符号
+
+### 示例亮点
+
+- 脚本可以调整 `TABLE` 对象的宽度属性值，包括在固定像素大小和表格容器宽度的百分比之间切换。
+- 比较 IE5/Windows `TABLE.cells` 属性与 IE4 及 NN6 的 `TR.cells` 属性示例。
+- 遵循 `TD.colSpan` 属性的示例，观察表格如何实时响应此类变化。
+- 列表元素示例展示了如何为脚本生成的列表设置类型。
+
+## TABLE 元素对象
+
+### 属性
+
+#### align
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ | ✓ |
+
+#### 示例
+
+使用“评估器”（《JavaScript Bible》第 13 章）查看 `align` 属性的作用。页面加载时，默认值（左对齐）生效。但你可以通过在 IE5+ 和 NN6 的顶部框中输入以下语句，将表格移动到右对齐主体：
+
+```javascript
+document.getElementById("myTable").align = "right"
+```
+
+#### background
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+#### 示例
+
+对待表格的 `background` 属性就像对待 `IMG` 元素对象的 `src` 属性一样。如果你预缓存了一张图片，可以将该预缓存图像对象的 `src` 属性赋值给表格的 `background` 属性，以便快速更换图片。此类赋值所示：
+
+```javascript
+document.all.myTable.background = imgArray["myTableAlternate"].src
+```
+
+#### bgColor
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | | |
+
+
+
+| 兼容性 | | | | ✓ | | ✓ | ✓ | ✓ |
+
+### 示例
+
+使用“评估器”（《JavaScript Bible》第 13 章）为表格分配颜色。在查看表格的初始状态后，在顶部框中输入以下 IE5+/NN6+ 语句：
+
+```javascript
+document.getElementById("myTable").bgColor = "lightgreen";
+```
+
+当你再次查看表格时，你会发现只有部分单元格变成了绿色。这是因为颜色也分配给了嵌套在最外表格元素内部的元素，且距离元素最近的颜色规范优先。
+
+### border
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5.5 |
+|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ |
+
+#### 示例
+
+要移除表格的所有边框（以及单元格之间的边框），使用以下语句（IE5+/NN6）：
+
+```javascript
+document.getElementById("myTable").border = 0
+```
+
+### borderColor
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5.5 |
+|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ |
+
+#### 示例
+
+假设已设置了表格的浅暗颜色，以下函数将交换它们：
+
+```javascript
+function swapColors(tableRef) {
+  var oldLight = tableRef.borderColor
+  tableRef.borderColor = tableRef.borderColorDark
+  tableRef.borderColorDark = oldLight
+}
+```
+
+### caption
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5.5 |
+|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ |
+
+#### 示例
+
+以下配合“评估器”（《JavaScript Bible》第 13 章）显示了新的标题：
+
+```javascript
+t = document.getElementById("myTable")
+a = document.createElement("CAPTION")
+b = document.createTextNode("A Caption")
+a.appendChild(b)
+t.replaceChild(a, t)
+```
+
+### cellPadding
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5.5 |
+|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | |
+
+#### 示例
+
+使用“评估器”（《JavaScript Bible》第 13 章）调整演示表格的 `cellPadding` 和 `cellSpacing` 属性。首先调整内边（IE5+/NN6）：
+
+```javascript
+document.getElementById("myTable").cellPadding = 50
+```
+
+现在，调整间距：
+
+`document.getElementById("myTable").cellSpacing = 15`
+
+观察 `cellSpacing` 如何影响单元格边线的厚度。
+
+### cells
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5.5 |
+|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ |
+
+#### 示例
+
+在 IE5+ for Windows 下配合“评估器”利用 `cells` 和 `rows` 属性计算表格的列数。在顶部框中输入以下语句：
+
+`document.all.myTable.cells.length/document.all.myTable.rows.length`
+
+结果为表格的列数。
+
+### dataPageSize
+
+| NN2 | NN3 | NN4 | NN | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+#### 示例
+
+如果你想将表格中可见的链接数据数改为15，使用以下语句：
+
+`document.all.myTable.dataPageSize = 15`
+
+### frame
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ | ✓ |
+
+#### 示例
+
+列表 27-4 展示了一个循环 `frame` 属性所有可能设置的页面。`frame` 属性值显示在表格的标题中。（早期版本的 NN6 在调整 `frame` 属性后可能无法刷新页面部分。）
+
+## 列表 27-4: 循环表格 frame 属性值
+
+```html
+<HTML>
+<HEAD>
+<TITLE>TABLE.frame 属性</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+var timeoutID
+var frameValues = ["box", "above", "rhs", "below", "lhs", "hsides", "vsides",
+"border", "void"]
+function rotateBorder(i) {
+  document.getElementById("myTABLE").frame = frameValues[i];
+  document.getElementById("myCAPTION").innerHTML = frameValues[i]
+  i = (i == frameValues.length) ? 0 : i;
+  setTimeout(rotateBorder(i + 1), 2000)
+}
+function stopRotate() {
+  clearTimeout(timeoutID);
+  document.getElementById("myTABLE").frame = "box";
+  document.getElementById("myCAPTION").innerHTML = "box"
+}
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<h1>TABLE.frame 属性</h1>
+<HR>
+<FORM NAME="controls">
+<FIELDSET>
+<LEGEND>循环表格边缘可见性</LEGEND>
+<TABLE WIDTH="100%" CELLACING="20">
+<TR>
+<TD><INPUT TYPE="button" VALUE="Cycle" onclick="rotateBorder(0)"></TD>
+<TD><INPUT TYPE="button" VALUE="Stop" onclick="stopRotate()"></TD>
+</TR>
+</TABLE>
+</FIELDSET>
+</TABLE>
+</FIELDSET>
+</FORM>
+<HR>
+<TABLE ID="myTABLE" CELLPADDING="5" BORDER="3" ALIGN="center">
+<CAPTION ID="myCAPTION">Default</CAPTION>
+<THE ID="myHEAD">
+<TR>
+<TH>河流</TH><TH>流向</TH><TH>英里</TH>
+</TR>
+</HEAD>
+<TBODY>
+<TR>
+<TD>尼罗河</TD><TD>中海</TD><TD>4160</TD><TD>6700</TD>
+</TR>
+<TR>
+<TD>刚果河</TD><TD>大西洋</TD><TD>2900</TD><TD>4670</TD>
+</TR>
+</TBODY>
+<TR>
+  <TD>尼日河</TD><TD>大西洋</TD><TD>2600</TD><TD>4180</TD>
+</TR>
+<TR>
+  <TD>赞比贝西河</TD><TD>印度洋</TD><TD>1700</TD><TD>2740</TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>
+```
+
+### height / width
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | | ✓ | ✓ | ✓ |
+
+使用评估（《JavaScript Bible》第 13 章）来调整演示表格的宽度。首先将宽度增加到页面全宽：
+
+```javascript
+document.getElementById("myTable").width = "100%"
+```
+
+要将表格恢复到最小宽度，请为属性分配一个非常小的值：
+
+```javascript
+document.getElementById("myTable").width = 50
+```
+
+如果你有 IE4+，可以对表格的 height 属性进行类似的实验。
+
+### rows
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | | ✓ | ✓ | ✓ |
+
+使用评估来检查演示表格中的行数。在顶部文本框中输入以下语句：
+
+```javascript
+document.getElementById("myTable").rows.length
+```
+
+相比之下，注意 `rows` 属性只能看到演示表格 `TBODY` 元素内的行：
+
+```javascript
+document.getElementById("myTbody").rows.length
+```
+
+### rules
+
+| NN2 | NN3 | NN4 | NN6 | IE3/11 | IE3/12 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+列表 27-5 展示了一个循环 `rules` 属性所有可能设置的页面。`rules` 属性值显示在表格的标题中。当你运行此脚本时，请注意这种 `COLGROUP` 和行元素组合的精美显示效果。早期版本的 IE 可能无法正确渲染表格，且脚本更改不会显示在页面上。
+
+## 列表 27-5: 循环 rules 属性
+
+```html
+<HTML>
+<HEAD>
+<TITLE>table.rules 属性</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+var timeoutID
+var rulesValues = ["all", "cols", "groups", "none", "rows"]
+function rotateBorder(i) {
+  document.getElementById("myTABLE").rules = rulesValues[i]
+  document.getElementById("myCAPTION").innerHTML = rulesValues[i]
+  i = (i + 1 == rulesValues.length) ? 0 : i + 1;
+  timeoutID = setTimeout(rotateBorder(i), 2000)
+}
+function stopRotate() {
+  clearTimeout(timeoutID);
+  document.getElementById("myTABLE").rules = "all"
+  document.getElementById("myCAPTION").innerHTML = "all"
+}
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<h1>table.rules</h1>
+<HR>
+<FORM NAME="controls">
+<FIELDSET>
+<LEGEND>循环表格可见性</LEGEND>
+<TABLE WIDTH="100%" CELLACING="20">
+<TR>
+<TD><INPUT TYPE="button" VALUE="Cycle" onclick="rotateBorder(0)"></TD>
+<TD><INPUT TYPE="button" VALUE="Stop" onclick="stopRotate()"></TD>
+</TR>
+</TABLE>
+</FIELDSET>
+</FORM>
+
+<TABLE ID="myTABLE" CELLPADDING="5" ALIGN="center">
+<CAPTION ID="myCAPTION">Default</CAPTION>
+<COLGROUP SPAN="1">
+<COLGROUP SPAN="3">
+<THE ID="myHEAD">
+<TR>
+<TH>河流</TH><TH>流向</TH><TH>英里</TH><TH>公里</TH>
+</TR>
+</HEAD>
+<TBODY>
+<TR><TD>尼罗河</TD><TD>中海</TD><TD>4160</TD><TD>6700</TD>
+</TR>
+<TR><TD>刚果河</TD><TD>大西洋</TD><TD>2900</TD><TD>4670</TD>
+</TR>
+<TR><TD>尼日河</TD><TD>大西洋</TD><TD>2600</TD><TD>4180</TD>
+</TR>
+<TR><TD>赞比贝西河</TD><TD>印度洋</TD><TD>1700</TD><TD>2740</TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>
+```
+
+（图 11-1：TABLE.rules 属性设置为 "groups"）
+
+### tBodies
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ |
+
+#### 示例
+
+使用评估（《JavaScript Bible》第 13 章）访问 `tBodies` 数组，并显示表格中第一个 `TBODY` 段的行数。在顶部文本框中输入以下语句：
+
+```javascript
+document.getElementById("myTable").tBodies[0].rows.length
+```
+
+### 方法
+
+#### moveRow(sourceRowIndex, destinationRowIndex)
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ |
+
+#### 示例
+
+如果你想将表格的最后一行移动到顶部，可以使用最后一个项的索引值（-1）作为第一个参数：
+
+```javascript
+var movedRow = document.all.someTable.moveRow(-1, 0)
+```
+
+## TBODY, TFOOT 和 THEAD 元素对象
+
+### 属性
+
+#### vAlign
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ |
+
+#### 示例
+
+使用评估（《JavaScript Bible》第 13 章）修改演示表格中 `TBODY` 元素的垂直对齐方式。在顶部文本框中输入以下语句将内容移动到单元格底部：
+
+```javascript
+document.getElementById("myTBody").vAlign = "bottom"
+```
+
+注意 `THEAD` 元素不受操作影响。
+
+## COL 和 COLGROUP 对象
+
+### 属性
+
+#### span
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ |
+
+#### 示例
+
+以下语句为新创建的 `COLGROUP` 元素分配了跨度为 3：
+
+```javascript
+colGroupA.span = 3
+```
+
+## TR 元素对象
+
+### 属性
+
+#### cells
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ |
+
+#### 示例
+
+使用评估（《JavaScript Bible》第 13 章）获取演示表格第二行中 `TD` 元素的数量。在顶部框中输入以下语句（W3C 语法所示）：
+
+```javascript
+document.getElementById("myTable").rows[1].cells.length
+```
+
+#### height
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ |
+
+（图 12-0）
+
+#### 示例
+
+在 IE4+ 中使用 *JavaScript Bible*) 来扩展表格第二行的高度。
+
+如果你尝试设置一个非常低的值，渲染出来的高度不会小于默认高度。
+
+#### rowIndex / sectionRowIndex
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ |
+
+#### 示例
+
+使用评估（《JavaScript Bible》第 13 章）探索演示表格中第二个物理行的 `rowIndex` 和 `sectionRowIndex` 属性值。在顶部框中输入以下每个语句（W3C 语法所示）：
+
+```javascript
+document.getElementById("myTable").rows[1].rowIndex
+document.getElementById("myTable").rows[1].sectionRowIndex
+```
+
+第一个语句的结果是 1，因为它是整个表格的第二行。但 `sectionRowIndex` 属性返回 0，因为该行是该表格 `TBODY` 元素的第一行。
+
+## TD 和 TH 元素对象
+
+### 属性
+
+#### cellIndex
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ | ✓ |
+
+#### 示例
+
+你可以重写（《JavaScript Bible》第 27 章）列表 27-2 中的单元格添加部分，以利用 `cellIndex` 属性。该过程涉及修改 `insertTableRow()` 函数，使其使用...while 结构来持续添加单元格，以匹配数据槽的数量。函数如下（加粗部分显示更改）：
+
+```javascript
+function insertTableRow(form, where) {
+  var now = new Date()
+  var now = [now.getHours(), now.getMinutes(), now.getSeconds()]
+  now.getMilliseconds()
+  clearBGColors()
+  var newCell
+  var newRow = theTableBody.insertRow(where)
+  var i = 0
+  do {
+    newCell = newRow.insertCell(i)
+    newCell.innerHTML = now[i++]
+    newCell.style.backgroundColor = "salmon"
+  } while (newCell.cellIndex < now.length)
+  updateRowCounters(form)
+}
+```
+
+这个版本主要用于演示，效率不如列表 27-2 所示的序列。`cellIndex` 属性版本可以为你提供关于该属性的一些实现思路。它还展示了该属性的动态性，即使对于全新的单元格也是如此。
+
+#### colSpan / rowSpan
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ | ✓ |
+
+#### 示例
+
+使用“评估器”（JavaScript Bible 第 13 章）来观察修改现有表格中的任一属性是如何破坏表格的。在顶部的文本框中输入以下语句：
+`document.getElementById("myTable").rows[1].cells[0].colSpan = 3`
+
+现在第二行的第一个单元格占据了三列的空间，浏览器只能将该行的另外两个定义的单元格移出表格的原始边界。尝试使用 `rowSpan` 属性来恢复原始设置，为每个属性赋值为 1。
+
+#### height
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ | ✓ |
+
+#### 示例
+
+使用“评估器”（JavaScript Bible 第 13 章）来查看设置现有表格的高度和宽度属性的结果。在顶部的文本框中输入以下每个语句，并研究演示表格中的结果（此处使用了 W3C DOM 语法）：
+
+```javascript
+document.getElementById("myTable").rows[1].cells[1].height = 100
+document.getElementById("myTable").rows[2].cells[0].width = 300
+```
+
+你可以通过为属性分配任何小值（如 1 或 0）将两个单元格恢复到原始大小。浏览器会防止单元格渲染得比显示内容所需的还要小。
+
+#### noWrap
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | | ✓ | ✓ | ✓ |
+
+#### 示例
+
+以下语句在行创建一个新单元格并设置其 `noWrap` 属性以防止文本在单元格内换行：
+
+```javascript
+newCell = newRow.insertCell(-1)
+newCell.noWrap = true
+```
+
+只有当单元格的行为必须与默认的换行样式不同时，你才需要设置此属性。
+
+## OL 元素对象
+
+### 属性
+
+#### start
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | | ✓ | ✓ | ✓ |
+
+#### 示例
+
+#### type
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ | ✓ |
+
+#### 示例
+
+以下语句生成一个新的 OL 元素并为 `type` 属性赋值，使序列字母为大写罗马数字：
+
+```javascript
+var newOL = document.createElement("OL")
+newOL.type = "I";
+```
+
+## UL 元素对象
+
+### 属性
+
+#### type
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ | ✓ |
+
+#### 示例
+
+以下语句生成一个新的 UL 元素并为 `type` 属性赋值，使项目符号字符为空心圆：
+
+```javascript
+var newUL = document.createElement("UL")
+newUL.type = "circle";
+```
+
+## LI 元素对象
+
+### 属性
+
+#### type
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ | ✓ |
+
+#### 示例
+
+参见本章之前关于 `OL.type` 和 `UL.type` 属性的示例。
+
+#### value
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | | | |
+
+#### 示例
+
+以下语句生成一个新的 OL 元素并为 `start` 属性赋值：
+
+```javascript
+var newOL = document.createElement("OL")
+newOL.start = 5
+```
+
+## 导航器和其他对象（第 27 章）
+
+本章涵盖的对象与文档有些疏远，但它们对脚本编写者来说同样重要。任何依赖于了解浏览器某些方面的脚本——特别是像 JavaScript Bible 第 14 章中描述的对象检测——都非常适合版本。NN4+ 通过 `navigator.preference()` 方法访问浏览器偏好，如列表 28-2 所示。要在生产环境页面中实现此功能，你需要使用签名脚本。在 NN4+ 中尝试 `screen.availLeft` 和 `screen.availTop` 属性，特别是在 Windows 环境下，查看任务栏如何影响这些属性。对于 IE4+/Windows，请遵循 `userProfile` 对象方法的示例序列，以查看脚本如何读取配置描述字段。
+
+### 示例亮点
+
+- 列表 28-1 提供了许多检查 `navigator` 属性的可重用函数。函数示例更多是作为脚本可能需要的特定值的演示，而不是某种超级“探测器”。确定特定的 IE 版本有点麻烦，因此观察如何通过 `navigator.appVersion` 属性来实现。
+- NN4+ 通过 `navigator.preference()` 方法访问浏览器偏好，如列表 28-2 所示。要在生产环境页面中实现此功能，你需要使用签名脚本。
+- 在 NN4+ 中尝试 `screen.availLeft` 和 `screen.availTop` 属性，特别是在 Windows 环境下，查看任务栏如何影响这些属性。
+- 对于 IE4+/Windows，请遵循 `userProfile` 对象方法的示例序列，以查看脚本如何读取配置字段。
+
+## clientInformation 对象 (IE4+) 和 navigator 对象 (全部)
+
+### 属性
+
+#### appName / appVersion / userAgent
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | |
+
+#### 示例
+
+列表 28-1 提供了许多脚本可以利用的可重用函数，用于确定当前运行浏览器的各种信息。这并不是为了做一个全的浏览器探测程序；相反，我提供了如何从关键 `navigator` 属性中提取信息以确定各种浏览器条件的示例。
+
+列表 28-1 中的所有函数都返回一个布尔值，与函数名称中的伪问题保持一致。例如，`isWindows()` 函数在浏览器是任何类型的 Windows 浏览器时返回 `true`；否则返回 `false`。（在 Internet Explorer 3 中，值为 0 表示 false，-1 表示 true，但这些值可以完美地用于 `if` 条件语句中。如果你的页面中频繁出现此类浏览器检测，考虑将这些函数移动到外部的 .js 源库中并包含在你的页面中（参阅《JavaScript Bible》第 13 章关于创建 .js 库的提示）。当你加载此页面时，它会显示一些字段，根据你使用的浏览器类型和操作系统显示每个函数的结果。
+
+## 列表 28-1：检查浏览器的函数
+
+```javascript
+<HTML>
+<HEAD>
+<TITLE>UserAgent Property Library</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+// 基础品牌判断
+function isNav() {
+  return (navigator.appName == "Netscape")
+}
+function isIE() {
+  return (navigator.appName == "Microsoft Internet Explorer")
+}
+// 操作系统平台
+function isWindows() {
+  return (navigator.appVersion.indexOf("Win") != -1)
+}
+function isWin95NT() {
+  return (isWindows() && navigator.appVersion.indexOf("Win16") == -1 &&
+  navigator.appVersion.indexOf("Windows 3.1") == -1)
+}
+function isMac() {
+  return (navigator.appVersion.indexOf("Mac") != -1)
+}
+function isMacPPC() {
+  return (isMac() && navigator.appVersion.indexOf("PPC") != -1 ||
+  navigator.appVersion.indexOf("PowerPC") != -1)
+}
+function isUnix() {
+  return (navigator.appVersion.indexOf("X11") != -1)
+}
+// 浏览器版本
+function isGeneration2() {
+  return (parseInt(navigator.appVersion) == 2)
+}
+function isGeneration3() {
+    return (parseInt(navigator.appVersion) == 3)
+}
+function isGenerationMin() {
+    return (parseInt(navigator.appVersion.charAt(0)) >= 3)
+}
+function isNav4() {
+    return (isNav() && parseFloat(navigator.appVersion) == 4.7)
+}
+function isMSIE4() {
+    return (isIE() && navigator.appVersion.indexOf("MSIE") != -1)
+}
+function isMSIE5() {
+    return (navigator.appVersion.indexOf("MSIE 5.5") == -1)
+}
+function isNN6Min() {
+    return (isNav() && parseInt(navigator.appVersion) >= 5)
+}
+// 元素引用语法
+function isDocAll() {
+    return (document.all) ? true : false
+}
+function isDocW3() {
+    return (document.getElementById) ? true : false
+}
+// 填空
+function checkBrowser() {
+    var form = document.forms[0]
+    form.brandNN.value = isNav()
+    form.brandIE.value = isIE()
+    form.win.value = isWindows()
+    form.win32.value = isWin95NT()
+    form.mac.value = isMac()
+    form.ppc.value = isMacPPC()
+    form.unix.value = isUnix()
+    form.ver30.value = isGeneration3()
+    form.ver3M.value = isGeneration3Min()
+    form.Nav4.value = isNav4_7()
+    form.Nav6Up.value = isNN6Min()
+    form.MSIE4.value = isMSIE4Min()
+    form.MSIE5.value = isMSIE5_5()
+    form.doc_all.value = isDocAll()
+    form.doc_w3c.value = isDocW3C()
+}
+</SCRIPT>
+</HEAD>
+<BODY onload="checkBrowser()">
+<h1>关于此浏览器</h1>
+<FORM>
+<h2 class="brand">Navigator:</h2>
+Netscape Navigator:<INPUT type="text" NAME="brandNN" SIZE=5>
+Internet Explorer:<INPUT type="text" NAME="brandIE" SIZE=5>
+<HR>
+<h2>浏览器版本</h2>
+3.0 (任何品牌):<INPUT type="text" NAME="ver30" SIZE=5><P>
+3 或更高 (任何品牌):<INPUT type="text" NAME="ver3Up" SIZE=5><P>
+Navigator 4.7:<INPUT type="text" NAME="Nav4_7" SIZE=5><P>
+Navigator 6:<INPUT type="text" NAME="Nav6Up" SIZE=5><P>
+MSIE 4:<INPUT type="text" NAME="MSIE4" SIZE=5><P>
+MSIE 5.5:<INPUT type="text" NAME="MSIE5" SIZE=5><P>
+<HR>
+<h2>OS 平台</h2>
+Windows:<INPUT type="text" NAME="win" SIZE=5><P>
+Windows 95/98/2000:<INPUT type="text" NAME="win32" SIZE=5><P>
+MacOS:<INPUT type="text" NAME="mac" SIZE=5><P>
+Mac PC:<INPUT type="text" NAME="ppc" SIZE=5><P>
+Unix:<INPUT type="text" NAME="unix" SIZE=5><P>
+<HR>
+<h2>元素引用样式</h2>
+使用 document.all:<INPUT type="text" NAME="doc_all" SIZE=5><P>
+使用 document.getElementById():<INPUT type="text" NAME="doc_w3c" SIZE=5><P>
+</FORM>
+</BODY>
+</HTML>
+```
+
+你可能需要组合使用这些函数。例如，如果你想创建一个影响 Navigator 2 版本的 `window.open()` 特殊情况，你需要编写布尔逻辑对浏览器进行更全面的检查。
+
+```javascript
+function isWindowBug() {
+return (isGeneration2() && isMac()) || isUnix()
+}
+```
+
+你可以在 Eric Krock 的文章中看到更多浏览器探测示例，包括关于 AOL 浏览器的详情：http://developer.netscape.com/80/browser_type.html。
+
+#### appMinorVersion
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | |
+
+使用 Evaluator（《JavaScript Bible》第 13 章）检查你浏览器的相关属性。在文本框中输入以下两个语句并观察结果：
+
+```javascript
+navigator.appVersion
+navigator.appMinorVersion
+```
+
+返回的值可能与 `appVersion` 值中显示的浏览器版本无关。
+
+#### cookieEnabled
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | |
+
+使用 Evaluator 查看你浏览器上的 `navigator.cookieEnabled` 属性值。在文本框中输入以下语句：
+
+```javascript
+navigator.cookieEnabled
+```
+
+修改 cookie 偏好以查看属性的新值。不需要重启浏览器设置即可生效。
+
+#### cpuClass
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ | |
+
+使用 Evaluator（《JavaScript Bible》第 13 章）查看 IE 如何报告你 PC 的 `cpuClass`。在文本框中输入以下语句：
+
+```javascript
+navigator.cpuClass
+```
+
+#### mimeTypes
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | | (✓) | (✓) | (✓) |
+
+关于 `mimeTypes` 属性的示例以及使用 `mime` 对象的详情，请参阅本章节后面对该对象的讨论。一些示例展示了如何使用此属性来查看 `navigator` 对象是否安装并启用了特定的 MIME 类型。
+
+#### onLine
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+使用 Evaluator（《JavaScript Bible》第 13 章）查看你 IE 浏览器的在线状态。在文本框中输入以下语句：
+
+```javascript
+navigator.onLine
+```
+
+通过检查文件菜单中的“离线工作”（Work Offline）选项来验证你的浏览模式。如果勾选，`onLine` 属性应返回 `false`。
+
+#### oscpu / platform / product / productSub / vendor / vendorSub
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | ✓ | ✓ | |
+
+配合 NN6 使用 Evaluator（《JavaScript Bible》第 13 章），在文本框中输入以下语句以查看你的客户端向你报告了什么：
+
+```javascript
+navigator.platform
+navigator.product
+navigator.productSub
+navigator.vendor
+navigator.vendorSub
+```
+
+同时检查 `navigator.userAgent` 属性的值，查看这四个属性值中有多少是在 `userAgent` 属性中暴露的。
+
+#### systemLanguage / browserLanguage / userLanguage
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | ✓ | ✓ |
+
+```javascript
+navigator.systemLanguage
+```
+
+#### 示例
+
+使用《JavaScript Bible》第 13 章中的评估器（Evaluator）配合你的 IE4+ 浏览器，比较计算机上运行的三个与语言相关的属性的值。在顶部的文本框中输入每个语句：
+
+```javascript
+navigator.browserLanguage
+navigator.systemLanguage
+navigator.userLanguage
+```
+
+如果所有三个属性都返回相同的值，请不要感到惊讶。
+
+### 方法
+
+#### preference(name [, val])
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | ✓ | | | | | |
+
+#### 示例
+
+列表 28-2 中的页面显示了几个偏好设置的复选框，外加一个显示浏览器磁盘缓存大小偏好值的文本框。要在不签名脚本的情况下运行此脚本，请开启《JavaScript Bible》第 46 章中指定的 `codebase` 权限。（CD-ROM 光盘上的列表没有使用脚本。）
+
+一个函数读取所有偏好并相应设置表单控件值。另一个函数在你点击复选框时设置偏好。由于三个 cookie 设置之间的相互作用，在每次设置后让脚本重新运行 `showPreferences()` 函数，比你尝试手动控制三个复选框的属性要容易。重新运行该函数也有助于你设置偏好。
+
+> 列表 28-2：读取和写入浏览器偏好
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Reading/Writing Browser Preferences</TITLE>
+<SCRIPT LANGUAGE="JavaScript1.2">
+function setPreference(pref, value) {
+  netscape.security.PrivilegeManager.enablePrivilege(
+    "UniversalPreferencesWrite"
+  )
+  navigator.preference(pref, value)
+  netscape.security.PrivilegeManager.revertPrivilege(
+    "UniversalPreferencesWrite"
+  )
+  showPreferences()
+}
+function showPreferences() {
+  var form = document.forms[0]
+  netscape.security.PrivilegeManager.enablePrivilege("UniversalPreferencesRead")
+  form.isLoading = navigator.preference("general.always_load_images")
+  form.cacheSize = navigator.preference("browser.cache_disk_cache_size")
+  form.isEnabled = navigator.preference("browser.enable_style_sheets")
+  form.autoEnabled = navigator.preference("autoupdate.enabled")
+  var cookieSetting = navigator.preference("network.cookie.cookieBehavior")
+  for (var i = 0; i < 3; i++) {
+    form.elements["cookie" + i].checked = (i == cookieSetting) ? true : false
+  }
+  form.cookieWarn.checked = 
+    navigator.preference("network.cookie.warnAboutCookies")
+  netscape.security.PrivilegeManager.revertPrivilege("UniversalPreferencesRead")
+}
+</SCRIPT>
+</HEAD>
+<BODY onload="showPreferences()">
+<h1>Browser Preferences Settings Sampler</h1>
+<BR>
+<FORM>
+<input type="checkbox" name="imgLoad"
+onclick="setPreference('general.always_load_images',this.checked)">
+自动加载图像<BR>
+<input type="checkbox" name="ssEnabled"
+onclick="setPreference('browser.enable_style_sheets',this.checked)">
+启用样式表<BR>
+<input type="checkbox" name="autoEnabled"
+onclick="setPreference('autoupdate.enabled',this.checked)">
+启用自动更新<BR>
+<input type="checkbox" name="cookie0"
+onclick="setPreference('network.cookie.cookieBehavior',0)">
+接受所有 Cookie<BR>
+<input type="checkbox" name="cookie1"
+onclick="setPreference('network.cookie.cookieBehavior',1)">
+仅接受服务器返回的 Cookie<BR>
+<input type="checkbox" name="cookie2"
+onclick="setPreference('network.cookie.cookieBehavior',2)">
+禁用 Cookie<BR>
+<input type="checkbox" name="cookieWarn"
+onclick="setPreference('network.cookie.warnAboutCookies',this.checked)">
+在接受 Cookie 前警告<BR>
+磁盘缓存为 <input type="text" name="cacheSize" SIZE=10> KB <BR>
+</FORM>
+</BODY>
+</HTML>
+```
+
+## screen 对象
+
+### 属性
+
+#### availLeft / availTop
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | ✓ | ✓ | | | | |
+
+#### 示例
+
+如果你是 Windows 用户，可以通过评估器（《JavaScript Bible》第 13 章）尝试这些 NN4+ 属性。当任务栏位于屏幕底部时，在顶部框框中输入这两个语句：
+
+```javascript
+screen.availLeft
+screen.availTop
+```
+
+接下来，将任务栏拖到屏幕顶部并再次尝试这两个语句。现在，将任务栏拖到屏幕左边缘并再次尝试这些语句。
+
+## userProfile 对象
+
+### 方法
+
+#### addReadRequest("attributeName")
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+如果你是 Windows 用户，可以通过评估器（《JavaScript Bible》第 13 章）尝试这些 NN4+ 属性。当任务栏位于屏幕底部时，
+
+### 示例亮点
+
+- IE4+ 事件对象中至少包含四对坐标值属性。列表 29-14 帮助你理解每对值相对于普通主体元素以及定位元素代表的含义。请按照建议的步骤操作，以在各种上下文中增强属性的含义。
+- 查看列表 29-16 获取三个键盘事件的键盘字符数据。同样，请按照建议的步骤理解不同键盘事件类型以及不同类型按键（字符与非字符）之间的重要区别。
+- 列表 29-17 展示了如何在 IE4+ 事件模型中派生接收事件元素的引用。
+- NN6 键盘事件在列表 29-18 中得到了充分演示，特别是字符码和按键码如何揭示不同键盘事件类型的重要细节。
+- 当你运行列表 29-19 并点击不同的元素时，NN6 的所有四对事件坐标属性都会被报告。
+- 列表 29-20 展示了与 NN6 事件的 `currentTarget` 和 `eventPhase` 属性相关的重要概念。准备好在页面和源代码上花时间，理解事件如何在元素层级结构中传播。
+- 列表 29-23 使用 NN6 事件的 `timeStamp` 来计算文本框内的实时打字速度。
+
+## NN4 事件对象
+
+### 属性
+
+#### data
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | ✓ | | | | | |
+
+#### 示例
+
+列表 29-12 中的页面仅包含一个 `TEXTAREA`，其中列出了拖拽项目的 URL。按照《JavaScript Bible》第 46 章的指示，在代码库主体（codebase principals）上无需签名即可运行此脚本。要进行此实验，加载页面并将任何代表文件、应用程序或文件夹的桌面图标拖到窗口中。选择多个项目并一次性拖入。由于 `onDragDrop` 事件处理程序返回 `false`，文件不会被加载到窗口中。如果你只想查看 URL 并仅允许某些项目进行处理，你需要生成一个 `if...else` 结构，根据需要向事件处理程序返回 `true` 或 `false`。返回 `true` 值允许在你的事件处理函数完成处理后，正常发生 `DragDrop` 事件的处理。
+
+## 列表 29-12: 获取 DragDrop 事件 data 属性的 URL
+
+```javascript
+<HTML>
+<HEAD>
+<TITLE>拖放操作</TITLE>
+<SCRIPT LANGUAGE="JavaScript1.2">
+function handleDrag(evt) {
+  netscape.security.PrivilegeManager.enablePrivilege("UniversalBrowserRead")
+  var URLArray = evt.data
+  netscape.security.PrivilegeManager.disablePrivilege("UniversalBrowserRead")
+  if (URLArray) {
+    document.forms[0].output.value = URLArray.join("\n")
+  } else {
+    document.forms[0].output.value = "Nothing found."
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY onDragDrop="return handleDrag(event)">
+<B>将 URL 拖到此窗口（仅限 NN4）。</B>
+<HR>
+<FORM>
+URLs:<BR>
+<TEXTAREA NAME="output" COLS=70 ROWS=4></TEXTAREA><BR>
+<INPUT TYPE="reset">
+</FORM>
+</BODY>
+</HTML>
+```
+
+#### layerX / layerY / pageX / pageY / screenX / screenY
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | ✓ | | | | | |
+
+#### 示例
+
+你可以通过列表 29-13 中的页面看到坐标系统及相关属性的效果。页面部分包含一个层（layer）、页面（page）和屏幕（screen）级属性读取器。提供了两个可点击的对象，以便你可以看到不在任何层中的对象与位于层内的对象之间的差异。未被层找到的对象，其在事件对象属性中的层坐标和页面坐标是相同的。
+
+额外的读取显示了调整窗口大小和移动窗口的事件坐标。如果你在 Windows 下最大化窗口，浏览器的左上角实际上在视线之外，位于左上方四个像素处。这就是为什么 `screenX` 和 `screenY` 的值为 -4 的原因。
+
+## 列表 29-13: NN4 事件坐标属性
+
+```javascript
+<HTML>
+<HEAD>
+<TITLE>X 和 Y 事件属性</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function checkCoords(ev) {
+  var form = document.forms[0]
+  form.layerCoords.value = ev.layerX + ", " + ev.layerY
+  form.pageCoords.value = ev.pageX + ", " + ev.pageY
+  form.screenCoords.value = ev.screenX + ", " + ev.screenY
+}
+function checkSize(ev) {
+  document.forms[0].resizeCoords.value = ev.layerX + ", " + ev.layerY
+}
+function checkLoc(ev) {
+  document.forms[0].moveCoords.value = ev.screenX + ", " + ev.screenY
+}
+</SCRIPT>
+<BODY onresize="checkSize(event)" onmove="checkLoc(event)">
+<h1>X 和 Y 事件属性 (NN4)</h1>
+<HR>
+<p>点击此处以查看事件属性。</p>
+<FORM name="output">
+<TABLE>
+<TR><TD colspan="2">坐标：</TD></TR>
+<TR><TD align="right">layerX, layerY:</TD><INPUT type="text" name="layerCoords" size="10"></TR>
+<TR><TD align="right">pageX, pageY:</TD><INPUT type="text" name="pageCoords" size="10"></TR>
+<TR><TD align="right">screenX, screenY:</TD><INPUT type="text" name="screenCoords" size="10"></TR>
+</TABLE>
+</FORM>
+</BODY>
+</HTML>
+```
+
+## IE4+ 事件对象
+
+### 属性
+
+#### clientX / clientY / offsetX / offsetY / screenX / screenY / x / y
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+## 列表 29-14: IE4+ 事件属性
+
+```javascript
+<HTML>
+<HEAD>
+<TITLE>X 和 Y 事件属性 (IE4+)</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function checkCoords() {
+  var form = document.forms[0];
+  form.clientCoords.value = event.clientX + ", " + event.clientY;
+  form.pageCoords.value = event.scrollLeft + ", " + event.scrollTop;
+  form.offsetCoords.value = event.offsetX + ", " + event.offsetY;
+  form.screenCoords.value = event.screenX + ", " + event.screenY;
+  form.xyCoords.value = event.x + ", " + event.y;
+}
+</SCRIPT>
+</HEAD>
+<BODY onmousemove="checkCoords()">
+<h1>X 和 Y 事件属性 (IE4+)</h1>
+<HR>
+<p>在区域内移动鼠标查看事件对象的坐标值。</p>
+<FORM name="output">
+<TABLE>
+<TR><TD colspan="2">IE 鼠标事件坐标：</TD></TR>
+<TR><TD align="right">clientX, clientY:</TD><INPUT type="text" name="clientCoords" size="10"></TR>
+<TR><TD align="right">pageCoords:</TD><INPUT type="text" name="pageCoords" size="10"></TR>
+<TR><TD align="right">offsetX, offsetY:</TD><INPUT type="text" name="offsetCoords" size="10"></TR>
+<TR><TD align="right">screenX, screenY:</TD><INPUT type="text" name="screenCoords" size="10"></TR>
+<TR><TD align="right">x, y:</TD><INPUT type="text" name="xyCoords" size="10"></TR>
+</TABLE>
+</FORM>
+<DIV ID="display" STYLE="position:relative; left:100">
+<IMG SRC="nile.gif" WIDTH=320 HEIGHT=240 BORDER=0>
+</DIV>
+</BODY>
+</HTML>
+```
+
+你可以对从列表 29-14 加载的页面尝试一些任务，以帮助理解各种坐标属性对之间的关系：
+
+1. 点击“Click Here”标签上“i”字母上方的圆点。目标元素是按钮（`INPUT`）元素，其 `offsetParent` 是一个表格单元格。`offsetY` 值非常低，因为你正靠近元素坐标空间的顶端。然而，客户端坐标（以及 `x` 和 `y`）是相对于窗口的可视区域的。如果你的浏览器窗口在 Windows 中最大化，`screenX` 和 `clientY` 的值将相同；`screenY` 和 `client` 之间的差异是内容区域上方所有窗口装饰（chrome）的高度。在完全不滚动窗口的情况下，客户端坐标与不考虑滚动的情况是一致的。
+
+2. 写下各种坐标并稍微向下滚动页面（点击滚动条会触发事件），然后再次点击按钮上的圆点。`clientY` 值缩小了，因为页面相对于可视区域向上移动了，使得相对于底部较小区域顶部的测量值发生了变化。Windows 版本在处理 `offset` 属性时表现正确，它继续返回相对于元素自身坐标空间的值；遗憾的是，Mac 版本会从 `offset` 属性中减去滚动量。
+
+3. 点击大图像。客户端属性在 Windows 和 Mac 上表现都符合预期，`screen` 属性也是如此。对于 Windows，`x` 和 `y` 属性正确地返回了相对于 `IMG` 元素 `offsetParent` 的事件坐标，该 `offsetParent` 是包围它的 `DIV` 元素。但注意，浏览器“看到” `DIV` 是从图像左侧 10 像素开始的。在 IE5.5/Windows 中，你可以点击图像左侧这十个边缘像素内来点击 `DIV` 元素。这种内边距（padding）是原子化插入的，并影响 `x` 和 `y` 属性的坐标。测量图像内部事件更可靠的方法是使用 `offset` 属性。在 Macintosh 版本中也是如此，只要页面没有滚动；如果滚动，就像步骤 2 中一样，滚动会影响上述值。
+
+4. 点击标题下的第一个 `HR` 元素。可能需要尝试几次才能击中该元素（当 `HR` 元素出现在 `srcElement` 框中时，你就击中了）。这是为了强化客户端属性提供元素内部坐标的方式（再次强调，Mac 上在页面滚动时除外）。通过点击规则的最左侧，你最终找到了 0, 0 坐标。
+
+(IE) event.clientX
+
+最后，如果你是 Windows 用户，这里有两个示例可以尝试，以观察坐标属性的一些意料之外的行为。
+
+1. 在页面未滚动的情况下，点击页面右侧的任何位置，远离 `BODY` 元素作为 `srcElement` 的任何文本。因为 `BODY` 元素理论上填充了浏览器窗口的所有内容区域，除了屏幕坐标外的所有坐标对都应该是相同的。`offset` 属性比客户端属性少 2 像素。总的来说，这种差异在你的脚本中并不重要，但如果精确定位很重要，你应该意识到这种潜在的差异。由于某些不明原因，`offset` 属性的测量空间与客户端属性相对于窗口左侧和顶部的空间是一致的。在 Macintosh 版本中并非如此，从 `BODY` 角度来看，所有值对都是相同的。
+
+2. 点击 `H1` 或 `P` 元素的文本（紧邻页面顶部和底部）。理论上，`offset` 属性应该相对于这些元素占据的矩形（毕竟它们是块级元素）。但事实相反，它们是在与客户端属性相同的空间内测量的（外加 2 个像素）。这种意外的行为与光标是否为文本光标无关，因为如果你点击任何文本元素内部，它们的 `offset` 属性都会正确地相对于它们自身的矩形。这个问题不影响 Macintosh 版本。
+
+你可以在《JavaScript Bible》第 31 章关于在 IE 页面上移动元素的讨论中看到更多重要事件坐标属性的示例。
+
+#### fromElement / toElement
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+`fromElement` 和 `toElement` 属性可以揭示光标进入元素后的轨迹。当你将光标移动到中间框（一个表格单元格）时，它的 `mouseOver` 处理程序会显示光标进入的表格单元格。例如在图 13-1 中，用户刚刚将光标从西框（West box）移动到中间框。如果光标来自某个角（很难做到），则会显示不同的消息。
+
+## 列表 29-15：使用 toElement 和 fromElement
+
+```html
+<HTML>
+<HEAD>
+<TITLE>fromElement and toElement</TITLE>
+<STYLE TYPE="text/CSS">
+.direction {background-color:#FFFF; width:100; height:50;}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+function checkFromTo() {
+  var form = document.forms[0];
+  var from = event.fromElement;
+  var to = event.toElement;
+  if (from && to) {
+    form.from.value = from.id;
+    form.to.value = to.id;
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY onmouseover="checkFromTo()">
+<h1>fromElement 和 toElement</h1>
+<HR>
+<TABLE>
+<TR>
+<TD CLASS="direction" ID="west">West</TD>
+<TD CLASS="direction" ID="center">Center</TD>
+<TD CLASS="direction" ID="east">East</TD>
+</TR>
+</TABLE>
+<FORM name="output">
+From: <INPUT type="text" name="from" size="10">
+To: <INPUT type="text" name="to" size="10">
+</FORM>
+</BODY>
+</HTML>
+```
+
+
+
+# 第13章 ♦ 事件对象（第29章） 415
+
+```html
+</FORM>
+
+<DIV ID="display" STYLE="position:relative; left:100">
+
+<IMG SRC="nile.gif" WIDTH=320 HEIGHT=240 BORDER=0>
+
+</DIV>
+
+</BODY>
+
+</HTML>
+```
+
+你可以对从列表 29-14 加载的页面尝试一些任务，以帮助理解各种坐标属性对之间的关系：
+
+1. 点击“Click Here”标签上“i”字母上方的圆点。目标元素是按钮（`INPUT`）元素，其 `offsetParent` 是一个表格单元格。`offsetY` 值较低，因为你正靠近元素坐标空间的顶端。然而，客户端坐标（以及 `x` 和 `y`）是相对于窗口的可视区域的。如果你的浏览器窗口在 Windows 中最大化，`screenX` 和 `clientY` 的值将相同；`screenY` 和 `clientY` 之间的差异是内容区域上方所有窗口装饰的高度。在完全不滚动窗口的情况下，客户端坐标与不考虑滚动的情况是一致的。
+
+2. 写下各种坐标并稍微向下滚动页面（点击滚动条会触发事件），然后再次点击按钮上的圆点。`clientY` 值缩小了，因为页面相对于可视区域向上移动了，使得相对于底部较小区域顶部的测量值发生了变化。Windows 版本在处理 `offset` 属性时表现正确，它继续返回相对于元素自身坐标空间的值；遗憾的是，Mac 版本会从 `offset` 属性中减去滚动量。
+
+3. 点击图像。客户端属性在 Windows 和 Mac 上表现都符合预期，`screen` 属性也是如此。对于 Windows，`x` 和 `y` 属性正确地返回了相对于 `IMG` 元素 `offsetParent` 的事件坐标，该 `offsetParent` 是包围它的 `DIV` 元素。但注意，浏览器认为 `DIV` 是从图像左侧 10 像素开始的。在 IE5.5/Windows 中，你可以点击图像左侧这十个边缘像素内来点击 `DIV` 元素。这种内边距是原子化插入的，并影响 `x` 和 `y` 属性的坐标。测量图像内部更可靠的方法是使用 `offset` 属性。在 Macintosh 版本中也是如此，只要页面没有滚动；如果滚动，就像步骤 2 中一样，滚动会影响上述值。
+
+4. 点击标题下的第一个 `HR` 元素。可能需要尝试几次才能击中该元素（当 `HR` 元素出现在 `srcElement` 框中，你就击中了）。这是为了强化客户端属性提供元素内部坐标的方式（再次强调，Mac 上在页面滚动时除外）。通过点击规则的最左侧，你最终找到了 0, 0 坐标。
+
+![](img/144de829a231bb2cbf5843e2f444fc0b_436_0.png)
+
+(IE) `event.clientX`
+
+最后，如果你是 Windows 用户，这里有两个示例可以尝试，以观察坐标属性的一些意料之外的行为。
+
+1. 在页面未滚动的情况下，点击页面右侧的任何位置，远离 `BODY` 元素作为 `srcElement` 的任何文本。因为 `BODY` 元素理论上填充了浏览器窗口的所有内容区域，除了屏幕坐标外的所有坐标对都应该是相同的。`offset` 属性比所有属性少两个像素。总的来说，这种差异在你的脚本中并不重要，但如果精确定位很重要，你应该意识到这种潜在的差异。由于某些不明原因，`offset` 属性的测量空间与客户端属性相对于窗口左侧和顶部的空间相同。在 Macintosh 版本中并非如此，从 `BODY` 角度来看，所有值对都是相同的。
+
+2. 点击 `H1` 或 `P` 元素的文本（紧邻页面顶部和底部）。理论上，`offset` 属性应该相对于这些元素占据的矩形（毕竟它们是块级元素）。但事实相反，它们是在与客户端属性相同的空间内测量的（外加 2 个像素）。这种意外的行为与光标是否为文本光标无关，因为如果你点击任何文本元素内部，它们的 `offset` 属性都会正确地相对于它们自身的矩形。这个问题不影响 Macintosh 版本。
+
+你可以在《JavaScript Bible》第 31 章关于在 IE 页面上移动元素的讨论中看到更多重要事件坐标属性的示例。
+
+## `fromElement` `toElement`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Compatibility | | | | | | ✓ | ✓ |
+
+`fromElement` 和 `toElement` 属性可以揭示光标进入元素后的轨迹。当你将光标移动到中间框（一个表格单元格）时，它的 `mouseOver` 处理程序会显示光标进入的表格单元格。例如在图 13-1 中，用户刚刚将光标从西框（West box）移动到中间框。如果光标来自某个角（很难做到），则会显示不同的消息。
+
+# 列表 29-15：使用 `toElement` 和 `fromElement`
+
+```html
+<HTML>
+
+<HEAD>
+
+<TITLE>fromElement and toElement</TITLE>
+
+<STYLE TYPE="text/CSS">
+
+.direction {background-color:#FFFF; width:100; height:50;}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function showArrival() {
+
+  var direction = (event.fromElement ? event.fromElement.innerText : "unknown");
+
+  status = "Arrived from: " + direction
+
+}
+
+function showDeparture() {
+
+  var direction = (event.toElement ? event.toElement.innerText : "unknown");
+
+  status = "Departed to: " + direction
+
+}
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY>
+
+<h1>fromElement and toElement</h1>
+
+<HR>
+
+<P>Roll the mouse to the center box and look for arrival in the status. Roll the mouse away from the center box and look for departure in the status.</P>
+
+<TABLE CELLPADDING="5">
+
+<tr><td>North</td><input type="text" name="down" size="3"></td></tr>
+
+<tr><td>West</td><input type="text" name="press" size="3"></td></tr>
+
+<tr><td id="main" onmouseover="showArrival()" onmouseout="showDeparture()">East</td></tr>
+
+<tr><td>South</td><input type="text" name="up" size="3"></td></tr>
+
+</TABLE>
+
+</BODY>
+
+</HTML>
+```
+
+# 第 13 章 ♦ 事件对象（第 29 章） 427
+
+## `clientX` `clientY` `layerX` `layerY` `pageX` `pageY` `screenX` `screenY`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | | | | |
+
+## 示例
+
+你可以在列表 29-19 中看到坐标系以及相关的 NN6 属性对页的影响。你可以查看四个测量系统的坐标值，以及一些计算值。提供了两个可点击的对象，以便你可以看到不位于任何层中的对象与位于层内的对象之间的区别（尽管你看到的任何内容都是点击的，包括文本节点）。图 13-3 显示了在定位层内进行点击的结果。
+
+![](img/144de829a231bb2cbf5843e2f444fc0b_446_0.png)
+
+点击按钮和 DIV/图像以查看事件对象的坐标值。
+
+NN6 鼠标事件坐标
+
+| target | value |
+|---|---|
+| clientX, clientY | 124,353 滚动 124,362 |
+| layerX, layerY | 16,6 |
+| pageX, pageY | 124,362 元素内 16,6 |
+| screenX, screenY | 124,449 |
+
+**图 13-3:** 定位元素内点击的 NN6 事件坐标
+
+## JavaScript 示例大全：JavaScript Bible 必备伴侣
+
+计算字段之一将窗口滚动值应用到客户端坐标，但正如你所看到的，这些计算值与方便的页面坐标相同。另一个计算字段显示了相对于目标元素矩形空间的坐标。注意代码中的节点 `nodeType` 表明这是一个测试节点，该父节点（一个元素）被用于计算。
+
+### 29-19: NN6 事件坐标属性
+
+```html
+<HTML>
+
+<TITLE>X 和 Y 事件属性 (NN6+)</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function checkCoords(evt) {
+
+ var form = document.forms["output"]
+
+ var target, targElem
+
+ if (evt.target.nodeType == 3) {
+
+ target = "[testnode] inside " + evt.target.parentNode.tagName + ">"
+
+ targElem = evt.target.parentNode
+
+ } else {
+
+ target = "<" + evt.target.tagName + ">"
+
+ targElem = evt.target
+
+}
+
+ form.cellvalue = target
+
+ form.clientCoords.value = evt.clientX + ", " + evt.clientY
+
+ form.scrollCoords.value = (evt.clientX + window.scrollX) + ", " + (evt.clientY + window.scrollY)
+
+ form.layerCoords.value = evt.layerX + ", " + evt.layerY
+
+ form.pageCoords.value = evt.pageX + ", " + evt.pageY
+
+ form.elemCoords.value = (evt.pageX - targElem.offsetLeft - document.body.offsetLeft) + ", " + (evt.pageY - targElem.offsetTop - document.body.offsetTop)
+
+ form.screenCoords.value = evt.screenX + ", " + evt.screenY
+
+ return false;
+
+}
+
+</SCRIPT>
+
+<body onmousedown="checkCoords(event)">
+
+<h1>X 和 Y 事件属性 (NN6+)</h1>
+
+<HR>
+
+<P>点击按钮和 DIV/图像以查看事件对象的坐标值。</P>
+
+<FORM NAME="output">
+
+<TABLE>
+
+<TR><TD COLSPAN="2">NN6 鼠标事件坐标:</TD></TR>
+
+<TR><TD ALIGN="right">target:</TD><TD><input type="text" NAME="cellvalue" SIZE="25"></TD></TR>
+
+<TR><TD ALIGN="right">...With scrolling:</TD><TD><input type="text" NAME="scrollCoords" SIZE="10"></TD></TR>
+
+<TR><TD ALIGN="right">clientX, clientY:</TD><TD><input type="text" NAME="clientCoords" SIZE="10"></TD></TR>
+
+<TR><TD ALIGN="right">layerX, layerY:</TD>
+
+<TD><INPUT TYPE="text" NAME="layerCoords" SIZE=10></TD></TR>
+
+<TR><TD ALIGN="right">pageX, pageY:</TD>
+
+<TD><INPUT TYPE="text" NAME="pageCoords" SIZE=10></TD></TR>
+
+<TR><TD ALIGN="right">Within Element:</TD>
+
+<TD><INPUT TYPE="text" NAME="elemCoords" SIZE=10></TD></TR>
+
+<TR><TD ALIGN="right">screenX, screenY:</TD>
+
+<TD><INPUT TYPE="text" NAME="screenCoords" SIZE=10></TD></TR>
+
+<TR><TD ALIGN="right">button:</TD>
+
+<TD><INPUT TYPE="text" NAME="button" VALUE="Click Here"></TD></TR>
+
+</TABLE>
+
+</FORM>
+
+<div id="display" STYLE="position:relative; left:100">
+
+<IMG SRC="nile.gif" WIDTH=320 HEIGHT=240 BORDER=0>
+
+</div>
+
+</BODY>
+
+</HTML>
+```
+
+## `currentTarget`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | ✓ | | | | | |
+
+## 示例
+
+列表 29-20 显示了 `currentTarget` 揭示元素。与 29-7 相比，这个示例更简单，因为 `currentTarget` 处理更多。
+
+### 29-20: `currentTarget` 和事件
+
+```html
+<HTML>
+
+<HEAD>
+
+<TITLE>currentTarget 事件属性</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function init() {
+
+  // turn event
+
+  body.onclick = processEvent
+
+}
+
+</SCRIPT>
+
+</HEAD>
+
+</HTML>
+```
+
+# JavaScript 示例宝经：JavaScript Bible 的核心伴侣
+
+## 列表 29-21（续接）
+
+```html
+<SCRIPT LANGUAGE="JavaScript">
+
+function showArrival(evt) {
+
+  if (evt.target) {
+
+    var direction = (evt.relatedTarget.firstChild) ?
+
+    evt.relatedTarget.firstChild.nodeValue : "parts unknown"
+
+    status = "Arrived from: " + direction
+
+  }
+
+}
+
+function showDeparture(evt) {
+
+  if (evt.target.type == 1) {
+
+    if (evt.relatedTarget != evt.target.firstChild) {
+
+      var direction = (evt.relatedTarget.firstChild) ?
+
+      evt.relatedTarget.firstChild.nodeValue : "parts unknown"
+
+      status = "Departed to: " + direction
+
+    }
+
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY>
+
+<H1>relatedTarget 属性</H1>
+
+<HR>
+
+<P>将鼠标移到中间框，并在状态栏中查看到达信息。将鼠标移出中间框，并在状态栏中查看离开信息。</P>
+
+<TABLE CELLSPACING=0 CELLPADDING=5>
+
+<TR><TD CLASS="direction">North</TD></TR>
+
+<TR><TD CLASS="direction">West</TD></TR>
+
+<TR><TD id="main" onmouseover="showArrival(event)">Roll</TD></TR>
+
+<TR><TD CLASS="direction">East</TD></TR>
+
+<TR><TD CLASS="direction">South</TD></TR>
+
+</TABLE>
+
+</BODY>
+
+</HTML>
+```
+
+## `target`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | ✓ | | | | | |
+
+## 示例
+
+作为 `target` 属性能力的简化演示，列表 29-22 为 `BODY` 元素设置了两个 `onmousedown` 和 `onmouseup` 事件处理器，每个处理器都会调用单个 (NN6) `eventObject.target` 函数。其思路是 `onMouseDown` 和 `onMouseUp` 事件将从其目标向上触发，事件处理器函数将找到哪个元素是目标，并修改该元素的颜色样式。
+
+脚本中还增加了一个额外的特性，即每个函数还会检查元素的 `className` 属性。如果 `className` 是 `bold`——这是段落中三个 `SPAN` 元素共享的类名——则该类的样式表规则将被修改颜色。你的脚本可以在过滤到达函数的对象方面做得更多，以便对某些对象或对象组执行特殊操作。
+
+注意，脚本不需要了解页面上对象的任何信息即可单独处理每个点击的元素。这是因为 `target` 属性提供了操作目标元素所需的全部特殊性。
+
+### 列表 29-22：使用 `target` 属性
+
+```html
+<HTML>
+
+<head>
+
+<title>target Property</title>
+
+<style type="text/css">
+
+.bold {font-weight:bold}
+
+.ital {font-style:italic}
+
+</style>
+
+<script language="JavaScript">
+
+function highlight(evt) {
+
+  var elem = (evt.target.nodeType == 3) ? evt.target.parentNode : evt.target
+
+  if (elem.className == "bold") {
+
+    document.styleSheets[0].cssRules[0].style.color = "red"
+
+  } else {
+
+    elem.style.color = "#FFCC00"
+
+  }
+
+}
+
+function restore(evt) {
+
+  var elem = (evt.target.nodeType == 3) ? evt.target.parentNode : evt.target
+
+  if (elem.className == "bold") {
+
+    document.styleSheets[0].cssRules[0].style.color = "black"
+
+  } else {
+
+    elem.style.color = "black"
+
+  }
+
+}
+
+</script>
+
+</head>
+
+<body onmousedown="highlight(event)" onmouseup="restore(event)">
+
+<h1>target Property</h1>
+
+<hr>
+
+<p>One event handler...</p>
+
+<ul>
+
+<li>Can</li>
+
+<li>Cover</li>
+
+<li>Many</li>
+
+<li>Objects</li>
+
+</ul>
+
+<p>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+<SPAN CLASS="bold">sed do <span></span>eiusmod tempor incididunt</SPAN>
+
+<SPAN CLASS="ital">ut aut labore et dolore. aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <span class="bold">commodo consequat</span>.
+
+</P>
+
+</BODY>
+
+</HTML>
+```
+
+## `timeStamp`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | ✓ | | | | | |
+
+## 示例
+
+列表 29-23 使用 `target` 属性计算瞬时值（见图 29-4）。
+
+```html
+<HTML>
+
+<head>
+
+<title>target Property</title>
+
+<script language="JavaScript">
+
+function showArrival(evt) {
+
+  if (evt.target) {
+
+    var direction = (evt.relatedTarget.firstChild) ?
+
+    evt.relatedTarget.firstChild.nodeValue : "parts unknown"
+
+    status = "Arrived from: " + direction
+
+  }
+
+}
+
+</script>
+
+</head>
+
+</HTML>
+```
+
+# 第 14 章 ♦ 样式表对象（第 30 章） 437
+
+最后，在顶部文本框中输入以下语句，用完全全新的规则覆盖样式表。
+
+```javascript
+document.styleSheets[0].cssText = "P {color:red}"
+```
+
+完成后，刷新页面以恢复原始状态。
+
+## `disabled`（禁用）
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | ✓ | | ✓ | ✓ | ✓ |
+
+## 示例
+
+使用 The Evaluator（《JavaScript Bible》第 13 章）在页面上第一个 StyleSheet 对象的启用和禁用状态之间切换。在顶部文本框中输入以下语句：
+
+```javascript
+document.styleSheets[0].disabled = (!document.styleSheets[0].disabled)
+```
+
+引入 NOT 运算符 (!) 会强制状态在每次点击 Evaluate（评估）按钮时从 true 变为 false，或从 false 变为 true。
+
+## `ownerNode`（所有节点）
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | ✓ | | | | | |
+
+## 示例
+
+使用 NN6 配合 The Evaluator 检查文档第一个 StyleSheet 对象的 `ownerNode`。在顶部文本框中输入以下语句：
+
+```javascript
+document.styleSheets[0].ownerNode.tagName
+```
+
+返回的值是 `STYLE` 元素的标签名。
+
+## `owningElement`（所有者元素）
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+## 示例
+
+使用 IE4+ 配合 The Evaluator 检查文档中第一个 style 对象的 `owningElement`。在顶部框中输入以下语句：
+
+```javascript
+document.styleSheets[0].owningElement.tagName
+```
+
+返回的值是 `STYLE` 元素的标签名。
+
+## `rules`（规则）
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ |
+
+## 示例
+
+使用 IE4+ 配合 The Evaluator 检查页面上第一个 style 对象的属性。首先，在顶部框中输入以下语句，找出第一个样式中有多少条规则：
+
+```javascript
+document.styleSheets[0].rules.length
+```
+
+接下来，在底部文本框中输入以下语句，检查其中一个规则的属性：
+
+```javascript
+document.styleSheets[0].rules[0]
+```
+
+你现在可以看到 IE4+ 为规则对象暴露的所有属性。
+
+## Methods（方法）
+- `addRule("selector", "styleSpec"[, index])`
+- `removeRule(index)`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ |
+
+## 示例
+
+使用 IE4+ 配合 The Evaluator 为页面的第一个 style 对象添加一条样式规则。首先，在顶部文本框中输入以下语句，确保样式表已启用：
+
+```javascript
+document.styleSheets[0].disabled = false
+```
+
+```javascript
+styleObject.addRule()
+```
+
+接下来，添加一个设置 `TEXTAREA` 元素颜色的样式：
+```javascript
+document.styleSheets[0].addRule("TEXTAREA", "color:red")
+```
+
+在底部文本框中输入任何有效对象（如 `document.body`），查看样式是如何应用到页面上的 `TEXTAREA` 元素的。
+
+现在，使用规则集中最后一项的索引作为索引移除样式：
+```javascript
+document.styleSheets[0].removeRule(document.styleSheets[0].rules.length - 1)
+```
+
+`TEXTAREA` 回到了它的默认颜色。
+
+## `deleteRule(index)`（删除规则） `insertRule("rule", index)`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | ✓ | | | | | |
+
+## 示例
+
+使用 NN6+ 配合 The Evaluator 为页面的第一个 style 对象添加一条样式规则。首先，在顶部文本框中输入以下语句，确保样式表已启用：
+
+```javascript
+document.styleSheets[0].disabled = false
+```
+
+接下来，添加一个设置 `TEXTAREA` 元素颜色的样式：
+```javascript
+document.styleSheets[0].insertRule("TEXTAREA {color:red}", 0)
+```
+
+在底部文本框中输入任何有效对象（如 `document.body`），查看样式是如何应用到页面上的 `TEXTAREA` 元素的。
+
+现在，使用规则集中最后一项的索引作为索引移除样式：
+```javascript
+document.styleSheets[0].deleteRule(document.styleSheets[0].cssRules.length - 1)
+```
+
+`TEXTAREA` 回到了它的默认颜色。
+
+# 第 15 章 ♦ NN4 层对象（第 31 章） 443
+
+## NN4 层对象
+
+- 用于拖动层（借助层对象的移动方法）的脚本出现在列表 31-11 中。另一种类型的拖动——通过拖动角部来调整层的大小——是列表 31-12a 的核心内容。
+
+### 属性
+
+`above` `below` `siblingAbove` `siblingBelow`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | ✓ | | | | | |
+
+## 示例
+
+列表 31-1 允许你对仅一组此类属性进行实验：`layerObject.above` 和 `layerObject.below`。该页面几乎以实验室/测试题的形式呈现，让你对两个可交换层的这些属性值进行自测。
+
+### 列表 31-1：图层测试
+
+```html
+<HTML>
+
+<HEAD>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function checkAbove(oneLayer) {
+
+  document.forms[0].errors.value = ""
+
+  document.forms[0].output.value = oneLayer.above
+
+}
+
+function checkBelow(oneLayer) {
+
+  document.forms[0].errors.value = ""
+
+  document.forms[0].output.value = oneLayer.below
+
+}
+
+function swapLayers() {
+
+  if (document.yeller.above) {
+
+    document.yeller.moveAbove(document.greeny)
+
+  } else {
+
+    document.greeny.moveAbove(document.yeller)
+
+  }
+
+}
+
+function onerror(msg) {
+
+  document.forms[0].output.value = ""
+
+  document.forms[0].errors.value = msg
+
+  return true
+
+}
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY>
+
+<h1>图层排序</h1>
+
+<HR>
+
+<FORM>
+
+Results:<INPUT TYPE="text" NAME="output"><P>
+
+<INPUT TYPE="button" VALUE="WHO's ABOVE the Yellow layer?"
+
+onclick="checkAbove(document.yeller)"><BR>
+
+<INPUT TYPE="button" VALUE="WHO's BELOW the Yellow layer?"
+
+onclick="checkBelow(document.yeller)"><P>
+
+<INPUT TYPE="button" VALUE="WHO's ABOVE the Green layer?"
+
+onclick="checkAbove(document.greeny)"><BR>
+
+<INPUT TYPE="button" VALUE="WHO's BELOW the Green layer?"
+
+onclick="checkBelow(document.greeny)"><P>
+
+<INPUT TYPE="button" VALUE="Swap Layers" onclick="swapLayers"><P>
+
+if there are any errors caused by missing <BR>
+
+properties, they will appear below:<BR>
+
+<textarea NAME="errors" COLS=3 ROWS=3 WRAP="virtual"></textarea>
+
+</FORM>
+
+<LAYER NAME="yeller" BCOLOR="yellow" TOP=110 LEFT=200 WIDTH=200 HEIGHT=200>
+
+<B>This is just a yellow layer.</B>
+
+</LAYER>
+
+<LAYER NAME="greeny" BCOLOR="lightgreen" TOP=150 LEFT=340 WIDTH=200 HEIGHT=200>
+
+<B>This is just a green layer.</B>
+
+</LAYER>
+
+</BODY>
+
+</HTML>
+```
+
+```javascript
+document.layerObject.above
+```
+
+![](img/144de829a231bb2cbf5843e2f444fc0b_464_0.png)
+
+# JavaScript 实例经：JavaScript 圣经必备伴侣
+
+## `background`
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | ✓ | | | | | |
+
+## 示例
+
+一个简单的示例（列表 31-2）定义了一个层，它带有五个按钮来更改第二个层的背景图像。我将按钮放在一个层中，是因为我想确保在所有平台上，按钮与背景层矩形的边缘是对齐的。当第二个层加载时，我仅仅是为其分配了灰色背景颜色并写了一些（白色）文本。大部分图像是种类较小的，并在层中重复。其中有一张大照片，用于演示图像如何裁剪到层的矩形中。在此，我希望你记住文中展示的教训：在杂乱的背景上阅读文本是非常困难的。兼容 IE5+ 和 NN6+ 的示例，请参阅列表 31。
+
+### 列表 31-2：设置图层背景
+
+```html
+<HTML>
+
+<HEAD>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function setBg(URL) {
+
+  document.bgexpo.src = URL
+
+}
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY>
+
+<h1>Layer Backgrounds</h1>
+
+<HR>
+
+<LAYER NAME="buttons" TOP=100 LEFT=0>
+
+<FORM>
+
+<INPUT TYPE="button" VALUE="The Usual"
+
+onclick="setBg('kraft.gif')"><BR>
+
+<INPUT TYPE="button" VALUE="A Big One"
+
+onclick="setBg('arch.gif')"><BR>
+
+<INPUT TYPE="button" VALUE="Not So Usual"
+
+onclick="setBg('wb6.gif')"><BR>
+
+<INPUT TYPE="button" VALUE="Decidedly Unusual"
+
+onclick="setBg('sb23.gif')"><BR>
+
+<INPUT TYPE="button" VALUE="Quick..."
+
+onclick="setBg('lightnin.gif')"><BR>
+
+</FORM>
+
+</LAYER>
+
+<LAYER NAME="bgexpo" BCOLOR="gray" TOP=100 LEFT=250 WIDTH=300 HEIGHT=260>
+
+<B><FONT COLOR="white">Some text, which may not read well with the various backgrounds.</FONT></B>
+
+</LAYER>
+
+</BODY>
+
+</HTML>
+```
+
+```javascript
+document.layerObject.background
+```
+
+![](img/144de829a231bb2cbf5843e2f444fc0b_465_0.png)
+
+## `bgColor`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | ✓ | | | | | |
+
+## 示例
+
+你可以玩玩列表 31-3，它使用了层脚本技术。页面展示了一个八种颜色的调色板，每种颜色都是一个小层（见图 15-1）。当鼠标悬停在调色板中的任何颜色上时，另一个较大层的 `bgColor` 属性会发生变化。
+
+![](img/144de829a231bb2cbf5843e2f444fc0b_466_0.png)
+
+**图 15-1：** 在调色板上移动鼠标更改图层的背景颜色。
+
+为了保存创建这八个图层的 HTML 行，我使用脚本建立颜色数组，然后使用 `document.write()` 带有适当属性的 `<LAYER>` 标签，将层连续排列。通过定义层大小的变量值，只需更改少量脚本字符即可让它们变大或变小。
+
+`document` 对象处理捕获鼠标事件的工作。我开启 `document.captureEvents()` 方法，使其捕获所有的 `mouseover` 并将其传递给 `setColor()` 函数。`setColor()` 读取目标对象的 `bgColor` 并将较大层的 `bgColor` 属性设置为相同值。如果此页面有其他用于其他目的接收 `mouseover` 事件的对象，我将使用 `routeEvents()` 让这些事件传递给预期目标。但对于这个示例来说，不需要这样做。JavaScript 圣经中的列表 31-14 显示了在 IE5+ 和 NN6 中相同的功能。
+
+### 列表 31-3：图层背景颜色
+
+```html
+<HTML>
+
+<HEAD>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function setColor(e) {
+
+  document.display.bgColor = e.target.bgColor
+
+}
+
+document.captureEvents(Event.MOUSEOVER);
+
+document.onmouseover = setColor
+
+</SCRIPT>
+
+</HEAD>
+
+<body>
+
+<h1>Layer Background Colors</h1>
+
+<HR>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+var overlayer = "";
+
+var colorTop = 100
+
+var colorLeft = 20
+
+var colorWidth = 40
+
+var colorHeight = 40
+
+var colorPalette = new
+
+Array("aquamarine","coral","forestgreen","goldenrod","red","magenta","navy","teal");
+
+for (var i = 0; i < colorPalette.length; i++) {
+
+  overlayer += "<LAYER NAME=" + i + " TOP=" + colorTop;
+
+  overlayer += " LEFT=" + (colorWidth * i + colorLeft);
+
+  overlayer += " WIDTH=" + colorWidth + " HEIGHT=" + colorHeight;
+
+  overlayer += " BGCOLOR=" + colorPalette[i] + "></LAYER>\n"
+
+}
+
+document.write(overlayer);
+
+</SCRIPT>
+
+<LAYER NAME="display" BCOLOR="gray" TOP=150 WIDTH=200 HEIGHT=200>
+
+<B><FONT COLOR="white"><CENTER>Some text to test against background.</CENTER></FONT></B>
+
+</LAYER>
+
+</body>
+
+</HTML>
+```
+
+## `clip`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | ✓ | | | | | |
+
+## 示例
+
+由于 `layerObject.clip` 属性调整会导致边缘移动行为，列表 31-4 允许你对六个属性中的每一个进行调整实验。文档加载了一个层，你可以通过将备选值更改六个字段中（每个属性一个）来调整它。图 15-2 显示了页面。
+
+![](img/144de829a231bb2cbf5843e2f444fc0b_468_0.png)
+
+**图 15-2：** 实验层属性。
+
+当你输入时，所有属性都会更新以显示当前值（通过 `showValues()` 函数）。特别注意边缘的视觉运动，以及更改对至少另一个其他属性的影响。例如，对 `layerObject.clip.left` 值的更改也会影响 `layerObject.clip.width` 属性值。
+
+### 列表 31-4：调整层 `clip` 属性
+
+```html
+<HTML>
+
+<HEAD>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+var origLayerWidth = 0
+
+var origLayerHeight = 0
+
+function initializeXY() {
+
+  origLayerWidth = document.display.clip.width
+
+  origLayerHeight = document.display.clip.height
+
+  showValues()
+
+}
+
+function setClip(field) {
+
+  var clipVal = parseInt(field.value)
+
+  document.display.clip[field.name] = clipVal
+
+  showValues()
+
+}
+
+function showValues() {
+
+  var form = document.layers[0].document.forms[0]
+
+  for (var i = 0; i < form.elements.length; i++) {
+
+    var propName = form.elements[i].name
+
+    if (form.elements[i].type == "text") {
+
+      form.elements[i].value = document.display.clip[propName]
+
+    }
+
+  }
+
+}
+
+var intervalID
+
+function revealClip() {
+
+  var midWidth = Math.round(origLayerWidth / 2)
+
+  var midHeight = Math.round(origLayerHeight / 2)
+
+  document.display.clip.left = midWidth
+
+  document.display.clip.top = midHeight
+
+  document.display.clip.right = midWidth
+
+  document.display.clip.bottom = midHeight
+
+  intervalID = setInterval("stepClip()",1)
+
+}
+
+function stepClip() {
+
+  var widthDone = false
+
+  var heightDone = false
+
+  if (document.display.clip.left > 0) {
+
+    document.display.clip.left += -2
+
+    document.display.clip.right += 2
+
+  } else {
+
+    widthDone = true
+
+  }
+
+  if (document.display.clip.top > 0) {
+
+    document.display.clip.top += -1
+
+    document.display.clip.bottom += 1
+
+  } else {
+
+    heightDone = true
+
+  }
+
+  showValues()
+
+  if (widthDone && heightDone) {
+
+    clearInterval(intervalID)
+
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY onLoad="initializeXY()">
+
+<H1>图层裁剪属性</H1>
+
+<HR>
+
+输入新的裁剪值以调整图层的可见区域。<P>
+
+<LAYER TOP=130>
+
+<FORM>
+
+<TABLE>
+
+<TR>
+
+<TD ALIGN="right">layer.clip.left:</TD>
+
+<TD><INPUT TYPE="text" name="left" SIZE=3 onChange="setClip(this)"></TD>
+
+</TR>
+
+<TR>
+
+<TD ALIGN="right">layer.clip.top:</TD>
+
+<TD><INPUT TYPE="text" name="top" SIZE=3 onChange="setClip(this)"></TD>
+
+</TR>
+
+<TR>
+
+<TD ALIGN="right">layer.clip.right:</TD>
+
+<TD><INPUT TYPE="text" name="right" SIZE=3 onChange="setClip(this)"></TD>
+
+</TR>
+
+<TR>
+
+<TD ALIGN="right">layer.clip.bottom:</TD>
+
+<TD><INPUT TYPE="text" name="bottom" SIZE=3 onChange="setClip(this)"></TD>
+
+</TR>
+
+<TR>
+
+<TD ALIGN="right">layer.clip.width:</TD>
+
+<TD><INPUT TYPE="text" name="width" SIZE=3 onChange="setClip(this)"></TD>
+
+</TR>
+
+<TR>
+
+<TD ALIGN="right">layer.clip.height:</TD>
+
+<TD><INPUT TYPE="text" name="height" SIZE=3 onChange="setClip(this)"></TD>
+
+</TR>
+
+</TABLE>
+
+<INPUT TYPE="button" VALUE="显示图层" onclick="revealClip()">
+
+</FORM>
+
+</LAYER>
+
+<LAYER name="display" BCOLOR="coral" TOP=130 LEFT=200 WIDTH=360 HEIGHT=180>
+
+<H2>第一条</H2>
+
+<P>
+
+国会不得制定任何关于建立宗教的法律，或禁止对宗教的自由行使；不得剥夺言论自由、新闻自由，或人民和平集会并向政府请愿诉怨的权利。
+
+<P>
+
+</LAYER>
+
+</BODY>
+
+</HTML>
+```
+
+```javascript
+document.layerObject.clip
+```
+
+# JavaScript 示例圣经：JavaScript 圣经的必备伴侣
+
+列表 31-4 包含了许多其他脚本，用于演示一些其他的裁剪技术。文档加载后，`onLoad` 事件处理程序会初始化两个全局变量，代表由 `clip.height` 和 `clip.width` 属性确定的图层起始高度和宽度。由于 `<LAYER>` 标签没有指定任何 `CLIP` 属性，确保了 `layerObject.clip` 区域在加载时与图层的尺寸相同。
+
+我保留了初始值，用于一组较为高级的函数，这些函数会对原始图层底部做出响应。该按钮的目标是将裁剪区域迅速缩小为，然后从图层中心逐渐扩大裁剪矩形。这种效果类似于向外放大（zoom-to-out）的视觉效果。
+
+通过将图层高度方向上的四个边缘设置为同一个点来实现区域。脚本使用 `setInterval` 来控制 `stepClip()` 中的动画。为了让缩放在两个轴上都均匀，我首先确保图层的初始尺寸是偶数比例：宽度是高度的两倍。每次执行 `stepClip()` 函数时，`clip.left` 和 `clip.right` 值会在各自的方向上调整两个像素，而 `clip.top` 和 `clip.bottom` 则调整一个像素。
+
+为了在图层达到原始尺寸时停止动画，我检查 `clip.left` 和 `clip.right` 值是否为原始值。
+
+## `left` `top`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | ✓ | | | | | |
+
+## 示例
+
+列表 31-5 在 JavaScript 圣经中展示了如何手动调整左侧和顶部的。
+
+```javascript
+document.layerObject.left
+document.layerObject.top
+```
+
+## `pageX` `pageY`
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| | | | ✓ | | | | | |
+
+## 示例
+
+列表 31-6 定义了一个外部图层和一个不同颜色的嵌套内部图层（见图 15-3）。内部图层包含一些文本内容；外部图层包含内部图层。两组字段显示（并允许更改）每个嵌套图层的 `layerObject.pageX`、`layerObject.pageY`、`layerObject.left` 和 `layerObject.top` 属性。每个字段都与其对应的图层颜色对应。
+
+当你更改任何值时，所有值都会重新计算并显示在其他字段中。例如，外部图层的初始位置为 200 像素；对于内部图层，值为 205 像素（考虑了内部图层周围 5 像素的边框）。如果你将外部图层的值改为 220，外部图层将向右移动 20 像素，内部图层随之移动。移动后内部图层的 `layer.pageX` 值为 225 像素。
+
+# 第15章 ♦ NN4 层对象（第31章） 453
+
+![](img/144de829a231bb2cbf5843e2f444fc0b_474_0.png)
+
+图 15-3：测试嵌套层的位置属性
+
+# 列表 31-6：测试嵌套层的坐标系
+
+```html
+<HTML>
+
+<HEAD>
+
+<TITLE>嵌套层页面的 PageX/PageY</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function setOuterPage(field) {
+
+  var layerVal = parseInt(field.value);
+
+  document.outerDisplay[field.name] = layerVal
+
+  showValues()
+
+}
+
+function setOuterLayer(field) {
+
+  var layerVal = parseInt(field.value);
+
+  document.outerDisplay[field.name] = layerVal
+
+  showValues()
+
+}
+
+function setInnerPage(field) {
+
+  var layerVal = parseInt(field.value);
+
+  document.outerDisplay.document.innerDisplay[field.name] = layerVal
+
+  showValues()
+
+}
+
+function setInnerLayer(field) {
+
+  var layerVal = parseInt(field.value);
+
+  document.outerDisplay.document.innerDisplay[field.name] = layerVal
+
+  showValues()
+
+}
+
+function showValues() {
+
+  var outerForm = document.outerDisplay.document.forms[0]
+
+  var innerForm = document.outerDisplay.document.innerDisplay.document.forms[0]
+
+  outerForm.pageX.value = document.outerDisplay.pageX
+
+  outerForm.pageY.value = document.outerDisplay.pageY
+
+  outerForm.left.value = document.outerDisplay.left
+
+  outerForm.top.value = document.outerDisplay.top
+
+  innerForm.pageX.value = document.outerDisplay.document.innerDisplay.pageX
+
+  innerForm.pageY.value = document.outerDisplay.document.innerDisplay.pageY
+
+  innerForm.left.value = document.outerDisplay.document.innerDisplay.left
+
+  innerForm.top.value = document.outerDisplay.document.innerDisplay.top
+
+}
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY>
+
+<h1>嵌套层页面的 PageX/PageY</h1>
+
+<HR>
+
+<LAYER NAME="outerDisplay" LEFT=200 TOP=100 WIDTH=400 HEIGHT=300 BGCOLOR="lightblue">
+
+<FORM>
+
+<TABLE>
+
+<TR><TD COLSPAN="2"><B>Outer Layer (Blue)</B></TD></TR>
+
+<TR><TD ALIGN="right">pageX:</TD><TD><INPUT TYPE="text" NAME="pageX" SIZE=5 onChange="setOuterPage(this)"></TD></TR>
+
+<TR><TD ALIGN="right">pageY:</TD><TD><INPUT TYPE="text" NAME="pageY" SIZE=5 onChange="setOuterPage(this)"></TD></TR>
+
+<TR><TD ALIGN="right">left:</TD><TD><INPUT TYPE="text" NAME="left" SIZE=5 onChange="setOuterLayer(this)"></TD></TR>
+
+<TR><TD ALIGN="right">top:</TD><TD><INPUT TYPE="text" NAME="top" SIZE=5 onChange="setOuterLayer(this)"></TD></TR>
+
+</TABLE>
+
+</FORM>
+
+<LAYER NAME="innerDisplay" LEFT=5 TOP=5 WIDTH=300 HEIGHT=200 BGCOLOR="lightyellow">
+
+<FORM>
+
+<TABLE>
+
+<TR><TD COLSPAN="2"><B>Inner Layer (Yellow)</B></TD></TR>
+
+<TR><TD ALIGN="right">pageX:</TD><TD><INPUT TYPE="text" NAME="pageX" SIZE=5 onChange="setInnerPage(this)"></TD></TR>
+
+<TR><TD ALIGN="right">pageY:</TD><TD><INPUT TYPE="text" NAME="pageY" SIZE=5 onChange="setInnerPage(this)"></TD></TR>
+
+<TR><TD ALIGN="right">left:</TD><TD><INPUT TYPE="text" NAME="left" SIZE=5 onChange="setInnerLayer(this)"></TD></TR>
+
+<TR><TD ALIGN="right">top:</TD><TD><INPUT TYPE="text" NAME="top" SIZE=5 onChange="setInnerLayer(this)"></TD></TR>
+
+</TABLE>
+
+</FORM>
+
+<P>This is the inner layer content.</P>
+
+</LAYER>
+
+</LAYER>
+
+</BODY>
+
+</HTML>
+```
+
+```javascript
+document.layerObject.pageX
+```
+
+
+
+```javascript
+function showValues() {
+    var form = document.layers[0].document.forms[0]
+    form[0].value = document.outerDisplay.pageX
+    form[1].value = document.outerDisplay.pageY
+    form[2].value = document.outerDisplay.left
+    form[3].value = document.outerDisplay.top
+    form[4].value = document.outerDisplay.document.innerDisplay.pageX
+    form[5].value = document.outerDisplay.document.innerDisplay.pageY
+    form[6].value = document.outerDisplay.document.innerDisplay.left
+    form[7].value = document.outerDisplay.document.innerDisplay.top
+}
+```
+
+```html
+<SCRIPT>
+<HEAD>
+<BODY onload="showValues()">
+<B>嵌套层的坐标系</B>
+<HR>
+```
+
+为`<FONT COLOR="coral">外部层</FONT>`和`<FONT COLOR="aquamarine">内部层</FONT>`输入新的页面和层坐标`<LAYER TOP=80>`
+
+```html
+<FORM>
+<TABLE>
+<TR>
+<TD ALIGN="right" BGCOLOR="coral">layer.pageX</TD>
+<TD BGCOLOR="coral"><INPUT TYPE="text" NAME="pageX" SIZE=3
+onchange="setOuterPage(this)</TD>
+</TR>
+```
+
+```html
+<TR>
+<TD ALIGN="right" BGCOLOR="coral">layer.pageY</TD>
+<TD BGCOLOR="coral"><INPUT TYPE="text" NAME="pageY" SIZE=3
+onchange="setOuterPage(this)</TD>
+</TR>
+```
+
+```html
+<TR>
+<TD ALIGN="right" BGCOLOR="coral">layer.left</TD>
+<TD BGCOLOR="coral"><INPUT TYPE="text" NAME="left" SIZE=3
+onchange="setOuterLayer(this)</TD>
+</TR>
+```
+
+```html
+<TR>
+<TD ALIGN="right" BGCOLOR="coral">layer.top</TD>
+<TD BGCOLOR="coral"><INPUT TYPE="text" NAME="top" SIZE=3
+onchange="setOuterLayer(this)</TD>
+</TR>
+```
+
+```html
+<TR>
+<TD ALIGN="right" BGCOLOR="aquamarine">layer.pageX</TD>
+<TD BGCOLOR="aquamarine"><INPUT TYPE="text" NAME="pageX" SIZE=3
+onchange="setInnerPage(this)</TD>
+</TR>
+```
+
+```html
+<TR>
+<TD ALIGN="right" BGCOLOR="aquamarine">layer.pageY</TD>
+<TD BGCOLOR="aquamarine"><INPUT TYPE="text" NAME="pageY" SIZE=3
+onchange="setInnerPage(this)</TD>
+</TR>
+```
+
+`document.layer.pageX`
+
+```html
+<TR>
+<TD ALIGN="right" BGCOLOR="aquamarine">left</TD>
+<TD BGCOLOR="aquamarine"><INPUT TYPE="text" NAME="left" SIZE=3
+OnChange="setInnerLayer(this)</TD>
+</TR>
+<TR>
+<TD ALIGN="right" BGCOLOR="aquamarine">layer.top</TD>
+<TD BGCOLOR="aquamarine"><INPUT TYPE="text" NAME="top" SIZE=3
+OnChange="setInnerLayer(this)</TD>
+</TR>
+<TABLE>
+<FORM>
+<LAYER>
+<LAYER NAME="outerDisplay" BGCOLOR="coral" TOP=80 LEFT=200 WIDTH=370 HEIGHT=190>
+<LAYER NAME="innerDisplay" BGCOLOR="aquamarine" TOP=5 LEFT=5 WIDTH=360 HEIGHT=180>
+<I2>第一条</I2>
+<P>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise of thereof; or abridging the freedom of speech, or the press; or the right of the people peaceably to assemble, and to petition the government for a redress of grievances</P>
+</LAYER>
+</LAYER>
+<BODY>
+```
+
+| NN2 | NN3 | NN4 | NN5 | NN6 |
+|---|---|---|---|---|
+
+
+
+![](img/144de829a231bb2cbf5843e2f444fc0b_474_0.png)
+
+Figure 15-3: Testing the position properties of nested layers
+
+# Listing 31-6: Testing Nested Layer Coordinate Systems
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Nested Layer PageX/PageY</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function setOuterPage(field) {
+  var layerVal = parseInt(field.value);
+  document.outerDisplay[field.name] = layerVal
+  showValues()
+}
+function setOuterLayer(field) {
+  var layerVal = parseInt(field.value);
+  document.outerDisplay[field.name] = layerVal
+  showValues()
+}
+function setInnerPage(field) {
+  var layerVal = parseInt(field.value);
+  document.outerDisplay.document.innerDisplay[field.name] = layerVal
+  showValues()
+}
+function setInnerLayer(field) {
+  var layerVal = parseInt(field.value);
+  document.outerDisplay.document.innerDisplay[field.name] = layerVal
+  showValues()
+}
+```
+
+Continued
+
+`document.layerObject.pageX`
+
+# 31-66 (continued)
+
+
+
+# 第15章 + NN4 层对象（第31章） 453
+
+![图 15-3：测试嵌套层的位置属性](img/144de829a231bb2cbf5843e2f444fc0b_474_0.png)
+
+# 列表 31-6：测试嵌套层的坐标系
+
+```javascript
+<HTML>
+<HEAD>
+<TITLE>嵌套层页面的 PageX/PageY</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function setOuterPage(field) {
+  var layerVal = parseInt(field.value);
+  document.outerDisplay[field.name] = layerVal
+  showValues()
+}
+function setOuterLayer(field) {
+  var layerVal = parseInt(field.value);
+  document.outerDisplay[field.name] = layerVal
+  showValues()
+}
+function setInnerPage(field) {
+  var layerVal = parseInt(field.value);
+  document.outerDisplay.document.innerDisplay[field.name] = layerVal
+  showValues()
+}
+function setInnerLayer(field) {
+  var layerVal = parseInt(field.value);
+  document.outerDisplay.document.innerDisplay[field.name] = layerVal
+  showValues()
+}
+
+function showValues() {
+    var form = document.layers[0].document.forms[0]
+    form[0].value = document.outerDisplay.pageX
+    form[1].value = document.outerDisplay.pageY
+    form[2].value = document.outerDisplay.left
+    form[3].value = document.outerDisplay.top
+    form[4].value = document.outerDisplay.document.innerDisplay.pageX
+    form[5].value = document.outerDisplay.document.innerDisplay.pageY
+    form[6].value = document.outerDisplay.document.innerDisplay.left
+    form[7].value = document.outerDisplay.document.innerDisplay.top
+}
+</SCRIPT>
+</HEAD>
+<BODY onload="showValues()">
+<B>嵌套层的坐标系</B>
+<HR>
+为 <FONT COLOR="coral">外部层</FONT>和 <FONT COLOR="aquamarine">内部层</FONT>输入新的页面和层坐标<LAYER TOP=80>
+<FORM>
+<TABLE>
+<TR>
+<TD ALIGN="right" BGCOLOR="coral">layer.pageX:</TD>
+<TD BGCOLOR="coral"><INPUT TYPE="text" NAME="pageX" SIZE=3 onchange="setOuterPage(this)"/></TD>
+</TR>
+<TR>
+<TD ALIGN="right" BGCOLOR="coral">layer.pageY:</TD>
+<TD BGCOLOR="coral"><INPUT TYPE="text" NAME="pageY" SIZE=3 onchange="setOuterPage(this)"/></TD>
+</TR>
+<TR>
+<TD ALIGN="right" BGCOLOR="coral">layer.left:</TD>
+<TD BGCOLOR="coral"><INPUT TYPE="text" NAME="left" SIZE=3 onchange="setOuterLayer(this)"/></TD>
+</TR>
+<TR>
+<TD ALIGN="right" BGCOLOR="coral">layer.top:</TD>
+<TD BGCOLOR="coral"><INPUT TYPE="text" NAME="top" SIZE=3 onchange="setOuterLayer(this)"/></TD>
+</TR>
+<TR>
+<TD ALIGN="right" BGCOLOR="aquamarine">layer.pageX:</TD>
+<TD BGCOLOR="aquamarine"><INPUT TYPE="text" NAME="pageX" SIZE=3 onchange="setInnerPage(this)"/></TD>
+</TR>
+<TR>
+<TD ALIGN="right" BGCOLOR="aquamarine">layer.pageY:</TD>
+<TD BGCOLOR="aquamarine"><INPUT TYPE="text" NAME="pageY" SIZE=3 onchange="setInnerPage(this)"/></TD>
+</TR>
+<TR>
+<TD ALIGN="right" BGCOLOR="aquamarine">left:</TD>
+<TD BGCOLOR="aquamarine"><INPUT TYPE="text" NAME="left" SIZE=3 OnChange="setInnerLayer(this)"></TD>
+</TR>
+<TR>
+<TD ALIGN="right" BGCOLOR="aquamarine">layer.top:</TD>
+<TD BGCOLOR="aquamarine"><INPUT TYPE="text" NAME="top" SIZE=3 OnChange="setInnerLayer(this)"></TD>
+</TR>
+</TABLE>
+</FORM>
+<LAYER NAME="outerDisplay" BGCOLOR="coral" TOP=80 LEFT=200 WIDTH=370 HEIGHT=190>
+<LAYER NAME="innerDisplay" BGCOLOR="aquamarine" TOP=5 LEFT=5 WIDTH=360 HEIGHT=180>
+<I2>第一条</I2>
+<P>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise of thereof; or abridging the freedom of speech, or the press; or the right of the people peaceably to assemble, and to petition the government for a redress of grievances.</P>
+</LAYER>
+</LAYER>
+</BODY>
+</HTML>
+```
+
+## 示例
+
+使用列表 31-8 中的页面可以查看 `layerObject.visibility` 属性如何影响一对嵌套层。当页面首次加载时，默认的继承（inherit）设置是开启的。通过点击外部层按钮对外部层进行的更改会影响，但通过将内层属性设置为隐藏或显示来影响父子之间的可见性关系。《JavaScript Bible》中的列表 31-19 显示了 IE5+ 和 NN6+ 语法的示例。
+
+## 列表 31-8: 嵌套层可见性关系
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Layer Source</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function setOuterVis(type) {
+  document.outerDisplay.visibility = type
+}
+function setInnerVis(type) {
+  document.outerDisplay.innerDisplay.visibility = type
+}
+</SCRIPT>
+</HEAD>
+<body>
+<B>设置嵌套层的 <TT>layer.visibility</TT> 属性</B>
+点击按钮查看更改 <FONT COLOR="coral">外部层</FONT> 和 <FONT COLOR="aquamarine">内层</FONT> 对象的可见性时会发生什么。<BR>
+<FORM TOP=100 BCOLOR="coral">
+控制外部层属性:<BR>
+<INPUT type="button" value="Hide Outer Layer" onclick="setOuterVis('hide')">
+<INPUT type="button" value="Show Outer Layer" onclick="setOuterVis('show')">
+</FORM>
+<LAYER TOP=200 BCOLOR="aquamarine">
+控制内层属性:<BR>
+<INPUT type="button" value="Hide Inner Layer" onclick="setInnerVis('hide')">
+<INPUT type="button" value="Show Inner Layer" onclick="setInnerVis('show')">
+<INPUT type="button" value="Inherit Outer Layer">
+</FORM>
+<LAYER NAME="outerDisplay" BCOLOR="coral" TOP=100 LEFT=200 WIDTH=360 HEIGHT=190>
+  <LAYER NAME="innerDisplay" BCOLOR="aquamarine" TOP=5 LEFT=5 WIDTH=360 HEIGHT=180>
+    <P>placeholder text for raw inner layer.</P>
+  </LAYER>
+</LAYER>
+</body>
+</HTML>
+```
+
+## 第 15 章 + NN4 层对象 (第 31 章) 459
+
+## zIndex
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | ✓ | | | | | |
+
+### 示例
+
+三个堆叠属性值之间的关系可能难以可视化。列表 31-9 提供了一种查看更改三个重叠兄弟层 `layerObject.zIndex` 属性结果的方法。图 15-4 显示了页面加载后层的初始组织。
+
+![图 15-4: 文档中 `<layer>` 标签的位置决定了原始堆叠顺序。](img/144de829a231bb2cbf5843e2f444fc0b_480_0.png)
+
+文档中 `<layer>` 标签的顺序决定了原始堆叠顺序。因为 HTML 中没有设置该属性，三个层的初始值都显示为零。但随着页面的显示，`layerObject.above` 和 `layerObject.below` 属性会自动建立。当某个层上方没有其他层时，页面会显示 (none)。此外，如果堆栈底部的层是窗口调整，则会分配一个奇怪的内层名称（类似于 `_js_layer_21`）。
+
+要尝试此页面，首先确保你理解了默认层顺序的 `layerObject.above` 和 `layerObject.below` 读取值。然后，使用值序列为层分配不同的顺序，例如：3-2-1, 1-3, 2-2-2 等。每当你输入一个新值时，检查实际层以查看它们的堆叠顺序是否发生了变化，以及这如何影响层的其他属性。《JavaScript Bible》中的列表 31-20 显示了如何使用 IE5+ 和 NN6+ 实现相同的操作。
+
+## 列表 31-9: zindex, above 和 below 之间的关系
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Layer zindex</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function setZ(field) {
+  switch (field.name) {
+    case "top":
+      document.top.zIndex = parseInt(field.value);
+      break;
+    case "mid":
+      document.middle.zIndex = parseInt(field.value);
+      break;
+    case "bot":
+      document.bottom.zIndex = parseInt(field.value);
+      break;
+  }
+}
+
+function showValues() {
+  document.layers[0].forms[0].above.value = document.bottom.zIndex
+  document.layers[1].forms[0].mid.value = document.middle.zIndex
+  document.layers[2].forms[0].top.value = document.top.zIndex
+
+  document.layers[0].forms[0].above.value = "none"
+  document.layers[1].forms[0].above.value = "none"
+  document.layers[2].forms[0].above.value = "none"
+
+  document.layers[0].forms[0].below.value = "none"
+  document.layers[1].forms[0].below.value = "none"
+  document.layers[2].forms[0].below.value = "none"
+}
+</SCRIPT>
+</HEAD>
+<BODY onload="showValues()">
+<B>设置兄弟层的 <TT>layer.visibility</TT> 属性</B>
+<HR>
+输入 zindex 值查看对三个层的影响。<P>
+<FORM>
+控制外部层属性:<BR>
+<INPUT type="button" value="Hide Outer Layer" onclick="setOuterVis('hide')">
+<INPUT type="button" value="Show Outer Layer" onclick="setOuterVis('show')">
+<INPUT type="button" value="Inherit Outer Layer">
+</FORM>
+<LAYER TOP=200 BCOLOR="aquamarine">
+控制内层属性:<BR>
+<INPUT type="button" value="Hide Inner Layer" onclick="setInnerVis('hide')">
+<INPUT type="button" value="Show Inner Layer" onclick="setInnerVis('show')">
+<INPUT type="button" value="Inherit Outer Layer">
+</FORM>
+<LAYER NAME="outerDisplay" BCOLOR="coral" TOP=100 LEFT=200 WIDTH=360 HEIGHT=190>
+  <LAYER NAME="innerDisplay" BCOLOR="aquamarine" TOP=5 LEFT=5 WIDTH=360 HEIGHT=180>
+    <P>placeholder text for raw inner layer.</P>
+  </LAYER>
+</LAYER>
+</BODY>
+</HTML>
+```
+
+### 方法
+
+#### load("URL", newLayerWidth)
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | ✓ | | | | | |
+
+### 示例
+
+列表 31-10 中的按钮允许你将短文档加载到层中。前两个按钮不会更改（实际上，`layerObject.load()` 的第二个参数是 `layerObject.clip` 值）。对于第二个按钮，指定了比原始更窄的宽度。频繁点击“还原”按钮以返回已知状态。
+
+-   列表 31-10: 加载文档到层
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Layer Loading</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function loadDoc(URL,width) {
+  if (width) {
+    width = document.myLayer.clip.width
+  }
+  document.myLayer.load(URL, width)
+}
+</SCRIPT>
+</HEAD>
+<body>
+<B>加载新文档</B>
+<HR>
+<LAYER TOP=90 WIDTH=240 BCOLOR="yellow">
+<FORM>
+<INPUT type="button" value="Small Doc/Existing Width" onclick="loadDoc('article.html')"><BR>
+<INPUT type="button" value="Large Doc/Existing Width" onclick="loadDoc('bright.html')"><P>
+<INPUT type="button" value="Small Doc/Narrower Width" onclick="loadDoc('article.html',200)"><BR>
+<INPUT type="button" value="Large Doc/Narrower Width" onclick="loadDoc('bright.html',200)"><P>
+<INPUT type="button" value="Restore" onclick="location.reload()"></FORM>
+<LAYER NAME="myLayer" BCOLOR="yellow" TOP=90 LEFT=30 WIDTH=300 HEIGHT=190>
+<P><B>text loaded in original document.</B></P>
+</LAYER>
+</body>
+</html>
+```
+
+#### moveAbove(layerObject) / moveBelow(layerObject)
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | ✓ | | | | | |
+
+# 示例
+
+你可以在列表 31-1 中看到 `layerObject.moveAbove()` 方法的作用。
+
+#### moveBy(deltaX,deltaY) / moveTo(x,y) / moveToAbsolute(x,y)
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | | | |
+
+# 示例
+
+列表 31-11 展示了 `layerObject.moveTo()` 方法的演示。这是一个简单的脚本，允许你在屏幕上点击并拖动层。该脚本使用了 mouseMove 事件的坐标值；在补偿点击发生时层内的偏移量后，脚本移动层以跟踪鼠标操作。
+
+我想展示这个示例还有一个额外的原因：解释 Windows 和 Macintosh 版本的 NN4 之间重要的用户界面差异。在 Windows 版本中，你可以点击并按住对象上的鼠标按钮，并在跨屏幕拖动光标时，让该对象接收所有的 mouseMove 事件。在 Macintosh 上，NN4 试图通过在用户按住鼠标按钮超过点击时间时弹出上下文相关菜单来补偿缺少第二个鼠标按钮的问题。为了防止弹出菜单出现，由 `onMouseDown` 事件处理程序调用的 `engage()` 方法应该返回 false。
+
+注意下面的列表，层是如何捕获多个鼠标事件的。每个事件在创建一个本质上类似于 `mouseStillDown` 事件的模式（这在 NN4 的事件模型中并不存在）时都起着重要作用。`mouseDown` 事件设置了一个布尔标志（`engaged`），表示用户点击了层。同时，脚本记录了 `mouseDown` 事件发生距离层左上角的距离。需要此偏移信息，以便对层位置的任何设置都考虑此偏移（否则，层的左上角将跳转到光标位置并从那里开始拖动）。
+
+在拖拽期间（每次鼠标移动都会触发 `mouseMove` 事件），`dragIt(e)` 函数检查拖拽模式是否启用。如果是，则将层移动到通过从页面 `mouseMove` 事件减去原始向下偏移量计算出的页面位置。当用户释放鼠标按钮时，`mouseUp` 事件关闭拖拽模式布尔值。《JavaScript 圣经》中的列表 31-21 显示了适用于 IE5+ 和 NN6 的此示例版本。
+
+# 列表 31-11: 拖动层
+
+```html
+<HTML>
+<HEAD>
+<TITLE>层拖动</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+var engaged = false
+var offsetX = 0
+var offsetY = 0
+function dragIt(e) {
+  if (engaged) {
+    document.myLayer.moveTo(e.pageX - offsetX, e.pageY - offsetY)
+  }
+}
+function engage(e) {
+  engaged = true
+  offsetX = e.pageX - document.myLayer.left
+  offsetY = e.pageY - document.myLayer.top
+  return false
+}
+function release() {
+  engaged = false
+}
+</SCRIPT>
+</HEAD>
+<body>
+<B>拖动层</B>
+<HR>
+<LAYER NAME="myLayer" BCOLOR="lightgreen" TOP=90 LEFT=100 WIDTH=300 HEIGHT=190>
+<P><B>在窗口内拖动我。</B></P>
+</LAYER>
+<SCRIPT LANGUAGE="JavaScript">
+document.myLayer.captureEvents(Event.MOUSEDOWN | Event.MOUSEUP | Event.MOUSEMOVE);
+document.myLayer.onMouseDown = engage
+document.myLayer.onMouseUp = release
+document.myLayer.onMouseMove = dragIt
+</SCRIPT>
+</BODY>
+</HTML>
+```
+
+#### resizeBy(delta,delta) / resizeTo(width,height)
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+# 示例
+
+理解层的影响至关重要。列表 31-12a 显示了如何调整大小。31-12b 显示了内容。调整大小后重新绘制层是常见的。列表 31-12a 显示了如何调整大小。
+
+# 列表 31-12a: 调整层的大小
+
+```html
+<HTML>
+<HEAD>
+<TITLE>层调整大小</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+var engaged = false
+var offsetX = 0
+var offsetY = 0
+function resize(e) {
+  if (engaged) {
+    document.myLayer.resizeTo(e.pageX - offsetX, e.pageY - offsetY)
+  }
+}
+function engage(e) {
+  engaged = true
+  offsetX = e.pageX - document.myLayer.left
+  offsetY = e.pageY - document.myLayer.top
+  return false
+}
+function release() {
+  engaged = false
+}
+</SCRIPT>
+</HEAD>
+<body>
+<B>调整层的大小</B>
+<HR>
+<FORM>
+重绘层内容:<BR>
+<INPUT TYPE="radio" NAME="redraw" CHECKED>从不
+<INPUT TYPE="radio" NAME="redraw">调整大小后
+<INPUT TYPE="radio" NAME="redraw">调整大小中
+</FORM>
+<LAYER NAME="myLayer" SRC="l31-12b.htm" BCOLOR="lightblue" TOP=90 WIDTH=300 HEIGHT=190 onLoad="grabEvents()">
+</LAYER>
+<SCRIPT LANGUAGE="JavaScript">
+function grabEvents() {
+  document.myLayer.captureEvents(Event.MOUSEDOWN | Event.MOUSEMOVE)
+}
+</SCRIPT>
+</BODY>
+</HTML>
+```
+
+# 列表 31-12b: 可调整大小层的内容
+
+```html
+<HTML>
+<body>
+<P><B>通过拖动右下角来调整我的大小。</B></P>
+<SCRIPT LANGUAGE="JavaScript">
+if (navigator.userAgent.indexOf("Mac") != -1) {
+document.write("Mac 用户：先 Ctrl-点击我；然后点击以停止拖动。")
+}
+</SCRIPT>
+</body>
+</HTML>
+```
+
+### 字符串与数字对象
+
+（第 34 和 35 章）
+
+## 第 16 章
+
+## 本章内容
+
+- 在字符级别解析文本
+- 使用正则表达式执行搜索-替换操作
+- 字符编码与文本之间的转换
+- 设置数字格式和精度
+
+了解如何操作文本字符字符串是一项至关重要的编程技能。你可能并不总是需要这么做，但你应该充分意识到你所使用的任何编程语言中都内置了这种操作的各种可能性。在 JavaScript 中（与任何基于对象或面向对象的语言一样），字符串是对象，它们拥有许多属性和方法，可以帮助组装、拆解、提取和复制字符串块。
+
+用户输入文本框的任何字符都会成为字符串对象的一部分。在 IE4+ 和 NN6 中，HTML 元素标签内的文本可以被视为字符串。在 IE4+ 中，你甚至可以处理 HTML 标签。因此，在所有植入你脚本意识的语言语言对象中，字符串对象（数组，其示例将在本书的下一章介绍）在列表中位居第二。
+
+数字被认为是对象的频率要低得多，因为它们通常被直接用于计算。然而，最近浏览器中的 JavaScript 1.5 尝试用实用的方法增强数字对象，特别是（终于）提供了对浮点数小数点右侧显示数字数的内置控制。
+
+当本章示例鼓励你在“评估器（The Evaluator）”中输入一系列表达式时，请务必执行每一步。但同时也请确保你理解每个表达式的结果，以便直观地观察特定方法的运行方式。
+
+## 示例亮点
+
+- 研究列表 34-2 的代码和操作，查看如何使用 JavaScript 将字符转换为字符编码反之亦然。将 ASCII 或 Unicode 值转换为相应的字符需要静态 String 对象的 `String.fromCharCode()` 方法。
+- 比较 `string.indexOf()` 方法的步骤序列，完全掌握每个方法的行为以及它们之间的区别。
+- 列表 34-4 让你实验 `string.replace()` 方法，这两种方法都利用了 NN4+ 和 IE4+ 中 JavaScript 1.2 的正则表达式功能。注意脚本如何将带有全局修饰符的正则表达式对象组合。
+- `string.split()` 方法将字符串转换为数组。
+- 比较列表 34-6 和 34-7 的行为和代码，区分 `string.substr()` 和 `string.substring()` 方法之间的细微区别。
+- 研究 `string.toLowerCase()` 和 `string.toUpperCase()` 的示例，查看如何消除某些操作的大小写敏感。
+- 通过遵循 `number.toFixed()` 方法的步骤，将长浮点数转换为美元和分的字符串。
+
+## 字符串对象
+
+### 属性
+
+#### constructor
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | ✓ ✓ | | ✓ ✓ ✓ | ✓ | |
+
+#### 示例
+
+使用评估器（《JavaScript圣经》第 13 章）测试 `constructor` 属性的值。在顶部文本框中输入以下语句：
+
+```
+a = new String("abcd")
+a.constructor == String
+a.constructor == Number
+```
+
+## 解析方法
+
+### string.charAt(index)
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | | |
+
+#### 示例
+
+在评估器的顶部文本框中输入以下每个语句：
+
+```
+a = "banana daikiri"
+a.charAt(0)
+a.charAt(5)
+a.charAt(6)
+a.charAt(20)
+```
+
+每个 `charAt()` 方法的结果应恰别为 b、a（"banana" 中的第三个 "a"）、一个空格字符和一个空字符串。
+
+### string.charCodeAt([index]) / String.fromCharCode(num1, num2, ...numn[])
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | | |
+
+#### 示例
+
+列表 34-2 在一页中提供了这两种方法的示例。由于其中一个演示依赖于 Navigator 和 Internet Explorer 4 对所选文本的自动捕获，在加载页面后，在正文的任何地方选择部分文本。如果你从小写字母 "a" 开始选择，则字符码显示为 97。如果你没有选择，结果为 NaN。尝试在页面底部的字段中输入数值。低于 32 的值是 ASCII 控制字符，大多数字体将其表示为空心方框。但请尝试其他值看看你会得到什么。注意脚本将所有三个值作为一个组传递给 `String.fromCharCode()` 方法，结果是一个组合后的字符串。因此，图 16-1 显示了输入三个字母名称的 ASCII 值时会发生什么。
+
+### 列表 34-2：转换
+
+```html
+<html>
+<HEAD>
+<TITLE>Character Codes</TITLE>
+<script LANGUAGE="JavaScript">
+var isNav = navigator.appName == "Netscape";
+var is4 = (isNav && parseInt(navigator.version) == 4);
+function showCharCode() {
+  if (isNav) {
+    var varText = document.selection();
+  }
+}
+</script>
+</HEAD>
+<BODY>
+</BODY>
+</html>
+```
+
+*(注：原文此处代码似乎截断，已按要求保留代码块格式)*
+
+# 列表 34-3: 正则表达式匹配工作坊
+
+```html
+<HTML>
+<HEAD>
+<TITLE>正则表达式匹配</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function doMatch(form) {
+    var str = form.entry.value;
+    var delim = (form.caseSens.checked) ? "" : "gi";
+    var regex = eval("/" + form.regexp.value + delim + "/");
+    var resultArray = str.match(regex);
+    if (resultArray) {
+        form.result.value = resultArray.toString();
+        form.count.value = resultArray.length;
+    } else {
+        form.result.value = "no matches";
+        form.count.value = "";
+    }
+}
+</SCRIPT>
+</HEAD>
+<body>
+<B>使用正则表达式进行字符串匹配</B>
+<HR>
+<FORM>
+输入主字符串:<INPUT TYPE="text" NAME="entry" SIZE=60 VALUE="Many a man and WOMAN meant to visit GerMany."><BR>
+输入用于匹配的正则表达式:<INPUT TYPE="text" NAME="regexp" SIZE=25 VALUE="iwaW">
+<INPUT TYPE="checkbox" NAME="caseSens">区分敏感<P>
+<INPUT type="button" VALUE="Execute match()" onclick="doMatch(this.form)">
+<INPUT type="reset"><P>
+结果:<INPUT TYPE="text" NAME="result" SIZE=40><BR>
+计数:<INPUT TYPE="text" NAME="count" SIZE=3><BR>
+</FORM>
+</body>
+</HTML>
+```
+
+主字符串的默认值特意使用了不规则的大小写。这种大小写可以让你更清晰地看到某些匹配项的来源。例如，默认正则表达式查找一个中间带有字母 "a" 的三字符字符串。有六个字符串符合该表达式。在大小写的帮助下，你可以看到包含 "man" 的四个字符串分别是从主字符串的哪里提取的。下表列了一些其他可以在默认主字符串尝试的表达式。
+
+| 正则表达式 | 描述 |
+|---|---|
+| man | 区分敏感和不区分敏感 |
+| man\b | "man" 位于单词结尾处 |
+| \bman | "man" 位于单词开头处 |
+| me*an | 在 "m" 和 "a" 之间出现零或多个 "e" 字母 |
+| .a. | "a" 被任何字符（包括空格）包围 |
+| \sa\s | "a" 两侧都被空格包围 |
+| z | 出现了 "z"（默认字符串中不存在） |
+
+在列表 34-3 的脚本中，如果 `string.match()` 返回 `null`，你会收到礼貌的提示，计数字段将为空。
+
+### string.replace(regExpression, replaceString)
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | ✓ | ✓ | | | |
+
+## 示例
+
+列表 34-4 中的页面允许你在友好的环境中练习 `string.replace()`、`string.search()` 方法以及正则表达式。源文本是自《哈姆特》的五行节录。你可以输入要搜索的正则表达式以及替换文本。注意，脚本完成了创建正则表达式对象的工作，因此你可以专注于用于定义匹配字符串的其他特殊字符。所有的替换操作都是全局执行的，因为参数 `g` 参数会自动附加到你输入的任何表达式上。
+
+点击 "Execute replace()" 按钮后，字段中的默认值将替换缩写 "with it 'is"（见图 16-2）。注意，"tis" 中单引号前的反斜线字符（在 `mainString` 中组装的字符串中）使得单引号不再是单词边界，从而允许 `\B't` 正则表达式在该处找到匹配。正如 `string.search()` 方法节中描述的，连接到该方法的按钮返回匹配字符串的偏移量字符数（如果没有匹配，则返回 -1）。
+
+## 第 16 章 ♦ 字符串和数字对象（第 34 和第 35 章）
+
+![图 16-2：使用默认正则表达式可以修改列表，使其替换 IE4 HTML 段落中的文本。步骤包括将段落封装在它自己的元素中（例如，一个 `SPAN`），并并在元素的 `innerHTML` 上调用 `replace()` 方法。将结果赋值给元素的 `innerHTML` 属性以完成该工作。](img/144de829a231bb2cbf5843e2f444fc0b_498_0.png)
+
+### 正则表达式替换与搜索
+
+用于 `string.replace()` 和 `string.search()` 方法
+
+生存还是毁灭，这是一个要不要的问题：
+
+是在心中忍受
+
+命运投掷的弓和箭矢，
+
+还是拿起武器反对苦难的海洋，
+
+并通过反抗来获得终结。
+
+## 列表 34-4：string.replace() 和 string.search() 实验
+
+```html
+<HTML>
+<HEAD>
+<TITLE>正则表达式替换与搜索</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+var mainString = "To be, or not to be: that is the question:\n";
+mainString += "Whether 'tis nobler in the mind to suffer\n";
+mainString += "The slings and arrows of fortune,\n";
+mainString += "Or take arms against a sea of troubles,\n";
+mainString += "And by end.\n";
+function doReplace(form) {
+  var replaceStr = form.replaceEntry.value;
+  var delim = (form.caseSens.checked) ? "" : "gi";
+  var regex = eval("/" + form.regexp.value + delim + "/");
+  form.result.value = mainString.replace(regex, replaceStr);
+}
+function doSearch(form) {
+  var replaceStr = form.replaceEntry.value;
+  var delim = (form.caseSens.checked) ? "" : "gi";
+  var regex = eval("/" + form.regexp.value + delim + "/");
+  form.result.value = mainString.search(regex);
+}
+</script>
+</HEAD>
+<body>
+<B>使用正则表达式进行替换和搜索</B>
+<HR>
+用于方法的文本：
+<B>To be, or not to be; that is the question:
+Whether 'tis nobler in the mind to suffer
+The slings and arrows of fortune,
+Or take arms against a sea of troubles,
+And by end.</B>
+
+<form>
+输入用于匹配的正则表达式:<INPUT TYPE="text" NAME="regexp" SIZE=25>
+<INPUT TYPE="checkbox" NAME="caseSens">区分敏感<BR>
+输入要替换的字符串:<INPUT TYPE="text" NAME="replaceEntry" SIZE=30>
+<INPUT type="button" VALUE="Execute replace()" onclick="doReplace(this.form)">
+<INPUT type="button" VALUE="Execute search()" onclick="doSearch(this.form)">
+<input type="reset">
+结果:<BR>
+<TEXTAREA NAME="result" COLS=60 ROWS=5></TEXTAREA>
+</form>
+</body>
+</HTML>
+```
+
+### string.search(regExpression)
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+列表 34-4 为 `string.replace()` 方法提供了一个使用 `string.search()` 方法的实验。
+
+### string.slice(startIndex [, endIndex])
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | ✓ | ✓ | ✓ | ✓ |
+
+#### 示例
+
+在列表 34-5 中，你可以尝试 `string.slice()` 方法的多种参数组合（见图 16-3）。提供了一个基础切割。从可选参数中选择并研究切割的结果。
+
+## 列表 34-5：切割字符串
+
+```html
+<HTML>
+<HEAD>
+<TITLE>字符串切分，第一部分</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+var mainString = "Electroencephalograph"
+function showResults() {
+  var form = document.forms[0]
+  var param1 = parseInt(form.param1.options[form.param1.selectedIndex].value)
+  var param2 = parseInt(form.param2.options[form.param2.selectedIndex].value)
+  if (param2) {
+    form.result1.value = mainString.slice(param1, param2)
+  } else {
+    form.result1.value = mainString.slice(param1)
+  }
+}
+</SCRIPT>
+</HEAD>
+<BODY onload="showResults()">
+<B>slice method()</B>
+<HR>
+用于方法的文本：
+<FONT SIZE=1><TT><B>Electroencephalograph<BR>
+-----</B></TT></FONT>
+<TABLE BORDER=1>
+<FORM>
+<TR><TH>字符串方法</TH><TH>方法参数</TH><TH>结果</TH></TR>
+<TR>
+<TD>string.slice()</TD><TD ROWSPAN=3 ALIGN="middle">
+(&nbsp;<SELECT NAME="param1" onchange="showResults()">
+<OPTION VALUE=0>
+<OPTION VALUE=1>
+<OPTION VALUE=2>
+<OPTION VALUE=3>
+<OPTION VALUE=5>
+</SELECT>
+&nbsp;<SELECT NAME="param2" onchange="showResults()">
+<OPTION VALUE="">
+<OPTION VALUE=1>
+<OPTION VALUE=2>
+<OPTION VALUE=3>
+<OPTION VALUE=4>
+<OPTION VALUE=5>
+<OPTION VALUE=6>
+<OPTION VALUE=7>
+<OPTION VALUE=8>
+<OPTION VALUE=9>
+<OPTION VALUE=10>
+<OPTION VALUE=11>
+<OPTION VALUE=12>
+<OPTION VALUE=13>
+<OPTION VALUE=14>
+<OPTION VALUE=15>
+<OPTION VALUE=16>
+<OPTION VALUE=17>
+<OPTION VALUE=18>
+<OPTION VALUE=19>
+<OPTION VALUE=20>
+</SELECT>
+&nbsp;
+</TD>
+<TD><INPUT TYPE="text" NAME="result1" SIZE=25></td>
+</TR>
+</FORM>
+</TABLE>
+</BODY>
+</HTML>
+```
+
+![图 16-3：探索 string.slice() 方法的实验](img/144de829a231bb2cbf5843e2f444fc0b_501_0.png)
+
+### string.split("分隔符" [, 限制整数])
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+使用评估器（《JavaScript 圣经》第 13 章）查看 `string.split()` 方法是如何运作的。首先，将一个逗号分隔的字符串赋值给变量：
+
+```
+a = "Anderson,Smith,Johnson,Washington"
+```
+
+在逗号位置分割字符串，使字符串片段存入数组中，并保存为 b：
+
+```
+b = a.split(",")
+```
+
+为了证明该数组包含四个项目，请检查数组的 length 属性：
+
+```
+b.length // result: 4
+```
+
+### string.substr(起始位置, 长度)
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | | | |
+
+#### 示例
+
+列表 34-6 允许你尝试各种值，以查看 `string.substr()` 方法是如何运作的。
+
+> 列表 34-6：读取字符串的一部分
+
+```html
+<HTML>
+<HEAD>
+<TITLE>字符串切分与处理，第二部分</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+var mainString = "Electroencephalograph"
+function showResults() {
+var form = document.forms[0]
+var param1 = parseInt(form.param1.options[form.param1.selectedIndex].value)
+var param2 = parseInt(form.param2.options[form.param2.selectedIndex].value)
+form.result1.value = mainString.substr(param1, param2)
+}
+</SCRIPT>
+</HEAD>
+<BODY onload="showResults()">
+<B>String substr</B>
+<HR>
+用于方法的的文本：<BR>
+<FONT SIZE=-1><TT><B>Electroencephalograph</B><BR>
+---5-----5-----5-----5/</TT></FONT>
+<TABLE BORDER=1>
+<FORM>
+<TR><TH>字符串方法</TH><TH>方法参数</TH><TH>结果</TH></TR>
+<TD>string.substr(</TD><TD ROWSPAN=3 VALIGN=middle>
+&nbsp;<SELECT name="param1" onChange="showResults()">
+<OPTION VALUE=0>
+  <OPTION VALUE=1>
+  <OPTION VALUE=2>
+  <OPTION VALUE=3>
+  <OPTION VALUE=5>
+</SELECT>
+<SELECT NAME="param2" onChange="showResults()">
+<OPTION> (None)
+  <OPTION VALUE=5>5
+  <OPTION VALUE=10>10
+  <OPTION VALUE=20>20
+</SELECT>&nbsp;)</TD>
+<TD><INPUT TYPE="text" NAME="result" SIZE=25></TD>
+</TR>
+</FORM>
+</TABLE>
+</BODY>
+</html>
+```
+
+### string.substring(索引A, 索引B)
+
+| | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+#### 示例
+
+列表 34-7 允许你尝试各种变量，以查看 `string.substring()` 方法是如何运作的。如果你使用的是 Navigator 4，请尝试更改脚本属性，以查看当参数设置为 5 和 3 时的不同行为，这实际上是让第二个索引值成为提取子字符串的开头。
+
+# 列表 34-7：读取字符串的一部分
+
+```html
+<HTML>
+<HEAD>
+<TITLE>字符串切分与处理，第三部分</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+var mainString = "Electroencephalograph"
+function showResults() {
+var form = document.forms[0]
+var param1 = parseInt(form.param1.options[form.param1.selectedIndex].value)
+var param2 = parseInt(form.param2.options[form.param2.selectedIndex].value)
+form.result1.value = mainString.substring(param1, param2)
+}
+</SCRIPT>
+</HEAD>
+<BODY onload="showResults()">
+<B>String Method</B>
+<HR>
+用于方法的文本：<BR>
+<FONT SIZE=-1><TT><B>Electroencephalograph</B><BR>
+---5-----5-----5-----5/</TT></FONT>
+<TABLE BORDER=1>
+<FORM>
+<TR><TH>字符串方法</TH><TH>方法参数</TH><TH>结果</TH></TR>
+<TD>string.substring()</TD>
+&nbsp;<SELECT name="param1" onChange="showResults()">
+<OPTION VALUE=0>
+<OPTION VALUE=1>
+<OPTION VALUE=2>
+<OPTION VALUE=3>
+<OPTION VALUE=5>
+</SELECT>
+<SELECT NAME="param2" onChange="showResults()">
+<OPTION> (None)
+  <OPTION VALUE=5>5
+  <OPTION VALUE=10>10
+  <OPTION VALUE=20>20
+</SELECT>&nbsp;)</TD>
+<TD><INPUT TYPE="text" NAME="result1" SIZE=25></TD>
+</TR>
+</FORM>
+</TABLE>
+</BODY>
+</html>
+```
+
+### string.toLowerCase() / string.toUpperCase()
+
+| | NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | | ✓ | ✓ | ✓ |
+
+#### 示例
+
+你可以在字符串字面量上使用 `toLowerCase()` 和 `toUpperCase()` 方法，如下：
+
+```
+var newString = "HTTP://www.Netscape.COM".toLowerCase()
+// result = "http://www.netscape.com"
+```
+
+这些方法在不区分大小写比较字符串时非常有用，如下：
+
+```
+if (guess.toUpperCase() == answer.toUpperCase())
+// 不区分大小写比较字符串
+```
+
+### string.toString() / string.valueOf()
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | ✓ | ✓ | | ✓ |
+
+#### 示例
+
+使用评估器测试 `valueOf()` 方法。将以下语句输入文本框，并检查结果字段出现的值：
+
+```
+a = new String("hello")
+typeof a
+b = a.valueOf()
+typeof b
+```
+
+由于其他 JavaScript 核心对象也拥有 `valueOf()` 方法，你可以构建接收各种类型的泛型函数，脚本根据存储在对象中的值的类型进行分支。
+
+# Number 对象
+
+### 属性
+
+```
+MAX_VALUE
+MIN_VALUE
+NEGATIVE_INFINITY
+POSITIVE_INFINITY
+```
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | ✓ | | | ✓ | ✓ | ✓ |
+
+# 示例
+
+将四个 Number 对象表达式分别输入评估器的顶部文本字段，查看浏览器如何报告每个值。
+
+```
+Number.MAX_VALUE
+Number.MIN_VALUE
+Number.NEGATIVE_INFINITY
+Number.POSITIVE_INFINITY
+```
+
+### 方法
+
+```
+number.toExponential(fractionDigits)
+number.toFixed(fractionDigits)
+number.toPrecision(precisionDigits)
+```
+
+| NN2 | NN3 | NN4 | NN6 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|---|
+| 兼容性 | | | | | ✓ | | | ✓ |
+
+# 示例
+
+你可以使用评估器用各种值尝试三种方法。在调用任何方法之前，请确保给其中一个全局变量赋值一个数值。
+
+# 数组对象
+
+## 第 17 章 + 数组对象（第 37 章）
+
+通过执行 `array.splice()` 方法的步骤，观察 JavaScript 在 NN4+ IE5+ 中如何替换数组内部的条目。一个示例用一个元素替换项目，表明你并不受限于维持相同的数组长度。
+
+# 数组对象方法
+
+### array.concat(array2)
+
+| NN2 | NN3 | NN4 | IE3/J1 | IE3/J2 | IE4 | IE5 | IE5.5 |
+|---|---|---|---|---|---|---|---|
+| 兼容性 | | | ✓ | ✓ | | ✓ | ✓ |
+
+列表 37-6 有点复杂，但它演示了两个数组如何通过 `array.concat()` 方法合并，以及源数组中的值和对象是如何根据其数据类型进行复制或传播的。页面见图 17-1。
+
+![图 17-1：合并后数组中的对象引用 'alive'。](img/144de829a231bb2cbf5843e2f444fc0b_509_0.png)
+
+加载页面后，你会看到三个数组的输出。第一个数组包含所有字符串值；第二个数组有两个字符串值和一个指向页面上表单（HTML 中的一个文本框 "original"）的引用。在该页面的初始化过程中，不仅创建了两个源数组，还通过 `array.concat()` 方法将它们合并，并将结果显示在第三个框中。这显示了这些数组的内容，我使用了 `array.join()` 方法，它将数组的元素组合成一个字符串，在本例中以换行符作为分隔符——这为我们即时提供了一列数据。
+
+两系列字段允许你对值和对象引用在跨合并数组时的链接方式进行实验。在第一组中，如果你输入一个新值并赋值给 `arrayThree[0]`，新值将替换合并数组中的字符串值。因为普通值不与原始数组建立链接，因此只有合并数组中的第三项发生了变化。调用 `show()` 证明了只有第三数组受该变化的影响。
+
+对于此演示来说，对象关系更为复杂。第二个分组中第一个文本的引用被分配给了 `arrayTwo` 的第三条目。合并后，同一个对象现在位于数组的最后一项中。如果你为 `arrayThree` 中对象的属性输入一个新值，更改将一直回溯到原始对象——即下方分组中的第一个文本。然后，由于对该对象的所有引用都会产生相同的结果，`arrayThree` 仍然包含指向相同对象的引用（并且 `VALUE` 属性赋值给标签的默认值，而不是赋值给页面最后两个字段中显示的当前算法可检索值）。`arrayTwo[2]` 指向同一个文本对象，得到的答案与代码结果一致。
+
+## 列表 37-6：数组合并
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Array合并</TITLE>
+<SCRIPT LANGUAGE="JavaScript1.1">
+// 全局变量
+var arrayOne, arrayTwo, arrayThree, textObj
+// 加载后初始化以访问表单中的文本对象
+function initialize() {
+  var form = document.forms[0]
+  textObj = form.original
+  arrayOne = new Array("Jerry","Elaine","Kramer")
+  arrayTwo = new Array("Ross","Rachel",textObj)
+  arrayThree = arrayOne.concat(arrayTwo)
+  update(form)
+  updateTwo(form)
+}
+
+// 显示三个数组的所有当前值
+function showArrays() {
+  var form = document.forms[0]
+  form.array1.value = arrayOne.join("\n")
+  form.array2.value = arrayTwo.join("\n")
+  form.array3.value = arrayThree.join("\n")
+}
+
+// 更改 Array 三 中的第一个项
+function update(form) {
+  arrayThree[0] = form.source.value
+  form.result1.value = arrayOne[0]
+  form.result2.value = arrayThree[0]
+  showArrays();
+}
+
+// 更改 Array 三 中指向的对象属性
+function updateTwo(form) {
+  arrayThree[5].value = form.source2.value
+  form.result3.value = arrayTwo[2].value
+  form.result4.value = arrayThree[5].value
+  showArrays();
+}
+</SCRIPT>
+</HEAD>
+<BODY onload="initialize()">
+<FORM>
+<TABLE>
+<TR><TH>arrayOne</TH><TH>arrayTwo</TH><TH>arrayThree</TH></TR>
+<TR>
+<TD><TEXTAREA NAME="array1" COLS=5 ROWS=6></TEXTAREA></TD>
+<TD><TEXTAREA NAME="array2" COLS=5 ROWS=6></TEXTAREA></TD>
+<TD><TEXTAREA NAME="array3" COLS=5 ROWS=6></TEXTAREA></TD>
+</TR>
+</TABLE>
+<B>为 arrayThree[0] 输入新值：</B><INPUT TYPE="text" NAME="source" VALUE="Derry">
+<INPUT TYPE="button" VALUE="更改 arrayThree[0]" onclick="update(this.form)"><BR>
+当前 arrayOne[0] 是:<INPUT TYPE="text" NAME="result1"><BR>
+当前 arrayThree[0] 是:<INPUT TYPE="text" NAME="result2"><BR>
+赋值给 arrayTwo 的 textObj:<INPUT TYPE="text" NAME="original">
+<B>为 arrayThree[5] 输入新值：</B><INPUT TYPE="text" NAME="source2" VALUE="Derry">
+<INPUT TYPE="button" VALUE="更改 arrayThree[5]" onclick="updateTwo(this.form)"><BR>
+当前 arrayTwo[2] 是:<INPUT TYPE="text" NAME="result3"><BR>
+当前 arrayThree[5] 是:<INPUT TYPE="text" NAME="result4">
+</FORM>
+</BODY>
+</HTML>
+```
+
+### array.join(separator)
+
+#### 列表 37-7：使用 Array.join() 方法
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Array.join()</TITLE>
+<SCRIPT LANGUAGE="javascript">
+solarSys = new Array(9)
+solarSys[0] = "Mercury"
+solarSys[1] = "Venus"
+solarSys[2] = "Earth"
+solarSys[3] = "Mars"
+solarSys[4] = "Jupiter"
+solarSys[5] = "Saturn"
+solarSys[6] = "Uranus"
+solarSys[7] = "Neptune"
+solarSys[8] = "Pluto"
+// 将数组转换为字符串
+function convert(form) {
+var delim = form.delim.value
+form.output.value = unescape(solarSys.join(delim))
+}
+</SCRIPT>
+<BODY>
+<H2>数组转换为字符串</H2>
+此文档包含太阳系的数组。<HR>
+<FORM>
+<INPUT TYPE="text" NAME="delim" SIZE=5><P>
+<INPUT TYPE="button" VALUE="显示字符串" onclick="convert(this.form)">
+<TEXTAREA NAME="output" ROWS=4 COLS=40 WRAP="virtual"></TEXTAREA>
+</FORM>
+</BODY>
+</HTML>
+```
+
+注意此方法接收字面量值。如果你想包含非字母数字字符，如换行符或制表符，请使用 URL 编码字符（回车用 `%0D`；制表符用 `%09`）而不是字面量。在列表 37-7 中，`array.join()`的结果经过了 `unescape` 函数的处理在 TEXTAREA 中显示。
+
+### array.reverse()
+
+#### 列表 37-8：Array.reverse 方法
+
+列表 37-8 是 37-7 的增强版本，包含了另一个反转数组并将其作为字符串显示的按钮和函数。
+
+```html
+<HTML>
+<HEAD>
+<TITLE>Array.reverse()</TITLE>
+<SCRIPT LANGUAGE="javascript">
+solarSys = new Array(9)
+solarSys[0] = "Mercury"
+solarSys[1] = "Venus"
+solarSys[2] = "Earth"
+solarSys[3] = "Mars"
+solarSys[4] = "Jupiter"
+solarSys[5] = "Saturn"
+solarSys[6] = "Uranus"
+solarSys[7] = "Neptune"
+solarSys[8] = "Pluto"
+// 显示内存中当前的数组
+function showArray(form) {
+var delim = form.delim.value
+form.output.value = unescape(solarSys.join(delim))
+}
+// 反转数组顺序，然后作为字符串显示
+function reverse(form) {
+var delim = form.delim.value
+solarSys.reverse() // 反转原始数组
+form.output.value = unescape(solarSys.join(delim))
+}
+</SCRIPT>
+<BODY>
+<H2>反转数组元素顺序</H2>
+<FORM>
+<INPUT TYPE="text" NAME="delim" SIZE=5><P>
+<INPUT TYPE="button" VALUE="显示字符串" onclick="showArray(this.form)">
+<INPUT TYPE="button" VALUE="反转" onclick="reverse(this.form)">
+<INPUT TYPE="reset">
+<TEXTAREA NAME="output" ROWS=4 COLS=40 WRAP="virtual"></TEXTAREA>
+</FORM>
+</BODY>
+</HTML>
+```
+
+
+
+## HTML 表单与 JavaScript 数组操作示例
+
+### 表单结构
+
+输入一个字符串作为以下内容的分隔符：
+
+```html
+<INPUT TYPE="text" NAME="delim" VALUE="" SIZE=5><P>
+<INPUT TYPE="button" VALUE="原样输出" onclick="showAs(this.form)">
+<INPUT TYPE="button" VALUE="反转数组" onclick="reverseIt(this.form)">
+<INPUT type="reset">
+<INPUT TYPE="button" VALUE="刷新" onclick="self.location.reload()">
+<TEXTAREA NAME="output" ROWS=4 COLS=60>
+</TEXTAREA>
+</FORM>
+```
+
+### `array.reverse()` 方法说明
+
+注意，`solarSys.reverse()` 方法是独立运行的（这意味着没有捕获它的返回值），因为该方法会修改 `solarSys` 数组。然后通过 `array.join()` 方法对反转后的 `solarSys` 数组进行文本显示。
+
+---
+
+## `array.sort([compareFunction])`
+
+### 兼容性表
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/1 | IE3/2 | IE4 | IE5 | IE5.5 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+
+### 示例：行星数组排序
+
+你可以参考列表 37-9 获取几个字符串值数组排序的示例（见图 17-2）。按钮将调用排序程序，其中三个调用了比较函数。此列表根据行星名称的最后一个字母（正序和倒序）以及行星名称的长度对行星数组进行字母排序。每个比较函数都演示了排序过程中发送数据的不同比较方式。
+
+> **列表 37-9: Array.sort() 的可能性**
+
+#### 初始化数组
+
+```javascript
+solarSys = new Array(9)
+
+solarSys[0] = "Mercury"
+solarSys[1] = "Venus"
+solarSys[2] = "Earth"
+solarSys[3] = "Mars"
+solarSys[4] = "Jupiter"
+solarSys[5] = "Saturn"
+solarSys[6] = "Uranus"
+solarSys[7] = "Neptune"
+solarSys[8] = "Pluto"
+```
+
+#### 比较函数定义
+
+```javascript
+// 比较函数：反向字母顺序
+function compare(a, b) {
+    if (a > b) return -1
+    if (b > a) return 1
+    return 0
+}
+
+// 比较函数：行星名称的最后一个字母
+function compare2(a, b) {
+    var aLast = a.charAt(a.length - 1)
+    var bLast = b.charAt(b.length - 1)
+    if (aLast < bLast) return -1
+    if (aLast > bLast) return 1
+    return 0
+}
+
+// 比较函数：行星名称的长度
+function compare3(a, b) {
+    return a.length - b.length
+}
+```
+
+#### 排序并显示函数
+
+```javascript
+function sortIt(form, compFunc) {
+    var delimiter = ";"
+
+    if (compFunc == null) {
+        solarSys.sort()
+    } else {
+        solarSys.sort(compFunc)
+    }
+
+    // 在字段中显示结果
+    form.output.value = unescape(solarSys.join(delimiter))
+}
+```
+
+#### 完整 HTML 结构
+
+```html
+</SCRIPT>
+
+<BODY onload="document.forms[0].output.value = unescape(solarSys.join(';'))">
+<h2>排序数组元素</h2>
+
+此文档包含一个我们太阳系中行星的数组。<HR>
+
+<FORM>
+点击按钮对数组进行排序：<P>
+
+<INPUT TYPE="button" VALUE="字母排序 A-Z" onclick="sortIt(this.form)">
+<INPUT TYPE="button" VALUE="字母排序 Z-A" onclick="sortIt(this.form,compare)">
+<INPUT TYPE="button" VALUE="末尾" onclick="sortIt(this.form,compare2)">
+<INPUT TYPE="button" VALUE="名称长度" onclick="sortIt(this.form,compare3)">
+<INPUT TYPE="button" VALUE="恢复原始" onclick="self.location.reload()">
+<TEXTAREA type="text" NAME="output" SIZE="62">
+</FORM>
+
+</body>
+</html>
+```
+
+### 图示
+
+## 第 17 章 + 数组对象（第 37 章）
+
+![](img/144de829a231bb2cbf5843e2f444fc0b_516_0.png)
+
+图 17-2：根据最后一个字母对行星名称数组进行字母排序
+
+---
+
+## `array.splice(startIndex, deleteCount[, item1[, item2[...,itemN]]])`
+
+### 兼容性表
+
+| 兼容性 | NN2 | NN3 | NN4 | NN6 | IE3/JI | IE3/2 | IE4 | IE5 | IE5.5 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| | ✓ | ✓ | ✓ | ✓ | ✓ | | | | |
+
+### 示例：`splice()` 方法实验
+
+使用评估（JavaScript 经第 13 章）来实验 `splice()` 方法。从创建一个包含数字序列的数组开始：
+
+```javascript
+a = new Array(1, 2, 3, 4, 5)
+```
+
+接下来，移动并替换数组中的元素：
+
+```javascript
+a.splice(1, 2, "two", "three")
+```
+
+结果如下：
+
+```javascript
+[1, "two", "three", 4, 5]
+```
+
+
+
+# 索引
+
+## A
+
+- 上述属性, 242–443
+- `accessKey` 属性
+    - 兼容性, 3
+    - 控制, 3–4
+    - 示例, 3–4
+- `action` 属性, 336
+- `activeElement` 属性, 224–225
+- `addBehavior()` 方法
+    - 兼容性, 50
+    - 示例, 50–52
+    - 调用，每个段落对象, 51
+    - 使用, 52–53
+- `addEventListener()` 方法
+    - 兼容性, 53
+    - 示例, 53–55
+- `addRequest()` 方法, 407
+- `addRule()` 方法, 438–439
+- Adobe Acrobat Reader, 998
+- `alert` 方法, 153
+- `alert` 对话框, 153
+- `align` 属性
+    - `HR` 元素对象, 266–272
+    - `IFRAME` 元素对象, 198
+    - `IMG` 元素对象, 318–319
+    - `TABLE` 元素对象, 382
+    - 测试, 318–319
+- `alink` 属性, 257–258
+- `alinkColor` 属性, 225–227
+- `all` 属性, 5
+- `al` 属性, 319
+- anchors 锚点
+    - 文档，带有, 206–207
+    - 名称, 207
+    - 读取数量的, 228
+- `anchors` 属性, 227–228
+- `appCode` 属性, 398–401
+- `appendChild()` 方法
+    - 兼容性, 55
+    - 示例, 55–57
+    - 用, 1
+- `appendData()` 方法, 294–296
+- `applet` 属性, 229
+- `applyElement()` 方法
+    - 兼容性, 57
+    - 示例, 57–58
+    - 使用, 57–58
+- `appMinorVersion` 属性, 402
+- `appName` 属性, 398–401
+- `appVersion` 属性, 398–401
+- `AREA` 元素对象
+    - `coords` 属性, 331
+    - 动态修改, 332–333
+    - `shape` 属性, 331
+- `areas` 属性, 331–334
+- `array` 对象
+    - `concat()` 方法, 488–490
+    - 示例高亮, 487–488
+    - `join()` 方法, 491–492
+    - 方法, 488–495
+    - `reverse()` 方法, 492–493
+    - `sort()` 方法, 493–495
+    - `slice()` 方法, 495
+- arrays, 拼接, 488–490
+- `attachElement()` 方法
+    - 兼容性, 58
+    - 示例, 58–59
+- `attributes` 属性, 5
+- `availleft`/`availTop` 属性, 407
+
+## B
+
+- `back()` 方法, 219–221
+- `background` 属性
+    - `BODY` 元素对象, 258
+    - `NN4` 层对象, 444–445
+    - `TABLE` 元素对象, 382
+- `behavior` 属性, 273–275
+- behaviors
+    - 添加, 50–53
+    - 关闭调整, 53
+    - 开启调整, 51
+- `behaviorTurn()` 属性, 6
+- `below` 属性, 442–443
+- `bgColor` 属性
+    - `BODY` 元素对象, 257–258
+    - 文档对象, 225–227
+    - `MARQUEE` 元素对象, 275
+    - `NN4` 层对象, 445–446
+    - `TABLE` 元素对象, 383
+- `bgProperties` 属性, 258–259
+- `blur()` 方法
+    - 兼容性, 59
+    - 示例, 59–60
+- 输入对象, 363
+
+## C
+
+- `BODY` 元素对象
+    - `alink` 属性, 257-258
+    - `background` 属性, 258
+    - `bgColor` 属性, 257-258
+    - `bgProperties`/`topMargin` 属性, 259
+    - `bottomMargin`/`topMargin` 属性, 259
+    - `createTextRange()`, 方法, 261-262
+    - `dcroll()`, 方法, 262
+    - 事件处理器, 262-263
+    - `leftMargin`/`rightMargin` 属性, 259
+    - `link` 属性, 257-258
+    - 方法, 261-262
+    - `nowrap` 属性, 259
+    - `onOnClick` 事件处理器, 831
+    - `onMouseDown` 事件处理器, 63, 115-117
+    - `onScroll` 事件处理器, 262-263
+    - `onUnload` 事件处理器, 377
+    - 属性, 257-261
+    - `scroll` 属性, 260
+    - `scrollleft`/`scrolltop` 属性, 260-261
+    - `text` 属性, 257-258
+    - `vlink` 属性, 257-258
+- `body` 属性, 229
+- `canaveChildren`
+    - 兼容性, 6
+    - 示例, 6-7
+    - 读取, 6-
+- `canHaveHTML` 属性, 8
+- `capture` 属性, 384
+- `captureEvents()` 方法
+    - 文档对象, 243
+    - 窗口对象, 154-155
+- 级样式表 (CSS), 265
+- CDROM
+    - Adobe Reader, 498
+    - 内容, 497-498
+    - 电子版书籍, 498
+    - JavaScript 编辑器列表, 497-498
+    - 系统要求, 473
+- `cellIndex` 属性, 392-393
+- `cellPadding` 属性, 384-385
+- `cells` 属性
+    - `TABLE` 元素对象, 385
+    - `TR` 元素对象, 391
+- `cellSpacing` 属性, 384-385
+- CGI 提交调整, 349
+- `charSet` 属性, 230
+- `charCode` 属性, 423-424
+- `charset` 属性, 229-230
+- 复选框输入对象
+    - `checked` 属性, 347
+    - `defaultChecked` 属性, 348
+    - `onClick` 事件处理器, 349-352
+    - 属性, 347-349
+    - `value` 属性, 348
+- `checked` 属性
+    - `FRAMESET` 元素对象, 194
+    - `img` 元素对象, 319
+    - `TABLE` 元素对象, 383
+- `border` 属性, 190
+    - `FRAME` 元素对象, 190
+    - `FRAMESET` 元素对象, 194
+    - `TABLE` 元素对象, 383-384
+- `borderColor`/`borderColor` 属性, 383-384
+- `bottomMargin`/`topMargin` 属性, 259
+- `top`/`topMargin` 属性, 315-316
+- bound 数据
+    - 过滤, 18-20
+    - 排序, 18-20
+- `boundingleft`/`displayWidth` 属性, 297-299
+- `boundingleft`/`boundingRight` 属性, 279-299
+- 函数检查, 399-401
+- 读取和写入偏好, 405-406
+- `BUTTON` 元素对象
+    - `click()` 方法, 345
+    - 事件处理器, 346
+    - `form` 属性, 344-345
+    - `name` 属性, 345
+    - `onOnClick` 事件处理器, 346
+    - 属性, 344-345
+    - `value` 属性, 345
+- 作为条件, 347
+    - 复选框输入对象, 347
+    - 单选输入对象, 352-353
+- 子节点
+    - 收集, 9-10
+    - 层级检查, 8
+- `childNodes` 属性
+    - 兼容性, 8
+    - 示例, 8-10
+- `children` 属性
+    - 兼容性, 10
+    - 示例, 10-11
+- `className` 属性
+    - 兼容性, 11
+    - 示例, 11-12
+    - 设置为空, 11
+    - 使用, 12
+- `clear()` 方法, 292-293
+- `clearAttributes()` 方法, 61
+- `clearInterval()` 方法, 155
+- `clearTimeout()` 方法
+    - 兼容性, 155
+    - 示例, 155-157
+    - `timerID` 值, 157
+- `click()` 方法, 345
+    - 兼容性, 61
+    - 示例, 61
+- `clientname` 属性, 13–14
+    - 兼容性, 13
+    - 定义, 13
+    - 示例, 13–14
+    - 使用, 13–14
+- `clientX`/`client` 属性, 413–416, 425–427
+- `clip` 属性
+    - 调整, 447–449
+    - 兼容性, 447
+    - 示例, 447–450
+- `clipboardData`, 129
+- `cloneContents()` 方法, 279
+- `cloneNode()` 方法, 62
+- `cloneRange()` 方法, 279
+- `close()` 方法
+    - 文档对象, 243–244
+    - 窗口对象, 157–158
+- `closed` 属性, 128–131
+- `COL` 元素对象, 391
+- `GROUP` 元素对象, 391
+- `collapse()` 方法
+    - `Range` 对象, 279
+- `collapsed` 属性, 276
+- `color` 属性
+    - `FONT` 元素对象, 266–268
+    - `HR` 元素对象, 272
+- colors
+    - 改变，触发, 377–378
+    - 采样器, 225–227
+- `cols` 属性
+    - `FRAMESET` 元素对象, 195–197
+    - `TEXTAREA` 元素对象, 368
+- `colSpan` 属性, 393
+- `commonAncestor` 属性, 277
+- `compareBoundary()` 方法
+    - 兼容性, 280
+    - 示例, 280–283
+    - 用于, 281–283
+    - 返回原始值, 280
+- `comparePoints()` 方法
+    - 兼容性, 300
+    - 示例, 300–303
+    - 调用, 301
+    - 用于, 301–303
+    - 返回原始值, 301
+- `complete` 属性, 320
+- `componentEntryPoint()` 方法
+    - 兼容性, 62
+    - 示例, 62–63
+    - 使用, 63
+- `confirm()` 方法, 158
+    - 对话框, 158
+- 构造函数属性, 470
+- `contains()` 方法, 64
+- `contentDocument` 属性
+    - `FRAME` 元素对象, 190
+    - `IFRAME` 元素对象, 199
+- `Editable` 属性
+    - 兼容性, 14
+    - 示例, 14–15
+    - 使用, 14–15
+- 内容敏感，创建, 110–111
+- `cookie` 属性, 230
+- `cords` 属性, 331
+- 倒计时器
+    - 列表, 155–156
+    - 页面, 157
+- `cpuClass` 属性, 402
+- `createAttribute()` 方法, 242
+- `createXMLFragment()` 方法, 283
+- `createElement()` 方法, 244
+- `createSelection()` 方法, 244
+- 文档对象, 244–245
+- `fireEvent()` 方法, 67
+- `createPopup()` 方法, 159
+- `createRange()` 方法, 293
+- `createStyle()` 方法, 245–246
+- `createText()` 方法, 246–247
+- `createTextRange()` 方法
+    - 元素对象, 261–262
+    - `TEXTAREA` 元素对象, 368
+- `cssRule` 属性, 440
+- `css` 属性, 436–337
+- 当前时间, 176–177
+- `CurrentStyle` 属性, 15
+- `currentTarget` 属性, 427–428
+- 裁剪/传递，脚本控制, 101–102
+- `styleSheet` 对象, 437
+- `disableExternalCapture()` 方法, 159
+- `dispatchEvent()` 方法
+    - 兼容性, 64
+    - 示例, 64–66
+    - 使用, 64
+- `DIV` 元素
+    - `clientHeight` 属性, 13–14
+    - `clientWidth` 属性, 13–14
+    - `contentEditable` 属性, 14
+- 文档对象
+    - `activeElement` 属性, 224–225
+    - `link` 属性, 225–227
+    - 锚, 227–228
+    - `anchors` 属性, 229
+    - `applets`, 229
+    - `bColor` 属性, 229
+    - `body` 属性, 229
+    - `captureEvents()` 方法, 243
+    - `charSet` 属性, 230
+    - `charset` 属性, 229–230
+    - `close()` 方法, 243–244
+    - `createAttribute()` 方法, 244
+    - `createElement()` 方法, 244–245
+    - `createStyleSheet()` 方法, 246–247
+    - `createNode()` 方法, 246
+    - `defaultChecked` 属性, 230–231
+    - `documentElement` 属性, 247–249
+    - `elementFromPoint()` 方法, 245–249
+    - 示例高亮, 224
+    - `execCommand()` 方法, 249
+    - `expand` 属性, 231
+    - `fgColor` 属性, 225
+    - `fileCreated` 属性, 232–233
+    - `fileModifiedDate` 属性, 232–233
+    - `fileSize` 属性, 232–233
+    - `forms` 属性, 234
+    - `getElementById()` 方法, 250
+    - `getElementsByName()` 方法, 250
+    - `selection()` 方法, 251–252
+    - `height` 属性, 234–235
+
+## D
+
+- 数据绑定
+    - `recordNumber` 属性, 41–42
+    - 资源, 20
+- `data` 属性
+    - `NN4` 对象, 410–411
+    - `Text` 和 `TextNode` 对象, 293
+- 数据验证, 367–368
+- `dataField` 属性, 16–20
+    - 改变, 16–17
+    - 兼容性, 16
+    - 示例, 16–20
+- `dataFormats` 属性, 16–20
+- `dataPage` 属性, 385
+- `dataScrc` 属性
+    - 改变, 16–17
+    - 兼容性, 16
+    - 示例, 16–20
+- `defaultChecked` 属性, 230–231
+- `defaultChecked` 属性
+    - 复选框索引对象, 354
+    - 单选索引对象, 354
+- `defaultStatus` 属性
+    - 兼容性, 131
+    - 示例, 131–132
+    - 设置, 132
+- `dataValue` 属性, 359
+- `deleteContents()` 方法, 284
+- `deleteData()` 方法, 294–296
+- `deleteRule()` 方法, 439
+- `detachEvent()` 方法
+    - 兼容性, 58
+    - 示例, 58–59
+- `dialogArguments` 属性, 132
+- `dialogHeight`/`dialogWidth` 属性, 132–133
+- `dialogTop` 属性, 133
+- `direction` 属性, 275
+- `directories` 属性, 134–135
+- `disabled` 属性
+    - 兼容性, 21
+    - 示例, 21
+
+## E
+
+- `elementFromPoint` 方法
+    - 兼容性, 247
+    - 示例, 247–249
+    - 使用, 248–249
+- `elements` 属性
+    - 兼容性, 336
+    - 示例, 336–338
+    - 使用, 337
+- `empty` 方法, 293
+- `enabledCapture` 方法, 159
+- `encoding` 属性, 338
+- `typecount` 属性, 338
+- `endContainer`/`startContainer` 属性, 277–278
+- `endOffset`/`startOffset` 属性, 278
+- 事件处理程序（续）
+    - `onPaste`, 121–123
+    - `onPropertyChange`, 123–124
+    - `onReadyState`, 124–125
+    - `onResize`, 341–342
+    - `Resize`, 125
+    - `Scroll`, 262–263
+    - `onSelect`, 365–368
+    - `onSelectStart`, 125–126
+    - `onStop`, 265–267
+    - `onSubmit`, 341–342
+    - `radio` object, 355–356
+    - `SELECT` object, 377–378
+    - `text` object, 365–368
+    - `window` object, 188–189
+- 事件对象
+    - 示例高亮, 410
+    - IE, 413–423
+    - IE4, 410–433
+    - IE6, 423–433
+    - 属性, 409
+    - `eventPhase`, 427–429
+- `execCommand()` 方法
+    - 文档对象, 249
+    - `TextRange`, 304
+- `execScript()` 方法, 159–160
+- `expand()` 方法, 304
+- `expand`, 231
+- `external` 属性, 135–136
+- `extractContents()` 方法, 285
+
+## F
+
+- `firstChild` 属性
+    - 兼容性, 22
+    - 示例, 22–23
+    - 使用, 22–23
+- `focus()` 方法
+    - 兼容性, 59
+    - 示例, 59–60
+    - 文本输入对象, 363
+- `FONT` 对象
+    - `color`, 266–268
+    - `face` 属性, 266–269
+    - 属性, 控制, 267–268
+    - `size` 属性, 269
+- `fontSize` 属性, 385
+- form controls, 禁用, 2
+- `form` 对象
+    - `action` 属性, 336
+    - `elements`, 336–338
+    - `encoding` 属性, 338
+    - `type` 属性, 338
+    - 事件处理程序, 341–342
+    - 示例高亮, 335
+    - `length` 属性, 339
+    - `method` 属性, 339
+    - 方法, 340–341
+    - `reset` 事件处理程序, 341–342
+    - `onSubmit` 事件处理程序, 341–342
+    - 属性, 336–339
+    - `reset()` 方法, 340
+    - `submit()` 方法, 341
+    - `target` 属性, 339
+    - `BUTTON` 元素对象, 344–345
+    - 文本输入对象, 359–360
+- `forms` 属性, 233–234
+- `FRAME` 元素对象
+    - `borderColor` 属性, 190
+    - `contentDocument` 属性, 190
+    - `Document` 属性, 191
+    - `height` 属性, 191–192
+    - `noResize` 属性, 192–194
+    - `scrolling` 属性, 192–193
+    - `src` 属性, 184
+    - `width` 属性, 191–192
+- `frame` 属性
+    - 兼容性, 385
+    - 循环遍历属性, 386–387
+    - 示例, 385–387
+- `frameBorder` 属性
+- `FRAMET` 元素对象, 197–198
+- `IFRAME` 元素对象, 199
+- `face` 属性, 268–269
+- `file` 属性
+    - `fileCreatedDate` 属性
+        - 文档对象, 232–233
+        - `IMG` 元素对象, 322
+    - `fileModifiedDate` 属性
+        - 文档对象, 232–233
+        - `IMG` 元素对象, 322
+    - `fileSize` 属性
+        - 文档对象, 232–233
+        - `IMG` 元素对象, 322
+- `find()` 方法, 160
+- `fillText()` 方法
+    - 兼容性, 304
+    - 示例, 305–308
+- `fireEvent()` 方法
+    - 兼容性, 66
+    - 示例, 66–68
+    - 使用, 67–68
+
+### frames
+- border, 197–198, 199
+- control panel, 194
+- documents loaded into, 136
+- scrolling, 170–171
+- showing/hiding, 196
+- sizes, 128
+- spacing, 198
+- table of contents, 197
+
+- `doSelection()`, 364
+- `dragIt()`, 118
+- `engage()`, 117
+- for examining browsers, 399–401
+- `finishNewWindow()`, 130
+- `flash()`, 154
+- `getColor()`, 143
+- `getObjData()`, 184
+- `SearchArray()`, 214
+- `handleApply()`, 184
+- `handleCut()`, 101
+- `handleOK()`, 182
+- `hilite()`, 71
+- `init()`, 92, 179, 183
+- `insertTableRow()`, 392
+- `isNumber()`, 364
+- `isWindow()`, 398
+- `make()`, 332
+- `makeNewWindow()`, 60
+- `moveOffScreen()`, 163
+- `nextField()`, 16
+- `parseIt()`, 172
+- `prevField()`, 16
+- `pushUndo()`, 308
+- `releaselease()`, 117, 118, 465
+- `replace()`, 87
+- `resetSelect()`, 326
+- `resetTab()`, 47
+- `resizeIt()`, 465
+- `restore()`, 88, 134
+- `revolve()`, 38
+- `selectChunk()`, 38
+- `setPosition()`, 33
+- `setInitialColor()`, 51
+- `setSelection()`, 364
+- `setupDrag()`, 103, 104
+- `showChange()`, 123
+- `showContextMenu()`, 81
+- `showCountDown()`, 157
+- `showPreferences()`, 405
+- `startTimer()`, 157
+- `stopTimer()`, 157
+- `swipe()`, 88, 350
+- `timeOut()`, 104
+- `toggle()`, 350
+- `toggleBar()`, 134
+- `toggleComplete()`, 18
+- `toggleEdit()`, 14
+- `turnOn()`, 51
+
+## G
+
+- `generic` objects, 1–126
+    - `accessKey` 属性, 3–4
+    - `addBehavior()` 方法, 50–53
+    - `addEventListener()` 方法, 50–53
+    - `all` 属性, 5
+    - `appendChild` 方法, 55–58
+    - `elementAt()` 方法, 62
+    - `attachEvent()` 方法, 58–59
+    - `attributes` 属性, 5
+    - `behaviors` 属性, 6
+    - `blur()` 方法, 59–60
+    - `canHaveChildren` 属性, 6–7
+    - `canHaveHTML` 方法, 68
+    - `childNodes` 属性, 1–80
+    - `child` 属性, 10–11
+    - `className` 属性, 11–12
+    - `clearAttributes()` 方法, 61
+    - `click()` 方法, 61
+    - `height` 属性, 13–14
+    - `clientWidth` 方法, 13–14
+    - `cloneNode()` 方法, 62
+    - 兼容性, 59
+    - `componentFrom()` 方法, 62–63
+    - `contains` 方法, 64
+    - `Editable` 属性, 14–15
+    - `currentStyle` 属性, 15
+    - `dataFile` 属性, 16–20
+    - `dataFormat`, 16–20
+    - `dataSrc` 属性, 16–20
+    - `detach()` 方法, 58–59
+    - `dir` 属性, 21
+    - `disabled` 属性, 2, 21
+    - `dispatchEvent` 方法, 64–66
+    - `document` 属性, 21–22
+    - 事件处理程序, 95–126
+    - 示例高亮, 1, 22–68
+    - `fireEvent()` 方法, 66
+    - `firstChild` 属性, 1, 22–23
+    - `focus()` 方法, 55–60
+- `getAdjacentText()` 方法, 69
+- `getAttention()` 方法, 160
+- `getAttribute()` 方法
+    - 兼容性, 69
+    - 示例, 69–70
+    - 返回, 2
+    - `userProfile` 对象, 408
+- `getAttributeNode()` 方法, 70
+- `getBookmark()` 方法, 308
+- `getBoundingClientRect()` 方法
+    - 兼容性, 70
+    - 示例, 70–73
+    - 使用, 71–73
+- `clientRects()` 方法, 73
+- `getByID()` 方法, 250
+- `getElementsByName()` 方法, 50
+- `getElementsByTagName()` 方法
+    - 兼容性, 73
+    - 示例, 73
+    - 返回, 2
+- `expression()` 方法, 74
+- `Selection()` 方法, 251–252
+- `gGo()` 方法, 219–221
+
+## H
+
+- `handleError()` 方法, 140
+- `hashNodes()` 方法
+    - 兼容性, 74
+    - 示例, 74–75
+- `hash` 属性, 206–207
+- `height` 属性
+    - 兼容性, 23
+    - 文档对象, 234–235
+    - 示例, 24
+    - `FRAME` 元素对象, 191–192
+    - `IMG` 元素对象, 206–207
+    - `TABLE` 元素对象, 387
+    - `TD` 和 `TH` 元素对象, 393–394
+    - `TR` 元素对象, 391–392
+- `hide()` 方法, 202–204
+- `hideFocus` 属性, 24
+- `history` 对象
+    - `back()` 方法, 219–221
+    - 示例高亮, 205
+    - `ago()` 方法, 221–222
+    - `length` 属性, 218–219
+    - 方法, 219–222
+    - 属性, 218–219
+- `host` 属性
+    - 兼容性, 207
+    - 示例, 207–211
+- `hostname` 属性, 211
+- `HR` 元素对象
+    - `align` 属性, 218–420
+    - `color` 属性, 272
+    - `Shade` 属性, 272
+    - 属性, 269–273
+    - 控制, 270–272
+    - `size` 属性, 272
+    - `width` 属性, 273
+- `href` 属性, 211–212
+- `hspace` 属性
+    - `IFRAME` 元素对象, 199
+    - `IMG` 元素对象, 323
+- `html` 对象
+    - 通用, 1–126
+    - 规范, 1
+- `htmlFor` 属性, 342
+- `mtext`, 299–300
+- `Id` 属性
+    - 兼容性, 24
+    - 示例, 25
+- IE 元素
+    - `clientX`/`clientY` 属性, 413–416
+    - `fromElementTo` 属性, 416–418
+    - `keyCode` 属性, offset/offset, 413–416
+    - 属性, 413–423
+    - `returnValue` 属性, 420
+    - `srcElement` 属性, 420–422
+    - `type` 属性, 422–423
+    - `x`/`y`, 414–416
+- `IFRAME` 元素对象
+    - `align` 属性, 198
+    - `contentDocument` 属性, 199
+    - `frameBorder` 属性, 199
+    - `hspace` 属性, 199
+    - 属性, 198–200
+    - `scrolling` 属性, 200
+    - `src` 属性, 200
+    - `vspace` 属性, 199
+- `Image` 对象, 318–331
+    - 图像变化和运动, 321–322
+    - 旋转, 328–329
+- `images` 属性, 235
+- `IMG` 元素对象
+    - `align` 属性, 318–319
+    - `alt` 属性, 319
+    - `border` 属性, 319
+    - `complete` 属性, 320
+    - 示例高亮, 317
+    - `fileCreated` 属性, 322
+    - `fileModified` 属性, 322
+    - `filesize` 属性, 322
+    - `height` 属性, 322–323
+    - `hspace` 属性, 323
+    - `isMap` 属性, 323–324
+    - `loop` 属性, 324
+    - `lowsrc`/`lowSrc` 属性, 324
+    - `name` 属性, 324
+    - `nameProp` 属性, 325
+    - `onAlert` 事件处理器, 329
+    - `onFocus` 事件处理器, 329
+    - `onLoad` 事件处理器, 330–331
+    - 属性, 318–339
+    - `protocol` 属性, 325–328
+    - `src` 属性, 325
+    - `start` 属性, 329
+    - `vspace` 属性, 323
+    - `width` 属性, 322–323
+    - `x` 属性, 329
+    - `y` 属性, 329
+- `implementation` 属性, 325
+- `innerHeight`/`innerWidth` 属性, 138–139
+- `innerHTML` 属性
+    - 兼容性, 25
+    - 示例, 25–26
+    - 使用, 25–26
+- `innerText` 属性
+    - 兼容性, 25
+    - 示例, 25–26
+    - 使用, 25–26
+- `inRange()` 方法, 309
+- `insertAdjacentElement()` 方法, 75
+- `insertAdjacentHTML()` 方法, 76
+- `insertAdjacentText()` 方法, 76
+
+## I
+
+- `insertBefore()` 方法
+    - 兼容性, 76
+    - 示例, 77
+    - `second_parameter`, 77
+    - 使用, 1
+    - 使用, 77
+- `lastModified` 属性, 235–336
+- layers
+    - 背景颜色, 446
+    - 背景设置, 444–445
+    - 拖拽, 464
+    - 加载文档到, 462–463
+    - 嵌套，坐标系系统, 453–458
+    - 嵌套，源计数, 457–465
+    - 嵌套，可见性关系, 458
+    - 抵抗, 466–467
+- `insertData()` 方法, 294–296
+- `insertNode()` 方法
+    - 兼容性, 285
+    - 示例, 285–287
+    - 列表, 286–287
+- `insertRule()` 方法, 439
+- `isContentEditable` 属性
+    - 兼容性, 26
+    - 示例, 27
+- `layers` 属性, 236–237
+- `layerX`/`layerY`
+    - `NN4` 事件属性, 411–413
+    - `NN6` 事件属性, 425–427
+- `left` 属性
+    - `NN4` 层属性, 450–452
+- `textRectangle` 对象, 315–316
+- `marginLeft`/`rightMargin` 属性, 259
+- `length` 属性, 29
+- `isDisabled` 属性
+    - 兼容性, 27
+    - 示例, 27–28
+- `isEqual()` 方法, 309–310
+- `isMap` 属性, 323–324
+- `isMultiLine` 属性, 288
+- `isOpenOpen` 属性, 201–202
+- `isTextEdit` 属性, 288
+- `isValid()` 方法, 287
+- `item()` 方法
+    - 兼容性, 78
+    - 示例, 78
+    - `SELECT` 元素属性, 376
+    - `form` 对象, 339
+    - `history` 对象, 218–219
+    - `radio` 输入对象, 354
+    - `select()` 方法, 370
+- `LI` 元素对象
+    - `type` 属性, 395–396
+    - `value` 属性, 396
+- `colorColor` 属性, 225–227
+- `links` 属性
+    - `BODY` 元素, 257–258
+    - 文档对象, 238
+- `listStyle` 属性, 81
+- `load()` 方法, 462–463
+- `location` 对象
+    - 示例高亮, 205
+    - `hash` 属性, 206–207
+    - `host` 属性, 207
+    - `hostname` 属性, 211–212
+    - `href` 属性, 216–218
+    - 方法, 216–218
+    - `pathname` 属性, 212
+    - `port` 属性, 213
+    - 属性, 206–216
+- `keyCode` 属性
+    - 兼容性, 418, 423
+    - 显示值, 419–424
+    - 示例, 418–420, 423–424
+    - `NN6` 事件属性, 423–424
+- tasks, 419–420
+
+## L
+
+- `LABEL` 元素属性
+    - 定义, 335
+    - `html` 属性, 342
+- `label` 属性
+    - `OPTGROUP` 对象, 378–380
+    - `OPTION` 元素属性, 378
+- `lang` 属性
+    - 兼容性, 28
+    - 示例, 29
+- `language` 属性, 29
+- `lastChild` 属性
+    - 兼容性, 22
+    - 示例, 22–23
+    - 使用, 22–23
+- `lowsrc`/`lowSrc` 属性, 324
+- `reload()` 方法, 216–217
+- `replace()` 方法, 217–218
+- `search` 属性, 213–216
+- `location` 属性, 238–240
+- `locationbar` 属性, 134–335
+- `loop` 属性, 324
+
+## M
+
+- `makeHot` 行为组件, 50–51
+- `MAP` 元素对象, 331–334
+- `MARQUE` 元素对象
+    - `behavior`, 273–275
+    - `bgColor`, 275
+    - `direction`, 275
+    - 方法, 276
+    - 属性, 273–275
+    - 控制, 273–275
+    - `scrollAmount`, 275
+    - `scrollDelay`, 275
+    - `start()` 方法, 276
+    - `stop()` 方法, 276
+- `maxLength` 属性, 360
+- `MAX_VALUE` 属性, 484–485
+- `menubar` 属性, 134–335
+- `mergeattribute()` 方法
+    - 兼容性, 278
+    - 示例, 78–79
+    - 使用, 279
+- 方法, 属性, 339
+    - `addAttribute()` 方法, 50–53
+    - `addEventListener()` 方法, 53–55
+    - `addReadRequest()` 方法, 407
+    - `addRule()` 方法, 436–439
+    - `addAlert()` 方法, 153
+    - `addChild()` 方法, 1, 55–57
+    - `addData()` 方法, 294–296
+    - `applyElement()` 方法, 57–58
+    - `array.concat()` 方法, 488–490
+    - `array.join()` 方法, 491–492
+    - `array` 对象, 488–493
+    - `array.reverse()` 方法, 492–493
+    - `array.sort()` 方法, 495
+    - `array.splice()` 方法, 495
+    - `attachEvent()` 方法, 58–59
+    - `back()` 方法, 219–221
+    - `blur()` 方法, 59–60, 363
+    - `BODY` 元素对象, 261–262
+    - `BUTTON` 元素对象, 345
+    - `captureEvents()` 方法, 154–155, 243
+    - `clear()` 方法, 292–293
+    - `clearAttributes()` 方法, 61
+    - `clearInterval()` 方法, 155
+    - `clearTimeout()` 方法, 128, 155–157
+    - `click()` 方法, 61, 345
+    - `cloneContents()` 方法, 279
+    - `cloneNode()` 方法, 62
+    - `cloneRange()` 方法, 279
+    - `close()` 方法, 157–158, 243–244
+    - `collapse()` 方法, 279, 300
+    - `compareBoundaryPoints()` 方法, 280–283
+    - `compareEndPoints()` 方法, 300–303
+    - `compareFromPoint()` 方法, 62–63
+    - `confirm()` 方法, 158
+    - `contains()` 方法, 64
+    - `createAttribute()` 方法, 244
+    - `createContextualFragment()` 方法, 283
+    - `createElement()` 方法, 244
+    - `createObjectURL()` 方法, 67–244
+    - `createPopup()` 方法, 159
+    - `createRange()` 方法, 293
+    - `createStyleSheet()` 方法, 245–246
+    - `createText()` 方法, 246–247
+    - `createTextRange()` 方法, 261–262
+    - `221–222`
+    - `hasChildNodes()`, 74–75
+    - `hide()`, 202–204
+    - `history` 对象, 219–222
+    - `inRange()`, 309
+    - `InsertAdjacentElement()`, 75
+    - `InsertAdjacentHTML()`, 76
+    - `InsertAdjacentText()`, 76
+    - `InsertBefore()`, 16–77
+    - `InsertData()`, 294–296
+    - `InsertNode()`, 285–287
+    - `InsertRule()`, 439
+    - `isAreEqual()`, 309–310
+    - `isValid()`, 287
+    - `item()`, 78–376
+    - `load()`, 462–463
+    - 对象位置, 216–285
+    - `MARQUE` 元素对象, 276
+    - `mergeAttribute()`, 78–79
+    - `move()`, 310
+    - `moveAbove()`, 463
+    - `moveBelow()`, 463
+    - `moveBy()`, 128–161, 463–464
+    - `moveEnd()`, 310–311
+    - `addRow()`, 390
+    - `startsWith()`, 310
+    - `toMove()`, 128–161, 463–464
+    - `toToAbsolute()`, 463–464
+    - `moveToBookmark()`, 311
+    - `toToElement()`, 311–312
+    - `tooPoint()`, 312
+    - `namedItem()`, 376
+    - `navigator` 对象, 405–406
+    - `nn4` 层对象, 462–467
+    - `decode()`, 78–89
+    - `normal()`, 79–80
+    - `number` 对象, 485
+    - `number.toExponential()`, 485
+    - `number.toFixed()`, 485
+    - `number.toPrecision()`, 485
+    - `number.toString()`, 485
+    - `open()`, 129, 163, 165–252
+    - `parentElement()`, 312–313
+    - `pasteHTML()`, 310
+    - `popup` 对象, 202–204
+    - `preference()`, 405
+    - `print()`, 165–166
+    - `prompt()`, 166–17
+    - `queryCommand()`, 252
+    - `Range` 对象, 279–291
+    - `recalc()`, 253
+    - `releaseCapture()`, 80–83
+    - `reload()`, 216–217
+    - `removeAttribute()`, 83
+    - `removeAttributeNode()`, 84
+    - `removeBehavior()`, 52–53, 84
+    - `moveChild()`, 57, 85
+    - `removeEventListener()`, 53–55
+    - `moveExpression()`, 85–86
+    - `removeNode()`, 86–88
+    - `removeValue()`, 438–409
+    - `replace()`, 217–218
+    - `replaceAdjacentText()`, 86–87
+    - `replaceChild()`, 1, 56, 87
+    - `replaceData()`, 294–296
+    - `replaceNode()`, 87–89
+    - `reset()`, 340
+    - `resizeBy()`, 167–168, 465–467
+    - `resize()`, 167–168, 465–467
+    - `routeEvent()`, 168–169
+    - `scroll()`, 169–171
+    - `scrollBy()`, 171–173
+    - `scrollInto()`, 89–90
+    - `crollTo()`, 171–173
+    - `select()`, 314, 364–365
+    - `SELECT` 元素对象, 376
+    - `select` 对象, 292–293
+    - `selectNodeContents()`, 287–288
+    - `setActive()`, 900
+    - `setAttribute()`, 91
+    - `setAttributeNode()`, 84
+    - `setCapture()`, 83
+    - `setEnd()`, `setStart()`, 288–289
+    - `setAfter()`, `setEnd()`, 289
+    - `setExpression()`, 91–94
+    - `setInterval()`, 128–173
+    - `setStart()`, `setBefore()`, 289
+    - `timeout()`, 128, 152, 176–178
+    - `show()`, 202–204
+    - `showDialog()`, 178–187
+    - `showModellessDialog()`, 178–187
+    - `sizeToContent()`, 187
+    - `splitText()`, 296–297
+    - `start()`, 276
+    - `stop()`, 276
+    - `string`, `charAr()`, 471
+    - `string.charCodeAt()`, 471–473
+    - `string.lastIndexOf()`, 474
+    - `string.match()`, 474–476
+    - `string.replace()`, 476–478
+
+### 方法（续）
+- `string.search()`, 478
+- `string.slice()`, 479–480
+- `string.split()`, 480–481
+- `string.substr()`, 481–482
+- `string.toLowerCase()`/`string.toUpperCase()`, 483–484
+- `string.toString()`, 484
+- `string.valueOf()`, 484
+- `stylesheet`, 438–439
+- `substringData()`, 294–296
+- `surroundContents()`, 289–291
+- `swapNode()`, 88, 94
+- `TABLE` 对象, 390
+- `tags()`, 94–95
+- 文本输入 对象, 363–365
+- 文本 对象, 294–297
+- `TEXTAREA` 对象, 368
+- `TextRange` 对象, 300–314
+- `toUpperCase()`, 363
+- `userProfile`, 407–408
+- `window` 对象, 153–187
+- `write()`, 253–256
+- `writeValue()`, 253–256
+- `timeTypes`, 403
+- `MIN_VALUE`, 484–485
+- modal dialog, 178–187
+- opening, 179–182
+- simulation, 127
+- dialog box, 178–187
+- document, 184–187
+- `move()` 方法, 310
+- `moveAbove()` 方法, 463
+- `moveBelow()` 方法, 463
+- `moveBy()` 方法, 463–464
+- window layer 对象, 163–464
+- `find()` 方法, 310–311
+- `mRow()` 方法, 390
+- `moveStart()` 方法, 310–311
+- `toTo()` 方法, 463–464
+- window layer 对象, 161–364
+- `moveTo(` 方法, 311–311
+- `moveToElement()` 方法, 311–312
+- `moveToPoint()` 方法, 312
+- `multiple` 属性, 370–371
+
+## N
+
+- `name` 属性
+    - `BUTTON` 元素对象, 345
+    - `IMG` 元素对象, 324
+    - 文本输入 对象, 360
+- `namedItem()` 方法, 376
+- `IMG` 元素对象, 325
+- 导航栏
+    - control panel, 220–221
+    - frameset, 219
+- `navigator` 对象
+    - `appCode` 属性, 398–401
+    - `appName` 属性, 402
+    - `appVersion` 属性, 398–401
+    - `cookieEnabled`, 402
+    - `cpu` 属性, 402
+    - 定义, 397
+    - 示例高亮, 398
+    - 方法, 405–406
+    - `types` 属性, 403
+    - `line` 属性, 403
+    - `oscpu` 属性, 403
+    - `platform` 属性, 404
+    - `preference()` 方法, 405–406
+    - `product`/`substr` 属性, 404
+    - 属性, 398–405
+    - `systemLanguage` 属性, 398–401
+    - `userAgent` 属性, 404–405
+    - `userLanguage` 属性, 404–405
+    - `vendor`/`substr` 属性, 404
+- `navigator` 对象, 139
+- `NEGATIVE_INFINITY`, 484–485
+- 嵌套 elements, location of, 53
+- nested layers. 另
+    - coordinate system event, 453–455
+    - source content, 456–457
+    - visibility relationships, 458
+- `nextSibling` 属性, 30
+- `NN` 事件对象
+    - `data` 属性, 410–419
+    - `layerX`/`layerY` 属性, 411–413
+    - `page`/`pageY` 属性, 411–413
+    - 属性, 410–413
+- `NN` 层对象
+    - `above` 属性, 442–443
+    - `background` 属性, 444–445
+    - `below` 属性, 442–443
+    - `bColor` 属性, 445–446
+    - `clip` 属性, 447–450
+    - 示例高亮, 441–442
+    - `left` 属性, 450–452
+    - `load` 方法, 462–463
+    - 方法, 462–467
+    - `moveAbove` 方法, 463–465
+    - `moveBelow` 方法, 465–467
+    - `moveBy` 方法, 463–464
+    - `moveTo` 方法, 463–464
+    - `moveToAbsolute` 对象, 463–464
+    - `page`/`detail` 属性, 452–455
+    - 属性, 462–461
+    - `resize` 方法, 465–467
+    - `resize` 方法, 465–467
+    - `siblingsAbove`/`siblingsBelow` 属性, 442–443
+    - `src` 属性, 455–457
+    - `visibility` 属性, 457–458
+    - `Zindex` 属性, 459–461
+- `NNW` 事件对象
+    - `charCode` 属性, 423–424
+    - `clientX`/`Y` 属性, 425–427
+    - `currentTarget` 属性, 427–427
+    - `eventPhase` 属性, 425–427
+    - `keyCode` 属性, 425–427
+    - `layerX`/`Y` 属性, 425–427
+    - `page`/`Y` 属性, 425–427
+    - `page` 属性, 425–427
+    - `relatedTarget`, 425–427
+    - `screenXY`, 425–427
+    - `target` 属性, 425–427
+    - `type` 属性, 425–427
+    - `value` 属性, 425–427
+    - `user` 属性, 425–427
+
+## O
+
+- `onStart` 事件处理程序
+    - 兼容性, 125
+    - 示例, 125–126
+    - 使用, 126
+- `onStop` 事件处理程序, 256–257
+- `onSubmit` 事件处理程序, 341–342
+- `onUnload` 事件处理程序
+    - `<BODY>` 定义中, 355
+    - `BODY` 元素对象, 377
+
+### `open()` 方法
+- 兼容性, 163
+- `document()` 对象, 252
+- 示例, 163–165
+- 窗口创建, 164–165
+
+### `opener` 属性
+- 兼容性, 142
+- 示例, 142–144
+- 引用, 143
+
+### `OPTGROUP` 元素对象
+- 示例高亮, 379
+- `label` 属性, 378–380
+- labels, 修改, 378–380
+
+### `OPTION` 元素, 378
+- `options` 属性
+    - 兼容性, 371
+    - 示例, 371
+    - `options.defaultSelected`, 371
+    - `options.index`, 371
+    - `options.selected`, 371–372
+    - `options.text`, 373
+    - `options.value`, 374
+
+### `ospu` 属性, 403
+- `outerHeight`/`outerWidth` 属性, 138–139
+
+### `outer` 属性
+- 兼容性, 35
+- 示例, 35–36
+
+### `outerText` 属性
+- 兼容性, 35
+- 示例, 35–36
+- 使用, 35–36
+
+- `ownerDocument` 属性, 376
+- `ownerNode` 属性, 437
+- `ownerElement` 属性, 437–438
+
+## P
+
+### `pageX`/`pageY` 属性
+- `NN4` 事件对象, 411–413
+- `NN4` 层对象, 452–455
+- `NN6` 事件对象, 425–427
+
+### `pageXOffset`/`pageYOffset` 属性
+- 兼容性, 144
+- 示例, 144–146
+- 值, 146
+- , 145
+
+### `parent` 属性
+- 兼容性, 146
+- 示例, 146–148
+
+- `parentElement()` 方法, 312–313
+- `parentElement` 属性, 37
+- `parentNode` 属性, 38
+- `parentText` 属性
+    - 兼容性, 38
+    - 示例, 38–39
+    - 使用, 39
+
+- `parentWindow` 属性, 240
+- `pasteHTML()` 方法, 313
+- `pathname` 属性, 212
+- `personalbar` 属性, 134–135
+- `platform` 属性, 404
+
+## popup 对象
+- 文档对象, 201
+- `hide()`, 202–204
+- `isOpen` 属性, 201–202
+- 方法, 202–204
+- 属性, 201–202
+- `show()` 方法, 202–204
+
+### 弹出式窗口
+- 创建, 201
+- 隐藏/显示, 203
+
+- `preference()` 方法, 405–406
+- `previousSibling` 属性, 30
+- `print()`, 165–166
+- 打印控制, 166
+- `product`/`Sub` 属性, 404
+- `prompt()` 方法, 166–167
+- `prompt` 对话框, 166–167
+
+### 属性
+- `above`, 442–443
+- `AbsolutePosition`, 41
+- `accessKey`, 3–4
+- `action`, 336
+- `activeElement`, 224–225
+- `align`, 198, 269–272, 318–312
+- `aLink`, 257–258
+- `alinkColor`, 225–227
+- `all`, 5
+- `alt`, 319
+- `appCode`, 398–401
+- `applets`, 229
+- `appMinorVersion`, 402
+- `appName`, 398–401
+- `appVersion`, 398–401
+- `AREA` 元素对象, 331
+- `as`, 331–334
+- `attributes`, 5
+- `availlet`/`availTop`, 407
+- `background`, 258, 382, 444–445
+- `behavior`, 273–275
+- `behaviorUrns`, 6
+- `below`, 442–443
+- `bgColor`, 225, 227, 257, 275, 383, 445–445
+- `bgProperties`, 258–259
+- `body`, 229
+- `BODY` 元素对象, 257–261
+- `border`, 194, 319, 383
+- `borderColor`, 190, 394–384
+- `borderColor`/`dialogColor`, 383–384
+- `bottom`, 315–316
+- `bottomMargin`/`topMargin`, 259
+- `boundingHeight`/`boundingBox`, 297–299
+- `boundingLeft`/`boundingBoxRight`, 297–299
+- `BUTTON` 元素, 344–345
+- `canhave`/`canWrite`, 8
+- `caption`, 384
+- `cellIndex`, 392–393
+- `cellPaging`, 384–385
+- `cells`, 385, 391
+- `cellSpacing`, 384–385
+- `characterSet`, 230
+- `charCode`, 323–424
+- `charSet`, 228–230
+- `checkbox` 对象, 347–349
+- `checked`, 347, 352–333
+- `childNodes`, 1, 8–10
+- `children`, 10–11
+- `className`, 12
+- `heightHeight`, 13–14
+- `clientWidth`, 13–14
+- `clientX`/`clientY`, 413–416, 425–427
+- `clip`, 440–458
+- `clipData`, 129
+- `closed`, 128, 129–131
+- `collapsed`, 276
+- `color`, 266–268, 272
+- `cols`, 195–197, 368
+- `colSpan`, 393
+- `commonAncestor`, 277
+- `complete`, 320
+- `constructor`, 470
+- `contentDocument`, 190, 199
+- `contentEditable`, 14–15
+- `cookie`, 230
+- `cookieEnabled`, 402
+- `coords`, 533
+- `cpuClass`, 402
+- `cssRules`, 436
+- `cssText`, 436–437
+- `currentStyle`, 15
+- `currentTarget`, 227–428
+- `data`, 293, 410–411
+- `dataField`, 16–20
+- `dataFormat`, 16–20
+- `dataPointSize`, 385
+- `desc`, 160
+- `default`, 230–231
+- `defaultChecked`, 348, 354
+- `defaultStatus`, 131–132
+- `defaultValue`, 358–359
+- `dialogArguments`, 132
+- `dialogHeight`/`dialogRight`, 132–133
+- `dialogLeft`/`dialogTop`, 133
+- `dir`, 21
+- `direction`, 275
+- `directories`, 134–145
+- `disabled`, 2, 21, 437
+- `document`, 21, 201
+- 文档对象, 224–243
+- `document`, 191
+- `documentElement`, 231
+- `dynamic`, 2, 92–93
+- `elements`, 336–338
+- `coding`, 338
+- `entype`, 338
+- `endToEnd`/`startContainer`, 277–278
+- `endOffset`/`startOffset`, 278
+- `eventPhase`, 427–429
+- `expando`, 251
+- `external`, 135–136
+- `face`, 268–269
+- `fColor`, 225–227
+- `fileCreated`, 232, 233–332
+- `fileModifiedDate`, 232, 233–332
+- `fileSize`, 232, 233–332
+- `firstChild`, 1, 22–23
+- `FONT` 元素对象, 266–269
+- `fontSize`, 85
+- `form`, 344–345, 359–360
+- `form` 对象, 336–339
+- `forms`, 233–234
+- `frame` 元素对象, 190–194
+- `frameBorder`, 197–198, 199
+- `frames`, 136–138, 234
+- `FRAMESET` 元素对象, 194–198
+- `frameSpacing`, 198
+- `fromElement`/`element`, 416–418
+- `generic`, 3–50
+- `hash`, 206–207
+- `height`, 23–24, 191–192, 234–235, 322–323, 387, 391–392, 393–384
+- `hideFocus`, 24
+- `history` 对象, 218–219
+- `host`, 207–211
+- `hostname`, 211
+- `HR` 元素对象, 269–273
+- `href`, 211–212
+- `hspace`, 199, 233
+- `htmlFor`, 342
+- `hHTML`, 299–306
+- `id`, 24–25
+- `IEA-event` 对象, 413–423
+- `IFRAME` 元素对象, 198–200
+- `Images`, 235
+- `IMG` 对象, 318–329
+- `implementation`, 235
+- `innerHeight`/`innerWidth`, 138–139
+- `innerHTML`, 25–26
+- `innerText`, 25–26
+- `isContentEnabled`, 26–27
+- `isDisabled`, 27–28
+- `isMap`, 325–324
+- `isMultiLine`, 28
+- `isOpen`, 201–202
+- `isTextEdit`, 28
+- `keyCode`, 418–420, 423–424
+- `label`, 378–380
+- `LABEL` 元素, 342
+- `lang`, 28–29
+- `language`, 29
+- `last`, 1, 22–23
+- `lastModified`, 235–336
+- `layers`, 236–337
+- `layerX`/`layerY`, 411–413, 425–427
+- `left`, 315–316, 450–452
+- `leftMargin`/`rightMargin`, 259
+- `length`, 28–218–219, 339, 354
+- `linkColor`, 225–227
+- `links`, 238–258
+- `listStyle`, 81
+- `location`, 238–240
+- `location` 对象, 206–216
+- `locationbar`, 134–135
+- `loop`, 324
+- `lowsrc`/`lowSrc`, 322
+- `MARQUE` 元素对象, 273–275
+- `maxLength`, 360
+- `MAX_VALUE`, 484–485
+- `menubar`, 134–135
+- `method`, 339
+- `MIN_VALUE`, 484–485
+- `multiple`, 370–371
+- `name`, 324, 345, 360
+- `nameProp`, 325
+- `navigator`, 109
+- `navigator` 对象, 398–405
+- `NEGATIVE_INFINITY`, 484–485
+- `nextSibling`, 30
+- `NN4` 事件对象, 410–413
+- `NN4` 层, 442–461
+- `NN6-event` 对象, 423–433
+- `nodeName`, 30
+- `nodeType`, 31
+- `nodeValue`, 31–32
+- `resize`, 192
+- `noshade`, 272
+- `nowrap`, 259, 394
+- `Number` 对象, 129–140
+- `offsetBuffering`, 139–140
+- `offset`, 32
+- `offsetLeft`, 32–33
+- `offsetParent`, 33–35
+- `offsetTop`, 32–33
+- `offsetWidth`, 32
+- `OL` 元素对象, 394–395
+- `error`, 140–141
+- `online`, 403
+- `opener`, 128–142
+- `options`, 371–374
+- `oscpu`, 403
+- `outerHeight`/`outerWidth`, 138–139
+- `outerHTML`, 35–36
+- `outerText`, 35–36
+- `ownerDocument`, 37
+- `ownerNode`, 437
+- `owningElement`, 437–438
+- `pageX`/`pageY`, 411–413, 425–455
+- `pageOffset`/`pageOffset`, 144–146
+- `parent`, 146–148
+- `parentElement`, 37
+- `parentNode`, 38
+- `parentTextEdit`, 38–39
+- `parentWindow`, 240
+- `pathname`, 212
+- `personalbar`, 134–135
+- `platform`, 404
+- `popup` 对象, 201–202
+- `port`, 213
+- `POSITIVE_INFINITY`, 484–485
+- `previousSibling`, 30
+- `product`/`productSub`, 404
+- `protocol`, 213, 240, 325
+- `radio` 输入对象, 352–355
+- `Range` 对象, 276–278
+- `readyOnly`, 360
+- `readyState`, 40, 51
+- `recordNumber`, 40–42
+- `ferrer`, 224, 240–241
+- `relatedTarget`, 429–430
+- `returnValue`, 148, 420
+- `right`, 315–316
+- `rowIndex`, 392
+- `rows`, 195–197, 368, 387
+- `rowSpan`, 393
+- `rules`, 388–389, 438
+- `runtimeStyle`, 42
+- `screen` 对象, 407
+- `screenLeft`/`screenTop`, 148
+- `screenX`/`scrollY`, 148–149, 411–413
+- `scripts`, 242
+- `scroll`, 260
+- `scrollAmount`, 275
+- `scrollbars`, 134–135
+- `scrollDelay`, 275
+- `scrollTop`, 44
+- `scrollHeight`, 192
+- `scrollY`/`scrollY`, 149
+- `shape`, 331
+- `siblings`, 442–443
+- `size`, 269, 272, 391–394
+- `src`, 144, 300, 325
+- `srcElement`, 45
+- `SELECT` 元素, 370–371
+- `selection`, 324–345
+- `selection` 对象, 292
+- `selectionText`, 340
+- `self`, 344
+- `src`, 344
+- `string` 对象, 370
+- `selectorText`, 340
+- `span`, 344
+
+## Q
+
+- `queryCommand()` 方法, 252
+
+## R
+
+- 单选框 input
+    - `checked` 属性, 352–353
+    - `defaultChecked` 属性, 354
+    - 事件处理程序, 355–356
+    - `length` 属性, 354
+    - `onClick` 事件处理程序, 355–356
+    - 属性, 352–355
+    - `value` 属性, 355
+- `Range` 对象
+    - `cloneContents()` 方法, 279
+    - `cloneRange()` 方法, 279
+    - `collapse()` 方法, 279
+    - `collapsed` 属性, 276
+    - `commonAncestorContainer` 属性, 277
+    - `compareBoundaryPoints()` 方法, 280–283
+    - `createTextFragment()` 方法, 283
+    - `deleteContents()` 方法, 284
+    - `endStartContainer` 属性, 277–278
+    - `offset`/`startOffset` 属性, 278
+    - `extractContents()` 方法, 285
+    - `insertNode()` 方法, 285–288
+    - `isValidFragment()` 方法, 287
+    - 属性, 276–278
+    - `select()`/`SelectContents()` 方法, 277–278
+    - `setStart()`/`setStart()` 方法, 288–289
+    - `setEndAfter()`/`setEndBefore()` 方法, 289
+    - `StartAfter()`/`StartBefore()` 方法, 289
+    - `surroundContents()` 方法, 289–291
+    - `toString()` 方法, 291
+- `Only` 属性, 360–361
+- `readyState` 属性, 40, 51
+- `recalc()` 方法, 253
+- `recordNumber` 属性
+    - 兼容性, 240
+    - 示例, 40–42
+    - 使用, 41–42
+- `referer` 属性
+    - 浏览器支持, 224
+    - 检查, 241
+    - 兼容性, 240
+    - 示例, 241
+- 正则表达式
+    - 默认替换, 477
+    - 匹配工作, 475
+- `relatedTarget` 属性
+    - 兼容性, 429
+    - 示例, 429–430
+    - 使用, 429–430
+- `leaseCapture()` 方法
+    - 兼容性, 80
+    - 示例, 80–83
+    - 使用, 82–83
+- `reload()` 方法, 216–217
+- 重新加载, 对比硬重载, 217
+- `removeAttribute()` 方法, 83
+- `removeAttributeNode()` 方法, 84
+- `removeBehavior()` 方法
+    - 兼容性, 84
+    - 示例, 52–53, 84
+    - 使用, 52–53
+- `removeChild()` 方法, 57, 85
+- `removeEventListener` 方法
+    - 兼容性, 53
+    - 示例, 53–55
+- `removeExpression()` 方法
+    - 兼容性, 85
+    - 示例, 85–86
+- `removeNode()` 方法, 86, 88–89
+- `removeValue()` 方法, 438–439
+- `replace()` 方法. 见 object
+    - 兼容性, 217
+    - 示例, 217–218
+    - 调用, 218
+- `replaceAdjacentText()` 方法
+    - 兼容性, 86
+    - 示例, 86–87
+- `replaceChild()` 方法, 1, 56
+- `replaceNode()` 方法
+    - 兼容性, 87
+    - 示例, 87–89
+- `reset()` 方法, 340
+- `resize()` 方法
+    - `NN4` 层对象, 465–467
+    - `window` 对象, 167–168
+- `resizeTo()` 方法
+    - `NN4` 层对象, 465–467
+    - `window` 对象, 167–168
+- `returnValue` 属性
+    - `IE4+` 事件对象, 420
+    - `window` 对象, 148
+
+## S
+
+- `right` 属性, 315–316
+- `routeEvent()` 方法, 168–169
+- `rowIndex` 属性, 392
+- `rows` 属性
+    - `FRAMESET` 对象, 195–197
+    - `TABLE` 元素对象, 387
+    - `TEXTAREA` 元素对象, 368
+- `rowSpan` 属性, 393
+- `rule` 对象, 440
+- `rules` 属性
+    - 兼容性, 388
+    - 循环遍历值, 388–389
+    - 示例, 388–389
+    - 设置为 "groups", 389
+    - `sheet` 对象, 438
+- `runtimeStyle` 属性, 424
+
+### `scopeName` 属性
+- 兼容性, 42
+- 示例, 443
+
+### `screen` 对象, 407
+- `screen`/`left` 属性, 148
+- `screenX`/`Y` 属性, 148–149
+- `NN4` 元素对象, 411–413
+- `NN6+` 元素对象, 425–427
+
+### scripts
+- 客户端图像映射, 334
+- 错误, 控制, 140–141
+- `scripts` 属性, 242
+
+### `scroll()` 方法
+- 兼容性, 169
+- frames 演示, 169
+
+### `scroll` 属性, 260
+- `scrollamount` 属性, 275
+- `scrollbars`, 134–135
+- `scrollBy()` 方法
+    - 兼容性, 171
+    - 控制器, 172–173
+    - 控制器元素, 172
+    - 示例, 172–173
+- `scrollDelay` 属性, 275
+- `scrollheight`, 43
+- 滚动横幅, 创建, 151–152
+- 强制, 263
+- `scrolling` 属性
+    - `FRAME` 元素对象, 192–193
+    - `FRAME` 元素对象, 200
+- `scrollInto()` 方法
+    - 兼容性, 89
+    - 示例, 90
+- `scrollLeft` 属性
+    - `BODY` 元素对象, 260–261
+    - 兼容性, 43
+    - 示例, 44
+- `scrollTo()` 方法, 171–173
+- `scrollTop` 属性
+    - `BODY` 元素对象, 260–261
+    - 兼容性, 43
+    - 示例, 44
+- `scrollWidth` 属性, 333
+- `scrollX`/`scrollY` 属性, 149
+- `search` 属性
+    - 兼容性, 213
+    - 示例, 213–216
+- `sectionRow` 属性, 392
+- `select()` 方法
+    - 文本对象, 364–365
+- `SELECT` 元素对象
+    - 事件处理程序, 377–378
+    - 示例, 370
+    - `item()` 方法
+    - `length` 属性, 370
+    - 方法, 376
+    - `multiple` 属性, 370–371
+    - `namedItem()` 方法, 376
+    - `onChange` 事件处理程序, 377–378
+    - `options.setDefault`, 371
+    - `options.index` 属性, 371
+    - `options` 属性, 371
+    - `selected` 属性, 371–372
+    - `options.text` 属性, 373
+    - `options.value` 属性, 374
+    - 属性, 370
+    - `selectedIndex`, 375
+    - `size` 属性, 376
+    - `selectedIndex` 属性, 376
+- `selection` 对象
+    - `clear()` 方法, 292–293
+    - `createRange()` 方法, 293
+    - 空对象, 293
+    - 方法, 292–293
+    - 属性, 291–292
+    - `type` 属性, 291–292
+    - 使用, 292
+- `selection` 属性, 242
+- `selectNode()`/`selectNodeContents()` 方法, 277–288
+- `selector` 属性, 440
+- `span` 属性, 391
+- `splitText()` 方法, 296–297
+- `src` 属性
+    - `FRAME` 元素对象, 194
+    - `FRAME` 元素对象, 200
+    - `IMG` 对象, 325–328
+    - `NN4` 层对象, 455–457
+- `srcElement` 属性
+    - 兼容性, 420
+    - 示例, 420–422
+    - 过滤, 63
+    - `IE4+` 事件对象, 420
+    - 使用, 421–422
+- `start()` 方法, 276
+- `start` 属性
+    - `IMG` 元素对象, 329
+    - `OL` 元素对象, 394
+- 状态消息
+    - 变化, 191
+    - 自定义, 带链接, 150
+- `status` 属性
+    - 兼容性, 150
+    - 示例, 150–152
+    - 设置, 152
+- `statusbar` 属性, 134–135
+- `stop()` 方法, 276
+- `string` 对象
+    - `charAT()` 方法, 471
+    - `charCode()` 方法, 471–473
+    - `constructor` 属性, 470
+    - 示例, 470
+    - `indexOf()` 方法, 473
+    - `lastIndexOf()` 方法, 474
+    - `match()` 方法, 474–476
+    - `replace()` 方法, 476–478
+    - `search()` 方法, 478
+    - `slice()` 方法, 479–480
+    - `split()` 方法, 481–482
+    - `substr()` 方法, 482–483
+    - `substring()`/`toLowerCase()`/`toUpperCase()` 方法, 483–484
+    - `toString()` 方法, 484
+    - `valueOf()` 方法, 484
+- strings
+    - 读取部分, 481–483
+    - 切片, 479–480
+- `style` 属性
+    - `cssRule` 和 `rule` 对象, 440
+    - 兼容性, 45
+    - 示例, 45
+- `self`
+    - 兼容性, 149
+    - 示例, 149–150
+    - 使用, 150
+- `setActive()` 方法, 90
+- `setAttribute()` 方法, 91
+- `setAttributeMode()` 方法, 84
+- `setCapture()` 方法
+    - 兼容性, 80
+    - 示例, 80–83
+    - 使用, 82–83
+- `setEnd()`/`setStart()` 方法, 288–289
+- `setAfter()`/`setEndBefore()` 方法, 289
+- `setExpression()` 方法, 91
+    - 兼容性, 91
+    - 示例, 91–95
+- `setInterval()` 方法
+    - 兼容性, 173
+    - 控制面板, 174–175
+    - 演示框架, 174
+    - 示例, 173
+    - 调用, 176
+- `setStart()`/`setEnd()` 方法, 289
+- `setTimeout()` 方法, 128
+    - 兼容性, 176
+    - 演示参数, 177
+    - 示例, 176–178
+    - `scrollMsg()` 函数, 152
+- `shape` 属性, 333
+- `show()` 方法, 202–204
+- `showModalDialog()` 方法
+    - 兼容性, 178
+    - 示例, 178–179
+    - 主页面, 178–179
+- `modelDialog()` 方法
+    - 兼容性, 178
+    - 示例, 178–187
+    - 主页面, 183–184
+    - 参数, 182, 183
+- `sibling`/`siblings below`, 442–443
+- `size` 属性
+    - `HR` 元素对象, 272
+    - `SELECT` 元素对象, 376
+- `sizeToContent()` 方法, 187
+- `sourceIndex`, 44
+- `StyleSheet` 对象
+    - `addRule()` 方法, 438–439
+    - `cssRules` 属性, 436
+    - `text` 属性, 336–337
+    - `deleteRule()` 方法, 439
+    - `disabled` 属性, 337
+    - 示例, 335
+    - `insertRule()` 方法, 439
+    - 方法, 338–339
+    - `ownerNode` 属性, 337
+    - `ownerElement` 属性, 337–338
+    - 属性, 336–338
+    - `removeRule()` 方法, 338–339
+    - `rules` 属性, 338
+    - 使用, 335
+- `submit()` 方法, 341
+- `surroundContents()` 方法
+    - 兼容性, 289
+    - 示例, 290–291
+    - 使用, 290–291
+- `swapNode()` 方法, 88, 94
+- `sysLanguage`, 404–405
+- `tagName` 属性, 47
+- `tags()` 方法
+    - 兼容性, 94
+    - 示例, 95
+- `tag` 属性, 47
+- `target` 属性, 430
+    - 示例, 430–432
+    - `form` 对象, 339
+    - `NN6+` 事件对象, 430–432
+    - 使用, 431–432
+- `today` 属性, 390
+- `TBODY` 元素对象, 390–391
+- `TD` 和 `TH` 元素对象
+    - `cellIndex` 属性, 392–393
+    - `colSpan` 属性, 392–393
+    - `height` 属性, 393–394
+    - `noWrap` 属性, 394
+    - 属性, 392–394
+    - `rowSpan` 属性, 393
+    - `width` 属性, 393–394
+- 文本对象
+    - `blur()` 方法, 363
+    - `defaultValue` 属性, 358–359
+    - 事件处理程序, 365–368
+    - 示例, 358
+    - `focus()` 方法, 363
+    - `form` 属性, 359–360
+    - `maxLength` 属性, 360
+    - 方法, 363–365
+    - `name` 属性, 360
+    - `onBlur` 事件处理程序, 365–368
+    - `onChange` 事件处理程序, 367–368
+    - `Focus` 事件处理程序, 365–366
+    - `nonSelect` 事件处理程序, 365–366
+    - 传递, 362
+    - 属性, 358–363
+    - `readonly` 方法, 360–361
+    - `select()` 方法, 364–365
+    - `size` 属性, 361
+    - `value` 属性, 361–363
+
+## T
+
+- `tabbing`, 默认顺序, 46
+- `tabIndex` 属性
+    - 兼容性, 45
+    - 控制, 46–47
+    - 示例, 45–47
+- `TABLE` 元素对象
+    - `align` 属性, 382
+    - `background` 属性, 382
+    - `bgColor` 属性, 383
+    - `border` 属性, 383
+    - `borderColor` 属性, 383–384
+    - `borderColorDark`/`BorderLightTheme`, 383–384
+    - `caption` 属性, 384
+    - `cellPadding` 属性, 384–385
+    - `cells` 属性, 385
+    - `cellSpacing` 属性, 384–385
+    - `dataSize` 属性, 385
+    - 示例, 382
+    - `frame` 属性, 385–387
+    - `height` 属性, 387
+    - 方法, 390
+    - `moveRow()` 方法, 390
+    - 属性, 382–390
+    - `rows` 属性, 387
+    - `rules` 属性, 388–389
+    - `today` 属性, 390
+    - `width` 属性, 387
+- `Text` 对象
+    - `appendData()` 方法, 294–296
+    - `data` 方法实验室, 294–296
+    - `data` 属性, 293
+    - `deleteData()` 方法, 294–296
+    - `insertData()` 方法, 294–296
+    - 方法, 294–297
+    - `replaceData()` 方法, 294–296
+    - `splitText()` 方法, 296–297
+    - `substring()` 方法, 294–296
+- `text` 属性
+    - `BODY` 元素对象, 257–258
+    - `TextRange` 对象, 300
+    - 文本选择，捕捉, 251–252
+- `TEXTAREA` 元素对象
+    - `cols` 属性, 368
+    - `createTextRange()` 方法, 368
+    - 示例高, 358
+    - `rows` 属性, 368
+    - `scrollHeight` 属性, 43
+    - `scrollLeft` 属性, 43–44
+    - `scrollTop` 属性, 43–44
+    - `scrollWidth` 属性, 43
+- `TextNode` 对象, 293–297
+- `TextRange` 对象, 368
+    - `boundLeft`/`boundingWidth` 属性, 297–299
+    - `boundingLeft`/`boundingRight` 属性, 297–299
+    - `collapse()` 方法, 300–300
+    - `duplicate()` 方法, 300–303
+    - `execCommand()` 方法, 304
+    - `expand()` 方法, 304
+    - `findText()` 方法, 304–308
+    - `getBookmark()` 方法, 308
+    - `htmlText` 属性, 299–300
+    - `inRange()` 方法, 309–310
+    - `isEqual()` 方法, 309–310
+    - 方法, 300–314
+    - `move()` 方法, 310–311
+    - `moveEnd()` 方法, 310–311
+    - `moveStart()` 方法, 310–311
+    - `moveToBookmark()` 方法, 311–312
+    - `moveToText()` 方法, 311–312
+    - `moveToPoint()` 方法, 312–313
+    - `parentElement()` 方法, 312–313
+    - `pasteHTML()` 方法, 312–313
+    - 属性, 297–300
+    - `select()` 方法, 314
+    - `text` 属性, 300
+- `TextRectangle` 对象
+    - `bottomTop` 属性, 315–316
+    - `left`/`right` 属性, 315–316
+    - 属性, 使用, 315–316
+- `TFOOT` 元素对象, 390–391
+- `THEAD` 元素对象, 390–391
+- `timeStamp` 属性
+    - 兼容性, 432
+    - 示例, 432–433
+    - 输入速度计算, 433
+    - 使用, 432–433
+- `title` 属性, 48
+- `tool` 属性, 134–135
+- `top` 属性
+    - `NN` 层属性, 450–452
+    - `textRectangle` 对象, 315–316
+- `toString()` 方法, 291
+- `toUpperCase()` 方法, 363
+- `TR` 元素对象
+    - `cells` 属性, 391
+    - `height` 属性, 391–392
+    - `rowIndex` 属性, 392
+    - `sectionRowIndex` 属性, 392
+- `type` 属性
+    - `IE4-` 事件对象, 422–423
+    - `LI` 元素对象, 395–396
+    - `OL` 元素对象, 395
+    - `selection` 对象, 291–292
+    - `UL` 元素对象, 395
+
+## U
+
+- `UL` 元素对象, 395
+- 销缓冲区, 308
+- `uniqueID` 属性
+    - 兼容性, 49
+    - 示例, 45–50
+    - 使用, 45–50
+- `URL` 属性, 238–240
+- `urn()` 方法, 95
+- `userAgent` 属性, 398–401
+- `userLanguage` 属性, 404–405
+- `userProfile` 对象
+    - `addRequest()` 方法, 407
+    - `doRequest()` 方法, 408
+    - `getAttribute()` 方法, 408
+    - 方法, 407–408
+
+## V
+
+- `vAlign` 属性, 390–391
+- `value` 属性
+    - `BUTTON` 元素对象, 345
+    - `checkbox` 输入对象, 348–349
+    - `LI` 元素对象, 396
+    - `radio` 输入对象, 355
+    - `SELECT` 元素对象, 376
+    - `text` 输入对象, 361–363
+- `vendor`/`Sub` 属性, 404
+- `visibility` 属性, 457–458
+- `vLink` 属性, 257–258
+- `vLinkColor` 属性, 225–227
+- `space` 属性
+    - `IFRAME` 元素对象, 199
+    - `IMG` 元素对象, 323
+
+## W
+
+- `W3C` 事件实验室, 54–55
+
+### `width` 属性
+- 兼容性, 23
+- 文档对象, 234–235
+- 示例, 24
+- `FRAME` 元素对象, 191–192
+- `HR` 元素对象, 273
+- `IMG` 元素对象, 322–323
+- `TABLE` 元素对象, 387
+- `TD` 和 `TH` 元素对象, 393–394
+
+### `window` 对象
+- `alert()`, 153
+- `captureEvents()`, 154–155
+- `clearInterval()`, 155
+- `setTimeout()`, 128–157
+- `clipboardData` 属性, 129
+- `close()`, 157–158
+- `closed` 属性, 128–131
+- `confirm()`, 152
+- `createPopup()`, 159
+- `defaultStatus` 属性, 131–132
+- `dialog` 属性, 132
+- `dialog`/`dialogWidth` 属性, 132–133
+- `directory` 属性, 134–135
+- `disableCapture()`, 159
+- 事件处理程序, 188–189
+- 示例, 118
+- `execScript()`, 159–160
+- `external` 属性, 135–136
+- `find()`, 160
+- `frames` 属性, 136–138
+- `getAttention()`, 160
+- `innerHeight`/`innerHeight` 属性, 138–139
+- `location` 属性, 134–135
+- `menubar` 属性, 134
+- 方法, 153–178
+- `moveBy()` 方法, 128–161
+- `moveTo()` 方法, 128–163
+- `navigator` 属性, 139–140
+- `offscreenBuffer` 属性, 140
+- `onPrint` 事件处理程序, 144
+- `onBeforePrint` 事件处理程序, 188–189
+- `onBeforeLoad` 事件处理程序, 188–189
+- `onerror` 属性, 140–141
+- `onhelp` 事件处理程序, 189
+- `open()`, 129, 163–165
+- `opener` 属性, 128–144
+- `outerHeight`/`outerWidth` 属性, 138–139
+- 概述, 127
+- `pageOffset`/`pageOffset` 属性, 144–146
+- `parent` 属性, 146–148
+- `personal` 属性, 134–135
+- `print()` 方法, 166–167
+- 属性, 129–152
+- `resize`/`resizeTo()` 方法, 167–168
+- `returnValue` 属性, 148
+- `route()` 方法, 168–169
+- `screenleft`/`screenTop` 属性, 148
+- `screenX`/`screenY` 属性, 148–149
+- `scroll()` 方法, 171–173
+- `scrollbars` 属性, 134–135
+- `scrollBy()` 方法, 171–173
+- `scrollY()` 属性, 149–150
+- `self` 属性, 149–150
+- `setInterval()` 方法, 128–176
+- `setTimeout/Dialog()` 方法, 178–187
+- `showDialog/Dialog()` 方法, 178–187
+- `setSize` 属性, 150–152
+- `statusbar` 属性, 134–135
+- `toolbar` 属性, 134–135
+
+### windows
+- boogie, 161–162
+- 浏览器，双框架, 210
+- 检查之前, 130–131
+- chrome, 控制, 128–135
+- 点击事件, 147–154
+- 高/宽, 138–139
+- 带有脚本管理, 127
+- 对话框, 127, 128–187
+- 无模态对话框, 127, 178–187
+- 创建, 164–165
+- 偏移, 144–146
+- 弹出, 127–201
+- 属性，显示, 146–147
+- 调整大小方法, 168
+- 副标题链接, 142–143
+
+### `write()` 方法
+- 兼容性, 253
+- 示例, 253–256
+- 示例预设, 253
+- 列表, 254
+- 列表占位符, 255
+- `writeIn()` 方法, 253–256
+
+## X
+
+- `x` 属性
+    - `IE4+` 事件对象, 413–416
+    - `IMG` 元素对象, 329
+
+## Y
+
+- `y` 属性
+    - `IE4+` 事件对象, 413–416
+    - `IMG` 元素对象, 329
+
+## Z
+
+- `zindex` 属性
+    - 上和下方的属性关系, 460–461
+    - 兼容性, 459
+    - 示例, 459–461
+
+# Hungry Minds, Inc.
+用户许可协议
+
+**请阅读此内容。** 在打开随本书（“本图书”）附带软件包之前，您应该仔细阅读这些条款和条件。这是一份许可协议（“协议”）
+
+1. **许可授予。** HMI 授予您（或实体）在单台计算机上出于个人或业务目的使用一份软件的非独占许可（统称为“软件媒体”）。打开软件包表示您将同意以下条款和条件。如果您不同意不受这些约束，请立即将软件包返回给 HMI。
+
+2. **所有权。** HMI 拥有所有权利、版权和利益。软件和软件媒体的所有权归 HMI 及其许可方。
+
+3. **使用和转让限制。**
+   (a) 您可以出于备份或存档目的制作一份软件副本，或 (ii) 将软件转让给单个硬盘，前提是受让人同意接受最新的更新。
+   (b) 您不得对软件进行反向工程、反编译或反汇编。软件媒体或书中的任何材料均不得以原始或修改的形式用于商业目的。
+
+4. **单个程序的使用限制。** 您必须遵守附录中每个程序的详细要求和限制。这些限制也包含在软件媒体中。这些限制可能包括在使用规定一段时间后用户必须支付注册费或停止使用。
+
+5. **有限保证。**
+   (a) HMI 保证在购买本书后的 60 天内，软件在正常使用下在材料和工艺上没有缺陷。如果 HMI 在保期内收到材料和工艺缺陷的通知，HMI 将更换软件媒体。
+   (b) HMI 和书作者对软件、其中包含的代码以及书中描述的技术不作任何明示或暗示保证，包括但不限于对适用性和特定用途的暗示保证。HMI 不保证软件包含的功能将满足您的需求或软件的操作将无错误。
+   (c) 此有限保证赋予了您法律权利，您可能根据管辖区的不同拥有其他权利。
+
+6. **救济。**
+   (a) HMI 对材料和工艺缺陷的全部责任和您的唯一救济措施限于更换软件媒体，您可以将收据副本连同软件媒体寄至以下地址：Software Media Fulfillment Department, Att.: JavaScript Examples: The Essential Companion to JavaScript Builder, Hungry Minds, Inc., 10475 Crosspoint Blvd., Indianapolis, IN 46256，或拨打 1-800-762-2974。请留出四六周交付时间。如果软件媒体由于事故、滥用或不当导致失效，则此有限保证无效。任何更换的软件媒体质保期为原保修期的剩余时间或三十天，以较长者为准。
+   (b) 在任何情况下，HMI 或作者均不对因使用或无法使用本书或软件而引起的任何损害（包括但不限于业务利润损失、业务中断、业务信息丢失或任何金钱损失）承担责任，即使 HMI 已被告知发生此类损害的可能性。
+   (c) 由于某些司法管辖区不允许排除或限制对间接或附带损害的责任，上述限制或排除可能不适用于您。
+
+**7. 美国政府限制性权利。** 为美国、其机构和/或工具（下简称“美国政府”）使用、复制或披露软件，受 DFARS 252.227-7013 中《技术数据和计算机软件权利》条款第 (c)(1)(ii) 段所述的限制，或 FAR 52.227-19 中《商业计算机软件 - 限制性权利》条款的 (c)(1) 和 (2) 小节，以及 NASA FAR 补充规定中类似条款的限制。
+
+**8. 一般条款。** 本协议构成双方的完整理解，并取代了双方之前的所有口头或书面协议，除非经双方签署并特别提及本协议的书面文件方可修改或修订。本协议应优先于任何可能与其与之冲突的其他文件。如果本协议包含的任何或多个条款被任何法院或法庭判定为无效、非法或其他不可执行，则其他每一条款都应保持完全有效。
+
+## CD-ROM 安装说明
+
+此 CD-ROM 中的文件可以在 Windows 95（或更高版本）和 Macintosh 环境下访问和使用。某些 Macintosh 程序文件需要 MacOS 8.6 或更高版本，但程序列表文本文件可以使用任何版本的 MacOS 打开。请通过“我的电脑”或 Windows 资源管理器访问软件。Macintosh 用户可以使用 Finder 访问文件。
+
+您可以直接从 CD-ROM 打开所有示例文件列表，但如果将列表复制到硬盘，访问速度会更快——而且您可以更方便地尝试修改文件。请将 CD-ROM 上名为 `Listings` 的文件夹复制到您硬盘上的任何位置。
+
+若要打开此 CD-ROM 上的列表脚本，您的电脑上应安装了 Microsoft Internet Explorer 5（或更高版本）、Netscape Navigator 6（或更高版本）或两者。
+
+若要从浏览器运行列表脚本，请打开 `Listings` 文件夹中名为 `index.html` 的文件。该页面提供了一个包含列表直接链接的目录，显示了哪些浏览器与每个列表兼容。
+
+从 CD-ROM 访问书籍内容的 Adobe Acrobat (PDF) 文件。请确保将索引文件安装到您的 Acrobat 副本中，以利用全文搜索功能。
+
+有关安装和运行 CD-ROM 内容的更多细节，请参阅附录。
+
+## JavaScript™ 示例 Bible
+
+Danny Goodman
+
+JavaScript™ Bible 的必备伴侣
+
+通过打开此软件包的密封，即表示您接受了本产品包含的用户许可协议和/或 GNU 通用公共许可证的条款和条件。
+
+有关 CD-ROM 的信息，请参阅附录 A 和附的安装说明。
+
+CD-ROM 和软件编译 © 2001 Hungry Munch, Inc. 版权所有。个人程序的版权归其各自所有者所有并可能需要单独许可。在未获得各程序许可者事先许可的情况下，不授予分发个人程序的权利。请咨询 CD-ROM 上的个人程序。详情请参见注册标志或注册商标。Hungry Munch 和 JavaScript 是 Hungry Munch 的商标。所有其他商标均为其各自所有者的财产。
+
+随附
+
+## 您的 JavaScript Bible 核心伴侣 . . .
+
+即使是巨大的《JavaScript Bible》第 4 版和海量版，也无法容纳脚本大师 Danny Goodman 的所有卓越知识和经验。参考书 III 部分和 IV 部分的示例章节仅出现过这两本书的 CD-ROM 中。现在，在《JavaScript 示例 Bible》中，我们以方便的形式完整引入了文档对象模型 (DOM) 和核心 JavaScript 语言示例——再加上 Danny 编写的新型介绍章节，引导您掌握每章中最重要的概念和示例。
+
+## 在书中，您将找到即插即用的示例和逐步指南
+
+- 通过 Danny 独家的工作台：The Evaluator，实时与 DOM 和 JavaScript 核心术语进行交互
+- 在 Internet Explorer 5.x 和 Navigator 6 中尝试专有和行业标准的 DOM 特性
+- 查看最新的对象检测技术，以适应今天和未来广泛的浏览器
+- 学习如何将语言特性应用于真实的应用程序挑战
+- 从大量的代码列表以及 Danny 对编码策略和设计决策的分析中获得洞察
+
+### CD-ROM 包含：
+
+- 本书的可搜索电子版
+- 《JavaScript Bible》黄金版中 300 多个即插即用的脚本
+
+www.hungryminds.com
+
+| 系统要求 | | 读者水平： | 分类目录： |
+|---|---|---|---|
+| 运行 N | 价格 | $29.99 美国 | 初级到高级 | Web 开发/JavaScript |
+| 或更高版本，Pow | | $23.99 加拿大 | £99 英国含值税 | |
+| 系统要求见附录 | | | |
+
+```
+
+
+
+# JAVASCRIPT EXAMPLES BIB
+
+## 250 Q
+
+## GODMAN A0D6786 Web JavaSc N028
+
+## B81731 GP 1 08/07/01 # IDGT
+
+## 783-25H 00061278
+
+## 85555 09445 1
