@@ -1,0 +1,2121 @@
+
+# JavaScript 面试准备：最后冲刺指南
+
+![](img/image_rsrcVM.jpg)
+
+## 1. 解释文档对象模型 (DOM)
+
+文档对象模型（Document Object Model，DOM）是 Web 文档的编程接口。简单来说，它是 HTML 文档结构的表示，由对象的树形结构组成。每个对象对应于 HTML 文档中的一个元素、属性或文本。JavaScript 与 `DOM` 交互，以动态操作网页的内容、结构和样式。
+
+### 类比
+
+将 `DOM` 想象成一棵家族树，文档是这个家族，每个成员（元素、属性或文本）都是家中的一个人。JavaScript 就像是可以重新排列或修改树的家庭成员，根据需要添加或删除人员（元素）。
+
+## 2. 你说的 BOM（浏览器对象模型）是什么意思？
+
+浏览器对象模型（Browser Object Model, BOM）是浏览器提供的一组对象，用于与浏览器本身交互，但不包含文档。它包含了如 `window`（代表浏览器窗口）和 `navigator`（提供浏览器信息）等对象。BOM 对于控制浏览器行为、处理导航历史和管理浏览器窗口等任务至关重要。
+
+### 类比
+
+将 BOM 视为汽车的控制面板。虽然汽车（`DOM`）代表车辆本身，但控制面板（BOM）包含了方向盘（`window`）、GPS 系统（`navigator`）和其他用于交互和控制汽车环境的工具。
+
+## 3. 如何在 HTML 文件中引入 JavaScript？
+
+要在 HTML 文件中引入 JavaScript，你可以使用 `<script>` 标签。主要有两种方法：
+
+* **内联脚本**：你可以通过使用 `<script>` 标签直接在 HTML 文件中包含 JavaScript，将代码置于起始 `<script>` 和结束 `</script>` 标签之间。
+
+```html
+<html>
+<head>
+  <title>我的页面</title>
+</head>
+<body>
+  <script>
+    // 你的 JavaScript 代码放在这里
+    alert('Hello, World!');
+  </script>
+</body> 
+</html>
+```
+
+* **外部脚本**：或者，你可以使用 `<script>` 标签的 `src` 属性链接到外部 JavaScript 文件。为了更好的代码组织结构和可重用性，通常更倾向于使用这种方法。
+
+```html
+<html>
+<head>
+  <title>我的页面</title>
+  <script src="myscript.js"></script>
+</head>
+<body>
+  <!-- 你的 HTML 内容在这里 -->
+</body>
+</html>
+```
+
+### 类比
+
+将 HTML 文件视为一本食谱，将 JavaScript 代码视为你想包含的特殊指令。你可以直接将指令写在书里（内联），也可以参考单独的食谱（外部文件）来获取这些指令。
+
+## 4. JavaScript 是区分大小写的语言吗？
+
+是的，JavaScript 是一种区分大小写的语言。这意味着它区分变量名、函数名和其他标识符中的大写和小写字母。例如，`myVariable` 和 `myvariable` 被视为两个不同的变量。
+
+### 类比
+
+想象一种语言，单词的拼写根据你使用大写还是小写字母而变化。在这种语言中，“apple”和“Apple”可能有不同的含义。同样，在 JavaScript 中，字母的大小写对于识别代码中的不同元素至关重要。
+
+## 5. null 和 undefined 有什么区别？
+
+在 JavaScript 中，`null` 和 `undefined` 都表示值的缺失，但它们的使用语境略有不同。
+
+* **null**：它是一种刻意的赋值，表示不存在任何对象值。你可以显式地将变量设置为 `null`。
+
+```javascript
+let myVar = null;
+```
+
+* **undefined**：它表示变量已经声明但尚未被赋值。它也是未提供的函数参数的默认值。
+
+```javascript
+let myVar;
+```
+
+### 类比
+
+将 `null` 想象成一个刻意留空的空容器，而 `undefined` 是一个从未被填充或被赋值的容器。
+
+## 6. 如何检查变量的类型？
+
+你可以使用 `typeof` 运算符来检查变量的类型。它返回一个指示操作数数据类型的字符串。
+
+```javascript
+let myVar = 42;
+console.log(typeof myVar); // 输出: "number" 
+```
+
+### 类比
+
+将 `typeof` 运算符想象为一个标签机，它可以告诉你对象的类型。如果你在盒子上贴上“书”，你就能快速识别出里面装的是书。同样，`typeof` 为你的变量贴上了其数据类型的标签。
+
+## 7. 什么是未声明变量和未定义变量？
+
+* **未声明变量 (Undeclared Variable)**：未声明变量是指在未使用 `var`、`let` 或 `const` 声明的情况下使用的变量。访问未声明变量通常会导致引用错误（Reference error）。
+
+```javascript
+console.log(undeclaredVariable); // ReferenceError: undeclaredVariable is not defined
+```
+
+* **未定义变量 (Undefined Variable)**：未定义变量是指已声明但未赋值的变量。在 JavaScript 中，未初始化的变量会被赋值 `undefined`。
+
+```javascript
+let myVar;
+console.log(myVar); // 输出: undefined
+```
+
+### 类比
+
+将未声明变量想象成尝试打开柜子中不存在的抽屉。这会导致错误，因为该抽屉从未被定义。未定义变量就像打开一个存在但是空的抽屉。
+
+## 8. let, const 和 var 之间有什么区别？
+
+* **var**：
+    * 函数作用域，不是块作用域。
+    * 可以在作用域内重新声明。
+    * 提升到函数顶部。
+
+* **let**：
+    * 块作用域，仅在声明的块内可用。
+    * 可以重新赋值但在同一作用域内不能重新声明。
+    * 提升到块顶部。
+
+* **const**：
+    * 块作用域。
+    * 不能重新赋值也不能在同一作用域内重新声明。
+    * 必须初始化，不能保持未初始化。
+    * 提升到块顶部。
+
+## 9. 什么是全局变量？这些变量是如何声明的？
+
+* **全局变量**：全局变量是在任何函数或块之外声明的。它们在整个范围内都是可用的。
+
+* **全局变量的声明**：全局变量可以在任何函数或块之外使用 `var`、`let` 或 `const` 进行声明。
+
+```javascript
+var globalVar = 42;
+let anotherGlobalVar = 'Hello, World!';
+const PI = 3.14;
+```
+
+### 类比
+
+将全局变量想象成房屋中都可以使用的物品。如果你把玩具放在客厅桌子上，它变成了一个全局玩具。
+
+## 10. 列出与全局变量相关的问题？
+
+* **命名冲突**：全局变量增加了命名冲突的风险，即程序的不同部分可能无意中使用了相同的变量名，导致意外行为。
+* **安全问题**：全局变量可以从任何地方访问和修改，如果其中存储了敏感数据，可能会引入安全漏洞。
+* **代码可维护性**：随着程序的增长，跟踪和管理全局变量变得越来越困难，导致代码变得难以维护。
+* **测试困难**：当函数依赖全局变量时，测试会变得具有挑战性，因为很难隔离并测试代码的特定部分。
+
+### 类比
+
+想象一个共用一个房间存放物品的房子。如果大家都毫无组织地把东西放在同一个房间里，寻找东西就会变得混乱，导致混乱和低效。同样，如果使用不当，全局变量可能会给你的代码带来混乱。
+
+## 11. JavaScript 中计时器是如何工作的？
+
+JavaScript 中的计时器是允许你在指定的间隔或在一定延迟后执行代码的机制。主要有两种类型的计时器：
+
+* `setTimeout`：在指定的毫秒延迟后执行一次函数。
+
+```javascript
+setTimeout(function() {
+  console.log('This code runs after 2000 milliseconds');
+}, 2000);
+```
+
+* `setInterval`：按照指定的间隔重复执行函数。
+
+```javascript
+setInterval(function() {
+  console.log('This code runs every 1000 milliseconds');
+}, 1000);
+```
+
+### 类比
+
+将计时器比作设定闹钟。`setTimeout` 就像设定一个在特定时间后响一次的闹钟，而 `setInterval` 就像设定一个按固定间隔重复响的闹钟。
+
+## 12. JavaScript 中不同的数据类型有哪些？
+
+JavaScript 有几种数据类型，大致分为两类：
+
+* **原始类型 (Primitive Data Types)**:
+    1. `Number`：代表数值。
+    2. `String`：代表文本数据。
+    3. `Boolean`：代表 `true` 或 `false`。
+    4. `Undefined`：代表未初始化的变量。
+    5. `Null`：代表值的缺失。
+    6. `Symbol`：引入于 ES6，代表唯一值。
+
+* **非原始类型 (Non-Primitive Data Types)**:
+    1. `Object`：代表复杂的数据结构。
+    2. `Function`：对象的子类型，代表可重用的代码块。
+
+### 类比
+
+想象一个带有不同隔间的工具箱。原始类型就像单个工具（`number`、`string`、`boolean`），而非原始类型就像专业的工具箱（`object`、`function`），它们可以包含多个工具。
+
+## 13. 什么是 JavaScript 中的类型转换（type coercion）？
+
+JavaScript 中的类型转换是指将一种数据类型自动转换为另一种类型。这可以隐式发生（由 JavaScript 自动执行），也可以显式发生（当开发者指定转换时）。
+
+### 隐式转换
+
+```javascript
+let numberVar = 42;
+let stringVar = 'The answer is ' + numberVar; // 数字转为字符串
+```
+
+### 显式转换
+
+```javascript
+let stringVar = '42';
+let numberVar = Number(stringVar); // 显式将字符串转换为数字 
+```
+
+### 类比
+
+将类型转换比作一个多才的翻译官。有时它能理解你想组合单词和数字，并将它们翻译成句子。其他时候，你需要显式地告诉翻译官如何将一种语言转换为另一种。
+
+## 14. JavaScript 支持自动类型转换吗？
+
+是的，JavaScript 支持自动类型转换，也称为类型转换（type coercion）。它允许语言在需要时自动转换数据类型以保持灵活性，使得操作更具包容性和适应性。
+
+### 类比
+
+考虑一种多功能工具，它能自动调整形状以适应不同的螺丝。同样地，JavaScript 会自动调整数据类型以适应上下文，使得语言更加多功能。
+
+## 15. 什么是闭包（closure）？
+
+闭包是 JavaScript 中的一种特性，函数可以访问外部（闭包）函数的变量，即使外部函数已经执行完毕也是如此。它允许函数“记住”并访问它的词法作用域，创建某种封装。
+
+### 闭包示例
+
+```javascript
+function outerFunction() {
+  let outerVar = 'I am from the outer function';
+  function innerFunction() {
+    console.log(outerVar); // 从外部函数访问 outerVar
+  }
+  return innerFunction;
+} 
+
+let closureExample = outerFunction();
+closureExample(); // 这仍然打印 "I am from the outer function"   
+```
+
+### 类比
+
+想象一个包含某些物品（变量）的背包（闭包）。即使你离开了收拾背包的地方，你仍然可以访问内部的物品。同样，闭包允许函数无论走到哪里都随身携带它的变量。
+
+## 16. 写一段代码演示闭包
+
+```javascript
+function outerFunction() {
+  let outerVar = 'I am from the outer function';
+  function innerFunction() {
+    console.log(outerVar);
+  }
+  return innerFunction;
+} 
+
+let closureExample = outerFunction();
+closureExample(); // 输出: "I am from the outer function"   
+```
+
+在这个示例中，`innerFunction` 从 `outerFunction` 返回，从而创建了一个闭包。当 `closureExample` 被调用时，即使 `outerFunction` 已完成执行，它仍然可以访问 `outerVar`。
+
+## 17. 什么是提升（hoisting）？
+
+提升是 JavaScript 的一种行为，变量和函数的声明会在编译阶段被移动到它们所在作用域的顶部。这意味着你可以在定义之前使用变量和函数。
+
+### 变量提升
+
+```javascript
+console.log(myVar); // undefined
+var myVar = 42;
+```
+
+### 函数提升
+
+```javascript
+function myFunction() {
+  console.log('Hello');
+}
+myFunction(); // 正常
+```
+
+### 类比
+
+将提升比作从帽子里拿出物品的魔术师。同样，JavaScript 在执行之前将声明移动顶部。
+
+## 18. let 和 const 会提升吗？
+
+是的，`let` 和 `const` 会被提升，但它们没有被初始化。这导致了“临时死区”（temporal dead zone）。
+
+```javascript
+console.log(myVar); // ReferenceError: Cannot access 'myVar' before initialization
+let myVar = 42;
+```
+
+在这个区域内，在代码到达声明之前，你无法访问该变量。
+
+## 19. JavaScript 中的作用域（scope）是什么？
+
+作用域定义了变量的区域或上下文。它决定了标识符的可见性和生命周期。
+
+* **全局作用域 (Global Scope)**：在任何函数或块之外定义的变量可以在整个程序中访问。
+* **局部作用域 (Local Scope)**：在函数或块内部定义的变量只能在该函数或块内部访问。
+
+### 类比
+
+将作用域比作房子里的房间。在客厅（全局作用域）中定义的变量随处可见，而卧室（局部作用域）中的变量是私有的。
+
+## 20. 解释 JavaScript 中的作用域和作用域链（Scope Chain）
+
+**作用域**：指的是变量声明的上下文以及这些变量的可访问性。
+
+```javascript
+function outerFunction() {
+  let outerVar = 'I am from the outer function';
+  function innerFunction() {
+    console.log(outerVar); // 从外部函数访问 outerVar
+  }
+  innerFunction();
+} 
+```
+
+**作用域链**：作用域链是程序中作用域的层级结构。当引用变量时，JavaScript 在当前作用域中查找它，如果没有找到，则向外部作用域搜索。
+
+### 类比
+
+想象作用域像嵌套的盒子。最内层的盒子（局部作用域）可以访问其内容以及外部盒子（外部作用域）的内容。作用域链是 JavaScript 在查找变量时检查的嵌套盒子序列。
+
+## 21. JavaScript 是静态类型还是动态类型？
+
+JavaScript 是动态类型语言。这意味着变量的数据类型是在运行时确定的，而不是在编译阶段确定。你可以在程序执行期间更改变量的类型。
+
+### 动态类型示例
+
+```javascript
+let myVar = 42; // 这是一个数字
+myVar = 'Hello, World!'; // 现在是一个字符串
+```
+
+### 类比
+
+想象一个可以放置不同类型物品的容器。今天它可能存储书籍（字符串），明天它可能装玩具（数字）。容器会适应你放入的内容。
+
+## 22. 什么是 JavaScript 中的严格模式（strict mode）？严格模式有哪些特性？
+
+严格模式是 JavaScript 中的一种特性，有助于捕捉常见的编码错误并防止使用某些“坏”习惯。它通过在脚本或函数的开头添加 `"use strict";` 指令来激活。
+
+```javascript
+// Example of Strict Mode
+"use strict"; 
+
+// Example of strict mode preventing an error 
+undeclaredVar = 42; // Throws a ReferenceError: undeclaredVar is not defined 
+```
+
+### 严格模式的特性：
+
+1. **错误预防**：严格模式有助于捕捉常见的编程错误，并防止使用不安全的特性。
+2. **全局对象**：在严格模式下，非方法或构造函数的函数中，`this` 的值为 `undefined`。
+3. **向只读属性赋值**：向只读属性或不可写的全局变量赋值会导致错误。
+4. **删除变量**：不允许删除变量、函数或函数参数。
+5. **重复的参数名**：在函数声明中使用重复的参数名会导致错误。
+6. **八进制字面量**：不允许使用八进制字面量（例如 `0123`）。
+
+### 类比
+
+开启严格模式就像有了一个代码导师，他会发现潜在的错误并引导你编写更整洁、安全的代码。
+
+## 23. 使用外部 JavaScript 有哪些优势？
+
+使用外部 JavaScript 文件有几个优势：
+
+1. **代码复用性**：外部文件可以在多个 HTML 页面之间共享和重用，促进模块化的编码方法。
+2. **关注点分离**：它将 HTML 内容与 JavaScript 逻辑分离，使代码库更有组织且易于维护。
+3. **缓存**：外部文件可以被浏览器缓存，提高后续访问的页面加载速度。
+4. **易维护**：JavaScript 代码的更改和更新可以在单个外部文件中完成，简化了维护工作。
+5. **提高可读性**：HTML 文件保持专注于结构，而 JavaScript 文件专注于行为，从而增强了代码的可读性。
+
+### 类比
+
+将外部 JavaScript 文件想象成工具箱中的工具。每个工具都有其用途，并可以在不同的项目中重用，让你的工具箱更加多功能且易于管理。
+
+## 24. 在 JavaScript 中如何拼接字符串？
+
+在 JavaScript 中，你可以使用 `+` 运算符来拼接（组合）字符串。此操作会将两个或多个字符串结合。
+
+```javascript
+// Example of String Concatenation
+let firstName = 'John';
+let lastName = 'Doe';
+let fullName = firstName + ' ' + lastName;
+console.log(fullName); // Outputs: John Doe 
+```
+
+### 类比
+
+拼接字符串就像连接积木。每个字符串都是一个区块，`+` 运算符允许你将它们卡在一起以创建一个更大的结构。
+
+## 25. 解释 == 和 === 之间的区别。
+
+### `==` (等相等运算符)：
+
+* **抽象相等比较**：在进行比较之前将操作数转换为相同的类型。
+* **示例**：`3 == '3'` 结果为 `true`，因为 JavaScript 将字符串转换为数字以进行比较。
+
+### `===` (严格相等运算符)：
+
+* **严格相等比较**：不进行类型转换；它会同时检查值和类型是否相等。
+* **示例**：`3 === '3'` 结果为 `false`，因为操作数的类型不同。
+
+### 类比
+
+想象两个朋友在讨论他们的年龄。松散运算符（`==`）就像是在说：“如果我们看起来都像数字，我们就认为自己是相等的。”严格相等运算符（`===`）更具体，说：“让我们精确一点；我们看起来都应该是同一个数字。”
+
+## 26. 如何将字符串转换为数字，反之亦然？
+
+* **字符串转数字**：
+    * 使用 `Number()` 函数或 `parseInt()` 或 `parseFloat()` 函数。
+    * **示例**：
+
+      ```javascript
+      let strNum = '42';
+      let num1 = Number(strNum);
+      let num2 = parseInt(strNum);
+      let num3 = parseFloat(strNum);
+      ```
+
+* **数字转字符串**：
+    * 使用 `String()` 函数或字符串拼接（`+`）方法。
+    * **示例**：
+
+      ```javascript
+      let myNumber = 42;
+      let str1 = String(myNumber);
+      let str2 = myNumber + '';
+      ```
+
+### 类比
+
+类型之间的转换就像穿不同的衣服。如果你从数字开始并想变成字符串，你可以穿上一件新衣服（`String()` 函数）或添加一个字符串配件（`+` 运算符）。反之，如果你想变成数字，你可能需要脱掉不必要的元素（`Number()` 函数）。根据你在代码剧中的角色选择合适的转换方式。
+
+## 27. 什么是 NaN？如何检查它？
+
+* **NaN (Not a Number)**：
+    * 表示一个非有效数字的值。
+    * 无效数学运算的结果，例如零除以零。
+    * `NaN` 的类型是 `number`。
+
+* **检查 NaN**：
+    * 使用 `isNaN()` 函数检查一个值是否为 `NaN`。
+    * **示例**：
+
+      ```javascript
+      let result = 10 / 'abc'; // Results in NaN
+      console.log(isNaN(result)); // Outputs: true
+      ```
+
+### 类比
+
+想象尝试用不是数字的成分进行数学运算，比如用蛋糕除以苹果。结果将是“不是数字”，因为这种操作在数字的语境下是没有意义的。
+
+## 28. 描述三元运算符并提供一个示例。
+
+三元运算符 `? :` 是 `if-else` 语句的简写形式。它允许你编写简洁的单行代码来根据条件做出决策。
+
+```javascript
+// Syntax:
+ condition ? expressionIfTrue : expressionIfFalse;
+
+let age = 20;
+let canVote = age >= 18 ? 'Yes, can vote' : 'No, cannot vote';
+console.log(canVote); // Outputs: 'Yes, can vote'
+```
+
+### 类比
+
+将三元运算符想象成一个紧凑的决策工具。它就像在路口在两条路径之间做选择：如果条件为真，走左路；否则，走右路。
+
+## 29. JavaScript 中的 `this` 关键字是如何工作的？
+
+JavaScript 中的 `this` 关键字指的是它所所属的对象。它的值由如何调用函数决定。
+
+* **在方法中**：
+    * `this` 指向调用方法的对象。
+    * **示例**：
+
+      ```javascript
+      let person = {
+        name: 'John',
+        greet: function() {
+          console.log('Hello, ' + this.name);
+        }
+      };
+      person.greet(); // Outputs: 'Hello, John'
+      ```
+
+* **在函数中**：
+    * `this` 指向全局对象（例如浏览器中的 `window`）或在严格模式下的 `undefined`。
+    * **示例**：
+
+      ```javascript
+      function showGlobalThis() {
+        console.log(this); // Outputs: Window object
+      }
+      showGlobalThis();
+      ```
+
+* **在事件处理器中**：
+    * `this` 指向触发事件的元素。
+    * **示例**：
+
+      ```html
+      <button onclick="showElement(this)">Click me</button>
+      <script>
+        function showElement(element) {
+          console.log(element); // Outputs: Button element
+        }
+      </script>
+      ```
+
+### 类比
+
+将 `this` 想象成一个根据上下文改变指代对象的代词。它就像当你谈论自己时说“我很开心”，但如果另一个人说“他很快”时，代词“他”指的就是那个人。同样，`this` 的含义取决于它被使用的地方。
+
+## 30. 解释 call(), apply(), 和 bind() 方法。
+
+在 JavaScript 中，`call()`、`apply()` 和 `bind()` 是允许你在调用函数时控制 `this` 上下文的方法。当你想要为函数借用或设置特定的上下文时，这些方法特别有用。
+
+### 1. `call()` 方法
+
+`call()` 方法通过指定的 `this` 值和单独的参数来调用函数。它将 `this` 上下文作为第一个参数，随后是传递给函数的任何额外参数。
+
+```javascript
+// Example:
+function greet(message) {
+  console.log(message + ' ' + this.name);
+} 
+const person = {
+  name: 'John'
+}; 
+
+greet.call(person, 'Hello,'); // Outputs: 'Hello, John'
+```
+
+### 2. `apply()` 方法
+
+`apply()` 方法与 `call()` 类似，但它接收一个数组作为第二个参数，而不是单独的参数。
+
+```javascript
+// Example:
+function greet(message, punctuation) {
+  console.log(message + ' ' + this.name + punctuation);
+} 
+
+const person = {
+  name: 'John'
+}; 
+
+greet.apply(person, ['Hello,', '!']); // Outputs: 'Hello, John!'
+```
+
+### 3. `bind()` 方法
+
+`bind()` 方法创建一个新函数，其函数体与原函数相同，但具有固定的 `this` 值。它返回一个以后可以调用的新函数。
+
+```javascript
+// Example:
+function greet(message) {
+  console.log(message + ' ' + this.name);
+} 
+
+const person = {
+  name: 'John'
+}; 
+
+const greetJohn = greet.bind(person, 'Hello,');
+
+greetJohn(); // Outputs: 'Hello, John'
+```
+
+### 类比
+
+将这些方法想象成邀请函数进入特定语境的方式。使用 `call()` 就像邀请一位客人（函数）参加某个特定活动，`apply()` 就像邀请一组具有共同经验的客人，而 `bind()` 就像为未来使用准备一份个性化的邀请函。每种方法在管理函数的 `this` 语境方面都提供了不同程度的灵活性。
+
+## 31. JavaScript 中 `new` 关键字的目的是什么？
+
+**解释**：JavaScript 中的 `new` 关键字用于根据构造函数创建对象的实例。它就像施放一个魔法咒，根据预定义的蓝图（构造函数）制作出一个全新的、唯一的对象。当你使用 `new` 时，它会初始化一个新对象，并包含由构造函数定义的属性和行为。
+
+### 类比
+
+想象你是一位正在制作不同类型魔法药水的巫师。`new` 关键字就像施放咒语，根据魔法配方（构造函数）召唤出特定的药水。每当你使用 `new`，你都会创建一个具有预定义属性和魔法效果的独特药水。
+
+```javascript
+// Example:
+function Potion(color, power) {
+  this.color = color;
+  this.power = power;
+} 
+
+const magicPotion = new Potion('Blue', 'Invisibility');
+
+console.log(magicPotion); // Outputs: Potion { color: 'Blue', power: 'Invisibility' }
+```
+
+## 32. 解释 JavaScript 中的 `if...else` 语句。
+
+**解释**：`if...else` 语句是 JavaScript 中的一种决策结构。它允许你根据指定的条件执行不同的代码块。它就像交通灯：如果灯是绿色的（条件为真），你就通过；否则（条件为假），你就走另一条路（执行 `else` 内部的代码）。
+
+### 类比
+
+将 `if...else` 语句想象成一个决策树。如果你在决定是否去野餐，`if` 分支检查天气。如果是晴天，你就去野餐（执行 `if` 内部的代码）。否则，你带上伞待在室内（执行 `else` 内部的代码）。
+
+```javascript
+// Example:
+const temperature = 25; 
+
+if (temperature > 30) {
+  console.log('It\'s hot outside.');
+} else {
+  console.log('It\'s a pleasant day.');
+}   
+```
+
+在这个示例中，代码检查温度，并根据是炎热还是宜人的天气打印消息。
+
+## 33. 如何创建 `switch` 语句？你什么时候会使用它？
+
+**解释**：`switch` 语句用于多个条件分支。它就像从一个有不同选项的菜单中进行选择。当你有多个可能的值需要与单个表达式进行比较时，就会使用它。
+
+### 类比
+
+考虑餐厅里有不同菜肴的菜单。`switch` 语句就像根据菜单选项选择菜肴。与其使用多个 `if` 检查，不如使用 `switch` 直接选择与你的选择相关的菜肴（代码块）。
+
+```javascript
+// Example:
+const dayOfWeek = 3;
+let dayName; 
+
+switch (dayOfWeek) {
+  case 1:
+    dayName = 'Monday';
+    break;
+  case 2:
+    dayName = 'Tuesday';
+    break;
+  // ... other cases ...
+  default:
+    dayName = 'Unknown';
+} 
+
+console.log(`It's ${dayName} today.`);   
+```
+
+在这里，`switch` 正在检查 `dayOfWeek` 的值并分配相应的星期名称。
+
+## 34. 什么是 `for` 循环？提供一个示例。
+
+**解释**：`for` 循环用于重复执行一定次数的代码块。它就像厨师多次遵循食谱烹饪相同的菜肴。
+
+### 类比
+
+想象你是一位正在准备特殊菜肴的厨师。`for` 循环就像多次遵循食谱的步骤来制作好几份相同的菜肴。
+
+```javascript
+// Example:
+for (let i = 0; i < 5; i++) {
+  console.log(`Iteration ${i + 1}`);
+}   
+```
+
+这个循环将运行五次，在每次迭代中，它都会打印指示迭代次数的消息。
+
+## 35. 描述 `while` 循环并提供一个示例。
+
+**解释**：`while` 循环用于预先不知道代码应该运行多少次的情况。它就像大门口的守卫，不断检查身份证，直到没有人为止。
+
+### 类比
+
+想象你是一位检查身份证的安保。`while` 循环就像反复检查，直到没有人为止。
+
+```javascript
+// Example:
+let count = 0;
+while (count < 3) {
+  console.log(`Count: ${count}`);
+  count++;
+}
+```
+
+这个循环将一直运行直到 `count` 达到 3。
+
+## 36. `break` 和 `continue` 语句的作用
+
+**解释**：`break` 语句用于提前退出循环。`continue` 语句用于跳过当前迭代并移动到下一次。
+
+### 类比
+
+将循环想象成一系列任务。`break` 就像立即离开建筑。`continue` 就像跳过一个任务并移动到下一个。
+
+```javascript
+// Example:
+for (let i = 0; i < 5; i++) {
+  if (i === 2) {
+    continue; // 跳过迭代 2
+  }
+  if (i === 4) {
+    break; // 当 i 为 4 时退出循环
+  }
+  console.log(`Iteration ${i}`);
+}
+```
+
+## 37. 如何遍历对象的属性？
+
+**解释**：你可以使用 `for...in` 循环来遍历对象的属性。这就像探索房子中不同的房间。
+
+```javascript
+// Example:
+const house = {
+  livingRoom: 'Sofa and TV',
+  kitchen: 'Stove and Fridge',
+  bedroom: 'Bed and Wardrobe'
+}; 
+
+for (let room in house) {
+  console.log(`${room}: ${house[room]}`);
+}
+```
+
+这个循环遍历房子中的每个房间（属性），打印其内容。
+
+## 38. 什么是函数表达式？
+
+**解释**：函数表达式是一种将函数定义为表达式的一部分的方式。它就像在已经在行动时给英雄分配任务。
+
+### 类比
+
+想象一位正在执行任务的英雄。函数表达式就像在他们积极拯救世界时给他们一项新任务。
+
+```javascript
+// Example:
+const addNumbers = function (a, b) {
+  return a + b;
+}; 
+
+console.log(addNumbers(5, 3)); // Outputs: 8
+```
+
+## 39. 函数声明（Function declaration）和函数表达式（Function expression）的区别是什么？
+
+**解释**：函数声明是定义具名函数的语句。它就像在剧中引入一个新角色。而函数表达式是作为表达式的一部分来定义函数，就像在剧运行过程中给角色分配角色。
+
+### 类比
+
+想象正在组织一场戏剧。函数声明就像宣布一个带有特定角色的新角色，而函数表达式就像在戏剧期间给现有角色分配角色。
+
+```javascript
+// Example:
+// Function Declaration
+function greet(name) {
+  return `Hello, ${name}!`;
+} 
+
+// Function Expression
+const sayHello = function (name) {
+  return `Hello, ${name}!`;
+}; 
+
+console.log(greet('Alice'));   // 输出: Hello, Alice!
+console.log(sayHello('Bob'));  // 输出: Hello, Bob!   
+```
+
+在这里，`greet` 是一个函数声明，而 `sayHello` 是一个函数表达式。
+
+## 40. 解释高阶函数的概念。
+
+**解释**：高阶函数是指接受一个或多个函数作为参数，或者返回一个结果作为函数。它像一个导演，可以与不同的演员合作创造各种场景。
+
+### 类比
+
+想象一个可以在不同场景中指导不同演员的电影导演。高阶函数就像一个调度不同函数以完成特定任务的任务。
+
+```javascript
+// 高阶函数
+function operate(operation, a, b) {
+  return operation(a, b);
+} 
+
+// 需要被操作的函数
+function add(x, y) {
+  return x + y;
+} 
+
+function multiply(x, y) {
+  return x * y;
+} 
+
+console.log(operate(add, 3, 4));      // 输出: 7
+console.log(operate(multiply, 2, 5));  // 输出: 10   
+```
+
+在这里，`operate` 是一个高阶函数，它处理不同的操作函数（`add` 和 `multiply`）。
+
+## 41. 参数（parameters）和实参（arguments）的区别是什么？
+
+**解释**：参数和实参是函数相关的术语。参数是函数定义中的占位符，实参是在调用函数时传递的实际值。
+
+### 类比
+
+将函数想象成一份食谱。参数就像食谱列出的配料，实参是你烹饪时使用的实际物品。
+
+```javascript
+// Example:
+// x 和 y 是参数
+function add(x, y) {
+  return x + y;
+} 
+
+// 3 和 4 是实参
+const result = add(3, 4); // 输出: 7   
+```
+
+在这里，`x` 和 `y` 是参数，而 `3` 和 `4` 是实参。
+
+## 42. 函数中的 return 语句是如何工作的？
+
+**解释**：`return` 语句用于指定函数应该返回的值。它会结束函数的执行并将指定的值传回调用者。
+
+### 类比
+
+将函数想象成一台机器。`return` 语句就像机器的输出口，最终产品从那里释放供使用。
+
+```javascript
+// Example:
+function multiply(a, b) {
+  return a * b;
+} 
+
+const result = multiply(2, 3); // 输出: 6   
+```
+
+在这个示例中，`return` 语句将乘法的结果传回了调用者。
+
+## 43. 你如何防止函数立即执行？
+
+**解释**：为了防止函数立即执行，你可以使用函数表达式将其包裹在括号中，创建一个匿名函数。这样，函数就变成了一个值，可以被存储或传递，而不会自动执行。
+
+### 类比
+
+将函数想象成一个正在准备菜肴的厨师。将函数包裹在括号中就像是将菜放在容器里，准备稍后上菜。
+
+```javascript
+// Example:
+const delayedFunction = function() {
+  console.log('这个函数不会立即执行。');
+}; 
+
+// 现在，你可以稍后执行它
+delayedFunction();   
+```
+
+在这里，`delayedFunction` 是一个不会立即执行的函数表达式。
+
+## 44. 解释按值传递和按引用传递。
+
+**解释**：在 JavaScript 中，基本类型（按值传递）是直接传递的，而对象（按引用传递）是通过其内存位置的引用传递的。
+
+### 类比
+
+想象传递一封信（基本类型）与传递一个 GPS 坐标（对象）的区别。信是一份独立的信息，而 GPS 坐标指向一个可能会改变的位置。
+
+```javascript
+// Example:
+// 按值传递
+let num = 5;
+let copyNum = num; // copyNum 获取了 num 的值
+
+// 按引用传递
+let obj1 = { value: 10 };
+let obj2 = obj1; // obj2 引用与 obj1 相同的内存   
+```
+
+对 `num` 的修改不会影响 `copyNum`（按值传递），但对 `obj1` 的修改也会影响 `obj2`（按引用传递）。
+
+## 45. 什么是 JavaScript 中的立即执行函数？
+
+**解释**：立即执行函数表达式（IIFE）是一个在创建后立即定义并执行的函数。它有助于创建一个私有作用域，通常用于避免污染全局命名空间。
+
+### 类比
+
+想象一个魔术师在咒语完成后立即施咒。咒语（函数）瞬间完成，无需等待。
+
+```javascript
+// Example:
+(function() {
+  console.log('这个函数被立即执行了。');
+})();   
+```
+
+函数定义在括号内并被立即调用。
+
+## 46. 你说的自执行函数（Self-Invoking Functions）是什么意思？
+
+**解释**：自执行函数是一个在创建时自动调用它自己的函数。它是创建私有作用域并在无需显式调用的情况下执行代码的另一种方法。
+
+### 类比
+
+想象一个机器人组装自己并激活它的功能，而无需按下启动按钮——它会自动初始化。
+
+```javascript
+// Example:
+(function() {
+  console.log('这个函数是自执行的。');
+})();   
+```
+
+函数被定义并在没有外部触发的情况下调用了自己。
+
+## 47. 你可以将一个匿名函数赋值给变量并作为实参传递吗？
+
+**解释**：是的，你可以将一个匿名函数赋值给变量并作为实参传递。这是一种常见的做法，特别是用于回调函数。
+
+### 类比
+
+将函数想象成一个工具。你可以定义一个工具（匿名函数），并在需要时将其交给另一个部分（函数）来使用。
+
+```javascript
+// Example:
+const multiplyByTwo = function(x) {
+  return x * 2;
+}; 
+
+function processNumber(num, operation) {
+  return operation(num);
+} 
+
+const result = processNumber(5, multiplyByTwo); // 输出: 10
+```
+
+在这里，`multiplyByTwo` 是作为实参传递的函数。
+
+## 48. 什么是 JavaScript 中的 arguments 对象？
+
+**解释**：`arguments` 对象是函数内部可以访问的类数组对象。它包含了传递给函数的所有实参。
+
+### 类比
+
+考虑一个端着不同菜肴（实参）的侍者。他可以检查每道菜以确定其类型。
+
+```javascript
+// Example:
+function displayTypes() {
+  for (let i = 0; i < arguments.length; i++) {
+    console.log(`参数 ${i + 1} 的类型是 ${typeof arguments[i]}`);
+  }
+}
+
+displayTypes(42, 'hello', true);
+// 输出:
+// 参数 1 的类型是 number
+// 参数 2 的类型是 string
+// 参数 3 的类型是 boolean
+```
+
+## 49. 什么是 JavaScript 中的对象？
+
+**解释**：在 JavaScript 中，对象是一种存储键值对的复杂类型。它是表示具有属性和行为实体的方式。
+
+### 类比
+
+将对象想象成一辆具有颜色、型号等属性以及启动、停止等方法的汽车。
+
+```javascript
+// Example:
+const car = {
+  make: 'Toyota',
+  model: 'Camry',
+  year: 2022,
+  start: function() {
+    console.log('引擎启动了。');
+  }
+}; 
+
+console.log(car.make); // 输出: Toyota
+car.start(); // 输出: 引擎启动了。
+```
+
+在这里，`car` 是一个带有属性（`make`、`model`、`year`）和方法（`start`）的对象。
+
+## 50. 如何在 JavaScript 中创建对象？
+
+**解释**：你可以使用对象字面量法或 `Object` 构造函数来创建对象。
+
+### 类比
+
+创建对象就像建造建筑。你可以使用预定义的蓝图（字面量法），或请建筑师（构造函数）来设计自定义结构。
+
+```javascript
+// Example:
+// 对象字面量法
+const person = {
+  name: 'Alice',
+  age: 30,
+  job: '工程师'
+}; 
+
+// 使用 Object 构造函数
+const book = new Object();
+book.title = '伟大的盖比';
+book.author = 'F. Scott Fitzgerald';
+```
+
+这两个示例创建了对象（`person` 和 `book`）。
+
+## 51. 如何访问对象的属性？
+
+**解释**：在 JavaScript 中，访问对象的属性时，可以使用点符号法（dot notation）或括号符号法（bracket notation）。点符号法更简单，在你提前知道属性名时常用。
+
+### 类比
+
+将访问对象属性想象比打开工具箱中的隔层。如果你知道工具的名称（属性），你可以直接从指定的地点将其取出来。
+
+```javascript
+// Example:
+const person = {
+  name: 'John',
+  age: 25,
+  job: 'Developer'
+}; 
+
+console.log(person.name); // 点符号法：输出 John
+```
+
+在此示例中，`person.name` 使用点符号法获取了 `name` 属性的值。
+
+## 52. 如何添加或修改对象的属性？
+
+**解释**：你可以使用赋值来添加或修改对象的属性。如果该属性存在，它将被修改；如果不存在，将创建一个新属性。
+
+### 类比
+
+添加或修改对象属性类似于在白板上更新信息。你可以根据需要擦除并重写细节。
+
+```javascript
+// Example:
+const car = {
+  make: 'Honda',
+  model: 'Civic'
+}; 
+
+// 添加一个新属性
+car.year = 2023; 
+
+// 修改一个现有属性
+car.model = 'Accord'; 
+
+console.log(car);
+// 输出：{ make: 'Honda', model: 'Accord', year: 2023 }
+```
+
+在这里，`year` 属性被添加了，`model` 属性被修改了。
+
+## 53. 说明点符号法和括号符号法的区别。
+
+**解释**：点符号法和括号符号法都是访问对象属性的方法。点符号法简洁，用于属性名预先已知的情况。括号符号法更灵活，允许使用变量进行动态属性访问。
+
+### 类比
+
+将点符号法想象成使用固定钥匙来打开锁，而括号符号法则像是一个使用可以变化的变量钥匙。
+
+```javascript
+// Example:
+const person = {
+  name: 'Alice',
+  age: 30
+}; 
+
+const propertyName = 'name'; 
+
+console.log(person.name); // 点符号法：输出 Alice
+console.log(person[propertyName]); // 括号符号法：输出 Alice
+```
+
+在这里，`propertyName` 是一个变量，括号符号法允许你动态访问属性。
+
+## 54. 什么是 JSON？它与 JavaScript 对象有什么关系？
+
+**解释**：JSON（JavaScript 对象表示）是一种轻量级的数据交换格式。它与 JavaScript 对象共享相似的语法，但它是基于文本的格式，用于不同语言之间的数据交换。
+
+### 类比
+
+将 JavaScript 对象想象成房子中的物体，而 JSON 则是这些对象的与语言无关的表示，适用于与邻居分享。
+
+```javascript
+// Example:
+// JavaScript 对象
+const person = {
+  name: 'Bob',
+  age: 28
+}; 
+
+// JSON 表示
+const jsonPerson = '{"name": "Bob", "age": 28}';
+```
+
+`jsonPerson` 是一个遵循 `JSON` 语法的字符串，但代表与 JavaScript 对象相同的数据。
+
+## 55. 什么是对象原型（object prototypes）？
+
+**解释**：在 JavaScript 中，每个对象都链接到一个原型对象，并从该原型继承属性。原型实现了对象继承，对原型的修改会反映在所有链接到它的对象上。
+
+### 类比
+
+将原型视为构建对象的蓝图。对象从它们的原型继承特征，就像建筑遵循建筑计划一样。
+
+```javascript
+// Example:
+const dog = {
+  breed: 'Labrador'
+}; 
+
+const myDog = {
+  name: 'Buddy'
+}; 
+
+// 将 myDog 链接到 dog 原型
+Object.setPrototypeOf(myDog, dog); 
+
+console.log(myDog.breed); // 输出 Labrador
+```
+
+在这里，`myDog` 从它的原型 `dog` 继承了 `breed` 属性。
+
+## 56. 什么是解构（destructuring），它是如何处理对象和数组的？
+
+**解释**：JavaScript 中的解构允许你从对象和数组中提取值，并以简洁的方式赋值给变量。
+
+### 类比
+
+将解构想象成拆多层礼物。你提取每个物品并将其赋值给变量。
+
+```javascript
+// Example:
+// 解构对象
+const person = { name: 'Alice', age: 25 };
+const { name, age } = person; 
+
+console.log(name); // 输出 Alice
+console.log(age); // 输出 25
+```
+
+在这里，`{ name, age }` 从 `person` 对象中提取值到同名的变量中。
+
+## 57. 箭头函数与普通函数有什么区别？
+
+**解释**：箭头函数是 JavaScript 中编写函数的简洁方式，与普通函数相比有一些不同。箭头函数具有更短的语法、没有 `this` 绑定，且不能作为构造函数使用。
+
+### 类比
+
+普通函数就像传统的汽车，功能多但有时很笨重。箭头函数就像电动滑板车——在特定场景下紧凑且高效。
+
+```javascript
+// Example:
+// 普通函数
+function add(a, b) {
+  return a + b;
+} 
+
+// 箭头函数
+const sum = (a, b) => a + b; 
+
+console.log(add(3, 4)); // 输出 7
+console.log(sum(3, 4)); // 输出 7
+```
+
+这两个函数都执行相同的加法操作，但箭头函数的语法更简洁。
+
+## 58. 解释模板字符串（template literals）的概念。
+
+**解释**：模板字符串是 JavaScript 中创建字符串的一种方式，允许嵌入表达式和多行字符串。它们被反引号（`` ` ``）包围。
+
+### 类比
+
+将模板字符串想象成自定义的贺卡。你可以轻松地包含动态消息。
+
+```javascript
+// Example:
+const name = 'Alice';
+const greeting = `Hello, ${name}!`;
+
+console.log(greeting); // 输出 Hello, Alice!
+```
+
+在这里，`${name}` 是模板字符串中的嵌入表达式。
+
+## 59. 描述创建对象的类语法。
+
+**解释**：在 JavaScript 中，类语法提供了一种更清晰、更熟悉的方式来创建对象并实现继承。底层它仍然基于原型。
+
+### 类比
+
+将类比作建筑的蓝图。
+
+```javascript
+// Example:
+class Animal {
+  constructor(name) {
+    this.name = name;
+  } 
+  speak() {
+    console.log(`${this.name} makes a sound.`);
+  }
+}
+
+// 创建 Animal 的实例
+const dog = new Animal('Buddy');
+dog.speak(); // 输出 Buddy makes a sound.
+```
+
+在这里，`Animal` 是一个类，`dog` 是该类的实例。
+
+## 60. ES6 中的 import 和 export 是什么？它们是如何使用的？
+
+**解释**：在 ES6（ECMAScript 2015）及之后，`import` 和 `export` 用于处理模块。`export` 允许从模块导出函数、对象或值，而 `import` 允许你在另一个模块中使用它们。
+
+### 类比
+
+将模块想象成房子中不同的房间。`export` 就像将物品放在房间里，`import` 则在需要时获取这些物品。
+
+```javascript
+// Module A - 导出函数
+export function greet(name) {
+  return `Hello, ${name}!`;
+} 
+
+// Module B - 导入函数
+import { greet } from './moduleA'; 
+
+console.log(greet('Alice')); // 输出 Hello, Alice!
+```
+
+在这里，`greet` 从 Module A 导出并导入到 Module B。
+
+## 61. 什么是回调函数？
+
+**解释**：回调函数（Callbacks）是作为参数传递给其他函数的。它们通常用于异步操作，以便在任务完成后执行代码。
+
+### 类比
+
+将回调函数比作给朋友留的便条。你提供了关于做什么的指令（`callback`），你的朋友在有时间时会遵循这些指令。
+
+```javascript
+// Example:
+function fetchData(callback) {
+  // 模拟异步操作
+  setTimeout(() => {
+    const data = 'Fetched data';
+    callback(data);
+  }, 1000);
+} 
+
+function processFetchedData(data) {
+  console.log(`Processing: ${data}`);
+} 
+
+fetchData(processFetchedData);
+```
+
+在这个示例中，`processFetchedData` 是传递给 `fetchData` 的回调函数，它在异步操作完成后处理获取的数据。
+
+## 62. 什么是 Promise？它是如何帮助异步操作的？
+
+**解释**：`Promise` 是代表异步操作最终完成或失败的标识。它为处理异步代码提供了更整洁的语法，使其更具可读性和可维护性。
+
+### 类比
+
+将 `Promise` 想象成快递服务的合同。你收到一个跟踪单号（`Promise`），它向你保证包裹（异步操作）将被送达或被拒绝。
+
+```javascript
+// Example:
+const fetchData = new Promise((resolve, reject) => {
+  // 模拟异步操作
+  setTimeout(() => {
+    const success = true;
+    if (success) {
+      resolve('Fetched data');
+    } else {
+      reject('Error fetching data');
+    }
+  }, 1000);
+}); 
+
+// 使用 Promise
+fetchData
+  .then(data => console.log(`Success: ${data}`))
+  .catch(error => console.error(`Error: ${error}`));
+```
+
+在这里，`fetchData` `Promise` 用数据解析（resolve）或用错误拒绝（reject），`.then()` 和 `.catch()` 处理相应的结果。
+
+## 63. 描述 ES6 中的 async 和 await 关键字。
+
+**解释**：`async` 和 `await` 关键字是 ES6 的一部分，用于简化对 `Promises` 的处理。`async` 用于定义一个返回 `Promise` 的函数，而 `await` 用于暂停执行，直到 `Promise` 稳定（settled）。
+
+### 类比
+
+将 `async` 视为完成一项任务的承诺，将 `await` 视为耐心地等待该任务完成，再进行下一个任务。
+
+```javascript
+// Example:
+async function fetchData() {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve('Fetched data');
+    }, 1000);
+  });
+} 
+
+async function fetchDataAndPrint() {
+  const data = await fetchData();
+  console.log(`Data: ${data}`);
+} 
+
+fetchDataAndPrint();
+```
+
+在这里，`fetchData` 返回一个 `Promise`，而 `fetchDataAndPrint` 使用 `await` 等待 `Promise` 解析后再打印数据。
+
+## 64. 你可以如何处理异步代码中的错误？
+
+**解释**：在异步代码中，可以使用 `try...catch` 块或通过在 `Promise` 上链调用 `.catch()` 方法来处理错误。
+
+### 类比
+
+在异步代码中处理错误就像在复杂任务执行过程中出现问题时准备一个备用计划。
+
+```javascript
+// Example:
+async function fetchData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const success = Math.random() > 0.5;
+      if (success) {
+        resolve('Fetched data');
+      } else {
+        reject('Error fetching data');
+      }
+    }, 1000);
+  });
+} 
+
+async function fetchDataAndPrint() {
+  try {
+    const data = await fetchData();
+    console.log(`Data: ${data}`);
+  } catch (error) {
+    console.error(`Error: ${error}`);
+  }
+} 
+
+fetchDataAndPrint();
+```
+
+在这个示例中，`fetchData` `Promise` 模拟了成功或失败，`fetchDataAndPrint` 中的 `try...catch` 处理任何错误。
+
+## 65. JavaScript 中的原型继承是如何工作的？
+
+**解释**：JavaScript 中的原型继承允许对象从其他对象继承属性和方法。每个对象都有一个关联的原型对象，形成一个链。
+
+### 类比
+
+将原型继承比作家族树。对象就像是从其父母那里继承特质的孩子，这种继承链会持续下去。
+
+```javascript
+// Example:
+// 父对象（原型）
+const animal = {
+  makeSound() {
+    console.log('Some generic sound');
+  }
+}; 
+
+// 子对象
+const dog = {
+  breed: 'Labrador'
+}; 
+
+// 将 dog 链接到 animal 原型
+Object.setPrototypeOf(dog, animal); 
+
+dog.makeSound(); // 输出: Some generic sound
+```
+
+在这里，`dog` 从 animal 原型继承了 `makeSound` 方法。
+
+## 66. JavaScript 中 "this" 关键字的意义是什么？
+
+**解释**：`this` 关键字指向当前的执行上下文，取决于函数是如何调用的。在方法中，`this` 指向调用对象。
+
+### 类比
+
+将 `this` 视为一个占位符，代表舞台上当前的演员。它会根据当前正在表演的人而改变。
+
+```javascript
+// Example:
+const person = {
+  name: 'John',
+  greet() {
+    console.log(`Hello, ${this.name}!`);
+  }
+};
+
+// 在此示例中，`this` 指向 `person` 对象。
+```
+
+## 67. JavaScript 中 "bind" 方法的目的是什么？
+
+**解释**：`bind` 方法在 JavaScript 中用于创建一个指定 `this` 值的新函数。它不会立即调用函数，而是允许你以后调用。
+
+### 类比
+
+将 `bind` 视为在剧院里预留座位。你为它指定了特定的座位位置。
+
+```javascript
+// Example:
+const person = {
+  name: 'Alice',
+  greet() {
+    console.log(`Hello, ${this.name}!`);
+  }
+};
+
+// 创建一个绑定函数
+const greetLater = person.greet.bind(person);
+
+// 使用绑定函数
+greetLater(); // 输出: Hello, Alice!
+```
+
+在这里，`greetLater` 被绑定到了 `person` 对象。
+
+## 68. JavaScript 中同步代码和异步代码有什么区别？
+
+**解释**：同步代码按行执行，在当前操作完成之前会阻塞。异步代码允许程序在等待操作时继续执行。
+
+### 类比
+
+同步代码就像在排队，每个人都必须等待轮到。异步代码像是在餐厅点餐，在等待上菜时可以做其他事情。
+
+```javascript
+// Example:
+// 同步
+console.log('Start');
+console.log('Middle');
+console.log('End'); 
+
+// 异步
+console.log('Start'); 
+setTimeout(() => {
+  console.log('Delayed execution');
+}, 1000); 
+console.log('End');
+```
+
+在异步示例中，延迟执行不会阻塞后续语句。
+
+## 69. JavaScript 中的 "map" 函数是如何工作的？你能提供一个示例？
+
+**解释**：JavaScript 中的 `map` 函数用于转换数组的元素。它创建一个新数组，该数组是对原数组中每个元素调用提供函数的结果。
+
+### 类比
+
+将 `map` 想象成工厂里的传送带。带上的每个物品都会经过处理过程，并产生一组处理后的物品。
+
+```javascript
+// Example:
+const numbers = [1, 2, 3, 4]; 
+const doubled = numbers.map(num => num * 2); 
+console.log(doubled); // 输出: [2, 4, 6, 8]
+```
+
+在这个示例中，`map` 函数将 `numbers` 数组中的每个数字翻倍，创建了一个新数组 `doubled`。
+
+## 70. 解释对象浅拷贝和深拷贝的区别。
+
+**解释**：浅拷贝和深拷贝指的是复制对象的不同方式。浅拷贝创建一个与原始对象具有相同顶层结构的新对象，而深拷贝则创建一个包含所有嵌套结构副本的新对象。
+
+### 类比
+
+想象一组嵌套的盒子。浅拷贝制作了一组新盒子，其内容与原始顶层盒子相同。深拷贝则创建了一组全新的嵌套盒子，其中每个盒子的内容都是副本。
+
+```javascript
+// Example:
+// 浅拷贝
+const original = { a: 1, b: { c: 2 } };
+const shallowCopy = { ...original };
+
+// 深拷贝 (using a library like lodash)
+const deepCopy = _.cloneDeep(original);
+```
+
+在示例中，浅拷贝后修改 `original.b.c` 会影响 `shallowCopy`，而深拷贝则保持两个对象相互独立。
+
+## 71. "async/await" 特性是如何简化 JavaScript 中的异步代码的？
+
+**解释**：JavaScript 中的 `async/await` 特性简化了使用 `Promises` 处理异步代码的语法。`async` 用于定义一个返回 `Promise` 的函数，而 `await` 用于暂停执行，直到 `Promise` 状态确定（settled）。
+
+### 类比
+
+将 `async/await` 想象成读一本菜谱。在等待某个特定食材煮好的同时，你可以开始准备下一个食材。
+
+```javascript
+// Example:
+async function fetchData() {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve('Fetched data');
+    }, 1000);
+  });
+}
+
+async function fetchDataAndPrint() {
+  const data = await fetchData();
+  console.log(`Data: ${data}`);
+}
+
+fetchDataAndPrint();
+```
+
+在此示例中，`fetchDataAndPrint` 等待 `fetchData` `Promise` 解析，使得代码看起来更同步且更具可读性。
+
+## 72. 解释 JavaScript 中的记忆化（memoization）概念。
+
+**解释**：记忆化是一种技术，通过缓存昂贵函数调用的结果，以便当再次出现相同输入时，将返回缓存的结果而不是重新执行函数。
+
+### 类比
+
+将记忆化想象成一个厨师记录菜谱及其结果。如果厨师以前做过某道特定的菜，他们会检查记录，看是否可以复用结果。
+
+```javascript
+// Example:
+const memoizedFunction = (function () {
+  const cache = {};
+
+  return function (arg) {
+    if (arg in cache) {
+      return cache[arg];
+    } else {
+      const result = expensiveOperation(arg);
+      cache[arg] = result;
+      return result;
+    }
+  };
+})();
+```
+
+在此示例中，`memoizedFunction` 根据输入 `arg` 缓存结果，避免了相同参数的冗余计算。
+
+## 73. JavaScript 中 "try/catch" 语句的目的是什么？
+
+**解释**：`try/catch` 语句用于处理 JavaScript 中的异常（错误）。`try` 块中的代码会被执行，如果发生错误，它会在 `catch` 块中被捕获并处理。
+
+### 类比
+
+将 `try/catch` 想象成带着安全网开车。如果你在道路上遇到意外的障碍，安全网（`catch` 块）会帮助你处理这种情况。
+
+```javascript
+// Example:
+try {
+  // 可能会出错误的代码
+  const result = calculateResult();
+  console.log(`Result: ${result}`);
+} catch (error) {
+  // 处理错误
+  console.error(`Error: ${error.message}`);
+}
+```
+
+在此示例中，如果在执行 `calculateResult` 期间发生错误，它将在 `catch` 块中被捕获并记录。
+
+## 74. Web 开发中 "localStorage" 和 "sessionStorage" 有什么区别？
+
+**解释**：`localStorage` 和 `sessionStorage` 都是 Web 存储选项，但它们在持久性和范围上不同。`localStorage` 在浏览器关闭后数据依然存在，并且可以在浏览器标签页间访问；而 `sessionStorage` 数据仅在页面会话期间持久，并且针对特定标签页。
+
+### 类比
+
+将 `localStorage` 视为长期记忆，你可以在其中存储信息以备将来参考。`sessionStorage` 类似于短期记忆，用于在特定任务期间临时存储信息。
+
+```javascript
+// Example:
+// 在 localStorage 中存储数据
+localStorage.setItem('user', 'John');
+
+// 在 sessionStorage 中存储数据
+sessionStorage.setItem('token', 'abc123');
+```
+
+在此示例中，即使用户关闭并稍后打开浏览器，存储在 `localStorage` 中的数据也会存在。`sessionStorage` 中的数据仅在同一个会话中可用。
+
+## 75. 函数声明（function declaration）和函数表达式（function expression）之间的区别是什么？
+
+**解释**：函数声明使用 `function` 关键字定义函数，并会被提升到其作用域的顶部。函数表达式是作为表达式的一部分创建一个函数，并且不会被提升。
+
+### 类比
+
+将函数声明想象成菜谱中一个独立的菜谱。你可以在菜谱的任何地方引用它。函数表达式就像嵌入句子中的菜谱；你只能在提到它后才能使用它。
+
+```javascript
+// Example:
+// 函数声明
+function add(a, b) {
+  return a + b;
+}
+
+// 函数表达式
+const subtract = function(a, b) {
+  return a - b;
+};
+```
+
+在此示例中，`add` 是函数声明，而 `subtract` 是赋值给变量的函数表达式。
+
+## 76. 解释 JavaScript 中“事件委托”（Event Delegation）模式的作用。
+
+**解释**：事件委托是一种模式，将单个事件监听器附加到多个元素的公共祖先上。它利用事件冒泡处理子元素上的事件，而无需为每个子元素单独附加监听器。
+
+### 类比
+
+想象老师指派一名代表来收集反馈。老师不需要与每个学生交谈，而是与代表交谈，由代表传达反馈。
+
+```html
+<!-- Example: -->
+<ul id="list">
+  <li>项目 1</li>
+  <li>项目 2</li>
+  <li>项目 3</li>
+</ul>
+```
+
+在此示例中，单个点击事件监听器附加到 `ul` 元素上，通过事件委托处理 `li` 的点击。
+
+## 77. 如何在 JavaScript 中处理异步代码中的错误？
+
+**解释**：在异步代码中的错误可以通过 `try/catch` 块来处理。使用 `await` 时，`try/catch` 可以捕获拒绝的 Promise。
+
+### 类比
+
+处理异步错误就像等待交付。你可以使用 `try/catch` 处理意外情况。
+
+```javascript
+// Example:
+async function fetchData() {
+  try {
+    const response = await fetch('https://api.example.com/data');
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error(`Error fetching data: ${error.message}`);
+  }
+}
+```
+
+在此示例中，`try/catch` 处理了数据获取过程。
+
+## 78. "fetch" API 的目的是什么？它是如何用于 HTTP 请求的？
+
+**解释**：`fetch` API 用于在 JavaScript 中发送 HTTP 请求。它返回一个 `Promise`，该 Promise 解析为请求的 `Response`。
+
+### 类比
+
+将 `fetch` 想象成给朋友写信。你发送信件并等待回复，回复可能包含请求的信息。
+
+```javascript
+// Example:
+fetch('https://api.example.com/data')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(`Error fetching data: ${error.message}`));
+```
+
+在此示例中，`fetch` 函数用于发送请求，随后的 `.then()` 和 `.catch()` 块处理响应。
+
+## 79. 解释 "RESTful" API 的概念。
+
+**解释**：RESTful API（表现状态转移）是一种用于设计网络应用的架构风格。它使用一组约束来实现客户端和服务器之间扩展且无状态的通信。
+
+### 类比
+
+将 RESTful API 考虑为餐厅的菜单。菜单提供了清晰选项（端点），每个订单（HTTP 请求）都是独立的，允许厨房（服务器）专注于烹饪而无需记住之前的订单。
+
+```text
+// Example:
+RESTful API 可能包含类似 `/users`（获取用户列表）或 `/products/123`（获取特定产品详情）的端点。
+```
+
+## 80. 解释 "spread" 运算符的概念。
+
+**解释**：展开运算符（`...`）允许将可迭代对象（如数组或字符串）展开为单个元素。它常用于复制数组、合并数组或对象，以及在函数调用中传递参数。
+
+### 类比
+
+将“展开”（spread）运算符想象为从一个配方拷贝食材到另一个。它从一个数组中提取元素或从一个对象提取属性，并将它们展开到一个新的数组或对象中。
+
+```javascript
+// Example:
+const originalArray = [1, 2, 3];
+const newArray = [...originalArray, 4, 5]; 
+console.log(newArray); // 输出: [1, 2, 3, 4, 5]   
+```
+
+在这个示例中，“展开”运算符用于通过展开 `originalArray` 的元素并附加额外的元素来创建一个新数组。
+
+## 81. JavaScript 事件循环如何处理不同优先级的任务？
+
+**解释**：JavaScript 事件循环负责执行代码、处理事件和管理任务。具有不同优先级的任务被放置在不同的队列中，事件循环按照特定的顺序处理它们：回调队列、微任务队列和动画帧。
+
+### 类比
+
+想象一个正在管理任务的多任务秘书。高优先级任务位于待办列表的最顶端，确保紧急事项首先处理，然后是重要性稍低的任务。
+
+```javascript
+// Example:
+setTimeout(() => console.log('Task 1'), 0);
+Promise.resolve().then(() => console.log('Task 2'));
+console.log('Task 3');   
+```
+
+在这个示例中，尽管 `Task 1` 的超时时间为 0，但它会进入回调队列，而微任务队列处理 `Task 2`。`Task 3` 是主执行栈的一部分。
+
+## 82. 解释网络安全中“同源策略”的概念。
+
+**解释**：同源策略是网络浏览器实现的一种安全措施。它限制网页向与提供该页面的不同的域名发送请求，以防止潜在的安全漏洞，如跨站脚本攻击 (XSS) 和跨站请求伪造 (CSRF)。
+
+### 类比
+
+将同源策略想象成俱乐部的入场策略。只有来自同一俱乐部（源）的客人才允许进入，以防止不受欢迎的客人进入。
+
+```text
+// Example:
+来自 `https://example.com` 的脚本受到同源策略限制，无法向 `https://api.example2.com` 发请求。
+```
+
+## 83. JavaScript 中“记忆化”（memoization）技术的目的是什么？
+
+**解释**：记忆化是一种通过根据输入参数缓存函数结果来优化函数性能的技术。如果再次遇到相同的输入，则返回缓存的结果而不是重新计算函数。
+
+### 类比
+
+想象一个带有内存功能的计算器。如果你执行了一次计算并并在稍后重复它，你可以使用内存而不是再次执行这些步骤。
+
+```javascript
+// Example:
+const memoizedFunction = (function () {
+  const cache = {}; 
+  return function (arg) {
+    if (arg in cache) {
+      return cache[arg];
+    } else {
+      const result = expensiveOperation(arg);
+      cache[arg] = result;
+      return result;
+    }
+  };
+})();   
+```
+
+在这个示例中，`memoizedFunction` 缓存了结果，避免了对相同参数的冗余计算。
+
+## 84. JavaScript 中的 `reduce` 函数是如何工作的？你能提供一个示例吗？
+
+**解释**：JavaScript 中的 `reduce` 函数用于将数组的值累加为单个结果。它接受一个回调函数和一个初始值，将回调应用到每个元素上并累加结果。
+
+### 类比
+
+将 `reduce` 想象成厨师在准备菜时组合食材。每种食材（数组元素）都会经过处理，最终结果就是完成的菜肴。
+
+```javascript
+// Example:
+const numbers = [1, 2, 3, 4, 5]; 
+const sum = numbers.reduce((accumulator, current) => accumulator + current, 0); 
+console.log(sum); // 输出: 15   
+```
+
+在这个示例中，`reduce` 函数从初始值 0 开始计算数组中数字之和。
+
+## 85. 解释 JavaScript 中“柯里化”（currying）的概念。
+
+**解释**：柯里化是函数式编程中的一种技术，将具有多个参数的函数转换为一系列函数，每个函数只接受一个参数。它允许函数的部分应用，创建更具重用性和可组合的代码。
+
+### 类比
+
+将柯里化考虑为制作披萨的过程。不是一次性做好整张披萨，而是单独准备每一层，使其更容易自定义。
+
+```javascript
+// Example:
+const curryAdd = a => b => a + b; 
+const add5 = curryAdd(5);
+```
+
+
+
+console.log(`add5(3)`); // 输出: 8
+
+在这个示例中，`curryAdd` 将一个两个参数的加法函数转换为柯里化函数，实现了部分应用。
+
+## 87. 内容安全策略（CSP）在 Web 开发中有什么意义？
+
+解释：内容安全策略 (CSP) 是一种安全标准，有助于防止各种类型的攻击，例如跨站脚本攻击 (XSS)。它允许 Web 开发者声明哪些内容源被认为是信任的是可以执行的。
+
+类比：将 CSP 想象成在建筑处检查入口权限的安保。只有获得批准的个人（信任源）才允许进入，从而降低未经授权访问的风险。
+
+示例：如 `Content-Security-Policy: script-src 'self'` 的 CSP 头部确保脚本仅在来自同源时才执行。
+
+## 88. JavaScript 如何处理变量作用域？
+
+解释：变量作用域定义了变量何时可以访问。JavaScript 有函数作用域、块作用域和全局作用域。
+
+类比：将变量作用域想象成房子里的房间。每个房间代表不同的作用域，放在其中的变量仅在房间内访问。
+
+示例：
+
+```javascript
+function exampleScope() {
+  if (true) {
+    var x = 10; // var 是函数作用域
+    let y = 20; // let 是块作用域
+    const z = 30; // const 是块作用域
+  }
+  console.log(x); // 输出: 10
+  // console.log(y); // 错误：y 未定义 (块作用域)
+  // console.log(z); // 错误：z 未定义 (块作用域)
+}
+exampleScope();
+```
+
+在这个示例中，`x` 因为是函数作用域可以在块外部访问，而 `y` 和 `z` 是块作用域的。
+
+## 89. JavaScript 中 `Proxy` 对象的目的是什么？
+
+解释：JavaScript 中的 `Proxy` 对象用于为对象上的基础操作（如属性访问、赋值、枚举等）创建自定义行为。它允许对这些操作进行拦截和自定义。
+
+类比：将 Proxy 想象成一个管理请求的私人助理。你不是直接对象交互，而是将请求委托给助理，助理可以修改、拒绝或增强这些请求。
+
+示例：
+
+```javascript
+const handler = {
+  get: function (target, property) {
+    return property in target ? target[property] : 'Property not found!';
+  }
+}; 
+
+const person = new Proxy({}, handler);
+person.name = 'John'; 
+console.log(person.name); // 输出: John
+console.log(person.age); // 输出: Property not found!
+```
+
+在这个示例中，`Proxy` 拦截了属性访问并为不存在的属性提供了自定义响应。
+
+## 90. 解释 IIFE（立即调用函数表达式）模式。
+
+解释：IIFE 是一种 JavaScript 模式，函数在创建后立即执行。它经常用于创建私有域作用域域污染全局作用域。
+
+类比：将 IIFE 想象成个人气泡。你在气泡内活动，完成后将其戳破。气泡内的活动和变量不会影响外部环境。
+
+示例：
+
+```javascript
+(function () {
+  // 私有作用域
+  const secretNumber = 42;
+  console.log(secretNumber);
+})(); // 立即执行
+// console.log(secretNumber); // 错误：secretNumber 未定义   
+```
+
+在这个示例中，IIFE 封装了 `secretNumber`，使其在函数外部无法访问。
+
+## 91. "WebSockets" API 与传统的 HTTP 通信有何区别？
+
+解释：`WebSockets API` 在单个长连接上提供了一个全双工通信通道。与遵循请求响应模型的传统 HTTP 通信不同，WebSockets 允许双向通信，实现了客户端与服务器之间的实时数据交换。
+
+类比：将传统的 HTTP 想象成通过邮寄寄信。你发送一个请求，接收者用响应回复。WebSockets 就像电话，双方都可以随时说话和倾听。
+
+主要区别：
+- 连接类型：HTTP 是无状态且无连接的，而 WebSockets 维持着持久的全双工连接。
+- 延迟：WebSockets 通过消除了每次通信都需建立新连接的需求，降低了延迟。
+- 使用场景：HTTP 适用于请求-响应场景，而 WebSockets 擅于聊天、游戏和实时更新等实时应用。
+
+## 92. JavaScript 中“可变（mutable）”和“不可变（immutable）”数据类型之间的区别是什么？
+
+解释：在 JavaScript 中，“可变”和“不可变”指的是数据在创建后是否可以被修改。可变数据类型允许修改，而不可变数据类型一旦创建就无法被更改。
+
+类比：将可变数据想象成白板；你可以擦掉并重写信息。不可变数据就像在石头上刻字；一旦刻在那里，你就无法更改它，但可以创建一个新的。
+
+示例：
+- 可变：数组和对象可以在创建后被修改。
+- 不可变：字符串和数字不能更改；操作会创建新值。
+
+## 93. 解释 "Promise.all" 方法在处理多个 promise 中的作用。
+
+解释：`Promise.all` 是 JavaScript 中的一个方法，接收一个 Promise 数组并返回一个新的 Promise。当所有输入的 Promise 都解析时，该新 Promise 将以所有解析值的数组的形式完成；如果有第一个被拒绝的 Promise，它将以该原因被拒绝。
+
+类比：想象一个团队项目，每个团队成员负责一项任务。`Promise.all` 通过等待所有成员完成任务后再宣布项目完成，从而确保项目的成功。
+
+示例：
+
+```javascript
+const promise1 = fetch('https://api.example.com/data/1');
+const promise2 = fetch('https://api.example.com/data/2'); 
+
+Promise.all([promise1, promise2])
+  .then(responses => {
+    // 两个 promise 都成功解析
+    console.log(responses);
+  })
+  .catch(error => {
+    // 至少有一个 promise 被拒绝
+    console.error(error);
+  });
+```
+
+在此示例中，`Promise.all` 确保只有当 promise 都成功解析时，才会执行 `.then` 块中的代码。
+
+## 94. "防抖（debounce）"模式是如何提高 JavaScript 应用性能的？
+
+解释：`debounce` 是一种限制函数调用频率的技术，特别是在响应滚动或打字等快速事件时。它通过推迟函数的执行，直到距离上次调用通过了一段时间后，来提高性能。
+
+类比：想象正在输入查询语句；防抖就像是在执行搜索之前等待简短的停顿。它防止了不必要的中间搜索并增强了用户体验。
+
+示例：
+
+```javascript
+function debounce(func, delay) {
+  let timeoutId; 
+  return function (...args) {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => func(...args), delay);
+  };
+} 
+
+const searchFunction = debounce(query => {
+  // 执行搜索操作
+  console.log(`Searching for: ${query}`);
+}, 300); 
+
+// 使用
+searchFunction('JavaScript');
+searchFunction('Web Development');
+// 在最后一次调用 300ms 后，仅触发一次搜索操作   
+```
+
+在此示例中，`debounce` 函数确保搜索操作只在简短的停顿后才执行。
+
+## 95. JavaScript 中 "document.readyState" 属性的用途是什么？
+
+解释：`document.readyState` 属性指示文档的加载状态。它告知文档是在加载中、已完全加载还是处于交互状态。
+
+类比：想象一本书；`document.readyState` 就像检查书籍是否仍在打印中、已打印完毕或已打开供阅读。
+
+可能的值：
+- "loading"：文档正在加载。
+- "interactive"：文档已完成加载并准备好交互。
+- "complete"：文档及其资源已完全加载。
+
+示例：
+
+```javascript
+document.addEventListener('readystatechange', () => {
+  console.log(document.readyState);
+});
+```
+
+在此示例中，代码会在加载过程中状态发生变化时记录文档的就绪状态。
+
+## 96. 解释 DOM 中的“事件冒泡（event bubbling）”概念。
+
+解释：事件冒泡是 DOM 事件流中的阶段，事件从触发它的目标元素开始，然后通过 DOM 树中的祖先元素向上冒泡。这使得祖先元素能够对同一个事件做出反应。
+
+类比：想象向水里丢入一颗石子；涟漪（事件）不仅会到达石子掉落点，还会向外扩散，影响周围区域。
+
+示例：
+
+```html
+<div id="parent">
+  <button id="child">点击我!</button>
+</div> 
+
+<script>
+document.getElementById('parent').addEventListener('click', () => {
+  console.log('父元素被点击!');
+}); 
+
+document.getElementById('child').addEventListener('click', () => {
+  console.log('子元素被点击!');
+});
+</script>
+```
+
+在此示例中，由于事件冒泡，点击“点击我！”按钮会同时触发子元素和父元素的点击事件。
+
+## 97. Map 对象与普通对象有什么区别？
+
+解释：`Map` 对象在 JavaScript 中是一种允许存储键值对的数据结构，相比普通对象，`Map` 的键可以是任何类型。
+
+类比：将普通对象想象成带有单词（键）和定义（值）的字典。Map 是扩展后的字典。
+
+主要区别：
+- 键类型：Map 允许任何类型的键，包括对象和函数。
+- 顺序：Map 保持键值对的顺序。
+- 大小属性：Map 有 `size` 属性来获取条目数量。
+
+示例：
+
+```javascript
+// 使用 Map
+const myMap = new Map();
+myMap.set('name', 'John');
+myMap.set(42, 'Answer to the Question'); 
+console.log(myMap.get('name')); // 输出: John 
+
+// 使用普通对象
+const myObject = {
+  name: 'John',
+  42: 'Answer to the Question'
+};
+console.log(myObject['name']); // 输出: John
+```
+
+在此示例中，`myMap` 和 `myObject` 都存储键值对，但 `Map` 更灵活。
+
+## 98. JavaScript 中 "WeakMap" 和 "WeakSet" 对象的用途是什么？
+
+解释：`WeakMap` 和 `WeakSet` 是 JavaScript 中的特殊对象，适用于希望与对象关联额外数据但又不防止对象被垃圾回收的场景。
+
+类比：考虑贴在物品上的便利贴；`WeakMap` 就像一张便利贴，如果没有其他引用，它不会防止该物品被丢弃。
+
+特性：
+- `WeakMap` 中的条目是弱引用的，允许关联的对象被垃圾回收。
+- `WeakSet` 持有对象的弱引用，确保它们可以被垃圾回收。
+
+示例：
+
+```javascript
+// 使用 WeakMap
+const secretKey = new WeakMap();
+const object = {}; 
+secretKey.set(object, 'sensitive data');
+console.log(secretKey.get(object)); // 输出: sensitive data 
+
+// 使用 WeakSet
+const weakSet = new WeakSet();
+const obj1 = { name: 'John' };
+const obj2 = { name: 'Jane' }; 
+weakSet.add(obj1);
+weakSet.add(obj2); 
+console.log(weakSet.has(obj1)); // 输出: true
+obj1 = null; // obj1 可以被垃圾回收 
+console.log(weakSet.has(obj1)); // 输出: false
+```
+
+在本示例中，使用 `WeakMap` 和 `WeakSet` 允许将关联数据绑定到对象，而不会阻止这些对象的回收。
+
+## 99. "Immutable.js" 库如何帮助管理不可变数据结构？
+
+解释：`Immutable.js` 库旨在方便 JavaScript 中创建和操作不可变数据结构。不可变数据结构一旦创建，就无法被更改。相反，任何操作都会产生一个新的新结构。
+
+类比：想象一个时间点上的快照；`Immutable.js` 帮助你拍摄数据的快照，在不改变原始数据的情况下保留历史状态。
+
+核心特性：
+*   持久化数据结构：对 `Immutable.js` 结构的操作不会修改现有结构，而是返回一个新结构。
+*   高效更新：仅替换数据结构中发生变化的部分，使得更新更高效。
+*   防止变异：帮助避免无意的数据变异。
+
+示例：
+
+```javascript
+const { Map } = require('immutable');
+const originalMap = Map({ key: 'value' });
+const updatedMap = originalMap.set('newKey', 'newValue'); 
+console.log(originalMap.get('newKey')); // Outputs: undefined
+console.log(updatedMap.get('newKey')); // Outputs: newValue   
+```
+
+在本示例中，`Immutable.js` 确保修改 `originalMap` 会创建一个新的 map，而保持原始 map 不变。
+
+## 100. "Promise.race" 函数是如何工作的，什么情况下会有用？
+
+解释：`Promise.race` 是一个方法，它接收一个 promise 迭代器并返回一个新的 promise。当迭代器中的第一个 promise 解决（resolve）或拒绝（reject）时，这个新 promise 也会立即解决或拒绝。
+
+类比：想象一场多个跑步者（promise）竞争的比赛。`Promise.race` 根据第一个完成的跑步者宣布一个胜者（解决或拒绝）。
+
+示例：
+
+```javascript
+const promise1 = new Promise(resolve => setTimeout(() => resolve('Winner!'), 1000));
+const promise2 = new Promise((_, reject) => setTimeout(() => reject('Loser!'), 500)); 
+
+Promise.race([promise1, promise2])
+  .then(result => console.log(result)) // Outputs: Loser!
+  .catch(error => console.error(error)); // Outputs: Loser!
+```
+
+在本示例中，`Promise.race` 根据第一个先定的 promise 进行解决或拒绝，从而帮助优化响应时间。
