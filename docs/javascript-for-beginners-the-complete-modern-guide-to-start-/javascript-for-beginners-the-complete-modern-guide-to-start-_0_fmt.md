@@ -1,0 +1,79 @@
+
+# JavaScript 初学者指南：快速轻松学习 JavaScript 语言的完整现代指南，编程技巧与技巧
+
+![](img/image_rsrc1FT.jpg)
+
+## 引言
+
+市场上有许多关于此主题的书籍，再次感谢选择本书！我们已尽力提供尽可能丰富的信息，请尽情享受！
+
+### 什么是 JavaScript?
+
+JavaScript 是一种解释型编程语言，因此不需要编译程序。尽管名称相同，但它与 Java 语言没有直接关系。
+
+### 如何在 XHTML 文档中引入 JavaScript
+
+JavaScript 与 XHTML 的集成非常灵活，至少有三种方法可以在网页中包含 JavaScript 代码。
+
+### Noscript 标签
+
+某些浏览器不支持 JavaScript，而其他浏览器允许用户部分禁用它，因为认为这样更安全。在这种情况下，如果网页需要 JavaScript 才能正常运行，可以包含警告消息提示用户激活 JavaScript。以下示例显示了基于 JavaScript 的网页在 JavaScript 启用和禁用时的示例：
+
+```html
+<head>
+<title>文档中的 JavaScript 代码示例</title>
+<script type="text/javascript"></script>
+
+<body><p>文本段落。</p></body>
+```
+
+为了使生成的 XHTML 页面有效，必须为 `<script>` 添加 `type` 属性。在 JavaScript 的情况下，`type` 属性的标准值是 `text/javascript`。
+
+### 基础术语表
+
+- **脚本 (Script)**：使用 JavaScript 语言创建的程序、应用程序或代码段。几行代码也被视为脚本。
+
+- **语句 (Sentence)**：构成脚本的每条指令。
+
+- **关键字 (Reserved words)**：用于构建 JavaScript 语句的单词（英文），因此不能自由使用。
+
+### 语法
+
+编程语言的语法定义为编写程序源代码时必须遵循的规则集。定义 JavaScript 语法的基本规则如下：
+
+- **不考虑空格和换行**：与 XHTML 的情况一样，JavaScript 解释器忽略任何空格，以便代码可以正确排序（制表、添加空格、创建换行等）。
+
+- **大小写敏感**：与 XHTML 标签和元素的情况一样。然而，如果在 XHTML 页面中交叉使用大小写，页面将无法正确显示，脚本无法工作。
+
+- **变量类型未定义**：创建变量时，不需要指定要存储的数据类型。因此，同一个变量在脚本执行期间可以存储不同类型的数据。
+
+- **语句不需要以分号;)结尾**：在大多数编程语言中，强制要求每个语句以分号结束；虽然 JavaScript 不需要你这样做，但遵循每个语句以分号结束的传统是有利的。
+
+- **可以包含注释**：注释用于在源代码中添加信息。虽然注释的内容不会显示在屏幕上，但必须注意注释中包含的信息。JavaScript 定义了两种注释：单行注释和多行注释。
+
+单行注释示例
+
+```javascript
+// 以下是提示消息
+```
+
+多行注释示例
+
+```javascript
+/* 当你需要在注释中包含足够的信息时，
+   多行注释非常有用 * /
+```
+
+多行注释通过在 `/*` 和 `*/` 符号之间包含注释文本来定义。
+
+### 可能性与局限性
+
+自诞生以来，JavaScript 一直被大多数网站大量使用。Flash 的出现减少了它的流行，因为 Flash 允许执行通过 JavaScript 无法的操作。然而，使用 JavaScript 编写的 AJAX 程序的出现使其在 Web 编程语言中非常流行。对于局限性，JavaScript 设计在一个非常受限的环境中，允许用户依赖脚本的执行。因此，JavaScript 脚本无法与下载脚本的同一域的资源通信。脚本无法关闭未打开过相同脚本的窗口。创建的窗口不能太小或太大，也不得放置在用户的视野之外。
+
+### JavaScript 与浏览器
+
+目前可用的最新浏览器都支持对应于 ECMA 版本的 JavaScript。最现代浏览器有 Firefox、Chrome、IE、Opera 和 Safari。最大的区别在于使用的方言，因为 Internet Explorer 使用 JScript，而其他浏览器使用 JavaScript。
+
+### 其他环境中的 JavaScript
+
+JavaScript 作为 Web 应用程序的流行已扩展到其他应用程序和非 Web 相关的领域。Adobe Acrobat 等工具允许在 PDF 文件中包含 JavaScript。Flash 和 Flex 等其他工具使用 ActionScript。
