@@ -1,0 +1,15970 @@
+
+# Murach JavaScript 与 jQuery 教程
+
+## 编辑团队
+
+- **作者**：Zak Ruvalcaba、Mike Murach
+- **编辑**：Anne Boehm、Ben Murach
+- **封面设计**：Zylka Design
+- **制作**：Maria Pedroza David-Spera
+
+## 详细内容
+
+### 第一部分 JavaScript 基础
+
+#### 第 1 章 Web 开发导论
+
+- Web 应用是如何工作的
+- Web 应用的组件
+- 静态网页是如何处理的
+- 动态网页是如何处理的
+- 如何使用 JavaScript 和 jQuery 进行客户端处理
+- JavaScript 应用的组件
+- 邮件列表应用是如何工作的
+  - HTML
+  - CSS
+  - JavaScript
+- 学习本书所需的 HTML 和 CSS 技能
+  - 如何使用 HTML5 语义元素
+  - 如何使用 `div` 和 `span` 元素
+  - 如何使用基础 HTML 属性
+  - 如何为 HTML 页面提供 CSS 规则
+  - 如何编写基础 CSS 选择器
+  - 如何编写规则集
+- 如何测试 JavaScript 应用
+  - 如何运行 JavaScript 应用
+  - 如何确保跨浏览器兼容性
+- 如何使用 Aptana 开发 JavaScript 应用
+  - 如何打开或创建项目
+  - 如何创建 HTML、CSS 或 JavaScript 文件
+  - 如何更改高亮显示
+  - 如何编辑文件
+  - 如何编写代码
+
+#### 第 2 章 快速使用 JavaScript
+
+- 在 HTML 文档中引入 JavaScript
+  - 在 HTML 文档头部引入 JavaScript
+  - 在 HTML 文档底部引入 JavaScript
+- JavaScript 语法
+  - 如何编写语句
+  - 如何使用标识符
+  - 如何使用注释
+  - 如何使用对象、方法和属性
+- 如何使用数据处理
+  - 基本数据类型
+  - 如何使用数值表达式
+  - 如何使用数值变量
+  - 如何使用字符串变量
+  - 如何使用 `parseInt` 和 `parseFloat`
+- 如何编写控制语句
+  - 如何编写条件表达式
+  - 如何编写 `if` 语句
+  - 如何编写 `while` 和 `do-while` 循环
+  - 如何编写 `for` 循环
+- 示例应用
+  - Miles Gallon 应用
+  - 测试应用
+- 如何在代码中查找错误
+  - 使用 Firefox 获取错误信息
+  - 常见的 JavaScript 错误
+
+#### 第 3 章 如何处理对象、函数和事件
+
+- 如何使用对象处理数据
+  - 使用 `window` 和 `document` 对象
+  - 使用 `TextBox` 和 `Number` 对象
+  - 使用 `Date` 和 `String` 对象
+- 如何使用函数
+  - 如何创建和调用匿名函数
+  - 如何创建和调用命名函数
+- 如何处理事件
+  - 为事件绑定事件处理器
+  - 为事件卸载事件处理器
+- 示例应用
+  - Miles Gallon 应用
+  - 邮件列表应用
+
+#### 第 4 章 如何测试和调试 JavaScript 应用
+
+- 测试和调试简介
+  - JavaScript 应用的典型案例
+  - 可能出现的三类错误
+  - 常见的 JavaScript 错误
+  - 自上而下的编码和测试如何简化调试
+- 使用 Firebug 调试
+  - 如何启用 Firebug 并查找错误
+  - 如何使用断点和单步执行
+- 其他调试方法
+  - 何时使用其他浏览器获取错误信息
+  - 跟踪 JavaScript 代码执行的简单方法
+  - 何时以及如何查看源代码
+  - 何时以及如何验证 HTML
+
+#### 第 5 章 如何处理数组
+
+- 如何创建和使用数组
+  - 如何创建数组并引用其元素
+  - 如何添加和删除数组元素
+  - 如何使用循环处理数组
+  - 如何使用 `for-in` 循环处理数组
+  - 如何使用 `Array` 对象的方法
+- 增强型邮件列表应用
+  - 用户界面和 HTML
+  - JavaScript
+
+#### 第 6 章 如何使用 JavaScript 编写 DOM
+
+- DOM 脚本属性和方法
+- DOM 脚本概念
+- `Node` 接口
+- `Document` 和 `Element` 接口
+- FAQs（常见问题解答）应用程序
+  - 用户界面、HTML 和 CSS
+  - JavaScript
+  - FAQs 程序的另一种编码方式
+- JavaScript 应用的两个关键问题
+  - 可用性
+  - 可访问性
+- 改进可访问性的 FAQs 应用程序
+- 链接和图片的 DOM 脚本技巧
+  - 如何取消事件的默认行为
+  - 如何预加载图片
+- 图片切换应用程序
+  - HTML 和 CSS
+  - JavaScript
+- 如何使用定时器
+  - 如何使用一次性定时器
+  - 如何使用间隔定时器
+- 幻灯片应用程序
+  - HTML 和 CSS
+  - JavaScript
+
+### 第二部分 jQuery 基础
+
+#### 第 7 章 使用 jQuery 入门
+
+- jQuery 简介
+  - 什么是 jQuery
+  - 如何在网页中引入 jQuery
+  - jQuery 如何简化 JavaScript 开发
+  - jQuery 如何影响测试和调试
+  - jQuery UI 和插件如何简化 JavaScript 开发
+- jQuery 编程基础
+  - 如何编写 jQuery 选择器
+  - 如何调用 jQuery 方法
+  - 如何使用 jQuery 事件方法
+- jQuery 中的邮件列表应用程序
+  - 用户界面和 HTML
+  - jQuery
+- 选择器、方法和事件方法的可用子集
+  - 最实用的选择器
+  - 最实用的方法
+  - 最实用的事件方法
+  - 你应该知道的其他方法
+- 三个示例应用程序
+  - jQuery 中的 FAQs 应用程序
+  - jQuery 中的图片切换应用程序
+  - jQuery 中的图片悬停应用程序
+
+#### 第 8 章 如何使用效果和动画
+
+- 如何使用效果
+  - 用于效果的 jQuery 方法
+  - 使用 jQuery 效果的 FAQs 应用程序
+  - 带有效果和 CSS 的幻灯片应用程序
+    - 用户界面、HTML 和 CSS
+    - 编写 jQuery 的两种方式
+    - 如何停止和启动幻灯片
+- 如何使用动画
+  - 如何使用 `animate` 方法的基础语法
+  - 如何链式调用 `animate`
+  - 如何使用 `delay` 和 `stop` 方法
+  - 在效果和动画中使用 easings
+  - 如何使用高级 `animate` 语法以及处理队列的方法
+- 带有动画的轮播应用程序
+  - 用户界面、HTML 和 CSS
+  - jQuery
+
+#### 第 9 章 如何使用 DOM 操作和遍历方法
+
+- DOM 操作方法
+  - 处理属性的方法
+  - DOM 替换的方法
+  - DOM 插入和克隆的方法
+  - DOM 包装和移除的方法
+- TOC（目录）应用程序
+  - 用户界面和 HTML
+  - jQuery
+- 处理样式和定位的方法
+  - 处理样式的方法
+  - 元素定位的方法
+- 增强型 TOC 应用程序
+- DOM 遍历方法
+  - 树遍历方法
+  - 过滤方法
+- 使用 DOM 遍历方法的幻灯片应用程序
+
+#### 第 10 章 处理表单和数据验证
+
+- 表单和控件简介
+  - 表单如何工作
+  - 处理表单的 HTML5 和 CSS3 特性
+- 如何使用 jQuery 处理表单
+  - 用于表单的 jQuery 选择器和方法
+  - 用于表单的 jQuery 事件方法
+- 使用 JavaScript 的验证应用程序
+  - 用户界面和 HTML
+  - 用于应用程序的部分 jQuery
+- 如何使用数据验证插件
+  - 如何使用验证插件
+  - 插件的选项和默认错误消息
+- 使用验证插件的验证应用程序
+  - 用户界面
+  - HTML
+  - CSS
+
+#### 第 11 章 如何创建和使用插件
+
+- 插件简介
+  - 如何查找 jQuery 插件
+  - 一些最实用的插件
+  - 如何使用任何插件
+- 如何使用四个最实用的插件
+  - 如何使用 Lightbox 插件处理图片
+  - 如何使用 bxSlider 插件制作轮播图
+  - 如何使用 Cycle 插件制作幻灯片
+  - 如何使用 JLayout 插件制作双栏布局
+- 如何创建你自己的插件
+  - 插件的结构
+  - 如何编写一个高亮菜单项的插件
+  - 如何为插件添加选项
+- 使用两个插件的网页
+  - 用户界面
+  - 脚本元素
+  - 插件所用元素的 HTML
+  - 使用插件的 jQuery 代码
+
+### 第三部分 jQuery UI 元素
+
+#### 第 12 章 使用 jQuery UI 主题和小组件快速上手
+
+- jQuery UI 简介
+  - 什么是 jQuery UI 以及从何处获取
+  - jQuery UI 组件
+- 如何构建和使用 jQuery UI 下载包
+  - 如何构建下载包
+  - 如何使用 ThemeRoller 构建自定义主题
+  - 如何使用下载的文件夹和文件
+- 如何使用 jQuery UI 小组件
+  - 如何使用任何小组件
+  - 如何使用手风琴（Accordion）小组件
+  - 如何使用标签页（Tabs）小组件
+  - 如何使用按钮（Button）和对话框（Dialog）小组件
+  - 如何使用自动完成（Autocomplete）小组件
+  - 如何使用日期选择（Datepicker）小组件
+  - 如何使用滑动条（Slider）小组件
+  - 如何使用进度条（Progressbar）小组件
+- 使用 jQuery UI 的网页
+  - 用户界面
+  - 链接和脚本元素
+  - 小组件的 HTML
+  - 小组件的 jQuery 代码
+
+#### 第 13 章 如何使用 jQuery UI 交互和效果
+
+- 如何使用交互
+  - 交互简介
+  - 如何使用拖拽和放置（`draggable` 和 `droppable`）交互
+  - 如何使用可放缩（`resizable`）交互
+  - 如何使用可选（`selectable`）交互
+  - 如何使用排序（`sortable`）交互
+- 如何使用效果
+  - 效果简介
+  - 如何使用单个效果
+  - 如何使用颜色过渡
+  - 如何使用类过渡（`class transitions`）
+  - 如何使用可见性过渡（`visibility transitions`）
+
+### 第四部分 Ajax、JSON 和 API 基础
+
+#### 第 14 章 如何使用 Ajax、JSON 和 Blogger
+
+- Ajax 简介
+  - Ajax 的工作原理
+  - Ajax 的常用数据
+  - `XMLHttpRequest` 对象的成员
+  - 如何使用 `XMLHttpRequest` 对象
+- 如何使用 jQuery 简写方法处理 Ajax
+  - 如何使用处理 Ajax 的简写方法
+  - 如何使用 `.load()` 方法加载 HTML 数据
+  - 如何使用 `.get()` 或 `.post()` 方法加载 XML 数据
+  - 如何使用 `.getJSON()` 方法加载 JSON 数据
+  - 如何通过 Ajax 请求发送数据
+- 如何使用 `$.ajax` 方法处理 Ajax
+  - `$.ajax` 方法加载数据的语法
+  - 如何使用 `$.ajax` 方法加载数据
+- 如何配合 Google Blogger 的 API 使用 Ajax
+  - Google Blogger 简介
+  - 如何使用 Blogger API
+  - 如何使用在线 JSON 编辑器查看网站 Feed 源
+  - 如何使用 Ajax 和 JSON 显示列表
+
+#### 第 15 章 如何使用 YouTube、Twitter 和 Flickr 的 API
+
+- 如何配合 YouTube 使用 Ajax
+  - 如何使用 YouTube API
+  - 你最常用的查询参数和数据项
+  - 如何按频道查看列表
+  - 如何按搜索词列出视频
+  - 如何在网站的视频播放器中播放视频
+- 如何配合 Twitter 使用 Ajax
+  - 如何使用 Twitter API
+  - 如何显示用户的推文
+  - 如何将推文中的 URL 转换为链接
+  - 如何为每条推文显示时间戳
+- 如何配合 Flickr 使用 Ajax
+  - 如何使用 Flickr API
+  - 你将最常用的查询参数和数据项
+  - 如何为 Flickr 照片流显示标题和描述
+  - 如何显示 Flickr 照片库
+
+#### 第 16 章 如何使用 Google Maps API
+
+- Google Maps 简介
+  - Google Maps API 简介
+  - 用于在网页上添加 Google 地图的类
+  - 用于 Google Maps API 的 `script` 元素
+  - 如何在网页上添加 Google 地图
+- 如何在地图上显示标记
+  - 用于地理编码和标记的类与方法
+  - 如何创建一个显示标记的地址列表
+- 如何在地图上显示消息
+  - 用于消息的类与方法
+  - 如何为标记添加消息
+  - 如何为消息添加自定义标记
+  - 如何向消息添加 Flickr 图片
+- 如何显示行驶路线
+  - 用于路线和监听器的类与方法
+  - 如何在自己的网站上显示行驶路线
+
+### 第五部分 jQuery Mobile 基础
+
+#### 第 17 章 使用 jQuery Mobile 快速入门
+
+- 如何与移动设备交互
+- 如何为移动设备提供页面
+  - 如何使用 JavaScript 插件将移动浏览器重定向到网站
+  - 如何设置视口（`viewport`）属性
+- 网页设计指南
+- 网页测试指南
+- 如何开始使用 jQuery Mobile
+  - 什么是 jQuery Mobile 以及从何获取
+  - 如何在你的网页中引入 jQuery Mobile
+  - 如何使用 jQuery Mobile 创建一个网页
+  - 如何在单个 HTML 文件中编写多个网页
+  - 如何使用对话框（`dialogues`）和过渡效果（`transitions`）
+  - 如何创建按钮
+  - 如何创建导航栏
+- 如何使用 jQuery Mobile 为网页样式
+  - 如何使用默认样式
+  - 如何为 HTML 元素应用主题色（`theme swatches`）
+  - 如何使用 ThemeRoller 制作自己的主题
+- 为 Vecta Corp 构建移动网站
+  - 移动网站的布局
+  - 移动网站的 HTML
+  - 移动网站的样式表
+
+#### 第 18 章 如何增强 jQuery Mobile 网站
+
+- **如何使用 jQuery Mobile 文档**
+  - jQuery Mobile 的组件
+  - jQuery Mobile 的数据属性
+  - jQuery Mobile 的事件与方法
+- **如何使用 jQuery Mobile 进行内容格式化**
+  - 如何在网格中布局内容
+  - 如何使用折叠内容块（`collapsible content blocks`）
+  - 如何使用折叠集（`collapsible sets`）
+- **如何使用 jQuery Mobile 处理列表视图**
+  - 如何使用基础列表
+  - 如何使用拆分列表（`split button lists`）和插入列表
+  - 如何使用列表分隔符（`list dividers`）和计数气泡（`count bubbles`）
+  - 如何搜索过滤栏（`search filter bars`）
+- **如何使用 jQuery Mobile 处理表单**
+  - 如何使用文本字段和文本区域
+  - 如何使用滑块（`sliders`）和开关（`switches`）
+  - 如何使用单选按钮和复选框
+  - 如何使用选择菜单（`select menus`）
+  - 如何提交表单
+- **为 Vecta Corp 构建增强型移动网站**
+  - 网站的布局
+  - HTML
+  - 样式表
+
+## 简介
+
+jQuery 是一个免费开源的 JavaScript 库，它提供了许多让 JavaScript 编程变得更容易的方法。此外，jQuery 方法经过了跨浏览器兼容性编码和测试，因此它们可以在所有浏览器中运行。这仅仅是为什么今天 10,000 个最常访问的网站中超过一半在使用 jQuery 的两个原因之一。
+
+事实上，你可以将 jQuery 视为每个网页开发者应该掌握的四种技术之一：HTML、CSS、JavaScript 和 jQuery。但不要忘记，jQuery 实际上是 JavaScript，要使用 jQuery，你需要了解一些 JavaScript 技能。
+
+这也是为什么本书从教你有效使用 jQuery 所需的最少 JavaScript 知识开始。这对编程新手至关重要，但对于具有 JavaScript 经验的读者也很有用。
+
+## 本书的作用
+
+- 为了确保你掌握使用 jQuery 所需的所有 JavaScript 技能，本书第一部分的六章对这些技能进行了突击课程。如果你已经熟悉 JavaScript，可以跳过这一部分，但你可能会在过程中学到一些新技能。如果你是编程新手，这一部分专门为你提供良好开端而设计。
+
+- 一旦你掌握了所需的 JavaScript 技能，本书第二部分的五章将介绍每个网页开发者都应该具备的核心 jQuery 技能。第 7 章将让你快速上手这些技能，接下来的四章将重点关注特效和动画、DOM 脚本、处理表单和数据验证、使用大量的 jQuery 插件以及创建你自己的插件。
+
+- 除了核心 jQuery 库外，jQuery 还提供了 jQuery UI（用户界面）库。该库帮助你仅需几行代码即可构建高级功能，第三部分的两个章节展示了如何充分利用 jQuery UI。这包括使用标签（`tabs`）、折叠面板（`accordions`）和日期选择器（`datepickers`）等组件……如拖拽（`draggable`）、放置（`droppable`）和排序（`sortable`）交互……如颜色和类的过渡效果。
+
+- 第四部分的三个章节介绍了如何使用 Ajax 和 JSON 从服务器获取数据并将其添加到网页中，无需重新加载网页。它们还展示了如何使用 Blogger、YouTube、Twitter、Flickr 和 Google Maps 等网站的 API，因为这是 Ajax 和 JSON 的常见用途。
+
+- 最后，第五部分的两个章节介绍了如何使用 jQuery Mobile 为 iPhone 和 Android 等移动设备开发 Web 应用程序。显然，这是目前开发移动网站的最佳方法，因此是每个开发者都应该掌握的。
+
+## 你将通过本书学得更快、更好
+
+与我们所有的书籍一样，这本书也有一些你在竞争性书籍中找不到的特点。这就是为什么我们相信，通过我们的书你比通过任何其他书都能学得更快、更好。以下是其中一些特点。
+
+- 因为第一部分提供了使用 jQuery 所需的完整 JavaScript 子集，你将能够理解 jQuery 应用中使用的所有 JavaScript。相比之下，大多数 jQuery 书籍并不教授 JavaScript，所以当你不理解它们示例中使用的 JavaScript 时，通常需要查阅其他资源。
+
+- 如果你翻阅这本书，你会发现所有信息都是以“成对页面”的形式呈现的：右页是易懂的语法、指南和示例，左页是观点和额外的说明。这有助于你通过阅读更少的内容来学得更快……当你需要回顾某项操作时，这是理想的参考格式。
+
+- 为了向你展示 jQuery 是如何工作的，本书展示了数十个从简单到复杂的完整 jQuery 应用程序。要查看它是如何工作的，请快速查看第一个 jQuery 章节中提供的四个应用程序：图 7-7 和 7-8，图 7-12、7-13 和 7-14，这同时也展示了我们的成对页面如何方便研究 HTML、CSS 和 JavaScript 代码之间的关系。然后，查看附录 B 中书中所有应用程序的总结。
+
+- 当然，这本书还展示了数十个短示例，因此很容易找到展示如何实现你所要求的示例。更棒的是，我们的成对页面比那些示例嵌入正文的传统书籍更容易让你找到你正在寻找的示例。顺便提一下，书中的所有示例都使用了 HTML5 和 CSS3，因此它们展示了当今最佳的 Web 开发实践。
+
+- 随着你阅读的进行，你将学习如何使用 jQuery 提供的几乎所有的选择器、方法和事件方法。这意味着你可以将本书作为参考，帮助你解析任何 jQuery 中的代码。因此，虽然没有书可以介绍每种 jQuery 应用程序，但本书使你准备好去理解在工作中、在网站或其他书籍中遇到的任何应用程序。
+
+## 你需要的软件
+
+要开发 JavaScript 和 jQuery 应用程序，你可以使用任何文本编辑器。然而，包含语法高亮和自动补全功能的文本编辑器将帮助你更快速地开发应用程序，且错误更少。这就是为什么我们向 Windows 和 Mac OS 用户都推荐 Aptana Studio 3。尽管 Aptana 是免费的，但它提供了许多强大的功能。
+
+然后，为了测试页面，Windows 用户可以使用 Internet Explorer，Mac 用户可以使用 Safari，因为它们是他们的默认浏览器。但我们也建议你也使用 Mozilla Firefox 在另一个浏览器中测试页面，它也是免费的。在实践中，你应该在 Opera 和 Chrome 中测试页面，但随着你的学习，这并不是必要的。
+
+如果你决定使用 Aptana，第一部分提供了一个入门教程将帮助你上手。为了帮助你安装 Aptana 和 Firefox，附录 A 提供了你将需要的网址和步骤。
+
+## 我们的下载文件可以帮助你学习
+
+如果你访问我们的网站 `www.murach.com`，你可以下载充分利用此书所需的所有文件。这些文件包括：
+
+- 本书中所有应用程序的文件
+- 你将作为练习起点的文件
+- 提供练习解决方案的文件
+
+你将测试这些文件、复习并复制代码。此外，如果你在练习中遇到任何问题，解决方案可以帮助你度过学习瓶颈，这是学习过程中的至关重要的部分。有时，即使你想出了可行的解决方案，解决方案也会向你展示处理问题的更优雅的方法。在这里，附录 A 向你展示了如何下载和安装这些文件。
+
+## 为培训师和教师提供的材料
+
+如果你是希望将本书用于课程的企业培训师或大学教师，我们提供一份教师 CD，其中包含：(1) 一套完整的 PowerPoint 幻灯片，你可以查看并强化书的内容；(2) 描述学生在完成每个章节后应具备的学习目标；(3) 衡量掌握程度的题库；(4) 证明掌握程度的额外练习和项目；以及 (5) 练习和项目的解决方案。
+
+要了解更多关于此教师 CD 信息并如何获取，请访问我们的网站 `www.murach.com` 并点击 Trainers（培训师）和 Instructors（教师）链接。或者，如果你愿意，可以拨打 800-221-5528 联系 Kelly 或发送电子邮件至 `kelly@murach.com`。
+
+## 推荐资源
+
+由于 jQuery、HTML 和 CSS 紧密相关，我们强烈建议你在学习 jQuery 的同时掌握 HTML5 和 CSS3。为了获得这些知识，你会发现 *Murach's HTML5 and CSS3* 是本书的完美伙伴。
+
+
+
+如果你想学习 jQuery 未提供的 JavaScript 编程，我们推荐 Murach's JavaScript and DOM Scripting。它介绍了书中未提供的所有 JavaScript 技能，包括如何使用正则表达式、如何创建和使用对象等。它也是一本很好的参考书。
+
+如果你在完成本书后想学习服务器端编程，我们提供了几本书来帮助你。我们的 ASP.NET 书将教你如何使用 C# 或 Visual Basic 开发应用程序。我们的 Servlets and JSP 书将教你如何使用 Java 开发应用程序。我们的 PHP and MySQL 书将教你如何使用 PHP 作为脚本语言、MySQL 作为数据库来开发应用程序。
+
+要了解我们的新书和最新版本，请访问我们的网站 `www.murach.com`。在那里，你可以找到我们所有书籍的详细信息，包括完整的目录。
+
+# JavaScript 基础
+
+在本节的六章内容中，你将学习使用 jQuery 所需的所有 JavaScript 基础知识。首先，第 1 章介绍了开发 JavaScript 应用所需的概念和术语。它还展示了如何使用我们推荐用于开发 JavaScript 应用的 Aptana JavaScript IDE。
+
+接下来，第 2 章介绍了 JavaScript 语言的一个入门子集，第 3 章完成了该子集，第 4 章将向你展示如何测试和调试 JavaScript 应用。到那时，你就可以开始开发自己的应用程序了。
+
+然后，第 5 章将向你展示如何使用在 JavaScript 应用中常用的数组。最后，第 6 章将向你展示如何利用目前所学的所有 JavaScript 技能对链接和图像进行 DOM 脚本编写。
+
+完成这些章节后，你将能够开发出实用的 JavaScript 应用。尽管如此，你还将拥有使用 jQuery 所需的所有 JavaScript 技能。然后，通过阅读本书的最后四个部分，你可以掌握 jQuery。
+
+## Web 开发简介
+
+本章介绍了开发 JavaScript 应用所需的背景概念、术语和技能。这包括对你所需的 HTML 和 CSS 技能的快速回顾。还包括关于如何使用 Aptana Studio 3 的快速教程，这是我们推荐用于开发 JavaScript 应用的 IDE。
+
+如果你有一定的 Web 开发经验，你应该能够通过跳过已经熟悉的话题快速完成本章。但如果你是 Web 开发的新手，你应该花时间掌握本章的概念和术语。
+
+| 主题 | 页码 |
+| :--- | :--- |
+| Web 应用是如何工作的 | 4 |
+| Web 应用的组件 | 4 |
+| 静态网页是如何被处理的 | 6 |
+| 动态网页是如何被处理的 | 8 |
+| 如何将 JavaScript 和 jQuery 用于客户端处理 | 10 |
+| **JavaScript 应用的组件** | **12** |
+| 邮件列表应用是如何工作的 | 12 |
+| HTML | 12 |
+| CSS | 14 |
+| JavaScript | 16 |
+| **本书所需的 HTML 和 CSS 技能** | **18** |
+| 如何使用 HTML5 语义化元素 | 18 |
+| 如何使用 div 和 span 元素 | 20 |
+| 如何使用基础 HTML 属性 | 22 |
+| 如何为 HTML 页面提供 CSS 样式 | 24 |
+| 如何编写基础 CSS 选择器 | 26 |
+| 如何使用 CSS 规则集 | 28 |
+| **如何测试 JavaScript 应用** | **30** |
+| 如何运行 JavaScript 应用 | 30 |
+| 如何确保跨浏览器兼容性 | 32 |
+| **如何使用 Aptana 开发 JavaScript 应用** | **34** |
+| 如何创建项目 | 34 |
+| 如何打开或关闭 HTML、CSS 或 JavaScript 文件 | 36 |
+| 如何更改语法高亮颜色 | 38 |
+| 如何编辑文件 | 40 |
+| 如何运行 JavaScript 应用 | 42 |
+| **视角** | **44** |
+
+## Web 应用是如何工作的
+
+Web 应用由许多组件组成，这些组件共同工作，将应用程序带到你的计算机或移动设备上。在开始开发 JavaScript 或 jQuery 应用之前，你应该对这些组件如何协同工作有一个基本的了解。
+
+## Web 应用的组件
+
+图 1-1 所示 Web 应用由客户端和 Web 服务器组成。客户端是使用 Web 应用的计算机、平板电脑和移动设备。它们通过被称为 Web 浏览器的程序访问网页。 Web 服务器存储着构成 Web 应用的文件。网络是一个允许客户端和服务器通信的系统。互联网是由许多较小网络组成的大型网络。在像图中这样的图表中，“云”代表连接客户端和服务器的网络或互联网。
+
+通常情况下，你不需要知道云是如何工作的。但你应该对正在发生什么有一个大致的了解。
+
+首先，网络可以按大小进行分类。局域网（LAN）是彼此靠近的计算机的小型网络，它们可以在短距离内通信。局域网中的计算机通常位于同一栋建筑或相邻建筑内。这种网络通常被称为内向网（intranet），它可以运行仅供员工使用的 Web 应用。
+
+相比之下，广域网（WAN）由多个连接的局域网组成。为了将信息从一个客户端传递到另一个客户端，路由器决定哪个网络离目的地最近，并通过该网络发送信息。WAN 可以由一家公司私有，也可以由多家公司共享。
+
+互联网服务提供商（ISP）是拥有连接到互联网的 WAN 的公司。ISP 向需要连接互联网的公司租用网络访问权限。
+
+![](img/fb3dabc43193711c2307f942481ad30c_20_0.png)
+
+### 描述
+
+- Web 应用由客户端、Web 服务器和网络组成。
+- 客户端使用被称为 Web 浏览器的程序从 Web 服务器请求网页。今天，客户端可以是计算机、像 iPhone 这样的手机或平板电脑。
+- Web 服务器返回页面。
+- 网络连接客户端和 Web 服务器。
+- 内向网是彼此靠近的局域网（LAN）。
+- 互联网是由许多广域网（WAN）组成的大型网络。
+- 互联网服务提供商（ISP）拥有连接到互联网的 WAN。
+
+图 1-1 Web 应用的组件
+
+## 静态网页是如何被处理的
+
+静态网页是每次请求时都不会变化的 HTML 文档。这种类型的网页直接从 Web 服务器发送到浏览器。你可以通过查看扩展名来识别静态页面。
+
+图 1-2 展示了 Web 服务器是如何处理请求的。这个过程从客户端请求网页开始。在任何情况下，浏览器构建请求并使用超文本传输协议（HTTP）发送，让 Web 服务器知道请求哪个文件。
+
+当 Web 服务器接收请求时，它从磁盘驱动器检索文件。该文件包含页面的 HTML（超文本标记语言）。然后，Web 服务器将其作为 HTTP 响应的一部分返回给浏览器。
+
+当浏览器接收 HTTP 响应时，它将 HTML 渲染（翻译）为浏览器显示的网页。然后，用户就可以查看内容。如果用户通过点击链接或在浏览器地址栏输入另一个网址来请求另一个页面，过程将重新开始。
+
+图 1-2 静态网页的处理
+
+### http://www.modulemedia.com/ourwork/index.html 静态网页
+
+![](img/fb3dabc43193711c2307f942481ad30c_22_0.png)
+
+### Web 服务器如何处理静态网页
+
+![](img/fb3dabc43193711c2307f942481ad30c_22_1.png)
+
+### 描述
+
+- HTML 标记语言是用于设计应用程序网页的语言。
+- 静态网页是存储在 Web 服务器上且不会变化的 HTML 文档。静态网页的文件名具有 `.html` 或 `.htm` 扩展名。
+- 当用户请求静态页面时，浏览器向 Web 服务器发送 HTTP 请求，其中包含了请求的文件名。
+- 当 Web 服务器接收请求时，它检索该页面的 HTML，并将其作为 HTTP 响应的一部分返回给浏览器。
+- 当浏览器接收 HTTP 响应时，它将 HTML 渲染为在浏览器中显示的网页。
+
+## 动态 Web 页是如何处理的
+
+类似于图 1-3 所示的**动态 Web 页**是在每次被请求时，由 Web 服务器上的程序或脚本动态创建的页面。该程序或脚本由`应用程序服务器`根据随 HTTP 请求发送的数据进行执行。在例例中，HTTP 请求标识了要显示的数据。然后，程序或脚本从`数据库服务器`中检索出该书籍的图像和数据。
+
+图中的图显示了 Web 服务器如何处理动态 Web 页。该过程始于用户在 Web 浏览器中请求页面。为此，用户可以在浏览器的地址栏中输入页面的 URL，点击指定要加载页面的链接，或者点击包含动态页面应处理的表单的按钮。
+
+在每种，Web 浏览器都会构建 HTTP 请求并发送到 Web 服务器。该请求包含了处理所需的任何内容。例如，如果用户在表单中输入了数据，这些数据将包含在 HTTP 请求中。
+
+当 Web 服务器接收到 HTTP 请求时，服务器会检查 Web 页文件的扩展名，以识别应该处理请求的`应用程序服务器`。然后，Web 服务器将请求转发到处理该类型 Web 页面的`应用程序服务器`。
+
+接下来，`应用程序服务器`从硬盘中检索相应的程序或脚本。它还会加载用户提交的任何数据。然后，它执行该脚本。随着脚本的执行，它生成 Web 页的 HTML。如果有必要，脚本将从`数据库服务器`请求数据并将该数据作为其正在生成的 Web 页的一部分。在`应用程序服务器`上进行的处理被称为*服务器端处理*。
+
+脚本执行完成后，`应用程序服务器`将动态生成的 HTML 发回 Web 服务器。然后，Web 服务器通过 HTTP 响应将 HTML 发回给浏览器。
+
+当 Web 浏览器接收到 HTTP 响应时，它会渲染 HTML 并显示 Web 页。然而，此时 Web 浏览器无法判断 HTTP 响应中的 HTML 是用于静态页面还是动态页面。它只是直接渲染 HTML。
+
+当页面显示时，用户就可以查看内容。然后，当用户请求另一个页面时，该过程将重新开始。从用户请求 Web 页开始，到服务器向客户端发送响应结束的过程被称为*往返*（round trip）。
+
+### amazon.com 上的动态 Web 页
+
+![](img/fb3dabc43193711c2307f942481ad30c_24_0.png)
+
+### Web 服务器如何处理动态 Web 页
+
+![](img/fb3dabc43193711c2307f942481ad30c_24_1.png)
+
+### 描述
+
+- 动态 Web 页是由运行在服务器上的程序或脚本生成的页面。
+- 当 Web 服务器接收到动态 Web 页的请求时，它会查找请求的扩展名，以找到应该由哪个`应用程序服务器`处理请求。
+- 当`应用程序服务器`接收到请求时，它运行指定的脚本。通常，该脚本使用从 Web 浏览器获取的数据从`数据库服务器`获取适当的数据。该脚本还可以将接收的数据存储在数据库中。
+- 当`应用程序服务器`完成数据处理后，它生成 Web 页的 HTML 并将其返回给 Web 服务器。然后，Web 服务器将 HTML 作为 HTTP 响应的一部分返回给 Web 浏览器。
+
+图 1-3 动态 Web 页是如何处理的
+
+© 2012, Mike Murach and Associates, Inc. 授权给 Michael Hotham.
+
+## JavaScript 和 jQuery 如何用于客户端处理
+
+与处理动态 Web 页的服务器端处理不同，JavaScript 是一种提供*客户端处理*的*脚本语言*。在图 1-4 的 Web 页中，JavaScript 被用于在不使用服务器端处理的情况下更改显示的图像。
+
+为了实现这一功能，所有所需的图像在请求页面时都会加载到浏览器中。然后，如果用户点击衬衫下方的颜色切换器之一，图像就会更改为正确颜色的图像。这被称为*图像切换*（image swap）。同样，如果用户将鼠标移动到衬衫上，图像会被该衬衫的特写图像替换。这被称为*图像悬停*（image rollover）。
+
+图中的图显示了 JavaScript 处理是如何工作的。当浏览器请求 Web 页时，Web 服务器将 HTML 和相关的 JavaScript 返回给浏览器。然后，JavaScript 代码在 Web 浏览器的`JavaScript 引擎`中执行。这减轻了服务器的处理负担，并使应用程序运行更快。通常情况下，JavaScript 会与动态 Web 页配合使用，但也常用于静态页面。
+
+除了图像切换和悬停，JavaScript 还有许多其他用途。例如，另一个常见用途是在用户输入 HTML 表单的数据发送到服务器处理之前，对这些输入的数据进行验证。这减少了不必要的服务器往返。JavaScript 的其他常见用途是运行幻灯片轮播，以及在标签页或折风琴中提供数据。
+
+jQuery 在此图中处于什么位置？jQuery 实际上是一个 JavaScript 库，这意味着它就是 JavaScript。如今，jQuery 使开发许多常见的 JavaScript 应用程序变得更容易，它是最流行的 JavaScript 库。这就是为什么这本书的最后四个章节专门用于教你如何充分利用 jQuery。
+
+### amazon.com 上的动态 Web 页 - 图像切换和悬停
+
+![](img/fb3dabc43193711c2307f942481ad30c_24_0.png)
+
+### jQuery 如何融入此图中
+
+![](img/fb3dabc43193711c2307f942481ad30c_24_1.png)
+
+### JavaScript 的许多用途
+
+- 数据验证
+- 图像切换和悬停
+- 幻灯片
+
+*JavaScript 是一种提供客户端处理的脚本语言。*
+
+*jQuery 是一个让开发许多常见的 JavaScript 应用程序的库。*
+
+图 1-4 JavaScript 和 jQuery 如何用于客户端处理
+
+## JavaScript 的组成部分
+
+当浏览器请求 Web 页时，Web 服务器将 HTML 和相关的 JavaScript 返回给浏览器。然后，JavaScript 代码在 Web 浏览器的`JavaScript 引擎`中执行。这减轻了服务器的处理负担，并使应用程序运行更快。通常，JavaScript 会与动态 Web 页配合使用。
+
+## 邮件应用程序的工作原理
+
+图 1-5 展示了邮件列表的用户界面。它要求用户输入三个信息并点击加入按钮。文本框右侧的星号表示这些输入是必填的。
+
+当用户点击按钮时，JavaScript 会检查输入是否有效。如果有效，将发送到服务器进行服务器端处理。如果无效，则会显示消息让用户修正输入。这是一个常用的 JavaScript 应用，在输入无效时节省了往服务器。
+
+## HTML
+
+超文本标记语言（HTML）用于定义页面的内容和结构。在图 1-5 中，你可以看到邮件应用程序使用的 HTML。通常情况下，本书假设你已经熟悉 HTML，但有几点需要注意。
+
+首先，注意每个文档都以一个 DOCTYPE 声明开头。这是你在 HTML5 中使用的唯一声明，且你必须按照所示方式编写。如果你还没有使用 HTML5，此声明比早期版本的 HTML 声明要简单得多。在书中，所有的应用程序都使用 HTML5。
+
+其次，在 HTML 文档的头部，你可以看到一个 meta 元素，它指定 UTF-8 是页面字符编码。你还可以看到一个 link 元素，它指定了用于格式化此 HTML 的 CSS 文件。你可以看到一个 script 元素，它指定了应该用于处理用户输入的 JavaScript 文件。
+
+第三，在 HTML 的主体部分，你可以看到一个 section 元素的使用。这是我们在书中贯使用的 HTML5 元素之一。在这个 section 内部，你可以看到 h1、form、input 和 span 元素的使用。
+
+### 应用 CSS 后在浏览器中显示的 HTML 文件
+
+![](img/fb3dabc43193711c2307f942481ad30c_28_0.png)
+
+### 名为 index.html 的 HTML 文件代码
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>加入邮件列表</title>
+  <link rel="stylesheet" href="email_list.css">
+  <script src="email_list.js"></script>
+</head>
+<body>
+  <section>
+    <h1>请加入我们的邮件列表</h1>
+    <form id="email_form" name="email_form" action="join.html" method="get">
+      <label for="email_address1">邮箱地址:</label>
+      <input type="text" id="email_address1" name="email_address1">
+      <span id="email_address1_error"></span><br>
+      <label for="email_address2">重新输入邮箱地址:</label>
+      <input type="text" id="email_address2" name="email_address2">
+      <span id="email_address2_error"></span><br>
+      <label for="first_name">姓</label>
+      <input type="text" id="first_name" name="first_name">
+      <span id="first_name_error"></span><br>
+      <label>&nbsp;</label>
+      <input type="button" id="join_list" value="加入我们的列表">
+    </form>
+  </section>
+</body>
+</html>
+```
+
+### 说明
+
+- HTML（超文本标记语言）用于定义 Web 页的结构和内容。
+
+图 1-5 网页的 HTML 代码
+
+© 2012, Mike Murach and Associates, Inc. Licensed to Michael Hotham
+
+在实践中，你经常会听到元素被称为“标签”（tags），因此可以将它们视为同义词。在本书中，我们偶尔使用“标签”一词，特别是在提到起始标签 `<h1>` 或闭合标签 `</h1>` 时。
+
+## CSS
+
+不久前，HTML 文档的编码方式使得 HTML 不仅定义了 Web 页的内容和结构，还定义了内容的格式。然而，这种结构与格式元素的混合使得编辑、维护和重新格式化 Web 页变得困难。
+
+今天，层叠样式表（CSS）允许你将格式与 Web 页的内容和结构分离。结果是，曾经通过 HTML 完成的格式现在应该通过 CSS 完成。
+
+在图 1-6 中，你可以看到用于格式化图 1-5 中 HTML 的 CSS。这里假设你已经熟悉了 CSS，但这里对 CSS 的作用有一个简要描述。
+
+在 `body` 元素的规则中，`font-family` 属性设置整个文档的字体，`margin` 属性将 body 在浏览器窗口中居中，`width` 属性将 body 的宽度设置为 650 像素，而 `border` 属性在 body 周围加上了边框。这是书中应用的典型 CSS，仅为了让它们看起来更好。
+
+同样，`h1`、`section`、`label` 和 `input` 元素的规则设置旨在让这些元素看起来更好。在这里，`h1` 元素的规则将字体颜色设置为蓝色。`section` 规则在 section 内容与右、下、左边框之间留了一些空间（padding）。
+
+接下来，浮动（floats）规则让它们向左浮动，文本框位于其右侧。该规则还设置了标签的宽度为 11em，并将标签的文本右对齐。然后，`input` 元素的规则设置了标签和文本框之间的左边距，并设置了下边距以便在每个标签和文本框之后留有空间。
+
+最后，`span` 元素的规则将文本颜色设置为红色。当 HTML 页面首次加载时，这些 span 元素仅包含星号（*）。但如果一个或多个输入无效，JavaScript 就会改变它们。
+
+### 应用 CSS 后在浏览器中显示的 Web 页
+
+![](img/fb3dabc43193711c2307f942481ad30c_30_0.png)
+
+### HTML 文件中应用 CSS 文件的链接元素
+
+```html
+<link rel="stylesheet" href="email_list.css">
+```
+
+### 名为 email_list.css 的 CSS 文件代码
+
+```css
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  margin: 0 auto;
+  width: 650px;
+  border: 3px solid blue;
+}
+h1 {
+  color: blue;
+}
+section {
+  padding: 0 2em;
+}
+label {
+  float: left;
+  width: 11em;
+  text-align: right;
+}
+input {
+  margin-left: 1em;
+  margin-bottom: .5em;
+}
+span {
+  color: red;
+}
+```
+
+### 说明
+
+- 层叠样式表（CSS）用于通过指定页面的字体、颜色、边框、间距和布局来控制 Web 页的显示。
+
+图 1-6 网页的 CSS
+
+## JavaScript
+
+图 1-7 显示了当 JavaScript 发现无效数据时，在浏览器中的外观。当用户点击“加入列表”按钮时，错误信息会显示在这些输入框的右侧。这意味着 JavaScript 实际上更改了 HTML 中的 span 元素。
+
+当 HTML 页面首次加载时，这些 span 元素仅包含星号（*）。但如果一个或多个输入无效，JavaScript 就会改变它们。JavaScript 实际上更改了 DOM（文档对象模型）。当 JavaScript 更改 HTML 时，这些更改会立即应用到浏览器显示上。由于你将在后续章节中学习这些代码的工作，你现在可能想跳过它。但如果你有编程经验，值得快速看一下，以防万一。（注：提供的 OCR 文本在第 31-32 页存在严重混乱/重复，我已经修复了请求的结构。）
+
+### 使用 JavaScript 进行验证的浏览器 Web 页
+
+![](img/fb3dabc43193711c2307f942481ad30c_32_0.png)
+
+### HTML 文件中包含 JavaScript 文件的脚本元素
+
+### 名为 email_list.js 的 JavaScript 文件代码
+
+```javascript
+var $ = function (id) {
+  return document.getElementById(id);
+}
+
+var joinList = function () {
+  var email_address1 = $("email_address1").value;
+  var email_address2 = $("email_address2").value;
+  var isValid = true;
+
+  if (email_address1 == "") {
+    $("email_address1error").firstChild.nodeValue =
+      "this field is required.";
+    isValid = false;
+  } else ($("email_address1error").firstChild.nodeValue = "");
+
+  if (email_address2 == "") {
+    $("email_address2error").firstChild.nodeValue =
+      "This entry must equal first entry.";
+    isValid = false;
+  } else ($("email_address2error").firstChild.nodeValue = "");
+
+  if ($("first_name") == "") {
+    $("first_nameerror").firstChild.nodeValue =
+      "this field is required.";
+    isValid = false;
+  } else ($("first_nameerror").firstChild.nodeValue = "");
+
+  if (isValid) {
+    // 如果所有输入都有效，则提交表单
+    $("email_form").submit();
+  }
+}
+
+window.onload = function () {
+  $("join_list").onclick = joinList;
+  $("email_address1").focus();
+}
+```
+
+图 1-7 网页的 JavaScript
+
+## 本书所需的 HTML 和 CSS 技能
+
+尽管本书假设你已经熟悉 HTML 和 CSS，但接下来的六个主题将对你学习本书时所需的 HTML 和 CSS 技能进行快速回顾。如果你还没有掌握这些技能，且无法从随后的主题中学会，我们建议你在学习 JavaScript 期间使用《PHP教程》（Murach's HTML5 and CSS3）作为参考。
+
+## 如何使用 HTML5 语义元素
+
+本书中的所有应用程序在合适的地方都会使用 HTML5 语义元素。如果你还没有在使用它们，或者至少不熟悉它们，图 1-8 总结了你需要了解的知识。
+
+特别是，本书中的应用程序使用了 `section`、`aside` 和 `nav` 元素。这使得将 CSS 应用于这些元素变得更容易，因为你不需要编写 CSS 使用的 `id` 属性。相反，你可以直接将 CSS 应用到元素本身。
+
+然而，请注意，旧版浏览器无法识别 HTML5 语义元素，这意味着你将无法使用 CSS 为它们应用格式。因此，如果你想让 CSS 在旧版浏览器中正常工作，你需要在 HTML 文档的 `head` 部分编写一段脚本，提供一个 JavaScript 填充（也称为 shim）。该 shim 使用 JavaScript 将 HTML5 元素放入 DOM 中，从而让浏览器感知到它们。
+
+图中的 `script` 元素是你可以在所有 HTML 页面中使用的。它从一个 Google 网站获取 shim 并将其加载到浏览器中。为了节省空间和避免重复，我们并不总是本书的应用程序中显示这个 `script` 元素，但在所有下载的应用程序中都使用了它。
+
+© 2012, Mike Murach and Associates, Inc. 授权给 Michael Hotham。
+
+### 主要 HTML5 语义元素
+
+| 元素 | 内容 |
+| --- | --- |
+| header | 页面的页头。 |
+| section | 文档中不指示内容类型的通用章节。 |
+| article | 文章中独立的组合内容。 |
+| nav | 页面中包含指向其他页面或占位符链接的区域。 |
+| aside | 页面面的部分（如侧边栏），与相邻内容相关。 |
+| figure | 被视为插图的图像、表格或其他组件。 |
+| footer | 页面的页脚。 |
+
+### JavaScript shim 让其他浏览器感知 HTML5 元素
+
+```html
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+```
+
+### 使用 header、section 和 footer 元素构建的页面
+
+```html
+<body>
+  <header>
+    <h1>San Joaquin Valley Town Hall</h1>
+  </header>
+  <section>
+    <p>欢迎来到圣华基亚谷市政厅。我们本季有一些非常迷人的演讲者！</p>
+  </section>
+  <footer>
+    <p>&copy; San Joaquin Valley Town Hall.</p>
+  </footer>
+</body>
+```
+
+### 在网络浏览器中显示的页面
+
+![](img/fb3dabc43193711c2307f942481ad30c_34_0.png)
+
+### 描述
+
+- HTML5 提供了新的语义元素，你应该使用这些元素来构建网页内容。使用这些元素可以被称为 HTML 语义化。
+- 图中所有的 HTML5 元素都受到了现代浏览器的支持。如果你在 HTML 文档的 `head` 中包含上述的 JavaScript shim，它们在旧版浏览器上也可以工作。
+- 除了 HTML5 语义元素外，本书还使用了标准的 HTML 元素：标题（h1 和 h2 元素）、图像（`img`）、链接（`<a>` 元素）和段落（`<p>` 元素）。
+- 如何使用 HTML5 语义元素
+
+图 1-8
+
+## 如何使用 div 和 span 元素
+
+如果你使用 HTML 有了一段时间，你一定熟悉 `div` 元素。传统上，它被用于将 HTML 文档划分为由 `id` 属性标识的区域。然后，CSS 可以利用这些 `id` 为区域应用格式。
+
+但现在有了 HTML5，`div` 元素不应再被用于构建文档结构。相反，只有在 HTML5 语义元素不合适的情况下才使用它们。
+
+但请注意，`div` 元素经常用于 JavaScript 应用程序中。例如，如果一个 `section` 元素包含三个 `h2` 元素，每个元素后面跟着一个 `div` 元素，那么当在其之前的标题被点击时，可以使用 JavaScript 显示或隐藏 `div` 元素。这种结构在图 1-9 的第一个示例所示，你将在第 6 章中看到它是如何工作的。
+
+同样，`span` 元素在历史上一直被用于标识由 CSS 格式化的文本位置。但按照今天的标准，最好使用指示元素内容的元素，例如 `cite`、`code` 和 `<q>` 元素。
+
+但在这里，`span` 元素经常用于 JavaScript 应用程序中，如图中的第二个示例所示。事实上，你刚刚在邮件列表应用程序中看到了这一点。在那个应用程序中，JavaScript 将错误消息放在相应的 `span` 元素中。
+
+### div 和 span 元素
+
+| 元素 | 描述 |
+|---|---|
+| div | 一种块级元素，为其他元素提供容器。 |
+| span | 一种内联元素，允许你标识可以使用 CSS 格式化的文本。 |
+
+### JavaScript 应用程序 HTML 中的 div元素
+
+```html
+<section id="faqs">
+  <h1>jQuery FAQs</h1>
+  <h2>What is jQuery?</h2>
+  <div>
+    // contents
+  </div>
+  <h2>Why is jquery becoming so popular?</h2>
+  <div>
+    // contents
+  </div>
+  <h2>Which is harder to learn: JavaScript or jQuery?</h2>
+  </div>
+</section>
+```
+
+### JavaScript 应用程序 HTML 中的 span 元素
+
+```html
+<label for="email_address">Email Address:</label>
+<input type="text" id="email_address" name="email_address">
+<span id="email_address_error">*</span>
+<label for="email_address2">Enter Email Address:</label>
+<input type="text" id="email_address2" name="email_address2">
+<span id="email_address2_error">*</span>
+<label for="first_name">First Name:</label>
+<input type="text" id="first_name" name="first_name">
+<span id="first_name_error">*</span>
+```
+
+### 描述
+
+- 在 HTML5 之前，`div` 元素用于定义文档的结构。这些 `div` 元素的 `id` 随后被 CSS 用于应用。
+- 现在，HTML5 正在取代 `div` 元素。这使得页面结构更加直观。然而，你仍然可以使用 `div` 元素来定义某些 JavaScript 应用程序的代码块。
+- 在 HTML5 之前，`span` 元素用于标识可以应用格式的文本部分。今天，更好的做法是使用特定的元素来标识内容。然而，你仍然会在某些 JavaScript 应用程序（如图 1-5 到 7 中的应用程序）中使用 `span` 元素。
+
+图 1-9 如何使用 div 和 span 元素
+
+## 如何使用基础 HTML 属性
+
+图 1-10 展示了 JavaScript 应用程序常用的 HTML 属性。你应该已经熟悉标识单个 HTML 元素的 `id` 属性以及可以应用于多个 HTML 元素的 `class` 属性。你还应该熟悉用于为元素提供工具提示的 `title` 属性，以及将标签与输入元素相关的 `for` 属性。
+
+当你使用 JavaScript 时，你经常使用 `id` 属性来获取或设置输入元素中的数据。你经常使用 `name` 属性，以便服务器端代码可以访问提交的数据。你有时会添加或删除 `class` 属性来更改元素的格式。你有时会使用 `title` 属性提供与元素相关的文本。
+
+在实践中，你通常为元素的 `id` 和 `name` 属性使用相同的值。例如，图中的示例使用“email”作为 `id` 和 `name` 属性的值。这有助于更容易记住属性值。
+
+### 基础 HTML 属性
+
+| 属性 | 说明 |
+| --- | --- |
+| id | 为元素指定一个唯一的标识符，可以通过 CSS 引用。 |
+| class | 为元素指定一个或多个类名，可以通过 CSS 引用，且同一个名称可以用于多个元素。如需编写多个类，请用空格分隔类名。 |
+| title | 指定元素的附加信息。对于某些元素，当用户鼠标悬停在元素上时，标题会出现在工具提示中。 |
+| for | 在 label 元素中，此属性指定它所依属的控件的 id。 |
+| name | 为元素指定一个唯一的名称，通常用于服务器端代码，也可以供 JavaScript 代码使用。 |
+
+### 使用这些属性的 HTML
+
+```html
+<h1>San Joaquin Valley Town Hall</h1>
+<h2 class="first_h2">Welcome to San Joaquin Valley Town Hall.</h2>
+<p>Please enter your e-mail address to subscribe to our newsletter.</p>
+<form id="email-form" name="email_form" action="join.html" method="get">
+<label for="email">E-Mail:</label>
+<input type="text" id="email" name="email" title="Enter e-mail address here.">
+<input type="button" value="Subscribe">
+</form>
+```
+
+### 浏览器中为文本框显示工具提示的 HTML
+
+![](img/fb3dabc43193711c2307f942481ad30c_38_0.png)
+
+### 说明
+
+- 属性由属性名、等号以及用单引号或双引号括的属性值组成。
+- id 和 class 属性通常用于应用 CSS 格式。
+- name 属性通常用于服务器端代码访问其产生的数据，但该属性也可供页面的 JavaScript 代码使用。
+- label 元素中的属性用于识别它所依属的控件。
+
+图 1-10 如何使用基础 HTML 属性
+
+## 如何为 HTML 页面提供 CSS 样式
+
+图 1-11 显示了书中应用程序中为 HTML 页面包含的两种方式。首先，你可以在 HTML 文档的 head 部分编写一个 link 元素，指定一个包含页面 CSS 的文件。这被称为*外部样式表*（external style sheet），也是本书中大多数应用程序使用的方法。
+
+其次，你可以在 head 部分编写一个 style 元素，其中包含页面的 CSS。这可以被称为*嵌入式样式*（embedded styles）。使用嵌入式样式的用处是，开发页面时你不需要在 HTML 和 CSS 文件之间来回切换。总的来说，使用外部样式表更好，因为这便于在多个页面中使用。
+
+在某些情况下，你可能希望对单个页面使用两个或多个外部样式表。你甚至可能在一个页面同时使用外部样式表和嵌入式样式。在这种情况下，样式将从第一个外部样式表到最后一个依次应用，然后应用嵌入式样式。
+
+如果你想为打印页面提供外部样式表，可以在 link 元素中编写 `media` 属性。这样当用户打印页面时，该样式表中的样式将覆盖屏幕样式。这允许你为打印页面提供正确的格式。
+
+### 提供样式的两种方法
+
+通过在 head 部分编写 link 元素使用外部样式表
+
+```html
+<link rel="stylesheet" href="styles/main.css">
+```
+
+在 head 部分嵌入样式
+
+```html
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+  }
+  h1 { font-size: 250%; }
+</style>
+```
+
+样式应用的顺序：
+
+1. 来自外部样式表的样式
+2. 嵌入式样式
+
+### 包含两个外部样式表的 head 元素
+
+```html
+<head>
+  <title>San Joaquin Valley Hall</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/speaker.css">
+</head>
+```
+
+样式应用的顺序：从第一个外部样式表到最后一个
+
+### 如何指定外部样式的媒体类型
+
+```html
+<link rel="stylesheet" href="../styles/print.css" media="print">
+```
+
+### 说明
+
+- 当使用外部样式表时，将内容（HTML）与格式（CSS）分离。这使得在两个或多个页面使用相同样式变得简单。
+- 如果使用嵌入式样式，在再次使用之前必须将样式复制到其他文档中。
+- 如果同一个元素应用了针对同一属性的多个规则，最后一个规则将覆盖之前的规则。
+- 当为外部 CSS 文件指定相对 URL 时，该 URL 是相对于当前文件的。
+- 你可以使用 link 元素的 `media` 属性来指定样式适用的媒体类型。这允许你为不同的媒体使用不同的样式表。
+- 由于 `media` 属性的默认值为 screen（屏幕），因此普通页面不需要使用此属性。然而，此属性通常用于识别用于格式化打印页样式表。
+
+图 1-11 提供 CSS 样式的两种方法
+
+## 如何编写选择器
+
+图 1-12 显示了这些选择器是如何工作的。
+
+## 如何编写 CSS 规则集
+
+图 1-13 展示了本章之前介绍的邮件列表（Email List）应用的 CSS。这是书中应用程序 CSS 的典型示例。由于本书的重点是 JavaScript 和 jQuery 而不是 CSS，因此 CSS 通常是有限的。例如，此示例中的 CSS 不需要 `id` 或类名选择器。
+
+为了确保我们使用的术语一致，此 CSS 包含七个规则集。每个规则集由一个选择器、一组大括号 { } 以及括号内的一个或多个规则组成。此外，每条规则由一个属性名、一个冒号、规则的一个或多个值以及一个结尾的分号组成。
+
+示例中的第一个规则集适用于七个 HTML5 语义元素。为了兼容旧版浏览器，这是必须的。它告诉这些浏览器语义元素应该被视为块级元素（block elements）。如果没有这组规则，旧版浏览器会将这些元素视为内联元素（inline elements），这并不是你想要的。
+
+虽然这条规则不会出现在书中应用程序的 CSS 中，但它包含在可下载的应用程序中。因此，这些应用程序应该可以在旧版浏览器上运行。
+
+除此之外，本书将解释任何与应用程序 JavaScript 相关的 CSS。所以现在，如果你知道如何编写规则集，就可以继续学习了。
+
+### 本书中典型应用程序的 CSS 文件
+
+```css
+/* 为了让 HTML5 语义元素可以格式化的 CSS 解决方案 */
+* article, aside, figure, footer, header, nav, section {
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  margin: 0 auto;
+  width: 650px;
+  border: 3px solid blue;
+}
+h1 {
+  color: blue;
+}
+section {
+  padding: 0 2em;
+}
+label {
+  float: left;
+  width: 1em;
+  text-align: right;
+}
+input {
+  margin-left: 1em;
+  margin-bottom: .5em;
+}
+span {
+  color: red;
+}
+```
+
+### 描述
+
+- 因为本书的重点是 JavaScript 和 jQuery 而不是 CSS，书中使用的 CSS 通常很简单。我们只应用足够的 CSS 来让每个界面看起来还可以并运行正常。
+- 事实上，书中的大多数应用程序你不需要理解 CSS，因此甚至不会显示它。每当 CSS 对理解 JavaScript 应用程序至关重要时，都会进行详细解释。
+- 至少，你应该知道 HTML 文档的 CSS 由一个或多个规则集组成。每个这些规则集都以规则集的选择器开头，后面跟着一组大括号 { }。括号内包含一个或多个规则。
+- 你还应该知道，每条 CSS 规则由一个属性名、一个冒号、属性的一个或多个值和一个分号组成。
+
+## 如何测试 JavaScript 应用程序
+
+接下来，你将学习如何测试 JavaScript 应用程序。为此，你需要运行使用 JavaScript 的 HTML 页面。
+
+## 如何运行 JavaScript 应用程序
+
+当你开发 JavaScript 应用程序时，通常是在你自己的电脑或公司的服务器上工作。然后，为了运行应用程序，你可以使用图 1-14 所示的四种方法之一。四种方法中，最简单是从用于开发 HTML、CSS 和 JavaScript 文件的 IDE 直接运行 HTML 页面。你稍后会学习更多相关内容。
+
+在第一个列表中四种方法的第一种，“文件→打开”（File→Open）意味着从菜单栏下拉文件（File）并选择打开（Open）命令。同样，“文件→新建→Web 项目”（File→New→Web Project）意味着下拉文件（File），选择新建（New）命令，然后选择 Web 项目（Web Project）命令。这种表示贯穿本书。
+
+应用程序上传到互联网服务器后，你可以可以使用第二组方法运行应用程序。第一种方法是在浏览器地址栏中输入统一资源定位符（URL）。第二种方法是点击网页上请求另一个页面的链接。如果应用程序运行在你的电脑或服务器上，你也可以使用这种方法。
+
+如图中的图所示，互联网页面的 URL 由四个部分组成。在这种情况下，*协议*（protocol）是 HTTP。如果你省略了协议，浏览器将使用 HTTP 作为默认值。
+
+第二个部分是*域名*（domain name），用于标识请求将发送到的 Web 服务器。网络浏览器使用此名称查找该域名 Web 服务器的地址。虽然你不能省略域名，但通常可以省略域名中的“www”。
+
+第三个部分是*路径*（path），即文件在服务器上的所在地。路径列出了包含该文件的文件夹。使用正斜杠分隔路径中的名称，并在路径开头表示服务器的顶层文件夹。在示例中，路径为“ourwork/”。
+
+最后一个部分是文件名。在示例中，文件名为 index.html。如果你省略了文件名，Web 服务器将在路径中搜索默认文档。根据 Web 服务器的不同，该文件将被命名为 index、default.htm 或这两者的某种变体。
+
+### 运行应用程序的四种方法
+
+- 因为本书的重点是 JavaScript 和 jQuery 而不是 CSS，书中使用的 CSS 通常很简单。我们只应用足够的 CSS 来让每个界面看起来还可以并运行正常。
+- 事实上，书中的大多数应用程序你不需要理解 CSS，因此甚至不会显示它。每当 CSS 对理解 JavaScript 应用程序至关重要时，都会进行详细解释。
+- 至少，你应该知道 HTML 文档的 CSS 由一个或多个规则集组成。每个这些规则集都以规则集的选择器开头，后面跟着一组大括号 { }。括号内包含一个或多个规则。
+- 你还应该知道，每条 CSS 规则由一个属性名、一个冒号、属性的一个或多个值和一个分号组成。
+
+### 运行应用程序的两种方法
+
+- 因为本书的重点是 JavaScript 和 jQuery 而不是 CSS，书中使用的 CSS 通常很简单。我们只应用足够的 CSS 来让每个界面看起来还可以并运行正常。
+- 事实上，书中的大多数应用程序你不需要理解 CSS，因此甚至不会显示它。每当 CSS 对理解 JavaScript 应用程序至关重要时，都会进行详细解释。
+- 至少，你应该知道 HTML 文档的 CSS 由一个或多个规则集组成。每个这些规则集都以规则集的选择器开头，后面跟着一组大括号 { }。括号内包含一个或多个规则。
+- 你还应该知道，每条 CSS 规则由一个属性名、一个冒号、属性的一个或多个值和一个分号组成。
+
+### URL 的组成部分
+
+| 组件 | 描述 |
+| :--- | :--- |
+| 协议 | 使用的协议（例如 HTTP）。如果省略，浏览器将使用 HTTP 作为默认值。 |
+| 域名 | 标识 Web 服务器。用于查找地址。“www”通常可以省略。 |
+| 路径 | 文件在服务器上的所在地。列出文件夹。 |
+| 文件名 | 文件的名称（例如 index.html）。如果省略，服务器将默认文档。 |
+
+### 如果省略 URL 的部分会怎样
+
+- 因为本书的重点是 JavaScript 和 jQuery 而不是 CSS，书中使用的 CSS 通常很简单。我们只应用足够的 CSS 来让每个界面看起来还可以并运行正常。
+- 事实上，书中的大多数应用程序你不需要理解 CSS，因此甚至不会显示它。每当 CSS 对理解 JavaScript 应用程序至关重要时，都会进行详细解释。
+- 至少，你应该知道 HTML 文档的 CSS 由一个或多个规则集组成。每个这些规则集都以规则集的选择器开头，后面跟着一组大括号 { }。括号内包含一个或多个规则。
+- 你还应该知道，每条 CSS 规则由一个属性名、一个冒号、属性的一个或多个值和一个分号组成。
+
+## 如何确保跨兼容性
+
+如果你希望你的网站被尽可能多的访问访问，你需要确保你的网页与尽可能多的浏览器兼容。这被称为跨兼容性。这意味着你应该在许多浏览器上测试你的应用程序，包括图中总结的五种浏览器。
+
+| 浏览器 | 版本号 | HTML5 支持 |
+| :--- | :--- | :--- |
+| | | |
+
+图 1-14 如何运行 JavaScript 应用程序
+
+### 当前浏览器及其 HTML5 评分（满分 500 分）
+
+| 浏览器 | 版本 | HTML5 测试评分 |
+| :--- | :--- | :--- |
+| Google Chrome | 22 | 437 |
+| Opera | 12 | 385 |
+| Mozilla Firefox | 15 | 346 |
+| Apple Safari | 6 | 376 |
+| Internet Explorer | 9 | 138 |
+
+### 这些评分的来源网站
+
+`http://www.html5test.com`
+
+### 跨浏览器兼容性指南
+
+- 在所有主流浏览器上测试网页，包括这些浏览器仍在常用使用的所有旧版本。
+- 使用所有现代浏览器都支持的 HTML5 和 CSS3 特性，这些也是本书介绍的特性。但通过通变方案（workarounds），使得这些应用程序可以在旧版浏览器上运行。
+
+### 使用 HTML5 语义元素的两种技巧
+
+使用 JavaScript shiv 让旧版浏览器识别元素：
+
+`<script src="http://html5shiv.google.com/svn/trunk/html5.js"></script>`
+
+将块级元素设置为块级语义的 CSS 规则集：
+
+`article, aside, figure, caption, header, nav, section (display: block);`
+
+### 如何在旧浏览器中测试你的网页
+
+- 跨浏览器测试的问题在于，你无法在一个系统上安装所有的旧版浏览器。特别是，Windows 不允许你同时安装多个版本的 IE。
+- 解决方案是使用适合此类测试的程序或网站。要查找可用工具，可以搜索“browser testing software”或“cross browser testing”。
+
+### 说明
+
+- 如今，不同浏览器处理 HTML、CSS 和 JavaScript 的方式仍然存在差异。但作为开发者，你希望尽可能在不同的浏览器上运行网页。这被称为跨浏览器兼容性。
+- 使用 jQuery 的好处之一是它为 JavaScript 提供了跨浏览器兼容性。然而，HTML、CSS 和其他 JavaScript 仍然引起问题。
+- 在互联网上，Internet Explorer 给开发者带来的问题最多，因为它最不标准且没有提供自动更新。
+- 最终，所有浏览器都将支持 HTML5 和 CSS3，因此不再需要通变方案了。
+
+图 1-15 如何确保跨浏览器兼容性
+
+## 如何使用 Aptana 开发 JavaScript 应用程序
+
+由于 HTML、CSS 和 JavaScript 只是文本，你可以使用任何编辑器来创建 JavaScript 应用程序的文件文件。然而，更好的编辑器或集成开发环境（IDE）可以加速开发时间并减少编码错误。这就是为什么我们推荐 Aptana Studio 3 的原因。它是一个运行在 Windows、Mac OS 和 Linux 上的免费 IDE，可以极大提高你的工作效率。
+
+在本书的索引中，你可以学习如何安装 Aptana。你还可以学习如何在各个主题中使用 Aptana 的常用功能。如果你倾向于使用其他编辑器，当然可以跳过这些主题。但即便如此，你可能也想浏览这些主题，因为它们会让你对 IDE 应该能做什么有一个良好的了解。它们还可能鼓励你尝试 Aptana。
+
+## 如何创建一个项目
+
+在 Aptana 中，一个项目由完整 Web 应用所需的文件夹和文件组成。一旦创建了项目，处理其文件夹和文件、为项目创建新文件等就会变得更容易。
+
+要创建一个项目，请使用图 1-16 所示的过程。该过程的结果是你得到了一个命名的项目，从应用程序的顶层文件夹开始。然后，你可以使用下图中所示 App Explorer 窗口轻松访问应用程序的文件夹和文件。
+
+为了方便处理书中的应用程序，我们建议创建一个包含所有应用程序的 Aptana 项目。要做到这一点，你可以创建一个名为 jQuery Book Apps 的项目，该项目从图中所示的路径开始。执行此操作的最后一个对话框所示。
+
+### 创建 Aptana 项目的最后一个对话框
+
+![](img/fb3dabc43193711c2307f942481ad30c_50_0.png)
+
+包含所有书籍应用文件夹的文件夹：
+
+`:\murach\jquery\book_apps`
+
+### 如何创建一个项目
+
+- 使用 `File->New Web Project` 命令显示上方 New Web Project 对话框。或者，在 App Explorer 中点击 `Create Project` 按钮，在显示的对话框中选择 `Project`，并点击 `Next` 按钮显示 New Web Project 对话框。
+- 在 New Web Project 对话框中输入项目名称。接下来，取消勾选 `Default Location` 框，点击 `Browse` 按钮并选择项目的顶层文件夹。
+- 阅读出现的警告信息，以便意识到在 Aptana 中删除项目可能会同时删除硬盘上的项目。然后，点击 `Finish` 按钮。
+
+### 说明
+
+- 当为你开发和维护的 Web 应用程序设置项目时，Aptana 的效果最好。
+- 通常情况下，每个 Aptana *项目* 应该包含一个 Web 应用的文件夹和文件。但为了本书的目的，你可以为所有书籍应用设置一个项目，为所有练习设置一个项目，并为所有练习答案设置一个项目。
+
+图 1-16 在 Aptana 中创建项目
+
+## 如何打开或关闭 HTML、CSS 或 JavaScript 文件
+
+图 1-17 显示了如何打开或关闭 HTML、CSS 或 JavaScript 文件。在这里，App Explorer 位于左侧。如果你创建了项目，可以使用 App Explorer 顶部的下拉列表进行切换。
+
+当你打开一个文件，它会在新标签页中显示。现在你同时打开了多个文件。这使得切换变得容易。
+
+在 Aptana 中，打开文件只需双击它。
+
+当你打开一个文件时，文件会在新标签页中显示。这也使得在 HTML、CSS 和 JavaScript 文件之间切换变得容易。
+
+### 如何打开项目中的文件
+
+- 使用 Aptana App Explorer 中的下拉列表选择项目。
+- 然后，在 App Explorer 中找到文件并双击它。
+
+### 打开不在项目中的 HTML 文件的两种方法
+
+- 使用 Project Explorer 找到文件并双击它。
+- 使用 `File->Open file` 命令。
+
+### 如何关闭一个或多个文件
+
+- 要关闭一个文件，点击该文件标签上的 `X`。
+- 要关闭除之外的所有文件，右键点击不想关闭的标签并选择 `Close Others`。
+- 要关闭所有文件，点击任何标签并选择 `Close All`。
+
+### 说明
+
+- 当打开一个文件时，文件会在新标签页中显示。
+
+## 如何更改语法高亮颜色
+
+在 Aptana 中打开文件时，你可能想做的第一件事就是更改用于 HTML、CSS 和 JavaScript 语法高亮的颜色。这是因为默认设置是深色背景上的浅色字体，可能难以阅读。
+
+要更改颜色，可以使用图 1-18 所示的步骤。在本书中，我们使用 Dreamweaver 主题，但你可以尝试其他主题，直到找到你喜欢的。如果你在选择主题后点击 Apply（应用）按钮，你可以在对话框背后的窗口中看到颜色。然后，如果你喜欢这些颜色，可以点击 OK（确定）按钮关闭对话框。
+
+### Aptana 的主题主题对话框
+
+![](img/fb3dabc43193711c2307f942481ad30c_54_0.png)
+
+### 步骤
+
+- 使用 `Window->Preferences`（窗口->选项）命令打开 Preferences（首选项）对话框。
+- 点击 Aptana Studio，然后点击 Themes（主题）显示主题对话框。
+- 从下拉列表中选择一个主题。
+
+### 描述
+
+- Aptana 用不同的颜色显示 JavaScript 语句的不同部分，以便于解释这些语句。
+- 如果你不喜欢使用的颜色，可以使用上述步骤更改颜色。
+
+图 1-18 如何在 Aptana 中更改语法高亮颜色
+
+## 如何编辑文件
+
+图 1-19 显示了如何使用 Aptana 编辑 JavaScript 文件，但 HTML 和 CSS 文件的编辑方法也是相同的。当你打开带有 `.html`、`.css` 或 `.js` 扩展的文件时，Aptana 知道你正在处理什么类型的文件，因此可以使用颜色来高亮语法组件。好消息是，颜色编码也用于 HTML 文档中 `<style>` 元素内的 CSS 或 HTML 文档中 `<script>` 元素内的 JavaScript。
+
+当你输入新行代码时，自动补全功能会列出以你输入的字母开头的单词。这种列表如图所示。在这里，列表显示了输入字母 t 之后的后的 JavaScript 选项。然后，你可以选择一个单词并按 Tab 键插入代码中。
+
+这同样适用于 HTML 和 CSS 条目。例如，如果你在 HTML 文档中输入 `<s`，Aptana 会列出元素列表。然后，如果你选择其中一个元素，Aptana 会完成起始标签并添加结束标签。当你开始输入属性时，此功能同样有效。
+
+同样，如果你输入 `#` 来开始 CSS 规则，Aptana 会列出可以在 id 选择器中使用的 id 列表。如果你输入 `b` 来开始规则，Aptana 会列出以 b 开头的属性列表。如果你开始为属性值输入条目，Aptana 将会列出一个一个值列表。简而言之，这是一个强大的功能，可以帮助你避免许多输入错误。
+
+此外，Aptana 还提供了错误标记和警告标记，帮助你发现并纠正错误。在图中，你可以看到两个错误标记。然后，将鼠标悬停在标记上即可获取错误或警告标记的描述。
+
+### 带有 JavaScript 条目自动补全列表的 Aptana
+
+![](img/fb3dabc43193711c2307f942481ad30c_56_0.png)
+
+### 描述
+
+- 双击标签页以展开内容并如上所示隐藏 Project（项目管理器）和 App Explorers（应用资源管理器）。要恢复项目和应用资源管理器，请点击编辑窗口左侧垂直栏顶部的 Restore（恢复）图标。
+- 自动补全功能会显示与你输入的内容开头的元素列表。要插入这些术语之一，请双击它或使用方向键高亮它并按回键。
+- 错误标记是行开头一个包含白色 X 的红色圆圈。警告标记是包含感叹号的黄色三角形。标记会在输入和编辑代码时显示。
+- 要获取错误或警告标记的描述，将鼠标悬停在标记上。
+
+图 1-19 如何在 Aptana 中编辑文件
+
+## 如何运行 JavaScript 应用程序
+
+图 1-20 显示了如何从 Aptana 运行 JavaScript 应用程序。要在默认浏览器中运行应用程序的 HTML 文件，首先选择打开文件的标签页。然后点击 Run（运行）按钮。这会打开默认浏览器，你可以使用下拉列表在另一个浏览器中运行 HTML 文件，或者在 Run 按钮右侧运行 HTML 文件。
+
+顺便提一下，如果在未选择 HTML 文件时点击 Run 按钮，什么都不会发生。此外，在运行之前，你现在需要保存对 HTML 文件及其相关 CSS 文件的任何更改。为此，你可以点击工具栏上的 Save（保存）或 Save All（全部保存）按钮。
+
+当你以此方式运行 JavaScript 应用程序时，每次点击 Run 按钮都会打开一个新的浏览器或浏览器标签页。因此，如果你对一个应用程序点击 10 次 Run，将打开 10 个浏览器或标签页。
+
+不过，另一种方法是第一次运行时点击 Run 按钮运行应用程序。然后当你发现并修复错误后，可以点击 Aptana 中的 Save All 按钮保存更改，切换到浏览器。
+
+### Aptana 的 Run 按钮
+
+![](img/fb3dabc43193711c2307f942481ad30c_58_0.png)
+
+### 网页
+
+![](img/fb3dabc43193711c2307f942481ad30c.png)
+
+### 步骤
+
+- 使用 `Window->Preferences` 命令打开 Preferences 对话框。
+- 点击 Aptana Studio，然后点击 Themes 显示主题对话框。
+- 从下拉列表中选择一个主题。
+
+### 描述
+
+- Aptana 用不同的颜色显示 JavaScript 语句的不同部分，以便于解释这些语句。
+- 如果你不喜欢使用的颜色，可以使用上述步骤更改颜色。
+
+## 第1章 Web 开发简介
+
+### 总结
+
+- Web 应用程序由客户端、Web 服务器和网络组成。客户端使用 浏览器从 Web 服务器请求网页。Web 服务器返回请求的页面。
+- 局域网（LAN）连接彼此靠近的计算机。这通常被称为内网（intranet）。相比之下，互联网由许多广域网（WAN）组成。
+- 要请求网页， 浏览器向 Web 服务器发送 HTTP 请求。然后，Web 服务器获取请求并通过 HTTP 响应将其传回浏览器。最后，浏览器渲染 HTML。
+- 静态网页是在检索时内容保持相同的页面。相比之下，动态网页的 HTML 是由服务器端程序或脚本生成的，因此它的 HTML 可能会发生变化。
+- JavaScript 是一种由 浏览器的 JavaScript 引擎运行的脚本语言。jQuery 是一个让开发应用程序变得简单的 JavaScript 库。
+- HTML（超文本标记语言）是定义网页结构和内容的语言。CSS（层叠样式表）用于控制网页的格式。
+- 你可以查看自己计算机、服务器或互联网服务器上的网页。要查看互联网服务器上的网页，你可以在浏览器地址栏中输入 URL（统一资源定位符），它由协议、域名、路径和文件名组成。
+- 当你开发 JavaScript 应用程序时，你需要考虑跨浏览器兼容。这意味着你必须在所有现代浏览器以及旧版本上测试你的应用程序。
+- 使用 jQuery 的用处之一是它的 JavaScript 函数已经通过了跨浏览器兼容测试。
+- 要开发 JavaScript 应用程序，你可以使用文本编辑器或集成开发环境（IDE）。对于本书，我们推荐 Aptana Studio 3，因为它是强大的、免费的并且可以在 Windows、Mac 和 Unix 系统上运行。
+
+# 在开始本书的练习之前...
+
+在开始本书的练习之前，你应该下载并安装 Firefox 浏览器以及本书配套的应用程序。如果你打算使用 Aptana，还应该下载并安装该产品。安装本书软件和应用程序的步骤请见附录 A。
+
+## 练习 1-1 运行 Email List 应用程序
+
+在此练习中，你将运行在 1-5、1-6 和 1-7 中介绍的 Email List 应用程序。
+
+### 在 Firefox 中打开应用程序
+
+1. 如果 Firefox 未打开，请启动它。然后，使用“文件→打开文件”命令打开此 HTML 文件：
+
+```c
+c:\murach\jquery_book_apps\ch01\email_list\index.html
+```
+
+2. 测试不输入任何数据时会发生什么，只需在不输入任何数据的情况下点击 Join List 按钮。然后，你可以看到显示的错误信息。
+
+3. 在第一个文本框中输入电子邮件地址，在第二个文本框中输入无效数据并点击 Join List 按钮查看显示哪些错误信息。
+
+4. 在三个文本框中都输入有效数据并点击按钮。然后，数据将提交处理并显示一个新网页。
+
+## 练习 1-2 运行第 1 的其他应用程序
+
+此练习将让你运行第 6 章中介绍的应用程序。这些应用程序将让你对完成本节后能够做的操作有一个初步了解。
+
+5. 在 Firefox 浏览器中打开此文件：
+
+```c
+c:\murach\jquery_book_apps\ch06\facts_links\index.html
+```
+
+然后，点击其中一个标题显示其文本，再次点击标题以隐藏文本。
+
+6. 在 Firefox 浏览器中打开此文件：
+
+```c
+c:\murach\jquery_book_apps\ch06\image_swap\index.html
+```
+
+然后，点击小图片查看大图片的切换效果。
+
+7. 在 Firefox 浏览器中打开此文件：
+
+```c
+c:\murach\jquery_book_apps\ch06\slide_show\index.html
+```
+
+观看幻灯片。
+
+## 练习 1-3 开始使用 Aptana
+
+此练习适合打算在阅读本书中使用 Aptana 的读者。它将引导你完成创建项目的过程，以便方便访问你下载的书中应用程序和练习。
+
+### 创建项目
+
+1. 启动 Aptana，并按照图 1-16 中的步骤为存储在此文件夹中的书籍应用程序创建一个项目：
+
+`c:\murach\query\book_apps`
+
+该项目应命名为 jQuery Book Apps，最后一个对话框中的条目应与图中完全一致。
+
+2. 使用相同的步骤为存储在此文件夹中的练习创建一个名为 jQuery Exercises 项目：
+
+`c:\murach\query\exercises`
+
+以及为存储在此文件夹中的练习解答创建一个名为 jQuery Solutions 的项目：
+
+`c:\murach\query\solutions`
+
+### 测试 Email List 应用程序
+
+3. 使用 App Explorer（应用程序资源管理器）中的下拉列表选择 jQuery Exercises 项目。这可以让你访问书中的所有练习。
+
+4. 点击 ch01 前的加号显示 email_list_folder，然后点击 email_list_filter 前的加号显示 Email List 应用程序的文件。
+
+5. 双击命名为 index.html 的文件打开该文件。然后，点击工具栏上的 Run 按钮在默认浏览器中运行应用程序。这会自动将你切换到该浏览器。
+
+6. 回到 Aptana，点击 Run 按钮右侧的箭头。如果下拉列表提供 Internet Explorer，点击它在相应浏览器中运行应用程序。然后返回 Aptana。
+
+### 编辑 JavaScript 代码
+
+7. 在 App Explorer 中，双击命名为 email_list.js 的文件打开该文件，并注意用于语法高亮的颜色。
+
+8. 如果你不喜欢使用的颜色，请使用图 1-18 中的步骤进行更改。
+
+9. 在 JavaScript 文件中，删除第一行代码中的右括号。这应该会显示出两个错误标记。然后，将鼠标悬停在标记上显示错误描述。这说明了 Aptana 的错误检查功能。现在，撤销你所做的更改。（要使用键盘撤销更改，按 Ctrl+Z）。
+
+10. 在 JavaScript 文件中，在第三个以 var 开头的语句之后，在新行开始输入输入这些字符：
+
+```javascript
+if (
+```
+
+这应该显示以字母 e 开头的可能输入列表。
+
+在这里，你可以看到 emailAddress1 和 emailAddress2 都在列表中。这些是由前两个 var 语句创建的变量，这说明了 Aptana 的代码补全功能。现在，撤销此更改。
+
+11. 在 JavaScript 代码最后一行（仅包含一个右括号 `}`）之后的新行输入此语句：
+
+```javascript
+alert("The DOM has now been built");
+```
+
+换句话说，这条语句将成为文件的第二行。
+
+12. 为了测试你添加的语句，点击工具栏上的 Save All 按钮保存更改。然后，切换到浏览器并点击 Reload（加载）或 Refresh（刷新）按钮以带有此更改运行应用程序。这将显示一个对话框，你可以点击 OK 按钮将其关闭。之后，应用程序的运行将与之前相同。
+
+13. 如果你好奇，可以自己进行更多实验。然后，关闭文件并退出 Aptana。
+
+# JavaScript JavaScript
+
+本章的目标是让你在 JavaScript 上有一个良好的开始，特别是如果你是编程新手。如果你有其他语言的编程经验，你应该能够快速通过本章。否则，请轻松学习并完成本章末的练习。
+
+- 如何在 HTML 文档中引入 JavaScript...50
+- 在 HTML 文档 head 中引入 JavaScript 的两种方法...50
+- 如何在 HTML 文档 body 中引入 JavaScript...52
+- JavaScript 语法...54
+- 如何编写 JavaScript 语句...54
+- 如何创建标识符...58
+- 如何使用注释...56
+- 如何使用对象、方法和属性...60
+- 如何处理 JavaScript 数据...62
+- 原始数据类型...62
+- 如何编写数值表达式...64
+- 如何处理数值变量...66
+- 如何处理字符串和布尔变量...68
+- 如何编写控制语句...72
+- 如何编写条件表达式...72
+- 如何编写 if 语句...74
+- 如何编写 while 和 do-while 循环...76
+- 如何编写 for 循环...78
+- 两个示例应用程序...80
+- 每加仑油耗应用程序...80
+- 成绩应用程序...82
+- 如何在代码中查找错误...84
+- 如何通过 Firefox 获取错误信息...84
+- 常见的 JavaScript 错误...84
+- 视角...86
+
+# 如何在 HTML 文档中引入 JavaScript
+
+在第 1 章中，你看到了如何在单独文件中编写应用程序的 JavaScript。但实际上有三种方法可以将 JavaScript 引入 HTML 文档中。现在你将学习这三种方法。
+
+## 在 HTML 文档的 head 中引入 JavaScript 的两种方法
+
+图 2-1 展示了在 HTML 文档中引入 JavaScript 的三种方法中的两种。正如你在上一章看到的，一种方法是将 JavaScript 写在独立的外部文件中。然后，你在 HTML 文档的 head 部分编写一个 `script` 元素来包含该文件。
+
+在 `script` 中，`src` 属性用于引用外部文件。对于该元素，你也可以编写一个值为 "text/javascript" 的 `type` 属性，告诉浏览器文件包含什么类型的内容。但在 HTML 中，不再需要该属性，因为假设是所有由 `script` 元素引用的文件都包含 JavaScript。
+
+在图中的示例中，`src` 属性引用名为 `calculate_mpg.js` 的文件。假设该文件与 HTML 文件在同一个文件夹中。例如，如果 JavaScript 文件位于名为 `javascript` 的文件夹中，否则你需要编写一个相对 URL 来为文件提供正确的路径。如果该文件夹与 HTML 文件在同一个文件夹中，则 `src` 属性的写法如下：
+
+```html
+<script src="javascript/calculate_mpg.js"></script>
+```
+
+它的工作原理与 HTML 文档中的任何其他引用都相同。在 head 部分的 `script` 元素中编写 JavaScript，这被称为**嵌入式 JavaScript**。但注意，无论 JavaScript 是嵌入在 head 部分还是从外部文件加载到 head 部分，应用程序都能正常运行。
+
+使用外部文件的好处是它可以将 JavaScript 与 HTML 分离。使用嵌入式 JavaScript 的好处是，你在开发应用程序时，不需要在 HTML 和 JavaScript 文件之间切换。在本书的示例中，你将看到这两种类型的 JavaScript。
+
+### script 元素的两个属性
+
+| 属性 | 说明 |
+| --- | --- |
+| src | 指定外部 JavaScript 文件的位置和名称。 |
+| type | 在 HTML5 中，此属性可以被省略。如果你编写它，请对 JavaScript 代码使用 "text/javascript"。 |
+
+### 在 head 部分中加载外部 JavaScript 文件的 script 元素
+
+```html
+<script src="calculate_mpg.js"></script>
+```
+
+### 在 head 部分中嵌入 JavaScript 的 script 元素
+
+```html
+<head>
+<script>
+alert("The Calculate MPG application");
+var miles = prompt("Enter miles driven");
+miles = parseFloat(miles);
+var gallons = prompt("Enter gallons of gas used");
+var mpg = miles/gallons;
+mpg = parseInt(mpg);
+alert("Miles per gallon = " + mpg);
+</script>
+</head>
+```
+
+### 
+
+- HTML 文档 head 部分的 `script` 元素通常用于标识应与页面包含的外部 JavaScript 文件。
+- head 部分的 `script` 元素也可以包含与页面的 JavaScript 语句。这被称为嵌入式 JavaScript。
+- 如果在 head 部分编写了多个 `script` 元素，JavaScript 将按照 script 语句出现的顺序被包含。
+- 当 head 部分的 `script` 元素包含外部 JavaScript 文件时，文件中的 JavaScript 运行就像是直接写在元素中一样。
+
+![](img/fb3dabc43193711c2307f942481ad30c_66_0.png)
+
+## 如何在 HTML 文档的 body 中引入 JavaScript
+
+图 2-2 显示了在 HTML 文档中引入 JavaScript 的方法。这次，第一个示例中的两个 `script` 元素编写在 HTML 文档的 body 中。当在 body 中编写 `script` 元素时，当应用程序加载时，该元素会被 JavaScript 代码的输出替换。
+
+如果你想为没有启用 JavaScript 的浏览器提供支持，可以在第二个示例的 `script` 元素之后编写另一个 `script` 元素。如果禁用了 JavaScript，`script` 元素的内容将被 JavaScript 代码的输出替换，且 `script` 元素将被忽略。这样，无论是否启用 JavaScript，都会显示某些输出。
+
+在第二个示例中，`script` 元素紧跟在另一个 `script` 元素之后，因此如果浏览器未启用 JavaScript，2012 将替换 `script` 元素的输出。这意味着在 2012 年，无论是否启用 JavaScript，结果都是将的。在 2013 年，如果启用了 JavaScript，年份将由 JavaScript 更新。
+
+你也可以编写一个不跟随 `script` 元素的 `script` 元素。例如，如果禁用了 JavaScript，页面将无法工作。第三个示例说明了这一点。在这种情况下，如果启用了 JavaScript，则什么都不显示；如果禁用了 JavaScript，则会显示消息。
+
+在本书的所有应用程序中，JavaScript 要么嵌入在 HTML 的 head 部分，要么包含在 HTML head 部分中标识的外部文件中。然而，每当你想要将 JavaScript 引入 HTML 文档的 body 中时，应该不会遇到任何问题。
+
+### HTML 文档 body 中的 JavaScript
+
+```html
+<p>
+<script>
+  var today = new Date();
+  document.write("Current date: ");
+  document.write(today.toDateString());
+</script>
+</p>
+<p>&copy;&nbsp;
+<script>
+  var today = new Date();
+  document.write(today.toDateString());
+</script>
+</p>
+```
+
+<p>
+
+<script>
+
+  var today = new Date();
+
+  document.write("Current date: ");
+
+  document.write(today.toDateString());
+
+</script>
+
+</p>
+
+<p>&copy;&nbsp;
+
+<script>
+
+  var today = new Date();
+
+  document.write(today.toDateString());
+
+</script>
+
+</p>
+
+# 如何创建标识符
+
+变量、函数、对象、属性、方法和事件都必须有名称，以便你可以在 JavaScript 代码中引用它们。标识符就是赋予这些组件之一的名称。
+
+
+
+图 2-4 显示了在 JavaScript 中创建标识符的规则。除了前几个规则外，你不能使用任何 JavaScript 保留字（也称为关键字）作为标识符。这些词是为 JavaScript 语言内部使用保留的。你还应该避免将任何 JavaScript 全局属性或方法作为标识符，随着本书阅读的深入，你将学到更多。
+
+除了规则之外，你还应该为标识符起有意义的名称。这意味着应该很容易看出一个标识符指代什么，并且容易记住这个名字。为了创建这样的名称，你应该避免使用缩写。例如，如果你将“每月投资”缩写为 `mon_inv`，将很难看出它指代什么，也很难记住你的拼写。但如果你将其完整写为 `monthly_investment`，这两个问题都得到了解决。
+
+同样，你应该避免使用特定于行业或研究领域的缩写，除非该缩写被广为人知。例如，`mpg` 是每加仑英里的常用缩写，但 `cpm` 可能代表许多不同的含义，应该完整写出来。
+
+为了创建一个包含多个单词的标识符，许多 JavaScript 程序员使用称为“驼峰命名法”（camel casing）的约定。按照这种约定，除了第一个单词外，每个单词的首字母大写。例如，`monthlyInvestment` 和 `taxRate` 就是使用驼峰命名法的标识符。
+
+另一种方法是使用下划线字符分隔标识符中的单词。例如，`monthly_investment` 和 `tax_rate` 使用这种方法。如果你所在的规定规定其中一种，请务必使用它。否则，你可以使用任何你喜欢的，但要保持一致。
+
+在本书中，HTML 的 ID 和类名使用下划线符号，所有的 JavaScript 标识符使用驼峰命名法。这样，你就能更容易判断名称的出处。
+
+# 创建标识符的规则
+
+- 标识符只能包含字母、数字、下划线和美元符号 `$`。
+- 标识符不能与数字开头。
+- 标识符是区分大小写的。
+- 标识符可以是任意长度。
+- 标识符不能与保留字相同。
+- 避免使用全局属性和方法作为标识符。如果你使用了其中一个，你将无法使用同名的全局属性或方法。
+
+# JavaScript 中合法的标识符
+
+| 驼峰命名法 | 下划线法 | 以 $ 开头 |
+| :--- | :--- | :--- |
+| subtotal | index_1 | $ |
+| taxRate | calculate_click | $log |
+| calculateClick | calculate_click | |
+| emailAddress | email_address | |
+| firstName | first_name | |
+| futureValue | future_value | |
+
+# 命名建议
+
+- 为标识符使用有意义的名称。这样，你的标识符就不可能是保留字或全局属性。
+- 保持一致：使用驼峰命名法（`taxRate`）或下划线法（`tax_rate`）来标识脚本中变量内部的单词。
+- 如果你使用下划线法，请对所有字母使用小写。
+
+# JavaScript 中的保留字
+
+```
+abstract            else                switch
+boolean             int                 synchronized
+break               export              this
+byte                extends             throw
+case               false              native              throws
+catch               final              new                 transient
+char                finally             null                true
+class               float               package             try
+const               const               private             typeof
+continue            function            protected          var
+debugger            goto                public              void
+default             if                  return            volatile
+delete              implements         short               while
+do                 import             static            with
+double              in                  super
+```
+
+## 描述
+
+- 标识符是赋予变量、函数、对象、属性和方法的名称。
+- 在驼峰命名法中，标识符内除第一个单词外的所有单词以大写字母开头。
+
+![](img/fb3dabc43193711c2307f942481ad30c_72_0.png)
+
+# 如何使用注释
+
+**注释**允许你向代码中添加描述性说明，这些注释会被 JavaScript 引擎忽略。以后，这些注释可以在需要修改代码时，帮助你或他人理解代码。
+
+图 2-5 中的示例显示了如何使用注释来描述或解释部分代码。在开头，一个块注释描述了随后的函数的作用。这种注释以 `/*` 开始，以 `*/` 结束。在开始和结束之间的所有代码在应用程序运行时会被 JavaScript 引擎忽略。
+
+另一种类型的注释是单行注释，以 `//` 开头。在示例中，第一条单行注释描述了位于同一行的之前的 JavaScript 代码的作用。相比之下，第二个单行注释单独占一行，它描述了随其后的两个语句。
+
+除了描述 JavaScript 代码外，注释在测试应用程序时也很有用。例如，如果你想禁用 JavaScript 应用程序的一部分，可以将其封装在块注释中。这样，在程序运行时它就会被忽略。当你测试其余代码时，可以取消代码的注释。稍后在测试完代码后，你可以通过移除块注释的开始和结束标记，将此操作称为“注释掉”某部分代码。
+
+什么时候使用注释来描述或解释代码？当然，当代码非常复杂，以至于你以后维护它时可能忘记它是如何工作的。如果将来有人要维护这段代码，这种注释就尤为有用。
+
+另一方面，你不应该使用注释来解释任何程序员都应该理解的代码。这意味着你必须在太多和太少之间取得平衡。注释最糟糕的情况之一是在不改变相关注释的情况下改变代码的工作方式。这时，注释会误导试图维护代码的人。
+
+# 包含注释的 JavaScript 代码段
+
+```
+/* onload 函数设置了显示和隐藏
+// 后续文本
+*/
+window.onload = function () {
+    var fiveReasons = $(h2_reasons); // 获取 div 元素
+
+    // 获取 div 元素内部的 h2 和 div 元素
+    var h2Headings = fiveReasons.getElementsByTagName("h2");
+    var divTags = fiveReasons.getElementsByTagName("div");
+
+    var i, headingNode, divNode;
+    for (i = 0; i < h2Headings.length; i++) { // 为每个 h2 循环一次
+        headingNode = h2Headings[i];
+        divNode = divTags[i];
+
+        // 为每个 h2 附加事件处理器
+        headingNode.onclick = function () {
+            var h2 = this;
+            if (h2.nextElementSibling.getAttribute("class") == "closed") {
+                h2.nextElementSibling.setAttribute("class", "open");
+            } else {
+                h2.nextElementSibling.setAttribute("class", "closed");
+            }
+        };
+    }
+}
+```
+
+# JavaScript 的基本语法规则
+
+- 块注释以 `/*` 开始，以 `*/` 结束。
+- 单行注释以两个斜杠 `//` 开始，并持续到行尾。
+
+# 使用注释的指南
+
+- 使用注释描述难以理解的代码。
+- 使用注释描述你不想测试的代码。
+- 不要不必要的注释。
+
+## 描述
+
+- JavaScript 提供了两种形式的注释：块注释和单行注释。
+- 在执行 JavaScript 时，注释会被忽略。
+- 在测试期间，可以使用注释来注释掉（禁用）你不想测试的代码。然后当你准备好测试这些部分时，可以移除注释。
+
+# 如何使用对象、方法和属性
+
+简单来说，**对象**是方法和属性的集合。*方法*执行一个函数或完成一个操作。*属性*是与对象相关的数据项。当你开发 JavaScript 应用程序时，经常会与对象、方法和属性打交道。
+
+为了开始，图 2-6 显示了如何使用 `window` 对象的方法和属性，`window` 是常用的 JavaScript 对象。要*调用*（执行）对象的方法，你使用表格后总结中的语法。也就是说，你编写对象名、一个*点操作符*（句号）、方法名以及该方法在括号内所需的*参数*。
+
+在本书中，语法总结中斜体表示的单词是你需要提供的。没有使用斜体的单词保持不变。在这种情况下，所有的单词都是斜体表示的，因此你需要提供它们中的所有单词。相比之下，第一个表格中 `alert` 方法的语法显示，你只需像总结中写的那样编写 `alert`，但你必须提供一个字符串参数。
+
+在语法总结后的第一个示例中，你可以看到是如何调用 `window` 对象的 `alert` 方法的：
+
+```
+window.alert("This is a test of the alert method");
+```
+
+在这种情况下，传递给它的参数是 "This is a test of the alert method"。因此，当 `alert` 对话框显示时，就会显示消息。
+
+在第二个示例中，你可以看到是如何调用 `window` 对象的 `prompt` 方法的。不过，这次省略了对象名。对于 `window` 对象（仅限 `window` 对象），这是可以，因为 `window` 对象是 JavaScript 应用程序的全局对象。
+
+如你所见，`prompt` 方法接受两个参数。第一个是消息，第二个是用户输入的可选默认值。当执行 `prompt` 方法时，它会显示一个像第一个示例那样的对话框。在这里，你可以看到作为参数传递的消息和默认值。此时，你可以更改现有的默认值，并在点击 OK 按钮时，将输入的内容存储在变量 `userEntry` 中。
+
+表格中的第三种方法不需要任何参数。当它执行时，它会向浏览器发送打印请求。浏览器开始启动其打印函数，通常是显示一个对话框，让用户继续或取消打印函数。
+
+要访问对象的属性，你使用类似的语法。然而，如第二个语法总结所示，你在点操作符后编写属性名。与方法不同，属性不需要括号中的参数。这通过随后的语句说明了这一点。该语句使用 `window` 对象的 `alert` 方法来显示 `window` 对象的 `location` 属性。
+
+随着学习深入，你将学习如何使用许多对象的方法和属性。无论你处理的是哪种对象，使用方法和属性的语法总是相同的：对象名、点、然后是属性或方法名。
+
+## window 对象的常用方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `alert(string)` | 显示一个包含参数传递的字符串以及 OK 按钮的对话框。 |
+| `prompt(string, default)` | 显示一个包含第一个参数中的字符串、第二个参数中的默认值以及 OK 按钮的对话框。当用户输入一个值并点击 OK 时，该值将作为字符串返回。如果用户点击取消，则返回 null。 |
+| `print()` | 向浏览器发出打印请求。 |
+
+## window 对象的一个属性
+
+| 属性 | 描述 |
+| --- | --- |
+| `location` | 当前网页的 URL。 |
+
+## 调用对象方法的语法
+
+```
+objectName.methodName(parameters)
+```
+
+调用 `window` 对象的 `alert` 方法的语句
+
+`window.alert("This is a test of the alert method");`
+
+省略对象名调用 `prompt` 方法的语句
+
+`var userInput = prompt("This is a test of the prompt method", 100);`
+
+## 显示的提示框
+
+![](img/fb3dabc43193711c2307f942481ad30c_76_0.png)
+
+## 访问对象属性的语法
+
+```
+objectName.propertyName
+```
+
+显示 `window` 对象的 `location` 属性的语句
+
+`alert(window.location);    // 显示当前页的 URL`
+
+## 描述
+
+- 对象拥有执行与对象相关的方法，以及表示与对象相关的数据或属性的属性。
+- 当你调用方法时，你需要通过在名称后的括号内编写一个或多个参数来传递，并用逗号分隔。
+- `window` 是 JavaScript 的全局对象，JavaScript 允许你在引用 `window` 对象时省略对象名和点操作符（句号）。
+
+图 2-6 如何使用对象、方法和属性
+
+# 如何处理 JavaScript 数据
+
+当你开发 JavaScript 应用程序时，你经常处理数据，特别是用户输入到表单控件的数据。在接下来的主题中，你将学习如何处理三种类型的 JavaScript 数据。
+
+## 原始数据类型
+
+JavaScript 提供了三种原始数据类型。*数字数据类型*用于表示数值。*字符串数据类型*用于存储字符数据。*布尔数据类型*用于存储真和假值。这在图 2-7 中进行了总结。
+
+数字数据类型可以表示整数或小数。整数是不带小数点的数字。小数可以有小数点右侧的一个或多个数字。
+
+## 如何编写数值表达式
+
+数值表达式可以简单到只有一个值，也可以是一系列产生单个值的操作。在图 2-8 中，你可以看到用于编写数值表达式的运算符。在其他语言中，这些运算符可能与你一直以来使用的相似。特别是前四个算术运算符在大多数编程语言中都是通用的。
+
+大多数现代语言还有一个取模运算符，用于计算左侧值除以右侧值的余数。在该运算符的示例中，`13 % 4` 表示 `13 / 4` 的余数。由于 `13 / 4` 的结果是 `3` 余于 `1`，因此它是该表达式的结果。
+
+与图中的前五个运算符不同，自增和自减运算符会在变量上加或减 1。然而，复杂的是，这些运算符可以写在变量名的之前或之后，这会影响结果。为了避免混淆，我们建议你仅在变量名之后编写这些运算符，并且仅在下一个图中所示的简单表达式中使用。
+
+当一个表达式包含两个或多个运算符时，优先级决定了先应用哪些运算符。这种顺序总结在图中表格中。例如，所有的乘法和除法操作都在任何加法和减法操作之前从左到右完成。
+
+然而，为了覆盖这种顺序，你可以使用括号。这时最内层括号中的表达式首先执行，然后是下一层括号中的表达式。这是所有编程语言以及基础代数学的共同点，图中的示例展示了其工作原理。
+
+## 常见算术运算符
+
+| 运算符 | 描述 | 示例 | 结果 |
+| --- | --- | --- | --- |
+| + | 加法 | 5 + 7 | 12 |
+| - | 减法 | 5 - 12 | -7 |
+| * | 乘法 | 6 * 7 | 42 |
+| / | 除法 | 13 / 4 | 3.25 |
+| % | 取模 | 13 % 4 | 1 |
+| ++ | 自增 | counter++ | 给 counter 加 1 |
+| -- | 自减 | counter-- | 从 counter 减 1 |
+
+## 算术表达式的优先级
+
+| 优先级 | 运算符 | 方向 | 描述 |
+| --- | --- | --- | --- |
+| 1 | ++ | 从左到右 | 自增运算符 |
+| 2 | -- | 从左到右 | 自减运算符 |
+| 3 | * / % | 从左到右 | 乘法、除法、取模 |
+| 4 | + - | 从左到右 | 加法、减法 |
+
+## 优先级示例与括号的使用
+
+```
+3 + 4 * 5 // 结果为 23，因为先执行乘法
+(3 + 4) * 5 // 结果为 35，因为先执行加法
+```
+
+```
+13 % 4 + 9 // 结果为 10，因为先执行取模
+13 % (4 + 9) // 结果为 0，因为先执行加法
+```
+
+```
+1000 + 1000 * .05 // 结果为 1050，因为先执行乘法
+1000 + (1000 * .05) // 结果仍为1050
+```
+
+## 描述
+
+- 要创建数值表达式，使用算术运算符对两个或多个值进行操作。
+
+![](img/fb3dabc43193711c2307f942481ad30c_80_0.png)
+
+# 如何处理数值变量
+
+变量存储一个随程序执行而改变的值。当你编写 JavaScript 应用时，经常需要声明变量并为它们赋值。图 2-9 显示了如何使用数值变量来完成这两项任务。
+
+在 JavaScript 中声明数值变量，编写 `var`（代表 variable）关键字，后跟一个你想要用于该变量的标识符（或名称）。要在一个语句中声明多个变量，请使用 `var` 后跟多个用逗号分隔的变量名。图中的第一组示例说明了这一点。
+
+要给变量赋值，你需要编写一个包含变量名的赋值语句、一个赋值运算符（如 `=`）和一个表达式。该表达式可以是数值字面量（如 `74.95`）、变量名（如 `subtotal`）或一个算术表达式。当等号是运算符时，等号右侧表达式的值将赋值给左侧的变量。该运算符的使用由第二组示例所示。
+
+图中表格中的第二个运算符是 `+=` 运算符，它是一种复合赋值运算符。它通过将运算符右侧表达式的值加到左侧变量的值上来修改该变量。当你使用此运算符时，变量必须已经存在并已赋过值。该运算符的使用由第三组示例所示。
+
+第四组示例展示了三种通过加 1 来自增变量的方法。正如你将在整本书中所看到的，这是一个常见的 JavaScript 要求。在这一组中，第一条语句为名为 `counter` 的变量赋值为 `1`。
+
+然后，该组的第二条语句使用算术表达式给计数器的值加 1，这表明变量名可以用于等号的两侧。第三条语句使用 `+=` 运算符给计数器加 1。
+
+该组的最后一条使用前一个图中所示的自增运算符为其加 1。
+
+# 如何处理字符串和布尔值变量
+
+要声明字符串或布尔值变量，你使用的技术与声明数值变量的方法相似。主要的区别在于，字符串字面量是括在引号中的值，而数值字面量不是。此外，在处理字符串时，`+` 被视为拼接运算符。这意味着一个字符串会被添加到另一个字符串的末尾。
+
+图 2-10 中的前两组示例说明了这一点。在第二组示例中，第一条语句将字符串字面量赋值给名为 `firstName` 和 `lastName` 的变量。然后，下一条语句将 `lastName` 与一个由逗号和空格组成的字符串字面量进行拼接。这种拼接的结果是 "Harris, Ray"，并被存储在一个新变量 `fullName` 中。
+
+在第三组示例中，你可以看到如何使用 `+=` 运算符来获得相同的结果。当你正在处理的表达式是字符串时，该运算符执行的是简单的拼接。
+
+在第四组示例中，你可以看到当 `+=` 运算符用于字符串和数值值时会发生什么。在这种情况下，数字会被转换为字符串，然后对字符串进行拼接。
+
+第五组示例展示了你如何在字符串中使用转义序列。你可以使用的许多转义序列中，有三个总结在该图的第二个表格中。这些序列允许你在字符串中放置无法仅通过按下键盘上相应的键来输入的字符。例如，`\n` 序列等同于在字符串中间按下回车键。而 `\'` 序列等同于按下单引号键。
+
+该图中最后一个示例显示了如何创建并为布尔值变量赋值。在这里，创建了一个名为 `isValid` 的变量，并为其赋值了 `false` 的值。
+
+## 运算符示例结果
+
+| 运算符 | 示例 | 结果 |
+|---|---|---|
+| + | "Ray" + "Harris" | "Ray Harris" |
+| | "Months:" + 120 | "Months: 120" |
+
+## 字符串可以使用的转义序列
+
+| 运算符 | 说明 |
+|---|---|
+| \n | 在字符串中开始新的一行。 |
+| \" | 在字符串中放入双引号。 |
+| \' | 在字符串中放入单引号。 |
+
+## 如何在不赋值的情况下声明变量
+
+```
+var zipCode; // 声明一个变量
+var lastName, state, zipCode; // 声明三个变量
+```
+
+## 如何声明字符串变量并为其赋值
+
+```javascript
+var firstName = "Ray", lastName = "Harris"; // 赋值两个字符串值
+var fullName = lastName + " " + firstName; // fullName = "Harris, Ray"
+```
+
+## 如何对字符串数据编写赋值语句
+
+```javascript
+var firstName = "Ray", lastName = "Harris"; // fullName = "Harris"
+var fullName = lastName; // fullName = "Harris"
+fullName += " "; // fullName = "Harris, "
+fullName += "Ray"; // fullName = "Harris, Ray"
+```
+
+## 如何对混合数据编写赋值语句
+
+```javascript
+var months = 120;
+message = "Months: ";
+message += months; // message 是 "Months: 120"
+```
+
+## 转义序列如何在字符串中使用
+
+```javascript
+var message = "A valid variable name\cannot start with a number.";
+message = "This isn't the right way to do this.";
+```
+
+## 如何声明布尔值变量并为其赋值
+
+```javascript
+var isValid = false; // 布尔值为 false
+```
+
+## 描述
+
+- 要给变量赋值，你可以使用 `+` 和 `+=` 运算符，就像处理数值时使用它们一样。
+- 要拼接两个或多个字符串，你可以使用 `+` 运算符。
+- 在表达式内部，字面量被括在引号中。
+- 转义序列可用于在字符串中插入特殊字符，例如开始新一行的换行符或引号。
+- 如果在加法中使用加号且两个值都是字符串，JavaScript 会将它们拼接。但如果一个值是数字另一个是字符串，JavaScript 会将数字转换为字符串并拼接字符串。
+
+# 如何使用 parseInt 和 parseFloat 方法
+
+`parseInt` 和 `parseFloat` 方法用于将字符串转换为数字。`parseInt` 方法将字符串转换为整数，而 `parseFloat` 方法将字符串转换为小数值。需要这些方法是因为 `prompt` 方法返回的是值，且用户输入到文本框的值被视为字符串。
+
+图 2-11 中的第一组示例说明了这些方法的使用。对于这组示例，假设 `prompt` 方法中的默认值没有被用户修改。结果是该组的第一条语句将 `12345.6789` 存储在名为 `entryA` 的变量中。然后，该组的第三条语句将字符串转换为整数值 `12345`。
+
+注意，这些示例中没有通过方法名编写对象名。没关系，因为 `window` 是 JavaScript 的全局对象。同样注意 `parseInt` 方法不会对值进行四舍五入。它只是移除、截断字符串的任何小数部分。第一组示例的最后四条语句显示了使用 `parseInt` 或 `parseFloat` 方法时会发生什么。
+
+## window 的 parseInt 和 parseFloat 方法
+
+| 方法 | Description |
+|---|---|
+| parseInt(string) | 将传递的字符串转换为整数并返回值。如果无法将字符串转换为整数，则返回 NaN。 |
+| parseFloat(string) | 将传递的字符串转换为小数并返回值。如果无法将字符串转换为小数，则返回 NaN。 |
+
+## 使用 parseInt 和 parseFloat 方法示例
+
+```javascript
+var entryA = prompt("Enter a number:", "12345.6789");
+entryA = parseInt(entryA); // entryA 是 12345
+```
+
+```javascript
+var entryB = prompt("Enter a number:", "12345.6789");
+entryB = parseFloat(entryB); // entryB 是 12345.6789
+```
+
+```javascript
+var entryC = prompt("Enter a number:", "Hello");
+entryC = parseInt(entryC); // entryC 是 NaN
+```
+
+## 嵌入 alert 方法的相同示例
+
+```javascript
+var entryA = prompt("Enter a number:", "12345.6789");
+alert(parseInt(entryA)); // 显示 12345
+```
+
+```javascript
+var entryB = prompt("Enter a number:", "12345.6789");
+alert(parseFloat(entryB)); // 显示 12345.6789
+```
+
+```javascript
+var entryC = prompt("Enter a number:", "Hello");
+alert(parseInt(entryC)); // 显示 NaN
+```
+
+## 描述
+
+- `parseInt` 方法将字符串转换为整数。
+- `parseFloat` 方法将字符串转换为小数。
+- 如果字符串无法转换为数字，两种方法都返回 `NaN`。
+
+# 如何编写控制语句
+
+与所有编程语言一样，JavaScript 控制语句允许你控制应用程序中信息的处理方式。这些语句包括 `if` 语句以及循环语句。不过，在学习如何使用这些语句之前，你需要先学习如何编写条件表达式，因此我们从这里开始。
+
+# 如何编写条件表达式
+
+图 2-12 展示了你如何编写使用六种关系运算符的条件表达式。条件表达式根据两个表达式之间比较的结果返回 `true` 或 `false` 值。例如，如果第一个表格中第一个表达式中的 `lastName` 值为“Harrison”，则该表达式将返回 `true`。或者，如果最后一个表达式中 `rate` 的值为 10，则该表达式将返回 `true`（10 / 10 等于 .1，而 .1 大于或等于 0.1）。
+
+此外，除了使用关系运算符编写条件表达式外，你还可以使用全局的 `isNaN` 方法。此方法用于判断字符串是否为有效数字，接下来的示例所示。要使用此方法，你只需传递一个代表要测试的字符串值的参数。然后，如果该值无法转换为数字，该方法返回 `true`；如果可以转换，则返回 `false`。
+
+要编写复合条件表达式，你使用图中第二个表所示的逻辑运算符组合两个表达式。如果你使用 `AND` 运算符，当两个表达式都为 `true` 时，复合表达式返回 `true`。如果你使用 `OR` 运算符，当任一表达式为 `true` 时，复合表达式返回 `true`。如果你使用 `NOT` 运算符，表达式返回的值将取反转。例如，如果参数是数字，`!isNaN` 返回 `true`，因此 `!isNaN(10)` 返回 `true`，但 `!isNaN("abc")` 返回 `false`。
+
+注意，图中的逻辑运算符是按优先级顺序显示的。也就是说，如果在复合表达式中使用多个逻辑运算符，这就是运算符求值的顺序。这意味着 `NOT` 运算符在 `AND` 运算符之前计算，而 `AND` 运算符在 `OR` 运算符之前计算。虽然这通常是你想要的，但你可以通过括号来覆盖这种顺序。
+
+在大多数情况下，你使用的条件表达式相对简单，因此编写它们并没有太大问题。在本章的剩余部分，你将看到一些常用的条件表达式类型。
+
+## 关系运算符
+
+| 运算符 | 说明 | 示例 |
+|---|---|---|
+| == | 等于 | lastName == "Harris"<br>testScore == 10 |
+| != | 不等于 | firstName != "Ray"<br>months != 0 |
+| < | 小于 | age < 18 |
+| <= | 小于或等于 | investment <= 0 |
+| > | 大于 | testScore > 100 |
+| >= | 大于或等于 | rate / 100 >= 0.1 |
+
+## 全局 isNaN 方法的语法
+
+```
+isNaN(expression)
+```
+
+## isNaN 方法示例
+
+`isNaN("Harris")` // 返回 true，"Harris" 不是数字
+
+`isNaN("123.45")` // 返回 false，因为 "123.45" 可以转换为数字
+
+## 按优先级排序的逻辑运算符
+
+| 运算符 | 说明 | 示例 |
+|---|---|---|
+| ! | NOT | !isNaN(age) |
+| && | AND | age > 17 && score < 70 |
+| \|\| | OR | isNaN(rate) \|\| rate < 0 |
+
+## 逻辑运算符如何工作
+
+- 使用 `AND` 运算符的两个测试都为 `true` 时，整体测试才为 `true`。
+- 使用 `OR` 运算符的至少一个测试为 `true` 时，整体测试才为 `true`。
+- `NOT` 运算符将表达式的结果转换为另一个布尔值。例如，如果表达式为 `true`，`NOT` 运算符将其转换为 `false`。
+- 在条件表达式中使用两个或多个逻辑运算符时，可以使用括号来覆盖优先级顺序。
+
+## 说明
+
+- 条件*表达式*使用*关系运算符*来比较两个表达式的结果。
+- 复合*条件表达式*使用*逻辑运算符*连接两个或多个条件表达式。
+- *isNaN* 方法测试字符串是否可以转换为数字。如果字符串不是数字，则返回 `true`；如果字符串是数字，则返回 `false`。
+
+# 注意
+
+- 将赋值运算符 (=) 与相等运算符 (==) 混淆是一个常见的编程错误。
+
+图 2-12 如何编写条件表达式
+
+# 如何编写 if 语句
+
+如果你用过其他语言进行编程，那么使用 JavaScript `if` 语句将不会有任何困难。只需研究图 2-13 以获取语法并查看条件是如何编写的。但如果你是编程初学者，让我们慢一点。
+
+`if` 语句允许你根据条件表达式的结果来控制语句的执行。在像图中这样的语法总结中，方括号 `[]` 表示语法中的可选位置。因此，此总结意味着每个语句必须以 `if` 子句开头。然后，它可以有一个或多个 `else if` 子句，这些是可选的。最后，它还可以有一个 `else` 子句，这也是可选的。
+
+要编写 `if` 子句，你使用关键字 `if`，后面跟一个括号内的条件表达式，以及大括号内一个或多个语句的块。如果条件表达式为 `true`，将执行此代码块并跳过语句中的任何剩余子句。如果条件为 `false`，则将执行下一个子句。
+
+要编写 `else if` 子句，你使用关键字 `else if`，后面跟一个括号内的条件表达式以及大括号内一个或多个语句的块。如果条件表达式为 `true`，则将执行其代码块。
+
+要编写 `else` 子句，你使用关键字 `else`，后面跟一个大括号内一个或多个语句的块。如果前面的所有条件都为 `false`，则将执行此代码块。
+
+## if 语句的语法
+
+```
+if ( condition ) {
+    statements
+} [else if ( condition ) {
+    statements
+}] [else {
+    statements
+}]
+```
+
+## 一个简单的 if 语句
+
+```javascript
+if (investment > 0) {
+    alert("Investment is valid");
+}
+```
+
+## 一个带有 else if 和 else 子句的 if 语句
+
+```javascript
+if (investment <= 0) {
+    alert("Investment must be > 0");
+} else if (rate <= 0) {
+    alert("Rate must be > 0");
+} else {
+    // 计算未来值
+}
+```
+
+## 描述
+
+- `if` 语句以 `if` 子句开始，后跟可选的 `else if` 子句和可选的 `else` 子句。
+- 每个子句包含一个条件表达式（`else` 子句除外）和一个代码块。
+- 只有第一个条件为 `true` 的子句会被执行。
+
+图 2-13 如何编写 if 语句
+
+# 如何编写 while 和 do-while 循环
+
+图 2-14 开始介绍用于创建 while 循环的 while 语句的语法。该语句在条件表达式为真时，执行循环中的代码块。
+
+紧随该语法之后的示例展示了如何使用 while 循环来累加 1 到 5 的数字。在 while 语句开始之前，变量 `sumOfNumbers` 被设置为 0，变量 `numberOfLoops` 被设置为 5，变量 `counter` 被设置为 1。然后，while 语句的条件规定，只要 `counter` 小于或等于 `numberOfLoops` 的值，while 循环就会重复。
+
+在循环内部，第一条语句将 `counter` 的值加到 `sumOfNumbers` 变量上。然后 `counter` 加 1。结果是，此循环执行了五次，分别对应 `counter` 值为 1、2、3、4 和 5 的。当 `counter` 不再小于或等于 5 时，循环结束，此时 `counter` 的值为 6。
+
+紧随示例之后的是用于创建 do-while 循环的 do-while 语句语法。这与 while 语句类似，但它的条件是在循环结束时测试的，而不是在开始。因此，循环中的语句至少会被执行一次。该语句通过语法后的示例进行了说明，该示例得到了与 while 语句相同的结果。
+
+通常情况下，当你想要至少执行一次循环中的语句时，你会使用 do-while 语句，而其他类型的循环则使用 while 语句。不过，只要代码正确，你可以使用这两种语句获得相同的结果。
+
+图中的最后一个示例展示了 while 循环的另一个例子。只要用户输入的是有效数字（`!isNaN`），循环就会持续。在循环内部，将输入的数字累加到名为 `total` 的变量中，变量 `counter` 加 1，并使用 `prompt` 方法从用户处获取另一个数字。当用户点击“取消”按钮时，循环结束，此时会返回一个不是数字的值（null 值）。然后，接下来的两条语句计算数字的平均值并显示该平均值。
+
+顺便提一下，如果 `!isNaN` 也让你感到困惑，那是因为两个负号组合在一起总是令人困惑的。与其想得太多，只需接受 `!isNaN` 表示数字是有效的，而 `isNaN` 表示数字无效即可。
+
+## while 循环的语法
+
+```
+while ( condition ) { statements }
+```
+
+## 一个累加 1 到 5 数字的 while 循环
+
+```javascript
+var sumOfNumbers = 0;
+var numberOfLoops = 5;
+var counter = 1;
+while (counter <= numberOfLoops) {
+  sumOfNumbers += counter; // 将 counter 加到 sumOfNumbers
+  counter++; // 将 counter 加 1
+}
+alert(sumOfNumbers); // 显示 15
+```
+
+## do-while 循环的语法
+
+```javascript
+do { statements } while ( condition );
+```
+
+## 一个累加 1 到 5 数字的 do-while 循环
+
+```javascript
+var sumOfNumbers = 0;
+var numberOfLoops = 5;
+var counter = 1;
+do {
+  sumOfNumbers += counter; // 将 counter 加到 sumOfNumbers
+  counter++; // 将 counter 加 1
+} while (counter <= numberOfLoops);
+alert(sumOfNumbers); // 显示 15
+```
+
+## 一个计算输入数字平均值的 while 循环
+
+```javascript
+var total = 0, count = 0, number;
+number = parseFloat( prompt("Enter a number:") );
+while ( !isNaN(number) ) {
+  total += number;
+  count++;
+  number = parseFloat( prompt("Enter another number or click Cancel to stop:") );
+}
+var average = total / count;
+alert("The average is: " + average);
+```
+
+## 描述
+
+- while 语句创建一个 while 循环，其中包含一个当条件为真时执行的代码块。该条件在循环开始时测试，如果条件为假，则跳过循环。
+- do-while 语句创建一个 do-while 循环，其中包含一个当条件为真时执行的代码块。然而，它的条件是在循环结束时测试而非开始时，因此循环中的代码至少会被执行一次。
+
+![](img/fb3dabc43193711c2307f942481ad30c_92_0.png)
+
+# 如何编写 for 循环
+
+图 2-15 展示了如何使用 `for` 语句创建循环。当循环的进度取决于一个每次循环都会增加的值时，这种类型的循环编写起来会更容易。在语句的括号内，你初始化一个在循环内使用的计数器（或索引）变量。然后，你编写一个决定循环何时结束的条件。最后，你编写一个关于计数器应如何增加的规范。
+
+图中的第一个示例展示了这是如何运作的。`for` 语句括号中的第一条语句声明了一个命名的计数器并将其初始化为 1。然后，括号中的条件决定了只要 `counter` 小于或等于 `numberOfLoops` 的值，循环就会继续，并且还定义了每次循环将计数器加 1 的表达式。在循环内部，`counter` 的值被加到命名变量 `sumNumbers` 中。
+
+如果你将此示例与图 2-14 中的前两个示例相比，你会发现三个都得到了相同的结果。但使用 `for` 语句，你不需要在语句之前初始化计数器。
+
+下一个示例展示了 `for` 循环的一个更真实的用法。这次，使用 `i` 用作计数器的名称，只要 `i` 小于或等于年份，循环就会继续。在循环内部，使用 `+=` 运算符加上当年的利息。注意这里 `annualRate` 需要除以 100 才能生效。
+
+在该图的两个示例中，计数器每次都加 1，这通常是该语句的编写方式。然而，你也可以按其他幅度增减计数器。例如，要加 2，你可以将增加表达式编写为：
+
+```javascript
+i = i + 2
+```
+
+## for 语句的语法
+
+```
+for ( counterInitialization; condition; incrementExpression ) {
+    statements
+}
+```
+
+## 一个累加 1 到 5 数字的循环
+
+```javascript
+var sumOfNumbers = 0;
+var numberOfLoops = 5;
+for ( counter=1; counter <= numberOfLoops; counter++) {
+    // 将 counter 加到 sumOfNumbers
+    sumOfNumbers += counter;
+}
+alert(sumOfNumbers);      // 显示 15
+```
+
+## 一个计算投资未来值的循环
+
+```javascript
+var investment = 10000;
+var annualRate = 7.0;
+var years = 10;
+var futureValue = investment;
+for ( i = 1; i <= years; i++) {
+    futureValue += futureValue * annualRate / 100;
+}
+alert(futureValue);      // 显示 19672
+```
+
+## 未来值计算的其他编写方式
+
+```javascript
+futureValue = futureValue + (futureValue * annualRate / 100);
+futureValue = futureValue * (1 + (annualRate / 100))
+```
+
+## 描述
+
+- `for` 语句用于需要增减一个决定循环执行次数的计数器的情况。
+- 在 `for` 语句的括号内，你编写一个初始化计数器变量的表达式、一个决定循环何时结束的条件表达式，以及一个指示每次循环应如何增加或递减计数器的增加表达式。
+- 变量 `i` 常用于 `for` 循环的计数器。
+
+# 两个示例性应用
+
+你已经学习了足够的 JavaScript 知识来开发自己的简单应用程序。这些并不是现实的应用程序，因为它们通过 `prompt` 语句获取用户输入，而不是从表单控件获取。然而，这些应用程序将帮助你开始使用 JavaScript 的方法和控制语句。
+
+## 每加仑英里（Miles Per Gallon）应用
+
+图 2-16 显示了一个简单的应用程序，它发出两个 `prompt` 语句，让用户输入行驶的英里数和消耗的汽油加仑数。然后，应用程序计算每加仑英里数，并用一个 `alert` 语句在第三个对话框中显示结果。
+
+由于此应用程序使用 `prompt` 方法获取输入并使用 `alert` 方法显示输出，因此该应用的 HTML 非常简单。它包含一个 `h1` 元素，在 JavaScript 执行完成后会显示。（正如我之前说的，这个应用程序是不现实的。）
+
+在 JavaScript 中，你可以看到用户的输入是如何被存储在名为 `miles` 和 `gallons` 的变量中，并解析为十进制值。之后，`miles` 除以 `gallons`，结果保存在名为 `mpg` 的变量中。然后，将该变量中的值解析为整数，以便移除任何小数位。最后，一个 `alert` 语句在第三个对话框中显示结果。当用户点击 OK 按钮时，JavaScript 结束，带有唯一标题的页面将在浏览器中显示。
+
+你能猜到如果用户在其中一个 prompt 框中输入无效数据会发生什么吗？这时 `parseFloat` 方法将返回 `NaN` 而不是数字，计算将无法进行。相反，最后一个 `alert` 将显示：
+
+```
+Miles per gallon = NaN
+```
+
+与其他语言不同，JavaScript 在无法进行计算时会一直运行完成而不是崩溃，网页将会显示。
+
+顺便提一下，图中的对话框是 Firefox 的对话框，你可以忽略这些框中显示的 Firefox 复选框和消息。当你使用其他浏览器时，对话框将同样工作，但外观不同。
+
+## 计算 MPG 应用的对话框
+
+第一个 prompt 对话框
+
+![](img/fb3dabc43193711c2307f942481ad30c_96_0.png)
+
+第二个 prompt 对话框
+
+![](img/fb3dabc43193711c2307f942481ad30c_96_1.png)
+
+显示结果的 alert 对话框
+
+![](img/fb3dabc43193711c2307f942481ad30c_96_2.png)
+
+## 应用的 HTML 和 JavaScript
+
+```html
+<!doctype html>
+<head>
+  <title>The Calculate MPG Application</title>
+  <script>
+    alert("The Calculate MPG application");
+    var miles = prompt("Enter miles driven");
+    miles = parseFloat(miles);
+    var gallons = prompt("Enter gallons of gas used");
+    gallons = parseFloat(gallons);
+    var mpg = miles/gallons;
+    mpg = parseInt(mpg);
+    alert("Miles per gallon = " + mpg);
+  </script>
+</head>
+<body>
+  <section>
+<h1>This page is displayed after the JavaScript is executed</h1>
+  </section>
+</body>
+</html>
+```
+
+图 2-16 每加仑英里应用
+
+## 测试分数应用
+
+图 2-17 显示了一个简单的应用程序，允许用户输入一系列测试分数。然后，当用户输入 999 来结束序列时，应用程序将显示平均测试分数。
+
+与每加仑英里应用不同，此应用程序在将输入添加到测试总和之前，会测试该输入是否是 0 到 100 之间的有效数字。这通常被称为数据验证。如果输入无效，应用程序将显示错误消息并发出另一个 `prompt` 语句，让用户可以输入另一个分数或输入 999 来结束输入。
+
+如果你查看 HTML `head` 部分中 `script` 元素中的 JavaScript，你可以看到它首先声明了获取输入所需的三个变量。`total` 变量的初始值为 0，将用于累加测试分数。`entryCount` 变量的初始值为 0，将用于计算有效测试分数的数量。第三个变量是 `entry`，它没有分配初始值。它将用于接收用户输入。
+
+声明变量后，使用 `do-while` 循环来获取用户输入。由于必须至少获取一次用户输入，因此使用 `do-while` 循环而不是 `while` 循环是有合理的。
+
+第二个参数设置为 999，这样用户只需按 Enter 键即可结束输入。
+
+然后，每个输入都会被解析为整数，并通过 `if` 语句检查有效性。如果输入有效，则将输入值加到 `total` 变量中并在 `entryCount` 变量上加 1。否则，`alert` 方法将显示错误消息且不处理该输入。
+
+当循环中的语句执行完毕，将测试循环条件。如果输入值为 999，则语句结束。否则，为每个输入重复循环。
+
+当循环结束时，将计算平均测试分数并存储在名为 `average` 的变量中。此计算简单地将 `total` 变量除以 `entryCount` 变量。然后，使用 `parseInt` 方法将十进制值转换为整数。最后，一个 `alert` 语句显示平均分。
+
+## 测试分数应用的对话框
+
+测试分数的 prompt 框
+
+![](img/fb3dabc43193711c2307f942481ad30c_96_0.png)
+
+错误的 alert 框
+
+![](img/fb3dabc43193711c2307f942481ad30c_96_1.png)
+
+显示结果的 alert 对话框
+
+![](img/fb3dabc43193711c2307f942481ad30c_96_2.png)
+
+## HTML head 部分中的 JavaScript
+
+```html
+<script>
+var total = 0;
+var entryCount = 0;
+var entry;
+do {
+  entry = prompt("Enter score\nOr 999 to end entries");
+  entry = parseInt(entry);
+  if (entry >= 0 && entry <= 100) {
+    total += entry;
+    entryCount++;
+  } else if (entry != 999) {
+    alert("Entry must be a number from 0 to 100");
+  }
+} while (entry != 999);
+var average = total/entryCount;
+alert("Average score is " + average);
+</script>
+```
+
+图 2-17 测试分数应用
+
+# 如何查找代码错误
+
+当你输入并测试简单的应用程序时，你的代码可能会出现错误。当发生这种情况时，JavaScript 可能完全不运行，或者运行一段时间后停止。这就是为什么图 2-18 提供了一些查找错误的方法建议。
+
+## 如何在 Firefox 中获取错误消息
+
+当你加载页面但 JavaScript 没有运行时，找出问题最简单的方法是显示浏览器捕获的消息。要在 Firefox 中这样做，你只需如图所示打开错误台。在这里，控制台显示了程序运行时发生的一个错误消息。它说 `score` 变量未定义。然后，如果你点击错误台中的链接，将显示导致错误的源代码。在这种情况下，你无法在包含源代码的窗口中修复错误。相反，你需要切换到你的文本编辑器或 IDE 来修复并保存代码，然后在 Firefox 中重新加载应用程序。
+
+## 常见的 JavaScript 错误
+
+此图列出了一些编写 JavaScript 应用程序时常见的编码错误。如果你学习这个列表，你将更好地了解查找错误时应该寻找什么。
+
+如果你使用良好的文本编辑器或 IDE，可以通过注意在输入代码时显示的错误标记来避免大多数此类错误。例如，Aptana 会帮助你避免大多数此类错误，并为你节省大量时间。
+
+## 带有错误描述的 Firefox 错误控制台
+
+![](img/fb3dabc43193711c2307f942481ad30c_100_0.png)
+
+点击链接后显示的源代码
+
+![](img/fb3dabc43193711c2307f942481ad30c_100_1.png)
+
+## 如何显示 Firefox 错误控制台和源代码
+
+- 要显示控制台，使用 工具→开发者→错误控制台命令，或按 Ctrl+Shift+J。
+- 要显示错误的源代码，点击错误控制台中的链接。
+
+## 常见的语法错误
+
+- 关键字拼写错误，例如将 `parseInt` 写成 `parseinteger`。
+- 缺少必要的括号、引号或大括号。
+- 没有使用相同的起始和结束引号。
+- 语句末尾缺少分号。
+- 在测试相等性时使用了一个等号，而不是两个。
+- 标识符拼写错误或计算错误，例如定义变量 `salesTax` 却引用为 `salestax`。
+
+## 描述
+
+- 当 Firefox 的 JavaScript 引擎遇到它无法执行的语句时，它会在错误控制台中显示错误并停止执行 JavaScript。
+- 错误控制台顶部的按钮允许你显示所有错误、仅显示致命错误、仅显示警告或消息。“清除”（Clear）按钮移除控制台中的所有错误。
+- 如果你点击错误控制台中的错误链接，Firefox 会显示导致错误的 JavaScript 语句。但是你无法编辑该文件。
+
+图 2-18 如何在代码中查找错误
+
+© 2012, Mike Murach and Associates, Inc. Licensed to Michael Hotham.
+
+## 观点
+
+如果你有编程经验，现在可以发现 JavaScript 的语法与 Java 和 C# 等语言相似。因此，你应该能很快读完这一章。你可能也想跳过练习。
+
+另一方面，如果你是编程初学者，并且理解本章中两个应用程序中的所有代码，那么你有一个良好的开始。否则，你需要学习这些应用程序，直到理解每个应用程序的每一行代码。你还应该完成后续的练习。
+
+## 术语
+
+- 外部 JavaScript 文件
+- 嵌入式 JavaScript
+- JavaScript 语句
+- 语法
+- 空格
+- 标识符
+- 保留字
+- 关键字
+- 驼峰命名
+- 注释
+- 注释掉
+- 对象
+- 方法
+- 属性
+- 调用方法
+- 点运算符 (dot)
+- 参数
+- 窗口对象
+- 全局对象
+- 原始数据类型
+- 数字类型
+- 整数
+- 小数值
+- 浮点数
+- 字符串类型
+- 字符串
+- 空字符串
+- 布尔数据类型
+- 布尔值
+- 数值表达式
+- 算术运算符
+- 取模运算符
+- 优先级
+- 变量
+- 声明变量
+- 赋值语句
+- 赋值运算符
+- 复合赋值运算符
+- 数字字面量
+- 连接
+- 拼接运算符
+- 字符串字面量
+- 转义序列
+- NaN
+- 对象链式调用
+- 控制语句
+- 条件表达式
+- 关系运算符
+- 复合条件运算符
+- 逻辑运算符
+- if 语句
+- if 子句
+- else 子句
+- 嵌套 if 语句
+- while 语句
+- while 循环
+- do-while 语句
+- do-while 循环
+- for 语句
+- for 循环
+- 循环计数器或索引
+- 数据验证
+
+## 总结
+
+- HTML 文档页面的 JavaScript 通常编写在由 script 元素标识的外部 JavaScript 文件中。然而，JavaScript 也可以嵌入在文档 head 或 body 部分的 script 元素中。
+- JavaScript 语句的语法与 Java 相似。它的标识符是区分大小写的，并且通常使用驼峰命名或下划线命名法。它的注释可以是块注释或行注释。
+- JavaScript 提供了许多对象，这些对象提供了可以在应用程序中调用或引用的属性。由于窗口对象是 JavaScript 的全局对象，在引用其方法或属性时可以省略它。
+- JavaScript 提供了三种原始数据类型。数字类型支持整数和小数。字符串数据类型提供字符（字符串）数据，布尔数据类型提供真和假值。要给变量赋值，你使用赋值运算符。
+- 当你给数字变量赋值时，可以使用包含算术运算符、变量名和数字字面量的数值表达式。
+- 当你给字符串变量赋值时，可以使用包含拼接运算符、变量名和字符串字面量的字符串表达式。在字符串字面量内部，你可以使用转义序列提供特殊字符。
+- 当你编写条件表达式时，可以使用关系运算符、全局 isNaN 和逻辑运算符。
+- if 语句始终以 if 子句开始。它也可以有一个或多个 else if 子句和一个结尾的 else 子句，但这些子句是可选的。
+- while 和 do-while 语句可以用于在条件真时循环一系列语句。
+- for 语句可以每当计数器或索引增加或减少一次时循环一系列语句。
+- 在测试 JavaScript 应用程序时，可以使用 Firefox 错误控制台来查找错误。
+
+## 在完成本书的练习之前...
+
+如果你还没有这样做的话，请下载本书的源代码和练习起始文件。
+
+### 添加验证
+
+如果你还没有这样做的话，请为 MPG 应用程序添加验证逻辑。
+
+## 练习 2-2 创建数字之和
+
+这是一个简单的应用程序，使用 prompt 方法获取用户输入，输入可以是 1 到 100 之间的数字。然后，应用程序将相加从 1 到用户输入值的所有数字并显示和。例如，如果用户输入 5，应用程序将相加 1、2、3、4 和 5，因此显示 15。
+
+# 第3章 如何处理对象、函数和事件
+
+在上一章中，你学习了如何使用 `prompt` 和 `alert` 方法编写一些简单但并不切实际的应用程序。现在，在本章中，你将学习如何处理对象、函数和事件。当你完成本章后，你就准备好开始开发自己的真实世界应用程序了。
+
+| 如何使用对象处理数据 ............................................................ 92 |
+| 如何使用 window 和 document 对象 ....................................... 92 |
+| 如何使用 Textbox 和 Number 对象 ................................................ 94 |
+| 如何使用 Date 和 String 对象 ................................................... 96 |
+| 如何使用 DOM 对象更改元素的文本 ......................................... 98 |
+| 如何使用函数 ....................................................................... 100 |
+| 如何创建和调用匿名函数 ........................................ 102 |
+| 如何创建和调用命名函数 ............................................... 102 |
+| 何时以及如何使用局部和全局变量 ........................................ 104 |
+| 如何处理事件 ....................................................................... 106 |
+| 如何向事件绑定事件处理器 ............................................ 106 |
+| 如何使用 onload 事件处理器绑定其他事件处理器.... 108 |
+| 两个示例性应用程序.................................................................. 110 |
+| 每加仑英里数应用程序.................................................................. 110 |
+| 电子邮件列表应用程序 ................................................................ 112 |
+| 观点 ..................................................................................... 116 |
+
+## 如何使用对象处理数据
+
+在上一章中，你学习了使用对象方法和属性的语法。你还接触了 `window` 对象的某些方法和属性。现在，你将学习如何使用处理数据所需的对象、方法和属性。
+
+## 如何使用 window 和 document 对象
+
+在第 2 章中，你接触了 `window` 对象的 `prompt` 和 `alert` 方法。现在，图 3-1 中的第一个表格展示了 `window` 对象的另一种方法，用于确认操作。
+
+图中的第二个表格总结了你在第 2 章中学到的 `parseInt` 和 `parseFloat` 方法。它们也是 `window` 对象的方法，之所以需要它们，是因为 `prompt` 方法返回的值以及用户输入到文本框的值都是以字符串形式返回的。
+
+第一组示例说明了这些方法的用法，从 `confirm` 方法的示例开始。对于后面的语句，假设 `prompt` 存储中的默认值没有被用户更改。因此，该组中的第二条语句将 `12345.6789` 作为字符串存储在变量 `entryA` 中，第三条语句将字符串转换为整数值 `12345`。同样，第四条语句将 `12345.6789` 作为字符串存储在变量 `entryB` 中，第五条语句将字符串转换为小数值 `12345.6789`。
+
+请注意，在这些示例中，方法名称之前没有编写对象名称。没关系，因为 `window` 是 JavaScript 的全局对象。同样注意，`parseInt` 方法不会四舍五入数值。它只是移除或截断字符串的任何小数部分。
+
+与 `window` 对象不同，`document` 对象是 DOM 结构中的最高对象。它代表文档，当你使用它的方法之一时，你需要编写对象名称（`document`）。
+
+图中的第二组示例展示了如何使用 `document` 对象的两个方法。第一个是 `getElementById` 方法，它需要一个参数，即 HTML 文档中元素的 `id`。执行时，它会返回一个代表 HTML 元素的对象。在这个示例中，该对象存储在变量 `rateBox` 中。
+
+相比之下，`write` 和 `writeln` 方法可以在 HTML 文档的主体中使用，将字符串写入 HTML 文档。你在上一章的图 2-2 中见过它是如何工作的。
+
+## window 的另一个显示对话框的方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `confirm(string)` | 显示一个对话框，其中包含参数中的字符串、一个 OK 按钮和一个 Cancel 按钮。如果用户点击 OK，则返回 `true`。如果用户点击 Cancel，则返回 `false`。 |
+
+## window 处理数字的两种方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `parseInt(string)` | 将传递的字符串转换为整数数据类型并返回该值。如果无法将字符串转换为整数，则返回 `NaN`。 |
+| `parseFloat(string)` | 将传递的字符串转换为小数数据类型并返回该值。如果无法将字符串转换为小数，则返回 `NaN`。 |
+
+## document 对象的三个方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `getElementById(id)` | 获取传递 id 的 HTML 元素并返回元素。 |
+| `write(string)` | 将传递的字符串写入文档。 |
+| `writeln(string)` | 写入字符串并换新行。 |
+
+## window 方法示例
+
+```javascript
+confirm("Are you sure you want to delete it?");
+var entryA = prompt("Enter any value", 12345.6789);
+entryA = parseInt(entryA);
+var entryB = prompt("Enter any value", 12345.6789);
+entryB = parseFloat(entryB);
+```
+
+## document 方法示例
+
+```javascript
+var rateBox = document.getElementById("rateBox");
+document.write("This is a string.");
+document.writeln("This is a string followed by a newline.");
+```
+
+## 描述
+
+- `window` 对象是 JavaScript 的全局对象。
+- `parseInt` 方法不会四舍五入数值；它截断小数部分。
+- `document` 对象是 DOM 结构中的最高对象。
+- `getElementById(id)` 需要一个 id 并返回该元素。
+- `write` 和 `writeln` 用于将字符串写入 HTML 文档。
+
+## 如何使用 TextBox 和 Number 对象
+
+- `Textbox` 对象用于用户输入。
+- `Number` 对象用于数值数据。
+- 链式调用允许将多个方法和属性组合到单个语句中。
+
+## TextBox 对象的一个方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `focus()` | 将光标移动到文本框，但不返回任何内容。 |
+
+## TextBox 对象的两个属性
+
+| 属性 | 描述 |
+| --- | --- |
+| `value` | 一个表示文本框内容的字符串。 |
+| `disabled` | 一个控制文本框是否禁用的布尔值。 |
+
+## Number 对象的一个方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `toFixed(digits)` | 返回数字在根据参数指定的小数位数进行舍入后的字符串表示形式。 |
+
+## 定义两个文本框的 HTML 标签
+
+```html
+<input type="text" id="first_name">
+<input type="text" id="sales_amount">
+```
+
+## 如何使用 value 属性从文本框中获取值
+
+不使用链式
+
+```javascript
+var firstName = document.getElementById("first_name");
+firstName = firstName.value;
+```
+
+使用链式
+
+```javascript
+var firstName = document.getElementById("first_name").value;
+```
+
+## 如何使用 parseFloat 方法从文本框中获取数值
+
+不使用链式
+
+```javascript
+var salesAmount = document.getElementById("sales_amount");
+salesAmount = salesAmount.value;
+salesAmount = parseFloat(salesAmount);
+```
+
+使用链式
+
+```javascript
+var salesAmount = parseFloat(document.getElementById("sales_amount").value);
+```
+
+## 链式调用的其他示例
+
+```javascript
+var salesAmount = parseFloat(document.getElementById("sales_amount").value).toFixed(2);
+document.getElementById("first_name").value = ""; // 清空文本框
+document.getElementById("first_name").focus(); // 将焦点移动到文本框
+```
+
+## 描述
+
+- 当你使用 getElementById 获取文本框时，该方法返回一个 TextBox 对象。然后，你可以使用它的 value 属性来获取框中的值。
+- 当你声明一个数字类型变量时，会创建一个 Number 对象。然后，你就可以对该变量使用 Number 方法。
+
+图 3-2 如何使用 TextBox 和 Number 对象
+
+## 如何使用 Date 和 String 对象
+
+当你在变量中使用数字或字符串值时，它会自动转换为 Number 或 String 对象。这允许你使用 Number 和 String 对象的属性和方法，而无需显式地创建这些对象。
+
+然而，日期并没有对应的基元数据类型。因此，你需要在使用其方法之前创建一个 Date 对象。要实现这一点，你可以使用图 3-3 中的语法。当你创建一个 Date 对象时，它会被初始化为用户计算机上的当前日期和时间。
+
+创建 Date 对象后，你可以使用此图中的方法对其进行操作。这些方法由第一组示例说明，假设日期是 2012 年 3 月 9 日。在这里，`toString` 方法将日期转换为字符串。`getFullYear` 方法从日期中获取四位数的年份。`getDate` 方法获取月份中的日期。`getMonth` 方法获取月份，计数从 0 开始而不是从 1。因此，`getMonth` 方法对 3 月返回 2，而不是 3。
+
+此图还展示了 String 对象的一个属性和四种方法。然后，最后一组示例展示了一些显示这些属性如何工作的语句。例如，第二个语句使用 `toUpperCase` 方法将字符串转换为大写，而第三个语句使用 `length` 属性来获取字符串中的字符数。
+
+最后两个语句展示了如何使用 String 对象的 `indexOf` 和 `substr` 方法从字符串中提取子字符串。这里，`indexOf` 用于获取字符串中第一个空格的位置（索引），从 0 开始计数。由于空格在第四个位置，因此它返回 3。然后，`substr` 方法获取从第一个位置开始且长度为 3 的子字符串。结果是该方法返回 "Ray"。
+
+顺便提一下，JavaScript 为 Date 和 String 对象提供了更多方法和属性，但这些足够你入门了。稍后，如果应用程序需要其他的 Date 或 String 属性或方法，我们将详细解释它们的工作原理。
+
+## 创建 JavaScript 对象并赋值给变量的语法
+
+```javascript
+var variableName = new Object();
+```
+
+## 创建 Date 对象的语句
+
+```javascript
+var today = new Date();
+```
+
+## Date 对象的一些方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `toString()` | 返回带有格式化日期的字符串。 |
+| `getFullYear()` | 从日期中获取四位数的年份。 |
+| `getDate()` | 返回日期中的日。 |
+| `getMonth()` | 返回日期的月份数字。月份从 0 开始编号。1 月是 0，12 月是 11。 |
+
+## String 对象的一个属性
+
+| 属性 | 描述 |
+| --- | --- |
+| `length` | 返回字符串中的字符数。 |
+
+## String 对象的一些方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `indexOf(search, position)` | 从位置（或如果省略 position 则从 0 开始）开始搜索字符串的首次出现。如果找到，返回第一个字符的位置，从 0 开始计数。如果未找到，则返回 -1。 |
+| `substr(start, length)` | 返回从指定位置开始并包含指定数量字符的子字符串。 |
+| `toLowerCase()` | 返回一个字母已转换为小写的新字符串。 |
+| `toUpperCase()` | 返回一个字母已转换为大写的新字符串。 |
+
+## 使用 Date 对象的示例
+
+```javascript
+var today = new Date(); // 创建当前日期的 Date 对象
+alert(today.toString()); // 显示 Fri 9 2012
+alert(today.getFullYear()); // 显示 2012
+alert(today.getDate()); // 显示 9
+alert(today.getMonth()); // 显示 2，而不是 3
+```
+
+## 使用 String 对象的示例
+
+```javascript
+var name = "Ray Harris";
+var nameUpper = name.toUpperCase(); // nameUpper = HARRIS
+var nameLength = name.length; // nameLength = 10
+var index = name.indexOf(" "); // index = 3
+var firstName = name.substr(0, index); // firstName = Ray
+```
+
+## 描述
+
+- 要创建 Date 对象并将其赋值给变量，请使用上面的语法。
+- 然后，你可以声明一个字符串变量，会自动创建一个 String 对象。
+- 然后你就可以对该变量使用 String 方法。
+
+图 3-3 如何使用 Date 和 String 对象
+
+# 第3章 如何处理对象、函数和事件 99
+
+## 网页的代码
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>加入邮件列表</title>
+</head>
+<body>
+  <h1>请加入我们的邮件列表</h1>
+  <form id="email_form" name="email_form"
+    action="join.html" method="get">
+    <label for="email_address">邮箱地址:</label>
+    <input type="text" id="email_address">
+    <span id="email_address_error">*</span><br>
+    <label name="&nbsp;"></label>
+    <input type="button" id="join_list" value="加入我们的列表">
+  </form>
+</body>
+</html>
+```
+
+## 网页的 DOM
+
+![](img/fb3dabc43193711c2307f942481ad30c_114_0.png)
+
+## 更改元素文本节点的语法
+
+`elementObject.firstChild.nodeValue = "元素的文本";`
+
+在 span 元素中放入消息的示例
+
+```javascript
+document.getElementById("email_address_error").firstChild.nodeValue = "此项为必填";
+```
+
+## 描述
+
+- DOM（文档对象模型）是浏览器内存中一个层次化的节点集合，记录了当前的网页。
+- 网页的 DOM 是随着浏览器加载页面而构建的。
+- JavaScript 可以通过修改 DOM 来修改浏览器中的网页。每当 DOM 发生变化时，浏览器都会显示更改的结果。
+- 要修改如 h1、label 或 span 等 HTML 元素的文本，可以使用 `firstChild` 属性获取元素的第一个后代节点，然后使用 `nodeValue` 属性访问该节点的文本。
+
+图 3-4 如何使用 DOM 更改元素的文本
+
+© 2012, Mike Murach and Associates, Inc. Licensed to Michael Hotham.
+
+## 如何使用函数
+
+在开发 JavaScript 应用时，你需要处理如用户点击按钮之类的事件。为了做到，你需要编写并调用处理这些事件的函数。正如你看到的，你也可以以其他方式使用函数。
+
+## 如何创建和调用匿名函数
+
+函数是一个语句块，它可以接收参数并使用 `return` 语句返回一个值。一旦你定义了一个函数，就可以在 JavaScript 代码的其他地方调用它。在图 3-5 中，你可以看到如何创建和调用一类 JavaScript 函数，称为匿名函数。
+
+要开始一个匿名函数，你编写关键字，后跟存储该函数的变量名。然后，你编写赋值运算符、`function` 关键字、括号中的参数列表以及大括号中的代码块。如果函数没有参数，括号是必须的。
+
+当函数以这种方式编写代码时，它们被称为匿名函数，因为从技术上讲它们没有名称。相反，它们被存储在变量中。
+
+要调用匿名函数，你编写存储函数的变量名，后跟括号中的参数。然后，函数在执行其代码块时会使用通过参数传递给它的数据。在这里，如果函数没有参数，括号是必须的。
+
+图中的第一个示例创建了一个存储在名为 `showYear` 的变量中的函数。该函数不需要任何参数也不返回任何值。执行时，该函数会显示显示当前年份的对话框。
+
+第二个示例创建了一个带参数的函数，该参数是 HTML 元素的 `id` 属性名。该函数返回一个代表该 HTML 元素的对象。在此示例中，调用获取了 id 为 'email_address' 的 HTML 文本框对象，然后使用对象的属性获取用户输入的值。
+
+图中的第三个示例创建了一个名为 `calculateTax` 的函数，它需要两个参数并返回一个值。它计算销售税，将其保留两位小数，并将该舍入后的值返回给调用它的语句。
+
+要调用此函数，语句传递了两个名为 `subtotal` 和 `taxRate` 的变量。在这种情况下，值的变量名与函数中的参数名相同，但这不是必须的。要求的是调用语句必须传递数据类型和顺序与函数中的参数相同的参数。
+
+顺便提一下，有些程序员将 parameter（参数）和 argument（实参）视为同义词。另一些人使用 parameter 指函数中的参数，而使用 argument 指传递给函数的参数。为了本书的简单起见，我们使用 parameter 指代两者。
+
+## 匿名函数的语法
+
+```
+var variableName = function(parameters) {
+  // 函数执行时运行的语句
+}
+```
+
+## 无参数且不返回值的匿名函数
+
+```javascript
+var showYear = function() {
+  var today = new Date();
+  alert("年份是 " + today.getFullYear());
+}
+```
+
+## 如何调用函数
+
+```javascript
+showYear();
+```
+
+## 返回 DOM 元素的带一个参数匿名函数
+
+```javascript
+var $ = function(id) {
+  return document.getElementById(id);
+}
+```
+
+## 如何调用函数
+
+```javascript
+var emailAddress = $("email_address").value;
+```
+
+## 返回值的带两个参数匿名函数
+
+```javascript
+var calculateTax = function(subtotal, taxRate) {
+  var tax = subtotal * taxRate;
+  return parseFloat(tax.toFixed(2));
+}
+```
+
+## 如何调用函数
+
+```javascript
+var subtotal = 85.00;
+var taxRate = 0.05;
+var salesTax = calculateTax(subtotal, taxRate);
+```
+
+## 描述
+
+- 函数是一个语句块，可以接收参数并返回值。
+- 匿名函数存储在变量中，通过变量名调用。
+- 函数参数在定义时指定，调用时传递实参。
+
+## 何时以及如何使用局部变量和全局变量
+
+编程语言中的作用域指的是变量和函数的可见性。也就是说，它告诉你在程序中哪些你定义的变量和函数是允许使用的。
+
+
+
+# 如何处理对象、函数和事件
+
+## 局部变量与全局变量
+
+当你使用 JavaScript 时，局部变量是定义在函数内部的变量。它们具有局部作用域，这意味着它们只能在定义它们的函数内部使用。
+
+相反，全局变量是定义在函数外部的变量。这些变量具有全局作用域，因此任何函数都可以访问它们，而无需将它们作为参数传递给函数。
+
+图 3-7 中的第一个示例说明了局部变量的使用。在这里，`calculateTax` 函数创建了一个变量 `tax`，并将 `tax` 返回给调用语句。然后，该语句可以将返回值存储在另一个变量中。但注意，语句不能引用名为 `tax` 的变量，否则会导致错误。这是因为它具有局部作用域。
+
+相比之下，第二个示例创建了一个全局变量 `tax`。然后，函数计算销售税并将结果存储在全局变量中。结果是函数不需要返回 `tax` 变量。相反，函数外部的语句可以引用该变量，因为它是全局的。
+
+使用全局变量向函数传递数据并返回数据似乎更简单，但全局变量经常会产生问题。因为任何函数都可以修改全局变量，而且很容易遗漏某个变量或修改错误的变量，特别是在大型应用程序中。这反过来会产生调试问题。
+
+相比之下，使用局部变量减少了命名冲突的概率。例如，两个不同的函数可以使用相同的名称作为局部变量而不会引起冲突。这自然意味着更少的错误和调试问题。除了少数例外情况，你应用程序中的所有代码都应该写在函数中，这样所有变量都是局部的。
+
+为了增加变量使用的复杂性，JavaScript 引擎确保如果你在声明变量时不小心漏掉了 `var` 关键字，该变量将是全局变量。在这里，在第一次给 `tax` 赋值之前缺少了 `var` 关键字，因此它被假设为全局变量。
+
+这是 JavaScript 中需要注意的特性，可能会导致编码错误。例如，如果你在编写赋值语句时拼错了已声明的变量名称，它将会被视为一个新的全局变量。牢记这一点，在声明新变量时请务必包含 `var` 关键字，并在代码中引用变量之前始终先声明。
+
+### 一个使用名为 tax 的局部变量的函数
+
+```javascript
+var calculateTax = function (subtotal, taxRate) {
+    var tax = subtotal * taxRate;
+    // tax 是一个局部变量
+    var parse = parseFloat(tax.toFixed(2));
+    return tax;
+}
+```
+
+### 在函数外部引用局部变量会导致错误
+
+```javascript
+alert("Tax is " + tax); // 导致错误
+```
+
+### 一个使用名为 tax 的全局变量的函数
+
+```javascript
+var tax; // tax 是一个全局变量
+var calculateTax = function (subtotal, taxRate) {
+    var tax = subtotal * taxRate;
+    var parse = parseFloat(tax.toFixed(2));
+}
+```
+
+### 在函数外部引用全局变量不会导致错误
+
+```javascript
+alert("Tax is " + tax); // 不会导致错误
+```
+
+### 一个无意中使用了名为 tax 的全局变量的函数
+
+```javascript
+var calculateTax = function (subtotal, taxRate) {
+    tax = subtotal * taxRate; // 没有 var 关键字，所以 tax 被视为全局变量
+    var parse = parseFloat(tax.toFixed(2));
+}
+```
+
+### 在函数内部引用 tax 变量不会导致错误……但它本应该报错！
+
+```javascript
+alert("Tax is " + tax); // 不会导致错误
+```
+
+## 最佳编码实践
+
+- 尽可能使用局部变量。
+- 在其他语句引用变量之前，始终使用 `var` 声明一个新变量。
+
+## 讨论
+
+- 变量或函数的作用域决定了哪些代码可以访问它。
+- 在函数内部创建的变量是局部变量，局部变量只能由函数内部的代码引用。
+- 在函数外部创建的变量是全局变量，所有函数中的代码都可以访问所有变量。
+- 如果你在变量声明中忘记使用 `var` 关键字，JavaScript 引擎会假定该变量是全局的。这可能会导致调试问题。
+- 通常情况下，将局部变量作为参数从一个函数传递到另一个函数比使用全局变量更好。这会让你的代码更容易理解，并且出错概率更低。
+
+## 如何处理事件
+
+JavaScript 响应点击按钮等用户操作。这些操作被称为事件，而处理事件的匿名函数被称为事件处理器。要实现这一点，你必须将函数绑定到事件上。
+
+## 如何将事件处理器绑定到事件上
+
+图 3-8 中的表格总结了 JavaScript 应用程序常用的处理的一些事件。例如，`window` 对象的 `load` 事件发生在浏览器完成页面 HTML 加载并为其构建 DOM 时。按钮的 `click` 事件发生在用户点击按钮时。标题或链接等元素的 `mouseover` 事件发生在用户将鼠标悬停在元素上时。
+
+要做到这一点，你使用以 "on" 单词开头的名称前跟名称来绑定事件的语法。然后你编写一个等号，后面跟上将处理该事件的匿名函数的变量名。
+
+图中第一个示例是一个可以用作事件处理器的匿名函数。第二个示例显示了如何将事件处理器绑定到按钮上。第三个示例与第二个类似，它将事件处理器绑定到文本框。
+
+### 常见事件
+
+| 对象 | 事件 | 发生场景 |
+| --- | --- | --- |
+| window | load | 文档加载完成。 |
+| button | click | 按钮被点击。 |
+| control or link | focus | 控件或链接获得焦点。 |
+| | blur | 控件或链接失去焦点。 |
+| control | change | 用户更改控件的值。 |
+| | select | 用户在文本框或文本区域中选择文本。 |
+| element | click | 用户点击了元素。 |
+| | dblclick | 用户双击了元素。 |
+| | mouseover | 鼠标移动在元素上。 |
+| | mousein | 鼠标进入元素。 |
+| | mouseout | 鼠标移出元素。 |
+
+### 绑定事件处理器的语法
+
+```javascript
+objectVariable.eventName = eventHandlerName;
+```
+
+### 名为 joinList 的事件处理器
+
+```javascript
+var joinList = function() {
+  alert("语句在这里");
+}
+```
+
+### 如何将事件处理器绑定到按钮的点击事件
+
+```javascript
+document.getElementById("submit_button").onclick = joinList;
+```
+
+### 如何将事件处理器绑定到文本框的双击事件
+
+```javascript
+document.getElementById("text_box_1").ondblclick = joinList;
+```
+
+## 描述
+
+- 事件处理器是在事件发生时执行的函数，因此它“处理”该事件。因此，可以使用任何函数。
+- 要将事件处理器绑定到事件，你必须先指定对象和触发事件处理器的事件。然后，将事件处理器函数赋值给该事件。
+- 当你为事件处理器的事件编写代码时，要在事件名称前加 `on`。所以，例如 `onclick` 用于点击事件。
+
+## 如何使用 onload 事件处理程序来绑定其他事件处理器
+
+当你像上一个图所示那样绑定事件处理程序时，你是在 HTML 加载到用户浏览器并且 DOM 构建完成后才进行绑定的。要做到这一点，你为 `window` 对象的 `load` 事件编写一个事件处理程序，如图 3-9 所示。这让你对事件处理器是如何设置和使用的有一个直观的了解。
+
+在示例的 HTML 中，你可以看到一个标签、一个文本框、一个包含空格的标签以及一个按钮。这个简单的应用程序旨在在点击按钮或用户更改文本框中的值时显示一条消息。
+
+在 JavaScript 代码中，你可以看到三个匿名函数。第一个函数存储在名为 `$` 的变量中。该函数使用 `document` 对象的 `getElementById` 方法，当将 HTML 元素的 `id` 传递给它时获取该元素。这是一个常用的函数，它让你无需每次都编写 `getElementById` 方法就能轻松地获取元素对象。因此，你会经常看到它，可以将其认为是标准函数。
+
+第二个函数是按钮 `click` 事件的事件处理器，第三个函数是文本框 `change` 事件的事件处理器。这些函数都只显示一条消息。
+
+第四个函数是 `onload` 事件的事件处理器。它用于将其他事件处理器绑定到 `click` 和 `change` 事件上。注意，该函数开头为 `window.onload`，因此它在页面加载且 DOM 构建后执行。
+
+该函数内部有两个绑定其他事件处理器的语句。第一条将 `joinList` 处理器绑定到按钮的 `click` 事件上。第二条将 `changeValue` 处理器绑定到文本框的 `change` 事件上。这两个语句都使用 `$` 函数来获取事件所应用的对象。
+
+顺便提一下，`window.onload` 事件的事件处理器可以不仅仅是给事件分配函数。事实上，它可以执行 DOM 加载后所需的任何操作。你将在本书后续章节中看到相关的插图说明。
+
+## 图 3-9 如何使用 onload 事件处理程序来绑定其他事件处理器
+
+### 电子邮件地址更改后的网页浏览器
+
+![](img/fb3dabc43193711c2307f942481ad30c_124_0.png)
+
+### HTML 部分
+
+```html
+<h1>Please join our email list</h1>
+<label for="email_address">Email Address:</label>
+<input type="text" id="email_address" name="email_address"><br>
+<label>&nbsp;</label>
+<input type="button" id="join_list" value="Join Our List"><br>
+```
+
+### JavaScript 部分
+
+```javascript
+// 该函数
+var $ = function (id) {
+  return document.getElementById(id);
+}
+// 按钮 click 事件的事件处理器
+var joinList = function () {
+  alert("The Join function is being run.");
+}
+// 文本框 onchange 事件的事件处理器
+var changeValue = function () {
+  alert("The changeValue function is being run.");
+}
+// 绑定两个事件处理器的 onload 事件处理器
+window.onload = function () {
+  $("join_list").onclick = joinList;
+  $("email_address").onchange = changeValue;
+}
+```
+
+## 描述
+
+- `window` 对象的 `onload` 事件处理器可用于在 DOM 构建后绑定其他事件的事件处理器。
+
+## 两个示例应用程序
+
+你现在已经学习了足够的 JavaScript 知识来开发自己的应用程序。为了让你更好地了解如何操作，本章通过展示以下应用程序来结束。
+
+## 每加仑英里数应用（Miles Per Gallon）
+
+图 3-10 展示了一个让用户输入英里数和消耗油量的应用程序。每当用户点击按钮时，该程序会计算每加仑的油量，并显示在文本框中。
+
+为了保持简单，所有的 JavaScript 代码嵌入在 HTML 中。这样你可以看到 HTML 的结构。
+
+`$` 函数用于获取对象。首先，`onload` 事件处理器用于聚焦文本框。其次，`calculatepg` 函数用于绑定 `click` 事件。最后，`calculatepg` 事件处理器用于处理输入项。
+
+在 `calculatepg` 函数中，它检查输入项是否为数字。如果是，则显示错误消息；否则，它计算 `miles / gallons` 并结果保留一位小数显示在文本框中。
+
+注意 `onload` 事件处理器可以绑定 `click` 事件。`calculatepg` 函数是全局变量。
+
+### 浏览器中的每加仑英里数应用
+
+![](img/fb3dabc43193711c2307f942481ad30c_126)
+
+### HTML 和 JavaScript
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculate MPG</title>
+  <link rel="stylesheet" href="mpg.css">
+  <script>
+  var $ = function (id) {
+    return document.getElementById(id);
+  }
+  var calculatepg = function () {
+    var miles = parseFloat($("miles").value);
+    var gallons = parseFloat($("gallons").value);
+    if (isNaN(miles) || isNaN(gallons)) {
+      alert("Both entries must be numeric");
+    }
+    else {
+      var mpg = miles / gallons;
+      $("mpg").value = mpg.toFixed(1);
+    }
+  }
+  window.onload = function () {
+    $("calculate").onclick = calculatepg;
+    $("miles").focus();
+  }
+  </script>
+</head>
+<body>
+  <h1>Calculate Per</h1>
+  <label for="miles">Miles Driven:</label>
+  <input type="text" id="miles"><br>
+  <label for="gallons">Gallons of Gas:</label>
+  <input type="text" id="gallons"><br>
+  <label for="mpg">Miles Per Gall:</label>
+  <input type="text" id="mpg" disabled><br>
+  <label>&nbsp;</label>
+  <input type="button" id="calculate" value="Calculate MPG">
+</body>
+</html>
+```
+
+## 电子邮件列表应用程序
+
+图 3-11 展示了第一章介绍的电子邮件列表应用程序。在这个应用程序中，用户输入三个数据并点击“加入我们的列表”按钮。然后，JavaScript 应用程序会检查数据的有效性。如果任何项无效，应用程序将在其旁边显示错误消息。如果所有项都有效，数据将提交到服务器处理。
+
+### 网页浏览器中的邮件列表应用程序
+
+![](img/fb3dabc43193711c2307f942481ad30c_128_0.png)
+
+### 页面的 HTML 文件
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>加入邮件列表</title>
+  <link rel="stylesheet" href="email_list.css">
+  <script src="email_list.js"></script>
+</head>
+<body>
+<section>
+  <h1>请加入我们的邮件列表</h1>
+  <form id="join_form" name="email_form" method="get"
+       action="join.html">
+    <label for="email_address1">邮箱地址:</label>
+    <input type="text" id="email_address1" name="email_address1">
+    <span id="email_address1_error"></span><br>
+    <label for="email_address2">再次输入邮箱地址:</label>
+    <input type="text" id="email_address2" name="email_address2">
+    <span id="email_address2_error"></span><br>
+    <label for="first_name">姓*</label>
+    <input type="text" id="first_name" name="first_name">
+    <span id="first_name_error"></span><br>
+    <label for="nbsp;"></label>
+    <input type="button" id="join_list" value="加入我们的列表">
+  </form>
+</section>
+</body>
+</html>
+```
+
+## 图 3-12 邮件列表应用程序的 JavaScript
+
+```javascript
+var $ = function (id) {
+  return document.getElementById(id);
+}
+var joinList = function () {
+  var emailAddress1 = $("email_address1").value;
+  var emailAddress2 = $("email_address2").value;
+  var isValid = true;
+
+  // 验证第一个输入
+  if (emailAddress1 == "") {
+    $("email_address1_error").firstChild.nodeValue =
+      "此字段为必填。"
+    isValid = false;
+  } else {
+    $("email_address1_error").firstChild.nodeValue = "";
+  }
+
+  // 验证第二个输入
+  if (emailAddress2 == "") {
+    $("email_address2_error").firstChild.nodeValue =
+      "此字段为必填。"
+    isValid = false;
+  } else if (emailAddress1 != emailAddress2) {
+    $("email_address2_error").firstChild.nodeValue =
+      "此输入必须与第一个相同。"
+    isValid = false;
+  } else {
+    $("email_address2_error").firstChild.nodeValue = "";
+  }
+
+  // 验证第三个输入
+  if ($("first_name").value == "") {
+    $("first_name_error").firstChild.nodeValue =
+      "此字段为必填。"
+    isValid = false;
+  } else {
+    $("first_name_error").firstChild.nodeValue = "";
+  }
+
+  if (isValid) {
+    // 使用表单对象的 submit 方法提交表单
+    $("email_form").submit();
+  }
+}
+
+window.onload = function () {
+  $("join_list").onclick = joinList;
+  $("email_address1").focus();
+}
+```
+
+## 观点
+
+在本章中，你已经看到了真实世界的 JavaScript 应用程序使用对象和响应事件的方式。现在，如果你理解了本章中的所有内容，你就应该准备好开始开发自己的应用程序了。
+
+## 术语
+
+- `window` 对象
+- 全局对象
+- `document` 对象
+- 返回语句
+- 链
+- 匿名函数
+- 命名函数
+- DOM (文档对象模型)
+- 作用域
+- DOM 节点
+- 局部变量
+- 元素节点
+- 局部作用域
+- 文本节点
+- 全局变量
+- 属性节点
+- 全局作用域
+- 注释节点
+- 事件
+- 函数
+- 事件处理器
+- 调用函数
+- 附加事件
+
+## 总结
+
+- `Document` 对象提供了方法和属性，允许你处理对象模型或 DOM。
+- `TextBox`、`Number`、`Date` 和 `String` 对象提供了文本框、数字类型和字符串的方法和属性。在使用这些对象的方法和属性时，通常使用链式。
+- DOM 在页面加载时构建。它包含了代表元素的节点和代表元素文本的文本节点。要访问元素的文本，你可以引用元素的第一个节点的 `nodeValue`。
+- 函数是一个在函数被调用时执行的代码块。它可以接收调用语句传递的一个或多个参数。
+- 匿名函数存储在变量中，而命名函数没有存储在变量中。
+- 局部变量定义在函数内部，只能由函数访问。全局变量定义在函数外部，可以被任何代码访问。
+- 事件处理器是在点击按钮事件时调用的函数。为了实现这一点，必须将函数附加到事件。
+
+## 练习 3-1 增强 MPG 应用程序
+
+在此练习中，你将通过多种方式增强 MPG 应用程序。
+
+### 测试应用程序
+
+1. 你的编辑器或 IDE 打开此 HTML 文件：`c:\query\exercises\ch03\mpg\index.html`。然后检查代码是否与图 3-10 相同。
+2. 使用有效数据运行并测试此应用程序以查看其工作原理。点击 MPG 按钮时，应该显示正确的结果。
+3. 现在，测试数据验证程序。注意，无论什么输入无效，都会显示一个错误消息。
+
+### 增强数据验证
+
+4. 增强语句，使其为每个文本框和每种类型的错误提供不同的错误消息：
+   - 里程必须是数字
+   - 里程必须大于0
+   - 加油必须是数字
+   - 加油必须大于0
+   语句应该包含一个测试第一个条件的 `if` 子句，随后是两个测试后续条件的 `else if` 子句。然后，测试此更改。
+
+### 添加 Clear Entries 按钮
+
+5. 在 Calculate MPG 按钮下方添加一个 Clear Entries 按钮。这样做只需复制 Calculate 按钮的标签和输入元素的 HTML，并将其粘贴在 Calculate 按钮元素之后。然后，修改 Clear Entries 的 HTML，使其具有唯一的 id 和适当的属性。
+6. 添加存储在名为 `clear` 的变量中的匿名函数的 JavaScript。该函数应通过使用 `$` 获取每个文本框的对象并将文本框的值设置为空字符串来清除文本框。然后，在 `onload` 事件处理器中添加语句，将 `clear` 函数附加到 Clear Entries 按钮的点击事件，如下：
+   `$("clear").onclick = clear;`
+   现在，测试此增强。
+7. 在 `onload` 事件处理器中添加语句，将 `clear` 函数附加到 miles 文本框的双击事件。然后，测试此更改。
+
+## 练习 3-2 开发未来价值应用程序
+
+文件夹：本练习将引导你开发一个名为“未来价值”的新应用程序。该应用程序的界面如下：
+
+![](img/fb3dabc43193711c2307f942481ad30c_133_0.png)
+
+请确保在完成本练习的每个步骤后都测试该应用程序。
+
+1. 打开文本编辑器或 IDE，打开文件夹中的 HTML 和 JavaScript 文件：
+   `c:\query\exercises\ch03\future_value\`
+   运行 HTML 文件以查看它是否提供了用户界面的所有代码。然后注意，JavaScript 文件仅有一个 `$` 函数，该函数通常用于获取具有特定 id 的元素对象。
+2. 为 `window` 对象编写一个 `onload` 事件处理器，将 `calculateClick` 函数绑定到计算按钮的点击事件上。
+3. 添加一个 `if` 语句，测试第一个输入是否为大于零的有效数字。如果输入无效，则使用 `alert` 方法显示适当错误消息。使用 `else` 子句结束该语句，其中包含你在第 2 步中用于计算和显示未来价值的代码。
+4. 增强 `if` 语句以检查另外两个输入的有效性。在这里，每个输入都应该是大于零的数字，并应使用 `alert` 方法显示适当的错误消息。
+5. 对此应用程序添加任何最后的完善工作，在应用程序启动时将焦点移动到第一个文本框。现在你有一个了应用程序，它是通过在每个步骤中编写和测试有限的语句开发的。
+
+# 第 4 章 如何测试和调试 JavaScript 应用程序
+
+在构建 JavaScript 应用程序时，你需要对其进行测试以确保其运行符合预期。如果出现任何问题，你需要调试应用程序以纠正这些问题。本章将向你展示如何进行这些操作。
+
+## 测试与调试简介
+
+当你测试应用程序时，运行它以确保其正常工作。
+
+在测试应用程序时，你会尝试各种可能的输入数据和用户操作组合，以确保应用程序在每种情况下都能运行。换句话说，测试的目标是让应用程序失败。
+
+当你调试应用程序时，你会修复测试期间发现的错误。每当你修复一个 bug，都会再次测试，以确保你所做的更改不会影响应用程序的其他部分。
+
+## JavaScript 应用程序的典型测试阶段
+
+当你测试应用程序时，通常分阶段进行，如图 4-1 汇总的三个阶段所示。
+
+在第一阶段，你测试用户界面，应该目视检查控件，以确保它们以正确的文本正确显示。然后，确保所有的按键和控件工作正常。
+
+在第二阶段，你应该使用有效数据测试应用程序。开始时，你可以输入预期用户会输入的数据。但在完成之前，你应该输入所有数据……
+
+在第三阶段，你将尽全力让应用程序失败，测试你所想到的每种无效数据和用户操作组合。这应该包括随机操作，例如在错误的时间按下回车键或点击鼠标。
+
+## 可能发生的三个错误类型
+
+在测试应用程序时，可能会发生三类错误。语法错误违反了 JavaScript 语句的编码规则。这些错误在页面加载到浏览器时会被 JavaScript 引擎检测到。正如你在第 1 章中学到的，某些错误也会被 Aptana 等 IDE 检测到。语法错误最容易修复，因为网络浏览器和 IDE 提供了帮助你解决问题的错误消息。
+
+运行时错误发生在页面加载后应用程序运行期间。此时，当执行语句时，JavaScript 引擎会抛出一个异常，导致应用程序执行中断。
+
+逻辑错误是编码逻辑中的错误：算术表达式交付了错误的结果、在比较中使用错误的关系运算符等。为了说明，图中的计算 MPG 应用程序有一个逻辑错误。在这里，你可以看到第二个输入是空的，计算结果为 NaN，但如果其中一个输入为空，则根本不应该进行计算。这可能是语句的问题吗？
+
+### 带有逻辑错误的计算 MPG 应用程序
+
+![](img/fb3dabc43193711c2307f942481ad30c_136_0.png)
+
+## 常见的 JavaScript 错误
+
+图 4-2 展示了在编写应用程序时常见的编码错误。如果你完成了上一章节的练习，你可能已经经历过其中一些错误。现在，如果你研究这张图，你将更好地了解需要注意什么。
+
+如果你使用良好的文本编辑器或 IDE，可以通过注意在输入代码时显示的错误标记来避免大多数此类错误。例如，Aptana 将帮助你避免图中前两组中的大多数错误。然而，它无法帮助你避免第三组中的错误。
+
+图中的第四组解决了第 2 章提到的浮点算术问题。简而言之，JavaScript 使用 IEEE 754 标准处理浮点数，该标准可能会引入错误，即使对于简单的计算也是如此。尽管这些结果非常精确，但它们会导致问题，特别是在比较中。例如，数字 7.495 不等于 7.495000000000000。
+
+为了解决这个问题，你可以像示例所示对结果进行舍入。在这里，第一条语句使用数字的 `toFixed` 方法将 `salesTax` 值保留两位。在这种情况下，结果存储为字符串，因为 `toFixed` 方法返回字符串。相比之下，第二个语句获取舍入后的结果并使用 `parseFloat` 方法将其存储为数字。使用哪种方法取决于你需要字符串还是数字结果。
+
+图中最后一组说明了当 JavaScript 假设变量为全局变量时可能发生的问题。这个问题在第 3 章中介绍。在示例中，使用 `var` 关键字正确声明了 `salesTax`。但下一个语句在尝试将舍入并解析后的值赋值给 `salesTax` 时，将 `salesTax` 写成了 `salestax`。结果是 `salestax` 被视为全局变量，舍入并解析后的值进入了 `salestax` 而不是 `salesTax`，这自然导致了 bug。
+
+不言而喻，那种 bug 很难发现。但现在你已经意识到了这类错误，你将更好地准备好调试它们。
+
+### 常见错误
+
+- 拼写错误，例如将 `getElementById` 写成 `getById`。
+- 漏掉必要的括号、引号或大括号。
+- 未使用相同的起始和结束引号。
+- 语句末尾漏掉分号。
+- 标识符拼写错误或大小写不正确，例如定义变量 `salesTax` 但稍后引用为 `salestax`。
+
+### HTML 引用问题
+
+- 错误地引用属性值或其他 HTML 组件，例如将 id 为 `sales_tax` 的元素引用为 `salesTax`。
+
+### 数据与比较问题
+
+- 在处理用户输入之前，没有进行测试以确保输入的数据是正确的数据类型。
+- 在处理用户输入之前，没有使用 `parseInt` 或 `parseFloat` 方法将用户输入转换为数值。
+- 使用一个等号而不是两个等号进行等性测试。
+
+### 浮点数运算问题
+
+- JavaScript 中的数据类型使用浮点数，可能会导致不精确的算术结果。例如：
+
+```javascript
+var salesAmount = 74.95;
+salesTax = salesAmount * .1; // result is 7.495000000000001
+salesTax = salesTax.toFixed(2); // result is 7.50 as a string
+salesTax = parseFloat(salesTax.toFixed(2)); // result is 7.50 as a number
+```
+
+- 解决此潜在问题的方法是将结果舍入到正确的位数，并将其转换回浮点数。
+
+### 被视为全局变量的未声明变量
+
+- 如果你给一个未声明的变量赋值，JavaScript 引擎会将其视为全局变量。这发生在你拼写错误变量名时，在本例中：
+
+```javascript
+var calculateTax = function (subtotal, taxRate) {
+  var salesTax = subtotal * taxRate; // salesTax 是局部的
+  salestax = parseFloat(salesTax.toFixed(2)); // salestax 是全局的
+  return salesTax; // salesTax 没有舍入，但 salestax 有了
+}
+```
+
+## 描述
+
+- 当浏览器中的 JavaScript 引擎遇到无法执行的 JavaScript 语句时，它会抛出错误并跳过剩余的 JavaScript 语句。
+
+![](img/fb3dabc43193711c2307f942481ad30c_138_0.png)
+
+## 自顶而下的编码和测试如何简化调试
+
+简化调试的一种方法是一次编写和测试一小部分代码。这被称为自顶而下的编码和测试，或简单称为自顶而下的测试。其含义是先测试最重要的操作，然后逐步到最不重要的操作和完善工作。
+
+图 4-3 中的示例说明了这一点。在这里，第一个测试阶段包含 15 行代码，为 Calculate 按钮的点击事件提供事件处理程序。然而，该事件处理程序没有进行任何数据验证。它只是计算投资金额的未来价值，这是该应用程序的核心。
+
+然后，阶段 2 通过对第一个条目进行数据验证增加了这些代码。第 3 阶段增加了对另外两个条目的数据验证。第 4 阶段增加了完善工作，例如在应用程序启动时将焦点移动到第一个文本框。
+
+结果是，你一次测试一小部分代码。这使得调试变得简单，因为你知道任何错误都是由刚刚添加的代码行引入的。这也让开发应用程序变得更加愉快，因为你在不断进步，而不会受到复杂调试问题的挫败感。
+
+### 未来价值应用的用户界面
+
+![](img/fb3dabc43193711c2307f942481ad30c_140_0.png)
+
+### 测试阶段 1：无数据验证
+
+```javascript
+var $ = function (id) {
+  return document.getElementById(id);
+}
+var calculateClick = function () {
+  var investment = parseFloat($("investment").value);
+  var annualRate = parseFloat($("rate").value);
+  var years = parseInt($("years").value);
+  for (var i = 1; i <= years; i++) {
+    investment += investment * annualRate / 100;
+  }
+  $("future_value").value = investment.toFixed(2);
+}
+window.onload = function () {
+  $("calculate").onclick = calculateClick;
+};
+```
+
+### 测试阶段 2：为第一个条目添加数据验证
+
+```javascript
+if (isNaN(investment) || investment <= 0) {
+  alert("投资必须是数字且大于零。");
+} else {
+  // 阶段 1 的未来价值计算
+}
+```
+
+### 测试阶段 3：为其他条目添加数据验证
+
+```javascript
+// 为其他条目添加数据验证
+```
+
+### 测试阶段 4：添加完善工作
+
+```javascript
+// 添加完善工作，将焦点移动到第一个文本框
+```
+
+## 讨论
+
+- 当你使用自顶而下的编码和测试时，你从编码和测试一小部分代码开始。然后你在此基础上一次添加一个或两个。自顶而下的测试使调试变得简单，因为你知道任何错误都是由你刚刚添加的代码行引入的。
+
+## 如何调试 Firebug
+
+在第 2 章中，你接触了 Console 作为寻找语法错误的方法。除此之外，Firefox 还提供了一个比 Console 更好的扩展。Firebug 为应用程序提供了调试功能。由于 Firebug 相对容易使用，后续的话题将介绍它的全部功能。
+
+## 如何启用 Firebug 并查找错误
+
+Firebug 是一个提供调试功能的免费扩展。安装 Firebug 后（如附录 A 所示），将在工具栏中看到 Firebug 图标。你可以按 F12 键来打开或关闭 Firebug。
+
+Firebug 的主要用途之一是获取像 Console 显示的错误，但方法更高效。例如，要获取错误消息，只需打开 Firebug 并点击 Console 显示面板。那应该显示检测到的第一个错误。然后，你可以点击 Script 面板的链接查看错误的 JavaScript 代码。
+
+在某些情况下，你可能需要启用 Console 和 Script 面板才能使用它们。如果面板未启用，它将包含一个供你启用的链接。或者，你可以从面板标签的下拉列表中选择 Enable 命令。
+
+Firebug 运行良好，我们建议你安装并运行 JavaScript 应用来尝试。每当问题发生时，点击 Firebug 图标并点击 Console 查看是否捕获了错误。如果有，就从那里开始；否则，你就面临更严重的调试问题。
+
+顺便提一下，加载应用程序时显示的错误消息是针对第一个语法错误的，但代码中可能存在多个语法错误。为了捕获它们，你必须修复错误并重新运行应用程序。你应该知道，JavaScript 引擎在修复所有语法错误之前不会运行应用程序。因此，在修复语法错误之前无法发现运行时错误。
+
+在图中，你将学习如何使用 Script 面板进行调试。但在离开此图之前，请注意 Firebug 在 Console 和 Script 面板旁边还有四个面板。以下是每个面板的简单描述。
+
+Console 面板右侧的前两个面板访问 HTML 和 CSS 面板，显示网页 HTML 和 CSS。如果页面有多个 CSS 文件，可以使用 CSS 面板工具栏中的文件名下拉列表切换不同的文件。
+
+最后两个标签访问 DOM 和 Net 面板。DOM 面板以可展开树的形式显示 DOM 中的对象、属性和方法。Net 面板显示发送到浏览器的请求信息。这包括下载时间、服务器、HTTP 请求头、HTTP 响应头、HTTP 响应体以及带有全局对象的本地缓存信息。
+
+### 打开了显示错误的 Console 面板的 Firebug
+
+![](img/fb3dabc43193711c2307f942481ad30c_142_0.png)
+
+### 在 Console 面板中点击某行代码后显示的 Script 面板
+
+![](img/fb3dabc43193711c2307f942481ad30c_142_1.png)
+
+## 如何打开或关闭 Firebug
+
+- 点击 Firebug 图标或按 F12。
+
+## 如何找到导致错误的 JavaScript 语句
+
+- 点击 Console 标签页打开 Console 面板。然后，如果有必要，点击 Errors 按钮。这将显示类似上方的错误消息，并显示在导致错误的代码行旁边。
+- 点击 Console 面板中的代码行，或点击代码行右侧的行标记。这将显示 Script 面板，其中包含所显示语句的 JavaScript 代码部分，并且该语句会被高亮。
+
+## 描述
+
+- Firebug 是一个免费的 Firefox 扩展程序，提供了出色的调试功能。
+- Console 面板的用途之一是显示类似于 Error Console 显示的错误消息，但是以更高效的方式实现这一点。
+
+## 如何使用断点和单步执行代码
+
+断点是你代码中的一个点，应用程序执行到此处会停下。然后，你可以检查变量的内容以查看代码执行是否符合预期。你还可以从该点开始单步执行代码。这些技术可以帮助解决困难的调试问题。
+
+图 4-5 显示了如何设置断点、单步执行代码以及在 Watch 窗中查看变量的内容。在这个示例中，你可以看到 Email List 应用程序的第 5 行设置了断点。
+
+当你运行应用程序时，它将在遇到第一个断点时停止，并在该断点上方显示一个黄色三角形。当代码停止时，你可以将鼠标悬停在 Script 面板中的对象名称上，以显示该对象的当前值。
+
+在断点处，你可以在面板右侧的 Watch 窗中查看当前变量。这些是正在执行的函数所使用的变量。你还可以点击“New watch expression...”并输入想要查看的变量名或表达式，查看其他变量和表达式的值。
+
+要在到达断点后单步执行应用程序，你可以使用 Step Into（单步进入）、Step Over（跳过）和 Step Out（跳出）按钮。如果你反复点击 Step Into，你将一次执行一行代码，下一行执行的代码将由黄色三角形标记。在执行每行代码后，你可以使用 Watch 窗观察变量的任何变化。
+
+在单步执行应用程序时，如果你想执行一个函数而不花时间单步执行它，可以点击 Step Over 按钮。或者，你可以从不想单步执行的函数点击 Step Out。当你想要恢复正常执行时，可以点击 Continue 按钮。然后，应用程序将运行到下一个断点。
+
+这些是强大的调试功能，可以帮助你找到严重调试问题的原因。单步执行应用程序也是理解现有应用程序代码工作原理的好方法。例如，如果你单步执行 Email List 应用程序中的 if 语句，你将更好地了解它们是如何工作的。
+
+### Firebug Script 标签页中的断点
+
+![](img/fb3dabc43193711c2307f942481ad30c_144_0.png)
+
+## 如何在 Script 面板中设置或移除断点
+
+- 要设置断点，点击语句左侧的栏。
+- 要移除断点，点击红色的断点标记物。
+
+## 如何在 Script 面板中单步执行 JavaScript 代码
+
+- 点击 Step Into 按钮或按 F11 逐行执行代码。
+- 点击 Step Over 按钮运行任何调用的函数而不进入单步执行。
+- 点击 Step Out 按钮执行函数的剩余部分而不进入单步执行。
+- 点击 Continue 按钮恢复正常执行。
+
+## 如何在每一步查看当前数据
+
+- 将鼠标光标悬停在 Script 面板中的变量名上。
+- 在 Script 面板右侧查看当前值。
+- 点击 Watch 窗中的“New watch expression...”并输入想要查看的变量名或表达式。
+
+## 描述
+
+- 你可以在空行以外的任何行上设置断点。当 JavaScript 引擎遇到断点时，它会在执行带有断点的语句之前停止。
+- Script 面板中的红色圆圈标记每个断点，黄色三角形标记了在你单步执行代码时下一个要执行的语句。
+
+## 其他调试方法
+
+由于 Firebug 是一个极佳的调试工具，你应该在大多数调试工作中使用它。不过，这里有四种你可能会觉得有用的调试方法。
+
+## 何时以及如何与其他浏览器获取错误消息
+
+所有现代浏览器都能检测 JavaScript 错误并提供像 Firefox Console 这样的工具。然而，如果你在 Firefox 上调试应用程序，通常就不需要这些工具了。例外是 Internet Explorer，它产生了你可能会遇到的多数跨浏览器问题。
+
+如图所示，当前版本 IE 的开发者工具工作与 Firebug 非常相似。
+
+### 打开了显示错误的 Console 面板的 Internet Explorer
+
+![](img/fb3dabc43193711c2307f942481ad30c_146_0.png)
+
+## 如何在当前版本的 IE 中显示开发者工具
+
+- 使用 Tools→Developer Tools 命令，或按 F12。
+
+## 如何在旧版本 IE 中显示错误
+
+- 双击浏览器左下角的错误查看消息框。如果有必要，点击 Details 按钮查看完整消息。
+
+## 描述
+
+- 所有现代浏览器都提供类似 Error Console 和 Firebug 的调试工具。然而，如果你在 Firefox 上调试 JavaScript 应用程序，它可以在所有现代浏览器上运行，因此你不需要这些工具。
+
+## 追踪 JavaScript 代码执行的简单方法
+
+当你追踪应用程序的执行时，你确定应用程序中语句执行的顺序。简单的方法是在代码中添加 `alert` 语句，在代码的关键点显示消息或变量值。
+
+这由图 4-7 中的示例所示。在这里，高亮的第一个 `alert` 语句让你知道 `$` 函数已开始。第二个 `alert` 语句让你知道 `calculateMpg` 函数已开始。第三个 `alert` 语句显示输入的里程数和燃油量，以确保之前的两个语句运行正常。第四个 `alert` 语句让你知道 `if` 语句的 else 分支已开始。第五个 `alert` 语句让你知道 `onload` 函数已开始。
+
+当你使用这种技术时，通常从在代码中添加几个 `alert` 语句开始。然后，如果这没有帮你解决问题，你可以添加更多的。通常，这就是你解决简单调试问题所需的全部，而且这比使用 Firebug 设置断点并单步执行代码要快。
+
+### 使用五个 alert 语句追踪代码执行情况的 JavaScript
+
+```javascript
+var $ = function (id) {
+  alert("$ function has started");
+  return document.getElementById(id);
+}
+
+var calculateMpg = function () {
+  alert("calculateMpg function has started");
+  var miles = parseInt($("miles").value);
+  var gallons = parseFloat($("gallons").value);
+  alert("miles = " + miles + "\n" + "gallons = " + gallons);
+
+  if (isNaN(miles) || isNaN(gallons)) {
+    alert("Both entries must be numeric");
+  }
+  else {
+    alert("The data is valid and the calculation is next");
+    var mpg = miles / gallons;
+    $("mpg").value = mpg.toFixed(1);
+  }
+}
+
+window.onload = function () {
+  alert("onload has started");
+  $("calculate").onclick = calculateMpg;
+  $("miles").focus();
+}
+```
+
+### 当 JavaScript 执行时，会 alert 对话框
+
+![](img/fb3dabc43193711c2307f942481ad30c_148_0.png)
+
+## 描述
+
+- 追踪 JavaScript 应用执行情况的一种简单方法是在代码的关键点插入 `alert` 语句。
+- `alert` 对话框会显示消息，指示正在执行代码的部分，或者显示变量的值。
+- 对于简单的调试问题，这种追踪方法就是你解决问题所需的一切。
+
+## 何时以及如何查看源代码
+
+偶尔，当你测试应用程序时，如果似乎没有功能在正常工作，你可能想要查看该应用程序的源代码。这至少可以确认你正在测试正确的文件。
+
+要查看 HTML 源代码，你可以使用图 4-8 所示的技术之一。当 Firefox 中显示 HTML 时，你也可以通过点击 HTML 代码中的链接来显示外部 CSS 或 JavaScript 文件的代码。
+
+但注意，HTML 源代码是最初加载到浏览器中的代码，因此它不会反映 JavaScript 对 DOM 进行的任何更改。例如，在图中，JavaScript 代码更改了文本框之后 span 元素中的文本。但是，如果你查看 HTML 源代码，你会发现 span 元素仍然包含星号。换句话说，HTML 源代码并没有反映对 DOM 脚本所做的任何更改。
+
+### JavaScript 更改 span 元素后的邮件列表应用程序
+
+![](img/fb3dabc43193711c2307f942481ad30c_150_0.png)
+
+### 浏览器显示的 HTML 源代码
+
+![](img/fb3dabc43193711c2307f942481ad30c_150_1.png)
+
+## 如何查看网页的源代码
+
+- 如果可用，使用菜单命令查看→源代码 或查看→页面源代码。
+- 你也可以在页面上点击右键并选择如源代码、查看源代码或查看页面源代码之类的命令。
+
+## 描述
+
+- 在调试时，你可能偶尔想要显示浏览器中的 HTML，看看是否发生了意外情况。
+- 如果你使用 Firefox，可以点击链接或脚本元素，在另一个窗口中显示 CSS 或 JavaScript 的源代码。
+- 但注意，对 DOM 的更改不会改变加载到浏览器中的 HTML。它只会更改 DOM，从而导致显示为最新状态。
+
+## 何时以及如何验证 HTML
+
+当你测试 JavaScript 应用时，你不仅在测试 JavaScript 代码，还在测试 HTML。那么，如果你怀疑 HTML 可能存在问题，花时间验证 HTML 代码是值得的。为此，你可以使用图 4-9 中的技术。
+
+事实上，我们建议你验证应用程序中所有页面的 HTML。当然，当你做练习或为课程开发应用程序时，这并不是必要的，但这可能帮助你修复影响 JavaScript 的问题。
+
+### W3C 验证器的首页
+
+![](img/fb3dabc43193711c2307f942481ad30c_152_0.png)
+
+## 如何使用 W3C 标记验证服务
+
+- 使用以下 URL 识别要验证的文件，并点击检查按钮：`http://validator.w3.org/`
+
+## 如何通过 Aptana 验证 HTML 文件
+
+- 选择文件。然后选择命令。
+
+## 观点
+
+## 术语
+
+- 自顶向下调试
+- 自顶向下的
+- 语法错误
+- 运行时错误
+- 逻辑错误
+
+## 总结
+
+- 在调试时，你可能偶尔想要显示浏览器中的 HTML，看看是否发生了意外情况。
+- 如果你使用 Firefox，可以点击链接或脚本元素，在另一个窗口中显示 CSS 或 JavaScript 的源代码。
+- 但注意，对 DOM 的更改不会改变加载到浏览器中的 HTML。它只会更改 DOM，从而导致显示为最新状态。
+
+## 练习 4-1 使用 Firebug 特性
+
+## 练习 4-2 使用其他调试方法
+
+# 第 5 章 如何操作数组
+
+在本章中，你将学习如何使用数组。这是 JavaScript 的核心技能之一。数组的概念对于 jQuery 用户来说同样重要，因为 jQuery 经常创建并操作数组。
+
+## 如何创建和使用数组
+
+在接下来的提示中，你将学习创建和使用数组的基本技能。这些技能之所以重要，不仅是因为数组有许多用途，还因为在进行 DOM 脚本编写时必须使用数组。
+
+## 如何创建数组并引用其元素
+
+数组是一个包含一个或多个称为“元素”的项目的对象。这些元素可以是原始数据类型，也可以是对象。例如，你可以在同一个数组中存储数字、字符串和 `Date` 对象。数组的长度表示它包含的元素数量。
+
+图 5-1 显示了创建数组的两种方法。当你使用第一种方法时，使用 `new` 关键字后跟 `Array` 对象创建一个数组，其元素数量由 `length` 参数指定。该长度必须是一个大于或等于零的整数。如果你不指定长度，数组将是空的。
+
+当你使用第二种方法时，只需编写一组括号。这会让你得到与第一种方法不带参数时相同的结果：一个空数组。
+
+接下来，这向你展示如何在一条语句中创建新数组并为其元素赋值。在这种情况下，你以逗号分隔的列表形式编写值。例如，第一组示例显示了一个创建名为 `rates` 且包含四个数值的数组的语句，以及一个创建名为 `names` 且包含三个字符串的数组的语句。
+
+请注意，当你使用 `new` 关键字创建数组时，如果只传递一个数字参数，它会被视为数组长度。否则，数组列表中的值将作为数组元素。
+
+要引用数组中的元素，你使用一个从 0 到长度减 1 的索引。例如，在一个包含 12 个元素的数组中，索引值范围从 0 到 11。这就是为什么 `Date` 对象的 `getMonth` 方法将月份数字从 0 编号到 11，而不是 1 到 12 的原因。然后，`getMonth` 方法的返回值可以用作月份名称数组的索引。
+
+要使用索引，你需要在数组名称后的括号内编写它。在图中，所有示例都使用字面量值作为索引，但索引也可以是包含索引值的变量。如果你尝试访问一个尚未赋值的元素，将返回 `undefined` 值。
+
+该图中的最后一组示例显示了如何给空数组赋值。要做到这一点，你通过索引引用元素，并为这些元素赋值。
+
+### 创建数组的语法
+
+使用 `new` 关键字结合 `Array` 对象
+
+```javascript
+var arrayName = new Array(length);
+```
+
+使用括号字面量
+
+```javascript
+var arrayName = [];
+```
+
+### 在一条语句中创建数组并赋值的语法
+
+使用 `new` 关键字结合 `Array` 对象
+
+```javascript
+var arrayName = new Array(arrayList);
+```
+
+使用括号字面量
+
+```javascript
+var arrayName = [arrayList];
+```
+
+### 在一条语句中创建数组并赋值
+
+```javascript
+var rates = new Array(14.95, 12.95, 11.95, 9.95);
+var names = ["Ted Jones", "Ray Thomas"];
+```
+
+### 引用数组元素的语法
+
+```javascript
+arrayName[index]
+```
+
+### 引用数组元素的代码
+
+```javascript
+rates[2] // 引用 rates 数组中的第三个元素
+names[1] // 引用 names 数组中的第二个元素
+```
+
+### 如何访问每个元素为数组赋值
+
+#### 如何给一个带有 undefined 元素的数组赋值 rates
+
+```javascript
+var rates = new Array(4);
+rates[0] = 14.95;
+rates[1] = 12.95;
+rates[2] = 11.95;
+rates[3] = 9.95;
+```
+
+#### 如何给一个初始没有元素的数组赋值字符串
+
+```javascript
+var names = [];
+names[0] = "Ted Lewis";
+names[1] = "Sue Jones";
+names[2] = "Ray Thomas";
+```
+
+## 描述
+
+- 数组可以存储一个或多个元素。数组的长度是数组中元素的数量。
+- 创建数组的一种方法是使用 `new` 关键字，或者使用一组包含长度的括号。如果你不指定长度，数组将不包含任何元素。如果你指定了长度，每个元素都将设置为 `undefined`。
+- 创建数组的另一种方法是编写一组括号或不带元素列表。
+- 要引用数组中的元素，请使用索引，其中 0 是第一个元素，1 是第二个元素，依此类推。
+
+## 如何添加和删除数组元素
+
+图 5-2 展示了你在操作数组时可以使用的其中一个属性和一个操作符。`length` 属性返回数组中元素的数量。`delete` 操作符可用于删除数组中某个元素的值。
+
+要向数组末尾添加元素，你可以使用数组的 `length` 属性作为新元素的索引。正如第一个示例所示，由于该属性始终比数组中使用的最高索引大 1，这在第一个示例中在数组末尾添加了新元素。
+
+要在特定索引处添加元素，你使用索引来引用该元素并为其赋值。如果你使用的索引大于数组的长度，则跳过的元素将被创建。这在第二个示例中所示。
+
+第三个示例显示了如何删除元素的值。要做到这一点，你使用 `delete` 操作符。当你使用该操作符时，元素将留在数组中并变为 `undefined`，从而数组的长度保持不变。
+
+### 数组的一个属性和操作符
+
+| 属性 | 描述 |
+| --- | --- |
+| length | 数组中元素的数量。 |
+
+| 操作符 | 描述 |
+| --- | --- |
+| delete | 删除元素的内容并将其设置为 undefined，但不会从数组中移除该元素。 |
+
+### 如何向数组末尾添加元素
+
+```javascript
+var numbers = [1, 2, 3, 4]; // 数组为 1, 2, 3, 4
+numbers[numbers.length] = 5; // 数组为 1, 2, 3, 4, 5
+```
+
+### 在特定索引处添加元素
+
+```javascript
+var numbers = [1, 2, 3, 4]; // 数组为 1, 2, 3, 4
+numbers[6] = 7; // 数组为 1, 2, 3, 4, undefined, undefined, 7
+```
+
+### 如何在特定索引处删除数字
+
+```javascript
+var numbers = [1, 2, 3, 4]; // 数组为 1, 2, 3, 4
+delete numbers[2]; // 数组为 1, 2, undefined, 4
+```
+
+## 描述
+
+- 向数组末尾添加元素的一种方法是使用 `length` 属性作为索引。
+- 如果你在不是连续位置的特定索引处添加元素，会在新元素与原始数组末尾之间填充 `undefined` 元素。
+
+## 如何使用循环处理数组
+
+`for` 循环通常通过增加索引变量来一次处理数组中的一个元素。图 5-3 展示了其工作原理。
+
+该图中的第一个示例展示了如何创建一个数组并用数字 1 到 10 填充它。首先，代码创建了一个名为 `numbers` 的空数组。然后，使用索引变量 `i` 通过从 0 到 9 的值来遍历数组的前十个元素。在 `for` 循环的体中，将 `i` 加 1 并将结果存储在数组中。结果是索引为 0 的元素存储了 1，索引为 1 的元素存储了 2，以此类推。
+
+接下来，该示例显示了数组中的值。首先，它创建了一个名为 `numbersString` 的空字符串。然后，它使用 `for` 循环来访问数组中的元素。在 `for` 循环中，使用数组的 `length` 属性来控制循环执行的次数。这使得相同的代码适用于不同长度的数组。在 `for` 循环内部，将元素中的值和空格拼接到 `numbersString` 的末尾。最后，显示 `numbersString`，显示出存储在数组中的十个数字。
+
+该图中的第二个示例展示了如何计算一个总数数组的和以及平均值。首先，代码创建了一个名为 `totals` 的数组，存储了四个总数值。接下来，它使用 `for` 循环访问 `totals` 数组中的每个元素并将其加到 `sum` 中。最后，通过将总和除以数组长度来计算平均值。
+
+之后，该示例显示了总数、总和和平均值。首先，它创建了一个名为 `totalsString` 的空字符串。然后，它使用 `for` 循环将每个元素的值和一个换行字符拼接到 `totalsString`。最后，它显示一条包含 `totalsString`、`sum` 和平均值的消息。
+
+### 将数字 1 到 10 放入数组的代码
+
+```javascript
+var numbers = [];
+for (var i = 0; i < 10; i++) {
+  numbers[i] = i + 1;
+}
+```
+
+### 显示上面创建的数字的代码
+
+```javascript
+var numbersString = "";
+for (var i = 0; i < numbers.length; i++) {
+  numbersString += numbers[i] + " ";
+}
+alert(numbersString);
+```
+
+### 显示的消息
+
+![](img/fb3dabc43193711c2307f942481ad30c_162_0.png)
+
+### 计算总数数组之和和平均值的代码
+
+```javascript
+var totals = [141.95, 212.95, 411, 10.95];
+var sum = 0;
+for (var i = 0; i < totals.length; i++) {
+  sum += totals[i];
+}
+var average = sum / totals.length;
+```
+
+### 显示数组和平均值的代码
+
+```javascript
+var totalsString = "";
+for (var i = 0; i < totals.length; i++) {
+  totalsString += totals[i] + "\n";
+}
+alert("The totals are:\n" + totalsString + "\n" +
+  "Sum: " + sum.toFixed(2) + "\nAverage: " + average.toFixed(2));
+```
+
+### 显示的消息
+
+![](img/fb3dabc43193711c2307f942481ad30c_162_1.png)
+
+## 描述
+
+- 当你使用循环处理数组时，可以使用循环的计数器作为数组的索引。
+
+## 如何使用 for-in 循环处理数组
+
+与 `for` 循环相比，`for-in` 循环使得处理数组变得更加容易。图 5-4 展示了这种循环的工作原理。
+
+正如该图顶部的语法所示，`for-in` 循环不需要像 `for` 循环那样单独用于初始化、测试和增加索引计数器的表达式。相反，你声明一个变量将用于引用数组中每个元素的索引。然后，在循环内部，你可以使用该变量来访问数组中的每个元素。
+
+该图中的第一个示例将数字 1 到 10 存储在数组中，并创建一个名为 `numbersString` 的空字符串。然后，它使用 `for-in` 循环将数组中的每个数字和空格拼接到字符串中。最后，在消息框中显示这些数字。
+
+第二个示例展示了 `for` 循环和 `for-in` 循环处理数组中 `undefined` 元素的方式。简而言之，`for` 循环处理 `undefined` 元素，而 `for-in` 循环会跳过它们。你可以从该示例中每个循环显示的消息中看到这种差异。
+
+### for-in 循环的语法
+
+```javascript
+for (var elementIndex in arrayName) {
+  // 访问元素的语句
+}
+```
+
+### 在消息框中显示数字数组的 for-in 循环
+
+```javascript
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var numbersString = "";
+for (var index in numbers) {
+  // for-in 循环的开始
+  numbersString += numbers[index] + " ";
+}
+alert(numbersString);
+```
+
+### 显示的消息
+
+![](img/fb3dabc43193711c2307f942481ad30c_162_0.png)
+
+## 一个增强型的邮件列表应用
+
+现在，为了向你展示数组如何在简单应用程序中使用，接下来的两幅图展示了你在第 3 章中学习的邮件列表程序的增强版本。
+
+## 用户界面与 HTML
+
+图 5-6 显示了该应用程序的界面。它与之前的版本相似，但多了一个用于获取州代码的文本框。该字段是必填的，且代码必须有效。在这个示例中，由于 cc 不是有效的州代码，该文本框右侧会显示一条消息。
+
+在该应用程序的 HTML 中，唯一增加的是高亮的代码。这是用于州代码输入的标签、文本框和 `span` 元素的代码。如你所见，文本框的 `id` 为 `state_code`，`span` 元素的 `id` 为 `state_code_error`。
+
+### 浏览器中的增强型邮件列表
+
+![](img/fb3dabc43193711c2307f942481ad30c_168_0.png)
+
+### 页面的 HTML 文件
+
+```html
+<body>
+<section>
+  <h1>Please join our email list</h1>
+  <form id="email_form" name="email_form"
+        action="join.html" method="get">
+
+    <label for="email_address1">Email Address:</label>
+    <input type="text" id="email_address1" name="email_address1">
+    <span id="email_address1_error"></span><br>
+
+    <label for="email_address2">Re-enter Email Address:</label>
+    <input type="text" id="email_address2" name="email_address2">
+    <span id="email_address2_error"></span><br>
+
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name">
+    <span id="first_name_error"></span><br>
+
+    <label for="state_code">State Code:</label>
+    <input type="text" id="state_code" name="state_code">
+    <span id="state_code_error"></span><br>
+
+    <label>&nbsp;</label>
+    <input type="button" id="join_list" value="Join our List">
+  </form>
+</section>
+</body>
+```
+
+## 注意
+
+- 此代码与之前的版本相同，除了高亮显示的定义州代码文本框的代码外。
+
+## JavaScript
+
+图 5-7 展示了该应用程序的 JavaScript 代码。它与之前的版本代码相似，但增加了验证州代码输入的代码。在这种情况下，使用了一个匿名函数来查找用户输入的州代码。该函数紧跟在 `$` 函数之后，并符合所有函数都应该出现在调用它们的语句之前的原则。
+
+如果你查看 `stateCodeLookup` 函数，你会发现它有一个接收参数，用于接收用户输入的州代码。然后，它的第一条语句创建了一个包含该应用程序有效州代码的数组。在这里，数组中仅包含了 8 个代码，但该语句可以包含所有的 50 个代码。
+
+创建数组后，该函数使用 `toUpperCase` 方法将代码转换为大写，因为用户输入代码时使用的是小写。这样，当代码与 `states` 数组中的元素进行比较时，即使用户输入的是小写，两个值也将都是大写。
+
+接下来，该函数使用 `for` 循环将用户输入与 `states` 数组中的每个元素进行比较。然而，如果用户输入等于元素之一，循环和函数将返回值为 `true` 的语句，循环和函数结束。否则，如果 `for` 循环在没有找到相等比较的情况下结束，`for` 循环后的语句将返回 `false`，函数结束。
+
+现在，查看 `joinList` 函数中用于验证州代码输入的代码。它首先获取用户输入并保存到名为 `stateCode` 的变量中。然后，它将此变量作为 `if` 语句中的条件传递给 `stateCodeLookup` 函数。
+
+```javascript
+!stateCodeLookup(stateCode)
+```
+
+由于该条件以运算符 `!` 开头，意味着如果函数返回 `false`，则条件为 `true`，这意味着州代码无效。结果，`if` 子句将错误消息放入文本框的 `span` 元素中。否则，`else` 子句将 `span` 元素设置为空字符串。
+
+`stateCodeLookup` 函数中的语句可以嵌入到 `joinList` 事件处理器中，而不是作为一个独立的函数来处理吗？可以，但将代码放在单独的函数中可以简化事件处理器中的代码，并使应用程序更容易调试。
+
+## 透视
+
+
+
+```javascript
+var $ = function (id) {
+  return document.getElementById(id);
+}
+var stateCodeLookup = function (stateCode) {
+  var states = ["CA", "WA", "OR", "NV", "NM", "AZ", "WY", "MT"];
+  stateCode = stateCode.toUpperCase();
+  for (var i = 0; i < states.length; i++) {
+    if (states[i] == stateCode) {
+      return true;
+    }
+  }
+  return false;
+}
+var joinList = function () {
+  var emailAddress1 = $("email_address1").value;
+  var emailAddress2 = $("email_address2").value;
+  var isValid = true;
+  // validate the state code
+  var stateCode = $("state_code").value;
+  if (!stateCodeLookup(stateCode)) {
+    $("state_code_error").innerHTML = "State code invalid.";
+  } else {
+    $("state_code_error").innerHTML = "";
+  }
+  // submit the form
+  if (isValid) {
+    $("email_form").submit();
+  }
+}
+window.onload = function () {
+  $("join_list").onclick = joinList;
+};
+```
+
+## 观点
+
+循环和数组是许多 JavaScript 应用程序的重要部分。因为你使用了 jQuery，你在那里也使用了数组。
+
+## 术语
+
+- 数组索引
+- 数组 for-in 语句
+- 数组长度
+
+## 总结
+
+- 数组由可以通过索引引用的元素组成。为了处理数组中的每个元素，你可以使用 `for-in`。在 JavaScript 中，每个数组都是一个对象，提供了处理数组的方法。
+
+| 练习 5-1 | 使用 for-in 循环 |
+| :--- | :--- |
+| 1. 使用你的文本编辑器打开位于 `c:\exercises\ch05\email_list` 文件夹下的 `index.html` 和 `email_list.js` 文件。 | |
+| 2. 测试应用程序查看它是如何工作的。 | |
+| 3. 在 JavaScript 文件中，注释掉判断州代码是否有效的循环。用一个 `for-in` 循环替换它以获得相同的结果。 | |
+| 4. 玩玩，使用 `states` 数组的 `push` 方法将代表犹他州的“UT”添加到该数组中。你可以紧接声明之后编写该语句。然后，测试该州代码工作是否有效。 | |
+
+# DOM 脚本属性与方法
+
+在第 3 章中，你通过使用两个属性将消息放入 `span` 元素中，学习了 DOM 脚本。现在，你将学习其他可用于 DOM 脚本的属性和方法。这些属性和方法是由所有当前浏览器都实现的 DOM 核心规范定义的。
+
+# DOM 脚本概念
+
+在学习 DOM 核心规范的属性和方法之前，6-1 介绍了你在使用它们之前应该理解的 DOM 脚本概念。首先，正如你可能在第 3 章回想的，文档对象模型（DOM）是作为加载到浏览器的 HTML 页面构建的。它包含了表示页面所有 HTML 元素和属性的节点。这通过图中的 HTML 和图表得到了说明。
+
+除了图中由椭圆表示的元素节点外，DOM 还包含了持有 HTML 元素数据的节点。在图中，这些节点是矩形。第一个文本节点包含 `head` 部分标题的文本：“Join Email List”（加入邮件列表）。其右侧的节点包含 `body` 中 `h1` 元素的文本：“Please join our email list”（请加入我们的邮件列表）。依此类推。
+
+为了简单起见，此图仅包含了元素节点和文本节点，但 DOM 还包含属性节点，且每个节点都可以带有一个持有属性值的文本节点。此外，如果 HTML 包含注释，DOM 将包含注释节点。
+
+如果你研究图中的表格，你会发现元素节点可以拥有文本和注释节点作为子节点。属性节点可以有一个文本节点作为子节点。文本节点不能有子节点。奇怪的是，尽管属性附着在元素节点上，但它并不被视为元素的子节点。
+
+用于 DOM 节点的属性和方法是由接口定义的。在接下来的话题中，你将学习如何操作 `Node`、`Document` 和 `Element` 接口的属性和方法。
+
+在你处理这些内容时，你会遇到父（parent）、子（child）、兄弟（sibling）和后代（descendant）等术语。这些术语用法就像家族树一样。例如，在图中，`form` 元素是 `label`、`input` 和 `span` 元素的父元素，所有它们都是 `form` 元素的子元素。`label`、`input` 和 `span` 元素是具有相同父节点的兄弟（姐妹）。同样，`h1` 和 `form` 元素是 `body` 元素的子元素，而 `h1`、`form`、`label`、`input` 和 `span` 元素都是 `body` 元素的后代。
+
+你也应该能够在网页的 HTML 中看到这些关系。例如，在图中的 HTML 中，缩进清晰地显示了每个元素的子元素和后代。
+
+# 网页的代码
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Join Email List</title>
+</head>
+<body>
+  <h1>Join our email list</h1>
+  <form id="email_form" name="email_form" action="join.html" method="get">
+    <label for="email_address">Email Address:</label>
+    <input type="text" id="email_address">
+    <span id="email_error">*</span><br>
+  </form>
+</body>
+</html>
+```
+
+# 网页的 DOM
+
+![网页的 DOM](img/fb3dabc43193711c2307f942481ad30c_174_0.png)
+
+# 你常用的 DOM 节点
+
+| 类型 | 说明 |
+| --- | --- |
+| Document | DOM 的根节点。它只能有一个 Element 节点作为子节点。 |
+| Element | 网页中的元素。它可以有 Element、Text 和 Comment 节点作为子节点。 |
+| Attr | 元素的属性。尽管它附着在 Element 节点上，但它不是子节点。它可以有一个 Text 节点作为子节点。 |
+| Text | 元素或属性的文本。它不能有子节点。 |
+
+## 描述
+
+- DOM（文档对象模型）是浏览器内存中一个层级的*节点*集合，表示当前网页。
+- 网页的 DOM 是随着浏览器加载页面而构建的。
+- JavaScript 可以通过修改 DOM 来修改浏览器中的网页。每当 DOM 发生变化，浏览器就会显示更改的结果。
+- 要修改 DOM，你可以使用*DOM 核心规范*定义的属性和方法。
+
+图 6-1 DOM 脚本概念
+
+# Node 接口
+
+6-2 描述了你可以用于处理节点的六个属性。这些属性由 `Node` 接口定义。图中的所有示例都假设使用了通过 id 获取元素的标准 `$` 方法。
+
+第一个示例展示了如何获取 `firstChild` 和 `nodeValue` 属性来获取 HTML 元素的文本。在这种情况下，如果该语句在节点更改之前运行，它将在名为 `errorText` 的变量中存储一个星号（*）。因为该节点是由 HTML 设置为星号的。
+
+如果你参考前一个图中的图表，可以看到需要 `firstChild` 属性来获取 `span` 元素的文本节点。然后，通过 `nodeValue` 属性从文本节点获取文本。
+
+第二个示例展示了如何使用 `firstChild` 和 `nodeValue` 属性来放置 HTML 元素的文本节点。这是 Email List 将错误消息放在文本框后的 `span` 元素中的方法。
+
+（注：由于原始文本存在大量重复和乱码，已根据逻辑流进行清理和整合）
+
+## Document 和 Element 接口常用方法
+
+| 方法 | 说明 |
+| :--- | :--- |
+| `getElementsByTagName(tagName)` | 返回一个数组，包含文档或元素中所有与指定标签名匹配的后代元素。 |
+| `getElementsByName(name)` | 返回一个数组，包含文档或元素中所有 name 属性与指定名称匹配的后代元素。 |
+| `getElementsByClassName(classNames)` | 返回一个数组，包含文档或元素中所有 class 属性名称或名称与参数匹配的后代元素。classNames 参数可以是一个类名称，也可以是用空格分隔的类名列表。 |
+
+## Element 接口常用方法
+
+| 方法 | 说明 |
+| :--- | :--- |
+| `hasAttribute(name)` | 如果元素具有 name 中指定的属性，则返回 true。 |
+| `getAttribute(name)` | 返回 name 中指定属性的值；如果未设置名为 name 的属性，则返回空字符串。 |
+| `setAttribute(name, value)` | 将指定的属性设置为指定的值。如果该属性不存在，则会创建该属性。 |
+| `removeAttribute(name)` | 移除指定的属性。 |
+
+## 如何在文档中创建 `<a>` 标签数组
+
+```javascript
+var links = document.getElementsByTagName("a");
+```
+
+## 如何在元素 (image_list) 内部创建 `<li>` 标签数组
+
+```javascript
+var list = document.getElementById("image_list");
+var items = list.getElementsByTagName("li");
+```
+
+## 如何测试获取属性
+
+```javascript
+var list = document.getElementById("image_list");
+if (list.hasAttribute("class")) {
+  var classAttribute = list.getAttribute("class");
+}
+```
+
+## 如何设置属性
+
+```javascript
+var image = document.getElementById("div");
+image.setAttribute("class", "open");
+```
+
+## 如何移除属性
+
+```javascript
+var list = document.getElementById("image_list");
+list.removeAttribute("class");
+```
+
+## 描述
+
+- Document 和 Element 接口的方法允许你获取元素数组。
+- Element 接口的方法还允许你处理属性。
+
+图 6-3 Document 和 Element 接口的方法
+
+## FAQs 应用程序
+
+现在，你将看到 Node、Document 和 Element 接口的属性和方法如何在典型的 DOM 脚本应用中使用的。我们将这个应用称为 FAQs（常见问题）应用程序。
+
+## 用户界面、HTML 和 CSS
+
+图 6-4 展示了 FAQs 应用程序的用户界面。如果用户点击前面带有加号的标题，则其下方的文本将显示，且加号将变为减号。同样，如果用户点击前面带有减号的标题，其下方的文本将被隐藏，且减号将变为加号。
+
+在 HTML 中，你可以看到每个问题都编码在一个 `h2` 元素中，后面紧跟着一个包含答案的 `div` 元素。注意，这些 `h2` 元素都有一个类名为“plus”的属性，每个 `div` 元素都有一个类名为“closed”。当用户点击标题时，DOM 脚本会更改这些类名。
+
+在 CSS 中，你可以看到 `plus` 类的 `h2` 元素具有背景属性，其中包含一张名为 `plus.png` 的图像（不重复），位于元素的左侧并保持垂直居中。同样，`minus` 类的 `h2` 元素具有使用 `minus.png` 图像的背景属性。
+
+你还可以看到 `closed` 类的 `div` 元素具有隐藏它们的 `display` 属性。但 `open` 类的 `div` 元素具有将其显示为块级元素的 `display` 属性。
+
+由于 HTML 将 `h2` 元素的初始类设置为“plus”，将 `div` 元素的类设置为“closed”，因此用户界面在开始时标题显示加号，且 `div` 元素是关闭的。现在，所有的 JavaScript 在每次用户点击标题时必须反转这些类名。
+
+## 第 6 章 如何使用 JavaScript 编写 DOM 165
+
+## 浏览器中的 FAQs 应用程序
+
+![](img/fb3dabc43193711c2307f942481ad30c_180_0.png)
+
+## HTML
+
+```html
+<section id="faqs">
+<h1>jQuery FAQs</h1>
+<h2 class="plus">什么是 jQuery?</h2>
+<div class="closed">
+<p>jQuery 是一个 JavaScript 函数库，你在开发网站时可能需要它。</p>
+</div>
+<h2 class="plus">为什么 jQuery 变得如此流行？</h2>
+<div class="closed">
+<p>三个原因：</p>
+<ul>
+<li>它是免费的。</li>
+<li>它让你用更短的时间完成更多工作。</li>
+<li>它所有的函数都具有跨浏览器兼容性。</li>
+</ul>
+</div>
+<h2 class="plus">jQuery 和 JavaScript 哪个更难学？</h2>
+<div class="closed">
+<p>对于大多数功能来说，学习和使用 jQuery 比使用 JavaScript 容易得多。但请记住：jQuery 就是 JavaScript。</p>
+</div>
+</section>
+```
+
+## CSS
+
+```css
+h2 {
+  padding: .25em .25em 25px;
+  cursor: pointer;
+}
+h2.plus {
+  background: url(images/plus.png) no-repeat left center;
+}
+h2.minus {
+  background: url(images/minus.png) no-repeat left center;
+}
+div.closed {
+  display: none;
+}
+div.open {
+  display: block;
+}
+```
+
+图 6-4 FAQs 应用程序的 HTML 和 CSS
+
+©2012, Murach and Associates, Inc. 授权给 Michael Hotham
+
+## JavaScript
+
+图 6-5 显示了此应用程序的 JavaScript。在这里，`onload` 函数事件处理器创建并为每个 `h2` 元素附加事件处理器。为了实现这一点，第一个语句获取 ID 为 "faqs" 的元素对象。第二个语句使用 `getElementsByTagName` 方法获取该元素内的 `h2` 元素数组。该数组存储在名为 `h2Elements` 的变量中。
+
+第 6 章 如何使用 JavaScript 编写 DOM 167
+
+## FAQs 应用程序的 JavaScript
+
+```javascript
+var $ = function (id) {
+  return document.getElementById(id);
+}
+window.onload = function () {
+  var faqs = $("faqs");
+  var h2Elements = faqs.getElementsByTagName("h2");
+
+  var h2Node;
+  for (var i = 0; i < h2Elements.length; i++) {
+    h2Node = h2Elements[i];
+
+    // 附加事件处理器
+    h2Node.onclick = function () {
+      var h2 = this; // h2 是当前的 h2Node 对象
+      if (h2.getAttribute("class") == "plus") {
+        h2.setAttribute("class", "minus");
+      } else {
+        h2.setAttribute("class", "plus");
+      }
+      if (h2.nextElementSibling.getAttribute("class") == "closed") {
+        h2.nextElementSibling.setAttribute("class", "open");
+      } else {
+        h2.nextElementSibling.setAttribute("class", "closed");
+      }
+    }
+  }
+}
+```
+
+## 注意
+
+- `onload` 事件处理器中的前两个语句创建了 ID 为 "faqs" 的元素中的 `h2` 元素数组。
+- 循环为每个 `h2` 元素执行一次。它为每个 `h2` 元素的 `onclick` 事件附加了事件处理器。
+
+## FAQs 应用程序的另一种方式
+
+在开发 JavaScript 应用程序时，你的首要目标是让它正常运行。但在完成此后，值得花时间审查代码，看看是否可以进行改进。在许多情况下，你会发现代码可以被简化或改进，使其更易维护、增强和重用。
+
+改进 FAQs 应用程序代码的一种方法是消除在 HTML 中编写初始 `class` 属性的需要。这将使应用程序更容易重用，因为 HTML 变得更加简洁。这也会简化 JavaScript 代码。
+
+图 6-6 展示了这一点。在这里，HTML 中的 `h2` 和 `div` 元素被移除了 `class` 属性。然后，修改了 CSS，使得 `h2` 元素的背景起始为加号，而当 `div` 元素具有“minus”类属性时显示为减号，当它具有“open”类属性时显示 `div` 元素。
+
+这种方法之所以有效，是因为 `h2.minus` 和 `div.open` 选择器比 `h2` 和 `div` 选择器更具特殊性，它们的规则覆盖了 `h2` 和 `div` 元素的规则。现在，JavaScript 唯一要做的就是点击标题时添加或移除这些类。
+
+你可以从 JavaScript 中看到它是如何运作的。如果 `h2` 元素具有 `class` 属性，则移除该属性；否则，则通过 `setAttribute` 方法添加它并设置为值“minus”。如果 `div` 元素具有 `class` 属性，则移除该属性；否则，则添加一个值为“open”的属性。
+
+这是编写此应用程序的更好方法吗？毫无疑问。
+
+## HTML
+
+```html
+<section id="faqs">
+  <h1>Query FAQs</h1>
+  <h2>What is jquery?</h2>
+  <div>
+    // contents
+  </div>
+  <h2>Why is jQuery becoming popular?</h2>
+  <div>
+    // contents
+  </div>
+  <h2>Which is harder to learn: jQuery or JavaScript?</h2>
+  <div>
+    // contents
+  </div>
+</section>
+```
+
+## CSS
+
+```css
+h2 {
+  padding: .25em 0 .25px;
+  cursor: pointer;
+  background: url(images/plus.png) no-repeat left center;
+}
+h2.minus {
+  background: url(images/minus.png) no-repeat left center;
+}
+div {
+  display: none;
+}
+div.open {
+  display: inline;
+}
+```
+
+## 用于绑定事件处理程序的 JavaScript
+
+```javascript
+// Attach event handler
+h2.onclick = function () {
+  var h2 = this; // h2 is the current h2Node object
+  if (h2.hasAttribute("class")) {
+    h2.removeAttribute("class");
+  } else {
+    h2.setAttribute("class", "minus");
+  }
+  if (h2.nextElementSibling.hasAttribute("class")) {
+    h2.nextElementSibling.removeAttribute("class");
+  } else {
+    h2.nextElementSibling.setAttribute("class", "open");
+  }
+};
+```
+
+## 描述
+
+- 当你让应用程序正常运行后，询问代码是否可以以更易于维护、增强和重用的方式进行改进总是好的。
+- 当像如图所示编写 FAQs 应用程序时，你不需要为 HTML 中的 `h2` 和 `div` 元素设置 `class` 属性，这使得在网页上重用此代码变得更容易。
+
+图 6-6 FAQs 应用程序的另一种方式
+
+## JavaScript 应用程序的两个关键问题
+
+在第 1 章中，你介绍了跨浏览器兼容性问题。现在，图 6-7 展示了另外两个问题。在本书中，当我们引入新应用程序时，将回顾这些问题。
+
+## 可用性
+
+易用性指的是网站易使用的程度，而易用性是网站用户想要的。他们希望尽可能快速方便地找到他们寻找的内容。当找到后，他们希望尽可能快速方便地提取信息或完成任务。
+
+虽然网站的易用性有很多组成部分，但最重要的与导航有关。简而言之，导航应该是显而易见的。例如，带下划线的文本应该是用户可以点击的链接，按钮应该是可以点击的。用户不需要猜测哪些是可以点击的以及点击将带他们去哪里。
+
+如果你看图中的 FAQs 应用程序，你会发现导航做得很好。在这里，可点击的标题前面有一个加减号，这是表示可点击项目的常用惯例。此外，当指针悬停在标题上时，CSS 将指针变为手型指针，这让用户知道该项目是可以点击的。
+
+这已经很好了，但你可以通过在鼠标悬停时高亮标题来改进这一点。这样，用户就可以确定标题是可以点击的了。如果能高亮获得焦点的标题会更好，但标题无法接收焦点。
+
+## 无障碍性
+
+无障碍性是指使网站能够被许多用户（特别是残障用户）访问的特性。例如，视觉障碍的用户可能无法阅读图像中的文本，因此你需要为他们提供替代方案。同样，运动功能残障的用户可能无法使用鼠标，因此你需要确保……（注：源代码中的文本似乎被截断或碎片化，根据提供的输入继续）。
+
+# 第 6 章 如何使用 JavaScript 编写 DOM 173
+
+## 改进可访问性的常见问题
+
+| jQuery 常见问题 | |
+| --- | --- |
+| **什么是 jQuery？** | jQuery 是一个库，包含了你在开发网站时最可能需要的 JavaScript 函数。 |
+| **为什么 jQuery 变得流行？** | |
+| **jQuery 和 JavaScript 哪个更难学？** | |
+
+## HTML
+
+```html
+<section id="faqs">
+  <h1>jQuery 常见问题</h1>
+  <h2><a href="#" id="first_link">什么是 jquery?</a></h2>
+  <div>
+    ...
+  </div>
+  <h2><a href="#">为什么 jQuery 变得流行？</a></h2>
+  <div>
+    ...
+  </div>
+  <h2><a href="#">jQuery 和 JavaScript 哪个更难学？</a></h2>
+  <div>
+    
+  </div>
+</section>
+```
+
+## CSS
+
+```css
+a {
+  color: black;
+  text-decoration: none;
+}
+a:focus, a:hover { color: blue; }
+```
+
+## JavaScript
+
+```javascript
+window.onload = function () {
+  var faqs = $("faqs");
+  var h2Elements = faqs.getElementsByTagName("h2");
+  var h2Node;
+  for (var i = 0; i < h2Elements.length; i++) {
+    h2Node = h2Elements[i];
+    // 绑定事件处理器
+    h2Node.onclick = function () {
+      var h2 = this; // h2 是当前的 h2Node 对象
+      // 与之前相同
+    }
+  }
+  $("first_link").focus(); // 将焦点移动到第一个链接
+}
+```
+
+图 6-8 改进了可访问性的常见问题解答应用程序
+
+© 2012, Mike Murach and Associates, Inc. 授权给 Michael Hotham。
+
+## 链接和图片的 DOM 脚本技巧
+
+接下来，你将学习两种用于处理链接和图片的 DOM 脚本技巧。
+
+## 如何取消普通事件的默认行为
+
+图 6-9 所示表格展示了 HTML 元素点击事件的一些默认行为。例如，点击链接的默认行为是加载页面或链接的 `href` 属性指定的占位符。同样，点击提交或重置按钮的默认行为是提交或重置表单中的数据。
+
+然而，对于某些应用程序，你不希望这些默认行为发生。这时，你需要取消这些操作。不幸的是，这引入了浏览器兼容性问题，因为旧版本的 IE 工作方式与 Firefox、Safari、Opera 和 Chrome 等符合 DOM 标准的浏览器不同。
+
+图中第一个示例展示了在符合 DOM 标准的浏览器中取消默认行为有多简单。在这些浏览器中，每当事件发生时，都会创建一个事件对象，该对象会自动传递给处理器。该对象包含有关事件的信息，并提供了一个让你控制事件行为的方法。
+
+要访问此事件，你像第一个示例那样，在事件处理器的函数中编写一个参数。在这种情况下，`ev` 被用作参数名，当处理器被调用时，它将接收事件对象。然后，为了取消默认行为，你使用代表参数的事件对象的 `preventDefault` 方法。
+
+然而，对于旧版本的 IE，你需要使用第二个示例中的代码。要获取事件对象，你使用 `window.event` 属性而不是通过参数获取对象。然后，将事件对象的 `returnValue` 属性设置为 `false`，以防止默认行为发生。
+
+为了让应用程序兼容这两类型的浏览器，你像第三个示例所示结合了这两种技术。在这里，函数有一个参数，在符合 DOM 标准的浏览器中将接收事件对象。然后，如果该语句在符合 DOM 标准的浏览器中接收到对象，那么就使用该对象的 `preventDefault` 方法。
+
+## 点击事件的常见行为
+
+| 标签 | 点击事件的默认行为 |
+| --- | --- |
+| `<a>` | 加载页面或链接 `href` 属性指定的占位符 |
+| `<input>` | 提交或重置表单中的数据 |
+| `<button>` | 提交或重置表单中的数据 |
+
+## 符合 DOM 标准的代码取消默认行为
+
+```javascript
+var handler = function (ev) {
+  ev.preventDefault();
+};
+```
+
+## IE 代码取消默认行为
+
+```javascript
+var handler = function () {
+  window.event.returnValue = false;
+};
+```
+
+## 兼容浏览器的代码取消默认行为
+
+```javascript
+// 函数在符合 DOM 标准的浏览器中接收事件对象
+var handler = function (ev) {
+  if (ev) {
+    // 符合 DOM 标准
+    ev.preventDefault();
+  } else {
+    // IE
+    window.event.returnValue = false;
+  }
+};
+```
+
+## 如何预加载图片
+
+在某些应用程序中，当 JavaScript 更改属性时，图片才被下载。对于大图片或慢速连接，这会导致延迟。
+
+为了解决这个问题，你的应用程序可以在用户事件之前下载图片。这被称为预加载。图 6-10 展示了如何预加载图片。首先，你使用 `new` 关键字创建一个 Image 对象并将其存储在变量中。然后，将该属性设置为图片的属性。
+
+该示例展示了如何预加载所有链接。这假设每个链接的 `href` 属性都包含图片的位置。首先，使用 `getElementsByTagName` 方法获取所有链接，并将该数组存储在变量中。然后，使用循环来处理每个链接。
+
+在循环中，第一个语句将当前链接复制到链接变量，第二个语句创建一个新的 Image 对象。然后，第三个语句将 Image 属性设置为链接的属性。这预加载了图片。结果是，循环结束，所有图片都已预加载。
+
+## 创建并预加载 Image 对象
+
+### 如何创建 Image 对象
+
+```javascript
+var image = new Image();
+```
+
+### 在 Image 对象中预加载图片
+
+```javascript
+image.src = "image_name.jpg";
+```
+
+### 预加载 `<a>` 标签中 href 属性引用的图片
+
+```javascript
+var links = document.getElementsByTagName("a");
+var i, link, image;
+for (i = 0; i < links.length; i++) {
+  link = links[i];
+  image = new Image();
+  image.src = link.href;
+}
+```
+
+## 描述
+
+- 当应用程序预加载图片时，它会在页面加载时加载所有需要的图片，并将这些图片存储在浏览器的缓存中供以后使用。
+- 如果图片没有被预加载，它们将在需要时从服务器获取。在某些情况下，这会导致明显的延迟。
+- 当你使用 `new` 关键字创建一个 Image 对象时，该对象是空的。然后，当你设置该对象的 `src` 属性时，浏览器会预加载由该属性识别的图片。
+
+## 图片切换应用
+
+图 6-11 展示了一个图片切换应用，这是一种常见的 JavaScript 应用。在这里，每当用户点击其中一张较小的（缩略图）图片时，主图片就会被切换。在这个示例中，用户点击了第六张缩略图，因此显示了该图片的较大版本。在此应用中，大图上方的说明也会作为图片切换的一部分进行更改，这在图片切换中并不总是会这样做。
+
+## HTML 和 CSS
+
+在此应用的 HTML 中，使用 `<img>` 元素来显示六张缩略图。然而，这些元素被编码在 `<a>` 元素内部，使得图片是可点击的并且可以接收焦点。在 `<a>` 元素中，`href` 属性标识了点击链接时要切换的图片，而 `title` 属性则为相关说明提供了文本。在这种情况下，`<a>` 元素和 `<img>` 元素都编码在一个 `<ul>` 元素中。
+
+在 `<ul>` 元素之后，你可以看到页面上用于说明的 `<h2>` 元素和主图片的 `<img>` 元素。`<h2>` 元素的内容提供了第一张图片的说明，而 `<img>` 元素的 `src` 属性提供了第一张图片的位置。这样，当应用首次启动时，就会显示第一张说明和图片。
+
+JavaScript 使用的三个 id 在此处被突出显示。首先，第一个 `<a>` 元素的 id 设置为 "first_link"，以便 JavaScript 可以为该链接设置焦点。其次，`<h2>` 元素的 id 设置为 "caption"，以便 JavaScript 就可以更改说明。第三，主 `<img>` 元素的 id 设置为 "image"，以便 JavaScript 就可以更改图片。
+
+对于肢体障碍的人士，此 HTML 通过将 `<img>` 元素编码在 `<a>` 元素内部提供了无障碍性。这样，用户可以通过点击 Tab 键来访问缩略图链接，并且当缩略图获得焦点时，用户可以通过按 Enter 键来切换图片，从而触发 onclick 事件处理程序。
+
+此页面 CSS 中的注意点是针对 `<li>` 元素的规则。如图所示，它们的 `display` 属性被设置为从左到右显示缩略图，而不是从上到下。此外，每个项目右侧的内边距（padding）设置为 10 像素，以便在缩略图之间留出空间。
+
+## 图片切换应用的用户界面
+
+![](img/fb3dabc43193711c2307f942481ad30c_194_0.png)
+
+## HTML
+
+```html
+<section>
+  <h1>Ram Tap Combined Test</h1>
+  <ul id="image_list">
+    <li><a href="images/t1.jpg" title="James Allison: 1-1" id="first_link"><img src="thumbnails/t1.jpg" alt=""></a></li>
+    <li><a href="images/t2.jpg" title="James Allison: 1-2"><img src="thumbnails/t2.jpg" alt=""></a></li>
+    <li><a href="images/t3.jpg" title="James Allison: 1-3"><img src="thumbnails/t3.jpg" alt=""></a></li>
+    <li><a href="images/t4.jpg" title="James Allison: 1-4"><img src="thumbnails/t4.jpg" alt=""></a></li>
+    <li><a href="images/t5.jpg" title="James Allison: 1-5"><img src="thumbnails/t5.jpg" alt=""></a></li>
+    <li><a href="images/t6.jpg" title="James Allison: 1-6"><img src="thumbnails/t6.jpg" alt=""></a></li>
+  </ul>
+  <h2 id="caption">James Allison 1-1</h2>
+  <p><img src="images/h1.jpg" alt="image"></p>
+</section>
+```
+
+## li 元素的 CSS
+
+```css
+li {
+  padding-right: 10px;
+  display: inline;
+}
+```
+
+图 6-11 图片切换应用的用户界面、HTML 和 CSS
+
+## JavaScript
+
+6-12 展示了此应用的 JavaScript。在 onload 事件处理程序中，前三个语句获取了 `<ul>` 元素（image_list）、用于说明的 `<h2>` 元素以及显示切换的 `<img>` 元素。这些对象是图片列表中的 `<a>` 元素，并将它们保存在名为 `imageLinks` 的变量中。然后，第四条语句创建了 DOM 中的节点数组。代码处理数组中的每个链接。
+
+在每个元素的循环中，为每个链接的点击事件创建了一个事件处理程序。在此注意，创建每个事件处理程序的函数有一个 `ev` 参数，它在符合 DOM 的浏览器中将接收事件对象。同样注意，该函数的第一条语句使用了 `this` 关键字，以便为每个链接应用不同的事件处理程序。
+
+之后，第一条语句将图片节点中的 `src` 属性更改为链接的 `href` 属性。接着，下一条语句将说明节点第一个节点的值更改为链接的 `title` 属性。之后当应用运行时，用户点击缩略图时，这些语句将更改 DOM，显示内容也会随之更改。
+
+该事件处理程序最后使用图 6-9 中的代码取消链接的默认事件。由于默认事件是显示由 `href` 属性标识的文件，因此取消此操作是关键的。
+
+## 调用一次函数的定时器两种方法
+
+```javascript
+setTimeout( function, delayTime ) // 创建定时器
+clearTimeout( timer ) // 取消定时器
+```
+
+## 在 5 秒后隐藏第一个标题的 FAQs 应用程序
+
+![](img/fb3dabc43193711c2307f942481ad30c_198_0.png)
+
+## 标题的 HTML
+
+```html
+<h1 id="startup_message">Still under construction!</h1>
+```
+
+## 当类属性为 "closed" 时标题的 CSS
+
+```css
+#startup_message.closed { display: none; }
+```
+
+## 如何使用一次性定时器隐藏第一个标题
+
+```javascript
+// 声明一个全局变量以便函数访问
+var timer; // 声明定时器变量
+```
+
+```javascript
+// 创建一个调用一次 hideMessage 函数的定时器
+window.onload = function () {
+  timer = setTimeout(hideMessage, 5000);
+}
+
+// 创建定时器调用的函数
+// 当类属性被设置为 closed 时，css 会隐藏该元素
+var hideMessage = function () {
+  $("#startup_message").setAttribute("class", "closed");
+  clearTimeout(timer);
+}
+```
+
+## 如何将函数嵌入 setTimeout 方法的第一个参数中
+
+```javascript
+window.onload = function () {
+  var timer = setTimeout( // 第一个参数开始
+  function () {
+    $("#startup_message").setAttribute("class", "closed");
+    clearTimeout(timer);
+  },
+  5000); // 第二个参数
+}
+```
+
+## 描述
+
+- `setTimeout` 方法创建一个定时器，该定时器将在指定的毫秒延迟后调用一次指定的函数。该方法返回定时器的引用，可以使用它来取消定时器。
+- `clearTimeout` 取消使用 `setTimeout` 方法创建的定时器。
+- 当你嵌入函数时，可以避免对全局变量的需求。
+
+图 6-13 如何使用一次性定时器
+
+## 如何使用间隔定时器
+
+第二种定时器会重复调用其函数。要创建这种类型的定时器，你可以使用图 6-14 所示的全局 `setInterval` 方法。它的第一个参数是要被调用的函数。第二个参数是函数调用之间的时间间隔。要取消此定时器，请将定时器传递给 `clearInterval` 方法。
+
+图中的示例显示了如何使用间隔定时器创建一个每秒增加一次的计数器。该定时器被编写在 `onload` 事件处理程序中。
+
+在创建定时器之前，会声明一个初始值为零的计数器变量。然后，使用 `setInterval` 方法创建一个定时器。在这里，第一个参数是更新计数器变量并在网页上显示更新后的计数器值的函数。第二个参数将间隔设置为 1000 毫秒，因此网页每秒更新一次。
+
+当你使用 `setInterval` 方法创建定时器时，定时器会等待指定的间隔过去后才第一次调用函数。因此，如果你想让函数立即被调用，你需要在创建定时器之前先调用该函数。
+
+一旦你创建了间隔定时器，就无法对其进行修改。但是，你可以取消旧定时器并创建一个按你想要运行的新定时器。这与修改原始定时器的效果相同。
+
+## 重复调用函数的定时器两种方法
+
+```javascript
+setInterval( function, intervalTime ) // 创建定时器
+clearInterval( timer )             // 取消定时器
+```
+
+## 底部带有计数器的 FAQs 应用程序
+
+![](img/fb3dabc43193711c2307f942481ad30c_200_0.png)
+
+## 计数器的 HTML
+
+```html
+<h3>Number of seconds on page:<span id="counter">0</span></h3>
+```
+
+## 更新计数器的间隔定时器的 JavaScript
+
+```javascript
+window.onload = function () {
+  // 创建一个每秒调用一次 updateCounter 函数的定时器
+  var counter = 0;
+  var timer = setInterval(
+    function () { // 第一个参数开始
+      counter++;
+      document.getElementById("counter").firstChild.nodeValue = counter;
+    },
+    1000); // 第二个参数
+}
+```
+
+## 描述
+
+- `setInterval` 方法创建一个定时器，每当指定的毫秒间隔时就会调用一次函数。
+- `setInterval` 方法返回新定时器的引用，该引用可以使用 `clearInterval` 方法来取消定时器。
+- 虽然你不能修改间隔定时器，但你可以取消它并创建一个按你想要运行的新定时器。
+
+## 幻灯片应用程序
+
+图 6-15 展示了一个需要使用间隔定时器的幻灯片应用程序。当用户启动应用程序时，它每两秒显示一张新的说明和图像。
+
+## HTML 和 CSS
+
+如果你查看 HTML，可以看到五个 `<a>` 元素被编写在一个 `<ul>` 元素内。每个 `<a>` 元素的 `href` 属性提供了幻灯片中一张图像的位置。`title` 属性提供了幻灯片的说明。
+
+在无序列表之后，`<h2>` 元素是显示每张幻灯片说明的元素。它的内容提供了第一张幻灯片的说明。紧随其的是 `<img>` 元素，它将显示每张幻灯片的图像。它的 `src` 属性提供了第一张幻灯片的位置。这样，第一张幻灯片……
+
+## 用于幻灯片应用的 JavaScript
+
+```javascript
+var $ = function (id) {
+  return document.getElementById(id);
+}
+window.onload = function () {
+  var listNode = $("image_list"); // ul 元素
+  var captionNode = $("caption"); // 用于标题的 h2 元素
+  var imageNode = $("image"); // 用于显示的 img 元素
+  var links = listNode.getElementsByTagName("a");
+  // 处理图片链接
+  var i, linkNode, image;
+  var imageCache = [];
+  for (i = 0; i < links.length; i++) {
+    linkNode = links[i];
+    // 预加载图像并复制标题属性
+    image = new Image();
+    image.src = linkNode.getAttribute("href");
+    image.title = linkNode.getAttribute("title");
+    imageCache.push(image);
+  }
+  // 开始幻灯片
+  var imageCounter = 0;
+  var timer = setInterval(
+    function () {
+      imageCounter = (imageCounter + 1) % imageCache.length;
+      image = imageCache[imageCounter];
+      imageNode.src = image.src;
+      captionNode.firstChild.nodeValue = image.title;
+    },
+  2000);
+}
+```
+
+## 观点
+
+现在你已经完成了这一章，你应该知道如何使用 JavaScript 进行一些常见的 DOM 脚本应用，如图片切换和幻灯片。其中一些内容可能让你感到困惑，这是因为这些非常复杂且困难。
+好消息是，jQuery 让开发你刚刚看到的这类 DOM 脚本应用变得简单得多。更好的是，你现在拥有了使用 jQuery 所需的所有 JavaScript 技能，这些技能将让你更容易地学习 jQuery。
+
+## 术语
+
+- DOM（文档对象模型）接口
+- DOM 节点
+- 可用性
+- 元素节点
+- 可访问性
+- 文本节点
+- 默认操作
+- 属性节点
+- 预加载图像
+- 注释节点
+- 图片切换
+- DOM 核心规范
+- 计时器
+
+## 总结
+
+- 文档对象模型（简称 DOM）在页面加载到浏览器时构建。它由各种类型的节点组成。
+- 在 DOM 中，元素节点表示 HTML 文档中的元素，文本节点表示这些元素中的文本。DOM 还可以包含存储属性的带有文本节点的属性节点，以及注释节点。
+- JavaScript 为 DOM 核心规范中描述的 DOM 对象提供了属性和方法。这些包括由 Node、Document 和 Element 接口描述的属性和方法。
+- 可用性（Usability）指的是网页的易用程度。可访问性（Accessibility）指的是网页对用户（尤其是残障用户）的易于访问程度。
+- 对于某些 JavaScript 应用，你需要取消事件的默认操作，例如点击链接或按钮。
+- 对于图片切换和幻灯片应用，预加载图像是有好处的。这样页面加载时间可能会更长，但变化会立即发生。
+- 浏览器提供了两种不同类型的计时器。一次性计时器在指定的时间后执行一次函数。间隔计时器在每通过指定的时间间隔时执行一次函数。
+
+## 练习 6-1 实验 FAQs 应用
+
+在本书的第 2 部分，你将学习如何使用 jQuery 编写 DOM 脚本。由于使用 jQuery 进行 DOM 脚本更容易，因此你现在不需要在 JavaScript 中练习 DOM 脚本。然而，你应该理解本章中 JavaScript 应用是如何工作的。为了帮助你理解这一点，你可以开始尝试 Faqs 应用。
+
+1. 使用你的编辑器或 IDE 打开此文件夹中的 `index.html` 和 `faqs.js` 文件：
+2. 测试应用以查看它是如何工作的，并检查代码。
+3. 如下所示注释掉 `headingNode.onclick` 函数中的第一个语句：
+```javascript
+var h2 = this;
+```
+然后，在紧随之后添加此语句：
+```javascript
+var h2 = headingNode;
+```
+4. 测试程序并注意所有三个标题都关联了相同的事件处理器。结果是，点击任何一个标题只会影响第三个标题及其 div 元素。这证明了使用 `this` 关键字来引用标题节点当前实例的重要性。
+5. 撤销你在第 3 步中做的更改并再次测试。然后，对你不完全理解的任何代码进行实验。
+
+## 练习 6-2 复习其他章节应用
+
+如果你对本章中任何应用的工作原理有任何疑问，你可以在文件夹中找到它们：
+`c:\query\exercises\ch06\`
+在那里，你可以对它们进行测试、修改和实验，直到你完全理解它们是如何工作的。除了本章展示的完整应用外，你将在名为 `faqs_timers` 的文件夹中找到另一个应用，它使用了图 6-13 和 6-14 中的计时器。
+
+## 练习 6-3 开发书籍列表应用
+
+如果你想接受挑战，本练习提供了后续用户界面的 HTML 和 CSS。然后由你开发使其运行的 JavaScript。
+
+这将对你的 JavaScript 和 DOM 脚本技能进行严峻测试。不要感到沮丧，记住，这样的应用使用 jQuery 开发要容易得多。
+
+## Murach 产品
+
+- 针对 Web 开发者的书籍
+- Murach's HTML5 and CSS3
+- Murach's JavaScript and DOM Scripting
+- Murach's PHP and MySQL
+- Murach's MySQL
+
+![](img/fb3)
+
+- 针对 Java 开发者的书籍
+- 针对 .NET 开发者的书籍
+
+## 开发指南
+
+你可以在以下路径找到该应用的 HTML、CSS 和图像文件：
+`c:\query\exercises\ch06\book_list\`
+
+你还会找到一个名为 `book_list.js` 的 JavaScript 文件，其中包含标准函数。你可以将你的代码添加到此文件中。
+
+2. 该应用的工作原理与你在本章看到的 FAQs 类似，不同的是每个标题下方都会显示书籍链接列表。如果用户点击这些链接之一，列表右侧将显示书籍的图像。此外，当用户点击带有加号或减号的标题时，图像不应再显示。
+
+3. 此应用链接的 HTML 与图片切换应用类似。然而，此应用的链接不需要 `title` 属性，因为图像没有显示说明。
+
+4. 你的应用中链接的 `href` 属性引用的图像应该被预加载。要做到这一点，你可以遍历元素中的所有链接。此外，务必取消链接的默认操作。
+
+5. 随时从任何可用应用复制粘贴代码。这是构建新应用最有效的方法。
+
+注意：如果你将 `img` 元素的 `src` 属性设置为空字符串，以便在应用启动和用户点击标题时不显示图像，在 Internet Explorer 中会为元素显示一个占位符。为了避免这种情况，你可以设置 `img` 元素的 `style` 属性将 `display` 属性设置为 "none"。然后，当你想要显示图像时，将此属性设置为 "block"。在下一节中，你将学习使用 jQuery 设置 CSS 属性的其他方法。
+
+## 第 2 部分
+
+## jQuery 基础
+
+现在你已经了使用 jQuery 所需的 JavaScript 技能，你准备好学习 jQuery 了。因此，在第 7 章中，你将学习一个工作的 jQuery 子集，让你快速上手。在第 8 章中，你将学习如何使用 jQuery 效果和动画让网页生起来。
+
+然后，在第 9 章中，你将学习用于高级 DOM 脚本的 DOM 操作和遍历方法。在第 10 章中，你将学习如何使用 jQuery 处理表单的功能。在第 11 章中，你将学习如何使用许多可以快速提高生产效率的 jQuery 插件，你还将学习创建自己的插件。
+
+完成本部分后，你将拥有开发专业网页所需的所有 jQuery 技能。你也可以进入随后的三个部分中的任何部分，因为它们作为独立的模块编写的。例如，如果你想学习如何使用 Ajax，请跳到第 4 部分。
+
+# 7 使用 jQuery 快速上手
+
+在本章中，你将快速看到 jQuery 如何让 JavaScript 编程变得更简单。接着，你将学习一个实用的 jQuery 子集，它将帮助你快速上手。在此过程中，你将学习四个完整的应用程序，它们将向你展示如何应用 jQuery。
+
+- jQuery 简介 ................................................................................ 196
+- 什么是 jQuery ................................................................................................... 196
+- 如何在你的网页中引入 jQuery ...................................................... 196
+- jQuery 如何简化 JavaScript 开发 ........................................ 198
+- jQuery 如何影响测试和调试 ................................................ 198
+- jQuery UI 和插件如何简化 JavaScript 开发 ............... 200
+- jQuery 编程基础 ................................................................ 202
+- 如何编写 jQuery 选择器代码 ....................................................................... 202
+- 如何调用 jQuery 方法 ....................................................................... 204
+- 如何使用 jQuery 方法 ............................................................ 206
+- jQuery 中的邮件列表应用程序 ............................................................ 208
+- 用户界面与 HTML ........................................................................ 208
+- jQuery ..................................................................................................... 210
+- 选择器、方法和事件方法的实用子集 ........................................... 212
+- 最实用的选择器 .......................................................................... 212
+- 最常用的事件方法 ....................................................................... 214
+- 你应该注意的最常用的事件方法... ................... 216
+- 三个示例应用程序 ................................................................... 220
+- jQuery 中的 FAQs 应用程序 ................................................................ 220
+- jQuery 中的图片切换应用程序 ......................................................... 222
+- jQuery 中的图片悬停应用程序 ................................................... 226
+- 观点 ................................................................................................ 228
+
+## jQuery 简介
+
+在这一介绍中，你将学习什么是 jQuery、如何将其引入你的应用程序中，以及 jQuery、jQuery UI 和插件如何简化 JavaScript 开发。
+
+## 什么是 jQuery
+
+如图 7-1 所示，jQuery 是一个免费、开源的 JavaScript 库，它为常见的 Web 功能提供了几十种方法，让 JavaScript 编程变得更简单。此外，jQuery 函数经过了跨浏览器兼容性编码和测试，它们可以在所有浏览器中运行。
+
+这就是为什么超过 10,000 个访问量最大的网站有一半在使用 jQuery 的原因。这也是专业开发者经常使用 jQuery 的原因。事实上，你可以将 jQuery 视为 Web 开发者应该学会如何使用的四种技术之一：HTML、CSS、JavaScript 和 jQuery。但不要忘记，jQuery 实际上就是 JavaScript。
+
+## 如何在你的网页中引入 jQuery
+
+如果你访问图中所示的网站，你会发现一个下载按钮，允许你下载包含 jQuery 核心库的单文件。默认情况下，下载的版本是压缩版本，目前大约为 32KB。因此，该版本加载到浏览器的速度非常快，这也是开发者喜欢 jQuery 的另一个原因。
+
+另一个版本是未压缩的，目前约为 247KB。如果你下载了这个版本，就可以研究库中使用的 JavaScript 代码。但请注意，这极其复杂。
+
+一旦你下载了核心库的压缩版本，你就可以通过编写像图中第一个那样的 `script` 语句来将其引入网页。如果你将文件存储在计算机或本地 Web 服务器上，就可以在不连接互联网的情况下开发 jQuery 应用程序。对于生产环境应用程序，你需要将文件部署到你的互联网服务器上。
+
+在这个 `script` 语句中，文件名包含了版本号，但你可以使用任何想要的文件名。然而，如果文件没有版本号，很容易忘记你正在使用的是哪个版本。
+
+在 Web 应用程序中引入库的另一种方法也是我们推荐的方法，是从内容交付网络 (CDN) 获取文件。CDN 是托管开源软件的 Web 服务器，Google、Microsoft 和 jQuery 网站都是获取 jQuery 库的 CDN。在图中第二个示例中，`script` 元素使用了获取最新版本 jQuery 的 CDN URL，这也是书中所有应用程序引入 jQuery 库的方式。
+
+使用 CDN 的用处是你不需要下载 jQuery 文件。这与 jQuery CDN 和 "latest" URL 配合得效果特别好。这样，当有新版本发布时，你就不需要更改 URL。缺点是使用 CDN 必须连接互联网。
+
+## www.jquery.com jQuery 网站
+
+![](img/fb3dabc43193711c2307f942481ad30c_212_0.png)
+
+### jQuery 提供的功能
+
+- 数十种方法，让你更轻松地为你的网页添加 JavaScript 功能
+- 经过跨浏览器兼容性测试的方法
+
+### 将 jQuery 文件下载到计算机后如何引入
+
+```html
+<script src="jquery-1.8.2.min.js"></script>
+```
+
+### 如何从内容交付网络 (CDN) 引入 jQuery 文件
+
+```html
+<script src="http://code.jquery.com/jquery.min.js"></script>
+```
+
+## 描述
+
+- jQuery 是一个免费、开源的 JavaScript 库，提供了让编程更简单的方法。
+- jQuery 有两个版本。一个版本（min）是较小的压缩版本。
+- 另一个版本是未压缩的，你可以研究 JavaScript 代码。
+- 如果从内容交付网络 (CDN) 引入 jQuery 文件，你就不需要自己提供它。
+- CDN 提供最新版本。
+
+图 7-1：什么是 jQuery 以及如何将其引入你的应用程序（©2012 Mike Ruch and Associates. 授予 Michael Hotham。）
+
+## jQuery 如何简化 JavaScript 开发
+
+为了向你展示 jQuery 如何简化 JavaScript 开发，图 7-2 显示了你在第 6 章开发的 FAQs 应用程序的 JavaScript 和 jQuery 代码。如果你像大多数学习 JavaScript 的人一样，你可能发现这个应用程序的 JavaScript 代码既复杂又令人困惑。那是因为它确实如此。
+
+相比之下，jQuery 代码行数只有它的一半。一旦你学会如何使用 jQuery 选择器、方法和事件方法，你也会发现理解它们容易得多。
+
+顺便说，jQuery 使用 CSS 选择器来选择应用方法的 HTML 元素。例如，
+
+```javascript
+$("#faqs h2")
+```
+
+这是一个对应 CSS 选择器 `#faqs h2` 的 jQuery 选择器，它会选择 ID 为 "faqs" 的元素中的所有 h2 元素。事实上，jQuery 支持所有的 CSS 选择器，包括 CSS3 选择器，即使在不支持所有 CSS3 选择器的浏览器中也是如此。这也是为什么
+
+## jQuery 如何影响测试和调试
+
+当你使用 jQuery 开发应用程序时，可以使用你在第 4 章中学的相同测试和调试技能。但请记住，jQuery 方法是对你在 HTML 头部的 `script` 元素中指定的 jQuery 文件的调用。换句话说，当你的代码执行 jQuery 方法时，是 jQuery 文件中的 JavaScript 在进行处理。
+
+那么，如果 jQuery 代码无法执行，Firebug 或浏览器控制台中的显示将指向 jQuery 文件中的某条语句。这可能是因为向 jQuery 方法传递了错误的参数。遗憾的是，在 Firebug 中，控制台不会告诉你代码中的哪条语句导致了问题。相反，你必须使用其他调试技术来发现并修复错误。
+
+但在大多数情况下，Firebug 和浏览器控制台确实提供了帮助你发现并修复错误的信息。这是一个小问题，但通过使用 jQuery 带来的处处完全弥补了它。
+
+## FAQ 应用程序的用户界面
+
+### jQuery FAQs
+
+**什么是 jQuery？**
+
+**为什么 jQuery 变得如此流行？**
+
+三个原因：
+- 它是免费的。
+- 它让你在更短的时间内完成更多工作。
+- 它所有的功能都具有跨浏览器兼容性。
+
+**jQuery 和 JavaScript 哪一个更难？**
+
+## 用于应用程序的 JavaScript
+
+```javascript
+var $ = function (id) {
+  return document.getElementById(id);
+}
+window.onload = function () {
+  var faqs = $("faqs");
+  var h2Elements = faqs.getElementsByTagName("h2");
+  var h2Node;
+  for (var i = 0; i < h2Elements.length; i++) {
+    h2Node = h2Elements[i];
+    // Attach event handler
+    h2Node.onclick = function () {
+      // h2 is the current h2Node object
+      if (h2Node.getAttribute("class") == "plus") {
+        h2Node.setAttribute("class", "minus");
+      } else {
+        h2Node.setAttribute("class", "plus");
+      }
+      if (h2Node.nextSibling.getAttribute("class") == "closed") {
+        h2Node.nextSibling.setAttribute("class", "open");
+      } else {
+        h2Node.nextSibling.setAttribute("class", "closed");
+      }
+    };
+  }
+}
+```
+
+## 用于应用程序的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#faqs h2").toggle(
+    function () {
+      $(this).addClass("minus");
+      $(this).next().show();
+    },
+    function () {
+      $(this).removeClass("minus");
+      $(this).next().hide();
+    }
+    // end toggle
+  );
+});
+```
+
+## jQuery UI 和 JavaScript 开发如何简化 jQuery 开发
+
+除了 jQuery 核心库外，jQuery 还提供了 jQuery UI（用户界面）库。该库中的函数使用 jQuery 核心库来构建高级功能，只需几行代码即可创建这些功能。这些功能包括主题、组件（widgets）和鼠标交互。
+
+例如，图 7-3 中的浏览器显示显示了像手风琴（accordion）一样的 jQuery 组件 FAQ。要实现此组件，你需要高亮显示的三行 JavaScript 代码，这些代码还应用了你想要的格式。
+
+要使用 jQuery UI，你可以像使用 jQuery 核心库一样在网页中引入 jQuery UI 库。你还需要引入一个 jQuery UI CSS 文件，它为 jQuery UI 提供主题。在第 3 节，你将学习如何这样做，并学习如何使用 jQuery UI 的功能。
+
+由于 jQuery UI 可以让 JavaScript 开发比使用 jQuery 时更加简单，因此每当 jQuery UI 提供效果、组件或交互时，使用它是有意义的。请记住，jQuery UI 是有限的，因此你大多数 Web 应用程序仍然需要 jQuery。因此，你应该将 jQuery UI 视为在掌握 jQuery 之后学习如何使用的插件。
+
+除了 jQuery UI，jQuery 网站提供了访问为 jQuery 开发的插件的。这些插件提供了更高级的功能，如数据验证和下拉菜单，实现这些功能只需要极少的代码。为了方便插件开发，jQuery 提供了规范来帮助标准化插件的实现。插件是开发者使用 jQuery 的原因之一。
+
+与 jQuery 一样，插件也是利用 jQuery 核心库的库。事实上，你可以将 jQuery UI 视为一个插件。要使用插件，你使用 `script` 元素在网页中引入插件文件，并在 jQuery 核心库元素之后使用该脚本。在第 11 章，你将学习如何从插件中获得最大的收益，还将学习如何创建自己的插件。
+
+在实践中，寻找一个实现你想要添加到网页中的功能的插件是有意义的。如果你能找到，你可能可以在几小时内完成原本需要几天才能完成的工作。接下来，如果你找不到合适的插件，看看 jQuery UI 是否可以帮助实现该功能是有合理的。最后，如果插件和 jQuery UI 都不能帮助你实现某个功能，你就必须使用 jQuery 来开发它。这就是为什么你需要掌握本节中所有的 jQuery 技能。
+
+## 作为 jQuery UI 手风琴的 FAQ 应用程序
+
+## jQuery UI 手风琴的 HTML
+
+```html
+<div id="accordion">
+  <h3><a href="#">什么是 jQuery？</a></h3>
+  <div><!-- panel contents --> </div>
+  <h3><a href="#">为什么 jQuery 变得如此流行？</a></h3>
+  <div><!-- panel contents --> </div>
+  <h3><a href="#">jQuery 和 JavaScript 哪一个更难？</a></h3>
+  <div><!-- panel contents --> </div>
+</div>
+```
+
+## 用于 jQuery UI 手风琴的 JavaScript 代码
+
+```html
+<script>
+$(document).ready(function() {
+  $("#accordion").accordion();
+});
+</script>
+```
+
+## 一典型的插件函数
+
+- 数据验证
+- 幻灯片
+
+## 描述
+
+- jQuery UI 是一个用于主题、组件和交互的库。
+- 插件提供了更高级的功能，如数据验证和下拉菜单。
+- jQuery 提供了规范来帮助标准化插件实现。
+
+## jQuery 选择器 ("selector") 的语法
+
+```html
+<section id="faqs">
+  <h1>jQuery FAQs?</h1>
+  <h2 class="plus">什么是 jQuery？</h2>
+  <div>
+    <p>jQuery 是一个 JavaScript 函数库，在你开发网站时很可能需要它。</p>
+  </div>
+  <h2 class="plus">为什么 jQuery 变得如此流行？</h2>
+  <div>
+    <p>三个原因：</p>
+    <ul>
+      <li>它是免费的。</li>
+      <li>它让你在更短的时间内完成更多工作。</li>
+      <li>它所有的功能都具有跨浏览器兼容性。</li>
+    </ul>
+  </div>
+</section>
+```
+
+## 如何调用 jQuery 方法
+
+一旦你选择了想要应用某种方法的元素或多个元素，就可以使用图 7-5 所示的语法来调用该方法。这与调用任何对象的方法的方法相同。使用获取该元素或多个元素的选择器、点号（.）、方法名以及括号内的任何参数。
+
+为了开始使用 jQuery，图中的表格总结了你将用到的一些 jQuery 方法。例如，不带参数的 `val` 方法可以从所选的文本框或其他表单控件获取值，而带有参数的 `val` 方法则可以设置所选文本框或其他表单控件的值。前两个示例展示了这种工作原理。
+
+同样，不带参数的 `text` 方法可以用于获取所选元素的文本，而带有参数的 `text` 方法可以设置所选元素的文本。这类方法通常被称为 getter（获取）和 setter（设置）方法。在这里，第三个示例说明了 `text` 方法的 setter 版本，它将元素的文本设置为“Email address is required”。
+
+表格中的第五个方法是 `next` 方法，用于获取元素的下一个（相邻）兄弟元素。此方法通常会紧跟另一个方法。要做到这一点，你使用对象链，其工作方式与 JavaScript 完全相同。图第四个示例说明了这一点。在这里，`next` 方法获取所选元素之后的兄弟元素，而 `text` 方法为该兄弟元素设置文本。
+
+表格中的最后两个方法是 `submit` 和 `focus` 方法，它们与 JavaScript 的 `submit` 和 `focus` 方法一样。`submit` 方法将所选表单的数据提交到服务器，而 `focus` 方法将焦点移动到所选的表单控件或链接。
+
+稍后，你将看到这些选择器和方法如何在应用程序中工作。但首先，你需要学习如何为应用程序设置事件处理程序。
+
+## 调用 jQuery 方法的语法
+
+```javascript
+$("selector").methodName(parameters)
+```
+
+## 一些常用的 jQuery 方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `val()` | 获取文本框或其他表单控件的值。 |
+| `val(value)` | 设置文本框或其他表单控件的值。 |
+| `text()` | 获取元素的文本。 |
+| `text(value)` | 设置元素的文本。 |
+| `next(type)` | 获取元素的下一个兄弟元素，或者如果指定了参数则获取指定类型的下一个兄弟元素。 |
+| `submit()` | 提交表单。 |
+| `focus()` | 将焦点移动到所选的表单控件或链接。 |
+
+## 示例
+
+如何从文本框获取值
+```javascript
+var gallons = $("#gallons").val();
+```
+
+如何为输入元素设置值
+```javascript
+$("#gallons").val("");
+```
+
+如何为元素中设置文本
+```javascript
+$("#email_address_error").text("Email address is required");
+```
+
+如何使用对象链为下一个兄弟元素设置文本
+```javascript
+$("#last_name").next().text("Last name is required");
+```
+
+如何提交表单
+```javascript
+$("#join_list").submit();
+```
+
+如何将焦点移动到表单控件或链接
+```javascript
+$("#email_address").focus();
+```
+
+## 描述
+
+- 要调用 jQuery 方法，请使用选择器、点操作符以及括号中的任何参数。然后，该方法将应用于选择器选中的元素或多个元素。
+- 当你在 jQuery 中使用对象链时，你会一个接一个地编写方法。这之所以有效，是因为每个方法都返回相应的对象。
+- 如果方法的选择器选取了多个元素，jQuery 会将方法应用到所有元素上，这样你就不需要编写循环来完成操作。
+
+图 7-5 如何调用 jQuery 方法
+
+## 如何使用 jQuery 事件方法
+
+当你使用 jQuery 时，你会使用事件方法将事件处理程序附加到事件上。要这样做，你需要使用图 7-6 顶部的语法。首先，编写触发事件元素的选择器（例如一个将被点击的按钮）。然后，编写你想要使用的事件的名称。最后，在括号内编写一个函数作为该事件的事件处理程序。
+
+在下表中，总结了你最常用的两个事件方法。`ready` 事件是 JavaScript `load` 事件的替代方案，它的工作效果更好。与 `load` 事件不同，`ready` 事件在 DOM 构建完成后立即被触发，即使图像等其他元素仍在加载到浏览器中。这意味着用户可以更快地开始使用网页。
+
+因为在用 JavaScript 或 jQuery 之前通常必须构建 DOM，所以你可能会在开发的每个 JavaScript 应用程序中用到 `ready` 方法。图中的示例展示了实现这种操作的两种方法。在长格式中，你编写网页的选择器，后面跟着点号、方法名（`ready`）以及事件处理程序的函数。
+
+简而言之，你可以编写选择器和事件方法名，只需在美元符号后的括号内编写函数即可。虽然专业开发人员经常使用这种形式，但书中的所有示例都使用了长格式。这样可以清楚地看到 `ready` 事件处理程序的起始位置。
+
+图中的下一个示例显示了针对所有 `h2` 元素的点击事件的处理程序。它的编写方式与 `ready` 事件的处理程序类似，只是 `h2` 被用选择器，`click` 被作事件方法名。
+
+图中的最后一个示例显示了如何在 `ready` 事件内部编写事件处理程序。注意每个事件处理程序的结束大括号、括号和分号是至关重要的。正如你所料到的，很容易漏掉这些标记之一或弄错顺序，因此这是一个常见的错误来源。这就是为什么专业程序员经常在每个事件处理程序的结束标记后编写内联注释，以标识这些标记属于哪个事件处理程序。
+
+## jQuery 事件方法的语法
+
+```javascript
+$(selector).eventName(function() {
+  // 事件处理程序的语句
+});
+```
+
+## 常用的 jQuery 事件方法
+
+| 事件方法 | 描述 |
+|---|---|
+| `ready(handler)` | 当 DOM 准备就绪时，运行事件处理程序。 |
+| `click(handler)` | 当所选元素被点击时，运行事件处理程序。 |
+
+## 为 jQuery 的 ready 事件编写事件处理程序的两种方式
+
+长写法
+```javascript
+$(document).ready(function() {
+  alert("The DOM is ready");
+});
+```
+
+短写法
+```javascript
+$(function() { // 假设为 (document).ready
+  alert("The DOM is ready");
+});
+```
+
+## 针对所有 h2 元素的点击事件的处理程序
+
+```javascript
+$("h2").click(function() {
+  alert("This heading is clicked");
+});
+```
+
+## ready 事件内部的点击处理器
+
+```javascript
+$(document).ready(function() {
+  $("h2").click(function() {
+    alert("This heading is clicked");
+  }); // 点击处理程序的结束
+}); // ready 处理程序的结束
+```
+
+## 描述
+
+- 要编写 jQuery 事件处理程序，请使用选择器、点操作符、事件方法名称以及括号内的匿名函数。
+- `ready` 事件的处理程序在 DOM 准备就绪时就会运行，即使图像正在加载。这比 `onload` 事件更好，后者要等到所有内容加载后才会触发。
+- 在本书中，`ready` 事件总是使用所示的长格式编写。尽管如此，实践中程序员使用的是短写法。
+- 在一个事件处理程序内部编写另一个处理程序时，大括号、括号和分号的使用至关重要。为了确保正确，许多程序员会在这些标记后编写内联注释。
+
+图 7-6 如何使用 jQuery 事件方法
+
+## 第 7 章 使用 jQuery 快速上手 209
+
+## 邮件列表应用的用户界面
+
+![](img/fb3dabc43193711c2307f942481ad30c_224_0.png)
+
+## HTML 部分
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>加入邮件列表</title>
+  <link rel="stylesheet" href="email_list.css">
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html55.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+```
+
+
+
+<script src="email_list.js"></script>
+
+</head>
+
+<body>
+
+  <section>
+
+    <h1>加入我们的邮件列表</h1>
+
+    <form id="join.html" name="email_form" method="get">
+
+      <label for="email_address1">邮箱地址:</label>
+
+      <input type="text" id="email_address1">
+
+      <span><br>
+
+      <label for="email_address2">重新输入邮箱地址:</label>
+
+      <input type="text" id="email_address2">
+
+      <span><br>
+
+      <label for="first_name">姓:</label>
+
+      <input type="text" id="first_name">
+
+      <span><br>
+
+      <label>&nbsp;</label>
+
+      <input type="button" id="join_list" value="加入列表">
+
+    </form>
+
+  </section>
+
+</body>
+
+</html>
+
+```
+
+图 7-7 邮件列表应用的用户界面和 HTML
+
+© 2012, Mike Mur and Associates, Inc. Licensed to Michael Hotham.
+
+## jQuery 部分
+
+7-8 节介绍了此此的 jQuery 代码。这是 HTML 引入的 `email_list.js` 文件中的代码。在这里，所有的 jQuery 代码都被高亮显示。其余代码都是 JavaScript 代码。
+
+首先，你可以为“加入我们的列表”按钮的点击事件创建一个事件处理器，该处理器被编写在 `ready` 事件的处理器内部。然后，如果你查看代码的最后三行，你可以看到这些处理器的结束标点符号。在点击事件处理器中，前两个语句展示了如何使用 jQuery 选择器和 `val()` 方法从文本框中获取值。
+
+在第一个 `if` 语句中，你可以看到如果用户没有在文本框中输入地址，将如何显示错误。在这里，`next()` 方法获取文本框的相邻兄弟元素（即 `span` 元素），然后使用 `text()` 方法在那个 `span` 元素中放入错误消息。这改变了 DOM，一旦发生更改，错误消息就会显示在浏览器中。
+
+在接下来的 `if` 语句中，`next()` 和 `val()` 方法以类似的方式使用。然后第四个 `if` 语句测试 `isValid` 变量是否仍为 `true`。如果是，则会执行表单的 `submit()` 方法，将数据发送到 Web 服务器。
+
+“加入我们的列表”按钮的点击事件处理器到此结束。但该处理器之后还有最后一条语句。它将焦点移动到第一个文本框，其 `id` 为 "email_address"。
+
+在你审阅这段代码时，请注意它并不需要标准的 `$()` 函数（该函数在传递元素 id 时获取元素对象）。相反，`$` 被用于启动一个通过 id 获取元素的 jQuery 选择器。这简化了编码工作。
+
+尽管这段 jQuery 代码说明了 jQuery 如何简化一个数据验证应用，但它还不足以展示 jQuery 的威力。为了这一点，你需要学习更多的选择器、方法和事件方法，然后查看它们如何用于其他类型的应用程序中。你将在接下来学习这些。
+
+## 邮件列表应用的 jQuery 代码
+
+```javascript
+
+$(document).ready(function() {
+
+  $("#join_list").click(function() {
+
+    var emailAddress1 = $("#email_address1").val();
+
+    var emailAddress2 = $("#email_address2").val();
+
+    var isValid = true;
+
+    // 验证第一个邮箱地址
+
+    if (emailAddress1 == "") {
+
+      $("#email_address1").next().text("此字段必填。");
+
+      isValid = false;
+
+    } else {
+
+      $("#email_address1").next().text("");
+
+    }
+
+    // 验证第二个邮箱地址
+
+    if (emailAddress2 == "") {
+
+      $("#email_address2").next().text("此字段必填。");
+
+      isValid = false;
+
+    } else if (emailAddress1 == emailAddress2) {
+
+      $("#email_address2").next().text("此项输入必须与第一项一致。");
+
+      isValid = false;
+
+    } else {
+
+      $("#email_address2").next().text("");
+
+    }
+
+    // 验证姓
+
+    if ($("#first_name").val() == "") {
+
+      $("#first_name").next().text("此字段必填。");
+
+      isValid = false;
+
+    } else {
+
+      $("#first_name").next().text("");
+
+    }
+
+    // 如果所有输入均有效，则提交表单
+
+    if (isValid) {
+
+      $("#email_form").submit();
+
+    }
+
+  }); // 结束 click
+
+  $("#email_address1").focus();
+
+}); // 结束 ready
+
+```
+
+图 7-8 邮件列表应用的 jQuery 代码
+
+## 选择器的子集
+
+邮件列表应用的选择器子集如下。这些是你最常用的选择器。后续将介绍方法和事件方法。
+
+## 常用选择器总结
+
+| 选择器 | 选择目标 |
+| :--- | :--- |
+| `[attribute]` | 具有指定属性的元素 |
+| `[attribute=value]` | 具有指定属性值的元素 |
+| `:contains(text)` | 包含指定文本的元素 |
+| `:empty` | 无子节点的元素 |
+| `:eq(n)` | 索引为 n 的元素 |
+| `:even` | 索引为偶数的元素 |
+| `:first` | 第一个元素 |
+| `:first-child` | 作为父元素第一个元素的元素 |
+| `:gt(n)` | 索引大于 n 的元素 |
+| `:has(selector)` | 包含指定元素的元素 |
+| `:header` | 标题元素（h1, h2, ...） |
+| `:hidden` | 隐藏的元素 |
+| `:last` | 最后一个元素 |
+| `:last-child` | 作为父元素最后一个元素的元素 |
+| `:lt(n)` | 索引小于 n 的元素 |
+| `:not(selector)` | 不符合选择器定义的元素 |
+| `:nth-child` | 作为父元素第 n 个元素的元素 |
+| `:odd` | 索引为奇数的元素 |
+| `:only-child` | 作为父元素唯一元素的元素 |
+| `:parent` | 其他元素的父元素（包括文本节点） |
+| `:text` | type 属性为 "text" 的输入元素 |
+| `:visible` | 可见的元素 |
+
+## 示例
+
+**选择作为父元素第一个子元素的 li 元素**
+`$("li:first-child")`
+
+**选择表格中的 tr 元素**
+`$("table > tr:even") // 索引从0开始，所以第一个标签是偶数`
+
+**选择元素的第三个后代 <a> 元素**
+`$("#fags:eq(2)") // 索引从0开始`
+
+**选择所有 type 属性为 "text" 的 input 元素**
+`$(":text")`
+
+# 最实用的方法
+
+表 7-10 展示了来自多个 jQuery 类别的方法集合。例如，`prev()` 和 `next()` 方法是 DOM 遍历方法。`attr()`、`addClass()`、`removeClass()` 和 `toggleClass()` 方法是 DOM 操作方法。`hide()` 和 `show()` 方法是效果方法。而 `each()` 方法是一个杂项方法。
+
+这些是一些最实用的 jQuery 方法，它们将帮助你快速上手 jQuery。随后，你将通过阅读本节的其余章节向你的技能库中添加更多方法。例如，你将在第 8 章中学习如何使用其他方法，并在第 9 章学习如何使用其他的 DOM 遍历和操作方法。
+
+在这里，如果你觉得这看起来很繁杂，只需读一遍这些方法看看有哪些可用方法即可。然后研究示例以了解它们如何使用。稍后，当你某个应用程序需要某个特定方法时，可以查阅这个总结。
+
+在第一个示例中，`attr()` 方法用于获取 ID 为 "image" 的元素的 `src` 属性。第二个示例使用 `attr()` 方法为选定的元素添加 `src` 属性，其值为存储在变量 `imageSource` 中的值。如果元素已经具有 `src` 属性，该方法将更改它的值。第三个示例使用 `css()` 方法将选定元素的 `color` 属性改为蓝色。
+
+在第四个示例中，`addClass()` 方法用于为所有 ID 为 "faqs" 的 `<h2>` 元素添加类名。这与你使用 JavaScript 所做的操作类似。
+
+在最后一个示例中，`each()` 方法用于对数组中的每个元素执行一个函数。在这种情况下，数组包含了 ID 为 "image_list" 的元素内的所有的 `<a>` 元素，`each()` 方法会遍历这些元素。正如你所看到的，这简化了对数组元素的处理。
+
+# 最实用的 jQuery 方法总结
+
+| 方法 | 描述 |
+| --- | --- |
+| `next([selector])` | 获取元素的下一个兄弟元素，或者如果指定了参数，则获取指定类型的第一个兄弟元素。 |
+| `prev([selector])` | 获取元素的上一个兄弟元素，或者如果指定了参数，则获取指定类型的上一个兄弟元素。 |
+| `attr(attributeName)` | 获取指定属性的值。 |
+| `attr(attributeName, value)` | 设置指定属性的值。 |
+| `css(propertyName)` | 获取指定属性的值。 |
+| `css(propertyName, value)` | 设置指定属性的值。 |
+| `addClass(className)` | 为元素添加一个或多个类，并在必要时创建该类。如果使用多个类作为参数，请用空格隔开。 |
+| `remove([className])` | 移除一个或多个类。如果使用多个类作为参数，请用空格隔开。 |
+| `toggleClass(className)` | 如果该类存在，则将其移除；否则，添加它。 |
+| `hide([duration])` | 隐藏选定的元素。`duration` 参数可以是 "slow"、"fast" 或表示毫秒数的数字。默认情况下，持续时间为 400 毫秒，"slow" 为 600 毫秒，"fast" 为 300 毫秒。 |
+| `show([duration])` | 显示选定的元素。`duration` 参数与 `hide()` 方法相同。 |
+| `each(function)` | 对数组中的每个元素运行该函数。 |
+
+获取图片的 `src` 属性值
+
+```javascript
+
+$("#image").attr("src");
+
+```
+
+将图片的 `src` 属性值设置为变量的值
+
+```javascript
+
+$("#image").attr("src", imageSource);
+
+```
+
+将 `<h2>` 元素的 `color` 属性值设置为蓝色
+
+```javascript
+
+$("h2").css("color", "blue");
+
+```
+
+为 "faqs" 元素的 `<h2>` 后代添加类名
+
+```javascript
+
+$("#faqs h2").addClass("minus");
+
+```
+
+为 "image_list" 元素内的每个 `<a>` 元素运行函数
+
+```javascript
+
+$("#image_list a").each(function() {
+
+  // 函数的语句
+
+});
+
+```
+
+## 描述
+
+- 上述表展示了一组强大的 jQuery 方法。此表补充了 7-5 中介绍的方法。
+- 在随后的章节中，你将学习如何使用其他方法，包括用于效果的（第 8 章）、DOM 脚本遍历（第 9 章）、表单（第 10 章）以及 Ajax 和 JSON（第 14 章）。
+
+图 7-10 最实用的方法
+
+# 最实用的事件方法
+
+图 7-11 总结了最实用的事件方法，该总结包含了图 7-6 中引入的 `ready()` 和 `click()` 方法。正如你所看到的，大多数这些事件方法都接受一个单个事件处理器，在事件发生时运行。这些事件方法的工作方式与 `ready()` 和 `click()` 方法类似，但对应的事件不同。
+
+第一个示例说明了这一点，它与 `click()` 事件方法相似，只是它处理的是双击事件。值得注意的是在处理器内部使用了 `this` 关键字。在这里，它被编码为 jQuery 选择器，并指向被双击的文本框。这与 JavaScript 中 `this` 关键字的工作方式相似。请注意它没有被包含在引号内，尽管此函数执行了 `val()` 方法将双击文本的值设置为空字符串。
+
+相比之下，`toggle()` 和 `hover()` 事件方法提供了两个处理器。对于 `toggle()` 事件方法，第一个事件处理器在元素第一次被点击时运行，此后的每次点击都会运行。这被称为奇数处理。
+
+在这些示例中，请注意当选择器获取多个元素时，事件方法为每个元素设置事件处理器。这使得使用 jQuery 设置事件处理器要简单得多。
+
+# 最实用的事件方法总结
+
+| 事件方法 | 描述 |
+| --- | --- |
+| `ready(handler)` | 在 DOM 准备就绪时运行。 |
+| `unload(handler)` | 在用户清除窗口时运行。 |
+| `error(handler)` | 在发生 JavaScript 错误时运行。 |
+| `click(handler)` | 在元素被点击时运行。 |
+| `toggle(handlerEven, handlerOdd)` | 第一个处理器在偶数次点击时运行。第二个处理器在奇数次点击时运行。 |
+| `dblclick(handler)` | 在选元素被双击时运行。 |
+| `mouseenter(handler)` | 当鼠标指针进入选定元素时运行。 |
+| `mouseover(handler)` | 当鼠标指针悬停在选定元素上时运行。 |
+| `mouseout(handler)` | 当鼠标指针移出选定元素时运行。 |
+| `hover(handlerIn, handlerOut)` | 第一个事件处理器在鼠标指针进入元素时运行。第二个在鼠标指针移出时运行。 |
+
+为所有文本框的双击事件设置处理器，清除被点击的框
+
+```javascript
+
+$(":text").dblclick(function () {
+
+  $(this).val("");
+
+})
+
+```
+
+为列表中每个 `<img>` 元素的悬停设置处理器
+
+```javascript
+
+$("#image_list img").hover({
+
+  function() {
+
+    alert("鼠标指针进入了 img 元素");
+
+  },
+
+  function() {
+
+    alert("鼠标指针移出了 img 元素");
+
+  }
+
+}); // end hover
+
+```
+
+## 你应该了解的其他事件方法
+
+对于大多数应用，你将使用已经介绍过的事件方法。你还将编写事件处理程序的函数或多个函数作为事件方法的参数。
+
+尽管如此，有时你可能通过其他方式附加事件处理程序、移除事件处理程序，或触发一个启动事件处理程序的事件。在这种情况下，你可以使用表 7-12 中列出的方法。
+
+当你使用表中的前两个方法时，通常会在一个变量中启动事件处理程序的函数，如表格后的第一个示例所示。然后，你可以将变量名作为事件方法的第二个参数。
+
+为了说明这一点，第二个示例展示了如何使用 `bind()` 方法将事件处理程序附加到 ID 为 "clear" 的元素的 `click` 事件上。然而，当你使用简写方法将事件处理程序附加到事件时，也会使用 `bind()` 方法。这只是在后台完成的，你可能并不会察觉。
+
+将事件处理程序存储在变量中的用处之一是你可以将处理程序附加到多个事件上。第三个示例说明了这一点。在那里，有两条语句将 `clearClick` 事件处理程序应用到 ID 为 "clear" 的按钮的 `click` 事件以及所有文本框的 `dblclick` 事件上。
+
+对于某些应用，你可能在某些条件发生时移除事件处理程序。要做到这一点，可以使用 `unbind()` 方法，如图中的第四个示例所示。
+
+或者，如果你想在事件处理程序运行一次后将其移除，可以使用 `one()` 事件方法。这由第五个示例所示。
+
+如果你想启动你的查询代码，可以使用长形式或短形式的 `trigger()` 方法，如第六组示例所示。这两个示例都触发了 ID 为 "clear" 的元素的 `click` 事件，从而导致 `clearClick` 事件处理程序的运行。
+
+这为为两个不同的事件运行同一个事件处理程序提供了另一种方法。你只需要从一个事件处理程序中触发另一个事件处理程序的事件即可。这如图中的最后一个示例所示。在那里，所有文本框的 `double-click` 事件的处理程序触发了 ID 为 "clear" 的元素的 `click` 事件，从而启动了 `clearClick` 事件处理程序。
+
+## 你应该了解的其他事件方法
+
+| 事件方法 | 描述 |
+| --- | --- |
+| `bind(event, handler)` | 将事件处理程序附加到事件。 |
+| `unbind(event, handler)` | 从事件中移除事件处理程序。 |
+| `one(event, handler)` | 附加事件处理程序并在运行一次后将其移除。 |
+| `trigger(event)` | 触发所选元素的事件。 |
+
+## 如何在变量中存储事件处理程序
+
+```javascript
+
+var clearClick = function () {
+
+  // 事件处理程序的语句
+
+}
+
+```
+
+## 如何将事件处理程序附加到事件
+
+使用 `bind()` 方法
+```javascript
+
+$("#clear").bind("click", clearClick);
+
+```
+
+使用简写方法
+```javascript
+
+$("#clear").click(clearClick);
+
+```
+
+## 如何将事件处理程序附加到两个不同的事件
+
+```javascript
+
+$("#clear").click(clearClick);
+
+$(":text").dblclick(clearClick);
+
+```
+
+## 如何从事件中移除事件处理程序
+
+```javascript
+
+$("#clear").unbind("click", clearClick);
+
+```
+
+## 如何附加并移除事件处理程序使其只运行一次
+
+```javascript
+
+$("#clear").one("click", confirmClick);
+
+```
+
+## 如何触发事件
+
+使用 `trigger()` 方法
+```javascript
+
+$("#clear").trigger("click");
+
+```
+
+使用简写方法
+```javascript
+
+$("#clear").click();
+
+```
+
+## 如何使用简写方法从事件处理程序触发事件
+
+```javascript
+
+$(":text").dblclick(function () {
+
+  $("#clear").click(); // 触发 clear 按钮的点击事件
+
+})
+
+```
+
+## 描述
+
+- 当你将事件处理程序存储在变量中时，可以使用 `bind()` 方法附加到多个事件。
+- 当你使用简写方法将事件处理程序附加到事件时，你实际上是在使用 `bind()` 方法。
+- `submit()` 和 `focus()` 方法实际上是事件方法。当你使用简写方法触发它们时，它们会触发 `submit` 和 `focus` 事件。
+
+图 7-12 你应该了解的其他事件方法
+
+## 三个示例应用
+
+现在，为了帮助你观察选择器、方法和事件方法在实际应用中的工作方式，本文介绍了三个典型的 JavaScript 应用。
+
+## jQuery 中的 FAQs 应用
+
+图 7-13 展示了你在第 6 章中学习的 FAQs 应用，但这次使用了 jQuery。当此应用启动时，`h2` 元素之后的 `div` 元素会被 CSS 隐藏，并且 `h2` 元素前面有一个加号。然后，如果用户点击 `h2` 元素，其下方的 `div` 元素将显示，加号将变为减号。如果用户点击标题，过程就会反过来。
+
+这是一个典型的 jQuery 应用，也是 `toggle()` 事件方法设计用于此类应用的的类型。因此，此应用的 jQuery 代码包含一个包含在 `ready()` 方法内部的 `toggle()` 事件方法。该 `toggle()` 事件方法为 ID 为 "faqs" 的区域内的每个 `h2` 元素设置了处理程序：
+
+```javascript
+
+$('#faqs h2').toggle
+
+```
+
+请记住 `toggle()` 事件方法的参数是两个函数，用逗号隔开。因此，这些代码被写在该方法的括号内。在这两个函数中，都使用了关键字 `this`，它指代当前的 `h2` 元素，因为那是 `toggle()` 方法的对象。
+
+在该方法的第一个函数（参数）中，第一条语句使用 `addClass()` 方法为 `h2` 元素添加一个类属性，其值为 "minus"。用于此项操作的 CSS 使用该类来将元素的背景图像从加号更改为减号。然后，第二条语句调用 `next()` 和 `show()` 方法来显示与 `h2` 元素相邻的 `div` 元素。
+
+该方法的第二个函数工作方式相同，但方向相反。在那里，第一条语句使用 `removeClass()` 方法移除首次点击标题时添加的 "minus" 类。第二条语句使用 `next()` 和 `hide()` 方法隐藏相邻元素。
+
+此应用展示了 jQuery 的强大。在这里，仅需 12 行代码就为 "faqs" 区域中大量的 `h2` 元素的交替点击设置了事件处理程序。
+
+如果你将此代码与图 7-2 中该应用的 JavaScript 代码进行比较，你可以更好地理解这在多大程度上简化了该应用。事实上，由于 JavaScript 不提供 `show()` 和 `hide()` 方法，JavaScript 必须使用类和 CSS 来隐藏 `div` 元素。
+
+## 浏览器中的 FAQs 应用
+
+jQuery FAQs
+** 什么是 jQuery？**
+** 为什么 jQuery 流行？**
+三个原因：
+* 它是免费的。
+* 它让你更快地完成工作。
+* 它的所有函数都是兼容的。
+** jQuery 还是 JavaScript 更难学？**
+
+## HTML
+
+```html
+
+<section id="faqs">
+
+<h1>jQuery FAQs</h1>
+
+<h2>什么是 jQuery?</h2>
+
+<div>
+
+  <p>jQuery 是你在开发网站时可能需要的 JavaScript 函数库。</p>
+
+</div>
+
+<h2>为什么 jQuery 流行？</h2>
+
+<div>
+
+  <p>三个原因：</p>
+
+  <ul>
+
+    <li>它是免费的。</li>
+
+    <li>它让你更快地完成工作。</li>
+
+    <li>它的所有函数都是兼容的。</li>
+
+  </ul>
+
+</div>
+
+<h2>jQuery 还是 JavaScript 更难学？</h2>
+
+<div>
+
+  <p>对于大多数函数，jQuery 比 JavaScript 更容易学习和使用。但请记住：jQuery 就是 JavaScript。</p>
+
+</div>
+
+</section>
+
+```
+
+## jQuery
+
+```javascript
+
+$(document).ready(function() {
+
+  $("#faqs h2").toggle(
+
+    function() {
+
+      $(this).addClass("minus");
+
+      $(this).next().show();
+
+    },
+
+    function() {
+
+      $(this).removeClass("minus");
+
+      $(this).next().hide();
+
+    }
+
+  );
+
+}); // end ready
+
+```
+
+# jQuery 中的图片切换应用
+
+图 7-14 展示了另一个体现 jQuery 强大的应用。这就是你在第 6 章中学习的图片切换（Image Swap）应用。简而言，用户点击浏览器窗口顶部缩略图之一，说明和图片就会随之改变。
+
+在该应用的 HTML 中，使用 `<img>` 元素来显示六张缩略图。然而，这些元素被编写在 `<a>` 元素内部，以便图片可以点击并能够接收焦点。在 `<a>` 元素中，`href` 属性标识了点击链接时要切换的图片，而 `title` 属性为相关说明提供了文本。在这种情况下，`<a>` 元素和 `<img>` 元素都编写在一个 `<ul>` 元素中。
+
+在 `<ul>` 元素之后，你可以看到用于说明的 `<h2>` 元素和用于页面主图片的 `<img>` 元素。这些元素的 id 被突出显示，因为 jQuery 在将说明和图片切换到这些元素时会使用这些 id。
+
+对于肢体障碍者，此 HTML 通过通过点击 Tab 键为缩略图链接编写 `<img>` 元素提供了无访问性，当缩略图获得焦点时，用户可以按 Enter 键切换图片缩略图，从而触发点击事件。
+
+该页面 CSS 中注意的是针对 `<li>` 元素的规则集。它们的显示属性（display）设置为 `inline`，因此图片从左到右排列，而不是从上到下。此外，每个项目右侧的内边距（padding）设置为 10 像素，以便在图片之间留出空间。
+
+## 图片切换应用的用户界面
+
+![](img/fb3dabc43193711c2307f942481ad30c_238_0.png)
+
+## HTML
+
+<section>
+  <h1>Ram Tap Combined测试</h1>
+  <ul id="image_list">
+    <li><a href="thumbnails/t1.jpg" title="James Allison: 1-1"> <img src="thumbnails/t1.jpg" alt=""></a></li>
+    <li><a href="thumbnails/t2.jpg" title="James Allison: 1-2"> <img src="thumbnails/t2.jpg" alt=""></a></li>
+    <li><a href="thumbnails/t3.jpg" title="James Allison: 1-3"> <img src="thumbnails/t3.jpg" alt=""></a></li>
+    <li><a href="thumbnails/t4.jpg" title="James Allison: 1-4"> <img src="thumbnails/t4.jpg" alt=""></a></li>
+    <li><a href="thumbnails/t5.jpg" title="James Allison: 1-5"> <img src="thumbnails/t5.jpg" alt=""></a></li>
+    <li><a href="thumbnails/t6.jpg" title="James Allison: 1-6"> <img src="thumbnails/t6.jpg" alt=""></a></li>
+  </ul>
+  <h2 id="caption">James Allison 1-1</h2>
+  <p><img src="images/h1.jpg" alt="" id="image"></p>
+</section>
+
+## li 元素的 CSS
+
+```css
+
+li {
+
+  padding-right: 10px;
+
+  display: inline;
+
+}
+
+```
+
+图 7-14 图片切换应用的用户界面、HTML 和 CSS
+
+## 第 7 章 使用 jQuery 快速入门 227
+
+三张图片，其中中间一张图片在鼠标悬停时
+
+![](img/fb3dabc43193711c2307f942481ad30c_242_0.png)
+
+## HTML 部分
+
+```html
+
+<section>
+
+  <h1>Ram Tap Combined Test</h1>
+
+  <ul>
+
+    <li><img src="images/h1.jpg" alt="" id="h4.jpg">&gt;</li>
+
+    <li><img src="images/h2.jpg" alt="" id="h5.jpg">&gt;;</li>
+
+    <li><img src="images/h3.jpg" alt="" id="h6.jpg">&gt;</li>
+
+  </ul>
+
+</section>
+
+```
+
+## JavaScript 部分
+
+```javascript
+
+$(document).ready(function() {
+
+  $("#image_rollovers img").each(function() {
+
+    var oldURL = $(this).attr("src"); // 获取 src 属性
+
+    var newURL = $(this).attr("id"); // 获取 id 属性
+
+    // 预加载图片
+
+    var rolloverImage = new Image();
+
+    rolloverImage.src = newURL;
+
+    // 设置事件处理器
+
+    $(this).hover(
+
+      function() {
+
+        $(this).attr("src", newURL); // 设置 src 属性
+
+      },
+
+      function() {
+
+        $(this).attr("src", oldURL); // 设置 src 属性
+
+      } // 结束 hover
+
+    );
+
+  }); // 结束 each
+
+}); // 结束 ready
+
+```
+
+图 7-16 jQuery 中的图片切换应用
+
+© 2012, Mike Murach and Associates, Inc. 授权给 Michael Hotham。
+
+## 观点
+
+为了让你快速入门，本章介绍了最实用的 jQuery 选择器、方法和事件方法的运行子集。这应该让你对使用 jQuery 时需要处理的工具有一个大致的了解。在你阅读本书的后续章节时，将继续学习这些选择器和方法。
+
+当然，诀窍在于能够将正确的选择器、方法和事件方法应用到你正在开发的应用程序中。要精通这一点，回顾许多类型的 jQuery 应用程序会有帮助。这就是为什么本章展示了四个应用程序，也是为什么你在完成此书之前会看到很多示例。
+
+## 术语
+
+| jQuery 方法 |
+| :--- |
+| CDN (内容分发网络) 获取方法 |
+| jQuery UI 设置方法 |
+| 插件对象链 |
+| 选择器事件方法 |
+
+## 总结
+
+- jQuery 是一个 JavaScript 库，提供了让 JavaScript 编程更简单的方法。这些方法已经过跨浏览器兼容性测试。
+- jQuery UI 和插件是使用 jQuery 库构建更高级功能的 JavaScript 库。
+- 要使用 jQuery，需要在 `head` 部分编写一个 `<script>` 元素，包含 jQuery 核心库文件。该文件可以下载并存储在你的计算机或服务器上，也可以通过内容分发网络 (CDN) 访问。
+- 当你使用 jQuery 代码语句时，你使用的是类似于 CSS 的选择器。你还使用点符号语法，它由一个或多个元素的选择器以及要执行的方法名称组成。
+- 在 jQuery 中设置事件处理器，你使用事件方法。这些方法中的大多数带有一个参数，即在事件发生时运行的事件处理器。但某些如 `toggle()` 方法这样的事件方法接受两个事件处理器参数。
+
+## 练习 7-1
+
+### 为电子邮件列表应用程序添加一个“清除”按钮
+
+在此练习中，你将为图 7-7 和 7-8 中的电子邮件列表应用程序添加一个“清除”按钮。这将强制你创建并附加另一个事件处理器。
+
+- 1. 使用文本编辑器打开此文件夹中的 `index.html` 和 `email_list.js` 文件：`c:\jquery\exercises\ch07\email_list\`
+- 2. 运行应用程序以刷新对其工作原理的记忆。在列表按钮下方添加了一个“清除”按钮，但该按钮无效。
+- 3. 为清除按钮的点击事件添加事件处理器，通过将其设置为空字符串 ("")来清除所有文本框。这可以通过语句完成。要选择文本框，请使用类似于图 7-9 中最后一个选择器。要将值设为空字符串，请使用图 7-5 中第二个示例中的 `val()` 方法。现在测试此更改。
+- 4. 该事件处理器还应该将星号放回文本框右侧显示的 `span` 元素中，以显示为必填。这需要一条使用 `next()` 和 `text()` 方法的语句。
+- 5. 为此事件再添加一个事件处理器，将焦点移动到第一个文本框。然后测试此更改。
+- 6. 为此应用程序添加另一个针对任何文本框双击事件的事件处理器。该事件处理器的功能应与清除按钮点击事件的事件处理器相同。实现此点的最简单方法是从双击事件处理器中触发清除按钮的点击事件，如图 7-12 中的最后一个示例所示。
+- 7. 注释掉用于触发清除按钮点击事件的代码行。然后，在双击事件处理器中添加一条语句，仅清除用户双击的框中的文本。要做到这一点，你必须像图 7-11 中的第一个示例那样使用 `this` 关键字。
+
+## 练习 7-2
+
+### 为图片切换应用程序使用不同的方法
+
+此练习要求你修改图 7-7 和 7-8 中的图片切换应用程序。这将强制你创建并附加另一个事件处理器。
+
+- 1. 使用文本编辑器打开此文件夹中的 `index.html` 和 `email_list.js` 文件：`c:\jquery\exercises\ch07\email_list\`
+- 2. 运行应用程序以刷新对其工作原理的记忆。在列表按钮下方添加了一个“清除”按钮，但该按钮无效。
+- 3. 为清除按钮的点击事件添加事件处理器，通过将其设置为空字符串 ("")来清除所有文本框。这可以通过语句完成。要选择文本框，请使用类似于图 7-9 中最后一个选择器。要将值设为空字符串，请使用图 7-5 中第二个示例中的 `val()` 方法。现在测试此更改。
+- 4. 该事件处理器还应该将星号放回文本框右侧显示的 `span` 元素中，以显示为必填。这需要一条使用 `next()` 和 `text()` 方法的语句。
+- 5. 为此事件再添加一个事件处理器，将焦点移动到第一个文本框。然后测试此更改。
+- 6. 为此应用程序添加另一个针对任何文本框双击事件的事件处理器。该事件处理器的功能应与清除按钮点击事件的事件处理器相同。实现此点的最简单方法是从双击事件处理器中触发清除按钮的点击事件，如图 7-12 中的最后一个示例所示。
+- 7. 注释掉用于触发清除按钮点击事件的代码行。然后，在双击事件处理器中添加一条语句，仅清除用户双击的框中的文本。要做到这一点，你必须像图 7-11 中的第一个示例那样使用 `this` 关键字。
+
+## 练习 7-3
+
+### 为电子邮件列表应用程序添加一个“清除”按钮
+
+在此练习中，你将为图 7-7 和 7-8 中的电子邮件列表应用程序添加一个“清除”按钮。这将强制你创建并附加另一个事件处理器。
+
+- 1. 使用文本编辑器打开此文件夹中的 `index.html` 和 `email_list.js` 文件：`c:\jquery\exercises\ch07\email_list\`
+- 2. 运行应用程序以刷新对其工作原理的记忆。在列表按钮下方添加了一个“清除”按钮，但该按钮无效。
+- 3. 为清除按钮的点击事件添加事件处理器，通过将其设置为空字符串 ("")来清除所有文本框。这可以通过语句完成。要选择文本框，请使用类似于图 7-9 中最后一个选择器。要将值设为空字符串，请使用图 7-5 中第二个示例中的 `val()` 方法。现在测试此更改。
+- 4. 该事件处理器还应该将星号放回文本框右侧显示的 `span` 元素中，以显示为必填。这需要一条使用 `next()` 和 `text()` 方法的语句。
+- 5. 为此事件再添加一个事件处理器，将焦点移动到第一个文本框。然后测试此更改。
+- 6. 为此应用程序添加另一个针对任何文本框双击事件的事件处理器。该事件处理器的功能应与清除按钮点击事件的事件处理器相同。实现此点的最简单方法是从双击事件处理器中触发清除按钮的点击事件，如图 7-12 中的最后一个示例所示。
+- 7. 注释掉用于触发清除按钮点击事件的代码行。然后，在双击事件处理器中添加一条语句，仅清除用户双击的框中的文本。要做到这一点，你必须像图 7-11 中的第一个示例那样使用 `this` 关键字。
+
+## 如何使用效果
+
+本章首先介绍 jQuery 提供的基础效果。在学习了如何使用它们之后，你将学习如何使用 jQuery 文档中所说的“自定义效果”。在实践中，网页上的任何运动幻象都可以称为*动画*，因此你可以将本章中的所有效果都视为动画。
+
+## jQuery 效果方法
+
+图 8-1 总结了 jQuery 的效果方法。这些包含了第 7 章中介绍的 `show()` 和 `hide()` 方法。
+
+对于 `fadeTo()` 方法外的所有方法，主要参数是持续时间（duration），它决定了效果持续多久。如果 `fadeOut()` 方法的示例参数为 5000，则该元素或多个元素将在 5 秒（5000 毫秒）内淡出。如果省略持续时间，效果将立即发生，因此没有动画。
+
+相比之下，`fadeTo()` 方法不仅需要持续时间参数，还需要透明度（opacity）参数。透明度参数必须是 0 到 1 之间的值，其中 1 是完全（正常）透明度，0 是不可见。
+
+图中的示例展示了这些方法是如何工作的。在这里，第一个示例使用 `fadeOut()` 方法让标题在 5 秒内淡出。然后，第二个示例使用 `fadeTo()` 和 `slideDown()` 方法让标题在五秒内淡出，然后通过在一秒内增加其高度使其向下滑动显示。正如你所看到的，链式调用（chaining）常用于效果以获得所需的动画。
+
+下一个示例显示了如何链式调用 `fade` 系列方法。在这里，标题首先在 5 秒内淡入到 .2 的透明度。然后，标题在 1 秒内淡入 1 的透明度。这样做的效果是标题几乎完全淡出，然后恢复到完全透明度。
+
+最后一个示例显示了这些方法中的任何一个都可以回调函数（callback function）。要使用回调函数，你需要将一个函数编写为方法的最后一个参数。然后，该函数会在方法执行完成后被调用。
+
+在例示例中，使用 `fadeTo()` 方法将标题淡入到 .2 透明度。回调函数将标题淡回完全透明度。在回调函数中，使用 `this` 关键字来指代第一个 `fadeTo()` 方法选中的标题。正如你所看到的，回调函数通常会选择其他元素进行其操作。
+
+请注意，图中的最后两个示例得到相同的结果。
+
+在我离开之前，你可能想知道，当你使用 `hide()` 或 `show()` 方法指定持续时间时，该效果是通过更改元素的高度、宽度和透明度属性来实现的。例如，要显示一个元素，它的高度、宽度和透明度会增加，使其看起来是从左上角开始的。相反，要隐藏一个元素，它的高度、宽度和透明度会减少，使其从右下角收缩。
+
+## 第 8 章 如何使用效果和动画
+
+## jQuery 效果的基础方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `show()` | 从左上到右下显示选中的元素。 |
+| `hide()` | 从右下到左上隐藏选中的元素。 |
+| `toggle()` | 显示或隐藏选中的元素。 |
+| `slideDown()` | 以滑动动作显示选中的元素。 |
+| `slideUp()` | 以滑动动作隐藏选中的元素。 |
+| `slideToggle()` | 通过淡入不透明状态来显示选中的元素。 |
+| `fadeIn()` | 通过淡入透明状态来隐藏选中的元素。 |
+| `fadeOut()` | 通过淡入淡出显示或隐藏选中的元素。 |
+| `fadeToggle()` | 将选取元素的透明度属性调整为第二个参数设置的透明度。使用此方法时必须指定持续时间参数。 |
+
+## 除 fadeTo() 方法外所有方法的基础语法
+
+```
+
+methodName((duration), callback))
+
+```
+
+## fadeTo() 方法的基础语法
+
+```
+
+fadeTo(duration, opacity(, callback))
+
+```
+
+## 页面加载后带有动画的标题的 HTML
+
+```html
+
+<h1 id="start_message">临时施工中！</h1>
+
+```
+
+## 让标题在 5 秒内淡出的 jQuery
+
+```javascript
+
+$('#start_message').fadeOut(5000);
+
+```
+
+## 使用链式调用让标题淡出并向滑的 jQuery
+
+```javascript
+
+$('#start_message').fadeOut(5000).slideDown(1000);
+
+```
+
+## 使用 fadeTo() 方法的链式调用
+
+```javascript
+
+$('#start_message').fadeTo(5000, 2).fadeTo(1000, 1);
+
+```
+
+## 使用回调函数获得相同结果的 jQuery
+
+```javascript
+
+$('#start_message').fadeTo(5000, 2,
+
+  function() {
+
+    $(this).fadeTo(1000, 1); // 回回调函数
+
+  } // 开始回调函数
+
+);
+
+```
+
+- 持续时间参数可以是 "slow"、"fast" 或给出毫秒数的数字。默认情况下，持续时间为 400 毫秒，"slow" 为 600 毫秒，"fast" 为 200 毫秒。
+- 回调参数用于在效果完成后调用的函数。如果选取了多个元素，回调函数会为每个元素运行一次。
+- 链式调用常用于效果。这是因为每个方法都返回了它执行效果的对象。
+
+## 描述
+
+### jQuery 效果方法
+
+![](img/fb3dabc43193711c2307f942481ad30c_248_0.png)
+
+## 使用 jQuery 的 FAQs 应用程序
+
+### 使用 jQuery 的 FAQs 应用程序
+
+记得第 7 章的 FAQs 应用程序吗？现在，你将回顾两种编写 FAQs 应用程序的不同方式。在第一个示例中，使用了 `slideDown()` 和 `fadeOut()` 方法并带有持续时间参数。这与第一个示例类似，只是用 `slideUp()` 方法代替了 `slideDown()`。在第二个示例中，使用了 `toggleClass()` 和 `slideToggle()` 方法。
+
+注意 CSS 将 "slides" 容器中所有 `img` 元素的 display 属性设置为 "none"。这意味着这些元素会在页面加载时被加载，但不会显示。相反，它们会通过 jQuery 逐个进入 "slide" 元素。
+
+### 显示的 FAQs 应用程序
+
+![](img/fb3dabc43193711c2307f942481ad30c_250_0.png)
+
+## HTML
+
+```html
+
+<section id="faqs">
+
+  <h1>jQuery 常见问题</h1>
+
+  <div>
+
+    <h2>什么是 jQuery?</h2>
+
+    <div><!-- 内容 --></div>
+
+  </div>
+
+  <div>
+
+    <h2>为什么 jQuery 变得流行？</h2>
+
+    <div><!-- 内容 --></div>
+
+  </div>
+
+  <div>
+
+    <h2>学习 jQuery 还是 JavaScript 更难？</h2>
+
+    <div><!-- 内容 --></div>
+
+  </div>
+
+  </div>
+
+</section>
+
+```
+
+## 使用 slideDown() 和 fadeOut() 的 jQuery
+
+```javascript
+
+$(document).ready(function() {
+
+  $('#faqs h2').toggle(
+
+    function() {
+
+      $(this).addClass("minus");
+
+      $(this).next().slideDown(1000);
+
+    },
+
+    function() {
+
+      $(this).removeClass("minus");
+
+      $(this).next().fadeOut(1000);
+
+    }
+
+  ); // 结束
+
+}); // 结束
+
+```
+
+## 使用 toggleClass() 和 slideToggle() 的 jQuery
+
+```javascript
+
+$(document).ready(function() {
+
+  $('#faqs h2').click(
+
+    function() {
+
+      $(this).toggleClass("minus");
+
+      $(this).next().slideToggle(1000);
+
+    }
+
+  ); // 结束
+
+}); // 结束
+
+```
+
+## 带有效果的幻灯片应用程序
+
+为了让你更好地了解如何使用效果，你现在将回顾两种编写幻灯片应用程序的不同方式。
+
+## 用户界面、HTML 和 CSS
+
+在 8-3 中，屏幕截获显示了幻灯片正在淡入的第三张幻灯片。在 HTML 的 div 元素中，你可以看到五个元素为幻灯片提供支持，每个元素都有一个属性提供显示在幻灯片上方的标题。
+
+## 带有淡出和淡入效果的幻灯片应用
+
+![](img/fb3dabc43193711c2307f942481ad30c_252_0.png)
+
+## 幻灯片的 HTML
+
+```html
+
+<section>
+
+  <h1>钓鱼幻灯片</h1>
+
+  <h2 id="caption">捕获上游的大王鱼</h2>
+
+  <img id="slide" src="images/casting1.jpg" alt="">
+
+  <div id="slides">
+
+    <img src="images/casting1.jpg" alt="Catching on the Upper Kings">
+
+    <img src="images/casting2.jpg" alt="Catching on the Lower Kings">
+
+    <img src="images/catchrelease.jpg" alt="Catch and Release on the Big Horn">
+
+    <img src="images/fish.jpg" alt="Catching on the South Fork">
+
+    <img src="images/lures.jpg" alt="The Lures for Catching">
+
+  </div>
+
+</section>
+
+```
+
+## 幻灯片的关键 CSS
+
+```css
+
+img {
+
+  height: 250px;
+
+}
+
+#slides {
+
+  display: none;
+
+}
+
+```
+
+## 描述
+
+- "slides" div 元素中的图像将用于幻灯片。
+- 每张图片的说明文字（caption）将来自其 alt 属性。
+
+插图 8-3 幻灯片的 HTML 和 CSS
+
+© 2012, Mike Murach and Associates, Inc. Licensed to Michael Hotham.
+
+## 编写 jQuery 的两种方式
+
+现在应该是显而易见的，jQuery 应用程序可以用许多不同的方式进行编写。事实上，学习 jQuery 时最大的问题是弄清楚如何使用 jQuery 来获得你想要的结果。这就是为什么这本书经常展示获取结果的多种方法，这也是为什么示例 8-4 展示了两种编写幻灯片代码的方法。
+
+在第一个示例中，代码首先创建一个 `Image` 对象的数组，用于存储存储 HTML 中 "slides" 区域内五个元素的 `src` 和 `alt` 属性。这是通过使用 `each()` 方法处理这五个元素中的每一个完成的。在处理循环内部，使用 `attr()` 方法从每个 `img` 元素获取 `src` 和 `alt` 属性，并将它们存储在每个图像对象的 `src` 和 `title` 属性中。然后，将 `Image` 对象添加到数组中。
+
+创建数组后，使用 `setInterval()` 方法每 1000 毫秒（第二个参数）执行一次其功能（第一个参数）。在该函数内部，第一条语句选择说明文字并使其在 1000 毫秒内淡出。然后，第二条语句选择幻灯片并将其淡出。但请注意那条语句。
+
+在回调函数中，第一条语句为 `imageCounter` 变量获取新值，该变量最初被设置为零。为了做到这一点，它使用模运算符来获取计数器除以数组长度后剩余的余数。对于幻灯片的第二张图片，计数器加 1 并除以 5，所以余数为 1。对于第五张幻灯片，计数器增加到 5 并除以 5，所以余数为 0。由于该变量被重新赋值给 `imageCounter` 变量，这意味着随着幻灯片的进行，该变量的范围将在 0 到 4 之间变化。
+
+一旦设置了 `imageCounter` 值，其余部分就很简单了。首先，将 `nextImage` 设置为数组中的下一张图片。其次，将 "slide" `img` 元素的 `attr` 属性设置为数组中下一个图像对象的 `src` 属性，并让该幻灯片淡入。最后，将说明文字的文本设置为数组中下一个图像对象的 `title` 属性，并让该说明文字淡入。
+
+在第二个示例中，代码首先将 `nextSlide` 变量设置为 "slides" 区域中的第一个 `img`。然后，`setInterval` 的函数会淡出幻灯片和说明文字，就像在第一个示例中做的那样。然而，`fade` 方法的回调函数中的代码是完全不同的。
+
+它首先检查长度是否为零。如果是，意味着没有下一张幻灯片了，并将 `nextSlide` 变量设置为该区域中的第一个元素。否则，将下一张幻灯片设置为 "slides" 区域中的下一张图片。
+
+一旦确定了下一张幻灯片，代码为下一张幻灯片的 `src` 和 `alt` 属性设置变量。然后，它使用第一个变量为显示幻灯片的元素设置 `src` 属性并将其淡入，并使用第二个变量为下一个说明文字设置文本并将其淡入。
+
+这展示了此类应用程序可以编写的两种方式，你将在后续章节中看到更多。当你开发任何时
+
+## 编写 jQuery 的一种方式
+
+```javascript
+
+$(document).ready(function() {
+
+  // 创建一个幻灯片图片数组
+
+  var image, imageCache = [];
+
+  $("#slides").each(function() {
+
+    image = new Image();
+
+    image.src = $(this).attr("src");
+
+    image.title = $(this).attr("alt");
+
+    imageCache.push( image );
+
+  });
+
+  // 开始幻灯片
+
+  var imageCounter = 0;
+
+  var nextImage;
+
+  var timer = setInterval(
+
+    function () {
+
+      $("#caption").fadeOut(1000);
+
+      $("#slide").fadeOut(1000);
+
+      function () {
+
+        imageCounter = (imageCounter + 1) % imageCache.length;
+
+        nextImage = imageCache[imageCounter];
+
+      }
+
+    }, 2000)
+
+  );
+
+```
+（注：此处原文代码似乎存在逻辑断层或括号不匹配，翻译时保持了其结构）
+
+## 另一种编写 jQuery 的方式
+
+```javascript
+
+$(document).ready(function() {
+
+  var nextSlide = $("#slides").first();
+
+  var nextCaption;
+
+  var nextSource;
+
+  // 开始幻灯片
+
+  setInterval(
+
+    function () {
+
+      $("#caption").fadeOut(1000);
+
+      $("#slide").fadeOut(1000);
+
+      function () {
+
+        if (nextSlide.length == 0) {
+
+          nextSlide = $("#slides").first();
+
+        } else {
+
+          nextSlide = nextSlide.next();
+
+        }
+
+        nextSource = nextSlide.attr("src");
+
+        nextCaption = nextSlide.attr("alt");
+
+        $("#slide").attr("src", nextSource).fadeIn(1000);
+
+        $("#caption").text(nextCaption).fadeIn(1000);
+
+      }
+
+    }, 3000)
+
+  );
+
+});
+
+```
+
+插图 8-4 为幻灯片编写 jQuery 代码
+
+## 如何停止和启动幻灯片
+
+为了提高幻灯片的可用性，你通常会为用户提供某种停止和重启的方法。图 8-5 展示了这种方法。它在用户点击时停止幻灯片，并在用户点击时重启。
+
+首先，这段代码设置了一个运行幻灯片的匿名函数，并将其存储在名为 `runShow` 的变量中。如果你查看该函数的代码，你会发现它与示例中的代码相同。
+
+其次，该函数之后是一个每 3 秒调用一次 `runShow` 函数的语句。然而，这必须在 `runShow` 函数之后编写，因为该函数是一个匿名函数。
+
+第三，一个事件处理程序使用 `toggle()` 方法在当前幻灯片的偶数和奇数点击运行时函数。在偶数点击时，函数使用 `clearInterval()` 方法取消计时器，从而停止幻灯片。在奇数点击时，再次创建计时器以重新显示幻灯片。你还会注意到幻灯片停止在完整的图片上，而不是淡出或淡入中的图片。这是因为幻灯片的计时器在当前间隔结束之前不会被取消。此外，幻灯片将从下一个图像序列重启。这是因为 `nextSlide`、`nextCaption` 和 `runShow` 变量的值被保留了下来，即使计时器已被取消。
+
+当然，你有许多方法可以停止和重启幻灯片。例如，你可以提供一个停止/启动按钮，其工作方式与点击幻灯片相同。你还可以添加“上一个”和“下一个”按钮，让用户在幻灯片停止时手动移动到下一张幻灯片。现在你已经了运行、停止和启动幻灯片的基本代码，你应该能够在自己的项目中添加这些功能。
+
+## 第 8 章：如何使用效果和动画 241
+
+## 用于停止和重启幻灯片的 jQuery 
+
+```javascript
+
+$(document).ready(function() {
+
+  var nextSlide = $("#slides img:first-child");
+
+  var nextCaption;
+
+  var nextSlideSource;
+
+  // 运行幻灯片
+
+  var runSlideShow = function() {
+
+    $("#caption").fadeOut(1000);
+
+    $("#slide").fadeOut(1000);
+
+    function () {
+
+      if (nextSlide.next().length == 0) {
+
+        nextSlide = $("#slides img:first-child");
+
+      } else {
+
+        nextSlide = nextSlide.next();
+
+      }
+
+      nextSlideSource = nextSlide.attr("src");
+
+      nextCaption = nextSlide.attr("alt");
+
+      $("#slide").attr("src", nextSlideSource).fadeIn(1000);
+
+      $("#caption").text(nextCaption).fadeIn(1000);
+
+    }
+
+  }
+
+  // 启动幻灯片
+
+  var timer1 = setInterval(runSlideShow, 3000);
+
+  // 启动和停止幻灯片
+
+  $("#slide").toggle({
+
+    function() {
+
+      clearInterval(timer1);
+
+    },
+
+    function () {
+
+      timer1 = setInterval(runSlideShow, 3000);
+
+    }
+
+  });
+
+});
+
+```
+
+## 描述
+
+- 通过这段代码，用户可以通过点击幻灯片来停止幻灯片，通过再次点击来重启幻灯片。
+- 因此，幻灯片的代码不需要重复，它被编写在一个匿名函数中并存储在名为 `runSlideShow` 的变量中。
+- 因为 `runSlideShow` 函数是一个匿名函数，它必须在调用它的 `setInterval()` 方法之前出现。否则，JavaScript 引擎将抛出错误。
+
+图 8-5 如何停止和启动幻灯片
+
+© 2012, Mike Murach and Associates, Inc. 授权给 Michael Hotham。
+
+## 如何使用动画
+
+现在你已经知道了如何使用基础的 jQuery 效果，你将学习如何使用 jQuery 网站提到的自定义效果。我们将这些自定义效果称为动画，而它是从 `animate()` 方法开始。
+
+## 如何使用 animate() 方法的基本语法
+
+图 8-6 展示了 `animate()` 方法的基本语法。在这里，第一个参数是一个在大括号内编码的属性映射。该映射由键名/值对组成。例如，图中的第一个示例显示将 `fontSize` 属性设置为 275%，将 `opacity` 属性设置为 1，将 `left` 属性设置为 0。然后，第二个参数是动画的持续时间，在第一个示例中为 2 秒。
+
+当执行 `animate()` 方法时，它会在持续时间内通过将所选元素的属性更改为属性映射中的值，来修改所选元素或多个元素。这产生了动画的错觉。
+
+如果你查看示例中带有动画标题的 CSS，你会发现该标题的初始字体大小为浏览器默认大小的 75%，不透明度为 .2（淡出），位置为 -175 像素（即在它正常位置的左侧 175 像素）。然后，当第一个示例中的 `animate()` 方法运行时，标题的字体大小增加到 275%，不透明度增加到 1，位置移动到零，即其正常位置。由于这个过程持续了 2 秒，结果是一个有趣的动画，标题向右移动并增大尺寸和不透明度。
+
+顺便提一下，为了使之生效，标题的 `position` 属性必须设置为 `relative`。这意味着 `left` 和 `top` 属性的设置相对于元素在正常流中的位置。该标题的 `left` 和 `top` 属性均为 0。
+
+第二个示例与第一个类似，但它包含一个回调函数。在这里，回调函数选择了页面上的 `h2` 标题，并使用 `next()`、`fade()` 和 `fadeOut()` 方法来淡入淡出包含 `h2` 标题的 `div` 元素。属性映射的区别在于 `left` 属性被设置为 "175px"，这使标题移动到起始位置右侧 175 像素。这与第一个示例中的属性映射达到了相同的结果。
+
+当你为函数编写属性映射时，你必须遵守属性名的规则，例如使用驼峰命名法而不是 `font-size`，或者用引号将属性名括起来。当你将数值值编码为小数值，或者为诸如 `left` 的属性编码数值值时，假设单位是像素，除非你指定了测量单位并将整个值括在引号中。
+
+对于某些属性（如 `width`、`height` 和 `opacity`），你可以使用 "show"、"hide" 或 "toggle" 作为属性值。例如，如果你为 `width` 或 `opacity` 值编码 "hide"，它将减小到零。如果你编码 "show"，宽度将增加到其正常宽度，或不透明度将增加到 1。如果你编码 "toggle"，值将在 `show` 和 `hide` 值之间切换。
+
+## animate() 方法的基本语法
+
+```
+
+animate({properties}, duration, {callback})
+
+```
+
+一个动画的标题正在进入“faqs”部分
+
+![](img/fb3dabc43193711c2307f942481ad30c_258_0.png)
+
+## h1 标题的 CSS
+
+```css
+
+#faqs h1 {
+
+  position: relative;
+
+  left: -175px;
+
+}
+
+```
+
+## 动画标题正在进入“faqs”部分
+
+```css
+
+#faqs h1 {
+
+  position: relative;
+
+  left: -175px;
+
+  font-size: 75%;
+
+  opacity: 0.2;
+
+}
+
+```
+
+## 第一个示例中的 animate() 方法运行
+
+```javascript
+
+$("#faqs h1").animate({
+
+  fontSize: "275%",
+
+  opacity: 1,
+
+  left: 0
+
+}, 2000);
+
+```
+
+## 第二个示例中的 animate() 方法运行
+
+```javascript
+
+$("#faqs h1").animate({
+
+  left: "175px"
+
+}, 2000, function() {
+
+  $(".faqs h2").next().fadeIn();
+
+});
+
+```
+
+## 第三个示例中的 animate() 方法运行
+
+```javascript
+
+$("#faqs h1").animate({
+
+  fontSize: "275%",
+
+  opacity: 1,
+
+  left: 0
+
+}, 2000, function() {
+
+  $("#faqs h1").animate({
+
+    left: "175px"
+
+  }, 2000);
+
+});
+
+```
+
+## 描述 
+
+- 通过这段代码，用户可以通过点击幻灯片来停止幻灯片，通过再次点击来重启幻灯片。
+- 因此，幻灯片的代码不需要重复，它被编写在一个匿名函数中并存储在名为 `runSlideShow` 的变量中。
+- 因为 `runSlideShow` 函数是一个匿名函数，它必须在调用它的 `setInterval()` 方法之前出现。否则，JavaScript 引擎将抛出错误。
+
+图 8-5 如何停止和启动幻灯片
+
+## 如何使用动画
+
+现在你已经知道了如何使用基础的 jQuery 效果，你将学习如何使用 jQuery 网站提到的自定义效果。我们将这些自定义效果称为动画，而它是从 `animate()` 方法开始。
+
+## 如何使用 animate() 方法的基本语法
+
+图 8-6 展示了 `animate()` 方法的基本语法。在这里，第一个参数是一个在大括号内编码的属性映射。该映射由键名/值对组成。例如，图中的第一个示例显示将 `fontSize` 属性设置为 275%，将 `opacity` 属性设置为 1，将 `left` 属性设置为 0。然后，第二个参数是动画的持续时间，在第一个示例中为 2 秒。
+
+当执行 `animate()` 方法时，它会在持续时间内通过将所选元素的属性更改为属性映射中的值，来修改所选元素或多个元素。这产生了动画的错觉。
+
+如果你查看示例中带有动画标题的 CSS，你会发现该标题的初始字体大小为浏览器默认大小的 75%，不透明度为 .2（淡出），位置为 -175 像素（即在它正常位置的左侧 175 像素）。然后，当第一个示例中的 `animate()` 方法运行时，标题的字体大小增加到 275%，不透明度增加到 1，位置移动到零，即其正常位置。由于这个过程持续了 2 秒，结果是一个有趣的动画，标题向右移动并增大尺寸和不透明度。
+
+顺便提一下，为了使之生效，标题的 `position` 属性必须设置为 `relative`。这意味着 `left` 和 `top` 属性的设置相对于元素在正常流中的位置。该标题的 `left` 和 `top` 属性均为 0。
+
+第二个示例与第一个类似，但它包含一个回调函数。在这里，回调函数选择了页面上的 `h2` 标题，并使用 `next()`、`fade()` 和 `fadeOut()` 方法来淡入淡出包含 `h2` 标题的 `div` 元素。属性映射的区别在于 `left` 属性被设置为 "175px"，这使标题移动到起始位置右侧 175 像素。这与第一个示例中的属性映射达到了相同的结果。
+
+当你为函数编写属性映射时，你必须遵守属性名的规则，例如使用驼峰命名法而不是 `font-size`，或者用引号将属性名括起来。当你将数值值编码为小数值，或者为诸如 `left` 的属性编码数值值时，假设单位是像素，除非你指定了测量单位并将整个值括在引号中。
+
+对于某些属性（如 `width`、`height` 和 `opacity`），你可以使用 "show"、"hide" 或 "toggle" 作为属性值。例如，如果你为 `width` 或 `opacity` 值编码 "hide"，它将减小到零。如果你编码 "show"，宽度将增加到其正常宽度，或不透明度将增加到 1。如果你编码 "toggle"，值将在 `show` 和 `hide` 值之间切换。
+
+## animate() 方法的基本语法
+
+```
+
+animate({properties}, duration, callback)
+
+```
+
+一个动画的标题正在进入“faqs”部分
+
+![](img/fb3dabc43193711c2307f942481ad30c_258_0.png)
+
+## h1 标题的 CSS
+
+```css
+
+#faqs h1 {
+
+  position: relative;
+
+  left: -175px;
+
+}
+
+```
+
+## 动画标题正在进入“faqs”部分
+
+```css
+
+#faqs h1 {
+
+  position: relative;
+
+  left: -175px;
+
+  font-size: 75%;
+
+  opacity: 0.2;
+
+}
+
+```
+
+## 第一个示例中的 animate() 方法运行
+
+```javascript
+
+$("#faqs h1").animate({
+
+  fontSize: "275%",
+
+  opacity: 1,
+
+  left: 0
+
+}, 2000);
+
+```
+
+## 第二个示例中的 animate() 方法运行
+
+```javascript
+
+$("#faqs h1").animate({
+
+  left: "175px"
+
+}, 2000, function() {
+
+  $(".faqs h2").next().fadeIn();
+
+});
+
+```
+
+## 第三个示例中的 animate() 方法运行
+
+```javascript
+
+$("#faqs h1").animate({
+
+  fontSize: "275%",
+
+  opacity: 1,
+
+  left: 0
+
+}, 2000, function() {
+
+  $("#faqs h1").animate({
+
+    left: "175px"
+
+  }, 2000);
+
+});
+
+```
+
+## 如何链式调用 animate() 方法
+
+要链式调用动画，你使用与链式调用效果相同的方法。在第一个 `animate()` 方法后编写点运算符，然后编写第二个 `animate()` 方法。
+
+这由图 8-7 中的第一个示例所示，该示例在点击程序中链用了两个方法。在这里，代码的缩进和对齐是为了显示这两个方法是链连的。第一个方法增加字体大小和不透明度并向右移动 275 像素。然后，第二个方法减小字体大小并向左移动 275 像素，使其回到起始位置。
+
+但请注意，单独编码的动画也会放入队列。这由此图中的第二个示例所示。在这里，第一个语句是应用于标题（此处省略）的动画方法。第二个语句是应用于相同标题（此处省略）的另一个动画方法。然后，当用户点击标题时，这些动画会被放入队列并按顺序执行，就像链式调用一样。
+
+## 队列总结
+
+正如你所看到的，队列的概念对于某些应用程序很重要，特别是当你想停止队列中的方法运行时。同时记住，每个元素都有一个独立的队列。这就是为什么在幻灯片应用中，标题和幻灯片的淡入和淡出几乎是同时进行的。
+
+## 由点击事件启动的双重动画标题
+
+![](img/fb3dabc43193711c2307f942481ad30c_260_0.png)
+
+## 链式动画
+
+```javascript
+
+$("#tags h1").click(function() {
+
+  $(this).animate({
+
+    fontSize: "650%", opacity: 1, left: "+=275"
+
+  }, 2000).animate({
+
+    fontSize: "175%", left: "-=275"
+
+  }, 1000);
+
+}); // end click
+
+```
+
+## 队列动画
+
+```javascript
+
+$("#tags h1").click(function() {
+
+  $(this).animate({
+
+    fontSize: "650%", opacity: 1, left: "+=275"
+
+  }, 2000);
+
+  $(this).animate({
+
+    fontSize: "175%", left: "-=275"
+
+  }, 1000);
+
+}); // end click
+
+```
+
+## 在回调函数中包含第二个动画的动画
+
+```javascript
+
+$("#tags h1").click(function() {
+
+  $(this).animate({
+
+    fontSize: "650%", opacity: 1, left: "+=275",
+
+  }, 2000, function() {
+
+    $(this).animate({
+
+      fontSize: "175%", left: "-=275"
+
+    }, 1000);
+
+  });
+
+}); // end function
+
+}); // // end click
+
+```
+
+
+
+
+## Description
+
+- 当你对元素进行链式效果和动画时，它们会被放入该元素的队列中按顺序执行，而不是同时执行。
+- 当为一个元素启动单独的效果和动画时，它们也会被放入该元素的队列中按顺序执行。
+- 当你在 `animate` 方法上使用回调函数时，回调函数将在动画完成后执行。
+- 在某些情况下，如果用户在第一个动画的回调函数完成之前为元素启动了第二个动画，就会出现问题。
+
+## 如何使用 delay 和 stop 方法
+
+图 8-8 显示了如何对效果和动画使用 `delay` 和 `stop` 方法。如示例所示，`delay` 方法` 按照指定的毫秒数延迟队列中下一个动画的开始。在这里，所选标题的 `fadeOut` 效果被延迟了五秒。
+
+相比之下，`stop` 方法停止所选元素队列中的动画。这由第二个示例所示。在这里，动画针对 HTML 中 `<a>` 元素的悬停事件进行移动。当鼠标指针移动到其起始位置（鼠标指针移出元素）时，此动画会将 `<a>` 元素向下移动 15 像素。
+
+但如果用户连续多次在 `<a>` 元素上反复移动鼠标指针呢？正如你所学的，这将为每个 `<a>` 元素排队多个动画，并按顺序执行。这将导致用户停止使用鼠标后产生弹跳效果，这并不是你想要的。
+
+为了修复这个问题，开发者可以使用如图所示的 `stop` 方法。如摘要所示，该方法会停止所选元素的当前动画。此外，当第一个参数设置为 `true` 时，元素的队列会被停止，并在向队列中添加另一个动画之前清除队列。这停止了 `<a>` 元素的弹跳，使应用程序更容易使用。
+
+`stop` 方法的第二个参数会导致当前动画立即完成。例如，假设在执行 `stop` 方法时元素正在淡出。在这种情况下，元素将停留在当前的不透明度。如果这不是你想要的，你可以为第二个参数编写 `true`，以便显示动画的最终结果。在 `fadeIn` 方法的情况下，这意味着元素将以 1 的透明度显示。
+
+## delay 和 stop 方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `delay(duration)` | 延迟队列中下一个动画的开始。 |
+| `stop([clearQueue], toEnd)` | 停止所选元素的当前动画。两个参数均为布尔值，默认值为 `false`。如果设置为 `true`，第一个参数将清除队列，以便不再运行额外的动画。第二个参数会导致当前动画立即完成。 |
+
+## 页面加载时显示的标题的 HTML
+
+```html
+
+<h1 id="startup_message">正在建设中！</h1>
+
+```
+
+## 5 秒后淡出标题的 jQuery
+
+```javascript
+
+$('#startup_message').delay(5000).fadeOut(1000);
+
+```
+
+## 仍在运行的缩略图队列
+
+![](img/fb3dabc43193711c2307f942481ad30c_262_0.png)
+
+## 缩略图图像的 CSS
+
+```html
+
+<ul>
+
+  <li id="image_list">
+
+    <li><a href="images/h1.jpg" title="James Allison: 1-1"></a></li>
+
+    <img src="thumbnails/t1.jpg" alt="">
+
+    <!-- 其他 11 个包含缩略图图像的元素 -->
+
+    <li><a href="images/h6.jpg" title="James Allison: 1-6"></a></li>
+
+    <img src="thumbnails/t6.jpg" alt="">
+
+  </li>
+
+</ul>
+
+```
+
+## 缩略图图像的 CSS
+
+```css
+
+a {
+
+  position: relative;
+
+}
+
+```
+
+## 5 秒后淡出标题的 jQuery
+
+```javascript
+
+$("#startup_message").stop({
+
+  top: 15
+
+}, "fast");
+
+```
+
+## Description
+
+- 当你对元素进行链式效果和动画时，它们会被放入该元素的队列中按顺序执行，而不是同时执行。
+- 当为一个元素启动单独的效果和动画时，它们也会被放入该元素的队列中按顺序执行。
+- 当你在 `animate` 方法上使用回调函数时，回调函数将在动画完成后执行。
+- 在某些情况下，如果用户在第一个动画的回调函数完成之前为元素启动了第二个动画，就会出现问题。
+
+## 如何使用 delay 和 stop 方法
+
+图 8-8 显示了如何对效果和动画使用 `delay` 和 `stop` 方法。如示例所示，`delay` 方法按照指定的毫秒数延迟队列中下一个动画的开始。在这里，所选标题的 `fadeOut` 效果被延迟了五秒。
+
+相比之下，`stop` 方法停止所选元素队列中的动画。这由第二个示例所示。在这里，动画针对 HTML 中 `<a>` 元素的悬停事件进行移动。当鼾指针移动到其起始位置（鼠标指针移出元素）时，此动画会将 `<a>` 元素向下移动 15 像素。
+
+但如果用户连续多次在 `<a>` 元素上反复移动鼠标指针呢？正如你所学的，这将为每个 `<a>` 元素排队多个动画，并按顺序执行。这将导致用户停止使用鼠标后产生弹跳效果，这并不是你想要的。
+
+为了修复这个问题，开发者可以使用如图所示的 `stop` 方法。如摘要所示，该方法会停止所选元素的当前动画。此外，当第一个参数设置为 `true` 时，元素的队列会被停止，并在向队列中添加另一个动画之前清除队列。这停止了 `<a>` 元素的弹跳，使应用程序更容易使用。
+
+`stop` 方法的第二个参数会导致当前动画立即完成。例如，假设在执行 `stop` 方法时元素正在淡出。在这种情况下，元素将停留在当前的不透明度。如果这不是你想要的，你可以为第二个参数编写 `true`，以便显示动画的最终结果。在 `fadeIn` 方法的情况下，这意味着元素将以 1 的透明度显示。
+
+## delay 和 stop 方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `delay(duration)` | 延迟队列中下一个动画的开始。 |
+| `stop([clearQueue], toEnd)` | 停止所选元素的当前动画。两个参数均为布尔值，默认值为 `false`。如果设置为 `true`，第一个参数将清除队列，以便不再运行额外的动画。第二个参数会导致当前动画立即完成。 |
+
+## 页面加载时显示的标题的 HTML
+
+```html
+
+<h1 id="startup_message">正在建设中！</h1>
+
+```
+
+## 5 秒后淡出标题的 jQuery
+
+```javascript
+
+$('#startup_message').delay(5000).fadeOut(1000);
+
+```
+
+## 仍在运行的缩略图队列
+
+![](img/fb3dabc43193711c2307f942481ad30c_262_0.png)
+
+## 缩略图图像的 CSS
+
+```html
+
+<ul>
+
+  <li id="image_list">
+
+    <li><a href="images/h1.jpg" title="James Allison: 1-1"></a></li>
+
+    <img src="thumbnails/t1.jpg" alt="">
+
+    <!-- 其他 11 个包含缩略图图像的元素 -->
+
+    <li><a href="images/h6.jpg" title="James Allison: 1-6"></a></li>
+
+    <img src="thumbnails/t6.jpg" alt="">
+
+  </li>
+
+</ul>
+
+```
+
+## 缩略图图像的 CSS
+
+```css
+
+a {
+
+  position: relative;
+
+}
+
+```
+
+## 5 秒后淡出标题的 jQuery
+
+```javascript
+
+$("#startup_message").stop({
+
+  top: 15
+
+}, "fast");
+
+```
+
+## Description
+
+- 当你对元素进行链式效果和动画时，它们会被放入该元素的队列中按顺序执行，而不是同时执行。
+- 当为一个元素启动单独的效果和动画时，它们也会被放入该元素的队列中按顺序执行。
+- 当你在 `animate` 方法上使用回调函数时，回调函数将在动画完成后执行。
+- 在某些情况下，如果用户在第一个动画的回调函数完成之前为元素启动了第二个动画，就会出现问题。
+
+## Easing 指动画执行的方式。jQuery 只提供了两种缓动：swing 和 linear。swing 是默认值，通常也是你需要的动画。
+
+- 插件（包括 jQuery UI）提供了许多其他类型的缓动。
+- 要使用缓动，你需要为插件库或 jQuery UI 编写代码脚本。然后，在方法中使用插件或 jQuery UI 支持的缓动名称作为 easing 参数。
+- 在第 11 章中，你将学习更多插件，在第 12 和 13 章中，你将学习更多关于 jQuery UI 的知识。
+- 关于 jQuery 缓动的完整列表和演示，可以访问：
+  http://jqueryui.com/effect/#easing
+
+图 8-9  如何在效果和动画中使用 easing
+
+# 如何使用高级 animate 语法
+以及处理队列的方法
+
+到此时，你可能已经学习了在制作效果和动画时需要的所有方法和技能。但如果你正在尝试构建对队列有更多控制的应用，图 8-10 展示了 `animate` 方法的高级语法以及处理队列的方法。
+
+当你使用 `animate` 方法的高级语法时，需要在括号内编写两个参数，并用逗号分隔。在第一组括号中，你编写属性，就像在基础语法中写一样。在第二组括号中，你编写该图中第一个表格中总结的一个或多个选项。
+
+图中的第一个示例展示了如何结合三个选项工作：`duration`、`specialEasing` 和 `complete`。在这里，`duration` 选项类似于基础语法中的 `duration` 参数，而 `complete` 选项类似于基础语法中的 `callback` 参数。然而，`specialEasing` 参数允许你为每个动画的属性指定不同的缓动效果（easing）。
+
+虽然使用特殊缓动可能超出了你的需求，但你应该知道你也可以在基础语法中使用它们。这正如图中第二个示例所示。在这里，你只需要在属性映射（properties map）的括号内编写每个属性及其缓动效果。
+
+高级 `animate` 方法的 `step` 选项允许你在动画的每一步之后运行一个函数。这让你意识到动画实际上被分解成了许多小的步骤，从而产生连续进展的错觉。例如，如果你为 `step` 选项编写一个在第一个示例的每一步之后显示警告消息的函数，你将看到动画被分成了多少步。
+
+高级 `animate` 方法的 `queue` 选项允许你立即执行动画而不将其放入队列。你也可以使用图中第二个表格中的方法来处理队列中的动画。但正如我在主题开头所说的，你可能永远不需要高级 `animate` 语法或处理队列的方法。
+
+# animate 方法的高级语法
+
+```
+
+animate({properties}, {options})
+
+```
+
+# 高级语法的选项
+
+| 选项 | 描述 |
+| --- | --- |
+| duration | 指定动画持续时间的字符串或数字。 |
+| easing | 指定缓动函数的字符串。 |
+| complete | 动画完成时运行的回调函数。 |
+| step | 在动画分解的每一步之后要调用的函数。 |
+| queue | 布尔值。如果为 true，动画将放入队列；如果为 false，动画将立即开始。 |
+| specialEasing | 属性映射中一个或多个属性及其对应缓动效果的映射。 |
+
+# 处理动画队列的方法
+
+| 方法 | 描述 |
+| --- | --- |
+| queue({name}) | 获取所选元素的队列。 |
+| queue({name}, newQueue) | 用新队列替换所选元素的队列。 |
+| queue({name}, callback) | 在所选元素的队列末尾添加新函数（回调）。 |
+| dequeue({name}) | 执行所选元素队列中的下一个项目。 |
+| clearQueue({name}) | 从队列中移除所有尚未执行的项目。 |
+
+# 使用高级语法的 animate 方法
+
+```javascript
+
+$("#h1").animate(
+
+  { fontSize: "650%", opacity: 1, left: "+175px" },
+
+  duration: 2000,
+
+  specialEasing: { fontSize: "easeInExpo", left: "easeOutExpo" },
+
+  complete: function() {
+
+    $("#h2").next().fadeIn(1000).fadeOut(1000);
+
+  }
+
+); // end animate
+
+```
+
+# 如何通过基础语法按属性提供缓动
+
+```javascript
+
+$("#h1").animate(
+
+  { fontSize: "650%", "easeInExpo": [],
+
+  opacity: [1, "swing"],
+
+  left: ["275px", "easeOutExpo"] }, 2000
+
+); // end animate
+
+```
+
+## 描述
+
+- `animate` 方法高级语法的 `specialEasing` 选项允许你像第一个示例那样按属性指定缓动。然而，你也可以像第二个示例那样使用基础语法来实现。
+- 处理队列的方法中的 `name` 参数对于默认队列 (fx) 是需要的。它只在你创建自定义队列时需要。
+
+图 8-10 如何使用 animate 语法和队列方法
+
+# 带有动画的 Carousel 应用
+
+本章最后介绍了一种名为 Carousel（轮播图）的常见应用。它使用了一个简单的 `animate` 方法，但使用该方法的设置非常广泛。
+
+# 用户界面、HTML 和 CSS
+
+图 8-1 展示了 Carousel 应用程序的用户界面、HTML 和 CSS。由于轮播图非常常见，你可能在多个网站上用过它。如果你点击此处显示的轮播图右侧的按钮，书籍将向左滑动并显示另外三本。如果你点击书籍左侧的按钮，书籍将向右滑动回到之前的书籍。
+
+在 HTML 中，你可以看到三个 `div` 元素被编写在整个轮播图的 `div` 元素内部。这些 `div` 元素第一个包含左按钮；第二个不包含用于轮播图的任何书籍。
+
+（由于 OCR 文本存在大量重复，我将根据页面提供的实际内容进行逻辑处理。）
+
+# Carousel 应用
+
+View our Books
+
+![Carousel application](img/fb3dabc4319371c2307f942481ad30268_0.png)
+
+# 应用程序的 HTML
+
+```html
+
+<section>
+
+  <h1>View our Books</h1>
+
+  <div id="carousel">
+
+    <div id="left_button" class="button"></div>
+
+    <div id="display_panel">
+
+      <ul id="image-list">
+
+        <li><a href="newpage.html"><img src="images/book1.jpg" alt="book 1"></a></li>
+
+        <li><a href="newpage.html"><img src="images/book2.jpg" alt="book 2"></a></li>
+
+        <li><a href="newpage.html"><img src="images/book3.jpg" alt="book 3"></a></li>
+
+        <li><a href="newpage.html"><img src="images/book4.jpg" alt="book 4"></a></li>
+
+        <li><a href="newpage.html"><img src="images/book5.jpg" alt="book 5"></a></li>
+
+        <li><a href="newpage.html"><img src="images/book6.jpg" alt="book 6"></a></li>
+
+        <li><a href="newpage.html"><img src="images/book7.jpg" alt="book 7"></a></li>
+
+        <li><a href="newpage.html"><img src="images/book8.jpg" alt="book 8"></a></li>
+
+        <li><a href="newpage.html"><img src="images/book9.jpg" alt="book 9"></a></li>
+
+      </ul>
+
+    </div>
+
+    <div id="right_button" class="button"></div>
+
+  </div>
+
+</section>
+
+```
+
+# 应用程序的关键 CSS
+
+```css
+
+#display_panel {
+
+  width: 300px;
+
+  overflow: hidden;
+
+  float: left;
+
+  height: 125px;
+
+}
+
+#image-list {
+
+  position: relative;  left: 0px;
+
+  width: 300px;
+
+  list-style: none;
+
+}
+
+#image-list li {
+
+  float: left;
+
+  width: 300px;
+
+}
+
+#image-list img {
+
+  width: 95px;
+
+}
+
+```
+
+## 254 第 2 节 jQuery 基础
+
+已被设置。为了让此应用程序正常工作，当然，`div`、`ul` 和 `li` 元素的宽度必须协调。
+
+## jQuery
+
+如果你查看图 8-12 中此应用程序的 jQuery 代码，你会看到它由两个事件处理器组成：一个用于右按钮，一个用于左按钮。你还可以看到每个事件处理器的最后一行都使用 `animate` 方法将 `slider` 变量的 `left` 属性移动到变量 `newLeftProperty` 的值。由于 `ready` 事件处理程序中的第一行代将 `slider` 变量设置为 `ul`，这意味着该元素是根据 `newLeftProperty` 变量中的值向右或向左移动的。
+
+诀窍在于，每次点击右按钮或左按钮时，都设置 `newLeftProperty` 变量的值。每个事件处理器中的其余代码是做什么的呢？在你学习这些代码时，请记住元素必须向左移动以显示 `li` 元素中的图像，因此 `left` 属性要么为零（起始位置），要么为负数。
+
+现在，查看右按钮的事件处理器。在那里，第一条语句使用 `css` 方法获取当前 `left` 属性的值。然后，它使用 `parseInt` 方法将其转换为整数。例如，点击第一个按钮时，值将为零。
+
+随后的 `if/else` 语句设置：如果 `left` 属性的当前值（零或负数）减去 300（三张图像的宽度）小于或等于 -900，则将 `newLeftProperty` 设置为零。然后，`animate` 方法将图像向右滑动，以便显示前三张图像。否则，从 `newLeft` 属性中减去 300，`animate` 方法将把滑块向左移动三张图像。
+
+左按钮的点击事件处理器的工作原理类似。在获取了当前 `left` 属性的值后，它使用 `if/else` 语句设置新的 `left` 属性。这次，如果当前属性小于 0，则 `newLeftProperty` 增加 300。这意味着 `animate` 方法将把滑块向右移动三张图像。否则，`newLeftProperty` 被设置为零，因此滑块将移动到它的起始位置。
+
+© 2012, Mike Murach and Associates, Inc. 许可给 Michael Hotham。
+
+## 用于轮播应用的 jQuery
+
+```javascript
+
+$(document).ready(function() {
+
+  var slider = $("#image_list); // slider = 元素
+
+  var leftProperty, eventLeftProperty;
+
+  // 右按钮的点击事件处理器
+
+  $("#right_button").click(function() {
+
+    // 获取当前 left 属性的值
+
+    leftProperty = parseInt(slider.css("left"));
+
+    // 确定 left 属性的新值
+
+    if (leftProperty - 300 <= -900) {
+
+      newLeftProperty = 0; 
+
+    } else {
+
+      newLeftProperty = leftProperty - 300; 
+
+    }
+
+    // 使用 animate 函数改变 left 属性
+
+    slider.animate({left: newLeftProperty}, 1000);
+
+  });
+
+  // 左按钮的点击事件处理器
+
+  $("#left_button").click(function() {
+
+    // 获取当前 left 属性的值
+
+    leftProperty = parseInt(slider.css("left"));
+
+    // 确定 left 属性的新值
+
+    if (leftProperty < 0) {
+
+      newLeftProperty = leftProperty + 300;
+
+    } else {
+
+      newLeftProperty = 0;
+
+    }
+
+    // 使用 animate 函数改变 left 属性
+
+    slider.animate({left: newLeftProperty}, 1000);
+
+  });
+
+}); // 结束 ready
+
+```
+
+## Description
+
+- 使用 `css` 方法获取 `ul` 元素的 `left` 属性值。
+- `ul` 元素的 `left` 属性值范围将从 0 到 -600。
+
+图 8-12 用于轮播应用的 jQuery
+
+## 观点
+
+现在你已经完成了这一章，你应该能够为你的网页添加一些常见的动画，比如幻灯片或轮播图。不过，在下一章中，你将学习如何使用用于 DOM 脚本的 jQuery 方法，这些方法通常与效果和动画配合使用。因此，当你完成那一章时，能够开发更复杂的动画。
+
+## 术语
+
+- 效果动画 (effect animation)
+- 回调函数 (callback function)
+- 属性映射 (properties map)
+- 队列 (queue)
+- 缓动 (easing)
+
+## 总结
+
+- jQuery 提供了效果方法（如淡入和淡出），让你可以在网页中添加动画。
+- jQuery 的 `animate` 方法允你在特定持续时间内更改元素的 CSS 属性。这让你能够创建有趣的动画。
+- 为了获得你想要的动画，你通常会将一个效果链接在另一个效果之后。这会将效果放入队列中，以便效果按顺序执行。
+- 如果用户连续快速地为元素启动了多次效果，这些效果将被放入该元素的队列中。在用户可能会这样做某些情况下，你可能希望使用 `stop` 方法停止效果和队列。
+- 缓动 (Easings) 指效果和动画随时间执行的方式。虽然 jQuery 仅提供了两种缓动：线性（linear）和摆动（swing），但 jQuery UI 提供了更多。
+
+## 练习 8-1 实验动画
+
+在本次练习中，你将对效果、动画和缓动进行实验。
+
+### 复习应用程序
+
+- 使用文本编辑器打开此文件夹中的 HTML、CSS 和 JavaScript 文件：`c:\jquery\exercises\ch08\animation`
+- 2. 运行应用程序查看其工作原理。
+
+### 实验效果
+
+- 3. 修改 jQuery，使答案淡入淡出视图。
+- 4. 现在，修改 jQuery，使答案向下和向上滑动。
+
+### 实验 h1 标题
+
+- 5. 测试你认为哪种最好。
+- 6. 修改左侧属性使其返回 0 像素。
+- 7. 重启应用程序查看它是如何移动的。
+- 8. 点击查看动画已排队。
+- 9. 修复动画使其不会跨页面移动。
+
+### 为应用程序添加 jQuery UI 缓动
+
+- 10. 注意 HTML 中有一个 jQuery UI 脚本。
+- 11. 点击页面底部的链接进入 jQuery UI 动的演示。
+
+## 练习 8-2 修改幻灯片应用
+
+这是一个简单的练习，你将实验用于图 8-3 幻灯片的效果。它使用了图 8-4 显示的 jQuery 代码块。
+
+- 1. 使用文本编辑器打开此文件夹中的 HTML、CSS 和 JavaScript 文件：`c:\jquery\exercises\ch08\slide_show`。然后运行应用程序查看其工作原理。
+- 2. 修改 jQuery，使标题和图像在幻灯片切换到下一张时向上滑动然后向下。
+- 3. 修改 jQuery，使用 `hide` 方法隐藏并使用 `show` 方法显示，持续时间均为一秒。此外，将显示和隐藏的时间增加到两秒，并将计时间隔增加到五秒。
+- 4. 如果你好奇，可以尝试效果、持续时间和缓动，直到幻灯片以你喜欢的方式工作。
+
+## 练习 8-3 修改轮播应用
+
+这是一个简单的练习，将测试你是否理解图 8-11 和 8-12 中轮播应用的代码。
+
+- 1. 使用文本编辑器打开此文件夹中的 HTML、CSS 和 JavaScript 文件：`c:\jquery\exercises\ch08\carousel`
+- 2. 按照现在的情况，在显示前三本书时点击左按钮什么都不会发生。修改此，使得在三三本书可见时点击左按钮，会显示最后三本书。
+- 3. 修改 jQuery 代码，当你点击按钮之一时，轮播每次移动一本书，而不是移动三本书。
+- 4. 修改 CSS 和 jQuery 代码，使只显示一本书。否则，应用程序应该以相同的方式工作。
+
+## 如何使用 DOM 操作和遍历方法
+
+在第 7 章中，你学习了几个用于编写 DOM 脚本的方法。现在，本章将介绍大部分其他的 DOM 操作和 DOM 遍历方法。一旦掌握了所有这些方法，你就能让你的 DOM 脚本应用程序按照你想要的方式运行。
+
+| 节标题 | 页码 |
+| :--- | :--- |
+| DOM 操作方法 | 260 |
+| 处理属性的方法 | 260 |
+| DOM 替换方法 | 262 |
+| DOM 插入和克隆方法 | 264 |
+| DOM 包装和移除方法 | 266 |
+| TOC 应用程序 | 268 |
+| 用户界面与 HTML | 268 |
+| jQuery | 270 |
+| 处理样式和定位的方法 | 272 |
+| 处理样式的方法 | 272 |
+| 元素定位方法 | 274 |
+| 增强版的 TOC 应用 | 276 |
+| DOM 遍历方法 | 278 |
+| 树遍历方法 | 278 |
+| 过滤方法 | 280 |
+| 使用 DOM 遍历方法的幻灯片应用 | 282 |
+| 观点 | 284 |
+
+## DOM 操作方法
+
+在接下来的四幅图中，你将学习如何使用 DOM 操作方法（处理样式和定位的方法除外）。然后，在回顾了一个使用 DOM 操作的应用程序后，你将学习处理样式和定位的方法。
+
+## 处理属性的方法
+
+图 9-1 中的第一表展示了处理属性的方法。你在第 7 章中已经接触过前两个方法。这些方法用于获取和设置属性名称的值。你还可以使用一个映射（map）来提供键值值对，从而通过单个方法设置多个属性的值。
+
+例如，第一个示例将 id 为 "image" 的元素的 `src` 属性设置为 "book.jpg"。这会改变元素中显示的图像。相比之下，第二个示例通过单个方法同时设置了 `src` 和 `alt` 的值。这个写在大括号内编码的映射（map）与你在第 8 章中配合 `animate` 方法时使用的映射是类似的。
+
+最后，你可以将命名属的值设置为函数的返回结果。如果你使用 `attr` 方法，应该知道会向函数传递两个参数。第一个参数是索引，表示所选元素集中正在处理的是哪一个元素。第二个参数是属性的旧值。你还应该知道，函数会为每个选定元素执行一次，你可以在函数内部使用 `this` 关键字来引用当前元素。这与你在第 7 章学习的方法原理相同。
+
+第三个示例说明了这一点，它使用函数作为第二个参数，为选定的 `<a>` 元素提供 `href` 属性应设置的值。为了生成这些值，函数中的第一个语句将 `<a>` 元素的索引加 1 拼接到 "#heading" 之后。因为元素的索引值从零开始，这意味着返回给 `attr` 方法的 `href` 值将是 "#heading1"、"#heading2" 等。
+
+你可以使用此表中的最后一种方法从选定元素中移除属性。要指定要移除的属性，只需编写其名称即可。第四个示例说明了这一点，它移除了 id 为 "faqs" 的元素内 `<h2>` 元素的 `id` 属性。
+
+图中的第二张表总结了处理类（class）属性的方法，你在第 7 章中已经接触了其中一些。因此，使用它们时你不应该遇到困难。在这里，你仍然可以使用函数来设置某些方法所需的值，这些函数会接收一个索引和旧的类值。
+
+第一个类属性示例展示了如何使用 `hasClass` 方法测试元素是否具有特定的类。第二个示例展示了如何给元素添加 "minus" 类。第三个示例则展示了你如何移除 "minus" 类。
+
+## 第 9 章 如何使用 DOM 操作和遍历方法 261
+
+## 处理属性的方法
+
+| 方法 | 描述 |
+| :--- | :--- |
+| `attr(name)` | 获取命名属性的值。 |
+| `attr(name, value)` | 设置命名属性的值。 |
+| `attr(map)` | 通过属性映射中的键/值对设置多个属性的值。 |
+| `attr(name, function)` | 将属性的值设置为函数返回的值。 |
+| `removeAttr(name)` | 移除命名属性。 |
+
+## 处理类属的方法
+
+| 方法 | 描述 |
+| :--- | :--- |
+| `hasClass(name)` | 如果指定的类存在则返回 true。 |
+| `addClass(name)` | 添加指定的类。 |
+| `addClass(function)` | 添函数返回的值指定的类。 |
+| `removeClass(name)` | 移除类。 |
+| `removeClass(function)` | 移除函数返回的值指定的类。 |
+| `toggleClass(name)` | 如果类存在，则移除它；否则，添加它。 |
+| `toggleClass(function)` | 如果函数返回的类存在，则移除它；否则，添加它。 |
+
+## 属性示例
+
+- 将图像的 `src` 属性设置为变量的值：`$("#image").attr("src", "book1.jpg");`
+- 使用映射设置两个属性的值：`$("#image").attr({"src": "book1.jpg", "alt": "Book 1"});`
+- 使用函数设置每个 `<a>` 元素的 `href` 属性的值：
+```javascript
+
+$("a").attr("href", function(index) {
+
+  var href = "heading-" + (index + 1);
+
+  return href;
+
+})
+
+```
+- 移除 faqs 元素内所有 `<h2>` 元素的 `id` 属性：`$("#faqs h2").removeAttr("id");`
+
+## 类属性示例
+
+- 测试元素的类属性中是否包含 "closed" 值：`if($("#faqs").hasClass("closed")) { ... }`
+- 为 "faqs" 元素的 `<h2>` 后代元素添加一个类：`$("#faqs h2").addClass("minus");`
+- 从 `<h2>` 后代元素的类属性中移除 "minus" 类：`$("#faqs h2").removeClass("minus");`
+
+![image](img/fb3dabc4319371c2307f942481ad30c_276_0.png)
+
+## DOM 替换方法
+
+图 9-2 总结了 DOM 替换方法，你应该已经知道如何使用 `val` 和 `text` 方法来处理控件中的值或元素内的文本。但注意，正如你在上一图中看到的许多方法一样，你可以使用函数返回的值来指定值或文本。
+
+此图中的示例展示了如何使用其他 DOM 替换方法。第一个示例展示了如何使用 `html` 方法获取 `<aside>` 元素的 HTML，第二个示例展示了如何向 `<aside>` 元素放入 HTML。在这种情况下，一个 `<h2>` 元素被放置在 `<aside>` 元素内部。
+
+第三个示例使用 `replaceWith` 方法将所有类名为 "old" 的元素替换为空的 `<h2>` 元素。在这里，选择器获取被替换的元素，而参数提供将要替换它们的元素。
+
+相比之下，第四个示例使用 `replaceAll` 方法获得相同的结果。这一次，`<h2>` 示例位于通常选择器的位置，而参数指定了将要替换的目标元素。
+
+## DOM 替换方法
+
+| 方法 | 描述 |
+| --- | --- |
+| val() | 获取表单中第一个选中控件的值。 |
+| val(value) | 设置表单中第一个选中控件的值。 |
+| val(function) | 将表单中第一个选中控件的值设置为由函数返回的值。 |
+| text() | 获取所有选中元素（包括其后代）的组合文本。 |
+| text(textString) | 将每个选中元素的内容设置为指定的文本。 |
+| text(function) | 将每个选中元素的内容设置为函数返回的文本。 |
+| html() | 获取第一个选中元素的 HTML 内容。 |
+| html(htmlString) | 将第一个选中元素的 HTML 内容设置为指定的 HTML 字符串。 |
+| html(function) | 将第一个选中元户的 HTML 内容设置为函数返回的 HTML 字符串。 |
+| replaceWith(content) | 用指定的内容替换每个选中元素。该内容可以是 HTML 字符串、DOM 元素或 jQuery 对象。 |
+| replaceAll(target) | 用指定的元素替换每个元器。这与 replaceWith 方法的实现逻辑相反。 |
+
+## 示例
+
+在 aside 元素中显示所有的 HTML
+`alert($("aside").html());`
+
+在 aside 元素中放入一个 h2 元素
+`$("aside").html("<h2>Table of contents</h2>2");` 
+
+将类名为 "old" 的元素替换为 h2 元素
+`$(".old").replaceWith("<h2></h2>");`
+
+将类名为 "old" 的元素替换为 h2 元素
+`$("<h2></h2>").replaceAll(".old");`
+
+## 描述
+
+- 在第 7 章中，你学习了如何使用 val 和 text 方法获取值和文本。然而，你也可以使用函数来提供值和文本。
+- 如果你在 val、text 或 html 方法中使用函数，该函数将接收两个参数。第一个是当前元素在集合中的索引，第二个是元素的旧值、文本或 HTML 内容。
+- replaceWith 和 replaceAll 方法提供了将一组元素替换为另一组元素的两种方式。
+
+![](img/fb3dabc43193711c2307f942481ad30c_278_0.png)
+
+## DOM 插入与克隆方法
+
+图 9-3 总结了向 DOM 插入内容的方法。例如，prepend 方法在元素的开头插入内容，而 append 方法在元素的末尾插入内容。相比之下，before 方法在元素之前插入内容，而 after 方法在元素之后插入内容。关键区别在于，prepend 和 append 方法是在元素内部插入内容，而 before 和 after 方法是在元素之前或之后插入内容。
+
+前两个示例说明了这一点。在第一个示例中，一个 h2 元素被插入到 aside 元素内部。在第二个示例中，一个 <a>元素被插入到 article 中最后一个 <p>元素之后。
+
+prependTo、append、insertBefore 和 insertAfter 方法通过在参数中指定目标元素来反转编码顺序。这如图中的第三个示例所示。article 元素中所有的 <a> 元素都被插入到 aside 元素中 h2 元素之后。但请注意，<a> 元素将从 article 元素中移除。换句话之，元素是被移动而非复制。
+
+如果你不想让 <a> 元素从 article 元素中移除，你需要在将它们插入 h2 元素之前对其进行克隆。这如第四个示例所示。注意此示例中使用了链式调用。这之所以有效，是因为 clone 方法返回了刚刚克隆的对象。
+
+## DOM 插入与克隆方法
+
+| 方法 | 描述 |
+| --- | --- |
+| prepend(content) | 在每个元素的开头插入指定的内容。 |
+| prepend(function) | 将函数返回的内容插入到选定元素的开头。 |
+| prependTo(target) | 将所有选中元素插入到每个目标的开头。 |
+| append(content) | 在每个元素的末尾插入指定的内容。 |
+| append(function) | 将函数返回的内容插入到每个元素的末尾。 |
+| appendTo(target) | 将所有选中元素插入到每个目标的末尾。 |
+| before(content) | 在每个元素之前插入指定的内容。 |
+| before(function) | 在每个元素之前插入函数返回的内容。 |
+| insertBefore(target) | 将所有选中元素插入到每个目标元素之前。 |
+| after(content) | 在每个选中元素之后插入指定的内容。 |
+| after(function) | 在每个选ne元素之后插入函数返回的内容。 |
+| insertAfter(target) | 将所有选中元素插入到每个目标元素之后。 |
+| clone([withEvents]) | 创建选定元素的副本。参数是一个布尔值，表示是否也复制事件处理程序。 |
+
+## 示例
+
+插入一个 h2。
+`$("aside").append("<h2>Table of contents</h2>");`
+
+在 article 的 <p> 元素之后插入 <a>
+`$("article p:last").after("<a href='#top'>Back to top</a>");`
+
+在 aside 的 h2 元素之后插入 article 中的 <a>
+`$("article a").insertAfter("<aside h2");`
+
+克隆元素并将它们插入 h2 之后
+`$("article a").clone().insertAfter("<aside h2");`
+
+## 描述
+
+- prepend 和 append 方法在元素的开头或末尾插入内容。
+- before 和 after 方法在元素之前或之后插入内容。
+- 如果在 prepend 或 append 方法中使用函数，它将接收当前元素在集合中的索引。
+- 如果你想在插入某处之前克隆一个元素，你需要使用 clone 方法。
+
+图 9-3 插入与克隆
+
+## 包装与移除方法
+
+图 9-4 展示了包装和移除元素的方法。例如，第一个示例将 <a> 元素包装在 h2 元素中，如下：
+
+```
+
+<h2><a id="heading1">The text for the element</a></h2>
+
+```
+
+第二个示例用 <a> 元素包装 h1 的文本，如下：
+
+```
+
+<h1><a id="top">The text for element</a></h1>
+
+```
+
+第三个示例移除了 article 中的第一个 <a> 元素。
+
+## 包装与移除方法
+
+| 方法 | 描述 |
+| --- | --- |
+| wrap(element) | 在每个选中元素周围包装指定的元素。 |
+| wrap(function) | 用函数返回的元素包装每个选中元素。 |
+| wrapAll(element) | 在所有元素周围包装指定的元素。 |
+| wrapInner(element) | 在每个选中元素的内容周围包装指定的元素。 |
+| wrapInner(function) | 用函数返回的元素包装每个选ne元素的内容。 |
+| empty() | 移除元素的所有子节点。 |
+| remove([selector]) | 从 DOM 中移除选ne元素。如果指定了选择器，将对选ne元素进行过滤。 |
+| unwrap() | 移除选ne元素的父元素。 |
+
+## 示例
+
+在 h2 中包装所有 <a>
+`$("a").wrap("<h2></h2>");`
+
+用 <a> 元素包装 h1 内容
+`$("article h1").wrapInner("<a id='top'></a>");`
+
+移除 article 中的第一个 <a>
+`$("article:first").remove();`
+
+## 描述
+
+- 包装 DOM 允许你对想要以不同方式处理的其他元素或文本包装 <a> 元素。
+- 如果在 wrap 或 wrapInner 方法中使用函数，它将接收一个包含当前元素在集合中索引的单个参数。
+- 移除与取消包装 DOM 允许你移除或取消包装元素。
+
+## TOC 应用
+
+如果你在好奇如何以及为什么要使用你刚刚学到的方法，现在你将回顾一个可以给你提供一些灵感的应用程序。
+
+## 用户界面与 HTML
+
+图 9-5 展示了 TOC（目录）应用程序的用户界面。它在页面的侧边栏提供了一系列链接，使用户跳转到文章中七个要点中的任何一个。它在每个主题之后还提供了一个“返回顶部”的链接，使用户可以返回页面顶部。
+
+在该页面的 HTML 代码中，你可以看到使用了 `HTML5` 和 `article` 元素来构建页面。但请注意，`aside` 元素是空的。这意味着 jQuery 将提供 `aside` 的所有内容。
+
+在文章中，你可以看到每个主题都由一个 `h2` 元素和一个或多个段落（paragraph）组成。但请注意，每个主题的最后一个段落后面没有跟随“返回顶部”链接。这意味着 jQuery 也必须为这些链接提供支持。
+
+在 HTML 之后，你可以看到此应用程序中的 DOM 脚本对 HTML 产生的影响。虽然 HTML 并没有被实际更改（DOM），但这显示了对 DOM 所做的的更改。
+
+首先，`h1` 元素中的文本被包裹在一个 `<a>` 元素中。元素的 `id` 为“top”，这意味着另一个 `<a>` 元素可以使用 `#top` 作为其 `href` 属性链接到它。换句话说，`h1` 元素内的 `<a>` 元素是一个占位符，其他 `<a>` 元素可以链接到它。这就是 HTML 的原理，因此 jQuery 只需要为 `<a>` 元素设置 `id` 和 `href` 属性。
+
+其次，“aside` 元素中的所有代码都是由 jQuery 生成的。它由文章中每个主题的一个 `h2` 元素和随后的一个 `<a>` 元素组成。每个 `<a>` 元素的文本与文章中每个 `h2` 元素的文本相同。注意，这些 `<a>` 元素中的 `href` 属性是“heading1”、“heading2”等。
+
+第三，文章中 `h2` 元素中的文本被包裹在 `<a>` 元素中。注意，这些 `<a>` 元素中的 `id` 属性是“heading1”、“heading2”等。这意味着当用户点击 `aside` 中的每个链接时，它将跳转到文章中相应的标题。
+
+最后，在文章中每个主题的最后一个段落之后插入了一个 `<a>` 元素。这些元素每一个的 `id` 都设置为“top”。这意味着点击这些链接之一将跳转到页面顶部，因为 `h1` 元素内 `<a>` 元素的 `id` 为“top”。
+
+## 第 9 章 如何使用 DOM 操作和遍历方法 269
+
+## TOC 应用的用户界面
+
+## 培训师喜欢我们书籍的 7 个理由
+
+![](img/fb3dabc43193711c2307f942481ad30c_284_0.png)
+
+## HTML
+
+```html
+
+<body
+
+  <h1>7 reasons why trainers like our books</h1>
+
+  <aside></aside>
+
+  <article>
+
+    <h2>Modular book organization</h2>
+
+    <p>In the first section or two of all our books, ...</p>
+
+    <p>Whenever possible, each of the chapters is also ...</p>
+
+    <h2>Top-down chapter design</h2>
+
+    <p>Unlike many competing books and products, ...</p>
+
+    <!-- 文章的其他 h2 标题和段落 -->
+
+  </article>
+
+</body>
+
+```
+
+## jQuery 将如何修改 DOM
+
+```html
+
+<h1><a id="top">7 reasons why trainers like our books</a></h1>
+
+<aside>
+
+  <h2>Table of contents</h2>
+
+  <a href="#heading1">Modular book organization</a>
+
+  <a href="#heading2">Top-down chapter design</a>
+
+  <!-- 标题的其他元素 -->
+
+</aside>
+
+<article>
+
+  <h2><a id="heading1">Modular book organization</a></h2>
+
+  <p>In the first section or two of all books, ...</p>
+
+  <a href="#top">Back to top</a>
+
+  <h2><a id="heading2">Top-down chapter design puts</a></h2>
+
+  <p>Unlike many competing books and products, ...</p>
+
+  <a href="#top">Back to top</a>
+
+  <!-- 其他段落和 h2 标题 -->
+
+</article>
+
+```
+
+图 9-5 TOC 应用的界面和 HTML。
+
+© 2012, Mike Murach and Associates, Inc. 授权给 Michael Hotham。
+
+## jQuery
+
+当你开发这样的应用程序时，你需要规划必须完成的工作以及需要执行的顺序。图 9-6 开头的简单计划说明了这一点。该计划反映在此应用程序的 jQuery 注释中。
+
+首先，jQuery 使用 `append` 方法向 `aside` 添加“Table of contents”（目录）标题。jQuery 使用 `wrap` 方法为文章中的每个 `h2` 元素包裹一个 `<a>` 元素。
+
+第三，jQuery 为这些 `<a>` 元素添加 `id` 属性。为了实现这一点，它添加了一个 `each` 方法来处理文章中的每个 `<a>` 元素。对于此方法，名为 `index` 的参数将接收每个 `<a>` 元素的索引值，从零开始。然后，将 `index` 加 1 与“heading”字符串拼接。注意，这些 `<a>` 元素的 `href` 属性是“heading1”、“heading2”等。
+
+第三，文章中 `h2` 元素中的文本被包裹在 `<a>` 元素中。注意这些 `<a>` 元素中的 `id` 属性是“heading1”、“heading2”等。这意味着当用户点击 `aside` 中的每个链接时，它将跳转到文章中相应的标题。
+
+最后，在文章中每个主题的最后一个段落之后插入了一个 `<a>` 元素。这些元素每一个的 `id` 都设置为“top”。这意味着点击这些链接之一将跳转到页面顶部，因为 `h1` 元素内 `<a>` 元素的 `id` 为“top”。
+
+## 第 9 章 如何使用 DOM 操作和遍历方法 271
+
+## jQuery 计划
+
+- 向 `aside` 添加 h2 标题
+- 将文章中的 h2 文本包裹在 <a> 标签中
+- 为标签添加 id
+- 克隆文章中的 <a> 标签并将其插入 `aside` 中
+- 移除 `aside` 中 <a> 元素的 id 属性
+- 为 `aside` 元素添加 href 属性
+- 在每个主题后插入 <a> 标签
+
+## jQuery
+
+```javascript
+
+$(document).ready(function() {
+
+  // 向 aside 添加 h2 标题
+
+  $("aside").append("<h2>Table of contents</h2>");
+
+  // 将文章中的 h2 文本包裹在 <a> 标签中
+
+  $("article h2").wrapInner("<a></a>");
+
+  // 为标签添加 id
+
+  $("article a").each(function(index) {
+
+    var id = "heading" + (index + 1);
+
+    $(this).attr("id", id);
+
+  });
+
+  // 克隆文章中的 <a> 标签并将其插入 aside 中
+
+  $("article a").clone().insertBefore("aside h2");
+
+  // 移除 aside 中 <a> 元素的 id 属性
+
+  $("aside a").removeAttr("id");
+
+  // 为 aside 元素添加 href 属性
+
+  $("aside a").attr("href", function(index) {
+
+    var href = "heading" + (index + 1);
+
+    return href;
+
+  });
+
+  // 用 <a> 标签包裹 h1 文本
+
+  $("h1").wrapInner("<a id='top'></a>");
+
+  // 在每个主题后插入 <a> 标签
+
+  $("article h2").before("<a href='#top'>Back to top</a>");
+
+  $("article a:first").remove();
+
+  $("article p:last").after("<a href='#top'>Back to top</a>");
+
+});
+
+```
+
+## 描述
+
+- 由于 jQuery 方法的功能经常重叠，你可以以多种方式编写此应用程序，并获得相同的结果。
+
+图 9-6 TOC 应用的 jQuery。
+
+© 2012, Mike Murach and Associates, Inc. 授权给 Michael Hotham。
+
+## 处理样式和定位的方法
+
+接下来的两个主题将介绍处理样式和定位的 jQuery 方法。然后，你将发现其中一些方法可以用于增强你刚刚学习的目录（TOC）应用。
+
+## 处理样式的方法
+
+图 9-7 展示了处理样式的 DOM 操作方法。与 `attr` 方法类似，`css` 方法允许你获取和设置 CSS 属性。你还可以使用映射（map）通过单个方法设置多个属性，并可以使用函数来设置某个属性的值。该图中的前两个示例展示了如何使用 `css` 方法设置一个或多个属性。
+
+`height` 和 `width` 方法允许你获取和设置元素的高度和宽度。这些方法取决于它们的测量值是否包含外边距（margin）、内边距（padding）和边框（border）。例如，图中的第三个示例使用 `height` 方法获取 `article` 元素的高度，这不包含内边距、外边距或边框。
+
+## 处理样式的方法
+
+| 方法 | 说明 |
+| --- | --- |
+| css(name) | 获取命名属性的值。 |
+| css(name, value) | 设置命名属性的值。 |
+| css(map) | 根据属性映射中指定的键值对，设置多个属性的值。 |
+| css(name, function) | 设置函数返回的命名属性的值。 |
+| height() | 获取第一个选ne元素的高度。此高度不包含内边距、外边距或边框。 |
+| height(value) | 设置第一个选ne元素的高度。 |
+| innerHeight() | 获取第一个选ne元素的高度，包括内边距但不包含外边距或边框。 |
+| outerWidth([includeMargin]) | 获取第一个选ne元素的宽度，包括内边距和边框。如果参数设置为 true，则也包含外边距。 |
+| width() | 获取第一个选ne元素的宽度。此宽度不包含内边距、外边距或边框。 |
+| width(value) | 设置第一个选ne元素的宽度。 |
+| innerWidth() | 获取第一个选ne元素的宽度，包括内边距但不包含外边距或边框。 |
+| outerWidth([includeMargin]) | 获取第一个选ne元素的宽度，包括内边距和边框。如果参数设置为 true，则也包含外边距。 |
+
+## 示例
+
+为所有 h2 元素设置 CSS 颜色属性为蓝色
+$(h2).css("color","blue");
+
+使用映射为所有 h2 元素设置两个 CSS 属性
+$(h2).css({ "color": "blue", "font-size": "150%" });
+
+获取 article 元素的高度
+`var height = $("article").height();`
+
+### Description
+
+- 这些属性可以方便获取和设置元素的属性，同时也便于获取和设置元素的高度和宽度。
+- 当你获取高度或宽度值时，它以数字形式返回，并假设单位为像素。
+- 当你为高度或宽度值指定数字时，假设单位为像素。如果你想使用测量单位，请将值括在引号中。
+- 如果在 `css` 方法中使用函数，它将接收一个包含当前元素在集合中索引的参数，以及一个包含属性值的参数。
+
+## 定位元素的方法
+
+9-8 展示了定位元素的方法。在这里，`offset` 方法获取元素相对于文档窗口的偏移位置坐标。相比之下，`position` 方法获取相对于父元素（其容器元素）的坐标。这些坐标返回在一个包含 `top` 和 `left` 属性的对象中，这些属性给出了距离文档或父元素顶部的距离。
+
+例如，第一个示例获取 `article` 元素相对于文档的顶部坐标；相比之下，第二个示例创建了一个新的坐标对象并将其赋值给名为 `asideCoordinates` 的变量，如下所示：
+
+`var asideCoordinates = new Object();`
+
+这是创建一个新的通用对象的 JavaScript 代码。然后，接下来的两个语句为该对象的 `top` 和 `left` 属性赋值。最后，使用 `offset` 方法将 `aside` 元素的 `top` 和 `left` 坐标设置为对象中的值。
+
+同样地，你可以使用滚动（scroll）方法来获取和设置垂直和水平滚动条的顶部和左侧位置。例如，第三个示例使用 `scrollTop` 方法将窗口垂直滚动条顶部设置为零。这意味着滚动条将位于窗口的顶部。
+
+## 第 9 章：如何使用 DOM 操作和遍历方法
+
+## 定位元素的方法
+
+| 方法 | 说明 |
+| --- | --- |
+| offset() | 获取元素相对于文档窗口的偏移位置坐标。 |
+| offset(coordinates) | 设置元素相对于文档窗口的偏移位置坐标。 |
+| position() | 获取相对于父元素（其容器元素）的坐率。 |
+| scrollTop() | 获取元素垂直滚动条的顶部。 |
+| scrollTop(value) | 设置元素垂直滚动条的顶部。 |
+| scrollLeft() | 获取元素水平滚动条的左侧。 |
+| scrollLeft(value) | 设置元素水平滚动条的左侧。 |
+
+### 示例
+
+获取 article 元素的顶部偏移
+`var offsetTop = $("article").offset();`
+
+为 aside 设置坐标
+`var asideCoordinates = new Object();`
+`asideCoordinates.top = 200;`
+`asideCoordinates.left = 100;`
+`$("aside").offset(asideCoordinates);`
+
+将窗口的滚动条移动到顶部
+`$(window).scrollTop(0);`
+
+### Description
+
+- 这些属性可以方便获取和设置元素的属性，同时也便于获取和设置元素的高度和宽度。
+- 当你获取高度或宽度值时，它以数字形式返回，并假设单位为像素。
+- 当你为高度或宽度值指定数字时，假设单位为像素。如果你想使用测量单位，请将值括在引号中。
+- 如果在 `css` 方法中使用函数，它将接收一个包含当前元素在集合中索引的参数，以及一个包含属性值的参数。
+
+## 增强型目录应用
+
+为了向你展示如何使用这些方法，9-9 展示了目录的增强版本。该应用与之前的应用类似，但有两处增强。首先，当用户点击链接时，选中的主题会被放大。这样目录就始终可见。
+
+这些增强的 jQuery 代码位于 `<a>` 的点击事件处理器中。这些链接的默认行为是跳转到相关的标题。此事件处理器将执行该操作。
+
+第一个代码块从 `<a>` 元素获取 `href` 属性，并将其赋值给名为 `id` 的变量。为了实现这一点，它使用 `this` 关键字来引用 `<a>` 元素。如果点击的是目录中的第三个链接，它是 "#heading3”。
+
+第二个代码块利用它获取 article 中的标题。例如，“#heading3”是一个获取 ID 为 "heading3" 的元素选择器。然后使用 `css` 方法为选中的标题设置两个属性。
+
+第三个代码块移动 `aside`，使其位于选中标题的左侧，并获取 `aside` 的高度和 `article` 的高度。然后，它利用这些值来确定目录的偏移量应该是多少。
+
+如果 `aside` 的选取高度小于或等于 `article` 的高度，则赋予 `aside` 与 `article` 相同的偏移。这意味着 `aside` 的顶部被设置为文章高度减去目录高度，这意味着侧边栏位于页面底部，但不会超出页面。
+
+该代码块的最后语句使用 `css` 方法将 `aside` 的 `top` 属性设置为该值指定的值。这就是让 `aside` 在页面上上下移动的原因。
+
+为了实现这些功能，body 的 `position` 属性应设置为 `relative`，而 `aside` 的 `position` 属性应设置为 `relative` 或 `absolute`。然后，目录将根据 CSS `top` 属性的设置定位在 `aside` 内部。然而，根据使用的是相对定位还是绝对定位，该位置会有细微不同。
+
+请注意，无论你使用 `position` 方法还是 `offset` 方法来获取顶部偏移，该应用的效果都是相同的。同样注意，无论链接的 HTML 是由 jQuery 生成的（如图 9-6 所示），还是手动输入到 HTML 中的，该应用均有效。
+
+## 第 9 章 如何使用 DOM 操作和遍历方法 277
+
+## 带有所选主题的 TOC 应用
+
+![](img/fb3dabc43193711c2307f942481ad30c_292_0.png)
+
+## 培训师学习我们书籍的 7 个理由
+
+### 模块化书籍组织
+在我们所有书籍的这一部分，我们介绍了书籍的核心内容，包括一套完整的可用索引。在核心内容之后，书的每个章节都被设计成独立的模块。这意味着这些章节不需要按顺序排列；你可以根据喜，通过分配你需要的章节来定制你的阅读。
+
+在可能的情况下，每一章也被设计成独立的模块，这意味着，你可以只分配适合你课程的章节。这种方法也使章节更适合在工作中参考。
+
+### 目录
+模块化书籍组织
+- 自上而下的章节设计
+- 双页对齐格式
+- 工作中的表现
+- 在更短的时间内进行更多练习
+- 完整的真实世界应用
+- 完整的教师材料
+
+### 自上而下的章节设计
+通过使用完整的主题和产品，我们书籍中的大多数章节都有独特的自上而下的设计，从简单到复杂。这让学习者更容易学习。这也意味着你可以介�主题以确保每个人都理解基本细节，而无需介绍章节中的所有主题。然后，学习者可以自己学习其他主题，或者在工作需要时进行学习。
+
+### 双页对齐格式
+如果你翻阅我们的任何一本书，你将看到所有的信息
+
+## aside 的 position 属性必须 relative 或 absolute
+
+```css
+
+body { position: relative; }
+
+aside { position: absolute; };
+
+```
+
+## 所选主题的 Query 事件处理程序已添加到应用程序中
+
+```javascript
+
+// 为所选主题设置 CSS 并移动 TOC
+
+$("aside").click(function() {
+
+// 从 <a> 标签中派生出所选 h2 元素的 id
+
+id = $(this).attr("href"); // 获取 <a> 标签中 href 属性的值
+
+// 更改所选标题的样式
+
+$(id).css("color", "blue", "font-size": "150%");
+
+// 将 aside 移动到下一个章节
+
+var h2Offset = $(id).offset().top; // 获取 h2 的顶部偏移量
+
+var asideHeight = $("aside").height(); // 获取 aside 的高度
+
+var articleHeight = $("article").height(); // 获取 article 的高度
+
+if ((h2Offset + asideHeight) <= articleHeight) {
+
+asideOffset = articleHeight - asideHeight;
+
+} else {
+
+asideOffset = h2Offset;
+
+}
+
+$("aside").css("top", asideOffset);
+
+});
+
+```
+
+## 描述
+
+- 此应用程序更改所选主题标题的颜色和大小，以便于找到哪个主题被选中。
+- 此应用程序还会将文本内容移动到下一个所选主题，以便选择下一个主题。由于 TOC 会移动，因此不需要“回到顶部”的链接。
+
+图 9-9 增强型 TOC 应用
+
+© 2012, Mike Murach and Associates, Inc. 许可给 Michael Gotham
+
+## DOM 遍历方法
+
+本章接下来的两图展示了 DOM 遍历方法。这些方法让你更容易地获取 DOM 中你想要操作的任何元素。
+
+## 树遍历方法
+
+如果你学习图 9-10 中的表格，你会发现 jQuery 提供了一套全方位的方法用于遍历（穿过）DOM 树。这些方法可以相对容易地选择另一个元素的兄弟元素、子元素、父元素和祖先。例如，第一个示例选择了 id 为 "last_heading" 的元素之前的第一个 <p> 兄弟元素。第二个示例选择了 id 为 "faq" 的元素的父元素。
+
+这组方法包含一个 `find` 方法，允许你获取所选元素中匹配指定选择器的后代。例如，图中的第三个示例使用 `find` 方法获取 <article> 元素内 <p> 元素内的 <span> 元素。然而，`find` 方法得到的结果也可以通过普通选择器完成。
+
+## 树遍历方法
+
+| 方法 | 描述 |
+| --- | --- |
+| siblings({selector}) | 获取每个所选元素的兄弟元素，可选通过选择器过滤。 |
+| next({selector}) | 获取每个所选元素之后的第一个兄弟元素，可选通过选择器过滤。 |
+| nextAll({selector}) | 获取每个所选元素之后的所有兄弟元素，可选通过选择器过滤。 |
+| nextUntil({selector}) | 获取每个所选元素之后的所有兄弟元素，但不包括由选择器指定的元素。 |
+| prev({selector}) | 获取每个所选元素之前的第一个兄弟元素，可选通过选择器过滤。 |
+| prevAll({selector}) | 获取每个所选元素之前的所有兄弟元素，可选通过选择器过滤。 |
+| prevUntil({selector}) | 获取每个所选元素之前的所有兄弟元素，但不包括由选择器指定的元素。 |
+| children({selector}) | 获取每个所选元素的子元素，可选通过选择器过滤。 |
+| parents({selector}) | 获取每个所选元素的祖先，可选通过选择器过滤。 |
+| parentsUntil({selector}) | 获取每个所选元素的祖先元素，但不包括由选择器指定的元素。 |
+| parent({selector}) | 获取每个所选元素的父元素，可选通过选择器过滤。 |
+| offsetParent() | 获取最近的已定位的祖先。 |
+| closest({selector, context}) | 从当前元素开始沿 DOM 树向上查找，获取第一个匹配选择器的元素。 |
+| find(selector) | 获取元素内的所有后代。 |
+
+## 示例
+
+```javascript
+
+// 获取元素的上一个兄弟元素
+
+var previousParagraph = $("#last_heading").prev("p");
+
+```
+
+```javascript
+
+// 获取元素的父元素
+
+var parent = $("faqs").parent();
+
+```
+
+```javascript
+
+// 获取 article元素内所有的 spans
+
+$("article").find("span").css("color", "red");
+
+```
+
+## 描述
+
+- 树遍历方法帮助你选择元素的兄弟元素、子元素、父元素和祖先。
+
+图 9-10 树遍历方法
+
+## 过滤方法
+
+为了增强遍历方法，DOM 遍历方法还包含了过滤方法。这些方法总结在表格中。例如，第一个示例展示了如何使用 `filter` 方法只选择类为 "best" 的 h2 元素。第二个示例展示了如何使用该方法选择除类为 "first" 之外的所有 <p> 元素。
+
+第三个示例展示了如何使用 `slice` 方法选择 id 为 "slides" 的元素中从第二个到最后一个图像。这样做需要使用索引值1，即获取第二张图片，因为索引从0开始。
+
+在许多情况下，这些过滤方法重复了通过普通选择器和 `find` 方法可以的结果。例如，
+
+```javascript
+
+$("h2.best")
+
+```
+
+选择的元素与以下代码相同：
+
+```javascript
+
+$("h2").filter(".best")
+
+```
+
+在某些情况下，过滤方法可以获得普通选择器无法获得的结果。
+
+过滤方法的用处是它们便于链式调用。这通过图中最后一个示例进行了说明。在这里，方法是分多行编写的，但它们可以在一行代码中完成。
+
+在第一行代码中，使用第一个方法对 id 为 "slides" 的元素中的图像集进行过滤，使其包含第一张图片。然后，该图片淡出。在第二行中，使用 `next` 方法获取第一张图片的第一个兄弟元素，即第二张图片。然后，该图片淡入。
+
+此时，集合中的唯一对象是第二张图片。因此，链式调用中的后续方法将在该图像上执行。例如，如果接下来的方法是示例所示的 `append` 方法，则该方法将该图像移动到其他图像的末尾。在这种情况下，我们希望将第一张图片移动到图像的末尾，使其在原始图像集的最后一张图像之后显示。为了实现这一点，在执行 `appendTo` 方法之前执行 `end` 方法。这将选元素集合恢复到之前的状态，即只包含第一张图片的集合。你将在下一个图中看到它是如何工作的。
+
+## 过滤方法
+
+| 方法 | 说明 |
+| --- | --- |
+| filter(selector) | 将选定的元素集缩小为匹配选择器的元素。 |
+| filter(function) | 将选定的元素集缩小为通过函数测试的元素。 |
+| not(selector) | 从选定的元素集中移除由选择器指定的元素。 |
+| not(elements) | 从选定的元素集中移除指定的特定元素。 |
+| not(function) | 从选定的元素集中移除所有通过函数测试的元素。 |
+| has(selector) | 将选定的元素集缩小为拥有匹配选择器的后代的元素。 |
+| eq(index) | 将选定的元素集缩小为指定索引位置的元素。 |
+| last() | 将选定的元素集缩小为集合中的最后一个元素。 |
+| slice(start, end) | 将选定的元素集缩小为参数指定索引范围内的元素。 |
+| end() | 将选定的元素集恢复到其先前的状态。 |
+
+## 示例
+
+更改具有 "best" 类的 h2 元素的属性
+`$("h2").filter(".best").css("color", "red");`
+
+更改除 "first" 类元素外的所有 <p> 元素的属性
+`$("p").not(".first").css("text-indent", "1.5em");`
+
+隐藏 <p> 元素中索引为 0 之外的所有图像
+`$("slides img").slice(1).hide();`
+
+对集合中的图像进行操作
+`$("slides img").first().fadeOut(1000) // 淡出集合中的第一个 img 元素
+.next().fadeIn(1000) // 淡入集合中的下一个元素
+.end() // 返回到集合中的第一个元素
+.appendTo("#slides"); // 将第一个元素追加到集合的末尾`
+
+## 描述
+
+- 许多过滤方法重复了通过选择器可以实现的功能。
+- 使用过滤方法的用处在于它们便于了链式调用。特别是 `end` 方法允许链中的对象返回到原始选择。
+- 如果你在 `filter` 或 `not` 方法上使用函数，它会接收一个带有当前元素在集合中索引的参数。
+
+![](img/fb3dabc43193711c2307f942481ad30c_296_0.png)
+
+## 幻灯片应用
+使用 DOM 遍历方法
+
+图 9-12 显示了如何在幻灯片中使用 DOM 遍历方法。在这里，图像是位于 id 为 "slides" 的 div 元素中的元素。jQuery 通过这些图像的淡出和淡入来创建幻灯片。
+
+为了让这段代码生效，必须通过 CSS 将图像的 `position` 属性设置为 `absolute`。否则，淡入的图像在移动到左侧之前，会短暂地出现在淡出图像的右侧。因为 `fadeIn` 方法开始的时间比 `fadeOut` 方法结束的时间稍早。
+
+为了证明 jQuery 有多种编写方式，此图展示了运行幻灯片的两种方法。在第一个示例中，第一条语句使用幻灯片方法隐藏所有图像。接着，`setInterval` 函数中的第一条语句使用第一个方法获取第一个图像。然后，将该图像淡出，并淡入下一张图像。
+
+这段代码的关键在于它遵循了以下逻辑：在 `next` 方法将对象设置为第二个图像后，它将链式对象返回到第一个图像。然后，`appendTo` 方法将第一个图像移动到图像集合的末尾。此时，出现了一张新图像，方法链可以从该图像再次开始。
+
+在第二个示例中，图像保持其在 DOM 中的位置不变，并使用 `eq` 方法选择要淡入和淡出的图像。例如，`setInterval` 方法中的第一个方法淡出索引等于 `slideIndex` 变量值的图像。由于该变量从 0 开始，该应用程序从淡出 "slides" 分区域中的第一张图像开始。
+
+然后，使用一条语句来确定哪张幻灯片被淡入。如果 `slideIndex` 变量小于幻灯片的 `topIndex`（即图像长度减 1），则淡入下一张图像并将幻灯片索引加 1。否则，淡入索引值为 0 的图像，并将 `slideIndex` 重置为 0。通过这种方式，幻灯片会按照 "images" 分区域中幻灯片的数量进行循环播放。
+
+## 幻灯片应用
+
+![](img/fb3dabc43193711c2307f942481ad30c_298_0.png)
+
+```html
+
+<section>
+
+  <h1>当前书籍幻灯片</h1>
+
+  <div id="slides">
+
+    <img src="images/book1.jpg" alt="HTML5 and CSS3">
+
+    <img src="images/book2.jpg" alt="PHP and MySQL">
+
+    <!-- 10 更多图像 -->
+
+  </div>
+
+</section>
+
+```
+
+## 关键 CSS
+
+```css
+
+#slides { position: absolute; }
+
+```
+
+## 编写 jQuery 代码的一种方法
+
+```javascript
+
+$(document).ready(function() {
+
+  $("#slides img").slice(1).hide();
+
+  setInterval(function() {
+
+    $("#slides img").first().fadeOut(1000) // 淡出集合中的第一个 img 元素
+
+    .next().fadeIn(1000) // 淡入集合中的下一个元素
+
+    .end() // 返回到集合中的第一个元素
+
+    .appendTo("#slides"); // 将第一个元素追加到集合的末尾
+
+  }, 3000);
+
+});
+
+```
+
+## 编写 jQuery 代码的另一种方法
+
+```javascript
+
+$(document).ready(function() {
+
+  $("#slides img").slice(1).hide();
+
+  var slideIndex = 0, topIndex = $("#slides img").length - 1;
+
+  setInterval(function() {
+
+    $("#slides img").first().fadeOut(1000);
+
+    if (slideIndex < topIndex) {
+
+      $("#slides img").next().fadeIn(1000);
+
+      slideIndex++;
+
+    } else {
+
+      $("#slides img").eq(0).fadeIn(1000);
+
+      slideIndex = 0;
+
+    }
+
+  }, 3000);
+
+});
+
+```
+
+
+
+
+# 术语
+
+DOM 操作 | DOM 遍历
+
+# 总结
+
+- DOM 操作方法允许你获取和设置属性值。它们还允许你替换、插入、拷贝、包装和移除。
+- DOM 遍历方法允许你获取所选元素的兄弟、子元素、父、祖先和后代。它们还允许你过滤元素集以获得想要的结果。
+- `end` 方法方便了方法的链式调用，因为它返回到了开始时使用的对象。
+
+# 练习 9-1 修改 TOC 标题
+
+在练习中，你将更改图 9-5、9-6 和 9-9 中显示的标题。这将迫使你使用 DOM 操作和遍历方法。完成后，应用程序看起来应该像这样：
+
+## 复习应用程序
+
+- 1. 使用你的文本编辑器打开此文件夹下的 HTML 文件：`c:\jquery\exercises\ch09\toc\`
+  注意，该文件包含了包含此应用程序 JavaScript 的 `<script>` 元素。
+- 2. 运行应用程序并点击 TOC 中的几个链接，查看导航是如何运作的。注意，此应用程序在每个主题后没有包含“回到顶部”的链接。同样注意，当选择一个主题时，文章中的 `h2` 标题会变为蓝色，但当选择另一个主题时，该标题不会重置为原始的 CSS 值。
+
+## 增强应用程序
+
+- 3. `ready` 事件处理程序中的第三块代码为添加到文章中的 `<a>` 元素添加了 `id`。注释掉这段代码。然后，在正下方重写代码，使其使用带有 `attr` 方法的函数而不是 `each` 事件方法来设置 `id`。如果你遇到任何困难，请查看三个块之后的代码，它使用函数来设置 `aside` 中 `<a>` 元素的 `href` 属性。完成后，测试此更改。
+- 4. 在 `aside` 的末尾添加一个“回到顶部” `<a>` 元素。点击时，此链接应跳转到文章中的第一个标题。注意其他链接与“回到顶部”链接之间有空格，你可以通过在“回到顶部”链接之前插入 `<br>` 元素来获得该空格。
+- 5. 如上所示，对每个主题除第一个以外的所有段落进行缩进；这样做，并将 `text-indent` 属性设置为 1.5em。如果你使用 DOM 遍历方法，可以使用一条语句设置 `id`。否则，使用两条语句来实现该结果也是可以的。
+- 6. 在 `aside` 中 `<a>` 元素的点击事件处理程序中，第一块设置了被选中文章中 `<a>` 元素的颜色和字体大小。紧随其，编写一条或多条语句，将文章中所有其他 `<a>` 元素的颜色重置为黑色，字体大小为 120%，因为这些是 CSS 中的初始值。（要选择除当前选中元素之外的所有 `<a>` 元素，请尝试使用 `not` 方法）
+
+# 第 10 章 如何处理表单和数据验证
+
+## 表单和控件简介
+
+表单包含一个或多个控件，如文本框和按钮。接受用户输入的控件也称为字段（fields）。在接下来的两个主题中，你将学习表单的工作原理，以及如何使用 HTML5 特性来处理表单。
+
+## 表单是如何工作原理
+
+图 10-1 显示了如何创建一个包含两个文本框和一个按钮的表单。首先，你编写 `<form>` 元素。在该元素的起始标签上，你编写了 `action` 和 `method` 属性。`action` 属性指定了提交表单时用于处理数据的 Web 服务器文件。`method` 属性指定了用于将表单发送到 Web 服务器的 HTTP 方法。
+
+在示例表单中，当用户点击“Join”按钮时，表单将使用 HTTP "get" 方法提交到服务器。表单中的数据将由名为 `join.php` 的代码在服务器处理。该文件将使用 PHP 作为脚本语言。
+
+当你使用 `get` 方法时，数据作为 HTTP 请求的一部分发送。这意味着数据是可见的，并且页面可以被书签。图中的 URL 说明了这一点。在这里，URL 后面跟着一个问号以及由 `&` 分隔的键值对，这些值展示了 `name` 属性和字段值。在这种情况下，提交了两个值：电子邮件地址和字段值。
+
+## 用于表单的 HTML5 和 CSS3 特性
+
+如果你熟悉 HTML5 和 CSS3，图 10-2 总结了它们处理表单的主要特性。这些特性已经影响了某些表单的开发方式，当所有浏览器都完全支持时，它们将产生更大的影响。
+
+首先，HTML5 提供了新的输入控件，总结在图中的第一个表格中。通常情况下，这些控件以文本框的形式实现，但 `type` 属性指示了每个文本框应该输入什么类型的数据。某些浏览器为其中一些条目提供自动验证，某些浏览器可能会添加小部件来帮助用户输入有效内容。
+
+如果你在 `type` 属性中使用 "email"，某些浏览器将对输入的电子邮件地址进行格式验证。如果你在 `type` 属性中使用 "number"，某些浏览器将添加按钮，允许用户增加或减少当前值。如果你将 "date" 作为 `type` 属性，浏览器将显示一个日历小部件，让用户选择日期。至少，这些属性指示了该控件所针对的数据类型，这从语义化角度来说是有益的。
+
+HTML5 还提供了用于处理控件的属性，最重要的属性总结在图中的第二个表格中。`autofocus` 属性在表单加载时将焦点移动到控件。这意味着你不需要使用 JavaScript 来实现。此外，`placeholder` 属性可以用于在控件中放置起始文本，帮助用户按正确的格式输入数据。当用户将焦点移动控件时，文本会被移除。
+
+相比之下，`required` 属性会导致浏览器在提交表单处理之前检查字段是否为空。如果表单为空，它将显示一条消息且不提交表单。当点击提交按钮时，浏览器还会高亮所有为空的必填字段。
+
+如果你为字段编写了 `title` 属性，当鼠标悬停在上方时会显示该属性的值。该文本也会在浏览器字段的标准错误消息之后。
+
+`pattern` 属性通过使用正则表达式提供数据验证。正则表达式提供了一种将用户输入与字符模式进行匹配的方法。因此，正则表达式可以用于验证信用卡号、邮政编码、日期或电话号码等用户输入。许多编程语言（包括 JavaScript 和 PHP）都支持正则表达式，现在 HTML5 也支持正则表达式。诀窍在于编写你需要的正则表达式，而这可能是困难的。
+
+为了格式化必填、有效和无效字段，你可以使用图中列出的 `:required` 伪类。例如，你可以使用 `:required` 伪类格式化所有必填字段，并使用 `:invalid` 伪类格式化所有无效字段。
+
+对于简单的表单，可能仅通过 HTML5 验证就能应付。对于大多数表单，你将需要 JavaScript。原因之一是 HTML5 特性并非所有浏览器都支持。另一个原因是 HTML5 特性没有提供大多数表单所需的所有类型的验证。
+
+### 用于输入数据的 HTML5 控件
+
+| 控件 | 说明 |
+|---|---|
+| email | 获取由浏览器完成验证的电子邮件地址。 |
+| url | 获取由浏览器完成的 URL。 |
+| tel | 获取电话号码，当前浏览器不进行验证。 |
+| number | 支持时，可获取具有 `min`、`max` 和 `step` 属性的数值输入、浏览器验证以及增加或减少条目的按钮。 |
+| range | 支持时，获取具有 `min`、`max` 和 `step` 属性的数值输入、浏览器验证以及滑块控件。 |
+| date | 支持时，获取具有 `min` 和 `max` 属性及浏览器验证的日期输入，并可能包含日历小部件。 |
+| time | 支持时，获取具有 `min` 和 `max` 属性及浏览器验证的时间输入。 |
+
+### 用于表单的主要 HTML5 属性
+
+| 属性 | 描述 |
+|---|---|
+| autofocus | 一个布尔型属性，告诉浏览器在页面加载时将焦点设置在字段上。 |
+| placeholder | 字段中的消息，当控件获得焦点时保持显示。 |
+| required | 布尔型属性，表示该字段需要值。如果提交表单时字段为空，浏览器将显示其默认错误消息。 |
+| title | 指定当鼠标悬停在字段上时显示在工具提示中的文本。此文本也会显示在浏览器错误消息之后。 |
+| pattern | 指定用于验证字段中输入的正则表达式。如果提交表单时字段无效，浏览器将在该控件的 `title` 属性中显示其默认错误消息。 |
+
+### 用于必填、有效和无效的 CSS3 伪类
+
+```css
+:required
+:invalid
+```
+
+### 你需要 JavaScript 进行数据验证的两个原因
+
+- 不是所有的当前浏览器都实现了 HTML5 数据验证特性，而且已实现的实现方式并不总是相同。
+- HTML5 在它可以执行的验证类型上存在局限。例如，HTML5 无法检查字段是否等于另一个字段，无法在表中查找状态代码。
+
+### 描述
+
+- 最终，所有现代浏览器都支持 HTML5 数据验证特性，因此 HTML5 验证对于某些表单将足够。
+- 在那之前，你需要使用 JavaScript、jQuery 甚至是插件来完成合格的客户端验证工作。
+- 有关处理表单的 HTML5 和 CSS3 特性的完整描述，请参考《Murach's HTML5 and CSS3》。
+
+## 如何使用 jQuery 处理表单
+
+为了方便处理表单，jQuery 提供了为此目的设计的选择器、方法和事件方法。然而，接下来的图所示，jQuery 并没有提供专门用于数据验证的功能。
+
+### 用于表单控件的 jQuery 选择器
+
+| 选择器 | 选择内容 |
+| :--- | :--- |
+| :input | 所有表单元素：input, select, textarea, button。 |
+| :text | 所有文本框：type 为 "text" 的 input 元素。 |
+| :radio | 所有单选按钮：type 为 "radio" 的 input 元素。 |
+| :checkbox | 所有复选框：type 为 "checkbox" 的 input 元素。 |
+| :file | 所有文件上传元素：type 为 "file" 的 input 元素。 |
+| :password | 所有密码字段：type 为 "password" 的 input 元素。 |
+| :submit | 所有提交按钮和按钮元素：type 为 "submit" 的 input 元素和 button 元素。 |
+| :reset | 所有重置按钮：type 为 "reset" 的 input 元素。 |
+| :image | 所有图像按钮：type 为 "image" 的 input 元素。 |
+| :button | 所有按钮：button 元素和 type 为 "button" 的 input 元素。 |
+| :disabled | 所有禁用的元素：具有 disabled 属性的元素。 |
+| :enabled | 所有启用的且没有 disabled 属性的元素。 |
+| :checked | 所有被选中的复选框和单选按钮。 |
+| :selected | select 元素中所有被选中的 option。 |
+
+### 用于获取和设置控件值的 jQuery 方法
+
+| 方法 | 说明 |
+| :--- | :--- |
+| val() | 获取文本框或其他控件的值。 |
+| val(value) | 设置文本框或其他控件的值。 |
+
+### 用于修剪输入项的 jQuery 方法
+
+| 方法 | 说明 |
+| :--- | :--- |
+| trim() | 移除字符串开头和结尾的所有空格。 |
+
+### 如何从文本框获取数值输入的值
+
+```javascript
+var age = parseInt($("#age").val());
+```
+
+### 如何修剪输入项的值并将其放回同一个文本框
+
+```javascript
+var firstName = $("#first_name").val().trim();
+$("#first_name").val(firstName);
+```
+
+### 如何获取组中被选中的单选按钮的值
+
+```javascript
+var radioButton = $("input[name='contact_by']:checked").val();
+```
+
+### 如何从列表获取已选选项的数组
+
+```javascript
+var selectOptions = [];
+selectOptions = $("#select_list :selected");
+```
+
+### 描述
+
+- jQuery 提供了用于选择表单控件的特殊选择器；用于获取和设置控件值的 `val` 方法；以及一个可以用于修剪用户输入的 `trim` 方法。
+
+## 用于表单的 jQuery 事件方法
+
+图 10-4 中的第一个表格总结了处理表单的 jQuery 方法，你已经接触了其中一些。例如，`focus` 事件方法的处理程序在焦点移动到选定元素时运行，而 `change` 事件方法的处理程序则在选定元素的值改变时运行。
+
+该表中的最后一个事件在发生 `submit`（提交）事件时运行。该事件在用户点击提交按钮或用户将焦点移动到提交按钮并按下回车键时发生。但当使用 `submit` 方法触发该事件时也会发生。
+
+此图中的第二个表格总结了触发（启动）事件的 jQuery 方法。例如，如果你为文本框编写了 `focus` 方法，焦点将移动到该框，并触发 `focus` 事件。然而，如果没有为该事件分配处理程序，该事件将不会被处理。请注意这些触发方法的名称与事件方法的名称相同。
+
+图中的示例展示了你如何使用事件方法。在第一个示例中，使用 `change` 事件为 id 为 "contact_me" 的复选框创建了一个 `change` 事件处理程序。然后，该处理程序中的函数会检查复选框 `attr` 属性的值以查看它是否被选中。代码关闭了表单上所有单选按钮的 `disabled` 属性。否则，代码开启所有单选按钮的 `disabled` 属性。
+
+这在应用程序中非常有用，只有当复选框被选中时，单选按钮才应该是启用。例如，如果用户勾选了“联系我”框，单选按钮应该是启用的，以便用户点击首选的联系方式。否则，单选按钮应该是禁用的。
+
+图中的第二个示例展示了如何在属性类型为 "button" 的输入按钮末尾触发 `submit` 事件。在这里，事件处理程序函数首先验证所有输入项中的代码。然后，如果所有输入项都有效，则使用 `submit` 方法启动表单的事件，这将表单发送到服务器。这就是你在前面章节的 Email List 应用程序中一直使用的方法。
+
+提供数据验证的另一种方法是使用 `submit` 按钮而不是普通按钮。这样，你可以为表单的提交编写事件处理程序。在处理程序内部，你测试所有输入项的有效性。如果它们都有效，你就可以结束处理程序，这样表单就会提交。但如果一个或多个输入项无效，你可以对 `submit` 事件的对象调用 `preventDefault` 方法来取消表单提交。你将在图 10-6 中看到说明。
+
+### 用于表单的 jQuery 事件方法
+
+| 事件方法 | 说明 |
+| :--- | :--- |
+| focus() | 当焦点移动到选定元素时运行处理程序。 |
+| blur() | 当焦点离开选定元素时运行处理程序。 |
+| change() | 当选定元素的值改变时运行处理程序。 |
+| select() | 用户选择元素时运行处理程序。 |
+| submit() | 当发生提交事件时运行处理程序。 |
+
+## Validation 的表单
+
+### 成员表单
+
+| 注册信息 | |
+| :--- | :--- |
+| 邮箱地址：zak@modulemedia | 必须是有效的邮箱地址。 |
+| 密码：***** | 必须是6 个或更多字符。 |
+| 确认密码： | 此字段为必填。 |
+| 信息 | |
+| 名：Zak | |
+| 姓：Rovalcaba | |
+| 州：CA | |
+| 邮政编码：94999-9999 | 使用其他 99999 或 99999-9999。 |
+| 电话号码：999-9999 | 此字段为必填。 |
+| 开始：07/03/2012 | |
+| 提交您的会员信息 | [提交] [重置] |
+
+## HTML 部分
+
+```html
+<form action="register.html" method="get"
+  name="member_form" id="member_form">
+  <fieldset>
+    <legend>Registration Information</legend>
+    <label for="email">Email Address:</label>
+    <input type="text" id="email" name="email"><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"
+      placeholder="At least 6 characters"><br>
+    <label for="verify">Verify Password:</label>
+    <input type="verify" id="verify" name="verify"><br>
+  </fieldset>
+  <fieldset>
+    <legend>Member Information</legend>
+    <!-- 这里缺少了四个字段 -->
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone"
+      placeholder="999-999-9999"><br>
+    <label for="start_date">Start Date:</label>
+    <input type="text" id="start_date" name="start_date"><br>
+  </fieldset>
+  <fieldset id="buttons">
+    <legend>Submit Your Membership</legend>
+    <label>&nbsp;</label>
+    <input type="submit" id="submit" name="submit" value="Submit">
+    <input type="reset" id="reset" name="reset" value="Reset"><br>
+  </fieldset>
+</form>
+```
+
+## 应用程序的部分 JavaScript 代码
+
+图 10-6 展示了该应用程序的一些 JavaScript 代码。这能让你更清楚地了解如何使用 jQuery 进行数据验证，以及如果你想完成彻底的数据验证工作，为什么你需要 JavaScript。
+
+事件处理程序中的第一条语句在每个输入控件之后添加了一个 `span` 元素。为了实现这一点，该语句使用 `:text` 选择器来选择所有 `type="text"` 的 `input` 元素。它还使用了 `id` 选择器来选择密码和确认密码并对它们进行验证。然后，你在第 9 章中学到的方法会在每个被选中的字段之后插入一个 `span` 元素。这些元素将用于显示错误。
+
+下一块代码使用 `Date` 对象和字符串处理将 `start_date` 字段设置为当前日期。这就是为什么如果当前日期没问题，用户就不需要输入日期。这种类型的处理通常用于将表单中的控件设置为正确的初始值。例如，你还可以使用 JavaScript 来设置下拉列表的值和文本。
+
+剩余的代码是 `submit` 事件的事件处理程序，该事件在用户点击提交按钮或将焦点移动到按钮上并按回车键时发生。该事件处理程序中的代码包含了九个字段中仅三个字段的验证例程，但它可以让你更清楚地了解如何将 jQuery 和 JavaScript 用于数据验证。
+
+对输入项的验证将正则表达式赋值给名为 `pattern` 的变量。稍后，该正则表达式的 `test` 方法在 `else` 句中被用来检查用户的输入是否匹配该模式。如果不匹配，则使用 jQuery 的 `next` 和 `text` 方法在 `ready` 事件处理程序中第一条语句创建的输入项 `span` 元素中显示错误消息。
+
+对密码项的验证使用字符串的 `length` 属性来测试输入长度是否小于 6。如果是，则会显示错误消息。
+
+对名项的验证使用 jQuery 的 `trim` 方法在测试之前对输入进行修剪，以检查它是否等于空字符串。如果你不使用 `trim` 方法，包含一个或多个空格的输入将等于空字符串，因此该输入将被视为有效。
+
+在用于验证字段的三个块代码之后，你可以看到最后一条语句，其中有一个 `isValid` 变量，这意味着一个或多个字段是无效的。在这种情况下，该处理程序中的第一行将 `submit` 事件处理程序的 `preventDefault` 方法作为参数传递给函数 `event` 变量。如果在一个或多个字段无效时没有使用 `preventDefault` 方法，表单将提交到服务器，因为那是它的默认操作。
+
+如果你已经熟悉 JavaScript，你应该能理解这段代码。否则，这说明了对一套完整的 JavaScript 技能的需要。如果你想培养这些技能，我们当然推荐我们的 JavaScript 书。但验证的另一种替代方案是使用所示的验证插件。
+
+### JavaScript 验证
+
+```javascript
+$(document).ready(function() {
+  // 在每个输入之后添加 span 元素
+  $(":text, #password, #verify").after("<span></span>");
+
+  // 在日期文本框中放入今天的日期
+  var today = new Date();
+  var month = today.getMonth() + 1;
+  var day = today.getDate();
+  var year = today.getFullYear();
+  var dateTime = (month < 10 ? "0" + month : month) + "/" + (day < 10 ? "0" + day : day) + "/" + year;
+  $("#start_date").val(dateTime);
+
+  $("#member_form").submit(function(event) {
+    var isValid = true;
+
+    // 对输入进行验证
+    var email = $("#email").val();
+    var pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (email === "") {
+      $("#email").next().text("此字段为必填。");
+      isValid = false;
+    } else if (!pattern.test(email)) {
+      $("#email").next().text("这是一个有效的邮箱地址。");
+      isValid = false;
+    }
+
+    // 对密码进行验证
+    var password = $("#password").val();
+    if (password.length < 6) {
+      $("#password").next().text("必须是6 个或更多字符。");
+      isValid = false;
+    }
+
+    // 对名进行验证
+    var firstName = $("#first_name").val().trim();
+    if (firstName === "") {
+      $("#first_name").next().text("此字段为必填。");
+      isValid = false;
+    }
+
+    // 如果字段无效则阻止提交
+    if (!isValid) {
+      event.preventDefault();
+    }
+  });
+});
+```
+
+## 使用插件进行数据验证
+
+如果你搜索插件，你会发现有很多。有些适用于特定类型的输入，有些适用于广泛的输入项。其中最流行的插件之一在接下来所示。
+
+## 使用验证插件
+
+图 10-7 介绍了由 Jörn Zaefferer 开发的插件，他是 jQuery 团队的成员也是 UI 团队的开发者。要下载此插件并获取更多信息，你可以访问该部分的 URL。
+
+图的其余部分展示了如何使用此插件。首先，为验证编写一个脚本。该元素必须放在脚本元素之后，因为它使用了 jQuery。
+
+在将要验证的表单 HTML 中，你需要为输入字段使用 `name` 属性。这些在图中被高亮。你还使用一个提交按钮来启动表单的处理。
+
+然后，在 JavaScript 中，为表单的 `validate` 方法编写事件处理程序。这样，当用户点击提交按钮激活验证插件的提交方法时，插件会介入并验证表单的字段。
+
+要指定要执行的验证，你将一个映射作为验证方法的参数，如图所示。对于每个要验证的字段，你都在 HTML 中编写其 `name` 属性的值。然后，你编写一个包含一个或多个验证选项的大括号。例如，针对 `email_address` 字段的规则规定 `required` 选项为真，且 `email` 选项也为真。那么，验证选项将首先检查此字段以确保它是，然后检查它以确保输入是有效的邮箱地址。你将在几分钟后了解可选的基础验证选项。
+
+### 用户界面
+
+| 邮箱地址: | zak@modulemedia | 这不是有效的邮箱地址。 |
+| 姓名: | | 请提供姓名。 |
+
+### validate 插件的 URL
+
+http://bassistance.de/jquery-plugins/jquery-plugin-validation
+
+### HTML head 区域中的脚本元素
+
+```html
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="jquery.validate.min.js"></script>
+<script src="email_list.js"></script>
+```
+
+### HTML body 区域表单
+
+```html
+<form id="email_form" name="email_form" action="join.html" method="post">
+  <label for="email_address">邮箱地址:</label>
+  <input type="text" id="email_address" name="email_address"><br>
+  <label for="first_name">姓名:</label>
+  <input type="text" id="first_name" name="first_name"><br>
+  <label for="submit">&nbsp;</label><input type="submit" id="join_list" value="加入我们的列表"><br>
+</form>
+```
+
+### JavaScript (email_list.js) 使用插件的 validate 方法
+
+```javascript
+$('#email_form').validate({ // 使用 id 属性来选择表单
+  rules: {
+    email_address: { // 使用 name 属性来引用字段
+      required: true,
+      email: true,
+    },
+    first_name: {
+      required: true
+    }
+  },
+  messages: {
+    email_address: {
+      required: "请提供邮箱地址。",
+      email: "这不是有效的邮箱地址。"
+    },
+    first_name: {
+      required: "请提供姓名。"
+    }
+  }
+}); // validate
+```
+
+### 描述
+
+- 验证插件由 Jörn Zaefferer 编写并维护，他是 jQuery 团队的成员，也是 jQuery UI 团队首席开发人员。
+- 使用 `validate` 方法处理表单并为条目指定验证规则和消息的一种方法如上所示。
+- 另一种使用该插件 `validate` 方法的方法是在 HTML 中嵌入规则和消息属性。对于简单的表单，这种方法更容易，但维护和调试较困难。
+
+## 验证插件的选项和默认错误消息
+
+现在你已经对如何使用验证插件有了大致的了解，图 10-8 总结了它提供的基本选项及其默认错误消息。如你所示，此插件可以验证邮箱地址、URL、日期、数字和信用卡号。它可以检查某个条目是否在特定范围内，或者条目中的字符数是否在特定范围内。它可以检查有效的扩展名。它还可以确保一个条目等于另一个条目。
+
+遗憾的是，这并没有涵盖表单可能所需的每个类型的输入，也没有按照你想要的方式进行验证。增加此列表的方法之一是可以使用验证网站下载的 `additional-methods` 文件。例如，该文件增加了 `phoneUS` 和 `phoneUK` 选项。你将在本章最后看到该文件。
+
+另一个选项是为此插件编写自己的方法。你也可以使用插件中提供的一些自定义选项。但你花在超出可用范围之外的时间越长，这个插件的价值就越低。在某些时候，你可能在 JavaScript 中编写自己的数据验证代码更好，这样你的表单就能完全按照你想要的方式运行。
+
+但请记住，浏览器验证并非完美。如果它捕获了表单大部分错误，可能就足够了。然后，服务器验证可以完成剩余工作。
+
+此图还显示了验证插件如何向你的 HTML 添加错误消息。为了做到这一点，它只是在每个输入元素之后添加一个类名属性为 "error" 的 `label` 元素，并将文本设置为错误消息。因此，你可以使用 CSS 来指定 "error" 类中消息的格式。
+
+### 插件 validate 方法的验证选项
+
+| 选项 | 默认消息 |
+|---|---|
+| required: true | 此字段为必填。 |
+| email: true | 请输入有效的邮箱地址。 |
+| url: true | 请输入有效的 URL。 |
+| date: true | 请输入日期。 |
+| dateISO: true | 请输入有效的日期 (ISO)。 |
+| number: true | 请输入有效的数字。 |
+| digits: true | 请输入数字。 |
+| creditcard: true | 请输入有效的信用卡号。 |
+| equalTo: "selector" | 请再次输入相同的值。 |
+| accept: "extension1\|extension2..." | 请输入具有有效扩展名的值。 |
+| maxlength: value | 请输入不超过 (value) 个字符。 |
+| minlength: value | 请至少输入 (value) 个字符。 |
+| rangelength: [value1, value2] | 请输入一个长度在 (value1) 到 (value2) 字符之间的值。 |
+| range: [value1, value2] | 请输入在 (value1) 和 (value2) 之间的值。 |
+| max: value | 请输入小于或等于 (value) 的值。 |
+| min: value | 请输入大于或等于 (value) 的值。 |
+
+### validate 事件处理器中的选项示例
+
+```javascript
+$("#email_form").validate({
+  rules: {
+    email_address2: { equalTo: "#email_address1" },
+    number: { max: 100 },
+    message: { rangelength: [2, 140] },
+    upload: { accept: "jpg|gif" }
+  }
+}); // validate
+```
+
+### 验证插件如何为字段添加错误消息
+
+文本框的 HTML `<input type="text" id="email_address2" name="email_address2"><br>`
+
+如果邮箱无效，则 label 会被添加到 DOM 中：
+
+```html
+<input type="text" id="email_address2" name="email_address2">
+<label class="error">请输入有效的邮箱地址。</label><br>
+```
+
+### 描述
+
+- 验证插件的基本选项用于许多表单的客户端验证。该插件的 `additional-methods` 文件还提供了其他选项，例如用于验证电话的 `phoneUS` 和 `phoneUK`。
+- 当验证方法找到错误时，它会在包含无效数据的输入元素之后向 DOM 插入一个 `label`。该标签显示错误消息，当错误被修正时，该标签将从 DOM 中移除。要用 CSS 格式化错误消息，你可以选择类属性设置为 "error" 的 `labels`。
+
+## 一个使用验证插件的验证应用程序
+
+为了让你更好地了解何时以及如何使用验证插件，本章以一个使用该插件的验证应用程序结束。
+
+### HTML 部分
+
+图 10-10 显示了此表单的 HTML。在 `<head>` 部分，你可以看到用于 jQuery 的 `<script>` 元素，接着是验证插件的 `<script>`，然后是 `additional-methods` 文件的 `<script>`，最后是启动处理逻辑的 JavaScript 文件。这种顺序至关重要，因为每个文件都会调用上一个文件中的方法。
+
+在表单的 HTML 中，使用 `submit` 按钮将表单提交到服务器。这意味着，如果验证插件发现错误，它必须取消表单的默认操作。
+
+如果你查看各个文本字段的代码，你会发现所有字段都编写了 `name` 属性。这是因为验证插件使用了这些名称。你还会发现字段后面没有紧跟显示错误信息的元素。这是因为验证插件会在需要时随时为消息添加 `<label>` 元素。
+
+#### 用于 `validate` 和 `additional-methods` 插件的 `<script>` 元素
+
+```html
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="jquery.validate.js"></script>
+<script src="additional-methods.js"></script>
+<script src="member.js"></script>
+```
+
+#### HTML `<body>` 部分中的 `<form>` 元素
+
+```html
+<form action="register.html" method="get"
+  name="member_form" id="member_form">
+  <fieldset>
+    <legend>注册信息</legend>
+    <label for="email">邮箱地址:</label>
+    <input type="text" name="email" id="email" autofocus><br>
+    <label for="password">密码:</label>
+    <input type="password" name="password" id="password"
+      placeholder="至少6位字符"><br>
+    <label for="verify">确认密码:</label>
+    <input type="password" name="verify" id="verify"><br>
+  </fieldset>
+  <fieldset>
+    <legend>成员信息</legend>
+    <!-- 此缺少了四个字段 -->
+    <input type="text" name="phone" id="phone"
+      placeholder="999-999-9999"><br>
+  </fieldset>
+  <fieldset>
+    <legend>支付信息</legend>
+    <label for="start_date">请求开始日期:</label>
+    <input type="text" name="start_date" id="start_date"
+      placeholder="99/99/9999"><br>
+    <label for="payment_type">支付类型:</label>
+    <select name="payment_type" id="payment_type">
+      <option value="Visa">Master Card</option>
+      <option value="Amex">American Express</option>
+    </select>
+    <label for="card_number">信用卡号:</label>
+    <input type="text" name="card_number" id="card_number"><br>
+    <select name="expiry_month" id="expiry_month">
+      <option value="01">01</option>
+      <option value="02">02</option>
+    </select> <!-- 其他月份的 option 元素 -->
+    <select name="expiry_year" id="expiry_year">
+      <option value="2012">2012</option>
+      <option value="2013">2013</option>
+    </select> <!-- 其他年份的 option 元素 -->
+  </fieldset>
+  <fieldset id="buttons">
+    <legend>提交您的会员</legend>
+    <label>&nbsp;</label>
+    <input type="submit" id="submit" value="提交">
+    <input type="reset" id="reset" value="重置"><br>
+  </fieldset>
+</form>
+```
+
+### CSS 部分
+
+图 10-11 首先显示了用于验证错误消息的 `<label>` 的 CSS。`float` 属性表示这些标签不应该浮动。为了理解其工作原理，你需要记住，标识文本字段的 `<label>` 是浮动在文本字段左侧的。
+
+#### 用于错误消息的 CSS
+
+```css
+label.error {
+  float: none;
+  color: red;
+  font-size: 87%;
+}
+```
+
+#### 用于验证应用的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#email").focus();
+  // 此处可以进行其他步骤
+  $("#member_form").validate({
+    rules: {
+      email: {
+        required: true,
+        email: true
+      },
+      password: {
+        required: true,
+        minlength: 6
+      },
+      verify: {
+        required: true,
+        equalTo: "#password"
+      },
+      first_name: {
+        required: true
+      },
+      last_name: {
+        required: true
+      },
+      state: {
+        required: true
+      },
+      zip: {
+        required: true
+      },
+      phone: {
+        required: true
+      },
+      start_date: {
+        required: true
+      },
+      card_number: {
+        required: true
+      }
+    }
+  }); // end validate
+}); // end ready
+```
+
+## 观点
+
+此时，你应该已经熟悉了处理表单的 jQuery 功能，并理解了编写代码和使用验证插件之间的区别。最终，你可能想学习更多 JavaScript，以便编写自己的验证逻辑。到那时，请记住你的字段。
+
+## 术语
+
+| 表单 | 重置按钮 |
+| 控件 | 数据验证 |
+| 字段 | 正则表达式 |
+
+## 总结
+
+- 表单包含一个或多个接收数据的控件，如文本框、单选框或复选框。这些控件被称为字段。当表单提交到服务器进行处理时，控件数据会随 HTTP 请求发送。
+- 提交按钮在点击时将数据提交到服务器。重置按钮在点击时会重置表单中的数据。
+- HTML5 引入了一些输入控件，如 email、url、tel 和数据控件，这些控件是语义化的，因为它们指示了控件的数据类型。HTML5 还引入了一些用于数据验证的属性，CSS3 也引入了用于格式化要求的、有效和无效状态的伪类。
+- 当表单提交到服务器时，服务器脚本应该对表单中的数据进行完整验证，如果发现任何错误，则返回表单。
+- 在表单提交到服务器之前，JavaScript 应该尝试捕捉 80% 或以上的输入错误。这将减少处理表单时与服务器之间的往返次数。
+- jQuery 提供了用于处理表单的选择器、方法和事件方法，但没有提供数据验证的功能。因此，为了验证用户输入，许多开发者使用了书中介绍介绍正则表达式和字符串方法等 JavaScript 特性。
+
+## 练习 10-1 使用 JavaScript 进行验证
+
+由于你已经知道如何使用 JavaScript 验证某些类型的字段，因此此练习的大部分代码已经为你提供好了。不过，你将对这些代码进行一些增强。你将处理的表单如下：
+
+![](img/fb3dabc43193711c2307f942481ad30c_326_0.png)
+
+- 1. 使用你的编辑器在此文件夹中创建 HTML 和 JavaScript 文件：`c:\jquery\exercises\ch10_email_list_javascript\`
+- 2. 在 HTML 文件中，注意每个输入字段后都没有编写 `span` 元素。在 JavaScript 文件中，添加一条语句，在每个输入字段后添加一个 `span` 元素。每个 `span` 元素的内容应为星号 `*`。要实现这一点，你需要使用与图 10-6 中第一个相似的语句。
+- 3. 检查 JavaScript 文件中的代码，注意它包含前五个字段的验证程序。然后，在向表单中输入任何数据之前点击“Join our List”（加入我们的列表）进行测试。哎！尽管没有发生错误，数据仍然提交了。
+- 4. 为了修复这个问题，你必须停止提交按钮的默认操作。要这样做，如图 10-6 所示，在文件末尾 `if` 语句中编写事件对象的 `preventDefault` 方法。记住你为提交事件处理程序使用的名称。现在再次留空字段。除了邮政编码字段外，每个字段右侧都应该显示“Field is required”（字段必填）。
+- 5. 在名字字段输入四个空格并再次点击“Join our List”。现在错误消息消失，这意味着这四个空格被接受为有效输入。
+- 6. 在验证之前对名字输入进行修剪（trimming）来解决这个问题，就像姓氏输入的代码那样。如果输入有效，则也应将此修剪后的值置于文本框中。通过在该字段中仅输入四个空格，然后输入四个空格后跟一个名字，来测试此增强功能。
+- 7. 添加用于验证邮政编码字段的代码，通过测试确保它由五个字符组成。要实现这一点，你可以复制并修改验证状态代码字段的代码。现在，测试此项更改。
+
+## 练习 10-2 使用验证插件
+
+此练习将给你一个机会使用图 10-7 到 10-11 中所示验证插件。你将使用此插件来验证此类表单中的数据：
+
+![](img/fb3dabc43193711c2307f942481ad30c_327_0.png)
+
+- 1. 使用你的编辑器在此文件夹中创建 HTML、CSS 和 JavaScript 文件：`\jquery\exercises\ch10\email_list_plugin\`
+- 2. 在 index 文件中，注意验证插件的段代码。同样注意此应用程序的文件夹包含了该插件文件。
+- 3. 在 JavaScript 文件中，添加使用验证插件的代码来编辑上方表单中的六个字段。验证规则应如下：
+    - 所有字段均为必填项。
+    - 前两个字段应该是有效的电子邮件地址，且第二个电子邮件地址应与第一个相同。
+    - 状态代码应该是一个两个字符的代码。
+    - 邮政编码应该是一个五位数字，因此应该同时对数字和五个字符进行测试。
+- 4. 测试完成的验证，并注意消息没有显示在你想要的地方。要修复此，将图 10-11 顶部的状态代码添加到 CSS 文件中。你可能还想向规则集添加 `margin-left` 属性，以便在错误消息前留出空间。
+- 5. 再次测试验证，并注意显示的默认消息。然后，用上面所示的三个自定义消息替换默认消息。以图 10-7 为指南进行此操作。
+- 6. 注意，状态和邮政编码的验证可以使用 JavaScript 进行查找来改进。记住，所有输入都将由服务器端代码进行彻底验证。因此，这种层级的客户端验证通常是可以接受的。
+
+# 第 11 章 如何创建和使用插件
+
+## 插件简介
+
+在这一介绍中，你将学习如何查找和使用插件。插件只是执行一个任务或一组相关任务的 JavaScript 应用程序。
+
+## 如何查找 jQuery 插件
+
+图 11-1 从一个截图开始，显示了对“jquery validation”进行 Google 搜索的结果。在这里，你可以看到搜索的前三项。在大多数情况下，Google 搜索是找到你想要内容的最佳方式。不过，搜索词中包含了“jquery”一词，因为还有其他类型的插件。
+
+查找你正在寻找插件的另一种方法是访问图中的网站。第一个是 jQuery 插件库，它是 jQuery 网站的一部分；第二个是专门 jQuery 插件的网站。相比之下，接下来三个网站是许多类型代码的仓库，包括 jQuery 插件。因此，你必须在这些网站上搜索 jQuery 插件才能找到想要的内容。
+
+### 对插件的搜索
+
+![](img/fb3dabc43193711c2307f942481ad30c_330_0.png)
+
+### 查找 jquery 插件的网站
+
+| 网站名称 | URL |
+|---|---|
+| Plugin Repository | http://plugins.jquery.com |
+| jQuery Plugins | http://www.jqueryplugins.com |
+| Google Code | https://code.google.com |
+| GitHub | https://github.com |
+| Sourceforge | http://sourceforge.net |
+
+### 描述
+
+- jQuery 插件是扩展 jQuery 功能的 JavaScript 应用程序。这些插件需要使用 jQuery 核心库。
+- 插件适用于数百种 Web 功能，如幻灯片、轮图、标签、菜单、文本布局、数据验证和移动应用开发。
+- 上列了一些提供 jQuery 插件的网站。不过，你也可以通过 Google 搜索找到你想要的内容。
+- 通常情况下，如果你能找到实现你所要求的插件，那比自己编写 jquery 代码要好。
+
+## 一些实用的插件
+
+图 11-2 总结了一些最实用的插件。这些插件按类型进行了分组。稍后，你将看到前三组的示例。在第 10 章，你学习了如何使用第四组中的表单验证插件。在第 3 节，你将学习如何使用第五组的 jQuery UI 插件。在第 5 节，你将学习如何使用第六组的 jQuery Mobile 插件。
+
+### 一些实用的插件
+
+| 显示图片的插件 | |
+|--- |--- |
+| Lightbox | http://lokeshdhakar.com/projects/lightbox/ |
+| Fancybox | http://fancybox.net |
+| ThickBox | http://jquery.com/demo/thickbox |
+| ColorBox | http://www.jacklmoore.com/colorbox |
+| Shadowbox.js | http://www.shadowbox-js.com |
+| **用于幻灯片、轮播图和画廊的插件** | |
+| bxSlider | http://bxslider.com |
+| Malsup Query Cycle | http://jquery.malsup.com/cycle |
+| jCarousel | http://sorgalla.com/jcarousel |
+| Nivo Slider | http://nivo.dev/7studios.com |
+| Galleria | http://galleria.io |
+| AD Gallery | http://coffeescript.com/code/ad-gallery |
+| **用于文本布局的插件** | |
+| UI Layout | http://layout.jquery-dev.net |
+| Masonry | http://masonry.desandro.com |
+| Columnizer | http://welcome.totheinternet.net/columnizer-jquery-plugin |
+| jsColumns | http://code.google.com/plugins/js-columns |
+| JLayout | http://www.brainstein.com/projects/layout/jquery-plugin.html |
+| **用于表单的插件** | |
+| Malsup Query Form | http://jquery.malsup.com/form |
+| Ideal Forms | http://code.google.com/p/idealforms |
+| Bassistance Validation | http://bassistance.de/jquery-plugins/jquery-plugin-validation |
+| jqTransform | http://www.wfc.de/metiers/multimedia/opensource/jqtransform |
+| Niceforms | http://www.emblemaqlit.com/lab/niceforms |
+| **用于界面设计的插件** | |
+| jQuery UI | http://plugins.jquery.com |
+| Wijmo | http://wijmo.com |
+| **用于移动开发的插件** | |
+| jQuery Mobile | http://www.jquerymobile.com |
+| jQTouch | http://www.jqtouch.com |
+
+### 描述
+
+- 上表列出了一些最实用的插件。但如果你需要其他用途的插件，请搜索它。你可能会找到它。
+- 在本书的第 3 节中，你将学习如何使用 jQuery UI，在第 5 节中，你将学习如何使用 jQuery Mobile。
+
+![](img/fb3dabc43193711c2307f942481ad30c_332_0.png)
+
+## 如何使用任何插件
+
+图 11-3 显示了在你找到所需的插件后如何使用它。
+
+首先，如果你还没有这样做，请先学习该插件的文档，以了解它所需的 HTML 和 CSS，以及它提供了哪些方法和选项。通常，你会在评估插件时执行此操作，查看它是否符合你的需求，以及它的文档是否告诉了你需要的所有信息。
+
+其次，下载插件的文件并将其保存到你的 Web 服务器上。这种下载通常以 zip 文件的形式存在，并且始终包含至少一个 JavaScript 文件。此外，你可能还会包含插件使用的 CSS 或图像文件。
+
+下载可能还包含两个版本的主 JavaScript 文件。如果你想查看该文件的代码，可以在文本编辑器中打开完整文件。但在应用程序中，你应该使用压缩版本，其文件名以 `min.js` 结尾。
+
+对于插件，这些文件也可以从内容分发网络 (CDN) 获取。如果你想访问这些文件，可以为文件编写 URL。然后，你可以在文件的 `link` 和 `script` 元素中使用这些 URL。
+
+第三，如果你需要一个或多个 CSS 文件，在 HTML 的 `head` 元素中编写 `link` 元素。然后，为插件的 JavaScript 文件编写 `script` 元素。通常只需要一个 JavaScript 文件，但某些插件需要多个。此时，你已准备好使用该插件。
+
+第四，为页面编写 HTML 和 CSS，使其适用于该插件。第五，编写使用该插件的 JavaScript。这可以在外部文件中，也可以在 HTML 的 `head` 元素中。
+
+图中的示例说明了这一过程，该示例使用了 bxSlider 插件。在这里，`script` 元素显示插件的元素必须在 jQuery 库之后。这是因为所有插件都使用 jQuery 库。正如图中第一个警告所示，不按此顺序编写这些 `script` 元素是一个常见错误。
+
+插件所需的元素之后的 HTML 将无序列表的 `id` 设置为 "slider"，以便当你选择该元素时，可以调用插件的 `bxSlider` 方法。
+
+随后是 jQuery 代码，你选择该元素并调用插件的 `bxSlider` 方法。
+
+这是该代码，它显示了 `displaySlideQty` 和 `moveSlideQty` 选项。
+
+### 使用插件的通用步骤
+
+1. 学习插件的文档，以了解它所需的 HTML 和 CSS，以及它提供了哪些方法和选项。
+2. 如果插件文件通过内容分发网络 (CDN) 获取，并且你想访问这些文件，可以为这些文件编写 URL。否则，下载插件的文件并将其保存到你的 Web 服务器上。
+3. 如果你需要一个或多个 CSS 文件，在 HTML 的 `head` 元素中编写 `link` 元素。然后，为插件的 JavaScript 文件编写 `script` 元素。通常只需要一个 JavaScript 文件，但某些插件需要多个。此时，你已准备好使用该插件。
+4. 为页面编写 HTML 和 CSS，使其适用于该插件。
+5. 编写使用该插件的 JavaScript。这可以在外部文件中，也可以在 HTML 的 `head` 元素中。
+
+```html
+<link rel="stylesheet" type="text/css" href="css/bxSlider.css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/bxSlider.min.js"></script>
+<ul id="slider">
+  <li><a href="images/building01.jpg"><img src="images/building01.jpg" /></a></li>
+  <li><a href="images/building02.jpg"><img src="images/building02.jpg" /></a></li>
+  <li><a href="images/building03.jpg"><img src="images/building03.jpg" /></a></li>
+  <li><a href="images/building04.jpg"><img src="images/building04.jpg" /></a></li>
+  <li><a href="images/building05.jpg"><img src="images/building05.jpg" /></a></li>
+</ul>
+<script>
+$(document).ready(function() {
+  $("#slider").bxSlider({
+    displaySlideQty: 2,
+    moveSlideQty: 2
+  });
+});
+</script>
+```
+
+## 如何使用四个最实用的插件
+
+### 如何使用 Lightbox 插件处理图片
+
+图 11-4 展示了 Lightbox 插件。这是一个流行的插件，当用户点击缩略图时，它会显示图片的放大版本。图像显示在模态对话框中，这意味着在用户继续之前必须关闭它。框中的图像有加粗的白色边框，下方可能会有一个说明。框之外的网页页面部分会变暗。用户点击右下角的“X”来关闭对话框。
+
+如果图片被分组成一组，此插件不会显示缩略图的对话框，而是在图片下方显示图片编号和总图片数，例如“图片 3 之 5”。这通过图中的示例进行了说明。此外，当鼠标悬停在图片的左侧或右侧时，会显示上一个和下一个按钮。然后，如果用户点击按钮（或图片的左侧或右侧），显示将移动到上一个或下一个图片。
+
+#### 一个使用 Lightbox 插件的网页
+
+![](img/fb3dabc43193711c2307f942481ad30c_336_0.png)
+
+#### 该插件的 URL
+
+http://lokeshdhakar.com/projects/lightbox2/
+
+#### Lightbox 插件的 link 和 script 元素
+
+```html
+<!-- CSS 文件的 link 元素 -->
+<link href="lightbox.css" rel="stylesheet">
+<!-- 插件的 script 元素 -->
+<script src="js/lightbox.js"></script>
+```
+
+#### Lightbox 插件的 HTML
+
+```html
+<a href="images/building_01.jpg" rel="lightbox[vecta]">
+<title>建筑的正面</title>
+<img src="images/building_01_thumb.jpg"></a>
+<a href="images/building_02.jpg" rel="lightbox[vecta]">
+<title>建筑的左侧</title>
+<img src="images/building_02_thumb.jpg"></a>
+<!-- <a> 元素内包含更多 <img> 元素 ----> 
+```
+
+### 描述
+
+- Lightbox 插件可用于打开缩略图的大尺寸版本。该插件适用于单张图片或一组图片。
+- 当用户点击一组图片中的某一张时，将显示大尺寸版本，同时页面其余部分变暗并在图片下方显示说明。此外，当鼠标指针悬停在大图上时，下一张和上一张按钮会被激活。
+- Lightbox 下载包含一个 CSS 文件、一个插件文件、一张在幻灯片加载时显示的图片，以及下一张和上一张按钮的图片。然而，此插件不需要任何 jquery 代码。
+- Lightbox 的 HTML 如上所示，由 `<a>` 元素内的 `<img>` 元素组成。`<a>` 元素的 `src` 属性标识缩略图。`<a>` 元素的 `href` 属性标识大图。每个 `<a>` 元素的 `title` 属性可以提供显示在图片下方的说明。
+- 如果你想在 `lightbox` 单词后的括号中指定唯一的名称，可以使用 `<a>` 元素的 `rel` 属性来定义一组元素。
+
+### 如何使用 bxSlider 插件制作轮播图
+
+图 11-5 展示了用于创建轮播图的 bxSlider 插件。在示例中，该插件一次显示两张图片，用户可以通过点击图片左右的按钮移动到下一张或上一张图片。然而，你可以通过设置选项来更改此插件工作方式许多方面。你还可以配合 bxSlider 插件使用 Lightbox，这样当用户点击轮播图中的任何图片时，就会显示大尺寸图片。
+
+如果你下载了该插件的 JavaScript 文件，可以如图所示通过 `script` 元素引用它。作为下载的一部分，你还将获得一组可用于此插件的图片。访问 JavaScript 的另一种方法是从 bxslider.com 网站获取，并使用如下 `script` 元素：
+
+```html
+<script src="http://bxslider.com/sites/default/files/jquery.bxSlider.min.js"></script>
+```
+
+图中展示了设置该插件 HTML 的一种方法。在这里，无序列表 `<li>` 内的 `<img>` 元素的 `src` 属性标识了要显示的图片。然而，你可以在 `<li>` 元素内编写任何你想要的元素。这种设置的另一种方法是在顶层 `<div>` 中编写 `<div>` 元素。
+
+要使用默认选项运行轮播图，你需要在 jQuery 应用程序的 ready 函数内编写这段 jQuery 语句：
+
+```javascript
+$('#slider').bxSlider();
+```
+
+在某种程度上，你编写了一组包含键/值对的括号，如图中的示例所示。在这里，一次显示的幻灯片数量被设置为 2，且当点击下一张或上一张按钮时移动的幻灯片数量也设置为 2。
+
+默认情况下，bxSlider 插件将在轮播图的左下角显示下一张和上一张链接。你可以通过设置 `nextImage` 和 `previousImage` 使它们指向你想要使用的图片，从而将文本链接更改为按钮。默认，此插件提供了许多其他影响其工作方式的选项。为了更好地理解这一点，你可以查阅插件网站上的示例。然后，你可以查阅选项的文档以查看可用功能。
+
+要更改下一张和上一张链接或图片的位置，你还需要使用 `bx.next` 和 `bx.prev` 类编写一些 CSS。不过，你不会在 HTML 中找到这些类，它们是由插件添加到 DOM 中的。你也可以使用这些类将默认链接更改为图片，这正是示例中应用程序的工作方式。要查看你使用的 CSS，可以检查下载应用程序的 CSS 文件。
+
+虽然这不是必须的且在此处未实现，但一种良好的做法是为 `<img>` 元素编写 `width` 和 `height` 属性，并将它们设置为图片的精确尺寸。这样，浏览器可以在图片加载时预留空间并继续渲染页面。
+
+#### 一个使用 bxSlider 插件制作轮播图的网页
+
+![](img/fb3dabc43193711c2307f942481ad30c_338_0.png)
+
+#### 该插件的 URL
+
+http://bxslider.com
+
+#### 该插件的 script 元素
+
+```html
+<script src="js/bxSlider.min.js"></script>
+```
+
+#### bxSlider 插件的 HTML
+
+```html
+<ul id="slider">
+  <li><img src="images/building_01_thumb.jpg"></li>
+  <li><img src="images/building_02_thumb.jpg"></li>
+  <li><img src="images/building_03_thumb.jpg"></li>
+  <li><img src="images/building_04_thumb.jpg"></li>
+  <li><img src="images/building_05_thumb.jpg"></li>
+</ul>
+```
+
+```javascript
+$(document).ready(function() {
+  $('#slider').bxSlider({
+    displaySlideQty: 2,
+    moveSlideQty: 2
+  });
+});
+```
+
+### 描述
+
+- bxSlider 插件可轻松制作轮播图。
+- 轮播图的 HTML 可以是包含项的无序列表，也可以是顶层 `<div>`。
+- bxSlider 插件提供了许多选项，其中用的是 `displaySlideQty` 和 `moveSlideQty`。前者决定一次显示多少幻灯片，后者决定一次移动多少个幻灯片。
+- 默认情况下，bxSlider 插件将在轮播图的左下角显示下一张和上一张链接。你可以通过设置 `nextImage` 和 `previousImage` 使它们指向你想要使用的图片，从而将文本链接更改为按钮。
+- 要更改下一张和上一张链接或图片的位置，你还需要使用 `bx.next` 和 `bx.prev` 类编写一些 CSS。不过，你不会在 HTML 中找到这些类，它们是由插件添加到 DOM 中的。
+- 虽然这不是必须的且在此处未实现，但一种良好的做法是为 `<img>` 元素编写 `width` 和 `height` 属性，并将它们设置为图片的精确尺寸。这样，浏览器可以在图片加载时预留空间并继续渲染页面。
+
+### 如何使用 Cycle 插件制作幻灯片
+
+图 11-6 展示了用于制作幻灯片的 Cycle 插件。该插件有两个版本：完整版和轻量版。这些选项相似，但轻量版提供的选项较少且占用空间较小。例如，轻量版仅提供淡入效果作为过渡。相比之下，完整版提供了 27 种可用于过渡的效果。
+
+此插件的 HTML 与所选 `<div>` 元素的子元素配合。这些子元素是 `<img>` 元素或 `<div>` 元素。当你使用 `<div>` 元素时，你可以在其内部编写任何你想要的内容，包括标题、文本和图片。
+
+使用此插件的 jQuery 调用 `cycle` 方法并提供一组选项。
+
+```javascript
+$('#slider').cycle({
+  fx: 'fade',
+  speed: 500,
+  pause: true
+});
+```
+
+#### 使用 Cycle 插件制作幻灯片的网页
+
+2012年6月6日，Vectra Corp 公司搬入了他们全新的 4 层楼、面积 35,000 平英尺的设施。下面是新设施的几张照片。
+
+![](img/fb3dabc43193711c2307f942481ad30c_340_0.png)
+
+#### 该插件的 URL
+
+http://jquery.malsup.com/cycle/
+
+#### Cycle 插件的 script 元素
+
+```html
+<script src="js/jquery.cycle.all.js"></script>
+```
+
+#### Cycle 插件的 HTML
+
+```html
+<div id="slideshow">
+  <img src="images/building_01.jpg" width="420" height="315">
+  <img src="images/building_02.jpg" width="420" height="315">
+  <img src="images/building_03.jpg" width="420" height="315">
+</div>
+```
+
+#### 使用该插件的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#slideshow").cycle({
+    fx: 'fade',
+    speed: 500,
+    pause: true
+  });
+});
+```
+
+
+
+# Cycle 插件
+
+- Cycle 插件让开发幻灯片变得简单。它将 `div` 的子元素视为元素。这些子元素通常是 `img` 元素或 `div` 元素。
+- 该插件提供两个版本：完整版和快速版。快速版类似于完整版，但提供的选项较少。
+- 该插件的完整版提供了许多不同的选项，包括 27 种可用于图像切换的不同效果。
+- 如果你学习一下该插件的一些演示，你将更好地理解如何使用它的选项。
+
+图 11-6 如何使用 Cycle 插件制作幻灯片
+
+# 如何使用 jLayout 插件实现双列布局
+
+图 11-7 向你展示了如何在不使用 CSS 的情况下使用 jLayout 插件创建双列布局。这是该复杂插件的一个用法，因为它具有许多页面布局选项。事实上，这个插件可以用于布局整个页面，包括页眉和页脚。即使是对于这种简单的双列用法，下载包包含的六个 JavaScript 文件中也有三个需要使用 `script` 元素。
+
+这是用于创建双列 `div` 元素的 HTML，每一列一个。这些列的 `class` 属性必须为 "column1" 和 "column2"。
+
+然后，该插件的 jQuery 代码选择顶层 `div` 元素并调用 `layout`。它还会将布局选项传递给此插件。例如，`type` 选项设置为 "grid"，`hgap` 选项将列之间的间隙设置为 27 像素，`items` 选项设置两个列的宽度。在这种情况下，两列的宽度是相同的，但它们不必如此。
+
+当然，你可以通过 CSS 获得相同的结果。但使用此插件简化了 CSS，这对于不擅长 CSS 的开发者来说特别有帮助。
+
+如果你学习该插件的示例和文档，你会发现你可以使用它来实现许多不同类型的布局。然而，要弄清楚如何用它实现其他布局并不容易。因此，在某个时刻，使用 CSS 进行格式化比使用此插件要容易。这是你在评估是否使用插件时经常需要考虑的权衡类型。
+
+# 使用 jLayout 插件创建双列的网页
+
+| 解决方案 | 客户证言 |
+|---|---|
+| **vProspect 2.0** 定义并研究你的策略以匹配受众，并向该受众展示令人记忆的品牌 | 多年来，我们与 Vectra Corporation 合作，一直对他们为我们以及我们的 WDG 产品提供的奉精神和专业水平留下了深刻印象。这种承诺指数级地增加了我们的收入和资源效率 |
+| **vConvert 2.0** 创建一个高度易用且易于导航的架构，该架构将与你的公司进行高度交互 | Aaron Dines, ADT Tire and Rubber, Inc. 创始人兼首席执行官 |
+
+# 插件的 URL
+
+`http://www.brastein.com/projects/jlayout/jquery-plugin.html`
+
+# jLayout 插件的 script 元素
+
+```html
+<script src="js/jquery.js"></script>
+<script src="jlayout/grid.js"></script>
+<script src="js/jlayout.js"></script>
+```
+
+# jLayout 插件的 HTML
+
+```html
+<div id="layout">
+  <div class="column1">
+    <!-- 第一列的内容在这里 -->
+  </div>
+  <div class="column2">
+    <!-- 第二列的内容在这里 -->
+  </div>
+</div>
+```
+
+# 使用该插件的 jQuery
+
+```javascript
+$(function() {
+  $("#layout").layout({
+    type: "grid",
+    hgap: 27,
+    items: [$(".column1").width(210), $(".column2").width(210)]
+  });
+});
+```
+
+# jLayout 插件总结
+
+- jLayout 插件让你能够轻松使用上所示的 CSS 开发双列布局。它还提供了许多其他层。
+- 双列布局的 HTML 包含一个顶层 `div` 元素，其中包含两个 `div` 元素：每列一个。这些列的 `class` 属性必须为 "column1" 和 "column2"。对于双列布局，`grid` 选项决定类型，`hgap` 选项指定列与列之间的像素，`items` 选项指定列的宽度。
+
+图 11-7 如何使用 jLayout 插件实现双列布局
+
+## 如何创建你自己的插件
+
+jQuery 的功能之一是它提供了一个 API（应用程序接口），让你创建自己的插件。由于有时这样做是有意义的，本主题将向你展示如何操作。开始开发插件之前，你应该问自己几个问题。首先，你是否彻底搜索过实现你想要操作的插件？其次，你计划创建的插件是否将用于许多网页？第三，你是否确定你的插件会提高有效性和可用性？如果你能对这些问题回答“是”，那么创建它可能是有意义的。
+
+### 插件的结构
+
+图 11-8 中的前两个示例展示了结构化插件两种方法。在两个示例中，插件函数都被封装在一个立即调用函数表达式 (IIFE) 中：
+
+```javascript
+(function($) {
+  // 插件放在这里
+})(jQuery);
+```
+
+IIFE 接收 jQuery 库作为参数。这样，库的作用范围被限制在插件内部，你可以像在前面的章节中学到的那样在其他应用程序中使用 `$`。如果插件不是这样编写的，可能会与其他使用 `$` 的库和插件产生冲突。
+
+在 IIFE 内部，不同插件之间唯一的代码是方法名和实现插件的代码。在插件函数中，每个方法都会被应用于插件的对象，该对象通过 `this` 关键字引用。然后，如果对象包含多个元素，插件函数将应用于每个元素。
+
+在第一个示例的插件函数末尾，`return` 语句返回对象，再次使用了 `this` 关键字。这意味着返回值可以与其他方法进行链式调用。在第二个示例中，`return` 语句位于该方法之前。这与第一个示例的结果相同，这也是专业人士通常编写这种结构的方式。
+
+两个结构之后的示例展示了一个简单的插件。在这里，每个方法包含一个 `alert` 方法，使用文本显示对象。如果该对象只包含一个元素，该方法将显示一个 alert 框。如果对象包含多个元素，该方法将为每个元素显示一个 alert 框。
+
+由于此插件存储在名为 `jquery.selection.js` 的文件中，此插件的元素在其 `src` 属性中使用该名称。然后，使用该插件的 jQuery 创建一个选择并调用插件的 `displaySelection` 方法对选择进行操作。在这个示例中，选择是 id 为 “faqs” 的元素中的所有 `h2` 元素。结果是每个 `h2` 元素都会显示一个 alert 框。
+
+#### 编写这种结构的一种方式
+
+```javascript
+(function($) {
+  $.fn.methodName = function() {
+    this.each(function() {
+      // 插件的代码
+    });
+    return this;
+  };
+})(jQuery);
+```
+
+#### 专业人士编写这种结构最常用的方式
+
+```javascript
+(function($) {
+  $.fn.methodName = function() {
+    return this.each(function() {
+      // 插件的代码
+    });
+  };
+})(jQuery);
+```
+
+### 一个使用此结构的简单 Selection 插件
+
+在命名为 `selection.js` 的文件中编写插件的 jQuery 代码。
+
+```javascript
+(function($) {
+  $.fn.displaySelection = function() {
+    return this.each(function() {
+      alert("The text for the selection is '" + $(this).text() + "'");
+    });
+  };
+})(jQuery);
+```
+
+#### 该插件的 script 标签
+
+```html
+<script src="jquery.selection.js"></script>
+```
+
+#### 使用此插件的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#faqs h2").displaySelection();
+});
+```
+
+#### 插件文件的命名规范
+
+`jquery.pluginName.js`
+
+#### 插件的 API 标准
+
+- 插件应该支持隐式迭代。
+- 插件应该通过返回选中的对象来保留链式调用。
+- 插件定义应该以分号结束。
+- 插件选项应该提供合理的默认值。
+- 插件应该有良好的文档说明。
+
+#### 描述
+
+- 对于许多插件，大部分代码将位于 `each()` 方法的函数中。
+- 当插件完成时，应该将此对象返回给调用应用程序。
+
+图 11-8 插件的结构
+
+图 11-8 还显示了插件文件的命名规范以及插件的 API 标准。为了支持“隐式迭代”，你在插件函数内部使用了 `each` 方法。为了保留链式调用，你返回该对象。除此，你还应该确保所有方法定义都以分号结束；如果你的插件提供了选项，则你应该提供合理的默认值。最重要的是，如果你的插件要供他人使用，应该有良好的文档说明。
+
+### 如何编写一个高亮菜单项的插件
+
+现在你已经知道了插件的结构，图 11-9 显示了如何创建一个插件，该插件为由 `<li>` 元素无序列表组成的菜单项设置 CSS 样式。该插件在鼠标进入项时也会高亮该项，并在鼠标离开该项时将其恢复为原始样式。
+
+此插件的代码使用了前一个图中的第二种结构。在每个方法内部，第一条语句选择了应用于插件的元素中 `<li>` 元素内部的 `<a>` 元素。它将这些元素存储在名为 `items` 的变量中。
+
+然后，插件使用 `jQuery css` 方法为 `items` 变量中的项（即菜单中的 `<a>` 元素）应用六种样式。注意这里，`css` 方法是链式调用的，返回它应用的对象。
+
+接下来，插件为 `items` 变量中 `<a>` 元素的 `mouseover`（鼠标悬停）和 `mouseout`（鼠标离开）事件提供了函数。`mouseover` 事件函数更改项的背景颜色和颜色。`mouseout` 事件函数将项的背景颜色和颜色恢复为原始颜色。
+
+由于插件存储在名为 `jquery.highlight.js` 的文件中，因此插件的 script 标签反映了这一点。然后，激活插件的 jQuery 通过其 id 选择无序列表，并调用插件的 `highlightMenu` 方法。
+
+## 被 highlightMenu 高亮的菜单
+
+![](img/fb3dabc43193711c2307f942481ad30c_346_0.png)
+
+## 插件高亮菜单的 HTML
+
+```html
+<ul id="vecta_menu">
+  <li><a href="index.html">首页 Home</a></li>
+  <li><a href="aboutus.html">关于我们 About Us</a></li>
+  <!-- 其余链接 -->
+</ul>
+```
+
+## 在命名为 highlight.js 的文件中 highlightMenu 插件
+
+```javascript
+(function($) {
+  $.fn.highlightMenu = function() {
+    return $(this).each(function() {
+      var items = $('li a');
+      items.css("font-family", "arial, helvetica, sans-serif")
+           .css("font-weight", "bold")
+           .css("text-decoration", "none")
+           .css("background-color", "#dfe3e6")
+           .css("color", "#c1c0d")
+           .css("width", "125px");
+      items.mouseover(function() {
+        $(this).css("background-color", "#000")
+               .css("color", "#fff");
+      });
+      items.mouseout(function() {
+        $(this).css("background-color", "#dfe3e6")
+               .css("color", "#c1c0d");
+      });
+    });
+  };
+})(jQuery);
+```
+
+## 插件的 script 标签
+
+```html
+<script src="jquery.highlight.js"></script>
+```
+
+## 使用 highlightMenu 插件的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#vecta_menu").highlightMenu();
+});
+```
+
+## 描述
+
+- highlightMenu 插件中的代码为选定列表的链接设置了 CSS 样式。它还为 `mouseover` 和 `mouseout` 事件更改了两种样式。
+
+图 11-9 为高亮菜单项的插件
+
+### 如何为插件添加选项
+
+为了让插件更有用，你通常为它提供选项。
+
+为了开始，你在函数中编写一个接收选项的参数。
+
+为了这样做，你可以使用图 11-10 所示的技巧。
+
+正如 API 标准所示，插件应该提供默认值，这样用户就不需要设置。要这样做，你可以使用 `extend` 方法设置默认值，如下所示。
+
+`extend` 方法的第一个参数是由键值对组成的对象，而第二个参数是用户设置的选项。
+
+## 带有选项的 highlightMenu 插件
+
+```javascript
+(function($) {
+  $.fn.highlightMenu = function(options) {
+    var defaults = $.extend({
+      "bgColor": "#000000",
+      "color": "#ffffff",
+      "hoverBg": "#cccccc",
+      "hoverColor": "#000000",
+      "linkWidth": "123px",
+    }, options);
+    return $(this).each(function() {
+      var items = $('li a');
+      var o = defaults;
+      items.css("font-family", "arial, helvetica, sans-serif")
+           .css("font-weight", "bold")
+           .css("text-decoration", "none")
+           .css("background-color", o.bgColor)
+           .css("color", o.color)
+           .css("width", o.linkWidth);
+      items.mouseover(function() {
+        $(this).css("background-color", o.hoverBg)
+               .css("color", o.hoverColor);
+      });
+      items.mouseout(function() {
+        $(this).css("background-color", o.bgColor)
+               .css("color", o.color);
+      });
+    });
+  };
+})(jQuery);
+```
+
+## 使用 highlightMenu 插件并设置其两个选项的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#highlight-menu").highlightMenu({
+    bgColor: "#dfe3e6",
+    color: "#ccc0cd",
+  });
+});
+```
+
+## 使用两个插件的网页
+
+本章最后通过展示一个使用两个插件的页面代码来结束。它说明了如何在单个页面上使用两个或多个插件。
+
+### 用户界面
+
+图 11-11 展示了该网页的用户界面。在这里，页面标题下方显示了一个幻灯片。它使用 Cycle 插件来循环显示三个产品的图像。然而，当用户将鼠标悬停在图像上时，该幻灯片会暂停。
+
+然后，在页面的左侧列，使用了 highlightMenu 插件来突出显示菜单中的项。这就是在前一个图中所示的自定义插件。
+
+### 脚本元素
+
+该图还显示了此应用程序所需的脚本元素。第一个是核心 jQuery 库的。第二个是 Cycle 插件的。第三个是 highlight 插件的。
+
+在这种情况下，两个插件的脚本元素必须位于 jQuery 库的脚本元素之后。不过，插件脚本元素的先后顺序并不紧要。
+
+# 页面布局
+
+![](img/fb3dabc43193711c2307f942481ad30c_350_0.png)
+
+## HTML 头部区域中的脚本元素
+
+```html
+<!-- 最新 jQuery 库的脚本元素 -->
+<script src="code.jquery.com/jquery-latest.min.js"></script>
+```
+
+```html
+<!-- Cycle 插件的脚本元素 -->
+<script src="js/jquery.cycle.all.js"></script>
+```
+
+```html
+<!-- 自定义 highlightMenu 插件的脚本元素 -->
+<script src="js/jquery.highlight.js"></script>
+```
+
+## 描述
+
+- 此网页使用了两个插件。
+- Cycle 循环显示三个 Vecta Corp 产品的图像。
+- 图 11-10 中的 highlightMenu 插件用于格式化菜单并突出显示任何鼠标悬停的菜单项。
+- 插件的脚本元素必须位于核心 jQuery 库的脚本元素之后，但哪个先哪个后没有关系。
+
+图 11-11 Vecta Corp 页面的用户界面和脚本元素
+
+© 2012, Mike Murach and Associates, Inc. 授权给 Michael Hotham。
+
+### 插件所用元素的 HTML
+
+图 11-12 展示了网页中使用插件部分的 HTML。这从一个包含幻灯片三张图像的 `div` 元素开始。随后是用于被 highlight 插件突出显示的菜单无序列表。
+
+## 使用插件的 jQuery
+
+该图还显示了使用插件的 jQuery。注意，两个插件都是从 `ready` 事件的事件处理程序中调用的。因此，一旦页面准备就绪，它们就会开始。
+
+由于你已经知道如何使用这些插件，你理解调用它们的代码不应该有任何困难。与你已经见过的唯一区别是，某些选项的设置不同。
+
+## Cycle 和 highlightMenu 插件的 HTML
+
+```html
+<section>
+  <!-- Cycle 插件使用的幻灯片 -->
+  <div id="slideshow">
+    <img src="images/rotator01.jpg" width="697" height="240" alt="Vpropect 2.0">
+    <img src="images/rotator02.jpg" width="697" height="240" alt="Vcert 2.0">
+    <img src="images/rotator03.jpg" width="697" height="240" alt="Retain 1.0">
+  </div>
+</section>
+<nav>
+  <!-- 自定义 highlightMenu 插件使用的菜单 -->
+  <ul id="vecta_menu">
+    <li><a href="index.html">首页</a></li>
+    <li><a href="about.html">关于</a></li>
+    <li><a href="solutions.html">解决方案</a></li>
+    <li><a href="support.html">支持</a></li>
+    <li><a href="contact.html">联系我们</a></li>
+  </ul>
+</nav>
+<!-- 剩余的 html -->
+```
+
+## 使用 Cycle 和 highlightMenu 插件的 jQuery
+
+```javascript
+$(document).ready(function() {
+  // 设置 Cycle 插件
+  $("#slideshow").cycle({
+    fx: "fade",
+    speed: 1000,
+    pause: 1
+  });
+  // 设置 highlightMenu 插件
+  $("#vecta_menu").highlightMenu({
+    backgroundColor: "#dfe3e6",
+    color: "#cc1c0d",
+    hoverBg: "#cc1c0d",
+    hoverColor: "#fff",
+    linkWidth: "125px"
+  });
+});
+```
+
+图 11-12 Vecta Corp 页面所用插件的 HTML 和 jQuery
+
+## 观点
+
+现在你已经完成了本章，你应该能够找到并使用用于网页开发功能的插件。这本身就可以提高你开发网页时的生产力，而且插件功能通常会比你自己编写的功能运行得更好。如果你需要创建自己的插件，你也应该能够做到。但是，只有当插件确实需要且尚未可用时，你才应该开发自己的插件。
+
+## 术语
+
+- 插件 (plugin)
+- API (应用程序接口)
+- IIFE (立即调用函数表达式)
+
+## 总结
+
+- 如果你需要某个网页功能的插件，可能已经有现成的了。使用插件可以节省大量工作，并且通常比你自己做得更好。
+- 寻找插件最好的方法是进行 Google 搜索。不过，你也可以去代码仓库中查找插件。
+- 某些插件可以通过内容分发网络 (CDN) 访问，但另一些需要下载并保存到你的服务器。某些插件的下载只包含单个 JavaScript 文件，但另一些还包含 CSS 和图像文件。
+- 要访问插件，需要在 HTML 文档的 `head` 元素中编写脚本元素。该脚本元素必须位于...之后，因为...
+
+[第 354 页]
+
+# 练习 11-1 测试 Cycle 插件
+
+在本次练习中，你将对图 11-6 中的 Cycle 幻灯片进行实验。这将让你更好地了解如何使用插件。
+
+## 查看应用程序
+
+1. 使用文本编辑器打开 `c:\exercises\cycle` 文件夹中的 HTML 文件
+2. 注意使用 Cycle 的 jQuery 在脚本元素。然后运行应用程序查看其工作原理。
+
+## 测试效果
+
+3. 进入 Cycle 插件的网站，地址为 `http://jquery.plugin.com/cycle/`。查看首页上的演示。然后，让你的幻灯片尝试 shuffle 和 curtain 效果。
+4. 点击列出的任何效果查看该效果是如何工作的。
+
+## 测试选项
+
+5. 回到页面并点击“高级演示（第二部分）”链接以更好地了解如何使用选项。然后，点击返回按钮并点击“选项参考”链接以获取更多信息。
+6. 如果感兴趣，尝试使用这些选项中的一个或多个。
+
+## 查看下载
+
+7. 回到 Cycle 插件网站的首页，点击页面左上角的“下载 Cycle 插件”链接。这将进入一个提供 Cycle 插件和 Cycle Lite 插件链接的页面。
+8. 点击 Cycle Lite 插件链接，注意该插件的 JavaScript 在浏览器的新标签页或窗口中打开。
+9. 将 Cycle Lite 代码下载到你的系统。为了做到，在 Cycle 应用程序的 `js` 文件夹中创建一个名为 `jquery.cyclelite.js` 的新 JavaScript 文件。然后，在浏览器中选择所有的 Cycle Lite 代码，复制到剪贴板并粘贴到新文件中。
+10. 使用文本编辑器打开 Cycle Lite 文件，注意该插件具有图 11-8 所示的标准插件结构。
+
+# 练习 11-2 实验 Selection 插件
+
+本练习将让你尝试图 11-8 中的 Selection 插件，并演示标准的插件结构有助于链式调用。
+
+1. 使用你的文本编辑器打开文件夹中的 HTML 文件和两个 JavaScript 文件：`jquery\exercises\ch11\selection\`
+2. 插件位于名为 `jquery.selection.js` 的文件中，而使用该插件的 jQuery 代码位于名为 `faq.js` 文件中 ready 事件处理程序的第一条语句。注意，该语句在调用插件方法之前选取了 "faqs" 元素中的所有 `h2` 元素。如果你查看此应用程序的 HTML，可以看到它包含了三个 `h2` 元素。
+3. 运行应用程序，查看三个 `h2` 元素的文本是否显示在警告对话框中。然后，将选择器更改为所有 `h1` 元素并运行应用程序，查看一个 `h1` 元素的文本显示。
+4. 为了证明标准的插件结构有助于链式调用，请将 `css` 方法更改为调用 `faq.js` 文件中的插件方法：`css("color", "red")` 然后测试在警告框显示后，`h1` 元素的颜色是否变为了红色。
+
+# 练习 11-3 创建一个 Reveal 插件
+
+在本练习中，你将创建一个名为 Reveal 的简单插件。该插件将为选中的元素设置点击处理程序。交替点击选中的元素将先显示并隐藏下一个相邻元素。
+
+1. 使用你的文本编辑器打开此文件夹中的文件：`jquery\exercises\ch11\reveal1\`
+2. 在 `jquery.reveal.js` 中，你可以看到带有 `reveal` 方法名的标准插件结构。在 `faq.js` 中，你可以看到用于 FAQS 应用程序的 jQuery。Reveal 插件应该实现与代码相同的功能。将 `toggle` 方法的代码复制到 reveal 文件的方法中。
+3. 修改 reveal 文件中的代码，使其无论该方法选取了什么元素，都能显示和隐藏其下一个相邻元素。然后，在 HTML 文件中，在最后一个 `script` 元素添加语句，为 "faqs" 部分的 `h2` 元素调用 `reveal` 方法。由于此 HTML 文件已经包含了一个用于 Reveal 的 `script` 元素，你现在可以测试此应用程序。它应该显示和隐藏 FAQS 应用程序的答案。
+4. 注意，此插件可以用于任何此类工作的应用程序。用户只需要更改所使用的选择器。现在，为了让此插件更有用，在循环开始添加一条语句来隐藏选取元素的下一个相邻元素。删除 CSS 文件中划分元素的规则，并测试此更改。
+
+# 第 3 部分：jQuery UI 基础
+
+jQuery UI（用户界面）是一个免费、开源的 JavaScript 库，它通过提供主题、组件、交互和效果扩展了 jQuery 库。在本部分的第 12 章中，你将通过学习使用手风琴、标签和滑块等组件来增强你的网页，从而快速上手 jQuery UI。随后在第 13 章中，你将学习如何使用 jQuery UI 的交互和效果。
+
+本节所展示的信息基于 jQuery UI 1.8.23 版本。不过，在本书出版时，jQuery UI 发布了 1.9.0 版本。这个新版本包含了三个新组件，并对 jQuery UI 的某些现有组件进行了更改。虽然这里没有介绍新组件，但在阅读完第 12 章后，学习如何使用它们应该不会有困难。而且，尽管本节显示的应用程序是针对 jQuery UI 1.8.23 版本编写的，但它们将继续与 1.9.0 版本兼容。
+
+UI 网站已针对 1.9.0 版本进行了修改，我们将在第 12 章中展示如何使用更新后的网站。这样，你就能毫无问题地构建 jQuery UI 下载并使用 jQuery UI 文档。但请记住，jQuery UI 和 jQuery UI 网站更新频繁。因此，如果你在网站上看到的内容与此处显示的不符，请不要惊讶。
+
+# 第 12 章 使用 jQuery UI 主题和组件快速上手
+
+在本章中，你将通过学习使用它的主题和组件来快速上手 jQuery UI。正如你所看到的，组件可以以最少的开发时间为你的网页添加有用功能。这就是为什么许多网站使用它们的原因。事实上，组件可能是你只想在网页中使用的唯一 jQuery UI 组件。
+
+## 章节目录
+
+| 描述 | 页码 |
+| :--- | :--- |
+| jQuery UI 简介 | 344 |
+| 什么是 jQuery UI 以及从何处获取 | 344 |
+| jQuery UI 组件 | 346 |
+| 如何构建和使用 jQuery UI 下载 | 348 |
+| 如何构建下载 | 348 |
+| 如何使用 ThemeRoller 构建自定义主题 | 350 |
+| 如何使用下载的文件夹和文件 | 352 |
+| 如何使用 jQuery UI 组件 | 354 |
+| 如何使用任何组件 | 356 |
+| 如何使用手风琴组件 | 358 |
+| 如何使用标签组件 | 358 |
+| 如何使用按钮和对话框组件 | 360 |
+| 如何使用自动完成组件 | 362 |
+| 如何使用日期选择器组件 | 364 |
+| 如何使用滑块组件 | 366 |
+| 如何使用进度条组件 | 368 |
+| 使用 jQuery UI 的网页 | 370 |
+| 用户界面 | 370 |
+| 链接和脚本元素 | 370 |
+| 组件的 HTML | 372 |
+| 用于组件的 jQuery | 374 |
+| 视角 | 376 |
+
+## jQuery UI 简介
+
+在开始学习 jQuery UI 之前，你将首先了解它是什么、从哪里获取以及它包含了什么。
+
+### 什么是 jQuery UI 以及从何处获取
+
+jQuery UI（用户界面）是一个免费、开源的 JavaScript 库，它通过提供可以用少量代码实现的高级功能来扩展 jQuery 库的使用。为了提供这些功能，jQuery UI 库使用了 jQuery 库。事实上，你可以将 jQuery UI 视为 jQuery 的官方插件库。
+
+图 12-1 显示了 jQuery UI 网站的主页和 URL。你也可以通过点击 jQuery 主页顶部的 UI 链接进入该网站。通过点击 jQuery UI 标签左侧的 jQuery 标签，你可以返回 jQuery 主页。
+
+此图还总结了 jQuery UI 提供的四类功能。主题为组件提供格式，它们是由 jQuery UI 下载中的 CSS 样式表实现的。当你按照本章后文的方法构建此下载时，可以选择 jQuery UI 提供的 24 个预定义主题之一。如果这 24 个中没有适合你的，你也可以创建一个自定义主题。
+
+组件是手风琴、标签和日期选择器等功能。在本章中，你将学习如何使用目前 jQuery UI 提供的许多组件。在下一章中，你将学习如何使用交互和效果。
+
+# jQuery UI 网站
+
+![](img/fb3dabc43193711c2307f942481ad30c_360_0.png)
+
+# jQuery UI 提供的 jQuery 特性的 URL
+
+`http://jquery.com/`
+
+| 名称 | 描述 |
+|---|---|
+| 主题 (Themes) | 24 个预定义主题，以及一个允许您创建自定义主题的 ThemeRoller 。主题由 CSS 样式表实现。 |
+| 小部件 (Widgets) | 折叠面板、标签页、日期选择器等。 |
+| 交互 (Interactions) | 可拖拽、可放置、可调整大小等。 |
+| 效果 (Effects) | 颜色动画、类过渡等。 |
+
+## 描述
+
+- jQuery UI 是一个免费、开源的 JavaScript 库，它通过提供更高级的功能扩展了 jQuery 库。jQuery UI 使用 jQuery，可以被认为是 jQuery 的官方插件库。
+- 可以通过上面的 URL 访问 UI 网站，也可以点击页面顶部的 jQuery UI 链接进入 jQuery UI 网站。
+
+图 12-1 什么是 jQuery UI 以及从何处获取它
+
+© 2012, Mike Murach and Associates, Inc. Licensed to Michael Hotham.
+
+### jQuery UI 组件
+
+图 12-2 总结了 jQuery UI 支持的大多数组件。当你构建 jQuery UI 下载包时，可以决定在网页中使用哪些组件。自然地，你选择的组件越少，加载到用户浏览器的 jQuery UI 文件就越小。
+
+图中第一组的核心 UI 组件分为**核心 (core)、小部件 (widget)、鼠标 (mouse) 和位置 (position)**。当你使用 jQuery UI 小部件时，始终需要核心组件。当你使用交互功能时，需要鼠标组件。如果你使用的元素需要相对于网页上其他元素进行定位的元素，则需要位置组件。
+
+接下来的三组列出了 jQuery UI 目前提供的许多小部件、交互和效果。其中，小部件的使用频率最高。然而，如果你不打算使用某些小部件，可以将它们从下载包中排除掉。
+
+请注意，此表不包含 jQuery UI 1.9.0 版本中的三个新小部件。它们是菜单 (menu)、计数器 (spinner) 和提示框 (tooltip)。由于你处理这些小部件的基本技术与在本章看到的其他小部件相同，如果你以后需要使用，应该不会遇到任何困难。
+
+相比之下，许多网站并不使用任何交互功能。如果你的网站也是如此，你可以将它们从下载包中排除。但注意，对话框（Dialog）小部件依赖于可拖拽（Draggable）和可调整大小（Resizable）交互，因此如果你要包含对话框，就必须包含这些交互。
+
+jQuery UI 交互的力量之处在于它们可以应用于任何 HTML 元素。例如，你可以让无序列表中的项目进行排序，或者让可选表格中的某行变为选择。对于此类用途，你需要在下载包中包含交互功能。在第 13 章，你将学习如何使用这些交互。
+
+jQuery UI 效果可以与交互和小部件配合使用。例如，可以使用效果来控制 Tabs 小部件中新标签的显示方式。此外，jQuery UI 效果还可以用于不属于 UI 的 HTML 元素。在第 13 章，你也将学习如何使用这些效果。
+
+# UI 核心组件
+
+| 名称 | 描述 |
+| --- | --- |
+| 核心 (Core) | 提供核心功能。所有交互和小部件均需要。 |
+| 小部件 (Widget) | 为所有小部件提供基础功能。 |
+| 鼠标 (Mouse) | 为所有需要鼠标的交互提供基础功能。 |
+| 位置 (Position) | 所有需要元素定位的交互都需要。 |
+
+# 小部件
+
+| 名称 | 描述 |
+| --- | --- |
+| 折叠面板 (Accordion) | 一个折叠面板。 |
+| 自动完成 (Autocomplete) | 根据用户输入显示建议项目列表的文本框。 |
+| 按钮 (Button) | 可自定义的按钮。 |
+| 对话框 (Dialog) | 可调整大小和可拖拽的模态对话框。 |
+| 滑块 (Slider) | 可以显示值范围的滑块。 |
+| 标签页 (Tabs) | 一组标签页，点击时显示对应的内容。 |
+| 日期选择器 (Datepicker) | 可以从文本框切换或内联显示的日历。 |
+| 进度条 (Progressbar) | 用于显示进度或百分比值的状态指示器。 |
+
+# 交互
+
+| 名称 | 描述 |
+| --- | --- |
+| 可拖拽 (Draggable) | 让网页上的元素可以拖拽。 |
+| 可放置 (Droppable) | 定义可拖拽对象可以放置的目标。 |
+| 可调整大小 (Resizable) | 让网页上的元素可以调整大小。 |
+| 可选择 (Selectable) | 让元素可以通过鼠标进行选择。 |
+| 可排序 (Sortable) | 让项目列表可以排序。 |
+
+# 效果
+
+| 名称 | 描述 |
+| --- | --- |
+| 效果 (Effects) | 所有效果所需的。 |
+| 盲目 (Blind) | 创建类似于垂直百叶窗的盲效果。 |
+| 弹跳 (Bounce) | 让元素上下或左右弹动。 |
+| 剪切 (Clip) | 开启和关闭元素。 |
+| 下落 (Drop) | 将元素向一个方向移动并同时隐藏。 |
+| 爆炸 (Explode) | 让元素向所有方向爆炸。也支持向内塌陷。 |
+| 淡出 (Fade) | 让元素淡出。 |
+| 折叠 (Fold) | 让元素水平或垂直折叠。 |
+| 高亮 (Highlight) | 用颜色高亮元素背景。 |
+| 脉动 (Pulsate) | 让元素产生脉动。 |
+| 缩放 (Scale) | 放大或缩小元素。 |
+| 抖动 (Shake) | 让元素上下左右抖动。 |
+| 滑动 (Slide) | 让元素滑入屏幕。 |
+| 传输 (Transfer) | 将元素从一个传输到另一个。 |
+
+图 12-2 jQuery UI 组件
+
+## 如何构建和使用 jQuery UI 下载
+
+相比直接下载，你必须先构建 jQuery UI 下载包再下载。这让你能够选择网页所需的组件。
+
+### 如何构建下载
+
+图 12-3 显示了构建页面，你可以通过点击 jQuery UI 主页上的链接进入。该页面包含一个列表、一个下拉主题列表和一个下载按钮。
+
+组件列表包含了图中总结的所有组组件：UI 核心、交互、小部件和效果。开始时，所有组件都是被选中的。这将产生一个大小约为 200KB 的 JavaScript 库。为了减小此尺寸，你可以取消勾选（排除）你不使用的组件。然而，如果你尝试取消一个被其他组件所需的组件，将会提示这些组件都将被移除。例如，如果你在未勾选放置和对话框组件的情况下取消可拖拽组件，就会发生这种情况。然后，你可以通过移除所有相关组件或取消操作继续。
+
+对于许多网站，你可以勾选所有的交互和效果。如果你只想使用少数小部件且不使用对话框小部件，你可以取消其他所有组件、交互和效果。
+
+选择好组件后，你可以从下拉主题列表的 24 个主题中选择一个，或者选择“无主题”。或者，如果你想创建一个自定义主题，可以点击“设计自定义主题”链接，这将引导你进入下一图中的 ThemeRoller 页面。
+
+你还可以设置保存主题的文件夹名称。否则主题文件夹将获得一个默认名称。此外，你还可以设置主题的作用范围。这样做可以在页面的不同区域应用主题。
+
+当你确认已拥有所需的所有内容时，可以点击下载按钮，这将压缩文件夹下载到你的电脑。然后，你可以解压缩文件夹，并在应用程序中使用包含的文件。你将在图 12-5 中学习更多关于此下载包及其使用方法的内容。
+
+# 下载构建器
+
+![](img/fb3dabc43193711c2307f942481ad30c_364_0.png)
+
+## 如何构建你的自定义 UI 库并下载文件
+
+1. 从首页，点击导航栏中的“下载 (Download)”链接或“自定义下载构建器”页面。
+2. 选择或取消勾选交互、组件和效果，直到勾选框标识出你想要包含在下载中的组件。选择的越少，下载的文件就越小。
+3. 如果你想为下载选择一个主题，请使用页面底部的下拉列表。或者，如果你想构建自定义主题，点击下拉列表上方的链接。这将带你进入下一页的 ThemeRoller。
+4. 在选择好主题或设计自定义主题并返回上述页面后，点击“下载 (Download)”按钮，下载包含 jQuery UI 文件的压缩文件夹。
+
+图 12-3 如何构建下载
+
+© 2012, Mike Murach and Associates, Inc. 授权给 Michael Hotham。
+
+### 如何使用 ThemeRoller 构建自定义主题
+
+如果你更倾向于“自己制作”主题，也许是为了匹配你网站使用的配色方案，你可以使用 jQuery 的 ThemeRoller 来实现。该应用程序的使用总结在图 12-4 中。
+
+有趣的是，ThemeRoller 页面的左侧边栏是一个标签页（Tabs）组件，具有“自己制作 (Roll Your Own)”、“库 (Gallery)”和“帮助 (Help)”选项卡。在“自己制作”选项卡中，使用了一个手风琴组件处理你可以更改的十一个类别。正如这个手风琴所示，你可以自定义你的 CSS 属性。了解这些内容的最佳方法是亲自查看此页面，你将在本章末尾练习中有机会这样做。
+
+在此示例中，“字体设置”面板已打开，字体粗已变为加粗。一旦更改了设置，更改就会反映在侧边栏右侧的组件中。例如在这种情况下，手风琴中的标题已从普通变为加粗。
+
+如果你点击 ThemeRoller 侧边栏的“库”选项卡，你会看到左侧边栏显示了 24 个预定义主题在日期选择器（Datepicker）组件中的外观。接下来，如果你点击某个主题的日期选择器组件，你会看到该主题如何应用于侧边栏右侧的其他组件。然后，如果你喜欢某个预定义主题，可以点击该主题下方的下载按钮，返回下载构建器页面，此时在“主题”下拉列表中已选择了该主题。
+
+另一种选择是点击主题下方的“编辑 (Edit)”按钮。这将带你回到“自己制作”选项卡，其中每个类别中的所有属性都已设置为该主题的基础属性。然后，你可以对这些设置进行任何更改，并点击“下载主题 (Download Theme)”按钮返回下载构建器页面，此时在“主题”下拉列表中已选了“自定义主题 (Custom Theme)”。
+
+# ThemeRoller 页面
+
+![](img/fb3dabc43193711c2307f942481ad30c_366_0.png)
+
+## 如何使用 ThemeRoller 创建自定义主题
+
+- 使用左侧边栏的手风琴组件来自定义列表项的属性。更改设置后，你可以在侧边栏右侧的组件中看到其效果。
+- 当你对主题满意时，点击“下载主题 (Download Theme)”按钮。这将带你返回下载构建器页面，并在下拉列表中已选择“自定义主题”。
+
+## 描述
+
+- jQuery UI 有 24 个预定义主题，你可以在下载构建器页面的“主题”列表中进行选择。除此之外，jQuery UI 的 ThemeRoller 允许你创建自己的自定义主题。
+- 如果你想从一个预定义主题创建自定义主题，请点击 ThemeRoller 页面侧边栏的“库 (Gallery)”选项卡。这将显示该主题应用到组件时的外观。然后你可以通过点击其“下载”按钮来选择其中一个主题，或者点击其“编辑 (Edit)”按钮返回“自己制作”选项卡。
+- ThemeRoller 左侧边栏的手风琴列出了主题的可定制属性。侧边栏右侧的组件显示了这些。
+
+图 12-4 如何使用 ThemeRoller 构建自定义主题
+
+### 如何使用下载的文件夹和文件
+
+图 12-5 显示了下载中包含的文件。你可以看到下载被组织为三个主要文件夹（css、development-bundle 和 js），以及一个 index.html 文件。
+
+下载中的 css 文件夹包含了样式表，以及组件所需的图像，包括箭头、图标、背景等。该样式表和图像位于以主题命名的文件夹中。
+
+development-bundle 文件夹包含了演示、文档、样式表、JavaScript 文件等。虽然 index.html 文件需要其中一些文件，但你的网页不需要它们。因此，如果你不想使用其中任何内容，可以删除 development-bundle 文件夹和 index.html 文件。
+
+js 文件夹包含了最新 jQuery 和 jQuery UI 库的文件。然而，如果你想从 jQuery CDN 获取最新的 jQuery 文件，你只需要 jQuery UI 文件。
+
+下载文件后，你将使用文本编辑器或 IDE 打开 CSS 文件。然后，你可以查看文件中的规则以了解支持哪些类。这些是应用于组件的样式，但你也可以使用这些样式格式化自己的 HTML 元素。
+
+要在应用程序中使用所需的文件夹和图像，你可以使用第二个位图所示的文件夹结构。在这里，应用程序有一个 css 文件夹，包含了与下载中的 css 文件相同的文件夹（smoothness 和 images）。它还有一个 js（JavaScript）文件夹，包含了下载的 jQuery UI 文件。
+
+然后，要在网页中引入 jQuery UI CSS 和 JavaScript 文件，可以使用图中所示的 link 和 script 元素。在这里，link 指向 css/smoothness 文件夹中的 jQuery UI 文件。第一个 script 元素指向最新 jQuery 库的 CDN 地址。第二个 script 元素指向 js 文件夹中的 jQuery JavaScript 文件。请注意，jQuery UI 文件必须在 jQuery 文件的 script 元素之后，因为 jQuery UI 使用了 jQuery。
+
+# jQuery UI 下载的组件
+
+![](img/fb3dabc43193711c2307f942481ad30c_368_0.png)
+
+# jQuery UI 应用的典型文件夹结构
+
+![](img/fb3dabc43193711c2307f942481ad30c_368_1.png)
+
+# 如何在你的应用程序包含下载的文件
+
+```html
+<!-- jQuery UI 样式表的 link 元素 -->
+<link rel="stylesheet" href="css/smoothness/jquery-ui-1.8.23.custom.css">
+```
+
+```html
+<!-- jQuery 和 jQuery UI 库的 script 元素 -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/jquery-ui-1.8.23.custom.min.js"></script>
+```
+
+```html
+<!-- 你的外部 JavaScript 文件或代码的 script 元素 -->
+<script src="your-script.js"></script>
+```
+
+## 描述
+
+- 一个 jQuery UI 下载包含一个 zip 文件，其中包含了所选主题的 CSS 文件和图像、所需的 jQuery 和 jQuery UI 文件，以及一个包含演示、文档等内容的开发包。
+- 下载中的 `index.html` 文件可用于启动演示和文档。
+- 如果 jQuery UI 下载是基于预定义主题，则 CSS 库和相关图像将存储在同命名的文件夹中。
+- 你需要包含在应用程序中的唯一下载文件夹和文件是 CSS 文件、图像文件夹和 jQuery UI 文件。你也可以使用 jQuery 文件，但另一种方案是使用 CDN 获取最新的 jQuery 文件。
+
+图 12-5 如何使用下载的文件和文件夹
+
+## 如何使用 jQuery UI 组件
+
+快速上手 jQuery UI 的最佳方法是从它的组件（widgets）开始。这将向你展示如何用最少的代码为你的网页快速添加诸如折叠面板（accordions）和标签页（tabs）等功能。在接下来的主题中，你将学习如何使用 jQuery UI 目前支持的八种组件。
+
+### 如何使用任何组件
+
+接下来的七幅图展示了如何以基本形式使用这八种组件。这可能就是你在自己的页面中使用这些组件所需的所有信息。然而，所有这些组件都提供了超出这些图表所展示的选项、事件和方法。因此，如果你想查看如何使用组件，可以通过点击组件来查阅 jQuery UI 文档，这是非常棒的。
+
+例如，图 12-6 显示了如何使用折叠面板（Accordion）的文档。一个很好的开始方法是点击右侧边栏中示例名称，查看如何使用该组件。然后，你可以点击 `View Source` 链接查看使示例运行的源代码。之后，你可以通过点击 `API Documentation` 链接查看该组件的选项、方法和事件。
+
+当你熟悉它的工作方式后，就准备好在网页上实现它了，这分为三个阶段。第一，如图所示，你在 HTML 的 `head` 元素中为 jQuery UI 编写 `link` 和 `script` 元素。第二，你为组件编写所需的 HTML。第三，你编写用于运行组件的 jQuery 代码。如果你读过插件的章节，你会发现任何插件的运行原理都是这样的。
+
+在图中的 jQuery 示例中，你可以看到组件所需的 jQuery 代码的通用结构。首先，在 `ready` 事件处理程序中使用组件的代码。其次，使用 jQuery 选择器选择用于组件的 HTML 元素。第三，调用运行组件的方法。第四，组件的任何选项都编写在方法参数的大括号内。这也是任何插件的运行原理。
+
+# jQuery UI 网站上的折叠面板文档
+
+| 交互 | 折叠面板 (Accordion) | 示例 |
+| --- | --- | --- |
+| 可拖拽 | ▼ 第 1 部分 | 折叠内容 |
+| 可放置 | Mauria autis, blant, et utrices, a suscipit, quam, Integer ut neque, n luctus metus, molest velit, gravida in, condimentum ac | 自定义图标 |
+| 可调整大小 | > 第 2 部分 | 功能 |
+| 可选择 | Nam a nibh. Donec eros est, mi. Prain libero leo ut odio. Curabitur mauris. Vestibulum at eu ante | 填充空间 |
+| 可排序 | > 第 3 部分 | 悬停开启 |
+| 组件 | > 第 4 部分 | 无自动高度 |
+| 折叠面板 | | 可排序 |
+| 自动完成 | | |
+| 按钮 | 点击页头以展开/折叠划分为逻辑部分（如标签页）的内容。可选地，在鼠标悬停时切换部分的开启/关闭 | | |
+| 日期选择器 | 底层 HTML 标记是一系列标题（H3 标签）和内容 div，因此内容无需 JavaScript 即可使用 | | |
+| 对话框 | 查看源码 | | |
+| 菜单 | 想了解更多关于折叠面板组件的内容？查看 API 文档 | | |
+| 进度 | | | |
+| 滑块 | | | |
+| 旋转器 | | | |
+| 标签页 | | | |
+| 提示框 | | | |
+
+## 如何使用 jQuery UI 文档
+
+- 在左侧边栏中，点击组件名称显示概览。
+- 在右侧边栏中，点击示例名称。
+
+# jQuery UI 的 jQuery 通用结构
+
+```javascript
+$(function() {
+  // 代码写在这里
+});
+```
+
+## 描述
+
+- 一个 jQuery UI 下载包含一个 zip 文件，其中包含了所选主题的 CSS 文件和图像、所需的 jQuery 和 jQuery UI 文件，以及一个包含演示、文档等内容的开发包。
+- 下载中的 `index.html` 文件可用于启动演示和文档。
+- 如果 jQuery UI 下载是基于预定义主题，则 CSS 库和相关图像将存储在同命名的文件夹中。
+- 你需要包含在应用程序中的唯一下载文件夹和文件是 CSS 文件、图像文件夹和 jQuery UI 文件。你也可以使用 jQuery 文件，但另一种方案是使用 CDN 获取最新的 jQuery 文件。
+
+图 12-6 如何使用 jQuery UI 文档
+
+### 如何使用 Accordion 手风琴组件
+
+图 12-7 显示了如何使用 Accordion 组件。该组件将内容分割成逻辑部分，用户可以通过点击标题来展开或折叠这些部分。
+
+Accordion 组件的 HTML 由一个顶层 `div` 元素组成，其中包含一系列标题（`h3` 标签）和内容 `div` 元素。每个标题后面紧跟其对应的内容 `div`。
+
+使用 jQuery 激活 Accordion 组件，只需选择顶层 `div` 元素并调用 `accordion` 方法。通常，你不需要设置任何选项，因为默认工作方式符合预期。不过，你可以使用 `event` 选项将打开面板的事件从点击事件更改为其他事件（如 `mouseover`）。你还可以使用 `collapsible` 选项设置为 `true` 来允许所有面板都折叠。
+
+# 手风琴组件
+
+![](img/fb3dabc43193711c2307f942481ad30c_372_0.png)
+
+## 手风琴的 HTML
+
+```html
+<div id="accordion">
+  <h3>第 1 部分</h3>
+  <div>
+    <p>第 1 部分的内容...</p>
+  </div>
+  <h3>第 2 部分</h3>
+  <div>
+    <p>第 2 部分的内容...</p>
+  </div>
+  <h3>第 3 部分</h3>
+  <div>
+    <p>第 3 部分的内容...</p>
+  </div>
+</div>
+```
+
+## 手风琴的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#accordion").accordion();
+});
+```
+
+## 描述
+
+- HTML 应该包含一个 `div` 元素，其中包含一系列标题（`h3` 标签）和内容 `div` 元素。
+- 在 jQuery 中，使用 `accordion` 方法为代表手风琴的 `div` 元素实现 Accordion 组件。
+- 默认情况下，点击标题会切换面板，但你可以通过使用 `event` 选项更改它。你还可以使用 `collapsible` 选项设置为 `true` 来允许所有面板都折叠。
+- 手风琴的基本格式是 jQuery UI 的 CSS，但你可以使用 CSS 格式化面板内的内容。
+
+图 12-7 如何使用 Accordion 手风琴组件
+
+### 如何使用 Tabs 标签组件
+
+图 12-8 显示了如何使用 Tabs 组件。该组件的功能与手风琴（Accordion）组件相似，但它会在点击相关标签时显示面板的内容。
+
+如图所示，Tabs 组件的 HTML 由一个代表该组件的顶层 `div` 元素组成。然后，该元素包含一个包含标签标题的无序列表，随后是每个标签一个包含标签内容的 `div` 元素。为了将标签标题与其对应的 `div` 元素关联，`<li>` 元素内 `<a>` 元素的 `href` 属性被设置为对应 `div` 元素的 `id`。
+
+使用 jQuery 激活 Tabs 组件，只需选择顶层 `div` 元素并调用 `tabs` 方法。通常，你不需要设置任何选项，因为默认工作方式符合你的预期。不过，你可以使用 `event` 选项将打开标签的事件从点击事件更改为其他事件。你还可以使用 `fx` 选项为标签的打开和关闭添加动画。
+
+在这里，Tabs 组件的基本格式由 jQuery UI 的 CSS 样式表完成。不过，你可以使用自己的样式表来格式化面板的内容。事实上，当面板由多个不同的 HTML 元素组成时，你通常需要这样做。
+
+# Tabs 组件
+
+![](img/fb3dabc43193711c2307f942481ad30c_374_0.png)
+
+## 标签的 HTML
+
+```html
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">书籍描述</a></li>
+    <li><a href="#tabs-2">作者</a></li>
+    <li><a href="#tabs-3">这本书的读者群</a></li>
+  </ul>
+  <div id="tabs-1"><!-- 内容 --></div>
+  <div id="tabs-2"><!-- 内容 --></div>
+  <div id="tabs-3"><!-- 内容 --></div>
+</div>
+```
+
+## 标签的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#tabs").tabs();
+});
+```
+
+## 描述
+
+- HTML 应该包含一个 `div` 元素，其中包含一个代表标签的无序列表，随后是包含标签内容的 `div` 元素。
+- 每个标签的标题应该位于列表 `<li>` 元素内的 `<a>` 元素中。每个标签的 `href` 属性应该指向包含内容的 `div` 元素的 `id`。
+- 在 jQuery 中，使用 `tabs` 方法为代表标签的 `div` 元素实现 Tabs 组件。
+- 默认情况下，点击标签头会切换标签，但你可以通过使用 `event` 选项更改它。你还可以使用 `fx` 选项为标签的打开和关闭添加动画。
+- 在第 14 章学习 Ajax 之后，你可以使用 `ajaxOptions` 通过 Ajax 从 Web 服务器获取标签内容。
+- 标签的基本格式是 jQuery UI 的 CSS，但你可以使用 CSS 格式化面板内的内容。
+
+图 12-8 如何使用 Tabs 标签组件
+
+© 2012, Mike Murach and Associates, Inc. 授权给 Michael Hotham.
+
+### 如何使用 Button 和 Dialog 组件
+
+图 12-9 显示了 Button（按钮）和 Dialog（对话框）组件的工作原理。Button 组件的 HTML 通常是一个类型为 "button" 的输入元素，但该组件也适用于 "submit"、"reset"、"radio" 和 "checkbox" 类型以及 `<a>` 元素。
+
+当通过 jQuery `button` 方法激活 Button 组件时，HTML 会转换为一个使用 jQuery UI 主题的按钮。除此之外，该按钮按其正常方式工作。在图中的示例中，Button 组件被编码为一个包含书籍元素的 `<a>` 元素，jQuery UI 会改变它的外观。当用户点击它时，对话框就会打开。
+
+与此相反，Dialog（对话框）的 HTML 包含一个包含对话框内容的 `div` 元素。该元素的 `title` 属性可用于指定对话框的标题。该元素的内容可以包含任何 HTML 元素。
+
+当对话框显示时，它是可拖动且可调整大小的。这意味着你可以通过标题栏拖动对话框，并通过拖动右下角的调整大小手柄来调整框的大小。你还可以点击右上角的“X”图标来关闭框。
+
+使用 jQuery 显示 Dialog 组件，你需要使用 `dialog` 方法。例如，如果要在页面准备好后显示对话框，则选择对话框的 `div` 并调用 `dialog` 方法。如果你希望用户在继续之前关闭对话框，还可以将 `modal` 选项设置为 `true`。
+
+通常情况下，你希望在某些事件发生时（如点击 Button 组件）打开对话框。然后，使用图中所示的 jQuery 代码。首先，调用 `button` 方法转换 Button 组件的 HTML。然后，为按钮的点击事件设置事件处理程序。在其事件处理程序内部，调用对话框的 `dialog` 方法来显示对话框。在这里，将 `modal` 选项设置为 `true`，这样背景页面就会被锁定。
+
+# Button 和 Dialog 组件
+
+![](img/fb3dabc43193711c2307f942481ad30c_376_0.png)
+
+## Button 和 Dialog 组件的 HTML
+
+```html
+<a id="book" href="#"><img src="images/javascriptbook.jpg" alt="JavaScript book" width="159" height="192" /></a>
+<div id="dialog" title="JavaScript and DOM Scripting" style="display:none;">
+  <!-- 对话框的内容 -->
+</div>
+```
+
+## Button 和 Dialog 组件的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#book").button();
+  $("#book").click(function() {
+    $("#dialog").dialog({ modal: true });
+  });
+});
+```
+
+## 描述
+
+- Button 组件可用于 `input`、`button`、`a` 等元素，调用 `button()` 方法即可应用主题样式。
+- Dialog 组件需要一个容器 `div`，通过 `dialog()` 方法初始化，支持 `modal`、`draggable`、`resizable` 等选项。
+- 通常结合使用：点击按钮触发对话框显示。
+
+图 12-9 如何使用 Button 和 Dialog 组件
+
+### 如何使用 Autocomplete 自动完成组件
+
+图 12-10 显示了如何使用自动完成组件。当用户在该组件的文本框中输入一个或多个字符时，会弹出一个列表，显示包含这些字符的项。然后，用户可以通过点击项目或按向下箭头键移动到该项目并按回车键来选择其中一个项目。该项目将替换文本框中输入的内容。
+
+请注意，列表中显示的项目并不一定以你输入的字母开头。例如，在所示的列表中，HTML 和 XHTML 都包含字符 "it"，但只有 HTML 是以这些字母开头的。
+
+该组件的 HTML 由一个包含 `input` 元素的 `div` 元素组成。`div` 元素的 `class` 属性应设置为 `ui-widget`，这使得 `input` 元素不包含 `type` 属性。相反，jQuery 将确保该元素作为文本框或搜索框工作。
+
+要使用 jQuery 实现自动完成组件，你首先定义一个变量，其中包含所有可能出现在自动完成列表中的项数组。然后，选择该组件的 `input` 元素并调用 `autocomplete` 方法。此时，该方法必须设置的选项是 `source`，它指向包含项数组的变量。
+
+此图还提到了你可能想用于自动完成组件的一些选项。如果该组件的列表很长，以至于你想从服务器获取它，可以使用 Ajax 和 JSON 来获取列表，而无需为另一个网页发送 HTTP 请求。你将在第 14 章中学习如何使用 Ajax 和 JSON。之后，你可以学习该组件的文档，查看它如何与这些技术协同工作。
+
+# 自动完成组件
+
+![](img/fb3dabc43193711c2307f942481ad30c_378_0.png)
+
+## 自动完成组件的 HTML
+
+```html
+<div class="ui-widget">
+  <label for="books">书籍:</label>
+  <input id="books">
+</div>
+```
+
+## 自动完成组件的 jQuery
+
+```javascript
+$(document).ready(function() {
+  var murachBooks = [
+    "ADO.NET", "ASP.NET", "C#", "C++", "CICS", "CSS", "COBOL",
+    "DB2", "HTML", "Java", "JavaScript", "LINQ", "MySQL",
+    "Oracle SQL", "OS/390", "VB", "PHP", "Web Development",
+    "Web Programming", "XML", "z/OS JCL"
+  ];
+  $('#books').autocomplete({
+    source: murachBooks
+  });
+});
+```
+
+## 描述
+
+- 自动完成组件的 HTML 由一个 `div` 元素组成，其 `class` 属性设置为 "ui-widget"。该 `div` 应包含一个没有 `type` 属性的 `input` 元素。
+- "ui-widget" 类是 jQuery UI 类，用于为 `input` 元素和自动完成列表设置样式。
+- 在 jQuery 中，定义一个包含自动完成组件列表项数组的变量。你可以在数组中编写任意数量的项。
+- 要在 jQuery 中激活自动完成组件，请使用该组件的 `autocomplete` 方法并将 `source` 选项设置为你用于数组的变量名。
+- 你可以使用 `delay` 选项设置在输入字符后激活自动完成组件之前的毫秒数；默认值为 300 毫秒。你还可以使用 `minLength` 选项指定激活此组件前必须输入的最小字符数；默认值为 1。
+- 在第 14 章学习了如何使用 Ajax 和 JSON 之后，你可以使用该组件的文档来学习如何从 Web 服务器获取组件显示的项。如果你这样做了，通常会将 `minLength` 改为 3，这样 Ajax 调用就不会来太早。
+
+图 12-10 如何使用自动完成组件
+
+© 2012, Mike Murach and Associates, Inc. Licensed to Michael Hotham.
+
+### 如何使用 Datepicker 日期选择器组件
+
+图 12-11 显示了如何使用与文本框关联的 Datepicker 组件。当用户点击文本框时，会显示一个日历。当用户选择日期后，日历会被隐藏，选定的日期出现在文本框中。
+
+要实现 Datepicker 组件，你在 HTML 中编写一个文本框。然后，在 jQuery 中选择该文本框并调用 `datepicker` 方法。默认情况下，日历看起来如图中所示，并以 mm/dd/yyyy 格式显示当前日期。但有许多选项可自定义日期格式、语言、可选日期范围等。
+
+在本节的第二个 jQuery 示例中，设置了三个选项。第一个选项将最小日期设置为当前日期，这是通过给该选项分配一个新的 `Date` 对象来实现的。第二个选项将控件接受的最大日期设置为当前日期的 45 天后。第三个选项在日历下方显示一个包含“今天”（Today）和“完成”（Done）按钮的面板。如果用户在移动到另一个月份后点击“今天”按钮，日历将返回包含当前日期的月份。如果用户点击“完成”按钮，日历将关闭。
+
+# 日期选择器组件
+
+![](img/fb3dabc43193711c2307f942481ad30c_378_0.png)
+
+## 日期选择器组件的 HTML
+
+```html
+<label>到达日期:</label>
+<input type="text" id="datepicker">
+```
+
+## 无选项的日期选择器组件的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $('#datepicker').datepicker();
+});
+```
+
+## 带三个选项的日期选择器组件的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $('#datepicker').datepicker({
+    minDate: new Date(),
+    maxDate: "+45",
+    showButtonPanel: true
+  });
+});
+```
+
+## 描述
+
+- 日期选择器组件的 HTML 只需要一个文本框（`input type="text"`）。
+- 在 jQuery 中，使用 `datepicker` 方法激活该组件。
+- 可以使用 `minDate`、`maxDate` 限制可选日期范围，使用 `showButtonPanel` 显示按钮面板。
+- 更多选项请参考 jQuery UI 文档。
+
+图 12-11 如何使用日期选择器组件
+
+
+
+## Datepicker 控件
+
+- Datepicker 控件的 HTML 是文本框。
+- Datepicker 的 jQuery 是对 `datepicker()` 方法的调用。
+- 默认情况下，当用户聚焦文本框时显示 Datepicker。
+- jQuery 为 Datepicker 提供了许多选项。例如，`minDate` 设置可选最小日期；`maxDate` 设置最大日期；`changeMonth` 和 `changeYear` 提供允许选择显示月份和年份的控件；`numberOfMonths` 设置显示的月份数；`showButtonPanel` 在控件底部显示带有“今天”和“完成”按钮的面板。
+
+## 如何使用 Slider 滑块控件
+
+Slider 控件允许用户拖动滑块到代表特定值的位置。你可以使用此控件来限制用户选择的值为有效值，这样输入就不需要验证。
+
+示例展示了如何将滑块与显示滑块设置值的文本框配合使用。在这种情况下，滑块的 HTML 位于文本框 HTML 之前。
+
+Slider 控件的 HTML 仅由 `div` 元素组成。然后，jQuery 选择元素并调用 `slider()` 方法，通常带有一个或多个选项。例如，示例将起始值设为 50，最小值为 1，最大值为 100。结果是用户必须通过滑动滑块在 1 到 100 之间选择值。
+
+此示例还设置了 `slide` 选项，该函数会在滑块移动时调用一次。该函数有两个参数：第一个是滑动事件的事件对象，第二个是包含滑块设置的值的对象。在函数内部，选择了 ID 为 "employees" 的文本框，并使用 `val()` 方法将其值设置为滑块设置的值（`ui.value`）。这样，文本框中的值将始终与选择的值相同。
+
+在 `slider()` 方法代码之后，`ready` 事件处理程序包含最后一条语句。该语句选择了文本框并将其值设置为 50，这与滑块的起始值相同。结果是文本框值和滑块值从开始就是相同。
+
+### 滑块组件
+
+#### 滑块组件的 HTML
+
+```html
+<div id="slider">
+  <label>Company size: 0;</label>
+  <input type="text" id="employees" style="border:0;">
+</div>
+<div id="slider" style="width:100px;"></div>
+```
+
+#### 滑块组件的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#slider").slider({
+    value: 50,
+    min: 1,
+    max: 100,
+    slide: function(event, ui) {
+      $("#employees").val(ui.value);
+    }
+  });
+  $("#employees").val(50);
+});
+```
+
+#### 描述
+
+- 滑块的 HTML 由一个 `div` 元素组成。要设置滑块的大小，可以设置 CSS 的宽度和高度属性。在 HTML 中，这是通过 `style` 属性实现的，但你也可以在 CSS 样式中设置。
+- 在此示例中，滑块 HTML 之前是一个文本框的 HTML，用于显示由滑块设置的值。
+- 在滑块的 jQuery 中，使用 `slider()` 方法激活滑块，并使用 `value`、`min` 和 `max` 选项设置滑块的起始值和最大值。
+- 你可以使用 `slider` 选项为滑块事件提供一个函数。在上面的示例中，该函数会将文本框中的值设置为鼠标移动时滑块所设置的值。
+- 最后一行代码将文本框的初始值设置为 50，使其与为滑块设置的初始值一致。
+- 滑块组件的其他选项允许你更改滑块的工作方式。例如，你可以将 `orientation` 选项设置为 "vertical"（垂直），使滑块上下移动而不是左右移动。你可以设置 `range` 选项来提供在 options value 属性中指定的数值范围。你还可以设置 `step` 选项为一个数值，以决定每个滑块每次移动的间隔或步长大小。
+
+## 如何使用进度条组件
+
+进度条组件旨在显示过程的进度，范围从 0% 到 100%。因此，随着过程的进行，必须更新此组件的值。
+
+进度条组件的 HTML 由一个 `div` 组成。默认情况下，该元素的宽度和高度与其父容器相同，但你可以通过 CSS 调整其大小使其看起来像进度条。要用 jQuery 激活此组件，你需要选择 `div` 元素并调用 `progressbar()` 方法，通常带有一个 `value` 选项来设置进度的起始百分比。在此示例中，该值被设置为 10%。
+
+要在过程进行期间更改进度条的值，可以使用第二个 jQuery 示例中的方法。在这里，你向 `progressbar()` 方法传递了两个参数。第一个是 "value"，第二个是组件的更新值。
+
+当然，要使用这种方法，你需要获取定期的更新，告知你过程已完成的百分比。然后，你可以在每次更新后更新进度条组件的值。如何获取这些更新取决于你正在监控的过程，但如果你能获取更新，使用进度条组件是显示进度的简单方法。
+
+### 进度条组件
+
+#### 进度条组件的 HTML
+
+```html
+<div id="progressbar" style="width:300px; height:25px;"></div>
+```
+
+#### 激活进度条组件的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#progressbar").progressbar({value: 10});
+});
+```
+
+#### 更改进度条组件值的 jQuery
+
+```javascript
+$("#progressbar").progressbar("value", 25);
+```
+
+#### 描述
+
+- 进度条组件的 HTML 由一个 `div` 元素组成。
+- 进度条组件的高度和宽度是容器元素的 100%，但你可以通过设置其 `div` 元素的高度和宽度属性来更改。在上面的 HTML 中，高度和宽度属性是通过 `style` 属性设置的，但你也可以在 CSS 表设置。
+- 在 jQuery 中，使用 `progressbar()` 方法激活组件。默认情况下，进度条的起始值为零，但你可以使用 `value` 选项来更改它。
+- 在操作进行期间更改进度条的值，可以使用 `progressbar()` 方法，并将第一个参数设置为 "value"，第二个参数设置为更新后的值。
+- 要有效使用此组件，你需要获取定期的数据来指示被监控过程的进度。然后，你就可以更新进度条组件的值。
+
+## 组件的 jQuery 代码
+
+注意，所有五个组件的方法都是从 `ready` 事件的事件处理器中调用的。在这里，由于你已经知道如何使用这些组件，因此理解使用它们的代码应该不会有任何困难。
+
+但请注意，对话框的 jQuery 代码使用 `buttons` 选项为框中添加了一个 OK 按钮。然后，该按钮的函数表示点击 OK 按钮时应关闭对话框。
+
+同样注意，滑块的 jQuery 代码包含了 `range` 和 `values` 选项。由于 `range` 选项设置为 `true`，`values` 选项可以包含两个值，将起始范围标识为 11-20。然后，用户可以通过拖动滑块末端来更改该范围。
+
+### 组件的 jQuery 代码
+
+```javascript
+$(document).ready(function() {
+  // DIALOG WIDGET
+  $("#help").click(function() {
+    $("#helpdialog").dialog({
+      buttons: { OK: function() { $(this).dialog("close") } }
+    });
+  });
+
+  // TABS WIDGET
+  $("#tabs").tabs();
+
+  // SLIDER WIDGET
+  $("#slider").slider({
+    min: 1,
+    max: 100,
+    range: true,
+    values: [11, 50],
+    slide: function(event, ui) {
+      $("#employees").val(ui.values[0] + " " + ui.values[1]);
+    }
+  });
+  $("#employees").val(11 + " " + 50);
+
+  // DATEPICKER WIDGET
+  $("#datepicker").datepicker();
+
+  // BUTTON WIDGET
+  $("#submitbutton").button();
+});
+```
+
+## 展望
+
+现在你已经完成了本章，你应该能够构建一个包含预主题或自定义主题的 jQuery UI 下载包。此外，你应该能够使用本章介绍的所有 jQuery UI 组件。这能让你快速上手 jQuery UI，因为组件是使用最广泛的 jQuery UI set。
+
+## 术语
+
+- jQuery UI (用户界面)
+- theme (主题)
+- widget (组件)
+- modal (模态)
+
+## 总结
+
+- jQuery UI (用户界面) 是一个扩展 jQuery 库的 JavaScript 库。由于 jQuery UI 使用了 jQuery 库，因此 jQuery UI 的 script 元素必须放在 jQuery script 元素之后。
+- 在下载 jQuery UI 库之前，你可以构建一个自定义下载包，其中可以包含预定义或自定义主题，用于样式化你使用的 jQuery UI 组件。该主题是由部分 CSS 样式表实现的。
+- 在构建 jQuery UI 下载包时，你还可以选择将要使用的功能组件，包括交互、组件和编辑器。正如你所期望的，选择的组件越少，需要加载到浏览器中的 jQuery UI 文件就越小。
+- 使用最广泛的 jQuery UI 组件包括 Accordion（折叠面板）、Tabs（标签）、Button（按钮）、Dialog（对话框）、Autocomplete（自动完成）、Datepicker（日期选择）、Slider（滑块）和 Progressbar（进度条）。
+- 要使用组件，你需要为其编写规定的 HTML。然后，在 jQuery 中选择该组件并运行其主方法，通常带有一个或多个选项。
+
+## 练习 12-1 尝试 Accordion 组件
+
+在本次练习中，你将回顾 Accordion 组件的 jQuery UI Demo 和文档。然后，你将对使用该组件的应用程序进行一些修改。
+
+### 回顾组件的 Demo 和文档
+
+1. 访问此 URL jQuery 网站：`http://jquery.com/` 然后，点击左侧边栏中的 Accordion 组件链接。
+2. 使用页面顶部的 accordion 查看其工作原理。然后，点击 accordion 下方的 View Source（查看源码）链接以显示实现它的代码，并查看这些代码。特别注意，`accordion()` 方法没有使用任何选项。
+3. 选择右侧的一个或多个示例，查看它们如何改变 accordion 的工作，并查看 jQuery 代码了解使用了哪些选项。
+4. 点击 API Documentation（API 文档）链接并查看显示页面上的选项。
+
+### 回顾应用程序
+
+5. 打开此文件夹中 accordion 应用程序的 HTML 文件：`c:\jquery\exercises\ch12\accordion\` 然后，运行应用程序查看其工作原理。
+6. 修改 jQuery 代码，使面板在用户双击时显示，而不是在鼠标悬停在上面时显示。测试此更改。
+7. 修改 jQuery 代码，使所有面板在应用程序启动时关闭。实现这一点，请使用 `active` 选项。然后，测试此更改。
+
+## 练习 12-2 尝试 Datepicker 组件
+
+在本次练习中，你将回顾 Datepicker 组件的 jQuery UI Demo 和文档。然后，你将对使用该组件的应用程序进行修改。
+
+1. 访问 jQuery UI 网站。然后，点击左侧边栏中的 Datepicker 组件链接。
+2. 尝试该组件的一些 Demo，查看源码以更好地了解该组件的工作原理，并回顾 API 文档。
+3. 打开此文件夹中 datepicker 应用程序的 HTML 文件：`c:\jquery\exercises\ch12\datepicker\` 然后，运行应用程序查看其工作原理。
+4. 修改 jQuery 代码，使面板在用户双击时显示，而不是在鼠标悬停在上面时显示。测试此更改。
+5. 修改 jQuery 代码，使所有面板在应用程序启动时关闭。实现这一点，请使用 `active` 选项。然后，测试此更改。
+
+## 练习 12-3 回顾构建下载包
+
+1. 访问此 URL jQuery 网站：`http://jqueryui.com/` 然后，点击右上角的 Download 按钮显示 Download Builder 页面。
+2. 回顾可用的组件。然后，展开页面底部的主题列表。
+3. 点击主题列表上方“design a custom theme”（设计自定义主题）链接显示 ThemeRoller 页面。
+4. 点击左侧边栏的 Gallery 标签，查看可用主题以及每个主题应用于 Datepicker 组件时的效果。
+5. 点击一个或多个主题查看页面上显示的内容。
+6. 点击一个主题下方的 Edit 按钮。你将返回 Roll Your Own 选项卡，所选主题的属性将列在 Accordion 组件中。
+7. 对主题属性进行任何更改，查看它们应用于页面上组件时的效果。完成后，点击侧边栏顶部的 Download 按钮返回 Download Builder 页面。
+8. 如果你想创建一个使用自定义主题的下载包，请取消不想包含在下载包中的任何组件的勾选。
+9. 当你有所需的组件后，点击 Download 按钮并响应显示的对话框。然后，解压下载文件夹并查看其中包含的文件。
+
+## 如何使用交互
+
+jQuery UI 交互提供了可以应用于 HTML 元素的行为。因此，它们为一些有趣的 jQuery 应用程序提供了基础。
+
+### 交互简介
+
+首先展示了一个交互示例。在这里，可调整大小的交互被应用于一个格式化为类似于对话框的 `div` 元素。注意 HTML 中，`div` 元素和它包含的 `h3` 元素都被分配了类。这些类包含在 jQuery UI 下载包中的 jQuery UI CSS 文件中。正如你在后续图表中的交互示例所示，这类类经常配合交互使用。
+
+要使用交互，你可以像使用组件一样，在带或不带选项的情况下编写 jQuery 方法。在示例中，使用 `resizable()` 方法来使 id 为 "dialog" 的元素变得可调整大小。然后，四个选项指定了可调整大小元素的最小和最大高度及宽度。
+
+该图还列出了五种 jQuery UI 交互。当你在接下来的页面中学习这些交互时，请记住 jQuery UI 网站为它们提供了极好的文档和演示。因此，当你需要扩展所学内容时，可以使用本章节开始学习文档和演示。
+
+#### 五种 jQuery UI 交互
+
+- 可拖拽
+- 可放置
+- 可调整大小
+- 可选择
+- 可排序
+
+#### 使用可调整大小交互的元素
+
+##### 元素的 HTML
+
+```html
+<div id="dialog" class="ui-widget-content">
+  <h3 class="ui-widget-header">Resizable Element</h3>
+</div>
+```
+
+##### 交互的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#dialog").resizable({
+    maxHeight: 250,
+    maxWidth: 350,
+    minHeight: 150,
+    minWidth: 200
+  });
+});
+```
+
+#### 描述
+
+- jQuery 交互可以提供难以用 JavaScript 编写的交互性。
+- 与组件一样，交互拥有控制其工作方式的选项。
+- 与组件相比，交互更依赖于 jQuery UI CSS 中的类。
+- jQuery UI 网站上关于交互的文档和演示非常出色。
+
+### 如何使用拖拽和放置交互
+
+显示了如何使用可拖拽和可放置交互。在这里，用户可以拖动页面顶部三个产品中的任何一个，并将其放置到页面底部的购物车。
+
+如 HTML 所示，拖拽和放置目标被定义为元素。在这种情况下，定义可拖拽对象的三个元素包含图像。相比之下，定义拖拽区域的 `div` 元素包含一个 `<p>` 元素，该元素标识该区域为购物车。
+
+jQuery 实现拖拽和放置交互的方法始于选择前三个元素并调用 `draggable()` 方法。该方法包含 `cursor` 选项，用于识别在元素被拖动时应该显示的光标。你可以在网页上正在被拖动的元素上方看到这个光标。
+
+接下来，jQuery 选择第四个元素并调用 `droppable()` 方法。该方法包含一个 `drop` 事件和一个回调函数，该回调函数指示元素进入放置区域的时间。在这种情况下，使用 `addClass()` 方法为元素分配 `ui-state-highlight` 类。该类会将放置区域的背景颜色设置为浅黄色，并将文本颜色设置为深灰色。然后，它使用 `find()` 方法获取 `div` 元素的后代 `<p>` 元素，并使用 `html()` 方法更改 `<p>` 元素中的文本，指示项目已添加到购物车。
+
+在大多数情况下，你会像这里所示一起使用拖拽和放置交互。虽然可以在没有放置交互的情况下单独使用拖拽交互，但让用户拖动一个元素而不提供一个放置它的地方，通常是没有意义的。
+
+#### 正在被拖动到放置元素上的可拖拽元素
+
+##### 元素的 HTML
+
+```html
+<div id="vprospect"><img src="images/vprospect.png"></div>
+<div id="vconvert"><img src="images/vconvert.png"></div>
+<div id="vretain"><img src="images/vretain.png"></div>
+<div id="cart"><p>Your Cart</p></div>
+```
+
+##### 交互的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#vprospect, #vconvert, #vretain").draggable({
+    cursor: "move"
+  });
+  $("#cart").droppable({
+    drop: function(event, ui) {
+      $(this).addClass("ui-state-highlight")
+        .find("p").html("Item added to cart");
+    }
+  });
+});
+```
+
+#### 描述
+
+- 可拖拽元素的 HTML 由一个包含可拖拽元素的 `div` 元素组成。
+- 可放置元素的 HTML 由一个定义可拖拽元素可以放置区域的 `div` 元素组成。
+- 在 jQuery 中，使用 `draggable()` 方法使 `div` 元素变为可拖拽，并使用 `droppable()` 方法使 `div` 元素成为可拖拽元素的目标。
+- jQuery UI 为 `draggable()` 方法提供了多种选项，其中许多选项控制元素可以如何以及在何处被拖动。
+- jQuery UI 也为 `droppable()` 方法提供了选项。例如，`accept` 选项识别可接受的可拖拽元素。
+
+### 如何使用可调整大小交互
+
+显示了如何使用可调整大小交互。在这里，可调整大小交互被应用于文本区域以便可以扩大。然而，可调整大小交互可以用于任何 HTML 元素。
+
+文本区域的 HTML 仅包含起始标签和一个结束标签。然后，jQuery 通过其 id 选择文本区域并调用 `resizable()` 方法。在示例中，`handles` 选项指示区域可以扩大的方向。"se" 代表东南，即右下角。
+
+当你通过拖动角落来调整区域大小时，条纹出现在该角落附近。在 CSS 中指定了 `ui-resizable-se` 类的底部和右侧属性。
+
+#### 可调整大小的文本区域
+
+##### 文本区域的 HTML
+
+```html
+<p>Questions / Comments:</p>
+<textarea id="questions"></textarea>
+```
+
+##### 交互的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#questions").resizable({
+    handles: "se"
+  });
+});
+```
+
+##### 交互的 CSS
+
+```css
+.ui-resizable-se {
+  bottom: 13px;
+  right: 2px;
+}
+```
+
+#### 描述
+
+- 可调整大小交互可以用于任何 HTML 元素。启用可调整大小交互需要使用 jQuery `resizable()` 方法。
+- 默认情况下，你可以拖动元素的底角或右侧或底部来调整大小。要更改此默认设置，使用 `handles` 选项。该选项的值指向方向。
+- 如果通过拖动角落调整元素，条纹会出现在元素附近。如果条纹没有出现在你希望的位置，你可以通过覆盖相应的 jQuery UI CSS 类属性来移动它们。
+- 要限制元素的大小，可以使用 `minWidth`、`minHeight`、`maxWidth` 和 `maxHeight` 选项。你还可以使用 `containment` 选项来限制边界。
+
+### 如何使用可选择交互
+
+显示了如何使用可选择交互，它通常用于提供一种更视觉化的方式来选择一个或多个选项。在这种情况下，可选择交互用于选择由图像表示的一个或多个产品。
+
+在 HTML 中，你可以看到可选择元素被编码为列表中的项。但请注意，任何 HTML 元素或元素组都是可选择的。例如，`div` 元素经常与可选择交互配合。
+
+此示例的 jQuery 代码首先选择列表元素并调用 `selectable()` 方法。在该方法内部，为 `stop` 事件编写了一个回调函数，该事件在交互结束时触发。在这种情况下，每当选择一个产品时，可选择交互就会结束。按住 Ctrl 键点击它们。相反，如果你正在处理包含文本的元素，可以通过在它们周围拖动来选择多个元素。
+
+然后，当你松开鼠标按钮时，可排序交互就会结束。
+
+`stop` 事件的回调函数选择所有被分配了 `ui-selected` 类的元素。因为该类在元素被选中时会自动分配给它，所以包含了所有被选中的元素。然后，在每个选中的元素上调用 `each()` 方法。该方法的回调函数首先选择位于可选择列表之后的 label 中定义的 `span` 元素。然后，使用 `html()` 方法向 `span` 元素添加文本。注意这里，这段文本包含了被选中元素的 `id`，该 id 是通过 `this` 关键字引用的。
+
+由于 `ui-selected` 类没有定义任何属性，被选中的元素外观上与未选中的元素没有区别。要改变这一点，你可以为该类包含 CSS。在示例中，该类在被选中的元素周围添加了一个边框。
+
+#### 可选择元素列表中的被选中元素
+
+##### 可选择元素列表的 HTML
+
+```html
+<p>Select the product that you're interested in:<br></p>
+<ol id="solutions">
+  <li id="vProspect"><img src="images/logo_vprospect.gif"></li>
+  <li id="vConvert"><img src="images/logo_vconvert.gif"></li>
+  <li id="vRetain"><img src="images/logo_vretain.gif"></li>
+</ol>
+<label><span id="selected"></span></label>
+```
+
+##### 交互的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#solutions").selectable({
+    stop: function() {
+      $(".ui-selected").each(function() {
+        $("#selected").html("Product selected: " + this.id);
+      });
+    }
+  });
+});
+```
+
+##### 交互的 CSS
+
+```css
+.ui-selected {
+  border: 1px solid #000;
+}
+```
+
+#### 描述
+
+- 可选择交互可用于制作任何 HTML 元素或可选择元素组。要启用该交互，你使用 `selectable()` 方法。然后你就可以使用标准技术选择一个或多个元素。
+- 尽管将可选择元素定义为列表项是常见的，但你也可以使用其他元素如 `div` 元素。
+- 默认情况下，可选择对象中的所有元素都是可选择的。要改变这一点，你可以使用 `filter` 选项识别可选择元素。
+- 当一个元素被选中时，`ui-selected` 类会自动分配给它。要控制元素在被选中时的显示方式，你可以覆盖该类的属性。
+- 要在可选择交互结束时执行操作，你可以为元素的 `stop` 事件编写回调函数。在该函数内部，你可以使用 `.ui-selected` 类引用每个被选中的元素。
+
+### 如何使用可排序交互
+
+显示了如何使用可排序交互来为一组 HTML 元素提供排序。当一个元素是可排序的，用户可以将其从一个位置拖动到另一个位置。如图所示，当一个元素位于两个可排序元素之间时，会出现一个占位符。然后，用户可以将元素释放到该占位符上以更改顺序。
+
+在大多数情况下，你会像如图所示配合无序列表使用 `sortable()` 交互。然而，你也可以对任何 HTML 元素组使用此交互。
+
+注意此处显示的 HTML，`ui-state-default` 类被分配给可排序列表中的每一行项目。该类提供了图中所示的默认外观。当然，你可以覆盖此类来更改外观。
+
+在可排序交互的 jQuery 中，你选择包含可排序项目的元素。然后，你在该元素上调用 `sortable()` 方法。在示例中，该方法中包含了 `placeholder` 选项。此选项在可排序元素被拖动时，为出现的占位符分配 `ui-state-highlight` 类。
+
+默认情况下，`ui-state-highlight` 类会将占位符周围的边框变为浅黄色，并将占位符的背景颜色变为更浅的黄色。但在示例中，你可以看到该类被添加了 `height` 属性。该属性的值将使占位符的高度与可排序元素相似。
+
+#### 当其中一个项目被拖动时的可排序列表
+
+##### 可排序列表的 HTML
+
+```html
+<ul id="vsupport">
+  <li class="ui-state-default">Blog / To Articles</li>
+  <li class="ui-state-default">Discussion Forum</li>
+  <li class="ui-state-default">Knowledge Base</li>
+  <li class="ui-state-default">Phone Support</li>
+  <li class="ui-state-default">Wiki Support</li>
+</ul>
+```
+
+##### 交互的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#vsupport").sortable({
+    placeholder: "ui-state-highlight"
+  });
+});
+```
+
+##### 交互的 CSS
+
+```css
+.ui-state-highlight {
+  height: 1.5em;
+}
+```
+
+#### 描述
+
+- 可排序交互可用于使任何一组 HTML 元素可排序。要启用该交互，你使用 `sortable()` 方法。
+- 尽管将可排序元素定义为列表项是常见的，但你也可以使用其他元素如 `div` 元素。
+- 要移动元素，请将其拖动到列表中的新位置。当元素位于两个可排序元素之间时，会出现一个占位符，你可以将元素释放到该占位符上。
+- 要美化列表中的元素，你可以为可排序元素分配 `ui-state-default` 类。要美化占位符，你可以为 `placeholder` 选项分配 `ui-state-highlight` 类。
+
+## 如何使用效果
+
+在接下来的主题中，你将学习使用 jQuery UI 提供的许多效果的基本技能。
+
+### 效果简介
+
+展示了 jQuery UI 效果。顶部的表格列出了效果核心组件中的效果。这些效果扩展了 jQuery 提供的效果。例如，jQuery UI 扩展了 `animate()` 方法以提供动画过渡。
+
+此图列出了 jQuery UI 提供的 15 种独立效果。你可以将这些效果应用于组件、交互以及其他 HTML 组件。
+
+要使用这些效果，你必须在下载时包含 jQuery UI 核心组件。此外，你必须包含特定效果组件。例如，要使用 `blind` 效果，必须包含“Effects Blind”组件。两个例外是 `puff` 和 `size` 效果，它们没有独立的组件。相反，它们需要“Effects Scale”组件。
+
+在这里，jQuery UI 网站同样提供了优秀的文档和演示。因此，使用本章入门效果，并在需要扩展所学知识时使用文档演示。
+
+正如你在第 8 章中学到的，当你使用一个基础 jQuery 效果时，可以对其应用 jQuery UI 缓动。如果你想查看这些缓动的完整列表和演示，可以访问 URL：`http://jqueryui.com/effect#easing`。
+
+#### jQuery UI 核心效果
+
+| 效果 | 描述 |
+| --- | --- |
+| 颜色过渡 | 提供背景颜色、边框颜色、文本颜色和轮廓颜色的动画。 |
+| 类过渡 | 在添加、删除或更改类时提供动画支持。 |
+| 缓动 | 为动画元素提供缓动效果。 |
+| 可见性过渡 | 在显示、隐藏或切换元素时为元素应用单独效果。 |
+
+#### jQuery UI 独立特效
+
+| 盲 | 渐变 | 缩放 |
+| --- | --- | --- |
+| 弹跳 | 折叠 | 抖动 |
+| 裁剪 | 高亮 | 尺寸 |
+| 下落 | 喷气 | 滑动 |
+| 爆炸 | 脉动 | 转移 |
+
+#### 描述
+
+- jQuery UI 核心组件通过扩展 jQuery 功能，提供了颜色过渡、类过渡、缓动和可见性过渡。
+- jQuery UI 库包含 15 种独立特效，你可以将它们应用于小部件、交互以及你自己的非 jQuery UI HTML 元素。这些特效中的每一个都需要核心效果组件以及一个独立组件。
+- jQuery UI 网站上的特效文档和演示非常出色。
+- 在第 8 章中，你学习了如何将缓动与特效和动画结合。要查看所有 jQuery UI 缓动的完整列表和演示，你可以访问上述的 URL。
+
+### 如何使用独立特效
+
+要使用独立特效，你可以调用 `effect()` 方法。在该方法的语法中，你可以看到唯一要求的参数是特效名称。不过，除了此参数外，你还可以编写一个或多个选项、一个持续时间和一个回调函数。
+
+在这个示例中，`highlight`（高亮）和 `pulsate`（脉动）特效被应用于可排序列表。如果你参考该图，你会发现列表的 HTML 是完全相同的。然而，在 jQuery 的 `sortable()` 方法中添加了两个事件。
+
+第一个事件在用户开始排序交互时触发。然后，该事件的回调函数会在用户开始拖拽可排序元素时，调用被拖拽元素的 `effect()` 方法。这就是为什么该元素在网页中看起来变暗了。
+
+该特效还编写了一个选项。该选项 `times` 控制元素脉动的次数。默认是五次，但示例中的选项将其更改为了三次。
+
+注意这里，`start` 事件的回调函数接受两个参数：`event` 和 `ui`。虽然在这个示例中没有使用 `event` 参数，但 `ui` 的 `item` 属性被用于识别当前正在被拖拽的元素。你会经常使用这个参数来引用在一组项目中的当前项目。
+
+第二个事件在用户停止释放可排序元素且其位置在列表中发生变化时触发。该事件的回调函数与 `start` 事件的回调函数一样，接受 `event` 和 `ui` 参数。然后，使用 `ui` 的 `item` 属性来选择被拖动到新位置的元素，并调用 `effect()` 方法使用指定的颜色为该元素应用高亮效果，持续两秒。
+
+#### 特效方法的语法
+
+```
+effect(effect[, {options}], duration[, callback])
+```
+
+#### 使用高亮和脉动特效的可排序列表
+
+##### 可排序列表的 HTML
+
+```html
+<ul id="vsupport">
+  <li class="ui-state-default">博客 / 教程文章</li>
+  <li class="ui-state-default">讨论论坛</li>
+  <li class="ui-state-default">知识库</li>
+  <li class="ui-state-default">电话支持</li>
+  <li class="ui-state-default">Wiki 支持</li>
+</ul>
+```
+
+##### 用于特效的 jQuery 代码
+
+```javascript
+$(document).ready(function() {
+  $("#vsupport").sortable({
+    placeholder: "ui-state-highlight",
+    start: function(event, ui) {
+      $(ui.item).effect("pulsate", { times: 3 }, 1000);
+    },
+    update: function(event, ui) {
+      $(ui.item).effect("highlight", { color: "#7fffd4" }, 2000);
+    }
+  });
+});
+```
+
+#### 描述
+
+- 你可以使用 jQuery UI 特效方法为一个或多个元素应用独立特效。该方法唯一要求的参数是特效名称。
+- 如果你将回调函数编写为特效方法的参数，则该函数将在特效执行后被调用。
+- 如果你在回调函数内部编写特效方法，则该函数应该接受 `event` 和 `ui` 参数。`event` 参数包含原始浏览器事件的信息，而 `ui` 参数包含关于所选项目的信息。
+- 你还可以结合 `show()`、`hide()` 和 `toggle()` 方法使用某些独立特效。
+
+### 如何使用颜色过渡
+
+显示了如何使用颜色过渡来实现从一种颜色到另一种颜色的动画。要做到这一点，你使用了在第 8 章学过的 `animate()` 方法。然后，你在属性映射中包含新的颜色属性，并包含一个指示颜色变化所需时间的持续时间。这使得从一种颜色到另一种颜色的过渡更加平滑。
+
+示例使用文本区域来说明颜色过渡是如何工作的。当这种情况发生时，用户可以点击链接来增大文本区域尺寸。当这发生时，文本区域的背景颜色和文本颜色也会发生变化。
+
+此示例的 jQuery 代码包含一个针对链接点击事件的事件处理器。在该事件处理器内部，在文本区域上调用了 `animate()` 方法。然后，该方法的属性映射包含了更改宽度、高度、背景颜色和文本颜色的四个属性。最后，编写了持续时间参数，使该过渡在一秒钟的时间内完成。
+
+注意，当你为颜色过渡指定颜色时，必须使用颜色名称、RGB（红-绿-蓝）值或十六进制值。这意味着你不能使用 CSS3 颜色规范。
+
+#### 点击链接时改变颜色的文本区域
+
+##### 文本区域和链接的 HTML
+
+```html
+<textarea id="comments" style="width:350px;height:125px;"></textarea><br>
+<a href="#" id="grow_textarea">增大区域</a>
+```
+
+##### 用于过渡的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#grow_textarea").click(function() {
+    $("#comments").animate({
+      width: 500,
+      height: 200,
+      backgroundColor: "#ededed",
+      color: "green"
+    }, 1000);
+  });
+});
+```
+
+#### 可动画的颜色属性
+
+| color | borderRightColor |
+| --- | --- |
+| backgroundColor | borderTopColor |
+| borderBottomColor | outlineColor |
+| borderLeftColor | |
+
+#### 描述
+
+- `animate()` 方法已通过 jQuery 扩展以支持颜色过渡。
+- 要使用颜色过渡，你在 `animate()` 方法的属性映射中包含颜色属性。
+- 你可以使用颜色名称、RGB 值或十六进制值来指定颜色。
+- 请参阅第 8 章获取更多关于编写 `animate()` 方法的信息。
+
+### 如何使用类过渡
+
+显示了如何使用类过渡。类过渡在指定时间内更改分配给一个或多个元素的类，因此变化是渐进的。你可以结合在第 7 章学过的 `addClass()`、`removeClass()` 和 `toggleClass()` 方法使用类过渡。你还可以结合 `switchClass()` 方法使用它们，它是 jQuery UI 核心效果组件的一部分。
+
+#### 类切换方法的语法
+
+```
+addClass(className, duration)
+removeClass([className], duration)
+toggleClass([className], duration)
+switchClass(removeName, addName)
+```
+
+#### 尺寸改变前后的文本
+
+#### 类切换的 HTML
+
+```html
+<p>更改尺寸：</p>
+<input type="button" id="button1" value="Medium">
+<input type="button" id="button2" value="Large">
+<input type="button" id="button3" value="X-Large">
+<h2>欢迎</h2>
+<p id="p1">... 在此处插入内容 ...</p>
+```
+
+#### 用于类切换的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#button1").click(function() { setSize("medium"); });
+  $("#button2").click(function() { setSize("large"); });
+  $("#button3").click(function() { setSize("x_large"); });
+});
+
+function setSize(size) {
+  $("#p1").removeClass();
+  $("#p1").addClass(size, 1000);
+}
+```
+
+#### 用于类的 CSS
+
+```css
+.medium {font-size: 100%;}
+.large {font-size: 120%;}
+.x_large {font-size: 150%;}
+```
+
+#### 描述
+
+- jQuery UI 提供了在指定的持续时间内两个类之间进行切换动画的功能。该动画可以应用于任何包含数值的属性。
+- 使用 `addClass()`、`removeClass()`、`toggleClass()` 和 `switchClass()` 方法可以应用类切换。
+
+### 如何使用可见性过渡
+
+显示了如何使用可见性过渡在元素显示或隐藏时对其应用单个效果。要做到这一点，你需要使用在第 8 章中学过的 `show()`、`hide()` 和 `toggle()` 方法。你可以在此图顶部看到这些方法的语法。除了方法名外，该语法与你在前面看到的 `effect()` 方法的语法相同。
+
+为了说明可见性过渡的工作原理，示例展示了一个带有可以显示或隐藏的子菜单的菜单。在这里，主菜单实现为一个无序列表，每个列表项包含一个子菜单 `<a>` 元素。在这里，第三个列表项后面是一个包含三个 `<a>` 元素子菜单的 `div` 元素。
+
+此示例的 jQuery 包含一个针对包含子菜单的列表项点击事件的事件处理器。在此处理程序内部，当调用 `toggle()` 方法时，包含子菜单的 `div` 元素会被隐藏，这会导致子菜单显示。如果子菜单是显示状态，则会将其隐藏。
+
+`toggle()` 方法上编写了两个参数。第一个用于显示和隐藏子菜单的效果。在这种情况下，使用了 `blind`（百叶窗）效果，这会导致子菜单像垂直百叶窗一样下降和上升。第二个参数是效果的持续时间，在本例中为半秒。
+
+#### 可见性过渡方法的语法
+
+```
+show|hide|toggle(effect, {options}, [duration], callback)
+```
+
+#### 用于显示和隐藏子菜单的可见性过渡
+
+##### 带有包含子菜单项的菜单的 HTML
+
+```html
+<ul>
+  <li><a href="index.html">首页</a></li>
+  <li><a href="about.html">关于我们</a></li>
+  <li><a href="#" id="solutions">解决方案</a></li>
+  <div id="solutions_menu">
+    <a href="solutions.html?vprospect">vProspect 2.0</a>
+    <a href="solutions.html?vconvert">vConvert 2.0</a>
+    <a href="solutions.html?vretain">vRetain 1.0</a>
+  </div>
+  <li><a href="support.html">支持</a></li>
+  <li><a href="contact.html">联系我们</a></li>
+</ul>
+```
+
+##### 用于可见性过渡的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#solutions").click(function() {
+    $("#solutions_menu").toggle("blind", 500);
+  });
+});
+```
+
+#### 描述
+
+- jQuery UI 提供使用 `show()`、`hide()` 和 `toggle()` 方法对元素应用单个效果。
+- 所有单个效果中，除了 `bounce`、`highlight`、`pulsate`、`shake`、`size` 和 `transfer` 外，都可以通过这些方法应用。
+
+## 观点
+
+有了这些信息，你现在应该能够使用任何小部件、交互和效果。
+
+## 术语
+
+- 颜色过渡
+- 类过渡
+- 可见性过渡
+
+## 总结
+
+- jQuery UI 提供了增强元素可用性的交互：`draggable()`（可拖拽）、`droppable()`（可放置）、`resizable()`（可调整大小）、`selectable()`（可选）、`sortable()`（可排序）。
+- 使用交互需要引入 jQuery UI 核心库。
+- 效果可以分为两类：核心效果和独立特效。
+- jQuery UI 核心效果提供了：颜色过渡、类过渡、缓动、可见性过渡。
+- 实现类过渡，使用 `addClass()`、`removeClass()`、`toggleClass()` 和 `switchClass()` 方法。
+- 实现可见性过渡，使用 `show()`、`hide()` 和 `toggle()` 方法。
+
+## 练习 13-1 使用 sortable
+
+在此练习中，你将像前面示例那样实验 `sortable()`。
+
+### 查看文本编辑器
+
+1. 使用你的文本编辑器打开 `c:\jquery\exercises\ch13\sortable\` 下的文件。
+2. 运行应用程序。然后，尝试将项目拖到列表之外。
+
+### 为 sortable 方法添加更多选项
+
+3. 为 `sortable()` 方法添加 `containment` 选项，并将 "parent" 或包含列表元素的 id ("vsupport") 作为其值。然后，运行应用程序，注意你无法将项目拖到列表的右侧或左侧、下方或第一个项目上方。
+4. 注释掉 `containment`。然后添加 `items` 选项以指示列表中的所有项目都是可排序的。要实现这一点，在 HTML 中除最后一个项目外的所有项目添加一个名为 "sortable" 的类，并使用该类作为选项的值。
+5. 为 `sortable()` 方法添加 `revert` 选项，并将其值设置为 `true`。然后，运行应用程序，将项目拖到新位置，注意项目将滑入新位置，而不是弹到那里。
+
+### 为 sortable 方法添加两个事件
+
+6. 为 `sortable()` 方法添加一个 `start` 事件，其回调函数接受 `event` 和 `ui` 参数，类似于前面示例中的 `start` 选项。在此函数内部，使用 `removeClass()` 方法移除被拖拽项目的 `ui-state-default` 类。要引用此项目，使用 `ui` 参数的 `item` 属性。然后，使用 `addClass()` 方法为项目添加 `ui-state-active` 类。
+7. 运行应用程序并将项目拖到新位置。注意当开始拖动时，项目的外观会发生变化。然而，当你放到新位置时，外观并不会改变。
+8. 为了修复这个问题，为 `sortable()` 添加一个 `stop` 事件。该事件的回调函数应该像 `start` 事件的函数一样工作，只是它应该移除 `ui-state-active` 类并添加 `ui-state-default` 类。
+
+## 练习 13-2 使用过渡效果
+
+在此练习中，你将通过添加 jQuery UI 颜色和可见性过渡效果，增强一个使用 jQuery 效果和动画的应用程序。
+
+### 检查应用程序
+
+1. 使用文本编辑器打开此文件夹中的 HTML 文件：`c:\jquery\exercises\ch13\animation\`
+2. 运行应用程序，注意“jQuery FAQs”标题执行的 jQuery 动画。然后，点击一个子标题以显示问题的答案，再次点击标题将其隐藏。
+
+### 增强标题的动画
+
+3. 参考颜色过渡示例，为标题添加颜色动画。在第一个动画中，将背景颜色从初始的白色变为蓝色，并将文本颜色从初始的蓝色变为红色。在第二个动画中，反转颜色变化。
+
+### 增强子标题的效果
+
+4. 参考可见性过渡示例，将 `h2` 标题的 `toggle()` 方法中的 `slideUp()` 和 `slideDown()` 方法更改为带有可见性过渡效果的 `show()` 和 `hide()` 方法。对于 `show()` 方法，使用耗时 500 毫秒的 jQuery UI `bounce` 效果。对于 `hide()` 方法，使用耗时 1500 毫秒的 jQuery UI `puff` 效果。
+5. 访问此 URL 查看 jQuery UI 提供的效果：`http://jqueryui.com/effect/` 然后，在此应用程序中尝试另外两种效果。
+
+## 第 4 节：Ajax、JSON 和 API 基础
+
+本节的三个章节将向你展示如何使用 Ajax、如何使用 JSON 数据，以及如何结合一些最流行网站的 API（应用程序接口）使用 Ajax。这些都是开发现代网站的重要技能。
+
+在第 14 章中，你将学习如何使用 Ajax 从 Web 服务器加载 HTML、XML 和 JSON 数据，而无需加载新网页。本章还将向你展示如何使用 Ajax 结合 Google Blogger 的 API 来加载博客。这是 Ajax 的典型用法。
+
+随后在第 15 章中，你将学习如何使用 Ajax 结合另外三个流行网站（YouTube、Twitter 和 Flickr）的 API。在第 16 章中，你将学习如何使用 Google Maps 的 API。当你完成这些章节后，你将能够在探索其他网站的 API 时应用所学知识。
+
+## 第 14 章：如何使用 Ajax、JSON 和 Blogger
+
+本章展示了如何使用 Ajax 使用 HTML、XML 或 JSON 数据更新网页，而无需在浏览器中加载新网页。由于 Ajax 常用于从流行网站获取数据，本章还展示了如何使用 Ajax 结合 Google Blogger 的 API 进行操作。
+
+### Ajax 简介
+
+接下来的四个主题将为你介绍 Ajax、Ajax 常用的数据类型以及作为 Ajax 基础的 `XMLHttpRequest` 对象。
+
+#### Ajax 的工作原理
+
+Ajax 是 Asynchronous JavaScript and XML（异步 JavaScript 和 XML）的缩写。如图所示，Google 的自动建议功能是一个典型的 Ajax 应用。当你输入搜索条目的开头时，Google 使用 Ajax 获取你目前输入的术语和项目链接。Ajax 在不刷新页面的情况下完成操作，因此用户不会遇到任何延迟。这有时被称为“局部刷新”。
+
+为了实现这一功能，所有现代浏览器都提供了一个 `XMLHttpRequest` 对象（或 XHR 对象），用于向 Web 服务器发送请求并接收服务器返回的数据。此外，浏览器中使用的 JavaScript 用于发布请求、解析返回的数据并修改 DOM，以便页面反映返回的数据。在许多情况下，请求将包含告知服务器应该返回什么的数据。
+
+在 Web 服务器上，通常使用应用程序或脚本来返回所请求的数据。通常，这些程序或脚本会在 JavaScript 开发者使用它们之前就已经编写好，以便他们知道如何编码请求。其他 JavaScript 开发者和服务器端开发者需要协调，以便服务器能够处理 Ajax 请求。
+
+#### Ajax 的常用数据格式
+
+展示了 Ajax 应用的三种常用数据格式。最易用的是 HTML，你已经对它非常熟悉。当你使用 Ajax 将 HTML 数据加载到网页中时，你不需要解析数据，因为它已经包含了数据的 HTML 标签。相比之下，当你处理 XML 或 JSON 数据时，就必须对数据进行解析。
+
+如今，XML（可扩展标记语言）是处理 Ajax 时最流行的格式，以至于 XML 已经成为了 Ajax 名称的一部分。XML 是一种开放标准的、与设备无关的格式，用于在互联网上交换数据，其语法和文档树模仿了 HTML。XML 的缺点是 JavaScript 和 jQuery 用来解析 XML 文件中的数据相对较困难。
+
+JSON（读作 "Json"）代表 JavaScript 对象表示法，它在 Ajax 应用中的人气正在迅速增长。这种格式易于理解，而且大多数服务器端语言已经提供了 JSON 编码的函数。例如，PHP 拥有 `json_encode()` 函数，而 ASP.NET 拥有 `DataContractJsonSerializer`。
+
+JSON 基于 JavaScript 编程语言的子集，并使用了像 C、C++、Java 和 JavaScript 等 C 风格语言程序员熟悉的约定。由于它的结构是作为对象返回的名称/值对的层级结构，因此使用 JavaScript 和 jQuery 解析 JSON 数据相对容易。
+
+虽然 HTML、XML 和 JSON 是处理 Ajax 时最流行的三种数据格式，但它们并不是唯一支持的。事实上，你也可以对纯文本、YAML 和 CSV 文件使用 Ajax。
+
+##### Ajax 的常用数据格式
+
+| 格式 | 说明 | 文件扩展名 |
+| --- | --- | --- |
+| HTML | 超文本标记语言 | .html |
+| XML | 可扩展标记语言 | .xml |
+| JSON | JavaScript 对象表示法 | .json |
+
+##### XML 数据
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<management>
+  <teammember>
+    <name>Agnes</name>
+    <title>财务部副总裁</title>
+    <bio>With over 14 years of public accounting ...</bio>
+  </teammember>
+  <teammember>
+    <name>Wilbur</name>
+    <title>创始人兼首席执行官</title>
+    <bio>While Wilbur is the founder and CEO ...</bio>
+  </teammember>
+</management>
+```
+
+##### JSON 数据
+
+```json
+{
+  "teammembers": [
+    {
+      "name": "Agnes",
+      "title": "财务部副总裁",
+      "bio": "With over 14 years of public accounting ..."
+    },
+    {
+      "name": "Wilbur",
+      "title": "创始人兼首席执行官",
+      "bio": "While Wilbur is the founder and CEO ..."
+    }
+  ]
+}
+```
+
+##### 说明
+
+- 处理 Ajax 的常用数据格式是 HTML、XML 和 JSON。
+- XML（可扩展标记语言）是一种开放标准的、与设备无关的格式，由浏览器中的 JavaScript 或 jQuery 进行解析。
+- JSON（JavaScript 对象表示法）正成为 Ajax 应用中最流行的格式。事实上，JSON 文件比 XML 文件更小、更快速。由于 JSON 数据是以 JavaScript 对象的形式返回的，它们也更容易解析。
+- 大多数服务器端语言都有可以在服务器上用于编码 JSON 数据的方法。例如，PHP 5 拥有 `json_encode()` 方法，ASP.NET 4 拥有 `DataContractJsonSerializer` 类。
+- 有关你喜爱的编程语言中内置的 JSON API 的更多信息，可以访问 `www.json.org`。
+
+#### XMLHttpRequest 对象的成员
+
+展示了 `XMLHttpRequest` 对象的所有成员（方法、属性和事件）。无论请求什么类型的数据，每个 Ajax 请求背后都有这个对象。
+
+每次请求都会使用的两个方法是 `open()` 和 `send()` 方法。`open()` 方法用于为请求打开连接。如 `open()` 方法的参数所示，该方法指定了请求是 GET 还是 POST 请求，并提供了请求的 URL。
+
+在使用 `open()` 方法之后，使用 `send()` 方法发送请求。如有必要，该方法可以包含一个 `data` 参数，告诉服务器返回什么内容。
+
+如属性列表所示，`readyState` 属性指示对象的状态：0 是 UNSENT（未发送），1 是 OPENED（已打开），2 是 HEADERS_RECEIVED（已接收头部），3 是 LOADING（加载中），4 是 DONE（完成）。`status` 和 `statusText` 属性提供服务器返回的状态码和状态消息，`responseText` 和 `responseXML` 属性提供以纯文本或 XML 格式返回的数据。
+
+最后一个成员是 `onreadystatechange` 事件，它可以用于处理返回数据的事件处理程序。
+
+顺便提到，GET 和 POST 方法与 HTML 表单使用的方法相同。当你使用 GET 方法时，数据作为 URL 的一部分发送到网络服务器，但可以发送的数据总量是有限的。当你使用 POST 方法时，发送的数据是隐藏且无限制的。
+
+##### XMLHttpRequest 对象的成员
+
+| 方法 | 说明 |
+| --- | --- |
+| `abort()` | 取消当前请求。 |
+| `getAllResponseHeaders()` | 返回包含所有响应头名称和值的字符串。 |
+| `getResponseHeader(name)` | 返回特定响应头的值。 |
+| `open(method, url)` | 为请求打开连接。 |
+| `send([data])` | 启动请求。 |
+
+| 属性 | 说明 |
+| --- | --- |
+| `readyState` | 表示对象状态的数值：0=UNSENT, 1=OPENED, 2=HEADERS_RECEIVED, 3=LOADING, 4=DONE。 |
+| `status` | 服务器返回的状态码。常见值包括成功的 200 和未找到的 404。 |
+| `statusText` | 服务器返回的状态消息。 |
+| `responseText` | 以文本返回的内容。 |
+| `responseXML` | 以 XML 格式返回的内容。 |
+
+| 事件 | 说明 |
+| --- | --- |
+| `onreadystatechange` | 当请求状态改变时发生的事件。 |
+
+#### 如何使用 XMLHttpRequest 对象
+
+网页使用 XHR 对象和 JavaScript 加载 XML 数据。
+
+##### XML 文件
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<management>
+  <teammember>
+    <name>Agnes</name>
+    <title>Vice President of Accounting</title>
+    <bio>With over 14 years of public accounting ...</bio>
+  </teammember>
+  ...
+</management>
+```
+
+##### 接收数据的 HTML div 元素
+
+```html
+<div id="team"></div>
+```
+
+##### 用于获取和解析数据的 JavaScript
+
+```javascript
+$(document).ready(function() {
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      var xmlDoc = xhr.responseXML;
+      var team = xmlDoc.getElementsByTagName("teammember");
+      var html = "";
+      for (var i = 0; i < team.length; i++) {
+        html += xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue + "<br>";
+        html += xmlDoc.getElementsByTagName("title")[i].childNodes[0].nodeValue + "<br>";
+        html += xmlDoc.getElementsByTagName("bio")[i].childNodes[0].nodeValue + "<br>";
+      }
+      document.getElementById("team").innerHTML = html;
+    }
+  };
+  xhr.open("GET", "team.xml", true);
+  xhr.send();
+});
+```
+
+##### 说明
+
+- 此应用程序使用 XHR 对象加载网页上名为 `team.xml` 文件中的所有团队成员，并将其显示在 ID 为 "team" 的 `div` 元素中。
+- `onreadystatechange` 事件的处理程序在 `readyState` 为 4 且状态为 200 时，解析该方法返回的数据。
+
+### 如何使用 jQuery 简写方法进行 Ajax
+
+在本主题中，你将学习如何使用 jQuery 提供的用于 Ajax 的简写方法。
+
+#### 用于 Ajax 的 jQuery 简写方法
+
+图 14-5 总结了用于 Ajax 的 jQuery 方法。在这里，使用 `load()` 方法来获取 HTML 数据。`$.get()` 和 `$.post()` 方法通常用于获取 XML 数据，这是这些方法的默认数据类型。而 `$.getJSON()` 方法则用于获取 JSON 数据。
+
+示例展示了这些方法是如何工作的。第一个示例使用 `load()` 方法从一个名为 `solutions.html` 的文件加载 HTML。第二个示例使用 `$.get()` 方法加载 XML 数据。第三个示例使用 `$.getJSON()` 方法加载 JSON 数据。
+
+在第二个示例中，`$.get()` 方法的代码中包含三个参数。第一个参数是 PHP 脚本的 URL，该脚本将处理 Ajax 请求。第二个参数以字符串的形式向请求传递数据。这些数据将用于 PHP 脚本以确定返回什么数据。第三个参数指定了请求成功时将调用的函数名称。
+
+在第三个示例中，`$.getJSON()` 方法的 URL 指向一个 JSON 文件。该方法没有 data 参数，其 success 参数由一个嵌入函数组成，请求成功时将调用该函数。
+
+图中还包含了 `$.each()` 方法。该方法通常用于处理由 Ajax 请求返回的数据。
+
+##### 用于 Ajax 的简写方法
+
+| 方法 | 描述 |
+| :--- | :--- |
+| `load(url, [data], success)` | 加载 HTML 数据。 |
+| `$.get(url, [data], success)` | 使用 GET 请求加载数据。 |
+| `$.post(url, [data], success)` | 使用 POST 请求加载数据。 |
+| `$.getJSON(url, [data], success)` | 使用 GET 请求加载 JSON 数据。 |
+
+##### 简写方法的参数
+
+| 参数 | 描述 |
+| :--- | :--- |
+| `url` | 请求的字符串。 |
+| `data` | 发送到服务器的 map 或字符串，用于过滤返回的数据。 |
+| `success` | 请求成功时执行的函数。 |
+| `dataType` | 指定数据的类型（html, xml, script 或 text）。默认是 XML。 |
+
+##### 处理数据的 $.each() 方法
+
+| 方法 | 描述 |
+| :--- | :--- |
+| `$.each(collection, callback)` | `collection` 是一个对象或数组。`callback` 是对 `collection` 中的每项执行的函数。 |
+
+##### 一个 load() 方法
+
+```javascript
+$("#solution").load("solutions.html");
+```
+
+##### 一个包含数据和回调的 get() 方法
+
+```javascript
+$.get("manager.php", "name=agnes", showManager);
+```
+
+##### 一个带有嵌入函数的 getJSON() 方法
+
+```javascript
+$.getJSON("team.json", function(data){
+  // success 语句
+});
+```
+
+#### 描述
+
+- jQuery 包含了几种简写方法，允许你请求并接收 HTML、XML 或 JSON 数据。
+- 所有的简写方法都允许 Web 服务器过滤结果，只返回结果。你可以通过字符串或 map 发送这些数据。
+- `$.get()` 和 `$.post()` 方法唯一的区别是用于请求的方法（GET 或 POST）。
+- `$.each()` 方法用于处理返回数据中的项。
+
+### 如何使用 load() 方法加载 HTML 数据
+
+显示了如何使用 `load()` 方法通过 Ajax 请求加载 HTML 数据。在此示例中，`solutions.html` 文件中编写了三个 `div` 元素。这些元素的 id 为 "vprospect"、"vconvert" 和 "vretain"，指的是三个产品。当用户点击产品链接时，会加载这些元素之一。
+
+你可以在此应用程序的 jQuery 中看到它是如何工作的。它包含了点击事件处理器。在这些链接的 `load()` 方法中，URL 不仅包含 HTML 文件名，还包含了该 `div` 元素的引用。例如：
+
+```javascript
+$("#solution").load("solutions.html #vconvert");
+```
+
+获取 ID 为 `vconvert` 的 `div` 元素的 HTML。使用 Ajax 请求 HTML 元素的好处是数据已经在 HTML 元素中，可以通过页面 CSS 进行格式化。这意味着你不需要解析请求返回的数据。相比之下，你需要解析返回的 XML 或 JSON 数据。
+
+另外，你应该知道，如果你使用 Firefox、IE 或 Safari 浏览器测试 `load()` 方法，即使 HTML 文件在你的文件服务器上也可以正常工作。但如果你使用 Chrome 或 Opera，则 HTML 文件需要放在 Web 服务器上。
+
+#### 点击链接之一时，网页加载元素
+
+##### 用户界面的 HTML
+
+```html
+<p>你对 Vecta Corp. 的哪个解决方案感兴趣？</p>
+<a id="vprospect" href="#">vProspect 2.0</a>
+<a id="vconvert" href="#">vConvert 2.0</a>
+<a id="vretain" href="#">vRetain 1.0</a>
+<div id="solution"></div>
+```
+
+##### solutions.html 文件中第二个 div 元素的开始
+
+```html
+<div id="vconvert">
+  <p><strong>vConvert 2.0</strong></p>
+  <p><img src="images/logo_vconvert.gif" width="63" height="36"> 创建一个非常易用且易于导航的信息 ...</p>
+  <ul>
+    <li>构建一个视觉化功能性前端，以...</li>
+    <li>在用户中引起预期的情感反应，以...</li>
+  </ul>
+</div>
+```
+
+##### 点击链接时加载数据的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#vprospect").click(function() {
+    $("#solution").load("solutions.html #vprospect");
+  });
+  $("#vconvert").click(function() {
+    $("#solution").load("solutions.html #vconvert");
+  });
+  $("#vretain").click(function() {
+    $("#solution").load("solutions.html #vretain");
+  });
+});
+```
+
+### 如何使用 $.get() 或 $.post() 方法加载 XML 数据
+
+示例展示了如何使用 `$.get()` 从网络服务器加载 XML 数据。请记住，`$.post()` 方法的工作方式相同，不同之处在于 POST 方法用于发送请求。
+
+此示例中 `$.get()` 方法的第一个参数是请求将加载的 XML 文件的 URL。在这里，该 URL 是相对于包含 jQuery 代码的文件的相对路径。然后，第二个参数是用于处理返回数据的函数。该函数的参数是请求返回的数据。
+
+在该函数内部，第一条语句将接收处理后数据的 HTML 元素的值设置为空字符串。然后，为了处理返回的数据，它查找了返回给名为 "management" 和 "teammember" 的 XML 项目子节点的数据，并且每个方法都链式到这些子节点上，以便用于处理每个团队成员。
+
+`$.each()` 方法中的第一条语句将新变量 `xmlDoc` 设置为 `this` 关键字的值，这里的 `this` 指的是正在被处理的团队成员。然后，下一语句将该团队成员的数据追加到接收处理后数据的 `div` 元素中。在 `append()` 方法的参数内部，通过 `find()` 方法获取返回数据中 "name"、"title" 和 "bio" 项目的数据，并使用 `text()` 方法获取这些项目的文本。
+
+为了保持应用程序的简单，返回数据的格式是受到限制的。具体来说，name 字段被解析为 `h3` 元素，并在 title 和 bio 字段之后添加 `br` 元素以在这些字段后留空。
+
+要测试 `$.get()` 和 `$.post()` 方法，文件必须位于网络服务器上，而不是文件服务器。具体来说，XML 文件必须与发送请求的网页处于同一域内。这是由于大多数浏览器使用的跨域安全策略要求的。
+
+#### 加载 XML 数据的网页
+
+##### XML 文件
+
+```xml
+<management>
+  <teammember>
+    <name>Agnes</name>
+    <title>Vice President of Accounting</title>
+    <bio>With over 14 years of public accounting ... </bio>
+  </teammember>
+  ....
+</management>
+```
+
+##### 接收数据的 HTML 元素
+
+```html
+<div id="team"></div>
+```
+
+##### jQuery
+
+```javascript
+$(document).ready(function() {
+  $.get("team.xml", function(data) {
+    $(data).find("management").children().each(function() {
+      var xmlDoc = $(this);
+      $("#team").append("<h3>" +
+        xmlDoc.find("name").text() + "</h3>" +
+        xmlDoc.find("title").text() + "<br>" +
+        xmlDoc.find("bio").text() + "<br>");
+    });
+  });
+});
+```
+
+#### 描述
+
+- `$.get()` 和 `$.post()` 方法相同，仅用于 XHR 请求中发送数据的方法不同。
+- 你可以使用 jQuery 的 `find()` 方法获取 XML 文件中的数据。在这里，第一个 `find()` 方法启动了一个链，获取返回的 management 数据的子节点（团队成员），其他 `find()` 方法获取每个团队成员的 name、title 和 bio 字段。
+
+### 如何使用 $.getJSON() 方法加载 JSON 数据
+
+展示了如何使用 `$.getJSON()` 方法。第一个参数提供了带有 `.json` 扩展名的 JSON 文件的 URL。然后，第二个参数是请求成功后处理 JSON 数据的函数。注意，该函数中的参数是一个将接收请求数据的对象。
+
+在函数内部，第一个 `$.each()` 方法处理返回对象中的每个项目集合。在这种情况下，对象包含一个单一的团队成员集合。该函数的第一个参数是请求返回的对象。然后，第二个参数是一个使用另一个 `$.each()` 方法处理集合中每个项目的函数。在这里，每个项目都是一个团队成员。
+
+第二个 `$.each()` 方法的第一个参数是 `this` 关键字，它引用当前的团队成员。由于每个团队成员的数据由键/值对组成，第二个参数的函数接受一个键和一个值。在该函数内部，name、title 和 bio 项目被追加到 ID 为 "team" 的 `div` 元素中。
+
+为了引用内部循环中每个数据项的值，此示例使用了如下的符号表示法：
+
+```javascript
+value.name
+```
+
+这指的是内部循环中当前项目对象中的 name。例如，如果这个内部循环正在为第二个团队成员执行，那么 `value.name` 的数据是 Damon，`value.title` 的数据是 Director of Development。这显示了解析 JSON 数据比 XML 简单得多。
+
+通常情况下，要测试 `$.getJSON()` 方法，文件必须位于网络服务器上，而不是文件服务器。具体来说，JSON 文件必须与发送请求的网页处于同一域内。
+
+#### 加载 JSON 数据的网页
+
+##### JSON 文件
+
+```json
+[
+  {
+    "name": "Agnes",
+    "title": "Vice President of Accounting",
+    "bio": "With over 14 years of public accounting ..."
+  },
+  {
+    "name": "Damon",
+    "title": "Director of Development",
+    "bio": "Damon has been developing web applications ..."
+  }
+]
+```
+
+##### 接收数据的 HTML 元素
+
+```html
+<div id="team"></div>
+```
+
+##### jQuery
+
+```javascript
+$(document).ready(function() {
+  $.getJSON("team.json", function(data) {
+    $.each(data, function(key, value) {
+      $("#team").append("<h3>" + value.name + "</h3>" +
+        value.title + "<br>" + value.bio + "<br>");
+    });
+  });
+});
+```
+
+#### 描述
+
+- `$.getJSON()` 方法使用 GET 请求加载 JSON 数据。
+- 返回的数据是一个 JavaScript 对象或数组，可以直接使用 `$.each()` 方法遍历。
+- 解析 JSON 数据比 XML 简单得多，因为数据已经是 JavaScript 对象格式。
+
+
+
+# 使用 Ajax 请求发送数据的两种方式
+
+## 使用字符串作为 data 参数的 $.get 方法
+
+```javascript
+$(document).ready(function() {
+  $.get("getmanager.php", "name=wilbur", showManager);
+  function showManager(data) {
+    // process data
+  }
+});
+```
+
+## 使用 map（映射对象）作为 data 参数的 $.get 方法
+
+```javascript
+$(document).ready(function() {
+  $.get("getmanager.php", {name:"wilbur"}, showManager);
+  function showManager(data) {
+    // process data
+  }
+});
+```
+
+## 用于处理 Ajax 的辅助方法
+
+| Function | 说明 |
+| --- | --- |
+| `serialize()` | 将一组表单元素编码为字符串，该字符串可用于 Ajax 请求的 `data` 参数 |
+| `serializeArray()` | 将一组表单元素编码为名称/值对数组，该数组可用于 Ajax 请求的 `data` 参数 |
+
+## 表单的 HTML
+
+```html
+<form id="contactForm">
+  <!-- 表单的控件 -->
+</form>
+```
+
+## 使用 serialize 方法的 jQuery
+
+```javascript
+$(document).ready(function() {
+  var formData = $("#contactForm").serialize();
+  $.get("processcontact.php", formData, processReturnedData);
+  function processReturnedData(data) {
+    // 成功函数的语句
+  }
+});
+```
+
+## 描述
+
+- 当你使用 Ajax 请求发送数据时，URL 指向服务器端脚本（如 PHP 文件）。然后，该脚本负责以 XML 或 JSON 格式返回数据。
+- jQuery 方法中的 `data` 参数是一个名称/值对，既可以是查询字符串，也可以是 map（对象字面量）。
+- jQuery 的 Ajax 辅助函数方便你在将数据发送到服务器之前对其进行打包。
+
+# 如何使用 $.ajax 方法处理 Ajax
+
+尽管你可以在许多 Ajax 应用中使用快捷方法，但 `$.ajax` 方法为发起 Ajax 请求提供了更多选项。
+
+## $.ajax 方法的语法
+
+`$.ajax(( options ))`
+
+## $.ajax 方法的某些选项
+
+| Options | 说明 |
+| --- | --- |
+| `url` | 请求发送到的目标 URL 字符串。 |
+| `beforeSend(jqXHR, settings)` | 在请求发送之前执行的函数。它可以传递两个参数：`jqXHR` 对象和该对象的设置 map 对象。 |
+| `cache` | 一个布尔值，决定浏览器是否可以缓存响应。 |
+| `complete(jqXHR, status)` | 在请求完成后执行的函数。它可以接收两个参数：`jqXHR` 对象以及一个表示请求状态的字符串。 |
+| `data` | 随请求发送到服务器的 map 或字符串，通常用于过滤返回的数据。 |
+| `dataType` | 指定数据类型（html, xml, json, script 或 text）的字符串。 |
+| `error(jqXHR, status, error)` | 如果请求失败则执行的函数。它可以接收三个参数：`jqXHR` 对象、一个表示错误类型的字符串，以及一个接收 HTTP 状态文本的异常对象。 |
+| `jsonp` | 包含要传递到服务器的 JSON 参数的字符串。默认值为 `"callback"`。 |
+| `password` | 包含密码的字符串，用于响应 HTTP 身份验证挑战。 |
+| `success(data, status, jqXHR)` | 如果请求成功则执行的函数。它可以接收三个参数：返回的数据、描述状态的字符串以及 `jqXHR` 对象。 |
+| `timeout` | 请求被视为失败请求超时之前可以持续的毫秒数。 |
+| `type` | 指定请求方法（GET 或 POST）的字符串。 |
+| `username` | 用于响应 HTTP 身份验证挑战的用户名字符串。 |
+
+## 描述
+
+- `$.ajax` 方法提供了许多选项，让你对请求的工作方式有更多的控制，例如处理错误的函数。
+- `jqXHR` 对象是 `XMLHttpRequest` 对象的超集，提供了该对象的属性。
+- JSONP（或“带填充的 JSON”）是一种允许你从不同域的服务器请求数据的方法，这通常由于浏览器的跨域安全策略是被禁止的。
+
+# 如何使用 $.ajax 方法加载数据
+
+当成功时，此应用程序类似于前文示例。然而，`$.ajax` 方法将 `timeout` 选项设置为 10000 毫秒以便发生超时。此外，除了完成函数外，还提供了两个函数。
+
+在 `beforeSend` 选项中，你可以看到在请求发送之前执行的函数。它在 div 元素中显示“Loading...”。
+
+在 `error` 选项中，你可以看到在请求失败时执行的函数。该函数带有三个参数：XHR 对象的 `xhr`、描述错误类型的字符串 `status` 以及接收 HTTP 状态文本的 `error`。在此函数内部，使用 `alert` 方法显示请求状态（`xhr.status`）、一个连字符，然后 HTTP 状态的文本部分（`error`）。
+
+在 `success` 选项中，你可以看到处理返回数据的函数。该函数有一个名为 `response` 的参数，用于接收请求返回的数据。该函数的第一条语句使用 `html` 方法将 id 为 `"team"` 的 div 元素的数据设置为空字符串。这替换了在处理请求期间显示的“Loading...”消息。
+
+紧随该语句的是一条 jQuery 语句，它使用 `find` 方法查找 XML 文件中的“management”数据，使用 `children` 方法获取管理数据中的元素（团队成员），并使用 `each` 方法处理每个元素的数据。在 `each` 方法的函数中，变量 `xmlDoc` 被设置为 `this` 关键字，它代表正在被循环处理的团队成员。
+
+## 一个带有加载消息和错误警告对话框的网页
+
+| 首页 | Vecta Corp. 管理团队 |
+|---|---|
+| 关于我们 | 加载中... |
+| 解决方案 | 错误: 404 - 未找到 |
+| 支持 | [确定] |
+| 联系我们 | |
+
+## XML 文件
+
+```xml
+<management>
+  <teammember>
+    <name>Agnes</name>
+    <title>财务部副总裁</title>
+    <bio>With over 14 years of public accounting ...</bio>
+  </teammember>
+</management>
+```
+
+## 接收数据的 div 元素
+
+```html
+<div id="team"></div>
+```
+
+## jQuery
+
+```javascript
+$(document).ready(function() {
+  $.ajax({
+    type: "get",
+    url: "team.xml",
+    beforeSend: function() { $("#team").html("Loading..."); },
+    timeout: 10000,
+    error: function(xhr, status, error) {
+      alert("Error: " + xhr.status + " - " + error);
+    },
+    dataType: "xml",
+    success: function(data) {
+      $("#team").html("");
+      $(data).find("management").children().each(function () {
+        var xmlDoc = $(this);
+        $("#team").append("<h3>" +
+          xmlDoc.find("name").text() + "<br>" +
+          xmlDoc.find("title").text() + "<br>" +
+          xmlDoc.find("bio").text() + "<br></h3>");
+      });
+    }
+  });
+});
+```
+
+## 描述
+
+- 成功时，此应用程序的工作类似于前文示例。然而，除了成功完成请求的函数外，它还提供了一个超时值和两个函数。
+
+# 如何结合 Google Blogger API 使用 Ajax
+
+一旦你学会了如何使用 Ajax，你就拥有了从 YouTube、Twitter 和 Flickr 等热门网站获取数据所需的技能。事实上，你可以从任何提供相应 API 的网站获取数据。
+
+## Google Blogger 简介
+
+Google Blogger 是一个免费的 Google 应用程序，可以轻松地在 Google 站点上创建自己的博客。
+
+### Google Blogger 的 URL
+
+`www.blogger.com`
+
+### Google APIs 的 URL
+
+`https://code.google.com/apis/console/`
+
+### 如何获取 Blogger API 密钥
+
+1. 访问上述 Google APIs 的 URL 并登录。
+2. 如果你是第一次使用 Google APIs，你将被重定向到欢迎屏幕，你可以在那里点击“创建项目”按钮。然后点击该按钮进入控制台页面。
+3. 向下滚动并点击 Blogger API 的“请求访问”（Request access）链接。
+4. 填写配额请求，完成后点击提交。
+5. 等待一封确认你的请求并提供你需要遵循的批准最终步骤的电子邮件。
+
+## 描述
+
+- Blogger 是一个免费的 Google 应用程序，允许你创建自己的博客。要做到，你只需要打开一个 Google 账户并如上所示获取 API 密钥。
+- 通过 Blogger，你可以使用任何可用名称后接 blogspot.com 作为你的博客。
+
+# 如何使用 Blogger API
+
+Blogger API 的文档显示了如何使用 Ajax 和 JSON 访问博客中的数据。
+
+### API 文档的起始 URL
+
+`https://developers.google.com/blogger/docs/3.0/getting_started`
+
+### 帖子 URL 的格式
+
+`https://www.googleapis.com/blogger/v3/BLOG-ID/posts?key=KEY`
+
+### 处理帖子的一些数据
+
+| 项目 | 描述 |
+|---|---|
+| `published` | 帖子首次发布日期 |
+| `updated` | 帖子最后更新的日期 |
+| `url` | 帖子 URL |
+| `title` | 帖子标题 |
+| `content` | 帖子主要内容 |
+| `author.id` | 作者 ID |
+| `author.displayName` | 作者显示名称 |
+| `author.url` | 作者配置文件的 URL |
+| `author.image` | 作者图片的 URL |
+| `replies.total` | 回复总数 |
+
+## 描述
+
+- 所有博客都被分配博客 ID，你必须结合你的密钥使用它。
+- 博客由帖子、评论、页面和用户组成，API 文档显示了如何处理所有内容。
+
+# 如何使用在线 JSON 编辑器查看来自网站的馈送
+
+## 在线 JSON 编辑器的 URL
+
+`www.jsoneditor.org`
+
+## Vecta Corp 博客的 URL
+
+`www.googleapis.com/blogger/v2/blogs/8698899267502010836/posts?key=AIAyByZJi147vPOQmNAY2KWBC5fUI1IdQ`
+
+## 在在线 JSON 编辑器中查看馈源的步骤
+
+1. 将馈源输入或粘贴到浏览器的区域。按 Enter 键，在浏览器窗口中查看 JSON 编辑器的内容。
+2. 复制所有 JSON，前往在线 JSON 编辑器的 URL，并将 JSON 粘贴到编辑器的左侧窗。
+3. 点击左侧窗顶部的 Format（格式化）按钮，查看格式化后的 JSON 数据。
+4. 点击窗格之间的右箭头按钮查看数据的结构化版本。然后，点击右侧窗顶部的 Expand（展开）按钮，查看馈源中的所有数据。
+
+## 描述
+
+- 当 API 文档难以理解时，你通常可以通过查看 JSON 编辑器中的数据来节省时间。这样，你就能确切地知道你的应用程序将获取什么内容。
+
+# 如何使用 Ajax 和 JSON 显示 Blogger 帖子
+
+开始时，你可以编写一个全局变量来存储你的 API 密钥值。然后，你可以在 `$.ajax` 方法的 URL 选项末尾使用它。
+
+接下来，你可以编写另一个全局变量，用于发布 HTML Blogger 数据。之后，你应该编写此语句：
+
+```javascript
+$.support.cors = true;
+```
+
+这允许在像 IE 等不完全支持跨域请求的浏览器中进行跨域 JSON 请求。
+
+最后，你可以为 `$.ajax` 方法编写一个就绪的事件处理器。在该方法的 `success` 选项中，你可以使用 `$.each` 方法来处理每个帖子的数据。该方法的第一个参数可以是 `data.items`，它代表所有帖子的数据，第二个参数是为每个帖子执行的函数。
+
+在第二个函数内部，第一个参数是每个帖子的索引，第二个参数是包含每个帖子数据项值的对象。然后，你可以使用该值对象来获取每个帖子的数据项。例如，`value.url` 是帖子的 URL，`value.author.displayName` 是作者的名字。
+
+## 显示 Blogger 帖子的网页
+
+| 首页 | 当前 Vecta Corp. 新闻 |
+| --- | --- |
+| 关于我们 | Vecta Corp. 与 IX Inc. 建立了新的合作伙伴关系... |
+| 解决方案 | |
+| 支持 | Vecta Corp. 与 Module Media 签署了新协议... |
+| 联系我们 | |
+
+## HTML div 元素接收博客帖子
+
+```html
+<div id="posts"></div>
+```
+
+## 用于 Blogger 的 jQuery
+
+```javascript
+var apikey = ""; // 你的密钥放在引号之间
+var html = "";
+$.support.cors = true;
+$(document).ready(function() {
+  var url = "https://www.googleapis.com/blogger/v2/blogs/8698899267502010836/posts?key=" + apikey;
+  $.ajax({
+    url: url,
+    dataType: "json",
+    success: function(data) {
+      $.each(data.items, function(index, value) {
+        html += "<h3><a href=\"" + value.url + "\">" + value.title + "</a></h3>";
+        html += "<div><p><a href=\"" + value.url + "\">" + value.author.displayName + "</a></p></div>";
+      });
+      $("#posts").html(html);
+    }
+  });
+});
+```
+
+## 描述
+
+- 在此方法中，你可以使用 `$.each` 方法来处理每个帖子的数据。
+- 该方法的第一个参数可以是 `data.items`，它代表所有帖子的数据，第二个参数是为每个帖子执行的函数。
+- 在第二个函数内部，第二个参数是包含每个帖子数据项值的对象。例如，`value.url` 是帖子的 URL，`value.author.displayName` 是作者的名字。
+
+## 展望
+
+当你完成了这一章，你应该能够使用 Ajax 和 JSON 从网站获取数据。
+
+## 术语
+
+| 术语 | 术语 |
+| :--- | :--- |
+| Ajax (异步 JavaScript 和 XML) | 馈源 |
+| XMLHttpRequest | 跨域策略 |
+| API (应用程序接口) | JSON 对象 |
+| XML (可扩展标记语言) | |
+| JSON (JavaScript 对象表示) | |
+
+## 总结
+
+- Ajax 是异步 JavaScript 和 XML。
+- 通常可以通过在 JSON 编辑器中查看数据来节省时间。
+- 在在线 JSON 编辑器中查看 Vecta Corp 博客的 JSON 馈源。
+- 这样，你就能确切地知道你的应用程序将获取什么内容。
+
+## 练习
+
+### 练习 14-1 修改 Blogger 应用
+
+#### 为 $.ajax 方法添加错误处理函数
+
+8. 在此应用的文本编辑器中，为 `$.ajax` 方法添加一个 `error` 选项。该方法应该在发生错误时在告警对话框中显示错误消息。
+9. 从 `$.ajax` 方法的 URL 中删除博客 ID 中的一个数字。然后，保存文件并测试此应用程序。它应该显示一条错误消息。
+10. 在你使其正常工作后，撤销你引入的错误并再次测试，以确保它运行正常。
+
+#### 使用 $.getJSON 方法并显示额外的两个项目
+
+11. 注释掉 `$.ajax` 方法。然后，在该方法下方，编写一个 `$.getJSON` 方法，该方法获取相同的结果，但不包含错误处理函数。然后，测试此更改。
+12. 修改 `$.getJSON` 方法，使其为每篇帖子显示额外的两个数据项目：发布日期和回复数量。这些项目应该紧随每个帖子的其他项目之后显示。要获取这些项目的名称，你可以回过查看在线 JSON 编辑器中的数据。然后，测试此更改。
+
+#### 进行更多实验？
+
+13. 如果你想尝试 Ajax、JSON 和 Blogger 编码的其他方面，请自行进行实验。这是学习的极佳方法。
+
+# 第 15 章 如何使用 YouTube、Twitter 和 Flickr 的 API
+
+## 如何结合 YouTube 使用 Ajax
+
+### 如何使用 YouTube API
+
+YouTube API 允许你在无需任何身份验证的情况下访问公共视频。
+
+#### YouTube API 的 URL
+
+`https://developers.google.com/youtube/`
+
+## 最常用的查询参数和数据项目
+
+### YouTube 视频的基础 URL
+
+`http://gdata.youtube.com/feeds/api`
+
+### 获取不同类型视频的 URL 扩展
+
+| URL 附加 | 描述 |
+| --- | --- |
+| `/standardfeeds/most_popular` | 获取最热门视频。 |
+| `/users/user/uploads` | 按用户频道获取视频。 |
+| `/videos?vq=search_term` | 按搜索词获取视频。 |
+
+### 常见查询参数
+
+| 参数 | 描述 |
+| --- | --- |
+| `vq` | 搜索词。 |
+| `max-results` | 获取的视频数量。 |
+| `orderby` | 用于排序项目的方法。选项有相关性 (relevance)、发布时间 (published)、评分 (rating) 和观看次数 (viewcount)。默认是相关性。 |
+| `alt` | Feed 的格式。默认是 atom，json 是一个流行的替代方案。 |
+
+> 一个通过三个查询参数按搜索获取视频的 URL：
+> `http://gdata.youtube.com/feeds/api/videos?vq=apple&max-results=5&alt=json`
+
+### 常见数据项
+
+| 数据项 | 描述 |
+| --- | --- |
+| `entry` | 返回项的集合。 |
+| `id.$t` | 视频的唯一标识符。 |
+| `published.$t` | 视频发布的日期和时间。 |
+| `updated.$t` | 视频最后更新的日期和时间。 |
+| `category` | 视频关联的类别集合。 |
+| `title.$t` | 视频标题。 |
+| `content.$t` | 视频的描述文本。 |
+| `link[index]` | 视频的链接数组。例如，`link[0].href` 是 YouTube 网站视频的 URL。 |
+| `author[index].name.$t` | 视频作者集合。 |
+| `media$group.media$content[index].url` | 视频播放器的 URL 集合。 |
+| `media$group.media$thumbnail[index].url` | 缩略图集合。 |
+| `gd$rating` | 包含视频平均评分 (average) 和评分人数 (numRaters) 的集合。 |
+| `yt$statistics` | 包含视频被观看次数 (viewCount) 以及将视频收藏的用户数 (favoriteCount) 的集合。 |
+
+## 如何按频道列出视频
+
+在该应用程序的 `$.getJSON` 方法中，使用了 `$.each` 方法来处理每个视频的数据，该数据被引用为 `data.feed.entry`。
+
+然后，`$.each` 方法中的前几个语句为从 Feed 中获取的四个数据项创建了变量。由于 YouTube 为视频提供了多个链接，因此 `url` 变量被设置为 `item.link[0].href`。第三条语句将变量设置为发布项，并链式调用 `substring` 方法提取前 10 个字符（日期格式：yyyy/mm/dd）。
+
+一旦这些变量准备好，下一条语句会创建一个名为 `text` 的变量，将 URL 放在 `<a>` 元素中。最后，`$.each` 函数中的最后语句将变量附加到 `<div>` 元素上。
+
+此应用程序的 jQuery 首先启用 CORS：`$.support.cors = true;`。
+
+### 按相关性列出微软频道视频的网页
+
+| 标题 | 细节 |
+| --- | --- |
+| 微软发布新外观 | 微软于 2012-08-23 发布 |
+| ... | ... |
+
+#### 此页的 URL
+
+`http://gdata.youtube.com/feeds/api/users/microsoft/uploads?max-results=5&alt=json`
+
+#### 接收数据的 div 元素
+
+```html
+<div id="youtube"></div>
+```
+
+#### jQuery
+
+```javascript
+$.support.cors = true;
+$(document).ready(function() {
+  var url = "http://gdata.youtube.com/feeds/api/users/microsoft/uploads?max-results=5&alt=json";
+  $.getJSON(url, function(data) {
+    $.each(data.feed.entry, function(i, item) {
+      var link = item.link[0].href;
+      var title = item.title.$t;
+      var datepublished = item.published.$t.substring(0, 10);
+      var author = item.author[0].name.$t;
+      var text = "<a href=" + link + ">" + title + "</a>" + 
+                 "Published: " + datepublished + " by " + author + 
+                 "<br><br>";
+      $("#youtube").append(text);
+    });
+  });
+});
+```
+
+## 如何按搜索词列出视频
+
+### 搜索最新视频的网页
+
+#### 通过搜索词获取视频的 URL
+
+`http://gdata.youtube.com/feeds/api/videos?vq=search_term`
+
+#### 搜索字段和按钮的 HTML
+
+```html
+搜索关键词：<input type="text" size="30" id="search">
+<input type="button" value="search" id="btnSearch">
+```
+
+#### 接收 YouTube 数据的 div 元素
+
+```html
+<div id="youtube"></div>
+```
+
+## 如何在你的网站视频播放器中播放视频
+
+在 `$.getJSON` 方法中，设置 `url` 变量使用 `item.media$group.media$content[0].url`。`media$group.media$content` 条目是 Flash 和 3GPP 格式的条目集合，索引 0 返回 Flash 格式的链接。
+
+下一语句创建了将为每个视频显示的文本，视频的 URL 被赋值给 `<a>` 标签的 `title` 属性。
+
+该事件处理程序用于 `<a>` 元素的点击事件。它获取存储在 `title` 属性中的 URL，创建包含 `object`、`param` 和 `embed` 元素的字符串以构建视频播放器。
+
+### 一个在视频播放器中播放频道搜索视频的网页
+
+#### jQuery 代码
+
+```javascript
+$.support.cors = true;
+$(document).ready(function() {
+  $("#btnSearch").click(function() {
+    $("#youtube").html("");
+    $("#video").html("");
+    var channel = $("#channel").val();
+    var channelURL = "http://gdata.youtube.com/feeds/api/users/" + 
+      channel + "/uploads?max-results=5&alt=json";
+    $.getJSON(channelURL, function (data) {
+      $.each(data.feed.entry, function(i,item) {
+        var url = item.media$group.media$content[0].url;
+        var title = item.title.$t;
+        var datepublished = item.published.$t.substring(0,10);
+        var author = item.author[0].name.$t;
+        var text = "<a href=\"" + url + "\" title=\"" + url + "\">" + title +
+                  "</a><p>Published: " + datepublished + " by " + 
+                  author + "</p>";
+        $("#youtube").append(text);
+      });
+    });
+    $("#youtube").on("click", "a", function() {
+      $("#video").html("");
+      var url = $(this).attr("title");
+      var text = "<object width='425' height='344'>" + 
+                 "<param name='movie' value='" + url + "'></param>" + 
+                 "<embed src='" + url + "' " + 
+                 "type='application/x-shockwave-flash' " + 
+                 "allowfullscreen='true' width='425' " + 
+                 "height='344'></embed>" + 
+                 "</object>";
+      $("#video").append(text);
+    });
+  });
+});
+```
+
+## 如何在 Twitter 上使用 Ajax
+
+### 如何使用 Twitter API
+
+Twitter API 允许你在无需授权的情况下检索任何用户的推文。
+
+## 如何显示用户的推文
+
+此应用程序定义的 URL 包含四个参数：`screen_name=microsoft`、`count=5`、`include_rts=1`、`callback=?`。
+
+在 `$.getJSON` 方法中，只使用了 `text` 数据项。
+
+### 显示微软推文的网页
+
+#### 接收馈送数据的 HTML 元素
+
+```html
+<div id="twitter"></div>
+```
+
+#### jQuery
+
+```javascript
+$(document).ready(function() {
+  var url = "http://api.twitter.com/1/statuses/user_timeline.json?screen_name=microsoft&count=5&include_rts=1&callback=?";
+  var tweet = "";
+  $.getJSON(url, function(data) {
+    $.each(data, function(i,item) {
+      tweet += item.text + "<br><br>";
+    });
+    $("#twitter").html("<h3>Microsoft&rsquo;s Twitter Feed</h3>").append(tweet);
+  });
+});
+```
+
+## 如何将推文内的 URL 转换为链接
+
+此应用程序的 jQuery 区别在于有一个名为 `convertUrlToLink` 的函数。
+
+### 修改后的包含 convertUrlToLink 函数的 $.getJSON 方法
+
+```javascript
+$.getJSON(url, function (data) {
+  $.each(data, function (i, item) {
+    tweet += convertUrlToLink(item.text) + "<br><br>";
+  });
+  $("#twitter").html("<h3>Microsoft&rsquo;s Twitter Feed</h3>").append(tweet);
+});
+```
+
+### convertUrlToLink 函数
+
+```javascript
+function convertUrlToLink(text) {
+  var exp = /((https?:\/\/)?[^\s]+)/gi;
+  return text.replace(exp, "<a href=\"$1\">$1</a>");
+}
+```
+
+## 如何为每条推文显示时间戳
+
+jQuery 使用了 `created_at` 数据项，并调用了一个名为 `formatTime` 的函数。
+
+### 调用 formatTime 函数的修改后的 $.getJSON 方法
+
+```javascript
+$.getJSON(url, function(data) {
+  $.each(data, function(i, item) {
+    tweet = convertUrlToLink(item.text) + "<br>" +
+      formatTime(item.created_at) + "<br><br>";
+  });
+  $("#twitter").html("<h3>Microsoft&rsquo;s Twitter Feed</h3>").append(tweet);
+});
+```
+
+### formatTime 函数
+
+```javascript
+function formatTime(tweetDate) {
+  var dateTimeString = tweetDate.substr(4, 7) + 
+    tweetDate.substr(26) + 
+    tweetDate.substr(10, 15);
+  var tweetDateObj = new Date(dateTimeString);
+  var tweetTime = tweetDateObj.getTime();
+  var currentTime = new Date().getTime();
+  var timeago = (currentTime - tweetTime) / 1000;
+  if (timeago < 60) return "less than a minute ago";
+  else if (timeago < 120) return "about a minute ago";
+  else if (timeago < (45*60)) return
+    parseInt(timeago / 60).toString() + " minutes ago";
+  else if (timeago < (90*60)) return "about an hour ago";
+  else if (timeago < (24*60*60)) return
+    "about " + parseInt(timeago / 3600).toString() + " hours ago";
+  else if (timeago < (48*60*60)) return "1 day ago";
+  else return (parseInt(timeago / 86400).toString() + " days ago");
+}
+```
+
+## 如何在 Flickr 中使用 Ajax
+
+### 如何使用 Flickr 的 API
+
+Flickr 提供了一个名为“应用花园 (The App Garden)”的 API。
+
+#### Flickr 的 URL
+
+`http://www.flickr.com`
+
+#### Flickr API 的 URL
+
+`http://www.flickr.com/services/api/`
+
+### 最常用的查询参数和数据项
+
+#### 获取公共照片馈的基础 URL
+
+`http://api.flickr.com/services/feeds/`
+
+#### 常用参数
+
+| 参数 | 描述 |
+| --- | --- |
+| `id` | 用户 ID。 |
+| `ids` | ID 的逗号分隔列表。 |
+| `tags` | 标签的逗号分隔列表。 |
+| `tagmode` | 控制的项目是否匹配所有或任何标签 (`tagmode=any`)。 |
+| `format` | 返回馈的格式。默认为 JSON。 |
+| `lang` | 馈的显示语言。默认为英语。 |
+| `jsoncallback` | 除非返回格式为 JSONP，否则可选。 |
+
+#### 提供特定用户 JSON 馈的 URL
+
+`http://api.flickr.com/services/feeds/photos_public.gne?id=82407828@N07&format=json`
+
+#### 常用数据项
+
+| 数据项 | 描述 |
+| --- | --- |
+| `items` | 返回的项目集。 |
+| `title` | 照片标题。 |
+| `link` | 照片或视频的 URL。 |
+| `media.m` | 照片的 URL（缩略图）。 |
+| `date_taken` | 照片拍摄日期。 |
+| `description` | 照片的描述文本，加上 `<a>` 元素中的缩略图。此数据用 HTML 标签格式化，可以直接显示。 |
+| `published` | 图像或视频上传到 Flickr 的日期和时间。 |
+| `author` | 作者用户名和电子邮件。 |
+| `tags` | 图像或视频的过滤标签。 |
+
+## 如何为 Flickr 馈显示标题和描述
+
+在此应用程序的 jQuery 代码中，使用 `$.getJSON` 方法加载 Flickr 数据。`each` 方法中的最后语句使用 `replace` 方法将每张照片数据中的特定 `<p>` 元素替换为空字符串。
+
+### 网页显示照片馈的标题和描述
+
+#### 接收来自馈数据的 HTML 元素
+
+```html
+<div id="team"></div>
+```
+
+#### jQuery
+
+```javascript
+$(document).ready(function() {
+  var url = "http://api.flickr.com/services/feeds/photos_public.gne?id=82407828@N07&format=json&callback=?&tags=vectacorp";
+  $.getJSON(url, function(data) {
+    var html = "";
+    $.each(data.items, function(i, item) {
+      html += "<h3>" + item.title + "</h3>";
+      html += item.description;
+    });
+    html = html.replace("<a href=\"http://www.flickr.com/photos/82407828@N07/\">zakruvalcaba</a> posted a photo:<p>", "");
+    $("#team").html(html);
+  });
+});
+```
+
+## 如何显示 Flickr 照片库
+
+在此应用程序的 URL 中，`tags` 参数指定了 `vectacorpbuilding` 标签。jQuery 使用 `title` 和 `media.m` 数据项，将 `media.m` 作为 `href` 和 `title` 属性，`rel` 属性设置为 `"lightbox[vecta]"` 激活 Lightbox 插件。
+
+### 网页显示照片库
+
+#### 接收来自馈数据的 HTML 元素
+
+```html
+<div id="team"></div>
+```
+
+#### jQuery
+
+```javascript
+$(document).ready(function() {
+  var url = "http://api.flickr.com/services/feeds/photos_public.gne?id=82407828@N07&format=json&callback=?&tags=vectacorpbuilding";
+  $.getJSON(url, function(data) {
+    var html = "";
+    $.each(data.items, function(i, item) {
+      html += "<a href=\"" + item.media.m + "\" rel=\"lightbox[vecta]\" title=\"" + item.title + "\">";
+      html += "<img src=\"" + item.media.m + "\" width=\"120\" height=\"100\" alt=\"" + item.title + "\">";
+      html += "</a>";
+    });
+    $("#team").html(html);
+  });
+});
+```
+
+## 观点
+
+当你完成了这一章，你应该能够使用 Ajax 和 JSON 从 YouTube、Twitter 和 Flickr 获取数据。
+
+
+
+## 描述
+
+- 此应用程序获取 Flickr 的 URL 并将其放置在 `<a>` 标签内的 `<img>` 元素中。为了限制显示图像的大小，`<img>` 元素的 `width` 和 `height` 属性设置为 120 和 100。
+- 此应用程序在使用 Lightbox 插件在点击画廊中的图像时显示完整照片。为了实现这一点，`<a>` 标签的 `rel` 属性设置为 `lightbox[vecta]`。
+
+**图 15-12** 如何显示 Flickr 照片库
+
+## 观点
+
+现在你已经完成了这一章，你应该知道如何使用另外三个网站的 API。你还应该意识到某些网站（如 Twitter）的 API 非常简单，而另一些网站（如 YouTube）的 API 则是复杂的。本章的目标是提供足够的信息让你上手 YouTube、Twitter 和 Flickr，然后继续进行。
+
+在下一章中，你将学习如何使用 Google Maps API，这是另一个复杂的 API。之后，我们希望你有信心研究任何网站的 API 并实现需求。
+
+## 总结
+
+- Ajax 和 JSON 的常用用途之一是获取 YouTube、Twitter 和 Flickr 等热门网站的馈。
+- YouTube、Twitter 和 Flickr 的 API 展示了如何构建馈的 URL，包括查询参数的使用。它们还总结了馈提供的数据项。
+- 如果你在理解某些网站的 API 文档方面困难，可以在浏览器或在线 JSON 编辑器中显示它的馈之一。这使得数据结构更容易理解。
+- JSONP 常用于馈，因为它提供了一种从不同域服务器请求数据的方法，而这通常被浏览器的跨域安全策略所禁止。在典型的 API 上使用 JSONP 时，将查询参数 `callback` 或 `jsoncallback` 设置为问号 (?) 即可。
+
+## 练习 15-1 修改 YouTube
+
+此练习将让你回顾图 15-4 中的 YouTube 应用程序，然后对其进行修改，使其为列表中的每个视频显示缩略图。
+
+### 回顾 YouTube 应用程序、网站和 API
+
+1. 使用你的文本编辑器打开此文件夹中的 HTML 文件：`c:\exercise\ch15\youtube_search\`。然后，运行此应用程序查看其工作原理。
+2. 使用此 URL 进入 YouTube API 首页：https://developers.google.com/youtube/ 。然后，滚动到该页面查看它所提供的功能。
+3. 点击 Data API 链接进入该文档。然后，查看该页面并点击任何链接以获取更多信息。如果你花 5 或 10 分钟尝试该文档，你可能会同意它操作起来比较困难。
+
+### 使用 JSON 编辑器查看搜索的 YouTube 馈
+
+4. 在浏览器的地址栏中仔细输入以下 URL 并按回车：`http://qdata.youtube.com/feeds/api/videos?vq=oprah&max-results=5&alt=json` 这将在浏览器窗口中显示 Oprah 的馈，但数据不会经过格式化。然后，选择所有内容并复制到剪贴板。
+5. 转到此地址的在线 JSON 编辑器：www.jsoneditoronline.org。然后将剪贴板中的 JSON 馈粘贴到左格。
+6. 点击左格部的 Format 按钮来格式化右格中的 JSON 结构。点击 Expand All 按钮显示馈中的所有数据。然后，滚动这些数据以寻找图 15-2 中的数据项以及更多项。
+
+### 为每个视频列表添加缩略图
+
+7. 使用你的文本编辑器在此应用程序的 `$each` 方法中创建一个名为 `thumbnail` 的新变量。它应该使用此数据项：`item.media$group.media$thumbnail[0].url` 来接收每个视频第一个缩略图的 URL。
+8. 在此应用程序的文本变量末尾添加 `img` 元素，并将 `thumbnail` 变量作为元素 `src` 属性的值。这将在每个视频的其他项目之后显示缩略图。然后，测试此增强。
+
+# 16
+
+## 如何使用 Google Maps API
+
+在上一章中，你学习了如何使用三个最流行网站的 API 从这些网站获取内容并用于你自己的网页。现在，你将学习如何使用 Google Maps API，以便你可以将地图添加到你的网站中，并提供地图上两点之间的行驶路线。
+
+- Google Maps 简介............................................................................... 470
+- Google Maps API 简介...................................................................... 470
+- 为网页添加 Google 地图的类......................................................................... 472
+- Google Maps API 的 script 元素.................................................................... 474
+- 如何向网页添加 Google 地图...................................................................... 474
+- **如何在地图上显示标记** ............................................................ 476
+- 地编码和标记的类与方法................................................................................ 476
+- 如何创建显示标记的地址列表.............................................................. 478
+- **如何在地图上显示消息** ............................................................ 480
+- 消息和标记的类与方法............................................... 480
+- 如何向标记添加消息...................................................................................... 482
+- 如何向标记添加自定义标记.............................................................. 484
+- 如何向图像添加 Flickr 信息............................................................................... 486
+- **如何显示行驶路线** ............................................................ 488
+- 路线和监听器的类与方法...................................................... 488
+- 如何在你自己的网站上显示行驶路线....................................................... 490
+- **观点** ........................................................................................................... 492
+
+# Google Maps 简介
+
+你可能已经使用过多个 Google Maps 了，无论是在 Google Maps 网站上还是在其他网站上。如果是这样，你就知道它是多么容易。你可能使用过 Google Maps 获取从一个点到另一个点的路线。
+
+好消息是，你可以将 Google 地图添加到自己的网站中，可以是免费的，也可以支付少量费用。例如，在文中，Google Maps 每天允许 25,000 次免费地图请求，之后开始收取少量费用。这意味着你可以通过网站向客户显示 Google 地图上的位置，并提供从客户所在地到你所在地的行驶路线。
+
+# Google Maps API 简介
+
+在图 16-1 中，你可以学习如何开始使用 Google Maps API。要开始，你可以使用文档来学习该 API。当你显示此文档时，你会发现它内容非常详尽。当然，这是因为这个 API 提供了许多功能，但也使得这个 API 难以理解和使用。
+
+例如，图中的屏幕显示了目录的开头，滚动了很多页，很难弄清楚如何开始使用。然后，如果你点击目录中的某一项，你将进入另一个层级的复杂性。
+
+在本章中，你将学习如何使用此 API 开发一些最实用的应用程序。如果你在阅读本章时参考该 API，你将学会如何有效地使用它。
+
+## Google Maps API 参考文档的基础 URL
+
+`developers.google.com/maps/documentation/javascript/reference`
+
+## 特定类的占位符
+
+- `#Map`
+- `#MapTypeId`
+- `#LatLng`
+
+## 用于在网页中添加地图的类
+
+| 类 | 描述 |
+| :--- | :--- |
+| `Map(element, options)` | 此构造函数创建一个 `Map` 对象。第一个参数指定接收地图的 HTML 元素。第二个参数为地图提供配置选项。 |
+| `LatLng(latitude, longitude)` | 此构造函数根据传入的纬度和经度参数创建一个 `LatLng` 对象。 |
+| `MapTypeId` | 此类为四种地图类型提供了常量：`ROADMAP`（路线图）、`HYBRID`（混合）、`SATELLITE`（卫星）、`TERRAIN`（地形）。 |
+
+## Map 构造函数所需的选项
+
+| 选项 | 设置 |
+| :--- | :--- |
+| `zoom` | 提供初始缩放层级的数字。 |
+| `center` | 一个新的 `LatLng` 对象，用于标识地图的中心。 |
+| `mapTypeId` | 一个 `MapTypeId` 常量，用于指定地图类型。 |
+
+## 如何使用这三个类创建一个地图对象
+
+```javascript
+var mapOptions = {
+  zoom: 8,
+  center: new google.maps.LatLng(33.493611, -117.1475),
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+var map = new google.maps.Map("#map", mapOptions);
+```
+
+## 描述
+
+- 类的构造函数从该类创建一个新对象。例如，`Map` 类的构造函数会创建一个 `Map` 对象。然后，可以从 `Map` 对象调用该类的方法。`Map` 对象的构造函数的第二个参数中可以包含许多选项，但上表中的三个是必须的。
+- 对于 `zoom` 选项，你可以尝试不同的值，直到得到你想要的地图效果，但 8 是开始实验的良好值。
+- 要为 `center` 选项提供值，需要使用 `new` 关键字配合 `LatLng` 构造函数。
+- 要为 `MapTypeId` 选项提供值，需要使用 `new` 关键字配合 `MapTypeId` 类。
+- 要创建一个 `Map` 对象，你使用一个 jQuery 选择器来标识接收地图的 HTML 元素。然后，使用 `get(0)` 方法获取该元素的 DOM 对象。
+
+**用于在网页中添加 Google 地图的类**
+
+![](img/fb3dabc43193711c2307f942481ad30c_488_0.png)
+
+## Google Maps API 的 script 元素
+
+图 16-3 显示了如何使用上一个图中的类向网页中添加地图。但首先注意，需要一个引用 Google Maps API 的 script 元素。本章中的每个应用程序都需要它，尽管图中没有显示，而且它可以在 jQuery 代码之前或之后编写，因为 Google Maps API 不使用 jQuery。
+
+请注意，此 API 的 URL 包含一个密钥参数，你可以使用它指定你的 API 密钥。虽然该参数不是强制的，但 Google 建议包含它。如果你有一个 API 密钥，可以按照 16-1 中的步骤操作。
+
+## 如何向网页中添加 Google 地图
+
+图 16-3 还显示了在本示例中接收地图的 div 元素的 HTML，以及在元素中显示地图的 jQuery 代码。在这里，jQuery 代码与上一个图相同。首先，创建一个包含三个必需地图选项的变量。然后，使用 `Map` 构造函数使用这些选项创建地图并将其显示在 div 元素中。在这里，除非你以后在代码的其他部分引用该地图，否则不需要将 `Map` 对象存储在变量中。
+
+在本示例中，`center` 选项的 `LatLng` 构造函数使用了真实的纬经度值编码，即加利福尼亚州的特梅库拉（Temecula）。如果你知道想要使用的值，可以这样做。不过，你也可以像接下来的两个图那样使用地理编码来获取这些值。
+
+一旦你在网页中添加了 Google 地图，它的运行就像 Google Maps 网站上的地图一样。因此，用户可以使用控制控件放大或缩小地图，或者向上、向下、向左或向右移动地图。用户还可以拖动地图进行上下左右移动。为了根据用户的操作显示地图的不同部分，Google Maps 使用 Ajax。
+
+## 显示 Google 地图的网页
+
+![](img/fb3dabc43193711c2307f942481ad30c_490_0.png)
+
+## Google Maps API 的 script 元素（单行）
+
+```html
+<script src="https://maps.googleapis.com/maps/api/js?key=your_api_key&sensor=false"></script>
+```
+
+## 接收地图的 div 元素的 HTML
+
+```html
+<div id="map"></div>
+```
+
+## jQuery
+
+```javascript
+$(document).ready(function() {
+  var mapOptions = {
+    center: new google.maps.LatLng(33.4936111, -117.1475),
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map = new google.maps.Map("#map", mapOptions);
+});
+```
+
+## 描述
+
+- 若要在网页中使用 Google Maps API，你必须始终包含一个像上面的 script 元素。虽然该参数不是强制的，但 Google 建议包含它。
+- 当使用 `Map` 构造函数创建地图并显示在元素中时，你使用一个 `LatLng` 对象来标识地图的中心。
+- 在此示例中，`center` 选项的 `LatLng` 构造函数在代码中编码了真实的纬度和经度值。
+- 在接下来的两个图中，你也可以使用地理编码来获取这些值。
+- 一旦你在网页中添加了 Google 地图，它的运行就像 Google Maps 网站上的地图一样。
+- 因此，用户可以使用控制控件放大或缩小地图，或者向上、向下、向左或向右移动。
+- 用户还可以拖动地图进行上下左右移动。
+- 为了根据用户的操作显示地图的不同部分，Google Maps 使用 Ajax。
+
+## 用于地理编码和创建标记的类
+
+| 类 | 描述 |
+| --- | --- |
+| `Geocoder` | 此构造函数创建一个 `Geocoder` 对象，该对象提供了与 Google 服务器通信的方法并返回地理编码器结果。 |
+| `Marker(options)` | 此构造函数创建一个 `Marker`，用于在地图上标记某个位置。两个常用的选项是 `position`（它以 `LatLng` 对象的形式提供标记的位置）以及 `map`（它标识了该标记所属的地图）。 |
+
+## Geocoder 类的一个方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `geocode(request, callback)` | 向 Google 服务器发送一个 `GeocoderRequest`，该请求包含一个地址或位置，并返回一个 `GeocoderResult`，其中包含以数组形式呈现的结果。 |
+
+## GeocoderRequest 对象的两个属性
+
+| 属性 | 描述 |
+| --- | --- |
+| `address` | 字符串格式的请求地址。 |
+| `location` | `LatLng` 对象格式的请求位置。 |
+
+## GeocoderResult 对象的三个属性
+
+| 属性 | 描述 |
+| --- | --- |
+| `address_components` | 地址的组件。通过此属性，你可以使用 `long_name` 和 `short_name` 来获取这些属性。 |
+| `formatted_address` | 字符串格式的格式化地址。 |
+| `geometry.location` | `LatLng` 对象格式的请求位置。通过此属性，你可以使用 `lat()` 和 `lng()` 方法获取该位置的纬度和经度。 |
+
+## 如何使用 geocode 方法
+
+```javascript
+geocoder = new google.maps.Geocoder();
+geocoder.geocode({address: "4340 Knoll, Fresno, CA"}, function(results) {
+  alert("Latitude for " + results[0].formatted_address + " is " + results[0].geometry.location.lat());
+});
+```
+
+## 如何创建一个 Marker
+
+```javascript
+var marker = new google.maps.Marker({
+  position: new google.maps.LatLng(36.799793, -118.558135),
+  map: map
+}); // 将 Map 对象赋值给名为 map 的变量
+```
+
+## 描述
+
+- 地理编码是指将地址转换为位置，反之亦然。转换通过 `Geocoder` 类的 `geocode` 方法完成。
+- 要在地图上添加标记，你需要创建一个 `Marker` 对象。
+
+![](img/fb3dabc43193711c2307f942481ad30c_492_0.png)
+
+## 如何创建一个显示标记的地址列表
+
+图 16-5 显示了如何使用你刚刚学习的构造函数和方法在网页上添加标记。在这里，当用户点击右侧边栏中的其中一个链接时，会添加一个标记。事实上，此应用程序会为点击的每个链接添加一个标记，这就是地图上显示三个标记的原因。
+
+该地图的 HTML 代码由一个用于地图的 div 元素和一个用于城市链接的 ul 元素组成。使用了一个样式表来浮动这两个元素，以便它们如所示显示。
+
+在该应用程序的 jQuery 代码中，你可以看到 `ready` 事件处理程序中的第一条语句创建了一个名为 `geocoder` 的 `Geocoder` 对象。随后是创建地图的语句。这些与你在图 16-3 中看到的语句是相同的。
+
+然后，`Geocoder` 对象被点击事件方法使用，该方法为每个链接创建事件处理程序。在该方法的函数内部，第一条语句使用 `this` 关键字和 `text` 方法从链接中获取地址并将其存储在名为 `address` 的变量中。
+
+接下来，使用 `Geocoder` 对象的 `geocode` 方法获取每个链接地址的位置，并在其回调函数中返回结果。然后，在该回调中，使用 `geocode` 方法返回的位置作为 `position` 选项，并使用已创建的地图作为 `map` 选项来创建一个 `Marker` 对象。稍后，当用户点击城市链接并创建 `Marker` 对象时，它就会被添加到地图上。
+
+## 当用户点击地址链接时会添加一个标记
+
+![](img/fb3dabc43193711c2307f942481ad30c_494_0.png)
+
+## 地图 "map" 的 HTML 代码
+
+```html
+<div id="map">
+  <ul id="links">
+    <li><a href="#Los Angeles, CA">Los Angeles, CA</a></li>
+    <li><a href="#Temecula, CA">Temecula, CA</a></li>
+    <li>-- 其他元素的链接 --</li>
+  </ul>
+</div>
+```
+
+## jQuery
+
+```javascript
+$(document).ready(function() {
+  var geocoder = new google.maps.Geocoder();
+  var myLatLng = new google.maps.LatLng(34.936311, -117.24875);
+  var mapOptions = {
+    center: myLatLng,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map = new google.maps.Map("#map", mapOptions);
+  $("#links a").click(function() {
+    var address = $(this).attr("href").substring(1);
+    geocoder.geocode({address: address}, function(results) {
+      new google.maps.Marker({
+        position: results[0].geometry.location,
+        map: map
+      });
+    });
+  });
+});
+```
+
+## 如何在地图上显示消息
+
+现在，你将学习如何使用 `OverlayView`。图 16-6 展示了三个类和方法。
+
+### 用于添加消息的类
+
+| 类 | 描述 |
+| --- | --- |
+| `InfoWindow(options)` | 此构造函数创建一个作为标记消息气泡的对象。`content` 选项提供了气泡的内容，内容可以是纯文本或 HTML。 |
+| `OverlayView()` | 此构造函数创建一个用于在地图上叠加对象的对象。 |
+| `MapCanvasProjection` | 调用 `OverlayView` 对象的 `getProjection` 方法时，会创建一个该类的对象。 |
+
+### InfoWindow 类的一个方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `open(map, marker)` | 为地图和标记打开气泡。 |
+
+### OverlayView 的三个方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `draw()` | 绘制或更新叠加层。 |
+| `setMap(map)` | 将叠加层添加到地图上。 |
+| `getProjection()` | 返回叠加层的 `MapCanvasProjection` 对象。 |
+
+### MapCanvasProjection 类的一个方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `fromLatLngToPixel(markerPosition)` | 返回标记位置的像素坐标。 |
+
+### Map 的两个方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `getPosition()` | 获取标记的纬度和经度坐标。 |
+| `setMap(map)` | 将标记渲染到指定的地图上。如果参数为 null，则从地图上移除标记。 |
+
+你将在接下来的三个图中看到所有这些类和方法的应用。在研究这些图的应用程序时，你可以参考本图中的表格。
+
+## 如何向标记添加消息
+
+图 16-7 显示了如何使用 `InfoWindow` 类向标记添加消息。同样，当用户点击城市链接时，标记会被添加到地图上。但这次，还添加了一条消息。此外，当一个标记被添加到地图时，上一个标记会被移除。
+
+在此应用程序的 jQuery 代码中，`ready` 事件处理程序的第一条语句声明了一个命名的 `marker`。这样，当执行点击事件时就可以使用它了。然后，接下来的四条语句创建了 `Geocoder` 对象和地图，这与图 16-5 所示。
+
+在点击事件中，第一条语句与之前相同，但第二条语句会测试名为 `marker` 的变量是否包含值。如果包含，则将标记的 `setMap` 方法设置为 `null`，这会将标记从地图上移除。当然，当第一次执行该语句时，`marker` 将为 `null`，因此不会执行 `setMap` 方法。
+
+接下来，在 `geocode` 方法的回调函数中，按照图 16-5 所示创建标记。随后是一个语句，用于创建一个 `InfoWindow` 对象并指定该对象的内容。请注意，这些内容可以包含 HTML 元素。该函数的最后一条语句使用 `InfoWindow` 对象的 `open` 方法，指定为参数指定的地图和标记打开窗口（或消息气泡）。
+
+### 用户点击链接时会添加标记和消息
+
+![Figure 16-7](img/fb3dabc43193711c2307f942481ad30c_498_0.png)
+
+### jQuery 代码
+
+```javascript
+$(document).ready(function() {
+  var marker;
+  var myLatLng = new google.maps.LatLng(33.4611, -117.1475);
+  var mapOptions = {zoom: 8, center: myLatLng};
+  var mapTypeId = google.maps.MapTypeId.ROADMAP;
+  var map = new google.maps.Map("#map", mapOptions);
+  $("#links a").click(function() {
+    var address = $(this).text(); // 从 <a> 元素获取地址
+    if (marker) marker.setMap(null);
+    geocoder.geocode({address: address}, function(results) {
+      marker = new google.maps.Marker({
+        position: results[0].geometry.location,
+        map: map
+      });
+      // 添加消息气泡
+      var infoWindow = new google.maps.InfoWindow({
+        content: "<h3>This is: " + address + "</h3>"
+      });
+      infoWindow.open(map, marker);
+    });
+  });
+});
+```
+
+- 如图 16-5 所示，此应用程序在用户点击链接时会添加标记。但是，这次使用 `InfoWindow` 对象在标记位置添加消息，并且一次只能显示一个标记。
+- 此应用程序的 HTML 与图 16-5 相同。
+
+**图 16-7 如何向标记添加消息**
+
+## 如何向标记添加自定义消息
+
+图 16-8 显示了如何使用 `OverlayView` 和 `MapCanvasProjection` 类以及 `Marker` 方法向标记添加自定义消息。在这里，消息气泡是一个 HTML 元素，其属性被设置为 "message"。该 `div` 元素由单独的样式表进行样式。
+
+在 jQuery 代码中，前五条语句与之前的图相同。地址链接的点击事件处理程序的开头也与之前的图相同。但在 `geocode` 函数设置好 `marker` 后，代码发生了变化。
+
+同样在 `geocode` 函数中，创建了 `OverlayView` 对象。然后执行其 `draw` 方法，该方法的函数开始时创建一个 `point` 变量，该变量将包含标记在像素中的位置。该变量稍后将用于生成自定义消息。
+
+为了获取此点的位置，覆盖层的投影创建一个 `MapCanvasProjection` 对象。然后使用 `MapCanvasProjection` 对象的 `fromLatLngToPixel` 方法来获取标记在像素中的位置。该方法的参数是标记的位置，该位置由标记的 `getPosition` 方法返回。
+
+一旦计算出该值，剩下的工作就很简单了。在 `overlay` 对象的 `draw` 方法函数中，使用 `html` 方法将消息内容添加到带有 "message" id 的 HTML `div` 元素中。然后使用 `show` 方法显示此 `div` 元素，通过将其 `top` 和 `left` 属性相对于 `point` 变量中的值（该值代表 x 和 y 坐标像素）。
+
+此时，消息尚未在网页中显示。为了实现这一点，`geocode` 方法函数的最后一条语句对 `overlay` 对象发出了 `setMap` 方法。然后消息将显示在参数指定的地图上。此示例包含一个 HTML 元素的 `message`，指向标记。
+
+### 网页显示标记的自定义消息
+
+![Figure 16-8](img/fb3dabc43193711c2307f942481ad30c_500.png)
+
+### 消息气泡的 HTML
+
+```html
+<div id="message" style="display:none;"></div>
+```
+
+### jQuery 代码
+
+```javascript
+$(document).ready(function() {
+    // 前几句与之前的图相同
+    $('#links a').click(function() {
+        var address = $(this).text();
+        if (marker) marker.setMap(null);
+        geocoder.geocode({address: address}, function(results) {
+            marker = new google.maps.Marker({
+                position: results[0].geometry.location,
+                map: map
+            });
+            var overlay = new google.maps.OverlayView();
+            overlay.draw = function () {
+                var point = overlay.getProjection().fromLatLngToPixel(
+                    marker.getPosition()
+                );
+                // 此应用程序更改后的代码如下
+                $("#message").html("This is: " + address + "<br><a href='//google.com/maps?daddr=" + address + "'>Get directions to here</a>");
+                $("#message").show().css({
+                    top: point.y + 10,
+                    left: point.x
+                });
+            };
+            overlay.setMap(map);
+        });
+    });
+});
+```
+
+## 说明
+
+- 在 `OverlayView` 和 `Marker` 方法获取标记位置后，`html` 和 `css` 方法创建并定位 HTML 元素。
+
+## 如何向消息添加 Flickr 图片
+
+图 16-9 显示了如何从 Flickr 网站获取图像增强标记的消息气泡。这结合了你在最后两个章节中学到的技能以及现在正在学习的技能。此图中的应用程序类似于上一个图，不同在于在消息气泡中显示 Flickr 图片。
+
+此应用程序的 jQuery 代码在点击处理器的中间部分与之前的图相同。之后，第一条语句创建 Flickr 的 URL，然后第二条语句使用 `$.getJSON` 和 `$.each` 方法获取地址并存储在 HTML 元素中。
+
+### 网页显示位置 Flickr 图片
+
+![Figure 16-9](img/fb3dabc43193711c2307f942481ad30c_502.png)
+
+### jQuery 代码
+
+```javascript
+$('#links a').click(function() {
+  var address = $(this).text().trim();
+  if (marker) marker.setMap(null);
+  geocoder.geocode({address: address}, function(results) {
+    marker = new google.maps.Marker({
+      position: results[0].geometry.location,
+      map: map
+    });
+    var overlay = new google.maps.OverlayView();
+    overlay.draw = function () {
+      var point = overlay.getProjection().fromLatLngToPixel(
+        marker.getPosition()
+      );
+      // 此应用程序更改后的代码如下
+      var url = "http://api.flickr.com/services/feeds/photos_public.gne?format=json&jsoncallback=?&tags=" + address;
+      $.getJSON(url, function (data) {
+        $.each(data.items, function (i, item) {
+          $("#message").html(address + "<br><img src='" + item.media.m + "' width=150 height=100>");
+        });
+        $("#message").show().css({
+          top: point.y + 10,
+          left: point.x
+        });
+      });
+    };
+    overlay.setMap(map);
+  });
+});
+```
+
+## 如何显示行驶路线
+
+如果你使用 Google 地图向用户显示公司的位置，你可能还会为该位置提供行驶路线。在接下来的两幅图中，你将学习如何实现这一点。
+
+## 用于路线和监听器的类和方法
+
+图 16-10 中的前三个表格总结了提供行驶路线所需的类和方法。简而言之，你使用 `DirectionsService` 类及其一个方法来获取路线。然后，你使用 `DirectionsRenderer` 类及其三个方法来显示路线。
+
+图中的示例展示了如何使用这些类和方法。这假设 `DirectionsService` 和 `DirectionsRenderer` 对象已经创建。然后，将 `origin` 属性设置为一个标记的位置，将 `destination` 属性设置为另一个标记的位置，并将 `travelMode` 属性设置为 `TravelMode` 类中的 `DRIVING` 常量。
+
+接下来是一个语句，它使用 `DirectionsService` 对象的 `route` 方法来获取路线。在该回调函数中，使用 `DirectionsRenderer` 对象的 `setDirections` 方法来显示结果。该方法的参数是请求返回的结果对象。
+
+图中的最后一个表格总结了 `event` 命名空间中的三个方法，你可以使用它们为事件提供事件处理器。在 Google Maps API 和许多编程语言的术语中，监听器监听事件并将其定向到相应的事件处理器。当你使用监听器方法时，不需要创建对象，因为 `event` 命名空间对 Google Maps 应用程序始终可用。
+
+要向应用程序添加监听器，你使用 `addListener` 方法，它有三个参数：事件对象、事件和事件处理器。该表随后的示例说明了这一点。在这里，使用 `addListener` 方法来监听标记的点击事件。当该事件发生时，会将一个事件传递给事件处理器并执行。该事件对象的属性之一 `latLng` 属性可用于获取地图上点击的位置。
+
+一旦创建了监听器，你就可以使用 `trigger` 方法来触发其事件。此外，如果你将事件处理器的监听器保存在变量中，稍后可以使用 `removeListener` 方法将其移除。你将在下一图的应用程序中看到这一说明。
+
+## 用于检索和显示路线的类
+
+| 类 | 描述 |
+| :--- | :--- |
+| `DirectionsService()` | 此构造函数创建一个可以从 Google 服务器检索路线的对象。 |
+| `DirectionsRenderer()` | 此构造函数创建一个可以用于渲染路线的对象。 |
+| `TravelMode` | 此类提供了四种旅行模式的常量：`DRIVING`、`BICYCLING`、`TRANSIT` 和 `WALKING`。 |
+
+## DirectionsService 类的一个方法
+
+| 成员 | 描述 |
+| :--- | :--- |
+| `route(request, callback)` | 发出请求。其第一个参数是 `DirectionsRequest` 对象，它具有三个必需属性：`origin`（起始位置）、`destination`（目的地）和 `travelMode`（旅行模式）。该方法返回一个 `DirectionsResult` 对象和一个 `Status`。 |
+
+## DirectionsRenderer 类的三个成员
+
+| 成员 | 描述 |
+| :--- | :--- |
+| `setMap(map)` | 指定渲染路线的地图。 |
+| `setPanel(panel)` | 指定接收路线的 HTML div 元素。 |
+| `setDirections(result)` | 在 div 元素中渲染路线请求的结果。 |
+
+## 一个典型的路线请求
+
+```javascript
+var request = {
+  origin: marker1.getPosition(),
+  destination: marker2.getPosition(),
+  travelMode: google.maps.TravelMode.DRIVING
+};
+directionsService.route(request, function(result, status) {
+  directionsRenderer.setDirections(result);
+});
+```
+
+## 用于使用事件处理器的 event 命名空间的三个方法
+
+| 方法 | 描述 |
+| :--- | :--- |
+| `addListener(object, event, handler)` | 为对象和事件注册事件处理器。它返回一个具有事件相关属性的对象。 |
+| `removeListener(listener)` | 移除指定的监听器。 |
+| `trigger(object, event)` | 为指定的对象触发指定的事件。 |
+
+## 如何使用 addListener 方法注册事件处理器
+
+```javascript
+google.maps.event.addListener(marker, "click", function(event) {
+  // 事件处理器的代码
+});
+```
+
+**图 16-10**
+
+## 如何在自己的网站上显示行驶路线
+
+图 16-11 展示了一个在其自己的网站上提供行驶路线的应用程序。在这里，当用户点击地图上的两点后，路线将显示在地图的右侧，地图和路线的位置通过样式表完成。
+
+开始时，此应用程序的 `ready` 事件创建一个新的 `DirectionsService` 并将其存储在名为 `directionsService` 的变量中。然后，由于此应用程序处理两个不同的标记，它声明了一个 `markers` 数组将用于存储这些标记。最后，在地图添加到网页后，为地图的点击事件创建了一个监听器。
+
+要创建监听器，`addListener` 方法的第一个参数设置为变量 `map`，它包含 `Map` 对象。第二个参数设置为 `click`，这是将要监听的事件。然后，在监听器的函数（事件处理器）中，当用户点击地图时，会创建一个新标记。该函数使用传递给事件处理器的事件对象的 `latLng` 属性来设置标记的位置。之后，使用 `markers` 数组的 `push` 方法将标记添加到数组中。
+
+地图中的下一个语句检查标记的数量是否大于 1。如果是，`DirectionsService` 和 `DirectionsRenderer` 已经准备好获取路线并显示它们了。然后，地图中的下一个语句检查 `status` 对象以查看请求是否成功。如果成功，`DirectionsRenderer` 的 `setDirections` 方法将结果显示在 `directions` div 元素中。
+
+## 观点
+
+如果你在阅读本章时参考了 Google Maps API 的文档，你会知道这些文档既详尽又复杂。这就是为什么本章的目标是让你上手一些基础类和方法，以及一些地图应用。
+
+从这里开始，我们希望你能够独立开发本章应用的变体。我们还希望你能探索 Maps 文档，并学会如何开发其他类型的地图应用。
+
+## 术语
+
+- 构造函数
+- 地理编码
+- 对象
+- 监听器
+
+## 总结
+
+- Google Maps API 主要由提供构造函数的类组成，这些构造函数用于从类创建对象。然后，可以使用这些对象调用方法来开发地图应用。
+- Google Maps API 中的某些类并不用于创建对象。
+- 当你使用 `Map` 对象的构造函数时，你必须提供 `zoom`、`center` 和 `mapTypeId` 选项。你还必须提供代表地图显示 `div` 元素的 DOM 对象。当 `Map` 对象被创建时，它会自动显示在相应的 `div` 元素中。
+- 地理编码是指将地址转换为位置，或反之的过程。要实现这一点，请使用 `Geocoder` 对象及其 `geocode` 方法。
+- 当你使用 `Marker` 类的构造函数创建标记对象时，你必须提供标记的位置和地图名称。然后，当 `Marker` 对象被创建时，标记会自动添加到地图上。
+- 为地图提供消息气泡，你可以使用 `InfoWindow`、`OverlayView`、`MapCanvasProjection` 和 `Marker` 类的对象和方法。
+- 监听器用于监听区域上的特定事件并在事件发生时运行事件处理器。
+- 要在地图上显示两点之间的路线，可以使用 `DirectionsService` 和 `DirectionsRenderer` 类的对象和方法。
+
+## 练习 16-1 增强地图应用
+
+在这个练习中，你将回顾 Google Maps 文档，并增强一个地图应用，使其能够通过标记和自定义消息显示你的家乡，然后提供从家乡到地图上点击位置的任意自定义地点的路线。
+
+![](img/fb3dabc43193711c2307f942481ad30c_508_0.png)
+
+### 回顾 Google 地图应用和 Google Maps API
+
+1. 使用你的文本编辑器打开此文件夹中的 HTML 文件：`c:\query\exercise\ch16\map\map`。然后运行此应用以查看它作为地图的所有功能。
+2. 使用此 URL 进入 Google Maps API 文档的开头：developers.google.com/maps/documentation/javascript。然后，点击左侧边栏中的“API Reference”链接。这将列出许多类列表，你可以点击这些类来查看对应类的文档。
+3. 尝试深入研究 `Map` 类的链接。首先，在目录中点击 `Map` 链接。在该类的构造函数中，注意第二个参数有一个指向 `MapOptions` 的链接。接下来，点击该链接查找该参数的属性，包括必需的 `zoom`、`center` 和 `mapTypeId` 属性。然后，点击 `center` 属性的 `LatLng`，查看你可以配合 `LatLng` 对象使用的方法。这个对象将帮助你了解如何使用此 API。
+4. 如果你打算在自己的网站使用 Google Maps（而不是为了课程），你应该获取一个 API 密钥来使用。要实现这一点，使用此 URL 进入 Google APIs 控制台：code.google.com/apis/console/。然后按照 16-1 中的步骤获取 API 密钥。
+
+### 增强地图
+
+5. 在地图应用 `ready` 方法的开头，进行地理编码以获取你家乡的位置。然后，通过将代码放在 `geocode` 方法的回调函数中来实现后续的增强。
+6. 首先，将请求返回的位置存储在名为 `myLatLng` 的变量中。然后，移动显示地图的代码，使其在 `geocode` 方法的回调函数内执行，并将地图的 `center` 选项更改为 `myLatLng` 变量。当你测试此更改时，你的家乡应该是所显示地图的中心。
+7. 参考图 16-5 指引，在地图上为你的家乡添加一个标记。
+8. 参考图 16-8 指引，在标记上方添加自定义消息，内容为："This is my home town!"。此消息应该放置在 `h3` 元素中。当消息显示时，此应用提供的样式表将对其进行适当的格式化。
+
+### 提供前往另一个地点的路线
+
+9. 参考图 16-11 指引，并在 `geocode` 方法的回调函数中继续代码编写一个监听器，当用户点击地图时向地图上添加标记。然后移除该监听器。
+10. 再次参考图 16-11 指引，显示从你的家乡到用户点击地点的路线。此应用提供的样式表将路线显示在地图的右侧。
+
+如果你有时间，请进行实验。这是学习的最佳方法。
+
+# 第 5 节
+
+## jQuery Mobile 基础
+
+jQuery Mobile 是一个扩展 jQuery 库的库。jQuery Mobile 让构建具有移动设备原生界面的网站变得很容易。
+
+在本节的第 17 章中，你将通过学习基础 jQuery Mobile 技能来快速上手。然后，第 18 章将介绍使用 jQuery Mobile 所需的其他技能。完成本节后，你将准备好开发专业水平的移动网站。
+
+# 17
+
+## 快速上手 jQuery Mobile
+
+在本章中，你将学习如何为手机和 PDA 等移动设备构建具有原生界面的网站。要实现这一点，你将使用一个名为 jQuery Mobile 的库。
+
+| | |
+| :--- | :--- |
+| 如何处理移动设备 | 498 |
+| 如何为移动设备提供页面 | 498 |
+| 如何使用 JavaScript 插件重定向移动浏览器 | 500 |
+| 如何设置视口属性 | 502 |
+| 移动网页设计指南 | 504 |
+| 移动网页测试指南 | 504 |
+| **入门 jQuery Mobile** | 506 |
+| 什么是 jQuery Mobile 以及哪里获取 | 506 |
+| 如何在网页中引入 jQuery Mobile | 508 |
+| 如何使用 jQuery Mobile 创建网页 | 510 |
+| 如何在单个 HTML 文件中编写多个网页 | 512 |
+| 如何使用对话框和过渡 | 514 |
+| 如何创建按钮 | 516 |
+| 如何创建导航栏 | 518 |
+| **如何使用 jQuery Mobile 设置网页样式** | 520 |
+| 如何处理默认样式 | 520 |
+| 如何在 HTML 元素上应用主题配色 | 522 |
+| 如何使用 ThemeRoller 制作自己的主题 | 524 |
+
+## 如何使用移动设备
+
+今天，有许多不同类型的移动设备，这些设备经常被用于访问网站。由于这些设备的屏幕远小于标准电脑屏幕，为桌面设备设计的网站在移动设备上操作可能很困难。因此，为了适应移动用户的需求，开发者通常会提供为移动设备设计的网页。
+
+## 如何为移动设备提供页面
+
+如今，大公司都提供网站的完整版以及移动版。这在图 17-1 的主页中得到了体现。一个是网站的完整版；另一个是移动版。
+
+为了检测设备并将它们重定向到网站的移动版本，完整版可以使用客户端或服务器端代码。例如，可以使用 JavaScript 或 jQuery 在浏览器中执行此操作，可以使用像 PHP 这样的脚本语言在 Web 服务器上执行此操作。你将在下一图中学习到更多内容。
+
+当你使用这种技术时，移动站点名称的一个常用约定是在主站域名前前加上 `m.`。例如，vectacorp.com 的移动版本名称为 `m.vectacorp.com`。另一种约定是将移动站点存储在主站的子目录下，例如 `vectacorp.com/mobile`。
+
+如果你没有资源创建网站的移动版本，另一种替代方案是使用 CSS。也就是说，使用 CSS 特性：媒体查询，为计算机和移动设备提供不同的样式表，尽管两者的 HTML 是相同的。这样，当网页在移动设备上显示时，你可以隐藏或调整网页某些组件的大小。这种方法的麻烦在于并非所有浏览器都支持媒体查询。
+
+好消息是，jQuery Mobile 让创建网站移动版变得比任何时候都更容易。这意味着小型公司现在应该能够负担得起网站的移动版本。在这种情况下，就不需要媒体查询了。
+
+## 第 17 章 使用 jQuery Mobile 快速上手
+
+### 完整网站的主页和网站的移动版本
+
+![](img/fb3dabc43193711c2307f942481ad30c_514_0.png)
+
+### 将用户重定向到网站移动版本的两种方法
+
+- 使用 JavaScript 或 jQuery 检测移动设备并将它们重定向到网站的移动版本。
+- 使用 PHP 等服务器端脚本语言检测移动设备并将它们重定向到网站的移动版本。
+
+### 如何为移动设备提供不同的样式表
+
+- CSS3 提供了一项名为媒体查询的功能，允许你为移动设备提供不同的样式表。例如，可以使用此 link 元素为宽度小于 480 像素的设备提供样式表：
+  `<link rel="stylesheet" href="styles/mobile.css" media="only screen and (max-width: 480px)">`
+  然后，可以使用另一个 link 元素为宽度大于 480 像素的设备提供样式表。更多信息，请访问：http://www.w3.org/TR/css3-mediaqueries/
+- 缺点是旧版浏览器不支持此功能，因此这种技术不向后兼容。
+
+## 描述
+
+- 目前，为移动设备提供服务的最好方法是将用户重定向到网站的移动版本。
+- 如果你没有网站的移动版本，为移动设备的替代方案是使用媒体查询为其提供样式表，使网站的完整版在这些设备上更易用。
+
+**图 17-1 如何为移动设备提供页面**
+
+## 如何使用 JavaScript 插件将移动浏览器重定向到移动网站
+
+由于有许多不同类型的移动设备和移动浏览器，编写和维护一个将移动浏览器重定向到网站移动版本的 JavaScript 将是困难的。当你需要这样做时，一个很好的方法是寻找一个实现你需求的插件。
+
+提供检测浏览器脚本的网站之一是图 17-2 所示的 Detect Mobile Browsers 网站。它提供了客户端和服务器脚本，用于检测移动浏览器并将它们重定向到网站的移动版本。如你所见，它提供了许多此类脚本。
+
+## 如何设置视口属性
+
+### iPhone 上的网页以及缩放后的效果
+
+**缺少 `width=device-width, initial-scale=.5` 的 viewport meta 元素**
+
+![](img/fb3dabc43193711c2307f942481ad30c_518_0.png)
+
+**包含 `width=device-width, initial-scale=.5` 的 viewport meta 元素**
+
+![](img/fb3dabc43193711c2307f942481ad30c_518_1.png)
+
+### 移动端网站的基础设置
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+### 全功能网站页面的典型设置
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=.5">
+```
+
+### 视口元数据的属性
+
+| 属性 | 描述 |
+| --- | --- |
+| `width` | 视口的以像素宽度。你也可以使用设备关键字来指示视口宽度应与屏幕同宽。 |
+| `height` | 以像素指定的视口高度。你也可以使用设备关键字来指示视口高度应与屏幕同高。 |
+| `initial-scale` | 一个表示页面显示初始缩放比例的数字。 |
+| `minimum-scale` | 一个表示页面最小缩放比例的数字。 |
+| `maximum-scale` | 一个表示页面最大缩放比例的数字。 |
+| `user-scalable` | 表示用户是否可以对视口进行放大或缩小。可能的值有 `yes` 和 `no`。 |
+
+## 描述
+
+- 移动设备上的视口决定了页面上显示的内容。它可以比屏幕的可视区域更大或更小。
+
+**图 17-3 如何设置视口属性**
+
+## 移动端网页的设计指南
+
+如果你专门为移动设备创建网页，你应该遵循一些通用指南，以便用户能够操作这些页面。图 17-4 展示了这些指南。
+
+通常情况下，你希望简化页面的布局和内容。图中的两个页面说明了这一点。第一个页面显示了一个大型网站移动版的首页。该页面主要由指向该网站提供的主要产品类型的链接组成。第二个页面显示了用户在网站中层层深入后的产品列表。如果你查看该网站的完整版本，你就能更好地理解完整版本被简化了多少程度。
+
+## 移动端网页的测试指南
+
+图 17-4 还提供了一些测试网页的指南。由于有许多不同的移动设备，因此在许多设备和许多浏览器中测试移动端网页是至关重要的。虽然测试移动端网页的最佳方法是将其部署在 Web 服务器上并在各种设备上显示，但这并不总是可行的。在这种情况下，你可能希望使用针对许多移动设备和浏览器提供的设备仿真器和浏览器模拟器。
+
+在大多数情况下，你需要从制造商的网站下载所需的仿真器或模拟器，以便在桌面电脑上运行它。尽管如此，有时你还需要部署网页以便能够在线访问。此外，当你使用仿真器或模拟器时，它并不总是能提供准确的结果，尽管它应该接近页面的样子。
+
+为了获取本章的截图，我使用了我的 iPhone。为了做到这一点，我在 iPhone 上的 Safari 浏览器显示页面。为了捕捉每个页面图像，我长按 Home 键并按下电源键。在捕捉所有页面图像后，我将它们从 iPhone 拷贝到电脑上。
+
+如果你没有可以部署移动页面的 Web 服务器，一个简单的方法是调整浏览器窗口的大小，使其大致相当于移动设备的大小。这将让你对页面在移动设备上的样子有一个很好的了解。如果你没有 iPhone，我建议使用 Safari。这将为你提供最准确的展示，即元素在使用 jQuery Mobile 的 iPhone 中时的外观和功能。
+
+另一个选项是使用设备模拟器，例如内置在最新版本 Dreamweaver 中的那种。或者，你可以尝试在网上找一个，例如在以下地址可用的 iPhone 模拟器：www.testiphone.com。但是，使用该模拟器时，你的网页必须位于 Web 服务器上，而且模拟效果并不完美。你当然希望的是那种能以真实方式工作并提供多种设备模拟的模拟器。
+
+## 第 17 章 使用 jQuery Mobile 快速上手
+
+### www.orvis.com 移动端网站的两个页面
+
+**首页**
+
+![](img/fb3dabc43193711c2307f942481ad30c_520_0.png)
+
+**产品列表**
+
+![](img/fb3dabc43193711c2307f942481ad30c_520_1.png)
+
+### 移动端网页的设计指南
+
+- 保持布局简单，使焦点集中在内容上。单列布局通常效果最好。
+- 仅包含基本内容。
+- 将小图像减少到最小。
+- 避免使用 Flash。包括 iPhone 在内的大多数移动设备都不支持它。
+- 在页眉中仅包含基本内容。
+- 使用相对测量值，使页面在所有屏幕上显示良好。
+- 使用 jQuery Mobile 构建响应式页面。
+
+### 移动端网页的测试指南
+
+- 在尽可能多的不同移动设备和浏览器上测试页面。
+- 测试移动网页的最佳方法是将其部署在 Web 服务器上。
+- 需要时使用设备仿真器和浏览器模拟器。
+
+**图 17-4 移动端网页的设计与测试指南**
+
+## 如何开始 jQuery Mobile
+
+在本书中，你学习了如何使用 jQuery 和 jQuery UI 来增强网页。现在，在本章中，你将学习如何使用 jQuery Mobile。
+
+## 什么是 jQuery Mobile 以及如何获取
+
+如图 17-5 所示，jQuery Mobile 是一个用于移动设备的免费、开源、跨平台的 JavaScript 库。它与核心 jQuery 结合使用。它让你创建看起来和感觉像原生应用程序的页面。
+
+尽管 jQuery Mobile 相当新，但当前版本提供了你开发网站所需的功能。新版本正在开发中。
+
+要在页面中引入 jQuery Mobile，你可以从 jQuery Mobile 网站下载所需的 JavaScript 和 CSS 库，将其部署到你的 Web 服务器，然后包含在移动页面中。或者，你可以像我们对最新版 jQuery 所做的那样使用内容分发网络。
+
+### jQuery Mobile 网站
+
+www.jquerymobile.com
+
+![](img/fb3dabc43193711c2307f942481ad30c_522_0.png)
+
+### 你需要的 jQuery 库
+
+- jQuery（核心库）
+- jQuery Mobile
+
+## 描述
+
+- jQuery Mobile 是一个免费、开源的 JavaScript 库，让为移动设备开发网站变得更容易。它与核心 jQuery 结合使用。jQuery Mobile 让你在一个 HTML 文件中存储多个页面；创建对话框、按钮和导航栏；无需编写 CSS 即可格式化页面；使用双列、折叠内容块、风琴组件布局页面；等等。
+- jQuery Mobile 支持包括 iPhone iOS、Android、BlackBerry、Windows Phone、PalmOS 和 Symbian 在内的大多数设备。
+- jQuery Mobile 网站提供了开始移动设备工作所需的所有文档、示例代码和下载。
+
+## 在你的网页中引入 jQuery Mobile
+
+要使用 jQuery Mobile，你需要在网页中包含图 17-6 顶部列出的三个文件：jQuery 文件、jQuery Mobile 文件以及 jQuery Mobile CSS 样式表。如图所示，有两种方法可以实现这一点。
+
+包含这三个文件的第一种方法如图中的第一个示例。在这里，用于 CSS 文件的 `link` 元素以及用于 jQuery 和 jQuery Mobile 文件的 `script` 元素使用了内容分发网络（CDN）。在编写本文时，微软和 jQuery 是你可以用于获取 jQuery Mobile 库的 CDN，而此示例使用了 jQuery CDN。
+
+使用 CDN 的用处是，你不需要在新的版本发布时在你的服务器上管理 jQuery 和 jQuery Mobile 的版本。相反，你只需要更改这些文件的 `link` 和 `script` 元素中的版本号即可。
+
+另一种方法是下载这三个文件并将它们部署在你的系统或服务器上。为此，你需要下载压缩的 zip 文件，从 zip 文件中提取文件，并将文件复制到你的 Web 服务器。
+
+然后，对于每个使用 jQuery Mobile 的网页，你编写一个 `link` 元素和两个 `script` 元素来包含 jQuery 和 jQuery Mobile 文件。这如图中的第二个示例所示。在这里，保留了当前版本文件的名称。虽然你可以在它们存入服务器后更改这些名称，但保留下载时的名称有助于识别你正在使用哪个版本的文件。
+
+无论你使用哪种方法，都必须在 jQuery 的 `script` 元素之后编写 jQuery Mobile 的。这是因为 jQuery Mobile 使用了 jQuery 库。
+
+## 第 17 章 使用 jQuery Mobile 快速上手
+
+### jQuery 应用需要包含的三个文件
+
+- jQuery JavaScript 文件
+- jQuery Mobile JavaScript 文件
+- jQuery Mobile CSS 样式表
+
+### 引入 jQuery 文件的两种方法
+
+- 从微软或 jQuery 等内容分发网络（CDN）引入文件。
+- 下载并将文件部署在你的 Web 服务器上。然后，从服务器引入它们。
+
+### 如何从内容分发网络引入 jQuery Mobile 文件
+
+```html
+<!-- 引入 jQuery Mobile 样式表 -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery-mobile-1.1.1.min.css">
+<!-- 引入 jQuery 和 jQuery Mobile JavaScript 文件 -->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.1/jquery-mobile-1.1.1.min.js"></script>
+```
+
+### 当 jQuery Mobile 文件位于你的 Web 服务器上如何引入
+
+```html
+<!-- 引入 jQuery Mobile 样式表 -->
+<link rel="stylesheet" href="jquery-mobile-1.1.1.min.css">
+<!-- 引入 jQuery 和 jQuery Mobile JavaScript 文件 -->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="jquery-mobile-1.1.1.min.js"></script>
+```
+
+## 描述
+
+- 要使用 jQuery Mobile，你需要包含上述三个文件。前两个是 jQuery 和 jQuery Mobile 的 JavaScript 文件。第三个是 jQuery Mobile 样式表的 CSS 文件。
+- jQuery Mobile 正在不断改进和增强，因此请访问网站获取最新版本。
+- 在编写本文时，只有微软和 jQuery 提供了访问 jQuery Mobile 文件的内容分发网络（CDN）。
+- jQuery 和 jQuery Mobile 的文件名始终包含版本号。在编写本文时，jQuery Mobile 的最新稳定版本是 1.1.1。
+- 如果你下载并部署 jQuery 文件到你的系统，可以更改文件名使其更简单。但这样做的话，你就无法跟踪你正在使用哪些版本，以及何时需要升级到新版本。
+
+![](img/fb3dabc43193711c2307f942481ad30c_524_0.png)
+
+## 如何使用 jQuery Mobile 创建网页
+
+为了让你了解 jQuery Mobile 如何工作，图 17-7 显示了如何用它创建一个网页。在页面的 HTML 中，使用 `data-role` 属性来识别页面的组件：`page`（页面）、`header`（头部）、`content`（内容）和 `footer`（页脚）。你还使用 `h1` 元素作为页头内容，并使用 `h4` 元素作为页脚内容。
+
+在显示的页面中，你可以看到 jQuery Mobile 如何自动格式化这些组件。在这里，头部和页脚的文本在黑色背景上以白色字体居中，而内容的文本是灰色背景上的黑色字体。这是 jQuery Mobile 完成的默认样式，类似于原生 iPhone 应用程序的样式。
+
+在头部、页脚和内容组件中，你可以编写所需的任何内容的 HTML。你将在随后的示例中看到这一点。然而，这个简单的示例应该让你了解编写和格式化单页网页有多么简单。
+
+## 第 17 章 使用 jQuery Mobile 快速上手
+
+### 使用 jQuery Mobile 的网页
+
+![](img/fb3dabc43193711c2307f942481ad30c_526_0.png)
+
+### 移动页的 HTML
+
+```html
+<div data-role="page">
+  <header data-role="header">
+    <h1>头部</h1>
+  </header>
+  <section data-role="content">
+    <p>页面内容</p>
+  </section>
+  <footer data-role="footer">
+    <h4>页脚</h4>
+  </footer>
+</div>
+```
+
+## 描述
+
+- 典型移动页的 HTML 将包含 `div`、`header` 和 `footer` 元素。
+- `data-role` 属性用于识别页面的部分，将该属性的值设置为 "page"、"header"、"content" 和 "footer"。
+- 在头部中，内容应在 `h1` 元素中编写。在页脚中，内容应在 `h4` 元素中编写。
+- 在 `data-role` 为 "content" 的 `section` 中你可以编写所需的任何内容。
+- jQuery Mobile 会格式化网页。
+
+## 如何在单个 HTML 文件中编写多个页面
+
+与开发在屏幕上显示的网页的方式不同，jQuery Mobile 允许你在单个 HTML 文件中创建多个页面。这如图 17-8 所示。在这里，你可以看到网站的两个页面。令人惊讶的是，这两个页面都编写在同一个 HTML 文件中。
+
+### 使用 jQuery Mobile 的两个网页
+
+![](img/fb3dabc43193711c2307f942481ad30c_528_0.png)
+
+### 在一个 HTML 主体中两个页面的 HTML 代码
+
+```html
+<div data-role="page" id="home">
+  <header data-role="header">
+    <h1>Vecta Corp</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home">首页</a></li>
+        <li><a href="#solutions">解决方案</a></li>
+        <li><a href="#contact">联系我们</a></li>
+      </ul>
+    </div>
+  </header>
+  <section data-role="content">
+    <!-- section 的内容 -->
+  </section>
+  <footer data-role="footer"><h4>&copy; 2012</h4></footer>
+</div>
+
+<div data-role="page" id="solutions">
+  <header data-role="header">
+    <h1>Vecta Corp</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home">首页</a></li>
+        <li><a href="#solutions">解决方案</a></li>
+        <li><a href="#contact">联系我们</a></li>
+      </ul>
+    </div>
+  </header>
+  <section data-role="content">
+    <!-- section 的其余部分和页脚 -->
+  </section>
+</div>
+```
+
+## 说明
+
+- 若要在一个文件中编写多个页面，请将每个页面的 `id` 属性设置为占位符，其他页面的 `<a>` 元素可以引用它。
+
+**图 17-8 如何在单个 HTML 文件中编写多个网页**
+
+## 如何使用对话框和过渡效果
+
+图 17-9 显示了如何创建一个在点击链接时打开的对话框。要做到这一点，你可以像编写任何页面一样编写对话框。但在跳转到该页面的 `<a>` 元素中，编写一个 `data-rel` 属性值为 "dialog" 的对话框。
+
+如图中的示例所示，jQuery Mobile CSS 文件对对话框的格式与网页不同。默认情况下，对话框具有深色背景和白色前景文字，页眉和页脚不会跨越页面宽度。对话框在页眉中还有一个“X”，用户必须点击它才能返回上一页。
+
+当你编写跳转到另一个页面或对话框的 `<a>` 元素时，还可以使用 `data-transition` 属性指定图中表格总结的六种过渡效果之一。每种过渡效果都旨在模拟 iPhone 等移动设备上的效果。通常情况下，这些过渡效果在桌面浏览器中不起作用，但在 Safari 浏览器中有效。这使得在计算机上测试它们变得简单。
+
+顺便提一下，即使页面存储在单独的文件中，过渡依然有效。这是因为 jQuery Mobile 会自动为与当前页面不在同一个文件的页面创建 Ajax 请求。然后，下一个页面会被添加到 DOM 中，过渡效果就像两个页面都在同一个文件中一样工作。这有时被称为 "Ajax 导航"。如果你想停止这种默认行为，可以将 `<a>` 元素的 `data-ajax` 属性设置为 "false"。然后，过渡效果将按照标准网页的方式工作。
+
+## 第 17 章 使用 jQuery Mobile 快速上手
+
+### 具有相同 HTML 的页面和对话框
+
+**网页**
+
+![](img/fb3dabc43193711c2307f942481ad30c_530_0.png)
+
+**对话框**
+
+![](img/fb3dabc43193711c2307f942481ad30c_530_1.png)
+
+### 可使用的过渡效果
+
+| 过渡效果 | 描述 |
+| --- | --- |
+| `slide` | 下一个页面从右向左滑入。 |
+| `slideup` | 下一个页面从下向上滑入。 |
+| `slidedown` | 下一个页面从上向下滑入。 |
+| `pop` | 下一个页面从屏幕中心淡入。 |
+| `fade` | 下一个页面淡入进入视野。 |
+| `flip` | 下一个页面从背面到正面翻转，类似于翻转纸牌。某些设备不支持此过渡效果。 |
+
+### 使用 "fade" 过渡效果打开网页的 HTML
+
+```html
+<a href="#vcontent" data-transition="fade">View Content</a>
+```
+
+### 使用 "dialog" 过渡效果作为对话框打开页面的 HTML
+
+```html
+<a href="#vcontent" data-rel="dialog" data-transition="pop">View Content</a>
+```
+
+## 说明
+
+- 用于对话框的 HTML 编写方式：像编写页面一样编写对话框，设置 `data-rel` 属性值为 "dialog"。
+- 对话框在页眉中有一个“X”，用户必须点击它才能返回上一页。
+- 当编写跳转到另一个页面或对话框的 `<a>` 元素时，你可以使用 `data-transition` 属性指定图中表格总结的六种过渡效果之一。每种过渡效果都旨在模拟 iPhone 等移动设备上的效果。通常情况下，这些过渡效果在桌面浏览器中不起作用，但在 Safari 浏览器中有效。这使得在计算机上测试它们变得简单。
+- 对话框的页眉和页脚不会跨越页面宽度。
+- 默认情况下，对话框具有深色背景和白色前景文字。
+
+**图 17-9 使用对话框和过渡效果**
+
+## 如何创建按钮
+
+### 显示按钮的移动网页
+
+![](img/fb3dabc43193711c2307f942481ad30c_532_0.png)
+
+### jQuery Mobile 提供的图标
+
+| `delete` | `arrow-r` | `arrow-u` | `arrow-d` | `search` |
+| `plus` | `minus` | `check` | `gear` | `forward` |
+| `back` | `grid` | `star` | `alert` | `info` |
+
+### section 中的按钮 HTML
+
+```html
+<!-- 内联按钮，将 data-inline 属性设置为 true -->
+<a href="#" data-role="button" data-inline="true">取消</a>
+<a href="#" data-role="button" data-inline="true">确定</a>
+
+<!-- 给按钮添加图标，使用 data-icon 属性 -->
+<a href="#" data-role="button" data-icon="delete">删除</a>
+<a href="#" data-role="button" data-icon="home">首页</a>
+
+<!-- 为了分组按钮，设置具有以下属性的元素 -->
+<div data-role="controlgroup" data-type="vertical">
+  <a href="#" data-role="button" data-rel="yes">是</a>
+  <a href="#" data-role="button" data-rel="no">否</a>
+  <a href="#" data-role="button" data-rel="maybe">也许</a>
+</div>
+
+<!-- 为了编写返回按钮，将 data-rel 属性设置为 back -->
+<a href="#" data-role="button" data-rel="back" data-icon="back">返回上一页</a>
+```
+
+### 页脚中的按钮 HTML
+
+```html
+<footer data-role="footer">
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#" data-icon="home">首页</a></li>
+      <li><a href="#" data-icon="grid">解决方案</a></li>
+      <li><a href="#" data-icon="star">联系我们</a></li>
+    </ul>
+  </div>
+</footer>
+```
+
+## 说明
+
+- 要创建按钮，将 `<a>` 元素的 `data-role` 属性设置为 "button"。
+- 要创建内联按钮，将 `data-inline` 属性设置为 "true"。
+- 要给按钮添加图标，使用 `data-icon` 属性。
+- 要分组按钮，将按钮包裹在设置了 `data-role="controlgroup"` 的容器中，并使用 `data-type` 指定方向。
+- 要创建返回按钮，将 `data-rel` 属性设置为 "back"。
+
+**图 17-10 如何创建按钮**
+
+
+
+<footer data-role="footer" class="ui-bar">
+  <a href="http://www.facebook.com" data-role="button" data-icon="plus">分享到 Facebook</a>
+  <a href="http://www.twitter.com" data-role="button" data-icon="plus">推文此页面</a>
+</footer>
+
+# 如何创建导航栏
+
+图 17-11 显示了如何向网页添加导航栏。要实现这一点，你需要编写一个 `div` 元素，并将其 `data-role` 属性设置为 "navbar"。在该元素内部，你编写一个 `ul` 元素，其中包含多个 `li` 元素，而 `li` 元素又包含了导航栏项的 `<a>` 元素。请注意，你不需要为 `<a>` 元素编写 `data-role` 属性。
+
+为了更改导航栏项的颜色，示例中的代码包含了 jQuery Mobile 将每个项的背景颜色从黑色更改为吸引人的蓝色。结果，jQuery Mobile 为每个项更改了值为 "b" 的 `data-theme` 属性。此外，此代码还将激活按钮的 `class` 属性设置为 "ui-btn-active"，以便 jQuery Mobile 将激活按钮的颜色更改为较浅的蓝色。这展示了你如何更改由 jQuery Mobile 执行的格式，你将在下一节中学习更多内容。
+
+# 第 17 章：使用 jQuery Mobile 快速上手
+
+## 带有导航栏的移动端网页
+
+![](img/fb3dabc43193711c2307f942481ad30c_534_0.png)
+
+## 导航栏的 HTML
+
+```html
+<html data-role="header">
+  <h1>Vecta Corp/</h1>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#home" data-icon="home" data-theme="b">首页</a></li>
+      <li><a href="#solutions" class="ui-btn-active" data-icon="star" data-theme="b">解决方案</a></li>
+      <li><a href="#contact" data-icon="grid" data-theme="b">联系我们</a></li>
+    </ul>
+  </div>
+</header>
+```
+
+## 如何编写导航栏的 HTML
+
+- 在 `header` 元素中编写一个 `div` 元素。然后，将 `div` 元素的 `data-role` 属性设置为 "navbar"。
+- 在 `div` 元素内部，编写一个 `ul` 元素，为每个项包含一个 `li` 元素。
+- 在每个 `li` 元素内部，编写一个 `<a>` 元素，其 `href` 属性使用链接应指向的页面占位符。然后，将 `data-icon` 属性设置为你选择的图标。
+- 对于导航栏中的激活项，将 `class` 设置为 "ui-btn-active"。这样，该项的颜色将比导航栏中的其他项更亮。
+- 你还应该使用 `data-theme` 属性为导航栏中的每个项应用 jQuery Mobile 主题。否则，栏中的按钮将与页眉其他部分的颜色相同。要了解更多关于应用主题的知识，请参见图 17-13。
+
+## 描述
+
+- 导航栏是 jQuery 工具栏的一种。其他类型的工具栏是你在图 17-7 中学过的头部栏和页脚栏。
+- 如上所示，导航栏通常在网页的头部（header）内编写。
+
+> 图 17-11 如何创建导航栏
+
+© 2012, Mike Murach and Associates, Inc. Licensed to Michael Hotham.
+
+# 使用 jQuery Mobile 为网页设置样式
+
+如你所见，jQuery Mobile 会根据自身的样式表自动格式化网页的组件。现在，你将学习更多关于如何调整 jQuery Mobile 使用的默认样式的相关知识。
+
+## 如何使用默认样式
+
+图 17-12 显示了 jQuery Mobile 用于常用 HTML 元素的默认样式。对于所有样式，jQuery Mobile 都依赖浏览器的渲染引擎，因此其自身的样式是极少的。这保持了快速的加载速度，并最大限度地减少了过度 CSS 给页面带来的开销。
+
+通常情况下，jQuery Mobile 的样式会以你预期的方式工作。例如，灰色背景上的黑色字体与原生移动应用程序的格式保持一致。
+
+然而，为了精调样式，你通常需要提供自己的 CSS 样式表。例如，HTML 元素前后的间距可能不符合你的要求。或者，你可能想为元素添加顶部或底部的边框。这时，你可以使用自己样式表中的 `border`、`margin` 和 `padding` 属性以你想要的方式获得这种格式。
+
+## 常用 HTML 元素的默认样式
+
+![](img/fb3dabc43193711c2307f942481ad30c_536_0.png)
+
+- 无序列表项 1
+- 无序列表项 2
+- 无序列表项 3
+
+1. 有序列表项 1
+2. 有序列表项 2
+3. 有序列表项 3
+
+定义术 1
+: 定义文本 1
+
+定义术 2
+: 定义文本 2
+
+下面的示例显示了 jQuery Mobile 如何处理表格：
+
+| 书籍 | 作者 | 销售额 |
+|---|---|---|
+| JavaScript | Ray Harris | $305,447 |
+| PHP | Joel Murach | $372,381 |
+| HTML5 | Zak Ruvaybaça | $143,762 |
+
+此段包含代码、`**粗体**`、引用、`*斜体*`和链接文本。这段文字是
+
+## 描述
+
+- 默认情况下，jQuery Mobile 自动对页面的 HTML 元素应用样式。这些样式不仅美观，而且模拟了浏览器的原生样式。
+- 默认情况下，jQuery Mobile 为页面的左、右、顶部和底部添加少量的内边距。
+- 默认情况下，链接比普通文本稍大。这使用户更容易点击链接。
+- 默认情况下，链接带有蓝色下划线。
+- 为了获得你想要的页面格式，特别是元素后的边框和间距，你通常需要使用自己的样式表。
+
+图 17-12 jQuery Mobile 使用的默认样式
+
+© 2012, Mike Murach and Associates, Inc. Licensed to Michael Hotham.
+
+# 如何为 HTML 元素应用主题变色
+
+jQuery Mobile 使用的样式由其默认主题提供，这意味着模拟原生移动应用程序的外观。该主题包含了一些全局设置（如字体族），以及用于各种元素颜色方案的五个变色。图 17-13 总结了这些变色。
+
+变色为元素定义了不同的颜色组合，旨在为页面元素提供视觉优先级，其中变色 "a" 的优先级最高，变色 "c" 的优先级最低。
+
+## 应用变色的两种方法
+
+### 使用 `data-theme` 属性
+
+```html
+<li><a href="#b" class="ui-btn-active" data-icon="b">首页</a></li>
+```
+
+### 使用指示变色的 `class` 属性
+
+```html
+<div class="ui-bar ui-bar-b">栏</div>
+```
+
+注意，这些变色适用于页眉和页脚。在某些情况下，你将希望 "e" 用于点缀，并谨慎使用。
+
+## jQuery Mobile 默认主题中的五个变色
+
+| 变色 | 描述 |
+|---|---|
+| a | 黑色背景，白色字体。这是默认设置。 |
+| b | 蓝色背景，白色字体。 |
+| c | 浅灰色背景，黑色字体。文字将加粗显示。 |
+| d | 深灰色背景，黑色字体。文字不会加粗。 |
+| e | 橙色背景，黑色字体。用于点缀，并谨慎使用。 |
+
+# 如何使用 ThemeRoller 制作你自己的主题
+
+除了更改应用的色板外，你还可以“制作自己的”主题。要实现这一点，你可以使用 jQuery Mobile 的 ThemeRoller 应用程序，如图 17-14所示。该应用程序允许你为 jQuery Mobile 元素自定义属性，并设置色板 a、b 和 c 的属性。
+
+要更改色板组件的颜色，只需将其从页面顶部的调色板拖动即可。例如，如果你想将色板 A 中链接的颜色改为深蓝色，只需将颜色拖到该色板中链接显示区域。你还可以使用左侧边栏中标签页的折叠面板来调整其他属性。当你完成了所有想要做的更改后，按照本文文件所述下载你创建的主题的 CSS 文件，并将其部署到你的 Web 服务器。
+
+要在 HTML 文件页面中使用你自己的主题，你需要在文件中添加一个指向已下载 CSS 文件的 `link` 元素。但注意，该 `link` 元素必须位于 jQuery Mobile CSS 文件的元素之后。完成后，你创建的自定义样式将覆盖默认样式。
+
+从实际情况考虑，你可能会认为不需要为你的网站制作自己的主题。这是因为默认样式很好地模拟了原生用户界面。不过，如果你想在此基础上改进，ThemeRoller 可以提供帮助。
+
+# 第 17 章 使用 jQuery Mobile 快速上手 525
+
+# 使用 ThemeRoller 制作你自己的主题
+
+![](img/fb3dabc43193711c2307f942481ad30c_540_0.png)
+
+# ThemeRoller 的 URL
+
+jquerymobile.com/themeroller/
+
+# 如何制作你自己的主题
+
+1. 使用标签页的折叠面板并将颜色从调色板拖动到特定元素，来调整全局属性或色板属性。
+2. 当你对主题满意时，点击页面顶部导航栏中的“Download zip file”按钮。
+3. 在“Download Theme”对话框中，为你的主题输入名称。然后，点击“Download Zip”按钮下载包含该主题 CSS 文件的 zip 文件。
+4. 在你的 Web 服务器上解压并部署 CSS 文件。
+
+# 如何使用你自己的主题
+
+- 为每个使用该主题的 HTML 文件中添加一个指向 CSS 文件的 `link` 元素。该 `link` 元素必须位于 jQuery Mobile CSS 文件的元素之后。
+
+## 描述
+
+- ThemeRoller 让你在默认的 jQuery Mobile 主题上创建自己的自定义主题。
+- 你可以从 ThemeRoller 的颜色库或 Adobe 的 Kuler 色板中选择色板颜色。
+- 侧边栏 Global 标签页中的折叠面板允许你调整字体、框圆角的激活状态、使用的图标和框投影。
+- 标签 A、B 和 C 中的折叠标签页允许你自定义页眉和页脚内容的颜色，以及按钮的正常状态、悬停和按下状态。
+- 如果你点击最后一个标签（带有加号的那个），将添加另一个色板。
+
+图 17-14 如何使用 ThemeRoller 制作你自己的主题
+
+© 2012, Mike Murach and Associates, Inc. Licensed to Michael Hotham.
+
+# 面向 Vecta Corp 的移动网站
+
+为了展示你刚刚学习的功能如何在完整的网站中协同工作，本章最后展示了使用 jQuery Mobile 的移动端网站的四个页面。这应该让你更好地了解如何使用 jQuery Mobile 构建自己的网站。
+
+## 网站的布局
+
+图 17-15 展示了 Vecta Corp 网站移动版本的四个页面。这包括首页（Home）、解决方案（Solutions）和联系我们（Contact Us）页面，以及该公司提供的 vProspect 解决方案的对话框。
+
+在 Home、Solutions 和 Contact Us 页面上，你可以看到导航栏，允许用户在页面之间切换。在 Solutions 页面上，用户可以点击三个“Read more”（更多）链接之一来打开该解决方案的对话框。
+
+在 Contact Us 页面上，你可以看到电话号码、邮寄地址和电子邮件地址。如果用户点击电话号码，用户的设备将尝试拨打该号码。如果用户点击电子邮件地址，用户的设备将尝试向该地址发送电子邮件。
+
+## 使用 jQuery Mobile 的简单移动网站的页面布局
+
+### 首页
+
+### 解决方案页面
+
+![](img/fb3dabc43193711c2307f942481ad30c_542_0.png)
+![](img/fb3dabc43193711c2307f942481ad30c_542_1.png)
+
+### 为什么选择 Vecta
+
+Vecta Corp 提供软件包，帮助公司通过三种方式增加销售额：
+
+- 寻找潜在客户
+- 将潜在客户转化为客户
+- 留住客户
+
+要了解详情，请前往 Solutions。
+
+Vecta Corp 提供可扩展的解决方案，帮助公司通过增加收入、成本管理和用户满意度来取得成功。
+
+### vProspect 2.0
+
+定义并研究你的目标受众，定义触达受众的策略。
+
+![](img/fb3dabc43193711c2307f942481ad30c_542_2.png)
+![](img/fb3dabc43193711c2307f942481ad30c_542_3.png)
+![](img/fb3dabc43193711c2307f942481ad30c_542_4.png)
+
+## head 区域和首页的 HTML 代码
+
+```html
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Vecta Corp. Mobile</title>
+  <!-- 样式 -->
+  <link rel="stylesheet" href="code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- JavaScript 文件 -->
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery-latest.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+</head>
+<body>
+  <div data-role="page" id="home">
+    <header data-role="header">
+      <h1>Vecta Corp!</h1>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home" class="ui-btn-active" data-theme="b">首页</a></li>
+          <li><a href="#solutions" data-icon="star" data-theme="b">解决方案</a></li>
+          <li><a href="#contactus" data-icon="grid" data-theme="b">联系我们</a></li>
+        </ul>
+      </div>
+    </header>
+    <section data-role="content">
+      <h2>为什么人们选择 Vecta</h2>
+      <p>Vecta Corp 提供的软件包可以帮助公司在三年内增加销售额：</p>
+      <ul>
+        <li>为客户提供融资前景</li>
+        <li>将客户转化为我们的客户</li>
+        <li>留住客户</li>
+      </ul>
+      <p>欲了解更多信息，请访问 <a href="#solutions">解决方案</a>。</p>
+      <h3>客户评价：</h3>
+      <p>在与 Vecta Corp 合作的年中，我们一直对他们的敬业精神和专业水平感到惊叹。</p>
+      <cite>Zake Rvalcha, CEO<br>Mobile Media, Inc.</cite>
+      <p>Vecta Corp 团队通过巨大的努力取得了不可思议的结果！我们对与他们合作所获得的业务收益感到非常满意。</p>
+      <cite>John Banks, CEO<br>Profits Financial, Inc.</cite>
+    </section>
+    <footer data-role="footer"><h4>&copy; 2012</h4></footer>
+  </div>
+</body>
+```
+
+图 17-16 Vecta Corp 移动站的 HTML 代码（3 部分中的1 部分）
+
+## 解决方案页的 HTML 代码
+
+```html
+<div data-role="page" id="solutions">
+  <header data-role="header">
+    <h1>Vecta Corp</h1>
+    <div data-role="nav">
+      <ul>
+        <li><a href="home" data-icon="home" data-theme="b">首页</a></li>
+        <li><a href="solutions" data-icon="star" class="ui-btn-active" data-theme="b">解决方案</a></li>
+        <li><a href="contact" data-icon="grid" data-theme="b">联系我们</a></li>
+      </ul>
+    </div>
+  </header>
+  <section data-role="content">
+    <p>Vecta Corp 提供可扩展的业务解决方案，帮助公司通过增加收入、成本管理和客户满意度来实现成功。</p>
+    <h3>vProspect 2.0</h3>
+    <img src="images/logo_vprospect.gif" width="84" height="48">
+    <p>定义并研究你的目标受众，定义接触该受众的策略，并向该受众展示强大且令人印象深刻的品牌。<a href="#vprospect" data-rel="dialog" data-transition="slide">阅读更多...</p>
+    <h3>vConvert 2.0</h3>
+    <img src="images/logo_vconvert.gif" width="84" height="48">
+    <p>创建一个高度用户友好且易于导航的信息架构，将有助于项目以高度交互的与公司进行互动。<a href="#vconvert" data-rel="dialog" data-transition="slide">阅读更多...</p>
+    <h3>vRetain 1.0</h3>
+    <img src="images/logo_vretain.gif" width="84" height="48">
+    <p>在现有的客户关系基础上提高生产力并最大化忠诚度，同时增加收入。<a href="#vretain" data-rel="dialog" data-transition="flip">阅读更多...</p>
+  </section>
+  <footer data-role="footer"><h4>&copy; 2012</h4></footer>
+</div>
+```
+
+## "vprospect" 和 "联系我们"页的 HTML 代码
+
+```html
+<div data-role="page" id="vprospect">
+  <header data-role="header">
+    <h1>Vecta Corp</h1>
+  </header>
+  <section data-role="content">
+    <img src="images/logo_vprospect.gif" width="84" height="48">
+    <h2>vProspect 2.0</h2>
+    <h3>vProspect 能帮你做什么？</h3>
+    <ul>
+      <li>定义你的目标受众和竞争对手。</li>
+      <li>研究你的竞争对手以及你的目标受众的行为、需求、技术手段等。</li>
+      <li>建立与公司定义方向相符的理念和视觉身份。</li>
+      <li>确保所有媒体的一致性。</li>
+      <li>为任何未来的开发建立企业准则。</li>
+      <li>定义并重新定义你的服务和产品。</li>
+      <li>定义扩张计划和策略。</li>
+      <li>对所有材料进行搜索引擎优化 (SEO)。</li>
+    </ul>
+  </section>
+</div>
+
+<div data-role="page" id="contactus">
+  <header data-role="header">
+    <h1>Vecta Corp</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="home" data-icon="home" data-theme="b">首页</a></li>
+        <li><a href="solutions" data-icon="star" data-theme="b">解决方案</a></li>
+        <li><a href="contact" data-icon="grid" data-theme="b">联系我们</a></li>
+      </ul>
+    </div>
+  </header>
+  <section data-role="content">
+    <p>请通过电话、邮件与我们联系：</p>
+    <p>电话：<a href="tel:5555">5555</a></p>
+    <h4>邮件</h4>
+    <p>Vecta Corp<br>Sample Dr.<br>San Diego, CA 5555</p>
+    <p>邮件：<a href="mailto:sales@vectorp.com">sales@vectorp.com</a></p>
+    <a href="#" data-role="back" data-icon="back" data-theme="b">返回上一页</a>
+  </section>
+  <footer data-role="footer"><h4>&copy; 2012</h4></footer>
+</div>
+```
+
+图 17-16 Vecta Corp 移动站的 HTML 代码（3 部分中的3 部分）
+
+# 如何增强 jQuery Mobile 网站
+
+在上一章中，你已经接触了 jQuery Mobile。现在，你将学习如何通过内容格式、列表视图和表单控件来增强你的移动页面。
+
+- 如何使用 jQuery Mobile 文档...............................................................536
+- jQuery Mobile 的组件...........................................................................536
+- jQuery Mobile 的数据属性...............................................................536
+- jQuery Mobile 的事件和方法...............................................................542
+- 如何使用 jQuery Mobile 进行内容格式化...............................................538
+- 如何在网格中布局内容............................................................................538
+- 如何使用折叠内容块..................................................................540
+- 如何使用折叠组...............................................................................542
+- 如何使用 jQuery Mobile 列表视图...............................................................544
+- 如何使用基础列表......................................................................................544
+- 如何使用拆分列表和插入列表...............................................................546
+- 如何使用分割线和计数气泡...............................................................548
+- 如何搜索过滤栏...................................................................................550
+- 如何使用 jQuery Mobile 处理表单................................................................552
+- 如何使用文本字段和文本区域...............................................................552
+- 如何使用滑块和开关...........................................................................554
+- 如何使用单选按钮和复选框..............................................................556
+- 如何选择菜单......................................................................................558
+- 如何提交表单.......................................................................................560
+- 为 Vecta Corp 构建的增强移动网站.......................................................562
+- 网站的布局..................................................................................562
+- HTML......................................................................................................564
+- 样式表..................................................................................................564
+- 视角......................................................................568
+
+## 如何使用 jQuery Mobile 文档
+
+本章和上一章的设计目的是通过展示其组件的常用方法，帮助你快速上手 jQuery Mobile。然而，请记住，这些章节并没有介绍关于 jQuery Mobile 的所有知识。关于这一点，你可以参考 jQuery Mobile 网站，以及随后的三个涵盖了重点的话题。
+
+## jQuery Mobile 的组件
+
+在图 18-1 中，你可以看到 jQuery Mobile 最新稳定版本的演示索引页和文档。该页面分为三个部分：概述（Overview）、组件（Components）和 API。这三部分都非常优秀，可以增强本书的快速上手教程。
+
+在组件部分，前三个条目是页面与对话框（Pages & Dialogs）、工具栏（Toolbars）和按钮（Buttons），你在第 17 章学习过。接下来三个条目是内容格式化（Content Formatting）、表单元素（Form Elements）和列表视图（List Views），你将在本章学习。如果你需要关于这些任何组件的更多信息，可以在这里找到。
+
+## jQuery Mobile 的数据属性
+
+在使用 jQuery Mobile 组件时，往往很难记住哪些数据属性。这时，文档 API 部分中的数据属性引用就会非常有用。例如，在图中显示了适用于按钮的引用部分。它整齐地总结了可以一起使用的属性。
+
+在上一章的图 17-10 中，你可以看到按钮最常用的数据属性示例，但这显示还有其他几个。例如，`data-icons` 属性允许你指定图标的位置，而当 `data-mini` 设置为 `true` 时，会生成较小的按钮版本。同样，当你处理其他组件时，这个引用也会很有用。
+
+## jQuery Mobile 的事件和方法
+
+当你使用 jQuery Mobile 时，可以在需要任何时候使用它的事件、方法和工具。然而，jQuery Mobile 的优点之一是它会自动使用这些事件、方法和工具，因此你不需要自己编写代码。出于这个原因，本书中的这两章没有展示如何使用它们。不过，如果你感兴趣，文档 API 部分的第二和第三项可以为你提供帮助。
+
+## jQuery Mobile 1.1.1 演示和文档的 URL
+
+http://jquerymobile.com/demos/1.1.1/index.html
+
+jQuery Mobile 文档开始
+
+![](img/fb3dabc43193711c2307f942481ad30c_552_0.png)
+
+## 按钮的数据属性引用
+
+### 按钮
+
+带有 `data-role="button"` 的链接。基于输入的按钮和 button 元素会被自动增强，不需要 `data-role`。
+
+| 属性 | 值 |
+| :--- | :--- |
+| data-corners | true |
+| data-icon | home \| delete \| false \| arrow-u \| arrow-d \| check \| gear \| grid \| star \| custom \| arrow-r \| minus \| refresh \| forward \| back \| alert \| info \| search |
+| data-iconpos | left \| right \| bottom \| not |
+| data-shadow | true |
+| data-inline | false |
+| data-mini | true \| false - 紧凑尺寸 |
+| data-shadow | true |
+| data-theme | swatch letter (a-z) |
+
+多个按钮可以使用带有 `data-role="controlgroup"` 属性的容器来形成垂直分组的集合。为按钮添加 `data-type="horizontal"` 属性可以使它们并排排列。添加 `data-mini="true"` 可以让控件中出现的所有按钮变为微型/紧凑尺寸。
+
+## 描述
+
+- 本章和上一章的设计通过展示其组件的常用方法，帮助你快速上手 jQuery Mobile。
+- jQuery Mobile 文档非常优秀，包含了组件的所有使用方法，包括数据属性的使用。
+
+图 18-1 如何使用 文档
+
+## 如何使用 jQuery Mobile 进行内容格式化
+
+jQuery Mobile 的内容格式化提供了网格（grids）、折叠内容块（collapsible content blocks）和折叠组（collapsible sets）。你将在接下来的三个话题中学习如何使用这些组件。
+
+## 如何在网格中布局内容
+
+图 18-2 显示如何在由行和列组成的网格中布局内容。在这个示例中，网格由两列组成，但 jQuery Mobile 最多支持五列。然而，大多数情况下会将列限制为页面上同时可见。
+
+要创建列和行，你使用 jQuery Mobile 类来指示列数并标识每列的内容。例如在图中，你可以看到所有列都编写在一个带有 `ui-grid-a` 类的 section 元素中。该类用于将内容格式化为两列。然后，第一列的内容编写在一个带有 `ui-block-a` 类的 div 元素中，第二列的内容编写在一个带有 `ui-block-b` 类的 div 元素中。
+
+如果你需要扩展此结构以创建额外的列，可以通过额外的类来实现。例如，对于三列网格，将 section 的类设置为 `ui-grid-b`。对于四列网格，将此类设置为 `ui-grid-c`。对于五列网格，则将其设置为 `ui-grid-d`。
+
+之后，你只需要为额外的列添加 div 元素即可。然后，第三列使用 `ui-block-c` 类，第四列使用 `ui-block-d` 类，第五列使用 `ui-block-e` 类。
+
+## 一个具有两列网格的移动网页
+
+![](img/fb3dabc43193711c2307f942481ad30c_554_0.png)
+
+## 两列的 HTML 代码
+
+```html
+<section class="ui-grid-a">
+  <div class="ui-block-a">
+    <img src="images/agnes.gif" alt="Agnes">
+    <h4><a href="#Agnes">Agnes Agnew</a></h4>
+    <p>财务部副总裁</p>
+    <!-- 第一列其他演讲者的代码 -->
+  </div>
+  <div class="ui-block-b">
+    <img src="images/mike.gif" alt="Mike">
+    <h4><a href="#Mike">Mike Masters</a></h4>
+    <p>营销部副总裁</p>
+    <!-- 第二列其他演讲者的代码 -->
+  </div>
+</section>
+```
+
+## 如何为其他列编写 HTML 代码
+
+- 为两列区域编写 section（或 div 元素），并将其类设置为 "ui-grid-a"。
+- 在此节内，为每一列编写一个 div 元素，并将这些元素的类设置为 "ui-block-a" 和 "ui-block-b"。
+- 在列的 div 元素中，编写列的内容。
+
+## 描述
+
+- jQuery Mobile 允许使用由行组成的网格进行布局。
+- `ui-block-a` 和 `ui-block-b` 类由 jQuery Mobile 格式化，使其向左浮动。因此，上面示例中的 div 以两列的形式显示。
+- 要布局具有三列的页面，将顶层 section 或 div 元素的类设置为 "ui-grid-b"，并将第三列的类设置为 "ui-block-c"。这可以一直扩展到五列。
+
+图 18-2 如何在网格中布局内容
+
+## 如何使用折叠内容块
+
+图 18-3 显示了内容块如何折叠，以便只显示标题。这与 jQuery UI 手风琴（accordion）的工作原理类似，不同之处可以同时显示多个内容块。
+
+要创建折叠内容块，你需要为每个块编写一个 div 元素，并将其 `data-role` 属性设置为 "collapsible"。然后，默认情况下，当页面首次显示时，所有块都将折叠，如图中的第一个网页所示。如果这不是你想要的结果，可以将一个或多个块的 `data-collapsed` 属性设置为 "false"。在此图的代码中，此属性已添加到第二个内容块中。结果如第二个网页所示。
+
+请注意，内容块按钮中显示的文本是该块开头处编写的标题元素的内容。在图中，使用 h3 元素作为标题，但你可以使用从 h1 到 h6 的任何标题元素。你使用的元素不会影响文本的显示方式。
+
+## 一个带有折叠内容块的移动网页
+
+### 所有块均折叠状态
+
+### 第二个块已展开状态
+
+![](img/fb3dabc43193711c2307f942481ad30c_556_0.png)
+![](img/fb3dabc43193711c2307f942481ad30c_556_1.png)
+
+## 折叠内容块的 HTML 代码
+
+```html
+<div data-role="collapsible">
+  <h3>Agnew</h3>
+  <img src="images/agnew.gif" alt="Agnew">
+  <h4>Agnew<br>财务部副总裁</h4>
+  <p>拥有超过14 年的公共会计和业务经验...</p>
+</div>
+
+<div data-role="collapsible" data-collapsed="false">
+  <h3>Mike Masters</h3>
+  <img src="images/mike.gif" alt="Mike">
+  <h4>Mike<br>营销部副总裁</h4>
+  <p>Mike 担任销售和营销副总裁...</p>
+</div>
+
+<!-- 其他内容块的 div 元素 -->
+```
+
+## 如何为折叠内容块编写 HTML 代码
+
+- 为每个内容块编写一个 div，并将 `data-role` 属性设置为 "collapsible"。
+- 默认情况下，当首次显示页面时，每个内容块都处于折叠状态。要展开内容块，请添加值设置为 "false" 的 `data-collapsed` 属性。
+- 在每个 div 元素内部，编写一个标题元素（h1 到 h6），其中包含块折叠时将显示的文本，随后是内容的 HTML 代码。
+
+## 描述
+
+- 可以同时展开多个折叠内容块。
+- jQuery 自动为内容块添加加减号图标。
+
+图 18-3 如何使用折叠内容块
+
+## 如何使用折叠集
+
+图 18-4 显示了如何使用折叠集。折叠集与折叠内容块类似，不同之处是一次只能显示一个块的内容。换句话说，折叠集的作用类似于 jQuery UI 手风琴。
+
+要创建折叠集，你需要编写一个 section 或 div 元素，将其 `data-role` 属性设置为 "collapsible-set"。然后，在该元素内部，像你在上一个图中看到的那样编写折叠块。区别在于你可以将其中一个块的 `data-collapsed` 属性设置为 "false"。
+
+## 带有折叠集的移动网页
+
+### 所有块均折叠状态
+
+### 第一个块已展开状态
+
+![](img/fb3dabc43193711c2307f942481ad30c_558_0.png)
+![](img/fb3dabc43193711c2307f942481ad30c_558_1.png)
+
+## 折叠集的 HTML 代码
+
+```html
+<section data-role="collapsible-set">
+  <div data-collapsed="false">
+    <h3>Agnew</h3>
+    <img src="images/agnew.gif" alt="Agnes">
+    <h4>Agnew<br>财务部副总裁</h4>
+    <p>拥有超过14 年的公共会计和业务经验...</p>
+  </div>
+  <div>
+    <h3>Mike Masters</h3>
+    <img src="images/mike.gif" alt="Mike">
+    <h4>Mike<br>营销部副总裁</h4>
+    <p>Mike 担任销售和营销副总裁...</p>
+  </div>
+  <!-- 其他内容块的 div 元素 -->
+</section>
+```
+
+## 如何为折叠集编写 HTML 代码
+
+- 编写一个 section 或 div 元素，将其 `data-role` 属性设置为 "collapsible-set"。
+- 在该元素内部，像你在上一个图中看到的那样编写折叠块。
+
+## 描述
+
+- 与折叠块不同，集中同时只能展开一个块。
+- jQuery 自动为内容块添加加减号图标。
+
+图 18-4 如何使用折叠集
+
+## 如何使用 jQuery Mobile 列表视图
+
+在 jQuery Mobile 中，列表视图由一组链接到其他页面的项目组成。在接下来的主题中，你将学习如何创建和格式化列表视图，以满足你的需求。
+
+## 如何使用基础列表
+
+图 18-5 显示了如何创建基础列表。图中的第一个网页显示了列表的默认外观。在这里，每个链接的内容旁边都带有一个右箭头指示器。你还可以像第二个网页所示对列表项进行编号。要这样做，需要在 ol 元素中编写 li 元素，而不是 ul 元素。
+
+## 如何使用拆分按钮列表和嵌入列表
+
+在大多数情况下，你希望列表中的项无论用户点击哪一个都显示相同的页面。然而，有时你可能希望提供一个可以链接到两个不同页面的列表项。要实现这一点，你可以使用图 18-6 所示的拆分按钮列表。
+
+在图顶部的网页中，你可以看到列表项有两个不同的区域：列表项的主部分和列表项右侧的指示器。要创建这样的列表，你需要在每个列表项内编写 `<a>` 元素。该元素的 `href` 属性应该指定点击指示器时显示的页面。
+
+当你使用拆分按钮时，你还可以更改每个列表项显示的指示器。要做到这一点，你需要编写 `data-split-icon` 属性，并将其值设置为你在上一章中学习过的值之一。例如，图中所示的第二个列表中，指示器已变为齿轮图标。
+
+此示例还演示了嵌入列表（inset list）。这种类型的列表通常采用圆角格式化，并从屏幕的左右两侧内缩。要创建嵌入列表，你只需将元素的 `data-inset` 属性设置为 "true"。
+
+在图中的示例中，很明显当用户点击列表项的主部分时，将显示更多关于经理的信息。但用户如何知道点击指示器会发生什么呢？答案是，除非指示器显示得很清楚，否则用户并不知道。例如，为了指示将启动电子邮件，指示器应该是信封图标。幸运的是，你可以创建这样的自定义图标供你的应用程序使用。要学习如何操作，可以参考按钮图标的文档。然后，你可以将此技术应用于列表中的项。
+
+## 带有拆分按钮列表的移动网页
+
+### 使用默认设置
+
+### 使用嵌入列表和特殊图标
+
+![](img/fb3dabc43193711c2307f942481ad30c_562_0.png)
+![](img/fb3dabc43193711c2307f942481ad30c_562_1.png)
+
+我们的经理们经验丰富且专业，他们随时准备为你提供任何所需的帮助。
+
+## 第一个列表的 HTML
+
+```html
+<ul data-role="listview">
+  <li>
+    <a href="@agnes">
+      <img src="images/agnes.gif" alt="Agnes">
+      <h3>Agnes Agnew</h3>
+      <p>VP of Accounting</p>
+    </a>
+    <a href="mailto:agnes@vectacorp.com" title="Send Email">
+      Send Email/
+    </a>
+  </li>
+  <!-- 其他项的 <li> 元素 -->
+</ul>
+```
+
+## 第二个列表的 `<ul>` 元素
+
+```html
+<ul data-role="listview" data-split-icon="gear" data-inset="true">
+```
+
+## 如何编写拆分按钮列表的 HTML
+
+- 像编写基础列表一样编写列表（参见图 18-5）。
+- 为每个列表项添加第二个 `<a>` 元素，链接到除该列表项第一个 `<a>` 元素之外的页面。该元素应包含一个可用于辅助性的 `title` 属性。
+- 要更改指示器，在 `<ul>` 元素上添加 `data-split-icon` 属性，并将值设置为你想要使用的图标名称。图标列表请参见图 17-10。
+- 要创建嵌入列表，添加值为“true”的 `data-inset` 属性。
+
+## 描述
+
+- 拆分按钮列表允许每个列表项分为两个可点击区域。
+- 嵌入列表特别用于页面具有列表以外的其他内容的情况。
+
+图 18-6 如何使用拆分按钮列表和嵌入列表
+
+## 如何使用列表分隔符和计数气泡
+
+图 18-7 显示了如何在列表视图中添加额外元素：列表分隔符和计数气泡（count bubbles）。如该图中的第一个网页所示，列表分隔符提供了一种将列表项分组的方法。在这种情况下，公司的员工被分为高管层、经理和其他员工。
+
+相比之下，第二个网页显示计数气泡提供了一种显示代表某个组的列表项项目数量的方法。在这种情况下，列表项代表高管组、经理和其他员工组，而计数气泡则指示每个组的员工人数。
+
+要创建列表分隔符，你只需在列表中想要显示分隔符的地方添加一个 `<li>` 元素。然后，将该元素的 `data-role` 属性设置为“list-divider”，并将内容设置为你希望在分隔符中显示的内容。
+
+要向列表项添加计数气泡，在 `<a>` 元素的内容之后添加一个 `<span>` 元素。然后，将该元素的 `class` 设置为 `ui-li-count`，并为元素的内容编写你想要显示的数字。
+
+## 第 18 章 如何增强 jQuery 网站 549
+
+## 带有列表分隔符和计数气泡的移动网页
+
+### 使用列表分隔符
+
+### 使用计数气泡
+
+![](img/fb3dabc43193711c2307f942481ad30c_564_0.png)
+![](img/fb3dabc43193711c2307f942481ad30c_564_1.png)
+
+## 第一个列表的 HTML
+
+```html
+<ul data-role="listview">
+  <li data-role="list-divider">Executives</li>
+  <li><a href="#agnes">Agnes Agnew</a></li>
+  <li><a href="#mike">Mike Masters</a></li>
+  <li><a href="#damon">Damon Dell</a></li>
+  <li><a href="#herbert">Herbert Huff</a></li>
+  <li data-role="list-divider">Managers</li>
+  <li><a href="#wally">Wally Waters</a></li>
+  <li><a href="#cammy">Cammy Caruthers</a></li>
+  <li><a href="#tina">Tina Tobin</a></li>
+</ul>
+```
+
+## 第二个列表的 HTML
+
+```html
+<ul data-role="listview">
+  <li data-role="list-divider">Executives<span class="ui-li-count">36</span></li>
+  <li data-role="list-divider">Managers<span class="ui-li-count">25</span></li>
+  <li>Other Employees<span class="ui-li-count">5</span></li>
+</ul>
+```
+
+## 如何编写列表分隔符的 HTML
+
+- 添加一个 `data-role` 设置为 `list-divider` 的 `<li>`。
+
+## 如何编写计数气泡的 HTML
+
+- 在 `<span>` 内部编写你想要显示的数值。
+
+图 18-7 使用列表分隔符和计数气泡
+
+©2012, Murach and Associates. Michael Hotham.
+
+## 如何使用过滤栏
+
+如果列表包含许多项，可以通过为列表添加搜索功能来更方便地定位。要实现这一点，你可以使用图 18-8 所示的过滤栏。
+
+要向列表添加搜索栏，将元素的 `data-filter` 属性设置为 "true"。然后，当页面首次显示时，过滤栏将出现在列表上方。此时，用户可以通过输入一个或多个字符来过滤列表。例如图中的第二个网页，列表已经过过滤，只显示包含字符“w”的项。
+
+注意，当列表被过滤时，过滤栏右侧会出现一个 X 图标。用户可以点击此图标来取消过滤。
+
+## 使用搜索栏的移动网页
+
+### 过滤前
+
+### 过滤后
+
+![](img/fb3dabc43193711c2307f942481ad30c_566_0.png)
+![](img/fb3dabc43193711c2307f942481ad30c_566_1.png)
+
+```html
+<ul data-role="listview" data-filter="true">
+  <li><a href="#agnes">Agnes Agnew</a></li>
+  <li><a href="#mike">Mike Masters</a></li>
+  <li><a href="#damon">Damon Dell</a></li>
+  <li><a href="#herbert">Herbert Huff</a></li>
+  <li><a href="#wilbur">Wilbur Wilkes</a></li>
+  <li><a href="#wally">Wally Waters</a></li>
+  <li><a href="#cammy">Cammy Caruthers</a></li>
+  <li><a href="#tina">Tina Tobin</a></li>
+  <li><a href="#johnny">Johnny Jimenez</a></li>
+  <li><a href="#larry">Larry Low</a></li>
+  <li><a href="#ginny">Ginny Gerard</a></li>
+  <li><a href="#stephen">Stephen Smith</a></li>
+</ul>
+```
+
+# 如何使用 jQuery Mobile 表单
+
+除了你已经学过的 jQuery Mobile 组件外，你还可以使用 jQuery Mobile 创建表单，并使用像你在第 10 章看到那样的控件。事实上，所有的 jQuery Mobile 表单控件都是标准 HTML 表单控件的增强版本。因此，如果你知道如何编写这些控件，那么编写 jQuery Mobile 控件就不会有任何困难。
+
+## 如何使用文本字段和文本区域
+
+图 18-9 展示了你如何使用文本字段和文本区域控件。这些控件非常相似，区别在于文本区域可以接受多行文本。
+
+要创建一个文本字段，你需要编写一个 `input` 元素，并将其 `type` 属性设置为任何有效的 HTML5 值。例如，在图中，前两个字段的 `type` 属性设置为 "text"，第三个字段的 `type` 属性设置为 "tel"，而第四个字段的 `type` 属性设置为 "email"。jQuery Mobile 可以使用这些值来判断是否有特殊的键盘可以提高该类型数据录入的效率。例如，当用户点击 `type` 为 "tel" 的文本字段时，将显示如图图中第二个网页所示的数字键盘。
+
+除了 `type` 属性外，你还应该在 `input` 元素上包含 `id` 和 `name` 属性。然后，你可以在元素之前加上一个 `label` 元素来标识该文本字段。该元素应该包含一个 `for` 属性，其值与文本字段的 `id` 属性相同。
+
+创建一个文本区域，你需要编写一个带有 `id` 和 `name` 属性的 `textarea` 元素。此外，你还需要像处理文本字段一样，编写一个带有 `for` 属性的 `label` 元素。
+
+默认情况下，文本字段和文本区域的标签显示在控件上方，如图中的网页所示。在大多数情况下，这正是你所需要的。不过，如果你想将标签显示在控件的左侧，可以将标签和控件封装在一个 `div` 元素中，并将该 `div` 的 `data-role` 属性设置为 "fieldcontain"。
+
+## 带有文本字段和文本区域的移动网页
+
+### 带有文本字段和文本区域
+
+### 带有用于数字输入的键盘
+
+![](img/fb3dabc43193711c2307f942481ad30c_568_0.png)
+![](img/fb3dabc43193711c2307f942481ad30c_568_1.png)
+
+## 文本字段和文本区域的 HTML 代码
+
+```html
+<label for="name">Name:</label>
+<input type="text" name="name" id="name">
+<label for="company">Company Name:</label>
+<input type="text" name="company" id="company">
+<label for="phone">Phone:</label>
+<input type="tel" name="phone" id="phone">
+<label for="email">Email:</label>
+<input type="email" name="email" id="email">
+<label for="questions">Questions/Comments:</label>
+<textarea name="questions" id="questions"></textarea>
+```
+
+## 如何编写文本字段或文本区域的 HTML
+
+- 对于文本字段，编写一个 `input` 元素，将 `type` 设置为有效的 HTML5 值，并包含 `id` 和 `name` 属性。
+- 对于文本区域，编写一个带有 `id` 和 `name` 属性的 `textarea`。
+- 在文本字段或文本区域之前编写一个 `label` 元素以标识控件。包含一个 `for` 属性，其值设置为控件的 `id` 值。
+
+## 描述
+
+- 默认情况下，标签显示在其关联的控件上方。若要显示在控件左侧，请将标签和控件封装在一个 `div` 元素中，并将其 `data-role` 属性设置为 "fieldcontain"。
+- 你可以将文本的 `type` 属性设置为任何 HTML5 值，包括 text、password、tel、email、number 和 url。
+- 当用户点击具有特定 `type` 的字段时，会显示一个特殊的键盘，可以提高该类型数据录入的效率。
+
+图 18-9 如何使用文本字段和文本区域
+
+## 如何使用滑块和开关
+
+图 18-10 展示了如何使用滑块（sliders）和开关（switches）。滑块用于从数值范围内选择一个值。相比之下，开关用于选择二项的开启/关闭或真/假值。
+
+要创建一个滑块，你需要编写一个元素并将其 `type` 属性设置为 "range"。然后，你可以使用 `min` 和 `max` 属性为滑块设置最小值和最大值。你可以使用 `value` 属性设置滑块的起始值。你还可以使用 `step` 属性设置当滑块移动时增加或减少的值。通常一种做法是如图所示，高亮滑块条中滑块左侧的部分。要实现这一点，你将 `data-highlight` 属性设置为 "true"。
+
+请注意，图中滑块的当前值显示在滑块左侧的文本字段中。jQuery Mobile 会自动为你添加此字段，这样你就可以设置滑块的精确值了。
+
+开关通常用于移动网页，因为它们为用户提供了从两个选项中选择其一的简单方法。要创建一个开关，你需要编写一个 `select` 元素并将其 `data-role` 属性设置为 "slider"。虽然由于你创建的是开关而不是滑块，这看起来可能有些违反直觉，但你可以从图中看到开关的格式在某种程度上类似滑块。如果你记住这一点，将有助于你记住如何编写 `data-role` 属性。
+
+在 `select` 元素内部，你编写两个代表开关二项值的 `option`。
+
+## 带有滑块和开关的移动网页
+
+### 滑块
+
+### 开关
+
+![](img/fb3dabc43193711c2307f942481ad30c_570_0.png)
+![](img/fb3dabc43193711c2307f942481ad30c_570_1.png)
+
+## 滑块和开关的 HTML 代码
+
+```html
+<label for="slider">Slider:</label>
+<input type="range" name="slider" id="slider" value="50" min="0" max="100" data-highlight="true">
+
+<label for="flip">Flip switch:</label>
+<select name="flip" id="flip" data-role="slider">
+  <option value="off">Off</option>
+  <option value="on">On</option>
+</select>
+```
+
+## 如何编写滑块的 HTML
+
+- 编写一个 `input` 元素，将 `type` 设置为 "range"。
+- 添加 `min`、`max` 和 `value` 属性。
+- 若要高亮滑块左侧的部分，添加 `data-highlight="true"`。
+
+## 如何编写开关的 HTML
+
+- 编写一个 `select` 元素，将 `data-role` 设置为 "slider"。
+- 在 `select` 内部，编写两个 `option` 元素。
+
+## 描述
+
+- 滑块允许用户从一系列值中选择。
+- 开关提供了一种在两个值之间切换的简单方法。
+
+图 18-10 如何使用滑块和开关
+
+## 如何使用单选按钮和复选框
+
+图 18-11 展示了如何使用单选按钮和复选框。这些控件的工作方式与标准 HTML 控件相同，但 jQuery Mobile 会增强它们的外观。
+
+要创建一组单选按钮或复选框，你需要编写一个 `fieldset` 元素，并将其 `data-role` 属性设置为 "controlgroup"。若要在组内水平显示控件，请将 `data-type` 属性设置为 "horizontal"。
+
+在 `fieldset` 元素内部，编写一个 `legend` 元素，其中包含描述该组的文本。
+
+为每个单选按钮编写一个 `type` 属性为 "radio" 的 `input` 元素，为每个复选框编写一个 `type` 为 "checkbox" 的 `input` 元素。确保每个单选按钮具有相同的 `name`。
+
+为每个控件编写一个 `label` 元素，并带有一个 `for` 属性标识控件。或者，在 `label` 元素内部编写 `input` 元素。
+
+## 第 18 章 如何增强 jQuery 网站 557
+
+## 带有复选框和单选按钮的移动网页
+
+### 使用垂直控制控件
+
+### 使用水平单选按钮
+
+![](img/fb3dabc43193711c2307f942481ad30c_572_0.png)
+![](img/fb3dabc43193711c2307f942481ad30c_572_1.png)
+
+## 第二页中 fieldset 和单选按钮的 HTML
+
+```html
+<fieldset data-role="controlgroup">
+  <legend>你对哪些解决方案感兴趣？</legend>
+  <input type="checkbox" name="vprospect" id="vprospect">
+  <label for="vprospect">vprospect</label>
+  <!-- 在此处添加更多输入 -->
+</fieldset>
+
+<fieldset data-role="controlgroup" data-type="horizontal">
+  <legend>当前基础设施？</legend>
+  <input type="radio" name="infrastructure" id="linux">
+  <label for="linux">linux</label>
+  <input type="radio" name="infrastructure" id="mac">
+  <label for="mac">mac</label>
+  <!-- 在此处添加更多输入 -->
+</fieldset>
+```
+
+## 如何为一组单选按钮或复选框编写 fieldset
+
+- 编写一个 fieldset 元素，并将 `data-role` 属性设置为“controlgroup”。若要在组内水平显示控件，请将 `data-type` 属性设置为“horizontal”。
+- 在 fieldset 元素内部，编写一个 legend 元素，其中包含描述该组的文本。
+- 为每个单选按钮编写一个 `type` 属性为“radio”的 input 元素，为每个复选框编写一个 `type` 为“checkbox”。确保每个单选按钮具有相同的 `name`。
+- 为每个控件编写一个 label 元素，并带有一个 `for` 属性标识控件。或者，在 label 元素内部编写 input 元素。
+
+## 描述
+
+- 因为复选框之间是相互独立的，你不需要在 fieldset 内部编写它们。不过，将相关的控件分组是常见的做法。
+
+图 18-11 如何使用单选按钮和复选框
+
+© 2012, Mike Murach and Associates, Inc. Licensed to Michael Hotham.
+
+## 如何使用选择菜单
+
+图 18-12 显示了如何使用选择菜单，它类似于下拉列表。对于像这里这样的基础选择菜单，其 HTML 与下拉列表的 HTML 几乎相同。唯一的区别在于你必须包含一个标识该选择框的 label 元素。
+
+虽然选择菜单的 HTML 与下拉列表的 HTML 相似，但它们的显示方式不同。在这里，当用户点击选择时，手机的拨轮会显示项目列表。然后，当用户选择拨轮或“上一个”（Previous）或“下一个”（Next）按钮来显示更多项目时，点击列表中的某项进行选择，然后点击“完成”（Done）按钮关闭拨轮并在菜单中显示所选项目。
+
+你可以选择两个或多个相关的选择菜单。例如，假设你想选择月份、日期和年份。那么，你可以创建三个选择菜单并将它们分组，以便它们由单个文本值进行描述。
+
+例如，在图中的第二个网页中，你可以看到一组两个选择菜单。第一个允许用户选择月份，第二个允许用户选择年份。要创建这样的一组菜单，你需要将菜单封装在一个 `fieldset` 元素中，并将其 `data-role` 属性设置为“fieldcontain”。然后，在第一个选择菜单之前，编写一个带有该组文本的 `legend` 元素。
+
+默认情况下，选择菜单组中的菜单是垂直排列的，标识文本位于第一个菜单的左侧。当你以这种方式显示菜单时，通常会在每个列表的开头添加一个 `option` 元素来标识该列表的内容。例如，你可以在图中所示的选择菜单中添加“月份”（Month）和“年份”（Year）选项。但在大多数情况下，你将像这里这样水平地显示菜单组。要实现这一点，你只需将 fieldset 元素的 `data-type` 属性设置为“horizontal”。
+
+## 第 18 章 如何增强 jQuery 网站 559
+
+## 带有选择菜单的移动网页
+
+### 单个菜单
+
+### 一组菜单
+
+![](img/fb3dabc43193711c2307f942481ad30c_574_0.png)
+![](img/fb3dabc43193711c2307f942481ad30c_574_1.png)
+
+你是如何知道我们的？
+
+你打算什么时候开始使用它们？
+
+问题/评语：
+
+当前基础设施？
+
+## 第一个选择菜单的 HTML
+
+```html
+<label for="hearaboutus">你是如何知道我们的？</label>
+<select name="hearaboutus" id="hearaboutus">
+  <option value="magazine">杂志广告</option>
+  <option value="radio">广播广告</option>
+  <option value="tv">电视</option>
+  <option value="word">口口相传</option>
+</select>
+```
+
+## 如何为选择菜单编写 HTML
+
+- 编写一个带有 `for` 属性的 label 元素以标识选择元素。
+- 编写一个带有 `name` 和 `id` 属性的 select 元素。
+
+## 如何分组选择菜单
+
+- 编写一个 `data-role` 属性设置为 "fieldcontain" 的 fieldset 元素。
+- 在 fieldset 内部，编写一个带有该组文本的 legend 元素。
+- 对于每个选择菜单，在列表开头编写一个 option 元素。
+- 若要水平显示菜单，将 fieldset 元素的 `data-type` 属性设置为 "horizontal"。
+
+## 描述
+
+- 选择菜单类似于下拉列表，但显示为原生拨轮界面。
+- 可以将多个选择菜单分组显示。
+
+图 18-12 如何使用选择菜单
+
+## 如何提交表单
+
+图 18-13 显示了如何使用表单。注意，你可以使用 `type` 设置为 "submit" 的 input 元素。默认情况下，jQuery Mobile 使用 Ajax 提交表单。除非你需要使用 Ajax，否则你应该使用标准的 HTTP 请求。要实现这一点，请将表单元素的 `data-ajax` 属性设置为 "false"。
+
+你还可以使用 HTML5 的 `required` 属性来指示用户必须输入值，或者使用 CSS3 的 `:required` 伪类来指示输入必须匹配的模式。这提供了验证功能。
+
+## 第 18 章 如何增强 jQuery 网站 561
+
+## 提交到服务器的表单的移动网页
+
+![](img/fb3dabc43193711c2307f942481ad30c_576_0.png)
+
+## 表单和提交按钮的 HTML
+
+```html
+<form action="../scripts/mobile.asp" method="post" data-ajax="false">
+  <!-- 表单元素在此 -->
+  <input type="submit" value="提交表单">
+</form>
+```
+
+## 描述
+
+- 你可以使用标准的 HTML 元素制作你的网页。
+- 要提交表单，可以使用 type="submit" 的 input 元素。
+- 默认情况下，jQuery Mobile 使用 Ajax 提交表单。除非你需要使用 Ajax，否则你应该使用标准的 HTTP 请求。
+
+图 18-13 如何提交表单
+
+© 2012, Mike Murach and Associates, Inc. Licensed to Michael Hotham.
+
+# Vecta Corp 的增强型移动网站
+
+现在你已经学习了如何使用 jQuery Mobile 的其他功能，准备好查看使用这些功能的网站了。该网站是你在章节最后看到的 Vecta Corp 网站的增强版本。
+
+## 网站的布局
+
+图 18-14 展示了增强型 Vecta 移动网站的四个页面。此处未显示的页面与上一个章节所示页面相似。
+
+该网站的第一个变化是 Solutions 页面更新为了列表视图。然后，当选择某个解决方案时，不再显示对话框而是显示另一个页面。在图中，你可以看到 Vpros 的页面。注意该页面的头部包含一个返回按钮，用户可以点击它返回 Solutions 页面。
+
+第二个变化是 Contact Us 页面更新为了表单。你在本章前面已经看到了该页面的许多元素。
+
+最后，在 Home、Solutions 和 Contact Us 页面的页脚添加了一个按钮，用于在对话框中显示最新的推文。你可以在图中 Solutions 页面的页脚看到这个按钮，以及显示推文的对话框。虽然这个对话框没有说明任何 jQuery Mobile 的新功能，但它说明你可以在 jQuery Mobile 应用中使用标准的 jQuery 代码。
+
+## 使用 jQuery Mobile 的增强型移动网站页面布局
+
+### 解决方案页面 (Solutions page)
+
+### vProspect 页面
+
+![](img/fb3dabc43193711c2307f942481ad30c_578_0.png)
+![](img/fb3dabc43193711c2307f942481ad30c_578_1.png)
+
+### 最近推文对话框 (Recent tweets dialog)
+
+### 联系我们页面 (Contact Us page)
+
+![](img/fb3dabc43193711c2307f942481ad30c_578_2.png)
+![](img/fb3dabc43193711c2307f942481ad30c_578_3.png)
+
+## 描述
+
+- 这个 Vecta Corp 网站为每个解决方案提供一个页面，并为推文提供对话框。
+- 解决方案页面已更新为使用基础列表视图。当用户点击此列表中的其中一个解决方案时，将显示该解决方案。
+- 联系我们页面已更新，包含了表单元素，这些元素可以提交到服务器并由服务器端脚本处理。
+- 在首页、解决方案和联系我们页面的页脚处添加了一个按钮，用于显示“最近推文”对话框。
+
+图 18-14 用于 Vecta Corp 的增强型移动网站
+
+## HTML
+
+图 18-15 分三个部分展示了该网站的主要 HTML。由于你已经在本章中看过了这样的代码，你应该能够独立理解它。不过，如果你感兴趣，这里有几个重点。
+
+该图的第 1 部分显示了解决方案页面的 HTML。在内容区域内，你可以看到用于格式化三个解决方案的列表视图。在这里，你可以看到每个列表项都包含指向另一个页面的链接。用于链接的 `<a>` 元素包含了该项目显示的图像和内容。
+
+该页面的页脚还包含一个指向名为 tweek 的页面的 `<a>` 元素。由于该元素的 `data-rel` 属性设置为 "dialog"，因此链接将以对话框的形式显示。并且由于 `data-role` 属性设置为 "button"，该元素将显示为按钮。最后，`data-icon` 属性设置为 "info"，因此按钮上会如上一幅图所示显示字母 "i"。
+
+在图的第 2 部分，你可以看到 vProspect 页面的代码。在这里，页面页眉包含显示返回按钮的 `<a>` 元素。注意，该元素的 `data-icon` 属性设置为 "arrow-l"，因此按钮上显示了一个左箭头，且 `data-rel` 属性设置为 "back"，当用户点击此按钮时将显示上一个页面。由于此页面只能从解决方案页面显示，因此该按钮始终返回到解决方案页面。最后，`<a>` 元素的 `data-transition` 属性设置为 "slide"，因此解决方案页面将滑入视图。
+
+第 2 部分显示了“最近推文”对话框的代码。如你所见，该页的内容是一个带有 `id` 属性的简单 `div` 元素。页面的 jQuery 代码获取最近的推文并将其分配给此元素。这段代码与你在第 15 章看到的代码类似，用于为每条推文显示时间戳。
+
+在图的第 3 部分，你可以看到联系我们页面的代码。该页面包含了你在本章中学习的所有表单元素。此外，它还包含一个提交按钮，你可以用它将表单提交到服务器。
+
+## 样式表
+
+该应用程序的人员样式表使用简单的 CSS 为 HTML 中的某些元素应用边框、外边距和内边距。如果你想查看此样式表，可以在下载的应用程序中查看该文件。
+
+## 解决方案页面的 HTML
+
+```html
+<div data-role="page" id="solutions">
+  <header data-role="header">
+    <h1>Vecta Corp.</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" data-icon="home" data-theme="b" data-transition="slide">Home</a></li>
+        <li><a href="#solutions" data-icon="star" class="ui-btn-active" data-theme="b" data-transition="slide">Solutions</a></li>
+        <li><a href="#contactus" data-icon="info" data-theme="b" data-transition="slide">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+  <section data-role="content">
+    <div class="content-primary">
+      <ul data-role="listview">
+        <li>
+          <a href="#vprospect">
+            <img src="images/logo_vprospect.gif" alt="vProspect 2.0">
+            <h3>vProspect 2.0</h3>
+            <p>Define your target audience</p>
+          </a>
+        </li>
+        <li>
+          <a href="#vconvert">
+            <img src="images/logo_vconvert.gif" alt="vConvert 2.0">
+            <h3>vConvert 2.0</h3>
+            <p>Our conversion framework</p>
+          </a>
+        </li>
+        <li>
+          <a href="#vretain">
+            <img src="images/logo_vretain.gif" alt="vRetain 1.0">
+            <h3>vRetain 1.0</h3>
+            <p>Maximize loyalty</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <footer data-role="footer" class="accordion">
+    <div data-role="controlgroup" data-type="horizontal">
+      <a href="#twitter" data-rel="dialog" data-role="button" data-icon="info">Recent Tweets</a>
+    </div>
+  </footer>
+</div>
+```
+
+图 18-15 移动网站的 HTML（部分 1/3）
+
+## vProspect 页面的 HTML
+
+```html
+<div data-role="page" id="vProspect">
+  <header data-role="header">
+    <a href="#" data-role="button" data-icon="arrow-l" data-rel="back" data-transition="slide">Back</a>
+    <h1>vProspect 2.0</h1>
+  </header>
+  <section data-role="content">
+    <img src="images/logo_vprospect.gif" width="84" height="48">
+    <h2>vProspect 2.0</h2>
+    <h3>What vProspect can help you</h3>
+    <ul>
+      <li>Define your target audience</li>
+      <li>Research your competition's behavior, know-how, etc.</li>
+      <li>Establish a conceptual and visual identity that corresponds to the direction of the company.</li>
+      <li>Enforce consistency across all media.</li>
+      <li>Establish guidelines for future developments.</li>
+    </ul>
+  </section>
+</div>
+```
+
+
+
+# 最近推文对话框的 HTML
+
+```html
+<div data-role="page" id="twitter">
+  <header data-role="header">
+    <h1>Recent Tweets</h1>
+  </header>
+  <section data-role="content">
+    <div id="twitterfeed"></div>
+  </section>
+</div>
+```
+
+# 联系我们页面的 HTML
+
+```html
+<div data-role="page" id="contactus">
+  <!-- header goes here -->
+  <section data-role="content">
+    <h3>Contact Us</h3>
+    <form action="contact.asp" method="post" data-ajax="false">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name">
+      <label for="companyname">Company Name:</label>
+      <input type="text" name="companyname" id="companyname">
+      <label for="phone">Phone:</label>
+      <input type="tel" name="phone" id="phone">
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email">
+      <label for="size">Size:</label>
+      <input type="range" name="size" id="size" min="10" max="500" value="100">
+      <label for="currentinstall">Currently installed</label>
+      <select name="currentinstall" id="currentinstall" data-role="slider">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+      </select>
+      <fieldset data-role="controlgroup">
+        <legend>Which services are you in?</legend>
+        <input type="checkbox" name="prospect" id="prospect">
+        <label for="prospect">Prospect</label>
+        <input type="checkbox" name="vconvert" id="vconvert">
+        <label for="vconvert">Vconvert</label>
+        <input type="checkbox" name="vretain" id="vretain">
+        <label for="vretain">Vretain</label>
+      </fieldset>
+      <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>Current infrastructure?</legend>
+        <input type="radio" name="linux" id="linux">
+        <label for="linux">Linux</label>
+        <input type="radio" name="mac" id="mac">
+        <label for="mac">Mac</label>
+        <input type="radio" name="windows" id="windows">
+        <label for="windows">Windows</label>
+      </fieldset>
+      <label for="hearaboutus" class="select">How did you hear about us?</label>
+      <select name="hearaboutus" id="hearaboutus">
+        <option value="magazine">Magazine Ad</option>
+        <option value="radio">Radio Ad</option>
+        <option value="tv">TV Ad</option>
+        <option value="word">Word of Mouth</option>
+      </select>
+      <label for="questions">Questions/Comments:</label>
+      <textarea name="questions" id="questions"></textarea>
+      <input type="submit" value="Submit Form">
+    </form>
+  </section>
+  <!-- footer goes here -->
+</div>
+```
+
+# 展望
+
+现在你已经完成了这一章，你应该能够使用 jQuery 开发你网站的移动版，它可以作为你网站完整版的良好补充。不过，请记住，你也可以在 jQuery Mobile 网站中包含 jQuery 功能。jQuery 和 jQuery Mobile 库的结合为网站带来了强大的功能。
+
+# 术语
+
+- 可折叠内容块 (`collapsible content block`)
+- 嵌入式列表 (`inset list`)
+- 可折叠集合 (`collapsible set`)
+- 列表分割线 (`list divider`)
+- 列表视图 (`list view`)
+- 计数气泡 (`count bubble`)
+- 分离按钮列表 (`split button list`)
+- 搜索过滤栏 (`search filter bar`)
+
+# 总结
+
+- jQuery Mobile 文档是 jQuery 提供的组件和数据属性的极佳参考。
+- 通过 jQuery Mobile，你可以在由行和列组成的网格中布局内容。
+- 你可以使用可折叠内容块和集合来节省页面空间。两者的区别在于，你可以显示多个可折叠内容块的内容，但在可折叠集合中只能显示一个内容块的内容。
+- 你可以使用列表视图显示一组链接到其他页面的项目。分离按钮列表允许你在点击列表时链接到一个页面，在点击指示器时链接到另一个页面。
+- 你可以在列表中添加分割线以将列表项目分组，并且当列表表示组时，可以包含计数气泡来指示每组的项目数量。
+- 搜索过滤栏可以让你过滤列表中的项目，以便更轻松地找到你需要的项目。
+- jQuery Mobile 为用户输入提供了许多标准控件，包括文本字段、文本区域、单选按钮和复选框。这些控件的作用与它们的 HTML 对应物类似，但针对移动设备进行了优化。
+- jQuery Mobile 还提供了滑块（其工作类似于 HTML5 范围开关，可以具有两个二值值之一）和选择菜单（其工作类似于 HTML 下拉列表）。
+- 要提交移动端表单，你需要在标准表单元素内编写表单控件，并使用提交按钮。
+
+# 练习 1-1 复习 jQuery Mobile 文档
+
+在此练习中，你将显示 jQuery Mobile 网站并查看其中包含的一些文档。
+
+## 查看 jQuery Mobile 的组件
+
+1. 访问此 URL 的 jQuery Mobile 网站：`http://jquerymobile.com/demos/l1.1/index.html`
+   注意“Components”（组件）标题下的项目列表。然后，点击“Content Formatting”（内容格式）项。
+
+2. 从下一页显示的列表中，点击“Layout Grids”（布局网格）项。然后，复习显示的文档。
+
+3. 如果你想，可以通过点击页面左侧列表中的项来复习可折叠内容块（`collapsible content blocks`）和可折叠集合（`collapsible sets`）的文档。然后，点击页面左上角的“Home”（首页）按钮返回 jQuery Mobile 的主页。
+
+## 查看数据属性引用中的信息
+
+4. 点击“Data Attribute Reference”（数据属性引用）项，查看它列出了 API 标题。然后，滚动查看文档，查看每个类型 jQuery Mobile 组件的数据属性列表。
+
+5. 点击 slider（滑块）的标题，查看它如何带你进入该组件的文档。
+
+6. 继续实验，直到你熟悉文档的组织方式。
+
+# 练习 1-2 尝试移动版网站
+
+在此练习中，你将首先测试本章介绍的 Vecta Corp 网站的移动版。然后，你将对其进行一些修改。
+
+## 打开并测试 Vecta Corp 的移动版网站
+
+1. 使用文本编辑器打开此文件夹中的 HTML 页面：`c:\jquery\exercises\ch1\vectacorp\`
+
+2. 测试此页面以及网站不同页面之间的导航。特别是，使用 Solutions（解决方案）页列表中的列表项来显示有关各个解决方案的信息，点击解决方案页头部中的“Back”（返回）按钮回到 Solutions 页，并点击 Home（首页）或 Solutions 页页脚中的“Recent Tweets”（最近推文）按钮以显示显示的“Recent Tweets”对话框。完成后，关闭对话框。
+
+3. 点击 Home 或 Solutions 页面导航栏中的“Contact Us”（联系我们）按钮显示 Contact Us 页面。然后，填写表单并点击“Submit”（提交）按钮查看发生了什么。
+
+## 将 Contact Us 页面上的开关改为两个单选按钮
+
+4. 将 Contact Us 页面上的开关替换为一组两个水平单选按钮。然后，测试此项以确保它正常工作。
+
+5. 修改你粘贴的代码，使每个单选按钮的 `input` 元素包含在 `label` 元素内，并删除 `label` 的 `for` 属性。
+   再次测试。
+
+## 修改 Solutions 页使其使用可折叠内容块
+
+6. 将此页面列表视图中的 `li` 更改为 `data-role` 设置为“collapsible”的 `div` 元素，并删除列表视图的 `ul` 元素。
+
+7. 从你刚刚添加的 `div` 元素中删除 `<a>` 和 `<p>` 元素。然后，将 `<img>` 元素移动到 `<h3>` 元素内部的文本之前。
+
+8. 测试此网页以查看其如何工作。当你点击其中一个内容块时，该块的段落应该显示。注意，你可以同时显示所有三个内容块。注意，虽然标题的格式可以改进，但目前足够了。
+
+9. 将每个内容块中的 `<p>` 元素替换为对应解决方案页面中的 `<h3>` 和 `<ul>` 元素。现在，每当你点击其中一个内容块时，之前包含在单独页面上的所有文本都应该显示。
+
+10. 注意每个内容块现在都以两个 `<h3>` 元素开头。将每个块中的第一个 `<h3>` 元素更改为 `<h2>` 元素并再次测试页面。由于 jQuery Mobile 总是以相同的方式对标题进行样式，它们的外观不会改变。
+
+# 附录 A
+
+# 如何为本书设置你的计算机
+
+本附录介绍了如何安装我们推荐用于编辑和测试网页及应用程序的软件。这包括适用于 Windows 和 Mac OS 用户的文本编辑器 Aptana Studio 3，以及适用于这两个系统的 Firefox 浏览器。本附录还介绍了如何下载和安装本书的源代码。
+
+在阅读这些描述时，请记住大多数网站都在不断更新。因此，附录中的某些程序可能在本书出版后发生了变化。尽管如此，这些程序仍然是安装的良好指南。
+
+| 章节 | 页码 |
+|---|---|
+| 如何安装 Aptana Studio 3 | 572 |
+| 在 Windows 系统上 | 572 |
+| 在 Mac OS 系统上 | 572 |
+| 如何安装 Firefox 和 Firebug | 574 |
+| 如何安装 Firefox | 574 |
+| 如何安装 Firebug | 574 |
+| 如何安装和使用本书的源代码 | 576 |
+
+## 下载 Aptana Studio 3 的网站地址
+
+`http://www.aptana.com/products/studio3/download`
+
+## 如何在 Windows 系统上安装 Aptana Studio 3
+
+1. 访问网站地址。
+2. 点击页面底部的下载 Aptana Studio 3 按钮，在弹出的对话框中点击保存按钮，并在“另存为”对话框显示的路径中识别您想要保存文件的位置。
+3. 下载完成后，使用 Windows 资源管理器找到 `.exe` 文件，并双击启动它。
+4. 按照后续向导步骤操作，您可以接受所有提供的默认设置。
+5. 安装 Aptana Studio 3 后，启动它，在工作区启动器（`Workspace Launcher`）中勾选每次启动 Aptana 都显示相同工作区位置的复选框，并接受默认位置。
+6. 如果您的系统中没有安装 Git，Aptana 将询问您是否想安装便携 Git 程序。请接受该选项，因为没有它 Aptana 将无法运行。
+
+## 如何在 Mac OS X 系统上安装 Aptana Studio 3
+
+1. 访问上述网站地址。
+2. 点击“自定义下载”（`Customize Your download`）按钮，并选择 Mac OS X。
+3. 点击下载 Aptana Studio 3 按钮，在弹出的对话框中点击“保存文件”（`Save File`）按钮。
+4. 下载完成后，双击下载文件夹中的 `.dmg` 文件以显示 Aptana Studio 3 窗口。
+5. 使用 Finder 显示应用程序（`Applications`）文件夹。将 Aptana Studio 3 文件夹拖入应用程序文件夹中。
+6. 启动 Aptana Studio 3。此时，如果您的系统中没有 Git 程序，Aptana 将询问您是否想安装便携 Git 程序。请接受该选项，因为没有它 Aptana 将无法运行。
+
+## 描述
+
+- Aptana 可在 Windows、Mac 和 Linux 系统运行。
+- Git 是 Aptana 需要的源码管理工具。如有必要，Aptana 在您第一次启动时将会为您安装它。
+- 本书第 1 节提供了一个教程，将帮助您快速上手 Aptana。
+
+## 如何安装 Firefox 和 Firebug
+
+在开发 JavaScript 应用程序时，需要在用户可能使用的所有浏览器上对其进行测试。对于商业应用程序，这通常包括 Internet Explorer、Opera、Mac 版 Safari 以及 Google 的 Chrome。然后，如果应用程序在其中一个浏览器上无法运行，您就需要对其进行调试。
+
+不过，在您完成本书中的练习并操作应用程序时，您只需要使用一个浏览器，我们推荐的是 Mozilla Firefox。然后，如果您需要调试应用程序，可以使用 Firefox 的 Firebug 扩展，这是一个极佳的调试工具。这两个组件的安装时间都不长，第 4 节将向您展示如何使用它们。
+
+## 如何安装 Firefox
+
+图 A-2 显示了如何下载和安装 Firefox。在对安装程序的对话框做出响应时，我们建议您将 Firefox 设置为默认浏览器。
+
+## 如何安装 Firebug
+
+图 A-2 也显示了如何为 Firefox 安装 Firebug 扩展，第 4 节将向您展示如何使用它。
+
+## 下载 Firefox 的网站地址
+
+`http://www.mozilla.com`
+
+## 如何安装 Firefox
+
+1. 访问上述网站。
+2. 点击“Firefox – 免费下载”按钮。
+3. 将 `.exe` 文件保存到您的 C 盘。
+4. 运行 `.exe` 文件并对弹出的对话框做出响应。
+
+## 如何为 Firefox 安装 Firebug 扩展
+
+1. 点击工具→附加项（`Tools`→`Add-ons`）打开附加项窗口。
+2. 点击窗口左侧的“获取插件”（`Get Add-ons`）标签页，然后点击页面右上角的“浏览所有插件”（`Browse All Add-ons`）。
+3. 在搜索框中输入“Firebug”，然后点击显示的下拉列表中的 Firebug 链接。
+4. 点击页面上的“添加到 Firefox”按钮。
+5. 在软件安装窗口中，点击“立即安装”按钮。
+6. 安装完成后，点击“立即重启”按钮重启 Firefox。
+7. Firefox 重启后，关闭附加项窗口。
+
+## 描述
+
+- 我们建议您使用 Firefox 作为默认浏览器并将 Firebug 扩展作为主要调试工具。
+
+## 如何安装和使用本书的源码
+
+接下来的两图显示了如何安装和使用本书的源码。一张适用于 Windows 用户，另一张适用于 Mac OS 用户。
+
+### 针对 Windows 用户
+
+图 A-3 显示了如何在 Windows 系统上安装本书的源码。这包括书中应用程序的源码、练习的起始文件以及练习答案。
+
+完成此操作后，书中的应用程序、练习和答案将位于图中列出的三个文件夹中。当您进行练习时，请使用该文件夹中的子文件夹和文件：
+
+- Applications（应用程序）
+- Exercises（练习）
+- Solutions（答案）
+
+### 针对 Mac OS 用户
+
+图 A-4 显示了如何在 Mac OS 系统上安装本书的源码。这包括书中应用程序的源码、练习的起始文件以及练习答案。
+
+# Murach 网站
+
+`www.murach.com`
+
+# 书中应用程序和练习的 Mac OS 文件夹
+
+```
+documents/murach/query/book_apps
+documents/murach/query/exercises
+documents/murach/query/solutions
+```
+
+# 用于存放练习的 Mac OS 文件夹
+
+```
+documents/query/exercises
+```
+
+# 如何在 Mac OS 系统上下载并安装源代码
+
+1. 访问 `www.murach.com`，进入 Murach 的 JavaScript 和 jQuery 页面。
+2. 点击“FREE download of the book applications”（免费下载应用程序）链接。然后点击“All book files”（所有书籍文件）链接获取常规文件。这将下载一个名为 `query_allfiles.zip` 的设置文件到您的硬盘。
+3. 将此文件移动到您用户目录下的“Documents”（文档）文件夹。
+4. 使用 Finder 进入您的“Documents”文件夹。
+5. 双击 `query_allfiles.zip` 以解压应用程序、练习和解决方案的文件夹。这将在您的文档文件夹中创建一个名为 `query` 的文件夹，其中包含 `book_apps`、`exercises` 和 `solutions`。
+6. 通过从 `documents/murach/query` 复制 `exercises` 到 `documents/query/exercises` 来创建两个练习文件夹副本。
+
+# 如何恢复练习文件
+
+- 将其从子文件夹 `documents/murach/query/exercises` 复制到 `documents/query/exercises` 对应的子文件夹中
+
+## 说明
+
+- 此过程将练习存储在两个不同的文件夹中。这样，您可以使用其中文件夹中的文件进行练习，同时也有一份备份。
+- 如果您想将书籍应用程序中的代码复制到正在进行的练习中，可以在 `book_apps` 文件夹中找到所有应用程序。
+- 在 `solutions` 文件夹中，您可以查看每章末尾练习的答案。
+
+![](img/fb3dabc43193711c2307f942481ad30c_594_0.png)
+
+## 附录 B
+
+## 书应用程序摘要
+
+本附录总结了书中介绍的应用程序。这将有助于您在想要回顾或复制代码时找到相应的应用程序。
+
+### 第 1 节：JavaScript 基础
+
+| 应用程序名称 | 起始图表 | 描述 |
+|---|---|---|
+| Miles Per Gallon | 2-16 | 一个“入门”应用，使用 `prompt` 方法获取用户输入，并使用 `alert` 方法显示结果。 |
+| Test Scores | 2-17 | 一个“入门”应用，使用 `prompt` 方法获取用户输入，并使用 `alert` 方法显示结果。 |
+| Miles Per Gallon | 3-10 | 从文本框中获取输入并在文本框中显示结果。 |
+| Email List | 3-11 | 从文本框获取输入，验证输入并在 `span` 元素中显示错误消息。 |
+| Enhanced Email List | 5-6 | 类似于之前的 Email List 应用，但使用了一个数组来验证状态输入。 |
+| FAQs (版本 1) | 6-4 | 使用折叠元素隐藏和显示 `h2` 元素中问题下方的内容。 |
+| FAQs (版本 2) | 6-6 | 类似于之前的 FAQs 应用，但改进了代码。 |
+| FAQs (版本 3) | 6-8 | 类似于之前的 FAQs 应用，但改进了无障碍性。 |
+| Image Swap | 6-12 | 点击缩略图时切换大图。为了实现这一点，取消了 `<a>` 元素的默认操作并预加载了图像。 |
+| Slide Show | 6-15 | 使用计时器以幻灯片形式显示图像。它也预加载了图像。 |
+
+### 第 2 节：jQuery 基础
+
+| 应用程序名称 | 起始图表 | 描述 |
+|---|---|---|
+| Email List | 7-7 | 使用 jQuery 简化第 1 节中的 Email List 应用。 |
+| FAQs | 7-12 | 使用 jQuery 简化第 1 节中的 FAQs 应用。 |
+| Image Swap | 7-14 | 使用 jQuery 简化第 1 节中的 Image Swap 应用。 |
+| Image Rollover | 7-15 | 当鼠标悬停在图像元素上时更改该元素中的图像。 |
+| FAQs with Effects | 8-2 | 带有效果的第 7 章 FAQs 应用两个版本。 |
+| Slide Show | 8-3 | 带有效果的幻灯片应用。 |
+| FAQs and Animations | 8-9 | 带有早先 FAQs 应用，但带有动画标题和缓动效果。 |
+| Carousel | 8-11 | 使用动画实现书籍轮播。 |
+| TOC | 9-5 | 在文章的侧边栏中生成目录（`TOC`）。 |
+| Enhanced TOC | 9-9 | 类似于早期的 TOC 应用，目录会移动到文章中对应标题旁边。 |
+| Slide Show | 9-12 | 两个使用 DOM 遍历方法实现的幻灯片版本。 |
+| Membership Form | 10-5 | 使用 JavaScript 和 jQuery 对成员表单中的输入进行数据验证。 |
+| Membership Form | 10-8 | 使用 Validation 插件对成员表单中的输入进行数据验证。 |
+| Lightbox | 11-4 | 演示 Lightbox 插件的使用。 |
+| Carousel | 11-5 | 演示 bxSlider 插件的使用。 |
+| Slide Show | 11-6 | 演示 bxSlider 插件的使用。 |
+| jLayout | 11-7 | 演示 bxSlider 插件的使用。 |
+| Highlighter | 11-8 | 演示 bxSlider 插件的使用。 |
+
+### 第 3 节：jQuery UI
+
+| 应用程序名称 | 起始图表 | 描述 |
+|---|---|---|
+| Accordion | 12-7 | 手风琴组件。 |
+| Tabs | 12-8 | 标签页。 |
+| Dialog | 12-9 | 对话框。 |
+| Autocomplete | 12-10 | 自动补全。 |
+| Datepicker | 12-11 | 日期选择器。 |
+| Slider | 12-12 | 滑块组件。 |
+| Progressbar | 12-13 | 进度条。 |
+| Draggable and Droppable | 13-2 | 可拖拽与放。 |
+| Resizable | 13-3 | 可调整大小。 |
+| Selectable | 13-4 | 可选中。 |
+| Sortable | 13-5 | 可排序。 |
+| Individual effects | 13-7 | 交互效果。 |
+| Color transitions | 13-8 | 颜色过渡。 |
+| Class transitions | 13-9 | 类过渡。 |
+| Visibility transitions | 13-10 | 可见性过渡。 |
+
+### 第 4 节：Ajax、JSON 和 API
+
+| 应用程序名称 | 起始图表 | 描述 |
+|---|---|---|
+| XMLHttpRequest | 14-4 | 使用 `XMLHttpRequest`。 |
+| Load HTML | 14-6 | 使用 `.get`。 |
+| Load XML | 14-7 | 使用 `.get`。 |
+| Load JSON | 14-8 | 使用 `.getJSON`。 |
+| Load data | 14-11 | 使用 `.ajax`。 |
+| Blogger | 14-15 | Blogger API。 |
+| YouTube API | 15-3 | 按频道列表视频。 |
+| | 15-4 | 按搜索词列表视频。 |
+| | 15-5 | 在网站播放器中播放视频。 |
+| Twitter API | 15-7 | Twitter 馈。 |
+| | 15-8 | 显示嵌入 URL 的 Twitter 馈。 |
+| | 15-9 | 显示带有自定义时间戳的 Twitter 馈。 |
+| Flickr API | 15-12 | 将 Flickr 用于内容管理系统。 |
+| | 15-13 | 将 Flickr 用于相册。 |
+| Google Maps API | 16-3 | 在页面上显示 Google地图。 |
+| | 16-5 | 在地图上添加标记。 |
+| | 16-7 | 为标记添加消息。 |
+| | 16-8 | 为地图上的标记添加包含 Flickr 图片的自定义消息。 |
+| | 16-11 | 添加地图上两点之间的行驶路线。 |
+
+### 第 5 节：jQuery Mobile 基础
+
+| 应用程序名称 | 起始图表 | 描述 |
+|---|---|---|
+| jQuery Mobile | 17-15 | 使用 jQuery Mobile 基础功能的移动应用。 |
+| jQuery Mobile | 18-14 | 第 17 章应用的增强版本，使用了 jQuery Mobile 的其他功能。 |
+
+## 附录 C
+
+## 如何解决 $ 冲突
+
+当两个或多个库或插件都要求使用 `$` 符号，且它们没有以防止冲突的方式编写时，就会发生 `$` 冲突。这时，浏览器不知道 `$` 符号指的是哪一个库或插件，这会导致调试问题。
+
+在继续之前，你应该知道 `$` 冲突本不应该发生，因为库和插件应该以防止此类冲突的方式编写。因此，`$` 冲突极其罕见，你可能永远不会遇到。这就是为什么你可以将本附录中提供的解决方案视为“最后手段”。
+
+## 如何避免 $ 冲突
+
+如果你在使用 jQuery、jQuery UI 和 jQuery Mobile 库的同时，还使用了一个或多个库或插件，并且怀疑自己可能正经历 `$` 冲突，图 C-1 展示了两种解决冲突的解决方案。要理解这些解决方案，你需要知道你可以使用 `$` 符号或 `jQuery` 来引用 jQuery 库。
+
+因此，解决 `$` 冲突的一种简单方法是将所有引用 jQuery 库的 `$` 符号更改为 `jQuery`。这通过该图中的第一个示例进行了说明。这也是一种快速判断你的调试问题是否为 `$` 冲突的快捷方法。这种方法的唯一麻烦之处，如果你的代码中包含许多对 jQuery 的引用，这种操作可能会非常繁琐。
+
+图中的第二个解决方案不仅解决了问题，还让你能够使用 `$` 符号来引用 jQuery。通过这种解决方案，你使用 `$.noConflict` 方法放弃 jQuery 对 `$` 符号的控制。之后，你使用 `jQuery` 代替 `$` 符号来为 `ready` 方法启动事件处理程序，并将 `$` 作为该处理程序的唯一参数。完成此操作后，你可以在 `ready` 事件处理程序内部使用 `$` 符号来引用 jQuery。你也可以在 `ready` 事件处理程序外部使用 `$` 符号来引用其他库或插件。
+
+## 引用 jQuery 的两种方式
+
+- `$`
+- `jQuery`
+
+## 使用 jQuery 代替 $ 来引用 jQuery 的 jQuery 代码
+
+```javascript
+document.ready(function() {
+  jQuery("#selected_item").jqueryMethod();
+});
+```
+
+## 使用 $.noConflict 方法避免 $ 冲突的 jQuery 代码
+
+```javascript
+$.noConflict(); // 放弃对 $ 符号的控制
+
+jQuery(document).ready(function($) {
+  // 使用 $ 引用 jQuery 的代码
+  $("#selected_item").jqueryMethod();
+});
+
+// 使用 $ 引用其他库或插件的代码
+```
+
+
+
+## 如何编写避免 $ 冲突的 JavaScript 代码
+
+- 编写 `noConflict` 方法。
+- 使用 `jQuery` 代替 `$` 选择文档并为其 `ready` 事件创建事件处理程序。
+- 在 `ready` 事件处理器的参数中编写 `$`。这样你就可以在 `ready` 事件处理器内部使用 `$` 符号。
+- 在 `ready` 事件处理程序外部编写任何需要 `$` 符号的库或插件的代码。
+
+## 描述
+
+- 当 jQuery 应用程序使用其他需要使用 `$` 符号的库或插件时，就会发生冲突。此时，`$` 符号可能会无意中指向你预期之外的库或插件。
+- 引用 jQuery 时，可以使用 `$` 符号或 "jQuery"。因此，通过使用 "jQuery" 代替 `$` 符号来引用 jQuery，你可以完全避免 $ 冲突。
+- 另一种避免 $ 冲突的方法是如上所示 `$.noConflict` 方法。
+
+## 索引
+
+- `$` conflict, 585-587
+- `$.ajax` 方法 (Ajax), 424-427, 435, 435
+- `$.each` 方法 (Ajax), 414, 415
+- `$.get` 方法 (Ajax), 414, 415, 418, 419
+- `$.getJSON` 方法 (Ajax), 414, 415, 420, 421
+- `$.noConflict` 方法 (jQuery), 586, 587
+- `$.post` 方法 (Ajax), 414, 415, 418, 419
+- `$.support` supports (jQuery), 434, 435, 444, 445
+
+- Accessibility (辅助障碍), 170-173
+- Accordion (jQuery Mobile), 542, 543
+- Accordion 小部件, 356, 357
+- action 属性 (form), 288, 289
+- `addClass` 方法 (jQuery), 214, 215, 260, 296, 397
+- 添加元素列表, 144, 145
+- 地址栏, 30, 31
+- `after` 方法 (jQuery), 264, 265
+- 使用 Google Maps, 474
+- `alert` 方法 (JavaScript), 60, 61
+- `animate` 方法 (jQuery), 242, 243, 250, 251
+- Animation (jQuery), 242-251
+- Animation queue (动画队列), 244, 245
+- Anonymous function (匿名函数), 100, 101
+- API, 328, 406, 407, 439-446
+- Blogger, 428-435
+- Flicker, 458-459
+- Google Maps, 470, 471
+- Twitter, 450-457
+- YouTube, 440-449
+- API key
+- Google Blogger, 428, 429
+- Google Maps, 470, 471
+- `append` 方法 (jQuery), 264, 265
+- `appendTo` 方法 (jQuery), 264, 265
+- Application (JavaScript) (应用程序)
+- Email List (邮件列表), 212, 213, 352-355
+- FAQs (常见问题解答), 164, 169, 172-173
+- Image Swap (图片切换), 178-181
+- Miles Gallon (英加仑), 80, 81, 110
+- Image Swap, 186-189
+- Test Scores (分数), 82, 83
+- Validation (验证), 296
+- Application (jQuery)
+- Carousel (轮播图), 252-255
+- Email List, 208, 211
+- FAQs, 220, 221
+- FAQs with effects, 234-235
+- Google Maps directions, 390-491
+- Google Maps map, 474-475
+- Google Maps marker, 478-479
+- Google Maps message, 482-487
+- Highlighter plugin, 330-333
+- Image Rollover (图片悬停效果), 226-227
+- Image Swap, 222-224
+- Plugins (插件), 333-337
+- Slide with DOM, 282-283
+- Slide with effects, 236-240
+- TOC (目录), 268-271, 276-277
+- Validation (plugin), 304-309
+- Application (jQuery Mobile), 526-531, 552-567
+- Application (jQuery UI), 370-373
+- Application Interface (API)
+- Application summary, 581-584
+- Application server, 8-9
+- auto-complete, 40, 41
+- change colors, 38, 39
+- create, 34, 35
+- error marker, 40, 41, 84, 85
+- HTML validation, 156, 137
+- stalling, 572, 573
+- open file, 36, 37
+- project, 34, 35
+- run application, 42, 43
+- save work, 42, 43
+- exercise, 47
+- syntax highlighting (语法高亮), 40, 41
+- Argument, 100, 101
+- Arithmetic, 64, 65
+- Array, 141-156
+- methods, 150, 151
+- object, 142, 143
+- element, 142, 143
+- index, 148, 149
+- length, 182, 183
+- Assignment method, 66, 67
+- Assignment statement, 66, 67
+- Asynchronous JavaScript and XML, 406, 407
+- Atom Synchronization, 442, 443
+- Attach (event handler), 107
+- `attr` 方法 (jQuery), 214, 215, 260, 261
+- Attribute (see HTML), 278, 279
+- Attribute, 288, 289
+- Attribute (HTML5), 295, 296
+- Attribute (jQuery Mobile) class, 516, 517, 518, 519, 522, 523
+- `data-ajax`, 560, 561
+- `data-filter`, 550, 551
+- `data-highlight`, 554, 555
+- `data-icon`, 516, 517, 518, 519
+- Attribute (jQuery Mobile)
+- Cycle plugin, 589
+- Attribute (continued)
+- `data-inline`, 516, 517
+- `data-inset`, 546, 547
+- `data-rel`, 514, 515
+- `data-role`, 510, 516, 517
+- `data-split-icon`, 106
+- `data-theme`, 516, 517, 518, 519, 522, 523
+- `data-transition`, 514, 515
+- `data-type`, 256, 557
+- Attribute node, 98, 99, 158, 159
+- Autocomplete widget, 362
+- `autofocus` (HTML), 290, 291
+- `childNodes` property, 160, 161
+- `children` 方法 (jQuery), 278, 279
+- Class, 472, 473
+- class attribute, 22, 23
+- jQuery Mobile, 516, 517, 518, 519, 522, 523
+- class selector, 26, 27
+- Class transactions, 396, 397
+- `clearImageView` 方法 (JavaScript), 184, 185
+- `clearTimeout` 方法 (JavaScript), 182, 183
+- click event (JavaScript), 106, 107, 108, 109, 174, 175
+- click event (jQuery), 206, 207, 216, 217
+- Client, 5
+- Client-side, 10
+- `clone` 方法 (jQuery), 264, 265
+- `closest` 方法 (jQuery), 278, 279
+- Closing tag, 14
+- CMS (Content Management), 458, 459, 460, 463
+- collapsible (jQuery Mobile), 540, 541
+- collapsible set (jQuery Mobile), 542, 543
+- Color transitions, 394, 395
+- Components (UI), 538, 539
+- Comment (JavaScript), 58, 59
+- Comment node, 98, 99
+- Comment out, 58, 59
+- Compatibility (cross-browser), 32, 33
+- Compound assignment, 66, 67
+- Compound expression, 72, 73
+- Concatenation order, 70, 71
+- Conditional expression, 72, 73
+- `const` (in jQuery), 92, 93
+- constructor, 472, 473
+- Controls (form), 288, 289
+- Core (UI), 346, 347
+- Core effects (UI), 390, 391
+- Count for a loop, 78, 79
+- B, 32, 33
+- Bug, 120, 121
+- Browser, 11
+- Browser ratings, 32, 33
+- Button
+- jQuery Mobile, 516, 517
+- reset, 288, 289
+- submit, 288, 289
+- Button widget, 360, 361
+
+- C,
+
+- Call a method, 60, 61
+- Call a function, 100, 101
+- Camel case, 56, 57
+- Carousel (jQuery animation), 252-255
+- Cascading Style Sheets (CSS)
+- Case-sensitive, 54, 55
+- CDN, 196, 197
+- Google Maps, 474, 475
+- jQuery, 196, 197
+- jQuery Mobile, 508, 509
+- jQuery UI, 352, 353
+- Chaining, 70, 71, 94
+- animation methods, 244, 245
+- change event (JavaScript), 106, 107, 108, 109
+- change event (jQuery), 294, 295
+- `change` 方法 (jQuery), 294, 295
+- Check box (jQuery Mobile), 556, 557
+- Child, 158, 159
+
+- D,
+
+- Cross-browser, 332, 333
+- Cross-browser security policy, 424, 425, 450, 451
+- CSS (Cascading Style Sheets), 14, 15
+- property, 28, 29
+- rule, 28, 29
+- `let`, 28, 29
+- selector, 26, 27
+
+- `css` 方法 (jQuery), 214, 215, 272, 273
+
+- CSS3 media queries, 498, 499
+
+- Cycle plugin, 324-325
+
+2012, Mike Mitchell and Associates, Inc. Licensed to Michael Gotham.
+
+## 数据属性 (jQuery Mobile)
+
+## 事件方法 (jQuery)
+
+# D
+
+- 数据属性 (jQuery Mobile), 536, 537
+- `data-ajax`, 560, 551
+- `data-collapsed`, 540, 541
+- `data-filter`, 550, 551
+- `data-highlight`, 554, 555
+- `data-icon`, 516, 517, 519
+- `data-inline`, 516, 517
+- `data-sheet`, 546, 547
+- `data-rel`, 514, 515
+- `data-role`, 510, 511, 516, 517, 518, 519
+- `data-split-icon`, 546, 547
+- `data-theme`, 516, 517, 518, 519, 522, 523
+- `data-transition`, 514, 515
+- `data-type`, 556, 557
+
+## 数据类型
+- 布尔, 62, 63, 68
+- 数字, 62, 63
+- 字符串, 62
+
+- 数据验证, 10, 11, 296-309
+- 数据服务器, 8, 9
+- 数据控制, 290, 291
+- 数据对象, 53, 97
+- 日期器, 364, 365
+- `dblclick` (JavaScript), 106, 107
+- `dblclick` 事件 (jQuery), 216, 217
+- 调试, 120-128
+    - 使用 Firebug, 126-128
+    - 使用 Firefox, 126-128
+- jQuery 应用, 198, 199
+- 小进制值, 62, 63
+
+## 声明
+- DOCTYPE, 12, 13
+- 变量, 66, 67
+- 递减对象, 64, 65
+- 默认操作, (174), 175
+- `del` 方法 (jQuery), 246, 247
+- 删除运算符 (JavaScript), 144, 145
+- 后代, 158, 159
+- 设计移动页面, 504, 505
+- 移动代理服务器检测 (Detect Mobile Brokers), 500, 501
+- 对话 (jQuery), 514, 515
+- 对话小部件, 360, 361
+- 方向（地图上）, 488-499
+- 禁用属性 (JavaScript), 94, 95
+- `div` 元素, 20, 21
+- CTYPE 声明, 12, 13
+- 文档接口, 162, 163
+- 文档对象, 92, 93
+- 文档模型 (DOM)
+- 文档
+- 日志记录, 430-431
+- Google Maps, 470-471
+- jQuery Mobile, 536-537
+- jQuery UI, 354, 355
+- Twitter, 450-451
+- YouTube, 440-444
+- DOM (对象交互模型), 16, 98, 198, 159
+    - 核心规范, 158, 159
+    - 操作方法, 260-277
+    - 替换方法, 262, 263
+    - 脚本, 16, 17, 159-190
+    - 遍历方法, 278-283
+- 点名, 30, 31
+- 点运算符, 60, 61
+- `do-while` 循环, 76, 77
+- `do-while` 语句, 76, 77
+- 下载
+    - 书籍应用, 576, 577
+    - jQuery UI, 348-353
+    - 可拖拽交互, 382, 383
+    - 驾驶路线（地图上）, 488-499
+    - 可放置交互, 382, 383
+    - 动态网页, 8, 9
+
+# E
+
+- `each` 方法 (jQuery), 214, 215
+- 缓动 (jQuery UI), 248, 249, 250, 251, 390
+- 效果方法 (jQuery), 392, 393
+- 效果方法集 (jQuery), 232-235
+- 效果 (jQuery UI), 347, 390-399
+- 元素 (HTML 元素)
+    - 元素接口, 162, 163
+    - 元素节点, 98, 159
+    - 数组元素, 142, 143
+- `else` 子句, 75, 76
+- `else if` 子句, 75, 76
+- 邮件控制, 290, 291
+- 邮件列表应用 (JavaScript), 112, 152
+- 邮件列表应用 (jQuery), 208-211
+- 嵌入式事件, 50, 51
+- 嵌入式样式, 24, 25
+- `empty` 方法 (jQuery), 266, 267
+- 空字符串, 62, 63
+- 移动设备模拟器, 504, 505
+- `end` 方法 (jQuery), 280, 281
+- `eq` 方法 (jQuery), 280, 281
+- `error` 方法 (jQuery), 216, 217
+- 错误消息 (浏览器), 130, 131
+- 错误 (JavaScript), 120, 121
+- 转义序列, 68, 69
+- 事件 (JavaScript), 106, 107
+- 事件 (jQuery Mobile), 536, 537
+- 事件处理程序, 106-109
+- 事件方法 (jQuery), 206, 207
+- `bind`, 218, 219
+- `blur`, 294, 295
+
+## 事件方法 (jQuery)
+
+- `change`, 294, 295
+- `click`, 206, 207, 216
+- `error`, 216, 217
+- `focus`, 294, 295
+- `hover`, 216, 217
+- `mouseenter`, 216, 217
+- `mouseclick`, 216, 217
+- `mouseover`, 216, 217
+- `one`, 218, 219
+- `ready`, 206, 207, 216
+- `select`, 294, 295
+- `submit`, 294, 295
+- `toggle`, 216, 217
+- `trigger`, 218, 219
+- `unload`, 216, 217
+- 指数, 62, 63
+- 表达式
+    - 条件, 72, 73
+    - 数值, 64, 65
+    - 可扩展性标记语言 (XML), 408, 409, 412, 413, 418, 419
+- 外部文件, 50, 51
+- 外部样式, 24, 25
+- First-in-out 数组, 150, 151
+- Flash, 504, 505
+- Flick, 458-465
+- 地图图像, 486
+- 浮点算术, 122, 123
+- 浮点值, 62, 66, 67
+- focus 事件 (JavaScript), 106, 107
+- focus 事件 (jQuery), 294, 295
+- focus 方法
+    - JavaScript, 94, 95
+    - jQuery, 204, 205, 294, 295
+- `for` 属性, 22, 23
+- `for` 循环, 78, 79
+    -  数组, 146, 147
+    - `for` 语句, 78, 79
+    -  数组, 146, 147
+- `for-in` 循环, 148, 149
+- `for-in` 语句, 148, 149
+- 表单 (jQuery), 287-310
+- 表单 (jQuery), 560, 561
+- 函数 (JavaScript), 100-103
+
+# F
+
+- `fadeIn` (jQuery), 232, 233
+- `fadeOut` (jQuery), 232, 233
+- `fadeTo` (jQuery), 232, 233
+- `fadeToggle` (jQuery), 232, 233
+- FAQS 应用
+    - JavaScript, 172-173
+- jQuery, 220-221
+- jQuery 事件, 234-235
+- 字段, 288-293
+- 文件名, 30, 31
+- Filter (jQuery), 550, 551
+- `filter` 方法 (jQuery), 280, 281
+- `find` (jQuery), 278, 279
+- Firebug, 126, 127
+- 调试, 126-128
+- 断点, 128-129
+- 安装, 574, 575
+- 使用 jQuery, 198, 199
+- Firebox
+    - 调试, 126-128
+- 错误控制, 84, 85
+- 错误消息, 84, 85
+- 安装, 574, 575
+- `first` 方法 (jQuery), 280, 281
+- `firstChild` 属性 (JavaScript), 198, 160, 161
+- 地理编码, 476
+- `get` 方法 (表单), 288, 289, 410, 411
+- `getAttribute` (JavaScript), 162, 163
+- `getDate` (JavaScript), 96, 97
+- `getElement` (JavaScript), 92, 93
+- `getElementByClassName` (JavaScript), 162, 163
+- `getElementsByName` (JavaScript), 162, 163
+- `getElementsByTagName` (JavaScript), 162, 163
+- `getFullYear` (JavaScript), 96, 97
+- `getMethod` (JavaScript), 96, 97
+- 全局对象, 60, 70, 71, 92
+- 全局变量, 104, 105
+- 有问题, 122, 123
+- Google Auto Suggest, 406, 407
+- Google Blogger, 428-435
+- Google Maps, 469-492
+- API, 470, 471
+- 应用, 474-475, 478-487, 482-490, 491
+- 类, 472, 473, 476, 477, 480, 481
+- 网格 (jQuery), 538, 539
+
+# H
+
+- Handler (事件), 106-109
+- `has` 方法 (jQuery), 280, 281
+- `hasAttribute` (JavaScript), 162, 163
+- `hasClass` (jQuery), 260, 261
+- `height` 方法 (jQuery), 272, 273
+- `hide` 方法 (jQuery), 214, 215, 232, 233
+- `hover` 方法 (jQuery), 216, 217
+- highlighter 插件, 330-333
+- HTML (超文本标记语言), 7, 12, 13
+    - 属性, 22, 23
+    - 类, 22
+    - `for`, 22, 23
+    - 元素, 12
+    - `div`, 20, 21
+    - 表单, 290, 291
+    - HTML5, 290, 291
+    - `id`, 22, 23
+    - `name`, 22, 23
+    - `title`, 22, 23
+    - `html` 方法 (jQuery), 262, 263
+- HTML 验证, 136
+- 语义化元素, 18, 19
+- HTTP (超文本传输协议), 6, 7
+- 请求, 6-11
+- 响应, 6-11
+- HTML (超文本标记语言), 查看 HTML
+- HTTP (超文本传输协议), 查看 HTTP
+- `id` 属性, 22, 23
+- `id` 选择器, 26, 27
+- 标识符 (JavaScript), 56, 57
+- IE (Internet Explorer)
+    - 兼容性, 32, 33, 434, 435, 444, 445
+    - 跨浏览器策略, 434, 435, 444, 445
+    - 错误消息, 130, 131
+- `if` 子句, 74, 75
+- `if` 语句, 74, 75
+- IIFE, 328
+- 预加载, 176, 177
+- 整数, 63
+- 交互, 346, 347, 380–389
+- 接口, 158, 159
+- 立即调用函数表达式 (Immediately Invoked Function Expression), 328
+- 递增运算符, 64, 65, 66, 67
+- Index
+    - `for` 循环, 78, 79
+    - `for` 数组, 142, 143
+    - `indexOf` 方法 (JavaScript), 96, 97
+    - 个体事件 (jQuery UI), 392, 393
+    - 窗口 (Google), 480-483
+- `inner` 方法 (jQuery), 272, 273
+- `innerWidth` 方法 (jQuery), 272, 273
+- `insertAfter` 方法 (jQuery), 264, 265
+- `insertBefore` 方法 (jQuery), 264, 265
+- 插入列表 (jQuery Mobile), 546, 547
+
+# 安装
+
+- Aptana, 572, 573
+- 下载, 576, 577
+- Firebug, 574, 575
+- Firefox, 574, 575
+- 整数, 63
+- 交互, 346, 347, 380–389
+- 接口, 158, 159
+    - 文档, 162, 163
+    - 元素, 162, 163
+    - 接口节点, 160, 161
+- Internet, 4, 5
+- Internet Explorer, 查看 IE
+- Internet 服务商 (ISP), 4, 5
+- 间隔计时器, 184, 185
+- `isNaN` 方法 (JavaScript), 72
+- ISP (Internet 服务商), 4, 5
+
+# J
+
+- JavaScript, 10, 11
+- 应用, 12-17
+- 布尔数据类型, 62, 63
+- 注释, 58, 59
+- 常见错误, 122, 123
+- 控制语句, 72-79
+- 约定, 56, 57
+- 数据, 62-71
+- 日期对象, 53
+- 嵌入式, 50, 51, 52, 53
+- 引擎, 10, 11
+- 错误, 84, 85
+- 外部, 50, 51
+- 函数, 100-103
+- 标识符, 56, 57
+- 方法, 查看 方法 (jQuery)
+- 命名约定, 56, 57
+- 数字数据类型, 62, 63
+- 对象, 92-99
+- 原始数据类型, 62, 63
+- 预留字, 56, 57
+- shim, 查看 shim
+- shim, 18, 19, 32, 33
+- 语句, 54, 55
+- 字符串数据, 62, 63
+
+## JavaScript
+
+- 语法, 54-61
+- 变量, 66, 67, 68, 69
+- JavaScript 符号, 408, 409
+- JavaScript 语句
+- 赋值, 66, 67
+- `do-while`, 76, 77
+- `for`, 78, 79, 146, 147
+- `for-in`, 148, 149
+- `if`, 74, 75
+- `while`, 76, 77
+- JavaScript 插件, 326-327
+- `join` 方法 (JavaScript), 150, 151
+- jQuery, 196-202
+- 代码平铺, 270, 271
+- 事件方法, 查看 事件方法
+- 方法, 查看 方法 (jQuery)
+- 插件, 204, 205, 294, 295
+- 方法 (jQuery), 280, 281
+- 方法 (jQuery), 280, 281
+- 方法 (jQuery), 216, 217
+- 方法 (jQuery), 216, 217
+- 方法 (jQuery), 216, 217
+- 方法 (jQuery), 272, 273
+- 方法 (jQuery), 272, 273
+- 方法 (jQuery), 264, 265
+- 方法 (jQuery), 264, 265
+- 方法 (jQuery Mobile), 546, 547
+
+# 594
+
+## 方法
+
+## 方法 (jQuery)
+
+- 方法, 60, 61, 472, 473
+- 方法 (JavaScript)
+- `alert`, 60, 61
+- `clearInterval`, 184, 185
+- `clearTimeout`, 182, 183
+- `confirm`, 92, 93
+- `focus`, 94, 95
+- `getAttribute`, 162, 163
+- `getDate`, 96, 97
+- `getElementById`, 92, 93
+- `getElementsByByClassName`, 162, 163
+- `getElementsByName`, 162, 163
+- `getElementsByTagName`, 162, 163
+- `getFullYear`, 96, 97
+- `getMonth`, 96, 97
+- `hasAttribute`, 162, 163
+- `indexOf`, 96, 97
+- `join`, 150, 151
+- `parseFloat`, 70, 71, 92
+- `parseInt`, 70, 71, 92
+- `pop`, 150, 151
+- `preventDefault`, 174, 175
+- `print`, 60, 61
+- `prompt`, 60, 61
+- `push`, 150, 151
+- `removeAttribute`, 162, 163
+- `setAttribute`, 162, 163
+- `setInterval`, 184, 185
+- `setTimeout`, 182, 183
+- `shift`, 150, 151
+- `substr`, 96, 97
+- `toDateString`, 96, 97
+- `toFixed`, 94, 95
+- `toLowerCase`, 96, 97
+- `toString`, 150, 151
+- `toUpperCase`, 96, 97
+- `unshift`, 150, 151
+- `write`, 92, 93
+- `writeln`, 92, 93
+- 方法 (jQuery), 204, 205
+- `$.ajax` (Ajax), 424, 427, 434, 435
+- `$.each` (Ajax), 414, 415, 420, 421
+- `$.get` (Ajax), 414, 415, 418, 419
+- `$.getJSON` (Ajax), 414, 415
+- `$.noConflict`, 586, 587
+- `$.post` (Ajax), 414, 415, 418, 419
+- `addClass`, 214, 215, 260, 261, 396, 397
+- `after`, 262, 264, 265
+- `animate`, 264, 265
+- `append`, 264, 265
+- `appendTo`, 264, 265
+- `attr`, 214, 215, 260, 261
+- `blur`, 294, 295
+- `change`, 294, 295
+- `children`, 278, 279
+- `clone`, 264, 265
+- `closest`, 278, 279
+- `css`, 214, 215, 272, 273
+- `del`, 246, 247
+- `each`, 214, 215
+- `empty`, 266, 267
+- `end`, 280, 281
+- `eq`, 280, 281
+- `fadeIn`, 232, 233
+- `fadeOut`, 232, 233
+- `fadeTo`, 232, 233
+- `fadeToggle`, 232, 233
+- `filter`, 280, 281
+- `find`, 278, 279
+- `first`, 280, 281
+- `focus`, 204, 205, 294, 295
+- `has`, 280, 281
+- `hasClass`, 260, 261
+- `height`, 272, 273
+- `hide`, 214, 215, 232, 233
+- `html`, 262, 263
+- `innerHeight`, 272, 273
+- `innerWidth`, 272, 273
+- `insertAfter`, 264, 265
+- `insertBefore`, 264, 265
+- `last`, 280, 281
+- `load` (Ajax), 414, 415, 416, 417
+- `next`, 204, 205, 214, 215, 278, 279
+- `nextAll`, 278, 279
+- `nextUntil`, 278, 279
+- `not`, 280, 281
+- `offset`, 274, 275
+- `offsetParent`, 278, 279
+- `outerHeight`, 272, 273
+- `outerWidth`, 272, 273
+- `parent`, 278, 279
+- `parentsUntil`, 278, 279
+- `position`, 274, 275
+- `prepend`, 264, 265
+- `prependTo`, 264, 265
+- `prev`, 214, 215, 278, 279
+- `prevAll`, 278, 279
+- `preventDefault`, 224, 225
+- `prevUntil`, 278, 279
+- `remove`, 262, 267
+- `removeAttr`, 260, 261
+- `removeClass`, 214, 215, 260, 261, 396, 397
+- `replaceAll`, 262, 263
+- `replaceWith`, 262, 263
+- `scrollLeft`, 274, 275
+- `scrollTop`, 274, 275
+- `select`, 294, 295
+- `serialize` (Ajax), 422, 423
+- `parentsUntil` method (jQuery) 595
+- `serializeArray` (Ajax), 422, 423
+- `show`, 214, 215, 232, 233
+- `siblings`, 278, 279
+- `slice`, 280, 281
+- `slideDown`, 232, 233
+- `slideToggle`, 232, 233
+- `slideUp`, 232, 233
+- `stop`, 246, 247
+- `submit`, 204, 205, 294, 295
+- `text`, 204, 205, 262, 263
+- `toggle`, 232, 233
+- `toggleClass`, 214, 215, 260, 261, 397
+- `trim`, 292, 293
+- `unwrap`, 266, 267
+- `val`, 204, 205, 262, 263, 292, 293
+- `width`, 272, 273
+- `wrap`, 266, 267
+- `wrapAll`, 266, 267
+- `wrapInner`, 266, 267
+- 方法 (UI)
+- `effect`, 392, 393
+- `switch`, 396, 397
+- 方法 (Mobile), 536, 537
+- `method` attribute (form), 288, 289
+- Mobile web application (JavaScript), 80, 81, 110, 111
+- Mobile web site, 498, 505
+- Mobile site application, 226, 531, 562, 567
+- Modal, 360, 361
+- Modulus operator, 64, 65
+- `mouseover` event (jQuery), 216, 217
+- mouse event (JavaScript), 106, 107
+- `mouseout` event (JavaScript), 106, 107
+- `mouseout` method (jQuery), 216, 217
+- `mouseover` event (JavaScript), 106, 107
+- `mouseover` method (jQuery), 216, 217
+- Node interface, 160, 161
+- `nodeValue` property (JavaScript), 98, 99, 160, 161
+- `script` element, 52, 53
+- `not` method (jQuery), 280, 281
+- Numeric control, 290, 291
+- Numeric data type, 62, 63
+- Numeric object (JavaScript), 94, 95
+- Numeric expression, 64, 65
+- Numeric literal, 66, 67
+- Numeric variable, 66, 67
+- Object, 60, 61
+- Object (browser)
+- XHR, 424, 425
+- XHR, 406, 407, 410, 412, 413
+- `XMLHttpRequest`, 406, 407, 410, 411, 412
+- Object (JavaScript), 92, 99
+- Date, 96, 97
+- document, 92, 93
+- global, 92, 93
+- Number, 94, 95
+- String, 96, 97
+- Textbox, 94, 95
+- window, 60, 61, 92, 93
+- Object chaining, 70, 71, 94, 95
+- `offset` method (jQuery), 274, 275
+- `offsetParent` method (jQuery), 278, 279
+- `one` event method (jQuery), 218, 219
+- One-time, 182, 183
+- Opening tag, 14
+- Operator
+- arithmetic, 64, 65
+- assignment, 66, 67
+- compound assignment, 66, 67
+- concatenation, 68, 69
+- logical, 72, 73
+- relational, 72, 73
+- Order of precedence
+- arithmetic expression, 64, 65
+- conditional expression, 72, 73
+- `outerHeight` method (jQuery), 272, 273
+- `outerWidth` method (jQuery), 272, 273
+- `name` attribute, 22, 23
+- `for`, 288, 289
+- Named function, 102, 103
+- Naming conventions, 56, 57
+- plugins, 329
+- NaN, 70, 71, 92, 93
+- Nested statements, 74, 75
+- Network, 4, 5
+- `new` keyword, 97, 142, 143, 176
+- `next` method (jQuery), 278, 279
+- `nextAll` method (jQuery), 278, 279
+- `nextElementSibling` property (JavaScript), 160, 161
+- `nextUntil` method (jQuery), 278, 279
+- Parameter, 60, 61, 100, 101
+- Parent, 158, 159
+- `parent` method (jQuery), 278, 279
+- `parentNode` property (JavaScript), 160, 161
+- `parents` method (jQuery), 278, 279
+- `parentsUntil` method (jQuery), 278, 279
+- `parseFloat` method (JavaScript), 70, 71, 92, 93
+- `parseInt` method (JavaScript), 70, 71
+- Path, 30, 31
+- Pattern (regular expression), 290, 291
+- `pattern` attribute (HTML5), 290, 291
+- `placeholder` attribute (HTML5), 290, 291
+- Plugin (jQuery), 313, 338
+- API standards, 329
+- application (jQuery), 334, 337
+- bSlider, 322, 325
+- creating, 326, 329
+- Cycle, 324, 325
+- highlighter, 330, 332
+- jLayout, 326, 327
+- Lightbox, 320, 321, 464, 465
+- naming conventions, 329
+- eviction, 500, 501
+- Validation, 300, 309
+- `pop` method (JavaScript), 150, 151
+- `position` (jQuery), 274, 275
+- `post` method (form), 288, 290, 410
+- Preloading images, 176, 177
+- `prepend` method (jQuery), 264, 265
+- `prependTo` (jQuery), 264, 265
+- `prev` method (JavaScript), 214, 215, 278, 279
+- `prevAll` method (JavaScript), 278, 279
+- `preventDefault` method
+- JavaScript browsers, 174, 175
+- jQuery, 224, 225
+- `prevUntil` method (jQuery), 278, 279
+- Primitive data type, 62, 63
+- `print` method (JavaScript), 60, 61
+- ProgressBar wider, 368, 369
+- `prompt` method (JavaScript), 60, 61
+- Property, 28, 29, 60
+- `returnValue` (IE), 174, 175
+- viewport metadata, 502, 503
+- Property (JavaScript)
+- `location`, 60, 61
+- `disabled`, 94, 95
+- `firstChild`, 98, 99
+- `length`, 96, 97, 144, 145
+- `nodeValue`, 98, 99
+- `value`, 94, 95
+- Property (jQuery), 434, 435, 444, 445
+- Property (Node interface), 160, 161
+- `firstChild`, 160, 161
+- `lastChild`, 160, 161
+- `nextSibling`, 160, 161
+- `nodeValue`, 160, 161
+- `parentNode`, 160, 161
+- Properties map, 242, 243
+- Property, 30, 31
+- `push` method (JavaScript), 150, 151
+- Queue (animation), 244, 245
+- Radio button (jQuery Mobile), 556, 557
+- Range control, 290, 291
+- `ready` event (jQuery), 206, 207, 216, 217
+- Redirection plugin, 500, 501
+- Redirection to web naming, 498, 499, 500
+- Refresh button, 42, 43
+- Regular expression, 290, 291, 454, 455
+- Relational operators, 72, 73
+- Reload button, 42, 43
+- `remove` method (jQuery), 266, 267
+- `removeAttr` (jQuery), 260, 261
+- `removeAttribute` method (JavaScript), 162, 163
+- `removeClass` method (jQuery), 214, 215, 260, 261, 396, 397
+- Rendering directions, 488, 491
+- web page, 6
+- `replaceAll` method (jQuery), 262, 263
+- `replaceWith` method (jQuery), 262, 263
+- `required` attribute (HTML5), 290, 291
+- Reserved word, 56, 57
+- Reset button, 288, 289
+- Reliable interaction, 384, 385
+- `return` statement (JavaScript), 100, 101
+- `returnValue` property (IE), 174, 175
+- Retweet, 450, 451, 452
+- Round trip, 8, 9
+- Router, 2
+- Rule set, 28, 29
+- Runtime error (JavaScript), 120, 121
+- Scale of viewport, 502, 503
+- Scope, 104, 105
+- `script` element, 52, 53
+- Scripting language, 10, 11
+- Google Maps, 474, 475
+- jQuery, 196, 197
+- jQuery UI, 352, 353
+- jQuery Mobile, 508, 509
+- Slide, 10, 11
+- Slide show
+- `slice` method (jQuery), 280, 281
+- `scrollTop` method (jQuery), 274, 275
+- `scrollLeft` method (jQuery), 274, 275
+- `select` (JavaScript), 106, 107
+- `select` method (jQuery), 294, 295
+- select Menu (jQuery), 558, 559
+- `select` method (jQuery), 294, 295
+- selectable interaction, 386, 387
+- Selector, 68, 69
+- object, 96, 97
+- variable, 68, 69
+- Style sheet, 24, 25
+- jQuery Mobile, 508, 509
+- jQuery UI, 352, 353
+- styles (jQuery Mobile), 520, 521
+- Submit button, 288, 280, 561
+- `submit` event (jQuery), 294, 295
+- `submit` method (JavaScript), 204, 255, 288, 294, 295
+- `switch` (JavaScript), 96, 97
+- `switch` (jQuery Mobile), 522, 523
+- Switch (jQuery UI), 396, 397
+- Syntax, 26, 27
+- jQuery, 202, 203, 212, 213, 292, 293
+- `serialize` method (Ajax), 422, 423
+- `serializeArray` method (Ajax), 422, 423
+- Server-side common errors, 84, 85
+- JavaScript, 54, 61, 120, 121
+- `setAttribute` method (JavaScript), 162, 163
+- `setInterval` method (JavaScript), 184, 185
+- `setTimeout` method (JavaScript), 182, 183
+- `shift` method (JavaScript), 150, 151
+- shim (see-shift)
+- shiv, 18, 19, 32, 33
+- `show` method (jQuery), 214, 215, 232, 233
+- Sibling, 158
+- `siblings` method (jQuery), 278, 279
+- Simulator for mobile device, 504, 505
+- `slide` method (jQuery), 280, 281
+- Slide, 10, 11
+- Slide show
+- Tabs widget, 358, 359
+- Tag, 14
+- Test Scores application, 82, 83
+- Testing, 43, 120, 125
+- JavaScript application, 30, 31
+- jQuery, 198, 199
+- pheros, 120, 121
+- mobile web pages, 504, 505
+- text area (jQuery Mobile), 552, 553
+- text field (jQuery Mobile), 552, 553
+- `text` method (jQuery), 204, 205, 262, 263
+- text node, 98, 99
+- Textbox (JavaScript), 94, 95
+- Ajax, 186, 189
+- jQuery travel, 282, 283
+- jQuery effects, 236, 240
+- `slideDown` (jQuery), 232, 233
+- Slider widget, 366, 367
+- Slider (jQuery Mobile), 554, 555
+- `slideToggle` (jQuery), 232, 233
+- `slideUp` (jQuery), 232, 233
+- Sortable interaction, 388, 389
+- Source-code-view, 134, 135
+- `span` element, 20, 21
+- `switch` (jQuery Mobile), 522, 523
+- jQuery UI, 344, 345, 350
+- ThemeRoller
+- jQuery Mobile, 524, 525
+- jQuery UI, 350, 351
+- `this` keyword
+- JavaScript, 166, 167
+- jQuery, 220, 221
+- time control, 290, 291
+- timer, 182, 183
+- `title` attribute, 22, 23
+- Split button (jQuery Mobile), 546, 547
+- `src` attribute (script), 50, 51
+- Stack (array), 151
+- start slide show, 240, 241
+- Statement (JavaScript), 54, 55
+- assignment, 66, 67
+- `do-while`, 76, 77
+- `for`, 78, 79, 146, 147
+- `for-in`, 148, 149
+- `if`, 74, 75
+- `while`, 76, 77
+
+- `toLowerCase` 方法 (JavaScript), 96, 97
+- 自顶向下编码 (Top-down coding), 124, 125
+- 自顶向向测试 (Top-down testing), 124, 125
+- `toString` 方法 (JavaScript), 150, 151
+- `toUpperCase` 方法 (JavaScript), 96, 97
+- 追踪 (Tracing), 132, 133
+- 过渡 (Transition), 394-399
+- jQuery Mobile, 514, 515
+- `trigger` event 方法 (jQuery), 218, 219
+- `trim` 方法 (jQuery), 292, 293
+- 推特 (Tweet), 450-457
+- Twitter, 450-457
+
+- `while` 循环 (While loop), 76, 77
+- `while` 语句, 76, 77
+- 空白字符 (Whitespace), 54, 55
+- 广域网 (WAN), 4, 5
+- 小部件 (Widget), 354-375
+- `width` 方法 (jQuery), 272, 273
+- `window` 对象 (window object), 60, 61, 70, 71, 92
+- `wrap` 方法 (jQuery), 266, 267
+- `wrapAll` 方法 (jQuery), 266, 267
+- `wrapInner` 方法 (jQuery), 266, 267
+- `write` 方法 (JavaScript), 53, 92, 93
+
+## U
+
+- `unbind` 方法 (jQuery), 218, 219
+- 未声明变量 (undeclared variable), 122, 123
+- 统一资源定位符 (URL), 30, 31
+- `unload` 方法 (jQuery), 216, 217
+- `unshift` 方法 (JavaScript), 150, 151
+- `unwrap` 方法 (jQuery), 266, 267
+- URL (统一资源定位符), 30, 31
+- `url` 控制 (url control), 290, 291
+- 可用性 (Usability), 170, 171
+
+## XYZ
+
+- XHR 对象, 406, 407, 410, 411, 412
+- XML, 408, 409, 412, 418, 419
+- `XMLHttpRequest` 对象, 406, 407, 410, 411, 412
+- YouTube, 440-449
+
+## V
+
+- `val` 方法 (jQuery), 204, 205, 262, 263, 292, 293
+- 验证 (HTML), 136, 137
+- 验证应用 (Validation application)
+- JavaScript, 296-299
+- 插件 (plugin), 304-309
+- 插件, 300-309
+- `value` 属性 (JavaScript), 94, 95
+- 变量 (Variable), 66, 67, 68, 69
+- 全局 (global), 104, 105
+- 局部 (local), 104, 105
+- 已声明 (declared), 122, 123
+- 带有小部件的 Vertex Corp 应用, 370-373
+- 视频应用 (Video applications), 440-449
+- 查看源代码 (Viewing source code), 134, 135
+- 视口 (Viewport), 502, 503
+- 可见性过渡 (Visibility transition), 398, 399
+
+## W
+
+- W3C 标记验证服务 (W3C Markup Validation Service), 137
+- WAN (广域网) 4, 5
+- 监视表达式 (Watch expression), 128, 129
+- Web 浏览器 (Web browser), 4-11
+- Web 服务器 (Web server), 4-11
+
+## 了解更多关于 Murach 产品的信息，请访问 www.murach.com
+
+## 针对 Web 开发者的书籍
+
+| Murach's HTML5 and CSS | $54.50 |
+| Murach's JavaScript and jQuery | $54.50 |
+| Murach's JavaScript and DOM Scripting | $54.50 |
+| Murach's PHP and MySQL | $54.50 |
+
+## 针对数据库开发者的书籍
+
+| Murach's MySQL | $54.50 |
+| Murach's SQL Server 2012 for Developers | $54.50 |
+| Murach's Oracle SQL and PL/SQL | $52.50 |
+
+## 针对 .NET 开发者的书籍
+
+| Murach's C# 2010 | $54.50 |
+| Murach's Visual Basic 2010 | $54.50 |
+| Murach's ASP.NET 4 Web Programming (C# 或 VB 2010 版本) | $54.50 |
+| Murach's ADO.NET 4 Database Programming (C# 或 VB 2010 版本) | $54.50 |
+
+## 针对 Java 开发者的书籍
+
+| Murach's Java Programming | $57.50 |
+| Murach's Servlets and JSP, 第二版 | $52.50 |
+
+> *价格和供货情况可能会发生变动。请访问我们的网站或致电获取最新信息。*
+
+## 我们的无限保证……当您直接从我们订购
+
+您必须对我们的书籍满意。如果它们没有您以前用过的任何编程书籍更好……无论是用于培训还是参考……您可以在 90 天内将其退回并获得全额退款。无需任何理由！
+
+您的意见
+如果您对这本书有任何意见，我非常渴望收到。感谢您的反馈！
+
+现在订购，
+
+Web：www.murach.com
+
+拨打免费热线：800-221-5528
+（太平洋时间上午 8 点至下午 4 点）
+
+传真：559-440-0963
+
+通过电子邮件反馈意见
+murach@murach.com
+Web：www.murach.com
+邮寄：Murach & Associates, Inc.
+4340 N. Knoll
+Fresno, California 93722-7825
+
+Murach & Associates, Inc.
+专业编程书籍
+
+©2012, Murach and Associates. 授权给 Michael H.
