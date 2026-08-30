@@ -1,0 +1,17629 @@
+
+# Murach's JavaScript 和 jQuery：从初学者到高级指南
+
+![](img/32b24cb9657418b8429a4117bd539786_1_0.png)
+
+https://archive.org/details/murachsjavascript0000dela_g9e7
+
+# 编辑团队
+
+作者：Mary Delamater、Zak Ruvalcaba
+
+编辑：Anne Boehm
+
+制作：Maria Spera
+
+# 面向 Web 开发人员的书籍
+
+- Murach's HTML5 and CSS3（第 3 版）
+- Murach's JavaScript（第 2 版）
+- Murach's PHP and MySQL（第 2 版）
+- Murach's Java Servlets and JSP（第 3 版）
+- Murach's ASP.NET 4.6 Web Programming with C# 2015
+- Murach's ASP.NET Web Programming with VB
+
+# 关于核心 Python、Java、C# 和 VB 的书籍
+
+- Murach's Python Programming
+- Murach's Beginning Java with NetBeans
+- Murach's Beginning Java with Eclipse
+- Murach's Java Programming（第 4 版）
+- Murach's C# 2015
+- Murach's Visual Basic 2015
+
+# 数据库程序员的书籍
+
+- Murach's MySQL（第 2 版）
+- Murach's Oracle SQL and PL/SQL（第 2 版）
+- Murach's SQL Server 2016 for Developers
+
+# 引言
+
+今天，JavaScript 已被应用于现代网站的大多数页面，从小型个人网站到最大的商业网站皆如此。无论哪里使用 JavaScript，你都能发现 jQuery。这是因为 jQuery 是一个让开发 JavaScript 应用变得更容易的库。这就是为什么每位开发者都应该学会如何使用 JavaScript 和 jQuery，同时还要掌握 HTML5 和 CSS3。
+
+现在，本书介绍了每位开发者都应该具备的所有 JavaScript 和 jQuery 技能。如果你是一个具有 HTML 和 CSS 背景且没有编程经验的网页设计师，这本书非常适合你。如果你是一个拥有 Java、C#、PHP 或 Python 等语言经验的服务器端程序员，同样适用。无论何种情况，你都将掌握一套工作中所需的实用的 JavaScript 和 jQuery 技能。
+
+# 本书内容
+
+本书分为三个部分，每一部分都将带你进入专家水平的新境界：
+
+- **第一部分**介绍了一个为期七章的 JavaScript 课程，让你有一个良好的开始。这部分适用于编程初学者，也适用于经验丰富的程序员；它允许你按照自己的进度学习。如果你是初学者，你会进展得缓慢并完成所有练习；如果你有经验，你将进展得更快，专注于 JavaScript 与你使用过的其他语言之间的差异。完成这一部分后，你将拥有一套系统的 JavaScript 技能，尤其是从 jQuery 中获益最多的技能。
+
+- **第二部分**：在学习了 JavaScript 基础之后，第二部分的五章介绍了每个网页开发者都应该具备的 jQuery 技能。该部分的章介绍了 jQuery 的核心技能，接下来的三章专注于特效与动画、表单与数据验证、jQuery 插件以及 jQuery UI 组件。然后，最后一章展示了如何使用 jQuery 处理 Ajax 和 JSON，以便从 Web 服务器获取数据并将其添加到网页中而无需刷新整个页面。
+
+- **第三部分**：在完成第一、二部分后，你已经拥有了网页开发者都应该具备的 JavaScript 和 jQuery 技能。然后，第三部分的六章将把 JavaScript 技能提升到高度。在这里，你将学习如何处理数字、字符串和日期……如何使用正则表达式处理异常……何时以及如何使用浏览器、Cookie、网络存储和数组……以及如何创建和使用自定义对象。最后一个章节介绍了专家级技能：在创建自定义 jQuery 插件时，如何使用闭包、模块模式和 IIFE。
+
+- 第三部分特别有趣的地方在于所有的示例——即你如何将正在学习的 JavaScript 技能与 jQuery 技能结合使用。因为这正是现实世界编码应用的方式，这显然是学习高级 JavaScript 技能的最佳方法。然而，我们还没有见过其他书籍是以这种方式结合 JavaScript 和 jQuery 的。
+
+# 为什么通过这本书你会学得更快、更好
+
+与我们所有的书籍一样，本书具有你在其他竞争读书中找不到的特点。这就是为什么我们相信，通过我们的书学习比这里的任何书都更快、更好。以下是其中的几个特点：
+
+- 本书旨在教你工作所需的技能，而不会在可能不需要的技能上浪费时间。这听起来很简单，但大多数 JavaScript 书要么用你永远用不到的信息让你目不暇接，要么通过回避所有复杂性来使主题浅化。例如，本书向你展示了使用 JavaScript 进行 DOM 脚本的基础知识，然后展示了如何使用 jQuery 进行 DOM 脚本——这是目前开发 JavaScript 应用的最佳方法。
+
+- 如果你翻阅这本书，你会发现所有信息都是以“成对页面”的形式呈现，右页是核心语法、指南和示例，左页则提供视角和额外解释。这有助于你通过阅读更少的内容来学得更快……而且当你回忆某项操作方法时，这是理想的参考格式。
+
+- 为了向你展示 JavaScript 和 jQuery 如何工作，本书展示了 50 个完整的 JavaScript 和 jQuery 应用，范围从简单到复杂不等。更棒的是，从第二部分开始，每个应用都同时使用了 JavaScript 和 jQuery——这是开发 JavaScript 应用的最佳方法。我们认为，学习完整应用程序的代码对于整个学习过程至关重要……你会在其他 JavaScript 和 jQuery 书中找不到像我们这样的程序。
+
+- 当然，本书还展示了数十个短示例，因此很容易找到展示如何实现你想要目标的示例。更棒的是，由于我们采用了成对页面设计，比那些示例嵌入正文的传统书籍更容易让你找到你正在寻找的示例。
+
+- 与我们所有的书籍一样，本书的每章末尾都有练习，让你通过实践所学知识来获得操作经验。这些练习还鼓励你实验并以新的方式应用所学内容……正如你在工作中必须做到的那样。
+
+# 你需要什么软件
+
+开发 JavaScript 应用，你可以使用任何文本编辑器。包含语法高亮和自动补全的文本编辑器将帮助你更快地开发应用程序且错误更少。这就是为什么我们向 Windows 和 Mac OS 用户都推荐 `Aptana Studio 3`。尽管 `Aptana` 是免费的，但它提供了许多强大的功能。
+
+然后，为了测试网页，我们建议你使用 Google 的 Chrome 浏览器进行主要测试。正如你将看到的，Chrome 的开发者工具具有测试和调试你的 JavaScript 应用的卓越功能。
+
+如果你需要任何帮助，请访问我们的网站 `www.murach.com`。在那里，你将找到帮助你起步的资源。
+
+# 第 1 章 Web 开发简介
+
+本章介绍了开发 JavaScript 应用所需的背景概念、术语和技能。这包括对所需的 HTML 和 CSS 技能的快速回顾。还包括一个关于如何使用 `Aptana Studio 3` 的快速教程，这是我们用于开发本书中 JavaScript 应用的 IDE。
+
+如果你具有一些 Web 开发经验，应该通过跳过已经熟悉的话题来快速阅读本章。但如果你是 Web 开发的新手，你应该花时间掌握本章的概念和术语。
+
+## Web 应用是如何运作的
+
+Web 应用由许多组件组成，这些组件共同工作，将应用程序带到你的计算机或移动设备上。在开始开发 JavaScript 应用之前，你应该对这些组件如何协同工作有一个基本的了解。
+
+### Web 应用的组件
+
+图 1-1 所示的 Web 应用由客户端和 Web 服务器组成。客户端是使用 Web 应用的计算机、平板电脑和移动设备。它们通过浏览器访问网页。Web 服务器保存着构成 Web 应用的文件。
+
+网络是一个允许客户端和服务器进行通信的系统。互联网是由许多较小网络组成的巨大网络。在像图中这样的图表中，“云”代表连接客户端和服务器的网络或互联网。
+
+通常情况下，你不需要知道云是如何工作的。但你应该对发生的情况有一个大致的了解。
+
+首先，网络可以按大小进行分类。局域网（LAN）是彼此靠近的计算机的小网络，可以在短距离内通信。局域网中的计算机通常位于同一栋建筑或相邻建筑内。这种网络通常被称为内网，它可以用于运行仅供员工使用的 Web 应用。
+
+相比之下，广域网（WAN）由多个连接的局域网组成。为了将信息从一个客户端传递到另一个客户端，路由器决定哪个网络距离目的地最近，并通过该网络发送信息。广域网可以由一家公司私有，也可以由公司共享。
+
+互联网服务提供商（ISP）拥有连接到互联网的广域网的公司。ISP 向需要连接互联网的公司租赁网络访问权限。
+
+**Web 应用的组件**
+
+- Web 应用由客户端、Web 服务器和网络组成。
+- 客户端使用程序作为 Web 浏览器从 Web 服务器请求网页。今天，客户端可以是计算机、像 iPhone 这样的手机或像 iPad 这样的平板电脑。
+- Web 服务器向浏览器返回请求的页面。
+- 网络连接客户端和 Web 服务器。
+- 内网是连接彼此靠近计算机的局域网（LAN），通常位于同一栋建筑内。
+- 互联网是由许多广域网（WAN）组成的网络，每个广域网又由两个或多个局域网组成。今天，互联网通常被称为“云”，这意味着你不需要理解它的工作原理。
+- 互联网服务提供商（ISP）拥有连接到互联网的广域网。
+
+### 静态网页是如何处理的
+
+如图 1-2 所示的静态网页是每次被请求时都不会改变的网页。这种网页在浏览器请求时，直接从 Web 服务器发送到浏览器。你可以通过查看地址栏中的扩展名来识别静态页面。如果扩展名是 `.htm` 或 `.html`，它可能就是静态网页。
+
+此图展示了 Web 服务器如何处理静态网页请求。该过程是从客户端在浏览器中请求网页开始的。要实现这一点，用户可以在浏览器地址栏中输入页面地址，或者点击当前页面中指定要加载的页面的链接。
+
+无论何种情况，Web 浏览器都会构建网页请求并将其发送到 Web 服务器。这种请求被称为 HTTP 请求，使用超文本传输协议（HTTP）格式化，让 Web 服务器知道请求的是哪个文件。
+
+当 Web 服务器接收到 HTTP 请求，它从磁盘驱动器检索所需的文件。该文件包含请求页面的 HTML（超文本标记语言）。然后，Web 服务器作为 HTTP 响应的一部分将文件发回浏览器。
+
+**http://www.modulemedia.com/ourwork/index.html 上的静态网页**
+
+![](img/32b24cb9657418b8429a4117bd539786_26_0.png)
+
+**Web 服务器如何处理静态网页**
+
+![](img/32b24cb9657418b8429a4117bd539786_26_1.png)
+
+**描述**
+
+- 超文本标记语言（HTML）是用于定义应用程序网页内容的语言。
+- 静态网页是存储在 Web 服务器上且不会更改的 HTML 文档。静态网页的文件名具有 `.htm` 或 `.html` 扩展名。
+- 当用户请求静态网页时，浏览器会向 Web 服务器发送一个 HTTP 请求，其中包含所请求的文件名。
+- 当 Web 服务器接收到请求时，它会获取网页的 HTML，并将其作为 HTTP 响应的一部分发送回浏览器。
+- 当浏览器接收到 HTTP 响应时，它将把 HTML 渲染成在浏览器中显示的网页。
+
+### 动态网页如何处理
+
+像图 1-3 所示的动态网页是每次被请求时由 Web 服务器上的程序或脚本创建的页面。该程序或脚本由应用服务器根据随 HTTP 请求一起发送的数据执行。在这个示例中，HTTP 请求识别了要显示的书籍。然后，程序或脚本从数据库服务器检索了该书籍的图像和数据。
+
+图中的图显示了 Web 服务器如何处理动态网页。该过程从用户在 Web 浏览器中请求页面开始。要做到这一点，用户可以在浏览器的地址栏中输入页面的 URL、点击指定要加载动态页的链接，或点击提交包含应处理的动态页表单的按钮。
+
+在每情况下，Web 浏览器都会构建 HTTP 请求并将其发送到 Web 服务器。该请求包含了处理请求所需的所有内容。例如，如果用户在表单中输入了数据，这些数据将包含在 HTTP 请求中。
+
+当 Web 服务器接收到 HTTP 请求时，服务器检查请求页面的文件扩展名，以识别应处理请求的应用程序服务器。然后，Web 服务器将请求转发到处理该类型网页的应用程序服务器。
+
+接下来，应用服务器从硬盘中检索适当的程序或脚本。它还会加载用户提交的任何数据。然后，它执行脚本。随着脚本的执行，它生成网页的 HTML。如有必要，脚本将从数据库服务器请求数据，并将该数据作为其正在生成的网页的一部分。在应用服务器上进行的处理可以被称为服务器端处理。
+
+脚本执行完成后，应用服务器将动态生成的 HTML 发送回 Web 服务器。然后，Web 服务器将 HTML 作为 HTTP 响应的一部分发送回浏览器。
+
+当 Web 浏览器接收到 HTTP 响应时，它渲染 HTML 并显示网页。但请注意，Web 浏览器无法判断 HTTP 响应中的 HTML 是用于静态页面还是动态页面的。它只是直接渲染 HTML。
+
+当页面显示时，用户可以查看内容。然后，当用户请求另一个页面时，该过程将重新开始。从请求网页到服务器向客户端发送响应的过程被称为往返（round trip）。
+
+**amazon.com 上的动态网页**
+
+![](img/32b24cb9657418b8429a4117bd539786_28_0.png)
+
+**Web 服务器如何处理动态网页**
+
+![](img/32b24cb9657418b8429a4117bd539786_28_1.png)
+
+**描述**
+
+- 动态网页是由运行在服务器上的程序或脚本生成的网页。
+- 当 Web 服务器接收到对动态网页的请求时，它会查找以确定由哪个应用程序服务器处理该请求。
+- 当应用服务器接收到请求时，它运行指定的脚本。通常脚本会使用从 Web 浏览器获取的数据从数据库服务器获取适当的数据。该脚本还可以将接收到的数据存储在数据库中。
+- 当应用服务器完成数据处理后，它生成网页的 HTML 并返回给 Web 服务器。然后，Web 服务器将 HTML 作为 HTTP 响应的一部分返回给 Web 浏览器。
+
+### 如何使用 JavaScript 进行客户端处理
+
+与动态网页的服务器端处理不同，JavaScript 是一种提供客户端处理的脚本语言。例如，在网页图 1-4 中，JavaScript 用于在不使用服务器端处理的情况下更改显示的图像。
+
+为了实现这一功能，在请求页面时，所有所需的图像都会被加载到浏览器的缓存中。然后，如果用户点击衬衫下方的任意一个颜色切换，衬衫图像就会更改为正确颜色的那个。这被称为图像切换（image swap）。同样，如果用户将鼠标移动到衬衫上，显示衬衫正面的图像将取消高亮。
+
+**JavaScript 规范**
+
+```
+http://kangax.github.io/compat-table/es6/
+```
+
+**描述**
+
+- Netscape 在 1995 年发明了 JavaScript，并在 1996 年将其交给欧洲计算机厂商协会 (ECMA) 进行标准化。ECMAScript 标准定义了 JavaScript 等脚本语言应该遵循的标准。
+- 所有现代浏览器都支持所有 ES5 特性。然而，ES2015 和 ES2016 的特性支持情况并不十分一致。你可以使用上述 URL 中的表格来查看浏览器支持哪些特性。
+- 在本章的稍后部分，你将学习如何提供跨浏览器兼容性，以便你的网页能够在尽可能多的浏览器中运行。
+
+# JavaScript 应用程序的组件
+
+当你开发 JavaScript 应用程序时，使用 HTML 来定义页面的内容和结构。使用 CSS 对这些内容进行格式化。使用 JavaScript 进行客户端处理。接下来的三幅图通过电子邮件列表应用展示了这一点。
+
+图 1-6 显示了该应用程序的用户界面。它要求用户输入三个项目，然后点击“加入列表”按钮。文本框右侧的星号表示这些输入是必填的。
+
+当用户点击按钮时，JavaScript 会检查输入以确保它们有效。如果有效，输入将发送到 Web 服务器进行服务器端处理。无效，则会显示消息让用户更正输入。这是一种常见的 JavaScript 应用，称为数据验证，它可以在输入无效时减少往返服务器的次数。
+
+你可能已经注意到图中的用户界面并不怎么好看。这是一个纯 HTML 文档，没有任何格式化。不过，在下一幅图中，你将看到应用某些 CSS 如何提升它的外观。
+
+## HTML 部分
+
+超文本标记语言 (HTML) 用于定义网页的内容和结构。在图 1-6 中，你可以看到电子邮件列表应用的 HTML。通常情况下，本书假设你已经熟悉 HTML，但这里有几个重点。
+
+首先，注意此文档以 `<!DOCTYPE>` 声明开头。这个声明是你在 HTML5 中使用的声明，你必须按照所示方式精确编写代码。如果你已经在使用 HTML5，你会发现这个声明比早期 HTML 版本的声明简单得多。在书中，所有应用程序都使用 HTML5。
+
+其次，在 HTML 文档的 `<head>` 部分，你可以看到一个 `<meta>` 元素，它指定 UTF-8 是页面使用的字符编码。有一个 HTML 注释指示任何 `<link>`、`<style>` 和 `<script>` 元素都属于 `<head>`。在下一幅图中，你将看到一个 `<link>` 元素，它指定了应该用于格式化该 HTML 的 CSS 文件。在之后的图中，你将看到一个 `<script>` 元素，它指定了处理用户输入的 JavaScript 文件。
+
+第三，在 `<body>` 部分，你可以看到 `<main>` 元素的使用。它是我们在本书中将使用的 HTML5 元素之一。在该元素内部，你可以看到 `<h1>`、`<form>`、`<input>` 和 `<span>` 元素的使用。在书中，正如你在这里看到的，我们将 `<script>`、`<main>` 和 `<h1>` 等 HTML 元素称为 link、script 和 h1 元素。然而，为了防止在引用 `<p>` 和 `<a>` 等单字母元素时产生混淆，我们将字母放在括号中，例如 `<p>` 元素或 `<a>` 元素。
+
+**未应用 CSS 的浏览器中的 HTML 文件**
+
+![](img/32b24cb9657418b8429a4117bd539786_34_0.png)
+
+**名为 index.html 的 HTML 文件代码**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Join List</title>
+</head>
+<body>
+    <h1>Email List</h1>
+    <form action="join.html" method="get">
+        <label for="address">Email Address:</label>
+        <input type="text" id="address">
+        <span>*</span>
+        <label for="name">First Name:</label>
+        <input type="text" id="name">
+        <span>*</span>
+        <input type="submit" value="Join">
+    </form>
+</body>
+</html>
+```
+
+**描述**
+
+- HTML（超文本标记语言）用于定义网页的内容和结构。
+- 要向页面添加 CSS，你需要在 `<head>` 中链接 `<link>` 元素。
+
+## CSS 部分
+
+**应用 CSS 后在浏览器中显示的网页**
+
+![](img/32b24cb9657418b8429a4117bd539786_36_0.png)
+
+**HTML 中 head 元素中用于应用 CSS 文件的 link 元素**
+
+```html
+<link rel="stylesheet" href="email_list.css">
+```
+
+**文件名为 email_list.css 的 CSS 文件代码**
+
+```css
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  margin: 0 auto;
+  width: 670px;
+  border: 3px solid blue;
+  padding: 0 2em;
+}
+h1 {
+  color: blue;
+}
+label {
+  float: left;
+  width: 1em;
+  text-align: right;
+}
+input {
+  margin-left: 1em;
+  margin-bottom: .5em;
+}
+span {
+  color: red;
+}
+```
+
+**描述**
+
+- 级联样式表 (CSS) 用于通过指定页面的字体、颜色、边框、间距和布局来控制网页的显示方式。
+
+
+
+# JavaScript
+
+1-8 显示了当用户点击“加入 (Join)”按钮后，如果 JavaScript 发现任何无效数据，该应用程序在浏览器中的外观。在这里，你可以看到错误信息显示在第二个和第三个文本框输入的右侧。换句话说，JavaScript 实际上更改了 `span` 元素的内容。
+
+当 JavaScript 更改页面的 HTML 时，这被称为 DOM 脚本（DOM scripting）。这是因为 JavaScript 实际上是在更改浏览器在页面加载时生成的文档对象模型（或 DOM）。该 DOM 代表了在 HTML 中编码的所有元素和属性。然后，当 JavaScript 更改 DOM 的任何方面时，更改会立即应用到浏览器显示上。
+
+在浏览器显示之后，此图显示了将外部 JavaScript 文件与 HTML 连接的 `script` 元素。该元素通常编码在 HTML `head` 元素中。
+
+然后，此图显示了本章的 JavaScript。由于你将在接下来的章节中学习所有的代码，你现在可能想跳过这些代码。但如果你有任何编程经验，可能值得快速看一下。在这种情况下，这里有几个要点。
+
+首先，这段代码由三个函数组成：一个 `$` 函数，一个用户点击按钮时执行的 `joinList()` 函数，以及一个 DOM 加载到浏览器后运行的函数。然后，在 `joinList()` 中，你可以看到四个 `if-else` 语句，它们提供了该应用程序的大部分逻辑。
+
+在这里，你可以看到 `if-else` 结构与 Java、C# 或 PHP 等现代编程语言中的结构相似。你还可以看到 PHP 中声明变量 (`var`) 和给变量赋值的方式与其它编程语言的方式相似。
+
+JavaScript 的不同之处在于，它提供了允许你修改 DOM 的方法和属性。例如，`$` 函数使用 `getElementById()` 方法来获取传递给函数的 id 对应的对象。然后，`joinList()` 中的第一条语句使用 `$` 函数获取代表 HTML 中第一个框的对象。该语句使用 `value` 属性获取用户在那个框中输入的值。
+
+稍后，`if` 语句检查该值是否为空字符串 (`""`)，这意味着用户没有输入任何内容，它会将该文本框的 `span` 元素替换为错误消息。为了做到这一点，它使用了以下代码：
+
+```javascript
+$("email_address1_error").firstChild.nodeValue =
+  "This field is required.",
+```
+
+尽管这段代码现在看起来可能令人生畏，但你会发现它都是非常容易管理的。你还会意识到，DOM 脚本是 JavaScript 获取力量的来源。
+
+## 使用 JavaScript 进行数据验证的浏览器中网页
+
+![](img/32b24cb9657418b8429a4117bd539786_38_0.png)
+
+HTML `head` 元素中用于添加 JavaScript 文件的 `script` 元素
+
+```html
+<script src="email_list.js"></script>
+```
+
+名为 `email_list.js` 的 JavaScript 文件代码
+
+```javascript
+var $ = function(id) {
+  return document.getElementById(id);
+}
+var joinList = function() {
+  var emailAddress1 = $("email_address1").value;
+  var emailAddress2 = $("email_address2").value;
+  var isValid = true;
+
+  if (emailAddress1 == "") {
+    $("email_address1_error").firstChild.nodeValue = "This field is required";
+    isValid = false;
+  } else { 
+    $("email_address1_error").firstChild.nodeValue = ""; 
+  }
+
+  if (emailAddress1 != emailAddress2) {
+    $("email_address2_error").firstChild.nodeValue = "This entry must equal first entry.";
+    isValid = false;
+  } else { 
+    $("email_address2_error").firstChild.nodeValue = ""; 
+  }
+
+  if ("first_name" == "") {
+    $("first_name_error").firstChild.nodeValue = "This field is required.";
+    isValid = false;
+  } else { 
+    $("first_name_error").firstChild.nodeValue = ""; 
+  }
+
+  if (isValid) {
+    // submit the form
+    $("form").submit();
+  }
+}
+window.onload = function() {
+  joinList();
+};
+```
+
+## 使用 header、main、footer 结构的页面
+
+```html
+<body>
+  <header>
+    <h1>San Joaquin Hall</h1>
+  </header>
+  <main>
+    <p>Welcome to San Joaquin Hall. We have some fascinating for you!</p>
+  </main>
+  <footer>
+    <p>&copy; San Joaquin Hall.</p>
+  </footer>
+</body>
+```
+
+## 主要 HTML5 元素
+
+| 元素 | 内容 |
+|---|---|
+| header | 页面的页头 |
+| main | 页面的主要内容 |
+| section | 文档的一个章节 |
+| aside | 与内容相关的页面部分 |
+| nav | 包含链接的页面部分 |
+| figure | 图像、表格或其他图组件 |
+| footer | 页面的页脚 |
+
+## 在浏览器中显示的页面
+
+![](img/32b24cb9657418b8429a4117bd539786_40_0.png)
+
+## 描述
+
+- 级联样式表 (CSS) 通过指定页面的字体、颜色、边框、间距和布局来控制网页的显示方式。
+- HTML5 提供了你应该用于构建网页内容的语义元素。
+- 现代浏览器支持所有的 HTML5 元素。如果你提供了图 1-17 所示的跨浏览器兼容，它们在旧浏览器中也可以工作。
+- 本书也使用了标准的 HTML 元素，如用于标题的 `h1` 和 `h2` 元素、用于图片的 `img` 元素、用于链接的 `a` 元素以及用于段落的 `p` 元素。
+
+### 如何使用语义元素
+
+如果你使用 HTML 有了一段时间，你对 `div` 元素非常熟悉。它传统上用于将 HTML 文档划分为由 `id` 属性标识的部分。然后，CSS 可以对这些划分应用格式。
+
+但现在 HTML5 可用了，`div` 元素不应用于构建文档。相反，它们应该只在 HTML5 语义元素不合适时使用。
+
+但注意，`div` 元素经常用于 JavaScript 应用程序。例如，如果一个 `section` 元素包含三个 `h2` 元素，每个元素后面跟着一个 `div` 元素，那么当点击之前的标题时，可以使用 JavaScript 显示或隐藏该 `div` 元素。这种结构由图 1-10 中的第一个示例说明，你将在第 6 章中看到它是如何工作的。
+
+## div 和 span 元素
+
+| 元素 | 描述 |
+| --- | --- |
+| div | 块级元素，为其他元素提供容器。 |
+| span | 内联级元素，允许你识别可以使用 CSS 格式化的文本。 |
+
+## JavaScript 应用中 HTML 中的 div 元素
+
+```html
+<section id="faqs">
+  <h1>jQuery FAQs</h1>
+  <h2>What is JavaScript?</h2>
+  <div>
+    // contents
+  </div>
+  <h2>What is jquery?</h2>
+  <div>
+    // contents
+  </div>
+  <h2>Why is jquery becoming so popular?</h2>
+  <div>
+    // contents
+  </div>
+</section>
+```
+
+## JavaScript 应用中 HTML 中的 span 元素
+
+```html
+<label for="email_address1">Email Address:</label>
+<input type="text" id="email_address1" name="email_address1">
+<span id="email_address1_error">*</span></span><br>
+
+<label for="email_address2">Re-enter Email Address:</label>
+<input type="text" id="email_address2" name="email_address2">
+<span id="email_address2_error">*</span></span><br>
+
+<label for="first_name">First Name:</label>
+<input type="text" id="first_name" name="first_name">
+<span id="first_name_error">*</span></span><br>
+```
+
+## 描述
+
+- 在 HTML5 之前，`div` 元素用于定义文档主体内的结构。这些 `div` 元素的 `id` 随后被 CSS 用于对元素应用格式化。
+- 如今，应该使用 HTML5 语义化元素使页面结构更加明显。然而，你仍然会 `div` 元素来定义 JavaScript 应用中使用的代码块。
+- 在 HTML5 之前，`span` 元素经常用于识别可以对 `span` 应用格式化的文本部分。
+- 如今，更好的做法是使用 `span` 元素来识别内容。你仍然会在某些 JavaScript 应用中使用 `span` 元素，例如图 1-6 到 1-8 中的电子邮件列表应用。
+
+图 1-10 如何使用 div 和 span 元素
+
+## 如何使用基础 HTML 属性
+
+图 1-11 展示了 JavaScript 应用中常用的 HTML 属性。你应该已经熟悉了标识一个 HTML 元素的 `id` 属性，以及可以应用于多个 HTML 元素的 `class` 属性。你还应该熟悉将 `label` 与输入元素关联的 `for` 属性，以及用于为元素提供提示（tooltip）的 `title` 属性。
+
+当你使用 JavaScript 时，通常会使用 `name` 属性，以便服务器端代码可以访问给它的数据。你有时会添加或使用 `title` 属性来提供与元素相关的文本。
+
+在实践中，你通常对元素的 `id` 和 `name` 属性使用相同的值。例如，此图中的示例使用“email”作为文本框的 `id` 和 `name` 属性的值。这使得属性值更易记忆。
+
+## 基础 HTML 属性
+
+| 属性 | 描述 |
+| --- | --- |
+| id | 为元素指定唯一标识符，可以通过 CSS 引用。 |
+| class | 为元素指定一个或多个可以通过 CSS 引用的类名，相同的名称可以用于多个元素。要编写多个类的代码，请用空格分隔类名。 |
+| name | 为元素指定唯一名称，通常供服务器端代码使用，也可以供 JavaScript 使用。 |
+| for | 在 `label` 元素中，此属性指定它所应用的控件的 `id`。 |
+| title | 指定有关元素的额外信息。对于某些元素，当用户鼠标悬停在元素上时，`title` 会出现在提示框中。 |
+
+## 使用这些属性的 HTML
+
+```html
+<body>
+  <h1>San Joaquin Valley Town Hall</h1>
+  <h2 class="first_2">Welcome to San Joaquin Valley Town Hall.</h2>
+  <p>Please enter your e-mail address to subscribe to our newsletter.</p>
+  <form id="email" name="email" action="email.html" method="get">
+    <label for="email">E-Mail:</label>
+    <input type="text" id="email" name="email" title="Enter e-mail address here.">
+    <input type="button" value="Subscribe">
+  </form>
+</body>
+```
+
+浏览器中显示文本框提示的 HTML ![](img/32b24cb9657418b29a11bd539786_44.png)
+
+## 描述
+
+- 属性由属性名、等号以及单引号或双引号括的属性值组成。
+- `id` 和 `class` 属性通常用于应用 CSS 格式。
+- `name` 属性通常供服务器端代码访问发送给它的数据，但此属性也可供 JavaScript 使用。
+- `label` 元素中的 `for` 属性用于识别它应用的控件。
+
+图 1-11 如何使用基础 HTML 属性
+
+# 本书所需的 CSS 技能
+
+假设你已经熟悉 CSS，后续主题将对本书所需的技能进行快速回顾。如果你还没有这些技能，可以从后续主题中学习，我们建议你在学习 JavaScript 时使用 Murach 的 HTML5 和 CSS3 作为参考。
+
+## 如何为 HTML 页面提供 CSS 样式
+
+图 1-12 显示了为 HTML 文档包含 CSS 样的两种方法。首先，你可以在 HTML 文档的 `head` 部分编写 `link` 元素来包含页面 CSS。这被称为外部样式表（external stylesheet），适用于书中的大多数应用程序。
+
+其次，你可以在 `head` 部分编写 `style` 元素来包含页面的 CSS。这被称为内联样式（embedded styles）。通常，使用外部样式表对于单个页面更方便。在某些情况下，你可能希望同时使用外部样式表和内联样式。在这些情况下，样式从第一个样式表应用到最后一个，然后应用内联样式。
+
+## 提供样式的两种方法
+
+在 `head` 部分编写 `link` 元素以使用外部样式表：
+
+```html
+<link rel="stylesheet" href="styles/main.css">
+```
+
+在 `head` 部分嵌入样式：
+
+```html
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+  }
+  h1 {
+    font-size: 250%;
+  }
+</style>
+```
+
+包含两个样式表的 `head` 元素：
+
+```html
+<head>
+  <title>San Joaquin Valley Hall</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/css.css">
+</head>
+```
+
+## 描述
+
+- 当你使用外部样式表时，将内容（HTML）与格式（CSS）分开。这使得多个页面使用相同的样式变得简单。
+- 如果你使用内联样式，在其他文档中使用之前必须复制样式。
+- 如果相同属性规则应用于同一个元素，最后一个规则将覆盖之前的规则。
+- 当你指定外部文件的 URL 时，它是相对于当前文件的。
+
+图 1-12 如何为 HTML 页面提供 CSS 样式
+
+## 如何编写基础 CSS 选择器
+
+图 1-13 展示了如何编写基础 CSS 选择器以应用 HTML 元素的样式。首先，此图显示 HTML 文档的 `body` 包含 `main` 和 `footer`。在这里，`main` 元素中的 `<p>` 元素具有值为“blue”的 `class` 属性。此外，`footer` 中的 `<p>` 元素具有值为“copyright”的 `id` 属性和两个值的 `class` 属性：“blue”和“right”。这意味着它分配给了类。
+
+第一组示例中的四个样式规则是类型选择器（type selectors）。编写类型选择器只需编写元素的名称。结果是第一个样式规则选择 `body` 元素。第二个样式规则选择 `main` 元素。第三个样式规则选择 `h1` 元素，第四个样式规则选择所有 `<p>` 元素。
+
+在这些示例中，第一个样式规则更改了 `body` 的字体，所有元素都继承此更改。此样式规则还设置了 `body` 的宽度并在浏览器中居中。然后，第二个样式规则在 `main` 元素周围加上边框并在边框内部添加内边距（padding）。它还让 `main` 元素成为块级元素。这是必要的，因为 IE 不将 `main` 元素视为块级元素。
+
+第三个样式规则使用类型选择器设置标题的边距。在这种情况下，除了底部边距外，所有边距都被设置为零。段落的样式规则设置了段落顶部、底部和左侧的边距。这就是为什么 `main` 元素中的段落有缩进。
+
+第二组示例中的样式规则使用 `id` 选择器（id selector）通过其 `id` 选择元素。要做到，选择器是一个井号 (`#`) 后跟唯一标识一个元素的 `id` 值。结果是，此样式规则选择了 `id` 为“copyright”的 `<p>` 元素。然后，它的属性声明将段落的字体设置为默认字体大小的90%。
+
+最后一组示例中的两个样式规则使用类选择器（class selectors）通过类选择 HTML 元素。要做到，选择器是一个点 (`.`) 后跟类名。结果是，第一个样式规则选取了所有分配给“blue”类的元素，即所有三个 `<p>` 元素。第二个样式规则选择了所有分配给“right”类的元素。那是 `footer` 中的段落。
+
+一个关键点是，类属性可以在页面上的多个元素上具有相同的值。那么，如果你为该类编写选择器，它将用于格式化类类的所有元素。相比之下，元素的 `id` 必须是唯一的，`id` 选择器只能用于格式化单个元素。
+
+你可能已经知道，在使用 CSS 时还有其他选择器。但此图中的选择器可以让你开始，当书中的应用程序需要其他选择器时，将对这些选择器进行详细解释。
+
+## 可按元素类型、ID 或类选择的 HTML
+
+```html
+<body>
+  <main>
+    <h1>演讲者阵容</h1>
+    <p class="blue">10月19日：Jeffrey Toobin</p>
+    <p class="blue">11月16日：Andrew Ross Sokin</p>
+  </main>
+  <footer>
+    <p id="copyright" class="blue right">版权所有 SJV 市政厅</p>
+  </footer>
+</body>
+```
+
+## 按元素类型、ID 和类选择的 CSS 样式规则
+
+### 按类型选择的元素
+
+```css
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 400px;
+  margin: 1em auto;
+}
+main {
+  display: block;
+  padding: 1em;
+  border: 2px solid black;
+}
+h1 { margin: 0 0 .25em; }
+p { margin: .25em 0 .25em 3em; }
+```
+
+### 通过 ID 选择单个元素
+
+```css
+#copyright { font-size: 90%; }
+```
+
+### 通过类选择两个元素
+
+```css
+.blue { color: blue; }
+.right { text-align: right; }
+```
+
+## 在浏览器中显示的的元素
+
+![](img/32b24cb9657418b8429a4117bd539786_48_0.png)
+
+## 描述
+
+- 通过命名元素来为所有特定类型的元素编写选择器。这被称为类型选择器。
+- 通过编写井号（`#`）后跟 `id` 值来为具有 `id` 属性的元素编写选择器。这被称为 ID 选择器。
+- 通过编写点（`.`）后跟类名来为具有类属性的元素编写选择器。然后，样式规则将适用于所有具有该类名的元素。这被称为类选择器。
+
+图 1-13 如何编写基础 CSS 选择器
+
+## 如何编写 CSS 样式规则
+
+图 1-14 展示了本章之前介绍的“邮件列表”应用的 CSS。这是书中 CSS 的典型示例。由于本书的重点是 JavaScript 而不是 CSS，因此书中应用的 CSS 通常是有限的。例如，示例中的 CSS 不需要 `id` 或类选择器。
+
+为了确保我们使用的是相同的术语，每条样式规则由一个选择器、一组大括号 `{}` 以及大括号内的一个或多个属性声明组成。此外，每个属性声明由一个属性名、一个冒号、规则的值或多个值以及一个结束分号组成。
+
+例如，第一条样式规则针对 `body` 元素。它由六个属性声明组成，用于设置 `body` 的字体、背景颜色、边距、宽度、边框和内边距。在这里，`margin` 属性的声明将顶部和底部边距设置为零，左右边距设置为“auto”，这意味着 `body` 将浏览器窗口中居中。`padding` 属性的声明将内容周围两侧的内边距设置为 2em，底部设置为 1em。（em 是一个排版术语，约等于大写字母 M 的宽度。）
+
+第二条样式规则针对 `h1` 元素，其属性声明将字体颜色设置为蓝色。然后，第三条样式规则针对 `label` 元素，将标签浮于输入元素的左侧，设置标签宽度为 11em，并将标签中的文本右对齐。第四条样式规则将输入元素的左边距设置为 1em，以便在标签和文本框之间留出间隔，并将底边距设置为 .5em，以便在标签和输入元素的行之间留出垂直间距。
+
+最后一条样式规则针对 `input` 元素之后的 `span` 元素。它只是将这些元素中的文本颜色设置为红色，这些元素将显示应用程序的错误信息。
+
+除了对 CSS 的简要介绍，本书将解释与应用中的 JavaScript 相关的任何 CSS。所以现在，如果你理解了图中的样式规则，就可以继续下学习了。
+
+## 本书中典型应用的 CSS 文件
+
+```css
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  margin: 0 auto;
+  width: 670px;
+  border: 3px solid blue;
+  padding: 0 2em 1em;
+}
+h1 {
+  color: blue;
+}
+label {
+  float: left;
+  width: 11em;
+  text-align: right;
+}
+input {
+  margin-left: 1em;
+  margin-bottom: .5em;
+}
+span {
+  color: red;
+}
+```
+
+## 描述
+
+- 因为本书的重点是 JavaScript 而不是 CSS，所以书中使用的 CSS 通常是简单的。我们只应用足够的 CSS 来让每个应用看起来良好且运行正常。
+- 事实上，对于书中的大多数应用，你不需要理解 CSS，因此它甚至不会被显示。每当 CSS 对理解 JavaScript 应用至关重要时，将进行详细解释。
+- 至少，你应该知道 HTML 文档的 CSS 由一个或多个样式规则组成。每条样式规则都以样式规则的选择器开始，后面跟着一组大括号 `{ }`。在大括号内是一个或多个属性声明。
+
+图 1-14 如何编写 CSS 样式规则
+
+## 如何在代码中查找错误
+
+当你在测试最简单的应用程序时，代码中可能会出现错误。当发生这种情况时，JavaScript 可能完全不会运行，或者运行一小会儿后停止。这就是为什么图 1-16 向你展示了如何在你的代码中查找错误。
+
+如图所示，如果 JavaScript 应用程序没有运行或停止运行，你首先需要打开开发者工具。虽然有多种方法可以实现这一点，但你大多数时候都会使用 `F12` 键。这就是为什么 Chrome 以及其他浏览器的开发者工具通常被称为 F12 工具。
+
+接下来，你打开开发者工具的“控制台”（Console）面板，查看是否有错误消息。在图中，控制台显示了当用户启动邮件列表（Email List）应用程序并点击“加入我们的列表”（Join our List）按钮没有任何反应时发生的错误消息。
+
+然后，如果你点击错误消息右侧的链接，将显示 JavaScript 源代码，并高亮显示导致错误的语句。在这种情况下，问题是 `"email_address"` 应该是 `"email_address2"`，因为 HTML 中第二个文本框的 `id` 是这个。
+
+在第 5 章中，你将学习更多关于测试和调试的知识，但在你的应用程序变得更加复杂之前，这些技术就是你所需要的。
+
+## 显示错误的已打开控制台面板的 Chrome
+
+![](img/32b24cb9657418b8429a4117bd539786_54_0.png)
+
+## 点击控制台面板中的链接后的源（Sources）面板
+
+![](img/32b24cb9657418b8429a4117bd539786_54_1.png)
+
+## 如何打开或关闭 Chrome 开发者工具
+
+- 要打开开发者工具，按下 `F12` 或 `Ctrl+Shift+I`。或者，点击浏览器右上角的菜单按钮，选择“更多工具 → 开发者工具”。
+- 要关闭开发者工具，点击工具面板右上角的“X”或按下 `F12`。
+
+## 如何找到导致错误的 JavaScript 语句
+
+- 点击“控制台”（Console）选项卡打开控制台面板。你应该能看到一条像上面的错误错误消息，并附有导致错误的代码行。
+- 点击错误消息右侧指示代码行的链接。这将打开“源”（Sources）面板，并显示包含该语句的 JavaScript 代码部分且该语句会被亮。
+
+## 描述
+
+- Chrome 的开发者工具提供了一些出色的调试功能，例如识别导致错误的 JavaScript 语句。
+- 因为你通常通过按下 `F12` 键来启动开发者工具，所以这些工具通常被称为 F12 工具。
+
+图 1-16 如何在代码中查找错误
+
+## 如何提供跨浏览器兼容性
+
+如果你希望你的网站尽可能被多的访问者使用，你需要确保你的网页与尽可能多的浏览器兼容。这被称为跨浏览器兼容性。这意味着你应该在尽可能多的浏览器上测试你的应用程序，包括表 1-17 中的六个浏览器。该表显示了这些浏览器在 HTML5 兼容性水平上的差异。（满分为 555 分。）
+
+今天，所有现代浏览器都支持 HTML5 语义元素以及 ECMAScript5，因此你在使用这些浏览器时不应该遇到任何问题。你可能需要担心的是旧版本的浏览器，特别是 IE9 之前的 Internet Explorer 版本。尽管尽管如此，这些浏览器只占市场的一小部分。Chrome 支持 ES2015+ 的绝大多数功能，但并非所有现代浏览器都支持。这就是为什么该图展示了让你的应用程序在大多数浏览器上运行的变通方案。
+
+第一个变通方案被称为注入 Web 页的 JavaScript shim（垫片），它为旧版浏览器提供了 HTML5 兼容性。你可以从托管开源软件的 CDN（内容分发网络）Web 服务器获取此 shim。该图中的第一个示例说明了这一点。要使用来自 CDN 的文件，你可以在页面 `head` 元素中标签的 `script` 属性上编写你的 URL。
+
+第二个变通方案是 `normalize.css` 样式表，它将修复当前浏览器之间的细微差异。要使用此样式，你需要下载它并将其作为所有网页的第一个样式表引入。
+
+第三个变通方案是用于 ECMAScript 兼容的一系列 shim 和 sham（伪垫片）文件。这些是 JavaScript 文件，可以使某些 ES5、ES2015 和 ES2016 特性在仅支持 ES3 的浏览器中运行。要实现此变通方案，你需要在 `head` 元素中的 `script` 标签中编写 CDN 的 URL。（与其他 URL 不同，最后一个导致产生最新 ES2016 shim 文件的 URL 被包含在内了。）建议你在使用 ES6 shim 文件时始终包含 ES5 shim 文件。
+
+注意，sham 文件包含了无法用 ES3 实现的 ECMAScript 特性。虽然这些文件可以防止你的应用程序在使用不支持的特性时抛出错误，但这可能不是你想要的。此外，一个 sham 依赖于它的 shim 文件，因此它必须在 shim 之后编写代码。
+
+第四个变通方案是使用转译器（transpiler），它将 ES2015+ 翻译为 ES5。你可能想使用转译器，因为 ES6 shim 并没有让 ES2015 中的新语法可用。流行的转译器是 Babel，它还有一个在线转译页面，可以让你看到翻译后的代码。注意，大多数转译器都翻译为 ES5，你仍然需要使用。
+
+你可能想使用转译器，因为 ES6 shim 并没有让 ES2015 中的新语法可用。流行的转译器是 Babel，它还有一个在线转译页面，可以让你看到翻译后的代码。注意，大多数转译器都翻译为 ES5，你仍然需要使用。
+
+当你在学习时，你不需要在旧浏览器上测试你的网页。然而，IE11 不支持 HTML5 元素，你可以使用 JavaScript shim 或 `normalize.css` 样式表来解决这个问题。
+
+## 现代浏览器及其 HTML5 评分 (www.html5test.com)
+
+| 浏览器 | 版本 | HTML5 评分 |
+|---|---|---|
+| Google Chrome | 52 | 492 |
+| Opera | 37 | 489 |
+| Mozilla Firefox | 48 | 461 |
+| Apple Safari | 9.1 | 370 |
+| Internet Explorer | 11 | 312 |
+| Microsoft Edge | 14 | 460 |
+
+## 用于 HTML5 兼容性的 JavaScript shim CDN
+
+```
+http://cdn.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js
+```
+
+## 下载 normalize.css 样式表的 URL
+
+```
+http://necolas.github.io/normalize.css/
+```
+
+## normalize.css 样式表的作用
+
+Normalize.css 是一个样式表，它对默认设置进行调整，以确保所有浏览渲染方式一致。
+
+## ECMAScript 兼容性 shim 和 sham 的 CDN
+
+```
+https://cdn.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js
+https://cdn.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-sham.min.js
+https://cdn.cloudflare.com/ajax/libs/es6-shim/0.34.2/es6-shim.min.js
+https://cdn.cloudflare.com/ajax/libs/es6-shim/0.34.2/es6-sham.min.js
+https://wzrd.in/standalone/es7-shim@latest
+```
+
+# 如何使用 Aptana 开发 JavaScript 应用
+
+由于 HTML、CSS 和 JavaScript 只是文本，你可以使用任何文本编辑器来创建 JavaScript 应用程序的文件。然而，更好的编辑器或集成开发环境（IDE）可以缩短开发时间并减少编码错误。在本书，我们使用了 Aptana Studio 3.0。它是一个运行在 Windows、Mac OS 和 Linux 上的免费 IDE，可以极大提高你的工作效率。
+
+在本书的附录中，你可以学习如何安装 Aptana。在随后的主题中，你还可以学习如何使用 Aptana 进行常见的开发功能操作。如果你倾向于使用其他编辑器，可以跳过这些主题。但即便如此，你可能也想浏览这些主题，因为它们能让你对 IDE 应该做什么有一个良好的了解。它们可能会鼓励你尝试一下 Aptana。
+
+## 如何创建或导入项目
+
+在 Aptana 中，一个项目由完整 Web 应用程序的文件夹和文件组成。一旦创建了项目，处理其文件夹和文件、为项目创建新文件等就会变得更加容易。
+
+要创建一个项目，请使用图 1-18 中的第一个命令并完成对话框。结果是一个命名的项目，它从应用程序的顶层文件夹开始。然后，你可以使用下一个图中显示的 App Explorer（应用资源管理器）窗口轻松访问应用程序的文件夹和文件。
+
+为了方便处理本书中的应用程序，我们建议将它们导入到一个包含所有书籍应用程序的 Aptana 项目中。要做到这一点，请使用此图中的第二个步骤。图中的对话框会将此位置下载的书籍应用程序导入：
+
+```
+c:/murach/javascript_jquery_book_apps
+```
+
+到名为 `JS_jQuery Book Apps` 的项目中。一旦完成，你就可以通过 App Explorer 窗口轻松地访问这些应用程序了。
+
+## Aptana 3.4 或更高版本中导入项目的对话框
+
+![](img/32b24cb9657418b8429a4117bd539786_58_0.png)
+
+## 如何创建一个新项目
+
+- 使用 `File`（文件） → `New`（新建） → `Web Project`（Web 项目）命令。
+
+## 如何使用 Aptana 3.4 或更高版本导入项目
+
+- 使用 `File`（文件） → `Import`（导入）命令显示导入对话框，点击 `Existing Folder`（现有文件夹）作为 `New Project`（新项目），并点击 `Next`（下一步）。
+- 在 `Promote to Project`（提升为项目）对话框中，浏览到应用程序的顶层文件夹，输入项目名称，并点击 `Finish`（完成）按钮。
+
+## 描述
+
+- 当你为开发和维护的 Web 应用程序设置项目时，Aptana 的效果最好。
+- 通常情况下，每个 Aptana 项目应该包含一个 Web 应用程序的文件夹和文件。但对于本书，你可以为所有应用程序设置一个项目，为所有练习设置一个项目，为所有练习答案设置一个项目。
+
+图 1-18 在 Aptana 中创建或导入项目
+
+## 如何处理文件
+
+图 1-19 显示了在创建项目后如何打开或关闭 HTML、CSS 或 JavaScript 文件。在这里，在 Aptana 左侧的 App Explorer 中显示了 JSQuery Books 项目。如果你创建了多个项目，可以使用此窗口顶部的下拉项目列表在项目之间进行切换。
+
+一旦打开了正确的项目，你可以通过点击文件夹旁边的 `▷` 符号来钻到你想要打开的文件。在这个示例中，`ch01` 和 `email_list` 文件夹已经展开，因此你可以看到 Email List 应用程序的四个文件。然后，要打开文件，只需双击它。
+
+当你在 Aptana 中打开文件时，它会在新标签页中打开。这意味着你可以同时打开几个文件，并通过点击标签页在不同文件之间切换。这使得在 HTML、CSS 和 JavaScript 文件之间来回切换变得简单。这也使得代码从一个文件复制到另一个文件变得简单。
+
+如果你想打开一个不属于项目的文件，可以使用此图中所示的方法任一。首先，你可以使用 Project Explorer（项目资源管理器）在计算机上找到该文件，然后双击它。其次，你可以使用 `File`（文件） → `Open`（打开）命令来打开文件。
+
+要关闭一个或多个文件，可以使用此图中所示的三种方法之一。这让你轻松关闭除当前正在处理的文件以外的所有文件。这可以帮助你避免修改错误文件的错误。
+
+此图最后显示了如何开始一个新文件。最重要的是根据文件是 HTML、CSS 还是 JavaScript 文件，使用相应的扩展名（`.html`、`.css` 或 `.js`）为文件命名。然后，Aptana 就会知道它是什么类型的文件，并在打开时将其编辑器调整为该类型文件的语法格式。
+
+在操作 Aptana 的过程中，你会发现它的界面和你与其他程序使用的界面相同。如果你想执行本章未介绍的操作，可以右键点击项目以查看可用菜单选项。查看工具栏上的其他按钮。查看下拉菜单中的可用选项。通过少量的实验，你会发现这个程序不仅强大，而且易于使用。
+
+## 显示 App Explorer 的 Aptana
+
+![](img/32b24cb9657418b8429a4117bd539786_60_0.png)
+
+## 如何打开文件
+
+- 使用此窗口顶部的下拉项目列表。
+- 点击文件夹旁边的 `▷` 符号。
+
+## 如何打开一个不属于项目的文件
+
+- 使用 Project Explorer（项目资源管理器）在计算机上找到该文件，然后双击它。
+- 使用 `File`（文件） → `Open`（打开）命令来打开文件。
+
+## 如何关闭文件
+
+- 使用此图中所示的三种方法之一。
+- 关闭除当前正在处理的文件以外的所有文件。
+
+## 如何开始一个新文件
+
+- 使用相应的扩展名（`.html`、`.css` 或 `.js`）为文件命名。
+- 使用 `File`（文件） → `New`（新建） → `Web Project`（Web 项目）命令。
+
+## 如何编辑文件
+
+图 1-20 显示了如何编辑文件，但编辑功能适用于 HTML 和 CSS。当你打开 `.html`、`.css` 或 `.js` 文件时，Aptana 知道它是什么类型的文件，因此可以使用颜色来高亮显示组件。
+
+# 带有自动补全列表的 Aptana JavaScript 输入
+
+![](img/32b24cb9657418b8429a4117bd539786_62_0.png)
+
+# 如何使用自动补全功能
+
+- 自动补全功能会显示与你输入开头的项目列表。要插入其中一项，请双击它，或使用箭头键突出显示并按 `Tab` 键。
+- 对于某些 JavaScript 语句（例如 `if-else` 语句），编辑器将插入一个包含起始代码（包括括号和花括号）的代码片段（snippet）。
+
+# 如何识别 Aptana 编辑器标记的错误
+
+- 错误标记是行首处一个包含白色 X 的红色圆圈。警告标记是一个包含感叹号的黄色三角形。这些标记会在你输入和编辑代码时显示。
+- 要获取错误或警告标记的描述，请将鼠标悬停在标记上。
+
+# 如何隐藏和恢复项目管理器（Project Explorer）和应用资源管理器（App Explorer）
+
+- 要隐藏项目或应用资源管理器，请点击其标签页上的 X。要显示项目或应用资源管理器，请使用 `Window -> Show View Explorer` 或 `Project Explorer` 命令。
+- 要隐藏窗口左侧的面板，请点击其最小化按钮。要恢复面板，请点击编辑窗口左侧或右侧垂直栏顶部还原图标。
+
+## 如何设置用于语法高亮的颜色
+
+- 使用 `Window -> Preferences` 命令打开首选项对话框。
+- 点击 `Aptana Studio`，然后点击 `Themes` 以显示主题主题对话框。
+- 从 `Editor Theme` 列表中选择一个主题。（本书使用了 Dreamweaver 主题。）
+
+## 描述
+
+- Aptana 提供了许多功能，使其更易输入和编辑 JavaScript 代码。
+- Aptana 提供了许多方式来显示其许多功能的面板。
+
+图 1-20 如何在 Aptana 中编辑文件
+
+# 如何运行 JavaScript 应用程序
+
+图 1-21 显示了如何从 Aptana 运行 JavaScript 应用程序。要这样做，你需要打开应用程序的 HTML 文件。或者，如果 HTML 文件已经打开，点击其标签页以选择它，如图所示。然后，你点击 `Run` 按钮。这将打开默认浏览器并在该浏览器中运行文件。你还可以使用 `Run` 按钮右侧的下拉列表在另一个浏览器中运行。此列表包含了你安装 Aptana 时安装在计算机上的任何浏览器。
+
+在运行 JavaScript 应用程序之前，你需要保存 HTML 文件及其相关文件的任何更改。要这样做，你可以点击工具栏上的 `Save` 或 `Save All` 按钮。然而，如果你在点击 `Run` 按钮之前没有保存文件，将收到一条警告消息，其中包含可以为你保存文件的选项。
+
+当你以这种方式运行 JavaScript 应用程序时，每次点击 `Run` 按钮都会打开一个新的浏览器或浏览器标签页。因此，如果你对一个应用程序点击 10 次 `Run` 按钮，将打开 10 个浏览器或标签页。
+
+不过，另一种方法是第一次点击 `Run` 按钮运行应用程序。然后在你在 Aptana 中发现并修复错误后，可以点击 Aptana 中的 `Save All` 按钮保存更改，切换到浏览器，点击浏览器中的 `Reload` 或 `Refresh` 按钮以带更改重新加载应用程序。这样，你每次测试应用程序时都使用同一个标签页或浏览器实例。
+
+## Aptana 的 Run 按钮
+
+![](img/32b24cb9657418b8429a4117bd539786_64_0.png)
+
+## Chrome 中的网页
+
+![](img/32b24cb9657418b8429a4117bd539786_64_1.png)
+
+## 如何从 Aptana 运行 JavaScript 应用程序
+
+- 在运行文件之前，你应该保存对该文件及其任何相关文件的任何更改。要这样做，你可以点击工具栏上的 `Save` 或 `Save All` 按钮。
+- 要在默认浏览器中运行 JavaScript 应用程序，打开应用程序的 HTML 文件，或如果它已经打开，选择其标签页。然后，点击 `Run` 按钮。（如果 HTML 文件不是选中的那个，`Run` 按钮将不起。）
+- 要在另一个浏览器中运行 JavaScript 应用程序，选择其 HTML 标签页，点击 `Run` 按钮右侧的向下箭头并选择浏览器。
+
+## 描述
+
+- 当你测试应用程序时，运行它的 HTML 页面。然后，你可以记录错误，在 Aptana 中修复它们，保存更改并运行页面。
+- 每当你从 Aptana 运行一个页面时，都会打开另一个浏览器实例或标签页。另一种替代方案是在 Aptana 中保存修复后的文件，切换到浏览器并点击其 `Reload` 或 `Refresh` 按钮。这样就不会打开另一个浏览器或标签页了。
+
+图 1-21 如何从 Aptana 运行 JavaScript 应用程序
+
+# 展望
+
+本章介绍了开发 JavaScript 应用程序所需的背景概念和术语。现在，如果你对所学内容都很熟悉，就准备好学习第 2 章了。
+
+但如果你对自己的 HTML 和 CSS 还不熟悉呢？首先，你需要复习它们。
+
+# 你应该知道的术语
+
+- 网页浏览器 | 级联样式表 (Cascading Style Sheets)
+- 网页服务器 | 文档对象模型 (DOM)
+- 网络 | HTML5 语义
+- 局域网 (LAN) | 
+- 广域网 (WAN) | 
+- 互联网服务提供商 (ISP) | 
+- HTML (文本标记语言) | 
+- 静态页面 | 
+- HTTP 请求 | 
+- HTTP 响应 | 
+- 动态页面 | 
+- 服务器端处理 | 
+- URL (统一资源定位符) | 
+- JavaScript 引擎 | 
+- 脚本语言 | 
+- 客户端处理 | 
+- jQuery | 
+- ECMAScript 规范 | 
+- HTML 元素 |
+
+# 总结
+
+- 网页应用程序由客户端、网页服务器和网络组成。客户端使用浏览器从网页服务器请求页面。网页服务器返回页面。
+- 局域网 (LAN) 连接彼此的计算机。这通常被称为内网。相比之下，互联网由广域网 (WAN) 组成。
+- 为了请求网页，浏览器向网页服务器发送 HTTP 请求。然后，网页服务器获取请求的 HTML 并将其返回给浏览器。最后，浏览器渲染 HTML 生成网页。
+- 静态页面在每次检索时都是相同的。相比之下，动态网页的 HTML 是由服务端程序生成的，因此其 HTML 会随请求而变化。
+- JavaScript 是一种由浏览器引擎运行的脚本语言。它提供了客户端处理。jQuery 是一个让许多功能变得简单的 JavaScript 库。
+- JavaScript 常用于修改为每个加载页面构建的文档对象模型 (DOM)。这被称为 DOM 脚本。当 DOM 更改时，浏览器会立即更改显示以反映这些更改。
+- ECMAScript 规范提供了 JavaScript 实现的标准。ECMAScript5 是目前使用的版本。
+- HTML (文本标记语言) 是定义网页结构和内容的语言。CSS (级联样式表) 用于控制网页的格式。
+- 你可以查看位于本地计算机、服务器或互联网服务器上的网页。要查看互联网上的网页，你可以在浏览器地址栏中输入包含协议、域名、路径和文件名的 URL (统一资源定位符)。
+
+# 在进行本书练习之前...
+
+在进行本书的练习之前，你应该下载并安装 Chrome 浏览器以及本书的应用程序。如果你打算使用 Aptana，也应该下载并安装该产品。本书软件和应用程序的安装步骤请见附录 A。
+
+## 练习 1-1 运行邮件列表（Email List）应用程序
+
+在本次练习中，你将运行图 1-6 至 1-8 所示的邮件列表应用程序。
+
+### 在 Chrome 中打开应用程序
+
+1. 如果 Chrome 尚未打开，请启动它。然后，使用组合键 `Ctrl+O` 打开此 HTML 文件：`javascript_query\book_apps\ch01\email_list\index.html`
+2. 要测试测试在不输入任何数据时会发生什么，只需在不输入任何数据的情况下点击“Join our List”（加入我们的列表）按钮。
+3. 在第一个文本框中输入电子邮件地址，在第二个文本框中输入无效数据并点击“Join our List”按钮查看了哪些错误信息。
+4. 为三个文本框都输入有效数据并点击按钮。然后，数据将提交进行处理并显示一个新的网页。
+5. 重新运行应用程序，点击“Back”（返回）按钮。然后点击“Reload”（刷新）按钮。这应该重置输入。
+6. 在第一个文本框中输入电子邮件地址，其他框留为空，并点击“Join our list”按钮。然后按 `F12` 打开 Chrome 的开发者工具。点击显示“Console”（控制台）标签卡，注意它不包含任何消息。
+7. 点击“Sources”（源代码）标签卡。然后，如果尚未显示，点击左窗格中的 `email_list.js` 文件查看该页的 JavaScript 代码。对 `index.html` 文件执行相同的操作查看该页的 HTML。
+8. 点击“Elements”（元素）标签卡，向下查看页面表单内的 HTML 元素。在 `<span>` 元素中，你可以看到显示的消息，而不是 HTML 中的初始值。这是因为 Elements 标签卡代表页面的文档对象模型（DOM），而 JavaScript 已经更改了该模型。
+9. 如果你想，可以进行更多实验。这些是在你学习本书过程中经常用到的强大调试工具，因此熟悉它们是很好的。完成后，按 `F12` 键关闭工具。
+
+### 预览开发者工具
+
+## 练习 1-2 运行第 1 节的其他应用程序
+
+本次练习运行了第 6 章和第 7 章介绍两个应用程序。这将让你对完成本节后能够做什么有一个初步了解。
+
+### 运行第 6 章的 FAQs 应用程序
+
+1. 在 Chrome 浏览器中打开此文件：
+   `murach\javascript_jquery\book_apps\ch06\faqs\index.html`
+2. 点击第一个标题显示其文本，再次点击隐藏文本。
+3. 按 `Tab` 键到下一个标题并按 `Enter` 键显示文本，再次按 `Enter` 键隐藏文本。
+
+### 运行第 7 章的图片切换（Image Swap）应用程序
+
+4. 在 Chrome 浏览器中打开此文件：
+   `murach\javascript_jquery\book_apps\ch07\swap\index.html`
+5. 注意页面顶部的四个小图片，并注意第一张图片的较大版本是通过小图片显示出来的。
+6. 点击第二张图片，查看现在显示了该图片的较大版本。
+7. 按 `Tab` 键到下一张图片并按 `Enter` 键显示该图片的较大版本。
+
+## 练习 1-3 开始使用 Aptana
+
+本次练习面向打算在本书中使用 Aptana 的读者。它将引导你完成创建项目的过程，以便方便访问下载的书籍应用程序和练习。
+
+### 创建项目
+
+1. 启动 Aptana，并使用图 1-18 中的步骤为存储在此文件夹中的书籍应用程序创建一个项目：
+   `murach\javascript_jquery\book_apps`
+   该项目应命名为 `JS_jQuery Book Apps`，最后一个对话框的条目应与图中所示。
+2. 使用相同的步骤创建一个名为 `JS_jQuery Exercises` 的项目，用于存储在此文件夹中的练习：
+   `javascript_jquery\exercises`
+3. 再次使用相同的步骤创建一个名为 `JS_jQuery Solutions` 的项目，用于此文件夹中的练习答案：
+   `murach\javascript_jquery\solutions`
+
+### 测试邮件列表应用程序
+
+4. 使用 App Explorer（应用程序资源管理器）中的下拉列表选择 `JS_Query Exercises` 项目。这可以访问书中所有的练习。
+5. 在 App Explorer 中，点击 `ch01` 前前的 `▷` 符号显示 `email_list` 文件夹，点击 `email_list` 文件夹前的 `▷` 符号显示邮件应用程序的文件。
+6. 双击名为 `index.html` 的文件打开该文件。然后，点击工具栏上的 `Run`（运行）按钮在默认浏览器中运行应用程序。这将自动切换到你的浏览器。
+7. 回到 Aptana，点击 `Run` 按钮右侧的箭头。如果下拉列表提供 Internet Explorer，点击它在其中运行应用程序。然后返回 Aptana。
+
+### 编辑 JavaScript 代码
+
+8. 在 App Explorer 中，双击名为 `email_list.js` 的文件打开该文件，并注意用于语法高亮的颜色。
+9. 如果你不喜欢使用的颜色，请使用图 1-20 中的步骤更改它们。
+10. 在 JavaScript 文件中，删除第一行代码中的右括号。这应该显示两个错误标记。然后，将鼠标悬停在标记上显示错误描述。这说明了 Aptana 的错误检查功能。现在，撤销你所做的更改。（使用键盘撤销更改请按 `Ctrl+Z`）。
+11. 在 JavaScript 文件中，在 `joinList()` 函数中以 `var` 开头的第三条语句之后，在新行开始输入以下字符语句：
+    `if (`
+    这会插入右括号并列出以字母 e 开头的可能的输入条目列表。在这里，你可以看到 `emailAddress1` 和 `emailAddress2` 包含在列表中。这些是由函数前两个 `var` 语句创建的变量，这说明了 Aptana 的自动补全功能。现在，撤销此更改。
+12. 在 JavaScript 文件中，在最后一行（只有一个右大括号）之前输入此语句：`alert("The DOM has now built!");` 也就是说，此语句将成为最后一行。
+13. 要测试你添加的语句，点击工具栏上的 `Save All`（全部保存）按钮保存更改。然后回到浏览器并点击 `Reload`（刷新）按钮运行应用程序。这将显示一个对话框，你可以点击 `OK` 按钮关闭它。之后，应用程序的运行将与之前相同。
+14. 如果你好奇，可以自己进行更多实验。然后关闭文件并退出 Aptana。
+
+# 开始学习 JavaScript
+
+本章的目标是让你在 JavaScript 方面有一个良好的开始，特别是如果你是编程新手。如果你有其他语言的编程经验，你应该能够快速通过本章。否则，请轻松学习并完成章末的练习。
+
+- 如何在 HTML 文档中引入 JavaScript................52
+- 在 HTML 文档头部引入 JavaScript 的两种方法................52
+- 如何在 HTML 文档主体中引入 JavaScript................54
+- JavaScript 语法................56
+- 如何编写 JavaScript 语句...............................
+- 如何创建标识符................58
+- 如何使用注释................60
+- 如何处理 JavaScript 数据................62
+- 基本数据类型................62
+- 如何声明变量并给变量赋值................64
+- 如何编写算术表达式...............................66
+- 如何在赋值语句中使用算术表达式................68
+- 如何拼接字符串并在字符串中包含特殊字符......70
+- 如何使用对象、方法和属性...............................72
+- 对象、方法和属性简介................72
+- 如何使用 `parseInt()` 和 `parseFloat()` 方法..............74
+- 如何使用 对象的 `write()` 和 `writeln()` 方法......76
+- 两个示例性应用程序.................................78
+- 每加仑英里（Miles Per Gallon）应用程序...........................78
+- 成绩（Test Scores）应用程序.......................................80
+
+# 如何在 HTML 文档中包含 JavaScript
+
+在第 1 章中，你看到了如何将应用程序的 JavaScript 写在单独的文件中但实际上有三种方法可以在 HTML 文档中包含 JavaScript。你现在将学习这三种方法。
+
+## 在 HTML 文档的 head 中包含 JavaScript 的两种方法
+
+图 2-1 展示了在 HTML 文档中包含 JavaScript 的三种方法中的两种。正如你在上一个中看到的，你在一个独立的外部文件中编写 JavaScript。然后，你在 HTML 文档的 `head` 部分编写一个 `script` 元素来包含该文件。
+
+在 `script` 元素中，`src` 属性用于引用外部文件。对于该元素，你还可以编写一个值为 `"text/javascript"` 的 `type` 属性，告诉浏览器该文件包含什么类型的内容。在 HTML5 中，不再需要该属性了，因为系统假设在 `script` 元素中引用的所有文件都是 JavaScript。
+
+在该图的示例中，`src` 属性引用了一个名为 `calculate_mpg.js` 的文件。这里假设该文件与 HTML 文件在同一个文件夹中。否则，你需要编写一个相对 URL 来为文件提供正确的路径。例如，如果 JavaScript 文件位于名为 `javascript` 的文件夹中，且该文件夹与 HTML 文件在同一个文件夹中，则 `src` 属性的写法为：
+
+```html
+<script src="javascript/calculate_mpg.js"></script>
+```
+
+这与 HTML 文档中任何其他文件引用的工作相同。
+
+在 HTML 文档中包含 JavaScript 的第二种方法是在 `head` 部分的 `script` 元素中编写 JavaScript。这被称为嵌入式 JavaScript。但注意，无论 JavaScript 是嵌入在 `head` 部分还是从外部文件加载到 `head` 部分，应用程序都能正常工作。
+
+使用外部文件的优点是它可以将 JavaScript 与 HTML 分离开来。另一个优点是它更容易在其他页面或应用程序中重用代码。
+
+使用嵌入式 JavaScript 的优点是在你在开发应用程序时不需要在 HTML 和 JavaScript 文件之间切换。在本书的示例中，你将看到 JavaScript 的这两种用法。
+
+正如你在下一幅图中看到的，`script` 元素也可以位于文档的 `body` 部分。事实上，某些开发者倾向于将 `script` 元素放在结束 `body` 标签之前。这可以使页面加载看起来更快，因为 HTML 会在 JavaScript 加载之前进行渲染。如果你在 HTML 渲染时就需要 JavaScript 功能，那么底部的脚本将无法工作。最终，你将根据应用程序的需求做出此决定。
+
+## script 元素的两个属性
+
+| 属性 | 描述 |
+| --- | --- |
+| src | 指定外部 JavaScript 文件的位置（源）。 |
+| type | 在 HTML5 中，可以省略此属性。如果你编写了它，请对 JavaScript 代码使用 `"text/javascript"`。 |
+
+### 在 head 部分加载外部 JavaScript 文件的 script 元素
+
+```html
+<script src="calculate_mpg.js"></script>
+```
+
+### 在 head 部分嵌入 JavaScript 的 script 元素
+
+```html
+<head>
+  <script>
+    alert("The Calculate MPG application");
+    var miles = prompt("Enter miles driven");
+    miles = parseInt(miles);
+    var gallons = prompt("Enter gallons of gas used");
+    gallons = parseInt(gallons);
+    var mpg = miles/gallons;
+    mpg = parseInt(mpg);
+    alert("Miles per gallon = " + mpg);
+  </script>
+</head>
+```
+
+## 描述
+
+- HTML 文档 `head` 部分中的 `script` 元素通常用于标识应与页面包含的外部 JavaScript 文件。
+- `head` 部分中的 `script` 元素也可以包含随页面包含的 JavaScript 语句。这可以被称为嵌入式 JavaScript。
+- 如果你在 `head` 部分编写了多个 `script` 元素，JavaScript 将按照脚本语句出现的顺序被包含。
+- 当 `head` 部分中的 `script` 元素包含外部 JavaScript 文件时，文件中的 JavaScript 运行方式就像在 `script` 元素中直接编写的一样。
+
+
+
+- 一些程序员倾向于将 `script` 元素放在页面底部，紧接结束 `body` 标签之前。这可以使页面加载看起来更快，但 JavaScript 在页面加载后才会运行。
+
+![](img/32b24cb9657418b8429a4117bd539786_72_0.png)
+
+## 如何在 HTML 文档的 body 中包含 JavaScript
+
+图 2-2 显示了在 HTML 文档中包含 JavaScript 的第三种方法。这是将 `script` 元素放在文档的 body 部分。事实上，某些开发者倾向于将 `script` 元素放在结束 `body` 标签之前。这可以使页面加载看起来更快，因为 HTML 会在 JavaScript 加载之前进行渲染。如果你在 HTML 渲染时就需要 JavaScript 功能，那么底部的脚本将无法工作。
+
+如果你想在 body 中包含 JavaScript，可以使用像 head 中那样的 `script` 元素。然而，`script` 元素被放置在 HTML 文档的 `body` 标签内。这对于需要与 DOM 元素交互的脚本非常有用。
+
+### HTML 文档 body 中的 JavaScript
+
+```html
+<script>
+  var today = new Date();
+  document.write("Current date: ");
+  document.write(today.toDateString());
+</script>
+```
+
+### 浏览器中 JavaScript 的结果
+
+![](img/32b24cb9657418b8429a4117bd539786_74_0.png)
+
+### HTML 文档 body 中的 noscript 元素
+
+```html
+<p>
+  <script>
+    var today = new Date();
+    document.write(today.getFullYear());
+  </script>
+  <noscript>2017</noscript>
+</p>
+```
+
+### HTML 文档开处的 noscript 元素
+
+```html
+<h2><noscript>To get the most from this website, please enable JavaScript.</noscript></h2>
+```
+
+## 描述
+
+- 文档 body 中 `script` 元素中的 JavaScript 代码在页面加载时运行。
+- `noscript` 元素可以在 JavaScript 用时显示内容。
+
+## JavaScript 语法
+
+JavaScript 语法指的是编写语句时必须遵守的规则。如果你不遵守这些规则，网络浏览器将无法解释和执行你的语句。
+
+## 如何编写 JavaScript 语句
+
+图 2-3 总结了编写 JavaScript 语句的规则。第一个规则是 JavaScript 是大小敏感的。这意味着大字母和小写字母被视为不同的字母。例如，`salestax` 和 `salesTax` 被视为不同的名称。
+
+第二个规则是 JavaScript 语句应以分号结束。为了提醒你包含分号，像 Aptana 和 NetBeans 这样的 IDE 在你省略分号时会发出警告。这样，更容易判断一个语句在哪里结束，另一个从哪里开始。
+
+第三个规则是 JavaScript 忽略语句中的额外空格。由于空格包括空格、制表符和换行符，这允许你将长语句拆分为多行，以便阅读。
+
+但是，请务必遵循本图中关于何何拆分语句的指南。如果你不在合适的地方拆分语句，JavaScript 有时会尝试帮助你并自动添加分号，这可能会导致错误。
+
+### 一段 JavaScript 代码
+
+```javascript
+var joinList = function() {
+  var emailAddress1 = $("email_address1").value;
+  var emailAddress2 = $("email_address2").value;
+
+  if (emailAddress1 == "") {
+    alert("Email Address is required.");
+  } else if (emailAddress2 == "") {
+    alert("Second Email Address is required.");
+  } else if (emailAddress1 == emailAddress2) {
+    alert("Second Email entry must equal first entry.");
+  } else if ($("first_name").value == "") {
+    alert("First Name is required.");
+  } else {
+    $("email_form").submit();
+  }
+};
+```
+
+### 基础语法规则
+
+- JavaScript 是区分大小写的。
+- 每个 JavaScript 语句都以分号结束。
+- JavaScript 忽略语句内部额外的空白字符。
+
+### 如何将语句拆分到两或多行
+
+- 在以下位置之后拆分语句：
+  - 算术运算符或关系运算符，如 `+`、`-`、`/`、`=`、`==`、`>` 或 `=`
+  - 左大括号 `{`、左圆括号 `)`、左中括号 `{ }` 或左括号 `(`
+  - 右大括号 `}` 或右圆括号 `)`
+
+- 在以下位置之后不要拆分语句：
+  - 标识符、值或 `return` 关键字
+  - 右中括号 `( )` 或右圆括号 `)`
+
+## 描述
+
+- JavaScript 语句的语法与 Java 的语法相似。
+- 空白指的是代码中的空格、制表符和换行符，它们会被编译器忽略。因此，你可以使用空格、制表符和换行符来格式化你的代码，使其更易读。
+- 在某些情况下，JavaScript 会尝试通过在拆分行的末尾添加分号来纠正它认为缺失的分号。为了防止这种情况，请遵循上述关于拆分语句的指南。
+
+![](img/32b24cb9657418b8429a4117bd539786_76_0.png)
+
+## 如何创建标识符
+
+变量、函数、对象、属性、方法和事件都必须有名称，以便你可以在 JavaScript 代码中引用它们。标识符就是赋予这些组件之一的名称。
+
+图 2-4 显示了在 JavaScript 中创建标识符的规则。除了前四条规则外，你不能使用任何 JavaScript 保留字（也称为关键字）作为标识符。这些是留给 JavaScript 语言内部使用的单词。你还应该避免使用任何 JavaScript 全局属性或方法，随着学习的深入，你将学到更多。
+
+除了规则之外，你应该给你的标识符起有意义的名称。这意味着很容易看出一个标识符指的是代什么，并且容易记住它的拼写。为了创建这样的名称，你应该避免缩写。例如，如果你将每月投资的名称缩写为 `inv`，将很难看出它指代什么，也很难记住你是怎么拼写的。但如果你将其拼为 `monthly_investment`，这两个问题都解决了。
+
+同样，你应该避免使用特定于某个行业或研究领域的缩写，除非你确定该缩写会被广泛理解。例如，mpg 是每加仑英里（miles per gallon）的常用缩写，但 cpm 可能代表许多不同的含义，应该写全。
+
+为了创建一个包含多个单词的标识符，许多 JavaScript 程序员使用一种称为“驼峰命名法”（camel casing）的约定。按照这种约定，除了第一个单词外，每个单词的首字母都大写。例如，`monthlyInvestment` 和 `taxRate` 就是使用驼峰命名法的标识符。
+
+另一种方法是使用下划线字符来分隔标识符中的单词。例如，`monthly_investment` 和 `tax_rate` 使用了这种约定。如果你的工作场所标准规定了这些约定之一，请尽管使用它。否则，你可以使用任何你喜欢的约定……但要保持一致。
+
+在本书中，HTML 中的 id 和类名使用下划线表示法，而所有 JavaScript 标识符都使用驼峰命名法。这样，你将更容易判断名称的出处。
+
+### 创建标识符的规则
+
+- 标识符只能包含字母、数字、下划线和美元符号。
+- 标识符不能以数字开头。
+- 标识符是区分大小写的。
+- 标识符可以是任意长度的。
+- 标识符不能与保留字相同。
+- 避免使用全局属性和方法。如果你使用了其中一个，你将无法使用具有同名的全局属性或方法。
+
+### JavaScript 中有效的标识符
+
+| subtotal | index_1 | $ |
+| :--- | :--- | :--- |
+| taxRate | calculate_click | $log |
+
+### 驼峰法与下划线表示法
+
+| taxRate | tax_rate |
+| :--- | :--- |
+| calculateClick | calculate_click |
+| emailAddress | email_address |
+| futureValue | future_value |
+
+### 命名建议
+
+- 为标识符使用有意义的名称。这样，你的标识符就不可能成为保留字或全局属性。
+- 保持一致：使用驼峰命名法（`taxRate`）或下划线（`tax_rate`）来标识脚本中变量内的单词。
+- 如果你使用下划线表示法，请对所有字母使用小写字母。
+
+### JavaScript 中的保留字
+
+```
+abstract        else            instanceof      switch
+arguments       enum            int             synchronized
+boolean         eval            interface       this
+break           export          let             throw
+byte            extends         long            throws
+class           false           native          transient
+catch           final           null            try
+char            finally         package        true
+const           float           private         typeof
+continue        function        protected      var
+debugger        goto            public          void
+default         if              return          volatile
+delete          implements     short
+do              import          static
+```
+
+## 描述
+
+- 标识符是赋予变量、函数、对象、属性和方法的名称。
+- 在驼峰命名法中，除了第一个字母，所有单词的首字母都是大写。
+
+![](img/32b24cb9657418b8429a4117bd539786_78_0.png)
+
+## 使用注释
+
+注释允许你在代码中添加 JavaScript 引擎忽略的描述说明。之后，这些注释可以帮助你或其他理解代码。
+
+图 2-5 显示了如何使用注释来描述或解释代码。在开头，块注释描述应用程序的功能。这种注释以 `/*` 开始，以 `*/` 结束。其之间的所有代码都被 JavaScript 引擎忽略。另一种注释是以 `//` 开头的单行注释。在示例中，第一个单行注释描述同一行之前的 JavaScript。相比之下，第二个单行注释单独占一行。它描述随后的函数。
+
+除了描述 JavaScript 代码之外，注释在测试应用程序时也有用。例如，如果你想禁用部分代码，可以将其封装在块注释中。那么，在运行应用程序时它将被忽略。这被称为“注释掉”部分代码。之后，在运行其余代码后，你可以通过移除块注释的边界标记来启用注释的代码。这被称为“取消注释”。
+
+注释在你想要尝试代码的更改时也有用。例如，你可以复制部分代码，注释掉原始代码，然后将副本粘贴到被注释的原始代码上方。然后，你就可以对代码进行更改。但如果更改无效，你可以通过删除新代码并取消旧代码的注释来恢复代码。
+
+### 包含注释的 JavaScript 代码部分
+
+```javascript
+/*此应用程序验证用户加入
+  我们的邮件列表的输入
+*/
+var $ = function(id) {  // $ 函数
+  return document.getElementById(id);
+};
+//此函数获取并验证用户的输入内容
+var joinlist = function() {
+  var emailAddress1 = $("email_address1").value;
+  var emailAddress2 = $("email_address2").value;
+  var firstName = $("first_name").value;
+  var isValid = true; // 验证第一个输入
+  if (emailAddress1 == "") {
+    $("email_address1_error").firstChild.nodeValue = "此字段必填。"; 关闭有效开关
+    isValid = false;
+  } else {
+    $("email_address1_error").firstChild.nodeValue = "";
+  }
+};
+// 验证第二个输入
+......
+```
+
+### JavaScript 注释的语法规则
+
+- 块注释以 `/*` 开始，以 `*/` 结束。
+- 单行注释以两个正斜杠 `//` 开始，并持续到行尾。
+
+### 注释使用指南
+
+- 使用注释描述难以理解的代码部分。
+- 使用注释禁用你不想测试的代码部分。
+- 不要进行必要的注释。
+
+## 描述
+
+- JavaScript 提供了两种形式的注释：块注释和单行注释。
+- 在执行 JavaScript 时，注释会被忽略。
+- 在测试期间，可以使用注释来注释掉（禁用）你不想测试的代码部分。然后当你准备好测试这些部分时，可以移除注释。
+- 你也可以使用注释在对代码副本进行更改时，以原始状态保存部分代码。
+
+## 如何处理 JavaScript 数据
+
+当你开发 JavaScript 应用程序时，你经常需要处理数据，特别是用户输入到表单控件中的数据。在接下来的主题中，你将学习如何处理三种类型的 JavaScript 数据。
+
+## 基本数据类型
+
+JavaScript 提供了三种基本数据类型。`number` 数据类型用于表示数值数据。`string` 数据类型用于存储字符数据。`Boolean` 数据类型用于存储 `true` 和 `false` 值。这在图 2-6 中进行了总结。
+
+`number` 数据类型可以表示整数或小数。整数是整数，而小数是带有一个或多个小数位的数字。任何数据类型的值都可以通过前导加号或减号进行编码。如果省略了符号，则该值被视为正值。小数还可以包含一个小数点以及小数点右侧的一个或多个数字。
+
+如数字类型的最后一个示例所示，在对小数编码时也可以包含一个指数。如果你不熟悉这种表示法，你可能不需要使用它，因为你不会处理非常大或非常小的数字。另一方面，如果你熟悉计数法，你已经知道这个指数表示小数点应该向左或向右移动位数。使用这种表示法的数字被称为浮点数。
+
+要表示 `string` 数据，你在单引号或双引号（引号）内对字符串进行编码。但注意，你必须使用与开始字符串时相同的引号类型结束字符串。如果你连续输入两个引号而中间甚至没有空格，则结果被称为空字符串，它可以表示不包含任何数据的字符串。
+
+要表示 `Boolean` 数据，你可以在不加引号的情况下对 `true` 或 `false` 单词编码。这种数据类型可以表示两种状态之一。
+
+### JavaScript 基本数据类型
+
+| 数据类型 | 描述 |
+|---|---|
+| Number | 表示整数或小数，可以以正号或负号开头。 |
+| String | 表示字符（字符串）数据。 |
+| Boolean | 表示布尔值，具有两种可能的状态：true 或 false。 |
+
+### 数字值示例
+
+- `15` // 一个整数
+- `-21` // 负整数
+- `21.5` // 一个小数
+- `-124.82` // 负小数
+- `-3.7e-9` // -0.000000003 的浮点表示法
+
+### 字符串值示例
+
+- `"JavaScript"` // 使用双引号的字符串
+- `'String Data'` // 使用单引号的字符串
+- `""` // 空字符串
+
+### 两个布尔值
+
+- `true` // 等同于 true、yes 或 on
+- `false` // 等同于 false、no 或 off
+
+### number 数据类型
+
+- 数字可以是一个整数（整个数字），也可以是一个小数（小数点右侧可以有一个或多个小数位）。
+- 在 JavaScript 中，小数是以浮点数的形式存储的。在该格式下，一个数字由一个正号或负号、一个或多个有效数字、一个可选的小数点、可选的小以及可选的指数组成。
+- 如果存储在 `number` 数据类型中的结果比该数据类型能够存储的更大更小，它将被存储为值 `Infinity` 或 `-Infinity`。
+
+### string 数据类型
+
+- 字符串值由双引号或单引号围绕。字符串必须以相同类型的引号开始和结束。
+- 空字符串是不包含任何字符的字符串。它是通过输入两个中间没有任何内容的引号来输入的。
+
+### Boolean 数据类型
+
+- 布尔值要么为 `true` 要么为 `false`。
+- 这种数据类型通过确定某些代码是否应该执行来控制程序的流。
+
+## 如何用两个语句声明变量并赋值
+
+### 语法
+
+```javascript
+var variableName;
+variableName = value;
+```
+
+### 示例
+
+```javascript
+var counter;               // 声明语句；值为 undefined
+counter = 1;               // 赋值语句；值为 1
+var sum, average;         // 声明两个变量
+sum = 0, average = 0;    // 为两个变量赋值
+```
+
+## 如何用一条语句声明变量并赋值
+
+### 语法
+
+```javascript
+var variableName = value;
+```
+
+### 示例
+
+```javascript
+var count = 1;          // 整数 1
+var subtotal = 74.95;     // 小数值 74.95
+var name = "Joseph";      // 字符串 "Joseph"
+var email = "";            // 空字符串
+var isValid = false;      // 布尔值 false
+var total = subtotal;     // 变量 subtotal 的值
+var x = 0, y = 0;         // 声明并为 2 个变量赋值
+```
+
+## 描述
+
+- 变量存储一个随程序执行而改变的值。
+- 要声明一个变量，使用关键字 `var` 和变量名。若要在一条语句中声明多个变量，代码 `var` 后跟用逗号分隔的变量名。
+- 要给变量赋值，使用由变量名、等号（赋值运算符）和值组成的赋值语句。变量的类型由赋值给它的值决定。
+- 要在一个语句中为两个或多个变量赋值，编写用逗号分隔的赋值语句。
+- 赋值给变量的值可以是字面量（literal）、另一个变量或表达式（例如在后续图中将学习如何编写的算术表达式和字符串表达式）。
+- 要编写字符串字面量，将其包含在单引号或双引号中。要编写数字字面量，编写不带引号的整数或小数值。
+- 你也可以在一条语句中声明变量并为其赋值。
+- 在使用变量之前，你必须为其赋值。未赋值的变量其值为 `undefined`，其类型为 `undefined`。
+- 要给变量赋值布尔值，使用 `true` 和 `false` 关键字。
+
+图 2-7 如何声明变量并为其赋值
+
+## 如何编写算术表达式
+
+算术表达式可以是一个简单的值，也可以是一系列产生单个值的操作组合。在图 2-8 中，你可以看到编写算术表达式的运算符。如果你用过其他语言编程，这些运算符可能与你一直使用的相似。特别是前四个算术运算符在大多数编程语言中是通用的。
+
+大多数现代语言还有一个模运算符（modulus），用于计算左值除以右值时的余数。在该运算符的示例中，`13 % 4` 意味着 `13 / 4` 的余数。由于 `13 / 4` 的结果是 3 余 1，因此它是该表达式的结果。
+
+与图中前五个运算符不同，递增和递减运算符是在变量上加 1 或减 1。复杂的是，这些运算符可以编写在变量名之前或之后，并影响结果。为了避免混淆，最好只在变量名之后编写这些运算符，且仅在像下一个图中看到的简单表达式中使用。
+
+当一个表达式包含两个或多个运算符时，优先级决定了先应用哪些运算符。这种顺序总结在图中的表中。例如，所有的乘法和除法操作都会在任何加减法操作之前从左到右完成。
+
+然而，要覆盖这种顺序，你可以使用括号。然后，最内层括号中的表达式首先执行，接着是下一层括号中的表达式，依此类推。这是所有编程语言以及基础代数的典型特征，图中的示例展示了其工作原理。
+
+### JavaScript 的算术运算符
+
+| 运算符 | 名称 | 描述 |
+| --- | --- | --- |
+| `+` | 加法 | 将两个操作数相加。 |
+| `-` | 减法 | 从左操作数减去右操作数。 |
+| `*` | 乘法 | 两个操作数相乘。 |
+| `/` | 除法 | 左操作除以右操作。结果始终是一个浮点数。 |
+| `%` | 模 | 左操作除以右操作并返回余数。 |
+| `++` | 递增 | 将操作数加 1。 |
+| `--` | 递减 | 将操作数减 1。 |
+
+### 算术表达式的优先级
+
+| 顺序 | 运算符 | 方向 | 描述 |
+| --- | --- | --- | --- |
+| 1 | `++` | 从左到右 | 递增运算符 |
+| 2 | `--` | 从左到右 | 递减运算符 |
+| 3 | `*` `/` `%` | 从左到右 | 乘法、除法、模 |
+| 4 | `+` `-` | 从左到右 | 加法、减法 |
+
+### 简单算术表达式示例
+
+| 示例 | 结果 |
+| --- | --- |
+| `5 + 7` | 12 |
+| `5 - 12` | -7 |
+| `6 * 7` | 42 |
+| `13 / 4` | 3.25 |
+| `13++` | counter = counter + 1 |
+| `counter--` | counter = counter - 1 |
+| `3 + 4 * 5` | 23 (先执行乘法) |
+| `(3 + 4) * 5` | 35 (先执行加法) |
+| `13 % 4 + 9` | 10 (先执行模运算) |
+| `13 % (4 + 9)` | 13 |
+
+## 描述
+
+- 算术表达式由一个或多个被操作的操作数组成。
+- 算术表达式根据优先级进行求值。
+- 要覆盖优先级，你可以使用括号。
+- 由于使用递增和递减运算符可能会引起混淆，最好像上面所示只在变量名后使用这些运算符。
+
+图 2-8 如何编写算术表达式
+
+## 如何在赋值语句中使用算术表达式
+
+现在你已经知道如何编写算术表达式了，图 2-9 显示了如何在赋值语句中使用这些表达式。这里，前两个示例展示了你可以如何使用乘法和加法运算符。
+
+接下来是一个表格，展示了三个复合赋值运算符。这些运算符为编写赋值语句提供了一种简写方式。例如，`+=` 运算符通过将右侧表达式的值加来修改左侧变量的值。使用此运算符时，左侧变量必须已经存在并已赋值。
+
+表中的另外两个运算符工作原理类似，但 `-=` 运算符是从左侧变量减去右侧表达式的结果。而 `*=` 运算符是将左侧变量乘以右侧表达式的结果。表后的第一组示例说明了运算符是如何作用的。
+
+表后的第二个示例展示了三种通过加 1 来增加变量值的方法。正如你将在本书中所看到的，这是一个常见的 JavaScript 要求。在这里，第一条语句为名为 `counter` 的变量赋值为 1。
+
+然后，第二条语句使用算术表达式给计数器的值加 1。这表明变量名可以出现在等号的两侧。第三条语句通过使用 `+=` 运算符给计数器加 1。使用此运算符时，你不需要在等号右侧编写变量名，这使得代码更加简洁。
+
+此示例的最后一条语句使用图中所示的 `++` 运算符给计数器加 1。这说明了递增运算符的最佳用法。在这里，数值表达式仅由变量名和一个递增运算符组成。
+
+最后一个示例说明了一个你应该注意的潜在问题。由于小数在内部以浮点数形式存储，算术操作的结果并不总是精确的。在这个示例中，`salesTax` 的结果本应该是 7.495，实际上是 7.49500000000001。尽管这个结果非常接近 7.495，但它并不等于 7.495，如果你预期这两个值的比较相等，可能会导致编程问题。解决方案是对结果进行四舍五入，你将在第 4 章学习如何操作。
+
+### 计算销售税的代码
+
+```javascript
+var subtotal = 200;
+var taxPercent = .05;
+var taxAmount = subtotal * taxPercent; // 10
+var total = subtotal + taxAmount; // 210
+```
+
+### 计算矩形周长的代码
+
+```javascript
+var width = 4.25;
+var length = 8.5;
+var perimeter = (2 * width) + (2 * length) // (8.5 + 17) = 25.5
+```
+
+### 最常用的复合赋值运算符
+
+| 运算符 | 描述 |
+| --- | --- |
+| `+=` | 将表达式的结果加到变量。 |
+| `-=` | 从变量中减去表达式的结果。 |
+| `*=` | 将值乘以表达式的结果。 |
+
+### 我们使用复合赋值运算符的语句
+
+```javascript
+var subtotal = 74.95;
+subtotal += 20.00; // subtotal = 94.95
+var counter = 10;
+counter -= 1; // counter = 9
+var price = 100;
+price *= .8; // price = 80
+```
+
+### 将名为 counter 的变量加 1 的三种方法
+
+```javascript
+var counter = 1; // counter = 1
+counter = counter + 1; // counter now = 2
+counter += 1; // counter now = 3
+counter++; // counter = 4
+```
+
+### 不精确的浮点数
+
+```javascript
+var subtotal = 74.95; // subtotal = 74.95
+var salesTax = subtotal * .1; // salesTax = 7.495000000000001
+```
+
+## 描述
+
+- 除了赋值运算符 (`=`)，JavaScript 还提供了复合赋值运算符。这些是常见赋值操作的简写代码。
+- JavaScript 还提供了 `/=` 和 `%=` 复合运算符，但你不会经常使用它们。
+- 当你对小数进行某些类型的算术运算时，结果并不总是精确，尽管它们非常接近。这是因为小数在内部是以浮点数形式存储的。这样做的主要问题是，等值比较可能不会返回 `true`。
+
+图 2-9 在赋值语句中使用算术表达式的方法
+
+## 如何在字符串中拼接和包含特殊字符
+
+图 2-10 展示了一些处理字符串的特殊技术。首先，它展示了如何拼接（或连接）两个或多个字符串。这意味着将一个字符串添加到另一个字符串的末尾。
+
+要拼接字符串，你可以使用 `+` 号作为拼接运算符。图中的第一个示例说明了这一点。在这里，第一个语句将字符串字面量赋值给变量 `firstName` 和 `lastName`。然后，下一个语句通过拼接 `lastName`、一个由逗号和空格组成的字符串字面量以及 `firstName` 创建了一个字符串表达式。该拼接的结果是：
+
+```
+Hopper, Grace
+```
+
+在第二个示例中，你可以看到如何使用 `+=` 运算符来获得相同的结果。当你处理的是字符串时，此操作执行的是简单的拼接。
+
+你也可以使用 `+` 和 `+=` 运算符来拼接字符串和数值。图中的第三个和第四个示例说明了这一点。在这两种情况下，数字被转换为字符串，然后对字符串进行拼接。
+
+在处理字符串时，你还可以使用转义序列。你可以使用的许多转义序列中的三个总结在图中的第二个表中。这些序列允许你在字符串中放入无法通过按下键盘相应键放入的字符。例如，`\n` 转义序列等同于在字符串中间按下回车键。而 `\'` 序列等同于按下单引号键。
+
+需要转义序列是为了 JavaScript 引擎能够正确解释代码。例如，由于 JavaScript 语句中使用单引号和双引号来识别字符串，因此在字符串内部对它们进行编码会导致语法错误。但当引号前面有转义字符时，JavaScript 引擎就能正确地解释它们。
+
+### 字符串的拼接运算符
+
+| 运算符 | 描述 |
+| --- | --- |
+| `+` | 拼接两个值。 |
+| `+=` | 将表达式的结果加到变量末尾。 |
+
+### 字符串中可以使用的转义序列
+
+| 运算符 | 描述 |
+| --- | --- |
+| `\n` | 在字符串中开始新行。 |
+| `\"` | 在字符串中放入双引号。 |
+| `\'` | 在字符串中放入单引号。 |
+
+### 如何用 `+` 运算符拼接字符串变量
+
+```javascript
+var firstName = "Grace", lastName = "Hopper";
+var fullName = lastName + " " + firstName; // fullName 是 "Hopper, Grace"
+```
+
+### 如何用 `+=` 运算符拼接字符串变量
+
+```javascript
+var firstName = "Grace", lastName = "Hopper";
+var fullName = lastName; // fullName 是 "Hopper"
+fullName += " " + firstName; // fullName 是 "Hopper, "
+fullName += firstName; // fullName 是 "Hopper, Grace"
+```
+
+### 如何用 `+` 运算符拼接字符串和数字
+
+```javascript
+var months = 120;
+var message = "Months: ";
+message = message + months;
+```
+
+### 如何用 `+=` 运算符拼接字符串和数字
+
+```javascript
+var months = 120;
+var message = "Months: ";
+message += months; // message 是 "Months: 120"
+```
+
+### 转义序列在字符串中使用方法
+
+```javascript
+var months = 120;
+var message = "Months: ";
+message += months; // message 是 "Months: 120"
+```
+
+## 描述
+
+- 要拼接（或连接）两个或多个字符串，可以使用 `+=` 运算符。
+- 如果你在表达式中使用加号，JavaScript 会拼接它们。
+- 转义序列可以用于在字符串中插入字符。
+
+## 如何使用对象、方法和属性
+
+简单来说，对象是方法和属性的集合。方法执行函数或操作。属性是与对象相关的数据项。当你开发 JavaScript 应用程序时，你经常会处理对象和属性。
+
+## 对象、方法和属性简介
+
+为了让你开始学习对象、方法和属性，你需要编写对象名、点运算符（`.`）、方法名以及方法所需的任何参数。
+
+在本书的语法摘要中，有些单词是斜体的，有些不是。不是斜体的单词是保持不变的关键词，如 `alert`。你可以在第一个表中看到这一点，alert 的语法显示如下。相反，斜体单词是你需要提供的。
+
+在语法摘要后的第一个示例中，你可以看到如何调用窗口对象的 `alert()` 方法：
+
+```javascript
+window.alert("This is a test of the alert method");
+```
+
+在这种情况下，传递它的“参数”是 "This is a test of the alert method"。当 alert 对话框显示时，显示该消息。
+
+在第二个示例中，你可以看到如何调用窗口对象的 `prompt()` 方法。这次省略了对象名。对于窗口对象（仅限窗口对象），这是因为窗口对象是 JavaScript 应用程序的全局对象。
+
+如你所见，`prompt()` 方法接受两个参数。第一个是消息，第二个是用户输入的可选值。
+
+表格中的第三个方法不需要任何参数。它是 `print()` 方法。当它执行时，它会向浏览器请求打印当前网页。然后，浏览器会启动打印功能，通常是显示一个允许用户设置一些打印选项的对话框。
+
+### window 对象的常用方法
+
+| 方法 | 说明 |
+| --- | --- |
+| `alert(string)` | 显示一个对话框，其中包含参数传递的字符串以及一个“确定”按钮。 |
+| `prompt(string,default)` | 显示一个对话框，其中包含第一个参数的字符串、第二个参数的默认值、一个“确定”按钮和一个“取消”按钮。如果用户输入了值并点击“确定”，则该值将作为字符串返回。如果用户点击“取消”，则返回 `null` 表示该值未知。 |
+| `print()` | 为当前网页发出打印请求。 |
+
+### window 对象的一个属性
+
+| 属性 | 说明 |
+| --- | --- |
+| `location` | 当前网页的 URL。 |
+
+### 调用对象方法的语法
+
+```javascript
+objectName.methodName(parameters)
+```
+
+### 一个调用 window 对象的 alert() 方法的语句
+
+```javascript
+window.alert("This is a test of the alert method");
+```
+
+### 一个省略了对象名称调用 prompt() 方法的语句
+
+```javascript
+var userInput = prompt("This is a test of the prompt method", 100);
+```
+
+### 显示的 prompt 对话框
+
+![](img/32b24cb9657418b8429a4117bd539786_92_0.png)
+
+### 访问对象属性的语法
+
+```javascript
+objectName.propertyName
+```
+
+### 一个显示 window 对象 location 属性的语句
+
+```javascript
+alert(window.location); // 显示当前页的 URL
+```
+
+## 说明
+
+- 对象具有方法，这些方法执行与对象相关的函数；以及表示与对象相关的数据或属性的。
+- 当你调用一个方法时，你可能需要通过在方法名后的括号内编码来向它传递一个或多个参数，并用逗号隔开。
+- window 对象是 JavaScript 的全局对象，JavaScript 允许你在引用 window 对象时省略对象名称和点运算符（句号）。
+
+图 2-11 对象、方法和属性简介。
+
+要访问对象的属性，你使用类似的语法。然而，正如第二个语法总结所示，你在点运算符后使用代码属性名（code property name）。与方法不同，属性不需要括号中的参数。这通过图 2-11 中紧随语法后的语句说明了这一点。该语句使用 window 对象的 `alert()` 方法来显示 window 对象的 `location` 属性。
+
+随着学习深入，你将学习如何使用许多方法的和属性。
+
+## 如何使用 window 对象的 parseInt() 和 parseFloat() 方法
+
+`parseInt()` 和 `parseFloat()` 方法用于将字符串转换为数字。`parseInt()` 方法将字符串转换为整数，而 `parseFloat()` 方法将字符串转换为小数值。如果字符串无法转换为数字，则返回值 `NaN`。`NaN` 意味着“不是数字”（Not Number）。你将在下一章中学习检查一个值是否为数字的一种方法。
+
+之所以需要这些方法，是因为用户在框中输入的是字符串。这通过图 2-12 中的第一组示例说明了这一点。对于这组示例，假设 `prompt()` 中的默认值没有被用户更改。因此，该组的第一条语句将 `12345.6789` 作为字符串存储在变量 `entryA` 中。然后，该组的第三条语句将字符串转换为整数 `12345`。
+
+注意，在这些示例中，没有为前面的名称编写对象代码。这没关系，因为 window 是 JavaScript 的全局对象。注意，`parseInt()` 方法不会对值进行四舍五入。它只是移除或截断字符串值中的任何小数部分。
+
+第一组示例中的最后四个语句显示了当使用 `parseInt()` 或 `parseFloat()` 转换不是数字的值时会发生什么。在这种情况下，这两个方法都返回值 `NaN`。
+
+然而，这些方法可以转换由一个或多个数字字符后跟一个或多个非数字字符组成的值。在这里，这些方法简单地丢弃非数字字符。例如，如果字符串包含 `72.5%`，`parseFloat()` 方法将将其转换为小数 `72.5`。
+
+此图中的第二组示例显示了如何通过将 `parseInt()` 和 `parseFloat()` 方法作为 `alert()` 方法的参数来获取值。例如，该组的第三条语句使用 `parseInt()` 作为 `alert()` 方法的参数。
+
+注意在第一组示例中，变量 `entryA`、`entryB` 和 `entryC` 的值都通过 `parseInt()` 和 `parseFloat` 方法更改了。例如，`entryA` 变成了数字 `12345`，`entryC` 变成了 `NaN`。相比之下，第二组示例中的语句没有更改这些。这是因为解析后的值没有赋值给变量；它们只是由 `alert()` 方法显示出来。
+
+### window 对象的 parseInt() 和 parseFloat() 方法
+
+| 方法 | 说明 |
+|---|---|
+| `parseInt(string)` | 将传递的字符串转换为整数类型并返回该值。如果无法将字符串转换为整数，则返回 `NaN`。 |
+| `parseFloat(string)` | 将传递的字符串转换为小数类型并返回值。如果无法将字符串转换为小数值，则返回 `NaN`。 |
+
+### 使用 parseInt() 和 parseFloat() 方法的示例
+
+```javascript
+var entryA = prompt("Enter value", "12345.6789");
+alert(entryA); // 显示 12345.6789
+var entryB = parseInt(entryA);
+alert(entryB); // 显示 12345
+var entryC = parseFloat(entryA);
+alert(entryC); // 显示 12345.6789
+```
+
+```javascript
+var entryA = prompt("Enter value", "72.5%");
+alert(entryA); // 显示 72.5%
+var entryB = parseInt(entryA);
+alert(entryB); // 显示 72
+var entryC = parseFloat(entryA);
+alert(entryC); // 显示 72.5
+```
+
+```javascript
+var entryA = prompt("Enter value", "abc");
+alert(entryA); // 显示 abc
+var entryB = parseInt(entryA);
+alert(entryB); // 显示 NaN
+var entryC = parseFloat(entryA);
+alert(entryC); // 显示 NaN
+```
+
+### 将 parseInt() 和 parseFloat() 方法嵌入 alert() 方法的相同示例
+
+```javascript
+alert(parseInt(prompt("Enter value", "12345.6789"))); // 显示 12345
+alert(parseFloat(prompt("Enter value", "12345.6789"))); // 显示 12345.6789
+alert(parseInt(prompt("Enter value", "72.5%"))); // 显示 72
+alert(parseFloat(prompt("Enter value", "72.5%"))); // 显示 72.5
+```
+
+## 说明
+
+- window 对象提供了 `parseInt()` 和 `parseFloat()` 方法，让你将字符串值转换为数字。
+- 当你使用 `prompt()` 方法或文本框获取要在计算中使用的数字数据时，你需要使用 `parseInt()` 或 `parseFloat()` 方法将字符串数据转换为数字数据。
+- `NaN` 是一个意味着“不是数字”的值。当值不是数字时，`parseInt()` 和 `parseFloat` 方法会返回它。
+- 在处理方法时，你可以将一个方法嵌入另一个方法。在上面的第二组示例中，`parseInt()` 和 `parseFloat` 方法被编码为 `alert()` 方法的参数。
+
+图 2-12 如何使用 window 对象的 parseInt() 和 parseFloat() 方法
+
+## 如何使用 document 对象的 write() 和 writeln() 方法
+
+图 2-13 显示了如何使用 document 对象的 `write()` 和 `writeln()` 方法。这些方法将数据写入文档主体以便在浏览器窗口中显示。
+
+如表格所示，这些方法的唯一区别是 `writeln()` 方法以换行符结束。然而，除非在 HTML `pre` 元素中编码，否则浏览器会忽略该换行符。因此，这些方法的工作方式通常没有区别。
+
+### document 对象的 write() 和 writeln() 方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `write(string)` | 将传递的字符串写入文档。 |
+| `writeln(string)` | 将传递的字符串写入文档，末尾带有一个换行符（见图 2-11）。然而，除非在 HTML `pre` 元素内，否则 HTML 不会识别该换行符。 |
+
+### write() 和 writeln() 方法的示例
+
+```html
+<body>
+  <script>
+    var today = new Date();
+    document.write("<h1>Welcome to our site!</h1>");
+    document.write("Today is: ");
+    document.write(today.toDate());
+    document.write("<br>");
+    document.writeln("Today is: ");
+    document.writeln(today.toDate());
+    document.writeln("<br>");
+    document.writeln("Welcome to our site!");
+    document.writeln("Today is Monday.");
+    document.writeln("<pre>Welcome to our site!</pre>");
+    document.writeln("<pre>Today is Monday.</pre>");
+  </script>
+</body>
+```
+
+### 浏览器中的输出
+
+![](img/32b24cb9657418b8429a4117bd539786_96_0.png)
+
+## 描述
+
+- document 对象（document object）允许你操作文档对象模型（DOM）的对象，它代表了页面所有的 HTML 元素。
+- `write()` 和 `writeln()` 方法通常用于文档的 body 部分。
+- 除非在 `pre` 元素中编写，否则 `writeln()` 方法不会跳到下一行。但是你可以编写 `<br>` 标签来开始新行。
+
+图 2-13 如何使用对象的 write() 和 writeln() 方法
+
+## 两个示例应用
+
+本章在最后介绍了两个应用，这些应用展示了你所学的技能。这些并不是现实中的应用，因为它们通过 `prompt` 语句获取用户输入，而不是通过表单控件。然而，这些应用将帮助你入门 JavaScript。
+
+## 每加仑英里数（MPG）应用
+
+图 2-14 展示了一个简单的应用，它发布两个 `prompt` 语句让用户输入行驶的英里数和消耗的加仑数。然后，该应用计算每加仑英里数并发布 `alert` 语句在第三个对话框中显示结果。
+
+由于该应用使用 `prompt()` 方法获取输入并使用 `alert()` 方法显示输出，因此该应用的 HTML 非常简单。它包含一个 `h1` 元素，在 JavaScript 执行完成后显示。
+
+在 JavaScript 中，你可以看到用户的输入是如何被存储在名为 `miles` 的变量中，然后解析为小数。之后，将 `miles` 除以 `gallons`，结果保存在名为 `mpg` 的变量中。然后，将该变量的值解析为整数，以便删除任何小数位。最后，一个 `alert` 语句显示在第三个对话框中的结果。当用户点击该框中的 OK 按钮时，JavaScript 结束，带有标题的页面将在浏览器中显示。
+
+你能猜到如果用户在其中一个 `prompt` 对话框中输入无效数据会发生什么吗？此时 `parseFloat` 方法将返回 `NaN` 而不是数字，计算将无法进行。相反，最后一个 `alert` 语句将显示：
+
+```
+Miles per gallon = NaN
+```
+
+但与其他情况不同，当计算无法完成时，JavaScript 将运行到结束而不是崩溃，因此网页将会显示。
+
+当你查看图中的第二个和第三个对话框时，你会看到它们包含带有“Prevent this from creating additional dialogs”（防止创建额外的对话框）消息的消息。在应用弹出一个对话框后，大多数现代浏览器会在任何后续对话框中包含此类消息。这是一项安全功能，用于防止对话框的无限死循环锁定浏览器，且这是无法禁用的。
+
+注意，图中的对话框包含了通常位于对话框顶部的消息和关闭按钮。你在图 2-11 中见过这些元素。它们已从这些对话框中被移除，以为页面内容留出空间。
+
+顺便提一下，图中的对话框是 Chrome 浏览器的。当你使用其他浏览器时，对话框的功能相同，但外观略有不同。
+
+### 计算 MPG 应用的对话框
+
+#### 第一个 prompt 对话框
+
+![](img/32b24cb9657418b8429a4117bd539786_98_0.png)
+
+#### 第二个 prompt 对话框
+
+![](img/32b24cb9657418b8429a4117bd539786_98_1.png)
+
+#### 显示结果的 alert 对话框
+
+![](img/32b24cb9657418b8429a4117bd539786_98_2.png)
+
+### 应用的 HTML 和 JavaScript
+
+```html
+<html>
+<head>
+  <title>The Calculate MPG Application</title>
+  <script>
+    var miles = prompt("Enter miles driven");
+    miles = parseFloat(miles);
+    var gallons = prompt("Enter gallons of gas used");
+    gallons = parseFloat(gallons);
+    var mpg = miles/gallons;
+    mpg = parseInt(mpg);
+    alert("Miles per gallon = " + mpg);
+  </script>
+</head>
+<body>
+  <!-- 在 JavaScript 执行后显示的 h1 元素 -->
+</body>
+</html>
+```
+
+## 描述
+
+- 如果应用弹出一个对话对话框，大多数现代浏览器会在任何后续对话框中包含此类消息。这是一项安全功能，用于防止对话框的无限死循环锁定浏览器，且这是无法禁用的。
+
+图 2-14 每加仑英里数（MPG）应用
+
+## 测试评分 - 简单应用
+
+图 2-15 展示了一个使用 `prompt` 语句让用户输入三个测试分数的简单应用。在第三个分数输入后，该应用计算平均分。
+
+嵌入在 `head` 元素中的 JavaScript 执行。
+
+如果你查看 `head` 元素中的 JavaScript，你可以看到它通过声明变量来获取处理输入。`entry` 和 `average` 变量被声明但没有赋值。相反，`total` 变量被赋值为初始值零。
+
+在每个分数输入后，该分数都会被加到这个总值上，然后除以 3 来计算平均分。此外，`score1`、`score2` 和 `score3` 变量在每个分数输入后被声明并赋值。
+
+在 `head` 元素中创建的变量对于 `body` 元素是可用的。
+
+### 浏览器中显示的结果
+
+#### 测试评分应用
+
+```
+Score 1 = 72
+Score 2 = 78
+Score 3 = 85
+
+Average score = 78
+
+感谢使用测试应用！
+```
+
+### 应用的 HTML 和 JavaScript
+
+```html
+<html>
+<head>
+  <title>Average Test Scores</title>
+  <script>
+    var entry;
+    var average;
+    var total = 0;
+
+    // 从用户处获取3个分数并相加
+    entry = prompt("Enter test score");
+    entry = parseInt(entry);
+    var score1 = entry;
+    total = total + score1;
+
+    entry = prompt("Enter test score");
+    entry = parseInt(entry);
+    var score2 = entry;
+    total = total + score2;
+
+    entry = prompt("Enter test score");
+    entry = parseInt(entry);
+    var score3 = entry;
+    total = total + score3;
+
+    // 计算平均分
+    average = parseInt(total/3);
+  </script>
+</head>
+<body>
+  <script>
+    document.write("<h1>The Test Scores App</h1>");
+    document.write("Score 1 = " + score1 + "<br>" +
+    "Score 2 = " + score2 + "<br>" +
+    "Score 3 = " + score3 + "<br>" +
+    "Average score = " + average + "<br><br><br>");
+  </script>
+  感谢使用测试评分应用!
+</body>
+</html>
+```
+
+## 观点
+
+如果你有编程经验，现在可以发现 JavaScript 的语法与 Java 和 C# 等其他语言相似。因此，你应该能轻松读完这一章。
+
+另一方面，如果你是编程初学者，并且理解了本章中的所有代码，那么你已经了一个良好的开始。否则，你需要学习这些应用程序的应用，直到你理解每个应用程序中的每一行代码。你还应该完成随后的练习题。
+
+## 术语表
+
+| 外部 JavaScript 文件 | 浮点数 | 复合赋值 |
+| :--- | :--- | :--- |
+| 嵌入 JavaScript | 字符串数据类型 | 运算符 |
+| JavaScript 语句 | 字符串 | 拼接 |
+| 语法 | 空字符串 | 连接 |
+| 空白字符 | 布尔数据类型 | 拼接运算符 |
+| 标识符 | 布尔值 | 字符串表达式 |
+| 预留字 | 变量 | 转义序列 |
+| 关键字 | 声明变量 | 对象 |
+| 驼峰命名法 | 赋值语句 | 方法 |
+| 注释 | 赋值运算符 | 属性 |
+| 块注释 | 字面量值 | 调用方法 |
+| 行内注释 | 字面量 | 点运算符 (dot) |
+| 注释掉 | 字符串字面量 | 参数 |
+| 不常用的 | 数值字面量 | window 对象 |
+| 原生数据类型 | 算术表达式 | 全局对象 |
+| 数字类型 | 算术运算符 | NaN |
+| 整数 | 取模运算符 | document 对象 |
+| 小数值 | 优先级 | |
+
+## 总结
+
+- HTML 文档页面的 JavaScript 通常编写在外部 JavaScript 文件中，该文件通过 `script` 元素进行标识。然而，JavaScript 也可以嵌入在文档 `head` 或 `body` 中的 `script` 元素中。
+- JavaScript 语句的语法与 Java 相似。它的标识符区分大小写，并且通常使用驼峰命名法或下划线表示法编写。它的注释可以是块注释或行内注释。
+- JavaScript 提供了三种原生数据类型。数字类型提供整数和小数。字符串类型提供字符（字符串）数据。布尔类型提供真（`true`）和假（`false`）值。
+- 要给变量赋值，你使用赋值运算符。
+- 当给数字变量赋值时，你可以使用包含算术运算符、变量名和数值字面量的算术表达式。
+- 当给字符串赋值时，你可以使用包含拼接运算符、变量名和字符串字面量的字符串表达式。在字符串字面量内部，你可以使用转义序列提供特殊字符。
+- JavaScript 提供了许多带有方法属性的对象，你可以在应用程序中调用或引用它们。由于 `window` 对象是 JavaScript 的全局对象，在引用它的方法或属性时可以省略它。
+- `document` 对象提供了一些常用方法，如 `write()` 和 `writeln()` 方法。
+
+## 在完成本书的练习之前...
+
+如果你还没有这样做，应该安装 Chrome 浏览器并按照附录 A 中的描述安装本书的下载。
+
+### 练习 2-1 修改每加仑里程（Miles Per Gallon）应用程序
+
+在本次练习中，你将修改 MPG 应用的代码，使结果显示在浏览器窗口而不是警告对话框中。浏览器窗口看起来应该是这样的：
+
+![](img/32b24cb9657418b8429a4117bd539786_102_0.png)
+
+- 打开你的文本编辑器或 IDE。然后，打开此 HTML 文件：`javascript_jquery\exercises\ch02\mpg.html`
+- 使用有效输入运行应用程序，并记录结果。然后使用零或空格等无效输入运行，并记录结果。
+- 修改此应用程序，使结果显示在浏览器中而不是 `alert` 语句。此结果应该包含如上所示的用户输入的英里和加仑数。
+- 如果你在测试练习时遇到任何问题，请像上一章的图 1-16 所示使用 Chrome 的开发者工具。
+
+### 练习 2-2 修改测试评分（Test Scores）应用程序
+
+在本次练习中，你将修改测试评分应用程序，使其工作原理相同但代码量更少。应用程序的输出仍将显示在浏览器中，正如图 2-15 所示。
+
+1. 打开你的文本编辑器或 IDE。然后，打开此 HTML 文件：`javascript_jquery\exercises\ch02\scores.html`
+2. 使用有效输入运行应用程序，并记录结果。
+3. 修改此应用程序，使三个分数的变量声明在存储值之前解析输入。换句话说，每个变量的两行代码 `entry = parseInt(entry);` 和 `var score = entry;` 应该合并为一行。
+4. 修改累加总分的语句，使用图 2-9 所示的 `+=` 赋值运算符代替等运算符。
+
+### 练习 2-3 创建简单的应用程序
+
+复制并修改现有应用程序通常是开始新应用程序的好方法。在本次练习中，你将修改每加仑里程应用程序，从用户处获取矩形的长度和宽度，计算矩形的面积和周长，并如下所示在浏览器中显示结果：
+
+![](img/32b24cb9657418b8429a4117bd539786_103_0.png)
+
+1. 打开你的文本编辑器或 IDE。然后，打开此 HTML 文件：`javascript_jquery\exercises\ch02\rectangle.html`
+2. 可以看到，此文件包含了每加仑里程的代码。
+3. 修改此应用程序使其适用于矩形。面积是长度乘以宽度。周长是长度的 2 倍加上宽度的 2。
+4. 使用有效输入运行应用程序，并记录结果。然后使用零或空格等无效输入运行，并记录结果。
+5. 修改此应用程序，使结果显示在浏览器中而不是 `alert` 语句。此结果应该包含如上所示的用户输入的长度、宽度、面积和周长。
+6. 如果你在测试练习时遇到任何问题，请像上一章的图 1-16 所示使用 Chrome 的开发者工具。
+
+# 3
+
+[104]
+
+# 核心语句
+
+在上一章中，你学习了 JavaScript 的基础。现在，你将学习如何编写驱动逻辑的语句。
+
+## 如何编写条件表达式
+
+条件表达式是根据两个或多个值之间的比较结果求值为真或为假的表达式。你可以在 `if` 语句以及循环语句中使用这些表达式。
+
+## 如何使用关系运算符
+
+图 3-1 显示了如何使用关系运算符编写条件表达式。首先，表格总结了关系运算符。然后，示例展示了这些运算符是如何工作的。
+
+例如在第一个表达式中，如果 `lastName` 等于“Hopper”，则返回真。否则，返回假。同样，在第二个表达式中，如果 `testScore` 变量等于 10，则返回真。否则返回假。
+
+其余示例类似，它们展示了如何比较变量与字面量或变量与变量。最后一个示例展示了如何比较算术表达式与其他算术表达式。
+
+除了使用关系运算符编写条件表达式外，你还可以使用全局 `NaN` 方法。该方法用于判断字符串值是否为有效的数值，如接下来的示例所示。使用该方法时，传递一个表示要测试的字符串值的参数。如果无法转换为数字，该方法返回真；如果可以，则返回假。
+
+使用等运算符时，你需要记得使用两个等号而不是一个。这是因为一个等号是赋值运算符，而不是等运算符。这是学习编程时的常见错误，会导致语法错误。
+
+### 关系运算符
+
+| 运算符 | 名称 | 描述 |
+| --- | --- | --- |
+| `==` | 等于 | 如果两个操作数都相等，则返回 true。 |
+| `!=` | 不等于 | 如果两个操作数不相等，则返回 true。 |
+| `>` | 大于 | 如果左操作数大于右操作数，则返回 true。 |
+| `<` | 小于 | 如果左操作数小于右操作数，则返回 true。 |
+| `>=` | 大于等于 | 如果左操作数大于等于右操作数，则返回 true。 |
+| `<=` | 小于等于 | 如果左操作数小于等于右操作数，则返回 true。 |
+
+### 条件表达式示例
+
+```javascript
+lastName == "Hopper"
+testScore == 10
+
+firstName != "Grace"
+months != 0
+
+testScore > 100
+age < 18
+
+distance >= limit
+stock <= reorder_point
+
+rate / 100 >= 0.1
+```
+
+### 全局 isNaN() 方法的语法
+
+```javascript
+isNaN(expression)
+```
+
+### isNaN() 方法的示例
+
+```javascript
+isNaN('Hopper') // 返回 true，因为 "Hopper" 不是数字
+isNaN('123.45') // 返回 false，因为 "123.45" 可以转换为数字
+```
+
+- 条件表达式使用关系运算符来比较两个表达式的结果并返回一个布尔值（Boolean）。
+- 浮点数不是存储为精确值的，因此你不应该使用等于 (`==`) 或不等于 (`!=`) 运算符来比较它们。
+- `isNaN()` 方法测试字符串是否可以转换为数字。如果字符串不是数字，则返回 `true`；如果字符串是数字，则返回 `false`。
+
+## 注意
+
+- 混淆赋值运算符 (`=`) 和相等运算符 (`==`) 是常见的编程错误。
+
+图 3-1 如何使用关系运算符
+
+## 如何使用逻辑运算符
+
+要编写复合条件表达式，你使用图 3-2 所示的逻辑运算符来组合两个条件表达式。如果你使用 AND 运算符 (`&&`)，当两个表达式都为真时，复合表达式将返回 `true`。如果你使用 OR 运算符 (`||`)，当其中一个表达式为真时，复合表达式将返回 `true`。如果你使用 NOT 运算符 (`!`)，表达式返回的值将反转。例如，`isNaN(10)` 返回 `false`，但如果参数是 `NaN`，`isNaN(NaN)` 返回 `true`。
+
+此图中的示例显示了这些运算符是如何工作的。例如，第一个示例使用 AND 运算符组合两个条件表达式。结果，如果左侧的表达式和右侧的表达式都为真，它将求值为 `true`。同样，第二个示例使用 OR 运算符组合两个条件表达式。结果，如果左侧或右侧的表达式中任意一个为真，它将求值为 `true`。
+
+当你使用 AND 和 OR 运算符时，JavaScript 会从左到右评估表达式，并且只有在需要时才评估第二个表达式。这就是为什么这些运算符被称为*短路运算符*（short-circuit operators）。例如，如果 AND 操作中的第一个表达式为假，则第二个表达式不会被评估，因为整个表达式将是为假的。同样，如果 OR 操作中的第一个表达式为真，则第二个表达式不会被评估，因为整个表达式将为真的。
+
+此图中的第三个示例显示了如何使用 NOT 运算符来反转表达式的值。结果，如果 `age` 变量等于一个数字，该表达式将求值为 `true`。在这种情况下，使用 NOT 运算符是可以的，但通常一种良好的做法是重写你的代码使其不使用 NOT 运算符。
+
+此图还显示了逻辑运算符的优先级顺序。即在复合表达式中使用多个逻辑运算符时，运算符被评估的顺序。这意味着 NOT 运算符在 AND 运算符之前评估，而 AND 运算符在 OR 运算符之前评估。虽然这通常是你所希望的，但你可以使用括号来覆盖此顺序。
+
+在大多数情况下，你使用的条件表达式是相对简单的，因此编写它们没有太大问题。在本章和本书的其余部分，你将看到一些常用的条件表达式类型。
+
+### 逻辑运算符
+
+| 运算符 | 名称 | 描述 |
+| --- | --- | --- |
+| `&&` | AND | 如果两个表达式都为真，则返回真值。该运算符仅在需要时才评估第二个表达式。 |
+| `||` | OR | 如果其中一个表达式为真，则返回真值。该运算符仅在需要时才评估第二个表达式。 |
+| `!` | NOT | 反转布尔表达式的值。 |
+
+### 使用逻辑运算符的条件表达式
+
+**示例 1：AND 运算符**
+
+```javascript
+age > 17 && score < 70
+```
+
+**示例 2：OR 运算符**
+
+```javascript
+isNaN(rate) || rate < 0
+```
+
+**示例 3：NOT 运算符**
+
+```javascript
+!isNaN(age)
+```
+
+### 逻辑运算符的优先级
+
+1. NOT 运算符
+2. AND 运算符
+3. OR 运算符
+
+- 复合条件表达式使用逻辑运算符连接两个或多个条件表达式。
+- 如果使用逻辑运算符连接两个或多个条件表达式，操作执行的顺序由运算符的*优先级*决定。为了澄清或更改优先级，你可以使用括号。
+- AND 和 OR 运算符仅在需要时才评估第二个表达式。因此，它们被称为*短路运算符*。
+
+![](img/32b24cb9657418b8429a4117bd539786_108_0.png)
+
+## 如何编写基础控制语句
+
+像所有编程语言一样，JavaScript 提供了控制语句，让你控制应用程序中信息的处理。这些语句包括 `if` 语句以及循环语句。
+
+### 如何编写 if 语句
+
+如果你用过其他语言，使用 JavaScript 的 `if` 语句不会有困难。只需研究图 3-3 以了解语法以及它是如何编写的。
+
+`if` 语句根据条件表达式控制语句的执行。在像图中这样的语法中，方括号 `[]` 表示可选部分。结果是，这意味着每个语句必须以 `if` 子句开头。然后，它可以有一个或多个 `else if` 子句，但它们是可选的。最后，它还可以有一个 `else` 子句，这也是可选的。
+
+编写 `if` 子句，你编写关键字后跟一个括号内的条件表达式和一个包含一个或多个语句的大括号。如果条件表达式为真，将执行该代码块，`if` 语句的剩余部分将被跳过。如果条件表达式为假，将执行后续的语句。
+
+编写 `else if` 子句，你编写关键字 `else if` 后跟一个括号内的条件表达式和一个包含一个或多个语句的大括号。如果条件表达式为真，将执行该代码块，`if` 语句的剩余部分将被跳过。它将继续执行，直到某个 `else if` 表达式为真或它们全部为假。
+
+编写 `else` 子句，你编写关键字 `else` 后跟一个或多个语句的大括号。只有当 `if` 子句和 `else if` 子句中的所有条件表达式都为假时，才会执行它。如果这些表达式为假且没有 `else` 子句，`if` 语句不会执行任何代码。
+
+此图中的第一个示例是一个带有 `else` 子句的语句。在这里，如果 `age` 变量的值大于或等于 18，将显示第一条消息。否则，将显示第二条消息。
+
+第二个示例是一个带有两个 `else if` 子句和一个 `else` 子句的语句。在这里，如果 `rate` 不是数字，显示第一个消息。如果 `rate` 小于 0，显示第二个消息。如果 `rate` 大于 12，显示第三条消息。否则，显示 `else` 子句中的消息。
+
+第三个示例显示了一个带有复合表达式的语句，测试 `userInput` 变量的值是否不是数字或该值是否小于等于零。如果任一表达式为真，将显示消息。如果两个表达式都为假，则什么都不做，因为这个 `if` 语句没有 `else` 子句。
+
+#### if 语句的语法
+
+```javascript
+if ( condition-1 ) { statements }
+  else if ( condition-2 ) { statements }
+  ...
+  else if ( condition-n ) { statements }
+  else { statements } 
+```
+
+#### 带有 else 子句的 if 语句
+
+```javascript
+if ( age >= 18 ) {
+    alert ("You may vote.");
+} else {
+    alert ("You are not old enough to vote.");
+}
+```
+
+#### 带有 else if 和 else 子句的 if 语句
+
+```javascript
+if ( isNaN(rate) ) {
+    alert ("You did not provide a number for the rate.");
+} else if ( rate < 0 ) {
+    alert ("The rate may not be less than zero.");
+} else if ( rate > 12 ) {
+    alert ("The rate may not be greater than 12.");
+} else {
+    alert ("The rate is: " + rate + ".");
+}
+```
+
+#### 带有条件表达式的 if 语句
+
+```javascript
+if ( isNaN(userEntry) || userEntry <= 0 ) {
+    alert ("Please enter a valid number greater than zero.");
+}
+```
+
+#### 测试布尔变量是否为真的两种方法
+
+```javascript
+if ( isValid == true ) {}
+if ( isValid ) {} // 等同于 isValid == true
+```
+
+#### 测试布尔变量是否为假的三种方法
+
+```javascript
+if ( isValid == false ) {}
+if ( !isValid == true ) {}
+if ( !isValid ) {} // 等同于 !isValid == true
+```
+
+## 描述
+
+- 一个 `if` 语句始终有一个 `if` 子句。它也可以有一个或多个 `else if` 子句和一个 `else` 子句。
+- 当子句的条件为真时，执行其中的语句。否则，控制传递到下一个子句。如果之前的所有子句都不为真，则执行 `else` 子句中的语句。
+- 如果必要，你可以在另一个 `if` 语句的 `else`、`else if` 或 `else` 子句中编写一条语句。这被称为 `if` 语句的嵌套。
+
+图 3-3 中的第四组示例展示了测试布尔变量是否为真的两种方法。在这里，两个语句的求值方式相同。这是因为仅写为仅布尔变量的条件会被测试该变量是否等于 `true`。在实践中，这种条件通常按照第二个语句中的方式编写，仅使用变量名。
+
+第五组示例也类似。它展示了测试布尔变量是否为假的三种方法。在这里，最后一条语句说明了这种条件通常是如何编写的：`!isValid`。
+
+### 如何编写 while 和 do-while 循环
+
+图 3-4 首先介绍了用于创建循环的 `while` 语句的语法。该语句在条件表达式为真时执行循环中的代码块。
+
+该语法的示例展示了如何使用 `while` 循环来累加 1 到 5 的数字。在 `while` 语句开始之前，名为 `sumOfNumbers` 的变量被设置为 0，名为 `numberOfLoops` 的变量被设置为 5，名为 `counter` 的变量被设置为 1。然后，`while` 语句的条件规定，只要 `counter` 的值小于或等于 `numberOfLoops` 的值，循环就会重复。
+
+在循环内部，第一条语句将 `counter` 的值加到 `sumOfNumbers` 变量上。然后，`counter` 递增 1。结果是，循环执行了五次，分别对应 `counter` 值为 1、2、3、4 和 5。当 `counter` 不再小于或等于 5 时循环结束，即 `counter` 等于 6 时。
+
+该示例之后是 `do-while` 语句，它用于创建 `do-while` 循环。这与 `while` 语句相似，但它的条件是在循环结束时测试的，而不是在开始。因此，循环中的语句至少执行一次。该语句通过语法后的示例进行了说明，其获得的结果与 `while` 语句相同。
+
+通常情况下，当你希望至少执行一次循环中的语句时，你会使用 `do-while` 语句，而其他类型的循环则使用 `while` 语句。不过，只要编写正确，你可以使用这两种语句获得相同的结果。
+
+图中的最后一个示例展示了 `do-while` 循环的另一种用法。当用户的输入不是数字（`isNaN()`）时，循环将继续。在循环内部，`prompt` 语句获取用户的输入，对输入进行解析，如果输入不是数字，则 `if` 语句会显示错误消息。该循环一直持续到用户输入数字。
+
+如果 `while` 语句的条件不变为假，循环将无限持续下去。这被称为无限循环。当你刚开始编程时，无意中编写无限循环是很常见的。如果你这样做了，可以通过关闭应用程序的标签页或浏览器来结束循环。
+
+#### while 循环的语法
+
+```javascript
+while ( condition ) { statements }
+```
+
+#### 累加 1 到 5 数字的 while 循环
+
+```javascript
+var sumOfNumbers = 0;
+var numberOfLoops = 5;
+var counter = 1;
+while (counter <= numberOfLoops) {
+    sumOfNumbers += counter; // 将 counter 加到 sumOfNumbers
+    counter++; // 将 counter 增加 1
+}
+alert(sumOfNumbers);    // 显示 sumOfNumbers
+```
+
+#### do-while 循环的语法
+
+```javascript
+do { statements } while ( condition )
+```
+
+#### 累加 1 到 5 数字的 do-while 循环
+
+```javascript
+var sumOfNumbers = 0;
+var numberOfLoops = 5;
+var counter = 1;
+do {
+    sumOfNumbers += counter; // 将 counter 加到 sumOfNumbers
+    counter++; // 将 counter 增加 1
+} while (counter <= numberOfLoops);
+alert(sumOfNumbers);    // 显示 sumOfNumbers
+```
+
+### 如何编写 for 循环
+
+图 3-5 介绍了用于创建循环的 `for` 语句的语法。当你需要增加或减少一个决定循环执行次数的计数器时，就会使用 `for` 语句。
+
+在 `for` 语句的括号内，你编写了一个用于初始化计数器（或索引）变量的表达式、一个决定循环何时结束的条件表达式，以及一个指示每次循环时计数器应如何增加或减少的递增表达式。
+
+变量名 `i` 通常用于 `for` 循环中的计数器。
+
+#### for 循环的语法
+
+```javascript
+for ( initialization; condition; increment ) { statements }
+```
+
+#### 累加 1 到 5 数字的 for 循环
+
+```javascript
+var sumOfNumbers = 0;
+for (var counter = 1; counter <= 5; counter++) {
+    sumOfNumbers += counter; // 将 counter 加到 sumOfNumbers
+}
+alert(sumOfNumbers);    // 显示 sumOfNumbers
+```
+
+#### for 语句的语法
+
+```javascript
+for ( counterInitialization; condition; incrementExpression ) {
+  statements
+}
+```
+
+#### 加加 1 到 5 数字的 for 循环
+
+```javascript
+var sumOfNumbers = 0;
+var numberOfLoops = 5;
+for ( var counter = 1; counter <= numberOfLoops; counter++) {
+  sumOfNumbers += counter; // 将 counter 加到 sumOfNumbers
+}
+alert(sumOfNumbers); // 显示 15
+```
+
+#### 计算投资未来值的 for 循环
+
+```javascript
+var investment = 10000;
+var annualRate = 7.0;
+var years = 10;
+var futureValue = investment;
+for ( var i = 1; i <= years; i++) {
+  futureValue += futureValue * annualRate / 100;
+}
+alert(futureValue); // 显示 19672
+```
+
+#### 未来值计算的其他编码方式
+
+```javascript
+futureValue = futureValue + (futureValue * annualRate / 100);
+futureValue = futureValue * (1 + (annualRate / 100))
+```
+
+- 当你需要增加或减少一个决定 `for` 循环执行次数的计数器时，就会使用 `for` 语句。
+- 在 `for` 语句的括号内，你编写了一个用于初始化计数器（或索引）变量的表达式、一个决定循环何时结束的条件表达式，以及一个指示每次循环时计数器应如何增加或减少减的递增表达式。
+- 变量名 `i` 通常用于 `for` 循环中的计数器。
+
+## 三个说明性应用
+
+接下来的三个应用说明了你刚刚学到的控制语句的使用。这些仍然不是真实的应用，因为它们是从 `prompt` 语句获取用户输入，而不是从表单。但这些应用应该让你更好地理解控制语句的工作原理。
+
+## 增强版的每加仑里程（Miles Per Gallon）应用
+
+图 3-6 展示了你在第 2 章中复过的每加仑里程应用的增强版本。该程序仅获取用户输入的行驶英里和燃油加仑，并在 `alert` 对话框中显示每加仑英里。
+
+这次，该程序允许用户对多组输入进行计算。它还会检查输入以确保两者都是有效的，如果其中一个或两个无效，则显示错误消息。
+
+在 JavaScript 中，你可以看到如何使用 `do-while` 循环让用户重复计算。在进入此循环之前，一个名为 `again` 的变量被设置为值 `"y"`。然后，`do-while` 循环一直重复，直到值被用户更改。当循环中的最后一条语句显示图中的第二个 `prompt` 对话框时，用户可以做到这一点。
+
+在 `do-while` 循环中，你可以看到如何使用 `if-else` 语句来提供数据验证。这里，`if` 子句的条件使用逻辑与 (`&&`) 运算符来检查输入的英里数是否为数字（`!isNaN()`）且大于零。如果所有四个条件都为真，程序将计算每加仑英里并在 `alert` 对话框中显示结果。如果任何一个条件不为真，程序将在 `alert` 对话框中显示错误消息。
+
+换句话说，这个 `if-else` 语句测试两个输入是否都有效。如果是，它就进行计算并显示结果。如果不是，它就显示错误消息。然而，注意这可以通过通过逻辑或 (`||`) 运算符测试其中一个输入是否无效来反转。如果是，你就显示错误消息。如果不是，你就不进行计算并显示结果。这可以简化编码，因为你不需要在使用 `!isNaN()` 方法时使用非运算符 (`!`)。
+
+### 每加仑里程应用的两个对话框
+
+#### 显示无效数据消息的 alert 对话框
+
+![](img/32b24cb9657418b8429a4117bd539786_116_0.png)
+
+#### 继续运行程序的 prompt 对话框
+
+![](img/32b24cb9657418b8429a4117bd539786_116_1.png)
+
+### 程序的 HTML 和 JavaScript
+
+```html
+<head>
+<title>Calculate Miles Per Gallon</title>
+<script>
+var again = "y";
+do {
+  var miles = prompt("Enter miles driven");
+  miles = parseFloat(miles);
+  var gallons = prompt("Enter gallons of gas used");
+  gallons = parseFloat(gallons);
+  if (!isNaN(miles) && miles > 0 && !isNaN(gallons) && gallons > 0)
+{
+    var mpg = miles / gallons;
+    mpg = parseInt(mpg);
+    alert("Miles per gallon = " + mpg);
+  } else {
+    alert("One or both entries are invalid");
+  }
+  again = prompt("Repeat entries?", "y");
+} while (again == "y");
+</script>
+</head>
+<body>
+<main>
+<!-- 在 JavaScript 运行后将显示 -->
+Thanks for using the Miles Per Gallon application!
+</main>
+</body>
+```
+
+图 3-6 增强版的每加仑里程应用
+
+## 未来值应用
+
+
+
+# 3-7 未来值应用
+
+3-7 展示了一个未来值应用，显示了如何使用 `for` 循环来计算投资金额的未来值。如果你学习该应用的代码，你可以看到 `prompt` 语句被用于获取投资金额、利率和年数。然而，请注意，`for` 循环被用于计算未来值。在进入循环之前，一个名为 `again` 的变量被设置为值 `"y"`。然后，`do-while` 循环一直重复，直到值被用户更改。当循环中的最后一条语句显示图中的第二个 `prompt` 对话框时，用户可以做到这一点。
+
+在 `do-while` 循环中，你可以看到如何使用 `if-else` 语句来提供数据验证。这里，`if` 子句的条件使用逻辑与 (`&&`) 运算符来检查输入的英里数是否为数字（`!isNaN()`）且大于零。如果所有四个条件都为真，程序将计算每加仑英里并在 `alert` 对话框中显示结果。如果任何一个条件不为真，程序将在 `alert` 对话框中显示错误消息。
+
+换句话说，这个 `if-else` 语句测试两个输入是否都有效。如果是，它就进行计算并显示结果。如果不是，它就显示错误消息。然而，注意这可以通过逻辑或 (`||`) 运算符测试其中一个输入是否无效来反转。如果是，你就显示错误消息。如果不是，你就进行计算并显示结果。这可以简化编码，因为你不需要在使用 `!isNaN()` 方法时使用非运算符 (`!`)。
+
+变量名 `i` 通常用于 `for` 循环中的计数器。
+
+## 说明
+
+- `for` 语句用于需要增加或减少一个决定 `for` 循环执行次数的计数器时。
+- 在 `for` 语句的括号内，你编写了一个用于初始化计数器（或索引）变量的表达式、一个决定循环何时结束的条件表达式，以及一个指示每次循环时计数器应如何增加或减少的递增表达式。
+- 变量名 `i` 通常用于 `for` 循环中的计数器。
+
+## 三个说明性应用
+
+接下来的三个应用说明了你刚刚学到的控制语句的使用。这些仍然不是真实的应用，因为它们是从 `prompt` 语句获取用户输入，而不是从表单。但这些应用应该让你更好地理解控制语句的工作原理。
+
+## 增强版的每加仑里程（Miles Per Gallon）应用
+
+图 3-6 展示了你在第 2 章中复过的每加仑里程应用的增强版本。该程序仅获取用户输入的行驶英里和燃油加仑，并在 `alert` 对话框中显示每加仑英里。
+
+这次，该程序允许用户对多组输入进行计算。它还会检查输入以确保两者都是有效的，如果其中一个或两个无效，则显示错误消息。
+
+在 JavaScript 中，你可以看到如何使用 `do-while` 循环让用户重复计算。在进入此循环之前，一个名为 `again` 的变量被设置为值 `"y"`。然后，`do-while` 循环一直重复，直到值被用户更改。当循环中的最后一条语句显示图中的第二个 `prompt` 对话框时，用户可以做到这一点。
+
+在 `do-while` 循环中，你可以看到如何使用 `if-else` 语句来提供数据验证。这里，`if` 子句的条件使用逻辑与 (`&&`) 运算符来检查输入的英里数是否为数字（`!isNaN()`）且大于零。如果所有四个条件都为真，程序将计算每加仑英里并在 `alert` 对话框中显示结果。如果任何一个条件不为真，程序将在 `alert` 对话框中显示错误消息。
+
+换句话说，这个 `if-else` 语句测试两个输入是否都有效。如果是，它就进行计算并显示结果。如果不是，它就显示错误消息。然而，注意这可以通过逻辑或 (`||`) 运算符测试其中一个输入是否无效来反转。如果是，你就显示错误消息。如果不是，你就进行计算并显示结果。这可以简化编码，因为你不需要在使用 `!isNaN()` 方法时使用非运算符 (`!`)。
+
+### 每加仑里程应用的两个对话框
+
+**显示无效数据消息的 alert 对话框**
+
+![](img/32b24cb9657418b8429a4117bd539786_116_0.png)
+
+**继续运行程序的 prompt 对话框**
+
+![](img/32b24cb9657418b8429a4117bd539786_116_1.png)
+
+### 程序的 HTML 和 JavaScript
+
+```html
+<head>
+<title>Calculate Miles Per Gallon</title>
+<script>
+var again = "y";
+do {
+  var miles = prompt("Enter miles driven");
+  miles = parseFloat(miles);
+  var gallons = prompt("Enter gallons of gas used");
+  gallons = parseFloat(gallons);
+  if (!isNaN(miles) && miles > 0 && !isNaN(gallons) && gallons > 0) {
+    var mpg = miles / gallons;
+    mpg = parseInt(mpg);
+    alert("Miles per gallon = " + mpg);
+  } else {
+    alert("One or both entries are invalid");
+  }
+  again = prompt("Repeat entries?", "y");
+} while (again == "y");
+</script>
+</head>
+<body>
+<main>
+<!-- 在 JavaScript 运行后将显示 -->
+Thanks for using the Miles Per Gallon application!
+</main>
+</body>
+```
+
+图 3-6 增强版的每加仑里程应用
+
+## 未来值应用
+
+3-7 展示了一个未来值应用，显示了如何使用 `for` 循环来计算投资金额的未来值。如果你学习该应用的代码，你可以看到 `prompt` 语句被用于获取投资金额、利率和年数。然而，请注意，`for` 循环被用于计算未来值。在进入循环之前，一个名为 `again` 的变量被设置为值 `"y"`。然后，`do-while` 循环一直重复，直到值被用户更改。当循环中的最后一条语句显示图中的第二个 `prompt` 对话框时，用户可以做到这一点。
+
+在 `do-while` 循环中，你可以看到如何使用 `if-else` 语句来提供数据验证。这里，`if` 子句的条件使用逻辑与 (`&&`) 运算符来检查输入的英里数是否为数字（`!isNaN()`）且大于零。如果所有四个条件都为真，程序将计算每加仑英里并在 `alert` 对话框中显示结果。如果任何一个条件不为真，程序将在 `alert` 对话框中显示错误消息。
+
+换句话说，这个 `if-else` 语句测试两个输入是否都有效。如果是，它就进行计算并显示结果。如果不是，它就显示错误消息。然而，注意这可以通过逻辑或 (`||`) 运算符测试其中一个输入是否无效来反转。如果是，你就显示错误消息。如果不是，你就进行计算并显示结果。这可以简化编码，因为你不需要在使用 `!isNaN()` 方法时使用非运算符 (`!`)。
+
+变量名 `i` 通常用于 `for` 循环中的计数器。
+
+## 说明
+
+- `for` 语句用于需要增加或减少一个决定 `for` 循环执行次数的计数器时。
+- 在 `for` 语句的括号内，你编写了一个用于初始化计数器（或索引）变量的表达式、一个决定循环何时结束的条件表达式，以及一个指示每次循环时计数器应如何增加或减少的递增表达式。
+- 变量名 `i` 通常用于 `for` 循环中的计数器。
+
+## 三个说明性应用
+
+接下来的三个应用说明了你刚刚学到的控制语句的使用。这些仍然不是真实的应用，因为它们是从 `prompt` 语句获取用户输入，而不是从表单。但这些应用应该让你更好地理解控制语句的工作原理。
+
+
+
+# `for` 语句的语法
+
+```javascript
+for ( counterInitialization; condition; incrementExpression ) {
+  statements
+}
+```
+
+# 加加 1 到 5 数字的 `for` 循环
+
+```javascript
+var sumOfNumbers = 0;
+var numberOfLoops = 5;
+for ( var counter = 1; counter <= numberOfLoops; counter++) {
+  sumOfNumbers += counter; // 将 counter 加到 sumOfNumbers
+}
+alert(sumOfNumbers); // 显示 15
+```
+
+# 计算投资未来值的 `for` 循环
+
+```javascript
+var investment = 10000;
+var annualRate = 7.0;
+var years = 10;
+var futureValue = investment;
+for ( var i = 1; i <= years; i++) {
+  futureValue += futureValue * annualRate / 100;
+}
+alert(futureValue); // 显示 19672
+```
+
+# 未来值计算的其他编码方式
+
+```javascript
+futureValue = futureValue + (futureValue * annualRate / 100);
+futureValue = futureValue * (1 + (annualRate / 100))
+```
+
+## 描述
+
+- 当你需要增加或减少一个决定 `for` 循环执行次数的计数器时，就会使用 `for` 语句。
+- 在 `for` 语句的括号内，你编写了一个用于初始化计数器（或索引）变量的表达式、一个决定循环何时结束的条件表达式，以及一个指示每次循环时计数器应如何增加或减少的递增表达式。
+- 变量名 `i` 通常用于 `for` 循环中的计数器。
+
+# 三个说明性应用
+
+接下来的三个应用说明了你刚刚学到的控制语句的使用。这些仍然不是真实的应用，因为它们是从 `prompt` 语句获取用户输入，而不是从表单。但这些应用应该让你更好地理解控制语句的工作原理。
+
+# 增强版的每加仑里程（Miles Per Gallon）应用
+
+图 3-6 展示了你在第 2 章中复过的每加仑里程应用的增强版本。该程序仅获取用户输入的行驶英里和燃油加仑，并在 alert 对话框中显示每加仑英里。
+
+这次，该程序允许用户对多组输入进行计算。它还会检查输入以确保两者都是有效的，如果其中一个或两个无效，则显示错误消息。
+
+在 JavaScript 中，你可以看到如何使用 `do-while` 循环让用户重复计算。在进入此循环之前，一个名为 "again" 的变量被设置为值 "y"。然后，`do-while` 循环一直重复，直到值被用户更改。当循环中的最后一条语句显示图中的第二个 prompt 对话框时，用户可以做到这一点。
+
+在 `do-while` 循环中，你可以看到如何使用 `if-else` 语句来提供数据验证。这里，`if` 子句的条件使用逻辑与 (`&&`) 运算符来检查输入的英里数是否为数字（`!isNaN()`）且大于零。如果所有四个条件都为真，程序将计算每加仑英里并在 alert 对话框中显示结果。如果任何一个条件不为真，程序将在 alert 对话框中显示错误消息。
+
+换句话说，这个 `if-else` 语句测试两个输入是否都有效。如果是，它就进行计算并显示结果。如果不是，它就显示错误消息。然而，注意这可以通过通过逻辑或 (`||`) 运算符测试其中一个输入是否无效来反转。如果是，你就显示错误消息。如果不是，你就不进行计算并显示结果。这可以简化编码，因为你不需要在使用 `!isNaN()` 方法时使用非运算符 (`!`)。
+
+# 每加仑里程应用的两个对话框
+
+显示无效数据消息的 alert 对话框
+
+![](img/32b24cb9657418b8429a4117bd539786_116_0.png)
+
+# 继续运行程序的 prompt 对话框
+
+![](img/32b24cb9657418b8429a4117bd539786_116_1.png)
+
+# 程序的 HTML 和 JavaScript
+
+```html
+<head>
+<title>Calculate Miles Per Gallon</title>
+<script>
+var again = "y";
+do {
+  var miles = prompt("Enter miles driven");
+  miles = parseFloat(miles);
+  var gallons = prompt("Enter gallons of gas used");
+  gallons = parseFloat(gallons);
+  if (!isNaN(miles) && miles > 0 && !isNaN(gallons) && gallons > 0)
+{
+    var mpg = miles / gallons;
+    mpg = parseInt(mpg);
+    alert("Miles per gallon = " + mpg);
+  } else {
+    alert("One or both entries are invalid");
+  }
+  again = prompt("Repeat entries?", "y");
+} while (again == "y");
+</script>
+</head>
+<body>
+<main>
+<!-- 在 JavaScript 运行后将显示 -->
+Thanks for using the Miles Per Gallon application!
+</main>
+</body>
+```
+
+图 3-6 增强版的每加仑里程应用
+
+# 未来值应用
+
+3-7 展示了一个未来值应用，显示了如何使用 `for` 循环来计算投资金额的未来值。如果你学习该应用的代码，你可以看到 `prompt` 语句被用于获取投资金额、利率和年数。然而，请注意，`for` 循环被用于计算未来值。在进入循环之前，一个名为 "again" 的变量被设置为值 "y"。然后，`do-while` 循环一直重复，直到值被用户更改。当循环中的最后一条语句显示图中的第二个 prompt 对话框时，用户可以做到这一点。
+
+在 `do-while` 循环中，你可以看到如何使用 `if-else` 语句来提供数据验证。这里，`if` 子句的条件使用逻辑与 (`&&`) 运算符来检查输入的英里数是否为数字（`!isNaN()`）且大于零。如果所有四个条件都为真，程序将计算每加仑英里并在 alert 对话框中显示结果。如果任何一个条件不为真，程序将在 alert 对话框中显示错误消息。
+
+换句话说，这个 `if-else` 语句测试两个输入是否都有效。如果是，它就进行计算并显示结果。如果不是，它就显示错误消息。然而，注意这可以通过通过逻辑或 (`||`) 运算符测试其中一个输入是否无效来反转。如果是，你就显示错误消息。如果不是，你就不进行计算并显示结果。这可以简化编码，因为你不需要在使用 `!isNaN()` 方法时使用非运算符 (`!`)。
+
+变量名 `i` 通常用于 `for` 循环中的计数器。
+
+# 说明
+
+- `for` 语句用于需要增加或减少一个决定 for 循环执行次数的计数器时。
+- 在 for 语句的括号内，你编写了一个用于初始化计数器（或索引）变量的表达式、一个决定循环何时结束的条件表达式，以及一个指示每次循环时计数器应如何增加或减少的递增表达式。
+- 变量名 `i` 通常用于 `for` 循环中的计数器。
+
+# 三个说明性应用
+
+接下来的三个应用说明了你刚刚学到的控制语句的使用。这些仍然不是真实的应用，因为它们是从 `prompt` 语句获取用户输入，而不是从表单。但这些应用应该让你更好地理解控制语句的工作原理。
+
+# 增强版的每加仑里程（Miles Per Gallon）应用
+
+图 3-6 展示了你在第 2 章中复过的每加仑里程应用的增强版本。该程序仅获取用户输入的行驶英里和燃油加仑，并在 alert 对话框中显示每加仑英里。
+
+这次，该程序允许用户对多组输入进行计算。它还会检查输入以确保两者都是有效的，如果其中一个或两个无效，则显示错误消息。
+
+在 JavaScript 中，你可以看到如何使用 `do-while` 循环让用户重复计算。在进入此循环之前，一个名为 "again" 的变量被设置为值 "y"。然后，`do-while` 循环一直重复，直到值被用户更改。当循环中的最后一条语句显示图中的第二个 prompt 对话框时，用户可以做到这一点。
+
+在 `do-while` 循环中，你可以看到如何使用 `if-else` 语句来提供数据验证。这里，`if` 子句的条件使用逻辑与 (`&&`) 运算符来检查输入的英里数是否为数字（`!isNaN()`）且大于零。如果所有四个条件都为真，程序将计算每加仑英里并在 alert 对话框中显示结果。如果任何一个条件不为真，程序将在 alert 对话框中显示错误消息。
+
+换句话说，这个 `if-else` 语句测试两个输入是否都有效。如果是，它就进行计算并显示结果。如果不是，它就显示错误消息。然而，注意这可以通过通过逻辑或 (`||`) 运算符测试其中一个输入是否无效来反转。如果是，你就显示错误消息。如果不是，你就不进行计算并显示结果。这可以简化编码，因为你不需要在使用 `!isNaN()` 方法时使用非运算符 (`!`)。
+
+# 每加仑里程应用的两个对话框
+
+显示无效数据消息的 alert 对话框
+
+![](img/32b24cb9657418b8429a4117bd539786_116_0.png)
+
+# 继续运行程序的 prompt 对话框
+
+![](img/32b24cb9657418b8429a4117bd539786_116_1.png)
+
+# 程序的 HTML 和 JavaScript
+
+```html
+<head>
+<title>Calculate Miles Per Gallon</title>
+<script>
+var again = "y";
+do {
+  var miles = prompt("Enter miles driven");
+  miles = parseFloat(miles);
+  var gallons = prompt("Enter gallons of gas used");
+  gallons = parseFloat(gallons);
+  if (!isNaN(miles) && miles > 0 && !isNaN(gallons) && gallons > 0)
+{
+    var mpg = miles / gallons;
+    mpg = parseInt(mpg);
+    alert("Miles per gallon = " + mpg);
+  } else {
+    alert("One or both entries are invalid");
+  }
+  again = prompt("Repeat entries?", "y");
+} while (again == "y");
+</script>
+</head>
+<body>
+<main>
+<!-- 在 JavaScript 运行后将显示 -->
+Thanks for using the Miles Per Gallon application!
+</main>
+</body>
+```
+
+## 第 3 章 核心 JavaScript 语句 101
+
+## 成绩应用程序的对话框
+
+用于下一个测试成绩的提示对话框
+
+![](img/32b24cb9657418b8429a4117bd539786_120_0.png)
+
+用于输入错误的警告对话框
+
+![](img/32b24cb9657418b8429a4117bd539786_120_1.png)
+
+显示结果的警告对话框
+
+![](img/32b24cb9657418b8429a4117bd539786_120_2.png)
+
+## HTML 文件 head 区域中的 JavaScript
+
+```javascript
+<script>
+var total = 0;
+var entryCount = 0;
+var entry;
+do {
+  entry = prompt("Enter test score\n" +
+    "\Or enter 999 to end entries", 999);
+  entry = parseInt(entry);
+  if (entry >= 0 && entry <= 100) {
+    total = total + entry;
+    entryCount++;
+  } else if (entry != 999) {
+    alert("Entry must by a valid number from 0 through 100\n" +
+      "\Or enter 999 to end entries");
+  }
+} while (entry != 999);
+var average = total / entryCount;
+average = parseInt(average);
+alert("Average score is " + average);
+</script>
+```
+
+图 3-8 增强后的成绩应用程序
+
+## 如何操作数组
+
+接下来的两图展示了操作数组的基本技能。正如你所看到的，数组在 JavaScript 应用中被常用。
+
+## 如何创建和使用数组
+
+数组是一个包含一个或多个元素的对象。这些元素元素可以是原始数据类型或对象。数组的长度表示它包含的元素数量。
+
+3-9 显示了创建数组的两种方法。使用第一种方法时，使用 `new` 关键字后跟 `Array` 对象名称来创建一个元素数量由 `length` 参数指定的数组。该长度必须是大于或等于零的整数。如果你不指定长度，数组将是空的。
+
+使用第二种方法时，你只需要编写一组括号。这将带给你与第一种方法不带参数时相同的结果，即一个空数组。
+
+要引用数组中的元素，你使用一个范围从 0 到数组元素数量减 1 的索引。例如，在一个包含 12 个元素的数组中，索引值范围从 0 到 11。
+
+要使用索引，请在数组名称后的括号内编写它。在图中，所有的示例都对索引使用了字面量（literal），但索引也可以是包含索引值的变量，你稍后就会看到。如果你尝试访问一个未赋值的元素，将返回 `undefined` 的值。
+
+图中的最后两个示例展示了如何操作数组的 `length` 属性。`length` 属性返回数组中的元素数量。在第一个示例中，`length` 属性被存储在一个变量中以备后用。
+
+在第二个示例中，`length` 属性被用作新元素的索引。由于该属性始终比数组中使用的最高索引大 1，这会将新元素添加到数组的末尾。
+
+## 创建数组的语法
+
+### 使用 new 关键字配合 Array 对象名称
+
+```javascript
+var arrayName = new Array(length);
+```
+
+### 使用数组字面量
+
+```javascript
+var arrayName = [];
+```
+
+## 引用数组元素的语法
+
+```javascript
+arrayName[index]
+```
+
+## 获取数组长度 属性的语法
+
+```javascript
+arrayName.length
+```
+
+## 如何向数组添加值
+
+```javascript
+var totals = [];
+totals[0] = 141.95;
+totals[1] = 212.25;
+totals[2] = 41;
+```
+
+## 如何引用数组中的元素
+
+```javascript
+totals[2] // 引用第三个元素 - 411
+totals[1] // 引用第二个元素 - 212.25
+```
+
+## 如何确定数组中有多少元素
+
+```javascript
+var count = totals.length; // 3
+```
+
+## 如何向数组末尾添加值
+
+```javascript
+totals[totals.length] = 135.75; // 在索引 = 3 处添加第四个元素
+```
+
+## 描述
+
+- 数组可以存储一个或多个元素。数组的长度是数组中的元素数量。
+- 创建数组的一种方法是使用 `new` 关键字、对象名称（`Array`）以及可选的长度参数。
+- 创建数组的另一种方法是编写一组括号。
+- 要引用数组中的元素，使用索引，其中 0 是第一个元素，1 是第二个元素，以此类推。
+- 向数组末尾添加元素的一种方法是使用 `length` 属性作为索引。
+
+## 如何使用 for 循环操作数组
+
+`for` 循环通常用于通过增加索引变量来一次处理一个数组元素。图 3-10 展示了工作原理。
+
+图中的第一个示例展示了如何创建一个数组并填充 1 到 10 的数字。首先，该代码创建了一个名为 `numbers` 的空数组。然后，它使用 `for` 循环将 1 到 10 的数字添加到数组中。在循环体内，将 `i` 的值加 1 并结果存储在数组元素中。结果是索引 0 元素存储 1，索引 1 元素存储 2，以此类推。
+
+接下来，该示例显示了数组中的值。首先，该代码创建一个名为 `numbersString` 的空字符串。然后，它使用 `for` 循环访问数组中的元素。在 `for` 循环中，使用数组的 `length` 属性来控制循环执行次数。这使得相同的代码适用于不同长度的数组。在 `for` 循环内部，元素的值和空格连接到 `numbersString` 的末尾。最后，显示 `numbersString`。
+
+图中下一个示例展示了如何操作数组的 `length` 属性。`length` 属性返回数组中的元素数量。在第一个示例中，`length` 属性被存储在一个变量中以备后用。
+
+在第二个示例中，`length` 属性被用作新元素的索引。由于该属性始终比数组中使用的最高索引大 1，这会将新元素添加到数组的末尾。
+
+## 显示结果的警对话框
+
+![](img/32b24cb9657418b8429a4117bd539786_126_0.png)
+
+## 用于增强版 Test Scores 的 JavaScript 代码
+
+```javascript
+<script>
+var entry;
+var average;
+var scores = [];
+var total = 0;
+var show = "The test scores:\n";
+// use a do-while loop to put the scores in an array
+do {
+  entry = prompt("Enter test score\n" + 
+    "Or enter 999 to end entries", 999);
+  entry = parseInt(entry);
+  if (entry >= 0 && entry <= 100) {
+    scores[scores.length] = entry;
+  } else if (entry != 999) {
+    alert("Entry must be a valid number from 0 through 100\n" + 
+    "Or enter 999 to end entries");
+  }
+} while (entry != 999);
+if (scores.length != 0) {
+  // use a loop to process the scores
+  for (var i = 0; i < scores.length; i++) {
+    total = total + scores[i]; // both are numbers so adds
+    show = show + scores[i] + "\n"; // strings & number
+    // so concatenates
+  }
+  // calculate the average and display
+</script>
+```
+
+
+
+```javascript
+average = parseInt(total / scores.length);
+
+alert(show + "\nAverage score is " + average);
+
+}
+</script>
+```
+
+图 3-11 使用数组的 Test Scores
+
+## 观点
+
+如果你有编程经验，现在可以发现 JavaScript 的控制语句与 Java 和 C# 等其他语言中的语句相似。因此，你可能略读了这一章。你可能也想跳过练习。
+
+另一方面，如果你是编程新手，并且理解了本章应用程序中的所有代码，那么你有一个良好的开始。否则，你需要学习这些应用程序，直到你理解每个应用程序中的每一行代码。你还应该完成随后的练习。
+
+## 术语
+
+- 控制语句 `while` 语句
+- 条件表达式 `conditional expression` `while` 循环
+- 关系运算符 `relational operator` `do-while` 语句
+- 复合表达式 `compound expression` `do-while` 循环
+- 逻辑运算符 `logical operator` 无限循环
+- 语句的优先级顺序 `order of precedence`
+- 短路运算符 `short-circuit operator` 循环
+- `if` 语句 循环计数器
+- `if` 子句 循环索引
+- `else if` 子句 数组
+- `else` 子句 数组元素
+- 嵌套 `if` 语句 数组长度（`length`）
+
+# 总结
+
+- 当你编写条件表达式时，可以使用关系运算符、全局 `isNaN()` 方法和逻辑运算符。
+- 一个 `if` 语句始终以 `if` 子句开始。它也可以有一个或多个 `else if` 子句和一个结尾的 `else` 子句，但这些是可选的。
+- `while` 语句和 `do-while` 语句可以用于在条件为真时循环执行一系列语句。
+- `for` 语句可以在每次计数器递增或递减时循环执行一系列语句。
+- 数组可以存储一个或多个元素，你可以通过元素的索引来引用它们。数组的 `length` 属性持有数组中元素的数量。要处理数组中的元素，你可以使用 `for` 循环。
+
+## 练习 3-1 增强 Future Value 应用程序
+
+此练习将给你一个机会在增强图 3-6 中的 Future Value 应用程序时使用语句、`do` 循环和 `for` 循环。该应用程序的最终输出将在浏览器中显示，看起来如下所示：
+
+```
+Investment amount = 10000 Interest rate = 7.5 Years = 5
+
+Year=1 Interest=750 Value=10750
+
+Year=2 Interest=806.25 Value=11356
+
+Year=3 Interest=861.7175 Value=12422
+
+Year=4 Interest=931.7226325 Value=13354
+
+Year=5 Interest=1001.6018554675 Value=14356
+
+Investment amount = 10000 Interest rate = 8.5 Years = 6
+
+Year=1 Interest=850 Value=10850
+
+Year=2 Interest=922.25 Value=11772
+
+Year=3 Interest=1000.64125 Value=12772
+
+Year=4 Interest=1085.6957265 Value=13858
+
+Year=5 Interest=1177.9789553125 Value=15036
+
+Year=6 Interest=1278.108186514062 Value=16314
+```
+
+感谢使用 Future Value 应用程序。
+
+如果你在测试时遇到任何问题，请记住使用第1章图1-16所示的 Chrome 开发者工具。
+
+## 测试 Future Value 应用程序
+
+1. 打开你的文本编辑器或 IDE。然后打开此 HTML 文件：
+`javascript_jqueryexercises\ch03\future_value.html`
+2. 使用有效输入测试应用程序，并记录结果。然后使用无效输入测试，并记录结果。
+
+## 添加 Future Value 应用程序
+
+1. 打开你的文本编辑器或 IDE。然后打开此 HTML 文件：
+`javascript_jqueryexercises\ch03\future_value.html`
+2. 使用有效输入测试应用程序，并记录结果。然后使用无效输入测试，并记录结果。
+
+## 测试 Future Value 应用程序
+
+1. 打开你的文本编辑器或 IDE。然后打开此 HTML 文件：
+`javascript_jqueryexercises\ch03\future_value.html`
+2. 使用有效输入测试应用程序，并记录结果。然后使用无效输入测试，并记录结果。
+
+## 添加 Future Value 应用程序
+
+1. 打开你的文本编辑器或 IDE。然后打开此 HTML 文件：
+`javascript_jqueryexercises\ch03\future_value.html`
+2. 使用有效输入测试应用程序，并记录结果。然后使用无效输入测试，并记录结果。
+
+## 练习 3-2 增强 Test Scores 应用程序
+
+此练习将给你一个机会在增强图 3-6 中的 Future Value 应用程序时使用语句、`do` 循环和 `for` 循环。该应用程序的最终输出将在浏览器中显示，看起来如下所示：
+
+![](img/32b24cb9657418b8429a4117bd539786_126_0.png)
+
+如果你在测试时遇到任何问题，请记住使用第1章图1-16所示的 Chrome 开发者工具。
+
+## 如何使用对象处理数据
+
+在第 2 章中，你学习了使用对象方法和属性的语法。你还接触了 `window` 对象和 `document` 对象的一些方法和属性。现在，你将学习如何使用处理数据所需的对象、方法和属性，首先对 `window` 和 `document` 对象的方法进行部分回顾。
+
+## 如何使用 window 和 document 对象
+
+在第 2 章中，你学习了 `window` 对象的 `prompt()` 和 `alert()` 方法。现在，图 4-1 中的第一个表格展示了 `window` 对象的另一个方法，可用于确认操作。
+
+然后，该图中的第二个表格总结了你在第 2 章中学习的 `parseInt()` 和 `parseFloat()` 方法。它们也是 `window` 对象的方法。之所以需要这些方法是因为 `prompt()` 方法返回的值以及用户在文本框中输入的值都被视为字符串。
+
+这些方法的使用由第一组示例说明，从一个 `confirm()` 方法的示例开始。对于之后的语句，假设 `prompt()` 中的默认值没有被用户修改。结果是，组中的第二个语句将 `12345.6789` 以字符串形式存储在名为 `entry` 的变量中，第三条语句将该字符串转换为整数值 `12345`。同样，第四条语句将 `12345.6789` 以字符串形式存储在名为 `entryB` 的变量中，第五条语句将该字符串转换为小数值 `12345.6789`。
+
+注意，在这些示例中，方法名称之前没有编写对象名称。这是因为 `window` 是 JavaScript 的全局对象。注意 `parseInt()` 方法不会对数值进行四舍五入，它只是移除或截断字符串的任何部分。
+
+与 `window` 对象不同，`document` 对象是 DOM 结构中的最高对象。它代表文档，当你使用它的某个方法时，需要编写对象名称（`document`）和点（`.`）。
+
+组中的第二组示例展示了如何使用 `document` 的三个方法。第一个是 `getElementById()` 方法。它需要一个参数，即 HTML 文档中元素的 id。当它执行时，它会返回一个代表该 HTML 元素的对象。在这个示例中，该对象被存储在名为 `rateBox` 的变量中。
+
+该组中的另外两个方法是你在第 2 章图 2-12 中学习过的 `write()` 和 `writeln()` 方法。你将在最后两章的一些应用程序中看到这些方法的作用。
+
+## 第 4 章 如何处理 JavaScript 对象、函数和事件 113
+
+## 另一个显示对话框的 window 方法
+
+| 方法 | 说明 |
+|---|---|
+| `confirm(string)` | 显示一个包含参数中字符串、一个 OK 按钮和一个 Cancel 按钮的对话框。如果用户点击 OK，则返回 `true`。如果用户点击 Cancel，则返回 `false`。 |
+
+## 处理数字的两个 window 方法
+
+| 方法 | 说明 |
+|---|---|
+| `parseInt(string)` | 将传递给它的字符串转换为整数类型并返回值。如果无法将字符串转换为整数，则返回 `NaN`。 |
+| `parseFloat(string)` | 将传递给它的字符串转换为小数类型并返回值。如果无法将其转换为小数，则返回 `NaN`。 |
+
+## window 方法示例
+
+```javascript
+confirm("Are you sure want to delete it?");
+
+var entryA = prompt("Enter any value", 12345.6789);
+
+entryA = parseInt(entryA);             // entryA = 12345
+
+var entryB = prompt("Enter any value", 12345.6789);
+
+entryB = parseFloat(entryB);           // entryB = 12345.6789
+```
+
+## document 对象的三个方法
+
+| 方法 | 说明 |
+|---|---|
+| `getElementById(id)` | 获取具有 id 的 HTML 元素并返回该元素。 |
+| `write(string)` | 将传递的字符串写入文档。 |
+| `writeln(string)` | 写入以换行符结尾的字符串。 |
+
+## document 方法示例
+
+```javascript
+// 返回 HTML 元素的对象
+var rateBox = document.getElementById("rate");
+
+// 向文档中写入一行
+document.write("Today is " + today.toDateString());
+```
+
+## 描述
+
+- `window` 对象是全局对象，JavaScript 允许你在引用 `window` 对象时省略名称和操作符。
+- `document` 对象是让你能够操作文档对象模型（DOM）的对象，它代表了页面上所有的 HTML 元素。
+- 文本框中的数据是字符串。在计算中使用之前，你需要使用 `parseInt()` 或 `parseFloat()` 方法将其转换为数值数据。
+- `NaN` 是一个表示“不是数字”（Not a Number）的值。当传递的值不是数字时，`parseInt()` 和 `parseFloat()` 方法会返回它。
+- `getElementById()` 方法通常用于获取 HTML 元素的对象。
+
+图 4-1 如何使用 window 和 document 对象
+
+## 如何使用 TextBox 和 Number 对象
+
+`TextBox` 对象是 DOM 对象之一。它代表网页中的一个文本框，用于获取用户输入或向用户显示输出。该图的第一组示例展示了如何使用以 `first_name` 和 `sales_amount` 为 id 的文本框。在实践中，你通过三条语句来实现。
+
+如果不使用链式调用，第一条语句使用 `document` 的 `getElementById()` 方法获取文本框的 `TextBox` 对象。然后，第二条语句使用 `TextBox` 对象的 `value` 属性获取用户在文本框中输入的值。第三，使用 `window` 对象的 `parseFloat()` 方法将字符串转换为小数。如果用户输入的是有效数字，这会将该数字存储在 `salesAmount` 变量中，使其成为一个 `Number` 对象。
+
+然而，使用链式调用，这只需要一条语句。这种代码有时被称为“流式”（fluent），因为它更像句子，对人类用户来说更易读。它还能让你的代码更短，短的代码通常更容易理解。但你需要注意这一点。就像书中的长句一样，如果你到了语句末尾却不记得开头在做什么，你可能链式调用过度了。
+
+第二组示例将链式调用带到了第三层。如果不使用链式调用，需要三条语句来从文本框获取有效数字。首先，`getElementById()` 方法获取以 `sales_amount` 为 id 的文本框的 `TextBox` 对象。`TextBox` 对象的 `value` 属性获取用户在文本框中输入的值。第三，`parseFloat()` 方法将字符串转换为小数。如果用户输入的是有效数字，这会将该数字存储在 `salesAmount` 变量中，使其成为一个 `Number` 对象。
+
+然而，使用链式调用，这只需要一条语句。这种代码有时被称为“流式”，因为它更像句子，对人类用户来说更易读。它还能让你的代码更短，短的代码通常更容易理解。但你需要注意这一点。就像书中的长句一样，如果你到了语句末尾却不记得开头在做什么，你可能链式调用过度了。
+
+图中第三个表格总结了 `Number` 对象的 `toFixed()` 方法。当用户在文本框中输入有效数字并在存储到变量之前使用 `parseInt()` 或 `parseFloat()` 方法进行解析时，变量将变为一个 `Number` 对象。然后，你可以使用该对象的属性和方法来处理数字。例如，你可以使用 `Number` 对象的 `toFixed()` 方法将数字保留到指定的位数。
+
+这通过第三组示例的第一条语句说明。该语句通过在链中添加 `toFixed()` 方法将链式带到了第四层。结果是，存储在 `salesAmount` 变量中的数字被保留了两位小数。有些人可能认为这个链式示例做得过头。
+
+该组的最后两条语句展示了更多链式调用的示例。第一个展示了如何给文本框赋值。在这种情况下，`the value` 是一个空字符串，这实际上清空了文本框中的任何数据。第二个语句显示了如何将焦点移动到文本框。
+
+## 第 4 章 如何处理 JavaScript 对象、函数和事件 115
+
+## TextBox 对象的一个方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `focus()` | 将光标移动到文本框内，但不返回任何内容。 |
+
+## TextBox 对象的两个属性
+
+| 属性 | 描述 |
+| --- | --- |
+| `value` | 一个表示文本框内容的字符串。 |
+| `disabled` | 一个控制文本框是否禁用的布尔值。 |
+
+## Number 对象的一个方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `toFixed(digits)` | 返回数字在按照参数指定的小数位数进行四舍五入后的字符串表示。 |
+
+## 定义两个文本框的 HTML 标签
+
+```html
+<input type="text" id="first_name">
+<input type="text" id="sales_amount">
+```
+
+## 不使用链式调用使用 value 属性从文本框获取值
+
+```javascript
+var firstName = document.getElementById("first_name");
+firstName = firstName.value;
+```
+
+### 使用链式调用
+
+```javascript
+var firstName = document.getElementById("first_name").value;
+```
+
+## 不使用链式调用使用 parseFloat() 方法从文本框获取数值值
+
+```javascript
+var salesAmount = document.getElementById("sales_amount");
+salesAmount = salesAmount.value;
+salesAmount = parseFloat(salesAmount);
+```
+
+### 使用链式调用
+
+```javascript
+var salesAmount = parseFloat(document.getElementById("sales_amount").value);
+```
+
+## 其他链式调用的示例
+
+```javascript
+var salesAmount = document.getElementById("sales_amount").value.toFixed(2);
+document.getElementById("first_name").value = ""; // 清空文本框
+document.getElementById("first_name").focus(); // 将焦点移动到文本框
+```
+
+## 描述
+
+- 当你使用 `getElementById()` 获取文本框时，该方法返回一个 `TextBox` 对象。然后，你可以使用它的 `value` 属性来获取框中的值。
+- 当你将一个数值赋值给变量时，会创建一个 `Number` 对象。然后，你可以对该变量使用 `Number` 方法。
+
+图 4-2 如何使用 TextBox 和 Number 对象
+
+## 如何使用 Date 和 String 对象
+
+当你将数值或字符串值存储在变量中时，它会自动转换为 `Number` 或 `String` 对象。这让你能够使用 `Number` 和 `String` 对象的属性和方法，而无需显式地创建这些对象。
+
+然而，日期没有原始型数据类型。因此，你需要在使用其方法之前创建一个 `Date` 对象。要实现这一点，你可以使用图 4-3 中的语法。当你创建一个 `Date` 对象时，它会被初始化为当前日期，即用户计算机上的日期和时间。
+
+创建 `Date` 对象后，你可以使用此图中的方法来处理它。这些方法通过第一组示例进行了说明，假设日期为 2017 年 3 月 9 日。在这里，`toString()` 方法将日期转换为字符串。`getFullYear()` 方法从日期中获取四位年份。`getDate()` 方法获取月份中的日。`getMonth()` 方法获取月份，从 0 开始计数，而不是 1。因此，`getMonth()` 方法对 3 月返回 2，而不是 3。
+
+此图还展示了 `String` 对象的一个属性和五个方法。然后，最后一组示例展示了显示这些属性如何工作的语句。例如，第二个语句使用 `toUpperCase()` 方法将字符串转换为大写，第三个语句使用 `length` 属性获取字符串中的字符数。
+
+最后两个语句显示了如何使用 `String` 对象的 `indexOf()` 和 `substr()` 方法从字符串中提取子字符串。在这里，`indexOf()` 方法用于获取字符串中第一个空格的位置（索引），从 0 开始计数。由于空格在第六个位置，因此该方法返回 5。然后，`substr()` 方法获取从第一个位置开始且长度为 5 的子字符串。结果是该方法返回“Grace”。
+
+注意 `substr()` 和 `substring()` 方法之间的区别很重要。如果你像示例那样从第一个位置开始，则没有区别。在这种情况下，两种方法都将返回“Grace”。但是，如果你从其他任何地方开始，将根据你使用的方法得到不同的结果。
+
+例如，如果你从第三个位置（索引为 2）开始，`substr()` 方法仍然返回五个字符，你将得到字符串 "ace H"。相反，`substring()` 方法将在第六个位置（索引为 5）处停止。这意味着它只返回 3 个字符，即字符串 "ace"。（它不会返回停止位置的字符。）
+
+顺便提一下，JavaScript 为 `Date` 和 `String` 对象提供了更多方法和属性，但这些足够让你入门了。你可以在第 3 章中学习其他的。
+
+## 第 4 章 如何处理 JavaScript 对象、函数和事件 117
+
+### 创建 JavaScript 对象并将其赋值给变量的语法
+
+```javascript
+var variableName = new ObjectType();
+```
+
+### 创建 Date 对象的语句
+
+```javascript
+var today = new Date();
+```
+
+### Date 对象的一些方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `toString()` | 返回一个字符串。 |
+| `getFullYear()` | 返回四位年份。 |
+| `getDate()` | 返回月份中的日。 |
+| `getMonth()` | 返回月份，从 0 开始计数。 |
+
+### 使用 Date 对象的示例
+
+```javascript
+var today = new Date();
+alert(today.toString()); // 显示当前日期
+alert(today.getFullYear()); // 显示 2017
+alert(today.getDate()); // 显示 9
+alert(today.getMonth()); // 显示 2
+```
+
+## String 对象的一个属性
+
+| 属性 | 描述 |
+| --- | --- |
+| `length` | 返回字符串中的字符数。 |
+
+### String 对象的一些方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `indexOf(search, position)` | 返回 `search` 第一次出现的位置（索引）。 |
+| `substr(start, length)` | 返回从 `start` 开始且长度为 `length` 的子字符串。 |
+| `substring(start, stop)` | 返回从 `start` 开始到 `stop` 结束的子字符串。 |
+| `toLowerCase()` | 将字符串转换为小写。 |
+| `toUpperCase()` | 将字符串转换为大写。 |
+
+### 使用 String 对象的示例
+
+```javascript
+var name = "Grace";
+alert(name.toUpperCase()); // 显示 GRACE
+alert(name.length); // 显示 5
+var index = name.indexOf(" "); // 显示 5
+alert(name.substr(0, 5)); // 显示 Grace
+```
+
+图 4-3 如何使用 Date 和 String 对象
+
+## 如何使用函数
+
+当你将数值或字符串值存储在变量中时，它会自动转换为 `Number` 或 `String` 对象。这让你能够使用 `Number` 和 `String` 对象的属性和方法，而无需显式地创建这些对象。
+
+## 创建并调用函数表达式
+
+`return` 语句一旦你定义了函数，就可以在代码的其他部分调用它。此图中的第一个示例创建了一个名为 `Year` 的变量的函数。该函数不需要任何参数也不返回值。调用时，此函数将显示一个显示当前日期的对话框。第二个示例创建一个存储在变量 `$` 中的函数。该函数接收一个参数，即 HTML 元素的 `id` 属性值。此函数返回一个表示 HTML 元素的对象。在这种情况下，调用语句获取 id 为 "email_address" 的 HTML 元素，然后使用对象的 `value` 属性获取用户输入的值。
+
+此图中的第三个示例创建一个存储在变量 `tax` 中的函数，它需要两个参数并返回一个值。它计算销售税，将其四舍五入到两位，并将四舍五入后的结果返回给调用语句。调用此函数时，传递了两个变量 `subtotal` 和 `taxRate`。在这种情况下，这些值的变量名称与函数中的参数名称相同，但这不是必要的。要求的是调用语句传递的参数数据类型和顺序与函数中的参数相同。
+
+# 第 4 章 如何处理 JavaScript 对象、函数和事件
+
+## 函数表达式的语法
+
+```javascript
+var variableName = function(parameters) {
+  // 当函数被执行时运行的语句
+}
+```
+
+### 一个没有参数且不返回值的函数表达式
+
+```javascript
+var showYear = function() {
+  var today = new Date();
+  alert("The year is " + today.getFullYear());
+}
+```
+
+### 如何调用该函数
+
+```javascript
+showYear();
+```
+
+### 一个带有一个参数并返回 DOM 元素的函数表达式
+
+```javascript
+var $ = function(id) {
+  return document.getElementById(id);
+}
+```
+
+### 如何调用该函数
+
+```javascript
+var emailAddress1 = $("email_address1").value;
+```
+
+### 一个带有两个参数并返回值的函数表达式
+
+```javascript
+var calculateTax = function(subtotal, taxRate) {
+  var tax = subtotal * taxRate;
+  tax = tax.toFixed(2);
+  return tax;
+}
+```
+
+### 如何调用该函数
+
+```javascript
+var subtotal = 85.00;
+var taxRate = 0.05;
+var salesTax = calculateTax(subtotal, taxRate); // 调用该函数
+alert(salesTax);                                // 显示 4.25
+```
+
+## 描述
+
+- 函数是一个可以被程序中其他语句调用（或执行）的代码块。当函数结束时，程序将继续执行函数调用之后的语句。
+- 函数在被调用时可能要求向其传递一个或多个参数。在调用语句中，这些参数也可以称为变量（arguments）。
+- 为了向调用它的语句返回一个值，函数使用 `return` 语句。当执行 `return` 语句时，函数会返回指定的值并结束。
+- 函数表达式是赋值给变量的表达式，并通过该变量名进行引用。
+- 函数表达式有时被称为匿名函数，因为它们没有名称。从技术上讲，函数表达式可以有名称，但通常它们没有。
+- 在 JavaScript 应用程序中，函数表达式必须在任何调用它的语句之前编写代码。否则，将发生错误。
+
+## 如何创建和调用函数声明
+
+由于表达式通常用于处理 JavaScript 应用程序中发生的事件，因此你大多数时候都会使用它们。然而，你应该知道 JavaScript 也允许你编写函数声明。
+
+图 4-5 显示了如何创建和调用函数声明。它使用了与之前图相同的示例，但使用的是函数声明而不是函数表达式。在语法上，函数声明不存储在变量中，它的名称被编码为关键字 `function` 并位于参数之前。
+
+注意，在函数声明的闭大括号之后没有必要编写分号。因为函数声明不是一个可执行的语句。相反，它只是声明了函数。相比之下，函数表达式是赋值函数赋值给变量的语句的一部分，因此你需要在之后编写分号。
+
+与上一个图一样，`show()` 函数没有任何参数也不返回结果。`$` 函数需要一个参数，其值为 HTML 元素的 `id` 属性的值，并返回该元素。`calculateTax()` 函数需要两个参数，并返回保留两位小数的销售税值。在这些示例中，使用函数声明只是获取与函数表达式相同结果的另一种方法。
+
+使用函数声明的一个优点是，它们可以在任何调用它们的语句之后编写代码。这是因为 JavaScript 解释器会向前读取并提升（hoist）所有函数声明到包含它们的作用域的顶部。你将在几分钟后学习更多关于作用域的知识。
+
+相比之下，函数表达式不会被提升，因此必须在任何调用它们的语句之前编写代码。大多数程序员使用函数表达式。有些程序员认为，在调用之后编写函数声明是一种令人困惑的做法，应该被避免。
+
+## 函数声明的语法
+
+```javascript
+function functionName(parameters) {
+  // 当函数被执行时运行的语句
+}
+```
+
+### 一个没有参数且不返回值的函数声明
+
+```javascript
+function showYear() {
+  var today = new Date();
+  alert("The year is " + today.getFullYear());
+}
+```
+
+### 如何调用该函数
+
+```javascript
+showYear();
+```
+
+### 一个带有一个参数并返回 DOM 元素的函数声明
+
+```javascript
+function $(id) {
+  return document.getElementById(id);
+}
+```
+
+### 如何调用该函数
+
+```javascript
+var emailAddress = $("email_address").value;
+```
+
+### 一个带有两个参数并返回值的函数声明
+
+```javascript
+function calculateTax(subtotal, taxRate) {
+  var tax = subtotal * taxRate;
+  tax = tax.toFixed(2);
+  return tax;
+}
+```
+
+### 如何调用该函数
+
+```javascript
+var subtotal = 85.00;
+var taxRate = 0.05;
+var salesTax = calculateTax(subtotal, taxRate); // 调用该函数
+alert(salesTax);                                // 显示 4.25
+```
+
+## 描述
+
+- 函数声明是带有名称编写的，且没有赋值给变量。这只是编写函数的另一种方法。
+- 与函数表达式相反，函数声明会被提升到它所包含的作用域的顶部。这意味着它不需要在任何调用它的语句之前编写。
+
+## 何时以及如何使用局部变量和全局变量
+
+编程语言中的*作用域*（Scope）指的是变量和函数的可见性。也就是说，它告诉你在程序的哪个位置可以使用你定义的变量和函数。
+
+当你使用 JavaScript 时，局部变量是定义在函数内部的变量。它们具有局部作用域，这意味着它们只能在定义它们的函数内部使用。
+
+相比之下，全局变量是定义在函数外部的变量。它们具有全局作用域，因此任何函数都可以使用它们，无需作为参数传递。
+
+图 4-6 中的第一个示例说明了局部变量的使用。在这里，`calculateTax()` 函数创建了一个名为 `tax` 的变量并将其返回给调用语句。然后该语句可以将结果存储在另一个变量中。但注意，函数外部的语句无法引用 `tax` 会报错，因为它具有局部作用域。
+
+相比之下，第二个示例创建了一个全局变量 `tax`。结果是函数不需要返回该变量。相反，函数外部的语句可以引用该变量，因为它是全局的。
+
+尽管使用全局变量向函数传递数据并从中返回数据似乎更容易，但全局变量经常产生问题。这是因为任何函数都可以修改全局变量，而且很容易写错变量名或修改错误的变量，特别是在大型应用程序中。这反会产生调试问题。
+
+相比之下，局部变量的使用减少了命名冲突的可能性。例如，两个不同的函数可以使用相同的局部变量名称而不会产生冲突。这自然意味着更少的错误和调试问题。除了少数例外外，你应用程序中的所有代码都应该放在函数中，这样所有变量都是局部的。
+
+为了增加复杂性，如果你在声明变量时不小心漏掉了 `var` 关键字，JavaScript 引擎会假设该变量是全局的。这是 JavaScript 的一个弱点，你需要意识到这一点，因为它可能会导致编码错误。例如，如果你在编写赋值语句时写错了一个已经声明的变量名，它会被视为一个全新的全局变量。记住这一点，在声明新变量时请务必包含 `var` 关键字，并在代码中引用变量之前始终对其进行声明。在 ECMAScript 5 中，你还可以通过使用严格模式来解决这一弱点，正如下一幅图所示。
+
+## 第 4 章 如何处理 JavaScript 对象、函数和事件 123
+
+# 使用名为 tax 的局部变量的函数
+
+```javascript
+var calculateTax = function(subtotal, taxRate) {
+  var tax = subtotal * taxRate; // tax 是局部变量
+  tax = tax.toFixed(2);
+  return tax;
+}
+```
+
+在函数外部引用局部变量会导致错误
+
+```javascript
+alert("Tax is " + tax); // 会产生错误
+```
+
+# 使用名为 tax 的全局变量的函数
+
+```javascript
+var tax;
+var calculateTax = function(subtotal, taxRate) {
+  tax = subtotal * taxRate;
+  tax = tax.toFixed(2);
+}
+```
+
+在函数外部引用全局变量不会导致错误
+
+```javascript
+alert("Tax is " + tax); // 不会导致错误
+```
+
+# 一个无意中使用了名为 tax 的全局变量的函数
+
+```javascript
+var calculateTax = function(subtotal, taxRate) {
+  tax = subtotal * taxRate; // 没有 var 关键字，所以 tax 被视为全局变量
+  tax = tax.toFixed(2);
+}
+```
+
+在函数外部引用该变量不会导致错误……但本应该会导致！
+
+```javascript
+alert("Tax is " + tax); // 不会导致错误
+```
+
+# 讨论
+
+- 变量或函数的作用域决定了哪些代码可以访问它。
+- 在函数内部创建的变量是局部变量，只能被函数内部的代码引用。
+- 在函数外部创建的变量是全局变量，所有函数代码都可以访问所有全局变量。
+- 如果你在声明变量时忘记写上 `var` 关键字，JavaScript 引擎会假设该变量是全局的。这可能会导致调试问题。
+- 通常情况下，将局部变量作为参数从一个函数传递到另一个函数比使用全局变量更好。这会让你的代码更容易理解，并减少错误的概率。
+
+![](img/32b24cb9657418b8429a4117bd539786_142_0.png)
+
+# 何时以及如何使用严格模式
+
+为了解决在拼错标识符或漏掉 `var` 关键字时 JavaScript 创建意外变量的问题，ECMAScript 5 提供了一种名为严格模式（strict mode）的运行模式。要使用严格模式，你需要在 JavaScript 代码的开头编写图 4-7 所示的严格模式指令。然后，现代浏览器中的 JavaScript 引擎如果在变量名在通过使用 `var` 关键字的语句声明之前被使用，将抛出错误。
+
+这通过前两个例子说明了这一点。在第一个例子中，没有使用严格模式，因此漏掉 `var` 关键字会导致调试问题，但应用程序将继续运行。在第二个例子中，使用了严格模式，同样的遗漏会导致 JavaScript 引擎抛出错误并停止运行 JavaScript 代码。这会提醒你发现问题并迫使你修复它。
+
+然而请注意，旧版浏览器（如 IE7、IE8 和 IE9）不支持 ECMAScript 5 的这项功能。不过没关系，因为如果你在现代浏览器中修复了问题，这些问题在旧浏览器中也不会存在。
+
+基于此，该图总结了处理局部变量和全局变量的最佳编码实践。首先，尽可能使用局部变量。其次，使用 `var` 关键字声明所有变量。第三，始终使用严格模式。第四，在函数开始处、在使用它们之前声明函数所使用的变量。
+
+你将在本章末尾的应用程序以及整书中看到这些实践示例。如果代码没有显示严格模式声明或没有在函数开始处声明所有变量，那仅仅是为了让代码适应在单个页面内。
+
+## 第 4 章 如何处理 JavaScript 对象、函数和事件 125
+
+# 严格模式指令
+
+```javascript
+"use strict"; // 位于文件或函数的顶部
+```
+
+# 一个无意中使用了名为 tax 的全局变量的函数
+
+```javascript
+var calculateTax = function(subtotal, taxRate) {
+  tax = subtotal * taxRate; // 没有 var 关键字，所以 tax 被视为全局变量
+  tax = tax.toFixed(2);
+}
+```
+
+在函数外部引用 tax 变量不会导致错误……但本应该会导致！
+
+```javascript
+alert("Tax is " + tax); // 不会导致错误
+```
+
+# 严格模式下的同一个函数
+
+```javascript
+"use strict";
+var calculateTax = function(subtotal, taxRate) {
+  tax = subtotal * taxRate; // 在严格模式下，会抛出错误
+  tax = tax.toFixed(2);
+}
+```
+
+引用 tax 变量会导致 JavaScript 错误
+
+```javascript
+alert("Tax is " + tax); // 会产生错误
+```
+
+# 最佳编码实践
+
+- 尽可能使用局部变量。
+- 使用 `var` 关键字声明所有变量。
+- 使用严格模式。
+- 在函数开始处声明函数中使用的变量。
+
+## 描述
+
+- 严格模式指令位于文件或函数的顶部，位于任何其他代码之前。
+- 当你在严格模式下编写代码时，如果你在声明变量时忘记写 `var` 关键字，或者拼错了一个已声明的变量名，JavaScript 引擎将抛出错误。
+- 由于严格模式是从 ECMAScript 5 开始引入的，它在 IE7、IE8 和 IE9 中无效。然而，如果你在现代浏览器中修复了问题，你就能发现所有问题，它们不会导致调试问题。
+
+## JavaScript 基础
+
+### 如何处理事件
+
+JavaScript 通常响应点击按钮等用户操作。这些操作被称为事件，而处理事件的函数被称为事件处理器（handlers）。
+
+### 如何将事件处理器附加到事件
+
+图 4-8 表格总结了一些 JavaScript 常用的事件。
+
+| 事件 | 描述 |
+| :--- | :--- |
+| `load` | 当浏览器完成页面加载时发生。 |
+| `click` | 当用户点击按钮时发生。 |
+| `mouseover` | 当鼠标悬停在标题或链接等元素上时发生。 |
+
+之后你可以看到将函数附加到事件的语法。要实现这一点，你编写对象名、点以及带有括号的事件名。
+
+在语法总结后的示例组中，第一个示例以函数表达式开始，该函数可以作为事件处理器。此函数存储在名为 `joinList` 的变量中，它所做的显示消息。在实际应用案例中，此函数将执行处理事件所需的操作。
+
+该组中的第二个示例显示了一个 JavaScript 语句，将 `joinList` 事件处理器附加到 ID 为 "submit_button" 的按钮的点击事件。要实现这一点，该语句首先使用了你在图 4-5 中看到的 `$` 函数，它通过 `getElementById()` 方法获取按钮对象。接着是点操作符和带有括号的事件名。然后，等号后面是 `joinList`，它是处理事件的函数变量名。
+
+这里注意，你没有在函数变量名后编写括号，就像在图 4-5 的示例中所做的那样。附加事件处理器，而不是调用它。这就是为什么函数只有在事件触发时才被调用。如果你在 `joinList()` 后面加上括号，函数将立即被调用。
+
+组中的下一个语句将 `joinList` 事件处理器附加到 ID 为 "text_box_1" 的文本框的双击事件上。这意味着同一个事件处理器将用于两个不同的事件。在这里，你再次没有编写括号，因为你正在附加而不是调用函数。
+
+该图中的最后一个示例说明了如何一步到位创建事件处理器并将其附加到 `window.onload` 事件。这是附加 `onload` 事件处理器的常用方法。
+
+## 第 4 章 如何处理 JavaScript 对象、函数和事件 127
+
+## 常见事件
+
+| 对象 | 事件 | 触发时机... |
+|---|---|---|
+| `window` | `load` | 文档已加载到浏览器。 |
+| `button` | `click` | 按钮被点击。 |
+| 控件或链接 | `focus` | 控件或链接获得焦点。 |
+| | `blur` | 控件或链接失去焦点。 |
+| 控件 | `change` | 用户更改控件中的值。 |
+| | `select` | 用户在文本框或区域选择了文本。 |
+| `element` | `click` | 用户点击了元素。 |
+| | `dblclick` | 用户双击了元素。 |
+| | `mouseover` | 用户将鼠标移动到元素上方。 |
+| | `mousein` | 用户将鼠标移入元素内部。 |
+| | `mouseout` | 用户将鼠标移出元素。 |
+
+## 绑定事件处理器的语法
+
+```javascript
+objectVariable.eventName = eventHandlerName;
+```
+
+## 名为 joinList 的事件处理器
+
+```javascript
+var joinList = function() {
+  alert("函数的语句放在这里");
+}
+```
+
+如何将事件处理器绑定到按钮的点击事件
+
+```javascript
+$("submit_button").onclick = joinList;
+```
+
+如何将事件处理器绑定到输入框的双击事件
+
+```javascript
+$("text_box_1").ondblclick = joinList;
+```
+
+## 如何一步到位地创建并绑定事件处理器
+
+```javascript
+window.onload = function() {
+  alert("这是窗口的 onload 事件处理器函数。");
+}
+```
+
+## 描述
+
+- 事件处理器是一个在事件发生时执行的函数，因此它“处理”该事件。因此，你创建事件处理器就像创建任何其他函数一样。
+- 要将事件处理器绑定到事件上，你必须先指定触发该事件的对象和事件。然后，将事件处理器函数赋值给该事件。
+- 当你为事件处理器的某个事件编写代码时，请在事件名称前加上 "on"。例如，`onclick` 用于点击事件。
+- 你可以创建一个函数表达式作为事件处理器并将其绑定到事件上。当你想要对多个事件使用同一个函数时，这种方法非常有用，如上所示。这样做时，你不需要在变量名后编写 `()`。
+- 你也可以像上面的最后一个示例那样，一步到位地创建并绑定事件处理器。这通常用于 `load` 事件，正如你在下一幅图中所示。
+
+图 4-8 如何将事件处理器绑定到事件上
+
+## 如何使用 onload 事件处理器来绑定其他事件处理器
+
+你何时像上一个图那样绑定事件处理器呢？你会在所有 HTML 加载到用户的浏览器并且 DOM 构建完成后再绑定它。要实现这一点，你需要如图 4-9 所示，为 `window` 对象的 `load` 事件编写事件处理器。
+
+在该示例的 HTML 中，你可以使用一个标签（label）、一个文本框（text box）、一个包含空格的标签和一个按钮。这个简单的应用程序旨在当按钮被点击或用户更改文本框中的值时，显示一条消息。
+
+在 JavaScript 代码中，你可以使用三个函数。第一个函数存储在变量 `$` 中。该函数使用文档对象的 `getElementById()` 方法，通过传递的 HTML 元素 id 来获取元素。这个函数使得你无需每次都编写 `document.getElementById()` 就能轻松获取元素对象。
+
+第二个函数是按钮点击事件的事件处理器，第三个函数是文本框更改事件的事件处理器。这两个函数都会显示一条消息。
+
+第四个函数是加载事件的事件处理器。它用于将其他事件处理器绑定到点击和更改事件上。注意，此函数以 `window.onload` 开头，因此它绑定到 `window` 对象的 load 事件上。结果，该事件处理器会在页面加载且 DOM 构建后执行。（回第 1 章记得，DOM 或文档对象模型是由浏览器在页面加载时生成的，并代表了 HTML 中编写的所有元素和属性）。
+
+在 `load` 事件的事件处理器内部有两条绑定其他事件处理器的语句。第一条将 `joinList()` 函数绑定到按钮的点击事件上。第二条将 `changeValue()` 函数绑定到文本框的更改事件上。这两个语句都使用 `$` 来获取事件所属的对象，这使得代码更容易易读和理解。
+
+顺便提一下，`window.onload` 事件的事件处理器可以不仅仅是将函数赋值给事件。事实上，它可以执行 DOM 加载后需要进行的任何操作。
+
+## 更改电子邮件地址后的网页浏览器
+
+![](img/32b24cb9657418b8429a4117bd539786_148_0.png)
+
+## HTML
+
+```html
+<h1>Please join our email list</h1>
+<label for="email_address">Email Address:</label>
+<input type="text" id="email_address" name="email_address"><br>
+<label>&amp;</label>
+<input type="button" id="join_list" value="Join our List"><br>
+```
+
+# JavaScript
+
+```javascript
+// 第一个函数
+var $ = function(id) {
+    return document.getElementById(id);
+};
+
+// 第二个函数
+var joinList = function() {
+    alert("按钮被点击了。");
+};
+
+// 第三个函数
+var changeValue = function() {
+    alert("文本框中的值已改变。");
+};
+
+// 第四个函数
+window.onload = function() {
+    $("join_list").onclick = joinList;
+    $("email_address").onchange = changeValue;
+    $("email_address").focus();
+};
+```
+
+## 浏览器中的每加仑英里数应用
+
+![](img/32b24cb9657418b8429a4117bd539786_150_0.png)
+
+## 应用的 HTML 和 JavaScript
+
+```html
+<head>
+<title>Calculate MPG</title>
+<link rel="stylesheet" href="mpg.css">
+<script>
+  "use strict";
+  var $ = function(id) {
+    return document.getElementById(id);
+  };
+  var calculateMPG = function(miles, gallons) {
+    var mpg = miles / gallons;
+    mpg = mpg.toFixed(1);
+    return mpg;
+  };
+  var processEntries = function() {
+    var miles = parseFloat($("miles").value);
+    var gallons = parseFloat($("gallons").value);
+    if (isNaN(miles) || isNaN(gallons)) {
+      alert("Both entries must be numeric");
+    } else if (miles <= 0 || gallons <= 0) {
+      alert("Both entries must be greater than zero");
+    } else {
+      $("mpg").value = calculateMPG(miles, gallons);
+    }
+  };
+  window.onload = function() {
+    $("calculate").onclick = processEntries;
+    $("miles").focus();
+  };
+</script>
+</head>
+<body>
+<main>
+<h1>Calculate Miles Per Gallon</h1>
+<label for="miles">Miles Driven:</label>
+<input type="text" id="miles"><br>
+<label for="gallons">Gallons of Gas Used:</label>
+<input type="text" id="gallons"><br>
+<label for="mpg">Miles Per Gallon</label>
+<input type="text" id="mpg" disabled><br>
+<label for="nbsp;"></label>
+<input type="button" id="calculate" value="Calculate MPG"><br>
+</main>
+</body>
+```
+
+图 4-10 每加仑英里数应用
+
+## 邮件列表应用
+
+图 4-11 展示了一个类似于你在第 1 章中介绍的邮件列表应用。在这个应用程序中，用户在文本框中输入数据并点击“加入列表”按钮。然后，JavaScript 程序会检查数据的有效性。如果任何输入无效，该程序将为第一个无效输入项显示带有错误消息的对话框。如果所有输入都有效，则会将数据提交到服务器进行服务器端处理。
+
+此应用程序中进行的数据验证是任何表单在提交到服务器处理之前所进行的客户端验证的典型做法。
+
+在 HTML 部分，你可以看到使用一个 `link` 元素来包含此页面的 CSS 文件。你还可以看到一个 `script` 元素，包含了该页面的外部 JavaScript 文件。这里同样没有显示 CSS，因为它与应用程序的操作无关。
+
+在 HTML 的主体中，你可以看到 `<form>`、`<label>` 和 `<input>` 元素。表单的 id 为 "email_form"，文本框的 id 为 "email_address1"、"email_address2" 和 "first_name"。这些就是将传递给 JavaScript 中 `$` 函数的 id。
+
+同时请注意，表单和文本框的 `name` 属性的值与其 `id` 属性的值相同。文本框的 `name` 属性被服务器端代码用于获取表单数据提交到服务器时传递给它的用户输入内容。
+
+## 浏览器中的邮件列表应用
+
+![](img/32b24cb9657418b8429a4117bd539786_152_0.png)
+
+## 页的 HTML 文件
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Join Email List</title>
+  <link rel="stylesheet" href="email_list.css">
+  <script src="email_list.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Please join our email list</h1>
+    <form id="email_form" name="email_form" action="join.html" method="get">
+      <label for="email_address1">Email Address:</label>
+      <input type="text" id="email_address1" name="email_address1">
+      <br>
+      <label for="email_address2">Re-enter Email Address:</label>
+      <input type="text" id="email_address2" name="email_address2">
+      <br>
+      <label for="first_name">First Name</label>
+      <input type="text" id="first_name" name="first_name">
+      <br>
+      <label>&nbsp;</label>
+      <input type="button" id="join_list" value="Join our List">
+    </form>
+  </main>
+</body>
+</html>
+```
+
+图 4-11 邮件列表应用的 HTML
+
+图 4-12 显示了该应用程序 JavaScript 代码的一种编写方式。在这里，函数是按照易于阅读的顺序编写的，因为函数定义在函数调用之前。同样，这里使用了变量声明的最佳实践。
+
+在此应用程序中，事件处理程序检查数据的有效性。如果任何输入无效，该程序将为第一个无效输入项显示带有错误消息的对话框。如果所有输入都有效，则会将数据提交到服务器进行服务器端处理。
+
+（注：第 153-154 页的文本包含了第 151 页的重复循环，已进行清理以表示代码片段中的唯一内容。）
+
+## 练习 4-1 增强 MPG 应用
+
+在本练习中，你将增强 MPG 应用程序验证功能，并提供清空表单输入的功能。
+
+![](img/32b24cb9657418b8429a4117bd539786_156_0.png)
+
+如果你在测试时遇到任何问题，请记住使用第1章图1-16所示的 Chrome 开发者工具。
+
+## 测试应用程序
+
+1. 打开你的文本编辑器或 IDE，打开此 HTML 文件：`c:\javascript_query\exercises\ch4\mpg\index.html`。然后运行 JavaScript 代码，查看其是否与图4-10相同。
+2. 使用有效数据测试此应用程序以查看其工作原理。点击 Calculate MPG 按钮时，应该显示正确的结果。
+3. 测试验证例程。注意，如果任何一个输入是非数字或小于或等于零，将在警告对话框中显示一条错误消息。
+
+## 增强数据验证
+
+4. 修改提供数据验证的 if-else 语句，使其单独检查每个文本框。如果文本框中的数据无效，则应显示错误消息并将焦点移动到该文本框。
+5. 测试此更改，确保如果某个文本框包含无效数据，会为其显示单独的错误消息。
+
+## 提供清空表单输入的功能
+
+6. 在 Calculate MPG 按钮下方添加一个 Clear Entries（清除输入）按钮。为此，复制 Calculate 按钮的 label 和 input 元素的 HTML，并粘贴到 Calculate 按钮 input 元素之后。然后，修改 Clear Entries 按钮的 HTML，使其具有唯一的 id 和适当的 value属性。
+7. 添加一个名为 `clearEntries()` 的函数表达式，清除四个文本框中的内容。然后，在 onload 事件处理器中添加一条语句，将 `clearEntries()` 函数绑定到 Clear Entries 按钮的点击事件上。
+8. 在 onload 事件处理器中添加一条语句，将 `clearEntries()` 函数绑定到 miles 文本框的双击事件上。然后，测试此更改。
+
+### 查看移除严格模式后会发生什么
+
+9. 如下所示修改 `calculateMPG()` 函数中的第二个语句，将变量名错写为 `Mpg` 而不是 `mpg`。
+
+```javascript
+var mpg = (miles / gallons);
+Mpg = mpg.toFixed(1);
+return Mpg;
+```
+
+10. 使用有效输入测试此应用程序，并注意它无法工作。然后按 F12 显示开发者工具，点击 Console 选项卡，查看此错误消息：`Mpg is not defined`。这表明严格模式防止了在不使用关键字的情况下声明变量。
+11. 删除严格模式声明，再次使用 1000 作为 miles，33 作为 gallons 进行测试。现在，应用程序可以工作了，但结果没有经过四舍五入。这是因为 JavaScript 引擎将 `Mpg` 视为一个新变量。
+12. 恢复严格模式声明并将变量名还原 `mpg`。然后再次测试以确保应用程序运行正常。
+
+![](img/32b24cb9657418b8429a4117bd539786_157_0.png)
+
+## 练习 4-2 构建 Future Value 应用程序
+
+在本练习中，你将构建第3章中未来价值（Future Value）应用程序的新版本。它的用户界面将如下所示：
+
+如果你在测试时遇到任何问题，请记住使用第1章图1-16所示的 Chrome 开发者工具。
+
+### 打开并检查初始文件
+
+1. 打开你的文本编辑器或 IDE，打开此文件夹中的 HTML 和 JavaScript 文件：
+`javascript_query\exercises\ch04\future_value\`
+2. 运行 HTML 文件，查看它提供了用户界面，但没有任何功能可以工作。
+3. 检查 JavaScript 文件。注意它只包含 `$` 函数。
+
+## 第4章 如何使用 JavaScript 对象、函数和事件
+
+### 为未来价值计算创建一个函数
+
+4. 创建一个名为 `calculateFV()` 的表达式。它应该有三个参数来接收用户的输入：投资金额、利率和年数。它应该根据这些参数值计算未来价值，将结果保留两位小数，并返回四舍五入后的结果。如果你需要此计算方面需要帮助，可以参考图3-7中的未来价值应用程序。
+
+### 为 Calculate 按钮的点击事件创建事件处理器
+
+5. 创建名为 `processEntries()` 的函数，获取用户输入但不进行数据验证。使用严格模式，通过声明存储用户输入的变量并将用户输入赋值给这些变量。
+6. 编写一条语句调用 `calculateFV()` 函数并将返回的结果存储在第四个文本框中。
+7. 为 onload 事件创建一个事件处理器，将 `processEntries()` 函数绑定到 Calculate 按钮的点击事件上。该处理器还应该将焦点移动到第一个文本框。
+8. 使用有效输入测试此应用程序，并调试直到其正常工作。
+
+### 添加数据验证
+
+9. 在其他变量声明之后，紧接着声明一个用于存储错误消息的变量。
+10. 添加一个 if-else 语句来测试每个输入是否有效。
+11. 再次添加 if-else 语句来测试每个输入是否有效。如果输入无效，则将错误消息赋值给变量并将焦点移动到该文本框。现在，测试此更改。这三个值分别为：
+- 投资金额
+- 利率
+- 年数
+
+## 带有逻辑错误的未来价值应用
+
+![](img/32b24cb9657418b8429a4117bd539786_162_0.png)
+
+# 测试的目标
+
+- 在应用投入生产之前找到所有错误。
+
+# 调试的目标
+
+- 在应用投入生产之前修复所有错误。
+
+# 可能发生的三类错误
+
+- **语法错误** 违反了 JavaScript 语句的编写规则。这些错误在页面加载到 Web 浏览器时会被 JavaScript 引擎捕获。
+- **运行时错误** 发生在页面加载之后且应用程序运行期间。当发生运行时错误时，JavaScript 引擎会抛出一个错误并停止应用程序的执行。
+- **逻辑错误** 是指那些不会导致语法或运行时错误，但产生错误结果的语句。
+
+## 描述
+
+- 为了测试一个 JavaScript 应用程序，你需要运行它以确保无论你输入什么数据或启动什么事件，它都能正常工作。
+- 当你调试应用程序时，你需要修复在测试应用程序时发现的所有错误（bugs）。
+
+图 5-1 测试与调试简介
+
+# 常见的 JavaScript 错误
+
+图 5-2 展示了在编写 JavaScript 应用程序时常见的编码错误。如果你已经做过练习，可能已经遇到过这些错误中的几个了。现在，如果你学习这张图，将对需要注意什么有更好的了解。
+
+如果你正在使用良好的文本编辑器或 IDE，可以通过注意输入代码时显示的错误标记和警告，在输入代码时避免大多数此类错误。例如，Aptana 将帮助你避免此图中前两组中的大多数错误。然而，它无法帮助你避免第三组中的错误。
+
+此图中的第四组涉及了第 2 章中提到的浮点算术问题。简而言之，JavaScript 使用 IEEE 754 标准处理浮点数，该标准可能会引入不精确的结果，尽管这些结果非常接近精确结果，但它们可能会引起问题，特别是在比较中。例如，数字 7.495 不等于 7.495000000000001。
+
+为了解决这个问题，你可以像示例所示对结果进行四舍五入。在这里，第一条语句使用数字的 `toFixed` 方法将 `salesTax` 值四舍五入到两位小数。在这种情况下，结果被存储为字符串，因为 `toFixed` 方法返回的是字符串。
+
+相反，第二条语句获取四舍五入的结果，然后使用 `parseFloat` 方法将其存储为数字。你使用的方法取决于你需要的结果是字符串还是数字。
+
+此图最后一组说明了当 JavaScript 假设变量是全局变量时可能出现的问题。在这个示例中，`salesTax` 变量通过 `var` 关键字正确声明。但下一条语句在尝试将四舍五入并解析后的值赋值给 `salesTax` 时，将 `salesTax` 拼错了为 `salesestax`。结果是 `salesestax` 被视为全局变量，四舍五入并解析后的值进入了 `salesestax` 而不是 `salesTax`，这自然导致了错误。
+
+正如你在第 4 章中学到的，通过对所有的 JavaScript 文件使用严格模式（strict mode），你可以避免该类错误。这样，如果你在使用变量之前声明它，JavaScript 引擎将抛出错误，你就必须修复该错误。否则，这样的错误将无法被发现，可能导致复杂的调试问题。
+
+# 第 5 章 如何测试和调试 JavaScript 应用程序 145
+
+# 常见的语法错误
+
+- 拼错关键词，例如将 `getElementById` 写成 `getElementBy`。
+- 遗漏必要的括号、引号、大括号。
+- 不使用相同的起始和结束引号。
+- 遗漏语句末尾的分号。
+- 拼错或错误地大写标识符，例如定义一个名为 `salesTax` 的变量并在后续引用它为 `salestax`。
+
+# HTML 引用问题
+
+- 错误地引用属性值或其他 HTML 组件，例如将 id 引用为 "salesTax" 或 "sales_tax"。
+
+# 数据和比较问题
+
+- 在处理用户输入之前没有确保其是正确的数据类型。
+- 在处理用户输入之前，没有使用 `parseInt` 或 `parseFloat` 方法将用户输入转换为数值。
+- 在测试相等性时使用单等号而不是双等号。
+
+# 浮点算术问题
+
+- JavaScript 中的数据类型使用浮点数，这可能导致算术结果不精确。例如：
+
+```javascript
+var salesAmount = 74.95;
+salesTax = salesAmount * .1; // result is 7.495000000000001
+```
+
+- 解决此问题的方法之一是将结果四舍五入到指定的位数。如果有必要，可以将其转换回浮点数：
+
+```javascript
+salesTax = salesTax.toFixed(2); // result is 7.50 as a string
+salesTax = parseFloat(salesTax.toFixed(2)); // result is 7.50 as a number
+```
+
+# 未声明的变量被视为全局变量的问题
+
+- 如果你不使用严格模式并给一个未声明的变量赋值，JavaScript 引擎将将其视为全局变量，在本示例中：
+
+```javascript
+var calculateTax = function(subtotal, rateTax) {
+  var salesTax = subtotal * rateTax; // salesTax is local
+  salesestax = parseFloat(salesTax.toFixed(2)); // salesestax is global
+  return salesTax; // salesTax isn't
+};
+```
+
+- 这个问题的解决方法始终使用严格模式。
+
+## 描述
+
+- 当 JavaScript 引擎遇到无法执行的 JavaScript 语句时，它会抛出一个异常（或错误）并跳过其余部分。
+
+![](img/32b24cb9657418b8429a4117bd539786_164_0.png)
+
+# 如何规划测试运行
+
+当你测试应用程序时，通常分至少两个阶段进行。在第一阶段，你使用有效数据测试应用程序。在第二阶段，你使用无效数据测试应用程序。如图 5-3 所示。
+
+随着应用程序变得越来越复杂，为测试应用程序创建一个计划是简单的。这只是一个表格或电子表格，显示了你将输入什么测试数据以及结果应该是什么。
+
+在有效测试阶段，你应该从可以容易验证结果的测试数据开始。如图中的未来价值应用所示。在这里，第一组测试数据输入是 1000 美元的投资，年利率为 10%，期 1 年。结果应该是 1100，事实也如此。
+
+接下来，你应该使用更可能产生不准确结果的测试数据。这涉及到使用一系列有效输入并验证结果的准确性。为了这一点，你显然需要知道结果应该是多少。对于像计算 MPG 这样执行简单计算的应用程序，这不是问题。但对于像未来价值应用这样执行更复杂计算的应用程序，使用在本章后面学习的调试技术来确定计算结果是否正确可能是困难。
+
+对于无效测试阶段，你的测试数据应该包含所有类型的无效输入。如图中的第二个示例所示。它展示了当三个值都输入零时未来价值应用的测试运行。正如你所看到的，第一个输入显示了错误，因为该值必须大于零。如果你修复了这个输入，第二个输入将显示类似的错误。如果你修复了第二个输入，第三个输入也会显示类似的错误。当你创建无效数据的测试计划时，尝试通过测试你能想到的所有无效数据和用户操作组合来让程序崩溃。这应该包括随机操作，例如在错误的时间或位置按下回车键或点击鼠标。
+
+## 使用有效数据测试的终值应用
+
+![](img/32b24cb9657418b8429a4117bd539786_166_0.png)
+
+## 使用无效数据测试的终值应用
+
+![](img/32b24cb9657418b8429a4117bd539786_166_1.png)
+
+## 两个关键测试阶段
+
+1. 使用有效输入数据测试应用程序，以确保结果正确。
+2. 使用无效数据或意外的用户操作测试应用程序。尝试你能想到的所有方法让应用程序运行失败。
+
+## 如何为关键阶段制定测试计划
+
+1. 列出你将要输入的有效条目以及每组条目的正确结果。然后，在使用这些条目进行测试时确保结果是正确的。
+2. 列出你将要输入的无效条目。这些应该包括测试允许值边界的输入。
+
+## 两个常见的测试问题
+
+- 测试条目的范围不够广泛。
+- 不知道每组条目的结果应该是多少，并且因为结果看起来是正确的就假设它们是正确的。
+
+## 描述
+
+- 发现和修复语法和运行时错误很容易，因为在修复它们之前应用程序无法正常运行。
+- 如果你不检查结果是否正确，或者测试的条目范围不够广泛，逻辑错误可能会通过你的测试运行。
+
+图 5-3 如何规划测试运行
+
+## 如何使用自顶向下编码和测试来简化调试
+
+简化调试的方法是每次编写并测试一小部分代码。这可以被称为自顶向下编码和测试，或简单的自顶向下测试。它的含义是你先测试最重要的操作，然后逐渐到最不重要的操作和最后的完善。
+
+图 5-4 中的示例说明这一点。在这里，第一个测试阶段由 15 行代码组成，为计算按钮的点击事件提供事件处理器。然而，该事件处理器没有进行任何验证。它只是调用 `calculateFV()` 函数来计算投资金额的终值，这是该应用程序的核心。
+
+然后，阶段 2 通过对第一个条目进行数据验证增加了这些代码。阶段 3 添加了在启动时将焦点移动到第一个文本框，以及检测到错误时将焦点移动到相应文本框的验证。
+
+结果是，你每次只测试一小部分代码。这使得调试变得简单，因为你知道任何错误都是由刚刚添加的代码引入的。这也让开发应用程序变得更加愉快，因为你正在不断取得进展，而没有复杂的调试问题带来的挫败感。
+
+第 5 章 如何测试和调试 JavaScript 应用程序 149
+
+## 终值应用的用户界面
+
+![](img/32b24cb9657418b8429a4117bd539786_168_0.png)
+
+## 测试阶段 1：无数据验证
+
+```javascript
+var $ = function(id) {
+    return document.getElementById(id);
+};
+
+var calculateFV = function(investment, rate, years) {
+    // calculate and return future value
+};
+
+var calculateClick = function() {
+    var investment = parseFloat($
+```
+
+## 测试阶段 2：为第一个条目添加数据验证
+
+```javascript
+if (isNaN(investment) || investment <= 0 || investment > 100000) {
+    error = "Investment must be a number greater than zero" + " and less than or equal to 100,000";
+} else {
+    $("future_value").value = calculateFV(investment, rate, years);
+}
+```
+
+## 测试阶段 3：为其他条目添加数据验证
+
+```javascript
+// Add data validation for the other entries
+```
+
+## 测试阶段 4：添加完善工作
+
+```javascript
+// Add finishing touches like moving the focus to the first text box // or the text box that contains an error
+```
+
+## 描述
+
+- 当你使用自顶向下编码和测试时，你从编写测试一小部分代码开始。然后，你通过每次添加一两个操作的代码并在每次添加后测试来在此基础上构建。
+- 自顶向下测试简化了调试，因为你知道错误是由刚刚添加的代码引起的。因此，找到错误相对容易。
+
+图 5-4 如何使用自顶向下编码和测试来简化调试
+
+## 如何使用 Chrome 开发者工具调试
+
+在第 1 章中，你学习了 Chrome 开发者工具的控制台（Console）面板，作为查找错误的方法。尽管如此，Chrome 为更复杂的问题提供了一些优秀的调试功能。
+
+由于 Chrome 开发者工具相对容易使用，后续主题不会介绍使用其所有功能的步骤。相反，它们介绍的是你将最频繁使用的技能。然后，如果你决定想使用其他一些功能，你可以自己进行实验。
+
+## 如何使用 Chrome 查找错误
+
+如图 5-5 所示，有几种方法打开和关闭开发者工具，但大多数情况下你会使用 F12 键。这就是为什么 Chrome 和其他浏览器的开发者工具通常被称为 *F12 工具*。
+
+Chrome 开发者工具的主要用途之一是在 JavaScript 应用程序抛出错误并停止运行时获取错误消息。要获取错误消息，打开开发者工具并点击控制台（Console）标签页显示错误消息。然后，你可以点击消息右侧的链接切换到源代码（Sources）面板，突出显示错误语句的 JavaScript 代码。
+
+在此图示例中，问题是语句中的 `isNan` 拼写错误。应该是 `isNaN`。这说明找到错误是多么简单。通常，高亮的语句并不是导致错误的那一个，但至少你有一个线索可以帮助你找到真实原因。
+
+顺便说，显示的错误消息是针对检测到的错误的，但代码中可能还有其他错误。为了捕获它们，你必须修复第一个错误并重新运行应用程序。然后，如果还有其他错误，重复该过程直到它们都修复且应用程序运行完成。
+
+## 第 5 章 如何测试和调试 JavaScript 应用
+
+### Sources（源代码）面板中的断点
+
+![](img/32b24cb9657418b8429a4117bd539786_172_0.png)
+
+### 如何在 Sources 面板中设置或移除断点
+
+- 点击 Sources 选项卡显示 Sources 面板。然后，点击左侧你想要调试的 JavaScript 文件。
+- 在中间面板中，点击语句左侧栏中的某个行号。这将添加断点或移除现有的断点。
+
+### 用于单步执行 JavaScript 代码的按钮和按键
+
+| 按钮 | 键 | 描述 |
+| --- | --- | --- |
+| Step Into（单步） | F11 | 逐行执行代码。 |
+| Step Over（单跳） | F10 | 运行所有调用的函数，但不进入其内部。 |
+| Step Out（单出） | SHIFT+F11 | 执行函数的剩余部分，而不进入其内部。 |
+| Resume（恢复） | F8 | 恢复执行。 |
+
+### 如何查看每一步的当前值
+
+- 将鼠标悬停在 Sources 面板中间面板变量名上。
+- 在右侧面板的 Scope->Local 部分查看当前变量。
+- 点击右侧面板 Watch（监视）区域的 ► 符号，点击出现的加号，输入你想要监控的变量名或表达式。
+- 值也会显示在中间面板变量声明的右侧。
+
+## 描述
+
+- 你可以在除空行以外的任意行设置断点。当 JavaScript 引擎遇到断点时，它会在执行带有断点的语句之前停止。
+- 行号周围的浅蓝色箭头标记断点，在你单步执行代码时，浅蓝色箭头会高亮下一个将执行的语句。
+
+图 5-6 如何使用断点并单步执行代码。
+
+### 其他调试方法
+
+由于 Chrome 拥有出色的开发者工具，你应该在大多数调试工作中使用它们。不过，这里还有一些你应该了解的其他调试方法。
+
+### 如何跟踪 JavaScript 代码的执行过程
+
+当你跟踪应用的执行过程时，你是在确定应用中语句执行的顺序。实现的一种简单方法是在代码中添加语句，在代码的关键点记录消息或变量值。然后你可以在 Chrome 开发者工具的 Console（控制台）面板中查看这些信息。
+
+示例 5-7 说明了这一点。在这里，为“未来值”应用的 `calculateFV()` 函数添加了两个 log 语句。第一个写在函数开头，可以让你知道 `calculateFV()` 函数已启动。第二个写在循环结束处，显示计数器变量的值和当前的未来值。
+
+如果你检查 log 语句的输出，你应该能够判断为什么未来值计算结果是不正确的。（该应用与你在图 5-1 中看到的具有相同的逻辑错误。）在这里，循环执行了 9 次，但“年份（Number of Years）”输入是 10。这意味着决定循环何时结束的条件表达式是不正确的。在这种情况下，循环应该执行到小于或等于十为止。
+
+在这个示例中，跟踪帮助你发现 bug。然而，你也可以使用跟踪来确保结果是正确的。例如，你可能很容易假设未来值结果是正确的而不进行进一步检查。跟踪循环中语句的执行显示，结果不可能是正确的。
+
+当你使用这种技术时，通常开始向代码中添加几个 log 语句。然后，如果它不能帮助你解决问题，你可以添加更多。通常，这就是你解决调试问题所需的一切，而且这比设置断点和单步执行代码要快。
+
+在处理被多次执行的代码时，跟踪比单步执行代码更好。例如，假设某个错误发生在循环内部，该循环对一个包含 1000 个元素的数组每个元素进行计算。那么，单步执行整个数组来寻找计算错误之处将是异常的。但是，通过 `console.log()` 方法，你可以在每次迭代时将循环索引和元素值发送到控制台，然后在脚本停止运行时查看完整的日志。
+
+你也可以使用 `alert()` 方法跟踪应用的执行。这种方法的好处是直接在浏览器中显示跟踪数据，而不需要打开 Console 面板。但它的缺点是具有干扰性。
+
+### 使用带有两个 log 语句以跟踪代码执行的 JavaScript
+
+```javascript
+var calculateFV = function(investment, rate, years) {
+  console.log("calculateFV function has started");
+  var futureValue = investment;
+  for (var i = 1; i < years; i++) {
+    futureValue = futureValue * rate / 100;
+    console.log("i = " + i + " + future value = " + futureValue);
+  }
+  futureValue = futureValue.toFixed(2);
+  return futureValue;
+};
+```
+
+
+
+# Chrome 开发者工具 Console 面板中的消息
+
+![](img/32b24cb9657418b8429a4117bd539786_174_0.png)
+
+## 描述
+
+- *跟踪* JavaScript 应用执行的一种简单方法是插入 `console.log()` 方法。
+- 在 Chrome 开发者工具的 Console 面板中，你可以看到消息。
+
+图 5-7 如何跟踪你的 JavaScript 代码执行。
+
+### 使用带有两个 log 语句以跟踪代码执行的 JavaScript
+
+```javascript
+var calculateFV = function(investment, rate, years) {
+  console.log("calculateFV function has started");
+  var futureValue = investment;
+  for (var i = 1; i < years; i++) {
+    futureValue = futureValue * rate / 100;
+    console.log("i = " + i + " + future value = " + futureValue);
+  }
+  futureValue = futureValue.toFixed(2);
+  return futureValue;
+};
+```
+
+### 如何查看每一步的当前值
+
+- 将鼠标悬停在 Sources 面板中间面板的变量名上。
+- 在右侧面板的 `Scope->Local` 部分查看当前变量。
+- 点击右侧面板 Watch 区域的 ► 符号，点击出现的加号，输入你想要监控的变量名或表达式。
+- 值也会显示在中间面板变量声明的右侧。
+
+## 描述
+
+- 你可以在除空行以外的任意行设置断点。当 JavaScript 引擎遇到断点时，它会在执行带有断点的语句之前停止。
+- 行号周围的浅蓝色箭头标记断点，在你单步执行代码时，浅蓝色箭头会高亮下一个将执行的语句。
+
+图 5-6 如何使用断点并单步执行代码。
+
+### 其他调试方法
+
+由于 Chrome 拥有优秀的开发者工具，你应该在大多数调试工作中使用它们。不过，这里还有一些你应该了解的其他调试方法。
+
+### 如何跟踪你的 JavaScript 代码执行
+
+当你跟踪应用的执行过程时，你是在确定应用中语句执行的顺序。实现的一种简单方法是在代码中添加语句，在代码的关键点记录消息或变量值。然后你可以在 Chrome 开发者工具的 Console 面板中查看这些信息。
+
+示例 5-7 说明了这一点。在这里，为“未来值”应用的 `calculateFV()` 函数添加了两个 log 语句。第一个写在函数开头，可以让你知道 `calculateFV()` 函数已启动。第二个写在循环结束处，显示计数器变量的值和当前的未来值。
+
+如果你检查 log 语句的输出，你应该能够判断为什么未来值计算结果是不正确的。（该应用与你在图 5-1 中看到的具有相同的逻辑错误。）在这里，循环执行了 9 次，但“年份（Number of Years）”输入是 10。这意味着决定循环何时结束的条件表达式是不正确的。在这种情况下，循环应该执行到小于或等于十为止。
+
+在这个示例中，跟踪帮助你发现 bug。然而，你也可以使用跟踪来确保结果是正确的。例如，你可能很容易假设未来值结果是正确的而不进行进一步检查。跟踪循环中语句的执行显示，结果不可能是正确的。
+
+当你使用这种技术时，通常开始向代码中添加几个 log 语句。然后，如果它不能帮助你解决问题，你可以添加更多。通常，这就是你解决调试问题所需的一切，而且这比设置断点和单步执行代码要快。
+
+在处理被多次执行的代码时，跟踪比单步执行代码更好。例如，假设某个错误发生在循环内部，该循环对一个包含 1000 个元素的数组每个元素进行计算。那么，单步执行整个数组来寻找计算之处将是异常的。但是，通过 `console.log()` 方法，你可以在每次迭代时将循环索引和元素值发送到控制台，然后在脚本停止运行时查看完整的日志。
+
+你也可以使用 `alert()` 方法跟踪应用的执行。这种方法的好处是直接在浏览器中显示跟踪数据，而不需要打开 Console 面板。但它的缺点是具有干扰性。
+
+### 使用带有两个 log 语句以跟踪代码执行的 JavaScript
+
+```javascript
+var calculateFV = function(investment, rate, years) {
+  console.log("calculateFV function has started");
+  var futureValue = investment;
+  for (var i = 1; i < years; i++) {
+    futureValue = futureValue * rate / 100;
+    console.log("i = " + i + " + future value = " + futureValue);
+  }
+  futureValue = futureValue.toFixed(2);
+  return futureValue;
+};
+```
+
+### Chrome 开发者工具 Console 面板中的消息
+
+![](img/32b24cb9657418b8429a4117bd539786_174_0.png)
+
+## 描述
+
+- *跟踪* JavaScript 应用执行的一种简单方法是插入 `console.log()` 方法。
+- 在 Chrome 开发者工具的 Console 面板中，你可以看到消息。
+
+图 5-7 如何跟踪你的 JavaScript 代码执行。
+
+### 如何查看每一步的当前值
+
+- 将鼠标悬停在 Sources 面板中间面板的变量名上。
+- 在右侧面板的 `Scope->Local` 部分查看当前变量。
+- 点击右侧面板 Watch 区域的 ► 符号，点击出现的加号，输入你想要监控的变量名或表达式。
+- 值也会显示在中间面板变量声明的右侧。
+
+## 描述
+
+- 你可以在除空行以外的任意行设置断点。当 JavaScript 引擎遇到断点时，它会在执行带有断点的语句之前停止。
+- 行号周围的浅蓝色箭头标记断点，在你单步执行代码时，浅蓝色箭头会高亮下一个将执行的语句。
+
+图 5-6 如何使用断点并单步执行代码。
+
+### 其他调试方法
+
+由于 Chrome 拥有优秀的开发者工具，你应该在大多数调试工作中使用它们。不过，这里还有一些你应该了解的其他调试方法。
+
+### 如何跟踪你的 JavaScript 代码执行
+
+当你跟踪应用的执行过程时，你是在确定应用中语句执行的顺序。实现的一种简单方法是在代码中添加语句，在代码的关键点记录消息或变量值。然后你可以在 Chrome 开发者工具的 Console 面板中查看这些信息。
+
+示例 5-7 说明了这一点。在这里，为“未来值”应用的 `calculateFV()` 函数添加了两个 log 语句。第一个写在函数开头，可以让你知道 `calculateFV()` 函数已启动。第二个写在循环结束处，显示计数器变量的值和当前的未来值。
+
+如果你检查 log 语句的输出，你应该能够判断为什么未来值计算结果是不正确的。（该应用与你在图 5-1 中看到的具有相同的逻辑错误。）在这里，循环执行了 9 次，但“年份（Number of Years）”输入是 10。这意味着决定循环何时结束的条件表达式是不正确的。在这种情况下，循环应该执行到小于或等于十为止。
+
+在这个示例中，跟踪帮助你发现 bug。然而，你也可以使用跟踪来确保结果是正确的。例如，你可能很容易假设未来值结果是正确的而不进行进一步检查。跟踪循环中语句的执行显示，结果不可能是正确的。
+
+当你使用这种技术时，通常开始向代码中添加几个 log 语句。然后，如果它不能帮助你解决问题，你可以添加更多。通常，这就是你解决调试问题所需的一切，而且这比设置断点和单步执行代码要快。
+
+在处理被多次执行的代码时，跟踪比单步执行代码更好。例如，假设某个错误发生在循环内部，该循环对一个包含 1000 个元素的数组每个元素进行计算。那么，单步执行整个数组来寻找计算之处将是异常的。但是，通过 `console.log()` 方法，你可以在每次迭代时将循环索引和元素值发送到控制台，然后在脚本停止运行时查看完整的日志。
+
+你也可以使用 `alert()` 方法跟踪应用的执行。这种方法的好处是直接在浏览器中显示跟踪数据，而不需要打开 Console 面板。但它的缺点是具有干扰性。
+
+## 第 5 章 如何测试和调试 JavaScript
+
+W3C 验证器首页
+
+![](img/32b24cb9657418b8429a4117bd539786_178_0.png)
+
+包含一个错误的验证结果
+
+![](img/32b24cb9657418b8429a4117bd539786_178_1.png)
+
+## 如何使用 W3C 标记验证服务
+
+- 访问 URL：`http://validator.w3.org/`，识别要验证的文件，并点击 Check 按钮。
+
+## 如何在 Aptana 中验证 HTML 文件
+
+- 选择文件。然后选择 `Commands→HTML→Validate Syntax (W3C)` 命令。
+
+## 描述
+
+- 偶尔，页面中的 HTML 错误会影响该页面 JavaScript 的运行。如果你怀疑可能发生了这种情况，*验证*页面的 HTML 有时会暴露错误。
+- 要验证页面的 HTML，你可以使用此目的程序或网站。最流行的网站之一是 W3C 标记验证服务。
+- 使用 W3C 标记验证服务时，如果你想要验证的文件已经上传到 Web 服务器，你可以在 Validate URI 选项卡中输入其 URL 进行验证。如果你想要验证的文件尚未上传到 Web 服务器，可以在 Validate by File Upload 选项卡中找到它进行验证。
+- 如果你正在使用 Aptana，可以使用上述命令来验证 HTML 文件。
+
+图 5-9 何时以及如何验证 HTML
+
+## 观点
+
+JavaScript 应用程序往往在经过彻底测试和调试之前就投入了生产环境。在 JavaScript 编程的早期，这是可以理解的，因为测试和调试工具非常有限。今天，你拥有所有所需的工具，可以在投入生产之前对应用程序进行彻底调试。
+
+## 术语
+
+- 测试 (test)
+- 自顶向下编码测试 (top-down coding and testing)
+- 调试 (debug)
+- 自顶向下测试 (top-down testing)
+- 错误 (bug)
+- 开发者工具 (developer tools)
+- 语法错误 (syntax error)
+- F12 工具
+- 运行时错误 (runtime error)
+- 断点 (breakpoint)
+- 抛出异常 (throw an exception)
+- 单步执行代码 (step through code)
+- 抛出错误 (throw an error)
+- 追踪 (trace)
+- 逻辑错误 (logic error)
+- 验证 HTML (validate the HTML)
+
+# 总结
+
+- 当你测试应用程序时，你是在尝试让它失败。当你调试应用程序时，是修复测试期间发现的所有问题。
+- 当你为 JavaScript 应用程序编写代码时，可能会引入三种类型的错误：语法错误、运行时错误和逻辑错误。
+- 自顶向下编码和测试简化了调试，因为你通过一次编码和测试少量的语句来构建应用程序。
+- Chrome 的开发者工具（或 F12 工具）可以在应用程序停止运行时帮助你调试。首先，Console 面板会显示错误消息。然后，消息中的链接将跳转到 Sources 面板中发生错误所在的语句。
+- 在 Chrome 开发者工具的 Sources 面板中，你可以设置断点来停止代码的执行。然后，你可以从断点开始单步执行代码并查看每一步的变量。
+- 追踪应用程序执行的一种简单方法是在 JavaScript 代码的关键点调用 `console.log()` 方法。该方法会在 Chrome 的 Console 面板中记录指定的数据。你也可以使用 `alert()` 方法进行追踪。
+- 在调试过程中，你可能偶尔查看加载到浏览器中的 HTML 和 JavaScript。
+- 验证页面的 HTML 将帮助你调试应用程序。
+
+## 练习 5-1 使用 Chrome 开发者工具
+
+在本次练习中，你将使用 Chrome 开发者工具找到一个语法错误和一个逻辑错误，设置断点并单步执行 Email List 应用程序。
+
+1. 打开此文件夹中 Email List 应用程序的 HTML 和 JavaScript 文件：`javascript_jquery\exercises\ch05\email_list`
+2. 在 Chrome 中运行应用程序，在三个文本框中输入有效值，并点击 Join List 按钮。注意此时没有发生什么。
+3. 打开开发者工具并使用 Console 面板显示导致问题的错误，如图 5-5 所示。然后，点击错误链接找到导致该错误的语句。
+4. 切换到你的文本编辑器或 IDE 并修复代码。修正应该是显而易见的。然后，在三个文本框中输入有效值再次测试应用程序。这次应该应该显示一个没有任何消息的 alert 对话框。
+5. 点击对话框中的 OK 按钮，注意 Console 面板中没有错误消息。这是因为发生了逻辑错误。
+6. 仍在开发者工具中，切换到 Sources 面板。然后，如果有必要，点击左侧的 `email_list.js` 文件显示 JavaScript 代码。
+7. 在代码中设置断点。然后，你可以从断点开始单步执行代码并查看每一步的变量。
+8. 追踪应用程序执行的一种简单方法是在 JavaScript 代码的关键点调用 `console.log()` 方法。
+
+## 练习 5-2 使用其他调试方法
+
+在本次练习中，你将使用其他调试方法寻找错误。
+
+1. 打开 Email List 应用程序的 HTML 和 JavaScript 文件。
+2. 在 Chrome 中运行应用程序，在三个文本框中输入有效值，并点击 Join List 按钮。
+3. 使用 Console 面板追踪执行过程。
+
+# DOM 脚本属性与方法
+
+要对 DOM 进行脚本操作，你将使用构成 DOM 的对象的属性和方法。这些属性和方法由所有当前浏览器实现的 DOM Core 规范以及 DOM HTML 规范定义。
+
+# DOM 脚本概念
+
+在学习 DOM Core 规范的属性和方法之前，图 6-1 展示了你应该理解的 DOM 脚本概念。首先，DOM 对象模型（或简称 DOM）是作为加载到浏览器中的 HTML 页面而构建的。它包含了表示页面上所有 HTML 元素和属性的节点。图中的 HTML 代码和图表说明了这一点。
+
+除了图中用椭圆表示的元素节点外，DOM 还包含了持有 HTML 元素数据的文本节点。在图中，文本节点是矩形。例如，第一个文本节点包含 head 部分中 `title` 元素的文本：“Join Email List”。紧随其右侧的另一个节点包含 body 部分中 `h1` 元素的文本：“Please join our email list”。并以此类推。
+
+为了简单起见，此图只包含了元素节点和文本节点，但 DOM 还包括属性节点，每个属性节点都可以拥有一个持有属性值的文本节点。此外，如果 HTML 中包含注释，DOM 也会包含注释节点。
+
+如果你研究此图中的表格，你会发现一个元素节点可以拥有元素、文本和注释节点作为子节点。属性节点可以有一个文本节点作为子节点。文本节点不能有子节点。尽管属性节点附加在元素节点上，但它不被视为元素节点的子节点。
+
+用于 DOM 节点的属性和方法是由称为“接口（interface）”的规范定义的。在接下来的主题中，你将学习如何操作 DOM、Document 和 Element 接口的属性和方法。
+
+在使用这些接口时，你会遇到如父级（parent）、兄弟级（sibling）和后代级（descendant）等术语。这些术语的用法与家族谱中的完全相同。例如，在图中，`form` 元素是 `label`、`input` 和 `span` 元素的父节点，而 `input` 和 `span` 元素是 `form` 元素的子节点。`label`、`input` 和 `span` 元素也是兄弟节点，因为它们拥有同一个父节点。同样，`h1` 和 `form` 元素是 `body` 元素的子节点，而 `h1`、`form`、`label`、`input` 和 `span` 元素都是 `body` 元素的后代。
+
+你也应该能够在网页的 HTML 中看到这些关系。例如，在图中的 HTML 中，缩进清晰地显示了每个元素的子节点和后代节点。
+
+# 网页代码
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Join Email List</title>
+</head>
+<body>
+  <h1>Please join our email list.html</h1>
+  <form id="email_form" name="email_form" action="join.html" method="get">
+    <label for="email_address">Email Address:</label>
+    <input type="text" id="email_address" name="email_address">
+    <span id="email_error">**</span><br>
+  </form>
+</body>
+</html>
+```
+
+# 网页的 DOM
+
+![](img/32b24cb9657418b8429a4117bd539786_184_0.png)
+
+# 你常用的 DOM 节点
+
+| 类型 | 说明 |
+|---|---|
+| Document | DOM 的根节点。它只能有一个 Element 节点作为子节点。 |
+| Element | 网页中的一个元素。它可以拥有 Element、Text 和 Comment 节点作为子节点。 |
+| Attr | 元素的属性。尽管它附加在 Element 节点上，但它不被视为子节点。它可以拥有一个 Text 节点作为子节点。 |
+| Text | 元素或属性的文本。它不能有子节点。 |
+
+# DOM 基础概念
+
+- DOM（文档对象模型）是 浏览器内存中一个层次化的节点集合，表示当前的网页。
+- 网页的 DOM 是随着 浏览器加载页面而构建的。
+- JavaScript 可以通过修改 DOM 来修改浏览器中的 DOM。每当 DOM 发生变化时， 浏览器就会显示更改的结果。
+- 要修改 DOM，你可以使用 DOM Core 规范定义的属性和方法。
+
+图 6-1 DOM 脚本概念
+
+# Node 接口的属性
+
+图 6-2 描述了你可以用于操作节点的六个属性。这些属性由 Node 接口定义。图中的所有示例假设使用 `$` 函数通过 id 获取元素。
+
+第一个 JavaScript 示例展示了如何使用 `firstChild` 和 `nodeValue` 属性来获取 HTML 元素的文本。在这种情况下，如果语句在节点更改之前运行，该语句将在名为 `errorTest` 的变量中存储一个星号（*）。这是因为该节点是由 HTML 设置为星号的。
+
+如果你参考上一个图表，你会发现需要 `firstChild` 属性来获取 `span` 元素的文本节点。然后，通过 `nodeValue` 属性从该节点获取文本。
+
+第二个 JavaScript 示例展示了如何使用 `firstChild` 和 `nodeValue` 属性将文本放入 HTML 元素的文本节点中。与第一个示例一样，将 `firstChild` 赋值给该元素的 `nodeValue` 属性。
+
+第三个 JavaScript 示例展示了如何使用 `firstChild` 和 `nodeValue` 属性将文本放入 HTML 元素的文本节点中。你应该知道，在所有这些示例中，你需要确保在加载时文本包含一个值。否则元素将没有 `firstChild`。
+
+# DOM 接口的一些属性
+
+| 属性 | 描述 |
+| --- | --- |
+| nodeValue | 对于 Text、Comment 或 Attribute 节点，该属性返回存储在节点中的文本。否则返回 null。 |
+| parentNode | 返回节点的父节点（如果存在）。否则，该属性返回 null。 |
+| childNodes | 返回表示节点子节点的 Node 对象数组。如果节点没有子节点，则数组为空。 |
+| firstChild | 返回节点第一个子节点的 Node 对象。如果节点没有子节点，该属性返回 null。 |
+| lastChild | 返回节点最后一个子节点的 Node 对象。如果节点没有子节点，该属性返回 null。 |
+| nextElementSibling | 返回节点下一个兄弟节点的 Node 对象。如果节点没有后续的兄弟节点，该属性返回 null。 |
+
+# 包含元素和文本节点的 HTML
+
+```html
+<body>
+  <h1>Please join our email list</h1>
+  <form id="email_form" name="email_form" action="join.html" method="get">
+    <label for="email_address">Email Address:</label>
+    <input type="text" id="email_address" name="email_address">
+    <span id="email_error"></span><br>
+    <label>&nbsp;</label>
+    <input type="button" id="join_list" value="Join our List">
+  </form>
+</body>
+```
+
+# 获取以 "email_error" 为 id 的文本
+
+```javascript
+var errorText = $("email_error").firstChild.nodeValue;
+```
+
+# 设置以 "email_error" 为 id 的 HTML 元素的文本
+
+```javascript
+$("email_error").firstChild.nodeValue = "Entry is invalid";
+```
+
+# 在不使用 id 的设置文本
+
+```javascript
+$("email_address").nextElementSibling.firstChild.nodeValue = "";
+```
+
+## Document 和 Element 接口的方法
+
+图 6-3 中的第一个表格总结了 Document 和 Element 接口中共同拥有的三个方法。这三个方法都返回数组。例如，`getElementsByTagName(tagName)` 方法返回一个包含所有指定标签名称的 Element 节点的数组。
+
+如果对 `document` 对象使用这些方法，它们将获取文档中的所有元素。第一个示例说明了这一点，它获取了文档中所有的 `<a>` 元素并将它们放入一个名为 `links` 的数组中。
+
+如果将某个元素作为对象使用这些方法，它们将获取该元素的所有后代。例如，第二个示例中的第一个语句获取 id 为“image_list”的元素。然后，第二个语句获取一个包含所有 `image_list` 元素后代的 `<li>` 元素的数组。
+
+该图中的第二个表格总结了 Element 接口中一些用于处理属性的方法。例如，图中的第三个示例使用 `hasAttribute()` 方法来检查元素是否具有类（class）。如果有，它会使用 `getAttribute()` 方法获取该属性的值。
+
+第四个示例展示了如何使用 `setAttribute()` 方法来设置属性。在这里，第二个语句将 `class` 属性设置为“open”。当使用此方法时，如果该属性不存在，该方法会在设置值之前将其添加到元素中。最后，图中的最后一个示例使用 `removeAttribute()` 方法从元素中移除了 `class` 属性。
+
+# 第 6 章 如何使用 JavaScript 编写 DOM
+
+### Document 和 Element 接口的常用方法
+
+| 方法 | 说明 |
+| --- | --- |
+| getElementsByTagName(tagName) | 返回一个所有源自文档或元素、且标签与指定标签匹配的 Element 对象的数组。 |
+| getElementsByName(name) | 返回一个所有源自文档或元素、且 name 属性与指定名称匹配的 Element 对象的数组。 |
+| getElementsByClassName(classNames) | 返回一个所有源自文档或元素、且类属性或类名与参数匹配的 Element 对象的数组。`classNames` 参数可以是单个名称，也可以是空格分隔的类名列表。 |
+
+### Element 接口的常用方法
+
+| 方法 | 说明 |
+| --- | --- |
+| hasAttribute(name) | 如果 Element 具有 `name` 中指定的属性，则返回 true。 |
+| getAttribute(name) | 返回 `name` 中指定的属性的值，如果未设置该属性，则返回空字符串。 |
+| setAttribute(name, value) | 将 `name` 中指定的属性设置为指定的值。如果该属性不存在，则创建该属性。 |
+| removeAttribute(name) | 移除 `name` 中指定的属性。 |
+
+### 如何创建文档中所有 <a> 标签的数组
+
+```javascript
+var links = document.getElementsByTagName("a");
+```
+
+### 如何创建 <ul> 元素 (image_list) 内部所有 <li> 标签的数组
+
+```javascript
+var list = document.getElementById("image_list");
+var items = list.getElementsByTagName("li");
+```
+
+### 如何测试并获取属性
+
+```javascript
+var list = document.getElementById("image_list");
+if (list.hasAttribute("class")) {
+  var classAttribute = list.getAttribute("class");
+}
+```
+
+### 如何设置属性
+
+```javascript
+var list = document.getElementById("image_list");
+list.setAttribute("class", "open");
+```
+
+### 如何移除属性
+
+```javascript
+var list = document.getElementById("image_list");
+list.removeAttribute("class");
+```
+
+## 描述
+
+- Document 和 Element 接口的方法允许你获取元素数组。
+- Element 接口的方法还允许你处理属性。
+
+图 6-3 Document 和 Element 接口的方法
+
+## DOM HTML 规范的属性
+
+你到为止看到的属性和方法都是 DOM Core 规范的一部分。但还有一个 DOM HTML 规范，它提供了更易于处理 HTML 元素的属性。图 6-4 总结了其中一些属性并向你展示了如何使用它们。
+
+当你使用 DOM HTML 规范时，应该记住它的属性并没有提供新的功能。相反，它们提供了快捷方式，使得处理 HTML 文档的 DOM 节点变得更加容易。
+
+这种差异通过图中的第一组示例来说明，这些示例获取并设置了 `<img>` 元素的 `src` 属性。在 DOM 核心规范中，使用的是 `getAttribute` 和 `setAttribute()` 方法。在 DOM HTML 规范中，直接使用 `src` 属性，这缩短并简化了代码。
+
+图中的其他示例展示了如何使用 DOM HTML 规范的其他一些属性。你将在本书的应用中看到一些其他属性。通常，属性名称与属性名称相同，但有时属性名称会有不同。例如，其中一个示例所示，使用 `className` 属性来获取和设置类属性（class）。
+
+如果你想使用 DOM HTML 规范的在线文档，了解该规范由多个描述对象类型属性和方法的接口组成会有帮助。基础接口是 `HTMLElement`，它描述了一个基础 HTML 元素。此外，`HTMLElement` 接口继承了 DOM Core Element 接口的属性和方法，而后者继承自 DOM Core Node 接口。这意味着当你在 JavaScript 中处理 HTML 元素时，可以使用 Node、Element 和 HTMLElement 的属性和方法。
+
+除此之外，特定的 HTML 元素使用继承自基础 `HTMLElement` 接口的特定 DOM 接口。例如，`<img>` 元素使用 `HTMLImageElement`，`<input>` 元素使用 `HTMLInputElement`。大多数情况下，你不需要知道具体的接口。
+
+## DOM HTML 规范如何简化你的代码
+
+### 使用 DOM 核心规范获取和设置 <img> src 属性
+
+```javascript
+var imageElement = $("img");
+alert(imageElement.getAttribute("src")); // 显示 src 属性
+imageElement.setAttribute("src", "lures.jpg"); // 设置 src 属性
+```
+
+### 使用 DOM HTML 规范获取和设置相同的属性
+
+```javascript
+alert(imageElement.src); // 显示 src 属性
+imageElement.src = "lures.jpg"; // 设置 src 属性
+```
+
+### 使用 DOM HTML 规范的其他示例
+
+#### 获取数组中第一个元素的 id 属性
+
+```javascript
+links = document.getElementsByTagName("a");
+var firstLinkId = links[0].id;
+```
+
+#### 获取 <a> 元素的 href 属性
+
+```javascript
+var target = $("first_link").href;
+```
+
+#### 获取并设置具有两个类的元素的属性
+
+```javascript
+$("div").className = "open plus";
+var classNames = $("div").className; // classNames = "open plus";
+```
+
+#### 获取数组中第一个元素的 tag 属性
+
+```javascript
+links = document.getElementsByTagName("a");
+var tagName = links[0].tagName; // tagName = "a";
+```
+
+#### 禁用和启用元素
+
+```javascript
+$("btnPlay").disabled = true;
+$("btnPlay").disabled = false;
+```
+
+## FAQs 应用
+
+现在，你将看到 Node、Document 和 Element 接口的属性和方法如何在典型的 DOM 脚本应用程序中使用的。我们将其称为 FAQs（常见问题解答）应用程序，你可以在图 6-5 中看到它的用户界面。
+
+非常简单，如果用户点击一个前面带有加号的标题，其下方的文本就会显示，且加号会变为减号。同样，如果用户点击一个前面带有减号的标题，其下方的文本会被隐藏，减号会变为加号。你可以同时显示所有三个标题下方的文本，用户也可以同时隐藏所有三个标题下方的文本。
+
+## HTML 和 CSS
+
+在图中的 HTML 中，你可以看到每个问题都编码在 `<h2>` 内部的 `<a>` 元素中，每个 `<h2>` 元素后面都跟着一个包含答案的 `<div>`。注意，这些元素中的 `href` 属性被编码为 `#` 号，因此这些链接不会跳转到任何地方。
+
+由于 `<a>` 元素被编码在 `<h2>` 元素内部，用户可以使用 Tab 键从一个切换到下一个。然后，当用户通过 Tab 键到一个标题并按下 Enter 键时，效果与点击标题相同。这对于无法操作鼠标的动作功能障碍用户来说方便得多。
+
+在 CSS 中，你可以看到 `focus`（聚焦）和 `hover`（悬停）伪类都被设置为蓝色。这样，无论用户悬停在链接上还是通过 Tab 键切换到，`<a>` 元素看起来都是相同的。
+
+接下来，查看 `<h2>` 元素的两个样式规则，当用户鼠标悬停在 `<h2>` 元素上时，光标被设置为指针（pointer）。它还应用了包含名为 `plus.png` 图像的背景属性。该图像以不重复（no-repeat）的方式显示在元素的左侧，并垂直居中对齐。
+
+针对 `<h2>` 元素的第二个样式规则适用于 `class` 属性设置为 "minus" 的元素。该规则应用了与所有 `<h2>` 元素类似的背景属性，但这次使用的是名为 `minus.png` 的图像。这就是当标题下方文本显示时使用的图像。
+
+现在，查看 `<div>` 元素的两个样式规则。第一个将 `display` 属性设置为 "none"，这会隐藏 `<div>` 元素的内容。相比之下，第二个样式规则适用于 `class` 属性设置为 "open" 的 `<div>` 元素。它将 `display` 属性设置为 block，这意味着 `<div>` 的内容会被显示。
+
+通过这样设置 HTML 和 CSS，所有的 JavaScript 都需要在用户点击标题时开启这些这些类。例如，如果用户点击隐藏状态的中间 `<h2>` 标题，JavaScript 需要将被点击的 `<h2>` 元素的 `class` 属性设置为 "minus"，并将其兄弟元素 `<div>` 元素的 `class` 属性设置为 "open"。
+
+## 浏览器中的 FAQs 应用
+
+> JavaScript 常见
+**什么是 JavaScript？**
+JavaScript 是一种基于浏览器的编程语言，它可以使网页更具响应性并减少与服务器的往返次数。
+
+**什么是 jQuery？**
+为什么 jQuery 变得如此流行？
+
+## HTML
+
+```html
+<body>
+  <main id="faqs">
+    <h1>JavaScript 常见问题解答 (JavaScript FAQs)</h1>
+    <h2><a href="#">什么是 JavaScript?</a></h2>
+    <div>
+      <p>JavaScript 是一种基于浏览器的编程语言，它可以使
+      网页更具响应性并减少与服务器的
+      往返次数。</p>
+    </div>
+    <h2><a href="#">什么是 jQuery?</a></h2>
+    <div>
+      <p>jQuery 是一个 JavaScript 函数库，你在开发网站时
+      最可能需要这些函数。</p>
+    </div>
+    <h2><a href="#">为什么 jQuery 变得如此流行?</a></h2>
+    <div>
+      <p>三个原因：</p>
+      <ul>
+        <li>它是免费的。</li>
+        <li>它可以让你在更短时间内完成更多工作。</li>
+        <li>它所有的函数都支持跨浏览器兼容。</li>
+      </ul>
+    </div>
+  </main>
+</body>
+```
+
+## CSS
+
+```css
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: blue;
+}
+h2 {
+  cursor: pointer;
+  background: url(images/plus.png) no-repeat left center;
+}
+h2.minus {
+  background: url(images/minus.png) no-repeat left center;
+}
+div {
+  display: none;
+}
+div.open {
+  display: block;
+}
+```
+
+图 6-5 FAQs 应用的 HTML 和 CSS
+
+# JavaScript
+
+图 6-6 显示了此应用程序的 JavaScript。在这里，`onload` 事件的事件处理器为所有 `<h2>` 元素附加了事件处理器。为了实现这一点，第一条语句获取 id 为 "faqs" 的元素对象。那是 HTML 代码中的 `main` 元素。然后，第二条语句使用 `getElementsByTagName()` 方法获取该区域内的 `<h2>` 元素数组。该数组存储在名为 `h2Elements` 的变量中。
+
+紧接着是一个为每个 `<h2>` 元素附加事件处理器的语句。它的循环为 `h2Elements` 数组中的每个元素执行一次。循环中唯一的语句为 `<h2>` 元素附加了名为 "toggle" 的事件处理器。
+
+（注意：为 JavaScript 部分提供的 OCR 文本严重损坏。我已根据下方的代码块重构了逻辑。）
+
+## FAQs 应用的 JavaScript
+
+```javascript
+"use strict";
+
+var $ = function(id) { return document.getElementById(id); };
+
+// 每个 h2 元素点击事件的事件处理器
+var toggle = function() {
+  var h2 = this;                 // this 指向 h2 标签
+  var div = h2.nextElementSibling; // div 为 h2 的兄弟元素
+
+  // 通过添加或移除类来切换 h2 元素中的 +/- 图像
+  if (h2.getAttribute("class")) {
+    h2.removeAttribute("class");
+  } else {
+    h2.setAttribute("class", "minus");
+  }
+
+  // 通过添加或移除类来切换 div 的可见性
+  if (div.getAttribute("class")) {
+    div.removeAttribute("class");
+  } else {
+    div.setAttribute("class", "open");
+  }
+};
+
+window.onload = function() {
+  // 获取 h2 标签
+  var faqs = $("faqs");
+  var h2Elements = faqs.getElementsByTagName("h2");
+
+  // 为每个 h2 标签附加事件处理器
+  for (var i = 0; i < h2Elements.length; i++) {
+    h2Elements[i].onclick = toggle;
+  }
+
+  // 为第一个 h2 标签的 <a> 标签设置焦点
+  h2Elements[0].firstChild.focus();
+};
+```
+
+## 注意
+
+- `onload` 事件处理器中的前两条语句创建了 id 为 "faqs" 的区域内 `<h2>` 元素的数组。
+- `onload` 事件处理器中的 `for` 循环为每个 `<h2>` 元素执行一次。它将 `toggle` 事件处理器附加到每个 `<h2>` 元素的 `onclick` 事件。
+
+## 如何编写表单和控件脚本
+
+表单包含一个或多个控件，例如文本框和按钮。接受用户输入的控件也称为字段（fields）。在接下来的主题中，你将学习如何处理表单和控件。
+
+## 表单的工作原理
+
+图 6-7 显示了如何创建一个包含三个控件的表单：两个文本框和一个按钮。首先，你编写表单元素代码。在该元素的起始标签上，你编写了 `action` 和 `method` 属性。`action` 属性指定 Web 服务器上的文件，该文件将在提交表单时处理数据。`method` 属性指定用于将表单发送到 Web 服务器的 HTTP 方法。
+
+在此示例中，当用户点击“加入我们的列表”（Join our List）按钮时，表单将使用 HTTP "get" 方法提交到服务器。然后，表单中的数据将由名为 `join.php` 的服务器处理。该文件将使用 PHP 作为脚本语言。
+
+当你使用 "get" 方法时，数据将作为 HTTP 请求 URL 的一部分发送。这意味着数据在浏览地址栏中是可见的。在这里，URL 后面跟着问号，以及由安培符号（&）分隔的键值对，这些键值显示了 `name` 属性和字段值。在这种情况下，提交了两个值：电子邮件地址和名字。
+
+相比之下，当你使用 "post" 方法时，数据被封装为 HTTP 请求的一部分，且在浏览器中不可见。因此，这种提交比使用 "get" 方法时更安全。
+
+在表单元素的起始和结束标签之间，你编写了用于表单的控件代码。在此示例中，前两个 `input` 元素是用于接收用户电子邮件地址和名字的框。第三个 `input` 元素的 `type` 属性的值值为 "submit"，这意味着它是一个提交按钮。当它被点击时，表单中的数据将自动提交到服务器。
+
+如果一个 `input` 元素的 `type` 属性为 "reset"，则该按钮为重置按钮。当点击该类型的按钮时，表单的所有控件都将重置为它们的初始 HTML 值。
+
+当表单提交到服务器时，表单中的数据在被处理之前，应该在服务器上进行完全验证。如果任何数据无效，表单将带有适当的错误消息发送回浏览器，以便修正输入内容。这被称为数据验证。
+
+通常，表单数据在提交到服务器之前会由浏览器进行验证。然而，浏览器验证不需要像服务端验证那样彻底。如果浏览器验证能捕捉 80% 到 90% 的输入错误，将节省多次与服务器的往返次数。
+
+## 第 6 章 如何使用 JavaScript 编写 DOM 脚本 177
+
+## 网页浏览器中的表单
+
+![](img/32b24cb9657418b8429a4117bd539786_196_0.png)
+
+## 表单的 HTML 代码
+
+```html
+<form id="email_form" name="email_form" action="join.php" method="get">
+<label for="email_address">Email Address:</label>
+<input type="text" id="email_address" name="email_address"><br>
+<label for="first_name">First Name:</label>
+<input type="text" id="first_name" name="first_name"><br>
+<label>
+<input type="submit" id="join" value="Join our List">
+</form>
+```
+
+使用 "get" 方法提交表单时发送的 URL：
+`join.php?email_address=grace40@yahoo.com&first_name=Grace`
+
+## 表单元素的属性
+
+| 属性 | 说明 |
+|---|---|
+| name | 可以被客户端或服务器端代码引用的名称。 |
+| action | 处理表单中数据的文件的 URL。 |
+| method | 提交表单数据的 HTTP 方法。可以设置为 "get" 或 "post"。默认值为 "get"。 |
+
+## 描述
+
+- 表单包含一个或多个控件（或字段），例如文本框、单选按钮按钮、列表或复选框，这些控件可以接收数据。
+- 当你点击表单的提交按钮（`type` 为 "submit"）时，表单数据将作为 HTTP 请求的一部分发送到服务器。当你点击表单的重置按钮（`type` 为 "reset"）时，表单数据将重置为默认值。
+- 当表单提交到服务器进行处理时，控件中的数据将随 HTTP 请求一起发送。
+- 当你使用 "get" 提交表单时，请求文件的 URL 后面跟着一个问号和由安培符号分隔的键值对。这些键值对包含了提交数据的 `name` 属性和值。当你使用 "post" 方法时，数据是隐藏的。
+- 数据验证是指检查表单收集的数据以确保其有效性，完整的数据验证始终在服务器上进行。如果检测到任何无效数据，表单将返回给客户端，以便用户修正错误。
+- 为了在数据无效时减少与服务器的往返次数，通常在数据发送到服务器之前会在客户端进行一些验证。然而，这种验证不需要像服务器上的验证那样彻底。
+
+![](img/32b24cb9657418b8429a4117bd539786_196_0.png)
+
+## 如何编写 Textbox、Textarea 和 Select 脚本
+
+Textbox、Textarea 和 Select 是你应该熟悉的常用控件。Textbox 对象提供单行输入，Textarea 对象提供多行输入，而 Select 对象提供用户可以选择的列表。图表显示了三个对象通用的 `value` 属性。它返回包含输入或选择的字符串。第一个 JavaScript 示例显示了如何使用这些控件的 `value` 属性获取值。前两个语句使用函数将文本框和文本区域的值存储在变量 `name` 和 `comment` 中。然后，`value` 属性返回字符串。
+
+但在对 textarea 进行此类检查时，你需要考虑换行符。例如，如果用户按下 Enter 键，会产生硬换行并成为 `value` 属性中的字符，即使用户没有输入其他文本。相比之下，软换行是在溢出到下一行时自动产生的换行。这些换行不会成为 `value` 属性中的字符。
+
+示例的最后一部分处理 select 元素。首先，它使用 `value` 属性获取用户的选择并将其存储在变量 `country` 中。然后，它检查变量的值，并根据选中的控件执行不同的处理，或者在未选择国家时通知用户。
+
+除了使用 `value` 属性获取这些控件的内容外，你还可以使用它设置控件的内容。图中的第二个 JavaScript 示例显示了它是如何工作的。在这种情况下，表单上每个控件的 `value` 属性都被设置为空字符串。这是清空表单的常用方法，但你也可以将 `value` 属性设置为任何字符串。
+
+当你为 TextBox 或 Textarea 对象设置 `value` 属性时，它将替换 `value` 属性的内容。但当你为 Select 对象设置 `value` 时，它会选中列表中具有该值的选项。例如，将 Select 对象的 `value` 属性设置为 "can" 将选中 Canada 选项。如果你将 `value` 属性设置为一个列表中不存在的值，则没有选项被选中，甚至连 Select 对象的默认值也没有选中。（默认值是列表中第一个选项的值，或者是具有 `selected` 属性的选项）。
+
+# 文本框、文本区域或选择对象的属性
+
+| 属性 | 描述 |
+| --- | --- |
+| value | 输入文本或所选对象的的值内容。返回一个字符串。 |
+
+# 文本框、文本区域和选择列表的 HTML 代码
+
+```html
+<label for="name">First Name:</label>
+<input type="text" name="name" id="name"><br>
+<label for="comment">Comment:</label>
+<textarea name="comment" id="comment" rows="5" cols="40"></textarea><br>
+<label for="country">Country:</label>
+<select name="country" id="country">
+  <option value="">USA</option>
+  <option value="can">Canada</option>
+  <option value="mex">Mexico</option>
+</select>
+```
+
+# 获取文本框、文本区域和选择列表值的 JavaScript 代码
+
+```javascript
+var name = $("name").value;
+var comment = $("comment").value;
+if (name.length == 0) { alert("Please enter a name."); }
+if (comment.length == 0) { alert("Please enter a comment."); }
+var country = $("country").value;
+if (country == "usa") { /* USA processing */ }
+else if (country == "can") { /* Canada processing */ }
+else if (country == "mex") { /* Mexico processing */ }
+else { alert("Please select a country."); }
+```
+
+# 设置文本框、文本区域和选择列表值的 JavaScript 代码
+
+```javascript
+$("country").value = "";
+$("name").value = "";
+$("comment").value = "";
+```
+
+## 描述
+
+- 这些控件的 name 和 id 属性应该设置为相同的值。
+- 在你使用其中任一个对象的 value 属性获取值字符串后，可以使用 String 对象的 length 属性来获取字符串中的字符数。
+- 设置 TextBox 或 Textarea 对象的 value 属性会替换文本内容。
+- 设置 Select 对象的 value 属性会选中对应值的选项。
+- 当用户在文本区域中输入字时按下 Enter 键，value 属性中会输入一个*硬回车*（hard return）。硬回车不会以字符的形式出现在 value 属性中。
+- 当用户在文本区域中越过行尾并自动开始新行时，会发生*软回车*（soft return）。软回车不会以字符的形式出现在 value 属性中。
+
+# 如何编写单选按钮和复选框对象的脚本
+
+你应该熟悉两种类型的控件：单选按钮（radio buttons）和复选框（check boxes）。这两种控件允许用户选择选项。网页中的单选按钮组允许用户从多个选项中选择一个。当用户点击组中的一个按钮时，组中的其他按钮会被取消选中。相反，页面上的每个复选框都是独立的。选择一个复选框对任何其他复选框都没有影响。
+
+图 6-9 显示了这些 HTML 对象共有的两个属性。value 属性返回包含控件 value 属性内容的字符串。checked 属性返回一个布尔值，指示单选按钮或复选框是否被选中。
+
+图中的 HTML 示例包含两个单选按钮和一个复选框。当你创建一个单选按钮组时，它们必须具有相同的 name，以便浏览器知道它们属于同一组。然而，它们必须具有不同的 id。在示例中，两个单选按钮的 name 都是 "contact"，但一个 id 为 "text"，另一个 id 为 "email" 且 value 为（此处原文缺失）。注意，id 和 value 属性不需要相同，但它们通常是相同的。
+
+与单选按钮不同，当你创建一个复选框时，它必须有一个唯一的 name，且 id 必须设置为相同的值。在示例中，复选框的 name 和 id 都是 "accept"。
+
+图中第一个 JavaScript 示例显示了如何从单选按钮和复选框获取用户的选择。首先，它声明了一个名为 contact 的变量。然后，它检查 id 为 "text" 的单选按钮是否被选中。如果是，它获取该单选按钮 value 属性的内容并存储在 contact 变量中。
+
+接下来，代码检查 id 为 "email" 的单选按钮是否被选中。如果是，它获取该单选按钮 value 属性的内容并存储在 contact 变量中。但记住，单选按钮组中只能有一个成员被选中。这意味着这些单选按钮中只有一个的 checked 属性会被设置为 true。
+
+然后，代码检查 contact 变量的值，并根据该值进行 email 处理。如果没有选择任何单选按钮，代码将通知用户进行选择。
+
+最后，代码获取复选框 checked 属性的值，并将其存储在名为 accept 的变量中。然后，代码检查 accept 变量的值是否为 true。如果是，代码将处理接受操作。如果不是，代码将通知用户需要勾选框。
+
+图中第二个 JavaScript 示例显示了如何设置单选按钮和复选框的 checked 属性。在示例中，单选按钮处于未选中状态，而复选框处于选中状态。
+
+# 单选按钮或复选框对象的两个属性
+
+| 属性 | 描述 |
+| --- | --- |
+| value | 控件 value 属性的内容。返回一个字符串。 |
+| checked | 布尔值，指示单选按钮或复选框是否被选中。 |
+
+# 两个按钮和一个复选框的 HTML 代码
+
+```html
+<label for="text">Contact:</label>
+<input type="radio" name="contact" id="text" value="text">
+<input type="radio" name="contact" id="email" value="email">
+<label for="accept">Terms of Service:</label>
+<input type="checkbox" name="accept" id="accept">
+```
+
+# 获取单选按钮和框值的 JavaScript 代码
+
+```javascript
+var contact;
+if ($("text").checked) {
+  contact = $("text").value;
+} else if ($("email").checked) {
+  contact = $("email").value;
+}
+if (contact == "") {
+  alert("Please select a contact.");
+}
+var accept = $("accept").checked;
+if (accept) {
+  /* acceptance processing */
+} else {
+  alert("The box needs to be checked.");
+}
+```
+
+# 设置单选按钮和复选框值的 JavaScript 代码
+
+```javascript
+$("text").checked = false;
+$("email").checked = false;
+$("accept").checked = true;
+```
+
+## 第6章 如何使用 JavaScript 编写 DOM 183
+
+## 表单常用的两种方法
+
+| 方法 | 描述 |
+|---|---|
+| submit() | 将表单及其数据提交到服务器 |
+| reset() | 将表单中的控件重置为初始值。 |
+
+## 控件常用的两种方法
+
+| 方法 | 描述 |
+|---|---|
+| focus() | 将焦点移动到控件。 |
+| blur() | 从控件上移除焦点。 |
+
+## 常见的控件事件
+
+| 事件 | 描述 |
+|---|---|
+| onfocus | 控件接收焦点。 |
+| onblur | 控件失去焦点。 |
+| onclick | 用户点击控件。 |
+| ondblclick | 用户双击控件。 |
+| onchange | 控件的值发生变化。 |
+| onselect | 用户在文本框或区域中选择文本。 |
+
+## 使用 reset() 和 submit() 方法语句
+
+```javascript
+$("registration_form").reset();
+$("registration_form").submit();
+```
+
+## 选择列表 onchange 事件的事件处理器
+
+```javascript
+var investmentChange = function() {
+    calculateClick(); // 调用 calculateClick 函数
+    $("investment").blur(); // 移除选择列表的焦点
+};
+```
+
+## 文本框 ondblclick 事件的事件处理器
+
+```javascript
+var yearsDblclick = function() {
+    $("years").value = ""; // 双击时清空文本框
+};
+```
+
+## 使用 onload 为事件分配处理器的 onload 处理器
+
+```javascript
+window.onload = function() {
+    $("investment").onchange = investmentChange;
+    $("years").ondblclick = yearsDblclick;
+    $("years").focus();
+};
+```
+
+## 描述
+
+- *将 type 属性设置为 "submit" 或 "reset" 的输入元素会自动提交或重置表单。然而，在验证数据时，通常会使用普通按钮，并使用 JavaScript 的 submit() 或 reset() 方法来提交或重置表单。*
+
+图 6-10 如何使用用于表单和控件的方法与事件。
+
+## 注册应用程序
+
+图 6-11 显示了一个注册应用程序，它由表单上的多个控件组成。如果某项输入是必填的，控件右侧会显示一个红色星号。然后，当用户点击 Register（注册）按钮时，应用程序会检查输入项以确保它们有效。如果其中任何一项无效，应用程序会在字段右侧显示错误消息。如果所有项有效，应用程序将提交表单。
+
+如果用户在此过程中某个处点击 Reset（重置）按钮，应用程序将通过调用表单的 reset() 方法将表单控件重置为初始值。但此应用程序还会清除任何错误消息并恢复初始星号，这是 reset() 方法无法完成的。
+
+## HTML 和 CSS
+
+在 HTML 中，你可以看到一个名为 `registration_form` 的表单。该表单使用 "get" 方法将控件的值提交到 `register_account.html`。但在现实生活中，注册页面会使用 "post" 方法，因为它更安全。
+
+表单内部有两个名为 "email_address" 和 "phone" 的文本框，一个名为 "country" 的选择元素，一个名为 "contact" 的单选按钮组以及一个名为 "terms" 的复选框。单选按钮组中有三个 id 分别为 "text"、"email" 和 "none" 的单选按钮。这些控件下方有两个名为 "register" 和 "reset_form" 的按钮元素。
+
+在某些控件 (*) 之后，你可以看到 `<span>` 元素。这些控件的初始值是星号 (*)，表示这些输入项是必填的。
+
+在图中 HTML 下方，你可以看到这些 `span` 元素的 CSS。此样式规则选取了 id 属性为 "registration_form" 的表单内部的 `span` 元素。它将 `span` 元素中星号及任何后续错误消息的颜色设置为红色。
+
+## 浏览器中的注册应用程序
+
+| 注册账户 | |
+|---|---|
+| 电子邮件: | ben@yahoo.com |
+| 手机号码: | |
+| 国家: | 选择一个国家 |
+| 通过以下方式联系我: | * 文本 * 电子邮件 不要联系我 |
+| 服务条款: | * 我接受 |
+
+## HTML
+
+```html
+<html>
+<h1>注册账户</h1>
+<form action="register_account.html" method="get" name="registration_form" id="registration_form">
+<label for="email_address">电子邮件:</label>
+<input type="text" name="email_address" id="email_address">
+<span></span><br>
+<label for="phone">手机号码:</label>
+<input type="text" name="phone" id="phone">
+<span></span><br>
+<label for="country">国家:</label>
+<select name="country" id="country">
+<option value="">选择一个国家</option>
+<option>美国</option>
+<option>加拿大</option>
+<option>墨西哥</option>
+</select>
+<span></span><br>
+<label>通过以下方式联系我:</label>
+<input type="radio" name="contact" id="text" value="text" checked>文本
+<input type="radio" name="contact" id="email" value="email">电子邮件
+<input type="radio" name="contact" id="none" value="none">不要联系我<br>
+<label>服务条款:</label>
+<input type="checkbox" name="terms" id="terms" value="yes">我接受<span></span><br>
+<input type="button" id="register" value="注册"><br>
+<input type="button" id="reset_form" value="重置"><br>
+</form>
+</html>
+```
+
+## 表单中 span 元素的 CSS
+
+```css
+#registration_form span {
+  color: red;
+}
+```
+
+图 6-11 注册应用程序的 HTML 和 CSS
+
+# JavaScript
+
+图 6-12 显示此应用程序的 JavaScript，它由四个函数组成。然后，第二个函数是名为 `processEntries()` 的事件处理器，它对控件进行验证并在全部有效时提交表单。第三个函数是名为 `resetForm()` 的事件处理器，用于重置表单。第四个函数是 onload 事件处理器，将 `processEntries()` 和 `resetForm()` 绑定到事件。
+
+`processEntries()` 函数在用户点击注册按钮时执行。它首先声明了一个初始值为 true 的布尔变量 `isValid`。接着，后续语句声明了存储 email、phone、contact 和 term 的变量。注意，根据选中的单选按钮设置为 Text、Email 或 None。
+
+在将用户数据存储在变量后，对每个输入项使用一个语句来检查有效性。如果任何变量无效，会将错误消息移动到控件随后的 `span` 元素中。它通过如下代码实现：
+
+```javascript
+$("email_address").nextElementSibling.firstChild.nodeValue = "此字段为必填";
+```
+
+这会将消息放入下一个兄弟元素（span 元素）的第一个元素（文本节点）。如果输入有效，代码会将 `span` 元素置为空字符串，从而移除星号。如果输入无效，代码还会将 `isValid` 变量设置为 false。
+
+数据验证后，另一个 `if` 语句检查 `isValid` 是否为 true。如果是，通过调用表单的 `submit()` 方法将表单提交到服务器处理。如果 `isValid` 为 false，则不提交表单，以便用户修正。
+
+`resetForm()` 函数在用户点击重置按钮时执行。它首先调用表单的 `reset()` 方法，将控件的所有值重置为初始 HTML 值。但仍需处理。后续语句将 `span` 元素的值重置为星号，最后一个语句将焦点移动到第一个文本框。
+
+最后一个函数是 onload 事件处理器。它只是将两个事件处理器绑定到注册和重置按钮。然后，它将焦点移动到第一个文本框。
+
+## 用于注册表单 JavaScript
+
+```javascript
+"use strict";
+
+var $ = function(id) { return document.getElementById(id); };
+
+var processEntries = function() {
+  var isValid = true;
+
+  // 获取用户输入的值
+  var email = $("email_address").value;
+  var phone = $("phone").value;
+  var country = $("country").value;
+  var contact = "Text";
+  if ($("email").checked) { contact = "Email"; }
+  if ($("none").checked) { contact = "None"; }
+  var terms = $("terms").checked;
+
+  // 检查用户输入的有效性
+  if (email == "") {
+    $("email_address").nextElementSibling.firstChild.nodeValue = "This field is required.";
+    isValid = false;
+  } else {
+    $("email_address").nextElementSibling.firstChild.nodeValue = "";
+  }
+
+  if (phone == "") {
+    $("phone").nextElementSibling.firstChild.nodeValue = "This field is required.";
+    isValid = false;
+  } else {
+    $("phone").nextElementSibling.firstChild.nodeValue = "";
+  }
+
+  if (country == "") {
+    $("country").nextElementSibling.firstChild.nodeValue = "Please select a country.";
+    isValid = false;
+  } else {
+    $("country").nextElementSibling.firstChild.nodeValue = "";
+  }
+
+  if (terms == false) {
+    $("terms").nextElementSibling.firstChild.nodeValue = "This box must be checked.";
+    isValid = false;
+  }
+
+  // 如果所有字段均有效，则提交表单
+  if (isValid == true) {
+    $("registration_form").submit();
+  }
+}
+
+var resetForm = function() {
+  $("registration_form").reset();
+  $("email_address").nextElementSibling.firstChild.nodeValue = "";
+  $("phone").nextElementSibling.firstChild.nodeValue = "";
+  $("country").nextElementSibling.firstChild.nodeValue = "";
+  $("terms").nextElementSibling.firstChild.nodeValue = "";
+  $("email_address").focus();
+}
+
+window.onload = function() {
+  $("register").onclick = processEntries;
+  $("reset_form").onclick = resetForm;
+  $("email_address").focus();
+};
+```
+
+# 如何从 DOM 中添加和删除节点
+
+除了操作 DOM 之外，JavaScript 还允许你向 DOM 添加或从 DOM 中移除节点。你将在下一个图中学习执行这些操作的最简单方法。然后，你将学习如何在 Chrome 中查看 DOM 的更改。
+
+# 如何使用 Element 接口的 innerHTML 属性
+
+图 6-13 展示了 Element 接口的 `innerHTML` 属性。该属性允许你设置或返回所指定 HTML 元素的内容。图中的示例说明了这一点。
+
+第一个示例展示了如何向 HTML 元素添加内容。在这个示例中，将有四张图像添加到 id 为 "image_list" 的 ul 元素中。如果你查看包含该元素的页面的初始 HTML，你会发现该元素不包含任何内容。
+
+然而，当页面加载时，JavaScript 会将图像添加到列表中。为了做到，它创建了一个要添加到列表的字符串项，该字符串包含该项的 HTML。由于每个列表项都包含一张图像，因此 HTML 包含一个 id 为 "image_list" 的元素的 `innerHTML` 属性。然后，第一个字符串被赋值给 li 元素。接着，接下来的三个字符串被添加到该元素的内容中。结果是一个如图所示格式化的四张图像的列表。
+
+图中的第二个示例展示了如何获取元素的 HTML 内容。要做到这一点，你只需要引用元素的 `innerHTML` 属性即可。在这个示例中，第一个示例中添加到 "image_list" 元素的 HTML 内容被赋值给名为 `listHTML` 的变量。
+
+你还可以使用 `innerHTML` 属性来移除元素的 HTML 内容。要做到这一点，只需像第三个示例所示，为该属性分配一个空字符串。
+
+# Element 接口用于设置或返回 HTML 内容的属性
+
+| 属性 | 说明 |
+| --- | --- |
+| innerHTML | 设置或返回元素的 HTML 内容。 |
+
+## 一个显示图像列表的应用程序
+
+![](img/32b24cb9657418b8429a4117bd539786_208_0.png)
+
+## 应用程序的初始 HTML
+
+```html
+<body>
+  <main>
+    <h1>Create Image List</h1>
+    <ul id="image_list"></ul>
+  </main>
+</body>
+```
+
+## 将图像添加到列表的 JavaScript
+
+```javascript
+<script>
+  "use strict";
+  var $ = function(id) {
+    return document.getElementById(id);
+  };
+  window.onload = function() {
+    $("image_list").innerHTML += "<li><img src='images/image1.jpg'></li>";
+    $("image_list").innerHTML += "<li><img src='images/image2.jpg'></li>";
+    $("image_list").innerHTML += "<li><img src='images/image3.jpg'></li>";
+    $("image_list").innerHTML += "<li><img src='images/image4.jpg'></li>";
+  };
+</script>
+```
+
+# 如何获取元素的 HTML 内容
+
+```javascript
+var listHTML = $("image_list").innerHTML;
+```
+
+# 如何移除元素的 HTML 内容
+
+```javascript
+$("image_list").innerHTML = "";
+```
+
+## 描述
+
+- 要设置元素的 HTML 内容，请使用 `innerHTML` 属性。
+- 要返回元素的 HTML 内容，请使用 `innerHTML` 属性。
+- 要移除元素的 HTML 内容，请为该属性分配一个空字符串。
+
+# 如何在 Chrome 中查看 DOM 的更改
+
+在最后一章中，你学习了如何从 DOM 中添加和删除节点。在本章中，你将学习如何使用 Chrome 的开发者工具查看 DOM 的更改。
+
+# JavaScript 修改 DOM 后的 Elements 面板
+
+![](img/32b24cb9657418b8429a4117bd539786_210_0.png)
+
+## 描述
+
+- 如果你使用的是 Chrome，可以使用开发者工具的 Elements 面板查看 DOM 的更改。
+- 要打开开发者工具，按 F12。然后点击 Elements 选项卡显示 Elements 面板。
+- Elements 面板显示文档的 HTML 节点。你可以展开这些节点，直到看到 JavaScript 做的更改。
+- 要选择一个节点，点击它。然后你可以在右侧的样式面板中看到应用于元素的 CSS。
+
+# 带有表格的注册表单
+
+图 6-15 展示了一个带有控件的注册表单。当用户点击注册按钮时，应用程序将执行数据验证以确保字段填写正确。如果是，应用程序将提交表单。如果不是，应用程序将显示一个表格，显示输入了哪些值以及哪些值未通过验证。当用户点击重置按钮时，应用程序将重置表单上的控件并清除信息表格。
+
+# HTML 和 CSS
+
+此应用程序的 HTML 与图 6-11 中的相同，但有两个例外。首先，图 6-15 所示的 h2 和 table 元素被添加到 main 元素的 HTML 末尾。
+
+其次，控件后的 span 元素已被删除，因为它们在此应用程序中未使用。相反，验证结果和消息显示在表单下方的表格中。请注意，表格的 HTML 并没有行。这是因为行将由 JavaScript 添加。
+
+在图中的 CSS 中，你可以看到与早期的注册应用程序相比的一处变化。它不是将表单中 span 元素的字体设置为红色，而是将表格中 span 元素的字体设置为红色。你将在下一个图中看到这些 span 元素是由 JavaScript 添加到表格中的。
+
+## 为用户输入内容创建表格的注册应用程序
+
+![](img/32b24cb9657418b8429a4117bd539786_212_0.png)
+
+## 表单下方两个元素的 HTML 代码
+
+```html
+</form>
+<h2 id="registration_header">&nbsp;</h2>
+<table id="registration_info"></table>
+</main>
+```
+
+## 表格中 span 元素的 CSS
+
+```css
+#registration_info span {
+  color: red;
+}
+```
+
+## 描述
+
+- 当用户点击注册（Register）按钮时，该应用程序会在表单下方显示一个表格，显示有效输入的数据和无效输入对应的错误消息。如果所有输入内容均有效，该应用程序将调用 `submit()` 方法将表单提交到服务器。
+- 当用户点击重置（Reset）按钮时，该应用程序将调用 `reset()` 方法来重置控件中的值。它还会移除表单下方的表格。
+- 除了上述已添加到 HTML 中的两个元素外，控件后的 span 元素也被移除了，因为星号和错误消息不会显示在控件右侧。
+- 在 CSS 中，将错误消息颜色设置为红色的规则选择器已更改为上方所示的形式。它选择了 id 为 "registration_info" 的表格中所有的 span 元素。
+
+图 6-15 带有表格的注册应用程序的 HTML 和 CSS
+
+# JavaScript
+
+图 6-16 展示了该应用程序的 JavaScript。它演示了一些有趣的代码，展示了应用在本章中学会的某些技能的另一种方法。
+
+在这里，作为最佳实践，`processEntries()` 函数首先声明了将被函数使用的变量。在这种情况下，前两个语句声明了名为 `header` 和 `html` 的变量，并为它们赋值了空字符串。`header` 变量将用于存储表单下方显示的表格表头。`html` 变量将用于存储 `innerHTML` 属性的内容，该属性将用用户的输入填充表格。
+
+接下来的两个语句声明了名为 `required` 和 `msg` 的变量。`required` 变量用于将一个 span 元素的内容设置为“Required field（必填字段）”。当用户未输入必填字段时，该元素将被放置在表格中。由于这是一个 span 元素，CSS 将消息的颜色设置为红色。`msg` 变量包含了在检测到一个或多个错误之前打印在表格之前的表头。
+
+接下来的七条语句与该应用程序早期版本中的相同。它们从表单获取用户的输入并将其存储在变量中。
+
+随后是四个语句，用于检查每个输入的有效性。如果某个输入为空字符串，相关的变量将更改为 `required` 变量的值。因此，变量将不再是一个输入值，而是一个包含“Required field”的 span 元素。然后，`header` 变量的值被替换为 `msg` 变量中的文本。这将是显示在表格之前的标题。
+
+在数据验证之后，id 为 "registration_header" 的 h2 元素的 `firstChild` 节点的 `nodeValue` 属性被设置为 `header` 变量的值。这将是一个空字符串或变量的初始值。如果它是 `msg` 变量的值，则标题将显示在表单之后。
+
+随后是一条语句，检查 `header` 变量是否等于 `msg` 变量。如果相等，说明有一个或多个字段是无效的，因为 `header` 变量已从其空字符串初始值发生了改变。然后，接下来的五条语句将五行的 HTML 添加到 `html` 变量中。然后，第六条语句将 `html` 变量的值放入表格的 `innerHTML` 属性中。一旦完成，表格就会显示。
+
+相反，如果没有任何输入是无效的，`else` 语句将通过将其 `innerHTML` 属性设置为空字符串来清除表格任何之前的值。然后，通过调用表单的 `submit()` 方法提交表单。
+
+在完成上述解释后，你理解 `resetForm` 和 `onload` 事件处理器的代码应该没有问题。`resetForm()` 函数使用 `reset()` 重置表单上的控件，将表单下方的 h2 元素和表格设置为空字符串，并将焦点置到表单上的第一个控件。`onload` 事件处理器绑定事件处理器并将焦点置到表单上的第一个控件。
+
+## 注册应用程序的 JavaScript
+
+```javascript
+"use strict";
+
+var $ = function(id) { return document.getElementById(id); };
+
+var processEntries = function() {
+  var header = "";
+  var html = "";
+  var required = "<span>Required field</span>";
+  var msg = "Please review your entries and complete all required fields";
+  var email = $("email_address").value;
+  var phone = $("phone").value;
+  var country = $("country").value;
+  var contact = "Text";
+  if ($("email").checked) { contact = "Email"; }
+  if ($("none").checked) { contact = "None"; }
+  var terms = $("terms").checked;
+
+  if (email == "") {
+    email = required;
+    header = msg;
+  }
+  if (phone == "") {
+    phone = required;
+    header = msg;
+  }
+  if (country == "") {
+    country = required;
+    header = msg;
+  }
+  if (terms == false) {
+    terms = required;
+    header = msg;
+  }
+
+  $("registration_header").firstChild.nodeValue = header;
+
+  if (header == msg) {
+    html += "<tr><td>Email:</td><td>" + email + "</td></tr>";
+    html += "<tr><td>Phone:</td><td>" + phone + "</td></tr>";
+    html += "<tr><td>Country:</td><td>" + country + "</td></tr>";
+    html += "<tr><td>Contact:</td><td>" + contact + "</td></tr>";
+    html += "<tr><td>Terms:</td><td>" + terms + "</td></tr>";
+    $("registration_info").innerHTML = html;
+  } else {
+    $("registration_info").innerHTML = "";
+    $("registration_form").submit();
+  }
+};
+
+var resetForm = function() {
+  $("registration_form").reset();
+  $("registration_header").firstChild.nodeValue = "";
+  $("registration_info").innerHTML = "";
+  $("email_address").focus();
+};
+
+window.onload = function() {
+  $("register").onclick = processEntries;
+  $("reset_form").onclick = resetForm;
+  $("email_address").focus();
+};
+```
+
+
+
+# 使用 JavaScript 编写 DOM 脚本
+
+## 代码示例：注册表单验证
+
+```javascript
+if ($("phone") == "") {
+  phone = required;
+  header = msg;
+}
+
+if ($("country") == "") {
+  country = required;
+  header = msg;
+}
+
+if (terms == false) {
+  terms = required;
+  header = msg;
+}
+
+$("registration_header").firstChild.nodeValue = header;
+
+if (msg) {
+  html += "<tr><td>Email:</td><td>" + email + "</td></tr>";
+  html += "<tr><td>Phone:</td><td>" + phone + "</td></tr>";
+  html += "<tr><td>Country:</td><td>" + country + "</td></tr>";
+  html += "<tr><td>Contact:</td><td>" + contact + "</td></tr>";
+  html += "<tr><td>Terms:</td><td>" + terms + "</td></tr>";
+  html += "";
+  $("registration_info").innerHTML = html;
+} else {
+  $("registration_info").innerHTML = "";
+  $("registration_form").submit();
+}
+
+var resetForm = function() {
+  $("registration_form").reset();
+  $("registration_header").firstChild.nodeValue = "";
+  $("registration_info").innerHTML = "";
+  $("email_address").focus();
+};
+
+window.onload = function() {
+  $("register").onclick = processEntries;
+  $("reset_form").onclick = resetForm;
+  $("email_address").focus();
+};
+```
+
+图 6-16 带有表格的注册应用程序的 JavaScript
+
+## 观点
+
+本章的目标是向你介绍 DOM 脚本（DOM scripting）的一些功能。作为结果，展示了三种不同类型的应用程序。FAQs 应用程序展示了如何使用 `Document`、`Element` 和 `Node` 接口的常用属性和方法。注册应用程序展示了 JavaScript 如何用于数据验证。而带有表格的注册应用程序展示了像表格这样的元素可以添加到 DOM 中。
+
+在继续之前，你应该知道，使用 JavaScript 进行 DOM 脚本是有限制的。这是因为 jQuery 是一个旨在让 DOM 脚本变得简单的 JavaScript 库。作为结果，大多数 DOM 脚本都是通过 JavaScript 和 jQuery 结合完成的。你将在第 2 部分学习更多关于 jQuery 的知识。
+
+## 术语
+
+- DOM（文档对象模型）
+- DOM 核心规范
+- DOM HTML 规范
+- DOM 节点
+- 元素节点
+- 属性节点
+- 注释节点
+- 接口
+- 表单
+- 控件
+- 字段
+- 重置按钮
+- 数据验证
+- 硬返回
+- 软返回
+
+## 总结
+
+- 当页面加载到浏览器时，就会构建文档对象模型（即 `DOM`）。它由各种节点组成。
+- 在 DOM 中，`元素节点` 代表 HTML 文档中的元素，`文本节点` 代表这些元素中的文本。DOM 还可以包含 `注释节点`，并且可以包含存储属性值的 `属性节点`。
+- JavaScript 为《DOM 核心规范》描述的 DOM 对象提供了属性和方法。这些包含了由 `Node`、`Document` 和 `Element` 接口描述的属性和方法。
+- JavaScript 还为《DOM HTML 规范》描述的 DOM 对象提供了属性。虽然这些属性没有提供新功能，但它们提供了快捷方式，使得处理 HTML 文档的 DOM 节点变得容易。
+- 表单包含一个或多个控件，例如文本框和按钮。接受用户输入的控件也称为字段（fields）。常见的控件包括文本框、文本区域、选择列表、单选按钮和复选框。
+- 当你处理表单时，你会使用如 `value` 和 `checked` 的属性，如 `focus()` 和 `blur()` 的方法，以及 `onfocus`、`onclick` 和 `onblur` 事件。
+- 当你处理表单时，你会使用 `submit()` 方法提交表单，并使用 `reset()` 方法重置表单控件中的值。
+- 要从 DOM 中添加或删除节点，可以使用 `Element` 接口的 `innerHTML` 属性。
+- 你可以使用 Chrome 开发者工具的 Elements 面板来查看应用程序执行时对 DOM 所做的更改。
+
+## 练习 6-1 实验 FAQs 应用程序
+
+此练习将让你在处理代码时更好地理解 FAQs 应用程序。它还将让你有机会使用 DOM HTML 规范中的一个属性。
+
+如果你在测试时遇到任何问题，请记住像第 5 章所示使用 Chrome 开发者工具。
+
+### 测试并检查应用程序
+
+1. 使用你的文本编辑器或 IDE 打开此文件夹中的 HTML 和 JavaScript 文件：
+   ```
+   javascript_queryexercises/ch06/faqs
+   ```
+   然后，测试此应用程序以查看其工作原理，并检查你的代码。
+
+### 将事件处理程序绑定到 `<a>` 元素而不是 `<h2>` 元素
+
+2. 修改此应用程序，将切换（`toggle`）事件处理程序绑定到 `<h2>` 元素内部的 `<a>` 元素，而不是 `<h2>` 元素本身。当你这样做时，点击标题应该是有效的，但点击它们前面的加号或减号则不应该有效。
+3. 测试此更改。
+
+### 使用 DOM HTML 规范的 `className` 属性
+
+4. 注释掉 `toggle` 事件处理程序中使用 `removeAttribute()` 和 `setAttribute()` 方法的语句。
+5. 在每个被注释的语句下方，编写一条使用 `className` 属性实现相同结果的语句。例如，你可以通过将 `className` 属性设置为空字符串 `""` 来移除类属性。
+6. 测试此更改。
+
+## 练习 6-2 为 Register 应用程序添加控件
+
+在此练习中，你为 Register with table 应用程序的表单添加另一个单选按钮和一个注释控件，使表单如下：
+
+![](img/32b24cb9657418b8429a4117bd539786_217_0.png)
+
+如果你在测试时遇到任何问题，请记住像第 5 章所示使用 Chrome 开发者工具。
+
+- 使用你的文本编辑器或 IDE 打开此文件夹中的 `index.html` 和 `register.js` 文件：
+  `javascript_jquery\exercises\ch06\register_table`
+- 使用无效和有效数据测试此应用程序。
+- 在 HTML 文件中，为“手机”（Mobile phone）添加一个单选按钮，为“注释”（Comments）添加一个文本区域，注意重复的 `id` 属性。对于文本区域，你可以参考图 6-8 中的示例，但请注意该区域的宽度将由 CSS 设置。
+- 在 JavaScript 文件中，添加获取两个新控件中输入数据的代码。然后，修改构建表格行的代码，为注释条目添加一行。但注意，此条目是可选的，因此不需要进行验证。
+- 测试应用程序以查看注释如何在表单下方的表格中显示。但记住，如果所有条目都有效，应用程序将跳转到新页面而不显示表格。因此，至少不要勾选条款（Terms）框。
+- 再次测试应用程序，但通过按两次 Enter 键在注释中输入两个换行符。然后，查看表格显示没有条目。
+- 修改 JavaScript 文件中的代码，不再在表格中显示注释，而是显示注释条目的长度，例如：`length = 41`。你可以使用条目的 `length` 属性来获取长度。然后，使用换行条目、文本条目和无条目测试此更改。
+- 测试新字段的重置（Reset）按钮。如果需要更改，请进行修改。
+- 输入所有有效数据，并点击注册（Register）按钮以提交表单。由于使用了 "get" 方法，条目会被添加到下一个页的 URL 中。
+
+## 练习 6-3 增强 Email List 应用程序
+
+在此练习中，你将增强一个与你在第 4 章看到的类似的电子邮件列表应用程序，通过在冒号右侧提供错误消息的情况下提供更好的数据验证：
+
+![](img/32b24cb9657418b8429a4117bd539786_218_0.png)
+
+如果你在测试时遇到任何问题，请记住像第 5 章和本章图 6-14 所示使用 Chrome 开发者工具。
+
+### 测试应用程序
+
+1. 打开你的文本编辑器或 IDE，打开此 HTML 文件：
+   `javascript_jquery\exercises\ch06\email\index.html`
+   然后，检查 JavaScript 代码。
+2. 使用有效数据测试你的应用程序以查看其工作原理。当你点击列表（List）按钮时，应该显示另一个页面。
+3. 点击浏览器中的返回按钮，然后使用无效数据测试应用程序。
+
+### 增强数据验证
+
+4. 检查 HTML 并注意在第一个输入控件之后添加了 `<span>` 元素。注意这些 `<span>` 元素没有 `id`。当你增强数据验证时，这些元素应该接收到错误消息。
+5. 增强数据验证，使其在 `<span>` 元素中显示错误消息。为了实现此点，你需要一个布尔变量来跟踪是否有条目无效。如果所有条目都有效，你可以提交表单。
+6. 使用有效数据测试应用程序以确保它仍然可以工作。如果是的话，点击浏览器中的返回按钮返回上一页并刷新页面。
+7. 在不输入任何数据的情况下点击列表按钮。然后，使用 Chrome 开发者工具查看对 DOM 所做的更改。完成后，关闭开发者工具。
+
+### 查看当 HTML 中的 span 元素为空时会发生什么
+
+8. 在 HTML 中，删除第一个 `<span>` 元素中的星号。然后，在 Chrome 中在点击列表按钮之前测试应用程序。什么都不会发生。
+9. 按 F12 键显示开发者工具，点击控制台（Console）标签，你应该看到此错误消息：`Cannot set property 'nodeValue' of null`。这表明第一个 `<span>` 元素的文本节点没有添加到 DOM，因为它没有初始值。
+10. 恢复 `<span>` 元素中的星号，并再次测试以确保应用程序正常工作。
+
+---
+
+# 第 7 章 如何处理链接、图像和定时器
+
+## 如何处理链接和图片
+
+在处理链接和图片时，一项常见任务是取消点击事件的默认行为。另一个常见任务是预加载图片。在接下来的主题中，你将学习这两项技能。
+
+## 如何取消事件的默认行为
+
+大多数时候，当用户点击一个元素时，除非该元素上绑定了 JavaScript 事件处理程序，否则什么都不会发生。换句话说，大多数元素没有默认行为。然而，当用户点击网页上的某些元素时，浏览器会执行默认行为。
+
+图 1 显示了若干元素的默认行为。例如，如果用户点击了链接，浏览器会加载链接指定的 URL。同样地，如果用户点击了类型为 `submit` 的按钮，浏览器会将表单提交到服务器。
+
+尽管默认行为通常按照你预期的方式工作，但你有时可能需要取消默认行为。例如，如果用户点击了一个带有 `href` 属性指向图片的链接，浏览器默认会加载指定的图片，这会显示该图片并退出应用程序。但如果应用程序正在进行图片切换（例如），你并不希望这样做。因此，你需要取消该事件的默认行为。
+
+当事件发生时，会创建一个事件对象。该对象包含了有关发生事件的信息，以及允许你控制事件行为的方法。要取消事件的默认行为，例如，你需要创建一个事件处理程序，该处理程序访问事件对象并使用它的其中一个方法来取消默认行为。
+
+如图第一个示例所示，大多数浏览器都是符合 DOM 规范的，因此它们将事件对象作为第一个参数传递给事件处理程序。此外，事件对象有一个名为 `preventDefault()` 的方法，你可以用它来防止默认行为发生。
+
+遗憾的是，旧版本的 Internet Explorer 并不完全符合 DOM 规范。因此，如图第二个示例所示，你通过使用 `window.event` 属性获取事件对象。此外，你通过将此事件对象的 `returnValue` 设置为 `false` 来防止默认行为发生。
+
+为了让你的应用程序兼容所有浏览器，你可以结合这些技术，如第三个示例所示。在这里，函数有一个参数，在符合 DOM 规范的浏览器中将接收事件对象。然后，如果函数中的第一条语句测试 `evt` 参数判断它是否为 `undefined`。如果是，说明浏览器是 IE，此时这段代码将 `window.event` 属性中的事件对象赋值给 `evt` 参数。否则，浏览器是 DOM 规范的，因此 `evt` 参数已经包含了事件对象。
+
+然后，第二条语句测试 `evt` 以检查它是否提供了 `preventDefault()` 方法。注意，这段代码没有调用 `preventDefault()` 方法（调用需要加上括号）。如果 `evt` 参数包含 `preventDefault()` 方法，代码将调用该方法。否则，`else` 分句会将 `window.event` 对象的 `returnValue` 属性设置为 `false`。由于这种跨浏览器兼容的代码可能会非常繁琐，如果你确定不需要支持旧版浏览器，可以只包含符合 DOM 规范的代码。如果你确实需要，你将在本书的下一节中看到使用 jQuery 实现的更简单的方法。
+
+## 对点击事件具有默认行为的常用 HTML 元素
+
+| 元素 | 点击事件的默认行为 |
+| --- | --- |
+| `<a>` | 加载 `href` 属性中的页面。 |
+| `<input>` | 如果 `type` 属性设置为 `submit`，则提交表单。 |
+| `<input>` | 如果 `type` 属性设置为 `reset`，则重置表单。 |
+| `<button>` | 如果 `type` 属性设置为 `submit`，则提交表单。 |
+| `<button>` | 如果 `type` 属性设置为 `reset`，则重置表单。 |
+
+## 取消默认行为的 DOM 标准代码
+
+```javascript
+var eventHandler = function(evt) {
+  evt.preventDefault();
+};
+```
+
+## 取消默认行为的旧 IE 代码
+
+```javascript
+var eventHandler = function() {
+  var evt = window.event;
+  evt.returnValue = false;
+};
+```
+
+## 取消默认行为的跨浏览器兼容代码
+
+```javascript
+var eventHandler = function(evt) {
+  // 如果没有设置事件对象，则从窗口对象获取
+  if (!evt) { evt = window.event; } // 用于 IE
+  // 取消默认行为
+  if (evt.preventDefault) {
+    evt.preventDefault(); // 用于大多数浏览器
+  } else {
+    evt.returnValue = false; // 用于 IE
+  }
+};
+```
+
+## 描述
+
+- 现代浏览器会将事件对象发送给处理该事件的处理程序。它们还为事件对象提供了符合 DOM 标准的 `preventDefault()` 方法。调用该方法时，它会防止事件的默认行为发生。
+- 旧版本的 IE 将事件对象存储在全局 `window.event` 属性中。当此事件对象的 `returnValue` 属性设置为 `false` 时，它会防止事件的默认行为发生。
+- 为了确保跨浏览器兼容性，你需要提供两种取消默认行为的方法。
+
+![](img/32b24cb9657418b8429a4117bd539786_222_0.png)
+
+## 预加载图片
+
+在响应用户事件加载图片的 JavaScript 应用程序中，在 JavaScript 代码更改 `img` 标签的 `src` 属性之前，图片不会加载到浏览器中。对于大图片或慢连接，这会导致显示图片之前出现几秒的延迟。为了解决这个问题，应用程序可以在用户事件发生之前加载图片。这被称为预加载图片。这样，浏览器就可以无延迟地显示图片。
+
+图 2 显示了如何预加载图片。首先，第一行代码创建一个 `Image` 对象并将其存储在变量中。这创建了一个空的图像节点。然后，第二行代码将 `src` 属性设置为要预加载的 URL。这会导致浏览器预加载图片。注意，在设置 `src` 属性后，你不再需要使用该 `Image` 对象。
+
+## 使用 Image 对象预加载图片
+
+### 如何创建 Image 对象
+
+```javascript
+var image = new Image();
+```
+
+### 在 Image 对象中加载图片
+
+```javascript
+image.src = "image_name.jpg";
+```
+
+### 预加载 `<a>` 标签中 `href` 属性引用的所有图片
+
+```javascript
+var links = document.getElementsByTagName("a");
+var i, link, image;
+for ( i = 0; i < links.length; i++ ) {
+  link = links[i];
+  image = new Image();
+  image.src = link.href;
+}
+```
+
+## 描述
+
+- 当应用程序预加载图片时，它会在页面加载所需的所有图片，并将这些图片存储在网络浏览器的缓存中供以后使用。
+- 当图片预加载后，浏览器可以在需要时显示它们，而不会有明显的延迟。
+
+## 图片切换应用程序
+
+图 7-3 显示了一个*图片切换*应用，这是一个常见的 JavaScript 应用。在这里，每当用户点击其中一张小图（缩略图）时，主图片就会进行切换。在这个示例中，用户点击了第三张缩略图，因此显示了该图片的放大版本。在此应用程序中，大图上方的标题作为图片切换的一部分进行更改，但这并不是所有图片切换应用都会这样做。
+
+## HTML 和 CSS
+
+在该应用程序的 HTML 中，使用 `img` 元素来显示四张缩略图。然而，这些元素被编写在 `<a>` 元素内部，因此图像是可以点击的并且可以接收焦点。在 `<a>` 元素中，`href` 属性标识了点击链接时要切换的图片，`title` 属性为相关标题提供了文本。在这种情况下，`<a>` 元素和 `img` 元素都编写在一个 `<ul>` 元素中。
+
+在 `<ul>` 之后，你可以看到用于标题的 `<h2>` 元素和页面上主图片的 `img` 元素。`<h2>` 元素的内容提供了第一张图片的标题，`img` 元素的 `src` 属性提供了第一张图片的位置。这样，当应用程序启动时，第一张标题和图片就会显示出来。
+
+JavaScript 使用的三个 id 在此处突出显示。首先，`<ul>` 元素的 `id` 设置为 `image_list`，以便 JavaScript 可以获取其子 `<a>` 元素。其次，`<h2>` 元素的 `id` 设置为 `caption`，以便 JavaScript 可以更改标题。第三，主 `img` 元素的 `id` 设置为 `main_image`，以便 JavaScript 可以更改图片。
+
+对于肢障人士，此 HTML 通过将缩略图的 `img` 元素编写在 `<a>` 元素内部来提供了可访问性。正如你将在下一个图中看到的，JavaScript 将焦点设置在第一个 `<a>` 元素上。这样，用户可以通过 Tab 键访问缩略图链接，当缩略图获得焦点时，用户可以通过 Enter 键切换图片，从而触发 `onclick` 处理程序。
+
+此页面 CSS 中的注意点是针对 `<li>` 元素的规则。如图所示，它们的 `display` 属性被设置为 `inline`，因此缩略图从左到右排列，而不是从上到下。
+
+## 图片切换应用程序的用户界面
+
+![](img/32b24cb9657418b8429a4117bd539786_226_0.png)
+
+## HTML
+
+```html
+<main>
+  <h1>Fishing Images</h1>
+  <p>点击图片进行放大。</p>
+  <ul id="image_list">
+    <li><a href="images/release.jpg" title="Catch and Release"><img src="thumbnails/release.jpg" alt=""></a></li>
+    <li><a href="images/deer.jpg" title="Deer at Play"><img src="thumbnails/deer.jpg" alt=""></a></li>
+    <li><a href="images/herc.jpg" title="The Big One!"><img src="thumbnails/herc.jpg" alt=""></a></li>
+    <li><a href="images/bison.jpg" title="Grazing Bison"><img src="thumbnails/bison.jpg" alt=""></a></li>
+  </ul>
+  <h2 id="caption">Catch and Release</h2>
+  <p><img id="main_image" src="images/release.jpg" alt=""></p>
+</main>
+```
+
+## li 元素的 CSS
+
+```css
+li { display: inline; }
+```
+
+## JavaScript
+
+图 7-4 展示了此应用程序的 JavaScript。在 `onload` 事件处理程序中，前三个语句获取了 `<ul>` 元素（`image_list`）、用于标题的 `<h2>` 元素以及显示放大图片的 `img` 元素的对象。这些对象对应 DOM 中的节点。然后，第四条语句创建了图片列表内部 `<a>` 元素的数组，并将其保存在名为 `imageLinks` 的变量中。代码随后使用循环处理数组中的每个链接。
+
+循环开始预加载将要切换的图片。接下来，为每个链接的 `click` 事件创建了一个事件处理程序。在此注意，创建每个事件处理程序的函数具有一个 `ev` 参数，在符合 DOM 标准的浏览器中，它将接收每个链接的事件对象。同样注意，该函数的第一条语句将 `this` 赋值给变量 `link`。这是该函数中的关键语句，因为该关键字指向 DOM 中那个特定的 `<a>` 对象。结果是 DOM 中的每个 `<a>` 对象都创建了一个事件处理程序。
+
+如果没有这条语句，循环将只会创建一个事件处理程序并将其附加到每个 `<a>`。例如，如果你将 `linkNode` 赋值给链接变量而不是 `this`，那么点击任何缩略图都将显示最后一张图片。这是因为事件处理程序中的语句在每次循环时都会被替换，最终只剩下最后一个链接的语句。
+
+之后，下一条语句将图片节点中的 `src` 属性更改为链接的 `href` 属性。然后，下一条语句将标题节点的第一个子节点的值更改为链接的 `title` 属性。稍当应用程序运行时且用户点击缩略图时，这些语句将更改 DOM，使得图片和标题在显示中立即变化。
+
+该事件处理程序通过使用图 7-1 中的代码取消链接的默认事件行为结束。由于默认行为是显示链接标识的文件，我们希望阻止这种行为。
+
+## swap.js
+
+```javascript
+var timer;
+
+window.onload = function() {
+  var listNode = document.getElementById("image_list");
+  var captionNode = document.getElementById("caption");
+  var imageNode = document.getElementById("main_image");
+  var imageLinks = listNode.getElementsByTagName("a");
+  for (var i = 0; i < imageLinks.length; i++) {
+    var link = imageLinks[i];
+    link.onclick = function(ev) {
+      imageNode.src = this.href;
+      captionNode.firstChild.textContent = this.title;
+      ev.preventDefault();
+    };
+  }
+};
+```
+
+## 调用一次函数的定时器的两种处理方法
+
+```javascript
+setTimeout( function, delayTime ) // 创建定时器
+clearTimeout( timer ) // 取消定时器
+```
+
+## 具有 5 秒后启动升级功能的 FAQs 应用程序
+
+![](img/32b24cb9657418b8429a4117bd539786_230_0.png)
+
+## 为升级提供的 HTML 结构
+
+```html
+<fieldset id="upgrade">
+  <legend>有新版本可用！</legend>
+  <p>升级将在 5 秒后开始!</p>
+  <input type="button" id="cancel" value="取消升级">
+  <span id="message"></span>
+</fieldset>
+```
+
+## 隐藏类的 CSS
+
+```css
+.hidden { display: none; }
+```
+
+## 如何使用一次性定时器来启动或取消升级
+
+```javascript
+// 声明一个变量来保存定时器的引用；将其设置为
+// 全局变量，以便所有函数都能访问它
+var timer;
+
+var startUpgrade = function() {
+  $("cancel").setAttribute("class", "hidden");
+  $("message").firstChild.nodeValue = "开始下载...";
+  /* 执行升级的代码在此处 */
+  $("upgrade").setAttribute("class", "hidden");
+}
+
+var cancelUpgrade = function() {
+  clearTimeout(timer);
+  $("upgrade").setAttribute("class", "hidden");
+}
+
+window.onload = function() {
+  timer = setTimeout(startUpgrade, 5000);
+  $("cancel").onclick = cancelUpgrade;
+};
+```
+
+## 描述
+
+- `setTimeout` 方法创建一个定时器，在指定的毫秒延迟通过后调用指定的函数。该方法返回新定时器的引用，该引用可用于取消定时器。
+- `clearTimeout` 方法取消通过 `setTimeout` 方法创建的定时器。
+
+![](img/32b24cb9657418b8429a4117bd539786_230_1.png)
+
+## 如何使用间隔定时器
+
+第二类定时器会重复调用其函数。要创建此类类型的定时器，你可以使用图 7-6 所示的全局 `setInterval()` 方法。它的第一个参数是要调用的函数。第二个参数是两次调用之间的时间间隔。要取消此类定时器，你需要将定时器传递给 `clearInterval()` 方法。
+
+图中的示例显示了如何使用间隔定时器创建一个每秒递增的计数器。该计数器值显示在页面底部 `h3` 元素内的 `span` 元素中。
+
+图中的第一个 JavaScript 示例显示了创建和使用定时器的一种方法。在这里，声明了全局 `timer` 和 `counter` 变量，并将计数器设置为初始值零。然后，`updateCounter()` 函数将计数器加 1 并在 `span` 元素中显示新值。最后，`onload` 事件处理程序使用 `updateCounter()` 作为 `setInterval()` 方法的函数参数，并使用 1000（一秒）作为间隔时间来创建定时器。
+
+如果你想取消存储在全局变量中的间隔定时器，可以使用紧接在该示例随后的 `clearInterval()` 方法。当你想要修改定时器时，这非常有用。要这样做，你需要取消旧定时器，并创建一个按你预期方式运行的新定时器。
+
+第二个 JavaScript 示例显示了编写 `setInterval()` 方法的另一种方式。在这里，`setInterval()` 方法在传递给该方法的同时会被调用的函数。这被称为匿名函数，这样编写代码意味着你不需要编写一个变量来持有它。这是编写上幅图中 `setInterval()` 方法和 `setTimeout()` 方法的常用方式。
+
+当你使用 `setInterval()` 方法创建定时器时，定时器会等待指定的间隔通过后才第一次调用函数。因此，如果你想立即调用该函数，你需要在创建定时器之前先调用该函数。
+
+## 重复调用函数的定时器的两种处理方法
+
+```javascript
+setInterval( function, intervalTime )   // 创建定时器
+clearInterval( timer )               // 取消定时器
+```
+
+## 底部带有计数器的 FAQs 应用程序
+
+![](img/32b24cb9657418b8429a4117bd539786_232_0.png)
+
+## 计数器的 HTML 结构
+
+```html
+<h3>页面上的秒数：<span id="counter">0</span></h3>
+```
+
+## 如何使用 `setInterval()` 方法为页面添加计数器
+
+```javascript
+// 创建全局变量来保存定时器和当前计数
+var timer;
+var counter = 0;
+
+// 创建定时器调用的函数
+var updateCounter = function() {
+  counter++;
+  $("counter").firstChild.nodeValue = counter;
+};
+
+// 创建一个重复调用 updateCounter 函数的定时器
+window.onload = function() {
+  timer = setInterval ( updateCounter, 1000 );
+}
+```
+
+## 如何取消定时器
+
+```javascript
+clearInterval( timer );
+```
+
+## 如何在 `setInterval()` 方法中使用匿名函数
+
+```javascript
+var timer;
+var counter = 0;
+
+window.onload = function() {
+  timer = setInterval(function() {
+    counter++;
+    $("counter").firstChild.nodeValue = counter;
+  }, 1000 );
+}
+```
+
+## 描述
+
+- `setInterval` 方法创建一个定时器，在指定的毫秒间隔通过后调用指定的函数。该方法返回新定时器的引用，该引用可用于取消定时器。
+- `clearInterval` 方法取消通过 `setInterval` 方法创建的定时器。
+
+## Slide 应用程序
+
+## ul 的 CSS
+
+## 用于幻灯片应用的 JavaScript
+
+```javascript
+var $ = function (id) { return document.getElementById(id); };
+
+window.onload = function () {
+  var listNode = $("image_list"); // ul元素
+  var captionNode = $("caption"); // 用于标题的 h2 元素
+  var imageNode = $("image"); // 用于显示的 img元素
+  var links = listNode.getElementsByTagName("a");
+
+  // 处理图像链接
+  var i, linkNode, image;
+  var imageCache = [];
+
+  for (i = 0; i < links.length; i++) {
+    linkNode = links[i];
+    // 预加载图像并复制标题属性
+    image = new Image();
+    image.src = linkNode.getAttribute("href");
+    image.title = linkNode.getAttribute("title");
+    imageCache[imageCache.length] = image;
+  }
+
+  // 启动幻灯片
+  var imageCounter = 0;
+  var timer = setInterval(
+    function () {
+      imageCounter = (imageCounter + 1) % imageCache.length;
+      image = imageCache[imageCounter];
+      imageNode.src = image.src;
+      captionNode.firstChild.nodeValue = image.title;
+    },
+    2000);
+};
+```
+
+## 观点
+
+现在你已经完成了这一章，你应该知道如何使用 JavaScript 创建处理链接、图像和计时器的简单应用程序。然而，当你的应用程序变得比本章中的示例更复杂时，你应该考虑使用 jQuery 而不是 JavaScript。正如你将在本书的下一节中看到的，jQuery 让开发像你刚刚看到的这样的应用程序变得容易得多。
+
+## 术语
+
+- 默认行为 (default action)
+- 图像切换 (image swap)
+- 事件对象 (event object)
+- 定时器 (timer)
+- 预加载图像 (preload an image)
+- 匿名函数 (anonymous function)
+
+## 总结
+
+- 对于某些 JavaScript 应用程序，你需要取消事件的默认行为，例如点击链接或按钮。对于现代浏览器，你可以通过调用传递给处理程序的事件对象的 `preventDefault()` 方法来实现。对于旧版本的 IE 浏览器，你必须使用 `window.event` 属性获取事件对象。然后，你必须将该对象的 `returnValue` 设置为 `false`。
+- 对于预加载图像，你创建一个新的 `Image` 对象并将其 `src` 属性设置为图像的 URL。当你预加载图像时，页面加载时间可能会更长，但图像的变化将立即发生。
+- 浏览器提供两种类型的计时器。一次性计时器在指定的时间间隔后执行一次函数。间隔计时器在每次到达指定的间隔时执行一次函数。
+- JavaScript 提供了方法在一次性计时器第一次执行之前取消它，或者在间隔计时器下一次计划执行之前取消它。
+
+## 练习 7-1 开发一个鼠标悬停应用
+
+在本次练习中，你将创建一个包含两个图像的应用程序，当你的鼠标悬停在它们上时，它们会发生变化。
+
+### 鱼类图像
+
+将鼠标移动到图像上更改它，移出图像以恢复原始图像。
+
+![](img/32b24cb9657418b8429a4117bd539786_238_0.png)
+
+1. 使用你的文本编辑器或 IDE 打开文件夹：`javascript/jquery/exercises/ch07/rollover/` 中的文件。
+2. 查看 `index.html` 文件中的代码，注意 `<ul>` 元素内的每个 `<li>` 都包含一个 `<a>` 元素，其 `href` 属性指向此应用程序使用的图像之一。还要注意页面底部的 `<p>` 元素包含两个 id 为 "image1" 和 "image2" 的 `<img>` 元素，它们的 `src` 属性决定了当前显示的图像。
+3. 查看 `rollover.css` 文件中的代码，注意它包含了防止 `index.html` 中的 `<ul>` 元素显示的样式规则。
+4. 查看 `rollover.js`，注意 id 为 "image1" 和 "image2" 的图像存储在变量 `image1` 和 `image2` 中。此外，`<ul>` 元素中的 `<a>` 元素存储在数组 `links` 中。
+5. 使用 Chrome 测试此应用程序。注意上面的图像已显示，但当你鼠标移动到它们上方时没有任何发生。
+
+### 添加代码预加载图像并实现悬停效果
+
+6. 在 `onload` 事件处理器中，添加代码使用 `links` 数组预加载此应用程序使用的四个图像。
+7. 为页面上显示的两个图像元素添加 `mouseover` 和 `mouseout` 事件处理程序。id 为 "image1" 的图像元素在鼠标悬停在其上方时显示 `release.jpg` 图像，否则显示其他图像。id 为 "image2" 的图像元素在鼠标悬停在其上方时显示 `deer.jpg` 图像。
+8. 测试应用程序以确保悬停效果正常且显示了正确的图像。
+
+## 练习 7-2 增强幻灯片应用
+
+在本次练习中，你将通过添加启动和暂停幻灯片的按钮来增强幻灯片应用。
+
+![](img/32b24cb9657418b8429a4117bd539786_239_0.png)
+
+### 打开并测试应用程序
+
+1. 使用你的编辑器或 IDE 打开文件夹：`javascript/jquery/exercises/ch07/slideshow` 中的文件。
+2. 查看 `index.html` 文件中的代码，注意 `<ul>` 元素内的每个 `<li>` 都包含一个 `<a>` 元素，其 `href` 属性指向此应用程序使用的图像之一。还要注意页面底部的 `<p>` 元素包含两个 id 为 "image1" 和 "image2" 的 `<img>` 元素，它们的 `src` 属性决定了当前显示的图像。
+3. 查看 `slideshow.css` 文件代码，注意它包含了防止 `index.html` 中的 `<ul>` 元素显示的样式规则。
+4. 查看 `slideshow.js` 文件，注意 id 为 "image1" 和 "image2" 的图像存储在变量 `image1` 和 `image2` 中。此外，`<ul>` 元素中的 `<a>` 元素存储在数组 `links` 中。
+5. 使用 Chrome 测试此应用程序。注意上面的图像已显示，但当你鼠标移动到它们上方时没有任何发生。
+6. 在 `onload` 事件处理器中，添加代码使用 `links` 数组预加载此应用程序使用的四个图像。
+7. 为页面上显示的两个图像元素添加 `mouseover` 和 `mouseout` 事件处理程序。id 为 "image1" 的图像元素在鼠标悬停在其上方时显示 `release.jpg` 图像，否则显示其他图像。id 为 "image2" 的图像元素在鼠标悬停在其上方时显示 `deer.jpg` 图像，否则显示其他图像。
+8. 测试应用程序以确保悬停效果正常且显示了正确的图像。
+
+---
+
+# 第 8 章 使用 jQuery 快速上手
+
+## jQuery 简介
+
+在本文介绍中，你将学习什么是 jQuery、如何将其包含在应用程序中，以及 jQuery UI 和插件如何简化 JavaScript 开发。
+
+## 什么是 jQuery
+
+如图 8-1 所示，jQuery 是一个免费开源的 JavaScript 库，它为常见的 Web 功能提供了数十种方法，使 JavaScript 编程变得更加简单。此外，jQuery 函数经过了跨浏览器兼容性的编码和测试，因此它们可以在所有浏览器中运行。
+
+这些仅仅是为什么今天的一百万个访问量最大的网站使用 jQuery 的原因之一。这也是为什么专业 Web 开发者经常使用 jQuery。事实上，你可以将 jQuery 视为每个 Web 开发者应该学会使用的四种技术之一：HTML、CSS、JavaScript 和 jQuery。但不要忘记，jQuery 实际上就是 JavaScript。
+
+## jquery.com 的 jQuery 网站
+
+![](img/32b24cb9657418b8429a4117bd539786_246_0.png)
+
+## jQuery 提供的功能
+
+- 数十种选择器、方法和事件方法，让你更轻松地为网页添加 JavaScript 功能
+- 跨浏览器兼容性
+- 符合 CSS3 标准的选择器
+- 经过压缩的库，加载速度快，不会影响性能
+
+## 描述
+
+- jQuery 是一个免费开源的 JavaScript 库，提供了让 JavaScript 编程更简单的方法。
+- 如今，在一百万个访问量最大的网站中大多数都在使用 jQuery，且其人气仍在增长。
+
+## jQuery 如何简化 JavaScript 开发
+
+为了向你展示 jQuery 如何简化 JavaScript 开发，图 8-2 显示了你在第 6 章中学会开发的 FAQ 应用程序 jQuery 代码。如果你像大多数人一样，你可能发现该应用程序的 JavaScript 代码既复杂又令人混乱。
+
+相比之下，这段 jQuery 代码的代码行要少得多。一旦你学会了如何使用 jQuery 选择器、方法和事件方法，你会发现它要简单得多。你将在本介绍之后就开始学习这些技能。
+
+顺便提到，jQuery 使用 CSS 选择器来选择应该应用方法的 HTML 元素。例如，`$("#faqs h2")` 是 CSS 选择器 `#faqs h2` 对应的 jQuery 选择器，它选择了 ID 为 "faqs" 的元素中所有的 h2 元素。事实上，jQuery 支持所有的 CSS 选择器，包括 CSS3 选择器，即使在不支持所有 CSS3 选择器的浏览器中也是如此。这是开发者喜欢 jQuery 的另一个原因。
+
+## 浏览器中的 FAQ
+
+![](img/32b24cb9657418b8429a4117bd539786_248_0.png)
+
+## HTML
+
+```html
+<main id="faqs">
+  <h1>jQuery FAQs</h1>
+  <h2><a href="#">What is jQuery?</a></h2>
+  <div>
+    <p>jQuery 是一个 JavaScript 函数库，你在开发网站时最可能需要的函数。</p>
+  </div>
+  <h2><a href="#">Why is jQuery becoming so popular?</a></h2>
+  <div>
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+</main>
+```
+
+## 关键 CSS
+
+```css
+h2 { background: url(images/minus.png) no-repeat left center; }
+h2.minus { background: url(images/minus.png) no-repeat left center; }
+div { display: none; }
+```
+
+## 应用程序的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#faqs h2").click(function() {
+    $(this).toggleClass("minus");
+    if ($(this).attr("class") != "minus") {
+      $(this).next().hide();
+    } else {
+      $(this).next().show();
+    }
+  }); // end click
+}); // end ready
+```
+
+## 描述
+
+- 该应用程序演示了 `ready` 事件方法的使用、与 CSS 选择器 (`#faqs h2`) 相同的 jQuery 选择器以及五个 jQuery 方法。所有这些方法都让 jQuery 编程比 JavaScript 编程更简单。
+
+## jQuery 编程基础
+
+在接下来的四图中，你将学习 jQuery 编程的基础。然后，你将学习一个使用这些技能的应用程序。这将展示 jQuery 如何简化 JavaScript 编程。
+
+## 如何在你的网页中引入 jQuery
+
+如果你访问图 8-3 所示的网页，你会发现它包含了下载不同版本的 jQuery 核心库的链接。在编写此时，最新版本是 jQuery 3.1.1，它共有四个版本：未压缩版、压缩版、slim 版、压缩版。
+
+未压缩版本允许你研究库中使用的 JavaScript 代码。但要注意，这些代码极其复杂。相比之下，压缩版删除了所有空白字符，使得人类几乎无法阅读。它们要小得多，从而提高了性能。jQuery 的 slim 版本是从 jQuery 3.0 开始引入的。它不包含 ajax 或效果模块，体积更小。
+
+一旦你下载了 jQuery，就可以将其包含在你的网页中。
+
+虽然你可能认为应该始终使用子资源完整性（SRI），它能确保托管在 CDN 上的资源没有被篡改。最后，你应该知道 jQuery 建议在链接到 CDN 时使用 SRI。如果你有使用这些功能的旧代码，你需要 jQuery Migrate 插件。如需更多信息，请访问 jquery.com/upgrade-guide。
+
+## jquery.com 的下载页面
+
+![](img/32b24cb9657418b8429a4117bd539786_250_0.png)
+
+## 如何编写 jQuery 选择器
+
+当你使用 jQuery 时，首先要选择你想要应用 jQuery 方法的单个元素或多个元素。要实现这一点，你可以使用图 8-4 所示的 jQuery 选择器。
+
+编写 jQuery 选择器时，你先编写美元符号 (`$`)，后面紧跟一组包含引号的括号。然后，在引号内部，编写你想要选择的元素或多个元素的 CSS 选择器。这在图顶部的语法总结中已经给出了。
+
+HTML 和示例展示了使用 jQuery 选择一个或多个元素是多么简单。例如，第一组选择器中的第一个选择器选择了 `id` 为 "faqs" 的 `<p>` 元素。而第三个选择器选择了所有 `class` 属性值为 "minus" 的元素。
+
+在第二组示例中，你可以看到如何用 jQuery 编写其他类型的 CSS 选择器。在这里，你可以看到后代元素、相邻兄弟、通用兄弟和子元素是如何编写的。例如，第一个选择器获取所有作为 `id` 为 "faqs" 的元素后代的 `<p>` 元素。这包含了图中 HTML 中所有的 `<p>` 元素。
+
+相比之下，第二个选择器获取与 `<h2>` 元素相邻的 `<div>` 元素，这包含了所有的 `<div>` 元素。第三个选择器获取所有作为 `<ul>` 元素兄弟的 `<p>` 元素，选择了第二个元素中的 `<p>` 元素。第四个选择器获取所有作为 `<div>` 子元素的 `<ul>` 元素，选择了第二个 `<div>` 元素中的 `<ul>` 元素。
+
+第三组示例展示了如何编写多个选择器。做到这一点，只需像编写 CSS 一样，用逗号将它们隔开。
+
+## jQuery 选择器的语法
+
+```javascript
+$(selector)
+```
+
+## 示例所选元素的 HTML 代码
+
+```html
+<main id="faqs">
+  <h1>jQuery FAQs<a href="#">What is jQuery?</a></h1>
+  <h2 class="minus"><a href="#">Why is jQuery so popular?</a></h2>
+  <div>
+    <p>jQuery is a library of the JavaScript functions that你在开发网站时最可能需要的库。</p>
+  </div>
+  <h2><a href="#">Why is jQuery so popular?</a></h2>
+  <div>
+    <p>Three reasons</p>
+    <ul>
+      <li>It's free.</li>
+      <li>It lets you get more done in less time.</li>
+      <li>All of its functions are cross-browser compatible.</li>
+    </ul>
+  </div>
+</main>
+```
+
+## 如何通过元素、id 和类选择元素
+
+- 按元素选择：整个文档中所有的 `<p>` 元素 (`"p"`)
+- 按 id 选择：`id` 为 "faqs" 的元素 (`"#faqs"`)
+- 按类选择：所有 `class` 为 "minus" 的元素 (`".minus"`)
+
+## 如何通过关系选择元素
+
+- 后代：所有作为主元素后代的 `<p>` 元素 (`"#faqs p"`)
+- 相邻兄弟：所有作为 `<h2>` 元素相邻兄弟的 `<div>` 元素 (`"h2 + div"`)
+- 通用兄弟：所有作为 `<ul>` 元素兄弟的 `<p>` 元素 (`"ul ~ p"`)
+- 子元素：所有作为 `<div>` 子元素的 `<ul>` 元素 (`"div > ul"`)
+
+## 如何编写多个选择器
+
+- `"#faqs li, div p"`
+- `"p + ul, div ~ p"`
+
+## 描述
+
+- 当你使用 jQuery 时，美元符号 (`$`) 用于引用 jQuery 库。然后，你可以通过在括号引号中使用 CSS 语法来编写选择器。
+
+## 如何调用 jQuery 方法
+
+一旦你选择了想要应用方法的单个元素或多个元素，就可以使用图 8-5 顶部所示的语法调用该方法。这与你调用任何对象的方法的方法相同。你编写获取元素或多个元素的选择器、点号 `.`、方法名以及括号内的任何参数。
+
+为了开始学习 jQuery，图中的表格总结了一些你将最常用的 jQuery 方法。例如，不带参数的 `val()` 方法可以从选定的文本框或其他表单控件获取值，而带参数的 `val()` 方法可以设置所选文本框或其他表单控件的值。表格后的前两个示例展示了这种工作原理。
+
+同样，不带参数的 `text()` 方法可以用于获取所选元素的文本，而带参数的 `text()` 方法可以设置所选元素的文本。此类方法通常被称为 getter（获取器）和 setter（设置器）方法。在这里，第三个示例说明了 `text()` 方法的 setter 版本，它将元素的文本设置为“Email address is required”。
+
+表格中的第五种方法是 `next()` 方法，用于获取元素的下一个（或相邻）兄弟。此方法后面通常会跟另一个方法。要实现这一点，你将使用对象链，其工作方式与 JavaScript 中完全相同。这通过第四个示例进行了说明。在这里，`next()` 方法获取所选元素之后的兄弟元素，而 `text()` 方法为该兄弟元素设置文本。
+
+在大多数情况下，你会将选择单个控件或元素的选择器与 `val()`、`text()` 和 `next()` 方法结合使用。然而，你也可以将它们用于选择两个或多个控件或元素的选择器。在这种情况下，`val()` 和 `text()` 方法的 set 形式会设置所有匹配控件的值。相比之下，`val()` 方法的 get 形式仅获取第一个匹配控件的值。`text()` 方法的 get 形式获取所有匹配元素的组合文本。而 `next()` 方法则获取所有匹配元素的兄弟。
+
+表格中的最后两种方法是 `submit()` 和 `focus()` 方法，它们与 JavaScript 的 `submit()` 和 `focus()` 方法一样。`submit()` 方法将所选表单的数据提交到服务器，`focus()` 方法将焦点移动到所选的表单控件或链接。
+
+稍后，你将看到这些选择器和方法在应用程序中是如何工作的。但首先，你需要学习如何为应用程序设置事件处理器。
+
+## 调用 jQuery 方法的语法
+
+```javascript
+$("selector").methodName(parameters)
+```
+
+## 一些常用的 jQuery 方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `val()` | 获取文本框或其他表单控件的值。 |
+| `val(value)` | 设置文本框或其他表单控件的值。 |
+| `text()` | 获取元素的文本。 |
+| `text(value)` | 设置元素的文本。 |
+| `next([selector])` | 获取元素的下一个兄弟或指定类型的兄弟。 |
+| `submit()` | 提交所选表单。 |
+| `focus()` | 将焦点移动到所选的表单控件或链接。 |
+
+## 示例
+
+- 获取文本框的值：`$("#email").val()`
+- 设置文本框的值：`$("#email").val("value")`
+- 获取元素的文本：`$("#message").text()`
+- 设置元素的文本：`$("#message").text("value")`
+- 获取元素的下一个兄弟：`$("#first").next()`
+- 提交所选表单：`$("#email_form").submit()`
+- 将焦点移动到所选的表单控件或链接：`$("#first").focus()`
+
+## 描述
+
+- 当你使用 jQuery 时，美元符号 (`$`) 用于引用 jQuery 库。然后，你可以通过在括号引号中使用 CSS 语法来编写选择器。
+- 当你使用对象链时，这有效是因为每个方法都返回适当的对象。
+- 虽然你通常会将选择单个控件或元素的选择器与 `val()`、`text()` 和 `next()` 方法结合使用，你也可以将它们用于选择两个或多个控件或元素的选择器。
+
+## 如何使用 jQuery 事件方法
+
+当你使用 jQuery 时，你使用事件方法将事件处理器附加到事件。要实现这一点，你使用图 8-6 顶部所示的语法。首先，你编写触发事件元素的选择器。然后，你编写表示你想要使用的事件的方法名称。最后，你编写一个将作为处理器的函数并在括号内。图中表格总结了你将最常用的两种事件方法。`ready` 事件是 JavaScript `load` 事件的替代方案。`ready` 事件比 `load` 事件更好，因为它在 DOM 构建完成后就会被触发，即使图像等其他元素仍在加载。这意味着用户可以更快地开始使用页面。
+
+因为在使用 JavaScript 或 jQuery 之前通常需要构建 DOM，你可能会在你开发的每个 JavaScript 中使用 `ready()` 事件方法。图中的示例展示了两种这种方法。在长格式中，你使用 `document` 作为网页的选择器，后面跟着点号、方法名 (`ready()`) 以及作为事件处理器的函数。
+
+在短格式中，你可以省略选择器和事件方法，只需在美元符号后编写函数。虽然这种格式经常被专业人员使用，但本书中的所有示例都使用长格式。这样，可以清楚地看到 `ready` 事件处理器从哪里开始。
+
+图中的下一个示例显示了针对所有 `<h2>` 元素的点击事件的事件处理器。它的编写方式与 `ready` 事件的事件处理器相同，只是 `h2` 被用作选择器，`click()` 被用作方法名。
+
+图中最后一个示例展示了如何在 `ready()` 事件处理器内部编写事件处理器。注意这里，每个事件处理器的闭括号、括号和分号都是至关重要的。正如你猜到的，很容易遗漏这些标记之一或使它们的顺序出错，因此这是一个常见的错误来源。这就是为什么专业程序员通常会在每个事件处理器的结束标记之后编写内联注释，以标识这些标记属于哪个事件处理器。
+
+## jQuery 事件方法的语法
+
+```javascript
+$(selector).eventMethod(function() {
+  // 事件处理程序的语句
+});
+```
+
+## 两种常用的 jQuery 事件方法
+
+| 事件方法 | 描述 |
+| --- | --- |
+| `ready(handler)` | 当 DOM 准备就绪时，执行事件处理器。 |
+| `click(handler)` | 当选定的元素被点击时，执行事件处理器。 |
+
+## 为 jQuery ready 事件编写事件处理器的两种方式
+
+### 长写法
+
+```javascript
+$(document).ready(function() {
+  alert("The DOM is ready");
+});
+```
+
+### 简写写法
+
+```javascript
+$(function() { // 假设已调用了 $(document).ready
+  alert("The DOM is ready");
+});
+```
+
+## 为所有 h2 元素编写点击事件的事件处理器
+
+```javascript
+$("h2").click(function() {
+  alert("This heading has been clicked");
+});
+```
+
+## 在 ready 事件处理器内部编写点击事件处理器
+
+```javascript
+$(document).ready(function() {
+  $("h2").click(function() {
+    alert("This heading has been clicked");
+  }); // click 事件处理器结束
+}); // ready 事件处理器结束
+```
+
+## 描述
+
+- 若要编写一个 jQuery 事件处理器，你需要编写一个选择器、一个点运算符 `.`、jQuery 事件方法的名称，以及一个在括号内处理事件的匿名函数。
+- 一只要 DOM 准备就绪，即使浏览器正在加载页面的图像和内容，`ready` 事件的处理器就会运行它所包含的任何方法。这比 JavaScript 的 `onload` 事件更好，因为后者要等到页面所有内容加载完毕后才会触发。
+- 在本书中，`ready` 事件始终采用上述所示的长写法进行编写。但在实践中，许多程序员使用简写写法。
+- 在一个事件处理器内部编写另一个事件处理器时，闭大括号、括号和分号的使用至关重要。为了确保无误，许多程序员会在这些标点符号后编写内联注释，以标识处理器的结束。
+
+## jQuery 中的邮件列表应用
+
+有了这些背景知识，你已经准备好查看 jQuery 如何应用于你在第 1 节中学习的邮件列表应用中了。这将向你展示 jQuery 如何简化代码编写。
+
+### 用户界面与 HTML
+
+为了唤起你的记忆，图 8-7 展示了邮件列表应用的用户界面和 HTML。要使用该应用，用户在前三个文本框中输入文本并点击“加入我们的列表”（Join our List）按钮。然后，JavaScript 会验证输入内容，如果发现错误则显示相应的错误消息。如果没有发现错误，表单中的数据将提交到 Web 服务器进行处理。
+
+在 HTML 中，注意加载 jQuery 的 `script` 元素。紧随其后的是包含该应用 JavaScript 文件的 `script` 元素。这个顺序至关重要，因为 JavaScript 文件将使用 jQuery 文件。
+
+同样注意，`span` 元素与文本框的 `input` 元素相邻。这些 `span` 元素的起始文本是一个星号，表示该文本框是必填的。稍后如果 JavaScript 发现输入内容错误，它会在这些 `span` 元素中显示错误消息。
+
+最后请注意，与你之前看到的邮件列表应用不同，此版本的 `span` 元素没有 `id` 属性。这是因为 jQuery 代码将使用你刚刚学会的一些方法来定位它所需的 `span` 元素。接下来我们将看到它是如何运作的。
+
+## 邮件列表应用的用户界面
+
+![](img/32b24cb9657418b8429a4117bd539786_248_0.png)
+
+## HTML
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Join Email List</title>
+  <link rel="stylesheet" href="email_list.css">
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="email_list.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Join Email List</h1>
+    <form id="email_form" action="join.html" method="get">
+      <label for="first">First Name:</label>
+      <input type="text" id="first">
+      <span>*</span>
+      <label for="email">Email Address:</label>
+      <input type="text" id="email">
+      <span>*</span>
+      <label for="last">Last Name:</label>
+      <input type="text" id="last">
+      <span>*</span>
+      <input type="button" value="Join our List">
+    </form>
+  </main>
+</body>
+</html>
+```
+
+## jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#email_form").click(function() {
+    var isValid = true;
+
+    // 验证第一个名字
+    if ($("#first").val() == "") {
+      $("#first").next("span").text("This field is required.");
+      isValid = false;
+    } else {
+      $("#first").next("span").text("");
+    }
+
+    // 验证邮箱地址
+    if ($("#email").val() == "") {
+      $("#email").next("span").text("This field is required.");
+      isValid = false;
+    } else if ($("#email").val() != "") { // 注：原文逻辑似有误，此处保留原文逻辑
+      $("#email").next("span").text("Email addresses must match.");
+      isValid = false;
+    } else {
+      $("#email").next("span").text("");
+    }
+
+    // 验证姓氏
+    if ($("#last").val() == "") {
+      $("#last").next("span").text("This field is required.");
+      isValid = false;
+    } else {
+      $("#last").next("span").text("");
+    }
+
+    // 如果所有输入有效，则提交表单
+    if (isValid) {
+      $("#email_form").submit();
+    }
+  }); // end click
+}); // end ready
+```
+
+## 选择器、方法和方法的集合
+
+接下来的三个图展示了常用的选择器、方法和方法的集合。这些内容很多，但一旦你理解了它们，就能编写实用的 jQuery 应用。
+
+### 最常用的选择器
+
+在图 8-4 中，你学习了 jQuery 中使用的基础选择器。现在，图 8-9 展示了你最可能使用的其他选择器。缺失的重大选择器是你将在后续章节中学习的，例如用于动画的选择器以及用于表单的表单控件选择器。
+
+如果这个总结看起来压力很大，只需阅读该列表并意识到选择器可以让你选择任何你需要的元素。然后，确保你理解了图中的示例。以后，当你需要为应用进行特定类型的选择时，可以回头参考此总结和图 8-4。
+
+为了说明这些选择器的用法，第一个示例展示了一个获取其父元素第一个子 `li` 元素的选择器。如果 HTML 包含多个列表，它将选择每个列表第一个 `li`。第二个示例展示了如何获取 HTML 表格中的 `tr`（行）元素。第三个示例展示了如何使用 `:eq` 选择器从元素数组获取特定元素。例如，如果 `div` 元素中有四个 `p` 元素，`:eq(2)` 将返回第三个 `p` 元素，因为索引值从 0 开始。
+
+最后一个示例展示了一个获取属性值为 "text" 的 `input` 元素的选择器。换句话说，这个选择器获取所有的文本框。但注意，你也可以通过使用以下选择器获取文本框：`$("input[type=text]")`。
+
+## 最常用的 jQuery 选择器总结
+
+| 选择器 | 选取范围 |
+| --- | --- |
+| `[attribute]` | 所有具有指定名称属性的元素。 |
+| `[attribute=value]` | 所有具有指定属性文本的元素。 |
+| `:contains(text)` | 所有包含指定文本的元素。 |
+| `:empty` | 所有不包含子元素（包括文本节点）的元素。 |
+| `:eq(n)` | 选取集合中索引为 n 的元素。 |
+| `:even` | 选取集合中索引为偶数的所有元素。 |
+| `:first` | 集合中的第一个元素。 |
+| `:first-child` | 所有作为其父元素第一个元素的元素。 |
+| `:gt(n)` | 选取集合中索引大于 n 的所有元素。 |
+| `:has(selector)` | 所有包含选择器指定元素的元素。 |
+| `:header` | 所有表头元素（h1, h2, ...）。 |
+| `:hidden` | 所有隐藏的元素。 |
+| `:last` | 选取集合中的最后一个元素。 |
+| `:last-child` | 所有作为其父元素最后一个子元素的元素。 |
+| `:lt(n)` | 选取集合中索引小于 n 的所有元素。 |
+| `:not(selector)` | 未被选择器选中的元素。 |
+| `:nth-child(n)` | 所有作为其父元素第 n 个子元素的元素。 |
+| `:odd` | 选取集合中索引为奇数的所有元素。 |
+| `:only-child` | 所有作为父元素唯一子元素的元素（包括文本节点）。 |
+| `:parent` | 所有作为其他元素的父元素。 |
+| `:text` | 所有 type 属性为 "text" 的输入元素。 |
+| `:visible` | 所有可见的元素。 |
+
+## 示例
+
+- 如何选择作为其父元素第一个元素的 li 元素：`$("li:first-child")`
+- 如何选择表格中的偶数行元素：`$("table > tr:even")` // 计数从 0 开始，所以第一个标签是偶数
+- 如何选择某个元素中的第三个后代 `<p>` 元素：`$("#faqs p:eq(2)")` // 计数从 0 开始
+- 如何选择所有 type 属性为“text”的输入元素：`$(":text")`
+
+## 描述
+
+- 图 8-4 和上面的表格总结了你最可能使用的选择器。
+- 未包含六种通过包含特定子字符串的属性值的选择器。
+- 在第 9 章中，你将学习一种用于动画的选择器，在第 10 章中，你将学习其他用于表单控件的选择器。
+
+## 最常用的方法
+
+图 8-10 中的表格代表了从多个 jQuery 类别提取的方法。例如，`prev()`、`next()` 和 `find()` 方法是 DOM 遍历方法。`attr()`、`css()`、`addClass()`、`removeClass()`、`toggleClass()` 和 `html()` 方法是 DOM 操作方法。`hide()` 和 `show()` 方法是效果方法。而 `each()` 方法是一个杂项方法。
+
+这些是最常用的 jQuery 方法，它们让你快速上手。之后，在阅读本节其余章节时，你将丰富你的技能库。
+
+在这里，如果这个表格看起来很令人生畏，只需阅读这些方法看看有哪些可用工具即可。当你在应用程序需要某个特定方法时，可以查阅此总结。
+
+在第一个示例中，使用 `attr()` 方法获取 id 为 "image" 的元素的 src 属性。第二个示例使用 `attr()` 方法为选中的元素添加 src 属性，其值存储在变量 `imageSource` 中。如果元素已经有了 src 属性，该方法将更改其值。第三个示例使用 `css()` 方法将选定元素的颜色属性改为蓝色。
+
+在第四个示例中，使用 `addClass()` 方法为 id 为 "faqs" 的元素内部的所有 h2 元素添加类。这和你使用 JavaScript 执行的操作类似。
+
+在第五个示例中，`html()` 方法向 aside 元素添加一个 h2 元素。这个 jQuery 方法的作用类似于你在第 6 章中学会的如何使用的 `innerHTML` 属性。
+
+在最后一个示例中，使用 `each()` 方法对数组中的每个元素执行函数。在这种情况下，数组包含了 id 为 "image_list" 的元素中所有的 `<a>` 元素，`each()` 方法会遍历这些元素。正如你所看到的，这简化了数组中元素的处理。
+
+在大多数情况下，jQuery 方法作用于所有选中的元素。然而，也存在一些例外。例如，如果你使用 `attr()` 方法获取属性值，它只会获取第一个选定元素的值。同样，`css()` 方法只会获取第一个选定元素的属性值。
+
+## 最常用的 jQuery 方法总结
+
+| 方法 | 描述 |
+| --- | --- |
+| `next([selector])` | 获取每个选中元素的下一个兄弟元素，或者如果编码了参数，获取指定类型的第一个兄弟元素。 |
+| `prev([selector])` | 获取每个选中元素的上一个兄弟元素，或者如果编码了参数，获取指定类型的上一个兄弟元素。 |
+| `find(selector)` | 搜索选取元素并返回后代元素。 |
+| `attr(attributeName)` | 从第一个元素获取指定属性的值。 |
+| `attr(attributeName, value)` | 为每个选中元素设置指定属性的值。 |
+| `css(propertyName)` | 仅获取第一个选定元素的属性值。 |
+| `css(propertyName, value)` | 为每个选中元素设置属性值。 |
+| `addClass(className)` | 为所有选中的元素添加类。 |
+| `removeClass(className)` | 从所有选中的元素移除类。 |
+| `toggleClass(className)` | 为每个选中元素切换类。 |
+| `html(htmlString)` | 设置每个选定元素的 HTML。 |
+| `hide([duration])` | 在指定时间内隐藏元素。 |
+| `show([duration])` | 在指定时间内显示元素。 |
+| `each(function)` | 对数组中的每个元素运行函数。 |
+
+## 最常用的 jQuery 事件方法总结
+
+| 事件方法 | 描述 |
+| --- | --- |
+| `ready(handler)` | 当 DOM 准备就绪时执行处理器。 |
+| `click(handler)` | 当被选元素被点击时，执行处理器。 |
+| `dblclick(handler)` | 当被选元素被双击时，执行处理器。 |
+| `mouseenter(handler)` | 当鼠标指针进入被选元素时，执行处理器。 |
+| `mouseover(handler)` | 当鼠标指针移动到被选元素上方时，执行处理器。 |
+| `mouseout(handler)` | 当鼠标指针移出被选元素时，执行处理器。 |
+| `hover(handlerIn, handlerOut)` | 当鼠标指针进入元素时，执行第一个事件处理器；当指针移出时，执行第二个事件处理器。 |
+| `event.preventDefault()` | 停止默认事件的发生。 |
+
+## 所有文本框双击事件的处理器，用于清除点击的框
+
+```javascript
+$(":text").dblclick(function () {
+  $(this).val("");
+});
+```
+
+## 列表中每个 img 元素的悬停事件处理器
+
+```javascript
+$("#image_list img").hover(
+  function() {
+    alert("The mouse pointer has moved into an img element");
+  },
+  function() {
+    alert("The mouse pointer has moved out of an img element");
+  }
+); // hover
+```
+
+## 停止事件默认行为的 `preventDefault()` 方法
+
+- 上表列出了你最常用的事件。不包括：`keydown`, `keypress`, `keyup`, `mousedown`, `mouseup`, `mouseleave` 和 `mouse`。
+- `preventDefault()` 方法在事件发生时传递给函数的事件对象上执行。你可以为该对象任意命名。
+- 名为 `load()`, `unload()` 和 `error()` 的事件方法在 1.8 版本中已弃用，并在 3.0 版本中删除。你有时会在网络上的旧示例中看到它们，但不应尝试使用它们。
+
+## 你应该注意的其他事件方法
+
+对于大多数应用程序，你将使用已经介绍的事件方法。你还将作为事件方法的参数，为事件处理器编写函数。
+
+有时，你可能想通过其他方式附加事件处理器、移除事件处理器，或触发一个启动事件处理器的事件。这时，你可以使用下表中介绍的方法。
+
+`on()` 方法允许你将事件处理器附加到一个或多个事件上。在第一组示例中，它被用于将事件处理器附加到 id 为 "clear" 的元素的点击事件上。你也可以像这里这样使用 `click()` 事件方法来实现。这种方法是一种“快捷方法”，因为它在内部实际上使用了 `on()` 方法。在这种情况下，由于你附加的是单个事件处理器，既可以使用 `on()` 方法，也可以使用快捷方法。
+
+`on()` 方法的一个优势是，你可以用它将一个事件处理器附加到两个不同的事件上。第二组示例的第一条语句说明了这一点。在这里，两个事件——`click` 和 `mouseover`——包含在 `on()` 方法的第一个参数中。这意味着当被选元素上发生这两个事件中的任何一个时，事件处理器都会被触发。
+
+相反，如果你想将同一个事件处理器附加到两个不同元素的两个事件上，可以像这里这样引用快捷事件。注意，两种方法都引用同一个事件处理器，你通常会将处理器赋值给一个变量。然后，你可以使用变量名作为快捷方法的参数。在这个示例中，事件处理器被赋值给命名变量 `clearClick`。然后，使用 `click()` 方法将该处理器附加到 id 为 "clear" 的元素上，并使用 `dblclick()` 方法将该处理器附加到所有文本框。
+
+对于某些应用程序，你可能想在某个条件发生时移除事件处理器。为了做到这一点，你可以使用 `off()` 方法，如第三个示例所示。如果事件处理器被赋值给变量，你也可以在 `off()` 方法的处理器参数中命名该变量。
+
+或者，如果你想在事件处理器运行一次后移除它，可以使用 `one()` 方法。如第四个示例所示。
+
+如果你想通过你的 jQuery 代码启动事件，可以使用长形式或短形式的 `trigger()` 方法，如第五组示例所示。这两种方法都会触发 id 为 "clear" 的元素的点击事件，从而导致该事件的事件处理器运行。
+
+这为为两个不同的事件运行同一个事件处理器提供了另一种方法。你只需要从其中一个事件处理器中触发另一个事件处理器的事件即可。这如最后一个示例所示。在该图中，所有文本框双击事件的事件处理器触发了 id 为 "clear" 的元素的点击事件，从而启动了该事件处理器。
+
+## 你应该注意的其他事件方法
+
+| 事件方法 | 描述 |
+| --- | --- |
+| `on(events, handler)` | 将事件处理器附加到一个或多个事件上。 |
+| `off(events, [handler])` | 从一个或多个事件中移除事件处理器。 |
+| `one(event, handler)` | 附加事件处理器并在运行一次后移除它。 |
+| `trigger(event)` | 触发被选元素的事件。 |
+
+## 如何向事件附加事件处理器
+
+### 使用 `on()` 方法
+
+```javascript
+$("#element").on("click", function() { ... });
+```
+
+### 使用快捷方法
+
+```javascript
+$("#element").click(function() { ... });
+```
+
+## 如何向两个不同的事件附加事件处理器
+
+### 使用 `on()` 方法
+
+```javascript
+$("#element").on("click mouseover", function() { ... });
+```
+
+## 如何将同一个事件处理器附加到两个不同的元素
+
+### 使用快捷事件
+
+```javascript
+var clearClick = function() { ... };
+$("#clear").click(clearClick);
+$(":text").dblclick(clearClick);
+```
+
+## 如何在某个条件发生时移除事件处理器
+
+### 使用 `off()` 方法
+
+```javascript
+$("#element").off("click", clearClick);
+```
+
+## 如何在事件处理器运行一次后移除它
+
+### 使用 `one()` 方法
+
+```javascript
+$("#element").one("click", function() { ... });
+```
+
+## 如何通过你的 jQuery 代码启动事件
+
+### 使用 `trigger()` 方法
+
+```javascript
+$("#clear").trigger("click");
+// 或
+$("#clear").trigger("click");
+```
+
+
+
+$("#element").trigger("click");
+
+## 使用短形式
+
+```javascript
+$("#element").click();
+```
+
+## 如何从一个事件处理器触发另一个事件处理器的事件
+
+```javascript
+$("#element").on("click", function() {
+  $("#clear").trigger("click");
+});
+```
+
+## 第 8 章 使用 jQuery 快速入门
+
+## 浏览器中的常见问题解答（FAQs）
+
+```javascript
+// JavaScript FAQs
+// 什么是 JavaScript?
+// 什么是 jQuery?
+// 为什么 jQuery 变得如此流行？
+// 有三个原因：
+// * 它是免费的。
+// * 它能让你在更短的时间内完成更多工作。
+// * 它所有的函数都支持跨浏览器兼容。
+```
+
+## HTML
+
+```html
+<main id="faqs">
+  <h1>JavaScript FAQs</h1>
+  <h2><a href="#">What is jQuery?</a></h2>
+  <div>
+    <p>jquery is a library of the JavaScript functions that you're most likely to use as you develop websites.</p>
+  </div>
+  <h2><a href="#">Why is jQuery becoming so popular?</a></h2>
+  <div>
+    <p>Three reasons:</p>
+    <ul>
+      <li>It's free.</li>
+      <li>It lets you get more done in less time.</li>
+      <li>All of its functions are cross-browser compatible.</li>
+    </ul>
+  </div>
+</main>
+```
+
+## 关键 CSS
+
+```css
+h2 { background: url(images/minus.png) no-repeat left center; }
+h2.minus { background: url(images/minus.png) no-repeat left center; }
+div { display: none; }
+```
+
+## jQuery
+
+```javascript
+$(document).ready(function( evt ) {
+  $("#faqs h2").click(function() {
+    $(this).toggleClass("class","minus");
+    if ($(this).attr("class") != "minus") {
+      $(this).next().hide();
+    } else {
+      $(this).next().show();
+    }
+    evt.preventDefault(); // cancel default action
+  }); // end click
+  $("#faqs").find("a:first").focus(); // set focus on first <a>> tag
+}); // end ready
+```
+
+图 8-13 使用 jQuery 实现的 FAQs 应用。
+
+## jQuery 中的图片切换（Image Swap）应用程序
+
+图 8-14 展示了另一个展示 jQuery 力量的应用程序。这是你在第 7 章中学习过的图片切换应用程序。在这个应用程序中，用户点击浏览器窗口顶部的一个缩略图，缩略图下方的说明和图像就会随之改变。
+
+在此处显示的 HTML 中，使用 `<img>` 元素来显示四个缩略图。然而，这些元素被编码在 `<a>` 元素内部，因此图像是可以点击的并且接收焦点。在 `<a>` 元素中，`href` 属性标识点击链接时要切换的图像，而 `title` 属性提供了相关说明的文本。在这种情况下，`<a>` 元素和 `<img>` 元素都编码在一个 `<ul>` 元素中。
+
+在 `<ul>` 元素之后，你可以看到用于说明的 `<h2>` 元素和用于页面主图的 `<img>` 元素。这些元素的 id 被突出显示了，因为 jQuery 在切换说明和图像时会使用这些 id。
+
+对于肢体障碍者，此 HTML 通过将用于缩略图的 `<img>` 元素编码在 `<a>` 元素中，提供了可访问性。这样，用户可以通过按 Tab 键访问缩略图链接，并在缩略图获得焦点时按 Enter 键来切换图像，从而触发点击事件。
+
+该页面 CSS 中值得注意的是针对 `<li>` 元素的规则。它们的显示属性（`display`）被设置为 `inline`，这样图像就会从左到右排列，而不是从上到下。
+
+## 图片切换应用程序的用户界面
+
+![](img/32b24cb9657418b8429a4117bd539786_272_0.png)
+
+## HTML
+
+```html
+<main>
+  <h1>Fishing Images</h1>
+  <p>点击图片以放大。</p>
+  <ul id="image_list">
+    <li><a href="images/release.jpg" title="Catch and Release"><img src="thumbnails/release.jpg" alt=""></a></li>
+    <li><a href="images/deer.jpg" title="Deer at Play"><img src="thumbnails/deer.jpg" alt=""></a></li>
+    <li><a href="images/hero.jpg" title="The Big One!"><img src="thumbnails/hero.jpg" alt=""></a></li>
+    <li><a href="images/bison.jpg" title="Grazing Bison"><img src="thumbnails/bison.jpg" alt=""></a></li>
+  </ul>
+  <h2 id="caption">Catch and Release</h2>
+  <p><img id="main_image" src="images/release.jpg" alt=""></p>
+</main>
+```
+
+## 用于 li 元素的 CSS
+
+```css
+li {
+  display: inline;
+}
+```
+
+## 图片切换应用程序的 JavaScript 和 jQuery 代码
+
+图 8-15 展示了此应用程序的 JavaScript 和 jQuery 代码。在 `ready` 事件处理器中，使用 `each()` 方法为无序列表中的每个 `<a>` 元素运行函数。此函数预加载了将要切换的图像，以便在用户开始使用应用程序时它们已在浏览器缓存中。如果应用程序使用大量图像，这可以使应用程序运行更快。
+
+在 `<a>` 元素的函数内部，第一步是预加载图像：
+
+```javascript
+$(document).ready(function() {
+  // 预加载图像
+  $("#image_list a").each(function() {
+    var swappedImage = new Image();
+    swappedImage.src = $(this).attr("href");
+  });
+
+  // 设置事件处理器
+  $("#image_list a").click(function(evt) {
+    // 切换图像
+    var imageURL = $(this).attr("href");
+    $("#main_image").attr("src", imageURL);
+
+    // 切换说明
+    var caption = $(this).attr("title");
+    $("#caption").text(caption);
+
+    // 取消链接的默认操作
+    evt.preventDefault();
+  });
+
+  // 将焦点移动到第一个缩略图
+  $("#image_list li:first-child a").focus();
+});
+```
+
+## jQuery 中的图片滚停应用
+
+图 8-16 展示了另一个展示 jQuery 威力的应用程序。它是第 7 章练习中的滚停应用。在此应用程序中，当用户将鼠标指针移动到滚停应用中的其中一个初始图像上，该图像会被另一个图像替换。当用户将鼠标指针移出图像时，则显示原始图像。
+
+在此处显示的 HTML 中，`img` 元素被编码在无序列表的 `li` 元素中。在这些 `img` 元素中，`src` 属性标识应用程序加载到浏览器时显示的图像，而 `id` 属性标识当鼠标悬停在 `img` 上时应该显示的图像。
+
+在此处显示的 JavaScript 中，使用 `each()` 方法对 id 为 "image-rollovers" 的 `ul` 元素内的每个 `img` 元素执行函数：
+
+```javascript
+$("#image_rollovers img").each(...)
+```
+
+`each()` 方法函数首先使用 `this` 关键字和 `attr()` 方法来获取当前图像的 `src` 和 `id` 属性值，并将它们存储在名为 `oldURL` 和 `newURL` 的变量中。记住，这些属性保存了定位初始图像及其滚停图像的值。然后，这些变量可以用于预加载滚停图像，并为每个图像设置事件处理程序。
+
+注意，`each()` 方法将函数应用于所有 id 为 "image-rollovers" 的元素中的所有 `img` 元素。这意味着你可以向该元素添加更多图像，只要这些 `img` 元素具有指向原始图像的 `src` 属性和指向新图像的 `id` 属性，它们在不添加任何 jQuery 或 JavaScript 代码的情况下就能作为滚停工作。
+
+接下来的两个语句通过创建一个新的 `Image` 对象并将 `newURL` 变量的值赋值给其 `src` 属性来预加载滚停图像。一旦 `src` 属性被设置，浏览器就会加载该图像。虽然预加载不是必不可少的，但它可以提高用户体验，因为用户不需要等待滚停图像加载。
+
+接下来，使用 `hover()` 事件方法为当前图像（`this`）设置事件处理程序。记住，该方法有两个事件处理程序作为其参数。第一个事件处理程序在鼠标指针移入元素时运行，第二个事件处理程序在鼠标指针移出元素时运行。
+
+在第一个事件处理程序的函数中，你可以看到使用 `this` 关键字和 `attr()` 方法将图像的 `src` 属性设置为 `newURL` 变量的值。这会导致滚停图像显示。第二个事件处理程序的函数反转这一过程，将图像的 `src` 属性恢复为 `oldURL` 变量的值。
+
+当然，编写此类应用程序有多种编码方法。例如，你可以使用 `mouseover` 和 `mouseout` 事件来实现此应用程序，类似于第 7 章练习的工作方式。那么，你编写 `mouseover` 事件的代码就像 `hover()` 事件方法的第一个函数，而编写 `mouseout` 事件的代码就像 `hover()` 事件方法的第二个函数。
+
+## 第二张图像已滚停的两张图像
+
+## 钓鱼图片
+
+将鼠标移动到图像上以更改它，移出图像以恢复原始图像。
+
+![](img/32b24cb9657418b8429a4117bd539786_276_0.png)
+
+## HTML
+
+```html
+<main>
+  <h1>钓鱼图片</h1>
+  <p>将鼠标移动到图像上以更改它，移出图像以恢复原始图像。</p>
+  <ul id="image_rollovers">
+    <li><img src="images/release.jpg" alt="" id="images/deer.jpg"></li>
+    <li><img src="images/herc.jpg" alt="" id="images/bison.jpg"></li>
+  </ul>
+</main>
+```
+
+## JavaScript
+
+```javascript
+$(document).ready(function () {
+  $("#image_rollovers img").each(function () {
+    var oldURL = $(this).attr("src"); // 获取 src 属性
+    var newURL = $(this).attr("id"); // 获取 id 属性
+
+    // 预加载图像
+    var rolloverImage = new Image();
+    rolloverImage.src = newURL;
+
+    // 设置事件处理程序
+    $(this).hover(
+      function () {
+        $(this).attr("src", newURL); // 设置 src 属性
+      },
+      function () {
+        $(this).attr("src", oldURL); // 设置 src 属性
+      }
+    ); // 结束 hover
+  }); // 结束 each
+}); // 结束 ready
+```
+
+图 8-16 jQuery 中的图片滚停应用
+
+## 透视
+
+为了快速上手，本章介绍了最实用的 jQuery 选择器、方法和事件方法的运行子集。这应该让你对使用 jQuery 时需要处理的内容有一个大致的了解。当你阅读本书的其他章节时，你将增加这些选择器和方法。
+
+当然，诀窍在于能够对你尝试开发的应用程序应用正确的选择器、方法和事件方法。要精通这一点，回顾许多不同类型的 jQuery 应用程序是有帮助的。这就是为什么本章介绍了四个应用程序，这也是为什么你在完成本书之前会看到很多示例。
+
+## 术语
+
+- `jQuery getter` 方法
+- `CDN`（内容分发网络）`setter` 方法
+- 子资源完整性 (`SRI`) 检查对象链式
+- 选择器事件方法
+- 方法简写器方法
+
+## 总结
+
+- jQuery 是一个让编程变得简单的 JavaScript 库。
+- 要使用 jQuery，请包含来自内容分发网络 (`CDN`) 的文件。
+- 为了确保第三方资源被篡改，使用子资源完整性 (`SRI`) 检查。
+- 要使用选择器，请使用 CSS 选择器。
+- 要使用方法，请使用由选择器返回的对象。
+- 要设置事件处理程序，请使用在事件发生时运行的事件方法。
+- 但某些方法如 `hover()` 方法接受两个参数。
+
+## 练习 8-1 为列表应用程序添加一个清除按钮
+
+在此练习中，你将为图 8-7 和 8-8 的列表应用程序添加一个清除按钮。这将让你练习创建和附加另一个事件处理程序。
+
+1. 使用文本编辑器或 IDE 打开此文件夹中的 `index.html` 和 `email_list.js` 文件：
+   `javascript_jquery\exercises\ch08\email_list\`
+
+2. 运行应用程序回顾工作。注意下方添加了一个清除按钮，但它不起作用。
+
+3. 为清除按钮的点击事件添加事件处理程序，通过将其为空字符串来清除所有文本框。这可以通过语句完成。要选择文本框，请使用图 8-9 中的选择器。要将值设置为空，请使用图 8-5 中第二个示例的 `val()` 方法。现在，测试此更改。
+
+4. 此事件处理程序应该在文本框右侧显示的 `span` 元素中恢复星号，以显示需要填写项。这要求一个语句使用 `next()` 和 `text()` 方法。
+
+5. 向此事件处理程序添加一个语句，将焦点移动到第一个文本框。然后，测试此更改。
+
+6. 为此应用程序的任何文本框的双击事件添加另一个事件处理程序。该事件处理程序的操作与清除按钮的点击事件处理程序相同。最简单的方法是使用双击事件触发清除按钮的点击事件，如图 8-12 中的最后一个示例所示。测试此更改。
+
+7. 注释掉你刚刚用于触发清除按钮点击事件的代码行。然后，为双击事件处理程序添加一个语句，仅清除用户双击的文本框中的文本。要这样做，你将需要使用 `this` 关键字，如图 8-11 中的第一个示例所示。再次测试应用程序以确保工作正常。
+
+## 练习 8-2 为图片滚停应用使用不同的事件方法
+
+此练习要求你修改图 8-16 的图片滚停应用，使其为事件处理程序使用不同的事件。
+
+1. 使用文本编辑器或 IDE 打开此文件夹中的 HTML 和 JavaScript 文件：
+   `javascript_jquery\exercises\ch08\rollover\`
+
+2. 运行应用程序回顾工作方式。
+
+3. 在 JavaScript 中注释掉 `hover()` 方法，重写代码以便使用 `mouseover()` 和 `mouseout()` 方法来实现此应用程序。
+
+4. 添加两张图片，当现有的图片悬停在 id 为 `image_rollovers` 的 `ul` 元素上时显示这两张图片。确保 `img` 元素的 `src` 属性包含用于悬停的原始图像，并且 `id` 属性包含鼠标悬停在图像上时应该显示的图像。
+
+## 练习 8-3 开发一个书籍列表应用程序
+
+在本次练习中，你将从以下用户界面的 HTML 和 CSS 开始。然后，你将编写使其运行的 jQuery 代码。
+
+Murach 产品
+面向开源 Web 开发者的书籍
+- Murach's HTML5 and CSS3 (第3版)
+- Murach's JavaScript and jQuery
+- Murach's JavaScript (第2版)
+- Murach's jQuery (第2版)
+- Murach's PHP and MySQL (第2版)
+面向 Java 程序员的书籍
+面向 .NET 开发者的书籍
+面向数据库程序员的书籍
+
+![](img/32b24cb9657418b8429a4117bd539786_279_0.png)
+
+## 开发指南
+
+1. 你可以在此文件夹中找到此应用程序的 HTML、CSS 和图像文件：`javascript_jquery\exercises\ch08\book_list`。你还会找到一个名为 `book_list.js` 的空 JavaScript 文件。你可以将你的代码添加到此文件中。
+
+2. 此应用程序的运行方式与你在本章看到的 FAQ 类似，不同在于每个标题下方都会显示一个书籍链接列表。如果用户点击这些链接之一，将在列表右侧显示该书籍的图像。此外，每当用户点击带有加号或减号的标题时，图像均应不再显示。
+
+3. 此应用程序链接的 HTML 与图像切换应用程序的 HTML 类似。然而，此应用程序的链接不需要 `title` 属性，因为图像没有显示说明。
+
+4. `main` 元素中链接的 `href` 属性引用了图像。要实现这一点，你可以遍历 `main` 元素中的所有链接，并务必取消链接的默认行为。
+
+5. 随时从你可以使用的任何应用程序中复制和粘贴代码。这是构建新应用程序最有效的方法。
+
+# 第 9 章 如何使用效果和动画
+
+现在你已经了解了 jQuery 的基本知识，本章介绍了效果和动画的方法。许多开发者最喜欢这些 jQuery 方法，因为效果和动画开发起来很有趣，并且可以为页面增加趣味。然而，在学习这些方法时，请记住网站的主要目标是易用性，因此确保你的效果和动画不会损害这一目标。
+
+同时请记住，在看到这些方法运行之前，可能很难理解其中一些方法是如何工作的。为了帮助你，我们将本章的大多数示例包含在本章的下载资源中。因此，你可能需要在学习本章的过程中运行这些示例以查看它们是如何工作的。
+
+## 如何使用效果
+
+本章首先介绍了 jQuery 提供的基本效果方法。在学习如何使用它们之后，你将学习如何使用 jQuery 文档所说的自定义效果。在实践中，网页上的任何运动幻象都可以被称为动画，因此你可以将本章中的所有示例视为动画。
+
+## jQuery 效果方法
+
+图 9-1 总结了 jQuery 效果方法。这些包含了第 8 章介绍的 `show()` 和 `hide()` 方法。
+
+对于除 `fadeTo()` 方法外的所有方法，主要参数是持续时间（`duration`），决定了效果持续多久。例如，如果 `fadeOut()` 方法的持续参数为 5000，则选定的元素将在 5 秒（5000 毫秒）内淡出。如果省略持续参数，效果将立即发生，因此没有动画。
+
+相比之下，`fadeTo()` 方法不仅需要持续参数，还需要透明度（`opacity`）参数。透明度参数是 0 到 1 之间的值，0 表示透明，1 表示完全不透明。如果省略持续参数，效果将立即发生，因此没有动画。
+
+## 带有 jQuery 效果的 FAQs 应用
+
+还记得上章节中的 FAQs 应用吗？该应用程序使用了不带时长参数的 `show()` 和 `hide()` 方法来隐藏 h2 元素中的问题答案。现在，图 9-2 显示了为该应用动画的两种方法。
+
+第一个示例使用了与你在第 8 章中看到的相似的代码。在这里，当用户点击 h2 元素时，点击事件的函数使用 `toggleClass()` 方法来添加或移除名为 "minus" 的类。然后，根据 h2 元素是否包含 "minus" 类，显示或隐藏紧随 h2 元素的 div 元素。在这种情况下，`show()` 和 `hide()` 方法被带有时长参数的 `slideDown()` 和 `fadeOut()` 方法所取代，以便为应用程序添加动画。
+
+第二个示例展示了实现相同结果另一种方法。与第一个示例一样，点击事件函数首先使用 `toggleClass()` 方法来添加或移除名为 "minus" 的类。然后，使用 `slideToggle` 方法在每次点击时切换 `slideUp()` 和 `slideDown()` 方法。它的工作原理与第一个示例相同，只是使用 `slideUp()` 方法代替了 `fadeOut()` 方法。此外，它所需的代码行更少。
+
+## 作为标题文本显示的 FAQs
+
+| jQuery FAQs |
+| :--- |
+| 什么是 jQuery? |
+| 为什么 jQuery 变得如此流行？ |
+| 三个原因：- 它是免费的。- 它让你用更短的时间完成任务 |
+| jQuery 或 JavaScript 哪个更难学？ |
+
+## HTML 版 FAQs
+
+```html
+<main id="faqs">
+  <h1>jQuery FAQs</h1>
+  <h2><a href="#">什么是 jQuery?</a></h2>
+  <div>
+    <!-- div content -- -->
+  </div>
+  <h2><a href="#">为什么 jQuery 变得如此流行？</a></h2>
+  <div>
+    <!-- div content -- -->
+  </div>
+  <h2><a href="#">jQuery 或 JavaScript 哪个更难学？</a></h2>
+  <div>
+    <!-- div content -- -->
+  </div>
+</main>
+```
+
+## 使用 slideDown() 和 fadeOut() 方法的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#faqs h2").click(
+    function() {
+      $(this).toggleClass("minus");
+      if ($(this).attr("class") != "minus") {
+        $(this).next().fadeOut(1000);
+      } else {
+        $(this).next().slideDown(1000);
+      }
+    }
+    // end click
+  );
+  // end ready
+});
+```
+
+## 使用 slideToggle 方法的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#faqs h2").click(
+    function() {
+      $(this).toggleClass("minus");
+      $(this).next().slideToggle(1000);
+    }
+    );
+    // end click
+  );
+  // end ready
+});
+```
+
+图 9-2 带有 jQuery 效果的 FAQs 应用
+
+## 带有效果的幻灯片应用
+
+为了让你更好地了解如何使用效果，你现在将回顾编写幻灯片应用的两种不同代码方式。
+
+### 用户界面、HTML 和 CSS
+
+在图 9-3 中，屏幕截图显示了幻灯片中的第三张幻灯片正在淡入。在 HTML 的 div 元素中，你可以看到五个 img 元素为幻灯片提供了幻灯片内容，每个元素都有一个 `alt` 属性，提供显示在幻灯片上方的说明。
+
+在 HTML 中，注意使用 h2 元素用于说明，使用 img 元素用于幻灯片，随后的 div 元素分别为 "caption"、"slide" 和 "slides"，其中 "caption" 和 "slide" 元素包含了幻灯片的 img 元素。这些元素的 `id` 属性包含了系列中第一张幻灯片的说明和幻灯片。
+
+在显示此应用的 CSS 中，你可以看到图像的高度设置为 250 像素。在实践中，幻灯片的所有图像通常大小相同，但为所有图片设置高度可以确保即使宽度不同，高度也会保持一致。
+
+注意，CSS 将名为 "slides" 的 div 元素中所有 img 元素的 `display` 属性设置为 "none"。这意味着即使这些 img 元素已经预加载，它们也不会在浏览器中显示。相反，它们通过 jQuery 移动到 "slide" img 元素中。
+
+## 带有淡出和淡入效果的幻灯片应用
+
+![](img/32b24cb9657418b8429a4117bd539786_286_0.png)
+
+### 幻灯片的 HTML
+
+```html
+<main>
+  <h1>钓鱼幻灯片</h1>
+  <h2 id="caption">在上金斯河垂钓</h2>
+  <img id="slide" src="images/casting1.jpg" alt="">
+  <div id="slides">
+    <img src="images/casting1.jpg" alt="在上金斯河垂钓">
+    <img src="images/casting2.jpg" alt="在下金河垂钓">
+    <img src="images/catchrelease.jpg" alt="在大角角处捕获并放流">
+    <img src="images/fish.jpg" alt="在南叉河垂钓">
+    <img src="images/lures.jpg" alt="鱼饵">
+  </div>
+</main>
+```
+
+### 幻灯片的 CSS
+
+```css
+img {
+  height: 250px;
+}
+#slides img {
+  display: none;
+}
+```
+
+### 幻灯片的 JavaScript
+
+这展示了该应用程序的两种编写方式，你将在后续章节中看到更多。当你开发时
+
+## 编写 jQuery 的一种方式
+
+```javascript
+$(document).ready(function() {
+  // 创建一个幻灯图片的数组
+  var image, imageCounter = 0, imageCache = [];
+  $("#slides img").each(function() {
+    image = new Image();
+    image.src = $(this).attr("src");
+    image.title = $(this).attr("alt");
+    imageCache[imageCounter] = image;
+    imageCounter++;
+  });
+
+  // 幻灯片
+  imageCounter = 0;
+  var nextInterval;
+  setInterval(function() {
+    $("#caption").fadeOut(1000);
+    $("#slide").fadeOut(1000);
+    function() {
+      imageCounter = (imageCounter + 1) % imageCache.length;
+      nextImage = imageCache[imageCounter];
+      $("#slide").attr("src", nextImage.src).fadeIn(1000);
+      $("#caption").text(nextImage.title).fadeIn(1000);
+    }
+  }, 3000);
+}); // end ready
+```
+
+## 编写 jQuery 的另一种方式
+
+```javascript
+$(document).ready(function() {
+  var nextSlide = $("#slides img:first-child");
+  var nextCaption;
+  var nextSlideSource;
+
+  // 幻灯片
+  setInterval(function() {
+    $("#caption").fadeOut(1000);
+    $("#slide").fadeOut(1000);
+    function () {
+      if (nextSlide.next().length == 0) {
+        nextSlide = $("#slides img:first-child");
+      } else {
+        nextSlide = nextSlide.next();
+      }
+      nextSlideSource = nextSlide.attr("src");
+      nextCaption = nextSlide.attr("alt");
+      $("#slide").attr("src", nextSlideSource).fadeIn(1000);
+      $("#caption").text(nextCaption).fadeIn(1000);
+    }
+  }, 3000);
+}); // end ready
+```
+
+图 9-4 为幻灯片编写 jQuery 的两种方式
+
+在应用程序中，目标之一是编写易于阅读、维护和在其他网页中重用的代码。另一个目标是编写高效的代码。根据这些目标判断，图 9-4 中的第二个示例更好，因为它的代码相对直观，而且不需要 `Image` 对象的数组。
+
+然而，无论你如何编写此应用程序，你都会注意到当运行它时，标题和幻灯片几乎同时淡出（fade out），而不是一个接一个地进行。这是因为两个不同元素的效果一旦启动就会运行。在这种情况下，这意味着一个效果在另一个效果启动几毫秒后启动，因此标题的淡出和淡入运行的时间与幻灯片的淡出和淡入运行的时间几乎重合。
+
+## 如何停止和启动幻灯片
+
+为了提高幻灯片的可用性，你通常会为用户提供某种停止和重启显示的方法。图 9-5 展示了其中一种方法。当用户点击当前幻灯片时，它会停止，当用户再次点击时，它会重启。
+
+首先，这段代码设置了一个运行幻灯片的表达式，并将其存储在名为 `runSlideShow` 的变量中。如果你查看该函数的代码，你会发现它与上一个图中第二个示例的代码是相同的。
+
+其次，后面是一个语句，它创建了一个定时器变量，每 3 秒调用一次 `runSlideShow()` 函数。请注意，这必须编写在 `runSlideShow()` 之后。如果此函数编写在另一个函数之前，JavaScript 引擎将运行错误。
+
+第三，最后一个事件处理器处理点击事件，以便在交替点击当前幻灯片时取消和恢复定时器。当幻灯片被点击且定时器不为 `null` 时，函数使用 `clearInterval()` 方法取消定时器，从而停止幻灯片。否则，将创建定时器以重启显示。
+
+你还会注意到，幻灯片是在完整图像上停止的，而不是正在淡出或淡入的图像上。这是因为幻灯片的定时器在当前间隔结束之前不会被取消。此外，幻灯片会按顺序从下一个图片重启。这是因为即使定时器已取消，`nextSlide`、`nextCaption` 和 `nextSource` 变量的值仍被保留。
+
+当然，还有许多其他方法可以停止和重启幻灯片。例如，你可以提供一个停止/启动按钮，其工作方式与点击幻灯片相同。你还可以添加“上”和“下一个”按钮，让用户在幻灯片停止时手动从一张幻灯片移动到下一张。现在你已经了解了运行、停止和启动幻灯片的基本代码，你应该能够自己添加这些增强功能。
+
+## 用于停止和重启幻灯片的 jQuery
+
+```javascript
+$(document).ready(function() {
+  var nextSlide = $("#slides img:first-child");
+  var nextCaption;
+  var nextSlideSource;
+
+  // 运行幻灯片的函数
+  var runSlideShow = function() {
+    $("#caption").fadeOut(1000);
+    $("#slide").fadeOut(1000);
+    function () {
+      if (nextSlide.next().length == 0) {
+        nextSlide = $("#slides img:first-child");
+      } else {
+        nextSlide = nextSlide.next();
+      }
+      nextSlideSource = nextSlide.attr("src");
+      nextCaption = nextSlide.attr("alt");
+      $("#slide").attr("src", nextSlideSource).fadeIn(1000);
+      $("#caption").text(nextCaption).fadeIn(1000);
+    } // end callback
+  };
+
+  // 启动幻灯片
+  var timer1 = setInterval(runSlideShow, 3000);
+
+  // 启动和停止幻灯片
+  $("#slide").click(function() {
+    if (timer1 != null) {
+      clearInterval(timer1);
+    } else {
+      timer1 = setInterval(runSlideShow, 3000);
+    }
+  });
+}); // end ready
+```
+
+## 说明
+
+- 通过这段代码，用户可以通过点击停止幻灯片，通过再次点击重启。
+- 所以幻灯片的代码不需要重复，它存储在变量 `runSlideShow` 中。
+- 因为这是一个函数表达式，它必须位于 `setInterval` 方法之前。
+
+## 如何使用动画
+
+现在你已经了解了基本效果，我们将学习如何使用自定义效果。我们将这些自定义效果称为动画。
+
+## animate 方法的基本语法
+
+图 9-6 展示了 `animate()` 方法的基本语法。在这里，第一个参数是一个属性映射。该映射由键/值对组成。例如，第一个示例将 `fontSize` 属性设置为 275%，`opacity` 属性设置为 1，`left` 属性设置为 0。然后，第二个参数是动画的持续时间，在第一个示例中为 2 秒。
+
+当 `animate()` 方法执行时，它通过将属性更改为映射中的值来修改所选元素或元素。如果你正在查看动画标题的 CSS，你可以看到它初始的 `fontSize` 为浏览器默认大小的 75%，`opacity` 为 .2（淡出状态），且 `left` 位置为 -175 像素，即比其正常位置靠左 175 像素。当第一个示例中的 `animate()` 方法运行时，标题的字体大小增加到 275%，不透明度增加到 1，`left` 位置变为 0，即回到其正常位置。由于这是在 2 秒内完成的，因此结果是一个有趣的动画，标题向右移动并增大尺寸和不透明度。
+
+第二个示例与第一个类似，但它包含一个回调函数。在这里，回调函数选择页面上所有的 `h2` 标题，然后使用 `next()`、`fadeIn()` 和 `fadeOut()` 方法对 `h2` 标题后的 `div` 元素进行淡入淡出处理。属性映射的区别在于 `left` 属性设置为 "+=175"，这会让标题向右移动 175 像素。
+
+顺便提到，为了让其正常工作，标题的 `position` 属性必须设置为 `relative`。这意味着 `left` 和 `top` 属性的设置是相对于处于正常流中的元素的。该位置的 `left` 和 `top` 属性均为 0。
+
+## animate({properties}, duration[, callback]) 方法的基本语法
+
+```javascript
+animate({properties}, duration[, callback])
+```
+
+## 一个正在移动到“faqs”区域的动画标题
+
+![](img/32b24cb9657418b8429a4117bd539786_292_0.png)
+
+## h1 标题的 CSS
+
+```css
+#faqs h1 {
+  position: relative;
+  left: -175px;
+  font-size: 75%;
+  opacity: .2;
+}
+```
+
+## 不带回调函数的 h1 标题的 animate() 方法
+
+```javascript
+$('#faqs h1').animate({
+  fontSize: "275%", opacity: 1, left: 0 }, // 属性映射
+  2000
+}); // animate
+```
+
+## 带有回调函数的 h1 标题的 animate() 方法
+
+```javascript
+$('#faqs h1').animate({
+  fontSize: "275%", opacity: 1, left: "+=175px",
+  2000,
+  function() {
+    $('#faqs h2').next().fadeIn(1000).fadeOut(1000);
+  }
+}); // animate
+```
+
+## 说明
+
+- 当运行 `animate()` 方法时，所选元素的 CSS 属性将更改为作为方法第一个参数编码的 `properties` 映射中的属性。动画是根据 `duration` 参数进行分阶段过渡。
+- 在 `properties` 映射中指定属性名，可以使用驼峰命名法（camelCase）代替 CSS 连字符（如上），或者用引号括属性名。
+- 要指定非数值属性值，请将值包含在引号中。
+- 要指定数值属性值，直接编写该值即可。对于测量值，假设像素是数值。你也可以对数值使用 `+=` 和 `-=` 运算符，但这些表达式必须放在引号内。
+- 对于某些属性（如 `width`、`height` 和 `opacity`），可以使用 "show"、"hide" 或 "toggle" 作为属性值。这些将通过适当设置属性来显示、隐藏或切换元素。
+- 虽然 jQuery 不能正确处理颜色过渡，但 jQuery UI 可以。
+
+图 9-6 如何使用 `animate()` 方法的基本语法。
+
+## 如何链式调用 animate() 方法
+
+对于某些属性（如 `width`、`height` 和 `opacity`），可以使用 "show"、"hide" 或 "toggle" 作为属性值。例如，如果你为 `width` 或 `opacity` 值编码 "hide"，它将减小到零。如果你编码 "show"，`width` 将增加到其正常宽度，或 `opacity` 将增加到 1。如果你编码 "toggle"，值将在显示和隐藏值之间切换。
+
+要链式调用动画，你可以使用与链式调用效果或其他任何方法相同的技术。在第一个 `animate()` 方法之后编写一个点运算符（`.`），然后编写第二个 `animate()` 方法。
+
+图 9-7 中的第一个示例说明了这一点，它在标题的代码事件处理程序中链式了两个 `animate()` 方法。在这里，代码的缩进和对齐表示两个 `animate()` 方法是链式的。第一个方法增加字体大小和透明度，并将标题向右移动 275 像素。然后，第二个方法减小字体大小并将标题向左移动 275 像素，使其回到起点。
+
+当你为选定元素链式调用效果或动画时，它们会被放入该元素的队列中。然后，效果和动画将按顺序执行。这让你能够轻松创建有趣的动画。
+
+注意，单独编码的动画也会被放入队列中。此图中的第二个示例说明了这一点。在这里，第一个语句是应用于标题（`this`）的某个 `animate()` 方法。第二个语句是应用于同一个标题（`this`）的另一个 `animate()` 方法。然后，当用户点击标题时，这些动画被放入队列并连续运行，就像它们是链式的一样，因此结果与第一个示例中的链式方法相同。
+
+现在，如果快速连续点击标题两次或三次会发生什么？这些 `animate()` 方法被放入标题的队列中，这样它们将连续运行两次或三次。
+
+相比之下，第三个示例为第一个 `animate()` 方法使用回调函数来提供第二个 `animate()` 方法。这样，如果用户只点击一次标题，它的运行与其他两个示例一样。但如果用户连续点击两次，第二次点击会将第二个 `animate()` 方法排队，使其在第一个方法之后立即运行。但这可能意味着第二个 `animate()` 方法将在第一个 `animate()` 方法的回调完成之前开始。
+
+如你所看到的，队列概念对于某些应用非常重要，特别是你想停止队列中的方法运行时。记住，每个元素都有一个独立的队列。这就是为什么幻灯片应用程序中说明和幻灯片的淡入和淡出几乎是同时进行的。
+
+## 由其事件启动两个动画的标题
+
+![](img/32b24cb9657418b8429a4117bd539786_294_0.png)
+
+## 链式动画
+
+```javascript
+$('#faqs h1').click(function() {
+  $(this).animate(
+    { fontSize: "650%", opacity: 1, left: "+=275px" }, 2000)
+  .animate(
+    { fontSize: "275%", opacity: 1, left: "-=275px" }, 2000);
+});
+```
+
+## 队列动画
+
+```javascript
+$('#faqs h1').click(function() {
+  $(this).animate(
+    { fontSize: "650%", opacity: 1, left: "+=275px" }, 2000);
+  $(this).animate(
+    { fontSize: "275%", opacity: 1, left: "-=275px" }, 2000);
+});
+```
+
+## 在回调函数中包含第二个动画的动画
+
+```javascript
+$('#faqs h1').click(function() {
+  $(this).animate(
+    { fontSize: "650%", opacity: 1, left: "+=275px" }, 2000,
+    function() {
+      $(this).animate({ fontSize: "275%", opacity: 1, left: "-=275px" }, 2000);
+    }
+  );
+});
+```
+
+## 说明
+
+- 当运行 `animate()` 方法时，所选元素的 CSS 属性将更改为作为方法第一个参数编码的 `properties` 映射中的属性。动画是根据 `duration` 参数进行分阶段过渡。
+- 当你链式调用效果和动画时，它们会被放入该元素的队列中并按顺序执行。
+- 当为元素启动单独动画时，它们也会被放入队列中。
+- 当在 `animate()` 方法使用回调函数时，回调将在动画完成后运行。
+
+## 如何使用 delay()、stop() 和 finish() 方法
+
+图 9-8 显示了如何在效果和动画中使用 `delay()`、`stop()` 和 `finish()` 方法。第一个示例所示，`delay()` 方法延迟队列中下一个动画的开始。在这里，所选标题的 `fadeOut` 被延迟了 5 秒。
+
+相比之下， `stop()` 方法停止队列中的动画。第二个示例说明了这一点。在这里，动画是 HTML 中 `<a>` 元素的悬停事件。此动画在鼠标指针进入元素时将 `<a>` 元素向下移动 15 像素，当离开元素时，它返回起始位置。
+
+但如果用户连续多次在 `<a>` 元素上切换鼠标指针呢？正如你所学的，这将为每个 `<a>` 元素排队多个动画并连续运行。这将导致在使用鼠标后产生弹跳效果，而这不是你想要的。
+
+要修复这个问题，可以如图所示使用 `stop()` 方法。如摘要所示，该方法停止所选元素的当前动画。此外，当第一个参数设置为 `true` 时，在将另一个动画添加到队列之前，元素的队列将被停止并清空。结果是，示例元素的所有动画都将停止并清空队列。
+
+`stop()` 方法的第二个参数会导致当前动画立即完成。例如，假设在执行 `stop()` 方法时一个元素正在淡入。在这种情况下，元素将保持当前的透明度。如果这不是你想要的，你可以将第二个参数设置为 `true`，以便显示动画的最终结果。在 `fadeIn()` 方法的情况下，这意味着元素将以透明度 1 显示。
+
+`finish()` 方法类似于将两个参数都设置为 `true` 的 `stop()` 方法。区别在于，当你使用 `finish` 时，队列中所有动画（而不只是当前动画）的属性都会被立即设置为它们的结束值。
+
+## delay(), stop() 和 finish() 方法
+
+| 方法 | 说明 |
+|---|---|
+| `delay(duration)` | 延迟队列中下一个动画的开始时间。 |
+| `stop([clearQueue, jumpToEnd])` | 这两个参数都是布尔值，默认值为 false。如果设置为 true，第一个参数将清空队列，因此不再运行额外的动画。第二个参数将使当前动画立即完成。 |
+| `finish([queue])` | 停止所选元素的动画，清空队列，并完成所有元素的所有动画。 |
+
+## 网页加载时显示的标题 HTML
+
+```html
+<h1 id="startup_message">临时建设中！</h1>
+```
+
+## 在 5 秒后让标题淡出的 jQuery 代码
+
+```javascript
+$('#startup_message').delay(5000).fadeOut(1000);
+```
+
+## 仍在运行队列的缩略图
+
+![](img/32b24cb9657418b8429a4117bd539786_296_0.png)
+
+## 缩略图的 HTML
+
+```html
+<ul id="image_list">
+  <li><a href="images/h1.jpg" title="James Allison 1-1">
+    <img src="thumbnails/t1.jpg" alt="">
+  </a></li>
+  <!-- 更多包含缩略图的 li元素 -->
+  <li><a href="images/h6.jpg" title="James Allison: 1-6">
+    <img src="thumbnails/t6.jpg" alt="">
+  </a></li>
+</ul>
+```
+
+## `<a>` 元素的 CSS
+
+```css
+a { position: relative; }
+```
+
+## stop() 方法在开始新动画之前停止队列中的动画
+
+```javascript
+$("#image_list a").hover(
+  function(evt) { $(this).stop(true).animate({ top: 15 }, "fast"); },
+  function(evt) { $(this).stop(true).animate({ top: 0 }, "fast"); }
+); // 结束悬停
+```
+
+## 说明
+
+- 上述示例中的 `delay()` 方法可以作为使用一次性计时器的替代方案。
+- 第二个示例中的 `stop()` 方法会停止每个 `<a>` 元素的当前动画并清空队列。这将停止用户在缩略图上快速来回移动时产生的弹动效果。
+- `finish()` 方法与 `stop()` 方法类似，但它会使所有队列中动画的属性都跳转到它们的结束值。
+
+## 如何在效果和动画中使用缓动（easings）
+
+图 9-9 显示了如何在效果和动画中使用缓动。缓动决定了动画执行的方式。例如，动画可以缓慢开始，并随着进行逐渐加速。或者，动画可以在开始或结束时带有轻微的弹动。
+
+目前，jQuery 只提供两种缓动：线性（`linear`）和摆动（`swing`）。正如你可能猜到的，线性缓动以匀速移动动画，而摆动速度的变化方式更有趣。幸运的是，`swing` 是默认设置，所以你不需要更改它。
+
+如果你想使用其他缓动，可以使用图中的 jQuery easing 插件。要使用此插件，首先要为它编写一个 script 元素。在图中的示例中，script 元素从 Cloudflare CDN 获取 jQuery easing 插件。注意，该 script 元素必须在 jQuery 的 script 元素之后编写，因为该插件使用了 jQuery。
+
+然后，为了使用该插件提供的缓动之一，你只需为效果或动画编写缓动参数。该参数在每个语句中的位置见该图顶部的语法总结。
+
+要编写此参数，你自然需要知道想要使用的缓动名称。也许查找可用内容的最佳方法是访问该图底部指定的 URL。该页面不仅提供了关于使用插件的信息，还让你看到每种缓动的运行效果。这可以帮助你为每种类型的动画选择想要使用的缓动。
+
+## 使用效果和动画的语法
+
+除 `fadeTo()` 方法外，所有基础方法的语法均为
+
+`methodName([duration], easing[, callback])`
+
+`fadeTo()` 方法的语法
+
+`fadeTo(duration, opacity, easing[, callback])`
+
+基础 `animate()` 方法的语法
+
+`animate({properties}, duration, easing[, callback])`
+
+## 用于从 CDN 获取 jQuery easing 插件的 script 元素
+
+```html
+<!-- jquery easing 元素必须排在 jquery 元素之后 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+```
+
+## FAQs 应用使用的两种缓动
+
+```javascript
+$("#faqs h2").click(function() {
+  $(this).toggleClass("minus");
+  if ($(this).attr("class") == "minus") {
+    $(this).next().slideDown(1000, "easeOutBounce");
+  } else {
+    $(this).next().slideUp(1000, "easeInBounce");
+  }
+}); // 结束点击
+```
+
+## 用于动画标题的两种缓动
+
+```javascript
+$("#faqs h1").click(function() {
+  $(this).animate(
+    { fontSize: "650%", opacity: 1, left: "+=275px" }, 2000, "easeInExpo")
+  .animate(
+    { fontSize: "17%", opacity: 1, left: "0" }, 1000, "easeInBounce");
+});
+```
+
+## 说明
+
+- 缓动决定了动画执行的方式。jQuery 仅提供两种缓动：线性和摆动。摆动是默认的。
+- 如果你想使用其他缓动，可以使用 jQuery easing 插件。
+- 在使用该插件时，需要先编写一个 script 元素。
+- 注意，该 script 元素必须在 jQuery 的 script 元素之后编写。
+- 然后，为了使用该插件提供的缓动，只需为效果或动画编写缓动参数。
+- 要编写此参数，你需要知道想要使用的缓动名称。
+- 查找可用内容最佳方法是访问图底部指定的 URL。该页面不仅提供了关于使用插件的信息，还让你看到每种缓动的运行效果。这可以帮助你为每种类型的动画选择想要使用的缓动。
+
+## 带有动画的轮播图应用
+
+本章最后介绍了一种名为轮播图（Carousel application）的常见应用。它使用了一个简单的 `animate()` 方法，但使用该方法的设置过程非常复杂。
+
+## 用户界面、HTML 和 CSS
+
+图 9-11 展示了轮播图应用的用户界面、HTML 和 CSS。由于轮播图非常常见，你可能已经在多个网站上使用过。如果你点击右侧的按钮，书籍会向左滑动并显示另外三本书。如果你点击书籍左侧的按钮，书籍会滑动到之前的三本书。
+
+在 HTML 中，你可以看到整个轮播图的 `div` 内部编写了三个 `div` 元素。第一个 `div` 元素包含左按钮；第二个包含轮播图中使用的全部九本书；第三个包含右按钮。
+
+在第二个 `div` 中，你可以看到一个包含九个 `li` 的 `ul` 元素。在每个 `li` 元素中，每个书籍都有一个位于 `<a>` 标签内的 `<img>` 元素。这意味着用户点击书籍即可进入书籍页面。在这个示例中，所有 `href` 属性的值都编码为 "newpage.html"，但在实际应用中，这些值将指向书籍的实际页面。
+
+在该应用的关键 CSS 中，你可以看到中间 `div`（id 为 "display_panel"）的宽度被设置为 300 像素，这是三个 `li` 项目的宽度。此外，它的 `overflow` 属性被设置为 `hidden`，这意味着任何超出 300 像素的内容（其他书籍）都将被隐藏。
+
+接下来，`ul` 元素（id 为 "image_list"）的 CSS 将 `position` 属性设置为 `relative`，这意味着该元素 `top` 或 `left` 属性的任何设置都会生效。正如你在该应用的 jQuery 中看到的，轮播图中显示的书籍是由 `left` 属性的值决定的。该 CSS 还将宽度设置为 900 像素，并将 `list-style` 设置为 "none"，这移除了列表项的项目符号。该 `ul` 元素的 `left` 属性说明了浏览器不兼容性之一：对于 IE，此属性必须设置为 0；在其他浏览器中，0 会被忽略。
+
+然后，列表项的 CSS 设置为左浮（`float: left`）。这意味着 `ul` 元素中的项目将水平显示，但 900 像素的宽度（每个项目 100 像素）将超过其 `div` 容器宽 300 像素。不过请记住，这种溢出发生在 `li` 内部。
+
+最后一个 CSS 规则将 `li` 内部 `img` 元素的宽度设置为 95 像素。这意味着在每个 `li` 项目中，每张图片的右侧应该有 5 像素的间距。
+
+由于共有九张图片，且每个列表项的宽度设置为 100 像素，九张图片需要 900 像素，而这正是 `ul` 元素设置的宽度。为了让该应用正常工作，`div`、`ul` 和 `li` 元素的宽度必须经过协调。
+
+## 轮播图应用
+
+![](img/32b24cb9657418b8429a4117bd539786_302_0.png)
+
+## 应用的 HTML
+
+```html
+<main>
+  <h1>View our Books</h1>
+  <div id="carousel">
+    <div id="left_button" class="button_panel">
+      <img src="images/left.jpg" alt="">
+    </div>
+    <div id="display_panel">
+      <ul id="image_list">
+        <li><a href="newpage.html">
+          <img src="images/book1.jpg" alt=""></a>
+        </li>
+        <li><a href="newpage.html">
+          <img src="images/book2.jpg" alt=""></a>
+        </li>
+        <!-- 5 个包含图片的 li 元素 -->
+        <li><a href="newpage.html">
+          <img src="images/book8.jpg" alt=""></a>
+        </li>
+        <li><a href="newpage.html">
+          <img src="images/book9.jpg" alt=""></a>
+        </li>
+      </ul>
+    </div>
+    <div id="right_button" class="button_panel">
+      <img src="images/right.jpg" alt="">
+    </div>
+  </div>
+</main>
+```
+
+## 应用的关键 CSS
+
+```css
+#display_panel {
+  width: 300px;
+  overflow: hidden;
+  float: left;
+  height: 125px; 
+}
+#image_list {
+  position: relative; /* IE 必需 */
+  left: 0px;
+  width: 900px;
+  list-style: none;
+}
+#image_list li {
+  float: left;
+  width: 100px;
+}
+#image_list li img {
+  width: 95px; 
+}
+```
+
+图 9-11 轮播图应用的用户界面、HTML 和 CSS
+
+## jQuery
+
+如果你查看图 9-12 中该应用的 jQuery 代码，可以看到它由两个事件处理器组成：一个用于右按钮，一个用于左按钮。
+
+```javascript
+$(document).ready(function() {
+  var slider = $("#image_list");
+  var leftProperty, newLeftProperty;
+
+  $("#right_button").click(function() {
+    leftProperty = parseInt(slider.css("left"));
+    if (leftProperty > -600) {
+      newLeftProperty = leftProperty - 300;
+    } else {
+      newLeftProperty = 0;
+    }
+    slider.animate({ left: newLeftProperty }, 1000);
+  });
+
+  $("#left_button").click(function() {
+    leftProperty = parseInt(slider.css("left"));
+    if (leftProperty < 0) {
+      newLeftProperty = leftProperty + 300;
+    } else {
+      newLeftProperty = -600;
+    }
+    slider.animate({ left: newLeftProperty }, 1000);
+  });
+});
+```
+
+## 练习 9-1 尝试效果和动画
+
+此练习使用图 9-10 中的应用程序，它结合了图 9-2、9-6 和 9-7 中的代码。你可以在以下文件夹中找到此应用程序的 HTML、CSS 和 JavaScript 文件：`javascript_jquery\exercises\ch09\effects_and_animation\`
+
+1. 使用你的文本编辑器或 IDE 打开文件。然后运行应用程序以查看其工作方式。
+
+### 尝试 FAQ 标题的效果
+
+3. 在 jQuery 代码中，更改 FAQ 标题的效果，使得在点击标题时，答案淡入和淡出视图。
+
+4. 现在，更改 FAQ 标题的效果，使得在点击标题时，答案向下滑动和向上滑回。
+
+5. 尝试不同的持续时间和效果，看看你认为哪些组合对易用性最好。
+
+### 尝试 h1 标题
+
+6. 检查 h1 标题的 CSS，查看其 `left` 属性是否从负 175 像素开始初始值。然后，检查 jQuery 代码，查看它如何向右移动 375 像素再向左移动 200 像素，这意味着 `left` 属性结束于 0 像素。
+
+7. 重新启动应用程序并观察 h1 标题从页面外移动到正确位置的动画。然后，点击标题查看动画如何重复，标题向右移动得更远。再次点击查看它再次重复，使标题移动得更远。
+
+8. 重新启动应用程序。然后，快速点击两次顶层标题。这应该连续运行两次动画，表明动画是排队执行的。
+
+9. 修改顶层标题的动画，使其在动画结束时始终返回 FAQ 上方的正确位置。这样它就不会跨页面移动。要实现这一点，将其结束的 `left` 属性设置为 0 像素。
+
+### 在应用程序中添加 jQuery UI 效果
+
+10. 注意 HTML 页面中有一个用于 jQuery easing 插件的 `<script>` 元素。然后，将图 9-9 中的 easing 应用到效果和动画中。这是否改进了它们？
+
+11. 在运行应用程序查看这些 easing 如何工作后，点击页面底部的链接查看有关使用 jQuery easing 插件的信息。然后，尝试在浏览器中打开一个新页面或标签页。尝试其他 easing 效果看看你是否喜欢。
+
+## 练习 9-2 修改幻灯片应用程序
+
+这是一个简单的练习，你将在其中实验可以用于图 9-3 中幻灯片的效果。它使用了图 9-4 所示的第二块 jQuery 代码。
+
+1. 使用你的文本编辑器或 IDE 打开此文件夹中的 HTML、CSS 和 JavaScript 文件：`javascript_jquery\exercises\ch09\slide_show\`。然后运行应用程序观察它是如何工作的。
+
+2. 修改 jQuery，使得标题和图像在幻灯片从一张切换到下一张时向上滑动然后滑回。然后，测试你是否喜欢这种效果。
+
+3. 修改 jQuery，通过 `hide()` 方法隐藏标题并通过 `show()` 方法显示，两者的间隔均为一秒。此外，增加显示和隐藏幻灯片的时间到两秒，并将计时器间隔增加到五秒。然后测试这些更改。
+
+4. 如果你好奇，可以不断尝试效果、持续时间和 easing，直到幻灯片以你喜欢的方式运行。
+
+## 练习 9-3 修改轮播（Carousel）应用程序
+
+这是一个简单的练习，将测试你是否理解了图 9-11 和 9-12 中轮播应用程序的代码。
+
+1. 使用你的文本编辑器或 IDE 打开此文件夹中的 HTML、CSS 和 JavaScript 文件：`javascript_jquery\exercises\ch09\carousel\`。
+
+2. 运行应用程序。注意，当前三本书可见时点击左按钮什么都不会发生。
+
+3. 修改 jQuery 代码，使得在点击其中按钮时，轮播每次移动一本书而不是一次移动三本书。现在，当最后三本书显示时点击右按钮会发生什么？
+
+4. 修改 CSS 和 jQuery 代码，使只显示一本书。否则，应用程序应该以相同的方式工作。
+
+# 第 10 章 如何处理表单和数据验证
+
+为了创建动态网页，你使用 HTML 创建表单让用户输入数据。然后，用户可以点击按钮将数据提交到 Web 服务器进行处理。然而，在提交数据之前，通常会通过浏览器中的 JavaScript 对数据进行验证。在本章，你将学习如何使用 jQuery 处理表单，并学习一些使用 JavaScript 在浏览器中进行数据验证的基本技能。
+
+## 表单和控件简介
+
+在第 6 章中，你学习了表单包含一个或多个控件，如文本框和按钮。接受用户输入的控件也称为字段（fields）。在接下来的三个主题中，你将回顾表单如何工作以及如何使用 HTML5 特性处理表单。
+
+## 表单如何工作
+
+图 10-1 显示如何创建一个包含三个控件（两个文本框和一个按钮）的表单。在该元素的起始标签上，你编写 `action` 和 `method` 属性。`action` 属性指定要使用的服务器文件。`method` 属性指定发送表单使用的 HTTP 方法。
+
+在图示例中，表单通过 `join.php` 中的代码提交到服务器。该文件将使用 PHP 作为脚本语言。
+
+当你使用 `get` 方法时，数据作为 URL 的一部分发送，这意味着数据是可见的且页面可以被书签。这由图中 URL 所示。在这里，URL 后面跟着一个问号和由 `&` 分隔的键值对，这些对对应 `name` 属性和字段值。在这种情况下，提交了两个值：电子邮件地址和姓名。
+
+当你使用 `post` 方法时，数据作为 HTTP 请求的一部分封装，在浏览器中不可见。因此，这种提交比使用 `get` 方法更安全，但生成的页面无法被书签。
+
+在表单元素的起始和结束标签之间，你编写表单的控件。在示例中，前两个 `input` 元素是接收用户电子邮件地址和姓名的文本框。第三个元素的 `type` 属性值为 `submit`，这意味着它是一个提交按钮。点击它时，表单中的数据将自动提交到服务器。
+
+如果输入元素的 `type` 为 `reset`，则该按钮是重置按钮。当点击该类型的按钮时，表单所有控件的值都将重置为初始的 HTML 值。
+
+## 在网络浏览器中发送表单
+
+### 表单的 HTML 代码
+
+```html
+<form id="email_form" name="email_form" action="join.php" method="get">
+  <label for="email_address">Email Address:</label>
+  <input type="text" id="email_address" name="email_address"><br>
+  <label for="first_name">First Name:</label>
+  <input type="text" id="first_name" name="first_name"><br>
+  <label>&nbsp;</label>
+  <input type="submit" id="join_list" value="Join our List"><br>
+</form>
+```
+
+### 使用 "get" 方法提交表单时的 URL
+
+`join.php?email_address=judy%40murach.com&first_name=Judy`
+
+### 表单元素的属性
+
+| 属性 | 描述 |
+| :--- | --- |
+| `name` | 可以被客户端或服务器端代码引用的名称。 |
+| `action` | 处理表单数据的文件的 URL。 |
+| `method` | 提交表单数据的 HTTP 方法。可以设置为 "get" 或 "post"。默认值为 "get"。 |
+
+## 说明
+
+- 表单包含一个或多个控件（或字段），如文本框、单选按钮、列表或复选框，这些控件可以接收数据。
+- 当你点击表单的提交按钮（`type` 为 "submit"）时，表单数据将作为 HTTP 请求的一部分发送到服务器。当你点击表单的重置按钮（`type` 为 "reset"）时，表单数据将重置为默认值。
+- 当表单提交到服务器进行处理时，控件中的数据会随 HTTP 请求一起发送。
+- 当使用 "get" 方法提交表单时，URL 后面会跟着一个问号以及由 `&` 符号分隔的名称/值对。这些值对包含了提交数据的 `name` 属性和值。当你使用 "post" 方法时，数据是隐藏的。
+- 数据验证是指对表单收集的数据进行检查以确保其有效性，且完整的验证始终在服务器上进行。然后，如果检测到任何无效数据，表单将返回给客户端，以便用户修正条目。
+- 为了在数据无效时减少与服务器的往返次数，通常在数据发送到服务器之前会在客户端进行一些验证。然而，这种验证不需要像在服务器上进行的验证那样彻底。
+
+## 用于处理表单的 HTML5 控件
+
+如果你不熟悉 HTML5 输入控件，图 10-2 中的第一个表格总结了你最常使用的控件。当你使用这些控件时，`type` 属性指示了在控件中应该输入什么类型的数据。然后，在某些情况下，浏览器将对输入到文本框中的数据进行验证，以确保其类型正确。在其他情况下，浏览器将显示不同类型的控件以帮助用户输入有效值。
+
+例如，如果你将“email”作为 `type` 属性，除 Safari 之外的所有主流浏览器（Chrome、IE、Edge、Firefox 和 Opera）都会对输入文本框的电子邮件地址提供验证。如果你将“number”作为 `type` 属性，除 IE 和 Edge 之外的所有主流浏览器都将该控件实现为带有上下箭头的文本框，允许用户增加或减少当前值。如果你将“date”作为 `type` 属性，Chrome 和 Opera 会显示弹出日历让用户选择日期，而 Edge 将显示下拉列表让用户选择月、日、年。至少，这些属性指示了控件所对应的数据类型，这在语义层面上是有益的。
+
+HTML5 还提供了用于处理控件的新属性，此图中的第二个表格总结了其中两个基本属性。`autofocus` 属性在表单加载时将焦点移动到控件上。这意味着你不需要使用 JavaScript 来实现这一点。此外，`placeholder` 属性可以用于在控件中放置起始文本，帮助用户按正确的格式输入数据。当用户开始在控件中输入值时，该文本会被移除。
+
+这些中的一些控件和属性在图中的代码示例中得到了阐释。在这里，接收电子邮件地址的输入控件的 `type` 属性被设置为“email”。此外，由于这是表单中的第一个输入控件，因此包含了 `autofocus` 属性，以便控件在页面首次显示时拥有焦点。在代码示例下方的表单中，你可以看到在电子邮件字段中输入无效内容时 Chrome 显示的错误信息。
+
+由于此示例中的第三个输入字段用于电话号码，因此其 `type` 属性被设置为“tel”。虽然目前没有浏览器为该类型提供数据验证，但从语义角度考虑，使用它是很好的。该控件还使用 `placeholder` 属性来指示应输入的电话号码格式。你可以在此图的表单中看到部分 placeholder。
+
+## 用于输入数据的常用 HTML5 控件
+
+| 控件 | 描述 |
+| :--- | --- |
+| `email` | 获取由浏览器验证的电子邮件地址。 |
+| `url` | 获取由浏览器验证的 URL。 |
+| `tel` | 获取不经浏览器验证的电话号码。 |
+| `number` | 支持时，获取具有 `min`、`max` 和 `step` 属性、浏览器验证以及上下箭头的数值输入。 |
+| `range` | 支持时，获取具有 `min`、`max` 和 `step` 属性、浏览器验证以及滑块控件的数值输入。 |
+| `date` | 支持时，获取具有 `min` 和 `max` 属性的日期输入，并包含弹出日历或上下箭头。 |
+| `time` | 支持时，获取具有 `min` 和 `max` 属性的时间输入，并可能包含上下箭头。 |
+
+## 用于处理表单的基础 HTML5 属性
+
+| 属性 | 描述 |
+| :--- | --- |
+| `autofocus` | 一个布尔属性，告诉浏览器在页面加载时将焦点设置到该字段。 |
+| `placeholder` | 字段中的消息，在输入时会被移除。 |
+
+## 用于数据验证的 HTML5 属性
+
+| 属性 | 描述 |
+| --- | --- |
+| `required` | 一个布尔属性，表示该字段是必填的。 |
+| `title` | 当鼠标悬停在字段上时显示的工具提示中的文本。此文本也会由浏览器的默认错误消息显示。 |
+| `pattern` | 用于验证字段中输入内容的正则表达式。 |
+| `novalidate` | 一个布尔属性，告诉浏览器不应对其所编写的表单或控件进行验证。 |
+| `autocomplete` | 将此属性设置为 "off" 以告诉浏览器禁用自动完成功能。这可以应用于表单或控件。 |
+
+## 用于必填、有效和无效字段的 CSS3 伪类
+
+`:required` `:valid` `:invalid`
+
+## 使用这些属性的表单 HTML 代码
+
+```html
+<form id="email_form" name="email_form" action="join.php" method="get">
+  <label for="email_address">Email Address:</label>
+  <input type="email" id="email_address" name="email_address" autofocus><br>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required><br>
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" required
+         pattern="\d{3}-\d{3}-\d{4}"
+         title="999-999-9999"><br>
+  <label>&nbsp;</label>
+  <input type="submit" id="join_list" value="Join our List"><br>
+</form>
+```
+
+## Chrome 中带有电话错误消息的表单
+
+![](img/32b24cb9657418b8429a4117bd539786_314_0.png)
+
+## 需要使用 JavaScript 进行数据验证的两个原因
+
+- 并不是所有当前浏览器都实现了用于数据验证的 HTML5 输入控件和属性，且实现方式也不相同。
+- HTML5 在可以执行的验证类型方面存在限制。例如，HTML5 无法检查字段是否有效或是否等于另一个字段，也无法从表中查找状态代码。
+
+## 说明
+
+- 在编写时，Chrome、IE、Edge、Firefox 和 Opera 均支持上述 HTML5 属性和 CSS3 伪类。尽管如此，你通常仍需要 JavaScript 和 jQuery 来完成充分的客户端验证。
+
+图 10-3 用于数据验证的 HTML5 和 CSS3 特性
+
+## 如何使用 jQuery 处理表单
+
+为了方便处理表单，jQuery 提供了为此目的设计的选择器、方法和事件方法。然而，正如接下来两个图所示，jQuery 并没有提供特定的验证功能。
+
+## 用于表单的 jQuery 选择器和方法
+
+图 10-4 中的第一个表总结了你可以用于表单的 jQuery 选择器。如你所示，这些选择器可以轻松选择各种类型的控件。它们也便于选择已禁用、启用、已选中和选中的控件。
+
+该图中的第二个表总结了你已经熟悉的 `val()` 方法。它们允许你获取和设置控件中的值。例如，图中的第一个示例获取 id 为 "age" 的控件中的输入。代码在将其保存到变量 `name` 之前，还会将其解析为整数。
+
+
+
+第三个表总结了 `trim()` 方法，它是 jQuery 的杂项方法之一。它很有用，因为 JavaScript 并没有提供自己的 `trim()` 方法。在图中的第二个示例中，你可以看到如何使用该方法在保存到变量 `firstName` 之前，修剪 id 为 "first_name" 的控件中的输入。该示例中的第二个语句将修剪后的内容放回控件。
+
+图中的第三个示例显示了如何获取组中选中单选按钮的值。这里使用属性选择器来选择所有 `name` 属性设置为 "contact_by" 的 `input` 元素。它包含了组中的所有单选按钮，因为它们必须相同的名称。然后，使用 `:checked` 选择器获取 `checked` 值为 `true` 的单选按钮。这之所以有效是因为命名组中只有一个单选按钮。最后，使用 `val()` 方法获取单选按钮属性的值，并将该值保存到变量 `radioButton` 中。
+
+最后一个示例显示了如何获取多选列表中的已选中选项数组。首先，创建一个空数组 `selectOptions`。接下来，使用 `:selected` 选择器获取 id 为 "select_list" 的 `select` 列表中所有被选中的选项。这些选项随后保存到 `selectOptions` 变量中。
+
+注意在这种情况下，列表的 id 和 `:checked` 选择器之间有一个空格。这是因为 `select` 列表由一个包含 `option` 元素的 `select` 元素组成。因此，示例中的选择器选择了所有被选中的后代 `option` 元素。该语句的另一种写法如下：
+
+```javascript
+selectOptions = $("#select_list option:selected");
+```
+
+相比之下，此示例中的 `:checked` 选择器之前没有空格。这是因为一组单选按钮由具有相同 `name` 属性的独立 `input` 元素组成。因此，该示例中的选择器选择了组中被选中的单选按钮。
+
+# 表单控件的 jQuery 选择器
+
+| 选择器 | 选择 |
+| --- | --- |
+| :input | 所有 input, textarea 和 select。 |
+| :text | 所有文本字段。 |
+| :radio | 所有单选按钮。 |
+| :checkbox | 所有的复选框。 |
+| :file | 所有文件上传。 |
+| :password | 所有的密码字段。 |
+| :submit | 所有的提交按钮。 |
+| :reset | 所有的重置按钮。 |
+| :image | 所有图像。 |
+| :button | 所有按钮。 |
+| :disabled | 所有禁用的元素。 |
+| :enabled | 所有启用的元素。 |
+| :selected | 所有选中的元素。 |
+
+# 用于获取和的 jQuery 方法
+
+| 方法 | 描述 |
+| --- | --- |
+| val() | 获取控件的值。 |
+| trim() | 去除两端的空格。 |
+
+# 用于触发的 jQuery 方法
+
+| 方法 | 描述 |
+| --- | --- |
+| focus() | 触发聚焦事件。 |
+| change() | 触发改变事件。 |
+| submit() | 触发提交事件。 |
+| parseInt() | 将字符串解析为整数。 |
+
+# 获取选中单选按钮的值
+
+```javascript
+radioButton =
+```
+
+# 获取已选中选项数组
+
+```javascript
+selectOptions = [];
+```
+
+# 表单的 jQuery 事件方法
+
+| 事件方法 | 说明 |
+| --- | --- |
+| focus(handler) | 当焦点移动到所选元素时，执行处理器。 |
+| blur(handler) | 当焦点离开所选元素时，执行处理器。 |
+| change(handler) | 当所选元素中的值发生变化时，执行处理器。 |
+| select | 当用户在文本框或文本区域框中选择文本时，执行处理器。 |
+| submit (handler) | 当点击提交按钮时，执行处理器。 |
+
+# 触发事件的 jQuery 事件方法
+
+| 事件方法 | 说明 |
+| --- | --- |
+| focus() | 将焦点移动到所选元素并触发 focus 事件。 |
+| blur() | 从所选元素中移除焦点并触发 blur 事件。 |
+| change() | 触发 change 事件。 |
+| select() | 触发 select 事件。 |
+| submit() | 触发表单的 submit 事件。 |
+
+# 当复选框被选中或取消勾选时禁用或启用单选按钮处理器
+
+```javascript
+$("#contact.me").change( // 复选框的 change 事件
+function() {
+  if ($("#contact.me").attr("checked")) {
+    $("#radio").attr("disabled", false) // 启用单选按钮
+  } else {
+    $("#radio").attr("disabled", true) // 禁用单选按钮
+  }
+}
+); // 结束
+```
+
+# 在某些数据验证后触发 submit 事件的处理器
+
+```javascript
+$(document).ready(function() {
+  $("#join_list").click( // join_list 是一个按钮，不是提交按钮
+  function() {
+    // 此处编写数据验证代码
+    $("#email_form").submit();
+  } // 结束函数
+}); // 结束结束
+```
+
+## 描述
+
+- 你可以使用 focus、blur、change 和 select 事件的事件处理器，在用户操作单个控件时处理数据。
+- 你可以使用普通按钮（而非提交按钮）的 click 事件的事件处理器来验证表单中的数据。然后，如果数据有效，你可以使用 `submit()` 方法提交表单。
+- 你还可以为表单的 submit 事件使用事件处理器，在数据发送到服务器之前进行验证。然后，如果任何数据无效，你可以调用对象的 `preventDefault()` 方法来取消数据向服务器的提交。
+
+# 验证应用程序
+
+## 使用 JavaScript
+
+为了向你展示如何使用 jQuery 处理表单，你现在将学习一个验证应用程序。正如你所看到的，jQuery 使得访问用户输入和显示错误信息变得简单。然而，为了测试用户输入的有效性，你需要使用 JavaScript。
+
+# 用户界面和 HTML
+
+图 10-6 展示了验证应用程序的用户界面和 HTML。要使用表单，用户在文本框中输入数据。用户还可以使用单选按钮来确定会员类型是个人还是公司。默认情况下，个人单选按钮被选中且“公司名称”文本框是禁用的。但是，如果用户选择了单选按钮，“公司名称”文本框将被启用。
+
+一旦表单完成，用户可以点击提交按钮。或者，如果用户想重新开始，她可以点击重置按钮将字段恢复到原始值。
+
+在此表单的 HTML 中，你可以看到表单的 id 为 “member_form”，表单底部的提交按钮是 “submit” 类型。这意味着当被点击时，它会自动将表单提交到服务器。正如你将看到的，该表单的 JavaScript 将在表单实际提交之前对输入进行验证，并在任何输入无效时取消提交。
+
+与你在前面的章节中看到的电子邮件列表应用程序一样，此应用程序中的每个文本框后面都跟着一个 `span` 元素。这些 `span` 元素将用于在用户输入的右侧显示错误信息（所示）。当表单首次加载时，除一个之外，所有这些 `span` 元素的初始值都是星号。例外是公司名称文本框的 `span` 元素。因为该文本框默认是禁用的，随后的 `span` 元素没有初始值。
+
+注意，此表单的密码和数字字段使用了 HTML5 `placeholder` 属性。该属性用于电话字段，向用户显示应该使用的输入格式。它被用于密码字段提供输入提示。但请记住，一旦用户开始在带有占位符的字段中输入值，占位符文本就会消失。
+
+另一方面，HTML 没有为电子邮件、电话和日期使用 HTML5 `type` 属性。这样，你就不必担心从浏览器获取某些意外的验证消息，例如指示电子邮件地址无效的消息。相反，JavaScript 将对执行的验证拥有完全控制权。
+
+# 第10章 如何处理表单和数据验证 301
+
+# 验证应用程序的表单
+
+![](img/32b24cb9657418b8429a4117bd539786_320_0.png)
+
+# HTML
+
+```html
+<form action="register.html" method="get" name="member_form" id="member_form">
+  <fieldset>
+    <legend>注册信息</legend>
+    <label for="email">电子邮件地址:</label>
+    <input type="text" id="email" name="email">
+    <span>*</span></span>
+    <label for="password">密码:</label>
+    <input type="password" id="password" name="password" placeholder="至少6位字符">
+    <span>*</span></span>
+    <label for="verify">验证:</label>
+    <input type="text" id="verify" name="verify">
+    <span>*</span></span>
+  </fieldset>
+  <fieldset>
+    <legend>会员类型</legend>
+    <input type="radio" id="individual" name="type" value="individual" checked>
+    <label for="individual">个人</label>
+    <input type="radio" id="corporate" name="type" value="corporate">
+    <label for="corporate">公司</label>
+  </fieldset>
+  <fieldset>
+    <legend>公司名称</legend>
+    <label for="company_name">公司名称:</label>
+    <input type="text" id="company_name" name="company_name" disabled>
+    <span></span></span>
+  </fieldset>
+  <fieldset>
+    <legend>电话号码</legend>
+    <label for="phone">电话号码:</label>
+    <input type="text" id="phone" name="phone" placeholder="555-555-5555">
+    <span>*</span></span>
+  </fieldset>
+  <fieldset>
+    <legend>按钮</legend>
+    <input type="submit" id="submit" value="提交">
+    <input type="reset" id="reset" value="重置">
+  </fieldset>
+</form>
+```
+
+# 用户界面和 HTML 用于验证应用程序
+
+321
+
+## JavaScript 验证
+
+```javascript
+$(document).ready(function() {
+  // 单选按钮的改变事件
+  $(":radio").change(
+    function() {
+      var radioButton = $(":radio:checked").val();
+      if (radioButton == "corporate") {
+        $(":company_name").attr("disabled", false);
+        $(":company_name").next().text("*");
+      } else {
+        $(":company_name").attr("disabled", true);
+        $(":company_name").next().text("*");
+      }
+    } // 函数结束
+  ); // change 事件结束
+
+  $("#member_form").submit( // 表单提交事件
+    function(event) {
+      var isValid = true;
+      // 使用正则表达式验证邮箱输入
+      var emailPattern = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b/;
+      var email = $("#email").val().trim();
+      if (email == "") {
+        $("#email").next().text("此字段为必填项。");
+        isValid = false;
+      } else if (!emailPattern.test(email)) {
+        $("#email").next().text("必须有效的邮箱地址。");
+        isValid = false;
+      } else {
+        $("#email").next().text("");
+      }
+      // 验证密码输入
+      var password = $("#password").val().trim();
+      if (password.length < 6) {
+        $("#password").next().text("必须是 6 或更多字符。");
+        isValid = false;
+      } else {
+        $("#password").next().text("");
+      }
+      $("#password").val(password);
+      // 验证公司名称输入
+      if (!("#company_name").attr("disabled")) {
+        var companyName = $("#company_name").val().trim();
+        if (companyName == "") {
+          $("#company_name").next().text("此字段为必填项。");
+          isValid = false;
+        } else {
+          $("#company_name").next().text("");
+        }
+        $("#company_name").val(companyName);
+      }
+      ...
+      // 如果任何输入无效，则阻止表单提交
+      if (isValid == false) { event.preventDefault(); }
+    } // 函数结束
+  ); // submit 事件结束
+}); // ready 事件结束
+```
+
+图 10 用于验证三个输入并提交表单的 JavaScript 脚本
+
+## 观点
+
+到此时，你应该已经熟悉了用于处理表单的 jQuery 特性。你还应该意识到，你需要同时 JavaScript 和 jQuery 来验证表单上的数据。在本章中，你学习了一些用于数据验证的基础 JavaScript 技能，并在第 3 节的章节中学习更多内容。
+
+## 术语表
+
+| 表单 | 数据验证 |
+| :--- | :--- |
+| 控件 | 正则表达式 |
+| 字段 | 模式 |
+| 提交按钮 | 自动完成功能 |
+| 重置按钮 | 条件运算符 |
+
+# 总结
+
+- 表单包含一个或多个控件，如文本框、单选按钮和复选框，这些控件可以接收数据。这些控件也被称为字段。当表单提交到服务器进行处理时，控件中的数据将随 HTTP 请求一起发送。
+- 提交按钮在点击时将数据提交到服务器。重置按钮在点击时重置表单中的所有数据。
+- HTML5 引入了一些输入控件，如 email、url、tel 和 date 控件，它们在语义上是明确的，因为指示了控件用于什么类型的数据。HTML5 还引入了一些用于数据验证的属性，并引入了一些用于格式化必需、有效和无效字段的伪类。
+- 当表单提交到服务器时，服务器脚本应该对表单中的数据提供完整的验证，如果发现任何错误，则将表单返回给客户端。
+- 在表单提交到服务器之前，JavaScript 尝试捕获 80% 或以上的输入错误。这将减少处理表单所需的服务器往返次数。
+- jQuery 提供了一些用于处理表单的选择器、方法和事件方法，但没有用于数据验证的方法。因此，为了验证用户输入的内容，许多开发者使用正则表达式和字符串方法等 JavaScript 特性。
+
+## 练习 10-1 使用 JavaScript 进行验证
+
+由于你已经知道如何使用 JavaScript 验证某些类型的字段，练习的大部分代码已为你提供。但是，你将对这些代码进行一些增强。你将处理的表单看起来如下：
+
+![](img/32b24cb9657418b8429a4117bd539786_324_0.png)
+
+- 1. 使用你的编辑器或 IDE 打开此文件夹中的 HTML 和 JavaScript 文件：`javascript_jquery\exercises\ch10\email_list_`
+- 2. 测试应用程序，注意焦点不在第一个文本框中。修改 JavaScript，使其在文档加载时移动到第一个文本框，然后再次测试。
+- 3. 检查 JavaScript 文件中的代码，注意它包含前几个字段的验证程序。然后在在向表单中输入任何数据之前点击 List 按钮进行测试。哎！即使没有进行任何输入，数据也被提交了。
+- 4. 为了修复这个问题，你需要停止提交按钮的默认操作。要做到这一点，在文件末尾的 if 语句中编写事件对象的 `preventDefault()` 方法，如图 10-7 所示。
+- 5. 通过在验证之前修剪姓名输入来解决这个问题。
+- 6. 添加验证邮政编码字段的代码，确保它由五个字符组成。
+- 7. 添加验证复选框的代码。对于此应用程序，必须选择一个复选框。
+
+# 11: 如何使用 jQuery 插件和 jQuery UI
+
+在网页上添加折叠面板、标签和轮播等常用功能的简单方法是使用 jQuery 插件和 jQuery UI 组件。在本章中，你将学习如何这样做。
+
+- jQuery 插件简介............................................... 308
+- 如何查找 jQuery 插件...................................... 308
+- 如何使用任何 jQuery 插件..................................... 310
+- 如何使用三个流行的插件.................................. 312
+- 如何使用 Lightbox 插件处理图片............................... 312
+- 如何使用 bxSlider 插件处理轮播.................................. 314
+- 如何使用 Cycle 2 插件处理幻灯片..................................... 316
+- jQuery UI 简介............................................... 318
+- 什么是 jQuery UI 以及从哪里获取................................... 318
+- 如何下载 jQuery UI...................................................... 320
+- 如何在你的网页中引入 jQuery UI............................................... 320
+- 如何使用任何 jQuery UI 组件............................................... 322
+- 如何使用五个流行的 jQuery UI 组件...................................... 324
+- 如何使用折叠面板组件.................................................. 324
+- 如何使用标签组件........................................................... 326
+- 如何使用按钮和对话框组件....................................................... 328
+- 如何使用日期选择器组件.................................................. 330
+
+## jQuery 插件简介
+
+在本介绍中，你将学习如何查找和使用 jQuery 插件。jQuery 插件只是执行一个 Web 任务或一组相关 Web 任务的 jQuery 应用程序。插件利用了 jQuery 库，大多数插件可以在只有少量 JavaScript 和 jQuery 知识的情况下使用。
+
+## 如何查找 jQuery 插件
+
+图 11-1 是一个屏幕截图，显示了在 Google 上搜索“jquery rotary plugin”的 result。通常，进行这样的搜索是找到你所需内容的最佳方法。但请注意，搜索词条中包含了 jquery 这个词，因为还有其他类型的插件。
+
+查找你寻找的插件类型的另一种方法是访问图中表格所示网站的 URL。第一个是 jQuery 插件注册表（jQuery Plugin Registry），它是 jQuery 网站的一部分；第二个是一个专门用于 jQuery 插件的网站。
+
+相比之下，另外三个网站是许多类型代码的存储库，包括 jQuery 插件。因此，你必须在这些网站上搜索 jQuery 插件才能找到你想要的内容。
+
+在大多数情况下，jQuery 插件是免费的，或者可以通过小额费用或捐赠获得。此外，jQuery 插件通常可以供非程序员使用，如果你是一个 JavaScript 程序员，它们可以为你节省许多开发时间。出于这些原因，每当你需要为网站添加常用功能时，寻找一个插件是有意义的。
+
+此图还总结了一些用于显示图像以及运行幻灯片和轮播图的最有用插件。你将在后续页面中看到其中的三个示例。
+
+## 第 11 章 如何使用 jQuery 插件和 jQuery UI 组件 309
+
+### 使用 Google 搜索 jQuery 插件
+
+![](img/32b24cb9657418b8429a4117bd539786_328_0.png)
+
+## 查找 jQuery 插件的网站
+
+| 网站名称 | URL |
+| --- | --- |
+| jQuery Plugin Registry | http://plugins.jquery.com |
+| jQuery Plugins | http://jquery-plugins.net |
+| Google Code | http://code.google.com |
+| GitHub | https://github.com |
+| Sourceforge | http://sourceforge.net |
+
+## 用于显示图片的流行插件
+
+| | URL |
+| --- | --- |
+| Lightbox | http://lokeshdharkar.com/projects/lightbox2/ |
+| Fancybox | http://fancybox.net |
+| ThickBox | http://codylindley.com/thickbox/ |
+| ColorBox | http://www.jackmoore.com/colorbox |
+
+## 用于幻灯片和轮播图的流行插件
+
+| | URL |
+| --- | --- |
+| bxSlider | http://bxslider.com |
+| Malsup jQuery Cycle 2 | http://jquery.malsup.com/cycle2 |
+| jCarousel | http://sorgalla.com/jcarousel |
+
+## 描述
+
+- jQuery 插件是扩展 jQuery 功能的 JavaScript 应用程序。这些插件需要使用 jQuery 核心库。
+- 插件适用于数百种 Web 功能，如幻灯片、轮播图、标签页、菜单、文本布局、数据验证和移动应用开发。
+- 上面列了一些提供 jQuery 插件的网站。但通常，你可以通过搜索互联网来找到你需要的内容。
+- 一般而言，你可以找到一个插件来搜索实现你想要的功能，这通常比自己编写 jQuery 代码要好。
+
+图 11-1 如何查找 jQuery 插件
+
+## 如何使用任何 jQuery 插件
+
+图 11-2 显示了在你找到所需的插件后如何使用它。
+
+首先，学习该插件的文档，以便了解它需要哪些 HTML 和 CSS，以及提供了哪些方法和选项。通常，你会在评估插件时这样做，以查看它是否符合你的需求，以及它的文档是否告诉了你所需的一切。
+
+其次，你通常会下载插件的文件并将其保存到你的 Web 服务器上。这种下载通常以 zip 文件的形式存在，并且至少包含一个 JavaScript 文件。此外，它可能包含插件使用的 CSS 或图像文件。
+
+下载还可能包含该插件主 JavaScript 文件的两个版本。如果你想查看文件的代码，可以在文本编辑器中打开它。但你在应用程序中应该使用的是压缩版本，其名称通常以 min.js 结尾。
+
+对于某些插件，文件也可以从内容分发网络 (CDN) 获取。如果你想通过这种方式访问文件，可以记录文件的 URL。然后，你可以在文件的 link 元素和 script 元素中使用这些 URL。
+
+第三，如果插件需要一个或多个 CSS 文件，你需要在 HTML 的 head 中为它们编写 link 元素。然后，你为该插件的 JavaScript 文件编写 script 元素。通常只需要一个 JavaScript 文件，但某些插件需要多个。
+
+第四，如果下载包含一个图像文件夹，你需要确保该文件夹与插件的 CSS 和 JavaScript 文件之间具有正确的结构关系。否则，你可能需要调整 CSS 或 JavaScript 代码以便其找到图像文件夹（而你可能不想这样做）。
+
+此时，你已经准备好使用该插件了。所以，第五，你为插件编写 HTML 和 CSS。第六，你编写使用该插件的 jQuery 代码。这可以在外部文件中，也可以在……
+
+## 如何使用三个最流行的插件
+
+现在，你将近距离观察三个最有用的插件。这将向你介绍插件的功能。它还将向你展示上图中的流程是如何配合特定插件工作的。
+
+## 如何使用 Lightbox 插件处理图像
+
+图 11-3 展示了 Lightbox 插件。这是一个流行的插件，当用户点击缩略图时，它会显示缩略图的大版本。该图像显示在模态对话框中，这意味着在用户继续操作之前必须将其关闭。对话框中的图像有粗边框，下方可能带有一个标题。对话框背景会变暗。要关闭对话框，用户需要点击右下角的“X”。
+
+如果图像被成组，该插件不仅会显示缩略图的对话框，还会在图像下方显示图像编号和总数，例如“第 3 张，共 5 张”。此外，当鼠标悬停在图像的左侧或右侧时，会显示上一个和后一个图标。然后，如果用户点击图标，显示将移动到下一张或上一个图像。
+
+正如示例中的链接和脚本元素所示，该插件同时需要 CSS 和 JavaScript 文件。这些元素使用了下载的文件名。但请记住，插件的脚本元素必须放在 jQuery 库的脚本元素之后。
+
+对话框还包含一个 images 文件夹，其中包含了插件使用的图像。在这里，你必须维护 images 文件夹与该插件的 JavaScript 和 CSS 文件之间的正确关系。
+
+接下来，此图显示了使用该插件的 HTML。在这里，表示缩略图的 `<img>` 元素被编码在 `<a>` 元素内部。为了使其生效，每个 `<a>` 元素必须有一个 `href` 属性来标识大图，以及一个激活 Lightbox 插件的 `data-lightbox` 属性。
+
+如果你对独立图像使用 Lightbox 插件，每个 `<a>` 元素的 `data-lightbox` 属性值应该是唯一的。相反，如果你像这里所示对一组相关图像使用此插件，则该属性的值对于所有 `<a>` 元素应该是相同的。这里显示的最后一个属性 `data-title` 为每张图像提供标题。
+
+完成所有这些后，你就完成了，因为你不需要通过调用它的任何方法来初始化 Lightbox 插件。换句话说，不需要任何 JavaScript 代码。它就能直接工作！
+
+## 用户点击缩略图启动 Lightbox 的效果
+
+![](img/32b24cb9657418b8429a4117bd539786_332_0.png)
+
+Lightbox 网站的 URL
+
+http://lokeshdharkar.com/projects/lightbox2/
+
+Lightbox 插件的链接和脚本元素
+
+```html
+<link href="styles.css" rel="stylesheet">
+<link href="css/lightbox.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+```
+
+Lightbox 插件使用的图像的 HTML
+
+```html
+<a href="images/building_01.jpg" data-lightbox="vecta" data-title="Front">
+<img src="images/building_01.thumb.jpg" alt="">
+</a>
+<a href="images/building_02.jpg" data-lightbox="vecta" data-title="Left side">
+<img src="images/building_02.thumb.jpg" alt="">
+</a>
+```
+
+## 描述
+
+- Lightbox 可显示缩略图的大版本。当用户点击其中一个缩略图时启动 Lightbox。
+- 当用户点击一组图像中的某个缩略图时，页面的其余部分变暗，并显示带有计数器和标题的大图像。如果鼠标指针移动到大图像上，会显示后一个或上一个图标。
+- Lightbox 下载包包含一个 CSS 文件、一个插件文件和一个 images 文件夹，其中包含加载图像以及关闭、后一个和上一个图标的图像。
+- Lightbox 的 HTML 由 `<img>` 元素和 `<a>` 元素组成`<img>` 元素的 `src` 属性标识缩略图，`<a>` 元素的 `href` 属性标识大图。
+- `<a>` 元素的 `data-lightbox` 属性激活 Lightbox。对于独立图像，其值应该是唯一的，但对于一组图像则应该是相同的。
+- `<a>` 元素的 `data-title` 属性可提供标题。
+
+图 11-3 如何使用 Lightbox 插件处理图像
+
+## 如何使用 bxSlider 插件制作轮播图
+
+图 11-4 展示了如何使用 bxSlider 插件创建轮播图。在此示例中，该插件一次显示两张图像，自动从一组图像滑动到另一组，在幻灯片中提供标题，在轮播图下方提供控制按钮，你可以通过点击显示的右图标或左图标移动到下一张或上一个图像。
+
+如果你下载了该插件的 JavaScript 文件，脚本元素可以如图所示引用它。作为下载的一部分，你还会获得一个 CSS 文件和一个 images 文件夹，其中包含了可用于此插件的图像。
+
+此图显示了用于此插件的 HTML 设置。在这里，`<img>` 元素被编码在无序列表的 `<li>` 元素中。然后，`<img>` 元素的 `src` 属性标识缩略图，`<li>` 元素的 `title` 属性提供标题。
+
+bxSlider 插件的链接和脚本元素
+
+```html
+<link href="styles.css" rel="stylesheet">
+<link href="jquery.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="js/bxslider.min.js"></script>
+```
+
+bxSlider 插件使用的图像的 HTML
+
+```html
+<ul id="slider">
+<li><img src="images/building_01.jpg" alt="Front" title="Front"></li>
+<li><img src="images/building_02.jpg" alt="Left side" title="Left side"></li>
+</ul>
+```
+
+使用 bxSlider 选项的 jQuery 代码
+
+```javascript
+$(document).ready(function() {
+  $("#slider").bxSlider({
+    autoControls: true,
+    captions: true,
+    minSlides: 2,
+    maxSlides: 2,
+    slideWidth: 250,
+    slideMargin: 10
+  });
+});
+```
+
+## 使用 bxSlider 的网页
+
+ 2016 年 6 月 6 日，Vect 公司搬进了他们新的 3.5 万平方英尺设施。以下是该新设施的一些照片。
+
+![](img/32b24cb9657418b8429a4117bd539786_334_0.png)
+
+## 如何使用 Cycle 2 插件制作幻灯片
+
+图 11-5 展示了如何使用 Cycle 2 插件制作幻灯片。将此插件包含在你的网页中最简单的方法是使用图中显示的 CDN URL。此插件不需要 CSS 文件或任何图像。
+
+此插件的 HTML 作用于所选 `div` 元素的子元素。这些子元素通常是 `img` 或 `div` 元素。当你使用 `div` 元素时，你可以在其中编写任何想要的内容，包括标题、文本、列表和图像。在示例中，每个幻灯片都有一个 `img` 元素，包含在一个幻灯片的 `div` 元素中。该 `div` 元素的 `class` 属性必须设置为 "cycle-slideshow" 以初始化幻灯片。
+
+如果你不想为幻灯片设置任何选项，那么只需要这些了。否则，你可以通过为主 `div` 元素编写 `data-cycle` 属性来设置选项：幻灯片之间的切换移动方式、每个幻灯片显示的毫秒数、说明显示的位置以及使用何种说明模板。在这里，说明指向在 `img` 元素之后添加的 `div`。
+
+如果你访问 Cycle 2 网站，你会发现许多展示该插件多种用法的演示示例。你还会找到其选项的完整总结。顺便提一下，与其使用 "cycle-slideshow" 类初始化幻灯片并使用 `data-cycle` 属性设置选项，你可以调用包含幻灯片的 `div` 元素的 `cycle()` 方法，并像你为 bxSlider 插件那样编写选项。不过，推荐的方法是此处所示的方法。
+
+## 使用 Cycle 2 插件制作幻灯片的网页
+
+2016 年 6 月 6 日，Vecta Corp 搬入了他们全新的 4 层、面积 35,000 平英尺的设施。以下是新设施的一些照片：
+
+![](img/32b24cb9657418b8429a4117bd539786_336_0.png)
+
+幻灯片 2 左侧
+
+### Cycle 2 网站的 URL
+
+http://jquery.malsup.com/cycle2/
+
+### Cycle 2 插件的元素
+
+```html
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+```
+
+### Cycle 2 插件的 HTML
+
+```html
+<div class="cycle-slideshow"
+  data-cycle-fx="scrollHor"
+  data-cycle-timeout="2000"
+  data-cycle-caption="#adv-custom-caption"
+  data-cycle-caption-template="Slide {{cycleTitle}}"
+  <img src="images/building_01.jpg" alt="" data-cycle-title="Front">
+  <img src="images/building_02.jpg" alt="" data-cycle-title="Left side">
+```
+
+```html
+<!-- 用于说明的空元素 -->
+<div id="adv-custom-caption"></div>
+</div>
+```
+
+## 描述
+
+- Cycle 2 插件将 `div` 元素的子元素视为幻灯片。这些子元素可以使用图像，但也可以是包含文本和图像的 `div` 元素。
+- 将此插件包含在你的网页中的最佳方法是使用它的 GitHub CDN。
+- Cycle 2 网站提供了优秀的演示和总结，让你能够以多种方式增强幻灯片。
+- 要为幻灯片设置选项，你可以为 `div` 元素编写 `data-cycle` 属性。
+- 要要在幻灯片下方提供说明，你可以为 `img` 元素编写 `data-cycle-title` 属性，为 `div` 元素编写 `data-cycle-caption` 属性，并在幻灯片下方留一个空 `div` 元素用于说明。
+
+图 11-5 如何使用 Cycle 2 插件制作幻灯片
+
+## jQuery UI 简介
+
+为了开始学习 jQuery UI，你将首先学习它、在哪里获取、如何下载以及如何将其添加到网页。
+
+## 什么是 jQuery UI 以及在哪里获取
+
+jQuery UI（用户界面）是一个免费、开源的 JavaScript 库，它通过提供高级功能扩展了 jQuery 库的使用，你可以用最少的代码使用这些功能。为了提供这些功能，jQuery UI 库使用了 jQuery 库。事实上，你可以将 jQuery UI 视为 jQuery 的官方插件库。
+
+图 11-6 显示了 jQuery UI 网站的首页和 URL。那是你可以下载 jQuery UI 的站点。最快的方法是只需点击页面右侧“快速下载”框中的“Stable”按钮。
+
+此图还总结了 jQuery UI 提供的四种功能。小组件（Widgets）是如手风琴、标签页和日期选择器等的功能。这些是开发者常用的 jQuery 功能，你将在本章中学习如何使用五个小组件。
+
+主题（Themes）为小组件提供格式，它们由 jQuery UI 下载内容中的 CSS 样式表实现。交互（Interactions）和效果（Effects）是较少使用的功能，因此你不会在书中学习如何使用它们。
+
+## 第 11 章 如何使用 jQuery 插件和 jQuery UI 小组件 39
+
+## jQuery UI 网站
+
+![](img/32b24cb9657418b8429a4117bd539786_338_0.png)
+
+jQuery UI 的 URL
+
+http://jquery.com/
+
+jQuery UI 提供的四种功能
+
+| 名称 | 描述 |
+| :--- | :--- |
+| 小组件 | 手风琴、标签页和日期选择器。 |
+| 主题 | 由 CSS 样式表实现的格式。 |
+| 交互 | 可拖放、可放置、可调整。 |
+| 效果 | 动画和过渡。 |
+
+## 描述
+
+- Cycle 2 插件将 `div` 元素的子元素视为幻灯片。这些子元素可以使用图像，但也可以是包含文本和图像的 `div` 元素。
+- 将此插件包含在你的网页中的最佳方法是使用它的 GitHub CDN。
+- Cycle 2 网站提供了优秀的演示和总结，让你能够以多种方式增强幻灯片。
+- 要为幻灯片设置选项，你可以为 `div` 元素编写 `data-cycle` 属性。
+- 要要在幻灯片下方提供说明，你可以为 `img` 元素编写 `data-cycle-title` 属性，为 `div` 元素编写 `data-cycle-caption` 属性，并在幻灯片下方留一个空 `div` 元素用于说明。
+
+图 11-6 什么是 jQuery UI
+
+* jQuery UI 是一个免费、开源的 JavaScript 库，它通过提供高级功能扩展了 jQuery 库的使用，你可以用最少的代码使用这些功能。
+* jQuery UI 网站
+
+### 如何下载 jQuery UI
+
+11-7 展示了如何下载。为了开始学习 jQuery UI，你将首先学习它、在哪里获取、如何下载以及如何将其添加到网页。最快的方法是只需点击页面右侧“快速下载”框中的“Stable”按钮。
+
+在学习如何使用 jQuery UI 时，你也可以点击页面右侧“快速下载”框中的“Stable”按钮。例如，如果你只想使用几个小组件，可以取消勾选所有。但是，如果某个组件需要其他，会显示消息提示。
+
+## 如何将 jQuery UI 引入网页
+
+要在网页中包含 jQuery CSS 和 JavaScript，你需要使用图中所示的 `link` 和 `script` 元素。在这里，`link` 元素指向 CSS 文件的。然后，第一个 `script` 元素指向 jQuery 库的 CDN 地址（不需要已下载 jQuery 文件）。第二个 `script` 元素指向 jQuery UI 文件的版本。但注意，jQuery UI 文件的 `script` 元素必须位于 jQuery 文件的 `script` 元素之后，因为 jQuery 使用。
+
+最后一个 `script` 元素指向开发者的外部 JavaScript 文件，或者包含 JavaScript 代码。如果需要的代码很短，它将嵌入 HTML 文档的 `script` 元素中。否则，可以使用外部 JavaScript 文件。
+
+# 第 11 章 如何使用 jQuery 插件和 jQuery UI 组件 321
+
+## 完整 jQuery 下载中的主要文件夹和文件
+
+| 名称 | 类型 | 大小 | 修改日期 |
+| --- | --- | --- | --- |
+| external | 文件夹 | | 12/8/2016 11:39 AM |
+| images | 文件夹 | | 12/8/2016 11:39 AM |
+| index.html | Chrome HTML 文档 | 32 KB | 9/14/2016 6:34 PM |
+| jquery-ui.css | 级联样式表 | 37 KB | 9/14/2016 6:34 PM |
+| jquery-ui.js | JavaScript 脚本文件 | 500 KB | 9/14/2016 6:34 PM |
+| jquery-ui.min.css | 级联样式表 | 32 KB | 9/14/2016 6:34 PM |
+| jquery-ui.min.js | JavaScript 脚本文件 | 246 KB | 9/14/2016 6:34 PM |
+
+## 如何构建自定义 jQuery 库并下载其文件
+
+1. 从首页开始，点击导航栏中的 `Download` 链接或 `Custom Download` 。这将带你进入 jQuery Builder 页面。
+2. 选择或取消选择交互（interactions）、组件（widgets）和效果（effects），直到复选框标识出你想要下载的组件。
+3. 如果你想为下载选择一个主题，请使用页面底部的下拉列表。或者，如果你想构建自定义主题，请点击列表上链接。
+4. 在选择主题或设计自定义主题后，点击 `Download` 按钮下载包含 jQuery UI 文件的压缩文件夹。
+
+## 如何将下载的文件包含在你的应用程序中
+
+```html
+<!-- jQuery UI 样式表引用的元素 -->
+<link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
+
+<!-- jquery 和 jQuery UI 库的脚本元素 -->
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+
+<!-- 你的外部 JavaScript 文件或代码的脚本元素 -->
+<script src=""></script>
+```
+
+## 描述
+
+- 一个 jQuery UI 下载包含一个 zip 文件，其中包含 CSS 文件、所选主题的图片、jQuery UI 文件以及一个演示下载组件的 HTML 文档。
+- 你必须在页面中的文件夹和文件只有 images 文件夹以及第一个 CSS 文件和 jQuery UI 文件的 min（压缩）版本。
+- 下载中的 `external` 文件夹包含 jQuery 库文件。
+- 下载还包含主题 CSS 文件的完整版和压缩版，但你不需要它们，因为 `jquery-ui.css` 和 `jquery-ui.min.css` 文件已经包含了结构和主题的规则集。
+- 当你为网页构建下载时，可以通过只选择网页所需的组件、交互和效果来保持较小的文件大小。
+
+图 1-7 如何下载 jQuery UI 并将其包含在网页中
+
+第 2 节 jQuery UI 基础
+
+## 如何使用任何 jQuery UI 组件
+
+接下来的四张图展示了如何以基本形式使用五个组件。这可能就是你自己在自己的网页中使用这些组件所需的所有信息。然而，所有这些组件都提供了超出这些图表所示内容的选项、事件和方法。因此，如果你想查看如何使用这些组件，可以查阅 jQuery UI 组件文档，该文档非常出色。
+
+例如，图 1-8 显示了如何使用手风琴（Accordion）组件的文档。一个好的开始方法是点击右侧侧边栏中示例的名称，以查看如何使用该组件。然后，你可以点击 `View Source` 链接找到让示例运行的源码。之后，你可以通过点击 `API Documentation` 链接查看组件的选项、方法和事件。（这两个链接在这里没有显示。）
+
+当你熟悉了组件的工作方式后，就可以准备在网页上实现它了，这分三个阶段完成。第一，如前一幅图所示，你在 HTML 的 `<head>` 元素中为 jQuery UI 编写链接和脚本元素。第二，你为组件编写所需的 HTML。第三，你编写运行组件的 jQuery 代码。
+
+此外，你必须确保 jQuery UI images 文件夹和 jQuery CSS 文件之间具有此图所示的关系。具体来说，images 文件夹必须与 jQuery CSS 文件处于同一级，因为 CSS 示例文件会查找它所需的图片。
+
+在图中的 jQuery 示例中，你可以看到运行组件所需的 jQuery 代码的通用结构。这与使用插件的代码类似。首先，使用组件的代码位于 `ready()` 事件处理器内部。其次，使用 jQuery 选择器来选择用于组件的 HTML 元素。第三，调用运行组件的方法。第四，组件的任何选项都编写在方法的大括号内。
+
+## 手风琴组件 (Accordion widget)
+
+![](img/32b24cb9657418b8429a4117bd539786_344_0.png)
+
+## 手风琴的 HTML
+
+```html
+<div id="accordion">
+  <h3>What is jQuery?</h3>
+  <div>-- the content for the panel --</div>
+  <h3>Why is jquery becoming so popular?</h3>
+  <div>-- the content for the panel --</div>
+  <h3>Which is harder to learn: jQuery or JavaScript?</h3>
+  <div>-- the content for the panel --</div>
+</div>
+```
+
+## 手风琴的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#accordion").accordion({
+    event: "mouseover",
+    heightStyle: "content",
+    collapsible: true
+  });
+});
+```
+
+## 描述
+
+- HTML 由 `h3` 元素组成，这些元素提供面板的标题，随后是包含面板内容的 `div` 元素。这些元素应该位于代表手风琴的外部层 `div` 元素内。
+- 在 jQuery 中，使用 `accordion()` 方法为代表手风琴的 `div` 元素实现手风琴组件。
+- 默认情况下，点击标题时会打开相应的面板，始终有一个面板是打开的，且所有面板的大小相同。但你可以通过设置 `accordion` 方法的选项来更改这一点。
+- 手风琴的基本格式由 jQuery UI 的 CSS 文件完成，你可以使用自己的样式表更改面板内的内容，并可以修改 jQuery UI 样式表来更改手风琴的外观。
+
+## 如何使用标签页组件 (Tabs widget)
+
+图 11-10 显示了如何使用标签页组件。该组件与手风琴组件具有相同的基本功能，但它在点击相关标签页时显示面板的内容。
+
+如图所示，标签页组件的 HTML 由一个代表组件的顶层 `div` 元素组成。然后，它包含一个包含标签标题的无序列表（ul），随后是一个一个包含标签页内容的 `div` 元素。为了将标签标题与其各自的 `div` 元素关联起来，`li` 元素内 `<a>` 元素的 `href` 属性被设置为对应 `div` 元素的 `id`。
+
+要用 jQuery 激活标签页组件，你只需选择顶层 `div` 元素并调用 `tabs()` 方法。通常，你不需要设置任何选项，因为默认设置已经符合你的预期。不过，你可能想使用 `event` 选项将打开标签页的事件从点击事件更改鼠标事件，这在标签页中效果很好。
+
+在这里，标签页组件的基本格式由 jQuery UI 的 CSS 样式表完成。然而，你可以使用自己的样式表来格式面板的内容。事实上，当面板由几种不同类型的 HTML 元素组成时，你通常需要这样做。你也可以使用你的样式表来覆盖 UI 格式。
+
+## 第11章 如何使用 jQuery 插件和 jQuery UI 组件 327
+
+## 标签页组件 (A Tabs widget)
+
+![](img/32b24cb9657418b8429a4117bd539786_346_0.png)
+
+## 标签页的 HTML
+
+```html
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Book description</a></li>
+    <li><a href="#tabs-2">About the author</a></li>
+    <li><a href="#tabs-3">Who this book is for</a></li>
+  </ul>
+  <div id="tabs-1"><!-- the content ----></div>
+  <div id="tabs-2"><!-- the content ----></div>
+  <div id="tabs-3"><!-- the content ----></div>
+</div>
+```
+
+## 标签页的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#tabs").tabs();
+});
+```
+
+## 描述
+
+- HTML 应该由一个 `div` 元素组成，其中包含一个代表标签页的无序列表以及包含标签页内容的 `div` 元素。
+- 每个标签页的标题应该位于列表 `li` 元素内的 `<a>` 元素中。每个标签页的 `href` 属性应指向包含标签内容的 `div` 元素的 `id`。
+- 在 jQuery 中，使用 `tabs()` 方法为代表手风琴的 `div` 元素实现标签页组件。
+- 标签页的基本格式由 jQuery UI 的 CSS 样式表完成。然而，你可以使用自己的样式表来格式化面板的内容。事实上，当面板由几种不同类型的 HTML 元素组成时，你通常需要这样做。你也可以使用你的样式表来覆盖 UI 格式。
+
+# 如何使用 Datepicker 控件
+
+图 11-12 显示了如何使用与文本框关联的 Datepicker 控件。当用户点击文本框时，会显示一个日历。在用户选择一个日期后，日历会隐藏，选定的日期将出现在文本框中。
+
+要实现 Datepicker 控件，需要在 HTML 中编写一个文本框。然后，在 jQuery 中选择该文本框并调用 `datepicker()` 方法。默认情况下，日历外观与图中所示，以 `mm/dd/yyyy` 格式显示当前选定的日期。但有许多选项可以自定义日期格式、语言、可选的日期范围等。
+
+在图中的第二个 jQuery 示例中，设置了三个选项。第一个选项将最小日期设置为当前日期，这是通过给该选项分配一个新的 `Date` 对象实现的。第二个选项将控件接受的最大日期设置为当前日期的 45 天后。第三个选项则在日历下方显示一个包含“今天（Today）和“完成（Done）”按钮的面板。如果用户在移动到另一个月份后点击“今天”按钮，日历将返回到包含当前日期的月份。如果用户点击“完成”按钮，日历将关闭。
+
+# 未设置选项的 Datepicker 控件
+
+![](img/32b24cb9657418b8429a4117bd539786_350_0.png)
+
+# Datepicker 控件的 HTML
+
+```html
+<label>Arrival date</label>
+<label><input type="text" id="datepicker"></label>
+```
+
+# 未设置选项的 Datepicker 控件的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#datepicker").datepicker();
+```
+
+# 设置了三个选项的 Datepicker 控件的 jQuery
+
+
+
+```javascript
+$(document).ready(function() {
+  $("#datepicker").datepicker({
+    minDate: new Date(),
+    maxDate: +45,
+    showButtonPanel: true
+  });
+});
+```
+
+# 说明
+
+- Datepicker 控件的 HTML 是一个文本框。
+- Datepicker 控件的 jQuery 是对 `datepicker()` 方法的调用。
+- 默认情况下，当用户将焦点移入文本框时，会显示 Datepicker 控件并高亮当前日期。
+- jQuery UI 为 Datepicker 控件提供了许多选项。例如，`minDate` 设置用户可以选择的日期；`maxDate` 设置用户可以选择的最大日期；`changeMonth` 和 `changeYear` 设置为真时可以提供让用户选择显示月份和年份的控件；`numberOfMonths` 设置应显示的月份数；`showButtonPanel` 在控件底部显示一个带有“今天”和“完成”按钮的条带。
+
+# 展望
+
+现在你已经完成了这一章，你应该能够使用一些流行的 jQuery 插件和 jQuery UI 控件了。这是为你的网页添加标签页（tabs）和手风琴（accordions）等功能的简单方法。以后，如果你想创建自己的 jQuery 插件，第 3 节特别是第 18 章将为你提供所需的 JavaScript 技能。
+
+# 术语
+
+- jQuery 插件
+- 模态对话框 (modal dialog box)
+- jQuery UI (用户界面)
+- 控件 (widget)
+- 主题 (theme)
+
+# 总结
+
+- 如果网页需要一个通用功能，很可能已经有对应的 jQuery 插件了。通过使用插件，你通常可以节省数小时的工作，并且做得比你自己做的更好。
+- 要访问插件，需要在 HTML 文档的 `head` 元素中为它编写脚本元素。该脚本元素必须位于 jQuery 库的脚本元素之后，因为所有 jQuery 插件都使用该库。
+- 要使用插件，通常需要在页面的 `ready()` 处理程序中使用 jQuery 代码调用其方法。然后，如果插件需要选项，你需要将选项作为方法调用的一部分。但对于某些插件，你只需要正确编写 HTML 和所需的属性即可。
+- jQuery UI（用户界面）是一个扩展 jQuery 库的 JavaScript 库。由于 jQuery UI 使用 jQuery 库，因此 jQuery UI 的脚本元素必须位于 jQuery 脚本元素之后。
+- 在构建 jQuery 下载包时，你可以选择要使用的功能的组件，包括控件、交互和效果。正如你所预期的，选择的组件越少，加载到浏览器的 jQuery UI 文件就越小。
+- 你还可以选择一个包含在 jQuery UI 下载中的主题，用于样式化 jQuery UI 组件。你也可以创建自定义主题。
+- 最广泛使用的 jQuery UI 组件是控件。要使用控件，需要为它编写指定的 HTML。然后，在 jQuery 中选择该控件并运行其主方法，通常会带有一个或多个选项。
+
+# 练习 11-1 Cycle 2 插件的实验
+
+在本次练习中，你将对 Cycle 2 插件和图 11-5 中的幻灯片进行实验。你还将回顾该插件的文档。这将让你更好地了解如何使用插件。
+
+## 回顾应用程序
+
+1. 使用你的文本编辑器或 IDE 打开此文件夹中的 HTML 文件：`javascript_jquery\exercise\child\cycle2\`
+2. 注意使用 Cycle 2 插件的选项是作为属性在幻灯片的 HTML 中进行编码的。然后，运行应用程序查看其工作原理。
+
+## 选项实验
+
+3. 将 `data-fx` 选项的值改为 "fadeout"。然后添加一个值为 "1000" 的 `data-speed` 选项。测试应用程序查看其工作原理。
+4. 进入 Cycle 2 插件网站 `http://jquery.com/cycle2/`。点击主页上的 Demos 链接，查看这些演示以提供的信息。
+5. 返回网站主页，点击 API 链接了解可以使用此插件的选项。
+6. 如果感兴趣，尝试使用这些选项中的一个或多个。
+
+## 检查下载
+
+7. 返回主页，点击 Download 链接。然后点击插件版本的 Download 按钮。
+8. 如果显示了插件代码，通过右键点击代码、选择菜单中的另存为，将其保存到你网站的 "js" 文件夹中。
+9. 修改 Cycle 2 的脚本元素，使其引用刚刚下载的文件。然后确保应用程序运行正常。
+
+# 练习 11-2 Accordion 控件的实验
+
+在本次练习中，你将回顾 Accordion 控件的 jQuery UI 演示和文档。你将对使用该控件的应用程序进行一些修改。
+
+## 回顾控件的演示和文档
+
+1. 访问此 URL `https://jquery.com/`。然后，点击侧边栏中的 Accordion 控件链接。
+2. 使用页面顶部的 accordion 查看其工作原理。然后，点击下方的 View Source 链接显示实现代码并回顾这些代码。特别注意 `accordion()` 方法没有使用任何选项。
+3. 选择右侧的一个或多个示例，查看它们如何更改控件的工作方式，并查看 jQuery 代码了解使用了哪些选项。
+4. 点击 API Documentation 链接并查看页面上的选项。
+
+## 回顾应用程序
+
+5. 使用你的文本编辑器或 IDE 打开此文件夹中用于 accordion 应用程序的 HTML 文件：`javascript_jquery\exercises\ch11\accordion\`。然后，运行应用程序查看其工作原理。
+6. 修改 accordion 的 jQuery 代码，让用户在双击而不是鼠标悬停时才显示面板。测试此更改。
+7. 修改 jQuery 代码，使应用程序启动时关闭所有面板。为了实现这一点，请使用 `active` 选项。然后，测试此更改。
+
+# 如何使用 Ajax、JSON 和 Flickr
+
+本章将向你展示如何使用 Ajax 使用 HTML、XML 或 JSON 数据更新页面，而无需在浏览器中加载新的页面。由于 Ajax 常用于从热门网站获取数据，本章还将展示如何结合 Flickr 的 API 使用 Ajax 获取馈送数据。
+
+- Ajax 简介
+- Ajax 的工作原理
+- Ajax 的常用数据格式
+- XMLHttpRequest 对象的成员
+- 如何使用 XMLHttpRequest 对象
+- 如何使用 jQuery 简写方法进行 Ajax
+- 用于处理 Ajax 的 jQuery 简写方法
+- 如何使用 load() 方法加载 HTML 数据
+- 如何使用 $.get() 或 $.post() 方法加载 XML 数据
+- 如何使用 $.getJSON() 方法加载 JSON 数据
+- 如何通过 Ajax 请求发送数据
+- 如何使用 $.ajax() 方法处理 Ajax
+- $.ajax() 方法的语法
+- 如何使用 $.ajax() 方法加载数据
+- 如何结合 Flickr 使用 Ajax
+- 如何使用 Flickr 的馈送 API
+- 如何在页面上显示 Flickr 数据
+- 如何查看网站的馈送
+- 如何为 Flickr 照片馈送显示描述
+- 如何通过标签搜索照片
+- 观点
+
+## Ajax 简介
+
+你将介绍关于 Ajax 的四个主题、Ajax 常用的数据类型以及作为 Ajax 基础的 XMLHttpRequest 对象。
+
+## Ajax 的工作原理
+
+Ajax 是 Asynchronous JavaScript and XML（异步 JavaScript 和 XML）的缩写。如图 12-1 所示，Google 的自动建议（Auto Suggest）功能是一个典型的 Ajax 应用。当你输入搜索项的开头时，Google 会使用 Ajax 获取你目前已输入的词项和链接。Ajax 在不刷新页面的情况下完成这一操作，因此用户不会感到任何延迟。这有时被称为“部分页面刷新”。
+
+为了实现这一点，所有现代浏览器都提供了一个 XMLHttpRequest（或 XHR 对象），用于向 Web 服务器发送 Ajax 请求并从服务器接收数据。此外，在浏览器中使用 JavaScript 发出请求、解析返回的数据并修改 DOM，以便页面反映返回的数据。在许多情况下，请求会包含数据，告诉服务器应该返回什么种数据。
+
+在 Web 服务器上，通常会使用一个用 PHP 或 ASP.NET 等语言编写的应用程序或脚本来返回所请求的数据。通常，这些程序或脚本在 JavaScript 开发者使用它们之前就已经编写好了，这样他们就知道必须如何对请求进行编码。否则，JavaScript 开发者和服务器端开发者需要进行协调，以便 Ajax 请求能被服务器脚本处理。
+
+此图中的两幅图展示了普通的 HTTP 请求是如何创建和处理的，以及 Ajax 请求是如何创建和处理的。主要的区别在于，对于普通的 HTTP 请求，服务器会返回整个页面，因此页面必须加载到浏览器中。相比之下，Ajax 请求发送一个 XMLHttpRequest 来仅获取数据。此外，使用 JavaScript 来发送请求、处理返回的数据并用新数据对 DOM 进行脚本处理。因此，页面不需要重新加载。
+
+由于这种 Ajax 技术非常强大，它被 Facebook 和 Google Maps 等网站广泛使用。例如，当你在朋友的 Facebook 页面上发布评论时，评论会直接出现。当你在 Google Maps 上进行拖动时，地图会自动调整。在这两种情况下，页面都没有被重新加载。
+
+此外，YouTube、Twitter 和 Flickr 等网站提供了应用程序编程接口（API），展示了如何使用 Ajax 从它们的站点中获取数据。这意味着你可以从这些站点获取数据来增强你自己的 Web 页面。由于这是每个现代 Web 开发者都应该具备的技能，本章将向你展示如何使用 Flickr 的 API。
+
+### Google 的自动建议是一个 Ajax 应用
+
+![](img/32b24cb9657418b8429a4117bd539786_356_0.png)
+
+### 普通 HTTP 请求是如何处理的
+
+![](img/32b24cb9657418b8429a4117bd539786_356_1.png)
+
+### Ajax XMLHttpRequest 是如何处理的
+
+![](img/32b24cb9657418b8429a4117bd539786_356_2.png)
+
+### 描述
+
+- Ajax 代表 Asynchronous JavaScript and XML。与普通的 HTTP 请求不同，Ajax 让你在不刷新页面的情况下从 Web 服务器接收数据。它有时被称为“部分页面刷新”。
+- 如 Ajax 名称所示，JavaScript 对使用 Ajax 至关重要，因为 JavaScript 不仅发送请求，还响应并用新数据更新 DOM。
+- 为了发送 Ajax 请求，JavaScript 使用一个名为 XMLHttpRequest (XHR) 的浏览器对象。该对象可以包含告诉服务器所需数据的数据。
+- XHR 对象通常由服务器上的程序或脚本处理。然后，JavaScript 程序员必须与应用程序脚本进行协调。
+- 如今，YouTube、Twitter 和 Flickr 等网站提供了 API（应用程序编程接口），让你可以使用 Ajax 从它们的站点获取数据。
+
+图 12-1 Ajax 的工作原理
+
+## Ajax 的常用数据格式
+
+图 12-2 展示了 Ajax 应用的三种常用数据格式。最容易用的是 HTML，你对它已经熟悉。当你使用 Ajax 加载 HTML 数据到 Web 页面时，你不需要解析数据，因为它已经包含了数据的 HTML 标签。相比之下，当你处理 XML 或 JSON 数据时，你必须解析数据。
+
+Ajax 最初设计用于与 XML（可扩展标记语言）配合使用，这就是为什么 XML 是 Ajax 名称的一部分。XML 是一种用于在互联网上交换数据的开放、设备无关格式，其语法和文档树模仿了 HTML。XML 的缺点是使用 JavaScript 和 jQuery 解析 XML 数据相对较困难。
+
+如今，JSON（JavaScript 对象表示）是处理 Ajax 最流行的格式。JSON 的读音为 "Jason"，易于理解，大多数服务器端语言已经提供了 JSON 编码函数。例如 PHP 有 `json_encode()` 函数，而 ASP.NET 有 `DataContractJsonSerializer` 类。
+
+JSON 基于 JavaScript 编程语言的子集，并使用了 C、C++、Java 和 JavaScript 等 C 类语言程序员熟悉的约定。由于它的结构是键值对的层级结构并作为对象返回，因此使用 JavaScript 和 jQuery 解析 JSON 数据相对容易。
+
+虽然 HTML、XML 和 JSON 是处理 Ajax 最流行的三种数据格式，但它们并不是唯一支持的。事实上，你也可以结合 Ajax 使用纯文本、YAML 和 CSV 文件。
+
+### Ajax 的常用数据格式
+
+| 格式 | 描述 | 文件扩展名 |
+| --- | --- | --- |
+| HTML | 超文本标记语言 | html |
+| XML | 可扩展标记语言 | xml |
+| JSON | JavaScript 对象表示法 | json (经常使用) |
+
+### XML 数据
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<management>
+  <teammember>
+    <name>Agnes</name>
+    <title>财务部副总裁</title>
+    <bio>With over 14 years of public accounting ... </bio>
+  </teammember>
+  <teammember>
+    <name>Wilbur</name>
+    <title>创始人兼首席执行官</title>
+    <bio>While Wilbur is the founder and CEO ... </bio>
+  </teammember>
+</management>
+```
+
+### JSON 数据
+
+```json
+{
+  "teammembers": [
+    {
+      "name": "Agnes",
+      "title": "Vice President of Accounting",
+      "bio": "With over 14 years of public accounting ..."
+    },
+    {
+      "name": "Wilbur",
+      "title": "Founder and CEO",
+      "bio": "While Wilbur is the founder and CEO ..."
+    }
+  ]
+}
+```
+
+### 描述
+
+- 用于 Ajax 操作的常用数据格式有 HTML、XML 和 JSON。
+- XML（可扩展标记语言）是一种开放标准的、设备无关格式，必须在浏览器中使用 JavaScript 或 jQuery 进行解析。
+- JSON（JavaScript 对象表示法）是 Ajax 应用中最流行的格式。通常情况下，JSON 文件比 XML 文件更小、更快速。由于 JSON 数据是以 JavaScript 对象的形式返回的，它们也更容易解析。
+- 大多数服务器端语言都有方法可以在服务器上对 JSON 数据进行编码。PHP 5.0 及更高版本拥有 `json_encode()` 方法，而 ASP.NET 3.0 及更高版本拥有 `DataContractJsonSerializer` 类。
+- 如需了解更多关于你喜爱的编程语言内置的 JSON API 的信息，可以访问 www.json.org。
+
+图 12-2 Ajax 的常用数据格式
+
+## XMLHttpRequest 对象的成员
+
+图 12-3 展示了 XMLHttpRequest 对象的所有成员（方法、属性和事件）。无论请求的是什么类型的数据，每个 Ajax 请求背后都有这个对象。你将在下一个图中看到该对象的成员如何在应用程序中使用的。
+
+每次请求都会使用的两个方法是 `open()` 和 `send()` 方法。`open()` 方法用于为请求打开连接。如 `open()` 方法的参数所示，该方法指定请求是 GET 还是 POST 请求，并提供请求的 URL。在生产应用中，URL 指向应用程序服务器上处理该请求的脚本或程序。当你测试应用程序时，URL 通常指向包含测试数据的文件。
+
+在调用 `open()` 方法后，使用 `send()` 方法发送请求。如果有必要，该方法可以包含一个 `data` 参数，将数据随请求一起发送到服务器。这些数据通常用于过滤返回的数据。
+
+如属性列表所示，`readyState` 属性指示请求的状态；`status` 和 `statusText` 属性提供服务器返回的状态码和状态消息；`responseText` 和 `response` 属性提供以纯文本或 XML 格式返回的数据。
+
+此图中最后一个成员是 `onreadystatechange` 事件，可以用于处理返回数据的事件处理程序。你将在下一个图中看到它是如何工作的。
+
+顺便提一下，GET 和 POST 方法与 HTML 表单使用的方法相同。当你使用 GET 方法时，数据作为 URL 的一部分发送到 Web 服务器，但可以发送的数据总量是有限的。当你使用 POST 方法时，发送的数据是隐藏且无限制的。
+
+### XMLHttpRequest 对象的成员
+
+| 方法 | 描述 |
+| --- | --- |
+| `abort()` | 取消当前请求。 |
+| `getAllHeaders()` | 返回一个包含响应头名称和值的字符串。 |
+| `getHeader(name)` | 返回特定响应头的值。 |
+| `open(method, url, async [, user], pass])` | 为请求打开连接。这些参数允许你设置方法为 GET 或 POST、请求的 URL、将异步模式设置为 true 或 false，并在需要身份验证时提供用户名和密码。当使用异步模式时，应用程序在处理请求时会继续运行。 |
+| `send([data])` | 启动请求。此方法可以包含随请求发送的数据。此方法必须在请求连接打开后调用。 |
+| `setRequestHeader(name, value)` | 为请求头指定名称和值。 |
+
+| 属性 | 描述 |
+| --- | --- |
+| `readyState` | 表示当前请求状态的数值：0 是 UNSENT（未发送），1 是 OPENED（已打开），2 是 HEADERS_RECEIVED（已接收头部），3 是 LOADING（加载中），4 是 DONE（完成）。 |
+| `responseText` | 服务器以纯文本格式返回的内容。 |
+| `responseXml` | 服务器以 XML 格式返回的内容。 |
+| `status` | 服务器以数字格式返回的状态。常见值包括成功的 200 和未找到的 404。 |
+| `statusText` | 服务器以文本格式返回的消息。 |
+
+| 事件 | 描述 |
+| --- | --- |
+| `onreadystatechange` | 当状态改变时发生的事件。 |
+
+## 如何使用 XMLHttpRequest 对象
+
+### 使用 XHR 对象和 JavaScript 加载 XML 数据的网页
+
+| 首页 | Vecta 的公司管理团队 |
+|---|---|
+| 关于我们 | Agnes，会计部副总裁，在 Tong Tongas、厄瓜多尔、加拿大、博茨瓦纳和美国拥有超过14 年的公共会计和业务咨询服务经验。Agnes 是 |
+
+### XML 文件 (team.xml)
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<management>
+  <teammember>
+    <name>Agnes</name>
+    <title>Vice President of Accounting</title>
+    <bio>With over 14 years of public accounting ...</bio>
+  </teammember>
+</management>
+```
+
+### 接收数据的 div 元素
+
+```html
+<div id="team"></div>
+```
+
+### 用于获取和解析数据的 JavaScript
+
+```javascript
+$(document).ready(function() {
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      var xmlDoc = xhr.responseXML;
+      var team = xmlDoc.getElementsByTagName("teammember")[0];
+      var html = "";
+      for (var i = 0; i < team.length; i++) {
+        xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue + "<br>" + 
+        xmlDoc.getElementsByTagName("title")[i].childNodes[0].nodeValue + "<br>" + 
+        xmlDoc.getElementsByTagName("bio")[i].childNodes[0].nodeValue + "<br>";
+      }
+      document.getElementById("team").innerHTML = html;
+    }
+  };
+  xhr.open("GET", "team.xml", true);
+  xhr.send();
+});
+```
+
+### 描述
+
+- 此应用程序使用 XHR 对象加载 Web 服务器上名为 team.xml 文件中的所有团队成员，并将它们显示在 ID 为 "team" 的 div 元素中。
+- `onreadystatechange` 事件的事件处理器会在 `readyState` 属性为 4 且 `status` 属性为 200 时解析由该方法返回的数据。
+
+图 12-4 如何使用 XMLHttpRequest 对象
+
+## 如何使用 jQuery 简写方法进行 Ajax
+
+现在你已经理解 Ajax 的工作原理以及如何使用 JavaScript Ajax 编程，准备好学习让 Ajax 编程更简单的 jQuery 简写方法了。
+
+### 用于 Ajax 的 jQuery 简写方法
+
+图 12-5 展示了用于 Ajax 的 jQuery 方法。在这里，使用 `load()` 方法获取 HTML 数据。`$.get()` 和 `$.post()` 方法通常用于获取 XML 数据（这些方法的默认数据类型），而 `$.getJSON()` 方法用于获取 JSON 数据。
+
+示例展示了这些方法的工作原理。第一个示例使用 `load()` 方法从名为 solutions.html 的文件中加载 HTML。第二个示例使用 `$.get()` 方法加载 XML 数据。第三个示例使用 `$.getJSON()` 方法加载 JSON 数据。
+
+在第二个示例中，`$.get()` 方法编写了三个参数。第一个参数是处理 Ajax 请求的 PHP 脚本的 URL。第二个参数以字符串形式向请求传递数据。这些数据将用于 PHP 脚本以确定返回什么数据。第三个参数是请求成功时将调用的函数名称。
+
+在第三个示例中，`$.getJSON()` 方法的 URL 参数用于 JSON 文件。该方法没有数据参数，其成功参数由一个嵌入函数组成，该函数将在请求成功时调用。
+
+图中包含 `$.each()` 方法。该方法通常用于处理 Ajax 请求返回的数据。你将在图 12-8 中看到它是如何工作的。
+
+### 用于 Ajax 的简写方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `load([url[, [data], [success]])` | 加载 HTML 数据。 |
+| `$.get(url[, [success], [dataType])` | 使用 GET 请求加载数据。 |
+| `$.post(url[, [data], [success, dataType])` | 使用 POST 请求加载数据。 |
+| `$.getJSON(url, [data], [success])` | 使用 GET 请求加载 JSON 数据。 |
+
+### 简写方法的参数
+
+| 参数 | 描述 |
+| --- | --- |
+| url | 请求发送到的 URL 字符串。 |
+| data | 随请求发送服务器的映射（map）或字符串，通常用于过滤返回的数据。 |
+| success | 请求成功时执行的回调函数。 |
+| dataType | 指定数据类型（html, xml, json, script 或 text）的字符串。默认值是 XML。 |
+
+### 处理返回数据的 $.each() 方法
+
+| `$.each(collection, callback)` | 描述 |
+| --- | --- |
+| | `collection` 参数是一个对象或数组。`callback` 参数是一个函数，会对集合中的每个项目执行一次。 |
+
+### load() 方法
+
+```javascript
+$("#solution").load("solutions.html");
+```
+
+### 包含数据并调用成功函数的 $.get() 方法
+
+```javascript
+$.get("manager.php", "name=agnes", showManager);
+```
+
+### 带有嵌入成功函数的 $.getJSON() 方法
+
+```javascript
+$.getJSON("team.json", function(data) {
+  // 成功函数的语句
+});
+```
+
+### 描述
+
+- 此应用程序使用 XHR 对象加载 Web 服务器上名为 team.xml 文件中的所有团队成员，并将它们显示在 ID 为 "team" 的 div 元素中。
+- `onreadystatechange` 事件的事件处理器会在 `readyState` 属性为 4 且 `status` 属性为 200 时解析该方法返回的数据。
+- `load()` 函数只能从调用页面所在的服务器加载内容。
+- 在测试期间，Firefox、Safari、Chrome、Edge 和 Opera 要求所有文件位于真实的 Web 服务器上。
+
+## 如何使用 load() 方法加载 HTML 数据
+
+### 使用 XHR 对象和 JavaScript 的网页被点击
+
+| 首页 | Vecta 的公司管理团队 |
+|---|---|
+| 关于我们 | Agnes，会计部副总裁，在 Tong Tongas、厄瓜多尔、加拿大、博茨瓦纳和美国拥有超过14 年的公共会计和业务咨询服务经验。Agnes 是 |
+| 解决方案 | vProspect 2.0 | vConvert 2.0 | vRetain 1.0 |
+| 支持 | vConvert 2.0 | | 创建一个高度用户友好且易于导航的架构，将帮助您的潜在客户进行交互 |
+
+### 用户界面的 HTML
+
+```html
+<p>你对哪种 Vecta 解决方案感兴趣？</p>
+<a id="vprospect" href="#">Prospect 2.0</a>
+<a id="vconvert" href="#">Convert 2.0</a>
+<a id="vretain" href="#">Retain 1.0</a><br>
+<div id="solution"></div>
+```
+
+### solutions.html 中的第二个 section 元素
+
+```html
+<section id="vconvert">
+<p><strong>vConvert 2.0</strong></p>
+<p><img src="images/logo_vconvert.gif" width="63" height="36" >
+创建一个高度用户友好且易于导航的信息
+</p>
+<ul>
+<li>构建一个视觉和功能良好的用户前端以 ... ...</li>
+<li>引起用户产生的情感共鸣以 ...</li>
+</ul>
+</section>
+```
+
+### 在点击链接时加载数据的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("#vprospect").click(function() {
+    $("#solution").load("solutions.html #vprospect");
+  });
+  $("#vconvert").click(function() {
+    $("#solution").load("solutions.html #vconvert");
+  });
+  $("#vretain").click(function() {
+    $("#solution").load("solutions.html #vretain");
+  });
+});
+```
+
+## 如何使用 $.get() 或 $.post() 方法加载 XML 数据
+
+12-7 中的示例展示了如何使用 `$.get()` 方法从 Web 服务器加载 XML 数据。但请记住，`$.post()` 方法的工作方式相同，区别在于使用 POST 方法来发送请求。
+
+在此示例中，`$.get()` 方法的第一个参数是请求将加载的 XML 文件的 URL。在这里，该 URL 是相对于包含 jQuery 代码文件的相对路径。然后，第二个参数是用于处理返回数据的函数。该函数的参数是请求返回的数据。
+
+为了处理返回的数据，该函数使用 `find()` 方法在返回的数据中查找名为“management”（管理）的 XML 项的子元素。这些子元素是名为“teammember”（团队成员）的项。然后，将 `each()` 方法链到该对象上，以便用于处理每个团队成员。
+
+`each()` 方法中的第一条语句将新变量 `xmlDoc` 设置为 `this` 关键字的值，即当前正在处理的团队成员。然后，下一条语句将团队成员的数据传递给 `append()` 方法，三个 `find()` 方法获取返回数据中“name”（名称）、“title”（标题）和“bio”（简介）项的数据，而 `text()` 方法获取这些项的文本。
+
+为了保持此应用程序简单，返回数据的格式是有限的。具体来说，name 字段被解析为 `<h3>` 元素，并在 title 和 bio 字段之后添加 `<br>` 元素，以便在这些字段后添加间距。
+
+要测试 `$.get()` 和 `$.post()` 方法的使用，URL 中的文件必须位于 Web 服务器上，而不是文件服务器上。具体来说，XML 文件必须与发送请求的网页处于同一域内。这是由于大多数浏览器使用的跨域安全策略。不过，与 `load()` 方法一样，如果你在 Aptana 中运行它们，`$.get()` 和 `$.post()` 方法将正常工作，因为它提供了自己的内部服务器。
+
+### 加载 XML 数据的网页
+
+![](img/32b24cb9657418b8429a4117bd539786_368_0.png)
+
+### XML 文件 (team.xml)
+
+```xml
+<management>
+  <teammember>
+    <name>Agnes</name>
+    <title>Vice President of Accounting</title>
+    <bio>With over 14 years of public accounting ...</bio>
+  </teammember>
+  ...
+</management>
+```
+
+### 接收数据的 HTML div 元素
+
+```html
+<div id="team"></div>
+```
+
+### jQuery
+
+```javascript
+$(document).ready(function() {
+  $.get("team.xml", function(data) {
+    $(data).find("management").children().each(function() {
+      var xmlDoc = $(this);
+      $("#team").append("<h3>" + 
+        xmlDoc.find("name").text() + "</h3>" + 
+        xmlDoc.find("title").text() + "<br>" + 
+        xmlDoc.find("bio").text() + "<br>");
+    });
+  });
+});
+```
+
+### 描述
+
+- `$.get()` 和 `$.post()` 方法的工作原理相同，仅用于在 XHR 请求中发送数据的方法不同。
+- 你可以使用 jQuery 的 `find()` 方法获取 XML 文件中的数据。在这里，第一个 `find()` 方法启动了一个链式操作，获取返回的 management 数据的子元素（团队成员），而另外三个 `find()` 方法获取每个团队成员的 name、title 和 bio 字段。
+
+## 如何使用 $.getJSON() 方法加载 JSON 数据
+
+图 12-8 展示了如何使用 `$.getJSON()` 和 `$.each()` 方法加载 JSON 数据。在 `$.getJSON()` 方法中，第一个参数提供带扩展名的 JSON 文件的 URL。然后，第二个参数是请求成功后用于处理 JSON 数据的函数。注意，该函数的参数 `data` 是一个将接收请求数据的对象。
+
+在 `success()` 函数内部，`$.each()` 方法处理返回对象中的每个项集合。在这种情况下，对象包含一个单一的团队成员集合。该函数的第一个参数是结果返回的对象。然后，第二个参数是一个函数，它使用另一个 `$.each()` 方法处理集合中的每个项。在这里，每个项都是一个团队成员。
+
+`each()` 方法的第一个参数是 `this` 关键字，它指向当前的团队成员。由于每个成员的数据由键值对组成，第二个参数的函数接受一个键（key）和一个值（value）。在该函数内部，name、title 和 bio 项被添加到 ID 为 "team" 的元素中。
+
+为了引用内部循环中每个数据项的值，此示例使用了如下的对象表示法：
+
+```javascript
+value.name
+```
+
+这指的是内部循环中当前项的 name 项。例如，如果此内部循环正在为第二个团队成员执行，那么 `value.name` 的数据是 Damon，`value.title` 的数据是 Director of Development（开发总监）。这表明解析 JSON 数据比解析 XML 数据容易得多。
+
+通常情况下，要测试 `$.getJSON()` 方法的使用，URL 中的文件必须位于 Web 服务器上，而不是文件服务器上。具体来说，XML 文件必须与发送请求的网页处于同一域内。这是由于大多数浏览器使用的跨域安全策略。不过，与 `load()` 方法一样，如果你在 Aptana 中运行它们，`$.get()` 和 `$.post()` 方法将正常工作，因为它提供了自己的内部服务器。
+
+### 加载 JSON 数据的网页
+
+![](img/32b24cb9657418b8429a4117bd539786_370_0.png)
+
+### JSON 文件 (team.json)
+
+```json
+{
+  "teammembers": [
+    {
+      "name": "Agnes",
+      "title": "Vice President of Accounting",
+      "bio": "With over 14 years of public accounting ..."
+    },
+    {
+      "name": "Damon",
+      "title": "Director of Development",
+      "bio": "Damon has 10 years of experience ..."
+    }
+  ]
+}
+```
+
+### 接收数据的 HTML div 元素
+
+```html
+<div id="team"></div>
+```
+
+### jQuery
+
+```javascript
+$(document).ready(function() {
+  $.getJSON("team.json", function(data) {
+    $.each(data.teammembers, function(i, item) {
+      $.each(item, function(key, value) {
+        if (key == "name") {
+          $("#team").append("<h3>" + value + "</h3>");
+        } else {
+          $("#team").append(value + "<br>");
+        }
+      });
+    });
+  });
+});
+```
+
+### 描述
+
+- `$.getJSON()` 方法专门用于加载 JSON 数据。它使用 GET 请求，并自动将返回的数据解析为 JavaScript 对象。
+- 你可以使用 `$.each()` 方法遍历返回的对象或数组。在此示例中，外层循环遍历 `teammembers` 数组，内层循环遍历每个成员对象的键值对。
+- 解析 JSON 数据比解析 XML 数据容易得多，因为 JSON 数据直接作为 JavaScript 对象返回。
+
+## 如何通过 Ajax 请求发送数据
+
+图 12-9 展示了如何通过 Ajax 请求发送数据。要做到这一点，你使用快捷方法的 data 参数来提供字符串或一个包含数据的 map。在此图中，第一个示例使用字符串发送一个键值对，请求名为 "name" 的数据项，其值为 "wilbur"。第二个示例使用一个在大括号内编码的 map 来发送相同的键值对。
+
+每当你通过 Ajax 请求发送数据时，你必须将与请求的数据与服务器端脚本的编写方式进行协调。例如，从前两个示例中可以判断，名为 getmanager.php 的 PHP 脚本接受一个名为 name 的数据项。然而，你无法判断是否有其他可以随请求发送的数据项。
+
+在某些 Ajax 应用中，表单被用于获取随请求发送的数据。在这种情况下，你可以使用辅助方法来封装随请求发送的数据。`serialize()` 方法将表单项收集为字符串。`serializeArray()` 方法将表项收集为键值对数组。
+
+此图中的示例展示了 `serialize()` 方法如何与数据请求工作。在这里，ready 事件处理器中的第一条语句使用 `serialize()` 方法将表单项编码为字符串，并将该字符串保存在名为 `formData` 的变量中。随后是 `$.get()` 方法，它使用 `formData` 作为其 data 参数。
+
+### 使用 Ajax 请求发送数据的两种方式
+
+```javascript
+// 使用字符串作为数据参数的 $.get() 方法
+$(document).ready(function() {
+  $.get("manager.php", "name=wilbur", showManager);
+  function showManager(data) {
+    // 处理数据
+  }
+});
+```
+
+```javascript
+// 使用 map 作为数据参数的 $.get() 方法
+$(document).ready(function() {
+  $.get("manager.php", {name: "wilbur"}, showManager);
+  function showManager(data) {
+    // 处理数据
+  }
+});
+```
+
+### 用于处理 Ajax 的辅助方法
+
+| 函数 | 描述 |
+| --- | --- |
+| `serialize()` | 将一组表单元素编码为字符串，可用于 Ajax 请求的数据参数 |
+| `serializeArray()` | 将一组表单元素编码为名称/值对的数组，可用于 Ajax 请求的数据参数 |
+
+### 表单的 HTML 代码
+
+```html
+<form id="contactForm">
+  <!-- 表单的控件 -->
+</form>
+```
+
+### 使用 serialize() 方法的 jQuery
+
+```javascript
+$(document).ready(function() {
+  var formData = $("#contactForm").serialize();
+  $.get("processcontact.php", formData, processReturnedData);
+  function processReturnedData(data) {
+    // 成功函数的语句
+  }
+});
+```
+
+### 描述
+
+- 当你通过 Ajax 请求发送数据时，URL 指向服务器端脚本（如 PHP 文件）。然后，该脚本负责以 XML 或 JSON 格式返回数据。
+- jQuery 快捷方法中的 `data` 参数是一个名称/值对，可以是查询字符串，也可以是 map。
+- 用于 Ajax 的 jQuery 辅助函数方便你在将表单数据发送到服务器之前对其进行打包。
+
+## 如何使用 $.ajax() 方法处理 Ajax
+
+尽管你可以在许多 Ajax 应用中使用简写方法，但 `$.ajax()` 方法为发起 Ajax 请求提供了更多选项。你接下来将学习这种方法。
+
+### $.ajax() 方法的语法
+
+图 12-10 展示了 `$.ajax()` 方法的语法，包含了该方法的一些但不是全部的选项。除了请求成功时执行的函数外，该方法还提供了其他选项，用于请求发送之前、请求完成后、数据返回并传递给 `success()` 函数之前，以及发生错误时执行的函数。这些函数让你对方法的工作方式有更多的控制。
+
+本摘要中指出，这四个函数都可以带有参数。其中一个参数是 `jqXHR`，它指的是 jQuery 对象（或 jqXHR 对象）。它是标准 XHR 对象的超集，包含了 `XMLHttpRequest` 对象的属性。这意味着你可以配合该对象使用图 12-3 中的属性。
+
+在 `beforeSend()` 函数中，你可以使用 `settings` 参数在对象随请求发送之前设置 `jqXHR` 对象中的属性。在 `complete()`、`error()` 和 `success()` 函数中，`jqXHR` 对象被传递给函数。这些函数中的 `status` 参数返回一个表示请求状态的字符串。`error()` 函数中的 `error` 参数返回 HTTP 状态的文本部分。
+
+`jsonp` 选项用于提供传递到服务器的 JSONP 参数的名称。JSONP（或“带填充的 JSON”）允许你从不同域的服务器请求数据，而这通常由于浏览器的跨域安全策略是被禁止的。JSONP 经常被网站的 API 使用。
+
+`$.ajax()` 方法的其他选项允许你在需要身份验证时提供密码和用户名。它们还允许你决定返回的数据是否可以被浏览器缓存，以及请求在作为失败请求超时之前可以持续多久。
+
+### $.ajax() 方法的语法
+
+```javascript
+$.ajax(( options ))
+```
+
+### $.ajax() 方法的一些选项
+
+| 选项 | 描述 |
+| --- | --- |
+| url | 请求发送到的处的 URL 字符串。 |
+| beforeSend(jqXHR, settings) | 在请求发送之前执行的函数。它可以传递两个参数：jqXHR 对象和该对象的设置的 map。 |
+| cache | 布尔值，决定浏览器是否可以缓存响应。 |
+| complete(jqXHR, status) | 在请求完成后执行的函数。它可以接收两个参数：jqXHR 对象和表示请求状态的字符串。 |
+| data | 随请求发送到服务器的 map 或字符串，通常用于过滤返回的数据。 |
+| dataType | 指定数据类型（html, xml, json, script, 或 text）的字符串。 |
+| error(jqXHR, status, error) | 如果请求失败则执行的函数。它可以接收三个参数：jqXHR 对象、表示错误类型的字符串，以及一个返回 HTTP 状态文本部分的异常对象。 |
+| jsonp | 包含要传递到服务器的 JSONP 名称的字符串。默认值为 "callback"。 |
+| password | 包含密码的字符串，将用于响应 HTTP 身份验证挑战。 |
+| success(data, status, jqXHR) | 如果请求成功则执行的函数。它可以接收三个参数：返回的数据、状态和 jqXHR 对象。 |
+| timeout | 请求在被视为失败请求之前的毫秒数。 |
+| type | 指定 GET 或 POST 方法的字符串。 |
+| username | 包含用于响应 HTTP 身份验证挑战的用户名的字符串。 |
+
+### 描述
+
+- `$.ajax()` 方法提供了许多选项，让你对方法的工作方式有更多的控制，例如处理错误。
+- jqXHR 对象是标准 `XMLHttpRequest` 对象的超集，提供了该对象的属性。
+- JSONP（或“带填充的 JSON”）是 JSON 的一种补充，允许你从不同域的服务器请求数据，而这通常由于浏览器的跨域安全策略是被禁止的。
+
+图 12-10
+
+## 如何使用 $.ajax() 方法加载数据
+
+当成功时，12-11 中的应用类似于 12-7。然而，`$.ajax()` 方法将 `timeout` 选项设置为 10000 毫秒，在此之后请求将超时。此外，它提供了完成函数之外的两个函数。
+
+在 `beforeSend` 选项中，你可以看到在请求发送之前执行的函数。它在接收请求数据的元素中显示“Loading...”，如图所示。当然，你可以通过显示进度指示器或旋转的动画 gif 让其变得更有趣。
+
+在 `error` 选项中，你可以看到如果发生错误则执行的函数。该函数带有三个参数编码：`xhr` 用于对象，`status` 用于错误类型的字符串，`error` 用于 HTTP 状态的文本部分。在函数内部，使用 `alert()` 方法显示请求状态（xhr.status）、连字符，然后是 HTTP 状态的文本部分（error）。例如，如果发生 404 错误，将显示如图所示的警告对话框。这当然是当指定的 URL 无法找到时的常见错误。
+
+在 `success` 选项中，你可以看到处理返回数据的函数。该函数有一个名为 `data` 的参数，将接收请求返回的数据。然后，该函数内部的代码与 12-7 中 `$.get()` 方法的函数代码相同。第一条语句使用 `html()` 方法将 id 为 "team" 的元素中的数据设置为空字符串。在这种情况下，这替换了在请求处理期间显示的“Loading...”消息。
+
+### 带有加载消息和错误告警对话框的网页
+
+![](img/32b24cb9657418b8429a4117bd539786_376_0.png)
+
+### XML 文件
+
+```xml
+<management>
+<teammember>
+  <name>Agnes</name>
+  <title>Vice President of Accounting</title>
+  <bio>With over 14 years of public accounting ...</bio>
+</teammember>
+</management>
+```
+
+### 接收数据的 HTML div 元素
+
+```html
+<div id="team"></div>
+```
+
+### jQuery
+
+```javascript
+$(document).ready(function() {
+  $.ajax({
+    type: "get",
+    url: "team.xml",
+    beforeSend: function () { $("#team").html("Loading..."); },
+    timeout: 10000,
+    error: function(xhr, status, error) {
+      alert("Error: " + xhr.status + " - " + error);
+    },
+    dataType: "xml",
+    success: function(data) {
+      $("#team").html("");
+      $(data).find("management").children().each(function() {
+        var xmlDoc = $(this);
+        $("#team").append(
+          "<h3>" + xmlDoc.find("name").text() + "</h3>" +
+          xmlDoc.find("title").text() + "<br>" +
+          xmlDoc.find("bio").text() + "<br>"
+        );
+      });
+    }
+  });
+});
+```
+
+### 描述
+
+- 该应用程序的工作原理类似于图 12-7 所示。但是，除了成功完成请求的函数外，它还提供了一个超时值和两个函数。
+
+图 12-11 如何使用 $.ajax 方法加载数据。
+
+## 如何结合 Flickr 使用 Ajax
+
+一旦你学会了如何使用 Ajax，你就拥有了从 YouTube、Twitter 和 Flickr 等流行网站获取数据所需的技能。事实上，你可以从任何提供相应 API 的网站获取数据。
+
+为了让你直观了解工作原理，本章现在将向你展示如何结合 Flickr 的 API 使用 Ajax。这里的目标不在于教你如何使用 Flickr，而在于教你如何使用任何允许通过 URL 获取数据的网站 API。
+
+## 如何使用 Flickr 的 feed API
+
+Flickr 是一个允许你免费在其平台上存储照片的网站。这意味着只要你连接到该网站，就可以在任何地方访问你的照片。由于你还可以为每张照片存储包含 HTML 标签形式的缩略图和文本的描述，该网站也可以用作简单的内容管理系统（CMS）。
+
+图 12-12 中的第一个表格列出了 Flickr 提供的各种 feed。你最常用的 feed 是公共照片与视频 feed，这也是你将在本章剩余部分中学习的内容。该 feed 允许在无需身份验证的情况下公共访问任何 Flickr 照片。要查看此 feed 的文档，你可以访问该图顶部的 URL。
+
+要从公共 feed 中检索数据，你首先从图中显示的基础 URL 开始。然后，你添加第二个表格所示的一个或多个查询参数。例如，要仅检索特定用户的照片，可以像该图第一个示例所示包含 `id` 参数。要根据添加到照片上的一个或多个标签检索照片，可以使用标签 "vectacorp"，第二个示例则检索了所有带有 "waterfall" 和 "yosemite" 标签的照片。
+
+注意，这两个示例都包含了 `jsoncallback` 参数。当 `format` 参数设置为 "json" 时（如本章中所有示例所示），需要此参数。这将导致使用 JSONP 作为 JSON 的补充。正如你在本章前面学到的，这允许你从不同域的服务器检索数据，而这通常被浏览器的跨域安全策略所禁止。
+
+顺便提到，Flickr feed 的默认格式是 Atom 订阅格式，这是一种 XML 语言和 W3 标准。Flickr 支持的另一种常见格式是 RSS。在本章中，所有的网络 feeds 都使用了 JSON。
+
+### Flickr feed 文档的 URL
+
+www.flickr.com/services/feeds/docs/photos_public/
+
+### Flickr feeds
+
+| Feed | 描述 |
+| --- | --- |
+| Public photos & video | 返回符合指定准标准的公共内容。 |
+| Friends photostream | 返回来自联系人、朋友以及指定用户的公共内容。 |
+| Public favorites from a user | 返回指定用户的公共收藏。 |
+| Group discussions | 返回指定小组的最新讨论。 |
+| Group pools | 返回最近添加到指定小组资源库中的项目。 |
+| Forum discussions | 返回 Flickr 论坛的最新主题。 |
+| Recent activity | 返回指定用户的最新活动。 |
+| Recent comments | 返回指定用户的最新评论。 |
+
+### 检索公共照片流的基础 URL
+
+http://api.flickr.com/services/feeds/photos_public.json
+
+### 公共照片 feeds 的常用查询参数
+
+| 参数 | 描述 |
+| --- | --- |
+| id | 用户 ID。 |
+| ids | 用逗号分隔的用户 ID 列表。 |
+| tags | 用逗号分隔的标识照片的标签列表。 |
+| tagmode | 控制项目是否匹配。 |
+| format | 返回数据的格式。 |
+| lang | feed 的语言。 |
+| jsoncallback | 除非 format 设置为 JSON，否则是可选的。 |
+
+### 获取特定用户 JSON feed 的 URL
+
+http://api.flickr.com/services/feeds/photos_public.json?id=824072&format=json&jsoncallback=vectacorp
+
+### 获取所有用户 JSON feed 的 URL
+
+http://api.flickr.com/services/feeds/photos_public.json?format=json&jsoncallback=&tags=waterfall,yosemite
+
+### 描述
+
+- Flickr 是一个允许你免费在其平台上存储照片的网站。这意味着只要你连接到该网站，就可以在任何地方访问你的照片。
+- 由于你还可以为每张照片存储包含 HTML 标签形式的缩略图和文本的描述，该网站也可以用作简单的内容管理系统（CMS）。
+
+图 12-12 如何使用 Flickr 的 feed API。
+
+## 如何在页面上显示 Flickr 数据
+
+### 照片源返回的数据项
+
+| 数据项 | 说明 |
+|---|---|
+| items | 返回的项目集合。 |
+| title | 照片的标题。 |
+| link | 照片在 Flickr 页面上的 URL。 |
+| media.m | 照片的 URL。 |
+| date_taken | 照片拍摄的日期。 |
+| description | 照片的描述性文本，外加一个 `<a>` 元素中的缩略图，该元素链接到 Flickr 网站上的完整照片。此数据使用 HTML 标签格式化，因此已准备好显示。 |
+| published | 照片上传到 Flickr 的日期时间。 |
+| author | 作者的用户名和电子邮件。 |
+| author_id | 作者的 ID。 |
+| tags | 照片的过滤标签。 |
+
+### 从照片源中获取标题和照片的 jQuery 代码
+
+```javascript
+var url = "http://api.flickr.com/services/feeds/photos_public.json?" + 
+  "format=json&tags=waterfall,yosemite";
+
+$.getJSON(url, function(data) {
+  var html = "";
+  html += "<ul>";
+  $.each(data.items, function(i, item) {
+    html += "<h2>" + item.title + "</h2>";
+    html += "<img src='" + item.media.m + "'>";
+  });
+  html += "</ul>";
+  $("#photos").html(html);
+});
+```
+
+### 描述
+
+- 你可以使用在本节之前学过的 `$.getJSON()` 方法从 Flickr 源获取数据。返回的数据包括上述列出的项目。
+- 你可以使用 `$.each()` 方法配合回调函数来处理返回的项目集合中的每个项目。该回调函数接收两个参数：集合的索引和项目项本身。
+- `description` 数据项包含两个或三个 `<p>` 元素。第一个 `<p>` 元素包含一个指向发布照片的用户的链接。如果是同一个用户发布了每张照片，你可能想要删除此段落。你可以像图 12-15 所示使用 JavaScript 实现这一点。
+- `description` 数据项中的第二个 `<p>` 元素包含一个 `<a>` 元素内的缩略图，该元素链接到 Flickr 网站上的图像。
+- `description` 数据项中的第三个 `<p>` 元素是可选的，可以包含描述性文本。
+
+## 如何查看网站的源
+
+在某些情况下，查看从网站返回的 JSON 数据可能会有所帮助。这可以帮助你识别在应用程序中可以使用数据项，以防这些项未包含在文档中，或者在文档中难以找到。这还可以帮助你检查数据的值，从而确保在网页上显示正确的数据。
+
+图 12-14 显示了显示来自源数据的简单方法。在这里，图 12-13 中所示的源 URL 已被复制并粘贴到地址栏中。然后，当按下回车键时，返回给应用程序的 JSON 数据就会显示出来。
+
+如果你查看这些数据，就可以看到源中包含的内容。例如，此示例显示了带有指定标签的第一项目的所有数据项。注意，所有这些项目都包含在一个数据项中。你已经在上一个图中看到了这个项目是如何使用的。
+
+### 图 12-13 中 URL 对应的 Flickr 数据
+
+```json
+{
+  "title": "Recent Uploads tagged waterfall and yosemite",
+  "link": "http://www.flickr.com/photos/",
+  "description": "",
+  "modified": "2012-08-21T10:46:02Z",
+  "generator": "http://www.flickr.com",
+  "items": [
+    {
+      "title": "Yosemite Falls",
+      "link": "http://www.flickr.com/photos/stephany/38412313021/",
+      "media": {"m": "https://farm.static.flickr.com/384/3412313021_37afff25_m.jpg"},
+      "date_taken": "2012-08-21T03:25:08Z",
+      "description": "<p><a href=\"http://www.flickr.com/people/stephany/\">stephany</a> posted a photo:</p><p><a href=\"http://www.flickr.com/photos/stephany/38412313021/\" title=\"Yosemite Falls\"><img src=\"https://farm.static.flickr.com/384/3412313021_37afff25_m.jpg\" alt=\"Yosemite Falls\" width=\"240\" height=\"180\"/></a></p><p>Yosemite Valley National Park, Moonlit falls through the trees</p>",
+      "published": "2012-08-21T10:46:02Z",
+      "author": "nobody@flickr.com (\"stephany\")",
+      "author_id": "38412313021",
+      "tags": "yosemite falls national park california"
+    }
+  ]
+}
+```
+
+### 描述
+
+- 为了查看来自 Flickr 网站的源，你可以将 URL 复制或粘贴到浏览器的地址栏中。当按下回车键时，显示返回给应用程序的 JSON 数据。
+- 如果你检查这些数据，就可以看到源中包含的内容。例如，此示例显示了带有指定标签的第一个项目的所有数据项。注意，所有这些项目都包含在一个数据项中。你已经在上一个图中看到了这个项目是如何使用的。
+
+## 如何为 Flickr 照片馈送显示描述
+
+### 显示描述的 jQuery 代码
+
+```javascript
+$.getJSON(url, function(data) {
+  var html = "";
+  $.each(data.items, function(i, item) {
+    var description = item.description;
+    // 移除第一个包含作者链接的 <p> 标签
+    description = description.replace(/<p>.*?<\/p>/, "");
+    html += "<h2>" + item.title + "</h2>";
+    html += description;
+  });
+  $("#photos").html(html);
+});
+```
+
+### 描述
+
+- `description` 数据项包含格式化的 HTML。你可以直接将其插入页面，也可以使用字符串操作方法（如 `replace()`）修改后再插入。
+- 上述代码使用正则表达式移除了描述中第一个 `<p>` 标签（通常包含作者信息），保留了缩略图和描述文本。
+
+## 如何通过标签搜索照片
+
+到为止，你已经看到了一些示例，可以从 Flickr 中检索特定用户发布的照片、具有特定标签的照片，或者这两者兼有的照片。现在，图 12-16 显示了如何检索任何用户发布的照片，并由用户输入一个或多个标签。在这里，当用户输入标签“yacht”（游艇）和“racing”（赛车）并点击搜索按钮后，将显示结果。
+
+此网页的 HTML 包含两个输入元素。第一个用于用户输入搜索标签的文本框。第二个是用于触发照片检索的搜索按钮。HTML 还包含一个 `div` 元素，它将接收来自馈源（feed）的数据。
+
+该应用程序的 jQuery 首先定义了一个变量 `searchTerm`，它将用于存储用户输入的标签。然后，搜索按钮的点击事件处理程序首先将该变量设置为空字符串。接下来，它使用 `if` 语句来判断用户是否在文本框中输入了值。如果没有，则使用 `alert()` 方法显示对话框，告诉用户必须输入一个或多个标签。如果有，则将 `searchTerm` 变量设置为输入的值。然后，该变量被用作发送给 Flickr 的查询 URL 中 `tags` 参数的值。
+
+代码的其他部分与你在之前图中看到的相似。它使用 `$.getJSON()` 方法从 Flickr 获取数据。然后，在 `$.each()` 方法内部，它查询每个照片的标题、图像和标签，并将其格式化为 HTML。最后，它设置 `div` 元素的 HTML，使其包含数据。
+
+### 一个通过标签搜索照片的网页
+
+![](img/32b24cb9657418b8429a4117bd539786_386_0.png)
+
+### 获取标签并接收馈源数据的 HTML
+
+```html
+按标签搜索：<input type="text" size="30" id="search">
+<input type="button" value="Search" id="btnSearch">
+<h1>Flickr 结果</h1>
+<div id="photos"></div>
+```
+
+### jQuery
+
+```javascript
+$(document).ready(function() {
+  var searchTerm;
+  $("#btnSearch").click(function() {
+    searchTerm = "";
+    if ($("#search").val() == "") {
+      alert("You must enter one or more tags!");
+    } else {
+      searchTerm = $("#search").val();
+    }
+    var url =
+      "http://api.flickr.com/services/feeds/photos_public.json?" +
+      "format=json&jsoncallback=&tags=" + searchTerm + "&tagmode=all";
+    $.getJSON(url, function(data) {
+      var html = "";
+      $.each(data.items, function(i, item) {
+        html += "<h2>" + item.title + "</h2>";
+        html += "<img src='" + item.media.m + "' >";
+        html += "<p>Tags: " + "<b>" + item.tags + "</b></p>";
+      });
+      $("#photos").html(html);
+    });
+  });
+});
+```
+
+
+
+# 展望
+
+现在你完成了本章，你应该能够使用 jQuery 发起 Ajax 请求，从你的服务器返回 HTML、XML 和 JSON 数据。你还应该能够结合 API 使用 Ajax 从 Flickr 获取数据。这些是现代网站中常用的强大技能。
+
+## 术语
+
+| Ajax (Asynchronous JavaScript and XML) | JSON (JavaScript Object Notation) |
+| :--- | :--- |
+| `XMLHttpRequest (XHR)` 对象 | member |
+| API (Application Programming Interface) | 跨域安全策略 |
+| `jqHR` 对象 | |
+| XML (eXtensible Markup Language) | JSONP |
+
+# 总结
+
+- Ajax 全称为 *Asynchronous JavaScript and XML*，让你能够在无需刷新页面的情况下从 Web 服务器获取数据。这意味着页面可以根据用户的操作显示新信息，而没有通常的延迟。
+- 为了使 Ajax 请求成为可能，现代浏览器提供了 `XMLHttpRequest (XHR)` 对象。该对象被用于发送请求以及接收返回的数据。该对象的增强版本称为 `jqXHR object`，用于使用 jQuery 进行 Ajax 请求。
+- 当你使用 Ajax 时，你使用 JavaScript（或 jQuery）发起请求、处理返回的数据并更新 DOM，以便将数据显示在网页上。
+- Ajax 的三种常见数据格式是 HTML、XML (*eXtensible Markup Language*) 和 JSON (JavaScript Object Notation)。由于 JSON 能够更容易解析返回的数据，它已成为与 Ajax 配合最流行的格式。
+- 为了让 Ajax 编程更简单，jQuery 提供了简写方法，如 `$.get()` 和 `$.getJSON()` 方法、`$.ajax()` 方法、`$.each()` 方法以及用于打包数据以供 Ajax 请求使用的序列化方法。
+- 许多 Ajax 请求由 PHP 或 ASP.NET 等语言的程序或脚本在 Web 服务器上处理，开发者必须协调你的 Ajax 请求与处理请求的程序或脚本。
+- JSONP，或“JSON with Padding”（带填充的 JSON），让你从不同域的服务器获取 JSON 数据。这规避了大多数浏览器拥有的*跨域安全策略*。
+
+## 练习
+
+为了使 Ajax 请求成为可能，现代浏览器提供了 `XMLHttpRequest (XHR)` 对象。该对象被用于发送请求以及接收返回的数据。该对象的增强版本称为 `jqXHR object`，用于使用 jQuery 进行 Ajax 请求。
+
+- 当你使用 Ajax 时，你使用 JavaScript（或 jQuery）发起请求、处理返回的数据并更新 DOM，以便将数据显示在网页上。
+- Ajax 的三种常见数据格式是 HTML、XML (*eXtensible Markup Language*) 和 JSON (JavaScript Object Notation)。由于 JSON 能够更容易解析返回的数据，它已成为与 Ajax 配合最流行的格式。
+- 为了使 Ajax 请求成为可能，现代浏览器提供了 `XMLHttpRequest (XHR)` 对象。该对象被用于发送请求以及接收返回的数据。该对象的增强版本称为 `jqXHR object`，用于使用 jQuery 进行 Ajax 请求。
+
+## 额外信息
+
+![](img/32b24cb9657418b8429a4117bd539786_386_0.png)
+
+获取标签并接收馈源数据的 HTML
+按标签搜索：`<input type="text" size="30" id="search">`
+`<input type="button" value="Search" id="btnSearch">`
+`<h1>-Flickr 结果-</h1>`
+`<div id="photos"></div>`
+
+## jQuery
+
+```javascript
+$(document).ready(function() {
+
+  var searchTerm;
+
+  $("#btnSearch").click(function() {
+
+    searchTerm = "";
+
+    if ($("#search").val() == "") {
+
+      alert("You must enter one or more tags!");
+
+    } else {
+
+      searchTerm = $("#search").val());
+
+    }
+
+    var url =
+
+      "http://api.flickr.com/services/feeds/photos_public.json?" +
+
+      "format=json&jsoncallback=&tags=" + searchTerm + "&tagmode=all";
+
+    $.getJSON(url, function(data) {
+
+      var html = "";
+
+      $.each(data.items.items, function(i, item) {
+
+        html += "<h2>" + item.title + "</h2>";
+
+        html += "<img src=" + item.media.m + " >";
+
+        html += "<p>Tags: " + "<b>" + item.tags + "</b></p>";
+
+      });
+
+      $("#photos").html(html);
+
+    });
+
+  });
+
+});
+```
+
+图 12-16 如何通过标签搜索照片
+
+# 展望
+
+现在你完成了本章，你应该能够使用 jQuery 发起 Ajax 请求，从你的服务器返回 HTML、XML 和 JSON 数据。你还应该能够结合 API 使用 Ajax 从 Flickr 获取数据。这些是现代网站中常用的强大技能。
+
+## 第 3 部分
+
+## Advanced JavaScript 技能
+
+如果你读过第 2 部分，你就知道使用 jQuery 进行 DOM 脚本，并使用 JavaScript 完成应用程序的所有其他工作。这就是为什么第 3 部分介绍了你在构建应用程序时需要的其他 JavaScript 技能。
+
+在第 13 章中，你将学习更多关于数字和字符串的内容，还将学习如何处理日期。在第 14 章中，你将学习更多关于控制结构，以及如何处理异常和使用正则表达式。在第 15 章中，你将学习如何操作浏览器，包括如何使用 Cookie 和本地存储。在第 16 章中，你将学习更多关于数组的内容，包括如何使用关联数组和嵌套数组。
+
+最后，本书的两个章节将你的 JavaScript 技能带到一个新的水平。在第 17 章中，你将学习如何创建和使用自定义对象。在第 18 章中，你将学习使用闭包、模块和立即调用函数表达式（IIFE）。在该章结束时，你将学习如何创建自己的 JavaScript 插件。
+
+本部分章节的有趣之处在于，所有的应用程序都展示了如何应用你所学的 JavaScript 技能以及你在第 2 部分学到的 jQuery 技能。也就是说，这些应用程序的编写方式就像在现实世界中编写一样。
+
+# 如何处理数字、字符串和日期
+
+在第 2 章中，你学习了一些处理数字、字符串和日期的基本技能。现在，你将学习在 JavaScript 应用中处理数据所需的其他其他技能。
+
+| 主题 | 页码 |
+|---|--|
+| 如何处理数字 | 374 |
+| 如何使用 Number 对象的属性和方法 | 374 |
+| 如何使用 Math 对象的属性和方法 | 376 |
+| 如何生成随机数 | 378 |
+| **PiG 应用** | 380 |
+| HTML | 380 |
+| JavaScript | 382 |
+| **如何处理字符串** | 384 |
+| 如何使用 String 对象的属性和方法 | 384 |
+| 处理字符串的示例 | 386 |
+| **如何处理日期和时间** | 388 |
+| 如何创建 Date 对象 | 388 |
+| Date 对象的方法 | 390 |
+| 处理日期的示例 | 392 |
+| **倒计时应用** | 394 |
+| HTML 和 CSS | 394 |
+| JavaScript | 396 |
+| **透视** | 398 |
+
+# 如何处理数字
+
+在第 2 章中，你学习了如何声明数字变量并执行常见的算术运算。然后在第 4 章中，你学习了如何将小数四舍五入到固定位数。现在，你将在这些技能的基础上进行学习。
+
+# 如何使用 Number 对象的属性和方法
+
+图 13-1 从一个表格开始总结了 Number 对象的五个属性，你可以使用它们来表示特殊值。例如，`Number.MAX_VALUE` 代表 JavaScript 可以表示的最大值。有趣的是，每种语言都有其可以表示的最大值，大约是 1.798 后面跟着 300 个零（一个巨大的数字）。同样，`MIN_VALUE` 是一个极小的数字，`POSITIVE_INFINITY` 是任何大于最大值的数，而 `NEGATIVE_INFINITY` 是任何小于最小值的数。
+
+表格中的最后一个属性代表“不是数字”（NaN），它代表任何非数值。由于 `NaN` 可以表示大约 9000 万亿个不同的值，相等性测试 `NaN == NaN` 将始终返回 `false`。这就是为什么你必须使用 `isNaN()` 方法来测试一个值是否为数字。
+
+当你编写这些属性的代码时，始终使用图中所示 `Number` 作为对象名。这些是静态属性。不过，你也可以通过它们的快捷名称引用表格中的最后三个值。例如，图中的第一个示例显示了如何测试结果是否为 `Infinity`、`-Infinity` 或 `NaN`，以显示适当的消息。
+
+当在 JavaScript 中用 0 除以 0 时，结果是 `NaN`。然而，当你用非零除以 0 时，结果是 `Infinity` 或 `-Infinity`，取决于非零数的正负。这与大多数语言处理此的方式不同。在其他语言中，除以零通常会导致运行时错误。
+
+这些示例之后是一个表格，展示了 Number 对象的两个方法。请记住，当数值存储在变量中时，会创建一个 Number 对象。然后，你可以使用 Number 对象的方法来处理这些对象。
+
+例如，该表格后的第一个示例显示了如何使用 `toFixed()` 方法。在这里，第三条语句返回保留两位小数的 `1.49925`，即 `1.50`。但是，由于 `toFixed()` 方法返回的是字符串，该语句还使用了 `parseFloat()` 方法将舍入后的值作为数字存储在 `tax` 变量中，将其转换为 `1.5`。然后，示例中的最后一条语句再次使用 `toFixed()` 方法，以确保任何百位被舍入为 0 的数字都能以两位正确显示。结果是 `1.5` 在被 `alert()` 方法显示之前被转换成了 `1.50`。
+
+# Number 对象的属性
+
+| 属性 | 快捷方式 | 描述 |
+|---|---|---|
+| `Number.MAX_VALUE` | | 可以表示的最大正值。 |
+| `Number.MIN_VALUE` | | 可以表示的最小正值。 |
+| `Number.POSITIVE_INFINITY` | `Infinity` | 表示正无穷。 |
+| `Number.NEGATIVE_INFINITY` | `-Infinity` | 表示负无穷。 |
+| `Number.NaN` | `NaN` | 表示一个不是数字的值。 |
+
+示例 1：测试无穷、负无穷和 NaN
+
+```javascript
+if ( result == Infinity )
+
+  alert("The result exceeds " + Number.MAX_VALUE );
+
+else if ( result == -Infinity )
+
+  alert("The result is below " + Number.MIN_VALUE );
+
+else if ( isNaN(result) )
+
+  alert("The result is not a number");
+
+else { alert("The result is " + result + "); };
+```
+
+示例 2：除以零
+
+```javascript
+alert( 0 / 0 ); // Displays NaN
+
+alert( 10 / 0 ); // Displays Infinity
+```
+
+# Number 对象的方法
+
+| 方法 | 描述 |
+|---|---|
+| `toFixed(digits)` | 返回一个带有指定数字数的字符串。 |
+| `toString(base)` | 返回一个带有给定基数的字符串。 |
+
+示例 3：使用 `toFixed()` 方法
+
+```javascript
+var subtotal = 1.49925;
+
+var rate = 0.07;
+
+alert((subtotal * rate).toFixed(2)); // displays 0.10
+```
+
+示例 4：使用幂运算符
+
+```javascript
+var age = 10;
+
+prompt("Please enter your age: ");
+
+var tax = age ** 2; // tax is 100
+
+alert("Your age is " + tax);
+```
+
+## 描述
+
+| 特性 | 描述 |
+|---|---|
+| `ceil()` | 始终将小数值向正无穷方向舍入。 |
+| `floor()` | 始终将小数值向负无穷方向舍入。 |
+| `isNaN()` | 测试一个值是否为数字。 |
+| 除以零 | 根据正负号结果为 `Infinity` 或 `-Infinity`。 |
+| `NaN` | 表示非数值；`NaN == NaN` 为 false。 |
+| `Infinity` | 任何大于最大值 (`POSITIVE_INFINITY`) 的数。 |
+| `-Infinity` | 任何小于最小值的 (`NEGATIVE_INFINITY`)。 |
+
+图 13-1 如何使用 Number 对象的属性和方法
+
+13-1 中的最后一个示例显示了如何隐式地使用 `toString()` 方法。在这里，当 `age` 与字符串字面量拼接时，`number` 会自动转换为字符串。尽管如此，有时你可能显式地使用 `toString` 方法。
+
+# 如何使用 Math 对象的属性和方法
+
+图 13-2 显示了如何使用 Math 对象的属性和一些方法。当你使用它们时，`Math` 是对象名，因为该属性是静态属性，方法也是静态方法。
+
+第一个示例显示了如何使用 `PI` 属性，它返回 $\pi$ 的值。在此处，`PI` 属性用于计算半径为 3 的圆面积。
+
+第二个示例显示了如何使用 `abs()`（绝对值）方法。当给出一个负数时，它返回对应的正值。
+
+第三个示例显示了如何使用 `round()` 方法。注意在第三条语句中，`-3.5` 四舍五入到了 `-3`。它没有向下舍入到 `-4`。
+
+第四个示例显示了如何使用 `ceil()`（天整）和 `floor()` 方法。`ceil()` 方法始终将小数值向正无穷方向舍入。`floor()` 方法始终将小数值向负无穷方向舍入。
+
+第五个示例显示了如何使用 `pow()` 和 `sqrt()` 方法。`pow()` 方法的幂可以是小数。在第二个语句中，125 被提高了 1/3 次。这等同于计算 125 的立方根。
+
+第六个示例显示了如何使用 `min()` 和 `max()` 方法。方法不限于两个参数，因此你可以提供任意数量的参数。然后，这些方法将找到参数列表中的最小值或最大值。
+
+最后一个示例显示了如何使用 ECMAScript2015+ 的幂运算符将值提高到指定的幂。这是 Math 对象 `pow()` 方法的替代方案。
+
+Math 对象还提供了许多三角和对数方法。如果你有相关的数学背景，你应该能够很好地使用这些方法。不过，当你使用它们时，需要记住一点：三角方法使用弧度来测量角度，而不是角度。
+
+## Math 对象的一个属性
+
+| 属性 | 描述 |
+| --- | --- |
+| `Math.PI` | 返回 3.141592653589793，圆周长与直径的比 |
+
+### 示例 1：PI 属性
+
+```javascript
+var area = Math.PI * 3 * 3; // area 为 28.27433882308138
+```
+
+### Math 常用方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `Math.abs(x)` | 返回 x 的绝对值。 |
+| `Math.round(x)` | 返回四舍入到最近整数的 x。如果小数部分为 .5，则 向上舍入到下一个整数。 |
+| `Math.ceil(x)` | 返回向上舍入到下一个较大整数的 x。 |
+| `Math.floor(x)` | 返回向下取到下一个较小整数的 x。 |
+| `Math.pow(x, power)` | 返回 x 的指定幂。幂可以是小数。 |
+| `Math.sqrt(x)` | 返回 x 的平方根。 |
+| `Math.max(x1, x2, ...)` | 返回参数中的最大值。 |
+| `Math.min(x1, x2, ...)` | 返回参数中的最小值。 |
+
+### 示例 2：abs() 方法
+
+```javascript
+var result_2a = Math.abs(-3.4); // result_2a 为 3.4
+```
+
+### 示例 3：round() 方法
+
+```javascript
+var result_3a = Math.round(12.5); // result_3a 为 13
+var result_3b = Math.round(-3.4); // result_3b 为 -3
+var result_3c = Math.round(-3.5); // result_3c 为 -3
+var result_3d = Math.round(-3.51); // result_3d 为 -4
+```
+
+### 示例 4：floor() 和 ceil() 方法
+
+```javascript
+var result_4a = Math.floor(12.5); // result_4a 为 12
+var result_4b = Math.ceil(12.5); // result_4b 为 13
+var result_4c = Math.floor(-3.4); // result_4c 为 -4
+var result_4d = Math.ceil(-3.4); // result_4d 为 -3
+```
+
+### 示例 5：pow() 和 sqrt() 方法
+
+```javascript
+var result_5a = Math.pow(2,3); // result_5a 为 8 (2 的立方)
+var result_5b = Math.pow(125, 1/3); // result_5b 为 5 (125 的立方根)
+var result_5c = Math.sqrt(16); // result_5c 为 4
+```
+
+### 示例 6：min() 和 max() 方法
+
+```javascript
+var x = 12.5, y = -3.4; // max 为 12.5
+var max = Math.max(x, y); // min 为 -3.4
+var min = Math.min(x, y);
+```
+
+## ECMAScript2015+ 的幂运算符
+
+```javascript
+var result_7a = Math.pow(2,3); // result_7a 为 8 (2^3)
+var result_7b = 2 ** 3; // result_7a 为 8 (2^3)
+```
+
+# 如何生成随机数
+
+Math 对象的 `random()` 方法生成一个大于或等于 0 但小于 1 的随机数。这在 13-3 的第一个示例中所示。但通常，你想要一个不在 0 到 1 范围内的随机数。
+
+第二个示例展示了一个可以在 1 到指定最大值范围范围内生成随机数的函数。`getRandomNumber()` 函数接受一个参数，即该函数应该生成的随机数范围内的最大值。
+
+该函数声明了一个名为 `random` 的变量。该变量将保存函数生成的随机数。接下来，函数会验证 `max` 参数以确保它是一个数字。如果 NaN 测试失败，函数将直接返回函数开头声明的 `random` 变量。该变量尚未赋值，这意味着如果 `max` 参数不是数字，`getRandomNumber()` 函数将返回 `undefined`。
+
+如果 `max` 参数是数字，函数将计算一个 1 到 `max` 之间的整数。为了实现这一点，函数从 `random()` 方法获取一个值并将其乘以 `max` 的值。然后它使用 `floor()` 方法将该数字向下取整到最近的整数，并在结果的基础上加 1。
+
+例如，如果 `max` 是 6，那么 6 乘以 0 到 1 之间的随机数将返回 0 到 6 之间的值。然后，使用 `floor()` 方法将数字取整为 0 到 5 之间的整数，加 1 即可返回请求范围内的随机数。
+
+图中的 `getRandomNumber()` 函数是一个简单的函数，但你可以轻松改进它，使其允许传入范围的最小值，或者在整数范围之外增加小数范围。网络上有有很多生成随机数的在线示例可以供你参考。
+
+## Math 对象的 random() 方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `Math.random()` | 返回一个 0 到 1 之间的随机数。 |
+
+### 示例 1：生成随机数
+
+```javascript
+function getRandomNumber(max) {
+
+  var random;
+
+  random = Math.random();
+
+  if (isNaN(max)) {
+
+    return random;
+
+  }
+
+  random = Math.floor(random * max) + 1;
+
+  return random;
+
+}
+```
+
+### 示例 2：使用 getRandomNumber()
+
+```javascript
+var result = getRandomNumber(10); // result 是 1 到 10 之间的随机数
+```
+
+# JavaScript
+
+图 13-5 展示了此应用程序的 JavaScript。与本书本节的所有应用程序一样，该程序从 jQuery `ready()` 函数开始，该函数包含了两个函数和三个针对“新游戏”（New Game）、“掷”（Roll）和“保留”（Hold）按钮的事件处理器。
+
+第一个函数是 `getRandomNumber()` 函数，你在 13-3 中回顾过它。第二个是 `changePlayer()` 函数，它在一个玩家的回合结束时被调用。如果该函数中的语句将“当前”（current）span 元素中的名称更改为另一个玩家文本框中的名称，那么它会将“骰子”（die）和“总计”（total）文本框的值置零，并将焦点置于“掷”（Roll）按钮上。
+
+新游戏按钮点击事件的事件处理器首先将玩家的分数重置为零。然后，语句检查任意玩家文本框中的名称是否为空格（空白）。如果是其中一个，则移除“回合”（turn）部分的“open”类，这将隐藏用户界面中的最后两行，并显示一条提示玩家输入名称的消息。否则，`if` 语句的 `else` 分支会将该部分的类属性设置为“open”，并调用 `changePlayer()` 函数。
+
+掷骰按钮点击事件的事件处理器首先从“总计”文本框中获取该回合的总值。然后，它调用 `getRandomNumber()` 函数获取其中一个骰子的结果。如果结果为 1，则总值重置为零并调用 `changePlayer()` 函数。否则，将掷骰结果加到总值上，并将骰子和总计值显示在它们的文本框中，以便玩家再次掷骰。
+
+保留按钮点击事件的事件处理器首先声明一个名为 `score` 的变量，并从“总计”文本框中获取总值。接下来，一个语句测试当前玩家是否为玩家 1。如果是，代码获取 `score1` 对象并将其存储在 `score` 变量中。否则，获取 `score2` TextBox 对象并将其存储在 `score` 变量中。然后，它将 `score` TextBox 对象的新值设置为 `score` TextBox 对象的值加上总值。最后，如果分数大于或等于 100，则显示一个警报对话框宣布获胜者并调用 `newGame()` 函数。否则，调用 `changePlayer()` 函数。
+
+## 应用程序的 JavaScript
+
+```javascript
+$(document).ready(function() {
+
+  var getRandomNumber = function(max) {
+
+    var rand;
+
+    if (!isNaN(max)) {
+
+      random = Math.random();
+
+      random = Math.floor(random * max);
+
+      random = random + 1;
+
+    }
+
+    return rand;
+
+  }
+
+  var changePlayer = function() {
+
+    if ($("current").text() == $("#player1").val()) {
+
+      $("current").text($("player2").val());
+
+    } else {
+
+      $("current").text($("player1").val());
+
+    }
+
+    $("die").val("0");
+
+    $("total").val("0");
+
+    $("roll").focus();
+
+  }
+
+  $("#new_game").click(function() {
+
+    $("score1").val("0");
+
+    $("score2").val("0");
+
+    if ($("#player1").val() == "" || $("#player2").val() == "") {
+
+      $("turn").removeClass("open");
+
+      alert("Please enter two player names.");
+
+    } else {
+
+      $("turn").addClass("open");
+
+      changePlayer();
+
+    }
+
+  });
+
+  $("roll").click(function() {
+
+    var total = parseInt($("total").val());
+
+    var die = getRandomNumber(6);
+
+    if (die == 6) {
+
+      total = 0;
+
+      changePlayer();
+
+    } else { total = total + die; }
+
+    $("die").val(die);
+
+    $("total").val(total);
+
+  });
+
+  $("#hold").click(function() {
+
+    var score;
+
+    var total = parseInt($("total").val()) + total;
+
+    if ($("current").text() == $("#player1").val()) {
+
+      score = $("score1");
+
+    } else { score = $("score2"); }
+
+    score.val(parseInt(score.val()) + total);
+
+    if (score.val() >= 100) {
+
+      alert($("current").text() + " WINS!");
+
+      newGame();
+
+    } else { changePlayer(); }
+
+  }
+
+});
+```
+图 13-5 PIG 应用程序的 JavaScript
+
+# 如何处理字符串
+
+在第 2 章中，你学习了如何创建字符串。在第 3 章中，你学习了如何使用字符串。在第 4 章中，你学习了关于字符串的知识。在第 5 章中，你学习了字符串方法。在第 6 章中，你学习了字符串属性。
+
+# 如何使用字符串方法
+
+在第 1 章中，你学习了如何查找字符串。在第 2 章中，你学习了如何修改字符串。在第 3 章中，你学习了如何操作字符串。在第 4 章中，你学习了如何搜索字符串。在第 5 章中，你学习了如何提取字符串。在第 6 章中，你学习了如何格式化字符串。
+
+## 字符串的属性
+
+| 属性 | 描述 |
+| :--- | :--- |
+| `length` | 字符串中的字符数。 |
+
+### 示例 1：length
+
+```javascript
+var message_1 = "JavaScript";
+
+var result_1 = message_1.length;
+```
+
+## 字符串的方法
+
+| 方法 | 描述 |
+| :--- | :--- |
+| `charAt(position)` | 返回指定位置的字符。 |
+| `concat(string1, ...)` | 返回拼接字符串的新字符串。 |
+| `indexOf(search, start)` | 从位置（省略则从开始）在字符串中搜索 search。如果未找到，返回 -1。 |
+| `substr(start, length)` | 返回从开始到指定长度的子字符串。 |
+| `substring(start)` | 返回从开始到字符串结束的子字符串。 |
+| `substring(start, end)` | 返回从开始到不包含结束位置的子字符串。 |
+| `toLowerCase()` | 返回将大写字母转换为小写的字符串 |
+| `toUpperCase()` | 返回将小写字母转换为大写的字符串 |
+
+### 示例 2：charAt() 方法
+
+```javascript
+var message_2 = "JavaScript";
+
+var letter = message_2.charAt(4); // letter 为 "S"
+```
+
+### 示例 3：concat() 方法
+
+```javascript
+var message_3 = "Java";
+
+var result_3 = message_3.concat("Script"); // result_3 为 "JavaScript"
+```
+
+### 示例 4：indexOf() 方法
+
+```javascript
+var result_4a = message_2.indexOf("a"); // result_4a 为 1
+
+var result_4b = message_2.indexOf("a", 2); // result_4b 为 3
+
+var result_4c = message_2.indexOf("z"); // result_4c 为 -1
+```
+
+### 示例 5：substr() 和 substring() 方法
+
+```javascript
+var result_5a = message_2.substr(4, 5); // result_5a 为 "Script"
+
+var result_5b = message_2.substring(4); // result_5b 为 "Script"
+
+var result_5c = message_2.substring(0,4); // result_5c 为 "Java"
+```
+
+### 示例 6：toLowerCase() 和 toUpperCase() 方法
+
+```javascript
+var result_6a = message_2.toLowerCase(); // result_6a 为 "javascript"
+
+var result_6b = message_2.toUpperCase(); // result_6b 为 "JAVASCRIPT"
+```
+
+# 字符串操作示例
+
+在之前的图中，你看到了一些使用字符串方法的简单示例。现在，图 13-7 向你展示了如何通过组合字符串方法和循环来执行更复杂的操作。这应该为你如何在自己的应用程序中应用这些方法提供一些思路。
+
+示例 1 显示了如何通过一个名为 `ltrim()` 的函数去除字符串开头的空格，该函数接受要修剪的字符串作为唯一参数。此函数将 `start` 变量初始化为 0。然后，`while` 循环测试 `start` 位置的字符。只要它是空格，`start` 位置就会向后移动一个字符并继续循环。当找到非空格字符时，循环退出，函数返回从 `start` 的当前值到结束的子字符串。
+
+示例 2 显示了如何使用一个名为 `rtrim()` 的函数去除字符串末尾的空格。`end` 变量设置为字符串的最后一个位置（`length - 1`）。然后，`while` 循环测试 `end` 位置的字符。只要它是空格，`end` 位置就会向后移动一个字符。当找到非空格字符时，循环退出，函数返回从开始到 `end` 当前值加 1 的子字符串。这里使用 `end + 1` 是因为 `substring()` 方法不会返回 `end` 位置指定的字符。
+
+示例 3 显示了如何通过结合 `ltrim()` 和 `rtrim()` 函数来去除字符串两端的空格。这种修剪通常在处理用户输入内容时完成。
+
+示例 4 显示了如何对两个字符串之间的相等性进行不区分大小写的测试。这很有用，因为 `==` 运算符在与字符串一起运行时是区分大小写的。此示例仅使用 `toLowerCase()` 函数在比较之前将每个字符串转换为小写。
+
+示例 5 显示了如何使用一个名为 `equalIgnoreCase()` 的函数对两个字符串之间的相等性进行不区分大小写的测试。与示例 4 类似，该函数在将传递的两个参数都转换为小写后，测试这两个参数的相等性。
+
+## 示例 1：如何去除字符串开头的空格
+
+```javascript
+var ltrim = function( text ) {
+
+  var start = 0;
+
+  while ( text.charAt(start) == " " ) ) {
+
+    start++;
+
+  }
+
+  return text.substring(start);
+
+}
+
+var result = ltrim("JavaScript"); // result is "JavaScript"
+```
+
+## 示例 2：如何去除字符串末尾的空格
+
+```javascript
+var rtrim = function( text ) {
+
+  var end = text.length - 1;
+
+  while ( text.charAt(end) == " " ) ) {
+
+    end--;
+
+  }
+
+  return text.substring(0, end + 1);
+
+}
+
+var result = rtrim("JavaScript  "); // result is "JavaScript"
+```
+
+## 示例 3：如何比较 ltrim 和 rtrim 以去除所有空格
+
+```javascript
+var trim = function( text ) {
+
+  return ltrim( rtrim(text) );
+
+}
+
+var result = trim("  JavaScript  "); // result is "JavaScript"
+```
+
+## 示例 4：如何忽略大小写比较两个字符串
+
+```javascript
+var text1 = "JavaScript";
+
+var text2 = "javascript";
+
+if ( text1.toLowerCase() == text2.toLowerCase() ) {
+
+  alert("The strings are the same.");
+
+}
+```
+
+## 示例 5：一个用于忽略大小写比较两个字符串的函数
+
+```javascript
+var equalIgnoreCase = function( text1, text2 ) {
+
+  return text1.toLowerCase() == text2.toLowerCase();
+
+}
+
+if ( equalIgnoreCase("JavaScript", "javascript") ) {
+
+  alert("The strings are the same.");
+
+}
+```
+
+# 如何处理日期和时间
+
+在第 4 章中，你学习了如何创建 `Date` 对象以及如何使用四个方法来处理它们。在这个主题中，你将学习更多关于创建 `Date` 对象和使用这些对象的方法的内容。
+在 JavaScript 中，日期用自 1970 年 1 月 1 日午夜以来的毫秒数表示。正值表示该日期之后，负值表示该日期之前。在内部，日期以通用时间（或格林威治标准时间 GMT）存储。然而，JavaScript 可以访问客户端计算机上的时区，并对日期调整为本地时间。
+
+# 如何创建 Date 对象
+
+图 13-8 展示了使用 JavaScript 创建 `Date` 对象的四种方法。第一个示例显示了如何创建一个代表用户计算机本地时间的 `Date` 对象。这是通过指定不带参数的 `Date` 构造函数来实现的。这是你在第 4 章中学到的方法。
+
+第二个示例显示了如何通过指定字符串格式的日期和时间来创建 `Date` 对象。在这种情况下，年份必须是四位数字，小时必须以 24 小时制（或军事时间）指定。例如，3:15pm 在 24 小时制上是 15:15。如果你省略了时间，则使用午夜。
+
+第三个示例显示了如何通过指定日期的部分来创建 `Date` 对象。在这里，年份和月份是必须的。然后如果省略了日期，则使用 1。如果省略了剩余日期的任何部分，则使用 0。
+
+当你使用这种方法时，请记住月份是从 0 到 11 编号的，0 代表 1 月，11 代表 12 月。因此，3 是 4 月，10 是 11 月。这使得月份数字配合数组（数组也从 0 开始编号）。
+
+第四个示例向你展示了如何通过复制另一个 `Date` 对象来创建一个 `Date` 对象。这允许你操作副本而不影响原始。
+
+## 创建代表当前时间的 Date 对象
+
+```javascript
+var now = new Date();
+```
+
+## 通过指定字符串创建 Date 对象
+
+```javascript
+var electionDay = new Date("11/6");
+
+var grandOpening = new Date("/2/16/2017");
+
+var departureTime = new Date("/4/6/2017:00am");
+```
+
+## 通过指定日期部分创建 Date 对象
+
+构造函数的语法
+`new Date(year, month, day, hours, minutes, seconds)`
+
+## 示例
+
+```javascript
+var electionDay = new Date(2018, 10);              // 10是11月
+
+var grandOpening = new Date(2017, 1, 16);         // 1是2月
+
+var departureTime = new Date(2017, 3, 6, 30);          // 3是4月
+```
+
+## 通过复制创建 Date 对象
+
+```javascript
+var invoiceDate = new Date("/8/2/2017");
+
+var dueDate = new Date(invoiceDate);
+
+// 然后你可以为到期日期增加天数。
+```
+
+## 指定日期字符串时的某些意外结果
+
+```javascript
+var electionDay = new Date("11-6-2018");      // 无效日期 (Invalid Date)
+
+var electionDay = new Date("11/6/18");                // 1916年11月8日
+```
+
+## Date 对象的工作原理
+
+- 如果调用构造函数时不带任何参数，它将创建一个新的 Date 对象并设置为当前日期和时间。
+- 如果在调用构造函数时将字符串作为参数，构造函数将解析字符串为日期或时间并使用它创建新的 Date 对象。然而，如果你没有在参数中使用斜杠和四位年份，可能会得到意外结果。
+- 如果在调用构造函数时使用两个或多个数字作为参数，将按照上述顺序使用数字创建新的 Date 对象。在这种情况下，年份和月份是必须的，其余参数是可选的。
+- 如果在调用构造函数时将另一个 Date 对象作为参数，它将创建一个该 Date 对象的副本的新 Date 对象。
+- 如果在调用构造函数时使用的参数不是有效日期，它将创建一个包含 "Invalid Date" 的新 Date 对象。
+
+# Date 对象的方法
+
+图 13-9 描述了 Date 对象提供的几种方法。第一组方法从日期创建一个格式化后的字符串。然而，如示例所示，你无法控制这些方法所使用的格式。在接下来的图中，你将学习如何为日期和时间字符串创建自定义的格式。
+
+第二组方法用于从 Date 对象中提取部分。在这里，除了 `getTime()` 方法外，所有方法都从本地时间返回日期部分。相比之下，`getTime()` 方法使用通用标准时间。还有一个 `getYear()` 方法，它返回两位数字的年份，但不建议使用它。
+
+第三组方法用于为 Date 对象中的各个部分设置新值。这些方法允许你使用允许范围之外的值。那么，任何超出或低于允许范围的值都会导致下一个有效日期部分发生进位（roll over）。
+
+例如，如果你将日期的的小时设置为 25，则时间将被设置为 1，并在日期的基础上增加一天。或者，如果你将月份设置为 0，则月份将回退一个月，且日期将设置为该月的最后一天。通过允许你使用超出正常范围的值，JavaScript 提供了一种利用日期或时间的任任何部分进行日期数学运算的机制。你将在接下来的图中看到相关示例。
+
+# Date 对象的格式化方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `toString()` | 返回一个包含使用客户端时区的本地日期和时间的字符串。 |
+| `toDateString()` | 返回一个仅表示本地时间日期的字符串。 |
+| `toTimeString()` | 返回一个仅表示本地时间的字符串。 |
+
+```javascript
+var birthday = new Date(2017, 0, 7, 8, 25); // Jan 7, 2017 8:25am
+
+alert(birthday.toString()); // // Sat 07 2017 08:25:00 GMT-0500
+
+alert(birthday.toDateString()); // // Sat 07 2017
+
+alert(birthday.toTimeString()); // // 08:25:00 GMT-0500
+```
+
+# Date 对象的 get 方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `getTime()` | 返回自通用标准时间 (GMT) 1970 年 1 月 1 日午夜以来的毫秒数。 |
+| `getFullYear()` | 返回本地时间的四位数字年份。 |
+| `getMonth()` | 返回本地时间的月份，1 月从 0 开始。 |
+| `getDate()` | 返回本地时间的每月的几。 |
+| `getDay()` | 返回星期几（1=星期日，2=星期一，以此此类推）。 |
+| `getHours()` | 返回本地时间的 24 小时制的小时。 |
+| `getMinutes()` | 返回本地时间的分钟。 |
+| `getSeconds()` | 返回本地时间的秒。 |
+| `getMilliseconds()` | 返回本地时间的毫秒。 |
+
+# Date 对象的 set 方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `setFullYear(year)` | 设置本地时间的四位数字年份。 |
+| `setMonth(month)` | 设置本地时间的月份。 |
+| `setDate(day)` | 设置本地时间的每月的几。 |
+| `setHours(hour)` | 设置本地时间的 24 小时制的小时。 |
+| `setMinutes(minute)` | 设置本地时间的分钟。 |
+| `setSeconds(second)` | 设置本地时间的秒。 |
+| `setMilliseconds(ms)` | 设置本地时间的毫秒。 |
+
+## 描述
+
+- 除了 `getTime()` 方法外，get 和 set 方法都使用用户计算机上指定的时区来处理本地时间。
+- 还有互补的 get 和 set 方法以 `getUTC` 和 `setUTC` 开头，它们使用通用标准时间 (GMT) 处理 Date 对象。例如，`getUTCHours()` 方法返回通用标准时间的 24 小时制的小时。
+
+图 13-9 Date 对象的方法
+
+# 日期操作示例
+
+图 13-10 显示了如何应用上一个图中的方法。第一个示例向你展示了如何格式化日期。最后三个示例展示了如何对日期进行计算。这应该能给你如何在应用程序中使用 Date 对象提供一些思路。
+
+示例 1 向你展示了如何格式化日期。为此，JavaScript 创建了一个包含日期和时间的新 Date 对象。接下来，它提取年份、月份和日期部分，并在月份数字上加 1。然后，它使用这些值构建字符串。在构建字符串的过程中，如果月份和日期数字小于 10，则会在前面补零。
+
+示例 2 向你展示了如何计算从当前日期到元旦的天数。首先，在 Date 对象中获取当前日期并创建该对象的副本。然后，将副本中的月份和日期都设置为 1 月 1 日，并在日期上加 1。此时，新变量包含当前日期，而 `newYear` 计算出 1 月 1 日。
+
+接下来，通过减去由 `getTime()` 方法提取的日期，计算两个日期之间的毫秒数。
+
+# 倒计时应用的用户界面
+
+![](img/32b24cb9657418b8429a4117bd539786_414_0.png)
+
+# 应用的 HTML 代码
+
+```html
+<!DOCTYPE html>
+
+<html
+
+<head>
+
+  <title>倒计时至...</title>
+
+  <link rel="stylesheet" href="countdown.css">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+</head>
+
+<body>
+
+  <h1>倒计时至...</h1>
+
+  <label for="event">事件名称:</label>
+
+  <input type="text" name="event" id="event"><br>
+
+  <label for="date">事件日期:</label>
+
+  <input type="text" name="date" id="date"><br>
+
+  <input type="button" name="countdown" id="countdown" value="倒计时!"><br>
+
+  <p id="message">&nbsp;</p>
+
+</body>
+
+</html>
+```
+
+# `<p>` 元素的 CSS 规则集
+
+```css
+#message {
+
+  font-weight: bold;
+
+  color: red;
+
+}
+```
+
+图 13-11 倒计时应用的 HTML 和 CSS
+
+# JavaScript
+
+与之前一样，图 13-2 中的 JavaScript 以 jQuery `ready()` 函数开始。此 `ready()` 函数只包含一个事件处理器。它是用于倒计时按钮的点击事件的。
+
+该事件处理器首先获取用户输入的事件名称和日期，它获取 ID 为 "message" 的 `<div>` 元素，并将其存储在名为 `message` 的变量中。需要注意的是，前两行只是获取元素的值，而最后一行获取的是元素本身。它是向用户显示消息的元素，代码稍后就会就会使用它。
+
+接下来，代码开始使用 `if` 语句进行一系列数据验证检查。首先，它使用 String 对象的 `length` 属性来确保用户输入了事件名称和事件日期。其次，它使用 String 对象的 `indexOf()` 方法确保输入日期时带有斜杠。第三，它使用 String 对象的 `substring()` 方法获取日期字符串的最后四个字符，然后使用 `isNaN()` 方法确保这些字符是数字。第四，它使用用户输入的日期字符串创建一个新的 `Date` 对象，然后检查该对象是否包含 "Invalid Date"。
+
+如果这些任何数据验证检查失败，它们将使用 `message` 变量中 `<div>` 元素的 `text()` 方法显示错误消息并返回。这意味着一旦某个检查失败，消息就会显示且函数停止运行。
+
+如果所有验证检查通过，代码将计算距离事件的天数。为了实现这一点，它创建一个包含当前日期的新 `Date` 对象并将其存储在 `today` 中。它计算一天的毫秒数并将其存储在 `oneDay` 变量中。它使用 Date 对象的 `getTime()` 方法从事件日期值减去 `today` 值（两者都是毫秒），并将结果除以毫秒值的 `oneDay` 值。计算结果使用 `Math.ceil()` 向上取整并存储在 `days` 变量中，该变量现在代表距离事件的天数。
+
+接下来，此函数会检查用户输入的日期是在未来、过去还是今天。如果天数为零，则用户输入的日期是今天。如果天数小于零，则日期在过去。如果天数大于零，则日期在未来。对于每种结果，此函数都会构建一条不同的消息，并使用 `<div>` 元素的 `text()` 方法显示该消息。
+
+为了构建这些消息，使用了 String 对象的 `concat()` 方法。注意，当你处理像 `days.toString()` 这样的字符串变量或像 "Hooray! Today is " 这样的字符串字量时，可以调用此方法。根据消息的不同，事件名称要么使用 `toLowerCase()` 方法转为小写，要么使用 `substring` 和 `toUpperCase()` 方法大写化。在每条消息中，用户输入的日期都使用 Date 对象的 `toString()` 方法显示。
+
+# 第 13 章 如何处理数字、字符串和日期 397
+
+# 倒计时应用的 JavaScript
+
+```javascript
+$(document).ready(function() {
+
+  $("#countdown").click(function() {
+
+    var event = $("#event").val();
+
+    var dt = $("#date").val();
+
+    var message = $("#message");
+
+    // 确保输入了事件和日期
+
+    if (event.length == 0 || dt.length == 0) {
+
+      message.text("请输入名称和日期.");
+
+      return;
+
+    }
+
+    // 确保日期字符串包含斜杠和 4 位数年份
+
+    if (dt.indexOf("/") == -1) {
+
+      message.text("请以 MM/DD/YYYY 格式输入日期.");
+
+      return;
+
+    }
+
+    var year = dt.substring(dt.length - 4);
+
+    if (isNaN(year)) {
+
+      message.text("请以 MM/DD/YYYY 格式输入日期.");
+
+      return;
+
+    }
+
+    // 将日期字符串转换为 Date 对象并检查有效性
+
+    var date = new Date(dt);
+
+    if (date == "Invalid Date") {
+
+      message.text("请以 MM/DD/YYYY 格式输入日期.");
+
+      return;
+
+    }
+
+    // 计算天数
+
+    var today = new Date();
+
+    var oneDay = 24*60*60*1000; // 小时 * 分钟 * 秒 * 毫秒
+
+    var days = (date.getTime() - today.getTime()) / oneDay;
+
+    days = Math.ceil(days);
+
+    // 创建并显示消息
+
+    if (days == 0) {
+
+      message.text("太棒了！ 今天是 " + event.toLowerCase() + "\n\n" + date.toDateString());
+
+    }
+
+    if (days < 0) {
+
+      // 事件字母大写
+
+      event = event.substring(0,1).toUpperCase() + event.substring(1);
+
+      message.text("发生于 " + Math.abs(days) + " 天前。 \n\n" + date.toDateString());
+
+    }
+
+    if (days > 0) {
+
+      message.text(days.toString() + " 天后 " + event.toLowerCase() + ",\n\n" + date.toDateString());
+
+    }
+
+  });
+
+  $("#event").focus();
+
+});
+```
+图 13-12 倒计时应用的 JavaScript
+
+# 观点
+
+本章介绍了处理数字、字符串和日期的基本技能。要扩展这些技能，可以阅读第 16 章，它展示了如何使用数组。
+
+# 术语
+
+静态属性
+静态方法
+
+# 总结
+
+- 为了处理数值数据，可以使用 Number 和 Math 对象的静态属性和方法。这包括 Math 对象的 `random()` 方法，它可以生成 0 到 1 之间的随机数。
+- String 对象的 `length` 属性返回字符串中的字符数，String 对象的方法允许你处理字符串。
+- 在 JavaScript 中，日期存储在 Date 对象中，它们由自 1970 年 1 月 1 日午夜以毫秒数表示。
+- Date 对象的构造函数允许你以四种不同的方式创建 Date 对象。然后可以使用 Date 对象的的方法来处理日期。
+
+# 第 13 章 如何处理数字、字符串和日期 399
+
+# 练习 13-1 增强未来价值应用
+
+在此练习中，你将增强一个下所示的未来价值应用。在此你将处理大数字、使用随机数生成器、处理日期并处理字符串。
+
+![](img/32b24cb9657418b8429a4117bd539786_418_0.png)
+
+## 打开、查看并测试应用
+
+1. 使用文本编辑器或 IDE 打开未来价值应用的 `index.html` 和 `future_value.js` 文件，它们位于文件夹：`javascript\exercises\ch13\future_value\`
+   然后，使用有效值测试 JavaScript 以查看其工作原理。
+
+2. 审查此应用的 JavaScript 代码。你可以看到 13-3 中的 `getRandomNumber()` 函数已复制到文件中，以便稍后使用。
+
+## 处理大数字
+
+3. 使用以下值测试应用：10000 作为投资金额，15 作为利率，1000 作为年份。注意这会以 e 计数法返回未来价值，以及 JavaScript 提供的尽可能多的有效数字。
+4. 将年份条目改为 10000 并再次测试应用。这次，未来价值金额返回 `Infinity`。这种失控循环是导致应用程序产生 `Infinity` 和 `-Infinity` 值的常见错误。
+5. 通过在计算未来价值的循环中添加 `if` 语句来修改 JavaScript。该语句应测试未来价值是否等于无穷。如果是，该语句应使用 `alert()` 方法显示如下消息，其中 `i` 是循环的计数器：
+   ```javascript
+   未来价值 = Infinity
+
+   i = 4995
+   ```
+   该语句还应将 `i` 的值设置为年份，以便循环结束。
+6. 在循环结束后添加一个 `alert()` 方法显示 JavaScript 数字的最大值，因为这与计算无关。然后，测试应用以查看显示的警报消息。
+
+## 使用随机数生成器
+
+7. 注释掉从文本框获取投资金额、利率和年数的语句。然后，使用 `getRandomNumber()` 函数获取投资金额、利率和年数的随机值。这些变量的最大值应分别为 50000、15 和 50。应用程序在用户每次点击“计算”（Calculate）按钮时都应获取这些随机值，这些值应显示在前三个文本框中，并用使用这些值计算未来值。
+
+8. 注释掉你在第 6 步中添加的 `alert()` 方法。然后，通过多次点击“计算”（Calculate）按钮来测试此应用程序，观察数值的变化。这说明了如何使用随机数生成器来快速测试具有各种数值的应用程序。
+
+## 使用美元符号和逗号格式化未来值
+
+9. 创建一个新函数 `formatFV()`，它获取计算后的未来值，并返回该值的格式化版本，如上图所示。
+
+要实现这一点，请使用 `indexOf()` 方法获取小数点的位置，并使用 `substring()` 方法从未来值中提取分位、百位、千位和数字。然后，你可以用美元符号、逗号和小数点将这些部分拼接起来。技巧在于，某些未来值没有百万位，因此你需要用 `if` 语句来处理这种情况。
+
+10. 修改“计算”（Calculate）按钮的点击事件处理器，使其在计算未来值后调用此方法进行格式化，然后将其显示在未来值文本框中。
+
+## 在按钮下方的 `<p>` 元素添加当前日期
+
+11. 首先创建一个名为 `getDate()` 的新函数，它获取当前日期并按如下格式格式：
+
+```
+Today is 04/15/2017 at 14:29.
+```
+
+要做到这一点，你需要获取一个包含当前日期的 `Date` 对象。然后，你需要使用 `Date` 方法提取相应的日期和时间部分，以便按上述方式对其进行格式化。注意这里使用的是 24 小时制。
+
+12. 修改 ready 事件处理器，使其调用 `getDate()` 方法获取格式化日期，然后将其显示在 HTML 中按钮下方的 `<p>` 元素中。
+
+# 如何使用控制结构、异常和正则表达式
+
+在第 3 章中，你学习了条件表达式以及 `if`、`do-while` 和 `for` 语句。现在，你将学习更多关于编码表达式和语句，包括如何使用条件运算符以及 `switch`、`break` 和 `continue` 语句。
+
+之后，你将学习如何处理应用程序抛出的任何异常，以及如何使用正则表达式。这两个技能在验证用户输入时都非常有用。
+
+| 关于控制结构的你需要知识............................................... | 402 |
+| 如何使用相等运算符和恒等运算符........................................... | 402 |
+| 如何使用 break 和 continue 语句............................................... | 402 |
+| 如何使用 switch 语句................................................................ | 404 |
+| 如何使用条件运算符........................................................... | 406 |
+| 如何使用 AND 和 OR 运算符进行选择......................................... | 408 |
+| 发票应用程序.................................................................................. | 410 |
+| HTML...................................................................................................... | 410 |
+| JavaScript.............................................................................................. | 412 |
+| 如何处理异常............................................................................... | 414 |
+| 如何使用 try-catch 语句................................................................ | 414 |
+| 如何创建并抛出 Error 对象....................................................... | 416 |
+| 如何使用正则表达式.................................................................. | 418 |
+| 如何创建和使用正则表达式.................................................. | 418 |
+| 如何匹配特殊字符和字符类型.................................. | 420 |
+| 如何匹配字符串位置、子模式和重复模式......... | 422 |
+| 用于数据验证的正则表达式....................................................... | 424 |
+| 账户资料应用程序.................................................................. | 426 |
+| HTML 和 CSS....................................................................................... | 426 |
+| JavaScript.............................................................................................. | 428 |
+| 观点.................................................................................. | 430 |
+
+# 关于控制结构你还需要了解的
+
+在第 3 章中，你学习了如何编写条件表达式以及如何在 `if`、`for` 和 `while` 语句中使用它们。现在，你将学习更多关于使用这些结构。
+
+# 如何使用相等运算符和恒等运算符
+
+在第 3 章中，你学习了如何使用图 14-1 顶部所示相等运算符。对于简单的比较，这些运算符运行良好。但当测试更复杂时，可能会由于两个原因出现意料之外的结果。
+
+首先，相等运算符会执行类型转换（type coercion）。这意味着如果比较的是不同类型的数据，在进行比较之前，值将转换为相同的数据类型。例如，在 `test == "3"` 测试中，字符串 "3" 被转换为数字 3，然后进行比较。
+
+其次，类型转换执行的类型转换与 `parseInt()` 和 `parseFloat()` 方法执行的类型转换是不同的。例如，空字符串通过类型转换转换为 0，但 `parseFloat()` 方法将空字符串转换为 `NaN`。
+
+通过使用此图第二个表中所示的恒等运算符可以避免这些问题。因为恒等运算符不会执行类型转换。
+
+# 如何使用 break 和 continue 语句
+
+`break` 和 `continue` 语句让你对循环有额外的控制。图 14-1 中的第一个示例展示了如何使用 `break`。第二个示例展示了如何在 while 循环中使用 `continue`。
+
+# 如何使用控制结构、异常和正则表达式 403
+
+# 相等运算符
+
+| 运算符 | 说明 | 示例 |
+| --- | --- | --- |
+| `==` | 等于 | "Hopper" |
+| `!=` | 不等于 | 0 |
+
+# 恒等运算符
+
+| 运算符 | 说明 | 示例 |
+| --- | --- | --- |
+| `===` | 等于 | "Hopper" |
+| `!==` | 不等于 | 0 |
+
+# 示例 1：while 循环中的 break 语句
+
+```javascript
+var number;
+
+while (true) {
+
+    number = parseInt(prompt("输入 1 到 10 之间的数字"));
+
+    if (isNaN(number) || number < 1 || number > 10) {
+
+        alert("输入无效，请重试.");
+
+    } else {
+
+        break;
+
+    }
+
+}
+
+alert(number);
+```
+
+# 示例 2：while 循环中的 continue 语句
+
+```javascript
+var sum = 0;
+
+var number = 0;
+
+while (number <= 40) {
+
+    number++;
+
+    if (number % 5 !== 0) {
+
+        continue; // number 不能被 5 整除
+
+    }
+
+    sum += number;
+
+}
+
+alert(sum);
+```
+
+# 说明
+
+- 相等运算符在需要时会执行类型转换。这意味着它们会将数据从一种类型转换为另一种。例如，它们经常将字符串转换为数字。
+
+- 然而，相等运算符执行的类型转换与 `parseInt()` 或 `parseFloat()` 方法执行的转换不同。
+
+- 恒等运算符不执行类型转换。如果两个操作数的类型不同，结果将始终为假。
+
+- `break` 语句结束循环。换句话说，它跳出循环。
+
+- `continue` 语句结束循环的当前迭代，但允许下一次迭代继续。换句话说，它跳转到循环开始。
+
+- 当你处理嵌套循环时，`break` 和 `continue` 语句仅适用于它们所在的循环。
+
+## 如何使用 switch 语句
+
+switch 语句是表示特定形式 if 语句的一种方便方式。具体来说，它可以代替带有多个 else 子句的 if 语句，在这些语句中，会对一个表达式与多个值进行等值测试。图 14-2 中的语句说明了这一点。
+
+switch 语句以关键字 switch 开头，后面跟着括号内的 switch 表达式。这个表达式不是条件表达式。它是一个返回单一值的表达式，该值将用于确定执行哪个 `case`。如图中的示例所示，该表达式通常简单到只有一个变量。
+
+当执行 switch 语句时，它会检查每个 `case` 标签中的值。如果发现某个值等于表达式的结果，它就会执行该 `case` 标签后的代码。它会继续执行，直到遇到 `break` 语句或 switch 语句的结束。
+
+如果没有一个 `case` 标签与 switch 语句中的值匹配，则会执行 `default` 标签后的代码。但这个 `default` 情况是可选的。如果省略它且没有 `case` 标签匹配表达式，则 switch 语句将不执行任何代码。
+
+在图的第一个示例中，表达式就是一个变量 `letterGrade`，它应该包含一个字母。然后，每个 `case` 都会与该变量的值进行比较。例如，如果 `letterGrade` 为 "B"，switch 语句开始执行该标签后的代码，并将变量 `message` 设置为 "above average"。然后它会遇到一个 `break` 语句，switch 语句不再继续执行后续代码。然而，如果 `letterGrade` 是 "Z"，则 `default` 标签后的代码将执行执行，`message` 将设置为 "invalid grade"。
+
+在第二个示例中，`case` 标签的编码方式提供了“穿透”（fall through）。这种情况发生在代码从一个 `case` 标签开始执行，但没有遇到 `break` 语句，因此它会通过另一个 `case` 标签并继续执行。尽管这通常是不鼓励的，因为它可能会导致混惑，但这个示例展示了 `case` 穿透有用的情况。
+
+在这个示例中，当 `letterGrade` 为 "A" 或 "B" 时，应该执行相同的代码。为了避免重复代码，在代码之前放置了两个 `case` 标签。如果 `letterGrade` 是 "A"，switch 语句将穿透并执行 "B" 之后的代码。同样，如果 `letterGrade` 是 "D"，switch 语句将穿透并执行 "F" 之后的代码。对于此类情况，你应该避免在 switch 语句中使用穿透功能，因为那可能导致意外错误且难以调试。
+
+当你使用 switch 语句时，可以在 `case` 内部嵌套 if 语句。你也可以在另一个 switch 语句的 `case` 中嵌套 switch 语句。一如既常，你需要对嵌套需要小心，因为可能会让你的代码变得混乱且难以维护。
+
+## 带有默认情况的 switch 语句
+
+```javascript
+switch ( letterGrade ) {
+
+    case "A":
+
+        message = "well above average";
+
+        break;
+
+    case "B":
+
+        message = "above average";
+
+        break;
+
+    case "C":
+
+        message = "average";
+
+        break;
+
+    case "D":
+
+        message = "below average";
+
+        break;
+
+    case "F":
+
+        message = "failing";
+
+        break;
+
+    default:
+
+        message = "invalid grade";
+
+        break;
+
+}
+```
+
+## 带有穿透现象的 switch 语句
+
+```javascript
+switch ( letterGrade ) {
+
+    case "A":
+
+    case "B":
+
+        message = "Scholarship approved.";
+
+        break;
+
+    case "C":
+
+        message = "Application requires review.";
+
+        break;
+
+    case "D":
+
+    case "F":
+
+        message = "Scholarship not approved.";
+
+        break;
+
+}
+```
+
+
+
+## 描述
+
+- `switch` 语句开始评估括号内的 `switch` 表达式。
+- 表达式后，`switch` 语句将控制转移到与表达式值匹配的 `case` 标签。然后，它执行该 `case` 的语句。当遇到 `break` 语句或 `switch` 语句的结束时停止执行。
+- `default` 情况是可选的，可以省略。如果包含，你只能有一个 `default` 情况。它通常是 `switch` 语句中的最后一个 `case`，但也可以位于任何地方。
+- 如果 `case` 不包含 `break` 语句，执行将穿透到下一个标签。
+- 你可以在 `switch` 语句的 `case` 内部嵌套 `if` 语句或其他 `switch` 语句。
+
+图 14-2 如何使用 `switch` 语句
+
+## 如何使用条件运算符
+
+图 14–3 显示了如何使用 JavaScript 的条件运算符。这是 JavaScript 唯一的三元运算符，意味着它有三个操作数。相比之下，一元运算符（如 `++`）有一个操作数，而二元运算符（如 `*`）有两个操作数。
+
+由于条件运算符有三个操作数，它需要两个符号来分隔它们。如图顶部的语法所示，问号和冒号被用作分隔符。
+
+执行时，条件运算符首先评估条件表达式以得到一个真或假的结果。然后，如果条件表达式为真，则中间操作数中表达式的结果将作为条件运算符的结果。如果条件表达式为假，则最后一个操作数中表达式的结果将作为条件运算符的结果。
+
+图第一个示例展示了如何使用条件运算符根据比较将变量设置为一个值。如果 `age` 为 18 或更多，`message` 将包含 "Can vote"。如果 `age` 小于 18，`message` 将包含 "Cannot vote"。
+
+第二个示例展示了如何在其中一个操作数中使用表达式。如果 `hours` 超过 40，`message` 将包含 1。
+
+第三个示例展示了如何选择单数或复数形式。如果 `errorCount` 为 1，`message` 将包含 "s"（注：原文此处逻辑似乎有误，根据语境应为单数处理，但翻译遵循原文结构）。*注：此处根据上下文逻辑理解为 "If errorCount is 1, message will contain 's'"，但原文为 "The third example shows how..."*。
+
+对于此类情况，你应该避免在 `switch` 语句中使用穿透，因为那可能导致意外错误且难以调试。
+
+当你使用 `switch` 语句时，可以在 `case` 内部嵌套 `if` 语句。
+
+## 描述
+
+- `switch` 语句开始评估括号内的 `switch` 表达式。
+- 表达式评估后，`switch` 语句将控制转移到与表达式值匹配的 `case` 标签。然后，它执行该 `case` 的语句。当遇到 `break` 语句或 `switch` 语句的结束时停止执行。
+- `default` 情况是可选的，可以省略。如果包含，你只能有一个 `default` 情况。它通常是 `switch` 语句中的最后一个 `case`，但也可以位于任何地方。
+- 如果 `case` 不包含 `break` 语句，执行将穿透到下一个标签。
+- 你可以在 `switch` 语句的 `case` 内部嵌套 `if` 语句或其他 `switch` 语句。
+
+图 14-2 如何使用 `switch` 语句
+
+## 如何使用条件运算符
+
+图 14–3 显示了如何使用 JavaScript 的条件运算符。这是 JavaScript 唯一的三元运算符，意味着它有三个操作数。相比之下，一元运算符（如 `++`）有一个操作数，而二元运算符（如 `*`）有两个操作数。
+
+由于条件运算符有三个操作数，它需要两个符号来分隔它们。如图顶部的语法所示，问号和冒号被用作分隔符。
+
+执行时，条件运算符首先评估条件表达式以得到一个真或假的结果。然后，如果条件表达式为真，则中间操作数中表达式的结果将作为条件运算符的结果。如果条件表达式为假，则最后一个操作数中表达式的结果将作为条件运算符的结果。
+
+图中的第一个示例展示了如何使用条件运算符根据比较将变量设置为一个值。如果 `age` 为 18 或更多，`message` 将包含 "Can vote"。如果 `age` 小于 18，`message` 将包含 "Cannot vote"。
+
+第二个示例展示了如何在其中一个操作数中使用表达式。如果 `hours` 超过 40，`message` 将包含 1。
+
+第三个示例展示了如何选择单数或复数形式。如果 `errorCount` 为 1，`message` 将包含 "s"（注：原文此处为 "If errorCount is 1, the message will contain 's'"，逻辑上可能反了，此处忠实翻译）。
+
+第四个示例展示了当 `value` 达到最大值并增加 1 时将其设置为 1。
+
+第五个示例展示了如何将条件运算符与 `return` 关键字结合。在这里，如果 `number` 大于 `highest`，则返回 `highest`。
+
+为了清晰起见，使用 `if` 语句比运算符更好。通过最后两个示例说明了这一点。然而，许多 JavaScript 程序员喜欢使用条件。
+
+## 条件运算符的语法
+
+```javascript
+( conditional_expression ? value_if_true : value_if_false )
+```
+
+## 条件运算符的示例
+
+- 示例 1：根据比较设置字符串
+  `var message = ( age >= 18 ) ? "Can vote" : "Cannot vote";`
+
+- 示例 2：计算加班费
+  `var overtime = ( hours > 40 ) ? ( hours - 40 ) * rate * 1.5;`
+
+- 示例 3：根据值选择单数或复数形式
+  `var ending = (errorCount == 1) ? "" : "s";`
+  `var message = "Found " + error_count + " error" + ending;`
+
+- 示例 4：当 `value` 达到最大值并增加 1 时设置为 1
+  `var value = ( value == maxValue ) ? 1 : value + 1;`
+
+- 示例 5：根据比较返回两个值之一
+  `return ( number > highest ) ? highest : number;`
+
+## 如何用 `if` 语句重写条件运算符
+
+### 示例 1 用 `if` 语句重写
+
+```javascript
+var message;
+
+if ( age >= 18 ) {
+  message = "Can vote";
+} else {
+  message = "Cannot vote";
+}
+```
+
+### 示例 4 用 `if` 语句重写
+
+```javascript
+if ( value == maxValue ) {
+  value = 1;
+} else {
+  value = value + 1;
+}
+```
+
+## 描述
+
+- 条件运算符评估条件表达式。然后，如果表达式为真，则返回中间操作数的结果。但如果表达式为假，则返回第三个操作数的结果。
+- 尽管使用条件运算符可能会导致代码晦涩，但 JavaScript 程序员经常使用这种运算符。然而，为了清晰起见，条件运算符可以用 `if` 语句重写。
+
+## 如何在选择中使用 `AND` 和 `OR` 运算符
+
+在第 3 章中，你学习了如何在复合条件表达式中使用逻辑运算符 `AND` 和 `OR`。在那种情况下，由于每个条件都返回一个布尔值，因此整个表达式也返回一个布尔值。你也可以将 `AND` 和 `OR` 运算符用于其他类型的表达式。
+
+记住，`AND` 和 `OR` 是短路运算符，因此如果其中一个操作数决定了整个表达式的真或假，评估将不会继续。正因为如此，这些运算符返回最后一个被求值的操作数的值。结果，你可以在为变量赋值的*选择*中使用 `AND` 和 `OR` 运算符，如图 14–4 所示。
+
+在第一个示例中，两个操作数都使用恒等运算符来返回布尔值。这意味着 `OR` 运算符将返回一个布尔值。例如，如果状态变量等于 "CA"，则整个表达式为真；评估停止，并将 `true` 存储在选定的变量中。如果状态不等于 "CA"，评估将继续，并根据下一个操作数的评估结果返回 `true` 或 `false`。
+
+相比之下，第二个示例可能会返回几种不同的数据类型，取决于操作数的值。如果第一个操作数是 `null` 或 `undefined`，它会被求值为 `false`，并且 `AND` 运算符短路。这意味着第二个操作数不会被求值，`AND` 运算符返回第一个操作数的值（即 `null` 或 `undefined`）。否则，第二个操作数会被求值，并返回调用 `toString()` 方法的结果。如果 `toString()` 不存在，调用它的结果为 `undefined`。如果存在，它将返回一个字符串。
+
+第三个示例也可能根据操作数的值返回几种数据类型，但如果第一个操作数不是 `null` 或 `undefined`，它会被求值为 `true`，`OR` 运算符短路。这意味着第二个操作数不会被求值，`OR` 运算符返回第一个操作数包含的任何值。否则，第二个操作数会被求值，并返回一个字符串。
+
+第四个示例展示了如何使用 `OR` 运算符提供默认值。它将 `dt` 变量或新的 `Date` 对象赋值给选定的变量。具体来说，如果 `dt` 变量不是 `null` 或 `undefined`，则它的值被赋值给选定的变量。但如果它是 `null` 或 `undefined`，则会被求值为 `false`，并求值第二个操作数。结果，`Date` 对象被赋值给选定的变量。
+
+请记住，所有这些示例都可以使用 `if` 语句重写。这四个示例说明了这一点。如果你研究了它们，你将更好地理解选择操作在做什么。
+
+这也意味着你在自己的代码编写中可能永远不需要使用选择。尽管如此，了解它们的工作原理是有好的，因为你经常会在专业程序员编写的代码中看到它们。当你习惯它们之后，你可能还会发现它们在你自己的代码中很有用。
+
+## 选择示例
+
+### 示例 1：`OR` 选择返回 `true` 或 `false` 的布尔值
+
+```javascript
+var selected = (state == "CA" || state === "NC");
+```
+
+### 示例 2：`AND` 选择返回 `null`、`undefined` 或 `String` 值
+
+```javascript
+var selected = state && state.toString();
+```
+
+### 示例 3：不会返回 `null` 或 `undefined` 值的 `OR` 选择
+
+```javascript
+var selected = state || "CA"; // state 值或 "CA"
+```
+
+### 示例 4：设置默认值的 `OR` 选择
+
+```javascript
+var selected = dt || new Date();
+```
+
+## 这些选择示例可以如何重写
+
+### Example 1
+
+```javascript
+var selected = false;
+
+if (state == "CA" || state === "NC") {
+    selected = true;
+}
+```
+
+### Example 2
+
+```javascript
+var selected;
+
+if (state) {
+    selected = state.toString();
+}
+```
+
+### Example 3
+
+```javascript
+var selected = "CA";
+
+if (state) {
+    selected = state;
+}
+```
+
+### Example 4
+
+```javascript
+var selected = dt;
+
+if (!selected) {
+    selected = new Date();
+}
+```
+
+## 描述
+
+- `AND` 和 `OR` 运算符返回它们所求值的最后一个操作数的值。正因为如此，你可以在选择中使用它们，并将返回的值存储在变量中。
+- 这种机制源于逻辑运算符的短路评估。这意味着 `AND` 和 `OR` 运算符仅在需要时才评估第二个表达式。
+- 虽然你可以用 `if` 语句重写选择，但专业程序员经常在他们的代码中使用选择。
+
+## 发票应用程序
+
+这两幅图显示了一个计算发票折扣金额和总额的 Web 应用程序。该应用程序使用了本章描述的某些条件表达式和选择结构来确定折扣百分比。
+
+图 14-5 显示了发票应用程序的用户界面。它由一个下拉列表、四个文本框和一个按钮组成。下拉列表用于选择客户类型：普通用户（Regular）、忠诚计划（Loyalty Program）或荣誉公民（Honored Citizen）。第一个文本框接受用户输入的发票小计金额。后三个文本框用于显示计算结果。
+
+## HTML
+
+在 HTML 中，你可以看到一个 `select` 元素用于下拉列表，它返回的值对于普通用户是 "reg"，对于忠诚计划是 "loyal"，对于荣誉公民是 "honored"。你将在下一张图的 JavaScript 代码中使用这些值。
+
+此外，这段代码与你之前看到的相似。
+
+```html
+<main>
+  <h1>Invoice Calculator</h1>
+  <label for="type">Customer Type:</label>
+  <select id="type">
+    <option value="reg">Regular</option>
+    <option value="loyal">Loyalty Program</option>
+    <option value="honored">Honored Citizen</option>
+  </select>
+  <label for="subtotal">Subtotal:</label>
+  <input type="text" id="subtotal">
+  <label for="percent">Discount Percent:</label>
+  <input type="text" id="percent">
+  <label for="discount">Discount Amount:</label>
+  <input type="text" id="discount">
+  <label for="total">Invoice Total:</label>
+  <input type="text" id="total">
+  <button id="calculate">Calculate</button>
+</main>
+```
+
+这两幅图显示了一个计算发票折扣金额和总额的 Web 应用程序。该应用程序使用了本章描述的某些条件表达式和选择结构来确定折扣百分比。
+
+图 14-5 显示了发票应用程序的用户界面。它由一个下拉列表、四个文本框和一个按钮组成。下拉列表用于选择客户类型：普通用户（Regular）、忠诚计划（Loyalty Program）或荣誉公民（Honored Citizen）。第一个文本框接受用户输入的发票小计金额。后三个文本框用于显示计算结果。
+
+在 HTML 中，你可以看到一个 `select` 元素用于下拉列表，它返回的值对于普通用户是 "reg"，对于忠诚计划是 "loyal"，对于荣誉公民是 "honored"。你将在下一张图的 JavaScript 代码中使用这些值。
+
+此外，这段代码与你之前看到的相似。
+
+第 14 章 如何处理控制结构、异常和正则表达式 413
+
+# 用于发票应用程序的 JavaScript
+
+```javascript
+$( document ).ready(function() {
+  var calculateDiscount = function(customer, subtotal) {
+    switch ( customer ) {
+      case "reg":
+        if (subtotal < 100) {
+          return 0;
+        } else if (subtotal >= 100 && subtotal < 250) {
+          return .1;
+        } else if (subtotal >= 250 && subtotal < 500) {
+          return .25;
+        } else if (subtotal >= 500) {
+          return .3;
+        }
+        break;
+      case "loyal":
+        return .3;
+        break;
+      case "honored":
+        return (subtotal < 500) ? .4 : .5;
+        break;
+      default:
+        return 0;
+        break;
+    }
+  }
+
+  $("#calculate").click(function() {
+    var discountAmount, invoiceTotal, discountPercent;
+    var customerType = $("#type").val();
+    var subtotal = $("#subtotal").val() || 0; // default value of zero
+    subtotal = parseFloat(subtotal);
+    discountPercent = calculateDiscount(customerType, subtotal);
+    discountAmount = subtotal * discountPercent;
+    invoiceTotal = subtotal - discountAmount;
+    $("#subtotal").val(subtotal.toFixed(2));
+    $("#percent").val((discountPercent * 100).toFixed(2));
+    $("#discount").val(discountAmount.toFixed(2));
+    $("#total").val(invoiceTotal.toFixed(2));
+    // 完成后将焦点放在类型下拉列表上
+    $("#type").focus();
+  });
+
+  // 初始加载时将焦点放在类型下拉列表上
+  $("#type").focus();
+});
+```
+
+图 14-6 用于发票应用程序的 JavaScript
+
+## 如何处理异常
+
+运行时错误也可以称为异常。因为异常在现实应用中不应该发生，所以大多数编程语言都提供了一种处理由应用程序*抛出*（thrown）异常的方法，以防止应用程序崩溃。这种编程过程被称为异常处理。在本主题中，你将学习如何在你的 JavaScript 中处理异常。
+
+### 如何使用 `try-catch` 语句
+
+为了在 JavaScript 中处理异常，你使用如图 14-7 所示的 *try-catch* 语句。首先，你在可能抛出异常的语句或语句周围编写一个*try 块*（try block）。然后，你编写一个*catch 块*其中包含了如果 try 块中的任何语句抛出异常时将执行的语句。如果有必要，你还可以编写一个*finally 块*，无论是否抛出异常，该块都会执行，但它是可选的。
+
+图中的第一个示例显示了如何使用 `try-catch` 语句捕获 try 块中抛出的任何异常。然后，如果该块中的某个语句抛出异常，程序的执行将跳转到 catch 块中的第一条语句。在这个示例中，catch 块仅包含一个显示错误消息的 `alert()` 方法。
+
+当抛出异常时，会创建一个 `Error` 对象，该对象包含有关异常的信息。要访问该 `Error` 对象，你需要在 `catch` 关键字后面的括号中编写一个变量。然后，使用该变量中 `Error` 对象的 `name` 和 `message` 属性来显示错误信息。这通过第一个示例中的 catch 块进行了说明。在这里，`Error` 对象的变量名为 `error`，但它也可以是任何有效名称。
+
+当然，你不需要在 catch 块中使用 `Error` 对象。在这种情况下，通过图中第二个示例中的 catch 块进行了说明。通过 `alert()` 方法显示一个自定义的消息。但请记住，即使你不使用它，也必须在 `catch` 关键字后面的括号中为 `Error` 对象编写一个名称。
+
+你还应该知道的是，如果在像图中这样的函数中抛出了异常，并且它没有被 `try-catch` 语句捕获，则异常将传递给调用函数。这种异常的传递将一直持续，直到异常被捕获或应用程序因运行时错误终止。
+
+JavaScript 的一个有趣特性是它抛出的异常比其他语言少。例如，JavaScript 拥有一个 `Infinity` 值，因此当算术表达式除以零时，它不会抛出错误。JavaScript 还有一个 `NaN` 值，所以当你将字符串传递给 `parseInt()` 函数时，它不会抛出错误。因此，使用 JavaScript 时处理的异常会比使用其他语言时少。
+
+## 第 14 章 如何处理控制结构、异常和正则表达式 415
+
+### `try-catch` 语句的语法
+
+```javascript
+try { statements }
+catch(errorName) { statements }
+[ finally { statements } ] // finally 块是可选的
+```
+
+### `Error` 对象的两个属性
+
+| 属性 | 描述 |
+| :--- | :--- |
+| name | 错误的类型 |
+| message | 描述错误的消息 |
+
+### 用于 `calculateFV()` 函数的 `try-catch` 语句
+
+```javascript
+var calculateFV = function(investment,rate,years) {
+  var futureValue = investment;
+  for (var i = 1; i <= years; i++) {
+    futureValue += futureValue * rate / 100;
+  }
+  futureValue = futureValue.toFixed(2);
+  return futureValue;
+} catch(error) {
+  alert(error.name + ": " + error.message);
+}
+```
+
+### 显示自定义消息的 `catch` 块
+
+```javascript
+catch(error) {
+  alert("calculateFV 函数抛出了错误.");
+}
+```
+
+## 描述
+
+- 你可以使用 `try-catch` 语句处理任何抛出的异常。
+- 在 try 块中，你编写可能抛出异常的语句。
+- 无论 catch 块中的语句是否执行，finally 块都会执行。
+- catch 块中的 `errorName` 变量让你能够访问 `Error` 对象。该对象有两个你可以使用的属性。
+
+![32b4cb9657418b29a411bd539786]()
+
+## 如何创建和抛出 `Error` 对象
+
+在某些情况下，你可能想要抛出自己的异常。例如，如果你正在创建一个供其他程序员使用的实用程序库，你可以通过抛出异常来提醒使用你库的人员发生了错误。
+
+要抛出异常，你首先创建一个 `Error` 对象。然后，你使用 `throw` 语句将其抛出。这如图 14-8 所示。
+
+要创建一个新的 `Error` 对象，你调用 `Error` 构造函数并传递一个包含消息的参数。该消息存储在 `Error` 对象的 `message` 属性中。通常情况下，消息越具体越好。
+
+# 第 14 章 如何使用控制结构、异常和正则表达式 417
+
+## 创建新 `Error` 对象的语法
+
+`new Error(message)`
+
+## `throw` 语句的语法
+
+`throw errorObject();`
+
+## 一个抛出新 `Error` 对象的 `calculateFV` 方法
+
+```javascript
+var calculateFV = function( investment, rate, years ) {
+  if (isNaN(investment) || investment <= 0 ) {
+    throw new Error(
+      "calculateFV requires an investment amount greater than 0."
+    );
+  }
+  if (isNaN(rate) || rate <= 0 ) {
+    throw new Error(
+      "calculateFV requires an annual rate greater than 0."
+    );
+  }
+  var futureValue = investment;
+  for (var i = 1; i <= years; i++) {
+    futureValue += futureValue * rate / 100;
+  }
+  return futureValue.toFixed(2);
+}
+```
+
+### `try-catch` 语句捕获抛出的 `Error` 对象
+
+```javascript
+try {
+  $("future value").text = calculateFV(investment,rate,years);
+} catch(error) {
+  alert(error.name + ": " + error.message);
+} finally {
+  $("investment").focus();
+}
+```
+
+## `Error` 层次结构中的某些错误类型
+
+| 类型 | 抛出时机 |
+|---|---|
+| `RangeError` | 数值超过了允许范围 |
+| `ReferenceError` | 未定义的变量 |
+| `SyntaxError` | 遇到运行时语法错误 |
+| `TypeError` | 值的类型与预期的不同 |
+
+## 抛出 `RangeError` 语句
+
+`throw new RangeError("Annual rate is invalid.");` // 抛出 `RangeError`
+
+## 使用 `throw` 语句的两个原因
+
+- 测试 `try-catch` 语句的运行
+- 从函数中抛出错误，让调用代码知道传递的一个或多个参数是无效
+
+## 描述
+
+- 要创建一个新的 `Error` 对象，你使用其构造函数并将字符串作为参数。如果参数不是字符串，它将被转换为字符串。
+- 要触发运行时错误，你使用 `throw` 语句。它可以抛出一个新的或现有的 `Error` 对象。
+
+图 14-8 如何创建和抛出 `Error` 对象
+
+## 如何使用正则表达式
+
+正则表达式是编码的模式，可用于在字符串中搜索匹配模式。这些表达式通常用于验证用户输入的数据。在接下来的主题中，你将学习使用正则表达式实现此目的最重要的技能。
+
+## 如何创建和使用正则表达式
+
+图 14-9 显示了正则表达式如何工作。首先，你创建一个包含要用模式的正则表达式对象。为此，你可以使用图中顶部所示任意语法。
+
+使用第一种技术，你使用 `new` 关键字配合 `RegExp()` 构造函数，并将引号中的模式作为参数。使用第二种技术，你编写正则表达式常量，它由斜杠之间的模式组成。无论哪种情况，你都会创建一个包含该模式的新 `RegExp` 对象。在第一个示例的两个语句中，pattern 简单为 "Babbage"。
+
+一旦创建了正则表达式对象，就可以用它来查找字符串中的模式匹配。为此，你可以使用正则表达式对象的 `test()` 方法。第二个示例中使用该方法的两个语句说明了这一点。
+
+在第一个语句中，`test()` 方法在名为 `inventor` 的变量中搜索模式 "Babbage"。由于该变量包含 "Charles Babbage"，而名为 `programmer` 的变量包含 "Ada Lovelace"，因此未找到模式，方法返回 true。在第二个语句中，名为 `programmer` 的变量和方法返回 false。
+
+除了创建正则表达式对象时编写的模式外，你还可以编写一个或多个标志以将对象的一个或多个属性设置为 true。在使用 `RegExp()` 构造函数时，你为第二个参数编写一个包含要使用的标志的字符串。在编写正则表达式常量时，你编写位于表达式后面的标志。
+
+第三个示例说明了这是如何运作的。在这里，两个语句都创建了一个模式为 "loelace" 的正则表达式对象。两个语句都包含了 `i` 标志，它将对象的 `ignoreCase` 属性设置为 true。这使得测试从默认的区分大小写变为不区分大小写。由于由于，当第四个示例中的测试检查 `programmer` 变量（包含字符串 "Lovelace"）是否匹配模式时，它将返回 true 的值。
+
+## 创建正则表达式对象的两种方法
+
+### 通过 `RegExp()` 构造函数
+
+```javascript
+var variableName = new RegExp("expression", "flags");
+```
+
+### 通过编写正则表达式常量
+
+```javascript
+var variableName = /expression/[flags];
+```
+
+## 正则表达式的方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `test(string)` | 在字符串中搜索正则表达式。如果找到模式则返回 true，如果未找到则返回 false |
+
+## 创建查找“Babbage”正则表达式的两个语句
+
+```javascript
+var pattern = new RegExp("Babbage");
+var pattern = /Babbage/;
+```
+
+## 如何使用正则表达式的 `test()` 方法
+
+### 两个待测试的字符串
+
+```javascript
+var inventor = "Charles Lovelace";
+var programmer = "Ada Lovelace";
+```
+
+### 如何使用 `test()` 方法搜索模式
+
+```javascript
+alert ( pattern.test(inventor) );
+```
+
+## 创建区分大小写正则表达式的两个语句
+
+```javascript
+var pattern = new RegExp("loelace", "i");
+var pattern = /loelace/i;
+```
+
+# 第 14 章 如何使用控制结构、异常和正则表达式
+
+## 如何匹配特殊字符
+
+| 模式 | 匹配 |
+| :--- | :--- |
+| `\\` | 反斜杠字符 |
+| `\/` | 正斜杠 |
+| `\t` | 制表符 |
+| `\n` | 换行符 |
+| `\r` | 回车符 |
+| `\f` | 分页符 |
+| `\v` | 垂直制表符 |
+| `[\b]` | 退格（唯一必须在括号内的字符） |
+| `\uXXXX` | 值为四位十六进制数字的 Unicode 字符 |
+| `\xXX` | 值为两位十六进制数字的 Latin-1 字符。等于 `\u00XX` |
+
+## 示例
+
+```javascript
+var string = "2016 MMA Inc.\nall rights reserved (5/2017).";
+alert (/\//.test(string)); // matches / displays true
+alert (/\xA9/.test(string)); // matches © displays true
+var pattern = new RegExp("\\\\"); // same as \/
+alert (pattern.test(string)); // displays false since there's no \
+```
+
+## 如何匹配字符类型
+
+| 模式 | 匹配 |
+| :--- | :--- |
+| `.` | 除换行符外的任何字符（使用 `\.` 匹配点） |
+| `[ ]` | 括号内的任何字符（使用 `\[` 或 `\]` 匹配括号） |
+| `[^ ]` | 不在括号内的任何字符 |
+| `[a-z]` | 在括号内时使用的字符范围内的任何字符 |
+| `\w` | 任何字母、数字或下划线 |
+| `\W` | 任何不是字母、数字或下划线的字符 |
+| `\d` | 任何数字 |
+| `\D` | 任何非数字字符 |
+| `\s` | 任何空白字符（空格、制表符、换行符、回车符、分页符或垂直制表符） |
+| `\S` | 任何非空白字符 |
+
+## 示例
+
+```javascript
+var string = "The product code is MBT-3461."
+alert (/MBT/.test(string)); // displays true
+alert (/[TF]/.test(string)); // displays true
+alert (/\W/.test(string)); // displays false
+```
+
+## 描述
+
+- 反斜杠在正则表达式中用作转义字符。
+- 当你使用 `RegExp()`构造函数时，模式中的任何反斜杠前面都必须有另一个反斜杠。这是因为反斜杠在字符串中也是转义字符。
+
+图 14-10 如何匹配特殊字符和字符类型。
+
+## 如何匹配字符串位置、子模式和重复模式
+
+图 14-11 展示了创建正则表达式的一些额外技巧。图中的第一个表显示了如何匹配字符串中特定位置的字符。例如，模式 `/^com/` 将找到字符串开头的 "com" 字母。而模式 `/com$/` 将找到字符串结尾的 "com" 字母。这通过表后的示例说明了这一点。
+
+在这里，最后一个示例显示为 false，因为 "Ad" 后面跟着另一个单词字符。无论如何，“Ad" 位于单词的开头而不是单词的结尾（字符串中的第一个单词是 "Ada"）。`\b` 模式的一个用途是查找所有单词。
+
+第二个表显示了如何分组并匹配用括号编码的子模式。这通过表后的示例说明了这一点。在这里，第二个语句匹配 "Rob" 或 "Bob" 其中一个的子模式。
+
+如果你在模式中编码了多个子模式，则这些模式从左到右编号。然后，如果你想重复模式中的子模式，可以指定你想要重复的模式编号。在这里，`\1` 表示第一个模式，匹配任何三个字母、数字或下划线并再次使用。这返回 true 表示模式已重复。如果模式是 `/(Rob)\1/`，它也会返回 true，因为 "Rob" 重复了。
+
+第三个表显示了如何使用用大括号编码的量词匹配模式。例如，`\d{3}/` 将匹配任何三个连续数字，而 `$\{1,3}/` 将匹配一到三个美元符号。同样，这通过表后的示例说明了这一点。第三个语句匹配字符串开头的三个数字、一个连字符、另外三个数字、另一个连字符以及字符串末尾的四个数字。第四个语句匹配字符串开头的左括号、三个数字、右括号、零或一个空格（由空格后的问号量词表示）、另外三个数字后跟一个连字符以及字符串末尾的四个数字。这两种模式都可以验证电话号码。
+
+然后，第五个语句将第三个和第四个语句的模式结合，这样电话号码可以以括号中的三个数字开头，也可以以三个数字后跟连字符开头。在这里，问号空格意味着区号后可以使用零或一个空格，因此此模式将找到像 559-555-1234、(559)555-1234 和 (559)555-1234 这样的电话号码。
+
+这些表和示例应该帮助你开始编写自己的模式。随着你学习本章其余示例，你对它们会更加精通。不过在处理复杂模式之前，你可能想在互联网上搜索“正则表达式”或“正则表达式库”。你可能会发现已经有人写好了你需要的模式。
+
+## 如何匹配字符串位置
+
+| 模式 | 匹配 |
+| :--- | :--- |
+| `^` | 字符串开头（使用 `\^` 匹配脱字符） |
+| `$` | 字符串结尾（使用 `\$` 匹配美元符号） |
+| `\b` | 跟着非单词字符的单词边界 |
+| `\B` | 跟着单词字符的单词边界 |
+
+## 示例
+
+```javascript
+var name = "Charles"; alert(/^Charles/.test(name)); // true
+var name = "Charles"; alert(/s$/.test(name)); // false
+var name = "Charles"; alert(/s\b/.test(name)); // false
+var name = "Charles"; alert(/s\B/.test(name)); // true
+```
+
+## 如何分组匹配子模式
+
+| 模式 | 匹配 |
+| :--- | :--- |
+| `( )` | 分组并捕获（使用 `\(` 或 `\)` 匹配括号） |
+| `\1` | 匹配第一个分组匹配的内容 |
+
+## 示例
+
+```javascript
+var name = "Robert"; alert(/(Rob)/.test(name)); // true
+var name = "Bob"; alert(/(Rob)/.test(name)); // false
+```
+
+## 如何匹配重复模式
+
+| 模式 | 匹配 |
+| :--- | :--- |
+| `{n}` | 重复 n 次 |
+| `{n,m}` | 重复 n 到 m 次 |
+| `{n,}` | 重复 n 次或更多 |
+| `*` | 重复 0 次或更多 |
+| `+` | 重复 1 次或更多 |
+
+## 示例
+
+```javascript
+var string = "12"; alert(/\d{2}/.test(string)); // true
+var string = "12"; alert(/\d{3}/.test(string)); // false
+var string = "12345"; alert(/\d{2,4}/.test(string)); // true
+var string = "12345"; alert(/\d{2,1}/.test(string)); // false
+var string = "12345"; alert(/\d{2,}/.test(string)); // true
+var string = "12"; alert(/\d*/.test(string)); // true
+var string = ""; alert(/\d*/.test(string)); // true
+var string = "12"; alert(/\d+/.test(string)); // true
+var string = ""; alert(/\d+/.test(string)); // false
+```
+
+# 用于测试有效性的正则表达式
+
+用于测试格式为 999-999-9999 的电话号码模式：
+`\d{3}-\d{3}-\d{4}$`
+
+用于测试格式为 9999-9999-9999-9999 的信用卡号的模式：
+`\d{4}-\d{4}-\d{4}-\d{4}$`
+
+用于测试任一格式（99999 或 99999-9999）的邮编码的模式：
+`\d{5}(-\d{4})?$`
+
+用于测试格式为 username@mailserver.domain 的电子邮件模式：
+`^[\w\.\+]+@[\w\.\-]+\.[a-zA-Z]{2,}$`
+
+用于测试格式为 mm/dd/yyyy 的日期的模式：
+`^[0-1]?\d/[0-3]?\d/\d{4}$`
+
+# 使用这些表达式的示例
+
+## 测试电话号码的有效性
+
+```javascript
+var phone = "559-555-6624"; // 有效电话号码
+var phonePattern = /\d{3}-\d{3}-\d{4}/;
+
+if (!phonePattern.test(phone)) {
+    alert("Invalid phone number");
+} // 不显示
+```
+
+## 测试日期格式有效，但月份、日期或年份无效的情况
+
+```javascript
+var startDate = "8/10/2017"; // 无效日期
+var datePattern = /^[0-1]?\d\/[0-3]?\d\/\d{4}/;
+
+// 此模式会匹配如 19/21/2016 和 9/39/2017 的日期
+if (!datePattern.test(startDate)) {
+    alert("Invalid start date");
+} // 显示错误消息
+```
+
+# 对电子邮件地址进行完整验证的函数
+
+```javascript
+var isEmail = function(email) {
+    if (email.length === 0) return false;
+    var parts = email.split("@");
+    if (parts.length != 2) return false;
+    if (parts[0].length > 64) return false;
+    if (parts[1].length > 255) return false;
+}
+
+var address = /^[\w\.\+\-]+@[\w\.\-]+\.[a-zA-Z]{2,}$/; 
+var quotedText = /^(([\w\.\+\-']+\+)|[\w\.\+\-]+)$/;
+var localPart = new RegExp("|" + quotedText + ");
+
+if (!localPart.test(parts[0])) return false;
+```
+
+```javascript
+var hostnames = /(\[[a-zA-Z0-9]+\]-[a-zA-Z0-9]+\.[a-zA-Z0-9]{0,62}-[a-zA-Z0-9])?)+\+/;
+var tld = "\.[a-zA-Z0-9]{2,6}";
+var domainPattern = new RegExp("^" + hostnames + "$");
+if (!domainPattern.test(parts[1])) return false;
+```
+
+```javascript
+return true;
+}
+
+alert(isEmail("grace@yahoo.com")); // 显示 true
+alert(isEmail("grace@yahoomcom")); // 显示 false
+```
+
+# 账户资料应用 (Account Profile application)
+
+现在，为了向你展示如何使用正则表达式进行数据验证，本章介绍了一个账户资料应用。该应用代表了一个简化版的网页，用于存储用户在注册时输入的数据。
+
+图 14-13 显示了该应用程序的用户界面。用户输入数据并点击保存（Save）按钮后，JavaScript 代码会检查数据的有效性。如果数据无效，应用程序将在输入框右侧显示错误消息。
+
+# HTML 和 CSS
+
+在 HTML 中，你可以看到 head 部分的 `script` 元素。它们显示该应用使用了核心 jQuery 库及其自身的 JavaScript 文件。
+
+你还可以看到主元素由一个 `h1` 元素和几个 `input` 元素组成。在每个输入元素之后都是一个 `span` 元素，用于显示该条目的错误消息。但请注意，这些 `span` 元素没有 `id` 属性。这是因为该应用使用 jQuery 来访问这些 `span` 元素。
+
+页面的最后一个输入元素是一个 id 为“save”的按钮。它用于启动已输入数据的验证。
+
+在 HTML 之后，你可以看到该应用程序的一个 CSS 样式规则。它只是将红色应用到 `span` 元素。
+
+# 带有错误消息的账户资料应用
+
+| 字段 | 值 | 错误消息 |
+|---|---|---|
+| 电子邮箱: | grace@yahoo | 请输入有效的电子邮件。 |
+| 手机： | 555-123-456 | 请按 NNN NNN NNN 格式输入手机号码。 |
+| 邮编码: | 1234 | 请输入有效的邮编码。 |
+| 出生日期: | 15/18/1980 | 请按 MM/DD/YYYY 格式输入日期。 |
+| 保存 | | |
+
+# HTML
+
+```html
+<html>
+<head>
+<title>My Account Profile</title>
+<link rel="stylesheet" href="profile.css">
+<script src="https://code.jquery.com/jquery-3.1.min.js"></script>
+<script src="profile.js"></script>
+</head>
+<body>
+<main>
+<h1>My Account Profile</h1>
+<label for="email">E-Mail:</label>
+<input type="text" name="email" id="email">
+<span></span><br>
+<label for="phone">Mobile phone:</label>
+<input type="text" name="phone" id="phone">
+<span></span><br>
+<label for="zip">ZIP Code:</label>
+<input type="text" name="zip" id="zip">
+<span></span><br>
+<label for="dob">Date of Birth:</label>
+<input type="text" name="dob" id="dob">
+<span></span><br>
+<input type="button" id="save" value="Save">
+</main>
+</body>
+</html>
+```
+
+# 部分 CSS
+
+```css
+span { color: red; }
+```
+
+## 描述
+
+- 账户资料应用允许用户输入个人信息。它使用正则表达式和条件表达式验证用户用户的数据。
+- 在现实生活中，这样的应用程序可能会使用 Ajax 将信息保存到服务器。
+
+图 14-13 账户资料应用的 HTML 和 CSS
+
+# JavaScript
+
+图 14-14 显示了该应用的 JavaScript 代码。它包含一个名为 `isDate()` 的函数。该函数使用正则表达式来确定传递的值是否为日期。正如你在图 14-12 中看到的，正则表达式本身无法完全验证日期。因此，该函数首先测试它接收的值是否通过正则表达式检查。如果没有，`isDate()` 函数返回 `false`。但如果是，函数会获取日期的月份部分，并确保月份在 1 到 12 之间且天数不超过 31。在现实生活中，你会完善此代码以处理少于 31 天的月份以及年份。
+
+它通过使用“保存”按钮的 `click()` 事件处理器将页面上所有 `span` 元素的文本为空，这清除了任何可能显示的错误消息。然后，将名为 `isValid` 的布尔值设置为 `true`。接下来，代码使用 jQuery 获取用户输入的电子邮件地址、手机、邮编码和出生日期。之后，代码发出语句来检查这些值。前三个语句检查电子邮件、手机和邮编码。首先，它们检查用户是否输入了值。然后使用正则表达式的 `test()` 方法检查值是否有效。如果其中任一检查失败，`isValid` 变量将设置为 `false` 并显示错误消息。注意此代码使用 `next()` 方法找到文本框相邻的 `span` 元素并设置其文本。最后一条语句检查出生日期值。它首先检查用户是否输入了出生日期。之后，将出生日期传递给 `isDate()` 函数检查其是否有效。如果其中任一检查失败，`isValid` 变量将设置为 `false` 并显示错误消息。如果仍为 `true`，则用户输入的数据是有效的。然后，jQuery 代码（未显示）将个人信息保存到服务器。
+
+该事件处理器通过将焦点放在电子邮件框结束。这使用户输入新的个人信息或修正任何错误。`ready()` 事件处理器的最后一行也将焦点放在电子邮件框。
+
+# 账户资料应用的 JavaScript
+
+```javascript
+$(document).ready(function() {
+  var isDate = function(date) {
+    if (!/^[0-1]?\d\/[0-3]?\d\/\d{4}$/.test(date)) { return false; }
+    var index1 = date.indexOf("/");
+    var index2 = date.indexOf("/", index1 + 1);
+    var month = parseInt(date.substring(0, index1));
+    var day = parseInt(date.substring(index1 + 1, index2));
+    if (month < 1 || month > 12) { return false; }
+    if (day > 31) { return false; }
+    return true;
+  })
+
+  $("#save").click(function() {
+    $("span").text(""); // 清除之前的错误消息
+    var isValid = true; // 初始化 isValid
+    var email = $("#email").val();
+    var phone = $("#phone").val();
+    var zip = $("#zip").val();
+    var dob = $("#dob").val();
+
+    if (email == "" || !/^[\w\.-]+@[\w.-]+\.[a-zA-Z]+$/.test(email)) {
+      isValid = false;
+      $("#email").next().text("Please enter a valid email.");
+    }
+
+    if (phone == "" || !/\d{3}-\d{3}-\d{4}$/.test(phone)) {
+      isValid = false;
+      $("#phone").next().text("Please enter a phone number in NNN-NNN-NNNN format.");
+    }
+
+    if (zip == "" || !/\d{5}-\d{4}$/.test(zip)) {
+      isValid = false;
+      $("#zip").next().text("Please enter a valid zip code.");
+    }
+
+    if (dob == "" || !isDate(dob)) {
+      isValid = false;
+      $("#dob").next().text("Please enter a valid date in MM/DD/YYYY format.");
+    }
+
+    if (isValid) {
+      // 保存个人信息的代码在这里
+    }
+
+    $("#email").focus();
+  });
+
+  // 初始加载时设置焦点
+  $("#email").focus();
+});
+```
+
+# 展望
+
+现在你已经完成了本章，你应该知道如何使用恒等运算符、`break` 和 `continue` 语句、`switch` 语句以及条件运算符，以及如何在选择中使用 `AND` 和 `OR` 运算符。你还应该知道何时以及如何处理异常，以及如何创建和使用正则表达式进行数据验证。
+
+# 术语
+
+- 等于运算符
+- 类型转换
+- 恒等运算符
+- `break` 语句
+- `continue` 语句
+- `switch` 语句
+- `case` 标签
+- 条件运算符
+- 短路求值
+- 选择性
+- 异常
+- 抛出异常
+- 异常处理
+- `try-catch` 语句
+- `try` 块
+- `catch` 块
+- `finally` 块
+- `throw` 语句
+- 正则表达式
+- 正则表达式对象
+- 正则表达式字面量
+- 转义字符
+- 子模式
+- 量词
+- 标志
+
+# 总结
+
+- 与相等运算符不同，恒等运算符在比较时不使用类型转换。如果使用恒等运算符比较两个不同类型的变量，结果始终为 `false`。
+- `break` 语句跳出循环并结束循环。`continue` 语句跳转到循环开始，但允许循环继续。
+- `switch` 语句允许你根据单个表达式的值为不同的 `case` 编写语句。
+- 条件运算符在条件为真时返回一个值，在为假时返回另一个值。这是简单 `if-else` 语句的替代方案。
+- 当在赋值给变量的表达式中使用 `AND` 和 `OR` 运算符时，该表达式被称为选择性（selection）。在选择性中，最后一个被求值的操作数会被存储在变量中，这取决于 JavaScript 执行的短路求值。
+- 异常是发生错误条件时抛出的运行时错误。要捕获异常，你使用 `try-catch` 语句，它由一个 `try` 块、一个 `catch` 块和一个可选的 `finally` 块组成。
+- 你还可以以 `Error` 对象的格式创建并抛出自己的异常。当你编写供他人使用的函数时，这非常有用。
+- 正则表达式定义了一个可以在字符串中搜索的模式。该模式存储在正则表达式对象中。
+- 正则表达式对象的 `test()` 方法通常用于测试用户输入的有效性。
+
+# 练习 14-1 增强质数应用
+
+此练习将让你有机会练习处理控制结构时学到的技能。在初始形式中，该应用程序判断输入的数字是否为质数（只能被 1 和它整除的数）。
+
+![](img/32b24cb9657418b8429a4117bd539786_451_0.png)
+
+## 测试应用程序并检查代码
+
+1. 使用你的编辑器或 IDE 打开：`javascript_query\exercises\ch14\prime`
+2. 运行应用程序并使用像 11 的质数和像 10 的非质数进行测试。
+3. 检查 JavaScript 文件，注意 `isPrimeNumber()` 函数是如何使用条件运算符和 `break` 语句的。
+
+## 修改代码以显示直到输入数字的所有质数
+
+现在你将增强应用程序，使其能够显示包括输入数字在内的所有质数。完成后，应用程序将像这样：
+
+![](img/32b24cb9657418b8429a4117bd539786_451_1.png)
+
+4. 在事件处理程序中，注释掉调用 `isPrimeNumber()` 函数的代码以及显示数字是否为质数消息的代码。
+5. 在此处理程序中，添加代码清除消息标签中的任何之前的文本。然后，创建一个循环，从 1 迭代到用户输入的数字。在循环内部，应为每个数字调用 `isPrimeNumber()` 函数。如果数字是质数，则应将其添加到将在消息标签中显示的文本中。如果不是质数，代码应继续循环的下一次迭代。
+
+# 练习 14-2 为未来值应用添加异常处理
+
+在此练习中，你将为未来值（Future Value）应用添加异常处理。这里是显示错误消息时的应用程序。
+
+![](img/32b24cb9657418b8429a4117bd539786_452_0.png)
+
+1. 打开并检查此文件夹中的 HTML 和 JavaScript 文件：`javascript_jquery\exercises\ch14\future_value\`
+2. 使用有效输入测试应用程序。然后，尝试通过在文本框内为空的情况下点击 Calculate 按钮或输入如 "one" 或 "two" 等字符串来让应用程序抛出异常。无论何种情况，应用程序都会显示未来值为零而不抛出异常。这显示了让 JavaScript 应用程序抛出异常有多困难。
+3. 在 JavaScript 文件中，为 Calculate 按钮的点击事件处理程序添加异常处理。将此处理程序中最后两个之外的所有语句放在 `try` 块中，并在 `catch` 块中显示如所示的错误消息。消息应包含 `Error` 对象的 `name` 和 `message` 属性。
+4. 让应用程序抛出运行时错误，更改一个参数的名称。这是一个编程错误，而不是需要异常处理的错误类型。现在修复该错误。
+5. 在 `if` 语句之后添加 `throw` 语句。它应该抛出一个带有上述消息的 `RangeError` 对象。现在进行测试。
+6. 为了查看这在实际应用程序中如何工作，将 `throw` 语句移动到 `if` 语句中。然后，测试应用程序以查看当任何参数无效时是否会显示消息。这种类型的代码通常包含在函数中。
+
+# 练习 14-3 增强个人资料应用
+
+此练习要求你通过为两个字段添加验证来增强本章的个人资料应用：
+
+![](img/32b24cb9657418b8429a4117bd539786_453_0.png)
+
+## 打开并测试应用程序
+
+1. 打开此文件夹中的 HTML 和 JavaScript 文件：`javascript_jquery\exercises\ch14\profile\`
+2. 测试应用程序并注意添加了信用卡号和过期日期字段。尽管如此，由于这些字段没有提供验证，你可以在其中输入任何值。
+
+## 验证信用卡字段
+
+3. 在 JavaScript 文件中，找到 Save 按钮的 `click()` 事件处理程序，并添加一行获取输入的信用卡号值的代码。
+4. 添加 `if` 语句，检查用户是否为信用卡输入了内容。如果有输入，使用正则表达式确保信用卡号格式正确。
+5. 如果这些检查中的任一一个失败，在信用卡号输入元素之后的 `span` 元素中显示错误消息。然后，测试应用程序。
+
+## 验证过期日期字段
+
+6. 修改 `isDate()` 函数，使其接受第二个参数，该参数将指示传递给它的日期类型。两种类型是 MM/DD/YYYY格式的完整日期和 MM/YYYY 格式的信用卡格式。然后，修改验证出生日的代码以使用这种类型。
+7. 在 `isDate()` 函数中添加代码以验证信用卡日期，并以验证完整日期的代码作为指南。
+8. 在 Save 按钮的 `click()` 处理程序中添加 `if` 语句，检查用户是否为过期日期输入了内容。如果是，调用 `isDate()` 函数确保日期格式正确。
+9. 如果这些检查中的任一一个失败，应用程序应该显示错误消息。再次测试应用程序。
+
+# 如何处理浏览器对象、cookie 和网络存储
+
+在本章中，你将学习如何使用浏览器对象来导航浏览器页面并获取有关浏览器的信息。你还将学习如何使用 JavaScript 在用户的浏览器中设置 cookie，以及如何读取和使用这些 cookie。最后，你将学习如何使用网络存储（web storage），这是在用户浏览器中存储信息的另一种方式。
+
+| 主题 | 页码 |
+| :--- | :--- |
+| 如何编写浏览器脚本 | 436 |
+| 如何使用 `location` 对象 | 436 |
+| 如何使用 `history` 对象 | 438 |
+| **教程应用程序** | 440 |
+| HTML 部分 | 440 |
+| JavaScript 部分 | 442 |
+| **如何使用 cookie** | 444 |
+| Cookie 简介 | 444 |
+| 如何创建 cookie | 446 |
+| 如何读取 cookie | 448 |
+| 如何删除 cookie | 450 |
+| **任务列表应用程序** | 452 |
+| HTML 和 CSS | 452 |
+| JavaScript 部分 | 454 |
+| **如何使用网络存储** | 456 |
+| 如何使用本地会话存储 | 456 |
+| 使用网络存储的任务列表应用程序 | 458 |
+| **如何使用 Chrome 处理浏览器中的条目** | 460 |
+| 如何查看和删除 cookie | 460 |
+| 如何查看、编辑和删除网络存储中的条目 | 460 |
+| | 460 |
+| **视角** | 462 |
+
+## 如何编写浏览器脚本
+
+在本主题中，你将学习如何使用浏览器的 `location` 和 `history` 对象。如你所见，`location` 对象允许你处理 Web 页面的 URL。它还控制当前网页的重新加载以及新页面的加载。`history` 对象则允许你处理存储在浏览器历史记录中的页面。
+
+你应该知道，随着处理此类类型操作的 JavaScript 框架的兴起，你自己在自己的应用程序中使用 `location` 和 `history` 对象的概率已经变小了。例如，许多单页应用程序（SPA）的框架已经为你处理了页面导航和历史。尽管如此，了解这些对象的工作原理仍然很有好处。
+
+## 如何使用 `location` 对象
+
+`location` 对象具有属性和方法，用于解析浏览器地址栏中的 URL。这在图 15-1 中所示，该图从一个包含六个可解析部分的 URL 开始。URL 包含了通过 HTTP 请求发送到服务器的参数。这些参数来自 HTML 表单中的字段。
+
+在 URL 中，这些参数从 URL 地址后面的问号（?）开始。这些参数由等号（=）连接的键值对组成。如果向服务器传递了多个参数，它们通过取和符号（&）分隔。在这个示例中，名为 first 和 last 的两个参数被发送到服务器。
+
+在参数之后，该 URL 包含一个以井号（#）开头的占位符名称。它代表由 `<a>` 标签创建的页面占位符。当页面加载时，它会滚动到该占位符。
+
+以此为背景，你可以更好地理解图中表格中的八个 `location` 属性分别代表什么。例如，`href` 属性存储了整个 URL。`host` 属性存储 `hostname` 和 `port` 属性的组合。其他六个属性存储 URL 的部分。
+
+接下来，此图总结了 `location` 对象的两个方法。第一个方法允许你从缓存或服务器（当属性设置为 true 时）重新加载当前页面。第二个方法允许你加载新页面，并替换浏览器历史列表中的当前页面。
+
+图中的第一个示例展示了两种使用 `location` 对象在浏览器中加载新页面的方法。第二个示例显示了如何使用 `reload()` 方法重新加载页面。第三个示例显示了如何使用 `replace()` 方法加载新页面。
+
+当使用 `replace()` 方法加载新页面时，URL 历史记录中的当前页面会被覆盖。为了说明，假设用户首先访问 page1.html，然后访问 page2.html；page2 存在于浏览器的历史列表中。然后，如果 page2 使用 `replace()` 方法加载 page3.html，那么 page3 将替换历史列表中的 page2。此时，如果用户点击浏览器的后退按钮，用户将回到 page1.html 而不是 page2.html。
+
+## 如何处理浏览器对象、cookie 和网络存储
+
+`http://www.murach.com:8181/javascript/location.html?first=G&last=Hopper#result`
+
+### `location` 对象的属性
+
+| 属性 | 描述 | 上述 URL 中的值 |
+| --- | --- | --- |
+| `href` | Web 页面的完整 URL | 完整 URL |
+| `protocol` | URL 的协议部分 | http |
+| `hostname` | URL 的主机名 | www.murach.com |
+| `port` | URL 的端口号 | 8181 |
+| `host` | 主机和端口 | www.murach.com:8181 |
+| `path` | Web 页面的路径 | /javascript/location.html |
+| `search` | URL 中的查询字符串 | ?first=G&last=Hopper |
+| `hash` | URL 中的锚点名称 | #result |
+
+### `location` 对象的方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `reload(force)` | 重新加载当前页面。如果参数设置为 true，则从服务器而非缓存加载。 |
+| `replace(url)` | 加载新页面并覆盖历史列表中的当前页面。 |
+
+- `location` 对象的属性允许你检查 URL 的不同部分。
+- `location` 对象的方法对如何重新加载当前页面以及加载新页面提供了更大的控制。
+
+## 如何使用 `history` 对象
+
+`history` 对象代表用户查看过的 Web 页面历史列表。然而，由于隐私考虑，从 `history` 对象中获取的信息量是有限的。因此，`history` 对象的属性和方法是有限的，如图 15-2 所示。
+
+例如，`length` 属性告诉我们历史列表中有多少个 URL。然而，没有方法可以找到当前页面在历史列表中的位置。因此，你无法判断当前页面是在历史列表的开头、末尾还是中间。
+
+同样，图中所示的方法也是有限的。在这里，`back()` 方法等同于点击浏览器的后退按钮。`forward()` 方法等同于点击前进按钮。带有数字参数的 `go()` 方法允许你模拟多次点击前进或后退按钮。带有子字符串参数的 `go()` 方法跳转到历史列表中最后一个包含该子字符串的 URL。
+
+你还应该知道 HTML5 为 `history` 对象引入了另外两个方法：`pushState()` 和 `replaceState()` 方法。这些方法通常与 Ajax 调用配合使用，模拟 `history` 对象处理传统的服务器往返交互的工作方式。
+
+### `history` 对象的一个属性
+
+| 属性 | 描述 |
+| --- | --- |
+| `length` | `history` 对象中 URL 的数量 |
+
+### `history` 对象的方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `back()` | 在 URL 历史记录中后退一步 |
+| `forward()` | 在 URL 历史记录中前进一步 |
+| `go(position)` | 在 URL 历史记录中前进或后退指定的步数 |
+| `go(substring)` | 跳转到历史记录中包含该子字符串的最新 URL |
+
+### 如何使用 `back()` 方法
+
+```javascript
+history.back();
+```
+
+### 如何使用 `forward()` 方法
+
+```javascript
+history.forward();
+```
+
+### 如何使用 `go()` 方法
+
+```javascript
+// 向前跳转两个 URL
+history.go(2);
+
+// 向后跳转三个 URL
+history.go(-3);
+
+// 跳转到包含 "google" 的最新 URL
+history.go("google");
+```
+
+## 描述
+
+- `history` 对象是一个数组，它保存了已加载过的页面的历史记录。
+- 没有办法确定 `history` 对象中的 URL 是什么。你只能从 `location` 对象获取当前页面的 URL。
+- 由于无法确定当前 URL 在 `history` 对象中的位置，因此你无法知道是否有页面可以后退或前进。
+- HTML5 为 `history` 对象引入了另外两个方法：`pushState()` 和 `replaceState()`。这些方法允许你在进行 Ajax 调用时，向历史堆栈中添加特定的信息。
+
+# 教程应用程序（The Tutorial application）
+
+图 15-3 展示了一个教程应用程程序的用户界面，该程序控制着放入 `history` 对象中的内容。这反决定了当用户点击浏览器的“后退”按钮时显示哪些页面。在这种情况下，教程页面并没有被添加到 `history` 对象中。
+
+在该应用程序的起始页中，Enter 和 Tutorial 按钮为用户提供了选择：直接进入主页（未显示），还是在进入主页之前先看教程。如果用户点击 Tutorial 按钮，他们将在进入主页之前浏览三个教程页面。为了让导航功能正常工作，第一个教程页面有一个 Next 按钮，第二个教程页面有 Prev 和 Next 按钮，而第三个教程页面有 Prev 和 Finish 按钮。
+
+用户浏览完教程页面后，他们处于应用程序的主页上，而不是起始页。这时，如果用户点击浏览器的“后退”按钮，他们将回到起始页。无论他们是点击 Enter 按钮进入主页，还是在进入主页前浏览了教程，都是如此。这是因为教程页面的 JavaScript 不允许教程页面存储在浏览器的历史记录中，这说明了 `history` 对象的属性之一。
+
+# HTML 部分
+
+图 15-3 展示了教程应用程序文件中用到的一些 HTML。这里没有显示应用程序使用的 CSS 文件，或者应用程序每个页面在 `head` 元素中引用的 jQuery CDN 链接。此外，为了简单起见，该应用程序没有独立的 JavaScript 文件。相反，应用程序中的每个文件在其 `head` 元素中都有带有嵌入 JavaScript 的 `script` 标签。
+
+所示 HTML 位于每个页面的 `main` 元素中，由 `<h1>`、`<p>` 和按钮的 `<input>` 元素组成。每个按钮都有一个 `id` 属性，嵌入 JavaScript 使用它来实现导航。
+
+注意在 `tutorial3.html` 文件中，第二个按钮的 id 是“next”，尽管按钮的文本是“Finish”。这只是为了保持代码的一致。不过，如果你认为这样会让代码更清晰，可以将该按钮的 id 改为“finish”。
+
+# 第 15 章 如何处理浏览器对象、cookie 和 Web 存储 441
+
+# 教程应用程序以及浏览器中的教程页面
+
+![](img/32b24cb9657418b8429a4117bd539786_460_0.png)
+
+# index.html 文件 main 元素中的 HTML
+
+```html
+<h1>Welcome to our site;</h1>
+<p>If you're an old hand here, just click on Enter and go on in!</p>
+<p>If you haven't been here before, though, check out our Tutorial.</p>
+<input type="button" id="enter" value="Enter">
+<input type="button" id="tutorial" value="Tutorial">
+```
+
+# 教程文件 main 元素中的 HTML
+
+```html
+tutorial1.html
+<h1>Tutorial - page 1</h1>
+<p>Here's the first thing you need to know about our site.</p>
+<input type="button" id="next" value="Next">
+```
+
+```html
+tutorial2.html
+<h1>Tutorial - page 2</h1>
+<p>Here's the second thing you need to know about our site.</p>
+<input type="button" id="prev" value="Prev">
+<input type="button" id="next" value="Next">
+```
+
+```html
+tutorial3.html
+<h1>Tutorial - page 3</h1>
+<p>Here's the third thing you need to know about our site.</p>
+<input type="button" id="prev" value="Prev">
+<input type="button" id="next" value="Finish">
+```
+
+图 15-3 教程应用程序的用户界面和 HTML
+
+# JavaScript 部分
+
+图 15-4 展示了你在上一个图中看到的页面的 JavaScript。对于每个页面，代码如下：
+
+index.html 带有 Enter 和 Tutorial 按钮的事件处理。这是你在第8 章学过的。
+
+index.html 页面使用 `replace()` 方法跳转到第一个页面。
+
+tutorial1.html 页面带有 Next 按钮的事件处理。这些程序使用 `replace()` 方法跳转到第二个页面。
+
+tutorial2.html 页面带有 Prev 和 Next 按钮的事件处理。这些使用 `replace()` 方法跳转到第三个页面。
+
+tutorial3.html 页面带有 Prev 和 Finish 按钮的事件处理。这些使用 `replace()` 方法跳转到主页。
+
+由于教程页面的 JavaScript 不允许教程页面存储在浏览器的历史记录中，这说明了 `history` 对象的属性之一。
+
+在 `document.ready` 事件中的 JavaScript 如下：
+
+### index.html
+
+```javascript
+$("#enter").click(function() {
+  location.replace("main.html");
+});
+```
+
+```javascript
+$("#tutorial").click(function() {
+  location.replace("tutorial1.html");
+});
+```
+
+### tutorial1.html
+
+```javascript
+$("#next").click(function() {
+  location.replace("tutorial2.html");
+});
+```
+
+### tutorial2.html
+
+```javascript
+$("#prev").click(function() {
+  location.replace("tutorial1.html");
+});
+```
+
+```javascript
+$("#next").click(function() {
+  location.replace("tutorial3.html");
+});
+```
+
+### tutorial3.html
+
+```javascript
+$("#prev").click(function() {
+  location.replace("tutorial2.html");
+});
+```
+
+```javascript
+$("#next").click(function() {
+  location.replace("main.html");
+});
+```
+
+## 描述
+
+- `history` 对象是一个数组，它保存了已加载过的页面的历史记录。
+- 没有办法确定 `history` 对象中的 URL 是什么。你只能从 `location` 对象获取当前页面的 URL。
+- 由于无法确定当前 URL 在 `history` 对象中的位置，因此你无法知道是否有页面可以后退或前进。
+- HTML5 为 `history` 对象引入了另外两个方法：`pushState()` 和 `replaceState()`。这些方法允许你在进行 Ajax 调用时，向历史堆栈中添加特定的信息。
+
+# 教程应用程序（The Tutorial application）
+
+图 15-3 展示了一个教程应用程序的用户界面，该程序控制着放入 `history` 对象中的内容。这反决定了当用户点击浏览器的“后退”按钮时显示哪些页面。在这种情况下，教程页面并没有被添加到 `history` 对象中。
+
+在该应用程序的起始页中，Enter 和 Tutorial 按钮为用户提供了选择：直接进入主页（未显示），还是在进入主页之前先看教程。如果用户点击 Tutorial 按钮，他们将在进入主页之前浏览三个教程页面。为了让导航功能正常工作，第一个教程页面有一个 Next 按钮，第二个教程页面有 Prev 和 Next 按钮，而第三个教程页面有 Prev 和 Finish 按钮。
+
+用户浏览完教程页面后，他们处于应用程序的主页上，而不是起始页。这时，如果用户点击浏览器的“后退”按钮，他们将回到起始页。无论他们是点击 Enter 按钮进入主页，还是在进入主页前浏览了教程，都是如此。这是因为教程页面的 JavaScript 不允许教程页面存储在浏览器的历史记录中，这说明了 `history` 对象的属性之一。
+
+# HTML 部分
+
+图 15-3 展示了教程应用程序文件中用到的一些 HTML。这里没有显示应用程序使用的 CSS 文件，或者应用程序每个页面在 `head` 元素中引用的 jQuery CDN 链接。此外，为了简单起见，该应用程序没有独立的 JavaScript 文件。相反，应用程序中的每个文件在其 `head` 元素中都有带有嵌入 JavaScript 的 `script` 标签。
+
+所示 HTML 位于每个页面的 `main` 元素中，由 `<h1>`、`<p>` 和按钮的 `<input>` 元素组成。每个按钮都有一个 `id` 属性，嵌入 JavaScript 使用它来实现导航。
+
+注意在 `tutorial3.html` 文件中，第二个按钮的 id 是“next”，尽管按钮的文本是“Finish”。这只是为了保持代码的一致。不过，如果你认为这样会让代码更清晰，可以将该按钮的 id 改为“finish”。
+
+# 第 15 章 如何处理浏览器对象、cookie 和 Web 存储 441
+
+# 教程应用程序以及浏览器中的教程页面
+
+![](img/32b24cb9657418b8429a4117bd539786_460_0.png)
+
+# index.html 文件 main 元素中的 HTML
+
+```html
+<h1>Welcome to our site;</h1>
+<p>If you're an old hand here, just click on Enter and go on in!</p>
+<p>If you haven't been here before, though, check out our Tutorial.</p>
+<input type="button" id="enter" value="Enter">
+<input type="button" id="tutorial" value="Tutorial">
+```
+
+# 教程文件 main 元素中的 HTML
+
+```html
+tutorial1.html
+<h1>Tutorial - page 1</h1>
+<p>Here's the first thing you need to know about our site.</p>
+<input type="button" id="next" value="Next">
+```
+
+```html
+tutorial2.html
+<h1>Tutorial - page 2</h1>
+<p>Here's the second thing you need to know about our site.</p>
+<input type="button" id="prev" value="Prev">
+<input type="button" id="next" value="Next">
+```
+
+```html
+tutorial3.html
+<h1>Tutorial - page 3</h1>
+<p>Here's the third thing you need to know about our site.</p>
+<input type="button" id="prev" value="Prev">
+<input type="button" id="next" value="Finish">
+```
+
+
+
+# JavaScript 部分
+
+图 15-4 展示了你在上一个图中看到的页面的 JavaScript。对于每个页面，代码如下：
+
+- `index.html` 带有 Enter 和 Tutorial 按钮的事件处理。这是你在第 8 章学过的。
+- `index.html` 页面使用 `replace()` 方法跳转到第一个页面。
+- `tutorial1.html` 页面带有 Next 按钮的事件处理。这些程序使用 `replace()` 方法跳转到第二个页面。
+- `tutorial2.html` 页面带有 Prev 和 Next 按钮的事件处理。这些使用 `replace()` 方法跳转到第三个页面。
+- `tutorial3.html` 页面带有 Prev 和 Finish 按钮的事件处理。这些使用 `replace()` 方法跳转到主页。
+
+由于教程页面的 JavaScript 不允许教程页面存储在浏览器的历史记录中，这说明了 `history` 对象的属性之一。
+
+在 `document.ready` 事件中的 JavaScript 如下：
+
+```javascript
+// index.html
+$("#enter").click(function() {
+  location.replace("main.html");
+});
+```
+
+```javascript
+// index.html
+$("#tutorial").click(function() {
+  location.replace("tutorial1.html");
+});
+```
+
+```javascript
+// tutorial1.html
+$("#next").click(function() {
+  location.replace("tutorial2.html");
+});
+```
+
+```javascript
+// tutorial2.html
+$("#prev").click(function() {
+  location.replace("tutorial1.html");
+});
+```
+
+```javascript
+// tutorial2.html
+$("#next").click(function() {
+  location.replace("tutorial3.html");
+});
+```
+
+```javascript
+// tutorial3.html
+$("#prev").click(function() {
+  location.replace("tutorial2.html");
+});
+```
+
+```javascript
+// tutorial3.html
+$("#next").click(function() {
+  location.replace("main.html");
+});
+```
+
+## 描述
+
+- `history` 对象是一个数组，它保存了已加载过的页面的历史记录。
+- 没有办法确定 `history` 对象中的 URL 是什么。你只能从 `location` 对象获取当前页面的 URL。
+- 由于无法确定当前 URL 在 `history` 对象中的位置，因此你无法知道是否有页面可以后退或前进。
+- HTML5 为 `history` 对象引入了另外两个方法：`pushState()` 和 `replaceState()`。这些方法允许你在进行 Ajax 调用时，向历史堆栈中添加特定的信息。
+
+# 教程应用程序
+
+图 15-3 展示了一个教程应用程序的用户界面，该程序控制着放入 `history` 对象中的内容。这反决定了当用户点击浏览器的“后退”按钮时显示哪些页面。在这种情况下，教程页面并没有被添加到 `history` 对象中。
+
+在该应用程序的起始页中，Enter 和 Tutorial 按钮为用户提供了选择：直接进入主页（未显示），还是在进入主页之前先看教程。如果用户点击 Tutorial 按钮，他们将在进入主页之前浏览三个教程页面。为了让导航功能正常工作，第一个教程页面有一个 Next 按钮，第二个教程页面有 Prev 和 Next 按钮，而第三个教程页面有 Prev 和 Finish 按钮。
+
+用户浏览完教程页面后，他们处于应用程序的主页上，而不是起始页。这时，如果用户点击浏览器的“后退”按钮，他们将回到起始页。无论他们是点击 Enter 按钮进入主页，还是在进入主页前浏览了教程，都是如此。这是因为教程页面的 JavaScript 不允许教程页面存储在浏览器的历史记录中，这说明了 `history` 对象的属性之一。
+
+# HTML 部分
+
+图 15-3 展示了教程应用程序文件中用到的一些 HTML。这里没有显示应用程序使用的 CSS 文件，或者应用程序每个页面在 `head` 元素中引用的 jQuery CDN 链接。此外，为了简单起见，该应用程序没有独立的 JavaScript 文件。相反，应用程序中的每个文件都有 `head` 元素中带有嵌入 JavaScript 的 `script` 标签。
+
+所示 HTML 位于每个页面的 `main` 元素中，由 `<h1>`、`<p>` 和按钮的 `<input>` 元素组成。每个按钮都有一个 `id` 属性，嵌入 JavaScript 使用它来实现导航。
+
+注意在 `tutorial3.html` 文件中，第二个按钮的 id 是“next”，尽管按钮的文本是“Finish”。这只是为了保持代码的一致。不过，如果你认为这样会让代码更清晰，可以将该按钮的 id 改为“finish”。
+
+# Cookie 简介
+
+Cookie 是一个由浏览器存储的短字符串，格式为键值对。当请求一个 web 页面时，服务器可以通过 HTTP 响应返回一个 cookie。如果它这样做且浏览器启用了 cookie，浏览器将存储该 cookie。然后，当你从服务器加载另一个页面时，浏览器会将 cookie 作为 HTTP 请求的一部分发送回服务器。这一过程如图 15-5 所示。
+
+至少，cookie 必须以用等号连接的键值对开始。例如，图中的第一个示例将 cookie 名称与值 `grace@yahoo.com` 绑定。该对后面可以跟随表格列出的任何属性。注意这些键值对之间必须用分号和空格分隔。
+
+如果 cookie 不包含 `max-age` 属性，它被称为会话 cookie，在浏览器关闭时会被删除。如果 cookie 包含带有正值的 `max-age` 属性，则它是一个持久性 cookie，将存储在用户的硬盘上，直到该属性中的秒数过期。图中的第二个示例说明了这一点，它将 `max-age` 属性设置为 21 天（`21 * 24 * 60 * 60 = 1,814,400` 秒）。
+
+通常，cookie 的 `path` 属性被设置为网站的根目录，如两个示例所示。这意味着网站的每个页面都可以访问该 cookie。
+
+## Cookie 的属性
+
+| 属性 | 描述 |
+| --- | --- |
+| `max-age` | Cookie 的生存时间（以秒为单位） |
+| `path` | Web 服务器上可以查看 cookie 的路径 |
+| `domain` | 可以查看 cookie 的域名 |
+| `secure` | 如果存在，则 cookie 在传输时必须加密，且只有当浏览器和服务器通过 HTTPS 或其他安全协议连接时才能传输。 |
+
+## Cookie 示例
+
+```
+email=grace@yahoo.com; path=/ username=shopper; max-age=1814400; path=/
+```
+
+## 描述
+
+- Cookie 是由 Web 浏览器存储的短文本字符串。Cookie 由键/值对组成，并且必须以一个命名 cookie 并提供其值的键/值对（name/value pair）开头。
+- 浏览器通常作为 HTTP 响应的一部分从 Web 服务器获取 cookie。然后，浏览器会在每次 HTTP 请求中将 cookie 发送回服务器。
+- 会话 cookie 在 Web 浏览器关闭时会被删除。
+- 持久 cookie 在浏览器关闭后由 Web 浏览器保存。这种类型的 cookie 有一个当前日期之后的过期日期。
+- JavaScript 也可以用于创建、读取和删除 cookie。
+
+## 如何创建 cookie
+
+处理 cookie 时，JavaScript 提供了一个名为 `document.cookie` 的特殊对象。要创建一个 cookie，你首先需要创建一个表示 cookie 的文本字符串。然后，将 `document.cookie` 设置为 cookie 的文本字符串。这会导致浏览器创建并存储该 cookie。
+
+这通过图 15-6 中的示例进行了说明。要创建一个会话 cookie，第一个示例将 cookie 的名称（`tasks`）和一个等号赋值给名为 `cookie` 的变量。然后，它将键/值对的值追加到 `cookie` 变量中。
+
+但注意，cookie 的值不能包含分号、逗号或空格，而这个值包含了它们。因此，使用 `encodeURIComponent` 函数对非法字符进行编码以便可以使用它们。例如，值中的每个空格都将转换为 `%20`。稍后在检索 cookie 时，将使用 `decodeURIComponent` 函数将数据转换回原始形式。
+
+此示例中的下一个语句向 cookie 字符串添加了路径。然后，将 cookie 字符串赋值给 `document.cookie` 对象，从而在浏览器上存储 cookie。由于这是一个会话 cookie，它将在浏览器关闭时被删除。
+
+图中的第二个示例创建了一个持久 cookie。它的原理与第一个示例类似，但它为 cookie 添加了 `max-age` 属性。这一次，cookie 将在浏览器关闭后存储在用户的硬盘上，但将在 21 天后被删除。
+
+当你向 `document.cookie` 对象添加 cookie 时，你应该意识到新 cookie 的文本字符串不会替换对象中的当前文本字符串。相反，新 cookie 的文本字符串会被追加到现有文本字符串的末尾。这样，你可以在浏览器中存储多个 cookie。
+
+这通过图中的第三个示例进行了说明。在这里，第一个语句向浏览器添加了一个名为 `email` 的 cookie，第二个语句添加了 `username` 的 cookie。然后，第三个语句替换了 `email` cookie 中的值，因为该 cookie 已经存在了。然后你可以看到这些语句后的结果。
+
+图中的最后一个示例显示了一个可以创建会话或持久 cookie 的函数。它接受三个参数：`name`、`value` 和 `days`。在函数内部，它将 cookie 名称与等号以及 cookie 值的编码版本拼接。然后，它检查 `days` 参数是否有值。如果有，函数将为 cookie 添加一个 `max-age` 属性，并使用 `days` 计算秒数。最后，它将路径追加到 cookie 并将其赋值给 `document.cookie`。
+
+顺便说，在生产应用中，你可能希望对此函数添加一些验证。例如，你可能想确保 `days` 参数包含数值，并且 `name` 参数不包含任何非法字符。但这应该让你对能做什么做什么有一个大致的了解。
+
+## 处理 cookie 的两个函数
+
+| 函数 | 描述 |
+| --- | --- |
+| `encodeURIComponent(value)` | 编码包含分号、逗号或空格的值 |
+| `decodeURIComponent(value)` | 解码已编码的值 |
+
+## 如何创建会话 cookie
+
+```javascript
+var cookie = "tasks" + "="; // 创建 cookie 名称
+cookie += encodeURIComponent("Feed dog\nWater plants"); // 编码并添加数据
+cookie += "; path=/"; // 添加路径
+document.cookie = cookie; // 存储 cookie
+```
+
+## 如何创建持久 cookie
+
+```javascript
+var cookie = "tasks" + "="; // 创建 cookie 名称
+cookie += encodeURIComponent("Feed dog\nWater plants"); // 编码并添加数据
+cookie += "; max-age=1814400; path=/"; // 添加路径
+document.cookie = cookie; // 存储 cookie
+```
+
+## 如何向 document 添加 cookie
+
+```javascript
+var cookie = "email" + "=";
+cookie += encodeURIComponent("grace@yahoo.com");
+cookie += "; path=/";
+document.cookie = cookie;
+
+cookie = "username" + "=";
+cookie += encodeURIComponent("shopper");
+cookie += "; max-age=1814400; path=/";
+document.cookie = cookie;
+```
+
+## `document.cookie` 对象中的三个 cookie
+
+```
+username=shopper; status=active; tasks=Water%20plants
+```
+
+# 一个通过名称获取 cookie 的 `getCookieName()` 函数
+
+```javascript
+var getCookieName = function(name) {
+    var cookies = document.cookie;
+    // 获取 cookie 名称的起始索引，其后紧跟一个等号（=）
+    var start = cookies.indexOf(name + "=");
+    if (start == -1) return ""; // 没有名为该名称的 cookie
+    else {
+        // 调整索引，使结果中不包含名称和等号
+        start = start + (name.length + 1);
+        // 获取 cookie 值末尾分号（;)的索引，
+        // 如果是最后一个 cookie，则获取字符串的长度
+        var end = cookies.indexOf(";", start);
+        if (end == -1) end = cookies.length;
+        // 使用起始和结束索引获取 cookie 值
+        var cookieValue = cookies.substring(start, end);
+        // 返回解码后的 cookie 值
+        return decodeURIComponent(cookieValue);
+    }
+};
+```
+
+# 如何使用 `getCookieName()` 函数读取 cookie
+
+```javascript
+var tasks = getCookieName("tasks"); // tasks = "Water plants"
+```
+
+## 描述
+
+- 当你将 `document.cookie` 对象赋值给一个变量时，它的值被存储为一个 String 对象。你可以使用 String 对象的方法来定位你需要的 cookie 值。你已经在第 13 章中学习了如何使用其中许多方法。
+- 经常与 cookie 一用的 String 对象方法之一是 `split()` 方法，它让你将 cookie 字符串拆分为一个 cookie 数组。你将在第 16 章中学习如何使用 `split()` 方法。
+- 这种对 cookie 字符串的操作之所以可行，是因为 cookie 字符串遵循这样一种可预测的模式。
+
+# 如何删除 cookie
+
+要删除 cookie，你需要再次存储该 cookie，但不再提供值，并设置 `max-age` 属性值为 0。不过，cookie 的其他部分（如路径 `path` 和域 `domain`）必须与创建 cookie 时设置的值相同。如果你尝试更改 cookie 的路径或域，删除 cookie 的尝试将被忽略。
+
+图 15-8 显示了如何删除 cookie。在这里，第一个示例是删除 cookie 的 cookie 代码，你会发现这段代码与创建持久性 cookie 的代码相似，但有两个不同点：首先，没有为 cookie 提供值；其次，`max-age` 属性设置为 0。然后，当更新后的 cookie 存储在 `document.cookie` 对象中时，该 cookie 就会被删除。
+
+图中第三个示例显示了一个删除 cookie 的 `deleteCookie()` 函数。它使用 `name` 参数创建一个没有值且 `max-age` 值为 0 的 cookie。这会导致 cookie 被删除。在该函数调用之后，你可以看到一条调用它来删除名为 `tasks` cookie 的语句。
+
+# 要删除的 cookie
+
+```
+tasks=Feed dog; max-age=1814400; path=/
+```
+
+# 如何删除 cookie
+
+```javascript
+var cookie = "tasks="; // 设置名称和数据
+cookie += "max-age=0"; // 将 max-age 设置为 0
+cookie += "; path=/"; // 设置路径
+document.cookie = cookie; // 删除 cookie
+```
+
+# 一个删除 cookie 的 `deleteCookie()` 函数
+
+```javascript
+var deleteCookie = function(name) {
+  document.cookie = name + "=; max-age=0; path=/";
+};
+```
+
+# 如何使用 `deleteCookie()` 函数删除 cookie
+
+```javascript
+deleteCookie("tasks");
+```
+
+## 描述
+
+- 要删除 cookie，你需要将它的 `max-age` 属性设置为 0。
+- 当你删除 cookie 时，数据必须为空，但仍然需要等号（=）。此外，路径 `path` 和域 `domain` 必须与创建 cookie 时使用的路径和域匹配。
+- cookie 一旦创建，无法使用 JavaScript 获取其路径和域。但是，正如你即将看到的，你可以使用 Chrome 浏览器的“应用程序”（Applications）面板来获取这些信息。
+
+# 任务列表应用程序
+
+为了向你展示如何使用 cookie 让应用程序更有用，本章介绍了一个任务列表应用程序。该应用程序将任务列表中的项目保存在持久性 cookie 中。这意味着用户每次访问页面时，任务列表都是可用的，至少在 cookie 过期之前。但注意，由于任务列表存储在用户当前的浏览器中，如果用户切换到不同的浏览器，该列表将不可用。
+
+你应该知道的另一点是，如果你通过双击 `index.html` 文件运行此应用程序，它在 Chrome 中将无法工作。这是因为 Chrome 禁用了从文件系统运行的网站中的 cookie（即 URL 以 `file://` 开头的网站）。
+
+有两种方法可以解决这个问题。首先，你可以使用 Firefox 浏览器，它支持文件 URL 的 cookie；其次，你可以在 IDE 内部从 Chrome 运行该应用程序。关于如何在 Aptana 中进行此操作的信息，请参见图 1-21。
+
+# HTML 和 CSS
+
+图 15-9 展示了此应用程序的用户界面。文本框和两个按钮允许用户添加和删除任务，任务列表显示在文本框和按钮右侧的 `textarea` 元素中。在 HTML 的 `head` 部分……
+
+# JavaScript
+
+```javascript
+$(document).ready(function() {
+  var setCookie = function(name, value, days) {
+    var cookie = name + "=" + encodeURIComponent(value);
+    if (days !== undefined) {
+      cookie += "; max-age=" + (days * 24 * 60 * 60);
+    }
+    cookie += "; path=/";
+    document.cookie = cookie;
+  };
+
+  var getCookie = function(name) {
+    var cookies = document.cookie;
+    var start = cookies.indexOf(name + "=");
+    if (start === -1) { return ""; } // no cookie with that name
+    else {
+      start = start + (name.length + 1);
+      var end = cookies.indexOf(";", start);
+      if (end === -1) { end = cookies.length; }
+      var cookieValue = cookies.substring(start, end);
+      return decodeURIComponent(cookieValue);
+    }
+  };
+
+  var deleteCookie = function(name) {
+    document.cookie = name + "=; max-age=0; path=/";
+  };
+
+  $('#add_task').click(function() {
+    var textbox = $("#task");
+    var task = textbox.val();
+    if (task === "") {
+      alert("Please enter a task.");
+      textbox.focus();
+    } else {
+      var tasks = getCookie("tasks");
+      tasks = tasks.concat(task, "\n");
+      setCookie("tasks", tasks, 21); // 21 day persistent cookie
+      textbox.val("");
+      $('#task_list').val(getCookie("tasks"));
+      textbox.focus();
+    }
+  });
+
+  $('#clear_tasks').click(function() {
+    deleteCookie("tasks");
+    $('#task_list').val("");
+    $('#task').focus();
+  });
+
+  // display tasks on initial load
+  $('#task_list').val(getCookie("tasks"));
+  $('#task').focus();
+});
+```
+
+## 如何使用 Web 存储
+
+在过去，cookies 是在用户系统上存储数据的唯一选择。但 cookies 也有一些缺点。它们会随着每个 HTTP 请求发送到服务器。而且 cookie 中的存储被限制在约 4000 字节。
+
+幸运的是，现代浏览器现在提供了可以在浏览器上通过 JavaScript 处理的 Web 存储。这样，数据就不会随着每个 HTTP 请求发送到服务器。此外，Web 存储可以存储大约 5MB 的数据。
+
+Web 存储包括本地存储（local storage）和会话存储（session storage）。区别在于本地存储中的项在浏览器会话之间持久，类似于持久 cookie。而会话存储中的项会在浏览器会话结束时移除，类似于会话 cookie。Web 存储相对于 cookies 的另一个优势是它们更容易使用，正如你接下来看到的。
+
+## 如何使用本地存储和会话存储
+
+图 15-11 显示了如何使用本地存储和会话存储。要做到这一点，你使用 `localStorage` 和 `sessionStorage` 对象，它们以键值对的形式存储项。然后，你使用这些对象的 `getItem()`、`setItem()`、`removeItem()` 和 `clear()` 方法来处理项。
+
+例如，`setItem` 方法需要两个参数，分别提供项的键和项的值。因此，你使用如下代码来添加键为 "email" 和 "phone" 的项，用于存储用户的电子邮件地址和电话：
+
+```javascript
+localStorage.setItem("email", "grace@yahoo.com");
+localStorage.setItem("phone", "555-555-1212");
+```
+
+然后，你使用项键作为参数调用 `getItem()` 方法，通过如下语句获取手机电话项的数据：
+
+```javascript
+var phone = localStorage.getItem("phone");
+```
+
+为了简化起见，可以使用图中所示的快捷语法。例如，你使用代码来保存电子邮件项：
+
+```javascript
+localStorage.email = "grace@yahoo.com";
+localStorage.phone = "555-555-1212";
+```
+
+并使用此代码获取项：
+
+```javascript
+var phone = localStorage.phone;
+```
+
+该示例使用了图中示例中的快捷语法。在这里，`if` 语句测试本地存储和会话存储中的 "hits" 项是否存在。如果存在，它会将键值对中的值转换为数字并加 1。如果不存在，它将保存一个名为 "hits" 的新项，其值为 1。之后，使用 `alert()` 方法显示本地存储和会话存储中 "hits" 的值。此处显示的消息框假设用户在首次 8 次页面访问后关闭了浏览器，并重新打开进行了两次页面访问。
+
+## 使用本地存储或会话存储的语法
+
+```javascript
+localStorage.setItem("itemname", "value"); // 在项中保存数据
+localStorage.getItem("itemname"); // 获取项中的数据
+localStorage.removeItem("itemname"); // 移除项
+localStorage.clear(); // 移除所有项
+sessionStorage.setItem("itemname", "value"); // 在项中保存数据
+sessionStorage.getItem("itemname"); // 获取项中的数据
+sessionStorage.removeItem("itemname"); // 移除项
+sessionStorage.clear(); // 移除所有项
+```
+
+## 获取或保存项的快捷语法
+
+```javascript
+localStorage.itemname; // 保存或获取项中的数据
+sessionStorage.itemname; // 保存或获取项中的数据
+```
+
+## JavaScript 使用本地存储和会话存储
+
+```javascript
+$(document).ready(function() {
+  if (localStorage.hits) {
+    localStorage.hits = parseInt(localStorage.hits) + 1;
+  } else {
+    localStorage.hits = 1;
+  }
+
+  if (sessionStorage.hits) {
+    sessionStorage.hits = parseInt(sessionStorage.hits) + 1;
+  } else {
+    sessionStorage.hits = 1;
+  }
+
+  alert("本地访问次数：" + localStorage.hits +
+        "\n会话访问次数：" + sessionStorage.hits);
+});
+```
+
+## 描述
+
+- Web 存储允许你在客户端浏览器上存储数据。
+- Web 存储的一种类型是本地存储，它是持久的。
+- 另一种类型是会话存储，它会在浏览器会话结束时清除。
+- 与 cookie 不同，Web 存储不会随着每个 HTTP 请求发送到服务器。
+- 与 cookie 相比，Web 存储提供了更大的容量（高达 5MB）。
+- 使用快捷语法处理起来更容易。
+
+## 如何使用 Chrome 处理浏览器中的项目
+
+有时在测试使用 cookie 或网络存储（web storage）的应用程序时，查看当前存储了哪些值会很有帮助。现在，你将学习如何使用 Chrome 浏览器的“应用程序”（Application）面板来实现这一操作。
+
+这不仅对于测试你自己的应用程序有用，还可以查看其他网站在你的浏览器中存储了什么。例如，你可以访问 google.com，然后打开“应用程序”面板查看 Google 在你的计算机上存储了什么，这是一个非常有趣的练习。“应用程序”面板还会显示大多数现代浏览器支持的浏览器数据库中的内容。
+
+除了让你看到网站在你的计算机上存储了什么之外，“应用程序”面板允许你删除和编辑项目。这在测试和调试自己的应用程序时非常有用。但在处理其他网站时，要小心，因为你可能会删除影响该网站运行的某些内容。
+
+## 如何查看和删除 cookies
+
+你可以使用图 15-13 中描述的技术来查看应用程序存储在浏览器中的 cookies。对于每个 cookie，“应用程序”面板会显示其名称、值、路径和过期日期等信息。
+
+你还可以使用“应用程序”面板来删除 cookie。这在应用程序开发期间非常方便。不过，与网络存储项不同，你无法在“应用程序”面板中编辑 cookie 的值。
+
+## 如何查看、编辑和删除网络存储中的项目
+
+你可以使用图 15-13 中描述的技术来查看应用程序存储在浏览器中的网络存储项。对于这些项目，“应用程序”面板会显示存储在本地存储（local storage）或会话存储（session storage）中的项目的键（key）和值（value）字段。
+
+与 cookie 一样，你可以使用“应用程序”面板删除网络存储中的项目。与 cookie 不同，你还可以使用“应用程序”面板编辑网络存储中的项目。这在开发应用程序时非常有用。
+
+## 如何使用 Chrome 中的应用程序面板处理存储的项目
+
+- 按 `F12` 打开开发者工具。
+- 点击工具窗口顶部的“应用程序”（Application）选项卡，然后在左侧窗格中寻找“存储”（Storage）部分。
+- 要处理 cookies，点击 Cookies 旁边的箭头展开该部分，然后点击网站 URL。这将在网格中显示 cookies。
+- 要处理网络存储，点击“本地存储”（Local Storage）或“会话存储”（Session Storage）旁边的箭头展开该部分，然后点击网站 URL。这将在网格中显示该类型存储的键值对。
+
+## 如何删除 cookie 或网络存储项
+
+- 右键点击你想要删除的项目，然后点击“删除”（Delete）。
+- 你需要刷新页面才能在应用程序中看到此项操作的结果。
+
+## 如何编辑网络存储项
+
+- 右键点击你想要编辑的值，然后点击“编辑值”（Edit Value）。
+- 编辑值字段中的文本，完成后点击该字段以外的区域。
+- 你需要刷新页面才能在应用程序中看到此项操作的结果。
+
+## 描述
+
+- 你可以使用 Chrome 开发者工具中的“应用程序”面板来处理 cookie 以及本地存储和会话存储中的项目。
+- 你可以删除 cookie 和网络存储项，但只有网络存储允许编辑。
+
+## 观点
+
+现在你已经完成了这一章，你拥有了处理位置（`location`）对象、历史（`history`）对象、cookies 和网络存储所需的技能。但请记住，由于你可以查看 cookie 和网络存储的值，所以它们是不安全的。因此，你不应该在其中存储个人信息或密码。
+
+## 术语
+
+- cookie
+- 名称/值对
+- 会话 cookie (session cookie)
+- 持久 cookie (persistent cookie)
+- 第三方 cookie
+- 网络存储 (web storage)
+- 会话存储 (session storage)
+- 本地存储 (local storage)
+- 键值对
+
+# 总结
+
+- `location` 对象的属性让你检查当前 URL 的不同部分，而方法让你对新页面加载到浏览器的方式有更大的控制力。
+- `history` 对象保存用户访问过的页面历史。你可以使用它的方法来控制历史对象中存储的内容以及页面之间导航的工作方式。
+- cookie 是存储在用户网络浏览器上的短小的文本字符串。cookie 由一个名称/值对组成，可以是会话 cookie 也可以是持久 cookie。会话 cookie 在浏览器关闭时被移除，而持久 cookie 在设定的时间过去后会被移除。
+- Cookies 在每个 HTTP 请求和响应中在浏览器和服务器之间传递。你可以用 JavaScript 创建、读取和删除 cookie。
+- 网络存储提供了在用户浏览器上存储数据的另一种方法。网络存储项以键/值对的形式存储，但这些项不会像 cookie 那样在浏览器和服务器之间传递。
+- 网络存储有两种类型。本地存储永久保留，而会话存储在浏览器会话结束时会丢失。
+- 你可以使用 Chrome 的开发者工具查看并删除本地存储以及会话存储中的 cookie 和项目。你还可以使用这些工具编辑本地存储和会话存储中的项目。
+
+# 练习 15-1 测试教程
+
+在本练习中，你将使用处理位置和历史对象、cookies 和网络存储的技能。你会通过一些更改来测试本章中介绍的应用程序。
+
+## 打开并测试应用程序
+
+1. 使用编辑器或 IDE 打开此目录下的文件：`c:\javascript_jquery\exercises\ch15\`
+2. 查看 `main.html`，找到页面底部的脚本元素，使用 `location` 对象来显示值。
+3. 运行应用程序，当你进入主页面时，注意历史对象中的内容。
+
+## 将页面存储在历史对象中
+
+4. 修改教程页面的 JavaScript，使其使用 `location.href` 代替 `location.replace()`。
+5. 运行应用程序并测试导航，注意历史对象中的变化。
+
+# 练习 15-2 增强任务列表应用程序
+
+在本练习中，你将调整使用网络存储的任务列表应用程序，使其具有过期日期。这样，它们的行为会更像持久性 cookie。
+
+## 打开并测试应用程序
+
+1. 使用编辑器或 IDE 打开此目录下的文件：`c:\javascript_jquery\exercises\ch15\task_list\`
+2. 在 Chrome 中运行应用程序，如果还没有任务，就输入两个。接下来，点击 `F12` 按钮打开开发者工具，导航到“应用程序”面板，展开 Local Storage 节点并选择 URL 查看你添加的任务存储。
+3. 点击“清除任务”按钮清除任务，然后关闭浏览器。
+
+## 增强任务存储以包含过期日期
+
+4. 显示 `task_list.js` 文件。找到添加按钮点击事件处理程序中将更新后的任务添加到本地存储的行代码。
+5. 之后，为今天创建一个新的 `Date` 对象，并将该日期增加 21 天。然后，调用 `Date` 对象的 `toDateString()` 方法并将结果值存储在本地存储中名为 `expiration` 的属性中。
+6. 重复步骤 2。注意到有一个任务存储项和一个过期存储项。
+7. 在清除任务按钮的点击事件处理程序中，添加从本地存储移除过期项的代码。
+8. 在 `displayTasks()` 函数中，注释掉设置 `task_list` textarea 值的行代码。然后，编写代码从本地存储中获取过期值并将其转换为 `Date` 对象。之后，为今天创建一个 `Date` 对象。
+9. 编写一个 `if` 语句来检查过期日期是否已过去。要这样做，请比较每个 `Date` 对象 `getTime()` 方法返回的值。如果过期日期已过去，则从本地存储中删除任务和过期项。如果没有过期，则像以前一样从本地存储中检索任务并显示它们。
+10. 运行应用程序，如果还没有任务，就输入两个。接下来，打开“应用程序”面板并编辑过期日期使其在过去。然后，刷新应用程序。注意到任务已从应用程序显示和本地存储中被清除了。
+
+# 如何处理数组
+
+在第 3 章中，你已经接触了数组。现在，在本章中，你将学习更多关于处理数组的知识，数组是许多 JavaScript 应用程序的重要部分。例如，你可以使用数组来存储任务列表，并对它们进行更新和显示。
+
+## 如何创建和使用数组
+
+首先，你将回顾在第 3 章中学习的技能，并学习创建和使用数组的其他技能。
+
+## 如何创建一个数组
+
+**数组**（array）是一个包含一个或多个称为*元素*（elements）的项目的对象。这些元素中的每一个可以是基本数据类型，也可以是对象。例如，你可以在同一个数组中存储数字、字符串和 `Date` 对象。
+
+数组的*长度*（length）表示它所包含的元素数量。由于 JavaScript 数组是动态的，你可以通过向数组添加或删除元素来更改数组的长度。
+
+图 16-1 显示了创建数组两种方法。当你使用第一种方法时，使用 `new` 关键字配合 `Array()` 构造函数创建一个数组，其元素数量由 `length` 参数指定。该长度必须是一个大于或等于零的整数。如果你不指定长度，数组将是空的。
+
+当你使用第二种方法时，只需编写一组括号。这会为你带来与第一种方法不带参数相同的结果：一个空数组。
+
+接下来，此图显示了如何在一个语句中创建新数组并对其元素赋值。在这种情况下，你代码编写了一组用逗号分隔的值列表。例如，第一组示例显示了一个创建一个名为 `rates` 的数组的语句（包含四个数值值）以及一个创建一个名为 `names` 的数组的语句（包含三个字符串）。
+
+但请注意，当你使用 `new` 关键字创建数组时，数组列表不能是一个数字。否则，它将被视为数组的长度，而不是数组中的值。
+
+要引用数组中的元素，你使用一个*索引*（index），其范围从 0 到数组元素数量减 1。例如，在一个有 12 个元素的数组中，索引值的范围是从 0 到 11。这就是为什么 `Date` 对象的 `getMonth()` 方法将月份从 0 编号到 11，而不是从 1 到 12。然后，`getMonth()` 方法的返回值可以作为月份名称数组的索引。
+
+要使用索引，你在数组名称后的括号内编写它。在此图中，所有元素都使用字面量作为索引，但索引也可以是包含索引值的变量。如果你尝试访问一个未赋值的元素，将返回 `undefined` 的值。
+
+此图中的最后一组示例显示了如何给空数组赋值。要实现这一点，你通过索引引用元素，并为这些元素赋值。
+
+### 创建数组的语法
+
+使用 `new` 关键字配合 Array 对象名
+
+```javascript
+var arrayName = new Array(length);
+```
+
+使用数组字面量
+
+```javascript
+var arrayName = [];
+```
+
+### 在一个语句中创建数组并赋值的语法
+
+使用 `new` 关键字配合 Array 对象名
+
+```javascript
+var arrayName = new Array(arrayList);
+```
+
+使用数组字面量
+
+```javascript
+var arrayName = [arrayList];
+```
+
+### 在一个语句中创建数组并赋值
+
+```javascript
+var rates = new Array(14.95, 12.95, 11.95, 9.95);
+var names = ["Grace", "Charles", "Ada"];
+```
+
+### 引用数组元素的语法
+
+```javascript
+arrayName[index];
+```
+
+### 引用数组元素的代码
+
+```javascript
+rates[2]; // 引用 rates 数组中的第三个元素
+names[1]; // 引用 names 数组中的第二个元素
+```
+
+### 给数组赋值
+
+给四个元素的数组赋值
+
+```javascript
+var rates = new Array(4);
+rates[0] = 14.95;
+rates[1] = 12.95;
+rates[2] = 11.95;
+rates[3] = 9.95;
+```
+
+给空元素的数组赋值字符串
+
+```javascript
+var names = [];
+names[0] = "Grace";
+names[1] = "Charles";
+names[2] = "Ada";
+```
+
+## 描述
+
+- 数组可以包含一个或多个元素。数组的长度是数组中元素的数量。
+- 如果不指定长度的情况下创建一个数组，每个元素将设置为 `undefined`。
+- 要引用数组中的元素，你使用索引，其中 0 是第一个元素，1 是第二个，以此类推。
+
+## 如何添加和删除数组元素
+
+有一个属性和一个运算符可以帮助你修改数组。它们在图 16-2 中。
+
+要在数组末尾添加元素，可以使用数组的 `length` 属性作为新元素的索引。如图中第一个示例所示。由于该属性始终比使用的最大索引大 1，这会在数组末尾添加新元素。
+
+要在特定索引处添加元素，你使用索引引用元素并为其赋值。如图第二个示例所示。如果你使用的索引大于数组的长度，你跳过的元素将被创建并赋值为 `undefined`。
+
+要从数组中删除元素，可以使用 `delete` 运算符。如图中第三个示例所示。当你这样做时，被删除的元素将留在数组中，其值为 `undefined`。也就是说，位于你删除元素之上的元素不会向下移动以填充此间隙。在本章后面的部分，你还将学习如何使用数组的 `splice()` 方法删除元素而不在数组中留下间隙。
+
+要移除数组中的所有元素，可以将数组的 `length` 属性设置为零。如图第四个示例所示。注意，这与使用 `delete` 运算符不同，因为元素不会留在数组中并变为 `undefined`。相反，元素被完全移除，使数组为空。
+
+在 JavaScript 中，稀疏数组（sparse array）是指具有大量元素但赋值元素很少数组。如图中第五个示例所示。在这里，数组有 1001 个元素，但只有两个元素赋值了值。在某些编程语言中，会为内存中的所有 1001 个元素预留空间。但在 JavaScript 中，只为已赋值的元素预留空间。
+
+### 数组的一个属性和一个操作符
+
+| 属性 | 描述 |
+| --- | --- |
+| `length` | 数组中元素的个数。 |
+| 操作符 | 描述 |
+| `delete` | 删除数组的内容并将元素设置为 `undefined`，但并不会从数组中移除该元素。 |
+
+### 如何向数组末尾添加元素
+
+```javascript
+var numbers = [1, 2, 3, 4]; // 数组为 1, 2, 3, 4
+numbers[numbers.length] = 5; // 数组为 1, 2, 3, 4, 5
+```
+
+### 如何在特定索引处添加元素
+
+```javascript
+var numbers = [1, 2, 3, 4]; // 数组为 1, 2, 3, 4
+numbers[6] = 7; // 数组为 1, 2, 3, 4, undefined, undefined, 7
+```
+
+### 如何删除特定索引处的数字
+
+```javascript
+var numbers = [1, 2, 3, 4]; // 数组为 1, 2, 3, 4
+delete numbers[2]; // 数组为 1, 2, undefined, 4
+```
+
+### 如何移除所有元素
+
+```javascript
+var numbers = [1, 2, 3, 4]; // 数组包含四个元素
+numbers.length = 0; // 从数组中移除所有元素
+```
+
+### 一个包含 999 个 undefined 元素的稀疏数组
+
+```javascript
+var numbers = [1]; // 数组为 1
+numbers[1000] = 1001; // 数组包含 1 和 1001，中间有 999 个 undefined 元素
+```
+
+## 描述
+
+- 向数组末尾添加元素的一种方法是将 `length` 属性作为索引。
+- 如果你在不是连续的特定索引处添加元素，在新元素和原数组末尾之间会插入 `undefined` 元素。
+- 当使用 `delete` 操作符时，元素的值会被删除，但元素仍以 `undefined` 的值留在数组中。
+- 要从数组中移除所有元素，可以将数组的 `length` 属性设置为 0。与 `delete` 操作符不同，这会移除所有元素，而不仅仅是元素的值。
+- *稀疏数组*是一个具有少数定义元素的大数组。为了效率，JavaScript 只为分配了值的元素预留空间。
+- 你也可以通过使用 `Array` 对象的方法向数组中添加项。
+
+## 如何使用 `for` 循环来处理数组
+
+`for` 循环通常通过增加索引变量来一次次处理一个数组元素。图 16-3 显示了其工作原理。
+
+图中的第一个示例展示了如何创建一个数组并用 1 到 10 的数字填充它。首先，代码创建一个名为 `numbers` 的空数组。然后，使用索引变量 `i` 通过从 0 到 9 的值来遍历数组的前十个元素。在循环体中，将 `i` 加到值 `i` 上并将结果存储在元素中。因此，索引 0 处的元素存储 1，索引 1 处的元素存储 2，以此类推。
+
+接下来，该示例显示了数组中的值。首先，它创建了一个名为 `numbersString` 的空字符串。然后，它使用循环来访问数组中的元素。在 `for` 循环中，使用数组的 `length` 属性来控制不同的长度。在 `for` 循环内部，将元素中的值和空格拼接到 `numbersString` 的末尾。最后，显示 `numbersString`，显示存储在数组中的十个数字。
+
+图中的第二个示例展示了如何计算一个总数数组的和和平均值。首先，代码创建一个名为 `totals` 的数组，存储四个值。接下来，它使用循环访问 `totals` 数组中的每个元素并将其加到 `sum` 上。最后，通过将 `sum` 除以数组的长度来计算平均值。
+
+接下来，该示例显示了总数、总和和平均值。首先，它创建一个名为 `totalsString` 的空字符串。然后，它使用循环将每个元素的值和一个换行符拼接到 `totalsString`。最后，它显示一个包含 `totalsString`、`sum` 和平均值的消息。
+
+### 将 1 到 10 的数字放入数组的代码
+
+```javascript
+var numbers = [];
+for (var i = 0; i < 10; i++) {
+  numbers[i] = i + 1;
+}
+```
+
+### 显示数字数组的代码
+
+```javascript
+var numbersString = "";
+for (var i = 0; i < numbers.length; i++) {
+  numbersString += numbers[i] + " ";
+}
+alert(numbersString);
+```
+
+### 计算总数数组的和和平均值的代码
+
+```javascript
+var totals = [141.95, 212.95, 411, 10.95];
+var sum = 0;
+for (var i = 0; i < totals.length; i++) {
+  sum += totals[i];
+}
+var average = sum / totals.length;
+```
+
+### 显示总数、总和和平均值的代码
+
+```javascript
+var totalsString = "";
+for (var i = 0; i < totals.length; i++) {
+  totalsString += totals[i] + "\n";
+}
+alert("Totals:\n" + totalsString + "Sum: " + sum.toFixed(2) + "\nAverage: " + average.toFixed(2));
+```
+
+## 描述
+
+- `for` 循环通常通过增加索引变量来一次次处理一个数组元素。
+- 使用数组的 `length` 属性来控制循环的长度，可以适应不同长度的数组。
+
+## 如何使用 `for-in` 循环处理数组
+
+### `for-in` 循环的语法
+
+```javascript
+for (var element in arrayName) {
+  // 访问元素的语句
+}
+```
+
+### 显示数字数组的 `for-in` 循环
+
+```javascript
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var numbersString = "";
+for (var index in numbers) {
+  numbersString += numbers[index] + " ";
+}
+alert(numbersString);
+```
+
+### 显示 `for` 循环和 `for-in` 循环区别的代码
+
+```javascript
+var names = ["Grace", "Charles", "Ada"];
+names[4] = "Alan"; // Grace, Charles, Ada, undefined, Alan
+names[names.length] = "Linus"; // Linus 添加到数组末尾
+delete names[1]; // 从数组中删除 Charles
+names[names.length] = undefined; // 在数组末尾添加 "undefined"
+
+var namesString1 = "for 循环显示的元素：\n";
+for (var i = 0; i < names.length; i++) { // for 循环开始
+  namesString1 += names[i] + "\n"; // 包含 undefined 元素
+}
+
+var namesString2 = "for-in 循环显示的元素：\n\n";
+for (var i in names) { // for-in 循环开始
+  namesString2 += names[i] + "\n"; // 排除 undefined 元素
+}
+
+alert(namesString1);
+alert(namesString2);
+```
+
+
+
+# 如何使用 Array 对象的方法
+
+在本主题中，你将学习 JavaScript 提供的一些帮助你处理数组的方法。尽管这些方法中有少数几个是 ECMAScript 5 (ES5) 规范的一部分，但所有现代浏览器都支持 ES5。此外，ES5 方法位于 1-17 中描述的 ES5 shim.js 文件中。你应该能够在应用程序中使用其中任何一种方法。
+
+## 接受简单参数的方法
+
+图 16-5 总结了不接受参数或接受简单参数的数组处理方法。列出的前七个方法会修改原始数组。相比之下，后八个方法不修改原始数组，并根据该数组返回一个新值。
+
+`push()` 和 `pop()` 两个方法用于向数组末尾添加和移除元素。这允许你将数组用作栈，其中最后一个添加的元素是第一个移除的（后进先出）。在这种情况下，最旧的元素位于数组的开头。
+
+接下来两个方法 `shift()` 和 `unshift()` 用于从数组的开头添加和移除元素。这些方法也允许你将数组用作栈，最后一个添加的元素是第一个移除的。在这种情况下，最旧的元素位于数组的末尾。
+
+`reverse()` 方法允许你更改数组中元素的顺序，而 `splice()` 方法允许你从数组中移除、替换和添加元素。要移除元素，你调用 `splice()` 方法并传入第一个要移除元素的索引以及要移除的元素数量。要替换元素，你调用 `splice()` 方法并传入第一个要替换元素的索引以及一组替换值列表。要添加元素，你调用 `splice()` 方法并传入数组中插入点后一个元素的索引、`0` 以及一组要添加的值列表。
+
+`slice()` 和 `concat()` 方法允许你从数组的部分或全部创建一个新数组，且原始数组不会被修改。如果你想返回原始数组，可以将旧数组赋值为新数组。
+
+`join()` 和 `toString()` 方法允许你获得一个包含数组元素的单个字符串。它们的主要区别在于处理分隔符字符串的方式。这些方法对任何 `undefined` 元素使用空字符串。
+
+`isArray()` 方法接受一个对象并返回一个布尔值。正如你可能猜到的那样，如果该对象是数组，它返回 `true`，否则返回 `false`。
+
+最后两个方法与它们同名的 `String` 方法相似。但它们返回的是字符在字符串中的位置，而是数组中元素的索引。同样，像 `String` 方法一样，如果未找到元素，它们会返回 -1。`indexOf()` 方法从开头开始搜索，而 `lastIndexOf()` 方法从末尾开始搜索。它们都有一个可选的 `start` 参数，因此你可以指定开始搜索的索引。
+
+## 接受简单参数的 Array 方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `push(element_list)` | 向数组末尾添加一个或多个元素，并返回数组的新长度。 |
+| `pop()` | 移除数组中的最后一个元素，减少长度，并返回被移除的元素。 |
+| `shift(element_list)` | 向数组开头添加一个或多个元素，并返回数组的新长度。 |
+| `unshift()` | 移除数组中的第一个元素，减少长度，并返回被移除的元素。 |
+| `reverse()` | 反转数组中元素的顺序。 |
+| `splice(start, number)` | 从第一个参数指定的索引开始，移除由第二个参数指定的数量的元素。它返回被移除的元素。 |
+| `splice(start, number, element_list)` | 从第一个参数指定的索引开始，移除第二个参数指定的数量的元素，并用第三个参数提供的元素替换它们。它返回被移除的元素。 |
+| `slice(start, number)` | 返回一个新数组，从第一个参数指定的索引开始，持续第二个参数指定的元素数量。 |
+| `concat(array_list)` | 返回一个新数组，由原始数组与数组列表中的数组拼接而成。 |
+| `join([separator])` | 当不传递参数时，此方法将数组的所有元素转换为字符串并用逗号连接。要更改分隔符，可以向此方法传递字符串字面量。 |
+| `toString()` | 等同于未传递任何参数的 `join()` 方法。 |
+| `toLocaleString()` | 与 `toString()` 方法相同，但使用特定区域的分隔符。 |
+| `isArray(object)` | 检查传递的对象是否为数组。如果是返回 `true`，不是则返回 `false`。 |
+| `indexOf(value, start)` | 返回第一个参数第一次出现的索引，如果未找到值则返回 -1。第二个参数指定开始搜索的索引，是可选的。 |
+| `lastIndexOf(value, start)` | 返回第一个参数最后一次出现的索引，如果未找到值则返回 -1。第二个参数指定开始搜索的索引，是可选的。 |
+
+## 描述
+
+- 上述前七个方法会修改原始数组。
+- 上述后八个方法产生一个新的数组、字符串、布尔值或整数值，并保持原始数组不修改。
+- 上述最后三个方法是 ES5 规范的一部分。
+
+图 16-5 接受简单参数的 Array 方法
+
+## 接受函数的方法
+
+你在图中看到的方法接受简单参数。相比之下，这里描述的方法接受函数定义。这里第一个方法允许你更改数组元素的顺序。默认情况下，`sort()` 方法将所有元素视为字符串。但如果你需要按数值对数组进行排序，可以向该方法传递一个语法如摘要所示的函数。该函数比较两个值并返回一个正值、负值或零。然后，`sort()` 方法使用该值确定元素的顺序。
+
+接下来的五个方法接受如摘要所示的函数。该函数的第一个参数是当前元素的值，是必须。下一个参数是当前元素的索引，第三个参数是数组本身。这些方法为数组中的每个元素执行一次该函数。
+
+`forEach()` 和 `some()` 方法返回 `undefined` 值，相比之下，它们根据数组元素是否满足条件返回布尔值。正如它们的名称所示，`every()` 方法在所有元素通过测试时返回 `true`，而 `some()` 方法在某些元素满足时返回 `true`。
+
+`map()` 和 `filter()` 方法都返回新数组。`map()` 方法返回一个对每个元素调用函数结果的数组。而 `filter()` 方法返回一个包含原始数组中符合指定条件的数组。
+
+最后两个方法 `reduce()` 和 `reduceRight()` 将数组还原为单个值。传递给这些方法的函数使用第三个摘要所示的语法。该函数的第一个参数是上次调用的值。这就是这些方法跟踪元素将还原为单个值的方式。该函数的其余参数与第二个摘要中的参数工作相同。`reduce()` 和 `reduceRight()` 唯一区别在于处理元素的顺序。
+
+当对包含 `undefined` 元素的数组调用 `sort()` 方法时，`undefined` 元素会被移动到数组末尾。对于这里描述的其他方法，当元素为 `undefined` 时，函数将不会执行。
+
+此表中最后七个方法都接受一个可选的第二个参数。对于 `forEach()`、`every()`、`some()`、`map()` 和 `filter()` 方法，此参数允许你设置其函数 `this` 关键字的值。对于 `reduce()` 和 `reduceRight()` 函数，此参数是函数使用的 `previousValue` 参数的初始值。
+
+# 接受函数作为参数的 Array 方法
+
+| 方法 | 说明 |
+| --- | --- |
+| `sort([comparison_function])` | 接受一个可选函数来更改默认的排序顺序。如果没有传递函数，则按字母数字顺序的升序对元素进行排序，并将数字元素转换为字符串。可选函数应具有以下语法：如果 x 大于 y 则返回正值，如果 x 和 y 相等则返回零，如果 x 小于 y 则返回负值。 |
+| `forEach(function, this)` | 接受一个函数，该函数会对每个元素执行一次。返回值为 `undefined`。 |
+| `every(function, this)` | 接受一个函数，用于测试数组中的每个元素以检查是否符合指定条件。如果数组中的所有元素都通过测试，则返回 `true`，否则返回 `false`。 |
+| `some(function, this)` | 接受一个函数，用于测试数组中的每个元素以检查是否符合指定条件。如果数组中至少有一个元素通过测试，则返回 `true`，否则返回 `false`。 |
+| `map(function, this)` | 接受一个函数，该函数会对每个元素执行一次，并返回一个包含每个函数调用结果的新数组。 |
+| `filter(function, this)` | 接受一个函数，该函数会对每个元素执行一次，并返回一个包含符合函数指定元素的的新数组。 |
+| `reduce(function, init)` | 接受一个函数，将所有元素按升序处理归纳为一个值。 |
+| `reduceRight(function, init)` | 接受一个函数，将所有元素按降序处理归纳为一个值。 |
+
+# `sort()` 方法函数的语法
+
+```javascript
+function(x, y);
+```
+
+# `forEach()`、`every()`、`some()`、`map()` 和 `filter()` 方法函数的语法
+
+```javascript
+function(currentValue, currentIndex, array);
+```
+
+# `reduce()` 和 `reduceRight()` 方法函数的语法
+
+```javascript
+function(previousValue, currentValue, currentIndex, array);
+```
+
+## 描述
+
+- `sort()` 方法将 `undefined` 元素移动到数组的末尾。对于此处显示的其他方法，将不会对 `undefined` 元素调用函数。
+- `forEach()`、`every()`、`some()`、`map()` 和 `filter()` 方法接受一个可选的第二个参数。该参数是 `this` 关键字的值。
+- `reduce()` 和 `reduceRight()` 方法也接受一个可选的第二个参数。该参数是方法接受的 `previousValue` 参数的初始值。
+- 所有这些方法除 `sort()` 之外，都是 ES5 规范的一部分。
+
+# Array 方法示例
+
+图 16-7 展示了你如何使用在上两个图中学到的某些方法。如果你结合这些示例以及代码中的注释学习那些图表，那么理解这些方法的工作原理应该不会太困难。
+
+首先，`push()` 和 `pop()` 方法用于添加和删除元素。你可以在这些示例中看到这些方法修改了数组。因此，在调用这些方法后，数组包含了不同的元素。
+
+其次，`slice()` 和 `concat()` 方法用于创建新数组。在这里，使用 `slice()` 方法创建一个包含来自名为 `names` 数组的两个元素的新数组。然后，使用 `concat()` 方法将两个数组合并到另一个新数组中。当所有语句执行完毕，会有名为 `names`、`namesSlice` 和 `namesConcat` 的三个数组。而且与第一个示例不同，在这种情况下原始数组 `names` 没有发生变化。
+
+第三，`join()` 用于创建一个列出数组元素的字符串。它们之间的区别在于，`join()` 方法默认使用逗号，但它允许你为指定元素的分隔符。如果没有参数，元素将作为字符串进行排序。这意味着字母元素按字母顺序排序，但数字不会按数字大小排序。
+
+第四，`sort()` 方法在不带参数和带参数的情况下使用。如果你想对数组中的元素进行数字排序，可以传递一个函数给 `sort()` 方法。正如你所学的，此函数接收两个参数，并根据两个参数的比较返回正值（如果第一个大于第二个）、零（如果相等）或负值（如果第一个小于第二个）。在这个示例中，该函数返回 `x - y`，这导致数字按升序排序。
+
+第五，`map()` 方法用于创建一个包含对数组每个项执行函数后结果的新数组。如前所示，它通过创建一个数组开始工作。然后，它调用 `map()` 函数将值乘以自身，并将结果存储在值中。在这个示例中，函数在传递的同时被声明。接下来，再次调用 `map()` 方法，但这次它传递了 `Math.sqrt` 方法来获取数组的平方根。由于原始数组不受 `map()` 调用的影响，数字保持不变。
+
+最后，`filter()` 方法用于从数组中检索元素。然而，它不是返回数组中每个元素执行函数的结果，只有当函数返回 `true` 时，`filter()` 才会返回该元素。在这里，例如将 `checkPrime()` 函数传递给 `filter()` 方法，以便返回数组中的质数。
+
+# 使用 `push()` 和 `pop()` 方法添加删除元素
+
+```javascript
+var names = ["Grace", "Charles", "Ada"];
+
+names.push("Alan", "Linus"); // names 是 Grace, Charles, Ada, Alan, Linus
+
+removedName = names.pop(); // removedName 是 Linus
+
+console.log(names.join(", ")); // Grace, Charles, Ada
+```
+
+# 使用 `slice()` 和 `concat` 方法
+
+```javascript
+var names = ["Grace", "Charles", "Ada", "Alan"];
+
+namesSlice = names.slice(0, 2); // namesSlice 是 Grace, Charles
+
+console.log(names.join(", ")); // Grace, Charles, Ada, Alan
+
+namesConcat = names.concat(namesSlice); // namesConcat 是 Grace, Charles, Ada, Alan, Grace, Charles
+
+console.log(namesConcat.join(", ")); // Grace, Charles, Ada, Alan, Grace, Charles
+```
+
+# 使用 `join()` 和 `toString` 方法
+
+```javascript
+var names = ["Grace", "Charles", "Ada", "Linus"];
+
+console.log(names.join(", ")); // Grace, Charles, Ada, Linus
+
+console.log(names.toString()); // Grace,Ada,Linus (默认分隔符)
+```
+
+# 使用 `sort` 方法
+
+## 字母数字排序
+
+```javascript
+var names = ["Grace", "Charles", "Ada", "Linus"];
+
+names.sort(); // names 是 Ada, Charles, Grace, Linus
+```
+
+## 数字升序排序
+
+```javascript
+// 函数使用了 sort 方法的参数
+
+var comparison = function(x, y) {
+
+  return x - y;
+
+}
+
+var numbers = [50, 33, 9, 199];
+
+numbers.sort(comparison); // numbers 是 9, 33, 50, 199
+```
+
+# 使用 `map()` 方法
+
+```javascript
+var numbers = [1, 4, 9, 16];
+
+// 在一步中定义并传递函数
+
+squared = numbers.map(function(value) {
+
+  return value * value;
+
+}); // squared 是 1, 16, 81, 256
+
+// 将对象的方法作为函数参数
+
+root = numbers.map(Math.sqrt); // root 是 1, 2, 3, 4
+```
+
+# 使用 `filter()` 方法
+
+```javascript
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+
+checkPrime = function(value) {
+
+  for (var i = 2; i < value; i++) {
+
+    if (value % i === 0) {
+
+      isPrime = false;
+
+      break;
+
+    }
+
+  }
+
+  return isPrime;
+
+}
+
+prime = numbers.filter(checkPrime); // prime 是 2, 3, 5, 7, 11, 13, 17, 19
+```
+
+# 任务列表应用程序
+
+为了向你展示刚刚学的一些技能如何在应用程序中使用，接下来的两个图展示了上一章看到的任务列表应用程序，已更新为使用数组。
+
+# 用户界面
+
+在此之前，此应用程序在页面右侧的文本区域显示用户添加到任务列表的任务。但现在，任务将按字母顺序排序。要添加任务，用户在第一个文本框中输入任务并点击“添加任务”按钮。要清除所有任务，用户点击“清除任务”按钮。
+
+与以前不同，此版本没有将任务存储在 cookie 或本地存储中。因此，现在你可以关注应用程序如何使用数组。不过，你将看到一个将任务存储在本地存储中的应用程序版本。然后，你将看到处理数组的方法如何
+
+# JavaScript
+
+16-8 展示了此应用程序的 JavaScript。像通常一样，它从 jQuery `ready()` 事件处理器开始。然后，JavaScript 创建了一个数组来存储用户输入的任务、一个显示这些任务的函数以及“添加任务”和“清除任务”按钮的事件处理器。`ready()` 事件处理器为任务文本框设置焦点。
+
+# 任务列表应用
+
+![](img/32b24cb9657418b8429a4117bd539786_500_0.png)
+
+# 应用程序 JavaScript
+
+```javascript
+$(document).ready(function() {
+
+  var tasks = []; // array that will hold the tasks
+
+  var displayTaskList = function() {
+
+    tasks.sort();
+
+    $("#task_list").val(tasks.join("\n"));
+
+    $("#task").focus();
+
+  }
+
+  $("#add_task").click(function() {
+
+    var textbox = $("#task");
+
+    var task = textbox.val();
+
+    if (task == "") {
+
+      alert("Please enter a task.");
+
+      textbox.focus();
+
+    } else {
+
+      tasks.push(task);
+
+      textbox.val("");
+
+      displayTaskList();
+
+    }
+
+  });
+
+  $("#clear_tasks").click(function() {
+
+    tasks = [];
+
+    $("#task_list").val("");
+
+    $("#task").focus();
+
+  });
+
+  // set focus on initial load
+
+  $("#task").focus();
+
+});
+```
+
+## 描述
+
+- 该应用程序使用数组来存储用户添加的任务。
+- 为了显示任务，应用程序使用了数组的 `sort()` 和 `join()` 方法。
+- 要向数组末尾添加新任务，应用程序使用了数组的 `push()` 方法。
+- 要清空任务，应用程序将一个新数组赋值给 `tasks` 变量。这会覆盖 `tasks` 变量之前持有的数组。
+
+图 16-8 任务列表应用的 JavaScript
+
+# 处理数组的其他技能
+
+现在，你已经学习了创建和处理数组的基础技能，已经准备好学习一些其他处理数组的技能了。同时，也请关注后续示例中最后几幅图中提到的某些技能。
+
+# 如何使用字符串方法创建数组
+
+图 16-9 展示了 String 对象的 `split()` 方法。该方法可以根据作为第一个参数编码的分隔符字符将字符串拆分为多个子字符串。它会创建一个新数组，并将每个子字符串都作为一个元素。如果你编写了第二个参数，它将用于限制新数组中可以包含的元素数量。
+
+图中的第一个示例展示了如何将由空格分隔的字符串拆分为名为 `nameParts` 的数组。接下来，它显示了新数组的长度以及数组中的元素。然后，它将数组中最后一个索引（`length - 1`）的元素移动到变量 `lastName` 并显示该变量的内容。
+
+注意，在此示例中，第二个 `alert()` 方法不需要调用 `toString()` 方法即可显示数组中的元素。这是因为 `alert()` 期望一个字符串，它会自动对任何不是字符串的参数调用 `toString()` 方法。在这种情况下，由于参数是一个数组，`toString()` 方法会连接数组中的元素并用逗号分隔它们。
+
+同样，第二个示例展示了如何将由连字符分隔的字符串拆分为数组。第三个示例则展示了如何将字符串拆分为单个字符。当你调用 `split()` 方法并以空字符串作为参数时，就会发生这种情况。
+
+注意这些示例使用数组的 `join()` 和 `toString()` 方法的方式。第二个示例调用了 `join()` 方法并指定字符串字面量 `"/"` 作为分隔符，生成了字符串 `"1/2/017"`。相比之下，第三个示例在调用 `join()` 时没有指定分隔符，使用了默认的逗号作为分隔符。而第一个示例调用了 `toString()` 方法，其工作方式与第三个示例调用 `join()` 方法相同。
+
+第四个示例展示了如果分隔符不在字符串中会发生什么。在这里，创建了一个带有连字符的日期，但调用 `split()` 方法时使用的是斜杠作为分隔符。在这种情况下，生成的数组只有一个元素。
+
+第五个示例展示了如何限制到新数组中的子字符串数量。在这里，`split()` 方法使用空格作为分隔符，但将子字符串的数量限制为一个。结果是一个包含第一个名字的数组。
+
+# 第 16 章 处理数组
+
+# 创建数组的字符串方法
+
+| 方法 | 描述 |
+| --- | --- |
+| `split(separator, limit)` | 根据分隔符的值将字符串拆分为数组并返回。可选的 `limit` 参数指定了新数组中的最大元素数量。 |
+
+# 将由空格分隔的字符串拆分
+
+```javascript
+var fullName = "Grace M Hopper";
+
+var nameParts = fullName.split(" "); // creates an array
+
+alert(nameParts.length); // displays 3
+
+alert(nameParts); // displays Grace,M,Hopper
+
+var lastName = nameParts[nameParts.length - 1];
+
+alert(lastName); // displays Hopper
+```
+
+# 将由连字符分隔的字符串拆分
+
+```javascript
+var date = "1-2-2017";
+
+var dateParts = date.split("-"); // creates an array
+
+alert(dateParts.length); // displays 3
+
+alert(dateParts.join("/")); // displays 1/2/2017
+```
+
+# 如果分隔符不在字符串中的情况
+
+```javascript
+var date = "1-2-2017";
+
+var dateParts = date.split("/");
+
+alert(dateParts.length); // displays 1
+
+alert(dateParts.join("/")); // displays 1-2-2017
+```
+
+# 从字符串中仅获取一个元素
+
+```javascript
+var fullName = "Grace M Hopper";
+
+var firstName = fullName.split(" ", 1);
+
+alert(firstName.length); // displays 1
+
+alert(firstName); // displays Grace
+```
+
+# 如何创建一个包含四个元素的关联数组
+
+```javascript
+var item = {};
+
+item["itemCode"] = 123;
+
+item["itemName"] = "HTML5";
+
+item["itemCost"] = 54.5;
+
+item["itemQuantity"] = 5;
+
+alert(item.length); // Displays 0
+
+alert(Object.keys(item).length); // Displays 4
+```
+
+# 如何向关联数组添加元素
+
+```javascript
+item["lineCost"] = (item["itemCost"] * item["itemQuantity"]).toFixed(2);
+```
+
+# 如何检索并显示关联数组中的元素
+
+```javascript
+alert("Item elements:\n" + item["itemCode"] + 
+  "\nName = " + item["itemName"] + 
+  "\nCost = " + item["itemCost"] + 
+  "\nQuantity = " + item["itemQuantity"] + 
+  "\nLine Cost = " + item["lineCost"]);
+```
+
+## alert 语句显示的消息
+
+![](img/32b24cb9657418b8429a4117bd539786_504_0.png)
+
+# 如何在关联数组中使用 `for-in` 循环
+
+```javascript
+var result = "";
+
+for (var i in item) {
+
+  result += i + " = " + item[i] + "\n";
+
+}
+
+alert(result);
+
+// itemCode = 123
+// itemName = HTML5
+// itemCost = 54.5
+// itemQuantity = 5
+// lineCost = 272.50
+```
+
+## 注意事项
+
+- 当你创建关联数组时，使用字符串作为索引而不是数字。
+- 如果在数组中混合使用数字和字符串索引，长度将只表示具有数字索引元素的数量，`for-in` 循环只会处理具有数字索引的元素，而 `for-in` 循环会处理所有元素。
+- 当像这样添加字符串索引时，你实际上是在向数组对象添加属性（参见第 17 章）。由于此，某些数组属性和方法无法按预期方式工作。例如，`length` 属性返回 0，而 `pop` 方法返回 `undefined`。
+- 上述的 `Object.keys()` 方法是 ES5 规范的一部分。因为它是图 1-17 中描述的 ES5 填充文件，你应该能够在运行在旧浏览器中的应用程序中使用它。
+
+# 如何创建和使用数组数组
+
+尽管 JavaScript 不允许你创建多维数组，但你可以通过创建一个数组数组来实现相同的效果。要做到，你可以将数组存储在另一个数组的每个元素中。这些数组不需要长度相同，而且你可以在数字索引数组内部嵌套关联数组。在图 16-11 中，你可以学习如何创建和使用数组数组。
+
+图中的第一个示例显示了如何创建和使用数组数组。首先，它创建了一个名为 `testScores` 的空数组。然后，它在 `testScores` 数组的前四个元素中存储了测试评分数组。
+
+第一个示例中的两个语句显示了如何访问此数组中的元素。这里，第一个语句显示数组中索引为 1 的元素的值，即 `testScores` 数组中索引为 0 的元素的值。第二个语句显示数组中索引为 3 的元素的值，即 `testScores` 数组中索引为 2 的元素的值。
+
+图中的第二个示例显示了如何在数字索引数组中嵌套关联数组。这里，第一个语句创建了一个名为 `invoice` 的数组，它将是数字索引的。
+
+第二组语句将空数组作为 `invoice` 数组的第一个元素。之后，它使用字符串作为索引向空数组添加了四个元素。这创建了一个嵌套在数字数组中的关联数组。
+
+第三组语句说明了将关联数组作为数字数组元素的另一种方法。在这种情况下，创建了一个新数组 `item`，并向其添加了四个具有字符串索引的元素。然后，将数组传递给 `invoice` 数组的 `push()` 方法。这会将该项添加到 `invoice` 数组的末尾。
+
+注意，如果你打算这样添加数组，就不能为下一个要添加的数组重用该数组。因为 `push()` 方法在 `invoice` 数组的元素中放置的是数组的引用，而不是副本。你需要为每个想要添加的数组声明单独的数组变量。你将在第 17 章学习更多关于引用的知识。
+
+第四组语句访问嵌套数组的元素。这里，第一个语句显示 `invoice` 数组第一个元素（索引 0）中 `itemCode` 的值。然后，第二个语句显示 `invoice` 数组第二个元素（索引 1）中 `itemName` 元素的值。这显示了 jQuery。
+
+## 如何创建和使用数组数组
+
+### 创建数组数组的代码
+
+```javascript
+var testScores = [];
+
+testScores[0] = [80, 82, 90, 87, 85];
+
+testScores[1] = [79, 80, 74];
+
+testScores[2] = [93, 95, 89, 100];
+
+testScores[3] = [60, 72, 65, 71];
+```
+
+### 引用此数组中元素的代码
+
+```javascript
+alert(testScores[0][1]); // displays 82
+
+alert(testScores[2][3]); // displays 100
+```
+
+### 创建数组数组的代码
+
+```javascript
+var invoice = []; // create empty array
+```
+
+### 向 `invoice` 数组添加关联数组
+
+```javascript
+invoice[0] = {"itemId": 123, "itemName": "HTML5", "itemCost": 54.5, "itemQuantity": 5};
+```
+
+### 创建关联数组并将其添加到 `invoice` 数组的代码
+
+```javascript
+var item = [];
+
+item["itemId"] = 456;
+
+item["itemName"] = "jQuery";
+
+item["itemCost"] = 52.5;
+
+item["itemQuantity"] = 2;
+
+invoice.push(item); // add item array
+```
+
+### 引用此数组中的元素
+
+```javascript
+alert(invoice[0]["itemId"]); // displays 123
+
+alert(invoice[1]["itemName"]); // displays jQuery
+```
+
+## 注意事项
+
+- 当你创建关联数组时，使用字符串作为索引而不是数字。
+- 如果在数组中混合使用数字和字符串索引，长度将只表示具有数字索引元素的数量，`for-in` 循环只会处理具有数字索引的元素，而 `for-in` 循环会处理所有元素。
+- 当像这样添加字符串索引时，你实际上是在向数组对象添加属性（参见第 17 章）。由于此，某些数组属性和方法无法按预期方式工作。例如，`length` 属性返回 0，而 `pop` 方法返回 `undefined`。
+- 上述的 `Object.keys()` 方法是 ES5 规范的一部分。因为它是图 1-17 中描述的 ES5 填充文件，你应该能够在运行在旧浏览器中的应用程序中使用它。
+- 尽管 JavaScript 不允许你创建多维数组，但你可以通过创建一个数组数组来实现相同的效果。要做到，你可以将数组存储在另一个数组的每个元素中。这些数组不需要长度相同，而且你可以在数字索引数组内部嵌套关联数组。在图 16-11 中，你可以学习如何创建和使用数组数组。
+- 图中的第一个示例显示了如何创建和使用数组数组。首先，它创建了一个名为 `testScores` 的空数组。然后，它在 `testScores` 数组的前四个元素中存储了测试评分数组。
+- 第一个示例中的两个语句显示了如何访问此数组中的元素。这里，第一个语句显示数组中索引为 1 的元素的值，即 `testScores` 数组中索引为 0 的元素的值。第二个语句显示数组中索引为 3 的元素的值，即 `testScores` 数组中索引为 2 的元素的值。
+- 图中的第二个示例显示了如何在数字索引数组中嵌套关联数组。这里，第一个语句创建了一个名为 `invoice` 的数组，它将是数字索引的。
+- 第二组语句将空数组作为 `invoice` 数组的第一个元素。之后，它使用字符串作为索引向空数组添加了四个元素。这创建了一个嵌套在数字数组中的关联数组。
+- 第三组语句说明了将关联数组作为数字数组元素的另一种方法。在这种情况下，创建了一个新数组 `item`，并向其添加了四个具有字符串索引的元素。然后，将数组传递给 `invoice` 数组的 `push()` 方法。这会将该项添加到 `invoice` 数组的末尾。
+- 注意，如果你打算这样添加数组，就不能为下一个要添加的数组重用该数组。因为 `push()` 方法在 `invoice` 数组的元素中放置的是数组的引用，而不是副本。你需要为每个想要添加的数组声明单独的数组变量。你将在第 17 章学习更多关于引用的知识。
+- 第四组语句访问嵌套数组的元素。这里，第一个语句显示 `invoice` 数组第一个元素（索引 0）中 `itemCode` 的值。然后，第二个语句显示 `invoice` 数组第二个元素（索引 1）中 `itemName` 元素的值。这显示了 jQuery。
+
+# 任务列表 2.0 应用程序
+
+为了向你展示如何在应用程序中使用你学到的技能，接下来的两幅图展示了任务列表 2.0 应用程序。它像你在本章之前看到的应用程序一样，但它使用数组数组作为任务列表，并在本地存储（local storage）中存储任务。
+
+像一样，此应用程序在页面右侧的 `textarea` 元素中显示用户的任务。现在，任务包含了日期，并按日期升序排序。此外，应用程序在“截止日期”框中使用 jQuery `DatePicker` 插件。正如你将在下一张图中看到的，为该插件编写了三个选项，使用户可以从下拉列表中选择月份和年份，并且如果日期在当前日期之前，则无法选择。
+
+此应用程序的 HTML 和 CSS 与你在本章之前看到的大部分相同，因此图 16-12 中仅展示了更改。首先，`head` 元素包含了 jQuery UI 的 `script` 和 `link` 元素，以及核心 jQuery 库。注意，jQuery UI 元素位于 jQuery 元素之后。其次，`main` 元素现在包含一个用于截止日期和任务文本的 `input` 元素。注意，为了让此 `input` 元素与 `DatePicker` 插件配合，你不需要对其进行任何特殊处理。
+
+此图还显示了存储在本地存储单个名称/值对中的任务格式。这里，任务通过管道符（`|`）分隔，每个任务的截止日期和文本通过波浪号（`~`）分隔。在查看 JavaScript 代码时，你将看到应用程序是如何处理这种格式的。
+
+# 任务列表应用
+
+![](img/32b24cb9657418b8429a4117bd539786_508_0.png)
+
+# 程序的 HTML 结构
+
+## `head` 元素
+
+```html
+<title>Task Manager</title>
+
+<link rel="stylesheet" href="code.jquery.com/ui/1.12/themes/base/jquery-ui.css">
+
+<link rel="stylesheet" href="code.jquery.com/task_list.list.css">
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+<script src="https://code.jquery.com/ui/1.12/jquery-ui.js"></script>
+
+<script src="task_list.js"></script>
+```
+
+## `main` 元素
+
+```html
+<h1>Task Manager</h1>
+
+<label for="task">Task</label><br>
+
+<input type="text" name="task" id="task"><br>
+
+<label for="due_date">Due Date</label><br>
+
+<input type="text" name="due_date" id="due_date"><br>
+
+...
+```
+
+# 存储在本地存储中的字符串
+
+获取新项目规格--03/02/2017|完成当前项目|
+
+## 描述
+
+- 这个更新后的任务列表允许用户为任务添加日期。它使用了 jQuery UI DatePicker，并将任务和截止日期存储在嵌套数组中。
+- 任务以单个字符串的形式存储在本地存储中。任务条目的文本和截止日期之间用波浪号 (`~`) 分隔，而任务本身之间用管道符 (`|`) 分隔。
+
+# JavaScript
+
+图 16-13 展示了编写 jQuery `ready()` 函数的 JavaScript 代码。不过，为了适应页面显示，没有显示 `ready()` 函数。
+
+`ready()` 函数中的第一个函数是 `displayTaskList` 函数。它首先从本地存储中获取任务字符串。然后，检查该字符串是否为空。如果不为空，代码创建一个新数组 `tasks`，并使用字符串的 `split()` 方法通过管道分隔符进行分割。它将 `split()` 返回的数组存储在名为 `interim` 的变量中。
+
+该函数遍历 `interim` 数组，并对其中的每个项再次调用 `split()` 方法。这次，它通过波浪号分隔符分割字符串。最后，它使用 `tasks` 数组的 `push()` 方法将 `split()` 返回的每个数组添加进来。`tasks` 变量是一个嵌套数组，其中每个子数组代表一个任务的文本和截止日期。
+
+接下来，该函数根据截止日期对数组进行排序。它通过向 `tasks` 数组的 `sort()` 方法传递一个回调函数来实现。该回调函数比较两个日期元素。由于它是一个嵌套数组，被比较的两个元素都是数组。因此，回调函数从每个数组中获取日期值并将其转换为 `Date` 对象。然后，根据第一个日期是否小于或等于第二个日期，返回 -1、1 或 0。这使得日期按升序排列。
+
+当 `sort` 排序完成时，该函数使用 `tasks` 数组的 `reduce()` 方法创建一个用于显示的单个字符串。请记住，`reduce()` 方法接受回调函数的返回值加上数组中的当前元素。由于这是一个嵌套数组，当前元素是一个数组。因此，回调函数将数组中的两个值连接起来，用横字符分隔并以换行符结束。`reduce()` 方法还将 `prev` 参数的初始值设置为空字符串，以便正确完成连接工作。
+
+最后，该函数将 `textarea` 元素的值设为 `taskString` 变量的值，该值要么为空字符串，要么 `reduce()` 方法的结果。然后，它将焦点设置为文本框。
+
+接下来是“添加任务”（Add Task）按钮点击事件的事件处理器。它获取用户输入的任务和截止日期。如果输入有效，它会从本地存储中检索任务，并创建一个名为 `newTask` 的数组，其中包含任务和截止日期值。然后，它调用数组的 `join()` 方法创建一个新任务，并将其添加到本地存储的字符串中。注意，它在末尾使用管道字符将此任务与之后添加的任何任务隔开。
+
+随后是“清除任务”（Clear Tasks）按钮点击事件的事件处理器。该事件处理器清除本地存储、清除文本区域，并将焦点置于任务文本框。
+
+接下来，`ready()` 函数将 Date Picker 小部件与日期文本框关联。当用户点击该框时，DatePicker 就会出现。
+
+最后，`ready()` 函数调用了 `displayTaskList()` 函数。正如你所看到的，该函数通过从网络存储获取任务列表并显示它启动应用程序。
+
+# 第 16 章 如何使用数组
+
+# JavaScript `document.ready()` 函数
+
+```javascript
+var displayTaskList = function() {
+
+  var taskString = localStorage.tasks || "";
+
+  if (taskString.length > 0) {
+
+    var tasks = [];
+
+    var interim = taskString.split("|");
+
+    for (var i = 0; i < interim.length - 1; i++) {
+
+      tasks.push(interim[i].split("~"));
+
+    }
+
+  }
+
+  tasks.sort(function(arr1, arr2) {
+
+    var a = new Date(arr1[1]); // 第一个数组的第二个元素
+
+    var b = new Date(arr2[1]); // 第二个数组的第二个元素
+
+    if (a < b) { return -1; }
+
+    else if (a > b) { return 1; }
+
+    else { return 0; }
+
+  });
+
+  taskString = tasks.reduce(function (prev, current) {
+
+    return prev + current.join("-") + "\n";
+
+  }, "");
+
+  document.getElementById("output").value = taskString;
+
+  document.getElementById("task").focus();
+
+};
+
+$("#add-task").on("click", function() {
+
+  var task = $("#task").val();
+
+  var dueDate = $("#due_date").val();
+
+  if (task.trim() !== "" && dueDate.trim() !== "") {
+
+    var newTask = [task, dueDate];
+
+    localStorage.tasks = (localStorage.tasks || "") + newTask.join("~") + "|";
+
+    displayTaskList();
+
+  }
+
+});
+
+$("#clear-tasks").on("click", function() {
+
+  localStorage.removeItem("tasks");
+
+  $("#output").val("");
+
+  $("#task").focus();
+
+});
+
+$(document).ready(function() {
+
+  $("#due-date").datepicker();
+
+  displayTaskList();
+
+});
+```
+
+# JavaScript 视角
+
+数组是许多 JavaScript 应用的一部分，JavaScript 提供了一些处理数组的方法。在接下来的章节中，你将看到其他的
+
+# 术语
+
+- 数组循环
+- `for-in` 循环
+- 回调函数
+- 关联数组
+- 稀疏数组
+
+# 总结
+
+- 数组可以存储一个多个元素。数组的长度是元素的个数。要引用数组中的元素，你可以使用索引，从零开始。
+- `for` 循环和 `for-in` 循环都可以用于数组。在 ECMAS5 中，你可以使用字符串对象的 `split()` 方法创建数组。
+- 关联数组使用字符串作为索引。
+- 在嵌套数组中，每个元素包含另一个数组。
+
+# 练习 16-1 增强任务列表应用
+
+此练习将让你有机会在增强任务列表的第一版本时处理数组。增强后的版本有一个“删除”按钮，如下所示：
+
+![](img/32b24cb9657418b8429a4117bd539786_512_0.png)
+
+## 打开、测试并审查此应用
+
+- 使用文本编辑器或 IDE 打开此文件夹中的 HTML 和 JavaScript 文件：
+  `javascript_exercises\ch16\task_list\`
+- 在 Chrome 中测试此应用，使用添加任务按钮添加任务并使用清除按钮清除列表。然后添加新任务并点击删除按钮，看看它还没有做什么。
+- 审查此应用的 JavaScript 文件，查看 `ready()` 事件处理器包含一个删除按钮点击事件的事件处理器。
+
+## 编写删除任务事件处理器
+
+- 为删除按钮编写事件处理器，使其使用 `prompt()` 方法询问用户要删除的任务索引号，从第一个任务从零开始。接下来，对任务进行排序，以确保它们的顺序与显示的任务匹配。
+- 在仍在处理器中，使用数组的 `splice()` 方法删除指定索引处的元素。然后，调用 `displayTaskList()` 函数重新显示任务。
+- 运行应用并测试删除任务按钮。注意，如果你输入的索引值不在数组中或不是数字，则什么都不会发生。
+- 在删除任务事件处理器中添加数据验证，要求用户的输入必须是数字且是数组中的索引值。你可以使用数组的 `length` 属性来实现此功能，但请记住数组索引是从零开始的，因此你需要从长度值减去 1。
+- 如果任何一个数据验证检查失败，向用户显示一条消息。然后，测试此更改。
+
+# 练习 16-2 增强任务列表 2.0
+
+在本练习中，你将有机会处理数组数组，以增强本章中第二个版本的任务列表应用程序。增强版本有一个新的“过滤器”（Filter）按钮，允许你根据搜索词过滤任务。在下面的示例中，当用户点击对话框中的 OK 按钮时，将只显示第一个和三个任务：
+
+![](img/32b24cb9657418b8429a4117bd539786_513_0.png)
+
+## 打开、测试并审查此应用程序
+
+1. 使用你的文本编辑器或 IDE 打开此文件夹中的 HTML 和 JavaScript 文件：
+   `javascript_jquery\exercises\ch16\task_list_web\`
+2. 在 Chrome 中测试此应用程序，使用“添加任务”（Add Task）按钮向列表添加几个任务。然后，点击“过滤器”（Filter）按钮，你会发现它没有任何作用。
+3. 审查此应用程序的 JavaScript 文件。注意，这里的 `ready()` 事件处理器包含一个针对 Filter 按钮点击的空事件处理器。
+4. 注意此代码与应用程序中的代码不同。在这里，`displayTaskList()` 函数的功能被分成了两个函数：`getSortedTasksArray()` 和 `displayTaskList()`。注意，`displayTaskList` 现在接受一个包含要显示的任务数组的参数，如果没有接收到任何内容，它将调用 `getSortedTasksArray()` 函数。
+
+## 编写过滤器事件处理器
+
+5. 在 Filter 按钮的事件处理器中，使用 `prompt()` 方法询问用户要搜索的文本。此提示应该告知用户如果不输入任何内容，将显示所有任务（如上所示）。`prompt()` 方法返回值应存储在名为 `searchTerm` 的变量中。
+6. 编写一个 if-else 语句测试 `searchTerm` 变量的值是否为空字符串。如果是，代码应不带参数地调用 `displayTaskList()` 函数以检索并显示存储中的所有任务。
+7. 如果 `searchTerm` 变量的值不是空字符串，则 else 分句 (1) 应该调用 `getSortedTasksArray()` 函数从本地存储获取任务并作为排序后的数组数组，(2) 使用 `toLowerCase()` 方法将 `searchTerm` 变量的值设置为全小写字母。
+8. 此 else 分句中，代码应调用任务数组的 `filter()` 方法（见图 16-6 和 16-7），根据 `searchTerm` 变量过滤任务。该方法返回一个过滤后的项数组，该数组应存储在名为 `filtered` 的数组中。使用 `filter` 方法的技巧是编写作为参数传递给 `filter` 方法的函数。如果元素应该包含在过滤数组中，该函数返回 `true`，否则返回 `false`。
+
+但请记住，你正在过滤一个数组数组。这意味着传递给 `filter()` 方法的函数参数是一个包含两个元素的任务数组。第一个元素是任务的文本字符串，第二个元素是日期字符串。当你编写此函数时，你想包含任何在日期或文本元素中找到搜索词的数组。你应该使用小写文本值进行比较，这样大小写就不会影响比较结果。
+
+else 分句的最后语句应该调用 `displayTaskList()` 函数并向其传递过滤后的数组变量，以便只显示过滤后的任务。
+
+9. 通过点击 Filter 按钮并输入搜索词来测试应用程序。然后再次点击 Filter 按钮并留空文本框，让被过滤掉的项重新出现。
+
+# 如何创建和使用自己的对象
+
+在第 4 章中，你学习了如何使用原生 JavaScript 对象类型如 Number、String 和 Date，从那时起你一直在使用 JavaScript 对象。现在，在本章中，你将学习如何创建和使用自己的对象。正如你所看到的，这是一种组织相关数据和函数的方法，这使得你创建的代码更容易维护和重用。
+
+| 对象操作的基本技能 | 页码 |
+| --- | --- |
+| 如何创建和使用原生对象类型 | 498 |
+| 如何使用对象字面量创建自己的对象 | 500 |
+| 如何扩展或修改对象 | 502 |
+| 如何创建和使用 JavaScript 库 | 504 |
+| Miles Per Gallon 应用程序 | 506 |
+| HTML | 506 |
+| JavaScript | 508 |
+| 如何创建和调用构造函数 | 510 |
+| 如何用构造函数创建你自己的对象类型 | 510 |
+| 关于原型你还应该知道什么 | 512 |
+| Trips 应用程序 | 514 |
+| HTML | 514 |
+| JavaScript | 516 |
+| 如何创建工厂函数 | 518 |
+| 如何使用 `Object` 对象的 `create()` 方法 | 518 |
+| 使用工厂函数的 Trips 应用程序 | 520 |
+| 对象操作的高级技能 | 522 |
+| 如何使用 `Function` 对象的 `arguments` 属性 | 522 |
+| 如何创建级联方法 | 524 |
+| 如何从另一个对象继承方法 | 526 |
+| 如何使用 `this` 关键字 | 528 |
+| 任务列表应用程序 | 530 |
+| HTML 和 CSS | 530 |
+| 任务和存储 | 532 |
+| 主 JavaScript 文件 | 534 |
+| 视角 | 538 |
+
+# JavaScript 某些原生对象类型的层级结构
+
+## 创建原生类型新对象的语法
+
+```javascript
+var variableName = new Object(arguments);
+```
+
+## 如何创建一个 `Date` 类型新对象
+
+```javascript
+var today = new Date();
+```
+
+## 如何使用字面量创建原生类型新对象
+
+### 如何创建一个 `String` 类型新对象
+
+```javascript
+var lastName = "Hopper"; // Same as new String('Hopper');
+```
+
+### 如何创建一个 `Number` 类型新对象
+
+```javascript
+var taxRate = .0875; // Same as new Number(.0875);
+```
+
+### 如何创建一个 `Boolean` 类型新对象
+
+```javascript
+var validFlag = true; // Same as new Boolean(true);
+```
+
+### 如何创建一个 `Array` 类型新对象
+
+```javascript
+var tasks = []; // Same as new Array();
+```
+
+### 如何创建一个 `Function` 类型新对象
+
+```javascript
+var isValue = function() {...}; // Same as new Function('...');
+```
+
+### 如何创建一个 `Object` 类型新对象
+
+```javascript
+var invoice = {}; // Same as new Object();
+```
+
+## 如何使用原生对象的属性和方法
+
+### 如何使用 `String` 对象的 `length` 属性
+
+```javascript
+length = lastName.length; // Same as lastName["length"]
+```
+
+### 如何使用 `Number` 对象的 `toFixed` 方法
+
+```javascript
+formattedRate = taxRate.toFixed(4); // Same as taxRate["toFixed"](4);
+```
+
+## 描述
+
+- JavaScript 提供了两级对象类型层级结构。顶层由 `Object` 类型组成。下一层包含 `String`、`Number`、`Date` 和 `Array` 等类型。
+- 第二层所有的对象类型都继承自 `Object` 属性和方法。它们也提供自己的属性和方法。
+- 当你使用字面量创建变量时，JavaScript 会将其转换为对应的原生对象类型。以这种方式创建原生对象比使用 `new` 关键字是更好的实践。然而，JavaScript 没有字面量日期值，因此在创建 `Date` 对象时需要使用 `new` 关键字。
+- 要访问属性或方法，你可以使用点运算符或方括号。例如，图 16-11 中所示的关联数组使用了方括号。
+
+图 17-1 如何创建和使用原生对象类型
+
+![](img/32b24cb9657418b8429a4117bd539786_518_0.png)
+
+## 如何使用对象字面量创建自己的对象
+
+创建自定义对象最简单的方法是将对象字面量存储在变量中。为此，你声明一个变量的值，使其等于一对大括号。然后，在大括号内部，你可以为对象编写属性和方法，如图 17-2 所示。当你以这种方式创建对象时，你实际上是在创建一个 `Object` 类型的实例。
+
+在该图的示例 1 中，名为 `invoice` 的对象初始化了一个名为 `taxRate` 的属性，其值为 0.0875。如你所示，属性名和值之间用冒号分隔。
+
+在示例 2 中，`invoice` 对象初始化了一个名为 `getTotal()` 的方法。这里，方法名后跟着冒号和一个执行该方法任务的函数表达式。这里发生的情况是函数被存储为对象的一个属性。这种存储了函数定义的属性被称为对象的方法。
+
+在示例 3 中，`invoice` 对象初始化了一个属性和两个方法。这里，属性和方法之间必须用逗号分隔。同时注意，对象的两个方法使用 `this` 关键字来获取 `taxRate` 属性的值或调用另一个方法。这是因为对象方法中的 `this` 关键字通常指向对象本身。
+
+在你为对象创建属性和方法后，你可以像使用原生对象的属性和方法一样使用它们。这意味着你可以使用点运算符或方括号来引用属性和方法。在实践中，点运算符更常用，因为它更容易编写且更易于理解。接下来的示例说明了这一点。
+
+该图中的最后一组示例显示，你也可以在一个对象内部嵌套另一个对象。在这种情况下，一个 `terms` 对象嵌套在 `invoice` 对象中。为了实现，`invoice` 对象初始化了一个名为 `terms` 的属性，而 `terms` 属性本身是一个对象，初始化了两个名为 `taxRate` 和 `dueDays` 的属性。
+
+## 如何带有属性的方法初始化新对象
+
+### 示例 1：如何初始化带有一个属性的新对象
+
+```javascript
+var invoice = { taxRate: 0.0875 };
+```
+
+### 示例 2：如何初始化带有一个方法的新对象
+
+```javascript
+var invoice = {
+
+  getTotal: function(subtotal, salesTax) {
+
+    return subtotal + salesTax;
+
+  }
+
+}
+```
+
+### 示例 3：如何初始化带有属性的方法的新对象
+
+```javascript
+var invoice = {
+
+  taxRate: 0.0875,
+
+  getSalesTax: function(subtotal) {
+
+    return (subtotal * this.taxRate);
+
+  },
+
+  getTotal: function(subtotal) {
+
+    return subtotal + this.getSalesTax(subtotal);
+
+  }
+
+}
+```
+
+## 如何引用对象的属性
+
+```javascript
+alert(invoice.taxRate); // Displays 0.0875
+```
+
+### 如何引用对象的属性（续）
+
+```javascript
+alert(invoice.taxRate); // Displays 0.0875
+
+var salesTax = invoice.taxRate; // Displays 0.0875
+```
+
+### 如何嵌套对象
+
+```javascript
+var invoice = {
+
+  taxRate: 0.0875,
+
+  terms: {
+
+    taxRate: 0.05,
+
+    dueDays: 30
+
+  }
+
+};
+
+alert(invoice.terms.taxRate); // Displays 0.05
+```
+
+### 如何使用括号表示法引用对象的属性
+
+```javascript
+var invoice = {
+
+  taxRate: 0.0875,
+
+  terms: {
+
+    taxRate: 0.05,
+
+    dueDays: 30
+
+  }
+
+};
+
+alert(invoice["terms"]["taxRate"]); // Displays 0.05
+```
+
+# 如何创建和使用 JavaScript 库
+
+库是一个包含一组相关函数、对象或两者兼具的文件。通常情况下，你会编写自己的库，你也可以使用像 jQuery 和 jQuery UI 这样的第三方库。将代码组织在库中的某些优点列在图 17-4 中。
+
+库的主要优点之一是代码复用。这是因为你可以编写一个函数或对象，然后在代码的几个不同地方使用它。
+
+库的另一个优点是它们可以帮助你保持 JavaScript 文件更精小，从而使它们更容易被理解和重复用。例如，你可以编写一个提供处理网络存储（web storage）功能的库。由于它只做这一件事，所以它会很小。然后，你可以将该文件包含在任何需要使用网络存储的应用中。最后，将 JavaScript 代码组织在库中鼓励你将具有相似功能的代码分组。这反过来鼓励了关注点分离（separation of concerns）。例如，一个库可能专注于网络存储，而另一个库专注于处理日期和时间。当你像这样将代码分组在库中时，你的应用程序更容易维护，代码在其他应用程序中也更容易复用。
+
+第一个示例是一个名为 `library_mpg.js` 的文件。正如其名称所示，它包含一个 `mpg` 对象，具有用于计算每加仑英里（miles per gallon）的属性和方法。
+
+下一个示例展示了如何在应用程序中包含并使用此 JavaScript 库。由于 JavaScript 库仅仅是一个 JavaScript 文件，你像在整本书中所做的那样，使用 `<script>` 元素来包含库。图中 `index.html` 文件中的第一个 `<script>` 元素引用了 jQuery 库，下一个引用了 `mpg` 库。最后一个 `<script>` 元素用于使用这些库的主 JavaScript 文件。
+
+当你以这种方式包含库文件时，JavaScript 的工作就像所有代码都在同一个文件中一样。然而，你需要考虑包含文件的顺序。具体来说，如果一个文件依赖于另一个文件的功能，你需要按照正确的顺序包含这些文件。例如，jQuery UI 库使用了 jQuery 库的功能。当你使用 jQuery UI 时，不仅需要确保包含了 jQuery，还必须确保 jQuery UI 的 `<script>` 元素位于 jQuery 的 `<script>` 元素之后。处理你自己的库也是如此。
+
+例如，在此处所示的示例中，主 JavaScript 文件同时依赖于 `mpg` 库和 jQuery 库。因此，它的 `<script>` 元素需要在这两个库的 `<script>` 元素之后编写。然而，`mpg` 库不依赖于任何其他文件，因此它的 `<script>` 元素可以写在 jQuery 库之前也可以在之后。
+
+## JavaScript 库的优点
+
+- 它们允许你在单个文件中对相似的功能分组。
+- 它们让你的代码更容易理解、维护和复用。
+- 它们鼓励关注点分离。
+
+## 简单库文件示例 (`library_mpg.js`)
+
+```javascript
+var mpg = {
+
+  miles: 0,
+
+  gallons: 0,
+
+  calculate: function() {
+
+    return this.miles / this.gallons;
+
+  }
+
+};
+```
+
+## 如何在应用程序中包含和使用 JavaScript 库
+
+### 在 `index.html` 文件中
+
+```html
+<head>
+
+<title>calculate MPG</title>
+
+<link rel="stylesheet" href="mpg.css">
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+<script src="library_mpg.js"></script>
+
+<script src="main.js"></script>
+
+</head>
+```
+
+### 在 `main.js` 文件中
+
+```javascript
+$(document).ready(function() {
+
+  $("#calculate").click(function() {
+
+    mpg.miles = parseInt($("#miles").val());
+
+    mpg.gallons = parseFloat($("#gallons").val());
+
+    $("#mpg").val(mpg.calculate().toFixed(1));
+
+  });
+
+});
+```
+
+## 描述
+
+- JavaScript 库是一个包含相关函数、对象或两者兼具的外部文件。
+- JavaScript 库范围从你自己编写的简单函数和对象集合到像 jQuery 这样丰富的第三方库。
+- JavaScript 库是普通的 JavaScript，因此你通过将相关的函数和对象分组到单个文件中来创建库。你应该为你的 JavaScript 库命名，以便明确它们的用途。
+- 你使用 `<script>` 元素在应用程序中使用 JavaScript 库。如果一个 JavaScript 文件依赖于某个库，你必须确保所需库的 `<script>` 元素位于使用它的文件之前。
+
+图 17-4 如何创建和使用 JavaScript 库
+
+## 每加仑英里应用 (Miles Per Gallon application)
+
+图 17-5 中的 Miles Per Gallon 应用是你在本书第一部分看到的应用程序的另一个版本。区别在于此版本使用对象和库来组织其代码。这使得更容易理解处理每加仑英里的代码，并更容易在其他页面或应用程序中复用它。
+
+## HTML
+
+`<head>` 部分中的前两个 `<script>` 元素标识了应用程序使用的两个 JavaScript 库：jQuery 库和 `mpg` 库。最后一个 `<script>` 元素用于使用这两个库的主 JavaScript 文件。
+
+`<main>` 元素中的 HTML 包含两个文本框，供用户输入行驶的英里数和使用的加仑数。然后，有一个包含 `disabled` 属性的文本框元素，它可以显示数据但用户无法更改这些数据。最后，有两个按钮，一个用于计算，一个用于清除。
+
+这里显示的 HTML 与你在书中看到的类似。关于它，最需要注意的是属性。
+
+```html
+<head>
+
+  <title>calculate MPG</title>
+
+  <link rel="stylesheet" href="mpg.css">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+  <script src="library_mpg.js"></script>
+
+  <script src="main.js"></script>
+
+</head>
+
+<body>
+
+  <h1>Miles Per Gallon</h1>
+
+  <label for="miles">Miles Driven:</label>
+
+  <input type="text" id="miles">
+
+  <label for="gallons">Gallons Used:</label>
+
+  <input type="text" id="gallons">
+
+  <label for="mpg">Miles per gallon:</label>
+
+  <input type="text" id="mpg" disabled>
+
+  <button id="calculate">Calculate</button>
+
+  <button id="clear">Clear</button>
+
+</body>
+```
+
+图 17-5 Miles Per Gallon 应用界面
+
+# JavaScript
+
+这里展示了两个文件。`library_mpg.js` 文件是处理加仑库文件。它包含一个带有属性和方法的对象。`miles` 和 `gallons` 属性初始值为零。`isValid()` 方法检查英里加仑是否有效，`calculate()` 方法使用属性进行计算。
+
+第二个文件是 `main.js` 文件。这是主脚本文件，它包含了 `ready()` 函数。`ready()` 函数首先为计算按钮的点击事件绑定事件处理器。该处理器将 `mpg` 对象的 `miles` 和 `gallons` 属性设置为用户输入的值。然后，它调用 `mpg` 对象的 `isValid()` 方法来检查用户输入的数据是否有效。如果没有，代码将提示用户。
+
+如果用户输入有效数据，事件处理器调用 `mpg` 对象的 `calculate()` 方法，并将方法返回的值设置为文本框的值。注意 `calculate()` 方法返回的值是一个 `Number` 对象。正因如此，代码可以调用 `toFixed()` 方法将其限制为一位小数。
+
+接下来，该事件处理器调用文本框的 `select()` 方法。该方法除了将焦点移动到文本框外，还会选中文本框中的文本。这使得输入另一个值变得更容易。
+
+之后，`ready()` 函数为清除按钮的点击事件绑定事件处理器。该事件处理器将所有文本框的值设置为空字符串并将焦点置于英里文本框上。最后，`ready()` 函数在应用程序首次加载时将焦点置于英里文本框上。
+
+## `library_mpg.js` file
+
+```javascript
+var mpg = {
+
+  miles: 0,
+
+  gallons: 0,
+
+  isValid: function() {
+
+    if ( isNaN(this.miles) || isNaN(this.gallons)) {
+
+      return false;
+
+    } else if ( this.miles <= 0 || this.gallons <= 0 ) {
+
+      return false;
+
+    } else {
+
+      return true;
+
+    }
+
+  },
+
+  calculate: function() {
+
+    return this.miles / this.gallons;
+
+  }
+
+};
+```
+
+## `main.js` file
+
+```javascript
+$( document ).ready(function() {
+
+  $("#calculate").click(function() {
+
+    mpg.miles = parseFloat($("#miles").val());
+
+    mpg.gallons = parseInt($("#gallons").val());
+
+    if (!mpg.isValid()) {
+
+      alert("Entries must be numeric and greater than zero");
+
+    } else {
+
+      $("#mpg").val(mpg.calculate().toFixed(1));
+
+      $("#miles").select();
+
+    }
+
+  });
+
+  $("#clear").click(function() {
+
+    $("#miles").val("");
+
+    $("#gallons").val("");
+
+    $("#mpg").val("");
+
+  });
+
+  $("#miles").focus();
+
+});
+```
+
+## Description
+
+- `mpg` 库文件包含一个名为 `mpg` 的对象字面量。该对象有两个属性 `miles` 和 `gallons` 以及两个方法 `isValid()` 和 `calculate()`。
+- `isValid()` 方法检查 `miles` 和 `gallons` 属性中的数据是否有效，而 `calculate()` 方法利用 `miles` 和 `gallons` 属性计算每加仑英里。这些方法使用 `this` 关键字来引用 `miles` 和 `gallons` 属性。
+- 主 JavaScript 文件使用 `mpg` 对象的属性和方法，根据用户输入的数据计算并显示每加仑数。
+
+# 如何创建和调用构造函数
+
+构造函数（或简称构造函数）是一种创建对象类型的特殊函数。然后你可以调用构造函数来创建该对象类型的多个实例，每个实例都继承该类型的方法。
+
+## 如何使用构造函数创建自定义对象类型
+
+图 17-7 显示了如何编写可以用于创建对象类型多个实例的构造函数。在这里，第一组示例展示了如何编写创建 `Invoice` 对象实例的构造函数。在每个构造函数的内部，使用 `this` 关键字来引用构造函数将创建的新对象。按照惯例，构造函数的名称以大写字母开头，这部分是为了提醒程序员在调用构造函数时使用 `new` 关键字。
+
+该组中的第一个构造函数是 `Invoice`。它不接受参数，并创建两个名为 `subtotal` 和 `taxRate` 的属性。在这种情况下，两个属性都是 `undefined`。
+
+通常，你可能想为对象的属性设置初始值。为了实现这一点，你编写构造函数时带有一个或多个参数，用于设置所创建的每个对象的属性初始值。下一个构造函数接受两个参数，用于设置 `subtotal` 和 `taxRate` 属性的初始值。顺便提到，参数名和属性名不需要相同，但这是一种常见的编码实践。
+
+编写完构造函数后，你可以向它添加方法。要这样做，你需要将每个方法添加到构造函数的 `prototype` 对象上。接下来的示例说明了。对于每个方法，你编写构造函数的名称、一个点、`prototype` 单词、另一个点，以及你正在添加的方法名称。然后，将其赋值为将成为该方法的函数。该方法将对构造函数创建的所有 `Invoice` 对象类型的实例可用。
+
+第三组示例展示了如何使用对象类型。要创建对象类型的实例，使用 `new` 关键字调用其构造函数。在这里，通过构造函数创建了两个 `Invoice` 对象，每个对象都有自己的 `subtotal` 和 `taxRate` 值，并将实例（或对象）赋值给名为 `invoice1` 和 `invoice2` 的变量。
+
+创建对象后，你可以像引用任何其他对象的属性和方法一样引用它们。接下来的示例说明了这一点。在这里，获取并显示了 `invoice1` 对象的 `subtotal` 属性和 `invoice2` 对象的 `taxRate` 属性。然后调用了 `invoice1` 对象的 `getTotal()` 方法和 `invoice2` 对象的 `getTaxAmount()` 方法。
+
+### 如何使用构造函数创建 `Invoice` 对象类型
+
+#### 如何编写无参数的构造函数
+
+```javascript
+var Invoice = function() {
+
+    this.subtotal;
+
+    this.taxRate;
+
+};
+```
+
+#### 如何编写带有两个参数的构造函数
+
+```javascript
+var Invoice = function(subtotal, taxRate) {
+
+    this.subtotal = subtotal;
+
+    this.taxRate = taxRate;
+
+};
+```
+
+#### 如何为 `Invoice` 对象类型添加方法
+
+```javascript
+// getTaxAmount 方法被添加到 Invoice 的原型上
+
+Invoice.prototype.getTaxAmount = function() {
+
+    return (this.subtotal * this.taxRate);
+
+};
+
+// getInvoiceTotal 方法被添加到 Invoice 的原型上
+
+Invoice.prototype.getInvoiceTotal = function() {
+
+    return this.subtotal + this.getTaxAmount(this.subtotal);
+
+};
+```
+
+### 如何使用两个参数创建 `Invoice` 对象类型的实例
+
+```javascript
+var invoice1 = new Invoice(1000.00, 0.075);
+
+var invoice2 = new Invoice(100.00, 0.0875);
+```
+
+## 如何访问新对象的属性
+
+```javascript
+alert(invoice1.subtotal); // 1000.00
+
+alert(invoice2.taxRate); // 0.0875
+```
+
+### 如何使用构造函数方法
+
+```javascript
+alert(invoice1.getInvoiceTotal()); // 1075.00
+
+alert(invoice2.getTaxAmount()); // 8.75
+```
+
+## 创建两个 `Date` 类型实例的代码
+
+```javascript
+var taxDay = new Date("4/17/2017");
+
+var xmas = new Date("12/25/2017");
+```
+
+```javascript
+alert(taxDay.toDate());      // 显示 Mon Apr 17 2017
+
+alert(xmas.toDate());      // 显示 Dec 25 2017
+```
+
+## 向 `Date` 对象类型的原型上添加方法的代码
+
+```javascript
+Date.prototype.toNumericString = function() {
+
+  var m = this.getMonth() + 1; // 月份从 0 开始
+
+  var d = this.getDate();
+
+  var y = this.getFullYear();
+
+  return m + "/" + d + "/" + y;
+
+}
+```
+
+```javascript
+alert(taxDay.toNumericString()); // 显示 4/17/2017
+```
+
+
+
+# 处理对象的高级技巧
+
+## 为 Date 对象类型的一个实例添加属性的代码
+
+```javascript
+taxDay.hasExtension = true;
+```
+
+```javascript
+alert(taxDay.hasExtension());  // 显示 true
+alert(xmas.hasExtension());   // 显示 undefined
+```
+
+## 使用一个属性来覆盖原型属性的代码
+
+```javascript
+xmas.toDateString = function() {
+  return "It's Christmas Day";
+}
+```
+
+```javascript
+alert(taxDay.toDateString()); // 显示 Mon Apr 17 2017
+alert(xmas.toDateString()); // 显示 It's Christmas Day
+```
+
+## 原型与实例
+
+- 许多编程语言使用类（classes）来创建对象。相比之下，JavaScript 使用通过克隆原型对象来创建新对象。这种语言被称为经典语言或原型语言。
+- 当你创建一个新对象时，它是从该对象类型的原型对象克隆的，并继承了原型上的所有方法。例如，对象字面量是从 `Object` 类型的原型克隆的，而字符串字面量是从 `String` 对象的原型中克隆的。
+- 当你向一个对象类型的原型对象添加方法时，该对象类型的所有实例都可以使用该方法。这些实例拥有该方法的引用，而不是其拷贝。这避免了内存中存在重复的函数。
+- 当你向一个对象类型的实例添加属性或方法时，它是直接创建在实例上的，而不是在原型上。因此，它只对该实例可用。这种属性被称为直接属性或自有属性（own property）。
+- 你可以使用属性来覆盖原型对象上的方法，但该方法仅对该对象的特定实例进行覆盖。
+
+![](img/32b24cb9657418b8429a4117bd539786_532_0.png)
+
+## Trips 应用
+
+图 17-9 所示 Trips 应用记录了多次旅行的目的、行驶里程数和每英油耗数，而不是计算单一的每英油耗数值。因此，每次旅行都需要一个独立的 Trip 对象。该应用程序使用构造函数来创建 Trip 对象，并将这些对象存储在数组中。
+
+### HTML
+
+与每英油耗数应用程序一样，`head` 部分的 `script` 元素标识了 jQuery 库、一个自定义库以及使用这些库的辅助 JavaScript 文件。由于主 JavaScript 文件同时依赖于 jQuery 库和 trips 库，因此它是最后编写的。
+
+与之前一样，`main` 元素中的 HTML 包含用户输入旅行信息的文本框。它还包含一个用于计算每英油耗并将该旅行添加到显示中的按钮。HTML 还包含一个 id 属性为“trips”的 `div` 元素，其中包含一个 `textarea` 元素。这里是显示旅行信息的地方。
+
+图中 HTML 下方的 CSS 代码段显示了“trips”元素的样式规则。在这里，你可以看到该样式规则将 trips `div` 浮动到右侧。
+
+### HTML 代码
+
+```html
+<head>
+  <title>Trips Log</title>
+  <link rel="stylesheet" href="trips.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="library_trips.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Trips Log</h1>
+    <div id="trips">
+      <textarea id="triplist" rows="8" cols="42"></textarea>
+    </div>
+    <label for="destination">Destination:</label>
+    <input type="text" id="destination">
+    <label for="miles">Miles Driven:</label>
+    <input type="text" id="miles">
+    <label for="gallons">Gallons Gas Used:</label>
+    <input type="text" id="gallons">
+    <label>&label>
+    <input type="button" id="add_trip" value="Add Trip">
+  </main>
+</body>
+```
+
+### 应用程序的部分 CSS
+
+```css
+#trips {
+  float: right;
+}
+```
+
+### 描述
+
+- 该应用程序计算并存储了一次或多次旅行的每英油耗数。
+- 它使用构造函数来创建对象。
+
+### 文件结构
+
+- **main.js**
+- **library_trip.js**
+
+## 如何创建工厂函数
+
+正如你刚刚学到的，你可以使用构造函数来创建多个引用同一个原型对象的对象实例。然而，还有另一种某些程序员更倾向于使用的实现方法。
+
+## 如何使用 Object 对象的 create() 方法
+
+JavaScript 中的构造函数允许你创建一个对象类型并对其原型进行定制化。它们还为习惯于使用经典语言的程序员提供了一种熟悉的语法。然而，JavaScript 并不是一种经典语言，某些程序员想要另一种创建新对象的方法，以让 JavaScript 的原型本质更加直观。为了解决这个问题，ECMAScript 5 为 `Object` 对象类型添加了 `create()` 方法。
+
+图 17-11 顶部的表格显示了该 `create()` 方法的语法。第一个参数是你想要为新对象使用的原型对象。第二个参数是一个可选对象，用于描述新对象应该拥有的属性。由于该参数在 ES3 中可能无法正常工作，因此在本章中将不会使用它。
+
+图中的第一个示例展示了如何使用 `create` 方法。在这里，`Object` 对象的原型被用作新对象的原型。这与使用对象字面量创建一个新对象是相同的。
+
+通常，你会配合自定义原型对象使用 `create` 方法。第二组示例说明了这一点。在这里，创建了一个包含名为 `getTotal()` 单一方法的自定义原型对象。然后，使用 `create()` 方法配合你的自定义原型创建一个发票（invoice）对象。之后，向发票对象添加了 `subtotal` 和 `taxRate` 属性。
+
+就像你使用构造函数一样，这里显示的 `getTotal()` 方法只在原型对象上创建一次。然后，调用构造函数返回的对象将引用该方法。与使用构造函数不同，`create()` 方法不会创建新的对象类型。相反，每个通过 `create()` 方法创建的对象都是 `Object` 对象类型。
+
+图中的最后一个示例展示了如何在工厂函数中使用 `create` 方法。工厂函数负责创建、初始化并返回对象。它们与构造函数的相似之处在于，你可以向对象添加属性，并用传递给函数的值对其进行初始化。但你不需要在工厂函数中使用 `new` 关键字。正因如此，工厂函数的名称不应该以大写字母开头。工厂函数必须显式地返回它所创建的对象。
+
+工厂函数后续代码展示了如何使用它。请注意，这段代码没有使用 `new` 关键字来创建对象。请注意，你调用工厂函数创建的对象的方法的方式，与调用构造函数创建的对象的方法完全相同。
+
+### Object 类型的 create() 方法
+
+| 方法 | 说明 |
+| :--- | :--- |
+| `create(prototype, properties)` | 创建一个新对象。第一个参数是新对象继承的原型。可选的第二个参数设置新对象的属性。 |
+
+### 如何使用 create() 方法创建新对象
+
+```javascript
+var obj = Object.create(Object.prototype); // 等同于 obj = {};
+```
+
+### 带有一个方法的自定义原型对象
+
+```javascript
+var invoicePrototype = {
+  getTotal: function() {
+    return this.subtotal + this.taxRate;
+  }
+};
+```
+
+### 使用 create() 方法使用自定义原型对象的代码
+
+```javascript
+var invoice = Object.create(invoicePrototype);
+invoice.subtotal = 100;
+invoice.taxRate = 0.075;
+alert(invoice.getTotal()); // 显示 107.50
+```
+
+### 使用 create 方法创建对象的工厂函数
+
+```javascript
+var getInvoice = function(subtotal, taxRate) {
+  var invoicePrototype = {
+    getTotal: function() {
+      return this.subtotal + (this.subtotal * this.taxRate);
+    }
+  };
+  var invoice = Object.create(invoicePrototype);
+  invoice.subtotal = subtotal;
+  invoice.taxRate = taxRate;
+  return invoice;
+};
+```
+
+### 使用工厂函数的代码
+
+```javascript
+var invoice = getInvoice(100, 0.075);
+alert(invoice.getTotal()); // 显示 107.50
+```
+
+### 描述
+
+- 另一种创建新对象方法是使用 `Object` 对象的 `create()` 方法。当你使用 `create()` 方法和自定义原型创建一个新对象后，添加原型对象所需的任何属性。
+- 工厂函数使用 `create()` 方法创建新对象。由于该方法不会创建新的对象类型，因此你不需要使用 `new` 关键字调用工厂函数。
+- 某些程序员更倾向于使用工厂函数，因为它们不需要使用 `new` 关键字，并且让 JavaScript 的原型本质更加清晰。
+- `create()` 方法位于图 1-17 描述的 ES5 `shim.js` 文件中。这是因为可选的第二个参数在 ES3 中可能无法正常工作。
+
+## 使用工厂函数的 Trips 应用
+
+图 17-12 展示了你在本章之前看到的 Trips 应用的旅行库文件和主 JavaScript 文件。然而，在这里，它们被重写为使用工厂函数而不是构造函数。
+
+旅行库文件包含一个 `getTrip()` 函数，它就是工厂函数。与之前的构造函数一样，该函数将创建一个对象。相反，新对象接受三个参数，并使用这些参数来设置 `destination`、`miles` 和 `gallons` 属性的初始值。
+
+与之前的构造函数不同，此函数没有使用 `new` 关键字来引用对象。
+
+## 如何使用 Function 对象的 arguments 属性
+
+在 JavaScript 中调用函数时，`arguments` 存储在函数的参数列表中。这与其他编程语言相似。JavaScript 的不同之处在于，参数也存储在该 `Function` 对象的 `arguments` 属性中。
+
+这个 `arguments` 类似于数组。在这个数组中，传递给函数的每个参数都存储在从索引 0 开始的元素中。然后，你可以使用这些索引访问这些元素。
+
+但注意，`arguments` 属性并不是一个真正的数组对象，因此你不能使用在上节中学习的数组属性和方法。好消息是有办法可以解决这个问题，你将在图 17-16 中学习到。
+
+图 17-13 中的第一个示例显示了如何使用 `arguments` 属性访问传递给函数的参数。在这里，`arguments` 属性中的元素 0 被用于一个表达式，如果该参数能被 2 整除且没有余数，该表达式将返回 true。
+
+第二个示例显示了如何使用 `arguments` 的 `length` 属性来确定传递给函数的参数数量。在这里，`countArgs` 函数显示传递给它的参数个数。
+
+第三个示例显示了如何使用 `arguments` 属性创建一个可以接收可数量参数的函数。在这里，`Invoice` 构造函数在它的参数列表中有一个参数，它用它来设置 `taxRate` 属性的初始值。之后，构造函数遍历 `arguments` 属性，并将任何其他参数添加到 `items` 数组中。在这种情况下，仅需一个税率就可以初始化一个 `Invoice` 对象的新实例，或者使用税率和一个或多个项目代码来创建它。
+
+第四个示例显示了如何使用 `arguments` 属性创建一个带有可选参数的函数。在这里，向 `Invoice` 对象添加了一个方法，该方法使用 `items` 数组的 `join()` 方法来创建所有项目代码的列表。该方法开始时检查 `arguments` 属性，以查看是否向函数传递了参数。如果是，该方法将此参数作为分隔符传递给 `join()` 方法。否则，该方法将使用逗号和空格作为默认分隔符。这使得分隔符参数变成了可选的。
+
+第五个示例向你展示了第三和第四个示例是如何工作的。在这里，初始化了一个新实例，税率为 0.07 并包含三个项目代码。然后，在不带参数的情况下调用了 `listItems()` 方法，使用了默认分隔符。最后，再次调用 `listItems()` 方法，这次传递了分隔符参数的值，并且使用了该值而不是默认值。
+
+### 函数使用 arguments 属性获取参数
+
+```javascript
+var isEven = function() {
+  return arguments[0] % 2 == 0;
+}
+isEven(6); // 返回 true
+```
+
+### 如何确定传递了多少个参数
+
+```javascript
+var countArgs = function() {
+  alert("Number of arguments: " + arguments.length);
+}
+countArgs(1, "Text", true); // 显示 "Number of arguments: 3"
+```
+
+### 一个接受可变数量参数的 Invoice 构造函数
+
+```javascript
+var Invoice = function(taxRate) {
+  this.items = [];
+  this.taxRate = taxRate;
+  if (arguments.length > 1) {
+    for (var i = 1; i < arguments.length; i++) { // 跳过第一个参数
+      this.items.push(arguments[i]);
+    }
+  }
+}
+```
+
+### 一个为参数提供默认值的 Invoice 方法
+
+```javascript
+Invoice.prototype.listItems = function(separator) {
+  var sep = (arguments.length === 0) ? ", " : separator;
+  return this.items.join(sep);
+}
+```
+
+### 一个带有税率和 3 个项目代码的 Invoice 实例
+
+```javascript
+var invoice = new Invoice(0.07, "ABC1", "ABC2", "ABC3");
+alert(invoice.listItems()); // 显示 ABC1, ABC2, ABC3
+alert(invoice.listItems(" | "));   // 显示 ABC1 | ABC2 | ABC3
+```
+
+### 说明
+
+- 在 JavaScript 中，所有函数都是对象，传递给函数的所有参数都存储为 `Function` 对象的属性。
+- `arguments` 属性类似于一个数组，因此你可以使用索引来访问它的元素。但它不是真正的数组，所以你不能使用第 16 章的数组方法。在图 17-16 中，你将学习如何“借用那些数组方法来处理 `arguments` 属性。
+- 如果函数使用 `arguments` 属性来获取传递给它的参数，调用语句可以传递比参数更多或更少的参数。
+
+## 如何创建链式方法
+
+链式方法（Cascading method）是对象的一种可以与其他方法链式调用的方法。要实现这一点，方法必须通过 `this` 关键字返回原始对象的引用。图 17-14 说明了这一点。
+
+第一个示例展示了一个带有两个方法的 `tasklist` 对象。由于这两个方法中没有一个返回 `tasklist` 对象的引用，因此它们不能被链式调用。如果你尝试链式调用方法，将会发生运行时错误。因此，这些方法必须逐个调用。
+
+第二个示例展示了相同的方法，但现在它们每个都以以下语句结尾：
+
+```javascript
+return this;
+```
+
+这返回了对象本身的引用。这种返回方式允许方法被链式调用。这种风格有时被称为流式接口（Fluent interface），因为代码读起来像句子一样。这种链式调用方式在 JavaScript 中非常常见，例如在 jQuery 库中。
+
+### 说明
+
+- 链式方法是对象的一种可以与其他方法链式调用的方法。要实现这一点，方法必须通过 `this` 关键字返回原始对象的引用。
+- 这种风格有时被称为流式接口（Fluent interface），因为代码读起来像句子一样。这种链式调用方式在 JavaScript 中非常常见，例如在 jQuery 库中。
+
+## 如何从另一个对象继承方法
+
+当你创建对象时，可以从其他对象继承方法。这让你创建一个通用方法的基对象，然后对它进行扩展。如图 17-15 所示，你可以使用原型来继承其方法，你可以通过构造函数或 `Object.create()` 方法来实现。
+
+第一组示例显示了如何通过构造函数继承方法。首先，代码创建一个具有 `rate` 属性的 `Percent` 构造函数。然后，在原型上添加一个名为 `getPercent()` 的方法。该方法接受金额并返回金额乘以税率的结果。
+
+接下来，代码创建了另一个名为 `Commission` 的构造函数，具有 `rate` 和 `isSplit` 属性。它通过将 `Commission` 对象的原型设置为 `Percent` 类型的新实例。作为结果，`Commission` 对象继承了 `Percent` 类型的方法。
+
+然后，代码在原型上添加了 `calculateCommission()` 方法。该方法使用它继承的 `getPercent()` 方法和 `isSplit` 属性来计算结果。
+
+注意，`rate` 属性必须在 `Commission` 构造函数中再次定义。这是因为在 `Percent` 原型对象上没有定义，所以它没有被继承。
+
+第一组的最后一个示例显示了如何使用 `Commission` 构造函数来创建一个名为 `commission` 的新对象。然后，设置它的 `rate` 和 `isSplit` 属性，并调用它的 `getPercent()` 和 `calculateCommission()` 方法。
+
+第二组示例显示了如何使用 `Object.create()` 方法继承方法。首先，代码创建了一个名为 `percentPrototype` 的原型对象，该对象包含一个名为 `getPercent()` 的方法。与之前一样，该方法接受金额并返回金额乘以税率的结果。
+
+接下来，代码创建一个名为 `commissionPrototype` 的原型对象。它将该原型对象传递给创建该对象的 `create()` 方法。作为结果，`commissionPrototype` 对象继承了 `getPercent()` 方法。
+
+然后，代码在原型上添加了 `calculateCommission()` 方法。该方法使用它继承的 `getPercent()` 方法和 `isSplit` 属性来计算结果。
+
+### 如何使用构造函数继承方法
+
+#### 一个创建 Percent 对象的构造函数
+
+```javascript
+var Percent = function() {
+  this.rate;
+};
+Percent.prototype.getPercent = function(subtotal) {
+  return subtotal * this.rate;
+}
+```
+
+#### 一个继承 Percent 对象的 Commission 构造函数
+
+```javascript
+var Commission = function() {
+  this.isSplit;
+};
+Commission.prototype = new Percent(); // 继承
+Commission.prototype.calculateCommission = function(subtotal) {
+  var percent = this.getPercent(subtotal);
+  return (this.isSplit) ? percent / 2 : percent;
+}
+```
+
+#### 一个 Commission 类型对象的实例
+
+```javascript
+var commission = new Commission();
+commission.rate = 0.085;
+commission.isSplit = true;
+alert(commission.getPercent(140)); // 显示 11.9
+alert(commission.calculateCommission(140)); // 显示 5.95
+```
+
+### 如何使用 Object.create() 方法继承方法
+
+#### 一个 PercentPrototype 对象
+
+```javascript
+var percentPrototype = {
+  getPercent: function(subtotal) { return subtotal * this.rate; }
+}
+```
+
+#### 一个继承 percentPrototype 对象的 CommissionPrototype 对象
+
+```javascript
+var commissionPrototype = Object.create(percentPrototype); // 继承
+commissionPrototype.calculateCommission = function(subtotal) {
+  var percent = this.getPercent(subtotal);
+  return (this.isSplit) ? percent / 2 : percent;
+}
+```
+
+#### 一个 commission 对象实例
+
+```javascript
+var commission = Object.create(commissionPrototype);
+commission.rate = 0.07;
+commission.isSplit = false;
+alert(commission.getPercent(100)); // 显示 7
+alert(commission.calculateCommission(100)); // 显示 7
+```
+
+### 说明
+
+- 继承允许你在多个对象之间共享基础功能。
+- 要继承由构造函数创建的对象的方法，请将子对象的原型对象设置为父对象的实例。
+- 要使用 `Object.create()` 方法继承方法，请将父对象作为原型传递。
+
+## 如何使用 this 关键字
+
+到为止，你一直在对象的方法内部使用 `this` 关键字来引用该对象。然而，你应该知道，`this` 的值取决于函数是如何调用的，正如图 17-16 中的第一个表所示。
+
+此外，每个函数都有三个方法，可以使用它们来指定该函数 `this` 的值。当你使用这些方法之一时，你会在传递给函数的第一个参数中指定 `this` 的值，正如该图第二个表中的这些方法语法所示的那样。这些方法还允许你传递函数可能需要的任何其他参数。通过 `call()` 和 `bind()` 方法，你通过逗号分隔的列表传递这些参数。通过 `apply()` 方法，你通过数组传递这些参数。
+
+函数的 `call()` 和 `apply()` 方法允许你在函数被调用时指定 `this` 的值。这些方法的一个常见用途是从其他对象中“借用”功能。例如，这些方法允许你直接使用 `Array` 对象的属性和方法来处理函数的 `arguments` 属性，而该属性并不是真正的数组。
+
+第一个示例展示了如何使用 `call()` 方法借用 `Array` 对象的 `join()` 方法。在这里，`displayArguments()` 函数被用于连接并显示传递给它的参数。为了做到这一点，它首先在 `Array` 类型的原型方法 `join()` 上调用 `call()` 方法。传递给 `call()` 的第一个参数是 `arguments` 属性，它将 `arguments` 属性设置为 `join()` 方法中 `this` 的值。然后，第二个参数是 `join()` 方法用于连接参数的分隔符。该示例的最后语句显示了用三个参数调用 `displayArguments()` 的结果。
+
+第二个示例说明了你如何使用 `apply()` 方法完成相同的事情。在这里，第二个参数被编码为一个包含单个元素的数组，该元素包含了 `join()` 方法将要使用的分隔符。
+
+与 `call()` 和 `apply()` 方法不同，函数的 `bind()` 方法允许你在函数被调用或赋值时指定 `this` 的值。那么，无论以后如何调用，该函数的 `this` 值都无法再更改。
+
+正如你将在下一章中看到的，`bind()` 方法在处理闭包时非常常用。该方法的另一个用途是覆盖事件处理程序的默认行为。这通过第三个示例进行了说明。在这里，一个名为 `salesTax` 的对象字面量有一个名为 `rateTax` 的属性和一个名为 `calculate()` 的方法，该方法使用 `this` 关键字来引用 `rateTax` 属性。
+
+接下来，`calculate()` 方法被赋值为按钮点击的事件处理器。因为调用 `calculate()` 方法的 `bind()` 方法是以 `salesTax` 对象作为其参数，因此 `this` 被设置为 `salesTax` 对象。接下来，`calculate()` 方法可以使用 `this` 来引用 `salesTax` 对象的 `rateTax` 属性。如果没有使用 `bind()` 方法，这将引用触发事件的按钮，由于该按钮没有 `rateTax` 属性，`calculate()` 方法将无法运行。
+
+### this 关键字的值取决于函数如何被调用
+
+| 函数如何调用 | `this` 关键字的值 |
+| :--- | :--- |
+| 普通函数调用 | 严格模式下为 `undefined`；全局对象 |
+| 作为对象的方法 | 该对象 |
+| 作为事件处理器 | 触发事件的元素 |
+
+### 用于指定 this 的函数方法
+
+| 方法 | 说明 |
+| :--- | :--- |
+| `call(thisArg, arg1...)` | 在调用函数时指定 `this` 的值 |
+| `apply(thisArg, argsArray)` | 在调用函数时指定 `this` 的值 |
+| `bind(thisArg)` | 在函数被调用或赋值时指定 `this` 的值 |
+
+### 如何使用 call() 方法借用 Array 的方法
+
+```javascript
+var displayArguments = function() {
+  return Array.prototype.join.call(arguments, ", ");
+};
+displayArguments(1, "Text", true); // 返回 "1, Text, true"
+```
+
+### 如何使用 apply() 方法完成相同的事情
+
+```javascript
+var displayArguments = function() {
+  return Array.prototype.join.apply(arguments, [", "]);
+};
+displayArguments(1, "Text", true); // 返回 "1, Text, true"
+```
+
+### 如何使用 bind() 方法覆盖事件处理程序的默认行为
+
+```javascript
+var salesTax = {
+  rateTax: 0.075,
+  calculate: function(price) {
+    return price * this.rateTax;
+  }
+};
+$("#button").on("click", salesTax.calculate.bind(salesTax));
+```
+
+## 任务列表应用
+
+### 任务列表界面
+
+| 任务 | 截止日期 |
+| :--- | :--- |
+| 完成当前项目 | 2017/05/12 |
+| 获取新项目的规格说明 | 2017/08/周一 |
+| 与 Mike 会面 | 2017/12/周五 |
+
+### HTML
+
+```html
+<head>
+  <title>Task List</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="task_list.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="library_task.js"></script>
+  <script src="library_storage.js"></script>
+  <script src="library_tasklist.js"></script>
+  <script src="task_list.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Task List</h1>
+    <div id="tasks"></div>
+    <label for="task">任务</label><br>
+    <input type="text" name="task" id="task"><br>
+    <label for="due_date">截止日期</label><br>
+    <input type="date" name="due_date" id="due_date"><br>
+    <input type="button" id="add_task" value="Add Task"><br>
+    <input type="button" id="clear_tasks" value="Clear Tasks">
+    <div class="clear"></div>
+  </main>
+</body>
+```
+
+### 应用程序部分 CSS
+
+```css
+#tasks {
+  float: right;
+  width: 25em;
+  margin: 0 0.5em;
+  padding: 1em;
+  border: 2px solid black;
+  min-height: 5em;
+}
+#tasks a { margin-right: 0.5em; }
+.clear { clear: both; }
+```
+
+### 描述
+
+- 此应用程序使用了 jQuery 和 jQuery UI 库以及一些自定义库文件。
+
+## 任务与存储库
+
+图 17-18 展示了两个库文件。`library_task.js` 文件是用于处理单个任务的库。它包含一个名为 `Task` 的构造函数，接受名为 `task` 和 `dueDate` 的参数。在构造函数中，创建了一个名为 `task` 的属性并赋值为 `task` 参数的值。然后，构造函数使用其参数检查是否收到了 `dueDate` 参数。如果有，它会将该值转换为 `Date` 对象并赋值给名为 `dueDate` 的属性。如果没有，它将创建一个以当前日期起后一个月为默认值的新 `Date` 对象并赋值给 `dueDate` 参数。因此，`dueDate` 参数是可选的。
+
+接下来，代码在 `Task` 类型的原型上添加了两个方法。`isValid()` 方法确保用户已为 `task` 属性输入了值，并且 `dueDate` 是未来的日期。`toString()` 方法返回一个显示 `task` 和 `dueDate` 属性值的字符串。
+
+第二个文件是 `library_storage.js` 文件。这是用于在存储器中输入和输出任务的库。它包含了两个工厂函数。`getLocalStorage` 函数包含了名为 `get()`、`set()` 和 `clear()` 的通用方法，这些方法用于从本地存储中检索字符串。这三个方法都使用对象的 `key` 属性来指示要操作本地存储中的哪项内容。这是一个可以使用其他应用程序的通用工厂函数。
+
+相比之下，`getTaskStorage` 工厂函数继承了 `getLocalStorage` 工厂函数的方法。然后，它利用基础功能创建了两个特定方法 `retrieveTasks()` 和 `storeTasks()`，将本地存储中的字符串转换为数组和 `Task` 对象，反之亦然。这展示了更通用的对象的基础功能如何被更具体的对象继承和扩展。
+
+需要注意的是，你可以轻松地使用任务库中的函数或存储库中的构造函数。如前所述，两者均可行，使用哪种取决于个人喜好。
+
+### library_task.js
+
+```javascript
+function Task(task, dueDate) {
+  this.task = task;
+  if (dueDate) {
+    this.dueDate = new Date(dueDate);
+  } else {
+    this.dueDate = new Date();
+    this.dueDate.setMonth(this.dueDate.getMonth() + 1);
+  }
+}
+Task.prototype.isValid = function() {
+  return this.task !== "" && this.dueDate > new Date();
+};
+Task.prototype.toString = function() {
+  return this.task + ": " + this.dueDate.toDateString();
+};
+```
+
+### library_storage.js
+
+```javascript
+function getLocalStorage(key) {
+  this.key = key;
+}
+getLocalStorage.prototype.get = function() {
+  return localStorage.getItem(this.key);
+};
+getLocalStorage.prototype.set = function(value) {
+  localStorage.setItem(this.key, value);
+};
+getLocalStorage.prototype.clear = function() {
+  localStorage.removeItem(this.key);
+};
+function getTaskStorage(key) {
+  getLocalStorage.call(this, key);
+}
+getTaskStorage.prototype.retrieveTasks = function() {
+  var data = this.get();
+  if (!data) {
+    return [];
+  }
+  return JSON.parse(data).map(function(item) {
+    return new Task(item.task, item.dueDate);
+  });
+};
+getTaskStorage.prototype.storeTasks = function(tasks) {
+  this.set(JSON.stringify(tasks));
+};
+```
+
+## tasklist.js 文件
+
+```javascript
+var tasklist = {
+  tasks: [],
+  storage: getTaskStorage("tasks"),
+  load: function() {
+    this.tasks = this.storage.retrieveTasks();
+    return this;
+  },
+  save: function() {
+    this.storage.storeTasks(this.tasks);
+    return this;
+  },
+  sort: function() {
+    this.tasks.sort(function(task1, task2) {
+      if (task1.dueDate < task2.dueDate) { return -1; }
+      else if (task1.dueDate > task2.dueDate) { return 1; }
+      else { return 0; }
+    });
+    return this;
+  },
+  add: function(task) {
+    this.tasks.push(task);
+    return this;
+  },
+  delete: function(i) {
+    this.sort();
+    this.tasks.splice(i, 1);
+    return this;
+  },
+  clear: function() {
+    this.storage.clear();
+    return this;
+  },
+  display: function(div) {
+    this.sort();
+    var html = "";
+    for (var i in this.tasks) {
+      html += "<a href='#' title='" + i + "'>Delete</a>";
+      html += this.tasks[i].toString();
+      html += "</p>";
+    }
+    div.html(html);
+    // 为新添加到 div 的每个<a> 元素添加 onclick 事件处理器
+    div.find("a").each(function() {
+      $(this).on("click", function(evt) {
+        tasklist.load().delete(this.title).save().display(div);
+        evt.preventDefault();
+        $("input:first").focus();
+      });
+    });
+    return this;
+  }
+};
+```
+
+> 注意，由于此函数是一个事件处理器，`this` 的值是被点击的删除链接。这就是为什么 `this` 的 title 属性包含了要删除的任务的索引。
+
+## 主 JavaScript 文件
+
+图 17-20 显示了此应用程序的主 JavaScript 文件。它从 `jQuery()` 函数开始，该函数为“添加任务”（Add Task）和“清除任务”（Clear Tasks）按钮的点击事件附加事件处理器，为截止日期（Due date）框激活 jQuery UI 日期选择插件，加载并显示任务列表，并将焦点置于任务（Task）文本框。
+
+`ready()` 函数和事件处理器调用了 `tasklist` 对象的方法。之所以能够这样做，是因为 `tasklist` 对象是以对象字面量编写的，因此它在文件一加载后就可用了。相比之下，`Task` 对象类型是通过构造函数创建的。当这些函数中的一个需要任务对象时，必须使用 `new` 关键字来创建一个它的实例。
+
+“添加任务”按钮的事件处理器首先检查用户是否输入了日期。如果是，则调用 `Task` 构造函数，并将该日期以及任务描述传递给它。如果没有截止日期，仅将任务描述传递给 `Task` 构造函数。不过，请记住图 17-18，如果没有传递日期，构造函数将创建一个从当前日期起一个月后的默认日期。
+
+接下来，事件处理器调用了 `Task` 对象的 `isValid()` 方法以确保用户输入了有效的任务。如果是，代码将调用 `tasklist` 对象的四个方法：从本地存储中加载任务、添加新任务、将更新后的任务数组保存回本地存储，以及显示新的任务列表。再次，这些方法是链式调用的，因为它们返回了 `this` 关键字。之后，该函数清空任务框。
+
+然而，如果任务无效，此事件处理器会通知用户。无论是否有效，该函数都会通过将焦点置于任务文本框来结束。
+
+“清除任务”按钮的事件处理器首先调用 `tasklist` 对象的 `clear()` 方法。然后，它会清空显示任务的 `div` 元素，以及任务和截止日期文本框。最后，它将焦点置于任务文本框。
+
+在定义函数后，使用链式调用 `tasklist` 对象的 `load()` 和 `display()` 方法。这会在页面加载时检索并显示本地存储中的任何任务。`ready()` 函数以将焦点置于任务文本框结束。
+
+### 任务管理器应用程序的主 JavaScript
+
+```javascript
+$(document).ready(function() {
+  $("#add_task").click(function() {
+    if ($("#due_date").val() == "") {
+      var newTask = new Task($("#task").val());
+    } else {
+      var newTask = new Task($("#task").val(), $("#due_date").val());
+    }
+    if (newTask.isValid()) {
+      tasklist.load().add(newTask).save().display($("#tasks"));
+      $("#task").val("");
+    } else {
+      alert("Please enter a valid task and due date.");
+    }
+    $("#task").focus();
+  });
+  $("#clear_tasks").click(function() {
+    tasklist.clear().display($("#tasks"));
+    $("#task").val("");
+    $("#due_date").val("");
+    $("#task").focus();
+  });
+  $("#due_date").datepicker();
+  tasklist.load().display($("#tasks"));
+  $("#task").focus();
+});
+```
+
+
+
+```javascript
+if (newTask.isValid()) {
+  tasklist.load().add(newTask).save().display($("#tasks"));
+  $("#task").val("");
+} else {
+  alert("请输入任务和未来的日期。");
+}
+$("#task").focus();
+});
+
+$("#clear_tasks").click(function() {
+  tasklist.clear();
+  $("#tasks").html("");
+});
+```
+
+## 描述
+
+- `ready` 函数为“添加任务”和“清除任务”按钮添加了点击事件处理器，并在日期文本框上应用了 jQuery 日期选择插件。之后，它链式调用了 `tasklist` 对象的两个方法。这些方法在应用程序加载时检索存储中的任何任务。
+- “添加任务”按钮的事件处理器首先检查用户是否输入了日期。如果是，则调用 `Task` 构造函数，并将该日期以及任务描述传递给它。如果没有截止日期，仅将任务描述传递给 `Task` 构造函数。不过，请记住图 17-18，如果没有传递日期，构造函数将创建一个从当前日期起一个月后的默认日期。
+- 接下来，事件处理器调用了 `Task` 对象的 `isValid()` 方法以确保用户输入了有效的任务。如果是，代码将调用 `tasklist` 对象的四个方法：从本地存储中加载任务、添加新任务、将更新后的任务数组保存回本地存储，以及显示新的任务列表。再次，这些方法是链式调用的，因为它们返回了 `this` 关键字。之后，该函数清空任务框。
+- “清除任务”按钮的事件处理器首先调用 `tasklist` 对象的 `clear()` 方法。然后，它会清空显示任务的 `div` 元素，以及任务和截止日期文本框。最后，它将焦点置于任务文本框。
+- 在定义函数后，使用链式调用调用 `tasklist` 对象的 `load()` 和 `display()` 方法。这会在页面加载时检索并显示本地存储中的任何任务。`ready()` 函数以将焦点置于任务文本框结束。
+
+# 练习 17-2 增强 Countdown 应用程序以对象和库
+
+本练习要求你增强第 13 章中的 Countdown 应用程序，使其使用对象和库。
+
+![](img/32b24cb9657418b8429a4117bd539786_559_0.png)
+
+## 打开、测试并检查该应用程序
+
+1. 使用你的编辑器或 IDE 打开此文件夹下的 JavaScript 文件：`javascript_jquery\exercises\ch17\countdown`
+2. 在 Chrome 中运行应用程序，添加事件名称和日期，并点击 Countdown 按钮查看其工作原理。然后，检查 Countdown 按钮点击事件处理程序中的代码。注意，这些代码相对难以阅读和理解。
+
+## 添加三个 JavaScript库文件
+
+3. 为应用程序添加三个 JavaScript 文件。将它们命名为 `library_event`、`library_validation` 和 `library_messages`。
+4. 在 index.html 文件的 `head` 元素中添加 `script` 元素以包含这些新文件。目前，不需要担心文件的加载顺序。
+
+## 使用构造函数在事件文件中创建 Event 对象类型
+
+5. 在事件库文件中编写一个名为 `Event` 的构造函数，接受两个参数：`name` 和 `dateString`。将这些参数的值存储在同名的属性中。
+6. 添加另一个名为 `date` 的属性。将该属性的值设置为一个新的 `Date` 对象，并传入 `dateString` 参数的值。
+7. 回到 Countdown 按钮点击事件的处理程序中，找到将用户输入的数据加载到变量 `event` 和 `date` 中的代码。将此代码替换为 `Event` 对象实例。确保将用户输入的值传递给构造函数。
+8. 将事件处理程序中使用所有 `event` 或 `date` 变量的代码替换为使用 `Event` 对象实例的 `name`、`dateString` 或 `date` 属性的代码。然后测试应用程序以确保它仍然正常工作。
+9. 在 `Event` 构造函数中添加另一个名为 `days` 的属性。
+10. 在 `Event` 对象类型的原型上添加一个方法 `calculateDays()`。然后，将计算天数的代码移动到该方法中。不要返回天数，而是将此值存储在 `days` 属性中。
+11. 将事件处理程序中计算天数的代码替换为调用 `calculateDays()` 方法的代码。然后，将所有使用变量的代码替换为使用新 `days` 属性的代码。现在，测试应用程序以确保这些更改正常工作。
+
+## 将验证代码移动到验证库文件
+
+12. 在验证库文件中创建一个名为 `validation` 的对象字面量，其中包含四个方法：`isEmpty()`、`hasSlashes()`、`isValidYear()` 和 `isInvalidDate()`。每个方法都应该接受一个名为 `string` 的参数。
+13. 编写 `isEmpty()` 方法，如果接收到的字符串参数为空，则返回 `true`，否则返回 `false`。你可以在此处使用条件运算符，也可以使用传统的 if-else 语句。
+14. 找到事件处理程序中检查事件名称和日期长度的代码，将该代码替换为调用 `isEmpty()` 方法。现在，测试应用程序以确保其之后运行正常。
+15. 找到检查斜杠、4位年份和无效日期的代码，并将其移动到验证库文件中相关的方法中。
+
+## 将消息代码移动到消息库文件
+
+16. 在消息库文件中创建一个名为 `message` 的对象字面量，其中包含五个方法：`required()`、`invalidDate()`、`past()`、`future()` 和 `today()`。前两个不应接受参数，后三个应该接受一个 `Event` 对象作为参数。
+17. 由于消息库现在依赖于事件库，请确保 index.html 文件中这些库的 script 元素顺序正确。
+18. 找到事件处理程序中向用户显示通知字符串的代码。移动这些字符串移动，让它们由消息库中相应的方法返回。
+19. 将你移动的代码替换为调用新的消息方法，并测试你的更改。
+
+## 检查你的更改
+
+20. 检查 Countdown 按钮点击事件处理程序中的代码。现在它更简洁且更容易遵循了。
+21. 奖励任务：通过将验证代码移动到 `Event` 对象类型原型上的 `inputMissing()` 和 `invalidDate()` 方法，使代码更加简洁。由于这使得事件库依赖于验证库，请确保你的 script 元素顺序正确。
+
+# 第17 章 如何创建和使用自定义对象 541
+
+# 如何创建和使用闭包、IIFE、模块模式和插件
+
+在本章中，你将学习一些会将你的技能提升到专家水平的高级技术。然后，你将学习如何使用这些技术创建他人可以使用的插件。由于本章中的示例使用了对象，你可能需要先阅读第 17 章。
+
+- 如何使用闭包...............................................................544
+- 闭包的工作原理....................................................................................544
+- 如何使用闭包创建私有状态...................................................................546
+- 如何在闭包中使用 `this` 关键字....................................................................548
+- **幻灯片应用程序**...............................................................550
+- HTML 部分......................................................................................................................550
+- 幻灯片库.........................................................................................552
+- 主 JavaScript 文件......................................................................................554
+- **如何使用立即调用函数表达式**..................................556
+- 如何编写 IIFE................................................................................556
+- 如何使用 IIFE 解决闭包循环...........................................................558
+- **如何使用模块模式**......................................................560
+- 什么是模块模式...............................................................................560
+- 如何增强模块和访问器属性..................................................562
+- **使用模块模式的幻灯片应用程序**...............................564
+- HTML 部分......................................................................................................................564
+- 幻灯片库.........................................................................................566
+- 幻灯片增强库.........................................................................568
+- 主 JavaScript 文件......................................................................................568
+- **如何使用模块模式创建 jQuery 插件**..................................570
+- 插件的结构..................................................................................................570
+- 如何编写一个高亮菜单项的插件..................................................572
+- 如何为插件添加选项.........................................................................................574
+- **使用黑牌插件的黑牌应用程序**.......................................576
+- HTML 和主 JavaScript 文件.............................................................576
+- 插件的牌组和手文件...............................................................578
+- 插件的游戏文件...............................................................................580
+- 插件的主文件..................................................................................582
+- 如何压缩并合并插件文件.......................................................584
+- **视角**...............................................................................586
+
+## 如何使用闭包
+
+闭包是 JavaScript 语言中一个强大的特性，但它们可能很难理解。在后续图中你将学习什么是闭包以及如何使用它们。
+
+## 闭包的工作原理
+
+在第 4 章中，你学习了*作用域*（scope），它指的是 JavaScript 对象的可见性。简单来说，在函数外部创建的变量或函数具有*全局作用域*，因此它可以被任何 JavaScript 对象看到并使用。相比之下，在函数内部创建的变量或函数具有*局部作用域*，因此它们只能在函数内部看到和使用。
+
+要理解闭包，你需要理解作用域的两点。首先，一个对象可以访问它自己的作用域，以及包含它的对象的作用域。这被称为*作用域链*（scope chain）。
+
+其次，如果作用域链中的某个对象被某些引用，即使包含它的对象已经*超出作用域*，它也会保持在作用域内。创建这种引用最常见的方法是外部函数返回一个内部函数，该内部函数引用了外部函数作用域中的内容。这就是*闭包*（closure）。
+
+你可以通过图 18-1 中的示例看到它的工作原理。在这里，一个名为 `createCounter()` 的函数包含一个设置为零的变量 `count`。它还包含一个名为 `createCounter()` 的内部函数，该函数会将 `count` 变量加一。这个内部函数会记录被点击元素的 ID 以及 `count` 变量的当前值。最后，外部 `createCounter()` 函数返回内部的 `createCounter()` 函数。
+
+这段代码需要注意的关键点是 `count` 变量在外部函数中，而不是内部函数中。这意味着当外部函数返回内部函数定义时，由于内部函数对它有引用，`count` 变量将保持活跃。
+
+接下来，将事件处理器分配给两个按钮的点击事件。不过，这些事件处理器看起来与你习惯的不同。具体来说，它们不是使用匿名函数来处理事件，而是通过在 `createCounter()` 后加上括号来调用它。
+
+当 `createCounter()` 函数被调用时，它的 `count` 变量被设置为零，其内部 `createCounter()` 函数定义被返回并用作按钮的事件处理器。此时，`createCounter()` 函数完成并超出作用域。但记住，内部函数引用了外部函数的 `count` 变量，而按钮引用了内部函数。这些引用意味着即使包含它的 `createCounter()` 函数已超出作用域，`count` 变量仍在作用域内。
+
+这意味着每个按钮在它的作用域链中都有一个独立的 `count` 变量版本。这是因为 `createCounter()` 函数被调用了两次，每个按钮一次。所以，每个按钮都可以访问不同的内部 `count` 变量，该变量将跟踪它被点击的次数。
+
+## 演示闭包的示例
+
+```javascript
+$(document).ready(function() {
+  var createClickCounter = function () {
+    var count = 0; // 外部函数的局部变量
+    // 引用外部函数局部变量的内部函数
+    var clickCounter = function () {
+      count++;
+      // 'this'的值是被点击的元素
+      console.log(this.id + " count is " + count);
+    };
+    // 返回内部函数创建了一个闭包
+    // 它使其所引用的变量保持“活跃”
+    // 即使在外部函数超出作用域之后也是如此。
+    return clickCounter;
+  };
+  // 调用 createClickCounter 会将内部函数
+  // 分配为按钮的事件处理器。
+  // 每个闭包引用一个独立的变量。
+  $("#first_button").click(createClickCounter());
+  $("#second_button").click(createClickCounter());
+});
+```
+
+## 多次点击两个按钮后的控制面板
+
+![](img/32b24cb9657418b8429a4117bd539786_564_0.png)
+
+## 描述
+
+- JavaScript 中的作用域链指的是处于作用域内的内容，或者说对象可以看到并使用的内容。
+- 在另一个对象内部创建的对象可以访问它自己的作用域，以及包含它的对象的作用域。
+- 只要有某些东西引用它，作用域链中的对象就是可用的（或是“活跃的”）。即使该对象已经执行完毕并超出作用域，事实也是如此。
+- 当内部函数引用了包含它的外部函数作用域内的一个或多个对象时，就创建了闭包。
+
+图 18-1 闭包的工作原理
+
+## 如何使用闭包创建私有状态
+
+最后，这意味着每个 `count` 变量只在绑定按钮的作用域链中可用，在其他地方都不可用。如果你尝试直接访问它，将得到异常。这保护了每个内部 `count` 变量不被其他代码更改或删除。
+
+图 18-1 的示例后面显示了在名为 `first_button` 和 `second_button` 的两个按钮各被点击几次后的 Chrome 控制面板。注意，点击任何一个按钮都不会影响另一个按钮的点击计数。
+
+在第 7 章中，你见过一个幻灯片应用程序，其所有代码都在 `onload()` 事件处理器中。你会将代码移动到库文件中。在现实世界中，在这种情况下，如果你在文件中使用标准函数或对象，它们将是全局的，可以被调用和删除。
+
+为了保护应用程序正常运行所需的对象，你可以使用闭包来创建私有状态。为了说明，图 18-2 展示了一个名为 `getSlideshow` 的函数，它包含了几个变量并返回一个带有方法的对象。
+
+```javascript
+var getSlideshow = function() {
+  // 私有变量
+  var timer, play = true, speed = 2000;
+  var nodes = { image: null, caption: null };
+  var img = { cache: [], counter: 0 };
+  // 私有函数
+  var stopSlideshow = function() { ... };
+  var displayNextImage = function() { ... };
+  // 访问私有变量的公共方法
+  return {
+    loadImages: function(slides) { ... },
+    startSlideShow: function() { ... },
+    togglePlay: function(e) { ... }
+  };
+};
+```
+
+## 创建并使用函数返回的幻灯片对象的代码
+
+```javascript
+var slideshow = getSlideshow();      // 创建幻灯片对象
+slideshow.loadImages(slides);               // 将幻灯片数组传递给
+// loadImages 方法
+```
+
+## 描述
+
+- 全局作用域内的所有变量和函数都是公开的。同样，全局对象的属性和方法也是应用的。这意味着关键对象可以被覆盖或删除。
+- 为了保护应用程序正常运行所需的对象，你可以使用闭包创建私有状态。
+- 如最后一张图所示，通过返回一个引用包含它的外部函数对象的内部函数来创建闭包。但是，如果你想返回多个内部函数，可以像上面将它们编写为对象的方法。
+
+图 18-2 如何在对象中使用闭包创建私有状态
+
+## 如何在闭包中使用 `this` 关键字
+
+正如你所见的，内部函数可以访问包含它的外部函数的作用域。然而，这并不适用于外部函数 `this` 关键字的值。这是因为外部函数和内部函数各有它们自己的 `this` 关键字。
+
+例如，图 18-3 示例中的 `tax` 对象有一个名为 `FullPrice()` 的方法，该方法返回一个匿名函数。在这种情况下，`displayFullPrice()` 是外部函数，而该外部函数的 `this` 的值是 `tax` 对象。
+
+同时，匿名函数是内部函数。正如你在第 17 章中学习的，函数中 `this` 的值取决于函数是如何被调用的。如果它是被直接调用的，在严格模式下 `this` 是 `undefined`，在非严格模式下则指向 `Window` 对象。如果它被赋值为事件处理程序，`this` 就是触发它的元素，而在这里它是 `tax` 对象，因此没有 `calc()` 方法。
+
+幸运的是，你可以使用 `bind()` 方法将内部函数 `this` 的值设置为 `tax` 对象。该图中的第一个示例说明了这一点。在这里，在内部函数的结束括号之后，外部函数调用了外部函数的 `bind()` 方法，并传递了自身的 `this` 关键字的值，即 `tax` 对象。这设置了内部函数 `this` 的值，无论它之后如何被调用。正因如此，内部函数将始终正常工作。
+
+大多数情况下，当内部函数需要访问外部函数的 `this` 关键字时，像这样使用 `bind()` 方法就是你需要做的。有时，你需要同时访问外部函数和内部函数的 `this` 的值。例如，如果内部函数被附加到按钮的事件处理程序，`this` 的值就是被点击的按钮。在这种情况下，你可能想在代码中使用该按钮的一些属性。
+
+为了做到这一点，你可以将外部函数 `this` 关键字的值存储在变量中。由于内部函数可以访问外部函数的作用域，它将能够访问包含外部 `this` 关键字的变量和它自己的 `this` 关键字。
+
+第二个示例说明了这一点。在这里，外部函数 `this` 的值被存储在一个名为 "that" 的变量中。这符合一种编程习惯，即当你将 `this` 的值存储在变量中时，变量的名称应该是 "that"、self 或 "me"。不过请注意，`Window` 对象有一个名为 `self` 的全局属性，因此使用 "that" 或 "me" 更好。
+
+你应该知道函数的 `arguments` 属性的工作原理类似。也就是说，每个函数都有它们自己的 `arguments` 属性，因此你无法从内部函数访问外部函数的 `arguments` 属性。然而，如果内部函数需要使用它，你可以将外部函数的 `arguments` 属性存储在变量中。
+
+# 如何使用 `bind()` 方法设置内部函数 `this` 关键字的值
+
+```javascript
+var tax = {
+  rate: 0.075,
+  calc: function(sub) { return (sub + (sub * this.rate)).toFixed(2); },
+  displayFullPrice: function(subtotal) {
+    // 在内部函数上调用 bind() 方法，以便 'this' 的值
+    // 始终是 tax 对象，无论内部函数如何被调用
+    return function() {
+      alert("Full price = $" + this.calc(subtotal));
+    }.bind(this);
+  }
+};
+```
+
+将内部函数作为按钮的事件处理程序
+`$("#camera").click(tax.displayFullPrice(125));`
+// 点击按钮时显示 "Full price = $134.38"
+
+# 如何使用变量存储外部函数 `this` 关键字的值
+
+```javascript
+var tax = {
+  rate: 0.075,
+  calc: function(sub) { return (sub + (sub * this.rate)).toFixed(2); },
+  displayFullPrice: function(subtotal) {
+    // 存储外部函数 'this' 关键字的值，以便内部函数
+    // 可以作为自身的 'this' 关键字来访问它。如果内部
+    // 函数被用事件处理程序，'this'是被点击的元素。
+    var that = this;
+    return function() {
+      alert("Full price for " + this.id + " = $"
+        + that.calc(subtotal));
+    };
+  }
+};
+```
+
+将内部函数作为按钮的事件处理程序
+`$("#camera").click(tax.displayFullPrice(125));`
+// 点击按钮时显示 "Full price for camera = $134.38"
+
+## 描述
+
+- 尽管内部函数可以访问包含它的外部函数的变量，但每个函数都有它们自己的 `this` 关键字。
+- 如果内部函数需要访问外部函数的 `this` 关键字，外部函数可以传递内部函数的 `bind()` 方法。正如你在图 17-16 中所示的，这设置了内部函数 `this` 关键字的值。
+- 有时，内部函数需要同时访问外部函数的 `this` 关键字和自身的 `this` 关键字。在这种情况下，外部函数可以将 `this` 的值存储在变量中。内部函数可以访问该变量。按照习惯，此类变量被命名为 "that"、self 或 "me"。
+- 每个函数也有自己的 `arguments` 属性。如果内部函数需要访问外部函数的 `arguments` 属性，外部函数可以将其存储在变量中。
+
+图 18-3 如何在闭包中使用 `this` 关键字
+
+# 在闭包中处理 this 关键字的方法
+
+正如你所见的，内部函数可以访问包含它的外部函数的作用域。然而，这并不适用于外部函数 `this` 关键字的值。这是因为外部函数和内部函数各有它们自己的 `this` 关键字。
+
+例如，图 18-3 示例中的 tax 对象有一个名为 `FullPrice()` 的方法，该方法返回一个匿名函数。在这种情况下，`displayFullPrice()` 是外部函数，而该外部函数的 `this` 的值是 `tax` 对象。
+
+同时，匿名函数是内部函数。正如你在第 17 章中学习的，函数中 `this` 的值取决于函数是如何被调用的。如果它是被直接调用的，在严格模式下 `this` 是 `undefined`，在非严格模式下则指向 `Window` 对象。如果它被赋值为事件处理程序，`this` 就是触发它的元素，而在这里它是 `tax` 对象，因此没有 `calc()` 方法。
+
+幸运的是，你可以使用 `bind()` 方法将内部函数 `this` 的值设置为 `tax` 对象。该图中的第一个示例说明了这一点。在这里，在内部函数的结束括号之后，外部函数调用了外部函数的 `bind()` 方法，并传递了自身的 `this` 关键字的值，即 `tax` 对象。这设置了内部函数 `this` 的值，无论它之后如何被调用。正因如此，内部函数将始终正常工作。
+
+大多数情况下，当内部函数需要访问外部函数的 `this` 关键字时，像这样使用 `bind()` 方法就是你需要做的。有时，你需要同时访问外部函数和内部函数的 `this` 的值。例如，如果内部函数被附加到按钮的事件处理程序，`this` 的值就是被点击的按钮。在这种情况下，你可能在代码中使用该按钮的一些属性。
+
+为了做到这一点，你可以将外部函数 `this` 关键字的值存储在变量中。由于内部函数可以访问外部函数的作用域，它将能够访问包含外部 `this` 关键字的变量和它自己的 `this` 关键字。
+
+第二个示例说明了这一点。在这里，外部函数 `this` 的值被存储在一个名为 "that" 的变量中。这符合一种编程习惯，即当你将 `this` 的值存储在变量中时，变量的名称应该是 "that"、self 或 "me"。不过请注意，`Window` 对象有一个名为 `self` 的全局属性，因此使用 "that" 或 "me" 更好。
+
+你应该知道函数的 `arguments` 属性的工作原理类似。也就是说，每个函数都有它们自己的 `arguments` 属性，因此你无法从内部函数访问外部函数的 `arguments` 属性。然而，如果内部函数需要使用它，你可以将外部函数的 `arguments` 属性存储在变量中。
+
+# 如何使用 `bind()` 方法设置内部函数 `this` 关键字的值
+
+```javascript
+var tax = {
+  rate: 0.075,
+  calc: function(sub) { return (sub + (sub * this.rate)).toFixed(2); },
+  displayFullPrice: function(subtotal) {
+    // 在内部函数上调用 bind() 方法，以便 'this' 的值
+    // 始终是 tax 对象，无论内部函数如何被调用
+    return function() {
+      alert("Full price = $" + this.calc(subtotal));
+    }.bind(this);
+  }
+};
+```
+
+将内部函数作为按钮的事件处理程序
+`$("#camera").click(tax.displayFullPrice(125));`
+// 点击按钮时显示 "Full price = $134.38"
+
+# 如何使用变量存储外部函数 `this` 关键字的值
+
+```javascript
+var tax = {
+  rate: 0.075,
+  calc: function(sub) { return (sub + (sub * this.rate)).toFixed(2); },
+  displayFullPrice: function(subtotal) {
+    // 存储外部函数 'this' 关键字的值，以便内部函数
+    // 可以作为自身的 'this' 关键字来访问它。如果内部
+    // 函数被用事件处理程序，'this'是被点击的元素。
+    var that = this;
+    return function() {
+      alert("Full price for " + this.id + " = $"
+        + that.calc(subtotal));
+    };
+  }
+};
+```
+
+将内部函数作为按钮的事件处理程序
+`$("#camera").click(tax.displayFullPrice(125));`
+// 点击按钮时显示 "Full price for camera = $134.38"
+
+## 描述
+
+- 尽管内部函数可以访问包含它的外部函数的变量，但每个函数都有它们自己的 `this` 关键字。
+- 如果内部函数需要访问外部函数的 `this` 关键字，外部函数可以传递内部函数的 `bind()` 方法。正如你在图 17-16 中所示的，这设置了内部函数 `this` 关键字的值。
+- 有时，内部函数需要同时访问外部函数的 `this` 关键字和自身的 `this` 关键字。在这种情况下，外部函数可以将 `this` 的值存储在变量中。内部函数可以访问该变量。按照习惯，此类变量被命名为 "that"、self 或 "me"。
+- 每个函数也有自己的 `arguments` 属性。如果内部函数需要访问外部函数的 `arguments` 属性，外部函数可以将其存储在变量中。
+
+图 18-3 如何在闭包中使用 `this` 关键字
+
+# library slideshow.js
+
+```javascript
+var createSlideshow = function() {
+  // private variables and functions
+  var timer, play = true, speed = 2000;
+  var nodes = { image: null, cache: null };
+  var img = { cache: [1], counter: 0 };
+  var stopSlideShow = function() { clearInterval (timer); }
+  var displayNextImage = function() {
+    img.counter = ++img.counter % img.cache.length;
+    var image = img.cache[img.counter];
+    nodes.image.attr("src", image.src);
+    nodes.caption.text(image.title);
+  };
+  // public methods that have access to private variables and functions
+  return {
+    loadimages: function(slides) {
+      for (var i = 0; i < slides.length; i++) {
+        var image = new Image();
+        image.src = "images/" + slides[i].href;
+        image.title = slides[i].title;
+        img.cache.push( image );
+      }
+      return this;
+    },
+    startSlideShow: function() {
+      if (arguments.length == 2) {
+        nodes.image = arguments[0];
+        nodes.caption = arguments[1];
+      }
+      timer = setInterval(displayNextImage, speed);
+      return this;
+    },
+    createToggleHandler: function() {
+      var me = this; // store 'this', which is the object literal
+      return function() {
+        // 'this' is the clicked button; 'me' is the object literal
+        if ( play ) { stopSlideShow(); } else { me.startSlideShow(); };
+        this.value = ( play ) ? "Resume" : "Pause";
+        play = ! play; // toggle play flag
+      }
+    }
+  };
+}
+```
+
+# Description
+
+- 该库包含一个名为 `createSlideshow()` 的外部函数。它包含了几个变量和函数，这些在外部函数的内部函数中可用，但外部代码无法访问。换句话说，这些变量和函数是私有的。
+- `createSlideshow()` 函数返回一个包含三个方法的对象字面量。这三个方法是内部函数，引用了外部函数的私有状态。
+
+![](img/32b24cb9657418b8429a4117bd539786_572_0.png)
+
+# 主 JavaScript 文件
+
+图 18-6 显示了此版本幻灯片应用程序的主 JavaScript 文件。`ready()` 函数开始调用上图中的全局 `createSlideshow()` 函数来创建幻灯片对象。正如你记得的，该函数返回一个包含三个方法的对象，用于运行幻灯片。
+
+接下来，`ready()` 函数创建一个幻片对象数组，其中包含了幻灯片中图片的信息。之后，它调用幻灯片对象的 `createToggleHandler()` 方法，获取一个将作为播放/暂停按钮点击事件处理程序的函数。
+
+最后，`ready()` 函数链式调用幻灯片对象的两个方法。首先，它调用 `loadImages()` 方法并传入幻片对象数组。然后，它调用 `startSlideshow()` 方法，并传入用于显示幻灯片的 `image` 和 `span` 元素。
+
+在图中代码下方，你可以在 Chrome 开发者工具的“源代码”（Sources）面板的“监视表达式”（Watch Expressions）面板中看到幻灯片对象。注意，只有三个公共方法以及对象的原型对象是可见的。这意味着外部代码无法访问 `speed` 或 `nodes` 等变量，无法无法 `stopSlideShow()` 或 `displayNextImage()` 等函数。这意味着幻灯片库的用户无法覆盖或删除幻灯片对象正常运行所需的私有变量和函数。
+
+# 主 JavaScript 文件
+
+```javascript
+$(document).ready(function() {
+  // 创建幻灯片对象
+  var slideshow = createSlideshow();
+  var slides = [
+    {href:"release.jpg", title:"Catch and Release"},
+    {href:"deer.jpg", title:"Deer at Play"},
+    {href:"hero.jpg", title:"The Big One"},
+    {href:"bison.jpg", title:"The Roaming Bison"}
+  ];
+  $("#play pause").click( slideshow.createToggleHandler() );
+  slideshow.loadImages(slides).startSlideShow("#image"), $("#caption"));
+});
+```
+
+# 监视表达式面板中的幻灯片对象
+
+![](img/32b24cb9657418b8429a4117bd539786_574_0.png)
+
+# Description
+
+- 此代码调用了 `createSlideshow()` 函数并将返回的对象存储在变量 `name` 中。然后，它使用该对象的方法为播放/暂停按钮附加事件处理程序，设置幻灯片并启动幻灯片。
+- 你可以在 Chrome 开发者工具中检查幻灯片对象，发现只有 `createSlideshow()` 函数的三个方法对外部代码可用。因此，没有方法可以覆盖 `slideshowHandler` 的任何私有状态。
+
+# 如何使用立即调用函数表达式
+
+立即调用函数表达式 (IIFE) 在 JavaScript 应用中被频繁使用。在接下来的主题中，你将看到它们是如何工作的，以及它们为什么对模块模式至关重要。
+
+## 如何使用 IIFE 解决闭包循环问题
+
+如果你在循环中使用闭包，如果你不理解图 18-8 开始时的值，你可能会遇到问题。首先，内部函数通过引用访问其作用域链中的值。这意味着，如果外部变量的值发生变化，那么它在内部函数内部值也会随之变化。其次，函数中变量的值是在函数被调用时确定的，而不是在函数定义时确定的。
+
+图中的第一个示例说明了循环问题。在这里，一个 `onload` 事件处理程序开始创建一个网站名称数组，并将其存储在名为 `topSites` 的数组变量中。然后，它使用 `find()` 方法获取名为 `top_sites` 的 `div` 元素中的 `<a>` 元素。它将生成的数组存储在名为 `links` 的变量中。
+
+接下来，代码遍历 `topSites` 数组。在循环内部，它使用 `i` 的值从 `links` 数组中获取对应索引的 `<a>` 元素。然后，它使用 `topSites` 数组中当前元素的值将该元素的 `text` 属性设置为当前网站名称。最后，它为元素的 `onclick` 事件绑定了一个事件处理程序。该事件处理程序应该显示一条消息，指示用户点击了哪个链接。
+
+接下来的屏幕显示了页面上 `<a>` 元素的样子以及点击中间链接的结果。如预期的那样，`topSites` 数组中三个网站的名称显示了出来。但出乎意的是，当点击时，它们都显示“You clicked on Twitter”。
+
+这是为什么呢？`<a>` 元素的 `click` 事件处理程序是在 `ready()` 事件处理程序内部编写的，这意味着它是函数内部的函数。这就是为什么它可以访问在外部 `ready()` 函数中定义的 `i` 变量和 `topSites` 数组。但是，它是通过引用访问它们的。这意味着每次循环时，`i` 的值在外部 `ready()` 函数和内部的 `click()` 函数中都会发生变化。因此，当页面上的链接被点击时，`click()` 函数获取了 `i` 的当前值（即数组中的最后一个索引），并使用它来检索并显示网站名称。
+
+修复此问题的一种方法是重写代码，使其使用一个返回函数的函数。接下来的示例展示了如何实现。首先，它显示了一个名为 `createHandler` 的函数，它接受一个参数并返回一个函数。然后，在循环中调用 `createHandler()`，并传入 `topSites` 数组的当前值。因为调用了 `createHandler()`，`name` 的值被设置为当前网站名称。然后，由 `createHandler()` 函数返回的函数被设置为 `<a>` 元素的事件处理程序。
+
+修复此问题的另一种方法是重写代码以使用 IIFE（立即执行函数表达式），因为 IIFE 是一个普通函数，你可以在调用函数的括号中对其传递参数。在这种情况下，`topSites` 数组的当前值被传递给 IIFE，因此它将作为函数中的 `name` 参数使用。
+
+## 第 18 章
+
+## 如何创建和使用闭包、IIFE、模块模式和插件
+
+## 关于闭包还需要了解的知识
+
+- 内部函数通过引用访问其作用域链中的值。这意味着如果外部变量发生变化，它对于内部函数来说也会发生变化。
+- 函数中变量的值是在函数被调用时设置的，而不是在定义时设置的。
+
+## 这是如何影响循环中闭包的
+
+### 在循环中分配点击事件处理程序
+
+```javascript
+$(document).ready(function() {
+  var topSites = ["Google", "Facebook", "Twitter"];
+  var links = $("#topSites").find("a");
+  for (var i in topSites) {
+    $(links[i]).text(topSites[i]);
+    // 这是一个闭包，所以 i 的值是通过引用的并且可以改变。
+    // 当函数被调用时，i 的值将是它的最后一个值。
+    $(links[i]).click(function() {
+      alert("You clicked on " + topSites[i]);
+    });
+  }
+});
+```
+
+### 循环结果 – 所有链接显示最后一个值
+
+![](img/32b24cb9657418b8429a4117bd539786_578_0.png)
+
+### 如何通过调用返回函数的函数解决循环问题
+
+```javascript
+$(document).ready(function() {
+  /* topSites and links 变量在这里 */
+  var createHandler = function(name) {
+    return function() { alert("You clicked on " + name); };
+  }
+  for (var i in topSites) {
+    $(links[i]).text(topSites[i]);
+    $(links[i]).click(createHandler(topSites[i]));
+  }
+});
+```
+
+### 如何使用 IIFE 解决循环问题
+
+```javascript
+$(document).ready(function() {
+  /* topSites and links 变量在这里 */
+  for (var i in topSites) {
+    $(links[i]).text(topSites[i]);
+    $(links[i]).click(
+      function(name) {
+        return function() {
+          alert("You clicked on " + name);
+        }
+    )(topSites[i]); // 为 'name' 参数传递的值传递给 IIFE
+  }
+});
+```
+
+图 18-8 如何使用 IIFE 解决闭包循环问题
+
+## 如何使用模块模式
+
+模块模式是将相关的函数和变量组合到对象中的方法，有助于避免污染全局命名空间。例如，你可以创建一个处理幻灯片的模块。
+
+模块模式还允许创建从外部无法访问的私有变量和函数。这些通过提供的公共方法进行访问。
+
+模块模式通常用于库以提供清晰且一致的 API。它也使得代码更容易维护和测试，因为内部实现被隐藏了。
+
+在本章中，你将学习如何使用模块模式创建健壮的可重用代码。
+
+## 什么是单例？
+
+单例是一种确保类只有一个实例并为该实例提供全局访问点的设计模式。对于数据库连接池或配置管理器有用。
+
+在 JavaScript 中，你可以通过一个返回对象实例的 IIFE 来实现单例。这确保了对象只被创建一次并可以在程序范围内访问。
+
+模块模式经常用于实现单例，因为它提供了一种控制实例创建的方式。
+
+## 对象字量与闭包的优缺点
+
+| 类型 | 优点 | 缺点 |
+| :--- | :--- | :--- |
+| 对象字量 | 易于创建和使用；不需要闭包。 | 所有属性和方法都是公共的；对数据没有保护。 |
+| 闭包 | 创建私有状态；允许创建私有方法。 | 实现和理解可能更复杂。 |
+
+## 创建幻灯片的模块模式
+
+```javascript
+var slideshow = (function() {
+  // 私有变量和函数
+  var timer, play = true;
+  var nodes = { image: null, caption: null };
+  var img = { cache: [], counter: 0 };
+  var stopSlideShow = function() { ... }
+  var displayNextImage = function() { ... }
+  // 公共属性和方法
+  return {
+    speed: 2000,
+    loadImages: function(slides) { ... },
+    startSlideShow: function() { ... },
+    createToggleHandler: function() { ... }
+  };
+})(); // 调用 IIFE 创建对象
+```
+
+## 如何创建命名空间
+
+用作命名空间的对象字面量
+
+```javascript
+var my = {};
+```
+
+## 如何确保不覆盖现有的命名空间
+
+```javascript
+var myapp = myapp || {};
+```
+
+## 添加到 myapp 命名空间的单个幻灯片对象
+
+```javascript
+myapp.slideshow = (function() {
+  ...
+})(); // 调用 IIFE 创建对象
+```
+
+图 18-9 什么是模块模式
+
+## 如何扩展模块并使用访问器属性
+
+图 18-10 显示了如何扩展模块。图中的第一个示例通过将模块作为参数传递 IIFE，导入了上一个图中创建的 `myapp.slideshow` 模块。这样，IIFE 的 `mod` 参数就包含了 `myapp.slideshow` 对象。
+
+为了进行扩展，此 IIFE 在 `mod` 参数的 `myapp.slideshow` 对象上添加了一个名为 `changeSpeed` 的方法。`changeSpeed` 接收一个命名的速度，创建一个私有变量 `newSpeed`，并调用 `parseInt` 函数将该值转换为整数 `speed` 参数。然后，它将对象的 `speed` 属性设置为 `newSpeed` 值或默认值。最后，它返回 `this` 关键字的值，以便 `changeSpeed` 方法可以链式调用。
+
+与上一个图一样，这种模式允许你创建带有私有状态的方法。此外，新方法会在文件加载和 IIFE 运行后立即添加到模块中。这意味着，扩展现有模块的文件应该在创建该模块的文件之后、任何其他使用新方法的文件之前加载。
+
+一旦方法被添加到模块中，就可以像其他任何方法一样使用它。图中的第二个示例说明了这一点。在这里，`changeSpeed` 方法与 `startSlide` 方法进行了链式调用。
+
+将模块代码分发在多个文件中的一个缺点是，如果你想处理私有状态，就必须将其公开。例如，上一个图中的 `slideshow` 对象的属性是公开的，因此可以被此图中的代码修改。这会导致内部操作可能被覆盖或更改的情况。
+
+解决此问题的方法之一是使用访问器属性（accessor properties）。与标准属性不同，访问器属性并不是值的实际位置。相反，它包含了读取和写入属性数据的 `getter` 和 `setter` 函数。只有 getter 的访问器属性是只读属性，而只有 setter 的访问器属性是只写属性。
+
+你可以使用在图 17-11 中中学 `create()` 方法的第二个参数来创建访问器属性。该第二个参数接收单个对象，该对象包含一个或多个对象，这些对象包含了属性名称以及属性将使用的 getter 和 setter 函数。
+
+图中的最后一个示例显示了如何为 `slideshow` 对象添加一个名为 `speed` 的访问器属性。在这里，创建 `slideshow` 对象的 IIFE 代码包含一个 `speed` 变量和一个包含对象公共方法的原型对象。然后，用一个包含 `interval` 属性的 getter 和 setter 方法的对象编写了一个新属性。`getter` 返回私有变量 `speed` 的值，而 `setter` 仅在数据可用时才设置 `speed` 变量的值。这为 `slideshow` 对象的私有状态提供了有限访问，同时保护了私有状态。
+
+## 第 18 章 如何创建和使用闭包、IIFE、模块模式和插件
+
+### 使用 IIFE 扩展 slideshow 对象的示例
+
+```javascript
+(function(mod) {
+  mod.changeSpeed = function(speed) {
+    // 私有状态
+    var newSpeed = parseInt(speed);
+    // 设置幻灯片 - 如果数字无效则使用默认速度
+    this.speed = (isNaN(newSpeed) || newSpeed < 500) ? 2000 : newSpeed;
+    // 返回 'this' 以便方法可以链式调用
+    return this;
+  });
+})(myapp.slideshow); // 调用 IIFE；导入要扩展的模块
+```
+
+### 使用 slideshow 对象新方法的示例
+
+```javascript
+$('#change-speed').click(function() {
+  var ms = prompt("输入幻灯片速度（毫秒）。", "2000");
+  myapp.slideshow.changeSpeed(ms).startSlideshow();
+});
+```
+
+### 如何使用访问器属性提供私有变量的有限访问
+
+```javascript
+myapp.slideshow = (function() {
+  var speed = 2000;
+  var prototype = (...);
+  var properties = {
+    interval: {
+      get: function() { return speed; },
+      set: function(s) {
+        speed = (isNaN(s) || s < 500) ? 2000 : s;
+      }
+    }
+  };
+  // 创建并返回 slideshow 对象
+  return Object.create(prototype, properties);
+})(); // 调用 IIFE
+```
+
+## 描述
+
+- 要扩展模块，你使用 IIFE，并在调用 IIFE 时通过将其作为参数来导入要扩展的模块。
+- 上述第一个示例的缺点是，`slideshow` 对象必须将私有变量 `speed` 公开才能进行修改。为了解决这个缺点，你可以使用 `create()` 方法的第二个参数来创建访问器属性。
+- 访问器属性使用 `getter` 和 `setter` 函数来获取和设置私有变量的值。这样，你可以在这些函数中包含代码，限制外部对私有变量的操作，同时仍对其进行访问。
+- `create()` 方法的此第二个参数在旧版浏览器中无法正常工作，即使包含了图 1-17 中的 shim 和 shames 文件。
+
+![](img/32b24cb9657418b8429a4117bd539786_582_0.png)
+
+## 使用模块模式的幻灯片应用
+
+此主题对你在本章之前看到的幻灯片应用添加了两个更新。首先，它使用模块模式来创建 `slideshow` 对象。这样，只允许存在一个实例。其次，它为幻灯片的速度使用了访问器属性。图 18-11 使用模块模式的幻灯片应用 HTML。
+
+### HTML
+
+在 HTML 的头部部分，除了 jQuery 的 script 元素外，你可以看到三个 script 元素。首先，`library_slideshow.js` 文件包含创建命名空间以及模块本身的代码，因此加载。其次，`slideshow_enhancements.js` 文件包含扩展模块的代码，因此加载。第三，由于主文件使用第一个文件中创建并在第二个文件中扩展的模块，因此最后加载。
+
+HTML 的主体与你之前看到的 HTML 几乎相同。不同之处此版本有两个 ID 为 "change_speed" 和 "view_slides" 的新按钮。
+
+### 点击“更改速度”后的幻灯片应用
+
+![](img/32b24cb9657418b8429a4117bd539786_584_0.png)
+
+### HTML
+
+```html
+<head>
+<title>图片幻灯片</title>
+<link rel="stylesheet" href="slideshow.css">
+<script src="https://code.jquery.com/jquery-3.1.min.js"></script>
+<script src="library_slideshow.js"></script>
+<script src="slideshow_enhancements.js"></script>
+<script src="main.js"></script>
+</head>
+<body>
+<main>
+<h1>钓鱼类幻灯片</h1>
+<input type="button" id="pause" value="暂停">
+<input type="button" id="change_speed" value="更改速度">
+<input type="button" id="view_slides" value="查看幻片">
+<p><img src="release.jpg" id="image" alt=""></p>
+<p><span id="caption">钓获并放生</span></p>
+</main>
+</body>
+```
+
+## 幻灯片展示库
+
+图 18-12 显示了幻灯片库文件：这是第一个加载的文件，它包含了 `myapp` 命名空间的代码以及创建幻灯片对象的代码。它以一行创建命名空间的代码开头，随后是一个立即执行函数表达式（IIFE），它向该命名空间添加了一个幻灯片对象。
+
+IIFE 中的大部分代码与之前显示的代码相同，因此为了节省空间，在这里没有显示。与你在本章之前看到的幻灯片应用一样，IIFE 中的私有状态对 IIFE 返回的对象是可见。同样与之前的应用程序一样，IIFE 中的私有状态对外部代码不可用。
+
+这段代码与之前的代码的一个重要区别是，这段代码中的函数在文件加载后就会被调用。这样，就会创建一个幻灯片对象的单实例。此外，无法创建第二个对象实例。相反，再次加载此文件只会重新创建对象，而不是创建一个新对象。为 `myappslideshow` 编写一个新值将覆盖对象，而不是创建一个新对象。
+
+另一个区别是，这段代码添加了两个名为 `interval` 和 `images` 的访问器属性。这允许外部代码操作 `speed` 和 `img.cache` 值，尽管它们都被保护在私有状态中。
+
+`interval` 属性同时具有 getter 函数和 setter 函数。getter 函数简单的返回 `speed` 变量的值。相比之下，setter 函数的代码执行了两件事：首先，它检查接收到的参数是否为数字且大于 500 毫秒。如果是，它将此值分配给 `speed` 变量。如果不是，它会给 `speed` 变量分配一个默认值。这保护了在用户输入意外数据时幻灯片的内部运行机制。
+
+其次，setter 函数调用了私有函数 `stopSlideShow()`。正如你在第 7 章中学到的，如果你想更改间隔，就需要停止定时器并重新启动它。
+
+`images` 属性只有一个 getter 函数。因此，它是只读的。与 `interval` 属性不同，`images` 属性并不返回 `img.cache` 变量本身。这是因为如果这样做，幻灯片中的图像可能会被删除或替换，从而影响幻灯片的操作。相反，使用 `slice()` 方法返回一个新数组。这样，任何外部代码访问的都是数组的拷贝而不是数组本身。
+
+你可以看到，访问器属性赋予了你很大的灵活性。它们允许你对私有状态提供某些公共访问，同时保护该状态并执行幻灯片正常运行所需的任何其他任务。
+
+## library_slideshow.js 文件
+
+```javascript
+// 创建应用程序使用的命名空间
+var myapp = myapp || {};
+
+// 创建幻灯片对象并将其添加到命名空间中
+myapp.slideshow = (function() {
+    // 私有变量和函数
+    var timer, play = true, speed = 2000; // speed 是私有的
+    var nodes = { image: null, caption: null };
+    var img = { cache: [], counter: 0 };
+    var stopSlideShow = function() { clearInterval(timer); };
+    var displayNextImage = function() { ... };
+    var setPlayText = function(btn) { ... };
+    // 用于公共方法的原型对象
+    var prototype = {
+        loadImages: function(slides) { ... },
+        startSlideShow: function() { ... },
+        createToggleHandler: function() { ... }
+    };
+    // 属性描述符对象
+    var properties = {
+        interval: {
+            get: function() { return speed; },
+            set: function(s) {
+                speed = (isNaN(s) || s < 500) ? 2000 : s;
+                stopSlideShow();
+            }
+        },
+        images: { // 只读属性，因为只有 getter
+            get: function() {
+                return img.cache.slice(0); // 返回数组的拷贝
+            }
+        }
+    };
+    // 创建并返回幻灯片对象
+    return Object.create(prototype, properties);
+})(); // 调用 IIFE
+```
+
+## 描述
+
+- 幻灯片库创建 `myapp` 命名空间，然后使用 IIFE 和模块模式将幻灯片对象添加到其中。IIFE 中的私有变量和函数对它返回的对象的方法可见，但对外部代码不可见。
+- IIFE 在文件加载后立即被调用。这样，就会创建一个幻灯片对象的单实例。
+- 私有的 `speed` 和 `img.cache` 变量只能通过作为 `create()` 方法第二个参数传递的对象所创建的访问器属性来访问。这在保护幻灯片对象内部功能的同时，允许对这些私有变量进行公共访问。
+
+![](img/32b24cb9657418b8429a4117bd539786_586_0.png)
+
+## 幻灯片增强库
+
+图 18-13 显示了幻灯片增强库。这是第二个加载的库，它包含了增强幻灯片对象的代码。
+
+增强库由一个 IIFE 组成。IIFE 的第一行包含一个名为 `mod` 的参数。当函数被调用时，该方法接收 `myapp.slideshow` 对象。
+
+IIFE 通过向接收到的幻灯片对象添加两个方法来对其进行增强。第一个 `changeSpeed()` 使用了 `interval` 属性。第二个 `displaySlides()` 使用了 `images` 属性。
+
+## library_slideshow_enhancements.js 文件
+
+```javascript
+(function(mod) {
+  mod.changeSpeed = function(speed) {
+    this.interval = parseInt(speed);
+    return 'this';
+  }
+  mod.displaySlides = function() {
+    var slides = this.images.map(function (current) {
+      var pieces = current.src.split("/");
+      return pieces[pieces.length - 1];
+    });
+    return slides.join(", ");
+  }
+})(myapp.slideshow);
+```
+
+## 主文件
+
+```javascript
+$(document).ready(function() {
+  var slideshow = myapp.slideshow;
+  var slides = [
+    {href:"deer.jpg", title:"Catch and Release"},
+    {href:"deer.jpg", title:"Deer at Play"},
+    {href:"hero.jpg", title:"The Big One!"},
+    {href:"bison.jpg", title:"Roaming Bison"}
+  ];
+  $("#pause").click(slideshow.changeToggleHandler());
+  $("#change_speed").click(function() {
+    var ms = prompt("当前速度为 ", 
+      slideshow.interval + " 毫秒。\n"
+      "请输入以毫秒为单位的新速度。", 
+      2000));
+    slideshow.changeSpeed(ms).startSlideShow();
+  });
+  $("#view_slides").click(function() {
+    alert(slideshow.displaySlides());
+  });
+  slideshow.loadImages(slides).startSlideShow("#image", "#caption");
+});
+```
+
+## 描述
+
+- 扩展库为现有的幻灯片对象添加了两个新方法。它通过 IIFE 和导入幻灯片对象来实现这一点。
+- `changeSpeed()` 方法更改幻灯片的速度。这是因为 `interval` 属性允许对私有 `speed` 变量进行有限访问。此外，由于 `interval` 属性在接收到错误数据时使用默认值，因此 `changeSpeed()` 方法不需要任何验证。
+- `displaySlides()` 方法显示幻灯片中图像文件的逗号分隔列表。这是因为 `images` 属性提供了 Image 对象的数组。
+- 主文件使用别名来操作 `myapp` 命名空间中的幻灯片对象。
+- “change_speed” 按钮点击事件的处理程序从用户处获取新速度，并更改 `changeSpeed()` 方法和 `startSlideShow(i)` 方法。
+
+图 18-13 幻灯片增强库和主 JavaScript 文件
+
+# 如何使用模块模式创建 jQuery 插件
+
+jQuery 的特性之一是它提供了一个 API（应用程序编程接口），让你能够创建自己的插件。例如，有时你可能找不到一个实现你所需求的插件，或者你不信任它的来源，或者它的功能远超了你的需求。在这些情况下，构建你自己的插件是有意义的。既然你现在已经掌握了在书中学到的 JavaScript 技能，你已经拥有了创建你自己的 jQuery 插件的所有技能。
+
+# 插件的结构
+
+jQuery 库使用了你刚刚学习的模块模式；`jQuery` 对象在你的网页中是可用的，不需要被手动调用或创建。这就是为什么核心 jQuery 库的 `<script>` 元素必须在任何依赖于它的内容之前被包含。
+
+这也意味着你可以使用 IIFE（立即调用函数表达式）来保护 `jQuery` 对象。图 18-14 中的示例展示了它是如何运作的。
+
+第一个示例展示了如何使用 IIFE 导入 `jQuery` 对象以便对其进行修改。在这里，jQuery 库在 IIFE 的末尾的括号内被导入，并赋值给函数的 `$` 参数。这不仅是使用模块模式的标准，而且具有防止与其他使用 `$` 符号的库和插件冲突的好处。
+
+在 IIFE 内部，`$` 指向 `jQuery` 对象的原型对象。原型对象是你创建插件时添加方法的地方。此外，为每个插件只向 `$.fn` 对象添加一个方法也是一种良好的做法。
+
+第二个示例展示了如何让你的插件支持链式调用（chainable）。它是通过返回 `this` 关键字来实现的。第三个示例展示了如何通过将代码放在 `jquery(each)` 方法内部，让你的插件能够遍历所有选中的元素。例如，如果 jQuery 选择器选择了页面上所有的 `<a>` 元素，那么代码位于 `(each)` 方法内部的插件将将其代码应用于每一个 `<a>` 元素上。使用这种技术的插件支持隐式迭代（implicit iteration）。
+
+第四个示例展示了如何结合第二个和第三个示例中的编码实践，来编写支持链式调用和隐式迭代的插件。这之所以能够实现，是因为 `(each)` 方法返回了 `this`；返回 `(each)` 方法的结果等同于以 `"return this"` 结束你的插件代码。这正是专业人士使用代码插件的方法。
+
+此图显示了插件文件的命名规范以及插件的 API 标准。正如你所学到的，你在插件函数内部使用 `(each)` 方法来支持隐式迭代，并返回 `this` 关键字以保留链式调用。除此之外，你应该确保所有方法定义都以分号结尾，如果你的插件提供了选项（options），则提供合理的默认值。最重要的是，如果你的插件将由他人使用，它应该有良好的文档说明。
+
+# jQuery 插件的模块模式
+
+一个导入 `jQuery` 对象并在其原型上添加一个方法的 IIFE
+
+```javascript
+(function($) {
+  $.fn.pluginName = function() {
+    // 插件代码
+  }
+})(jQuery);
+```
+
+一个返回 `this` 关键字以便进行链式调的方法
+
+```javascript
+(function($) {
+  $.fn.pluginName = function() {
+    // 插件代码
+    return this;
+  }
+})(jQuery);
+```
+
+一个使用 `each()` 方法以便遍历所有选中元素的方法
+
+```javascript
+(function($) {
+  $.fn.pluginName = function() {
+    this.each(function() {
+      // 插件代码
+    });
+    return this;
+  }
+})(jQuery);
+```
+
+大多数专业人士编写插件的方式
+
+```javascript
+(function($) {
+  $.fn.pluginName = function() {
+    return this.each(function() {
+      // 插件代码
+    });
+  }
+})(jQuery);
+```
+
+# 插件的命名规范 pluginName.js
+
+# 插件的 API 标准 plugins
+
+- 插件应该支持隐式迭代。
+- 插件应该通过返回选中的对象来保留链式调用。
+- 插件定义应该以分号结尾。
+- 插件应该提供合理的默认值。
+- 插件应该有良好的文档。
+
+## 描述
+
+- jQuery 使用模块模式，因此插件增强了 `jQuery` 对象。
+- 对于许多插件，它们位于 `each()` 方法中。
+- 插件执行后，`this` 会恢复到原始状态。
+
+# 如何编写一个插件
+
+现在你已经知道了插件的结构，你可以使用图 18-15 所示的 `each()` 方法来编写一个简单的插件。正如你所学到的，你在插件函数内部使用 `(each)` 方法来支持隐式迭代，并返回 `this` 关键字以保留链式调用。此外，你应该确保所有方法定义都以分号结尾，如果你的插件提供了选项（options），则提供合理的默认值。最重要的是，如果你的插件将由他人使用，它应该有良好的文档说明。
+
+# 为插件添加选项
+
+为了让插件更有用，你通常会为它提供选项。这样做，你可以使用图 18-16 所示的编码技术。
+
+首先，在插件方法中编写一个 `options` 参数。如图所示。该参数将接收用户作为对象字面量设置的所有选项。正如图 18-14 中的插件 API 标准所指出的，插件应该为选项提供默认值。这样，如果用户不需要，就不需要设置。为了提供默极值，你可以使用所示的 `extend` 方法。在这里，一个变量 `o` 存储了选项。
+
+`extend()` 方法的第一个参数为选项提供了默认属性。第二个参数是传递给插件的参数，即对象字面量。然后当此方法执行时，用户选项与第一个参数中的默认选项合并，用户会替换任何同名的默认选项。结果是变量包含了每个选项的一个属性，该属性要么是默认值，要么是用户设置来覆盖默认值的值。
+
+然后，变量 `o` 被用于 `mouseover()` 和 `mouseout()` 事件处理程序中。例如，`mouseover()` 函数中的代码将 `o.mouseoverClass` CSS 类传递给 `addClass()` 方法。这样，如果用户传递了不同的 CSS 类来使用，插件将使用它。否则，插件将使用默认的 `mouseover` 类。
+
+# jquery-highlight.js 中的 highlight 插件
+
+```javascript
+(function($) {
+  $.fn.highlightMenu = function() {
+    return this.each(function() {
+      var items = $(this).find("a");
+      items.mouseover(function() {
+        $(this).addClass("mouseover");
+      });
+      items.mouseout(function() {
+        $(this).removeClass("mouseover");
+      });
+    });
+  };
+})(jQuery);
+```
+
+# 使用 highlight 插件的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("nav").highlightMenu();
+});
+```
+
+# 插件的 HTML
+
+```html
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="faq.html">FAQs</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+</nav>
+```
+
+# 插件的 CSS
+
+```css
+ul {
+  list-style-type: none;
+}
+ul li {
+  border: 2px solid blue;
+  float: left;
+  margin-right: 10px;
+}
+nav li a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  width: 120px;
+  padding: .5em;
+  color: green;
+}
+:hover {
+  background-color: blue;
+  color: white;
+}
+```
+
+# 带有选项的 highlightMenu 插件
+
+```javascript
+(function($) {
+  $.fn.highlightMenu = function(options) {
+    var o = $.extend({
+      "mouseoverClass" : "mouseover",
+      "mouseoutClass" : "mouseout",
+      "useMouseout" : true
+    }, options);
+    return this.each(function() {
+      var items = $(this).find("a");
+      items.mouseover(function() {
+        $(this).addClass(o.mouseoverClass);
+        if (o.useMouseout) {
+          $(this).removeClass(o.mouseoutClass);
+        }
+      });
+      items.mouseout(function() {
+        $(this).removeClass(o.mouseoverClass);
+        if (o.useMouseout) {
+          $(this).addClass(o.mouseoutClass);
+        }
+      });
+    });
+  };
+})(jQuery);
+```
+
+
+
+# 使用 highlightMenu 插件并设置其选项的 jQuery
+
+```javascript
+$(document).ready(function() {
+  $("nav").highlightMenu({
+    useMouseout: false
+  });
+});
+```
+
+## 描述
+
+- 为插件提供选项，你需要为插件编写一个参数来接收用户设置的选项。在上面的示例中，该参数命名为 `options`。
+- 要设置默认选项，你使用 `$.extend()` 方法，它会将第一个参数（一个对象字面量）中的属性与第二个参数（由调用语句传递给插件的对象字面量）中的属性合并。这个对象字面量包含了用户的选项。
+
+![图片](img/32b24cb9657418b8429a4117bd539786_594_0.png)
+
+# 使用 blackjack 插件的 Blackjack 应用程序
+
+为了向你展示一个更真实的 jQuery 插件示例，本节介绍了一个 Blackjack（或称 21 点）纸牌游戏应用程序。其用户界面见图 18-17，它使用了一个名为 `blackjack` 的 jQuery 插件来提供游戏功能。
+
+正如你所看到的，该插件的代码说明了在本章以及上一章中你学到的许多技能。例如，它使用了对象字面量、构造函数以及具有私有状态的对象。由于它是基于 jQuery 插件的，因此它使用了 IIFE（立即调用函数表达式）和模块模式。虽然这需要花费一些精力，但通过学习这段代码直到理解它，你将学到很多。
+
+# HTML 和主 JavaScript 文件
+
+在该应用程序的 HTML 部分，你可以看到三个 `script` 元素。第一个用于 jQuery CDN，第二个用于 `blackjack` 插件文件的压缩版本。最后一个 `script` 元素用于主 JavaScript 文件。它们按此顺序编写，是因为主 JavaScript 文件依赖于插件文件，而插件文件又依赖于 jQuery。
+
+在 `head` 部分还包含两个用于该应用程序所需的 CSS 文件的 `link` 元素。第一个用于 `blackjack` 插件的 CSS 文件。虽然这里没有显示，但它为插件提供的 HTML 布局提供了样式规则。第二个是应用程序的主 CSS 文件。最好是按此顺序编写 `link` 元素，这样你就可以覆盖你想要插件的 CSS 样式。
+
+HTML 的 `body` 包含一个 `main` 元素，其中包含一个 `h1` 元素和一个 `id` 属性为 `blackjack` 的 `div` 元素。这就是该 blackjack 应用程序配合 blackjack 插件工作所需的所有 HTML。
+
+Blackjack 应用程序的主 JavaScript 文件以 jQuery `ready()` 函数开头。然后，激活插件的 jQuery 代码通过 `id` 选择 `blackjack` `div` 并调用插件的 `blackjack` 方法，传入一个设置玩家名称的选项。
+
+在接下来的几幅图中，你会看到插件的代码分布在多个文件中以便于处理。然后，最后一张图展示了如何使用最小化软件将多个文件中的代码合并到插件所使用的单个文件中。
+
+# 第 18 章 如何创建和使用闭包、IIFE、模块模式和插件 577
+
+# 使用 blackjack 插件的 Blackjack 应用程序
+
+![图片](img/32b24cb9657418b8429a4117bd539786_596_0.png)
+
+# HTML
+
+```html
+<head>
+  <title>Play Blackjack</title>
+  <link href="jquery.blackjack.css" rel="stylesheet" />
+  <link rel="stylesheet" href="main.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="jquery.blackjack.min.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Play Blackjack</h1>
+    <div id="blackjack"></div>
+  </main>
+</body>
+```
+
+# 主 JavaScript 文件
+
+```javascript
+$(document).ready(function() {
+  $("#blackjack").blackjack({
+    playerName: "Mary"
+  });
+});
+```
+
+## 描述
+
+- Blackjack 应用程序使用自定义 jQuery 插件来添加 blackjack 游戏的功能。
+- 应用程序的 HTML 文件链接到插件所需的 CSS 和 JavaScript 文件，并包含一个 `id` 属性为 `blackjack` 的 `div` 元素。主 JavaScript 文件随后将插件挂载到该 `div` 元素并向插件传递了一些选项。
+
+图 17-17 Blackjack 应用程序的 HTML 和主 JavaScript 文件
+
+# 插件的牌组和手牌文件
+
+blackjack 插件的私有状态图 18-17 显示了牌组文件。它通过一个 IIFE 来创建一个私有状态。`resetCards` 函数会创建一个数组。在这里，`suits` 变量包含了字符串 `c`、`h` 和 `s`。通过 `for` 循环，将 `suits` 中的每个元素推入数组。每当 `resetCards` 函数被调用时，它都会初始化牌组。`needsShuffling` 方法检查牌组长度是否小于 10，如果是，则返回 true。`shuffle` 方法通过调用 `resetCards` 来重置牌组。`deal` 方法使用 `Math.random()` 随机选择一个索引，并使用 `splice` 从牌组中移除一张牌。
+
+# blackjack.deck.js 文件
+
+```javascript
+var deck = (function() {
+  var resetCards = function() { // 私有函数
+    var cards = [], suits = ["c","h","s"];
+    for (var s in suits) {
+      for (var i=1; i<=13; i++) cards.push(i + "-" + suits[s]);
+    }
+    return cards;
+  };
+  return {
+    cards: resetCards(),
+    needsShuffling: function() {
+      return cards.length < 10;
+    },
+    shuffle: function() {
+      cards = resetCards();
+      alert("Shuffling...");
+    },
+    deal: function() {
+      var i = Math.floor(Math.random() * cards.length);
+      var card = cards.splice(i, 1);
+      return card;
+    }
+  };
+})(); // IIFE
+```
+
+# blackjack.hand.js 文件
+
+```javascript
+var Hand = function() {
+  this.cards = [];
+  this.total = 0;
+};
+
+Hand.prototype.hasAce = function(curr) {
+  return this.cards.some(function(curr) {
+    return (curr.split("-")[0] === "1") ? true : false;
+  });
+};
+
+Hand.prototype.add = function(card) {
+  this.cards.push(card);
+  var total = this.cards.reduce(function(prev, curr) {
+    var num = parseInt(curr.split("-")[0]);
+    if (num > 10) return prev + 10;
+    else // 设置 prev 参数初始值为零
+    return prev + num;
+  }, 0);
+  if (total <= 11 && this.hasAce()) { total = total + 10; }
+  this.total = total;
+};
+
+Hand.prototype.hasJack = function() {
+  if (this.cards.length == 2 && this.total == 21) return true;
+};
+
+Hand.prototype.busted = function() {
+  return (this.total > 21) ? true : false;
+};
+
+Hand.prototype.hit = function() { // 仅适用于庄家
+  if (this.total < 17) return true;
+  else if (this.total == 17 && this.hasAce()) { return true; }
+  else return false;
+}
+```
+
+顺便提一下，由于 `mustHit()` 方法仅适用于庄家，此库可以编码为一个仅包含前四个方法的 `Hand` 对象类型。然后，你可以编写一个继承 `Hand` 对象类型的 `Dealer` 对象类型，并添加 `mustHit()` 方法。
+
+# blackjack 插件的游戏文件
+
+图 18-19 显示了黑杰克游戏的库文件。由于只需要一个游戏对象且不需要保护任何私有状态，因此它被编码为一个对象字面量。
+
+游戏对象有三个属性：`dealer`、`player` 和 `balance`。`dealer` 和 `player` 属性包含 `Hand` 实例，而 `balance` 属性是一个数值，用于跟踪玩家当前的余额。
+
+游戏对象有五个方法：`deal()`、`hit()`、`playerWins()`、`dealerWins()` 和 `updateBalance()`。`deal` 方法首先在牌组需要洗牌时调用牌组对象的 `shuffle()` 方法。然后，它将新的 `Hand` 对象实例存储在 `dealer` 和 `player` 属性中。这替换了这些属性中可能持有的任何之前的 `Hand` 实例。最后，它调用牌组对象的 `deal()` 方法，为庄家和玩家各发两张牌，从玩家开始并交替进行。
+
+`hit()` 方法接受一个名为 `hand` 的参数，其值表示玩家或庄家是否获得另一张牌。如果参数 `hand` 的取值为 `dealer`，则该方法使用 `dealer` 属性的 `add()` 方法和牌组对象的 `deal()` 方法向庄家的手添加一张牌。否则，它使用 `player` 属性的 `add()` 方法和牌组对象的 `deal()` 方法向玩家的手添加一张牌。
+
+`playerWins()` 和 `dealerWins()` 方法的工作原理相似。每个方法都使用 `Hand` 对象的 `busted()` 方法和 `total` 属性来判断庄家或玩家是否赢得了当前手牌。
+
+`updateBalance()` 方法接受一个名为 `amount` 的参数并将其加到 `balance` 属性上。不过，它首先检查玩家是否获得了黑杰克（Blackjack）。如果是，它会调整 `amount` 参数以反映 3:2 的赔率，然后再将其添加到 `balance` 中。
+
+# jquery.blackjack.game.js 文件
+
+```javascript
+var game = {
+    dealer: new Hand(),
+    player: new Hand(),
+    balance: 0,
+    deal: function() {
+        if (deck.needsShuffling()) { deck.shuffle(); }
+        this.dealer = new Hand();
+        this.player = new Hand();
+        this.player.add(deck.deal());
+        this.dealer.add(deck.deal());
+        this.player.add(deck.deal());
+        this.dealer.add(deck.deal());
+    },
+    hit: function(hand) {
+        if (hand.toLowerCase() === "dealer") {
+            this.dealer.add(deck.deal());
+        }
+        else { this.player.add(deck.deal()); }
+    },
+    playerWins: function() {
+        if (this.dealer.busted()) || (!this.player.busted() && this.dealer.total < this.player.total) {
+            return true;
+        }
+        else { return false; }
+    },
+    dealerWins: function() {
+        if (this.player.busted()) || (!this.dealer.busted() && this.player.total < this.dealer.total) {
+            return true;
+        }
+        else { return false; }
+    },
+    updateBalance: function(amount) {
+        if (this.player.hasBlackJack()) {
+            amount = amount + (amount * 0.50);
+        }
+        this.balance = this.balance + amount;
+    }
+};
+```
+
+图 18-19 blackjack 插件的游戏库文件
+
+# blackjack 插件的主文件
+
+图 18-20 显示了 blackjack 插件的主文件。该文件非常长，因此为了简洁起见，删除了诸如设置标签文本和预加载卡牌图像等 jQuery 代码。不过，你可以在本章的下载文件中查看所有这些内容。
+
+如你所见，blackjack 插件使用了 IIFE（立即调用函数表达式）、模块模式以及你在图 18-14 中学到的 API 标准。IIFE 内部的代码首先开始向 jQuery 对象的原型对象上添加一个名为 `blackjack` 的方法。`blackjack` 方法接受 `options` 参数，并为这些选项提供默认值，这些值是庄家的名字、玩家的名字以及下注金额。
+
+之后，它将插件代码放在 `each()` 方法内部并返回 `each()` 方法的结果。`each()` 方法中的代码开始生成插件使用的 HTML。再次，为了节省空间，大部分内容已删除，因此你可以在随附的下载文件中查看它。一旦生成了 HTML，它就会使用 `blackjack` 方法附加的元素的 `html()` 方法将其添加到页面中。在 Blackjack 应用程序中，就是 `id` 属性为 `blackjack` 的 `div`。
+
+接下来，插件创建了一个名为 `showResults()` 的内部函数。该函数显示所有牌（包括庄家的底牌），显示两只手的总值，并禁用“Hit”（要牌）和“Stand”（停牌）按钮。然后，它使用 `game` 对象的方法来判断谁赢得了手牌，并相应地通知用户更新玩家的余额。
+
+最后，插件为 Deal、Hit 和 Stand 按钮的点击（click）事件绑定了事件处理程序。Deal 事件处理程序开始调用 `game` 对象的 `deal()` 方法。然后，它使用 `game` 对象的 `dealer` 和 `player` 属性检查其是否获得了黑杰克。如果是，处理程序调用 `showResults()`。否则...
+
+# 如何压缩并合并插件文件
+
+在最后几幅图中，你已经看到黑色杰克插件的代码被保留在四个不同的 JavaScript 文件中。正如你所学到的，这样的代码更容易开发和维护，而且还能促进代码的复用。例如，牌组对象（deck object）可以在扑克或纸牌插件中重用。
+
+然而，当 jQuery 插件的代码只包含在一个文件中时，使用起来会更方便。此外，让开发者更容易阅读和理解 JavaScript 文件的注释和空白字符可能会增加文件的大小和下载时间。
+
+为了解决这些问题，你可以使用代码混淆工具（minification tool）来移除 JavaScript 代码中的空白、注释和换行符，以减小文件大小。大多数此类工具还将局部变量名重命名为单个字符，并允许你将多个文件合并为一个文件。
+
+# 第 18 章 如何创建和使用闭包、IIFE、模块模式和插件 585
+
+# 流行的 JavaScript 混淆工具
+
+| 在线工具 | 下载工具 |
+|---|---|
+| javascript-minifier.com | JSMin (http://crashford.com/javascript/jsmin) |
+| jscompress.com | YUI Compressor (http://yui.github.io/yuicompressor/) |
+| Grunt (http://gruntjs.com/) | Grunt (http://gruntjs.com/) |
+
+# 上传了四个插件文件的 jscompress
+
+![图片](img/32b24cb9657418b8429a4117bd539786_604_0.png)
+
+# 生成的 jquery.blackjack.js 文件中的部分 JavaScript 代码
+
+```javascript
+"use strict";var deck=function(var a=function(var a=[];["c","d","h","s"] for(var c in b)for(var d=1;d<13;d++)a.push(d+"-"
+```
+
+- 保留在独立库中的代码更容易开发和维护。然而，下载和使用保留在一个文件中的插件更方便。此外，JavaScript 文件中的空白和注释会增加其大小和下载时间。
+- 混淆工具允许你将多个文件压缩并合并为单个文件。
+
+图 18-21 如何压缩并合并插件文件
+
+# 观点
+
+本章介绍了一些在任何编程衡量上都具有挑战的概念和技能，其中许多是 JavaScript 编程特有的。现在，如果你将这些概念和技能应用到你自己的应用程序和插件中，你就为现实世界的 JavaScript 编程做好准备。
+
+# 术语
+
+- 闭包 (closure)
+- 作用域链 (scope chain)
+- 在作用域内 (in scope)
+- 在作用域外 (out of scope)
+- 私有状态 (private state)
+- 立即调用函数 (immediately invoked function)
+- 表达式 (IIFE)
+- 模块模式 (module pattern)
+- 模块 (module)
+- 单例 (singleton)
+- 命名空间 (namespace)
+- 名称冲突 (name collision)
+- 别名 (alias)
+- 扩展模块 (augment a module)
+- 导入模块 (import a module)
+- 访问器属性 (accessor property)
+- getter 函数 (getter function)
+- setter 函数 (setter function)
+- 只读属性 (read-only property)
+- 只写属性 (write-only property)
+- 应用程序编程接口 (API)
+- 隐式迭代 (implicit iteration)
+- 混淆 (minification)
+
+# 总结
+
+- *作用域链*（scope chain）指的是对象可见且可使用的内容。对象可以访问它自己的作用域以及包含它的每个对象的作用域。
+- 当内部函数引用外部函数作用域内的一个或多个对象时，就会创建一个*闭包*（closure）。只要内部函数的引用存在，外部函数的变量就会一直处于*作用域内*（in scope）。
+- 闭包可用于创建*私有状态*（private state），保护对象的内部函数不受外部代码的干扰。
+- 每个函数都有它自己的 `this` 关键字。内部函数可以通过使用 `bind()` 方法或将外部函数的 `this` 值存储在变量中来访问外部函数的 `this`。
+- 立即调用函数表达式（IIFE）一次性创建并调用函数。
+- *命名空间*（namespace）是某些（通常是相关的）对象的分组。在 JavaScript 中，你通过向空对象字面量添加对象来创建命名空间。然后，你可以在代码中使用*别名*（aliases）来缩短长名称。
+- *模块模式*（module pattern）允许你创建一个具有私有状态的对象实例，即*单例*（singleton）。它结合了对象字面量和闭包的优点。要创建或*扩展*（augment）一个*模块*（module），你需要使用 IIFE。
+- 访问器属性使用函数来读取和写入属性值。getter 函数读取值，setter 函数写入值。
+- jQuery 库使用了模块模式，因此你使用 IIFE 创建扩展该库的插件。
+- jQuery 提供了一个用于创建插件的 API（应用程序编程接口）。
+- 你可以使用混淆工具将多个文件压缩并合并为单个文件。
+
+# 第 18 章 如何创建和使用闭包、IIFE、模块模式和插件 587
+
+## 练习 18-1 创建一个 Reveal 模式
+
+使用你的文本编辑器或 IDE 打开练习的 HTML 和 JavaScript 文件，它们位于 `exercises\18` 文件夹。
+
+在 `tasklist.js` 文件中，修改代码使 `tasklist` 变量赋值为 IIFE 返回的对象而不是对象字面量。简单的方法是编写一个空的 IIFE，并复制当前的对象字面量使其由 IIFE 返回。
+
+测试应用程序以确保其工作正常。
+
+## 练习 18-2 使用模块模式更新任务列表
+
+使用你的文本编辑器或 IDE 打开练习的 HTML 和 JavaScript 文件，它们位于 `exercises\18` 文件夹。
+
+运行应用程序并添加几个任务。然后清除浏览器。
+
+在 `task_list.js` 文件的 `ready()` 函数开头，添加此行代码：`tasklist.storage = null;`
+
+在 Chrome 中测试此更改，并注意当页面加载时你输入的任务没有显示。然后，按 F12 弹出 Chrome 开发者工具，并点击 Console 查看错误信息。应用程序已损坏。
+
+删除你在第 3 步中添加的语句，并测试应用程序以确保其恢复工作。
+
+# 附录 A
+
+## 为本书配置你的电脑
+
+本附录展示了如何安装我们推荐的用于编辑和测试书中网页及应用程序的软件。这包括适用于 Windows 和 Mac OS 用户的文本编辑器 Aptana Studio 3，以及适用于 Windows 和 Mac OS 用户的 Chrome 和 Firefox 浏览器。本附录还将向你展示如何下载和安装本书的源代码。
+
+在阅读这些描述时，请记住大多数网站都在不断更新。因此，本附录中的某些步骤自本书出版以来可能发生了变化。尽管如此，这些步骤仍然是安装软件的良好指南。
+
+| 如何安装 Chrome 和 Firefox | 590 |
+| 如何安装 Aptana Studio 3 | 592 |
+| 在 Windows 系统上 | 592 |
+| 在 Mac OS 系统上 | 592 |
+| 如何安装和使用本书的源代码 | 594 |
+| 对于 Windows 用户 | 594 |
+| 对于 Mac OS 用户 | 596 |
+
+## 如何安装 Chrome 和 Firefox
+
+当你开发 JavaScript 应用程序时，你需要在应用程序用户可能使用的所有浏览器上对其进行测试。对于商业应用程序，这通常包括 Chrome、Internet Explorer、Edge、Firefox、Safari 和 Opera。然后，如果应用程序在其中一个浏览器上无法运行，你就需要对它进行调试。
+
+尽管如此，在你完成书中的练习并操作应用程序时，你可以在两个浏览器上测试你的应用程序。Windows 用户应该使用 Internet Explorer 或 Edge 加上 Chrome，Mac OS 用户应该使用 Safari 和 Chrome。然后，如果你需要调试应用程序，可以使用第 5 章中描述的 Chrome 开发者工具。
+
+图 A-1 中的第一个步骤是下载和安装 Chrome。作为该步骤的一部分，我们建议将 Chrome 设为默认浏览器。然后，你可以按照该图中的第二个步骤下载并安装 Firefox，以便用它进行你想要做的任何额外测试。如果你想安装 Opera 或使用 Safari，可以使用类似的步骤。
+
+请注意，如果你打算使用 Aptana Studio 3 编辑你的网页和应用程序，你应该在安装 Aptana 之前安装任何你将使用的浏览器。这样，Aptana 将自动提供在这些浏览器中运行应用程序的功能。
+
+### 下载 Chrome 的网址地址
+
+https://www.google.com/intl/en-US/chrome/browser/
+
+### 如何安装 Chrome
+
+1. 转到上面的网址地址。
+2. 点击下载 Chrome 按钮。
+3. 查看显示的 Google Chrome 服务条款。然后，指示你是否想向 Google 自动发送使用统计和崩溃报告。
+4. 点击接受并安装按钮。
+5. 当系统询问你想要对 `ChromeSetup.exe` 执行什么时，点击保存按钮。可执行文件将下载到你的电脑上。
+6. 当文件下载完成后，点击运行按钮开始安装。
+7. 如果系统询问你是否允许程序对你的电脑进行更改，点击是（按钮）。
+8. 当 Chrome 启动并显示欢迎页时，你可以播放视频以获取有关将 Chrome 设为默认浏览器等选项的信息。你也可以使用设置菜单来自定义 Chrome。
+9. 要开始使用 Chrome，请点击新标签页显示 Google 首页。
+
+### 下载 Firefox 的网址地址
+
+http://www.mozilla.com
+
+### 如何安装 Firefox
+
+1. 转到上面的网址地址。
+2. 点击免费下载按钮。
+3. 将 exe 文件保存到你的 C 盘。
+4. 运行 exe 文件并对生成的对话框做出响应。
+
+## 描述
+
+- 由于 Chrome 是今天最流行的浏览器，我们建议你在该浏览器中测试为本书完成的所有练习。
+- 如果你有 Windows 系统，Internet Explorer 或 Edge 已经安装在上面，你应该用它们都进行测试。
+- 如果你有一台 Mac，Safari 已经安装在上面，你应该用它进行测试。你无法安装 Internet Explorer 或 Edge，因为它们无法在 Mac 上运行。
+- 由于 Firefox、Safari 和 Opera 也是流行的浏览器，你可能也想安装它们。要安装 Safari 和 Opera，你可以使用类似于上面安装 Firefox 的步骤。
+
+## 如何安装 Aptana Studio 3
+
+如果你已经习惯了可以编辑 HTML、CSS 和 JavaScript 的文本编辑器，你可以继续使用它。但否则，我们建议你使用 Aptana Studio 3。它是一个免费编辑器，提供了许多功能，可以在 Windows 和 Mac OS 系统上运行，且第 1 章介绍了关于它的快速教程，将帮助你快速上手。在安装 Aptana Studio 3 之前，请确保按照图 A-1 所示安装任何你想要使用的浏览器。
+
+### 在 Windows 系统上
+
+图 A-2 展示了如何在 Windows 系统上下载和安装 Aptana Studio 3。请注意，在 Windows 10 系统上安装 Aptana Studio 3 之前，你必须安装一个名为 Node.js 的 JavaScript 框架。
+
+### 在 Mac OS 系统上
+
+图 A-2 展示了如何在 Mac OS 系统上下载和安装 Aptana Studio 3。
+
+### 下载 Aptana Studio 3 的网址地址
+
+http://www.aptana.com/products/
+
+### 在 Windows 系统上安装 Aptana Studio 3
+
+1. 转到上面的网址地址。
+2. 点击下载按钮。
+3. 运行安装文件并按照提示操作。
+4. 这将在电脑上安装 Aptana Studio 3。
+
+### 在 Mac OS 系统上安装 Aptana Studio 3
+
+1. 转到上面的网址地址。
+2. 点击下载按钮。
+3. 打开下载的文件并按照提示操作。
+4. 这将在电脑上安装 Aptana Studio 3。
+
+## 如何安装和使用本书的源代码
+
+接下来的两幅图展示了如何安装和使用本书的源代码。一张适用于 Windows 用户，另一张适用于 Mac OS 用户。
+
+### 对于 Windows 用户
+
+图 A-3 展示了如何在 Windows 系统上安装本书的源代码。这包括书中应用程序的源代码、练习的初始文件以及练习的解决方案。
+
+完成此步骤后，书籍程序、练习和解决方案将位于图中第一组三个文件夹中。因此，当你做练习时，使用此文件夹中的子文件夹和文件：
+
+```
+\murach\javascript_jquery\exercises
+```
+
+但你在此文件夹中有这些子文件夹和文件的备份：
+
+```
+\murach\javascript_jquery\exercises
+```
+
+这样，你可以通过将文件从第二个文件夹复制到第一个文件夹来恢复练习文件到原始状态。
+
+做练习时，你可能想从书籍应用程序中复制代码到你正在处理的文件中。这样做很容易，应用程序位于此文件夹：
+
+```
+\murach\javascript_jquery\book_apps
+```
+
+当你完成练习后，你可能想将你的解决方案与我们的进行对比，你可以在此文件夹找到它：
+
+```
+\murach\javascript_jquery\solutions
+```
+
+# Murach 网站
+
+www.murach.com
+
+# 应用程序、练习题和解决方案的 Windows 文件夹
+
+```
+\murach\javascript_jquery\book_apps
+\murach\javascript_jquery\exercises
+\murach\javascript_jquery\solutions
+```
+
+# 用于练习的 Windows 文件夹
+
+```
+\javascript_jquery\exercises
+```
+
+# 如何在 Windows 系统上下载并安装源代码
+
+1. 访问 www.murach.com，进入 Murach's JavaScript and jQuery (第3版)页面。
+2. 向下滚动页面直到看到“FREE downloads”（免费下载）标签页并点击它。然后，点击 Windows exe 文件的 DOWNLOAD NOW（立即下载）按钮。这将会将一个名为 `gpu3_all.exe` 的安装文件下载到您的硬盘上。
+3. 使用 Windows 资源管理器在硬盘上找到该 exe 文件。然后，双击此文件。这会将书籍应用程序、练习题和解决方案的源码安装到上方所示文件夹中。安装完成后，exe 文件会将 exercises 文件夹复制到 `\javascript_jquery`，因此你有两份练习题副本。
+
+# 如何恢复练习题文件
+
+- 将其从 `\murach\javascript_jquery\exercises` 中的子文件夹复制到 `\javascript_jquery\exercises` 对应的子文件夹中
+
+## 描述
+
+- 你下载的 exe 文件将练习题存储在两个不同的文件夹中。这样，你可以使用一个文件夹中的文件进行练习，但你可能拥有一个备份副本，以防你想恢复练习题的初始文件。
+- 当你完成章节末的练习时，你可能想从书籍应用程序中复制代码到你正在处理的文件中。这很容易，因为所有的应用程序都在 `book_apps` 文件夹中。
+- 在 `solutions` 文件夹中，你可以查看练习题的答案。
+
+# Mac OS 用户
+
+图 A-4 显示了如何在 Mac OS 系统上安装本书的源码。这包括书中应用程序的源码、练习题的初始文件以及练习题的答案。
+
+完成此操作后，书籍应用程序、练习题和答案将位于图中列出的三个文件夹中。在开始练习之前，你应该将练习题从
+
+```
+documents\murach\javascript_jquery
+```
+
+复制到
+
+```
+documents\murach\javascript_jquery
+```
+
+这样，你就可以通过从第一个文件夹复制文件到第二个文件夹，将练习题恢复到原始状态。
+
+在进行练习时，你可能想从书籍应用程序中复制代码到你正在处理的文件。这很容易，因为应用程序位于此文件夹：
+
+```
+documents\murach\javascript_jquery\book_apps
+```
+
+当你完成一个练习后，你可能想将你的答案与我们的进行对比，你可以在此文件夹中找到：
+
+```
+documents\murach\javascript_jquery\solutions
+```
+
+当你在练习中遇到困难时，也可能想查看答案。这将帮助你解决遇到的问题，以便你继续进展。无论如何，答案都是学习过程中的重要部分。
+
+# Murach 网站
+
+www.murach.com
+
+# 用于练习的 Mac OS 文件夹
+
+```
+documents\murach\javascript_jquery\book_apps
+documents\murach\javascript_jquery\exercises
+documents\murach\javascript_jquery\solutions
+```
+
+# 用于练习的 Mac OS 文件夹
+
+```
+documents\javascript_jquery\exercises
+```
+
+
+
+# 如何在 Mac OS 系统上下载并安装源代码
+
+1. 访问 `www.murach.com`，进入 *Murach's JavaScript and jQuery (第3版)* 页面。
+2. 向下滚动页面直到看到“FREE downloads”（免费下载）标签页并点击它。然后，点击任何系统 zip 文件的 DOWNLOAD NOW 按钮。这将会将一个名为 `jqu3_allfiles.zip` 的安装文件下载到你的硬盘上。
+3. 将此文件移动到用户主目录下的 Documents 文件夹。
+4. 使用 Finder 进入你的 Documents 文件夹。
+5. 双击 `jqu3_allfiles.zip` 文件以提取书籍应用程序、练习题和答案的文件夹。将在你的文档文件夹中创建一个名为 `murach\javascript_query` 的文件夹，其中包含 `book_apps`、`exercises` 和 `solutions`。
+6. 通过将 `exercises` 文件夹从 `documents\murach\javascript_query` 复制到 `documents\javascript_query` 来创建两个练习题文件夹副本。
+
+# 如何恢复练习题文件
+
+- 将其从子文件夹 `documents\murach\javascript_query\exercises` 复制到 `documents\javascript_query\exercises` 对应的子文件夹中
+
+## 描述
+
+- 此过程将文件存储在两个不同的文件夹中。这样，你可以使用其中一个文件夹中的文件进行练习，但同时也拥有一个备份副本。
+- 如果你想从书籍应用程序中复制代码到你正在处理的练习文件中，你可以在 `book_apps` 文件夹中找到所有的应用程序。
+- 在 `solutions` 文件夹中，你可以查看每个章节末练习题的答案。
+
+# 索引
+
+`$.ajax()` 方法 (Ajax), 354-357
+`$.each()` 方法 (Ajax), 344-345,350-351
+`$.extend()` 方法, 354-375
+`$.get()` 方法 (Ajax), 344-345,348-349
+`$.set()`
+`$.getJSON()` 方法 (Ajax), 344-345,350-351
+`$.post()` 方法 (Ajax), 344-345,348-349
+
+`abs()`, 376-377
+Accessor 属性, 562-563
+Accordion 组件 (jQuery UI), 324-325
+Account Profile, 426-429
+action 属性 (form), 177-178,220-291
+`addClass()` (jQuery), 242-245
+添加数组元素, 102-103
+Ajax, 336-367
+`alert()`, 272-281
+获取数据从 Flickr, 358-367
+`for`, 154-155
+AND 运算符, 88-89,408-409
+`animate()` (jQuery), 272-274
+高级语法, 260-281
+chain, 274-275
+Animation (jQuery), 272-281
+Animation queue, 274-275
+匿名函数, 118-119
+API, 336-367
+Flick, 356-367
+jQuery, 570
+Application (JavaScript), 426-429
+Account Profile, 576-583
+Blackjack (plugin), 576-583
+Count Down, 394-397
+Custom Email List, 132-135
+FAQs, 172-173
+Highlight Menu, 572-575
+Image Swap, 206-209
+Invoice, 410-413
+Miles Per Gall, 78-79
+Miles Per Gall (form) controls, 130-131
+Miles Per Gall (loop and validation), 96-97
+Miles Per Gall (objects), 506-509
+PIB, 380-383
+Register, 184-187
+Register (table), 192-195
+Slide Show (closures), 550-555
+Slide Show (JavaScript), 206-209
+Slide Show (module pattern), 564-569
+Task List (array), 480-481
+Task List (cookies), 452-455
+Task List (objects), 530-537
+Task List (with storage), 458-459
+Task List 2.0 (2D array), 488-491
+Test Scores, 80-81, 100-101
+Test Scores (array), 106-107
+trips (function), 520-521
+Trips (objects), 514-517
+Tutorial, 440-443
+Application (jQuery), Carousel, 282-285
+Email List, 238-241
+FAQs, 228-229,250-251
+FAQs with effects, 264-265
+Image Rollover, 256-257
+Image Swap, 252-255
+Slide Show with effects, 266-270
+Validation with JavaScript, 300-303
+Application panel (Chrome), 460-461
+Application Programming Interface (见 API)
+Application service, 8-9
+`apply()` (function), 528-529
+aptana Studio, 348-350
+auto-completion, 42-43
+change colors, 40-41
+close file, 40-41
+create project, 38-39
+error marker, 42-43
+HTML validation, 158-159
+import project, 38-39
+open file, 40-41
+project, 38-39
+run application, 44-45
+save file, 44-45
+start new file, 40-41
+syntax highlighting, 42-43
+warning marker, 42-43
+Argument, 118-119
+Arguments property (function), 522-523
+Arithmetic expression, 66-67
+Arithmetic operator, 66-67
+Array, 102-105, 466-492
+associative, 484-488
+constructor, 466-467
+element, 102-103, 466-467
+handling, 102-105
+index, 102-103, 466-469
+length, 102-103, 466-469
+methods, 474-479
+multi-dimensional, 486-487,488-491
+object, 102-103, 498-499
+Array of arrays, 486-487,488-491
+Assignment operator, 64-66
+
+## 拼接运算符
+## 邮件控制
+## 601
+
+拼接运算符, 70-71
+条件表达式, 86-87
+条件运算符, 406-407
+`confirm()`, 112-113
+控制台面板（Chrome 开发者工具）, 34-35, 150-151
+`console.log()`, 154-155
+构造函数, 510-511
+构造函数, 510-511
+内容分发网络 (CDN), 230-231
+内容管理系统 (CMS), 358
+`content`语句, 460-461
+Cookies, 445-450-461
+倒计时应用, 394-397
+计数器（for 循环）, 94, 105-104
+`create()`
+- 继承, 526-527
+- 对象, 518-521
+跨浏览器兼容性, 36-37
+ECMAScript, 12
+跨域安全策略, 354-355, 358-359
+CSS (层叠样式表), 16-17
+- 属性声明, 30-31
+- 选择器, 28-29
+- 样式规则, 30-31
+`css` 方法 (jQuery), 244-245
+CSS3 用于验证的伪类, 294-295
+Cycle 2 插件, 316-317
+`delay()` 方法 (jQuery), 276-277
+delete 运算符
+- 数组, 468-469
+- 对象, 502-503
+删除
+- 数组元素, 468-469
+- 对象, 502-503
+后代节点, 164-165
+开发者工具 (Chrome), 34-35, 150-153
+对话框小组件 (jQuery UI), 328-329
+直接属性, 512-513
+disabled, 114-115
+- div 元素, 22-23
+除以, 374-375
+DOCTYPE 声明, 14-15
+文档接口, 168-169
+文档对象, 76-77-112
+文档对象模型（见 DOM）
+`document.cookie` 对象, 446-447
+document (jQuery UI), 324-325
+DOM (文档对象模型), 18, 164-165 规范, 164-165
+HTML 规范, 170-171
+脚本化, 18-19, 194-196
+在 Chrome 中查看更改, 190-191
+域名, 32-33
+点运算符, 72-73
+do-while 循环, 92-93
+do-while 子句, 92-93
+下载 (jQuery UI), 320-321
+动态网页, 8, 9
+
+## D
+
+数据类型, 62-63
+数据值, 10-116, 177-270, 291-298, 303
+数据值（调试）, 152-153
+数据库服务器, 8
+Date 构造函数, 388-389
+Date 控制, 292-293
+Date 方法, 390-393
+Date 对象, 55-116, 388-393, 498-499
+日期时间选择器 (jQuery UI), 330-331, 488-491
+dblclick 事件, 126-127
+`dblclick` 方法 (jQuery), 246-247
+调试, 142-143
+小数值, 62-63
+声明
+- DOCT, 14-15
+- 变量, 64-65
+`decodeURIComponent(函数)`, 446-447
+递减运算符, 66-67
+默认操作（事件), 202-203
+
+## E
+
+`each()` 方法 (jQuery), 244-245, 570-571
+缓动 (jQuery UI), 278-281
+ECMA, 12
+ECMAScript
+- 兼容性, 36-37
+- 规范, 12-13
+- 严格模式, 124-125
+ECMAScript 3, 518-519
+ECMAScript 5 (`create()` 方法), 518-519
+ECMAScript 2015+, 376-377
+效果方法 (jQuery), 262-265
+元素
+- 数组, 102-103, 466-467
+- 表单, 290-291
+- HTML (见 HTML 元素)
+元素接口, 168-169
+元素节点 (DOM), 164-165
+元素面板 (Chrome), 190-191
+- else 子句, 80-91
+- else if, 90-91
+邮件控制, 292-293
+## 邮件应用
+
+- JavaScript, 132-135
+- jQuery, 238-241
+嵌入 JavaScript, 52-53
+嵌入样式, 26-27
+空字符串, 26-63
+`encodeURIComponent(函数)`, 446-447
+等号运算符, 402-403
+错误对象, 414-417
+错误层结构, 416-417 
+错误, 142-145
+转义字符, 420-421
+换行, 76-77
+转义序列, 70-71
+事件（控制）, 126-127, 182-183
+事件处理器, 110-113, 126-128
+事件 jQuery, 236-247
+事件方法 (jQuery), 236-237
+`blur()`, 298-299
+`change()`, 236-237, 246-247
+`click()`, 236-247
+`dblclick()`, 236-247
+`focus()`, 298-299
+`hover()`, 246-247
+`mouseenter()`, 246-247
+`mouseout()`, 246-247
+`mouseover()`, 246-247
+`off`, 248-249
+`on()`, 248-249
+`one()`, 248-249
+`preventDefault()`, 246-247
+`ready()`, 236-237, 246-247
+`select()`, 298-299
+快捷键, 246-247
+`submit()`, 298-299
+`trigger()`, 248-249
+事件对象, 202-203, 246-247
+`every()` 方法, 476-477
+异常, 145, 414-415
+异常处理, 414-417
+对象, 62-63
+幂运算符, 376-377
+表达式
+- 算术, 66-67
+- 条件, 86-87
+可扩展标记语言 (XML), 338-339, 342-343, 348-349
+外部 JavaScript 库, 52-53
+外部样式, 26-27
+`fadeOut` (jQuery), 262-263
+`fadeTo` (jQuery), 262-263
+`fadeToggle` (jQuery), 262-263
+Full, 404-405
+常见问题解答 (FAQs), 172-175, 250-251
+jQuery, 228-229
+jQuery 效果, 264-265
+## 字段（控制）
+文件名, 32-33
+`filter()`, 476-479
+`finally` 子句, 414-415
+`find` (jQuery), 244-245
+`finish` (jQuery), 276-277
+firstChild 属性, 166-167
+数组中的第一个, 474-475
+Flicker API, 388-395
+浮点数算术（问题）, 144-145
+浮点值, 62-63, 70-71
+`floor()`, 376-379
+流式编码, 524-525
+`fn` 方法 (jQuery), 570-571
+事件代码, 126-127
+`event()` 方法 (jQuery), 298-299
+`focus()`, 114-115
+控制, 102-103
+jQuery, 234-235, 298-299
+for 属性, 24-25
+for 循环, 94-95, 100-104
+for 数组, 104-105
+for 语句, 94-95, 100-104
+for 数组, 104-105, 470-471, 472-473
+`forEach` (方法), 476-477
+for 语句（数组）, 472-473
+表单 (jQuery), 290-303
+表单元素, 176-181, 182-183
+表单方法, 176-183
+forward (历史对象), 438-439
+回调, 262-263
+`decodeURIComponent(函数)`, 446-447
+`encodeURIComponent(函数)`, 446-447
+函数声明, 120-121
+函数表达式, 118-121
+函数对象, 498-499, 522-523
+未来值, 98-99
+开发者工具, 150-153, 460-461
+Chrome, 34-35
+工厂函数, 518-521
+`fadeIn` (jQuery), 262-263
+get 方法 (表单), 177-178, 290-291, 340-341
+get (Date 对象), 390-393
+`getAttribute` (方法), 168-169
+`getDate` (方法), 116-117
+`getElementById` (方法), 112-113
+`getElementsByClassName` (方法), 168-169
+`getElementsByTagName` (方法), 168-169
+`getByTagName()` 方法, 168-169
+`getItem()` (本地存储), 456-457
+`getMonth()` 方法, 116-117
+getters 函数, 556
+全局对象, 72-75, 112-113
+全局作用域, 544-547
+全局变量, 122-123, 124-125
+问题, 144-145
+`go()` (历史对象), 438-439
+Google Auto Stack, 336-337
+
+## I
+
+id 属性, 24-25
+ID 选择器, 28-29
+标识符 (JavaScript), 58-59
+恒等运算符, 402-403
+IE 兼容性问题, 36-37
+if 子句, 90-91
+if 语句, 90-91
+IIFE (立即执行函数表达式), 556-563, 570-571
+图片翻滚, 10-11
+图片翻滚应用 (jQuery), 256-257
+图片切换, 10-11
+JavaScript, 206-309
+查询, 252-255
+图片（预加载）, 204-205
+立即执行函数表达式 (IIFE), 556-563, 570-571
+隐式迭代, 570-571
+导入模块, 362-563
+在代码中, 544-445
+包含库, 504-505
+递增运算符, 66-67
+索引
+- 数组, 102-103, 466-467
+`indexOf` 方法, 116-117, 384-385, 474-475
+无穷大, 374-375
+继承, 326-527
+DOM HTML 规范, 170-171
+从对象类型, 512-513
+对象, 498-499
+初始化对象, 510-511
+内部函数, 544-545
+`innerHTML` 方法, 188-189
+实例...的, 510-511
+整数, 62-63
+接口, 164-165
+document, 168-169
+DOM HTML 规范, 170-171
+元素, 168-167
+节点, 166-167
+Internet, 4-5
+Internet Explorer（见 IE）
+Internet 服务供应商 (ISP), 4-5
+间隔计时器, 212-213
+局域网, 4-5
+发票应用, 410-413
+`isArray()` 方法, 474-475
+`isNaN()` 方法, 86-87, 374-375
+
+## H
+
+处理器（事件）, 110-113
+硬性返回, 178-179
+`hasAttribute` 方法, 168-169
+`hide()` (jQuery 插件), 244-245, 262-263
+Highlight 菜单, 572-575
+History 对象, 438-439
+`hover()` 方法 (jQuery), 246-247
+HTML (层叠标记语言), 7, 14-15
+脚本元素 (jQuery), 310-311
+HTML 属性, 24-25
+autocomplete, 294-295
+autofocus, 292-293
+- class, 24-25
+- for, 24-25
+- id, 24-25
+- 方法, 290-291
+- name, 24, 290-291
+novalid, 294-295
+placeholder, 292-293
+required, 294-295
+title, 24, 294-295
+HTML 元素, 14
+div, 22-23
+link, 26-27, 320-321
+script, 230-231, 262-263, 320-321
+span, 22-23
+HTML 验证, 158-159
+anchor, 4-5
+属性 for, 294-295
+兼容性, 36-37
+控件, 292-293
+语义化元素, 20-221
+HTTP (传输协议), 6, 7
+request, 6-11
+response, 6-11, 444-445
+
+## J
+
+JavaScript, 10-11
+关键字, 58-59
+布尔数据类型, 62-63
+new, 102-103
+注释, 60-61
+this (JavaScript), 176-177
+常见错误, 144-145
+this (jQuery), 250-251
+控制语句, 90-95
+
+## L
+
+data, 62-71
+Date 对象, 55-56
+LAN (局域网), 4-5
+嵌入, 52-53, 54-55
+lastChild, 162-167
+外部, 52-53
+数组中的最后一个, 474-475
+标识符, 58-59
+命名规范, 58-59
+Length (数组), 102-103, 466-467, 468-469
+数字类型, 62-63
+length 属性, 56-57
+原始数据类型, 62-63
+array, 102-103
+排序单词, 56-57
+String 对象, 116-117, 384-385
+语句, 56-57
+string 数据类型, 62-63
+Library, 504-505
+Lightbox 插件, 312-313
+语法, 56-61
+link 元素, 26-27
+variable, 64-65
+jQuery UI, 318-321
+JavaScript 应用（组件）, 14-19
+JavaScript 引擎, 10-11
+numeric, 64-65
+JavaScript 错误, 34-35
+正则表达式, 418-419
+JavaScript 函数, 104-107
+string, 64-65
+JavaScript 对象, 112-119
+Load 事件, 126-129
+JavaScript 对象 (JSON), 13, 338-339,
+load (方法), 344-345, 346-350-31
+JSONP (带填充的 JSON), 345-355, 358-359
+局域网 (LAN), 4-5
+JavaScript 属性 (location), 72-73
+局部作用域, 544-545
+JavaScript shim, 36-37
+本地存储, 456-467, 460-461
+JavaScript 对象, 34-35
+局部变量, 122-123
+JavaScript 语句, 64-65
+Location 对象, 436-437
+赋值, 64-65
+location 属性, 72-73
+do-while, 92-93
+逻辑错误, 142-143
+for, 94-105, 100-104
+逻辑运算符, 88-89, 408-409
+if, 90-91
+for 数组, 470-471, 472-473
+while, 92-93
+方法, 474-475, 478-479
+jQuery, 226-229
+map (方法), 476-479
+事件处理器, 236-237
+Math 对象, 376-377
+事件方法, 236-237
+max (方法), 376-377
+包含一个页面, 233-251
+media 属性 (link 元素), 26-27
+方法, 234-235
+Member, 340-341
+对象链, 234-235
+meta 元素 (charset), 14-15
+插件, 308-317
+releases, 230-251
+abs (this), 376-377
+selectors, 232-233, 242-243, 296-297
+
+## 方法 (JavaScript)
+
+## 方法 (jQuery) 605
+
+- `clear(本地存储)`, 456-457
+- `clearInterval()`, 212-213
+- `clearTimeout()`, 210-211
+- `concat(数组)`, 474-475, 478-479
+- `concat(字符串)`, 384-385
+- `confirm()`, 112-113
+- `console.log()`, 154-155
+- `create(Object)`, 518-521
+- `every()`, 476-479
+- `filter()`, 476-479
+- `floor()`, 376-377
+- `focus()`, 114-115, 182-183
+- `forEach()`, 476-479
+- `forward(对象)`, 438-439
+- `getMethods(Date 对象)`, 390-393
+- `getAttribute()`, 168-169
+- `getDate()`, 116-117
+- `getElementById(Id)`, 112-113
+- `getElementsByClassName(Name)`, 168-169
+- `getElementsByName(Name)`, 168-169
+- `getElementsByTagName(Tag)`, 168-169
+- `getFullYear()`, 116-117
+- `getItem(本地存储)`, 456-457
+- `getMonth()`, 116-117
+- `go(History 对象)`, 438-439
+- `getHTML(数组)`, 168-169
+- `indexOf(Array 对象)`, 474-475
+- `indexOf(String 对象)`, 116-117, 384-385
+- `innerHTML()`, 188-189
+- `isNaN()`, 367-375
+- `animate()`, 474-475, 478-479
+- `lastIndexOf(Of)`, 474-475
+- `map()`, 476-479
+- `max()`, 376-377
+- `min()`, 376-377
+- `parse()`, 212-213
+- `parseInt()`, 112-113
+- `pop()`, 474-475, 478-479
+- `pow()`, 376-377
+- `print()`, 72-73
+- `prompt()`, 72-73
+- `push()`, 474-475, 478-479
+- `pushState(History 对象)`, 438-439
+- `random()`, 376-377
+- `reduce()`, 476-477
+- `reduceRight(对象)`, 436-437
+- `reload(对象)`, 436-437
+- `removeAttribute()`, 168-169
+- `removeItem(本地存储)`, 456-457
+- `replace(对象)`, 436-437
+- `replaceState(History 对象)`, 438-439
+- `reset(表单)`, 185-186
+- `reverse()`, 474-475
+- `round()`, 376-377
+- `set Methods(Date 对象)`, 390-393
+- `setAttribute()`, 168-169
+- `setInterval()`, 212-213
+- `setItem(本地存储)`, 456-457
+- `setTimeout()`, 210-211
+- `shift()`, 474-475
+- `slice()`, 474-475, 478-479
+- `some()`, 476-477
+- `sort()`, 474-479
+- `splice()`, 474-475
+- `split()`, 482-483
+- `sqrt()`, 376-377
+- `submit(表单)`, 182-183
+- `substr()`, 116-117, 384-385
+- `substring()`, 116-117, 384-387
+- `test(正则表达式)`, 418-419
+- `dateString()`, 116-117, 390-391
+- `toFixed()`, 114-115, 374-375
+- `toLowerCase()`, 474-475
+- `toLowerCase()`, 116-117, 384-387
+- `toString()`, 474-475, 478-479
+- `toString(Date 对象)`, 390-391
+- `toString(Number 对象)`, 374-375
+- `timeString()`, 390-391
+- `toUpperCase()`, 116-117, 384-385
+- `us()`, 474-475
+- `write()`, 112-113
+- `writer()`, 112-113
+- 方法(jQuery), 234-235
+- `ajax(Ajax)`, 354-355
+- `ajax(Ajax)`, 355-
+- `each(数组)`, 344-345, 350-351
+- `end()`, 574-575
+- `get(Ajax)`, 344-345, 348-349
+- `getJSON(Ajax)`, 344-345, 350-351
+- `post(Ajax)`, 344-345, 348-349
+- `addClass()`, 244-245
+- `animate()`, 274-270, 280-281
+- `attr()`, 244-245
+- `blur()`, 298-299
+- `change()`, 298-299
+- `css()`, 244-245
+- `delay()`, 276-277
+- `each()`, 244-345, 570-571
+- `delay()`, 262-263
+- `fadeOut()`, 262-263
+- `fadeToggle()`, 262-263
+- `find()`, 244-245
+- `flush()`, 276-277
+- `fn()`, 570-571
+- `focus()`, 234-235, 298-299
+- `hide()`, 244-245, 262-263
+- `html()`, 244-245, 344-347
+- `load(Ajax)`, 344-347
+- `next()`, 234-235, 244-245
+- `prev()`, 244-245
+- `preventDefault()`, 254-255
+- `removeClass()`, 244-245
+- `select()`, 298-299
+- `serialize(Ajax)`, 352-353
+- `serializeArray(Ajax)`, 352-353
+- `show()`, 244-245, 262-263
+- `slideDown()`, 262-263
+- `slideToggle()`, 262-263
+- `stop()`, 276-277
+
+## 方法 (jQuery) (续)
+
+- `submit()`, 234-235, 298-299
+- `text()`, 234-235
+- `toggle()`, 262-263
+- `toggleCheck()`, 234-245
+- `trim()`, 296-297
+- `val()`, 234-235-296
+- 方法(对象), 72-73, 498-501
+- method属性(表单), 177-178, 290-291
+- 方法(原型), 512-513
+- Migrate plugins, 230-231
+- Miles Gallon 应用, 78-79
+- form controls, 130-131
+- loop and validation, 96-97
+- objects, 506-509
+- `min()` 方法, 376-377
+- Minification tool, 584-585
+- for(plugin), 584-585
+- Modal dialog, 328-323
+- Module parser, 560-563
+- Modulus 对象, 66-67
+- mouseover 方法(jQuery), 246-247
+- mouse event, 126-127
+- mouseout event, 126-127
+- mouseout 方法(jQuery), 246-247
+- mouseover event, 126-127
+- mouseover 方法(jQuery), 246-247
+- 多维数组, 486-487, 488-491
+- Node interface, 166-167
+- nodeValue 属性, 166-167
+- normalize css stylesheet, 36-37
+- script element, 54-55
+- NOT 运算符, 88-89, 408-409
+- validate属性(HTML5), 294-295
+- Number, 374-375
+- number control, 292-293
+- Number 数据类型, 62-63
+- Number 对象, 114-115, 498-499
+- methods, 374-375
+- properties, 374-375
+- Numeric literal, 64-65
+- Numeric value, 64-65
+- Object, 72-73, 112-119
+- Date, 116-117
+- document, 112-113
+- instance, 498-499
+- number, 114-115
+- regular expression, 418-419
+- String, 116-117
+- Textbox, 114-115
+- window, 72-113
+- Object (浏览器)
+- jXHR, 354-355
+- XHR 对象, 336-337, 340-343
+- XMLHttpRequest, 336-337, 340-343
+- Object charts, 74-115
+- jQuery, 234-235
+- Object literal, 500-501
+- Object object, 498-499
+- Object type, 498-499, 510-511
+- Object visibility, 544-545
+- `off` 方法(jQuery), 248-249
+- `one` 方法(jQuery), 248-249
+- blur event(control), 182-183
+- change event(control), 182-183
+- click event(control), 182-183
+- double event(control), 182-183
+- event 方法(jQuery), 248-249
+- One-time timer, 210-211
+- focus event, 182-183
+- select event(control), 182-183
+- tag, 16
+- arithmetic, 66-67
+- assignment, 64-65
+- binary, 406
+- compound assignment, 70-71
+- conditional, 406-407
+- quality, 402-403
+- name attribute, 24-25
+- form, 177-178, 290-291
+- collision, 560-561
+- Namespace, 560-563
+- naming conventions, 58-59
+- plugins, 376-377
+- NaN, 74-75, 112-113, 374-375
+- Native object type, 498-499
+- Nested arrays, 486-487
+- Nested if statements, 90-91
+- Nested objects, 500-501
+- Navigator, 12
+- Network, 4-5
+- new keyword, 102-103
+- Date object, 116-117
+- Native object type, 498-499
+- Object instance, 510-511
+- New line class, 76-77
+- `next()` 方法(jQuery), 234-235, 244-245
+- nextElementSibling(Node interface), 166-167
+- Node (DOM), 164-165
+- adding, 188-191
+- removing, 188-191
+
+## 运算符
+
+- identity, 402-403
+- logical, 88-89, 408-409
+- relational, 86-87, 408-409
+- ternary, 406
+- unary, 406
+- length(string), 102-103, 116-117, 384-385
+- location(window 对象), 72-73
+- own, 512-513
+- OR 运算符, 88-89, 408-409
+- precedence
+- arithmetic operators, 66-67
+- logical operators, 88-89
+- Out of scope, 544-445
+- Outer function, 544-545
+- Overriding methods of prototype, 512-513
+- Own property, 512-513
+- PI (Math 对象), 376-377
+- read-only, 562
+- value(control), 114-115, 178-181
+- write-only, 562
+- Property(Node interface), 166-167
+- Property(object), 72-73, 498-501
+- Property declaration(CSS), 30-371
+- Prototype, 32-33
+- Prototypal language, 512-513
+- Prototype, 510-513
+- Prototype inheritance, 512-513
+- Prototype object, 510-513
+- `push()` 方法, 474-475, 478-479
+- `pushState()` 方法(History 对象), 438-439
+
+## P
+
+- Parameter, 723, 118-119
+- Parent, 164-165
+- parentNode 属性, 166-167
+- `parseFloat()` 方法, 112-113
+- `parseInt()` 方法, 74-75, 112-113
+- Path, 32-33
+- Pattern regular expression, 294-295, 418-419
+- pattern attribute(HTML), 294-295
+- Persistent cookie, 444-447
+- PI (Math 对象), 376-377
+- PI 应用, 380-383
+- placeholder attribute(HTML), 292-295
+- Plugin(jQuery), 294-295
+- blackjack, 318-317
+- combining, 584-385
+- Cycle, 210-211
+- Highlight, 574-575
+- ListBox, 312-313
+- naming conversions, 570-571
+- migrate, 230-231
+- `pop()` 方法, 474-475, 478-479
+- post 方法, 177-178, 290-291
+- `pow()` 方法, 376-377
+- pre-element, 76-77
+- `prev()` 方法(jQuery), 244-245
+
+## 重置按钮
+
+## substring() 方法
+
+- 重置按钮，176-177, 290-291
+- `reset()` 方法 (表单)，182-183
+- return 语句，118-119
+- `reverse()` 方法，474-475
+- 往返，8, 179
+- `round()` 方法，376-377
+- 路由器，4
+- 行（已添加到表格中），194-195
+- 运行时错误，142-143
+- 启动与停止，270-271
+
+## 幻灯片应用程序
+- 闭包，550-555
+- JavaScript，206-209
+- jQuery 效果，266-270
+- 模式匹配，364-569
+- `slideDown()` 方法 (jQuery), 262-263
+- `slideToggle()` 方法 (jQuery), 262-263
+- `slideUp()` 方法 (jQuery), 262-263
+- 软回车，178-179
+- `some()` 方法，476-477
+- `sort()` 方法，474-469
+- 源代码（查看），156-151
+- 源代码面板（Chrome 开发者工具），34-35, 150-151
+- 稀疏数组，468-469
+- `slice()` 方法，474-475
+- 分解语句，56-67
+- `split()` 方法，482-483
+- `sqrt()` 方法，376-377
+- 作用域，122-123
+- 全局，544-545
+- 局部，544-545
+- 作用域链，22-35, 504-505
+- script 元素，230-231, 262-263, 310-311
+- jQuery UI，320-321
+- 脚本语言，10-11
+- 选择控制器，178-179
+- 选择事件，126-127
+- `select()` 事件 (jQuery), 298-299
+- `select()` 方法 (jQuery), 298-299
+- 选择，408-409
+- 选择器 (CSS)，28-29
+- 选择器 (jQuery), 232-233, 242-244
+- 表单控件，296-297
+- 关注点分离，504-505
+- 分隔符，482-483
+- `serialize()` 方法 (Ajax)，352-353
+- `serializeArray()` 方法 (Ajax)，352-353
+
+## 服务器-4, 11
+- 应用程序，8, 9
+- 数据库，8
+- 服务器端处理，168
+- Session  Cookie，444-445
+- Session 存储，456-457, 460-461
+- set 方法 (Data 对象)，390-393
+- `setAttribute()`, 方法，168-169
+- `setInterval` 方法，212-213
+- `setItem()` 方法 (Web 存储)，456-457
+- Setter 函数，562-563
+- `setTimeout()` 方法，210-211
+- sham.js，36-37
+- `shift()` 方法，474-475
+- Shim，36
+- shim.js 文件，36-37
+- Shiv，36-37
+- 短路求值，408-409
+- 快捷方法 (jQuery), 248-249
+- how() 方法 (jQuery), 244-245, 262-263
+- 切片，164-165
+- `slice()` (数组) 方法，474-475, 478-479
+- 样式显示，10-11
+- 栈 (数组)，474-475
+- 栈开始显示，270-271
+- 语句 (JavaScript)，56-57
+- 语句，64-65
+- break，402-403
+- continue，402-403
+- do-while，92-93
+- for，94-95, 104-105
+- for-in，472-473
+- if，90-91
+- switch，404-405
+- try-catch，414-415
+- while，92-93
+- 静态网页，6-7
+- 逐步执行实现，152-153
+- 停止幻灯片，270-271
+- `stop()` 方法 (jQuery), 266-277
+- 严格方法，124-125
+- 字符串，62-63
+- 比较，386-387
+- 合并，70-71
+- 修剪，386-387
+- 字符串数据类型，62-63
+- 字符串方法，482-483
+- 字符串对象，116-117, 384-385, 498-499
+- 样式规则，30-31
+- 样式表，26-27
+- 提交按钮，176-177, 290-291
+- submit 事件 (jQuery), 298-299
+- `submit()` 方法，182-183
+- 查询，234-235, 298-299
+- 模式，422-423
+
+## Switch 表达式
+- Switch 表达式，404-405
+- 语句，404-405
+- 语法 (JavaScript)，56-61
+- 语法错误，142-143
+- SyntaxError 对象，416-417
+- `toString()` 数组，474-475, 478-479
+- Date 对象，390-391
+- Number 对象，374-375
+- `toString()` 方法，390-391
+- `toUpperCase()` 方法，116-117, 384-385
+- 追踪执行，154-155
+
+## Table
+- 元素，194-195
+- Tabs 控件 (jQuery UI)，326-327
+- 标签，16
+- 表格应用程序，480-481
+- cookies，452-455
+- 对象，530-537
+- Web 存储，458-459
+- 表格 2.0 数组，488-491
+- 控制，292-293
+- 三元运算符，406
+- 测试计划，146-147
+- 测试分数，80-81
+- 数组，106-101
+- `test()` 方法 (正则表达式)，418-419
+- 测试，44-45, 142-143
+- JavaScript 应用程序，32-33
+- 自顶向下，148-149
+- 测试阶段，146-147
+- 测试问题，146-147
+- 节点，164-165
+- `test()` 方法 (jQuery), 234-235
+- 纹理控制，178-179
+- `trigger()` 方法 (jQuery), 248-249
+- `trim()` 方法 (jQuery), 296-297
+- 工厂函数，520-521
+- 对象，514-517
+- try 块，414-415
+- try-catch 语句，414-415
+- 教程应用程序，440-443
+- 属性 (script 元素)，52-53
+- 类型转换器，402-403
+- 类型选择器，28-29
+- TypeError 对象，416-467
+- Textbox 对象，114-115, 179
+- 主题 (jQuery UI)，318-319, 321
+- 第三方 cookies，444
+- 第三方库，504-505
+- this 关键字，176-177
+- 链式，524-525
+- 闭包，548-549
+- 构造函数，510-511
+- 函数，528-529
+- 查询，250-251
+- 对象，500-501
+
+## U
+- 一元运算符，406
+- 取消，60-61
+- 统一资源定位符 (URL)，32-33
+- `unshift()` 方法，474-475
+- URL (统一资源定位符)，32-33
+- get 方法，177-178
+- url 控制，292-293
+- 抛出异常，145-414
+- throw 语句，416-417
+- 时间控制，292-293
+- 时间，210-213
+- title 属性 (HTML)，24, 295-294
+- `dateString()` 方法，116-117, 390-391
+- `toFixed()` 方法，114-115, 374-375
+- `toggle()` 方法 (jQuery), 262-263
+- `toggleClass()` 方法 (jQuery), 244-245
+- `toLocaleString()` 方法，474-475
+- `toLowerCase()` 方法，116-117, 384-385
+- 自顶向下编码与测试，148-149
+
+## V
+- `val()` 方法 (jQuery), 234-235, 296-297
+
+## Validation
+- 数据，10-11
+- HTML，158-159
+- 正则表达式，424-425
+- Validation 应用程序 (JavaScript)，300-303
+
+## value 属性
+- 控制，178-181
+- Textbox 对象，114-115
+
+## Variable
+- 全局，64-65
+- 全局，122-125, 144-145
+- 局部，122-123
+- 查看，156-157
+
+## W
+- W3C 语言，159
+- 局域网，4-5
+- 表达式，152-153
+- Web 服务器，4-11
+- Web 存储，456-461
+
+## While loop
+- While loop，92-93
+- while 语句，92-93
+- 空格，56-57
+- 局域网 (WAN)，4-5
+- Widgets (jQuery UI)，318-319, 321
+- window 对象，72-75, 112-113
+- `write()` 方法 (document 对象)，76-77, 112-113
+- `write()` 方法 (document 对象)，76-77, 112-113
+- Write-only 属性，562
+
+## X
+- XHR 对象，336-337, 340-443
+- XML，338-339, 342-443
+- XMLHttpRequest (XHR) 对象，336-337, 340-443
+
+## 100% 保证
+
+> 当您直接从我们这里订时，您一定会满意。我们的书比您用过的任何编程书籍都更好……用于培训和参考……您可以在 60 天内退货，无需询问！
+> 
+> Mike Murach，出版社
+> 
+> Dan Murach，总裁
+
+# Web 开发
+
+| Murach's HTML5 and CSS3 (第3版) | $54.50 |
+| Murach's JavaScript (第2版) | $54.50 |
+| Murach's JavaScript and jQuery (第3版) | $57.50 |
+| Murach's PHP and MySQL (第2版) | $54.50 |
+| Murach's Java Servlets and JSP (第3版) | $57.50 |
+| Murach's ASP.NET 4.6 Web Programming with C# | $59.50 |
+
+# 核心编程语言
+
+| Murach's Python Programming | $57.50 |
+| Murach's Beginning Java with NetBeans | $57.50 |
+| Murach's Beginning Java with Eclipse | $57.50 |
+| Murach's Java Programming (第4版) | $57.50 |
+| Murach's C# 2015 | $57.50 |
+| Murach's Visual Basic 2015 | $57.50 |
+
+# 数据库/SQL
+
+| Murach's MySQL (第2版) | $54.50 |
+| Murach's Oracle SQL and PL/SQL for Developers (第2版) | $54.50 |
+| Murach's SQL Server 2016 for Developers | $57.50 |
+
+> *价格和可用性可能会发生。请访问我们的网站或打电话获取最新信息。*
+
+# 我们希望听到您的声音
+
+您对我们有任何意见、问题或赞美吗？我们非常乐听到您的声音！请通过您最方便的方式分享反馈。
+
+- www.murach.com
+- 1-800-221-5528（工作日，太平洋时间上午 8 点至下午 4 点）
+- murachbooks@murach.com
+- twitter.com/MurachBooks
+- facebook.com/murachbooks
+- linkedin.com/company/mike-murach&-associates
+
+# 本书需要的软件
+
+- 为了输入和编辑 JavaScript、HTML、CSS，您可以使用任何文本编辑器，但我们建议 Windows 和 Mac 用户都使用 Aptana Studio 3。它是一个具有许多优秀免费编辑器。
+- 为了帮助您开始使用 Aptana Studio 3，第1章提供了一个短教程。
+- 为了测试在 Windows 系统上开发的 JavaScript 和 jQuery 应用程序，我们建议您使用 Chrome 和 Internet Explorer 或 Edge。在 Mac 系统上，我们建议您使用 Chrome 和 Safari。然后，为了调试您的应用程序，可以使用 Chrome 的开发者工具。所有浏览器都是免费的。
+- 为了帮助您安装这些产品，附录 A 提供了所需的网址地址和步骤。
+
+# 本书的可下载应用程序和文件
+
+- 书中展示的所有应用程序。
+- 书练习题的初始文件。
+- 练习题的答案。
+
+# 如何下载应用程序和文件
+
+- 访问 `www.murach.com`，进入 Murach's JavaScript and jQuery (第3版) 页面。
+- 向滚动页面直到看到“FREE downloads”（免费下载）标签页并点击它。
+- 如果您使用 Windows 系统，点击 exe 文件的 DOWNLOAD NOW 按钮下载 `jquery3_allfiles.exe` 文件。然后，在 Windows 资源管理器中找到该文件并双击。这将本书的文件安装到目录：`c:\javascript_jquery`
+- 如果您使用 Mac，点击 zip 文件的 DOWNLOAD NOW 按钮将 `jquery3_allfiles.zip` 文件下载到硬盘。然后，将此文件移动到用户文件夹的 Documents 文件夹，使用 Finder 进入 Documents 文件夹，并双击 zip 文件。这将创建一个名为 `javascript_jquery` 的文件夹，其中包含本书的所有文件。
+
+# 为什么 Murach 是最佳选择
+
+在过去的 43 年里，许多客户问过我，位于弗雷斯诺（Fresno）的小型出版社是如何编写出最好的编程书籍的。简短的答案是，没有其他出版社以我们这样的方式工作。
+
+我们没有使用不经过培训的自由职业者，而是使用一个精小的程序员团队，他们接受了我们经过验证的编写和教学方法的培训。我们不是每年出版 40 多本书，而是专注于少数几本。
+
+我们不是只展示零散的代码片段，而是提供经过反复检查以确保准确无误的完整应用程序。在我看来，这是确保我们出版的每一本书都是市场上最佳作品的唯一方法。
+
+这就是为什么人们经常告诉我，每当他们需要学习新主题时，他们寻找的就是我们的书。为什么不尝试这本书并亲身体验一下呢！
+
+Mike Murach 出版人
+
+# JavaScript 和 jQuery 目录
+
+# 开发者对旧版本的评价
+
+# 第一部分：掌握 JavaScript 核心基础
+
+- 从一个 7 章节的 JavaScript 课程开始，既初学者，也适用于经验丰富的程序员
+- 将核心 JavaScript 语句作为基础的 JavaScript 对象、属性和方法
+- 使用 Chrome 开发者工具测试和调试应用程序
+- 在验证表单和控件中的数据时编写 DOM 脚本
+- 处理链接、图像和计时器，为使用 jQuery 做好准备
+
+> 无论你是 Web 设计的新手，还是像我这样的老手，这本书都是每个人的必读之作。我喜欢它从基础开始，然后进入核心内容。每一章都充满了示例和样本代码，展示了作为 Web 开发者/设计师你将面临的最常见技术。这本书会在我的办公桌上留很一段时间！
+> 
+> Shawn Jackson，Web 开发者，科罗拉多州
+
+# 第二部分：掌握 jQuery 核心基础
+
+- 通过学习你将用到的选择器、示例和方法，快速上手 jQuery
+- 使用实时图像切换、可折叠面板、幻灯片、轮播图等功能增强你的网页
+- 使用插件和 UI 组件更高效地开发 JavaScript 应用程序
+- 使用 Ajax 和 JSON 从 Web 服务器获取数据并将其添加到页面中，而无需重新加载页面
+
+> 本书的目标是以一种即时的实操方式教授 jQuery。它成功了，并且可能提供了学习和掌握这项手艺最快的方法。
+> 
+> Andrew Brinkman，Oracle Java 杂志主编
+
+> 我刚刚完成了一个重量级的应用程序项目，用到了这本书中的 jQuery 和 Ajax。我必须处理图像预加载、DOM 操作、标签页、插件和对话框……在整个项目中，这本书一直在我身边，每当需要时它都是不可或缺的。所有的示例都帮了我，我需要它们！
+> 
+> Alan Vogt，Information Builders, Inc. IT 顾问
+
+# 第三部分：将你的技能提升至专家水平
+
+- 掌握处理字符串、数字、数据和控件所需的所有技能
+- 使用正则表达式和异常处理增强你的应用程序
+- 处理数组，将其存储在 Web Storage 中，并从 Web Storage 中检索
+- 随着应用程序变得更加专业，创建并使用自定义对象和库
+- 创建你自己的 JavaScript 插件
+
+> 我喜欢这本书和其他 Murach 书籍的地方在于，打开书后的几分钟内，你就能开始使用这些技术进行实操开发。
+> 
+> Charles Zimmermann，开发者
+
+> 我读过几本关于 JavaScript 的书，但最好的是这一本。文字、描述，甚至布局都带给学习者你一种易用性，这在其他书中是稀缺的。
+> 
+> Chris Wallace，Denver Serverial 用户 Group
+
+# 下载书籍应用程序和练习题解答
+
+（详情请见本书末页）
+
+ISBN-978-1-943872-056-3
+
+`www.murach.com`
+
+$57.50 USA
+分类：Web 编程/JavaScript
