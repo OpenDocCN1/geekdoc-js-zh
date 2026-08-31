@@ -1,0 +1,1748 @@
+
+# React.js 籍：深入理解难懂的 JavaScript 编程库：想要学习 ReactJS 编程基础的 JavaScript 开发者指南
+
+React 绝对是我在 JavaScript 库中学习过最困难的内容之一。部分原因是，因为它假设你已经掌握了许多与专业 Web 开发相关的知识。即：`Node.js`、`NPM`、精通 `babel` 命令行工具、`EcmaScript`（5 版和 6 版）、`JSX` 以及可能的 `WebPack`。
+
+这本书还做了一个假设：你对 React 编程完全是新手。这对我这个作者来说构成了一个挑战，因为我有责任用一种仍然有意义的方式来讲解 React，而不会用大段看起来复杂且难以理解的代码块让你目不暇接。
+
+尽管如此，我对本书呈现形式的策略遵循一个简单的模式，即将解释与简单的代码示例混合。主要来说，这本书是一部旨在逐步深入理解 React 库的叙述性书籍。
+
+我现在直接明确，单凭这一这本书是不够成为一名 React 专家程序员的。任何关于 React 的出版物都无法做到这一点，因为为了入门并开始编写真正的 React 应用程序，你需要理解的原则范围极其广泛。此外，`EcmaScript` 5、`6` 以及即将到来的 `7` 之间还存在语法差异。由于这个原因，React 可能成为你在 JavaScript 领域过的最特殊的学习经历之一。
+
+但突破困难部分是值得的。我希望这本书在完成这一任务方面证明自己是实用的。
+
+作者与编辑：Greg Sidelnikov greg.sidelnikov@gmail.com
+
+# 目录
+
+* 来自作者的说明
+* 学习 React 的主要障碍
+* 学习 React 的良好理由
+* 响应式编程
+* 响应式编程的主要原理
+* 珍石与矿井中的工作
+* 核心要素
+* 特殊 Props
+* PropTypes
+* 类组件选项
+* 组件实例
+* 属性 Properties
+* 方法 Methods
+* 珍石 1 - React 组件
+* 珍石 2 - Render 方法
+* 珍石 3 - Virtual DOM 与带宽救星
+* 珍石 4 - 初始化类的两种不同方式
+* 珍石 5 - 状态 States 与生命周期
+* 珍石 6 - 组件挂载
+* 珍石 7 - Node.js & NPM
+* 珍石 8 - JSX 详解
+* 课程 1 - 编写你的第一个组件
+* JSX
+* Props
+* 函数纯性
+* 函数组件
+* 披着羊皮的狼
+* 原生 Babel 与 JavaScript Babel
+* NPM
+* 源码编译
+* 课程 2 - 嵌套组件
+* 带有单个子元素的父
+* 带有多个子元素的父
+* 课程 3 - 处理组件事件
+* 方法 1 - getInitialState
+* 方法 2 - componentDidMount
+* 方法 3 - componentWillUnmount
+* 完整的 React 应用示例
+* 创建搜索列表
+* React 应用
+* [EcmaScript 6]
+* var 和 let 关键字
+* const 关键字
+* 解构赋值
+* For-of 循环
+* Map 对象
+* 箭头函数
+* 什么是 JavaScript 中的箭头函数？
+* 立即调用箭头函数 (IIAF)
+* 反引号 (``) 模板字符串
+
+截至 2017 年，我所谓的“响应式”（reactive）编程已成为思考 Web 应用程序的替代方式。它提供了一些软件模式，使得你的 Web 应用程序对用户输入极其灵敏，通常让终端用户（使用你应用程序的人）感到速度更快。
+
+当我学习 `React` 的时候，我花了大约 3 周才领悟到一点：`React` 与我编写过的任何 JavaScript 库都不同。它假设你已经许多许多知识。正因如此，我必须以特定的方式编写这本书，逐渐深入到理解它的过程。
+
+学习 `React` 并不是简单地记住这里那里的几个方法并随心所欲地使用它们。`React` 本身构建在软件原理之上，而这些原理通常只有在行业工作长时间的专业软件工程师才会熟悉。这对于像我这样试图向 JavaScript 新手解释 `React` 的作者来说是一个挑战。
+
+我选择通过采用一种更流性的解释风格来解决这个问题，这种风格介于讨论和源代码之间，并尝试在两者之间寻求平衡。我不想展示冗长的 `React` 程序然后写几行注释来解释每行代码的作用，那样只会使学习过程变得复杂。相反，我将书的叙述拆解为各个组件（并非双关！），这些组件处理了你在第一次学习 `React` 时将面对真实问题。
+
+使用 `React` 库进行编程远不仅仅是学习和使用 `React` 对象、`components`、`states`、`props` 和 `methods`。整本书都致力于解释这些到底是什么。你在其他库中听过 `props` 或 `states` 吗？`States`……可能你听过。但 `props` 却没那么常见（这是 `React` 指代对象“属性”的方式，而实际上它们是传递给 `React` 对象的参数/变量。我不明白他们为什么决定称之为 props，这真是个谜。因为即使它们所代表的内容也来自 HTML 属性，而不是属性。）
+
+`React` 将理解这两者（`props` 和 `states`）变成了显性要求。它们几乎就像子功能，为了成为一个全才的 `React` 库程序员，你必须掌握它们。
+
+正是这些奇特的细节需要以往的 JavaScript 经验，如果没有这些（以及对这些的解释），学习 `React` 编程将困难得多。幸运的是，我意识到了这一点，并且在编写本书时考虑了所有这些。有时 `React` 假设了某些 `React` 库本身并不具备的软件原理。书中的章节将在书中逐渐揭示这些。
+
+这本书并不是一个对象名称、方法和函数的列表并附带功能说明。你可以在 Facebook 的官方 `React` 文档页面查找它们，那里包含了每个方法的详细列表和解释。
+
+相反，这本书将处理在 `React` 编程中涉及上述原理的逐渐学习和理解过程。
+
+在我们开始之前，我想向你展示我发现的一些事情。下面你将看到一个学习 `React` 最困难的列表，随后是你想要学习它的最重要原因。
+
+# 学习 React 的主要障碍
+
+在这里，我将尝试谈谈从零开始学习 `React` 库面临的常见困难。这些困难让学习 `React` 不像你已经习惯的其他简单直观的库那样直观。
+
+我会尝试在不让 `React` 看起来像是一个糟糕选择的情况下进行说明，因为……总而言之，这确实是一本关于如何成为一名 `React` 程序员的书。然而，如果我们现在至少简短地谈谈这些困难的部分，在我们之后继续前进时，它会更容易吸收。
+
+1. **新设计模式**。新的，且在很多情况下是陌生的。如果你是从传统的 2015 年之前的 JavaScript 编程世界来到 `React` 的，可能需要时间来适应 `React` 库所采用的模块化和声明式设计。当然，如果你工作过大型 JavaScript 应用程序，你可能已经处理过长长的 `.js` 文件列表并将它们视为独立的模块。但对于绝大多数程序员来说，事实并非如此。`React` 要求我们使用模块化设计以实现最大的应用程序管理效率。
+
+2. **JSX 语言让很多人感到困惑**。这就像在 JavaScript 中编写 HTML，如果你是第一次遇到它，起看起来完全是不可思议：
+
+例如：
+
+```javascript
+var divblocks = <div><div>Another nested tag</div></div>;
+```
+
+等等，什么？你看到的和我看到的一样吗？我们刚刚无情地将 HTML 输入到一个 JavaScript 语句中，没有给 HTML 加上引号，甚至用换行符将它们隔开……而且仍然成功了。
+
+`JSX` 处理器在后台将 XML 像 HTML 一样处理并将其转换为我们可以随意使用的有效 JavaScript 语句，它为我们完成了所有的脏活。实际上，这种类型的代码是从 XML（看起来像 HTML）“编译”为 `EcmaScript 5`，这样浏览器才能理解它。这意味着浏览器看到的实际代码看起来甚至不像这样。这只是为了我们编写应用程序时方便。但是……我们可以毫无障碍地以后这种格式编写代码。
+
+它的用法将在贯书中讨论。但基本上，这种格式与 `React` 组件结构是互换的。你刚刚创建的实际上是一个有效的 `React` 组件模式。
+
+由于这个原因，`JSX` 经常作为 `React` 的辅助库使用。你可以通过使用 `React` 方法编写我们在示例中看到的语句。使用 `JSX` 并不是强制要求的，你可以没有它也可以。
+
+然而，没有它，`React` 编程就就像吃没有奶士的披萨。两者共同工作提供了一种美味的体验，即使烘焙饼饼需要尝试和时间。
+
+3. **Babel & 编译**。将代码从 `EcmaScript 6` 编译到较早版本（`ES5`）有一点开销，看起来也是多此的。因为 Chrome 和 Safari 等浏览器最终将对 ES6 提供完全支持，这个过程将变得自动。
+
+`Babel` 允许我们编写这种代码：
+
+```javascript
+import someClass from "someClass.js";
+```
+
+这将从定义 `someClass` 类的文件 `someClass.js` 中获取它。在写本文时，Chrome、Firefox 以及其他任何浏览器都不支持 ES6 的 `import` 关键字。
+
+然而，babel 允许我们现在就开始学习和编写 ES6 代码，即使在官方支持尚未推出之前。在此之前，它只是会在后台将代码“转译”（transpile）回 `ES5`，以便代码现在可以在今天的任何浏览器中运行。
+
+好消息是，安装 `babel` 插件迫使你学习如何使用命令行工具。这是传统的 JavaScript 开发者通常不熟悉的。我认为这是你本该学习的技能。
+
+使用命令行在专业软件开发环境中是一个“必须具备”的技能（在桌面某个任意文件夹中的个人项目之外）。而且……它是那些可能会阻止直接进入响应式编程的额外步骤之一（如果不采取的话）。
+
+# 学习 React 的良好理由
+
+1. **它很快**。这可能是 JavaScript 程序员想要开始使用 `React` 编写应用程序的首要原因。利用 DOM 的虚拟副本，它旨在渲染到标准 JavaScript `DOM` 树之前虚拟地执行操作。这不仅仅是一个数字游戏。将 UI 操作移动到虚拟 DOM 确实会改变你的应用程序给终端用户的感受。你可能已经在 Netflix 等网站上开始注意到这种现象了。
+
+## 2. 模块化设计
+
+React 支持模块化设计，这通常与构建大型可扩展应用程序相关。其原因在于 2015 年发布的 `EcmaScript 6` 规范的出现，它提供了有利于模块化方法的新语法，例如 `require` (ES5) 和 `include` (ES6) 关键字不仅可以连接单个文件，还假定了对象之间的类关系。尽管在编写本文时，`include` 关键字在现代浏览器（甚至是 Chrome）中尚未获得支持，但我们仍然可以通过使用 `require` 或者在将我们的 `ES6` 代码编译为 `ES5`（现在几乎所有浏览器都能理解）之前发送到浏览器进行渲染，来开始编写模块化程序。当浏览器追上进度时，我们就不再需要编译了。当这种情况发生时，React 将成为你随处可见的更常见的库。最终，无论是否有 React，模块化的 JavaScript 程序设计都将成为常态。
+
+## 3. 可扩展性
+
+在 React 中，每个 HTML 元素都被视为一个可以编程的组件，它可以嵌套在其他组件中。子组件与其父组件关联。父子组件之间的关系通过被称为 `props` 的机制建立。React 程序的可扩展性通过使每个组件成为 HTML、CSS 和 JavaScript 代码的集合体来实现。
+
+## 4. 灵活性
+
+React 不仅仅是一个 UI 视图库，这与你开始研究它时可能听到的说法不同。尽管这并不完全错误。React 赋予我们创建极速交互式组件的能力，这些组件可以作为应用程序元素元素。然而，React 利用了渲染目标的原则，这允许你将代码的结果发送到几乎任何地方，包括但不限于前端视图。
+
+## 5. 在雇主中的受欢迎程度
+
+React 是由 Facebook 的程序员在研究多年 Web 应用程序后开发的。多或少，它源于一组经过验证的软件工程哲学。尽管其中许多理念大多数传统的 JavaScript 程序员可能并不熟悉。当你学习 React 时，你学到的是计算机编程原理，而不仅仅是一系列函数和方法列表，这与 `jQuery` 等其他库的情况不同。2016 年，JavaScript 已经成为前端 Web 开发的主流语言。如果你正在寻找软件行业的工作，在简历上拥有 React 将让你比竞争对手更具优势。旧金山湾地区的资深 JavaScript 程序员平均年薪为 12 万至 15 万美元。
+
+# 响应式编程
+
+到底什么是响应式编程？React 是一个用 JavaScript 编写的小而强大的库。你可以通过使用 `SCRIPT` 标签将其包含在网页中来使用。就像使用任何其他 JavaScript 库一样，例如 `jQuery`。
+
+如果你想为在真正的软件公司工作准备，仅仅将 React 添加到你的网页是不够的。它几乎要求你理解简单的 JavaScript 编程之外的 Web 开发其他领域。本书的设计旨在帮助这一过程。
+
+通过使用 React 组件（书中许多示例中将展示它们），你将构建整个应用程序。在本书的许多部分，我将使用 React 库构建应用程序称为“响应式”编程。
+
+响应式编程只不过是一个为了代表构建现代 Web 应用程序的另一种思考方式而提出的术语。响应式编程并非内置于使用 `React.js` 库本身。它只是一种方法论，恰好 `React.js` 库确实将其纳为核心哲学。
+
+我的意思是，这种编程方法将非常关注程序的逻辑功能。将其考虑为与在 JavaScript 中处理 `DOM` 相比更高级的编程形式，在后者中，你应用程序的每个视觉元素不仅关联有事件，而且可能包含你自己编写的自定义程序，这些程序将决定它们的功能。
+
+虽然 React 被认为主要处理应用程序的视图区域，但不要相信 React 严格是你可能已经熟悉的 `MVC`（模型-视图-控制器）模式中的“视图”这种迷言。如果不是，只需知道 `Model View Controller` 是一种将代码与应用程序视觉元素分离的编程模式。你过去可能听过“关注点分离”这个说法。但重点在于，你可以安装 React，学习并习惯它的编程风格并设计几个 UI 元素，或者让你成为深入学习 Web 应用程序开发主题的原因。后者是我写这本书时采取的方法。
+
+我希望你喜欢这本书，学习 React 库并探索现代软件开发提供的可能性，这些可能性将训练你制作真实的 Web 应用程序。
+
+## 响应式编程的核心原理
+
+在我们继续之前，提到我们在这里的做什么是非常重要的。我们可以将使用 React 编程称为函数式模板化。不要与函数式编程语言混淆。在这里，我仅仅是指你的 React 组件有要执行的特定函数，这是用独特能力定制组件的方法。而 HTML 为我们提供了一组元素（作为 HTML 标签），来处理我们 Web 应用程序的布局，并通过属性与 JavaScript 代码提供接口，React 是这些……以及更多。
+
+React 赋予了我们创建紧凑代码块的能力，让我们一眼就能看出你的组件如何在屏幕上渲染，所有这些都在一个地方，通常在单行代码中。这为程序员在创建创建视觉元素的应用程序方面提供了巨大的控制机会，同时赋予了他（或她）编写其行为的能力。
+
+React 程序通常不处理单独的 CSS 样式表。与样式的接口通过 `virtual DOM` 提供。我们将在书的后续部分查看它是如何工作的。
+
+与传统的 HTML、CSS 和 JavaScript 方法相比（在那种方法中，我们必须在代码中到处寻找单个元素的不同片段），React 为我们提供了一种使用可编程模板的方法。在基于 Ajax 的 HTML 中，我们习惯看到如示例所示的代码：
+
+```html
+// HTML
+<div class="LoginForm">
+    <div class="Name"> 输入用户名。</</div>
+</div>
+```
+
+这里是对应的 jQuery 示例：
+
+```javascript
+// Ajax counterpart
+$.ajax({
+  url: "/login.php",
+  data: {
+    "username": "user1",
+    "password": "abfgh123"
+  },
+  // login.php 返回了某些数据
+  success: function(msg) {
+    // 修改 DOM 数据
+    $(".Name").html(msg);
+  }
+});
+```
+
+这是一个刻意简化的示例。但你可以看到即使是这样，代码也位于两个独立的块中。一个是 HTML 布局定义。它几乎是一个带有某些动态功能的复用模板。
+
+第二个代码块是执行 Ajax 语句的实际程序。此行代码将根据传递它的数据（用户名和密码）从 PHP 脚本加载数据，并在变量 `msg` 中返回某种类型的消息。
+
+最后，jQuery 用于修改 DOM，用从脚本收到的消息替换类为 Name 的 div 内容。
+
+在一段时间内，这种方法工作得很好。在过去的几年里，这就是我们习惯的处理网页上动态元素的方式。但 React 的精妙之处在于，它整合了这一切，并赋予我们对 HTML 和动态数据的程序化控制，而这些都封装在一个整洁的 render 函数中：
+
+```javascript
+| render: function() { return <<div> { this.state.name ? this.state.name : <span>Enter username here</span> } </div>;} |
+```
+
+注意 HTML 和 JavaScript 代码是如何交织在一起的，而无需开启单独的标签。它们存在于同一个 JavaScript 语句中，几乎可以互换使用，而没有任何问题。我们稍后会介绍如何实现。
+
+当然，这个孤立的示例在实际应用场景之外几乎没有任何意义。但它展示了几个重要的原则。
+
+
+
+这段 React 代码借用了来自 JSX 语言的 JavaScript 跨 HTML 语法，让我们能够通过简短地查看代码来了解动态元素的输出样式。`React` 在这里正试图满足所有人的需求。在某些情况下，你会注意到一些模式，感觉几乎就像是将后端逻辑带到了前端。
+
+这个示例中使用了三元运算符 `? :`。基本上，它的意思是如果属性名存在（不为空或未定义），我们就输出它。如果不存在，我们应该输出通用的“Enter username here”作为默认消息。
+
+这把 HTML 模板方法带入了一个不同的维度。在这里，我们同时在设计和编写组件。
+
+## 宝石与矿井中的工作
+
+这只是第一章，我已经在研究 React 编程的复杂性了。然而，让我们回到基础，首先将一些重要的原则拆解成更小的教程片段。这将对我们后的学习有所帮助。
+
+就像我的《jQuery Gems》一书一样，我们将从一组“宝石”开始，这些是先备知识，将提供前进所需的所需的快速且富有见解的信息片段。由于软件行业目前正处于 `EcmaScript 5` 和 `6` 之间的过渡期，这将帮助我们排除掉常见的怪癖，并在我们学习书中其余课程时，专注于那些重要的内容。
+
+如果跳过了这些宝石，书的后面某些部分可能就不好理解了。特别是如果你将学习 React 作为你接触 JavaScript 编程的第一步，那么更是如此。
+
+但“宝石”只是书的一部分。它们的设计旨在尽可能减少动荡，帮助你在响应式原则的提示下轻松地进入现代 JavaScript 编程的世界。
+
+在深入探索矿井之前，你必须理解这些原则。宝石将磨利你的镐。书的第二部分将向你展示洞穴的其余部分。
+
+## 掌中的 React
+
+为了让你的旅程更加轻松，我在这里包含了代表 React 程序每个独立层面的章节。系好安全带，准备好吸收大量新原则！我们现在真正要进入 React 编程的世界了 :)
+
+这是一个鸟瞰式的解释，涵盖了构建 React 程序涉及的最重要概念。我已经提到过学习 React 是碎片化的。而且它假设你之前已经有了高级编程模式的知识。
+
+在本节中，我将尝试将它们拆分为可以单独分析的合理分块。随着我们的不断推进，这将帮助你将拼图的碎片组合在一起。请把这里描述的原则想象成驱动 React 核心引擎的想法。
+
+仅仅因为它们在这里被整齐地列出，并不意味着学习 React 会很轻松。但通过花时间熟悉它们，确实会让阅读书的其余部分变得更容易。
+
+# 核心要素
+
+如果你熟悉 jQuery，你已经使用过美元符号（`$`）对象来选择 HTML 元素并对其进行各种操作。
+
+但当涉及到 HTML 元素（不是组件）时，React 中类似的构建块是什么？它一定是 `createElement` 方法。
+
+```javascript
+React.createElement(type, props, children);
+```
+
+以下是你在实践中如何使用 `createElement` 的示例：
+
+```javascript
+let link = React.createElement('a', {href: '#'}, "Save"); let nav = React.createElement(MyNav, {flat: true}, link);
+```
+
+在这里，我们使用 React 方法 `createElement` 以编程方式创建了 HTML 元素。然后我们将创建的 `link` 元素放置在 `nav` 元素内部作为它的子元素之一。
+
+当然，在这种情况下 `link` 是唯一的子元素，也可以使用多个链接，作为用逗号分隔的额外参数：
+
+```javascript
+let link1 = React.createElement('a', {href: '#'}, "Save"); let link2 = React.createElement('a', {href: '#'}, "Delete"); let nav = React.createElement(MyNav, {flat: true}, link1, link2);
+```
+
+你可以一直这样下去，添加应用程序所需的任意数量子元素。
+
+注意 `nav` 变量使用了 `MyNav` 而没有使用双引号。这是完全没问题的。当我们使用自己定义的自定义元素（而不是 `a`、`div`、`table` 等标准元素）时，我们必须使用大写字母开头。因此，导航元素被称为 `MyNav`。只要我们使用开头大写的 `React`，React 也就知道我们指的是一个自定义元素。不需要在这里使用周围的引号。
+
+在 JSX 中，它将翻译为 `<MyNav />`。
+
+随着时间的推移，当你开发应用程序时，你会得到类似于示例所示的完整结构。注意，这里稍有不同，因为我实际上直接将 React 语句作为子参数：
+
+```javascript
+let nav = React.createElement(MyNav, {flat: true}, // nav 的元素 React.createElement('a', {href: '#'}, "Save"), React.createElement('a', {href: '#'}, "Load"), React.createElement('a', {href: '#'}, "Delete"), React.createElement('a', {href: '#'}, // AlertCounter React.createElement('span', {alerts: 0}, "No Alerts")));
+```
+
+注意某些元素是简单的字符串。它们在这里被用作文本节点。在这种情况下，当元素用于指定嵌套元素时用于 HTML。
+
+此外，这里是在没有 JSX 的情况下使用 ES5 创建元素。我稍后会详细解释这一点。虽然我提倡使用 ES6，但我想先向你展示如何在 ES5 中实现。此外，ES6 向后兼容 ES5。因此，这意味着很多时候你编写 React 程序将取决于你的个人喜好。
+
+现在理解的关键是 `createElement` 接受三个参数：`type`、`props` 和 `children`。
+
+在这里，`type` 是元素的名称。例如 `A`、`H1`、`DIV` 等。
+
+然后是 `props`，它们是你传递给组件的属性。Props 不是状态，但它们可以修改状态。稍后我们会详细区分这种区别。
+
+最后，`children` 只是位于父元素内部的层级元素。创建它们的链并将它们作为 N 个参数直接输入 `createElement` 函数。
+
+深入理解 React 的另一个关键是，上述所有代码在 JSX 中都有等效写法。两者可以互换使用。当你真正开始理解它是工作的时，这才是有趣的部分。
+
+所以，虽然在 ES5 中你会使用 `createElement` 函数，但在 JSX 中（通常与其余 ES6 语法一起使用），你只需通过编写如下内容来创建完全相同的功能：
+
+```javascript
+let link1 = <a href = "#">Save</a>;
+```
+
+现在你明白我的意思了吗？JSX 将 HTML 转换为 JavaScript 语句。在这里 `link1` 是元素的对象化表示，与我们之前用 `createElement` 方法创建的 React 代码完全等效。
+
+是的，通过简单地将其声明为 JSX，`link1.href` 就会包含 `#`。当我意识到这就是它的工作原理时，JSX 开始变得非常有意义了，我实际上也开始习惯使用它了。
+
+这就像是 HTML 和 JavaScript 之间的一条双向道，属性会自动变成属性。
+
+这里有一个更复杂的例子，这次再次使用了 JSX：
+
+```javascript
+let nav = <MyNav> <a href = "#">Save</a> <a href = "#">Load</a> <a href = "#">Delete</a> <a href = "#"> <span alerts = "0">No Alerts</span> </a></MyNav>;
+```
+
+我们刚刚使用 JSX 语言通过一个 JavaScript 语句重新创建了虚拟 DOM！你可以将 `nav` 的值作为一条语句在函数之间传递。这几乎就像是创建另一个微型 DOM 结构的另一种方式。
+
+现在你（希望你）已经看到，这就是 React 中虚拟 DOM 的真实结构。它就像是我们我们要处理的次级 DOM，我们可以对其进行更改、修改、编辑、删除和添加子元素等操作。
+
+我们将更新实际的主主 JavaScript DOM 对象，它负责应用程序中可见的元素……但只有在实际上需要更新时才更新。我们执行的任何虚拟 DOM 操作都不会花费时间去更新原始 DOM。这就是提高 React 应用程序性能的原因。
+
+最棒的一点是，React 会自动我们完成这一切。作为一个 React 程序员，你不需要理解 React 内部是如何实现此点的。你只需要专注于你应用程序的设计。
+
+当然注意，如果你直接在 JavaScript 应用程序中输入 JSX 代码，它甚至无法编译。你必须运行 JSX 处理器。要做到这一点，你通常需要从命令行初始化它，使其在后台持续运行。
+
+Babel 有一个 JSX 插件。我也建议学习如何让 `babel` 监听你的文件。这意味着你可以设置 `babel`，以便在文件发生变化时，它会自动转译你的 `.js` 文件（并将其放入 `"build"` 或 `"production"` 目录）。这种 `babel` 功能被称为 `"watch"`。它必须先启用。我在我的视频教程中解释了如何在 Windows PC 上进行操作：
+
+YouTube 上的 React 教程，可以帮助你设置开发环境、安装 Node.js、NPM、babel、JSX，并帮助你开始监控你的 js 文件：
+
+https://www.youtube.com/watch?v=tXaNvGcjEi0
+
+你可以简单地在网页顶部或底部的 `SCRIPT` 标签中添加 `babel.js`。JSX 就能正常转译。但这会显著降低你应用程序的处理速度。它应该只用于测试。
+
+另一方面，该视频只有 58 分钟，如果你认真要设置一个专业的 Web 开发环境，我建议在 YouTube 播放器上使用 2 倍速选项快速浏览，这只需要大约 25 分钟。它就像是一门入门介绍课程。
+
+最后，我们通过展示你也可以使用 `cloneElement` 来克隆现有元素来结束这段讨论。
+
+```javascript
+React.cloneElement(element, props, children);
+```
+
+它的工作方式与 `createElement` 完全相同。只需将一个现有元素作为 `element` 参数传递即可。然后，你传递给相应参数的任何 `props` 和 `children` 都将合并到原始元素已有的属性中。这让人想起传统面向对象编程中扩展对象的功能。在这里，我们在某种程度上模仿了 OOP 功能。
+
+创建的元素现在可以实际渲染到 DOM 中。你不能渲染到虚拟 DOM。`render` 函数是 React 库内部处理这一过程的魔法。这时，我们的元素从虚拟 DOM “复制并粘贴”到屏幕上可见的实际 DOM 中。
+
+React 在主 `ReactDOM` 对象上提供了 `render` 方法，如下。在响应式编程中，`ReactDOM` 是仅次于 React 的重要对象。
+
+```javascript
+ReactDOM.render(reactElement, domContainerNode);
+```
+
+在这里，`domContainerNode` 是父元素，`reactElement` 将在其渲染、重新渲染或首次挂载（mount）。
+
+如果你需要更新组件的属性，可以多次使用 `render`。
+
+这里是真实场景的可能样子。在这个例子中，我们取了一个 `ReactElement` 并将其渲染到 DOM 节点上：
+
+```javascript
+ReactDOM.render(React.createElement("div"), document.getElementById("container"));
+```
+
+如果你有一个元素已经与变量名关联，你可以使用 `ReactDOM.findDOMNode` 查找它：
+
+```javascript
+ReactDOM.findDOMNode(element);
+```
+
+该语句返回与给定元素关联 DOM 节点。注意，这只有在元素通过 `render` 方法渲染到 DOM 之后才能生效。在此之前，即使它已经创建，在 DOM 中也是无法找到的。
+
+## 特殊属性（Special Props）
+
+在这里我们将简要介绍一些特殊的属性名称，这类属性有几个。这些属性应该被视为类似于 JavaScript 中的保留关键字，但在 React 之外。它们都具有特殊含义。
+
+### `children`
+
+`children` 属性名会被 `React.createElement` 自动添加到 `this.props` 中。
+
+### `className`
+
+此属性对应于 HTML 的 `class` 属性。你必须在组件/元素中使用 `className` 而不是 `name`，以避免与 HTML 的保留关键字冲突。
+
+### `htmlFor`
+
+与 `className` 相同，仅用于 `"for"` 属性。在 React 元素中任何需要使用 `"for"` 的地方都应该使用 `htmlFor`。
+
+### `key`
+
+`key` 属性唯一标识一个 `ReactElement`。它用于数组。
+
+### `ref`
+
+`ref` 属性接受一个回调函数，该函数会在以下情况被调用：
+
+1. DOM 节点挂载时。
+2. 传递函数发生变化时。
+
+### `style`
+
+`style` 属性接受样式对象而不是字符串。在 React 中，没有机制可以通过字符串指定 CSS 样式。但这种限制也可以被看作是优势，因为 CSS 样式现在可以通过编程方式表示，每个属性都是 CSS 属性值对。
+
+## `PropTypes`
+
+React 有一个特殊的属性叫做 `propTypes`。它的主要目的是类型检查。随着你的应用程序变大，类型检查可以帮助发现错误。
+
+这是一个例子。假设我们已经创建了一个名为 `ReactComponent` 的 React 组件。在开发模式下，默认开启类型检查。在生产代码中实际上是不开启的。
+
+```javascript
+ReactComponent.propTypes = { name: React.PropTypes.string};
+```
+
+`React.PropTypes` 的作用是对存储的数据类型进行验证。React 默认有很多数据验证器，如果将数字类型传递给定义为字符串的属性（如上所示），你将在 JavaScript 控制台中看到警告。
+
+React 的 PropTypes 定义如下：
+
+| `any` | `array` | `boolean` | `element` | `func` | `number` | `object` | `string` |
+
+# 类组件选项
+
+在书剩下的部分我们将更多地讨论组件。它们是 React 应用程序的构建模块。但请记住，这是“上手 React”部分。让我们简要概述 React 组件的完整范围，以及 React 库中默认提供的选项和方法。组件通过存在于主 `React` 对象上的 `createClass` 方法定义：
+
+```javascript
+var MyComponent = React.createClass({
+  displayName: 'MyComponent',
+  /* 这是你 React 类的核心
+     选项和生命周期方法将写在这里 */
+  render: function() {
+    // 一旦渲染，让我们返回一个新创建的元素
+    return React.createElement(/* … */);
+  }
+});
+```
+
+组件包含 `propTypes` 对象和两个返回对象的方法：
+
+1. `propTypes` 对象，将 prop 名称映射到类型。
+2. `getDefaultProps()` 返回对象。
+3. `getInitialState()` 返回对象。
+
+## 生命周期方法
+
+1. `componentWillMount`
+2. `componentDidMount`
+3. `componentWillReceiveProps`
+4. `shouldComponentUpdate`
+5. `componentWillUpdate`
+6. `componentDidUpdate`
+7. `componentWillUnmount`
+
+这 7 个方法可以在你的 React 类中实现。但并不是所有的组件类都需要使用所有的 7 个函数。这取决于你组件的用途。
+
+每个方法本质上都是在 React 组件生命周期内特定时间执行的事件。这些功能中的大部分都与检查组件的挂载和更新状态有关。
+
+除了这些方法之外，当然你也可以根据你的组件需要执行的操作添加你自己的自定义函数。
+
+# 组件实例
+
+组件实例是从我们在上一节中查看的类表示所实例化的对象。关于它们的实现，有几点提示：
+
+1. 组件内部的 `this` 关键字指向它本身。
+2. 无状态函数组件没有组件实例。
+3. 一个组件实例可能会跨多个等效的 `ReactElements`。
+
+## 属性
+
+1. 属性 `this.props` 包含了通过标签属性传递给 `React.createElement` 的任何 props。
+2. `this.state` 属性包含了由 `setState` 和 `getInitialState` 方法设置的状态。
+
+## 方法
+
+1. `setState(changes)` 将给更改应用到 `this.state`，以重新渲染 DOM 组件。
+2. `forceUpdate()` 立即重新渲染组件到 DOM。
+
+## 秘籍（Gems）
+
+在本节中我将介绍几个扩展响应式编程的“秘籍”，并对重要的原理进行一些解释。每个秘籍是对特定主题的重点讨论。
+
+# 秘籍 1 - React 组件
+
+组件是 React 应用的构建块。
+
+由于 React 主要用于应用程序视图（交互式用户界面动态），React 组件可以被视为你的 Web 应用程序组成的视觉区块。React 将每个组件视为可重用的模板。
+
+在 React 中，每个组件都是 HTML、CSS 和 JavaScript 代码的组合，标识了你应用程序中的某个特定区块。
+
+例如，这里是我的 Twitter 页面 @gregsidelnikov 从 React 组件的角度来看的。
+
+
+
+在程序上，React 组件遵循嵌套 HTML 标签的足迹。它们有父元素和子元素，父元素也可以是层次链中另一个组件的子元素。
+
+![twitter-react-components.png](img/00002.jpeg)
+
+将组件设计构成你整个应用程序的蓝图。在开始为你的响应式应用编写第一行代码之前，在纸上勾勒出一切是一个很棒的主意。这只是一种直观的方式，将你的页面设计成一个具有独特元素的 Web 应用程序。
+
+就像你当年第一次学习普通的 DOM 时，意识到每个 HTML 元素（如 `P`、`DIV`、`TABLE` 等）实际上是对象模型中长树状链中的一个对象一样，把 React 组件 true 为与某种软件功能绑定的视觉区域吧。这一次，这种功能将由你和你的应用程序的需求自定义决定的。
+
+从这些 React 的最基本原理中，你现在可以看到为什么 Facebook 和 Instagram 喜欢使用它。它是极快的，它可以帮助将类似流的元素拆分为由组件组成的软件块，而这些组件只是 CSS、HTML 和 JavaScript 代码的组合。这种设计模型更贴近应用级行为，而不是仅仅使用表格类布局的信息性网站。
+
+组件是分级的。它们可以是其他组件的子元素。在大多数情况下，组件是为你的应用程序中的可重用而定制的。它们包含了可以适应各种情况的代码模式。React 代码通常遵循创建这些组件链的模式，这些链相互工作，同时保持快速的渲染速度和灵活性。
+
+## 秘籍 2：`render` 方法
+
+很有可能，在构建普通的 HTML-JavaScript 应用时，你已经在某种程度上将你的应用分成了不同的隔间。然后，你使用 Ajax 事件根据每个 HTML 元素单元格中更改的数据类型单独填充每个视图。
+
+但 React 将这种方法进一步了一步，要求使用 `render()` 方法。`render` 方法必须附加在你创建的每个 React 组件上。没有办法规避它。它是 React 组件所要求的模式的一部分。
+
+尽管 React 远不止视图层——在与 React 编程时使渲染方法显式化，这正是 React 经常被认为主要是基于视图的库的原因。我们将在整书中看到为什么这是真的，但为什么这并不完全正确。
+
+说 React 编程必然是仅限视图的编程是不公平的。事实上，渲染目标的选择告诉我们相反的结论。React 是一种遵循基本哲学的编程模式，这种哲学实际上不需要视图。
+
+你可以将 React 组件的结果渲染到浏览器或文本字符串（使用一个专门为此创建的方法，称为 `React.renderToString()`）、JSON 对象或你希望的任何其他地方。在这种情况下，渲染根本不是渲染。因为“渲染（render）”这个词意味着数据的视觉化。所以 React 更像是一组原理，而不是“一种制作用户界面的方法”，正如许多初学者在简要熟悉该库后倾向于相信的那样。
+
+虽然你可以在 React 之外使用任何第三方库（例如数据库 IO 库），但 React 在视图元素背后的自定义编程方面仍然提供了很多。事实上，它要求你理解这些编程原理的工作原理。
+
+`render()` 方法通常附加到 React 自己的“虚拟”DOM 上，它是当应用程序首次加载到浏览器时执行的方法。并且，只有当它代表的元素的数据更新时，它会被更新。然而，这正是有趣的地方。在调用渲染方法之前，React 的组件甚至没有“挂载”到 JavaScript DOM 上，也不会显示。而且我们可以在不挂载的情况下创建 React 组件。我们将在秘籍 6 中更详细地讨论挂载。
+
+这让你的应用程序感觉与众不同，并且节省了带宽。如果你想的话，我们在 2017 年之前一直在构建的非响应式网站其实只是一种懒人的设计理念。仅仅为了查看是否有新提醒就重新加载所有内容，并不是最好的应用程序设计。然而，像 Facebook 这样的网站一直以来都是这样运行的。现在，这种做法正在一点点发生变化。这就是为什么它们正向响应式实现迈进。
+
+但响应式编程不仅仅是一堆用于获取数据并替换 HTML 元素的 Ajax 调用。它要复杂得多。
+
+而且由于快速访问相关组件通常是良好应用程序设计的关键，虚拟 DOM（Virtual DOM）便派上了用场。虚拟 DOM 实际上是一种奇特的方式，提供了一种快速修改 DOM 的方法，同时放弃了速度较慢的旧替代方案。
+
+虚拟 DOM 绝对选择 `React` 库编写应用程序的巨大优势之一。事实上，当你为 Web 项目添加 `react` 库时，你应当也添加 `react.dom` 库。两者密不可分。而且所有响应式 JavaScript 应用程序默认都包含了 `React DOM` 库。
+
+这就是 React 的虚拟 DOM 对你的应用程序易用性产生巨大影响的地方。它让网站具有了原生应用程序的感觉，每个元素都能对触摸事件做出做出响应。
+
+你可能已经在 Netflix、Facebook 和 Instagram 等网站上看到这种现象开始发生。你实际上可以感觉到这种不同。操作是即时发生的，似乎不需要每次点击按钮都得先等待 HTTP 请求加载。
+
+应用程序会立即响应。React 并没有消除 HTTP 带宽，它只是将其降至最低，并仅关注数据是否真的应该传输（例如是否仅仅因为一个按钮点击事件就传输）。
+
+当然，像 Netflix 和 Amazon 这样的网站会预加载某些数据（例如电影预告片的前 15 秒），无论用户是否点击播放按钮。但通过与其他“响应式”原则相结合，它对 UI 响应速度产生了巨大影响。
+
+我们仍然从熟悉的 HTML 元素构建应用，但对每个事件的响应率是由一个显著快于 jQuery 实现的 DOM 带来的。
+
+为了开始使用虚拟 DOM，你不需要做任何特殊操作。通过利用 React 组件模板模式，你自动在使用 React 自身的虚拟 DOM 遍历。它通过提供与我们熟悉的名称相匹配的驼峰（如 `className` 和 `fontFamily`）方法和属性，透明地模仿了标准 DOM 模型。
+
+## Gem 4：初始化 React 类的两种不同方式
+
+在本书的编写期间，Web 仍然处于从 `EcmaScript5` 到 `EcmaScript6` 的某种过渡阶段。当 `EcmaScript 2015`（`ES6`）在大约两年前发布时，它在 JavaScript 世界引起了巨大的动荡，并将程序员分成了“老方法”和“新方法”。有些人可以根据情况灵活地使用其中一种风格而非另一种，这没有任何问题。两者之间并无优劣之分。
+
+然而，最终 `ES5` 和 `ES6` 执行的是完全相同的代码。大部分区别在于语法上。无疑，同时在两种不同的语言中工作可能会产生不必要的头疼，特别是当你第一次学习 React 的时候。
+
+在 JavaScript 这种松散类型语言中，任何事情根本没有所谓的“一种标准方法”。情况一直如此。
+
+在创建 React 组件时，区分这种区别至关重要。实现它并没有一种方法。
+
+在这个 Gem 中，我将演示用两种不同的方式创建完全相同的 React 组件。这里的区别是 `EcmaScript5` 和 `EcmaScript6` 本身的区别。
+
+在大多数情况下，一个显著区别在于 `constructor`（`ES6`）的使用和专门的 `init state` 函数方法（`ES5`）。让我们来看。
+
+EcmaScript5 示例下所示：
+
+```javascript
+var NewComponent = React.createClass({ getInitialState() { return { /* initial state */ }; });
+```
+
+注意，在 `EcmaScript5` 中并不存在 `constructor` 关键字。这就是为什么在这种情况下 React 提供了 `getInitialState` 函数。如果你在 `ES5` 中编写应用程序，你应该使用此方法来初始化组件的默认状态。
+
+我们很快就会涉及到状态（states）。因为这是一个非常重要的主题。状态与 React 组件相关联。在规划应用程序时，你应该在组件和它的状态之间建立心理关联。每个组件都负责拥有状态。
+
+上面我们演示了 `ES5` 语法。我不会告诉你应该使用这两种中的哪一种。
+
+最终，`ES6` 将在几年内成为新采纳的标准，但许多程序员仍然偏好使用 `ES5` 格式。由于 JavaScript 支持 `ES5` 作为 `ES6` 的子集以兼容未来的应用程序，两者仍然可以工作。
+
+如果这对你有效，请像下面所示使用 `EcmaScript6`，现在使用了 `ES5` 中不可用的新关键字：`class`、`extends`、`super` 和 `constructor`：
+
+```javascript
+class NewComponent extends React.Component( { constructor(props) { super(props); this.state = { /* initial state */ }; }} } );
+```
+
+它们是一样的，只是使用了 `ES6` 语法。如果你来自 Java、C# 或 `C++` 语言，你可能更熟悉这种类创建语法，并可能认为优于过时的 `ES5` 格式。
+
+注意这里的另一个区别是我们使用 `.Component` 方法来创建组件，而不是 `.createClass`。但本质上，底层发生的是完全相同的事情。
+
+我知道，用两种不同的方法做同一件事听起来可能很困惑。但在这里你有一个选择：使用 `ES5` 让你的代码在所有浏览器中即箱运行，或者使用 `ES6` 语法并将其转换回 `ES5`。然而，学习相对新的 `ES6` 语法的优势是你的应用程序看起来会更简洁、更直观。
+
+这只是我们目前随着 JavaScript 规范成熟而面临的时期。在浏览器完全采用 `EcmaScript 6` 之前，学习这种语法将让你获得学习某些尚未广泛使用的内容的优势，但它们在未来几年内绝对会成为下一个标准。
+
+我个人的偏好是开始使用 `EcmaScript 6` 语法。这条路可能有点坎坷，但为了在成为更优秀的 JavaScript 程序员方面保持领先，这是一件明智的事。而这类事情总是需要辛勤的努力。
+
+## Gem 5：状态与生命周期
+
+在 React 中，每个组件都有一个状态（state）。状态是一个带有值的对象。状态正如其名所示。它是组件的某些状态，通常通过使用数字、布尔值、数组或映射定义的某个或多个标记、参数和设置。
+
+React 组件的生命周期（Life Cycle）与状态有很大关系。React 提供了几个默认方法来帮助我们编写高效的应用程序。这些方法在下面简要概述。
+
+每个组件通常会通过以下辅助方法控制自己的状态。它们被设计用于应用程序流程或组件生命周期中的独特时刻修改或更新组件的状态。
+
+所有这些方法都像下面所示附加到组件对象上。这只是一个简单的示例，展示了这些方法在你的 React 对象中的放置位置。
+
+让我们来看吧！
+
+```javascript
+var MyComponent = React.createClass( {
+  displayName: 'MyComponent', // 这几乎就像组件的构造函数！
+  getInitialState: function() { … }, // 组件挂载事件
+  componentWillMount: function() { … },
+  componentDidMount: function() { … },
+  componentWillUnmount: function() { … },
+  // 组件更新事件
+  componentWillReceiveProps: function() { … },
+  componentWillUpdate: function() { … },
+  componentDidUpdate: function() { … },
+  shouldComponentUpdate: function() { … }
+  // 将组件渲染到 DOM
+  render: function() { /* 返回某些内容 */ }
+});
+```
+
+这里有很多 `Will` 和 `Did` 方法。但它们到底是什么意思呢？
+
+这些方法就像是我们组件的控制中心！
+
+下面我将为这些每一个方法在组件生命周期中负责的每一个事件提供简要描述。
+
+`getInitialState` 的作用类似于组件的构造函数。它在组件渲染到屏幕之前被调用。
+
+`componentWillMount` 在 `render()` 方法执行之前仅会被调用一次。在组件的整个生命周期内它不会被再次调用。有时被用作组件构造方法的同词。
+
+`componentDidMount` 在组件首次渲染之后立即被调用。
+
+`componentWillUnmount` 在组件即将销毁时被调用。这是清理内存和删除状态的地方。
+
+`componentWillReceiveProps` 在 props 传递给组件时被调用。例如，如果你有一个 `Form` 组件和一个 `TextInput` 组件，允许用户通过在其中输入文本来更改其值。想象一下 `TextInput` 有一个 `onchange` 事件，它向组件传递一些 props。一旦新文本被输入输入框中，该值就会作为 props 传递给主组件。这就是 `componentWillReceiveProps` 被触发的时刻。
+
+`componentWillUpdate` 在组件上执行 `render` 方法正之前被调用。它给了我们一个机会，在下一次渲染更新之前处理任何状态更改。
+
+`componentDidUpdate` 在 `render()` 方法完成对 DOM 更新之后立即被调用。
+
+`shouldComponentUpdate` 是一个默认方法，它总是返回 `true`。它允许我们控制组件元素是否应该在 DOM 中更新。情况并非总是如此。例如，如果组件中某个状态或属性的新结果与它之前设置的值相同，那么可能就不值得更新 DOM。如果即使在更新后数据也没有变化，为什么要将数据发送到视图呢？
+
+这些方法对于理解虚拟 DOM 至关重要。当我们逐个剥离 React 编程的原理时，一切将开始变得合乎逻辑。
+
+目前只需知道一个 React 组件通常被挂载到一个渲染目标上。这就是为什么上面提到的某些默认方法使用“mount”（挂载）一词，而不是你预期的传统的 setter 或 getter 方法（如“set”或“get”）。挂载是使用 React 编程以及在 React 的虚拟 DOM 生态系统中创建的组件所特有的概念。
+
+我们已经从理论上讨论了组件。但在实践中，组件是什么呢？记住你的应用程序是由模块化的元素组成的。组件 literal 上可以是任何东西，从按钮、文本输入框、复选框到显示文本的状态区域。你将根据应用程序的目的确定你的组件的设计。
+
+由于我们刚刚讨论了处理组件“挂载”的方法，那么在我们的下一个章节中探索它的含义是理所当然的！
+
+## 第 6 章：组件挂载（Component Mounting）
+
+React 是一个重视编程原则的库。其中之一就是将组件视为元素。组件是一种以程序化（声明式）的方式来渲染你在应用程序中想要显示的内容。
+
+但 React 实际上并不关心你选择在何处或如何渲染这些元素。无论是在 JavaScript DOM 还是其他地方。这听起来可能很惊讶，因为 React 以主要作为一个前端库而闻名。
+
+这是因为 React 使用了被称为“渲染目标”（render targets）的东西。也就是说，你决定 React 的 `render` 方法的结果将如何显示或传递到其他地方。
+
+换句话说，你可以说 React 在处理其组件内部存储的数据或状态的输出时是与无关的（agnostic）。
+
+例如……你可以从组件中输出数据到文件写入函数。换句话说，React 的渲染目标不仅限于 UI 元素，尽管在本书的大部分内容以及一般的 React 风格编程中，这会是你将处理的大部分内容。
+
+在上一个章节中，我们讨论了每个组件如何处理它自己的状态。状态可以是一个布尔标志，表示按钮是否被高亮显示。或者导航菜单选项是否被选中。
+
+现在，如果你一直在关注，这里就是一切开始联系起来的地方。一个 React 组件是其状态与其渲染方法之间的融合。我们在一个地方就获得了对 UI 元素最重要的两个函数的程序化控制。
+
+但“挂载”（mounting）到底是什么？在 React 中，出于性能考虑，我们使用了 DOM 的虚拟表示。
+
+通过简单创建一个组件，任何 DOM 元素都不会被触及。这是一个极好的消息，但这如何可能呢？这是因为使用原生 DOM 会增加我们应用程序的内存占用。然而，通过 React 的虚拟 DOM，元素只有在应用程序需要使用时才被创建。
+
+我将更详细地解释这一点。
+
+React 是一个同构框架（isomorphic framework）。它的功能可以映射到任意输出。而不是 JSX 风格的 HTML UI 元素。
+
+`react` 库提供的虚拟 DOM 正是那样：虚拟的。在它实际上被应用程序需要之前，它在物理上并不存在于 JavaScript DOM 中。
+
+只需这样想：JavaScript 的 DOM 是存储在内存中的 HTML 元素的物理树。它在页面加载到浏览器时被填充。
+
+通常，当一个页面加载到应用程序时，每个由 HTML 元素表示的 DOM 分支都会加载到根元素中，无论它将如何被使用，或者是否会显示在屏幕上。即使页脚在折线以下（below the fold），它也会加载到 DOM 中。
+
+而 React 反而甚至不会触及那棵 DOM 树。正如在之前的章节中讨论过的，它从自己的虚拟 DOM 中添加或删除组件，而虚拟 DOM 是完全存储在内存中的。只有当组件在应用程序中被专门使用时，元素会在渲染目标的内存中变为物理表示。这就像是将虚拟 DOM 复制并粘贴到渲染目标，无论目标是什么。在 Web 应用程序的情况下，当然是 JavaScript DOM 树。
+
+我通过以下示例来演示：
+
+```javascript
+var component = React.createElement( ComponentDefinition );
+```
+
+此时 `component` 是 `ComponentDefinition` React 类型的实例，这是我为了这个示例而虚构的。在现实中，它对应于像 `LoginScreen`、`NavigationMenu` 或 `Button` 的组件。并且包含了我们在书中早期章节中已经看到的标准组件定义代码。
+
+
+
+它仅仅是一个 React 类型。它在主要的 JavaScript 文档（DOM）对象中尚未物理存在。除了作为一个 React 节点之外，在任何其他地方都找不到它。
+
+`render` 方法将此组件挂载到 DOM 中。这个过程之所以被称为“挂载”（mounting），其原理与虚拟硬盘类似。如果你曾经在电脑上挂载过虚拟 CD-光驱或硬盘，你就知道它是如何工作的了。该硬盘在物理上并不存在。出于相同的原因，这就是为什么这类软件被称为虚拟硬盘，或者虚拟 CD-光驱。这也是为什么虚拟驱动器具有“挂载此驱动器”之类的功能的原因。
+
+同样，React 中虚拟 DOM 背后的原理也是相同的。在它被挂载之前，无法对其进行操作。这使得 React 比普通的 DOM 操作快得多。这可能也是最初使用 React 的主要原因之一。React 在内存中存储了 DOM 的快速表示。
+
+但这个虚拟 DOM 甚至与 JavaScript 的 DOM 没有任何关联。它并排存在，只有在需要时才会渲染到屏幕上的实际 DOM 中。通常是当代表元素的组件使用新传入的数据进行实际更新时。
+
+本质上，React 的设计目标是仅在需要时才更新屏幕上的组件。这种方法的另一个优势是它可以将你的应用程序与后端分离，同时有效地执行负责更新屏幕的函数，且这些函数几乎是在发生时瞬间完成的。
+
+你选择使用什么作为前后端之间的通信桥梁完全取决于你。React 并不关心这一点。它的目的严格限制于尽可能快地更新视图。
+
+这种挂载机制使得 React 成为一个多功能的库。因为从基本原理上说，React 并不关心最终结果是渲染在 DOM 中还是其他地方。
+
+你可以将 React 的输出渲染为 XML 文档，将其视为自定义对象数据，或返回 JSON。它结合了熟悉的编程原理，并尝试做到“全人的一切”。这使得 React 成为一个编写用户界面以及调整自定义软件实现时极其强大的工具。
+
+现在，很有可能如果你是从传统的 2015 年之前的 JavaScript 背景转到 React 的……与学习 jQuery 不同，学习 React 是一个投入得多的过程。它涉及到学习软件开发原理，而不是学习一组方法名，然后你就可以出发了！
+
+然而，它确实有一些方法在 React 程序员之间正变得标准化。我们将在接后的学习中探索它们。仅仅知道它们，而不理解 React 背后的基本哲学是不够的。
+
+# 宝石 7 - Node.js & NPM
+
+当我说学习 React 涉及比学习 React 库多多的内容时，这确实是事实。至少，使用 React 要求你安装 `Node` 库。
+
+单单 Node 就可以写另一整本书了，但对于 React 库，我们需要安装它有几个原因：
+
+1. 为我们的 React 应用提供一个 localhost 环境。安装 Node 让你能够从本地机器上的 `http://localhost` 运行你的应用程序。
+
+2. Node 自动带有 Babel 和 JSX 支持（JSX 是作为 Babel 插件安装的）。
+
+在 Mac（通过终端）和 PC 上安装 Node 和 `NPM` 都异常地简单。在 PC 上，这和从其官方网站下载 Node 安装文件一样简单。运行安装程序就大搞定了。只需不要忘记在安装期间勾选 babel 复选框，这样它也会被包含进去。
+
+在 Mac 上，你可以通过命令行下载 Node。打开你的终端应用程序并输入：
+
+```bash
+$ wget http://nodejs.org/dist/node-v0.4.4.tar.gz$ tar -xzf node-v0.4.4.tar.gz$ cd node-v0.4.4$ ./configure$ sudo make install
+```
+
+就这些了！配置日志将运行，然后你就完成了。
+
+在 Ubuntu 上，你可能想要运行此额外命令来安装基本组件：
+
+```bash
+$ apt-get -y install build-essential
+```
+
+看起来此时 node 已经安装并准备好用于为我们提供一个 localhost http 地址，我们可以在那里测试我们的 React 代码。
+
+然而，好消息是，如果你已经在本地机器上安装了 Apache 服务器，并且它已经映射到你的开发文件夹，那么使用 node 提供 localhost 环境就是没有必要的了。你已经设置好了。
+
+在这种情况下，你可以直接在现有的 Apache httpdoc 文件夹中（或者你机器上映射的任何其他文件夹中）开始编写 React 程序。只需在该目录下创建一个新文件夹，例如 "my-react-app"，然后像往常一样，你的项目将通过类似下面的地址浏览器访问：
+
+`http://localhost/my-react-app`
+
+但是，强烈建议你安装 Node。如果出于某种原因，那是因为它带了命令行版本的 Babel 和 JSX 插件，这些插件对于正确设置开发环境是必需的。
+
+在 Mac 终端上安装其实非常直观。但在 PC 上就稍微有点挑战性，特别是如果你以前从未做过的话。
+
+如果你仍然不确定如何在 PC 上进行这些操作，我在 YouTube 上录制了一个 58 分钟的补充教程，可以在以下位置免费查看：
+
+React JS Tutorial 1 - For Beginners | ReactJS JavaScript ES6 Node.js, NPM, Babel Transpiler, Webpack
+
+https://www.youtube.com/watch?v=tXaNvGcjEi0
+
+无论你处于开发过程的哪个阶段，它都值得一看。但如果你刚刚开始，那是必看之。
+
+观看这个教程应该能帮助你开始通过 localhost 地址在 PC 上编写 React 应用。所以在那个视频教程中，我将一步步带你完成整个过程。我不想在书中重写这些细节以占用更多空间。你可以以 2 倍速度观看，并在 25 分钟内过完。
+
+# 宝石 8 - JSX 详解
+
+如果你已经开始学习 React，你应该听过很多关于 JSX 的内容。你可能也听说过 React 并不使用它。这在很大程度上是正确的。但建议你这样做。它让事情变得简单得多，尽管它的语法对传统的 JavaScript 开发者来说初看起来可能很吓。
+
+JSX 以让你可以在 JavaScript 中“编写 HTML”的语言而闻名。这在某种程度上是真实的。预期的效果是我们可以将 HTML 标签视为 JavaScript 语句。然而，JSX 实际上使用的是类似于 HTML 的形式，因为它使用的标签名称与标准 HTML 标签匹配，例如 `DIV`、`UL`、`TABLE` 等。记住 HTML 只是 XML 的远亲。
+
+虽然作为 JavaScript 语句的 HTML 看起来看起来看起来古，一旦你理解了这个想法并习惯了它，它就变成了本能。这绝对是全新的，且通常不会这样做（在目前大多数浏览器中甚至无法编译），但让我们看看它实际上是什么样的：
+
+```jsx
+var scoreBoard = { Player1: 10, Player2: 25 };
+<div className="class1" />
+<SomeCounter count={3 + 5} />
+<ScoreBoardUnit data-index="2">
+  <h1>Score Leaderboard</h1>
+  <Scoreboard className="results" scores={scoreBoard} />
+</ScoreBoardUnit>;
+```
+
+这段代码在你的标准浏览器中自然地无法编译，除非 Babel 的 JSX 插件帮助我们将其转换回 ES5，即我们可以确定所有现代浏览器都能理解的规范。在这种情况下，它将编译成以下 React 元素。
+
+```javascript
+var scoreBoard = { Player1: 10, Player2: 25 };
+React.createElement( 'div', { className: 'class1' }, null)
+React.createElement( SomeCounter, { count: 3 + 5 }, null)
+React.createElement( ScoreBoardUnit, { 'data-index': 2 },
+  React.createElement( 'h1', {}, 'Score Leaderboard'),
+  React.createElement( Scoreboard, { className: 'result', Scores: scoreBoard }, null)
+) // 关闭 React.createElement( ScoreBoardUnit...
+```
+
+这些 JSX 和 React 代码示例可以互用。只要你后台有 JSX 在对你的代码进行转译，它就能工作，而且你可以在两者之间切换。虽然极力推荐将 JSX 与 `React` 结合，但在使用或编译 `React` 程序时并不是必须的。如果你非要这样做，直接使用无需 JSX 的 `createElement` 语法即可。
+
+然而，如果你想正确地完成，为了开始转译过程，我建议查看 Gem 7 的教程，以熟悉通过 `Babel` 进行转译过程的复杂性。
+
+设置 `Babel` 和 `JSX` 需要一点耐心，但它是非常值得的。只需观看视频教程，并按照说明在你的自己的机器上进行设置即可。
+
+一旦你的文件被积极地转译为 `ES5`，你就可以在自己的程序中使用 `JSX` 了。
+
+正如你从上面的示例中看到的，这就像是在编写 HTML 标签的同时，又将它们视为 JavaScript 语句。当然，这段代码本身发生在某个 `.js` 文件中。这不是 HTML。
+
+注意 `DashboardUnity` 实际上只是一个 XML 标签。它包含子节点，就像你对任何其他标准 XML 代码所预期的的那样。它之所以有效是因为它被 `JSX` 语言处理机制处理了。这有点像学习一门新语言，但因为你可能已经熟悉 HTML 语法，所以并不难理解。
+
+唯一的本质区别是花括号 `{ }` 现在也可以直接用于 JSX 语句的标签属性名下。整个标签 `Scoreboard` 被视为一个对象。它的属性 `scores` 只是它的属性，包含了之前在代码由 JavaScript 对象 `scoreBoard` 指定的值，该对象是用于创建对象的 JSON 字面量对象表示法。
+
+起初看起来可能有点奇怪，但它赋予了你对应用程序的巨大控制力。它将 `document.getElementById`（或 `jQuery` 等效的 `$("#id").attr("scores")`）统一成了一种新格式，而你原本为了访问一个属性就必须使用这种方法。
+
+这种格式不仅允许将属性直接写入你的 HTML 元素（通过 `JSX`）并将它们分配给已存在的变量/对象，还可以将 HTML 本身视为 JavaScript 语句。这太棒了，想象一下你现在可以从函数作为 JavaScript 语句返回 HTML 代码，然后将其传递给应用程序中的其他抽象方法。这就像是在函数之间投递 HTML，并为在应用程序的某个容器中输出做准备。
+
+还有一点。你会发现 `JSX` 使用 `className` 而不是传统 DOM 对象中的简单 `"class"`。`JSX` 文档解释说：“由于 `JSX` 是 JavaScript，因此不建议将 `class` 和 `for` 等标识符作为属性名。”这就是为什么 `class` 变成了 `className`，而 `for` 变成了 `htmlFor`。
+
+要了解更多关于 `JSX` 的知识，你应该查看官方 `JSX` 文档。再次强调，关于这个主题可以专门专门，我们正试图解决基础问题，以便在书的其余部分专注于 `React`。
+
+# 编写 React.js 
+
+欢迎来到 `React Gems` 的第二部分。在本节中我们将抛弃 gem 格式，因为书的第一部分旨在简单地熟悉 `React` 编程和现代软件开发的最常见原则。
+
+这些理论将帮助我们研究使用 `React` 库进行编程的实践方面。让我们开始吧，从编写我们的第一个 `React` 组件开始。
+
+# 第一课 - 编写你的第一个 React 组件
+
+下面你看到的是你可能编写的第一个 `React` 组件的紧凑示例。它只是简单地将通用的 Hello World 消息渲染到 `DIV` 元素中。它只占一行代码。
+
+```javascript
+React.createClass({render: function() { return (<div>Hello World.</div> ) });
+```
+
+在这里，我们正在使用主 `React` 库对象的方法 `createClass`。这就是创建组件的方式。但蓝色的代码是什么？它看起来像 HTML，但周围没有双引号！
+
+组件通常存储在变量中。
+
+例如：
+
+```javascript
+var HelloWorld = React.createClass( { .. } );
+```
+
+将组件存储在变量名中可以帮助我们以后在创建元素之间建立父子关联时。这只是一种以程序化的方式在嵌套组件之间建立关系的方法。
+
+其中一些代码看起来可能有些奇怪，特别是如果你来自传统的 JavaScript 程序员背景。蓝色高亮的 `JSX` 代码似乎格格不入。
+
+但请记住，`React` 编程与使用额外工具相关。`React` 库本身应该只是你整个应用程序的一部分。没有人会只使用 `React` 库来编写 React 应用。它只是墙上的单的一块石头。
+
+在 `React` 中，我们可以在 JavaScript 内部编写 HTML。这是对多年来习惯的“HTML 内部编写 JavaScript”想法的反转，多年来我们一直在 HTML 的属性标签内部编写 JavaScript（例如 `onclick = "this.style.color='red';"`）。
+
+但 `React` 给了我们做相反事情的能力。我们将随着学习不断发现原因。现在让我们扩展一下创建组件的内容，然后我将简要解释 `JSX` 如何帮助我们处理 HTML 块并将其视为返回值。
+
+话虽如此……让我们进入创建我们的第一个 `React` 组件的完整示例，并在特定的 HTML 元素中渲染其内容：
+
+```javascript
+// 添加所需的库代码
+var React = react("react");
+var ReactDOM = require("react-dom");
+// 创建我们的第一个 react 组件 "HelloWorld"
+var HelloWorld = React.createClass( {render: function() {
+return(<<div>Hello World.</div> )
+});
+// 在 id 为 "app" 的 HTML 元素中绘制 "HelloWorld" 组件
+ReactDOM.render(<HelloWorld />, document.getElementById("app"));
+```
+
+注意我们新创建的组件 `HelloWorld` 有它自己的渲染方法。但作为主要渲染引擎的 `ReactDOM` 对象也有它自己的渲染方法。两者之间的关联是 `ReactDOM.render` 调用了它作为第一个参数传递的组件的渲染方法。在在这种情况下，就是我们的 `HelloWorld` 组件。
+
+恭喜你创建了第一个 React 组件！我希望保持内容简单，不让你被设置 React 仍需完成的过多任务所困扰。但在未来的章节中，我们将继续逐步拆解使用 React 库进行编程，以及它具体包含的内容。
+
+## JSX
+
+在 React 中，在 JavaScript 编写 HTML 是通过开源 JSX 引擎实现的。你可以通过访问官方 GitHub 仓库查看 JSX 源码：
+
+https://github.com/jsx/JSX
+
+根据官方网站，`JSX` 是一种静态类型的面向对象的编程语言，旨在运行在现代网络浏览器上。但涉及到 React 时，我们将使用它以 JavaScript 格式编写 HTML 标签。这有点很奇异且不寻常。但主要，它赋予了我们像返回 JavaScript 语句一样返回 HTML 代码块的能力。你会发现这将是非常有用且直观的。
+
+`JSX` 简单地将 HTML 语法转换回 JavaScript。这起初看起来可能非常奇怪，但它就像 JavaScript 现在有了它内部的 HTML 处理器一样。这种思考方式是熟悉 `JSX` 的一个良好起点。随着书籍的深入，我们将作为源码示例的一部分，在更复杂的细节上探索它。
+
+虽然很有吸引力，但完全理解 `JSX` 如何做到这一点完全没有必要。它在内部处理了这些，并帮助我们专注于编写代码。这正是它的用途所在！
+
+`JSX` 确实有局限性，它并不是你预期的完全纯 HTML。它是 XML 的派生物，而不是 HTML，因为 XML 更严格。这意味着它更适合设计库。但主要，因为它使其更容易被解析和理解。
+
+`JSX` 没有内联 CSS 解析器。因此，虽然你可以使用带有属性的 HTML 元素，但 `style` 属性不会是其中。你仍然可以使用其他属性，如 `name`。
+
+事实上，我们可能并不真的想要为 JavaScript 代码一个完整的 HTML 处理器。因为这会让事情变得过于复杂。HTML 有太多的边缘情况。这会让重写一个完整的 HTML 解释器变得困难得多，并让使用 `JSX` 变得无所措。面对现实吧，在 JavaScript 中编写 HTML 的想法本身已经有点不切谱了。但它确实为我们提供了更快编写代码所需的杠杆，主要通过将 HTML 视为返回值并在组件之间进行传递。
+
+`JSX` 主要受原始 JavaScript DOM API 的影响，使用了“驼峰命名法”（camel case）格式。例如 `className`。（驼峰命名是一种属性的命名格式，第一个单词小写，后续的一个或多个单词以大写字母开头。）
+
+在 `JSX` 中使用 `className` 的原因是因为这是原始 JavaScript DOM 的属性名。例如：
+
+```javascript
+var cn = document.getElementById("my_id").style.className;
+```
+
+这是标准的 JavaScript 代码。但 `JSX` 使用它自己的虚拟 DOM 系统，该系统试图紧密模仿它。它并没有试图重新发明轮子并创建自己的原始处理语言。因此，属性遵循我们已经在 JavaScript 中处理 DOM API 对象时已经熟悉的标准格式。
+
+
+
+但还有其他几个奇怪之处。例如，你不能将`className`关键字作为 HTML 属性名。让我们考虑下面的示例，它创建了一个根组件，由一个`UL`元素组成，并通过赋值`className`属性将其类命名为`"my-list"`。
+
+```javascript
+var root = React.createElement('ul', { className: 'my-list' },child);
+```
+
+这通常被误认为是`JSX`问题，认为`JSX`禁止使用 JavaScript 预留关键字。虽然这种评估在某种程度上是正确的，但问题源于 JSON 表示法，而不是`JSX`。此问题的常见解决方案是在属性名周围加上引号：
+
+```javascript
+var root = React.createElement('ul', { 'className': 'my-list'}, child);
+```
+
+我们还没有深入到 React 编程的阵地来讨论组件之间的父子关系。但因为在这个示例中我们使用了第三个参数`child`，我想对它的含义说几句话。
+
+在接下来的章节中，你将看到组件之间父子关联是如何工作的。但基本上，现在只需要知道，无论你作为`createElement`方法的第三个参数传递什么元素或多个元素，它们都将通过`this.props.children`属性作为`"props"`在该元素内部可用。
+
+通过这种方式，你可以在你的父类内部与子组件一起工作。这通常是你整个应用程序的核心，包含了所有其他次要组件。父组件可以有多个子。
+
+我们以后会更多地讨论`props`是什么。现在，只需知道，`props`（或属性）对于 React 组件就像参数之于函数。你只需将它们传递到对象中，作为该响应式元素功能所需的自定义值。
+
+另外请记住，你不能随意粘贴任何 HTML 来用作你的`JSX`语句。`JSX`版本的 HTML 非常相似，但不是 100% 准确的 HTML 规范。它非常相似，但存在一些差异。
+
+由于这些原因，`JSX`可能会让你感到困惑。我自己也为此挣扎了一段时间，但当我意识到它的主要目的是帮助更快地编写代码时，我想一旦我适应并开始习惯性地使用它，长远来看它会让事情变得简单得多。
+
+这几乎是重新学习多年来的 HTML 标准。困难的部分在于了解`JSX`的局限性。因为当事情不起作用时，如果你不知道为什么，你可能会感到沮丧，尽管你在`JSX`中使用的 HTML 看起来格式完全正确。
+
+它确实挑战了你以一种新方式思考应用程序的部分。但请坚持这些示例，最终它会融入并开始变得更有意义。
+
+## Props
+
+在上一章节中，我提到了 React 组件。但它其中还有很多内容。之前，我们创建了一个简单的组件，类似于这样：
+
+```javascript
+ReactDOM.render(<H1>Hello</H1>, document.getElementById('root'));
+```
+
+注意我们直接将 HTML 标签`<H1>`作为参数输入到`render`方法中，而没有引号。这是`JSX`提供的语法风格。它通常在 JavaScript 中无法编译，但智能 IDE（如 PHPStorm）感知`JSX`语法并不会将其视为错误。
+
+只要你已经在项目中包含了`JSX`（通常通过`babel`库或相应的命令行插件，后者是我建议在你的生产服务器上使用的），它就可以正常编译。（换句话说，为了让它编译，你的开发环境必须正确配置，或者至少要在页面上包含`babel.js`。）它使用内部`JSX`处理器将这种内联 HTML 转换为 JavaScript。
+
+### 函数纯性
+
+在我们进入 React `props`之前，我想提一点。在 React 中`props`是只读的。这与一种称为纯函数的特殊类型函数很大关系。在传统的软件开发中，纯函数是指不在内部改变传递给它的参数的函数。
+
+例如：
+
+```javascript
+// 纯函数；不修改参数值
+function sum(a, b) { return a + b; }
+```
+
+被认为是纯函数，因为它的体没有修改作为参数传递的任何参数。相反，下面显示了一个不纯函数的示例：
+
+```javascript
+// 不纯函数；修改传递的参数 "total"
+function sub(total, less) { return total -= less; }
+```
+
+在 React 中，`props`遵循了“纯粹”的理念。这意味着只要你的 React 组件不会从其内部改变这些值，你就可以传递它们。这恰恰是 React 的`props`设计为只读的原因。遵循这一规则是好的。
+
+`Props`衍生自 HTML 元素的属性。这有点奇怪，它们被称为`props`。因为在 HTML 元素中，属性是像`DISABLED`或`CHECKED`这样的单关键字标记。
+
+`props`更好的名字应该是`attributes`（属性）。因为它们类似于 HTML 属性的`name=value`对，而不是`props`。不过，事实就是如此。`React.js`的开发者们选择了这种命名约定！别怪信者 :)
+
+如果你一直在关注我们上一章节的讨论，你现在应该知道什么是组件（components）了。它们是 HTML、CSS 和 JavaScript 代码块的组合，决定了应用程序中某个视觉区域的功能。它们负责更新如消息流、报警和各种状态更新的内容。
+
+我们还知道组件通常有一个`render`方法来在应用中显示它。
+
+在学习`React.js`时，你将遇到的下一个东西就是`props`。`Props`就像函数参数。只不过你将它们传递给组件，而不是函数。然而，其原理是相同的。
+
+让我们创建一个组件并向它传递一个 prop。
+
+```javascript
+// 创建一个 Hello 组件
+var Hello = React.createClass({
+  render: function() {
+    return (
+      <DIV>Hello, {this.props.name}</DIV>
+    )
+  }
+});
+
+// 现在调用 "render" 方法在 #app 中显示此组件
+ReactDOM.render(<Hello name = "Jason"/>, document.getElementById("app"));
+```
+
+在这里，我添加了一个名为`name`的 prop 并给它赋值为`"Jason"`。请注意它被包含在一个自闭合标签`<Hello />`中。
+
+在组件内部，我们可以通过`this.props.name`引用它来打印值，而不是使用上一个教程中通用的`"Hello World"`示例。
+
+## 函数组件（Functional Components）
+
+上面我们演示了一个标准的 React 组件。它包含了所有的复杂性：它是使用`createClass`函数创建的，并包含一个`render`方法。但下面的代码实际上也被认为是有效的 React 组件，尽管它仅仅是一个标准的 JavaScript 函数：
+
+```javascript
+function Hello(props) {
+  return <H1>Hello, { props.name }</H1>;
+}
+```
+
+让它成为有效 React 组件的原因是它返回了一个 React 元素。`React`元素可以在屏幕上渲染。你的很多响应式代码将返回此类语句。这只是将 HTML 元素打包并将它们作为普通的 JavaScript 值返回的一种方法。
+
+这是 React 风格编程的重要组成部分，一旦你亲自编写过几个，就很容易习惯。起初你会觉得很别扭，但一旦你习惯了，你就会真正看到这种编程风格的灵活性。
+
+记住在 JavaScript 中一切皆为对象，甚至函数也是如此。这就是为什么这样的组件被称为函数组件。在某种意义上，这真的只是思考 JavaScript 函数的另一种方式。
+
+这是使用`EcmaScript5`规范定义 React 组件的有效方法，而不是像上面的示例那样使用`ES6`。然而，从编写响应式应用的角度来看，这两者是等价的。
+
+作为程序员，了解`ES5`和`ES6`之间的区别是你的责任，这本身可以写一整本书来专门论证。然而，在本书的整个教程中，我会尝试利用每一个机会来解释两者之间的差异。
+
+此外，让我们来看一段代码，它实现了定义组件完全相同，只是这次使用了`EcmaScript6`规范的语法：
+
+```javascript
+class Hello extends React.Component {
+  render() {
+    render <H1>Hello, { this.props.name }</H1>
+  }
+}
+```
+
+注意我们使用了`ES6`类关键字`class`。我们还使用新的`new`关键字`extend`从标准的`React.Component`派导出此对象，后者是`React`库本身提供的默认组件对象。
+
+## 披羊皮狼（A Wolf in Sheep's Clothing）
+
+如果你知道类继承是如何工作的，那么这就是在 JavaScript 中模仿这种机制的方式。我说是“模仿”，是因为在面纱之下，JavaScript 仍然使用基于原型的继承。这既可能是幸运，也是诅咒。
+
+与`C++`或`Java`等更成熟的语言相比，JavaScript 定义的继承标准并不是真正的。换句话说，由于 JavaScript 的松散类型系统，你可以忘记在 JavaScript 中创建诸如“接口”（interfaces）等高级对象结构。
+
+严格的编程语言通常更擅长提供功能完整的面向对象编程环境。在这里，`EcmaScript`的开发者们稍微装饰了一下 JavaScript 语法，让狼看起来更像了一只羊。
+
+但大多数程序员都认为这种语法改进了 JavaScript 的编程。至少在视觉上是这样。
+
+这种方式创建组件的另一个主要区别是通过`this`关键字变量访问`props.name`属性。否则，它的作用法与上一个示例中的函数组件完全相同。
+
+## 原生 Babel 与 JavaScript Babel（Native Babel vs JavaScript Babel）
+
+我尝试在之前的章节中微妙地提到这一点。但在我们继续之前，它值得一个简短的解释。我不希望你在被欺骗的情况下看到`babel`在工作，却不知道它可能没有为真实的生产环境进行正确配置。
+
+最好的方法是将`babel`作为独立应用程序在后台运行，作为你开发环境的一部分。这通常随`Node`安装提供。只需从 Google 下载`Node`并一直点击“Next”按钮完成安装即可。
+
+通过`SCRIPT`标签直接添加`babel`是可能的，并且适用于测试。但由于`babel`的 JavaScript 库运行速度较慢，建议安装可以在命令行运行的原生版本。JavaScript `babel`库在处理此类内容时非常慢，并且违背了 React 编程的初衷，而其唯一目的之一就是为了优化应用的速度。
+
+## NPM
+
+命令行`babel`应用随`Node.js`安装一起提供。因此，如果你安装了`Node`，你将自动拥有`babel`包。你只需要在命令行中使用`NPM`工具单独安装它们，该工具默认也随`Node`一起提供。
+
+在学习`React.js`时，通过`SCRIPT`标签简单添加`babel`是完全正常的。只是当你的应用上线时，它对生产环境来说不够快。无论如何，所有`babel`所做的只是将你的`EcmaScript6`和`JSX`代码“转译”回`EcmaScript5`，这样你就可以在任何尚未完全支持`ES6`的浏览器中运行它。（截至本文写作，还没有浏览器支持。）
+
+## 源码转译（Transpiling Source Code）
+
+你可能在论坛、Twitter 和 Reddit 上看到程序员使用“转译”（transpiling）这个词，但可能完全理解其背后的原理。
+
+通常，转译是将一种语言的代码编译为另一种语言的源代码的过程。它只是在语言之间进行编译。然而，当涉及到 JavaScript 时，我们是在两个不同的`EcmaScript`规范（5 和 6）之间进行转译。
+
+这使我们能够使用`EcmaScript 6`写代码，并将其转译为`EcmaScript 5`，以便现代浏览器能够运行你的代码。在写作期间，大多数浏览器都不支持`ES6`，甚至 Chrome 还没有。
+
+最终，当`ES6`支持普及所有浏览器后，就可以安全地停止使用`babel`来进行`EcmaScript`规范之间的转译了。只需在标准的 JavaScript 文件中编写代码，它就能直接运行。
+
+但在那之前，我们不妨利用这个机会学习一种有趣的源码工具。总会有新的标准出世，转译的艺术可能在短期内不会消失。
+
+在本章中，我想要向你介绍 React 编程的基本原理，这些原理不仅局限于组件的创建。在这里，我已经在讨论组件和属性（props）的背景下简要提到了它们。随着课程的进行，我们将深入探索响应式编程的原理。这一次，由于我们已经对这些原理有了初步的了解，这将帮助我们向编写实际的 React 应用迈进。
+
+# 第 2 章：嵌套组件
+
+React.js 中的嵌套组件可以帮助你创建更复杂的视图元素结构。我之前提到过 React 组件的创建。作为一个提醒，这里是你可以如何创建一个组件的方法。
+
+```javascript
+var Component = React.createClass({ render: function(){
+    return (
+        <Something></Something>
+    )}});
+```
+
+这只是一个返回一组`<Something>`HTML 标签的基础组件。我知道，你可能还在习惯返回一个看起来没有引号括围但看起来像 HTML 标签的内容，但到这时它应该开始看起来更亲切了 :)
+
+正如你所想象的，这种结构是你将在 React 中经常使用的代码结构。绝大多数其他内容都源于此。如果你以前用过 jQuery，这种组件结构可以与 jQuery 的对象选择器语法相比：
+
+```javascript
+$(".class").on("click", function() {/*do something*/} );
+```
+
+其中我们有一个在事件执行完毕后返回的回调函数。在 React 中，我们返回一个 HTML 元素，它通常会被放置在我们前端的应用结构中。
+
+对于 React 组件来说，它只是包含`render`函数的 JavaScript 对象，并有一个返回编译后的 JSX 代码的`return`语句。这就是将`<Something>`标签转换为浏览器可以理解的`EcmaScript5`的内容。
+
+`render`函数和`return`语句的内容取决于你的应用程序目的。在这个示例中，为了清晰起见，我们将这些对象分别命名为`Parent`（父级）和`Child`（子）。如果你在编写应用程序，真实的名称可以是`Friend`和`FriendList`，或者`Customer`和`CustomerProperty`。
+
+## 有单个子元素的组件
+
+使用这种模式，你可以实现基本的视图功能。
+
+首先，让我们创建该模式中最小的构建块——子组件。
+
+```javascript
+var Child = React.createClass( { render: function() {
+    return<BUTTON onClick = { this.props.onClick }> { this.props.text } </BUTTON>
+    });
+```
+
+在这种情况下，子组件是一个返回按钮元素的基础组件。按钮提供了一个`onClick`事件，该事件将由`this.props.onClick`方法执行。
+
+现在让我们创建它的对应的`Parent`类，并使用`Child`作为它将返回的对象。我高亮了`Child`以确保容易看到`Child`组件是如何与`Parent`绑定的。
+
+```javascript
+var Parent = React.createClass({ render: function() {
+    return (
+        <Child onClick = { this.handleChildClick } text = { this.state.childText } />
+    );
+}, handleChildClick: function( event ) { // 在此方法中，你可以访问传递给
+    // Child 的 props，使用 this.state 属性 var child_text = this.state.childText; // 访问点击的目标元素：var target = event.target;
+}});
+```
+
+注意，你可以在`Parent`容器内的`handleChildClick`方法中访问子组件的文本。`Parent`和`Child`容器通过传递到`Child`容器`text`属性的`props`绑定在一起。
+
+无论你传递到`Child`（位于`Parent`内部）的内容，都可以通过父容器自动访问。因此，`props`真正建立了两者之间的关系。
+
+React 是一个相对新的库。然而，它确实使用了一个重要的 JavaScript 函数，如果你计划在响应式应用中动态使用`Parent`和`Child`，必须知道如何使用。
+
+这个标准的 JavaScript 函数就是`map`方法，它原生存在于所有`Array`类型的对象上。如果你以前处理过 JavaScript 数组，你可能至少听过这个函数。它的作用创建一个新数组，对每个项调用回调函数，并用回调函数对原始数组每个项所应用的修改结果填充新数组。
+
+简而言之，`Array.map`获取所有项并对它们应用自定义操作。然后，它简单地将新的修改后的数据集作为新数组返回。这对于我们在 React 库中编写`Parent-Child`组件有什么帮助？我可以通过提供以下示例来演示，我们将在单个`Parent`中使用多个`Children`。
+
+## 有多个子元素的组件
+
+
+
+在这个示例中，我将保持`Child`组件完全不变，以保持简单。注意在新更新的`Parent`组件中数组的`map`函数的新用法：
+
+```javascript
+var Parent = React.createClass({ /* 为多个子数组设置默认值 */ getChildrenState: function() {
+    return { childrenData: [
+        { childText: "Click me 1!", childNumber: 1 },
+        { childText; "Click me 2!", childNumber: 2 }
+    ]};
+}, render: function() {
+    var children = this.state.childrenData.map(function(data, index) {
+        return <Child onClick = { this.handleChildClick } text = { data.childText } />;
+    }.bind(this));
+    return <DIV>{children}</DIV>;
+}, handleChildClick: function( event ) { // 在此方法中，你可以访问传递给
+    // Child 的 props，使用 this.state 属性 var child_text = this.state.childText; // 访问点击的目标元素：var target = event.target;
+}});
+```
+
+```javascript
+var Example = React.createClass( { getInitialState: function() {
+    return {
+        state: 0;
+    }
+});
+```
+
+你经常会在 React 组件中看到`getInitialState`。它会重置与组件绑定的默认对象。在这里，你可以从数据库读取值，或者在将此组件渲染到屏幕之前将状态重置为默认值。
+
+你可以将此方法与 EcmaScript 6 提供的默认构造方法替代：
+
+```javascript
+class Example extends React.Component( { constructor: function() {
+    this.state: 0;
+    });
+```
+
+这里唯一的显著区别是，我们正在使用`this`关键字将状态附加到主对象上。
+
+要在组件渲染到屏幕上时访问状态，我们必须使用`componentDidMount`方法。
+
+## 方法 2：`componentDidMount`
+
+当组件渲染时，React 会自动调用`componentDidMount`。通过将其添加到你的自定义 React 组件中，你实际上是在对其进行重载（overloading）。重载意味着向默认 React 组件对象中已存在的方法中添加你自己的功能，而你正是从该对象扩展了自己的自定义组件。这就是使用`extend`关键字的全部目的。我们正在扩展库已经提供的 React 组件对象的默认功能。
+
+当我第一次听到在我的 React 组件中使用“挂载”（mounting）函数时，我并不理解它的什么意思。我们难道不是简单地为我们的主要 React 组件附加一组辅助方法吗？
+
+我们在书的早期已经讨论过挂载。如果你仍然需要复习该过程，我建议确保你已经复习过之前讨论过的`Gem 6 - Component Mounting`（组件挂载）。
+
+`componentDidMount`是负责在组件挂载后设置状态的方法。
+
+```javascript
+var Example = React.createClass( { componentDidMount: function() { this.state = 1;
+    }});
+```
+
+它意味着虚拟 DOM 已经与 DOM 节点关联，该节点将在屏幕上进行实际更新。该方法在执行组件的`render`命令后始终会被调用。它们是同义词，可能可以替使用。它确保并告诉我们元素实际上已经存在于虚拟 DOM 中。`render`方法已经对它调用过了！
+
+## 方法 3：`componentWillUnmount`
+
+最后，`componentWillUnmount`在组件从页面移除并即将被销毁之前被调用。
+
+```javascript
+var Example = React.createClass( { componentWillUnmount: function() { this.state = null;
+    }});
+```
+
+注意，我们在这里将状态重置为`null`。组件被销毁了，我们不再需要它的数据。这就是你清理组件所用内存（如果有的话）的地方，例如取消初始化定时器。
+
+# 用 React 编写的完整应用程序示例
+
+我们已经涵盖了编写完整 React 应用所需的原理。我刻意尝试让书中的所有示例都保持简单。复杂性通常源于编程上的创意，如果我直接把一个大型程序丢进这本书，对你可能会产生打击作用而不是激励作用。
+
+在这里，我将构建一个简单的搜索应用，它可以从数组集中查找结果。如果输入的字符与列表中的任何项匹配，它们将被过滤掉，所有其他条目将被忽略。
+
+这个应用非常像 Google 的搜索自动查询功能，当你向查询输入框输入短语时，项目会掉落。下面我列出了完整的源代码。
+
+在这里，我不会包含应用程序的 CSS 样式表部分。这部分可以单独处理。我们希望严格关注 React 的实现。
+
+考虑到你使用标准 JavaScript 代码需要完成的所有工作，这个应用相对于其实际功能来说惊讶地紧凑。
+
+## 创建搜索列表
+
+让我们使用 JavaScript 中的对象字面量格式创建潜在搜索结果列表：
+
+```javascript
+// 首先，让我们定义所有可搜索动物的列表
+var libraries = [
+    { name: 'Wolf', url: 'http://localhost/wolf'},
+    { name: 'Panther', url: 'https://localhost/panther'},
+    { name: 'Fox', url: 'http://localhost/fox'},
+    { name: 'Giraffe', url: 'http://localhost/giraffe'},
+    { name: 'Elephant', url: 'http://localhost/elephant'},
+    { name: 'Ferret', url: 'http://localhost/ferret'},
+    { name: 'Lion', url: 'http://localhost/lion'},
+    { name: 'Lioness', url: 'http://localhost/lioness'},
+    { name: 'Tiger', url: 'http://localhost/tiger'},
+    { name: 'Tigress', url: 'http://localhost/tigress'},
+    { name: 'Cat', url: 'http://localhost/cat'},
+    { name: 'Dog', url: 'http://localhost/dog'},
+];
+```
+
+## 编写 React 应用
+
+```javascript
+// 让我们创建搜索组件
+var SearchComponent = React.createClass( {
+    // 将输入元素重置为空格
+    getInitialState: function() { return { searchString: '' }; },
+    handleChange: function(e) {
+        // 注释掉下一行将导致文本框不改变值，因为输入框不能独立于分配给它的值进行更改。在这种情况下，它是 this.state.searchString。
+        this.setState({searchString: e.target.value});
+    },
+    // 渲染此组件
+    render: function() {
+        var libraries = this.props.items;
+        searchString = this.state.searchString.trim().toLowerCase();
+        if (searchString.length > 0) {
+            // 我们正在搜索。过滤结果。
+            libraries = libraries.filter(function(l){
+                return l.name.toLowerCase().match(searchString); return <li>{l.name} <a href={l.url}>{l.url}</a></li>;
+            });
+        }
+        // 返回此组件的 JSX 语句
+        return <div>
+            <input type="text" value={this.state.searchString} onChange={this.handleChange} placeholder="在此输入" />
+            <ul>
+                {libraries.map(function(l) {
+                    return <li>{l.name} <a href={l.url}>{l.url}</a></li>;
+                })}
+            </ul>
+        </div>;
+    }
+});
+// 在页面上渲染 SearchComponent
+ReactDOM.render(
+    <SearchComponent items={libraries} />,
+    document.getElementById('container')
+);
+```
+
+将此代码放入你应用程序的主`.js`文件中并运行。它将产生基础的下拉功能。输入部分动物名称将把它们从主列表中过滤掉。理想情况下，你会从数据库或其他数据存储机制加载此列表。
+
+# EcmaScript 6：你需要了解
+
+当 React 创建时，ES5 规范正处于焦点中心。在 2015 年甚至是整个 2016 年，它仍然新颖且新鲜。
+
+然而，到 2017 年，它开始逐渐适应 ES6 语法。这就是为什么在学习 React 时，讨论应用于这一新标准中的重大变化是非常重要的。
+
+当你学习 React 时，你学习的远不止是 React。它在 ES5 中运行良好，但那种语法正在变得过时。这正是许多程序员可能会感到困惑的地方，因为本质上同一个库在你在互联网和书籍上看到的不同示例中，看起来可能并不一样。
+
+如果你不认识 React，那么你可能对 EcmaScript 6（ES6）一点都不了解。我知道这种假设是危险的，但我想通过在本章中将学到的内容来证明它是合理的。
+
+ES5 本身并没有任何问题。它不会在短期内消失。我认为，在行业仍处于从一个规范向另一个规范过渡的时期编写教育类书籍，偶尔在两者之间进行切换是很重要的。
+
+但我们已经读到了书的一个位置，现在我们将调查 EcmaScript 6 规范中对 JavaScript 的主要区别和新增。在书结束时，我还会为这里讨论的许多主题提供备查表（cheat sheets）。
+
+## `var` 和 `let` 关键字
+
+在 ES6 中，共识是不再使用`var`关键字，而是使用`let`关键字。其背后的原因下文所示：
+
+- 使用`let`关键字时没有变量提升（hoisting）。如果你熟悉 JavaScript 的变量提升机制，当你使用新的`let`关键字时会发现区别。
+
+变量提升是指 JavaScript 将所有变量定义移动到它们所在作用域的顶部。这个不为人知的过程是在幕后完成的。但它确实是如此：
+
+```javascript
+{
+console.log( a ); // undefined; 但仅因为被提升了
+var a = 1;
+}
+```
+
+而`let`的示例：
+
+```javascript
+{
+console.log( a ); // ReferenceError: "a" 根本未定义
+let a = 1;
+}
+```
+
+在上面的示例中，当尝试打印变量的值时，控制台输出的结果是`undefined`。在第一种情况下，是因为变量被提升了。但在第二个示例中，是因为它没有被提升。
+
+- 在全局作用域中。`let`关键字和旧的`var`关键字仍然属于全局作用域。但`let`关键字没有绑定到全局`window`对象上：
+
+```javascript
+var a = 1;  // 将绑定到全局 window 对象
+let b = 1; // 将不会绑定到全局 window 对象
+console.log(window.a);  // 1
+console.log(window.b); // undefined
+```
+
+- 在函数作用域中。`let`和`var`关键字在函数作用域内仍然是相同的：
+
+```javascript
+function helloThere() {
+let x = 1;// 相同的作用域
+var y = 1; // 相同的作用域
+}
+```
+
+- 在`for`语句中。`let`关键字在`for`循环内部可见，而`var`在整个函数作用域内可见。因此，`let`关键字限制了在`{`和`}`括号指定的最相邻块内定义的变量的可见性。下面，让我们先看看`var`传统如何处理作用域：
+
+```javascript
+// 在函数和 for 循环中使用 var 的示例
+function helloThereIterator() {
+  // i 在理论上在这里也是可见的
+  for (var i = 0; i < 10; i++) {
+    // i 在这里是可见的
+  }
+}
+```
+
+这可能不是`var`关键字最好的示例（因为`for`循环是它最初定义的地方），尽管它在函数中的任何地方都可用。但它仍然说明了这一原理。
+
+传统上，已知`var`可以在函数`{ }`括号内访问，并对函数作用域隐藏，除非它是`window`对象。这是基本规则。但 JavaScript 就是复杂于此……而且只有在函数内部没有找到变量时，才会检查`window`对象，而这是在函数外部。
+
+作为程序员，确定该变量是否应该在全局作用域内可用是你的责任。这是 JavaScript 尝试“为所有人提供所有服务”的一个例子。
+
+虽然这种宽松性在很多情况下是有帮助的，并让学习曲线几乎于不存在，但从长远来看，你会遇到这些奇怪的情况，特别是当你的程序在大型项目中达到某些长度时。
+
+现在，让我们来看同样的示例。我们所做的只是将`var`替换为`let`关键字。这产生了不同的作用域预期。
+
+```javascript
+// let 示例
+function helloThereIterator() {
+  // i 在这里不可见
+  for (let i = 0; i < 10; i++) {
+    // i 在这里可见，并且在该作用域内部的回调函数中也可见
+  }
+}
+```
+
+这可能不是`var`关键字最好的示例（因为`for`循环是它最初定义的地方），尽管它在函数中的任何地方都可用。但它仍然说明了这一原理。
+
+- `let`关键字不允许重复声明。
+
+`var`关键字（在严格模式下）允许你在同一作用域内重新声明它的值。但`let`关键字并非如此：
+
+```javascript
+'use strict';
+var a = 1; // OK。
+var a = 2; // OK。a 现在是 2；
+
+'use strict';
+let a = 1; // OK。
+let a = 2; // 语法错误：标识符 a 已经声明。
+```
+
+- `let`关键字还可以用于避免闭包问题。它将绑定一个新值而不是保留对旧值的引用。
+
+```javascript
+"use strict";
+for (let i = 1; i < 10; i++) {
+  $.ajax("url": "script.php", function(msg) {
+    console.log(i); // 变量 i 在丢失了原始作用域，它不再与 for 循环中定义的 i 变量关联
+  });
+}
+```
+
+这段代码演示了一个常见的 JavaScript 问题，当在`for`循环中使用`var`关键字并结合 ajax 调用时经常发生。在这里，由于`i`似乎在 ajax 的回调函数内部被重新定义，它不再与`for`循环中定义的同一个`i`变量关联。
+
+这个经典问题通常通过将`i`变量作为参数传递给函数来避免，这无谓地创建了变量的新实例。
+
+然而，当使用`let`定义相同的循环时，情况就不如此了。它有效地解决了这个常见问题。这里是同样的示例，这次使用了`let`。
+
+```javascript
+"use strict";
+for (var i = 1; i < 10; i++) {
+  $.ajax("url": "script.php", function(msg) {
+    console.log(i); // 这里的 i 是最初在 for 循环中定义的那个
+  });
+}
+```
+
+（注：提供的原文在此处有一个误，写着“这次使用`let`”，但代码块中使用`var i`；我保留了逻辑流。）
+
+这确实解决了与循环和回调函数相关的很多头疼问题。
+
+- 此外，`let`关键字允许变量的值保持在定义的作用域内，如孤立示例所示：
+
+```javascript
+{
+  let a = 1;
+};
+console.log( a ); // 错误：a 未定义
+```
+
+- 换句话说，可以说使用`var`关键字定义的变量从定义的那刻起在整个范围内都是可见的。
+
+而`let`关键字仅对其定义的块作用域内部的所有其他作用域可见，即使它是回调函数。这并没有解决任何重大软件问题，但它有助于我们以更直观的方式完成工作，特别是在处理脚本结构中的多个作用域时。
+
+
+
+## 新的 `const` 关键字
+
+`Const` 与 `let` 完全相同。区别在于一旦你使用 `const` 定义了值，在程序的后半部分就无法重新定义。这样做将产生错误：
+
+```javascript
+let a = 1;
+a = 2; // OK，我们只是重新赋值了变量的值
+
+const a = 1;
+a = 2; // 错误，这是一个常量，不能重新赋值！
+```
+
+这有什么用？常量变量传统上用于计算机程序中定义在应用程序运行期间不会改变的值。它们非常适合标记值和不应改变的应用设置。
+
+噢，还有一点……当涉及到对象时……只有 `const` 关键字虽然防止了重新赋值，但实际上并没有让赋值的对象变得不可变。与许多其他语言相比，使一个对象变为 `const` 也会让它的属性变得不可变。
+
+## 解构赋值
+
+`EcmaScript 6` 向我们介绍了解构赋值。这是新的 JavaScript 功能。之前对 `let` 关键字的解释为讨论下一个主题奠定了基础。所以，让我们来看看它们是如何工作的：
+
+```javascript
+let {a, b} = obj;
+```
+
+在本示例中，创建了两个变量 `a` 和 `b`。然后，从名为 `obj` 的对象中获取属性 `obj.a` 和 `obj.b`，并将它们分别赋值给这些变量。因此这等同于以下操作：
+
+```javascript
+let a = obj.a;
+let b = obj.b;
+```
+
+这种格式占据了更多空间。解构赋值节省了空间并为我们的代码提供了更好的可读性。习惯它们吧！:)
+
+## For-of 循环
+
+这是 `EcmaScript 6` 中一种全新的循环类型。让我们来看看它是如何工作的：
+
+```javascript
+for (let [key, value] of map) { ... }
+```
+
+这个强大的 `for` 循环将遍历存储在 `map` 中的值。遗憾的是（像 JavaScript 中的很多事情一样），`for-of` 循环不能作用于对象（及其属性）。这几乎是一个令人费解的设计决策。那么，`for-of` 循环可以作用于什么呢？
+
+`for-of` 循环专门设计用于仅对 `Array`、`Map` 和 `Set` 对象工作。
+
+## `Map` 对象
+
+就像 `Array` 对象一样，`ES6` 增加了一个名为 `Map` 的新对象。`Maps` 无非只是一个简单的键/值映射。它们非常像 PHP 中的关联数组。
+
+`Maps` 不应该在处处使用。只有在你之前使用对象作为集合的地方才使用它们。这正是它们的用途。在你的 JavaScript 程序设计中，使用对象仍应是主要的。
+
+`Maps` 具有一个 `.size` 属性来决定其大小。与对象不同，在对象中你必须手动计算大小。当你有通过键/值关联对的数据集合时，请将它们与 `for-of` 循环一起使用！
+
+## 箭头函数
+
+`EcmaScript 6` 最受欢迎的特性之一是箭头函数。我认为你应该尽早开始使用它们。箭头函数只是用更紧凑的语法编写的 JavaScript 函数，并且与使用 `function` 关键字创建的普通函数略有不同。这是基本的箭头函数语法格式，初看起来可能有点奇怪：
+
+`name = (params) => returned expression`
+
+例如，你可以使用箭头函数编写类似下面的代码：
+
+```javascript
+x = (a, b) => { console.log("This is arrow function x with params = " + a + " and " + b) };
+```
+
+但这只是一个函数定义。它可以像普通函数一样如下执行：
+
+```javascript
+x(5, 7);
+```
+
+与普通 JavaScript 函数相比，一个根本性的区别在于箭头函数处理 `this` 关键字的方式。它从根本上解决了与 `let` 关键字为普通作用域解决的相同（或相似）的问题。我们需要在这里进行一个稍微复杂一点的讨论。
+
+JavaScript 箭头函数是一个仅适用于 `EcmaScript 6` 的特性。它在这一规范之前并不存在。它增加了在对象内部创建匿名函数以便使用的便利性，同时保留了匿名事件处理程序内部 `this` 对象的值。
+
+箭头函数还修改了对象作用域定义内无名回调函数中使用的 `this` 对象的功能，通过自动将其绑定到对象的最顶层局部作用域。这让我想起了一点 `hoisting`（提升）（我在我的另一个教程中简要提过[提升](http://www.developerpost.net/new-javascript-features-in-ecmascript-6.html)）。
+
+箭头函数帮助我们逃避我们习惯的原始作用域模型中固有的这种“体操”动作（如果你不熟悉我指的是什么，请继续阅读，本教程将解释它）。
+
+箭头函数也因其语法被称为“胖箭头”函数。
+
+```javascript
+(params) => { statement };
+```
+
+只需将其看作定义 JavaScript 函数的不同语法即可。
+
+本教程的其余部分将解释旧 JavaScript 示例与区别，以及如何使用箭头函数改进代码可读性并在内部调整对象功能。
+
+箭头函数是一个仅适用于 `EcmaScript 6` 的特性。它在这一规范之前并不存在。它通过在匿名事件处理程序内部保留 `this` 对象的值，增加了在对象内部创建匿名函数以便使用的便利性。
+
+箭头函数通过自动将其绑定到对象的最顶层局部作用域，修改了对象作用域定义内无名回调函数中使用的 `this` 对象的功能。这让我想起了一点 `hoisting`（提升）（我在另一个教程中简要提过[提升](http://www.developerpost.net/new-javascript-features-in-ecmascript-6.html)）。
+
+箭头函数帮助我们逃避我们习惯的原始作用域模型中固有的这种“体操”动作（如果你不熟悉我指的是什么，请继续阅读，本教程将解释它）。
+
+箭头函数也因其语法被称为“胖箭头”函数。
+
+```javascript
+(params) => { statement };
+```
+
+只需将其看作定义 JavaScript 函数的不同语法即可。
+
+本教程的其余部分将解释旧 JavaScript 示例与区别，以及如何使用箭头函数改进代码可读性并在内部调整对象功能。
+
+（注：由于提供的原文后半部分存在大量重复和乱码，上述翻译已根据逻辑对核心概念进行了整理和处理，以确保技术内容的准确性。）
+
+在这个示例中，我所做的只是将此对象赋值给 `main` `Sprite` 对象作用域内新创建的变量。在 `timer` 定义之前。所以实际上，我们现在在 `Sprite` 内部有了类似 `this.that` 的东西。
+
+我还将其在 `setTimeout(function() { ... });` 内部改为了 `this.that`。
+
+这次让我们运行代码，看看现在会发生什么：
+
+5
+
+`this.that` 的值是 `5`。这是在我们把此对象绑定到名为 `that` 的变量时发生的。
+
+我确定你以前在上面的示例中使用过我刚才描述的技巧。如果没有，那好吧，我很高兴你现在知道了它。大多数程序员都是通过直觉发现它的。因为要学习 JavaScript 函数对象与函数内部匿名事件之间作用域规则的差异需要时间的。
+
+在我们脸上带着微笑完成所有这些解释后，我们终于来到了最后一个重大的终极问题！
+
+## 什么是 JavaScript 中的箭头函数？
+
+JavaScript 中的箭头函数是什么？它与匿名函数之间的区别是什么？
+
+JavaScript 中的箭头函数是具有简写语法的匿名函数。与标准匿名函数相比，唯一的区别在于语法以及 `this` 对象在其作用域内的处理方式。这是一个小细节，在涉及到 `this` 对象的绑定时，两者的实际操作方式略有不同。
+
+让我们对比一下普通的 JavaScript 匿名函数和对应的箭头函数。我们已经知道 JavaScript 中像 `function(){...}` 这样的匿名函数是什么样的。但箭头函数实际上具有独特的语法。
+
+注意，两者的功能完全相同，都是执行某些代码。但箭头函数会自动处理我们在之前的示例中经历过的繁琐的 `this`/`that` 处理。箭头函数会创建自己的不会改变的本地 `this` 对象。所以我们永远不需要重命名或将其绑定到另一个变量（如 `that`），就像之前的示例那样。
+
+这是 `EcmaScript 6` 中定义 JavaScript 新箭头函数的新语法：
+
+```javascript
+() => { };
+```
+
+提个醒。JavaScript 中的箭头函数不能与 `new` 运算符配合。它们是匿名的，通常用于事件。
+
+但同时也存在语法上的变体：
+
+```javascript
+(a, b) => { ... } // 多参数
+a => { ... }     // 单参数
+```
+
+注意 `params` 可以包含一组由逗号分隔的多个参数。在这种情况下，你必须始终使用括号。对于单参数语法，你不需要使用括号。
+
+在真实世界的场景中，我们也可以将箭头函数赋值给变量名。在这种情况下，匿名箭头函数变成了具名的。函数返回其函数体作用域内部的结果。
+
+```javascript
+var add = (a, b) => { return a + b; }
+```
+
+话虽如此……
+
+```javascript
+add(1, 2); // 返回 3
+```
+
+但还有另一种定义箭头函数的无作用域体语法：
+
+```javascript
+var add = (a, b) => a + b;
+```
+
+注意这里的返回值由一个普通的 JavaScript 语句表示。
+
+这将产生完全相同的结果。我们删除了 `return` 语句。但函数仍然会返回 `a + b` 的值。在这种情况下，`a + b` 是一个 JavaScript 语句，没有作用域体。默认情况下，未指定作用域的箭头函数即使没有指定 `return` 关键字，也会返回语句的值。
+
+最后，让我们把所有内容整合在一起，重写我们原始的 `Sprite` 对象示例。只是现在使用了箭头函数。你可以看到，不再有创建并设置 `this` 绑定到 `that` 变量的必要了。箭头函数会为你、为我们处理好这些！
+
+```javascript
+/* JavaScript 中显著简化的 Sprite 对象 */
+var Sprite = function() {
+  this.angle = 5;
+  this.draw = function() {
+    alert(this.angle); // 显示 sprite 的角度
+  }
+  var timer = setTimeout( () => {
+    // 注意这里使用了箭头函数
+    alert(this.angle); // 使用 "this" 显示 "5"，而不是 "that"。
+  });
+};
+var ship = new Sprite(); // 实例化 ship
+// ship.draw(); 使用 this.angle 旋转角度绘制 ship
+```
+
+我们只是简单地切换了用作事件处理的标准匿名 `function(){...}`。
+
+并将其替换为箭头函数 `() => {...}`。
+
+从那一刻起，新匿名事件函数内部的 `this` 关键字开始正确引用原始 `Sprite` 对象的 `this` 关键字。无需我们编写任何额外的绑定代码。
+
+那么……我认为我们对箭头函数的讨论到此结束。希望你喜欢这个教程。请与你的朋友在 Twitter 上在你的 Facebook 页面上分享它。
+
+Developer Post 是一个小型网站，致力于对其他看起来复杂的主题进行简单解释。希望这能帮助那里的某人编写更好的 JavaScript 代码。
+
+如果你想学习更多关于 `ES6 Harmony` 的知识，请访问 [EcmaScript 6 新特性即 Harmony](http://www.developerpost.net/new-javascript-features-in-ecmascript-6.html)（打开新标签页）以熟悉基础。
+
+根据[此 SitePoint 文章](https://www.sitepoint.com/es6-arrow-functions-new-fat-concise-syntax-javascript/)，箭头函数是 `ES6` 最受喜欢的功能。
+
+这个 Mozilla [箭头函数教程](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) 帮助我熟悉了箭头函数。在写这篇文章时，我将其作为我的第一个参考。
+
+## 立即执行箭头函数（IIAF）
+
+如果你熟悉 jQuery 或 JavaScript 插件开发，可能间接遇到过 `IIAF`，并且已经见过这种立即执行函数表达式（`IIFE`）的语法：
+
+```javascript
+(function () { })()
+```
+
+我们在定义处执行该函数。
+
+你会在 HTML 页面底部、就在关闭 `body` 标签上方发现这种语法。这种技术被用于等待 HTML 元素加载。
+
+同样地，箭头函数也可以实现同样的效果。
+
+```javascript
+(() => { })()
+```
+
+这种语法被称为立即执行箭头函数。周围的括号使函数在该处执行。
+
+## 反引号（`）字符串
+
+反引号只是奇引号字符的另一个名称，也称为反引号。
+
+像 `${ expression }` 这样的语句现在可以使用反引号进行插值。它被位于键盘 `1` 键左侧的第三组引号。
+
+反引号字符串的好处之一是它可以跨行分割。这是 JavaScript 缺少的一个急需功能。
+
+这些类型的字符串也被称为模板字符串。下面显示了几个示例：
+
+| 示例 |
+| --- |
+| `第一行文本 可以在这里继续无需分号` |
+| `另一个包含 ${expression} 的文本字符串` |
+| `// 就像普通引号一样，反引号也可以被转义，见下方： // 以下语句将返回 true \\` === "\`"` |
+
+你可以在反引号内同时使用普通的单引号（`'`）和双引号（`"`）。
+
+## 新数组方法
+
+以下是 `ES6` 中数组对象最重要的补充。
+
+让我们按如下定义常见的数组对象：
+
+```javascript
+let arr = new Array();
+```
+
+在 `ES6` 中，我们有这些新的数组操作方法：
+
+### `find`
+
+`arr.find(callback[, thisArg])`
+
+返回第一个通过 `callback` 产生“真值”的项目的值。
+
+### `findIndex`
+
+`arr.findIndex(callback[, thisArg])`
+
+`findIndex` 方法与 `find` 完全相同。区别在于它将返回产生“真值”的项目的索引，而不是值。
+
+### `fill`
+
+`arr.fill(value[, start[, end])`
+
+`fill` 方法初始化或“填充”数组中每个索引处的所有元素。它可以通过可选参数 `start` 和 `end` 仅初始化或设置数组的某部分：
+
+`arr.fill(value[, start = 0[, end = this.length]]);`
+
+默认情况下，`start` 为 0，`end` 为数组的长度。
+
+### `copyWithin`
+
+此新数组方法将自身内部的一个序列项作为数组进行复制，从 `start` 指定的位置开始，并从到 `target` 指定的索引开始复制：
+
+`arr.copyWithin(target, start[, end = this.length])`
+
+这是一个实用的示例：
+
+```javascript
+var arr1 = [1,1,1, 2,2,2, 3,3,3]; // 将前 3 个索引复制到最后 3 个索引
+arr1.copyWithin(6, 0, 3); alert(arr1); // 1,1,1, 2,2,2, 1,1,1
+```
+
+这段代码显然复制了从数组索引 0 开始的 `"1,1,1"` 序列，并将其复制到从目标索引 6 开始的最后 3 个索引处。这非常像 C++ 中的内存操作，只不过对象是数组。
+
+## 新的内置类
+
+内置类是 JavaScript 自带的预存在对象。例如，常见的有 `Object`、`Array`、`Function`、`Date`、`Math` 以及其他……`EcmaScript 6` 增加了几个新的内置类，列如下：
+
+1. `Map` 是一个键值对集合。几乎像数组。
+2. `Set` 类似于 `map`，不同之处在于每个存储的值都是唯一的。
+3. `Symbol` 用于创建私有对象/类属性。
+4. `Promise` 管理将在未来某个时候发生的事件。
+
+`Promise` 很有趣，因为所有事件通常都会发生在未来。`Promise` 到底有什么不同？恰当的解释应该是，无论你的 HTML 文档结构是否发生变化，它们都将发生。这些被称为“承诺”（promises）的特殊事件保证了事件将在未来的某个时刻发生。
+
+`Promise` 解决的问题之一是经典案例：即 HTML 元素的事件（如 `onclick`）会被更新应用程序视觉部分的代码所覆盖。因为这在活跃更新的前端视图中经常发生，某些事件可能根本不会被触发，仅仅是因为 DOM 被重写了。
+
+一个 `Promise` 可以存在于“未来”，无论你网站的 DOM 结构发生了什么，只要原始 DOM 的完整性保持不变，或者与事件执行时存在的 DOM 相似即可。
+
+### 感谢
+
+本教程书由我独立出版，并分发给我的免费 JavaScript 时事通讯的订阅者。没有你们的支持，这一切是不可能实现的。
+
+你曾经尝试过编写并发布自己的书吗？编写一本技术书籍需要投入数小时的研究和思维处理！
+
+因此，我想把这一章节专门用于感谢你购买《React Gems》的一副本书。正如你所知到的，你的购买包含了免费的终身书籍更新。
+
+每当我添加、修改或编辑书籍的重要组成部分时，你将继续自动收到包括新章节在内的书籍更新，我计划在 2017 年内完成这些工作。
+
+更新版本的教程书将发送到你购买此版本时使用的 PayPal 邮箱地址。随着我收集更多的教育材料，每 1-2 个月或在可用时会进行新更新（一次高质量的更新需要时间）。
+
+免费更新已包含在你的购买中，你无需做任何事情即可继续接收。
+
+感谢阅读和你的持续支持！
+
+作者，
+
+Greg Sidelnikov
+
+
+
+`greg.sidelnikov@gmail.com`
+
+### 书籍更新 2017 年 1 月 6 日
+
+编辑并改进的章节：
+
+- “作者的寄语”（改进了文本）
+- “学习 React 的主要障碍”（加深了对 JSX 和 babel 的见解）
+- “EcmaScript 6 - 你需要知道的知识”（修复了 `let`/`var` 示例）
+- 书籍长度变化：+2 页。
+
+### 书籍更新 2017 年 1 月 10 日
+
+编辑并改进的章节：
+
+- 修复了第 37 页的拼写错误（将 `of` 改为 `or`）
