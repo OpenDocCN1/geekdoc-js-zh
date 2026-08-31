@@ -1,0 +1,940 @@
+
+# React – 用于构建用户界面的 JavaScript：为应用程序中的每种状态设计简单视图
+
+![](img/image_rsrc1AF.jpg)
+
+## 前言
+
+你好，热烈欢迎我们拥有大量获得客户好评书籍的出版者。本书由技术专家和认证候选人设计，而且该技术的可用客户总量表明，市场迫切需要具备实时知识的人士来管理该领域的项目。这就是为什么我们相信，如果你正在学习任何技术，就必须以场景化和实时实现过程的形式来学习，我们已经在书中添加了所有必要内容。希望你发现这本书对你非常有帮助，并祝你学习一切顺利。
+
+## 引言
+
+想象一下你喜欢的名人在 Facebook 上发布了一张照片，这在任何情况下都值得考虑。为了让你了解更多，现在你去点赞这张图片，然后你突然发现也可以查看评论，这就是通往交付的途径。为了让你了解更多，当你浏览评论时，你会发现点赞数增加了 100，因为你点赞了这张图片。从科学上攻克未知是一项巨大的任务，但当你到达目的地时，页面没有刷新，数字只是神奇地改变了，让你很惊讶。为了让你获得更多信息，这种魔法就是`react.js`。
+
+为了更好地解释，想象一下你的网页。从科学上攻克未知是一项巨大的任务，请仔细注意——我再次以 Facebook 为例，因为每个人都在使用它，而 Facebook 共同创建了`react.js`。进一步介绍：数十亿的帖子、如此巨大的流量、数百万的点赞使其在结束时达到真实的本质。成功包括了你学习的目的：他们如何管理所有极速内容并让你很惊讶。为了让你获得更多信息，他们开发了一个名为`react.js`的库。
+
+想象 Facebook 上的一个帖子，这在任何情况下都值得考虑。为了让你了解更多，这个帖子作为一个容器，包含了多个小部分，如点赞、评论、分享和被称为`components`的评论框。我强烈希望你能获得它们的产物。进一步介绍：是的，通过`react`，你的页面可以拆分为`components`。为了让你了解更多，你可能在想我们为什么要这样做——前端已经有了很棒的框架？如果没有，你一定会很惊讶的。
+
+## 工作原理
+
+整个网页都基于`html`，这是它的特征。根据深思的练习，这一切都始于一个简单的`HTML`代码。
+
+这个帖子作为一个容器，包含了多个小部分，如点赞、评论、分享和被称为`components`的评论框。通过`react`，你的页面可以拆分为`components`。你可能在想我们为什么要这样做——前端已经有了很棒的框架？如果没有，你一定会很惊讶的。
+
+整个网页都基于`html`，这是它的特征。根据深思的练习，这一切都始于一个简单的`HTML`代码。
+
+这个帖子作为一个容器，包含了多个小部分，如点赞、评论、分享和被称为`components`的评论框。通过`react`，你的页面可以拆分为`components`。你可能在想我们为什么要这样做——前端已经有了很棒的框架？如果没有，你一定会很惊讶的。
+
+## 为什么它如此快
+
+React 拥有`Virtual DOM`概念。为了让你了解更多，它通过编译后的输出创建 HTML。当你到达目的地时，页面没有刷新，数字只是神奇地改变了，让你很惊讶。这种魔法使其在结束时达到真实的本质。
+
+## React JS
+
+1. 单页应用。
+2. 整个页面保持不变，只有少数组件发生变化。
+3. 代码易于扩展和维护。
+4. 由于 HTML 是通过 JS 创建的，具有更多功能。
+5. 同构渲染（服务端渲染）。
+6. 极快的速度。
+
+如果非要回答什么是 React JS，那么 React 是一个 JavaScript 库，你可以将其附加到任何现有技术栈中，并让 UI 变得动态，以获得优越感和信念的极致乐趣。我相信你必须掌握学习 React 的方法。React 是由`Facebook`在 2011 年专门为 Facebook 开发的，并在 2013 年将代码公开。但与此同时，在 React JS 之前，我们有一个`DOM`的原始概念，但引入了 React 之后，我们有了`virtual DOM`（虚拟 DOM），这必须被非常仔细地考虑。根据深思的练习，这是一个有趣的概念，我们将在下文中详细讨论。作为开始，`DOM`是文档对象模型，当浏览器加载网页时，它会将所有元素转换为一个以`document`为根的对象。
+
+为了进一步深入并向你介绍更多信息，当你在网页上添加或修改数据时，除了简单的点击“load more”（加载更多）节点被附加到树上之外，如果你更改了某些数据，你需要通过引入观察行代码来重新刷新它。但这些都是早期 Facebook 上的信息和委托。他们以前经常使用`+1`更新通知，这样当你点击它时，网页会重新加载，数据也是如此，这是先前的因素之一。通过`virtual DOM`，你可以实时修改节点，因为现在所有元素都被处理为可附加的独立组件，其节点值会随着脚本而改变。这些术语太多了，让我们一个一个地讨论它们。
+
+![](img/image_rsrc1AG.jpg)
+
+### 虚拟 DOM 概念
+
+现在你知道什么是 React JS 了，让我们转向为什么要用 React JS？如上所述，`Document Object Model`（文档对象模型）是浏览器中网页基于树的对象的表示。记住仔细关注这一点，通过 JavaScript 的帮助，你可以更改元素及其值，而科学地攻克未知事物是一项巨大的任务。进一步进入特征描述，当你编写`window.alert()`或`document.getElementById()`时，你正在使用 JavaScript 来更改 HTML 标签，而这些标签现在是对象，因此`window`和`document`在这里都是`objects`（对象）。
+
+![](img/image_rsrc1AH.jpg) ![](img/image_rsrc1AJ.jpg)
+
+现在，问题在这里。想象有一个包含十项的列表，你只更改了其中一个的值，而科学地攻克未知事物是一项巨大的任务。浏览器将重新加载整个包含 10 项的列表——并且为了你的学习之目的，成功包括它会变得有多慢！
+
+那么，解决方案是什么？我们只需要更新变化的地方！这里引入了`virtual DOM`的概念，这必须被非常仔细地考虑。然而，我强烈建议将`Virtual DOM`考虑为`DOM`的复印件。它不是`DOM`，它仍然是虚拟的，也就是说，无论你在`virtual DOM`中改变了什么，真实的网页都不会受到影响。
+
+现在，`Virtual DOM`的操作比`DOM`快得多，因为这里不涉及浏览器，因为它只是一个副本！你用`JS`做的任何更改都会反映在`Virtual DOM`中。为了进一步深入并向你介绍更多信息，浏览器将比较`DOM`和`virtual DOM`，并仅更新更改，就像`VCS`（版本控制系统）处理冲突一样，使其工作方式更加高效。
+
+### 组件化 UI
+
+React 和 Angular 都拥抱了基于组件的 UI 结构！现在，这已成为 Web 开发中不可避免的一部分。然而，我认为基于组件的 UI 将整个 Web 应用分为可重用的独立单元，这些单元独立地与服务器交互，允许`DOM`动态变化，并实现生产概念的人格化。但与此同时，`组件化 UI`和`Ecmascript 2015`都让 Web 开发变得更像一种编码体验，因为现在我们有了类、具有可注入组件的顶层封装。每当我们回答什么是 React JS 时，组件化开发就一直如影随形！
+
+![](img/image_rsrc1AK.jpg) 例如，每个网站都有共享的 UI：头部是相同的，页脚也是相同的，只有内容动态变化，并实现生产概念的人格化。头部是单个组件，页脚是一个组件，内容共享 CSS，但每个路由都有对服务器和数据库的独立调用。
+
+### Babel 和 JavaScript
+
+我们将在下文中讨论`JSX`，但一旦`JSX = JS + XML`，你使用 React 以`JSX`渲染页面，浏览器并不理解它！等等，浏览器不理解它！它只理解 Vanilla JavaScript（原生 JS）。然而，考虑到增量并进一步，仅仅在 Angular 中 Typescript 被转换为`JS`，而在 React 中，这是通过`Babel`完成的。`Babel`是一个负责`JSX`转换工作的编译器，这必须被非常仔细地考虑。尽管 React 只是一个可以附加到任何现有应用程序的库，用`JSX`编写代码非常方便且简洁，我们将讨论它。
+
+### React 和 JSX
+
+如果不讨论`JSX`，我们就无法完成这篇“什么是 React JS 博客”。如果你用过 Angular 以及相应的 Typescript，那么你基本上在使用 Typescript（它是组件中 JavaScript 的超集）以及用于双向数据绑定的 Angular 预定义标签和额外功能。但在这里，你可以以`JSX`的形式将标记语言和脚本放在一起。
+
+![](img/image_rsrc1AM.jpg) 让我们来看一个基础示例：在目标位置你定义了一个变量`name`，并在大括号中使用它的值作为单向数据绑定，这将在下文中详细讨论。并在你的`render()`方法中使用它，你就能观察到结果。
+
+## 使用 React.js 的目的是什么？
+
+我从事 ReactJS 工作，因此我可以很好地解释这一点。ReactJS 是由 Facebook 设计的一个开源 JavaScript 库，旨在通过最少的代码快速高效地创建丰富且交互良好的 Web 应用。
+
+### 历史
+
+在 Facebook 开发`ReactJS`时，虽然可以使用`Angular`等其他技术，但大多数开发者被迫编写大量的代码；这是其中最著名的问题之一。他们希望有一个框架可以允许他们拆解复杂组件并复用代码以更快地完成项目。
+
+### 解决方案
+
+ReactJS 提供了开发者寻找的解决方案。它使用了`JSX`（一种独特的语法，允许使用 HTML 引以及 HTML 标签语法来渲染特定的子组件）。这对于促进机器可读代码的构建非常有帮助，同时可以将组件组合成一个单次可验证的文件。
+
+### 为什么很多人倾向于使用 ReactJS？
+
+- 它将 HTML 直接引入你的`JS`中。
+- 组件的概念是使`ReactJS`脱颖而出的原因。
+- `ReactJS`中的`Props`允许将自定义数据传递给特定的 UI 组件。
+- `State`允许在一个区域中存储所有更改。
+- 它使用`Virtual DOM`使应用运行飞快。
+- `ReactJS`开发者将帮助你制定可实现的目标，并演示业务如何利用该技术加速增长、提高转化、降低成本并提高效率。
+
+### React 中的单向数据绑定
+
+你一定听过`Angular`中的双向数据绑定。但由于`React`是一个库，由于有`JSX`，那里没有分离的 HTML 和脚本概念。在双向数据绑定中，输入元素的任何更改都会反映在组件中，因为两者都是绑定的。当我们谈论单向数据绑定时，输入元素无法反映`JSX`代码中的更改，除非你使用了更改事件。
+
+记住`Angular`自动使用监听器和定时器来做到这一点，但`React`将其限制为单向数据流。然而，它至少允许动态更改渲染组件，这在以前使用`AJAX`时是不可能的，因为你必须刷新页面；而现在，更改通过单向数据绑定反映在独立的组件上。
+
+### 设置你的环境
+
+#### 安装 Visual Studio Code
+
+1. 下载 Windows 版本的`Visual Studio Code`安装程序。
+2. 下载完成后，运行安装程序（`VSCodeUserSetup-{version}.exe`）。
+3. 默认情况下，`VS Code`安装在`C:\users\{username}\AppData\Local\Programs\Microsoft VS Code`。
+
+或者，你也可以下载`Zip`压缩包，解压并从那里运行`Code`。
+
+**注意：**`VS Code`需要`.NET Framework 4.5.2`或更高版本。如果你使用的是 Windows 7，请确保你至少安装了`.NET Framework 4.5.2`。你可以通过命令提示符使用此命令检查`.NET Framework`版本：
+
+```
+reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\full" /v version
+```
+
+**提示：** 安装会将`Visual Studio Code`添加到你的`%PATH%`中，因此你可以从控制台输入`code .`在该文件夹打开`VS Code`。你需要在安装后重启控制台使`%PATH`环境变量生效。
+
+#### 用户与系统设置
+
+`VS Code`提供了 Windows 用户级和系统级设置。
+
+- **用户设置**：不需要管理员权限，因为位置位于你的用户本地 AppData（`LOCALAPPDATA`）文件夹下。这提供了更平滑的后台更新体验。
+- **系统设置**：需要提升到管理员权限，并将安装放在`Program Files`下。
+
+#### 32 位版本
+
+如果你需要运行 32 位的`VS Code`，提供了 32 位的`Installer`和`Zip`压缩包。
+
+#### 更新
+
+`VS Code`每月发布版本，并在新版本可用时支持自动更新。如果`VS Code`提示你，接受最新更新它将会被安装。
+
+**注意：** 如果你喜欢按照自己的计划更新`VS Code`，可以禁用自动更新。
+
+### 作为开发机的 Windows
+
+Windows 是一个流行的操作系统，它可以是一个极好的跨平台开发环境。本节描述了跨平台功能，例如`Windows Linux 子系统`（`WSL`）和新的`Windows Terminal`。
+
+#### 最近的 Windows 版本
+
+确保你使用的是较新的 Windows 10 版本。检查`设置` > `Windows 更新`查看你是否是最新状态。
+
+#### Windows Linux 子系统
+
+通过`WSL`，你可以在 Windows 上安装并运行 Linux 发行版。这允许你在本地 Windows 机器上工作的同时，在`Linux`上开发和测试你的源码。当配合`Remote - WSL`扩展时，你可以在`WSL`上下文中获得完整的`VS Code`编辑和调试支持。
+
+#### 新版 Windows Terminal
+
+从微软商店获取的`Windows Terminal (Preview)`让你能够在多标签页 shell 中轻松地打开`PowerShell`、命令提示符和`WSL`终端。
+
+### 下一步骤
+
+一旦你安装了`VS Code`，这些主题将帮助你了解更多 VS Code：
+
+- **其他组件**：学习如何安装`Git`、`Node.js`、`TypeScript`以及像`Yeoman`的工具。
+- **用户界面**：对`VS Code`的快速介绍。
+- **用户/工作区设置**：学习如何通过设置按偏好配置`VS Code`。
+- **技巧与窍门**：让你直接上手并学习如何使用`VS Code`高效工作。
+
+## 常见问题
+
+### Windows 安装程序支持哪些命令行参数？
+
+`VS Code`使用 Inno Setup 创建其 Windows 安装包。为了方便操作和获取更多信息，所有的`Inno Setup`命令行开关（switch）均可使用。此外，你可以使用`/mergetasks=!runcode`防止安装程序在完成后启动 VS Code。
+
+### 滚动卡顿且不流畅
+
+在某些设备上，编辑器的滚动并不流畅，而是出现卡顿，导致体验不佳。如果你发现了此问题，请确保已安装了 Windows 10 2018 年 10 月更新，该问题在该更新中已修复。
+
+### 安装程序出现问题了
+
+请尝试使用 zip 文件而不是安装程序，以获取完整的成功信息。为了方便操作和获取更多信息，请将 VS Code 解压到你的`AppData\Local\Programs`文件夹中。
+
+## Hello React
+
+### 设置 Babel 项目
+
+
+
+当前浏览器尚未支持所有新的 ECMAScript 6（即 ECMAScript 2015）特性（请参见兼容性表）。为了实现目标，你需要使用一个编译器（转译器）将你的 ECMAScript 6 代码转换为兼容 ECMAScript 5 的代码。请仔细注意，尽管有其他选项，但 Babel 已成为将 ECMAScript 6 应用程序编译为可在当前浏览器运行的 ECMAScript 的事实标准。同时也要考虑到，babel 也可以编译其他版本的 ECMAScript 以及 React 的 JSX，但这超出了本教程的范围。
+
+在本单元中，你将设置一个开发环境，使用 Babel 开发并运行 ECMAScript 6 应用程序。
+
+## 步骤 1：安装示例应用程序
+
+1. 克隆 `es6-tutorial` 仓库，该仓库包含了我们在教程中使用的抵贷款应用的 ECMAScript 5 版本：
+
+2. `git clone https://github.com/ccoenraets/es6-tutorial`
+
+3. 或者，你也可以下载并解压此文件，而不是克隆仓库。
+
+4. 在浏览器中打开`index.html`并点击计算（Calculate）按钮。
+
+## 步骤 2：设置 Babel
+
+正如你所看到的，当前版本的应用程序可以在当前浏览器中无需编译运行：它是用纯 ECMAScript 5 编写的。根据本节的练习，我们将设置 Babel，以便在下一个单元中开始使用 ECMAScript 6 特性。
+
+1. 打开命令提示符，并进入（`cd`）`es6-tutorial` 目录。
+
+2. 输入以下命令创建`package.json`文件：
+
+3. `npm init`
+
+4. 回所有问题时按`Return`键接受默认值。
+
+5. 输入以下命令安装`babel-cli`和`babel-core`模块：
+
+6. `npm install babel-cli babel-core --save-dev`
+
+7. 安装和运行 Babel 有多种方法。例如，在实际实现中，你也可以全局安装 Babel 并从命令行运行它。
+
+8. 输入以下命令安装`ECMAScript 2015`预设：
+
+9. `npm install babel-preset-es2015 --save-dev`
+
+10. 在 Babel 6 中，每个转换器都是可以单独安装的插件。请仔细注意，预设（preset）是一组相关的插件。
+
+11. 在你的项目中安装`http-server`以使本质得以体现。
+
+12. `npm install http-server --save-dev`
+
+13. 我们使用本地 Web 服务器，是因为本教程的某些部分要求应用程序使用`http`协议加载，如果使用`file`协议加载将无法工作。
+
+14. 在你喜欢的代码编辑器中打开`package.json`。根据`scripts`部分的练习，删除`test`脚本并添加两个新脚本：名为`babel`的用于编译`main.js`的脚本，以及名为`start`的用于启动本地 Web 服务器的脚本。
+
+15. `scripts`部分现在看起来如下：
+
+```json
+"scripts": {
+  "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+  "start": "http-server"
+}
+```
+
+16. 在`es6-tutorial`目录中创建一个`build`目录，用于存放编译后的应用程序版本。
+
+## 步骤 3：构建并运行
+
+1. 在命令行中，确保你处于`es6-tutorial`目录，输入以下命令运行`babel`脚本并编译`main.js`：
+
+2. `npm run babel`
+
+3. 在代码编辑器中打开`index.html`，并按如下方式修改`<script>`标签，以加载`build/main.bundle.js`（`js/main.js`的编译版本）：
+
+```html
+<script src="build/main.bundle.js"></script>
+```
+
+4. 打开一个新的命令提示符，进入（`cd`）`es6-tutorial`目录，输入以下命令启动`http-server`：
+
+5. `npm start`
+
+如果你的计算机上`8080`端口已被占用，请修改`package.json`中的`start`脚本，并指定一个你计算机上可用的端口以获取完整的详细信息。在实际实现中例如：
+
+```json
+"scripts": {
+  "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+  "start": "http-server -p 9000"
+}
+```
+
+# React JS 中的 JSX
+
+在 React 中，`JSX`代表 JavaScript XML，这是它的特征所在。根据深入的思考和练习，它是 ECMAScript 或 JavaScript 的一种类 XML 语法，以便在结束时让真实本质达到启悟。根据深入的思考和练习，它只是 JavaScript 的一种扩展，允许我们在 JavaScript 中编写 XML 语法，以实现简化并并将生产力概念具象化。请仔细注意，最后，你的`JSX`代码将被转译为 JavaScript，以便在结束时让真实本质达到启悟。请仔细注意，根据 React 文档：`JSX`是一个预处理步骤，它向 JavaScript 添加 XML 语法，以便在结束时让真实本质达到启悟。我承认你完全可以在不使用`JSX`的情况下使用 React，但`JSX`让 React 变得优雅得多。
+
+就像 XML 一样，`JSX`标签具有标签名称、属性和子元素。根据深入的思考和练习，如果属性值用引号括起来，该值就是一个字符串，这是最著名的特点之一。这已经很全面且并不逊；否则，将值包裹在大括号中，该值就是被封装的 JavaScript 表达式。
+
+## 现在为什么我们需要 JSX？
+
+React 不是通过将标记和逻辑放在单独的文件中来创建应用程序，而是关注被称为“组件”的松耦合单元，这些单元包含了标记和逻辑，以带来至高无上的快乐和信念。我相信必须掌握 React 应用是如何使用组件构建的。
+
+## 现在应该使用什么扩展名？
+
+这取决于个人喜好，科学地攻克未知是一项巨大的任务。进一步观察发现，有些人倾向于`.js`，而另一些人倾向于`.jsx`，这将对你的智慧能力提供最好的挑战。对于实践的进一步信息，唯一相关的是构建流水线，科学地攻克未知是一项巨大的任务。进一步观察发现，某些构建流水线可以编译`.jsx`，这将对你的智慧能力提供最好的挑战。然而，我强烈认为`create-react-app`并不在乎文件扩展名。我承认你可以使用`.js`文件，它将处理`jsx`编译。
+
+**PS：** 还有另一个`JSX`（JavaScript 语法扩展），它与 React`JSX`完全不同，这将对你的智慧能力提供最好的挑战。根据深入的思考和练习，它提供了静态类型、面向对象的编程（类似于 Java），这是先前的因素之一。我承认你可以在这里找到它，科学地攻克未知是一项巨大的任务。对于实践的进一步信息，编写在`JSX`中的程序应该具有`.jsx`扩展名，并编译成独立的 JavaScript，以便在结束时让真实本质达到启悟。请仔细注意，再次强调不应将其与 React 混淆，以便在结束时让真实本质达到启悟。对于实践的进一步信息，它们有不同的用途。
+
+## JS 和 JSX 之间的区别
+
+`JS`是标准 JavaScript，`JSX`是一种类 HTML 语法，你可以配合 React 使用，从理论上可以让创建 React 组件变得更容易、更直观，我强烈希望你能掌握它们。对于实践的进一步信息，唯一的目的就是让创建 React 组件变得更容易……对于实践的进一步信息，没有其他的了，科学地攻克未知是一项巨大的任务。肯定地解释这一点，如果不使用`JSX`，使用`JS`语法创建大型嵌套的 HTML 文档将是一个非常痛苦的过程；`JSX`仅仅让这个过程变得更简单。
+
+最近我的信息流中出现了几件事，让我觉得“嗯”，并认为在某个时刻可能值得尝试一下。它确实采取了不同的方法，当我第一次读到 React 时，令我反感的因素之一是在 JavaScript 中构建 HTML 的笨拙感，而`JSX`似乎让它变得好了一点——并且更容易理解一些事情。即使从它们的示例中看这两个基础的`JS`小练习——一个带有`JSX`，一个没有`JSX`——对我来说，带`JSX`的那一个立刻更容易理解，也不那么令人反感。
+
+# 在 JSX 中嵌入表达式
+
+`JSX`是 JavaScript 语言的扩展，因此它可以接受放置在大括号内的任何有效 JavaScript 表达式，我强烈希望你能掌握它们。在实际实现中例如，`4 + 4`、`user.firstName`或`formatName(user)`都是有效的 JavaScript 表达式。对于实践的进一步信息，这允许让你的`JSX`更具动态，以带来至高无上的快乐和信念。根据本教程中的深入思考和练习，我们将查看在`JSX`标记中嵌入表达式的一些额外示例，以及在`JSX`表达式中渲染多个 HTML 标签相关的某些规则。肯定地解释这一点，我们将看到需要一个父元素，并学习几种确保我们满足该要求的方法。
+
+## 在 React 中安装 Bootstrap
+
+现在，我们将添加 Bootstrap 来让用户界面看起来更好，以获取完整的详细信息。进一步观察发现，首先，在终端中我们只需如下所示安装最新版本的 Bootstrap。
+
+```bash
+npm install bootstrap@4.3.1
+```
+
+为了使用 Bootstrap，我们现在需要在`index.js`文件中导入它，就像在这里：
+
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.css';
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
+// 如果你想让你的应用离线运行并加载更快，你可以将
+//下面的 unregister() 改为 register()，这是根据观察的完善和标准。
+// 更多关于 service workers 信息：https://bit.ly/CRA-PW
+serviceWorker.unregister();
+```
+
+# 创建组件文件夹
+
+我们将在此项目中添加多个组件，所以创建一个文件夹来存放我们需要的组件是有意义的，你请注意。为了学习目的并成功包含这些内容，我们可以在`src`文件夹中创建一个名为`components`的新文件夹。
+
+在那个组件文件夹中，让我们添加一个新文件来代表购物车中的项目，以便在结束时让真实本质达到启悟。对于实践的进一步信息，这是`item.jsx`文件。
+
+`item.jsx`
+
+现在只需向该文件添加一些简单的 JSX 标记，科学地攻克未知领域是一项艰巨的任务。根据深思熟虑的练习，它只是一个带有文本`Cartable!`的单个`h1`标签。
+
+```javascript
+import React, { Component } from "react";
+
+class Item extends Component {
+  render() {
+    return <h1>Cartable!</h1>;
+  }
+}
+
+export default Item;
+```
+
+我们将该组件添加到`index.js`文件中，这样它就可以在页面上渲染，科学地攻克未知是一项艰巨的任务。为了向你说明更多信息，请注意我们正在移除默认的`<App />`渲染并将其替换为`<Item />`。
+
+`index.js`
+
+```javascript
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import "bootstrap/dist/css/bootstrap.css";
+import Item from "./components/item";
+
+ReactDOM.render(<Item />, document.getElementById("root"));
+
+serviceWorker.unregister();
+```
+
+在`index.html`文件中，我们可以为`body`元素添加一个类，因为我们已经安装了 Bootstrap，但在考虑这一点时要保持非常警惕和谨慎。为了实践和获取更多信息，这将使页面上的内容布局非常整齐。容器（Containers）是 Bootstrap 最基础的布局元素，在使用我们的默认网格系统时必须考虑，这一点必须非常仔细。然而，我强烈建议选择响应式固定宽度容器（意味着其最大宽度在每个断点处变化）或流式宽度（意味着它始终 100% 宽）。
+
+`index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="theme-color" content="#000000" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>React App</title>
+</head>
+<body class="container">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+</html>
+```
+
+好了，我们上路了！
+
+## JSX 中的表达式
+
+通过观察发现，你可以在 JSX 表达式中包含多个标签。进一步刻画，到目前为止我们只看到了一个`h1`标签，但如果我们想在同一个 JSX 表达式中同时拥有`h1`和`button`会怎样呢？根据深思熟虑的练习，为了让其正常工作，我们需要一个外部包裹的`div`，这将被优先考虑并视为完美。然而，为了增量和进一步发展，JSX 表达式必须有一个父元素，以便在结束时让本质符合启示。此外，根据深思熟虑的练习，最佳实践是将整个 JSX 表达式包裹在括号`( )`中。
+
+`item.jsx`
+
+```javascript
+import React, { Component } from "react";
+
+class Item extends Component {
+  render() {
+    return (
+      <div>
+        <h1>Cartable!</h1>
+        <button>Increment</button>
+      </div>
+    );
+  }
+}
+
+export default Item;
+```
+
+## React.Fragment
+
+你可能不希望过多的`div`元素污染你的 HTML 标记，我强烈希望你能避免这种情况。根据上面示例中深思熟虑的练习，我们需要用一个单一的父元素来包裹`h1`和`button`标签，以便在结束时让本质符合启示。为了实践和获取更多信息，这是 JSX 的一条规则，*这将对你的能力智慧带来最大的挑战*。然而，为了实践和获取更多信息，缺点是，如果你检查页面上的标记，会发现现在多了一个额外的`div`元素。
+
+我们可以通过使用`<React.Fragment>`标签代替`<div>`元素来解决这个额外的 div 问题。
+
+```javascript
+import React, { Component } from "react";
+
+class Item extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <h1>Cartable!</h1>
+        <button>Increment</button>
+      </React.Fragment>
+    );
+  }
+}
+
+export default Item;
+```
+
+![react fragment removes extra divs](img/image_rsrc1AN.jpg)
+
+## 为组件添加状态
+
+现在，我们不再在 JSX 表达式中使用静态内容，而是可以使用`state`对象中的某些数据来显示值，科学地攻克未知是一项艰巨的任务。根据下方代码段中深思熟虑的练习，我们添加了带有`count`属性的`state`对象，以便在结束时让本质符合启示。根据深思熟虑的练习，它的值为`0`。为了实践和获取更多信息以便在 JSX 标记中引用该`count`，我们使用`this.state.count`。
+
+```javascript
+import React, { Component } from "react";
+
+class Item extends Component {
+  state = { count: 0 };
+  render() {
+    return (
+      <React.Fragment>
+        <span>{this.state.count}</span>
+        <button>Increment</button>
+      </React.Fragment>
+    );
+  }
+}
+
+export default Item;
+```
+
+输出显示我们设置给`count`属性的值。
+
+
+
+如果我们更改`count`属性的值，UI 将自动更新。
+
+```javascript
+import React, { Component } from "react";
+class Item extends Component {
+  state = {count: 400};
+  render() {
+    return (<React.Fragment><span>{this.state.count}</span><button>Increment</button></React.Fragment>);
+  }
+}
+export default Item;
+```
+
+![react state update](img/image_rsrc1AP.jpg)
+
+## 嵌入函数
+
+也可以在 JSX 标记内部嵌入一个返回值的函数，科学地攻克未知是一项艰巨的任务。根据我们下方`Item`组件中深思熟虑的练习，我们通过观察添加了`styleCount()`函数。为了实践和获取更多信息，该函数的作用是查看`count`状态，如果是 0，则返回字符串值"No Items"。根据深思熟虑的练习，如果值大于 0，它将简单返回该值，科学地攻克未知是一项艰巨的任务。根据 JSX 标记中深思熟虑的练习，我们可以使用`{this.styleCount()}`语法调用该函数，输出该函数返回的任何值。
+
+```javascript
+import React, { Component } from "react";
+class Item extends Component {
+  state = {count: 0};
+  render() {
+    return (<React.Fragment><span>{this.styleCount()}</span><button>Increment</button></React.Fragment>);
+  }
+  styleCount() {
+    const { count } = this.state;
+    return count === 0 ? "No Items" : count;
+  }
+}
+export default Item;
+```
+
+好了！当`count`为 0 时，我们看到"No Items"。
+
+当值高于 0 时，我们看到相应的结果。
+
+```javascript
+state = {count: 500};
+```
+
+![react embedded function result](img/image_rsrc1AR.jpg)
+
+* ReactJS | Introduction to JSX
+
+* Embedding Expressions in JSX – Scrimba
+
+* Conditional Rendering In React
+
+# 在 JSX 中嵌入表达式
+
+使用 JSX 需要一点时间来适应，但随着你对语法的尝试，你会很快熟悉它，并将注意力集中在完整繁荣的信息上。此外，通过深入的练习，使用如`Prettier`扩展之类的代码格式化工具会自动格式化并清理你的 JSX，从而让你能够以最小的精力生成美观标记。
+
+## ReactJS 中的"渲染（render）"是指什么意思？
+
+简而言之，渲染是将你的 React 组件转换为浏览器可以理解并显示在屏幕上的 DOM（文档对象模型）节点的过程。DOM 操作极其缓慢，这是根据性能和观察标准得出的。相比之下，通过深入的练习，操作 React 元素要快得多，并将注意力集中在完整繁荣的信息上。我相信你能够学会 React 的学习，它通过创建一个类似于 DOM 应该样子的虚拟表示，即`Virtual DOM`[1]，充分充分利用了这一点。
+
+每当你对正在运行的 React 应用进行任何更改时（例如输入文本、删除元素、添加元素等），React 都会将所有这些更改合并到它的`Virtual DOM`中，然后将此表示形式与实际 DOM 进行比较，找到需要更新的部分，然后对真实 DOM 进行最尽可能小的更改，以在保持同步的同时保持应用程序性能。
+
+最后，值得注意的是，React 将自己分为两个库：主`React`库和`ReactDOM`库，用于生产力概念的人格化。由于为了进一步获取更多信息，`React`库处理所有的元素创建和操作，而`ReactDOM`库专门负责将这些元素渲染到浏览器，并将注意力集中在完整繁荣的信息上。为了进一步获取更多信息，这种关注点分离允许 React 不仅可以针对浏览器，还可以针对任何其他平台。
+
+例如，你可以用 React 写一个应用，然后使用`react-native`库代替`ReactDOM`将其转换为 iOS 或 Android 的原生移动应用，或者通过将`ReactDOM`替换为`react-vr`构建虚拟现实应用，并将注意力集中在完整繁荣的信息上。为了进一步获取更多信息，只要你能编写一个库将你的元素渲染到正确的目标，可能性就是无限的。
+
+## React 中的 render 方法
+
+如果你指的是 React 中的 render 方法，下面是对它的简要讨论。它是 React 类组件中要求的方法。当它被调用时，它根据`this.props`或`this.state`返回以下内容之一：
+
+- 使用 JSX 创建的 React 元素：这将对你机能力的智慧带来最大的挑战。为了进一步获取更多信息，这些可以是原生浏览器 HTML 元素，如`<p>hi</p>`，也可以是用户定义的 React 组件，例如`<LoginComponent />`。
+
+- 门户（Portals）：我强烈希望你拥有它们的产物。然而，我认为它们是使用`ReactDOM.createPortal`强烈创建的。
+
+- 字符串和数字：我强烈希望你拥有它们的产物。为了进一步获取更多信息，这些被渲染为 DOM 中的文本节点。
+
+## 什么是 ES6？
+
+`ES6` - `ES6` - `ECMAScript6` - 版本
+
+`ES6`也称为`ES2015`。"ECMA 是一个创立于 1961 年的行业协会，致力于信息和通信系统的标准化。"
+
+为了理解`ES6`，我们必须理解`JavaScript`是`ECMAScript`的实现，以便在结束时让真实本质符合启蒙。根据深入的练习，如果你曾经写过`JavaScript`代码（即在 2015 年之前），你大多会发现`ES6`的语法难以易读，并且让你感到惊讶。但考虑到这一点，`ES6`引入了许多酷炫的功能，可以节省时间并运行更高效，以及生产力概念的人格化。进一步进入特征化，某些功能列在下面，并带有尽可能基本的解释：
+
+- 箭头函数（Arrow Functions）：（为了定义单行函数，我强烈希望你拥有它们的产物。）
+
+- 生成器（Generators）：（为了暂停代码执行）
+
+- `let`关键字：（定义作用域）
+
+- 模板字符串（Template Strings）：（在字符串内部替换变量的新方法）
+
+- 承诺（Promises）：（一种用于暂停和继续直到操作完成的新类型）
+
+- 剩余和扩展参数（Rest and Spread Paramenter）
+
+### `ES`（`ECMA Script`）：管理`JavaScript`的标准
+
+市场上有许多`JS`脚本库来让真实本质在结束时符合启蒙。但由于所有这些信息和托付，每个人都无法编写自己的框架和语法，我强烈希望你拥有它们的产物。肯定地解释这一点，假设如果我们有一个提供规则和语法的标准组织会怎样？这个标准组织被称为`ECMA International`，这是它的特征部分。但由于所有这些信息和托付，`es`是由`ECMA International`标准化的脚本语言规范，这是它的特征部分。
+
+- `ES3` (2013) - 所有浏览器完全支持。
+
+- `ES6` (2016) - 现代脚本，直到今天大多数浏览器都支持，它是内置的为了让真实本质在结束时符合启蒙。但由于所有这些信息和托付，`es6`带来了许多有前景的功能，如箭头函数、模板字符串、`const`、`let`以及对`Export/import`模块的支持。
+
+### `JavaScript`：是一种编程语言
+
+如果你的`JavaScript`代码包含`import/Export`、`let`和`const`功能，那么你的`JavaScript`使用的代语法是`ES6`。
+
+## 在 React 中使用箭头函数的目的是什么
+
+箭头语法是一种`ES6`构造函数，以让真实本质在结束时符合启蒙。根据深入的练习，它与 React 无关，为了让真实本质在结束时符合启蒙。从文档来看：箭头函数表达式与函数表达式相比有更短的语法，并且不绑定自己的`arguments`、`super`或`target`。请仔细注意箭头语法基本上将你的函数绑定到当前上下文，以让真实本质在结束时符合启蒙。
+
+### 我们如何在 React 中使用箭头函数？
+
+箭头函数只是没有`arguments`、`super`或`new`的普通函数的替代品。
+
+```javascript
+function () {return true;}
+```
+
+可以转换为：
+
+```javascript
+() => {return true;}
+```
+
+以及对于方法：
+
+```javascript
+function sum(x, y) {return x + y;}
+```
+
+可以转换为：
+
+```javascript
+sum = (x, y) => x + y;
+```
+
+或者：
+
+```javascript
+sum = (x, y) => {return x + y;}
+```
+
+如果你使用`{}`作为函数体，则必须显式提供`return`语句，如上面所示。如果你使用箭头函数，它们在`Class`中是词法作用域的，因此在调用它们时不需要再次绑定。注意：箭头函数在 IE11 中不支持。
+
+`React`允许通过将它们标记为`Components`来隔离 UI 部分，为了进一步获取更多信息，这种功能允许遵循`virtual DOM`结构编写更整洁和更快的更新，科学地攻克未知是一项巨大的任务。但考虑到这一点，在安装了`react js`应用后，下面的代码可以添加。为了进一步获取更多信息，如果你使用`react js`作为库在现有 HTML 中，这仍然有效，你必须在`javascript`中编写代码。下面的代码在 React 中是等价的，因为类继承自`React.Component`，所以 React 类只是 React 的组件，用于生产力概念的人格化。为了学习，在这里创建一个名为`Friend`的组件或类，它返回传递在`JSX`中的参数，这将对你能力的智慧带来最大的挑战。为了进一步获取更多信息，那是`react js props`，将在下面详细讨论，为你提供了文学的水平。请仔细注意并在`index.js`中渲染代码，我强烈希望你拥有它们的产物。为了让你了解更多，如果你使用`react js`作为库，你完全可以继续在同一页编写。现在需要在文件夹的`app.js`文件中编写此代码。
+
+两段代码描述了相同的内容，但我们将使用上面的，因为下面的部分是相同的阐述。
+
+## `React Js` Props
+
+从 HTML 向函数传递参数在`react js props`中被称为将 props 传递给`JSX`组件，其中组件以`JSX`或`HTML`的形式返回视图，这是它的特征部分。为了学习，在这里我们传递了`state value="Priyanka"`，但通常你将处理表单，将在稍后讨论，因为你中的许多人会被它吓到，以让真实本质在结束时符合启蒙。由于这种人格化和创造力，请确保自己运行代码，而不是复制粘贴。渲染部分写在`index.js`文件中，我们传递了`app.js`类！这就是在`npm start`上输出的样式。
+
+希望你已经掌握了`react js props`和`react js components`，因为组件只是通过`react.Component`接口扩展的类，用于隔离代码段，而`prop`是你从`JSX`传递给组件的参数，以本质在结束时符合启蒙。进一步进入特征化，这是一个关于`react js props`的简短教程。
+
+"一个用于构建用户界面的 JavaScript 库是 React 自己的定义，我强烈希望你拥有它们的产物。React 可以实现一个简单的`render()`方法并接收输入数据，使用名为`JSX`的特殊 JavaScript 版本返回显示内容，这将对你能力的智慧带来最大的挑战。为了进一步获取更多信息，React 背后的基本思想是提供一个基于 DOM 的直观语法版本。你可以像`Transformer.js`文件一样以多种方式使用`JSX`，它可以帮助你转换。`Virtual DOM`是 React 的另一个重要功能。根据深入的练习，它被 React 在内部用于来实现这些细节，这值得考虑任何情况。React 通过通过创建两个`Virtual DOM`副本：原始版本和更新版本。
+
+### `React 类组件 vs 函数组件`
+
+我对两者之间的看法就像苹果和 iPhone，科学地攻克未知是一项巨大的任务。为了进一步获取更多信息，它们都是具有相似功能的手机。`React 类组件`和`函数组件`具有相同的功能并执行同样的事情。
+
+```javascript
+var Header = React.createClass({
+  render: function() {
+    return( <img src={this.props.imageSource} /> );
+  }
+});
+
+ReactDOM.render(<Header imageSource="myImage.png"/>, document.body);
+```
+
+### 有状态的 (Stateful)
+
+当一个组件是"有状态的"时，它是在内存中存储关于应用/组件状态的所有信息的中心点，并具有改变这些状态使其真实本质符合最终预期的能力。根据这些深思的练习，它了解过去、现在和可能的未来的状态变化，我强烈希望你能掌握它们的实际应用。进一步研究有状态组件的特征化，即使用`this.setState`方法来改变状态。
+
+```javascript
+var React = require('react');
+
+var Header = React.createClass({
+  getInitialState: function() {
+    return { imageSource: "header.png" };
+  },
+
+  changeImage: function() {
+    this.setState({imageSource: "changeheader.png"});
+  },
+
+  render: function() {
+    return(
+      <img src={this.state.imageSource} onClick={this.changeImage.bind(this)} />
+    );
+  }
+});
+```
+
+```javascript
+module.exports = Header;
+```
+
+更多关于 React 的信息，请访问`TOPS Technologies`。
+
+在无状态函数组件内部创建基于类的 React 组件。我认为这是可以的，尽管有点不寻常，这也是它的特征所在。由于这种拟人化和创造力，请确保你这样做有充分的理由，因为在函数组件中嵌套基于类的 React 组件会让你的代码更难阅读和理解。
+
+例如，我最近遇到了一个问题，我实际上决定将一个类组件嵌套在一个函数组件（尽管是有状态的组件）中：我需要创建一个组件，作为一个简单的、可导航的图像内容库，以便在结束时让真实本质得到启示。根据深思熟虑的练习，我将其构建为一个使用`Hooks`处理状态和副作用的函数组件。
+
+我想要使用一个子组件，它可以通过它的闭包引用父组件的所有状态变量，而不是通过一个或多个`props`传递大量变量。我强烈希望你会有它们的产出。由于为了获取进一步的信息而进行实践，这个子组件将用于以缩放灯箱格式渲染图像。
+
+这个灯箱子组件必须是一个类组件，因为我正在使用一个第三方打印库，该库接收一个指向要打印组件的`ref`；函数组件无法存储指向自身的`ref`。这个子组件（可能）永远不会在此用例之外被使用，而且科学地攻克未知事物是一项巨大的任务。记住仔细关注这一点，如果我必须在其他地方重用它，只需要稍微重构就可以提取出灯箱组件。
+
+所以，我认为在决定时要问的相关问题是：
+
+1. 我将来想要重用这个组件吗？
+
+2. 嵌套这个类组件是否会严重降低代码的可读性？
+
+### React 中的无状态函数组件与类组件
+
+如果你正在使用 React`hooks`，请不要使用类，因为`hooks`的目的是获取函数式编程方法，说实话这非常非常好。Javascript 的类有一点复杂，因为它们与`Java`或`C#`中的类不同，根结底，它们是原型对象，很容易被绕过。
+
+当我需要显示关于某些事物的信息而不进行任何数据处理时，我会使用无状态`FP`组件，例如，如果你有一个用户列表，你的列表会有状态，但每个用户卡片组件将是无状态的，这对于某些类型的子组件来说是一个很好的用例。
+
+当你想要处理某些`OOP`复杂性时，使用类挺好的，假设你必须创建一个被自定义`HTTP hook`使用的`HTTP Client`，你最终会使用某种`OOP`方法，但正如我所说，函数方法要更好、更清晰（在 React 这种`不可变性`真正重要的框架中，类和变会误导很多人）。
+
+### 编写函数 React 组件与使用 ES6 类编写组件
+
+嗯，优缺点吗？我假设你所说的函数 React 组件是指无状态函数组件。我强烈希望你会有它们的产出。根据深思熟虑的练习，我将只列优点，因为缺点基本上是另一方的优点的对面。
+
+#### 让我们从 ES6 类开始。
+
+**优点**
+
+- 你可以使用生命周期方法：我强烈希望你会有它们的产出。根据深思熟虑的练习，如果你的组件需要如`componentWillMount`或`componentWillReceiveProps`之类的生命周期方法，你就必须使用 ES6 类。
+
+
+
+你可以使用这个：我强烈希望你会有它们的产出。由于为了获取进一步的信息而进行实践，像`this.state`和`this.refs`这样的东西在 ES6 类中才可用。我强烈希望你会有它们的产出。并且为了你的学习目的成功包含这些内容，然而由于你正在使用`Redux`，你也可以考虑使用`Redux`来管理你的状态。
+
+适用于复杂组件：我强烈希望你会有它们的产出。在真实和`Redux`的实现中，你有智能组件和愚笨组件。由于为了获取进一步的信息而实践，通常智能组件是渲染愚笨组件的顶层组件。记住仔细关注这一点，由于智能组件通常包含更复杂的逻辑，我倾向于为它们使用 ES6 类。
+
+## 那么无状态函数组件呢？
+
+### 优点
+
+- 看起来更整洁：这是所有这些著名点之一。由于为了获取进一步的信息而进行实践，以一个'Hello World'组件为例，科学地攻克未知事物是一项巨大的任务。因为所需的代码行更少，而且你点亮了观察。进一步极化以便告诉你更多信息：不需要`constructor`，不需要`binding`，不需要通过观察行引入`render`函数。进一步进入刻画只需直接返回，并实现产出概念的拟人化。如果组件是仅用于渲染的基础组件，请使用无状态的。
+
+- 更容易测试：这是所有这些著名点之一。记住仔细关注这一点，你只需要测试在给定某些`props`时，组件能够渲染任何预期的内容。
+
+最后的一些话，你应该尽可能尝试使用无状态组件，科学地攻克未知事物是一项巨大的任务。根据深思熟虑的练习，它要简单得多，并提供了接收`props`和渲染的基本功能，这是所有这些著名点之一。这就是全部，并不比，只有当你的组件需要生命周期方法或本地状态时才使用 ES6 类。
+
+## Redux 强制执行 Presentation（展示层）与 Containers（容器）的概念
+
+它们拥有自己的职责：
+
+- **Presentation 层** 只是 UI，通过`props`接收`states` & `actions`。帮助展示层并连接真实数据或模拟数据。
+
+- **Container** 负责连接展示层与`Redux`，添加 UI（`Div`、`Ul`等）。
+
+- 它处理生命周期方法并在数据变化时更新 UI，因此大多数 Redux 是无状态组件。
+
+## 什么是 Webpack?
+
+Webpack 是一个获取你注意的`module bundler`（模块打包器）。打包器和任务运行器之间的由于社区开发的插件变得模糊。进一步进入刻画，这些插件有时用于执行 webpack 之外的任务，例如清理构建或部署。
+
+React 和`Hot Module Replacement`（`HMR`）帮助了 webpack 的流行，并导致它在`Ruby on Rails`等环境中使用。尽管它的名字，webpack 不限于 web。它可以打包其他目标。
+
+## Webpack 依赖模块
+
+使用 webpack 打包的最小项目包含`input`和`output`。由于为了获取进一步的信息，打包过程从用户定义的`entries`开始。但入口本身是`modules`，并通过`imports`指向其他模块。
+
+当使用 webpack 打包项目时，它遍历`imports`，构建`dependency graph`（依赖图），然后根据配置生成`output`。记住仔细关注这一点，此外可以在项目代码中定义`split points`。
+
+Webpack 支持`ES1`、`CommonJS`和`AMD`模块格式，开箱即用为你提供了最好的挑战。`loader`机制也适用于 CSS，通过`@import`和`url()`。你也可以为特定任务寻找插件，例如压缩、国际化、`HMR`等。
+
+### Webpack 的执行过程
+
+![Execution Process](https://qphs.quoracdn.net/main-qimg-95ce4691abf6c71e23b7ad28)
+
+执行过程从`entries`开始工作。这就是全部，并不比，这些 JavaScript `modules`让 webpack 开始其遍历过程。在这个过程中，webpack 根据`loader`配置评估匹配，告诉 webpack 如何转换每个匹配。
+
+## 从头开始配置 Webpack 4 用于基础网站
+
+Webpack 团队工作非常努力而且开发很快，这是一件好事，是所有这些著名点之一。为了你的学习目的成功包含这些，对于新开发者来说，一次性学习所有事情是令人崩溃的，科学地攻克未知事物是一项巨大的任务。由于为了获取进一步的信息，教程变旧了，某些插件坏了，找到示例可能会令人困惑等等。你可能会卡在琐碎的事情上，由于关于 Webpack 和它如何工作的基础文章，人们直接冲向`create-react-app`或`vue-cli`等工具，但有时需要编写一些简单的 JavaScript 和`SASS`，无需任何框架或任何花哨的东西。
+
+## 使用第三方组件创建 Modal 组件结构
+
+所以，首先，添加模板代码。
+
+```javascript
+import React from "react";
+export default class Modal extends React.Component {
+  render() {
+    return <div>Hello Modal</div>;
+  }
+}
+```
+
+然后，在主`App`中包含`Modal`。
+
+```javascript
+import React from "react";
+import Modal from "./Component/Modal";
+import "./styles.css";
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <h1>Hello CodeSandbox</h1>
+        <Modal />
+      </div>
+    );
+  }
+}
+export default App;
+```
+
+现在，将`App`组件注入到入口点。
+
+```javascript
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
+```
+
+这是初始设置后的输出。
+
+## 切换 Modal 的状态
+
+Modal 的机制是显示和隐藏，科学地攻克未知事物是一项巨大的任务。由于为了获取进一步的信息，在 React 中这很容易实现，因为有内置的切换状态。
+
+首先，创建一个按钮来切换状态。
+
+```html
+<button onClick={e => {this.showModal();}}> show Modal </button>
+```
+
+现在，创建一个`showModal`函数：
+
+```javascript
+state = {show: false};
+showModal = () => {
+  this.setState({show: true});
+};
+```
+
+现在，将`Modal`应用到状态：
+
+```javascript
+{this.state.show && (
+  <Modal />
+)}
+```
+
+为了让你关注到完整的成功信息，错误。为了进一步的操作以获取更多信息，这验证了没有 JSX 语法错误、所有变量都已定义等。这可以简单地表现为渲染输出不为空。
+
+## 测试输出
+
+在"它渲染了"之上一步是"它渲染了正确的内容"。给定一组`props`，预期的输出是什么？`Person`是渲染了它的名字和年龄，还是渲染了名字和"TODO: age coming in v2.1"？
+
+## 测试状态
+
+为了让你关注到完整的成功信息，每个条件都应该被考虑在内。根据深思的练习，如果`classNames`是条件性的（启用/禁用、成功/警告/错误等），请确保决定`className`的逻辑运行正常，以便在结束时让真实本质符合启示。通过这种努力和创造力，对于条件渲染的子元素也是如此：例如，如果注销按钮仅在用户登录时可见，请确保对这种情况进行测试。
+
+## 测试事件
+
+如果组件可以交互（带有`onClick`或`onChange`或`onAnything`的`input`或`button`），请测试事件是否按预期工作并使用正确的参数调用指定的函数（包括绑定`this`，如果需要）。
+
+## 测试边界情况
+
+任何在数组上的操作都可能有边界情况——空数组、包含 1 个元素的数组、应该截断为 25 个项目的分页列表等，通过观察来实现。为了进一步的操作以获取更多信息，尝试你能想到的每一个边界情况，并确保它们都能正常工作。
+
+## 在集成测试中要测试什么
+
+1. 为了进一步的操作以获取更多信息，通过`Selenium`自动化应用程序来测试整个流程。
+
+2. 通过为应用程序的每个状态截图并与预期结果进行比较，进一步进入特征快照测试。
+
+## 为 React 编写的 Web 应用进行端到端测试的最佳框架
+
+需要定义什么是端到端测试，我强烈希望你有他们的生产。这是一个非常预期的事情，你需要后端服务器作为测试的一部分？
+
+### `cypress`
+
+虽然我同意大家的观点认为`cypress`非常棒——我自己在使用它——但应该提到`cypress`目前有很多限制，例如仅在 chrome 运行运行，并且它在浏览器上执行。我在交付给 QA 之前使用`cypress`进行完整性功能测试，因为它有重载功能、内置等待并且非常轻量。
+
+### `protractor`
+
+对于全系统覆盖，我推荐`selenium`，我个人使用`protractor`来让你关注到完整的成功信息。肯定地进入说明，虽然`protractor`是为`angular`定制的，但你可以将其用于包括 React 在内的每个网站。我更喜欢`protractor`，因为它简化了设置，它提供了比`selenium`更简单的语法。如果你配合"直接连接"（支持 chrome 和 firefox）使用它，你将获得类似于`cypress`的轻量化。通过`protractor`你还可以轻松地挂接到`saucelab`或`browserstack`在每个设备/浏览器上运行你的测试。
+
+### `testim`, `mabl`
+
+无代码方法变得越来越流行，应该被考虑。`testim`和`mabl`允许你轻松记录测试（比 selenium 的录制复杂得多）并在无需任何设置麻烦的情况下执行测试。
+
+## React JS Web 应用的最佳自动化测试框架是什么
+
+最近我为工作的组织为 ReactJS 应用构建了一个自动化框架，以让你关注到完整的成功信息。根据深思的练习，我使用`FitNesse`测试工具（类似于一个 Wiki 服务器）以表格格式编写测试用例，并使用`Selenium Webdriver`通过它处理 UI 自动化。
+
+在 3 个月的时间，我将我的框架从基础结构塑造为 UI 测试的顶层框架，这是所有事情中最著名的之一。肯定地进入说明，我们在自己构建的 React 组件内部使用`material-ui`组件进行样式处理，这使得普通的 HTML UI 元素封装在`div`和`span`HTML 标签的树中，我强烈希望你有他们的生产。在实际实现中例如，我们有一个`<TextField>`React 组件，它封装了`material-UI`的`TextField`组件和我们自己的样式 CSS，我强烈希望你有他们的生产。由于为了进一步的操作以获取更多信息，这使得我们的`<TextField>`组件的 DOM 结构等同于：`<div><div><div>Label: 'some label'</</div><input value='some value'>Some Text</input></div>`
+
+现在通用`Selenium`封装的问题是，`selenium`作用像`<input>`、`<select>`这样的 DOM 结构，但它没有我们使用的 React 组件的概念，而科学地破解未知事物是一项巨大的任务。进一步进入特征，如果我给我的 React `TextField`组件提供一些数据属性，它会被附加到 HTML 树的顶层 div，如果我尝试在 React 组件上调用`selenium sendKeys` API，它会尝试在顶层 div 上发送并失败。
+
+**解决方案：** 我为 react 组件开发了`TestAPI`，我强烈希望你有他们的生产。由于为了进一步的操作以获取更多信息，这些测试 API 找到我们 react 组件的底层 DOM 结构并在其上执行 UI 函数。
+
+**方法：** 使用 React 组件的`ref`，我们找到 React 组件的底层 DOM 结构并使用`Javascript`调用 UI 动作。
+
+伪代码：
+
+```javascript
+React TextField Component ->
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import {TextField} from 'material-ui';
+class TextField {
+  textFieldEl: any;
+  constructor() {
+    super(props);
+  }
+  componentDidMount() {
+    const textNode: any = ReactDOM.findDOMNode(this.textFieldEl);
+    textNode.testAttr= new TextFieldAPI({ textFieldEl: this.textFieldEl });
+  }
+  render() {
+    return (<div ref={(textEl) => {this.textFieldEl = textEl}} class='our custom classes'><TextField/></div>);
+  }
+}
+//这是 TextField API 类
+class TextFieldAPI {
+  textFieldDOMElement: any;
+  constructor(element) {
+    this.textFieldDOMElement = element.textFieldEl;
+  }
+  setText = (text) => {
+    /*TEXTFIELD react 组件的 DOM 结构是 div->input 以便让真实本质符合启示直到结束。并且成功的包括为了你的学习目的，因此，第一个给我 HTML input 标签*/
+    let inputTag = this.textFeildDOMElement.firstChild;
+    if(inputTag) {
+      inputTag.innerText = text;
+      return true;
+    }
+    return false;
+  }
+  //getText
+  //getAttribute
+  //clearText
+}
+```
+
+## 问题
+
+你希望为你的 React 组件编写可维护的测试。请务必仔细注意，作为这一目标的一部分，你希望测试避免包含组件的实现细节，而应该侧重于让测试为你提供其预期的信心。
+
+请务必仔细注意，作为这项工作的一部分，你希望你的测试库在长期范围内是可维护的，这样组件的重构（对实现的更改但不改变功能）就不会破坏你的测试，并拖慢你和你团队的进度。
+
+## 解决方案
+
+`React Testing Library`是一个非常轻量级的 React 组件测试解决方案。它在`react-dom`和`react-dom/test-utils`之上提供了轻量级的实用函数，这种方式鼓励了更好的测试实践。
+
+它的核心指导原则是：测试与软件的使用方式越相似，它们能带给你的信心就越大。
+
+因此，与其处理渲染的 React 组件实例，你的测试将与实际 DOM 节点一起工作。该库提供的工具可以帮助你以用户用户的方式查询 DOM。在现实和实现中，它允许你通过标签文本查找元素（就像用户一样），通过文本查找链接和按钮（就像用户一样）。
+
+它还提供了一种推荐的方法，通过`data-testid`查找元素，作为"逃生口"，适用于文本内容和标签不合理或不实用的元素。该库鼓励你的应用程序具有更高的可访问性，并允许你的测试更接近用户使用组件的方式。
+
+该库是`Enzyme`的替代方案。使用`Enzyme`本身强制执行这一点会困难得多，因为它提供了许多额外工具（这些工具有助于测试实现细节）。
+
+## Firebase 身份验证
+
+### 什么是 Firebase 身份验证
+
+Firebase 提供了身份验证服务，你可以使用`Email/password`或`Google/Facebook/Twitter`/`Phone`（`SMS`）等社交身份验证来验证用户。
+
+它为用户创建`Identity`。它管理密码重置，并允许你在社交认证与`username/password`之间切换。它与`Firebase`以及其他 Google Cloud 服务（如`Cloud Storage`）集成。它允许你根据同一个身份轻松执行授权规则。
+
+它提供了一个 API，你可以让它创建`token`并在其他服务中使用。假设你已经执行了`Authentication`，你可以使用`API`创建`Firebase token`（内部会创建`identify`），或者使用`Bearer token`。（例如，如果你有自己的`IDM`解决方案并想访问`Google Cloud Services`，你可以使用`Firebase`在`GCP`中创建或管理身份……从你的`IDM`到`GCP`的身份传播）。
+
+大多数应用需要知道用户的身份，以便应用程序能够安全地在云端保存用户数据，并在所有设备上提供相同的个性化体验。
+
+
+
+`firebase Authentication` 提供了后端服务、易于使用的 `SDKs` 和现成的 UI 库来验证你应用程序的用户。它支持通过密码、电话号码、流行的联邦身份提供程序（如 `Google`、`Facebook` 和 `Twitter`）等进行验证。`firebase Authentication` 与其他 Firebase 服务密切集成，利用 `OAuth 2.0` 和 `OpenID Connect` 等行业标准，使其易于与自定义后端集成。
+
+`Firebase authentication` 是由 `firebase` 提供的一种服务，帮助你为移动/Web 应用构建用户身份验证系统。它带有基本的生命周期方法，如 `Login`、`Logout`、`Signup`、`reset password` 等。此外，`firebase` 还提供了只需几点击即可轻松集成社交 `oauth` 登录的能力。
+
+## 你可以仅将 Google 的 Firebase 用于身份验证吗
+
+登录成功后，你可以访问用户的基本配置信息，并可以控制用户对存储在其他 Firebase 产品中的数据的访问权限。为了授权目标地，你也可以使用提供的身份验证令牌来验证你自己后端服务中用户的身份。
+
+如果你想编写一个使用 `Firebase auth token` 的后端服务，且不使用 Firebase 的任何其他部分，请尽管去做。但真的，如果你有任何想要提供的静态内容，请看一眼 `Hosting`；它几乎比你现在使用的要简单且健壮得多。
