@@ -1,0 +1,11568 @@
+
+# PHP 选集第 1：面向对象的 PHP 解决方案
+
+作者：Harry Fuecks
+
+# 关于作者
+
+Harry 是一名技术作家、程序员和系统工程师。他自 1994 年以来一直在企业 IT 领域工作，拥有物理学学士学位。他于 1999 年在搭建小型内网时首次接触到 PHP。如今，他是一家企业外网的主席开发人员，PHP 在为许多后台系统提供统一平台方面发挥着重要作用。
+
+在业余时间里，他为 SitePoint 编写技术文章并运营 `phpPatterns`（`http://www.phppatterns.com/`），这是一个探索 PHP 应用设计的网站。
+
+他原籍英国，现住在瑞士。今年 5 月，Harry 成了一个漂亮女儿的父亲，小女儿让他整天（甚至整晚！）都非常忙碌。
+
+献给 Natalie 和 Masha
+
+## 目录
+
+### 1. PHP 基础
+
+- 在哪里可以获得帮助？
+- 阅读手册
+- 第一节：入门
+- 第二节：语言参考
+- 第三节：特性
+- 第四节：函数参考
+- 更多帮助
+- 如何修复 PHP 在脚本中发现的错误？
+- 语法错误
+- 语义错误
+- 环境错误
+- 逻辑错误
+- 如何将一个 PHP 脚本包含另一个脚本中？
+- 相互包含
+- 路径查找
+- 如何编写可移植的 PHP 代码？
+- 集中所有配置
+- 使用完整的 `<php ?>` 标签
+- `register_globals off`
+- 魔法引号（Magic Quotes）
+- 调用时传递引用
+- 编写可重用代码
+- 更多阅读
+
+### 2. 面向对象 PHP
+
+- 面向对象 PHP 的基础知识是什么？
+- 类与对象
+- 理解作用域
+
+### PHP 精选
+
+- 三行代码
+- PHP 中的引用是如何运作的？
+- 什么是引用？
+- 使用引用
+- 引用的重要性
+- 良好与实践
+- 性能问题
+- 引用与 PHP 5
+- 如何利用继承？
+- 重写
+- 继承实例
+- 对象之间如何交互？
+- 聚合
+- 组合
+- 识别差异
+- 多态性
+- 延伸阅读
+
+### 3. PHP 与 MySQL
+
+- 如何访问 MySQL 数据库？
+- 基础连接
+- 可复用代码
+- 如何从表中获取数据？
+- 使用类进行取取
+- 如何解决 SQL 查询中的错误？
+- 如何在数据库中添加或修改数据？
+- 插入行
+- 更新行
+- 另一个类操作
+- 如何解决由引号/单引号引起的数据库错误？
+- 大转义
+- SQL 注入攻击
+- 如何创建灵活的 SQL 语句？
+- 如何找出我选择了多少行？
+- 使用 PHP 计数行数
+- 使用 MySQL 计数行数
+- 使用类计数行数
+- 计数受影响行
+- 插入行后，如何找到它的行号？
+- 类插入 ID
+- 如何搜索我的表？
+- 选择你喜爱的
+- 全文搜索
+- 如何备份我的数据库？
+- 如何修复损坏的表？
+- 我真的需要写 SQL 吗？
+- 延伸阅读
+
+### 4. 文件
+
+- 如何读取本地文件？
+- 文件句柄
+- 节省内存
+- 如何修改本地文件？
+- 如何获取本地文件的信息？
+- 如何用 PHP 检查目录？
+- 如何在网上显示 PHP 源代码？
+- 如何在文件中存储配置信息？
+- 如何访问远程服务器上的文件？
+
+
+
+- 如何在 PHP 中使用 FTP？（131）
+- 如何用 PHP 管理文件下载？（135）
+- 文件分发策略（136）
+- 如何用 PHP 创建压缩的 ZIP/TAR 文件？（138）
+- 延伸阅读（141）
+
+## 5. 文本处理
+
+- 如何解决 HTML 文档中文本内容的问题？（143）
+- 动态链接 URL（143）
+- 表单字段与 HTML 内容（145）
+- HTML 中的换行（146）
+- 标签剥离（147）
+- 包装（149）
+- 如何修改字符串的内容？（149）
+- 搜索与替换（149）
+- 破坏（150）
+- 请简短一些（151）
+- 格式化（152）
+- 如何实现自定义格式化代码？（153）
+- 如何实现敏感词过滤？（157）
+- 如何验证提交的数据？（159）
+- 如何过滤掉不想要的 HTML 代码？（163）
+- 延伸阅读（169）
+
+## 6. 日期与时间
+
+- 我如何在 MySQL 中存储日期？（172）
+- Unix 时间戳（173）
+- MySQL 时间戳（174）
+- 时间戳的实战（175）
+- 我如何解决常见的日期问题？（180）
+- 周星期（182）
+- 年中的第几周（183）
+- 每月的天数（183）
+- 闰年（185）
+- 年中的第几天（186）
+- 月份的第一天（187）
+- 语法小贴（188）
+- 我如何构建在线日历？（190）
+- 罗马历法（195）
+- PHP 活页（Filofax）（198）
+- 我如何处理时区？（202）
+- 我如何为 PHP 脚本计时？（204）
+- 我如何用 PHP 调度批处理任务？（205）
+- 安装伪定时任务（Pseudo-cron）（205）
+- 延伸阅读（207）
+
+## 7. 图像
+
+- MIME 类型（210）
+- 我如何创建缩略图？（211）
+- 缩略图类（214）
+- 我如何给图片添加水印？（223）
+- 我如何用 PHP 显示图表和图形？（225）
+- 柱状图（226）
+- 饼图（228）
+- 我如何防止图片“盗链”？（230）
+- 延伸阅读（234）
+
+## 8. 电子邮件
+
+- 我如何简化复杂邮件的生成？（238）
+- 我如何向消息添加附件？（239）
+- 我如何发送 HTML 邮件？（243）
+- 我如何向一组人发送邮件？（245）
+- 我如何用 PHP 处理收到的邮件？（247）
+- 寻找问题的解决方案？（251）
+- 延伸阅读（251）
+
+## 9. 网页元素
+
+- 我如何在表格中显示数据？（255）
+- 梨形表格（255）
+- 我如何构建结果分页器？（259）
+- 滑动页码（263）
+- 我如何在 PHP 中处理 HTML 表单？（268）
+- 处理表单的指南（269）
+- 使用 QuickForm 实战表单（269）
+- QuickForm 验证规则类型（272）
+- 立即注册（274）
+- 我如何用 PHP 上传文件？（280）
+- 使用 QuickForm 进行文件上传（283）
+- 我如何用 PHP 和 MySQL 构建有效的导航？（288）
+- 汉塞尔与格蕾特（288）
+- 迷失在树中（289）
+- 递归表格结构（289）
+- 喂鸟（293）
+- 保持语境（297）
+- 下拉菜单（299）
+- 折叠树形菜单（301）
+- 全树形菜单（303）
+- 处理不同的表格结构（305）
+- 总结（306）
+- 我如何在 PHP 中制作“搜索引擎友好”的 URL？（307）
+- 不使用查询字符串（307）
+- 使用 ForceType 隐藏 PHP 脚本（310）
+
+
+
+# 目录
+
+- 通过重写 URL 隐藏 PHP 脚本 ............................................................ 312
+- URL 设计 ............................................................................ 314
+
+## 第 10 章：错误处理
+
+- 我如何在 PHP 中实现自定义错误处理器？ ........................ 320
+- 错误级别 ................................................................................. 320
+- 生成错误 ........................................................................................ 324
+- 生成错误的策略 ...................................................................... 325
+- 自定义错误处理器 ................................................................................ 326
+- 触发错误与条件执行 ........................................................ 329
+- 我如何记录和报告错误？ ......................................................... 331
+- 我如何优雅地显示错误？ ........................................................ 333
+- 延伸阅读 ............................................................................................ 336
+
+# PHP 精选
+
+## A. PHP 配置
+
+- 配置机制 ............................................................ 339
+- 关键安全与可移植性设置 ................................. 341
+- 包含与执行设置 ........................................... 343
+- 错误相关设置 ................................................................ 345
+- 其他设置 ................................................................ 346
+
+## B. 托管提供商清单
+
+- 通用问题 ................................................................................ 347
+- PHP 相关问题 ....................................................................... 349
+
+## C. 安全清单
+
+- 顶级安全漏洞 ........................................ 351
+
+## D. 使用 PEAR
+
+- 安装 PEAR ............................................................................ 356
+- PEAR 包管理器 ................................................ 359
+- 手动安装包 ................................................... 360
+
+- 索引 .......................................................................................... 363
+
+# 前言
+
+PHP 的伟大之处之一在于其充满活力且活跃的社区。开发者享有许多在线交流平台，包括 [SitePoint 论坛](http://www.sitepointforums.com/)，开发者聚集在一起，帮助彼此解决每天面临的问题，从 PHP 工作的基础知识，到解决设计问题“我如何验证表单？”。作为获取帮助的一种，这些社区是非常优秀的——它们充满了你使项目成功所需的各种关键片段。但将所有知识整合成适用于你特定情况的解决方案可能是一个难题。通常，社区成员假设其他人具有某种程度的知识；你经常可能需要花费大量时间从不同的帖子、线程和用户（每个人的编程风格都不同）中收集代码段，以获得完整的全貌。
+
+《PHP 精选》首先是针对 SitePoint 论坛上经常出现的常见 PHP 问题的最佳解决方案的汇编，并结合了我过去四年来日常处理 PHP 工作时积累的经验和见解。
+
+这本书与其他 PHP 书籍略有不同之处在于，它脱离了教程风格，转而侧重于以最小努力实现实际目标。为此，你应该能够以或或“即插即用”的方式使用这里提供的许多解决方案，而不需要从头到尾读完这本书。
+
+尽管如此，这些讨论中贯穿着一个“隐藏目标”。除了解决方案，这本书还向你介绍了可以节省精力的技术，并缩短完成和维护你的 Web 端 PHP 应用的时间。
+
+尽管 PHP 最初被构想为一种过程化编程语言，但近年来 PHP 证明其在开发面向对象的解决方案方面日益成功。2003 年 1 月 PHP 应用和扩展库 [PEAR](http://pear.php.net/) 的公开开放进一步加强了这一点，它提供了一个日益增长的、重用且维护良好的解决方案，用于解决全球 PHP 开发者经常遇到的架构问题（如 Web 表单的生成和验证）。
+
+- [1] http://www.sitepointforums.com/
+- [2] http://pear.php.net/
+
+面向对象的范式似乎让许多 PHP 开发者感到恐惧，并且通常被视为所有 PHP 大师的“禁区”。这本书将向你展示，你不需要计算机学位就可以利用今天 PHP 中提供的丰富类库。在本书提供的解决方案的开发过程中，在可能的情况下，我利用了我亲自发现的免费库，这些库为我节省了许多小时的时间。使用他人开发的类通常与使用任何内置函数一样简单。
+
+本书强调利用可复用组件来构建你的 PHP Web 应用，这反映了与许多当前 PHP 相关书籍关注点的另一个区别。尽管你不会在书中找到关于面向对象应用设计的广泛讨论，但《PHP 精选》第一卷：基础和第二卷：应用将通过渗透过程，帮助你将 PHP 编码技能提升到下一个水平，这可能让你走上构建能够经受时间考验的应用程序的道路。
+
+《PHP 精选》第一卷：基础将为你配备在与 PHP 引擎工作时充满信心所需的要素，包括一个关于使用 PHP 进行面向对象编程的快速入门指南（见第 2 章）。在完成这些准备后，本书将介绍适用于所有基于 PHP 的 Web 应用的解决方案，你可能已经了解了其中的要要，但尚未完全掌握。
+
+## 谁应该读这本书？
+
+如果你已经开始接触 PHP，也许可能已经读了 Kevin Yank 的《Build Your Own Database Driven Website Using PHP & MySQL》（SitePoint, ISBN 0-9579218-1-0）并完成了你的第一个或两个 PHP 项目，那么这本书就是适合你的。
+
+具有更多 PHP 经验的读者可能喜欢跳到《PHP 精选》第二卷：应用，学习如何使用更多 PHP 的高级特性，并在需要解释更基础的概念时回看第一卷：基础。
+
+## 本书涵盖了什么？
+
+以下是你在本卷每个章节中将找到的内容：
+
+## 第 1 章：PHP 基础
+
+本章总结了你为了在 PHP 中快速上手所需的所有要素，从如何使用手册到理解 PHP 错误信息，以及 `include` 是如何工作的。还有编写可移植性代码的技巧，我们将查看一些主要的陷阱。
+
+## 第 2 章：面向对象 PHP
+
+第二章包含了对 PHP 类语法的概述，以及一份解释面向对象范式如何适用于 PHP 的关键元素的入门指南。它是阅读本选后续章节的必要准备阅读。
+
+## 第 3 章：PHP 与 MySQL
+
+本章为你提供了 MySQL（PHP 最喜爱的数据库）的所有要素。我们从基础开始，涵盖如何避免 SQL 注入攻击等重要主题。然后我们深入探讨少为人知的主题，如 MySQL 全文搜索功能、如何修复损坏的表并备份数据库，以及如何使用 `PEAR::DB` 避免编写 SQL。本章还作为处理连接和查询 MySQL 数据库的类的“案例研究”。
+
+## 第 4 章：文件
+
+本章是使用 PHP 文件的文件的生存指南。在这里，我们将涵盖从访问本地文件系统到使用 PHP 的 FTP 客户端通过网络获取文件的所有内容。我们将继续学习创建你的压缩包。
+
+## 第 5 章：文本处理
+
+本章涵盖了处理网站上内容的要素。我们将讨论你必不可的字符串函数，以及验证和过滤用户提交内容的过程。我们将查看你如何实现 BBCode 系统，并理解防止跨脚本攻击的实际操作。
+
+## 第 6 章：日期与时间
+
+在这里，你将学习如何在数据库中存储日期，以及如何使用 PHP 的日期函数。我们将处理处理不同时区的细微差别问题，并实现一个在线日历。我们将看到在没有命令行访问的情况下，在你的网站上运行批处理作业是多么简单，并学习进行简单的脚本测量。
+
+## 第 7 章：图像
+
+本章将探索缩略图的创建，以及如何在你的网站上为图像添加“水印”。我们还将讨论如何防止来自网站的防盗链，并使用 `JpGraph` 制作一些图表和图形。
+
+## 第 8 章：电子邮件
+
+在本章中，我们将专门处理与电子邮件相关的解决方案，向你展示如何利用 PHP 充分利用电子邮件。我们将学习如何使用 `PHP Mailer` 成功发送 HTML 电子邮件和附件，并使用 PHP 轻松处理递送到你的 Web 服务器的入站。
+
+## 第 9 章：网页元素
+
+本章涵盖了 Web 页面和导航的要素要素，如使用 `PEAR::HTML_Table` 创建的表格，以及实现结果集的流程。`PEAR::HTML_QuickForm` 深入涵盖了文件上传的处理以及导航菜单的构建。我们还将查看一些你可以用于 Apache 生成搜索引擎友型 URL（search friendly URLs）的技巧。
+
+## 第 10 章：错误处理
+
+在这个动作模式化的章节中，你将理解 PHP 的错误报告机制、如何利用 PHP 的自定义错误处理功能，以及如何优雅地处理错误。
+
+支持本书的网站位于 `http://www.sitepoint.com/books/phpant/`，你将可以访问以下功能：
+
+### 代码存档
+
+在你阅读本书的过程中，你会注意到许多对代码存档的引用。这是一个可下载的 ZIP 压缩包，包含了书中展示的所有示例的完整代码。
+
+除了 PHP 脚本本身，存档中还包含许多共享库，它们被封装在 `SPLIT` 目录中。对于依赖这些库按预期运行的脚本，你需要将此目录添加到 PHP 的 `include_path` 中（有关 `include_path` 的完整细节，请参见第 1 章中的“如何在另一个文件中包含 PHP 脚本？”）。这样做也将让你在自己的项目中使用这些库更加方便。
+
+关于如何安装和使用代码存档的完整说明，请参阅存档中的 `readme.txt` 文件。
+
+### 更新与勘误
+
+没有任何书是完美的，我们预计敏锐的读者能在本书结束之前发现一两个错误。本书的网站将始终提供有关已知打印错误和代码错误的最新信息，以及针对 PHP 新版本和各种 Web 标准的必要更新。
+
+如果你想就本书与我或 SitePoint 出版团队任何其他人交流，你应该加入 SitePoint 的在线社区[4]。正如我提到的，特别是 PHP 论坛[5]，可以提供书中书中解决方案之外的丰富信息。
+
+除了像这样的一书之外，SitePoint 还会发布免费的电子邮件通讯，包括《The SitePoint Tribune》和《The SitePoint Tech Times》。在这些内容中，你将读到关于 Web 开发各个方面的最新新闻、产品发布、趋势、提示和技巧。即使没有别的，你也会获得有用的 PHP 文章和提示；如果你对学习其他技术感兴趣，你会发现它们特别有价值。快去 `http://www.sitepoint.com/newsletter/` 订阅一封或多个 SitePoint 邮件通讯吧——我等着你！
+
+### 你的反馈
+
+如果你无法通过论坛找到答案，或者出于任何其他原因想与我们联系，最好的联系地址是 <books@sitepoint.com>。我们建立了一个人员配备良好的邮件支持系统来跟踪你的查询，如果我们的支持人员无法回答你的问题，请直接发送给我。我们特别欢迎改进建议以及对你可能发现的任何错误的通知。
+
+### 致谢
+
+首先，我想感谢 SitePoint 团队付出如此巨大的努力使本书成为可能，感谢他们对截止日期的理解。特别感谢 Kevin Yank，他的技术见解让本书更加精彩。同时也感谢 Julian Szemore，他的频繁反馈让本书变得既易读又易懂。感谢向 SitePoint 论坛[7] 贡献的许多，他们的无私精神为 PHP 成为一项流行且成功的技术出了巨大贡献。最后，回到家里，我想感谢 Natalie，她的耐心和爱让我惊讶。在写这本书的一半程时，我们的第一个孩子 Masha 出生了；同时写书并不总是容易。
+
+# 第 1 章：PHP 基础
+
+PHP 是最常用的 Web 脚本语言，运行在全球 1000 万域名上[2]。对于一个没有任何资金支持的开源技术来说，它的流行似乎不可思议。然而，PHP 的成功并非秘密；它拥有任何技术中最活跃且乐于助人的在线社区。
+
+## 阅读手册
+
+本手册还提供二十四种不同的语言版本 [4]，但既然你正在阅读这本书，我假设你对手册的英文版感到满意。它被分为五个主要部分加上附录。了解可以在哪些地方找到什么信息，以及在哪里找到，是值得的——至少在前四个部分中，这几部分对于典型的 PHP 开发者来说是最相关的。
+
+### 第一部分：入门
+
+本节对 PHP 进行了简要介绍，并包含了一些基础示例。随后，它解释了如何安装 PHP（描述了各种操作系统与 Web 服务器的组合），以及如何通过修改你的 `php.ini` 文件来配置它。
+
+不容忽视的是安全章节，它涵盖了 PHP 开发者经常犯错的领域，这些错误会导致他们的应用程序容易受到滥用。再次强调，PHP 易用性的“代价”是它并不会总是保护你免受最糟糕错误的影响，因此在 PHP 职业生涯早期尽早接触安全是值得的。你可以在附录 C 中找到关键安全问题的总结，在本书的适当讨论中也会进行涉及。
+
+### 第二部分：语言参考
+
+本节涵盖了 PHP 作为编程语言的基础知识。其中一些内容对于你能够使用 PHP 实现任何功能至关重要，而另一些内容在一次坐席的学习后可能会变得有用，此时你可能正在寻找方法来改进你的技巧。一次性读完所有内容可能就像在读字典。幸运的是，通过网络上丰富的教程以及研究开源 PHP 应用中使用的代码，你可以吸收语言参考中包含的大部分信息。当然，你会在过程中掌握一两个要点，从而充分利用 PHP 的优势。然而，熟悉手册这一部分包含的主题，并将它们记在脑中以备将来参考，是值得的。
+
+### 第三部分：特性
+
+涵盖了 PHP 的核心元素，这些元素通常侧重于解决特定的 Web 相关问题。“特性”部分的大部分内容读起来像是一个“执行摘要”，从开发者的角度来看，当你看到这些特性在运行时，这里包含的信息可能会被更好地理解——例如，我们在书中书中看到的示例。
+
+### 第四部分：函数参考
+
+本节构成了手册的主体，涵盖了 PHP 中提供的所有功能。随着你对 PHP 的学习，大部分时间都会花在这里，所以你会很高兴听到 PHP 组已努力让这一部分易于查阅。即使在闲暇时，翻翻手册，对你用 PHP 能做的一切事情感到惊讶。是的，我确实把阅读手册描述为“有趣的”！
+
+函数参考被分为若干子章节，涵盖了各种类别的函数，每个类别对应一个 PHP 扩展。
+
+“扩展”的概念刚开始可能会让人困惑，因为许多扩展是随标准 PHP 安装一起分发的。我们很难离开它们生存的字符串函数（String functions）就是一个很好的例子。通常，PHP 组作为默认 PHP 安装的一部分，分发了他们认为对开发者至关重要的所有扩展。
+
+被视为“非核心”功能（即某些人需要，但并非所有人需要）的扩展必须单独添加。重要信息出现在每个扩展主页的“安装”标题下。核心扩展的描述语句是：“使用这些函数不需要安装；它们是 PHP 核心的一部分。”非标准扩展在附录 B 中进行了检查。
+
+另一个方便的导航方法是通过 URL 传递你感兴趣的主题名称来“快捷”到特定函数。例如，尝试在浏览器的地址栏中输入以下内容：`http://www.php.net/strings`。这将带你去到 `http://www.php.net/manual/en/ref/strings.php`，这是字符串扩展的主页。查看此页面，你会看到一个函数列表。以函数为例，`http://www.php.net/manual/en/ref/strings.php` 显示了内容：
+
+
+
+```php
+<?php
+$haystack = 'Hello World!';
+$needle = 'old';
+
+// 使用 strpos
+$position = strpos($haystack, $needle);
+
+echo 'The substring ' . $needle . ' begins at ' . $position;
+?>
+```
+
+| PHP 扩展 | 说明 |
+| :--- | :--- |
+| `String` | 返回字符串在另一个字符串中第一次出现的位置。 |
+| `strpos` | 返回针头（`needle`）在干栈（`haystack`）中第一次出现的位置。 |
+| `offset` | 从干栈中开始搜索的点。 |
+| `needle` | 要搜索的字符串。 |
+
+如果未找到`needle`，则返回 `FALSE`。
+
+## 问题出现时寻求帮助
+
+在手册之外，有成千上万的在线资源可以从那里获得帮助。我敢断说，你将遇到的 99% 常见问题已经在某个地方得到了解答。最显而易见（但会被忘记）的地方是 Google，快速搜索“PHP problem”就会让你心里有个底。
+
+还有一些优秀的网站，你可以直接从其他 PHP 开发者那里获得答案（免费的）。在英语世界中最大的三个可能是：
+
+- SitePoint 论坛：http://www.sitepointforums.com/
+- Dev Shed 论坛：http://forums.devshed.com/
+- phpBuilder：http://www.phpbuilder.com/board/
+
+这些网站都使用 vBulletin 支持在线讨论，因此界面非常友好且易用。它们都有活跃的成员，你应该能在二十四小时内找到大多数问题的解答。请注意，当你在论坛上寻求帮助时，“通过他人来帮助自己”的原则很重要。不要发布一条说“这个脚本有问题”的消息并粘贴你的整个 PHP 脚本。缩小范围——识别你遇到问题的区域以及这段代码片段和其他相关信息，如错误消息、代码用途、你的操作系统等。提供帮助的人不想在你的问题上花费超过几分钟（他们是免费提供的），为他们节省时间将增加你获得有用答案的机会。
+
+## 进一步帮助
+
+虽然不方便但可能是最有效的最后是 PHP 邮件列表，鼓励初学者使用 PHP General 列表。列表可以有限浏览，尽管你可以通过 PHP 网站的搜索字段搜索其中某些列表并选择你喜的列表。
+
+开发 PHP 引擎核心的 Zend 公司还维护着一个活跃的论坛[20]，用于讨论通用的 PHP 问题。
+
+如果你想确保能获得答案，那么调查 PHP Help-desk[21] 是值得的，这是一项由 Tap Internet[22] 运营的服务，他们与 Zend 合作提供 PHP 培训。
+
+## 如何修复 PHP 在脚本中发现的错误？
+
+当你正在编写你最新、最棒的脚本到一半时，突然测试执行返回了此错误：
+
+`Parse error: parse error, unexpected T_ECHO, expecting ',' or ';' in c:\htdocs\sitepoint\phpbasics\2.php on line 5`
+
+这里产生问题的代码如下：
+
+```php
+<?php
+echo 'This is some code<br />'
+echo 'Somewhere in here I\ got a ;';
+echo 'parse error!<br />'
+echo 'But where is it?<br />';
+?>
+```
+
+你所面对的问题被称为“语法错误”（syntax error），如果你是 PHP 新手，可能会发现自己花费了大量时间来寻找这类问题。随着你对 PHP 经验的增加，追踪错误将变得越来越容易。你会逐渐了解自己的习惯，可能在开始寻找之前就能猜出你犯的错误（我自己的典型错误是在在 PHP 字符串中构建 SQL 语句时忘记了最后的引号，以及在构建数组时留下了逗号）。不过，熟悉 PHP 的错误信息是一个好主意。
+
+通而言之，你在 PHP 应用中会遇到四种基本类型的错误：
+
+## 语法错误
+
+如上面的示例所示，当你违反 PHP 语法规则时，就会发生语法错误。语法错误通常会导致 PHP 返回一个 Parse Error（解析错误）消息。
+
+在上面的示例中，问题本身发生在第 4 行：
+
+```php
+echo 'parse error!<br />';
+```
+
+我忘记在行末尾添加分号（;），分号是用来标记每个语句结束的。PHP 解析器只有在遇到另一个 `echo` 语句时才注意到该行存在问题，因为指令在法律上可以跨多行。这一点值得注意，因为有时这会让错误难以找到——错误可能发生在解析器发现问题之前的某几行。
+
+在大型 `if-else` 或 `while` 语句夹杂着 HTML 块的情况下，语法错误可能会变得特别难以理解；寻找缺失的大括号可能极其困难。然而，随着你编码技巧的提高并开始利用类，将代码拆分为短小且易读的离散块，你会发现语法错误变得容易得多。
+
+另一个需要注意的是 PHP 对标记（tokens）的使用。在错误消息中，PHP 抱怨一个“意外的 T_ECHO”。`T_ECHO` 是代表你 PHP 脚本中 `echo` 语句的标记。PHP 解析器将你的代码拆分为标记，以便其分析和处理脚本。你在解析错误中看到的某些标记没有其他标记那么明显，如果你不确定，查看关于标记的手册[23]是值得的。
+
+如果你在使用 PHP 4.3.0，你会发现它包含了所谓的“扩展”（extension）[24]，它允许你看到 PHP 解析器所查看的脚本。为了兴趣，这里是你可以如何查看标记的输出：
+
+```php
+<?php
+/* Note: 此脚本仅适用于 PHP 4.3.0 或更高版本 */
+// 读取 PHP 脚本为字符串
+```
+
+# 第 1 章：PHP 基础
+
+```php
+<?php
+$script = file_get_contents('2.php');
+// 获取标记到一个数组
+$tokens = token_get_all($script);
+
+// 显示
+echo '<pre>
+print_r($tokens);
+echo '</pre>';
+?>
+```
+
+## 语义错误
+
+语义错误发生于你编写的代码符合 PHP 语法规则，但在执行时违反了 PHP 的“运行时规则”。例如，你提供给 `foreach` 语句的不是一个数组：
+
+```php
+<?php
+$variable = 'This is not an array';
+
+foreach ($variable as $key => $value) {
+echo $key . ':' . $value;
+}
+?>
+```
+
+由于 `$variable` 不是一个数组，此脚本产生了以下错误消息：
+
+> `Warning: Invalid argument supplied for foreach() in c:\htdocs\sitepoint\phpbasics\3.php on line 4`
+
+语义错误通常会导致像这样的 Warning（警告）错误消息。
+
+## 环境错误
+
+环境错误发生于 PHP 脚本外部的因素导致的问题。例如，当你的 PHP 脚本尝试连接 MySQL 服务器时，该服务器可能已关闭。也许你指定了要打开的文件错误路径，导致 PHP 无法找到该文件。
+
+当我们在一个系统上编写 PHP 脚本并在另一个环境不同的系统上执行它时，也会发生这些错误。问题可能仅仅是 Web 服务器的底层目录结构或域名不同。通过创建一个存储所有这些环境变量的中央配置脚本来处理这类问题是常见的做法。
+
+PHP 在 `php.ini` 中还有许多设置，可能会导致脚本在设置不同的另一个系统上失败。我将在附录 A 中介绍这些内容。
+
+## 逻辑错误
+
+逻辑错误发生于应用程序对于引擎来说运行完美，但代码执行的结果与你的预期不符。例如，想象你有一个脚本想要发送二十十次相同的消息！这类问题最难发现。发现逻辑错误的关键在于你测试代码的能力。你还应该研究单元测试，这是极端编程（XP）的一个方面。
+
+## 如何在一个 PHP 脚本包含另一个 PHP 脚本？
+
+在发现编写数千行的脚本可能不是保持组织良好方法后，你可能正在寻找将代码拆分为单独文件的方法。也许在使用他人的 Source 应用时，你发现自己正苦于消除类似下面的错误消息：
+
+`Fatal error: Failed opening required 'script.php'`
+
+### 相互包含（Mutual Inclusion）
+
+PHP 提供了四个命令允许你将脚本的内容添加到另一个脚本中，即 `include`、`require`、`include_once` 和 `require_once`。在每情况下，PHP 都会获取命令中指定的文件，然后执行其内容。`include` 和 `require` 的区别在于当它们无法找到被要求获取的文件时的行为方式。
+
+`include` 会生成类似下方的 PHP 警告消息：
+
+`Warning: Failed opening 'script.php' for inclusion`
+
+这将允许调用 `include` 命令的脚本继续执行。
+
+相比之下，`require` 会导致像上面所示的致命错误（fatal error），这意味着调用脚本将终止，导致所有操作停止。如果被要求的文件对你的应用程序至关重要，那么让脚本终止是一件非常好事。
+
+`include_once` 和 `require_once` 的行为与它们对应的命令相似，但如果该脚本已经在任何地方（通过这四个命令中的任何一个）包含或要求过，则该语句将被忽略。`_once` 变得极其好用的情况是在更复杂的应用程序中，其中 PHP 脚本包含其他 PHP 脚本，而后者又包含更多的 PHP 脚本。当你使用类库时（我们将在第 2 章中探讨），并且这些类被许多脚本重复使用，这一点尤为重要。一个类可能依赖另一个类的可用；使用 `require_once` 包含
+
+`required` 类确保了它始终可用，但即使该类恰好在其他地方被使用过也不会产生任何问题。
+
+为了看到所有的运行效果，让我们创建一个脚本 `include_me.php`：
+
+文件：include_me.php
+
+```php
+<?php
+// include_me.php
+echo 'I\'ve been included!<br />';
+?>
+```
+
+每当这个脚本被包含，它都会显示消息“I've been included!”，这样我们就知道它工作正常了。
+
+现在，让我们看看在另一个脚本中包含此文件的各种方法：
+
+文件：5.php
+
+```php
+<?php
+// 这工作正常
+echo ' <br />Requiring Once: ';
+require_once 'include_me.php';
+
+// 这也工作正常
+echo ' <br />Including: ';
+include 'include_me.php';
+
+// 文件已经包含，所以什么都没有发生
+echo ' <br />Including Once: ';
+include_once 'include_me.php';
+
+// 这是没问题的
+echo ' <br />Requiring: ';
+require 'include_me.php';
+
+// 再次什么都没有发生 - 文件已被包含
+echo ' <br />Requiring once again: ';
+require_once 'include_me.php';
+
+// 因为文件不存在，产生产生警告消息
+echo ' <br />Include the wrong file: ';
+include 'include_wrong.php';
+
+// 产生致命错误并停止脚本执行
+echo ' <br />Requiring the wrong file: ';
+require 'include_wrong.php';
+
+// 这永远不会执行，因为我们有一个致命错误
+echo '<br />Including again: ';
+include 'include_me.php';
+?>
+```
+
+# 第 1 章：PHP 基础
+
+这是它生成的输出（注意我简化了结尾的错误消息）：
+
+Requiring Once: I've been included!
+
+Including: I've been included!
+
+Including Once:
+
+Requiring Once: I've been included!
+
+Requiring Once again:
+
+Include the wrong file:include_wrong.php for inclusion
+
+Requiring the wrong file:Fatal error: Failed opening required 'include_wrong.php'
+
+注意这里，第一次使用 `include_once` 时什么都没做（文件已经被包含），就像稍后使用 `require_once` 一样。后来，当我尝试包含错误的文件（在这种情况下，文件不存在）时，我得到了一个警告消息。然而，执行继续到下一行，我尝试要求一个不存在的文件。这次，PHP 产生了一个致命错误并停止了脚本执行，导致最后的包含文件的尝试永远不会发生。
+
+请注意，你包含的文件并不只有 PHP。被包含的文件可能只包含没有任何 PHP 的 HTML。
+
+## 使用使用哪种命令？
+
+作为通用做法，除非你有需要其他行为的特殊情况，否则始终使用 `require_once` 命令将一个文件包含另一个文件中。当你将 PHP 类存放在单独的文件时，这一点尤为重要，因为一个类可能依赖于另一个类。关于类的完整故事，请参见第 2 章。
+
+请注意，在本书中，当我使用 `require` 命令之一时，我会说“包含”（including）一个文件。这是讨论 PHP 的一种常用习惯，源于第一批 PHP 先驱者使用的旧编程语言。
+
+## 路径查找
+
+到为止，我只看了与包含 `include` 命令的脚本相同的目录下包含文件。在实践中，你会希望根据它们的功能将文件组织到子目录。这可能是许多困惑的来源，特别是当你使用第三方代码时，因为处理其他目录中的包含有许多替代方法。
+
+首先需要意识到的是，所有的包含都是相对于主脚本（执行开始的地方）所在的目录计算的。例如，假设我们在以下位置有三个文件：
+
+```
+/home/username/www/index.php
+/home/username/www/includes/script.php
+/home/username/www/another.php
+```
+
+首先，让我们考虑 `index.php`。命令 `include 'includes/script.php';` 将正确包含 `script.php`，假设 `index.php` 是实际请求的文件。
+
+如果我们在 `script.php` 中使用以下命令：
+
+```php
+include '../another.php'; // ??1
+```
+
+如果 `script.php` 是我们正在查看的页面，此命令将正确包含 `another.php`。然而，如果 `index.php` 是我们正在查看的页面，并且它包含了 `script.php`，那么此命令将失败，因为 `another.php` 的位置是相对于 `index.php` 的位置计算的，而不是相对于 `script.php` 的。
+
+我们有两个选择。我们可以修改 `script.php` 以其如下所示包含 `another.php`：
+
+```php
+include 'another.php';
+```
+
+或者，我们可以输入 `another.php` 的完整路径，如下：
+
+```php
+include '/home/username/www/another.php';
+```
+
+PHP 配置文件 `php.ini` 还包含 `include_path` 指令。这允许你指定可以包含文件的目录，而无需在使用这些命令之一时指定它们的位置。
+
+这种方法需要谨慎使用，因为如果被包含的文件不存在，可能会导致奇怪的结果。
+
+# 使用完整的 `<?php ?>` 标签
+
+PHP 支持多种标记来标识 PHP 代码段，包括短标签 (`<? ?>`) 和 ASP 风格的标签 (`<% %>`)。这些标记通过 `php.ini` 中的 `short_open_tag` 和 `asp_tags` 设置来控制。虽然你可能将这些设置设为了 `On`，但其他人可能没有。例如，短标签样式在 PHP 与 XML 文档混合使用时会产生问题，当使用如下处理指令时：
+
+```xml
+<?xml version="1.0"?>
+```
+
+如果我们有一个既包含 PHP 又包含 XML 的文档，并且开启了 `short_open_tag`，PHP 会将 XML 处理指令 `<?php` 的部分 `<?<?` 误认为是 PHP 开启标签。
+
+你的代码可能需要在 `short_open_tags` 和 `asp_tags` 均关闭的环境中运行。确保它们关闭的最佳方法是养成使用 `<?php ?>` 标签风格的习惯，否则在未来的某个阴暗的时刻，你可能需要进行大量的代码重写。
+
+# register_globals
+
+PHP 能够将传入的数据转换为原生 PHP 变量。此功能由 `php.ini` 中的 `register_globals` 设置控制。开启 `register_globals` 后，如果我将浏览器指向如 `http://www.mysite.com/index.php` 的地址，PHP 将自动创建一个变量 `$logged_in` 并给其赋值为 `1`。PHP 现在建议禁用此设置，因为如前面的示例所示，它会带来安全风险。
+
+因此，在 `php.ini` 中确保代码配置正确：
+
+```ini
+register_globals = Off
+```
+
+这将迫使你通过预定义的超全局变量（例如 `$_GET['username']`）来访问传入的数据，这意味着它们不会与你在脚本中创建的变量发生冲突。
+
+使用 Apache 的 `.htaccess` 文件可以通过可以通过代码实现相同的效果：
+
+```apache
+php_flag register_globals off
+```
+
+
+
+更多信息可以参考 PHP 手册 [26]，以及 Kevin Yank 在 SitePoint 上的文章《使用 PHP 4.2 编写安全脚本！》[27]。
+
+# 魔术引号（Magic Quotes）
+
+**魔术引号（Magic quotes）** 是一项旨在帮助防止 PHP 初学者开发的网站发生安全泄露的功能。
+
+它会在你的脚本访问这些任何值*之前*，自动对传入的 URL 查询字符串、post 数据和代码数据添加**转义字符**（更多信息见第 5 章）。如果你直接将数据插入数据库，即使开启了魔术引号功能，也不存在有人能篡改数据库的风险。
+
+对于初学者来说，这无疑是防止灾难的有用方法。然而，一旦你理解了`SQL 注入攻击`，并养了在代码中处理它们的习惯，魔术引号功能带来的问题可能就会超过它的价值。
+
+魔术引号功能由 PHP 配置设置`magic_quotes_gpc`控制，该设置可以开启或关闭。
+
+我的倾向是始终关闭魔术引号，并由我自己对 SQL 语句进行转义。遗憾的是，这意味着我的代码无法很好地迁移到开启了魔术引号的 PHP 环境中（我的内容会出现反斜杠）。坦率地说，为了解决这个问题，PHP 提供了`get_magic_quotes_gpc`函数，可用来检查魔术引号是否开启。为了保持本书的可移植性，我将使用一个简单的文件来去除魔术引号，并启用该功能：
+
+```php
+<?php
+
+/**
+ * 检查 magic_quotes_gpc 是否为 On，并在必要时从
+ * 请求中去除它们
+ */
+
+if (get_magic_quotes_gpc()) {
+  $GET = array_map('stripslashes', $_GET);
+  $POST = array_map('stripslashes', $_POST);
+  $_COOKIE = array_map('stripslashes', $_COOKIE);
+}
+
+?>
+```
+
+如果我们在任何从查询字符串、表单 post 或 cookie 接收数据的开头包含此代码，只要该功能被开启，我们将移除魔术引号添加的任何斜杠。这有效地让我们找回了原始数据。
+
+SQL 注入攻击的主题在第 3 章的“如何解决由引号/单引号引起的数据库错误？”中有详细讨论。如果你没有信心保护自己不受 SQL 注入，请使用魔术引号。如果你完全掌握了所有问题，请关闭魔术引号功能并节省很多麻烦。注意，魔术引号只能通过`php.ini`文件或 Apache 的`.htaccess`文件之一开启或关闭。更多信息请参阅附录 A。
+
+# 第 1 章：PHP 基础
+
+## 调用时引用传递（Call-Time Pass-By-Reference）关闭
+
+引用是变量值的“快捷方式”。当我们使用 PHP 函数和类时，经常需要引用，我们将在第 2 章进一步讨论这个主题。当你在调用函数或类方法时使用变量的引用，它被定义为调用时引用传递。考虑这个例子：
+
+```php
+$result = myFunction(&$myVariable);
+```
+
+在这里，`&`运算符告诉 PHP 使用变量`$myVariable`的引用作为参数，而不是创建其值的副本。这现在通常被认为是坏习惯，但它会让理解他人代码的工作变得极其困难。
+
+在`php.ini`中使用以下命令关闭它：
+
+```ini
+allow_call_pass_reference = Off
+```
+
+或者，在`.htaccess`文件中关闭它：
+
+```apache
+php_flag allow_call_pass_reference off
+```
+
+## 编写可重用的代码
+
+说起来容易，我知道，但如果你发现自己正在编写多个 PHP 脚本，你就需要开始考虑如何让代码可重用，否则你会面临过早脱发。从技术上讲，这并不完全是一个移植性问题，但如果你在其他网站或应用程序上工作，你会感激拥有现成的代码。例如，如果你的应用程序是某种用户身份验证系统，它能与已有大量用户的系统集成吗？
+
+最佳方法是用面向对象的代码工作（第 2 章的重点），并创建重用的“组件”。有些人认为在 PHP 中编写面向对象的代码会降低应用程序性能，因此应该避免。他们忘记了面向对象编程带来的性能巨大提升。毕竟，程序员比微处理器贵得多！
+
+衡量代码潜力时需要考虑的一些因素：
+
+- 当需求变化时会发生？
+- 为代码添加新功能容易吗？
+- 在长时间之后你还能理解这些代码吗？
+- 你代码中的假设适用于你的其他工作吗？
+
+你将在书中发现许多提示和建议，鼓励你编写可重用的代码，对 PHP 应用程序设计的深度分析超本文范围。在阅读本书时，你应该对某些关键因素作为研究主题有一个感觉。作为一名丰富的 PHP 开发者，你对自己的主要责任是保持对软件开发更深奥方面的知识（例如设计模式和企业应用架构），以提高你的开发技术，更重要的是为你节省时间。知识越广，大项目失败的风险越低。
+
+一篇解释了在关闭`register_globals`的情况下编写脚本重要性的教程。
+
+Zend 提供了用于处理字符串的可用函数导览。
+
+- [字符串理论](http://www.devshed.com/Server_Side/PHP/StringTheory/)  
+  DevShed 对字符串进行了深入观察，甚至涵盖了 Posix 扩展正则表达式。
+
+## 面向对象的 PHP
+
+面向对象范式是一种编程方法，旨在鼓励开发可维护且结构良好的应用程序。许多 PHP 程序员将**面向对象编程**（OOP）视为某种神秘的艺术，因为 PHP 的示例往往只关注如何采用**过程化**方法，而不是采用面向对象的方法来解决问题。这是一种遗憾，因为通过采用面向对象的方法来开发 PHP 应用程序可以获益良浅，其中最重要的一点可能是代码复用。编写得良好的面向对象代码可以轻松解决其他项目中的相同问题；我们可以在需要时只需将其插入即可。面向对象的代码库日益增，例如 PEAR[1] 和 PHP Classes[2]，这些库可以节省你解决那些已经有迹可循的问题上花费的数小时工作，让你能够自由地专注于应用程序的特定细节。
+
+在本章中，你将获得编写面向对象 PHP 的实践基础——并且会有很多机会让你上手实践。教授 OOP 有许多方法，这个主题提供了无限的讨论空间。在我看来，最好的方法是直接投入其中，看看如何用 PHP 中的类来完成过程化任务，并在过程中加入理论。这就是我们在本章将采用的方法。在《PHP 全集》（The PHP Anthology）的所有卷中，我在适当的地方都会使用 OOP，这应该为你提供更多可学习的示例。特别是第二卷第 7 章，应该让你对为什么 OOP 是结构化应用程序的有效方法产生见解。
+
+在实践中，学习使用 PHP 提供的对象模型需要我们实现两个目标，这两个目标通常必须同时进行：
+
+- 你需要学习 PHP 类语法和面向对象术语。
+- 你必须完成从过程化代码到面向对象代码的“思维跳跃”。
+
+第一步很容易。它是下一个解决方案的秘诀，进一步的示例将出现在锁定了更高级主题的后续解决方案中。
+
+第二步，即“思维跳跃”，既简单又有挑战性。一旦你实现了它，你将不再考虑单个脚本应该完成的长长任务列表；相反，你将编程看作是工具的组合，你的脚本将工作委托给这些工具。
+
+稍微向前跳一点——让你领略一下未来的内容——这里有一个简单的示例，对于任何使用 PHP 超过一周的人来说都是熟悉的：连接到 MySQL 并获取一些数据。常见的过程化方法看起来如下：
+
+```php
+<?php
+
+// 过程化示例
+
+// 连接到 MySQL
+$connection = mysql_connect('localhost', 'harryf', 'secret');
+
+// 选择所需的数据库
+mysql_select_db('sitepoint', $connection);
+
+// 执行查询选择五篇文章
+$sql = 'SELECT * FROM articles LIMIT 0,5';
+$result = mysql_query($sql, $connection);
+
+// 显示结果
+while ($row = mysql_fetch_array($result)) {
+    // 在此处显示结果
+}
+
+?>
+```
+
+在上面的脚本中，我们直接调用了 PHP 的 MySQL 函数，这些函数作用于我们传递给它们的变量。这通常会导致我们获得一个新的变量，我们可以对该变量进行进一步的工作。
+
+解决相同问题的面向对象方法可能看起来所示：
+
+```php
+<?php
+
+// OOP 示例
+
+// 引入 MySQL 类
+require_once 'Database/MySQL.php';
+
+// 实例化 MySQL 类，连接到 MySQL 并选择数据库
+$db = new MySQL('localhost', 'harify', 'secret', 'sitepoint');
+
+// 执行查询选择五篇文章
+$sql = 'SELECT * FROM articles LIMIT 0,5';
+$result = $db->query($sql); // 创建一个 MySQLResult 对象
+
+// 显示结果
+while ($row = $result->fetch()) {
+    // 显示结果
+}
+
+?>
+```
+
+使用 PHP 的 MySQL 函数处理 MySQL 的细节现在已委托给一个从`MySQL`类创建的对象（我们将在整个书中使用该类，它将在第 3 章构建）。尽管考虑到代码量，这个示例与第一个示例非常相似，可能无法完全说明 OOP 的优势，但它的作用是原始脚本的一些复杂性现在由`MySQL`类来处理。
+
+例如，我们发现不再需要执行连接到数据库的步骤，相反，由对象来处理。这就是我们在本章中将采用的方法。我们发现在
+
+## 第 2 章：面向对象的 PHP
+
+> ^ 过程化编程是非面向对象编程的名称。到目前为止在书中看到的所有代码在本质上都是过程化的。
+
+[1] http://www.php.net/  
+[2] http://www.phpclasses.org/
+
+```php
+// 初始化页面变量
+$page = '';
+
+// 将页头添加到页面
+$page = Page::addHeader($page, 'A Script Using Static Methods');
+
+// 向页面主体添加内容
+$page .= <<EOD
+
+<p align="center">This page was generated with static class methods</p>
+
+EOD;
+
+// 将页脚添加到页面
+$page = Page::addFooter($page, date('Y'), 'Static Designs Inc.');
+
+// 显示页面
+echo $page;
+
+?>
+```
+
+在这里，我们使用`::`运算符调用了`addHeader`和`addFooter`方法。脚本在逻辑上与之前相同；然而，我们不再是直接调用函数，而是像这里这样调用它们：
+
+```php
+$page = Page::addHeader($page, 'A Script Using Static Methods');
+```
+
+虽然这并不是什么巨大的改进，但它确实根据功能描述将我们的函数集合在一起了。这允许我们通过名称调用不同的函数，而每个函数都分别嵌套在不同的类中。
+
+## 静态方法（Static methods）
+
+到为止，我们只把类作为相关函数的容器。在面向对象的术语中，设计为此类工作的函数被称为**静态方法**。
+
+实际上，与大多数方法相比，静态方法就像它们听起来那样一样无聊。在接下来的章节中，我们将看到如何通过一些功能全的方法真正展现你的面向对象编程功底。
+
+## 类与对象（Classes and Objects）
+
+类（Class）是对象的“蓝图”。也就是说，与你声明并使用的函数不同，类仅仅是描述了一种对象类型。在对它进行操作之前，你需要使用它来创建一个对象——类的实例——……
+
+## 第 2 章：面向对象的 PHP（Chapter 2: Object Oriented PHP）
+
+这被称为实例化（instantiation）。一旦你有了一个对象，就可以调用类中定义的方法。
+
+类并不只包含函数——它们还可以包含变量。为了让我们开发的`Page`类更有用，我们可能希望将某些变量与方法分组，然后将类实例化为对象。以下是重构后的`Page`类代码；请阅读下文的解释：
+
+```php
+<?php
+
+// Page 类
+class Page {
+
+    // 声明类成员变量
+    var $page;
+
+    // 构造函数
+    function Page() {
+        $this->page = '';
+    }
+
+    // 生成页面顶端
+    function addHeader($title) {
+        $this->page .= <<EOD
+
+<html>
+
+<head>
+
+<title>$title</title>
+
+</head>
+
+<body>
+
+<h1 align="center">$title</h1> // 注意：此处原文似乎漏了符号
+
+EOD
+    }
+
+    // 向页面添加一些文本
+    function addContent($content) {
+        $this->page .= $content;
+    }
+
+    // 生成页面底部
+    function addFooter($year, $copyright) {
+        $this->page .= <<EOD
+
+<div align="center">&copy; $year $copyright</div>
+
+</body>
+
+</html>
+
+EOD;
+    }
+
+    // 获取页面内容
+    function get()
+    {
+        return $this->page;
+    }
+
+}
+```
+
+在示例的这个版本中，`Page`类包含了多得有用的功能。首先，我们添加了一个成员变量（也称为字段），用来存储 HTML：
+
+```php
+// 声明类成员变量
+var $page;
+```
+
+PHP 关键字`var`用于在类中声明变量。我们也可以在声明变量时为其赋值，但不能在声明中放置函数调用。例如：
+
+```php
+// 这是允许的
+var $page = '';
+```
+
+```php
+// 这是不允许的
+var $page = strtolower('HELLO WORLD');
+```
+
+声明之后，我们有一个特殊的方法叫做**构造函数**（constructor）。当类被实例化时，该方法会被自动执行。构造函数的名称必须始终与类名保持一致。
+
+## 构造函数没有返回值（Constructors have no return value）
+
+> 构造函数不能返回任何值。它纯粹用于在类实例化时以某种方式设置对象。如果有帮助，可以把构造函数想象成一个在设置完成后自动返回对象的函数，因此你不需要自己提供返回值。
+
+尽管如此，如果需要，你仍然可以使用不带指定值的`return`命令来立即终止构造函数。
+
+在构造函数内部，我们使用了一个特殊变量`$this`：
+
+```php
+// 构造函数
+function Page()
+{
+    $this->page = '';
+}
+```
+
+在任何方法（包括构造函数）中，`$this`都指向运行该方法的对象。它允许方法访问属于该特定对象的其他方法和变量。跟在`$this`后的`->`（箭头）用于指向对象内部命名的属性或方法。
+
+在上面的示例中，构造函数为开头声明的`$page`成员变量赋值了一个空字符串。`$this`变量的想法初看起来可能很奇怪且混乱，这是其他编程语言（如 Java [5]）采用的一种常用策略，以便类成员之间相互交互。一旦你开始编写面向对象的 PHP 代码，你很快就会习惯它，因为可能你的类中几乎每个方法都需要它。
+
+在其他类方法中，`addHeader`和`addFooter`与之前几乎相同；请注意它们不再返回结果。相反，它们更新了对象的`$page`成员变量，正如你将看到的，这有助于简化使用该变量的代码。我们在这里还使用了`addContent`方法；我们可以向页面添加更多内容（例如，我们在对象外部自行格式化的 HTML）。最后，我们有`get`方法，它是唯一返回值的方法。当我们完成页面的构建后，将使用它来创建 HTML。
+
+所有方法都使用`$page`成员变量，这并非巧合。将 PHP 代码（方法）与其处理的数据（变量）绑定在一起的能力是面向对象编程最基本的特性。
+
+以下是类的运行示例：
+
+```php
+// 实例化 Page 类
+$WebPage = new Page();
+
+// 将页头添加到页面
+$WebPage->addHeader('A Page Built with an Object');
+```
+
+- [5] http://java.sun.com/
+
+```php
+// 在类作用域内声明的函数
+function myFunction()
+{
+  // 函数（方法）作用域内的变量
+  $myVariable = 'Metodical';
+}
+
+?>
+```
+
+在上面的示例中，每个`$myVariable`声明实际上都是独立的变量。它们可以和谐地共存而互不干扰，因为每个都存在于独立的作用域中。同样地，两个`myFunction`声明是两个独立的函数，存在于不同的作用域中。因此，PHP 将为你保持它们所有的值是相互独立的。
+
+当你开始在 PHP 应用中大量使用面向对象的编程时，作用域就变得非常重要。由于许多类具有同名的方法，你可以设计不同的类来提供相同的应用程序接口（API）。这些类使用的脚本将使用相同的方法调用，无论使用哪个类来实例化它们正在处理的对象。这在编写可维护的代码时是一种非常强大的技术。当我们在本章后面讨论多态时，我们会详细讨论这一点。
+
+## 三行代码
+
+以下是我们可以让该类更容易使用的方法：
+
+```php
+<?php
+
+// Page 类
+class Page {
+
+  // 声明类成员变量
+  var $page;
+  var $title;
+  var $year;
+  var $copyright;
+
+  // 构造函数
+  function Page($title, $year, $copyright)
+{
+```
+
+
+
+// 给成员变量赋值
+
+`$this->page = '';`
+
+`$this->title = $title;`
+
+`$this->year = $year;`
+
+`$this->copyright = $copyright;`
+
+// 调用 `addHeader()` 方法
+
+`$this->addHeader();`
+
+// 生成页面的头部
+
+```
+function addHeader() {
+    $this->page .= <<EOD
+<html>
+<head>
+<title>$this->title</title>
+</head>
+<body>
+<h1 align="center">$this->title</h1>
+EOD;
+}
+```
+
+// 向页面添加更多文本
+
+```
+function addContent($content) {
+    $this->page .= $content;
+}
+```
+
+// 生成页面的页脚
+
+```
+function addFooter() {
+    $this->page .= <<EOD
+<div align="center">&copy; $this->year $this->copyright</div>
+</body>
+</html>
+EOD;
+}
+```
+
+// 获取页面的内容
+
+```
+function get() {
+    // 保留一份没有页脚的 $page拷贝
+    $temp = $this->page;
+    // 调用 addFooter() 方法
+    $this->addFooter();
+    // 为下次调用 get 恢复 $page
+    $page = $this->page;
+    $this->page = $temp;
+    return $page;
+}
+```
+
+这次，我们修改了构造函数，以接受页面头部和页脚所需的所有变量。一旦值赋值给对象的成员变量，构造函数就会调用 `addHeader` 方法，该方法会自动构建页面的头部。
+
+```php
+// 构造函数
+function Page($title, $year, $copyright)
+{
+    // 给成员变量赋值
+    $this->page = '';
+    $this->title = $title;
+    $this->year = $year;
+    $this->copyright = $copyright;
+    // 调用 addHeader()
+    $this->addHeader();
+}
+```
+
+如你所见，成员变量一样，方法可以通过 `$this` 变量来调用。
+
+`addHeader` 方法现在从成员变量中获取它需要的数据。例如：
+
+`<title>$this->title</title>`
+
+我们更新了 `get` 方法，使其在返回 `$page` 变量的内容之前调用 `addFooter` 方法。这意味着当我们获取完成的页面时，页脚会自动添加。
+
+```php
+// 获取页面的内容
+function get()
+{
+    // 保留一份没有页脚的 $page拷贝
+    $temp = $this->page;
+    // 调用 addFooter 方法
+    $this->addFooter();
+    // 为下次调用 get 恢复 $page
+    $page = $this->page;
+    $this->page = $temp;
+    return $page;
+}
+```
+
+当 `$color` 被传递给函数 `isPrimaryColor` 时，PHP 在函数内部对原始 `$color` 变量的副本进行操作。
+
+将变量传递给类方法时也是如此。
+
+```php
+<?php
+class ColorFilter {
+    var $color;
+    function ColorFilter($color) {
+        // $color 是一个副本
+        $this->color = $color;
+        // $this->color 是副本副本的副本
+    }
+    function isPrimaryColor() {
+        switch ($this->color) {
+            case 'red':
+            case 'blue':
+            case 'green':
+                return true;
+                break;
+            default:
+                return false;
+        }
+    }
+}
+$color = 'blue';
+$filter = new ColorFilter($color);
+if ($filter->isPrimaryColor()) {
+    echo ($color.' is a primary color');
+} else {
+    echo ($color.' is not a primary color');
+}
+?>
+```
+
+类外的原始 `$color` 被传递给 `ColorFilter` 的构造函数。构造函数内部的 `$color` 变量是传递给它的版本的副本。它被赋值给 `$this->color`，这使得该版本变成了副本的副本。
+
+## 第 2 章：面向对象的 PHP
+
+所有这些传递变量的方法都会创建该变量值的副本；这被称为“按值传递”。
+
+## 使用引用
+
+要通过引用传递，你需要需要使用引用运算符 `&`（取地址符）。例如：
+
+```php
+<?php
+$color = 'blue';
+$settings['color'] = &$color;
+?>
+```
+
+现在 `$settings['color']` 包含了对原始 `$color` 变量的引用。
+
+比较以下示例，第一个使用 PHP 默认拷贝行为：
+
+```php
+<?php
+$color = 'blue';
+$settings['color'] = $color; // 创建了副本
+$color = 'red'; // 颜色改变
+echo $settings['color']; // 显示 "blue"
+?>
+```
+
+第二个涉及按引用传递：
+
+```php
+<?php
+$color = 'blue';
+$settings['color'] = &$color; // 创建了引用
+$color = 'red'; // 颜色改变
+echo $settings['color']; // 显示 "red"
+?>
+```
+
+通过引用传递允许我们让新变量与原始源变量保持“链接”。对新变量或旧变量的更改都会反映在两个变量的值上。
+
+到目前为止很好，你可能在想：“这有什么大不了的？只要我们得到了预期的结果，PHP 拷贝变量还是对变量使用引用，又有什么区别呢？”对于在过程化程序中传递的变量，你几乎不需要担心引用。然而，当涉及到对象相互交互时，如果你不按引用传递对象，你很可能会得到不符合预期的结果。
+
+## 引用的重要性
+
+假设你的网站上有一个机制，允许访问者更改网站的外观和感受——一个用户“控制面板”。很可能，为了实现这种功能，你会有代码在一个组包含“外观和感受”数据的变量集上进行操作，以便独立于应用程序的其他逻辑来修改它们。
+
+用类来表示这一点，首先，让我们看看存储与外观和感受相关数据的类：
+
+```php
+// LookAndFeel 包含 $color 和 $size
+class LookAndFeel {
+    var $color;
+    var $size;
+    function LookAndFeel() {
+        $this->color = 'white';
+        $this->size = 'medium';
+    }
+    function getColor() {
+        return $this->color;
+    }
+    function getSize() {
+        return $this->size;
+    }
+    function setColor($color) {
+        $this->color = $color;
+    }
+    function setSize($size) {
+        $this->size = $size;
+    }
+}
+```
+
+接下来，我们有一个处理渲染输出的类：
+
+```php
+// Output 负责构建显示的内容
+class Output {
+    var $lookfeel;
+    var $output;
+    // 构造函数接收 LookAndFeel 作为参数
+    function Output($lookfeel) {
+        $this->lookfeel = $lookfeel;
+    }
+    function buildOutput() {
+        $this->output = 'Color is ' . $this->lookfeel->getColor() . 
+        ' and size is ' . $this->lookfeel->getSize();
+    }
+    function display() {
+        $this->buildOutput();
+        return $this->output;
+    }
+}
+```
+
+注意 `Output` 类的构造函数。它接收 `LookAndFeel` 的实例作为参数，这样稍后它可以使用它来帮助构建页面的输出。我们将在本章稍后讨论更多类之间相互交互的方法。
+
+以下是我们如何使用这些类的：
+
+```php
+// 创建 LookAndFeel 的实例
+$lookfeel = new LookAndFeel();
+// 将其传递给 Output 的实例
+$output = new Output($lookfeel);
+// 显示输出
+echo $output->display();
+?>
+```
+
+这显示了以下信息：
+
+`Color is white and size is medium`
+
+现在，假设响应你用户控制面板上的某个选项，你想更改网站的外观和感受。让我们这样做：
+
+```php
+// 创建 LookAndFeel 的实例
+$lookfeel = new LookAndFeel();
+// 将其传递给 Output 的实例
+$output = new Output($lookfeel);
+// 显示输出
+echo $output->display();
+?>
+```
+
+这显示了以下信息：
+
+`Color is white and size is medium`
+
+现在，假设响应你用户控制面板上的某个选项，你想更改网站的外观和感受。让我们这样做：
+
+```php
+// 创建 LookAndFeel 的实例
+$lookfeel = new LookAndFeel();
+// 将其传递给 Output 的实例
+$output = new Output($lookfeel);
+// 显示输出
+echo $output->display();
+?>
+```
+
+这显示了以下信息：
+
+`Color is white and size is medium`
+
+现在，假设响应你用户控制面板上的某个选项，你想更改网站的外观和感受。让我们这样做：
+
+```php
+// 创建 LookAndFeel 的实例
+$lookfeel = new LookAndFeel();
+// 将其传递给 Output 的实例
+$output = new Output($lookfeel);
+// 显示输出
+echo $output->display();
+?>
+```
+
+这显示了以下信息：
+
+`Color is white and size is medium`
+
+现在，假设响应你用户控制面板上的某个选项，你想更改网站的外观和感受。让我们这样做：
+
+```php
+// 创建 LookAndFeel 的实例
+$lookfeel = new LookAndFeel();
+// 将其传递给 Output 的实例
+$output = new Output($lookfeel);
+// 显示输出
+echo $output->display();
+?>
+```
+
+这显示了以下信息：
+
+`Color is white and size is medium`
+
+现在，假设响应你用户控制面板上的某个选项，你想更改网站的外观和感受。让我们这样做：
+
+```php
+// 创建 LookAndFeel 的实例
+$lookfeel = new LookAndFeel();
+// 将其传递给 Output 的实例
+$output = new Output($lookfeel);
+// 显示输出
+echo $output->display();
+?>
+```
+
+这显示了以下信息：
+
+`Color is white and size is medium`
+
+现在，假设响应你用户控制面板上的某个选项，你想更改网站的外观和感受。让我们这样做：
+
+```php
+// 创建 LookAndFeel 的实例
+$lookfeel = new LookAndFeel();
+// 将其传递给 Output 的实例
+$output = new Output($lookfeel);
+// 显示输出
+echo $output->display();
+?>
+```
+
+这显示了以下信息：
+
+`Color is white and size is medium`
+
+现在，假设响应你用户控制面板上的某个选项，你想更改网站的外观和感受。让我们这样做：
+
+```php
+// 创建 LookAndFeel 的实例
+$lookfeel = new LookAndFeel();
+// 将其传递给 Output 的实例
+$output = new Output($lookfeel);
+// 显示输出
+echo $output->display();
+?>
+```
+
+这显示了以下信息：
+
+`Color is white and size is medium`
+
+现在，假设响应你用户控制面板上的某个选项，你想更改网站的外观和感受。让我们这样做：
+
+```php
+// 创建 LookAndFeel 的实例
+$lookfeel = new LookAndFeel();
+// 将其传递给 Output 的实例
+$output = new Output($lookfeel);
+// 显示输出
+echo $output->display();
+?>
+```
+
+这显示了以下信息：
+
+`Color is white and size is medium`
+
+Wait，什么？因为 `$output` 持有 `$lookfeel` 的引用，而不是它的副本。现在，假设响应你用户控制面板上的某个选项，你想更改网站的外观和感受。让我们这样做：
+
+```php
+// 创建 LookAndFeel 的实例
+$lookfeel = new LookAndFeel();
+// 将其传递给 Output 的实例
+$output = new Output($lookfeel);
+// 显示输出
+echo $output->display();
+?>
+```
+
+这显示了以下信息：
+
+`Color is white and size is medium`
+
+Wait，什么？因为 `$output` 持有 `$lookfeel` 的引用，而不是它的副本。现在，假设响应你用户控制面板上的某个选项，你想更改网站的外观和感受。让我们这样做：
+
+```php
+// 创建 LookAndFeel 的实例
+$lookfeel = new LookAndFeel();
+// 将其传递给 Output 的实例
+$output = new Output($lookfeel);
+// 显示输出
+echo $output->display();
+?>
+```
+
+这显示了以下信息：
+
+`Color is white and size is medium`
+
+Wait，什么？因为 `$output` 持有 `$lookfeel` 的引用，而不是它的副本。现在，假设响应你用户控制面板上的某个选项，你想更改网站的外观和感受。让我们这样做：
+
+```php
+// 创建 LookAndFeel 的实例
+$lookfeel = new LookAndFeel();
+// 将其传递给 Output 的实例
+$output = new Output($lookfeel);
+// 显示输出
+echo $output->display();
+?>
+```
+
+这显示了以下信息：
+
+`Color is white and size is medium`
+
+Wait，什么？因为 `$output` 持有 `$lookfeel` 的引用，而不是它的副本。现在，假设响应你用户控制面板上的某个选项，你想更改网站的外观和感受。让我们这样做：
+
+```php
+// 创建 LookAndFeel 的实例
+$lookfeel = new LookAndFeel();
+// 将其传递给 Output 的实例
+$output = new Output($lookfeel);
+// 显示输出
+echo $output->display();
+?>
+```
+
+这显示了以下信息：
+
+`Color is white and size is medium`
+
+Wait，什么？因为 `$output` 持有 `$lookfeel` 的引用，而不是它的副本。
+
+
+
+这显示了以下信息：
+
+`Color is white and size is medium`
+
+Wait，什么？因为`$output`持有`$lookfeel`的引用，而不是它的副本。现在，假设响应你用户控制面板上的某个选项，你想更改网站的外观和感受。让我们这样做：
+
+```php
+// 创建 LookAndFeel 的实例
+$lookfeel = new LookAndFeel();
+
+// 将其传递给 Output 的实例
+$output = new Output($lookfeel);
+
+// 显示输出
+echo $output->display();
+?>
+```
+
+这显示了以下信息：
+
+`Color is white and size is medium`
+
+Wait，什么？因为`$output`持有`$lookfeel`的引用，而不是它的副本。现在，假设响应你用户控制面板上的某个选项，你想更改网站的外观和感受。让我们这样做：
+
+```php
+// 创建 LookAndFeel 的实例
+$lookfeel = new LookAndFeel();
+
+// 将其传递给 Output 的实例
+$output = new Output($lookfeel);
+
+// 显示输出
+echo $output->display();
+?>
+```
+
+当`$color`被传递给函数`isPrimaryColor()`时，PHP 在函数内部对原始`$color`变量的副本进行操作。
+
+将变量传递给类方法时也是如此。
+
+```php
+<?php
+
+class ColorFilter {
+    var $color;
+
+    function ColorFilter($color) {
+        // $color 是一个副本
+        $this->color = $color;
+
+        // $this->color 是副本副本的副本
+    }
+
+    function isPrimaryColor() {
+        switch ($this->color) {
+            case 'red':
+            case 'blue':
+            case 'green':
+                return true;
+                break;
+
+            default:
+                return false;
+        }
+    }
+}
+
+$color = 'blue';
+$filter = new ColorFilter($color);
+
+if ($filter->isPrimaryColor()) {
+    echo ($color . ' is a primary color');
+} else {
+    echo ($color . ' is not a primary color');
+}
+
+?>
+```
+
+类外的原始`$color`被传递给`ColorFilter`的构造函数。构造函数内部的`$color`变量是传递给它的版本的副本。它被赋值给`$this->color`，这使得该版本变成了副本的副本。
+
+## 第 2 章：面向对象的 PHP
+
+所有这些传递变量的方法都会创建该变量值的副本；这被称为“按值传递”。
+
+## 使用引用
+
+要通过引用传递，你需要使用引用运算符`&`（取地址符）。例如：
+
+```php
+<?php
+
+$color = 'blue';
+$settings['color'] = &$color;
+
+?>
+```
+
+现在`$settings['color']`包含了对原始`$color`变量的引用。
+
+比较以下示例，第一个使用 PHP 默认拷贝行为：
+
+```php
+<?php
+
+$color = 'blue';
+$settings['color'] = $color; // 创建了副本
+$color = 'red'; // 颜色改变
+
+echo $settings['color']; // 显示 "blue"
+
+?>
+```
+
+第二个涉及按引用传递：
+
+```php
+<?php
+
+$color = 'blue';
+$settings['color'] = &$color; // 创建了引用
+$color = 'red'; // 颜色改变
+
+echo $settings['color']; // 显示 "red"
+
+?>
+```
+
+通过引用传递允许我们让新变量与原始源变量保持“链接”。对新变量或旧变量的更改都会反映在两个变量的值上。
+
+到目前为止很好，你可能在想：“这有什么大不了的？只要我们得到了预期的结果，PHP 拷贝变量还是对变量使用引用，又有什么区别呢？”对于在过程化程序中传递的变量，你几乎不需要担心引用。然而，当涉及到对象相互交互时，如果你不按引用传递对象，你很可能会得到不符合预期的结果。
+
+## 引用的重要性
+
+假设你的网站上有一个机制，允许访问者更改网站的外观和感受——一个用户“控制面板”。很可能，为了实现这种功能，你会有代码在一个组包含“外观和感受”数据的变量上进行操作，以便独立于应用程序的其他逻辑来修改它们。
+
+用类来表示这一点，首先，让我们看看存储与外观和感受相关数据的类：
+
+```php
+// LookAndFeel 包含 $color 和 $size
+class LookAndFeel {
+    var $color;
+    var $size;
+
+    function LookAndFeel() {
+        $this->color = 'white';
+        $this->size = 'medium';
+    }
+
+    function getColor() {
+        return $this->color;
+    }
+
+    function getSize() {
+        return $this->size;
+    }
+
+    function setColor($color) {
+        $this->color = $color;
+    }
+
+    function setSize($size) {
+        $this->size = $size;
+    }
+}
+```
+
+接下来，我们有一个处理渲染输出的类：
+
+```php
+// Output 负责构建显示的内容
+class Output {
+    var $lookfeel;
+    var $output;
+
+    // 构造函数接收 LookAndFeel 作为参数
+    function Output($lookfeel) {
+        $this->lookfeel = $lookfeel;
+    }
+
+    function buildOutput() {
+        $this->output = 'Color is ' . $this->lookfeel->getColor() .
+            ' and size is ' . $this->lookfeel->getSize();
+    }
+
+    function display() {
+        $this->buildOutput();
+        return $this->output;
+    }
+}
+```
+
+注意`Output`类的构造函数。它接收`LookAndFeel`的实例作为参数，这样稍后它可以使用它来帮助构建页面的输出。我们将在本章稍后讨论更多类之间相互交互的方法。
+
+以下是我们如何使用这些类的：
+
+```php
+// 创建 LookAndFeel 的实例
+$lookfeel = new LookAndFeel();
+
+// 将其传递给 Output 的实例
+$output = new Output($lookfeel);
+
+// 显示输出
+echo $output->display();
+?>
+```
+
+这显示了以下信息：
+
+`Color is white and size is medium`
+
+现在，假设响应你用户控制面板上的某个选项，你想更改网站的外观和感受。让我们这样做：
+
+```php
+// 创建 LookAndFeel 的实例
+$lookfeel = new LookAndFeel();
+
+// 将其传递给 Output 的实例
+$output = new Output($lookfeel);
+
+// 显示输出
+echo $output->display();
+?>
+```
+
+## 第 2 章：面向对象的 PHP
+
+在将一个变量拷贝到另一个变量的简单情况下，PHP 的内部引用计数可以防止不必要的内存消耗。例如：
+
+```php
+$a = 'the quick brown fox';
+$b = $a;
+```
+
+在上面的示例中，`$b`的值不会占用任何额外的内存，因为 PHP 的内部引用计数会隐式地让`$b`和`$a`指向内存中的同一位置，直到它们的值发生变化为止。这是 PHP 的一个内部特性，会影响性能，但在行为上没有区别。我们不需要担心它。
+
+然而，在某些情况下，使用引用（reference）会更快，特别是在处理大型数组和对象时，在这些情况下，PHP 的内部引用计数无法使用，必须复制内容。
+
+因此，为了获得最佳性能，你应该执行以下操作：
+
+- 对于整数和字符串等简单值，尽可能避免使用引用。
+- 对于数组和对象等复杂值，尽可能使用引用。
+
+## 引用与 PHP 5
+
+在 PHP 5 中，引用将不再是一个问题，因为 PHP 在传递对象时的默认行为将是按引用传递。如果你确实需要对象的副本，可以使用`__clone`方法来创建副本。
+
+本质上，这种变化使 PHP 与 Java 等大多数面向对象的编程语言保持一致，并且无疑会减少围绕该主题的困惑。但目前，在 PHP 5 被广泛采用之前，了解引用的工作原理是非常重要的。
+
+## 如何利用继承？
+
+继承是面向对象范式的根本部分之一，也是其强大之处的重要组成。继承是不同类之间的关系，其中一个类被定义为另一个类的子类或子类。子类继承父类定义的方法和成员变量，允许它为父类“增加值”。
+
+查看 PHP 中继承如何工作的最简单方法是通过示例。假设我们有如下一个简单的类：
+
+```php
+class Hello {
+    function sayHello() {
+        return 'Hello World!';
+    }
+}
+```
+
+使用`extends`关键字，我们可以创建一个`Hello`的子类：
+
+```php
+class Goodbye extends Hello {
+    function sayGoodbye() {
+        return 'Goodbye World!';
+    }
+}
+```
+
+`Goodbye`现在是`Hello`的子类。反过来说，`Hello`是`Goodbye`的父类或超类。现在，我们可以简单地实例化子类，并使用单个对象访问`sayHello()`和`sayGoodbye()`方法：
+
+```php
+$msg = &new Goodbye();
+
+echo $msg->sayHello() . '<br />';
+echo $msg->sayGoodbye() . '<br />';
+
+?>
+```
+
+这个示例展示了继承工作的原理，但还没有展示它的真正威力……这将随着重写（overriding）的加入而体现。
+
+## 重写
+
+当我们给子类提供一个与父类函数同名的函数时会发生什么？例如：
+
+```php
+class Hello {
+    function getMessage() {
+        return 'Hello World!';
+    }
+}
+
+class Goodbye extends Hello {
+    function getMessage() {
+        return 'Goodbye World!';
+    }
+}
+```
+
+两个类具有相同的方法名`getMessage()`。PHP 对此完全可以接受——它对方法被声明两次没有异议。
+
+当我们使用这些类时发生了以下情况：
+
+```php
+$hello = &new Hello();
+echo $hello->getMessage() . '<br />';
+
+$goodbye = &new Goodbye();
+echo $goodbye->getMessage() . '<br />';
+
+?>
+```
+
+输出如下：
+
+```text
+Hello World!
+Goodbye World!
+```
+
+通过`$goodbye`对象调用`getMessage()`显示“Goodbye World!”，子类中的方法重写了父类中的方法。
+
+你也可以让子类在重写的同时内部使用父类的类。例如：
+
+```php
+class Hello {
+    function getMessage() {
+        return 'Hello World!';
+    }
+}
+
+class Goodbye extends Hello {
+    function getMessage() {
+        $parentMsg = parent::getMessage();
+        return $parentMsg . '<br />Goodbye World!';
+    }
+}
+
+$goodbye = &new Goodbye();
+echo $goodbye->getMessage() . '<br />';
+
+?>
+```
+
+使用`parent`关键字，我们可以调用父类的方法。
+
+注意，我们也可以通过名称调用父类来实现完全相同的结果：
+
+```php
+class Goodbye extends Hello {
+    function getMessage() {
+        $parentMsg = Hello::getMessage();
+        return $parentMsg . '<br />Goodbye World!';
+    }
+}
+```
+
+注意我们将`parent`关键字替换成了`Hello`类的名称。输出完全相同。然而，使用`parent`可以让你在子类中工作时不需要记住父类的名称，它是推荐的语法。
+
+在非静态方法中对`parent::getMessage()`或`Hello::getMessage()`的调用与调用静态函数是不一样的。这是涉及继承的一个特殊情况。父类中被调用的函数保留了对实例数据的访问，因此不是静态的。可以通过如下方式演示：
+
+```php
+class A {
+    var $a = 1;
+
+    function printA() {
+        echo $this->a;
+    }
+}
+
+class B extends A {
+    var $a = 2;
+
+    function printA() {
+        parent::printA();
+    }
+}
+
+$b = new B();
+$b->printA();
+```
+
+输出如下：
+
+```text
+1
+```
+
+## 一个页面的标准头部
+
+文件：`12.php`（片段）
+
+```php
+<?php
+
+/**
+ * 页面的标准头部
+ */
+class StandardHeader {
+    /**
+     * 存储在这里
+     */
+    var $header = '';
+
+    /**
+     * 构造函数，接收页面的标题
+     */
+    function StandardHeader($title) {
+        $html = <<<EOD
+<html>
+<head>
+<title>$title</title>
+</head>
+<body>
+<h1>$title</h1>
+EOD;
+
+        $this->setHeader($html);
+    }
+
+    /**
+     * 添加到头部的通用方法
+     */
+    function setHeader($string) {
+        if (empty($this->header)) {
+            $this->header .= $string;
+        } else {
+            $this->header = $string;
+        }
+    }
+
+    /**
+     * 获取头部
+     */
+    function getHeader() {
+        return $this->header;
+    }
+}
+```
+
+现在，子类`CategoryHeader`为其父类带来了额外功能，向生成的 HTML 添加了面包屑链接。我们不需要重新创建`setHeader()`和`getHeader()`方法，因为在实例化`CategoryHeader`时，这些方法是从`StandardHeader`继承而来的。
+
+```php
+/**
+ * 用于处理分类（Categories）的子类，构建面包屑
+ * 菜单（menu）
+ */
+class CategoryHeader extends StandardHeader {
+    /**
+     * 构造函数，名称和页面基础 URL
+     */
+    function CategoryHeader($category, $baseUrl) {
+        // 调用父类构造函数
+```
+
+
+
+`parent::StandardHeader($category);`
+
+// 构建面包屑
+
+```
+$html = <<EOD
+
+<p><a href="$baseUrl">首页（Home）</a> &gt; <a href="$baseUrl?category=$category">$category</a></a>
+
+</p>
+
+EOD;
+```
+
+// 调用父类的 `setHeader` 方法
+
+```
+$this->setHeader($html);
+```
+
+}
+
+}
+
+现在让我们来使用这两个类：
+
+```
+// 设置基础 URL
+$baseUrl = '12.php';
+
+// 一个有效的分类数组
+```
+
+# 实例中的继承
+
+```
+$categories = array('PHP', 'MySQL', 'CSS');
+
+// 检查我们正在查看的是否有效的分类
+if (isset($_GET['category']) &&
+in_array($_GET['category'], $categories)) {
+  // 实例化子类
+  $header = new CategoryHeader($_GET['category'], $baseUrl);
+} else {
+  // 否则就是首页。实例化父类
+  $header = new StandardHeader('Home');
+}
+
+// 显示页眉
+echo $header->getHeader();
+?>
+```
+
+```
+<p><a href="<?php echo $baseUrl; ?>?category=PHP">PHP]</a></p>
+<p><a href="<?php echo $baseUrl; ?>?category=MySQL">MySQL]</a></p>
+<p><a href="<?php echo $baseUrl; ?>?category=CSS">CSS]</a></p>
+<body>
+</</html>
+```
+
+如你所见，控制逻辑向上查找`$_GET['category']`变量。如果它存在，它会创建一个`CategoryHeader`实例，显示导航以允许用户返回首页。如果它不存在，它会创建一个父类`StandardHeader`的实例，这在用户查看首页时适用（因此不需要面包屑导航来返回）。
+
+换句话说，继承允许我们添加所需的额外功能，而无需重现已经存在于父类中的逻辑；现有的方法和逻辑可以在子类中被重用。
+
+继承提供了一种强大的机制，使类具有模块化，在解决特定问题的同时，确保共享方法和变量无论我们处理的是哪个特定对象都可以被使用。
+
+# 避免深层继承结构
+
+作为一个通用的原则，使用继承构建类层次结构时，应避免超过两代。
+
+![](...)
+
+这样做通常是设计不当的迹象，即错过了类以不同方式进行交互的机会（参见下一个解决方案）。在实践中，类层级超过两代通常会导致各种调试问题，并使代码难以维护。例如，要跟踪你在层级结构高层处使用的变量名可能会变得非常困难。
+
+# 对象是如何交互的？
+
+除了继承之外，对象之间还有其他交互方式；例如，一个对象使用另一个对象。在许多方面，这种交互比继承更重要，而这正是面向对象范式展现其实力的地方。
+
+对象可以使用另一个对象有两种：**聚合（aggregation）**和**组合（composition）**。
+
+# 聚合 (Aggregation)
+
+当一个对象“临时借用”另一个对象时，就会发生聚合。第二个对象通常通过第一个对象的其中一个成员函数传递给第一个对象。然后第一个对象就可以调用第二个对象中的方法，允许它将第二个对象中存储的功能用于自己的目的。
+
+聚合的一个常见示例涉及数据库连接类。想象你将一个数据库连接类传递给另一个类，然后该类使用该数据库连接类来执行查询。执行查询的类**聚合**了数据库连接类。
+
+这里是一个使用`MySQL`类的简单示例，我们将在第3章中创建它：
+
+```
+<?php
+
+// 引入 MySQL 数据库连接类
+require_once 'Database/MySQL.php';
+
+// 聚合 MySQL类的类
+class Articles {
+
+    var $db;
+    var $result;
+
+    // 接收 MySQL 类的实例
+    function Articles(&$db)
+    {
+      // 将对象赋值给本地成员变量
+      $this->db = &$db;
+      $this->readArticles();
+    }
+
+    function readArticles()
+    {
+      // 使用 MySQL 类执行查询
+      $sql = "SELECT * FROM articles LIMIT 0,5";
+      $this->result = &$this->db->query($sql);
+    }
+
+    function fetch()
+    {
+      return $this->result->fetch();
+    }
+}
+
+// 创建 MySQL 类的实例
+$db = new MySQL('localhost', 'harryf', 'secret', 'sitepoint');
+
+// 创建 Article 类的实例，并传递传递 MySQL 对象
+$articles = &new Articles($db);
+
+while ($row = $articles->fetch()) {
+  echo '<pre>';
+  print_r($row);
+  echo '</pre>';
+}
+```
+
+在这个示例中，我们在`Articles`类之外实例化了`MySQL`类，然后在实例化`Articles`时将它传递给`Articles`构造函数。然后`Articles`能够使用`MySQL`对象执行特定的查询。在这种情况下，`Articles`聚合了`MySQL`对象。图 2.2 用 UML 说明了这种关系。
+
+# 第2章：面向对象的 PHP
+
+## 图 2.2 聚合
+
+| Articles |
+| :--- |
+| -db: MySQL |
+| -result: object |
+| -readArticles(): void |
+| +fetch(): array |
+
+| MySQL |
+| :--- |
+| +query(in sql: string) : object |
+
+# 组合 (Composition)
+
+当一个对象“完全拥有”另一个对象时，就会发生组合。也就是说，第一个对象负责创建（实例化）第二个对象。在很多情况下这都是很有用的，尽管组合通常在第一个对象可能是唯一需要使用第二个对象的对象时才使用。
+
+第二卷第1章的一个示例是`Auth`类，它组合了一个`Session`类的实例，并在构造函数中创建它：
+
+```
+/**
+ * Session 的实例
+ */
+class Auth {
+
+    var $session;
+
+    function Auth($session)
+    {
+      $this->session = $session;
+    }
+
+    function login()
+    {
+      // ...
+    }
+}
+```
+
+第二卷第1章的一个示例是`Auth`类，它组合了一个`Session`类的实例，并在构造函数中创建它。在很多情况下这都是很有用的，尽管组合通常在第一个对象可能是唯一需要使用第二个对象的对象时才使用。
+
+图 2.3 说明了这种组合。
+
+![](...)
+
+# 区分区别
+
+判断 A 是聚合还是组合 B 的通用“思考方式”是问：“如果 A 消失了会怎样？B 存活吗？”如果 B 存活，则称 A 聚合了 B。如果 B 也消失了，则称 A 组合了 B。
+
+```
+class PoliteMessage extends Message {
+
+    function PoliteMessage() {
+        $this->setMessage('How are you today?');
+    }
+}
+
+class TerseMessage extends Message {
+
+    function TerseMessage() {
+        $this->setMessage('Howzit?');
+    }
+}
+
+class Rudemessage extends Message {
+
+    function RudeMessage() {
+        $this->setMessage('You look like *&* today!');
+    }
+}
+```
+
+我们定义了`MessageReader`类，它通过构造函数接收一个`Message`对象的数组。
+
+文件：`14.php` (节录)
+
+```
+class MessageReader {
+
+    var $messages;
+
+    function MessageReader(&$messages) {
+        $this->messages = &$messages;
+        $this->readMessages();
+    }
+
+    function readMessages() {
+        foreach ($this->messages as $message) {
+            echo $message->getMessage() . '<br />';
+        }
+    }
+}
+```
+
+这里需要注意这一点是，对于`MessageReader`而言，“消息对象”是指任何从`Message`类或其任一个子类实例化的对象。你是否看到在`readMessages`方法内部，我们是如何调用`getMessage`方法的？这段代码可以在任何具有`getMessage`方法的对象运行——包括`Message`的任何子类。
+
+## 第 2 章：面向对象的 PHP
+
+现在，为了证明这一点，让我们使用我们的三个子类随机创建一些`Message`对象：
+
+文件：`14.php` (节录)
+
+```
+$classNames = array(['PoliteMessage', 'TerseMessage', 'RudeMessage']);
+$messages = array();
+srand((float)microtime() * 1000000); // 准备随机洗牌
+
+for ($i=0; $i<10; $i++) {
+    shuffle($classNames);
+}
+$messages[] = new $classNames[0]();
+$messageReader = new MessageReader($messages);
+```
+
+通过创建`$classNames`并反复对其洗牌，我们可以获取数组的第一个元素并使用它来创建一个新对象：
+
+```
+$messages[] = new $classNames[0]();
+```
+
+这是一个变量函数的示例。表达式`$classNames`会被求值，以确定要调用的构造函数名称（`PoliteMessage`、`TerseMessage`或`RudeMessage`）。
+
+最后，`$messages`数组包含了十条随机选择的消息，并在实例化时传递给`MessageReader`的构造函数。
+
+以下是示例结果：
+
+```
+You look like *&*!
+Howzit?
+How are you today?
+How are you today?
+How are you today?
+You look like *&*!
+How are you today?
+How are you today?
+Howzit?
+How are you today?
+```
+
+我们每次执行脚本时，列表都是不同的。
+
+由于所有的具体消息类都共享相同的`getMessage`函数（即它们实现了相同的接口），`MessageReader`类能够在不知道它正在处理哪种特定类型消息的情况下提取数据。一组相关类能够互换工作的能力被称为多态，这在图 2.4 的 UML 图中所示。
+
+# 图 2.4. 多态
+
+| MessageReader | Message |
+| :--- | :--- |
+| -messages : array | -message : string |
+| -readMessages(): void | +getMessage(): string |
+| | #setMessage(in message : string) : void |
+
+一旦你意识到面向对象编程的这种价值，它会变得非常强大。例如，你可能有一组代表 HTML 标签的对象集合，每个对象都是父类`HTMLTag`类的子类，它们都自自方法。另一个处理页面渲染的类可以接收一组`HTMLTag`对象集合，并通过调用每个对象的`render`方法来创建页面。
+
+## 延伸阅读
+
+- Object Oriented PHP: Paging Result Sets: `http://www.sitepoint.com/article/662`
+- PHP References Explained: `http://www.zez.org/articleview/77/`
+- PHP References
+  - Part 1: `http://www.onlamp.com/pub/a/php/2002/08/15/php_foundations.html`
+  - Part 2: `http://www.onlamp.com/pub/a/php/2002/09/12/php_foundations.html`
+- PHP Reference Counting and Aliasing: `http://www.zend.com/zend/art/ref-count.php`
+
+# 3 PHP 与 MySQL
+
+## PHP 与 MySQL
+
+> “在当今的网络世界中，内容为王。”
+—Kevin Yank
+
+在互联网的“过去时代”，大多数网页仅仅是包含 HTML 的文本文件。当人们访问你的网站时，你的 Web 服务器只需将文件提供给他们的浏览器，由浏览器解析内容并渲染成人类可以阅读的内容。这种方法在开始时是可以的，但随着网站的增长以及设计和导航等问题变得越来越重要，开发者意识到维护数百个 HTML 文件将是一个巨大的头疼问题。为了解决这个问题，将变量内容（文章、新闻项目等）与网站的静态元素（其设计和布局）分离来变得流行。
+
+通过使用数据库来存储变量内容，像 PHP 这样的服务端语言执行获取数据并将其放置在统一“框架”中的任务，这样设计和布局元素就可以被重复使用。这意味着修改网站的整体视觉效果可以被这样处理。
+
+## PHP 与 MySQL
+
+## PHP 与 MySQL
+
+使用 PHP 连接 MySQL 再简单不过了。这本质上是一个两步过程：首先连接到服务器，然后通知 MySQL 数据库。
+
+## 基础连接
+
+这是一个简单形式的 MySQL 连接：
+
+```
+<?php
+
+$host = 'localhost'; // MySQL 服务器的主机
+$dbUser = 'harry'; // MySQL 用户名
+$dbPass = 'secret'; // 用户密码
+$dbName = 'sitepoint'; // 数据库名
+
+// 连接 MySQL 服务器
+if (!$dbConn = mysql_connect($host, $dbUser, $dbPass)) {
+    die('无法连接到服务器');
+}
+
+// 选择数据库
+if (!mysql_select_db($dbName, $dbConn)) {
+    die('无法选择数据库');
+}
+
+echo '连接成功！';
+
+// ... 在此处使用 MySQL 的代码
+
+// 完成后关闭连接
+mysql_close($dbConn);
+```
+
+## 第3 章：PHP 与 MySQL
+
+这些内容包含在每个 PHP 脚本中，使得我们能够一次性更改多个脚本。稍后，我们将查看可以利用的进一步技巧来让工作变得更轻松。
+
+`mysql_connect`函数负责连接到 MySQL 服务器的工作。它返回的值要么是一个链接标识符（PHP 提供的用于标识连接的值），要么是 FALSE（表示连接失败）。
+
+```
+if (!$dbConn = mysql_connect($host, $dbUser, $dbPass))
+    die('Could not connect to server');
+```
+
+这条语句语句提问了一个问题：“我是否成功连接到了 MySQL 服务器？”如果没有连接成功，则使用`die`终止脚本。
+
+接下来，我们使用`mysql_select_db`选择了我们想要的数据库，并使用了相同的`if`技巧：
+
+```
+if (!mysql_select_db($dbName, $dbConn)) {
+```
+
+注意，我们将用于链接标识符的变量作为第二个参数传递给`mysql_select_db`。我们通常不需要这样做（该参数是可选的），但当一个复杂的脚本处理多个数据库连接时，这种方法可以帮助 PHP 知道你指的是哪一个。
+
+最后，我们使用`mysql_close`再次断开与服务器的连接：
+
+```
+mysql_close($dbConn);
+```
+
+
+
+这发生在脚本的底部，在我们运行了一些使用该连接的虚拟 PHP 代码之后。关闭连接通常是可选的——PHP 会在脚本完成后自动关闭连接¹。
+
+> 使用`mysql_pconnect`连接：此函数为数据库建立一个持久连接，以供多个 PHP 脚本重用。使用持久连接会让你的脚本运行得更快，因为 PHP 不再需要每次重新连接，但速度是有代价的：如果你的网站运行在共享服务器上，持久连接会垄断该服务器，导致其他网站无法连接。在这样的环境中，通常的做法是避免使用`mysql_pconnect`，或者配置 MySQL 使用短的连接超时值，以便连接在停止操作时立即终止。
+
+## 可复用代码
+
+你刚刚看到了连接 MySQL 的最简单的方法。然而，将上述代码“封装”在函数或类中以便复用通常会更有用。
+
+作为一个函数，我们可以这样写：
+
+```php
+<?php
+
+function connectToDb($host, $dbUser, $dbPass, $dbName) {
+
+  // 建立 MySQL 服务器连接
+
+  if (!$mysql_connect($host, $dbUser, $dbPass)) {
+
+    return false;
+
+  }
+
+  // 选择数据库
+
+  if (!mysql_select_db($dbName)) {
+
+    return false;
+
+  }
+
+  return $dbConn;
+
+}
+
+$host = 'localhost'; // MySQL 服务器主机名
+
+$dbUser = 'harry'; // MySQL 用户名
+
+$dbPass = 'secret'; // 用户密码
+
+$dbName = 'sitepoint'; // 数据库名称
+
+$dbConn = &connectToDb($host, $dbUser, $dbPass, $dbName);
+
+```
+
+这把连接 MySQL 和选择数据库的过程简化为了单行（如果你算上 `include` 语句，它将指向一个包含 `connectToDb` 函数的独立文件）：
+
+$dbConn = &connectToDb($host, $dbUser, $dbPass, $dbName);
+
+注意我们使用了引用操作符 `&`。这个操作符及其作用在第 2 章中详细介绍过。
+
+## 偷懒一点：编写优秀代码
+
+科学家们现在已经凿地证明了，PHP 知识与空闲时间成反比，与掉发量成正比。防止这些影响的唯一方法是尽早学习如何编写可扩展、可维护且可复用的代码。利用 PHP 中的类和面向对象是朝着正确方向迈的一步。作为 PHP 开发者，偷懒是一种美德。
+
+进一步，我们可以将这段代码封装在一个类中：
+
+文件：`Database/MySQL.php`（位于 SPLIB 中）（节选）
+
+```php
+/**
+ * MySQL 数据库连接类
+ * @access public
+ * @package SPLIB
+ */
+class MySQL {
+  /**
+   * MySQL 服务器主机名
+   * @access private
+   * @var string
+   */
+  var $host;
+
+  /**
+   * MySQL 用户名
+   * @access private
+   * @var string
+   */
+  var $dbUser;
+
+  /**
+   * MySQL 用户密码
+   * @access private
+   * @var string
+   */
+  var $dbPass;
+
+  /**
+   * 数据库名称
+   * @access private
+   * @var string
+   */
+  var $dbName;
+
+  /**
+   * 存储在此处的 MySQL 资源链接标识符
+   * @access private
+   * @var string
+   */
+  var $dbConn;
+
+  /**
+   * 连接错误的错误信息
+   * @access private
+   * @var string
+   */
+  var $connectError;
+
+  /**
+   * MySQL 构造函数
+   * @param string $host (MySQL 服务器主机名)
+   * @param string dbUser (MySQL 用户名)
+   * @param string dbPass (MySQL 用户密码)
+   * @param string dbName (要选择的数据库)
+   * @access public
+   */
+  function MySQL($host, $dbPass, $dbName) {
+    $this->host = $host;
+    $this->dbUser = $dbUser;
+    $this->dbPass = $dbPass;
+    $this->dbName = $dbName;
+    $this->connectDB();
+  }
+
+  /**
+   * 建立 MySQL 连接并选择数据库
+   * @return void
+   * @access private
+   */
+  function connectDB() {
+    // 建立 MySQL 连接
+    if (!$this->dbConn = mysql_connect($this->host, $this->dbUser, $this->dbPass)) {
+      trigger_error('Could not connect to server');
+      $this->connectError = true;
+    }
+
+    // 选择数据库
+    if (!mysql_select_db($this->dbName, $this->dbConn)) {
+      trigger_error('Could not select database');
+    }
+  }
+
+  /**
+   * 检查错误
+   * @return boolean
+   * @access public
+   */
+  function isError() {
+    if ($this->connectError) {
+      return true;
+    }
+    $error = mysql_error($this->dbConn);
+    if (empty($error)) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+}
+```
+
+（注意：OCR 文本在类方法上有些碎片；我根据标准的 PHP 类模式和提供的片段重构了逻辑结构。）
+
+现在这看起来可能让人压力倍增，但最重要的并不是类本身是如何编写的，而是如何使用它。连接 MySQL 的任务现在简化为了如下：
+
+```php
+<?php
+// 引入类
+require_once 'Database/MySQL.php';
+
+$host = 'localhost'; // MySQL 服务器主机名
+$dbUser = 'harry'; // MySQL 用户名
+$dbPass = 'secret'; // 用户密码
+$dbName = 'sitepoint'; // 数据库名称
+
+// 连接 MySQL
+$db = &new MySQL($host, $dbUser, $dbPass, $dbName);
+?>
+```
+
+## 如何从表中获取数据？
+
+连接到数据库固然很好。但如果我们无法从中获取任何东西，它有什么用呢？
+
+从 MySQL 获取数据的方法有很多，但最常用的可能是`mysql_fetch_array`配合`mysql_query`使用。
+
+我们需要在“如何访问 MySQL 数据库？”中看到的`connectToDb`函数基础上增加一些内容，以便从表中获取数据：
+
+```php
+// 连接 MySQL
+$dbConn = &connectToDb($host, $dbUser, $dbPass, $dbName);
+
+// 查询所有文章的 SQL
+$sql = "SELECT * FROM articles ORDER BY title";
+
+// 执行查询，标识连接
+$queryResource = mysql_query($sql, $dbConn);
+
+// 一次从 MySQL 获取行数据
+while ($row = mysql_fetch_array($queryResource, MYSQL_ASSOC)) {
+  echo 'Title: ' . $row['title'] . '<br />';
+  echo 'Author: ' . $row['author'] . '<br />';
+  echo 'Body: ' . $row['body'] . '<br />';
+}
+```
+
+本质上，获取你的数据有三个步骤：
+
+1. 首先，将 SQL 查询³放在你的字符串中：
+
+> ³如果你不熟悉结构化查询语言 (SQL)，我将在本章中涵盖基础知识。如需更全面的介绍，请参阅《Build Your Own Database Driven Website Using PHP & MySQL, 2nd Edition》(ISBN 0-9579218-1-0)。
+
+# 第 3 章：PHP 与 MySQL
+
+```php
+$sql = "SELECT * FROM articles ORDER BY title";
+```
+
+将其保存在单独的变量中是非常方便的，因为当我们编写复杂的查询并出现问题时，我们可以通过这一单行代码来检查我们的查询：
+
+```php
+echo $sql;
+```
+
+2. 接下来，告诉 MySQL 执行查询：
+
+```php
+$queryResource = mysql_query($sql, $dbConn);
+```
+
+这起初可能会让人困惑。当你告诉 MySQL 执行查询时，它并不会立即返回结果。相反，它会将结果保留在内存中，直到你告诉它要如何操作。PHP 使用一个资源标识符来跟踪结果，这就是你从`mysql_query`函数中获得的内容。在下面的代码中，我们将该标识符存储在`$queryResource`中。
+
+3. 最后，使用`mysql_fetch_array`从结果集中一次次获取行：
+
+```php
+while ($row = mysql_fetch_array($queryResource, MYSQL_ASSOC))
+```
+
+这将结果集中的每一行依次放入变量`$row`中。每一行都将由一个数组表示。通过在`mysql_fetch_array`中使用额外参数`MYSQL_ASSOC`，我们告诉函数返回一个数组，其键与表中的列名对应。如果你省略了`MYSQL_ASSOC`参数，每个列将在数组中出现两次：一次带有数字索引（例如`$row[0]`, `$row[1]`等），另一次带有字符串索引（例如`$row['title']`, `$row['author']`等）。虽然这通常不会引起问题，但指定你需要的类型值将略微提高速度。
+
+如上所示，使用循环是处理结果集中每一行的常用方法。该循环实际上是在说：“从 MySQL 获取行，直到我无法再获取更多为止”，而循环体则在获取到每一行时对它们进行处理。
+
+## 针对大型查询放弃使用缓冲区
+
+对于大型查询（即产生大型结果集的查询），你可以通过告诉 PHP 不要缓冲查询来显著提高性能。当查询被缓冲时，整个结果集会从 MySQL 检索并存储在内存中，然后你的脚本才能继续执行。
+
+另一方面，非缓冲查询允许 MySQL 保留结果，直到你一次一次地请求它们（例如，使用`mysql_fetch_array`）。这不仅允许你的脚本在 MySQL 执行查询时继续运行，还避免了 PHP 需要一次性在内存中存储所有行。
+
+PHP 允许通过`mysql_unbuffered_query`执行非缓冲查询：
+
+```php
+$queryResource = mysql_unbuffered_query($sql, $dbConn);
+```
+
+当然，天下没有免费的午餐——使用非缓冲查询意味着你不能再使用`mysql_num_rows`函数来计算行数了。显然，由于 PHP 没有保留完整结果集的副本，它无法统计内部的行！你必须在执行另一个查询之前，从 MySQL 获取结果集中的所有行。
+
+虽然其他函数也可以获取查询结果中的行和单元格（例如`mysql_fetch_object`和`mysql_result`），但你只需要`mysql_fetch_array`就能实现或类似的功能，这种一致性有助于保持代码的简单。
+
+## 使用类进行获取
+
+现在你已经对从 MySQL 获取数据的基础操作感到满意，是时候在上一个解决方案的 MySQL 类基础上进行构建了。
+
+首先，让我们为该类添加一个运行查询的方法：
+
+```php
+/**
+ * 返回一个 MySQLResult 实例以获取行
+ * @param $sql string 要运行的数据库查询
+ * @return MySQLResult
+ * @access public
+ */
+function &query($sql) {
+    if (!$queryResource = mysql_query($sql, $this->dbConn)) {
+        trigger_error('Query failed: ' . mysql_error($this->dbConn) 
+                      . ' SQL: ' . $sql);
+    }
+    return new MySQLResult($this, $queryResource);
+}
+```
+
+这个新方法的作用是接收包含 SQL 语句的变量，运行它，然后从另一个类`MySQLResult`（下文描述）构建一个新的对象。它将此对象返回到调用 query 的地方。
+
+这是新类`MySQLResult`的代码：
+
+```php
+/**
+ * MySQLResult 数据获取类
+ * @access public
+ * @package SPLIB
+ */
+class MySQLResult {
+    /**
+     * 提供数据库连接的 MySQL 实例
+     * @access private
+     * @Var MySQL
+     */
+    var $mysql;
+
+    /**
+     * 查询资源
+     * @access private
+     * @var resource
+     */
+    var $query;
+
+    /**
+     * MySQL 对象 mysql (MySQL 类的实例)
+     * @param resource query (MySQL 查询资源)
+     * @access public
+     */
+    function MySQLResult($mysql, &&$query) {
+        $this->mysql = &$mysql;
+        $this->query = $query;
+    }
+
+    /**
+     * 从结果中获取一行
+     * @return array
+     * @access public
+     */
+    function fetch() {
+        if ($row = mysql_fetch_array($this->query, MYSQL_ASSOC)) {
+            return $row;
+        }
+        return false;
+    }
+}
+```
+
+# 第 3 章：PHP 与 MySQL
+
+对于 PHP 来说答案同样简单：使用`mysql_query`函数结合 SQL 命令`INSERT`和`UPDATE`。`INSERT`用于在表中创建新行，而`UPDATE`用于修改现有的行。
+
+## 插入行
+
+使用本章开头定义的`articles`表，执行一个简单的`INSERT`操作如下：
+
+```php
+// 一个用于插入数据的查询
+$sql = "INSERT INTO
+  articles
+  SET
+    title = '$title',
+    body = '$body',
+    author = '$Author'";
+```
+
+```php
+// 执行查询，标识连接
+if (!$queryResource = mysql_query($sql, $dbConn)) {
+  trigger_error('Query error ' . mysql_error() . ' SQL: ' . $sql);
+}
+```
+
+## 更新行
+
+在可以使用`UPDATE`查询之前，你需要能够识别要更新表中的哪几行。在示例中，我使用了一个`SELECT`查询来获取标题为"How to insert data"的文章的唯一`article_id`值：
+
+```php
+$sql_id = 'SELECT article_id FROM articles
+WHERE title='How to insert data';
+```
+
+```php
+if (!$queryResource = mysql_query($sql, $dbConn)) {
+  trigger_error('Query error ' . mysql_error() . ' SQL: ' . $sql);
+}
+```
+
+```php
+// 从结果中获取单行
+$row = mysql_fetch_array($queryResource, MYSQL_ASSOC);
+```
+
+```php
+// 一个新标题
+$title = 'How to update data';
+```
+
+```php
+$sql = "UPDATE
+articles
+SET
+title='$title'
+WHERE
+```
+
+
+
+
+`article_id='" . $row['article_id'] . "";`
+
+```php
+if (!$queryResource = mysql_query($sql, $dbConn)) {
+  trigger_error('Query error ' . $mysql_error() . ' SQL: ' . $sql);
+}
+```
+
+在示例中，我们使用 `SELECT` 查询找到了想要更新的行的 ID。
+
+在实际的 Web 应用中，`UPDATE` 可能发生在依赖 Web 浏览器输入的页面上，例如在用户使用 HTML 表单输入了值之后。这些数据中的字符串可能包含单引号，这会破坏 SQL 语句并影响安全。鉴于此，请确保阅读“我如何解决由引号/单引号引起的数据库错误？”，该章节涵盖了 SQL 注入攻击。
+
+## 注意全局更新
+
+使用 `UPDATE` 时要小心，并记住使用 `WHERE` 子句来指示更改哪些行。
+
+例如，考虑此查询：
+
+```sql
+UPDATE articles SET title = 'How NOT to update data'
+```
+
+这将更新表中的每一行！
+
+## 另一种类操作
+
+使用“如何从表中获取数据？”中最后提到的 MySQL 类，我们可以在进行任何进一步修改的情况下执行 `INSERT` 和 `UPDATE` 查询。使用类重复上述示例，我们可以先这样 `INSERT`：
+
+```php
+// 连接到 MySQL
+$db = &new MySQL($host, $dbUser, $dbPass, $dbName);
+
+$title = 'How to insert data';
+$body = 'This is the body of the article';
+$author = 'HarryF';
+
+// 一个用于插入数据的查询
+$sql = 'INSERT INTO articles
+SET
+    title = '$title',
+    body = '$body',
+    author = '$author';
+
+$db->query($sql);
+
+if ($db->isError()) {
+    echo 'INSERT successful';
+} else {
+    echo 'INSERT failed';
+}
+```
+
+我们可以如下进行 `UPDATE`：
+
+文件：`10.php`（节）
+
+```php
+$db = &new MySQL($host, $dbUser, $dbPass, $dbName);
+
+// 一个用于选择文章的查询
+$sql = 'SELECT article_id FROM articles
+WHERE title='How to insert data';
+
+$result = $db->query($sql);
+$row = $result->fetch();
+
+// 一个新标题
+$title = 'How to update data';
+
+$sql = "UPDATE articles
+SET
+    title='" . $title . "'
+WHERE
+    article_id='" . $row['article_id'] . "'";
+
+$db->query($sql);
+
+if (!$db->isError()) {
+    echo 'UPDATE successful';
+} else {
+    echo 'UPDATE failed';
+}
+```
+
+## 我如何解决由引号/单引号引起的数据库错误？
+
+考虑以下 SQL 语句：
+
+```sql
+INSERT INTO articles SET title='The PHP Anthology';
+```
+
+也许该查询包含的 PHP 脚本包含如下内容：
+
+```php
+<?php
+$title = "The PHP Anthology";
+$sql = "INSERT INTO articles SET title='$title'";
+$result = mysql_query($sql, $dbConn);
+?>
+```
+
+到目前为止没有问题，但看看如果我们更改标题会发生什么：
+
+```php
+$title = 'PHP\'s Greatest Hits';
+```
+
+注意标题中的单引号？当我们将其放入 SQL 语句中时，MySQL 接收到的查询将如下：
+
+```sql
+INSERT INTO articles SET title='PHP's Greatest Hits';
+```
+
+看到问题了吗？当 MySQL 读取该语句时，它只会读到这里：
+
+```sql
+INSERT INTO articles SET title='PHP'
+```
+
+剩余的 `s Greatest Hits'` 将导致语法错误。
+
+## 转义
+
+问题在于数据中的单引号终止了 SQL 字符串中的单引号。要修复这个问题，我们需要对单引号进行转义。此最简单的方法是在单引号之前加一个反斜杠：
+
+```php
+$title = 'PHP\'s Greatest Hits';
+```
+
+现在，当我们将其放入 SQL 语句时，MySQL 接收到的查询将是：
+
+```sql
+INSERT INTO articles SET title='PHP\'s Greatest Hits';
+```
+
+这之所以有效，是因为反斜杠告诉 MySQL 将单引号视为字面字符，而不是字符串的结束。
+
+然而，如果数据来自用户怎么办？我们无法手动为每个变量添加反斜杠。这就是 `addslashes()` 函数派用用场：
+
+```php
+$title = "PHP's Greatest Hits";
+$sql = "INSERT INTO articles SET title='" . addslashes($title) . "'";
+mysql_query($sql, $dbConn);
+```
+
+`addslashes()` 函数会在单引号、反斜杠和空字节之前添加反斜杠。这是处理用户输入的简单方法，但不是最健壮的方法。
+
+## SQL 标准
+
+更健壮的字符转义方法是使用 `mysql_real_escape_string()` 函数。该函数感知连接所使用的字符集并相应对字符进行转义。
+
+```php
+$title = "PHP's Greatest Hits";
+$sql = "INSERT INTO articles SET title='" . mysql_real_escape_string($title) . "'";
+mysql_query($sql, $dbConn);
+```
+
+这是在 SQL 查询中转义用户输入的首选方法，因为它能正确处理更广泛的字符。
+
+再次，如果你没有其他处理魔引号（magic quotes）的方法，你就必须检查 `magic_quotes_gpc` 是否开启：
+
+```php
+<?php
+function safeEscapeString($string)
+{
+    if (get_magic_quotes_gpc()) {
+        return $string;
+    } else {
+        return mysql_real_escape_string($string);
+    }
+}
+?>
+```
+
+本书中的脚本使用了第 1 章中引入并包含代码存档中的 `MagicQuotes/strip_quotes.php` 包含文件，以便在开启了魔引号的服务器上有效关闭它，因此随后的解决方案将自由使用 `mysql_real_escape_string`。如果你认为自己可以放心地手动转义引号和其他特殊字符，我鼓励你在自己的脚本中也这样做。
+
+## SQL 注入攻击
+
+SQL 注入攻击发生在攻击者利用你网站上合法的用户输入机制发送 SQL 代码时，而你毫无防备的脚本会将这些代码传递给数据库执行。黄金法则是：在离开数据库之前，对所有来自外部源的数据进行转义。这条规则不仅适用于 `INSERT` 和 `UPDATE` 查询，也适用于 `SELECT`。
+
+毫无疑问，PHP 开发者由于 MySQL 的局限性免受了最严重的 SQL 注入攻击，因为每次调用 `mysql_query` 只允许执行单个 SQL 语句。在其他数据库上，SQL 注入的影响可能是灾难性的，因为攻击者可以发送第二个查询，例如获取整个表的内容。然而，使用 MySQL 时问题仍然会发生，如下代码所示：
+
+```php
+$sql = "SELECT * FROM users
+WHERE username='" . $_POST['username'] . "'\nAND password='" . $_POST['password'] . "'";
+
+echo 'Query: ' . $sql . '<br/>';
+
+$result = mysql_query($sql);
+```
+
+```php
+$rows = mysql_num_rows($result);
+
+if ($rows > 0) {
+    echo 'You are logged in!<<br />';
+} else {
+    echo 'You are not allowed here!<<br />';
+}
+```
+
+```php
+<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+  <input type="text" name="username" /><br />
+  <input type="text" name="password" /><br />
+  <input type="submit" />
+</form>
+```
+
+一个精明的攻击者只需在表单的密码字段中输入以下内容：
+
+`OR username LIKE '%'`
+
+假设你的服务器上禁用了魔引号，且你没有采取其他预防措施，这个聪明的攻击会将查询修改为：
+
+```sql
+SELECT * FROM users
+WHERE username='' AND password='' OR username LIKE '%'
+```
+
+此被修改后的查询将选择用户表中的所有记录！当脚本检查是否有用户与提供的用户名和密码组合匹配时，它将看到这个巨大的结果集并授予访问网站的权限！
+
+可以通过以下技术防止这种情况：
+
+```php
+$sql = "SELECT * FROM users
+WHERE username='' safeEscapeString($_POST['username'])\nAND password=''' safeEscapeString($_POST['password'])";
+```
+
+在某些情况下，取决于具体情况，这可能不是必要的。但如果你看重睡眠，请记住这条黄金法则：对所有来自外部源的数据进行转义。
+
+## 我如何创建灵活的 SQL 语句？
+
+SQL 是一种处理数据的强大语言。通过 PHP，我们可以利用变量构建 SQL 语句，这对于按单列对表进行排序或跨多个页面显示大量结果非常有用。
+
+## 第 3 章：PHP 和 MySQL
+
+这是一个简单的示例，允许按表列对查询结果进行排序：
+
+文件：`11.php`（摘）
+
+```php
+// 查询所有文章的查询
+$sql = "SELECT * FROM articles";
+
+// 如果 $_GET['order'] 不存在则初始化它
+if (isset($_GET['order']))
+    $_GET['order'] = FALSE;
+
+// 使用条件 switch 确定顺序
+switch ($_GET['order']) {
+    case 'author':
+        // 添加到 $sql 字符串中
+        $sql .= " * ORDER BY author";
+        break;
+    default:
+        // 默认按标题排序
+        $sql .= " * ORDER BY title";
+        break;
+}
+
+// 执行查询，识别连接
+if (!$QueryResource = mysql_query($sql, $dbConn)) {
+    trigger_error('Query error ' . mysql_error() . ' SQL: ' . $sql);
+}
+?>
+
+<table>
+<tr>
+<th><a href="<?php echo $_SERVER['PHP_SELF']; ?>?order=title">Title</a></php></th>
+<th><a href="<?php echo $_SERVER['PHP_SELF']; ?>?order=author">Author</a></php></th>
+</tr>
+<?php
+while ($row = mysql_fetch_array($QueryResource, MYSQL_ASSOC)) {
+    echo "<tr>\n";
+    echo "<td>" . $row['title'] . "</td>\n";
+    echo "<td>" . $row['author'] . "</td>\n";
+    echo "</tr>\n";
+}
+?>
+</table>
+```
+
+在 `while` 语句中，我根据脚本从浏览器接收的 GET 变量“动态”生成了部分 SQL 语句。
+
+## 我如何知道我选择了多少行？
+
+这种通用方法可以扩展到 `WHERE` 子句、`LIMIT` 子句以及任何其他地方。
+
+## 持久化层：数据库交互
+
+持久层正变得流行并得到了良好的支持。持久层是一组用于访问数据库的类集合。持久层在“我真的需要写 SQL 吗？”中得到了专门讨论。
+
+在 PHP 中，`mysql_numrows` 返回行数，但当你使用无缓冲查询（参见“我如何从表中获取数据？”）时，它的应用可能会受到限制。
+
+## 使用 PHP 计数行数
+
+在跨页面拆分结果或生成统计信息时，计数行数通常很有用。在上面的示例中，`mysql_numrows` 函数接收一个结果标识符并返回该结果中的行数。
+
+## 使用 MySQL 计数行数
+
+另一种方法是在查询中使用 MySQL 的 `COUNT` 函数。这需要你执行两个查询——一个用于计数结果，另一个用于实际获取结果——这在性能上会产生一点小的开销。
+
+以下是你可以使用 MySQL `COUNT` 函数的方法：
+
+文件：`13.php`（摘）
+
+```php
+// 查询所有文章的查询
+$sql = "SELECT COUNT(*) AS numrows FROM articles";
+
+// 用于计算返回行数的查询
+$queryResource = mysql_query($sql, $dbConn);
+```
+
+## 使用 MySQL 计数行
+
+```php
+$row = mysql_fetch_array($queryResource, MYSQL_ASSOC);
+```
+
+```php
+echo $row['numrows'] . " rows selected<br />";
+```
+
+```php
+// 查询所有文章的查询
+$sql = "SELECT * FROM articles ORDER BY title";
+```
+
+```php
+// 执行查询，标识连接
+$queryResource = mysql_query($sql, $dbConn);
+```
+
+```php
+// 一次从 MySQL 提取行
+while($row = mysql_fetch_array($queryResource, MYSQL_ASSOC)) {
+  echo 'Title: ' . $row['title'] . '<br />';
+  echo 'Author: ' . $row['author'] . '<br />';
+  echo 'Body: ' . $row['body'] . '<br />';
+}
+```
+
+我们注意到我们使用了一个别名来放置 `COUNT` 函数的结果？
+
+```sql
+SELECT COUNT(*) AS numrows FROM articles
+```
+
+我们这样做是为了以后可以使用 `$row['numrows']` 识别行数。另一种方法是省略别名：
+
+```sql
+SELECT COUNT(*) FROM articles
+```
+
+这将要求我们通过 `$row['COUNT(*)']` 访问信息，这会让随后的代码读起来很混乱。
+
+当我们使用 `COUNT` 函数时，动态构建查询变得非常重要，例如“我该如何创建灵活的 SQL 语句？”你需要确保你的 `COUNT` 查询包含与你在“真实”查询中使用的相同的 `WHERE` 或 `LIMIT` 子句。例如，如果我们实际用于获取数据的查询是：
+
+```sql
+SELECT * FROM articles WHERE author='HarryF'
+```
+
+在 PHP 中，我们可能想要像这样的代码：
+
+```php
+// 定义可重用的 SQL “块”
+$table = " FROM articles";
+$where = " WHERE author='HarryF";
+$order = " ORDER BY title";
+
+// 统计返回行的查询
+```
+
+## 第 3 章：PHP 和 MySQL
+
+```php
+$sql = "SELECT COUNT(*) as numrows " . $table . $where;
+
+// 执行查询，标识连接
+$queryResource = mysql_query($sql, $dbConn);
+$row = mysql_fetch_array($queryResource, MYSQL_ASSOC);
+echo $row['numrows'] . " rows selected<br />";
+
+// 获取行的查询
+$sql = "SELECT " . $table . $where . $order;
+
+// 执行查询，标识连接
+$queryResource = mysql_query($sql, $dbConn);
+```
+
+
+
+## 一次从 MySQL 提取行
+
+```php
+// 一次从 MySQL 提取行
+
+while ($row = mysql_fetch_array($queryResource, MYSQL_ASSOC)) {
+    echo "Title: " . $row['title'] . "<br />";
+    echo "Author: " . $row['author'] . "<br />";
+    echo "Body: " . $row['body'] . "<br />";
+}
+```
+
+## 使用类的行计数
+
+让我们看看我们在这一节中开发的类。我们可以通过向`MySQLResult`类中添加以下方法，来增加查找行数的能力：
+
+```php
+/**
+ * 返回选择的行数
+ * @return int
+ * @access public
+ */
+
+function size() {
+    return mysql_num_rows($this->query);
+}
+```
+
+### 如何使用
+
+```php
+// 连接到 MySQL
+
+$db = &new MySQL($host, $dbUser, $dbPass, $dbName);
+```
+
+```php
+// 选择特定作者的所有结果
+
+$sql = "SELECT * FROM articles WHERE author='HarryF'";
+$result = $db->query($sql);
+
+echo "Found " . $result->size() . " rows";
+```
+
+## 计算受影响行数
+
+也可以使用 PHP 函数`mysql_affected_rows`来找到受`UPDATE`、`INSERT`或`DELETE`查询影响的行数。`mysql_affected_rows`在典型的 PHP 应用中并不常见，但获取结果可能是告知用户的好方法：“您刚刚从 Customers 表中删除了 1854 条记录。祝你有愉快的一天！”
+
+与`mysql_num_rows`使用资源标识符作为参数不同，`mysql_affected_rows`使用数据库连接标识符。它返回对于指定的连接，最后一个修改数据库的查询所影响的行数。
+
+以下是`mysql_affected_rows`的用法：
+
+```php
+// 连接到 MySQL
+
+$dbConn = &connectToDB($host, $dbUser, $dbPass, $dbName);
+
+// 更新数据库的查询
+
+$sql = "UPDATE
+articles
+SET author='The Artist Formerly Known as...'
+WHERE
+author='HarryF'";
+
+// 执行查询，标识连接
+
+$queryResource = mysql_query($sql, $dbConn);
+
+// 获取受影响的行数
+
+$changedRows = mysql_affected_rows($dbConn);
+
+echo $changedRows . '<br />';
+```
+
+由于需要`mysql_affected_rows`的场景并不常见，为了保持简单，我将在`MySQLResult`类中省略它。
+
+## 插入一行后，我该如何找到它的行号？
+
+当你处理数据库表中的`AUTO_INCREMENT`列时，找到你刚刚插入的行的 ID 通常很有用，这样其他表就可以用此信息进行更新。毕竟，表之间的关系就是建立的。PHP 提供了`mysql_insert_id`函数，它在给定链接标识符时，返回上次`INSERT`生成的 ID。
+
+```php
+// 插入行的查询
+
+$sql = "INSERT INTO articles
+SET
+  title='How to use',
+  body='This is example',
+  author='HarryF'";
+
+// 执行查询，标识连接
+
+$queryResource = mysql_query($sql, $dbConn);
+
+// 获取受影响的行数
+
+$changedRows = mysql_insert_id($dbConn);
+
+echo $changedRows . '<br />';
+```
+
+## 插入 ID
+
+```php
+/**
+ * 返回最后插入行的 ID
+ * @return int
+ * @access public
+ */
+
+function insertID() {
+    return mysql_insert_id($this->connection);
+}
+```
+
+要在`MySQLResult`类中使用此功能，请添加以下内容：
+
+```php
+// 引入类
+
+require_once 'Database.php';
+
+$host = 'localhost';
+$dbUser = 'username';
+$dbPass = 'secret';
+$dbName = 'site';
+
+$db = &new MySQL($host, $dbUser, $dbPass, $dbName);
+
+// 插入行的查询
+
+$sql = "INSERT INTO articles
+SET
+  title='How to use',
+  body='This is example',
+  author='HarryF'";
+
+// 执行查询，标识连接
+
+$queryResource = mysql_query($sql, $dbConn);
+
+// 获取受影响的行数
+
+$changedRows = mysql_insert_id($dbConn);
+
+echo $changedRows . '<br />';
+```
+
+## 如何搜索我的表
+
+有些人非常急躁；他们不想翻阅网站要求信息。在内容都存储在 HTML 文件中的时代，这可能是个问题，但现在你使用数据库，搜索就变得简单多了。最基本的搜索形式是针对单列使用`LIKE`操作符：
+
+```sql
+SELECT * FROM articles WHERE title LIKE 'How %'
+```
+
+`%`是通配符。上述语句将选择所有以“How”开头的标题。这些运算符提供了探索数据所需的一切。当需要在多个列进行搜索时，上述方法会变成负担。例如：
+
+```sql
+SELECT * FROM articles
+WHERE title LIKE '%how%' OR body LIKE '%how%'
+```
+
+对于较大的表，这可能需要编写非常复杂且低效的查询。
+
+## 全文搜索
+
+MySQL 提供了一种可以为你完成大部分工作的替代方案——全文索引。数据库索引就像书的索引一样；它们提供了从列表中快速定位信息的方法。全文索引允许你对表进行特定搜索。
+
+全文索引是从 MySQL 3.23 版本引入的。这里的实现相当有限，但对于基础搜索仍然有用，这也是我将演示的。在 MySQL 4.0.1 中，此功能扩展到了完整的布尔搜索机制，让你能够构建一些类似于 Google 高级搜索的功能。全文索引还会为结果返回一个“相关性”值，因此，例如，多个单词搜索的结果可以根据每个结果与用户特定搜索的匹配程度进行显示。
+
+为了利用全文索引，你首先需要指示 MySQL 对你想要搜索的列建立索引：
+
+```sql
+ALTER TABLE articles FULLTEXT art_search (title, body, author)
+```
+
+一旦完成操作，你需要插入新记录（或修改现有记录）来让 MySQL 构建索引。此外，数据库中至少需要三条记录，全文搜索才能工作，因为非布尔搜索只有在搜索发生在少于 50% 的行时才会返回结果。
+
+## 全文搜索
+
+表（如果表中只有两行，而你的搜索匹配了其中一行，那么就是 50%）。最后一点需要注意的是，`FULLTEXT`（全文）只会匹配超过三个字母的搜索；索引机制会忽略三个字符或更少的单词，以避免构建庞大的索引。这就像书的索引；如果你发现书索引中精确列出了“the”这个词出现在哪些页，你会感到非常惊讶的！
+
+这是一个基础的全文搜索示例：
+
+```sql
+SELECT * FROM articles WHERE MATCH (title,body,author) AGAINST ('MySQL');
+```
+
+此搜索将返回所有标题、正文或作者包含 "MySQL" 单词的行。
+
+`FULLTEXT`索引的另一个用途是用于返回每个结果相关性的搜索。例如：
+
+```php
+// 选择所有行但显示相关性
+
+$sql = "SELECT
+    MATCH (title, body, author)
+    AGAINST
+    ('The PHP Anthology Released Long Word Matching')
+AS
+    score
+FROM
+    articles
+ORDER BY score DESC";
+```
+
+```php
+// 运行查询，识别连接
+
+$queryResource = mysql_query($sql, $dbConn);
+```
+
+```php
+// 逐行从 MySQL 获取行
+
+while ($row = mysql_fetch_array($queryResource, MYSQL_ASSOC)) {
+    echo 'Title: ' . $row['title'] . '<br />';
+    echo 'Author: ' . $row['author'] . '<br />';
+    echo 'Body: ' . $row['body'] . '<br />';
+    echo 'Score: ' . $row['score'] . '<br />';
+}
+```
+
+别名`score`包含一个标识该行与搜索相关性的数值。该值不是百分比，而仅仅是一个度；它意味着完全没有匹配。匹配单个单词将产生一个 1 左右的值。匹配的单词越多，数字越大，因此五个单词的匹配排名将产生 13 左右的相关性评分。MySQL 的相关性算法是为大表设计的，因此数据量越多，相关性数值就越有用。
+
+总的来说，MySQL 的`FULLTEXT`能力提供了一种易实现且能产生有用结果的机制。
+
+# 第 3 章：PHP 与 MySQL
+
+## 我如何备份我的数据库？
+
+数据库越大，对其包含的数据没有备份就越让人感到焦虑。如果你的服务器崩溃导致所有数据丢失怎么办？坦率地说，MySQL 提供了替代方案：一个名为`mysqldump`的命令行，以及用于备份表的查询语法。
+
+以下是如何使用`mysqldump`从命令行导出数据库内容：
+
+```bash
+mysqldump -uharry -psecret sitepoint > sitepoint.sql
+```
+
+此命令将以用户 "harry"（`-uharry`）的身份登录 MySQL，并将 sitepoint 数据库的内容输出到名为`sitepoint.sql`的文件中。`sitepoint.sql`的内容将是一系列可以在 MySQL 上运行的查询，也许你可以使用`mysql`工具从命令行执行反向操作：
+
+```bash
+mysql -uharry -psecret sitepoint < sitepoint.sql
+```
+
+使用 PHP 函数系统，你可以在 PHP 脚本中执行上述命令（你需要登录并能够从命令行执行 PHP 脚本）。以下类将这些功能整合到一个方便的 PHP 表单类中，你可以用它来对你的网站进行定期备份。
+
+```php
+/**
+ * MySQLDump 类
+ * 使用 mysqldump 工具备份数据库，为每周的每一天创建一个文件。
+ * 可以使用 gzip 或 bzip2 压缩备份文件。
+ * 意用于结合 cron 在命令行执行。
+ * 要求执行脚本的用户有权限执行 mysqldump。
+ */
+
+// 文件: Database/MySQLDump.php (位于 SPLIB)
+
+class MySQLDump {
+
+    /**
+     * 要执行的备份命令
+     * @private
+     * @var string
+     */
+
+    var $cmd;
+
+    /**
+     * MySQLDump 构造函数 (MySQL 用户)
+     * @param string dbPass (MySQL 密码)
+     * @param string dbName (选择的数据库)
+     * @param string dest (备份文件的完整目录)
+     * @param string zip (压缩类型；gz - gzip [默认]，bz2 - bzip)
+     * @access public
+     */
+
+    public function MySQLDump($dbUser, $dbPass, $dbName, $dest, $zip = 'gz') {
+        $zip_util = array(['gz'=>'gzip', 'bz2'=>'bzip2']);
+
+        if (array_key_exists($zip, $zip_util)) {
+            $fname = $dbName . '.' . date("w") . '.sql' . $zip;
+            $this->cmd = 'mysqldump -u ' . $dbUser . ' -p ' . $dbPass . ' ' . $dbName . '.' . $zip_util[$zip] . ' > ' . $dest . './' . $fname;
+        } else {
+            $fname = $dbName . '.' . date("w") . '.sql';
+            $this->cmd = 'mysqldump -u ' . $dbUser . ' -p ' . $dbPass . ' ' . $dbName . ' > ' . $dest . './' . $fname;
+        }
+    }
+
+    /**
+     * 运行构建命令
+     * @access public
+     * @return void
+     */
+
+    public function backup() {
+        $error = system($this->cmd);
+
+        if ($error) {
+            trigger_error('备份失败：' . $error);
+        }
+    }
+}
+```
+
+# 第 3 章：PHP 与 MySQL
+
+```php
+$db = &new MySQL($host, $dbUser, $dbPass, $dbName);
+
+// 显示数据库中表的查询
+
+$sql = "SHOW TABLES FROM sitepoint";
+
+// 执行查询
+
+$result = $db->query($sql);
+```
+
+我们还存储了此查询返回的行数，以便格式化用于构建`BACKUP`查询的字符串：
+
+```php
+// 获取找到的表数量
+
+$numTables = $result->size();
+```
+
+接下来，我们遍历结果，构建一个用逗号分隔的表列表进行备份：
+
+```php
+// 构建表名字符串
+
+$tables = '';
+$i = 1;
+
+while ($table = $result->fetch()) {
+    $tables .= $table['Tables_in_sitepoint'];
+
+    if ($i < $numTables) {
+        $tables .= ', ';
+    }
+
+    $i++;
+}
+```
+
+最后，我们使用`BACKUP TABLE`查询将表复制到我们选择的目录（当然，执行该查询的脚本需要该目录的写入权限）：
+
+```php
+// 构建备份查询
+
+$sql = "BACKUP TABLE $tables TO '/home/harryf/backup";
+
+// 执行查询
+
+$db->query($sql);
+
+if (!$db->isError()) {
+    echo 'Backup succeeded';
+} else {
+    echo 'Backup failed';
+}
+```
+
+## 如何修复损坏的表？
+
+虽然这种情况不应该发生，但存储在 MySQL 中的数据偶尔会损坏。在某些（罕见）情况下，会发生这种情况；Windows 特别容易受到，因为它没有类 Unix 系统那样健壮的锁定机制。在重负载下，`INSERT`和`UPDATE`查询频繁发生的同时，`SELECT`查询也可能偶尔遭受损坏。假设你正在使用 MyISAM 表类型（除非你另有指定，否则就是这种），有一个好消息；通常情况下，你应该能够恢复损坏表中的所有数据。
+
+请注意，这里提供的信息仅供需要帮助时的快速参考。值得阅读 MySQL 关于[灾难预防与恢复](http://www.mysql.com/doc/en/Disaster_Prevention.html)的手册，以便你确切知道自己在做什么。
+
+MySQL 提供了两个处理损坏表的重要工具，以及对于可以访问 MySQL 命令行的人来说，一种实用的 SQL 语法。
+
+首先，可以从命令行运行`error`工具以大致了解错误代码的含义。该工具应该可以在 MySQL 安装目录的`bin`子目录下找到。例如，输入`error 145`将告诉你：
+
+```text
+145 = 表被标记为崩溃并应该修复
+```
+
+从命令行中，你可以使用`myisamchk`工具检查数据库文件本身：
+
+```bash
+myisamchk /path/to/mysql/data/table_name
+```
+
+使用`myisamchk`修复损坏的表语法如下：
+
+```bash
+myisamchk -r /path/to/mysql/data/table_name
+```
+
+使用 SQL，你也可以通过此类查询来检查并修复表：
+
+```sql
+CHECK TABLE articles
+```
+
+
+
+## 灾难恢复
+
+以及这个：
+
+> [2] http://www.mysql.com/doc/en/Disaster_Prevention.html
+
+```sql
+REPAIR TABLE articles
+```
+
+如果运气好，你只需要使用这些命令一或两次，但提前做好准备是值得的，这样你可以做出有效的反应（而不会在行动中透出一丝恐慌）。
+
+## 我真的需要写 SQL 吗？
+
+程序员应该具备的一种品质是懒惰——即用最少的努力完成尽可能多的工作。虽然你可能不想在工作面试中将其作为你的优点之一，但有动力让自己变得更轻松对于开发一个良好的应用程序是有益的。
+
+现在你已经读了关于 PHP 和 MySQL 的这一章，我认为是时候揭示真相了：SQL 本身没有错，但它总是会带来麻烦。例如，如果我的 PHP 代码中有语法错误，PHP 会发现它。但 PHP 不会发现 SQL 语句中的错误，而且 MySQL 的错误信息可能不够明确。如果我在应用程序中处理 SQL，我将花费相当的时间来调试——而我本可以轻松搞定！
+
+如果你可以完全避免编写 SQL 语句呢？如果你回想“我该如何创建灵活的 SQL 语句？”，在其中我们根据传入的变量“即时”构建 SQL 字符串，你可能已经意识到会有某种通用解决方案让生成 SQL 变得更加简单。嗯，它被称为 [PEAR::DB_DataObject[3](http://pear.php.net/DB_DataObject)。
+
+`DB_DataObject` 是一个类，它在单个 API 中封装了编写 SQL 语句的过程。它利用了 SQL 的“语法”，并为你提供了一种机制，几乎消除了你自己手写任何 SQL 的需求。作为处理数据库的方法，它通常被描述为数据库持久化层，或者通过使用数据访问对象 (DAO) 设计模式。你将在章末尾找到对 `DB_DataObject` 所用通用技术的进一步讨论。
+
+在这里，我将提供 `DB_DataObject` 的简要介绍以便你入门，因为这是一个很容易占据一整章深入探讨的主题。PEAR 网站上的 `DB_DataObject` 文档[4](http://pear.php.net/manual/en/package.database.db-dataobject.php) 应该为你提供……
+
+## 我需要写 SQL 吗？
+
+开始使用 `DB_DataObject` 的第一步将其指向数据库并告诉它表。上面的文件格式与 `php.ini` 相同。最重要的是第一行，这是一个定义变量的 DSN 字符串。要生成类，你需要这样的配置文件：
+
+```ini
+[DB]
+
+database = mysql://secret@localhost/sitepoint
+
+; 创建 DataObject 的位置
+
+schema_location = /htdocs/php/PHPL/DataObject
+
+; 类应该的前缀字符串
+
+class_prefix = DataObject
+
+; 调试信息：O=关闭, 1=显示 sql, 2=显示结果
+
+debug = 0
+
+; 防止执行 SQL INSERT、UPDATE 或 DELETE
+
+dont_die = false
+```
+
+准备好后，我们可以此脚本（必须从命令行运行）来生成类：
+
+```php
+<?php
+
+// 构建对象类
+
+$_SERVER['argv'][1] = 'db_dataobject.ini';
+```
+
+## 我真的需要写 SQL 吗？
+
+```php
+require_once 'ExampleApps/DataObject/Articles.php';
+
+// 解析数据库 ini 文件
+
+$dbconfig = parse_ini_file('db_dataobject.ini', true);
+
+// 加载数据库设置
+
+// （注意 PEAR 类是由 Articles.php 加载的）
+
+foreach ($dbconfig as $class => $values) {
+
+    $options = &PEAR::staticProperty($class, 'options');
+
+    $options = $values;
+
+}
+
+// 实例化 DataObject_Articles 类
+
+$articles = new DataObject_Articles();
+
+// 为搜索 'Author' 列分配一个值
+
+$articles->author = 'Kevin Yank';
+
+// 执行查询
+
+$articles->find();
+```
+
+```php
+echo 'Kevin has written the following articles:<br />';
+
+// 遍历文章
+
+while ($articles->fetch()) {
+
+    echo ' - ' . $articles->title . ', published: ' . date('jS M', $articles->published) . ' <br />';
+
+}
+```
+
+首先，SQL 在哪儿？这难道不很棒吗！`parse_ini_file` 函数由 PHP 提供（详情见第 4 章），并处理来自我们 `db_dataobject.ini` 配置的变量。当我们实例化自动生成的子类 `DataObject_Articles` 时，`foreach` 循环为 `DB_DataObject` 提供了所需的变量。通过为 `$articles` 对象的属性赋值，我们准备了 `DataArticles` 在查询数据库时应使用的 `WHERE` 条件。该查询实际上是通过调用 `find` 方法执行的（详情见 `DB_DataObject` 文档），该方法转执行了以下查询：
+
+```sql
+SELECT * FROM articles WHERE articles.author = 'Kevin Yank'
+```
+
+为了遍历结果，我们使用 `fetch` 方法。当它被调用时，`fetch` 会用当前行的结果填充 `$articles` 对象的属性中。
+
+## 第 3 章：PHP 与 MySQL
+
+这允许我们通过属性名再次访问它们，如 `$articles->title`。
+
+还提供了其他方法来使查询更复杂，例如 `whereAdd` 方法：
+
+```php
+File: 24.php (excerpt)
+
+// 实例化 DataObject_Articles 类
+
+$articles = new DataObject_Articles();
+
+// 为搜索 'Author' 列分配一个值
+
+$articles->author = 'Kevin Yank';
+
+// 添加一个 where 子句
+
+$whereAdd('published')-> . ' mtime(0, 0, 5, 1, 2002));
+
+// 执行查询
+
+$articles->find();
+```
+
+这允许我们向 `WHERE` 子句中添加条件：
+
+```sql
+SELECT * FROM articles
+
+WHERE published > 102024000 AND articles.author = 'Kevin Yank'
+```
+
+还有其他方法，如果这些方法不能提供你需要的，可以使用 `query` 方法执行硬编码查询。注意，如果你发现自己需要使用 `query` 方法，那么创建生成的 Data 类的子类可能是一个好主意，并将查询封装在一个准确描述该功能的有用方法名中。
+
+`DB_DataObject` 还能有效地处理表连接（table joins），虽然它比上面的示例稍微详细一些，但与手动编写复杂查询相比，它无疑是一个时间器。
+
+到此，我们对 `DB_DataObject` 的简短介绍就结束，但这一部分应该让你领略了它能为你做什么。巨大的优势是，使用 SQL 构建你的数据库要省力得多，且不容易出错。此外，通过将对特定表的访问集中在单个类中，它有助于简化处理表结构变更的操作。
+
+## 延伸阅读
+
+- Beginning MySQL: http://www.devshed.com/Server_Side/MySQL/Intro/
+
+这篇文章提供了关于如何使用 SQL 操作 MySQL 的坚实总结。
+
+- Give me back my MySQL Command Line!: http://www.sitepoint.com/article/627
+
+Kevin Yank 展示了如何编写一个 PHP 脚本，该脚本可以通过模拟 MySQL 命令行。
+
+- Optimizing your MySQL Application: http://www.sitepoint.com/article/402
+
+这篇实用的教程讨论了 MySQL 中索引的使用以及如何利用它们来提高性能。
+
+- Generating PHP Database Access Layers: http://freshmeat.net/articles/view/843/
+
+这篇文章提供了持久化层（persistence layers）和相关代码生成的概述，并指出了一些用工具的链接。
+
+- Zend Tutorial on Fulltext Searches: http://www.zend.com/zend/tut/tutorial-Ferrara.php
+
+该教程详细介绍了全文搜索（FULLTEXT searches）。
+
+- Getting Started with MySQL Fulltext Searches: http://www.devarticles.com/art/1/295
+
+这篇优秀的教程提供了对全文搜索的另一个详细视角。
+
+- Backing Up with MySQLdump: http://www.sitepoint.com/article/678
+
+该教程探索了 `mysqldump` 工具的奥秘。
+
+- Generating PHP Data Access Layers: http://freshmeat.net/articles/view/843/
+
+该教程从宏观角度查看了 PHP 中的数据库持久化层，并建议了一两个提供此功能的开源项目。
+
+# 文件
+
+数据库是存储信息的极佳工具，因为它们很快，并在 SQL 的帮助下易于导航。但是，有时你需要能够访问存储在文件中数据，无论是图像、配置信息，甚至是远程服务器上的页面。PHP 通过其强大的函数让此类工作变得简单。
+
+## 安全事项
+
+在运行代码之前，仔细考虑你正在做什么。在允许目录暴露在互联网上时要小心。检查任何可能执行脚本的上传文件。
+
+## 我如何读取文件？
+
+首先，这是一个使用 `file` 函数读取数组的示例：
+
+```php
+// 将文件读入数组
+
+$file = file('demo/writeScripts.html');
+
+// 计算行数
+
+$lines = count($file);
+
+// 初始背景
+
+$alt = '';
+
+// 遍历行
+
+for ($i=0; $i<$lines; $i++) {
+
+  // 创建背景颜色
+
+  if ($alt == '#f5f6f6') {
+
+    $alt = '#ffffff';
+
+  } else {
+
+    $alt = '#f5f6f6';
+
+  }
+
+  // 在 div 中显示行
+
+  echo '<div style="font-family: verdana; font-size:12px; background-color: ' . $alt . '">';
+
+  // 使用 htmlspecialchars 查看原始 HTML
+
+  echo $i . ':' . htmlspecialchars($file[$i]);
+
+  echo '</div>\n';
+
+}
+
+?>
+```
+
+## 第 4 章：文件
+
+```php
+<textarea style="font-family: verdana;
+
+  font-size: 12px;
+
+  width: 400px;
+
+  height: 300px;">
+
+<?php
+
+// 显示文件
+
+echo htmlspecialchars($file);
+
+?>
+
+</textarea>
+
+</form>
+```
+
+现在文件内容显示在 HTML 框中，并去除了它的 HTML 标签，如图 4.2 所示。
+
+## 图 4.2 原始文本
+
+![](img/b7e89640aa5fa679509a99b07948ad75_134_0.png)
+
+使用 PHP 4.2 编写安全脚本！
+Kevin Yank 从 1995 年开始从事 Web 开发，是一位备受推崇的技术作家。他编写了 SitePoint.com 出版的实操分步指南《使用 PHP 和 MySQL 构建你自己的数据库网站》，并担任《SitePoint Tech Times》的编辑，这是一份面向有技术倾向的 Web 开发者的双周通讯报。Kev 认为任何优秀的 Web 管理员应该至少看过一集 MacGyver。
+
+在很长一段时间里，PHP 作为一种服务器端脚本语言最大的卖点之一是，表单提交的值会自动为你创建为全局变量。从 PHP 4.1 开始，PHP 的制作者推荐了访问提交数据的替代方法。在 PHP 4.2 中，他们关闭了旧的处理方式！正如我将在本文解释的那样，这些更改是为了安全而做的。我们将共同探索 PHP 处理提交的新功能，以及
+
+另一种选项是使用 `readfile` 函数，它可以获取文件内容并直接显示在屏幕上：
+
+```php
+<?php
+
+// 读取文件并直接显示
+
+readfile('demo/writeSecureScripts.html');
+
+?>
+```
+
+一行代码即可完全按照原样显示文件，如图 4.3 所示。
+
+## 图 4.3 使用 readfile 的直接输出
+
+![](img/b7e89640aa5fa679509a99b07948ad75_135_0.png)
+
+Kevin Yank
+Kevin 从 1995 年开始从事 Web 开发，是一位备受推崇的技术作家。他编写了 SitePoint.com 出版的实操分步指南《使用 PHP 和 MySQL 构建你自己的数据库驱动网站》，并担任《SitePoint Tech Times》的编辑，这是一份面向有技术倾向的 Web 开发者的双周通讯报。Kev 认为任何优秀的 Web 管理员应该至少看过一集 MacGyver。
+
+在很长一段时间，PHP 作为一种服务器端脚本语言最大的卖点之一是表单提交的值会自动创建为全局变量。从 PHP 4.1 开始，PHP 的制作者推荐了访问提交数据的替代方法。在 PHP 4.2 中，他们关闭了旧的处理方式！正如我将在本文解释的那样，这些更改是为了安全而做的，他们将探索新的
+
+由于，由于我只下载了 HTML——没有下载相关的图像和 CSS 文件——所以外观与原始并不完全相同。
+
+## 文件句柄 (File Handles)
+
+上述文件函数只需要你将其指向需要读取的文件，并使用相对于执行该函数的 PHP 脚本的路径。PHP 的大多数文件函数使用一种略有不同的机制来“连接”文件，这与连接数据库非常相似；该过程使用 `fopen` 函数进行“连接”，使用 `fclose` 进行“断开连接”。使用 `fopen` 时，返回的值是一个 PHP 文件指针，称为文件的句柄（handle）。当你使用 `fopen` 连接文件时，必须指定文件路径以及访问文件的模式，例如用于读取的 `r`。
+
+```php
+// 打开文件进行读取
+
+$fp = fopen($filename, 'r');
+```
+
+手册中解释了各种可用的模式[2]。
+
+## 二进制文件修饰符 (The Binary File Modifier)
+
+与 Linux 不同，Windows 区分了二进制文件和 ASCII 文件。可以使用额外的修饰符 `b` 来向 PHP 标识二进制文件，以便在 Windows 中被正确处理。
+
+```php
+// 打开二进制文件进行读取
+
+$fp = fopen($filename, 'rb');
+```
+
+即使你编写的代码目前运行在基于 Unix 的系统上，也为二进制文件实现 `b` 修饰符以确保可移植性。
+
+`fread` 函数可以在旧版本中作为 `file_get_contents` 的替代：
+
+```php
+<?php
+
+// 存储文件位置的变量
+
+$location = 'demo/writeSecureScripts.html';
+
+// 打开文件句柄进行读取
+
+$fp = fopen($location, 'r');
+
+// 将整个文件读取到字符串
+
+$file = fread($fp, filesize($location));
+
+// 关闭文件句柄
+
+fclose($fp);
+
+echo $file;
+
+?>
+```
+
+> [2] http://www.php.net/fopen
+
+这像我们使用 `readfile` 一样显示了整个文件，并产生了图 4.3 所示的显示。这个示例旨在简单演示文件句柄的运作。注意，当我们使用 `fread` 时，第二个参数是从文件开始要读取的字节数大小。对于这个参数，我使用了 `filesize` 函数，它告诉我文件的总大小。通常情况下，`fread` 对于读取文件的有限部分非常有用；要获取完整文件，根据你的需求，使用 `file_get_contents` 或 `file` 会高效得多。
+
+## 节省内存 (Saving Memory)
+
+你为止看到的都是针对小文件的。然而，当你考虑到 PHP 提供的锁定机制时，使用 `file` 或 `file_get_contents` 读取大文件会强制填充大量内存。
+
+为了解决这个问题，可以使用另一种方法来读取文件内容，并分阶段处理内容。这种方法使用了 `fgets`。
+
+```php
+<?php
+
+// 打开文件句柄进行读取
+
+$fp = fopen('demo/writeSecureScripts.html', 'r');
+
+// 循环直到文件结束
+
+while (!feof($fp)) {
+
+    // 获取数据块
+
+    $chunk = fgets($fp);
+
+    echo $chunk;
+
+}
+
+// 关闭文件句柄
+
+fclose($fp);
+
+?>
+
+
+
+连接像正常打开。接下来，我们使用`while`循环，只要`feof`返回`FALSE`就会继续。`feof`在到达文件末尾或句柄出错（例如连接丢失，这在远程文件上可能会发生）时返回`TRUE`。
+
+接下来，我们使用`fgets`获取文件的“块”，从当前位置开始。`fgets`会相应地移动内部 PHP 文件指针。
+
+有很多使用句柄读取文件的方法。其中一个是`fscanf`（注意's'），它与`strip_tags`函数几乎一样，可以去掉发现的 HTML 标签。另一个是`fscanf`，它以`printf`相同的方式格式化输出。非常值得浏览文件系统以寻找“小技巧”。
+
+PHP 提供了相当处理文件的函数，但更好的方法是使用 PEAR::File。它提供了一个更简单的 API 来读取文件，并允许你利用其他 PEAR 类执行任务，如在文件系统中查找文件和修改`.htaccess`文件。可以在 PEAR 网站找到 PEAR[4]（安装说明见附录 D）；此处使用的版本是 1.0.3。
+
+PEAR::File 的一个特别实用的功能是允许在读取时锁定文件，这意味着当两个人同时操作文件时不会发生冲突。PEAR::File 还能很好地处理错误。
+
+## 将数据库交给专家 (Leave Databases to the Experts)
+
+虽然可以以与数据库类似的方式在文件中存储数据（特别是当你考虑到 PHP 提供的锁定机制时），通常最好是将这项工作交给 MySQL。在 PHP 中编写自己的数据库是一个非常复杂的问题，除非真的需要，否则没有必要“造轮子”。
+
+让我们看看如何使用 PEAR::File 读取文件的全部内容：
+
+```php
+<?php
+
+// 引入 PEAR::File
+require_once 'File.php';
+
+// 使用共享读取读取整个文件并显示
+echo File::readAll('writeSecureScripts.html');
+```
+
++   [3] http://www.php.net/filesystem
+[4] http://pear.php.net/package-info.php?pacid=43
+
+## 如何修改本地文件？
+
+目前，PEAR::File 并没有很好地处理基于换行符逐行遍历文件的过程。我希望这在未来的版本中能够得到改进；请查看下一个解决方案中写入文件时的表现。
+
+## 如何修改本地文件？
+
+既然你已经学会了如何读取文件内容并熟悉了句柄（handles），那么更新文件呢？同样，在 PHP 中这也很简单。让我们为 HTML 文件创建一个文本版本：
+
+File：7.php
+
+```php
+<?php
+
+// 将文件读入数组中
+$lines = file('demo/writeSecureScripts.html');
+
+// 打开文件进行写入（如果不存在则创建）
+$fp = fopen('demo/writeSecureScripts.txt', 'w');
+
+// 遍历原始文件的行
+foreach ($lines as $line) {
+  // 去除 HTML 标签
+  $line = strip_tags($line);
+  // 写入行
+  fwrite($fp, $line);
+}
+
+// 显示新文件
+echo '<pre>';
+echo file_get_contents('demo/writeSecureScripts.txt');
+echo '</pre>';
+
+?>
+```
+
+我们使用`fopen`打开新文件的模式。模式`w`意味着写入文件的任何内容都将从顶部开始，并覆盖已存在的任何内容。如果我们使用`a`，则新内容将附加到文件末尾，保留原始内容。无论哪种情况，如果文件不存在，将被创建。
+
+以下是使用 PEAR::File 实现相同的方法，它提供了在写入时锁定文件的额外好处：
+
+## 第4 章：文件
+
+File：8.php
+
+```php
+<?php
+
+// 引入 PEAR::File
+require_once 'File.php';
+
+// 将文件读入数组中
+$htmlVersion = File::readAll('demo/writeSecureScripts.html');
+
+// 去除 HTML 标签
+$txtVersion = strip_tags($htmlVersion);
+
+// 写入文件并锁定写入
+File::write('demo/writeSecureScripts2.txt', $txtVersion, FILE_MODE_WRITE, LOCK_EX);
+
+// 现在解锁
+File::unlock('demo/writeSecureScripts2.txt', FILE_MODE_WRITE);
+
+// 显示新文件
+echo '<pre>';
+echo File::readAll('demo/writeSecureScripts2.txt');
+echo '</pre>';
+
+?>
+```
+
+请注意，在基于 Unix 的 Web 服务器上，PHP 通常以`www`或`nobody`等用户运行，这些账户的权限非常有限，并不专门属于你。由 PHP 创建的文件需要放置在用户具有写权限的目录中。
+
+要使文件或目录可读可写，请使用此命令：
+
+```bash
+chmod o=rw <directory | file>
+```
+
+如果你还需要执行该文件（例如它是 PHP 脚本），请查看以下内容：
+
+```bash
+chmod o=rwx <directory | file>
+```
+
+## 保护敏感文件
+
+![](img/b7e89640aa5fa679509a99b07948ad75_140_0.png)
+
+如果你使用共享服务器，这样将目录设为可读可写意味着服务器上拥有账户的其他人员能够读取并修改这些目录的内容。在其中放入此类信息时要小心！
+
+你的 Web 主机应该能够帮助你解决任何安全担忧。
+
+## 如何获取本地文件的信息？
+
+PHP 提供了一系列函数来帮助你获取文件信息。例如，这里是我们可以如何检查文件是否存在并确定其大小的示例：
+
+File：`9.php`
+
+```php
+<?php
+
+// 将大小转换为字节大单位的函数
+function fileSizeUnit($size)
+{
+    if ($size >= 1073741824) {
+        $size = number_format($size / 1073741824, 2);
+        $unit = 'GB';
+    } elseif ($size >= 1048576) {
+        $size = number_format($size / 1048576, 2);
+        $unit = 'MB';
+    } elseif ($size >= 1024) {
+        $size = number_format($size / 1024, 2);
+        $unit = 'KB';
+    } elseif ($size >= 0) {
+        $unit = 'B';
+    } else {
+        $size = '0';
+        $unit = 'B';
+    }
+    return array('size' => $size, 'unit' => $unit);
+}
+
+$file = 'demo/writeSecureScripts.html';
+
+// 文件是否存在
+if (fileexists($file)) {
+    echo 'Yep: ' . $file . ' exists.<br />';
+} else {
+    die('Where has: ' . $file . ' gone!<br />');
+}
+
+// 使用更方便的文件大小函数
+$size = fileSizeUnit(filesize);
+
+// 显示结果
+echo 'It\'s ' . $size['size'] . ' ' . $size['unit'] . ' in size.<br />';
+```
+
+开始时使用的`filesize`函数有助于让函数结果更易读。以下是输出：
+
+Yep: demo/writeSecureScripts.html exists. It's 16.28 KB in size.
+
+PHP 可以提供文件信息的许多细节：
+
+```php
+<?php
+
+$file = 'demo/writeSecureScripts.html';
+
+// 是否是文件
+if (is_file($file)) {
+    echo 'Yep: ' . $file . ' is a file<br />';
+}
+
+// 是否可读
+if (is_readable($file)) {
+    echo $file . ' can read<br />';
+}
+
+// 是否可写
+if (is_writable($file)) {
+    echo $file . ' can written to<br />';
+}
+
+// 上一次修改时间是什么
+$modified = date("d M H:i:s", filetime($file));
+echo $file . ' last modified at ' . $modified . '<br />';
+
+// 上一次访问时间是什么
+$accessed = date("d M H:i:s", filetime($file));
+echo $file . ' last accessed at ' . $accessed . '<br />';
+
+?>
+```
+
+这是输出：
+
+Yep: demo/writeSecureScripts.html is a file
+demo/writeSecureScripts.html can read
+demo/writeSecureScripts.html can written to
+demo/writeSecureScripts.html last modified at 09 Mar 12:08:02
+demo/writeSecureScripts.html last accessed at 09 Mar 12:35:47
+
+## 清除文件统计信息
+
+PHP 保留文件结果的缓存以提高性能。但有时需要清除缓存；这可以通过`clearstatcache`函数实现。
+
+![](img/b7e89640aa5fa679509a99b07948ad75_143_0.png)
+
+## 如何用 PHP 检查目录？
+
+特别对于基于 Web 的文件管理器，使用 PHP 探索目录是非常实用的。有两种基本方法；涉及的 PHP 函数详见手册[5]。
+
+第一种方法使用`opendir`、`readdir`和`closedir`，与使用`fopen`和`fclose`读取文件的过程相似：
+
+```php
+<?php
+
+// 当前目录
+$location = './';
+
+// 打开当前目录
+$dp = opendir($location);
+
+// 遍历目录
+while ($entry = readdir($dp)) {
+    // 如果是目录...
+    if (is_dir($location . $entry)) {
+        echo '[Dir] ' . $entry . ' <br />';
+    }
+    // 如果是文件...
+    else if (is_file($location . $entry)) {
+        echo '[File] ' . $entry . ' <br />';
+    }
+}
+
+// 关闭
+closedir($dp);
+
+?>
+```
+
+[5] http://www.php.net/dir
+
+# 第 4 章：文件
+
+这是输出：
+
+```
+[Dir] .
+[Dir] ..
+[File] 1.php
+[File] 10.php
+[File] 11.php
+[File] 12.php
+[File] 13.php
+[File] 14.php
+[File] 15.php
+[File] 16.php
+[File] 17.php
+[File] 18.php
+[File] 19.php
+[File] 2.php
+[File] 4.php
+[File] 5.php
+[File] 6.php
+[File] 7.php
+[File] 8.php
+[File] 9.php
+[Dir] extensions.ini
+[File] ftpdownloads
+[File] sample.zip
+```
+
+另一种方法是使用`dir`函数，它是 PHP 内置的一个“伪”类。在用法上，它几乎完全一样：
+
+```php
+<?php
+
+// 指定当前目录
+$location = './';
+
+// 打开当前目录
+$dir = dir($location);
+
+// 遍历目录
+while ($entry = $dir->read()) {
+  // 如果是目录...
+  if (is_dir($location . $entry)) {
+    echo '[Dir] ' . $entry . '<br />';
+  }
+  // 如果是文件...
+  else if (is_file($location . $entry)) {
+    echo '[File]' . $entry . '<br />';
+  }
+}
+
+// 关闭
+$dir->close();
+
+?>
+```
+
+你选择哪种实际上只是个人偏好问题。
+
+## 如何在网上显示 PHP 源代码？
+
+有时你可能想显示文件的源代码，例如当你发布一些代码供他人使用时。但是，对如何这样做保持谨慎非常重要的——你可能会发现自己泄出了比预期更多的内容，例如数据库用户名和密码。
+
+请注意，出于安全考虑而隐藏并不是我在这里所倡导的。代码从一开始就应该是安全的。隐藏代码以让无人发现其中的漏洞是灾难的根源；最终，某人会发现你在隐藏——更糟糕的是——你可能并不知道他们正在利用你松散的安全漏洞。
+
+PHP 提供了一个非常实用的函数`highlight_string`来显示代码，它使用`php.ini`中定义的格式以易读的方式显示 PHP 代码。使用该函数的辅助函数`highlight_file`会变得更简单，只需传递一个文件名即可显示。
+
+这是一个显示目录中选定文件源代码的脚本：
+
+```php
+<?php
+
+// 定义允许文件的数组 - 非常重要！
+$allowed = array('3.php', '4.php', '6.php', '10.php');
+
+// 如果是允许的文件，则显示它。
+if (isset($_GET['view']) && in_array($_GET['view'], $allowed)) {
+    highlight_file($_GET['view']);
+} else {
+    // 指定当前目录
+    $location = './';
+}
+
+?>
+```
+
+## 第4 章：文件
+
+```php
+// 打开当前目录
+$dir = dir($location);
+
+// 遍历目录
+while ($entry = $dir->read()) {
+  // 只显示允许的文件
+  if (in_array($entry, $allowed)) {
+    echo '<a href=' . $_SERVER['PHP_SELF'] . '?view=' . $entry . '">' . $entry . '</a><br />\n';
+  }
+  // 再次关闭它！
+  $dir->close();
+}
+```
+
+请注意，在显示目录内容或单个文件源代码时，我非常小心地只允许访问指定的文件。上面的示例可以让你了解在 PHP 中构建文件管理系统是多么简单。
+
+图 4.4 显示了排版精美的脚本。你自己来试一下，看看各种 PHP 语法部分的彩色高亮效果！
+
+## 我如何如何在文件中存储配置信息？
+
+## 图 4.4. 返回源码
+
+![](img/b7e89640aa5fa679509a99b07948ad75_147_0.png)
+
+```php
+<?php
+
+$file = 'demo/writeSecureScripts.html';
+
+// 这是一个文件吗？目录可以使用 is_dir()
+if ( is_file($file) )
+{
+    echo ( 'Yep: '.$file.'/ is a file<br />' );
+    // 是否可读
+    if ( is_readable($file) )
+    {
+        echo ( '$file.' can be read<br />' );
+        // 是否可写
+        if ( is_writable($file) )
+        {
+            echo ( '$file.' can be written to<br />' );
+            // 上一次修改是什么时候？
+            $modified = date ("D d M g:i:s", filetime($file));
+            echo ( '$file.' last modified at ' '.$modified.'<br />' );
+            // 上一次访问是什么时候？
+            $accessed = date ("D d M g:i:s", filetime($file));
+            echo ( '$file.' last accessed at ' '.$accessed.'<br />' );
+        }
+    }
+}
+
+?>
+```
+
+
+
+在 PHP 4.2.0 或更高版本中，如果你向`highlight_string`或`highlight_file`传递第二个参数`TRUE`，它将返回结果作为字符串而不是显示文件。
+
+## 如何在文件中存储配置信息？
+
+在整个网站中反复使用的某些信息（例如数据库连接设置）最好存储在单个文件中。你不应该将代码移动到另一个网站，修改一次设置比修改数百次要好得多。实现此点的最简单方法是在`include`文件中创建变量，然后在代码中`include`该文件。但有时编辑 PHP 文件会让你代码的用户感到紧张，而且出于安全起见，使用不同的扩展名识别配置文件通常很有帮助，例如，可以使用`.htaccess`对它们进行保护。方便的替代方案是 PHP 的`parse_ini_file`函数，它可以解析使用与`php.ini`相同格式的文件。
+
+考虑以下文件：
+
+```
+File: demo/example.ini
+
+; 连接到 MySQL 的设置
+
+[Database_Settings]
+
+host=localhost
+user=harry
+pass=secret
+dbnamename=sitepoint
+
+; 网站的默认外观
+
+[Preferences]
+
+color=blue
+size=medium
+font=verdana
+```
+
+使用`parse_ini_file`，PHP 将读取内容并使用它们构建一个二维数组：
+
+```
+File: 14.php
+
+<?php
+
+$iniVars = parse_ini_file('demo/example.ini', TRUE);
+
+echo '<pre>';
+print_r($iniVars);
+echo '</pre>';
+
+?>
+```
+
+请注意，我们在`parse_ini_file`中使用的第二个布尔参数告诉它该文件包含子节（`[Database_Settings]`和`[Preferences]`），因此它应该使用这些子节来构建多维数组。
+
+输出如下：
+
+```
+Array
+(
+    [Database_Settings] => Array
+        (
+            [host] => localhost
+            [user] => harry
+            [pass] => secret
+            [dbname] => sitepoint
+        )
+    [Preferences] => Array
+        (
+            [color] => blue
+            [size] => medium
+            [font] => verdana
+        )
+)
+```
+
+现在使用我们在第 3 章创建的 MySQL 类连接到 MySQL 可能像这样：
+
+```php
+$iniVars = parse_ini_file('demo/example.ini', TRUE);
+$mysql = &new MySQL(
+$iniVars['Database_Settings']['host'],
+$iniVars['Database_Settings']['user'],
+$iniVars['Database_Settings']['pass'],
+$iniVars['Database_Settings']['dbname']
+);
+```
+
+## 如何访问远程服务器上的文件？
+
+到目前为止我还没有告诉你的是，在大多数情况下，PHP 通过互联网访问远程服务器上的文件的方式与访问本地文件的方式几乎完全相同。主要的限制是你不能使用`filesize`函数或其他用于获取文件信息的函数。
+
+重用“我如何读取本地文件？”中的`5.php`，这里是我们如何直接从 SitePoint 获取我们一直在处理的原始文件：
+
+```php
+<?php
+
+// 打开读取文件句柄
+$fp = fopen('http://www.sitepoint.com/print/758', 'r');
+
+// 只要连接良好且未到文件结束就循环
+while (!feof($fp)) {
+    // 获取到下一行的块
+    $chunk = fgets($fp);
+    echo $chunk;
+    // 关闭文件句柄！
+    close($fp);
+}
+
+?>
+```
+
+这种方法的问题在于，我们取了一个专门用于本地系统的函数来访问远程服务器。`fopen`不会处理你在互联网上典型的遇到的问题（例如超时），并且无法提供你可能需要的远程连接的详细错误报告。它还剥除了远程服务器发送的 HTTP 头部，而这些头部有时是必要的——例如在 Web 服务的情况下，会自动处理你可能控制的请求头。让我们看看另一种替代方案`fsockopen`：
+
+```php
+<?php
+
+$host = 'www.sitepoint.com'; // 远程主机
+$port = '80'; // 端口号
+$timeout = '10'; // 超时
+$uri = '/print/758'; // 要获取的页面
+
+// 打开远程套接字
+if ($fp = fsockopen($host, $port, $errno, $timeout)) {
+    die('错误: ' . $errno);
+    // 构建请求
+    $requestHeader = "GET " . $uri . " HTTP/1.1\r\n";
+    $requestHeader .= "Host: " . $host . "\r\n";
+
+    // 发送请求
+    fwrite($fp, $requestHeader);
+
+    // 只要连接良好且未到文件结束就循环
+    while (!feof($fp)) {
+        // 获取到下一行的块
+        $chunk = fgets($fp);
+        echo $chunk;
+    }
+
+    // 关闭文件句柄！
+    close($fp);
+}
+
+?>
+```
+*(注：由于原文中`fsockopen`部分的代码逻辑存在混乱和截断，翻译时已根据上下文进行了修复性对齐以确保可读性)*
+
+```php
+echo '<b>当前目录:</b>/<code' . ftp_pwd($fp) .
+'<code>';
+echo '<b>可用文件:</b><br />';
+
+// 获取服务器上的文件列表
+$files = ftp_nlist($fp, './');
+
+// 显示文件
+foreach ($files as $file) {
+    echo $file . '<br />';
+}
+```
+
+接下来，我们使用`ftp_chdir`来切换目录。在使用 FTP 时，有一点非常重要：FTP 相关操作的根目录将是您登录服务器时所在的目录，而不是服务器的真正根目录。因此，在适当的情况下请务必指定绝对路径。
+
+为了显示我们处于正确的路径，我们使用`ftp_pwd`来显示工作目录。`ftp_nlist`函数返回当前目录下的文件数组，然后我们可以对其进行显示。
+
+列表看起来应该是这样的：
+
+```
+Current Directory: ./redhat/updates/8.0/en/os/i386
+Files Available:
+lynx-2.8.5-7.1.i386.rpm
+galeon-1.2.6-0.0.i386.rpm
+ggv-1.99-9.i386.rpm
+gv-3.5.18-19.i386.rpm
+xinetd-2.3.7-5.i386.rpm
+pam-0.75-46.8.0.i386.rpm
+kamera-3.0.3-5.i386.rpm
+pam-devel-0.75-46.8.0.i386.rpm
+vnc-3.3.r2-39.2.i386.rpm
+```
+
+这是一个 PHP FTP 函数运行的简单示例。完整的函数列表可以在 PHP 手册[7]中找到。
+
+在`PEAR::NET_FTP`中，我们有一个方便的类，它可以确保数据以正确的模式（ASCII 或二进制）传输，并解决与递归上传相关的问题。
+
+> [7] http://www.php.net/ftp
+
+# 第 4 章：文件
+
+当我们需要从一个系统向另一个系统传输目录及其子目录时的下载。
+
+例如，以下代码连接到 FTP 服务器上的远程目录，并将内容（包括子目录）复制到本地计算机的目录：
+
+文件：18.php
+
+```php
+<?php
+
+// 设置时间限制为无限
+set_time_limit(0);
+
+// 引入 PEAR::Net_FTP
+require_once 'NET/FTP.php';
+
+// 定义服务器、用户名和密码
+$ftpServer = 'ftp.uselinux.org';
+$ftpUser = 'anonymous';
+$ftpPass = 'user@domain.com';
+
+// 存放文件的本地目录
+$localDir = 'ftpdownloads/';
+
+// 从此处获取文件的远程目录
+$remoteDir = '/pub/software/web/html-utils/';
+
+// 实例化 Net_FTP
+$ftp = new Net_FTP();
+
+// 设置主机名和登录详情
+$ftp->setHostName($ftpServer);
+$ftp->setUsername($ftpUser);
+$ftp->setPassword($ftpPass);
+
+// 连接并登录
+$ftp->connect();
+$ftp->login();
+
+// 指定扩展名文件
+$ftp->getExtensionsFile('extensions.ini');
+
+// 获取远程目录内容
+if ($ftp->getRecursive($remoteDir, $localDir)) {
+```
+
+> 显然，如果没有安全保护，你不会想将它放在你的网站上。
+
+```php
+echo '文件传输成功';
+} else {
+  echo '传输失败';
+}
+```
+
+请注意，`Net_FTP`的`getExtensions`方法允许您指定一个定义特定文件扩展名（如`.gif`和`.jpg`）或作为 ASCII 的文件，确保它们以正确的方式传输。`getRecursive`方法获取指定远程目录的内容，包括其子目录。
+
+假设您有权限在服务器上放置文件，可以使用`putRecursive`方法轻松地反向执行相同的操作。这对于从您的本地开发系统和您的网站传输项目来说可能是一个非常有用的工具，特别是当你从命令行使用 PHP 时。
+
+凭借根据扩展名正确传输文件的能力，`Net_FTP`也是单个“put”和“get”文件操作的极佳选择，因为它消除了你手动设置文件传输模式的需求。
+
+# 我如何用 PHP 管理文件下载？
+
+开发者在构建发布文件供下载的网站时，面临的一个相当常见的问题是如何管理这些文件。也许某些文件不应该公开可用。您可能还希望在访问者通过 Web 表单提供详细信息后才交付文件。开发下载可能不仅仅是将您的文件存储在公共目录中并在网站上链接它那么简单。
+
+处理下载的诀窍是让 PHP 使用特殊的 HTTP 头部为您“提供”文件：
+
+```php
+// 指定要下载的文件
+$fileName = 'sample.zip';
+$mimeType = 'application/zip';
+
+if (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE 5') or
+strpos($_SERVER['HTTP_USER_AGENT'], 'Opera 7')) {
+$mimeType = 'application/x-download';
+```
+
+# 第 4 章：文件
+
+```php
+}
+
+// 告诉浏览器这是一个待下载的文件
+header('content-disposition: attachment; filename=' . $filename);
+header('content-type: ' . $mimeType);
+header('content-length: ' . filesize($filename));
+
+// 显示文件
+readfile($filename);
+?>
+```
+
+`content-disposition`头部告诉浏览器以附件形式处理文件（而不是在窗口中显示），`content-type`头部告诉浏览器您发送的文件类型；对于 Internet Explorer 5 和 Opera 浏览器，我们将其设置为`application/x-download`。最后，`content-length`头部告诉浏览器文件的大小，以便显示下载进度条。
+
+## 先发送 HTTP 头部
+
+> 记住头部必须在发送任何内容之前发送。
+
+意识到 PHP 的输出控制函数非常有帮助，更多详情请参阅第二卷第 5 章。
+
+现在文件交付受您的控制了，您可以将此功能集成到您的身份验证系统中，例如控制谁可以下载。
+
+# 文件分发策略
+
+互联网无法解决的问题之一是如何最好从网站分发文件。如果您销售 JPEG 格式的艺术品，您将如何处理客户付款并让他们下载他们购买的图像？
+
+正如我所说，这个问题没有完美的解决方案。但是，如果在下载的文件中内置某些形式的安全机制（例如软件的许可证），可以获得更好的保护。
+
+不同的策略如下：
+
+- 通过电子邮件发送文件。这对于小文件很好，因为几乎可以保证送达，但许多电子邮件系统对用户接收的文件大小有限制（通常为一两兆字节）。
+- 为客户提供一个唯一的链接，让他们在有限的时间内（如一周）下载文件。如果尝试下载失败（例如客户在下载过程中断开了连接），该策略允许他们重试。可以生成一个唯一的随机数字并将其用于下载 URL。该数字与数据库中的条目对应，并在指定的时间段后过期。这将限制文件被下载的次数，并有助于防止通过相同的 URL 重新分发。PayPal Antifraud[8] 等使用了这种方法。
+- 为客户提供用户名和密码组合，让他们登录网站并下载他们自己的文件。这种方法在 PHP Architect[9] 网站已被证明特别有效，该网站使用它以 Acrobat 格式分发 PHP Architect 杂志。Acrobat 文件是实时生成的，并使用客户登录网站时相同的密码进行加密。这显然阻止了客户重新分发杂志，因为这样做他们交出密码。
+
+[8] http://www.eliteweaver.co.uk/antifraud/
+[9] http://www.phparch.com/
+
+## 第四章：文件
+
+## 如何用 PHP 创建压缩的 ZIP/TAR 文件？
+
+也许你有一个包含许多文件（或不同类型文件以及子目录的目录。在某些情况下，你可能需要创建一个整个目录的下载，并保留其原始结构。在类 Unix 系统上，实现此点的命令行方法是创建一个“归档”文件，例如`.tar`文件（`.tar`文件是“磁带归档”，最初的设计初衷是帮助将系统备份到磁带上），然后使用`gzip`或`bzip2`对该文件进行压缩。如果你有一个名为`mywork`的目录，并想将其存储为单个压缩文件，你可以在命令行中输入以下内容：
+
+```
+tar cvf mywork.tar ./mywork
+gzip mywork.tar
+```
+
+这将为你生成一个`mywork.tar.gz`文件。要解压并提取该文件，你可以：
+
+```
+gunzip mywork.tar.gz
+tar xvf mywork.tar
+```
+
+这将在你当前的工作目录下方重建该目录。请注意，在典型的 Linux 发行版中，你可以用一行完成上述操作，只需使用`'z'`标志来压缩`tar -zcvf mywork.tar.gz ./mywork`并提取`tar xvzf mywork.tar.gz`。
+
+使用 PHP 的`system`函数，你可以从 PHP 脚本执行这些命令，假设你的 Web 服务器有权限使用`tar`和`gzip/bzip2`可执行文件（这可能不会）。那么你如何从存储在数据库中的数据或 XML 文档中的节点创建归档呢？
+
+得益于 [PEAR::Archive_Tar](http://pear.php.net/package/Archive_Tar)，这一切都是可能的。基本功能允许你构建`.tar`文件，只要你安装了 zlib 或 b2 扩展，你还可以对文件进行压缩。
+
+让我们在本章之前处理过的一些文件创建一个归档：
+
+> [10] http://pear.php.net/Archive_Tar
+
+## 如何用 PHP 创建压缩的 ZIP/TAR 文件？
+
+```php
+<?php
+
+// 引入 PEAR::Archive_Tar
+require_once 'Archive/Tar.php';
+
+// 实例化 Archive_Tar
+$tar = new Archive_Tar('demo/demo.tar.gz', 'gz');
+
+// 要归档的文件数组
+$files = array(
+    'demo/example.ini',
+    'demo/writeSecureScripts.html'
+);
+
+// 创建归档文件
+$tar->create($files);
+
+echo 'Archive created!';
+
+?>
+```
+
+这非常简单。在实例化类时，第二个参数告诉`Archive_Tar`使用什么种类型的压缩——`gz`（用于 gzip）的替代方案是`bz2`（用于 bzip2）。如果你不需要压缩，可以简单省略第二个参数。在使用`create`方法时，需要指定文件名数组，这些路径是相对于脚本执行的位置。若要再次提取文件，我们可以使用以下代码：
+
+```php
+<?php
+
+// 引入 PEAR::Archive_Tar
+require_once 'Archive/Tar.php';
+
+// 实例化 Archive_Tar
+$tar = new Archive_Tar('demo/demo.tar.gz');
+```
+
+
+
+当我们调用`extract`方法时，我们提供一个路径，归档将在路径下提取——在这种情况下，是相对于脚本执行位置的子目录。既又方便。`Archive_Tar`特别有趣的地方在于，它允许将字符串作为文件添加到归档。考虑以下示例：
+
+```php
+<?php
+// 引入 MySQL 类
+require_once 'Database.php';
+// 引入 PEAR::Archive_Tar
+require_once 'Archive/Tar.php';
+
+$host = 'localhost'; // MySQL 服务器主机名
+$dbUser = 'harry'; // MySQL 用户名
+$dbPass = 'secret'; // 用户密码
+$dbName = 'sitepoint'; // 数据库名称
+
+// 实例化 MySQL 连接
+$db = new MySQL($host, $dbUser, $dbPass, $dbName);
+// 实例化 Archive_Tar
+$tar = new Archive_Tar('demo/tar.gz', 'gz');
+$sql = 'SELECT * FROM articles';
+$result = $db->query($sql);
+while ($row = $result->fetch()) {
+    // 将字符串作为文件添加
+    $tar->add('articles/' . $row['article_id'] . '.txt', $row['body']);
+}
+echo 'Archive created';
+?>
+```
+
+我们使用第三第三中创建的类查询了数据库，并使用该方法将获取到的数据添加到归档中。第一个参数代表存储字符串的路径；第二个参数是字符串本身。这应该让你大致了解`Archive_Tar`何时有用。欲了解更详细的教程，请参下方的推荐阅读。
+
+## 延伸阅读
+
+- HTTP Header 参考：`http://www.php.net/manual/en/http.header.php`（这相当枯燥，但对于尝试用 PHP 开发客户端的人来说，这是一个非常有用的参考。）
+- 使用 PHP 管理 TAR 文件：`http://www.php.net/manual/en/archive-tar.php`（这篇文章深入介绍了`Archive_Tar`提供的所有功能。）
+
+# 文本处理
+
+尽管我们生活在一个多媒体时代，但大多数 Web 内容似乎以文本形式出现。作为 PHP 开发人员，你的大部分工作将涉及各种形式的文本处理——无论是 HTML、XML还是其他。尽管 HTML 看起来简单，但它比表面看起来复杂，特别是在动态生成 HTML 时。在解决方案中，我将介绍你在用 PHP 构建 HTML 时会遇到的一些常见问题，以及什么可以帮助你解决这些问题。
+
+## 如何解决 HTML 文档中的文本问题？
+
+当 HTML 用作 Web 页面链接的一部分时，某些字符会对尝试通过点击来激活链接的用户产生问题。以空间例如，URL 中包含的空格数量在浏览器识别页面地址时可能会丢失。然而，在 URL 中代码`%20`来发送空格字符的表示。这种将特殊字符替换为适当代码的过程被称为 URL 编码。字符分为两种：
+
+- 预留字符，它们在 URL 中已经具有某些作用，如`?`和`&`
+- 不安全字符，取决于 Web 浏览器和服务器，可能会以不可预测的方式处理
+
+例如，假设你的数据库中有一个用户的登录名为 "Ben&Jerry"。你构建了一个可以查看该用户配置的页面。为了访问它，你决定使用数据库中的登录名构建链接。你可能会得到这样的链接：
+
+```html
+<a href="index.php?view=profile&user=Ben&Jerry">Ben&Jerry</a>
+```
+
+接收请求的`index.php`脚本收到的 GET 变量`$GET['user']`仅为 "Ben"，忽略了 "Jerry"（可能并不高兴）。当脚本尝试在数据库中查找该名称时，显然会出现问题。
+
+幸运的是，PHP 提供了`urlencode`函数来处理这种情况。如果我们在渲染链接时将链接中的用户名通过`urlencode`处理，结果将是：
+
+```html
+<a href="index.php?view=profile&user=Ben%26Jerry">Ben&Jerry</a>
+```
+
+注意链接中的用户名包含`Ben%26Jerry`。脚本将接收 "Ben&Jerry" 作为`$_GET['user']`的值，并能够在数据库中找到该用户。
+
+## 其他 URL 编码/解码函数
+
+> PHP 提供了`urldecode`函数，当你需要用 PHP 解析 HTML 时它可能非常有用。它还提供了`rawurlencode`和`rawurldecode`，它们使用`+`代替`%20`来标记空格。这是 URL 编码的一种替代规范的结果。
+
+在本章结束时，我建议了一个进一步阅读的来源，详细探讨了 URL 编码这一主题。
+
+`urlencode`和类似的函数应仅应用于用于创建 HTML 文档的文本。不要被诱导在将文本存入数据库之前对其进行修改！在上面的示例中，我必须以不同的格式渲染用户名。如果我在将其插入数据库之前对用户名应用了`urlencode`，那么每当我想要以正常方式显示文本时，都需要需要应用`urlencode`。
+
+## 表单字段和 HTML 内容
+
+在处理应该预填充值的 HTML 表单元素时（值可能从数据库获取），我们遇到了另一个陷阱。假设你有一个表单，允许用户编辑他们在你网站上的帐户详情，例如“个人资料”页面。表单中有一个允许用户修改其“昵称”的字段。该字段可能像这样：
+
+```html
+<input type="text" name="nickname" value="<?php $nickname; ?>">
+```
+
+`$nickname`变量的值来自你的数据库。如果用户的昵称是 "Joe Bloggs"，则没有问题。传递到浏览器的最终 HTML 将是：
+
+```html
+<input type="text" name="nickname" value="Joe Bloggs />
+```
+
+但如果有人使用 "Joe The Hacker" Bloggs" 这样的昵称会怎样？表单元素最终看起来像这样：
+
+```html
+<input type="text" name="nickname" value="Joe The Hacker" Bloggs />
+```
+
+这对 Web 浏览器是不利的。最好的情况下，它们会显示一个包含名称“Joe”的表单字段；最坏的情况下，它们会完全搞乱页面。如果我们只是将文本“原样”插入数据库，仅在需要时进行编码，这一切都可以被避免。
+
+# 第 5 章：文本处理
+
+字符包括单引号（`'`）、双引号（`"`）、安和符号（`&`）以及大于小于符号（`< >`）。
+
+如果我们在输出 Joe 的昵称之前通过`htmlspecialcharacters`进行处理，输入字段将变为：
+
+```html
+<input type="text" name="nickname"
+value="Joe &quot;The Hacker&quot; Bloggs" />
+```
+
+注意，`&quot;`替换了 name 字段值中的双引号。浏览器会将这些内容显示为预期的双引号。
+
+再次保存成功！
+
+## HTML 中的换行
+
+正如你可能知道的，如果你有像这样一段 HTML：
+
+```html
+<p>Dear Sir or Madam,
+
+This is my nicely formatted letter. I hope that it really impresses you.
+
+Look! I've started a new paragraph.
+
+Yours faithfully,
+
+Mike Format</p>
+```
+
+它在 Web 浏览器中显示时，视觉效果可能并不理想。在这种情况下，它看起来像这样：
+
+Dear Sir or Madam, This is my nicely formatted letter. I hope that it really impresses you. Look! I've started a new paragraph. Yours faithfully, Mike Format
+
+这对于基于 PHP 的网站来说可能是一个头疼的问题，因为你希望允许用户进行基础文本格式化，而不需要让他们了解太多 HTML。
+
+再次，解决方法就在这里，通过 PHP 的`nl2br()`函数来实现。这里是我们将 Mike 的信通过`nl2br()`函数后生成的 HTML：
+
+```html
+<p>Dear Sir or Madam,<br />
+<br />
+This is my nicely formatted letter. I hope that<br />
+it really impresses you.<br />
+<br />
+Look! I've started a new paragraph.<br />
+<br />
+Yours faithfully, <br />
+<br />
+Mike Format</p>
+```
+
+Mike 可以继续用他的格式化给人留下深刻印象！
+
+## 在“查询”时修改文本，而不是“插入”时
+
+![](img/b7e89640aa5fa679509a99b07948ad75_167_0.png)
+
+对于 PHP 初学者来说，一个常见的错误是在文本插入数据库的时间点使用上述类型的函数。在应用的初始设计阶段，这似乎是一个好主意。然而，这种方法以后可能会导致问题——例如，如果你想以不同的格式显示文本。
+
+以`nl2br()`函数为例。这对于简单的 HTML 没问题，但如果你想允许用户在`textarea`字段中编辑文本呢？他们将面对换行符被移除并替换为`br`标签的文本。如果用户期望编辑的是 HTML，他们可能会非常困惑。将`br`元素转换回换行符是一种可能，但这会增加代码的复杂性和困惑性。
+
+通过仅在内容显示给用户的时间点（即从数据库获取内容之后）应用`nl2br()`，你将避免许多头疼的问题。
+
+在某些情况下，在插入数据库时移除字符串的部分内容是可以接受的，例如`strip_tags()`函数（见下文），但通常最好在需要为浏览器渲染字符串之前避免重新格式化字符串。
+
+## 剥离标签
+
+如果你允许公众更新你的网站，那么能够使用 HTML 对于防止访问者发布干扰你网站布局的标记至关重要。
+
+PHP 函数`strip_tags()`几乎完美地处理了这大部分工作。给定某些文本，`strip_tags()`会消除任何看起来像 HTML 标签的内容。更准确地说，`strip_tags()`执行的是移除任何以`<`开头并以`>`结尾的文本块。之外的所有内容保持原样。这里有一个简单的示例：
+
+```php
+<?php
+$text = 'This is <b>bold</b> text';
+// 剥离该标签
+echo strip_tags($text);
+?>
+```
+
+输出结果：
+
+**This is bold text**
+
+你也可以在使用`strip_tags()`时配合一个允许的标签列表来忽略某些标签。例如：
+
+```php
+<?php
+$text = 'This is <b>bold</b> and this is <i>italic</i>';
+$text .= ' What about this <a href="http://www.php.net/">link</a>?';
+// 剥离除这些标签以外的其它标签
+echo strip_tags($text, '<b><i></i>');
+?>
+```
+
+它返回的 HTML 如下：
+
+This is `<b>bold</b>` and this is `<i>italic</i>`. What about this link?
+
+如你所见，`strip_tags()`保留了起始标签和结束标签之间的文本。如果它找到了`<`字符但未能找到匹配的`>`字符，它将移除到字符串结尾的所有文本。
+
+然而，使用`strip_tags()`移除 HTML 有一个缺点，就是在属性的处理上。如果你允许某些标签，你的网站成员可能可以在这些标签内使用`style`等属性，这可能会导致一些奇怪的布局。尽管如此，链接中的 JavaScript 可能会导致跨站脚本 (XSS) 安全漏洞（见附录 C）。
+
+在下一个解决方案中，我将向你展示如何实现“自定义代码”系统，该系统提供了一种更可靠的机制来允许某些标签。之后，我们将考虑如何检查属性本身的内容以确保它们是有效的。
+
+## 结语
+
+最后一个值得了解的函数是`wordwrap()`。如果你有一个不包含换行符的长字符串，你可以使用`wordwrap()`在指定的间隔处插入换行符。它在 HTML 标签中封装文本时特别有用，例如：
+
+```php
+<?php
+$text = "This is a very long string that has no line breaks.";
+echo wordwrap($text, 20, "<br />");
+?>
+```
+
+输出结果：
+
+This is a very long<br />
+string that has<br />
+no line breaks.
+
+`wordwrap()`还有一个可选参数用于在单词内部进行断行，如果有需要可以将其设置为`true`。
+
+# 第 5 章：文本处理
+
+## 格式化
+
+另外两个强大的函数是`printf`和`sprintf`函数，前者将输出显示到屏幕，后者输出到另一个字符串。这里有一个示例：
+
+File: 7.php
+
+```php
+<?php
+$fruit = array('banana', 'mango', 'pear');
+$price = array('30', '50', '35');
+// 带有格式化的字符串
+$format = "A %1\$s costs %2\$d cents.<br />n";
+for ($i = 0; $i < 3; $i++) {
+    printf($format, $fruit[$i], $price[$i]);
+}
+?>
+```
+
+这将产生以下输出：
+
+| A banana costs 30 cents. |
+| A mango costs 50 cents. |
+| A pear costs 35 cents. |
+
+在这个示例中，`$format`包含了`printf`和`sprintf`识别并替换为我们提供的值的特殊字符。如需更多细节，请参阅[PHP 手册][3]。
+
+PHP 还具有将字符串视为数组的能力，至少从简单语法的角度来看。例如：
+
+File: 8.php
+
+```php
+<?php
+$string = 'Hello World!';
+$length = strlen($string);
+for ($i = 0; $i < $length; $i++) {
+    echo $string[$i]. '<br />';
+}
+?>
+```
+
+> [3] `http://www.php.net/sprintf`
+
+不过，这种能力是有限的，例如你不能将字符串传递给 PHP 的某一个数组函数。
+
+现在你应该已经略了解了 PHP 普通字符串函数可以实现的效果。通常情况下，如果可以用它们解决问题，就使用它们吧。它们运行快、易于使用，而且比正则表达式不容易出错。
+
+## 我如何实现自定义格式化代码？
+
+如果你运行一个允许用户添加文本的网站，你很快就会意识到，允许他们使用原始 HTML 将是一场灾难的根源。在极短时间内，每个人都会（无意或恶意地）发布一条会打乱你网站整洁布局的消息。
+
+如果你曾经用过像 vBulletin 或 phpBB 这样的论坛，你就会遇到 BBCode（公告板代码），这是一组非 HTML 标签的集合，论坛成员可以使用它们提供简单的格式化，而不会破坏你网站的布局。如今 BBCode 几乎已成为一种标准，因为大多数论坛都实现了这种标签约定。
+
+这里有一个 BBCode 的简单示例：
+
+```
+This is an example of a BBCode link to [url=http://www.sitepointforums.com/]sitepointforums[/url]
+```
+
+当文本在论坛上显示时，这是论坛软件生成的代码。
+
+```
+This is an example of a BBCode link to <a href="http://www.sitepointforums.com/">sitepointforums</a>
+```
+
+BBCode 相比 PHP 内置的`strip_tags`函数（你在“我如何解决 HTML 文档中的文本内容问题？”中见过它）的优势在于，BBCode 让你对显示的内容有完全控制。BBCode 允许你的网站成员有一定的能力来格式化他们添加到网站的内容，而不会影响整体布局。
+
+> 正则表达式允许你定义复杂的模式来在 PHP 字符串中进行搜索。正则表达式是一个复杂的课题，可以成为（并且已经成为）一整本书的主题。如果你感兴趣探索该主题，在“延伸阅读”章节中提供了参考。
+
+如果你读过本书之前的一些解决方案，就会知道我提倡在 PHP 中使用类。这个解决方案给了我机会来充分说明这一点，因为我们选择了一个开源类，使实现 BBCode 系统变得简单。
+
+所涉及的类名为 BBCode，由 Leif K-Brooks 开发，可以在 PHP Classes[4] 获取。该类满足了你在几乎所有 BBCode 需求，并提供了本书所需的代码。它在 PHP 许可证[5] 下授权。
+
+该类最重要的方法是`add_tag`方法。它接受一个关联数组作为参数，该数组可以包含最多六个描述相关标签的键。让我们来看`add_tag`方法实际运行的一些示例。
+
+以下示例代表 BBTag, [b]：
+
+```php
+$this->bbcode->add_tag(
+    array(
+        'Name'      => 'b',
+        'HtmlBegin' => '<span style="font-weight: bold;">',
+
+
+
+`'HtmlEnd' => '</span>'`
+
+);
+
+```
+
+标签的 `Name` 是`b`。数组中的 `HtmlBegin` 和 `HtmlEnd` 键定义了转换后的 BBTags 将被使用的 HTML 开始和结束标签。
+
+以下设置了另一个 BBTag，`[link]`：
+
+```php
+$this->bbcode->add_tag(
+    array(
+        'Name'      => 'link',
+        'HasParam'  => TRUE,
+        'HtmlBegin' => '<a href="%%%%%">',
+        'HtmlEnd'   => '</a>'
+    )
+);
+```
+
+这段代码注册了另一个键 `HasParam`，它告诉类这个 BBTag 有一个将显示在转换文本中的单个属性。同时注意 `HtmlBegin` 的值。这里使用字符串 `%%%%%` 来标识参数应该放置的位置。
+
+> [4] http://www.phpclasses.org/browse.html/package/951.html  
+> [5] http://www.php.net/license/2_02.txt
+
+在创建 `size` 标签的示例中，我们看到了一个新的键。`ParamRegex` 定义了参数必须符合的正则表达式；在这种情况下，它是一个对应字体大小的数字。代码如下：
+
+```php
+$this->bbcode->add_tag(
+    array(
+        'Name'       => 'size',
+        'HasParam'   => TRUE,
+        'HtmlBegin'  => '<span style="font-size: %%P%%pt;">',
+        'HtmlEnd'    => '</span>',
+        'ParamRegex' => '[0-9]+'
+    )
+);
+```
+
+最后一个示例演示了数组的所有实际用法，并引入了 `ParamRegexReplace` 键，它可以用于修改参数。在这种情况下，它允许诸如`[color=c5c6c7]`这样的 BBTag 变为`<span style="color:#c5c6c7;">`：
+
+```php
+$this->bbcode->add_tag(
+    array(
+        'Name'               => 'color',
+        'HasParam'           => TRUE,
+        'ParamRegex'         => '[A-Za-z0-9]+',
+        'HtmlBegin'          => '<span style="color: %%P%%;">',
+        'HtmlEnd'            => '</span>',
+        'ParamRegexReplace'  => '#%s'
+    )
+);
+```
+
+## 第 5 章：文本处理
+
+```php
+* @access public
+
+/*
+function WordFilter($badWords)
+{
+    $badWords = array() * 1000000;
+    srand((float)microtime() * 1000000);
+    $censors = array('$', '@', '#', ''', '£');
+
+    foreach ($badWords as $badWord) {
+        $badWord = preg_quote($badWord);
+        $replaceStr = '';
+        $size = strlen($badWords);
+
+        for ($i = 0; $i < $size; $i++) {
+            shuffle($censors);
+            $replaceStr .= $censors[0];
+        }
+
+        $this->badWords[$badWord] = $replaceStr;
+    }
+}
+
+/**
+* 在文本中搜索敏感词并进行过滤
+* @param string text 需要过滤的文本
+* @return string 过滤后的文本
+* @access public
+*/
+function filter($text)
+{
+    foreach ($this->badWords as $badWord => $replaceStr) {
+        $text = preg_replace('/' . $badWord . '/i', $replaceStr, $text);
+    }
+
+    return $text;
+}
+```
+
+如果你对构造函数感到好奇，它的思路是创建一个随机字符串来替换每个单词——仅仅是为了好玩。请注意，我使用了 `preg_quote` 来确保敏感词不会被解释为正则表达式语法。
+
+现在，我非常厌恶“小睡布丁”（Teletubbies™）。事实上，每一提到“Tubby”这个词就会让我大发雷。通过运行这个类，我可以从我的网站中剔除所有关于“Tubby”内容的讨论：
+
+```php
+<?php
+
+// 引入单词过滤器
+// require_once 'TextManipulation/WordFilter.php';
+
+// 需要替换的单词数组
+$badWords = array('tele', 'tubby', 'byebye');
+
+// 引入包含敏感词列表的单词过滤器
+$wordFilter = new WordFilter($badWords);
+
+// $text 模拟来自数据库的一些数据
+$text = 'Time for teletubbiies! I like tubbies so much. ByeBye!';
+
+// 过滤单词
+$text = $wordFilter->filter($text);
+
+echo $text;
+
+?>
+```
+
+我得到了什么？
+
+`Time for ££*£#*£#*@! I like ££*£*@ so much. £$$#$!`
+
+世界现在变得更安全了。
+
+## 我如何验证提交的数据？
+
+验证字符串通常很重要。你如何确保用户通过表单提交的数据是其预期的类型——例如，URL 或电子邮件地址？确保用户提供的值是符合要求的是一个常见问题。幸运的是，有 `PEAR::Validate` 可用，这可以避免你重复轮子。这里使用的版本是 `0.2.0`。`PEAR::Validate` 提供了一个主类，用于验证 Web 应用中常见的字符串和值，以及许多不断增加的相关类用于处理英国邮政编码和美国社会安全码。
+
+在每个类中都有一组静态方法（无需实例化类对象即可调用的方法），用于验证特定值。查找可用内容的最好方法是查看源代码，因为这仍然是一个相当较新的包，文档较少。使用 PHPDocumentor 解析文件以生成 API 文档（有关 PHPDocumentor 的更多信息，请参阅第二卷第 6 章）。
+
+## 第 5 章：文本处理
+
+这里是我们如何使用主类 `Validate` 中的三个方法（`name`、`email` 和 `url`）来验证表单数据：
+
+文件：11.php（节选）
+
+```php
+<?php
+
+// 引入 PEAR::Validate
+require_once 'Validate.php';
+
+// 如果需要，引入去除引号的文件
+require_once 'MagicQuotes/strip_quotes.php';
+
+// 初始化错误数组
+$errors = array('name' => '', 'email' => '', 'url' => '');
+
+// 如果提交了表单...
+if (isset($_POST['submit'])) {
+
+    // 定义姓名字段的格式化选项
+    $name_options = array(
+        'format'     => VALIDATE_ALPHA . VALIDATE_SPACE,
+        'min_length' => 5
+    );
+
+    // 验证姓名
+    if (!Validate::string($_POST['name'], $name_options)) {
+        $errors['name'] = ' class=error';
+    }
+
+    // 验证邮箱
+    if (!Validate::email($_POST['email'])) {
+        $errors['email'] = ' class=error';
+    }
+
+    // 验证 url
+    if (!Validate::url($_POST['url'])) {
+        $errors['url'] = ' class=error';
+    }
+}
+?>
+```
+
+首先，我们引入 `PEAR::Validate` 以及处理魔术引号（magic quotes）的自定义代码。然后，在测试表单已提交后，我们调用验证方法来检查字段。第一个检查是查看姓名字段是否为仅包含字母表或空格字符的字符串，且长度至少为五个字符（这是通过 `$name_options` 数组定义的）。
+
+接下来，我们只需要调用 `Validate::email` 和 `Validate::url` 来检查通过表单提交的邮箱和 URL 字段。注意，如果我们将 `TRUE` 作为第二个参数，`PEAR::Validate` 将检查最近的匹配项。以下是其本身的代码：
+
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>PEAR::Validate</title>
+
+    <style>
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+
+        .userinfo {
+            font-family: verdana;
+            font-size: 12px;
+            margin: 10px;
+        }
+
+        legend {
+            float: left;
+            margin: 5px;
+        }
+
+        span {
+            float: right;
+            width: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="userinfo" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+        <legend>输入详情</legend>
+
+        <div>
+            <label>姓名:</label>
+            <input type="text" name="name" value="<?php echo @POST['name']; ?>" />
+            <?php if ($errors['name']) {><span class="error"></span><?php endif; ?>
+        </div>
+
+        <div>
+            <label>邮箱:</label>
+            <input type="text" name="email" value="<?php echo @POST['email']; ?>" />
+            <?php if ($errors['email']) {><span class="error"></span><?php endif; ?>
+        </div>
+
+        <div>
+            <label>网站:</label>
+            <input type="text" name="url" value="<?php echo @POST['url']; ?>" />
+            <?php if ($errors['url']) {><span class="error"></span><?php endif; ?>
+        </div>
+
+        <div>
+            <input type="submit" name="submit" value="发送" />
+        </div>
+    </form>
+</body>
+</html>
+```
+
+构建表单时，我们使用 `$errors` 数组和一些 CSS 来高亮标签。这让用户知道他们的输入部分无效，如图 5.2 所示。
+
+## 图 5.2 PEAR::Validator 的运行
+
+| 姓名 | |
+| --- | --- |
+| Joe Bloggs | |
+| 邮箱 | noemail |
+| 网站 | http://google.com |
+
+## 我如何验证提交的数据？
+
+在此示例中，值得注意的是输出变量时使用了 `@` 运算符：
+
+```php
+<?php echo @POST['url']; ?>
+```
+
+## 我如何过滤提交的数据？
+
+我们采用的过滤策略遵循“拒绝所有未明确允许的内容”这一原则。为了我们，我们仍然使用 `strip_tags` 函数消除除小部分 HTML 以外的所有内容。然后，我们将使用原生 XML SAX 扩展来解析剩余内容，从而检查这些内容。注意，第二卷第 2 章对 SAX 扩展有详细说明。在这里我将使用一个简单的类来允许某些标签。我们还将使用 `PEAR::Validate` 来检查链接的 `href` 属性。
+
+再次，将此转换为可重用组件的最佳方法是使用类：
+
+```php
+/**
+ * FormFilter<br />
+ * 用于检查 HTML 标签的类。<br />
+ * 注意：需要 PEAR::Validate
+ * @access public
+ * @package SPLIB
+ */
+class FormFilter
+{
+    /**
+     * 允许标签的字符串
+     * @access private
+     */
+```
+
+## 第 5 章：文本处理
+
+```php
+/**
+ * @var string
+ */
+var $allowedTags = '<a><b><strong><i><em><u>';
+
+/**
+ * 原生 XML 解析器实例
+ * @access private
+ * @var resource
+ */
+var $parser;
+
+/**
+ * 允许的标签字符串
+ * @access private
+ * @var string
+ */
+var $post = '';
+
+/**
+ * 用于存储任何 XML 错误字符串
+ * @var string
+ */
+var $error = '';
+
+/**
+ * 构造 FormFilter
+ * @access public
+ */
+function FormFilter()
+{
+    $this->parser = xml_parser_create();
+    xml_set_object($this->parser, $this);
+    xml_set_element_handler($this->parser, 'open', 'close');
+    xml_set_character_data_handler($this->parser, 'data');
+}
+
+/**
+ * 过滤数据
+ * @param string data 需要过滤的数据
+ * @return string 过滤后的数据
+ * @access public
+ */
+function filter($post)
+{
+    $this->post = '';
+}
+```
+
+### 如何过滤掉不必要的 HTML 代码？
+
+```php
+$post = strip_tags($post, $this->allowedTags);
+$post = '<?xml version="1.0"?><post>' . $post . '</post>';
+
+if (!@xml_parse($this->parser, $post, true)) {
+    $this->error_string = 'Post 数据格式不正确：' .
+        xml_error_get_code($this->parser) .
+        ' 行 ' .
+        xml_get_current_line_number($this->parser);
+
+    return false;
+}
+
+return $this->post;
+```
+
+```php
+/**
+ * 返回任何 XML 错误
+ * @return string XML 错误
+ * @access public
+ */
+function getFilter()
+{
+    return $this->error;
+}
+```
+
+在我们的 `FormFilter` 类的构造函数中，我们必须做的第一件事是创建一个原生 Expat 解析器的实例，并告诉它要使用哪些回调函数（关于这一点将在第二卷第 2 章中详细介绍）。接着，我们提供了 `filter` 方法来“筛选”包含 HTML 的字符串。
+
+首先，我们剥离除 `$allowedTags` 成员变量中定义的标签以外的所有内容。我们需要在字符串的开头加上 XML 处理指令，并确保根节点被包裹在一个根 XML 节点中；这样做是为了确保解析器不会因为字符串格式不正确而报错。
+
+如果我们在解析过程中遇到问题，错误消息将存储在本地，并通过 `getFilter` 方法提供。一旦解析完成，我们将 `$post` 返回给调用 `filter` 方法的代码。
+
+真正的工作发生在 XML 处理器中：
+
+```php
+/**
+ * Sax 开启标签处理器
+ * @param XML_HTMLSax
+ * @param string tag 标签名
+ * @param array attributes 属性
+ * @return void
+ * @access private
+ */
+function open(&$parser, $tag, $attrs)
+{
+    switch ($tag) {
+    case 'A':
+        if (isset($attrs['HREF']) &&
+```
+
+
+
+`Validate::url($attrs['HREF'])) {`
+
+```php
+$this->post .= '<a href="' . $attrs['HREF'] . '" target="_blank">';
+```
+
+```php
+} else {
+    $this->post .= '<a href="javascript;" target="_blank">';
+}
+```
+
+```php
+break;
+
+case 'B':
+
+case 'STRONG':
+
+$this->post .= '<strong>';
+
+break;
+
+case 'I':
+
+case 'EM':
+
+$this->post .= '<em>';
+
+break;
+```
+
+```php
+}
+
+/**
+ * Sax 结束标签处理器
+ *
+ * @param XML_HTMLSax
+ * @param string tag 标签名
+ * @param array attributes 属性
+ * @return void
+ * @access private
+ */
+function close(&$parser, $tag)
+{
+    switch ($tag) {
+    case 'A':
+        $this->post .= '</a>';
+        break;
+
+    case 'B':
+
+    case 'STRONG':
+        $this->post .= '</strong>';
+        break;
+
+    case 'I':
+
+    case 'EM':
+        $this->post .= '</em>';
+        break;
+    }
+}
+
+/**
+ * Sax 数据处理器
+ *
+ * @param XML_HTMLSax
+ * @param string data 标签内部的数据
+ * @return void
+ * @access private
+ */
+function data(&$parser, $data)
+{
+    $this->post .= $data;
+}
+```
+
+`处理器`方法会在解析器读取文档时被调用。查看`open`方法，你可以看到我们如何处理标签名。特别是当我们接收到一个标签时，我们通过`Validate::Validate`来检查 URL 是否有效。请注意，我们正在将`b`和`i`转换为`strong`和`em`。我们遇到的任何未在此处标识的属性都将被直接丢弃。
+
+请注意，对于`strip_tags`的这种用法，实际上处理器方法也会忽略任何未标识的标签。当然，我们在这里仅限制在几个 HTML 标签上。处理其他标签——例如——需要更复杂的代码，这增加了我们可能允许非预期 HTML 标签的风险。`strip_tags`函数充当了我们的保险策略。
+
+使用 XML 的一个好处是，我们要求用户提交格式良好的数据。这样做的处是，例如未关闭的`a`标签会被接受。这意味着某些标签（如`br`，如果允许的话）如果不是按照标准编写将会引起问题。
+
+这里是该类的实际运行示例：
+
+```php
+<?php
+
+// 引入 PEAR::Validate
+require_once 'Validate.php';
+
+// 引入 PEAR::XML_HTMLSax
+require_once 'TextManipulation/FormFilter.php';
+
+// 如果需要，引入用于去除引号的文件
+require_once 'MagicQuotes/strip_quotes.php';
+
+// 如果提交了表单...
+if (isset($_POST['submit'])) {
+    // 实例化表单过滤器
+    $formFilter = new FormFilter();
+
+    // 过滤消息
+    if ($filtered_message = $formFilter->filter($_POST['message']))) {
+        $filtered_message = $formFilter->getError();
+    }
+}
+?>
+
+<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>表单 HTML 过滤器</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body>
+    <p>添加评论：</p>
+
+    <form action="<?php echo $_SERVER['SELF']; ?>" method="POST">
+        <textarea cols="40" rows="5" name="message"></textarea><br />
+        <input type="submit" value="Post" />
+    </form>
+
+    <p>你的消息：</p>
+
+<?php
+if (isset($filtered_message)) {
+    echo htmlspecialchars($filtered_message);
+}
+?>
+
+</body>
+</html>
+```
+
+你通常会在应用程序中遇到这些类型的问题；它们让操作变得更容易，例如对列表排序或比较两个日期。作为一名 PHP 开发者，你可能会遇到基本上两种类型的时间戳——Unix 时间戳和 MySQL 时间戳。
+
+## Unix 时间戳（Unix Timestamps）
+
+Unix 时间戳通常是处理日期最有效的方法——它们是解决棘手问题的简单方案。Unix 时间戳反映了自 1970 年 1 月 1 日 00:00:00 GMT 以来经过的秒数。将日期转换为 Unix 时间戳可以让日期和时间相关的计算变得简单。
+
+Unix 时间戳的缺点是，除非你是天才神童，否则它们不是人类可读的；如果我告诉你 1047994036 是自 1970 年 1 月 1 日以来经过的秒数，你能告诉我那是哪一天吗？
+
+Unix 时间戳的另一个问题是，它们只能在有限日期范围内使用，这取决于你的操作系统。在基于 Linux 的系统中，你应该能够追溯到 1902 年左右，并可以一直到 2037 年。在基于 Windows 的操作系统上，限制可能接近 1970 年 1 月 1 日。
+
+问题在于数字的大小。任何操作系统都可以轻松处理达到特定大小的数字（对于 32 位操作系统为 2³²，即 4,294,967,296），之后它必须花费更大的精力来处理超大数字。为了效率，操作系统通常在日期和时间等重要取值上隐含这种“最大”大小。
+
+Linux 允许对日期使用负值，因此你可以处理 1970 年 1 月 1 日之前的日期，而 Windows 上的 PHP 会对此类日期报错。我想说的是，在 2038 年 1 月 19 日左右存在另一个类似于 Y2K 的问题，它将影响所有仍然存在的 32 位操作系统。在 Google 上搜索该内容，你就会明白我的意思是……
+
+虽然 2038 年还很遥远，而且时间戳问题产生的影响可能比你选择起搏器的影响要大，但如果你正在计划一个需要处理过去或未来日期的应用程序（可能是在历史网站上），这值得记住。PHP 函数如`time`和`mktime`有助于处理 Unix 时间戳。要查看该问题的实际效果，请尝试在尽可能多的操作系统上运行以下脚本：
+
+```php
+<?php
+
+echo '1 Jan 1899: ' . mktime(0, 0, 0, 1, 1, 1899) . '<br />';
+
+echo '1st Jan 1902': . mktime(0, 0, 0, 1, 1902) . '<br />';
+
+echo '1st Dec 1969': . mktime(0, 0, 0, 12, 1969) . '<br />';
+
+echo '1st Jan 1970': . mktime(0, 0, 0, 1, 1970) . '<br />';
+
+echo '1st Jan 2037': . mktime(0, 0, 0, 1, 2037) . '<br />';
+
+echo '1st Jan 2038': . mktime(0, 0, 0, 1, 2038) . '<br />';
+
+echo '19th Jan 2038': . mktime(0, 0, 0, 19, 2038) . '<br />';
+
+echo '20th Jan 2038': . mktime(0, 0, 0, 20, 2038) . '<br />';
+
+?>
+```
+
+取决于你的操作系统，特别是在 Windows 上，这可能会生成一系列不同的警告。需要注意的 Unix 时间戳的另一点是它们的长度不同；1970 年 1 月 2 日显然会比现代时间戳短。在将 Unix 时间戳存入数据库时，大小为 10 的列（`INT`）应该足够让你的应用程序运行接下来的 20 多年（假设它不是 32 位操作系统）。
+
+## MySQL 时间戳（MySQL Timestamps）
+
+MySQL 时间戳比 Unix 时间戳更简单。通用格式为`YYYY-MM-DD HH:MM:SS`，通常存储在类型为`DATETIME`的列中（注意还有`DATE`和`TIME`列，分别只存储`YYYY-MM-DD`和`HH:MM:SS`）。
+
+对于简单的排序和比较操作，这种格式的时间戳是完美的，并且具有人类可读的优点。它们具有可预测的长度（直到到达 9999 年），这使得它们更容易验证。
+
+缺点是，在涉及复杂的日期操作时，你仍然面临问题。例如，如果你要按周分组数据，你可能需要将 MySQL 时间戳转换为 Unix 时间戳来实现。对我个人而言，两者相比，我更倾向于使用 Unix 时间戳在 MySQL 中存储信息，但我在这里提供两者的示例，并将选择权交给你。
+
+## 实战应用（Timestamps in Action）
+
+为了查看 Unix 时间戳的实际效果，假设列不存在，我们首先需要使用以下命令修改`articles`表：
+
+```sql
+ALTER TABLE articles ADD published INT(10) UNSIGNED DEFAULT 0 NOT NULL
+```
+
+注意，我们将`published`列设为`UNSIGNED`，因为要插入任何发生在 1970 年 1 月 1 日之前的日期。
+
+```php
+<?php
+
+// Include MySQL
+require_once 'MySQL.php';
+
+$host = 'localhost'; // Hostname
+$user = 'harry'; // Username
+$pass = 'secret'; // Password
+$dbName = 'site'; // Database name
+
+// Instantiate connection
+$db = new MySQL($host, $user, $pass, $dbName);
+
+// Get current time
+$now = time();
+
+// Timestamp for last week
+$lastWeek = mktime(0, 0, 0, date('m'), date('d') - 7, date('Y'));
+
+// A query to create article
+$sql = "INSERT INTO articles (title, body, author, published)
+VALUES ('Test Article', 'This is...', 'Harry', '$now')";
+
+// Perform the query
+$result = $db->query($sql);
+
+if ($result->isError()) {
+    echo 'Problem: ' . $result->isError();
+} else {
+    echo 'Article inserted';
+}
+
+// Fetching the newest articles
+$sql = "SELECT * FROM articles WHERE published > '$lastWeek' ORDER BY published DESC LIMIT 10";
+
+result = $db->query($sql);
+
+while ($row = $result->fetch()) {
+    echo $row['title'] . ': ' . date('F, Y', $row['published']) . '<br/>';
+}
+
+?>
+```
+
+## `date('d') - 7`
+
+`date('d')`返回今天日期的部分（再次，该函数的文档页面 [2] 值得你关注），减去七会让我们回到一周前。你可能注意到今天是本月的 1 号，减去七会得到日期“6”。幸运的是，`mktime`能够理解这种意图；它会正确调整月份并从上个月的总天数开始倒数。
+
+如果你对最高性能感兴趣且不介意自己计算，可以使用以下方法实现相似的效果：
+
+```php
+$lastWeek = time() - 24 * 3600;
+```
+
+或者更简单：
+
+```php
+$lastWeek = time() - 604800;
+```
+
+稍后我们将使用`date()`结合数据库中的 Unix 时间戳，为该时间戳创建一个人类可读的日期：
+
+```php
+date('F j, Y', $row['published'])
+```
+
+2003 年 3 月 18 日
+
+[2] http://www.php.net/date
+
+¹ 区别在于，使用`mktime`你可以指定在一周以前午之后发布的文章，而替代方法查找的是在一周前当前时间发布的文章。在许多应用程序中，这种区别可能是学术上的。
+
+# 第 6 章：日期与时间
+
+```php
+<?php
+
+// MySQL类
+require_once 'Database/MySQL.php';
+
+$host = 'localhost'; // MySQL服务器主机名
+$dbUser = 'harry'; // MySQL 用户名
+$dbPass = 'secret'; // 用户密码
+$dbName = 'sitepoint'; // 数据库名称
+
+// MySQL连接
+$db = &new MySQL($host, $dbUser, $dbPass, $dbName);
+
+// 选择文章
+$sql = "SELECT
+    *
+    DATE_FORMAT(published,'%M %e, %Y') as published
+FROM articles
+WHERE published > UTC_TIMESTAMP() - INTERVAL 7 DAY
+ORDER BY published DESC";
+
+// 执行查询
+$result = $db->query($sql);
+
+while ($row = $result->fetch()) {
+    echo $row['title'] . ' : ' . $row['published'] . ' <br />';
+}
+
+?>
+```
+
+注意，我们使用了 MySQL 的`DATE_FORMAT`来格式化用于在页面上显示的日期，而在上一个示例中，格式化是由 PHP 脚本完成的。我们还使用了 MySQL 的`UTC_TIMESTAMP`函数和`INTERVAL`来选择我们寻找的日期。
+
+这个示例展示了我之所以倾向于将日期/时间值存储为 Unix 时间戳的几个原因：
+
+- 我喜欢 SQL 语句尽可能简单。
+- 在 PHP 中调试错误通常比在 SQL 语句中调试要容易得多。
+
+> [3] http://www.mysql.com/doc/en/Date_and_time_functions.html
+
+MySQL 日期/时间功能的许多细节取决于数据库，无法很好地迁移到其他数据库。
+
+你的数据库应该负责跟踪你的数据并对其进行显示所需的格式化。
+
+当你使用 MySQL 时间戳时，通常需要依赖 MySQL 的内置函数来完成部分工作。让我给你看另一个遭受“复杂性症候”的示例。
+
+假设你想显示一个统计数据，告诉你在网站最后一篇文章是多久前发布的。要做到这一点，你需要计算今天日期与最后篇文章发布日期之间的天数“距离”（而不是差值）。MySQL 可以做到这一点：
+
+```sql
+SELECT TO_DAYS(NOW()) - TO_DAYS(published)
+FROM articles
+ORDER BY published DESC
+LIMIT 1
+```
+
+这看起来可能还好，但 SQL 语句正变得越来越复杂。如果我将数据存储为 Unix 时间戳，查询将是这样的：
+
+```sql
+SELECT published
+FROM articles
+ORDER BY published DESC
+LIMIT 1
+```
+
+然后，在 PHP 中显示结果时，我将使用：
+
+```php
+$daysAgo = floor((time()) - $row['published']) / 86400;
+```
+
+
+
+`86400` 是一天的秒数；`floor` 函数用于将小数向下取整到其整数值。
+
+当然，你可能不同意在 PHP 中处理这些更简单，在这种情况下，我完全鼓励你探索 MySQL 的日期处理功能。归到底，Unix 时间戳和 MySQL 时间戳可以实现相同的目的；你倾向于哪种取决于喜好。
+
+## 我如何解决常见的日期问题？
+
+考虑一下我们每次面对日历时，大脑所做的计算类型：
+
+> “我希望在 3 月 3 日之前完成……那只有五天了！”
+
+显然，处理日期不仅仅是简单地按重要性顺序组织数据或显示单个数据。在这一解决方案中，我们将查看你在处理日期和时间时可能会遇到的一些常见问题。特别是，我们将看到如何处理：
+
+- 星期几
+- 一年的第几周
+- 一年的几天
+- 一个月的天数
+- 闰年
+
+在此过程中，我们将构建一个可以在你应用程序中轻松复用的类。
+
+以下代码为该类奠定了基础：
+
+```php
+<?php
+
+/**
+ * 用于解决常见日期问题的 DateMath 类
+ * @package SPLIB
+ */
+class DateMath
+{
+    /**
+     * Unix 时间戳
+     * @access private
+     * @var int
+     */
+    var $timeStamp;
+
+    /**
+     * DateMath 构造函数
+     * 如果未提供参数，DateMath 使用当前时间
+     *
+     * $DateMath = new DateMath(2003, 8, 22); // 使用 2003 年 8 月 22 日
+     * $DateMath = new DateMath(); // 使用当前日期时间
+     *
+     * @param int year 年（例如 2003）
+     * @param int month 月份（例如 8 代表 8 月）
+     * @param int day 日（例如 22）
+     * @param int hours 小时（例如 15）
+     * @param int minutes 分钟（例如 5）
+     * @param int seconds 秒（例如 7）
+     */
+    function DateMath(
+        $y = NULL,
+        $m = NULL,
+        $d = NULL,
+        $h = NULL,
+        $i = NULL,
+        $s = NULL
+    ) {
+        $time = time();
+
+        $y = is_numeric($y) ? $y : date('Y', $time);
+        $m = is_numeric($m) ? $m : date('m', $time);
+        $d = is_numeric($d) ? $d : date('d', $time);
+        $h = is_numeric($h) ? $h : date('H', $time);
+        $i = is_numeric($i) ? $i : date('W', $time);
+        $s = is_numeric($s) ? $s : date('s', $time);
+
+        $this->timeStamp = mktime($h, $i, $s, $m, $d, $y);
+    }
+
+    /**
+     * 设置时间戳
+     * @param int timestamp 时间戳
+     * @return void
+     */
+    function setTimestamp($timeStamp)
+    {
+        $this->timeStamp = $timeStamp;
+    }
+}
+```
+
+## 闰年
+
+- 3 月有 31 天
+- 4 月有 30 天
+- 5 月有 31 天
+- 6 月有 30 天
+- 7 月有 31 天
+- 8 月有 31 天
+- 9 月有 30 天
+- 10 月有 31 天
+- 11 月有 30 天
+- 12 月有 31 天
+
+注意，当 `DateMath` 中存储的日期处于闰年时，该方法将正确报告 2 月为 29 天。提到闰年……
+
+## 闰年
+
+并不是每年都是相同的，如果你不幸出生在 2 月 29 日，你一定也很清楚：每年都会多出一天，但偶尔会有例外。为了识别闰年，我可以利用 `daysInMonth` 方法创建一个新方法；该方法将检查 2 月并利用它来判断该年份是否为闰年：
+
+文件：`DateTime/DateMath.php`（在 SPLIB 中，节选）
+
+```php
+/**
+ * 判断当前年份是否为闰年
+ * @return boolean 如果是闰年返回 true
+ * @access public
+ */
+function isIsLeapYear()
+{
+    return date('L', $this->timeStamp);
+}
+```
+
+再次，我们是在 PHP `date` 函数的一个冷门功能周围封装了一个方便的包。
+
+让我们看看它是如何工作的：
+
+> ³ 能被 4 整除的年份是闰年，但能被 100 整除却不能被 400 整除的年份除外。因此，1700、1800、1900 和 2100 年不是闰年，但 1600、2000 和 2400 年是闰年。
+
+# 第 6 章：日期与时间
+
+```php
+<?php
+
+// 引入 DateTimeMath 类
+require_once 'DateTime/DateTimeMath.php';
+
+// 构建一个未来十年的数组
+$thisyear = date('Y');
+$years = range($thisyear, $thisyear + 10);
+
+// 寻找闰年
+foreach ($years as $year) {
+    $dateMath = new DateTimeMath($year, 1, 1, 0, 0);
+
+    if (!$dateMath->isLeapYear()) {
+        echo $year . ' 不是闰年<br/>';
+    } else {
+        echo $year . ' 是闰年!<br/>';
+    }
+}
+?>
+```
+
+此代码识别了未来十年中哪些年份是闰年，哪些不是：
+
+```text
+2003 不是闰年
+2004 是闰年！
+
+2005 不是闰年
+2006 不是闰年
+2007 不是闰年
+2008 是闰年！
+
+2009 不是闰年
+2010 不是闰年
+2011 不是闰年
+2012 是闰年！
+
+2013 不是闰年
+```
+
+# 一年的第几天
+
+日期的另一个功能告诉我们现在是一年的第哪天：
+
+```php
+/**
+ * 返回一年中的第几天
+ * @return int 一年中的数字日期，例如 81
+ * @access public
+ */
+function dayOfYear()
+{
+    return date('z', $this->timeStamp) + 1;
+}
+```
+
+这可以简单地应用于确定 2005 年 3 月 22 日是该年的第 81 天：
+
+```php
+<?php
+
+// 引入 DateMath 类
+require_once 'DateTime/DateMath.php';
+
+// 实例化 2003 年 3 月 22 日的 DateMath 类
+$dateMath = new DateMath(2003, 3, 22, 0, 0, 0);
+
+echo '2003年3月是年的第 ' . $dateMath->dayOfYear() . ' 天';
+
+?>
+```
+
+# 月的第一天
+
+这是一个非常有用的信息，特别是在构建日历时，可以确定每月第一天是星期几：
+
+```php
+/**
+ * 返回每月第一天的星期几
+ * @param boolean 如果为 true，返回的值将是数字星期几
+ * @return mixed 例如 1 或 Monday
+ * @access public
+ */
+function firstDayInMonth($numeric = false)
+{
+    $firstDay = mysqli(
+        0,
+        0,
+        0,
+        date('m', $this->timeStamp)
+    ), 1, date('Y', $this->timeStamp));
+
+    if ($numeric) {
+        return date('w', $firstDay);
+    } else {
+        return date('l', $firstDay);
+    }
+}
+```
+
+为了双重检查，2003 年 3 月应该从星期六开始：
+
+```php
+<?php
+
+// 引入 DateMath 类
+require_once 'DateTime/DateMath.php';
+
+// 实例化 2003 年 3 月 22 日的 DateMath 类
+$dateMath = new DateMath(2003, 3, 22, 0, 0);
+
+echo '3 月的第一天是星期' . $dateMath->firstDayInMonth() . '.';
+
+?>
+```
+
+你将在下一个解决方案中看到此方法的用法。
+
+# 语法的微调
+
+假设你想以英文格式打印月份中的日期，并带上后缀（例如 "January 1st, 2003"）。我们如何为数字确定合适的后缀呢？在这种情况下，内置的 `date` 函数通过其格式化提供了答案：
+
+```php
+// 获取带有后缀的月份日期
+$dayOfMonth = date('jS');
+```
+
+在 2 月 3 日，这会导致 `$dayOfMonth` 变为 '3rd'。然而，如果我们想对一个不是月份日期的数字应用后缀呢？"81st" 会更自然。我们需要一点小代码，在给定正整数的情况下提供正确的后缀。让我们将这段代码添加到 `DateMath` 类中：
+
+```php
+/**
+ * 为数字提供后缀，例如 22
+ * @static
+ * @param int 某个数字
+ * @return string 例如对于 22 返回 'nd'
+ * @access public
+ */
+function suffix($num)
+{
+    if ($num < 11 || $num > 13) {
+        $desc = array(
+            0 => 'th',
+            1 => 'st',
+            2 => 'nd',
+            3 => 'rd',
+            4 => 'th',
+            5 => 'th',
+            6 => 'th',
+            7 => 'th',
+            8 => 'th',
+            9 => 'th'
+        );
+
+        return $desc[$num % 10];
+    } else {
+        return 'th';
+    }
+}
+```
+
+注意，11、12 和 13 这些数字是特殊情况，代码中已进行了处理。这里是该方法的用法：
+
+```php
+<?php
+
+// 引入 DateMath 类
+require_once 'DateTime/DateMath.php';
+
+// 实例化 2003 年 3 月 22 日的 DateMath 类
+$dateMath = new DateMath(2003, 3, 22, 0, 0);
+
+echo '2003年3月22日是第' . $suffix($dateMath->dayOfYear()) . ' 天';
+
+?>
+```
+
+这告诉我们：2003 年 3 月 22 日是该年的第 81 天。
+
+## 如何构建日历？
+
+现在 `DateMath` 类已经准备就绪，有一些方法可以帮助我们构建日历。除了特定的日期相关问题，`DateMath` 已经解决了大部分问题。如果需要 HTML 格式，或者需要 XML 标记，我们就有问题了。解决这个问题的诀诀是将日历的构建与输出分开。
+
+简而言之，如图 6.1 中的 UML 图所示，示例中的所有类都从 `Calendar` 基类继承了大量功能。
+
+# 图 6.1：日历类 UML
+
+| Calendar | Year |
+| :--- | :--- |
+| +`timeStamp(in ts : boolean)` | +`build(in sDates : array) : boolean` |
+| +`getTime() : int` | |
+| +`setSelected(state : boolean = true) : void` | +`build(in sDates : array) : boolean` |
+| +`isSelected() : boolean` | +`buildWeekDays(in sDates : array) : boolean` |
+| +`build(inDates : array) : boolean` | +`buildWeeks(in sDates : array) : boolean` |
+| +`fetch() : mixed` | |
+| +`fetchAll() : array` | |
+| +`size() : int` | |
+| +`lastYear(in aSt : boolean = false) : int` | |
+| +`thisYear(in aSt : boolean = false) : int` | |
+| +`nextYear(in aSt : boolean = false) : int` | |
+| +`lastDay(in aSt : boolean = false) : int` | |
+| +`thisDay(in aSt : boolean = false) : int` | |
+| +`nextDay(in aSt : boolean = false) : int` | |
+| +`lastHour(in aSt : boolean = false) : int` | |
+| +`thisHour(in aSt : boolean = false) : int` | |
+| +`nextHour(in aSt : boolean = false) : int` | |
+| +`lastMinute(in aSt : boolean = false) : int` | |
+| +`thisMinute(in aSt : boolean = false) : int` | |
+| +`nextMinute(in aSt : boolean = false) : int` | |
+| +`lastSecond(in aSt : boolean = false) : int` | |
+| +`thisSecond(in aSt : boolean = false) : int` | |
+| +`nextSecond(in aSt : boolean = false) : int` | |
+
+## 第 6 章：日期与时间
+
+了解其如何工作的最简单方法是通过示例来看。
+
+下面的代码段展示了如何使用 `Year` 类来创建一个仅显示月份的简单日历的 `Month` 对象。
+
+首先，我们需要包含必要的类：
+
+文件：`12.php`（节选）
+
+```php
+<?php
+
+// 包含日历年份类
+require_once 'DateTime/Year.php';
+require_once 'DateTime/Month.php';
+```
+
+由于这是我们第一次使用规模较大的继承层次结构，我应该指出，这里包含的两个类——`Year` 和 `Month`——都执行了一些自己的操作。例如，它们都包含了它们的父类 `Calendar`。还包含一个 `TimeUnitValidator` 类，它负责检查由这些类创建的日期是否有效。所有这些类都应该作为上述两个类的结果透明地包含，你只需要确保相关类是可用的（如果不可，PHP 会通知你）。这里展示以及代码存档中的代码假设所有的日期/时间类都位于你 PHP include 路径中的某个目录下。
+
+接下来，我需要为 `_GET` 变量设置默认值，以决定日历的哪个部分被显示。如果通过 URL 未提供定义，我将它们设置为当前的年份和月份。并不要求使用这里出现的变量名；你可以调用任何你喜欢的。
+
+文件：`12.php`（节选）
+
+```php
+// 如果未设置，将 .GET 变量初始化为今年本月
+if (!isset($_GET['y'])) {
+    $_GET['y'] = date('Y');
+}
+
+if (!isset($_GET['m'])) {
+    $_GET['m'] = date('m');
+}
+```
+
+完成后，我们创建一个 `Year` 对象，并传递它代表的年份数字值（例如 2003）。紧随其后，我们创建一个数组并在其中放置一个 `Month` 对象。此数组被用于标识日历元素已被“选中”，我们将在实际操作中看到它的效果。
+
+文件：`12.php`（节选）
+
+```php
+// 创建一个新的 Year 对象
+$year = new Year($_GET['y']);
+
+$selectedMonths = array(
+```
+
+### 我如何构建在线日历？
+
+```php
+new Month($_GET['y'], $_GET['m'])
+);
+```
+
+最后，我们调用 `Year` 的 `build` 方法并传递选中的月份数组：
+
+```php
+// 指令 Year 构建 Month 对象
+$year->build($selectedMonths);
+```
+
+实际上是 `build` 方法指示 `Calendar` 的子类（`Second` 除外）构建它们的子类。这一点稍后会解释清楚。
+
+接下来，我们创建两个变量用于制作“上一个”和“下一个”链接，允许我们在年份之间进行导航：
+
+```php
+$prev = $_SERVER['PHP_SELF'] . "?year=" . $year->lastYear();
+$next = $_SERVER['PHP_SELF'] . "?year=" . $year->nextYear();
+```
+
+注意，我们使用 `Year` 的方法 `lastYear` 来获取上一个年份的数值，使用 `nextYear` 返回下年的值。然后，当我们开始构建日历输出的 HTML 时，我们使用 `thisYear` 来获取当前的值：
+
+```php
+// 开始构建 HTML
+```
+
+
+
+`$calendar = "<table>\n";`
+
+`$calendar .= "\n  <caption><a href=\"$prev\" class=\"nav\"></a>" . $year->thisYear() . "<a href=\"$next\" class=\"nav\"></a></caption>\n";`
+
+注意，向任何以单词 "this" 开头的方法（例如`thisYear`）传递`TRUE`将返回一个时间戳而不是数值的人类可读值。我们稍后会使用此功能。
+
+随着日历顶部的构建，我们可以开始使用`while`循环中的迭代器方法`fetch`来构建正文。`fetch`方法返回你正在处理的类的“子类”；例如，`Day`返回`Hours`，而`Minute`返回`Seconds`。
+
+文件：12.php（节选）
+
+```php
+while ($month = $year->fetch()) {
+    $calendar = "<tr>\n";
+    $link = $_SERVER['PHP_SELF'] ? "?y=" . $month->thisYear . "&m=" . $month->thisMonth();
+    if (!$month->isSelected()) {
+        $calendar = "<td><a href=\"$link\">" . date('F', $month->thisMonth(TRUE)) . "</a></td>\n";
+    } else {
+        $calendar = "<td class='selected'><a href=\"$link\">" . date('F', $month->thisMonth(TRUE)) . "</a></td>\n";
+    }
+    $calendar .= "</tr>\n";
+}
+$calendar .= "</table>\n";
+```
+
+> **重要** 在使用`fetch`方法之前必须调用`build`方法，否则`fetch`将返回`FALSE`。
+
+在循环本身中，你会注意到`isSelected`方法。这被用于修改“选中”月份的 HTML 格式，以便以某种方式对其高亮显示。
+
+此外，注意我们向`thisMonth`传递了布尔值`TRUE`。这告诉该方法返回一个某日的 Unix 时间戳，而不是数值；然后我们可以使用 PHP 的`date`函数将该时间戳重新格式化为相应月份的英文名称。
+
+现在我们构建了日历并将其放入字符串中，我们可以简单地将其“丢”进我们的 HTML 页面中……见奇——我们看到了一个显示该年份内月份的简单日历！输出如图 6.2 所示。
+
+**图 6.2 年中的月份**
+
+| 2003 |
+| --- |
+| 一月 |
+| 二月 |
+| 三月 |
+| 四月 |
+| 五月 |
+| 六月 |
+| 七月 |
+| 八月 |
+| 九月 |
+| 十月 |
+| 十一月 |
+| 十二月 |
+
+### 罗马日历
+
+你对可用方法有了大致了解，关于更实用的例子如何？下面的代码显示了一个日历，其中每一行代表一周——从开始，我们将使用时间戳构建上一个和下一个月份：
+
+文件：12.php（节选）
+
+```php
+<?php
+// 包含 Month 和 Day
+require_once 'DateTime/Month.php';
+require_once 'DateTime/Day.php';
+
+// 设置变量
+if (!isset($_GET['y'])) { $_GET['y'] = date('Y'); }
+if (!isset($_GET['m'])) { $_GET['m'] = date('m'); }
+if (!isset($_GET['d'])) { $_GET['d'] = date('d'); }
+
+// 实例化 Month
+$month = new Month($_GET['y']);
+
+// 获取 Month 的时间戳
+$last = $month->prevMonth(true);
+$next = $month->nextMonth(true);
+$thisMonth = $month->thisMonth(true);
+```
+
+```php
+// 为空日期显示一个空单元格
+} else {
+  $calendar = "<td class=\"cal_entry\">&nbsp;</td>";
+}
+
+// 如果是一周的结束，关闭行
+if ($day->isLast()) {
+  $calendar = "\n</tr>\n";
+}
+$calendar = "</table>";
+?>
+```
+
+`Day`类带有`isFirst`和`isLoading`方法，允许你识别由`buildWeekDays`构建的分别位于周初或周末的`Day`对象。
+
+`isEmpty`方法允许我们如上讨论的那样识别“空”日期。如果我们发现一个，就想要显示一个空的表格单元格。如果日期不是空的，我们必须检查它是否是“被选中”的日期，为此我们使用了`isSelected`方法。
+
+现在表格已经构建，我们只需要将其放入具有正确 CSS 定义的网页中；这将显示一个如图 6.3 所示的格式良好的表格。
+
+**图 6.3. 一个熟悉的月历**
+
+| 8月 | | | | | | 10月 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 周一 | 周二 | 周三 | 周四 | 周五 | 周六 | 周日 |
+| 06 | 07 | 08 | 09 | 10 | 11 | 12 |
+| 13 | 14 | 15 | 16 | 17 | 18 | 19 |
+| 20 | 21 | 22 | 23 | 24 | 25 | 26 |
+| 27 | 28 | 29 | 30 | | | | |
+
+## PHP 活事历
+
+到目前为止，我只使用了`Year`、`Month`和`Day`类。这适用于许多情况，但如果我们想构建一个内网网站（例如，人们可以查看自己的每日日程）呢？请看：`Hour`类。在下一个解决方案中，我们将制作上一个示例的新版本，但这次在月表格下方，我们将显示另一个包含小时的日表格。我们将在生成月历的代码下方添加以下代码。
+
+首先，使用来自`$_GET`变量的当前值创建一个新的`Day`对象。我们还需要初始化小时的`$_GET`变量（如果尚未设置），因为我们希望当前小时或用户选择的小时在日程表中高亮显示。
+
+文件：14.php（节录）
+
+```php
+// 创建新日期
+$day = new Day($_GET['y'], $_GET['m'], $_GET['d']);
+
+// 初始化当前小时
+if (!isset($_GET['h'])) $_GET['h'] = date('H');
+
+$sHours = array(new Hour($_GET['y'], $_GET['m'], $_GET['d'], $_GET['h']));
+
+// 构建该日的小时列表
+$day->build($sHours);
+
+$calendar = "<br />\n";
+$calendar = "<table width=\"450\">\n";
+$calendar .= "<caption>您的日程表 \n" . date('l', $day->thisDay(true)) . " \n</caption>\n";
+```
+
+由于这是一个应用程序，我们将限制显示的小时为早上到傍晚。你实际上已经看到了这里使用的其余方法。
+
+文件：14.php（节录）
+
+```php
+$alt = '';
+
+// 遍历小时
+while ($hour = $day->fetch()) {
+  // 设置小时范围；仅在早上 8 点到下午 6 点之间
+  if ($hour->thisHour() < 8 || $hour->thisHour() > 18) {
+    continue;
+  }
+
+  // 用于交替行颜色
+  $alt = $alt == "cal_row" ? "cal_row_alt" : "cal_row";
+
+  // 如果是当天，则高亮
+```
+
+```php
+if (!$hour->isSelected()) {
+  $calendar .= "<tr class=" . $alt . "\n";
+} else {
+  $calendar .= "<tr class=\"cal_current\">\n";
+}
+
+$calendar .= "<td align=\"right\">";
+
+// 在链接内显示小时
+$calendar .= "<a class=\"cal_entry\" href=\"" . $_SERVER['PHP_SELF'] . "?y=" . $hour->thisYear() . "&m=" . $hour->thisMonth() . "&d=" . $hour->thisDay() . "&h=" . $hour->thisHour() . "\"> \n" . date('g', a, $hour->thisHour(true)) . " </a></td>";
+
+$calendar .= "<td align=\"right\">";
+  "Timestamp is " . $hour->getTimeStamp() . "</td>";
+}
+$calendar .= "</tr>\n";
+$calendar = "</table>\n";
+```
+
+为了在每个条目旁显示一些信息，我添加了戳值。在实践中，你可以使用此值构建一个 SQL 查询，从用户的日记条中选择特定日期的记录，然后通过比较表格每行的时间戳值来检查应该显示哪些数据库结果。这将需要对结果集进行多次迭代的性能，这比为日程表中的每个小时执行新查询要好。`MySQLResult`类的`fetch`方法在每次到达末尾时都会自动返回查询集，允许你多次传递这些值。这是一个简化的示例，如何：
+
+# 我的时区是什么？
+
+要确定全球主要城市需要设置的值，请访问`http://www.bsdi.com/xdate/`
+
+但你如何更改环境，以便日期和时间函数能够显示你希望它们反映的特定时区的值呢？在 Linux 系统上，可以通过一种全局的方式轻松实现这一目标，即使用 PHP 的`putenv`函数为脚本执行设置系统的`TZ`变量：
+
+```php
+<?php
+echo 'Current time: ' . date('H:i:s O') . '<br />';
+putenv('TZ=Europe/London');
+echo 'New time: ' . date('H:i:s O');
+?>
+```
+
+# putenv 与信息服务 (IIS)
+
+请注意，在某些 Windows 服务器（特别是 Microsoft IIS）上，`putenv`函数仅影响当前脚本的执行，而不影响整个服务器进程。
+
+在上面的示例中，当你第一次调用脚本时将看到时区发生了变化，但此后你会看到两个`echo`语句显示相同的时区。要将服务器恢复到系统的默认时区，你必须重启服务器或再次使用`putenv`将`TZ`变量设置为原始值。
+
+在 Linux 服务器上，这将显示以下内容：
+
+```
+Current time: 09:31:10 EST -0500
+New time: 14:31:10 GMT +0000
+```
+
+通过使用`php.ini`设置`auto_prepend_file`，你可以将此更改应用到服务器上执行的每一个 PHP 脚本，确保日期或时间实例使用正确的时区。如果你无法更改`php.ini`，或者需要将更改限制在服务器上的特定站点或目录，请使用带有如下命令的`.htaccess`文件：
+
+```php
+php_value auto_prepend_file '/path/to/set_timezone.php'
+```
+
+在 Windows 系统上，就没这种运气了；如果你无法更改服务器的时区设置，将不得不通过 PHP 转换时区，这意味着你将无法直接调用日期和时间函数。
+
+# 如何为 PHP 脚本计时？
+
+当你发现自己正在用 PHP 构建更大、更复杂的应用程序时，了解你的代码对整体性能的影响通常是一个好主意；互联网总是很慢，特别是对于那些拨号连接，让你的访问者长时间等待不会鼓励他们再次光临。通过 PHP 的`microtime`函数可以轻松发现脚本执行需要多长时间：
+
+```php
+<?php
+function getMicroTime() {
+    list($usec, $sec) = explode(" ", microtime());
+    return (float)$usec + (float)$sec;
+}
+
+$start = getMicroTime();
+
+for ($i = 0; $i < 5; $i++) {
+    sleep(1);
+}
+
+echo 'Script time: ' . (getMicroTime() - $start);
+?>
+```
+
+上面的代码告诉我 "Script time: 4.999305008011"，这是一个以秒为单位的时间。`microtime`返回格式为`小数部分 整数部分`的字符串值。将此结果拆分并相加即可得到秒的浮点数。这种脚本计时方法仅涉及在脚本开始前记录时间，并在每次执行完成后再次记录一次。`microtime`函数用于提供足够精确的时间。
+
+如果你想构建一个站点内运行状况的蓝图，可以使用`php.ini`设置`auto_prepend_file`和`auto_append_file`来对所有脚本进行计时，或者使用如下的`.htaccess`文件：
+
+```php
+php_value auto_prepend_file '/path/to/script_start.php'
+php_value auto_append_file '/path/to/script_end.php'
+```
+
+# 如何用 PHP 调度批任务？
+
+结合我们在第 10 章将讨论的日志机制，这将允许你建立整个站点脚本性能的统计数据。
+
+# 如何用 PHP 调度批任务？
+
+能够使用`cron`任务是定期执行脚本的理想方式，无论你的站点正在发生什么。然而，如果你没有访问`cron`的权限，或者你在一个缺乏有效“批执行”工具的系统上运行 PHP，则存在另一种以伪 cron (pseudo-cron)[6] 形式存在的替代方案。如果你正在寻找 PHP 开发者天才之举的示例，再看这里就足够了！
+
+伪 cron 的工作原理是利用你站点上的正常访问在后台执行 PHP 脚本。特别巧妙的是，它使用一个行为看起来像图像的脚本来执行其他 PHP 脚本，而不影响访问者正在查看的页面性能。你只需要使用 HTML 标签将脚本插入到经常被查看的页面中。
+
+# 安装 Pseudo-cron
+
+我使用的伪 cron 版本是 1.22。如果你的`php.ini`设置`short_open_tag`为关闭，请确保你编辑伪 cron 的文件以提供完整的`<?php`标签。
+
+第一步是将 ZIP 文件复制到你站点的某个地方——理想情况下位于 Web 目录之外的目录，以防止潜在的安全风险。
+
+接下来，根据你的喜好编辑`pseudo-cron.inc.php`以下部分：
+
+```php
+$cronTab = '/home/username/pseudocron/cronjobs/crontab.txt';
+```
+
+```php
+$writeDir = '/home/username/pseudocron/cronjobs/';
+```
+
+```php
+$useLog = 1;
+```
+
+> Cron 是一个在 Unix 系统上运行的程序。它允许按计划调度任务。
+
+# 伪 cron (pseudo-cron) 日期和时间
+
+在 Unix 系统上设置任务，用户传统上一直使用 crontab。`cronTab`变量指向包含 crontab 的文件。`writeDir`指定写入位置。`useLog`设置为 1。
+
+| mi | h | d | m | job |
+|---|---|---|---|---|
+| 0 | 1 | * | * | /home/user/pseudo-cron/cronjobs/dbbackup.php |
+| 30 | 19 | * | * | /home/user/pseudo-cron/cronjobs/rssupdate.php |
+| 0 | 2 | * | * | /home/user/pseudo-cron/cronjobs/webstats.php |
+| 0 | 9 | * | * | /home/user/pseudo-cron/cronjobs/report.php |
+
+cron 格式需要一点学习，但在 Web 上有详的描述。在这种特殊情况下，第一个脚本`dbbackup.php`代表备份，每天运行。`rssupdate.php`脚本可能更新订阅，在每天 09:00 到 17:00 之间运行。最后，在每个月的第二天`report.php`会运行，发送有关站点的各种信息的报告。
+
+请注意，实际执行的伪 cron 不应放在用户可以直接访问的地方，否则你可能会在无意之外触发 cron 任务！
+
+此外，如果脚本需要超过默认的 30 秒完成，请使用`set_time_limit`或其他方法确保每个任务有足够的时间。
+
+设置好后，使用伪 cron 只需要在 HTML 中包含指向`imagecron.php`的“假图像”。例如：
+
+文件：17.php
+
+
+
+# 第 6 章：日期与时间
+
+## Pseudo-cron 示例
+
+```
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Pseudo-cron 示例</title>
+  <meta http-equiv="Content-Type"
+       content="text/html; charset=iso-8859-1" />
+</head>
+<body>
+  <p>这是一个伪 cron 的示例。</p>
+  <img src="/pseudo-cron/imagecron.php" /></p>
+</body>
+</html>
+```
+
+### 相关阅读
+
+- ADodb 日期时间和库：
+
+`http://php.weblogs.com/adodb_date_time_library`
+
+这篇文章侧重于扩展 Unix 时间戳的使用。
+
+- PHP 日期/时间处理：
+
+`http://www.devshed.com/Server_Side/PHP/DateTime`
+
+这是一篇深入介绍 PHP 日期和时间函数的优秀文章。
+
+- PHP 和 MySQL 的实用日期/时间示例：
+
+`http://www.devarticles.com/art/1/331/`
+
+- 红帽 Linux 定制指南第 28 章：自动化任务：
+
+`https://www.redhat.com/docs/manuals/linux/RHEL-9-Manual/custom-guide/ch-autotasks.html`
+
+红帽对 `cron` 的基础介绍。另请查看 `crontab`[11] 的手册页，以获取伪 `cron` 预期的调度文件格式的完整描述。
+
+> [11] `http://linux.ctyme.com/man/man0447.htm`
+
+# 第 7 章：图像
+
+构建网站不仅仅是显示 (X)HTML 格式的文本。“多媒体”这一统术语描述了向你的桌面传输的多种形式的内容，包括声音、文本和图像——甚至是动画和电影。在图像方面，PHP 拥有强大的能力。你可以做的远比简单地向 HTML 中添加静态图像。
+
+自动为你的文件添加水印以识别它们如何？或者上传一张图像并将其显示为适合页面正确大小的缩略图如何？更好的是，从存储在数据库中的图形实时渲染一个图表如何？我们接下来的页面中将涵盖所有这些及更多内容。
+
+在《PHP Anthology》的其他章节中，你将找到额外的示例，例如在 MySQL 中存储图像并显示它们（第 9 章），用文本渲染图像（第二卷，第 1 章），以及使用图像作为在“后台”运行 PHP 脚本的方法（第二卷，第 4 章）。本章专门专注于你在借助 PHP 帮助显示图像时可能想要解决的一些常见问题。
+
+要使用此处的示例，你需要 PHP 的 GD 图像库。使用 GD 库的 PHP 函数在 PHP 手册[1]中有记录。那里还提供了完整的安装说明。
+
+> [1] `http://www.php.net/image`
+
+由于 GIF 图像的专利问题[2]，GD 库对该格式的支持已在 1.6 版本中停止。虽然你可以在网上找到旧版本的 GD 库，但可能会使你处于 Unisys 或 IBM 的火力之下。让生活变得更有趣的是，GD 库直到 1.6 版本才开始支持 PNG 格式（一种由较新版本浏览器支持的 GIF 免费替代方案）。在这些示例中，我假设你拥有内置 Freetype、JPEG 和 PNG 支持的 GD 2.0 版本。
+
+好消息是 GIF 格式的专利将于 2004 年过期，所以我们很快就能看到 GIF 支持返回 GD 库。在此之前，值得考虑 PNG 格式作为首选替代方案。PNG 可以支持 32 位图像，而 GIF 为 8 位。此外，PNG 使用了更高效的压缩算法，与 8 位 PNG 与 8 位 GIF 比较时，减少了使用的带宽。
+
+> [2] `http://www.gnu.org/philosophy/gif.html`
+
+## MIME 类型
+
+MIME 代表多用途互联网邮件扩展（Multipurpose Internet Mail Extensions），最初设计用于帮助识别不同内容类型的标准。从那以后 MIME 已成为互联网描述内容类型的默认标准。当你在 PHP 中处理图像时，掌握不同的内容类型是非常重要的，否则你可能会为一个简单的问题挣扎几个小时。
+
+通常，在将请求的内容发送到浏览器之前，你的服务器必须使用特殊的 `Content-Type` 头部宣布内容类型，以便浏览器知道如何处理该内容。例如，这里是可能发送的宣布便携网络图形 (PNG) 格式图像的头部：
+
+```
+HTTP/1.1 200 OK
+Date: Fri, 28 Mar 2003 21:42:44 GMT
+Server: Apache/1.3.27 (Unix) PHP/4.3.1
+Last-Modified: Wed, 26 Feb 2003 01:27:19 GMT
+Content-Length: 1164
+Connection: close
+Content-Type: image/png
+```
+
+`Content-Type` 头部用于指定当前 URL 上内容的 MIME 类型。在这种情况下，MIME 类型是 `image/png`，表示 PNG 图像。
+
+在 PHP 中这变得重要的地方是我们从 PHP 脚本生成图像时。默认情况下，PHP 脚本发送的 MIME 类型 `text/html`（一个 HTML 文档）。因此，在你的脚本发送的是图像而不是 HTML 的情况下，你需要使用 PHP 的 `header` 函数指定 MIME 类型。
+
+```php
+<?php
+header('Content-Type: image/png');
+?>
+```
+
+你所需的图像 MIME 类型如表 7.1 所示。
+
+| 图像文件交换格式 | MIME 类型 |
+|---|---|
+| JPEG (.jpg) | `image/jpeg`^1 |
+| 便携网络图形 (.png) | `image/png` |
+| 图形交换格式 (.gif) | `image/gif` |
+| Windows 位图 (.bmp) | `image/bmp` |
+| 可缩矢量图形 (.svg) | `image/xml+svg` |
+
+> ^1 Internet Explorer 识别 `image/jpeg` 类型，但上传 JPEG 图像时它发送的是 `image/pjpg` 类型。
+
+## 我该如何创建缩略图？
+
+如果你的网站允许上传图像（可能是为了与提交的内容一起显示），你如何确保显示的图像将是合适的大小？如果用户上传了一张特别大的图像，可能会破坏页面的布局。创建缩略图是一个五阶段的过程：
+
+1. 将源图像加载到变量中。
+2. 确定高度和宽度。
+3. 创建空白缩略图。
+4. 将原始图像复制到空白缩略图中。
+5. 显示缩略图。
+
+让我们从 JPEG 创建缩略图：`1.php`
+
+```php
+<?php
+// 指定源图像
+$sourceImage = 'sample_images/sitepoint.jpg';
+
+// 指定缩略图高度宽
+$thumbWidth = 200;
+$thumbHeight = 90;
+
+// 加载原始图像
+$original = imagecreate($sourceImage);
+
+// 获取原始尺寸
+$dims = getimagesize($sourceImage);
+
+// 创建缩略图（稍微缩小）
+$thumb = imagecreatuecolor($thumbWidth, $thumbHeight);
+
+// 将原始图像重采样复制到缩略图
+imagecopyresampled($thumb, $original, 0, 0, $thumbWidth, $thumbHeight, $dims[0], $dims[1]);
+
+// 发送内容头部
+header("Content-type: image/jpeg");
+
+// 显示图像
+imagejpeg($thumb);
+?>
+```
+
+`getimagesize()` 函数返回一个数组，描述指定图像的尺寸和类型。以下是使用上述示例中源图像的输出示例：
+
+```
+Array (
+[0] => 395
+[1] => 123
+[2] => 2
+[3] => width="395" height="123"
+[bits] => 8
+[channels] => 3
+[mime] => image/jpeg
+)
+```
+
+数组的第一个元素是图像的宽度，第二个是高度。第三个是一个标识图像类型的数字，其中 1 代表 GIF，2 代表 JPEG，3 代表 PNG（更多类型请在 [PHP 手册][3] 中描述）。请注意，数组中的 `mime` 元素直到 PHP 4.3.0 才开始可用。
+
+> [3] `http://www.php.net/getimagesize`
+
+## Thumbnail 类（Thumbnail Class）
+
+非常好，太棒了……但我们创建的缩略图会将原始图像拉伸到空白缩略图的完整尺寸。这会导致图像变形，除非它的宽高比恰好与缩略图相同。相反，我们想要原始图像的一个按比例缩放的版本，使其能够尽可能整齐地放入空白缩略图中。在本节中，我们将编写一个恰恰能实现此功能的类。
+
+该类还将能够处理比缩略图尺寸小的图像，允许在需要时保持其原始尺寸。该类被设计为仅处理 PNG 和 JPEG 文件，但可以轻松修改以处理其他类型。
+
+如既往一样，我将专注于构建该类的 API——即你可能在自己的代码使用的部分——然后向你展示如何使用该类。完整代码位于代码归档中。
+
+与其他类一样，我们从构造函数开始：
+
+```
+File: Images/Thumbnail.php (in SPLIB) (excerpt)
+/**
+ * Thumbnail 构造函数
+ * @param int max width 缩略图的最大宽度
+ * @param int max height 缩略图的最大高度
+ * @param boolean (optional) 如果为 true 则图像将缩放
+ * @param boolean (optional) 如果放大小图像则为 true
+ * @access public
+ */
+function Thumbnail($maxWidth, $maxHeight, $scale = true,
+    $inflate = true)
+{
+    $this->maxWidth = $maxWidth;
+    $this->maxHeight = $maxHeight;
+    $this->scale = $scale;
+    $this->inflate = $inflate;
+}
+```
+
+`Thumbnail` 类的构造函数接受四个参数。前两个分别是缩略图以像素为单位的最大宽度和高度。第三个参数告诉类应该按比例缩放图像以适应缩略图，还是仅进行拉伸（如前面的示例）。第四个参数告诉类应该如何处理太小的图像，即是将其放大以填充缩略图还是不。
+
+在将这些参数存储在实例变量后，下面是构造函数的其余部分：
+
+```
+// 考虑修改这些以处理其他图像类型
+$this->types = array(['image/jpeg', 'image/png']);
+$this->imgLoaders = array(
+    'image/jpeg' => 'imagecreatefromjpeg',
+    'image/png' => 'imagecreatefrompng'
+);
+$this->imgCreators = array(
+    'image/jpeg' => 'imagejpeg',
+    'image/png' => 'imagepng'
+);
+```
+
+`$this->types` 存储了该类可以处理的 MIME 类型。
+
+`$this->imgLoaders` 列出了用于加载特定 MIME 类型图像的函数，而 `$this->imgCreators` 列出了创建特定 MIME 类型新图像的函数。
+
+`Thumbnail` 类提供了两个方法来加载你想要转换的图像。第一个 `loadFile` 允许你指定一个本地文件进行加载：
+
+```php
+/**
+ * 从文件加载图像
+ * @param string filename 图像文件名（带路径）
+ * @return boolean
+ * @access public
+ */
+function loadFile($image)
+{
+    // 代码省略
+}
+```
+
+第二个 `loadData` 允许你传递存储在 PHP 变量中的二进制图像数据，这样你就可以从存储在（例如）MySQL 表中的文件中创建缩略图图像：
+
+```php
+/**
+ * 从字符串（例如数据库）加载图像
+ * @param string the image 图像数据
+ * @param mime type MIME 类型
+ * @return boolean
+ * @access public
+ */
+function loadData($image, $mime)
+{
+    // 代码省略
+}
+```
+
+除了图像数据外，你还需要提供 MIME 类型作为第二个参数。通常，当图像存储在数据库中时，MIME 类型会随它们一起存储，正如我们在第 9 章所看到的那样。
+
+```php
+/**
+ * 如果提供了文件名，则使用该名称创建缩略图
+ * 如果未提供，则将图像输出到浏览器
+ * @param string (optional) filename 创建图像的文件名
+ * @return boolean
+ * @access public
+ */
+function buildThumb($file = null)
+{
+    $creator = $this->imgCreators($this->sourceMime);
+    if (isset($file)) {
+        return $creator($this->thumb, $file);
+    } else {
+        return $creator($this->thumb);
+    }
+}
+```
+
+`buildThumb` 方法用于渲染完成缩略图。如果你向此方法传递一个名称，缩略图将存储为文件。否则，图像将输出到浏览器。注意，当我们生成缩略图的图像标签时，我们首先使用正确的头部。`getMime` 方法返回 MIME 类型：
+
+```php
+/**
+ * 返回 mime 类型
+ * @return string
+ * @access public
+ */
+function getMime() {
+    return $this->sourceMime;
+}
+```
+
+`getWidth` 和 `getHeight` 方法用于返回缩略图的宽度和高度，你可以这样使用：
+
+```php
+/**
+ * 返回缩略图的宽度
+ * @return int
+ * @access public
+ */
+function getWidth() {
+    return $this->width;
+}
+```
+
+```php
+/**
+ * 返回缩略图的高度
+ * @return int
+ * @access public
+ */
+function getHeight() {
+    return $this->height;
+}
+```
+
+搞定！让我们来看看：
+
+```php
+<?php
+// 引入 Thumbnail 类
+require_once 'Thumbnail.php';
+
+// 实例化缩略图
+$tn = new Thumbnail(200, 200);
+
+// 从文件加载图像
+$tn->loadFile('sample_images/sitepoint.jpg');
+
+// 发送头部
+header('Content-Type: ' . $tn->getMime());
+
+// 构建缩略图
+$tn->buildThumb();
+?>
+```
+
+上面的示例显示了为 `Thumbnail` 类传递文件名以创建缩略图。图 7.2 显示了结果。
+
+### 图 7.2：按比例缩放
+
+这是另一个示例，展示 `loadData` 方法以及文件如何存储在数据库中：
+
+```php
+<?php
+// 引入 Thumbnail 类
+require_once 'Images/Thumbnail.php';
+
+// 实例化缩略图
+$tn = new Thumbnail(200, 200);
+
+// 将图像加载到字符串
+$image = file_get_contents('sample_images/sitepoint.jpg');
+$tn->loadData($image, 'image/jpeg');
+
+// 构建缩略图并存储为文件
+$tn->buildThumb();
+
+?><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>缩略图示例</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body>
+<h1>之前...</h1>
+<img src="sample_images/sitepoint.jpg" />
+<h1>之后...</h1>
+<img src="sample_images/thumb_sitepoint.jpg" width="<?php echo $tn->getWidth();?>" height="<?php echo $tn->getHeight();?>" />
+</body>
+</html>
+```
+
+### 图 7.3：之前和之后
+
+最后，这是你可以如何从包含 PNG 和 JPEG 文件的目录构建简单的缩略图显示（有关示例中使用的内置 `dir` 类，请参见第 4 章）。此部分遍历目录；它寻找没有缩略图的图像并创建它们。这节省了我们每次创建缩略图的开销：
+
+
+
+```php
+<?php
+// 引入 Thumbnail 类
+require_once 'Images/Thumbnail.php';
+
+// 打开 sample_images 子目录
+$dir = dir('sample_images');
+
+// 读取文件寻找要转换的图像
+while ($image = $dir->read()) {
+    // 获取文件扩展名
+    $ext = explode('.', $image);
+    $size = count($ext);
+    // 检查是否为有效文件
+    (($ext[$size-1] == 'png' || $ext[$size-1] == 'jpg') &&
+    preg_match('/thumb/', $image) == 0 &&
+    $image != '.' && $image != '..') {
+        // 创建缩略图的代码...
+    }
+}
+?>
+```
+
+# Thumbnail 类
+
+```php
+// 检查图片是否存在缩略图
+if (file_exists('sample_images/thumb_' . $image)) {
+    continue;
+} else {
+    // 实例化缩略图，不对小图片进行缩放
+    $tn = new Thumbnail(200, 200, TRUE, FALSE);
+
+    // 创建缩略图
+    $tn->loadFile('sample_images/' . $image);
+    $tn->buildThumb('sample_images/thumb_' . $image);
+}
+```
+
+脚本随后读取目录查找缩略图（以`thumb_`开头的文件），并将找到的名称添加到显示在页面正文表格中：
+
+文件：`5.php`（节录）
+
+```php
+// 重置目录列表
+$dir->rewind();
+
+// 开始构建 HTML 表格
+$table = "<table border='1' padding='5'>n";
+// 遍历目录并将缩略图添加到表格
+while ($image = $dir->read()) {
+    if (preg_match('/thumb_/', $image) == 1 && $image != '.. ' && $image != '.') {
+        $table .= "tr\ntd align='center\">\n";
+        $table .= "<img src='sample_images/" . $image . '">\n";
+        $table .= "</td></tr>\n";
+    }
+}
+$table = "</table>\n";
+echo $table;
+```
+
+```html
+<!DOCTYPE html PUBLIC "//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>缩略图示例</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body>
+<h1>缩略图...</h1>
+<?php echo $table; ?>
+</body>
+</html>
+```
+
+该脚本的输出示例如图 7.4 所示。请注意，由于我们在实例化`Thumbnail`类时将第四个参数（放大）设置为`FALSE`，因此小 Logo 保持了原始尺寸。
+
+图 7.4 缩略图列表
+
+# 缩略图...
+
+![](img/b7e89640aa5fa679509a99b07948ad75_242_0.png)
+
+# 如何给图片添加水印？
+
+你可能需要解决另一个常见问题是如何给图片添加水印，即如何放置某些标识图像或文字来显示你拥有版权。使用 GD 库和 PHP，这轻而易举！
+
+如果你有一个带有透明背景的 Logo 或其他标识图形，可以轻松地将其放在另一张图片上：
+
+```php
+<?php
+// 加载原始图片
+$image = imagecreatefrompng('sample_images/mysql_logo.png');
+
+// 获取图片宽度
+$iWidth = imagesx($image);
+
+// 允许透明图片...
+imagealphablending($image, true);
+
+// 获取水印图片
+$watermark = imagecreatefrompng('sample_images/sitepoint_watermark.png');
+
+// 获取高宽
+$wmWidth = imagesx($watermark);
+$wmHeight = imagesy($watermark);
+
+// 找到正确的远侧位置
+$xPos = $iWidth - $wmWidth;
+
+// 将水印复制到原始图片的右上角
+imagecopy($image, $watermark, $xPos, 0, 0, 0, $wmWidth, $wmHeight);
+
+// 发送 HTTP 内容头
+header('Content-Type: image/png');
+
+// 显示最终图片
+imagejpeg($image);
+?>
+```
+
+这个过程简单只需加载原始图片并开启 alpha 混合（绘制透明度），这样带有透明背景的图片就可以放置在其上方。加载“水印”图片，然后在获取其高度和宽度后，使用`imagecopy`将水印放置在原始图片上。
+
+在这种情况下，结果如图 7.5 所示，可以看到 MySQL 标志的右上角出现了一个小的 SitePoint Logo：
+
+# 图 7.5. 海豚品牌
+
+![](img/b7e89640aa5fa679509a99b07948ad75_244_0.png)
+
+在图片上显示文字甚至更加简单。例如：
+
+```php
+<?php
+// 加载原始图片
+$image = imagecreatefrompng('sample_images/mysql_logo.png');
+
+// 获取颜色并分配到图片调色板
+$color = imagecolorallocate($image, 153, 153, 153);
+
+// 将文字添加到图片
+imagestring($image, 3, 0, 0, 'Skippy 2003', $color);
+
+// 发送 HTTP 内容头
+header('Content-Type: image/png');
+
+// 显示最终图片
+imagejpeg($image);
+?>
+```
+
+`imagecolorallocate`函数允许你通过指定红、绿、蓝分量创建一个用于在图片上绘制的新颜色。该函数返回一个数字，用于标识图片中的该颜色。一旦你有了颜色，就可以使用`imagestring`将文字放置在图片上。函数的第二个参数是字体数字，数字 1 到 5 代表内置字体。你可以使用`imagefont`创建你自己的字体。第三和第四个参数是在图片上绘制文字的水平和垂直坐标。其余参数自言易懂。
+
+脚本的输出如图 7.6 所示。
+
+### 图 7.6. 这应该是 true 吗？
+
+![](img/b7e89640aa5fa679509a99b07948ad75_245_0.png)
+
+# 如何用 PHP 显示图表和图形？
+
+以图形形式显示数据是与访问者交流的一种有力方式，并帮助你自己理解网站是如何使用的。图表可以显示从每月流量统计（见卷 II）到报告的任何内容。PHP 的基本功能是渲染图像，首先是 GD 库，它是用 PHP 编写的。文档非常优秀，并提供了许多示例。在本章末尾建议进行更多阅读。在这里，我将向你展示如何显示柱图和饼图。注意 JpGraph 的非商业许可。使用的版本是 1.1。此代码假设你已将`jgraph/src/`目录添加到包含路径，以便加载 JpGraph 文件。
+
+http://www.php.net/jgraph/index.php
+
+# JpGraph 和 Notices
+
+取决于你使用的 JpGraph 版本，如果在`php.ini`中开启了 PHP 的错误提示，可能会遇到麻烦。生成的错误信息会导致图表无法显示。有关如何控制错误报告的信息。假设 JpGraph 在你的包含路径中某处可用，在这种情况下我们将包含核心“引擎”以及柱图类。接下来，我们设置两个数据数组，用于图表的 X 轴和 Y 轴。在实际应用中，这些是你从 MySQL 获取的结果。
+
+文件：`8.php`（节录）
+
+```php
+<?php
+// 开启 notices 时 JpGraph 不工作
+error_reporting(E_ALL ^ E_NOTICE);
+
+// 包含必要的 JpGraph 库
+require_once 'graph.php'; // 核心
+require_once 'graph_bar.php'; // 柱图
+
+// 示例数据查询
+$xdata = array('Mouse', 'Pens', 'T-Shirts', 'Mugs'); // X轴
+$ydata = array(35, 43, 15, 110); // Y轴
+```
+
+JpGraph API 在许多情况下自言易懂，并附带有用的 API 文档。从你的数据数组生成图表的第一步是设置图表的“基础”，例如背景颜色。
+
+文件：`8.php`（节录）
+
+```php
+// 设置图表
+$graph = new Graph(400, 200, 'auto'); // 宽，高
+$graph->SetMargin(40, 20, 20, 20); // 边距宽度
+$graph->SetScale('lin'); // X线性，Y线性
+$graph->SetColor('green'); // 绘图绿色
+$graph->SetMarginColor('navy'); // 边距海军蓝
+$graph->SetShadow(); // 使用投影
+$graph->SetFrame(true, 'blue'); // 蓝色框
+```
+
+为图表添加标题并不是问题。JpGraph 拥有你可能需要的内置字体，如 Verdana 和 Courier。
+
+```php
+// 设置图表标题
+$graph->title->Set('Sales Figures for March'); // 标题文字
+$graph->title->SetColor('white'); // 标题颜色
+$graph->title->SetFont('FF_VERDANA, FS_BOLD, 14); // 标题字体
+```
+
+现在让我们设置 X 轴。使用`SetTickLabels`方法分配标签，X 轴上每个间隔的标记。
+
+```php
+// 设置 X 轴
+$graph->axis->Set('Product Type'); // 文字
+$graph->axis->SetColor('yellow'); // 颜色
+$graph->axis->SetFont('FF_VERDANA, FS_BOLD, 10); // 字体
+$graph->axis->SetTickLabels($xdata); // 标签
+$graph->axis->SetColor('silver', 'orange'); // 颜色
+$graph->axis->SetFont('FF_VERDANA, FS_NORMAL, 8); // 字体
+$graph->axis->HideTicks(); // 标记
+```
+
+一旦添加 Y 数据，Y 轴将自动生成数值。
+
+```php
+// 设置 Y 轴
+$graph->axis->Set('Units Sold'); // 文字
+$graph->axis->SetColor('yellow'); // 颜色
+$graph->axis->SetFont('FF_VERDANA, FS_BOLD, 10); // 字体
+$graph->axis->SetColor('silver', 'orange'); // 颜色
+$graph->axis->SetFont('FF_VERDANA, FS_NORMAL, 8); // 字体
+$graph->axis->HideTicks(); // 标记
+```
+
+以下代码是在图表上绘制柱形的代码：
+
+```php
+// 创建柱状图绘制
+$bplot = new BarPlot($ydata);
+$bplot->SetWidth(0.75); // 柱宽
+$scol = array(255, 51, 204); // 渐变开始
+$ecol = array(204, 0, 102); // 渐变结束
+$bplot->SetFillGradient($scol, $ecol, GRAD_VER); // 添加渐变
+```
+
+剩下的只是将柱状图添加到图表并将其发送到浏览器：
+
+文件：`8.php`（节选）
+
+```php
+// 完成工作
+$graph->Add($bplot);    // 将柱状图添加到图表
+$graph->Stroke();      // 发送到浏览器
+?>
+```
+
+图 7.7 显示了结果。对于仅仅有 71 行 PHP 代码来说，这还不错：
+
+# 图 7.7. 对钢笔的巨大需求
+
+![](img/b7e89640aa5fa679509a99b07948ad75_248_0.png)
+
+## 饼图
+
+使用 JGraph 可以轻松构建的另一种图表是饼图。让我们使用上一个示例中使用的样本数据来创建一个饼图。
+
+在脚本开始处，我们必须包含饼图类和 3D 饼图类：
+
+文件：`9.php`（节选）
+
+```php
+<?php
+// JGraph 在启用 notices 的情况下无法工作
+error_reporting(E_ALL ^ E_NOTICE);
+
+// 引入必要的 JGraph 库
+require_once 'jpgraph.php';      // 核心引擎
+require_once 'jpgraph_pie.php';   // 饼图
+require_once 'jpgraph_pie3d.php';  // 3D 饼图
+
+// 样本销售数据：可以是数据库查询
+$xdata = array('Mouseats', 'Pens', 'T-Shirts', 'Mugs'); // X 轴
+$ydata = array(35, 43, 15, 10); // Y 轴
+```
+
+这次，我们不再使用`Graph`类，而是使用`PieGraph`类：
+
+```php
+// 设置图表
+$graph = new PieGraph(400, 200, 'auto'); // 宽度，高度
+$graph->SetMarginColor('yellow'); // 边距颜色黄色
+$graph->SetShadow(); // 使用阴影
+$graph->SetFrame(true, 'red'); // 红色框
+```
+
+标题的设置与之前相同：
+
+```php
+// 设置图表标题
+$graph->title->Set('March Sales'); // 标题文本
+$graph->title->SetColor('navy'); // 标题颜色
+$graph->title->SetFont(VERDANA, BOLD, 14); // 标题字体
+```
+
+我们还需要一个图例来标识饼的每个部分代表什么：
+
+```php
+// 设置饼图区域图例
+$graph->legend->SetColor('navy'); // 图例文字颜色
+$graph->legend->SetFillColor('orange'); // 图例背景颜色
+$graph->legend->Pos(0.05, 0.5); // 图例位置
+```
+
+现在，我们创建 3D 饼图，使用 Y 数据实例化，并使用 X 数据作为图例：
+
+```php
+// 设置 3D 饼图
+$pie = new Pie3D($ydata); // 使用 Y 数据实例化 3D 饼图
+$pie->SetLegends($xdata); // 将 X 数据添加到图例
+$pie->SetTheme('water'); // 设置颜色主题
+$pie->SetCenter(0.39); // 相对于 x 轴的中心
+$pie->SetSize(100); // 饼半径的大小（单位为像素）
+$pie->SetAngle(30); // 设置饼的倾斜角度
+$pie->ExplodeSlice(0); // 弹出一个区域
+$pie->ExplodeSlice(1); // 弹出另一个区域
+```
+
+在图中图表的区域旁边，我们将显示一个标签，以标识该区域占整体的百分比：
+
+# 第 7 章：图像
+
+文件：`9.php`（节选）
+
+```php
+// 设置每个区域对应的值
+$pie->value->SetFont(FF_VERDANA, FS_NORMAL, 10); // 字体
+$pie->value->SetColor('navy'); // 字体颜色
+```
+
+最后，我们将 3D 饼图添加到图表并将其发送到浏览器：
+
+文件：`9.php`（节选）
+
+```php
+// 完成工作 // 将柱状图添加到图表
+$graph->Add($pie); // 发送到浏览器
+$graph->Stroke(); ?>
+```
+
+结果如图 7.8 所示。
+
+# 图 7.8. 谦逊的饼
+
+![](img/b7e89640aa5fa679509a99b07948ad75_250_0.png)
+
+JpGraph 代表 PHP 领先的图表解决方案，因为它提供的功能比我们在这里看到的示例多得多。特别值得注意的是，它允许你将渲染后的图表存储为 PNG 文件，因此你可以渲染一次并在稍后重用完成的图像。
+
+## 如何防止图像的“热链”（hot linking）？
+
+你可能会遇到的一个问题，特别是当你的网站托管了独特的图像时，是其他网站从他们的页面对你的图像进行“热链”，这使得看起来你酷炫的图像是由他们托管或拥有的。除了这里潜在的版权问题外，外部网站“热链”你的图像可能还会消耗你的带宽。
+
+目前已经有了不同的解决方案，例如使用 Apache 的`mod_rewrite`来检查浏览器提供的 referer 信息（该信息并不总是可靠的），以确保来源是本地 Web 页面。例如：
+
+
+
+
+```apache
+SetEnvIfNoCase Referer "*http://www\.sitepoint.com/" locally_linked=1
+
+SetEnvIfNoCase Referer "*http://sitepoint.com/" locally_linked=1
+
+SetEnvIfNoCase Referer "*.(gif|png|jpeg)$" locally_linked=1
+
+Order Allow,Deny
+```
+
+## 使用 PHP 开发专业级图表
+
+http://www.zend.com/zend/tut/tutsweat3.php
+
+这是一个关于使用 IpGraph 的实用教程。
+
+# 第 8 章：电子邮件
+
+构建在线应用程序不仅仅是将页面传递给 Web 浏览器。对于大多数网站来说，电子邮件是从与访问者联系到构建用户注册系统等一切环节至关重要的工具。
+
+使用 PHP 的 `mail` 函数发送简单的电子邮件很容易；你只需要一行代码即可发送消息——还有什么更简单的呢？
+
+`mail` 函数可以与本地 `sendmail` 客户端（一种在 Unix 系统上广泛使用的电子邮件应用程序）集成，或者在缺少兼容 `sendmail` 的客户端的情况下，与远程 SMTP（简单邮件传输协议）服务器集成。你的 Web 主机应该为你配置好这些，但如果你在 Windows 上使用开发环境，你需要告诉 PHP 使用哪个 SMTP 服务器来发送邮件。在大多数情况下，这将是你的 ISP 提供的 SMTP 服务器。
+
+要设置此项，你需要修改 `php.ini` 中的以下设置：
+
+```ini
+[mail function]
+
+; 仅适用于 Win32。
+SMTP = smtp.yourdomain.com
+
+; 默认值
+smpt_port = 25
+```
+
+```ini
+; 仅适用于 Win32
+sendmail from = you@yourdomain.com
+```
+
+在本章中，我们将专注于一个可以让你在构建复杂邮件时消除担忧的类：`PHPMailer`[1]。`PHPMailer` 采用较小 GNU 公共许可协议，并提供了一个实用的 API，用于处理你可能想要从网站发送邮件的任何内容。它可能不像一行代码那么简单，但它确实让发送复杂邮件变得更加方便！本章使用的版本是 1.65。
+
+## 如何简化复杂邮件的生成？
+
+使用 `mail` 函数对于简单消息是可以的，但有许多功能需要你自己实现。当你决定想让自己的邮箱地址出现在消息的“发件人”字段时，这种复杂性最初就显而易见；当你尝试在地址旁添加姓名、尝试抄送邮件等时，情况就会变得复杂。
+
+Kevin Yank 在《PHP 高级电子邮件》（本章末尾的“进阶阅读”部分）中讨论了这些问题，这样你就能确切知道涉及哪些内容。
+
+`PHPMailer` 为 `mail` 函数增加了大量功能，包括附件、HTML 邮件和混合格式邮件；它还能够完全跳过 `mail` 函数直接连接到 SMTP 服务器。该 API 使构建更复杂的邮件变得非常简单。
+
+你首先需要下载 `PHPMailer` 并将其放置在包含路径的某处。本书的类库提供了 1.65 版本。
+
+`PHPMailer` 最基础的用法是：
+
+```php
+<?php
+
+// 引入 phpmailer 类
+require 'ThirdParty/phpmailer/class.phpmailer.php';
+
+// 实例化
+$mail = new PHPMailer();
+```
+
+[1] http://phpmailer.sourceforge.net/
+
+```php
+// 定义消息的发件人
+$mail->From = 'you@yourdomain.com';
+$mail->FromName = 'Your Name';
+
+// 设置消息主题
+$mail->Subject = 'Test Message';
+
+// 添加消息正文
+$body = 'This is a test';
+$mail->Body = $body;
+
+// 添加接收者地址
+$mail->AddAddress('you@yourdomain.com', 'Your Name');
+
+// 发送消息
+if (!$mail->Send()) {
+    echo 'Mail sending failed';
+} else {
+    echo 'Mail sent successfully';
+}
+```
+
+如你所示，`PHPMailer` 暴露给公开使用的方法和类变量非常自显易懂。尽管这显然比你使用 `mail` 函数时需要的代码多得多，但它易于阅读，并隐藏了格式化 SMTP 头的复杂性。
+
+## 如何在消息中添加附件？
+
+通过 `PHPMailer`，你实际上有三种方法可以向消息添加附件——两种方法处理普通文件，一种方法专门用于图像：
+
+`AddAttachment(path, name, [encoding, type])`
+
+该方法用于已位于你服务器上的文件。你提供文件的路径和名称。请注意，编码通常最好留给默认的 `"base64"`，而你可能想通过 `type` 参数提供更具体的 MIME 类型。
+
+> 可以在 http://www.hivemail.com/mime.types.php 找到常见的 MIME 类型列表。MIME 类型将在第 7 章中进行更详细的讨论。
+
+### `AddStringAttachment(string, filename[, encoding[, type]])`
+
+使用 `AddStringAttachment`，你可以为 `PHPMailer` 提供一个已经存储在 PHP 变量中的文件变量，例如，刚刚上传的文件或存储在 MySQL 中的文件。
+
+### `AddEmbeddedImage(path, cid, name[, encoding[, type]])`
+
+使用 `AddEmbeddedImage`，你可以附加一个图像并给它一个 ID（`cid`），这允许你将其嵌入 HTML 邮件的正文中。
+
+这里是一个使用 `AddStringAttachment` 方法的示例：
+
+```php
+<?php
+
+// 引入 phpmailer 类
+require 'ThirdParty/phpmailer/class.phpmailer.php';
+
+// 实例化
+$mail = new PHPMailer();
+
+// 修改这里
+$mail->From = 'you@yourdomain.com';
+$mail->FromName = 'Your Name';
+
+// 设置消息主题
+$mail->Subject = 'Test Message';
+
+// 添加消息正文
+$body = 'This is a test';
+$mail->Body = $body;
+
+// 添加接收者地址
+$mail->AddAddress('you@yourdomain.com', 'Your Name');
+
+// 发送消息
+if (!$mail->Send()) {
+    echo 'Mail sending failed';
+} else {
+    echo 'Mail sent successfully';
+}
+```
+
+```php
+// 添加表单上传的内容
+$mail->AddStringAttachment($contents, $name, 'base64', $type);
+
+// 添加收件者地址
+$mail->AddAddress(
+    $form->getSubmitValue('mailTo'),
+    $form->getSubmitValue('name')
+);
+
+// 发送邮件
+if (!$mail->Send()) {
+    echo 'Mail sending failed';
+} else {
+    echo 'Mail sent successfully';
+}
+
+else {
+    $form->display();
+}
+```
+
+生成的表单如图 8.1 所示。
+
+### 图 8.1 发送带附件的邮件
+
+| 字段 | 内容 |
+| :--- | :--- |
+| 收件人姓名 | Bill |
+| 收件人邮箱 | bill@rms.com |
+| 主题 | PHP logo |
+| 消息 | 这是你要的 PHP logo。 |
+| 选择图像 | `C:\docs\phppanth\mac`；浏览... |
+
+我们将在下一个解决方案中查看 `AddImage` 方法。
+
+## 如何发送 HTML 邮件？
+
+某些邮件客户端（如 Outlook Express 和许多 Web 客户端）能够理解邮件正文中的 HTML 内容。使用 `PHPMailer` 可以轻松在邮件中添加 HTML，甚至在文档中嵌入附件图像。
+
+该类会自动判断你是否在邮件正文中放置了 HTML，并据此设置正确的 MIME 头。你还可以添加备用文本消息，并通过使用 `AddEmbeddedImage` 将附件图像放置在 HTML 消息正文中。
+
+将所有内容整合到一个示例中，我们得到如下：
+
+```php
+<?php
+
+// 引入 phpmailer 类
+require 'ThirdParty/phpmailer/class.phpmailer.php';
+
+// 实例化
+$mail = new phpailer();
+
+// 修改此内容
+$yourEmail = 'you@example.com';
+$yourName = 'Your Name';
+
+// 修改此内容
+$recipientEmail = 'you@example.com';
+$recipientName = 'Your Name';
+
+// 定义发件人
+$mail->From = $yourEmail;
+$mail->FromName = $yourName;
+
+// 设置邮件主题
+$mail->Subject = 'Test HTML Email';
+
+// 添加邮件的 HTML 正文
+$html = '<b>' . $recipientName . ' !</b><br />';
+
+// 使用 cid:12345 嵌入图像
+$html .= 'This page was generated by <img src="cid:12345" />';
+
+// 将消息添加到正文
+$mail->Body = $html;
+
+// 添加纯文本备用
+$txt = "Hi " . $recipientName . " \n";
+$txt .= "This page was generated by PHP";
+
+// 将消息作为备用内容
+$mail->AltBody = $txt;
+```
+
+```php
+// 添加一个识别 cid 的嵌入附件
+if (!$mail->AddEmbeddedImage(
+    './files/php_logo.gif',
+    '12345',
+    'php_logo.gif',
+    'base64',
+    'image/gif'
+)) {
+    echo 'Failed to attach file!<br />';
+}
+```
+
+```php
+// 添加收件者地址
+$mail->AddAddress($recipientEmail, $recipientName);
+```
+
+```php
+// 发送邮件
+if ($mail->Send()) {
+    echo 'Mail sending failed';
+} else {
+    echo 'Mail sent successfully';
+}
+```
+
+这发送了一个多部分消息，其一部分是 HTML，另一部分是纯文本，以及一个通过 `img` 标签嵌入在 HTML 中的图像。
+
+请注意，只有少数邮件客户端支持 HTML 中的嵌入图像，尽管包括 Outlook、Outlook Express、Eudora、Netscape、Mozilla Mail 和 Evolution 在内的主流邮件客户端。
+
+## 如何给一组人发送邮件？
+
+有时一次性给多个人发送邮件是有用的。在其他情况下，向一组人发送邮件被称为发送垃圾邮件——我确定你不会用 PHP 这样做！
+
+使用 `PHPMailer`，一种方案是使用 `addCC` 和 `addBCC` 方法，它们允许你向这些字段添加多个地址，其工作方式与 `addAddress` 方法相同。这种方法可能不适合你的需求，特别是如果在每封邮件的标头中列出所有地址，巨大的邮件列表可能会迅速消耗你的邮件服务器。
+
+更好的方法是单独发送每封邮件，同时复用 `PHPMailer` 类的同一个实例。
+
+文件：`5.php`
+
+```php
+<?php
+
+// 引入 phpmailer 类
+require 'ThirdParty/phpmailer/class.phpmailer.php';
+
+// 实例化
+$mail = new PHPMailer();
+
+// 修改此内容
+$yourEmail = 'you@example.com';
+$yourName = 'Your Name';
+
+// 收件者数组：修改这些内容
+$recipients = array(
+    'YourName1' => 'recipient@example.com',
+    'YourName2' => 'recipient@example.com',
+    'YourName3' => 'recipient@example.com'
+);
+
+// 定义发件人
+$mail->From = $yourEmail;
+$mail->Name = $yourName;
+
+// 设置邮件主题
+$mail->Subject = 'Test Group Mail';
+
+// 添加邮件的正文
+$body = 'This message is sent to a group';
+$mail->Body = $body;
+
+// 遍历收件者
+foreach ($recipients as $name => $address) {
+    // 添加收件者
+    $mail->addAddress($address);
+}
+
+// 发送邮件
+if (!$mail->Send()) {
+    echo 'Mail sending failed';
+} else {
+    echo 'Mail sent successfully';
+}
+
+// 重置收件者
+$mail->clearAddresses();
+```
+
+## 如何处理收到的邮件？
+
+你已经看到用 PHP 发送邮件没有问题。但处理收到的邮件呢？在这个解决方案中，我们复用了已经设置好的 `PHPMailer` 实例。
+
+```php
+echo 'Finished';
+```
+
+## 如何用 PHP 处理入站邮件？
+
+```php
+<?php
+
+// ...
+
+echo('Check your mail!');
+
+?>
+```
+
+该代码从标准输入获取电子邮件。关于此问题以及与独立 PHP 脚本相关的其他详细信息，请参阅 [PHP 手册][6]。
+
+`PEAR::Mail_Mime` 的邮件读取功能尚“开发中”，但你可以通过使用它的 `Mail_mimeDecode` 类读取邮件来让你的工作变得更轻松。
+
+此示例实现了与之前脚本相同的目标，但代码简单得多：
+
+```php
+#!/usr/bin/php
+
+<?php
+
+// 引入 PEAR mimeDecode 类
+require_once 'Mail/mimeDecode.php';
+
+// 从 stdin 文件读取邮件
+$fp = fopen('php://stdin', 'r');
+$email = fread($fp, filesize(php://stdin));
+
+close($fp);
+
+$code = new Mail_mimeDecode($email, "\r\n");
+$structure = $code->decode();
+
+// 将消息转发到热线邮箱
+if (strpos($structure->headers['from'], 'vip@example.com')) {
+    mail(
+        'you@yourdomain.com',
+        'Urgent Message!',
+        'Check your mail!'
+    );
+}
+```
+
+变量 `$structure` 包含一个数据结构，以具名的形式提供了邮件的所有关键元素。例如，`$structure->headers['from']` 包含消息的“发件人”地址。
+
+如果你有一个文本格式的原始邮件并使用 `Mail_mimeDecode` 进行解码，你就能亲眼看到这些值。这里是一个通过 `print_r` 函数传递的 `$structure` 示例，使用了另一个 PEAR 包——`PEAR::multipart`[7] 中的测试数据：
+
+- [6] http://www.php.net/features.php/package-info.php?pacid=143
+- [7] http://pear.php.net/package-info.php?pacid=143
+
+## `stdClass` 对象
+
+```text
+(
+  [headers] => Array (
+    [return-path] =
+    [received] => Array (
+      [0] => from secure.thebrainroom.com (raq338.uk
+      [1] => from pb1.pair.com (pb1.pair.com [216.92
+      [2] => qmail 632330 invoked by uid 1010); 28 0
+      [3] => qmail 63215 invoked from network)
+    )
+    [x-authentication-warning] => zaneeb.brainnet.i: Host
+    [mailing-list] => contact php-cvs-help@lists.php.net;
+    [precedence] => bulk
+    [list-help] => =
+    [list-unsubscribe] => =
+    [list-post] => =
+```
+
+
+
+`[delivered] => mailing list php-cvs@lists.net`
+
+`[reply-to] => master@post.rwth-aachen.de`
+
+`[message-id] => <5.1.0.14.2.2021021892139555.01d47c20ma`
+
+`[x-mailer] => Qualcomm Windows Eudora Version 5.1`
+
+`[date] => Mon, 28 Oct 2002 19:36:10 +0100`
+
+`[to] => Melvyn Sopaca`
+
+`[from] => marcus.boerger@online.de (Marcus = ?iso-885`
+
+`[cc] => php-cvs-lists.php`
+
+`[in-reply-to] => <5.1.0.14.2.20210201892152015.014d650@ma`
+
+`[mime-version] => 1.0`
+
+`[content-type] => multipart; boundary===`
+
+`[x-sender] => 5200724b3730-001@t-dialin.net`
+
+`[x-status] => No, tests=bogofiler, spacity=0.0`
+
+`[subject] => Re: [PHP-CVS] cvs php4 /ext/icon/tests`
+
+`[x-tr-dropbox] => user.wer.php.csv (auth as wez) (wez`
+
+`[ctype_primary] => multipart`
+
+`[ctype_secondary] => alternative`
+
+`[ctype_parameters] => Array (`
+
+`[boundary] => =======================711953599==ALT`
+
+`[parts] => Array (`
+
+`[0] => stdClass Object (`
+
+`[headers] => Array`
+
+```
+[content-type] => text/plain; charset=
+[content-transfer-encoding] => quoted-
+[ctype_primary] => text
+[ctype_secondary] => plain
+[ctype_parameters] => Array
+([charset] => iso-8859-1
+[format] => flowed
+)
+```
+
+## 一个正在寻找问题的解决方案
+
+能够用 PHP 处理入站邮件，其价值可能并不显而易见。如果你读过 SitePoint Tech Times[8]，你就知道答案了——无论你是否意识到！邮件列表的订阅和取消订阅由 PHP 处理。你还可以使用 PHP 构建垃圾邮件过滤器，允许通过浏览器更新你的论坛程序，并创建许多其他应用程序。
+
+让我们通过一个简单的例子来看看如何工作。我们将重复上述的用户列表并添加一些吸引人的视觉效果。首先，在包含`HTML_Table`类后，我们将构建一个`switch`语句，允许我们按特定列对结果进行排序：
+
+```php
+// Include the PEAR::HTML_Table class
+require_once 'HTML/Table.php';
+
+$db = &new MySQL($host, $dbUser, $dbPass, $dbName);
+
+// Basic SQL statement
+$sql = "SELECT * FROM user";
+
+// A switch to allow sorting by column
+switch (@$GET['sort']) {
+  case 'login':
+    $sql = " ORDER BY login ASC";
+    break;
+  case 'email':
+    $sql = " ORDER BY email ASC";
+    break;
+  default:
+    $sql = " ORDER BY lastName, firstName";
+    break;
+}
+```
+
+要使用`HTML_Table`，你能够熟悉 PHP 数组；`HTML_Table`接受的许多参数都是以数组格式传递的。HTML 属性通常以关联（命名）数组的形式传递，而行数据则以索引（编号）数组的形式传递：
+
+```php
+// Overall style for the table
+$tableStyle = array(
+  'width' => '650',
+  'style' => 'border: 1.75px dotted #800080';
+);
+
+// Create the table, passing the style
+$table = new HTML_Table($tableStyle);
+
+// Define a style for the caption of the table
+$captionStyle = array(
+  'style' => 'font-family: Verdana; font-weight: bold; font-size: 14.75px; color: navy;'
+);
+
+// Add the caption, passing the text to display and the style
+$table->caption('User List', $captionStyle);
+
+// Define an array of column header data
+$columnHeaders = array(
+  '<a href="$_PHP_SELF" . '?sort=login">Login</a>',
+  '<a href="$_PHP_SELF" . '?sort=name">Name</a>',
+  '<a href="$_PHP_SELF" . '?sort=email">Email</a>'
+);
+
+// Add the header row, passing header text and a TH tag
+$table->addRow($columnHeaders, '', 'TH');
+```
+
+在`while`循环内部，我们获取每一行，并从从数据库检索的数组构建一个索引数组。然后我们使用`addRow`方法将索引数组添加到表格中：
+
+```php
+// Fetch the result object
+$result = $db->query($sql);
+
+// A loop for each row of the result
+while ($row = $result->fetch()) {
+  // Place row data in indexed array
+  $rowData = array(
+    $row['login'],
+    $row['firstName'] . ' ' . $row['lastName'],
+    $row['email']
+  );
+
+  // Add the row, passing the data
+  $table->addRow($rowData);
+}
+```
+
+最后，我们应用一些 HTML 属性使表格更具吸引力。首先，我们将使用`setAllAttributes`为每个单元格应用样式。然后，我们将使用`setRowAttributes`覆盖第一行（编号为 0）的样式，使该行稍大一点。最后，我们将使用`altRowAttributes`为每行应用交替样式，从表格中第一行真实数据开始：
+
+## 第 9 章：网页元素
+
+文件：`2.php`（节选）
+
+```php
+// Set the style for each cell of the row
+$cellStyle = 'style="font-family: verdana; font-size: 11;"';
+
+// Apply the style
+$table->setAllAttributes($cellStyle);
+
+// Define the style for the column headings
+$headerStyle = 'style="background-color: #ffffff;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 12;"';
+
+// Set the row attributes for the header row
+$table->setRowAttributes(0, $headerStyle);
+
+// Set alternating row colors
+$table->altRowAttributes(
+    1,
+    'style="background-color: #d3d3d3"',
+    'style="background-color: #ffffff',
+    TRUE
+);
+
+// Display the table
+echo $table->toHTML();
+```
+
+最终结果是一个整洁的表格，我们可以按列进行排序，如图 9.1 所示。
+
+### 图 9.1. 由 PEAR::HTML_Table 生成的表格
+
+| 登录 | 名称 | 邮箱 |
+|---|---|---|
+| Muecks | Harry Fuecks | muecks@phppatterns.com |
+| Testing | Harry Fuecks | buecks@hotmail.com |
+| bjones | Bruce Jones | bjones@hotmail.com |
+| hjones | Hale Jones | hjones@hotmail.com |
+| dmoore | Demi Moore | dmoore@php.net |
+| hmoore | | hmoore@php.net |
+| mmoore | Madeline Moore | mmoore@hotmail.com |
+| dschwarzenegger | Dennis Schwarzenegger | dschwarzenegger@hotmail.com |
+| jschwarzenegger | John Schwarzenegger | jschwarzenegger@yahoo.com |
+| mschwarzenegger | Madeline Schwarzenegger | mschwarzenegger@yahoo.com |
+| cathow | Catherine | cathow@yahoo.com |
+| hstowe | | hstowe@yahoo.com |
+
+```php
+/*
+function getStartRow()
+{
+    return $this->startRow;
+}
+*/
+```
+
+在实例化该类时，我们可以简单地将相关的行信息以及正在查看的页码传递给它。然后它会告诉我们总页数以及我们应该从哪行开始执行选择查询。
+
+以下是实际运行示例：
+
+文件：`3.php` (节选)
+
+```php
+// 实例化 MySQL 连接
+$db = new MySQL($host, $dbUser, $dbPass, $dbName);
+
+// 查找可用的行数
+$sql = "SELECT COUNT(*) AS num_rows FROM user";
+$result = $db->query($sql);
+$row = $result->fetch();
+
+// 定义每页行数
+$rowsPerPage = 10;
+
+// 设置默认页码
+if (!isset($_GET['page'])) {
+    $_GET['page'] = 1;
+}
+
+// 实例化分页器
+$pager = new SimplePager($rowsPerPage, $row['num_rows'], $_GET['page']);
+
+// 为分页器构建表格
+echo "<table align='center'\n<tr>\n\n";
+
+// 构建分页器的 HTML
+for ($i = 1; $i <= $pager->getTotalPages(); $i++) {
+    echo "<td><a href='" . $_SERVER['PHP_SELF'] . "?page=$i'></td>";
+    if ($i == $_GET['page']) {
+        echo "<strong>$i</strong></td>";
+    } else {
+        echo "$i</td>";
+    }
+}
+```
+
+```php
+echo "</a></td></tr>\n";
+}
+echo "</tr>\n<<table>\n";
+```
+
+注意，我们在构建导航页链接的循环中使用了`getTotalPages`方法。
+
+当页码准备就绪且 HTML 构建完成后，我们现在可以利用`getStartRow`方法来创建结果表格：
+
+```php
+// 现在构造“真实”的 SQL 语句
+$sql = "SELECT * FROM user
+LIMIT " . $page->getStartRow() . ", " . $rowsPerPage;
+
+// 获取并显示结果
+$result = $db->query($sql);
+echo "<table align='1\">\n";
+echo "<tr>\n<th>Login</th><th>Name</th><th>Email</th>\n</tr>\n";
+```
+
+```php
+while ($row = $result->fetch()) {
+    echo "<tr>\n";
+    echo "<td>" . $row['login'] . "</td>\n";
+    echo "<td>" . $row['firstname'] . "</td>\n";
+    echo "<td>" . $row['email'] . "</td>\n";
+    echo "</tr>\n";
+}
+echo "</table>";
+```
+
+我们现在可以每次十行地对用户表显示进行分页处理。这是一个合理的开始，但代码有些杂乱。它缺少一些功能，例如无法简单地点击“下一页”或“上一页”来向前或向后移动一页。而且对于同时显示的页数没有限制（对于大型表格，可能会有数百页，这将导致 Web 页面变得很难看）。
+
+## 滑动页码
+
+PEAR 提供了另一个名为 `PEAR::Pager_Sliding`[2] 的方便的包。`Pager_Sliding`由 Lorenzo Alto 编写，它将计算和链接构建合并在一个易于使用的类中。这里使用的版本是 1.4。
+
+> [2] http://pcar.php.net/Pager_Sliding
+
+## 第 9 章：Web 元素
+
+该类并没有提供我们想要的所有，所以我们首先需要一个扩展 `Pager_Sliding` 的类来提供一些额外信息。顺便说，这使用了继承（更多信息请参见第 2 章）。
+
+```php
+/**
+ * DB_Pager_Sliding 扩展了 PEAR::Pager_Sliding
+ * 提供帮助构建查询结果的 API
+ */
+```
+
+
+
+# DB_Pager_Sliding 类
+
+## 类定义
+
+```php
+class DB_Pager_Sliding extends Pager_Sliding {
+```
+
+## 构造函数
+
+### `DB_Pager_Sliding()`
+
+构造函数，接收父类的参数。
+
+```php
+function DB_Pager_Sliding($params) {
+    parent::Pager_Sliding($params);
+}
+```
+
+## 方法
+
+### `getRowsPerPage()`
+
+返回每页行数。
+
+```php
+function getRowsPerPage() {
+    return $this->_perPage;
+}
+```
+
+### `getStartRow()`
+
+返回`SELECT`的起始行号。
+
+```php
+function getStartRow() {
+    if ($this->_currentPage == 0) {
+        return $this->_perPage;
+    } else {
+        return ($this->_currentPage - 1) * $this->_perPage;
+    }
+}
+```
+
+# 滑动页码
+
+这个扩展类提供了我们构建查询所需的信息。现在，让我们在“如何在表格中显示数据？”中构建的用户表上添加分页器。
+
+文件：`4.php`（节选）
+
+```php
+// 引入 PEAR::HTML_Pager_Sliding 类
+require_once 'HTML/Sliding.php';
+
+// 引入扩展类
+require_once 'DB_Pager_Sliding.php';
+
+// 实例化 MySQL
+$db = new MySQL($host, $dbPass, $dbName);
+
+$sql = "SELECT COUNT(*) AS num_rows FROM user";
+$result = $db->query($sql);
+$row = $result->fetch();
+
+// 定义分页器设置
+$pager_params = array(
+    // 总行数
+    'totalItems' => $row['num_rows'],
+    // 每页行数
+    'perPage' => 10,
+    // 滑动跨度 +/-
+    'delta' => 2,
+    // 链接之间的分隔符
+    'separator' => ',',
+    'spacesBefore' => 2,
+    'spacesAfter' => 2,
+    // url 变量
+    'urlVar' => 'page',
+    // 浏览器状态文本
+    'altPrev' => '上一页',
+    'altNext' => '下一页',
+    'altPage' => '页: ',
+    // CSS 类名
+    'curPageClassName' => 'currentPage',
+    'linkClass' => 'pageLink'
+);
+
+// 实例化分页器
+$pager = new DB_Pager_Sliding($pager_params);
+
+// 获取链接
+$links = $pager->getLinks();
+```
+
+# 第9章：Web元素
+
+我们现在可以修改查询以使用分页器生成的 `LIMIT` 子句：
+
+文件：`4.php`（节选）
+
+```php
+// 基础 SQL 语句
+$sql = "SELECT * FROM user";
+
+// 允许按列排序的 switch
+switch ($_GET['sort']) {
+    case 'login':
+        $sql .= " ORDER BY login";
+        break;
+    case 'email':
+        $sql .= " ORDER BY email";
+        break;
+    default:
+        $sql .= " ORDER BY firstName ASC";
+        break;
+}
+
+// 添加 LIMIT 子句
+$sql .= " LIMIT " . $pager->getStartRow() . ", " . $pager->getRowsPerPage();
+```
+
+现在剩下的工作是在分页器设置中定义`currentPage`和`pageLink`的 CSS 类，并在表格下方显示链接：
+
+文件：`4.php`（节选）
+
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title type="text/html; charset=iso-8859-1">用户</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<style type="text/css">
+.currentPage {
+    font-family: verdana;
+    font-size: 10px;
+    font-weight: bold;
+    color: red;
+}
+.pageLink {
+    font-family: verdana;
+    font-size: 10px;
+    color: red;
+}
+</style>
+</head>
+<body>
+<?php
+// 显示表格
+echo $table->toHTML();
+?>
+<div align="center">
+<?php
+// 显示分页链接
+echo $links['all'];
+?>
+</div>
+</body>
+</html>
+```
+
+注意，我们在这里没有复制构建表格的代码，但请放心，你会在此解决方案相关的代码中找到它。
+
+`Pager_sliding` 类以数组形式提供了构建好的链接。我们可以单独访问每个链接，如果我们想对分页器在页面上的位置有更多控制，这将非常方便；或者我们可以像这里做的那样使用`$links['all']`显示完整的分页。
+
+图 9.2 显示了完整的表格以及分页链接。
+
+# 9.2. 分页所有用户...
+
+| 登录 | 姓名 | 电子邮件 |
+| :--- | :--- | :--- |
+| hwilliam | Hale Williams | hwilliam@mysql.com |
+| jschwarzenegger | John Schwarzenegger | jschwarzenegger@hotmail.com |
+| jwillis | John Willis | jwillis@mysql.com |
+| mmoore | Madeline Moore | mmoore@myphp.com |
+| mschwarzenegger | Madeline Schwarzenegger | mschwarzenegger@yahoo.co.uk |
+| rtravolta | Madeline Travolta | rtravolta@mysql.com |
+| rtravolta | Robin Travolta | rtravolta@hotmail.com |
+| rwillis | Robin Willis | rwillis@mysql.com |
+
+# 第 9 章：Web 元素
+
+`Pager_Sliding` 类棒的地方在于它显示的页码范围会反映访问者正在查看的页面。随着表格的增长，导航仍然很方便。这在处理大型数据集时很重要；如果查询返回超过十页的结果，如果没有“滑动分页器”，你的 Web 页面上将显示一长排页码，这既难看又难以导航。`Pager_Sliding` 类帮助你实现类似于 Google[3] 使用的分页器，搜索通常会返回数百条结果。
+
+# 如何在 PHP 中处理 HTML 表单？
+
+> “能力越大，责任越大。”
+> 
+> —— 蜘蛛侠的本叔叔
+
+与链接和 URL 相比，HTML 表单提供了一种更强大的机制来接受来自网站访问者的信息。表单允许你开发复杂的界面，例如允许用户从动态生成的列表中选择值、输入大段文本，甚至可以上传文件。表单可以实现从简单的留言板到复杂的注册和身份验证系统的任何功能。随着功能的增加，问题范围也随之扩大。你如何验证表单？如果表单填写不正确该怎么办？如何用数据库数据填充表单？这些只是你在处理表单时面临的几个挑战；还有更多问题。
+
+## HTTP 请求方法
+
+互联网的 HTTP 协议（通常用于获取 Web 页面）定义了浏览器可以向 Web 服务器发送请求和数据的多种“方法”。最重要的两个`GET`方法和`POST`方法。
+
+`GET`是互联网的“默认”方法，每当你使用浏览器请求页面时都会使用。请求中的所有数据必须编码在 URL 中。
+
+`POST`通常用于提交表单。它允许随请求一起发送额外的表单数据。
+
+## 表单处理指南
+
+- 在 HTML 中声明表单时，请使用`POST`方法。这可以防止表单值出现在 URL 中，并允许通过表单提交更多数据。
+- 当使用 PHP 值填充表单字段时，请使用 PHP 的`htmlspecialchars`函数，以避免 HTML 格式错误，正如第 5 章讨论的那样。
+- 不要完全依赖 JavaScript 验证。它可以提升用户体验，但旧的 JavaScript 验证可以很容易被用户绕过。
+- 如果使用普通的 HTTP，数据将以“明文”形式在互联网上发送。这意味着它可以被使用数据包嗅探器的人拦截。在发送财务详情等敏感信息时，请使用 SSL 等加密技术。
+
+## 使用 QuickForm 实战操作表单
+
+我假设你目前乐意使用我们最基础的表单功能。在这里，我们将关注另一个 PEAR 软件包——PEAR:HTML_QuickForm[4]。QuickForm 由 Bertrand Mansion 和 Adam Daniel 开发，它能够轻松从 PHP 渲染 HTML 表单……但不仅于此！QuickForm 提供了进一步的功能来帮助解决一系列其他问题，例如日历表单元素的生成，以及使用 PHP 和 JavaScript 进行验证。它会自动处理与魔术引号（magic quotes）相关的问题，如果你在使用 QuickForm，就不需要担心魔术引号是否开启。这些示例中使用的版本是 3.1。
+
+首先，是一个简单的示例：
+
+```php
+<?php
+// 引入 QuickForm 类
+require_once 'HTML/QuickForm.php';
+
+// 实例化 QuickForm 类
+$form = new QuickForm('QuickForm1', 'POST');
+
+// 添加一个名为 firstName 的文本输入字段，
+// 标记为 "Enter your name"
+$form->addElement('text', 'firstName', 'Enter your name');
+
+// 添加一个名为 submit 的提交按钮，文本为 "Send"
+// 按钮的内容
+$form->addElement('submit', 'submit', 'Send');
+
+// 如果表单已提交……
+if (isset($_POST['submit'])) {
+    // 显示提交的值 "firstName"
+    echo 'Hello ' . $form->getInputValue('firstName');
+} else {
+    // 如果未提交，则显示表单
+    $form->display();
+}
+?>
+```
+
+> [4] http://pcar.php.net/HTML_QuickForm
+
+# 第 9 章：网页元素
+
+这显示了一个用户可以输入名字的简单表单。
+
+以下是它生成的格式良好的 HTML：
+
+```html
+<table border="0">
+<form action="/sitepoint/WebPageElements/3.php" method="POST" name="QuickForm1" target="_self">
+<tr>
+<td align="right" valign="top">Enter your name /</td>
+<td nowrap="nowrap" valign="top" align="left"><input name="firstName" type="text" />
+</tr>
+<tr>
+<td align="right" valign="top">/ </td>
+<td nowrap="nowrap" valign="top" align="left"><input name="submit" value="Send" type="submit" /></td>
+</tr>
+</form>
+</table>
+```
+
+在这种情况下，我们使用了原生的`$_POST`来判断表单是否已提交。但我们不必这样做。如果使用 QuickForm 的验证功能，可以使用它的`validate`方法来检查表单是否已提交，并一次性确保它已通过正确验证。
+
+这里是同一个表单；这次它在 PHP 中使用 JavaScript 来检查是否输入名字，并在 JavaScript 被禁用时回退到 PHP 验证：
+
+```php
+<?php
+// 引入 QuickForm 类
+require_once 'HTML/QuickForm.php';
+
+// 实例化 QuickForm 类
+$form = new HTML_QuickForm('quickForm2', 'POST');
+
+// 添加一个 firstName 文本输入字段，标记为
+// "Enter your name"
+$form->addElement('text', 'firstName', 'Enter your name');
+
+// 使用 JavaScript 和 PHP 验证的规则
+$form->addRule('firstName', 'Please enter your name', 'required', 
+FALSE, 'client');
+
+// 添加一个名为 submit 的提交按钮，文本为 "Send"
+// 按钮的内容
+$form->addElement('submit', 'submit', 'Send');
+
+// 如果表单已提交……
+if ($form->validate()) {
+// 显示提交的值 "firstName"
+echo 'Hello ' . $form->getSubmitValue('firstName');
+} else {
+// 如果未提交，则显示表单
+$form->display();
+}
+?>
+```
+
+`Add`方法提供了为表单添加验证规则的方法。包含`client`元素告诉 QuickForm 在客户端使用 JavaScript 进行表单验证。请注意，当你使用客户端验证时，QuickForm 仍会对禁用 JavaScript 的浏览器在服务器端继续进行表单验证。
+
+我们使用`validate`方法来检查表单是否已提交。请注意，如果表单在 PHP 中验证失败，它将再次显示给用户，并附带一条告诉他们哪里错了的消息（图 9.3）。
+
+# ## 图 9.3. 现在，我的名字又是什么来着？
+
+*Enter your name*
+
+* 表示必填字段
+
+![](img/b7e89640aa5fa679509a99b07948ad75_292_0.png)
+
+# ## QuickForm 验证规则类型
+
+我们在上面使用了`required`。QuickForm 带有针对特定情况的内置规则，以及更通用的规则。支持的规则包括：
+
+- `required`: 必须填写
+- `maxLength`: 最大长度
+- `minlength`: 最小长度
+- `rangelength`: 长度范围
+- `email`: 有效的电子邮件地址
+- `emailorblank`: 有效的电子邮件地址或为空
+- `lettersonly`: 仅限字母 (a-z)
+- `alphanumeric`: 仅限字母和数字
+- `numeric`: 仅限数字
+- `nopunctuation`: 不含标点
+- `nonzero`: 不为 0
+
+| 规则 | 描述 |
+|---|---|
+| required | 必须填写 |
+| maxLength | 限制最大长度 |
+| minlength | 限制最小长度 |
+| rangelength | 限制长度范围 |
+| email | 有效的电子邮件地址 |
+| emailorblank | 有效的电子邮件地址或为空 |
+| lettersonly | 仅限字母 (a-z) |
+| alphanumeric | 仅限字母和数字 |
+| numeric | 仅限数字 |
+| nopunctuation | 不含标点 |
+| nonzero | 不为 0 |
+
+你可以使用`addRule`方法为任何 QuickForm 字段添加一个或多个规则：
+
+```
+addRule(element, message, type, format[, validation]])
+```
+
+上述参数中：
+
+- `element`是你使用`addElement`方法分配给元素的名称
+- `message`是用户违反此规则时显示给用户的文本
+- `type`是规则类型（上所示）
+- `format`是规则的参数，例如最小长度或用于 regex 类型的正则表达式
+- `validation`可以是`server`或`client`；如果使用`client`，将同时执行 JavaScript 和 PHP 验证
+- `reset`如果为 `TRUE`，会在错误重新显示表单时清空相关的表单字段
+- `force`让 QuickForm 即使在表单不存在也应用验证规则，这对于动态生成表单很有用
+
+## 今天就注册
+
+
+
+现在你已经更熟悉`QuickForm`了，该用它做些更有趣的事情了。让我们构建一个注册表单来向`users`表中添加新账户。这意味着将再次使用第 3 章中的`MySQL`类。开始吧……
+
+> 文件：`7.php`（片段）
+
+```php
+<?php
+// 引入 MySQL 类
+require_once 'MySQL.php';
+
+// 引入 QuickForm 类
+require_once 'HTML/QuickForm.php';
+
+$host = 'localhost'; // MySQL 服务器主机
+$dbUser = 'harry'; // MySQL 用户名
+$dbPass = 'secret'; // 用户密码
+$dbName = 'sitepoint'; // 数据库名称
+```
+
+在开始时，我们包含了需要的类，并设置了数据库变量。接下来，我们将定义三个函数，`QuickForm`将使用这些函数对从表单接收的值执行操作：
+
+```php
+// 用于比较密码的函数
+function cmpPass($element,$confirmPass)
+{
+    global $form;
+    $password = $form->getElementValue('password');
+    return $password == $confirmPass;
+}
+```
+
+```php
+// 用于应用 mysql_real_escape_string 的函数
+function escapeValue($value)
+{
+    return mysql_real_escape_string($value);
+}
+```
+
+```php
+// 用于加密密码的函数
+function encryptValue($value)
+{
+    return md5($value);
+}
+```
+
+`cmpPass`函数将用于验证表单的“确认密码”字段，该字段必须与“密码”字段匹配。注意，此函数将`$form`声明为全局变量，以便在函数内部访问它。通常情况下，使用`global`关键字并不是一个好主意；在复杂的应用程序中，它可能会导致与其他同名变量发生冲突。在`QuickForm`的当前版本中我们没有选择，希望未来能发生改变。
+
+`escapeValue`和`encryptValue`函数用于在值提交后对其进行“过滤”。正如你在第 3 章中遇到 SQL 注入攻击时所知到的，在将所有数据插入数据库之前对其进行转义至关重要，因此有了`escapeValue`函数。而`encryptValue`函数将执行必要的加密。有关此的更多信息，请参见第二卷第 1 章，我们在那里构建了一个包含此功能的用户验证系统。
+
+接下来，我们实例化类，创建所有表单字段，并对它们应用规则：
+
+```php
+// 实例化 QuickForm 类
+$form = new HTML_QuickForm('regForm', 'POST');
+```
+
+```php
+// 注册比较函数
+$form->registerRule('compare', 'function', 'cmpPass');
+
+// 登录字段
+$form->addElement('text', 'login', '期望的用户名');
+$form->addRule('login', '请提供用户名', 'required', FALSE, 'client');
+$form->addRule('login', '用户名长度至少为 6 个字符', 'minlength', 6, 'client');
+$form->addRule('login', '用户名不能超过 50 个字符', 'maxLength', 50, 'client');
+$form->addRule('login', '用户名只能包含字母和数字', 'alphanumeric', NULL, 'client');
+
+// 密码字段
+$form->addElement('password', 'password', '密码');
+$form->addRule('password', '请提供密码', 'required', FALSE, 'client');
+$form->addRule('password', '密码长度至少为 6 个字符', 'minlength', 6, 'client');
+$form->addRule('password', '密码不能超过 12 个字符', 'maxLength', 50, 'client');
+$form->addRule('password', '密码只能包含字母和数字', 'alphanumeric', NULL, 'client');
+
+// 确认密码的字段
+$form->addElement('confirmPass', 'confirmPass', '确认密码');
+$form->addRule('confirmPass', '请确认密码', 'required', FALSE, 'client');
+$form->addRule('confirmPass', '密码必须匹配', 'compare', 'function');
+
+// 电子邮件字段
+$form->addElement('text', 'email', '电子邮件地址');
+$form->addRule('email', '请输入电子邮件地址', 'required', FALSE, 'client');
+$form->addRule('email', '请输入有效的电子邮件地址', 'email', FALSE, 'client');
+$form->addRule('email', '电子邮件不能超过 50 个字符', 'maxLength', 50, 'client');
+```
+
+```php
+// 名字字段
+$form->addElement('text', 'firstName', '名');
+$form->addRule('firstName', '请输入您的名字', 'required', FALSE, 'client');
+$form->addRule('firstName', '名字不能超过 50 个字符', 'maxlen', 50, 'client');
+```
+
+```php
+// 姓氏字段
+$form->addElement('text', 'lastName', '姓');
+$form->addRule('lastName', '请输入您的姓', 'required', FALSE, 'client');
+$form->addRule('lastName', '姓氏不能超过 50 个字符', 'maxlen', 50, 'client');
+```
+
+```php
+// 签名字段
+$form->addElement('textarea', 'signature', '签名');
+```
+
+```php
+// 添加一个名为 submit 的提交按钮，并将“注册”作为按钮的文本
+$form->addElement('submit', 'submit', '注册');
+```
+
+注意，向字段添加多个规则是完全可以的，因为可能有多个必须满足的条件。
+
+现在，我们使用`if-else`条件来查看表单是否通过了验证：
+
+```php
+// 如果表单已提交...
+if ($form->validate()) {
+```
+
+如果是的话，我们使用`applyFilter`方法调用`QuickForm`将上面定义的`escapeValue`过滤函数应用到表单的每个字段：
+
+```php
+// 对所有字段应用 escape 过滤器
+$form->applyFilter('__ALL_', 'escapeValue');
+```
+
+我们还应用加密密码的过滤器：
+
+```php
+// 对密码应用加密过滤器
+$form->applyFilter('password', 'encryptValue');
+```
+
+```php
+// 实例化 MySQL 类
+$db = new MySQL($host, $user, $pass);
+
+// 使用提交的值构造查询
+$sql = "INSERT INTO user SET
+login='" . $form->getElementValue('login') . "',
+password='" . $form->getElementValue('password') . "',
+email='" . $form->getElementValue('email') . "',
+firstName='" . $form->getElementValue('firstName') . "',
+lastName='" . $form->getElementValue('lastName') . "',
+signature='" . $form->getElementValue('signature') . "';
+
+// 执行查询
+$result = $db->query($sql);
+
+// 如果一切顺利，表示感谢
+if (!$result->isError()) {
+    echo '感谢完成';
+} else {
+    // 如果不是，显示表单
+    $form->display();
+}
+?>
+```
+
+从图 9.4 的结果可以看出，`QuickForm`让构建变得非常简单。
+
+## 图 9.4：使用 QuickForm 注册
+
+使用`QuickForm`还可以做更多，包括配置字段外观、处理其他类型的字段（下拉菜单、复选框），甚至分组字段（如电话号码）。我们将下一个解决方案处理文件上传。有关修改表单的示例，请参见第二卷第 1 章。
+
+## 如何用 PHP 上传文件？
+
+允许网站成员上传文件到站点通常非常方便——这样其他成员就可以下载它们，例如。使用 PHP 的解决方案总是非常简单。注意，完整的文档可以在 PHP 手书中找到[7]。
+
+## 设置最大上传大小
+
+PHP 在`php.ini`中有两个设置限制文件上传的最大大小。第一个是`post_max_size`，控制通过 POST 方法发送的最大数据量。默认设置为 8 兆字节。第二个设置`upload_max_filesize`专门限制上传文件的大小，默认设置为 2 兆字节。如果你会有大文件上传，可能需要增加这两个设置。详情请参见附录 A。
+
+如果你熟悉 HTML 表单，可能已经知道向表单添加文件上传字段是一件很容易的事。你只需要为`form`标签添加`entype="multipart/form-data"`属性，并在表单中添加必要的输入标签：
+
+```html
+<input type="file" name="fieldname" />
+```
+
+关于文件的信息包含在`$_FILES`数组中，其键对应表单字段名（即`$_FILES['fieldname']`）。当文件上传到 PHP 脚本时，文件会被安全地存储在您的网站的临时目录（Linux 系统上为`/tmp`），并被赋予一个唯一的临时文件名，以便您的 PHP 脚本可以使用它。关于文件的信息存储在另一个数组中，包含五个值：
+
+```
+$_FILES['fieldname']['name'][]
+```
+
+文件的原始名称
+
+[7] http://www.php.net/features/file-upload.php
+
+```
+$_FILES['fieldname']['type']
+```
+
+文件的 MIME 类型[8]
+
+```
+$_FILES['fieldname']['tmp_name']
+```
+
+文件的临时名称和位置，是 PHP 在文件上传时创建的
+
+```
+$_FILES['fieldname']['error']
+```
+
+如果一切顺利，则为 0（错误代码请参阅 [PHP 手册][9]）
+
+```
+$_FILES['fieldname']['size']
+```
+
+以字节（bytes）计算的文件大小
+
+这是一个文件上传信息数组的示例，由 PHP 的`print_r`函数生成：
+
+```
+Array (
+    [name] => php_logo.gif
+    [type] => image/gif
+    [tmp_name] => /tmp/php1BB.tmp
+    [error] => 0
+    [size] => 3872
+)
+```
+
+掌握了这些知识，让我们来看一个简单的脚本，它可以接受 GIF 文件上传并将其复制到当前目录的`files`子目录下：
+
+```php
+<?php
+// 引入 Magic Quotes 过滤器
+require_once 'MagicQuotes/strip_quotes.php';
+
+// 如果表单已提交...
+if (isset($_POST['submit'])) {
+    // 如果文件是 GIF 图片
+    if ($_FILES['image']['type'] == 'image/gif') {
+        // 将文件从临时存储复制到最终位置
+        copy($_FILES['image']['tmp_name'], "./files/");
+    }
+$_FILES['image']['name']
+or die("Could not copy");
+
+// 显示关于文件的一些信息
+echo "File Upload Complete<br />\n";
+echo "Name: " . $_FILES['image']['name'] . " <br />\n";
+echo "Size: " . $_FILES['image']['size'] . " <br />\n";
+echo "Type: " . $_FILES['image']['type'] . " <br />\n";
+echo "<img src='files/" . $_FILES['image']['name'] . "'>";
+}
+
+// ...否则显示表单
+} else {
+?>
+<form method="POST"
+action="<?php echo $_SERVER['PHP_SELF']; ?>"
+enctype="multipart/form-data">
+Upload a GIF image: <input type="file" name="image" />
+<input type="submit" name="submit" value="Submit" />
+</form>
+<?php
+}
+?>
+```
+
+漂亮，瞬间文件上传！请查看图 9.5 的结果。
+
+### 图 9.5. PHP Logo 上传成功
+
+![](img/b7e89640aa5fa679509a99b07948ad75_303_0.png)
+
+File Upload Complete
+
+Name: php_logo.gif
+
+Size: 3872
+
+Type: image/gif
+
+## 注意事项
+
+也许你有一个更复杂的脚本，在其中你将临时名称传递给另一个 PHP 变量，执行了各种技巧，然后忘记了在代码中留下了一个漏洞——这个漏洞允许用户使用不同的文件名修改 PHP 变量的内容！在对上传的文件进行任何操作（例如将其复制到其他人可见的公共目录）之前，值得使用`is_uploaded_file`函数双检查上传的文件是否确实是正确的。在过去，人们曾欺骗 PHP 脚本，将一个包含密码的文件复制到公共目录，而不是实际上传的图片。宁可信谨慎，勿要事后后悔。
+
+## 使用 QuickForm 进行文件上传
+
+让我们让朋友`QuickForm`重新投入，并学习将文件存储在 MySQL 中。
+
+表单的构建与“如何在 PHP 中处理 HTML 表单？”中的示例非常相似：
+
+文件：`9.php`（节）
+
+```php
+<?php
+// 引入 MySQL 类
+require_once 'Database/MySQL.php';
+
+// 引入 QuickForm 类
+require_once 'HTML/QuickForm.php';
+
+$host = 'localhost'; // MySQL 主机
+$dbUser = 'harry'; // MySQL 用户
+$dbPass = 'secret'; // 密码
+$dbName = 'sitepoint'; // 数据库名
+
+// 应用 mysql_real_escape_string 的函数
+function escapeValue($value)
+{
+    return mysql_real_escape_string($value);
+}
+
+// 实例化 QuickForm
+$form = new QuickForm('imageUpload', 'POST');
+
+// 文件字段
+$form->addElement('file', 'image', 'Select Image:');
+$form->addRule('image', 'the maximum file size is 56KB', 'filesize', 57344);
+$form->addRule('image', 'The file must be an image', 'mime', array(['image/gif', 'image/jpeg', 'image/png']));
+$form->addRule('image', 'No file selected.', 'uploaded', NULL, 'client');
+
+// 提交按钮
+$form->addElement('submit', 'Upload');
+```
+
+注意我们应用了`mime`规则，它允许我们传递用户上传的 MIME 类型。现在事情变得有趣了。首先，我们获取文件的详情并使用 PHP 的`file_get_contents`函数将其加载到 PHP 变量中。注意 JPEG 文件可以报告为`image/jpeg`或`image/jpeg`，取决于浏览器；因此，它们都包含在接受类型列表中。虽然调用`applyFilter`方法转义了提交到表单的文本，但我们必须从`$form`对象获取与文件关联的值并使用`escapeValue`函数处理这些二进制数据：
+
+文件：`get.php`（节）
+
+
+
+```php
+<?php
+if ($form->validate()) {
+    // 对所有字段应用过滤器
+    $form->applyFilter('__ALL__', 'escape');
+
+    // 实例化 MySQL 类
+    $db = new MySQL($host, $dbUser, $dbPass, $dbName);
+
+    // 获取文件的详情
+    $name = escapeValue($form['image']['name']);
+    $size = escapeValue($form['image']['size']);
+    $type = escapeValue($form['image']['type']);
+
+    // 获取数据
+    $contents = file_get_contents($form['image']['tmp_name']);
+
+    // 转义二进制数据
+    $contents = escapeValue($contents);
+
+    $sql = "INSERT INTO image SET
+    name='$name',
+    size='$size',
+    type='$type',
+    contents='$contents';
+
+    // 执行查询
+    $result = $db->query($sql);
+
+    // 如果顺利
+    if ($result) {
+        echo 'File Uploaded';
+    } else {
+        echo 'Error';
+    }
+}
+?>
+```
+
+# 第 9 章：网页元素
+
+现在已经在数据库中上传了一些文件，如何显示它们？
+
+File: `10.php`
+
+```php
+<?php
+// 引入 MySQL 类
+require_once 'Database/MySQL.php';
+
+$host = 'localhost'; // MySQL 主机
+$dbUser = 'harry'; // MySQL 用户
+$dbPass = 'secret'; // 密码
+$dbName = 'sitepoint'; // 数据库名
+
+$db = new MySQL($host, $dbUser, $dbPass, $dbName);
+
+// 获取信息的 SQL 语句
+$sql = "SELECT name, size, type FROM image ORDER BY name";
+
+// 获取结果
+$result = $db->query($sql);
+
+// 循环每一行
+while ($row = $result->fetch()) {
+    echo "<img src=' . $row['name'] . "><br />";
+    echo $row['name'] . ": ";
+    echo $row['size'] . ": ";
+    echo $row['type'] . "<br />";
+}
+?>
+```
+
+现在生成了一些使用`img`标签指定图片 MIME 类型的 HTML。否则，这将迅速消耗 PHP 的内存。
+
+这是它生成的 HTML：
+
+11.php
+
+现在，在`11.php`显示生成图片的代码：
+
+File: `11.php`
+
+```php
+<?php
+// 引入 MySQL 类
+require_once 'Database/MySQL.php';
+
+$host = 'localhost'; // MySQL 主机
+$dbUser = 'harry'; // MySQL 用户
+$dbPass = 'secret'; // 密码
+$dbName = 'sitepoint'; // 数据库名
+
+$db = new MySQL($host, $dbUser, $dbPass, $dbName);
+
+// 如果没有图片，则退出
+if (!isset($_GET['id'])) {
+    die('No image selected');
+}
+
+// 转义字符串，良好的习惯
+$_GET['id'] = mysql_real_escape_string($_GET['id']);
+
+// 获取图片内容和 MIME 类型的 SQL 语句
+$sql = "SELECT * FROM image WHERE image_id=' . $_GET['id'] . " ";
+
+// 获取数据
+$result = $db->query($sql);
+$row = $result->fetch();
+
+// 使用 告诉浏览器图片的 MIME 类型
+header('content-disposition: inline; filename=' . $row['name']);
+header('content-type: ' . $row['type']);
+header('content-length: ' . $row['size']);
+
+// 显示内容
+echo $row['contents'];
+?>
+```
+
+我们使用了头部函数来命名、类型 Web 浏览器指令（HTTP 头部），这些指令指示了我们即将看到的图像文件的名称、类型和大小。有关所使用的头部的更多信息，请参见第 4 章。
+
+## 如何使用 PHP 和 MySQL 构建有效的导航？
+
+一个健壮的导航系统是网站最关键的元素之一。做好了，访客会连续浏览好几个小时；做错了，你可能会发现自己出现在`http://www.webpagethastuck.com/`的“常客客”上。好消息是，这是一个被深耕过的领域；制作成功导航系统的要素已经有了明确定义。
+
+在这里，我们将学习如何为分级分类结构组合两种最稳健且广泛使用的导航类型：面包屑（crumb trail）和树形菜单（tree menu）。
+
+请注意，我使用的数据库结构方法被称为邻接列表模型（adjacency list model）。这种方法可能是容易理解且被广泛使用的。它通常不是在数据库中存储层次信息的最佳方法，因为分析数据和重构树需要大量的处理。如果你需要存储大量的层次级数据，更好的模型是修改后的先序树遍历模型（也称为嵌套集合，nested sets），文章《在数据库中存储层次数据》[11] 中描述。
+
+`PEAR::Tree` [12] 提供了一个处理嵌套集合的有用类。更多信息请参见本章末尾的“延伸阅读”部分。
+
+## 汉塞尔与格蕾尔
+
+面包屑导航旨在帮助用户理解自己在网站中的位置，并帮助他们回到来处。你可能在互联网的某处看到过面包屑导航；例如，如果你访问 SitePoint 的高级 PHP 论坛 [13]，你会在顶部看到面包屑导航，如图 9.6 所示。
+
+![图 9.6 SitePoint 上的面包屑](img/b7e89640aa5fa679509a99b07948ad75_309_0.png)
+
+SitePoint 社区论坛 / 构建你的网站 / PHP / 高级 PHP 编程
+
+每个正斜线之间的文本是一个“面包屑”，点击它将把用户带到网站内的特定位置。
+
+顺便说一下，它们被称为“面包屑”，是参考了格姆兄弟的童话《汉塞尔与格蕾尔》——你可能记得，那是关于两个孩子用面包标记他们在森林中的路径以便他们找到回家的故事。
+
+## 迷失在树中
+
+树形菜单在软件应用程序中无处不在，已应用于从文本驱动的 DOS 应用程序到 Windows 和 Linux 对应的“开始”按钮的方方面面。在 Web 上，树形菜单的应用效果不一，即使用 JavaScript，但它的支持程度各不相同。然而，没有什么能阻止纯用 HTML 构建树形菜单，在 HTML 中点击菜单项即可更新菜单。
+
+处理树形菜单的方法有很多。为了让你的生活更轻松，我整合了一组提供各种形式树数据结构的类。我将由你决定如何使用它们来构建你的 HTML（或 JavaScript）菜单。
+
+## 递归表结构
+
+不仅设计菜单本身有多种方法，构建菜单所需的信息也有许多策略。有些人可能认为文本文件最好，有些人更倾向于复杂的 PHP 数组，另一些推崇 XML 文档，还有人主张使用数据库。每种方法都有优缺点，尽管未来 XML 可能会成为存储此类信息的流行机制，因为对于开发者来说它是更容易的一种格式。
+
+在这里，我们将采用最后一种方法：将数据存储在 MySQL 中。这种方法使得构建和获取菜单变得简单——只需向表中插入新行并在其中进行选择即可。它还让在“样式”中构建最终菜单变得容易；其他方法（如文本文件）可能会将我们绑定在特定的菜单设计上，并在开发过程中需要一些繁琐的文本编辑。
+
+MySQL 的缺点是，在没有方便的存储过程帮助的情况下，我们必须一次性获取菜单表的所有内容，并使用 PHP 对其进行处理以反映我们所需的结构。执行多次查询来构建菜单可能会拖慢应用程序，并随着每个菜单项的增加而增长。MySQL 的另一个问题是编辑和删除菜单项，这将影响菜单“分支”之间的关系。我们在这里解决第一个问题，留给你去思考如何实现。
+
+让我们再次看看我们将要使用的表结构：
+
+```sql
+CREATE TABLE menu (
+  menu_id INT(11) NOT NULL AUTO_INCREMENT,
+  parent_id INT(11) NOT NULL DEFAULT '0',
+  name VARCHAR(255) NOT NULL DEFAULT '',
+  description TEXT NOT NULL,
+  location VARCHAR(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (menu_id),
+  UNIQUE KEY (location)
+)
+```
+
+在此表中，我们在行之间使用了递归关系；每行都有其自身的唯一`menu_id`（表的主键）以及将该行与其父行关联的`parent_id`。`parent_id`为 0 用于定义根节点。其他字段中，`name`是菜单项的名称。`description`允许我们提供关于项目的更多信息。更重要的是`location`字段，任何行的值都不能相同。图 9.7 显示了该表：
+
+| menu_id | parent_id | name | description | location |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | 0 | Home | | /news/ |
+| 2 | 1 | News | | /news/ |
+| 3 | 2 | About | | /about/ |
+| 4 | 3 | Contact | | /contact/ |
+| 5 | 4 | Products | | /products/ |
+| 6 | 5 | Pets | | /products/ |
+| 7 | 6 | Birds | | /pets/ |
+| 8 | 7 | Lions | | /pets/ |
+| 9 | 5 | Bookstore | | /bookstore/ |
+| 10 | 9 | Fiction | | /books/ |
+| 11 | 9 | Biographies | | /books/ |
+| 12 | 8 | Folio | | /about/ |
+
+现在我们准备好了表，可能需要一些代码来将其封装在 HTML 中。为了避免乏味，我们不会详细探讨每个类的内容。相反，我们将查看如何使用这个非常简单的 API。
+
+所有菜单类都包含在一个单一文件`Menu.php`中，它包含了：
+
+这是一个基类，从数据库中获取项并提供了一些重用方法（如`getMenu`），这些方法供`Menu`的子类使用。你不应该直接实例化`Menu`；相反，使用子类。我们稍后会查看这个；你可能需要根据表结构修改它。
+
+- `BreadCrumb` (继承 `Menu`)：如果你使用它，将获得一个从“根”面包屑开始的列表屑列表。
+- `ChildNodes` (继承 `Menu`)：此类创建给定项目下方所有菜单项的列表。它可以为面包屑元素提供“下拉”菜单，例如。
+- `ContextMenu` (继承 `Menu`)：此类显示与当前菜单项同一级的所有菜单项，以及当前菜单项下方级的。它可以与`BreadCrumb`结合使用，允许你的网站访问者水平和垂直地遍历菜单系统。
+- `CollapsingTree` (继承 `Menu`)：此类将始终显示根菜单项以及所有打开的子菜单，就像 Windows 中的“开始”菜单。
+- `FullTree`：此类以树的形式返回整个菜单结构，如果你正在构建一个需要整个菜单结构的 JavaScript 菜单，这可能有用。
+- `MenuItem`：这是一个独立类，用于从`Menu`类创建`MenuItem`对象。你将从`Menu`类返回大量的此类对象，并存储在数组中。它们包含表行的数据。
+- `Marker` (继承 `MenuItem`)：这是`MenuItem`类的一种特殊形式，用于标记开头。
+
+## 喂养鸟类
+
+树结构中占据同一层级的组菜单项的结束。
+
+关于`Menu`类需要注意的一点是它们会对菜单表执行全表扫描，并一次性获取所有内容。早些我建议不要进行全表扫描，但在这种情况下，这是“两害取其”的选择，另一种方法是使用大量的递归查询，这将极大地降低你应用程序的性能。
+
+你需要意识到，表中的行数越多，PHP 就需要更多的内存来处理这些类。由于菜单并不频繁更改，你可以通过某种形式的缓存来规避这个问题——我们将在第二卷第 5 章讨论这个主题。
+
+现在我已向你们介绍了这些类，第一件事就是不要恐慌！让我们通过示例来看看这些类是如何用的。
+
+## 喂养鸟类
+
+首先，让我们来看看`Breadcrumb`类。这是我们获取菜单的方式：
+
+文件：`12.php` (节选)
+
+```php
+// 实例化 MySQL 连接
+$db = &new MySQL($host, $dbUser, $dbPass, $dbName);
+
+// 设置此页面相对于 WebPageElements 的基础位置
+// 修改这里！！！
+$baseUrl = '/sitepoint/PageElements/12.php';
+
+// 获取位置片段以匹配菜单表
+$location = str_replace($baseUrl, '', $_SERVER['PHP_SELF']);
+
+// 实例化新的 Breadcrumb 类，传递 MySQL 连接
+// 和位置
+$crumbs = &new Breadcrumb($mysql, $location);
+```
+
+让我们回顾一下代码。首先，我们像往常一样构建了数据库的连接。接下来的命令获取 URL 的片段，使我们能够与菜单表进行匹配。（`img/breadcrumb_example.png`）
+
+# 第 9 章：Web
+
+注意，如果你正在尝试这段代码，你需要修改`$baseUrl`变量以适应你的环境。在定义`$baseUrl`后，我们可以使用`$_SERVER['PHP_SELF']`获取相对于 Web 根目录的完整 URL，然后剥离`$baseUrl`。这留下了一个我们可以与菜单表匹配的字符串。我采用这种方法是为了示例，因为它允许我通过单个脚本进行演示。考虑这个 URL：
+
+`http://localhost/sitepoint/WebPageElements/12.php/products/`
+
+采用那种方法，你可能会使用`$_SERVER['PATH_INFO']`变量来获取脚本位置，并根据此选择菜单。不过，你不必这样做。例如，你可能会有多个使用相同代码的脚本——可能是一个包含文件——来显示正确的菜单：
+
+`http://www.example.com/products/index.php`
+
+但让我们回到那个使用后缀作为菜单位置的单脚本示例上。接下来是所有操作发生的那行代码：
+
+```php
+$crumbs = &new Breadcrumb(mysql, location);
+```
+
+这实例化了`Breadcrumb`类并传递了 MySQL 对象，它使用该对象从菜单表中获取数据，并使用`location`变量找到用户在菜单中的当前位置。`Breadcrumb`类已准备好完成所有工作并自动构建菜单。菜单在哪里呢？嗯，我不能让事情变得太容易，对吧？在 HTML、JavaScript 或其他任何格式中生成菜单取决于你。`Breadcrumb`类返回一个菜单项列表，然后你需要对其进行格式化。这是你可以采用的一种方法：
+
+文件：`12.php` (节选)
+
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/DTD/xhtml-transitional.dtd">
+```
+
+
+
+```html
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>面包屑菜单示例</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <style type="text/css">
+body,
+li {
+    font-family: verdana;
+    font-size: 11px;
+  }
+h1 {
+    font-family: verdana;
+    font-size: 15px;
+    color: navy;
+  }
+.breadcrumbs {
+  margin-bottom: 10px;
+  border-style: dashed;
+  border-width: 2px;
+  padding: 4px;
+  width: 400px;
+}
+</style>
+</head>
+<body>
+<h1>面包屑菜单</h1>
+<div class="breadcrumbs">
+<?php
+// 显示面包屑
+while ($item->isRoot()) {
+  echo "<a href=\"" . $baseURL . $item->location() . "\">" . $item->name . "</a>";
+} else {
+  echo "><a href=\"" . $baseURL . $item->location() . "\">" . $item->name . "</a>";
+}
+?>
+</div>
+<br />
+<a href="<?php echo $baseURL; ?>/contact/">Contact</a><br />
+<a href="<?php echo $baseURL; ?>/about/folio">Folio</a><br />
+```
+
+```html
+<a href="<?php echo $baseUrl; ?>/products/"></</a><br />
+<a href="<?php echo $baseUrl; ?>/products/books/fiction/"></</a><br />
+</body></html>
+```
+
+稍微简化一下，菜单构建的实际工作在这里处发生：
+
+```php
+while ($item = $breadcrumbs->fetch()) {
+    if ($item->isRoot()) {
+        echo "<a href=\"" . $baseUrl . $item->location() . "\">" . $item->name . "</a>";
+    } else {
+        echo " <a href=\"" . $baseUrl . $item->location() . "\">" . $item->name . "</a>";
+    }
+}
+```
+
+迭代器方法 `fetch` 用于读取菜单项列表，在到达末尾时返回 `FALSE`（关于迭代器的更多信息，请参见第二卷第 7 章）。返回的每个项目都是 `MenuItem` 类的实例，我们稍后会查看它。
+
+| 方法 | 说明 |
+| :--- | :--- |
+| `isRoot()` | 如果这是树的根，返回 `TRUE`。 |
+| `location()` | 返回菜单表中的位置。 |
+| `name()` | 返回菜单表中的名称。 |
+
+正如你已经看到的，使用 `Breadcrumb` 类提供了一种轻松返回的方法，而不是前进的方法。（`img/breadcrumb_example.png`）
+
+## 图 9.9. 带有面包屑导航的上下文菜单
+
+| [ 上上下文菜单 + 面包屑示例 ] - Opera |
+| --- |
+| 文件 编辑 视图 导航 书签 邮件 窗口 帮助 |
+| > ◒ 📄 🔍 🌐 |
+
+上下文相关 + 面包屑菜单
+
++   * 产品 > 书籍
+
+  * URL 为 `/sitepoint/WebPageElements/13.php/products/books/`
+
+  * 基准 URL 为 `/sitepoint/WebPageElements/13.php`
+
+  * 位置片段为 `/products/books/`
+
+  * 书籍
+
+    * 传记
+
+    * 虚构小说
+
+## 下拉菜单
+
+使用 `ChildNodes` 类，我们可以在面包屑导航的末尾附加一个下拉菜单。
+
+```
+// 设置相对于 Web 根目录的此页面基准位置
+// 修改此处！！！(MODIFY = THIS!!!) 
+$baseUrl = '/sitepoint/WebPageElements/14.php';
+
+// 获取位置片段以匹配菜单表
+$location = str_replace($baseUrl, '', $_SERVER['PHP_SELF']);
+
+// 实例化新的 BreadCrum 并传递 MySQL 连接和位置
+$crumbs = &new BreadCrum($db, $location);
+
+// 获取面包屑的数量
+$size = $crumbs->size();
+
+// 实例化 ChildNodes 类
+$menu = &new ChildNodes($db, $location);
+```
+
+# 第 9 章：网页元素
+
+注意，`size` 方法可以用于任何菜单类，以获取菜单中的项目数量。在这种情况下，我们需要知道面包屑的数量，以便我们能在正确的位置附加下拉菜单：
+
+```php
+<?php
+// 显示面包屑
+$i = 1;
+while ($crumb = $breadcrumbs->fetch()) {
+    echo "<td class='menu' href="" . $baseUrl .
+    $crumb->location() . ">" 
+    $crumb->name() . "</td><br />";
+}
+// 检查现在是否为附加下拉菜单的位置
+if ($i == $size) {
+    // 显示子节点
+    while ($item = $items->fetch()) {
+        echo "<a href="" . $baseUrl . $item->location() . ">\> 
+        $item->name() . "</a><br />";
+    }
+    $i++;
+}
+echo "</td>";
+?>
+```
+
+文件：`14.php`（节录）
+
+图 9.10 显示了下拉菜单的运行。
+
+## 图 9.10. 带有下拉菜单的面包屑路径
+
+![](img/b7e89640aa5fa679509a99b07948ad75_321_0.png)
+
+## 子菜单 + 面包屑菜单
+
++   产品 书籍
+
+- 传记
+
+- 虚构小说
+
+注意，我们根据当前位置构建了 `ChildNodes`：
+
+```
+$menu = &new ChildNodes($db, $location);
+```
+
+但并不非要这样。例如，我们可以这样做：
+
+```
+while ($crumb = $crumbs->fetch()) {
+$menu = &new ChildNodes($db, $crumb->location());
+}
+```
+
+这为每个面包屑构建了一个子菜单，而不是使用 `$location` 的当前值。这样做的处是，我们可以使用 JavaScript 显示下拉菜单，例如，当访问者将鼠标移动到每个面包屑上时让它们展开。
+
+## 折叠树菜单
+
+接下来是 `CollapsingTree` 类。折叠树将始终显示菜单的根元素，以及当前位置的子节点和当前位置与根之间的所有项目。这与 Windows 和 Linux 中的“开始”类型菜单类似；当你沿菜单树进一步向下导航时，你之前用于导航的菜单将保持打开状态。请注意，该类的工作量最大，因此它会比其他类慢，尽管它可能提供了最有用的导航功能。
+
+我们获取菜单的方式与之前的示例相同：
+
+```
+// 设置相对于 Web 根目录的此页面基准位置
+// 修改此处！！(MODIFY THIS!!)
+$baseUrl = '/sitepoint/WebPageElements/15.php';
+
+// 获取位置片段以匹配菜单表
+$location = str_replace($baseUrl, '$', $_SERVER['PHP_SELF']);
+
+// 实例化新的 BreadCrumb 并传递 MySQL 连接和位置
+$crumbs = &newBreadCrumb($db, $location);
+
+// 实例化 CollapsingTree 类
+$menu = &newCollapsingTree($db, $location);
+```
+
+由于菜单以对象形式存储，我们可以像以前一样构建页面。这次，为了渲染菜单项本身，我们将使用其他“技巧”让导航具有略有不同的外观：
+
+```
+// 为菜单项定义一些符号，在这种情况下只是空格
+$bullet = '&nbsp;&nbsp';
+
+// 设置菜单的当前深度
+$depth = 0;
+
+// 显示折叠树菜单
+while ($item = $menu->fetch()) {
+  // 如果这是新菜单分支的开始，增加深度
+  if ($item->isStart()) {
+    $depth++;
+  // 如果这是菜单分支的结束，减少深度
+  } else if ($item->isEnd()) {
+    $depth--;
+  }
+  // 显示菜单项
+  } else {
+    // 重置符号
+    $bullets = '';
+  }
+// 根据当前深度构建符号
+```
+
+## 全树形菜单
+
+```
+for ($i = 0; $i <= $depth; $i++) {
+    $bullets .= $bullet;
+}
+
+// 构建 onMouse 描述
+$mouseOver = " onmouseover="window.status='"
+    addslashes($item->description))
+    ";return true="
+    "onMouseOut="window.status='';return true";
+
+// 显示带有符号的菜单项
+echo $bullets .= "<a href=" . $baseUrl . "" . $item->location() . 
+    """ . $mouseOver . " ">" . $item->name() . "</a><br/>";
+```
+
+在这里，我们通过开始和结束标记来跟踪层级中当前项目的深度。根据菜单项的深度，我们可以修改每个项目的“符号”；在这种情况下，我使用了 HTML 空格实体 (`&nbsp;`) 来营造缩进的外观。结果如图 9.11 所示。
+
+## 9.11. 折叠菜单
+
+折叠菜单 + 面包屑导航
+
+| 首页 > 新闻 |
+| --- |
+| URL 为 `/sitepoint/WebPageElements/15.php/products/` |
+| 基准 URL 为 `/sitepoint/WebPageElements/15.php` |
+| 位置片段为 `/news/` |
+| 关于 |
+| 产品 |
+| --- |
+| 传记 |
+| 虚构小说 |
+
+折叠菜单适用于需要 JavaScript 的菜单。全树形菜单
+
+`FullTree` 类获取整个。考虑到浏览器兼容性，使用 CSS 缩进菜单是可行的。`FullTree` 类与一常一样。
+
+# 第 9 章：网页元素
+
+这允许你在代码内部覆盖这些常量中的任何一个，并允许你使用与此处使用的名称不同的表格和列。
+
+## 总结
+
+以下是一个“模拟”脚本，演示了所有 Menu 类及其方法的使用。每个方法都用注释进行了说明。
+
+文件： `17.php`
+
+```php
+<?php
+// 实例化 MySQL 连接
+$db = &new MySQL($host, $dbUser, $dbPass, $dbName);
+
+// 构建位置变量，例如
+$baseUrl = '/index.php';
+$location = str_replace($baseUrl, '', $_SERVER['PHP_SELF']);
+
+// 实例化菜单，使用以下之一
+$menu = &new BreadCrumb($mysql, $location);
+$menu = &new ChildNodes($mysql, $location);
+$menu = &new ContextMenu($mysql, $location);
+$menu = &new CollapsingTree($mysql, $location);
+$menu = &new FullTree($mysql, $location);
+
+// 如果需要，获取菜单中有多少个项目
+$size = $menu->size();
+
+// 遍历所有项目
+while ($item = $menu->fetch()) {
+    if ($item->isStart()) {
+        // 这是一个显示子菜单开始的标记
+    } else if ($item->isEnd()) {
+        // 这是一个显示子菜单结束的标记
+    } else {
+        if ($item->isCurrent()) {
+            // 这是对应当前位置的菜单项
+        }
+        $item->id(); // 来自 menu 表的 id
+        $item->parent_id(); // 来自 menu 表的 parent_id
+        $item->name(); // 来自 menu 表的 name 字段
+        $item->description(); // 来自 menu 表的 description 字段
+        $item->location(); // 来自 menu 表的 location 字段
+    }
+}
+```
+
+## 如何在 PHP 中制作“搜索引擎友好”的 URL？
+
+在典型的 PHP 应用中，你可能会有类似所示的 URL：
+
+`http://www.example.com/article.php?id=123&page=4`
+
+URL 中的 `id` GET 变量标识数据库中的某篇文章，而 `page` 变量告诉脚本应该显示文章的哪一页。但这里有一个小问题；许多搜索引擎会忽略 GET 变量，跳过 URL 中 `?` 之后的所有内容。Google 和 AllTheWeb 在它们将索引和不索引的内容方面甚至更加“谨慎”。
+
+为了解决这个问题，并开发出更便于人类操作的 URL 结构，最好使用如下所示的 URL：
+
+`http://www.example.com/article/123/4`
+
+实现这种改进的 URL 格式需要两个步骤：
+
+- 将查询字符串变量 (`?id=123&page=4`) 转换为路径格式 (`/123/4`)
+
+- 掩盖 PHP 脚本名称 (`/article.php`)，使其看起来像标准目录 (`/article`)
+
+在接下来的章节中，我将介绍并演示在 Apache 服务器上实现这些技术的技巧。
+
+关于构建搜索引擎友好 URL 和 Apache 的 `mod_rewrite` 的进一步阅读，请参阅“进一步阅读”章节。
+
+## 不使用查询字符串
+
+对于像你我这样的 Web 开发者来说，像 `?id=123&page=4` 这样的查询字符串完全易读。但典型的 Web 用户以及许多搜索引擎——对这种符号与信息的混合感到困惑。
+
+流行的 Apache 服务器有一个特别出色的特性是，当面对类似 `http://www.example.com/article.php/123/4` 的 URL 时，它足够智能，识别出 `article.php` 是文件名，以及其其后的所有内容 (`/123/4`)，我们称之为 URL 后缀。当然，诀窍在于让 PHP 使用该 URL 后缀并读取其中包含的值。
+
+幸运的是，虽然 Apache 对 URL 后缀视而不见，但 PHP 提供了几个可以用来收集这些信息的变量，即 `$_SERVER['PATH_INFO']`、`$_SERVER['PATH_SELF']`、`$_SERVER['REQUEST_URI']` 和 `$_SERVER['SCRIPT_NAME']`。以下脚本演示了它们的用法：
+
+```php
+<?php
+// 一些预定义的变量
+echo $_SERVER['PATH_INFO'] . ' @' . $_SERVER['PATH_INFO'] .
+'<br />';
+echo $_SERVER['PATH_SELF'] . ' @' . $_SERVER['PATH_SELF'] .
+'<br />';
+echo $_SERVER['REQUEST_URI'] . ' @' . $_SERVER['REQUEST_URI'] .
+'<br />';
+echo $_SERVER['SCRIPT_NAME'] . ' @' . $_SERVER['SCRIPT_NAME'] .
+'<br />';
+?>
+```
+
+文件： `18.php`
+
+如果你将此文件放在服务器上并加载它，例如 `http://www.example.com/php/WebPageElements/18.php`，输出为：
+
+```
+$_SERVER['PATH_INFO']: /this/is
+$_SERVER['PATH_SELF']: /phpanth/WebPageElements/18.php
+$_SERVER['REQUEST_URI']: /phpanth/WebPageElements/18.php
+$_SERVER['SCRIPT_NAME']: /phpanth/WebPageElements/18.php
+```
+
+乍看之下，变量并没有特别的启发性。但当我们添加 URL 后缀并查询字符串时（例如 `http://www.example.com/phpanth/WebPageElements/18.php`），会发生什么：
+
+
+
+进入`/path/to/xxx`目录，找到`xxx.json`。
+
+在表达式`cvar = avar + bvar`中，加法运算符（`+`）将`avar`与`bvar`相加，得到它们的和`cvar`
+
+在`List.of(arg0, arg1, arg2)`中，`List`接口的工厂方法`of()`接受一系列的元素，返回包含它们的只读列表。
+
+之后我们这样调用`cmd`命令：`cmd arg0 arg1 arg2`。
+
+```
+if (condVar > someVal) {console.log("xxx")}
+```
+
+---
+
+```
+$_SERVER['PATH_INFO']: /this/is
+$_SERVER['PATH_SELF']: /phpanth/WebPageElements/18.php
+$_SERVER['REQUEST_URI']: /phpanth/WebPageElements/18.php
+$_SERVER['SCRIPT_NAME']: /phpanth/WebPageElements/18.php
+```
+
+乍看之下，变量并没有特别的启发性。但当我们添加 URL 后缀并查询字符串时，会发生什么……（此处省略重复内容）
+
+更改 URL 中显示的文件名最直接的方法就是重命名文件；也就是说，我们可以简单地将脚本`.php`重命名为`article`。当然，如果没有`.php`扩展名，Apache 将无法得知该文件是一个 PHP 脚本。默认情况下，它将直接将未解析的 PHP 代码发送到浏览器——这绝对不是我们！
+
+为了纠正这个问题，我们需要告诉 Apache 将该文件视为 PHP 脚本。这可以通过`.htaccess`文件轻松实现，但首先你需要确保 Apache 已经配置为允许此操作。如果你在自己的服务器上工作，只需确保 Apache 的`httpd.conf`文件中将`AllowOverride`设置为`All`即可。如果你使用的是 Web 托管，则需要请求他们完成这项工作。完成后，将以下代码放入名为`.htaccess`的文件中，并将其保存在与要重命名的脚本相同的目录下：
+
+```
+<Files article>
+ForceType application/x-httpd-php
+</Files>
+```
+
+此指令告诉 Apache 将名为`article`的文件视为 PHP 脚本。简单，对吧？
+
+要尝试这种效果，请检查本章代码存档中的`forctype`目录。我设置了一个名为`article`的脚本和一个将其识别为 PHP 脚本的`.htaccess`文件。以下是`article`的代码：
+
+```php
+<?php
+// Include the PathVars class
+require_once 'Url/PathVars.php';
+
+// Create Instance of PathVars
+$PathVars = new PathVars($_SERVER['SCRIPT_NAME']);
+
+echo 'This is the article script<br/>';
+
+if ($PathVars->fetchIndex(0)) {
+echo 'The article ID is ' . $PathVars->fetchIndex(0);
+}
+?>
+```
+
+尝试在 URL 后缀中带有 article ID 加载（例如`http://www.example.com/phpanth/WebPageElements/forctype/article/123`）。如果 Apache 正确配置为允许`.htaccess`文件中的`ForceType`指令，它应该显示 ID。
+
+# 第 9 章：网页元素
+
+## 通过重写 URL 隐藏 PHP 脚本
+
+虽然`ForceType`是一个解决问题的巧妙方案，但另一种方案提供了更强大的功能，并且完全消除了 PHP 脚本文件名任何部分出现在 URL 中的需求。这种替代方案是`mod_rewrite`。这是一个可选的 Apache 模块，需要安装在你的服务器上，并且配合`ForceType`，你需要在`httpd.conf`中为你的网站设置`AllowOverride All`。
+
+通常情况下，`mod_rewrite`允许你检测浏览器对 URL 的请求，并指令 Apache 将其处理为就像是完全另一个 URL 的请求一样。在简单的情况下，你可以告诉 Apache 检测对例如`/article`的请求，并将其处理为像对`/article.php`的请求。当然，这与我们上面通过`ForceType`实现的效果并无区别，所以让我们更进一步，看看到`mod_rewrite`到底有多灵活！
+
+与其检测特定的 URL，我们不如使用`mod_rewrite`检测任何 URL并将请求指向单个 PHP 文件。让我们来看一个实现此操作的示例`.htaccess`文件：
+
+文件：`rewrite/.htaccess`
+
+```
+RewriteEngine On
+RewriteRule !(\.gif|\.jpg)?\.css|\.php|\images/.*\$) index.php [nocase,last]
+```
+
+`RewriteEngine`行简单地告诉 Apache 开启此目录的`mod_rewrite`处理；`RewriteRule`告诉 Apache 将所有请求发送`index.php`，但针对`.gif`、`.jpg`、`.jpeg`和`.php`文件或来自`images`和`files`子目录的任何请求除外，这些应该正常进行。
+
+显然，`index.php`变成了一个非常重要的脚本！它可能如下：
+
+文件：`rewrite/index.php`
+
+```php
+<?php
+// Include the PathVars class
+require_once 'Url/PathVars.php';
+
+// MODIFY THIS FOR YOUR CONFIGURATION!!!
+```
+
+## 通过重写 URL 隐藏 PHP 脚本
+
+```php
+$baseUrl = '/phpanth/WebPageElements/rewrite/';
+
+// Create instance of PathVars
+$pathVars = new PathVars($baseUrl);
+
+// What's the first path variable?
+switch ($pathVars->fetchByIndex(0)) {
+    case 'download':
+        // Examine the second path variable
+        if ($pathVars->fetchByIndex(1)) {
+            echo 'Downloading file ' . $pathVars->fetchByIndex(1);
+        } else {
+            echo 'Download <a href=' . $baseUrl .
+                 '/download/myStuff.zip">' . $myStuff.zip . '</a><br />';
+        }
+        break;
+    case 'article':
+        // Examine the second path variable
+        if ($pathVars->fetchByIndex(1)) {
+            echo 'Viewing article ' . $pathVars->fetchByIndex(1);
+        } else {
+            echo '<a href=' . $baseUrl .
+                 '/article/123">Article 123</a><br />';
+        }
+        break;
+    default:
+        echo 'This is the home page<br />';
+        echo '<a href=' . $baseUrl .
+             '/download/Downloads</a><br />';
+        echo '<a href=' . $baseUrl . ' /article/Articles</a><br />';
+        break;
+}
+?>
+```
+
+在此代码中，我使用了`PathVars`类让`index.php`处理网站上的大部分请求。以下是它可能被请求的一些 URL：
+
+- `http://www.example.com/phpanth/WebPageElements/rewrite/`
+- `http://www.example.com/phpanth/WebPageElements/rewrite/download`
+- `http://www.example.com/phpanth/WebPageElements/rewrite/article`
+- `http://www.example.com/phpanth/WebPageElements/rewrite/download/myStuff.zip`
+- `http://www.example.com/phpanth/WebPageElements/rewrite/article/123`
+- `http://www.example.com/phpanth/WebPageElements/rewrite/download/Downloads`
+- `http://www.example.com/phpanth/WebPageElements/rewrite/article/Articles`
+
+## 设计 URL
+
+- `http://www.example.com/forums/`  论坛
+- `http://www.example.com/blog/`  Web 日志（或“博客”）
+- `http://www.example.com/downloads/`  下载管理器
+
+# 第 9 章：网页元素
+
+```
+Array(
+[0] => forums
+[1] => discussion
+[2] => php
+)
+```
+
+在你的代码中，你需要某种决策逻辑，将每个变量的处理交传递给知道如何处理它的代码。在这个示例中：
+
+- 从你网站的“根”PHP 脚本（例如`index.php`），检查变量 0，以确定将此任务交给哪个代码。在这种情况下，是论坛代码。
+- 从论坛代码中，检查变量 1，以确定论坛应用程序中的哪部分代码应该处理此任务。在这种情况下，是讨论代码。
+- 在讨论代码中，检查变量 2，以确定应该显示哪个讨论。
+
+在每个情况下，代码都会将工作委托给其他代码，直到到达需要执行实际操作的终点（例如，讨论代码执行数据库查询以选择请求讨论中的所有主题，并将它们以 HTML 表格的形式显示出来）。
+
+你如何处理工作委托取决于个人偏好和经验。你可能简单地使用`include`语句在每次做出决定时加载 PHP 脚本。更复杂但通常更灵活的方法是面向对象，其决策过程基于选择正确的类来处理每一步。
+
+无论采用哪种方式，这都会让你的网站变成一个框架——一个结构化的环境，你在其中添加应用程序的代码，而框架按需执行。在考虑如何实现此点的同时，值得研究一些其他可用 PHP 框架，例如 eZ publish[16]、Phrame[17] 和 Ambivalence[18]，以便对你需要考虑的设计问题有深入了解。
+
+- [16] http://developer.ez.no/
+- [17] http://phrame.sourceforge.net/
+- [18] http://amb.sourceforge.net/
+
+## 延伸阅读
+
+- 面向对象的 PHP：分页结果集：http://www.sitepoint.com/article/662
+  这篇文章对面向对象编程进行了基础介绍，并在最后一个示例中使用与本章类似的分页结果集。
+
+- 构建可扩展菜单类：http://www.devshed.com/Server_Side/PHP/ExtensibleMenuClass/
+  这篇文章介绍了构建菜单类的替代方法，使用 MySQL 来完成大部分工作，而不是 PHP。
+
+- 在数据库中存储分级数据：http://www.sitepoint.com/article/1105
+  本文详细介绍了邻接模型（adjacency model）和嵌套集（nest set）处理方法。
+
+- PEAR::Tree 教程：http://phpkitchen.com/article.php?story=20030427152620585
+  参此文章了解 PEAR::Tree 的用法，它提供了一个处理嵌套集数据结构的 API。
+
+- 搜索引擎友好型 URL：http://www.sitepoint.com/article/485
+  这篇文章解释了搜索引擎友好型 URL 的细节。
+
+- Apache 的 ForceType 指令：http://www.devarticles.com/art/1/143/2
+  该教程提供了关于如何使用 ForceType 指令的更多细节。
+
+- mod_rewrite：URL 重写初学者指南：http://www.sitepoint.com/article/910
+  本文探讨了 Apache 的 mod_rewrite。
+
+- eZ Publish：PHP 的杀手级应用：http://www.sitepoint.com/article/917
+  这三部分系列从头开始研究 eZ publish 框架。
+
+## 10 错误处理
+
+在第 1 章，我介绍了 PHP 内置的错误处理机制，我们讨论了错误通常分为四种基本类型：
+
+- 语法错误（Syntax Errors）：脚本未能遵守 PHP 的基本语言规则且无法执行。
+- 语义错误（Semantic Errors）：在执行代码时，PHP 遇到了在 PHP“语法”上不合规的情况，例如向一个期望数组的函数传递字符串。
+- 环境错误（Environment Errors）：在 PHP 脚本执行期间，使用的环境中遇到了问题，例如 MySQL 服务器不可用。
+- 逻辑错误（Logic Errors）：对于 PHP 引擎来说，脚本执行正确，但结果不符合设计者的预期。
+
+在本章中，我们将查看 PHP 提供的扩展原生错误报告机制的机制，并让你对错误处理方式拥有更大的控制权。这些机制的优势通常体现在处理环境错误上；这些机制为你的代码提供了优雅退出执行的机会，并允许你在接收错误通知的同时，向访客隐藏错误。
+
+## PHP 5 中的错误处理
+
+即将发布的 PHP 5 将包含一种新的错误处理机制，这将从根本上改进 PHP 4 中的错误处理方式。PHP 5 将提供 Java 等语言中常见的`try-catch`控制结构。值得记住这种变化近在咫尺，以便在时候到来时可以轻松修改代码。这些修改可能仅涉及对所有使用`trigger_error`的实例进行搜索和替换。或者它们可能更复杂，将所有对`trigger_error`的调用通过你自定义的单个函数传递，允许你只需通过修改该函数即可切换到新的错误生成机制。
+
+## 我如何实现
+
+在你的代码中，你需要某种决策逻辑，将每个变量的处理传递给知道如何处理它的代码。在这个示例中：
+
+- 从你网站的“根”PHP 脚本（例如`index.php`），检查变量 0，以确定将此任务交给哪个代码。在这种情况下，是论坛代码。
+- 从论坛代码中，检查变量 1，以确定论坛应用程序中的哪部分代码应该处理此任务。在这种情况下，是讨论代码。
+- 在讨论代码中，检查变量 2，以确定应该显示哪个讨论。
+
+在每个情况下，代码都会将工作委托给其他代码，直到到达需要执行实际操作的终点（例如，讨论代码执行数据库查询以选择请求讨论中的所有主题，并将它们以 HTML 表格的形式显示出来）。
+
+你如何处理工作委托取决于个人偏好和经验。你可能简单地使用`include`语句在每次做出决定时加载 PHP 脚本。更复杂但通常更灵活的方法是面向对象，其决策过程基于选择正确的类来处理每一步。
+
+无论采用哪种方式，这都会让你的网站变成一个框架——一个结构化的环境，你在其中添加应用程序的代码，而框架按需执行。在考虑如何实现此点的同时，值得研究一些其他可用 PHP 框架，例如 eZ publish[16]、Phrame[17] 和 Ambivalence[18]，以便对你需要考虑的设计问题有深入了解。
+
+?>
+
+假设此处显示的用户名和密码是错误的，如果没有使用错误抑制运算符，`mysql_connect`将显示一条错误消息。在这个示例中，我抑制了 PHP 生成的错误，以便显示我自己的错误信息。
+
+错误抑制运算符不仅仅适用于单独函数：
+
+```php
+<?php
+if (@$GET['name'] == 'Bill') {
+    echo 'This page is not available to you';
+} else {
+    echo 'Welcome';
+}
+?>
+```
+
+如果不是因为这里存在错误抑制运算符，只要错误报告级别被设置为显示通知（notices），PHP 在发现`$_GET['name']`变量未定义时就会显示一个错误。在这个示例中，我们使用错误抑制运算符告诉 PHP，我们理解这个变量在某些情况下可能不存在，因此，我们不需要被提醒这一事实。
+
+我建议你谨慎使用错误抑制运算符，它只适用于你想自己控制错误报告的情况。对于上一个的示例，我建议你最好在使用它之前专门检查`$_GET['name']`是否已定义：
+
+```php
+<?php
+if (isset($_GET['name']) && $_GET['name'] == 'Bill') {
+    echo 'This page is not available to you';
+} else {
+    echo 'Welcome';
+}
+?>
+```
+
+采用这种编写代码的方法（以及通常对所有输入数据进行检查）将使应用程序更可靠、更安全的应用程序。过度使用错误抑制运算符会导致代码非常难以调试。
+
+## 第 10 章：错误处理
+
+## 生成错误
+
+正如我们在上面看到的，你可以使用三种错误级别来报告有关代码中错误的消息：错误（errors）、警告（warnings）和通知（notices）。生成错误消息的媒介是`trigger_error`[2]函数，它可以放置在代码的任何位置，并在执行时导致 PHP 报告你指定的层级的错误。你的选择有`E_USER_ERROR`、`E_USER_WARNING`和`E_USER_NOTICE`，这里的“用户”指的是你——即 PHP 开发者。
+
+这里有一个简单的示例：
+
+文件：`6.php`
+
+
+
+```php
+<?php
+if (!@mysql_connect('localhost', 'wronguser', 'wrongpassword')) {
+    trigger_error('Error connecting to MySQL Server: ' .
+    mysql_error(), E_USER_ERROR);
+}
+
+echo 'Hello World!';
+?>
+```
+
+在这里，我们使用了错误抑制运算符来抑制正常的错误消息，以便我们使用`trigger_error`显示更有用的消息。我们提供给`trigger_error`的第二个参数（可选的）是希望报告错误的级别；默认值是`E_USER_NOTICE`。
+
+从理论角度来看，值得考虑我们在这里所做的事情。如果`mysql_connect`失败，PHP 通常会使用的正常错误级别将是警告，它将其视为一种不阻碍脚本运行的环境错误。然而，我们抑制了正常的警告消息并将严重性提高到了错误。由于错误对 PHP 脚本来说是致命的，这会停止 PHP 对脚本的执行。在这种情况下，`echo "Hello World!"`的指令将不会执行，但 PHP 通常会产生的警告本可以允许它继续执行。
+
+我们为什么要这样做？如果脚本在尝试数据库连接后，依赖数据库连接来产生有用的输出，那么在数据库连接失败时让脚本继续运行将是有意义的。虽然某些应用程序可能可以在没有数据库连接的情况下运行，但我们可以使用`trigger_error`让那些无法运行的程序立即停下来。
+
+> [2] http://www.php.net/trigger_error
+
+## 生成错误的策略
+
+你在代码中如何使用`trigger_error`完全取决于你，但为了充分利用其作用，最好在心中有一个某种策略，使你能够正确处理代码所生成的错误。在选择要触发的错误类型时，请从应用程序使用者的角度考虑该错误的含义，而不是从 PHP 引擎的角度考虑。以下旨在代表使用不同错误级别的最佳实践：
+
+```text
+E_USER_ERROR
+```
+
+这是你所获得的最关键的错误级别，是一个致命错误，会停止 PHP 执行你其余部分的代码。从使用你应用程序的人的角度来看，致命错误是导致应用程序在根本上未能履行其职责的错误。例如，脚本无法连接到存储你用于渲染的内容应用程序的 MySQL 服务器。
+
+```text
+E_USER_WARNING
+```
+
+在这个级别上，你的应用程序可以继续执行，尽管用户请求的操作出现了一些问题。使用这种错误的一种良好方法是，当用户进行超出你应用程序限制范围的操作时应用它。例如，他们可能请求了一个不存在内容的 URL，或者向脚本传递了类型错误的数据（例如，他们通过`$_GET`变量传递了一个字符串，而该变量预期包含整数值）。显然，这应该在合理范围内应用；通常情况下，触发的错误无法像代码中的返回值那样被有效地处理（参见“触发的错误与条件执行”章节）。
+
+```text
+E_USER_NOTICE
+```
+
+此级别适用于向你网站的用户和管理员提供信息。如果有人在尝试登录你网站的安全区域时，连续三次得到错误的用户名/密码组合，这可能是触发`E_USER_NOTICE`错误的良好时机。此错误将导致向你的网站管理员发送电子邮件，警告他们可能存在破解用户认证系统的攻击。
+
+# 第 10 章：错误处理
+
+## 自定义错误处理程序
+
+现在你已经熟悉了错误级别并看到了`trigger_error`函数，现在是查看如何实现自定义处理程序了。PHP 提供了`set_error_handler`函数，允许你指定自己的处理程序。这是一个针对`E_USER_ERROR`的简单示例：
+
+[3] http://www.php.net/set_error_handler
+
+```php
+<?php
+/**
+ * 自定义错误处理器
+ *
+ * @param int 错误级别
+ * @param string 错误消息
+ * @param string 发生错误的 php 脚本
+ * @param int 触发错误的脚本行号
+ * @param array 全局变量的状态
+ */
+function myErrorHandler($errLvl, $errMsg, $errFile, $errLine, $errContext)
+{
+    // 监控错误级别的 switch语句
+    switch ($errLvl) {
+        case E_USER_ERROR:
+            $error = "<h2>自定义错误消息</h2>\n<b>$errLvl</b> 发生于 $errFile 的第 $errLine 行<br />\n$errMsg";
+            break;
+    }
+    echo $error;
+}
+
+// 设置自定义错误处理器
+set_error_handler('myErrorHandler');
+
+// 触发一个错误
+if (!mysql_connect('localhost', 'wronguser', 'wrongpassword')) {
+    trigger_error('Error connecting to MySQL Server: ' . nmql_error(), E_USER_ERROR);
+}
+?>
+```
+
+# 第 10 章：错误处理
+
+发生了。最后，我们在示例中使用的`$errContext`包含一个数组，其中存储了错误发生时所有全局变量的名称和值。在某些情况下，这些信息可能对调试有用，因为其中包含了`$_SERVER`变量，例如，其中包含了访问者浏览器的详细信息。
+
+通过自定义错误处理函数，我们只需要使用`set_error_handler`来告诉 PHP 新的处理程序即可。
+
+执行此脚本将生成以下 HTML：
+
+```html
+<h2>Custom Error Message</h2>
+<b>E_ERROR</b> in /home/username/www/errorhandling/6.php on line 31<br />nConnecting to MySQL Server: Access denied for user: 'wronguser@localhost' (Using password: YES)
+```
+
+需要注意的一点重要点是，该示例生成了**两个**错误消息：一个是由`mysql_connect`函数生成的`E_WARNING`（我们已使用抑制符将其抑制掉），另一个是我们通过`trigger_error`生成的`E_USER_ERROR`。正如早之前提到的，抑制符和`error_reporting`函数仅适用于 PHP 内置错误处理程序，而不适用于你定义的自定义处理程序。这意味着自定义处理程序实际上会捕获这两个错误，如下脚本所示：
+
+文件：`8.php`
+
+```php
+<?php
+/**
+ * 自定义错误处理程序
+ * @param int error level 错误级别
+ * @param string error message 错误消息
+ * @param string php script 错误发生的 PHP 脚本
+ * @param int line number 脚本中触发错误的行号
+ * @param array current state of all global variables
+ */
+function myErrorHandler($errLvl, $errMsg, $errFile, $errLine)
+{
+    // 监听特定错误级别的 switch 语句
+    switch ($errLvl) {
+        case E_USER_ERROR:
+            $error = "<h2>Custom Error Message</h2>\n<b>E_USER_ERROR</b> in $errFile on line $errLine<br />\n$errMsg";
+```
+
+```php
+        break;
+        // 捕获所有其他错误
+        default:
+            $error = "<h2>Default Error Message</h2>\n<b>Level $errLvl</b> in $errFile on line $errLine <br />\n$errMsg";
+            break;
+    }
+    echo $error;
+}
+
+// 设置自定义错误处理程序
+set_error_handler('myErrorHandler');
+
+// 尝试禁用 E_WARNING 消息（仅适用于内置
+// 处理程序）
+error_reporting(E_ALL ^ E_WARNING);
+
+// 触发错误
+if (@mysql_connect('localhost','wronguser','wrongpassword')) {
+    trigger_error('Error connecting to MySQL Server: ' .
+    mysql_error(), E_USER_ERROR);
+}
+?>
+```
+
+尽管我们尝试禁用`E_WARNING`消息——同时通过`error_reporting`函数和错误抑制符——但上面的示例仍然报告了两个错误。
+
+## 触发错误 vs. 条件执行
+
+PHP 的自定义错误处理机制有效地为你的应用程序引入了另一个层级的错误处理，这次是在全局范围内。在使用这一机制之前，理解这种方法的影响是非常关重要的。到到为止，你可能是在调用时在代码中构建了错误处理。这是一个典型的示例：
+
+```php
+<?php
+// 某些更新数据库的函数
+function updateUserDetails($name, $password, $email)
+{
+    // 如果更新成功...
+    return TRUE;
+}
+
+// 如果更新失败
+return FALSE;
+}
+
+// 如果提交了表单
+if (isset($_GET['submitUserDetailsForm'])) {
+    // 执行“调用时”错误检查
+    if (updateUserDetails($_GET['name'], $_GET['password'], $_GET['email'])) {
+        echo 'Update succeeded';
+    } else {
+        echo 'Update failed. Please try again';
+    }
+}
+?>
+```
+
+这段代码（意在说明一种模式，而非可运行的示例）展示了错误处理通常是如何构建应用程序中的。调用`updateUserDetails`的代码检查它从函数获取返回值（`TRUE`或`FALSE`），并做出相应的响应。
+
+PHP 的自定义错误处理机制并不允许这种模式。让我们看看上述示例的等效写法：
+
+```php
+<?php
+// 某些更新数据库的函数
+function updateUserDetails($name, $password, $email)
+{
+    // 如果更新失败
+    trigger_error('Update failed', E_USER_WARNING);
+
+    // 如果提交了表单
+    if (isset($_GET['submitUserDetailsForm'])) {
+        updateUserDetails($_GET['name'], $_GET['password'], $_GET['email']);
+    }
+}
+?>
+```
+
+调用`updateUserDetails`函数的代码现在没有办法检查该函数是否成功。相反，你的自定义错误处理程序必须对函数做出响应，鉴于它是完全独立于`updateUserDetails`或其调用的代码定义的，让它正确响应是困难的。
+
+```php
+ob_end_clean();
+// 清理主缓冲区
+ob_clean();
+// 显示错误消息
+echo
+```
+
+```html
+<!DOCTYPE html PUBLIC-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>临时中断</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
+</head>
+<body>
+<h2>临时中断</h2>
+网站当前正在进行非计划维护，暂时无法访问。<br />
+请稍后重试
+</body>
+</html>
+```
+
+```php
+// 结束并刷新主缓冲区
+ob_end_flush();
+// 停止执行
+exit();
+break;
+// 处理警告 (WARNING)
+case E_USER_WARNING:
+// 清理主缓冲区
+ob_clean();
+// 显示错误消息
+echo "<b>警告：</b>" . $sErrMsg;
+break;
+// 处理通知 (NOTICE)
+case E_USER_NOTICE:
+// 显示错误消息
+echo "<b>通知：</b>" . $sErrMsg;
+break;
+```
+
+这个自定义处理程序能够处理三种错误级别：`E_USER_ERROR`、`E_USER_WARNING`和`E_USER_NOTICE`。你会注意到，它在每个级别处理输出缓冲区的方式是不同的。你可能记得，`E_USER_ERROR`消息是一个致命错误，它会导致处理器清除输出缓冲区（这里有两个缓冲区，原因稍后就会显而易见），并显示一条关于网站宕机的消息。
+
+# 我如何优雅地显示错误？
+
+这消除了任何可能已经发送到缓冲区的 HTML 内容。一个`E_USER_WARNING`错误会导致第二个缓冲区被清空并替换为错误消息；结果是 HTML 页面的主体被替换为错误消息。`E_USER_NOTICE`的行为则是将通知添加到第二个缓冲区中——它只是被追加到可扩展的 HTML 之后。
+
+现在看页面主体：
+
+```php
+// 设置自定义错误处理器
+set_error_handler('myErrorHandler');
+// 为错误ORS启动一个输出缓冲区
+ob_start();
+?>
+<!DOCTYPE html PUBLIC "//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>带缓冲的自定义错误处理器</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body>
+<h2>示例错误</h2>
+<?php
+// 为通知和警告启动第二个输出缓冲区
+ob_start();
+?>
+```
+
+文件：`10.php`（节选）
+
+在上方，指示 PHP 使用我们的自定义错误处理器后，我们将一个输出缓冲区嵌套在另一个缓冲区内部，这样页面的眉和页脚与主体位于独立的缓冲区中。
+
+文件：`10.php`（节选）
+
+```php
+<a href="<?php echo $_SERVER['PHP_SELF']; ?>?triggerError=error">
+触发致命错误/<br />
+<a href="<?php echo $_SERVER['PHP_SELF']; ?>?triggerError=warning">
+触发警告/<br />
+<a href="<?php echo $_SERVER['PHP_SELF']; ?>?triggerError=notice">
+触发通知/<br />
+?>
+```
+
+```php
+<?php
+// 生成示例错误
+if (isset($_GET['triggerError'])) {
+switch ($_GET['triggerError']) {
+```
+
+# 第 10 章：错误处理
+
+```php
+case 'error':
+     trigger_error('致命错误', E_USER_ERROR);
+  break;
+case 'warning':
+     trigger_error('你已收到警告！', E_USER_WARNING);
+  break;
+case 'notice':
+     trigger_error('请注意！', E_USER_NOTICE);
+  break;
+}
+// 结束并显示第二个缓冲区
+ob_end_flush();
+
+</body>
+</html>
+<?php
+// 结束主缓冲区
+ob_end_flush();
+?>
+```
+
+在页面的主体中（第二个缓冲区内部），我们使用了`$_GET`变量`trigger_error`通过`triggerError`参数来演示该处理器。
+
+当你执行该脚本时，你会发现致命错误会导致渲染一个完全不同的页面（在自定义错误处理器的`E_USER_ERROR`中定义）；警告错误会将那三行内容替换为警告消息，而错误通知会被添加到三个链接的下方。
+
+通过细心处理，可以将自定义处理器与输出控制相结合，以一种从网站访问者角度来看非常优雅的方式处理错误。最好让这类代码保持简单，而不是构建过于复杂的结构，原因正如在“我如何用 PHP 实现自定义错误处理器？”中“触发错误 vs 条件执行”小节所讨论的那样。
+
+# 进阶阅读
+
+- PHP 错误处理：http://www.devsd.com/Server_Side/PHP/ErrorHandling
+
+这个系列分为两部分，深入探讨了 PHP 的自定义错误处理功能以及它们如何进行结合。
+
+# 附录 A：PHP 配置
+
+## 关键安全与移植性设置
+
+表 A.1 显示了与你的 PHP 脚本安全性和移植性相关的最重要的 PHP 设置。
+
+### 表 A.1 关键安全与移植性设置
+
+| 设置 | 备注 |
+|---|---|
+
+
+
+# 附录 A：PHP 配置
+
+## 其他设置
+
+表 A.1 显示了你在 PHP 配置中遇到的最重要的安全相关设置。
+
+### 表 A.1 安全设置
+
+| 设置 | 备注 |
+| --- | --- |
+| `register_globals` (默认: `off`) | 自动从传入的 HTTP 请求变量（如 `GET` 和 `POST`）创建全局变量。出于安全和移植性考虑，强烈建议关闭此项。更多详情请参阅 `http://www.php.net/register_globals`。 |
+| `magic_quotes_gpc` (默认: `off`) | 自动用反斜杠对传入请求变量中的引号进行转义，有助于防止 SQL 注入攻击。如果你清楚自己在做什么，通常最好关闭此功能，并在插入数据库时自行处理这些转义，因为该功能可能会带给你带来问题，以及它引入的性能开销。请参阅第 1 章有关如何让你的脚本与此功能兼容的信息。 |
+| `call_time_pass_reference` (默认: `off`) | 允许在调用时使用变量引用（例如 `htmlentities($string)`）。为了保持代码整洁易读并确保移植性，请保持此功能关闭。 |
+| `short_open_tag` (默认: `on`) | 允许使用 `<?` 而不是更长的 `<?php` 来开启 PHP 代码块。还允许使用 `=` 编写 PHP 表达式，这等同于 `<?php echo`。虽然方便，但这些快捷方式不符合 XML 标准，并且会导致 PHP 处理器在遇到 `<?xml version="1.0"` 等 XML 处理指令时产生混淆。很多人关闭了 `short_open_tag`，因此为了获得最大的移植性，请避免使用快捷方式并在开发期间关闭此功能。 |
+| `asp_tags` (默认: `off`) | 允许使用 ASP 风格的标签 `<?% ... ?>` 作为 PHP 开启和结束标签（`<?php ?>`）的替代。很少有人用这些，为了获得最大的移植性，最好避免它们，并在开发期间关闭此功能。 |
+| `error_reporting` (默认: `E_ALL & -E_NOTICE`) | 在开发期间，为了获得最大的移植性，最好将其设置为 `E_ALL`，这样 PHP 会通知你某些情况，例如你的代码依赖的某个 `$_GET` 变量未初始化。这迫使你编写出更安全且逻辑错误更少的代码，这也确保了你的代码将在配置为此的其它服务器上良好运行。 |
+| `display_errors` (默认: `on`) | 决定 PHP 是否将错误消息发送到浏览器。在生产环境中运行应用程序时，通常最好关闭此项，转而使用 PHP 的日志机制将错误捕获到文件中。 |
+| `open_basedir` (默认: 未设置) | 允许你将所有 PHP 文件操作限制在给定的目录及其之下。这是一个很好的主意，可以防止用于显示文件内容的脚本被访问服务器上其他地方敏感文件。 |
+| `allow_url_fopen` (默认: `on`) | 允许你为 `fopen` 等函数指定远程文件位置（例如 `fopen('http://www.sitepoint.com/', 'r')`）。这是一个实用的工具，但对于编写得糟糕的脚本来说也存在潜在的安全风险。如果你确定不需要，请将其关闭。 |
+
+## 包含与执行设置
+
+表 A.2 显示了与包含以及你的 PHP 脚本运行状况相关的最重要的 PHP 设置。
+
+### 表 A.2 包含与执行设置
+
+| 设置 | 备注 |
+| --- | --- |
+| `include_path` (默认: `.`) | 允许你在使用与包含相关的命令时，指定 PHP 应该搜索的相对和绝对路径。确保你至少指定了当前目录 (`.`)，否则第三方脚本将无法工作。在 Unix 系统上，目录列表用冒号 (`:`) 分隔，而在 Windows 上分隔符是分号 (`;`)。 |
+| `auto_prepend_file` (默认: 未设置) | PHP 将执行任何请求的脚本之前执行指定的文件。这对于执行全局范围的操作非常有用，例如安全操作、日志记录、定义错误处理器、移除由 magic quotes 功能添加的反斜杠等。这适用于你确定只供自己使用的应用程序，但不适用于你打算分发的代码。那些无法通过 `.htaccess` 文件修改 `.ini` 设置的用户无法使用此类代码。列表分隔符与 `include_path` 设置相同。 |
+| `auto_append_file` (默认: 未设置) | `auto_prepend_file` 的双生胎，在请求执行后执行。 |
+| `max_execution_time` (默认: 30) | 指定通过 Web 服务器运行的 PHP 脚本允许的最大执行时间（秒）。通常，最好保留默认值，并使用 `set_time_limit` 函数根据每个脚本扩展限制。将其中任一值设置为 `0` 将移除对脚本执行时间的任何限制。 |
+| `memory_limit` (默认: 8M) | PHP 在运行时可用的内存量。通常，默认值就足够，但在处理大型 XML 文档（例如）或处理图像时，你可能需要增加它。此值越大，脚本实际使用的内存越多，你服务器上运行的其他应用程序的可用内存就越少。 |
+| `post_max_size` (默认: 8M) | PHP 通过 HTTP POST 接受的最大数据量（例如上传图片的表单）。如果你有允许用户上传大文件的应用程序，可能需要增加此值。 |
+
+## 错误相关设置
+
+表 A.3 显示了与 PHP 处理错误方式相关的 PHP 设置，除了表 A.1 中的 `display_errors` 和 `error_reporting` 之外。
+
+### 表 A.3 错误相关设置
+
+| 设置 | 备注 |
+| --- | --- |
+| `log_errors` (默认: `off`) | 结合 `error_log`（下文）允许将错误记录到文本文件中。对于关闭了错误显示的生产站点非常有用。 |
+| `error_log` (默认: 未设置) | 当 `log_errors` 开启时记录错误的文件。 |
+| `ignore_repeated_errors` (默认: `off`) | 使用此项，如果同一个脚本的同一行发生相同的错误，则只会报告一次。防止由于循环中发生的错误导致巨大的日志文件。 |
+| `ignore_repeated_source` (默认: 30) | 与 `ignore_repeated_errors` 类似，在这种情况下它可以抑制整个 PHP 脚本中的同类型错误。 |
+| `report_memleaks` (默认: `on`) | 确保开启此项，特别是在使用实验性或非稳定 PHP 版本时，否则内存泄漏耗尽所有空间会导致服务器崩溃。`error_reporting` 必须设置为报告警告此设置才能生效。 |
+
+## 其他设置
+
+表 A.4 显示了你在 PHP 配置中应该注意的其他重要设置。
+
+### 表 A.4 其他设置
+
+| 设置 | 备注 |
+| --- | --- |
+| `session.save_path` (默认: `/tmp`) | 如果在 Windows 系统上使用文件存储会话，你需要修改此设置，指向 PHP 可以写入会话文件的可用目录。 |
+| `session.use_cookies` (默认: 1) | 使用 Cookie 在客户端存储会话 ID，而不是将会话 ID 放在 URL 中（这会带来更大的安全风险）。 |
+| `extension_dir` (默认: `./`) | 查找编译后的 PHP 扩展的路径。在 Windows 系统上，它可能像：`extension_dir = C:\php-4.3.2\extensions\` |
+| `extension` | 仅限 Windows 系统，这用于识别所有应该加载的扩展。指定的扩展应位于 `extension_dir` 路径（上文）。例如：`extension = php_xslt.dll` |
+
+# 附录 B：主机提供商清单
+
+PHP 以及更广泛地说，Linux、MySQL、Apache 和 PHP/Perl/Python 组成的 LAMP 组合可以通过数以千计的廉价 Web 主机轻松获得。你可以轻松以每个站点每月低于 10 美元的价格获得满足你 90% 需求的 Web Hosting。尽管如此，并非所有的 PHP 安装都是平等的，它们在很大程度上取决于 `php.ini` 中定义的配置设置以及主机已安装的扩展。此外，还有许多与你对自身环境的控制权限相关的通用问题，如果你不想以后遇到大麻烦，这些问题非常重要。
+
+这是你在为托管服务支付费用之前应该调查的关键问题总结。联系潜在的供应商，并让他们对这些每一点给出回复。随后，向其他用过该服务的人征求意见。在许多在线论坛中，你可以找到能够提供建议的人。但请注意，“博学者”与“无知者”的比例极度倾向于无知；要深入了解技术细节，以便你能够验证收到的答案是经过充分考证的。
+
+我在这里提供的某些点可能看起来有些极端，但一旦你经历过几次，你可能更希望每一分钱都花得值，而不是在周六早上修复主机在周五晚上为你制造的问题。
+
+## 通用问题
+
+- 要求 Linux 和 Apache (1.3)
+
+从性能和可靠性的角度来看，这是最佳组合。避免任何使用 Apache 2.x 的主机（它与 PHP 配合并不完全稳定）。询问 Linux 发行版的详情。虽然 Red Hat 和 Suse 很流行，但你可能会发现使用 Debian（或者更好的，Rocky Linux）的主机更清楚自己在做什么。
+
+- 主机是否为你提供对服务器的 SSH 访问权限？
+
+`SSH` 为你提供一个到服务器的安全连接，可以从 Linux 命令行执行任务或通过 `SCP`（安全复制）传输文件。避免任何允许你使用 telnet 的主机（这是一种通过互联网连接服务器的从根本上不安全的方法）。对于 Windows 用户，`Putty`[2] 提供了使用 SSH 连接的安全文件传输机制。噢，还有不要用 ftp 传输文件——它和 telnet 一样不安全。
+
+## 主机是转销商还是自己维护服务器？
+
+如果你需要基础技术层面的帮助（例如，如果你自认为是个新手），转销商可以提供很大的价值，但他们对服务器的控制水平通常与你一样。“直接找源头”意味着当系统出现问题时，你不需要等待，因为你可能直接与维护服务器的人打交道。缺点是他们对“新手”不那么宽容，所以你可能会得到答案——但不是你理解的答案。
+
+## 主机在多大程度上“超载”服务器？
+
+许多 Web 托管公司在服务器上创建的账户超过了系统指定的最大数量。最好的指标是 `uptime` 命令（你需要访问该命令）；它将告诉你 1、5 和 15 分钟的平均负载。理想情况下，服务器的平均值永远不应高于 1。显然，问题没有那么简单，但一旦看到你的服务器平均值超过 5，你就会开始发现你的基于 PHP 的应用程序出现明显的延迟。
+
+## 主机对于从命令行运行脚本和程序的策略是什么？
+
+`MySQLDump` 是一个备份数据库非常实用的工具，但如果你无法运行它，那也很好。有些主机会自动杀死任何执行时间超过给定时间的命令行应用程序。
+
+## 主机是否提供对 cron 的访问（cron 是允许你安排批作业的 Unix 实用程序）？
+
+如果是，请确保主机允许执行命令行脚本。有些主机必须实现 cron 以便通过 Web URL 执行脚本。如果相关脚本使用 `MySQLDump` 备份数据库，那么这样做没有用处——因为通过 Apache 执行的 PHP 脚本通常以用户身份运行，将不会具备执行该任务所需的正确权限。
+
+## PHP 相关问题
+
+- 你可以在实际分配给你的服务器上看到 `phpinfo` 的输出吗？
+
+有些主机可能声称这是一个安全风险，但专家级主机知道，“通过隐蔽实现安全”不能替代真正的安全。对于那些知道自己在做什么、拥有 Linux 并正确设置了防火墙的托管商来说，`phpinfo` 提供的信息并不是安全风险。`phpinfo` 告诉的是验证事实。
+
+- PHP 是否作为 Apache 模块安装（而不是 CGI 变体）？
+
+这提供了更好的性能。
+
+- Apache 设置 `AllowOverride` 是否设置为 `Options` 或 `All`？
+
+这将允许你通过 `.htaccess` 文件修改 `php.ini` 设置。
+
+- PHP 是否禁用了安全模式（Safe Mode）？
+
+`php.ini` 中的 `safe_mode` 选项在理论上是一种让 PHP 安全的方法，防止用户执行某些任务或使用某些对安全敏感的函数。如果你在 PHP 中进行任何严肃工作，安全模式仅仅是一个头疼的问题。
+
+- 检查你主机的升级策略。
+
+询问主机在执行升级前会给你多少次警告。检查他们是否会在（升级发生之前）为你提供一份他们将使用的 `php.ini` 文件副本。从 `register_globals = on` 切换到 `register_globals = off` 的主机数量相当多。确保在主机执行升级之前，你已经在开发系统上针对新版本测试了应用程序。
+
+- 索要已安装 PHP 扩展的列表。
+
+确认这些扩展符合你应用程序的要求。例如，很少有主机同时提供 XSLT 扩展。还要确认扩展在升级后是否依然可用。
+
+- PHP 是否可以从命令行使用？
+
+如果是，请确保主机允许执行命令行脚本。有些主机必须实现 cron 以便通过 Web URL 执行脚本。如果相关语言需要 Perl 或 Python，或者运行批作业（通过 cron），通常是需要的。
+
+- 最后，加入一两个测试主机对 PHP 了解程度的问题。虽然编写 PHP 代码不是他们的工作，但当你发现自己比主机懂得多时，结果是令人沮丧的。拥有一个理解你的主机很重要。
+
+# 附录 C：安全清单
+
+鉴于 PHP 应用暴露给所有人，安全应该是你开发时的首要考虑问题之一。在某种程度上，PHP 应用开发的简易性是其最大的缺点之一，对于那些意识到潜在风险的新手来说，很容易部署一个安全性像瑞士奶酪的应用。
+
+确保你了解情况，如有疑问请询问。Open Web Security Project (OWASP)[1] 是一个关注网络安全的赞助社区，是获取风险信息的绝佳来源。
+
+## 主要漏洞
+
+- 未验证的数据
+
+永远不要信任从 Web 浏览器获取的任何内容。浏览器完全不受你控制，伪造 HTTP referer 等值很容易。伪造表单中的隐藏字段也很容易。
+
+更重要的是，在处理表单时，要仔细验证数据。使用“拒绝所有，允许部分”策略。例如，如果注册表单有一个用户名字段，只允许字母和可能的数字 0-9，而不是简单的拒绝特殊字符。使用正则表达式将数据限制在你要求的精确范围内。像 `PEAR::QuickForm` 这样的包（你在第 9 章中看到的）提供了表单验证的内置机制，并涵盖了许多你可能忽略的问题。
+
+此外，在涉及包含文件的地方，要警惕如下逻辑：
+
+```
+include($_GET['page']);
+```
+
+确保你将 `$_GET['page']` 的值与代码设计用于包含的文件列表进行比对。如果没有此类检查，攻击者很容易使用与你类似的代码来执行其他 PHP 脚本——即那些你没有编写的脚本。
+
+```php
+$pages = array(
+  'news.php', 'downloads.php', 'links.php'
+);
+if (in_array($_GET['page'], $pages)) {
+  include $_GET['page'];
+} else {
+  include 'not_found.php';
+}
+```
+
+- 损坏的访问控制
+
+如果你不知道自己在做什么，这个表单的基本逻辑是非常容易获得的。例如，开发者经常使用如下逻辑在数据库中检查用户名/密码组合：
+
+```php
+if ($numRows != 0) {
+// 允许访问 ...
+}
+```
+
+这意味着，如果用户在数据库中找到了多一个匹配的条目，就允许他们进入；如果你的网站还存在安全注入漏洞（见下文），可能会为攻击者提供比你预期多得多的东西。在认为自己安全的情况下很容易犯错，而实际上，逻辑可以被轻易绕过。通常情况下，尽可能使用第三方库，如 `PEAR::Auth`[2]；此外，还要研究测试框架，如 `SimpleTest`[4]，它们提供了从浏览器角度测试你网站的能力。
+
+- 会话和 Cookie 漏洞
+
+注意会话劫持的可能性。在确实需要安全认证的网站上（例如电子商务网站），使用 SSL 向浏览器提供网站服务，以确保对话加密且没有人在窃听。如果你通过 URL 传递会话 ID（如基于 WML 的网站所示），请确保你没有将会话 ID 放在指向远程网站的 URL 中。此外，在将访问者引导到远程网站时，通过中间代理进行转发，过滤掉任何包含会话 ID 的 HTTP Referer 信息。
+
+通常情况下，使用 Cookie 处理会话更好。如果你在使用自定义基于 Cookie 的身份验证，请仅在 Cookie 中存储标识性的会话 ID，而不是存储用户名和密码。
+
+# 顶级安全漏洞
+
+## 跨站脚本 (XSS)
+
+通过使用网站提供的合法机制，攻击者可能会在你的网站上发布内容——例如，导致其他用户交出你的会话 ID 的 JavaScript，从而允许攻击者劫持你的会话。不那么严重但同样尴尬的是，仅仅发布会“弄乱”你页面布局的 HTML，例如过早地关闭标签。使用“拒绝所有”的方法，或者更好的是，使用单独的标记语言作为基础，并配合 `strip_tags` 和 `htmlentities` 等 PHP 函数。如果你确实想允许发布 HTML，考虑构建一个基于 `PEAR::XML_HTMLSax` [见第二卷，第 2 章] 的过滤器。
+
+## 命令注入
+
+当攻击者能够影响 PHP 与外部系统（如文件系统或数据库）交互的方式时，就会发生命令注入。SQL 注入就是一个例子，发生在攻击者使用表单或 URL 修改数据库查询时。在第 3 章中详细讨论过。底线是：在查询中使用从用户处接收的所有数据之前，先对其进行转义。
+
+## 错误处理
+
+[1] http://www.owasp.org/
+[2] http://www.chiark.greenend.org.uk/~sgatham/putty/download.html
+[3] http://winscp.sourceforge.net/eng/
+[2] http://php.php.net/package/Auth
+[3] http://php.php.net/package/LiveUser
+[4] http://www.lastcraft.com/simple_test.php
+
+
+
+经验攻击者能够从错误信息中获取大量关于你系统的重要信息。虽然这属于“隐性安全”范畴（这并不能替代真正安全的应用程序），但对于运行网站，将错误信息记录到文件中而不是显示在浏览器中是一个好主意。详情请参见附录 A。
+
+## 不安全的加密使用
+
+首先，在涉及加密时，不要自己实现。记住，如果是一个需要解码的算法，那么其他人（除你之外）也能够解码它。记住，严格来说，MD5 不是一种加密算法（即你无法解密 MD5 字符串来获取原始数据）；它是一种消息摘要算法。
+
+> [5] http://pear.php.net/package/XML_HTMLSax
+
+但如果你不需要解密某个值，通过 PHP 的`md5`函数提供的 MD5 允许你比较两段数据的加密版本（例如，存储的密码和用户输入的密码），避免了处理可能被攻击者解密的加密值时带来的风险。
+
+### 管理缺陷
+
+允许攻击者获得与你相同的网站访问权限显然显然是坏事。避免使用 FTP 和 telnet，分别改用 SCP/SFTP 和 SSH；Linux 发行版通常预装了所需的客户端工具。对于 Windows，可以使用 putty[6] 进行 SSH 访问，使用 WinSCP[7] 进行 SCP/SFTP。FTP 和 telnet 会让你的密码暴露给网络嗅探器。确保你提供的任何 Web 工具仅通过 SSL 连接使用。如果你在使用第三方软件（如 phpBB），请立即更改默认管理员密码，并关注潜在的安全漏洞。
+
+### 配置与补丁
+
+在安装 PHP 时，`php.ini-recommended`配置文件是最佳起点，可以确保你正确配置了程序包。
+
+如果你使用托管公司，他们应该为你处理大部分问题，例如在漏洞公布时修补软件。尽管如此，你仍然值得自己保持更新，使用 Security Focus[8] 和 DMOZ[9] 列出的其他网站。更多信息可以在 PHP Advisory[10] 获取，尽管遗憾的是该网站已不再维护。
+
+```
+[6] http://www.chiark.greenend.uk/~sgatham/putty/
+[7] http://winscp.sourceforge.net/eng/
+[8] http://www.securityfocus.com/incidents/
+[9] http://dmoz.org/Computers/Mailing_Lists/
+[10] http://www.phpadvisory.com/
+```
+
+## 附录 D：使用 PEAR
+
+PEAR[1]（PHP 应用程序仓库）是 Stig Bakken 的创意结晶，灵感源于 Perl 的 CPAN[2]。
+
+作为一个项目，它最初构想于 1999 年，并在 2003 年达到了第一个稳定版本。它有两个用途：首先，它提供了一个 PHP 类库来解决架构问题，其中许多类你已经在书中见过。其次，在 PECL（PHP 扩展代码）下，PEAR 为扩展提供了一个仓库。PEAR 原意是存储 PHP 边缘的非标准扩展，但它已演变为未包含在 PHP 发行版中的所有扩展的默认仓库。在这里，我将关注 PEAR PHP 类。
+
+提交和维护 PEAR 仓库的人员都是志愿者。最初 PEAR 的稳定版本数量增长，并受到了整个 PHP 社区的更多关注。仍有许多工作要做以提高 PHP 的标准，文档是一个仍有改进空间的关键领域。如果你感到困惑，一个很好的起点是 PHPKitchen 的 PEAR 教程列表[3]。尽管如此，PEAR 对你是否有意义？考虑到`PEAR::SOAP`（在第二卷第 2 章中介绍过）的功能，先尝试编写自己的 SOAP 实现，然后编写使用它的应用程序代码是浪费时间。浏览包列表[4]，你会发现 PEAR 提供了许多按主题分类的类，帮助你避免重复造轮。理解 PEAR 类的重点是架构类。在其他类中，PEAR 不是脚本；你不会在那里找到应用程序；相反，你会找到可以在不同应用程序中重用的代码。同样重要的是，PEAR 开发者社区尽可能维护和支持该库，相比通过 SourceForge[5] 提供的项目（后者往往是完全相同的）。
+
+```
+[1] http://php.net/
+[2] http://www.cpan.org/
+[3] http://phpkitchen.com/staticpages/index.php?page=20030412042039962
+[4] http://php.net/packages.php
+[5] http://www.sourceforge.net/
+```
+
+### 附录 D：使用 PEAR
+
+一旦相关人员停止投入时间，这些努力就会突然结束。否则，它会强调在整个库中保持某种程度的标准化。例如，所有的错误处理都应该使用`PEAR:Error`完成，并且代码应该使用`PHPDoc`标准进行文档，这意味着如果你能在 PEAR 网站上找到 PHPDocumentor[6]（卷二，第 6 章），你应该能够提取出 API 文档。
+
+我们一直认为：目前 PEAR 包之间的集成程度与 Java 类库相比仍然非常活跃。这意味着，在某些情况下，你将面临抉择：是使用`PEAR:HTML_Form`的验证功能、`PEAR:Validate`，还是两者都用。花些时间研究哪种符合你的开发风格是一个明智的举措，而不是直接跳进去并将 PEAR 用于你应用程序的关键部分，结果后来发现它并不是最适合该问题的方案。
+
+一个需要明确的重要要点是，提到“PEAR”实际上可以指两个含义之一：整个仓库，或者 PEAR 前端（也称为包管理器），它提供了安装和升级你所使用的 PEAR 包的工具。
+
+请注意，并不是要求你必须使用 PEAR 包管理器来安装 PEAR 包。如果你需要，可以直接从 PEAR 网站下载它们并手动将其提取到你的 PHP include 路径中。确保检查了网站上列出的依赖项（这些是其他所需的包），并意识到大多数包隐式地需要 PEAR “base” 包[7] 来执行错误处理等任务。
+
+### 安装 PEAR
+
+如今，PEAR 的基础由 PHP 分发本身提供，但 Web 主机通常不会为客户提供默认的 PEAR 安装，因此了解如何从零开始进行是值得的。Unix 和 Windows 系统的之间的过程可能略有不同。
+
+第一步是确保你可以通过命令行运行 PHP 脚本。如果你输入 PHP 二进制文件的完整路径，这总是可能的。
+
+- [6] http://www.phpdoc.org/
+
+- [7] http://pear.php.net/package/PEAR
+
+```
+/usr/local/bin/php /home/username/scripts/my_script.php
+```
+
+对于 Windows，你会使用类似这样的命令：
+
+```
+c:\php\cli.exe c:\scripts\my_script.php
+```
+
+注意上面的 Windows 路径，我们使用了 PHP 安装目录下`cli`（命令行界面）子目录中的执行文件，它的行为与 Apache 处理网页的方式略有不同。Windows 4.3.0 的 PHP 二进制版本将 cli 版本的 PHP 可执行文件放在此目录。
+
+不过，通过对系统环境变量进行一些更改，可以让 PHP 在命令行中使用变得容易得多。深入讨论请参见 PHPBuilder(9) 上的 [Replacing Perl Scripts with PHP Scripts][8]。
+
+接下来，将你的浏览器指向 http://pear.php.net/go-pear，你在那里将使用一个 PHP 脚本。该脚本用于安装 PEAR 包管理器——这是安装其他 PEAR 包所需要的基础。将此文件下载到电脑（文件，另存为）`go-pear.php`。从这里，你有许多选项。
+
+将`go-pear.php`存储在 Web 服务器的根目录中将允许你作为网页运行该脚本。这种行为仍然是实验性的，尽管无法保证它能正常工作。如果你使用这种方法，请确保该脚本不要公开！
+
+最好通过命令行执行`go-pear.php`脚本，例如：
+
+```
+/usr/local/bin/php /home/username/pear/go-pear.php
+```
+
+或者，在 Windows 上：
+
+```
+c:\php\cli php c:\pear\go-pear.php
+```
+
+这将启动一个交互式命令行界面，它会询问你关于希望如何安装 PEAR 的。注意，“安装前缀”（installation prefix）是 PEAR（以及你之后安装的任何包）将安装的目录，被称为`$prefix`，而`$php_dir`是你 PHP 安装的路径（默认情况下，`go-pear.php`会在其中放置 PEAR 相关的文档，除非你另行指定）。Windows 用户应该注意
+
+> [8] http://www.phpbuilder.com/columns/jayesh20021111.php3
+
+> [9] http://www.phpbuilder.com/
+
+### 附录 D：使用 PEAR
+
+更改安装前缀会弹出一个 Windows“浏览”对话框，通过你可以指定所需的目录。
+
+按照你的要求设置安装选项，`go-pear.php`脚本将连接到 PEAR 网站，并下载设置包管理器所需的所有包（它还会询问你是否需要额外的包，这些包非常值得）。包将安装在你指定的安装前缀的目录的子目录中（因此，在上面的示例中，你最终将得到`c:\pear\pear`或`/home/username/pear/pear`）。
+
+最后，如果你允许，`go-pear.php`安装程序将尝试修改`php.ini`中的`include_path`。要手动执行此操作，假设你使用了上面的目录，请指定如下：
+
+```
+include_path = ":/home/username/pear/pear*
+```
+
+对于 Windows 用户，路径如下：
+
+```
+include_path = \;c:\pear\pear*
+```
+
+最后，为了从命令行使用 PEAR 包管理器，
+
+### 附录 D：使用 PEAR
+
+（注意，如果你通过 Web 服务器执行了`go-pear.php`，则系统也会自动为你安装 Web 版本的前端）。输入以下命令：
+
+```
+pear install Net UserAgent_Detect
+pear install Pager
+pear install HTML_Template_IT
+pear install PEAR_Frontend_Web
+```
+
+注意前三个包是`PEAR_Frontend_Web`所必需的。完成后，你可以使用以下简单脚本从你的 Web 服务器启动前端：
+
+```php
+<?php
+// 如果没有设置包含路径，则此可选
+# ini_set('include_path', 'c:\htdocs\PEAR');
+
+require_once 'PEAR.php';
+
+// 适用于 Windows 用户
+# $pear_user_config = 'c:\windows\pear.ini';
+// 适用于 Unix 用户
+$pear_user_config = '/home/username/pear/pear/pear/pear.conf';
+
+$HTML = TRUE; // 旧浏览器请关闭
+
+require_once 'PEAR/WebInstaller.php';
+?>
+```
+
+### 手动安装包
+
+可以手动安装包（尽管这涉及更多工作），但在执行此操作时，仔细检查包含路径（include paths）非常重要。首先，创建一个作为你需要的所有类基础的目录。该目录必须在你的包含路径中。接下来，安装主 PEAR 包[11]-下载最新稳定版本并将其直接解压到你创建的目录，使 PEAR 位于该目录的根目录下。
+
+安装后续包可以以基本相同的方式完成，但需要小心选择解压到哪个目录。例如，查看`PEAR::DB`，主`DB.php`文件与 PEAR 类目录根目录下的 PEAR 文件并列，而其他与`PEAR::DB`相关的文件放在子目录`DB`中。检查的最佳方法是查看每个 PEAR 包随附的`package.xml` [11] http://pear.php.net/package/PEAR 文件。它包含一个名为`filelist`的元素，其中列出了包中包含的所有文件以及应该安装的位置。对于每个文件，检查`baseinstalldir`属性，如果指定了该属性，它会告诉该文件相对于 PEAR 类目录根目录的位置。`name`属性指定了相对于`baseinstalldir`（如果没有`baseinstalldir`属性，则直接相对于 PEAR 类目录根目录）的路径和文件名，每个文件都应放置在此。
+
+## 索引
+
+本索引涵盖了《PHP 精通》的两卷。另一卷中的页码引用以斜体卷号作为前缀（例如，II-123 指第二卷第 123 页）。
+
+备用内容类型，II-169
+
+Apache, 308, 310
+
+API 文档，II-xiii, II-283
+
+生成，II-291
+
+读取，II-287
+
+撇号
+
+escap 转义（见 magic quotes）
+
+在 SQL 语句中的撇号（见 SQL 语句中的 quotes）
+
+应用程序编程接口 (APIs), 25, 35, 78
+
+应用程序编程接口 (APIs)
+
+（另见 API 文档）
+
+应用程序，314
+
+存档（见压缩文件）
+
+参数，5
+
+数组点，II-324
+
+数组，256
+
+转换为字符串，151
+
+从字符串创建，150
+
+作为字符串的，152
+
+ASP 标签 (<%%), 18
+
+`asp_directives`指，18
+
+身份验证（见访问控制）
+
+身份验证头（见 HTTP 身份验证）
+
+自动日志，II-232
+
+自动签名
+
+防止，II-37
+
+`auto_append_file`指，204
+
+`AUTO_INCREMENT`列，94
+
+`auto_prepend_file_directive`指，203, 204,
+
+II-72, II-260
+
+自动化测试（见单元测试）
+
+AWStats, II-225
+
+- `$FILES_array`, 280
+
+`$GLOBALS`数组，II-91
+
+`$this`变量，31, 37, II-97
+
+`%`（通配符），95
+
+`&`（引用）运算符，42, II-124
+
+（另见引用）
+
+`->`（箭头）运算符，32
+
+`=`（字符串拼接）运算符，II-309
+
+`forward_files`，248
+
+`htaccess_files`，16, 18, 20, 128, 204,
+
+311, 322, II-72, II-81, II-229
+
+`::`运算符，29
+
+`=`（赋值）运算符，II-309
+
+`@`（错误抑制）运算符，163, 322,
+
+324
+
+`@doc`标签，II-285, II-293
+
+`_clone_method`，48
+
+### 符号
+
+- 抽象类，60, II-84
+
+验收测试，II-298
+
+访问控制，II-1, II-31
+
+（另见方法，访问控制）
+
+（另见权限）
+
+安全考量，II-1, II-24
+
+邻接列表模型，288
+
+聚合，56, 59
+
+别名（见 SELECT 查询，别名）
+
+`allow_call_time_pass_reference_directive`指，20, 47
+
+追加，223
+
+### A
+
+- 备份 MySQL，98
+
+### B
+
+- `BACKUP`查询，101, 102
+
+bad 过滤器（见 bad words）
+
+bad 图表（见 bars 图表）
+
+base64 编码，二进制文件-在 Windows 下，116
+
+位运算符，321
+
+黑盒测试，II-299
+
+crumb 路径（见 crumb）
+
+buffer 查询（见 buffered 查询）
+
+buffering（输出），zip,100
+
+class 声明，II-28
+
+类，25, 29, 154
+
+（在类中）
+
+click 操作，II-324
+
+composition，56, 59
+
+compressed 类，II-202, 293, 156
+
+cached 路径，II-247
+
+cached 类，II-254
+
+code 存档，II-17
+
+code 包含，II-18,II-90, 93
+
+code 优化，II-275
+
+code 引用，II-276
+
+collection，II-13, 258
+
+callback 方法，II-326
+
+call 指，II-47
+
+conditional 方法，II-28
+
+configuration 信息，II-27
+
+constant 类, 311
+
+context 信息，II-228
+
+cron，250, 206
+
+constructor 方法，II-28
+
+cron 引用，II-10
+
+cookie 类, II-232
+
+cross-site 脚本 (XSS) 攻击，148, 163
+
+custom 类，II-60
+
+custom 错误页面，II-333
+
+custom 错误处理器，II-10
+
+custom doc 标签，II-294
+
+custom session 处理器，II-10
+
+custom tags（见 XPath）
+
+### D
+
+- 数据访问对象 (DAO),104
+
+数据库索引，96
+
+数据库持久层（见 persistence层）
+
+### E
+
+- 数据库，65, 216
+
+echo 语句，II-201, 245
+
+Eclipse PHP ，II-290,334
+
+derived 日，II-226
+
+design 方法，31
+
+development 技术，21
+
+`error_reporting`指，310
+
+dispatch 映射，215
+
+errors，123
+
+environment，311
+
+exit 语句，II-1,195
+
+extends 关键字，49
+
+Extensible Markup Language（见 XML）
+
+extensions（见 PHP 扩展）
+
+Extreme Programming，11, II-298
+
+extreme，II-334
+
+### F
+
+- fatal 错误（见 errors）
+
+fields（见成员变量）
+
+file 句柄，116
+
+file 指针（见 file handlers）
+
+File Transfer Protocol (FTP)，131
+
+（另见 PEAR, `PEAR::_FTP`）
+
+安全考量，131
+
+FPDF, II-170, II-190
+
+FTP (查看文件传输协议 (FTP))
+
+全文本搜索, 96, II-280
+
+函数引用, 4
+
+函数作用域 (查看 scope)
+
+函数
+
+(另见参数)
+
+(另见 PHP 函数)
+
+(另见返回值)
+
+
+
+`签名`, 5, II-286
+
+`HTML2FO`, II-200
+
+`HTTP认证`, II-3, II-5, II-6
+
+`HTTP标头`, 135, 288, II-175, II-215, II-242, II-243, II-262
+
+以及输出缓冲, II-246
+
+授权, II-6
+
+缓存控制, II-243, II-263
+
+内容散置, 136, II-244
+
+内容长度, 136
+
+内容类型, 136, 210, 217, II-201
+
+`etag`, II-263
+
+过期时间, II-243, II-263, II-264
+
+如果已修改, II-263, II-264, II-266
+
+最后修改, II-175, II-244, II-263, II-264, II-266
+
+位置, II-234
+
+`pragma`, II-243
+
+引用者, II-10
+
+何时发送, II-7
+
+`www-authenticate`, II-5
+
+`HTTP请求标头`, II-4
+
+`HTTP请求方法`, 268, II-163
+
+`HTTP响应标头`, II-4, II-9
+
+`httpd.conf`, 312
+
+超链接
+
+`URL编码`, 143
+
+# G
+
+- `GD图像库`, 209, 225
+
+`GET` (查看 `HTTP请求方法`)
+
+`GIF文件`
+
+专利问题, 210
+
+`global`关键字, 275
+
+全局作用域 (查看 `scope`)
+
+全局变量 (查看`超全局变量`)
+
+图, 225
+
+柱状图, 226
+
+饼图, 228
+
+灰盒测试, II-299
+
+组 (查看 `用户组`)
+
+`gzip`, 100
+
+`GZIP文件` (查看 `压缩文件`)
+
+# I
+
+- `HAWAH`, II-208, II-289
+
+`HDML`, II-208
+
+`heredoc`语法, 27
+
+分级数据, 288, 289
+
+分级菜单 (查看 `树形菜单`)
+
+`HTML`
+
+转换为 `PDF`, II-177
+
+在邮件中 (查看 `邮件`, `HTML`)
+
+解析, II-81, II-177
+
+`HTML标签`
+
+用 `BBCode` 替换, 153
+
+从文本中剥离, 147, 163
+
+- `if-else` 语句, 9, 68, 277, II-132, II-148, II-195, II-271, II-282, II-334
+
+`ignore_repeated_errors` 指令, 333, 333
+
+获取尺寸, 212
+
+获取类型, 214
+
+与文本叠加, 224, II-40
+
+调色板的, 213
+
+防止"热链", 230
+
+重采样, 213
+
+等比例缩放, 214
+
+# Index
+
+- 真彩, 213
+
+水印, 223
+
+`include`, 12, 15, 69
+
+(查看 `require`)
+
+包含文件 (查看 `includes`)
+
+`include_once`, 12, 14
+
+(另见 `require`)
+
+`include_path` 指令, 16, II-171
+
+`includes`, 12, 15
+
+(另见 `代码优化`, `懒性包含`)
+
+(另见 `include_path_directive`)
+
+跨跨目录, 15
+
+入邮件 (查看 `邮件`, 接收)
+
+索引 (查看 `数据库索引`)
+
+实例, 48, 52, 190, 264, II-84
+
+深层结构, 55
+
+`ini` 文件 (查看 `配置信息`, 存储在文件中)
+
+`INSERT` 查询, 80, 81, 96
+
+计算受影响行数, 93
+
+获取新 ID, 94
+
+实例 (查看 `实例化`)
+
+实例化, 30
+
+接口, 60, II-353
+
+(另见 `应用程序编程接口` (`APIs`))
+
+`IP地址`, II-24, II-224, II-232
+
+迭代器, 296, II-98, II-108, II-183, II-323, II-338
+
+分层应用设计 (查看 `N体系设计`)
+
+懒加载, II-69
+
+`LIKE` 操作符, 95
+
+`LIMIT` 子句, 89, 91, 259, II-280
+
+换行
+
+在 `HTML` 中保留, 146
+
+链接标识符, 68
+
+链接 `URL` (查看 `URL编码`)
+
+`LiveHttpHeaders`, II-262
+
+记录错误 (查看 `错误`, `日志`)
+
+逻辑错误, 11, 319
+
+查找表, II-61
+
+# M
+
+- 魔法引号, 19, 84, 269, II-17, II-31
+
+(另见 `SQL` 语句)
+
+`magic_quotes_gpc` 指令, 19, 84, 85, II-17
+
+(另见 `魔法引号`)
+
+邮件列表 (查看 `邮件`, `邮件列表`)
+
+最大上传大小, 280
+
+`MD5` 摘要, II-16
+
+成员函数 (查看 `方法`)
+
+成员变量, 31
+
+`meta` 标签, II-242, II-243
+
+过期时间, II-243, II-263, II-264
+
+`pragma`, II-243
+
+相关问题, II-243
+
+访问控制, II-286
+
+(另见 `静态方法`)
+
+访问成员变量, 32
+
+调用其他方法, 37
+
+签名, II-286
+
+`MIME` (查看 `多用途邮件扩展`)
+
+`MIME`, II-208
+
+# J
+
+- `JavaScript`, II-10
+
+使用 `JavaScript` 进行表单验证, 269, 270, 271
+
+与 `SVG` 交互, II-203
+
+库, 225
+
+# L
+
+- 语言过滤器 (查看 `脏话`)
+
+`Mozilla`, II-79, II-215
+
+`多用途互联网邮件` (`MIME`), 210, 215, 216, 239, 284 (查看 `application/vnd.mozilla.x+xml`)
+
+`image/bmp`, 211
+
+`image/gif`, 211
+
+`image/jpeg`, 211
+
+`image/png`, 211
+
+`image/xml+svg`, 211
+
+`text/html`, 211
+
+`MySQL`, 17, 24, 66, 78, 290, II-2, II-254, II-279, 343
+
+(另见 `备份`)
+
+连接到, 67, 69
+
+显示, 255
+
+获取数据, 73, 75
+
+插入数据, 80
+
+存储数据在, II-172
+
+`MySQL` 类型, 80
+
+`DATE`, 174
+
+`DATETIME`, 174
+
+`TIME`, 174
+
+`MySQL` 函数
+
+`COUNT`, 90, 260
+
+`DATE_FORMAT`, 178
+
+`UTC_TIMESTAMP`, 178
+
+`MySQL` 手册, 103
+
+`mysqld`, 98, 100, 101
+
+# N
+
+`N-体系设计`, II-xiii, II-200, II-277
+
+命名空间 (查看 `XML` 命名空间)
+
+导航系统, 288
+
+嵌套缓冲区 (查看 `输出缓冲`)
+
+嵌套集, 288
+
+`new` 关键字, 33
+
+新行 (查看 `换行`)
+
+注意, 321, 323, 324, 325
+
+后缀, 188
+
+`NuAP`, II-157
+
+# O
+
+面向对象编程, 21, 23, II-311
+
+基础, 26
+
+性能问题, II-271
+
+对象, II-248
+
+交互, 25
+
+优化代码, II-269
+
+`for` 循环, II-274
+
+可能的, II-271
+
+`ORDER BY` 子句, 256
+
+输出缓冲, 333, II-245, II-27
+
+嵌套, II-254
+
+(另见 `缓存`)
+
+输出类, 33
+
+覆盖, 50
+
+覆盖方法, 51
+
+# P
+
+数据嗅探器, II-1
+
+解析结果, 259
+
+参数 (查看 `参数`)
+
+父类, 49
+
+调用方法, 51
+
+父类关键字, 51
+
+解析错误, 9
+
+按引用传递, 42
+
+(另见 `引用`)
+
+按值传递, 42
+
+密码, II-55
+
+更改, II-51
+
+生成, II-51
+
+持久化层, 89, 104, 104
+
+使用脚本执行, 247, II-24
+
+`PDF` (查看 `PDF` 格式)
+
+语言特性, 4
+
+语言基础, 3
+
+`PEAR`, ii, 16, 23, 253
+
+邮件列表, 7
+
+(另见 `php_ArgumentParser`)
+
+`Auth_HTTP`, II-2
+
+`PEAR::Archive_Tar`, 138
+
+`PHP` 类, 23, 154, II-342
+
+`PEAR::Cache`, II-261
+
+`PHP` 扩展, 4
+
+`PEAR::Cache_Lite`, II-156, II-254, II-170, II-257, II-259, II-260, II-264
+
+`DOM XML`, II-82, II-83, II-102, II-112
+
+`PEAR::DB`, 89, 105, II-262, II-280, II-343
+
+`IMAP`, 247
+
+`PEAR::DB_DataObject`, 89, 104
+
+`Java`, II-200
+
+`PEAR::Error`, 331
+
+`mailparse`, 247
+
+`PEAR::File`, 118, 119, II-262, II-280
+
+`session`, II-46
+
+`PHPdebug`, II-270
+
+`PEAR::HTMLQuick`, 241, 269
+
+`XML`, II-82, II-87
+
+`PEAR::HTML_Table`, 201, 255
+
+`XML-RPC`, II-142
+
+`PEAR::TreeMenu`, 304
+
+`XML`, II-82, II-135
+
+`PEAR::Image_GraphViz`, II-238
+
+`PEAR::Log`, 333
+
+`mysql_fields`, 90
+
+`Mail_Mime`, 247
+
+`PHP` 函数
+
+`addslash`, 85, 85, II-144
+
+`array_map`, 19
+
+`mailparse`
+
+`PEAR::NET_FTP`, 133
+
+`apache_request_headers`, II-262
+
+`apache_response_headers`, II-262
+
+滑动, 263
+
+`PHPUnit`, 101
+
+`base64_encode`, II-235
+
+`PEAR::SOAP`, II-152, II-157, II-160
+
+`checkdnns`, 161
+
+`PEAR::Tree`, 288
+
+`PEAR::Validate`, 159, 163, 167
+
+`PEAR::XML_HTMLSax`, 149, II-81
+
+`date`, 122, 176, 182, 185, 186, 194, 202, II-177, II-19, 203, II-250
+
+`PEAR::XML_SaxFilters`, II-102
+
+`define`, II-13
+
+`PEAR::XML_Tree`, II-238
+
+`PEAR::DB`, II-319
+
+`die` 函数, 68
+
+`dir`, 124, 220, II-83, II-331
+
+测量, 204
+
+`domxl_new_doc`, II-102
+
+权限, II-61
+
+`domxl_open_file`, II-102
+
+`domxl_open_mem`, II-102
+
+`perror`, 103
+
+`each`, II-273, II-325
+
+`error_log`, 331
+
+`error_reporting`, 321, II-102, II-171
+
+`eval`, II-153
+
+`explode`, 150
+
+`close`, 123
+
+`feof`, 117
+
+`fgets`, 117
+
+`getss`, 118
+
+`file`, 112, 117, II-87
+
+`file_exists`, 121
+
+`file_get_contents`, 113, 116, 117, 284
+
+`fileatime`, 122
+
+`filetime`, 122
+
+`filesize`, 117, 121, 129
+
+`flush`, II-227
+
+`fopen`, 119, 123
+
+`fread`, 116, 117, 123
+
+`fscan`, 118
+
+`fsockopen`, 130, II-87
+
+`ftp_chdir`, 123
+
+`tftp_connect`, 122
+
+`tftp_login`, 123
+
+`tftp_nlist`, 123
+
+`tftp_pwd`, 233
+
+`get_magic_quotes_gpc`, 19, 85
+
+`getallheaders`, II-262, II-266
+
+`gethostbyaddr`, II-223
+
+`getimagesize`, 212, 213, 233
+
+`gndate`, II-264
+
+`header`, 211, 288, II-7, II-243, II-246
+
+`highlight_file`, 125
+
+`highlight_string`, 125
+
+`htmlspecialchars`, 145, 156, 269
+
+`imagecolorallocate`, 224
+
+`imagecopy`, 224
+
+`imagecopyresampled`, 213
+
+`imagecopyresized`, 213
+
+`imagecreatefromjpeg`, 212
+
+`imagecreatruecolor`, 212, 213, 233
+
+`imagefontdata`, 224
+
+`imagejpeg`, 213, II-43
+
+`imageloadofont`, II-41
+
+`imageagestring`, 224, II-41
+
+`implode`, 151
+
+`ini_set`, II-72
+
+`is_dir`, 122
+
+`is_file`, 122
+
+`is_readable`, 122
+
+`is_string`, II-304
+
+`is_uploaded_file`, 283
+
+`is_writable`, 122
+
+# 索引
+
+- `putenv`, 203
+
+- `xslt_process`, II-137
+
+- 和 `IIS`, 203
+
+- `PHP`, 154
+
+- `rawlurdecode`, 144
+
+- `PHP` 手册, 2
+
+- `rawlencode`, 144
+
+- 搜索, 4
+
+- `readdr`, 123
+
+- 快捷方式, 5
+
+- `readfile`, 115, 117, II-227
+
+- `PHP` 源码
+
+- `session_register`, II-11
+
+- 在线显示, 125
+
+- `session_start`, II-7, II-9, II-11
+
+- 安全问题, 125
+
+- `II-246`
+
+- `session_unregister`, II-11
+
+- `php.ini`, 3, 11, 16, 18, 20, 47, 84, 105
+
+- `set_cookie`, II-246
+
+- 125, 128, 203, 204, 205, 226, 237, 280, 321, 322
+
+- `set_error_handler`, 326, 328
+
+- II-72, II-81, II-82, II-270
+
+- `set_time_limit`, 132, 207, 247
+
+- `PHPDoc`, II-284
+
+- `sleep`, 247, II-24
+
+- `PHPDocument`, 159
+
+- `sprintf`, 152
+
+- `phpDocument`, 293
+
+- `str_replace`, 150
+
+- `PHPMailer`, 238, 243, 45, II-26, II-48
+
+- `trip_tags`, 118, 147, 153, 156, 163, 167
+
+- `phpOpenTracker`, II-221, II-227, II-234, II-210, II-238
+
+- `striplashes`, 19, 84
+
+- `strpos`, 5, 149
+
+- `strotime`, II-266
+
+- `substr`, 149
+
+- `system`, 98, 138
+
+- `time`, 176, 202, 203
+
+- `trigger_error`, 79, 320, 324, 325
+
+- `trim`, 151
+
+- `ururdecode`, 144
+
+- `lencode`, 144
+
+- `warning`, 324
+
+- `wordarray`, 149
+
+- `xml_parse_into_struct`, II-87, II-88
+
+- `xml_parser`, II-88
+
+- `xml_parser_free`, II-88
+
+- `xml_set_option`, II-87
+
+- `xml_set_character_handler`, II-93
+
+- `xml_set_element_handler`, II-93
+
+- `xml_set_object`, II-97, II-101
+
+- `xslt_create`, II-137
+
+- `xslt_errno`, II-137
+
+- `xslt_error`, II-137
+
+- 私有方法, 39
+
+- 过程化编程, 23
+
+- 处理指令（参见 `XML` 处理指令）
+
+- 代理服务器, II-224
+
+- 伪 `cron`, 205（另 `cron`）
+
+- 公有方法, 39
+
+- `require_once`, 12, 14, 17, II-276, II-283（参见 `include_once`）
+
+- 预留字符, 144
+
+- 资源标识符, 74
+
+- `RESTORE TABLE` 查询, 101
+
+- 结果分页器（参见结果页码）
+
+- 返回命令
+
+- 在构造函数中, 31
+
+- 返回值, 5
+
+- 用于构造函数的 `for`, 31
+
+# Q
+
+- `QuickForm`（参见 `PEAR`, `PEAR:HTML QuickForm`）
+
+- 引号（参见 `优化`, `引用` `quotes`）
+
+- `SQL` 语句中的引号, 83, 84
+
+- 可重用代码, 20, 23
+
+- 丰富客户端, II-215
+
+- `RLIKE` 操作符, 96
+
+- 机器人（参见 `访问统计`, 排除`搜索引擎`）
+
+- `RSS`, II-79, II-85, II-102
+
+- 聚合, II-122
+
+- 生成, II-114
+
+- 验证, II-122
+
+- `RTFM`, 2
+
+# R
+
+- `R&OS PDF`, II-170
+
+- 原始数据, II-226
+
+- `RDF`（参见 `RSS`）
+
+- 领域, II-6
+
+- 重定向, II-20（参见 `HTTP` 头部, `location`）
+
+- 重构, 28
+
+- 引用计数, 48
+
+- 引用, 20, 39, II-276（参见 `调用-引用-传递`, 参见 `引用传递`）
+
+- 通过...提高性能, 47
+
+- 在 `PHP` 5 中, 48
+
+- 从方法返回函数, 46
+
+- 指向新对象, 46
+
+- `register_globals` 指令, 18, II-11, II-18
+
+- 注册用户（参见 `用户注册系统`）
+
+- 正则表达式, 153, 158, II-44, II-340
+
+- `REPAIR TABLE` 查询, 103
+
+- 修复损坏的 `MySQL` 数据库, 103
+
+- `require`, 12（参见 `include`）
+
+# S
+
+- `SAX`（参见 `Simple API for XML`）
+
+- 矢量图形 (`SVG`), II-169, II-200
+
+
+
+- 使用 PHP 渲染, II-205
+
+- 脚本执行时间（参见 PHP 脚本）
+
+- 搜索引擎友好 URL, 307
+
+- 搜索引擎查询, II-236
+
+- 在字符串中搜索并替换, 149
+
+- MySQL 数据库搜索, 95（参见 `FULLTEXT` 搜索）
+
+- 安全套层 (`SSL`), II-1
+
+- 安全, 2
+
+- `SELECT` 查询, 80
+
+- 别名, 91, II-62
+
+- 返回的行, 89, 使用 MySQL, 90, 使用 PHP, 89
+
+- 优化, II-275
+
+- 排序, 256
+
+- 语义错误, 10, 319
+
+- `sendmail`, 237
+
+- `session` 变量, II-45
+
+- `session.save_path` 指令, II-10, II-72
+
+- `sessions`, II-8, II-11, II-12, II-55, -154, II-214
+
+- 爬虫（参见访问统计，排除搜索引擎）
+
+- `SQL` 注入, 275
+
+- `SQL` 注入, 19, 20, 86, II-144
+
+- 独立 PHP 脚本, 249
+
+- 标准输入, 249
+
+- 静态方法, 29, 159
+
+- 统计（参见访问统计）
+
+- `stdClass`, II-100
+
+- 字符串函数, 149（参见 `session` 处理器）
+
+- 在多个服务器上, II-280
+
+- 安全问题, II-9, II-57
+
+- 结构化查询语言 (`SQL`), 73, II-134
+
+- 短标签 `<>`
+
+- `short_open_tag` 指令, 18, 20, II-81
+
+- `SHOW TABLES`, 101
+
+- `Simple API for XML` (`SAX`), 63, II-80, II-82, II-110, II-177
+
+- `Simple Mail Protocol` (`SMTP`), 237（参见 `DELETE` 查询, 参见 `INSERT` 查询, 参见 `SELECT` 查询）
+
+- `Simple Object Access Protocol`, II-xiii, II-141, II-150, II-226（参见 `WSDL`）
+
+- 显示页码, 263
+
+- 构建客户端, II-152, II-164
+
+- 构建服务器, II-157
+
+- `XML-RPC`, II-142
+
+- 源码（参见 PHP 源码）
+
+- 特殊字符, 145, 156（参见预留字符, 参见不安全字符）
+
+- 自动生成, 104
+
+- 从 XML 生成, II-138
+
+- 解决问题, 78
+
+- 子类（参见父类）
+
+- 超全局变量, 18
+
+- `SVG` (矢量图形)
+
+- 语法语句, 88, 256, 327, II-58, II-60, II-130, II-322, II-334
+
+- 语法错误, 9, 319
+
+- 语法高亮（参见 PHP 代码）
+
+- 系统集成, II-298
+
+# T
+
+- 表关系, 66, 94
+
+- 斑马行颜色, 257
+
+- `TAR` 文件（压缩）
+
+- 模板缓存, II-245
+
+- HTML 文档中的文本内容, 143
+
+- 缩略图创建, 211, 214
+
+- 时间限制（参见执行限制）,时区, 202
+
+- PHP 脚本计时, 204
+
+- 分词器扩展, 9
+
+- 跟踪在线用户, II-73
+
+- 树形菜单, 289, 301
+
+- `try-catch` 语句, 320
+
+# U
+
+- 无缓冲查询, 74, 89
+
+- 统一建模 (`UML`), 26, 38, 57, 59, 190, II-84, II-318, II-322, II-340
+
+- 单元测试, 11, II-298, II-300
+
+- `Unix` 时间戳, 173, 175, II-186
+
+- 生成代码, II-293
+
+- 存储在 MySQL, II-174
+
+- 不安全字符, 144
+
+- `UPDATE` 查询, 80, 81
+
+- `WHERE` 子句的重要性, 81
+
+- `upload_max_files` 指令, 280
+
+- `URL` 编码, 144
+
+- `URL` 重写（参见 `mod_rewrite`）
+
+- `URL`（搜索引擎友好型）
+
+- 设计, 314
+
+- 用户代理字符串, II-223
+
+- 用户组, II-61
+
+- 用户注册系统, II-25, II-37
+
+# V
+
+- 验证提交的数据, 159, II-335
+
+- 使用 `QuickForm`, 270, 274
+
+- `session` 变量, II-31
+
+- 变量, II-62
+
+- 输出格式化, 152
+
+- `SQL` 查询, 87
+
+- 不存在, II-31
+
+- `session` 处理器, II-15
+
+- 视图, II-23
+
+- 导出, II-234
+
+- 收集, II-225
+
+- 日志, II-236
+
+- 访问者, II-28
+
+- `SQL` 查询, II-32
+
+# W
+
+- `WAP`（应用协议）
+
+- 标记
+
+- Web 服务, II-xiii, II-79, II-141, II-150
+
+- 缓存, II-260
+
+- 消费, II-150
+
+- 部署, II-150
+
+- 安全问题, II-65
+
+- Web 服务语言
+
+- `WHERE` 子句, 89, 91, II-275
+
+- `while` 语句, 9, 74, 117, 251, II-51, II-92, II-232, II-328
+
+- 白盒测试, II-299
+
+- 空格, 151
+
+- `WAP`（应用协议）
+
+- 标记语言 (`WML`), II-135, II-169, II-205
+
+- 字符串, II-206
+
+- 生成, II-208
+
+- 使用 Opera 渲染, II-205
+
+- `WML`（标记语言）
+
+- 换行（参见文本换行）
+
+- 换行, 149
+
+- `WSDL`, II-142, II-150, II-157, II-160
+
+- 编辑器, II-151
+
+- 错误代码, II-144
+
+- 与 `SOAP`, II-142
+
+- `XP`（参见敏捷编程）
+
+- `XPath`, II-81, II-123, II-128, II-134, II-139
+
+- 谓词, II-136
+
+- `XQuery`, II-134
+
+- `XSL` 格式对象 (`XSL-FO`), II-200
+
+- `XSL`, II-79, II-135, II-138
+
+- 错误处理, II-139
+
+- `XSS`（参见跨站脚本 (`XSS`) 标签）
+
+- `XUL`（参见 XML 用户界面语言）
+
+# Z
+
+- `ZIP` 文件（参见压缩文件）
+
+# X
+
+- `Xdebug`（参见 PHP 扩展, `Xdebug`）
+
+- `XML`, 17, 18, 290, II-79, II-205, II-456
+
+-（参见 `XPath`, 参见 `SQL`）
+
+- 转换为 `SQL`, II-138
+
+- 生成, II-80, II-111, II-412
+
+- `XML` 实体引用, II-93
+
+- `XML` 命名空间, II-81, II-127
+
+- 默认命名空间, II-127
+
+- `XML` 处理指令, 18, II-451, II-93, II-201
+
+- `XML Schema`, II-81, II-142
+
+- `XML` 用户界面语言 (`XUL`), II-169, II-215
+
+- `XML-RPC`, II-xiii, II-141
+
+# 使用 PHP 高效工作……
+
+《PHP 精华，第一卷：基础》是一部针对常见 Web 开发问题的最佳实践解决方案汇集。它侧重于通过应用结构良好、面向对象的软件设计原则，以最小努力实现实际目标。
+
+# 关于 Harry Fuecks
+
+Harry Fuecks 自 1994 年起一直从事企业 IT 方面的工作，拥有物理学学士学位。他于 1999 年在搭建小型内网时首次接触到 PHP。如今，他是企业外网的首席开发人员，SitePoint 丰富的 PHP 社区的活跃参与者，也是 `phpPatterns.com` 背后的推动者。
+
+# 关于 SitePoint
+
+SitePoint 致力于为 Web 专业人士出版有趣、实用且易于理解的内容。访问 `sitepoint.com` 访问我们的书籍、通讯订阅、文章和社区论坛。
+
+# 需要更多帮助？
+
+请访问位于 `sitepointforums.com` 的 SitePoint 社区论坛。如需销售与支持，请邮件至 `books@sitepoint.com` 与我们联系。
+
+USD 99.99
