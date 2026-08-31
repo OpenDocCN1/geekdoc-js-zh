@@ -1,0 +1,3039 @@
+
+# Simply Electron：使用 JavaScript 精通桌面软件开发
+
+![](img/Image00000.jpg)
+
+![](img/Image00002.jpg)
+
+## 引言
+
+Electron 是一个用于构建原生、跨平台桌面软件的 JavaScript 框架。简单来说，如果你能创建一个网页，你就可以用 Electron 构建桌面软件。在本书中，我们将首先回顾一下软件开发的历史。本书还将涵盖 `TypeScript` 和 `Electron` 等主题，这一终极组合将让我们直接进入顶尖领域。
+
+## 前提条件
+
+1. 需要具备 `HTML`、`CSS`、`JavaScript` 和 `NodeJS` 的基础知识和经验。
+2. 需要具备使用 `Terminal/CMD` 的经验。
+3. 需要一定的编程经验，即使使用的是 `JavaScript` 以外的语言。
+4. 需要访问电脑并连接互联网，你会被要求定期阅读 `Electron` 模块的最新文档，并且需要使用 `NPM` 在互联网上安装包。
+
+本书将使用 Linux 发行版，但所有指令对于 Windows 和 MacOS 来说都是相似的。在指令有不同之处，可能会提供单独的说明。然而，MacOS 用户需要注意 MacOS 及其相关产品对开发者的特定限制。MacOS 有时需要额外的说明，这些说明可以在 Electron 的文档中轻松找到，书中通常会提供相关链接。你对这些工具的掌握得越深，你所能开发的应用就越出色。因此，如果你在所需的技能上已经具备了基础水平的技能，就可以进入第一章。如果没有，请阅读《Simply Web Development – Anna Voice and Ray Voice》一书，然后回到这里。祝你你好运！
+
+# 关于作者
+
+![Ray Voice](img/Image00003.jpg)
+
+在 Twitter 上关注：@RayShortHead
+
+Ray Voice 是一位企业家，也是一位畅销作家。他是“Ray & A Group Solutions”的董事总经理兼首席执行官，这是一家基于科技的业务咨询公司。他是一位终身企业家，在 16 岁时就开始了自己的第一家公司，拥有超过 8 年的教学经验，涵盖音乐制作、计算机科学、经济学、数学、物理、古典文学等领域。他对写作、科学和教学的热情，以及对广泛领域的天赋，加之他大胆的创业精神，是他作为作者和企业家成功的首要驱动因素。他既写学术文学，也写小说；在小说领域出版过《杰西卡的生活》（Work life of Jessica）和《我们的生活》（Our lives），在学术领域出版过《Simply ES6》、《Simply Web Development》、《Simply Vim》等书籍。
+
+![Anna Voice](img/Image00004.jpg)
+
+在 Twitter 上关注：@AnnaShortHead
+
+Anna Voice 是一位企业家、营销专家、网页设计师、增长黑客、资深编辑以及一位畅销作家。她从担任一名初级营销代理开始职业生涯，在传统营销环境中积累了多年经验后，开始经营了自己的营销公司。她现在是“Ray & A Group Solutions”的销售与营销总监兼首席运营官。她拥有多年的教学经验，提供有关增长黑客、计算机编程、在线营销等课程和研讨会，并赋能数百名女性投身 STEM 职业。她虔诚地支持和鼓励 STEM 职业的女性，为了支持这一事业，她定期举办课程，并指导想要将计算机编程作为职业的女性。
+
+## 献辞
+
+我们想将这本书献给我们最小的弟弟 Matthew Voice。我们希望你发现编程计算机像我们一样快乐！
+
+## 作者致谢
+
+以下人员参与了本书的制作：
+
+- Serena Juxon（导师）
+- Siena Dahl-Joy（顾问及初步读者）
+- Alina Voice（编辑及初步读者）
+- Matt Davison（Electron 专家及顾问）
+- Nick Jones (@nickxjones_)（封面素材图片）
+
+我们对他们每个人都表示感谢！
+
+# 第 1 章 – 让我们开始吧
+
+这一章完全关于学习计算机的历史以及它是如何导致软件发展的。如果你喜欢学习计算机，那么你大有福了！
+
+我们还将涵盖一些基础的 HTML、CSS、JavaScript、ES6 和 NodeJS。在这里涵盖这些主题的目的是让你对书中需要的内容有一个初步了解。如果你觉得在这些基础主题上很薄弱，请回到基础，在回到本书之前良好地学习它们。如果你想学习 HTML、CSS、JavaScript、ES6、 NodeJS 等，请阅读《Simply Web Development – Anna Voice, Ray Voice》一书。
+
+## 计算机历史
+
+计算机基本上是任何用于计算的设备。有为特定目的制造的计算机硬件（如执行计算等），也有通用计算机，任何人都可以将其重新用于执行不同的任务，例如我们的笔记本电脑、台式机等。然而，“计算机”（Computer）一词第一次出现时，它是用来描述受雇执行计算的真实职业名称。
+
+![伊象骨](img/Image00005.jpg)
+
+当人们开始解决超过他们思维计算能力的问题时，第一个计算设备被发明。计算设备的历史可以追溯到几年前。最早记录的计算设备是像伊象骨那样的计数棒。这些计数棒主要用于记忆目的和基础但冗长的计算。伊象骨大约使用于公元前 19,000 年，那是旧石器时代。这种技术的相对现代的例子可以想象成念珠和电子计数器。
+
+![安提基特亚机械的一部分](img/Image00006.jpg)
+
+关于古代计算设备的记录，例如安提基特亚机械，它被用于预测天文位置。在图中我们可以看到该设备的一部分。它是由希腊考古学家 Valerios Stais 在 1901 年在安提基特腊岛附近打捞的残骸中发现的。该仪器被认为是由希腊科学家设计的，并被认为是已知的模拟计算机。它的复杂性表明它一定有此构建出这一成就的前身。它被确定制造于公元前 87 年左右。然而，提到古代计算机时，我们不能忘记著名的中国算盘，又称“Suanpan”。它最早出现在公元 190 年的一本由许越编写的东汉时期书籍《许氏筹算记》中。虽然这种设备的确切设计尚为人知，但这种设备可以用来执行十进制和十六进制的计算。
+
+![算盘](img/Image00007.jpg)
+
+世界各地使用了不同版本的算盘，最著名的版本是算盘和罗马手算盘。
+
+![帕斯卡机又称帕斯卡计算器](img/Image00008.jpg)
+
+然后是法国数学家布莱斯·帕斯卡发明的帕斯卡机（Pascaline）。这台机器能够执行两个数字的加法，以及通过重复加法执行乘法和除法。帕斯卡机以其向位进位的能力而闻名。这台机器设计于 1642 年。后来在 1672 年，著名的德国数学家戈特里德·威廉·莱布尼茨（微积分的发明者之一）开发了一种名为进位器（Stepped Reckoner）的设备。
+
+![](img/Image00009.jpg)
+
+在图中我们可以看到进位器的模型。这是第一个能够执行所有算术计算的计算器。这台机器超越了当时的科技，除了机械问题外，还有一个严重的设计缺陷导致其无法可靠地运行。
+
+![阿米机](img/Image00010.jpg)
+
+随后在 1851 年出现了阿米机（Arithmomètre），这是第一种强大且可靠到可以办公数字机械计算器。这种计算器可以直接加减两个数字，并能有效地执行长乘法和除法。一位名叫查尔斯·埃塞尔·托马斯·德科马尔的人在 1851 年至 1915 年间获得了专利并制造了这种设计。
+
+![](img/Image00011.jpg)
+
+随着阿米机的推出，机械计算器诞生了；在 1851 年到 1890 年的四十年里，它是商业生产中唯一类型的机械计算器。
+
+![](img/Image00012.jpg)
+
+1819 年，英国数学家巴别奇开始制造一种名为“差分机”（Difference Engine）的设备。
+
+![](img/Image00013.jpg)
+
+1837 年，查尔斯·巴别奇提出了该设备的继任者并将其命名为“分析机”（Analytical Engine）。
+
+![](img/Image00014.jpg)
+
+艾伦·图灵被广泛认为是计算机科学和人工智能之父。
+
+![艾伦·图灵](img/Image00015.jpg)
+
+![](img/Image00016.jpg)
+
+## 运算符
+
+| 符号 | 功能 | 示例 | 结果 |
+| :--- | :--- | :--- | :--- |
+| + | 加两个数字，或连接两个字符串。也可以将字符串与数字连接。 | `1+2` | 3 |
+| - | 减两个数字。 | `1-2` | -1 |
+| * | 乘两个数字。 | `1*2` | 2 |
+| / | 除两个数字。 | `1/2` | 0.5 |
+| % | 得除法的余数。 | `1%2` | 1 / *因为 1 个苹果无法在不切成碎片的情况下分给 2 个人*/ |
+
+## 条件判断
+
+在 JavaScript 中，条件判断非常简单，我们要做的就是写一个 `if/else` 语句。看下面的示例：
+
+```javascript
+let x = 1;
+If (x > 0) {  // 执行某些操作
+} else {
+  // 执行其他操作
+}
+```
+
+我们也可以使用像下面这样的单行条件判断：
+
+```javascript
+let x = 1;
+let y = (x > 0) ? true:false; // 因为 1 大于 0，所以 y 为 true
+```
+
+可以使用以下运算符进行比较：
+
+| 运算符 | 名称 | 功能 | 示例 |
+| :--- | :--- | :--- | :--- |
+| `==` | 等于 | 检查左侧值是否等于右侧值。如果是返回 true。 | `1 == 2 //false` |
+| `===` | 严格等于 | 检查左侧值是否等于右侧值，且类型相同。如果是返回 true。 | `1 === “1” //false` |
+| `!=` | 不等于 | 检查左侧值是否等于右侧值。如果是返回 false。 | `1 != 2 //true` |
+| `>` | 大于 | 检查左侧值是否大于右侧值。如果是返回 true。 | `2 > 1 //true` |
+| `<` | 小于 | 检查左侧值是否小于右侧值。如果是返回 true。 | `2 < 1 //false` |
+
+## 函数
+
+函数用于隔离一段代码并在多处通过引用它。看下面的示例：
+
+```javascript
+function myFunk(x) {
+  alert(x);
+}
+myFunk(“Hello World”);
+```
+
+在上面的代码中 `myFunk` 是函数名。`x` 是函数使用的参数，`Hello World` 是该参数在最后一行被调用时的值。
+
+此代码输出：
+
+![](img/Image0025.jpg)
+
+## 对象
+
+JavaScript 对象是非常数据管理工具。它们基本上是可以轻松转换为不同数据结构的集合。比较两种创建 JavaScript 对象的方法：
+
+### 不使用对象：
+
+```javascript
+var player1 = “Human”;
+var health1 = 100;
+var power1 = 50;
+var weapon1 = “Hands”;
+```
+
+### 使用对象：
+
+```javascript
+var player_1 = {
+  name: “Human”,
+  health: 100,
+  power: 50,
+  weapon: ”hands”
+}
+```
+
+使用对象的方法在变量之间提供了更好的集成和协调。看看调用对象内部值的几种方法：
+
+JavaScript 代码：
+
+```javascript
+var myObj = {
+  firstName: "Anna",
+  lastName: "Voice"
+}
+console.log(myObj.firstName );
+console.log(myObj.lastName );
+console.log(myObj["firstName"] );
+console.log(myObj["lastName"] );
+```
+
+输出：
+
+![](img/Image0026.jpg)
+
+在这里我们两种方法调用了 `myObj` 中的 `firstName` 和 `lastName` 成员。第一种是使用 `myObj.firstName` 和 `myObj.lastName` 方法；这种方法被称为点符号表示（dot-notation）。
+
+另一种调用这些对象的方法是使用 `myObj["firstName"]` 和 `myObj["lastName"]`。这种方法很有帮助，因为我们可以动态向对象传递键名。将其视为动态表示（dynamic-notation）。
+
+## 数组
+
+数组是 JavaScript 中的一种数据类型，允许你在变量中存储有序的数据集合，就像列表一样！数组中的每个元素可以通过从 0 开始的索引数字来标识（这被称为零索引）。数组中的第一个元素索引为 0，第二个索引为 1，第三个索引为 2，依此类推。简单来说，`Array` 就是列表，而数组索引就是我们列表中的项目编号：
+
+这是如何写数组：
+
+![](img/Image0027.jpg)
+
+要创建一个数组，我们只需要在一对括号内包含数据/元素列表；此外数据需要用逗号 `“` 分隔。这就是创建数组的所有内容！
+
+要调用这些元素，只需调用变量并传递一个索引数字。例如：
+
+```javascript
+var myList = ["Jam", "Butter", "Bread"];
+console.log( myList[0]); // 输出: Jam
+console.log( myList[1]); // 输出: Butter
+console.log( myList[2]); // 输出: Bread
+```
+
+## For 循环
+
+多次编写相同的代码是疯狂的！相反，如果我们想让一段代码运行特定的次数，可以使用名为循环的工具。看下面的示例：
+
+![](img/Image0028.jpg)
+
+控制台输出：
+
+![](img/Image0029.jpg)
+
+与其这样做，我们只需要使用循环，只需看下面的示例：
+
+```javascript
+for (var i = 0; i <= 10; i++) {
+  console.log(i);
+}
+```
+
+我们可以使用这段代码，输出将保持不变。这是一个 `for` 循环，还有其他类型的循环，但它们本质上都在做相同的工作。`for` 循环是你使用频率最高（80%）的循环，所以要学好它！
+
+`for` 循环由三部分组成，其语法如下所示：
+
+![](img/Image0030.jpg)
+
+- `初始化` 部分声明一个变量并赋予一个值，通常是循环的起点；在示例中我们给变量赋了初始值 1。
+
+- `条件` 部分要求一个比较运算符在每次循环开始时进行检查，只要条件为 `true` 循环就会运行；在示例中，我们希望循环运行 10 次，所以我们选择了条件 `i<=10`，这样在前 9 次执行时 `i` 的值小于 10，循环正常运行；第 10 次执行时值恰好等于 10，循环继续运行；第 11 次检查条件时，`i` 的值为 `11`，它不再小于等于 10，因此条件返回 false，循环结束。
+
+- `迭代` 部分必须是一个 JavaScript 表达式，用于增加或减少我们变量 `i` 的初始值。
+
+它们用法的一个很好的例子是：
+
+HTML: `<div id='root'></div>`
+
+JavaScript: `document.getElementById('root').innerHTML = "Hello World";`
+
+在这个示例中，结果将在网页页上显示“Hello World”。
+
+# ES6 又称 ES2015
+
+简单来说，“ES6”是 `JavaScript` 的高级版本！它也被称为 `ES2015`，因为它是基于欧洲计算机厂商协会（又简称 `ECMA`）制定的 `ECMAScript 2015` 标准的。
+
+初看之下，要在日常的 `JavaScript` 代码中集成 `ES6` 似乎没什么需要学习的，然而，在继续阅读后续章节之前，我们建议你良好掌握 `ES6`，虽然它不是先决条件，但仍然非常推荐。如果你想进一步学习 `ES6`，可以购买《Simply ES6: Mastering JavaScript and ES6 to its fullest》一书，这本畅销书被誉为：“有以来最好的 ES6 书籍之一”—— `BookAuthority`
+
+以下是我们可以开始学习 `ES6` 时可以学习的一些基础知识列表：
+
+1. 开始使用 `let` 和 `const` 变量声明来代替 `var` 声明。`var` 有其用处，但请尽量避免使用。
+2. 在 `JavaScript` 中开始使用 `ES6` 类（classes）。
+3. 开始使用反引号（`)）（可以在“Esc”键下方找到）来编写多行字符串。这类字符串被称为“模板字符串字量”（Template literals）。
+4. 当不需要 `this` 等关键字时，开始使用箭头函数（fat-arrow functions）。
+5. 去买《Simply ES6》吧，这是一个非常全面的话题。
+
+让我们来看看如何实现！
+
+## ES6 中的类
+
+类在某种意义上是“对象工厂”，因为它们接收参数并返回对象。`ES6` 为在 `JavaScript` 中创建类提供了一种简单的方法！让我们通过下面的代码来更好地理解：
+
+```javascript
+class FarmAnimal {
+  constructor (species, name) {
+    this.species = species;
+    this.name = name;
+    this.love = 0;
+  }
+  increaseLove () {
+    this.love += 10;
+  }
+}
+let david = new FarmAnimal ("dog", "David");
+console.log (david);
+david.increaseLove();
+```
+
+控制台输出：![](img/Image00031.jpg)
+
+
+
+看在`ES6`中编写类是多么简单？！我们只需要编写关键字`class`，后面跟上我们的类名称，然后是用于创建创建的指令！例如在这里，我们指示类创建一个名为`increaseLove()`的函数，然后在倒数第二行对`david`对象调用了该函数。你会发现我们只使用`const`关键字来声明那些我们永远不想更改其值的变量！它们在整个代码中都是常量。永远不要尝试重新赋值/更改`const`变量的值。
+
+## 箭头函数
+
+`ES6`为`JavaScript`带来了一种新类型的函数——“箭头函数”。这种函数并不是传统`JavaScript`函数的替代品，但它们大部分时候会被使用。让我们看看下面的函数：
+
+![](img/Image00032.jpg)
+
+看了这个箭头函数后，看起来似乎比旧的编写函数的方法要麻烦得多，但并非总是如此。另外注意`=>`箭头符号，很酷对吧？！
+
+## 用于 Electron 的 NodeJS
+
+`NodeJS`是一个`JavaScript`框架，允许我们编写运行在网站后端和网络服务的代码，至少这是`NodeJS`的初始目的。
+
+注意：框架只是一种编写、编译和处理代码的方式。
+
+注意：后端是服务器 PC 的另一个名称，用于向客户端/终端用户/前端/访问网站的人提供网页服务。
+
+## 下载 NodeJS
+
+要使用`NodeJS`，我们需要从它的网站下载并安装。如果你正在使用 Windows 或 Mac，可以使用以下步骤下载并安装`NodeJS`：
+
+步骤：
+
+1. 下载`NodeJS`的第一步是访问它的网站“nodejs.org”或在线搜索中出现的任何相关网站。找到并点击此按钮（注意：10.16.0 可以是任何版本号）：
+
+![](img/Image00033.jpg) 将下载一个安装文件。使用此安装器安装 NodeJS。（如果需要，有许多在线视频指南可以参考）。
+
+在基于 Debian 的发行版（如 Ubuntu、PopOS 等）中，我们可以使用`APT`软件包管理器通过以下命令安装 NodeJS：
+
+```bash
+sudo apt-get install nodejs
+```
+
+在此命令中，`sudo`是可选的，除非你需要在安装 NodeJS 时需要高级权限。你也可以按照类似的步骤在 Linux 上下载 NodeJS，尽可能使用你所用 Linux 发行版默认的包管理器。
+
+在安卓上，你可以安装 Termux 并运行以下命令：
+
+```bash
+pkg install nodejs
+```
+
+**注意**：如果你使用 Terminal 安装 NodeJS，可能需要单独安装 NPM；请使用命令：
+
+```bash
+sudo apt-get install npm
+```
+
+要检查电脑上是否安装了 NodeJS 或`NPM`，请在你的 Terminal/CMD 中以下命令：
+
+```bash
+node -v
+npm -v
+```
+
+如果这些程序已正确安装，这些命令将返回各自程序的版本号。
+
+### 编写你的第一个 NodeJS 代码:-
+
+一旦安装了 NodeJS，打开你的 Terminal/CMD 并执行命令：
+
+```bash
+node
+```
+
+这将激活 NodeJS CLI，然后你就可以在 Terminal 中运行任何 JavaScript 代码。例如，在激活 NodeJS CLI 后，输入以下代码：
+
+```javascript
+console.log("Hello World") // 向控制台打印“Hello World”
+```
+
+这段代码将向控制台打印“Hello World”，但由于它是运行在 NodeJS 环境中，它会输出到 NodeJS 的 CLI 中，而不是浏览器的控制台。
+
+### 使用 NPM 的 NodeJS
+
+`NPM`是 “Node Package Manager”（Node 包管理器）的缩写，它是与 NodeJS 捆绑预装的软件包管理和工作站管理工具。
+
+按照以下指令为你的项目初始化 NPM:-
+
+1. 打开 Terminal/CMD。
+
+2. 创建一个名为“myApp”的新文件夹/目录。你可以使用命令`mkdir myApp`。
+
+3. 通过 Terminal 导航到该目录。使用`cd`命令。
+
+4. 输入`npm init`并按回车。（之后可能需要等待几刻）。系统会问你几个问题；只需一直按回车使用默认选项跳过即可。
+
+5. 现在使用命令`echo >> index.js`在此目录中创建一个`index.js`文件。
+
+6. 现在使用`ls`命令查看该目录的内容，注意你应用目录中新的`package.json`文件；此文件是 NodeJS 环境的核心指令文件，该文件告诉 NodeJS 如何执行你的代码。
+
+7. 另一个需要注意的是`index.js`文件，它目前是空的，但它以后将包含你的主 NodeJS 源代码。
+
+8. 将以下代码添加到`index.js`文件中：（Linux 用户可以使用 nano 或 gedit 等工具）
+
+```javascript
+console.log("Hello World") // 向控制台打印“Hello World”
+```
+
+9. 保存此文件。
+
+10. 执行命令`node index.js`。这将在你的 Terminal/CMD 中打印 Hello World。这就是我们如何开始配合 NPM 使用 NodeJS 的。
+
+11. 在你的项目目录下，你可以使用`npm init`在 CLI 中启动一个问卷，根据意愿回答每个问题，或在每个问题上按回车保留默认值。这将为你的项目初始化 NPM，并给你一个`package.json`文件。
+
+我们到目前为止在书中中学到的只是 NodeJS 的一角，它比 Electron 还要强大得多。我建议你即使只做前端，也应该进一步努力学习 NodeJS。
+
+## 第 2 章 – TypeScript
+
+TypeScript 是 JavaScript 的化学元素 X，没开玩笑！TypeScript 是由微软开发并维护的开源编程语言。它基本上是带有可选静态类型系统的 JavaScript，并且包含了最新的 ECMAScript 特性，这意味着它内置了 ES6、ES7 等。它还与 ReactJS、ElectronJS、ASP.NET、Ruby on Rails、Expo 和 React-Native 集成得非常好。如果你喜欢 JavaScript，你就会喜欢 TypeScript！
+
+### 数据类型
+
+让我们学习一下编程语言中数据类型的分类。记住 JavaScript 是动态类型、弱类型和鸭子类型（duck typed）。
+
+**注意**：以下定义是松散类型的（这里玩了双关语！）。
+
+- **动态类型:-**：意味着我们在声明变量时不需要为它分配数据类型。
+
+- **静态类型:-**：意味着我们在声明变量时必须为它分配数据类型。
+
+动态类型示例：
+
+```javascript
+var x = 1;
+var y = " one ";
+var z = true;
+```
+
+静态类型示例：
+
+```javascript
+int x = 1;
+string x = " one ";
+bool = true;
+```
+
+看在 JavaScript（一种动态类型语言）中，我们可以直接使用`var`、`let`和`const`等关键字来声明变量，而无需预先知道它们的数据类型。但在静态类型代码中，我们使用一种伪编程语言，它使用`int`、`string`、`bool`等关键字来声明具有固定、预设数据类型的变量。
+
+- **强类型:-**：意味着数据类型之间很难交互并相互转换。
+
+- **弱类型:-**：意味着在数据类型之间切换并让它们相互作用非常容易。
+
+弱类型示例：
+
+```javascript
+var x = 1;
+var y = " one ";
+console.log(x + y); // 打印字符串“1one”
+```
+
+强类型示例：
+
+```javascript
+int x = 1;
+string x = " one ";
+console.log(x + y); // 抛出错误
+```
+
+看在 JavaScript（一种弱类型语言）中，我们可以直接将一个数字和一个字符串相加，JavaScript 将将两者合并，然后返回一个数据类型设置为“string”的输出，这是由它自己决定的。但在强类型部分，如果我们尝试直接加两个不同数据类型的值，伪编程语言会抛出错误。
+
+现在 JavaScript 也是鸭子类型语言，这意味着数据类型取决于数据看起来像什么！懂了吗？
+
+“如果它走得像鸭子，，叫得也像鸭子，那么它一定是一只鸭子。”
+
+这意味着 JavaScript 并不在乎变量想要是什么数据类型，如果它拥有数组的方法（如`map()`），那么它必须是一个数组！如果它拥有字符串的方法，那么它必须是一个字符串。你明白意思了！
+
+要使用 TypeScript，我们需要将 TypeScript 代码转译（翻译/编译）为标准的 JavaScript 代码。为了做到这一点，我们首先需要下载 TypeScript，可以使用以下命令下载：
+
+```bash
+sudo npm install -g typescript
+```
+
+另外注意，TypeScript 文件具有`.ts`扩展名，而 JavaScript 文件具有`.js`扩展名。
+
+这里的`sudo`前缀仅适用于 Linux 用户。Windows 用户可以在以管理员权限打开 CMD 后运行命令`npm install -g typescript`。
+
+确保你拥有最新版本的 NodeJS 和 NPM。在安装它们后，使用以下命令更新 NodeJS 和 NPM：
+
+```bash
+sudo npm install -g npm
+sudo npm install -g nodejs
+```
+
+一旦下载并安装了 TypeScript，我们可以使用以下命令`tsc -v`检查它的版本号并验证安装正确。该命令返回类似“3.6.3”的版本号。
+
+一旦 NodeJS、NPM 和 TypeScript 都安装并更新到最新，让我们创建一个新项目目录并开始工作吧。
+
+### 创建一个新的 TypeScript 项目
+
+按照以下步骤设置 TypeScript 项目：
+
+1. 打开 Terminal/CMD。
+
+2. 创建一个名为“myTS”的新目录。使用终端命令`mkdir myTS && cd myTS`。
+
+3. 使用命令`npm init`初始化 NPM 并选择所有默认选项。
+
+4. 为我们的 TypeScript 源代码创建一个“index.ts”文件。使用命令`echo >> index.ts`。
+
+**注意**：`index.ts`文件具有`.ts`扩展名，该文件以后将被转译为`index.js`文件，它是我们应用的入口。
+
+5. 在代码编辑器中打开`index.ts`文件，并其中添加以下 TypeScript 代码：
+
+```typescript
+const message : string = 'hello world';
+console.log(message); // 打印 hello world
+```
+
+6. 保存`index.ts`文件。
+
+7. 使用 TypeScript 编译器将`index.ts`转译为`index.js`文件。使用命令`tsc index.ts`来完成。
+
+8. 使用命令`ls`查看我们“myTS”目录的内容。你应该看到一个`index.js`文件、一个`index.ts`文件和一个`package.json`文件。
+
+9. 现在使用命令`node index.js`执行你的代码。在 CLI 中查看我们 TypeScript 代码的输出。
+
+从现在起，你将在`index.ts`文件中编写你想要的所有代码，然后使用命令`tsc index.ts`将编译为`index.js`文件，最后使用`node index.js`命令运行程序。
+
+## 数据类型偏见
+
+JavaScript 是一种动态类型编程语言，而 TypeScript 为 JavaScript 添加了可选的静态类型。因此，我们最终拥有的是一个可以随地进行静态类型化的动态类型语言，打破了编程语言中数据类型偏见所设置的边界。
+
+让我们来看一个例子：
+
+以下是具有动态类型的 JavaScript/ES6：
+
+```javascript
+let x = 1 ;
+console . log ( typeof ( x )); // logs: number
+x = ” one ” ;
+console . log ( typeof ( x )); // logs: string
+```
+
+以下是具有静态类型的 TypeScript：
+
+```typescript
+let x : number = 1 ;
+console . log ( typeof ( x )); // logs: number
+x = ” one ” ; // 将抛出错误
+```
+
+由于 TypeScript 编译为 JavaScript，它不会逐行编译，而是会一次性完全编译；即使只有一个处数据类型违规，它也会抛出类似如下的错误：`Type '"one"' is not assignable to type 'number'.`
+
+## TypeScript 中的数据类型
+
+TypeScript 拥有与 JavaScript 相同的所有数据类型并在此基础上，TypeScript 提供了额外的数据类型。以下是 TypeScript 数据类型的列表：
+
+1. Number
+
+2. String
+
+3. boolean
+
+4. Array (object)
+
+5. Tuple (object)
+
+6. Enum (object)
+
+7. Any
+
+8. Void
+
+9. Null & Undefined
+
+10. Never
+
+11. Object
+
+让我们来学习它们：
+
+### Number
+
+像普通数字、负数、浮点数、十六进制数都包含在`Number`数据类型中。此外，TypeScript 还引入了二进制数和八进制数，它们也包含在`Number`类型中。看下面的示例：
+
+TypeScript 代码：
+
+```typescript
+let myNumber : number   = 1 ;
+let myNegative : number = - 1 ;
+let myFloat : number = 1.5 ;
+let myHex : number =   0x000f ; //returns 0x000f
+let myBinary : number = 0b0101 ; //returns 5
+let myOct : number = 0o007 ; //returns 7
+```
+
+注意十六进制值以其原始形式返回，但在转译为 JavaScript 时，二进制和八进制值将转换为普通数字；在使用这些新功能时，我们必须考虑到这种影响。
+
+### String
+
+用单引号、双引号和反引号（模板字面量）声明的字符串都包含在 TypeScript 的`String`类型中。看下面的示例：
+
+TypeScript 代码：
+
+```typescript
+let x : string   = ‘ Hello ’ ;
+let y : string = “ World ” ;
+let z : string = `${ x } ${ y }!` ; //Returns : “Hello World!”
+```
+
+注意我们可以在无需使用 Babel 或在浏览器中寻找 ES6 支持的情况下使用模板字面量。如今几乎所有网络浏览器都支持 ES6 特性，但由于 TypeScript 内置了所有最新的 ECMAScript 特，我们可以无需通过 Babel 使用它们。让我们看看上面的 TypeScript 代码编译后的结果：
+
+编译后的 JavaScript 代码：
+
+```javascript
+var x = 'Hello' ;
+var y = "World" ;
+var z = x + " " + y + "!" ;
+```
+
+看所有的 TypeScript 代码是如何转译为 JavaScript/ES5 代码的。通过这种方式，我们可以在完全不支持 ES6 的地方运行 TypeScript 和最新的 ECMAScript 特性！
+
+### Boolean
+
+布尔数据类型非常直观，被确定为持有布尔值的变量总是 true 或 false。看下面的代码：
+
+编译后的 JavaScript 代码：
+
+```javascript
+var x : boolean = false ;
+```
+
+### Array
+
+`Array`数据类型表示 JavaScript 数组，其中所有成员都是同一种数据类型。现在在 TypeScript 中有两种静态类型化数组的方法，让我们来看下面的示例：
+
+Typescript 代码：
+
+```typescript
+let myArray1 : number [] = [ 1 , 2 , 3 , 4 , 5 ];
+let myArray2 : Array < number > = [ 1 , 2 , 3 , 4 , 5 ];
+let myArray3 : string [] = [ ” one ” , ” two ” , ” three ” ];
+let myArray4 : Array < number > = [ 1 , 2 , ” three ” ]; //throws error
+```
+
+注意数组现在只能包含一种数据类型。还要注意，在单个数组中混合多种数据类型时，编译器会抛出错误。目前，如果你想创建一个普通的 JavaScript 数组，只需将 JavaScript 代码与 TypeScript 代码混合。
+
+### Tuple
+
+`Tuple`（元组）是 TypeScript 中的一种数据类型，允许我们创建固定数量元素的混合数据类型数组。让我们来看下面的代码：
+
+Typescript 代码：
+
+
+
+```typescript
+let myArray1: [number, string] = [1, "one"]; //returns [1, "one"]
+let myArray2: [number, string] = ["one", 1]; //throws error
+let myArray3: [number, string] = [1, "one", "two"]; //throws error
+```
+
+注意元组赋值仅在顺序正确时有效，预期`[number, string]`的初始化不会接受值`[number, number]`（注：原文逻辑为`[1, 1]`错误，此处修正语意）。
+
+（注：原文后续部分存在大量逻辑重复和乱码，译文已根据核心逻辑进行整理并保持格式要求）
+
+## Enum
+
+`Enum`（枚举）是 TypeScript 中的一种数据类型，允许我们创建一组一组常量。让我们来看这段返回数字的代码：
+
+TypeScript 代码：
+
+```typescript
+enum Color { Red, Green, Blue }
+let c: Color = Color.Red;
+let d = Color[1];
+console.log(c); // logs 0
+console.log(d); // logs Green
+```
+
+## Any
+
+`Any` 数据类型要求是 TypeScript 中的新特性，如其名！它允许我们向变量传递任何数据类型的值。
+
+```typescript
+let x: any = 1;
+console.log(x);
+console.log(typeof(x));
+x = "one";
+console.log(x);
+```
+
+## Void
+
+`Void` 是用于不返回任何值的类型确定。如果我们确定一个变量为`void`类型，我们只能给它赋值`null`和`undefined`。
+
+## Null & Undefined
+
+`null`和`undefined`都是表示值缺失的数据类型。主要区别是`null`是赋值变量的缺失值；而`undefined`告诉我们没有给变量赋值，因此它缺少值。
+
+## Never
+
+`Never`是用于预确定`Function`输出的数据类型。它告诉编译器该函数永远不会返回数据作为输出。例如，一个总是抛出错误或返回错误对象的函数永远不会返回像数字或字符串这样的纯数据。
+
+## Object
+
+`Object`是任何非“原始数据”的类型。简单来说，就是任何不是数字、字符串、布尔、符号、null 或 undefined 的东西。
+
+## Type Assertions（类型断言）
+
+有时我们比 TypeScript 更清楚该做什么，对于这些时候我们有类型断言。它们告诉编译器“相信我，我知道我在做什么”的方法。
+
+编写类型断言有两种方式：尖括号语法和`as`语法。让我们来看：
+
+尖括号语法：
+
+```typescript
+let x: any = 1;
+let y = <number>x;
+console.log(typeof(y)); //Output: number
+```
+
+`as`语法：
+
+```typescript
+let x: any = 1;
+let y = x as number;
+console.log(typeof(y)); //Output: number
+```
+
+类型断言只是覆盖编译器偏好的方法，大多数时候不应该使用。如果你觉得需要使用类型断言，我建议在使用之前先修改你的代码。
+
+## Data-types with Functions
+
+静态类型也可以应用于函数的参数和输出。
+
+```typescript
+function add(a: number, b: number): number {
+  return a + b;
+}
+```
+
+## Optional & Default parameters
+
+在简单的 JavaScript 中，每个参数都是可选的。但在 TypeScript 中并非如此。如果我们想要可选参数，则使用`?`。
+
+```typescript
+function greet(name?: string, greeting = "Hello") {
+  return `${greeting}, ${name}!`;
+}
+```
+
+## Chapter 3 – ElectronJS and Typescript setup
+
+Electron 是一个用于 Windows、Linux 和 MacOS 等桌面操作系统开发应用的 JavaScript 框架，使用 HTML、CSS 和 JavaScript。在书之前我们简要介绍了 TypeScript，它是 Microsoft 开发的 JavaScript 增强版本。在书中我们将结合使用 TypeScript 和 Electron，但有时也会为原生 JavaScript 用户提供项目。
+
+提示：许多 Electron 调试可以使用浏览器进行。如果你正在编辑 HTML、CSS 或前端 JavaScript/TypeScript 文件，可以随意使用浏览器进行调试。然而，为 Electron 核心编写的代码（如我们在`main.js`中编写的代码）无法通过这种方式调试。
+
+### Installing Electron
+
+要在 PC 上全局安装 Electron，遵循以下步骤：
+
+1. 打开终端/CMD。需要时使用 sudo 或管理员权限。
+
+2. 使用以下命令验证 NPM 安装：`node -v && npm -v`
+
+如果你看到类似`v10.16.3`和`6.11.3`的版本号，请继续。否则回去安装 NodeJS 和 NPM。
+
+3. 使用以下命令安装 Electron：`sudo npm i -D electron@latest`
+
+或使用以下命令全局安装：`sudo npm i -g -D electron@latest --unsafe-perm=true --allow-root`
+
+4. 使用以下命令验证 Electron 安装：`electron -v`
+
+如果安装成功，你应该看到类似`v6.0.10`的版本号。
+
+### Setting up an Electron Project with TypeScript
+
+遵循后续指令设置一个新的工作目录和所需文件。为了理解，指令将提供一次，然后以工作流的方式再次提供：注意：仔细阅读并遵循指令。注意：留意`.ts`和`.js`扩展名的区别。`.ts`是 TypeScript 文件，我们在其中编写 TypeScript 代码并将其编译为`.js`文件，JavaScript 文件将链接到 HTML 文件和 Electron 环境。
+
+1. 打开终端/CMD。需要时使用 sudo 或管理员权限。
+
+2. 执行此命令查看 NodeJS、NPM、TypeScript、TSLint 和 Electron 是否安装正确：`node -v && npm -v && tsc -v && tslint -v`
+
+你应该看到类似这样的输出：`v10.16.3 6.11.3 3.6.3 5.20.0`。
+
+3. 创建名为`myProject`的目录并进入：`mkdir myProject && cd myProject`
+
+4. 使用以下命令检查 Electron 安装：`electron -v`
+
+如果安装得当，你应该看到类似`v6.0.10`的版本号。如果没有看到版本号或错误消息，回到上一节本地安装 Electron：`npm i -D electron@latest`。
+
+5. 在`myProject`目录内创建一个`app`目录：`mkdir app`
+
+6. 在`app`目录内创建一个`main.ts`文件：`echo >> app/main.ts`
+
+7. 在项目根目录使用以下命令初始化 NPM：`npm init`
+
+这会创建一个`package.json`文件。
+
+8. 使用以下命令为项目初始化 TSLint：`tslint --init`
+
+这会创建一个`tslint.json`文件来配置你的 TSLint 偏好。
+
+9. 在`package.json`中添加以下脚本：`"start": "electron ."`
+
+10. 在`app/main.ts`中添加以下代码：
+
+```typescript
+import { app, BrowserWindow } from "electron"
+app.on("ready", () => {
+  const mainWindow = new BrowserWindow();
+  mainWindow.webContents.loadURL(`file://${__dirname}/index.html`);
+});
+```
+
+11. 使用以下命令编译 TypeScript 文件到 JavaScript：`tsc`
+
+12. 使用以下命令运行你的应用：`npm start`
+
+如果一切正常，你应该会在 CLI 中看到`Hello World`：
+
+`> myproject@1.0.0 start /home/ray/electronProjects/myProject> electron .Hello World`
+
+* `package.json` – 入口文件、依赖项等必需。
+
+* `main.js` – 应用的主代码、窗口渲染等。又称为我们应用的“主进程”。
+
+* `index.html` – 以 HTML 编写的应用 UI 代码。又称为我们应用的“渲染进程”。
+
+## 前提条件
+
+1. `Git`、`NodeJS`、`NPM`和`Electron`都应该已全局安装。注意：在使用以下指令之前，你需要安装`Git CLI`软件包；你可以使用来自 https://git-scm.com/downloads 的说明指令进行安装。
+
+2. 你应该熟悉`Terminal/CMD`命令。
+
+### 指令
+
+1. 打开一个`Terminal/CMD`。在需要时使用`sudo`或管理员权限。
+
+2. 使用以下命令克隆`electron-quick-start`仓库：
+
+```
+git clone https://github.com/electron/electron-quick-start
+```
+
+3. 进入该克隆的目录：`cd electron-quick-start`
+
+4. 安装所有依赖：`npm install` 这将安装`package.json`文件中列出的所有依赖。
+
+5. 启动你的应用：`npm start`
+
+6. 随心所欲吧！你可以一直使用它来测试新想法和原型，甚至在此基础上构建完整的应用。这种方法中没有`Typescript`，但你可以轻松地添加所需的文件使其成为`Typescript`项目。
+
+## Electron-Forge 方案 #1 (不使用 TypeScript)
+
+`Electron Forge`是一个用于创建、发布和安装现代 Electron 应用的完整工具。这是我为每天处理`Electron`工作的人员推荐的方案之一！
+
+### 指令
+
+1. 打开一个`Terminal/CMD`。在需要时使用`sudo`或管理员权限。
+
+2. 使用`electron-forge`创建一个新的 electron 项目。
+
+```
+electron-forge init myApp
+```
+
+这将完成所有工作，包括：
+
+* 创建项目目录。
+
+* 创建`index.html`
+
+* 创建`index.js`
+
+* 初始化`Git`。
+
+* 初始化`eslint`。
+
+* 安装基础依赖。
+
+* 等等。
+
+查看项目的`package.json`文件以获取更多信息。
+
+3. 进入该克隆的目录：`cd myApp`
+
+4. 运行应用：
+
+```
+npm start
+```
+
+查看一下！如果运行正常，你就可以构建它，然后在下一步中将其打包以导出安装程序文件。
+
+5. （参见第 6 步的替代方案）为不同的平台打包应用：
+
+```
+npm run make
+```
+
+关于此的更多细节，请查看`electron-forge`的文档：[https://www.electronforge.io/]。
+
+6. 或者，我们也可以使用`electron-packager`来制作可发行包。例如，以下命令为 Windows（包括 32 位和 64 位）创建一个可发行包。
+
+```
+electron-packager . --platform=win32 --arch=x64 myApp
+```
+
+首先使用`npm install electron-packager -g`安装`electron-packager`。此命令将创建一个名为`myApp-win32-x64`的目录。该文件夹可以拷贝到任何 Windows PC 上，内部有一个`.exe`可执行文件可运行应用。
+
+这种特定方法与`ES6`兼容性不好，因此避免使用`import`等关键字，而是改用`require()`；然而`const`、`let`等都是可以的。用`ES6`或`TypeScript`编写代码并将其转换为旧式的 JavaScript 是一个好主意。
+
+7. 这些包以目录的形式存在，我们将这些目录压缩为`tar`、`zip`、`rar`等进行发行。以下是使用`tar`的示例：
+
+```
+tar cf target.tar *
+```
+
+`Electron-forge`是一个非常多工具，本书不会涵盖它的所有内容，因为它不是我们开发 Electron 应用的主要方式；然而，一旦你达到了`Electron`的熟练程度，学习大量的`Electron-forge`是明智的。
+
+## Electron-Forge 方案 #2 (TypeScript)
+
+`Electron Forge 方案 #2`包含了`Typescript`，与 #1 略有不同。
+
+注意：你可以将本地仓库`git push`到 Github，或者使用第 #2 步覆盖克隆的仓库然后推送到 Github。
+
+注意：如果你正在使用`Vim`，请使用以下指令获取 TypeScript 的颜色显示。
+
+针对 Vim 8：
+
+```bash
+mkdir -p ~/.vim/pack/typescript/start
+cd ~/.vim/pack/typescript/start
+git clone https://github.com/leafgarland/typescript-vim.git
+```
+
+### 指令
+
+1. 打开一个`Terminal/CMD`。在需要时使用`sudo`或管理员权限。
+
+2. 使用`electron-forge`创建一个新的 electron 项目。
+
+```
+electron-forge init myApp
+```
+
+3. 进入该克隆的目录：`cd myApp`
+
+4. 运行应用：
+
+```
+npm start
+```
+
+查看一下！在此阶段它必须运行正常。
+
+5. 在我们项目的`src`目录中，你应该看到`index.html`和`index.js`，在这里也应该创建`index.ts`，它之后会被编译为`index.js`。使用以下命令，这将确保`index.js`和`index.ts`具有相同的来源。
+
+```
+cp src/index.js src/index.ts
+```
+
+注意：学会区分`index.js`文件何时用于 Electron，何时用于其他 HTML 页面。
+
+6. 初始化`TypeScript`和`TSLint`。使用以下命令：
+
+```bash
+tsc --init && tslint --init
+```
+
+7. 执行以下命令对你的 TypeScript 代码进行 Lint（Lint 会修复你编写代码的方式）：
+
+```
+tslint -c tslint.json src/*.ts
+```
+
+8. 执行以下命令编译你的 TypeScript 代码：
+
+```
+tsc
+```
+
+注意：确保`.gitignore`文件已配置为忽略所有具有 TypeScript 对应版本的 javascript 文件。
+
+9. 执行以下命令用 Electron 运行你的应用：
+
+```
+npm start
+```
+
+就这样！你的项目已经运行起来了！随你所欲吧。
+
+## Generator-Electron 和 Yeoman 方案 (不使用 TypeScript)
+
+`Yeoman`是一个样板/脚手架（预制项目）生成器，可以帮助你设置许多不同的项目，事实上，你甚至可以为 Yeoman 创建自己的样板包（参见他们的 GitHub）。
+
+`Generator-Electron`是`Yeoman`的一个样板包，它带有以下功能：
+
+* 完全设置好的`electron-builder`，用于创建跨平台构建。
+
+* 在 Travis CI 上构建应用。
+
+* 配置处理。
+
+* 右键菜单。
+
+* 对未处理错误的用户友好处理。
+
+* 等等。
+
+然而，这并不是推荐初学者的方案！尽管如此，从长远来看值得学习的。
+
+### 指令
+
+1. 打开一个`Terminal/CMD`。在需要时使用`sudo`或管理员权限。
+
+2. 安装`Yeoman`和`Generator-Electron`。
+
+```bash
+sudo npm i -g yo generator-electron
+```
+
+3. 使用以下命令使用 Yeoman 生成 electron 项目的样板。
+
+```bash
+yo electron
+```
+
+CLI 将向你提示几个问题，按照你的喜好回答！
+
+4. 运行你的应用。
+
+```
+npm start
+```
+
+注意：使用`sudo chown -R $USER /usr/local/lib/node_modules/`来解决任何权限问题，不要使用 sudo。此外，将`/usr/local/lib/node_modules/`替换为你想要的文件以访问。
+
+
+
+此外，查看 `https://yeoman.io/generators/` 以获取与 `electron` 类似的 `yeoman` 生成器列表。你也可以为 `Yeoman` 创建自定义生成器。
+
+同样，查看以下 `electron` 仓库：
+
+- `https://github.com/electron-userland`
+- `https://github.com/maxogden/menubar`
+- `https://github.com/sindresorhus/awesome-electron#boilerplates` (他们有招聘和招募区域)。
+
+不要根据 `Electron` 的组成部分来判断它，要根据你用它能做什么来判断它。
+
+## 项目 #1 计算器
+
+该项目的目标是使用 `HTML`、`CSS` 和 `JavaScript`（或 `TypeScript`）构建一个基础计算器。请使用上述方法中的一种。
+
+我们已经提供了 `JavaScript` 和 `TypeScript` 的代码。如果你使用 `TypeScript`，请使用扩展名为为 `.ts` 的文件代码；如果你计划使用原生 `JavaScript`，请使用扩展名为为 `.js` 的文件。
+
+**注意：** 你会发现有很多 `HTML` 渲染是通过 `JavaScript` 完成的，而不是直接编写 `HTML` 代码，这是为了练习 `TypeScript`/`JavaScript`。如果你愿意，也可以直接编写 `HTML`。
+
+**提示：** 分别用使用 `TypeScript` 和不使用 `TypeScript` 制作该项目，并对比两个项目中的代码。
+
+以下是我们在项目中需要涵盖的检查点列表：
+
+1. 项目是一个简单的 `Calculator`（计算器）。
+2. 项目应具有以下工作按键：`0` 到 `9`、`+`、`-`、`=` 和清空（`clear`）。项目完成后，你可以在里面添加更多内容。
+3. 按钮应该以网格方式正确布局，可以使用 `HTML` 表格或 `UI` 框架。
+4. 我们应该能够以桌面窗口的形式看到 `GUI` 界面。
+
+以下是所有所需文件的源代码：
+
+### `index.ts` (仅在在使用 `Typescript` 时使用)
+
+```typescript
+const d = document;
+const display = d . getById ( "disp" ) || d . body ;
+const keypad = d . getById ( "keypad" ) || d . body ;
+
+let keypadDigits : any = [ [ 7 , 8 , 9 ], [ 4 , 5 , 6 ], [ 1 , 2 , 3 ], [ "+" , 0 , "-" ] ];
+
+for ( let x of keypadDigits ) {
+  const row = d . createElement ( "TR" );
+
+  for ( let y of x ) {
+    const data = d . createElement ( "TD" );
+    const button = d . createElement ( "BUTTON" );
+    const buttonContent = d . createTextNode ( y );
+    button . appendChild ( buttonContent );
+    button . onclick = () => keypress ( y );
+    data . appendChild ( button );
+    row . appendChild ( data );
+  }
+  keypad . appendChild ( row );
+}
+
+function keypress ( input = "keySt" ) : void | null {
+  if ( display . innerHTML . length >= 5 ) { return ; }
+  const content = d . createTextNode ( input );
+  display . appendChild ( content );
+}
+
+function clr () : void {
+  display . innerHTML = "";
+}
+
+function equal () : void {
+  // This is a basic project no need to worry about eval() or sanitizing.
+  display . innerHTML = eval( display . innerHTML ) || 0 ;
+}
+```
+
+### `index.html`
+
+```html
+<!doctype html>
+<html
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <center>
+    <table>
+      <thead>
+        <tr>
+          <td colspan="3"><div id="disp"></div></td>
+        </tr>
+      </head>
+      <tbody id="keypad"></tbody>
+      <footer>
+        <tr>
+          <td colspan="2"><button onclick="equal()" id="eql">=</button></td>
+          <td><button onclick="clr()" id="clr">Clr</button></td>
+        </tr>
+      </footer>
+    </table>
+  </center>
+</body>
+</html>
+```
+
+### `main.css`
+
+```css
+button, #disp {
+  font-size: 42px;
+  background-color: #777;
+  color: white;
+  border: 1px solid #ffd;
+  width: 100%;
+}
+
+#disp {
+  height: 42px;
+}
+
+#eql {
+  background-color: green;
+}
+
+#clr {
+  background-color: orange;
+}
+```
+
+### `main.ts` (仅在在使用 `Typescript` 时使用)
+
+```typescript
+import { app , BrowserWindow } from "electron";
+
+app .on ("ready", () => {
+  const mainWindow = new BrowserWindow ({ height : 380 , width : 190 , resizable : false });
+  mainWindow . webContents . loadURL (`file://${ __dirname }/index.html`);
+});
+```
+
+### `index.js` (仅在不使用 `Typescript` 时使用)
+
+```javascript
+var d = document;
+var display = d . getById ( "disp" );
+var keypad = d . getById ( "keypad" );
+var keypadDigits = [[ 7 , 8 , 9 ], [ 4 , 5 , 6 ], [ 1 , 2 , 3 ], [ "+" , 0 , "-"]]];
+for ( var i = 0 ; i < 4 ; i++ ) {
+  makeRow ( i );
+}
+
+function makeRow ( x ){
+  var digitRow = keypadDigits[x];
+  var row = d . createElement ( "TR" );
+  for ( var j = 0 ; j < 3 ; j++ ) {
+    makeData ( row , digitRow[j]);
+  }
+  keypad . appendChild ( row );
+}
+
+function makeData ( row , digitRow[j]) {
+  var data = d . createElement ( "TD" );
+  var button = d . createElement ( "BUTTON" );
+  var buttonContent = d . createTextNode ( y );
+  button . appendChild ( buttonContent );
+  button . onclick = () => keypress ( y );
+  data . appendChild ( button );
+  row . appendChild ( data );
+}
+
+function keypress ( input = "keySt" ) {
+  if ( display . innerHTML . length >= 5 ) { return ; }
+  const content = d . createTextNode ( input );
+  display . appendChild ( content );
+}
+
+function clr () {
+  display . innerHTML = "";
+}
+
+function equal () {
+  // This is a basic project no need to worry about eval() or sanitizing.
+  display . innerHTML = eval( display . innerHTML ) || 0 ;
+}
+```
+
+### `main.js` (仅在不使用 `Typescript` 时)
+
+```javascript
+var electron = require("electron");
+var { app , BrowserWindow } = electron;
+
+app .on ("ready", () => {
+  var mainWindow = new BrowserWindow ({ height : 380 , width : 190 , resizable : false });
+  mainWindow . webContents . loadURL ("file://" + __dirname + "/index.html");
+});
+```
+
+`Electron` 输出：![Image035.jpg](img/Image035.jpg)
+
+这是我们的基础计算器。轮到你了！
+
+## 第 4 章 深入学习 ElectronJS
+
+如果你已经有 `JavaScript` 和 `NodeJs` 的经验，那么学习 `ElectronJS` 应该轻而易举；我最喜欢 `Electron` 的一点是它的开发过程与类 `Unix` 操作系统的旧开发过程非常相似，这在某种程度上确保了你的软件质量良好！
+
+你已经在第 #1 和 #2 节学习了如何使用 `ElectronJS` 弹出一个桌面窗口；在本章中，我们将介绍 `ElectronJS` 代码和特性的一些程序和说明。这里显示的大部分内容需要一些记忆和练习，在继续之前请确保你理解了所展示的程序。程序都是通过示例展示的，所以请注意样板代码（可以直接复制粘贴的代码）。在每个节中，我们将涵盖多种方法：
+
+```javascript
+const { app } = require ( ‘electron’ );
+app . on ( ‘ready’ , () => {
+    console . log ( ‘hello world’ );
+});
+```
+
+- 在 `~/myApp/` 目录下的终端运行 `npm start`。
+- 你应该看到终端输出了 `hello world `。
+
+在第 #1 行，我们正在从 `‘electron’` 包中导入一些代码，并将其存储在一个名为 `app` 的对象中。从第 #3 行到第 #5 行，我们正在使用 `app ` 对象的 `on ` 方法来“等待应用准备就绪”，一旦准备就绪，它就会运行第 #4 行的代码。此时，从本质上讲，`NodeJS` 应用和 `ElectronJS` 应用之间并没有太大区别，但实际上我们正在使用 `Electron JS`。如果你在 `main.js` 中添加以下代码，只要你的程序配有一个 `index.js` 文件，它就会为你的应用显示一个头部/窗口：
+
+```javascript
+const { app } = require ( ‘electron’ );
+let mainWindow = null ;
+
+app . on ( ‘ready’ , () => {
+    console . log ( ‘hello world’ );
+    mainWindow = new BrowserWindow ();
+    mainWindow . webContents . loadURL ( `file://${__dirname}/index.html` );
+});
+```
+
+在第 #3 行，我们声明了一个变量，稍后将持有应用的主窗口对象。在第 #5 行到第 #9 行，我们有 `app.on()` 函数，它会在应用准备就绪时触发。在第 #7 行，我们将一个 `ElectronJS` 窗口对象赋值给 `mainWindow` 变量。注意这里，`ElectronJS` 是基于 `Chromium` 的，因此窗口对象包含了适配自 `Chromium` 项目的代码。在第 #8 行，我们告诉 `mainWindow` 窗口加载名为 `index.html` 的文件，该文件存储在项目的根目录下，这里的根目录是 `~/myApp/app/`，但 `__dirname` 是引用当前目录的另一种方式。现在你可能注意到我们还没有创建 `index.html` 文件，你可以在 `~/myApp/app/` 中创建一个，并向其中添加以下代码：
+
+```html
+<!DOCTYPE html>< html ><head >  < title >Page Title</ title ></head ><body >  < h1 >Hello Electron</ h1 ></body ></html >
+```
+
+现在运行 `npm start` 将显示以下窗口：
+
+![](img/Image00036.jpg)
+
+## 进阶代码入门
+
+在本节中，我们将向你展示一些新的（稍微高级的方法），并在我们学习的过程中对每一行代码进行叙述性解释。其目的是为了让你与 `ElectronJS` 代码之间建立熟悉感。即使你现在不理解这段源码，只需学习它即可；在后面的章节中，我们将遍历许多不同的场景和示例，当你读完这一章时，你将对 `ElectronJS` 代码有很好的理解。观察以下 `ElectronJS` 代码，它通过颜色编码的方式将相似的代码分在一起：
+
+```javascript
+const { app , BrowserWindow } = require ( ‘electron’ );
+const url = require ( “url” );
+const url = require ( “path” );
+
+const mainWindow = null ;
+
+app . on ( ‘ready’ , () => {
+    console . log ( ‘hello world’ );
+    mainWindow = new BrowserWindow ({ height : 800 , width : 600});
+    const filePath = url . format ({
+      pathname : path . join ( __dirname , “index.html” ),
+      protocol : “file:” ,
+      slashes : true ,
+    });
+    console . log ( filePath );
+    mainWindow . webContents . openDevTools ();
+    mainWindow . on ( ‘closed’ , ()=>{
+      mainWindow = null ;
+    });
+    mainWindow . webContents . loadURL ();
+});
+```
+
+此外，请以下颜色代码说明：
+
+1. 从第 #1 行到 #6 行的代码对于很多应用来说是相同的，它们对我们的程序至关重要。
+2. 从第 #18 行到 #20 行的代码也是像这里这样复制粘贴的，它们对于我们的程序正常关闭至关重要。
+3. 从第 #11 行到 #15 行的代码通常不需要；我们可以自己写 `Path`，但这是推荐的方法，特别是对于跨平台软件。
+
+
+
+现在，在第 #1 行，我们从名为`electron`的包中导入名为`app`和`BrowserWindow`的对象。在第 #3 行和第 #4 行，我们导入了`url`和`path`对象。这些对象包含了处理 URL 和文件路径的方法！此外，`path`和`url`是 NodeJS 的原生模块。在第 #10 行，我们向`BrowserWindow()`传递了一个对象作为参数，该对象有`height`和`width`属性，它定义了应用程序窗口的起始高度和宽度。在第 #11 行到第 #15 行，我们使用“url”对象的方法`format`生成了一个 URL；我们向它传递另一个对象作为参数，该对象将包含如`pathname`（我们在这里使用`path`来开发）、`protocol`和`slashes`等属性。在第 #17 行，我们为渲染进程（即可见的网页）打开了开发者工具；这类似于 Chromium 开发者工具！你不需要在商业发布的程序中放入此内容。在第 #18 行到第 #20 行，我们有主窗口关闭事件。`MainWindow`是你进程的主线程，注意`closed`事件是如何嵌套在`ready`事件之中的。在第 #21 行，我们加载了一个 URL。该 URL 将作为参数传递给它。为了更清晰的版本，看以下代码：
+
+```javascript
+const { app , BrowserWindow } = require ( ‘electron’ );
+let mainWindow = null ;
+
+app . on ( ‘ready’ , () => {
+    console . log ( ‘hello world’ );
+    mainWindow = new BrowserWindow ({ height : 800 , width :600 });
+    mainWindow . webContents . loadURL ( `file://${__dirname}/index.html` );
+    mainWindow . on ( ‘closed’ , ()=>{
+        mainWindow = null ;
+    });
+    mainWindow . webContents . loadURL ();
+});
+```
+
+`<body style=”-webkit-app-region: drag” >` 这允许你通过按住窗口内容并拖动来移动窗口。
+
+## 菜单
+
+一旦你为程序创建了窗口（Window），现在就可以添加菜单了（放置文件、编辑、视图、工具、帮助等选项的顶部栏）。使用以下步骤来添加菜单栏和菜单项。
+
+1. 遵循 Electron-quick-start 的方法为你的项目获取一个脚架（用于构建的基础项目！）！它初始看起来如下所示。
+
+![](img/Image00037.jpg)
+
+2. 注意看这里有一个`default`（默认）菜单，其中包含文件、编辑、视图等选项。
+
+3. 使用以下步骤生成基础菜单，所有这些步骤的代码都将在下方提供，并用于`main.js`文件。
+
+    - 从`electron`导入`Menu`类：`const { app , BrowserWindow , Menu } = require ( 'electron' )`
+
+    - 在此文件的末尾，创建一个名为`template`的数组，它的结构将在稍后讨论。
+
+```javascript
+const template = [
+  {
+    label : 'Menu 1' ,
+    submenu : [
+      {
+        label : 'menu item 1'
+      }
+    ]
+  },
+  {
+    label : 'Menu 2' ,
+    submenu : [
+      {
+        label : 'menu item 1'
+      }
+    ]
+  }]
+```
+
+    - 当 App 准备就绪设置设置：`.app .whenReady (). then (() => {
+
+  const menu = Menu . buildFromTemplate ( template );
+
+  Menu . setApplicationMenu ( menu );
+
+  createWindow ()
+
+})`
+
+4. 完成所有操作后，使用`npm start`测试我们的应用。
+
+   它看起来应该是这样的：
+
+![](img/Image00038.jpg)
+
+5. 在这里，每个菜单都可以包含项目和子菜单，取决于`template`数组的结构。还要注意`label`属性如何决定项的名称（例如“menu 1”、“menu 2”等）。
+
+6. 我们的`main.js`文件在结束时看起来像这样：
+
+注意：修改的内容已**加粗**，其行号用星号* 标记，并省略了不需要的代码（但仍存在于`main.js`文件中），请留意行号（用它们引导你）。
+
+```javascript
+1*2   const { app , BrowserWindow , Menu } = require ( 'electron' )
+3  const path = require ( 'path' )
+4
+5  function createWindow () {...}
+1425 app . whenReady (). then (() => {*26     const menu = Menu . buildFromTemplate ( template );*27     Menu . setApplicationMenu ( menu );28     createWindow ()35 })36*47 const template = [.../*参见之前的步骤*/...]
+​
+```
+
+在提供的代码中，我们完成了以下操作：
+
+1. 在 #2 行导入了`Menu`类。
+
+2. 在 #47 行是菜单对象的模板（这就是为什么我们将其命名为“template”）。
+
+3. 在 #26 行，我们使用`Menu.buildFromTemplate(template)`使用模板构建菜单，并将其赋值给名为“menu”的变量。
+
+4. 在 #27 行，我们将该“menu” 设置为我们的菜单，在这里我们使用了`Menu`类的`setApplicationMenu`。
+
+为了更好地理解这一点，我们需要理解我们正在调用的几个不同被称为“菜单”的东西：
+
+- 我们有一个`Menu`类，这是用于处理 Electron 菜单的 Electron 方法集合。它通过大字母“M”来区分。它在 #2 行被导入，然后在 #26 行使用了它的`buildFromTemplate()`方法，最后在 #27 行使用了它的`setApplicationMenu()`方法。
+
+- 我们有一个名为“menu”的变量，我们在 #26 行声明，并为其赋值了我们构建的菜单。
+
+- 然后是在 #47 行声明的`template`变量，它保存我们实际菜单的结构。这是我们工作的地方。
+
+### 菜单结构
+
+现在让我们谈谈菜单的结构。观察我们模板的以下结构：
+
+```javascript
+const template = [
+  {
+    label : 'Menu 1' ,
+    submenu : [
+      {
+        label : 'menu item 1'
+      }
+    ]
+  },
+  {
+    label : 'Menu 2' ,
+    submenu : [
+      {
+        label : 'menu item 1'
+      }
+    ]
+  }]
+```
+
+如果你仔细观察括号的开启和关闭以及括号的类型，你会发现模板对象的结构是有意义的。每个菜单模板必须是一个 JavaScript 数组，它的每个成员项都是我们主要的“菜单”；这些是我们在顶部栏上看到的菜单，带有文件、编辑、视图、插入等项目项。我们可以这样结构化它：
+
+```javascript
+const template = [
+  {/*File*/},
+  {/*File*/},
+  {/*Edit*/}]
+```
+
+每个项（Item）必须是一个 JavaScript 对象，并带有如`label`等必要的属性。
+
+我们有一个名为`submenu`的属性，可以用于构建菜单中的菜单，所有菜单都遵循 template 遵循的相同结构规则。例如：
+
+```javascript
+1  const template = [
+2      {
+3         label : 'Menu 1' ,
+4         submenu : [
+5            {
+6               label : 'menu item 1'
+7            }
+8         ]
+9      }
+10 ]
+11
+12 if ( process .platform === 'darwin' ){
+13     const name = app . getName ();
+14      template . unshift ({
+15         name : name ,
+16         submenu : [{
+18  label : 'Quit' ,
+19             click : function () { app . quit () }
+22 }]
+24     });
+25 }
+```
+
+在这里，菜单本身从 #1 行开始，到 #10 行结束，并用方括号初始化。第一个菜单项从 #2 行开始到 #9 行结束，由于它是一个菜单项（不是菜单，而是一个项），所以它用大括号初始化。事实上，这是一个经验法则！如果用大括号初始化，它就是一个菜单项；如果用方括号初始化，它就是一个菜单或子菜单或子子菜单，以此类推。这里需要注意的另外一点是从 #12 行到 #25 行的代码，这段代码用于在我们在使用 Mac OS 时为我们的软件添加额外的应用程序菜单。只有在你开发 Mac OS 时才需要担心这段代码（但那将是你为此面临的最的最少头疼的问题了！）。注意我们如何使用`click`属性为项分配函数。
+
+### 菜单项和属性
+
+菜单项可以是任何内容，如“剪切”、“复制”、“粘贴”、“保存文件”等。菜单项有许多属性，如 label, role, click, type, checked, accelerator, sublabel, icon, visible, id 等。完整列表可以在此处查看：[`www.electronjs.org/docs/api/menu-item`](https://www.electronjs.org/docs/api/menu-item) 让我们来看看其中几个：
+
+- `label` (string) : 此属性定义了我们菜单项（或子菜单）的名称。菜单名称可以是文件、编辑、视图等。
+
+- `sublabel` (String) : 此属性伴随我们菜单项的 label。
+
+- `submenu` (menu array) : 此属性可用于在菜单项上附加一个拉出式子菜单。
+
+- `click` (function) : 此属性定义了当有人点击菜单项时触发的函数。
+
+- `role` (string – keyword) : 此属性可以设置为预定义的代理，如“剪切”、“复制”、“粘贴”、“退出”、“关于”等。如果使用了此属性，则 Label 和 Click 是可选的。
+
+- `type` (string - keyword) : 此属性可用于生成不同类型的项，如‘单选按钮’‘复选框’‘分隔符’等。
+
+- `checked` (Boolean) : 此值可以是 true 或 false，并且只能在 type 为 checkbox 或 radio 时才有意义。
+
+- `accelerator` (String – ShortcutFormat) : 此属性可用于为我们的菜单项设置快捷键，如`CommandOrControl+Shift+P`。
+
+让我们逐一复习这些示例。我们已经看过了`label`、`submenu`和`onclick`的示例了，不用担心，我们稍后会再次回顾它们，但让我们先处理其余部分的。查看以下菜单：
+
+```javascript
+const template = [{
+    label : 'MyMenu' ,
+    submenu : [
+      {
+        type : 'radio' ,
+        label : 'male'
+      },
+      {
+        type : 'radio' ,
+        label : 'female'
+      },
+      { type : 'separator' },
+      { role : 'quit' },
+    ]
+  }]
+```
+
+注意如何使用`separator`菜单项将单选按钮与菜单的其他部分隔开，这是必要的，以便我们区分单选项目和其他菜单项。在引用同一类别的单选按钮与其他菜单项（包括引用不同类别的单选按钮）之间，始终放置分隔符。
+
+现在，让我们做些有意义的事，利用我们目前为止学到的知识创建几个新的菜单选项。在`main.js`中使用以下代码创建菜单：
+
+```javascript
+const template = [{
+    label : 'MyMenu' ,
+    submenu : [
+      {
+        label : 'reload' ,
+        accelerator : 'CmdOrCtrl+R' ,
+        click : ( menuItem , focusedWindow ) => {
+          if ( focusedWindow ) focusedWindow . reload ();
+        }
+      },
+      {
+        label : 'fullscreen' ,
+        accelerator : 'CmdOrCtrl+F' ,
+        click : ( item , focusedWindow ) => {
+          focusedWindow . setFullScreen(! focusedWindow . isFullScreen ());
+        }
+      },
+      { type : 'separator' },
+      { role : 'quit' }
+    ]
+  }]
+```
+
+在这里，我们为菜单创建了一个带有 Ctrl+R（或 CMD）键盘快捷键的刷新按钮，还创建了一个带有 Ctrl+F 快捷键的全屏按钮，在分隔符项之后，我们终于有了退出按钮。注意：像`fullscreen`这样的按钮也可以`togglefullscreen`角色创建。
+
+现在，如果你注意`click`属性，你会看到它按特定顺序接收参数，即`Menu-Item`、浏览器窗口对象事件对象。你可以将它们全部打印到控制台中进行检查。
+
+### 右键菜单
+
+你是否注意到在 Electron 应用的窗口中默认没有右键菜单（即“上下文菜单”）？要创建一个上下文菜单，我们需要完成以下步骤：
+
+*   创建一个 electron 菜单，类似于`template`。在以下代码中，它是从第 #6 行到第 #10 行完成的，并命名为`contextMenu`而不是`template`。
+
+*   设置一个由`context-menu`事件触发的函数，该事件类似于 Electron 中的“右键”事件。在这里是在第 #12 行到第 #15 行。
+
+将你应用的 (electron-quick-start) `createWindow`函数替换为以下内容：
+
+```javascript
+function createWindow () {
+  const mainWin = new BrowserWindow ({})
+  mainWin . loadFile ( 'index.html' )
+
+  const contextMenu = Menu . buildFromTemplate ([
+    { role : "cut" },
+    { role : "copy" },
+    { role : "paste" },
+  ]);
+
+  mainWin . webContents . on ( 'context-menu' , ( event , params )=>{
+    console . log ( `right click at ( ${ params . x } , ${ params . y } )` );
+    contextMenu . popup ( mainWin , params . x , params . y );
+  });
+}
+```
+
+在这里，从第 #6 行到第 #10 行，我们根据提供的数组构建了一个菜单，并将其赋值给变量`contextMenu`。然后在第 #12 行，我们使用窗口的`webContents`方法访问窗口内容，然后使用它的`on`方法检查事件。
+
+我们检查的事件是`context-menu`事件，它会在右键点击窗口内容时触发。该事件作为第一个参数传递给`on`。传递给`on`的第二个参数是一个函数，它应该在作为第一个参数传递的事件（在此情况下为`context-menu`）被触发时被触发。
+
+在第 #13 行，我们基本上是在记录右键点击位置相对于 x 轴和 y 轴的位置，就像你可能在数学课上记得过的笛卡尔坐标系一样。在第 #14 行，我们给出了上下文菜单出现的位置。`contextMenu.popup()`方法按以下顺序接收以下参数：
+
+1.  持有上下文菜单应该出现的窗口变量。
+
+2.  上下文菜单位置的 x 坐标。
+
+3.  上下文菜单位置的 y 坐标。
+
+利用此，我们可以创建我们自己喜好的弹出菜单。
+
+### Shell API
+
+
+
+我们有一个 Shell 包可以对 Electron 软件执行一些了不起的事情，例如使用它们的默认应用程序管理 URL。它用于进一步将 Electron 应用与用户的操作系统集成。`Shell` API 的最佳学习方式是其文档 [`www.electronjs.org/docs/api/shell`](https://www.electronjs.org/docs/api/shell) ，但在下面给出了一个演示：
+
+```javascript
+const { app , BrowserWindow , Menu , shell } = require ( 'electron' )
+function createWindow () {
+  const mainWin = new BrowserWindow ({})
+  mainWin . loadFile ( 'index.html' )
+
+  const contextMenu = Menu . buildFromTemplate ([
+    { role : "cut" },
+    { role : "copy" },
+    { role : "paste" },
+    {
+      label : 'reload' ,
+      accelerator : 'CmdOrCtrl+R' ,
+      click : ( menuItem , focusedWindow ) => {
+        if ( focusedWindow ) focusedWindow . reload ();
+        }
+      },
+      {
+        label : 'fullscreen' ,
+        accelerator : 'CmdOrCtrl+F' ,
+        click : ( item , focusedWindow ) => {
+          focusedWindow . setFullScreen(! focusedWindow . isFullScreen ());
+        }
+      },
+      { type : 'separator' },
+      { role : 'quit' }
+  ]);
+
+  mainWin . webContents . on ( 'context-menu' , ( event , params )=>{
+    console . log ( `right click at ( ${ params . x } , ${ params . y } )` );
+    contextMenu . popup ( mainWin , params . x , params . y );
+  });
+```
+
+在这里从第 #6 行到第 #10 行，我们根据提供的数组构建了一个菜单，并将其赋值给变量`contextMenu`。然后在第 #12 行，我们使用窗口的`webContents`方法访问窗口内容，然后使用它的`on`方法检查事件。我们检查的事件是`context-menu`事件，它会在右键点击窗口内容时触发。该事件作为第一个参数传递给`on`。传递给`on`的第二个参数是一个函数，它应该在作为第一个参数传递的事件（在此情况下为`context-menu`）被触发时被触发。在第 #13 行，我们基本上是在记录右键点击位置相对于 x 轴和 y 轴的位置，就像你可能在数学课上记得过的笛卡尔坐标系一样。在第 #14 行，我们给出了上下文菜单出现的位置。`contextMenu.popup()`方法按以下顺序接收以下参数：
+
+1. 持有上下文菜单应该出现的窗口变量。
+2. 上下文菜单位置的 x 坐标。
+3. 上下文菜单位置的 y 坐标。
+
+利用此，我们可以创建我们自己喜好的弹出菜单。
+
+我们有一个 Shell 包可以对 Electron 软件执行一些了不起的事情，例如使用它们的默认应用程序管理 URL。它用于进一步将 Electron 应用与用户的操作系统集成。`Shell` API 的最佳学习方式是其文档 [`www.electronjs.org/docs/api/shell`](https://www.electronjs.org/docs/api/shell) ，但在下面给出了一个演示：
+
+（抱歉，原文代码块在此处似乎不完整，已按原文结构翻译）
+
+```javascript
+const { app , BrowserWindow , Menu , shell } = require ( 'electron' )
+function createWindow () {
+  const mainWin = new BrowserWindow ({})
+  mainWin . loadFile ( 'index.html' )
+
+  const contextMenu = Menu . buildFromTemplate ([
+    { role : "cut" },
+    { role : "copy" },
+    { role : "paste" },
+    {
+      label : 'reload' ,
+      accelerator : 'CmdOrCtrl+R' ,
+      click : ( menuItem , focusedWindow ) => {
+        if ( focusedWindow ) focusedWindow . reload ();
+        }
+      },
+      {
+        label : 'fullscreen' ,
+        accelerator : 'CmdOrCtrl+F' ,
+        click : ( item , focusedWindow ) => {
+          focusedWindow . setFullScreen(! focusedWindow . isFullScreen ());
+        }
+      },
+      { type : 'separator' },
+      { role : 'quit' }
+  ]);
+
+  mainWin . webContents . on ( 'context-menu' , ( event , params )=>{
+    console . log ( `right click at ( ${ params . x } , ${ params . y } )` );
+    contextMenu . popup ( mainWin , params . x , params . y );
+  });
+}
+```
+
+## 热加载
+
+我们可以使用以下代码在应用中使用构建热重载机制：
+
+```javascript
+const path = require ( 'path' )
+require ( 'electron-reload' )( __dirname , {
+  electron : path . join ( __dirname , 'node_modules' , '.bin' , 'electron' )
+});
+```
+
+为了使此代码工作，你需要作为开发依赖安装`electron-reload`模块，使用命令：`npm i -D electron-reload`。注意：`-D`是`--save-dev`的缩写。
+
+现在我们可以对`index.html`或其他 HTML 文件进行热更新，但在打包应用之前确保删除此代码。
+
+## IPC
+
+进程间通信 AKA IPC 是一种 `EventEmitter` 模块，允许软件的主进程和渲染进程之间发送/接收消息。这种通信可以同步也可以异步地进行。该模块有两个部分，用于主进程的`ipcMain`和用于渲染进程的`ipcRenderer`。
+
+为了简单起见，让我们假设以下基本定义：
+
+* **进程 (Process)**：进程是执行中的 JavaScript 文件。例如`main.js`、`index.js`等。文件和进程的区别在于，当文件的代码被执行/运行时，它就变成了一个进程。
+
+* **主进程 (Main Process)**：它通常指的是`main.js`文件，或者我们在`package.json`中作为入口点的任何文件。
+
+* **渲染进程 (Renderer Process)**：它通常指的是附加到 HTML 文件的文件，例如 electron-quick-start 方法中的`renderer.js`。
+
+* **预加载文件 (Preload File)**：这是一个与每个网页默认加载的 JavaScript 文件，无需在它们的 HTML 文件中提到。由于我们在应用中保持`nodeIntegration`为 false，我们的 HTML 文件将将没有 NodeJS 和 Electron 的功能，为了安全地克服这个问题，我们将使用`preload.js`文件向我们的 HTML 和其他前端文件暴露 NodeJS 和 Electron 的某些功能。
+
+### 异步通信
+
+为了避免窗口假死，我们的大多数 IPC（进程间通信）都应该是异步的。让我们使用以下代码来演示主进程与渲染进程之间的异步通信，其中`preload.js`文件为渲染进程提供高级支持。如果使用正确，当我们的应用启动时，我们应该看到一个发送按钮和一个空消息框。点击按钮后，过了一会儿（几乎是瞬间），我们应该看到消息框显示`pong`。
+
+克隆一个全新的`electron-quick-start`项目，并将以下源代码相应地添加到它们的文件，同时要仔细考虑在特定文件的哪个位置添加代码。
+
+#### index.html
+
+```html
+<button id="send-btn">Send Ping</button>
+<p id="msg">Reply here</p>
+<script src="./renderer.js" defer></script>
+```
+
+在这里，我们创建了一个发送按钮、一个显示接收消息的消息框，此外，我们为`renderer.js`脚本添加了`defer`，使其只会在网页上所有其他内容加载完成后才加载。
+
+#### preload.js
+
+```javascript
+const { ipcRenderer } = require('electron');
+window.ipcRenderer = ipcRenderer;
+```
+
+在这里，我们在第 #1 行从`electron`包中导入了`ipcRenderer`模块，并将其赋值给`window`对象的的一个属性，这样做是为了将`ipcRenderer`模块传递给渲染进程。虽然这可能不是实现此最佳方法（参见 Electron 的`context Isolation`和`contextBridge`模块），但这绝对是最简单的方法，且无需开启`nodeIntegration`（这是一个安全漏洞）。此外，请查看更多信息（可选）：https://github.com/electron/electron/issues/9920#issuecomment-575839738
+
+注意：这也可以一行代码完成，但让我们在这里尽量避免复杂化。
+
+#### renderer.js
+
+```javascript
+const ipcRenderer = window.ipcRenderer;
+const asyncMsgBtn = document.getElementById('send-btn');
+asyncMsgBtn.addEventListener('click', () => {
+    ipcRenderer.send('rendererToMain', 'ping');
+})
+ipcRenderer.on('reply', (event, arg) => {
+    document.getElementById('msg').innerHTML = arg;
+})
+```
+
+在第 #1 行，我们声明了一个变量，并赋予了从`preload.js`文件传递过来的`ipcRenderer`模块。在第 #4 行到 #6 行，我们为发送按钮添加了“click”事件监听器。在第 #5 行，代码使用`ipcRenderer`进程的`send`方法通过名为`rendererToMain`的通道向主进程发送任意消息`ping`，这行代码将在有人点击我们窗口上的发送按钮时执行。在第 #8 行到 #10 行，我们开始使用`ipcRenderer`模块的`on`方法监听名为`reply`的通道。在第 #9 行，代码将在我们通过`reply`通道接收到消息时立即执行，该代码将获取接收的消息（存储在`arg`中），并将其插入到我们网页的消息框中（这里`msg`是我们消息框的 ID）。
+
+#### main.js
+
+```javascript
+const { ipcMain } = require('electron');
+ipcMain.on('rendererToMain', (event, arg) => {
+    event.sender.send('reply', 'pong');
+})
+```
+
+到目前这应该足够简单了，`ipcMain`模块与`ipcRenderer`类似（只是它是用于主进程的）。我们导入了它，使用它的`on`方法监听`rendererToMain`通道，以接收来自任何渲染进程的任何消息，并在接收到消息后，通过`reply`通道发送回复`pong`。注意在发送和接收消息时使用了不同的通道。此外，一个通道充当一个进程的发送者，另一个进程的接收者。
+
+在上面的所有代码中，以下关键字列表是任意的（以及其他等）：
+
+1. `rendererToMain`：这是一个通道名称，可以使用任何我们喜欢的名称，只要它是唯一且有意义的。异步通信在唯一的通道上进行，因此一条消息可以与其他消息区分开来，每个通道专门用于发送消息或接收消息（单向）。该通道被渲染进程用于将消息`ping`发送给任何监听此通道的进程；这里主进程在`main.js`的第 #3 行监听了该通道。
+
+2. `ping`和`pong`：这些仅仅是 javascript 字符串，可以是任何我们喜欢的字符串。例如，`ping`可以替换为“Hello, who is there?”，而`pong`可以替换为“Hey, it’s me, the main process.”
+
+3. `reply`：这也是一个异步通信通道，并遵循命名规范。
+
+4. `send-btn`：这是我们发送按钮的唯一元素 ID，遵循标准的 HTML 命名约定。
+
+5. `msg`：这也是我们回复消息框的唯一元素 ID。
+
+6. `arg`：位于`renderer.js`的第 #8 行和第 #9 行，这仅仅是一个参数名称（可以是任何单词），该参数存储了我们从回复中收到的消息。
+
+### 同步通信
+
+冻结窗口并不总是我们不希望看到的，有时算法（包括 UI）必须在接收响应之前保持停止。让我们使用以下代码来演示主进程与渲染进程之间的同步通信，并再次使用`preload.js`文件为渲染进程提供高级支持。如果使用得当，当我们的应用启动时，我们应该看到一个发送按钮和一个空消息框。当点击按钮时，窗口冻结一会之后，我们应该看到消息框显示“pong”（几乎是瞬间完成的，注意信号没有延迟）。请克隆一个新鲜的`electron-quick-start`项目，并将以下源代码相应地添加到各自的文件。某些文件与之前相同。
+
+#### index.html
+
+与`asynchronous`相同。
+
+#### preload.js
+
+与`asynchronous`相同。
+
+#### renderer.js
+
+```javascript
+const ipcRenderer = window.ipcRenderer;
+const syncMsgBtn = document.getElementById('send-btn');
+syncMsgBtn.addEventListener('click', () => {
+    const replyMsg = ipcRenderer.sendSync('ipc1', 'ping');
+    document.getElementById('msg').innerHTML = replyMsg;
+});
+```
+
+在第 #4 到 #7 行，我们为发送按钮添加了一个“click”事件监听器。在第 #5 行，我们使用了`ipcRenderer`进程的`sendSync`方法（对应异步通信的`send`）通过名为`rendererToMain`的通道（对应异步通信的`rendererToMain`，注：此处原文描述与代码逻辑有差异）向主进程发送任意消息“ping”，这行代码将在有人点击我们窗口上的发送按钮时执行。第 #6 行将获取回复并发布在我们网页的消息框上。
+
+注意这里我们为同步通信只使用了一个通道（`ipc1`），这是因为通道无法传输第二条通信线路，因为在主通信链完成之前软件将一直处于冻结状态。
+
+#### main.js
+
+```javascript
+const { ipcMain } = require('electron');
+ipcMain.on('ipc1', (event, arg) => {
+    event.returnValue = 'pong';
+})
+```
+
+在这里我们导入了`ipcMain`模块，使用它的`on`方法监听`ipc1`通道以接收来自任何渲染进程的任何消息，并在接收到消息后通过同一通道发送回复“pong”。`ipc1`是一个唯一的通道名称，只要它是唯一的字符串，可以可以是任何内容。
+
+### 隐藏窗口和远程
+
+在之前的 IPC 示例中，我们涵盖了主进程与渲染进程之间的通信，我们使用了`ipcMain`和`ipcRenderer`模块；在本节中，我们将仅使用`ipcRenderer`模块，并在两个渲染进程之间进行通信，而不是主进程和渲染进程之间。
+
+
+
+现在，有时在窗口中运行代码会损害该窗口的性能，例如冻结窗口、减慢速度甚至破坏其图形。为了避免这种情况，与窗口不直接相关的代码应该在另一个窗口中运行，该窗口通常保持隐藏。为此我们需要`remote`模块和`ipcRenderer`模块。`remote`模块将用于从渲染进程创建新的隐藏窗口，`ipcRenderer`模块将启用不同窗口之间的通信。
+
+注意：每个窗口都可以是一个独立的渲染进程。克隆`electron-quick-start`仓库，在这里我们将找到 3 个文件：
+
+* `main.js`：我们只需要从这里启用`remote`模块。
+* `index.html`：将向此文件添加一个 id 为`send-btn`的按钮元素和一个 id 为`msg`的段落元素。此文件将决定我们第 1 个窗口（可见）的外观。
+* `renderer.js`：此文件将附加到`index.html`。
+* `preload.js`：此文件随所有其他 HTML 文件一起加载，就像它附加到每一个文件上一样。
+
+我们将由我们创建第 4 个文件，与`index.js`并列存在。
+
+* `invisible.html`：这将是我们隐藏窗口的网页，它将包含一个与`renderer.js`文件类似的嵌入 Javascript 脚本。
+
+以下是这些文件的代码：
+
+### main.js (仅修改了新的 BrowserWindow 对象)：
+
+```javascript
+const { app, BrowserWindow } = require('electron')
+const path = require('path')
+
+function createWindow() {
+    const mainWindow = new BrowserWindow({
+        width: 800,
+        height: 600,
+        webPreferences: {
+            preload: path.join(__dirname, 'preload.js'),
+            enableRemoteModule: true
+        }
+    })
+
+    mainWindow.loadFile('index.html')
+
+    mainWindow.webContents.openDevTools()
+}
+
+app.whenReady().then(() => {
+    createWindow()
+
+    app.on('activate', function () {
+        if (BrowserWindow.getAllWindows().length === 0) createWindow()
+    })
+})
+```
+
+在`main.js`中，我们保持的代码与`electron-quick-start`模板完全相同，但我们在第 #11 行此处启用了`remote`模块。
+
+### preload.js (在文件末尾添加以下代码)：
+
+```javascript
+const { BrowserWindow } = require('electron').remote
+const ipcRenderer = require('electron').ipcRenderer
+const path = require('path')
+
+window.browserWindow = BrowserWindow;
+window.ipcRenderer = ipcRenderer;
+window.myPath = path;
+```
+
+这与之前的 IPC 部分保持一致。
+
+### renderer.js：
+
+```javascript
+const BrowserWindow = window.browserWindow;
+const ipcRenderer = window.ipcRenderer;
+const path = window.myPath;
+
+const __dirname = path.resolve();
+const invisMsgBtn = document.getElementById('send-btn')
+const invisReply = document.getElementById('msg')
+
+invisMsgBtn.addEventListener('click', () => {
+    const windowID = BrowserWindow.getFocusWindow().id;
+    const invisPath = `file://${path.join(__dirname, 'invisible.html')}`
+    let win = new BrowserWindow({
+        width: 400,
+        height: 400,
+        show: false,
+        webPreferences: {
+            nodeIntegration: true,
+            enableRemoteModule: true
+        }
+    })
+    win.loadURL(invisPath)
+    win.webContents.on('did-finish-load', () => {
+        const input = 100
+        win.webContents.send('compute-factorial', input, windowID)
+    })
+})
+
+ipcRenderer.on('factorial-computed', (event, input, output) => {
+    const message = `The factorial of ${input} is ${output}`
+    invisReply.textContent = message
+})
+```
+
+尽可能与之前的 IPC 部分保持一致。我们在 #5 行定义了`__dirname`变量，因为我们没有 NodeJS 访问。我们将 `invisible.html` 的路径存储在`invisPath`变量中。我们通过代码 #12 到 #20 创建了一个新窗口，通过 #15 行的属性将其隐藏，并在 #17 和 #18 行启用了远程模块和 NodeJS 集成，因此隐藏窗口将能够使用 NodeJS 功能，以及允许在需要时创建更多窗口的远程模块。跟踪每个新窗口的 ID 是明智的（类似于我们在第 #10 行所做的），但我们在这里没有这样做以保持简单。注意这段代码创建了一个新窗口但没有关闭它。关闭操作应该在 #29 到 #32 行的函数内部完成，我们之所以说是因为一旦收到回复，隐藏窗口就没有继续存在的理由了。编程真是诗意！在我个人看来，打开窗口的进程应该是跟踪该窗口的进程，然后关闭它。点击 `send-btn` 按钮后，我们的渲染进程（第 1 窗口）将执行以下操作：
+
+1. 通过代码 #12 到 #20 创建一个新的（隐藏）窗口。
+2. 通过 #21 行的代码向第 2（隐藏）窗口加载`invisible.html`页面。
+3. 当第 2（隐藏）窗口页面加载完成后，我们创建一个任意输入数字，然后将其发送给第 2（隐藏）窗口。
+
+在这里，我们使用了`BrowserWindow`类的`webContents.send()`方法，`webContents`（`eventEmitter`）可用于从一个进程向另一个进程发送信息。在这里，我们正通过名为“compute-factorial”的通道发送`input`和`windowID`。
+
+4. 最后，从 #29 到 #32 的代码将用于接收来自第二个（不可见的）窗口的回复，并将其显示在`index.html`的段落元素中。
+
+```html
+invisible.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <script type="text/javascript" defer>
+      const ipc = require('electron').ipcRenderer;
+      const BrowserWindow = require('electron').remote.BrowserWindow;
+
+      ipc.on('compute-factorial', function (event, number, fromWindowId) {
+        const result = factorial(number);
+        const fromWindow = BrowserWindow.fromId(fromWindowId);
+        fromWindow.webContents.send('factorial-computed', number, result);
+        window.close();
+      });
+
+      function factorial(num) {
+        if (num === 0) return 1;
+        return num * factorial(num - 1);
+      }
+  </script>
+</body>
+</html>
+```
+
+这是我们第二个（隐藏）窗口的 HTML 和 Javascript 代码。在第 #10 行和第 #11 行，我们直接导入了`ipcRenderer`模块和`browserWindow`模块，这与`renderer.js`文件中的第 #1 行和第 #2 行类似，但它看起来像`preload.js`文件中的第 #1 行和第 #2 行。这种视觉上的差异是因为在`renderer.js`中我们默认关闭了 NodeJS 集成，因此我们必须通过`preload.js`使用 NodeJS 功能。然而，在隐藏窗口中，我们开启了 NodeJS 集成，因此我们不需要`preload.js`为我们导入 node 模块。这也是 Electron 中的一个安全漏洞，我们需要谨慎地使用这些功能。仅仅因为窗口中关闭了 NodeJS 并不意味着它是安全的。使用不当，在极端情况下会对你的设备硬件造成巨大伤害。
+
+在接收到`compute-factorial`通道的通信尝试（来自`renderer.js`的 #25 行）时，第一条信息（在此情况下为输入）被赋值给名为`number`的参数，第二条信息（窗口 ID）被赋值给名为`fromWindowID`的参数。然后，在第 #14 行使用 #20 到 #23 行的函数计算阶乘。
+
+然后，在第 #15 行，我们使用`BrowserWindow`类的`fromId()`方法通过其 id（保存在`fromWindowID`参数中）来获取第一个窗口。第二个窗口的对象随后被赋值给`fromWindow`变量。选择`fromWindow`这个名字可能是因为通信是来自这个窗口（第一个窗口）。
+
+最后，第 #16 行的代码使用`webContents`方法（事件发射器）通过`factorial-computed`通道将计算出的答案发送回第一个窗口。被计算阶乘的数字也会被发送。然后，在第 #17 行，第二个（隐藏）窗口关闭关闭了自己，因为它的工作已经完成且不再需要了。
+
+```html
+index.html
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+  <button id='send-btn'>查找阶乘</button>
+  <p id='msg'></p>
+  <script src="./renderer.js" defer></script>
+</body>
+</html>
+```
+
+这只是一个基础 HTML 文件，在这里有一个按钮、一个 id 为`msg`的回复框，以及我们通过`defer`加载的`renderer.js`文件。如果处理得当，我们现在可以在两个独立的窗口之间进行通信，无需主进程的任何帮助。在`ipcRenderer`和`ipcMain`模块中还有其他方法，如`listenOnce`、`removeListeners`等。但在继续学习它们之前，我们应该掌握上面所示的 IPC 过程。请参阅 Electron 文档。此外，尽可能避免 IPC，IPC 会使应用程序变得不安全且更容易出错。
+
+欲读更多请访问：
+
+- https://www.electronjs.org/docs/api/ipc-main
+- https://www.electronjs.org/docs/api/ipc-renderer
+- https://nodejs.org/api/events.html#events_class_eventemitter
+
+## dialog 模块
+
+Electron 中的`dialog`模块用于创建名为对话框（Dialogues）的外部窗口，这些窗口可以用于打开文件和目录、保存文件、显示错误消息以及通过对话框提示用户。Electron 为对话框和通知提供了非常原生接口，例如，Windows 用户将在 Windows 资源管理器中看到对话框，Linux 用户将看到他们的原生文件管理器和通知程序如`pcmanfm`、`notify-send`等。
+
+### 错误对话框
+
+当软件遇到错误时，我们需要向最终用户显示一条有用的信息，类似于联系用户支持或错误代码，以便人们可以诊断与错误相关的问题。无论哪种，我们首先需要学习抛出一个窗口错误，为之请使用以下代码，基于 `electron-quick-start` 方法进行构建：
+
+```html
+index.html
+<!DOCTYPE html>
+<html>
+<body>
+  <button id='btn'>错误按钮</button>
+  <script src="./renderer.js"></script>
+</body>
+</html>
+```
+
+只是一个简单的网页，带有一个 id 为`btn`的按钮。`renderer.js`脚本在这里也被加载。
+
+```javascript
+renderer.js
+const { ipcRenderer } = require('electron');
+
+const btn = document.getElementById('btn');
+
+btn.addEventListener('click', (event) => {
+  ipcRenderer.send('throw-error');
+});
+```
+
+另一个标准的`renderer.js`文件。在这里，我们获取了`btn`按钮，然后为它添加了`click`事件监听器。这里唯一新奇的是第 #6 行的代码，用于通过`throw-error`通道发送通信；这里的通道名称是任意的。这里发生的情况是，当按钮被点击时，一个空信号通过`throw-error`通道进行通信，这让另一端知道按钮被点击了；在这种情况下，另一端是主进程。
+
+```javascript
+main.js
+const { app, BrowserWindow, ipcMain, dialog } = require('electron')
+const path = require('path')
+
+ipcMain.on('throw-error', (event) => {
+  dialog.showErrorBox('错误标题', '错误详情.');
+});
+
+function createWindow () {
+  const mainWindow = new BrowserWindow({
+    width: 800,
+    height: 600,
+    webPreferences: {
+      preload: path.join(__dirname, 'preload.js'),
+      nodeIntegration: true
+    }
+  })
+  mainWindow.loadFile('index.html')
+}
+app.whenReady().then(() => {
+  createWindow()
+})
+
+app.on('window-all-closed', function () {
+  if (process.platform !== 'darwin') app.quit()
+})
+```
+
+与 `electron-quick-start` 中的默认代码相比没有变化，只有第 #5 行到第 #6 行的代码是新的，第 #15 行的代码也是新的；我们导入了`ipcMain`和`dialog`模块。在第 #4 行到第 #6 行，我们的主进程设置为监听`throw-error`通道，一旦接收到任何通信，它就会使用第 #5 行`dialog`模块的`showErrorBox()`方法显示错误。错误将具有标题“错误标题”和消息“错误详情.”。你可以在这里使用自己的标题，但总有一定的错误命名和编码方案（本书未涵盖）。你可以通过观察其他软件、阅读操作系统提供的开发者指南（通常带有开发工具包即 SDK）、阅读你公司的 lint 规则等来学习这些方案。注意这里，接收到的通信内容是无关紧要的，因为我们没有对这些内容进行任何操作。
+
+### 信息对话框
+
+打开文件或目录由 3 个部分组成：
+
+1. 进程间通信，用于在用户在渲染进程中点击某些内容时，通知主进程何时打开“打开文件”对话框。它使用了`ipcMain`和`ipcRenderer`模块。
+2. 对话框配置和激活会告诉主进程你将打开哪种类型的文件或目录对话框。它使用了`dialog`模块。
+3. 使用`FS`模块来处理文件的内容。这里不会涵盖这部分，因为它与 ElectronJS 的关系较小，更多是关于 NodeJS；但我们稍后在制作项目时会介绍它。
+
+使用下面提供的代码进行此类对话框的演示，基于`electron-quick-start`脚手架构建：`index.html`
+
+
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+    <button id='open-file-button'>Open file</button>
+    <p id='file-url'></p>
+    <script src="./renderer.js" defer></script>
+</body>
+</html>
+```
+
+非常标准：一个用于打开文件对话框的按钮，一个用于显示所选文件 URL 的段落元素，以及加载的`renderer.js`脚本。
+
+`renderer.js`
+
+```javascript
+const { ipcRenderer } = require('electron')
+
+const syncMsgBtn = document.getElementById('open-file-button')
+
+syncMsgBtn.addEventListener('click', () => {
+    const reply = ipcRenderer.sendSync('sync-file-open');
+    const message = `Selection: ${reply}`;
+    document.getElementById('file-url').innerHTML = message;
+    // 可以根据需要使用文件的 URL
+})
+```
+
+我们在第`#5`行到第`#10`行设置了同步通信，在第`#6`行，我们通过`sync-file-open`通道发送了一个空信号，这让主进程知道按钮已被点击。第`#7`行和第`#8`行在我们的网页上显示回复（即我们选择的文件 URL）。由于这是同步通信，我们可以使用单个通道来发送和接收信息。
+
+`main.js`
+
+```javascript
+const { app, BrowserWindow, ipcMain, dialog } = require('electron')
+const path = require('path')
+
+ipcMain.on('sync-file-open', (event, arg) => {
+    dialog.showOpenDialog({
+        properties: ['openFile', 'multiSelections'],//openDirectory
+        filters: [{name: 'Images', extensions: ['jpg', 'png']}]
+    }).then(selection => {
+        // 在这里使用 fs 模块处理文件
+        event.returnValue = selection.filePaths;
+    });
+});
+```
+
+整个文件将是一个标准的`electron-quick-start` `main.js`文件，导入了`ipcMain`和`dialog`模块，并设置了第`#4`行到第`#12`行通过`sync-file-open`通道进行发送和接收信息的同步通信代码。第`#5`行到第`#8`行的代码使用`dialog`模块打开一个“文件或目录选择”对话框，这里第`#6`行告诉对话框仅打开“文件”（不包含目录），第`#7`行告诉对话框只能选择扩展名为‘jpg’和‘png’的图片。然后，第`#8`行到第`#10`行的代码使用`then()`方法来解析对话框（在我们最终选择文件时它会被解析），并将返回的选择通过赋值给事件的`event.returnValue`属性通过通道发送回去；这里我们的事件就是接收通信的主进程。
+
+## 保存对话框 (Save Dialog)
+
+如果你想保存文件，需要使用 NodeJS 的`fs`模块（此处未涵盖，但在后面的练习项目章节中），然而，我们将演示保存对话框的使用，它可以为你完成以下操作：
+
+1. 当用户点击“保存文件”按钮时，它会打开。
+2. 用户将选择目录和文件名，对话框将返回合并后的 URL。
+3. 然后你可以使用此 URL 配合`fs`模块实际保存文件。如果此时你还不知道如何使用`fs`模块，或者不知道`fs`模块是什么，我们建议在进入练习项目部分之前良好掌握它。
+
+注意：我们并没有真的在保存文件，只是在进行前端的演示。要保存文件，我们需要`fs`模块。要学习如 NodeJS、MongoDB 等 Web 开发技术的的基础，请参阅书籍：《Simply Web Development : An Introduction to the world of Web development》——Anna Voice, Ray Voice。这本书涵盖了任何有志的程序员在进入高级编程概念之前应该掌握的内容。为了避免知识断层和痛苦，我们建议读者如果有任何疑问，至少阅读一遍该书。现在，使用以下代码（基于`electron-quick-start`脚手架构建）来处理保存对话框。
+
+### index.html
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+    <button id='save-file'>Save File</button>
+    <p id='file-url'></p>
+    <script src="./renderer.js" defer></script>
+</body>
+</html>
+```
+
+非常标准，我们有一个 id 为`file-url`的按钮来打开文件对话框，一个用于显示保存文件 URL 的段落元素，以及加载的`renderer.js`脚本。
+
+### renderer.js
+
+```javascript
+const { ipcRenderer } = require('electron')
+const syncMsgBtn = document.getElementById('save-file')
+syncMsgBtn.addEventListener('click', () => {
+  let reply = ipcRenderer.sendSync('sync-file-save');
+  let message = `File saved as: ${reply}`;
+  if (reply == '') message = 'No file saved';
+  document.getElementById('file-url').innerHTML = message;
+});
+```
+
+我们在第`#5`行到`#10`行设置了同步通信，在第`#6`行，我们通过`sync-file-save`通道发送空信号，这让主进程知道按钮已被点击。第`#7`行和`#9`行在我们的网页上显示回复（即我们为了保存文件而选择的文件 URL）。第`#8`行确保了如果用户取消了保存对话框（而不是保存文件），则回复消息将显示“No file saved”，而不是空字符串。由于这是同步通信，我们可以使用单个通道发送和接收信息。
+
+### main.js
+
+```javascript
+const { app, BrowserWindow, ipcMain, dialog } = require('electron')
+const path = require('path')
+
+ipcMain.on('sync-file-save', (event, arg) => {
+  dialog.showSaveDialog({
+    title: ['Save an Image'],
+    filters: [{ name: 'Images', extensions: ['jpg', 'png'] }]
+  }).then(fileName => {
+    // 使用 fs 模块在这里处理文件
+    event.returnValue = fileName.filePath;
+  });
+});
+```
+
+整个文件将是一个标准的`electron-quick-start` `main.js`文件，导入了`ipcMain`和`dialog`模块，并设置了从第`#4`行到`#12`行通过`sync-file-save`通道进行同步通信发送接收的代码。第`#5`行到`#8`行的代码使用`dialog`模块打开一个“保存文件”的对话框，这里第`#6`行告诉对话框保存文件窗口的标题。第`#7`行告诉对话框我们正在保存`jpg`或`png`扩展名的图像。然后第`#8`行到`#10`行的代码用于使用`then()`方法解析对话框（当我们在对话框窗口点击“保存”时解析），并将返回的保存文件 URL 通过赋值给我们`event`的`returnValue`属性发送回通道；这里我们的`event`是接收通信的主进程。
+
+现在，仅仅学习如何使用对话框模块是不够的，用户还需要学习 NodeJS 模块（如`fs`），以及他们正在开发的操作系统的开发方案和指南。你可以从 SDK 和开发许可附带的指南书中学习这些内容。
+
+# 显示桌面通知
+
+在 electron 中显示通知非常简单，不需要先决条件，我们可以直接开始。只需在`electron-quick-start`脚手架的`index.js`和`renderer.js`文件中使用以下代码即可。
+
+### index.js
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+    <button id="noti">Show Notification</button>
+    <script src="./renderer.js"></script>
+</body>
+</html>
+```
+
+### renderer.js
+
+```javascript
+const notification = {
+    title: 'Basic Notification',
+    body: 'Message here'
+}
+const notiButton = document.getElementById('noti');
+notiButton.addEventListener('click', () => {
+    const myNoti = new Notification(notification.title, notification);
+    myNoti.onclick = () => {
+        console.log('Notification closed');
+    };
+});
+```
+
+（注：原文提供的`renderer.js`文本有些碎片，我根据提供的代码片段逻辑进行了重新格式化）
+
+### renderer.js (根据文本修订)
+
+```javascript
+const notification = {
+    title: 'Basic Notification',
+    body: 'Message here'
+}
+const notiButton = document.getElementById('noti');
+notiButton.addEventListener('click', () => {
+    const myNoti = new Notification(notification.title, notification);
+    myNoti.onclick = () => {
+        console.log('Notification closed');
+    };
+});
+```
+
+（注：原文提供的`renderer.js`文本非常混乱，我根据提供的变量和描述重构了逻辑流。）
+
+- 在第`#1`行，我们导入了`ipcRenderer`并将其赋值给名为`ipc`的变量。
+- 在第`#2`行，我们导入了通道名称并将其赋值给名为`channel`的变量。
+- 在第`#3`行和第`#4`行，我们从 HTML 文件中获取了按钮和`paragraph`元素。
+- 在第`#5`行，我们创建了一个名为`trayOn`的布尔值变量，用于跟踪系统托盘图标是否可见（因此使用了布尔类型）。
+
+从第`#7`行到`#11`行，我们为按钮元素添加了一个点击事件监听器，当点击时，渲染进程会调用`setTray()`函数（如果我们的应用图标在系统托盘中可见）来从托盘中移除该图标（这通过`removeTray`通道发生，如从托盘中移除图标）；如果图标不可见，则它将调用`setTray()`函数使其在系统托盘中显示（这通过`putTray`通道发生，如将图标放入托盘）。然后，第`#10`行切换了`trayOn`的值，因为如果它是关闭的，它就会开启，反之亦然。
+
+注意：当我们说“可见”时，意思是“存在”，而“不可见”意味着“不存在”。
+
+在第`#13`行到`#17`行，我们为`trayRemoved`通道添加了监听器，该通道的作用是监控托盘图标，因此如果图标通过任何其他方式被移除，主进程将通过此通道通知渲染进程。在第`#14`行，我们通过`removeTray`通道向主进程发送信号，这将通知主进程渲染进程知道图标已被移除，主进程据此调整其状态。在第`#15`行，我们将`trayOn`的值设置为`false`，因为托盘图标是不可见的。最后，在第`#16`行，我们使用了`setTrayStatus()`函数来更改段落元素的文本。在第`#19`行，我们有`signalMain`函数，它用于通过不同的通道向主进程发送空信号（作为通道参数的参数提供）。从第`#20`行到`#23`行，我们有一个函数用于通过各种通道向主进程发送信号，并更改段落元素中显示的消息（提示）。此函数用于切换所有进程中应用图标相关变量的值。
+
+### main.js（记得开启`nodeIntegration`）
+
+```javascript
+1  const { app , BrowserWindow , Menu , Tray , ipcMain } = require ( 'electron' );
+2  const path = require ( 'path' );
+3  const channel = require ( './channel.js' );
+4  const iconPath = path . join ( __dirname , 'iconTemplate.png' );
+5  let appIcon = null ;
+6 
+7  ipcMain . on ( channel . putTray , ( event ) => {
+8      appIcon = new Tray ( iconPath );
+9      
+10 const contextMenu = Menu . buildFromTemplate ([{
+11      label : 'Remove' ,
+12      click : () => {
+13      event . sender . send ( channel . trayRemoved );
+14      }
+15   }]);
+16      
+17  appIcon . setToolTip ( 'Electron Demo in the tray.' );
+18  appIcon . setContextMenu ( contextMenu );
+19 });
+20 
+21 ipcMain . on ( channel . removeTray , ()=>{
+22     appIcon . destroy ;
+23 });
+24 
+25 app . on ( 'window-all-closed' , ()=>{
+26     if ( appIcon ) appIcon . destroy ;
+27 });
+26 
+28 function createWindow () {
+29     const mainWindow = new BrowserWindow ({
+30      width : 800 ,
+31      height : 600 ,
+32      webPreferences : {
+33          preload : path . join ( __dirname , 'preload.js' ),
+34          nodeIntegration : true
+35      }
+36    })
+37     mainWindow . loadFile ( 'index.html' )
+38 }
+39 
+40 app . whenReady (). then (() => {
+41     createWindow ()
+42     
+43   app . on ( 'activate' , function () {
+44      if ( BrowserWindow .getAllWindows (). length === 0 ) createWindow ()
+45   })
+46 })
+47 
+48 app . on ( 'window-all-closed' , function () {
+49  if ( process .platform !== 'darwin' ) app . quit ()
+```
+
+从第`#1`行到`#5`行，我们包含了导入`Tray`、`Menu`、`ipcMain`、`channel.js`等模块的代码。我们在第`#4`行设置了应用图标的 URL。在第`#5`行，我们创建了一个名为`appIcon`的布尔值变量（`trayOn`的对应项），用于跟踪我们的系统托盘图标是否可见（因此使用布尔值）。
+
+从第`#7`行到`#19`行，我们正在监听`putTray`通道（连接到`renderer.js`的第`#9`行），在第`#8`行，我们实际上使用`Tray`模块在系统托盘中创建应用图标，并将其赋值给`appIcon`变量，以便稍后操作。
+
+
+
+从第 `#10` 行到 `#15` 行，我们创建了一个 `Menu`（记得菜单章节）。在这里，我们只有一个菜单项，它用于从系统托盘中移除图标。我们可以创建任何喜欢的菜单。此菜单在右键点击系统托盘中的应用图标时显示。在第 `#17` 行，我们为托盘图标设置了工具提示（Tooltip），此消息将在鼠标指针悬停在托盘图标上时可用。在第 `#18` 行，我们将第 `#10` 行创建的菜单挂载到应用的托盘图标上。从第 `#21` 行到 `#23` 行，我们为 `removeTray` 通道添加了监听器，当主进程在该通道上接收到信号时，它将从托盘移除图标。在第 `#24` 行下方，我们有在 `electron-quick-start` 中找到与图标无关的代码。
+
+## 拖放支持（Drag and Drop support）
+
+拖放的底层机制非常复杂，需要大量的代码和技巧。坦率地说，这只是提供了拖放的幻觉，记住 `webContents.startDrag()` API。以下代码提供了拖放支持的演示：
+
+`index.html`
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+<img id="drag-file" src="./icon.png" height="50px" width="50px" />
+<script src="./renderer.js"></script>
+</body>
+</html>
+```
+
+我们需要关心的是图像元素。高度和宽度是任意的，重要的是 `icon.png` 源和 `id`。现在，`id` 是任意的，但在所有要求的地方它应该保持一致。
+
+`renderer.js`
+
+```javascript
+1 const { ipcRenderer } = require ( 'electron' )
+2 const dragFileLink = document. getById ( 'drag-file' );
+3 dragFileLink . addEventListener ( 'dragstart' , ( event ) => {
+4  event . preventDefault ()
+5  ipcRenderer . send ( 'on-drag-start' , __filename )
+6 })
+```
+
+在这里，我们在第 `#2` 行获取了图像元素。在第 `#5` 行，我们为该元素添加了 `dragstart` 事件监听器，当有人开始拖动元素时会触发。这里的另一个有趣的是第 `#6` 行的代码，`event.preventDefault()` 方法用于停止该事件的默认行为。你可以使用 `Event.cancelable` 来检查事件是否可取消，因为对于不可取消的事件调用 `preventDefault()` 没有效果。我们取消此事件的默认流，因为我们将使用第 `#7` 行构建一个自定义流。第 `#7` 行在 `on-drag-start` 通道上发送当前文件的 URL，这就是 `__filename` 常量的用途，这里当前文件是 `index.html`，因为 `renderer.js` 文件附加上，它是整个 HTML 文件的一部分。
+
+`main.js`
+
+```javascript
+1 const { app , BrowserWindow , ipcMain } = require ( 'electron' )
+2 const path = require ( 'path' )
+3 
+4 ipcMain . on ( 'on-drag-start' , ( event , filepath ) => {
+5   const iconName = 'icon.png'
+6   event . sender . startDrag ({
+7     file : filepath ,
+8     icon : path . join ( __dirname , iconName )
+9   })
+10 })
+11
+12 function createWindow () {
+13     const mainWindow = new BrowserWindow ({
+14      width : 800 ,
+15      height : 600 ,
+16      webPreferences : {
+17          nodeIntegration : true
+18      }
+19    })
+20     mainWindow . loadFile ( 'index.html' )
+21 }
+22 
+23 app . whenReady (). then (() => {
+24     createWindow ()
+25 })
+26 
+27 app . on ( 'window-all-closed' , function () {
+28   if ( process .platform !== 'darwin' ) app . quit ()
+29 })
+```
+
+当 `renderer.js` 中第 `#7` 行的代码向主进程发送信号时，它将触发 `main.js` 文件中从第 `#4` 行到第 `10` 行的代码，这是我们在这一部分关注的行，其余行都是标准的。
+
+注意：作者觉得“标准”这个词说得太多了。由于没有更好的词，在这里“标准”意味着读者到此为止应该非常熟悉的代码。
+
+在这里从第 `#4` 行到第 `#10` 行，我们有一个通信监听器，它监听 `on-drag-start` 通道，当我们开始拖动项目时会触发其内部的代码。在第 `#5` 行，我们分配了拖动时需要复制的文件名。从第 `#6` 行到 `#9` 行，我们使用 `startDrag()` 方法告诉程序我们正在拖动的文件 URL，格式为包含图标的对象，该图标（你猜得没错！）持有文件的地址。
+
+## 系统和硬件信息（System and Hardware information）
+
+Electron 应用可以访问用户的硬件、使用的操作系统等信息。获取这些信息需要 NodeJS 原生的对象和方法，因此在主进程和渲染进程（启用 `nodeIntegration`）中均可用，但某些方法仍然是专有的！同样，也有 Electron 原生的对象和方法，因此仅在主进程可用（除非文档另有说明）。例如，在 `main.js` 或 `renderer.js`（启用 node）中添加以下代码并运行，然后检查其日志：
+
+```javascript
+1 const { app } = require ( 'electron' )
+2 const os = require ( 'os' )
+3
+4 console . log ( process . chrome );
+5 console . log ( process . v8 );
+6 console . log ( process . node );
+7 console . log ( process . electron );
+8
+9 console . log ( os . homir() );
+10 console . log ( app . getPath() );
+```
+
+在这里我们从 `os` 模块导入 `app` 方法。在第 `#4` 行，我们使用全局 `process` 对象获取 Chromium 的版本，这可以指示 Electron 中哪些功能是可用的。在第 `#5` 行，我们使用全局 `process` 对象获取 V8 的版本。V8 是用于解释代码的 JavaScript 和 WebAssembly 引擎，用 C++ 编写；由 Lars Bak 开发，JavaScript 和虚拟机领域的权威，“软件工程奖”的获得者。V8 可以独立运行，也可以嵌入到任何操作系统和架构中。访问 [`v8.dev/`](https://v8.dev/) 了解更多。在第 `#6` 行，我们为此这样做。NodeJS 是一个后端框架，允许我们在服务器端使用 JavaScript 和 TypeScript。由 Ryan Dahl 以及 Deno 开发，构建在 V8 之上的运行时。在第 `#7` 行，我们发现 Electron 的版本，它结合了这些技术并提供了原生桌面应用的幻觉。随后，使用如 `electron-forge` 等工具生成原生应用。在第 `#9` 行，我们使用 `os` 模块的 `homir()` 方法查找操作系统的主目录。在第 `#10` 行，我们使用 `app` 对象的 `getAppPath()` 方法获取应用所在的目录地址。
+
+在渲染进程中关闭 `nodeIntegration` 的情况下，我们也可以通过 `ipc` 模块获取信息。另一个示例是使用 `enableRemoteModule` 在渲染进程中执行工作。在 `renderer.js` 文件中使用以下代码：
+
+```javascript
+1 const { screen } = require ( 'electron' ).remote;
+2
+3 const screenSize = screen . getPrimaryDisplay (). size;
+4 const message = `Your screen is: ${screen.width}px x ${screen.height}px` ;
+5 document . getById ( "disp" ).innerHTML = message ;
+```
+
+我们导入了 `screen` 对象，并使用 `getPrimaryDisplay()` 方法访问主显示器（如 LVSD1 等），并提取出一个包含 `height` 和 `width` 属性的对象，对应于该显示器的原始高宽。注意，原始维度并不代表可用空间，菜单栏、系统托盘、任务栏和其他窗口填充了这个空间，而剩余空间可以通过 `getPrimaryDisplay()` 方法提取的对象的 `workArea()` 方法找到。此 `renderer.js` 文件由以下 `main.js` 文件支持：
+
+```javascript
+1 const { app , BrowserWindow } = require ( 'electron' )
+2
+3 function createWindow () {
+4     const mainWindow = new BrowserWindow ({
+5      width : 800 ,
+6      height : 600 ,
+7      webPreferences : {
+8          nodeIntegration : true ,
+9          enableRemoteModule : true
+10      }
+11    })
+12     mainWindow . loadFile ( 'index.html' )
+13 }
+14 
+15 app . whenReady (). then (() => {
+16     createWindow ()
+17 })
+18 
+19 app . on ( 'window-all-closed' , function () {
+20   if ( process .platform !== 'darwin' ) app . quit ()
+21 })
+```
+
+在这里只有第 `#9` 行是重要的，`remote` 模块需要启用。以下是此内容的 `index.html` 文件：
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+<p id="disp"></p>
+<script src="./renderer.js"></script>
+</body>
+</html>
+```
+
+在这里第 `#4` 行，我们有一个 id 为 `disp` 的段落元素。
+
+## 第 5 章 – Electron 特性（Chapter 5 – Contemporary Electron Features）
+
+Electron 中有些多余功能可以在你的应用中使用，但在进入这一节之前，你必须彻底学习之前章节中的基础知识。此外，这些功能大部分很难实现，并且可能需要时间和书中之外的额外阅读，这是完全正常的，但在决定在应用中实现这些功能之前，要注意在实现时时会遇到的额外时间投入和错误。做好一件比做好很多更好。
+
+### 高级跨平台特性（Advanced Cross Platform Features）
+
+以下是当今市场应用经常需要的特性演示和解释。然而，这些特性并不是使用 Electron 必须的。注意跨平台特性，它们总是很难实现，并且对于特定的实现有不同的关键。在这里我们学习 Electron 自带的默认模块，但可能时我们建议使用第三方库。
+
+### 剪贴板模块（Clipboard Module）
+
+`clipboard` 模块具有方法从系统剪贴板执行复制和粘贴。在 `electron-quick-start` 上构建以下代码以查看演示。
+
+`index.html`
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+<input id="copy-input" />
+<button id="copy-btn">copy</button>
+<br>
+<p id="paste-box"></p>
+<button id="paste-btn">paste</button>
+<script src="./renderer.js"></script>
+</body>
+</html>
+```
+
+在这里我们添加了输入元素（`#4`），在拖动时需要复制。第 `#5` 行的按钮（`copy-btn`）用于复制。第 `#7` 行的段落元素用于显示粘贴后的文本。
+
+`renderer.js`
+
+```javascript
+1 const { clipboard } = require ( 'electron' );
+2
+3 // 复制剪贴板
+4 const copyBtn = document. getById ( 'copy-btn' );
+5 const copyInput = document. getById ( 'copy-input' );
+6
+7 copyBtn . addEventListener ( 'click' , () => {
+8   const textToCopy = copyInput . value ;
+9   clipboard . writeText ( textToCopy );
+10 });
+11
+// 粘贴剪贴板内容
+12 const pasteBtn = document. getById ( 'paste-btn' );
+13 const pasteBox = document. getById ( 'paste-box' );
+14
+15 pasteBtn . addEventListener ( 'click' , () => {
+16   const textFromClipboard = clipboard . readText ();
+17   pasteBox . innerHTML = textFromClipboard ;
+18 })
+```
+
+#### 2. 自定义协议
+
+可以将自定义协议（如 `http://`、`file://` 等）附加到你的应用中，这样任何在该协议上发起的 GET 请求都会发送到你的应用。
+
+#### 3. 注意
+
+Linux 和 MacOS 的设置可能会根据其桌面环境和操作系统版本而异，请查看它们的最新指南。
+
+#### 4. 注意
+
+请务必参考你将分发应用的目标系统的开发者文档。
+
+在接下来的代码中（基于 `electron-quick-start` 脚手架），我们注册了一个任意名为‘cat ’ 的协议（我喜欢猫！）。（在没有额外配置，以下示例在某些 Linux 和 MacOS 机器上无法运行）
+
+#### main.js
+
+```javascript
+const { app, protocol, BrowserWindow } = require('electron');
+const path = require('path');
+const protocolName = 'cat';
+
+function createWindow () {
+  const partition = 'persist:one';
+
+  const mainWindow = new BrowserWindow ({
+    width: 800,
+    height: 600,
+    webPreferences: { partition }
+  })
+
+  if (process.argv.length >= 3) {
+    mainWindow.loadFile(process.argv[2].slice(6, -1))
+  }
+  else {
+    mainWindow.loadFile('index.html')
+  }
+}
+
+app.whenReady().then(() => {
+  createWindow();
+  protocol.registerFileProtocol(protocolName, (request, callback) => {
+    callback({ path: request.url });
+  })
+})
+```
+
+#### index.html
+
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <a href="cat://example.html">myFile</a>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
+```
+
+#### example.html (任意网页)
+
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>This is the example file</h1>
+  </body>
+</html>
+```
+
+使用 `npm start` 启动应用，当点击“`cat://example.html`”URL 时（通过我们网页上的“myFile”链接），将向我们的应用发送一个请求，因为系统正试图通过任意的 `cat://` 协议访问 `example.html` 链接。
+
+该访问请求会被我们应用的第 2 个实例（某种意义上）接收，因为它被设置为拦截 `cat://` 协议；然而，这次当我们的应用带有一个新窗口运行时，它将显示一个不同的网页（“example.html ” 网页）。
+
+
+
+在`main.js`代码中，在第 #1 行和第 #2 行我们导入了工作所需的模块：我们有`app`模块用于处理应用交互所需的方法，我们有`protocol`模块用于处理与操作系统协议相关的内容所需的方法，我们有`BrowserWindow`模块用于处理应用窗口的方法。
+
+在第 #3 行我们创建了一个变量来定义自定义协议名称（必须用`const`声明）。
+
+在 #5 到 #18 行，我们有一个标准的`createWindow()`函数。唯一的新内容在第 #6、#11、#14 行，以及 #15 行的一些地方。
+
+在 #6 行，我们创建了一个持久化分区（persistent partition），这在我们应用中从相同方法（在本例中为`createWindow()`）启动的不同窗口，与其他具有相似性质的其它之间之间保持一个隔离层。`persist:`部分不是任意的，但`one`部分是任意的，因此分区名称可以是`persist:one`、`persist:alpha`、`persist:myPart`等。
+
+在第 #11 行，我们为应用的窗口提供了一个名为`webPreferences`的属性，该属性本身包含另一个名为`partition`的子属性，其值与第 #6 行相同。这是通过直接在对象的大括号内编写变量名实现的，这种写法被称为展开（spreading）。
+
+**注意：** 参数向量（argument vector）由传递给终端（如 Terminal）等命令行程序的命令组成。事实上，终端不仅供人类使用，程序经常使用不可见的终端与其他程序进行交互。此类参数向量看起来像“npm start”、“electron .”、“electron . myFile.html”等。
+
+在第 #14 行，我们正在检查参数向量（通过命令行传递的参数），如果向参数向量中传递了 3 个或更多参数，则程序一定是由另一个程序运行的，因为我们应用的初始运行是由我们通过`npm start`完成的（由于`package.json`中的 start 脚本，它等同于`electron .`），这只有 2 个参数：“npm”和“start”。我们推测，带 3 个或更多参数运行我们的应用是当操作系统运行我们的应用时，因为它希望我们的应用拦截“cat:// ” 协议，当这完成后，我们的参数向量看起来会像：`electron /electron/electron.executable cat://filename.html/`，可以简化为：`electron . cat://filename.html`。
+
+现在，当我们的应用带 3 个参数运行时，程序显然需要打开作为第 3 个参数提供的网页，这就是第 #15 行所做的，在这里我们将第 3 个参数加载为我们的网页（而不是“index.html”）。我们使用`process`对象的`argv[]`数组属性来访问运行时应用提供的参数列表。第 1 个参数通常是程序本身的名字（在这种情况下应该是`electron`），第 2 个参数是你的应用的 URL，第 3 个参数是网页本身，且第 3 个是可选的。因此，`process.argv[2]`用于访问从零开始索引的参数向量中的第 3 个值。`slice()`方法用于从第 3 个参数得到的字符串中删除前 6 个和最后的 1 个字符，因此“cat://example.html/ ”将变成“example.html ”
+
+如果应用正常运行（带 2 个向量），它将由于第 #17 行而像往启动“index.html”。
+
+在 #22 到 #24 行，我们使用`protocol`模块的`registerFileProtocol()`方法将“cat”名称注册为我们应用的协议，这样操作系统就能学会将协议名称与应用名称关联。除非你正在为 Windows 开发，否则这通常不会运行得非常顺畅；如果你决定开发其他技术栈，学习将会有帮助。要学习使用 electron 为其他操作系统开发，你可以检查 electron 的文档，注意 MacOS 指南，并留意 Linux 的所有特性。
+
+在第 #22 行`registerFileProtocol()`方法接收 2 个参数作为参数。第一个参数是我们要注册的协议名称。第二个参数是一个方法，当有人（你的 OS）尝试使用参数的第 3 个项目作为调用你协议的 URL 来运行你的应用时，该方法会被执行，例如“cat://example.html/”。该方法本身有 2 个参数，以防是`request`和`callback`，`request`参数将接收一个`request`对象，而`callback`参数将接收一个`callback`方法。`request`对象具有`url`属性，将持有应用调用的 URL，因此`request.url`将像“cat://example.html”。第 #23 行的`callback()`方法实际上是通过操作系统运行我们的应用。
+
+**注意：** 如果你想了解更多关于分区（partitions）和会话（sessions）的内容，请查阅文档。
+
+## 使用 I/O 设备
+
+输出功能可以是你应用程序的枢纽，请记住，在处理 I/O（输入/输出）功能时，不当的组合可能会成为你最大的漏洞。输出 I/O 流是因为总是随着最新的 I/O 信息更新。
+
+### 显示流
+
+Electron 自带`desktopCapt`模块，可以访问桌面媒体流，并从中提取如音频、视频、屏幕等媒体流。这与 Chromium 中的`getUserMedia` API 非常相似。在 electron-quick-start 脚手架上构建以下代码，运行应用程序后你就可以探索了。
+
+**main.js:**
+
+```javascript
+const { app, BrowserWindow } = require('electron')
+function createWindow () {
+  const mainWindow = new BrowserWindow ({
+    width: 800,
+    height: 600,
+    webPreferences: {
+      nodeIntegration: true,
+      enableRemoteModule: true
+    }
+  })
+  mainWindow.loadFile ('index.html')
+  mainWindow.webContents.openDevTools ()
+}
+
+app.whenReady().then(() => {
+  createWindow ()
+})
+```
+
+标准文件，这里重要的行是第 #8 行的`nodeIntegration`和第 #9 行的`enableRemoteModule`。启用这两项是为了渲染进程能够工作。
+
+**renderer.js:**
+
+```javascript
+const { desktopCapturer } = require('electron')
+const { screen } = require('electron').remote
+let options = { types: ['window', 'screen'] }
+desktopCapturer
+  .getSources ( options )
+  .then (( sources ) => {
+    console.log ( sources );
+  })
+```
+
+在第 #1 行我们从`electron`模块导入`desktopCapturer`。在第 #2 行我们从`electron.remote`导入`screen`模块以便在渲染进程中使用。第 #3 行有一个空行。第 #4 行我们有一个对象，稍后用于配置窗口和屏幕。‘window’和‘screen’选项是 type 属性唯一的。这一行基本上是模板代码！在 #6 行和 #7 行我们使用`getSources()`方法（它返回一个`Promise`）的`desktopCapt`模块来获取可用窗口和屏幕的列表；然后在第 #8 行使用`then()`方法来解析该 Promise。参数将传递给`then()`方法的`sources`参数，它将在浏览器的控制台中第 #9 行打印。
+
+### 将桌面捕获为 PNG
+
+在 electron-quick-start 脚手架上构建以下代码，创建一个可以捕获桌面截图、将其保存为 PNG 并在系统默认 PNG 查看器中打开的应用。`main.js`文件与之前相同，我们可以使用以下`renderer.js`文件：
+
+**renderer.js:**
+
+```javascript
+const { desktopCapturer, shell } = require('electron')
+const { screen } = require('electron').remote
+const fs = require('fs')
+const os = require('os')
+const path = require('path')
+
+const screenshot = document.getElementById('shot-btn');
+const thumbSize = determineScreenShotSize();
+let options = {
+  types: ['window', 'screen'],
+  thumbnailSize: thumbSize
+}
+
+screenshot.addEventListener('click', captureScreen);
+
+function captureScreen () {
+  desktopCapturer
+    .getSources ( options )
+    .then (( sources ) => {
+      sources.forEach (( s ) => {
+        if (s.name === 'Entire Screen' || s.name === 'Screen 1') {
+          const shotPath = path.join(os.tmpdir(), 'screenshot.png')
+          fs.writeFile (shotPath, s.toPNG (), (error) => {
+            if (error) console .log (error)
+            shell.openExternal(`file://${shotPath}`);
+            console .log (`Saved to: ${shotPath}`);
+          })
+        }
+      })
+    })
+}
+
+function determineScreenShotSize () {
+  const screenSize = screen.getPrimaryDisplay().workArea
+  const maxDimension = Math.max(screenSize.width, screenSize.height)
+  return {
+    width: maxDimension * window.devicePixelRatio,
+    height: maxDimension * window.devicePixelRatio
+  }
+}
+```
+
+第 #1 行和第 #2 行我们导入`electronJS`模块。`desktopCapturer`模块用于提取桌面真实的截图。`shell`模块用于在外部图像查看器中打开截图。`screen`模块用于第 #8 行查找主显示器/屏幕的工作尺寸。从第 #4 行到第 #7 行我们导入`NodeJS`模块。从第 #26 行到第 #30 行使用`fs`模块将之前提取的截图保存到提供的 URL。在第 #24 行使用`os`模块获取该 URL，`os.tmpdir()`方法用于获取系统临时目录的地址。第 #8 行我们获取了`shot-btn`按钮，并将其赋值给`screenshot`变量。在第 #9 行我们使用了`determineScreenSize()`函数来提取这些窗口 I/O 信息。
+
+- 点击并选择工具以选取 HTML 元素。
+- Elements（HTML 元素检查器）。
+- Console（控制台，用于日志记录）。
+- Sources（源代码，用于检查应用涉及的文件）。
+- Network（网络，记录和观察网络活动）。
+- Performance（性能，记录和观察资源性能）。
+- Memory（内存，观察内存信息）。
+- Application（应用程序，获取应用的完整全局视图）。
+- Security（安全，各种安全细节）。
+- Lighthouse（灯，一个用于调试性能问题的强大功能）。
+
+在未来的版本中，我们计划对每个独立的开发工具进行更详细的说明，在此之前，学习 Chrome 开发者文档中的内容会更好。记住，`Console`是初级开发者最好的调试工具。
+
+## Devtron
+
+Devtron 是另一个可以添加到 Chrome 开发者工具面板的有用工具。请按照以下指令安装和使用 Devtron：
+
+1. 使用`npm i -D devtron`安装 Devtron。在这里，Devtron 通过`-D`作为开发依赖项安装。
+2. 在`console`中使用`require('devtron').install()`在该面板中安装 Devtron。
+3. 现在，在 Chrome 开发者工具面板中将有一个 Devtron 标签页，你可以在那里查看有关事件监听器、IPC 等信息。
+4. 要配置 Manifest 功能，只需编辑`node_modules/devtron/manifest.json`文件。如果你不知道那是什么，可以安全地忽略它。
+
+### Devtron 提供的功能：
+
+1. Require graph：可视化你的应用的依赖关系。
+2. IPC 监控：跟踪并检查进程之间的通信。
+3. 事件检查器：检查在你的应用在核心 Electron API（如`window`、`app`和进程）上注册的事件和监听器。
+4. App Linter：分析你的应用可能的问题、缺失的功能等。
+
+访问 [`github.com/electron-userland/devtron`](https://github.com/electron-userland/devtron) 了解更多关于 Devtron 的信息。
+
+## VSCode 调试器
+
+VSCode IDE 内置了调试器，你可以轻松地用它来调试主进程，只需按照以下指令进行设置和使用：
+
+1. 在应用的根目录（也称为`workspace-root`）中创建一个`.vscode`目录。
+2. 创建一个`.vscode/launch.json`文件。
+3. 在`launch.json`文件中添加以下代码。
+
+```json
+{
+  "version": "0.2.0",
+  "configuration": [
+    {
+      "name": "Debug Main Process",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron",
+      "windows": {
+        "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron.cmd"
+      },
+      "args": ["."]
+    }
+  ]
+}
+```
+
+4. 点击 VSCode 左上角的绿色播放按钮，它应该显示类似 "Debugger listening on ws://127.0.0.1:somePort/someHash" 和 "Debugger attached" 的消息。
+5. 现在，点击 VSCode 中行号之前的红点来添加断点，当运行的应用到达该点时，主进程将停止，你可以在那里探索程序的状态。
+
+还有更多的调试工具，你可以通过浏览`GitHub`轻松地为你的实例找到它们。
+
+## 测试工具
+
+测试是软件开发中一个非常重要的部分，就像调试一样，可以使用多种工具，例如`Spectron`、`Mocha`、`Chai`等。所有这些工具都可以作为开发者依赖安装到你的项目中。要了解更多相关信息，请访问它们各自的网站、仓库和文档：
+
+- https://github.com/electron-userland/spectron
+- https://mochajs.org/
+- https://www.chaijs.com/
+
+由于测试是一个非常综合的话题，在进入 Electron 特定的测试之前，你应该花大量时间学习并掌握测试的基础。在未来的版本中将提供更全面的课程。
+
+# 第 6 章 – 使用 JavaScript 介绍机器学习、人工智能与机器人学（奖励章节）
+
+在本章中（节选`Simply ES6`作为示例），我们将揭示关于使用`JavaScript`进行`机器学习`、`AI`和`机器人学`相关编程的内容。请注意这不是一节编程课程！你将不会学习任何编程，但你将利用现有的编程技能来学习一些与`机器学习`相关的新知识。本章将涵盖在入门水平使用`TensorFlowJS`进行`张量数学`。在本章结束后，你将能够在某种程度上使用`TensorFlowJS`。
+
+## 机器学习
+
+学习被定义为知识、理解、技能等的获取。学习的能力是人类、动物甚至植物与生的本能。
+
+
+
+`机器学习`是`计算机科学`的分支，旨在研究能够不断学习和改进的`算法`，并最终给出更理想的输出。作为一个基础示例，我们可以想象一个`程序`，它接收个人的`教育`水平输入，并被预测其`收入`。起这个程序可能会向我们抛出随机值，但如果我们能告诉程序它离真实答案有多远，那么随着时间的推移，它将学习并调整，最终给出越来越准确的答案。这个程序有可能通过查看个人的教育水平为我们提供它能提供的最佳值，由于`教育`水平与`收入`之间可能并不十分，该值仍然与实际值有差距，但结果将是尽可能好的。此类程序可能会使用数值绘图和回归分析等工具，反之它也可能学习避免数据中的离群值。这类程序的`算法`将在`机器学习`领域中涵盖。
+
+`机器学习`又称为`ML`，在特定视角下比起`计算机科学`更偏`数学`，不过这种说法适用于所有的`算法`！`机器学习`是`人工智能`（简称`AI`）的一个分支，人们也可以说`ML`是`AI`的一种应用。我经常将`机器学习`和`人工智能`统称为`ML/AI`。
+
+以下是`术语`列表，并在需要的地方附有简要解释：
+
+### 人工神经网络 简称 ANNs
+
+`人工神经网络`是受人类和动物大脑启发的算法。这些程序通过示例进行学习，而不是为了特定目的而进行编程。
+
+### 智能与人工智能
+
+`智能`可以有许多定义方式，包括`逻辑`和`推理`、`学习与理解`、`自我意识`、`情感`、`创造力`等概念。泛义地说，`人工智能`是由`人工`事物（如`计算机`、`机器人`等）表达的`智能`，而不是`自然`有机体或系统。机器中`智能`的存在引发了许多关于智能本质、人格、人类与机器权利等哲学问题。
+
+### 深度学习
+
+`深度学习`是`机器学习`的一个分支，它使用`人工神经网络`和其他方法来创建和训练能够学习所提供`数据`更深层概念的算法。这些`ANNs`（主要是`CNNs`）具有许多层。
+
+### NLP
+
+`NLP`又称为“自然语言处理”，是`机器学习`的一个分支，侧重于训练程序以理解人类语言，包括但不限于语音、表达、意义、语境、潜台词等。
+
+### 数据科学
+
+`数据科学`是一个交叉学科，使用`ML/AI`来理解`数据`。`数据科学`包含了数据挖掘、数据可视化、大数据等内容。
+
+### 统计学
+
+`统计学`是`数学`的一个分支，涉及数据的收集以及使用`数学模型`来研究、理解、组织、分析、解释和展示数据。
+
+### 机器人学
+
+在`机器人学`中，我们研究`机器人`的性质、设计与结构、构造与操作以及与之相关的任何其他。
+
+### 脑机接口
+
+`脑机接口`简称`BCI`本质上意味着通过感应控制计算机，而不是使用键盘、鼠标、语音等。这类计算机将具有更快的接口，消耗更少的能量，并使我们免于嗓子哑或腕隧道综合征等问题。
+
+### 机器人运维
+
+`RobotOps`是机器人领域的`DevOps`。像“GORT”之类的工具被用于`RobotOps`。
+
+### 物联网
+
+基本上，物联网简称`IoT`是一种`互联网`概念，它将我们的`微波炉`、`冰箱`、`手机`等连接到像我们使用的`互联网`一样巨大的网络中。
+
+### 无处计算
+
+`无处计算技术`（也称为泛在计算、环境智能等）指的是与我们的生活无缝集成的技术，其以至于我们甚至不知道那是技术，或者不知道我们正在使用它。像衣服、书籍、床单和枕套、建筑等，都是许多人认为是自然而非人工的技术示例。`无处计算`指的是在用户没有意识上意识到正在使用的情况下使用计算机，例如使用智能冰箱等。
+
+### Theano
+
+`Theano`是一个用于`数学`的`Python`库和优化编译器。在编写时，`Theano`采用“三条款 BSD 许可证”即“新 BSD 许可证”。
+
+### Keras
+
+`Keras`是一个用于`深度学习`模型的开源库。它结合了`Theano`和`TensorFlow`的强大，使我们能够创建并训练`ANN`模型。
+
+### TensorFlow
+
+`TensorFlow`是用于`张量数学`和`机器学习`的 Apache License 2.0 库。它可以与`Python`、`JavaScript`、`NodeJS`、`Go`、`C`、`C++`等配合，并可以在带有或不带有`GPU`加速的情况下使用。
+
+### 数据集
+
+数据集是带有适当`元数据`的`数据`集合。例如带有标签告诉我们图像内容的，如一张`狗`的照片配上“狗”字。`数据`通常计算机难以理解，而`元数据`是以计算机易理解的形式存在的。有像`MNIST`这样的数据集，程序员（或者我们应该称他们为训练者）使用它们来训练`神经网络`和`ML 模型`。`MINST`是由数字的`手写图像`组成的`数据集`。你可以创建自己的`数据集`并将其发布在`GitHub`之类……使用像`MINST`这样的数据集，`卷积神经网络`简称`CNN`可以将图像中每个像素的信息作为输入层`神经元`的输入。因此，为了处理一个 8px*8px 的 2bit 图像，如果没有额外的信息匹配，输入层需要 64 个神经元。
+
+## AI/ML、数据科学与技术倡议
+
+`AI/ML`、`数据科学`和`技术`领域始终处于研发的最前沿。如果你真的感兴趣，可能想要关注某些公司、人物和项目以获取最新动态。以下是我强烈推荐的：
+
+1. **Open AI**（Ilya Sutskever, Sam Altman, Greg Brockman）。曾是非营利组织，但现在不再是。与`Microsoft Corp`建立了 10 亿美元的投资关系。截至 2020 年约 120 人。他们的目标是“发现并实现通通用人工智能的路径”。LinkedIn 的 Reid Hoffman 和 Paypal 的 Peter Thiel 等人在某种程度上与之相关。
+
+2. **Clearview AI**（极具争议且可武器化的面部识别）。用户包括（但不限于）美国执法部门，如`NYPD`（它是全球最大的武装执法机构之一，不包括州警察、辅助警员、学校安全专员、交通警察和退休人员）。该程序被澳大利亚、加拿大、丹麦、挪威等国的执法部门使用。商业用户包括安全公司、Home Depot、`AT&T`、`Wells Fargo`、高级研究 AI 中心（沙特阿拉伯的利亚德）、Founders Fund、`SoftBank`等。《纽约时报》将 Clearview 应用的使用描述为“富人的秘密玩具”。
+
+3. **谷歌大脑**（Google Brain，深度学习与人工智能）研究团队。涉及涉及基于 AI 的加密、图像增强、谷歌翻译、机器人技术等。
+
+4. **蓝脑计划**（瑞士）。目标是通过反向工程哺乳动物的大脑，创建一个啮齿类动物乃至人类的数字大脑。由`Henry Markram`领导，他最初的目标是创建一个小鼠的数字新皮柱（新皮层的基本单元），该目标已由`Markram`在 2006 年实现。自成立以来，该项目一直进展。该项目主要由瑞士政府和未来与新兴技术赠金资助。项目使用`Neuron`软件进行神经元建模；使用`C`、`C++`和`FORTRAN`编写，主要的脚本语言是`Hoc`（由`Brian Kernighan`、`Rob Pike`实现，也用于 Plan8），同时也可用`Python`。
+
+5. **Jupyter 项目**（目标：支持所有编程语言的交互式数据科学和科学计算）。非营利。被`Google`、`Microsoft`、`IBM`、`NASA`、伯克利大学等使用。
+
+6. **Humanity+**（非营利，`Nick Bostrom`）。一个倡导伦理使用新兴技术来增强人类能力的国际组织。
+
+7. **2045 计划**（非营利，`Dmitry Itskov`）。寿命延伸和半机械领域研究人员的网络和社区。
+
+8. **埃隆·马斯克**（FRS）（Open AI、`Neuralink`等），已不再是`Open AI`的董事成员，但仍是捐赠者，据报道仍有重大关联。拥有`Neuralink`。他以尖端公司闻名，包括`SpaceX`、`Tesla, Inc.`、The Boring Company、`PayPal`、`SolarCity`等。他正在超级回路、马斯克电力喷气式飞机、可持续能源、火星殖民等领域开展极其卓越的工作。
+
+9. **瑞·库兹韦尔**（作者、发明家、未来主义者、超人类主义者）。获得国家技术创新奖。入选国家发明家名人堂。拥有 21 个荣誉博士学位。`Kurzweil`、`Google`、`NASA Ames 研究中心`一创建了“奇点大学”。
+
+10. **彼得·蒂尔**（《从零到一》作者、传奇科技和“Founder’s Fund”创始人）。投资组合包括`Facebook`、`Airbnb`、`Linked-In`、`Yelp Inc.`、`Spotify`、`Space X`、`Stripe`、`AltSchool`和`ClearView AI`等。最初通过可转换债券投资`Facebook`。曾取代`Elon Musk`担任`PayPal`（当时的`X.com`）的首席执行官。投资与 AI、寿命延伸、海洋居住相关的研究和创业。他参与了`Breakout Labs`，该机构资助运营、政府或学术范围之外的研究。`Thiel Fellowship`每年向 20 名 23 岁以下的人提供 100,000 美元，让他们退出大学并创立自己的事业。
+
+11. **其他著名的候选人**包括生命未来协会、火星学会、奇点大学、救生基金会、人类大脑计划、Apache Mahout、`BRAIN Initiative`、Serenata de Amor 行、`Cyc`、金星计划等。
+
+注意：对于那些从学术角度对 AI/ML、机器人、IoT 以及相关技术感兴趣的人，我建议在学术期刊上阅读相关内容，并关注真正从事研究的人的更新，而不是阅读博客或听播客。一个很好的来源是“arXiv.org”。
+
+### Cylon、Artoo 和 Gobot
+
+机器人项目`Cylon`、`Artoo`和`Gobot`是使用`JavaScript`、`Ruby`和`Go`语言为机器人、IoT 等硬件编程的框架。当我发现这些项目时，我立刻爱上了它们，这真是巧合啊！`JavaScript`、`Ruby`和`Go`是我最喜欢的语言。在写作时，支持以下常见的硬件和相关技术：
+
+1. `Arduino`
+
+2. `Raspberry Pi`
+
+3. `Intel Galileo`、`Edison`和`IoT Analytics`
+
+4. `OpenCV` (BSD, 实时计算机视觉库)
+
+5. `WICED Sense`
+
+6. `Bebop`（带有双核 CPI、四核 GPU、9GB 闪存内存、1400 万像素摄像头和 WiFi 热点的 Parrot 无人机）。
+
+7. `Electric Imp` (IoT)
+
+8. `Joystick`（双摇杆 3、`X-box 360`以及所有兼容`SDL`的 USB 摇杆。）
+
+9. `键盘`
+
+10. 音频与语音接口。
+
+支持以下常见的通用输入输出（即`GPIO`）设备：
+
+1. `模拟传感器`
+
+2. `按钮`
+
+3. `直接引脚`
+
+4. `红外距离测距器`
+
+5. `LED`
+
+6. `电机`
+
+7. `继电器`
+
+支持不仅限于此列表，每天都有越来越多的支持。这些项目带有用于`HTTP/HTTPS` (REST)、`socket.io`和`mqtt`的模块。
+
+### TensorFlowJS
+
+本质上，`TensorFlow`以及所有其他机器学习库只是高科技数学函数和例程集合。`TensorFlowJS`是一个`JavaScript`框架，允许我们使用`JavaScript`构建和训练机器学习模型。`TensorFlowJS`用于构建深度神经网络。它驱动了我们今天一些最强大的 AI 技术。在最近的章节中，我们学习了一些与`Tensors`相关的数学。作为回顾，请记住以下术语：
+
+1. 4 维`Tensors`是以 3 维`Tensors`为成员的数组。
+
+2. 3 维`Tensors`是以 2 维`Tensors`为成员的数组。
+
+3. 2 维`Tensors`（也称为矩阵）是以 1 维`Tensors`为成员的数组。
+
+4. 1 维`Tensors`（也称为数组，或向量）是以 0 维`Tensors`为成员的数组。
+
+5. 0 维`Tensors`（也称为标量）是数字。
+
+在数学中，`Tensors`可以具有任意数量的维度，它们的形状由成员及其子成员的长度定义。就像`Arrays`一样，`Tensors`也有索引值！然而它们看起来更像坐标，1 维`Tensor`即`Array`的索引值为`0, 1, 2, 3, 4`等；2 维`Tensor`的索引值为`(0, 0)`、`(0, 1)`、`(0, 2)`、`(1, 0)`、`(1, 1)`等；3 维`Tensor`的索引值为`(0, 0, 0)`、`(0, 0, 1)`、`(1, 0, 1)`、`(3, 1, 0)`等，此类如此，维度越高，索引位置中的成员就越多。注意：`Tensors`、`Arrays`、`Matrices`、`Vectors`等并不同义。它们在数学和计算机编程中有不同的定义。不要把它们混淆！在`TensorFlow`中，`Tensors`是数据的不可变形式。通过`TensorFlow`我们可以以会话的形式创建、训练、导出和导入 ML 模型。`TensorFlow`可用于机器学习、数据科学等。事实上，许多人在`Kaggle`等网站的数据科学竞赛中使用`TensorFlow`、`Keras`等。`Keras`可用于导出训练过的模型，而“作为工具的 TensorFlow”可以将模型转换为供`TensorFlowJS`使用的版本。
+
+### 设置 TensorFlowJS
+
+让我们用`TensorFlowJS`做一些实际操作。在本节中，我们将学习如何进行基础的`TensorFlowJS`设置，我们还将提供一些示例帮助您开始 TensorFlow。要使用`TensorFlowJS`，我们可以使用以下包：
+
+1. `TensorFlowJS` - `npm i @tensorflow/tfjs`
+
+2. 适用于 NodeJS 的`TensorFlowJS` - `npm i @tensorflow/tfjs-node`
+
+3. 带有 GPU 加速的 NodeJS `TensorFlowJS` - `npm i @tensorflow/tfjs-node-gpu`需要在 Linux 上安装 NVIDIA CUDA 并配备 NVIDIA 显卡。
+
+4. 以 PIP 工具形式的`TensorFlowJS` - `pip install tensorflowjs`
+
+在这里我们将结合 NodeJS 使用 TensorFlowJS。我们可以使用`npm i @tensorflow/tfjs-node`，这是针对 NodeJS 的特定后端支持，它连接到 TensorFlow-C。浏览器端和 NodeJS 包拥有各自的 API，因此`tf.browser`和`tf.node`只能从各自的模块导入。NodeJS 模块仅提供同步操作，因此主线程将被阻塞，直到操作完成。
+
+### 步骤
+
+让我们开始吧，按照以下步骤设置一个基于 NodeJS 的 CLI 接口来使用 TensorFlowJS：
+
+1. 创建一个新的项目目录并在终端中进入该目录。
+
+2. 使用`npm init -y`初始化 NPM。如果不使用`-y`标记，请确保使用`index.js`作为入口点。
+
+3. 使用`npm i @tensorflow/tfjs-node`安装 TensorFlowJS。
+
+4. 安装 Babel 和 ES6 预设，并在`package.json`中配置它们。一旦设置好脚本，我们可以使用`npm run babel`运行它们。将脚本设置为将`index.es6.js`转换为`index.js`。
+
+5. 创建一个`index.es6.js`文件。
+
+6. 向其中添加以下代码：
+
+```javascript
+import * as tf from '@tensorflow/tfjs-node'
+let t1 = tf.tensor([1, 2, 3, 4, 5, 6, 7, 8], [2, 4]);
+console.log(t1.arraySync());
+```
+
+7. 现在使用`npm run babel`，这会占用一个终端持续执行 Babel，请让它运行。使用另一个终端运行以下命令。
+
+8. 使用`node index.js`查看此代码的输出，它将显示以下输出：
+
+```
+[[ 1, 2, 3, 4 ], [ 5, 6, 7, 8 ]]
+```
+
+这是一个 2 维张量（Tensor），每个成员都是一个包含 4 个元素的数组；可以说它是一个 2x4 张量。
+
+9. 现在将代码替换为以下：
+
+```javascript
+import * as tf from '@tensorflow/tfjs-node'
+let t1 = tf.tensor([1, 2, 3, 4, 5, 6, 7, 8], [2, 2, 2]);
+console.log(t1.arraySync());
+```
+
+10. 使用`node index.js`查看此代码的输出，它将显示以下输出：
+
+```
+[[[ 1, 2] ], [ 3, 4] ], [[ 5, 6] ], [ 7, 8]]]
+```
+
+11. 这是一个 3 维张量，每个成员都是嵌套在数组中的数组，包含 2 个元素；可以说它是一个 2x2x2 张量。
+
+在这里，第 3 行的`tf.tensor`是一个用于创建张量的对象，传递给它的参数都必须是数组。传递给它的第一个参数必须包含想要展开的成员，这些成员将成为`tf.tensor`返回的张量的成员。第二个参数必须是一个数组，其成员必须满足以下条件：
+
+1. 它们必须是第一个数组长度的因数。
+
+2. 它们的总乘积必须等于第一个数组的长度。
+
+在这里，由于第一个数组的长度为 8，我们可以传递`[2, 2, 2]`、`[2, 4]`、`[4, 2]`、`[1, 8]`、`[8, 1]`等。这里`[1, 8]`将返回一个包含单个数组的数组，该数组包含 8 个标量元素。相比之下，`[8, 1]`将返回一个包含 8 个数组的数组，每个数组包含一个标量元素。试一看！
+
+
+
+第 4 行的`arraySync()`方法用于将张量转换为更可读的形式。本课程到此为止！然而，我留留了一些内容供你们自己尝试：
+
+1. `tf.tensor2d()` - 返回的张量必须是 2 维的，因此第二个参数不能超过 2 个成员。
+
+2. `tf.tensor3d()` - 返回的张量必须是 3 维的，因此第二个参数不能超过 3 个成员。
+
+3. `tf.tensor4d()` - 返回的张量必须是 4 维的，因此第二个参数不能超过 4 个成员。
+
+还有更多此类行为的对象。
+
+4. `tf.tidy()` - 从内存中清除张量。
+
+5. `tf.square(t1)` 或 `t1.squate()` - 平方张量内的所有成员。
+
+6. `t1.shape` – 返回张量的形状（张量内存在的所有数组的长度）。
+
+7. `tf.dispose()` - 销毁与张量相关的内存。
+
+8. `tf.tidy()` - 执行函数后清理所有未被函数返回的张量。
+
+9. `tf.memory()` - 返回一个包含分配内存信息的对象。
+
+10. `t2.add(t2)` 或 `tf.add(t1, t2)` – 两个张量相加。
+
+11. `t2.sub(t2)` 或 `tf.sub(t1, t2)` – 两个张量相减。
+
+12. `t2.mul(t2)` 或 `tf.mul(t1, t2)` – 两个张量相乘。
+
+可以使用更多方法，特别是数学运算。张量的数学与矩阵运算相似：
+
+- 求和相关操作：数组 A 中的所有成员与数组 B 中的对应成员（通过索引定义）相加或相减。
+
+- 乘法相关操作：数组 A 中的所有成员与数组 B 中的每个其他成员相乘或相除。
+
+这种情况也适用于所有维度的张量。
+
+在进一步深入机器学习之前，最好去读读一些数学知识。祝运！
+
+## 接下来该做什么
+
+就是这些！你现在已经学会了 ElectronJS！现在，你需要大量练习来掌握它，并关注 Electron 和 Electron-userland 的最新进展。要继续学习，你可以学习更多 Electron API、测试工具等。尝试开发与 AI 和机器学习相关的 Electron 应用，开发一个健康的作品集并不断完善，软件工程师的作品集是他们最重要的资产，谁知道呢，你很快就能经营自己的创业项目，改变世界。
+
+请关注《Simply Electron》的新版本，这本书最初内容非常详尽，但为了简化分发，它被拆分为不同的版本（不是卷），每个新版本都将包含更多高级的课程和改进。祝运！
+
+关注我们：
+
+@RayShortHead @AnnaShortHead
