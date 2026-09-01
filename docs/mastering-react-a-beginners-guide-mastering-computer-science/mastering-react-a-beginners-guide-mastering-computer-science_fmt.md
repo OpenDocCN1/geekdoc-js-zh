@@ -2094,7 +2094,8 @@ export default App;
 
 在 Landing.js 组件的 Content 标签之间添加以下代码。
 
-```加载一组将定义落地页中 HTML 元素行为的预定义 CSS。
+```
+加载一组将定义落地页中 HTML 元素行为的预定义 CSS。
 
 ```
 

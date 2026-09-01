@@ -19728,7 +19728,8 @@ filter('myFilter', function(){
 
 | 代码 | 描述 |
 | :--- | :--- |
-| ```html<br><!doctype html>```<br>```html ng-app="myApp">```<br>`<head>`<br>`  <title>AngularJS Custom Filter</title>`<br>`</head>`<br>`<body>`<br>`<div ng-controller="myController">`<br>`  <h2>Sorting and Filtering</h2>`<br>`{{phrase | censor:censorText}}`<br>>;<br>/```{"This is some bad, dark, evil text." \| censor:"happy"}```\`}<br><p ng-click="filterText()">{{txt}}</p>`<br/><script src="http://code.angularjs.org/1.3.0/angular.min.js">;</script>`<br/>;<script src="js/filter_custom.js"></script>```</body></html>|
+| ```html<br><!doctype html>```<br>```
+html ng-app="myApp">```<br>`<head>`<br>`  <title>AngularJS Custom Filter</title>`<br>`</head>`<br>`<body>`<br>`<div ng-controller="myController">`<br>`  <h2>Sorting and Filtering</h2>`<br>`{{phrase | censor:censorText}}`<br>>;<br>/```{"This is some bad, dark, evil text." \| censor:"happy"}```\`}<br><p ng-click="filterText()">{{txt}}</p>`<br/><script src="http://code.angularjs.org/1.3.0/angular.min.js">;</script>`<br/>;<script src="js/filter_custom.js"></script>```</body></html>|
 | **点击查看代码图** | （参考） |
 
 ## 总结
@@ -20232,7 +20233,8 @@ This directive disables a button element if the expression evaluates to true.（
 **NgShow **  
 
 This directive is same as NgHide except in reverse： If a boolean expression evaluates to true in the scope, the element will be visible；otherwise invisible。For example: 
-```html    <input type="radio"  ng-disabled='{{myDisabled}}'>`</div>
+```
+html    <input type="radio"  ng-disabled='{{myDisabled}}'>`</div>
 ```
 
 **NgIf **  
@@ -33233,7 +33235,8 @@ http://localhost/code/example1.html?first=Brad&last=Dayley
 
 http://localhost/code/example1.html
 
-```var xmlhttp = new XMLHttpRequest();xmlhttp.onreadystatechange=function() {
+```
+var xmlhttp = new XMLHttpRequest();xmlhttp.onreadystatechange=function() {
  if (xmlhttp.readyState==4 && xmlhttp.status==200)
     { document.getElementById('email').innerHTML=xmlhttp.responseText;}
    }
@@ -35282,7 +35285,8 @@ $scope.updatemessage=function(){$op.message'Hello+'+scope.fis"+"last"''}`};
 <div=ng-ap="firstApp">  
   <head><title>FirstAngularJS 应用></td>  
     </hea
-```html  
+```
+html  
   
       <|div|>     scripts/"http:/code.angularjs.org/13angularmin.js"/>     
 </script>/src/js/fistis]>   </body

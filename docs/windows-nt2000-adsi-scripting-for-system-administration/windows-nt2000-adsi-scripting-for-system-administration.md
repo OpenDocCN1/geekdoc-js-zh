@@ -1413,11 +1413,13 @@ Last logon: Sat May 20 19:00:00 (\server1)
 Logoff: Sat May 20 19:00:00 (\server2)
 Total number of bad password: 0
 Total number of logons: 4
-```示例 2.5 可以处理任意数量的账户。在本章的许多脚本中，你可以提供账户的后缀，表示显示匹配该名称的所有账户。例如，以下行将处理 MyDomain 域的 User1、User2 和 Joel 账户：
+```
+示例 2.5 可以处理任意数量的账户。在本章的许多脚本中，你可以提供账户的后缀，表示显示匹配该名称的所有账户。例如，以下行将处理 MyDomain 域的 User1、User2 和 Joel 账户：
 
 ```
 perl login.pl -d MyDomain user*
-```此脚本接受表 2.3 中描述的命令行开关，但你可以指定机器名称。如果没有指定域或机器名称，脚本将默认为运行脚本的用户当前域。# 示例 2.5 确定最后登录和注销时间
+```
+此脚本接受表 2.3 中描述的命令行开关，但你可以指定机器名称。如果没有指定域或机器名称，脚本将默认为运行脚本的用户当前域。# 示例 2.5 确定最后登录和注销时间
 
 ```perl
 01. use Getopt::Long;
@@ -2752,7 +2754,8 @@ net share
 
 脚本接受如下的驱动器号或 UNC：
 
-```perl \\server\share
+```
+perl \\server\share
 ```
 
 在这种情况下，脚本会显示本地 `c:\` 驱动器以及 `\server\share` 共享卷的信息。如果没有传递参数，则显示当前目录的卷信息。该代码使用了 Windows NT 4.0 和 Windows 95 Release 2 (OSR2) 引入的 API，在早于此的平台上可能会失败。

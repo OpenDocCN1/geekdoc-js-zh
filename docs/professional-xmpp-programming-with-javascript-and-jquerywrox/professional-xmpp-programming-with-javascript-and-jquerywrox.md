@@ -2431,7 +2431,8 @@ $(document).bind('disconnected', function () {
 });
 ```
 
-```code snippet arthur.js
+```
+code snippet arthur.js
 ```
 
 Arthur 的用户现在应该能够登录他们的 XMPP 账户了。
@@ -2454,7 +2455,8 @@ $(document).bind('connected', function () {
 
 ![](img/2eb955af9e1fccf052f4e6e817dbffa9_104_0.png)
 
-```codecode snippet arthur.js
+```
+codecode snippet arthur.js
 ```
 
 处理器被设置为查找 type 属性为 chat 的 <message> 节。正如你在第 1 章中学到的，chat 类型在 XMPP 协议中用于普通的私有消息。
@@ -2472,7 +2474,8 @@ handle_message: function (message) {
     return true;
 }
 ```
-```code snippet author.js```
+```
+code snippet author.js```
 
 该代码使用 children() 来仅寻找作为 <message> 节直接子元素的 <body> 元素。正如你很快看到的，Identica 消息有一个额外的 <body> 元素，代码在这一方面需要更具体一些以找到正确的一个。
 
@@ -4945,7 +4948,8 @@ $(document).bind('connected', function () {
 
 ```javascript
 groupie.js 代码片段
-```现在你必须实现 `on_presence()`。这个处理器在这个阶段需要做件事：第一，它必须用房间的当前占用者填充参与者区域；第二，当用户的存在状态出现时，它将触发
+```
+现在你必须实现 `on_presence()`。这个处理器在这个阶段需要做件事：第一，它必须用房间的当前占用者填充参与者区域；第二，当用户的存在状态出现时，它将触发
 
 ![](img/2eb955af9e1fccf052f4e6e817dbffa9_190_0.png)
 
@@ -5051,7 +5055,8 @@ Groupie.connection.addHandler(Groupie.on_public_message,
 
 ```javascript
 groupie.js 代码片段
-```注意每个给房间的消息 `type` 属性都设置为 `groupchat`。这与私信区分开来。你稍后为私信添加处理器，它们的 `type` 属性等于 `chat` 或 `normal`。
+```
+注意每个给房间的消息 `type` 属性都设置为 `groupchat`。这与私信区分开来。你稍后为私信添加处理器，它们的 `type` 属性等于 `chat` 或 `normal`。
 
 现在你必须实现 `on_public_message()`，它应该向房间显示传入的消息。在 Groupie 中添加这段代码：
 

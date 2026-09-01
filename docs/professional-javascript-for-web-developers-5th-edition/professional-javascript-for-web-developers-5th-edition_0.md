@@ -3100,7 +3100,8 @@ console.log(RegExp.prototype[Symbol.match]);
 
 console.log('foobar'.match(/bar/));
 //  ["bar", index: 3, input: "foobar", groups: undefined]
-```向此方法提供非正则表达式会导致转换为 `RegExp` 对象。如果你希望回避此行为并让方法直接使用参数，可以通过定义 `Symbol.match` 函数来取代正则表达式本应表现的行为，从而向 `match()` 方法传递非正则表达式实例。该函数有一个单一参数，即调用 `match()` 的字符串实例。返回值是不限制的：
+```
+向此方法提供非正则表达式会导致转换为 `RegExp` 对象。如果你希望回避此行为并让方法直接使用参数，可以通过定义 `Symbol.match` 函数来取代正则表达式本应表现的行为，从而向 `match()` 方法传递非正则表达式实例。该函数有一个单一参数，即调用 `match()` 的字符串实例。返回值是不限制的：
 
 ```javascript
 class FooMatcher {

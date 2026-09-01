@@ -4282,7 +4282,8 @@ cbReadFile:function(theData) {
 
 处理来自 Ajax 函数响应的回调函数
 
-```CODE 5.5 ajax_request/ajax_obj_literal.html
+```
+CODE 5.5 ajax_request/ajax_obj_literal.html
 ```
 
 现在，在调用函数中声明的 `firstName` 变量对回调函数可用了，因为两者共享 `ajaxFile` 对象作用域，如图 5.5 所示。

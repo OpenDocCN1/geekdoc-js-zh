@@ -12983,7 +12983,8 @@ DOMAIN=domain; SECURE
 
 ```perl
 print "Set-cookie: Cname = $name";
-```可以使用环境变量访问 Cookies：
+```
+可以使用环境变量访问 Cookies：
 $ENV{'HTTP_COOKIE'}
 
 示例：

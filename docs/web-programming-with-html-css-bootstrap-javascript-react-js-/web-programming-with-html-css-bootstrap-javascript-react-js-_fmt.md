@@ -4877,7 +4877,8 @@ DOM 代表什么？
 
 
 
-```html <button type="button" id="checkAnswer">Check Answer</button>
+```
+html <button type="button" id="checkAnswer">Check Answer</button>
 
 <script>
   document.getElementById("checkAnswer").onclick = function () {
@@ -8221,7 +8222,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
 // 检查是否存在匹配。如果有，则给`session`变量赋值。
 
-```php for($i=0; $i<count($members); $i+=2){
+```
+php for($i=0; $i<count($members); $i+=2){
 
     if(trim($members[$i])==trim($members[$i+1])==$password )
 

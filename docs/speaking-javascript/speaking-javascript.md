@@ -4479,7 +4479,8 @@ JavaScript 有几个特殊的数字值：
 
 区分这两个零的标准方法是除以零。因此，一个检测负零的函数看起来应该是这样的：
 
-```function isNegativeZero(x) {
+```
+function isNegativeZero(x) {
   return x === 0 && (1 / x < 0);
 }
 ```
@@ -4726,7 +4727,8 @@ $(-1)^{sign} \times \%1.fraction \times 2^{exponent}$
 
 区分这两个零的标准方法是除以零。因此，一个检测负零的函数看起来应该是这样的：
 
-```function isNegativeZero(x) {
+```
+function isNegativeZero(x) {
   return x === 0 && (1 / x < 0);
 }
 ```
@@ -4875,7 +4877,8 @@ JavaScript 数字具有 64 位精度，这也被称为*双精度*（在某些编
 
 区分这两个零的标准方法是除以零。因此，一个检测负零的函数看起来应该是这样的：
 
-```function isNegativeZero(x) {
+```
+function isNegativeZero(x) {
   return x === 0 && (1 / x < 0);
 }
 ```

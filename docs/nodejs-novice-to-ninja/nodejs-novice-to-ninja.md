@@ -6233,7 +6233,8 @@ Open Trivia API 返回的 JSON 数据如下：
   ]
 }
 ]
-```这些内容被转换为 JavaScript 值并进行格式化，通过调用 `libshared/quizdb.js` 中的 `questionAdd(question, answer)` 函数将每个问题/答案集添加到数据库中。每个问题和答案集都插入在数据库事务中，这样如果任何 SQL INSERT 操作失败，所有的操作都将一起失败：
+```
+这些内容被转换为 JavaScript 值并进行格式化，通过调用 `libshared/quizdb.js` 中的 `questionAdd(question, answer)` 函数将每个问题/答案集添加到数据库中。每个问题和答案集都插入在数据库事务中，这样如果任何 SQL INSERT 操作失败，所有的操作都将一起失败：
 
 ```javascript
 // add a new question and answer set

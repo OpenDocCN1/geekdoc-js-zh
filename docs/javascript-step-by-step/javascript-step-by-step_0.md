@@ -8338,7 +8338,8 @@ EHandler.add(formEl,"submit", function(eventObj) { formValid(eventObj); } );
 
 `<head>` 元素中的 JavaScript 首先链接到事件处理脚本 `ehandler.js`，该脚本是在第 11 章中开发的。接下来，它定义了一个名为 `formValid()` 的函数来处理来自简单表单的输入，代码如下：
 
-```function formValid(eventObj) {
+```
+function formValid(eventObj) {
         if (document.forms[0].textname.value.length == 0) {
             alert("Name is required.");
             if (eventObj.preventDefault) {

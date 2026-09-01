@@ -5027,7 +5027,8 @@ VALUES (?, ?)', (title, description))
 
 
 
-```def delete_task(task_id):
+```
+def delete_task(task_id):
     conn = get_db_connection()
     conn.execute('DELETE FROM tasks WHERE id = ?', (task_id,))
     conn.commit()

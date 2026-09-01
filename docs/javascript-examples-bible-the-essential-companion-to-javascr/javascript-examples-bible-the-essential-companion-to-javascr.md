@@ -15331,7 +15331,8 @@ Unix:<INPUT type="text" NAME="unix" SIZE=5><P>
 function isWindowBug() {
 return (isGeneration2() && isMac()) || isUnix()
 }
-```你可以在 Eric Krock 的文章中看到更多浏览器探测示例，包括关于 AOL 浏览器的详情：http://developer.netscape.com/80/browser_type.html。
+```
+你可以在 Eric Krock 的文章中看到更多浏览器探测示例，包括关于 AOL 浏览器的详情：http://developer.netscape.com/80/browser_type.html。
 
 ### appMinorVersion
 
@@ -15357,7 +15358,8 @@ navigator.minorVersion
 
 ```javascript
 navigator.cookieEnabled
-```修改 cookie 偏好以查看属性的新值。不需要重启浏览器设置即可生效。
+```
+修改 cookie 偏好以查看属性的新值。不需要重启浏览器设置即可生效。
 
 ### cpuClass
 

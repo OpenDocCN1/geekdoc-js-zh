@@ -9621,7 +9621,8 @@ document.getElementById("myEM").getAdjacentText("afterEnd")
 
 getAttribute() 方法返回赋予当前对象特定属性的值。你可以将此方法用作获取对象属性的替代方案，尤其是在你的脚本以字符串形式为你提供属性名称时（相对地，一个完整形式的对象及其属性的引用）。因此，以下示例语句会产生相同的数据：
 
-```var mult = document.getElementById("mySelect").multiple;
+```
+var mult = document.getElementById("mySelect").multiple;
 var mult = document.getElementById("mySelect").getAttribute("multiple");```
 
 getAttribute() 返回的值类型要么是字符串（包括那些被赋予未加引号数值的属性值），要么是布尔值（例如，select 元素对象的 multiple 属性）。
@@ -34653,7 +34654,8 @@ JavaScript 数组排序是非常强大的功能。数组排序是为什么在加
 
 #### 列表 30-8: Array.sort() 的可能性
 
-```html <html>
+```
+html <html>
 <head>
 <title>Array.sort()</title>
 <script type="text/javascript">

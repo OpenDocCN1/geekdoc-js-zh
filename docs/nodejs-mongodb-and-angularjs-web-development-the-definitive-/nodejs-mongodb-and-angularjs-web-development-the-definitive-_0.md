@@ -12842,7 +12842,8 @@ Figure 24.4 显示了由 Listing 24.7、24.8 和 24.9 创建的网页。
 
 点击此处查看代码图片
 
-```html01 <!doctype html>
+```
+html01 <!doctype html>
 02 <html ng-app="myApp">
 03 <head>
 04    <title>AngularJS Custom Directive</title>
@@ -12869,7 +12870,8 @@ Figure 24.4 显示了由 Listing 24.7、24.8 和 24.9 创建的网页。
 
 点击此处查看代码图片
 
-```html01 <div>
+```
+html01 <div>
 02  <span ng-repeat="photo in photos"
 03 ng-class="{active:photo.selected}">
 04    <a href="" ng-click="select(photo)">{{photo.title}}</a>

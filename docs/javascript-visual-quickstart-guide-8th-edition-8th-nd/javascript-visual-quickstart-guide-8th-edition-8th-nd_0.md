@@ -13986,7 +13986,8 @@ if(n.length==1)
 ```javascript
 t+='<tr><td>&'+w+'</td><td>&'amp;'+w+'</td><td>&'+'amp;#'+n.charCodeAt(0)+';</td></tr>';
 ```
-```我们 `j` 循环遍历 `s` 数组。
+```
+我们 `j` 循环遍历 `s` 数组。
 
 10.
 ```javascript

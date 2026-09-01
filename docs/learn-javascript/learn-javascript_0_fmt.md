@@ -976,7 +976,8 @@ document.write(linebreak);
 
 *(注：由于原文中包含大量重复且混乱的格式描述，译文已根据要求提取了核心逻辑。)*
 
-```如果 `expression 2` 为真，则执行语句(s)
+```
+如果 `expression 2` 为真，则执行语句(s)
 
 } else if (`expression 3`) {
 

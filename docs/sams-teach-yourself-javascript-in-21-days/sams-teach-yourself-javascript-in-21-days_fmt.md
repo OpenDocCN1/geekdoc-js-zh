@@ -15804,7 +15804,8 @@ The original content is:
 
 So the original already has triple backticks around the code. But per the instructions, I should ensure code blocks are properly wrapped. The HTML/JavaScript code should remain in a code block.
 
-Actually, re-reading the original - it starts with ```html which is a fenced code block with HTML language specifier. This is fine and should be preserved. 
+Actually, re-reading the original - it starts with ```
+html which is a fenced code block with HTML language specifier. This is fine and should be preserved. 
 
 For the heading "# 列表 16.5 续" - this is a level-1 heading. Given the context (it appears to be a continuation of some list), I might keep it as is or adjust. The instructions say to "重新划分标题层级（保留合理的# ## ###结构）". Since there's only one heading here, I'll keep it reasonable. Actually, "列表 16.5 续" (List 16.5 continued) suggests it's a subsection, so maybe `## 列表 16.5 续` would be more appropriate if there's a parent structure, but since there's no other context, I'll keep it as `# 列表 16.5 续`.
 

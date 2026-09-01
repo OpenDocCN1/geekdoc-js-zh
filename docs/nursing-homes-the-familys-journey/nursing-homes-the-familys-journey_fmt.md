@@ -23517,7 +23517,8 @@ string.valueOf()
 
 ```javascript
 "Hello, World!"
-```如果是在 `String` 对象的实例上调用，它将包含所创建实例的源字符串。
+```
+如果是在 `String` 对象的实例上调用，它将包含所创建实例的源字符串。
 
 ## Example
 

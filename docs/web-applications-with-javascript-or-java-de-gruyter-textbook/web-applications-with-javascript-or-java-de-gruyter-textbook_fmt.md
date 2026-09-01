@@ -890,7 +890,8 @@ static checkNameAsId(n) {
 
 
 
-```js static checkNameAsIdRef(n) {
+```
+js static checkNameAsIdRef(n) {
     var validationResult = Publisher.checkName(n);
     if ((validationResult instanceof NoConstraintViolation) &&
         n !== undefined) {
@@ -3078,7 +3079,8 @@ public class Author {
 
 `Author`类`authoredBooks`属性的`@ManyToMany`的`mappedBy`属性指定了`Book`类中的反向属性：
 
-```java @Entity
+```
+java @Entity
 public class Book {
   ..
   @ManyToMany(fetch=FetchType.EAGER)
@@ -3834,7 +3836,8 @@ OWL 允许通过以下方式声明类为另一个类的子类：
 
 
 
-```text «SQL table»
+```
+text «SQL table»
 isbn[1] : VARCHAR (pkey)
 title[1] : VARCHAR
 year[1] : INTEGER
@@ -4926,7 +4929,8 @@ public class Employee extends Person {
 
 
 
-```sql CREATE TABLE IF EXISTS 'persons' (
+```
+sql CREATE TABLE IF EXISTS 'persons' (
     `personid` int(11) NOT NULL,
     `category` varchar(16) NOT NULL,
     `name` varchar(255) NOT NULL

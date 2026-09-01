@@ -280,7 +280,8 @@ JavaScript 框架已成为客户端 Web 开发不可或缺的伴侣。几年前�
 
 
 
-```html $('<div/>')
+```
+html $('<div/>')
     .addClass('selected')
     .attr({
         id: 'body',

@@ -1640,7 +1640,8 @@ import { ref } from 'vue'
 
 在使用`Suspense`时，你会频繁使用`<Transition>`（我们尚未涵盖这部分），以及`<KeepAlive>`和`<RouterView>`组件。然而，这些组件的嵌套顺序非常重要，否则这些组件将无法正常工作。如果你遵循给定的模式，这些组件将按预期工作：
 
-```html <RouterView v-slot="{ Component }">
+```
+html <RouterView v-slot="{ Component }">
   <template v-if="Component">
     <Transition mode="mode">
       <KeepAlive>
@@ -4658,7 +4659,8 @@ const title = computed({
 
 
 
-```html <MultiPropComponent 
+```
+html <MultiPropComponent 
   v-model:title="Vue.js for Job Seekers"
   v-model:author="Clive Harber"
   v-model:price="24.99"

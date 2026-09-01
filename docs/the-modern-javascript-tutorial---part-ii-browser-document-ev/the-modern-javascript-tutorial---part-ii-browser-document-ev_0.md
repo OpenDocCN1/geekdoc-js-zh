@@ -5195,7 +5195,8 @@ let form = document.forms.age;
 
 我们可以通过 `select.options` 获取它们的集合，例如：
 
-```html <select id="select" multiple>
+```
+html <select id="select" multiple>
   <option value="blues" selected>Blues</option>
   <option value="rock" selected>Rock</option>
   <option value="classic">Classic</option>

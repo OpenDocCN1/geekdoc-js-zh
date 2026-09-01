@@ -2690,7 +2690,8 @@ sub complement {
     $antiSense = $antiSense =~ tr/ACGTac/TGCatgc//;
     return $antiSense;
 }
-```The following example shows a Perl program that includes a subroutine complement that produces the complementary sequence of a given sequence of DNA. The output of the original sequence ('5' to '3') printed before the call to the subroutine and the associated complementary sequence ('3' to '5') printed after the call is shown below.
+```
+The following example shows a Perl program that includes a subroutine complement that produces the complementary sequence of a given sequence of DNA. The output of the original sequence ('5' to '3') printed before the call to the subroutine and the associated complementary sequence ('3' to '5') printed after the call is shown below.
 
 5' CCGATGCTACATTCATCAGGTC 3'
 3' GGCTATGCTGCTAAGAGTCCAG 5'

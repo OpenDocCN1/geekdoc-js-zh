@@ -4699,7 +4699,8 @@ PHPLib 提供了与 PHP 内置会话库等效的功能。函数名称通常是�
 
 
 
-```php // 连接到 RDBMS
+```
+php // 连接到 RDBMS
 $link = mysql_connect('localhost', 'root', '') or die(mysql_error());
 
 // 选择数据库

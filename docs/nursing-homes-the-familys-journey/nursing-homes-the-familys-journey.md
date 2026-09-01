@@ -29318,7 +29318,8 @@ String 对象的 `valueOf()` 方法，如果在核心 String 对象上调用，�
 
 ```javascript
 "Hello, World!"
-```如果是在 String 对象的实例上调用，它将包含所创建实例的源字符串。
+```
+如果是在 String 对象的实例上调用，它将包含所创建实例的源字符串。
 
 # Example
 

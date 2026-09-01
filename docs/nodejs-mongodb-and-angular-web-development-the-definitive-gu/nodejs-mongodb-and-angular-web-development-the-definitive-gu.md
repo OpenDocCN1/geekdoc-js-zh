@@ -4459,13 +4459,19 @@ Server 对象实现了 EventEmitter 并发射了表 7.8 中列出的事件。在
 
 | 事件 | 描述 |
 | --- | --- |
-| request | 每当服务器接收客户端请求时触发。回调函数应接受两个参数。第一个是表示客户端请求的 IncomingMessage 对象，第二个是您用于构建和发送响应的 ServerResponse 对象。例如：<br> ```function callback (request, response) {}``` | |
-| connection | 当建立新的 TCP 流时触发。回调函数接收 socket 作为唯一参数。例如：<br> ```function callback (socket) {}``` | |
+| request | 每当服务器接收客户端请求时触发。回调函数应接受两个参数。第一个是表示客户端请求的 IncomingMessage 对象，第二个是您用于构建和发送响应的 ServerResponse 对象。例如：<br> ```
+function callback (request, response) {}``` | |
+| connection | 当建立新的 TCP 流时触发。回调函数接收 socket 作为唯一参数。例如：<br> ```
+function callback (socket) {}``` | |
 | close | 当服务器关闭时触发。回调函数接收参数。 | |
-| checkContinue | 当接收到包含 `Expect: 100-continue` 标头的请求时触发。即使你不处理此事件，也有一个默认的事件处理器会响应 HTTP/1.1 100 Continue。例如：<br> ```function callback (request, response) {}``` | |
-| connect | 当接收到 HTTP CONNECT 请求时发射。回调函数接收 request、socket 和 head，head 是一个包含隧道流第一个包的 Buffer。例如：<br> ```function callback (request, socket, head){}``` | |
-| upgrade | 当客户端请求 HTTP 升级时发射。如果未处理此事件，发送升级请求的客户端连接将被关闭。回调函数接收 request、socket 和 head，head 是一个包含隧道流第一个包的 Buffer。例如：<br> ```function callback (request, socket, head){}``` | |
-| error | 当客户端连接发射错误时发射。回调函数接收错误作为第一个参数，接收 socket 作为第二个参数。例如：<br> ```function callback (error, socket){}``` | |
+| checkContinue | 当接收到包含 `Expect: 100-continue` 标头的请求时触发。即使你不处理此事件，也有一个默认的事件处理器会响应 HTTP/1.1 100 Continue。例如：<br> ```
+function callback (request, response) {}``` | |
+| connect | 当接收到 HTTP CONNECT 请求时发射。回调函数接收 request、socket 和 head，head 是一个包含隧道流第一个包的 Buffer。例如：<br> ```
+function callback (request, socket, head){}``` | |
+| upgrade | 当客户端请求 HTTP 升级时发射。如果未处理此事件，发送升级请求的客户端连接将被关闭。回调函数接收 request、socket 和 head，head 是一个包含隧道流第一个包的 Buffer。例如：<br> ```
+function callback (request, socket, head){}``` | |
+| error | 当客户端连接发射错误时发射。回调函数接收错误作为第一个参数，接收 socket 作为第二个参数。例如：<br> ```
+function callback (error, socket){}``` | |
 
 要启动 HTTP 服务器，你需要使用下方的 `createServer()` 方法创建一个 Server 对象。该方法返回 Server 对象。可选的 `requestListener` 参数是一个在请求触发时执行的回调函数。
 

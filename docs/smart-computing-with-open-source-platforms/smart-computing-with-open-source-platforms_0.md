@@ -3553,7 +3553,8 @@ Pymongo API。
 
 ```bash
 C:\>wmic os get osarchitecture
-32-bit own```我们可以直接从合适的 `.MSI` 或 `.exe` 文件安装 MongoDB。
+32-bit own```
+我们可以直接从合适的 `.MSI` 或 `.exe` 文件安装 MongoDB。
 
 要在 Python 中访问 MongoDB，我们需要使用 `pymongo` API。你可以使用以下命令安装 `pymongo` API：
 
@@ -4303,7 +4304,8 @@ Name of the file: my.txt
 
 `f.name` 简单返回文件名。`f.closed` 是一个布尔值，表示文件是否已关闭。如果是 true，则表示已关闭；如果是 false，则表示未关闭。`f.mode` 返回打开模式，`f.softspace` 提到软空间。
 
-```Name of the file: my.txt
+```
+Name of the file: my.txt
 Closed or not: False
 Opening mode: wb
 Softspace flag: 0

@@ -872,7 +872,8 @@ function identity<T>(arg: T): T {
 }
 ```
 
-```let output = identity<string>("mystring"); // output 类型为 string
+```
+let output = identity<string>("mystring"); // output 类型为 string
 let output2 = identity<number>(100); // output2 类型为 number
 ```
 
@@ -890,7 +891,8 @@ interface GenericIdentityFn<T> {
 }
 ```
 
-```let myIdentity;
+```
+let myIdentity;
 ```
 
 在这个示例中，GenericIdentityFn 接口定义了一个接收类型 T 的参数并返回相同类型值的函数。

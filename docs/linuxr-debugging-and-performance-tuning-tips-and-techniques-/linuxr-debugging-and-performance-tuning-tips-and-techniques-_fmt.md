@@ -9770,7 +9770,8 @@ from PyQt4.QtSql import *
 
 通过调用静态方法 `QSqlDatabase.addDatabase()` 并传入我们想要使用的驱动名称来建立数据库连接。然后我们必须设置各种属性，例如数据库名称、用户名和密码。最后，我们必须调用 `open()` 来建立连接。
 
-```pythondb = QSqlDatabase.addDatabase("SQLITE")
+```
+pythondb = QSqlDatabase.addDatabase("SQLITE")
 db.setDatabaseName(filename)
 if not db.open():
     Q.warning(None, "Phone Log",

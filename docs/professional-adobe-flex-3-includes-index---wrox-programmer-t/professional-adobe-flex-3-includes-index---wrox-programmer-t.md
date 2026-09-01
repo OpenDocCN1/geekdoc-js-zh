@@ -19805,7 +19805,8 @@ AdvancedDataGrid 的另一个非常用的的功能是可以对数据进行分组
 
 如果你想将列分组到一个公共标题下，可以使用 <mx:AdvancedDataGridColumnGroup/> 来嵌套 <mx:AdvancedDataGridColumn/>。以下是来自 `chapter33_example10_advancedDataGrid.xml` 的将列分组到公共标题下的代码：
 
-```xml own<mx:AdvancedDataGrid id="musicCatalogGroupedColumns_ad"
+```
+xml own<mx:AdvancedDataGrid id="musicCatalogGroupedColumns_ad"
 DataProvider={_myCollection}>
 <!-- 我们将对列进行分组 -->
 <mx:groupedColumns>
@@ -39509,7 +39510,8 @@ FlexUnit 包含了实现和运行单元测试的基类。它以 ZIP 归包的形
 
 想象构建一个需要根据关键字过滤视频的门户。过滤将是关键字与每个视频的标题进行匹配。这些信息已经足够开始单元测试了！在 FlexUnit 中，单元测试在扩展 `TestCase` 的类中指定。单元测试定义在自己的函数中，并具有以 `test` 开头的描述性名称。以下是一个用于关键字过滤视频的类的初始测试用例示例：
 
-```actionscript ownpackage com.wrox.video
+```
+actionscript ownpackage com.wrox.video
 {
     import flexunit.framework.TestCase;
 
@@ -39538,7 +39540,8 @@ FlexUnit 包含了实现和运行单元测试的基类。它以 ZIP 归包的形
 
 在运行简单测试用例之前，必须组装一个测试套件。测试套件收集测试用例形成一个可以通过 FlexUnit 测试运行器处理的组合。在某些编程语言中，它们是手动编写测试套件。测试套件定义在扩展 `flexunit.framework.TestSuite` 的类中。构造函数调用 `addTest()` 函数来组装测试套件。以下是添加 `VideoFilterTest` 的简单测试套件：
 
-```actionscript package com.wrox.video{
+```
+actionscript package com.wrox.video{
     import flexunit.framework.TestSuite;
     public class AllTests extends TestSuite {
         public function AllTests() {

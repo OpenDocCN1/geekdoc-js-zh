@@ -5159,7 +5159,8 @@ HTTP 请求有时会因为服务器上的问题而挂起。我们不希望请求
 
 为了处理 `async` 函数内部的 promise 拒绝（rejection），我们可以像下面一样用 `try-catch` 块包裹 `await` 表达式：
 
-```1 async function getUsersAndTasks() {
+```
+1 async function getUsersAndTasks() {
 2   try {
 3     const users = await fetchUsers();
 4     const tasks = await fetchTasks();

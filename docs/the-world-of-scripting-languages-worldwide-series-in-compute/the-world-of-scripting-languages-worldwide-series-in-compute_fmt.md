@@ -7002,13 +7002,15 @@ Open "c:\myfiles\file3" For Append As #3
 
 对于输入文件，可以使用 `Line Input` 命令逐行读取文件，例如：
 
-```visual basic
+```
+visual basic
 Line Input #1 TheLine
 ```
 
 换行符或多个换行符会被丢弃。`EOF()` 函数在文件末尾返回 `True`，因此一种常用的写法是：
 
-```visual basic
+```
+visual basic
 Open "C:\data.txt" For Input As #1
 Do
     Line Input #1 TheLine
@@ -7018,7 +7020,8 @@ Loop Until EOF($1)
 
 Visual Basic 程序可能不需要向文件写入——大多数文件访问是针对数据库的，数据库提供了如第 8 节所描述的功能。如果需要输出到顺序字符文件，由于历史原因，会使用 `Print` 命令，例如：
 
-```visual basic
+```
+visual basic
 Print #3; S1; S2; S3
 ```
 
@@ -7032,7 +7035,8 @@ Visual Basic 将行视为由若干区域组成，在打印列表中包含 `Tab` 
 
 记录将是声明为 UDT（用户定义类型）变量的内容。例如，维护员工记录：设置以下声明。
 
-```visual basic
+```
+visual basic
 Type Employee
     ID As Integer
     Salary As Currency
@@ -7047,7 +7051,8 @@ Dim anEmployee As Employee
 
 我们如下所示打开文件：
 
-```visual basic
+```
+visual basic
 Dim RecLength As Long
 RecLength = LenB(anEmployee)
 Open "C:\staff.fil" For Random As #1 Len RecLength
@@ -7055,7 +7060,8 @@ Open "C:\staff.fil" For Random As #1 Len RecLength
 
 （应用于用户定义类型的 `LenB()` 函数返回内存中的大小，包括元素之间的任何填充。）现在我们可以在向文件中写入任意记录：
 
-```visual basic
+```
+visual basic
 Dim position As Long
 position = 0
 Put #1, position, anEmployee
@@ -7063,7 +7069,8 @@ Put #1, position, anEmployee
 
 并且我们可以以高效的方式读取记录：
 
-```visual basic
+```
+visual basic
 position = 0
 Get #1, position, anEmployee
 ```
@@ -7072,19 +7079,22 @@ Get #1, position, anEmployee
 
 二进制文件由不同大小的记录组成。通过如下语句访问：
 
-```visual basic
+```
+visual basic
 Open "C:\stuff.bin" For Binary As #1
 ```
 
 可以将记录追加到文件中：
 
-```visual basic
+```
+visual basic
 Put #1, , theData
 ```
 
 并且可以通过重复使用以下语句顺序读取记录：
 
-```visual basic
+```
+visual basic
 Get #1, theData
 ```
 
@@ -7102,13 +7112,15 @@ Visual Basic 提供了许多导航和操作文件系统的机制。这些包括 
 
 Visual Basic 处理对象的方式反映了语言的演进。当首次引入时，Visual Basic 是一个基于对象的语言而非面向对象的。它具有访问预定义对象属性和方法的能力，但仅限于此。Visual Basic 第 3 引入了一些可以持有对象引用的数据类型；然而，可以引用的对象限于使用 GUI 创建的表单。因此，通过将控件拖到屏幕上所需位置来创建一个表单实例，可以写成：
 
-```visual basic
+```
+visual basic
 Dim AnotherForm As New MyForm
 ```
 
 同样，通用对象变量也可以使用：
 
-```visual basic
+```
+visual basic
 Dim AnotherForm As Object
 Set AnotherForm = New MyForm
 ```
@@ -7119,19 +7131,22 @@ Set AnotherForm = New MyForm
 
 属性的概念是对面向对象编程（OOP）的独特贡献。在经典 OOP 中，对象拥有对外部世界隐藏的实例变量，通过为对象提供读取或写入特定实例变量的方法来访问。一个按钮可能有一个 `Text` 实例变量，包含显示在按钮上的文本。该变量对对象是私有的，提供设置和读取其值的方法。对于名为 `Bl` 的按钮，我们可能会写：
 
-```visual basic
+```
+visual basic
 Bl.Text = "Exit"
 ```
 
 设置文本，并读取当前值。这是封装过程的一部分：对按钮文本的访问是受的，设置值的方法可以对提供的文本进行验证，限制字符串的长度。在微软 OOP 中，由对象访问的实例变量被称为属性，Visual Basic 使其看起来是直接访问的变量，尽管实际上是通过隐藏方法访问的。因此在 Visual Basic 中我们会写：
 
-```visual basic
+```
+visual basic
 Bl.Text = "Exit"
 ```
 
 设置按钮上的文本，并：
 
-```visual basic
+```
+visual basic
 text = Bl.Text
 ```
 
@@ -7175,11 +7190,13 @@ Visual Basic 应用程序对象模型包含一些系统对象，允许程序与�
 
 引用属性的语法例如：
 
-```visual basic
+```
+visual basic
 ActiveCell.Value = "Annual Totals"
 ```
 
-```visual basic
+```
+visual basic
 Print ActiveCell.Value
 ```
 
@@ -7195,13 +7212,15 @@ End With
 
 许多对象都有默认属性，当对象名出现在需要属性名称的上下文中时就会使用该属性。例如，TextBox 控件有一个 `Text` 属性，其值为当前显示在 TextBox 中的字符串。由于 `Text` 是默认属性，由于我们已经创建了一个名为 `FaxNumber` 的 TextBox，我们可以写：
 
-```visual basic
+```
+visual basic
 FaxNumber = "2865"
 ```
 
 作为：
 
-```visual basic
+```
+visual basic
 FaxNumber.Text = "2865"
 ```
 
@@ -7275,7 +7294,8 @@ Set Obj2 = Obj1
 
 那么 `Obj1` 和 `Obj2` 都指向同一个对象，该对象的任何更改都将被 `Obj1` 和 `Obj2` “看到”。因此，为 `Obj1` 设置属性，例如：
 
-```visual basic
+```
+visual basic
 Obj1.prop = True
 ```
 

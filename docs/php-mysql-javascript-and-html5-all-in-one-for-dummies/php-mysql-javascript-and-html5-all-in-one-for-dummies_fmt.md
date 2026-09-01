@@ -4517,7 +4517,8 @@ http://localhost/form1.html?username=Steve&steve@example.com
 
 复选框允�用户选择多个选项。在实践中，你可能会看到没有 name 属性但有不同 id 属性的复选框。
 
-```doctype html
+```
+doctype html
 <html>
 <head>
 <title>Checkboxes</title>

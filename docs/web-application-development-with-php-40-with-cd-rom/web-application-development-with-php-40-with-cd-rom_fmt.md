@@ -5992,7 +5992,8 @@ $tpl->set_var(array(
 
 
 
-```php "RESULTS" => sprintf(count($entries)),
+```
+php "RESULTS" => sprintf(count($entries)),
 
 count($entries) > 1 ? "entries" : "entry",
 

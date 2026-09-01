@@ -3538,7 +3538,8 @@ document.write(thisDate.toString());
 以下脚本显示欧洲中部时间（比格林尼标准时间晚两个小时）。无论用户的计算机处于什么时区，此脚本均有效。
 
 - 1. 使用脚本开始一个脚本块：
-```script language="javascript"
+```
+script language="javascript"
 var myOffset = -2;
 ```
 - 2. 在 `myOffset` 变量中设置相对于 GMT 的时间偏移。该值应该是将目标时区转换为 GMT 所需更改的小时数。对于欧洲中部时间（夏季时比 GMT 晚两个小时），这意味着值为 -2，表示需要从 CET 向后移动两个小时到达 GMT：

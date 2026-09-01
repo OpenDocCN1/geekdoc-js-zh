@@ -1797,7 +1797,8 @@ document.textField = ""
 第 3 章
 脚本 3.6 延续
 
-```script tc
+```
+script tc
 // 结束针对旧版浏览器的隐藏脚本
 -->
 </SCRIPT>

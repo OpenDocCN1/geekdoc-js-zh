@@ -7560,7 +7560,8 @@ break;
 
 ```
 /* continueStory() 根据 answers 数组中项的值显示故事的一部分或错误信息。 */
-```function continueStory(answerNumber) {
+```
+function continueStory(answerNumber) {
   switch (answerNumber) {
     case 0:
       if (answers[0] === "YES") {

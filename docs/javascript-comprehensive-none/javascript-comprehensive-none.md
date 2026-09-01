@@ -9891,7 +9891,8 @@ qa = "q";
 <IMG SRC="question.jpg" NAME="animation"></P>
 </BODY>
 </HTML>
-```图 7-19：切换图像闪烁广告程序（继续）
+```
+图 7-19：切换图像闪烁广告程序（继续）
 
 ![](img/616b149cde5be2caada934efa3bb15e8_364_0.png)
 

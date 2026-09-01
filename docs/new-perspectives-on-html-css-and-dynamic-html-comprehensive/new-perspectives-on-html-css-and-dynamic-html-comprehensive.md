@@ -3941,7 +3941,8 @@ id="text"
 
 ### 字母列表的超链接
 
-```图 2-22
+```
+图 2-22
 
 ```html
 <a href="#A"></a><a href="#B"></a><a href="#C"></a>
@@ -32761,7 +32762,8 @@ JavaScript 将 HTML 文档组织成树结构。每个元素、属性、内容和
 
 ```
 node.relationship
-```其中 `node` 是当前选择节点，`relationship` 是该节点与当前节点的关系。例如，
+```
+其中 `node` 是当前选择节点，`relationship` 是该节点与当前节点的关系。例如，
 ```
 node.parentNode
 ```

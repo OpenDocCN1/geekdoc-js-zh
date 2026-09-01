@@ -413,7 +413,8 @@ LiveView 在满足你的单页应用所有的交互和实时需求的同时，�
 打开操作系统终端并导航到项目的父目录。然后，输入：
 
 ```
-[pp_liveview] ightarrow % mix ph.new
+[pp_liveview] 
+ightarrow % mix ph.new
 ```
 
 ```
@@ -426,7 +427,8 @@ mix phoenix.new
 ...
 
 ```
-[pp_liveview] ightarrow mix ph.new pento
+[pp_liveview] 
+ightarrow mix ph.new pento
 * creating pento/config/config.ex
 ...
 Fetch and install dependencies? [Y] Y
@@ -2602,7 +2604,8 @@ generate_web/pento/lib/pento/web/product_live/index.heex
 
 ### 检查生成的代码
 
-在我们生成 LiveView 应用时，系统为我们创建了头头部组件。如果你查看 `deps/phoenix/priv/templates/phx.gen.live/core_components.ex` 文件，你将发现 Phoenix 在运行生成器 `phx.gen.live` 时使用的一个示例。你会发现这段代码：
+```
+elixir View 应用时，系统为我们创建了头头部组件。如果你查看 `deps/phoenix/priv/templates/phx.gen.live/core_components.ex` 文件，你将发现 Phoenix 在运行生成器 `phx.gen.live` 时使用的一个示例。你会发现这段代码：
 
 ```elixir owndefmodule <%= @namespace %>. CoreComponents do
   ..

@@ -4061,7 +4061,8 @@ if (result) {
 - * `\p{Nd}` 是 Decimal_Number（十进制）的缩写，匹配十进制
 - * `\p{Join_Control}` 匹配具有草体连接和连字功能的格式控制字符
 
-```Unicode 标准中，每个字符都分配分配一组属性和属性值。Unicode 属性转义允许我们根据特定属性匹配字符。例如，字母“A”具有一个值为 Yes 的 Alphabetic 属性，这意味着我们可以通过 `\p{Alpha}` 或 `\p{Alphabetic}` 来匹配它。
+```
+Unicode 标准中，每个字符都分配分配一组属性和属性值。Unicode 属性转义允许我们根据特定属性匹配字符。例如，字母“A”具有一个值为 Yes 的 Alphabetic 属性，这意味着我们可以通过 `\p{Alpha}` 或 `\p{Alphabetic}` 来匹配它。
 
 要查看特定字符的属性，请访问 Unicode 数据库并在搜索栏中输入该字符。[30] 有关支持的属性转义列表，请参考 Unicode 规范。[31]
 

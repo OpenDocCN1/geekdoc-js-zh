@@ -8895,7 +8895,8 @@ NetPad.connection.send(msg);
 }
 ```
 
-```code snippet netpad.js
+```
+code snippet netpad.js
 ```
 
 编辑区域的初始内容和相关的 JID 被传递进 `init()`。开始消息也会被修改，包含编辑器在会话开始之前的任何文本。
@@ -8911,7 +8912,8 @@ if (command === "start") {
 } else {
 ```
 
-```code snippet netpad.js
+```
+code snippet netpad.js
 ```
 
 `start_collaboration()` 函数还将将 `update_pad()` 函数传递给 `OpTrans.init()`，当由于编辑操作发生缓冲区修改时，该函数会被调用。在 `NetPad` 对象中添加以下 `update_pad()` 的实现：
@@ -8929,7 +8931,8 @@ update_pad: function (buffer, remote) {
 }
 ```
 
-```code snippet netpad.js
+```
+code snippet netpad.js
 ```
 
 `update_pad()` 中的代码负责保存和恢复光标位置，使其在更新后保持在原处。否则，光标将在每次编辑后跳转到缓冲区末尾。遗憾的是，IE 不支持 `selectionStart` 和 `selectionEnd` 属性；这段代码在那里无法工作。它在后版本的 IE 和其他浏览器中应该可以正常运行。

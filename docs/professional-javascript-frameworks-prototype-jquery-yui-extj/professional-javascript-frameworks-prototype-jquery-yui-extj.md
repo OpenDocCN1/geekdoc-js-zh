@@ -6136,7 +6136,8 @@ var dark = YAHOO.TextNode({
   href: "http://search.yahoo.com/search?p=Dark-Chocolate",
   oldmacdonald: "had a farm"
 }, false);
-```可以使用与 label 和 href 值相同的方法访问任意值。
+```
+可以使用与 label 和 href 值相同的方法访问任意值。
 
 ```javascript
 dark.data.oldmacdonald // 返回 "had a farm"
@@ -6957,7 +6958,8 @@ var menu = new YAHOO.widget.Menu("nav");
 var menu = new YAHOO.widget.MenuBar("nav",
   autosubmenidisplay: true
 );
-```注意添加的 `autosubmenidisplay` 属性使得当鼠标悬停在“Products”上时弹出菜单，而不是等待点击，因为“Products”有一个指向“products/**的链接，点击它会加载该页面。将 `autosubmenidisplay` 设置为 `true` 可以确保子菜单可访问。如果顶级 MenuBar 项目没有链接，使用 `#` 就足够了。YUI Menu 会检测到 `#` 并在点击时不会尝试加载它，它显然是一个占位符。
+```
+注意添加的 `autosubmenidisplay` 属性使得当鼠标悬停在“Products”上时弹出菜单，而不是等待点击，因为“Products”有一个指向“products/**的链接，点击它会加载该页面。将 `autosubmenidisplay` 设置为 `true` 可以确保子菜单可访问。如果顶级 MenuBar 项目没有链接，使用 `#` 就足够了。YUI Menu 会检测到 `#` 并在点击时不会尝试加载它，它显然是一个占位符。
 
 这就是菜单项是链接的原因，而且为了可访问性，它们实际上是链接。锚点可以通过 Tab 键切换，允许通过键盘导航整个菜单。
 

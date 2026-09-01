@@ -10951,7 +10951,8 @@ const jane = {
     return `${this.first} says “${text}”`;
   },
 };
-```在调用 `jane.says('hello')` 时，`jane` 是方法的*接收者*，`this` 是代表接收者的特殊变量。
+```
+在调用 `jane.says('hello')` 时，`jane` 是方法的*接收者*，`this` 是代表接收者的特殊变量。
 
 ### 30.2.6 对象字面量：访问器
 

@@ -21170,12 +21170,14 @@ cursor:url(jf_pencil.png) 12, 6, pointer;
 ## 应用光标样式
 
 - 要为元素定义光标，请应用 CSS 样式：
-  ```css cursor: cursorTypes;
+  ```
+css cursor: cursorTypes;
   ```
 其中 `cursorTypes` 是逗号分隔的光标类型列表。
 
 - 要根据图像创建自定义光标，请使用光标类型：
-  ```css url(image) x y
+  ```
+css url(image) x y
   ```
 其中 `image` 是图像文件，`x` 和 `y` 是可选值，用于指定光标点击点的 (x, y) 坐标。
 

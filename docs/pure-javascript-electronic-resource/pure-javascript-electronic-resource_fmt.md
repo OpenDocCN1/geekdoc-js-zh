@@ -17538,7 +17538,8 @@ NES3+, Nav5+, IE5+
 
 ## 语法
 
-```throw exception
+```
+throw exception
 ```
 
 ## 描述

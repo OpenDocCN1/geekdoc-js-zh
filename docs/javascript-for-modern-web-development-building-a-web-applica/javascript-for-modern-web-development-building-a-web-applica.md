@@ -3548,7 +3548,8 @@ class User {
 
 
 
-```class PowerUser extends User {
+```
+class PowerUser extends User {
   constructor(firstName, lastName, userId, role) {
     super(firstName, lastName, userId);
     this.role = role;

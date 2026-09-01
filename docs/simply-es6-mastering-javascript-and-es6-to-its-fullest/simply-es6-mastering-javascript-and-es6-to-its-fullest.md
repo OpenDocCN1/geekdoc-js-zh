@@ -1127,7 +1127,8 @@ HTML 源码：
 27 });
 28  return strs;
 29 }
-```图 - 26*
+```
+图 - 26*
 
 ## 通过标记清理字符串
 
@@ -1180,7 +1181,8 @@ XSS 与 SQL 注入非常相似，区别在于 XSS 攻击针对执行脚本的用
 19 document.getElementById("tweetWall").innerHTML += `<div class="tweet">${document.getElementById("tweetBox").value}</div>`;
 20 document.getElementById("tweetBox").value = "";
 21 }
-```图 - 32*
+```
+图 - 32*
 
 是时候通过一个可以清理上述字符串的函数来标记字符串并修复我们的代码了。修复后：
 
@@ -1211,7 +1213,8 @@ XSS 与 SQL 注入非常相似，区别在于 XSS 攻击针对执行脚本的用
 25 document.getElementById("tweetWall").innerHTML += `<div class="tweet">${document.getElementById("tweetBox").value}</div>`;
 26 document.getElementById("tweetBox").value = "";
 27 }
-```图 - 33*
+```
+图 - 33*
 
 为了从 XSS 中清理代码，我们使用了一个名为“purify.js”的 JavaScript 库。这里不介绍它的用法，因为它有自己的文档需要学习。我们将学习它与代码的集成。首先我们将库链接到 HTML 中，为了简单起见，我们将它放在了一处。
 
@@ -1222,7 +1225,8 @@ XSS 与 SQL 注入非常相似，区别在于 XSS 攻击针对执行脚本的用
 6  <hr>
 7  <input id="tweetBox" />
 8  <button onclick="submitTweet()">Submit</button>
-```图 - 34*
+```
+图 - 34*
 
 然后我们写了 sanitize 函数：
 
@@ -1232,13 +1236,15 @@ XSS 与 SQL 注入非常相似，区别在于 XSS 攻击针对执行脚本的用
 22 let clean = DOMPurify.sanitize(strs, {ALLOWED_TAGS: ['div']});
 23 return clean;
 24 }
-```图 - 35*
+```
+图 - 35*
 
 然后用 sanitize 函数标记字符串：
 
 ```javascript
 27 document.getElementById("tweetWall").innerHTML += `<div class="tweet">${document.getElementById("tweetBox").value}</div>`;
-```图 - 36*
+```
+图 - 36*
 
 这里要讨论的主要点是 sanitize 函数。首先，除非你清楚自己在做什么，否则永远不要使用自定义的清理算法！即使是最强大的防御在 XSS 面前也会显得有些无力。
 

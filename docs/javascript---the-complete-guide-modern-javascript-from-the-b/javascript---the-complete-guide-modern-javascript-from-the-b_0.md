@@ -1123,7 +1123,8 @@ function dump_props(obj, obj_name) {
   result += '<hr>';
   return result;
 }
-```对于具有 `make` 和 `model` 属性的对象 `car`，结果将是：
+```
+对于具有 `make` 和 `model` 属性的对象 `car`，结果将是：
 `car.make = Ford`
 `car.model = Mustang`
 

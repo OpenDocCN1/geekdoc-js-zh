@@ -715,7 +715,8 @@ ByVal e As System.Windows.RoutedEventArgs)
 
   Button2.Foreground = brushId
 End Sub
-```列表 11. 在 Silverlight 中设置按钮的 Foreground 属性。从技术上讲，这些是共享颜色。这意味着我们的名称没有空格。
+```
+列表 11. 在 Silverlight 中设置按钮的 Foreground 属性。从技术上讲，这些是共享颜色。这意味着我们的名称没有空格。
 
 # 电子学习开发者的编程
 
@@ -745,7 +746,8 @@ of field "Display Field" = "You clicked button " & \nname of target & " with cap
 end if
 forward
 end buttonClick
-```列表 12. ToolBook OpenScript 中显示 Target 和消息层级的页面脚本。
+```
+列表 12. ToolBook OpenScript 中显示 Target 和消息层级的页面脚本。
 
 > ¹这也需要“动态对象引用”，因为我们根据命名方案工作：矩形 1 对应字段 1、toolbarGraphic1 等。我们从原始对象名称中提取“1”，然后作为字符串构建下一个名称（“field1”），并发现这就是所谓的动态对象引用。我们将在书后面的部分介绍。
 
@@ -5618,7 +5620,8 @@ End Sub
 
 列表 82 显示了我们新定义的 `GetGlossaryDefinition` Web 方法实现代码（Visual Basic）。
 
-```visual basic
+```
+visual basic
 Imports System.Data
 Imports System.Data.OleDb
 
@@ -5666,7 +5669,8 @@ End Property
 
 列表 82 显示了我们新定义的 `GetGlossaryDefinition` Web 方法实现代码（Visual Basic）。
 
-```visual basic
+```
+visual basic
 Imports System.Data
 Imports System.Data.OleDb
 

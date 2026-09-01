@@ -8517,7 +8517,8 @@ $(document).ready(function() {
     }
   }); // 结束 validate
 }); // 结束 ready
-```图 10-11 应用程序的 CSS 和 jQuery
+```
+图 10-11 应用程序的 CSS 和 jQuery
 
 ## 观点
 

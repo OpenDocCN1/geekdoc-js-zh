@@ -7461,7 +7461,8 @@ Visual Basic 和 VBA
 
 一个通用的函数 `Format()` 根据预定义或用户定义的格式将值转换为字符串。例如，假设我们分配了如下值：
 
-```Dim Today as Date, Now As Date
+```
+Dim Today as Date, Now As Date
 Today = #November 17, 1998#
 Now = #13:09:32#
 ```
@@ -7482,26 +7483,30 @@ Now = #13:09:32#
 
 与 BASIC 的早期版本一样，可以使用 `Dim` 语句声明固定大小数组：
 
-```Dim A(10) As String
+```
+Dim A(10) As String
 Dim D(5) As Double
 ```
 
 下标的下界为零，除非程序员使用 `Option Base 1` 将其设置为 1。这样做为后续的错误和误解提供了温床：在声明中显式指定下界要好得多：
 
-```Dim A(1 To 10) As Variant
+```
+Dim A(1 To 10) As Variant
 ```
 
 `Bound()` 和 `UBound()` 函数接受数组名称作为参数，并带可选的第二个参数用于指定查询的维度（1 表示第一个，2 表示第二个，以此此类推），并返回该维度的下（上）界。因此，根据上述对 A 和 B 的声明，`Bound(A)` 返回 0，`UBound(B,2)` 返回 15。
 
 通过声明变体数组，可以创建一个变体数组，例如：
 
-```Dim Colours As Variant
+```
+Dim Colours As Variant
 Colours = Array("Red", "Green", "Blue")
 ```
 
 注意，遵循上述代码，变量 `Colours` 是 `Variant` 类型的变量，其值为 `Array` 子类型：数组的元素本身是 `String` 子类型的 `Variant`。可以使用 `IsArray()` 函数对 `Array` 子类型进行测试。动态数组可以这样声明，例如：
 
-```Dim B() As String
+```
+Dim B() As String
 ```
 
 在这种情况下，必须在使用之前设置数组的实际大小，例如 `ReDim B(20)`（注意 `ReDim` 是可执行语句，而不是声明）。在程序的后续部分可以使用另一个 `ReDim` 更改数组的大小。除非使用 `Preserve` 关键字，否则这将破坏数组当前的内容，例如 `ReDim Preserve B(30)`。
@@ -7516,7 +7521,8 @@ Colours = Array("Red", "Green", "Blue")
 
 Visual Basic 以“用户定义类型”的形式提供了等同于 C 结构体（或 Pascal 记录）的内容。该术语体现在声明语法中，例如：
 
-```Type SystemInfo
+```
+Type SystemInfo
 CPU As Variant
 Memory As Long
 Video As Integer
@@ -7525,7 +7531,8 @@ End Type
 
 一旦声明，就可以在变量声明中创建该结构的实例：
 
-```Dim MySystem As SystemInfo, YourSystem As SystemInfo
+```
+Dim MySystem As SystemInfo, YourSystem As SystemInfo
 ```
 
 通过通常的点表示法访问字段，例如 `MySystem.cpu = "P233"`。可以分配相同类型的结构，例如 `YourSystem = MySystem`。然而，UDT 无法存储在变体中。
@@ -7536,7 +7543,8 @@ End Type
 
 （考虑到几乎普遍使用分号作为语句终止符/分隔符，选择冒号作为分隔符似乎是很奇怪的。这是对 BASIC 早期期的另一个继承。）“行尾”注释通过单引号（撇号）引入，例如：
 
-```Const WM_USER = 1024 
+```
+Const WM_USER = 1024 
 ‘用于 Win32 API 用的常量’
 ```
 

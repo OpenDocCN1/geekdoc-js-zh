@@ -10762,7 +10762,8 @@ print "We are floating.\n";
 use Cookbook::Dinghy;
 
 my $lifeboat = Cookbook::Dinghy->new(count => 2);
-```变量 `lifeboat` 与对象关联。用于创建对象的构造函数习惯称为 `new()`，具有以下基本形式：
+```
+变量 `lifeboat` 与对象关联。用于创建对象的构造函数习惯称为 `new()`，具有以下基本形式：
 
 ```perl
 sub new {

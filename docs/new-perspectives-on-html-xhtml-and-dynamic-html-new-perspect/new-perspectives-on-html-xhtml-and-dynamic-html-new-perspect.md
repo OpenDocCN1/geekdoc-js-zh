@@ -3509,7 +3509,8 @@ Map 元素可以放置在 Web 页面体的任何地方，因为它们实际上�
 ```html
 <map name="map" id="map">
 </map>
-```其中 *map* 是图像地图的名称和 id，hotspots 是 `map` 内部定义的热点区域列表。
+```
+其中 *map* 是图像地图的名称和 id，hotspots 是 `map` 内部定义的热点区域列表。
 - 要向图像地图添加热点，请在 `map` 内部放置元素：
 ```html
 <area shape="shape" coordinates href="reference" alt="text" />
@@ -30362,7 +30363,8 @@ for (var i = 0; i < pieces.length; i++) {
 
 | 为拼图碎片添加背景图像的代码 | 图 15-2 |
 | :--- | :--- |
-| ```function init() {
+| ```
+function init() {
   var allElem = document.getElementsByTagName("*");
   for (var i = 0; i < allElem.length; i++) {
     if (allElem[i].className == "grid") grids.push(allElem[i]);
@@ -30413,7 +30415,8 @@ randomIntegers[i]
 
 | 创建随机背景图像并创建从 0 到 pieces.length 的随机整数数组的代码 | 图 15-4 随机整数 |
 | :--- | :--- |
-| ```for (var i = 0; i < pieces.length; i++) {
+| ```
+for (var i = 0; i < pieces.length; i++) {
   if (pieces[i].className == "grid") random.push(pieces[i]);
 }
 var randomIntegers = randomArray(pieces.length);

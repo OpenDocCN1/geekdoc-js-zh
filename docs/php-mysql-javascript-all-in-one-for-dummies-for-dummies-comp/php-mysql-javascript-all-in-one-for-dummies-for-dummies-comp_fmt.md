@@ -12700,7 +12700,8 @@ MariaDB [phpadmin]>
 
 ```
 
-```DB [(：)]
+```
+DB [(：)]
  DATABASE
 
 

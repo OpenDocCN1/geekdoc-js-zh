@@ -5521,7 +5521,8 @@ function div_complex(z1, z2) {
 
 为了做出不同的选择，想象有两位程序员，Ben Bitdiddle 和 Alyssa Hacker，他们正在独立设计复数系统的表示法。Ben 选择用直角形式表示复数。有了这种选择，选择复数的实部和虚部是直接的，就像用实部和虚部构造复数一样。寻找模长和角度，或者根据给定的模长和角度构造复数，他使用了三角关系：
 
-```x = r cos A
+```
+x = r cos A
 y = r sin A
 r = √(² + y²)
 A = arctan(y,x)

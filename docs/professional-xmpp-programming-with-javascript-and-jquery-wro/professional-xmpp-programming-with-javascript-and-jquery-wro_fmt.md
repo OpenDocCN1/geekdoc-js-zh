@@ -8975,7 +8975,8 @@ code snippet netpad.js
 
 ![](img/be2eadb9e52683cd76cffe8513257ed2_304_0.png)
 
-```code snippet netpad.js
+```
+code snippet netpad.js
 ```
 
 该处理器发送一个带有适当 `<identity>` 和 `<feature>` 元素的 IQ-result。`NetPad` 将自己识别为一个支持 `NetPad` 协议的聊天。注意，响应的 `id` 属性必须与原始请求的 `id` 属性匹配。
@@ -8986,7 +8987,8 @@ code snippet netpad.js
 
 首先，修改分离事件处理器以重置应用程序：
 
-```code snippet netpad.js
+```
+code snippet netpad.js
 ```
 
 ```javascript

@@ -3889,7 +3889,8 @@ function  checkPasswordStrength(password) {
     const  strengthText  = ['Weak', 'Fair', 'Good', 'Strong'][strength  -  1];
     passwordError.textContent  =  strengthText  ||  '';
     passwordError.style.color  =  strengthMeter.style.backgroundColor;
-}); // Add this CSS to your stylesheet ```css  .strength-meter {      height: 5px;      margin-top: 5px;      transition: all 0.3s;  }
+}); // Add this CSS to your stylesheet ```
+css  .strength-meter {      height: 5px;      margin-top: 5px;      transition: all 0.3s;  }
 
 This implementation adds a visual strength meter below the password input. The meter changes color and length based on the password strength.
 
@@ -3910,7 +3911,8 @@ function  createPasswordToggle(inputElement) {
     });
 
     inputElement.parentElement.appendChild(toggleButton);
-} createPasswordToggle(password); createPasswordToggle(confirmPassword); // Add this CSS to your stylesheet ```css  .password-toggle {      position: absolute;      right: 10px;      top: 50%;      transform: translateY(-50%);      background: none;      border: none;      cursor: pointer;      color: #333;  }  .form-group {      position: relative;  }
+} createPasswordToggle(password); createPasswordToggle(confirmPassword); // Add this CSS to your stylesheet ```
+css  .password-toggle {      position: absolute;      right: 10px;      top: 50%;      transform: translateY(-50%);      background: none;      border: none;      cursor: pointer;      color: #333;  }  .form-group {      position: relative;  }
 
 4.  Form Data Persistence: Save form data to localStorage to persist across page reloads.
 
@@ -4075,7 +4077,8 @@ function  showLoader() {
         });
 
         // Update the URL         history.pushState(null, '', `#${pageName}`);
-    }, 500); // Simulate a 500ms load time } // Add this CSS to your stylesheet ```css  .loader {      text-align: center;      font-size: 1.2em;      padding: 20px;  }
+    }, 500); // Simulate a 500ms load time } // Add this CSS to your stylesheet ```
+css  .loader {      text-align: center;      font-size: 1.2em;      padding: 20px;  }
 
 2.  Page Transitions: Add smooth transitions between pages.
 
@@ -4105,7 +4108,8 @@ function  renderPage(pageName) {
         });
 
         // Update the URL         history.pushState(null, '', `#${pageName}`);
-    }, 500); // Simulate a 500ms load time } // Add this CSS to your stylesheet ```css  .page {      opacity: 0;      transition: opacity 0.3s ease-in-out;  }  .page.active {      opacity: 1;  }
+    }, 500); // Simulate a 500ms load time } // Add this CSS to your stylesheet ```
+css  .page {      opacity: 0;      transition: opacity 0.3s ease-in-out;  }  .page.active {      opacity: 1;  }
 
 3.  Dynamic Content Loading: Instead of hardcoding page content, load it dynamically from separate files or an API.
 

@@ -5701,7 +5701,8 @@ function catchErrors(fn) {
 const result = await catchErrors(async () => {
   return asyncDBconnect('http://localhost:1234');
 });
-```更多 Promise 资源：
+```
+更多 Promise 资源：
 
 *   [MDN Promise 文档](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 *   [JavaScript Promises：入门](https://developers.google.com/web/fundamentals/primers/promises)

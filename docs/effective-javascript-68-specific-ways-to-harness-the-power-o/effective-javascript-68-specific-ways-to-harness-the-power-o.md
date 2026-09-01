@@ -6487,7 +6487,8 @@ console.log("starting");
 
 例如，一个应用程序可能会维护一个待下载文件的索引队列，并向用户显示消息：
 
- ```var cache = new Dict();
+ ```
+var cache = new Dict();
 
 function downloadCachingAsync(url, onsuccess, onerror) {
     if (cache.has(url)) {

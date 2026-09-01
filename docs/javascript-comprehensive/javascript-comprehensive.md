@@ -11807,7 +11807,8 @@ var message =
 alert(message);
 ```
 
-```图 9-1 显示了由上述代码生成的 Navigator 错误，图 9-2 显示了 Internet Explorer 错误消息。```
+```
+图 9-1 显示了由上述代码生成的 Navigator 错误，图 9-2 显示了 Internet Explorer 错误消息。```
 
 如果你使用的是高于 4 版本的 Internet Explorer，则需要通过工具菜单选择 Internet 选项并点击高级选项卡来关闭错误通知。在高级选项卡上的浏览类别中，确保**显示有关每个错误的通知**复选框已勾选，然后点击确定按钮关闭对话框。如果你使用的是高于 4 版本的 Navigator，为了查看错误信息，你可能需要在位置框中输入 `javascript:` 并按回车。
 

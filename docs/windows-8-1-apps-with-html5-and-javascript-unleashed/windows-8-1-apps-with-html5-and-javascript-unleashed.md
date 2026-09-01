@@ -7330,7 +7330,8 @@ function function () {
     }"></</div>
 ```
 
-```详情页的逻辑包含在列表 8.10 中。类别和产品用名为 `products` 的数组表示。该数组绑定到类别 ListView。当您选择一个类别时，就会触发 `selectionchanged` 事件。在列表 8.10 中，使用 `selectionchanged` 处理器从所选类别获取匹配的产品列表并在第二个 ListView 中显示。
+```
+详情页的逻辑包含在列表 8.10 中。类别和产品用名为 `products` 的数组表示。该数组绑定到类别 ListView。当您选择一个类别时，就会触发 `selectionchanged` 事件。在列表 8.10 中，使用 `selectionchanged` 处理器从所选类别获取匹配的产品列表并在第二个 ListView 中显示。
 
 ## 列表 8.10 创建详情页 (masterDetail.html)
 

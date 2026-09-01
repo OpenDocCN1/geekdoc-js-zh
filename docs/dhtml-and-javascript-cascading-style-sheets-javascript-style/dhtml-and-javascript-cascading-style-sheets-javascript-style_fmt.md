@@ -29541,7 +29541,8 @@ function scrollLayers(e)  {
 
 
 
-```switch (whichKey)  {
+```
+switch (whichKey)  {
 case '0' : L1.moveTo(250,250);    break;  //press the CONTROL + 0 keys
 case '1' : L1.moveBy(-20,20);     break;  //press the CONTROL + 1 keys
 case '2' : L1.moveBy(0,20);       break;  //press the CONTROL + 2 keys

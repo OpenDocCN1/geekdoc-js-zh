@@ -8318,7 +8318,8 @@ Let’s dive into data modeling and schema design with TypeORM, covering all typ
 
     Create a connection to the database using the TypeORM configuration and entity classes. Here’s an example:
 
-    ```` ```import { createConnection } from ‘typeorm’; ````
+    ```` ```
+import { createConnection } from ‘typeorm’; ````
 
     `import { User } from ‘./entities/User’;`
 
@@ -8370,7 +8371,8 @@ Let’s dive into data modeling and schema design with TypeORM, covering all typ
 
     *   Retrieving all users from the database:
 
-        ```` ```const users = await connection.manager.find(User); ````
+        ```` ```
+const users = await connection.manager.find(User); ````
 
         `console.log(‘All users:’, users);`
 
@@ -8392,7 +8394,8 @@ Let’s dive into data modeling and schema design with TypeORM, covering all typ
 
     *   Deleting a user:
 
-        ```` ```const user = await connection.manager.findOne(User, { id: 1 }); ````
+        ```` ```
+const user = await connection.manager.findOne(User, { id: 1 }); ````
 
         `await connection.manager.remove(user);`
 
@@ -8795,7 +8798,8 @@ Here's a detailed explanation with code examples of the functions used to achiev
 
     The `**`getStaticProps`**` function enables server-side rendering with static generation. It fetches data at build time and generates static HTML pages. The generated HTML is then reused on each request, providing better performance. Here’s an example:
 
-    ```` ```import React from ‘react’; ````
+    ```` ```
+import React from ‘react’; ````
 
     `function HomePage({ data }) {`
 
@@ -9045,7 +9049,8 @@ Step 1: Implement SSR:
 
 Use the `**`getServerSideProps`**` function in your Next.js pages to fetch data on the server-side and pass it as props to your components. This allows you to render the page with initial data before sending it to the client.
 
-```` ```export async function getServerSideProps() { ````
+```` ```
+export async function getServerSideProps() { ````
 
 `// Fetch data from an API or perform any server-side operations`
 
@@ -12098,7 +12103,8 @@ Setting up continuous integration and continuous deployment (CI/CD) pipelines fo
 
     In the workflow file, define a job for running tests. This typically includes steps like checking out the repository, setting up the Node.js environment, installing dependencies, and executing tests. Here’s an example:
 
-    ```` ```yaml ````
+    ```` ```
+yaml ````
 
     `name: Test`
 
@@ -12144,7 +12150,8 @@ Setting up continuous integration and continuous deployment (CI/CD) pipelines fo
 
     Next, define a job for building your Next.js application. This job depends on the successful completion of the test job. Here’s an example:
 
-    ```` ```yaml ````
+    ```` ```
+yaml ````
 
     `name: Build`
 

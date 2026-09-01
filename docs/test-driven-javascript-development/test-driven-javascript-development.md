@@ -5482,7 +5482,8 @@ TestCase("HostObjectTest",
 ```javascript
 assertEquals("unknown", typeof xhr.open);
 
-```var element = document.createElement("div");
+```
+var element = document.createElement("div");
 assertEquals("unknown", typeof element.offsetParent);
 ```
 
@@ -9362,7 +9363,8 @@ if (!poller) {
   }
 
 
-```最后一部分是调用 `dispatch` 的成功处理器。结果数据将是 JSON 字符串，需要作为对象传递给 `dispatch`。为了测试这一点，我们将再次使用 `fakeXMLHttpRequest` 对象模拟返回某些 JSON 数据的请求。列表 13.61 更新了 `fakeXMLHttpRequest` 方法以接受可选的响应文本参数。
+```
+最后一部分是调用 `dispatch` 的成功处理器。结果数据将是 JSON 字符串，需要作为对象传递给 `dispatch`。为了测试这一点，我们将再次使用 `fakeXMLHttpRequest` 对象模拟返回某些 JSON 数据的请求。列表 13.61 更新了 `fakeXMLHttpRequest` 方法以接受可选的响应文本参数。
 
 ### 列表 13.61 在 complete 中接受响应数据
 

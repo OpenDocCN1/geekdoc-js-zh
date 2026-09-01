@@ -11867,7 +11867,8 @@ npm install grunt -g
     "grunt-contrib-uglify": "0.5.0"
   }
 }
-```一个 Grunt 文件来创建自定义任务。它包含了任务所需的所有配置，始终保存为 Gruntfile.js。以下示例显示了一个创建默认任务的 Grunt 文件；它将压缩 src 文件夹。
+```
+一个 Grunt 文件来创建自定义任务。它包含了任务所需的所有配置，始终保存为 Gruntfile.js。以下示例显示了一个创建默认任务的 Grunt 文件；它将压缩 src 文件夹。
 
 它使用 uglify 插件来压缩代码。所有的 Grunt 文件都放在使用 CommonJS 模块语法的封装函数内部：
 

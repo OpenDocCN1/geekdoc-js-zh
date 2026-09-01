@@ -4362,7 +4362,8 @@ while generating documentation for mysql-2.7.3-mswin32
 ... RDOC args: --op c /ruby/lib/ruby/gems/1.8/doc/mysql-2.7.3-mswin32/rdoc --exclude ext --main README --quiet exit docs/README.html
 (Continuing with the rest of the installation)
 
-```确保选择适用于 Windows 的正确版本。就是这些。你已经安装了前提条件。现在是将注意力转向用于 Rails 程序的服务器了。我将先向你介绍 Mongrel，然后介绍一些你可以用来增强安装的技巧。
+```
+确保选择适用于 Windows 的正确版本。就是这些。你已经安装了前提条件。现在是将注意力转向用于 Rails 程序的服务器了。我将先向你介绍 Mongrel，然后介绍一些你可以用来增强安装的技巧。
 
 # 8.2 Mongrel
 

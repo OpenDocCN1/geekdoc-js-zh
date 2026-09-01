@@ -8045,7 +8045,8 @@ Scala 有一个名为 `Option` 的标准类型用于表示可选值。这种值�
 
 这种机制对于 Akka 库来说非常有用，因为它允许其 `receive` 方法被定义为一系列分支：
 
-```scala var sum = 0
+```
+scala var sum = 0
 
 def receive = {
   case Data(byte) =>
@@ -9051,7 +9052,8 @@ def flattenLeftT =
 
 在本章前面的部分，你看到了方法 `reverse` 的实现，名为 `rev`，其运行时间与待反转列表的长度成平方关系。这里是另一种具有线性成本的 `reverse` 实现。其思想是基于以下方案使用左折叠 fold 操作：
 
-```scala def reverseLeftT = (startvalue /: xs)(operation)
+```
+scala def reverseLeftT = (startvalue /: xs)(operation)
 ```
 
 剩下的工作是填充 `startvalue` 和 `operation` 部分。事实上，你可以尝试从一些简单的示例中推导出这些部分。要推导出 `startvalue` 的正确值，可以从最小的列表 `List()` 开始并进行如下计算：
@@ -9086,7 +9088,8 @@ def flattenLeftT =
 
 因此，`operation(List(), x)` 等于 `List(x)`，它也可以写为 `x :: List()`。这建议将操作数交换位置的 `::` 运算符作为 `operation`。（这种操作有时被称为 "snoc"，相对于 `::` 称为 cons）。随后我们得到了 `reverseLeft` 的以下实现：
 
-```scala def reverseLeftT =
+```
+scala def reverseLeftT =
   (List[T]() /: xs) {(ys, y) => y :: ys}
 ```
 

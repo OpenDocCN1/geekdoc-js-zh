@@ -930,7 +930,8 @@ function identity<T>(arg: T): T {
 
 ```
 
-```let output = identity<string>("mystring"); // output 类型为 string
+```
+let output = identity<string>("mystring"); // output 类型为 string
 
 let output2 = identity<number>(100); // output2 类型为 number
 
@@ -954,7 +955,8 @@ interface GenericIdentityFn<T> {
 
 ```
 
-```let myIdentity;
+```
+let myIdentity;
 
 ```
 

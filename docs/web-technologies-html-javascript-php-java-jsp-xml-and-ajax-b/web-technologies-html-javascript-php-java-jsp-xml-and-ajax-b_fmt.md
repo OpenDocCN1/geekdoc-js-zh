@@ -6694,7 +6694,8 @@ Java 的 DOM 实现定义在以下包中，如表7.4 所示：
 
 列表7.2：`ParsingUsingDOM.java`
 
-```javaimport java.io.*;
+```
+javaimport java.io.*;
 
 import org.w3c.dom.*;
 
@@ -6731,7 +6732,8 @@ public class ParsingUsingDOM{
  Document doc = builder.parse(xmlFile);
 ```
 
-##处理 XML```javaTransformerFactory tranfact = TransformerFactory.newInstance();
+##处理 XML```
+javaTransformerFactory tranfact = TransformerFactory.newInstance();
 
 Transformer trans = tranfact.newTransformer();
 
@@ -8089,7 +8091,8 @@ Bean 类似于 Java Bean 的方法。这种方法可以从其他 Bean 或脚本�
 
 ## 创建一个 Java Bean本节将帮助你创建一个简单的 Java Bean，以演示 bean 的工作原理，该 bean 将用于本章的其余部分。这个 bean 将用红色绘制自己，并且当你点击它时，它会显示被点击的次数。
 
-我们将此 bean 放在 BDK 的 demo目录中，因此在 `bean/demo` 文件夹中创建一个名为 `bean` 的目录，并将此 bean 的类文件存储在该目录中。列表8.1 提供了列表8.1：`bean.java` 文件```javapackage sum.demo.bean;
+我们将此 bean 放在 BDK 的 demo目录中，因此在 `bean/demo` 文件夹中创建一个名为 `bean` 的目录，并将此 bean 的类文件存储在该目录中。列表8.1 提供了列表8.1：`bean.java` 文件```
+javapackage sum.demo.bean;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -10983,7 +10986,8 @@ JSP 错误可能在翻译时或请求时发生。当 JSP 页面第一次被访�
 
 当 `errorPage` 属性指定错误页面时，异常将随错误页面一起重定向。`errorPage` 属性包含了异常。使用 `PageContext.getErrorData()`，可以获取 `javax.servlet.ErrorData` 类的实例。错误页面的状态属性如下：
 
-```jsp <% page isErrorPage="True" %>
+```
+jsp <% page isErrorPage="True" %>
 
 <h3>在您的应用程序中发生了以下错误：</h3>
 
@@ -11215,7 +11219,8 @@ int port =1521;
 
 要创建 `Statement`，请在当前的连接对象 `connection` 上调用 `createStatement()` 方法。下面的代码段显示了如何使用 `createStatement()` 方法创建 `Statement`象：
 
-```javaStatement stmt = connection.createStatement();
+```
+javaStatement stmt = connection.createStatement();
 ```
 
 
@@ -11474,7 +11479,8 @@ rs.execute();
 
 - 创建 `CachedRowSet`象- 设置 `CachedRowSet`象的属性- 填充 `CachedRowSet`象- 从 `CachedRowData`象读取数据- 获取 `RowMetaData`象- 更新 `CachedRowSet`象-详细讨论这些中的每一项## 创建 CachedRowSet`CachedRowSet`象的默认实现被设置为 `RowSet`象的默认属性。构造函数用于创建新实例。以下代码段演示了 `CachedRowSet`象新实例的创建：
 
-```javaCachedRowSetImpl cri = new CachedRowSetImpl();
+```
+javaCachedRowSetImpl cri = new CachedRowSetImpl();
 ```
 
 在前面的代码段中，`CachedRowSet`象的属性被设置为 `RowSet`象的默认属性。此外，`CachedRowSet`象有一个类型 `SyncProvider` 类型的同步提供者 `RIOptimisticProvider`。同步提供者的类和接口由 `javax.sql.rowset.spi` 包提供。`RowReader` 被 `RIOptimisticProvider` 用于用于将数据读入 `CachedRowSet`，因为此 `RowSet` 与数据之间没有建立任何连接。`RowSet`象使用设置的值、用户名和密码或数据源的 URL 获取连接。`RIOptimisticProvider`还提供了 `RowSetWriter`，用于同步 `CachedRowSet` 在与更新数据源断开连接期间所做的的任何更改。如果你没有使用 `RowWriter`象，则 `SyncProvider` 从 `SyncFactory` 类中检索。以下代码段用于显示 `CachedRowSet`象中同步提供者的列表：
@@ -11484,7 +11490,8 @@ rs.execute();
 
 前面代码段中提到的方法返回提供者列表，指定 `CachedRowSet` 可以使用的特定 `SyncProvider`象。以下代码段显示了如何通过提供特定的 `SyncProvider`象创建 `CachedRowSet` 实例：
 
-```javaCachedRowSetImpl cri.setSyncProvider("com.fred.providers.HighAvailabilityProvider");
+```
+javaCachedRowSetImpl cri.setSyncProvider("com.fred.providers.HighAvailabilityProvider");
 ```
 
 同步参数的值可以使用 `CachedRowSet` 的 `setSyncProvider()` 方法设置：
@@ -11531,7 +11538,8 @@ crs.setCommand("select * from query")
 
 ### 获取 RowMetaData象用户可以使用 `RowMetaData`象获取 `CachedRowSet`象中列的信息。`ResultSet` 接口的 `getMetaData()` 方法返回一个 `ResultSetMetaData`象，进一步强制转换为 `RowMetaData`象。最后，将对象赋值给 `rsmd`变量。以下代码段说明了在 `CachedRowSet` 中获取信息：
 
-```javaRowMetaData rsmd=(RowMetaData)crs.getMetaData();
+```
+javaRowMetaData rsmd=(RowMetaData)crs.getMetaData();
 
 int count=rsmd.getColumnCount();
 
@@ -14539,7 +14547,8 @@ actor:mustUnderstand="1"
 
 **Listing13.35: The SOAP Request**
 
-```httpPOST /HTTP/1.1host:192.183.345.239Content-type: application/soap+xml; charset=utf-8Content-Length:200<?xml version="1.0"?>
+```
+httpPOST /HTTP/1.1host:192.183.345.239Content-type: application/soap+xml; charset=utf-8Content-Length:200<?xml version="1.0"?>
 <soap:Envelope xmlns:soap="http://www.w3.org/2001/12/soap-envelope"
  soap:encodingStyle="http://www.w3.org/2001/12/soap-encoding">
  <soap:Body xmlns="http://www.abc.org/item">
@@ -15100,12 +15109,14 @@ Ans. SQL语句可以分类如下：
 
 Ans. 删除列：
 
-```sqlALTER TABLE Table_Name DROP Column_Name;
+```
+sqlALTER TABLE Table_Name DROP Column_Name;
 ```
 
 添加列：
 
-```sqlALTER TABLE Table_Name ADD Column_Name;
+```
+sqlALTER TABLE Table_Name ADD Column_Name;
 ```
 
 修改列：

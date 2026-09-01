@@ -15539,7 +15539,8 @@ module UsersHelper
     image_tag(gravatar_url, alt: user.name)
   end
 end
-```让我们为样式添加一点 CSS（或者说是 SCSS）(Listing 10.39)。
+```
+让我们为样式添加一点 CSS（或者说是 SCSS）(Listing 10.39)。
 
 **Listing 10.39:** 用户索引的 CSS。
 

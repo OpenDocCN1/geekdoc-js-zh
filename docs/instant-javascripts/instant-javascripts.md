@@ -11208,7 +11208,8 @@ var size = impo//width="50" height="30'";
 ```
 
 The global border variable holds the border attribute to be used for each table:
-```对外非法内容出口 
+```
+对外非法内容出口 
 
 var border = 'border="1"';
 ```

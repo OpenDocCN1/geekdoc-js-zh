@@ -13446,7 +13446,8 @@ CreateSite.vbs 中的 Reference 信息部分很大。可以通过合并语句和
 - Q. MicrosoftIISv2 命名空间位于何处？
 - A. MicrosoftIISv2 命名空间位于 root 下。
 
-```strComputer = "."
+```
+strComputer = "."
 wmiNS = "root/MicrosoftIISv2"
 siteName = "LondonWebsite"
 Set locatorObj = CreateObject("WbemScripting.SWbemLocator")

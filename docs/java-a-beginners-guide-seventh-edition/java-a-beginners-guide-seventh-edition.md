@@ -18935,7 +18935,8 @@ interface SomeTest<T> {
 }
 ```
 
-```classclass MyClass {
+```
+classclass MyClass {
     static <T> boolean myGenMeth(T x, T y) {
         boolean result = false;
         // ...

@@ -10511,7 +10511,8 @@ function TheBard(instrument, mana, name, hp){
 
 另一个是创建可以 `throw`（投掷）的致命短刀的工厂函数：
 
-```11 const Knife = () =>
+```
+11 const Knife = () =>
 2   ({
 3     description: 'rusty knife',
 4     toString(){ return this.description},

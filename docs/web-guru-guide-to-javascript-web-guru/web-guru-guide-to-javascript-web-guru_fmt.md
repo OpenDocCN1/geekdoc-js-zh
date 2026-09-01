@@ -10543,7 +10543,8 @@ if (navigator.appName == "Internet Explorer") {
 
 
 
-```html <script type="text/javascript">
+```
+html <script type="text/javascript">
 if (navigator.appName == "Internet Explorer") {
     document.write("<h1>欢迎来到 Internet Explorer 页面！</h1>");
     document.write("<p>我们为 Internet Explorer 定制了网站。这将提升您的体验。</p>");
@@ -11712,7 +11713,8 @@ if (currItem == "TshirtLtBlue005") {
 
 
 
-```html page += "<p> 灰色 T恤 - 蓝色</p>";
+```
+html page += "<p> 灰色 T恤 - 蓝色</p>";
 
 page += "<img border='0' src='greyt.jpg' width='150'>";
 

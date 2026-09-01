@@ -715,7 +715,8 @@ var hour = date.getHours();
 var minutes = date.getMinutes();
 ```
 
-```script type="text/javascript">
+```
+script type="text/javascript">
 var now = new Date();
 var yyyy = now.getFullYear();
 var mm = now.getMonth() + 1;

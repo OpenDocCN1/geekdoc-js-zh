@@ -669,7 +669,8 @@ p,div {
 
 
 
-```html <!DOCTYPE html>
+```
+html <!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -815,7 +816,8 @@ a:active {
 
 后代选择器匹配包含在另一个元素内部的所有元素。用于指示后代选择的字符空格字符。
 
-####语法```cssdiv p { ... } --选择 <div> 元素内部某处的 <p> 元素#main div p:first-child { ... } ---选择 id="main" 元素内部 <div> 元素内部某处的第一个 <p> 元素```
+####语法```
+cssdiv p { ... } --选择 <div> 元素内部某处的 <p> 元素#main div p:first-child { ... } ---选择 id="main" 元素内部 <div> 元素内部某处的第一个 <p> 元素```
 
 ```html示例:
 <!DOCTYPE html>
@@ -3035,7 +3037,8 @@ display_errors = Off
 
 `log_error` 设置指定是否应该将错误消息发送到服务器错误日志。可以通过`ini_set()`函数通过程序设置：`ini_set('log_errors', 1);`。它也可以在`php.ini`文件中设置：
 
-```inilog_errors = On```
+```
+inilog_errors = On```
 
 当开启日志时，错误报告将发送到操作系统的错误日志文件或“site”目录中的指定文件。服务器日志文件通常在共享托管环境中不可用。`log_error`设置指定是否应该将错误消息发送到服务器错误日志。可以通过程序设置`ini_set('log_errors',1')`。
 

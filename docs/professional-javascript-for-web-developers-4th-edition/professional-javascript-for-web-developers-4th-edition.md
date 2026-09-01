@@ -4670,7 +4670,8 @@ let a2 = new Article('Jake');
 
 现在，这两个实例的行为将相同（不考虑 `hasOwnProperty` 的返回值），并且也将共享同一个隐藏类，从而可能提高性能。请记住，使用 `delete` 关键字也会生成相同的隐藏类碎片。这在这一点得到了演示：
 
-```function Article() {
+```
+function Article() {
   this.title = 'Inauguration Ceremony Features Kazoo Band';
   this.author = 'Jake';
 }

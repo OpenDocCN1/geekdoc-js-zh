@@ -11044,7 +11044,8 @@ function initialiser() {
 </html>
 ```
 
-```LivreGougeon 第 300 页 2006 年 11 月 28 日星期二 4:23 16
+```
+LivreGougeon 第 300 页 2006 年 11 月 28 日星期二 4:23 16
 
 **图形 JavaScript 库**
 

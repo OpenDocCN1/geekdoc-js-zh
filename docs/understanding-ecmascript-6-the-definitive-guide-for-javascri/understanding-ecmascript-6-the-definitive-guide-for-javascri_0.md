@@ -4830,7 +4830,8 @@ console.log(isIterable([1, 2, 3])); // true
 console.log(isIterable("hello")); // true
 console.log(isIterable({})); // false
 console.log(isIterable(null)); // false
-```由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
+```
+由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
 
 ```javascript
 function isIterable(obj) {
@@ -4866,7 +4867,8 @@ function isIterable(obj) {
 console.log(isIterable([1, 2, 3])); // true
 console.log(isIterable("hello")); // true
 console.log(isIterable({})); // false
-console.log(isIterable(null)); // false```由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
+console.log(isIterable(null)); // false```
+由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
 
 ```javascript
 function isIterable(obj) {
@@ -4876,7 +4878,8 @@ function isIterable(obj) {
 console.log(isIterable([1, 2, 3])); // true
 console.log(isIterable("hello")); // true
 console.log(isIterable({})); // false
-console.log(isIterable(null)); // false```由于 `Symbol.iterator` 指定了默认默认迭代器，你可以使用它来检测一个对象是否为可迭代：
+console.log(isIterable(null)); // false```
+由于 `Symbol.iterator` 指定了默认默认迭代器，你可以使用它来检测一个对象是否为可迭代：
 
 ```javascript
 function isIterable(obj) {
@@ -4886,7 +4889,8 @@ function isIterable(obj) {
 console.log(isIterable([1, 2, 3])); // true
 console.log(isIterable("hello")); // true
 console.log(isIterable({})); // false
-console.log(isIterable(null)); // false```由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
+console.log(isIterable(null)); // false```
+由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
 
 ```javascript
 function isIterable(obj) {
@@ -4896,7 +4900,8 @@ function isIterable(obj) {
 console.log(isIterable([1, 2, 3])); // true
 console.log(isIterable("hello")); // true
 console.log(isIterable({})); // false
-console.log(isIterable(null)); // false```由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
+console.log(isIterable(null)); // false```
+由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
 
 ```javascript
 function isIterable(obj) {
@@ -4906,7 +4911,8 @@ function isIterable(obj) {
 console.log(isIterable([1, 2, 3])); // true
 console.log(isIterable("hello")); // true
 console.log(isIterable({})); // false
-console.log(isIterable(null)); // false```由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
+console.log(isIterable(null)); // false```
+由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
 
 ```javascript
 function isIterable(obj) {
@@ -4916,7 +4922,8 @@ function isIterable(obj) {
 console.log(isIterable([1, 2, 3])); // true
 console.log(isIterable("hello")); // true
 console.log(isIterable({})); // false
-console.log(isIterable(null)); // false```由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
+console.log(isIterable(null)); // false```
+由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
 
 ```javascript
 function isIterable(obj) {
@@ -4926,7 +4933,8 @@ function isIterable(obj) {
 console.log(isIterable([1, 2, 3])); // true
 console.log(isIterable("hello")); // true
 console.log(isIterable({})); // false
-console.log(isIterable(null)); // false```由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
+console.log(isIterable(null)); // false```
+由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
 
 ```javascript
 function isIterable(obj) {
@@ -4936,7 +4944,8 @@ function isIterable(obj) {
 console.log(isIterable([1, 2, 3])); // true
 console.log(isIterable("hello")); // true
 console.log(isIterable({})); // false
-console.log(isIterable(null)); // false```由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
+console.log(isIterable(null)); // false```
+由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
 
 ```javascript
 function isIterable(obj) {
@@ -4946,7 +4955,8 @@ function isIterable(obj) {
 console.log(isIterable([1, 2, 3])); // true
 console.log(isIterable("hello")); // true
 console.log(isIterable({})); // false
-console.log(isIterable(null)); // false```由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
+console.log(isIterable(null)); // false```
+由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
 
 ```javascript
 function isIterable(obj) {
@@ -4956,7 +4966,8 @@ function isIterable(obj) {
 console.log(isIterable([1, 2, 3])); // true
 console.log(isIterable("hello")); // true
 console.log(isIterable({})); // false
-console.log(isIterable(null)); // false```由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
+console.log(isIterable(null)); // false```
+由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
 
 ```javascript
 function isIterable(obj) {
@@ -4966,7 +4977,8 @@ function isIterable(obj) {
 console.log(isIterable([1, 2, 3])); // true
 console.log(isIterable("hello")); // true
 console.log(isIterable({})); // false
-console.log(isIterable(null)); // false```由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
+console.log(isIterable(null)); // false```
+由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
 
 ```javascript
 function isIterable(obj) {
@@ -4976,7 +4988,8 @@ function isIterable(obj) {
 console.log(isIterable([1, 2, 3])); // true
 console.log(isIterable("hello")); // true
 console.log(isIterable({})); // false
-console.log(isIterable(null)); // false```由于 `Symbol.Symbol.iterator`了默认默认，，，你可以使用它来检测一个对象是否为：
+console.log(isIterable(null)); // false```
+由于 `Symbol.Symbol.iterator`了默认默认，，，你可以使用它来检测一个对象是否为：
 
 ：
 
@@ -4988,7 +5001,8 @@ function isIterable(obj) {
 console.log(isIterable([1, 2, 3])); // true
 console.log(isIterable("hello")); // true
 console.log(isIterable({})); // false
-console.log(isIterable(null)); // false```由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
+console.log(isIterable(null)); // false```
+由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
 
 ```javascript
 function isIterable(obj) {
@@ -4998,7 +5012,8 @@ function isIterable(obj) {
 console.log(isIterable([1, 2, 3])); // true
 console.log(isIterable("hello")); // true
 console.log(isIterable({})); // false
-console.log(isIterable(null)); // false```由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
+console.log(isIterable(null)); // false```
+由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为可迭代：
 
 ```javascript
 function isIterable(obj) {
@@ -5008,7 +5023,8 @@ function isIterable(obj) {
 console.log(isIterable([1, 2, 3])); // true
 console.log(isIterable("hello")); // true
 console.log(isIterable({})); // false
-console.log(isIterable(null)); // false```由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为：
+console.log(isIterable(null)); // false```
+由于 `Symbol.iterator` 指定了默认迭代器，你可以使用它来检测一个对象是否为：
 
 （省略重复重复部分）
 

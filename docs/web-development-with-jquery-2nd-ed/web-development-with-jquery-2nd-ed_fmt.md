@@ -1329,7 +1329,8 @@ jQuery 中的选择器 API 非常简单。正如第 1 章“jQuery 简介”中�
 
 
 
-```html <!DOCTYPE html>
+```
+html <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="content-type" content="application/html+xml; charset=utf-8" />
@@ -2712,7 +2713,8 @@ div#finderActions {
 
 
 
-```css   position: absolute;
+```
+css   position: absolute;
   bottom: 1px;
   right: 10px;
   z-index: 2;
@@ -16507,7 +16509,8 @@ $('.toolbar-ddl').change(function() {
 
 
 
-```html <option value='4'>Big</option>
+```
+html <option value='4'>Big</option>
 
 <option value='5'>Big</option>
 

@@ -7428,7 +7428,8 @@ Docker 是一个平台，允许开发者将应用程序及其依赖项封装到�
 
 
 
-```dockerfile FROM node:14
+```
+dockerfile FROM node:14
 
 # 设置工作目录
 WORKDIR /app

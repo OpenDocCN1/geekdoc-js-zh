@@ -17934,7 +17934,8 @@ Node.js 流对数据块（任意长度的片段）进行迭代。下面的异步
 [](#cb1126-17)  if (previous.length > 0) {
 [](#cb1126-18)    yield previous;
 [](#cb1126-19)  }
-```将 `chunksToLines()` 应用于块的异步可迭代器（由 `chunkIterable()` 产生）：
+```
+将 `chunksToLines()` 应用于块的异步可迭代器（由 `chunkIterable()` 产生）：
 
 ```
 [](#cb1127-1)async function* chunkIterable() {

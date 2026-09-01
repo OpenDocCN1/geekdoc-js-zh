@@ -2833,7 +2833,8 @@ products.forEach(function (product) {
 </html>
 ```
 
-```在列表 3.20 中，模板控件通过 `data-control="WinJS.Binding.Template"` 属性声明。列表 3.21 包含了用于渲染数组的 JavaScript 代码。
+```
+在列表 3.20 中，模板控件通过 `data-control="WinJS.Binding.Template"` 属性声明。列表 3.21 包含了用于渲染数组的 JavaScript 代码。
 
 列表 3.21 声明式创建模板 (templatesDeclare.js)
 

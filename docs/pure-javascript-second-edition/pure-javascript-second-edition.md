@@ -9466,7 +9466,8 @@ Nav2+, NES2+, IE 3+, Opera3+
 
 # 语法
 
-```num1 ^ num2
+```
+num1 ^ num2
 ```
 
 # 描述
@@ -9518,7 +9519,8 @@ Nav2+, NES2+, IE 3+, Opera3+
 
 # 语法
 
-```variable ^= value
+```
+variable ^= value
 ```
 
 # 描述
@@ -9575,7 +9577,8 @@ Nav2+, NES2+, IE 3+, Opera3+
 
 ## 语法
 
-```num1 | num2
+```
+num1 | num2
 ```
 
 ## 描述
@@ -9621,7 +9624,8 @@ Nav2+, NES2+, IE 3+, Opera3+
 
 ## 语法
 
-```expression1 || expression2
+```
+expression1 || expression2
 ```
 
 ## 描述
@@ -9665,7 +9669,8 @@ Nav2+, NES2+, IE 3+, Opera3+
 
 ## 语法
 
-```variable |= value
+```
+variable |= value
 ```
 
 ## 描述

@@ -5656,7 +5656,8 @@ var myobj = <?= xoad_client :: register(new updater()) ?>;
 像其 JavaScript等效体一样，`XOAD_HTML::getElementById()`返回具有某些元素类型元素的阵列（应为ElementsByTagName）。清单21.3识别了类型为 `<div>`的所有页面元素并更改它们的一些样式属性。
 ## 清单 LISTING .1:修改给定类型的某页面的所有元素
 
-```php     
+```
+php     
 <?      
 class Updater  
 {       

@@ -1535,7 +1535,8 @@ boom, boom, boom ...
 
 现在，让我们创建一个基础的 Ruby 应用。你在这里使用的方法将在终端上打印问候语。在这个示例中，让我们多次调用该方法：
 
-```rubydef say_hi(user_name)
+```
+rubydef say_hi(user_name)
   result = “Hi, ” + user_name
   return result
 end

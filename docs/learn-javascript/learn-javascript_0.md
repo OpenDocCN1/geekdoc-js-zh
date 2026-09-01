@@ -991,7 +991,8 @@ document.write(linebreak);
 
 
 
-```如果 `expression 2` 为真，则执行语句(s)
+```
+如果 `expression 2` 为真，则执行语句(s)
 
 } else if (`expression 3`) {
 

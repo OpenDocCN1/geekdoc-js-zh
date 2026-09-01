@@ -1872,7 +1872,8 @@ mysql_close($dbConn);
 
 作为一个函数，我们可以这样写：
 
-```phpphpfunction connectToDb($host, $dbUser, $dbPass, $dbName)
+```
+phpphpfunction connectToDb($host, $dbUser, $dbPass, $dbName)
 {
   // 连接到 MySQL 服务器
   if (!$dbConn = mysql_connect($host, $dbUser, $dbPass)) {

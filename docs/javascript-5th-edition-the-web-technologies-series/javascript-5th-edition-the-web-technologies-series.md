@@ -4008,7 +4008,8 @@ case 标签后面可以跟单个语句或多个语句。但是，与 if 语句�
 
 (image/ab300ca82dcbe7c3074b1713f54a3b2_180.png)
 
-```function city_location(americanCity) {
+```
+function city_location(americanCity) {
   switch (AmericanCity) {
     case "Boston":
       return "Massachusetts";break;

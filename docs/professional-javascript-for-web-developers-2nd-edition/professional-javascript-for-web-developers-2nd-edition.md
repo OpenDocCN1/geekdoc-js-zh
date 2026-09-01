@@ -3790,7 +3790,8 @@ Date.parse() 方法接受一个表示日期的字符串。ECMA-262 没有定义 
 
 ```javascript
 new Date("May 25, 2004")
-```如果传递给 Date.parse() 的字符串不表示日期，它将返回 NaN。如果直接传递字符串，Date 构造会在后台调用 Date.parse()，这意味着下面的代码与示例相同：
+```
+如果传递给 Date.parse() 的字符串不表示日期，它将返回 NaN。如果直接传递字符串，Date 构造会在后台调用 Date.parse()，这意味着下面的代码与示例相同：
 
 ```javascript
 var someDate = new Date("May 25, 2004");

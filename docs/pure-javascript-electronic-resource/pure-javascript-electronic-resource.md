@@ -16981,7 +16981,8 @@ NES3+, Nav5+, IE5+
 
 ## 语法
 
-```throw exception
+```
+throw exception
 ```
 
 ## 描述
@@ -17051,7 +17052,8 @@ NES3+, Nav4
 
 ## 语法
 
-```Reserved Keyword
+```
+Reserved Keyword
 ```
 
 ## 描述
@@ -17069,7 +17071,8 @@ NES3+, Nav4
 
 ## 语法
 
-```Reserved Keyword
+```
+Reserved Keyword
 ```
 
 ## 描述
@@ -17087,7 +17090,8 @@ NES3+, Nav4
 
 ## 语法
 
-```Reserved Keyword
+```
+Reserved Keyword
 ```
 
 ## 描述

@@ -1358,7 +1358,8 @@ for ([initialization]; [test condition]; [expression])
 ```
  `</body>` 
  `</html>` 
-```译文 (翻译结果):
+```
+译文 (翻译结果):
 ```
 [/content]
 ```

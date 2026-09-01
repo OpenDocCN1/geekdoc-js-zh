@@ -1650,7 +1650,8 @@ PAUSE
 
 另一种使用 `REM` 语句的方法将其放在另一个语句的末尾，如下所示。
 
-```PAUSE REM Make the player hit a key in order for the game to continue
+```
+PAUSE REM Make the player hit a key in order for the game to continue
 ```
 
 始终将 `@ECHO` 语句作为脚本的第一条语句。如果你忘记并在脚本中省略它，所有的脚本语句（包括你的注释）将在脚本执行时显示，从而丧失了为脚本添加注释的大部分好处。

@@ -6667,7 +6667,8 @@ Figure 11-4: The `YLog` window displaying the contents of a `YMap` object（图 
 
 3. 为地图 div分配位置。在示例代码的情况下，我知道地图将位于 top: **40px**和 left:`60px`处（top/left）。同时知道地图宽590像素高 600 像素：
 
-```css  
+```
+css  
 #myMap{position:absolute;zindex:1;top:40px;left:60 px;width=73x,height}=8020);
 } 
 ```  

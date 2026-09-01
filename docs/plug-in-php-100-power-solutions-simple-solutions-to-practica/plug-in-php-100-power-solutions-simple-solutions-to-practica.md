@@ -15270,7 +15270,8 @@ FP_On().onfocus = FP_Off
 ```javascript
 (id).FP_Empty = true
 (id).value = prompt
-```包含提示符的 `FP_Empty` 属性被设置为 true。
+```
+包含提示符的 `FP_Empty` 属性被设置为 true。
 
 ```javascript
 (id).value
@@ -15384,7 +15385,8 @@ FP_On().onfocus = FP_Off
 ```javascript
 (id).FP_Empty = true
 (id).value = prompt
-```包含提示符的 `FP_Empty` 属性被设置为 true。
+```
+包含提示符的 `FP_Empty` 属性被设置为 true。
 
 ```javascript
 (id).value

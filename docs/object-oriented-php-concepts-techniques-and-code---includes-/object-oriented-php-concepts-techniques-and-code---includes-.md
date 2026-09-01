@@ -290,7 +290,8 @@ function_call($somevariable);
 
 在 OOP 中看起来像这样：
 
-```php own$variable->function_call();
+```
+php own$variable->function_call();
 ```
 
 这里的显著区别在于，OO 变量本身并不要做事情；它们是执行者而不是被执行者，正因如此它们被认为具有行为。类的行为是其函数的总和。

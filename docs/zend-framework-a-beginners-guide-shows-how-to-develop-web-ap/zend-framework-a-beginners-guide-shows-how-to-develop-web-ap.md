@@ -12679,7 +12679,8 @@ $this->addElement($name)
     ->addElement($captcha)
     ->addElement($submit);
 }
-```修订后的定义为联系表单添加了一个新的 Dijit ComboBox 元素，并指定使用远程数据存储。数据存储端点也指定为 /default/autocomplete。将修订后的定义保存到 Contact.php 并继续阅读如何定义。
+```
+修订后的定义为联系表单添加了一个新的 Dijit ComboBox 元素，并指定使用远程数据存储。数据存储端点也指定为 /default/autocomplete。将修订后的定义保存到 Contact.php 并继续阅读如何定义。
 
 ### 初始化 View Helper
 
@@ -13848,7 +13849,8 @@ class Square_Model_Item extends Square_Model_Base
     }
 }
 ?>
-```引用模型中定义的 `getItem()` 方法，而不是直接编写 Doctrine 查询。顺便使用之前定义的内存缓存缓存该方法的结果。这里是修改后的 `Catalog_ItemController::displayAction` 方法的样子：
+```
+引用模型中定义的 `getItem()` 方法，而不是直接编写 Doctrine 查询。顺便使用之前定义的内存缓存缓存该方法的结果。这里是修改后的 `Catalog_ItemController::displayAction` 方法的样子：
 
 ```php
 <?php

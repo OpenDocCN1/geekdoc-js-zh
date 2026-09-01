@@ -7049,7 +7049,8 @@ npm 是 Node 用于分发模块的包管理器。npm 可用于安装、更新和
 
 安装 npm 包有两种方式：本地安装或全局安装。如果你只想在某个特定的 Node 项目中使用该模块的功能，可以将其安装到项目相对路径下（本地），这是 `npm install` 的默认行为。或者，有几个模块可以作为命令行工具使用；在这种情况下，你可以全局安装它们：
 
-```npm install request
+```
+npm install request
 ```
 
 使用 npm 的 `install` 指令将安装特定的模块——在本例中为 `request`。要确认 `npm install` 是否正常工作，请检查是否存在 `node_modules` 目录，并验证它是否包含你所安装的包的目录。
@@ -7064,7 +7065,8 @@ npm 是 Node 用于分发模块的包管理器。npm 可用于安装、更新和
 
 你可以通过执行以下命令创建 `package.json`：
 
-```npm npm init
+```
+npm npm init
 ```
 
 在回答关于项目的基础问题后，会创建一个内容类似于下方的空 `package.json`：
@@ -7123,7 +7125,8 @@ npm 是 Node 用于分发模块的包管理器。npm 可用于安装、更新和
 [218]
 有一个我喜欢使用的酷技巧。在从命令行安装模块时，我们可以添加 `--save` 标志，将该模块的依赖关系自动添加到 `package.json` 文件中：
 
-```npm npm install async --save
+```
+npm npm install async --save
 npm WARN package.json chapter9@1.0.0 No repository field.
 npm WARN package.json chapter9@1.0.0 No README data
 async@1.5.0 node_modules/async

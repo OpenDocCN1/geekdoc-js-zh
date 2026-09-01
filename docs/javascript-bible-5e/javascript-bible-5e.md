@@ -31599,7 +31599,8 @@ W3C DOM 事件对象初始化方法提供了一种手段，用于使用新创建
 
 如果你需要一个简单的事件，不必使用更详细的方法。例如，如果你想要一个简单的 `mouseup` 事件，可以使用 `initEvent()` 初始化一个通用事件，并将事件分发到目标元素，而无需填充 `initMouseEvent()` 方法中所有的坐标、按钮和其他参数：
 
-```var evt = document.createEvent("MouseEvents");
+```
+var evt = document.createEvent("MouseEvents");
 evt.initEvent("mouseup", true, true);
 document.getElementById("myButton").dispatchEvent(evt);
 ```

@@ -7216,7 +7216,8 @@ function doAlert(evt) {
 </html>
 ```
 
-```图 13-22：将函数附加到事件处理程序的跨浏览器脚本
+```
+图 13-22：将函数附加到事件处理程序的跨浏览器脚本
 
 图 13-22 中的脚本创建了六个复选框，每个都有不同的名称。点击这些复选框中的任何一个都会触发警告框，显示刚刚点击的复选框名称。注意，HTML `body` 中不包含 `onclick` 处理程序。因为处理程序是通过 JavaScript 分配的，因此 `body` 标签内的 `onload` 处理程序会触发分配处理程序的函数。该函数由 `onload` 处理程序调用，因为在浏览器知道该元素之前，HTML 元素无法在其上附加函数。如果 JavaScript 尝试向一个尚未被浏览器处理的元素附加处理程序，将导致错误。因此，最好等到所有元素加载完成后后再向它们分配函数。
 
@@ -8609,7 +8610,8 @@ function sendRPCDone(ignore1, ignore2, word_array, count_array, ignore3) {
 <div id="results" style="width:22em;padding-left:2px;padding-right:2px;"></div>
 </body>
 </html>
-```图 16-9：客户端代码
+```
+图 16-9：客户端代码
 
 ### 处理 URL
 

@@ -2118,7 +2118,8 @@ jQuery UI 以 zip 包形式提供，JavaScript 位于 `js` 文件夹中，相关
 </html>
 ```
 
-```以之前的 HTML 代码为基础，应向页面的 `<body>` 部分添加以下 HTML 标记：
+```
+以之前的 HTML 代码为基础，应向页面的 `<body>` 部分添加以下 HTML 标记：
 
 ```html
 <div id="startHere" style="border: 3px solid black;">

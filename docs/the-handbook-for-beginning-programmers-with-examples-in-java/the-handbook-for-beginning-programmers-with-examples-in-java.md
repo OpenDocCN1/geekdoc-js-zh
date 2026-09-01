@@ -4007,7 +4007,8 @@ function triangleArea(a, b, c) {
 </html>
 ```
 
-```人工检核 (Desk Check)
+```
+人工检核 (Desk Check)
 
 | a | b | c | s | (s-a) | (s-b) | (s-c) | area |
 |---|---|---|---|---|---|---|---|

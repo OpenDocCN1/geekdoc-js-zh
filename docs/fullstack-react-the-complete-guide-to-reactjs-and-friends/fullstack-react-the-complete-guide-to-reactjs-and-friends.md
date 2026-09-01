@@ -12829,7 +12829,8 @@ class App extends React.Component {
 
 在 App 的顶部，我们将组件转换为函数，移除 componentDidMount()，并添加 `<Router>` 的开始标签：
 
- ```const App = () => (
+ ```
+const App = () => (
   <Router>
     <div
       className='ui text container'

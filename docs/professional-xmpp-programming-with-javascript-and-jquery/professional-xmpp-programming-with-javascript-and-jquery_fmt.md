@@ -2951,7 +2951,8 @@ if (!inserted) {
 }
 ```
 
-```code snippet gab.js```
+```
+code snippet gab.js```
 
 如果你以当前的形式运行 Gab，你应该能够登录服务器并看到显示且排序好的联系人（roster）。
 
@@ -3004,7 +3005,8 @@ on_roster: function (iq) {
 }
 ```
 
-```code snippet gab.js```
+```
+code snippet gab.js```
 
 接下来，实现 `on_presence()` 函数以相应地更新联系人列表。以下代码应添加到 Gab 对象中：
 
@@ -3039,7 +3041,8 @@ on_presence: function (presence) {
 }
 ```
 
-```code snippet gab.js```
+```
+code snippet gab.js```
 
 `on_presence()` 函数会相应地更新联系人列表。`on_presence()` 函数使用 `jid_to_id` 来更新联系人状态。
 
@@ -3068,7 +3071,8 @@ $('#contact-dialog').dialog({
 }
 ```
 
-```code snippet gab.js```
+```
+code snippet gab.js```
 
 当用户点击按钮时，`contact_added` 事件会创建一个 IQ 结果。你需要在 `gab.js` 的末尾处理此事件：
 

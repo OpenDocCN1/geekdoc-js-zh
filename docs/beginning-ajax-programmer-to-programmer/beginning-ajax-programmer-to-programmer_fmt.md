@@ -14004,7 +14004,8 @@ print($rsp);
 
 以下是返回服务器端处理（PHP）JSON 输出的数组创建代码片段：
 
-```php  
+```
+php  
 <?php   
 require_once("json.php");  
 $myJson = new Services_JSON();           
@@ -14017,7 +14018,8 @@ echo $result;
 
 例如，以下 PHP 代码（`array.php`）：
 
-```php  
+```
+php  
 <?php    
 require("json.php");         
 $myJson = new Services_JSON();          

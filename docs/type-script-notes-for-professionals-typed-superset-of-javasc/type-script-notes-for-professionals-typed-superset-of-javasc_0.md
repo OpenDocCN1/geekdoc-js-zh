@@ -2000,7 +2000,8 @@ typings install chai -save-dev
 
 如果你有该模块的类型定义文件 (`d.ts`)，可以使用 import 语句。
 
-```typescriptimport _ = require('lodash');
+```
+typescriptimport _ = require('lodash');
 ```
 
 如果你没有该模块的定义文件，TypeScript 在编译时会抛出错误，因为它找不到你尝试导入的模块。

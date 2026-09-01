@@ -1832,14 +1832,16 @@ All special characters can be added into a document using the numeric entity for
 The `<html>`元素的含义是：它是整个XHTML文档的容器元素；在可选的XML声明和必需的`DOCTYPE`声明之后，每个XHTML文档都应包含一个起始`\ < html >`标签；并且每个文档也应以结束的\</html>\ </ht>标签结束。
 
 如果您正在撰写 Strict XHTML 1.0版本,那么其开始标签也必须包括一种称为*命名空间标识符（namespace identifier）*\的概念；虽然命名空间的这一概念乍一看可能有些奇怪，但一旦您认识到任何人都可以创建标记语言即可理解：例如，存在几种面向特定行业的标记语言，允许行业中的不同人员以标准格式共享数据)。既然任何人都可以创建标记语言\different markup languages end up using the same tag names, so namespaces help clarify which element belongs to which language。例如，您已经在本章中见过`<big>` 和 `<small>`.XHTML元素；现在想象一下，一家服装公司拥有一种用于描述其产品（including the \\< big > \</big <medium></medium\ </ small>\</small>\ elements for sizes）。命名空间标识符对于 XHTML 的目的在于：指明文档中的标记属于哪个XHTML 1.0版本。因此,\begin xml
-```html xmlns="http://www.w3.org/1999/xhtml">
+```
+html xmlns="http://www.w3.org/1999/xhtml">
 <end html>
 
 虽然在 Transitional XHTML 文档中这并不是严格要求，但最好在所有XHTML文档中使用它作为一个最佳实践（good practice）。
 
 The `<html>`元素还可携带以下属性\(\\)这些是您稍后在本书"Attribute Groups（属性组）"\章节中将遇到的：
 
-```xml dir lang xml.lang
+```
+xml dir lang xml.lang
 ```
 
 
@@ -1867,7 +1869,8 @@ The `< head >\) 元素就是一个其他所有头元素的容器；它是紧随�
 
 起始标签可带有一下属性:
 
-```xml id dir lang xml.lang profile
+```
+xml id dir lang xml.lang profile
 ```
 
 
@@ -1894,7 +1897,8 @@ profile 属性实际上尚未使用；其他属性将在这个章节稍后的“
 The `<title>` 元素应只包含表示该元素的文本;不能包含任何其他元素。\</title>的元素可带有下列属性,这些在随后的 Attribute Groups章节中进行覆盖：
 
 
-```xml id dir lang xml.lang
+```
+xml id dir lang xml.lang
 \end title><//t itle >\)
 
 
@@ -1903,7 +1907,8 @@ The `<title>` 元素应只包含表示该元素的文本;不能包含任何其�
 
 The `< brdy>\` 出现在 `head`\langle head ></h ead>`，正如您已所见的那样；它包含您在主浏览器窗口中实际看到的网页部分;有时称为*\ body content (主体内容)\`. \` <br dy\</body>元素可以承载所有关于*属性组（attribute groups)*的属性将在下一节中看到。您可能还会在 older HTML documents (旧版HTML文档) 看到以下废弃属性（它们详见附录 I）中也被应用于`\langle brdy >/\ body>\`的元素：
 
-```xml background bgcolor alink link vlink text
+```
+xml background bgcolor alink link vlink text
 \end b r dy </bdy>
 
 
@@ -1911,7 +1916,8 @@ The `< brdy>\` 出现在 `head`\langle head ></h ead>`，正如您已所见的�
 您也可能在看到一些浏览器特定的属性被应用到了 `<br ty>`元素;这些也在附录I中进行覆盖:
 
 
-```xml language topmargin bottom margin left right scroll bgproperties marignheight  marging width 
+```
+xml language topmargin bottom margin left right scroll bgproperties marignheight  marging width 
 \body></body >)  
 </end brdy ></body><b r dy>\
 
@@ -2904,7 +2910,8 @@ src alt align border height width hspace vspace ismap usemap longdesc name
 
 
 ## Chapter 3: Images, Audio, and Video+   - 如果浏览器无法显示图像，则此替代文本将取而代之显示。- 视力受损的网页用户通常使用称为屏幕阅读器的软件来为他们朗读页面内容，在这种情况下，alt 文本描述了他们无法看到的图像。- 尽管搜索引擎非常智能，但它们尚无法描述或索引图像的内容；因此，提供替代文本有助于搜索引擎索引你的页面，并帮助访问者找到你的网站。有时图像不传达任何信息，仅用于增强页面的布局。（例如，你可能有一张图像只是装饰性元素，但并未为页面添加任何信息。）在这种情况下，仍应使用 `alt` 属性，但将其设为空值，如下所示：`
-```html <img src="stripy_page_divider.gif" alt="" /> ```# `height` 和 `width` 属性
+```
+html <img src="stripy_page_divider.gif" alt="" /> ```# `height` 和 `width` 属性
 
 `height` 和 `width` 属性指定图像的高度和宽度，这些属性的值几乎总是以像素为单位（如果你不熟悉像素的概念，我们将在*第3章：图像、音频、视频*后面讨论它）。```
 <img src="logo.gif" alt="Wrox Logo" height="120" width="180" /> ```从技术上讲，这些属性的值可以是浏览器屏幕的百分比。或者如果图像在仅占页面一部分的元素内部，称为 `containing element`（包含元素），那么它将是该包含元素的百分比。如果你确实使用百分比，数字后面会跟一个百分号，但这非常少见，而且以图像创建时之外的任何尺寸显示图像都可能导致图像失真或模糊。指定图像的大小被认为是良好的做法，因此你应该尝试在任何放入页面的图像上使用这些属性。这还有助于页面更快更流畅地加载，因为浏览器知道要为图像分配多少空间，并且可以在图像仍在加载时正确渲染页面的其余部分。虽然你可以让浏览器以比实际更小或更大的尺寸显示图像（通过告诉浏览器宽度和高度与实际情况不同），但你应该避免这样做，因为你的图像不会那么清晰。相反，你应该致力于创建与在网页上使用尺寸相同的图像版本。Photoshop、Photoshop Elements、Paint Shop Pro 或 GIMP 等程序将帮助你完成此工作。同样重要的是不要使用比屏幕上显示的尺寸更大的图像（例如，如果你只在屏幕上以 100 像素 × 100 像素显示，就不应该使用 800 像素 × 800 像素的图像），因为图像越小，文件大小（以 KB 计）就越小。而文件越小，图像在浏览器中加载得就越快。此外，当涉及到将你的网站发布到网上供他人查看时，这也可能为你节省费用，因为你通常会根据发送给网站访问者的所有文件的总大小来收费。同样，显示比实际尺寸更大的图像也是不可取的。如果你有一张小图像（比如 100 像素 × 100 像素）并试图将其显示得大得多（比如 300 像素 × 300 像素），它会出现颗粒感。**## Chapter 3: Images, Audio, and Video**- 虽然这样做并不明智，但如果你只指定 height 或 width 属性之一而省略另一个，你的浏览器将按比例显示图像。假设你有一张宽 200 像素、高 100 像素的图像。如果你只指定图像宽度为 200 像素，它会尝试以正确尺寸显示图像：宽 200 像素，高 100 像素。- 然而，如果你说图像宽 100 像素但没有指定高度，浏览器会尝试将图像设为高 50 像素。因为它宽度是原始图像的 50%，它会以高度的 50% 来显示图像。- 换句话说，它保持了图像的宽高比（宽度除以高度）。- 你甚至可以提供与高度不成比例的宽度来扭曲图像。- 图 3-2 显示了实际尺寸的图像（*顶部*：130 像素 × 130 像素）；放大的图像（*中间*；*width* 属性值设为 160 像素）和扭曲的图像（*底部*；*length* 属性值设为 80 像素，height 属性值设为 150 像素）。
@@ -2914,12 +2921,15 @@ src alt align border height width hspace vspace ismap usemap longdesc name
 
 - 以下是此示例的代码（*ch03_eg02.html*）：
     - 固定尺寸：宽 130 高 130
-```html <img src="images/apple.jpg" alt=Photo of red apple"width=130height=130> ```
+```
+html <img src="images/apple.jpg" alt=Photo of red apple"width=130height=130> ```
     - 放大：宽 160（*未*指定 *height*）和扭曲（底部：**the** length 属性值设为 80 像素，height 属性值设为 150 像素）。
 
-```html <img src="images/apple.jpg" alt=Photo of red apple"width=160/> ```
+```
+html <img src="images/apple.jpg" alt=Photo of red apple"width=160/> ```
     - 拉伸：宽 80 高 150
-```html <img src="images/apple.jpg" alt="Photo of red apple" width="80" height="150" /> ```
+```
+html <img src="images/apple.jpg" alt="Photo of red apple" width="80" height="150" /> ```
 
 本节中其余的属性要么已弃用（正逐步淘汰使用），要么很少使用，但在这里提及它们是因为你可能会在较旧的页面中遇到它们。
 
@@ -2937,14 +2947,16 @@ src alt align border height width hspace vspace ismap usemap longdesc name
 ## 图 3-3# Chapter 3: Images, Audio, and Video`align` 属性可以取以下表格中的某个值。你还可能遇到值 *abst*、texttop`、`absmiddle` 和 `baseline`，它们不是 XHTML 规范的一部分；相反，它们是由浏览器制造商添加的，因此可能产生不一致的结果：| 值 | 用途 || --- | --- || `top` | 图像的顶部与当前文本行的顶部对齐。 || `middle` | 图像的中部与当前文本基线对齐。 || `bottom` | 图像的底部与当前文本行的基线对齐（默认值），这通常导致图像高于文本。 || `left` | 图像与包含窗口或元素的左侧对齐，任何文本环绕其周围。 || `right` | 图像与包含窗口或元素的右侧对齐，任何文本环绕其周围。|## border 属性（*已弃用*）
 
 边框是出现在图像或其他元素周围的线条。默认情况下，图像没有边框，因此你只有想在图像周围创建边框时才会使用此属性。`border` 属性用于以像素为单位指定边框的宽度：
-```html <img src="images/logo.gif" alt= "Wrox Logo" border-2/> ```
+```
+html <img src="images/logo.gif" alt= "Wrox Logo" border-2/> ```
 
 尽管单独的图像没有边框，但你应该注意到 Internet Explorer 在图像用作链接时会给图像添加边框；因此，你通常会看到在用作链接内部的图像上使用 `border` -0 "` 的代码。此属性已被 CSS `border` 属性取代。
 
 ## hspace 和 vspace 属性（*已弃用*）
  
 
-`hspace` 和 `vspace` 属性可用于控制图像周围的空白量。```html <img src="images/logo.gif" alt= "Wrox Logo" hspace-10 vspane:4/> ```
+`hspace` 和 `vspace` 属性可用于控制图像周围的空白量。```
+html <img src="images/logo.gif" alt= "Wrox Logo" hspace-10 vspane:4/> ```
 
 
 

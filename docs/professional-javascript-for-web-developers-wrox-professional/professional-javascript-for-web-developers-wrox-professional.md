@@ -2240,7 +2240,8 @@ function doAdd(iNum) {
 alert(doAdd.toString());
 ```
 
-```这段代码输出了 `doAdd()` 函数的准确文本（见图 2-9）。
+```
+这段代码输出了 `doAdd()` 函数的准确文本（见图 2-9）。
 
 ![](img/93a0e3016a0e751aae024ba9b3aad296_92_0.png)
 

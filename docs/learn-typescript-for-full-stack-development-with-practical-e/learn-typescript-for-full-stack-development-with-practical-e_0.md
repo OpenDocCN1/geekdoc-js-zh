@@ -2685,7 +2685,8 @@ type GreetReturnType = ReturnType<typeof greet>; // GreetReturnType 为 string
 
 **问题**：创建一个工具类型 `MapToPromise<T>`，将 `T` 中的所有属性映射为 Promise。
 
-```typescript socialismtype MapToPromise<T> = {
+```
+typescript socialismtype MapToPromise<T> = {
   [K in keyof T]: Promise<T[K]>;
 };
 ```

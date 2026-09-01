@@ -1158,7 +1158,8 @@ http://martinfowler.com/articles/injection.html
 
 如果你有两个组件 A 和 B，且 A 依赖于 B，你可以说 A 依赖于 B 或 B 是 A 的依赖项。假设 A 有一个方法 `importantMethod`，它在如下代码片段中使用 B：
 
-```javapublic class A {
+```
+javapublic class A {
     public void importantMethod() {
         B b = ... // 获取 B 的实例
         b.usefulMethod();
@@ -1176,7 +1177,8 @@ PDFAction 和 PDFService 类分别给出在列表 2.11 和列表 2.12 中。
 
 ### 列表 2.11：PDFAction 类
 
-```javapackage action;
+```
+javapackage action;
 import service.PDFService;
 
 public class PDFAction {
@@ -1194,7 +1196,8 @@ public void createPDF(String path, String input) {
 
 ### 列表 2.12：PDFService 类
 
-```javapackage service;
+```
+javapackage service;
 import util.PDFUtil;
 
 public class PDFService {
@@ -1220,7 +1223,8 @@ appdesign4 应用程序在 2.13 中使用了 DependencyInjector 代替了依赖�
 
 ### 列表 2.13：DependencyInjector 类
 
-```javapackage util;
+```
+javapackage util;
 import action.PDFAction;
 import service.PDFService;
 
@@ -1456,7 +1460,8 @@ ModelAndView handleRequest(HttpServletRequest request,
 现在查看部署描述符 (web.xml)
 
 [content]
-```xml version="1.0" encoding="UTF-8"?>
+```
+xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns="http://java.sun.com/xml/ns/javaee"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee

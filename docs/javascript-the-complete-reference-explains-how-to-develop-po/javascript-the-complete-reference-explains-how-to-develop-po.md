@@ -1342,7 +1342,8 @@ while (x < 10) {
 
 函数用于封装执行特定任务的代码。有时，会为常用的所需的任务定义函数，以避免重复输入相同的语句。更通俗地说，它们被用于将执行特定作业的代码保持在一个地方，以增强可重用性和程序的可读性。JavaScript 函数使用 `function` 关键字声明，执行其操作的语句列在大括号中列。函数参数列在函数名后的括号中，并用逗号隔开。例如：
 
-```functionfunction add(x, y) {
+```
+functionfunction add(x, y) {
     var sum = x + y;
     return sum;
 }
@@ -15210,7 +15211,8 @@ function down() {
 
 这种方法将确保移动对象不会超出定义的边界。基本思想是确定对象的当前位置，然后使用库层中的 `setX()` 和 `setY()` 函数在屏幕上增量移动对象。首先，我们添加简单的 `getX(layerName)` 和 `getY(layerName)` 函数，它们返回传递的层的坐标。这些例程在此处。
 
-```as well as to left. The basic idea will be to figure out the current position of an object and then move the object incrementally around the screen using the `setX()` and `setY()` functions in our library layer. First, we add simple `getX(layerName)` and `getY(layerName)` functions that return the coordinates of the layer passed. These routines are shown here.
+```
+as well as to left. The basic idea will be to figure out the current position of an object and then move the object incrementally around the screen using the `setX()` and `setY()` functions in our library layer. First, we add simple `getX(layerName)` and `getY(layerName)` functions that return the coordinates of the layer passed. These routines are shown here.
 
 这种方法将确保移动对象不会超出定义的边界。基本思想是确定对象的当前位置，然后使用库层中的 `setX()` 和 `setY()` 函数在屏幕上增量移动对象。首先，我们添加简单的 `getX(layerName)` 和 `getY(layerName)` 函数，它们返回传递的层的坐标。这些例程在此处。
 

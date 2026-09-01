@@ -3310,7 +3310,8 @@ setTimeoutNative(() => {
 
 这种模式在 React Native 中很常见，例如处理来自 `TextInput` 的 `onChangeText()` 事件：
 
-```TypeScript JSX
+```
+TypeScript JSX
 <TextInput
   onChangeText={(text: string) => {
     console.log(`Text: ${text}`);

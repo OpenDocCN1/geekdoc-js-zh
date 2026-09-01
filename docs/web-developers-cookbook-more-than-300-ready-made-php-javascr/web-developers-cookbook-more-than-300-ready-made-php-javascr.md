@@ -12657,7 +12657,8 @@ $1 - $t5 | 临时字符串变量，用于避免重复
 
 此命令等同于以下操作，它将变量 `mydiv` 设置为 ID 为 'outerdiv' 的 div 对象：
 
-```mydiv = document.getElementById('outerdiv')
+```
+mydiv = document.getElementById('outerdiv')
 ```
 
 这意味着例如，你可以使用此配方返回的值来更改 div 的 HTML 内容（起始标签和结束标签之间的文本），如下修改其 `innerHTML`：
@@ -13253,7 +13254,8 @@ S(ids, 'display', 'grid')
 
 许多菜谱的功能依赖于捕获事件。如图 13-2 所示，首先行将 `CaptureMouse()` 函数附加到 `document.onmove` 事件，将 `CaptureKeyboard()` 函数附加到 `document.onkeydown` 和 `.keypress` 事件以 ` `KEY_``。
 
-最后几行行获 ` `..```.`````mouseup````.`documentdocument.```以 `MOUSE_IN` 和 `MOUSE_DOWN`。
+最后几行行获 ` `..```.`````mouseup````.`documentdocument.```
+以 `MOUSE_IN` 和 `MOUSE_DOWN`。
 
 ![](img/bcac512196a5836c0fe51640a9_400.png)
 

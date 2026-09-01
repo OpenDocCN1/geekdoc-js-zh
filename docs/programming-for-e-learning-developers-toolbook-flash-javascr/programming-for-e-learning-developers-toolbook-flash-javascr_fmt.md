@@ -5663,7 +5663,8 @@ End Sub
 
 列表 82 显示了我们新定义的 `GetGlossaryDefinition` Web 方法实现代码（Visual Basic）。
 
-```visual basic
+```
+visual basic
 Imports System.Data
 Imports System.Data.OleDb
 
@@ -5713,7 +5714,8 @@ End Property
 
 列表 82 显示了我们新定义的 `GetGlossaryDefinition` Web 方法实现代码（Visual Basic）。
 
-```visual basic
+```
+visual basic
 Imports System.Data
 Imports System.Data.OleDb
 

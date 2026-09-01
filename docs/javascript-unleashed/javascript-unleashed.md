@@ -13831,7 +13831,8 @@ frame1.pathname="/foo/doc2.html";
 </HTML>
 ```
 
-```file doc1.html```
+```
+file doc1.html```
 
 `doc2.html` 文件可以是任何内容，甚至是空的。然而，你应该在文件中放置至少一个回车符，以免导致“文档不包含数据”的错误。
 

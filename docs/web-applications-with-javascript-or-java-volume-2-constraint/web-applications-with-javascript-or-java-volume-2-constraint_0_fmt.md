@@ -4706,7 +4706,8 @@ ADD CONSTRAINT `FK_employees_PERSONID`
 
 对于继承层次结构中的每个抽象实体类，我们定义了一组对应 CRUD 操作的视图。例如，在 `Author` 的情况下，我们在 `WebContent/views/authors/` 文件夹中有 `retrieveAndListAll.xhtml`、`create.xhtml`、`update.xhtml` 和 `delete.xhtml` 文件。在 `Employee` 的情况下，“Retrieve/List All Employees”用例需要显示 `Special type of employee` 列：
 
-```html <h:column>
+```
+html <h:column>
   <f:facet name="header">Special type of employee</f:facet>
   #{e.type != null ? e.type.label.concat(" of ").concat(
                                         e.department).concat(" department") : ""}

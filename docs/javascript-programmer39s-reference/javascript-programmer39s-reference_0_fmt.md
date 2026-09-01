@@ -27255,13 +27255,15 @@ POPUP 对象代表特殊的重叠窗口，通常用于对话框、消息框或�
 
 ### D
 
-- `data` 随 GET 请求更改的`客户端数据与持久化。*另参见* `client-side data and persistence```数据安全`加载 JSON 存储的。*另参见* `client-side data and persistence```使用 XSLT 转换`
+- `data` 随 GET 请求更改的`客户端数据与持久化。*另参见* `client-side data and persistence```数据安全`加载 JSON 存储的。*另参见* `client-side data and persistence```
+使用 XSLT 转换`
 - `data types` 数据类型`转换为布尔值`按值 vs. 引用操作`非数值，转换为数字`非字符串，转换为字符串`null 和 undefined```原生布尔值``原生 vs. 引用类型``原生 vs. 原生对象``类型转换```类型`，确定`
 - `databases, Gears plugin` 数据库，Gears 插件
 - `dates` 日期`比较运算符和`创建`Date 对象`日期字符串，解析`读取和写入``时间差异，测量``定时器和间隔`世界时间概览`
   - `daysInMonth()` 函数
 - `debugging` 调试
-  - `Debug 对象（全局）```Charles 代理调试器`开发者工具栏 (IE)``Dragonfly (Opera)` 错误处理器`Error 对象概览`Fiddler`Firebug (Firefox)` 栈跟踪函数`测试工具`抛出自定义错误`Web 检查 (Safari) 4`
+  - `Debug 对象（全局）```
+Charles 代理调试器`开发者工具栏 (IE)``Dragonfly (Opera)` 错误处理器`Error 对象概览`Fiddler`Firebug (Firefox)` 栈跟踪函数`测试工具`抛出自定义错误`Web 检查 (Safari) 4`
 - `declaring functions` 定义函数
   - `decrement 运算符`
   - `默认行为（事件）`

@@ -1502,7 +1502,8 @@ define("SAVE_DATA", isset($_SERVER["HTTP_SAVE_DATA"]) && stristr($_SERVER["HTTP_
 
 我们可以在 Weekly Timber 网站（一家威斯康星州的伐木公司）上看到应用。问答页面包含轮播图（carousel）和折叠面板（accordions）（图 4.10），它们都依赖于 `jQuery`，而且轮播图由大量的 JavaScript 驱动。还有轮播插件本身以及一小段初始化所有内容的 JavaScript。
 
-![Weekly Timber 答页完整功能版本包含轮播图和 JavaScript 驱动的折叠面板。(image/4.10.png)图 4.10：Weekly Timber 答页面完整功能版本包含轮播图和 JavaScript 驱动的折叠面板。这些增强功能总共少于 100 KB 的未压缩 JavaScript。对于网页来说，这部分 JavaScript 并不惊人，但在慢设备上，它确实会引发相当的主线程活动（图 4.11）。![Chrome 性能分析器中 Weekly Timber 网站答页面的主线程活动概述。该页面启动了不容忽视的 JavaScript 活动，以及 JavaScript 引发的布局和绘制工作。(image/4.11.png)图 4.11：Chrome 性能分析器中 Weekly Timber 网站答页面的主线程活动概述。该页面启动了不容忽视的 JavaScript 活动，以及 JavaScript 引发的布局和绘制工作。但我们可以使用创建的 `SAVE_DATA` 常量，为 Weekly Timber 可能处于不理想农村网络环境的客户去掉花里胡哨。如果 `SAVE_DATA` 为 `true`，我们选择移除轮播图和折叠面板功能：```phpif (!SAVE_DATA) {?><section id="carousel">  <!-- 移除轮播图 --></section><?php}?>```### 作为自定义功能节省数据数据节省功能并不非由浏览器提供；你可以将其作为可切换设置构建到自己的应用程序中，这样所有人都能受益，而不仅仅是提供该功能的浏览器用户。例如，Twitter 提供了一个应用程序级的设置来帮助访问者节省数据（图 4.14）。![Twitter.com 账户信息设置菜单的截图。“数据节省”切换至开启。](img/4.14.png)
+![Weekly Timber 答页完整功能版本包含轮播图和 JavaScript 驱动的折叠面板。(image/4.10.png)图 4.10：Weekly Timber 答页面完整功能版本包含轮播图和 JavaScript 驱动的折叠面板。这些增强功能总共少于 100 KB 的未压缩 JavaScript。对于网页来说，这部分 JavaScript 并不惊人，但在慢设备上，它确实会引发相当的主线程活动（图 4.11）。![Chrome 性能分析器中 Weekly Timber 网站答页面的主线程活动概述。该页面启动了不容忽视的 JavaScript 活动，以及 JavaScript 引发的布局和绘制工作。(image/4.11.png)图 4.11：Chrome 性能分析器中 Weekly Timber 网站答页面的主线程活动概述。该页面启动了不容忽视的 JavaScript 活动，以及 JavaScript 引发的布局和绘制工作。但我们可以使用创建的 `SAVE_DATA` 常量，为 Weekly Timber 可能处于不理想农村网络环境的客户去掉花里胡哨。如果 `SAVE_DATA` 为 `true`，我们选择移除轮播图和折叠面板功能：```
+phpif (!SAVE_DATA) {?><section id="carousel">  <!-- 移除轮播图 --></section><?php}?>```### 作为自定义功能节省数据数据节省功能并不非由浏览器提供；你可以将其作为可切换设置构建到自己的应用程序中，这样所有人都能受益，而不仅仅是提供该功能的浏览器用户。例如，Twitter 提供了一个应用程序级的设置来帮助访问者节省数据（图 4.14）。![Twitter.com 账户信息设置菜单的截图。“数据节省”切换至开启。](img/4.14.png)
 
 图 4.14：Twitter 的数据节省设置位于其移动导航菜单的底部。
 

@@ -35039,7 +35039,8 @@ object
   System.Web.UI.DataControl
     System.Web.UI.WebControls.SqlDataSource
     System.Web.UI.WebControls.AccessDataSource
-```AccessDataSource 的属性见表 21.27：
+```
+AccessDataSource 的属性见表 21.27：
 
 表 21.27：AccessDataSource 类的属性
 | 属性 | 描述 |

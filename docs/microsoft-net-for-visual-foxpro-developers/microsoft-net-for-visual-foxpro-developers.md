@@ -12274,7 +12274,8 @@ xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
 </soap:Envelope>
 ```
 
-```是 SOAP 响应：
+```
+是 SOAP 响应：
 
 ```
 HTTP/1.1 200 OK

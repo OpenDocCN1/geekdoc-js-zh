@@ -5637,7 +5637,8 @@ class BlockedFile(Blocked):
 
 我们的第一步是决定如何表示构建规则（build rules）。我们可以发明一种特殊的语法来适应此问题，但正如第 5 章提到的，世界上的格式已经足够了。相反，我们将把配方表示为 JSON。例如，此文件描述了两个目标 `A` 和 `B`，并说明前者依赖后者：
 
-```json {
+```
+json {
   "A": {"depends": ["B"], "rule": "build A"},
   "B": {"depends": [], "rule": "build B"}
 }
@@ -7882,7 +7883,8 @@ hlt
 
 
 
-```pythonDIVIDER = ".data"
+```
+pythonDIVIDER = ".data"
 
 def assemble(self, lines):
     lines = self._get_lines(lines)

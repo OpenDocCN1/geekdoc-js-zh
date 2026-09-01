@@ -4757,7 +4757,8 @@ $checksum = md5($contents);
 
 
 
-```php if (file_exists($myfile)) {
+```
+php if (file_exists($myfile)) {
   $rawfile = @file_get_contents($myfile);
   $data = explode("\n", rtrim($rawfile));
   $left = array_map("PU_F1", $data);
@@ -6788,7 +6789,8 @@ else echo "Name"
 
 
 
-```php function GetUserFromDB($table, $handle) {
+```
+php function GetUserFromDB($table, $handle) {
   $query = "SELECT * FROM $table WHERE handle='$handle'";
   $result = mysql_query($query);
   if (mysql_num_rows($result) == 0) return array(FALSE);

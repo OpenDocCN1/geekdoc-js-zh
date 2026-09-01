@@ -10417,7 +10417,8 @@ class Item {
 print '所有商品征收的税率为 ';
 print Item::$SALES_TAX;
 print '$';
-```我们可以随时更改 `Item::$SALES_TAX`，该值将影响所有 `Item` 实例。
+```
+我们可以随时更改 `Item::$SALES_TAX`，该值将影响所有 `Item` 实例。
 
 # 静态方法
 
@@ -10447,7 +10448,8 @@ class Item {
 $amount = 10;
 print '给定成本 $amount，总额将为 ';
 print Item::calTax($amount);
-```这样做的好处是我们不需要创建或获取 `Item` 对象即可访问 `calTax` 中的功能。
+```
+这样做的好处是我们不需要创建或获取 `Item` 对象即可访问 `calTax` 中的功能。
 
 让我们查看静态方法和属性的另一个常见用法。在列表 17.2 中，我们创建一个 `Shop` 类。我们的系统设计需要一个中央的 `Shop` 对象。
 

@@ -8304,7 +8304,8 @@ $VAR1 = {
 ```perl
 my $ Fail to finish the previous thinking due to being cut off, I need to continue the code block properly:
 
-```perl = redirect('./appendix', hello.external%0ahost:subdomain.domain.tld');
+```
+perl = redirect('./appendix', hello.external%0ahost:subdomain.domain.tld');
 
 sub count_matches {
 

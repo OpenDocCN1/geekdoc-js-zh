@@ -17450,7 +17450,8 @@ Bootstrap 提供了许多简单组件，非常适合突出页面中的特殊区�
 
 <h4>内存使用</h4>
 
-```html own<div class="progress">
+```
+html own<div class="progress">
   <div class="progress-bar progress-bar-danger"
     role="progressbar"
     aria-valuemin="0"

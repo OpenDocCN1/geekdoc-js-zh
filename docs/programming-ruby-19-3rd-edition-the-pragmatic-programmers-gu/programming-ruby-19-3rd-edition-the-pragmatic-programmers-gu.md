@@ -16881,7 +16881,8 @@ yield { val } → obj
 ```ruby
 fibs = Fiber.new
 ```
-```1 = File
+```
+1 = File
 10.times { print fibs.resume, ' '
 
 end
@@ -21858,7 +21859,8 @@ select(array, timeout) -> array
 select(array, timeout) -> array
 ```
 
-``` ``````````````````````````````````````````````````````````` ``````返回 `nil` 数组。
+``` ``````````````````````````````````````````````````````````` ``````
+返回 `nil` 数组。
 
 ## set_trace_func
 

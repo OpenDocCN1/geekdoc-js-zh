@@ -34254,7 +34254,8 @@ WinIE 5 及更高版本还提供了一种事件捕获，它可以覆盖所有其
 
 
 
-```html own<form onclick="alert('Event is now at the button object level (' + getPhase(event) + ').')"> /> own</form>
+```
+html own<form onclick="alert('Event is now at the button object level (' + getPhase(event) + ').')"> /> own</form>
 </body>
 </html>
 ```

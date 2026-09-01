@@ -4859,7 +4859,8 @@ end
     </nav>
   </div>
 </header>
-```在 8 节之前，我们还没有“Log in”链接的命名路由，所以目前将其留为 `#`。另一个地方是页脚部分 `_footer.html.erb`，它包含 About 和 Contact 页面的链接（列表 5.24）。
+```
+在 8 节之前，我们还没有“Log in”链接的命名路由，所以目前将其留为 `#`。另一个地方是页脚部分 `_footer.html.erb`，它包含 About 和 Contact 页面的链接（列表 5.24）。
 
 **列表 5.24 带有链接的页脚部分 app/views/layouts/_footer.erb**
 

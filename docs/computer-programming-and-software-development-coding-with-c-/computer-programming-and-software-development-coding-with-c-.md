@@ -13250,7 +13250,8 @@ namespace Polygons.Library
 }
 ```
 
-当我们运行应用程序时，可以看到 Square 和 Triangle 都输出了值。因此，从表面上看，无论我们继承自具体类还是抽象类，此时情况看起来非常相似。但让我们来看一个主要区别。如果我回到 Triangle 类，注释掉 GetArea 方法，并尝试生成应用程序，我们最终会生成失败。如果我们双击这条消息，可以看到它显示"'Triangle' does not implement inherited abstract member 'GetArea'"。```using Polygons.Library;
+当我们运行应用程序时，可以看到 Square 和 Triangle 都输出了值。因此，从表面上看，无论我们继承自具体类还是抽象类，此时情况看起来非常相似。但让我们来看一个主要区别。如果我回到 Triangle 类，注释掉 GetArea 方法，并尝试生成应用程序，我们最终会生成失败。如果我们双击这条消息，可以看到它显示"'Triangle' does not implement inherited abstract member 'GetArea'"。```
+using Polygons.Library;
 using System;
 
 namespace Polygons

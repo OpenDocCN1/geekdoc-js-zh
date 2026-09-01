@@ -3958,7 +3958,8 @@ set about(a) { . . }
 
 
 
-```js static checkCategory(c) {
+```
+js static checkCategory(c) {
   if (c === undefined || c === "") {
     return new NoConstraintViolation(); // category 是可选的
   } else if (!util.isIntegerOrIntegerString(c) || parseInt(c) < 1 ||

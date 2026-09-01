@@ -842,7 +842,8 @@ Flash MX 2004.
 
 用法
 
-```functionfunction configureTool() {
+```
+functionfunction configureTool() {
   // statements
 }
 ```

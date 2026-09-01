@@ -2427,7 +2427,8 @@ Enemy.prototype.step = function(dt) {
     this.board.remove(this);
   }
 }
-```这段代码与添加到 `PlayerMissile` 对象的代码相同，只是它调用的是与 `OBJECT_PLAYER` 类型对象的碰撞。
+```
+这段代码与添加到 `PlayerMissile` 对象的代码相同，只是它调用的是与 `OBJECT_PLAYER` 类型对象的碰撞。
 
 进行这些更改后，启动游戏，让你的玩家被其中一艘船击落。
 
@@ -2487,7 +2488,8 @@ Explosion.prototype.step = function(dt) {
     this.board.remove(this);
   }
 }
-```构造函数取代了 `centerX` 和 `centerY` 位置，并通过移动精灵自身向左和向上来调整 `x` 和 `y` 位置。`step` 方法不需要移动爆炸帧；它只需要更新 `subFrame` 属性以循环爆炸的每一帧。爆炸的每一帧播放三帧使其更长一点。当 36 个 `subFrame` 完成（即 12 实际帧）时，`Explosion` 移除自己。重新加载游戏，尝试击落从屏幕上飞落的敌人。现在需要两个导弹才能击落敌人，但那个敌人应该爆炸。
+```
+构造函数取代了 `centerX` 和 `centerY` 位置，并通过移动精灵自身向左和向上来调整 `x` 和 `y` 位置。`step` 方法不需要移动爆炸帧；它只需要更新 `subFrame` 属性以循环爆炸的每一帧。爆炸的每一帧播放三帧使其更长一点。当 36 个 `subFrame` 完成（即 12 实际帧）时，`Explosion` 移除自己。重新加载游戏，尝试击落从屏幕上飞落的敌人。现在需要两个导弹才能击落敌人，但那个敌人应该爆炸。
 
 ## 表示关卡
 

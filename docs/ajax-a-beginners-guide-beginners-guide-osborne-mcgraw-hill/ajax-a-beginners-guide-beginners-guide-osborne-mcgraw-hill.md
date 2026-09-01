@@ -12779,7 +12779,8 @@ function print_copyright_notice($text = "&copy; 2008")
 
 **问：**如果我想给多个参项赋予默认值怎么办？比如：我修改了adder函数使其接纳三个参数，并希望为第二个参项（即$_operand2）设置一个默认值。
 
-```function adder($operator1,$operend 2.
+```
+function adder($operator1,$operend 2.
 $operend3){echo"sum is"; echo $operaor1 + $operand2 
 + 
 $Opernd;}}
@@ -12854,7 +12855,8 @@ $array=array("Apples" , "Oranges","Plums".Cherries",
 
 
 ![](img/
-```html <head<title>Rerurning Multiple Values from PHP Functions</tite></ head > 
+```
+html <head<title>Rerurning Multiple Values from PHP Functions</tite></ head > 
 
 <body><h1>ReturningMultipleValuesFromPHPFunctions<h2>; 
 

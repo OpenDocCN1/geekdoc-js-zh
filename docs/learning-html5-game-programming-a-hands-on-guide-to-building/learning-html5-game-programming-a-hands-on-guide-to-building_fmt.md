@@ -189,7 +189,8 @@ WebSockets 允许应用程序拥有到 URI 终点的双向通道。Sockets 可�
 
 ## 列表 1-1 回显消息的 WebSocket 代码
 
-```var socket = new WebSocket("ws://websockets.org:8768/");```
+```
+var socket = new WebSocket("ws://websockets.org:8768/");```
 
 ## Web Workers
 

@@ -3094,7 +3094,8 @@ public class Book {
 
 
 
-```xml <ui:composition template="/WEB-INF/templates/page.xhtml">
+```
+xml <ui:composition template="/WEB-INF/templates/page.xhtml">
   <ui:define name="content">
     <h:dataTable value="#{publisherController.publishers}" var="p">
       <h:column>

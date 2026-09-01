@@ -17603,7 +17603,8 @@ namespace cSharpTimerCallBack
 
 Tlbimp 工具是一个独立的控制台程序，根据你指定的 COM DLL 创建 .NET 互操作程序集。它位于 Program Files 中的 Framework 目录。以下代码片段演示了 tlbimp 的语法：
 
-```tlbimp [COMDllFilename] [/options]
+```
+tlbimp [COMDllFilename] [/options]
 ```
 
 tlbimp.exe 的命令行选项见表 34-1。

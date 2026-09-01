@@ -4498,7 +4498,8 @@ function emmy(key, ...values) {
 }
 let category="Best Movie";
 let movie="Adventures in ES6";
-emmy=```And the award for ${category} goes to ${movie}\`;
+emmy=```
+And the award for ${category} goes to ${movie}\`;
 
 // ["The award for goes to "]
 // ["Best Movie", "Adventures in ES6"]
@@ -11018,7 +11019,8 @@ function combinationComplete() {
 
 考虑一个如下所示的 v1 消息：
 
-```class CreateUserMessage implements IMessage{
+```
+class CreateUserMessage implements IMessage{
   messageName: string;
   UserName: string;
   FirstName: string;

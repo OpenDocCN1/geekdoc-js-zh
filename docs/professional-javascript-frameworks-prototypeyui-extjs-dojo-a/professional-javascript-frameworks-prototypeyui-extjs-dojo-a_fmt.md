@@ -7771,7 +7771,8 @@ cal2.render();
 | `animate` - `Boolean` | 编辑器是否应动画化窗口移动。 | 默认值：`false`，除非找到 `Animation`，则为 `true` |
 | `autoHeight` - `Boolean` \|\| `Number` | 移除区域的滚动条并调整大小以适应内容。 | 默认值：`false` |
 | `blankimage` - `String` | 插入图像时用作占位符的图像 URL。 | 默认值：当前版本的 `yahoo.com` 地址 / `'assets/blankimage.png'` |
-| `css` - `String` | 用于格式化编辑器内容的基础 CSS。 | 默认值：```css html { height: 95%; } body { height: 100%; padding: 7px; background-color: #fff; font: 13px/1.22 arial, helvetica, clean, sans-serif; *font-size:small; *font-x-small; } { color: blue; text-decoration: underline; cursor: pointer; } .warning-localfile { border-bottom: 1px dashed red !important; } yui-busy { cursor: wait !important; } im.selected { //Safari image selection border: 2px dotted #808080; } im { cursor: pointer !important; border: none; } ``` |
+| `css` - `String` | 用于格式化编辑器内容的基础 CSS。 | 默认值：```
+css html { height: 95%; } body { height: 100%; padding: 7px; background-color: #fff; font: 13px/1.22 arial, helvetica, clean, sans-serif; *font-size:small; *font-x-small; } { color: blue; text-decoration: underline; cursor: pointer; } .warning-localfile { border-bottom: 1px dashed red !important; } yui-busy { cursor: wait !important; } im.selected { //Safari image selection border: 2px dotted #808080; } im { cursor: pointer !important; border: none; } ``` |
 | `disabled` - `Boolean` | 切换编辑器的禁用状态。当编辑器被禁用时，`designMode` 被关闭，并在 `iframe` 上放置一个遮罩层，因此无法进行任何交互。所有工具栏按钮也被禁用，因此无法使用。 | 默认值：`false` |
 | `dompath` - `Boolean` | 切换编辑器下方当前 `DOM` 路径的显示。 | 默认值：`false` |
 | `element_cont` - `HTMLElement` | 编辑器容器的内部配置。 | 默认值：`false` |
@@ -7779,7 +7780,8 @@ cal2.render();
 | `focusStart` - `Boolean` | 内容就绪时，编辑器是否应聚焦窗口？ | 默认值：`false` |
 | `handleSubmit` - `Boolean` | 配置处理编辑器是否将自身附加到 `textarea` 父元素的提交处理程序。如果设置为 `true`，编辑器将尝试将监听器附加到 `textarea` 的父元素。然后在表单提交之前触发编辑器的保存处理程序，并将新内容放回文本区域。 | 默认值：`false` |
 | `height` - `String` | 编辑器 `iframe` 容器的高度，不包括工具栏。 | 默认值：`textarea` 的最佳猜测尺寸；为获得最佳效果，请使用 CSS 设置 `textarea` 的高度或将其作为参数传递。 |
-| `html` - `String` | 在内容加载之前写入 `iframe` 文档的默认 HTML（注意 `DOCTYPE` 属性将被添加以渲染项目）。 | 默认值：此 HTML 需要您覆盖几项内容：`{TITLE}`、`{CSS}`、`{HIDDEN_CSS}`、`{EXTRA_CSS}` 和 `{CONTENT}` 需要存在；它们被传递给 `YAHOO.lang.substitute` 以替换为其他字符串。`onload="document.body._rteLoaded = true;"` `onload` 语句必须存在，否则编辑器将无法完成加载。```html <html> <head> <title>{TITLE}</title> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <style> {CSS} </style> <style> {HIDDEN_CSS} </style> <style> {EXTRA_CSS} </style> </head> <body onload="document.body._rteLoaded = true"> {CONTENT} </body> </html> ``` |
+| `html` - `String` | 在内容加载之前写入 `iframe` 文档的默认 HTML（注意 `DOCTYPE` 属性将被添加以渲染项目）。 | 默认值：此 HTML 需要您覆盖几项内容：`{TITLE}`、`{CSS}`、`{HIDDEN_CSS}`、`{EXTRA_CSS}` 和 `{CONTENT}` 需要存在；它们被传递给 `YAHOO.lang.substitute` 以替换为其他字符串。`onload="document.body._rteLoaded = true;"` `onload` 语句必须存在，否则编辑器将无法完成加载。```
+html <html> <head> <title>{TITLE}</title> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <style> {CSS} </style> <style> {HIDDEN_CSS} </style> <style> {EXTRA_CSS} </style> </head> <body onload="document.body._rteLoaded = true"> {CONTENT} </body> </html> ``` |
 | `limitCommands` `Boolean` | 编辑器是否应将允许的 `execCommands` 限制在工具栏中可用的命令。如果为 `true`，则如果 `execCommand` 和键盘快捷键未在工具栏中定义，它们将失败。 | 默认值：`false` |
 | `markup` - `String` | 编辑器是否应尝试调整以下类型的标记：`semantic`、`CSS`、`default` 或 `html`。 | 默认值：`"semantic"` |
 | `nodeChangeThreshold` `Number` | 需要在 `nodeChange` 处理之间间隔的秒数。 | 默认值：3 |

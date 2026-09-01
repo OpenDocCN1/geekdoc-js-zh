@@ -1065,7 +1065,8 @@ HTML 规范从未规定特定的字母大小写。结果是开发者习惯了用
 
 <br>Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html">Yannatos 开始指挥哈佛-拉德克夫交弦乐团</a>http://www.news.harvard.edu/gazette/2004/10.21-yannatos</a><font size="-1">更多</font><font size="-1">br></font></td><td width="120
 
-```Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html">Yannatos 开始指挥哈佛-拉德克夫交弦乐团</a></a>http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html</a><font size="-1">更多</font><font size="-1">br></font></td>
+```
+Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html">Yannatos 开始指挥哈佛-拉德克夫交弦乐团</a></a>http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html</a><font size="-1">更多</font><font size="-1">br></font></td>
 
 ```
 
@@ -9416,7 +9417,8 @@ padding: 0 33px;
 font-family: Georgia, "Times Roman", Times, serif;
 font-weight: normal;
 }
-```我在标题顶部应用了 12 像素的外边距，使其与之前的标题保持一些距离。然后，我在右侧也应用了 33 像素的内边距。再次，这样做是为了在标题换行时留出空间。我倾向于让标题换行，而不是让它与博客宽度相等。最后两个声明处理排版问题：设置字体以及移除与标题相关的粗体。最后一个项目处理文章的页脚。每篇文章都包含了元信息（meta）。元信息包含了与文章相关的分类以及评论链接。
+```
+我在标题顶部应用了 12 像素的外边距，使其与之前的标题保持一些距离。然后，我在右侧也应用了 33 像素的内边距。再次，这样做是为了在标题换行时留出空间。我倾向于让标题换行，而不是让它与博客宽度相等。最后两个声明处理排版问题：设置字体以及移除与标题相关的粗体。最后一个项目处理文章的页脚。每篇文章都包含了元信息（meta）。元信息包含了与文章相关的分类以及评论链接。
 
 ## 整合
 

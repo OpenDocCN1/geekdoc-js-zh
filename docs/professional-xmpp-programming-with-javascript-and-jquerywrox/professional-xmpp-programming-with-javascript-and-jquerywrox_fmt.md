@@ -2279,7 +2279,8 @@ $(document).bind('disconnected', function () {
 });
 ```
 
-```code snippet arthur.js
+```
+code snippet arthur.js
 ```
 
 Arthur 的用户现在应该能够登录他们的 XMPP 账户了。
@@ -2302,7 +2303,8 @@ $(document).bind('connected', function () {
 
 ![](img/2eb955af9e1fccf052f4e6e817dbffa9_104_0.png)
 
-```codecode snippet arthur.js
+```
+codecode snippet arthur.js
 ```
 
 处理器被设置为查找 type 属性为 chat 的 `<message>` 节。正如你在第 1 章中学到的，chat 类型在 XMPP 协议中用于普通的私有消息。
@@ -2321,7 +2323,8 @@ handle_message: function (message) {
 }
 ```
 
-```code snippet author.js
+```
+code snippet author.js
 ```
 
 该代码使用`children()`来仅寻找作为 `<message>` 节直接子元素的 `<body>` 元素。正如你很快看到的，Identica 消息有一个额外的 `<body>` 元素，代码在这一方面需要更具体一些以找到正确的一个。

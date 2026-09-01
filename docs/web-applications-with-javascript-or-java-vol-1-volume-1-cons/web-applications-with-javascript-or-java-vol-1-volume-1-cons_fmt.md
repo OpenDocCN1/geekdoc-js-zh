@@ -6605,7 +6605,8 @@ public String getPublicationForms() {
 
 
 
-```java if (i < n-1) result += ", ";
+```
+java if (i < n-1) result += ", ";
 
 i++;
 

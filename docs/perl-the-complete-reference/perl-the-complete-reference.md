@@ -27634,7 +27634,8 @@ get{sock,peer}name() on closed fd
 ```
 getpwnam 为用户 "%s" 返回无效 UIC ##o
 
-```严重警告 VMS 特有的警告。getpwnam 操作底层的 sysgetui 返回了无效 UIC。
+```
+严重警告 VMS 特有的警告。getpwnam 操作底层的 sysgetui 返回了无效 UIC。
 
 ```
 Glob 未结束
@@ -33601,14 +33602,16 @@ REFERENCES 第 16 章
 
 该模块定义了基于套接通信的核心函数和实用例程。
 
-```use Socket;```
+```
+use Socket;```
 该模块定义了一组核心函数，如表 15 所示。
 
 REFERENCES 第 9 章；另见 IO::Socket
 
 ## strict
 
-```use strict;
+```
+use strict;
 ```
 `strict` 预处理指令限制了那些通常被认为不安全的结构和语句。
 特别是，它减少了 Perl 对你试图实现的目标所做的假设的影响，而是对变量、引用以及原本会被解释为函数的词定义和使用加上限制。可以通过 `vars`、`refs` 和 `subs` 分别开启或关闭。
@@ -33620,7 +33623,8 @@ REFERENCES 第 16 章
 
 `subs` 预处理指令重新声明 `func`，以便在 Perl 看到完整定义之前可以在带括号的情况下调用该函数。
 
-```use subs qw(func);```
+```
+use subs qw(func);```
 
 ## Perl：完全参考
 
@@ -33660,7 +33664,8 @@ REFERENCES 第 3 章
 
 该模块提供了一组操作 Perl 符号及其名称的函数。
 
-```use Symbol;
+```
+use Symbol;
 $glob = gensym;
 print qualify($sym,pkg);
 print qualify_to_ref($sym,pkg);

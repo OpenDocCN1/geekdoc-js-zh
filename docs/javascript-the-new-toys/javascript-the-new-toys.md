@@ -6086,7 +6086,8 @@ console.log(a);             // 1
 let obj = {first: 1, second: 2};
 let {first: a} = obj;      // 新解构语法
 console.log(a);             // 1
-```解构告诉 JavaScript 引擎将第一个属性的值放入变量 `a` 中。再次，目前这既比手动形式更长又更扭，但你很快就会看到它变得更简洁且更具表现力。
+```
+解构告诉 JavaScript 引擎将第一个属性的值放入变量 `a` 中。再次，目前这既比手动形式更长又更扭，但你很快就会看到它变得更简洁且更具表现力。
 
 注意解构模式 `{first: a}` 看起来与对象字面量完全一样。这是刻意为之：它们的语法完全相同。
 
@@ -13008,7 +13009,8 @@ export function showTime() {
 
 与静态导入不同，动态导入也可以用于脚本中，而不仅仅是模块中。请看代码列表 13-20 和 13-21，它们为之前的动态示例提供了不同的 HTML 页面和入口点（重用了其余的文件）。
 
-```代码列表 13-20: 脚本中的动态模块加载（HTML）—dynamic-example-2.html
+```
+代码列表 13-20: 脚本中的动态模块加载（HTML）—dynamic-example-2.html
 
 ```html
 <!DOCTYPE html>
@@ -14879,7 +14881,8 @@ const rex = /\uD83D\uDE0A/
 const str = "Testing 🙂";
 console.log(rex.test(str)); // true
 
-```推算 UTF-16 单元是很麻烦的。从 ES2015 开始，使用 `u` 标志的正则表达式可以使用大括号 `{}` 转义序列，在 `u` 后面跟随十六进制值：
+```
+推算 UTF-16 单元是很麻烦的。从 ES2015 开始，使用 `u` 标志的正则表达式可以使用大括号 `{}` 转义序列，在 `u` 后面跟随十六进制值：
 
 ```javascript
 const rex = /\u{1F60A}/u;

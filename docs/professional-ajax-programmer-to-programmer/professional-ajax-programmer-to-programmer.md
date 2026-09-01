@@ -3780,7 +3780,8 @@ if (bIsXml) {
   this.load(sFileName);
 }
 
-```如果 `bIsXml` 为 `false` 或 `undefined`，则 `sFileName` 被视为 URL，`XParser` 将发起自己的请求；否则，`sFileName` 被视为 XML 字符串并加载到 `bIsXml` 中。
+```
+如果 `bIsXml` 为 `false` 或 `undefined`，则 `sFileName` 被视为 URL，`XParser` 将发起自己的请求；否则，`sFileName` 被视为 XML 字符串并加载到 `bIsXml` 中。
 
 ```javascript
 else {

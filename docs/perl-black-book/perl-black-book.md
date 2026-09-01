@@ -9324,7 +9324,8 @@ $running_sum = 0;
 for ($loop_index = 0; $loop_index <= @a + 1; $loop_index++) {
     $running_sum += $a[$loop_index];
 }
-```print "Average value = " . $running_sum / (@a + 1);
+```
+print "Average value = " . $running_sum / (@a + 1);
 
 ```perl
 for ($loop_index = 0; $loop_index <= 10; $loop_index++, $double = 2 * $loop_index)

@@ -1688,7 +1688,8 @@ console.log(myName); // 它将记录 "marypoppins"
 process.env.shell‘/usr/bin/fish’
 process.env.LANG‘en_US.UTF-8’
 process.env.USER‘marypoppins’
-```我们我们还可以使用 `process.stdin`、`process.stdout` 和 `process.stderr`（它们都是流）来与环境交互。process 对象是一个 `EventEmitter` 实例，这意味着该对象可以用于注册事件监听器：
+```
+我们我们还可以使用 `process.stdin`、`process.stdout` 和 `process.stderr`（它们都是流）来与环境交互。process 对象是一个 `EventEmitter` 实例，这意味着该对象可以用于注册事件监听器：
 
 ![显示 process 如何作为事件监听器的简单代码](img/Image00012.jpg)
 

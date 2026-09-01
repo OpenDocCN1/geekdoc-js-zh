@@ -35116,7 +35116,8 @@ importScripts('./scriptB.js');
 ```
 // 
 
-````importimportScripts  接受数量的的。。浏览器以任何任何下载下载它们但脚本脚本按照按照参数参数执行。因此，， worker 脚本将等同于：
+````
+importimportScripts  接受数量的的。。浏览器以任何任何下载下载它们但脚本脚本按照按照参数参数执行。因此，， worker 脚本将等同于：
 
 ```
 console.log('importing scripts');

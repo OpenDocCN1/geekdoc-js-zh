@@ -539,7 +539,8 @@ document.write("Welcome "+name);
 
 所以现在你可以看看另一个称为 `onclick` 的事件处理程序。HTML 页面上找到的每个可见元素都提供该事件处理程序，甚至 `<body>` 元素；所以如果我们在寻找某些东西，可能并不明显，因为它们都具有这一共同特征。但是人们更习惯于点击超链接，所以对于这个示例，你将继续在用于从当前页面内容导航出去的锚元素上包含处理程序。如果我们想要确认用户在真的前往其他地方之前怎么办？我们可以在主身体末尾添加一些 HTML，就像下面图二点四所示：
 
-```html  
+```
+html  
 <a href="http://mykb.com"
    onclick="return confirm('Really navigate away from this page?');">Knowledge Base Software</a> 
 ```  
@@ -10543,7 +10544,8 @@ Atlas Controls
 
 既然你已经了解了自定义验证器的代码，现在可以将两个或多个验证器关联起来以进行组验证（group validation）：  
 
-```xml  
+```
+xml  
 <atlas:ScriptManager runat="server" ID= " Script Manager1"/> 
 <div id = " lblValid > Valid. Good data has been entered.<br /><br /></div>
 <div id ="lblInvalid"> Invalid Bad date has been entrred Please revlew your inputs,<BR/><br/></div><dive class = descrtption>This is the group validation page.this example demonstrates he variation of two controls together.Regex Validation Example, Enter a value. Entering the term“fail"will cause the validation to fail.br /><b/<input type=text$id= textbo xValue,class=input"/>&nbsp<spanid=valLabelstyle=color:red></span><br/><h/</div>  

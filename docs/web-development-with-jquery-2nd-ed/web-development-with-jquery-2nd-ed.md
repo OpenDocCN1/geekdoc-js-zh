@@ -5368,7 +5368,8 @@ jQuery 提供的一些伪类在 CSS 中是不可行的。例如，jQuery 的 `:p
 上述标记使用了以下样式表进行样式处理：
 
 ```
-```body {
+```
+body {
   font: 12px 'Lucida Grande', Arial, sans-serif;
   color: rgb(50, 50, 50);
   margin: 0;

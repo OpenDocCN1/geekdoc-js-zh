@@ -3245,7 +3245,8 @@ $('#contact-dialog').dialog({
 ```javascript
 }
 ```
-```code snippet gab.js```
+```
+code snippet gab.js```
 
 当用户点击按钮时，`contact_added` 事件会创建一个 IQ 结果。你需要在 gab.js 的末尾处理此事件：
 

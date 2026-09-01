@@ -40499,7 +40499,8 @@ End Try
 
 
 
-```vb End Sub
+```
+vb End Sub
 
 Sub Enumerate(ByVal grp As ConfigurationSection, ByVal writeXML As XmlWriter)
 
@@ -47476,7 +47477,8 @@ Lisa 在多年前就了 kogent。现在，她是公司的销售副总裁。她�
 
 
 
-```xml <?xml version="1.0" encoding="ISO-8859-1"?>
+```
+xml <?xml version="1.0" encoding="ISO-8859-1"?>
 <company xmlns:xlink="http://www.w3.org/1999/xlink">
   <employee name="John">
     <description>
@@ -51826,7 +51828,8 @@ Spring Framework 是一种使用 HTML、CSS 和极少 JavaScript 将 XML、JSON 
 
 
 
-```html <div id="CentralColumn">
+```
+html <div id="CentralColumn">
   <div id="articles">
     <form id="articles">
       <div id="articles">
@@ -54076,7 +54079,8 @@ for ($i = 0; $i < $book->length; $i++) {
 
 
 
-```php echo($book->item($i)->childNodes->item(0)->nodeValue);
+```
+php echo($book->item($i)->childNodes->item(0)->nodeValue);
 
 echo("<br/>");
 
@@ -54437,7 +54441,8 @@ Content-Length: 200
 
 
 
-```xml <wsdl:service>
+```
+xml <wsdl:service>
   <wsdl:portype name="name" />
 </wsdl:portype>
 </wsdl:service>

@@ -16742,7 +16742,8 @@ function includedObject(artProgram, version, platform) {
 
 
 
- ```myIO1 = new includedObject("Bryce", 3.0, "Macintosh");
+ ```
+myIO1 = new includedObject("Bryce", 3.0, "Macintosh");
 myIO2 = new includedObject("Photoshop", 4.0, "Macintosh");
 
 /*------------------------------------------------------------------------*/

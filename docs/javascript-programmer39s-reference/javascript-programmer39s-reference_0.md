@@ -10998,7 +10998,8 @@ function performCommand(cmd, arg) {
 
 有多种方法可以将 CSS 应用到元素上。最直接的方法是使用 `style` HTML 声明，并使用分号分隔单个属性：
 
-```html own<div style="position:absolute; top:10px; left:10px;">I′m floating in space.</div>
+```
+html own<div style="position:absolute; top:10px; left:10px;">I′m floating in space.</div>
 ```
 
 这种方法非常有效且得到了通用支持，但也有几个缺点。首先，它可能导致文档非常杂乱。这种嵌入 CSS 的方式在视觉上很难看，而且在调试布局时，难以在视觉上与内容隔离开。另一个缺点是缺乏重用性。CSS 类的一个大优势是可以将相同的属性应用到多个元素上。例如，如果你想定义某种样式，将 `DIV` 标签转换为高对比度信息框，你可以创建一个类并在整个网站中重用它：
@@ -17613,7 +17614,8 @@ var newBoxWidth = (cachedWidth / cachedHeight) * newHeight;
 
 
 
-```var newBoxHeight = (cachedHeight / cachedWidth) * newWidth;```
+```
+var newBoxHeight = (cachedHeight / cachedWidth) * newWidth;```
 这对于重复操作特别为重要。
 
 ## 使用文档片段
@@ -27709,13 +27711,15 @@ POPUP 对象代表特殊的重叠窗口，通常用于对话框、消息框或�
 
 ### **D**
 
-- `data` 随 GET 请求更改的`客户端数据与持久化。*另参见* `客户端数据与持久化```数据安全`加载 JSON 存储的。*另参见* `客户端数据与持久化```使用 XSLT 转换`
+- `data` 随 GET 请求更改的`客户端数据与持久化。*另参见* `客户端数据与持久化```数据安全`加载 JSON 存储的。*另参见* `客户端数据与持久化```
+使用 XSLT 转换`
 - `data types` 转换为布尔值`按值 vs. 引用操作`非数值，转换为数字`非字符串，转换为字符串``null 和 undefined```原生布尔值``原生 vs. 引用类型``原生 vs. 原生对象``类型转换```类型`，确定`
 - `databases, Gears plugin` 数据库，Gears 插件
 - `dates` 日期`比较运算符和`创建`Date 对象`日期字符串，解析`读取和写入``时间差异，测量``定时器和间隔`世界时间概览`
 `daysInMonth()` 函数
 - `debugging` 调试
-`Debug 对象（全局）```Charles 代理调试器`开发者工具栏 (IE)``Dragonfly (Opera)` 错误处理器`Error 对象概览`Fiddler`Firebug (Firefox)` 栈跟踪函数`测试工具`抛出自定义错误`类型`Web 检查 (Safari) 4`
+`Debug 对象（全局）```
+Charles 代理调试器`开发者工具栏 (IE)``Dragonfly (Opera)` 错误处理器`Error 对象概览`Fiddler`Firebug (Firefox)` 栈跟踪函数`测试工具`抛出自定义错误`类型`Web 检查 (Safari) 4`
 - `declaring functions` 定义函数
 `decrement 运算符`
 `默认行为（事件）`
@@ -27741,13 +27745,15 @@ DHTML`
 `dynamic-              `
 - `custom errors` 抛出自定义错误`类型`
 - `custom events` 自定义事件
-- `data` 随 GET 请求更改的`客户端数据与持久化。*另参见* `客户端数据与持久化```数据安全`加载 JSON 存储的。*另参见* `客户端数据与持久化```使用 XSLT 转换`
+- `data` 随 GET 请求更改的`客户端数据与持久化。*另参见* `客户端数据与持久化```数据安全`加载 JSON 存储的。*另参见* `客户端数据与持久化```
+使用 XSLT 转换`
 - `data types` 数据类型`转换为布尔值`按值 vs. 引用操作`非数值，转换为数字`非字符串，转换为字符串`null 和 undefined```原生布尔值``原生 vs. 引用类型``原生 vs. 原生对象``类型转换```类型`，确定`
 - `databases, Gears plugin` 数据库，Gears 插件
 - `dates` 日期`比较运算符和`创建`Date 对象`日期字符串，解析`读取和写入`时间差异`时间差异，测量``定时器和间隔`世界时间概览`
 `daysInMonth()` 函数
 - `debugging` 调试
-`Debug 对象（全局）```Charles 代理调试器`开发者工具栏 (IE)``Dragonfly (Opera)` 错误处理器`Error 对象概览`Fiddler`Firebug (Firefox)` 栈跟踪函数`测试工具`抛出自定义错误`类型`Web 检查 (Safari) 4`
+`Debug 对象（全局）```
+Charles 代理调试器`开发者工具栏 (IE)``Dragonfly (Opera)` 错误处理器`Error 对象概览`Fiddler`Firebug (Firefox)` 栈跟踪函数`测试工具`抛出自定义错误`类型`Web 检查 (Safari) 4`
 - `declaring functions` 定义函数
 `decrement 运算符`
 `默认行为（事件）`
@@ -27795,7 +27801,8 @@ Wait，我重新检查一遍，正确的翻译如下：
 
 ### **D**
 
-- `data` 随 GET 请求更改的`客户端数据与持久化。*另参见* `客户端数据与持久化```数据安全`加载 JSON 存储的。*另参见* `客户端数据与持久化```使用 XSLT 转换`
+- `data` 随 GET 请求更改的`客户端数据与持久化。*另参见* `客户端数据与持久化```数据安全`加载 JSON 存储的。*另参见* `客户端数据与持久化```
+使用 XSLT 转换`
 - `data types` 数据类型`转换为布尔值`按值 vs. 引用操作`非数值，转换为数字`非字符串，转换为字符串`null 和 undefined```原生布尔值``原生 vs. 引用类型``原生 vs. 原生对象``类型转换```类型`，确定`
 - `databases, Gears plugin` ... (这里我重复了)
 )
@@ -27884,13 +27891,15 @@ Wait，我重新检查一遍，正确的翻译如下：
 
 ### **D**
 
-- `data` 随 GET 请求更改的`客户端数据与持久化。*另参见* `客户端数据与持久化```数据安全`加载 JSON 存储的。*另参见* `客户端数据与持久化```使用 XSLT 转换`
+- `data` 随 GET 请求更改的`客户端数据与持久化。*另参见* `客户端数据与持久化```数据安全`加载 JSON 存储的。*另参见* `客户端数据与持久化```
+使用 XSLT 转换`
 - `data types` 数据类型`转换为布尔值`按值 vs. 引用操作`非数值，转换为数字`非字符串，转换为字符串`null 和 undefined```原生布尔值``原生 vs. 引用类型``原生 vs. 原生对象``类型转换```类型`，确定`
 - `databases, Gears plugin` 数据库，Gears 插件
 - `dates` 日期`比较运算符和`创建`Date 对象`日期字符串，解析`读取和写入``时间差异，测量``定时器和间隔`世界时间概览`
 `daysInMonth()` 函数
 - `debugging` 调试
-`Debug 对象（全局）```Charles 代理调试器`开发者工具栏 (IE)``Dragonfly (Opera)` 错误处理器`Error 对象概览`Fiddler`Firebug (Firefox)` 栈跟踪函数`测试工具`抛出自定义错误`类型`Web 检查 (Safari) 4`
+`Debug 对象（全局）```
+Charles 代理调试器`开发者工具栏 (IE)``Dragonfly (Opera)` 错误处理器`Error 对象概览`Fiddler`Firebug (Firefox)` 栈跟踪函数`测试工具`抛出自定义错误`类型`Web 检查 (Safari) 4`
 - `declaring functions` 定义函数
 `decrement 运算符`
 `默认行为（事件）`
@@ -27977,12 +27986,16 @@ Wait，我重新检查一遍，正确的翻译如下：
 [content]
 ### **D**
 
-- `data`随 GET 请求更改的`client-side data and persistence. *See* `client-side data and persistence```data security`loading JSON`storage of. *See* `client-side data and persistence```transforming with XSLT`
-- `data types` 转换为布尔值`manipulating by value vs. reference`non-numeric, converting to numbers`non-string, converting to strings`null and undefined```primitive Boolean value``primitive vs. reference types``primitives vs. primitive objects``type conversion```type`, determining`
+- `data`随 GET 请求更改的`client-side data and persistence. *See* `client-side data and persistence```
+data security`loading JSON`storage of. *See* `client-side data and persistence```
+transforming with XSLT`
+- `data types` 转换为布尔值`manipulating by value vs. reference`non-numeric, converting to numbers`non-string, converting to strings`null and undefined```
+primitive Boolean value``primitive vs. reference types``primitives vs. primitive objects``type conversion```type`, determining`
 - `databases, Gears plugin`
 - `dates` 比较运算符和`创建`Date 对象`日期字符串，解析`读取和写入``时间差异，测量``定时器和间隔`世界时间概览`
 `daysInMonth()` 函数
-- `debugging` Debug 对象（全局）```Charles Proxy Debugger`开发者工具栏 (IE)``Dragonfly (Opera)` 错误处理器`Error 对象概览`Fiddler`Firebug (Firefox)` 栈跟踪函数`测试工具`抛出自定义错误`Web 检查 (Safari) 4`
+- `debugging` Debug 对象（全局）```
+Charles Proxy Debugger`开发者工具栏 (IE)``Dragonfly (Opera)` 错误处理器`Error 对象概览`Fiddler`Firebug (Firefox)` 栈跟踪函数`测试工具`抛出自定义错误`Web 检查 (Safari) 4`
 - `declaring functions` 定义函数
 `decrement 运算符`
 `默认行为（事件）`
@@ -28132,13 +28145,15 @@ Wait，我重新检查一遍，正确的翻译如下：
 
 ### **D**
 
-- `data` 随 GET 请求更改的`客户端数据与持久化。*另参见* `客户端数据与持久化```数据安全`加载 JSON 存储的。*另参见* `客户端数据与持久化```使用 XSLT 转换`
+- `data` 随 GET 请求更改的`客户端数据与持久化。*另参见* `客户端数据与持久化```数据安全`加载 JSON 存储的。*另参见* `客户端数据与持久化```
+使用 XSLT 转换`
 - `data types` 数据类型`转换为布尔值`按值 vs. 引用操作`非数值，转换为数字`非字符串，转换为字符串`null 和 undefined```原生布尔值``原生 vs. 引用类型``原生 vs. 原生对象``类型转换```类型`，确定`
 - `databases, Gears plugin` 数据库，Gears 插件
 - `dates` 日期`比较运算符和`创建`Date 对象`日期字符串，解析`读取和写入``时间差异，测量``定时器和间隔`世界时间概览`
 `daysInMonth()` 函数
 - `debugging` 调试
-`Debug 对象（全局）```Charles 代理调试器`开发者工具栏 (IE)``Dragonfly (Opera)` 错误处理器`Error 对象概览`Fiddler`Firebug (Firefox)` 栈跟踪函数`测试工具`抛出自定义错误`Web 检查 (Safari) 4`
+`Debug 对象（全局）```
+Charles 代理调试器`开发者工具栏 (IE)``Dragonfly (Opera)` 错误处理器`Error 对象概览`Fiddler`Firebug (Firefox)` 栈跟踪函数`测试工具`抛出自定义错误`Web 检查 (Safari) 4`
 - `declaring functions` 定义函数
 `decrement 运算符`
 `默认行为（事件）`
@@ -28243,13 +28258,15 @@ Wait，我重新检查一遍，正确的翻译如下：
 
 ### **D**
 
-- `data` 随 GET 请求更改的`客户端数据与持久化。*另参见* `客户端数据与持久化```数据安全`加载 JSON 存储的。*另参见* `客户端数据与持久化```使用 XSLT 转换`
+- `data` 随 GET 请求更改的`客户端数据与持久化。*另参见* `客户端数据与持久化```数据安全`加载 JSON 存储的。*另参见* `客户端数据与持久化```
+使用 XSLT 转换`
 - `data types` 数据类型`转换为布尔值`按值 vs. 引用操作`非数值，转换为数字`非字符串，转换为字符串`null 和 undefined```原生布尔值``原生 vs. 引用类型``原生 vs. 原生对象``类型转换```类型`，确定`
 - `databases, Gears plugin` 数据库，Gears 插件
 - `dates` 日期`比较运算符和`创建`Date 对象`日期字符串，解析`读取和写入``时间差异，测量``定时器和间隔`世界时间概览`
 `daysInMonth()` 函数
 - `debugging` 调试
-`Debug 对象（全局）```Charles 代理调试器`开发者工具栏 (IE)``Dragonfly (Opera)` 错误处理器`Error 对象概览`Fiddler`Firebug (Firefox)` 栈跟踪函数`测试工具`抛出自定义错误`Web 检查 (Safari) 4`
+`Debug 对象（全局）```
+Charles 代理调试器`开发者工具栏 (IE)``Dragonfly (Opera)` 错误处理器`Error 对象概览`Fiddler`Firebug (Firefox)` 栈跟踪函数`测试工具`抛出自定义错误`Web 检查 (Safari) 4`
 - `declaring functions` 定义函数
 `decrement 运算符`
 `默认行为（事件）`
@@ -28373,13 +28390,15 @@ Wait，我重新检查一遍，正确的翻译如下：
 
 ### **D**
 
-- `data` 随 GET 请求更改的`客户端数据与持久化。*另参见* `client-side data and persistence```数据安全`加载 JSON 存储的。*另参见* `client-side data and persistence```使用 XSLT 转换`
+- `data` 随 GET 请求更改的`客户端数据与持久化。*另参见* `client-side data and persistence```数据安全`加载 JSON 存储的。*另参见* `client-side data and persistence```
+使用 XSLT 转换`
 - `data types` 数据类型`转换为布尔值`按值 vs. 引用操作`非数值，转换为数字`非字符串，转换为字符串`null 和 undefined```原生布尔值``原生 vs. 引用类型``原生 vs. 原生对象``类型转换```类型`，确定`
 - `databases, Gears plugin` 数据库，Gears 插件
 - `dates` 日期`比较运算符和`创建`Date 对象`日期字符串，解析`读取和写入``时间差异，测量``定时器和间隔`世界时间概览`
 `daysInMonth()` 函数
 - `debugging` 调试
-`Debug 对象（全局）```Charles 代理调试器`开发者工具栏 (IE)``Dragonfly (Opera)` 错误处理器`Error 对象概览`Fiddler`Firebug (Firefox)` 栈跟踪函数`...
+`Debug 对象（全局）```
+Charles 代理调试器`开发者工具栏 (IE)``Dragonfly (Opera)` 错误处理器`Error 对象概览`Fiddler`Firebug (Firefox)` 栈跟踪函数`...
 - `declaring functions` 定义函数
 `decrement 运算符`
 `默认行为（事件）`
@@ -28509,13 +28528,15 @@ Wait，我重新检查一遍，正确的翻译如下：
 
 ### **D**
 
-- `data` 随 GET 请求更改的`客户端数据与持久化。*另参见* `client-side data and persistence```数据安全`加载 JSON 存储的。*另参见* `client-side data and persistence```使用 XSLT 转换`
+- `data` 随 GET 请求更改的`客户端数据与持久化。*另参见* `client-side data and persistence```数据安全`加载 JSON 存储的。*另参见* `client-side data and persistence```
+使用 XSLT 转换`
 - `data types` 数据类型`转换为布尔值`按值 vs. 引用操作`非数值，转换为数字`非字符串，转换为字符串`null 和 undefined```原生布尔值``原生 vs. 引用类型``原生 vs. 原生对象``类型转换```类型`，确定`
 - `databases, Gears plugin` 数据库，Gears 插件
 - `dates` 日期`比较运算符和`创建`Date 对象`日期字符串，解析`读取和写入``时间差异，测量``定时器和间隔`世界时间概览`
 `daysInMonth()` 函数
 - `debugging` 调试
-`Debug 对象（全局）```Charles 代理调试器`开发者工具栏 (IE)``Dragonfly (Opera)` 错误处理器`Error 对象概览`Fiddler`Firebug (Firefox)` 栈跟踪函数`测试工具`抛出自定义错误`Web 检查 (Safari) 4`
+`Debug 对象（全局）```
+Charles 代理调试器`开发者工具栏 (IE)``Dragonfly (Opera)` 错误处理器`Error 对象概览`Fiddler`Firebug (Firefox)` 栈跟踪函数`测试工具`抛出自定义错误`Web 检查 (Safari) 4`
 - `declaring functions` 定义函数
 `decrement 运算符`
 `默认行为（事件）`

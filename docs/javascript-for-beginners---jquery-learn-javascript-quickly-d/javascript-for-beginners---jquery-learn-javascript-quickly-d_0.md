@@ -91,7 +91,8 @@ JavaScript 被称为网页语言。这是因为大多数（如果不是所有）
 
 你的代码段看起来所示：
 
-```html own<script language = “javascript” type = “text/javascript”> JavaScript code </script>
+```
+html own<script language = “javascript” type = “text/javascript”> JavaScript code </script>
 ``` (JavaScript - Syntax, n.d.)
 
 你可以完全自由地在程序中使用空格、制表符和换行符，你也可以以易于自己阅读和理解的方式对代码进行格式化和缩进，但 JavaScript 会忽略这些内容。在 JavaScript 中，简单语句后面通常跟着一个分号，但如果你的语句写在不同的行，你也可以选择省略分号。

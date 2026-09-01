@@ -6630,7 +6630,8 @@ date.getMonth();
 
 首先重写 timeBased() 函数以使用缓动方程。我通常缩短变量名以匹配方程：t 是通过时间（timePassed），c 是移动距离（distanceToTravel 或 "change"），b 是起始（begin），e 是结束（end），d 是持续时间（duration）。
 
-```getfunction timeBasedEasing(box, b, e, d, easing) {
+```
+getfunction timeBasedEasing(box, b, e, d, easing) {
   var c = e - b,
   startTime = new Date();
 

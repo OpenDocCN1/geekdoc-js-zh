@@ -2212,7 +2212,8 @@ NSLog(\@"I now draw %@", [myCar2 getFormattedListing]);
         model = [newModel retain];
     }
 }
-```你可能会好奇那些在没有 `alloc` 方法帮助的情况下创建的对象会发生什么。毕竟，将一个 Objective-C 字符串常量分配给 `NSString` 变量会在内存中创建一个对象。对于对象也是如此……
+```
+你可能会好奇那些在没有 `alloc` 方法帮助的情况下创建的对象会发生什么。毕竟，将一个 Objective-C 字符串常量分配给 `NSString` 变量会在内存中创建一个对象。对于对象也是如此……
 
 简短的答案是你不需要——至少不是直接需要。以这种方式创建的对象被称为自动释放（autoreleased）对象。这些对象的引用自动存储在 `NSAutleasePool` 中。如果这个名字看起来很熟悉，请查看 `main.m` 文件，`main()` 函数如下：
 

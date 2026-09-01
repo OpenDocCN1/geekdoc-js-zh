@@ -11113,7 +11113,8 @@ namespace AdoNetDemo
                       "Data Source=SOCRATES;Initial Catalog=NonXmlSources;";
     OleDbConnection conn = new OleDbConnection(connString);
     conn.Open();
-```第一个命令行参数 `args[0]` 存储在名为 `savePath` 的变量中。这是生成的 XML 保存的地方。
+```
+第一个命令行参数 `args[0]` 存储在名为 `savePath` 的变量中。这是生成的 XML 保存的地方。
 
 接下来，创建一个名为 `connString` 的变量，填充所使用的数据库详情以及其所在的服务器名称。然后创建一个新的 `OleDbConnection`，并将刚刚创建的连接字符串传递给构造函数。
 

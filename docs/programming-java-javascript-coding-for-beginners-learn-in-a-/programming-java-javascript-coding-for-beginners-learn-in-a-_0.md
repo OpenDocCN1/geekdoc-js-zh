@@ -977,7 +977,8 @@ s2.display();
 }
 ```
 Output:
-```111 David David222 Aryan Aryan```### Java 中的构造函数重载
+```
+111 David David222 Aryan Aryan```### Java 中的构造函数重载
 
 构造函数重载是 Java 中的一种技术，允许为类提供任意数量不同参数的构造函数。这些构造函数可以相同的参数数量，但参数不同。编译器会根据参数列表及其类型进行比较。
 
@@ -1024,7 +1025,8 @@ class Student5{
 }
 ```
 Output:
-```111 David 0222 Aryan 25```
+```
+111 David 0222 Aryan 25```
 
 ### Java 中的拷贝构造函数
 
@@ -1074,7 +1076,8 @@ class Student6{
 }
 ```
 Output:
-```111 David111 David```
+```
+111 David111 David```
 
 ### 不使用构造函数拷贝值
 
@@ -1116,7 +1119,8 @@ class Student7{
 }
 ```
 Output:
-```111 David111 David```
+```
+111 David111 David```
 
 ## Java 中的垃圾回收
 

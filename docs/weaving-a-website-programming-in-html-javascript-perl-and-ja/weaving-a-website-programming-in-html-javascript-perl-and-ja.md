@@ -4303,7 +4303,8 @@ P {margin-left: 20px;margin-right: 20px;margin-top: 5px;margin-bottom: 5px; }
 </TABLE>
 </BODY></html>
 
-```图 7.35 用于节日颜色的 HTML
+```
+图 7.35 用于节日颜色的 HTML
 
 ## 练习题
 
@@ -15253,7 +15254,8 @@ open(FILE, ">>poll.txt");
 
 双角括号 `>>` 表示将文本添加到文件的末尾。文件的原有内容会被保留。两个 `print` 语句：
 
-```printprint FILE $form_data;
+```
+printprint FILE $form_data;
 print FILE "\n";
 ```
 
@@ -17771,7 +17773,8 @@ new GridLayout(int rows, int columns, int hGap, int vGap);
 
 图 23.11 包含了 `GridDefault` 类定义，该类用于生成图 23.8 所示的 `GridLayout` 页面。`setLayout()` 方法创建一个由四行四列组成的匿名网格布局。`for` 语句将按钮添加到布局管理器中。
 
-```javaimport java.awt.*;
+```
+javaimport java.awt.*;
 import java.awt.event.*;
 import java.awt.applet.*;
 public class GridDefault extends Applet {

@@ -853,7 +853,8 @@ export default DS.JSONAPIAdapter.extend({
 
 
 
-```json {
+```
+json {
   "data": {
     "type": "blogs",
     "id": "1",

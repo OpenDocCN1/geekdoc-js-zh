@@ -3377,7 +3377,8 @@ VBScript 语言提供了某些机制，允许你操作脚本中代码的执行�
 
 `If..End` 结构可以非常简单，也可以变得相当复杂。在简单的形式下，它需要如下语法：
 
-```If <expression> Then
+```
+If <expression> Then
     <other code goes here>
 End If
 ```

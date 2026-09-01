@@ -7235,7 +7235,8 @@ p.mixed {border-style: dashed dotted solid double;}
 
 
 
-```html <!DOCTYPE html>
+```
+html <!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -8178,7 +8179,8 @@ p {
 
 
 
-```html <!DOCTYPE html>
+```
+html <!DOCTYPE html>
 <html>
 <head>
 <style>

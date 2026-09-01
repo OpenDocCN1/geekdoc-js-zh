@@ -14801,7 +14801,8 @@ const getSome = (something: any) =>
 const getSomeFromSomething = (key: number) =>
   getSome(findSomething(key));
 ```
-```这个序列中的问题是 `getSome()` 的输出是一个 `Maybe` 值，其本身包含一个 `Maybe` 值，所以我们想要的结果是双层包装的，正如我们执行几次调用看到的，对于偶数（将返回 "whatever"）和对于奇数（将返回 `undefined`）：
+```
+这个序列中的问题是 `getSome()` 的输出是一个 `Maybe` 值，其本身包含一个 `Maybe` 值，所以我们想要的结果是双层包装的，正如我们执行几次调用看到的，对于偶数（将返回 "whatever"）和对于奇数（将返回 `undefined`）：
 
 ```typescript
 const xxx = getSomeFromSomething(2); // "whatever"

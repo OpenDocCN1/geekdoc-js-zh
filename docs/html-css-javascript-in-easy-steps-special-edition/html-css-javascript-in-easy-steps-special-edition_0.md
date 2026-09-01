@@ -4120,7 +4120,8 @@ import cgi
 
 ![image](img/2bl.jpg)使用特殊模块提供的函数将所有键赋值给变量：
 
-```pythonform = cgi.FieldStorage()
+```
+pythonform = cgi.FieldStorage()
 ```
 
 ![image](img/3bl.jpg)使用内置的 `print()` 函数写入发送浏览器的头部。注意下方代码。Python 使用缩进来分组语句，而不是大括号，因此这三行必须相同的缩进：
@@ -11543,7 +11544,8 @@ for ( 初始化语句 ; 条件 ; 修改语句 ) {
 
 例如，执行 100 次的 `for` 循环：
 
-```forfor (let i = 0; i < 100; i++) {
+```
+forfor (let i = 0; i < 100; i++) {
   // 要执行的语句
 }
 ```

@@ -8607,7 +8607,8 @@ var pCategoryEnum = pCategoryEnumFactory.BSTREnum;
 
 
 
- ```var g_ContactStore = g_pAccount.ContactStore;
+ ```
+var g_ContactStore = g_pAccount.ContactStore;
 var pContactStoreEntryList =
     g_ContactStore.OpenContactStoreEntryList(pCategoryEnum);
 var pContactStoreEntryEnum = pContactStoreEntryList.OpenEnum();

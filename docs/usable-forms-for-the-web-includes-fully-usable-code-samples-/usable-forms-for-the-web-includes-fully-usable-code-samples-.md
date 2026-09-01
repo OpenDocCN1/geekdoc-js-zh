@@ -5667,7 +5667,8 @@ End Sub %>
 
 如你所示，购物车详情的编写技术与 `order4.asp` 和 `order6.asp` 中显示购物车摘要的包含文件技术非常相似。然而，我们在这个表格中添加了所有的细节（摘要表中遗漏了配料），并在最后一列添加了一个表单，允许用户删除项目：
 
-```asp 
+```
+asp 
 arrPrintCart = Session("Cart") 
 intSubTotal = 0 
 

@@ -3021,13 +3021,15 @@ function rollOut() {
 
 如果由于某种原因，我们想让第三张图像在同一个翻滚过程中也发生变化，我们就对第三个图像对象重复步骤 6–8。
 
-- 9. ```jsfor (var i=0; i<this.imgToChange.length; i++) {
+- 9. ```
+jsfor (var i=0; i<this.imgToChange.length; i++) {
   this.imgToChange[i].src = this.overImage[i].src;
 }
 ```
 在这里，`roll()` 函数内部是图像交换的地方。因为可以更改一张或多张图像，我们需要首先询问我们存储了多少张图像——这就是 `this.imgToChange.length` 的值。在这里，该值为 2，因为我们希望两张图像发生变化。然后我们循环两次，将 `imgToChange[0]` 和 `imgToChange[i]` 的源设置为它们对应的值。
 
-- 10. ```jsfor (var i=0; i<this.imgToChange.length; i++) {
+- 10. ```
+jsfor (var i=0; i<this.imgToChange.length; i++) {
   this.imgToChange[i].src = this.overImage[i].src;
 }
 ```

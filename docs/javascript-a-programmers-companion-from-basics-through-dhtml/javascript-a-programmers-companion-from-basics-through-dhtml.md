@@ -12337,7 +12337,8 @@ alert(getCookie("test"));
 </script>
 </head>
 </html
-```在 cookie2.htm 文件中，`getCookie()` 获取 cookie 的内容。获取 cookie 的问题是 JavaScript 无法访问单个 cookie。使用 `document.cookie` 你总是可以获取存储你 Web 页面的服务器上定义的所有 cookie。为了获取特定值，你必须挑选出一个单个 cookie。这通过 `getCookie()` 函数实现，该函数检查是否存在具有特定名称的 cookie。如果找到了该名称的 cookie，`getCookie()` 函数将返回 cookie 的值。如果没有找到 cookie，则返回空值。
+```
+在 cookie2.htm 文件中，`getCookie()` 获取 cookie 的内容。获取 cookie 的问题是 JavaScript 无法访问单个 cookie。使用 `document.cookie` 你总是可以获取存储你 Web 页面的服务器上定义的所有 cookie。为了获取特定值，你必须挑选出一个单个 cookie。这通过 `getCookie()` 函数实现，该函数检查是否存在具有特定名称的 cookie。如果找到了该名称的 cookie，`getCookie()` 函数将返回 cookie 的值。如果没有找到 cookie，则返回空值。
 
 与命令行参数不同，你可以在 `cookie1.htm` 和 `cookie2.htm` 文件之间加载一个完全不同的文件。这是有效的。
 

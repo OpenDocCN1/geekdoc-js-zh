@@ -6282,7 +6282,8 @@ var cb3 = p1.add('checkbox', undefined, 'Option 3');
 ```
 var cb3 = p1.add('checkbox', undefined, 'Option 3');
 
-```10 cb1.value = true;
+```
+10 cb1.value = true;
 11 cb3.value = true;
 12 var p2 = dlg.add('panel', undefined, 'radiobutton');
 13 p2.alignChildren = ['left', 'top'];
@@ -8204,7 +8205,8 @@ var defaultXML = <preset>
 ---
 
 <presets>
-```你可能还记得第 5 章中 `defaultXML` 变量的内容。根元素有四个标签（三个滑块加上一个名称）以及一个属性（默认布尔值）控制永久性：所有内置预设都具有 `default="true"`，而用户创建的预设将等于 `false`——因此，它们可以被删除。
+```
+你可能还记得第 5 章中 `defaultXML` 变量的内容。根元素有四个标签（三个滑块加上一个名称）以及一个属性（默认布尔值）控制永久性：所有内置预设都具有 `default="true"`，而用户创建的预设将等于 `false`——因此，它们可以被删除。
 
 脚本逻辑并没有下面的图表那么复杂，将立即进行讨论：
 
@@ -8358,7 +8360,8 @@ var defaultXML = <preset>
 ---
 
 <presets>
-```你可能还记得第 5 章中 `defaultXML` 变量的内容。根元素有四个标签（三个滑块加上一个名称）以及一个属性（默认布尔值）控制永久性：所有内置预设都具有 `default="true"`，而用户创建的预设将等于 `false`——因此，它们可以被删除。
+```
+你可能还记得第 5 章中 `defaultXML` 变量的内容。根元素有四个标签（三个滑块加上一个名称）以及一个属性（默认布尔值）控制永久性：所有内置预设都具有 `default="true"`，而用户创建的预设将等于 `false`——因此，它们可以被删除。
 
 脚本逻辑并没有下面的图表那么复杂，将立即进行讨论：
 

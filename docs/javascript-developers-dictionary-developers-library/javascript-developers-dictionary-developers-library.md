@@ -20681,7 +20681,8 @@ Nav2+, IE3+
 [var x =] radioButton[y].checked [= boolean]
 ```
 
-```第 26 章 表单输入元素：HTMLInputElement 属性
+```
+第 26 章 表单输入元素：HTMLInputElement 属性
 
 HTMLInputElement 对象的 checked 属性对于复选框，反映了该框当前是否被选中。值为 true 则表示已选中；值为 false 则表示未选中。
 

@@ -872,7 +872,8 @@ var minutes = date.getMinutes();
 
 
 
-```script type="text/javascript">
+```
+script type="text/javascript">
 var now = new Date();
 var yyyy = now.getFullYear();
 var mm = now.getMonth() + 1;
@@ -1215,7 +1216,8 @@ else {
 <script type="javascript" src="sniff.js"></script>
 </head>
 <!-- hide me from older browsers -->
-```给予浏览器它们想要的 45
+```
+给予浏览器它们想要的 45
 
 ```javascript
 var browser_info = getBrowser();
@@ -8262,7 +8264,8 @@ function stopTimer() {
 
 <div id="contents"></div>
 </body>
-</html>```图 16-15：服务器端文件的客户端检查16-15 列出了应用程序的客户端部分。点击表单底部的 Read 按钮会调用 `readFile()` 函数并设置要读取的文件名。`readFile()` 函数只做一件事——调用一个名为 `readFileDoFunction()` 的函数，该函数执行获取文件的实际工作。我们将查看 `readFileDoFunction()` 然后返回 `readFile()`。
+</html>```
+图 16-15：服务器端文件的客户端检查16-15 列出了应用程序的客户端部分。点击表单底部的 Read 按钮会调用 `readFile()` 函数并设置要读取的文件名。`readFile()` 函数只做一件事——调用一个名为 `readFileDoFunction()` 的函数，该函数执行获取文件的实际工作。我们将查看 `readFileDoFunction()` 然后返回 `readFile()`。
 
 ## readFileDoFunction()
 

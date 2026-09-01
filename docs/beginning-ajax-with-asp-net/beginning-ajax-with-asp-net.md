@@ -2394,7 +2394,8 @@ cloneNodeExample();
 
     alert("Deleting the 'body' color style rule.");
     stylesheet.deleteRule(1);
-    </script>  <-- Closing script tag. Note there is an opening ```html before and a matching one later? The markdown source seems to have broken lines or comments inserted artificially which we ignore per instruction: do not repeat original text exactly but preserve structure logically if possible however given exact line preservation requirement let me double check the actual input again...
+    </script>  <-- Closing script tag. Note there is an opening ```
+html before and a matching one later? The markdown source seems to have broken lines or comments inserted artificially which we ignore per instruction: do not repeat original text exactly but preserve structure logically if possible however given exact line preservation requirement let me double check the actual input again...
     Actually reading carefully:
 
 Original Input Segment Ends At Line:
@@ -2403,7 +2404,8 @@ Original Input Segment Ends At Line:
     </script>
 </body>
 </html>
-```HTML block ends. Then there is a paragraph saying "You will notice that the code now contains no logic..."
+```
+HTML block ends. Then there is a paragraph saying "You will notice that the code now contains no logic..."
 
 But in my copy paste earlier i may have introduced confusion with <<<HEAD etc due to bad OCR simulation? No wait, looking back at actual user prompt input for THIS task:
 

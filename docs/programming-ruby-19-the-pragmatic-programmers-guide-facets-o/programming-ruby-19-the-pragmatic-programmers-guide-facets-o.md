@@ -20851,7 +20851,8 @@ print while gets
 This is line one
 This is line two
 This is line three
-```使用 `$` 作为隐式参数的编程风格在 Ruby 社区逐渐失去青。
+```
+使用 `$` 作为隐式参数的编程风格在 Ruby 社区逐渐失去青。
 
 # global_variables
 
@@ -20904,7 +20905,8 @@ fred = 1
 for i in 0..10
 end
 local_variables # => [:i]
-```注意局部变量与 `bindings` 关联。
+```
+注意局部变量与 `bindings` 关联。
 
 ```ruby
 def

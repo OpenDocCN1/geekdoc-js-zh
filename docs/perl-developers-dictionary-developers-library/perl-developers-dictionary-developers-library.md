@@ -3868,7 +3868,8 @@ while(<>) {
 
 ### 用法
 
-```string x count
+```
+string x count
 (list) x count
 string . string
 ```
@@ -5737,7 +5738,8 @@ $string=join(',', $fields);
 
 ## 示例列表 64
 
-```perl (Wait, I missed the code block here)
+```
+perl (Wait, I missed the code block here)
 @mountain=qw(Washington Lincoln Jefferson);
 print "Four presidents appear on Mount Rushmore:\n"
   join(',', @mountain[0..$mountain-1]),

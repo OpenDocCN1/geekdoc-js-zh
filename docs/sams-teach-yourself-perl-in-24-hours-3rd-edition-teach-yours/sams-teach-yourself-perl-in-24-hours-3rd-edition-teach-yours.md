@@ -2376,7 +2376,8 @@ for($index=0; $index<@flavors; $index++) {
 
 第一行初始化了 @flavors。第二行对每个元素打印 "$flavors[$index]\n"。第三行将 $index 设置为 0，并不断加 1 直到达到 @flavors。@flavors 中的元素个数就是 $index 的值。如果你使用 foreach 循环，它看起来像这样：
 
-```foreach $flavor (@flavors) {
+```
+foreach $flavor (@flavors) {
     print "$flavor\n"
 }
 ```

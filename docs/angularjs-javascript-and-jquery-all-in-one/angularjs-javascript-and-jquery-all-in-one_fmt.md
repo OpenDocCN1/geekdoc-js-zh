@@ -20670,7 +20670,8 @@ myCensorFilter) {
 
 | 代码 | 描述 |
 | --- | --- |
-| ```html<br><!doctype html>```<br>```html ng-app="myApp">```<br>`<head>`<br>`  <title>AngularJS Custom Filter</title>`<br>`</head>`<br>`<body>`<br>`<div ng-controller="myController">`<br>`  <h2>Sorting and Filtering</h2>`<br>`{{phrase | censor:censorText}}`<br>>;<br>/```{"This is some bad, dark, evil text." \| censor:"happy"}```\`}<br><p ng-click="filterText()">{{txt}}</p>`<br/><script src="http://code.angularjs.org/1.3.0/angular.min.js">;</script>`<br/>;<script src="js/filter_custom.js"></script>```</body></html> | （参考） |
+| ```html<br><!doctype html>```<br>```
+html ng-app="myApp">```<br>`<head>`<br>`  <title>AngularJS Custom Filter</title>`<br>`</head>`<br>`<body>`<br>`<div ng-controller="myController">`<br>`  <h2>Sorting and Filtering</h2>`<br>`{{phrase | censor:censorText}}`<br>>;<br>/```{"This is some bad, dark, evil text." \| censor:"happy"}```\`}<br><p ng-click="filterText()">{{txt}}</p>`<br/><script src="http://code.angularjs.org/1.3.0/angular.min.js">;</script>`<br/>;<script src="js/filter_custom.js"></script>```</body></html> | （参考） |
 | **点击查看代码图** | （参考） |
 
 ## 总结
@@ -41000,7 +41001,8 @@ $scope.updatemessage=function(){$op.message'Hello+'+scope.fis"+"last"''}`};
     </hea
 ```
 
-```html  
+```
+html  
       <|div|>     scripts/"http:/code.angularjs.org/13angularmin.js"/>     
 </script>/src/js/fistis]>   </body
 ```
