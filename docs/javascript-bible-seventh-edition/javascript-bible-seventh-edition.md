@@ -31727,7 +31727,8 @@ function showElemUnderneath(evt)
 
 你可以在书中各处找到许多此方法的用法示例，但你可以通过“The Evaluator”（第 4 章，“JavaScript 基础”）中进行实验，更深入地观察它的工作原理。“The Evaluator”中的许多元素分配了 ID，因此你可以使用该方法检查对象及其属性。在“The Evaluator”的顶部和底部字段中输入以下语句：
 
-```javascriptdocument.getElementById("myP")
+```javascript
+document.getElementById("myP")
 document.getElementById("myEM")
 document.getElementById("myTitle")
 document.getElementById("myScript")

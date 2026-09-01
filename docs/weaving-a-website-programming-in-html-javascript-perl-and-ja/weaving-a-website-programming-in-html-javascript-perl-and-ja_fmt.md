@@ -2587,7 +2587,7 @@ SRC = "imageFile"
 
 - `HEIGHT="pixels"` 和 `WIDTH="pixels"`：`HEIGHT` 和 `WIDTH` 属性更改图像的尺寸。许多图形包含比例缩放；这意味着图像高度的变化会导致宽度相应的变化，反之亦然。不使用比例缩放的图像通常看起来变形了。因此，在使用 `HEIGHT` 和 `WIDTH` 属性时要小心；浏览器不会检查图像的比例，所以使用这些属性很容易创建变形的图像。
 
-- `ALIGN="LEFT"/"RIGHT"`：`ALIGN` 属性围绕图像。左我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。齐将图像放在页面左侧。`<img>` 标签后的文本放在图像右侧。右对齐将图像放在页面右侧，文本出现在图像左侧。
+- `ALIGN="LEFT"/"RIGHT"`：`ALIGN` 属性围绕图像。左 齐将图像放在页面左侧。`<img>` 标签后的文本放在图像右侧。右对齐将图像放在页面右侧，文本出现在图像左侧。
 
 图 15 木雕刻家页面（第二版）的 HTML。注意用于添加页面标题的 `<img>` 标签。该标签包含一个 `HEIGHT` 属性增加了原始图像的高度。不需要 `ALT` 标签，因为标题下方出现的“Duckvings by Don Anderson”充当了标题。
 
@@ -4412,7 +4412,7 @@ text-vertical-align: baseline | sub | super | text-top | middle | bottom | text-
 
 ![](img/06c085e4fd3fd12ccf4bd10d71c94fd1_192_0.png)
 
-**图我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。8.1** 第一个 JavaScript 页面
+**图 8.1** 第一个 JavaScript 页面
 
 ## 176 JavaScript 简介
 
@@ -6813,7 +6813,8 @@ SSSSS
 
 
 
-```javascript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。<SCRIPT LANGUAGE = "JavaScript">
+```javascript
+ <SCRIPT LANGUAGE = "JavaScript">
 <!--
 Code for itemCost and salesTax
 var itemCost = parseFloat(prompt("itemCost: ", ""));
@@ -7820,7 +7821,7 @@ function Pass(name, meters) {
 
 `Pass`构造函数包含两个参数：`name`（名称）和`meters`（米），这些山口关大多位于加拿大落基山脉，高度以米为单位列出。这些山口关用于查找英尺高度。如果你喜欢美国落基山脉，可以轻松反过来计算。
 
-创建一个山口关数组需要创建一个新的`Array`对象，并为数组中的每个山口关创建一个新的`Pass`对象。创建`Array`对象及其`Pass`元素的语句如图我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。13.27 所示。
+创建一个山口关数组需要创建一个新的`Array`对象，并为数组中的每个山口关创建一个新的`Pass`对象。创建`Array`对象及其`Pass`元素的语句如图 13.27 所示。
 
 ```
 var RockyMountainPasses = new Array();
@@ -9717,7 +9718,7 @@ alert("Please fill in your " + form.elements[i].name +
 
 
 
-图我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。14.47 Muskat Mounds 调查页头部
+图 14.47 Muskat Mounds 调查页头部
 
 # 332 表单与表单元素
 
@@ -15909,7 +15910,7 @@ foreach ($data ---> parse an array of hashes) {
 
 
 
-$selement = s/%x([Da-Fa-f])([Da-Fa-f])/pack("C", hex ($1))/eg; #2我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。@fields = split(/&/, $selement);
+$selement = s/%x([Da-Fa-f])([Da-Fa-f])/pack("C", hex ($1))/eg; #2 @fields = split(/&/, $selement);
 
 $shash_size = @fields;
 
@@ -17365,7 +17366,7 @@ public class TextAreaInsert extends Applet implements ActionListener {
 
 
 
-##我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。练习
+## 练习
 
 初始练习要求你扩展转换技术的技能库。剩余的许多练习要求你创建第 9 章中开发的 JavaScript 练习或程序的 Java 版本。使用文本字段从用户处获取信息。
 

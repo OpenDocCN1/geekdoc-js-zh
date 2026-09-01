@@ -1105,7 +1105,8 @@ let b = 2;
 
 当引擎没有在你预期的地方插入分号时，分号插入规则可能会引起问题。例如：
 
-```javascriptfunction foo() {
+```javascript
+function foo() {
   return
   { foo(): true };
 }
@@ -9184,9 +9185,11 @@ Symbol 属性用于 JavaScript API 中以自定义类的行为。`Symbol` 类为
 | `toPrimitive` | 自定义到原始类型的转换——参见第 11.2.2 节 |
 | `species` | 用于创建结果集合的构造函数，被 `map` 和 `filter` 等方法使用——参见第 11.2.3 节 |
 | `iterator`, `asyncIterator` | 定义迭代器（第 9 章）和异步迭代器（第 10 章） |
-| `hasInstance` | 自定义 `instanceof` 的行为：```javascript\nclass Iterable {\n  static Symbol.hasInstance {\n    return Symbol.iterator in obj\n  }\n}\n[1, 2, 3] instanceof Iterable\``` |
+| `hasInstance` | 自定义 `instanceof` 的行为：```javascript
+\nclass Iterable {\n  static Symbol.hasInstance {\n    return Symbol.iterator in obj\n  }\n}\n[1, 2, 3] instanceof Iterable\``` |
 | `match`, `matchAll`, `replace`, `search`, `split` | 从同名的 `String` 方法中调用。对于 `RegExp` 以外的对象重新定义——参见练习 2。 |
-| `isConcatSpreadable` | 用于 `Array` 的 `concat` 方法：```javascript\nconst a = [1, 2]\nconst b = [3, 4]\na[Symbol.isConcatSpreadable] = false\n[].concat(a, b) => [[1, 2], 3, 4]\``` |
+| `isConcatSpreadable` | 用于 `Array` 的 `concat` 方法：```javascript
+\nconst a = [1, 2]\nconst b = [3, 4]\na[Symbol.isConcatSpreadable] = false\n[].concat(a, b) => [[1, 2], 3, 4]\``` |
 
 **表 11-1**知符号
 
@@ -9319,16 +9322,25 @@ class Range extends Array {
 | 名称 | 描述 |
 | --- | --- |
 | **函数** | |
-| ```javascript defineProperty(obj, name, descriptor) defineProperties(obj, { name1: descriptor1, . . . }) ``` | 定义一个或多个属性描述符 |
-| ```javascript getOwnPropertyDescriptor(obj, name) getOwnPropertyDescriptors(obj) getOwnPropertyNames(obj) getOwnPropertySymbols(obj) ``` | 获取对象的一个或所有非继承描述符，或仅获取它们的字符串名称/符号 |
-| ```javascript keys(obj) values(obj) entries(obj) ``` | 获取自有可枚举属性的名称、值和 `[``name``,` `value``]` 对 |
-| ```javascript preventExtensions(obj) seal(obj) freeze(obj) ``` | 禁止修改原型和添加属性；同时也禁止删除属性和配置；以及禁止修改属性 |
-| ```javascript isExtensible(obj) isSealed(obj) isFrozen(obj) ``` | 检查 `obj` 是否被前一行中的某一个函数所保护 |
-| ```javascript create(prototype, { name1: descriptor1, . . . }) fromEntries([[name1, value1], . . .]) ``` | 创建一个给定属性的新对象 |
-| ```javascript assign(target, source1, source2, . . .) ``` | 从源将所有可枚举自有属性拷贝到目标。请使用展开运算符代替。 |
-| ```javascript getPrototypeOf(obj) setPrototypeOf(obj, proto) ``` | 获取或设置原型 |
+| ```javascript
+defineProperty(obj, name, descriptor) defineProperties(obj, { name1: descriptor1, . . . }) ``` | 定义一个或多个属性描述符 |
+| ```javascript
+getOwnPropertyDescriptor(obj, name) getOwnPropertyDescriptors(obj) getOwnPropertyNames(obj) getOwnPropertySymbols(obj) ``` | 获取对象的一个或所有非继承描述符，或仅获取它们的字符串名称/符号 |
+| ```javascript
+keys(obj) values(obj) entries(obj) ``` | 获取自有可枚举属性的名称、值和 `[``name``,` `value``]` 对 |
+| ```javascript
+preventExtensions(obj) seal(obj) freeze(obj) ``` | 禁止修改原型和添加属性；同时也禁止删除属性和配置；以及禁止修改属性 |
+| ```javascript
+isExtensible(obj) isSealed(obj) isFrozen(obj) ``` | 检查 `obj` 是否被前一行中的某一个函数所保护 |
+| ```javascript
+create(prototype, { name1: descriptor1, . . . }) fromEntries([[name1, value1], . . .]) ``` | 创建一个给定属性的新对象 |
+| ```javascript
+assign(target, source1, source2, . . .) ``` | 从源将所有可枚举自有属性拷贝到目标。请使用展开运算符代替。 |
+| ```javascript
+getPrototypeOf(obj) setPrototypeOf(obj, proto) ``` | 获取或设置原型 |
 | **方法** | |
-| ```javascript hasOwnProperty(stringOrSymbol) propertyIsEnumerable(stringOrSymbol) ``` | 如果对象具有给定属性或它是可枚举的，则返回 `true` |
+| ```javascript
+hasOwnProperty(stringOrSymbol) propertyIsEnumerable(stringOrSymbol) ``` | 如果对象具有给定属性或它是可枚举的，则返回 `true` |
 | `isPrototypeOf(other)` | 检查此对象是否为另一个对象的原型 |
 
 **表 11-2** 对象函数和方法

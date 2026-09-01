@@ -6161,7 +6161,8 @@ document.addEventListener('DOMContentLoaded', findDuplicates);
 
 要解决这个问题，只需让 `i+1` 进行计数即可。适配后的代码如列表 3.77 所示。
 
-```javascriptfunctionfindDuplicates() {
+```javascript
+functionfindDuplicates() {
   const numbers = [2, 4, 5, 2, 8, 5];
   for (let i = 0; i < numbers.length; i++) {
     const numberAtI = numbers[i];

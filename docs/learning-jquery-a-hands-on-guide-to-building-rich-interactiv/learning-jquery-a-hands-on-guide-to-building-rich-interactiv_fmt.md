@@ -7906,7 +7906,8 @@ jxhr.complete(function() { $("#output").html("All done"); });
 | `complete` | 此处分配的函数在请求完成后会被调用一次。只有在 `success` 和 `error` 回调执行完成后才会发生这种情况。作为参数，你传递 XHR 对象和一个描述性字符串（"success"、"error"、"timeout"、"abort" 或 "parsererror"）。从 jQuery 1.5 开始，你也可以指定一个包含函数的数组作为设置。每个指定的函数都会在回调被调用时执行。 |
 | `contents` | 从 jQuery 1.5 开始，你可以使用此项来指定一个 `Map` 类型的对象，其值为字符串和正则表达式的键值对，通过它你可以确定响应的解析方式。 |
 | `contentType` | 当你将数据作为数据发送到服务器时，某些字符不会按原样传输（例如之前提到的德语变音符号或特殊字符）。在发送数据之前，通常会发生所谓的 URL 编码过程。这涉及到将所有空格替换为加号 `+`，并将关键字符（如德语变音符号（有时）或特别是特殊字符）转换为十六进制等效值。转换后的符号前面会有一个百分号符号，后面跟着十六进制代码。在发送数据的传统方法中，这种转换由浏览器自动完成。通过 AJAX 发送数据时，URL 编码不会由浏览器或 AJAX 通信对象自动执行。jQuery AJAX 方法让生活变得简单。它们会自动执行 URL 编码。在 `ajax()` 方法中，如果需要，你可以对特定编码进行干预，但这并不常见。编码的默认值为 `application/x-www-form-urlencoded`。这在大多数情况下也是合适的。 |
-| `context` | 我们已经在基础部分中注释过上下文的重要性。从 jQuery 1.5 开始，你可以通过如下方式来指定上下文，例如：<br>```javascript<br>ajax({<br>  context: document.body,<br>  ...<br>});<br>``` |
+| `context` | 我们已经在基础部分中注释过上下文的重要性。从 jQuery 1.5 开始，你可以通过如下方式来指定上下文，例如：<br>```javascript
+<br>ajax({<br>  context: document.body,<br>  ...<br>});<br>``` |
 | `converters` | 从 jQuery 1.5 开始，你可以指定一个 `Map` 类型的对象，其值为字符串和正则表达式的键值对，通过它确定响应的解析方式。在 AJAX 请求中，这种值会被处理。⁴⁰<br>```json<br>"text json": true, "html": true<br>``` |
 | `crossDomain` | 从 jQuery 1.5 开始，你可以通过此项来指定是否允许跨域访问。 |
 | `data` | 通过 AJAX 发送数据时，URL 编码不会由浏览器或 AJAX 通信对象自动执行。jQuery AJAX 方法让生活变得简单。它们会自动执行 URL 编码。在 `ajax()` 方法中，如果需要，你可以对特定编码进行干预，但这并不常见。编码的默认值为 `application/x-www-form-urlencoded`。这在大多数情况下也是合适的。当你作为用户输入发送到服务器时，某些字符不会按原样传输。如果传递的是数组，它会被转换为如下查询字符串：<br>```text<br>names%5D=Steven&names%5D=Phil<br>``` |
@@ -7923,7 +7924,8 @@ jxhr.complete(function() { $("#output").html("All done"); });
 | `password` | HTTP 访问中的密码。 |
 | `processData` | 一个布尔值（默认为 `true`），用于影响数据发送到服务器的方式。在默认设置下，数据作为类型为 `application/x-www-form-urlencoded` 的查询字符串发送。如果你想发送 DOM 文档或其他数据结构，请将此选项设置为 `false`。 |
 | `scriptCharset` | 如果使用 `json` 或 `script` 作为 `dataType` 的值并将 `GET` 作为方法（其类型值），此选项将强制进行字符集解释。 |
-| `statusCode` | 自 jQuery 1.5 起的另一个新功能是创建一个包含数值 HTTP 状态码的映射，当服务器响应包含相应的代码时，会调用对应的函数。你可以用它进行单独的响应。例如：<br>```javascript<br>$.ajax({<br>  statusCode: {<br>    200: function() {<br>      $('#output').html("All okay");<br>    },<br>    404: function() {<br>      $('#output').html("Gone wrong");<br>    }<br>  },<br>});<br>``` |
+| `statusCode` | 自 jQuery 1.5 起的另一个新功能是创建一个包含数值 HTTP 状态码的映射，当服务器响应包含相应的代码时，会调用对应的函数。你可以用它进行单独的响应。例如：<br>```javascript
+<br>$.ajax({<br>  statusCode: {<br>    200: function() {<br>      $('#output').html("All okay");<br>    },<br>    404: function() {<br>      $('#output').html("Gone wrong");<br>    }<br>  },<br>});<br>``` |
 | `success` | 在此处你指定当 AJAX 请求成功时调用的回调函数。作为参数，你指定了三个参数：由服务器交付的对应 `dataType` 值的数据、状态的描述性字符串以及 `jqXHR` 对象（在 jQuery 1.5 之前为 `XMLHttpRequest` 对象）。从 jQuery 1.5 开始，你还可以指定一个包含函数的数组作为设置。当调用回调函数时，会执行每个指定的函数。 |
 | `timeout` | 通过此选项，你可以在客户端指定一个以毫秒为单位的周期，表示等待 Web 服务器响应的时间。如果已经通过 `$.ajaxSetup()` 设置了全局变量 `timeout`，则此指定将覆盖该值。 |
 | `traditional` | 通过此项你指定序列化的类型。设置为 `true`，则以传统方式执行；否则，采用递归方式。 |

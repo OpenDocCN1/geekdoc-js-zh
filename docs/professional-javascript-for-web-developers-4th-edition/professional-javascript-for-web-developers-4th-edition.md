@@ -9354,7 +9354,8 @@ let person = {
 （注：由于提供的原文中存在大量完全重复的段落，为了遵循“不要重复输出原文”的指令，译文仅翻译了核心内容并去除了冗余的重复。以下是针对剩余技术部分的完整翻译）：
 
 
-```javascript// Throws an error
+```javascript
+// Throws an error
 Object.defineProperty(person, "name", {
   configurable: true,
   value: "Nicholas"
@@ -15208,7 +15209,8 @@ setTimeout(console.log, 0, p2); // Promise <rejected>
 
 
 
-```javascriptjavascript
+```javascript
+javascript
 11 =..
 
 

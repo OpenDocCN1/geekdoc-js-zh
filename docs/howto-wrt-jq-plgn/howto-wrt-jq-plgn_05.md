@@ -150,7 +150,8 @@ jquery_plugin/plugin_three
 //定义默认 $.fn.tab.defaults = { ...... change: function(index){ console.log('current index = ' + index); } };
 
 ```
-```js 
+```js
+
 ```
 
 1.  在插件内部调用了此回调函数
@@ -168,7 +169,8 @@ return this.each(function() { var obj = $(this);
         opts.change($(this).index());
     })      
 });
-```js 
+```js
+
 ```
 
 ### 1.5.9\. 回调函数最需要注意的问题

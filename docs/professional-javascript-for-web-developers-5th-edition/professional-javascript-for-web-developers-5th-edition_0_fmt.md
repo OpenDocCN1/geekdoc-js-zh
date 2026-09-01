@@ -13458,15 +13458,24 @@ console.log(person1.sayName == person2.sayName);  // true
 
 | 概念 | 示例片段 |
 | --- | --- |
-| `constructor`函数声明和函数表达式 | ```javascript\nfunction Person() {}\nlet Person = function() {}\n``` |
-| 构造函数的`prototype`对象 | ```javascript\nconsole.log(typeof Person.prototype);\nconsole.log(Person.prototype);\n// {\n//   constructor: f Person(),\n//   __proto__: Object\n }\n``` |
-| `constructor`函数与`prototype`对象之间的循环引用 | ```javascript\nconsole.log(Person.prototype.constructor === Person);\n// true\n``` |
-| 原型链在`Object`原型处终止 | ```javascript\nconsole.log(Person.prototype.__proto__ === Object.prototype);\n// true\n\nconsole.log(Person.prototype.__proto__.constructor === Object);\n// true\n\nconsole.log(Person.prototype.__proto__.__proto__ === null);\n// true\n\nconsole.log(Person.prototype.__proto__);\n// {\n//   constructor: f Object(),\n//   toString: ...\n//   hasOwnProperty: ...\n//   isPrototypeOf: ...\n//   ...\n }\n``` |
-| 创建构造函数的实例 | ```javascript\nlet person1 = new Person(),\n    person2 = new Person();\n``` |
-| 构造函数、`prototype`对象和实例是不同的对象 | ```javascript\nconsole.log(person1 !== Person);\n// true\n\nconsole.log(person1 !== Person.prototype);\n// true\n\nconsole.log(Person.prototype !== Person);\n// true\n``` |
-| 实例、`constructor`和`prototype`的关系 | ```javascript\nConsole.log(person1.__proto__ === Person.prototype);\n// true\n\nconosle.log(person1.__proto__.constructor === Person);\n// true\n``` |
-| 实例共享同一个`prototype` | ```javascript\nconsole.log(person1.__proto__ === person2.__proto__);\n// true\n``` |
-| `instanceof`操作的使用 | ```javascript\nconsole.log(person1 instanceof Person);\n// true\n\nconsole.log(person1 instanceof Object);\n// true\n\nconsole.log(Person.prototype instanceof Object);\n// true\n``` |
+| `constructor`函数声明和函数表达式 | ```javascript
+\nfunction Person() {}\nlet Person = function() {}\n``` |
+| 构造函数的`prototype`对象 | ```javascript
+\nconsole.log(typeof Person.prototype);\nconsole.log(Person.prototype);\n// {\n//   constructor: f Person(),\n//   __proto__: Object\n }\n``` |
+| `constructor`函数与`prototype`对象之间的循环引用 | ```javascript
+\nconsole.log(Person.prototype.constructor === Person);\n// true\n``` |
+| 原型链在`Object`原型处终止 | ```javascript
+\nconsole.log(Person.prototype.__proto__ === Object.prototype);\n// true\n\nconsole.log(Person.prototype.__proto__.constructor === Object);\n// true\n\nconsole.log(Person.prototype.__proto__.__proto__ === null);\n// true\n\nconsole.log(Person.prototype.__proto__);\n// {\n//   constructor: f Object(),\n//   toString: ...\n//   hasOwnProperty: ...\n//   isPrototypeOf: ...\n//   ...\n }\n``` |
+| 创建构造函数的实例 | ```javascript
+\nlet person1 = new Person(),\n    person2 = new Person();\n``` |
+| 构造函数、`prototype`对象和实例是不同的对象 | ```javascript
+\nconsole.log(person1 !== Person);\n// true\n\nconsole.log(person1 !== Person.prototype);\n// true\n\nconsole.log(Person.prototype !== Person);\n// true\n``` |
+| 实例、`constructor`和`prototype`的关系 | ```javascript
+\nConsole.log(person1.__proto__ === Person.prototype);\n// true\n\nconosle.log(person1.__proto__.constructor === Person);\n// true\n``` |
+| 实例共享同一个`prototype` | ```javascript
+\nconsole.log(person1.__proto__ === person2.__proto__);\n// true\n``` |
+| `instanceof`操作的使用 | ```javascript
+\nconsole.log(person1 instanceof Person);\n// true\n\nconsole.log(person1 instanceof Object);\n// true\n\nconsole.log(Person.prototype instanceof Object);\n// true\n``` |
 
 考虑使用`Person`构造函数的原始示例。`Person`构造函数、`prototype`和实例之间的关系见图8.1。（注：提供的文本包含图表的占位引用）。
 

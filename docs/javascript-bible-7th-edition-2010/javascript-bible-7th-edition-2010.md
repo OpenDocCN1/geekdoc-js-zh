@@ -14488,7 +14488,8 @@ eval(popup.options[i].toLowerCase() + ".showPlanet()");
 ### 列表 23-6 行星对象数组
 ### JavaScript: list-23-06.js 的部分
 
-```javascript// 创建新的 Planet 对象，并存储在引用变量数组中
+```javascript
+// 创建新的 Planet 对象，并存储在引用变量数组中
 // ‘new’ 将创建一个新的 Planet 实例并将参数数据插入对象
 var planets = new Array(
   new Planet("Mercury", "3100 miles", "36 million miles", "88 days", "59 days"),

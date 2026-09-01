@@ -5314,7 +5314,8 @@ myStatement.nextRow()
 
 的 **nextRow** 方法指示数据库准备从最近 SQL 命令选择的行中发送下一行的数据。这不会立即传输到我们的 JavaScript 程序;它只是告诉数据源我们想读哪一行。我们通过实际调用的`getRow`:  
 
-```javascript  
+```javascript
+ 
 var theRow = myStatement.getRow()
 ```
 

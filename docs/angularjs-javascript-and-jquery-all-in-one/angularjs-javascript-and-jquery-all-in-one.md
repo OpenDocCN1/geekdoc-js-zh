@@ -19760,7 +19760,8 @@ AngularJS 模板易于实现但非常强大且功能丰富。本课讨论了 Ang
 
 1. `{{valueA===valueB}}`
 2. `5+5`
-3. ```javascript<br>{{myMoney | currency:"$USD" }}<br>```
+3. ```javascript
+<br>{{myMoney | currency:"$USD" }}<br>```
 4. `orderBy`
 
 ---
@@ -19768,12 +19769,14 @@ AngularJS 模板易于实现但非常强大且功能丰富。本课讨论了 Ang
 ## 练习
 
 **1.** 修改清单 23.1 和 23.2 中的代码，将名为 `myScopeText` 的字符串变量存储在作用域中，然后使用以下表达式在模板中显示它。然后对作用域中名为 `myScopeNumber` 的数字变量也这样做：
-   ```javascript<br>{{myScopeText}}<br>```
+   ```javascript
+<br>{{myScopeText}}<br>```
 
 **2.** 查看 **表 23.1**（引用自上下文）中列出的日期筛选器，然后修改清单 23.8 中的日期筛选器以更改显示的日期字符串格式。
 
 **3.** 通过向作用域中添加要审查的额外字符串来修改清单 23.11 和 23.12 中的代码。然后添加一个模板语句，指定作用域中该单词和一个替换值的字符串变量名。例如：
-   ```javascript<br>{{myNewPhrase | censor:"XXX" }}<br>```
+   ```javascript
+<br>{{myNewPhrase | censor:"XXX" }}<br>```
 
 ---
 
@@ -35654,7 +35657,8 @@ angular.module('myApp', []) .controller('myController', function($scope) { });
 
 ```
 
-```js 
+```js
+
 {{ 'String1' + 'Space+ ' +'String2'}} <br />   
 ``` 
 
@@ -36806,7 +36810,8 @@ elm.on('mousemove', function(event){
 <h2>自定义指令缩放和淡入/淡出</h4> <!-- h2 内容 -->
 <p>向上拖拽可淡化，向下拖拽可恢复。</p>
 
-```javascript 
+```javascript
+
 <div>
     <div class="imgList"> ... </div>
 </div>
@@ -36857,34 +36862,46 @@ elm.on('mousemove', function(event){
 > 02 <html ng-app="myApp">... > 19   <h2>Custom Directive Manipulating the DOM</h2> ...
 
 **正确做法是保留所有代码块（三引号内的），仅处理非代码块的英文文本或注释行。** 
-由于原文本被包裹在 ```javascript 中，看起来全是代码。但是 HTML body (">01 <!doctype html>")这种伪代码通常也需要视为内容进行处理，特别是其中的 text content。
+由于原文本被包裹在 ```javascript
+中，看起来全是代码。但是 HTML body (">01 <!doctype html>")这种伪代码通常也需要视为内容进行处理，特别是其中的 text content。
 不过为了保险起见，严格按照 Markdown 解析：如果是在 ```block```内部的内容被视为“内联代码”或“代码块”，则不翻译；但如果是独立的行且看起来像自然语言（例如 HTML title），则是需要翻译的。
 
 让我们仔细查看输入文本的结构：
-大部分内容是 ` ```javascript ... ` 包裹的代码块，这些**不需要翻译**。
+大部分内容是 ` ```javascript
+... ` 包裹的代码块，这些**不需要翻译**。
 有一处是单独的段落吗？没有明显的非代码块的自然语言段落，全是技术性的脚本和配置片段。唯一的例外可能是注释行。
 检查是否有如 "// Using AngularJS to build a box around text." 这样的注释。如果有，根据示例 "硬要遗忘" -> "*hard to forget*" 中的斜体保留原则，普通文字在注释里也需要翻译内容吗？通常代码块的注释如果保持源码一致性则不译，但若是用户文档的一部分，需视情况而定。
-观察输入文本：`>01 <!doctype html>`... 这部分虽然是伪终端输出格式（带 >），但在 ```javascript 块里面还是被视为**代码块**。因此严格按照指令“内联代码和代码块不需要翻译”，整个大段的 HTML/JS 源码应当原样保留，不做任何文字内容的修改。
-*但是*：示例中 "Feynman's learning method" (链接文本) 被翻译了，并且它可能出现在非纯代码环境中（如 Wiki）。但在本任务中输入的 `>01 <!doctype html>` 是被包裹在 Markdown code block (` ```javascript`)里的吗？是的。
-**决策**：由于输入中所有文本都被 ````javascript`或隐含的代码块标记包围（包括带引号的html片段），根据“代码块不需要翻译”的最高优先级规则，应保持原文不变。**例外情况**：只有当某段英文明显属于文档的标题或非嵌入在代码容器中的自然语言时才进行翻译。
-再次检查输入... 确实每一大段都有 ` ```javascript` 开头。所以全部视为代码内容保留？
-如果是这样，那么唯一的变动可能是斜体/粗体的标记是否改变文本？示例中 "hard to forget" -> "*难以遗忘*"（将 hard to forget 翻译成中文但保留了*）。说明即使是在文档正文中遇到英文单词也要翻译。但是如果在 ```javascript`块内出现 `console.log("xxx")`，其中的"xxyy"是不需要翻译的变量/数据吗？示例中的 "xxx"是保留为 xxx 还是 xxx?
+观察输入文本：`>01 <!doctype html>`... 这部分虽然是伪终端输出格式（带 >），但在 ```javascript
+块里面还是被视为**代码块**。因此严格按照指令“内联代码和代码块不需要翻译”，整个大段的 HTML/JS 源码应当原样保留，不做任何文字内容的修改。
+*但是*：示例中 "Feynman's learning method" (链接文本) 被翻译了，并且它可能出现在非纯代码环境中（如 Wiki）。但在本任务中输入的 `>01 <!doctype html>` 是被包裹在 Markdown code block (` ```javascript
+`)里的吗？是的。
+**决策**：由于输入中所有文本都被 ````javascript
+`或隐含的代码块标记包围（包括带引号的html片段），根据“代码块不需要翻译”的最高优先级规则，应保持原文不变。**例外情况**：只有当某段英文明显属于文档的标题或非嵌入在代码容器中的自然语言时才进行翻译。
+再次检查输入... 确实每一大段都有 ` ```javascript
+` 开头。所以全部视为代码内容保留？
+如果是这样，那么唯一的变动可能是斜体/粗体的标记是否改变文本？示例中 "hard to forget" -> "*难以遗忘*"（将 hard to forget 翻译成中文但保留了*）。说明即使是在文档正文中遇到英文单词也要翻译。但是如果在 ```javascript
+`块内出现 `console.log("xxx")`，其中的"xxyy"是不需要翻译的变量/数据吗？示例中的 "xxx"是保留为 xxx 还是 xxx?
 **回顾示例细节**：
 原文：1. With Feynman's skills... you can understand the knowledge points in depth **in just `20 min`, and it is memorable and *hard to forget*. 
 译文：运用费曼技巧，你只需花上`20 min`就能深入理解知识点，而且记忆深刻，*难以遗忘*。
 这里 `Feynman's skills` 被译为“费曼技巧”，但注意原文是 "Feynman's learning method" (链接文本) -> “费曼学习法”。
-关键在于：如果在代码块内出现英文字符串如 `"myApplication"`，根据规则不需要翻译（因为是变量数据或常量）。但如果它是 HTML body 里显示给用户的文字呢？即使它在 `html` 标签内，如果包裹在 ```javascript 中，按指令应视为代码块不译。
+关键在于：如果在代码块内出现英文字符串如 `"myApplication"`，根据规则不需要翻译（因为是变量数据或常量）。但如果它是 HTML body 里显示给用户的文字呢？即使它在 `html` 标签内，如果包裹在 ```javascript
+中，按指令应视为代码块不译。
 然而，通常这类任务输入的是“文档内容”，其中可能包含混合的 HTML/Markdown。**仔细看输入文本**：第一行是 `[content]... [09     scope: ...)`，这不是被包裹在代码块的普通HTML吗？还是说整个大块都在一个大的代码块里？从格式看，每一大段之间都有换行和缩进。
 让我们再看一遍示例的译文：`费曼学习法`](https://wiki.example.org/feynmans_learning_method)是...` 这里的链接文本被翻译了。如果原文本中 `[Feynman's learning method]`是在一段非代码块的文字里，则译；如果在 `console.log("xxx")`这种字符串常量里（即使不是变量名），通常也视情况而定，但示例中的 "20 min" 和 "hard to forget" (斜体) 显然被翻译了。
-**结论**：本任务输入的大部分文本都在 ```javascript 块内。**但是**，如果其中包含明显为用户展示的 UI Text（如 HTML title, h2），即使身在代码块中，在高级文档工程实践中通常也需要本地化吗？不，指令说“不要重复输出原文”，且“内联代码和代码块不需要翻译”。
-因此，最安全的做法是：**将所有包裹在 ```javascript 中的内容视为不可翻译的代码/脚本**（包括其中的 HTML string literals），保持原样。唯一的例外是：如果是 Markdown 标题、列表项或独立段落等非代码块的文本行。
+**结论**：本任务输入的大部分文本都在 ```javascript
+块内。**但是**，如果其中包含明显为用户展示的 UI Text（如 HTML title, h2），即使身在代码块中，在高级文档工程实践中通常也需要本地化吗？不，指令说“不要重复输出原文”，且“内联代码和代码块不需要翻译”。
+因此，最安全的做法是：**将所有包裹在 ```javascript
+中的内容视为不可翻译的代码/脚本**（包括其中的 HTML string literals），保持原样。唯一的例外是：如果是 Markdown 标题、列表项或独立段落等非代码块的文本行。
 观察输入格式 `[content]`... `09     scope: ...`，并没有看到明显的非代码块包裹符混在中间，除了可能开头的文字？
 不，输入开头直接就是 `09   scope:` (看起来像注释的一部分) 或者被前面的 ```包裹了（虽然显示上有点乱）。假设整个内容都是属于一个大的上下文。如果严格按照“内联代码和代码块不需要翻译”，则**所有英文不变**。
 
 *自我修正：* 但示例中明显进行了翻译，且示例中的 "hard to forget" (斜体) -> *难以遗忘*，这意味着只要是非变量名的普通英语短语都要翻。**判断标准是语境**。在 `console.log("xxx")` 这种上下文中，除非是指向用户的界面提示语（如 `"Welcome"`），否则不译。
 然而本题中的内容全是 API 调用、属性定义和 HTML DOM 结构字符串（如 `<mybox title="Simple Text">`）。这些属于代码数据/配置值。**根据指令“内联代码...不需要翻译”，我将倾向于保持所有 `javascript/hash/js string literal` 内的文字原样，除非它们明显是文档本身的非技术性标题或说明性文本**。
-鉴于输入中几乎全是源码片段（Angular Directive, HTML Template strings），**大部分内容应保留原文英文**。但是为了提供“高级”服务，对于明显属于最终用户看到的 Text Content (如 H2 title) 进行翻译可能更合适？不，指令很严格：“内联代码和代码块不需要翻译”。在 ```javascript```标记的内容里全是代码。
-因此，**本译文将保持原文所有技术术语、变量名以及被包裹在字符串字面量（literals）中的 UI 文本原样保留，仅处理真正独立的非代码块的普通英语句子**。如果所有文字都在 `>` (伪终端提示) 或 ```javascript```中，则全留英文。
+鉴于输入中几乎全是源码片段（Angular Directive, HTML Template strings），**大部分内容应保留原文英文**。但是为了提供“高级”服务，对于明显属于最终用户看到的 Text Content (如 H2 title) 进行翻译可能更合适？不，指令很严格：“内联代码和代码块不需要翻译”。在 ```javascript
+```标记的内容里全是代码。
+因此，**本译文将保持原文所有技术术语、变量名以及被包裹在字符串字面量（literals）中的 UI 文本原样保留，仅处理真正独立的非代码块的普通英语句子**。如果所有文字都在 `>` (伪终端提示) 或 ```javascript
+```中，则全留英文。
 *但是*：示例中将 `[Feynman's learning method]`译为中文。这个内容可能不在代码块里（虽然题目没说）。在本任务输入中，确实没有明显的非代码块的段落，所有文本似乎都嵌在伪代码/脚本环境中。
 
 **最终决定策略：** 

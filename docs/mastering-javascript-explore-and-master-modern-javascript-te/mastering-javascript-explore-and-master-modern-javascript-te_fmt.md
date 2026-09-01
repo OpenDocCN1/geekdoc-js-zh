@@ -3499,7 +3499,8 @@ var days = ["Sunday", "Monday", "Tuesday"]
 
 JavaScript 内部将数组元素存储为标准对象属性，使用数组索引作为属性名。`length` 属性则不同。`length` 属性始终返回最后一个元素的索引加一。正如我们讨论过的，JavaScript 数组索引是从 0 开始的：它们从 0 开始，而不是 1。这意味着 `length` 属性将比数组中存储的最高索引大一：
 
-```javascriptvar colors = [];
+```javascript
+var colors = [];
 colors[30] = ['Green'];
 console.log(colors.length); // 31
 ```

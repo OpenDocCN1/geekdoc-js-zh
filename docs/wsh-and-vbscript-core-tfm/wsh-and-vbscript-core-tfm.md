@@ -6730,7 +6730,8 @@ For Each item In arrMatches
 strComputer=UCase(item.value)
 WScript.Echo "Updating " & strComputer
 "Insert code that takes computename as a parameter"
-```脚本使用 FileSystemObject 打开文件并读取整个内容到 strMachines 变量中。
+```
+$1FileSystemObject 打开文件并读取整个内容到 strMachines 变量中。
 
 ```
 Set objFSO=CreateObject("Scripting.FileSystemObject")

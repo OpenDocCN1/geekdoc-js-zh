@@ -2468,7 +2468,8 @@ Number(new Date("2018-10-30T00:00:00")) // 1540857600000
 
 Boolean 类型的数据可以有两个值之一——true 或 false。布尔变量通常用于存储代码中返回 true/false 结果的逻辑操作的结果：
 
-```javascriptvar answer = confirm("Do you want to continue?");
+```javascript
+var answer = confirm("Do you want to continue?");
 ```
 
 ## CAUTION: 布尔 true 和 false

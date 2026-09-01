@@ -11175,7 +11175,8 @@ function add(a, b) {
 
 以下简单函数返回其参数 x 的平方，其中 x 是任意数字。
 
-```javascriptfunction square( x ) {
+```javascript
+function square( x ) {
 return x * x;
 }
 ```

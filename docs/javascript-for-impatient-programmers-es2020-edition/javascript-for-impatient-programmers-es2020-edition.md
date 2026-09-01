@@ -7783,7 +7783,8 @@ function add(x, y) {
 
 考虑上一节中的以下函数声明：
 
-```javascriptfunction add(x, y) {
+```javascript
+function add(x, y) {
   return x + y;
 }
 ```

@@ -3887,7 +3887,8 @@ that = {
 
 
 
-```javascript}};
+```javascript
+}};
 aliensFireList = [];
 waitFire = true;
 }

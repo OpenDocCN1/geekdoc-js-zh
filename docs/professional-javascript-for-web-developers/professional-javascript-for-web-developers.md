@@ -21366,7 +21366,8 @@ alert(result.length);
 
 通过这种方式提供命名空间信息，可以方便地转换为浏览器特定的命名空间解析格式。`selectSingleNode()` 的代码如下：
 
-```javascriptfunction selectSingleNode(context, expression, namespaces) {
+```javascript
+function selectSingleNode(context, expression, namespaces) {
   var doc = (context.nodeType != 9 ? context.ownerDocument : context);
 
   if (typeof doc.evaluate == "undefined") {

@@ -2994,7 +2994,8 @@ glob + Promise.all(…) [ Stats {
 
 在第 4 步中，我们记得需要跟踪我们正在查看的文件名，因此我们需要编写自己的函数，返回一个包含两个键的对象（一个用于文件名，另一个用于统计信息 stats）。如第 6 章所示，记法 `{a, b}` 会生成一个对象 `{"a": a, "b": b}`：
 
-```javascript// …前面的的导入和参数与之前相同..
+```javascript
+// …前面的的导入和参数与之前相同..
 
 const statPair = (filename) => {
   return new Promise((resolve, reject) => {
@@ -3024,7 +3025,8 @@ glob + Promise.all(…) [ { filename: './common-sense.txt',
 
 第 5 步是确保我们只处理长度超过 100,000 个字符的文件：
 
-```javascript// …前面的导入和参数与之前相同..
+```javascript
+// …前面的导入和参数与之前相同..
 
 glob('$ srcDir}/**/*.txt’)
   .then(files => Promise.all(files.map(f => statPair(f))))
@@ -3041,7 +3043,8 @@ glob('$ srcDir}/**/*.txt’)
 
 在第 6 步中，我们将每个文件的内容拆分为行并计数：
 
-```javascript// …前面的导入和参数与之前相同..
+```javascript
+// …前面的导入和参数与之前相同..
 
 const countLines = (text) => {
   return text.split('\n').length

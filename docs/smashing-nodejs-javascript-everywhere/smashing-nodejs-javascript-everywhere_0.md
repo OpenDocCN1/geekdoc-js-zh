@@ -2210,7 +2210,8 @@ var server = net.createServer(function (conn) {
 
 然后你启动服务器并连接一个客户端。尝试像图 6-9 所示写入一些数据。在左侧，当你写入数据时，服务器通过 `console.log` 传递它。
 
-![9781119962595-fg0609.eps 图 6-9：你可以看到左侧对于右侧发送数据的 `Buffer` 对象的表示。如你所见，你获得的数据是一个 `Buffer`。记得我说过 TCP 是面向字节的吗？在这里，你可以看到 Node 正在遵循 TCP 标准！此时，你有几种不同的选择。你可以对 `Buffer` 对象调用 `.toString(‘utf8’)` 来获取 utf8 编码的表示形式。然而，由于你任何时候都不需要 utf8 以外编码的数据，你可以使用方便的 `net.Stream#setEncoding` 让 Node 为你完成：```javascript# index.js. .conn.setEncoding(‘utf8’);```![9781119962595-fg0610.eps](img/9781119962595-fg0610_fmt.png)
+![9781119962595-fg0609.eps 图 6-9：你可以看到左侧对于右侧发送数据的 `Buffer` 对象的表示。如你所见，你获得的数据是一个 `Buffer`。记得我说过 TCP 是面向字节的吗？在这里，你可以看到 Node 正在遵循 TCP 标准！此时，你有几种不同的选择。你可以对 `Buffer` 对象调用 `.toString(‘utf8’)` 来获取 utf8 编码的表示形式。然而，由于你任何时候都不需要 utf8 以外编码的数据，你可以使用方便的 `net.Stream#setEncoding` 让 Node 为你完成：```javascript
+# index.js. .conn.setEncoding(‘utf8’);```![9781119962595-fg0610.eps](img/9781119962595-fg0610_fmt.png)
 
 图 6-10：在左侧，聊天消息现在输出为 utf8 编码的字符串。
 
@@ -3064,7 +3065,9 @@ require('http').request({
 ```bash
 $ node client
 ```
-![978119962595-fg017 图 7-17：我们的 Hello 服务器的响应在客户端成功请求它后显示。接下来，你将学习如何通过你的请求发送数据。### 发送数据体注意，在上一个示例中调用 `request` 之后，你还必须调用 `end`。这是因为在创建请求之后，你可以在发送到服务器之前继续与 `request` 对象进行交互。一个例子就是如果你想向服务器发送数据，正如你在下一个示例所示。还记得你在浏览器中创建的表单吗？在这里重现它，但这次是为了客户端，使用 Node，并对 `<form>` 使用 `stdin`，结合你在第 5 章中学到的知识。```javascriptvar qs = require('querystring');require('http').createServer(function (req, res) {  var body = '';  req.on('data', function (chunk) {    body += chunk;  });  req.on('end', function () {    res.writeHead(200);    res.end('Done');  });}).listen(3000);process.stdin.on('data', function (data) {  // 模拟处理});```*(注：此处原文逻辑代码片段在输入中略有错乱，已根据语意翻译并逻辑对齐)*通过 `querystring` 模块的 `stringify` 方法，你可以将对象转换为 URL 编码的数据：```javascriptvar qs = require('querystring');var http = require('http');function send(theName) {  http.request({    host: '127.0.0.1',    port: 3000,    url: '/',    method: 'POST'  }, function (res) {    res.setEncoding('utf8');    res.on('data', function (chunk) {      console.log('Your name is: ' + qs.parse(chunk).name);    });  }).end(qs.stringify({ name: theName }));}```注意，在前面的示例中调用 `request` 之后，你也必须调用 `end`。这是因为在创建请求后，你可以在发送到服务器之前继续与 `request` 对象进行交互。一个例子就是如果你想向服务器发送数据，正如你在下一个示例所示。还记得你在浏览器中创建的表单吗？在这里重现它，但这次是为了客户端，使用 Node，并对 `<form>` 使用 `stdin`，结合你在第 5 章中学到的知识。现在运行服务器，然后运行客户端（见图 7-17）：```bash$ node client```![978119962595-fg017](img/978119962595-fg017.png)
+![978119962595-fg017 图 7-17：我们的 Hello 服务器的响应在客户端成功请求它后显示。接下来，你将学习如何通过你的请求发送数据。### 发送数据体注意，在上一个示例中调用 `request` 之后，你还必须调用 `end`。这是因为在创建请求之后，你可以在发送到服务器之前继续与 `request` 对象进行交互。一个例子就是如果你想向服务器发送数据，正如你在下一个示例所示。还记得你在浏览器中创建的表单吗？在这里重现它，但这次是为了客户端，使用 Node，并对 `<form>` 使用 `stdin`，结合你在第 5 章中学到的知识。```javascript
+var qs = require('querystring');require('http').createServer(function (req, res) {  var body = '';  req.on('data', function (chunk) {    body += chunk;  });  req.on('end', function () {    res.writeHead(200);    res.end('Done');  });}).listen(3000);process.stdin.on('data', function (data) {  // 模拟处理});```*(注：此处原文逻辑代码片段在输入中略有错乱，已根据语意翻译并逻辑对齐)*通过 `querystring` 模块的 `stringify` 方法，你可以将对象转换为 URL 编码的数据：```javascript
+var qs = require('querystring');var http = require('http');function send(theName) {  http.request({    host: '127.0.0.1',    port: 3000,    url: '/',    method: 'POST'  }, function (res) {    res.setEncoding('utf8');    res.on('data', function (chunk) {      console.log('Your name is: ' + qs.parse(chunk).name);    });  }).end(qs.stringify({ name: theName }));}```注意，在前面的示例中调用 `request` 之后，你也必须调用 `end`。这是因为在创建请求后，你可以在发送到服务器之前继续与 `request` 对象进行交互。一个例子就是如果你想向服务器发送数据，正如你在下一个示例所示。还记得你在浏览器中创建的表单吗？在这里重现它，但这次是为了客户端，使用 Node，并对 `<form>` 使用 `stdin`，结合你在第 5 章中学到的知识。现在运行服务器，然后运行客户端（见图 7-17）：```bash$ node client```![978119962595-fg017](img/978119962595-fg017.png)
 图 7-17：我们的 Hello 服务器的响应在客户端成功请求它后显示。
 
 接下来，你将学习如何通过你的请求发送数据。

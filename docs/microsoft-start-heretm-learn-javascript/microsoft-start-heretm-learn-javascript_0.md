@@ -3892,7 +3892,8 @@ $(document).ready(function () {
 
 接下来，调用了 `getJSON()` 函数。
 
-```javascript$.getJSON('/WebForm1.aspx',
+```javascript
+$.getJSON('/WebForm1.aspx',
 ```
 
 这里的主要区别在于，在 `getJSON()` 函数调用中发送了两个数据参数：

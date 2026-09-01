@@ -319,7 +319,8 @@ user.destroy();
 
 
 
-```javascript own// helper.js
+```javascript
+own// helper.js
 var helper = {};
 helper.formatDate = function(){ /* ... */ };
 
@@ -1422,7 +1423,8 @@ JSONP（或带填充的 JSONP）是在 CORS 标准化之前创建的，是从远
 
 我们定义一个全局可用的函数。一旦脚本加载，该函数就会被调用：
 
-```javascriptwindow.jsonCallback = function(result){
+```javascript
+window.jsonCallback = function(result){
   // 对结果进行处理
 }
 ```

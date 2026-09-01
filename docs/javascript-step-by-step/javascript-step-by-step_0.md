@@ -1630,7 +1630,8 @@ JavaScript 中还有其他数字常量，其中一些在表 4-1 中进行了描�
 
 `Math` 对象是一个特殊的内置对象，用于在 JavaScript 中处理数字，它有若干个对 JavaScript 程序员有帮助的属性，包括返回 pi 值、数字平方根、伪随机数和绝对值的属性。某些属性是值属性，意味着它们返回一个值，而另一些则像函数一样，根据传入的参数返回值。考虑这个关于 `Math.PI` 值属性的示例：
 
-```javascriptjavascript:alert(Math.PI);
+```javascript
+javascript:alert(Math.PI);
 ```
 
 结果所示图 4-1。
@@ -8359,7 +8360,8 @@ EHandler.add(formEl,"submit", function(eventObj) { formValid(eventObj); } );
 
 下一部分 JavaScript 出现在 `<body>` HTML 元素中，它通过使用 `EHandler` 事件处理脚本为表单添加 `submit` 事件：
 
-```javascriptvar formEl = document.getElementsByTagName("form")[0];
+```javascript
+var formEl = document.getElementsByTagName("form")[0];
 EHandler.add(formEl,"submit", function(eventObj) { formValid(eventObj); } );
 ```
 
@@ -8380,17 +8382,20 @@ EHandler.add(formEl,"submit", function(eventObj) { formValid(eventObj); } );
 
 然后你可以按照如下方式通过其 `name` 而非索引访问表单：
 
-```javascriptdocument.forms["testform"]
+```javascript
+document.forms["testform"]
 ```
 
 使用 `name` 是很有用的，因为在某些情况下，你可能不知道想要访问的表单的索引值，这种情况在服务器端或客户端代码动态创建表单时经常发生，你必须在文档中计算出（糟糕的是猜测）所需的特定表单的索引值。确保能够获取索引值引用的最一致方法是设置表单的 `id`，然后通过该 `id` 访问它。你也可以通过非标准方式通过 `document` 对象直接访问表单，但我并不建议这样做：
 
-```javascriptdocument.testform
+```javascript
+document.testform
 ```
 
 这种直接的方法的方法在不同浏览器之间工作得并不一致，而且正确输入它本身并不多费多少精力，如下：
 
-```javascriptdocument.forms["testform"]
+```javascript
+document.forms["testform"]
 ```
 
 # 处理表单信息
@@ -8431,7 +8436,8 @@ Select A Constellation:
 
 当用户选择一个选项时，选择框的 `value` 属性设置为该选项的值。对于此示例，名为 `startype` 的选择框在其 `value` 属性中持有访问者选择的任何内容。你可以如下所示访问它：
 
-```javascriptdocument.forms["starform"].startype.value
+```javascript
+document.forms["starform"].startype.value
 ```
 
 对于这个特定示例，你需要将事件处理程序连接到选择框的 `change` 事件，你可以借助在第 11 章中开发的 `EventHandler` 事件处理脚本来实现。每当选择框中的选择变化时（例如用户使用下拉菜单选择选项时），`change` 事件就会触发一个函数。页面通过示例 14-1 中的代码将 `change` 事件附加到 `<select>` 框，该代码添加在网页的 `<body>` 部分。
@@ -8442,7 +8448,8 @@ Select A Constellation:
 
 示例 14-1. 使用第 11 章的 `EventHandler` 脚本为 `<select>` 元素附加 `change` 事件。
 
-```javascript<script type="text/javascript">
+```javascript
+<script type="text/javascript">
 var selEl = document.getElementById("starselect");
 EHandler.add(selEl,"change", function() { displayValue();  } );
 </script>

@@ -6992,7 +6992,8 @@ encoded_string = escape("string safe for cookies");
 评估字符串。
 示例：
 
-```javascriptvar the_sum = eval("2 + 3");
+```javascript
+var the_sum = eval("2 + 3");
 ```
 
 变量 the_sum 等于 5，因为 eval() 强制 JavaScript 评估字符串 "2 + 3"。

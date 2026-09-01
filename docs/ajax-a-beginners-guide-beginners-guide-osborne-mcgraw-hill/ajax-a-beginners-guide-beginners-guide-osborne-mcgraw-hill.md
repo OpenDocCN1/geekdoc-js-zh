@@ -7336,7 +7336,8 @@ function getDocumentElement()
 
 好的，现在我们已经将该包含所需 XML数据的XML对象传递给名为`displayGuest`的函数：  
 
-```javascript 
+```javascript
+
 <script language="javascript">
 function displayGuest (xmldoc)
 {   
@@ -7401,7 +7402,8 @@ function displayGuest (xmldoc)
 
 既然我们已经拥有了该对应于 `<parties>` document element node 的 object(partiesNode)，那么在`displayGuest`函数中可按如下方式访问其子节点：  
 
-```javascript 
+```javascript
+
 <script language="javascript">  
    function displayGuest (xmldoc)     
      {
@@ -7417,7 +7419,8 @@ function displayGuest (xmldoc)
 
  第三位客人存储在`<people>`元素内，而 `<people> `是` <party>`元素的(仅)最后一个子 element（即节点），因此我们可以使用该 lastChild属性访问它：
 
-   ```javascript 
+   ```javascript
+
 <script language="javascript">   
       function displayGuest (xmldoc)    
            {          

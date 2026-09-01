@@ -2351,7 +2351,8 @@ let total = subtotal + salesTax
 
 如果你将这段代码输入 JavaScript 控制台，你将不会得到任何数据，因为我们没有向控制台打印任何内容。但是，你可以输入：
 
-```javascriptconsole.log(total)
+```javascript
+console.log(total)
 ```
 
 …来查看 `total` 的值。或者你只需要输入：
@@ -3640,7 +3641,8 @@ class Address {
 const robert = {
    firstName: "Robert",
 ```
-```javascript) {
+```javascript
+) {
       this.firstName = firstName
 ```
 ```

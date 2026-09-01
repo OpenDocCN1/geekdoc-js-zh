@@ -2164,7 +2164,8 @@ console.log(el.classList);
 
 `classList` 对象包含了一系列用于操作类的属性和方法。你可以使用 `contains()` 方法查询某个类是否存在，如果该类存在则返回 `true`，否则返回 `false`。你可以使用 `add()` 方法添加类，使用 `remove()` 方法移除类。以下代码测试类 `foo` 类，如果不存在则添加它，如果存在则移除它：
 
-```javascriptif (el.classList.contains('foo')) {
+```javascript
+if (el.classList.contains('foo')) {
   el.classList.remove('foo');
 } else {
   el.classList.add('foo');

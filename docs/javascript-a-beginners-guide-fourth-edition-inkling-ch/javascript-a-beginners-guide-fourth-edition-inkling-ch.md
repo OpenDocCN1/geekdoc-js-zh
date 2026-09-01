@@ -6630,7 +6630,8 @@ window.alert(car["seats"]);
 
 为了完成前面的函数，你需要将属性添加到函数中。假设你想创建一个名为 `car`（汽车）的对象，具有 `seats`（座椅）、`engine`（引擎）和 `radio`（收音机）属性。下面的代码展示了如何实现：
 
-```javascriptfunction Car(seats, engine, radio) { // 函数接收三个参数
+```javascript
+function Car(seats, engine, radio) { // 函数接收三个参数
   this.seats = seats; // 将参数值赋值
   this.engine = engine; // 给对象的属性
   this.radio = radio;
@@ -6643,14 +6644,16 @@ window.alert(car["seats"]);
 
 使用 `new` 关键字创建 `Car` 对象实例的示例如下所示：
 
-```javascriptvar work_car = new Car("cloth", "V-6", "Tape Deck");
+```javascript
+var work_car = new Car("cloth", "V-6", "Tape Deck");
 ```
 
 你首先看到的是你正在创建一个名为 `work_car` 的新变量。该变量将被赋值为 `Car` 对象的新实例，并使用提供的参数作为其属性值。这些值是你希望为该 `Car` 对象实例使用的值。根据顺序，你表示座椅是布料（cloth），引擎是 V-6，收音机是磁带（Tape Deck）。
 
 现在你可以访问 `Car` 对象的 `work_car` 实例。如果你想知道 `work_car` 有什么类型的引擎，可以使用点符号这样访问它：
 
-```javascriptvar engine_type = work_car.engine;
+```javascript
+var engine_type = work_car.engine;
 ```
 
 这将 `Car` 对象实例 `work_car` 的 `engine` 属性属性值赋值给变量 `engine_type`。由于你将 "V-6" 作为引擎参数发送给构造函数，因此 `engine_type` 被赋值为 "V-6"。
@@ -6661,14 +6664,16 @@ window.alert(car["seats"]);
 
 ## 第 8 章：对象 191
 
-```javascriptfunction Car(seats, engine, radio) {
+```javascript
+function Car(seats, engine, radio) {
   this.seats = seats;
   this.engine = engine;
   this.radio = radio;
 }
 ```
 
-```javascriptvar work_car = new Car("cloth", "V-6", "Tape Deck");
+```javascript
+var work_car = new Car("cloth", "V-6", "Tape Deck");
 var engine_type = work_car.engine;
 ```
 
@@ -6679,14 +6684,16 @@ var engine_type = work_car.engine;
 
 为了看到对象的实例，你将在代码中添加另一个 `Car` 实例。下面的代码使用了两个 `Car` 对象实例，一个名为 `work_car`，另一个名为 `fun_car`：
 
-```javascriptfunction Car(seats, engine, radio) {
+```javascript
+function Car(seats, engine, radio) {
   this.seats = seats;
   this.engine = engine;
   this.radio = radio;
 }
 ```
 
-```javascriptvar work_car = new Car("cloth", "V-6", "Tape Deck");
+```javascript
+var work_car = new Car("cloth", "V-6", "Tape Deck");
 var fun_car = new Car("leather", "V-8", "CD Player");
 var engine_type = work_car.engine;
 var fun_engine_type = fun_car.engine;
@@ -6697,14 +6704,16 @@ var fun_engine_type = fun_car.engine;
 
 现在，对象的新实例使用了相同的构造函数，但使用了不同的值。你现在可以访问两种类型汽车的任何功能。例如，看下面的代码：
 
-```javascriptfunction Car(seats, engine, radio) {
+```javascript
+function Car(seats, engine, radio) {
   this.seats = seats;
   this.engine = engine;
   this.radio = radio;
 }
 ```
 
-```javascriptvar work_car = new Car("cloth", "V-6", "Tape Deck");
+```javascript
+var work_car = new Car("cloth", "V-6", "Tape Deck");
 var fun_car = new Car("leather", "V-8", "CD Player");
 document.write("I want a car with " + fun_car.seats + "<br>");
 document.write("It also needs a " + work_car.engine + " engine.<br>");
@@ -6730,7 +6739,8 @@ document.write("Oh, and I would like a " + fun_car.radio + " also.");
 
 要向构造函数添加方法，你可以将函数表达式赋值给属性名称，如下代码所示：
 
-```javascriptfunction Car(seats, engine, radio) {
+```javascript
+function Car(seats, engine, radio) {
   this.seats = seats;
   this.engine = engine;
   this.radio = radio;

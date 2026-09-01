@@ -1754,7 +1754,8 @@ fetch('/article/.../load')
 
 
 
-```javascript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。fetch('/article/.../save', { method: 'POST',
+```javascript
+ fetch('/article/.../save', { method: 'POST',
   headers: {
     'Content-Type': 'application/json'
   },
@@ -3652,7 +3653,7 @@ CREATE INDEX idx_username ON users (username);
 
 
 
-理解这些基础的 SQL我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。查询——`SELECT`、`INSERT`、`UPDATE` 和 `DELETE`——对于有效地与关系型数据库交互至关重要。它们允许你根据应用程序的要求从数据库表中检索、添加、更新和删除数据。通过掌握这些查询，你将能够在 SQL 中执行广泛的数据处理任务。
+理解这些基础的 SQL 查询——`SELECT`、`INSERT`、`UPDATE` 和 `DELETE`——对于有效地与关系型数据库交互至关重要。它们允许你根据应用程序的要求从数据库表中检索、添加、更新和删除数据。通过掌握这些查询，你将能够在 SQL 中执行广泛的数据处理任务。
 
 # 使用 PHP 和 MySQL
 
@@ -5610,7 +5611,7 @@ fetch('https://example.com', {
 
 
 
-##我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。备份与恢复策略
+## 备份与恢复策略
 
 备份是保护网站数据安全、确保业务连续性的关键环节。有效的备份策略能够帮助你在遭遇数据丢失、误删除或勒索软件攻击时快速恢复。
 

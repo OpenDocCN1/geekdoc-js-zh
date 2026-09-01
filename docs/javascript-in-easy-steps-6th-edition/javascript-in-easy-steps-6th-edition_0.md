@@ -3476,7 +3476,8 @@ JavaScript 有一个 `String` 对象，提供了操作字符串值的有用方�
 
 创建一个 HTML 文档，包含一个自执行函数，并开始声明三个变量
 
-```javascriptlet topic = ‘JavaScript’
+```javascript
+let topic = ‘JavaScript’
 let series = ‘in easy steps’
 let title = ‘‘
 ```
@@ -5412,7 +5413,8 @@ function ( ) { reactTo( list, event ) } )
 
 ![image](img/3v.jpg)现在，添加事件处理函数，它将在段落中显示事件类型和当前的列表选择项。
 
-```javascript evenfunction reactTo( list, event ) {
+```javascript
+evenfunction reactTo( list, event ) {
 const info = document.getElementById( ‘info’ )
 let index = list.options.selectedIndex
 let city = list.options[ index ].value

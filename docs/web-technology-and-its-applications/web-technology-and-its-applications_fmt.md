@@ -1,6 +1,6 @@
 
 
-# Web 技术及其应用我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。Pundalik Chavan 教授Husna Tabassum 教授![](img/05c71622ed7cf086940348e0edf07c33_0_0.png)
+# Web 技术及其应用 Pundalik Chavan 教授Husna Tabassum 教授![](img/05c71622ed7cf086940348e0edf07c33_0_0.png)
 
 ![](img/05c71622ed7cf086940348e0edf07c33_1_0.png)
 
@@ -669,7 +669,7 @@ p,div {
 
 
 
-```html我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。<!DOCTYPE html>
+```html <!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -2030,12 +2030,13 @@ try {
 
 
 
-###我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。3.6 JavaScript象对象具有构造函数、属性和方法。
+### 3.6 JavaScript象对象具有构造函数、属性和方法。
 
 - 构造函数：可以使用以下方法创建新对象：`var someObject = new Object()`
 - 属性：每个对象可能可以使用点符号访问的属性- 方法：对象也可以关联方法语法：
 
-```javascriptsomeObject.doSomething();
+```javascript
+someObject.doSomething();
 ```
 
 #### JavaScript 中包含的对象##### i) 数组（Array）
@@ -2046,14 +2047,16 @@ try {
 
 数组最常见的操作之一顺序遍历项目。
 
-```javascriptfor (var i =0; i < greetings.length; i++) {
+```javascript
+for (var i =0; i < greetings.length; i++) {
  alert(greetings[i]);
 }
 ```
 
 ##### iii) 修改数组向现有数组添加项目可以使用`push`方法。
 
-```javascriptgreetings.push("Good");
+```javascript
+greetings.push("Good");
 ```
 
 其他修改数组的方法包括：`concat()`、`slice()`、`join()`、`reverse()`、`shift()`和`sort()`。
@@ -2066,24 +2069,28 @@ try {
 
 字符串对象可以这样创建，例如：`greet = new String("Good")`。
 
-```javascriptvar greet = "Good";
+```javascript
+var greet = "Good";
 alert(greet.length);
 ```
 
 拼接两个字符串：
 
-```javascriptvar str = greet.concat("Morning"); // 长拼接var str = greet + "Morning"; // + 运算符拼接```
+```javascript
+var str = greet.concat("Morning"); // 长拼接var str = greet + "Morning"; // + 运算符拼接```
 
 ##### vi) 日期（Date）
 
 `Date`可以快速计算当前日期或为特定日期创建日期对象。将今天的日期显示为字符串，只需创建一个新对象并使用`toString()`方法即可。
 
-```javascriptvar d = new Date();
+```javascript
+var d = new Date();
 
 // 输出 Today Mon Nov12201215:40:19 GMT-0700alert("Today is" + d.toString());
 ```
 
-```javascriptvar a = document.doctype.name;
+```javascript
+var a = document.doctype.name;
 var b = document.inputEncoding;
 ```
 
@@ -2100,14 +2107,16 @@ var b = document.inputEncoding;
 
 ##3.7 修改 DOM 元素现代 JavaScript 程序员会希望向 HTML 页面写入内容，但是在特定的位置，而不是总在底部。使用 DOM `document` 和 HTML DOM 元素对象，我们可以使用`innerHTML`属性来实现这一目标。
 
-```javascriptvar latest = document.getElementById("latestComment");
+```javascript
+var latest = document.getElementById("latestComment");
 
 var oldMessage = latest.innerHTML = oldMessage + "<p>Updated this div with JS</p>";
 ```
 
 ###3.7.1 改变元素的样式我们可以使用`Element`节点的`style`或`className`属性添加或删除任何样式，这可能您想要动态更改元素外观的操作。下面展示了如何更改节点的背景颜色并添加三像素边框的用法。
 
-```javascriptvar commentTag = document.getElementById("specificTag");
+```javascript
+var commentTag = document.getElementById("specificTag");
 
 commentTag.style.backgroundColor = "#FFFF00";
 commentTag.style.borderWidth = "3px";
@@ -2115,7 +2124,8 @@ commentTag.style.borderWidth = "3px";
 
 `className`属性通常更好的选择，因为它允许样式在代码之外被创建，从而让设计师更容易访问。使用这种模型，我们通过定义两个样式来更改背景颜色，并在 JavaScript代码中更改它们。
 
-```javascriptvar commentTag = document.getElementById("specificTag");
+```javascript
+var commentTag = document.getElementById("specificTag");
 
 commentTag.className = "someClassName";
 ```
@@ -2128,7 +2138,8 @@ HTML5 引入了`classList`元素，它允许你在元素上添加、删除或切
 
 ###监听器这种方法将所有 JavaScript代码与 HTML 标记分离。考虑给示例，它包含监听器的传统方式：
 
-```javascriptvar greetingBox = document.getElementById("example1");
+```javascript
+var greetingBox = document.getElementById("example1");
 
 greetingBox.onclick = alert("Good Morning");
 ```
@@ -2171,7 +2182,8 @@ JavaScript 中常见的鼠标事件：
 
 例如：`document.getElementById("keyExample").onkeydown = function myFunction(e)`
 
-```javascript{
+```javascript
+{
  var keyPressed = e.keyCode; // 获取原始键码 var character = String.fromCharCode(keyPressed);
 
  // 转换为字符串 alert("Key " + character);
@@ -2206,7 +2218,8 @@ JavaScript 中常见的鼠标事件：
 
 例如：
 
-```javascriptdocument.getElementById("loginForm").onsubmit = function(e) {
+```javascript
+document.getElementById("loginForm").onsubmit = function(e) {
  var pass = document.getElementById("pw").value;
 
  if (pass = "") {
@@ -2216,7 +2229,8 @@ JavaScript 中常见的鼠标事件：
 };
 ```
 
-```javascriptvar fieldValue = document.getElementById("username").value;
+```javascript
+var fieldValue = document.getElementById("username").value;
 
 if (fieldValue == null || fieldValue == "") {
  // 字段为空。停止表单提交 e.preventDefault();
@@ -2229,7 +2243,8 @@ if (fieldValue == null || fieldValue == "") {
 
 示例：
 
-```javascriptfunction isNumeric(n) {
+```javascript
+function isNumeric(n) {
  return !isNaN(parseFloat(n)) && isFinite(n);
 }
 ```
@@ -2238,7 +2253,8 @@ if (fieldValue == null || fieldValue == "") {
 
 例如：
 
-```javascriptvar formExample = document.getElementById("loginForm");
+```javascript
+var formExample = document.getElementById("loginForm");
 formExample.submit();
 ```
 
@@ -3017,7 +3033,7 @@ display_errors = Off
 
 
 
-`log_error` 设置指定是否应该将错误消息发送到服务器错误日志。可以通过`ini_set()`函数通过程序设置：`ini_set('log_errors',我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。1);`。它也可以在`php.ini`文件中设置：
+`log_error` 设置指定是否应该将错误消息发送到服务器错误日志。可以通过`ini_set()`函数通过程序设置：`ini_set('log_errors', 1);`。它也可以在`php.ini`文件中设置：
 
 ```inilog_errors = On```
 
@@ -3184,7 +3200,8 @@ PHP 默认不包含页面缓存，这使得免费和商业第三方缓存插件�
 
 例如：
 
-```javascriptvar oneDie = { color : "FF0000", faces : [1,2,3,4,5,6] };
+```javascript
+var oneDie = { color : "FF0000", faces : [1,2,3,4,5,6] };
 ```
 
 一旦定义，就可以使用点符号来访问这些元素。例如，可以通过编写以下代码将颜色改为蓝色：
@@ -3193,7 +3210,8 @@ PHP 默认不包含页面缓存，这使得免费和商业第三方缓存插件�
 
 #### ii)通过函数模拟类虽然 JavaScript 中没有提供正式的类机制，但可以通过使用函数将变量和方法封装在一起来接近这一点，如下所示：
 
-```javascriptfunction Die(col) {
+```javascript
+function Die(col) {
  this.color=col;
  this.faces=[1,2,3,4,5,6];
 }
@@ -3203,7 +3221,8 @@ PHP 默认不包含页面缓存，这使得免费和商业第三方缓存插件�
 
 ####5.6.1 在 JavaScript 中向对象添加方法要在对象的函数中定义方法，既可以在内部定义，也可以使用指向在类外部定义的函数引用。外部定义可能会迅速导致命名空间冲突问题，因为所有方法名必须与类的所有其他方法保持不冲突。由于此原因，在类定义内部添加方法的一种技术将匿名函数赋值给变量。例如：`function(col)`
 
-```javascript{ this.color=col;
+```javascript
+{ this.color=col;
  this.faces=[1,2,3,4,5,6];
  this.randomRoll = function() {
  var randNum = Math.floor((Math.random() * this.faces.length)+1);
@@ -3214,7 +3233,8 @@ PHP 默认不包含页面缓存，这使得免费和商业第三方缓存插件�
 
 #### iii) 使用原型原型（Prototype） JavaScript 中一种基本的语法机制，用于让 JavaScript 的行为更像面向对象的语言。原型属性和方法为对象的所有实例定义一次。例如：
 
-```javascriptfunction Die(col) {
+```javascript
+function Die(col) {
  this.color=col;
  this.faces=[1,2,3,4,5,6];
 }
@@ -3516,7 +3536,7 @@ $(this).animate(
 | --- | --- | --- |
 | `//transform` 没有 step! | `var angle=random(0,360); $(this).addClass("transform"; rotate(\+angle+"deg)");` | `var angle=random(0,360); $(this).addClass("transform"; rotate(\+angle+"deg)");` |
 
-##我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。5.15 Backbone MVC 框架Backbone一个进一步抽象 JavaScript以更符合 MVC 模型的框架。该库可以从 <http://underscorejs.org/> 获取。在 Backbone 中，你围绕模型的概念构建客户端脚本。这些模型通常与数据库中的行相关，并可以使用 REST 接口加载、更新并最终保存回数据库。Backbone 中的 MVC 模式使用模型对象、集合对象和视图来渲染 HTML 模型。
+## 5.15 Backbone MVC 框架Backbone一个进一步抽象 JavaScript以更符合 MVC 模型的框架。该库可以从 <http://underscorejs.org/> 获取。在 Backbone 中，你围绕模型的概念构建客户端脚本。这些模型通常与数据库中的行相关，并可以使用 REST 接口加载、更新并最终保存回数据库。Backbone 中的 MVC 模式使用模型对象、集合对象和视图来渲染 HTML 模型。
 
 ### Backbone 模型Backbone.js 将模型定义为“任何 JavaScript 应用程序的核心，包含交互数据以及周围的大部分逻辑：转换、验证、计算属性和访问控制”。
 
@@ -3524,12 +3544,14 @@ $(this).animate(
 
 图：相册的 Backbone 模型、集合和视图插图在 Backbone 中，我们首先抽象想要创建模型的元素。在观察案例中，TravelAlbum 将由一个标题、photoCount以及一个控制是否发布的布尔值组成。我们使用 Backbone 定义的模型必须扩展 `Backbone.Model`，在此过程中添加方法。
 
-```javascript// 为专辑创建模型var TravelAlbum = Backbone.Model.extend({ defaults:
+```javascript
+// 为专辑创建模型var TravelAlbum = Backbone.Model.extend({ defaults:
  { title: 'NewAlbum',
  photoCount:0,
 ```
 
-```javascriptpublished: falsetoggle: function(){
+```javascript
+published: falsetoggle: function(){
 this.set('checked', !this.get('checked'));
 } });
 ```
@@ -3538,7 +3560,8 @@ this.set('checked', !this.get('checked'));
 
 考虑给定的示例，这是一个用于存储 PhotoAlbums 示例的 Backbone.js Collection（集合）演示。
 
-```javascript// 创建一个专辑集合var AlbumList = Backbone.Collection.extend({
+```javascript
+// 创建一个专辑集合var AlbumList = Backbone.Collection.extend({
  // 设置此集合中对象的模型类型 model: TravelAlbum,
 
  //仅返回已勾选的专辑 GetChecked: function() {
@@ -3557,7 +3580,8 @@ var albums = new AlbumList(
 
 视图允许你将模型（models）转换为用户看到的 HTML。它们附加到 Collection 的方法和属性上，并定义当 Backbone 确定需要刷新视图时就会被调的方法。下面为我们的模型和集合定义的自定义视图对象：
 
-```javascriptvar TravelAlbumView = Backbone.View.extend({
+```javascript
+var TravelAlbumView = Backbone.View.extend({
  TagName: 'li',
 
  events:{
@@ -3677,7 +3701,8 @@ xmlns="http://www.w3.org/1999/xhtml">
 - 熟悉的 DOM 函数如 `getElementById()`、`getElementsByTagName()` 和 `createElement()` 可用于访问和操作数据。
 - jQuery 提供了处理 XML 的另一种方式，处理跨浏览器支持。
 
-### 示例：使用 jQuery处理 XML```javascriptart = '<?xml version="1.0" encoding="ISO-8859-1"?>';
+### 示例：使用 jQuery处理 XML```javascript
+art = '<?xml version="1.0" encoding="ISO-8859-1"?>';
 art += '<art><painting id="290"><title>阳台...</art>';
 
 // 使用 jQuery 的 parseXML() 函数创建 DOM象xmlDoc = $.parseXML( art );
@@ -3729,7 +3754,8 @@ alert(a.artist.name + " " + a.artist.nationality);
 
 JSON 信息将包含在一个字符串中，可以使用 `JSON.parse()` 函数将包含 JSON 数据的字符串转换为 JavaScript象：
 
-```javascriptvar text = {"artist": {"name":"Manet","nationality":"France"}};
+```javascript
+var text = {"artist": {"name":"Manet","nationality":"France"}};
 var a = JSON.parse(text);
 
 alert(a.artist.nationality);
@@ -3737,12 +3763,14 @@ alert(a.artist.nationality);
 
 jQuery 库还提供了一个 JSON解析器，它可以在所有浏览器中工作（旧版浏览器不支持 `JSON.parse()` 函数）：
 
-```javascriptvar artist = jQuery.parseJSON(text);
+```javascript
+var artist = jQuery.parseJSON(text);
 ```
 
 JavaScript还提供了一种机制将 JavaScript象转换为 JSON 字符串：
 
-```javascriptvar text = JSON.stringify(artist);
+```javascript
+var text = JSON.stringify(artist);
 ```
 
 ### ii) 在 PHP 中使用 JSONPHP 带有 JSON 扩展，从 PHP5.2版本开始，JSON 扩展默认绑定并编译到 PHP 中。将 JSON 字符串转换为 PHP象非常简单：

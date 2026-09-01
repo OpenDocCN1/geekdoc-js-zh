@@ -891,7 +891,8 @@ function ([arguments]) {
 
 70 JavaScript Essentials For Dummies
 
-```javascript// 使用匿名函数声明 tipCost
+```javascript
+// 使用匿名函数声明 tipCost
 const tipCost = function (preTip, tipPercent) {
   const tipResult = preTip * tipPercent;
   return (tipResult);

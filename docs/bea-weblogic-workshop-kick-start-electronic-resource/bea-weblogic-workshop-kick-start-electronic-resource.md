@@ -1723,7 +1723,8 @@ public void stop(){ delayeDtimer.stop();) // Based on standard naming convention
 
 WebLogic Workshop 试图使指定时间变得相当简单。时间通常通过一个整数后跟时间周期的名称、一个开始该时间周期的字母或一系列字母（所有字母不区分大小写）来指定。例如，要指定 5 秒，你可以写：
 `"5s"`、`"5 Sec"`、`"5seconds"` 或甚至
-```java 
+```java
+
 "5 SeCoN"
 ```
 

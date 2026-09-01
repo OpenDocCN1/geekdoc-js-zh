@@ -7009,7 +7009,8 @@ console.log(rex.dinner ); // Rex eats anything for dinner.
 
 请注意，目前还没有定义私有方法、getter 和 setter的方法，尽管 TC39 第 2 阶段的草案建议使用哈希 `#` 前缀来命名。例如：
 
-```javascriptclass MyClass {
+```javascript
+class MyClass {
   // 私有属性
   #x = 0;
 

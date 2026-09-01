@@ -9242,7 +9242,8 @@ x = 3; /* x++; // /* */ alert(x) // 返回 3
 
 @if 语法与传统的 JavaScript if 语句语法略有不同。对应的 JavaScript 语法为：
 
-```javascriptif (cond1) {
+```javascript
+if (cond1) {
 codeBlock
 } else if (cond2) {
 codeBlock2

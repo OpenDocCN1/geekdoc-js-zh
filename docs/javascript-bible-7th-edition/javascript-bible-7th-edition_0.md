@@ -9635,7 +9635,8 @@ Math.floor(Math.random() * (n – m + 1)) + m
 
 在这里，`m` 是范围内可能的可能的整数值，`n` 等于范围的最大值。对于骰子游戏，每个骰子的公式为：
 
-```javascriptnewDieValue = Math.floor(Math.random() * 6) + 1;
+```javascript
+newDieValue = Math.floor(Math.random() * 6) + 1;
 ```
 
 ## Math 对象快捷方式
@@ -57204,7 +57205,8 @@ if (wmp && wmp.CreationDate)
 
 可以使用可用屏幕尺寸值作为窗口属性的设置。例如，为了排列窗口占据显示器上的所有可用空间，你必须将窗口置在屏幕左上角，然后将窗口外部尺寸设置为可用尺寸，如下：
 
-```javascriptfunction maximize()
+```javascript
+function maximize()
 {
     window.moveTo(0,0);
     window.resizeTo(screen.availWidth, screen.availHeight);

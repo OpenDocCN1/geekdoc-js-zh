@@ -13932,7 +13932,8 @@ function getDoc() {
 
 如果浏览器是 IE 6 或更旧版本，则创建一个新的 `ActiveXObject` 并存储在 `request` 变量中。
 
-```javascript  
+```javascript
+ 
 else if(window.ActiveXObject) {   // 检查 ActiveX 的可用性
     var request = new ActiveXObject("Microsoft.XML HTTP");      
 }     
@@ -13955,7 +13956,8 @@ function handleResponse() {
 
 完成后，像这样调用函数：
 
-```javascript  
+```javascript
+ 
 function findClass(jsonresp) {       
     for (i = 0; i < jsonresp.class1.length; i++) {               
         // 遍历 JSON 结构 
@@ -13969,7 +13971,8 @@ function findClass(jsonresp) {
 
 当就绪状态等于 4 且状态为 200 时：
 
-```javascript  
+```javascript
+ 
 if ((xhr.readyState == 4) && (xhr.status == 200)) {       
     var jsonResp = xhr.responseText;    
     jsonResp = eval('(' + jsonResp + ')');        

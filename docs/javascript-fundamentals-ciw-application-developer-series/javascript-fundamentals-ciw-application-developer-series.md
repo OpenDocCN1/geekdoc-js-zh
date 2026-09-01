@@ -5649,7 +5649,8 @@ JavaScript 开发中最挑战性的方面之一对象。随着应用程序的增
 你可以将这些参数命名为 `id`、`item`、`description`、`material` 和 `price`。
 仅凭这些信息，你就可以编写如下构造函数：
 
-```javascriptfunction productObject(id,item,description,material,price) {
+```javascript
+function productObject(id,item,description,material,price) {
 this.id = id;
 this.item = item;
 this.description = description;

@@ -1,5 +1,5 @@
 
-# Javascript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。或 Java Web 应用开发第 2 卷：关联与类层结构
+# Javascript 或 Java Web 应用开发第 2 卷：关联与类层结构
 
 ![](img/26c953d1023457333859f69258a99556_1_0.png)
 
@@ -254,7 +254,7 @@ y : Integer |
 
 在我们示例模型——出版社-书籍-作者信息设计模型中，我们需要将两个单向关联替换为合适的引用属性。
 
-在第一步中，我们将图我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。1.6 中的多对一关联`Book-has-Publisher`替换为`Book`类中的功能性引用属性`publisher`，得到图 1.10 所示的 OO 类模型：
+在第一步中，我们将图 1.6 中的多对一关联`Book-has-Publisher`替换为`Book`类中的功能性引用属性`publisher`，得到图 1.10 所示的 OO 类模型：
 
 | Book | Publisher |
 | --- | --- |
@@ -2294,7 +2294,7 @@ ant deploy -Dappname=UnidirectionalAssociationApp
 
 
 
-在派生反向引用属性为多值而其反向属性为单值的情况下（如下图我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。7.4 所示，`Publisher::publishedBooks` 由 `Book::publisher` 派生），生命周期依赖关系意味着：
+在派生反向引用属性为多值而其反向属性为单值的情况下（如下图 7.4 所示，`Publisher::publishedBooks` 由 `Book::publisher` 派生），生命周期依赖关系意味着：
 
 - 1. 每当创建一个“基对象”（如书）时，都必须通过向其值集中添加指向新基对象的引用，来更新相应的反向属性（即向 `Publisher::publishedBooks` 中添加指向新对象的引用）；
 - 2. 每当基属性被更新时（例如，为一本书分配了新的出版商），也必须更新相应的反向属性（在我们的示例中为 `Publisher::publishedBooks`），即从其值集中移除该对象引用并添加新的引用；
@@ -3108,7 +3108,7 @@ http://localhost:8080/BidirectionalAssociationApp/WebContent/views/app/index.xht
 
 
 
-UML我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。规范规定：“部分可以在组合实例被删除之前从组合对象中移除，并且不再作为组合实例的一部分被删除。”这表明部分的生命周期与组合对象绑定，但它可以被尽早分离。
+UML 规范规定：“部分可以在组合实例被删除之前从组合对象中移除，并且不再作为组合实例的一部分被删除。”这表明部分的生命周期与组合对象绑定，但它可以被尽早分离。
 
 # 116 10 关联的特殊主题
 
@@ -3958,7 +3958,7 @@ set about(a) { . . }
 
 
 
-```js我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。static checkCategory(c) {
+```js static checkCategory(c) {
   if (c === undefined || c === "") {
     return new NoConstraintViolation(); // category 是可选的
   } else if (!util.isIntegerOrIntegerString(c) || parseInt(c) < 1 ||

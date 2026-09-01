@@ -3583,7 +3583,8 @@ document.MortCalc.focus();
 
 }
 
-```javascriptjavascript
+```javascript
+javascript
 varamount=document.MortCalc.Amount.value;
 varrate=document.MortCalc.Rate.value;
 varyears=document.MortCalc.Years.value;

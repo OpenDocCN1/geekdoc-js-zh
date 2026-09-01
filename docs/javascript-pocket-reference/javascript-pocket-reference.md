@@ -3592,7 +3592,8 @@ var pattern = new RegExp("s$");
 字符串支持四种使用正则表达式的方法。最的是 `search()`。该方法接受一个正则表达式参数，并返回第一个匹配子字符串起始的字符位置，如果没有匹配项则返回 -1。例如，以下调用返回 4：
 
 ```
-```JavaScript.search(/script/i);```
+```javascript
+.search(/script/i);```
 ```
 
 `search()` 不支持全局搜索；它忽略其正则表达式参数的 `g` 标志。

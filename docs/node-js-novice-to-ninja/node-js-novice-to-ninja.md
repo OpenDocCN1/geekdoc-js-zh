@@ -1137,7 +1137,8 @@ Node.js 调试指南为其他 IDE 和编辑器提供了建议，包括 Visual St
 
 -   一个标准断点（standard. **）。
 -   一个条件断点，在满足标准时停止程序——例如 `count > 3`。
--   一个日志点（logpoint）。这实际上是无需console代码的 `console.log()`！输入大大大求求求求的字符串字符串。例如：：: { req.url } } 会输出 `reqrequrlurl。。```javascriptjavascriptjavascriptjavascriptconsole..(req.url);
+-   一个日志点（logpoint）。这实际上是无需console代码的 `console.log()`！输入大大大求求求求的字符串字符串。例如：：: { req.url } } 会输出 `reqrequrlurl。。```javascript
+javascriptjavascriptjavascriptconsole..(req.url);
 const nameArg = capitalize(req.url);
 res.statusCode = 200;
 Log Message: URL: {req.url}

@@ -18105,7 +18105,8 @@ $(document).ready(() => {
 | :--- | :--- | :--- |
 | **添加事件监听器** | `element.addEventListener(eventName, eventHandler);` | `$(element).on(eventName, eventHandler);` |
 | **移除事件监听器** | `element.removeEventListener(eventName, eventHandler);` | `$(element).off(eventName, eventHandler);` |
-| **文档加载时执行函数** | ```javascript<br>function ready(callback) {<br>  if (document.readyState != 'loading') {<br>    callback();<br>  } else {<br>    document.addEventListener('DOMContentLoaded', callback);<br>  }<br>}<br>``` | `$(document).ready(() => { });` |
+| **文档加载时执行函数** | ```javascript
+<br>function ready(callback) {<br>  if (document.readyState != 'loading') {<br>    callback();<br>  } else {<br>    document.addEventListener('DOMContentLoaded', callback);<br>  }<br>}<br>``` | `$(document).ready(() => { });` |
 | **处理 Ajax 请求** | | |
 | **发送 GET 请求** | `fetch(url).then(response => {}).catch(error => {});` | `$.ajax({<br>  type: 'GET',<br>  url: url,<br>  success: response => {},<br>  error: () => {}<br>});` |
 | **发送 POST 请求** | `fetch('url', { method: 'POST', body: data }).then(response => {}).catch(error => {});` | `$.ajax({<br>  type: 'POST',<br>  url: url,<br>  data: data<br>});` |

@@ -1473,7 +1473,8 @@ console.log(myIterator.next().done); // true
 
 考虑以下代码：
 
-```javascriptfunction greeting(msg) {
+```javascript
+function greeting(msg) {
   return function who(name) {
     console.log(`${msg}, ${name}`);
   }

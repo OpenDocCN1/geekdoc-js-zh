@@ -3335,7 +3335,7 @@ document.write (eval (a/3));
 
 让我们创建一个名为`isFiniteFunction.html`的 Web 页面，以理解如何在脚本中使用`isFinite()`函数。
 
-## 第我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。2章代码列表2.36 显示了`isFiniteFunction.html`页面的代码：
+## 第 2章代码列表2.36 显示了`isFiniteFunction.html`页面的代码：
 
 ```html代码列表2.36：在脚本中使用 isFinite() 函数<html>
 <head>
@@ -3425,7 +3425,8 @@ document.write("<br>");
 
 图2.42：使用`parseInt()`和`parseFloat()`函数在图2.42 中，你可以观察到`parseInt()`函数仅返回整数值，而`parseFloat()`函数返回带有小数部分的浮点值。
 
-## JavaScript 编程```javascriptdocument.write(Number(Boolean(false)));
+## JavaScript 编程```javascript
+document.write(Number(Boolean(false)));
 document.write("<br>");
 document.write(Number(String("998")));
 document.write("<br>");
@@ -3466,7 +3467,8 @@ document.write(unescape("%22%21%20%29%3E"));
 </html>
 ```
 
-```javascriptdocument.write("<br>");
+```javascript
+document.write("<br>");
 <script>
 <body>
 </html>
@@ -6484,7 +6486,7 @@ mysql_close();
 
 
 
-在我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。6.21 中，第一个语句建立了与数据库服务器的连接。在下一个语句中，使用 `mysql_select_db()` 函数选择数据库。接下来，查询传递给 `mysql_query()` 函数，检索的数据存储在 `$data`变量中。存储在 `$data` 中的数据通过 `mysql_fetch_array()` 函数转换为数组。`mysql_fetch_array()` 函数生成的数组存储在 `$info`变量中。存储在 `$info` 中的数组通过 `while` 循环显示在网页上（图6.18）。
+在 6.21 中，第一个语句建立了与数据库服务器的连接。在下一个语句中，使用 `mysql_select_db()` 函数选择数据库。接下来，查询传递给 `mysql_query()` 函数，检索的数据存储在 `$data`变量中。存储在 `$data` 中的数据通过 `mysql_fetch_array()` 函数转换为数组。`mysql_fetch_array()` 函数生成的数组存储在 `$info`变量中。存储在 `$info` 中的数组通过 `while` 循环显示在网页上（图6.18）。
 
 ## 第6章图6.18 显示了网页上从表中检索的数据。
 
@@ -7855,7 +7857,7 @@ public class Employee {
 
 
 
-`employees.xml` 的 XML 文件如列表我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。7.14 所示：
+`employees.xml` 的 XML 文件如列表 7.14 所示：
 
 `employees.xml` 的 XML 文件如列表7.14 所示：
 
@@ -8393,7 +8395,7 @@ public void vetoableChange(PropertyChangeEvent e) throws PropertyVetoException {
 
 
 
-# JavaBeans我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。通过以下方式行使否决：
+# JavaBeans 通过以下方式行使否决：
 
 1.包含 `PropertyVetoException`子句并2.根据情况抛出异常（`throw new PropertyVetoException()`）。
 
@@ -10981,7 +10983,7 @@ JSP 错误可能在翻译时或请求时发生。当 JSP 页面第一次被访�
 
 当 `errorPage` 属性指定错误页面时，异常将随错误页面一起重定向。`errorPage` 属性包含了异常。使用 `PageContext.getErrorData()`，可以获取 `javax.servlet.ErrorData` 类的实例。错误页面的状态属性如下：
 
-```jsp我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。<% page isErrorPage="True" %>
+```jsp <% page isErrorPage="True" %>
 
 <h3>在您的应用程序中发生了以下错误：</h3>
 
@@ -11083,7 +11085,8 @@ Servlet 名称: ${pageContext.errorData.servletName}
 
 1. **创建 `Driver`象**：你可以使用以下方法之一创建 `Driver`象：使用 Java关键字构造 `Driver`象。例如，Type-1 JDBC 驱动 `sun.jdbc.odbc.JdbcOdbcDriver`，可以通过以下代码片段实例化：
 
- ```java java.sql.Driver dr = new sun.jdbc.odbc.JdbcOdbcDriver();
+ ```java
+java.sql.Driver dr = new sun.jdbc.odbc.JdbcOdbcDriver();
  ```
 
  在代码片段中，创建了 `Driver` 的实例，它 `Driver` 接口的子类。
@@ -11093,7 +11096,8 @@ Servlet 名称: ${pageContext.errorData.servletName}
  - 我们在开发阶段拥有 JDBC 驱动。JDBC API直接在应用程序中使用（例如，代码片段中的 `sun.jdbc.odbc.JdbcOdbcDriver` 类）；这与特定的 JDBC 驱动紧绑定，导致迁移到其他 JDBC 驱动时出现问题。
  - 使用 Java `Class.newInstance` 创建 `Driver`象以避免上述方法的问题，如下代码片段所示：
 
- ```java Class c=Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+ ```java
+Class c=Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
 
  java.sql.Driver dr = (java.sql.Driver)c.newInstance();
  ```
@@ -11104,7 +11108,8 @@ Servlet 名称: ${pageContext.errorData.servletName}
 
 2. **建立连接**：创建 `Driver`象后，我们可以使用 `Driver.connect()` 方法与数据库建立连接，如下代码片段所示：
 
- ```java Driver dr=(Driver)Class.forName("sun.jdbc.odbc.JdbcOdbcDriver").newInstance();
+ ```java
+Driver dr=(Driver)Class.forName("sun.jdbc.odbc.JdbcOdbcDriver").newInstance();
 
  //封装数据库 / 特定属性的 Properties象 Properties props=new Properties();
 
@@ -11123,12 +11128,14 @@ Servlet 名称: ${pageContext.errorData.servletName}
 
 - **a.** 调用 `registerDriver()` 方法，这是 `DriverManager` 类中声明的静态方法。作为参数传递给 `registerDriver()` 方法的对象类型为 `java.sql.Driver`。下面的代码段显示了如何向 `DriverManager` 注册驱动：
 
- ```java DriverManager.registerDriver(new sun.jdbc.odbc.JdbcDriver());
+ ```java
+DriverManager.registerDriver(new sun.jdbc.odbc.JdbcDriver());
  ```
 
 - **b.** 使用 `Class.forName<class name>`，它用于显式加载驱动程序。根据 JDBC规范，每个 JDBC 驱动实现都应该包含一个静态块，该块应该通过向 `registerDriver` 方法传递驱动实现对象作为参数来调用。下面的代码显示了如何使用 `Class.forName` 向 `DriverManager` 注册 `Driver`象：
 
- ```java Class.forName("sun.jdbc.odbc.JdbcDriver");
+ ```java
+Class.forName("sun.jdbc.odbc.JdbcDriver");
 
  public class JdbcDriver extends {
 
@@ -11145,12 +11152,14 @@ Servlet 名称: ${pageContext.errorData.servletName}
 
 - **c.** 在系统上设置属性，其中属性名为 `jdbc.drivers`。系统属性的值可以映射到一个或多个驱动实现类，其中使用 `:` 字符作为分隔符。下面的代码段显示了如何向 `DriverManager` 类注册驱动：
 
- ```java System.setProperty("jdbc.drivers","sun.jdbc.odbc.JdbcDriver");
+ ```java
+System.setProperty("jdbc.drivers","sun.jdbc.odbc.JdbcDriver");
  ```
 
  在我们的应用程序中使用上述方法，或者在执行应用程序时设置 Java 命令的 `-D`选项，例如：
 
- ```bash java -Djdbc.drivers=sun.jdbc.odbc.JdbcDriver ```
+ ```bash
+java -Djdbc.drivers=sun.jdbc.odbc.JdbcDriver ```
 
 注意在 JDBC4.0规范中，`DriverManager.getConnection()` 方法已经增强以支持 Java 标准版服务提供程序机制。通过此功能，`DriverManager` 可以定位并加载由 `META-INF/services/java.sql.Driver` 文件描述的 JDBC 驱动。在这里，与驱动程序工作时您不需要执行此步骤，除非显式向 `DriverManager` 注册驱动程序。
 
@@ -11212,7 +11221,7 @@ int port =1521;
 
 
 
-## 第三步：执行 SQL我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。语句创建`statement`后，使用`execute`方法执行 SQL语句。可以使用`Statement.executeUpdate()`或`Statement.executeQuery()`方法来执行 SQL语句。对于数据库操作（如`INSERT`、`UPDATE`和`DELETE`），使用`executeUpdate()`方法检索受影响的行数。而`executeQuery()`方法通用的，可以执行任何 SQL语句。下面的代码段显示了如何执行 SQL语句：
+## 第三步：执行 SQL 语句创建`statement`后，使用`execute`方法执行 SQL语句。可以使用`Statement.executeUpdate()`或`Statement.executeQuery()`方法来执行 SQL语句。对于数据库操作（如`INSERT`、`UPDATE`和`DELETE`），使用`executeUpdate()`方法检索受影响的行数。而`executeQuery()`方法通用的，可以执行任何 SQL语句。下面的代码段显示了如何执行 SQL语句：
 
 ```java// executeQuery()
 
@@ -11419,7 +11428,7 @@ context.bind("jdbc/pooled", ds);
 作为连接的数据源提供以下属性：
 
 - `InitialPoolSize`：指定连接池在会话期间可以维护的连接数。
-- `minPoolSize`：表示池中维护的最小连接数。值我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。0 表示在有请求时创建连接。
+- `minPoolSize`：表示池中维护的最小连接数。值 0 表示在有请求时创建连接。
 - `maxPoolSize`：表示池应该保留的最大连接数。值0 表示没有限制。
 - `idleTime`：表示池中连接的空闲时间。以秒为单位。
 
@@ -12953,7 +12962,7 @@ xsi:schemaSchemaLocation="http://www.java.com/xml/ns/javaee/web-app_3_0.xsd">
 >
 > 在 JSP 页面中使用 `<jsp.setProperty>` 或 `<jsp.getProperty>` 标签之前，你必须先在该 JSP 页面中用 `<jsp.useBean>` 标签声明一个 bean。
 
-## 部署和运行应用程序我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。你将 bean 和其他资源放在此应用程序正确的目录结构中。12.11 显示了此应用程序的目录结构：
+## 部署和运行应用程序 你将 bean 和其他资源放在此应用程序正确的目录结构中。12.11 显示了此应用程序的目录结构：
 
 ![](img/ff578e59567ce41d5431f36224872e10_363_0.png)
 
@@ -14247,7 +14256,8 @@ for ($i=0;$i<$book->length;i++) {
 
 
 
-```javascript我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。var xmlhttpfunction sendTitle(str) {
+```javascript
+var xmlhttpfunction sendTitle(str) {
  var xmlhttp=GetXmlHttpRequestObject()
  if (xmlhttp==null) {
  alert("浏览器不支持 HTTP 请求")
@@ -14265,7 +14275,8 @@ function GetXmlHttpRequestObject() {
  var xmlhttp=null;
  try```
 
-```javascript// Firefox, Opera8.0+, SafarixmlHttp=new XMLHttpRequest();
+```javascript
+// Firefox, Opera8.0+, SafarixmlHttp=new XMLHttpRequest();
 
 }
 catch (e) {
@@ -14320,7 +14331,8 @@ for ($i=0;$i<$book->length;i++) {
 
 在13.29 中，`sendEMPID`方法调用`GetHttpClient`方法。`GetHttpClient`方法异步请求`getbook.php`文件。请求 URL 包含用于`id`的`q`参数以及`sid`以避免从缓存文件中服务。最后，它将此参数发送到`getbook.php`页面。当服务器完成响应时，会调用`statechange`方法。它用响应的文本更新`<span>`元素`res`。
 
-```javascriptvar xmlhttp;
+```javascript
+var xmlhttp;
 function sendEMPID(str) {
 	var xmlhttp=GetXmlHttpRequestObject();
 	if (xmlhttp==null) {
@@ -14341,7 +14353,8 @@ function stateChanged() {
 }
 ```
 
-## 第13章```javascript{
+## 第13章```javascript
+{
  document.getElementById("emp").innerHTML=xmlHttp.responseText;
 }
 function GetXmlHttpObject() {
@@ -14433,7 +14446,8 @@ SOAP 消息一个结构良好的文档。它可操作性机器通信所需要的
 列表13.30：`getemployees.php`文件## 示例原文- [费曼学习法](https://wiki.example.org/feynmans_learning_method)灵感源于诺贝尔奖获得者理德·费曼。
 1. 运用费曼技巧，你只需花上`20 min`就能深入理解知识点，而且记忆深刻，难以遗忘。
 
-```javascriptif (condVar > someVal) {console.log("xxx")}
+```javascript
+if (condVar > someVal) {console.log("xxx")}
 ```
 
 译文：
@@ -14441,7 +14455,8 @@ SOAP 消息一个结构良好的文档。它可操作性机器通信所需要的
 - [费曼学习法](https://wiki.example.org/feynmans_learning_method)的灵感源于诺贝尔奖获得者查德·费曼。
 1. 运用费曼技巧，你只需花上`20 min`就能深入理解知识点，而且记忆深刻，难以遗忘。
 
-```javascriptif (condVar > someVal) {console.log("xxx")}
+```javascript
+if (condVar > someVal) {console.log("xxx")}
 ```
 
 ## 第13章- `actor`属性- `mustUnderstand`属性- `encodingStyle`属性让我们探索所有这些元素。
@@ -14479,7 +14494,7 @@ actor:mustUnderstand="1"
 
 
 
-列表我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。13.33：`http://www.w3.org/2001/12/soap-encoding`默认命名空间。
+列表 13.33：`http://www.w3.org/2001/12/soap-encoding`默认命名空间。
 
 ## Body 元素这是一个核心元素。它包含了要发送给消息接收者的消息。消息特定于应用程序的，并不是 SOAP 标准的一部分。列表13.34 中的代码解释了 Body 元素的具体样子：
 
@@ -14713,7 +14728,7 @@ UDDI许多平台和软件提供者的结合。UDDI 可以创建以 Web 服务资
 
 - Q1. `___` 标签用于在 HTML 中创建段落。（OCR 显示：`___` 标签用于在 HTML 中创建段落。）
 
-我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。 答：`<p>`代表 Cascading Style Sheets（级联样式表）
+  答：`<p>`代表 Cascading Style Sheets（级联样式表）
 
 - Q3.你可以同时在网页中创建垂直和水平框架。（/错）
 
@@ -14763,14 +14778,16 @@ UDDI许多平台和软件提供者的结合。UDDI 可以创建以 Web 服务资
 
 - Q7. 写出在 JavaScript 中定义数组的语法。
 
-```javascriptvar_name = new Array(array_length);
+```javascript
+var_name = new Array(array_length);
 ```
 
 - Q8. JavaScript 中的函数是什么？
 
  Ans. 函数指一个内聚的语句块，它有一个名称，并且从脚本的任何地方、任何次数进行访问或调用。在 JavaScript 中，你可以在脚本中快速创建自己的函数来执行特定任务。创建函数后，你可以根据需要多次在脚本中访问或调用它。每当你调用一个函数时，就会执行指定的动作或任务。创建函数的语法为：
 
-```javascriptfunction_name(parameter1, parameter2, ... parameterN) {
+```javascript
+function_name(parameter1, parameter2, ... parameterN) {
  statement1;
 }
 ```
@@ -15096,7 +15113,8 @@ Ans. 删除列：
 
 
 
-```sql我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。alter table Table_Name modify Column_Name```
+```sql
+alter table Table_Name modify Column_Name```
 
 # 第7章## Q1. 什么 XML？
 
@@ -15379,7 +15397,7 @@ Java 技术起着非常重要的作用。以下 Java 技术为组件开发者提
 
 
 
-**Ans.** `response`我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。象用于在`_jspService()`方法执行后携带客户端请求的响应。`response`象类型为`javax.servlet.http.HttpServletResponse`。
+**Ans.** `response` 象用于在`_jspService()`方法执行后携带客户端请求的响应。`response`象类型为`javax.servlet.http.HttpServletResponse`。
 
 # 快速复习## 第12章### Q1. MVC代表 __________**Ans.** 模型-视图-控制器 (Model-View-Controller)
 

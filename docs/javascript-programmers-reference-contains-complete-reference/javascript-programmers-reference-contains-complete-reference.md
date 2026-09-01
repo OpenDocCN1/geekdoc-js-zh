@@ -25335,7 +25335,8 @@ document.write(document.scripts[2].text);
 
 ## 示例代码：
 
-```javascript<SCRIPT SRC="include.js"></script>
+```javascript
+<SCRIPT SRC="include.js"></script>
 
 // 此内容放入 include.js
 function getBrowserType() {
@@ -25384,7 +25385,8 @@ Wrox Instant JavaScript – 页 – 42
 
 ## 示例代码：
 
-```javascript<SCRIPT TYPE="text/JavaScript">
+```javascript
+<SCRIPT TYPE="text/JavaScript">
 document.write("Basic functionality")
 </SCRIPT>
 ```

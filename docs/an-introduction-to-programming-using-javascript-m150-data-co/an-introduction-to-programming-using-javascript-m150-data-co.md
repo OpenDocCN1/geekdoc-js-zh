@@ -1236,7 +1236,8 @@ Goodbye
 ## The syntax of an if...else statement
 
 if . else 语句的句法如下：
-```javascript  
+```javascript
+ 
  if(boolean expression)
 {    
       semention ()s
@@ -1258,7 +1259,8 @@ Figure 3.2 provides a diagrammatic illustration of an if...else statement.
 
 以下是我们的代码：
 
-```javascript  
+```javascript
+ 
 var password, repeatPasword;   password= window.prompt('Please enteryourpassword','');
 Repeat Password =window. prompt('Pleaso re-entor your passaword' . '');if （passwdod !=repeatPassword){ document.write(Your psword is unchanged'+ '<BR>'; ) ;} else {          domonento write(" Paswd successfully changed' +<BR>);)   }document.wrtie('Thank you')
 ```

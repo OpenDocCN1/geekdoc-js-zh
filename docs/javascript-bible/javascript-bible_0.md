@@ -30491,7 +30491,8 @@ var imageCount = document.images.length;
 
 图像也可以有名称，所以如果你愿意，可以通过其名称引用图像对象，如下：
 
-```javascriptvar imageLoaded = document.imageName.complete;
+```javascript
+var imageLoaded = document.imageName.complete;
 ```
 
 或者
@@ -51144,7 +51145,8 @@ hr 元素根据通常由元素属性设置的大小、尺寸和对齐特征来�
 
 如果你想获取 ID 为 `myLabel` 的标签的表单，可以使用以下代码：
 
-```javascriptdocument.getElementById("myLabel").form
+```javascript
+document.getElementById("myLabel").form
 ```
 
 相关项目：输入元素的 `form` 属性
@@ -54458,7 +54460,8 @@ enctype
 
 通过 `name` 属性为表单分配名称是可选的，但当你的脚本需要引用表单或其元素时，强烈建议这样做。该属性的值可以作为表单的 `name` 属性被获取。除非你正在检查另一个源的文档以其表单结构，否则你并不经常读取此属性，例如：
 
-```javascriptvar formName = parent.frameName.document.forms[0].name;
+```javascript
+var formName = parent.frameName.document.forms[0].name;
 ```
 
 此外，由于服务器端 CGI 程序经常依赖表单名称进行验证，因此你可能不需要更改此属性。
@@ -56106,7 +56109,8 @@ document.forms[0].output.rows++;
 ### 语法
 访问 select 元素属性：
 
-```javascript(All) document.formName.selectName.property
+```javascript
+(All) document.formName.selectName.property
 (All) document.formName.elements[index].property
 (All) document.forms[index].selectName.property
 (All) document.forms["formName"].selectName.property

@@ -11674,7 +11674,8 @@ JavaScript 引擎使用的 `sort()` 算法不保证是稳定性的。这意味�
 
 `sort()` 方法是一个排列数组元素的多功能工具，可以通过提供比较函数来自定义其行为。理解如何有效使用 `sort()` 方法对于在 JavaScript 中处理数组至关重要，特别是在处理各种数据类型和排序标准时。
 
-```javascript// JavaScript 数组排序示例
+```javascript
+// JavaScript 数组排序示例
 
 // 数组声明
 
@@ -11760,7 +11761,8 @@ JavaScript 中的数组迭代指的是访问数组中的每个元素并对每个
 
 数组迭代是 JavaScript 编程中的基础概念，选择合适的迭代方法取决于特定任务。理解这些迭代方法对于有效操作数组至关重要。
 
-```javascript// JavaScript 数组迭代示例
+```javascript
+// JavaScript 数组迭代示例
 
 // 数组声明
 

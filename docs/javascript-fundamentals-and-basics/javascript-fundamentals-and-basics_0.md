@@ -2956,7 +2956,8 @@ new_window.onfocus = some_function();
 
 • 要实现这一点，调用 `window` 对象的 `open()` 方法，并将位置参数留空：
 
-```javascriptnew_win = window.open("”, “newWin”, “params…”);
+```javascript
+new_win = window.open("”, “newWin”, “params…”);
 ```
 
 • 接下来，请记住你可以使用窗口的 `document.write()` 方法向页面写入 HTML 代码。到目前为止，我们只使用了当前窗口的 `document` 对象。但是，我们可以如下所示指定我们想要操作哪个窗口的 `document`：
@@ -4108,7 +4109,8 @@ Web 浏览器和 `Node.js` 这两个 JavaScript 平台的结构相似（图 5.1�
 
 断言（assertion）描述了计算结果预期的样子，如果这些预期不正确，则会抛出异常。例如，下面的断言表示计算 7 加加 1 的结果必须是 8：
 
-```javascriptassert.equal(7 + 1, 8);
+```javascript
+assert.equal(7 + 1, 8);
 ```
 
 `assert.equal()` 是一个方法调用（对象是 `assert`，方法是 `.equal()`），它带有两个参数：实际结果和预期结果。它是 Node.js 断言 API 的一部分，本书将在后后部分对其进行解释。

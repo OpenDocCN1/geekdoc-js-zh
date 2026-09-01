@@ -3946,7 +3946,7 @@ function setFrames(newPage) {
 
 此函数接收一个变量`newPage`，然后你使用该变量来构建要加载的两个框架的位置。通过更改`parent.content.document.location.href`的值来重置内容框架，通过更改`document.location.href`的值来重置左侧（当前）框架。
 
-- 图我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。4.12 页面初始看起来是。
+- 图 4.12 页面初始看起来是。
 - 图 4.13 你现在正在查看第 3 页。当点击链接时，两个框架都发生了变化。
 
 ### 脚本 4.29 可以变为第二个导航页
@@ -10287,7 +10287,7 @@ function halfChance() {
 
 
 
-最常见的 DHTML我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。效果是图像在页面上移动。仅限 Netscape 4.x，它会在浏览器窗口内随机随机移动。要移动 Netscape DHTML 对象：
+最常见的 DHTML 效果是图像在页面上移动。仅限 Netscape 4.x，它会在浏览器窗口内随机随机移动。要移动 Netscape DHTML 对象：
 
 1. `maxHeight = window.innerHeight-40;`  
    `maxWidth = window.innerWidth-40;`  
@@ -12955,7 +12955,7 @@ javascript:t='<table width=100%>';c=new Array('00','33','66','99','CC','FF');for
 
 
 
-该脚本的结果我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。一个布局良好的网络安全色表。随着三个循环的变化，变量`L`将包含从“000000”到“FFFFFF”的 216 个值中的每一个。
+该脚本的结果 一个布局良好的网络安全色表。随着三个循环的变化，变量`L`将包含从“000000”到“FFFFFF”的 216 个值中的每一个。
 
 ### 提示
 
@@ -15699,7 +15699,7 @@ JavaScript 保留字：应避免的其他标识符
 
 
 
-##我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。表 C.3 基础概念
+## 表 C.3 基础概念
 
 | 属性名称 | 值 | 在 HTML 中 |
 | :--- | :--- | :--- |

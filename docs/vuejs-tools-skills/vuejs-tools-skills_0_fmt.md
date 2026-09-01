@@ -1574,7 +1574,7 @@ React Native 允许我为两个主要的智能手机平台编写应用，这对�
 
 
 
-此外，组件导航也非常出色。不仅在右键菜单中有“检查 Vue我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。组件”选项，还有模糊搜索可以按名称过滤组件，这是一个非常棒的细节。你还可以查看 Vuex 状态的历史，并“时间旅行”回到任何给定的点（在调试根源于复杂状态变化的问题时，这是一个无价的工具）。另一个实用的功能是一个标签，用于跟踪来自你自己组件的[自定义事件](https://vuejs.org/v2/guide/components-custom-events.html)（那些`this.$emit('YourEvent')`类的），但遗憾的是不是原生事件，如`<button v-on:click="counter += 1">Add 1</button>`：
+此外，组件导航也非常出色。不仅在右键菜单中有“检查 Vue 组件”选项，还有模糊搜索可以按名称过滤组件，这是一个非常棒的细节。你还可以查看 Vuex 状态的历史，并“时间旅行”回到任何给定的点（在调试根源于复杂状态变化的问题时，这是一个无价的工具）。另一个实用的功能是一个标签，用于跟踪来自你自己组件的[自定义事件](https://vuejs.org/v2/guide/components-custom-events.html)（那些`this.$emit('YourEvent')`类的），但遗憾的是不是原生事件，如`<button v-on:click="counter += 1">Add 1</button>`：
 
 ![事件历史截图](img/vue-event-history.png)
 

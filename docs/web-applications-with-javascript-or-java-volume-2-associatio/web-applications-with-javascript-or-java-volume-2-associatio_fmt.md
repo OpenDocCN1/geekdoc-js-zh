@@ -1,5 +1,5 @@
 
-# JavaScript 或 Java Web 应用程序：第我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。2 卷：关联与类层结构
+# JavaScript 或 Java Web 应用程序：第 2 卷：关联与类层结构
 
 ![](img/1a8b608b42ede8e4d7e1a974745ae019_1_0.png)
 
@@ -299,7 +299,7 @@ OO 程序中的对象可以通过人类可读引用（例如整数代码）或�
 
 
 
-图我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。1.9: 将非功能性关联末端转换为多值引用属性。
+图 1.9: 将非功能性关联末端转换为多值引用属性。
 
 ## 1.7.2 从设计模型中消除关联
 
@@ -3094,7 +3094,7 @@ public class Book {
 
 
 
-```xml我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。<ui:composition template="/WEB-INF/templates/page.xhtml">
+```xml <ui:composition template="/WEB-INF/templates/page.xhtml">
   <ui:define name="content">
     <h:dataTable value="#{publisherController.publishers}" var="p">
       <h:column>
@@ -3237,7 +3237,7 @@ http://localhost:8080/BidirectionalAssociationApp/WebContent/views/app/index.xht
 | title: String | title: String | |
 | year: Integer | | |
 
-表示不可分割组件类型的类不需要标准的标识符属性，因为这些组件不需要独立于它们的复合对象进行引用。对于引用组件对象，复合键我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。由复合类型的主键和组件的（相对唯一的）属性组成的。例如，书籍章节是通过书籍的 ISBN 和章节的序列号被引用的。
+表示不可分割组件类型的类不需要标准的标识符属性，因为这些组件不需要独立于它们的复合对象进行引用。对于引用组件对象，复合键 由复合类型的主键和组件的（相对唯一的）属性组成的。例如，书籍章节是通过书籍的 ISBN 和章节的序列号被引用的。
 
 当 `Chapter` 对象不存在时，`Textbook` 对象无法继续存在，因此我们不需要使用级联删除（`CASCADE`）策略，而是需要在删除书籍时删除所有相关的章节操作。
 
@@ -3462,7 +3462,7 @@ invariant
 
 
 
-图我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。12.7：应用类层次结构合并设计模式的结果。
+图 12.7：应用类层次结构合并设计模式的结果。
 
 ## 12.7 计算语言编程中的子类化与继承
 
@@ -4273,7 +4273,7 @@ if (book.category) {
 
 `pl.v.books.handleCategorySelectChangeEvent = function (e) {`
 
-```我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。var formEl = e.currentTarget.form,
+``` var formEl = e.currentTarget.form,
 categoryIndexStr = formEl.category.value;
 if (categoryIndexStr) {
 pl.v.app.displaySegmentFields(formEl, BookCategoryEL.labels,
@@ -4555,7 +4555,7 @@ public Student(String first, String last, int studNo) {
 
 
 
-##我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。14.2 案例研究 1：使用单表继承实现类层次结构
+## 14.2 案例研究 1：使用单表继承实现类层次结构
 
 注意在`Student`类中，我们定义了一个包含创建`Student`实例所需所有参数的构造函数。在这个子类构造函数中，我们使用`super`调用父类`Person`的构造函数。
 
@@ -4860,7 +4860,7 @@ public class Employee extends Person {
 
 注意用于识别员工类型`Manager`类型的`type`属性，其值由`EmployeeType`枚举定义。
 
-###我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。14.3.3.2 连接表层次结构的数据库模式
+### 14.3.3.2 连接表层次结构的数据库模式
 
 由于使用了注解：
 

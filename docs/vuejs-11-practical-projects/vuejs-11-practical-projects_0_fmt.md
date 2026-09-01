@@ -322,7 +322,8 @@ module.exports = app => {
 
 
 
-```javascript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。const mongoose = require('mongoose');
+```javascript
+ const mongoose = require('mongoose');
 const Vocab = mongoose.model('Vocab');
 
 exports.list_all_words = (req, res) => {
@@ -1060,7 +1061,8 @@ export default {
 
 
 
-```javascript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。onSubmit: function() {
+```javascript
+ onSubmit: function() {
   if (this.word.english === '' || this.word.german === '') {
     this.errorsPresent = true;
   } else {
@@ -3125,7 +3127,8 @@ export default {
 
 在`MessageList.vue`中：
 
-```javascript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。import { mapState } from 'vuex'
+```javascript
+ import { mapState } from 'vuex'
 
 export default {
   name: 'message-list',
@@ -4161,7 +4164,7 @@ export default {
 
 在这里我们定义了处理三个新按钮的方法。
 
-`likeJoke`我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。方法在 Chrome 存储中查找 `jokes` 属性。如果不存在（即用户尚未收藏过笑话），我们将其初始化为空数组。然后将当前的笑话推入该数组并保存回存储。最后，我们将 `likeButtonDisabled` 数据属性设置为 `true`，从而禁用收藏按钮。
+`likeJoke` 方法在 Chrome 存储中查找 `jokes` 属性。如果不存在（即用户尚未收藏过笑话），我们将其初始化为空数组。然后将当前的笑话推入该数组并保存回存储。最后，我们将 `likeButtonDisabled` 数据属性设置为 `true`，从而禁用收藏按钮。
 
 `logJokes` 方法同样在 Chrome 存储中查找 `jokes` 属性。如果找到，它将遍历所有的条目并将其打印到控制台。
 
@@ -4837,7 +4840,7 @@ export default {
 
 ---
 
-`auth`我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。模块为我们提供了一个辅助方法（在模板内部使用 `$auth.loggedIn`）来检查登录状态。我们可以用它来在当前用户已验证时隐藏“注册”和“登录”按钮，取而代之地显示一个“退出登录”按钮。
+`auth` 模块为我们提供了一个辅助方法（在模板内部使用 `$auth.loggedIn`）来检查登录状态。我们可以用它来在当前用户已验证时隐藏“注册”和“登录”按钮，取而代之地显示一个“退出登录”按钮。
 
 这是完成后的页面样子：
 
@@ -5584,7 +5587,7 @@ export default createPerimeter({
 
 该边界包含了几个辅助方法，用于检查用户是否已登录，以及他们是否是特定帖子的作者。我们还有一个`can`属性，允许我们定义当前用户允许执行的操作。在这里，我们添加了一个`upvote`方法，只有当用户已验证身份、不是该帖子的作者且尚未对该帖子点过赞时，该方法才会返回`true`。
 
-让我们看看如何在我们的“新帖子”页面中使用此边界，来控制谁允许我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。任何帖子进行投票。
+让我们看看如何在我们的“新帖子”页面中使用此边界，来控制谁允许 任何帖子进行投票。
 
 `client/pages/new.vue`
 
@@ -5932,7 +5935,8 @@ export default {
 
 绘制将在`renderChart`方法中进行。让我们完善它：
 
-```javascript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。renderChart(issues_val) {
+```javascript
+ renderChart(issues_val) {
   const margin = 60;
   const svg_width = 1000;
   const svg_height = 600;

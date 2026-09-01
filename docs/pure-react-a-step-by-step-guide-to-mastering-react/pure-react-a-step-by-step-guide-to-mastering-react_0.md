@@ -339,7 +339,8 @@ return <span>Hello!</span>;
 
 这里是编译器生成的 JavaScript：
 
-```javascriptreturn React.createElement(
+```javascript
+return React.createElement(
   'span',
   {},
   'Hello!');
@@ -1765,7 +1766,8 @@ person = {
 
 这个 PropTypes `shape` 要求 `name` 和 `age` 键，所以如果我们遗漏了其中一个，它将无法通过。这会生成一个警告：
 
-```javascriptperson = {
+```javascript
+person = {
   age: 27
 }
 ```

@@ -5595,7 +5595,8 @@ document.cookie = `jwt=${jwtToken}; HttpOnly; Secure; SameSite=Strict`;
 
 ### 2. 授权中间件：控制受保护路由的访问
 
-```javascript// Implementing route-based authorization middleware
+```javascript
+// Implementing route-based authorization middleware
 const requireAuth = (to, from, next) => {
   const jwtToken = getJWTFromCookie();
   if (jwtToken) {

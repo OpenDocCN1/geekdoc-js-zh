@@ -6900,18 +6900,21 @@ JavaScript 数字存储为 IEEE 754 格式，使用 64 位存储数字的浮点�
 
 所有类型数组的基础是 `array buffer`（数组缓冲区），它可以包含指定数量字节的内存位置。创建数组缓冲区类似于在 C 语言中调用 `malloc()` 来分配内存，而不指定内存块包含的内容。你可以如下所示使用 `ArrayBuffer` 构造函数创建一个数组缓冲区：
 
-```javascriptlet buffer = new ArrayBuffer(10);  // 分配 10 字节
+```javascript
+let buffer = new ArrayBuffer(10);  // 分配 10 字节
 ```
 
 调用构造函数时，只需传递数组缓冲区应该包含的字节数即可。这个 `let` 语句创建了一个长度为 10 字节的数组缓冲区。创建数组缓冲区后，你可以通过检查 `byteLength` 属性来获取其中的字节数：
 
-```javascriptlet buffer = new ArrayBuffer(10);  // 分配 10 字节
+```javascript
+let buffer = new ArrayBuffer(10);  // 分配 10 字节
 console.log(buffer.byteLength);     // 10
 ```
 
 你还可以使用 `slice()` 方法创建一个包含现有数组缓冲区部分的新数组缓冲区。`slice()` 方法的工作方式与数组上的 `slice()` 方法类似：你传递起始索引和结束索引作为参数，它返回一个由原始缓冲区这些元素组成新 `ArrayBuffer` 实例。例如：
 
-```javascriptlet buffer = new ArrayBuffer(10);  // 分配 10 字节
+```javascript
+let buffer = new ArrayBuffer(10);  // 分配 10 字节
 let buffer2 = buffer.slice(4, 6);
 console.log(buffer2.byteLength);  // 2
 ```
@@ -6930,13 +6933,15 @@ console.log(buffer2.byteLength);  // 2
 
 要使用 `DataView`，你首先创建一个 `ArrayBuffer` 实例并使用它创建一个新的 `DataView`。这是一个示例：
 
-```javascriptlet buffer = new ArrayBuffer(10),
+```javascript
+let buffer = new ArrayBuffer(10),
     view = new DataView(buffer);
 ```
 
 示例中的视图对象可以访问 `buffer` 中的所有 10 个字节。你也可以对缓冲区的一部分创建视图。只需提供字节偏移量，并可选地提供从该偏移量开始包含的字节数。如果不包含字节数，`DataView` 默认从偏移量一直到缓冲区的结束。例如：
 
-```javascriptlet buffer = new ArrayBuffer(10),
+```javascript
+let buffer = new ArrayBuffer(10),
     view = new DataView(buffer, 5, 2);    // 覆盖字节 5 和 6
 ```
 
@@ -6952,7 +6957,8 @@ console.log(buffer2.byteLength);  // 2
 
 使用这些属性，你可以像这样检查视图的操作位置：
 
-```javascriptlet buffer = new ArrayBuffer(10),
+```javascript
+let buffer = new ArrayBuffer(10),
     view = new DataView(buffer, 5, 2);    // 覆盖字节 5 和 6
 ```
 

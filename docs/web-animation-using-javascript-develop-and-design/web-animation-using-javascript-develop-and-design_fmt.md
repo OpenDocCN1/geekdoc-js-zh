@@ -542,7 +542,7 @@ $element
 
 此操作使用 `1000ms` 的持续时间和“弹簧”缓动效果将浏览器滚动到元素的顶部。随后，当元素进入视野后，它将完全淡入。
 
-若要向带有滚动条的父元素内部的元素滚动，你可以使用 `container`我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。选项，它可以接收 jQuery 对象或原生元素。请注意，CSS `position` 属性的容器元素必须设置为 `relative`、`absolute` 或 `fixed-static`，否则无法实现效果：
+若要向带有滚动条的父元素内部的元素滚动，你可以使用 `container` 选项，它可以接收 jQuery 对象或原生元素。请注意，CSS `position` 属性的容器元素必须设置为 `relative`、`absolute` 或 `fixed-static`，否则无法实现效果：
 
 ```javascript
 // 将元素滚动到 #container 视图内

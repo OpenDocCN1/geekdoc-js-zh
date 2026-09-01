@@ -5548,7 +5548,8 @@ DDJS7Demo 数据库中的 WindowOpener 表单还展示了如何使用 JavaScript
 | 5 | 切换到 Domino Designer 中的表单。 |
 | 6 | 打开 **Picklist** 按钮的设计。<br><br>该按钮在 JS Header 事件中调用 `picklistwindow()` 函数。此函数负责创建一个新窗口并打开指向 `picklistview` 视图的 URL。 |
 | 7 | 打开 *picklistview* 的 *$$ViewTemplate* 表单。<br><br>*$$ViewTemplate* 表单允许你创建一个表单并嵌入视图元素，从而兼具表单的设计优势和视图的列表功能。 |
-| 8 | *picklistview* 的 *$$ViewTemplate* 表单包含 *picklistview* 视图元素。该表单还在其 *JS Header* 事件中定义了以下函数：<br><br>```javascript<br>function updateParent(docField, docID) {<br>  opener.document.forms[0].Subject.value = docField;<br>  opener.document.forms[0].DOCID.value = docID;<br>  self.close();<br>}<br>```<br><br>此函数接收两个参数，并使用这些值来设置打开者窗口中的字段并关闭视图。但这些参数是从哪里传*入*的呢？诀窍在于视图元素中引用的视图。 |
+| 8 | *picklistview* 的 *$$ViewTemplate* 表单包含 *picklistview* 视图元素。该表单还在其 *JS Header* 事件中定义了以下函数：<br><br>```javascript
+<br>function updateParent(docField, docID) {<br>  opener.document.forms[0].Subject.value = docField;<br>  opener.document.forms[0].DOCID.value = docID;<br>  self.close();<br>}<br>```<br><br>此函数接收两个参数，并使用这些值来设置打开者窗口中的字段并关闭视图。但这些参数是从哪里传*入*的呢？诀窍在于视图元素中引用的视图。 |
 | 9 | 打开 `picklistview` 视图设计。秘密在于，一旦视图被包含在 `$$ViewTemplate` 表单中，它就只是表单的另一个组件。<br><br>因此，在 `$$ViewTemplate` 表单中显示的视图信息可以包含 HTML，包括调用表单中定义的 JavaScript 函数的能力！<br><br>视图列包含以下 `@Formula` 来定义直通 HTML 链接（使用方括号包裹 HTML）：<br><br>```formula<br>DOCID:=@Text(@DocumentUniqueID);<br>["<a href="\"javascript:updateParent('" + Subject + "','" + DOCID + "')">" + Subject + "</a>"]<br>```<br><br>**请注意，视图列的高级属性 Show values in this column as links 未被选中**，因此列公式负责创建链接。当用户点击文档链接时，不会执行视图的正常打开文档行为，而是调用 `updateParent()` 函数，并传递 `Subject` 字段的值和文档的 UNID。 |
 
 ### 使用模态对话框模拟 @Dialogbox

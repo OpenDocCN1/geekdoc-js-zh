@@ -10431,7 +10431,8 @@ bt.send(); // 发送
 
 让我们从这里开始，探索更复杂的层次。首先，良好的做法是检查目标应用程序是否正在运行：
 
-```javascriptif (BridgeTalk.isRunning("photoshop")) {
+```javascript
+if (BridgeTalk.isRunning("photoshop")) {
 // 构建 BridgeTalk 实例
 }
 ```
@@ -10491,7 +10492,8 @@ if (counter++ == 15) {
 }
 ```
 
-```javascriptif(startApplication("photoshop")) {
+```javascript
+if(startApplication("photoshop")) {
 // 构建 BridgeTalk 实例
 };
 ```

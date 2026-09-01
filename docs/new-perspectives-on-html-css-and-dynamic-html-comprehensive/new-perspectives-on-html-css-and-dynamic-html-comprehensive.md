@@ -28596,7 +28596,8 @@ document.tags(tag)
 
 旧版浏览器不支持 `getElementsByClassName()` 方法，你可能需要编写自己的函数或方法来创建一个属于相同类的元素数组。以下代码就是此类函数之一：
 
-```javascriptfunction getElementsByClassName(cValue) {
+```javascript
+function getElementsByClassName(cValue) {
   var array = [];
   var elems = document.getElementsByTagName('*');
 

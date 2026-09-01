@@ -508,16 +508,20 @@ state = {count: 500};
 function () {return true;}
 ```
 可以转换为：
-```javascript() => {return true;}
+```javascript
+() => {return true;}
 ```
 以及对于方法：
-```javascriptfunction sum(x, y) {return x + y;}
+```javascript
+function sum(x, y) {return x + y;}
 ```
 可以转换为：
-```javascriptsum = (x, y) => x + y;
+```javascript
+sum = (x, y) => x + y;
 ```
 或者：
-```javascriptsum = (x, y) => {return x + y;}
+```javascript
+sum = (x, y) => {return x + y;}
 ```
 如果你使用 `{}` 作为函数体，则必须显式提供 `return` 语句，如上面所示。如果你使用箭头函数，它们在 `Class` 中是词法作用域的，因此在调用它们时不需要再次绑定。注意：箭头函数在 IE11 中不支持。
 

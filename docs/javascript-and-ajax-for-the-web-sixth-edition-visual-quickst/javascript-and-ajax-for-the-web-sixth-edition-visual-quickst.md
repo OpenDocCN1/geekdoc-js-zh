@@ -14702,7 +14702,8 @@ t+='</tr>'}}
 
 ![](img/c1d7af3712fbb328f47c10b30d2da456_603_0.png)
 
-```javascript:var i,j,k,l,t='<table width=100%>',c=new Array('00','33','66','99','CC','FF');for(i=0;i<6;i++){for(j=0;j<6;j++){t+='<tr...
+```javascript
+:var i,j,k,l,t='<table width=100%>',c=new Array('00','33','66','99','CC','FF');for(i=0;i<6;i++){for(j=0;j<6;j++){t+='<tr...
 ```
 
 ## 提示

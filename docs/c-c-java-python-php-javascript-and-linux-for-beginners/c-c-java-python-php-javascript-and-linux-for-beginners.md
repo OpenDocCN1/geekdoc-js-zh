@@ -55543,7 +55543,8 @@ print(os.listdir(b'.'))
 
 
 
- ```python program to open an image
+ ```python
+program to open an image
 
 from PIL import Image
 x = Image.open(r"C:\Users\Manju\1.png")

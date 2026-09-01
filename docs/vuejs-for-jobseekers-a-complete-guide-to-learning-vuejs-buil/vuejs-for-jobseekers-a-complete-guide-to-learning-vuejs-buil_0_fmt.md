@@ -339,7 +339,7 @@ render() {
 
 我们看到的是定义组件样式的各种方式：
 
--我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。第 1 行：标准的全局可用 CSS
+- 第 1 行：标准的全局可用 CSS
 - 第 5 行：标准的 CSS，但局部于组件
 - 第 9 行：使用 `Stylus` 格式化样式并使其全局可用
 - 第 13 行：使用 `SCSS` 格式化样式并局部化
@@ -1640,7 +1640,7 @@ import { ref } from 'vue'
 
 在使用`Suspense`时，你会频繁使用`<Transition>`（我们尚未涵盖这部分），以及`<KeepAlive>`和`<RouterView>`组件。然而，这些组件的嵌套顺序非常重要，否则这些组件将无法正常工作。如果你遵循给定的模式，这些组件将按预期工作：
 
-```html我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。<RouterView v-slot="{ Component }">
+```html <RouterView v-slot="{ Component }">
   <template v-if="Component">
     <Transition mode="mode">
       <KeepAlive>
@@ -4068,7 +4068,7 @@ function addToCart() {
 
 请记住，这种事件总线是不推荐的。如你所见，事件处理器可以位于组件层次结构中的任何位置，当组件很多时，维护工作会变得困难。这种方法非常脆弱。
 
-更好的方法我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。使用 `Pinia`，它集中了事件处理，并提供了一种发布事件和管理应用状态的标准方法。
+更好的方法 使用 `Pinia`，它集中了事件处理，并提供了一种发布事件和管理应用状态的标准方法。
 
 如果该功能可以提取为一个单一的关注点，那么组合式函数（composable）通常是最佳选择。
 
@@ -4658,7 +4658,7 @@ const title = computed({
 
 
 
-```html我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。<MultiPropComponent 
+```html <MultiPropComponent 
   v-model:title="Vue.js for Job Seekers"
   v-model:author="Clive Harber"
   v-model:price="24.99"
@@ -5982,7 +5982,8 @@ import { render } from '@testing-library/vue'
 
 
 
-```javascript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。import OfferComponent from 'src/components/pages/site/landing-page/OfferComponent.vue'
+```javascript
+ import OfferComponent from 'src/components/pages/site/landing-page/OfferComponent.vue'
 
 describe('OfferComponent', () => {
   test('should render', async () => {

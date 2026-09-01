@@ -4117,7 +4117,8 @@ var exampleString2 = "49";
 
 JavaScript 也允许你使用双引号。因此，这同样是完全有效的 JavaScript。
 
-```javascriptvar exampleString = "I am a JavaScript hacker"
+```javascript
+var exampleString = "I am a JavaScript hacker"
 var exampleString2 = "49";
 ```
 

@@ -1767,7 +1767,8 @@ console.log(apples); // undefined
 
 
 
-```javascript001 // The function global() is defined in an already existing
+```javascript
+001 // The function global() is defined in an already existing
 002 // execution context that was created together with window
 003 function global() {
 004 // At the time global() is invoked, a new execution

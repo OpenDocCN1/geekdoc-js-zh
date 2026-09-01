@@ -3065,7 +3065,8 @@ HTTP
 
 列表 13.1 myAHAlib.js
 
-```javascriptfunction callAHA(url, pageElement, callMessage) {
+```javascript
+function callAHA(url, pageElement, callMessage) {
   document.getElementById(pageElement).innerHTML = callMessage;
   try {
     req = new XMLHttpRequest(); /* e.g. Firefox */

@@ -3339,7 +3339,8 @@ newString = FirstName + LastName
 
 ```
 newString = FirstName + " " + LastName
-```JavaScript 解密
+```JavaScript
+解密
 
 前面的示例拼接了字面量字符串。你也可以使用相同的技术拼接两个变量或一个变量和一个字符串。以下是你如何编写语句的：
 
@@ -8580,7 +8581,8 @@ font: bold 12px Verdana;
 <!--
 ```
 
-```javascriptjavascript
+```javascript
+javascript
 ******************
 * Tabbed Document Viewer script- © Dynamic
   Drive DHTML code library

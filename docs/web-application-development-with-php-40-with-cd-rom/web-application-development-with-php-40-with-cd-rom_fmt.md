@@ -2882,7 +2882,7 @@ $plugin_deinit_function = "myplugin_deinit";
 
 // 返回值应由输入参数 `$parameter` 的修改版本或未修改版本组成。
 
-// 返回值将作为下一个回调的输入参数。这允许进行多阶段消息我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。// 处理等。
+// 返回值将作为下一个回调的输入参数。这允许进行多阶段消息 // 处理等。
 
 ```php
 function myplugin_idle_callback($code, $parameter)
@@ -4071,7 +4071,7 @@ for($i=0; $i<count($algorithms); $i++) {
 
 
 
-// 再次解密我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。```php
+// 再次解密 ```php
 $unencrypted = mcrypt_cbc($algorithms[$i], $secret, $encrypted, MCRYPT_DECRYPT, $iv);
 ```
 
@@ -4163,7 +4163,7 @@ WWW-Authenticate: Basic realm="Protected Area"
 
 
 
-浏览器将显示一个请求用户名和密码的模式我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。话框。遗憾的是，这种类型的认证确实名副其实“基础”（basic）——它有很多缺点：
+浏览器将显示一个请求用户名和密码的模式 话框。遗憾的是，这种类型的认证确实名副其实“基础”（basic）——它有很多缺点：
 
 - 要退出，你必须使用一些技巧。
 - 在定义的空闲时间后退出，你必须使用更多技巧。
@@ -4894,7 +4894,7 @@ print("You entered: $firstname\n");
 
 
 
-其他流我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。`php://stdout`和`php://stderr`。这提供了一种有效且平台无关的方法访问标准输入、标准输出和标准错误处理设备。事实上，这在 Windows 98/NT 上同样有效。
+其他流 `php://stdout`和`php://stderr`。这提供了一种有效且平台无关的方法访问标准输入、标准输出和标准错误处理设备。事实上，这在 Windows 98/NT 上同样有效。
 
 PHP 流的概念是在 PHP 4.0 中引入的，在 3.x 版本中可用。在 UNIX 系统上，你可以通过直接访问 UNIX 设备`/dev/stdin`、`/dev/stdout`或`/dev/stderr`来绕过此限制。就课程而言，这在具有有效设备的系统上有效。大多数 UNIX 系统都具备——Windows 则被排除在外。
 
@@ -5025,7 +5025,7 @@ printf("Java version = %s", $System->getProperty("java.version"));
 
 
 
-## 总结我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。在本章中，你学习了适用于所有 Web 应用程序的基础策略。你已经了如何正确处理用户输入，以及如何验证表单和其内容。你可以利用模板将代码与布局分离；在此基础上，你了解了如何协调团队工作，并处理多人协作同一个文件的情况。版本控制的优势是显而易见的。
+## 总结 在本章中，你学习了适用于所有 Web 应用程序的基础策略。你已经了如何正确处理用户输入，以及如何验证表单和其内容。你可以利用模板将代码与布局分离；在此基础上，你了解了如何协调团队工作，并处理多人协作同一个文件的情况。版本控制的优势是显而易见的。
 
 # PHPLib：PHP 基础库 201
 
@@ -5332,7 +5332,7 @@ $sess->freeze();
 
 
 
-此示例与 PHP我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。4.0 示例的唯一区别在于 `PHPLib` 使用了面向对象的方法。
+此示例与 PHP 4.0 示例的唯一区别在于 `PHPLib` 使用了面向对象的方法。
 
 与 PHP 4.0 `session` 库一样，`PHPLib` 使用存储模块（在 `PHPLib` 术语中称为容器）来存储 `session` 数据。所有容器类都以 `CT_` 前缀开头。SQL 数据库是存储 `session` 数据最常见的方式，但 `PHPLib` 也支持其他容器类。
 
@@ -5680,7 +5680,7 @@ var $permissions = array(
 
 
 
-## 总结我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。在本章中，你学习了`PHPLib`的基本类和用法。你已经看到它是解决创建 Web 应用程序时不可避免会遇到的许多问题的强大解决方案——一旦建立了必要的框架，它就非常易用。它为各个层的会话管理和用户身份验证提供了完整的基础设施。
+## 总结 在本章中，你学习了`PHPLib`的基本类和用法。你已经看到它是解决创建 Web 应用程序时不可避免会遇到的许多问题的强大解决方案——一旦建立了必要的框架，它就非常易用。它为各个层的会话管理和用户身份验证提供了完整的基础设施。
 
 在下一章中，你将看到`PHPLib`在实际应用中的用法。该章节还展示了我们尚未提到过的`PHPLib`另一个类：用于分离代码与布局的`Template`类。
 
@@ -5992,7 +5992,7 @@ $tpl->set_var(array(
 
 
 
-```php我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。"RESULTS" => sprintf(count($entries)),
+```php "RESULTS" => sprintf(count($entries)),
 
 count($entries) > 1 ? "entries" : "entry",
 
@@ -6321,7 +6321,7 @@ XML 与 SGML 不同，它删除了许多复杂且不常用的功能，创建了�
 
 因此我们可以总结：XML 在消除了 SGML 巨大的复杂性的同时，提供了自定义文档类型的定义。
 
-## XML 的优势我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。但为什么要用 XML？有了这些正式的定义和事实表，开发者起初并没有看出它们在日常活动中的用处。事实上，为什么用 XML 而不是 Word 或 Notes？或者你自己的存储格式？或者是关系数据库？
+## XML 的优势 但为什么要用 XML？有了这些正式的定义和事实表，开发者起初并没有看出它们在日常活动中的用处。事实上，为什么用 XML 而不是 Word 或 Notes？或者你自己的存储格式？或者是关系数据库？
 
 反对私有格式的主要论点是：它们是私有的。设计用于异构网络（如互联网）的数据必须被连接到该网络的所有类型计算机使用。XML 是纯二进制格式构建的（与大多数私有应用程序相反），因此被所有当前的计算平台支持。此外，私有数据格式通常（例如在公共机构中）并不是选项：你不希望依赖于单一供应商的仁慈，他们可能会更改格式，甚至完全放弃。XML 是免费许可的、厂商中立的且与平台无关。
 
@@ -6505,7 +6505,7 @@ SIGN := '*'|'+'|'-'
 
 
 
-第一行定义了起始符号，由 `+` 或 `-`我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。组成：
+第一行定义了起始符号，由 `+` 或 `-` 组成：
 
 - 一个可选的符号，由 `D` 或 `-` 组成
 - 一个或多个 `D` 产生式元素
@@ -6765,7 +6765,7 @@ fieldvalue = document.myform.myfield.value;
 
 
 
-注意语句中表达的层级结构。`document`我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。根元素，`myform` 表示一个 HTML 表单，其中 `myfield` 是一个文本字段。事实上，HTML DOM 是 W3C 定义的核心对象模型的扩展。DOM 代表了用于 XML 文档的功能，同时也 HTML DOM 的基础。它是一个对象集合，你通过它来访问和操作存储在 XML 文档中的数据和标记。它定义了：
+注意语句中表达的层级结构。`document` 根元素，`myform` 表示一个 HTML 表单，其中 `myfield` 是一个文本字段。事实上，HTML DOM 是 W3C 定义的核心对象模型的扩展。DOM 代表了用于 XML 文档的功能，同时也 HTML DOM 的基础。它是一个对象集合，你通过它来访问和操作存储在 XML 文档中的数据和标记。它定义了：
 
 - 一组代表 XML 文档完整结构的对象
 - 这些对象如何组合的模型
@@ -7432,7 +7432,7 @@ MarketPlayer.com 的产品分为两个基本类别：定量金融应用和在线
 
 
 
-MarketPlayer.com 使用 PHP我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。因为它能够提供一个快速的产品开发环境。使用 PHP，MarketPlayer.com 可以在几天内将黑板上的概念设计带入 Beta 环境。他们可以将需要优化（为了速度）的应用部分用 C 编写，并将这些函数包含在自定义 PHP 库中。
+MarketPlayer.com 使用 PHP 因为它能够提供一个快速的产品开发环境。使用 PHP，MarketPlayer.com 可以在几天内将黑板上的概念设计带入 Beta 环境。他们可以将需要优化（为了速度）的应用部分用 C 编写，并将这些函数包含在自定义 PHP 库中。
 
 MarketPlayer.com 从 1999 年 10 月开始使用 PHP，因为需要扩展产品开发小组。在 PHP 之前，MarketPlayer.com 使用服务器端方法生成动态页面。公司大部分人习惯使用 WYSIWYG 应用进行 Web 开发。PHP 让 MarketPlayer.com 能够构建复杂的动态 Web 页面，同时利用现有小组熟悉的 WYSIWYG Web 开发方法。公司在引入 PHP 之前曾使用 Perl 和 Java 实现过解决方案，但一旦引入 PHP，这些语言很快就被遗弃了。
 

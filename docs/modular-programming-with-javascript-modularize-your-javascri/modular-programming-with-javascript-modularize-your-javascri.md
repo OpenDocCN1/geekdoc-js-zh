@@ -5179,7 +5179,8 @@ mainCore.toggleDebug = function() {
 
 以下代码段展示了 MainCore 模块是如何使用该子模块的：
 
-```javascriptmainCore.log = function(severity,msg, color){
+```javascript
+mainCore.log = function(severity,msg, color){
   // 如果日志模块已加载，则使用它的完整
   功能
   // 否则只记录简单的消息

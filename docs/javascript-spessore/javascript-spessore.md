@@ -1227,7 +1227,8 @@ returnThis() === aThirdObject
 //=> false
 ```
 
-```javascriptreturnThis.call(aThirdObject) === aThirdObject
+```javascript
+returnThis.call(aThirdObject) === aThirdObject
 //=> true
 ```
 
@@ -9483,7 +9484,8 @@ var SingletonPrototypicalQuadTree = SingletonPrototypicalClass.create();
 
 ### 元对象协议
 
-```javascript ownvar MutableQuadTree = Class.create();
+```javascript
+ownvar MutableQuadTree = Class.create();
 
 extend(MutableQuadTree, {
   defineMethod: function (name, body) {

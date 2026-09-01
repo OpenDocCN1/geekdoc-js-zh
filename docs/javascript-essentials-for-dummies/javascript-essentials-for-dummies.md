@@ -584,7 +584,8 @@ xff
 
 字符串字面量是一个或多个字母、数字或标点符号的序列，由双引号（""）或单引号（''）包围。这里是一些示例：
 
-```javascript"JavaScript Essentials";
+```javascript
+"JavaScript Essentials";
 'August 23, 1959';
 ""
 "What's the good word?";

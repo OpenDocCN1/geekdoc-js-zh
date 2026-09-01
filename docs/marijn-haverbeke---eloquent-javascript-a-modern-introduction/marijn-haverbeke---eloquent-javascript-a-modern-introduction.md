@@ -2830,7 +2830,8 @@ function repeat(n, action) {
 }
 ```
 
-```javascriptrepeat(3, console.log);
+```javascript
+repeat(3, console.log);
 // 0
 // 1
 // 2
@@ -3577,7 +3578,8 @@ console.log(okiterator.next());
 
 让我们自己实现一个可迭代的数据结构。我们将构建一个矩阵类，作为二维数组使用。
 
-```javascriptclass Matrix {
+```javascript
+class Matrix {
   constructor(width, height, element = (x, y) => undefined) {
     this.width = width;
     this.height = height;
@@ -3606,7 +3608,8 @@ console.log(okiterator.next());
 
 在遍历矩阵时，你通常对元素的位置以及元素本身感兴趣，因此我们将让我们的迭代器产生具有 `x`、`y` 和 `value` 属性的对象。
 
-```javascriptclass MatrixIterator {
+```javascript
+class MatrixIterator {
   constructor(matrix) {
     this.x = 0;
     this.y = 0;

@@ -627,7 +627,8 @@ var x = {"animal": "duck", "vegetable": "lettuce", "mineral": "sapphire"};
 
 （不是一种常见的实现方式）：
 
-```javascriptcrazyList[2] = "front teeth";
+```javascript
+crazyList[2] = "front teeth";
 ```
 
 `crazyList` 现在持有有 3 个项：

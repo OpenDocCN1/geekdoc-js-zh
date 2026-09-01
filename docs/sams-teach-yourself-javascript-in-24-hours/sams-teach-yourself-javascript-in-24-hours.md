@@ -7137,7 +7137,8 @@ $(function() {
 
 除了制作可拖动项目外，你还需要指定新的 `<div>` 元素为放置区域，如下所示：
 
-```javascript$(\#dropdiv).droppable();
+```javascript
+$(\#dropdiv).droppable();
 ```
 
 此外，你将通过在 drop 事件和 out 事件的句处理程序中添加方法，使可拖动项目上的文本在被掉落或离开可放置区域时发生变化：

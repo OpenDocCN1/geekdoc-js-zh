@@ -95709,7 +95709,8 @@ cscript listing101.wf /color:green blue red
 
 ### 列表 15.101 显示所有未命名对象
 
-```javascript<job>
+```javascript
+<job>
 <script language="JavaScript">
 
 // 获取参数集合。
@@ -95763,7 +95764,8 @@ cscript listing02.ws /color:green blue red yellow
 
 ### 列表 15.102 使用 Count() 获取未命名参数的数量
 
-```javascript<job>
+```javascript
+<job>
 <script language="JScript">
 
 // 获取参数集合。
@@ -95821,7 +95823,8 @@ cscript listing103.wsf /color:green blue red yellow orange
 
 ### 列表 15.103 显示每个未命名项
 
-```javascript<job>
+```javascript
+<job>
 <script language="JScript">
 
 // 获取参数集合。
@@ -95871,7 +95874,8 @@ cscript listing04.wsf /color:green blue red
 
 ### 列表 15.104 使用长度 访问未命名对象
 
-```javascript<job>
+```javascript
+<job>
 <script language="JavaScript">
 
 // 获取参数集合。
@@ -95922,7 +95926,8 @@ WshShortcut
 
 ### 列表 15.24 使用属性创建新的 WshShortcut
 
-```javascript<job>
+```javascript
+<job>
 <script language="JavaScript">
 
 // 创建 WshShell 对象。
@@ -95956,7 +95961,8 @@ WshShortcut.FullName
 
 ### 列表 15.25 使用 FullName 属性
 
-```javascript<job>
+```javascript
+<job>
 <script language="JavaScript">
 
 // 创建 WshShell 对象。
@@ -95993,7 +95999,8 @@ WshShortcut.Save()
 
 ### 列表 15.26 使用 WshShortcut 的 Save() 方法
 
-```javascript<job>
+```javascript
+<job>
 <script language="JavaScript">
 
 // 创建 WshShell 对象。
@@ -96030,7 +96037,8 @@ WshShortcut.TargetPath
 
 ### 列表 15.27 使用 TargetPath 属性
 
-```javascript<job>
+```javascript
+<job>
 <script language="JScript">
 
 // 创建 WshShell 对象。

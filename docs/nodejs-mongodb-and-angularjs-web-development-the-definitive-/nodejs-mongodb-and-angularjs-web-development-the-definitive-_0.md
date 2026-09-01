@@ -6227,7 +6227,8 @@ MongoClient(Server, options)
 
 点击此处查看代码图片
 
-```javascriptvar client = new MongoClient(new Server('localhost', 27017, { poolSize: 5}), { retryMiliSeconds: 500 }));
+```javascript
+var client = new MongoClient(new Server('localhost', 27017, { poolSize: 5}), { retryMiliSeconds: 500 }));
 ```
 
 一旦你创建了 `MongoClient`，就需要使用 `open(callback)` 方法打开到 MongoDB 服务器数据库的连接。如果连接失败，回调方法将以错误作为第一个参数调用；如果连接成功，则以 `MongoClient` 对象作为第二个参数。例如：
@@ -12801,7 +12802,8 @@ Figure 24.4 显示了由 Listing 24.7、24.8 和 24.9 创建的网页。
 
 点击此处查看代码图片
 
-```javascript01 angular.module('myApp', [])
+```javascript
+01 angular.module('myApp', [])
 02    .directive('myPhotos', function() {
 03      return {
 04        restrict: 'E',

@@ -827,7 +827,8 @@ var Quo = function (string) {
 ```
 
 
-```javascript// called get_status.
+```javascript
+// called get_status.
 
 Quo.prototype.get_status = function () {
   return this.status;

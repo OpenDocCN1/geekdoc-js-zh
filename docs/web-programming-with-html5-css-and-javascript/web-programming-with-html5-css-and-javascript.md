@@ -15071,7 +15071,8 @@ document.getElementById("stunt-group").innerHTML = namesColumn;
 
 10. [第 11.14 节后] 描述在执行以下代码后 `bookMtgList` 数组发生了什么。在你的答案中，你必须返回 return 0。[第 11.14 节后] 描述在执行以下代码后 `bookMtgList` 数组发生了什么。在你的答案中，你必须返回 0。
 
-```javascriptbookMtgList.sort(function (a, b) {
+```javascript
+bookMtgList.sort(function (a, b) {
   return 0;
 });
 ```

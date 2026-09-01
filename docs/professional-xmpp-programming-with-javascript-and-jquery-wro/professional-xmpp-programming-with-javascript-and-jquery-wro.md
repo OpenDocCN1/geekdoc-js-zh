@@ -4491,7 +4491,8 @@ $(document).bind('connected', function () {
   $("#dig").removeAttr('disabled');
 });
 ```
-```javascript // code snippet dig.js
+```javascript
+// code snippet dig.js
 
 在此状态下运行 Dig 可以让你看到顶层节点以及关于实体的基本信息。接下来你需要添加浏览和展开树的能力。
 
@@ -4548,7 +4549,8 @@ $('#tree .item').live('click', function () {
   }
 });
 ```
-```javascript // code snippet dig.js
+```javascript
+// code snippet dig.js
 ```
 
 ## 创建 Dig | 17

@@ -3833,7 +3833,8 @@ function validateEmail() {
 
 `JavaScript` 还可以设置 DOM 对象的属性，包括其在屏幕上的位置。你可以设置对象的 `top` 和 `left` 属性来将其放置在屏幕的任何位置。以下是其语法结构。
 
-```javascript// 设置距离屏幕左边缘的距离。
+```javascript
+// 设置距离屏幕左边缘的距离。
 object.style.left = distance in pixels or points;
 ```
 

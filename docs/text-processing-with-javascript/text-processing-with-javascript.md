@@ -3462,7 +3462,8 @@ const quotes = [
 
 你想找到所有包含方括号的实例，以便将它们添加到新的集合中以进行搜索：
 
-```javascriptconst quotesWithMod = [
+```javascript
+const quotesWithMod = [
   "The children [Hansel and Gretel] found a house made of candy",
   "They [France] are playing against England tomorrow.",
 ];

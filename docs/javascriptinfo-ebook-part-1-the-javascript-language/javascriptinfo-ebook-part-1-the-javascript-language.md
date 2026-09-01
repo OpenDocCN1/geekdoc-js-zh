@@ -23458,7 +23458,8 @@ for (let i = 0; i < 1000000; i++) {
 
 # 获取平均年龄
 
-```javascriptfunction getAverageAge(users) {
+```javascript
+function getAverageAge(users) {
   return users.reduce((prev, user.age) => prev + user.age, 0) / users.length;
 }
 

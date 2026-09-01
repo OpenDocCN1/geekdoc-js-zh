@@ -11172,7 +11172,8 @@ HTML5 链接包含的不只是超链接。虽然 `<link>` 元素没有发生太�
 
 大多数浏览器对这些链接类型不做任何特殊处理。然而，为客户识别外部链接可能是很有用的。你还可以使用脚本通过此属性在新窗口打开外部链接。在 jQuery 中，只需为链接添加 `target=_blank` 属性即可：
 
-```javascript$("[rel=external]").attr("target","_blank");
+```javascript
+$("[rel=external]").attr("target","_blank");
 ```
 
 ### 帮助、许可、标签和搜索链接类型

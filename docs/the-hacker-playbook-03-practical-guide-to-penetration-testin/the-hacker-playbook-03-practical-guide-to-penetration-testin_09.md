@@ -277,7 +277,8 @@ THP 自定义投送器代码：https://github.com/cheetz/thpDropper.git
 
  Move our newly created binaries to our meterpreter folder:
 * `copy metsvc.exe ..\..\..\..\data\meterpreter\\`
-    ```bash  
+    ```bash
+ 
         C:\Program Files (x86)\GnuWin32\bin\make.exe        
      ````   
          Windows 

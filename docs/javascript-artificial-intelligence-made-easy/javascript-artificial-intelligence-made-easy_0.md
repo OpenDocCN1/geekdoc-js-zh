@@ -540,7 +540,8 @@ AI 代理体可以根据某些条件是否为真来分析给定的系统。这�
 
 使用这种方法对 AI 代理关注的任何内容进行非常简单的解释。
 
-```javascriptvar trafficLights = ["Red", "Yellow", "Green"]
+```javascript
+var trafficLights = ["Red", "Yellow", "Green"]
 ```
 
 其次，你可以将环境特征描述为详细的数据表示。通过面向对象编程，你可以简单地创建关于你 AI 环境观测的类对象——将许多小细节作为类字段。使用这种方法进行更自然、更详细的环境观察。
@@ -592,7 +593,8 @@ function photoTakenHere(ph3, b5)
 
 如果你用简单的枚举类型数据集合来建模房屋，你可能会得到类似下面的内容：
 
-```javascriptvar myHouse = ["livingRoom", "diningRoom", "den", "bathroom1", "bathroom2", "hallway", "bedroom1", "bedroom2", "patio"]
+```javascript
+var myHouse = ["livingRoom", "diningRoom", "den", "bathroom1", "bathroom2", "hallway", "bedroom1", "bedroom2", "patio"]
 ```
 
 你也可以使用面向对象编程来建模房屋。你可以将房屋中的每个房间表示为 `Room` 对象。

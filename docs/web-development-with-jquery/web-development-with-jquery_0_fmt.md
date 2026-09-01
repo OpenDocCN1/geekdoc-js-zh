@@ -280,7 +280,7 @@ JavaScript 框架已成为客户端 Web 开发不可或缺的伴侣。几年前�
 
 
 
-```html我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。$('<div/>')
+```html $('<div/>')
     .addClass('selected')
     .attr({
         id: 'body',
@@ -660,7 +660,7 @@ IDE 的示例包括 Coda、Adobe Dreamweaver、Eclipse、Zend Studio 和 Microso
 
 
 
-控制结构包括以`if`、`else`、`switch`、`case`、`for`、`while`、`try`、`catch`等关键字开头的编程语句。控制结构编程语句我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。任何编程语言的基石。现在来看看根据流行的编程标准和指南如何格式化控制结构语句。
+控制结构包括以`if`、`else`、`switch`、`case`、`for`、`while`、`try`、`catch`等关键字开头的编程语句。控制结构编程语句 任何编程语言的基石。现在来看看根据流行的编程标准和指南如何格式化控制结构语句。
 
 尽管归根结底不同的人对编写源码有不同的偏好，但在大多数专业编程社区中，有两种主流的控制结构格式化方法。
 
@@ -906,7 +906,7 @@ div#exampleFormWrapper form#exampleSummaryDialog {
 
 
 
-在从 DOM我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。中选择元素后，你可以为它们应用行为。例如，你可以监听事件，并在用户点击元素时触发某些操作。你也可以在用户鼠标悬停或离开元素时触发某些操作。基本上，你可以让你的 Web 文档看起来和运行起来更像桌面应用程序。本章描述了如何使用 jQuery 的 `Selectors API` 从文档中获取元素，并提供了一些用法示例。它还描述了如何在 jQuery 中进行链式调用。这种的一种用途是过滤集合，即将较大的集合缩小到较小的集合。最后，它讨论了 jQuery 的 `Event API` 如何与 W3C 的 `Event API` 以及 IE8 中实现的 Microsoft 事件模型协同工作。
+在从 DOM 中选择元素后，你可以为它们应用行为。例如，你可以监听事件，并在用户点击元素时触发某些操作。你也可以在用户鼠标悬停或离开元素时触发某些操作。基本上，你可以让你的 Web 文档看起来和运行起来更像桌面应用程序。本章描述了如何使用 jQuery 的 `Selectors API` 从文档中获取元素，并提供了一些用法示例。它还描述了如何在 jQuery 中进行链式调用。这种的一种用途是过滤集合，即将较大的集合缩小到较小的集合。最后，它讨论了 jQuery 的 `Event API` 如何与 W3C 的 `Event API` 以及 IE8 中实现的 Microsoft 事件模型协同工作。
 
 ## Selectors API 的起源
 
@@ -1089,7 +1089,7 @@ jQuery 的 `find()` 方法允许你在选择中执行另一个选择。另一种
 
 
 
-我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。，拥有唯一`id`名称的这一概念并不是浏览器可以强制执行的；你必须在创建文档时强制执行这一点。如果你不自觉地考虑这一点，浏览器会很乐意允许你创建多个具有相同`id`名称的元素。如果你确实创建了多个具有相同`id`名称的元素，你就错过了使用`id`名称作为初始选择器来缩小选择中可能元素范围而带来的优化优势。如果你使用唯一的`id`名称，那么类似于数据库，浏览器可以建立一个快速索引来访问`DOM`中的这些元素。因为它可以快速找到这些元素，基于使用`id`名称优化的构建的应用程序也会快得多。
+ ，拥有唯一`id`名称的这一概念并不是浏览器可以强制执行的；你必须在创建文档时强制执行这一点。如果你不自觉地考虑这一点，浏览器会很乐意允许你创建多个具有相同`id`名称的元素。如果你确实创建了多个具有相同`id`名称的元素，你就错过了使用`id`名称作为初始选择器来缩小选择中可能元素范围而带来的优化优势。如果你使用唯一的`id`名称，那么类似于数据库，浏览器可以建立一个快速索引来访问`DOM`中的这些元素。因为它可以快速找到这些元素，基于使用`id`名称优化的构建的应用程序也会快得多。
 
 ### DOM 类比
 
@@ -2999,7 +2999,7 @@ $('div#finderAdditionalFiles > div.finderFile').each(
 
 
 
-jQuery我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。事件是使用 JavaScript 事件的一种灵活且简单的方法。jQuery 的 API 既提供了常用 JavaScript 事件的封装方法，又在 `on()`、`off()` 和 `trigger()` 方法中提供了更详细的 API。
+jQuery 事件是使用 JavaScript 事件的一种灵活且简单的方法。jQuery 的 API 既提供了常用 JavaScript 事件的封装方法，又在 `on()`、`off()` 和 `trigger()` 方法中提供了更详细的 API。
 
 如果你想使用 jQuery 未提供封装方法的浏览器事件，你必须使用 `on()`、`off()` 或 `trigger()` 来使用其中任一事件，例如 HTML5 拖放 API（这在第 11 章“HTML5 拖放”中讨论过）。
 
@@ -7848,7 +7848,8 @@ var movies = {
 
 
 
-```javascript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。{
+```javascript
+ {
     $(this).unselect();
 } else {
     $(this).select();
@@ -17285,7 +17286,7 @@ sel.removeAllRanges();
 
 `<button id='btnStoreSelection'>Store Selection</button>`
 
-你更新了 JavaScript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。代码，为该按钮添加了点击事件处理器。该处理器执行了一项极其简单的任务：设置一个窗口级变量来存储有关当前选中内容的信息：
+你更新了 JavaScript 代码，为该按钮添加了点击事件处理器。该处理器执行了一项极其简单的任务：设置一个窗口级变量来存储有关当前选中内容的信息：
 
 ```javascript
 $('button#btnStoreSelection').click(
@@ -18393,7 +18394,8 @@ bind({
 | :--- | :--- | :--- |
 | `crossDomain` | 用于强制执行或阻止跨域请求。同域请求的默认值为 `false`，跨域请求的默认值为 `true`。 | Boolean |
 | `data` | 通过 GET 或 POST 请求发送到服务器的数据。可以指定为用 ampersand 分隔的参数字符串或者键值对形式的对象字面量。如果值是数组，jQuery 将根据 `traditional` 选项的值进行序列化。可以通过 `processData` 选项修改对数据的自动处理。 | Object, String, Array |
-| `dataFilter` | 用于处理 `XMLHttpRequest` 原始响应数据的回调函数。这是一个用于清理响应的预过滤函数。您应该从此回调函数返回清理后的数据。该函数有两个参数：`responseText` 和 `dataType`。<br><br>```javascript<br>function (responseText, dataType)<br>{<br>  // 执行某些操作<br>  // 返回清理后的 // 数据<br>  return data;<br>}<br>``` | Function |
+| `dataFilter` | 用于处理 `XMLHttpRequest` 原始响应数据的回调函数。这是一个用于清理响应的预过滤函数。您应该从此回调函数返回清理后的数据。该函数有两个参数：`responseText` 和 `dataType`。<br><br>```javascript
+<br>function (responseText, dataType)<br>{<br>  // 执行某些操作<br>  // 返回清理后的 // 数据<br>  return data;<br>}<br>``` | Function |
 | `dataType` | 您期望从服务器响应中接收的数据类型。jQuery 尝试根据服务器返回的数据的 MIME 类型自动推断 `dataType`。请参见此附录底部的“数据类型”表格获取允许的数据类型列表。<br>默认值：`Educated Guess` | String |
 | `error` | 当 AJAX 请求失败时执行的回调函数。该回调函数有三个参数：`jqXHR`、`errorType` 和 `errorThrown`。<br>`errorType` 参数可以包含以下任何值：`null, 'timeout', 'error', 'abort'` 和 `'parsererror'`。<br>如果抛出 HTTP 错误，`errorThrown` 参数将包含 HTTP 状态码，例如 `"Not Found"` 或 `"Internal Server Error"`。 | Function |
 | `global` | 是否为该请求触发全局 AJAX 事件处理器，例如由各种 AJAX 事件方法设置的处理器。默认值：`true` | Boolean |
@@ -18406,7 +18408,8 @@ bind({
 | `password` | 用于响应 HTTP 访问认证请求的密码。 | String |
 | `processData` | 默认情况下，传递给 `data` 选项的数据将被处理并转换为符合默认内容类型 `application/x-www-form-urlencoded; charset=URF-8` 的查询字符串。如果您想发送 DOMDocuments 或其他未处理的数据，请将此选项设置为 `false`。默认值：`true` | Boolean |
 | `scriptCharset` | 适用于 `dataType` 设置为 `script` 或 `jsonp` 的 GET 请求。强制使用指定的字符集解释请求。仅当本地内容的字符集与加载的远程内容不同时才需要此。 | String |
-| `statusCode` | 一个包含数字 HTTP 代码和相应的回调函数的对象，当遇到该状态码时应调用它们。<br><br>```javascript<br>$.ajax({<br>  statusCode : {<br>    404 : function()<br>    {<br>      alert('URL not found.');<br>    }<br>  }<br>});<br>``` | Object |
+| `statusCode` | 一个包含数字 HTTP 代码和相应的回调函数的对象，当遇到该状态码时应调用它们。<br><br>```javascript
+<br>$.ajax({<br>  statusCode : {<br>    404 : function()<br>    {<br>      alert('URL not found.');<br>    }<br>  }<br>});<br>``` | Object |
 | `success` | 在 AJAX 请求成功后执行的函数。 | Function |
 | `timeout` | 设置在超时发生前允许毫秒数（ms）。 | Number |
 | `traditional` | 决定 GET 或 POST 请求的参数如何序列化。如果设置为 `true`，则使用浅层的传统的序列化方法。 | Boolean |
@@ -18431,7 +18434,8 @@ bind({
 | 方法 | 说明 | 返回类型 |
 | :--- | :--- | :--- |
 | `css(property)` | 从第一个所选元素返回指定的 CSS 属性值——例如：`$('div').css('background-color')` | String |
-| `css(properties)` | 设置指定的 CSS 属性。`properties` 参数被定义为一个键值对的对象字面量——例如：`$('div').css({`<br><br>```javascript<br>backgroundColor : 'red',<br>marginLeft : '10px'<br>});<br>``` | jQuery |
+| `css(properties)` | 设置指定的 CSS 属性。`properties` 参数被定义为一个键值对的对象字面量——例如：`$('div').css({`<br><br>```javascript
+<br>backgroundColor : 'red',<br>marginLeft : '10px'<br>});<br>``` | jQuery |
 | `css(property, value)` | 设置指定的 CSS 属性值——例如：`$('div').css('background', 'red');` | jQuery |
 
 ### 类名（CLASS NAMES）
@@ -18447,8 +18451,10 @@ bind({
 
 | 方法 | 说明 | 返回类型 |
 | :--- | :--- | :--- |
-| `offset()` | 返回第一个所选元素相对于视口的偏移位置——例如：`var offset = $('div').offset();`<br><br>```javascript<br>alert('Left: ' + offset.left);<br>alert('Top: ' + offset.top);<br>``` | Object |
-| `position()` | 获取元素相对于偏移父元素的坐标——例如：`var position = $('div').position();`<br><br>```javascript<br>alert('Left: ' + position.left);<br>alert('Top: ' + position.top);<br>``` | Object |
+| `offset()` | 返回第一个所选元素相对于视口的偏移位置——例如：`var offset = $('div').offset();`<br><br>```javascript
+<br>alert('Left: ' + offset.left);<br>alert('Top: ' + offset.top);<br>``` | Object |
+| `position()` | 获取元素相对于偏移父元素的坐标——例如：`var position = $('div').position();`<br><br>```javascript
+<br>alert('Left: ' + position.left);<br>alert('Top: ' + position.top);<br>``` | Object |
 
 ### 高度与宽度（HEIGHT AND WIDTH）
 

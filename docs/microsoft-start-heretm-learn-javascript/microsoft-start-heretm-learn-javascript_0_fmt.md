@@ -3016,7 +3016,8 @@ $(document).ready(function () {
 
 接下来，调用了 `getJSON()` 函数。
 
-```javascript$.getJSON('/WebForm1.aspx',
+```javascript
+$.getJSON('/WebForm1.aspx',
 
 ```
 

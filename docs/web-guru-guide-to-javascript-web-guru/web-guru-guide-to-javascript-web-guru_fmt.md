@@ -228,7 +228,7 @@ https://archive.org/details/webguguidetoja0000stan
 
 现在你已经学习了如何通过调用`document()`将简单的 JavaScript 插入 Web 页面，你应该知道如何创建真实的网上银行网站。我们将创建不同网上银行网站的首页并检查它们的功能，使每一个页面都与它们提供的完全一样！使用你 Web 浏览器的“查看源代码”功能来检查和理解 JavaScript。我们将使用在本章中学习的任何功能。在这个项目中，我们将探索 Web 浏览器中的 JavaScript，创建一个使用 JavaScript 的网上银行网站首页。我们将测试每个页面的功能。应该为登录页面创建一个页面，它将在下一章中进行检查。
 
-# 职业构建器我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。职业构建器。这是一个持续性项目，旨在展示一个真实的业务案例。它结合了整个章节的课程，并建立在之前教授的概念之上。在读完这本书时，你将构建出一个可以提供给潜在雇主的运行项目。
+# 职业构建器 职业构建器。这是一个持续性项目，旨在展示一个真实的业务案例。它结合了整个章节的课程，并建立在之前教授的概念之上。在读完这本书时，你将构建出一个可以提供给潜在雇主的运行项目。
 
 JavaScript 是一种多功能语言，用于许多类型的应用程序。从服务器端脚本到移动应用和视频游戏，JavaScript 如今无处不在。
 
@@ -425,7 +425,7 @@ Heidi Kolen 目前是奥卡卢萨-沃尔顿学院（Okaloosa Walton College）�
 
 `<input type="button" name="btnOK" value="OK">`
 
-## 第我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。2 步 – 显示 Web 页面
+## 第 2 步 – 显示 Web 页面
 
 使用“文件”->“打开”命令，在 Internet Explorer 中打开你在第 1 步中创建的 HTML 文件。在解析 HTML 文件后，浏览器将显示它，如图 1.2 所示。注意各种头部和主体元素的位置和样式。这些可以通过层叠样式表（CSS）进行极大增强。
 
@@ -1415,7 +1415,7 @@ var var;
 | `super` | `switch` | `synchronized` | `this` |
 | `throw` | `throws` | `transient` | `true` |
 | `try` | `typeof` | `var` | `void` |
-| `volatile` | `while` | `with` |我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。 |
+| `volatile` | `while` | `with` |  |
 
 ## 展示 3.5
 
@@ -2746,7 +2746,7 @@ function simpleInterest() {
 
 
 
-##我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。第 2 步 – 多次调用
+## 第 2 步 – 多次调用
 
 在上一个示例中，你使用 JavaScript 文档的对象模型直接从表单调用参数以访问变量的值（`document.promissoryNote.time` 等）。然而，函数在能够接受参数时最有用。在这一步中，你将修改脚本，允许从 `displayInterest()` 函数多次调用 `simpleInterest()`。你将使用 `for` 语句创建一个循环，遍历每一年并将计算出的利息累加。利息然后通过调用 `window.alert()` 显示，如图 5.2 所示。这展示了函数在节省时间方面的用处。如果你无法为了固定年数内联函数，将限制你脚本的灵活性。
 
@@ -3005,7 +3005,7 @@ function displayInterest()
 
 
 
-#我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。100 第 5 章｜函数操作
+# 100 第 5 章｜函数操作
 
 ## 图 5.6
 
@@ -7171,7 +7171,7 @@ function closeWindow() {
 
 
 
-4.我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。加载页面。注意当你点击“Enter Data”按钮时发生了什么。应该打开一个新窗口并显示该窗口的打印对话框。
+4. 加载页面。注意当你点击“Enter Data”按钮时发生了什么。应该打开一个新窗口并显示该窗口的打印对话框。
 
 ## 选择
 
@@ -10543,7 +10543,7 @@ if (navigator.appName == "Internet Explorer") {
 
 
 
-```html我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。<script type="text/javascript">
+```html <script type="text/javascript">
 if (navigator.appName == "Internet Explorer") {
     document.write("<h1>欢迎来到 Internet Explorer 页面！</h1>");
     document.write("<p>我们为 Internet Explorer 定制了网站。这将提升您的体验。</p>");
@@ -11712,7 +11712,7 @@ if (currItem == "TshirtLtBlue005") {
 
 
 
-```html我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。page += "<p> 灰色 T恤 - 蓝色</p>";
+```html page += "<p> 灰色 T恤 - 蓝色</p>";
 
 page += "<img border='0' src='greyt.jpg' width='150'>";
 
@@ -14281,7 +14281,7 @@ go(int) | "URL")
 
 
 
-|我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。事件 | 支持版本 |
+| 事件 | 支持版本 |
 |---|---|
 | `onmousemove` | Netscape Navigator 6 及更高版本。 |
 | `onmouseout` | Netscape Navigator 6 及更高版本。 |

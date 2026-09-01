@@ -487,7 +487,8 @@ for循环中的`x++`和`y++`部分用于递增`x`或`y`的值。每次`y`递增1
 
 检查一下它是如何工作的——当 `<body>` 的文档完全加载时，浏览器会查看是否有任何代码关心该事件，方法是搜索已注册 `onload` 事件的代码。对 `<body>` 标签所做的更改是包含一个内联事件处理程序，有效地注册你的代码，以便在该事件触发时被调用。所以，当浏览器完成页面渲染后，这包含在双引号内的 JavaScript 代码被执行了：
 
-```javascript  
+```javascript
+ 
 window.status='It\'s a beautiful day';
 ```  
 
@@ -509,7 +510,8 @@ if (confirm("This is a confirmation box")) {
 
 提示对话框是通过使用 `window` 对象的 `prompt` 方法调用的。所以，假设你想询问用户的名字，然后以文本形式呈现在页面上。这里有一些代码你可以放在 `<script>` 元素中以实现这一目的：
 
-```javascript  
+```javascript
+ 
 <script type="text/javascript">
 var name = prompt("Please enter your name","");
 document.write("Welcome "+name);
@@ -526,7 +528,8 @@ document.write("Welcome "+name);
 
 由于名称是按原样输入的，因此在接受用户的各种文本时要非常小心，因为有人在屏幕上输入的内容会原样显示，包括任何额外的 HTML 或 JavaScript。尝试在提示时输入以下内容：
 
-```javascript  
+```javascript
+ 
 <script>location.href="http://www.wrox.com";</script> 
 ```  
 

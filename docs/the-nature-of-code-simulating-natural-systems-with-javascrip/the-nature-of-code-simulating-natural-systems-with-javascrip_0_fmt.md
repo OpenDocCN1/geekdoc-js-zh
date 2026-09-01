@@ -4432,37 +4432,49 @@ draw() {
 
 | `p5.js` | `Matter.js` |
 | --- | --- |
-| ```javascript\nlet v = createVector(1, -1);\n``` | ```javascript\nlet v = Matter.Vector.create(1, -1);\n``` |
+| ```javascript
+\nlet v = createVector(1, -1);\n``` | ```javascript
+\nlet v = Matter.Vector.create(1, -1);\n``` |
 
 将两个向量相加又是怎样的？
 
 | `p5.js` | `Matter.js` |
 | --- | --- |
-| ```javascript\nlet a = createVector(1, -1);\nlet b = createVector(3, 4);\na.add(b);\n``` | ```javascript\nlet a = Matter.Vector.create(1, -1);\nlet b = Matter.Vector.create(3, 4);\nMatter.Vector.add(a, b, a);\n``` |
+| ```javascript
+\nlet a = createVector(1, -1);\nlet b = createVector(3, 4);\na.add(b);\n``` | ```javascript
+\nlet a = Matter.Vector.create(1, -1);\nlet b = Matter.Vector.create(3, 4);\nMatter.Vector.add(a, b, a);\n``` |
 
 这用结果覆盖向量`a`。以下是将结果放入新变量的方法：
 
 | `p5.js` | `Matter.js` |
 | --- | --- |
-| ```javascript\nlet a = createVector(1, -1);\nlet b = createVector(3, 4);\nlet c = p5.Vector.add(a, b);\n``` | ```javascript\nlet a = Matter.Vector.create(1, -1);\nlet b = Matter.Vector.create(3, 4);\nlet c = Matter.Vector.add(a, b);\n``` |
+| ```javascript
+\nlet a = createVector(1, -1);\nlet b = createVector(3, 4);\nlet c = p5.Vector.add(a, b);\n``` | ```javascript
+\nlet a = Matter.Vector.create(1, -1);\nlet b = Matter.Vector.create(3, 4);\nlet c = Matter.Vector.add(a, b);\n``` |
 
 关于如果你想用标量缩放向量：
 
 | `p5.js` | `Matter.js` |
 | --- | --- |
-| ```javascript\nlet v = createVector(1, -1);\nv.mult(4);\n``` | ```javascript\nlet v = Matter.Vector.create(1, -1);\nMatter.Vector.mult(v, 4);\n``` |
+| ```javascript
+\nlet v = createVector(1, -1);\nv.mult(4);\n``` | ```javascript
+\nlet v = Matter.Vector.create(1, -1);\nMatter.Vector.mult(v, 4);\n``` |
 
 向量的大小？
 
 | `p5.js` | `Matter.js` |
 | --- | --- |
-| ```javascript\nlet v = createVector(1, -1);\nlet magnitude = v.mag();\n``` | ```javascript\nlet v = Matter.Vector.create(1, -1);\nlet magnitude = Matter.Vector.magnitude(v);\n``` |
+| ```javascript
+\nlet v = createVector(1, -1);\nlet magnitude = v.mag();\n``` | ```javascript
+\nlet v = Matter.Vector.create(1, -1);\nlet magnitude = Matter.Vector.magnitude(v);\n``` |
 
 归一化？
 
 | `p5.js` | `Matter.js` |
 | --- | --- |
-| ```javascript\nlet v = createVector(1, -1);\nv.normalize();\n``` | ```javascript\nlet v = Matter.Vector.create(1, -1);\nMatter.Vector.normalise(v);\n``` |
+| ```javascript
+\nlet v = createVector(1, -1);\nv.normalize();\n``` | ```javascript
+\nlet v = Matter.Vector.create(1, -1);\nMatter.Vector.normalise(v);\n``` |
 
 （注：由于原文提供的表格内容存在明显的逻辑重复和错误，我根据上下文语义进行了合理化调整，输出流畅的翻译。）
 

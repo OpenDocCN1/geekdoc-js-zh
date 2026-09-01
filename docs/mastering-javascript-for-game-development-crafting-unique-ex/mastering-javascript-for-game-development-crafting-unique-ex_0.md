@@ -3711,7 +3711,8 @@ wss.on('connection', (ws) => {
 
 压力测试涉及模拟大量并发玩家，以评估你的游戏和基础设施在重负载下的性能。可以使用 `Apache JMeter`、`LoadRunner` 或自定义脚本来创建真实的负载场景。通过尽早识别瓶颈和性能问题，你可以优化游戏的架构。
 
-```text even// 使用 Apache JMeter 的压力测试脚本示例
+```text
+even// 使用 Apache JMeter 的压力测试脚本示例
 Thread Group: Number of Threads (Users) = 1000
 HTTP Request: Simulate player actions (e.g., login, gameplay)
 ```

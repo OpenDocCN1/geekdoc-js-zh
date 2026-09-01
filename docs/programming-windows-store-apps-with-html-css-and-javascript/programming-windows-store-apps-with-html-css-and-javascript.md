@@ -7998,7 +7998,8 @@ element。也就是说，`itemPromise.then` 的返回值是一个用 `element` �
 
 占位符渲染器（placeholder renderer）将 element 分为两个阶段。返回值是一个对象，其中 `element` 属性包含一个占位符，而 `renderComplete` 是一个 promise，该 promise 会用 `renderer:element` 填充并完成：
 
-```javascriptfunction placeholderRenderer(itemPromise) {
+```javascript
+function placeholderRenderer(itemPromise) {
   // 为 item 创建一个不依赖于数据的模板
   var element = document.createElement('div');
   element.className = 'itemTemp';
@@ -9918,7 +9919,8 @@ Flyout 是由任何其他带有 `data-win-control` 和 `data-win-options` 属性
 
 由于场景 2 的弹出窗（flyout）稍大，在 1366x768 的显示器上（如模拟所示），`auto` 的默认位置会让它显示在调用它的按钮下方。上方的空间并不足够。因此，在调用 show 时将 `placement` 设置为 `top`：
 
-```javascriptfunction loginFlyout() {
+```javascript
+function loginFlyout() {
   // ...
   document.getElementById("loginFlyout").winControl.show(loginButton, "top");
 }

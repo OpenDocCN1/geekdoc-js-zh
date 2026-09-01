@@ -7269,7 +7269,8 @@ String.prototype.reverse = function () {
 
 让我们创建一个简单的构造函数和两个对象：
 
-```javascriptfunction Dog() {
+```javascript
+function Dog() {
   this.tail = true;
 }
 var benji = new Dog();

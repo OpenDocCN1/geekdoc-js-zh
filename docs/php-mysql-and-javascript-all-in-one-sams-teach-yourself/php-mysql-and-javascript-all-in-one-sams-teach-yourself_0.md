@@ -5131,7 +5131,8 @@ document.theform.sorted.value=names.join("\n");
 
 函数是 JavaScript 语句的组，可以被视为单个单元。要使用函数，你必须首先定义它。这里有一个简单的函数定义示例：
 
-```javascriptfunction greet() {
+```javascript
+function greet() {
     alert("Greetings!");
 }
 ```
@@ -5152,7 +5153,8 @@ document.theform.sorted.value=names.join("\n");
 
 点击此处查看代码图像
 
-```javascriptfunction greet(who) {
+```javascript
+function greet(who) {
     alert("Greetings, " + who + "!");
 }
 ```
@@ -5188,7 +5190,8 @@ document.theform.sorted.value=names.join("\n");
 
 使用函数被称为`calling`（调用）函数。要调用函数，请使用函数名后跟圆括号。例如：
 
-```javascriptgreet("Fred");
+```javascript
+greet("Fred");
 ```
 
 这告诉 JavaScript 解释器调用 `greet` 函数，并将值 `"Fred"` 传递给函数内部的变量 `who`。
@@ -5233,7 +5236,8 @@ document.theform.sorted.value=names.join("\n");
 
 像通常一样，你的函数应该以 `function` 关键字、函数名以及它接受的参数开始。我们将使用变量名 `a`、`b`、`c` 和 `d` 来表示要计算平均值的四个数字。这里是函数的第一行：
 
-```javascriptfunction average(a,b,c,d) {
+```javascript
+function average(a,b,c,d) {
 ```
 
 

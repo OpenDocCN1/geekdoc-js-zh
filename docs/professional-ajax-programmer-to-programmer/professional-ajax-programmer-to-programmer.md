@@ -10373,7 +10373,8 @@ function init() {
 
 该语句有两个值得关注的点：首先，`customer` 单词是小写的，这是由于 PHP 实现反射时的一个特性。当从 JavaScript 调用它时，所有的类名和方法名都会转换为小写。其次，将一个参数回调对象传递给 `customer`。它有自己的方法，当服务器端处理完成并在客户端接收响应时，这些方法会被调用。
 
-```javascriptvar customerCallback = {
+```javascript
+var customerCallback = {
   getaddressfromemail: function(address) {
     showAddress(address);
   }
@@ -10582,7 +10583,8 @@ function init() {
 
 该语句有两个值得关注的点：首先，`customer` 单词是小写的，这是由于 PHP 实现反射时的一个特性。当从 JavaScript 调用它时，所有的类名和方法名都会转换为小写。其次，将一个参数回调对象传递给 `customer`。它有自己的方法，当服务器端处理完成后并在客户端接收响应时，这些方法会被调用。
 
-```javascriptvar customerCallback = {
+```javascript
+var customerCallback = {
   getaddressfromemail: function(address) {
     showAddress(address);
   }

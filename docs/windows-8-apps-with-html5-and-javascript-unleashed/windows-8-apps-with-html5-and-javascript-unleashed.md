@@ -8682,7 +8682,8 @@ WL.login().then(
 );
 ```
 
-```代码列表 11.1 中的 `WL.init()` 方法调用时带有两个参数：`redirect_uri` 和一个 `scopes` 数组。`redirect_uri` 必须与你在上一节中配置的重定向域名完全匹配。下一节将讨论 `scopes` 数组。
+```
+$111.1 中的 `WL.init()` 方法调用时带有两个参数：`redirect_uri` 和一个 `scopes` 数组。`redirect_uri` 必须与你在上一节中配置的重定向域名完全匹配。下一节将讨论 `scopes` 数组。
 
 # 指定作用域
 

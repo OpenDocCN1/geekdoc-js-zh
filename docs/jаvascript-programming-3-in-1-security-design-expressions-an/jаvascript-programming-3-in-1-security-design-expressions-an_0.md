@@ -100,7 +100,8 @@ let copy = { ...product };
 ### 使用 Node 和 Express JS 构建 REST API
 
 ## 第一章 如何获取正确的工具
-```javascriptconst fs = require('fs');
+```javascript
+const fs = require('fs');
 const FILE_NAME = './assets/pies.json';
 const path = require('path');
 

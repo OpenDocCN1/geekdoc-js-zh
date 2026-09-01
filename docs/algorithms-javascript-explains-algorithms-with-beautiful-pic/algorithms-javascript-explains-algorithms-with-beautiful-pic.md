@@ -96,7 +96,8 @@ Algorithms Explain With Beautiful Pictures(用精美图片解释算法)
 
 ## 创建 `TestBubbleSort.html`**使用记事本打开它在浏览器中运行。**
 
-```javascript <script type="text/javascript">    class BubbleSort{        static sort(arrays) {            for (var i = 0; i < arrays.length - 1; i++) {                for (var j = 0; j < arrays.length - i - 1; j++) {                    //swap(交换) if (arrays[j] > arrays[j + 1]) {                        var flag = arrays[j];                        arrays[j] = arrays[j + 1];                        arrays[j + 1] = flag;}                }            }}    /////////////////////testing/////////////////////    var scores = [ 60, 50, 95, 80, 70 ];    BubbleSort.sort(scores);    for (var i = 0; i < scores.length; i++) {        document.write(scores[i] + ",");    } </script> ```
+```javascript
+<script type="text/javascript">    class BubbleSort{        static sort(arrays) {            for (var i = 0; i < arrays.length - 1; i++) {                for (var j = 0; j < arrays.length - i - 1; j++) {                    //swap(交换) if (arrays[j] > arrays[j + 1]) {                        var flag = arrays[j];                        arrays[j] = arrays[j + 1];                        arrays[j + 1] = flag;}                }            }}    /////////////////////testing/////////////////////    var scores = [ 60, 50, 95, 80, 70 ];    BubbleSort.sort(scores);    for (var i = 0; i < scores.length; i++) {        document.write(scores[i] + ",");    } </script> ```
 
 **结果：** 
 
@@ -118,7 +119,8 @@ Algorithms Explain With Beautiful Pictures(用精美图片解释算法)
 
 ## 创建 `TestMinValue.html` **使用记事本打开它在浏览器中运行**。
 
-```javascript <script type="text/javascript">    function min(arrays){        var minIndex = 0; //最小值的索引 for (var j = 1; j < arrays.length; j++) {            if (arrays[minIndex] > arrays[j]){                minIndex = j;}        }        return arrays[minIndex];    }     ////////////////////testing////////////////////    var scores = [ 60, 80, 95, 50, 70 ];    var minValue = min(scores);    document.write("Min Value ="+minValue);" </script> ``` 
+```javascript
+<script type="text/javascript">    function min(arrays){        var minIndex = 0; //最小值的索引 for (var j = 1; j < arrays.length; j++) {            if (arrays[minIndex] > arrays[j]){                minIndex = j;}        }        return arrays[minIndex];    }     ////////////////////testing////////////////////    var scores = [ 60, 80, 95, 50, 70 ];    var minValue = min(scores);    document.write("Min Value ="+minValue);" </script> ``` 
 
 **结果：** 
  ![](img/4e0bf091f4d81b2977c8fb9210bf9760_15_0.png)

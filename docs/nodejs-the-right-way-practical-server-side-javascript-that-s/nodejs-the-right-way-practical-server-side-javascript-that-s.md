@@ -854,7 +854,8 @@ Escape character is '^'
 
 打开编辑器并插入以下内容：
 
-```javascript/net-watcher-json-client.js
+```javascript
+/net-watcher-json-client.js
 "use strict";
 const net = require('net');
 const client = net.connect({port: 5432});
@@ -933,7 +934,8 @@ client.on('data', function(data) {
 
 打开编辑器并输入以下内容：
 
-```javascript/networking/net-watcher-json-test-service.js
+```javascript
+/networking/net-watcher-json-test-service.js
 "use strict";
 const net = require('net');
 
@@ -997,7 +999,8 @@ at EventEmitter.emit (events.js:96)
 
 首先，让我们看看 Node 是如何处理的。以下代码设置 LDJClient 继承自 EventEmitter：
 
-```javascript/networking/ldj.js
+```javascript
+/networking/ldj.js
 const events = require('events'),
 util = require('util');
 // 客户端构造函数

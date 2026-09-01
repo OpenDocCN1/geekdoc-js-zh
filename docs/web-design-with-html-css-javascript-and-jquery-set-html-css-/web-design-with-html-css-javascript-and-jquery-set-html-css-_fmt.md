@@ -1,5 +1,5 @@
 
-# HTML, CSS, JavaScript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。和 jQuery Web 设计集
+# HTML, CSS, JavaScript 和 jQuery Web 设计集
 
 ## HTML & CSS 设计与网站构建
 
@@ -2921,7 +2921,7 @@ HTML5 还引入了允许访问者输入电子邮件地址和 URL 的输入框。
 
 ## `type="url"`
 
-当你向用户询问网页地址时，可以使用 `URL`我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。输入框。支持验证的浏览器将检查用户提供的信息是否符合 `URL` 格式。某些智能手机还会优化键盘，显示输入 `URL` 时最需要的按键。
+当你向用户询问网页地址时，可以使用 `URL` 输入框。支持验证的浏览器将检查用户提供的信息是否符合 `URL` 格式。某些智能手机还会优化键盘，显示输入 `URL` 时最需要的按键。
 
 ![](img/e6c4b3cd8fbe75ea4d238f930a7bca3c_173_1.png)
 
@@ -5612,7 +5612,7 @@ a:active {
 
 
 
-# 示例文本我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。```html
+# 示例文本 ```html
 <html>
   <body>
     <h1>布亚尔犬 (Briards)</h1>
@@ -6074,7 +6074,7 @@ p {
 
 
 
-`p.example`我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。的 CSS 代码如下：
+`p.example` 的 CSS 代码如下：
 
 ```css
 p.example {
@@ -10818,7 +10818,7 @@ Google Analytics 服务需要你注册一个账户：**www.google.com/analytics*
 
 
 
-#我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。相对定位 363, 366 # 网格 365 # 浮动 318 # 关闭浮动 372 # 行高 283 # left 属性 366-371 # 小于符号 194 # 列表 365 # 侧边栏 436 # 页面尺寸 379-380
+# 相对定位 363, 366 # 网格 365 # 浮动 318 # 关闭浮动 372 # 行高 283 # left 属性 366-371 # 小于符号 194 # 列表 365 # 侧边栏 436 # 页面尺寸 379-380
 
 # M
 

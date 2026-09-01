@@ -21837,7 +21837,8 @@ try {
 
 
 
-```javascripttry {
+```javascript
+try {
     window.someNonexistentFunction();
 } catch (error){
     alert("An error happened!");

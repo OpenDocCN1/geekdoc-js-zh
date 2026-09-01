@@ -480,7 +480,8 @@ clearTimeout(timeout)
 
 下面的代码展示了这些超时方法的演示。
 
-```javascriptvar timeoutHandler=function() {
+```javascript
+var timeoutHandler=function() {
   console.log("Time Now ", new Date().getSeconds()); 
   clearTimeout(timeout);
 }
@@ -503,7 +504,8 @@ clearInterval(timeInterval)
 
 下面的代码演示了这些间隔处理器。
 
-```javascriptvar counter = 0,
+```javascript
+var counter = 0,
 timeIntervalHandler = function(){
   console.log("Inside Time Now ", new Date().getSeconds()); 
   counter++;

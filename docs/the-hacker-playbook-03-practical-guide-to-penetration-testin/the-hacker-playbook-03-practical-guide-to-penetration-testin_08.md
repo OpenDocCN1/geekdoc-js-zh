@@ -154,7 +154,8 @@ LAN Turtle 的目的是代替投放盒。虽然它具有像自动 SSH、DNS 欺�
         *   通过返回 **模块** > `openvpn` 设置您的 OpenVPN 配置文件，然后使用 `turtle.ovpn` 中的内容进行配置。
 
     - 我们还希望确保 LAN Turtle OpenVPN 服务器在启动时启动，以便我们可以简单地放下它并运行：前往模块 -> openvpn，启用。
-        ```bash 
+        ```bash
+
             # 以下命令示例仅供参考日志或配置中可能需要使用
             
         /etc/init.d/openvpn enable; restart

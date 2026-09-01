@@ -4381,7 +4381,8 @@ alert(processConfirm(confirm("Shall we play a game?")));
 | :--- |
 | 2. 定义一个接受两个数值参数的函数。如果第一个参数的值大于第二个参数，向访问者显示 alert。如果第一个参数的值小于或等于第二个参数，返回两个参数的和。 |
 | 3. 在以下代码中添加适当的 `alert()` 函数，以便你在函数调用前后看到 `result` 变量中的值。代码如下： |
-| ```javascript function addNumbers() { firstNum = 4; secondNum = 8; result = firstNum + secondNum; return result; } result = 0; result = addNumbers(); ``` |
+| ```javascript
+function addNumbers() { firstNum = 4; secondNum = 8; result = firstNum + secondNum; return result; } result = 0; result = addNumbers(); ``` |
 | 4. 创建一个包含七个字符串值的数组，初始化为这些恒星的名字：北极星、参户二、天津宾、织女星、天津四、大角星和御夫星。创建一个包含七个额外字符串值的数组，初始化为这些恒星所在的星座名称：小熊座、金牛座、天鹅座、天琴座、鹰座、大熊座和狮子座。接下来，创建一个接受单个字符串参数的函数。在函数内部，遍历第一个数组搜索该恒星。当找到恒星时，返回第二个数组中对应索引的值。换句话返回该恒星对应的星座名称。在页面的 `<body>` 中，使用 prompt 从访问者处获取恒星名称，然后使用该输入调用函数。不要忘记包含未找到恒星时执行的代码。在屏幕上显示结果。 |
 
 # Chapter 8. Objects in JavaScript
@@ -4954,10 +4955,13 @@ eval("alert('hello world')");
 
 | 1. | 创建代码来遍历一个包含四个对象的简单数组（所示），并在 `alert()` 对话框中显示这些对象，数组中的每个元素显示一次： |
 | :--- | :--- |
-| ```javascript var star = ["Polaris", "Deneb", "Vega", "Altair"]; ``` | 2. | 创建一个对象来存储你喜爱的三首歌曲名称。对象应该包含歌手、歌曲长度和标题属性。 |
+| ```javascript
+var star = ["Polaris", "Deneb", "Vega", "Altair"]; ``` | 2. | 创建一个对象来存储你喜爱的三首歌曲名称。对象应该包含歌手、歌曲长度和标题属性。 |
 | 3. | 本章的第一个逐步练习使用星 列表来填充这些对象，所示： |
-| ```javascript function Star(constell,type,specclass,magnitude) { this.constellation = constell; this.type = type; this.spectralClass = specclass; this.mag  = magnitude; } star["Polaris"] = new Star("Ursa Minor","Double","F7",2.0); star["Mizar"] = new Star("Ursa Major","Spectroscopic Binary","A1 V",2.3); star["Aldebaran"] = new Star("Taurus","Irregular Variable","K5 III",0.85); star["Rigel"] = new Star("Orion","Supergiant","B8 Ia",0.12); star["Castor"] = new Star("Gemini","Multiple/Spectroscopic","A1 V",1.58); star["Albireo"] = new Star("Cygnus","Double","K3 II",3.1); star["Acrux"] = new Star("Crux","Double","B1 IV",0.8); star["Gemma"] = new Star("Corona Borealis","Eclipsing Binary","A0 V",2.23); star["Procyon"] = new Star("Canis Minor","Double","F5 IV",0.38); star["Sirius"] = new Star("Canis Major","Double","A1 V",-1.46); star["Rigil Kentaurus"] = new Star("Centaurus","Double","G2 V",-0.01); star["Deneb"] = new Star("Cygnus","Supergiant","A2 Ia",1.25); star["Vega"] = new Star("Lyra","White Dwarf","A0 V",0.03); star["Altair"] = new Star("Aquila","White Dwarf","A7 V",0.77) ``` | 该代码随后使用简单的 `for` 循环遍历每个星对象并显示星星的名称，如下所示： |
-| ```javascript for (var propt in star) { alert(propt); } ``` | 你的任务是修改此代码，在一个单一对话框中显示所有星星名称，而不是每个星星显示一个对话框。 |
+| ```javascript
+function Star(constell,type,specclass,magnitude) { this.constellation = constell; this.type = type; this.spectralClass = specclass; this.mag  = magnitude; } star["Polaris"] = new Star("Ursa Minor","Double","F7",2.0); star["Mizar"] = new Star("Ursa Major","Spectroscopic Binary","A1 V",2.3); star["Aldebaran"] = new Star("Taurus","Irregular Variable","K5 III",0.85); star["Rigel"] = new Star("Orion","Supergiant","B8 Ia",0.12); star["Castor"] = new Star("Gemini","Multiple/Spectroscopic","A1 V",1.58); star["Albireo"] = new Star("Cygnus","Double","K3 II",3.1); star["Acrux"] = new Star("Crux","Double","B1 IV",0.8); star["Gemma"] = new Star("Corona Borealis","Eclipsing Binary","A0 V",2.23); star["Procyon"] = new Star("Canis Minor","Double","F5 IV",0.38); star["Sirius"] = new Star("Canis Major","Double","A1 V",-1.46); star["Rigil Kentaurus"] = new Star("Centaurus","Double","G2 V",-0.01); star["Deneb"] = new Star("Cygnus","Supergiant","A2 Ia",1.25); star["Vega"] = new Star("Lyra","White Dwarf","A0 V",0.03); star["Altair"] = new Star("Aquila","White Dwarf","A7 V",0.77) ``` | 该代码随后使用简单的 `for` 循环遍历每个星对象并显示星星的名称，如下所示： |
+| ```javascript
+for (var propt in star) { alert(propt); } ``` | 你的任务是修改此代码，在一个单一对话框中显示所有星星名称，而不是每个星星显示一个对话框。 |
 
 * 获取有关访问者屏幕的信息，包括可用的高度和宽度。
 * 使用 JavaScript 检测浏览器是否启用了 Java。

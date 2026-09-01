@@ -3797,7 +3797,8 @@ var myRequest = getXMLHTTPRequest();
 
 如果你的请求是 `GET` 请求，请求信息将编码到目标 URL 中，然后你可以简单地使用参数 `null` 调用 `send()` 方法：
 
-```javascriptobjectname.send(null);
+```javascript
+objectname.send(null);
 ```
 
 然而，如果你正在进行 `POST` 请求，则请求的内容（经过适当编码）将作为参数传递。

@@ -4405,7 +4405,8 @@ animation = setInterval(frame, trainSpeed);
 
 - 2. 接下来，我们需要创建 `frame()` 函数。这个函数与我们在第 7 章中用于制作 JavaScript 机器人 Douglas 的 `frame()` 函数非常相似。我们只需要针对特定情况对它进行一些调整。修改你的 `Function Junction` 程序中的 `frame()` 函数，使其看起来如下所示：
 
-```javascriptfunction frame() {
+```javascript
+function frame() {
   trainPosition += 2;
   train.style.left = trainPosition + 'px';
   checkPosition(trainPosition);

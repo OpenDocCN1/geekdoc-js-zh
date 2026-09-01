@@ -5957,7 +5957,8 @@ function scheduleSound(trackArray, sound, count, time) {
 }
 ```
 
-```javascript```javascript
+```javascript
+```javascript
 function playMetronome(time, playing) {
   if (playing) {
     osc = audioContext.createOscillator();

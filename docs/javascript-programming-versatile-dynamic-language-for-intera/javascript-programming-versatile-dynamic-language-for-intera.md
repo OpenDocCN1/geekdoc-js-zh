@@ -6572,7 +6572,8 @@ const users = [
 ];
 ```
 
-```javascript  
+```javascript
+ 
 
 
 
@@ -17330,7 +17331,8 @@ Apollo Client 是 React 应用中广泛使用的 GraphQL 数据管理库。它�
 
 ## 示例：设置 Apollo Client
 
-```javascript import ApolloClient, InMemoryCache, ApolloProvider from '@apollo/client';
+```javascript
+import ApolloClient, InMemoryCache, ApolloProvider from '@apollo/client';
 
 const client = new ApolloClient({
   uri: 'https://your-graphql-endpoint.com/graphql',

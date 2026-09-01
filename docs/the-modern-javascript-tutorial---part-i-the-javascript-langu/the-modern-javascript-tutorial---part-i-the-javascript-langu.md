@@ -9146,7 +9146,8 @@ WeakMap 在这一方面与 Map 有本质上的不同。它不会防止键对象�
 
 与 Map 的第一个区别是，WeakMap 的键必须是对象，而不能是原始值：
 
-```javascriptlet weakMap = new WeakMap();
+```javascript
+let weakMap = new WeakMap();
 let obj = {};
 
 weakMap.set(obj, "ok"); // 正常工作（对象键）

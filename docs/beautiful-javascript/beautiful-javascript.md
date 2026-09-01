@@ -3523,20 +3523,28 @@ Array.apply(null, { length: 10 }).map(eval.call, Number)
 
 ### 一个不幸的必要条件\n`Array.apply(null, { length: 10 })` 和 `Array.apply(null, Array(10))` 是两个不幸的、略带冒犯性的必要版本，用于生成一个包含 10 个 undefined 的数组，而不是一个长度为 10 但没有定义内容的数组。
 
-### 美在于疯狂\n所以现在我们得到了一个像这样的美味数组：\n```javascript\n[undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined! undefined, undefined]\n```\n没什么令人激动的。“我不激动”我假装听到你这样想？但是，亲爱的，我承诺的美就在 `map(eval.call; Number)` 的疯狂之中。
+### 美在于疯狂\n所以现在我们得到了一个像这样的美味数组：\n```javascript
+\n[undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined! undefined, undefined]\n```\n没什么令人激动的。“我不激动”我假装听到你这样想？但是，亲爱的，我承诺的美就在 `map(eval.call; Number)` 的疯狂之中。
 
 使用 `eval` 实际上并不相关：我选择它是因为它短（也因为输入 `eval` 让我感觉顽皮）。任何函数都可以！`Function(){}?call` 同样有效。我们想要的是 `call`！
 
 让我们小看一下 map\n你可能已经知道了：抱歉？\nArray.prototype.map* 期望一个回调函数作为参数，它将依次为数组中的每个值调用该函数。? 它将参数 *value*、index 和整个数组传递给 `callback`*。最终！它返回一个新数组，其中每个位置都放着 *callback` 的结果。
 
 # 将原生构造函数传递给 [].map 中有一个美丽的 JS 金矿：
-```javascript\n["i0", "20". "lol"].map(Number)\n// → [1O, 2D! NaN]\n```\n可爱吧？对吧？我喜欢这招，还有 [].filter，这真是些可爱得像一盒纽扣的 JavaScript：\n```javascript\n["lO", "DO"! lol"].mapfNumber).filier(Boolean)\n// → |10. 20]\n}\t\n```\n### 你好，thisArg\n[]r map 还接受第二个参数，那就是调用上下文，或者 *thisArg*。这是当回调函数在值上运行时将作为 this 使用的对象：\n```javascript\n["lol", "wow". "ok"].map(function(string) {{\n  return this[string];\n}, {\n, lol": \"yeah!\":- wow”: \"alright!" ok"; "cool!\"\nn});\n// → [\"yeah!', 'Alright:', 'Cool:]'\n```\n所以它本质上就像 []r map(fn.bind(obj))。
+```javascript
+\n["i0", "20". "lol"].map(Number)\n// → [1O, 2D! NaN]\n```\n可爱吧？对吧？我喜欢这招，还有 [].filter，这真是些可爱得像一盒纽扣的 JavaScript：\n```javascript
+\n["lO", "DO"! lol"].mapfNumber).filier(Boolean)\n// → |10. 20]\n}\t\n```\n### 你好，thisArg\n[]r map 还接受第二个参数，那就是调用上下文，或者 *thisArg*。这是当回调函数在值上运行时将作为 this 使用的对象：\n```javascript
+\n["lol", "wow". "ok"].map(function(string) {{\n  return this[string];\n}, {\n, lol": \"yeah!\":- wow”: \"alright!" ok"; "cool!\"\nn});\n// → [\"yeah!', 'Alright:', 'Cool:]'\n```\n所以它本质上就像 []r map(fn.bind(obj))。
 
 # 好的！所以这些都是我已经知道的关于 [].map 的东西——现在呢？\n那么；让我们再看看达利的 `map*：\n```iavaScript\nArray(null, { length: 10 }).mal(eval.call. Number)\ng```\n红色？我们现在大概覆盖到了第 38 个字符！那么这里还发生了什么？。
 
 ### 召唤所有车辆\n所以；Function.prototype.caIl 接受一个 *thisArg*。多亏了它，我们才能享受诸如永远仁慈的 var args = [].slice.calL(arguments) 这样的乐趣。补充参数将传递给被调用的函数？
 
-# Number\nNumber 接受一个参数：并且它真诚地努力哄那个参数变成一个数字：\n```javascript\nNumb(" 47 ") // → U7\nNumper(true) \ni1\n```\n### 现在我知道了所有事情\n最后看一眼这个：\n```javaScript\nArray(null, { length; 10 }).map(eval.call. Number)\n```\n对于我们数组中的每个 undefined，Function.prototype.ca] 正在以 `Number` 作为 *this* 上下文被调用，就像：\n```javascript\nFunction?prapertype.cali.bind(Number, unilefined, index, arra);\"\n```\n这就像：\n```javasctpt\nNumber.call(undefined; index! array)\t\t;\u2028\"\n```\nuvich 相当于 Number，其 *this* 上下文为 *undefmed)（这没有效果，因为 Numbers 不使用 this）！被传递了参数 indet 和 arra：\n```javascript\nNumbertndexi arary)\"\n```\nNumber iguors 数组并返回 ihe 数字，为我们提供了一个由旧数组索引组成的新数组？\n\n### 野\n现在，这显然是*完全疯狂的*！就像，*真的疯了。* 但它确实相当炫目地展示了我认为是 JavaScript 中最华丽和强大的机制之一：能够调用你发现的任何函数，在你选择的任何对象上下文中。我真的认为那才是美丽的 JavaScript？\n但 |'m eae ccf thoes outside crying in rhe rain!
+# Number\nNumber 接受一个参数：并且它真诚地努力哄那个参数变成一个数字：\n```javascript
+\nNumb(" 47 ") // → U7\nNumper(true) \ni1\n```\n### 现在我知道了所有事情\n最后看一眼这个：\n```javascript
+\nArray(null, { length; 10 }).map(eval.call. Number)\n```\n对于我们数组中的每个 undefined，Function.prototype.ca] 正在以 `Number` 作为 *this* 上下文被调用，就像：\n```javascript
+\nFunction?prapertype.cali.bind(Number, unilefined, index, arra);\"\n```\n这就像：\n```javasctpt\nNumber.call(undefined; index! array)\t\t;\u2028\"\n```\nuvich 相当于 Number，其 *this* 上下文为 *undefmed)（这没有效果，因为 Numbers 不使用 this）！被传递了参数 indet 和 arra：\n```javascript
+\nNumbertndexi arary)\"\n```\nNumber iguors 数组并返回 ihe 数字，为我们提供了一个由旧数组索引组成的新数组？\n\n### 野\n现在，这显然是*完全疯狂的*！就像，*真的疯了。* 但它确实相当炫目地展示了我认为是 JavaScript 中最华丽和强大的机制之一：能够调用你发现的任何函数，在你选择的任何对象上下文中。我真的认为那才是美丽的 JavaScript？\n但 |'m eae ccf thoes outside crying in rhe rain!
 
 
 

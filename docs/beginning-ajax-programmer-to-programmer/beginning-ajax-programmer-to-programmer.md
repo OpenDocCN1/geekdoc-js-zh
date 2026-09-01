@@ -12938,7 +12938,8 @@ if (!request)
 ```
 使用传统的事件注册来注册点击事件，而不是在 input 标签中包含 `onclick` 属性。
 
-```javascript    
+```javascript
+   
 <script type ="text/javascript"><var myDoc = document.getElementById('feedr');my doc onclick sendRequest <script>      
      
     if (!request)   
@@ -12956,7 +12957,8 @@ if (!request)
 + 文档的 URL（例如 "feed.xml"）
 + 一个布尔值，指示调用是否为异步
 
-```javascript    
+```javascript
+   
        function sendRequest()   
     4.0689157329,
         open( "GET". "feed.xml": 
@@ -12964,13 +12966,15 @@ if (!request)
 
 当 XMLHttpRequest 对象的 `readyState` 属性发生变化时（即数据开始下载时），将调用 `processResults()` 函数来处理从服务器返回的数据。
 
-```javascript    
+```javascript
+   
 request.readystate = proceesresults:
     request.send(null)  
 ```
 一旦请求对象的 readyState 属性发生变化，就会调用 `processResults()` 函数。如果 `readyState` 属性等于 4，则表示从服务器的下载已完成。作为额外检查，状态属性等于 200 也表示请求已成功处理。
 
-```javascript   
+```javascript
+  
 function ProcessRe sults)      
    if (request.readyState==4}       
        {            
@@ -12982,7 +12986,8 @@ function ProcessRe sults)
 
 下载完成后，`responseXML` 属性用于将数据作为 XML 存储在名为 `xmlDocument` 的变量中。
 
-```javascript   
+```javascript
+  
 varxmlDocament = request.responsetext:     
   var chann elnodes=xmldocument.docu
     mentElement.firstChild.childNodes;        
@@ -13968,7 +13973,8 @@ function getDoc() {
 
 如果浏览器是 IE 6 或更旧版本，则创建一个新的 `ActiveXObject` 并存储在 request 变量中。
 
-```javascript  
+```javascript
+ 
 elseif(window.ActiveXObject) {   // 检查 ActiveX 的可用性
     var request =new Active XObject("Microsoft.XML HTTP");      
 }     
@@ -13989,7 +13995,8 @@ function handle Response(){
 `jsonResp = eval("(" + jsonResp+ "))" ); // 旧版解析或使用解析器时调用 parseJSON()。`
 完成后，像这样调用函数：
 
-```javascript  
+```javascript
+ 
 function findClass(jsonresp){       
         
     for (i=0;i<json resp.class1.length; i++){               
@@ -14003,7 +14010,8 @@ function findClass(jsonresp){
 如果浏览器根本不支持 XHR（遗留环境），您可能会看到错误或需要回退逻辑。在尝试创建尚不存在的对象之前，始终首先检查 `window.XMLHttpRequest`；如果代码运行无误但无法加载数据，请验证控制台日志以确保在 IE 版本中设置正确（ActiveX 注册可能会因用户权限设置而静默失败），尽管通常这里会抛出特定错误并在此处以优雅方式处理，除非被安全策略禁用。
 
 当就绪状态等于 4 且状态为 200 时：
-```javascript  
+```javascript
+ 
 if ((xhr.readyState == 4) && (xhr.status==200)){       
     var jsonResp = xhr.responseText;    
  jsonresp=eval('(' + jsonResp+'))');        
@@ -19852,7 +19860,8 @@ onreadystatechange 属性，XMLHttpRequest 对象，101, 102
 - 在 JavaScript 中转义, 433
 - 在 XSLT 中, 235
 ## R
-##  (回车字符), JavaScript, 433
+## 
+ (回车字符), JavaScript, 433
 ## Radio 对象, JavaScript, 462-463
 ## random() 方法, Math 对象, 459
 ## RangeError 类型, JavaScript, 160

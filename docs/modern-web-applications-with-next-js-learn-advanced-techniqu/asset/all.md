@@ -9124,7 +9124,8 @@ The `use server` directive plays a pivotal role in streamlining server-side code
 
 Example:
 
-```` ```javascript ````
+```` ```javascript
+````
 
 `// server-side.js`
 
@@ -9154,7 +9155,8 @@ Conversely, the `use client` directive enables the identification of code intend
 
 Example:
 
-```` ```javascript ````
+```` ```javascript
+````
 
 `// client-side.js`
 
@@ -9188,7 +9190,8 @@ Section 5: Default Configuration in `next.config.json`
 
 To streamline the usage of directives in a Next.js project, developers can configure the `next.config.json` file. The following example demonstrates how to enable server-side actions by default.
 
-```` ```javascript ````
+```` ```javascript
+````
 
 `/** @type {import(‘next’).NextConfig} */`
 

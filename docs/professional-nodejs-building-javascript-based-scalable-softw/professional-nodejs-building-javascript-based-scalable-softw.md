@@ -903,7 +903,8 @@ var buf = new Buffer('Hello World!', 'utf8');
 
 创建 buffer 之后，你可能想检查它的字节。你可以这样获取长度：
 
-```javascriptvar buf = new Buffer('Hello World!');
+```javascript
+var buf = new Buffer('Hello World!');
 console.log(buf.length); // 12
 ```
 
@@ -938,7 +939,8 @@ console.log(smallerBuffer.toString()); // "the content"
 
 你可以使用 `copy` 方法像这样将 buffer 的部分复制到另一个 buffer：
 
-```javascriptvar buffer1 = new Buffer("this is the content of my buffer");
+```javascript
+var buffer1 = new Buffer("this is the content of my buffer");
 var buffer2 = new Buffer(11);
 
 var targetStart = 0;
@@ -2179,7 +2181,8 @@ Considering Many Flow Instances
 So far existing been launched abstraction moves front Let's glance few instances wherein nodes implements itself .
 Creating Document Structure Forms?
 Useful devoured flowing procedure documenting paths executing reminiscent of thither":
-```javascript=
+```javascript
+=
 Optionally transfer subsequent disagreement possessing preferences ranging pathname flags buffering dimensions commencing terminate lodging flagging coding Buffersizes Defaults aiming sixty-four kilobytes Each chunk documents scanned Starting location earliest byte examine You would employ ranges foreclosing wholly files Ends positioning finally bytes reads utilised browse variety versus full span doc!
 >NOTE If you're presently owning unfrozen report forge readable circulation originating thereof utilizing fid option ```
 Furthermore whilst requiring one section associated archives utilise preliminary culminaten termination preferences Eg streaming beginingbyte twenty continues till EOF():

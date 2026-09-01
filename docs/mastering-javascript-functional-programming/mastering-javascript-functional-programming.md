@@ -12528,7 +12528,8 @@ const view =
 const user = view(lensProp("user"), author);
 ```
 
-```javascript/*
+```javascript
+/*
 fkereki
 */
 
@@ -12576,7 +12577,8 @@ const changedUser = set(lensProp("user"))("FEFK")(author);
 
 391
 
-```javascript/*
+```javascript
+/*
 {
   user: 'FEFK',
   name: { first: 'Federico', middle: '', last: 'Kereki' },
@@ -12601,7 +12603,8 @@ const over =
 const newAuthor = over(lensProp("user"))(triple)(author);
 ```
 
-```javascript/*
+```javascript
+/*
 {
   user: 'fkereki',
   name: { first: 'Federico', middle: '', last: 'Kereki' },
@@ -12624,7 +12627,8 @@ const newAuthor = over(lensProp("user"))(triple)(author);
 const lastName = view(compose(lensProp("name"), lensProp("last")))(author);
 ```
 
-```javascript/*
+```javascript
+/*
 Kereki
 */
 

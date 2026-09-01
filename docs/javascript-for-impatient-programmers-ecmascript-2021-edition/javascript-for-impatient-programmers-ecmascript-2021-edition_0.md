@@ -20689,7 +20689,8 @@ const matchIterable = str.matchAll(regExp);
 
 必须设置标志 `/g`：
 
-```javascript> [...'-a-a-a'.matchAll(/-(a)/u)]
+```javascript
+> [...'-a-a-a'.matchAll(/-(a)/u)]
 TypeError: String.prototype.matchAll called with a non-global
 RegExp argument
 ```

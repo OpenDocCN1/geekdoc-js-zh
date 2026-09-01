@@ -10012,7 +10012,8 @@ gl.linkProgram(program)
 `initShader()` 由两个主要函数组成：创建一个已链接程序对象的 `createProgram()`，以及从 `createProgram()` 调用的 `loadShader()`，后者创建编译后的着色器对象。两者都定义在 `cuon-utils.js` 中。在这里，你将从顶部开始 `initShader()`（参见列表 9.5）。注意，与书中使用的普通代码示例不同，此代码的注释采用 JavaDoc 格式，这用于方便类库。
 
 **列表 9.5 initShaders()**
-```javascript // cuon-utils.js
+```javascript
+// cuon-utils.js
 /**
  * 创建一个程序对象并将其设置为当前
  * @param gl GL 上上下文

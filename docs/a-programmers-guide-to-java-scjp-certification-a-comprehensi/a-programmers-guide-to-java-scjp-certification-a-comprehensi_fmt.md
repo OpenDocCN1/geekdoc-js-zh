@@ -5806,7 +5806,8 @@ Java 本地接口(JNI, Java Native Interface) 是一个特殊的 API,允许 Java
 
 本地方法是指实现不在 Java 中定义，而是在另一种编程语言（例如 C 或 C++）中定义的方法。这样的方法可以在 Java 类声明中作为成员声明,但因其实现不在Java中,所以在类声明中只指定方法头，并且 method header 中必须有 native 关键字。本地方法可以在 throws 子句（见第 6.9 节第 257 页）中指定受检异常，但因为该方法不是 Java 实现的,编译器无法检查这些异常的真实性;尽管如此,语法上是允许的,只是编译器信任开发者声明,不做校验而已（原文此处未展开这句，我补充一下以便理解:-) 在下面的示例中，类 Native 中的一个本地方法 nativeMethod() 在 (2) 处声明(只有方法头，没有实现体;末尾的分号是必需的，表示声明而不是定义。该类还在 (1) 处使用了一个静态初始化块（参见第 9.9  ￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼ page 410) 以便在加载类时加载本地库(NativeMethodLib.loadLibrary(libName))。Native 类的客户端可以像调用任何其他方法一样调用本地方法nativeMethod()，如 (3) 所示: Native trueNative = new Native(); trueNative.nativeMethod();  Java 本地接口(JNI, Java Native Interface) 是一个特殊的 API，允许 Java 方法调用 C 实现的本地函数，JNI 提供了必要的桥梁功能
 
-```java class Native {
+```java
+class Native {
     // The static block ensures that the native method library is loaded before the *native method is ever called*.
     static {
         System.loadLibrary("NativeMethodLib"); // (1) Load native library.  }

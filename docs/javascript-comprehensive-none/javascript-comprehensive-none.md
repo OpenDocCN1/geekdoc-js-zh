@@ -13076,7 +13076,8 @@ d. javascript:alert("Hello World")
 
 有时，程序错误是由使用错误的属性或给对象属性分配了错误的值引起的。记住 for...in 语句是一种循环语句，它会为对象中的所有属性执行相同的语句或命令块。你可以使用 for...in 来确定值是否被赋值给对象中的正确属性。当你拥有具有许多属性的对象，且无法追踪分配给属性的错误值的原因时，这种技术是独特的。考虑以下构造函数，它实例化了一个 Car 对象：
 
-```javascriptfunction Car(make, model, color) {
+```javascript
+function Car(make, model, color) {
   this.make = make;
   this.car_model = model;
   this.car_color = color;

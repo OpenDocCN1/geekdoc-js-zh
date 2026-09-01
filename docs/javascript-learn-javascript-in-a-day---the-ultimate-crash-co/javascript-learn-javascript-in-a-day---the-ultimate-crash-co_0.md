@@ -2287,7 +2287,8 @@ var a = new Array();
 
 我们在上一章中也使用了数组对象的方法。我们使用的一些方法包括：
 
-```javascriptvar a = new Array();
+```javascript
+var a = new Array();
 a.sort();
 a.join(',');
 a.shift();

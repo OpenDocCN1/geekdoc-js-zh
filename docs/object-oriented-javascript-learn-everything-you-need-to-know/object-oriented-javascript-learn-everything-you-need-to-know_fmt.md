@@ -8194,7 +8194,8 @@ Range Error: invalid array length
 | `reverse()` | 反转数组元素并返回修改后的数组。<br>>> var a = [1, 2, 3];<br>>> a.reverse();<br>[3, 2, 1]<br>>> a;<br>[3, 2, 1] |
 | `shift()` | 类似于 `pop()`，但移除的是第一个元素而不是最后一个。<br>>> var a = [1, 2, 3];<br>>> a.shift();<br>1<br>>> a;<br>[2, 3] |
 | `slice(start_index, end_index)` | 提取数组的一部分并作为新数组返回，而不修改原数组。<br>>> var a = ['apple', 'banana', 'js', 'css', 'orange'];<br>>> a.slice(2,4);<br>['js', 'css']<br>>> a;<br>['apple', 'banana', 'js', 'css', 'orange'] |
-| `sort(callback)` | 排序数组。可选接受一个回调函数进行自定义排序。回调函数接收两个元素作为参数，如果它们相等则返回 0，如果第一个更大则返回正数，如果第二个更大则返回负数。<br><br>一个可以执行正确数值排序的自定义函数示例（因为默认是字符串排序）：<br><br>```javascript<br>function customSort(a, b) {<br>  if (a > b) return 1;<br>  if (a < b) return -1;<br>  return 0;<br>}<br>var arr = [10, 5, 8, 1];<br>arr.sort(customSort);<br>// [1, 5, 8, 10]<br>``` |
+| `sort(callback)` | 排序数组。可选接受一个回调函数进行自定义排序。回调函数接收两个元素作为参数，如果它们相等则返回 0，如果第一个更大则返回正数，如果第二个更大则返回负数。<br><br>一个可以执行正确数值排序的自定义函数示例（因为默认是字符串排序）：<br><br>```javascript
+<br>function customSort(a, b) {<br>  if (a > b) return 1;<br>  if (a < b) return -1;<br>  return 0;<br>}<br>var arr = [10, 5, 8, 1];<br>arr.sort(customSort);<br>// [1, 5, 8, 10]<br>``` |
 | `splice(start, count, i1, i2...)` | 在数组中删除或插入元素。第一个参数是起始位置，第二个参数是要删除的数量，后续参数是插入的元素。<br>>> var a = ['apple', 'banana', 'js', 'css', 'orange'];<br>>> a.splice(2, 2, 'pear');<br>['js', 'css']<br>>> a;<br>['apple', 'banana', 'pear', 'orange'] |
 | `unshift(i1, i2, i3...)` | 类似于 `push()`，但在数组开头添加元素而不是末尾。返回修改后数组的长度。<br>>> var a = [1, 2, 3];<br>>> a.unshift('one', 'two');<br>5 |
 
@@ -8206,13 +8207,20 @@ Range Error: invalid array length
 | `Array.from(arrayLike)` | 将类数组对象或可迭代对象转换为数组。<br>>> var arrayLike = {length: 2, 0: 'a', 1: 'b'};<br>>> Array.from(arrayLike);<br>['a', 'b'] |
 | `Array.prototype.find(callback)` | 遍历数组并返回第一个通过回调测试的元素。如果没有找到，则返回 `undefined`。<br>>> var arr = [2, 12, 8, 130];<br>>> arr.find(function(element) { return element > 10; });<br>12 |
 | `Array.prototype.findIndex(callback)` | 遍历数组并返回第一个通过回调测试的元素的索引。如果没有找到，则返回 `-1`。<br>>> var arr = [2, 12, 8, 130];<br>>> arr.findIndex(function(element) { return element > 10; });<br>1 |
-| `Array.prototype.every(callback)` | 你提供一个回调函数来测试数组的每个元素。回调函数接收与 `forEach` 相同的参数，根据给定元素是否满足测试返回 `true` 或 `false`。如果所有元素都满足测试，`every()` 返回 `true`。如果至少有一个不满足，`every()` 返回 `false`。<br><br>```javascript<br>function hasEye(el, idx, ar) {<br>  return el.indexOf('i') === -1;<br>}<br>```<br>>> ['itsy', 'bitsy', 'spider'].every(hasEye);<br>true<br>>> ['eency', 'weency', 'spider'].every(hasEye);<br>false<br>如果在循环过程中某一点明显结果为假，循环将停止并返回 `false`。<br><br>```javascript<br>[1,2,3].every(function (e) {<br>  console.log(e);<br>  return false;<br>});<br>```<br>1<br>false |
+| `Array.prototype.every(callback)` | 你提供一个回调函数来测试数组的每个元素。回调函数接收与 `forEach` 相同的参数，根据给定元素是否满足测试返回 `true` 或 `false`。如果所有元素都满足测试，`every()` 返回 `true`。如果至少有一个不满足，`every()` 返回 `false`。<br><br>```javascript
+<br>function hasEye(el, idx, ar) {<br>  return el.indexOf('i') === -1;<br>}<br>```<br>>> ['itsy', 'bitsy', 'spider'].every(hasEye);<br>true<br>>> ['eency', 'weency', 'spider'].every(hasEye);<br>false<br>如果在循环过程中某一点明显结果为假，循环将停止并返回 `false`。<br><br>```javascript
+<br>[1,2,3].every(function (e) {<br>  console.log(e);<br>  return false;<br>});<br>```<br>1<br>false |
 | `Array.prototype.some(callback)` | 与 `every()` 类似，但只要有一个元素满足测试就返回 `true`。 |
-| `Array.prototype.forEach(callback, this_obj)` | 遍历数组并对每个元素执行回调函数。回调函数接收三个参数：元素值、索引和数组本身。<br><br>```javascript<br>function log(el, idx, arr) {<br>  console.log(idx + ': ' + el);<br>}<br>['a', 'b', 'c'].forEach(log);<br>// 0: a<br>// 1: b<br>// 2: c<br>``` |
-| `Array.prototype.map(callback, this_obj)` | 类似于 `forEach()`，因为它会对每个元素执行一次回调函数，但此外它还会根据回调函数的返回值构建一个新数组并返回它。让我们将数组中的所有字符串转为大写：<br><br>```javascript<br>function uc(element, index, array) {<br>  return element.toUpperCase();<br>}<br>```<br>>> ['eency', 'weency', 'spider'].map(uc);<br>["EENCY", "WEENCY", "SPIDER"] |
-| `Array.prototype.filter(callback, this_obj)` | 类似于 `every()` 和 `some()`，但返回一个包含所有通过测试的元素的新数组。<br><br>```javascript<br>function hasEye(el) {<br>  return el.indexOf('i') === -1;<br>}<br>```<br>>> ['itsy', 'bitsy', 'spider', 'eency'].filter(hasEye);<br>["itsy", "bitsy", "eency"] |
-| `Array.prototype.reduce(callback, start)` | 为数组的每个元素执行回调函数。你的回调函数返回一个值。该值将传递给下一次迭代中的回调函数。整个数组最终会被还原为单个值。<br><br>```javascript<br>function sum(res, element, idx, arr) {<br>  return res + element;<br>}<br>```<br>>> [1, 2, 3].reduce(sum);<br>6<br>可选地，你可以传递一个起始值，该值将被第一个回调函数使用：<br>>> [1, 2, 3].reduce(sum, 100);<br>106 |
-| `Array.prototype.reduceRight(callback, start)` | 类似于 `reduce()` 但从数组的末尾开始循环。<br><br>```javascript<br>function concat(result_so_far, el) {<br>  return "" + result_so_far + el;<br>}<br>```<br>>> [1, 2, 3].reduce(concat);<br>"123"<br>>> [1, 2, 3].reduceRight(concat);<br>"321" |
+| `Array.prototype.forEach(callback, this_obj)` | 遍历数组并对每个元素执行回调函数。回调函数接收三个参数：元素值、索引和数组本身。<br><br>```javascript
+<br>function log(el, idx, arr) {<br>  console.log(idx + ': ' + el);<br>}<br>['a', 'b', 'c'].forEach(log);<br>// 0: a<br>// 1: b<br>// 2: c<br>``` |
+| `Array.prototype.map(callback, this_obj)` | 类似于 `forEach()`，因为它会对每个元素执行一次回调函数，但此外它还会根据回调函数的返回值构建一个新数组并返回它。让我们将数组中的所有字符串转为大写：<br><br>```javascript
+<br>function uc(element, index, array) {<br>  return element.toUpperCase();<br>}<br>```<br>>> ['eency', 'weency', 'spider'].map(uc);<br>["EENCY", "WEENCY", "SPIDER"] |
+| `Array.prototype.filter(callback, this_obj)` | 类似于 `every()` 和 `some()`，但返回一个包含所有通过测试的元素的新数组。<br><br>```javascript
+<br>function hasEye(el) {<br>  return el.indexOf('i') === -1;<br>}<br>```<br>>> ['itsy', 'bitsy', 'spider', 'eency'].filter(hasEye);<br>["itsy", "bitsy", "eency"] |
+| `Array.prototype.reduce(callback, start)` | 为数组的每个元素执行回调函数。你的回调函数返回一个值。该值将传递给下一次迭代中的回调函数。整个数组最终会被还原为单个值。<br><br>```javascript
+<br>function sum(res, element, idx, arr) {<br>  return res + element;<br>}<br>```<br>>> [1, 2, 3].reduce(sum);<br>6<br>可选地，你可以传递一个起始值，该值将被第一个回调函数使用：<br>>> [1, 2, 3].reduce(sum, 100);<br>106 |
+| `Array.prototype.reduceRight(callback, start)` | 类似于 `reduce()` 但从数组的末尾开始循环。<br><br>```javascript
+<br>function concat(result_so_far, el) {<br>  return "" + result_so_far + el;<br>}<br>```<br>>> [1, 2, 3].reduce(concat);<br>"123"<br>>> [1, 2, 3].reduceRight(concat);<br>"321" |
 
 ## Function
 
@@ -8242,7 +8250,8 @@ function sum(a, b) {
 
 | 属性/方法 | 说明 |
 | --- | --- |
-| `apply(this_obj, params_array)` | 允许在调用另一个函数时覆盖该函数的 `this` 值。`apply()` 接收的第一个参数是待绑定到此函数的对象，第二个参数是发送给被调用函数的参数数组。<br><br>```javascript<br>function whatIsIt() {<br>  return this.toString();<br>}<br>```<br>>> var myObj = {};<br>>> whatIsIt.apply(myObj);<br>"[object Object]"<br>>> whatIsIt.apply(window);<br>"[object Window]" |
+| `apply(this_obj, params_array)` | 允许在调用另一个函数时覆盖该函数的 `this` 值。`apply()` 接收的第一个参数是待绑定到此函数的对象，第二个参数是发送给被调用函数的参数数组。<br><br>```javascript
+<br>function whatIsIt() {<br>  return this.toString();<br>}<br>```<br>>> var myObj = {};<br>>> whatIsIt.apply(myObj);<br>"[object Object]"<br>>> whatIsIt.apply(window);<br>"[object Window]" |
 | `call(this_obj, p1, p2, p3, ...)` | 与 `apply()` 相同，但逐个接收参数，而不是数组。 |
 | `length` | 函数期望的参数个数。<br>>> parseInt.length;<br>2<br>如果你忘记了 `call()` 和 `apply()` 之间的区别：<br>>> Function.prototype.call.length;<br>1<br>>> Function.prototype.apply.length;<br>2<br>`call()` 属性的 `length` 为 1，因为除了第一个以外的所有参数都是可选的。 |
 

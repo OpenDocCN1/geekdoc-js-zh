@@ -1833,7 +1833,8 @@ var entryDate = Date.parse(datefield);
 | :--- | :--- |
 | 1 | 在 Domino Designer 中打开你的 *Your Exercises Database* 副本。 |
 | 2 | 切换到页面列表并创建一个新的**页面**。打开页面属性，将页面命名为 **Topic6**。 |
-| 3 | 在 JS Header 事件中输入以下代码行：<br><br>```javascript<br>function writeDOW() {<br>  todaysDate = new Date();<br>  todaysDay = todaysDate.getDay();<br>  switch (todaysDay) {<br>    case 0: DOW = "Sunday"; break;<br>    case 1: DOW = "Monday"; break;<br>    case 2: DOW = "Tuesday"; break;<br>    case 3: DOW = "Wednesday"; break;<br>    case 4: DOW = "Thursday"; break;<br>    case 5: DOW = "Friday"; break;<br>    case 6: DOW = "Saturday"; break;<br>  }<br>  return DOW;<br>}<br>```<br><br>`writeDOW()` 函数创建一个 Date 对象 `todaysDate`（默认为浏览器系统日期），并调用 `getDay()` 方法确定星期几的数字。函数的其余部分将数字转换为星期几的单词。 |
+| 3 | 在 JS Header 事件中输入以下代码行：<br><br>```javascript
+<br>function writeDOW() {<br>  todaysDate = new Date();<br>  todaysDay = todaysDate.getDay();<br>  switch (todaysDay) {<br>    case 0: DOW = "Sunday"; break;<br>    case 1: DOW = "Monday"; break;<br>    case 2: DOW = "Tuesday"; break;<br>    case 3: DOW = "Wednesday"; break;<br>    case 4: DOW = "Thursday"; break;<br>    case 5: DOW = "Friday"; break;<br>    case 6: DOW = "Saturday"; break;<br>  }<br>  return DOW;<br>}<br>```<br><br>`writeDOW()` 函数创建一个 Date 对象 `todaysDate`（默认为浏览器系统日期），并调用 `getDay()` 方法确定星期几的数字。函数的其余部分将数字转换为星期几的单词。 |
 | 4 | 将以下代码行添加到页面本身。<br><br>```html<br>&lt;SCRIPT&gt;<br>document.write("Today is &lt;B&gt;" + writeDOW() + "&lt;/B&gt;.")<br>&lt;/SCRIPT&gt;<br>```<br><br>将文本设置为通过 HTML 传递。<br><br>当 JavaScript 在 HTML 流中遇到 `document.write` 语句时，它会将文本输出为其周围 HTML 的一部分。 |
 | 5 | 保存页面。 |
 | 6 | 选择 **Design - Preview in Web Browser - Internet Explorer** 或点击工具栏中的 ![icon] 工具。 |
@@ -5607,7 +5608,8 @@ function closehelpWindow()
 | 1 | 在 *Your Exercises* 数据库中创建一个名为`Topic13`的新表单。 |
 | 2 | 创建一个标题为`Open Help Window`的热点按钮。 |
 | 3 | 在`onClick`事件中输入以下 JavaScript：<br><br>`writeHelp("Thanks for stopping by!")`<br><br>该按钮调用`writeHelp()`函数，并将窗口的文本内容传递给它。 |
-| 4 | 在`JS Header`事件中输入以下函数：<br><br>```javascript<br>var helpWindow=null;<br>function writeHelp(helpText)<br>{<br>  if(helpWindow == null)<br>  {<br>    helpWindow = window.open("", "",'width=450,height=300');<br>  }<br>  var winStr='<HTML><HEAD><TITLE>Help Window</TITLE></HEAD>';<br>  winStr+='<BODY><H3>Help Window</H3><P>';<br>  winStr+=helpText;<br>  winStr+='<P><FORM>';<br>  winStr+='<INPUT TYPE="button" NAME="Close" VALUE="Close" onclick="self.close()">';<br>  winStr+='<INPUT TYPE="button" NAME="Close" VALUE="Return to Opener" onclick="self.opener.focus()">';<br>  winStr+='</FORM></BODY></HTML>';<br>  helpWindow.document.write(winStr);<br>  helpWindow.document.close();<br>  helpWindow.focus();<br>  return false();<br>}<br>```<br><br>除了向窗口写入文本外，该函数还添加了两个按钮。第一个按钮使用假定的窗口对象`self`上的`close`方法来关闭窗口。第二个按钮使用`window.opener`属性来定位并聚焦到调用窗口。 |
+| 4 | 在`JS Header`事件中输入以下函数：<br><br>```javascript
+<br>var helpWindow=null;<br>function writeHelp(helpText)<br>{<br>  if(helpWindow == null)<br>  {<br>    helpWindow = window.open("", "",'width=450,height=300');<br>  }<br>  var winStr='<HTML><HEAD><TITLE>Help Window</TITLE></HEAD>';<br>  winStr+='<BODY><H3>Help Window</H3><P>';<br>  winStr+=helpText;<br>  winStr+='<P><FORM>';<br>  winStr+='<INPUT TYPE="button" NAME="Close" VALUE="Close" onclick="self.close()">';<br>  winStr+='<INPUT TYPE="button" NAME="Close" VALUE="Return to Opener" onclick="self.opener.focus()">';<br>  winStr+='</FORM></BODY></HTML>';<br>  helpWindow.document.write(winStr);<br>  helpWindow.document.close();<br>  helpWindow.focus();<br>  return false();<br>}<br>```<br><br>除了向窗口写入文本外，该函数还添加了两个按钮。第一个按钮使用假定的窗口对象`self`上的`close`方法来关闭窗口。第二个按钮使用`window.opener`属性来定位并聚焦到调用窗口。 |
 | 5 | 保存表单。 |
 | 6 | 选择 **Design - Preview in Web Browser - Internet Explorer** 或点击工具栏中的工具。 |
 
@@ -6554,7 +6556,8 @@ function gotoURL()
 | 2 | 在`Your Exercises`数据库中创建一个名为`Topic15`的新页面。<br><br>这就是将包含选择器的页面。 |
 | 3 | 输入以下直通 HTML：<br><br>`<table width='100%' border='0'><tr><td align='right'>`<br><br>`<SELECT NAME="PagePicker" onchange="gotoURL()"><Computed Value></SELECT>`<br><br>`</td></tr></table>`<br><br>你将在下一步中插入计算文本。<br><br>`onchange`事件处理程序调用你将在后续步骤中编写的`gotoURL()`函数。 |
 | 4 | 以下是构建选项的计算文本公式：<br><br>`DB:=@WebDbName;`<br><br>`opS:="<OPTION VALUE=' ";`<br><br>`opE:="'>";`<br><br>`URL1:=opS + "/" + DB + "/teamappshomeenglish?openpage" + opE + "English" ;`<br><br>`URL2:= opS + "/" + DB + "/teamappshomespanish?openpage" + opE + "Español";`<br><br>`URL1 + URL2`<br><br>我们在这里使用计算文本的原因是我们想展示如何使用 @Functions 来获取数据库名称以构建 URL。<br><br>（输入 Alt+0241 来创建 ñ 字符。） |
-| 5 | 将`gotoURL()`函数添加到`JS Header`事件：<br><br>```javascript<br>function gotoURL()<br>{<br>  with (document.forms[0])<br>  {<br>    var getSelection=PagePicker.selectedIndex;<br>    var getPage=PagePicker.options[getSelection].value<br>  }<br>  top.Content.location.href=getPage;<br>}<br>```<br><br>关键的一行当然是设置`Content`框架的`href`属性的那一行。 |
+| 5 | 将`gotoURL()`函数添加到`JS Header`事件：<br><br>```javascript
+<br>function gotoURL()<br>{<br>  with (document.forms[0])<br>  {<br>    var getSelection=PagePicker.selectedIndex;<br>    var getPage=PagePicker.options[getSelection].value<br>  }<br>  top.Content.location.href=getPage;<br>}<br>```<br><br>关键的一行当然是设置`Content`框架的`href`属性的那一行。 |
 | 6 | 保存页面。 |
 | 7 | 创建一个包含两个框架的新框架集。<br><br>将框架集命名为`Topic15`。 |
 | 8 | 将你刚创建的页面添加到顶部框架（`Topic15`）。<br><br>将`TeamAppsHomeEnglish`页面添加到底部框架。 |
@@ -8109,7 +8112,8 @@ for(i=0;i<form.elements.length;i++)
 
 | 步骤 | 操作 |
 |---|---|
-| 6 | 如果你有时间，再创建两个按钮，分别命名为 **Tools Off** 和 **Tools On**。<br><br>以下是 **Tools Off** 按钮的代码：<br><br>```javascript<br>var form = document._Topic19;<br>for(i=0;i<form.elements.length;i++)<br>{<br>&nbsp;&nbsp;if(form.elements[i].editorApplet != null)<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;if(form.elements[i].editorApplet.name='lnaBody')<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;form.elements[i].editorApplet.setUIVisible(false);<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}<br>``` |
+| 6 | 如果你有时间，再创建两个按钮，分别命名为 **Tools Off** 和 **Tools On**。<br><br>以下是 **Tools Off** 按钮的代码：<br><br>```javascript
+<br>var form = document._Topic19;<br>for(i=0;i<form.elements.length;i++)<br>{<br>&nbsp;&nbsp;if(form.elements[i].editorApplet != null)<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;if(form.elements[i].editorApplet.name='lnaBody')<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;form.elements[i].editorApplet.setUIVisible(false);<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}<br>``` |
 | 7 | 从 **Tools Off** 按钮复制代码并粘贴到 **Tools On** 按钮中。<br><br>**Tools On** 按钮中的代码唯一需要更改的地方是将 `setUIVisible` 属性设置为 `true`。 |
 | 8 | 保存表单并在浏览器中预览以测试这些按钮。 |
 

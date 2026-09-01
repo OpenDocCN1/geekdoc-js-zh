@@ -1,5 +1,5 @@
 
-# Vue.js我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。核心：用于响应式 Web 开发 (JavaScript 框架)
+# Vue.js 核心：用于响应式 Web 开发 (JavaScript 框架)
 
 ![](img/image_rsrc933.jpg)
 
@@ -2403,7 +2403,7 @@ if (condVar > someVal) {console.log("xxx")}
 
 ---
 
-## Vue.js我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。与 APIs 模块
+## Vue.js 与 APIs 模块
 
 在`DataSubmission`组件中，创建了一个基础表单来收集新项目的用户输入。表单提交后，会向 API 端点发送 POST 请求，并在请求负载中包含新项目的名称。服务器的响应随后记录在控制台中。
 
@@ -5562,7 +5562,7 @@ axios({
 
 
 
-遵循最小权限原则对于安全 Vue.js我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。开发至关重要。具有限制范围的基于令牌身份验证确保用户仅访问其预期功能所需的资源。通过细心管理访问和权限，开发者可以缩小攻击面并减轻安全泄露的潜在影响。
+遵循最小权限原则对于安全 Vue.js 开发至关重要。具有限制范围的基于令牌身份验证确保用户仅访问其预期功能所需的资源。通过细心管理访问和权限，开发者可以缩小攻击面并减轻安全泄露的潜在影响。
 
 # 将 Vue.js 应用程序提升至坚固的高度
 
@@ -7428,7 +7428,7 @@ Docker 是一个平台，允许开发者将应用程序及其依赖项封装到�
 
 
 
-```dockerfile我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。FROM node:14
+```dockerfile FROM node:14
 
 # 设置工作目录
 WORKDIR /app
@@ -9021,7 +9021,8 @@ export default router;
 
 
 
-```javascript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。// Example of API integration in a Vue.js component
+```javascript
+ // Example of API integration in a Vue.js component
 ```
 
 `// components/ArticleList.vue`

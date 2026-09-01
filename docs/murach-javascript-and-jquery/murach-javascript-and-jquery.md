@@ -2109,7 +2109,8 @@ var lastName, state, zipCode; // 声明三个变量
 
 ### 如何声明字符串变量并为其赋值
 
-```javascriptvar firstName = "Ray", lastName = "Harris"; // 赋值两个字符串值
+```javascript
+var firstName = "Ray", lastName = "Harris"; // 赋值两个字符串值
 var fullName = lastName + " " + firstName; // fullName = "Harris, Ray"
 ```
 

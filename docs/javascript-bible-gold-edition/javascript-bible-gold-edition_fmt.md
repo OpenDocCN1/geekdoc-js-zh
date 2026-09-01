@@ -38937,7 +38937,8 @@ function selectSort(chooser) {
             drawTable()
 ```每一个特定的排序例程都是一个自动处理数组的函数。使用 JavaScript 的好处是，它允许对 `db` 中的任何属性进行排序。每个排序例程都是针对 `db` 中的属性。
 
-```javascript        } else {
+```javascript
+       } else {
             return (b.sales.Q3_2000.forecast - a.sales.Q3_2000.forecast)
         }
 }

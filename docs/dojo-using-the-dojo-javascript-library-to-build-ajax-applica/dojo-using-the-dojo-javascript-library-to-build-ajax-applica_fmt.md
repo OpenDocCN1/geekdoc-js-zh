@@ -2319,7 +2319,9 @@ dojo.connect(dojo.byId("btn1"), "onclick", handler);
 | 用法 | 使用 `dojo.require("dijit.form.Button");` 此类创建了一个按钮图标，点击时会显示其子元素。子元素可以是任何组件类型。该组件之所以这样命名，是因为它使创建下拉菜单变得非常简单。默认情况下，显示的内容出现在按钮正下方。 |
 | 显示示例 | ![DropDownButton with Menu showing a menu with Cut, Copy, Paste options] 这里的示例展示了组件在点击前后的样子。最右侧的图像显示了组件被点击后的样子。 |
 | HTML 标记示例 | 创建一个带有菜单的 `DropDownButton`：<br><br>```html<br><div dojoType="dijit.form.DropDownButton"><br>    <span>Menu</span><br>    <div dojoType="dijit.Menu"><br>        <div dojoType="dijit.MenuItem" iconClass="dijitEditorIcon dijitEditorIconCut">Cut</div><br>        <div dojoType="dijit.MenuItem" iconClass="dijitEditorIcon dijitEditorIconCopy">Copy</div><br>        <div dojoType="dijit.MenuItem" iconClass="dijitEditorIcon dijitEditorIconPaste">Paste</div><br>    </div><br></div><br>```<br><br>在此示例中，子组件是一个带有 `dijit.MenuItem` 组件的 `dijit.Menu`。由于 `iconClass` 属性，每个菜单项都获得了一个图标。这是 `Menu` 组件的特性，而非 `DropDownButton` 特有的。 |
-| JavaScript 构造函数示例 | 用于创建标签为 `"Menu"` 的新 `DropDownButton` 的构造函数：<br><br>```javascript<br>btn1 = new dijit.form.DropDownButton({label: "Menu"});<br>```<br><br>这段代码创建了组件，但必须将其作为某个 DOM 元素的子项附加，才能在页面上可见。为了使此组件发挥作用，你还必须附加一个在按钮激活时显示的子组件。假设你已经创建了一个带有项目的 `Menu` 组件（有关如何创建菜单的详细信息，请参阅 `dijit.Menu` 的描述），且对象名称为 `menu`。`DropDownButton` 提供了一个特殊属性将该组件附加到按钮上：<br><br>```javascript<br>btn1.dropDown = menu;<br>```<br><br>这是必要的，因为需要进行一些处理才能使组件隐藏，因此仅使用 `addChild()` 将新组件作为按钮的子项添加是不够的。 |
+| JavaScript 构造函数示例 | 用于创建标签为 `"Menu"` 的新 `DropDownButton` 的构造函数：<br><br>```javascript
+<br>btn1 = new dijit.form.DropDownButton({label: "Menu"});<br>```<br><br>这段代码创建了组件，但必须将其作为某个 DOM 元素的子项附加，才能在页面上可见。为了使此组件发挥作用，你还必须附加一个在按钮激活时显示的子组件。假设你已经创建了一个带有项目的 `Menu` 组件（有关如何创建菜单的详细信息，请参阅 `dijit.Menu` 的描述），且对象名称为 `menu`。`DropDownButton` 提供了一个特殊属性将该组件附加到按钮上：<br><br>```javascript
+<br>btn1.dropDown = menu;<br>```<br><br>这是必要的，因为需要进行一些处理才能使组件隐藏，因此仅使用 `addChild()` 将新组件作为按钮的子项添加是不够的。 |
 | 关键属性 | `dropDown(child)`：null：点击按钮时要显示的 `child` 组件的引用。请勿使用 `addChild()`。 |
 | 关键方法 | 此组件没有额外的公共方法，仅有从其父类继承的方法。 |
 | 关键样式 | 此组件没有额外的公共关键样式，仅有从其父类继承的样式。 |
@@ -2338,7 +2340,8 @@ dojo.connect(dojo.byId("btn1"), "onclick", handler);
 | 用法 | 此类创建了一个结合了 `dijit.form.Button` 和 `dijit.form.DropDownButton` 特性的按钮。当用户点击此组件上的向下箭头图标时，它充当 `DropDownButton` 并显示其子组件。当用户点击向下箭头内部的按钮时，此组件充当 `Button` 并运行其 `onclick` 事件处理程序。当某些默认行为可以与按钮绑定，而子组件则要求对该行为应用某些限制或进一步特性时，这非常有用。一个典型的例子是主按钮执行“保存”，而子组件执行“保存”或“另存为...”。 |
 | 显示示例 | ![ComboBoxButton](img/25bc7bed8f37e7f9f14fb449c3ba9a47_109_0.png) 最右侧的组件显示了如果用户点击组件上的向下箭头图标将显示的内容。 |
 | HTML 标记示例 | 创建一个带有菜单的 `ComboButton`：<br><br>```html<br><div dojoType="dijit.form.ComboBoxButton"><br>    <span>Save</span><br>    <div dojoType="dijit.Menu" id="saveSaveMenu"><br>        <div dojoType="dijit.MenuItemItem" iconClass="dijitEditorIcon dijitEditorIconSave">Save ▼</div><br>        <div dojoType="dijit.MenuItem">Save As</div><br>    </div><br></div><br>```<br><br>请记得在页面中包含 `dojo.require("dijit.Menu")` 以使用菜单。 |
-| JavaScript 构造函数示例 | 用于创建标签为 `"Click me"` 的新 `ComboBoxButton` 的构造函数：<br><br>```javascript<br>new dijit.form.ComboBoxButton({label: "Save"}, dojo.byId("form1"));<br>```<br><br>这段代码会自动将组件添加到 DOM 中 ID 为 `"form1"` 的现有组件中。如果你没有指定用于附加组件的节点，它将不会在页面上显示。 |
+| JavaScript 构造函数示例 | 用于创建标签为 `"Click me"` 的新 `ComboBoxButton` 的构造函数：<br><br>```javascript
+<br>new dijit.form.ComboBoxButton({label: "Save"}, dojo.byId("form1"));<br>```<br><br>这段代码会自动将组件添加到 DOM 中 ID 为 `"form1"` 的现有组件中。如果你没有指定用于附加组件的节点，它将不会在页面上显示。 |
 | 关键属性 | 此组件没有额外的公共属性，仅有从其父类继承的属性。 |
 | 关键方法 | 此组件没有额外的公共方法，仅有从其父类继承的方法。 |
 | 关键样式 | `dijitButtonText`：按钮标签的文本。<br><br>`dijitDownArrowButton`：向下箭头图标的类。 |
@@ -2357,7 +2360,8 @@ dojo.connect(dojo.byId("btn1"), "onclick", handler);
 | 用法 | 此类创建了一个可以处于两种状态（选中或未选中）的按钮。使用此组件为用户提供翻转某些内部状态的手段。它看起来像一个普通的 `Button`。然而，它具有内置功能，可以在切换状态时自动更改按钮 CSS 和图标 CSS。 |
 | 显示示例 | ![Simple Toggle Button: Toggle, Toggle] |
 | HTML 标记示例 | 创建一个简单的 `ToggleButton`：<br><br>```html<br><button dojoType="dijit.form.ToggleButton" iconClass="dijitCheckBoxIcon">Toggle</button><br>``` |
-| JavaScript 构造函数示例 | 用于创建标签为 `"Click me"` 的新 `ToggleButton` 的构造函数：<br><br>```javascript<br>new dijit.form.ToggleButton({label: "Toggle"}, dojo.byId("form1"));<br>```<br><br>这段代码会自动将组件添加到 DOM 中 ID 为 `"form1"` 的现有组件中。如果你没有指定用于附加组件的节点，它将不会在页面上显示。 |
+| JavaScript 构造函数示例 | 用于创建标签为 `"Click me"` 的新 `ToggleButton` 的构造函数：<br><br>```javascript
+<br>new dijit.form.ToggleButton({label: "Toggle"}, dojo.byId("form1"));<br>```<br><br>这段代码会自动将组件添加到 DOM 中 ID 为 `"form1"` 的现有组件中。如果你没有指定用于附加组件的节点，它将不会在页面上显示。 |
 | 关键属性 | `checked`：false：用于显示组件的状态。如果 `checked` 为 `true`，则按钮已被点击；如果为 `false`，则未被点击。如果按钮再次被点击，`checked` 将变为 `false`。请记住，这是一个切换按钮。<br><br>`iconClass`：null：描述按钮被点击时显示的图标的 CSS 样式。 |
 | 关键方法 | 此组件没有额外的公共方法，仅有从其父类继承的方法。 |
 | 关键样式 | 此组件没有额外的公共样式，仅有从其父类继承的样式。 |

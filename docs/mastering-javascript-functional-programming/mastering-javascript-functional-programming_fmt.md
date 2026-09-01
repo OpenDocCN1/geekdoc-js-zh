@@ -9289,7 +9289,8 @@ const view =
 const user = view(lensProp("user"), author);
 ```
 
-```javascript/*
+```javascript
+/*
 
 fkereki
 

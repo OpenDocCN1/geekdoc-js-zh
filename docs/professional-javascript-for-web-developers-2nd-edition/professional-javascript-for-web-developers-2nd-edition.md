@@ -20551,7 +20551,8 @@ function handleKeyPress(event) {
 
 更好的方法是将应用程序逻辑与事件处理器分离，使得每个部分都只处理其应该处理的内容。事件处理器应该查询事件对象以获取相关信息，然后将这些信息传递给处理应用程序逻辑的方法。例如，之前的代码可以重写为：
 
-```javascriptfunction validateValue(value) {
+```javascript
+function validateValue(value) {
   value = 5 * parseInt(value);
   if (value > 10) {
     document.getElementById("error-msg").style.display = "block";

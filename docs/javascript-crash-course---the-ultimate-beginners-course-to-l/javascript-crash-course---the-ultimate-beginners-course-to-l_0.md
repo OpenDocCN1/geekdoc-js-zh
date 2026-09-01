@@ -1608,7 +1608,8 @@ if (window.XMLHttpRequest) {
 
 现在你可以在整个代码中使用适当的请求，而无需每次都检查使用哪种请求。我们本质上是将 `requestType` 设置为这两个函数之一的值。现在让我们配置我们的请求。首先，我们创建对象。
 
-```javascriptvar request = new requestType("Microsoft.XMLHTTP");
+```javascript
+var request = new requestType("Microsoft.XMLHTTP");
 ```
 
 在这里，我们使用之前定义的 `requestType` 创建请求，参数为“Microsoft.XMLHTTP”。我们使用 `requestType` 创建了我们的请求。参数为“Microsoft.XMLHTTP”。这有点复杂，因为 `XMLHttpRequest` 默认没有参数。而 `ActiveXObject` 则有一个单个参数。这就是我们如何处理请求。下一步是定义当请求完成后应该做什么。要做到这一点，我们设置请求的 `onreadystatechange` 并将其设置为一个函数。

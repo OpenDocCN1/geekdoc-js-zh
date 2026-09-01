@@ -14908,7 +14908,8 @@ setAttribute(name, value)
 
 ## A.19.7 方法 (Microsoft Internet Explorer)
 
-```javascriptattachEvent(evtHandler, func)
+```javascript
+attachEvent(evtHandler, func)
 ```
 将函数 func（不带括号）设置为事件处理程序。字符串 evtHandler 定义了要处理的事件类型（例如 "onmouseover"）。
 

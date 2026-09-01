@@ -5087,7 +5087,8 @@ function join(x, set) {
 
 以下每个函数都将二叉树转换为列表。
 
-```javascript evenfunction tree_to_list_1(tree) {
+```javascript
+evenfunction tree_to_list_1(tree) {
   return is_null(tree)
     ? null
     : append(tree_to_list_1(left_branch(tree)),
@@ -18207,7 +18208,8 @@ function end_with_linkage(target, linkage, instruction_sequence) {
 
 字面量表达式和名称的代码生成器会构建指令序列，将所需的值赋予目标寄存器，然后按照链接描述符（linkage descriptor）指定的规格执行。
 
-```javascriptfunction compile_literal(component, target, linkage) {
+```javascript
+function compile_literal(component, target, linkage) {
   return end_with_linkage(target, linkage,
       make_instruction_sequence(
         null,

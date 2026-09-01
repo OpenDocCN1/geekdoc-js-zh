@@ -1231,7 +1231,8 @@ JavaScript 压缩器是某些工具，它们获取 JavaScript 源代码并将其
 
 重新声明这些变量的第二个原因主要围绕 `undefined` 对象展开。你会注意到 `undefined` 并没有显式地传递给函数。由于没有传递值，`undefined` 函数参数会被浏览器赋予 `undefined` 的默认值。对于任何没有传递显式值的函数参数，都是如此：
 
-```javascript befunction foo(a, b) {
+```javascript
+befunction foo(a, b) {
   console.log(a); // => 1
   console.log(b); // => undefined
 }

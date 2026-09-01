@@ -11878,7 +11878,8 @@ Turtle.prototype = new Log();
 Turtle.prototype.constructor = Turtle;
 ```
 
-```javascript // 覆盖 isCollision() 方法，使其行为与浮木
+```javascript
+// 覆盖 isCollision() 方法，使其行为与浮木
 //“类”中的方法相同，除非乌龟障碍物潜入水下的情况，
 // 在这种情况下，如果玩家角色位于这一行，则始终被视为碰撞
 Turtle.prototype.isCollision = function(characterPosition) {
@@ -11899,7 +11900,8 @@ Goal.prototype = new Row();
 Goal.prototype.constructor = Goal;
 ```
 
-```javascript // 覆盖 isCollision() 方法以检测玩家角色是否到达
+```javascript
+// 覆盖 isCollision() 方法以检测玩家角色是否到达
 // 此行中存储的某一个可用目标
 Goal.prototype.isCollision = function(characterPosition) {
   var index = 0;

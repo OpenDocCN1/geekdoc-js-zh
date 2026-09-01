@@ -2107,7 +2107,8 @@ fetch('https://api.example.com/data')
 
 -   要使用 `POST` 请求发送数据，你可以包含一个选项对象，将 `method` 设置为 `POST` 并在 `body` 中提供数据。
 
-```javascriptfetch('https://api.example.com/data',
+```javascript
+fetch('https://api.example.com/data',
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'
@@ -2127,7 +2128,8 @@ fetch('https://api.example.com/data')
 
 -   `fetch` API 返回一个 `Response` 对象。要从响应中提取数据，你可以使用如 `json()` 处理 JSON、`text()` 处理纯文本或 `blob()` 处理二进制数据的方法。
 
-```javascriptfetch('https://api.example.com/data')
+```javascript
+fetch('https://api.example.com/data')
 .then(response => response.json())
 .then(data => console.log(data))
 .catch(error => console.error('Fetch error:', error));
@@ -2137,7 +2139,8 @@ fetch('https://api.example.com/data')
 
 -   `catch` 块处理 fetch 过程中可能发生的错误。在第一个 `then` 块中检查 `response.ok` 有助于识别 HTTP 错误。
 
-```javascriptfetch('https://api.example.com/data')
+```javascript
+fetch('https://api.example.com/data')
 .then(response => {
   if (!response.ok) {
     throw new Error(`HTTP error! Status: ${response.status}`);

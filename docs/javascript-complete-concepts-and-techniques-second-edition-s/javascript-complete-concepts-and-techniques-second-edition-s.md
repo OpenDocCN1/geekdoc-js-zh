@@ -3300,7 +3300,8 @@ if (isNaN(amount)) {
 alert("The loan amount is not a number!");
 document.MortCalc.focus();
 }
-```javascriptjavascript
+```javascript
+javascript
 var amount=document.MortCalc.Amount.value;
 var rate=document.MortCalc.Rate.value;
 var years=document.MortCalc.Years.value;

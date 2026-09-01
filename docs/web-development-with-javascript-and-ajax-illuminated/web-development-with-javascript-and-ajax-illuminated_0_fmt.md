@@ -1,5 +1,5 @@
 
-# JavaScript 和 Ajax Web 开发指南我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。![](img/cover.jpeg)
+# JavaScript 和 Ajax Web 开发指南 ![](img/cover.jpeg)
 
 ![images](img/logo.jpg)
 
@@ -168,7 +168,7 @@ TK5105.8885.A52W43 2009
 
 
 
-![images](img/25a0.jpg) `query`—可选的查询我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。供 Web 服务器解释的信息。它用于提供路径中未包含的额外信息，或向 Web 服务器提交文本数据。查询可以包含多个由 `&`（和符号）分隔的 `name=value` 对。每个名称通过 `=`（等号）与其关联的值隔开。
+![images](img/25a0.jpg) `query`—可选的查询 供 Web 服务器解释的信息。它用于提供路径中未包含的额外信息，或向 Web 服务器提交文本数据。查询可以包含多个由 `&`（和符号）分隔的 `name=value` 对。每个名称通过 `=`（等号）与其关联的值隔开。
 
 ![images](img/25a0.jpg) `fragment`—可选的片段用于识别文档内的某个位置。这部分实际上是由浏览器而非 Web 服务器使用的，用于将您带到文档中的特定位置。`#`（井号）用于将片段与 URI 的其余部分分开。
 
@@ -1319,7 +1319,7 @@ XML 文档可以在文本中使用`&entityName;`语法来表示关联的字符�
 
 
 
-假设一个 XML 方言通过 XML Schema 文件 `schemaFile.xsd` 指定，且未使用目标命名空间，该 Schema 文件的 URL 为 `schemaFileURL`，可以我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。本地文件系统路径（如 `schemaFile.xsd`），也可以是 Web URL（如 `http://csis.pace.edu/schemaFile.xsd`）。该方言的实例文档可以通过以下结构与 XML Schema 声明关联，其中 `rootTag` 是根元素的名称，`xsi` 被定义为 `XML Schema Instance` 的命名空间前缀，后者包含一个 `noNamespaceSchemaLocation` 属性，用于指定未使用目标命名空间的 XML Schema 文件的位置。
+假设一个 XML 方言通过 XML Schema 文件 `schemaFile.xsd` 指定，且未使用目标命名空间，该 Schema 文件的 URL 为 `schemaFileURL`，可以 本地文件系统路径（如 `schemaFile.xsd`），也可以是 Web URL（如 `http://csis.pace.edu/schemaFile.xsd`）。该方言的实例文档可以通过以下结构与 XML Schema 声明关联，其中 `rootTag` 是根元素的名称，`xsi` 被定义为 `XML Schema Instance` 的命名空间前缀，后者包含一个 `noNamespaceSchemaLocation` 属性，用于指定未使用目标命名空间的 XML Schema 文件的位置。
 
 ![images](img/77_2.jpg)
 
@@ -2123,7 +2123,7 @@ JavaScript 中的继承是通过函数的原型对象（prototype object）实�
 
 
 
-JavaScript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。可能是 Web 上最流行的脚本语言，但它不是唯一的语言。因此，HTML 规范为了保持语言中立，允许你告诉浏览器 `<script>` 标签中使用了哪种语言。你通过声明 MIME 类型来识别你正在使用的语言。JavaScript 的 MIME 类型传统上是 `text/javascript`；然而，由于 JavaScript 程序并不是真正的文本文档，互联网标准已经废弃了该类型，转而采用 `application/javascript`。遗憾的是，对 `application/javascript` 的支持尚未完全普及。
+JavaScript 可能是 Web 上最流行的脚本语言，但它不是唯一的语言。因此，HTML 规范为了保持语言中立，允许你告诉浏览器 `<script>` 标签中使用了哪种语言。你通过声明 MIME 类型来识别你正在使用的语言。JavaScript 的 MIME 类型传统上是 `text/javascript`；然而，由于 JavaScript 程序并不是真正的文本文档，互联网标准已经废弃了该类型，转而采用 `application/javascript`。遗憾的是，对 `application/javascript` 的支持尚未完全普及。
 
 你可以使用 `<meta>` 标签如下指定 HTML 文件中所有脚本的默认脚本语言：
 
@@ -2876,7 +2876,7 @@ W3C 推荐。HTML 4.01 规范。1999 年 12 月 24 日。[www.w3.org/TR/html401/
 
 [¹⁴]: [`developer.mozilla.org/en/docs/Gecko_DOM_Reference`](http://developer.mozilla.org/en/docs/Gecko_DOM_Reference)
 
-[¹⁵]: `alert()`我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。 `BOM`（后文将讨论）的一个函数，Web 浏览器中的可用。它会显示一个带有给定消息的对话框。
+[¹⁵]: `alert()`  `BOM`（后文将讨论）的一个函数，Web 浏览器中的可用。它会显示一个带有给定消息的对话框。
 
 [¹⁶]: [`developer.mozilla.org/en/docs/Core_JavaScript_1.5_Reference:Global_Objects:Function:call#Example_Using_call_to_chain_constructors_for_an_object`](http://developer.mozilla.org/en/docs/Core_JavaScript_1.5_Reference:Global_Objects:Function:call#Example_Using_call_to_chain_constructors_for_an_object)
 
@@ -2975,7 +2975,7 @@ Ajax 盛名的真正驱动力是 `XMLHttpRequest` 对象。`XMLHttpRequest` 允�
 
 
 
-你并不希望在页面上嵌入所有可能的品牌和型号，因为这会让页面变得大得多，从而导致加载变慢。你还希望在用户提交表单之前检查年份和邮政编码是否有效，但你希望将验证逻辑集中在服务器上，并且你倾向于在输入每个值后立即我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。其进行验证，而不是等到整个表单提交。你可以编写 JavaScript 代码直接在浏览器中验证用户输入。然而，Web 辟的最佳实践规定，如果你在客户端验证了用户输入，也也应该在服务器上对该数据进行验证，以确保数据没有被篡改。这意味着你需要用两种不同的语言编写验证逻辑：用于客户端的 JavaScript 和你在服务器上使用的语言。用两种不同的语言编写两份验证逻辑会增加你的开发和维护工作。
+你并不希望在页面上嵌入所有可能的品牌和型号，因为这会让页面变得大得多，从而导致加载变慢。你还希望在用户提交表单之前检查年份和邮政编码是否有效，但你希望将验证逻辑集中在服务器上，并且你倾向于在输入每个值后立即 其进行验证，而不是等到整个表单提交。你可以编写 JavaScript 代码直接在浏览器中验证用户输入。然而，Web 辟的最佳实践规定，如果你在客户端验证了用户输入，也也应该在服务器上对该数据进行验证，以确保数据没有被篡改。这意味着你需要用两种不同的语言编写验证逻辑：用于客户端的 JavaScript 和你在服务器上使用的语言。用两种不同的语言编写两份验证逻辑会增加你的开发和维护工作。
 
 ![images](img/ch0502.jpg)
 
@@ -3191,7 +3191,7 @@ Ajax 开发中最常用的响应格式有 XML（这并不意外意奇）、HTML�
 
 
 
-在第我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。5.2.2 节中已经给出使用 HTML 作为响应格式的示例，其中我们使用了非标准的 `innerHTML` 属性。在该示例中，服务器的响应是一串 HTML `<option>` 标签。使用 `innerHTML` 使处理该响应变得简单，因为我们只需要将选项字符串分配给 `<select>` 标签的 `innerHTML` 属性，浏览器就会完成将字符串解析为 DOM 对象的工作。
+在第 5.2.2 节中已经给出使用 HTML 作为响应格式的示例，其中我们使用了非标准的 `innerHTML` 属性。在该示例中，服务器的响应是一串 HTML `<option>` 标签。使用 `innerHTML` 使处理该响应变得简单，因为我们只需要将选项字符串分配给 `<select>` 标签的 `innerHTML` 属性，浏览器就会完成将字符串解析为 DOM 对象的工作。
 
 `innerHTML` 属性的优点是易用且浏览器处理速度快。使用 `innerHTML` 的一个缺点是它还不是标准属性（目前——它正在被添加到 HTML 5 规范中）。如果你遵循最佳实践，通常会尝试避免非标准的浏览器功能，因为非标准功能在所有浏览器中的支持程度较低，且跨浏览器的行为不统一。有人可能会认为，使用 `innerHTML` 的另一个缺点是允许用户分配不符合标准的 HTML，这可能会破坏 DOM 树。例如，你的 HTML 字符串可能缺少闭合标签。
 
@@ -3357,7 +3357,7 @@ JSON 中的对象被声明为一组封装在大括号 `{}` 内的键值对。对
 
 
 
-在浏览器广泛支持或使用`XML-HttpRequest`对象之前，开发者就已经使用隐藏帧（frames）向服务器发送请求，而无需重新加载用户正在查看的页面。`<frame>`和`<iframe>`标签在我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。1998 年 4 月的 HTML 4.0 版本中成为了官方规范的一部分。
+在浏览器广泛支持或使用`XML-HttpRequest`对象之前，开发者就已经使用隐藏帧（frames）向服务器发送请求，而无需重新加载用户正在查看的页面。`<frame>`和`<iframe>`标签在 1998 年 4 月的 HTML 4.0 版本中成为了官方规范的一部分。
 
 帧本质上是嵌入浏览器主窗口的窗口。帧与主窗口是独立的，因为它们可以加载完整的 HTML 页面，而不影响浏览器其他部分加载的内容。你可以使用 CSS 隐藏帧，并使用 JavaScript 动态将内容加载到隐藏帧中，而用户无感知。
 
@@ -3560,7 +3560,7 @@ W3C 起草了另一个同源策略的例外，并由 Firefox 3 实施了它。�
 
 
 
-由于这些技术尚未被浏览器广泛支持，你可能在想现在如何通过`XMLHttpRequest`从另一个站点拉取内容或数据。Web 开发者使用的常用解决方案是在服务器上放置一个代理，转发你我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。另一个站点的请求。在这种解决方案中，你（浏览器）向你想联系的站点 URL 发起`XMLHttpRequest`。你的服务器看到你想从另一个获取数据，因此服务器为你向该 URL 发起请求并将响应返回给你（浏览器）。因此，是服务器而不是浏览器了跨站请求。
+由于这些技术尚未被浏览器广泛支持，你可能在想现在如何通过`XMLHttpRequest`从另一个站点拉取内容或数据。Web 开发者使用的常用解决方案是在服务器上放置一个代理，转发你 另一个站点的请求。在这种解决方案中，你（浏览器）向你想联系的站点 URL 发起`XMLHttpRequest`。你的服务器看到你想从另一个获取数据，因此服务器为你向该 URL 发起请求并将响应返回给你（浏览器）。因此，是服务器而不是浏览器了跨站请求。
 
 ## 5.6 完整示例
 
@@ -3671,7 +3671,7 @@ Ajax 的流行是因为它提供了工具，可以将网站转换为具有桌面
 
 
 
-你必须使用 HTTP 来封装发送到服务器的请求和给客户端的响应，但你在 HTTP 请求体中包含的数据类型由你决定。本章涵盖了最常用的几种数据格式：`HTML`、`XML`、`JSON` 和纯文本。`HTML` 的优点我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。可以直接赋值给 `HTML DOM` 元素的 `innerHTML` 属性。`XML` 的优势是具有灵活性、可读性，而且浏览器会自动为你解析 `XML` 数据。`JSON` 的优势是轻量级、带宽消耗低，并且在 `JavaScript` 中可以被直接执行和使用。纯文本的优势是简单，非常适合小段数据，例如可以直接赋值给接受 `TextNode` 节点的 `DOM` 元素的 `innerHTML` 属性的单条消息。
+你必须使用 HTTP 来封装发送到服务器的请求和给客户端的响应，但你在 HTTP 请求体中包含的数据类型由你决定。本章涵盖了最常用的几种数据格式：`HTML`、`XML`、`JSON` 和纯文本。`HTML` 的优点 可以直接赋值给 `HTML DOM` 元素的 `innerHTML` 属性。`XML` 的优势是具有灵活性、可读性，而且浏览器会自动为你解析 `XML` 数据。`JSON` 的优势是轻量级、带宽消耗低，并且在 `JavaScript` 中可以被直接执行和使用。纯文本的优势是简单，非常适合小段数据，例如可以直接赋值给接受 `TextNode` 节点的 `DOM` 元素的 `innerHTML` 属性的单条消息。
 
 `Ajax` 和 `Ajax-like` 技术的未来是光明的。从现在开始它只会变得更好、更有趣。例如，在本章中我们还讨论了一种名为 `HTTP Streaming` 的较新技术，数据被推送到客户端——这与 `HTTP` 基础模型相反的模型。`Dojo JavaScript` 工具包的共同创建者 Alex Russell 了 `Comet` 一词来描述这种不断演变的基于 Web 的推送架构，并在该名称下它受到了最多的关注和开发。`Comet` 这个词是 `Ajax` 的双关——`Ajax` 和 `Comet` 都是常见的家用清洁剂。一些使用 `Comet` 的知名应用包括 `Meebo` 网络聊天应用和内置在 `Gmail` 中的谷歌聊天。
 
@@ -4170,7 +4170,7 @@ Dojo 部件提供的比 JavaScript 更多的许多高级验证和辅助功能。
 
 ![images](img/ch06fig05.jpg)
 
-将打开一个新窗口，然后选择 `Web` 和 `Web Application`，然后点击 `Next`我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。继续。在新的对话框中，为你的项目命名并选择一个位置。完成后按 `Finish`。
+将打开一个新窗口，然后选择 `Web` 和 `Web Application`，然后点击 `Next` 继续。在新的对话框中，为你的项目命名并选择一个位置。完成后按 `Finish`。
 
 ![images](img/ch06fig06.jpg)
 
@@ -4616,7 +4616,7 @@ Anley (2002) 对 SQL 注入攻击及其变体进行了全面的检查。在实�
 
 
 
-`[GardenMail.com](http://www.GardenMail.com)` 提供了一种名为“虚拟花朵”的特殊服务，这在类似的 Web 邮箱系统中我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。没有。该服务允许用户在邮件中嵌入花图片。为此，在`[GardenMail.com](http://www.GardenMail.com)`的编写邮件页面上，有一个搜索框，允许用户通过输入花名或预期用途来搜索花图片。一旦点击搜索按钮，请求将通过`XHR`发送到服务器。服务器将返回一段 HTML 代码段，并将其嵌入邮件正文中。例如，如果用户尝试搜索适合作为生日礼物的花，将生成以下 HTML 代码段并插入用户的邮件中。在服务端，还有另一个名为`getFlower`的 servlet。该 servlet 接收一个查询（形式为 GET 参数`q`）并显示从服务器数据库检索的花卉图像。
+`[GardenMail.com](http://www.GardenMail.com)` 提供了一种名为“虚拟花朵”的特殊服务，这在类似的 Web 邮箱系统中 没有。该服务允许用户在邮件中嵌入花图片。为此，在`[GardenMail.com](http://www.GardenMail.com)`的编写邮件页面上，有一个搜索框，允许用户通过输入花名或预期用途来搜索花图片。一旦点击搜索按钮，请求将通过`XHR`发送到服务器。服务器将返回一段 HTML 代码段，并将其嵌入邮件正文中。例如，如果用户尝试搜索适合作为生日礼物的花，将生成以下 HTML 代码段并插入用户的邮件中。在服务端，还有另一个名为`getFlower`的 servlet。该 servlet 接收一个查询（形式为 GET 参数`q`）并显示从服务器数据库检索的花卉图像。
 
 ![images](img/313_1.jpg)
 
@@ -5534,7 +5534,7 @@ Java Servlet`lockItem`被 JavaScript 函数`lockItem()`调用，用于锁定物�
 
 
 
-最后一节将为你介绍由 `Dojo` 框架提供的拖放功能。你将使用 Google Maps 的地理编码服务来开发一个华丽的行程规划器。用户可以拖放行程项目，而你的行程规划器可以自动汇总行程中每个站点的到达和离开时间列表。所有高级功能都在客户端实现。你将学习如何使用级联样式、事件触发以及 JavaScript 与 `JSON`我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。之间的数据转换。
+最后一节将为你介绍由 `Dojo` 框架提供的拖放功能。你将使用 Google Maps 的地理编码服务来开发一个华丽的行程规划器。用户可以拖放行程项目，而你的行程规划器可以自动汇总行程中每个站点的到达和离开时间列表。所有高级功能都在客户端实现。你将学习如何使用级联样式、事件触发以及 JavaScript 与 `JSON` 之间的数据转换。
 
 开发计划如下：
 
@@ -5784,7 +5784,7 @@ Web 3.0 将 Web 上的所有信息链接并合并为一个全局数据库。在 
 
 数据模型中的提交元素描述了`XForm`如何提交数据。在前面的示例中，`id="form1"`属性标识表单，`action="myXForm.jsp"`属性定义了处理表单的 URL，`method="get"`属性定义了类型，以便服务器知道如何响应。
 
-###我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。9.2.1.2 XForms 用户界面
+### 9.2.1.2 XForms 用户界面
 
 `XForms`用户界面显示由`XForms`模型元素收集的数据输入。它关注表单的外观和感受。`XForms`中的用户界面元素被称为输入控件。它们的定义方式与普通的`HTML`控件相同，但它们引用了模型元素中定义的数据项。
 
@@ -5948,7 +5948,7 @@ RDF 通过类、属性和值来描述资源。简单来说，RDF Schema（`RDFS`
 
 ![images](img/420_1a.jpg)
 
-基于 `animal-world.rdf` 中指定的哺乳动物类，你可以声明 `tiger`我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。资源是 `mammal`（哺乳动物）类的子类：
+基于 `animal-world.rdf` 中指定的哺乳动物类，你可以声明 `tiger` 资源是 `mammal`（哺乳动物）类的子类：
 
 ![images](img/420_2a.jpg)
 

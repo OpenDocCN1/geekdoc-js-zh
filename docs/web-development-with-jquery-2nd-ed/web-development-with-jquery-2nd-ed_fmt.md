@@ -1,5 +1,5 @@
 
-# jQuery Web 开发指南（第我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。2 版）
+# jQuery Web 开发指南（第 2 版）
 
 Richard York
 
@@ -1079,7 +1079,7 @@ function(event){window.open(this.href, "picture");
 
 
 
-规则禁止在单个空格中使用制表符（`tabs`），尽管从技术上讲，与四个单独空格相比，一个制表符字符增加的文件字节更少。“禁止制表符”规则的存在我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。因为文本应用程序对制表符的解释存在巨大差异。某些文本应用程序认为制表符等于八个空格，而另一些仍然允许你显式定义制表符的大小。这些差异导致制表符在今天用于间距时变得不可靠。大多数专业的集成开发环境（`IDE`）都允许你将键盘上的 `[Tab]` 键定义为多个空格，同时允许你定义插入多少个空格。
+规则禁止在单个空格中使用制表符（`tabs`），尽管从技术上讲，与四个单独空格相比，一个制表符字符增加的文件字节更少。“禁止制表符”规则的存在 因为文本应用程序对制表符的解释存在巨大差异。某些文本应用程序认为制表符等于八个空格，而另一些仍然允许你显式定义制表符的大小。这些差异导致制表符在今天用于间距时变得不可靠。大多数专业的集成开发环境（`IDE`）都允许你将键盘上的 `[Tab]` 键定义为多个空格，同时允许你定义插入多少个空格。
 
 `IDE` 的示例包括 Code、Adobe Dreamweaver、Eclipse、Zend Studio 和 Microsoft Visual Studio：这些都是用于直接编写或生成源代码的开发环境。此外，大多数 `IDE` 都会尝试通过智能调整空格数量来猜测你编写源码时的意图。例如，当你按下 `[Return]` 在源代码文档中开始新行时，`IDE` 插入的新行会至少包含与前一行等量的空格。大多数 `IDE` 默认都是这样运行的。Dreamweaver 在你按下 `[Tab]` 键时会自动插入两个空格。Code、Eclipse 和 Zend Studio 都可以配置为在按下 `[Tab]` 键时插入空格而非制表符。
 
@@ -1329,7 +1329,7 @@ jQuery 中的选择器 API 非常简单。正如第 1 章“jQuery 简介”中�
 
 
 
-```html我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。<!DOCTYPE html>
+```html <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="content-type" content="application/html+xml; charset=utf-8" />
@@ -2712,7 +2712,7 @@ div#finderActions {
 
 
 
-```css我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。  position: absolute;
+```css   position: absolute;
   bottom: 1px;
   right: 10px;
   z-index: 2;
@@ -3405,7 +3405,7 @@ $('#buttondocumenthasClass').click(function() {
 
 
 
-图我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。4-7 显示了当类存在时显示的警框消息。
+图 4-7 显示了当类存在时显示的警框消息。
 
 `removeClass()` 方法通过第三个 `<button>` 元素演示；如果类已添加，则将其移除。如果该类不存在，则什么都不会发生。与 `addClass()` 方法一样，`removeClass()` 方法可以接受多个类名，而且与 `addClass()` 方法一样，使用空格字符分隔多个类名。当类被移除时，你会看到与图 4-5 所示相同的表格。
 
@@ -7757,7 +7757,7 @@ $(document).ready(
 
 
 
-上述脚本产生了你在图我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。8-2 中看到的文档。
+上述脚本产生了你在图 8-2 中看到的文档。
 
 ![](img/70183977c44f8aac19c8da40c23dbf89_262_0.png)
 
@@ -8470,7 +8470,7 @@ $fn.extend({
 
 `y = document.body.clientHeight;`
 
-`}`我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。`return {`
+`}` `return {`
 
 `x: x,`
 
@@ -16507,7 +16507,7 @@ $('.toolbar-ddl').change(function() {
 
 
 
-```html我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。<option value='4'>Big</option>
+```html <option value='4'>Big</option>
 
 <option value='5'>Big</option>
 
@@ -18095,7 +18095,7 @@ serializeArray()
 
 
 
-将所有表单和表单元素序列化为 JSON我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。结构。
+将所有表单和表单元素序列化为 JSON 结构。
 
 `Array`
 
@@ -19731,7 +19731,7 @@ headers: {
 
 
 
-#我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。表格选项
+# 表格选项
 
 | 选项 | 描述 | 类型 |
 | --- | --- | --- |

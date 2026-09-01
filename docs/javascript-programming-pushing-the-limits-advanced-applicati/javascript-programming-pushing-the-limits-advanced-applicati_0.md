@@ -8063,7 +8063,8 @@ switch( window.orientation ) {
 
 横屏模式可以是 `90` 或 `-90` 度，取决于设备旋转的方向。此外，你可以使用 `window.onorientationchange` 跟踪设备方向的变化：
 
-```javascriptwindow.onorientationchange = function() {
+```javascript
+window.onorientationchange = function() {
   alert('新方向：' + window.orientation);
 };
 ```

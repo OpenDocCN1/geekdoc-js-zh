@@ -18159,7 +18159,8 @@ var form = document.getElementById("form1");
 
 页面上的所有表单也可以从 `document.forms` 集合中获取。可以通过数字索引和名称在内该集合中访问每个表单，如下例所示：
 
-```javascriptvar firstForm = document.forms[0];      //获取页面上的第一个表单
+```javascript
+var firstForm = document.forms[0];      //获取页面上的第一个表单
 var myForm = document.forms["form2"];   //通过名称为 "form2" 获取表单
 ```
 

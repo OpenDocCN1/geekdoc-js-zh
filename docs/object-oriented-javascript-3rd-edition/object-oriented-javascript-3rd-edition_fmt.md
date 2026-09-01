@@ -10761,7 +10761,8 @@ for (e of a.entries()) {
 |---|---|
 | `Array.prototype.keys()` | 返回回调返回 true 的第一个元素。如果没有这样的元素，则返回 `undefined`：<br>`> [1, 2, 3].find(x => x < 0)` |
 | `Array.prototype.values()` | 返回回调返回 true 的第一个元素的索引。如果没有这样的元素，则返回 `-1`：<br>`> [1, 2, 3].find(x => x > 0)` |
-| `Array.prototype.fill(value, start, end?)` | 用给定值填充数组：<br>```javascript<br>const arr = ['a', 'b', 'c'];<br>arr.fill(7)<br>// [7, 7, 7]<br>// 你可以指定开始和结束范围。<br>['a', 'b', 'c'].fill(7, 1, 2)<br>// ['a', 7, 'c']<br>``` |
+| `Array.prototype.fill(value, start, end?)` | 用给定值填充数组：<br>```javascript
+<br>const arr = ['a', 'b', 'c'];<br>arr.fill(7)<br>// [7, 7, 7]<br>// 你可以指定开始和结束范围。<br>['a', 'b', 'c'].fill(7, 1, 2)<br>// ['a', 7, 'c']<br>``` |
 
 ## Function
 
@@ -10793,7 +10794,8 @@ function sum(a, b) {
 
 | 属性/方法 | 说明 |
 |---|---|
-| `apply(this_obj, params_array)` | 允许你在覆盖另一个函数的同时调用另一个函数。`apply()` 接收的第一个参数是绑定到此函数的对象，第二个参数是发送给被调用函数的参数数组：<br>```javascript<br>function wasIt() {<br>  return this.toString();<br>}<br>var myObj = {};<br>wasIt.apply(myObj);<br>// "[object Object]"<br>wasIt.apply(window);<br>// "[object Window]"<br>``` |
+| `apply(this_obj, params_array)` | 允许你在覆盖另一个函数的同时调用另一个函数。`apply()` 接收的第一个参数是绑定到此函数的对象，第二个参数是发送给被调用函数的参数数组：<br>```javascript
+<br>function wasIt() {<br>  return this.toString();<br>}<br>var myObj = {};<br>wasIt.apply(myObj);<br>// "[object Object]"<br>wasIt.apply(window);<br>// "[object Window]"<br>``` |
 | `call(this_obj, p1, p2, p3, ...)` | 与 `apply()` 相同，但逐个接受参数，而不是数组。 |
 | `length` | 函数期望的参数数量：<br>`> parseInt.length;`<br>`2`<br>如果你忘记了 `call()` 和 `apply()` 的区别：<br>`> Function.prototype.call.length;`<br>`// 1`<br>`> Function.prototype.apply.length;`<br>`// 2`<br>`call()` 属性的长度为 1，因为第一个参数以外的所有参数都是可选的。 |
 
@@ -11093,9 +11095,11 @@ var re = /[dn]o+dle/gmi; // 推荐
 | `global` | 如果在创建正则对象时设置了 `g` 修饰符，则为只读 `true`。 |
 | `ignoreCase` | 只读。如果在创建正则对象时设置了 `i` 修饰符，则为 `true`。 |
 | `multiline` | 只读。如果在创建正则对象时设置了 `m` 修饰符，则为 `true`。 |
-| `lastIndex` | 包含字符串中下一个匹配应该开始的位置。`test()` 和 `exec()` 在成功匹配后会更新此位置。仅在使用了 `g`（全局）修饰符时有效：<br>```javascript<br>> var re = /[dn]o+dle/g;<br>> re.lastIndex;<br>0<br>> re.exec("noodle doodle");<br>["noodle"]<br>> re.lastIndex;<br>6<br>> re.exec("noodle doodle");<br>["doodle"]<br>> re.lastIndex;<br>13<br>> re.exec("noodle doodle");<br>null<br>> re.lastIndex;<br>0<br>``` |
+| `lastIndex` | 包含字符串中下一个匹配应该开始的位置。`test()` 和 `exec()` 在成功匹配后会更新此位置。仅在使用了 `g`（全局）修饰符时有效：<br>```javascript
+<br>> var re = /[dn]o+dle/g;<br>> re.lastIndex;<br>0<br>> re.exec("noodle doodle");<br>["noodle"]<br>> re.lastIndex;<br>6<br>> re.exec("noodle doodle");<br>["doodle"]<br>> re.lastIndex;<br>13<br>> re.exec("noodle doodle");<br>null<br>> re.lastIndex;<br>0<br>``` |
 | `source` | 只读。返回正则表达式模式（不含修饰符）：<br>`> var re = /[dn]o+dle/gmi;`<br>`> re.source;`<br>`"[dn]o+dle"` |
-| `exec(string)` | 使用正则表达式匹配输入字符串。成功匹配时返回一个包含匹配项和任何捕获组的数组。带有 `g` 修饰符时，它匹配第一个出现的位置并设置 `lastIndex` 属性。无匹配时返回 `null`：<br>```javascript<br>> var re = /([dn])(o+)dle/g;<br>> re.exec("noodle doodle");<br>["noodle", "n", "oo"]<br>> re.exec("noodle doodle");<br>["doodle", "d", "oo"]<br>```<br>`exec()` 返回的数组有两个额外属性：`index`（匹配项的索引）和 `input`（被搜索字符串）。 |
+| `exec(string)` | 使用正则表达式匹配输入字符串。成功匹配时返回一个包含匹配项和任何捕获组的数组。带有 `g` 修饰符时，它匹配第一个出现的位置并设置 `lastIndex` 属性。无匹配时返回 `null`：<br>```javascript
+<br>> var re = /([dn])(o+)dle/g;<br>> re.exec("noodle doodle");<br>["noodle", "n", "oo"]<br>> re.exec("noodle doodle");<br>["doodle", "d", "oo"]<br>```<br>`exec()` 返回的数组有两个额外属性：`index`（匹配项的索引）和 `input`（被搜索字符串）。 |
 | `test(string)` | 与 `exec()` 相同但仅返回 `true` 或 `false`：<br>`> /noo/.test('Noodle')`<br>`false`<br>`> /noo/i.test('Noodle')`<br>`true` |
 
 # 错误对象
@@ -11138,8 +11142,11 @@ JSON 代表 JavaScript 对象表示（JavaScript Object Notation）。它是一�
 
 | 方法 | 说明 |
 |---|---|
-| `parse(text, callback)` | 接收 JSON 编码字符串并返回一个对象：<br>```javascript<br>> var data = '{"hello": 1, "hi": [1, 2, 3]}';<br>> var o = JSON.parse(data);<br>> o.hello;<br>1<br>> o.hi;<br>[1, 2, 3]<br>```<br>可选的回调函数允许你提供自己的函数来检查和修改结果。回调函数接收键值对参数，并可以修改或删除值（通过返回 `undefined`）。<br>```javascript<br>> function callback (key, value) {<br>  console.log(key, value);<br>  if (key === 'hello') {<br>    return 'bonjour';<br>  }<br>  if (key === 'hi') {<br>    return undefined;<br>  }<br>  return value;<br>}<br>> var o = JSON.parse(data, callback);<br>hello 1<br>0 1<br>1 2<br>2 3<br>hi [1, 2, 3]<br>Object ({hello: "bonjour"})<br>> o.hello;<br>"bonjour"<br>> 'hi' in o;<br>false<br>``` |
-| `stringify(value, callback, white)` | 接收任何值（最常见的是对象或数组）并将其编码为 JSON 字符串。<br>```javascript<br>> var o = {<br>  hello: 1,<br>  hi: 2,<br>  date: new Date()<br>};<br>> JSON.stringify(o);<br>'{"hello":1,"hi":2,"date":"2015-01-01T00:00:00.000Z"}'<br>```<br>第二个参数允许你提供回调函数（或白名单数组）来自定义返回值。白名单包含你感兴趣的键：<br>`> JSON.stringify(o, ['hello', 'hi']);`<br>`'{"hello":1,"hi":2}'`<br>最后一个参数帮助你获取人类可读的版本：<br>`> JSON.stringify(o, null, 4);`<br>`'{\n    "hello": 1,\n    "hi": 2,\n    "date": "2015-01-01T00:00:00.000Z"\n}'` |
+| `parse(text, callback)` | 接收 JSON 编码字符串并返回一个对象：<br>```javascript
+<br>> var data = '{"hello": 1, "hi": [1, 2, 3]}';<br>> var o = JSON.parse(data);<br>> o.hello;<br>1<br>> o.hi;<br>[1, 2, 3]<br>```<br>可选的回调函数允许你提供自己的函数来检查和修改结果。回调函数接收键值对参数，并可以修改或删除值（通过返回 `undefined`）。<br>```javascript
+<br>> function callback (key, value) {<br>  console.log(key, value);<br>  if (key === 'hello') {<br>    return 'bonjour';<br>  }<br>  if (key === 'hi') {<br>    return undefined;<br>  }<br>  return value;<br>}<br>> var o = JSON.parse(data, callback);<br>hello 1<br>0 1<br>1 2<br>2 3<br>hi [1, 2, 3]<br>Object ({hello: "bonjour"})<br>> o.hello;<br>"bonjour"<br>> 'hi' in o;<br>false<br>``` |
+| `stringify(value, callback, white)` | 接收任何值（最常见的是对象或数组）并将其编码为 JSON 字符串。<br>```javascript
+<br>> var o = {<br>  hello: 1,<br>  hi: 2,<br>  date: new Date()<br>};<br>> JSON.stringify(o);<br>'{"hello":1,"hi":2,"date":"2015-01-01T00:00:00.000Z"}'<br>```<br>第二个参数允许你提供回调函数（或白名单数组）来自定义返回值。白名单包含你感兴趣的键：<br>`> JSON.stringify(o, ['hello', 'hi']);`<br>`'{"hello":1,"hi":2}'`<br>最后一个参数帮助你获取人类可读的版本：<br>`> JSON.stringify(o, null, 4);`<br>`'{\n    "hello": 1,\n    "hi": 2,\n    "date": "2015-01-01T00:00:00.000Z"\n}'` |
 
 使用正则表达式时，可以匹配字面量字符串。下表描述了在模式中使用的不同语法，并提供了一些示例：
 

@@ -5097,7 +5097,8 @@ var string2Num = parseInt("123xyz");
 
 
 
-```javascript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。var string2Num = parseInt("xyz");
+```javascript
+ var string2Num = parseInt("xyz");
 ```
 
 结果是将 “NaN”（不是一个数字）赋值给变量`string2Num`。
@@ -12330,7 +12331,7 @@ $x = 24.99;
 
 
 
-`$rx = \$x;` #我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。反斜杠前缀表示引用
+`$rx = \$x;` # 反斜杠前缀表示引用
 
 在这种情况下，`$rx` 是 `$x` 的引用。可以通过在变量名上加上反斜杠前缀来引用变量。
 
@@ -18190,7 +18191,7 @@ HTTP/version status_code message
 
 
 
-#我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。附录 D
+# 附录 D
 
 ## HTTP 状态码
 

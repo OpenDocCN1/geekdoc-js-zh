@@ -14472,7 +14472,8 @@ func();
 
 因此，这种函数无法访问外部变量，只能访问全局变量。
 
-```javascriptfunction getFunc() {
+```javascript
+function getFunc() {
   let value = "test";
   let func = new Function('alert(value)');
   return func;
@@ -45385,7 +45386,8 @@ alert("1 + 2 - 3".match(regexp)); // 同样有效: +,
 
 例如，让我们在字符串 `X` 中查找 `[XY]`：
 
-```javascriptalert('X'.match([XY])); // 显示一个奇怪的字符，如 [?]
+```javascript
+alert('X'.match([XY])); // 显示一个奇怪的字符，如 [?]
 // (搜索执行不正确，返回了半个字符)
 ```
 

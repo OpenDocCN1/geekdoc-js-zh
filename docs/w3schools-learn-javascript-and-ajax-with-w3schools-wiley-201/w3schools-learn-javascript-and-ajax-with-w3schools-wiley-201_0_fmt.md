@@ -5219,7 +5219,7 @@ next
 
 </CD>
 
-##我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。第 35 章 AJAX responseXML 属性
+## 第 35 章 AJAX responseXML 属性
 
 ### 在本章中
 

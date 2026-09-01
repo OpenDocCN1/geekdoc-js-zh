@@ -9019,7 +9019,8 @@ function checkZipRE(zip) {
 
 | 调用 checkZipRE() 函数的代码 |
 | --- |
-| ```javascript,if (document.forms[0].city.value.length == 0) {<br>  alert('you must enter a city name');<br>  return false;<br>} else if (checkZipRE(document.forms[0].zip.value) == false) {<br>  alert('invalid zip code');<br>  return false;<br>}<br>return true;<br>}<nfunction checkZipRE(zip) {<br>  regex = /^\d{5}(-\d{4})?$/; // 美国邮政编码的正则表达式<br>  return regex.test(zip);<br>},``` |
+| ```javascript
+,if (document.forms[0].city.value.length == 0) {<br>  alert('you must enter a city name');<br>  return false;<br>} else if (checkZipRE(document.forms[0].zip.value) == false) {<br>  alert('invalid zip code');<br>  return false;<br>}<br>return true;<br>}<nfunction checkZipRE(zip) {<br>  regex = /^\d{5}(-\d{4})?$/; // 美国邮政编码的正则表达式<br>  return regex.test(zip);<br>},``` |
 
 - 4. 保存文件，保存更改，并在 Web 浏览器中重新加载 `form2.htm`。
 - 5. 在名字、姓、街道和城市字段输入示例文本。

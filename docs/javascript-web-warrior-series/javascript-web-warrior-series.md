@@ -15096,7 +15096,8 @@ JavaScript 中的正则表达式必须以斜杠开始并结束。例如，以下
 
 3. 在 `if` 语句的第一行，将 “@” 替换为 `/@/`，如下所示：
 
-```javascript1 function validateEmail() {
+```javascript
+1 function validateEmail() {
 2 var emailInput = document.getElementById("emailbox");
 3 var errorDiv = document.getElementById("emailError");
 4 try {
@@ -15136,7 +15137,8 @@ JavaScript 中的正则表达式必须以斜杠开始并结束。例如，以下
 
 处理正则表达式最困难的部分是编写用于匹配和处理字符串的模式和规则。作为一个常见但复杂的正则表达式示例，请考虑以下代码：
 
-```javascript1 var emailPattern = /^[_a-zA-Z0-9\-]+(\.[_a-zA-Z0-9\-]+)*
+```javascript
+1 var emailPattern = /^[_a-zA-Z0-9\-]+(\.[_a-zA-Z0-9\-]+)*
 2 @[a-zA-Z0-9\-]+(\.[a-zA-Z0-9\-]+)*(\.[a-z]{2,6})$/;
 3 var email = "president@whitehouse.gov";
 4 var result;

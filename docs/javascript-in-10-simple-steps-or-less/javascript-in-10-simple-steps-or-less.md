@@ -19289,7 +19289,8 @@ document.images[i].style.visibility = 'hidden';
 }
 ```
 6. 移除脚本中的行和空格，并在脚本开头添加 `javascript:` 协议，使结果为一条不包含所有额外空格的单行：
-```javascript:for(i=0;i<document.images.length;i++)(document.images[i].style.visibility='hidden')
+```javascript
+:for(i=0;i<document.images.length;i++)(document.images[i].style.visibility='hidden')
 ```
 
 `for` 循环允许你对此进行计数。也就是说，循环内部的代码会在循环的每次迭代中执行。在循环的每次迭代中，计数器变量的值都会被调整。在这种情况下，计数器变量初始设置为值 0。循环的每次迭代增加 1，直到达到图片的总数。
@@ -19321,7 +19322,8 @@ document.images[i].style.visibility = 'hidden';
 5. 将命令封装在 `void` 语句中；浏览器会将 'hidden' 字符串显示给 `visibility` 属性，这将导致带有文本 "hidden" 的事件替换当前页面：
 6. 关闭 `if` 和 `for` 循环，使最终脚本看起来如下：
 7. 移除脚本中的行分离和空格，并在脚本开头添加 `javascript:` 协议，使结果为一条不包含所有额外空格的单行：
-```javascript:for(i=0;i<document.images.length;i++){if(document.images[i].width==468&&document.images[i].height==60)void(document.images[i].visibility='hidden')}
+```javascript
+:for(i=0;i<document.images.length;i++){if(document.images[i].width==468&&document.images[i].height==60)void(document.images[i].visibility='hidden')}
 
 8. 使用此代码作为 URL 创建书签或收藏。要测试书签脚本，请在浏览器中打开一个包含横幅广告的页面，如图 237-1 所示。选择你创建的新书签，广告就会消失，如图 237-2 所示。
 

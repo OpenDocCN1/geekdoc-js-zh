@@ -1,7 +1,7 @@
 
 # Web 应用设计模式（交互式技术）
 
-# 第我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。1 章 引言
+# 第 1 章 引言
 
 ## 引言
 
@@ -1176,7 +1176,7 @@ Calbucci (2008) 发现，从注册表单中移除 CAPTCHA 使转化率比 Sampa 
 
 
 
-#我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。请检查您的邮箱
+# 请检查您的邮箱
 
 一封确认邮件已发送到您的邮箱地址。请点击邮件中的链接以验证您的地址。如果您在几分钟内没有收到邮件，请同时检查您的垃圾邮件或拒绝邮件文件夹。
 
@@ -1665,7 +1665,7 @@ CAPTCHA 的使用在注册过程中非常常见，以避免自动化网络爬虫
 
 
 
-##我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。登录
+## 登录
 
 请登录以查看您的账户：
 
@@ -5474,7 +5474,7 @@ Pawan Vora 的开启项目
 
 
 
-图我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。8.9 当用户输入密码时，密码强度计从弱到强对密码进行评分，确保用户选择更好的密码。
+图 8.9 当用户输入密码时，密码强度计从弱到强对密码进行评分，确保用户选择更好的密码。
 
 ## 相关设计模式
 
@@ -6562,7 +6562,7 @@ fanboy.com — Aerotrain 听起来像是蒸汽朋克小说中的情节设备。�
 
 
 
-# 第我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。9 章 社交应用
+# 第 9 章 社交应用
 
 ## Aerotrain：一辆火箭驱动的铁路车厢
 
@@ -7587,7 +7587,7 @@ Geben Sie Ihre Kontaktdaten ein - Alle Felder sind erforderlich
 
 
 
-图我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。10.6 Flickr 在页面为英语 (a) 时显示图标，但在其他语言 (b) 时移除图标。相反，它们作为提示显示。这可能是因为标签嵌入在图像中，每种语言都需要不同的图像。此外，由于翻译后的标签需要更多空间，可能很难在可用空间内放置所有图标。
+图 10.6 Flickr 在页面为英语 (a) 时显示图标，但在其他语言 (b) 时移除图标。相反，它们作为提示显示。这可能是因为标签嵌入在图像中，每种语言都需要不同的图像。此外，由于翻译后的标签需要更多空间，可能很难在可用空间内放置所有图标。
 
 > **提示**
 >
@@ -7920,7 +7920,7 @@ agroupplace-api.com - 翻译页面 - 结果页面
 
 
 
-位于 Alcatara 海滨镇 Sao Martinho do Porto 的新镇屋。所有的镇屋都由我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。3 间卧室、套间浴室、阳台、车库、烧烤区组成，大多数花园都有建造泳池的空间。这里显示的最终价格从 200,000 欧元到 250,000 欧元不等。
+位于 Alcatara 海滨镇 Sao Martinho do Porto 的新镇屋。所有的镇屋都由 3 间卧室、套间浴室、阳台、车库、烧烤区组成，大多数花园都有建造泳池的空间。这里显示的最终价格从 200,000 欧元到 250,000 欧元不等。
 
 镇屋配备电动百叶窗、中央供暖预留、光纤预留、音响系统预留、自动门和 1 位车车库，价格从 200,000 欧元起。
 
@@ -8175,7 +8175,8 @@ Ajax 代表异步 JavaScript 和 XML，它是 JavaScript、层叠样式表（CSS
 
 
 
-```javascript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。var allLinks = document.getElementsByTagName("a");
+```javascript
+ var allLinks = document.getElementsByTagName("a");
 for (var i = 0; i < allLinks.length; i++) {
     allLinks[i].onclick = function() {
         return false;
@@ -9046,7 +9047,7 @@ Blinkscale 将头部、主导航、工具导航、页面内容和相关操作放
 
 
 
-# 第我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。13 章 模式库
+# 第 13 章 模式库
 
 ![](img/4da2afa2580415d3d4ff98025db0a2c3_386_0.png)
 
@@ -9329,7 +9330,7 @@ Yahoo! Network » 设计模式库
 
 
 
-图我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。13.12 用户界面设计库 UI Patterns（with-ui-patterns.com）使用缩略图、名称和简短描述，使用户轻松找到所需的模式。
+图 13.12 用户界面设计库 UI Patterns（with-ui-patterns.com）使用缩略图、名称和简短描述，使用户轻松找到所需的模式。
 
 ![](img/4da2afa2580415d3d4ff98025db0a2c3_395_2.png)
 
@@ -10063,7 +10064,7 @@ Flickr 将问题按类别组织，如“通用 Flickr 问题”、“免费账�
 
 虽然许多问题可以通过上下文帮助和 FAQ 在用户的任务背景内解答，但某些任务需要访问应用程序的多个页面。尝试在同一页面上嵌入所有问题的相关答案会导致页面变得杂乱且令人生畏。
 
-###我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。解决方案
+### 解决方案
 
 提供有关使用和访问应用程序功能的详细帮助。此外，从应用程序的所有页面访问帮助；帮助链接或图标通常位于页面的右上角，作为主或实用导航的一部分（图 Web.10）。
 

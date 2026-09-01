@@ -5009,7 +5009,8 @@ function areYouLucky() {
 }
 ```
 
-```javascript// 调用此函数！
+```javascript
+// 调用此函数！
 areYouLucky();
 ```
 

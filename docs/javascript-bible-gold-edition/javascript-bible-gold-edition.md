@@ -7449,7 +7449,8 @@ document.getElementById("myObject").children.length > 0
 
 你通常在条件表达式中使用 `hasChildNodes()` 方法，以在对这些节点执行操作之前确保此类节点存在：
 
-```javascriptif("document.getElementById("myObject").hasChildNodes()) {
+```javascript
+if("document.getElementById("myObject").hasChildNodes()) {
     // 适用于子节点的语句
 }
 ```
@@ -42515,7 +42516,8 @@ function selectSort(chooser) {
 
 
 
-```javascript        } else {
+```javascript
+       } else {
             return (b.sales.Q3_2000.forecast - a.sales.Q3_2000.forecast)
         }
 }

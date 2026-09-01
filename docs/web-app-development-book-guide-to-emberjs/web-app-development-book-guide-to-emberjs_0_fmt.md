@@ -444,7 +444,8 @@ comm.save();
 
 
 
-```javascript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。let p = this.store.peekRecord('post', 1);
+```javascript
+ let p = this.store.peekRecord('post', 1);
 let comm = this.store.peekRecord('comment', 1);
 p.get('comments').pushObject(comm);
 p.save();
@@ -852,7 +853,7 @@ export default DS.JSONAPIAdapter.extend({
 
 
 
-```json我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。{
+```json {
   "data": {
     "type": "blogs",
     "id": "1",

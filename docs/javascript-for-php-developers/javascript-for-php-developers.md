@@ -3960,7 +3960,8 @@ Object.defineProperties(programmer, {
 
 考虑这个普通对象：
 
-```javascriptvar pizza = {
+```javascript
+var pizza = {
   tomatoes: true,
   cheese: true
 }
@@ -4443,7 +4444,8 @@ var my = (function () {
 my.getStuff().a.b.toString(); // "1,2"
 ```
 
-```javascript// 修改
+```javascript
+// 修改
 my.getStuff().a.b.push(3);
 my.getStuff().a.c = "Ch-chchangin";
 ```

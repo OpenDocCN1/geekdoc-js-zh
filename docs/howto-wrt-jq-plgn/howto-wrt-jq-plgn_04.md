@@ -107,7 +107,8 @@ var obj = $(this);
 $.fn.XXXXXX.defaults
 
 ```
-```js 
+```js
+
 ```
 
 1.  基于 selector
@@ -121,7 +122,8 @@ return this.each(function() { var obj = $(this);
 ```
  ...
 });
-```js 
+```js
+
 ```
 
 解读：

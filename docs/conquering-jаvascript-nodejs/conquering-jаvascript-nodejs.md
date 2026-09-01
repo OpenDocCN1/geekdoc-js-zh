@@ -2219,7 +2219,8 @@ res.writeHead(206, headers);
 
 我们将使用文件系统库，以视频路径作为参数，并将 `start` 和 `end` 作为 options 对象中的选项来生成读取流：
 
-```javascript```
+```javascript
+```
 
 
 

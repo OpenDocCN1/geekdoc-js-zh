@@ -12731,7 +12731,8 @@ function verse(verseNumber){
 
 “The Ants Go Marching”这首歌的 `chorus` 部分已更改为返回一个值。再次查看 `chorus()` 函数来理解我的意思：
 
-```javascriptfunction chorus(){
+```javascript
+function chorus(){
   var result = "-and they all marching down, <br />";
   result += "to the ground, to get out, of the rain. <br />";
   result += "boom boom boom boom <br />";
@@ -12763,7 +12764,8 @@ function verse(verseNumber){
 
 `verse` 函数必须设计为接受参数。看第一行它是如何定义的：
 
-```javascriptfunction verse(verseNumber){
+```javascript
+function verse(verseNumber){
 ```
 
 在函数定义中，我包含了一个变量名。在函数内部，这个变量被称为 `parameter`（形式参数）（不要纠结术语。人们经常交叉使用这两个词。）重要的想法是，每当 `verse()` 函数被调用时，它都会拥有一个名为 `verseNumber` 的变量。

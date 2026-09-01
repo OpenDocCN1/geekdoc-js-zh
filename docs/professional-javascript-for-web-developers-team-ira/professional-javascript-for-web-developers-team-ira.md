@@ -23446,7 +23446,8 @@ let whatToShow = NodeFilter.SHOW_ELEMENT | NodeFilter.SHOW_TEXT;
 
 `createNodeIterator()` 的 `filter` 参数用于指定一个自定义的 `NodeFilter` 对象或作为节点的函数。`NodeFilter` 只有一个方法 `acceptNode()`，如果给定的节点应该被访问，它返回 `NodeFilter.FILTER_ACCEPT`；如果给定的节点不应该被访问，它返回 `NodeFilter.FILTER_SKIP`。由于 `NodeFilter` 是一个抽象类型，因此无法创建它的实例。相反，只需创建一个带有 `acceptNode()` 方法的对象并将其传递给 `createNodeIterator()` 即可。以下代码仅接受 `<p>` 元素：
 
-```javascriptlet filter = {
+```javascript
+let filter = {
   acceptNode(node) {
     return node.tagName.toLowerCase() == "p" ?
       NodeFilter.FILTER_ACCEPT:
@@ -23826,7 +23827,8 @@ range.surroundContents(span);
 
 你可以使用 `collapse()` 方法来折叠范围，它接受一个参数：布尔值，表示范围的位置。如果是 `true`，则范围折叠到起始点；如果是 `false`，则折叠到结束点。要确定范围是否折叠，可以使用如下 `collapsed` 属性：
 
-```javascriptrange.collapse(true); // 折叠到起始点
+```javascript
+range.collapse(true); // 折叠到起始点
 console.log(range.collapsed); // 输出 "true"
 ```
 
@@ -25090,7 +25092,8 @@ console.log(event.type); // "click"
 };
 ```
 
-```javascriptbtn.addEventListener("click", (event) => {
+```javascript
+btn.addEventListener("click", (event) => {
 console.log(event.type); // "click"
 }, false);
 ```

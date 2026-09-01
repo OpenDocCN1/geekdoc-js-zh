@@ -274,7 +274,7 @@ HTML 最初被设计为一种结构描述语言，而不是演示描述语言。
 
 通常情况下，属性始终由`input`表示。但在特殊情况下，可以使用其他类型的`input`（例如`type="date"`）或其他组件。例如，如果选项较少（例如小于8个），可以使用单选按钮组。
 
-##我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。1.3 使用 CSS 设置 Web 文档
+## 1.3 使用 CSS 设置 Web 文档
 
 虽然 HTML 用于定义文档的内容结构，但级联样式表（CSS）语言用于定义网页的演示样式，这意味着你使用它来告诉浏览器你希望如何渲染 HTML（或 XML）：使用什么样的内容布局、字体和文本样式、颜色、背景和动画。通常，这些设置位于独立的 CSS 文件中，通过特殊的`link`元素与 HTML 文件关联。
 
@@ -510,7 +510,7 @@ JS 对象可以以许多不同的方式用于不同的目的。以下是对象�
 
 在无类型对象的方法槽体内部，特殊的`this`指向该对象。
 
--我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。4. 可以在值对象定义**命名空间（namespace）**，其名称代表命名空间前缀。例如，以下对象变量提供了基于**模型-视图-控制器（MVC）**架构范式的应用程序主命名空间，其中具有对应于 MVC 应用三个部分的子类：
+- 4. 可以在值对象定义**命名空间（namespace）**，其名称代表命名空间前缀。例如，以下对象变量提供了基于**模型-视图-控制器（MVC）**架构范式的应用程序主命名空间，其中具有对应于 MVC 应用三个部分的子类：
 
 ```javascript
 var myApp = {model:{}, view: {}, ctrl:{}};
@@ -885,7 +885,7 @@ Person.checkLastName = function (ln) {
 
 
 
-**步骤我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。1d)** 最后，将类级（“静态”）属性定义为构造函数的属性槽：
+**步骤 1d)** 最后，将类级（“静态”）属性定义为构造函数的属性槽：
 
 > 15 https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Details_of_the_Object_Model
 
@@ -1559,7 +1559,7 @@ pl.v.retrieveAll = {
 
 
 
-##我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。3.6 第 6 步 – 实现“更新”用例
+## 3.6 第 6 步 – 实现“更新”用例
 
 同样对于更新用例，我们有一个用户界面的 HTML 页面（`update-Book.html`）和一个代码文件（`src/update/Book.js`）。“更新书籍”操作的 HTML 表单包含一个选择要更新书籍的选择字段、标准标识符 isbn 的输出字段，以及 Book 类中可以更新的属性的输入字段。注意，通过对标准标识符属性使用输出字段，我们不允许更改现有对象的标准标识符。
 
@@ -1871,7 +1871,7 @@ lifeExpectancy : Decimal
 
 
 
-你可以使用表我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。3.3 所示的示例数据来测试你的应用程序。
+你可以使用表 3.3 所示的示例数据来测试你的应用程序。
 
 ### 表 3.3 国家示例数据
 
@@ -2263,7 +2263,7 @@ public class BookController {
 
 
 
-仔细观察发现，只需使用`@PersistenceContext`注解并提供`unitName`（见下一节）即可在运行时获取`EntityManager`实例。此外，通过`ut`属性使用`@Resource`注解获取`UserTransaction`同样简单。虽然所需代码很短小，但如果数据库类型发生变化（例如从 MySQL我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。切换到 Oracle），代码保持不变。
+仔细观察发现，只需使用`@PersistenceContext`注解并提供`unitName`（见下一节）即可在运行时获取`EntityManager`实例。此外，通过`ut`属性使用`@Resource`注解获取`UserTransaction`同样简单。虽然所需代码很短小，但如果数据库类型发生变化（例如从 MySQL 切换到 Oracle），代码保持不变。
 
 ## 用七步使用 Java EE 构建一个极简 Web 应用程序
 
@@ -2992,7 +2992,7 @@ public class Book { // **Java code**
 
 
 
-我们需要意识到“对象（object）”一词的歧义。我们必须区分现实世界对象（也称为“业务对象”或“实体”）意义上的对象，以及 OO我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。程序中的对象（例如 JS 对象或 Java 对象）。当我们想要管理应用中某种类型的业务对象的信息时，我们通过实例化代表其（业务）对象类型的 JS/Java 类来以 JS/Java 对象的形式表示它们。我们把这些类称为**模型类（model classes）**，原因有两个：首先，因为它们实现了应用数据模型中定义的类；其次，它们代表了应用模型-控制器（Model-Controller）架构中的“模型（model）”。因此因此在 JS/Java 应用中，业务对象是一个 JS/Java 对象，但并不是每个 JS/Java 对象都代表业务对象，因为我们将 JS/Java 对象用于许多用途（例如，在 JavaScript 中，数组是一个 JS 对象，但它不是业务对象）。类也适用于类：（业务）对象类型表示为模型类，但并不是每个 JS/Java 类都是模型类。
+我们需要意识到“对象（object）”一词的歧义。我们必须区分现实世界对象（也称为“业务对象”或“实体”）意义上的对象，以及 OO 程序中的对象（例如 JS 对象或 Java 对象）。当我们想要管理应用中某种类型的业务对象的信息时，我们通过实例化代表其（业务）对象类型的 JS/Java 类来以 JS/Java 对象的形式表示它们。我们把这些类称为**模型类（model classes）**，原因有两个：首先，因为它们实现了应用数据模型中定义的类；其次，它们代表了应用模型-控制器（Model-Controller）架构中的“模型（model）”。因此因此在 JS/Java 应用中，业务对象是一个 JS/Java 对象，但并不是每个 JS/Java 对象都代表业务对象，因为我们将 JS/Java 对象用于许多用途（例如，在 JavaScript 中，数组是一个 JS 对象，但它不是业务对象）。类也适用于类：（业务）对象类型表示为模型类，但并不是每个 JS/Java 类都是模型类。
 
 ## 5.2 带关联的类
 
@@ -3483,7 +3483,7 @@ UML 并没有定义在类图中表示字符串长度约束的特殊方式。当�
 
 
 
-`CREATE TABLE persons(`我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。```
+`CREATE TABLE persons(` ```
   name VARCHAR(30) NOT NULL,
   age INTEGER
 )
@@ -3739,7 +3739,7 @@ Book.prototype.setIsbn = function (i) {
 
 
 
-## 图我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。7.1 对象级约束的示例
+## 图 7.1 对象级约束的示例
 
 实现对象级约束验证的通用方法包括以下步骤：
 
@@ -4018,7 +4018,7 @@ publicLibrary
 
 我们将在后续子节中讨论新增文件的内容。
 
-##我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。8.4.1 在库文件中提供通用工具函数和 JavaScript 修复
+## 8.4.1 在库文件中提供通用工具函数和 JavaScript 修复
 
 我们在`lib`文件夹中增加了三个库文件：
 
@@ -4608,7 +4608,8 @@ if (name === undefined) {
 
 
 
-```javascript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。return "Age must be non-negative integer!";
+```javascript
+ return "Age must be non-negative integer!";
 ```
 
 - 3.
@@ -4890,7 +4891,7 @@ public static void checkIsbnAsId(
 
 
 
-如果为指定的 `isbn`我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。值找到了 `Book` 记录，该方法将抛出 `UniquenessConstraintViolation` 异常。可以捕获该异常并在 UI 中显示相应的错误消息。在本章的后续部分，我们将展示如何定义验证方法，并通知 `JSFacelets` 必须使用它来验证 `isbn` 表单输入。
+如果为指定的 `isbn` 值找到了 `Book` 记录，该方法将抛出 `UniquenessConstraintViolation` 异常。可以捕获该异常并在 UI 中显示相应的错误消息。在本章的后续部分，我们将展示如何定义验证方法，并通知 `JSFacelets` 必须使用它来验证 `isbn` 表单输入。
 
 注意，在这种情况下，我们还需要检查 `isbn` 值并拒绝空值，因为 `@NotNull` 校验只有在之后 `Book` 的 `isbn` 属性被设置时才会触发，因此在此时我们可能会从 `Book.retrieve` 方法得到 `NullPointerException`。
 
@@ -5384,7 +5385,7 @@ U = undetermined
 
 
 
-在代码列表的情况下，我们可以使用代码或标签作为枚举名称，例如“male (M)”，前提我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。空间足够。如果空间有限，可以只显示代码。
+在代码列表的情况下，我们可以使用代码或标签作为枚举名称，例如“male (M)”，前提 空间足够。如果空间有限，可以只显示代码。
 
 ### 10.1.3 记录枚举
 
@@ -6029,7 +6030,7 @@ Book.createTestData = function () {
 
 注意我们使用了自定义属性 `data-bind` 来指示选择控件绑定到底层模型类的哪一个属性上。
 
-##我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。11.6.3 选择控件的响应式验证
+## 11.6.3 选择控件的响应式验证
 
 由于选择控件不允许任意输入，因此我们不需要检查范围（range）或模式（pattern）。在我们的应用中，枚举属性 `originalLanguage`、`category` 和 `publicationForms` 是强制性的，而 `otherAvailableLanguages` 是可选的。
 
@@ -6604,7 +6605,7 @@ public String getPublicationForms() {
 
 
 
-```java我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。if (i < n-1) result += ", ";
+```java if (i < n-1) result += ", ";
 
 i++;
 
@@ -6941,7 +6942,7 @@ var currentDate = new Date();
 2. 内部用于标记本地化日期时间字符串，或用于以标准格式显示日期时间值，作为 ISO 标准日期时间字符串（通过`toString()`实现）。
 3. 外部以本地化形式显示日期时间值（通过`toLocaleString()`实现）。
 
-由于日历算术和日历操作的功能有限，使用如`date-fns`的库我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。高级计算很有帮助。
+由于日历算术和日历操作的功能有限，使用如`date-fns`的库 高级计算很有帮助。
 
 ### 13.4.2 在网页中作为信息项处理日期时间值
 
@@ -7239,7 +7240,7 @@ class Person {
 
 `this._initials = this._firstName.charAt(0) + this._lastName.charAt(0);`
 
-注意，人的首字母缩写计算是在`firstName`和`lastName`的 setter我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。中的，每当这些属性被初始化或更改时都是。
+注意，人的首字母缩写计算是在`firstName`和`lastName`的 setter 中的，每当这些属性被初始化或更改时都是。
 
 ### 14.2 派生属性
 

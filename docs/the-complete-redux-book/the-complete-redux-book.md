@@ -258,7 +258,8 @@ arr.map((item) => item.id);
 
 一个纯函数的示例
 
-```javascriptfunction getUser(userId) {
+```javascript
+function getUser(userId) {
   return UserModel.fetch(userId).then((result) => result);
 }
 Math.random();
@@ -1809,7 +1810,8 @@ const uiReducer = (state, action) => {
 
 带有自定义待处理动作的动作创建器
 
-```javascriptconst fetchRecipes = () => ({
+```javascript
+const fetchRecipes = () => ({
   type: 'API',
   payload: {
     url: 'recipes.json',

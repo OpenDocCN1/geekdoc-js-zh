@@ -4190,7 +4190,8 @@ document
 
 在此之后，每当点击事件发生时，运行时系统都会创建一个事件对象 `E` 并以这种方式将其封装进 `aHandler`
 
-```javascriptfunction() { aHandler(E) }
+```javascript
+function() { aHandler(E) }
 ```
 
 然后该任务被放入队列。

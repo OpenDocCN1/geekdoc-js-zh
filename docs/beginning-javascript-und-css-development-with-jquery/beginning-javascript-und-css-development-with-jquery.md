@@ -622,7 +622,8 @@ $i?.$e.preventDefault(): (window.event.returnValue=false);
 
 为了使代码更容易阅读和维护，最好对代码进行适当的缩进。以下就是一个例子：
 
-```javascript{3}
+```javascript
+{3}
 window.onload=function(){var $nodes=document.getElementsByTagName('a');for(var$ i=0,$length=$ nodes.length;$i<$ length;$i++){$nodes[$i].onclick=function($e){ window.open(this.href,"picture","scrollbars=no,width=300,height=280,resizable=yes");$e? lueprint $blueprint: (window.event.returnValue=false);}};}
 ```
 

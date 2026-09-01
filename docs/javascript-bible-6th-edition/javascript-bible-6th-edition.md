@@ -4086,7 +4086,8 @@ W3C DOM（通过 级）定义了 12 种不同的节点，其中 7 种在 HTML �
 
 修改内容的重要方法是 `appendChild()`、`insertBefore()`、`removeChild()` 和 `replaceChild()`。然而，请注意，所有这些方法都假设操作视角是从受方法影响节点的父节点发出的。例如，要删除一个元素（使用 `removeChild()`），你不是在被删除的元素上调用该方法，而是在它的父元素上调用。这为创建一个实用函数库留下了可能，从而无需过多了解元素的精确包含层级。一个让脚本看起来是在删除元素的简单函数实际上是从其父元素执行的：
 
-```javascriptfunction removeElement(elemID) {
+```javascript
+function removeElement(elemID) {
     var elem = document.getElementById(elemID);
     elem.parentNode.removeChild(elem);
 }

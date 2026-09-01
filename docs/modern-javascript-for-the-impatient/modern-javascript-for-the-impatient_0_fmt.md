@@ -8086,9 +8086,11 @@ Symbol 属性用于 JavaScript API 中以自定义类的行为。`Symbol` 类为
 | `toPrimitive` | 自定义到原始类型的转换——参见第 11.2.2 节 |
 | `species` | 用于创建结果集合的构造函数，被 `map` 和 `filter` 等方法使用——参见第 11.2.3 节 |
 | `iterator`, `asyncIterator` | 定义迭代器（第 9 章）和异步迭代器（第 10 章） |
-| `hasInstance` | 自定义 `instanceof` 的行为：```javascript\nclass Iterable {\n  static [Symbol.hasInstance] {\n    return Symbol.iterator in obj\n  }\n}\n[1, 2, 3] instanceof Iterable\``` |
+| `hasInstance` | 自定义 `instanceof` 的行为：```javascript
+\nclass Iterable {\n  static [Symbol.hasInstance] {\n    return Symbol.iterator in obj\n  }\n}\n[1, 2, 3] instanceof Iterable\``` |
 | `match`, `matchAll`, `replace`, `search`, `split` | 从同名的 `String` 方法中调用。对于 `RegExp` 以外的对象重新定义——参见练习 2。 |
-| `isConcatSpreadable` | 用于 `Array` 的 `concat` 方法：```javascript\nconst a = [1, 2]\nconst b = [3, 4]\na[Symbol.isConcatSpreadable] = false\n[].concat(a, b) => [[1, 2], 3, 4]\``` |
+| `isConcatSpreadable` | 用于 `Array` 的 `concat` 方法：```javascript
+\nconst a = [1, 2]\nconst b = [3, 4]\na[Symbol.isConcatSpreadable] = false\n[].concat(a, b) => [[1, 2], 3, 4]\``` |
 
 **表 11-1** 已知符号
 

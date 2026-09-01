@@ -3036,7 +3036,8 @@ export default class Lane extends React.Component {
 
 
 
-```javascript...
+```javascript
+...
 export default Lane extends React.Component {
   ...
   editNote(id, task) {

@@ -9139,7 +9139,8 @@ In the dynamic realm of Next.js 13+, developers harness the power of directives 
 
     Example:
 
-    ```` ```javascript ````
+    ```` ```javascript
+````
 
     `// server-side.js`
 
@@ -9167,7 +9168,8 @@ In the dynamic realm of Next.js 13+, developers harness the power of directives 
 
     Example:
 
-    ```` ```javascript ````
+    ```` ```javascript
+````
 
     `// client-side.js`
 
@@ -9197,7 +9199,8 @@ In the dynamic realm of Next.js 13+, developers harness the power of directives 
 
     To streamline the usage of directives in a Next.js project, developers can configure the `next.config.json` file. The following example demonstrates how to enable server-side actions by default.
 
-    ```` ```javascript ````
+    ```` ```javascript
+````
 
     `/** @type {import(‘next’).NextConfig} */`
 

@@ -3129,7 +3129,8 @@ const asyncFilter = async (arr, predicate) =>
 ### **顺序处理 (Sequential processing)**
 若在下次运行前必须等待谓词函数完成，则可以调换两个 await 的执行顺序：:
 
-```javascript 
+```javascript
+
 // sequentially(串行模式下)
 const asyncFilter = async (arr, predicate)=>
     arr.reduce(async (memo,e)=>[,...await memo,[...await predicate(e)?[e]:[]]],[]));
@@ -3152,7 +3153,8 @@ const arr = [1,2,3];
 ### **使用异步 filter**仅考虑最终结果这些函数可以通过带 async 的filter来模拟其功能（这一点在前一篇文章中已介绍过如何转换为异步模式）：
 
 
-```javascript 
+```javascript
+
 // sync (同步版本)
 const some = (arr, predicate)=> arr.filter(predicate).length >0; constevery=... 
 
@@ -3164,7 +3166,8 @@ const asyEvery =async(arr,predicate)=>await asyncFilter..Length==arr.length
 
 基于filter的异步 some 实现方式但是内置some/every函数与基于filter的实现之间存在一个重要区别：当存在一个元素对 `***some***(有其中至少一个)**返回true时它会进行短路求值**(short-circuits)，而不再处理剩余的元素：: 
 
-```javascript 
+```javascript
+
 const arr=[1,2.3); constres=arr.some((i)=>{ console.log(`Checking{i}`): return i%2===0;}); // Checking 1
 // Checking 2
 
@@ -3173,7 +3176,8 @@ console.log(res)/true
 
 类似地，**every**(全部)会在遇到第一个false结果后停止：: 
 
-```javascript 
+```javascript
+
 const arr=[1,2.3]; constres=arr.every((i)=>{ console.log(`Checking{i}`): return i<2;});
 
 ///Checking 1/
@@ -3187,7 +3191,8 @@ console.log(res);
 ### **异步 some**(async some)
 最佳解决方案是使用**带 async的 for循环迭代**,一旦找到有效结果就立即返回：: 
 
-```javascript 
+```javascript
+
 const arr=[1,2,3]; 
 
 
@@ -3202,7 +3207,8 @@ const asynSome =asym(arr,predicate)=>{
 ## **异步 every**(async eVery)
 类似的结构也适用于 `**every`**,只是需要否定条件：: 
 
-```javascript 
+```javascript
+
 // example implementation for Every in Asynchronous context..
 
 

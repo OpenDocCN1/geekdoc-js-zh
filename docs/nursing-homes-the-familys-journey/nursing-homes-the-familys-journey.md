@@ -8191,7 +8191,8 @@ write("Error " + myMail.errorCode + ": " + myMail.errorMessage());
 
 与 `SendMail` 对象类似，`File` 对象的使用非常直观。这些方法允许你对系统中的文件执行所需的各种任务。处理这些文件的功能部分允许程序员指定他想要如何打开文件。文件可以以读取、写入、追加或二进制模式打开。这些选项在 `open()` 方法中指定：
 
-```javascriptFile.open("option");
+```javascript
+File.open("option");
 ```
 
 在你的应用程序中，你可能想要显示文件的内容。这个程序可以是一个读取文件并在页面上显示其内容的应用程序。列表 5.3 包含一个显示选中文件内容的应用程序。
@@ -57982,7 +57983,8 @@ Window 对象的 locationbar 属性的子属性用于确定地址栏是否对用
 
 - 列表 8.543 使用 locationbar 的 visible 属性
 
-```javascript<script language="JavaScript" type="text/javascript">
+```javascript
+<script language="JavaScript" type="text/javascript">
 <!--
 // 将浏览器的栏状态写入页面。
 // 如果为 true，则显示。
@@ -58047,7 +58049,8 @@ Window 对象的 menubar 属性的子属性用于确定菜单栏是否对用户�
 
 - 列表 8.544 使用 menubar 的 visible 属性
 
-```javascript<script language="JavaScript" type="text/javascript">
+```javascript
+<script language="JavaScript" type="text/javascript">
 <!--
 // 将浏览器的栏状态写入页面。
 // 如果为 true，则显示。
@@ -95346,7 +95349,8 @@ Error 事件用于在远程脚本因错误停止时，信号脚本引擎结束�
 
 ### 列表 15.53 使用 Error 事件检查远程脚本事件
 
-```javascript<job>
+```javascript
+<job>
 <script language="JavaScript">
 
 // 创建一个 WshController 对象
@@ -95384,7 +95388,8 @@ Error 属性用于获取与错误相关的信息，错误会导致远程脚本�
 
 - 列表 15.54 使用 Error 属性显示错误描述
 
-```javascript<script language="JScript">
+```javascript
+<script language="JScript">
 // 创建一个 WshController 对象。
 WshCtrlObj = WScript.CreateObject("WScript.Controller");
 
@@ -95424,7 +95429,8 @@ Execute() 方法用于启动远程脚本的执行。这与 WScript.Exec() 方法
 
 - 列表 15.55 使用 Execute 启动远程脚本
 
-```javascript<job>
+```javascript
+<job>
 <script language="JScript">
 
 // 创建一个 WshController 对象
@@ -95470,7 +95476,8 @@ Start 事件信号脚本引擎开始执行远程脚本。它在调用 Execute �
 
 - 列表 15.56 使用 WshRemote 的 Start 事件
 
-```javascript<job>
+```javascript
+<job>
 <script language="JScript">
 
 // 创建一个 WshController 对象
@@ -95509,7 +95516,8 @@ Status 属性用于获取使用 Exec 方法运行的脚本的状态信息。Stat
 
 - 列表 15.57 使用 Status 属性检查脚本
 
-```javascript<job>
+```javascript
+<job>
 <script language="JScript">
 
 // 创建一个 WshController 对象
@@ -95552,7 +95560,8 @@ Terminate() 方法用于停止远程脚本的执行。
 
 - 列表 15.58 使用 Terminate 方法停止脚本
 
-```javascript<job>
+```javascript
+<job>
 <script language="JScript">
 
 // 创建一个 WshController 对象。
@@ -95596,7 +95605,8 @@ WshRemoteError 对象用于在远程脚本因错误终止时获取信息。它�
 
 列表 15.59 创建了一个名为 myError 的 WshRemoteError 对象。
 
-```javascript<job>
+```javascript
+<job>
 <script language="JScript">
 
 // 创建一个 WshController 对象。
@@ -95635,7 +95645,8 @@ Character 属性返回一个符号长整数，指定发生错误的源代码行�
 
 - 列表 15.60 使用 Character 属性显示错误字符
 
-```javascript<script>
+```javascript
+<script>
 <script language="JavaScript">
 
 // 创建一个 WshController 对象。

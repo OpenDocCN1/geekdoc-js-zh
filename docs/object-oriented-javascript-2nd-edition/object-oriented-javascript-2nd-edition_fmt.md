@@ -7057,19 +7057,26 @@ o.constructor;
 
 | 属性/方法 | 描述 |
 |---|---|
-| `Object.prototype` | 所有对象的原型（其本身也是一个对象）。你添加到此原型上的任何内容都会被所有其他对象继承，因此请小心。<br><br>```javascript<br>var s = new String('noodles');<br>Object.prototype.custom = 1;<br>// 1<br>s.custom;<br>// 1<br>``` |
+| `Object.prototype` | 所有对象的原型（其本身也是一个对象）。你添加到此原型上的任何内容都会被所有其他对象继承，因此请小心。<br><br>```javascript
+<br>var s = new String('noodles');<br>Object.prototype.custom = 1;<br>// 1<br>s.custom;<br>// 1<br>``` |
 
 ### Object.prototype 成员
 
 | 属性/方法 | 描述 |
 |---|---|
-| `constructor` | 指向用于创建对象的构造函数，在本例中为 `Object`。<br><br>```javascript<br>Object.prototype.constructor === Object;<br>// true<br>var o = new Object();<br>o.constructor === Object;<br>// true<br>``` |
-| `toString(radix)` | 返回对象的字符串表示。如果该对象恰好是 `Number`（数字），则 `radix` 参数定义返回数字的基数。默认的 `radix` 为 10。<br><br>```javascript<br>var o = {prop: 1};<br>o.toString();<br>// "[object Object]"<br>var n = new Number(255);<br>n.toString();<br>// "255"<br>``` |
+| `constructor` | 指向用于创建对象的构造函数，在本例中为 `Object`。<br><br>```javascript
+<br>Object.prototype.constructor === Object;<br>// true<br>var o = new Object();<br>o.constructor === Object;<br>// true<br>``` |
+| `toString(radix)` | 返回对象的字符串表示。如果该对象恰好是 `Number`（数字），则 `radix` 参数定义返回数字的基数。默认的 `radix` 为 10。<br><br>```javascript
+<br>var o = {prop: 1};<br>o.toString();<br>// "[object Object]"<br>var n = new Number(255);<br>n.toString();<br>// "255"<br>``` |
 | `toLocaleString()` | 与 `toString()` 相同，匹配当前的本地设置。旨在供对象自定义（如 `Date()`、`Number()` 和 `Array()`），并提供特定区域的值，例如不同的日期格式。对于 `Object()` 实例及大多数其他情况，它只是调用 `toString()`。 |
-| `valueOf()` | 如果适用，返回该值的原始类型表示。例如，`Number` 对象返回原始类型数字，`Date` 对象返回时间戳。如果没有合适的原始类型，它将直接返回该值。<br><br>```javascript<br>> var o = {};<br>> typeof o.valueOf();<br>"object"<br>> o.valueOf() === o;<br>true<br>> var n = new Number(101);<br>> typeof n.valueOf();<br>"number"<br>> n.valueOf() === n;<br>false<br>> var d = new Date();<br>> typeof d.valueOf();<br>"number"<br>> d.valueOf();<br>135784170137<br>``` |
-| `hasOwnProperty(prop)` | 如果该属性是对象自身的属性，则返回 `true`；如果是从原型链继承的，则返回 `false`。如果属性不存在，也返回 `false`。<br><br>```javascript<br>> var o = {prop: 1};<br>> o.hasOwnProperty('prop');<br>true<br>> o.hasOwnProperty('toString');<br>false<br>> o.hasOwnProperty('fromString');<br>false<br>``` |
-| `isPrototypeOf(obj)` | 如果一个对象被用作另一个对象的原型，返回 `true`。可以测试原型链中的任何对象，而不仅仅是直接创建者。<br><br>```javascript<br>> var s = new String('');<br>> Object.prototype.isPrototypeOf(s);<br>true<br>> String.prototype.isPrototypeOf(s);<br>true<br>> Array.prototype.isPrototypeOf(s);<br>false<br>``` |
-| `propertyIsEnumerable(prop)` | 如果属性出现在 `for-in` 循环中，则返回 `true`。<br><br>```javascript<br>> var a = [1, 2, 3];<br>> a.propertyIsEnumerable('length');<br>false<br>> a.propertyIsEnumerable(0);<br>true<br>``` |
+| `valueOf()` | 如果适用，返回该值的原始类型表示。例如，`Number` 对象返回原始类型数字，`Date` 对象返回时间戳。如果没有合适的原始类型，它将直接返回该值。<br><br>```javascript
+<br>> var o = {};<br>> typeof o.valueOf();<br>"object"<br>> o.valueOf() === o;<br>true<br>> var n = new Number(101);<br>> typeof n.valueOf();<br>"number"<br>> n.valueOf() === n;<br>false<br>> var d = new Date();<br>> typeof d.valueOf();<br>"number"<br>> d.valueOf();<br>135784170137<br>``` |
+| `hasOwnProperty(prop)` | 如果该属性是对象自身的属性，则返回 `true`；如果是从原型链继承的，则返回 `false`。如果属性不存在，也返回 `false`。<br><br>```javascript
+<br>> var o = {prop: 1};<br>> o.hasOwnProperty('prop');<br>true<br>> o.hasOwnProperty('toString');<br>false<br>> o.hasOwnProperty('fromString');<br>false<br>``` |
+| `isPrototypeOf(obj)` | 如果一个对象被用作另一个对象的原型，返回 `true`。可以测试原型链中的任何对象，而不仅仅是直接创建者。<br><br>```javascript
+<br>> var s = new String('');<br>> Object.prototype.isPrototypeOf(s);<br>true<br>> String.prototype.isPrototypeOf(s);<br>true<br>> Array.prototype.isPrototypeOf(s);<br>false<br>``` |
+| `propertyIsEnumerable(prop)` | 如果属性出现在 `for-in` 循环中，则返回 `true`。<br><br>```javascript
+<br>> var a = [1, 2, 3];<br>> a.propertyIsEnumerable('length');<br>false<br>> a.propertyIsEnumerable(0);<br>true<br>``` |
 
 ### ECMAScript 5 对 Object 的扩展
 
@@ -7123,14 +7130,18 @@ Object.defineProperty(person, "legs", {
 
 | 属性/方法 | 描述 |
 |---|---|
-| `Object.defineProperties(obj, props)` | 与 `defineProperty()` 相同，但允许你一次性定义多个属性。<br><br>```javascript<br>var glass = Object.defineProperties({}, {<br>  "color": {<br>    value: "transparent",<br>    writable: true<br>  },<br>  "fullness": {<br>    value: "half",<br>    writable: false<br>  }<br>});<br>``` |
+| `Object.defineProperties(obj, props)` | 与 `defineProperty()` 相同，但允许你一次性定义多个属性。<br><br>```javascript
+<br>var glass = Object.defineProperties({}, {<br>  "color": {<br>    value: "transparent",<br>    writable: true<br>  },<br>  "fullness": {<br>    value: "half",<br>    writable: false<br>  }<br>});<br>``` |
 | `Object.preventExtensions(obj)` | 禁止向对象添加更多属性。 |
-| `Object.isExtensible(obj)` | 检查是否可以添加属性。<br><br>```javascript<br>> deadline = {};<br>> Object.isExtensible(deadline);<br>true<br>> deadline.date = "yesterday";<br>> Object.preventExtensions(deadline);<br>> Object.isExtensible(deadline);<br>false<br>> deadline.date = "today";<br>> deadline.date;<br>"today"<br>> deadline.report = true;<br>> deadline.report;<br>undefined<br>``` |
+| `Object.isExtensible(obj)` | 检查是否可以添加属性。<br><br>```javascript
+<br>> deadline = {};<br>> Object.isExtensible(deadline);<br>true<br>> deadline.date = "yesterday";<br>> Object.preventExtensions(deadline);<br>> Object.isExtensible(deadline);<br>false<br>> deadline.date = "today";<br>> deadline.date;<br>"today"<br>> deadline.report = true;<br>> deadline.report;<br>undefined<br>``` |
 | `Object.seal(obj)` | `seal()` 的作用与 `preventExtensions()` 相同，并且会将所有现有属性变为不可配置。 |
 | `Object.isSealed(obj)` | 这意味着你可以修改现有属性的值，但不能删除它或对其进行重新配置（使用 `defineProperty()` 将不起作用）。例如，你不能将一个可枚举属性变为不可枚举。 |
 | `Object.freeze(obj)` | 包含 `seal()` 的所有功能，并禁止修改属性的值。 |
-| `Object.isFrozen(obj)` | 检查对象是否被冻结。<br><br>```javascript<br>> var deadline = Object.freeze({date: "yesterday"});<br>> deadline.date = "tomorrow";<br>> deadline.excuse = "lame";<br>> deadline.date;<br>"yesterday"<br>> deadline.excuse;<br>undefined<br>> Object.isSealed(deadline);<br>true<br>``` |
-| `Object.keys(obj)` | `for-in` 循环的替代方案。只返回自身属性（与 `for-in` 不同）。属性必须是可枚举的才能显示（与 `Object.getOwnPropertyNames()` 不同）。返回值为字符串数组。<br><br>```javascript<br>> Object.prototype.customProto = 101;<br>> Object.getOwnPropertyNames(Object.prototype);<br>["constructor","toString","customProto"]<br>> Object.keys(Object.prototype);<br>["customProto"]<br>> var o = {own: 202};<br>> o.customProto;<br>101<br>> Object.keys(o);<br>["own"]<br>``` |
+| `Object.isFrozen(obj)` | 检查对象是否被冻结。<br><br>```javascript
+<br>> var deadline = Object.freeze({date: "yesterday"});<br>> deadline.date = "tomorrow";<br>> deadline.excuse = "lame";<br>> deadline.date;<br>"yesterday"<br>> deadline.excuse;<br>undefined<br>> Object.isSealed(deadline);<br>true<br>``` |
+| `Object.keys(obj)` | `for-in` 循环的替代方案。只返回自身属性（与 `for-in` 不同）。属性必须是可枚举的才能显示（与 `Object.getOwnPropertyNames()` 不同）。返回值为字符串数组。<br><br>```javascript
+<br>> Object.prototype.customProto = 101;<br>> Object.getOwnPropertyNames(Object.prototype);<br>["constructor","toString","customProto"]<br>> Object.keys(Object.prototype);<br>["customProto"]<br>> var o = {own: 202};<br>> o.customProto;<br>101<br>> Object.keys(o);<br>["own"]<br>``` |
 | `Object.getOwnPropertyNames(obj)` | 返回对象所有自身属性的名称（包括不可枚举的）。 |
 
 ## Array
@@ -7198,7 +7209,8 @@ Range Error: invalid array length
 | `reverse()` | 反转数组元素并返回修改后的数组。<br>`var a = [1, 2, 3];`<br>`a.reverse();`<br>`[3, 2, 1]`<br>`a;`<br>`[3, 2, 1]` |
 | `shift()` | 类似于 `pop()`，但移除的是第一个元素而不是最后一个。<br>`var a = [1, 2, 3];`<br>`a.shift();`<br>`1`<br>`a;`<br>`[2, 3]` |
 | `slice(start_index, end_index)` | 提取数组的一部分并作为新数组返回，不修改源数组。<br>`var a = ['apple', 'banana', 'js', 'css', 'orange'];`<br>`a.slice(2,4);`<br>`['js', 'css']`<br>`a;`<br>`['apple', 'banana', 'js', 'css', 'orange']` |
-| `sort(callback)` | 对数组排序。可选接受一个回调函数进行自定义排序。回调函数接收两个元素，如果相等返回 0，如果第一个大则返回正数，如果第二个大则返回负数（默认是字符排序）：<br><br>```javascript<br>function customSort(a, b) {<br>  if (a > b) return 1;<br>  if (a < b) return -1;<br>  return 0;<br>}<br>```<br><br>`sort()` 的用法:<br>`var a = [10, 99, 1, 5];`<br>`a.sort();`<br>`[1, 10, 5, 99]`<br>`a.sort(customSort);`<br>`[1, 5, 10, 99]` |
+| `sort(callback)` | 对数组排序。可选接受一个回调函数进行自定义排序。回调函数接收两个元素，如果相等返回 0，如果第一个大则返回正数，如果第二个大则返回负数（默认是字符排序）：<br><br>```javascript
+<br>function customSort(a, b) {<br>  if (a > b) return 1;<br>  if (a < b) return -1;<br>  return 0;<br>}<br>```<br><br>`sort()` 的用法:<br>`var a = [10, 99, 1, 5];`<br>`a.sort();`<br>`[1, 10, 5, 99]`<br>`a.sort(customSort);`<br>`[1, 5, 10, 99]` |
 | `splice(start, delete_count, i1, i2,...)` | 同时删除和添加元素。第一个参数是起始位置，第二个是要删除的个数，其余参数是插入到被删除元素位置的新元素。<br>`var a = ['apple', 'banana', 'js', 'css', 'orange'];`<br>`a.splice(2, 2, 'pear');`<br>`['js', 'css']`<br>`a;`<br>`['apple', 'banana', 'pear', 'css', 'orange']` |
 | `unshift(i1, i2,...)` | 类似于 `push()`，但从数组开头添加元素。返回修改后数组的长度。<br>`var a = [1, 2, 3];`<br>`a.unshift('one', 'two');`<br>`5`<br>`a;`<br>`['one', 'two', 1, 2, 3]` |
 
@@ -7206,16 +7218,21 @@ Range Error: invalid array length
 
 | 属性/方法 | 说明 |
 |---|---|
-| `Array.isArray(obj)` | 判断对象是否为数组，因为 `typeof` 是不够的：<br><br>```javascript<br>> var arraylike = {0: 1, length: 1};<br>> typeof arraylike;<br>"object"<br>> typeof [];<br>"object"<br>```<br>鸭子类型（如果像鸭子走路且像鸭子叫，那么它就是鸭子）：<br>`typeof arraylike.length;`<br>`"number"`<br>在 ES3 中你得到冗长的写法：<br>`Object.prototype.toString.call([]) === "[object Array]";`<br>`true`<br>`Object.prototype.toString.call(arraylike) === "[object Array]";`<br>`false`<br>在 ES5 中你得到更短的写法：<br>`Array.isArray([]);`<br>`true`<br>`Array.isArray(arraylike);`<br>`false` |
+| `Array.isArray(obj)` | 判断对象是否为数组，因为 `typeof` 是不够的：<br><br>```javascript
+<br>> var arraylike = {0: 1, length: 1};<br>> typeof arraylike;<br>"object"<br>> typeof [];<br>"object"<br>```<br>鸭子类型（如果像鸭子走路且像鸭子叫，那么它就是鸭子）：<br>`typeof arraylike.length;`<br>`"number"`<br>在 ES3 中你得到冗长的写法：<br>`Object.prototype.toString.call([]) === "[object Array]";`<br>`true`<br>`Object.prototype.toString.call(arraylike) === "[object Array]";`<br>`false`<br>在 ES5 中你得到更短的写法：<br>`Array.isArray([]);`<br>`true`<br>`Array.isArray(arraylike);`<br>`false` |
 | `Array.prototype.indexOf(needle, idx)` | 搜索数组并返回第一个匹配的索引。如果没有匹配则返回 -1。可选从指定的索引开始搜索。<br>`var ar = ['one', 'two', 'one', 'two'];`<br>`ar.indexOf('two');`<br>`1`<br>`ar.indexOf('two', 2);`<br>`3`<br>`ar.indexOf('toot');`<br>`-1` |
 | `Array.prototype.lastIndexOf(needle, idx)` | 类似于 `indexOf()`，但从后往前搜索。<br>`var ar = ['one', 'two', 'one', 'two'];`<br>`ar.lastIndexOf('two');`<br>`3`<br>`ar.lastIndexOf('two', 2);`<br>`1`<br>`ar.indexOf('toot');`<br>`-1` |
 | `Array.prototype.forEach(callback, this_obj)` | `for` 循环的替代方案。你可以指定一个回调函数，数组的每个元素都会调用一次。回调函数接收参数：元素、索引和整个数组。<br>`var log = console.log.bind(console);`<br>`var ar = ['itsy', 'bitsy', 'spider'];`<br>`ar.forEach(log);`<br>`itsy 0 ["itsy", "bitsy", "spider"]`<br>`bitsy 1 ["itsy", "bitsy", "spider"]`<br>`spider 2 ["itsy", "bitsy", "spider"]`<br>可选指定第二个参数：绑定到回调函数内部 `this` 的对象。因此这样也行：<br>`ar.forEach(console.log, console);` |
-| `Array.prototype.every(callback, this_obj)` | 你提供一个回调函数来测试数组的每个元素。你的回调接收与 `forEach()` 相同的参数，并根据给定元素是否满足你的测试返回 `true` 或 `false`。如果所有元素都满足你的测试，`every()` 返回 `true`。如果至少有一个不满足，`every()` 返回 `false`。<br><br>```javascript<br>function hasEye(el, idx, ar) {<br>  return el.indexOf('i') === -1;<br>}<br>```<br>`['itsy', 'bitsy', 'spider'].every(hasEye)`<br>`false`<br>`['eency', 'weency', 'spider'].every(hasEye)`<br>`true`<br>如果在循环期间的某一点明显结果将为 `false`，循环将停止并返回 `false`。<br>`[1,2,3].every(function (e) { console.log(e); return false; });`<br>`false` |
+| `Array.prototype.every(callback, this_obj)` | 你提供一个回调函数来测试数组的每个元素。你的回调接收与 `forEach()` 相同的参数，并根据给定元素是否满足你的测试返回 `true` 或 `false`。如果所有元素都满足你的测试，`every()` 返回 `true`。如果至少有一个不满足，`every()` 返回 `false`。<br><br>```javascript
+<br>function hasEye(el, idx, ar) {<br>  return el.indexOf('i') === -1;<br>}<br>```<br>`['itsy', 'bitsy', 'spider'].every(hasEye)`<br>`false`<br>`['eency', 'weency', 'spider'].every(hasEye)`<br>`true`<br>如果在循环期间的某一点明显结果将为 `false`，循环将停止并返回 `false`。<br>`[1,2,3].every(function (e) { console.log(e); return false; });`<br>`false` |
 | `Array.prototype.some(callback, this_obj)` | 类似于 `every()`，但只有当至少有一个元素满足你的测试时它才返回 `true`。<br>`['itsy', 'bitsy', 'spider'].some(hasEye)`<br>`false`<br>`['eency', 'weency', 'spider'].some(hasEye)`<br>`true` |
 | `Array.prototype.filter(callback, this_obj)` | 类似于 `some()`，它返回包含所有满足你测试元素的新数组：<br>`['itsy', 'bitsy', 'spider'].filter(hasEye)`<br>`['eency', 'weency']` |
-| `Array.prototype.map(callback, this_obj)` | 与 `forEach` 类似，因为它会对每个元素执行一次回调函数，但它还会根据回调函数的返回值构建一个新的数组并返回它。让我们将数组中的所有字符串转换为大写：<br><br>```javascript<br>> function uc(element, index, array) {<br>  return element.toUpperCase();<br>}<br>> ['eency', 'weency', 'spider'].map(uc);<br>["EENCY", "WEENCY", "SPIDER"]<br>``` |
-| `Array.prototype.reduce(callback, start)` | 为数组的每个元素执行回调函数。你的回调函数返回一个值。该值将传递给下一次迭代中的回调函数。整个数组最终会被归约为单个值：<br><br>```javascript<br>> function sum(res, element, idx, arr) {<br>  return res + element;<br>}<br>> [1, 2, 3].reduce(sum);<br>6<br>> [1, 2, 3].reduce(sum, 100);<br>106<br>``` |
-| `Array.prototype.reduceRight(callback, start)` | 类似于 `reduce()` 但从数组的末尾开始循环。<br><br>```javascript<br>> function concat(result_so_far, el) {<br>  return "" + result_so_far + el;<br>}<br>> [1, 2, 3].reduce(concat);<br>"123"<br>> [1, 2, 3].reduceRight(concat);<br>"321"<br>``` |
+| `Array.prototype.map(callback, this_obj)` | 与 `forEach` 类似，因为它会对每个元素执行一次回调函数，但它还会根据回调函数的返回值构建一个新的数组并返回它。让我们将数组中的所有字符串转换为大写：<br><br>```javascript
+<br>> function uc(element, index, array) {<br>  return element.toUpperCase();<br>}<br>> ['eency', 'weency', 'spider'].map(uc);<br>["EENCY", "WEENCY", "SPIDER"]<br>``` |
+| `Array.prototype.reduce(callback, start)` | 为数组的每个元素执行回调函数。你的回调函数返回一个值。该值将传递给下一次迭代中的回调函数。整个数组最终会被归约为单个值：<br><br>```javascript
+<br>> function sum(res, element, idx, arr) {<br>  return res + element;<br>}<br>> [1, 2, 3].reduce(sum);<br>6<br>> [1, 2, 3].reduce(sum, 100);<br>106<br>``` |
+| `Array.prototype.reduceRight(callback, start)` | 类似于 `reduce()` 但从数组的末尾开始循环。<br><br>```javascript
+<br>> function concat(result_so_far, el) {<br>  return "" + result_so_far + el;<br>}<br>> [1, 2, 3].reduce(concat);<br>"123"<br>> [1, 2, 3].reduceRight(concat);<br>"321"<br>``` |
 
 ## Function
 
@@ -7245,7 +7262,8 @@ function sum(a, b) {
 
 | 属性/方法 | 描述 |
 |---|---|
-| `apply(this_obj, params_array)` | 允许你在调用另一个函数时覆盖另一个函数的 `this` 值。`apply()` 接收的第一个参数是要绑定到此函数上的对象，第二个参数是要发送到被调用函数的参数数组。<br><br>```javascript<br>function whatIs() {<br>  return this.toString();<br>}<br>var myObj = {};<br>> whatIs.apply(myObj);<br>"[object Object]"<br>> whatIs.apply(window);<br>"[object Window]"<br>``` |
+| `apply(this_obj, params_array)` | 允许你在调用另一个函数时覆盖另一个函数的 `this` 值。`apply()` 接收的第一个参数是要绑定到此函数上的对象，第二个参数是要发送到被调用函数的参数数组。<br><br>```javascript
+<br>function whatIs() {<br>  return this.toString();<br>}<br>var myObj = {};<br>> whatIs.apply(myObj);<br>"[object Object]"<br>> whatIs.apply(window);<br>"[object Window]"<br>``` |
 | `call(this_obj, p1, p2, p3, ...)` | 与 `apply()` 相同，但通过列表接收参数，而不是通过数组。 |
 | `length` | 函数期望的参数个数。<br>`parseInt.length;`<br>`2`<br>如果你忘记了 `call()` 和 `apply()` 的区别：<br>`Function.prototype.call.length;`<br>`1`<br>`Function.prototype.apply.length;`<br>`2`<br>`call()` 的 `length` 为 1，因为除了第一个参数外的所有参数都是可选的。 |
 
@@ -7569,8 +7587,12 @@ JSON 代表 JavaScript Object Notation（JavaScript 对象表示）。它是一�
 
 | 方法 | 说明 |
 |---|---|
-| `parse(text, callback)` | 接收 JSON 编码字符串并返回一个对象。<br><br>```javascript<br>> var data = '{"hello": 1, "hi": [1, 2, 3]}';<br>> var o = JSON.parse(data);<br>> o.hello;<br>1<br>> o.hi;<br>[1, 2, 3]<br>```<br>可选的 `callback` 允许提供检查并修改结果的函数。`callback` 接收 `key` 和 `value` 参数并可以修改值（通过返回新值或 `undefined` 删除）。<br><br>```javascript<br>> function callback(key, value) {<br>  console.log(key, value);<br>  if (key == 'hello') {<br>    return 'bonjour';<br>  }<br>  if (key == 'hi') {<br>    return undefined;<br>  }<br>  return value;<br>}<br>> var o = JSON.parse(data, callback);<br>hello 1<br>hi [1, 2, 3]<br>> o.hello;<br>"bonjour"<br>> 'hi' in o;<br>false<br>``` |
-| `stringify(value, replacer, space)` | 接收任何值（通常是对象或数组）并编码为 JSON 字符串。<br><br>```javascript<br>> var o = {<br>  hello: 1,<br>  hi: 2,<br>  when: new Date(2015, 0, 1)<br>};<br>> JSON.stringify(o);<br>'{"hello":1,"hi":2,"when":"2015-01-01T08:00:00.000Z"}'<br>```<br>第二个参数允许你提供一个 `replacer` 函数（或白名单数组）来自定义返回值。白名单包含你感兴趣的 key：<br>`JSON.stringify(o, ['hello', 'hi']);`<br>`'{"hello":1,"hi":2}'`<br>最后一个参数帮助你获取人类可读的版本。你可以指定字符串或数字形式空格。<br><br>```javascript<br>> JSON.stringify(o, null, 4);<br>'{\n    "hello": 1,\n    "hi": 2,\n    "when": "2015-01-01T08:00:00.000Z"\n}'<br>``` |
+| `parse(text, callback)` | 接收 JSON 编码字符串并返回一个对象。<br><br>```javascript
+<br>> var data = '{"hello": 1, "hi": [1, 2, 3]}';<br>> var o = JSON.parse(data);<br>> o.hello;<br>1<br>> o.hi;<br>[1, 2, 3]<br>```<br>可选的 `callback` 允许提供检查并修改结果的函数。`callback` 接收 `key` 和 `value` 参数并可以修改值（通过返回新值或 `undefined` 删除）。<br><br>```javascript
+<br>> function callback(key, value) {<br>  console.log(key, value);<br>  if (key == 'hello') {<br>    return 'bonjour';<br>  }<br>  if (key == 'hi') {<br>    return undefined;<br>  }<br>  return value;<br>}<br>> var o = JSON.parse(data, callback);<br>hello 1<br>hi [1, 2, 3]<br>> o.hello;<br>"bonjour"<br>> 'hi' in o;<br>false<br>``` |
+| `stringify(value, replacer, space)` | 接收任何值（通常是对象或数组）并编码为 JSON 字符串。<br><br>```javascript
+<br>> var o = {<br>  hello: 1,<br>  hi: 2,<br>  when: new Date(2015, 0, 1)<br>};<br>> JSON.stringify(o);<br>'{"hello":1,"hi":2,"when":"2015-01-01T08:00:00.000Z"}'<br>```<br>第二个参数允许你提供一个 `replacer` 函数（或白名单数组）来自定义返回值。白名单包含你感兴趣的 key：<br>`JSON.stringify(o, ['hello', 'hi']);`<br>`'{"hello":1,"hi":2}'`<br>最后一个参数帮助你获取人类可读的版本。你可以指定字符串或数字形式空格。<br><br>```javascript
+<br>> JSON.stringify(o, null, 4);<br>'{\n    "hello": 1,\n    "hi": 2,\n    "when": "2015-01-01T08:00:00.000Z"\n}'<br>``` |
 
 # 附录 E：正则表达式
 
