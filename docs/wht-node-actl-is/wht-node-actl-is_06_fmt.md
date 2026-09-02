@@ -1,5 +1,5 @@
 
-# 什么我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。缓冲区？
+# 什么 缓冲区？
 
 > 原文：[`www.thenodebook.com/buffers/what-is-buffer`](https://www.thenodebook.com/buffers/what-is-buffer)
 
@@ -241,7 +241,7 @@ Binary -> Hex Mapping
 
 当`fs.readFileSync('logo.png')`运行时，Node 从操作系统获取的是一系列原始的字节。它是一串`01001001`s和`11101010`s。这些字节代表像素颜色、图像尺寸和压缩元数据，所有这些都遵循 PNG 文件格式规范。它们不是根据 ASCII 或 UTF-8 的规则被解释为文本。
 
-我们即将探讨的核心问题我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。告诉 JavaScript 对这组数据进行错误解释规则应用的灾难性后果。我们即将要求它使用为人类文字设计的字典来读取用像素语言写的情书。结果，正如你将看到的，是混乱。
+我们即将探讨的核心问题 告诉 JavaScript 对这组数据进行错误解释规则应用的灾难性后果。我们即将要求它使用为人类文字设计的字典来读取用像素语言写的情书。结果，正如你将看到的，是混乱。
 
 现在，有了对字节真正是什么的坚实基础，让我们看看它如何全部出错。
 

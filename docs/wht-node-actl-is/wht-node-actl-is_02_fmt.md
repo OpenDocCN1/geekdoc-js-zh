@@ -1,5 +1,7 @@
 
-# Node.js 实际上是什么我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。> 原文：[`www.thenodebook.com/node-arch/what-is-nodejs`](https://www.thenodebook.com/node-arch/what-is-nodejs)
+ # Node.js 实际上是什么 
+
+> 原文：[`www.thenodebook.com/node-arch/what-is-nodejs`](https://www.thenodebook.com/node-arch/what-is-nodejs)
 
 所以，你在这里是为了真正理解 Node.js。很好。
 
@@ -196,7 +198,7 @@ V8 的编译管道：当 V8 看到你的 JS 代码时，它首先使用一个基
 
 ```python
 import time
-from flask import Flask我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。app = Flask(__name__)
+from flask import Flask app = Flask(__name__)
 
 @app.route("/")
 def hello_world():

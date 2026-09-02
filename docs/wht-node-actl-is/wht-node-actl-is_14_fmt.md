@@ -1,6 +1,6 @@
 
 
-#我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。现代异步管道与错误处理
+# 现代异步管道与错误处理
 
 > [原文链接](https://www.thenodebook.com/streams/modern-pipelines-error-handling)
 

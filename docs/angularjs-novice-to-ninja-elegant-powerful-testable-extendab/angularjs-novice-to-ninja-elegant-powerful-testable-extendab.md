@@ -1114,7 +1114,10 @@ var myObject={name:'AngularJS', creator:'Misko'}
 scope ```
 scope ```
 scope 
-```$rootScope``` 是所有作用域的父级（**隔离作用域**除外，我们稍后会看到）。因此，所有附加到 ```$rootScope``` 的属性都隐式地对 ```scope 1``` 可用。同样，```scope 2``` 可以访问所有附加到 ```scope 1``` 的属性。
+```$rootScope``` 是所有作用域的父级（**隔离作用域**除外，我们稍后会看到）。因此，所有附加到 ```$rootScope``` 的属性都隐式地对 ```scope
+1``` 可用。同样，```scope
+2``` 可以访问所有附加到 ```scope
+1``` 的属性。
 
 如果你仔细检查上面的代码，你会发现作用域的嵌套方式类似于与这些作用域关联的 DOM 元素的嵌套。关于 AngularJS 作用域继承，最重要的一点是作用域之间是以原型方式相互继承的。JavaScript 与许多其他编程语言（如 Java、C++、C# 等）不同，不支持传统继承。它采用不同的方法来保持简单并易于使用。每个 JavaScript 构造函数都有一个名为 ```prototype``` 的属性，指向一个对象。当你访问对象上的属性（```someObject.someProperty```）时，JavaScript 会在该对象中搜索该属性。如果找到，则返回它。如果没有，那么 JavaScript 开始在该对象的 ```prototype``` 中搜索该属性。```prototype``` 属性只不过是另一个对象。同样，如果在 ```prototype``` 中找到搜索的属性，则返回它。如果未找到，则搜索继续向上沿着原型链进行，直到找到该属性或到达 ```Object.prototype```。以下示例将让你了解原型继承。
 

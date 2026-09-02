@@ -2607,7 +2607,8 @@ generate_web/pento/lib/pento/web/product_live/index.heex
 ```
 elixir View 应用时，系统为我们创建了头头部组件。如果你查看 `deps/phoenix/priv/templates/phx.gen.live/core_components.ex` 文件，你将发现 Phoenix 在运行生成器 `phx.gen.live` 时使用的一个示例。你会发现这段代码：
 
-```elixir owndefmodule <%= @namespace %>. CoreComponents do
+```elixir
+owndefmodule <%= @namespace %>. CoreComponents do
   ..
   def header(assigns) do
     ..

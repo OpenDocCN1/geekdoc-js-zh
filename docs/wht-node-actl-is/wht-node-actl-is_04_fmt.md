@@ -1,6 +1,6 @@
 
 
-#我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。事件循环解析
+# 事件循环解析
 
 > [`www.thenodebook.com/node-arch/event-loop-intro`](https://www.thenodebook.com/node-arch/event-loop-intro)
 
@@ -217,7 +217,7 @@ Libuv 使用最小堆，因此可以在 O(1) 时间内发现下一个即将到�
 
 
 
-想象你正在构建像 Uber Eats 或 Zomato我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。这样的食品配送服务的后端。当用户下单时，需要发生两件主要的事情：
+想象你正在构建像 Uber Eats 或 Zomato 这样的食品配送服务的后端。当用户下单时，需要发生两件主要的事情：
 
 1. **确认订单**：将订单详情写入你的主数据库。这是一个关键的 I/O 操作，必须成功完成。
 2. **通知餐厅**：向餐厅的平板电脑或系统发送通知。这是一个单独的操作，不应延迟用户的确认。
@@ -454,7 +454,7 @@ console.log("9. End");
 
 如果你开始看到警告，这意味着一个简单的`setInterval`宏任务被延迟了，这是一个表明其他东西正在占用 CPU 的明显信号。
 
-- **方法我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。2：`perf_hooks.monitorEventLoopDelay`。** 对于更专业的方法，Node 提供了一个内置的高分辨率工具来完成这个特定的目的。
+- **方法 2：`perf_hooks.monitorEventLoopDelay`。** 对于更专业的方法，Node 提供了一个内置的高分辨率工具来完成这个特定的目的。
 
   ```js
   const { monitorEventLoopDelay } = require("node:perf_hooks");

@@ -1,5 +1,7 @@
 
-# V8 JavaScript 引擎内部我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。> 原文：[`www.thenodebook.com/node-arch/v8-engine-intro`](https://www.thenodebook.com/node-arch/v8-engine-intro)
+ # V8 JavaScript 引擎内部 
+
+> 原文：[`www.thenodebook.com/node-arch/v8-engine-intro`](https://www.thenodebook.com/node-arch/v8-engine-intro)
 
 > ℹ️ **注意**
 >
@@ -423,7 +425,7 @@ V8 会因许多原因去优化，但某些原因比其他原因更常见。
 
 `validateTransaction`函数——我们最热的代码路径——被 TurboFan 优化得非常漂亮，但随即被立即丢弃。一次又一次。快速查看对应于该字节码偏移量的代码，指向了我们计算代币兑换潜在[滑点](https://en.wikipedia.org/wiki/Slippage_(finance))的那一行。
 
-问题是什么？我们处理的大多数交易——标准的 ETH 转账、小型的 DEX我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。兑换——其价值都能完美地适应标准的 JavaScript `Number`。但时不时地，某个“鲸鱼”会转移大量高精度代币（比如 SHIB）。这些数值如此之大，只能用`BigInt`来表示。
+问题是什么？我们处理的大多数交易——标准的 ETH 转账、小型的 DEX 兑换——其价值都能完美地适应标准的 JavaScript `Number`。但时不时地，某个“鲸鱼”会转移大量高精度代币（比如 SHIB）。这些数值如此之大，只能用`BigInt`来表示。
 
 TurboFan 已经看到了数百万个`Number`类型，并对其下了重注。它为快速浮点运算生成了超优化的机器代码。当`BigInt`出现时，JIT 的世界观崩溃。退出！函数去优化。几千笔交易后，V8 会再次尝试，重新优化为`Number`。然后另一个鲸鱼转账会到来。重复上述过程。
 
@@ -715,7 +717,8 @@ V8 根据其内容对数组进行大量优化，并在元素种类之间动态�
 
 
 
-```js我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。// This code lives in examples/v8/optimization-triggers.js
+```js
+// This code lives in examples/v8/optimization-triggers.js
 
 // 1\. Use a class or a constructor function to define a stable shape.
 // This is the most reliable way to ensure all objects share a hidden class.

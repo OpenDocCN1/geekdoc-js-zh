@@ -1,5 +1,5 @@
 
-# 什么我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。 Node.js 实际上是什么
+# 什么  Node.js 实际上是什么
 
 > 原文：[`www.thenodebook.com/node-arch/what-is-nodejs#the-ecosystem`](https://www.thenodebook.com/node-arch/what-is-nodejs#the-ecosystem)
 
@@ -186,7 +186,7 @@ Dahl 看到 JavaScript，一个在浏览器中诞生的语言，非常适合这�
 
 
 
-首先，请确保你已经安装了 Python我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。和 Flask。`pip install Flask`
+首先，请确保你已经安装了 Python 和 Flask。`pip install Flask`
 
 将此代码保存为`blocking_server.py`：
 

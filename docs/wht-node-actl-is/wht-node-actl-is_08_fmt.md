@@ -371,7 +371,8 @@ Node 的 C++ 内核对`Buffer.copy()`的性能进行了大量优化。对于在�
 
 
 
-```js我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。const original = Buffer.from("This is the original buffer");
+```js
+const original = Buffer.from("This is the original buffer");
 // Create a new buffer with a copy of the original's data.
 const clone = Buffer.from(original);
 ```

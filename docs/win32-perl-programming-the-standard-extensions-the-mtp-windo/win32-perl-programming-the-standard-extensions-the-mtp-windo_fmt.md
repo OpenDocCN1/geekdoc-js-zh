@@ -821,7 +821,7 @@ Win32 平台通过名称引用计算机。名称在网络中对一台计算机�
 
 所有域都必须有一个所谓的主域控制器（Primary Domain Controller, PDC），它保存所有该域的用户和计算机的数据库。PDC 将管理域内所有的备用域控制器（Backup Domain Controllers, BDC）。PDC 会不时用域的最新信息更新 BDC。这意味着，如果管理员在 PDC 的用户账户上更改了内容，PDC 最终会获此更改，并不仅会更新自己，还会更新域中存在 BDC。
 
-当计算机或用户登录到域时，将由 PDC 或 BDC 执行其身份验证。哪台机器执行任务取决于它们的忙碌程度以及域控制器距离请求计算机的物理距离（通常情况下，如果 DC 在同一子网内，它将比位于不同子网的 DC我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。先做出响应）。
+当计算机或用户登录到域时，将由 PDC 或 BDC 执行其身份验证。哪台机器执行任务取决于它们的忙碌程度以及域控制器距离请求计算机的物理距离（通常情况下，如果 DC 在同一子网内，它将比位于不同子网的 DC 先做出响应）。
 
 Win32 扩展中的许多函数都提到了所谓的“主域”。当计算机或用户登录到某个域时，该域就会成为主域——即默认域。这也被称为登录域（logon domain）。
 
@@ -1387,7 +1387,7 @@ Win32::NetResource::CancelConnection($localName, $Flag, $Force);
 
 如果`CancelConnection()`函数执行成功，它返回`TRUE`；否则返回`FALSE`。
 
-假设某天你的老板要求你断开所有到远程驱动器的连接，并删除我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。这些驱动的所有持久连接。你可以使用示例 2.15 中的代码。
+假设某天你的老板要求你断开所有到远程驱动器的连接，并删除 这些驱动的所有持久连接。你可以使用示例 2.15 中的代码。
 
 ### 示例 2.15 将你的机器与所有共享磁盘资源断开
 
@@ -2231,7 +2231,8 @@ Win32::NetAdmin::LocalGroupCreate($Machine, $Name, $Comment);
 
 
 
-```perl我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。use Win32::NetAdmin;
+```perl
+use Win32::NetAdmin;
 $Machine = "\\\\server1";
 if(Win32::NetAdmin::GroupCreate($Machine,
   "My Group", "This group is a test") {
@@ -3499,7 +3500,7 @@ $Event->Close();
 
 
 
-| 标志 |我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。说明 |
+| 标志 | 说明 |
 | --- | --- |
 | `EVENTLOG_FORWARDS_READ` | 按照时间顺序从数据库正向读取事件。 |
 | `EVENTLOG_BACKWARDS_READ` | 按照时间顺序从数据库反向读取事件。 |
@@ -4452,7 +4453,7 @@ Win32::MessageBox(Win32::GetLastError()) . "\n";
 
 
 
-创建监控对象后，你需要指示你正在监控它。这我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。通过`FindNext()`方法完成的：
+创建监控对象后，你需要指示你正在监控它。这 通过`FindNext()`方法完成的：
 
 ```perl
 $NotifyObject->FindNext()
@@ -5755,7 +5756,8 @@ use Win32::OLE::Const $TypeLibrary [$VerMajor, [$VerMin, $Language]];
 
 
 
-```perl我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。074. } elsif ($Hash{EventType} == EVENTLOG_INFORMATION_TYPE)
+```perl
+074. } elsif ($Hash{EventType} == EVENTLOG_INFORMATION_TYPE)
 075. {
 076.     $EventType = "Information"
 077.     $Color = 1; # Black
@@ -8950,7 +8952,7 @@ $Process->Wait($TimeOut);
 
 
 
-第一个参数`$TimeOut`我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。超时值。该值的为毫秒，表示脚本等待进程终止的时间。如果进程在规定时间内没有终止，脚本将继续执行。如果该参数是`INFINITE`，脚本将永远等待，直到你关闭机器。`Wait()`方法在进程在等待期间终止时返回 1；否则返回 0，表示进程仍在运行但已超出超时值。
+第一个参数`$TimeOut` 超时值。该值的为毫秒，表示脚本等待进程终止的时间。如果进程在规定时间内没有终止，脚本将继续执行。如果该参数是`INFINITE`，脚本将永远等待，直到你关闭机器。`Wait()`方法在进程在等待期间终止时返回 1；否则返回 0，表示进程仍在运行但已超出超时值。
 
 ## 优先级
 
@@ -9144,7 +9146,7 @@ Win32::AdminMisc::CreateProcessAsUser($Application [, $DefaultDirectory],
 
 
 
-配置可以包含表我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。8.4 中列出的键。
+配置可以包含表 8.4 中列出的键。
 
 ## 表 8.4 配置键
 
@@ -10469,7 +10471,8 @@ $Ver{servicepack} -= s/\x00//;
 
 
 
-```perl我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。01. use Win32::API;
+```perl
+01. use Win32::API;
 02. $ApiObject = new Win32::API($kernel32, "GetVersionEx", [P, I]);
 03. # 根据我们处理的是否 Unicode，查找
 04. # 字符串需要多少个长度 (5)
@@ -12647,7 +12650,7 @@ UNIX 和 Win32 平台之间最明显的区别之一是文件路径。任何 UNIX
 
 Win32 Perl 用户面临的最常见问题与以下相关：
 
-- 文件路径我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。- 文件权限
+- 文件路径 - 文件权限
 
 # 文件路径
 
@@ -16792,10 +16795,10 @@ AVs (数组变量)
   - 参见 strings
   - 读模式管道, 216
 - 字节状态 (命名管道), 214-215
-- `BytesRecvedUncompressed` key (`RASPORTSTATS` hash), 56我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。
+- `BytesRecvedUncompressed` key (`RASPORTSTATS` hash), 56 
 
 
-- `BytesRecved` key (`RASPORTSTATS` hash),我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。56
+- `BytesRecved` key (`RASPORTSTATS` hash), 56
 - `BytesRecvedCompressed` key (`RASPORTSTATS` hash), 56
 - `BytesXmitted` key (`RASPORTSTATS` hash), 56
 - `BytesXmittedCompressed` key (`RASPORTSTATS` hash), 56
@@ -18887,7 +18890,7 @@ AVs (数组变量)
 
 
 
-- `GetConnections()` 函数,我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。443
+- `GetConnections()` 函数, 443
 - `GetConnectOption()` 函数, 443
 - `GetConnectOption()` 方法, 265-266
 - `GetCursorName()` 函数, 443

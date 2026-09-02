@@ -1,5 +1,7 @@
 
-# 可写流我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。> 原文：[`www.thenodebook.com/streams/writable-streams`](https://www.thenodebook.com/streams/writable-streams)
+ # 可写流 
+
+> 原文：[`www.thenodebook.com/streams/writable-streams`](https://www.thenodebook.com/streams/writable-streams)
 
 你已经看到了可读流是如何工作的。你理解了它们如何维护内部缓冲区，如何在模式之间转换，以及如何将数据传递给消费者。现在我们需要转换视角，看看流方程的另一边：**一旦数据被生成后，数据去哪里了？**
 

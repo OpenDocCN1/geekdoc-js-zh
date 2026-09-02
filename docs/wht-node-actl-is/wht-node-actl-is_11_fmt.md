@@ -1,6 +1,6 @@
 
 
-# 可读流我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。> [`www.thenodebook.com/streams/readable-streams`](https://www.thenodebook.com/streams/readable-streams)
+# 可读流 > [`www.thenodebook.com/streams/readable-streams`](https://www.thenodebook.com/streams/readable-streams)
 
 现在你理解了流存在的意义。你知道它们解决了处理大型数据集而不必将所有内容加载到内存中的问题。你已经看到了推送和拉模型之间的概念差异，并且知道 Node.js 流结合了这两种方法。现在的问题是：你如何在代码中实际使用可读流，更重要的是，它们在内部是如何工作的？
 
@@ -815,7 +815,7 @@ for await (const num of stream) {
 
 要消费可读流，你有几种选择：基于事件的消费使用`data`和`end`监听器，异步迭代使用`for await...of`，在暂停模式下显式调用`read()`，使用`pipe()`进行管道传输，或者使用`stream.pipeline()`进行健壮的管道。每种模式在简单性、反向压力处理和控制方面都有权衡。
 
-可读流通过事件来发出状态变化：`data`用于数据块，`end`用于完成，`error`用于错误，`readable`用于数据可用性，`close`用于资源清理。你的代码我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。这些事件做出反应，以处理数据和处理边缘情况。
+可读流通过事件来发出状态变化：`data`用于数据块，`end`用于完成，`error`用于错误，`readable`用于数据可用性，`close`用于资源清理。你的代码 这些事件做出反应，以处理数据和处理边缘情况。
 
 反向压力对于有限的内存使用至关重要。如果你的消费者比生产者慢，你必须使用一种强制自动应用反向压力的消费模式（异步迭代、`pipeline()`），或者手动实现它（暂停/恢复）。
 

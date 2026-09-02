@@ -1,5 +1,6 @@
 
-# WebGL 编程指南：使用 WebGL 的交互式我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。3D 图形编程##《WebGL 编程指南》的评价“WebGL 为在浏览器中创建提供‘顶级应用体验’的应用提供了最后的特性之一，而《WebGL 编程指南》在创建这些应用方面处于领先地位。它使用 WebGL 的各个方面——JavaScript、OpenGL ES 和基础图形技术的涵盖，为你所需的所有知识提供了详尽的教育。基于 Web 的应用程序未来的趋势，这本书将使你领先潮流！”
+# WebGL 编程指南：使用 WebGL 的交互式 
+3D 图形编程##《WebGL 编程指南》的评价“WebGL 为在浏览器中创建提供‘顶级应用体验’的应用提供了最后的特性之一，而《WebGL 编程指南》在创建这些应用方面处于领先地位。它使用 WebGL 的各个方面——JavaScript、OpenGL ES 和基础图形技术的涵盖，为你所需的所有知识提供了详尽的教育。基于 Web 的应用程序未来的趋势，这本书将使你领先潮流！”
 
 **Dave Schreiner**，《OpenGL 编程指南》第八版合著者；OpenGL 库系列主编（Addison Wesley）
 
@@ -372,7 +373,8 @@ WebGL 应用由 HTML 和 JavaScript 文件组成，只需通过将它们放置�
 
 
 
-```javascript我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。// DrawRectangle.jsfunction main() {
+```javascript 
+// DrawRectangle.jsfunction main() {
  // 获取 <canvas> 元素 var canvas = document.getElementById('example');
  if (!canvas) {
  console.log('Failed to retrieve the <canvas> element');
@@ -400,7 +402,8 @@ ctx.fillStyle = 'rgba(0,0,255,1.0)'; // 设置蓝色ctx.fillRect(120,10,150,150)
 
 **图2.4** Chrome 中的控制台## 使用元素获取2D 图形的渲染上下文由于 `<canvas>`设计得非常灵活，且同时支持2D 和3D，因此它并不直接提供绘制方法，而提供了一种名为“上下文 (context)”的机制，该机制支持实际的绘制功能。第11 行提供了该上下文：
 
-```javascript11 var ctx = canvas.getContext('2d');
+```javascript11
+var ctx = canvas.getContext('2d');
 ```
 
 方法 `canvas.getContext()` 有一个参数，用于指定你想使用的绘制功能类型。在示例中，如果你想绘制一个2D 图形，必须指定 `2d`（区分大小写）。
@@ -411,7 +414,8 @@ ctx.fillStyle = 'rgba(0,0,255,1.0)'; // 设置蓝色ctx.fillRect(120,10,150,150)
 
 第14 行和第15 行处理了这些步骤：
 
-```javascript13 // 绘制蓝色矩形 <- (3)
+```javascript13
+// 绘制蓝色矩形 <- (3)
 14 ctx.fillStyle = 'rgba(0,0,255,1.0)'; // 设置颜色为蓝色15 ctx.fillRect(120,10,150,150); // 用颜色填充矩形```
 
 第14 行字符串 `rgba(0,0,255,1.0)` 中的 `rgba` 表示 `r`（红）、`g`（绿）、`b`（蓝）和 `a`（alpha：透明度），每个 RGB 参数的值范围从0（最小值）到255（最大值），而 alpha 参数的值范围从0.0（透明）到1.0（不透明）。通常，计算机系统通过红、绿、蓝（三原色）的组合来表示颜色，这被称为 **RGB 格式**。当加入 alpha（透明度）时，该格式被称为 **RGBA 格式**。
@@ -539,7 +543,8 @@ ctx.fillStyle = 'rgba(0,0,255,1.0)'; // 设置蓝色ctx.fillRect(120,10,150,150)
 
 ## 实验示例程序让我们示例程序进行一些实验，通过尝试清除操作使用其他颜色，来熟悉在 WebGL 中指定颜色的方法。使用你喜欢的编辑器，重写 `HelloCanvas.js` 的第14 行如下，并将修改保存回文件：
 
-```javascript14 gl.clearColor(0.0,0.0,1.0,0.0);
+```javascript14
+gl.clearColor(0.0,0.0,1.0,0.0);
 ```
 
 在浏览器中重新加载 `HelloCanvas.html` 后，`HelloCanvas.js`也会重新加载，然后执行 `main()` 将绘制区域清除为蓝色并检查结果。例如，`gl.clearColor(0.5,0.5,0.5,1.0)` 将区域清除为灰色。
@@ -3189,7 +3194,8 @@ gl.uniformMatrix4fv(location, transpose, array)
 
 
 
-将由`array`指定的我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。4x4 矩阵赋值给由`location`指定的统一变量。
+将由`array`指定的 
+4x4 矩阵赋值给由`location`指定的统一变量。
 
 | 参数 | location | 指定统一变量的位置 |
 | :--- | :--- | :--- |
@@ -3205,14 +3211,16 @@ gl.uniformMatrix4fv(location, transpose, array)
 
 ### 重用相同方法平移现在，正如你在方程3.10 和3.11 中所示，你可以使用相同的4x4 矩阵表示平移和旋转。这两个方程都使用`<新坐标> = <变换矩阵> * <原始坐标>`的形式。在顶点着色器中的代码如下：
 
-```javascriptgl_Position = xformMatrix * a_Position;
+```javascriptgl_Position
+= xformMatrix * a_Position;
 ```
 
 这意味着如果你将数组`xformMatrix`的元素从旋转矩阵改为平移矩阵，你将能够将平移应用于三角形，以获得与使用方程 (3.18) 相同的结果。
 
 要实现这一点，修改`RotatedTriangle_Matrix.js`中的第17 行，使用之前示例中的平移距离：
 
-```javascriptvar Tx =0.5, Ty =0.5, Tz =0.0;
+```javascriptvar
+Tx =0.5, Ty =0.5, Tz =0.0;
 ```
 
 你可能需要以列主序重写矩阵的创建，记住你需要并在其中存储元素。尽管现在被用于持有平移矩阵，让我们保持变量名`xformMatrix`不变，因为这强化了我们使用的是基本相同代码的事实。最后，如果你使用`ANGLE`，第43 到45 行被注释掉了：
@@ -3251,7 +3259,8 @@ gl.uniformMatrix4fv(location, transpose, array)
 
 与之前的示例一样，如果你将此矩阵存储在`xformMatrix`中，你就可以使用在`RotatedTriangle_Matrix.js`中相同的顶点着色器来缩放三角形。例如，下面的示例程序将三角形在垂直方向上缩放1.5 倍，如图3.29 所示：
 
-```javascript17 var Sx =1.0, Sy =1.5, Sz =1.0;
+```javascript17
+var Sx =1.0, Sy =1.5, Sz =1.0;
 47 // Note: WebGL is column matrix order48 var xformMatrix = new Float32Array([
 49 Sx,0.0,0.0,0.0,
 500.0, Sy,0.0,0.0,
@@ -3297,7 +3306,8 @@ gl.uniformMatrix4fv(location, transpose, array)
 
 该示例程序与第3章中的`RotatedTriangle_Matrix.js`几乎相同，除了创建矩阵并将其传递给顶点着色器的新步骤外。在`RotatedTriangle_Matrix.js`中，你这样创建矩阵的：
 
-```javascript1 // RotatedTriangle_Matrix.js...
+```javascript1
+// RotatedTriangle_Matrix.js...
 43 // 创建旋转矩阵44 var radian = Math.PI * ANGLE /180.0; // 转换为弧度45 var cosB = Math.cos(radian), sinB = Math.sin(radian);
 4647 // Note: WebGL is column matrix order48 var xformMatrix = new Float32Array([
 49 cosB, sinB,0.0,0.0,
@@ -3310,11 +3320,13 @@ gl.uniformMatrix4fv(location, transpose, array)
 
 在该示例程序中，你需要使用`Matrix4`对象重写这部分，并利用其`setRotate()`方法计算旋转矩阵。下面的代码片段显示了`RotatedTriangle_Matrix4.js`中重写的部分：
 
-```javascript1 // 为旋转矩阵创建 Matrix4象47 var xformMatrix = new Matrix4();
+```javascript1
+// 为旋转矩阵创建 Matrix4象47 var xformMatrix = new Matrix4();
 48 // 将旋转矩阵设置为 xformMatrix49 xformMatrix.setRotate(ANGLE,0,0,1);
 ```
 
-```javascript56 // 将旋转矩阵传递给顶点着色器57 gl.uniformMatrix4fv(u_xformMatrix, false, xformMatrix.elements);
+```javascript56
+// 将旋转矩阵传递给顶点着色器57 gl.uniformMatrix4fv(u_xformMatrix, false, xformMatrix.elements);
 ```
 
 (0,0,0) 到 (x, y, z)。正如你从第3章（图3.21）中所记得，如果旋转绕旋转轴顺时针方向进行的，则角度为正。在这个示例中，由于旋转绕 z轴进行的，因此轴被设置为 (0,0,1)：
@@ -3382,7 +3394,8 @@ $$\begin{bmatrix}$$我们在示例中使用3x3 矩阵，但这种方法可以适
 
 此列表中的关键行46 行和47 行，它们计算了：
 
-```javascript46 modelMatrix.setRotate(ANGLE,0,0,1); // 设置旋转矩阵47 modelMatrix.translate(Tx,0,0); // 将 modelMatrix乘以计算出的平移量```
+```javascript46
+modelMatrix.setRotate(ANGLE,0,0,1); // 设置旋转矩阵47 modelMatrix.translate(Tx,0,0); // 将 modelMatrix乘以计算出的平移量```
 
 由于46 行使用了带有`set(setRotate())`的方法，旋转矩阵使用变量`modelMatrix`的参数计算的。下一行47 使用了不带`set(translate())`的方法，如前所述，它使用参数计算平移矩阵，并将`modelMatrix`中的矩阵乘以新计算的平移矩阵（旋转矩阵）×（平移矩阵），并将结果存回`modelMatrix`中。
 
@@ -3392,7 +3405,8 @@ $$\begin{bmatrix}$$我们在示例中使用3x3 矩阵，但这种方法可以适
 
 ### 尝试示例程序让我们重写示例程序，首先旋转三角形，然后平移它。这只需要你交换旋转和平移的顺序即可。在这种情况下，你应该注意通过使用`setTranslate()`先执行平移：
 
-```javascript46 modelMatrix.setTranslate(Tx,0,0);
+```javascript46
+modelMatrix.setTranslate(Tx,0,0);
 47 modelMatrix.rotate(ANGLE,0,0,1);
 ```
 
@@ -3406,7 +3420,8 @@ $$\begin{bmatrix}$$我们在示例中使用3x3 矩阵，但这种方法可以适
 
 ![](img/a66df0953a1af9940e4b922673211509_150_1.png)
 
-**图我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。4.5**变换的顺序将显示不同的结果以上就是使用`cuon-matrix.js`中定义的方法创建变换矩阵的初步说明。你将在本书的其余部分一直使用它们，因此你有机会进一步学习它们。
+**图 
+4.5**变换的顺序将显示不同的结果以上就是使用`cuon-matrix.js`中定义的方法创建变换矩阵的初步说明。你将在本书的其余部分一直使用它们，因此你有机会进一步学习它们。
 
 ## 动画到目前为止，本章解释了如何变换形状以及使用矩阵库执行变换操作。你现在已经有足够的 WebGL 知识来开始下一步：将这些知识应用于形状动画。
 
@@ -3503,7 +3518,8 @@ function tick() {
 
 第59 到64 行将机制1 实现为函数`tick`，该函数被重复调用以绘制三角形。在查看整个“tick”机制实际上如何运作的之前，让我们来看看它每次执行时发生了什么：
 
-```javascript53 // 三角形的当前旋转角度54 var currentAngle =0.0;
+```javascript53
+// 三角形的当前旋转角度54 var currentAngle =0.0;
 55 // 用于模型变换的 Mat4象56 var modelMatrix = new Matrix4();
 575859 // 开始绘制三角形 - (2)
 60 var tick = function() {
@@ -3534,7 +3550,8 @@ function tick() {
 
 - `gl`：绘制三角形的上下文- `n`：顶点的数量- `currentAngle`：当前旋转角度- `modelMatrix`：用于存储使用`currentAngle`计算出的旋转矩阵的`Matrix4`对象- `u_ModelMatrix`：传递`modelMatrix`的 uniform变量的位置实际的函数代码位于第99 到111 行：
 
-```javascript99 function draw(gl, n, currentAngle, modelMatrix, u_ModelMatrix) {
+```javascript99
+function draw(gl, n, currentAngle, modelMatrix, u_ModelMatrix) {
 100 // 设置旋转矩阵101 modelMatrix.setRotate(currentAngle,0,0,1);
 102103 // 将旋转矩阵传递给顶点着色器104 gl.uniformMatrix4fv(u_ModelMatrix, false, modelMatrix.elements);
 105106 // 清除 <canvas>
@@ -3545,12 +3562,14 @@ function tick() {
 
 首先，第101 行使用`cuon-matrix.js`提供的`setRotate()`方法计算旋转矩阵并写入`modelMatrix`：
 
-```javascript101 modelMatrix.setRotate(currentAngle,0,0,1);
+```javascript101
+modelMatrix.setRotate(currentAngle,0,0,1);
 ```
 
 接下来，第104 行通过`gl.uniformMatrix4fv()`将矩阵传递给顶点着色器：
 
-```javascript104 gl.uniformMatrix4fv(u_ModelMatrix, false, modelMatrix.elements);
+```javascript104
+gl.uniformMatrix4fv(u_ModelMatrix, false, modelMatrix.elements);
 ```
 
 之后，第107 行清除了`<canvas>`，然后在第110 行调用`gl.drawArrays()`来执行绘制三角形。这些步骤与之前相同。
@@ -3589,7 +3608,8 @@ function tick() {
 
 `animate()`函数更新三角形的当前旋转角度。代码如下：
 
-```javascriptvar g_last = Date.getTime();
+```javascriptvar
+g_last = Date.getTime();
 function animate(currentAngle) {
  var now = Date.getTime();
  var elapsed = now - g_last;
@@ -3609,7 +3629,8 @@ function animate(currentAngle) {
 
 要做到这一点，你只需要在第102 行插入平移。由于变量`modelMatrix`已经包含了旋转矩阵，你可以使用`translate()`而不是`setState()`来将`modelMatrix`乘以`RotatingTranslatedTriangle`：
 
-```javascript99 draw(gl, n, currentAngle, modelMatrix, u_ModelMatrix) {
+```javascript99
+draw(gl, n, currentAngle, modelMatrix, u_ModelMatrix) {
 100 // 设置旋转矩阵101 modelMatrix.rotate(currentAngle,0,0,1);
 102 modelMatrix.translate(0.35,0,0);
 103 // 将旋转矩阵传递给顶点着色器104 gl.uniformMatrix4fv(u_ModelMatrix, false, modelMatrix.elements);
@@ -5945,9 +5966,11 @@ function initVertexBuffers(gl) {
 
 
 
-```text我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。0.0, -0.6, -1.0, // 前方的蓝色三角形```
+```text 
+0.0, -0.6, -1.0, // 前方的蓝色三角形```
 
-# 第7章走向3D 世界```javascript83 -0.5, -0.5,0.0,0.41.0,
+# 第7章走向3D 世界```javascript83
+-0.5, -0.5,0.0,0.41.0,
 
 840.5, -0.5,0.0,1.0,0.40.485 \]);
 
@@ -5978,7 +6001,8 @@ function initVertexBuffers(gl) {
 
 为了指定视图矩阵（即你在观察哪里以及你在观察场景的哪个部分），你需要设置并将矩阵传递给顶点着色器。为此，在第58 行创建了一个`Matrix4`对象`viewMatrix`，并在第59 行通过`setLookAt()`计算并存储`viewMatrix`。该视图矩阵在第62 行传递给`u_ViewMatrix`，它顶点着色器中使用的统一变量：
 
-```javascript57 // 设置视点、注视点和方向58 var viewMatrix = new matrix4();
+```javascript57
+// 设置视点、注视点和方向58 var viewMatrix = new matrix4();
 
 59 viewMatrix.setLookAt(0.20,0.25,0.25,0,0,0,0,1,0);
 ```
@@ -5995,7 +6019,8 @@ function initVertexBuffers(gl) {
 
 **列表7.2** `LookAtRotatedTriangles.js`
 
-```javascript1 // LookAtRotatedTriangles.js2 // 顶点 shader 程序3 var VSHADER_SOURCE =4 'attribute vec4 a_Position;\n' +
+```javascript1
+// LookAtRotatedTriangles.js2 // 顶点 shader 程序3 var VSHADER_SOURCE =4 'attribute vec4 a_Position;\n' +
 
 5 'attribute vec4 a_Color;\n' +
 
@@ -6014,31 +6039,37 @@ function initVertexBuffers(gl) {
 12 }\';
 ```
 
-```javascriptfunction main() {
+```javascriptfunction
+main() {
 ```
 
-```javascript51 // 获取 u_ViewMatrix 和 u_ModelMatrix 的存储位置52 var u_ViewMatrix = gl.getUniformLocation(gl.program, 'u_ViewMatrix');
+```javascript51
+// 获取 u_ViewMatrix 和 u_ModelMatrix 的存储位置52 var u_ViewMatrix = gl.getUniformLocation(gl.program, 'u_ViewMatrix');
 
 53 u_ModelMatrix = gl.getUniformLocation(gl.program, 'u_ModelMatrix');
 ```
 
-```javascript59 // 指定视点和视线60 var viewMatrix = new Matrix4();
+```javascript59
+// 指定视点和视线60 var viewMatrix = new Matrix4();
 
 61 viewMatrix.setLookAt(0.20,0.25,0.25,0,0,1,0);
 ```
 
-```javascript63 //计算旋转矩阵64 var modelMatrix = new Matrix4();
+```javascript63
+//计算旋转矩阵64 var modelMatrix = new Matrix4();
 
 65 modelMatrix.setRotate(-10,0,0,1); // 绕 z轴旋转```
 
-```javascript67 // 将矩阵传递给每个 uniform变量68 gl.uniformMatrix4fv(u_ViewMatrix, false, viewMatrix.elements);
+```javascript67
+// 将矩阵传递给每个 uniform变量68 gl.uniformMatrix4fv(u_ViewMatrix, false, viewMatrix.elements);
 
 69 gl.uniformMatrix4fv(u_ModelMatrix, false, modelMatrix.elements);
 ```
 
 首先，让我们检查顶点 shader 程序。你可以看到第10 行使用`u_ModelMatrix`原样实现了等式7.1，该变量接收来自 JavaScript 程序的数据。
 
-```javascript10 gl_Position = u_ViewMatrix * u_ModelMatrix * a_Position;
+```javascript10
+gl_Position = u_ViewMatrix * u_ModelMatrix * a_Position;
 ```
 
 在 JavaScript 的`main()`函数中，你已经有了计算视图矩阵的代码，因此你只需要添加计算绕 z轴旋转 -10 度的旋转矩阵的代码。第53 行给出了变量`u_ModelMatrix`的存储位置，第64 行为旋转矩阵创建了`modelMatrix`。然后第65 行使用`Matrix4.setRotate()`计算矩阵，并将其传递给`u_ModelMatrix`。
@@ -6094,7 +6125,8 @@ modelMatrix.setRotate(-10,0,0,1); // 绕 z轴旋转// 相乘两个矩阵var mode
 
 最后，在这个示例程序中，每个矩阵分别在第59、63 和66 行计算，以便更好地展示计算流程。但为了效率考虑，可以将其重写为一行：
 
-```javascriptvar modelViewMatrix = new Matrix4();
+```javascriptvar
+modelViewMatrix = new Matrix4();
 
 modelViewMatrix.setLookAt(0.20,0.25,0.25,0,0,1,0).rotate(-10,0,1);
 
@@ -6113,7 +6145,8 @@ modelViewMatrix.setLookAt(0.20,0.25,0.25,0,0,1,0).rotate(-10,0,1);
 
 ## 列表7.4 `LookAtTrianglesWithKeys`
 
-```javascript1 LookAtTrianglesWithKeys.js// 顶点 shader 程序var VSHADER_SOURCE = 'attribute vec4 a_Position;\n' +
+```javascript1
+LookAtTrianglesWithKeys.js// 顶点 shader 程序var VSHADER_SOURCE = 'attribute vec4 a_Position;\n' +
 
  'attribute vec4 a_Color;\n' +
 
@@ -6156,7 +6189,8 @@ modelViewMatrix.setLookAt(0.20,0.25,0.25,0,0,1,0).rotate(-10,0,1);
 129 // 设置视点和视线130 viewMatrix.setAt(g_EYE, g_eY, g_eEZ,0,0,0,0,1,0);
 ```
 
-```javascript131 // Pass the view matrix to the uViewMatrix variable132133 gl.uniformMatrix4fv(u_ViewMatrix, false, viewmatrix.elements);
+```javascript131
+// Pass the view matrix to the uViewMatrix variable132133 gl.uniformMatrix4fv(u_ViewMatrix, false, viewmatrix.elements);
 
 135 gl.clear(gl.COLOR_BUFFER_BIT); // Clear <canvas>
 
@@ -6171,14 +6205,16 @@ modelViewMatrix.setLookAt(0.20,0.25,0.25,0,0,1,0).rotate(-10,0,1);
 
 由于变量`g_eyeX`、`g_eyeY`和`g_eyeZ`指定了位置，并在每次按下按键时在事件处理器中重新计算。为了在按键时调用事件处理器，你需要将其注册到对象的`onkeydown`属性上。在这个事件处理器中，由于你需要调用`draw()`来绘制三角形，你必须传递`draw()`需要的所有参数。这因为任何匿名函数都是如下方式注册处理器的：
 
-```javascript59 // Register the event handler to be called on key press60 document.keydown = function(ev){ keydown(ev, gl, n, u_ViewMatrix);
+```javascript59
+// Register the event handler to be called on key press60 document.keydown = function(ev){ keydown(ev, gl, n, u_ViewMatrix);
 
  draw(viewMatrix); };
 ```
 
 这设置了在按下按键时调用事件处理器`keydown()`。让我们看看`keydown()`如何实现的。
 
-```javascript118 keydown(ev, gl, n, u_ViewMatrix, viewMatrix) {
+```javascript118
+keydown(ev, gl, n, u_ViewMatrix, viewMatrix) {
 
 119 if (ev.keyCode ==39) { //右方向键被按下120 g_eyeX +=0.01;
 
@@ -6815,7 +6851,8 @@ projMatrix.setPerspective(30, canvas.width/canvas.height, 1, 100);
 
 
 
-```javascript我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。mvpMatrix.set(projMatrix).multiply(viewMatrix).multiply(modelMatrix);
+```javascript 
+mvpMatrix.set(projMatrix).multiply(viewMatrix).multiply(modelMatrix);
 
 // 将模型视图投影矩阵传递给 u_MvpMatrixgl.uniformMatrix4fv(u_MvpMatrix, false, mvpmatrix.elements);
 
@@ -6842,7 +6879,8 @@ ngl.drawArrays(gl.TRIANGLES,0, n); // 绘制一个矩形}
 
 例如，在 `PerspectiveView_mvMatrix.js` 中，你按照以下顺序指定了三角形的坐标和颜色：
 
-```javascriptvar vertexColors = new Float32Array([
+```javascriptvar
+vertexColors = new Float32Array([
  // 顶点坐标和颜色0.0,1.0, -4.0,0.4,0.4, // 后方的绿色 -0.5, -1.0, -4.0,1.0,0.4,
 
 0.5, -1.0, -4.0,1.0,0.4,
@@ -6858,7 +6896,8 @@ ngl.drawArrays(gl.TRIANGLES,0, n); // 绘制一个矩形}
 
 WebGL 按照你指定顶点的 z 顺序绘制三角形（即：绘制绿色三角形，然后黄色三角形，最后蓝色三角形）。这确保了离眼睛近的物体会覆盖远处的物体，如图7.21 所示。为了验证这一点，让我们通过先绘制蓝色三角形、然后黄色三角形、最后绿色三角形来修改顺序：
 
-```javascriptvar vertices = new Float32Array([
+```javascriptvar
+vertices = new Float32Array([
  // 顶点坐标和颜色0.0,1.0, -4.0,0.4,0.4, // 后方的绿色 -0.5, -1.0, -4.0,1.0,0.4,
 
 0.5, -1.0, -4.0,1.0,0.4,
@@ -6880,12 +6919,14 @@ WebGL 按照你指定顶点的 z 顺序绘制三角形（即：绘制绿色三�
 
 1. 启用深度缓冲区：
 
- ```javascript gl.enable(gl.DEPTH_TEST);
+ ```javascript
+gl.enable(gl.DEPTH_TEST);
  ```
 
 2. 清除深度缓冲区：
 
- ```javascript gl.clear(gl.DEPTH_BUFFER_BIT);
+ ```javascript
+gl.clear(gl.DEPTH_BUFFER_BIT);
  ```
 
 步骤1 中使用的 `gl.enable()`语句实际上启用了各种表面功能：
@@ -6909,7 +6950,8 @@ WebGL 按照你指定顶点的 z 顺序绘制三角形（即：绘制绿色三�
 
 ### 列表7.10 `DepthBuffer.js`
 
-```javascript1 // DepthBuffer.js...
+```javascript1
+// DepthBuffer.js...
 
 23 function main() {
 
@@ -6968,12 +7010,14 @@ Z 闪烁由于深度缓冲器的精度有限，意味着系统无法判断哪个
 
 1. 启用多边形偏移函数：
 
- ```javascript gl.enable(gl.POLYGON_OFFSET_FILL);
+ ```javascript
+gl.enable(gl.POLYGON_OFFSET_FILL);
  ```
 
 2. 指定用于计算偏移的参数（在绘制之前）：
 
- ```javascript gl.polygonOffset(1.0,1.0);
+ ```javascript
+gl.polygonOffset(1.0,1.0);
  ```
 
 使用了与启用隐藏表面剔除相同的方法，但使用了不同的参数。`gl.polygonOffset(factor)` 的细节如下所示。
@@ -6985,7 +7029,8 @@ Z 闪烁由于深度缓冲器的精度有限，意味着系统无法判断哪个
 
 让我们看看 `Zfighting` 程序，它使用了多边形偏移来减少闪烁（见列表7.11）。
 
-```javascript1 // Zfighting.js...
+```javascript1
+// Zfighting.js...
 
 23 function main() {
 
@@ -7022,7 +7067,8 @@ Z 闪烁由于深度缓冲器的精度有限，意味着系统无法判断哪个
 
 
 
-如果你运行`DepthBuffer`，你将看到执行了隐藏面剔除，并且放置在后方的物体被前方的物体遮挡。这证明了无论视点在哪里，隐藏表面剔除功能都能消除隐藏表面。同样，这表明在任何非平凡的我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。3D 场景中，你总需要在任何绘制操作之前启用隐藏表面剔除功能，并系统地清除深度缓冲区。
+如果你运行`DepthBuffer`，你将看到执行了隐藏面剔除，并且放置在后方的物体被前方的物体遮挡。这证明了无论视点在哪里，隐藏表面剔除功能都能消除隐藏表面。同样，这表明在任何非平凡的 
+3D 场景中，你总需要在任何绘制操作之前启用隐藏表面剔除功能，并系统地清除深度缓冲区。
 
 你应该注意，隐藏表面剔除要求你正确设置视体体积。如果你未能做到这一点（使用默认配置的 WebGL），可能会看到错误的结果。你可以为视体体积指定一个立方体或四棱锥。
 
@@ -7180,7 +7226,8 @@ function initVertexBuffers(gl) {
 }
 ```
 
-```javascriptvar indexBuffer = gl.createBuffer();
+```javascriptvar
+indexBuffer = gl.createBuffer();
 
 ...
 
@@ -7208,7 +7255,8 @@ return indices.length;
 
 一旦执行，WebGL 系统的内部状态如图7.34 所示。
 
-图7.33 `gl.ELEMENT_ARRAY_BUFFER` 和 `gl.ARRAY_BUFFER` 的内容### JavaScript```javascriptfunction main() {
+图7.33 `gl.ELEMENT_ARRAY_BUFFER` 和 `gl.ARRAY_BUFFER` 的内容### JavaScript```javascriptfunction
+main() {
  var gl = getWebGL(...);
  gl.bindBuffer(...);
 }
@@ -7231,7 +7279,8 @@ return indices.length;
 
 `gl.drawElements()` 的第二个参数（索引的数量）代表绘制中的顶点坐标，但它与写入`gl.ARRAY_BUFFER`的顶点坐标数量并不相同。
 
-当你调用`gl.drawElements()`时，索引我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。从绑定到`gl.ELEMENT_ARRAY_BUFFER`的缓冲区对象（`indexBuffer`）中提取的，而相关的顶点信息从绑定到`gl.ARRAY_BUFFER`的缓冲区对象（`vertexColorBuffer`）中检索的。这些信息随后都会传递给属性变量。该过程会每个索引重复进行，然后通过单次`gl.drawElements()`调用绘制出整个立方体。通过这种方法，你可以通过索引复用顶点信息。虽然`gl.drawElements()`允许通过共享顶点信息来减少内存消耗，但代价将顶点信息转换为索引的代价（一个方向上的转换）。这意味着在`gl.drawElements()`和`gl.drawArrays()`之间的选择，由于它们都有优缺点，最终将取决于系统的实现。
+当你调用`gl.drawElements()`时，索引 
+从绑定到`gl.ELEMENT_ARRAY_BUFFER`的缓冲区对象（`indexBuffer`）中提取的，而相关的顶点信息从绑定到`gl.ARRAY_BUFFER`的缓冲区对象（`vertexColorBuffer`）中检索的。这些信息随后都会传递给属性变量。该过程会每个索引重复进行，然后通过单次`gl.drawElements()`调用绘制出整个立方体。通过这种方法，你可以通过索引复用顶点信息。虽然`gl.drawElements()`允许通过共享顶点信息来减少内存消耗，但代价将顶点信息转换为索引的代价（一个方向上的转换）。这意味着在`gl.drawElements()`和`gl.drawArrays()`之间的选择，由于它们都有优缺点，最终将取决于系统的实现。
 
 在这个阶段，尽管`gl.drawElements()`是一种绘制3D形状的有效方法，但仍缺少一个关键功能。目前没有控制颜色的方法，因此像图7.31 所示绘制一个单实色的立方体有帮助的。
 
@@ -7255,7 +7304,8 @@ return indices.length;
 }
 ```
 
-```javascriptif (!initArrayBuffer(gl, colors,3, gl.FLOAT, 'a_Color')) {
+```javascriptif
+(!initArrayBuffer(gl, colors,3, gl.FLOAT, 'a_Color')) {
  return -1;
 }
 ```
@@ -7264,10 +7314,12 @@ return indices.length;
 gl.bufferData(gl, gl.ELEMENT_ARRAY_BUFFER, indices, gl.STATIC_DRAW);
 ```
 
-```javascriptreturn indices.length;
+```javascriptreturn
+indices.length;
 ```
 
-```javascriptfunction initArrayBuffer(gl, data, num, type, attribute) {
+```javascriptfunction
+initArrayBuffer(gl, data, num, type, attribute) {
  var buffer = gl.createBuffer(); // Create a buffer object```
 
 ```javascript// Write data into the buffer objectgl.bindBuffer(gl.ARRAY_BUFFER, buffer);
@@ -7281,12 +7333,14 @@ gl.bufferData(gl.ARRAY_BUFFER, data, gl.STATIC_DRAW);
 gl.enableVertexAttribArray(a_attribute);
 ```
 
-```javascriptreturn true;
+```javascriptreturn
+true;
 ```
 
 ### 尝试示例程序在`ColoredCube`中，你为每个面指定了不同的颜色。如果你为所有面选择相同的颜色，会发生什么呢？例如，让我们尝试将`ColoredCube.js`颜色数组中的颜色信息设置为“白色”，所示。我们将此程序命名为`ColoredCube_singleColor.js`：
 
-+1 // ColoredCube_singleColor.js```javascriptvar colors = new Float32Array([
++1 // ColoredCube_singleColor.js```javascriptvar
+colors = new Float32Array([
 1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
 1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
 1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1]);
@@ -7689,11 +7743,13 @@ float nDotL = max(dot(u_LightDirection, normal), 0.0);\n' +
 
 
 
-结果存储在类型为`Float32Array`的对象的`elements`属性中，然后通过`uniform3fv`（第我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。74 行）赋值给`u_LightDirection`。
+结果存储在类型为`Float32Array`的对象的`elements`属性中，然后通过`uniform3fv`（第 
+74 行）赋值给`u_LightDirection`。
 
 最后，数据在第89 行定义的`initVertexBuffers()`中写入。实际法线数据存储在第118 行的数组`normals`中，与颜色数据一起。数据通过调用第140 行的`initArrayBuffer()`赋值给`a_Normal`：
 
-```javascriptif (!initArrayBuffer(gl, 'aNormal', normals,3, gl.FLOAT)) return -1;
+```javascriptif
+(!initArrayBuffer(gl, 'aNormal', normals,3, gl.FLOAT)) return -1;
 ```
 
 `initBuffer()`也用于`ColoredCube`，将第三参数指定的数组（`normals`）分配给第二个参数指定的属性变量（`a_Normal`）。
@@ -7725,47 +7781,58 @@ float nDotL = max(dot(u_LightDirection, normal), 0.0);\n' +
 ```javascript// LightCube_ambient.js// 顶点着色器程序...
 ```
 
-```glsluniform vec3 u_LightColor;\n' + // 光颜色```
+```glsluniform
+vec3 u_LightColor;\n' + // 光颜色```
 
-```glsluniform vec3 u_LightDirection;\n' + // 世界坐标，归一化```
+```glsluniform
+vec3 u_LightDirection;\n' + // 世界坐标，归一化```
 
-```glsluniform vec3 u_AmbientLight;\n' + // 环境光的颜色```
+```glsluniform
+vec3 u_AmbientLight;\n' + // 环境光的颜色```
 
-```glslvarying vec4 v_Color;\n' +
+```glslvarying
+vec4 v_Color;\n' +
 ```
 
-```glslvoid main() {\n' +
+```glslvoid
+main() {\n' +
 ```
 
 ```glsl// 光线方向与法线的点积```
 
-```glslfloat nDotL = max(lightDirection, normal),0.0);\n' +
+```glslfloat
+nDotL = max(lightDirection, normal),0.0);\n' +
 ```
 
 ```glsl//计算漫反射产生的颜色```
 
-```glslvec3 diffuse = u_LightColor * a_Color.rgb * nDotL;\n' +
+```glslvec3
+diffuse = u_LightColor * a_Color.rgb * nDotL;\n' +
 ```
 
 ```glsl//计算环境反射产生的颜色```
 
-```glslvec3 ambient = u_AmbientLight * a_Color.rgb;\n' +
+```glslvec3
+ambient = u_AmbientLight * a_Color.rgb;\n' +
 ```
 
 ```glsl// 加上漫反射和环境反射产生的表面颜色```
 
-```glslv_Color = vec4(diffuse + ambient, a_Color);\n' +
+```glslv_Color
+= vec4(diffuse + ambient, a_Color);\n' +
 ```
 
 ```glsl\n' +
 ```
 
-```javascriptfunction main() {
+```javascriptfunction
+main() {
 ```
 
 ```javascript// 获取 uniform变量的位置等```
 
-```javascriptvar u_AmbientLight = gl.getUniformLocation(gl.program, 'u_AmbientLight');
+```javascriptvar
+u_AmbientLight = gl.getUniformLocation(gl.program, 'u_AmbientLight');
 ```
 
 ```javascript// 设置环境光```
@@ -7778,7 +7845,8 @@ float nDotL = max(dot(u_LightDirection, normal), 0.0);\n' +
 
 第10 行的`u_AmbientLight`被添加到顶点着色器中，以传递环境光的颜色。在使用它和表面的基础颜色（`a_Color`）计算公式8.2 后，结果被存储在变量`ambient`中（第21 行）。现在漫反射和环境反射都确定了，就可以计算表面颜色。
 
-```javascriptvoid main() {
+```javascriptvoid
+main() {
  gl_Position = u_MvpMatrix * a_Position;
 
  // 使用法线矩阵重新计算法线并将其长度归一化为1.0 vec3 normal = normalize(vec3(uMvpMatrix * a_Normal));
@@ -7793,7 +7861,8 @@ float nDotL = max(dot(u_LightDirection, normal), 0.0);\n' +
 }
 ```
 
-```javascriptfunction main() {
+```javascriptfunction
+main() {
  // 获取 uniform变量的存储位置等 var uMvpMatrix = gl.getUniformLocation(gl.program, 'uMvpMatrix');
  var uNormalMatrix = gl.getUniformLocation(gl.program, 'u_NormalMatrix');
 
@@ -7881,7 +7950,8 @@ normalMatrix.transpose();
 
 为了计算光线击中时的片元颜色，你需要：
 
-1.我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。片元在世界坐标系中的位置。
+1. 
+片元在世界坐标系中的位置。
 2.片元位置的法线方向。
 
 你可以利用插值（第5 节），通过在顶点着色器中每个顶点进行计算并通过`varying`变量传递给片段着色器，从而获取每个片元的这些值。
@@ -7944,7 +8014,8 @@ void main() {\n' +
 // 着色计算以使手臂看起来立体的'}\n';
 ```
 
-```javascriptfunction main() {
+```javascriptfunction
+main() {
  // 设置顶点坐标。
  var n = initVertexBuffer(gl);
 
@@ -7963,12 +8034,14 @@ void main() {\n' +
 }
 ```
 
-```javascriptvar ANGLE_STEP =3.0; //旋转增量（度）
+```javascriptvar
+ANGLE_STEP =3.0; //旋转增量（度）
 var g_armAngle =90.0; // arm1 的角度（度）
 var g_jointAngle =0.0; // joint1 的角度（度）
 ```
 
-```javascriptfunction keydown(ev, gl, n, viewProjMatrix, u_MvpMatrix, u_NormalMatrix) {
+```javascriptfunction
+keydown(ev, gl, n, viewProjMatrix, u_MvpMatrix, u_NormalMatrix) {
  switch (ev.keyCode) {
  case38: // 上键，joint1旋转（z-轴）
  if (g_jointAngle <135.0) g_jointAngle += ANGLE_STEP;
@@ -7987,7 +8060,8 @@ var g_jointAngle =0.0; // joint1 的角度（度）
 }
 ```
 
-```javascriptfunction initVertexBuffers(gl) {
+```javascriptfunction
+initVertexBuffers(gl) {
  // 顶点坐标}
 ```
 
@@ -8003,7 +8077,8 @@ draw(gl, n, viewProjMatrix, u_MvpMatrix, u_NormalMatrix) {
 draw(gl, n, viewProjMatrix, u_MvpMatrix, u_NormalMatrix); // 绘制// Arm2g_modelMatrix.translate(0.0, armLength,0.0); // 到 joint1g_modelMatrix.rotate(g_jointAngle,0.0,1.0,0.0); //旋转 z轴g_modelMatrix.scale(1.3,1.0,1.3); //让它厚一点draw(gl, n, viewProjMatrix, u_MvpMatrix, u_NormalMatrix); // 绘制}
 ```
 
-```javascriptvar g_normalMatrix = new Matrix4(); // Transformation matrix for normal// Draw a cubefunction drawBox(gl, n, viewProjMatrix, u_MvpMatrix, u_NormalMatrix) {
+```javascriptvar
+g_normalMatrix = new Matrix4(); // Transformation matrix for normal// Draw a cubefunction drawBox(gl, n, viewProjMatrix, u_MvpMatrix, u_NormalMatrix) {
  // Calculate the model view matrix and pass it to u_MvpMatrix g_mvpMatrix.set(viewProjMatrix);
  g_mvpMatrix.multiply(g_modelMatrix);
  gl.uniformMatrix4xfv(u_MvpMatrix, false, g_mvpMatrix.elements);
@@ -8039,7 +8114,8 @@ draw(gl, n, viewProjMatrix, u_MvpMatrix, u_NormalMatrix); // 绘制// Arm2g_mode
 
 `keydown()`函数本身定义在第80 行。在此之前，第76 行、77 行和78 行定义了在`keydown`中使用的全局变量：
 
-```javascriptvar AN_STEP =3; //旋转角度的增量（度）
+```javascriptvar
+AN_STEP =3; //旋转角度的增量（度）
 var g_armAngle = -90.0; // arm1 的旋转角度（度）
 var g_jointAngle =0.0; // joint1 的旋转角度（度）
 
@@ -8084,7 +8160,8 @@ function draw(gl, n, viewProjMatrix, u_MvpMatrix, u_NormalMatrix) {
 
 ```
 
-如所示，`draw()` 使用 `drawBox()` 绘制各个部分，首先我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。上部（`arm1`），然后下部（`arm2`）。在绘制每个部分时，都会重复相同的过程：(1) 平移（`setTranslate()`、`translate()`），(2)旋转（`rotate()`），以及 (3) 绘制（`drawBox()`）。
+如所示，`draw()` 使用 `drawBox()` 绘制各个部分，首先 
+上部（`arm1`），然后下部（`arm2`）。在绘制每个部分时，都会重复相同的过程：(1) 平移（`setTranslate()`、`translate()`），(2)旋转（`rotate()`），以及 (3) 绘制（`drawBox()`）。
 
 当层级模型执行旋转时，通常按照 (1) 平移和 (2) 绘制的顺序从上到下处理。第118 行使用 `setTranslate()` 将 `arm1` 平移到 (0.0, -12.0,0.0)以移动到可见位置。由于该手臂绕 y轴旋转，其模型矩阵（`g_modelMatrix`）在第184 行乘以 y轴旋转矩阵，此处使用了 `g_armAngle`。一旦 `arm1` 的坐标变换完成，便使用 `drawBox()` 函数进行绘制。
 
@@ -8160,7 +8237,8 @@ function keydown(ev, gl, n, viewProjMatrix, u_Mvp, u_NormalMatrix) {
 
 虽然你底座、`arm1`、`arm2`、手掌、`finger1` 和 `finger2` 使用相同的立方体，但这些分段在宽度、高度和深度上不同的。为了方便绘制这些分段，让我们扩展 `drawBox()` 函数，使其比单关节函数使用的参数多出三个：
 
-```javascriptfunction drawBox(
+```javascriptfunction
+drawBox(
  gl,
  n,
  width,
@@ -8260,7 +8338,8 @@ g_modelMatrix.rotate(g_jointAngle,1.0,0.0,0.0); //旋转drawBox(gl, n,1.0,2.0,1.
 
 此示例程序的主要区别在于第222 行开始的 `finger1` 和 `finger2` 的绘制。因为它们没有父子关系，因此需要额外的操作。特别你必须注意模型矩阵的内容。首先，让我们看看 `finger1`，它的位置从手掌中心沿 z轴平移了2.0 并绕 x轴旋转。`finger1` 可以按照 (1) 平移、（2）旋转和 (3) 绘制分段的顺序绘制。程序如下：
 
-```javascriptvar g_matrixStack = []; // 用于存储矩阵的数组function pushMatrix(m) { // 将矩阵存入数组 var m2 = new Matrix4(m);
+```javascriptvar
+g_matrixStack = []; // 用于存储矩阵的数组function pushMatrix(m) { // 将矩阵存入数组 var m2 = new Matrix4(m);
  g_matrixStack.push(m2);
 }
 
@@ -8276,7 +8355,8 @@ function popMatrix() { // 从数组中取出矩阵 return g_matrixStack.pop();
 
 最后，让我们来看看 `drawBox()`，它使用以下参数绘制分段：第三到第五参数宽度、高度和深度指定了宽度、高度和深度。`viewMatrix`一个视图矩阵，而 `u_MvpMatrix` 和 `u_NormalMatrix`设置着色器变量的参数。这里使用的三维对象类似于 `JointModel` 中的一个尺寸为单位的立方体。它的原点位于底部中心，这样就可以轻松地旋转手臂、手掌和手指。`drawBox()` 函数所示：
 
-```javascriptvar g_normalMatrix = new Matrix4(); // 法线变换矩阵// 绘制棱体function drawBox(
+```javascriptvar
+g_normalMatrix = new Matrix4(); // 法线变换矩阵// 绘制棱体function drawBox(
  gl,
  n,
  width,
@@ -8298,7 +8378,8 @@ function popMatrix() { // 从数组中取出矩阵 return g_matrixStack.pop();
 
 
 
-正如你看到的，模型矩阵乘以了一个由宽度、高度和深度指定的缩放矩阵。注意你在第我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。248 行存储模型矩阵，并在第261 行使用 `pushMatrix()` 和 `popMatrix()` 获取它。否则，当你在 arm1之后绘制 arm2 时，arm1 的缩放留在矩阵中并影响 arm2 的绘制。通过在第261 行获取第248 行保存的矩阵，模型矩阵恢复到第250 行应用之前的状态。
+正如你看到的，模型矩阵乘以了一个由宽度、高度和深度指定的缩放矩阵。注意你在第 
+248 行存储模型矩阵，并在第261 行使用 `pushMatrix()` 和 `popMatrix()` 获取它。否则，当你在 arm1之后绘制 arm2 时，arm1 的缩放留在矩阵中并影响 arm2 的绘制。通过在第261 行获取第248 行保存的矩阵，模型矩阵恢复到第250 行应用之前的状态。
 
 正如你所见，`pushMatrix()` 和 `popMatrix()` 的使用增加了额外的复杂性，但它允许你仅指定一个顶点坐标，并使用缩放来创建立方体。另一种方法使用由不同顶点集指定的多个对象，这也是可行的。让我们来看看如何编写该程序。
 
@@ -8325,18 +8406,22 @@ function popMatrix() { // 从数组中取出矩阵 return g_matrixStack.pop();
 1295.0,0.0, -5.0, -5.0,0.0, -5.0, -5.0,2.0, -5.0,5.0,2.0, -5.0130 });
 ```
 
-```javascript132 var vertices_arml = new Float32Array([ // 手臂1(3x10x31331.5,10.0,1.5, -10.0,0.0,1.5, -1.5,0.0,1.5,1.5,0.0,1.5,
+```javascript132
+var vertices_arml = new Float32Array([ // 手臂1(3x10x31331.5,10.0,1.5, -10.0,0.0,1.5, -1.5,0.0,1.5,1.5,0.0,1.5,
 
 1341.5,10.0,1.5,0.0,1.5,1.5,0.0,-1.5,1.5,10.0,-1.51381.5,0.0,-1.5, -1.5,0.0,-1.5, -1.5,1.5,10.0,-1.5139 ]);
 ```
 
-```javascript159 var vertices_finger = new Float32Array([ // 手指(1x2x1166 ]);
+```javascript159
+var vertices_finger = new Float32Array([ // 手指(1x2x1166 ]);
 ```
 
-```javascript168 // 法线169 var normals = new Float32Array([176 ]);
+```javascript168
+// 法线169 var normals = new Float32Array([176 ]);
 ```
 
-```javascript178 // 顶点索引179 var indices = new Uint8Array([1800,1,2,0,2,3, // 前1814,5,6,4,6,7, //右18520,21,22,23, // 后186 ]);
+```javascript178
+// 顶点索引179 var indices = new Uint8Array([1800,1,2,0,2,3, // 前1814,5,6,4,6,7, //右18520,21,22,23, // 后186 ]);
 
 // 将坐标写入缓冲区，但不赋值给属性变量g_baseBuffer = initBufferForLaterUse(gl, vertices_base,3, gl.FLOAT);
 
@@ -8403,7 +8488,8 @@ gl.enableVertexAttribArray(a_Position); // 启用顶点属性// 绘制gl.drawArr
 
 `initBufferLaterUse()` 函数在第180 行到193 行创建了缓冲区：
 
-```javascriptfunction initBufferLaterUse(gl, data, type) {
+```javascriptfunction
+initBufferLaterUse(gl, data, type) {
  var buffer = gl.createBuffer(); // 创建缓冲区对象 // 将数据写入缓冲区 gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
 
  gl.bufferData(gl.ARRAY_BUFFER, data, gl.STATIC_DRAW);
@@ -8538,7 +8624,8 @@ gl.enableVertexAttribArray(a_Position); // 启用顶点属性// 绘制gl.drawArr
 
 日志中的具体消息取决于实现。例如，假设你按如下方式编译了一个片元着色器：
 
-```javascriptvar fsSource = '
+```javascriptvar
+fsSource = '
 
  void main() {
 
@@ -8573,7 +8660,8 @@ gl.enableVertexAttribArray(a_Position); // 启用顶点属性// 绘制gl.drawArr
 
 将着色器对象附加到程序对象后，你需要链接这些着色器。你使用`gl.linkProgram()`来链接程序对象中的着色器。
 
-```javascript我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。gl.linkProgram(program)
+```javascript 
+gl.linkProgram(program)
 ```
 
 链接由`program`指定的程序对象。
@@ -8725,7 +8813,8 @@ gl.enableVertexAttribArray(a_Position); // 启用顶点属性// 绘制gl.drawArr
 
 ## 列表10.1 `RotateObject.js`
 
-```javascript1 RotateObject.js2 // 顶点着色器程序3 var VSHADER_SOURCE =8 'void main(){\n' +
+```javascript1
+RotateObject.js2 // 顶点着色器程序3 var VSHADER_SOURCE =8 'void main(){\n' +
 
 9 gl_Position = u_MvpMatrix * a_Position;\n' +
 
@@ -8752,11 +8841,13 @@ gl.enableVertexAttribArray(a_Position); // 启用顶点属性// 绘制gl.drawArr
 78 };
 ```
 
-第10章 高级技术```javascript78 tick();
+第10章 高级技术```javascript78
+tick();
 79 }
 ```
 
-```javascript138 function initEventHandlers(canvas, currentAngle) {
+```javascript138
+function initEventHandlers(canvas, currentAngle) {
 139 var dragging = false; // 是否正在拖拽140 var lastX = -1, lastY = -1; // 鼠标上位置141142 canvas.onmousedown = function(ev) { // 鼠标按下143 x = ev.clientX, y = ev.clientY;
 144 // 拖拽在 <canvas> 内145 rect = ev.target.getBoundingClientRect();
 146 if (rect.left < x && x < rect.right && rect.top <= y && y < rect.bottom) {
@@ -8780,7 +8871,8 @@ gl.enableVertexAttribArray(a_Position); // 启用顶点属性// 绘制gl.drawArr
 166 };
 ```
 
-```javascript171 function draw(gl, n, viewProjMatrix, u_MvpMatrix, currentAngle) {
+```javascript171
+function draw(gl, n, viewProjMatrix, u_MvpMatrix, currentAngle) {
 172 // 清空缓冲区173 gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 174175 // 设置投影矩阵176 gl.uniformMatrix4fv(u_MvpMatrix,0, false, viewProjMatrix.toMatrixArray());
 177178 // 应用旋转179 u_MvpMatrix.rotate(currentAngle[0],1,0,0);
@@ -9499,7 +9591,8 @@ function initVertexBuffers(gl) {
 
 
 
-表我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。10.2 可以指定为 `src_factor` 和 `dst_factor` 的常量值。
+表 
+10.2 可以指定为 `src_factor` 和 `dst_factor` 的常量值。
 
 | 常数 | R 的乘数 | G 的乘数 | B 的乘数 |
 | :--- | :--- | :--- | :--- |
@@ -9522,7 +9615,8 @@ function initVertexBuffers(gl) {
 
 在示例程序中，如下：
 
-```javascript54 glBlendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+```javascript54
+glBlendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
 ```
 
 例如，如果源颜色半透明绿色（0.0,0.0,0.4,0.4），目标颜色（1.0,1.0,0.0,1.0），则 `src_factor`变为 alpha 值0.4，`dst_factor`变为 `(1 -0.4)=0.6`。计算过程如图10.14 所示。
@@ -9587,7 +9681,8 @@ function initVertexBuffers(gl) {
 
 在示例程序中，如下：
 
-```javascript54 glBlendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+```javascript54
+glBlendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
 ```
 
 例如，如果源颜色半透明绿色（0.0,0.0,0.4,0.4），目标颜色（1.0,1.0,0.0,1.0），则 `src_factor`变为 alpha 值0.4，`dst_factor`变为 `(1 -0.4)=0.6`。计算过程如图10.14 所示。
@@ -9641,61 +9736,76 @@ function initVertexBuffers(gl) {
 
 ### Listing10.11 ProgramObject（步骤1 到4 的处理）
 
-```javascript1 // ProgramObject.js2 // 单色绘制的顶点着色器 <- (1)
+```javascript1
+// ProgramObject.js2 // 单色绘制的顶点着色器 <- (1)
 3 var SOLID_VSHADER_SOURCE =
 ...
 18 // 单色绘制的片元着色器```
 
-```javascript19 var SOLID_FSHADER_SOURCE =
+```javascript19
+var SOLID_FSHADER_SOURCE =
 ..
 ```
 
-```javascript28 //纹理绘制的顶点着色器 - (2)
+```javascript28
+//纹理绘制的顶点着色器 - (2)
 ```
 
-```javascript29 var TEXTURE_VSHADER_SOURCE =
+```javascript29
+var TEXTURE_VSHADER_SOURCE =
 ```
 
-```javascript45 //纹理绘制的片元着色器46 var TEXTURE_FSHADER_SOURCE =
+```javascript45
+//纹理绘制的片元着色器46 var TEXTURE_FSHADER_SOURCE =
 ```
 
-```javascript58 function main() {
+```javascript58
+function main() {
 69 // 初始化着色器70 var solidProgram = createProgram(gl, SOLID_VSHADER_SOURCE);
 // SOLID_FSHADER_SOURCE); - (3)
 71 var texProgram = createProgram(gl, TEXTURE_VSHADER_SOURCE);
 // TEXTURE_FSHADER_SOURCE); - (4)
 ```
 
-```javascript77 // 获取单色绘制程序对象中的变量78 solidProgram.a_Position = gl.getAttribLocation(solidProgram, 'a_Position');
+```javascript77
+// 获取单色绘制程序对象中的变量78 solidProgram.a_Position = gl.getAttribLocation(solidProgram, 'a_Position');
 79 solidProgram.a_Normal = gl.getAttribLocation(solidProgram, 'a_Normal');
 ```
 
-```javascript83 // 获取属性/uniform变量的存储位置84 texProgram.a_Position = gl.getAttribLocation(texProgram, 'a_Position');
+```javascript83
+// 获取属性/uniform变量的存储位置84 texProgram.a_Position = gl.getAttribLocation(texProgram, 'a_Position');
 85 texProgram.a_Normal = gl.getAttribLocation(texProgram, 'a_Normal');
 ```
 
-```javascript89 texProgram.u_Sampler = gl.getUniformLocation(texProgram, 'u_Sampler');
+```javascript89
+texProgram.u_Sampler = gl.getUniformLocation(texProgram, 'u_Sampler');
 ```
 
-```javascript99 // 设置顶点信息100 var cube = initVertexBuffers(gl, solidProgram);
+```javascript99
+// 设置顶点信息100 var cube = initVertexBuffers(gl, solidProgram);
 ```
 
-```javascript106 // 设置纹理107 var texture = initTextures(gl, texProgram);
+```javascript106
+// 设置纹理107 var texture = initTextures(gl, texProgram);
 ```
 
-```javascript122 // 开始绘制123 var currentAngle =0.0 // 当前旋转角度（度）
+```javascript122
+// 开始绘制123 var currentAngle =0.0 // 当前旋转角度（度）
 124 var tick = function() {
 125 currentAngle = animate(currentAngle); // 更新旋转角度```
 
-```javascript128 // 用单色绘制立方体129 drawCube(gl, solidProgram, cube, -2.0, currentAngle, viewProjMatrix);
+```javascript128
+// 用单色绘制立方体129 drawCube(gl, solidProgram, cube, -2.0, currentAngle, viewProjMatrix);
 130 drawWithTexture(gl, texProgram, cube, texture,2.0, currentAngle,
 // viewProjMatrix);
 ```
 
-```javascript133 window.requestAnimationFrame(tick, canvas);
+```javascript133
+window.requestAnimationFrame(tick, canvas);
 ```
 
-## 第10章 高级技巧```javascript134 };
+## 第10章 高级技巧```javascript134
+};
 135 tick();
 136 }
 137 function initVertexBuffers(gl, program) {
@@ -10010,7 +10120,8 @@ ngl.TEXTURE_2D, texture, 0);
 
 
 
-`attachment` 参数中使用的 `gl.COLOR_ATTACHMENT0` 中的 `0`我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。因为 OpenGL（WebGL 的基础）中的帧缓冲区可以处理多个颜色附加（`gl.COLOR_ATTACHMENT0`、`gl.COLOR_ATTACHMENT1`、`gl.COLOR_ATTACHMENT2`……）。然而，WebGL仅可以使用其中一个。
+`attachment` 参数中使用的 `gl.COLOR_ATTACHMENT0` 中的 `0` 
+因为 OpenGL（WebGL 的基础）中的帧缓冲区可以处理多个颜色附加（`gl.COLOR_ATTACHMENT0`、`gl.COLOR_ATTACHMENT1`、`gl.COLOR_ATTACHMENT2`……）。然而，WebGL仅可以使用其中一个。
 
 一旦颜色附加附加到帧缓冲区对象，你需要分配一个渲染缓冲区对象（renderbuffer object）作为深度附加。这一过程类似的。
 
@@ -10045,7 +10156,8 @@ ngl.TEXTURE_2D, texture, 0);
 
 显然，当你使用配置不正确的帧缓冲区时，会发生错误。正如你在之前的几节中看到的，准备配置帧缓冲区对象所需的纹理对象和渲染缓冲区对象一个复杂的过程，有时产生问题。你可以使用 `gl.checkFramebufferStatus()` 检查创建的帧缓冲区是否配置正确且可用。
 
-```javascriptvar e = gl.checkFramebufferStatus(gl.FRAMEBUFFER);if (gl.FRAMEBUFFER_COMPLETE != e) {
+```javascriptvar
+e = gl.checkFramebufferStatus(gl.FRAMEBUFFER);if (gl.FRAMEBUFFER_COMPLETE != e) {
  console.log('Frame buffer object is incomplete:' + e.toString());
  return error();
 }
@@ -10074,7 +10186,8 @@ ngl.TEXTURE_2D, texture, 0);
 
 ## 列表10.14 `FramebufferObject.js`（`(8)` 的过程）
 
-```javascript321 function draw(gl, canvas, fbo, plane, cube, angle, texture, viewMatrix, viewProjMatrixFBO) {
+```javascript321
+function draw(gl, canvas, fbo, plane, cube, angle, texture, viewMatrix, viewProjMatrixFBO) {
 322 gl.bindFramebuffer(gl.FRAMEBUFFER, fbo); <- ($)
 323 gl.viewport(0,0, OFFSCREEN_WIDTH, OFFSCREEN_HEIGHT);
 324 gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
@@ -10099,7 +10212,8 @@ ngl.TEXTURE_2D, texture, 0);
 
 - 列表10.15 `Shadow.js`（着色器部分）
 
-```glsl1 // Shadow.js2 //生成阴影映射的顶点着色器程序3 var SHADOW_VSHADER_SOURCE =
+```glsl1
+// Shadow.js2 //生成阴影映射的顶点着色器程序3 var SHADOW_VSHADER_SOURCE =
 4 ...
 6 'void main() {\n' +
 7 ' gl_Position = u_MvpMatrix * a_Position;\n' +
@@ -10123,7 +10237,8 @@ ngl.TEXTURE_2D, texture, 0);
  }'
 ```
 
-## 常绘制的片段着色器程序```glslvar SHADER_SOURCE = =
+## 常绘制的片段着色器程序```glslvar
+SHADER_SOURCE = =
  uniform sampler2D u_ShadowMap;\n' +
  varying vec4 v_PositionFromLight;\n' +
  varying vec4 v_Color;\n' +
@@ -10139,7 +10254,8 @@ ngl.TEXTURE_2D, texture, 0);
 
 `gl_FragCoord` `vec4` 类型内置变量，包含每个片段在屏幕上的坐标，`gl_FragCoord.x` 和 `gl_FragCoord.y` 包含 [0,1] 范围内的归一化 z 值。`gl_FragCoord.z` 使用 `(gl_Position.z/gl_Position.w)/2.0+0.5`计算。（更多细节请参见 OpenGL2.0规范第2.12 节。）`gl_FragCoord` 指定范围为0.0 到1.0，其中0.0 表示近裁剪平面上的片段，1.0 表示远裁剪平面上的片段。该值被写入第16 行阴影映射的 R（红色）分量中（任何分量均可）。
 
-```glsl16 gl_FragColor = vec4(gl_FragCoord.z,0.0,0.0,0.0);
+```glsl16
+gl_FragColor = vec4(gl_FragCoord.z,0.0,0.0,0.0);
 // (1)
 ```
 
@@ -10159,7 +10275,8 @@ ngl.TEXTURE_2D, texture, 0);
 
 ## 列表10.6 `Shadow.js`（JavaScript 部分）
 
-```javascript49 var OFFSCREEN_WIDTH =1024, OFFSCREEN_HEIGHT =1024;
+```javascript49
+var OFFSCREEN_WIDTH =1024, OFFSCREEN_HEIGHT =1024;
 50 var LIGHT_X =0, LIGHT_Y =7, LIGHT_Z =2;
 5152 function main() {
 63 // 初始化用于生成阴影图的光色器64 var shadowProgram = createProgram(gl, SHADOW_SHADER_SOURCE, SHADOW_SHADER_SOURCE);
@@ -10176,7 +10293,8 @@ ngl.TEXTURE_2D, texture, 0);
 ...
 106 var viewProjMatrixFromLight = new Matrix4(); // 用于阴影图```
 
-# 第10章 高级技术```javascript107 viewProjMatrixFromLight.setPerspective(70.0);
+# 第10章 高级技术```javascript107
+viewProjMatrixFromLight.setPerspective(70.0);
 
 108 viewProjMatrixFromLight.lookAt(LIGHT_X, LIGHT_Y, LIGHT_Z,0.0,0.0,0.0,0.0, -OFFSCREEN_WIDTH/SCREEN_HEIGHT,1.0,100.0);
 
@@ -10185,34 +10303,41 @@ ngl.TEXTURE_2D, texture, 0);
 112 viewProjMatrix.lookAt(0.0,7.0,9.0,0.0,0.0,0.0,1.0,0.0, -1.0,0.0);
 ```
 
-```javascript114 var currentAngle =0.0; // 当前旋转角度[角度]
+```javascript114
+var currentAngle =0.0; // 当前旋转角度[角度]
 115 mvMatrixFromLight_t = new Matrix4(); // 用于三角形116 mvMatrixFromLight_p = new Matrix4(); // 用于平面117 var tick = function() {
 118 currentAngle = animate(currentAngle);
 119 // 改变绘制目标为 FBO120 gl.bindFramebuffer(gl.FRAMEBUFFER, fbo);
 ```
 
-```javascript124 gl.useProgram(shadowProgram); // 用于生成阴影图126 // 绘制三角形和平面（用于生成阴影图）
+```javascript124
+gl.useProgram(shadowProgram); // 用于生成阴影图126 // 绘制三角形和平面（用于生成阴影图）
 drawTriangle(gl, shadowProgram, triangle, currentAngle, viewProjMatrixFromLight);
 ```
 
-```javascript127 mvMatrixFromLight_t.set(g_viewProjMatrix); // 后续使用128 drawPlane(gl, shadowProgram, plane, viewProjMatrixFromLight);
+```javascript127
+mvMatrixFromLight_t.set(g_viewProjMatrix); // 后续使用128 drawPlane(gl, shadowProgram, plane, viewProjMatrixFromLight);
 129 mvMatrixFromLight_p.set(g_viewProjMatrix); // 后续使用130 // 改变绘制目标为颜色缓冲区131 gl.bindFramebuffer(gl.FRAMEBUFFER, null);
 ```
 
 
 
-```javascript我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。135 gl.useProgram(normalProgram); // 用于普通绘制136 gl.uniform1i(normalProgram, u_ShadowMap,0); //传递 gl.TEXTURE0137 // 绘制三角形和平面（用于普通绘制）
+```javascript 
+135 gl.useProgram(normalProgram); // 用于普通绘制136 gl.uniform1i(normalProgram, u_ShadowMap,0); //传递 gl.TEXTURE0137 // 绘制三角形和平面（用于普通绘制）
 138 gl.uniformMatrix4fv(normalProgram, u_MvpMatrixFromLight, false, mvProjMatrixFromLight_t.elements);
 ```
 
-```javascript139 drawTriangle(gl, normalProgram, triangle, currentAngle, viewProjMatrix);
+```javascript139
+drawTriangle(gl, normalProgram, triangle, currentAngle, viewProjMatrix);
 140 gl.uniformMatrix4fv(normalProgram, u_MvpMatrixFromLight, false, mvProjMatrixFromLight_p.elements);
 ```
 
-```javascript141 drawPlane(gl, normalProgram, plane, viewProjMatrix);
+```javascript141
+drawPlane(gl, normalProgram, plane, viewProjMatrix);
 ```
 
-```javascript143144 window.requestAnimationFrame(tick, canvas);
+```javascript143144
+window.requestAnimationFrame(tick, canvas);
 145 tick();
 146 }
 ```
@@ -10331,7 +10456,8 @@ drawTriangle(gl, shadowProgram, triangle, currentAngle, viewProjMatrixFromLight)
 99 }
 ```
 
-```javascript102 function createEmptyArray(gl, a_attribute, num, type) {
+```javascript102
+function createEmptyArray(gl, a_attribute, num, type) {
 103 var buffer = gl.createBuffer(); // Create buffer object...
 108 gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
 109 gl.vertexAttribPointer(a_attribute, num, type, false,0,0);
@@ -10339,7 +10465,8 @@ drawTriangle(gl, shadowProgram, triangle, currentAngle, viewProjMatrixFromLight)
 113 }
 ```
 
-```javascript115 // Read a file116 function readOBJFile(fileName, gl, model, scale, reverse) {
+```javascript115
+// Read a file116 function readOBJFile(fileName, gl, model, scale, reverse) {
 117 request = new XMLHttpRequest();
 
 119 request.onreadystatechange = function() {
@@ -10351,9 +10478,11 @@ drawTriangle(gl, shadowProgram, triangle, currentAngle, viewProjMatrixFromLight)
 124 request.open('GET', fileName, true); // Create a request to get file125 request.send(); // Send the request126 }
 ```
 
-```javascript128 var g_objDoc = null; // The information of OBJ file129 g_drawingInfo = null; // The information for drawing3D model```
+```javascript128
+var g_objDoc = null; // The information of OBJ file129 g_drawingInfo = null; // The information for drawing3D model```
 
-```javascript131 // OBJ file has been read132 function onReadOBJFile(fileString, fileName, gl, o, scale, reverse) {
+```javascript131
+// OBJ file has been read132 function onReadOBJFile(fileString, fileName, gl, o, scale, reverse) {
 133 var objDoc = new OBJDoc(fileName); // Create a OBJDoc object134 result = objDoc.parse(fileString, scale, reverse);
 135 if (!result) {
 136 g_objDoc = null; g_drawingInfo = null;
@@ -10631,7 +10760,8 @@ switch(command) {
 
 
 
-- 第我是 goaichat 研发的智能大模型，可以为你提供智能问答、分析和创作服务。469 行使用 `materialName` 查找 `Face` 的颜色，并将颜色存储在 `color` 中。第468 行将面的法线存储在 `faceNormal` 中以备后用。
+- 第 
+469 行使用 `materialName` 查找 `Face` 的颜色，并将颜色存储在 `color` 中。第468 行将面的法线存储在 `faceNormal` 中以备后用。
 - 第471 行的 `for`语句循环，从面中提取顶点索引，将其顶点位置存储在 `vertices` 中（第477 行到479 行），并将颜色的 r、g、b 分量存储在 `colors` 中（第482 行到484 行）。从486 行开始的代码处理 OBJ 文件中找到的法线或可能不包含法线，因此第487 行检查了该情况。如果在 OBJ 文件中找到法线，则第487 行到489 行将其存储在此程序生成的 `normals` 中。
 
 一旦你为所有 `OBJObject` 完成了这些步骤，就可以进行绘图了。第502 行在一个 `DrawingInfo`象中返回用于绘制模型的信息，该对象如前所述管理已写入缓冲区对象的顶点信息。
@@ -10646,7 +10776,8 @@ WebGL 使用底层图形硬件，这是由操作系统管理的共享资源。�
 
 -另一个程序接管硬件或机器进入休眠。当这种情况发生时，WebGL 用于正确绘图的“上下文”可能会丢失。一个很好的例子你在笔记本电脑或智能手机上运行 WebGL 程序，而它进入了休眠模式。通常在机器休眠之前会显示错误消息。当你按下电源键唤醒机器后，WebGL可能会丢失。
 
-```javascript73 cancelAnimationFrame(g_requestID); // 停止动画74 ev.preventDefault(); // 防止默认行为```
+```javascript73
+cancelAnimationFrame(g_requestID); // 停止动画74 ev.preventDefault(); // 防止默认行为```
 
 上下文事件的处理着色器没有影响，让我们关注从第16 行开始的 JavaScript 程序中的 `main()` 函数。第21 行注册了上下文事件的事件处理器，第22 行注册了上下文恢复（context restore）事件的事件处理器。`main()` 函数通过调用第24 行的 `start()` 函数结束。
 
@@ -10678,7 +10809,8 @@ WebGL 使用底层图形硬件，这是由操作系统管理的共享资源。�
 
 为了支持这种双缓冲区方法，OpenGL 提供了一种交换后缓冲区和前缓冲区的机制。在某些系统中这是自动的；在另一些系统中，在绘制到后缓冲区之后需要缓冲区进行显式调用，例如 `glutSwapBuffers()` 或 `eglSwapBuffers()`。例如，典型的 OpenGL 应用具有以下用户定义的 `display` 函数：
 
-```cvoid display(void) {
+```cvoid
+display(void) {
  // 清除颜色缓冲区和深度缓冲区 glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
  draw();
  // 绘制内容 glutSwapBuffers(); //交换颜色缓冲区}

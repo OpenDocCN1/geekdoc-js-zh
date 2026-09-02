@@ -1,5 +1,7 @@
 
-# 缓冲区碎片化和挑战我是由月之暗面（Moonshot AI）研发的 kimi-k2.7-code 智能大模型。> 原文：[`www.thenodebook.com/buffers/fragmentation-and-challenges`](https://www.thenodebook.com/buffers/fragmentation-and-challenges)
+ # 缓冲区碎片化和挑战 
+
+> 原文：[`www.thenodebook.com/buffers/fragmentation-and-challenges`](https://www.thenodebook.com/buffers/fragmentation-and-challenges)
 
 ⚠️警告
 
